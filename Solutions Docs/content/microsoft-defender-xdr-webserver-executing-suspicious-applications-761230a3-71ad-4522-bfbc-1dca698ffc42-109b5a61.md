@@ -21,9 +21,9 @@ This query looks for common webserver process names and identifies any processes
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName in "httpd.exe,w3wp.exe"` | ✓ | ✗ | ? |
 
 ---
 

@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 | [`AZFWApplicationRule`](../tables/azfwapplicationrule.md) |  | ✓ | ✗ | ? |
 | [`AZFWDnsQuery`](../tables/azfwdnsquery.md) |  | ✓ | ✗ | ? |
 | [`AZFWFatFlow`](../tables/azfwfatflow.md) |  | ✓ | ✗ | ? |
-| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) |  | ✓ | ✗ | ? |
+| [`AZFWFlowTrace`](../tables/azfwflowtrace.md) | `Flag == "INVALID"` | ✓ | ✗ | ? |
 | [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) |  | ✓ | ✗ | ? |
 | [`AZFWInternalFqdnResolutionFailure`](../tables/azfwinternalfqdnresolutionfailure.md) |  | ✓ | ✗ | ? |
 | [`AZFWNatRule`](../tables/azfwnatrule.md) |  | ✓ | ✗ | ? |

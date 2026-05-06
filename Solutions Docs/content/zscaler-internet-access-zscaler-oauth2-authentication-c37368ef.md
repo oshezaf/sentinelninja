@@ -14,6 +14,21 @@ This playbook obtains OAuth2 access tokens for Zscaler Internet Access (ZIA) int
 | **Solution** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2Authentication/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *HTTP_Get_OAuth_Token*: method=`POST`, uri=`@parameters('oauthUrl')`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Oauth2Authentication/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2Authentication/readme.md)*

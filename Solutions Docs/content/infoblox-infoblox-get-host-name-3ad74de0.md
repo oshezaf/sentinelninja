@@ -14,6 +14,26 @@ The playbook will fetch the data from 'Hosts' API and ingest it into custom tabl
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Get%20Host%20Name/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 0 |
+| `azureloganalyticsdatacollector_1` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector_1`** (managedApi):
+- *Send_Data_Into_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Host_Endpoint*: method=`GET`, uri=`@{variables('base_url')}/api/infra/v1/hosts`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox Get Host Name/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Get%20Host%20Name/readme.md)*

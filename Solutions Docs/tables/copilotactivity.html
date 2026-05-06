@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CopilotActivity &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="copilotactivity">CopilotActivity</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for CopilotActivity table in Azure Monitor Logs.</p>
 <table>
@@ -214,7 +214,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (8)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (7)</h2>
 <h3 id="analytic-rules">Analytic Rules (4)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-copilot.html">Microsoft Copilot</a>:</strong></p>
 <table>
@@ -231,11 +231,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-jailbreak-attempt-detected-e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0-37101c05.html">Copilot - Jailbreak Attempt Detected</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>LLMEventData has "JailbreakDetected"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-created-by-non-admin-user-a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6-534a022a.html">Copilot - Plugin Created by Non-Admin User</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActorUserType != "Admin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-tampering-enable-and-disable-within-5-minutes-d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9-e650fbfe.html">Copilot - Plugin Tampering (Enable and Disable Within 5 Minutes)</a></td>
@@ -255,7 +255,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.html">Copilot - Access From External IP Address</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SrcIpAddr !startswith "10."</code><br><code>SrcIpAddr !startswith "172."</code><br><code>SrcIpAddr !startswith "192.168"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-copilot-copilot-plugin-enabled-after-being-disabled-b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7-7fec45a8.html">Copilot - Plugin Enabled After Being Disabled</a></td>
@@ -263,7 +263,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (2)</h3>
+<h3 id="workbooks">Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-copilot.html">Microsoft Copilot</a>:</strong></p>
 <table>
 <thead>
@@ -279,24 +279,142 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (3 criteria, 3 total references)</h2>
+<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
 <th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftcopilotactivitymonitoring-5169439d.html">MicrosoftCopilotActivityMonitoring</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>LLMEventData has "JailbreakDetected"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActorUserType != "Admin"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SrcIpAddr !startswith "10."</code><br><code>SrcIpAddr !startswith "172."</code><br><code>SrcIpAddr !startswith "192.168"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="actorusertype">ActorUserType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!= Admin</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="llmeventdata">LLMEventData</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has JailbreakDetected</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="srcipaddr">SrcIpAddr</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!startswith 10.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!startswith 172.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!startswith 192.168</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

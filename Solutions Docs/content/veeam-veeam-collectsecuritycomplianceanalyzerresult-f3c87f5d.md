@@ -14,6 +14,25 @@ A Microsoft Sentinel playbook that automatically collects Veeam Security Complia
 | **Solution** | [Veeam](../solutions/veeam.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Playbooks/Veeam-CollectSecurityComplianceAnalyzerResult/Veeam-CollectSecurityComplianceAnalyzerResult.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Watchlists_-_Get_VBR_Settings*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems`
+
+**`function`** (builtin):
+- *Collect_Best_Practice_Analysis_into_VeeamBestPracticeAnalysisTable_CL*: functionId=`[concat(variables('functionAppId'), '/functions/GetSecurityComplianceAnalyzerResultsAsync')]`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

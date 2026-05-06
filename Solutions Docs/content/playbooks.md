@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**865 playbooks** across all Microsoft Sentinel solutions.
+**870 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -858,6 +858,8 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [SpectraAnalyze-EnrichNetworkEntities](reversinglabs-spectraanalyze-enrichnetworkentities-e8e8b530.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
 | [SpectraIntelligence-EnrichFileHash](reversinglabs-spectraintelligence-enrichfilehash-dbcd2082.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
 | [SpectraIntelligence-EnrichNetworkEntities](reversinglabs-spectraintelligence-enrichnetworkentities-d024cb1e.md) | 📦 [ReversingLabs](../solutions/reversinglabs.md) |
+| [Spur IP Enrichment](spur-spur-ip-enrichment-199e693a.md) | 📦 [Spur](../solutions/spur.md) |
+| [Spur IP Enrichment](spur-spur-ip-enrichment-9f8c24e8.md) | 📦 [Spur](../solutions/spur.md) |
 | [spur_alert](standalone-content-spur-alert-3028854a.md) | 📄 Standalone Content |
 | [spur_alert](standalone-content-spur-alert-4d9df5af.md) | 📄 Standalone Content |
 | [SpyCloud Breach Information - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-breach-information-spycloud-enterprise-e2c67842.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
@@ -933,6 +935,9 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 
 | Name | Source |
 |:-----|:-------|
+| [Vaikora AI Agent Signals to CrowdStrike](vaikora-crowdstrike-threatintelligence-vaikora-ai-agent-signals-to-crowdstrike-1c0c6d82.md) | 📦 [Vaikora-CrowdStrike-ThreatIntelligence](../solutions/vaikora-crowdstrike-threatintelligence.md) |
+| [Vaikora AI Agent Signals to SentinelOne](vaikora-sentinelone-threatintelligence-vaikora-ai-agent-signals-to-sentinelone-f649433d.md) | 📦 [Vaikora-SentinelOne-ThreatIntelligence](../solutions/vaikora-sentinelone-threatintelligence.md) |
+| [Vaikora to Microsoft Defender for Cloud](vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.md) | 📦 [VaikoraSecurityCenter](../solutions/vaikorasecuritycenter.md) |
 | [Vectra Add Note To Entity](vectra-xdr-vectra-add-note-to-entity-869bea53.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Add Tag To Entity](vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Vectra Add Tag To Entity All Detections](vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | 📦 [Vectra XDR](../solutions/vectra-xdr.md) |

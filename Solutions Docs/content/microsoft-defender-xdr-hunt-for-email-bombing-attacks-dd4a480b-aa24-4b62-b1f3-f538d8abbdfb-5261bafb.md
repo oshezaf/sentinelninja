@@ -22,9 +22,9 @@ This query helps to hunt for possible email bombing attacks in Microsoft Defende
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `EmailDirection == "Inbound"` | ✓ | ✗ | ? |
 
 ---
 

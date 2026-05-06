@@ -14,6 +14,33 @@ When a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Enrichment_GetDeviceInformation/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 4 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+
+**`http`** (builtin):
+- *HTTP-Get_detection_information*: method=`POST`, uri=`@{body('CrowdStrike_Base')?['FalconHost']}/detects/entities/summaries/GET/v1`
+- *HTTP_-Search_for_detections*: method=`GET`, uri=`@{body('CrowdStrike_Base')?['FalconHost']}/detects/queries/detects/v1?filter=first_behavior:>'@{variables('Timestamp')}'&device_id:'@{body('Parse_JSON_Get_device_id_response')?['resources']?[0]}'&sort=first_behavior.desc`
+- *HTTP_-_Get_device_information_*: method=`GET`, uri=`@{body('CrowdStrike_Base')?['FalconHost']}/devices/entities/devices/v1?ids=@{body('Parse_JSON_Get_device_id_response')?['resources']?[0]}`
+- *HTTP_-_Get_device_id*: method=`GET`, uri=`@{body('CrowdStrike_Base')?['FalconHost']}/devices/queries/devices/v1?filter=hostname:'@{body('Entities_-_Get_Hosts')?['Hosts']?[0]?['HostName']}'`
+
+**`workflow`** (builtin):
+- *CrowdStrike_Base*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Logic/workflows/', parameters('CrowdStrike_Base_Playbook_Name'))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CrowdStrike_Enrichment_GetDeviceInformation/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Enrichment_GetDeviceInformation/readme.md)*

@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Microsoft Entra ID solution for Sentinel &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="microsoft-entra-id-solution-for-sentinel">Microsoft Entra ID solution for Sentinel</h1>
 <p><em>Solution: Microsoft Entra ID</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/MicrosoftEntraID_logo.svg" alt="Microsoft Entra ID Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -297,7 +297,7 @@
 <td style="text-align: left;">-</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-entra-id-brute-force-attack-against-a-cloud-pc-3fbc20a4-04c4-464e-8fcb-6667f53e4987-a1e86b1d.html">Brute force attack against a Cloud PC</a></td>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-brute-force-attack-against-an-entra-authenticated-windows-device-3fbc20a4-04c4-464e-8fcb-6667f53e4987-a6e41f5c.html">Brute force attack against an Entra-authenticated Windows device</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CredentialAccess</td>
 <td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
@@ -788,6 +788,11 @@
 </thead>
 <tbody>
 <tr>
+<td>3.3.12</td>
+<td>28-04-2026</td>
+<td>Renamed analytic rule from <strong>BruteForceCloudPC</strong> to <strong>BruteForceAgainstEntraAuthenticatedWindowsDevice</strong> and updated name and description in <strong>Analytic Rule</strong> to reflect detection scope across all Entra-authenticated Windows devices (including Entra-joined, hybrid-joined, and Windows 365 Cloud PCs), resolving ambiguity around Cloud PC specificity</td>
+</tr>
+<tr>
 <td>3.3.11</td>
 <td>13-04-2026</td>
 <td>Added <strong>Watchlist</strong> ConditionalAccessBenignStatusCodes and updated <strong>BypassCondAccessRule</strong> analytic rule</td>
@@ -965,8 +970,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

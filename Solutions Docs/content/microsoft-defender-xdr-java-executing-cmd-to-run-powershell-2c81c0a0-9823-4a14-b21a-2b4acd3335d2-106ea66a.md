@@ -25,9 +25,9 @@ This query was originally published in the threat analytics report, Sysrv botnet
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "java.exe"` | ✓ | ✗ | ? |
 
 ---
 

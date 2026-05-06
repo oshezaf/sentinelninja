@@ -14,6 +14,31 @@ This playbook provides an end-to-end example of sending an email for suspicious 
 | **Solution** | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANReport/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 6 |
+| `outlook` | Managed | 1 | 0 |
+| `outlook_1` | Managed | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Chart_for_AMP_Events*: method=`post`, path=`/visualizeQueryV2`
+- *Chart_for_IPS_Events*: method=`post`, path=`/visualizeQueryV2`
+- *Table_for_AMP_Events*: method=`post`, path=`/visualizeQueryV2`
+- *Table_for_Application_Used*: method=`post`, path=`/visualizeQueryV2`
+- *Table_for_IPS_Events*: method=`post`, path=`/visualizeQueryV2`
+- *Table_for_Internet_Browsing*: method=`post`, path=`/visualizeQueryV2`
+
+**`outlook_1`** (managedApi):
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoSDWANReport/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANReport/readme.md)*

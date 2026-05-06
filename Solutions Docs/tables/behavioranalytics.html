@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BehaviorAnalytics &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="behavioranalytics">BehaviorAnalytics</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for BehaviorAnalytics table in Azure Monitor Logs.</p>
 <table>
@@ -236,7 +236,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (13)</h2>
+<h2 id="solutions">Solutions (12)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a></li>
@@ -249,13 +249,12 @@
 <li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
 <li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/ueba-essentials.html">UEBA Essentials</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (57)</h2>
-<h3 id="analytic-rules">Analytic Rules (7)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (45)</h2>
+<h3 id="analytic-rules">Analytic Rules (5)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a>:</strong></p>
 <table>
 <thead>
@@ -267,15 +266,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.html">MFA Rejected by User</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-entra-id-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-500c103a-0319-4d56-8e99-3cec8d860757-7cb25dd6.html">Sign-ins from IPs that attempt sign-ins to disabled accounts</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code><br><code>EventSource == "Azure AD"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.html">Successful logon from IP and failure from a different IP</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.html">Suspicious Sign In Followed by MFA Modification</a></td>
@@ -283,30 +282,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.html">User Accounts - Sign in Failure due to CA Spikes</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.html">Azure VM Run Command operation executed during suspicious login window</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-suspicious-sign-in-by-entra-id-connect-sync-account-2cd8b3d5-c9e0-4be3-80f7-0469d511c3f6-48c21081.html">Suspicious Sign In by Entra ID Connect Sync Account</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (36)</h3>
+<h3 id="hunting-queries">Hunting Queries (32)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
 <thead>
@@ -318,15 +298,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.html">Login attempts using Legacy Auth</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.html">Risky Sign-in with new MFA method</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.html">Successful Signin From Non-Compliant Device</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-accounts-new-single-factor-auth-8eace93b-f38c-47b7-a21d-739556d31db6-94f60108.html">User Accounts - New Single Factor Auth</a></td>
@@ -334,30 +314,26 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.html">User Login IP Address Teleportation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cloud-identity-threat-protection-essentials.html">Cloud Identity Threat Protection Essentials</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/cloud-identity-threat-protection-essentials.html">Cloud Identity Threat Protection Essentials</a>:</strong> <code>ActivityType in "FailedLogOn,LogOn"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954-088cc628.html">Sign-ins From VPS Providers</a></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.html">Sign-ins from Nord VPN Providers</a></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.html">Suspicious Sign-ins to Privileged Account</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -372,7 +348,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.html">Insider Risk_ISP Anomaly to Exfil</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights contains "ISP"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insider-risk-multiple-entity-based-anomalies-3bc01058-ce23-45ba-a7e9-409d844b12dc-2bc6a4d7.html">Insider Risk_Multiple Entity-Based Anomalies</a></td>
@@ -395,35 +371,35 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-aws-console-login-without-mfa-from-uncommon-country-a1b2c3d4-e5f6-7890-abcd-ef1234567890-e27bf283.html">Anomalous AWS Console Login Without MFA from Uncommon Country</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType == "signin.amazonaws.com"</code><br><code>EventSource contains "aws"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-activity-role-assignment-bd6fda76-c0df-41b0-b8cd-808190e1ded0-f28cc576.html">Anomalous Activity Role Assignment</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-code-execution-on-a-virtual-machine-f8ab176c-1f3f-4cb5-8dc1-f50d30bcae0d-1d294e0d.html">Anomalous Code Execution on a Virtual Machine</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-database-export-activity-8cf3c78e-cd10-4bfb-bd69-d62dc7f375f1-547bf5ee.html">Anomalous Database Export Activity</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-database-vulnerability-baseline-removal-fcb704ae-ac17-400a-9ed9-3c46bd0a3960-5de0e0ef.html">Anomalous Database Vulnerability Baseline Removal</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-failed-logon-77a58c08-bc8e-48b3-8fe9-6c38fd011cd9-d88b0a61.html">Anomalous Failed Logon</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType == "LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-first-time-device-logon-c3d4e5f6-g7h8-9012-cdef-gh3456789012-95978030.html">Anomalous First-Time Device Logon</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>EventSource == "MDE DeviceLogonEvents"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-gcp-iam-activity-e5f6g7h8-i9j0-1234-efgh-ij5678901234-7903fc2f.html">Anomalous GCP IAM Activity</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType contains "IAM"</code><br><code>EventSource == "GCP Audit Logs"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-geo-location-logon-eeea7fb9-21cf-4023-91dc-3f55d7548d14-3faf613a.html">Anomalous Geo Location Logon</a></td>
@@ -431,31 +407,31 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-key-vault-modification-by-high-privilege-user-202ee40b-e6d8-4968-9a79-cf24c5c09db9-fa6954f8.html">Anomalous Key Vault Modification by High-Privilege User</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType == "Administrative"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-microsoft-entra-id-account-creation-0454c8d8-d0a6-42a4-8d03-f5b4fdcbd173-21d82dda.html">Anomalous Microsoft Entra ID Account Creation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-okta-first-time-or-uncommon-actions-d4e5f6g7-h8i9-0123-defg-hi4567890123-0ea8a6e8.html">Anomalous Okta First-Time or Uncommon Actions</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>EventSource == "Okta_CL"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-password-reset-22b0262c-b6b5-4f15-82a4-93663e9965d7-b04b510f.html">Anomalous Password Reset</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-rdp-activity-c01d95d3-ee85-4e7f-9aed-e62356f1de76-f9c1ea17.html">Anomalous RDP Activity</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code><br><code>ActivityType == "LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-resource-access-782f3bad-31f7-468f-8f58-3b74fc931914-129885e1.html">Anomalous Resource Access</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code><br><code>ActivityType == "LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-sign-in-by-new-or-dormant-account-bb3bb9da-9598-4d1f-af78-7cc2fd413b0b-02e8af9c.html">Anomalous Sign-in by New or Dormant Account</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-action-performed-in-tenant-by-privileged-user-9ba2b304-7767-4d54-b03c-b0161ae87cc7-f2b7cf70.html">Anomalous action performed in tenant by privileged user</a></td>
@@ -467,11 +443,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-login-activity-originated-from-botnet,-tor-proxy-or-c2-c3b09dd3-ee50-41ae-b863-8603620e5f48-79aee61c.html">Anomalous login activity originated from Botnet, Tor proxy or C2</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights contains "True"</code><br><code>ActivityType in "FailedLogOn,LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-dormant-local-admin-logon-2e20ec77-8d50-4959-a70d-79c341ee2c37-d3f55f49.html">Dormant Local Admin Logon</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code><br><code>ActivityType == "LogOn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-dormant-account-activity-from-uncommon-country-7c303408-f913-42f8-8d7b-9eb64a229c4d-510c1ff6.html">Dormant account activity from uncommon country</a></td>
@@ -479,45 +455,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-inactive-or-new-account-signins-847c2652-547d-4d5f-9b71-d2f8d81eac62-a5fd3c40.html">Inactive or new account signins</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.html">Login attempt by Blocked MFA user</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dormant-user-update-mfa-and-logs-in-ueba-6adc74fb-37f9-4187-ba7c-84269b09a485-ad8c1897.html">Dormant User Update MFA and Logs In - UEBA</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-privileged-account-password-changes-d9cccaf9-d15e-4731-a62a-06d76e9c5e67-592fbe65.html">Privileged Account Password Changes</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (14)</h3>
+<h3 id="workbooks">Workbooks (8)</h3>
 <p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
 <table>
 <thead>
@@ -548,33 +486,29 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>ActivityInsights has "True"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>ActivityInsights has "True"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -593,18 +527,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>ActivityInsights has "True"</code><br><code>ActivityType == "LogOn"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -638,44 +570,278 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (12 criteria, 32 total references)</h2>
+<p>References by type: 0 connectors, 32 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
 <th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>10</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights has "True"</code><br><code>ActivityType == "LogOn"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType in "FailedLogOn,LogOn"</code><br><code>EventSource == "Azure AD"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-user-analytics-workbook-b95f3e5a.html">User_Analytics_Workbook</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityInsights contains "ISP"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityType == "signin.amazonaws.com"</code><br><code>EventSource contains "aws"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActivityType == "LogOn"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventSource == "MDE DeviceLogonEvents"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActivityType contains "IAM"</code><br><code>EventSource == "GCP Audit Logs"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventSource == "Okta_CL"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActivityInsights contains "True"</code><br><code>ActivityType in "FailedLogOn,LogOn"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ActivityType == "Administrative"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>32</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>32</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="activityinsights">ActivityInsights</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has True</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>13</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains ISP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains True</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="activitytype">ActivityType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>LogOn</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>17</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FailedLogOn</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>12</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>signin.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains IAM</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Administrative</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="eventsource">EventSource</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Azure AD</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains aws</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MDE DeviceLogonEvents</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GCP Audit Logs</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Okta_CL</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

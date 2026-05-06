@@ -14,6 +14,33 @@ This playbook search for indicators in Minemeld related to the entities(IP, file
 | **Solution** | [Minemeld](../solutions/minemeld.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Minemeld/Playbooks/MinemeldPlaybooks/Minemeld-CreateIndicator/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `MinemeldCustomConnector` | Custom | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_6*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_5*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+
+**`MinemeldCustomConnector`** (customApi):
+- *Get_Indicators*: method=`get`, path=`/config/data/@{encodeURIComponent(parameters('Miner DB Node'),'_indicators')}`
+- *Add_delete_update_indicator_3*: method=`post`, path=`/config/data/@{encodeURIComponent(parameters('Miner DB Node'),'_indicators')}/append`
+- *Add_delete_update_indicator*: method=`post`, path=`/config/data/@{encodeURIComponent(parameters('Miner DB Node'),'_indicators')}/append`
+- *Add_delete_update_indicator_2*: method=`post`, path=`/config/data/@{encodeURIComponent(parameters('Miner DB Node'),'_indicators')}/append`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [MinemeldPlaybooks/Minemeld-CreateIndicator/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Minemeld/Playbooks/MinemeldPlaybooks/Minemeld-CreateIndicator/readme.md)*

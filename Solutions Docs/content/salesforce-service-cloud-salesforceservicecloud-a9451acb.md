@@ -16,11 +16,12 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
-| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | ? | ✓ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) |  | ? | ✓ | ? |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) |  | ? | ✓ | ? |
+| [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
 
 ---
 

@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | ? | ✗ | ? |
-| [`Usage`](../tables/usage.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 |  | ? | ✗ | ? |
+| [`Usage`](../tables/usage.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,MDCFileIntegrityMonitoringEvents,McasShadowItReporting,ProtectionStatus,SecurityAlert,SecurityBaseline,SecurityBaselineSummary,SecurityDetection,SecurityEvent,SigninLogs,WindowsFirewall"` | ? | ✗ | ? |
 
 ---
 

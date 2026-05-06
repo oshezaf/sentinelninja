@@ -14,6 +14,22 @@ This playbook will be sending alerts with basic incidents to SIGNL4 teams when a
 | **Solution** | [SIGNL4](../solutions/signl4.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Playbooks/SIGNL4_Alerting_and_Response/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `signl4` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`signl4`** (managedApi):
+- *Trigger_Alert*: method=`post`, path=`/alerts`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SIGNL4_Alerting_and_Response/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SIGNL4/Playbooks/SIGNL4_Alerting_and_Response/readme.md)*

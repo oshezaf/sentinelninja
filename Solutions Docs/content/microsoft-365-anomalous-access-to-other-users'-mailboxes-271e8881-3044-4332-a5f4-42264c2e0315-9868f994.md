@@ -22,9 +22,9 @@ Looks for users accessing multiple other users' mailboxes or accessing multiple 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` | ✓ | ✗ | ? |
 
 ---
 

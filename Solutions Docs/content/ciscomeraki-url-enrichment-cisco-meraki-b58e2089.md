@@ -14,6 +14,28 @@ This playbook checks if malicious URL is blocked or unblocked by Cisco Meraki ne
 | **Solution** | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `MerakiConnector` | Custom | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`MerakiConnector`** (customApi):
+- *Get_Network_Appliance_Content_Filtering*: method=`get`, path=`/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/contentFiltering`
+- *Get_Networks*: method=`get`, path=`/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks`
+- *Get_Organizations*: method=`get`, path=`/organizations`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [URL-Enrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/readme.md)*

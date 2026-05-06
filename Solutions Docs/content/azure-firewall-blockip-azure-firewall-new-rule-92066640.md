@@ -14,6 +14,35 @@ This playbook uses the Azure Firewall connector to add IP Address to the Deny Ne
 | **Solution** | [Azure Firewall](../solutions/azure-firewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addNewRule/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `teams` | Managed | 1 | 0 |
+| `virustotal` | Managed | 1 | 1 |
+| `AzureFirewallConnector` | Custom | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_with_the_endpoint_info_and_action_taken*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`virustotal`** (managedApi):
+- *Ip_scan_report_V3*: method=`get`, path=`/api/v3/ip_addresses/@{encodeURIComponent(items('For_each_IP_Address_Entity_from_Incident')?['Address'])}`
+
+**`AzureFirewallConnector`** (customApi):
+- *Creates_or_updates_the_specified_Azure_Firewall*: method=`put`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/azureFirewalls/@{encodeURIComponent(outputs('Firewall_name'))}`
+- *Gets_the_specified_Azure_Firewall*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/azureFirewalls/@{encodeURIComponent(outputs('Firewall_name'))}`
+- *Gets_all_the_Azure_Firewalls_in_a_subscription*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/providers/Microsoft.Network/azureFirewalls`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AzureFirewall-BlockIP-addNewRule/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addNewRule/readme.md)*

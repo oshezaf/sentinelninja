@@ -25,9 +25,9 @@ Identifies unauthorized OData access attempts and mass role/user deletions in SA
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SAPBTPAuditLog_CL`](../tables/sapbtpauditlog-cl.md) |  | ? | ✓ | ? |
 
 ---
 

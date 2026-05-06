@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `CommunicationType == "Team"`<br>`OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"`<br>`Operation contains "Added"`<br>`Operation contains "Created"`<br>`Operation contains "Deleted"`<br>`Operation contains "Removed"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName startswith "Microsoft Teams"`<br>`ResultDescription != "Other"`<br>`ResultType == "0"`<br>`ResultType !in "0,50140"` | ✓ | ✗ | ? |
 
 ---
 

@@ -14,6 +14,32 @@ This playbook uses Druva-Ransomware-Response capabilities to stop the spread of 
 | **Solution** | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineInsyncWorkloads/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_secret_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value`
+- *Get_secret_ClientID*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientID')}/value`
+
+**`http`** (builtin):
+- *Generate_Bearer_Token*: method=`POST`, uri=`@{parameters('api_host')}/token`
+- *Find_User*: method=`GET`, uri=`@{parameters('api_host')}/realize/ransomwarerecovery/v1/users`
+- *Find_Users_Device*: method=`GET`, uri=`@concat(parameters('api_host'),
+    '/realize/ransomwarerecovery/v1/search/device?',
+    outputs('Compose_api_host')
+)`
+- *Quarantine_Resource_API*: method=`POST`, uri=`@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{item()?['resourceID']}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DruvaQuarantineInsyncWorkloads/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineInsyncWorkloads/readme.md)*

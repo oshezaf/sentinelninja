@@ -22,9 +22,9 @@ Identifies Google Cloud Storage buckets that are publicly accessible using Secur
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) |  | ✓ | ✓ | ? |
 
 ---
 

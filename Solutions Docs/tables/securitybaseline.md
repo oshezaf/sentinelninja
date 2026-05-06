@@ -75,60 +75,51 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (7)
 
-### Workbooks (11)
+### Workbooks (7)
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `AnalyzeResult in "Failed,Passed"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+| Workbook |
+|:-------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
 
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `AnalyzeResult in "Failed,Passed"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
+| Workbook |
+|:-------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `AnalyzeResult in "Failed,Passed"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+| Workbook |
+|:-------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+**In solution [NISTSP80053](../solutions/nistsp80053.md):** `AnalyzeResult in "Failed,Passed"`<br>`RuleSetting contains "DisableLockScreenAppNotifications"`<br>`RuleSetting contains "DisablePasswordReveal"`<br>`RuleSetting contains "DisableRemovableDriveScanning"`<br>`RuleSetting contains "EnableInstallerDetection"`<br>`RuleSetting contains "EnableSmartScreen"`<br>`RuleSetting contains "NoDriveTypeAutoRun"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
+| Workbook |
+|:-------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+**In solution [SOC Handbook](../solutions/soc-handbook.md):** `AnalyzeResult == "Failed"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+| Workbook |
+|:-------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
 
-**In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
+**In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):** `AnalyzeResult in "Failed,Passed"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) |  |
+| Workbook |
+|:-------------|
+| [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `AnalyzeResult in "Failed,Passed"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+| Workbook |
+|:-------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
 ## Resource Types
 
@@ -139,6 +130,35 @@ This table collects data from the following Azure resource types:
 - `microsoft.azurestackhci/virtualmachines`
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
+
+## Selection Criteria Summary (3 criteria, 7 total references)
+
+References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `AnalyzeResult in "Failed,Passed"` | - | 5 | - | - | **5** |
+| `AnalyzeResult in "Failed,Passed"`<br>`RuleSetting contains "DisableLockScreenAppNotifications"`<br>`RuleSetting contains "DisablePasswordReveal"`<br>`RuleSetting contains "DisableRemovableDriveScanning"`<br>`RuleSetting contains "EnableInstallerDetection"`<br>`RuleSetting contains "EnableSmartScreen"`<br>`RuleSetting contains "NoDriveTypeAutoRun"` | - | 1 | - | - | **1** |
+| `AnalyzeResult == "Failed"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **7** | **0** | **0** | **7** |
+
+### AnalyzeResult
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Failed` | - | 7 | - | - | **7** |
+| `Passed` | - | 6 | - | - | **6** |
+
+### RuleSetting
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains DisableLockScreenAppNotifications` | - | 1 | - | - | **1** |
+| `contains DisablePasswordReveal` | - | 1 | - | - | **1** |
+| `contains DisableRemovableDriveScanning` | - | 1 | - | - | **1** |
+| `contains EnableInstallerDetection` | - | 1 | - | - | **1** |
+| `contains EnableSmartScreen` | - | 1 | - | - | **1** |
+| `contains NoDriveTypeAutoRun` | - | 1 | - | - | **1** |
 
 ---
 

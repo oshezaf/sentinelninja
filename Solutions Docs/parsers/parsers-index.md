@@ -493,7 +493,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [MapNetflowUsername](mapnetflowusername.md) ⚠️ | 📦 [Cisco SD-WAN](../solutions/cisco-sd-wan.md) | ? |
 | [MarkLogicAudit](marklogicaudit.md) | 📦 [MarkLogicAudit](../solutions/marklogicaudit.md) | MarkLogicAudit_CL |
-| [McAfeeCommonSecurityLog](mcafeecommonsecuritylog.md) | 📂 *Legacy* | CommonSecurityLog |
+| [McAfee Common Security Log Parser](mcafee-common-security-log-parser.md) | 📂 *Legacy* | CommonSecurityLog |
 | [McAfeeEPOEvent](mcafeeepoevent.md) | 📦 [McAfee ePolicy Orchestrator](../solutions/mcafee-epolicy-orchestrator.md) | Syslog |
 | [McAfeeNSPEvent](mcafeenspevent.md) | 📦 [McAfee Network Security Platform](../solutions/mcafee-network-security-platform.md) | Syslog |
 | [MCASActivity](mcasactivity.md) | 📂 *Legacy* | MCASActivity_CL |
@@ -593,7 +593,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
-| [SalesforceServiceCloud](salesforceservicecloud.md) | 📦 [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) | SalesforceServiceCloudV2_CL, SalesforceServiceCloud_CL |
+| [SalesforceServiceCloud](salesforceservicecloud.md) | 📦 [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) | SalesforceServiceCloudV2_CL, SalesforceServiceCloudV3_CL, ... |
 | [SentinelOne](sentinelone.md) | 📦 [SentinelOne](../solutions/sentinelone.md) | SentinelOneActivities_CL, SentinelOneAgents_CL, ... |
 | [SlackAudit](slackaudit.md) | 📦 [SlackAudit](../solutions/slackaudit.md) | SlackAuditNativePoller_CL, SlackAuditV2_CL, ... |
 | [Snowflake](snowflake.md) | 📦 [Snowflake](../solutions/snowflake.md) | SnowflakeLoad_CL, SnowflakeLogin_CL, ... |
@@ -696,7 +696,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 |:-------|:-------|:-------|
 | [ZNSegmentAudit](znsegmentaudit.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) | ZNAudit_CL, ZNSegmentAuditNativePoller_CL |
 | [Zoom](zoom.md) | 📂 *Legacy* | Zoom_CL |
-| [Zoom](zoom.md) | 📦 [ZoomReports](../solutions/zoomreports.md) | Zoom_CL |
+| [Zoom](zoom.md) | 📦 [ZoomReports](../solutions/zoomreports.md) | ZoomV2_CL, Zoom_CL |
 | [ZPAEvent](zpaevent.md) | 📦 [Zscaler Private Access (ZPA)](../solutions/zscaler-private-access-zpa.md) | ZPA_CL |
 
 ---

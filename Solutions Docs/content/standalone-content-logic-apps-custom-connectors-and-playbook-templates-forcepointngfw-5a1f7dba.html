@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Logic Apps Custom Connectors and Playbook templates - ForcepointNGFW &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="logic-apps-custom-connectors-and-playbook-templates---forcepointngfw">Logic Apps Custom Connectors and Playbook templates - ForcepointNGFW</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This is a consolidated json file for deploying ForcepointSMC custom connector + ForcepointFUID custom connector + 6 playbooks.</p>
 <table>
@@ -42,8 +42,109 @@
 </tr>
 </tbody>
 </table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>5</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">17</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>forcepointsmcapiconnector</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ForcepointFUIDConnector</code></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ForcepointSMC-Connector</code></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Update_incident_2*: method=`put`, path=`/Incidents`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`forcepointsmcapiconnector`** (managedApi):
+- *Add_IP_Address_into_IP_List*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
+- *Get_IP_address*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
+- *Get_IP_List_Element*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list`
+- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+- *Add_IP_Address_into_IP_List*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
+- *Get_IP_address*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
+- *Get_IP_List_Element*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list`
+- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+- *Add_IP_Address_into_IP_List*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
+- *Get_IP_address*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
+- *Get_IP_List_Element*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list`
+- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+- *Get_URL_address*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application/@{encodeURIComponent(last(split(body('Get_URL_List')?['result']?[0]?['href'],'/')))}`
+- *Upload_URL_to_URL_list*: method=`put`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application/@{encodeURIComponent(last(split(body('Get_URL_List')?['result']?[0]?['href'],'/')))}`
+- *Get_URL_List*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application`
+- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+- *Get_Host*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/host`
+- *Get_IP_address*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(items('For_each_IP_list')?['href'],'/')))}/ip_address_list`
+- *Find_IP_or_URL_in_SMC*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements`
+- *Get_IP_List_Element*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list`
+- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+- *Get_URLs_from_URL_list*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application/@{encodeURIComponent(last(split(items('For_each_URL_list')?['href'],'/')))}`
+- *Find_IP_or_URL_in_SMC*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements`
+- *Get_URL_List*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application`
+- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+
+**`teams`** (managedApi):
+- *Post_adaptive_card_in_a_chat_or_channel_2*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Post_adaptive_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+
+**`ForcepointFUIDConnector`** (customApi):
+- *Get_IP_Address_by_Domain_and_Username_-_Forcepoint_FUID*: method=`get`, path=`/api/uid/@{encodeURIComponent(variables('FUID Version'))}/user/ntlm-identity/@{encodeURIComponent(split(last(split(items('Appending_Usernames')?['AadUserId'],'@')),'.')[0],outputs('Seperator'),split(items('Appending_Usernames')?['AadUserId'],'@')[0])}`
+
+</details>
+
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
 </div>
 

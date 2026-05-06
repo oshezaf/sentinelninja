@@ -22,9 +22,9 @@ List all activities where data access logging (ADMIN_READ, DATA_READ, or DATA_WR
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "project"`<br>`MethodName == "SetIamPolicy"`<br>`ServiceName == "cloudresourcemanager.googleapis.com"` | ✓ | ✓ | ? |
 
 ---
 

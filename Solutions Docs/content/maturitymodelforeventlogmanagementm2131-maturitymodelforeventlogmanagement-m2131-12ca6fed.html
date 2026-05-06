@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MaturityModelForEventLogManagementM2131 &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="maturitymodelforeventlogmanagement_m2131">MaturityModelForEventLogManagement_M2131</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <table>
 <thead>
@@ -98,21 +98,21 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
-<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code></td>
+<td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Success"</code><br><code>ActivitySubstatusValue in "Created,OK"</code><br><code>OperationNameValue contains "Microsoft.Network/loadBalancers/"</code><br><code>OperationNameValue contains "Network"</code><br><code>ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"</code></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
-<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>Resource == "SOC-NS-AG-WAFV2"</code><br><code>ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"</code></td>
+<td style="text-align: left;"><code>Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>Resource == "SOC-NS-AG-WAFV2"</code><br><code>ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"</code><br><code>msg_s !has ". Url"</code><br><code>msg_s !has "No rule matched"</code><br><code>msg_s !has "Reason:"</code><br><code>msg_s !has "Rule Collection"</code><br><code>msg_s !has "TLS extension was missing"</code><br><code>msg_s !has "Web Category:"</code><br><code>msg_s has ". No rule matched"</code><br><code>msg_s has ". Url"</code><br><code>msg_s has "Reason:"</code><br><code>msg_s has "Rule Collection Group"</code><br><code>msg_s has "Web Category:"</code></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -133,7 +133,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -147,14 +147,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/configurationchange.html"><code>ConfigurationChange</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ConfigChangeType == "Registry"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/configurationdata.html"><code>ConfigurationData</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ConfigDataType == "Registry"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -175,7 +175,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
-<td style="text-align: left;"><code>ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"</code></td>
+<td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -203,7 +203,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>DeliveryAction == "Junked"</code><br><code>DetectionMethods contains "spam"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -245,7 +245,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/insightsmetrics.html"><code>InsightsMetrics</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Namespace in "Memory,Network,Processor"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -280,7 +280,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>RecordType == "ExchangeAdmin"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation !contains "access"</code><br><code>Operation contains "policy"</code><br><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code><br><code>RecordType == "ExchangeAdmin"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -308,7 +308,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>GroupMembership contains "admin"</code><br><code>GroupMembership contains "contributor"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -322,7 +322,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securityrecommendation.html"><code>SecurityRecommendation</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>RecommendationDisplayName contains "AWS"</code><br><code>RecommendationDisplayName contains "Amazon"</code><br><code>RecommendationDisplayName contains "certificate"</code><br><code>RecommendationDisplayName contains "container"</code><br><code>RecommendationDisplayName contains "database"</code><br><code>RecommendationDisplayName contains "encrypt"</code><br><code>RecommendationDisplayName contains "endpoint protection"</code><br><code>RecommendationDisplayName contains "exploit"</code><br><code>RecommendationDisplayName contains "key"</code><br><code>RecommendationDisplayName contains "kube"</code><br><code>RecommendationDisplayName contains "pod"</code><br><code>RecommendationDisplayName contains "sql"</code><br><code>RecommendationDisplayName contains "vault"</code><br><code>RecommendationDisplayName contains "virus"</code><br><code>RecommendationDisplayName contains "vuln"</code><br><code>RecommendationDisplayName has "GCP"</code><br><code>RecommendationDisplayName has "Google"</code><br><code>RecommendationName contains "container"</code><br><code>RecommendationName contains "kube"</code><br><code>RecommendationName contains "kubernetes"</code><br><code>RecommendationName contains "pod"</code><br><code>RecommendationName contains "update"</code><br><code>RecommendationState in "Healthy,NotApplicable,Removed,Unhealthy"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -336,7 +336,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"</code><br><code>AppDisplayName contains "ACOM"</code><br><code>AppDisplayName contains "CLI"</code><br><code>AppDisplayName contains "PowerShell"</code><br><code>AppDisplayName contains "command"</code><br><code>AppDisplayName contains "graph"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -407,7 +407,7 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">Back to MaturityModelForEventLogManagementM2131</a></p>
 </div>
 

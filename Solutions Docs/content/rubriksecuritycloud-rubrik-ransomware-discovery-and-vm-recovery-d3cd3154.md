@@ -14,6 +14,46 @@ This playbook interacts with Rubrik Security Cloud to (1) optionally preserve ev
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikRansomwareDiscoveryAndVMRecovery/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **6** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault_1` | Managed | 0 | 2 |
+| `teams` | Managed | 1 | 0 |
+| `RubrikCustomConnector` | Custom | 1 | 1 |
+| `http` | Built-in | 0 | 9 |
+| `workflow` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault_1`** (managedApi):
+- *ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
+- *ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`RubrikCustomConnector`** (customApi):
+- *Authentication*: method=`post`, path=`/api/client_token`
+
+**`http`** (builtin):
+- *Fetch_yara_rule_from_URLs*: method=`GET`, uri=`@body('Collect_IOC_scan_and_general_recovery_data')?['data']?['ioc Yara rule file URL']`
+- *Create_Snapshot_for_evidence*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_VM_metadata*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_HostID*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_Vsphere_Host_ID*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Live-Mount_recovered_snapshot*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Export_recovered_snapshot*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_Vsphere_Datastore_ID*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_Vsphere_Host_ID_-_2*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+
+**`workflow`** (builtin):
+- *RubrikPollAsyncResult_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
+- *RubrikPollAsyncResult_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
+- *RubrikIOCScan*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikRansomwareDiscoveryAndVMRecovery/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikRansomwareDiscoveryAndVMRecovery/readme.md)*

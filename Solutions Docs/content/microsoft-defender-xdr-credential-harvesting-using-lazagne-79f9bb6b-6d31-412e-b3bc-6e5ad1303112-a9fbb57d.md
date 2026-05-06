@@ -21,9 +21,9 @@ Detects the use of LaZagne to steal credentials from the SAM database by Ryuk ra
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "hklm"`<br>`ProcessCommandLine has "sam"`<br>`ProcessCommandLine has "save"` | ✓ | ✗ | ? |
 
 ---
 

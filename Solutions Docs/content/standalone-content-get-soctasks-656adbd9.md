@@ -14,6 +14,31 @@ This playbook uses the SOCRA Watchlist to automatically enrich incidents generat
 | **Solution** | Standalone Content |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Get-SOCTasks/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 3 |
+| `azuresentinel` | Managed | 1 | 5 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_V2*: method=`post`, path=`/queryDataV2`
+- *Run_query_and_list_results_V2_2*: method=`post`, path=`/queryDataV2`
+- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_task_to_incident*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_task_to_incident_2*: method=`post`, path=`/Incidents/CreateTask`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

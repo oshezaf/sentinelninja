@@ -14,6 +14,34 @@ This playbook is triggered via HTTP request and is designed to be used as a sub-
 | **Solution** | [Censys](../solutions/censys.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysAddIncidentComment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 3 |
+| `azuresentinel` | Managed | 1 | 8 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Each_Host_Data*: method=`post`, path=`/api/logs`
+- *Send_Web_Property_Data*: method=`post`, path=`/api/logs`
+- *Send_certificate_data*: method=`post`, path=`/api/logs`
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_1*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_5*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_6*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_7*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_8*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CensysAddIncidentComment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysAddIncidentComment/readme.md)*

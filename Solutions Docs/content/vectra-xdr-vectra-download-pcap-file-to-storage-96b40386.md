@@ -14,6 +14,45 @@ This playbook enables user to download pcap file of any detections associated wi
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectaDownloadPcapFileToStorage/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **6** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azurefile` | Managed | 1 | 2 |
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 1 | 3 |
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 3 |
+| `workflow` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azurefile`** (managedApi):
+- *Create_Pcap_File_In_Azure_Storage*: method=`post`, path=`/datasets/default/files`
+- *Create_Pcap_File_In_Azure_Storage_For_Failed_Detections*: method=`post`, path=`/datasets/default/files`
+
+**`azuresentinel`** (managedApi):
+- *Add_Comment_List_Of_Detection_IDs_For_Which_Pcap_File_Downloaded*: method=`post`, path=`/Incidents/Comment`
+- *Comment_For_No_Pcap_File_Found_For_Any_Detection_of_Entity*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_Access_Token_For_Detections_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+- *Get_Access_Token_For_Fetch_Pcap_File*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+- *Get_Access_Token_For_Fetch_Pcap_File_Again*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections`
+- *HTTP_Request_To_Fetch_Pcap_File_for_Detection*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap`
+- *HTTP_Request_To_Fetch_Pcap_File_Again_for_Detection_Failed_Detections*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap`
+
+**`workflow`** (builtin):
+- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [VectaDownloadPcapFileToStorage/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectaDownloadPcapFileToStorage/readme.md)*

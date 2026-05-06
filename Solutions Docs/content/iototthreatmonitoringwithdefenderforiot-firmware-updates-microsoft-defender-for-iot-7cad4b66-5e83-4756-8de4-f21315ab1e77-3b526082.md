@@ -25,9 +25,9 @@ This alert leverages Defender for IoT to detect unauthorized firmware updates th
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName has_any "Beckhoff Software Changed"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ? |
 
 ---
 

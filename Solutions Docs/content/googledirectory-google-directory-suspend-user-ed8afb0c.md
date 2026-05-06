@@ -16,6 +16,28 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `teams` | Managed | 1 | 0 |
+| `GoogleDirectory` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`GoogleDirectory`** (customApi):
+- *Update_User*: method=`put`, path=`/admin/directory/v1/users/@{encodeURIComponent(items('For_each_user_to_suspend'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/Google-SuspendUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleDirectory/Playbooks/Playbooks/Google-SuspendUser/readme.md)*

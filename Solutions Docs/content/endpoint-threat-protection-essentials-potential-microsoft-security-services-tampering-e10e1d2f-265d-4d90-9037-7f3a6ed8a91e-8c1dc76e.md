@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
-| [`Event`](../tables/event.md) | `Source == "Microsoft-Windows-SENSE"` | ✓ | ✓ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine has "$true"`<br>`InitiatingProcessCommandLine has "/IM"`<br>`InitiatingProcessCommandLine has "Set-MpPreference"`<br>`InitiatingProcessCommandLine has "Start"`<br>`InitiatingProcessCommandLine has "config"`<br>`InitiatingProcessParentFileName != "cscript.exe"` | ✓ | ✗ | ? |
+| [`Event`](../tables/event.md) | `ParameterXml in "<Param>WinDefend</Param>,<Param>sgrmbroker</Param>"`<br>`Source == "Microsoft-Windows-SENSE"` | ✓ | ✓ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
 | [`WindowsEvent`](../tables/windowsevent.md) | `EventID in "4688,87"` | ✓ | ✓ | ? |
 

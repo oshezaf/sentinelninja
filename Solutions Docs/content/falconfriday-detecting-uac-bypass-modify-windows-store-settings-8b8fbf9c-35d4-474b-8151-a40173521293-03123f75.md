@@ -25,9 +25,9 @@ This query identifies modification a specific registry key and then launching ws
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "wsreset.exe"`<br>`ProcessIntegrityLevel == "High"` | ✓ | ✗ | ? |
 
 ---
 

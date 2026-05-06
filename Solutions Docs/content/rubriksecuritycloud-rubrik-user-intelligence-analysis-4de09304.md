@@ -14,6 +14,46 @@ This playbook queries Rubrik Security Cloud to get user sensitive data and updat
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikUserIntelligenceAnalysis/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 10 |
+| `keyvault` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 3 |
+| `workflow` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_that_more_users_details_can_be_found_in_table*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_Severity_to_High_based_on_user_risk*: method=`put`, path=`/Incidents`
+- *Update_incident_severity_to_low*: method=`put`, path=`/Incidents`
+- *Update_incident_severity_to_medium*: method=`put`, path=`/Incidents`
+- *Add_comment_that_no_information_is_available_related_to_username*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_Severity_to_High*: method=`put`, path=`/Incidents`
+- *Update_incident_severity_to_low_based_on_user_email*: method=`put`, path=`/Incidents`
+- *Update_incident_severity_to_medium_based_risk_of_email_user*: method=`put`, path=`/Incidents`
+- *Add_comment_to_incident_that_no_users_are_available*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_Rubrik_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
+- *Get_Rubrik_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`http`** (builtin):
+- *Get_User_risk_information_for_username*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
+- *Get_user_risk_information*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
+- *Get_Access_Token*: method=`POST`, uri=`@{variables('BaseUrl')}/api/client_token`
+
+**`workflow`** (builtin):
+- *RubrikUserRiskPolicyDetails_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('RiskPolicyHitsPlaybookName'))]`, triggerName=`manual`
+- *RubrikUserRiskPolicyDetails*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('RiskPolicyHitsPlaybookName'))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikUserIntelligenceAnalysis/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikUserIntelligenceAnalysis/readme.md)*

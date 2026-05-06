@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PlaybookName &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="playbookname">PlaybookName</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>author: Kloudynet Technologies</p>
 <table>
@@ -42,8 +42,92 @@
 </tr>
 </tbody>
 </table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>6</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>sharepointonline</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>wdatp</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">7</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Alert_-_Get_hosts*: method=`post`, path=`/entities/host`
+
+**`keyvault`** (managedApi):
+- *Get_client_app_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('ClientAppSecret')}/value`
+
+**`sharepointonline`** (managedApi):
+- *Create_new_subfolder_under_Documents_to_store_all_csv_files*: method=`post`, path=`/datasets/@{encodeURIComponent(encodeURIComponent(''))}/tables/@{encodeURIComponent(encodeURIComponent('6a2a8bfc-17b5-42e8-8c34-47865fc48b1d'))}/createnewfolder`
+- *Create_sharing_link_for_the_subfolder_which_contains_all_csv_files*: method=`post`, path=`/datasets/@{encodeURIComponent(encodeURIComponent(''))}/codeless/_api/v2.0/sites/root/lists/@{encodeURIComponent(encodeURIComponent('6a2a8bfc-17b5-42e8-8c34-47865fc48b1d'))}/items/@{encodeURIComponent(encodeURIComponent(body('Create_new_subfolder_under_Documents_to_store_all_csv_files')?['ID']))}/driveItem/createLink`
+- *Create_missing_KBs_csv_file*: method=`post`, path=`/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files`
+- *Create_installed_software_csv_file*: method=`post`, path=`/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files`
+- *Create_alerts_csv_file*: method=`post`, path=`/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files`
+- *Create_recommendation_csv_file*: method=`post`, path=`/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files`
+- *Create_vulnerabilities_csv_file*: method=`post`, path=`/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files`
+
+**`teams`** (managedApi):
+- *Post_a_message_on_Teams*: method=`post`, path=`/v3/beta/teams/@{encodeURIComponent('f6c7b5f5-8377-4dff-ae43-83b441df6372')}/channels/@{encodeURIComponent('19:cc0d142530d74b97b4019b85a882cb22@thread.tacv2')}/messages`
+
+**`wdatp`** (managedApi):
+- *Machines_-_Get_list_of_machines*: method=`get`, path=`/api/machines`
+
+**`http`** (builtin):
+- *HTTP_-_to_get_missing_KBs*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_get_missing_KBs')?['id']}/getmissingkbs`
+- *HTTP_-_get_software_inventory*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_get_software_inventory')?['id']}/software`
+- *HTTP_-_to_restrict_restrict_app_exection*: method=`POST`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_restrict_app_execution')?['id']}/restrictCodeExecution`
+- *HTTP_-_to_start_machine_antivirus_scan*: method=`POST`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_start_antivirus_scan')?['id']}/runAntiVirusScan`
+- *HTTP_-_To_get_alerts*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_alerts')?['id']}/alerts`
+- *HTTP_-_To_get_recommendations*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_recommendation')?['id']}/recommendations`
+- *HTTP_-_to_get_vulnerabilities*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_vulnerabilities')?['id']}/vulnerabilities`
+
+</details>
+
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
 </div>
 

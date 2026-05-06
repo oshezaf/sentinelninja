@@ -14,6 +14,34 @@ This Playbook Provides the automation on blocking the suspicious/malicious sende
 | **Solution** | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks/o365-BlockSender/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `keyvault` | Managed | 0 | 1 |
+| `function` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Certificate_key_name'))}/value`
+
+**`function`** (builtin):
+- *CreateAllowBlockList*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/CreateAllowBlockList')]`
+- *ConnectExchangeOnline*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/ConnectExchangeOnline')]`
+- *DisconnectExchangeOnline*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/DisconnectExchangeOnline')]`
+- *TenantAllowBlockList*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/TenantAllowBlockList')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [O365DefenderPlaybooks/o365-BlockSender/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Playbooks/O365DefenderPlaybooks/o365-BlockSender/readme.md)*

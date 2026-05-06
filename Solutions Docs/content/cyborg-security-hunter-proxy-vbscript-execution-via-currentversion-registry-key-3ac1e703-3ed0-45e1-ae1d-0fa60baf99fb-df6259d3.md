@@ -22,9 +22,9 @@ Identifies VBScript proxy execution through a registry key in \Microsoft\Windows
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine contains "\\Microsoft\\Windows\\CurrentVersion"`<br>`CommandLine has_all "Execute"`<br>`CommandLine has_all "vbscript"`<br>`Process has_any "cmd.exe"` | ✓ | ✓ | ? |
 
 ---
 

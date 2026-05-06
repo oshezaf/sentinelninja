@@ -1,4 +1,6 @@
-# Salesforce Service Cloud (via Codeless Connector Framework)
+# 🔍 Salesforce Service Cloud (via Codeless Connector Framework)
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="75" height="75">
 
@@ -14,7 +16,7 @@
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
-| **Connector Definition Files** | [SalesforceServiceCloud_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/SalesforceServiceCloud_DataConnectorDefinition.json) |
+| **Connector Definition Files** | [azuredeploy_SalesforceServiceCloud_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/azuredeploy_SalesforceServiceCloud_poller_connector.json) |
 | **CCF Configuration** | [SalesforceServiceCloud_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/SalesforceServiceCloud_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging`, `Nested` |
 
@@ -27,6 +29,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

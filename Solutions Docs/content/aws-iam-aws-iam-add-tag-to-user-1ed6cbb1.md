@@ -14,6 +14,27 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [AWS_IAM](../solutions/aws-iam.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWSIAM-AddTagToUser/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`function`** (builtin):
+- *TagUser*: method=`PUT`, functionId=`[concat(variables('aws_iam_functionapp_id'), '/functions/TagUser')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/AWSIAM-AddTagToUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWSIAM-AddTagToUser/readme.md)*

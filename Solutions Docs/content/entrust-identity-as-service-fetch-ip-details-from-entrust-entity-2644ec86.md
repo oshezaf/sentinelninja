@@ -14,6 +14,31 @@ This playbook provides the IP details of user authentication and management acti
 | **Solution** | [Entrust identity as Service](../solutions/entrust-identity-as-service.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks/Entrust-EnrichIP-EntityTrigger/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Entrust Secret Key Name'))}/value`
+
+**`http`** (builtin):
+- *HTTP_-_Get_IP_details_from_audit_events*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v2/reports/auditeventspaged`
+- *HTTP_-_generate_login_token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v1/adminapi/authenticate`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [EntrustPlaybooks/Entrust-EnrichIP-EntityTrigger/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks/Entrust-EnrichIP-EntityTrigger/readme.md)*

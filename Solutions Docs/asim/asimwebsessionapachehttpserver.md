@@ -45,9 +45,10 @@ The following connectors provide data for this parser:
 
 | Connector | Solution |
 |:----------|:---------|
+| [ApacheHTTPServer](../connectors/apachehttpserver.md) | [ApacheHTTPServer (legacy connector)](../solutions/apachehttpserver.md) |
 | [CustomlogsviaAMA](../connectors/customlogsviaama.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 
-**Solutions:** [CustomLogsAma](../solutions/customlogsama.md)
+**Solutions:** [ApacheHTTPServer (legacy connector)](../solutions/apachehttpserver.md), [CustomLogsAma](../solutions/customlogsama.md)
 
 ## References
 

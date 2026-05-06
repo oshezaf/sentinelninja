@@ -25,9 +25,9 @@ This query identifies processes spawned with high integrity from dllhost.exe wit
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine has_any "E9495B87-D950-4AB5-87A5-FF6D70BF3E90"`<br>`InitiatingProcessFileName == "dllhost.exe"`<br>`ProcessIntegrityLevel == "High"` | ✓ | ✗ | ? |
 
 ---
 

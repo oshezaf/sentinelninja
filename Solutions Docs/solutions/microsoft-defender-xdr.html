@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Microsoft Defender XDR solution for Sentinel &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="microsoft-defender-xdr-solution-for-sentinel">Microsoft Defender XDR solution for Sentinel</h1>
 <p><em>Solution: Microsoft Defender XDR</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Defender XDR Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -90,7 +90,7 @@
 <li><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>27 table(s)</strong>:</p>
+<p>This solution uses <strong>28 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -196,6 +196,11 @@
 <td>Hunting, Workbooks</td>
 </tr>
 <tr>
+<td><a href="../tables/event.html"><code>Event</code></a></td>
+<td>-</td>
+<td>Hunting</td>
+</tr>
+<tr>
 <td><a href="../tables/identitydirectoryevents.html"><code>IdentityDirectoryEvents</code></a></td>
 <td><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
 <td>Hunting, Workbooks</td>
@@ -276,7 +281,7 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>374 content item(s)</strong> (371 in solution, 3 discovered 🔍):</p>
+<p>This solution includes <strong>376 content item(s)</strong> (371 in solution, 5 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
@@ -289,9 +294,9 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Hunting Queries</td>
-<td style="text-align: right;">330</td>
+<td style="text-align: right;">332</td>
 <td style="text-align: right;">328</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
 </tr>
 <tr>
 <td style="text-align: left;">Analytic Rules</td>
@@ -1012,9 +1017,19 @@
 <td style="text-align: left;"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.html">Hunt for RMM tool execution following Teams messages</a> ⚠️</td>
+<td style="text-align: left;">InitialAccess, Execution</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a><br><a href="../tables/messageevents.html"><code>MessageEvents</code></a></td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.html">Hunt for TABL changes</a></td>
 <td style="text-align: left;">DefenseEvasion</td>
 <td style="text-align: left;"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.html">Hunt for alerts correlated with Teams messages</a> ⚠️</td>
+<td style="text-align: left;">InitialAccess, Discovery</td>
+<td style="text-align: left;"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a><br><a href="../tables/event.html"><code>Event</code></a><br><a href="../tables/messageevents.html"><code>MessageEvents</code></a><br><em>Internal use:</em><br><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-email-bombing-attacks-dd4a480b-aa24-4b62-b1f3-f538d8abbdfb-5261bafb.html">Hunt for email bombing attacks</a></td>
@@ -2359,8 +2374,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

@@ -14,6 +14,27 @@ Armis Update Alert Status playbook would be responsible to update the Alert stat
 | **Solution** | [Armis](../solutions/armis.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Playbooks/ArmisUpdateAlertStatus/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('ArmisAPISecretKey')}/value`
+
+**`http`** (builtin):
+- *Armis_Alert_Status_Update_to_Portal*: method=`PATCH`, uri=`@{variables('ArmisAPIBaseURL')}/api/v1/alerts/@{variables('ArmisAlertID')}/`
+- *Armis_Authentication*: method=`POST`, uri=`@{variables('ArmisAPIBaseURL')}/api/v1/access_token/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ArmisUpdateAlertStatus/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis/Playbooks/ArmisUpdateAlertStatus/readme.md)*

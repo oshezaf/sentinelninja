@@ -65,11 +65,29 @@ This table is used by the following solutions:
 
 ### Workbooks (1)
 
-**In solution [Global Secure Access](../solutions/global-secure-access.md):**
+**In solution [Global Secure Access](../solutions/global-secure-access.md):** `Workload in "Exchange,Other,SharePoint,Teams"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) |  |
+| Workbook |
+|:-------------|
+| [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Workload in "Exchange,Other,SharePoint,Teams"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### Workload
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Exchange` | - | 1 | - | - | **1** |
+| `Other` | - | 1 | - | - | **1** |
+| `SharePoint` | - | 1 | - | - | **1** |
+| `Teams` | - | 1 | - | - | **1** |
 
 ---
 

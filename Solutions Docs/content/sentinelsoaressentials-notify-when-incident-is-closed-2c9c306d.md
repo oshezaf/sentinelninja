@@ -14,6 +14,26 @@ This playbook is utilizing new update trigger to notify person/group on Microsof
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `office365` | Managed | 1 | 1 |
+| `teams` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`office365`** (managedApi):
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+**`teams`** (managedApi):
+- *Post_adaptive_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Notify-IncidentClosed/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Notify-IncidentClosed/readme.md)*

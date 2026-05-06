@@ -25,9 +25,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OpenSystemsProxyLogs_CL`](../tables/opensystemsproxylogs-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---
 

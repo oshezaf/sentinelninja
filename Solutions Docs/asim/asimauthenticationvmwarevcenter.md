@@ -48,8 +48,9 @@ The following connectors provide data for this parser:
 | Connector | Solution |
 |:----------|:---------|
 | [CustomlogsviaAMA](../connectors/customlogsviaama.md) | [CustomLogsAma](../solutions/customlogsama.md) |
+| [VMwarevCenter](../connectors/vmwarevcenter.md) | [VMware vCenter (legacy connector)](../solutions/vmware-vcenter.md) |
 
-**Solutions:** [CustomLogsAma](../solutions/customlogsama.md)
+**Solutions:** [CustomLogsAma](../solutions/customlogsama.md), [VMware vCenter (legacy connector)](../solutions/vmware-vcenter.md)
 
 ## References
 

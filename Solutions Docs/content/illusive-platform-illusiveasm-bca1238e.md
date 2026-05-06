@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID == "illusive:violation"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceCustomString1 in "CROWN_JEWEL_CREDENTIALS,LOCAL_USER_ADMINISTRATORS,SUSPICIOUS_FILES,USER_CREDENTIALS"`<br>`DeviceEventClassID == "illusive:violation"` | ✓ | ✓ | ? |
 
 ---
 

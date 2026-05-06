@@ -22,12 +22,12 @@ This query hunts for Nylon Typhoon-related activity, specifically data collectio
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
-| [`WindowsEvent`](../tables/windowsevent.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Defender Advanced Threat Protection"` | ✓ | ✗ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) |  | ✓ | ✓ | ? |
 
 ---
 

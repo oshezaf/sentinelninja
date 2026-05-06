@@ -25,9 +25,9 @@ Identifies a match for a SQL Injection attack in the App Gateway WAF logs. The t
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | `Action in "Blocked,Matched"`<br>`Message has "SQL Injection"` | ✓ | ✗ | ? |
 
 ---
 

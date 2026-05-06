@@ -16,6 +16,21 @@ Author: Hesham Saad
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `microsoftgraphsecurity` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftgraphsecurity`** (managedApi):
+- *Submit_multiple_tiIndicators*: method=`post`, path=`/beta/security/tiIndicators/submitTiIndicators`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/readme.md)*

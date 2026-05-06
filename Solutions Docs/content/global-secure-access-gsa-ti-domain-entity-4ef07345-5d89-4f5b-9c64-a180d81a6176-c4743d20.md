@@ -25,10 +25,10 @@ This query identifies Domain indicators of compromise (IOCs) from threat intelli
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | ✓ | ✗ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) |  | ✓ | ✗ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
 
 ---
 

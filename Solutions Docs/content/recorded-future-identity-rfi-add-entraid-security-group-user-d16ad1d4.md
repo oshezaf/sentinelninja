@@ -14,6 +14,22 @@ This playbook adds a compromised user to an EntraID security group. Triage and r
 | **Solution** | [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future%20Identity/Playbooks/v3.0/RFI-add-EntraID-security-group-user/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuread` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuread`** (managedApi):
+- *Add_risky_user_to_Active_Directory_security_group_for_users_at_risk*: method=`post`, path=`/v1.0/groups/@{encodeURIComponent(triggerBody()?['active_directory_security_group_id'])}/members/$ref`
+- *Get_User_-_Check_if_the_user_exists_in_Active_Directory*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(variables('user_principal_name'))}`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

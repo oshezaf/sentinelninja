@@ -14,6 +14,29 @@ This Playbook will sync the assigned user from JIRA to Microsoft Sentinel.
 | **Solution** | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Sync-AssignedUser/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Update_incident*: method=`put`, path=`/Incidents`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName AAD SP'), ''')}/value')]`
+
+**`http`** (builtin):
+- *HTTP*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/users?$filter=DisplayName eq '@{concat(triggerBody()?['fields']?['assignee']?['displayName'], ' (Operator)')}'`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Sync-AssignedUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Sync-AssignedUser/readme.md)*

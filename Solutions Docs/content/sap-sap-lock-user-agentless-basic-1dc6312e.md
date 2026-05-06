@@ -16,6 +16,42 @@ This playbook locks an SAP user when triggered by a Microsoft Sentinel incident.
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `teams` | Managed | 1 | 9 |
+| `http` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_no_SAP_alert*: method=`post`, path=`/Incidents/Comment`
+- *Close_Sentinel_incident*: method=`put`, path=`/Incidents`
+- *Close_incident_false_positive*: method=`put`, path=`/Incidents`
+
+**`teams`** (managedApi):
+- *Reply_success_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Reply_unblock_success_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Reply_unblock_error_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Reply_error_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Reply_AAD_placeholder*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Reply_BTP_placeholder*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Post_timeout_message*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Notify_admin_on_extraction_error*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}`
+- *Notify_admin_on_processing_error*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}`
+
+**`http`** (builtin):
+- *Get_OAuth_token_for_SAP*: method=`POST`, uri=`@{parameters('SAPOAuthTokenEndpoint')}`
+- *Block_User_via_SAP*: method=`POST`, uri=`@{variables('AgentGuid')}/http/community/sentinel/sap-user-block`
+- *Get_OAuth_token_for_SAP_unblock*: method=`POST`, uri=`@{parameters('SAPOAuthTokenEndpoint')}`
+- *Unblock_User_via_SAP*: method=`POST`, uri=`@{variables('AgentGuid')}/http/community/sentinel/sap-user-block`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Basic-SAPLockUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/Basic-SAPLockUser/readme.md)*

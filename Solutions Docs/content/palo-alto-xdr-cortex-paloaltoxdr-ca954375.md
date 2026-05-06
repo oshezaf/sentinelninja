@@ -24,6 +24,39 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 2 |
+| `azuresentinel` | Managed | 1 | 4 |
+| `teams` | Managed | 1 | 2 |
+| `virustotal` | Managed | 1 | 0 |
+| `virustotal_1` | Managed | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_2*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`teams`** (managedApi):
+- *Post_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Post_message_in_a_chat_or_channel_2*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+
+**`virustotal_1`** (managedApi):
+- *Get_an_IP_report*: method=`get`, path=`/api/v3/ip_addresses/connectorV2/@{encodeURIComponent(items('For_each_IP_in_incident')?['Address'])}`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

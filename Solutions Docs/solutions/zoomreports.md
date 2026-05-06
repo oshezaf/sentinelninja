@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.7 |
+| **Version** | 3.0.10 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Last Updated** | 2026-03-20 |
@@ -53,7 +53,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ZoomV2_CL`](../tables/zoomv2-cl.md) | [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md) | - |
+| [`ZoomV2_CL`](../tables/zoomv2-cl.md) | [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md) | Workbooks |
 | [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | Workbooks |
 
 ## Content Items
@@ -69,13 +69,13 @@ This solution includes **2 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md) | [`Zoom_CL`](../tables/zoom-cl.md) |
+| [ZoomReports](../content/zoomreports-zoomreports-c76868a1.md) | [`ZoomV2_CL`](../tables/zoomv2-cl.md)<br>[`Zoom_CL`](../tables/zoom-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Zoom](../parsers/zoom.md) | - | [`Zoom_CL`](../tables/zoom-cl.md) *(read)* |
+| [Zoom](../parsers/zoom.md) | - | [`ZoomV2_CL`](../tables/zoomv2-cl.md) *(read)*<br>[`Zoom_CL`](../tables/zoom-cl.md) *(read)* |
 
 ## Additional Documentation
 
@@ -104,6 +104,9 @@ If you run into issues while creating for [Server to Server Oauth App](https://d
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.10      | 29-04-2026                     | Bump version to 3.0.10 for a new publishing, same connector content as the previous one |
+| 3.0.9       | 29-04-2026                     | Update Cloud recording api polling interval to one day with one day delay to reduce duplication |
+| 3.0.8       | 27-04-2026                     | ZoomReports CCF Connector GA with updated parser |
 | 3.0.7       | 18-03-2026                     | Updated ZoomReports CCF to use a different table name and schema |
 | 3.0.6       | 13-03-2026                     | Added ZoomReports CCF Connector Public Preview |
 | 3.0.5       | 29-08-2024                     | Updated the python runtime version to 3.11  | 

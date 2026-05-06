@@ -22,9 +22,9 @@ This query can be used as a Custom Detection Rule (CDR) to trigger when a potent
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `EmailDirection == "Inbound"` | ✓ | ✗ | ? |
 
 ---
 

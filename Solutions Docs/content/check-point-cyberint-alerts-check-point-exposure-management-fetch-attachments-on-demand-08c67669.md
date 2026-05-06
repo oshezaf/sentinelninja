@@ -14,6 +14,28 @@ On-demand playbook that fetches alert attachments and analysis report for a Sent
 | **Solution** | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_FetchAttachments/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_attachments_comment*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_tags*: method=`put`, path=`/Incidents`
+
+**`http`** (builtin):
+- *Get_Alert_Details*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}`
+- *Get_Attachment*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}`
+- *Get_Analysis_Report*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Enrichment/CPEM_FetchAttachments/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_FetchAttachments/readme.md)*

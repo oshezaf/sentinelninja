@@ -21,9 +21,9 @@ The query searches for PowerShell execution events that could involve a download
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "DownloadFile"`<br>`ProcessCommandLine has "IEX"`<br>`ProcessCommandLine has "Invoke-Shellcode"`<br>`ProcessCommandLine has "Invoke-WebRequest"`<br>`ProcessCommandLine has "Net.WebClient"`<br>`ProcessCommandLine has "Start-BitsTransfer"`<br>`ProcessCommandLine has "http"`<br>`ProcessCommandLine has "mpcmdrun.exe"` | ✓ | ✗ | ? |
 
 ---
 

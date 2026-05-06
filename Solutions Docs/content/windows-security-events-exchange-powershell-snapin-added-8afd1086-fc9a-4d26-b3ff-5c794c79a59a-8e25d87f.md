@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin"`<br>`EventID == "4688"`<br>`Process has_any "cmd.exe"` | ✓ | ✓ | ? |
 
 ---
 

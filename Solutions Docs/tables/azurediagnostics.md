@@ -199,7 +199,7 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | server_principal_sid_s | String |  |
 | session_id_d | Double |  |
 
-## Solutions (36)
+## Solutions (35)
 
 This table is used by the following solutions:
 
@@ -232,7 +232,6 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
 - [SlashNext](../solutions/slashnext.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
@@ -260,13 +259,13 @@ This table is ingested by the following connectors:
 | [Azure Stream Analytics](../connectors/azurestreamanalytics-ccp.md) | `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` |
 | [Azure DDoS Protection](../connectors/ddos.md) | `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` |
 | [SlashNext Function App](../connectors/slashnextfunctionapp.md) | `Resource == "SlashnextFunctionApp"` |
-| [Azure Web Application Firewall (WAF)](../connectors/waf.md) | `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` |
+| [Azure Web Application Firewall (WAF)](../connectors/waf.md) | `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"`<br>`action_s == "Blocked"` |
 
 ---
 
-## Content Items Using This Table (107)
+## Content Items Using This Table (78)
 
-### Analytic Rules (42)
+### Analytic Rules (36)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -318,7 +317,7 @@ This table is ingested by the following connectors:
 | [Response rows stateful anomaly on database](../content/azure-sql-database-solution-for-sentinel-response-rows-stateful-anomaly-on-database-9851c360-5fd5-4bae-a117-b66d8476bf5e-50984d5e.md) |
 | [Syntax errors stateful anomaly on database](../content/azure-sql-database-solution-for-sentinel-syntax-errors-stateful-anomaly-on-database-c815008d-f4d1-4645-b13b-8b4bc188d5de-75deac2f.md) |
 
-**In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md):** `Category == "FrontDoorWebApplicationFirewallLog"`
+**In solution [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md):** `Category == "FrontDoorWebApplicationFirewallLog"`<br>`action_s in "AnomalyScoring,Block"`
 
 | Analytic Rule |
 |:-------------|
@@ -349,18 +348,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Application Gateway WAF - SQLi Detection](../content/standalone-content-application-gateway-waf-sqli-detection-68c0b6bb-6bd9-4ef4-9011-08998c8ef90f-165d539a.md) | `Category == "ApplicationGatewayFirewallLog"` |
-| [Application Gateway WAF - XSS Detection](../content/standalone-content-application-gateway-waf-xss-detection-d2bc08fa-030a-4eea-931a-762d27c6a042-fddb41a1.md) | `Category == "ApplicationGatewayFirewallLog"` |
-| [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md) |  |
-| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
-| [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) |  |
-
-### Hunting Queries (21)
+### Hunting Queries (19)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"`
 
@@ -398,7 +386,7 @@ This table is ingested by the following connectors:
 | [Azure RBAC AKS created role details](../content/azure-kubernetes-service-azure-rbac-aks-created-role-details-765dce51-689a-44b5-9b38-c9ae9441c7fc-9390272f.md) | `Category == "kube-audit"` |
 | [Determine users with cluster admin role](../content/azure-kubernetes-service-determine-users-with-cluster-admin-role-c3ac03d5-dbf2-49ab-a2de-83396a20a5fb-006175f6.md) | `Category == "kube-audit"`<br>`Resource == "ClusterRoleBinding"` |
 
-**In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):** `ResourceType == "VAULTS"`
+**In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):** `ResourceType == "VAULTS"`<br>`ResultType == "Success"`
 
 | Hunting Query |
 |:-------------|
@@ -416,19 +404,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Possible Webshell usage attempt related to SpringShell(CVE-2022-22965)](../content/web-shells-threat-protection-possible-webshell-usage-attempt-related-to-springshell-cve-2022-22965-6911d1df-4204-43b2-a64c-3cb102551ddd-8605b97e.md) |
 
-**Standalone Content:** `Category == "NetworkSecurityGroupEvent"`
-
-| Hunting Query |
-|:-------------|
-| [Check critical ports opened to the entire internet](../content/standalone-content-check-critical-ports-opened-to-the-entire-internet-66d494c0-233c-438a-9b1b-5fe839790d38-7cf5a163.md) |
-
-**GitHub Only:** `Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"`
-
-| Hunting Query |
-|:-------------|
-| [Possible SpringShell Exploitation Attempt (CVE-2022-22965)](../content/github-only-possible-springshell-exploitation-attempt-cve-2022-22965-1bb4a007-7d1d-4506-ada9-222604f54ec6-5008368c.md) |
-
-### Workbooks (44)
+### Workbooks (23)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"`
 
@@ -436,13 +412,13 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md) |
 
-**In solution [Azure DDoS Protection](../solutions/azure-ddos-protection.md):** `Category in "DDoSMitigationFlowLogs,DDoSMitigationReports,DDoSProtectionNotifications"`<br>`Resource in ",{Resource:label}"`
+**In solution [Azure DDoS Protection](../solutions/azure-ddos-protection.md):** `Category in "DDoSMitigationFlowLogs,DDoSMitigationReports,DDoSProtectionNotifications"`<br>`Message == "Packet was forwarded to service"`<br>`Message startswith "Protocol violation"`<br>`Resource in ",{Resource:label}"`
 
 | Workbook |
 |:-------------|
 | [AzDDoSStandardWorkbook](../content/azure-ddos-protection-azddosstandardworkbook-5256dfab.md) |
 
-**In solution [Azure Firewall](../solutions/azure-firewall.md):** `Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"`<br>`Resource in ",{Resource:label}"`<br>`ResourceType == "AZUREFIREWALLS"`
+**In solution [Azure Firewall](../solutions/azure-firewall.md):** `Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"`<br>`Resource in ",{Resource:label}"`<br>`ResourceType == "AZUREFIREWALLS"`<br>`msg_s !has ". Rule Collection:"`<br>`msg_s !has ". Url"`<br>`msg_s !has "DNAT"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Policy:"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "Rule Collection:"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Type="`<br>`msg_s !has "Url"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Rule Collection:"`<br>`msg_s has ". Url"`<br>`msg_s has "DNAT"`<br>`msg_s has "Policy:"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Rule Collection:"`<br>`msg_s has "Type="`<br>`msg_s has "Url"`<br>`msg_s has "Web Category:"`
 
 | Workbook |
 |:-------------|
@@ -464,10 +440,10 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [WebApplicationFirewallFirewallEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallfirewallevents-fffe3907.md) | `ResourceType == "APPLICATIONGATEWAYS"` |
+| [WebApplicationFirewallFirewallEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallfirewallevents-fffe3907.md) | `Message == "*"`<br>`Message has "SQL Injection"`<br>`Message has "attack"`<br>`ResourceType == "APPLICATIONGATEWAYS"`<br>`action_s in "Blocked,Detected"`<br>`instanceId_s has "role"` |
 | [WebApplicationFirewallGatewayAccessEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallgatewayaccessevents-3b2791d0.md) | `ResourceType == "APPLICATIONGATEWAYS"` |
 | [WebApplicationFirewallOverview](../content/azure-web-application-firewall-waf-webapplicationfirewalloverview-724b5122.md) | `ResourceType == "APPLICATIONGATEWAYS"` |
-| [WebApplicationFirewallWAFTypeEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.md) |  |
+| [WebApplicationFirewallWAFTypeEvents](../content/azure-web-application-firewall-waf-webapplicationfirewallwaftypeevents-bc7c447b.md) | `Message has "attack"` |
 
 **In solution [Azure kubernetes Service](../solutions/azure-kubernetes-service.md):** `Category == "kube-audit"`<br>`Resource in "clusterrolebindings,events,pods,secrets"`
 
@@ -475,7 +451,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [AksSecurity](../content/azure-kubernetes-service-akssecurity-51e44b54.md) |
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"`
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"`<br>`msg_s !has ". Rule Collection:"`<br>`msg_s !has "DNAT"`<br>`msg_s !has "Policy:"`<br>`msg_s !has "Rule Collection:"`<br>`msg_s !has "Type="`<br>`msg_s has ". Rule Collection:"`<br>`msg_s has "DNAT"`<br>`msg_s has "Policy:"`<br>`msg_s has "Rule Collection:"`<br>`msg_s has "Type="`
 
 | Workbook |
 |:-------------|
@@ -511,7 +487,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Web Category:"`
 
 | Workbook |
 |:-------------|
@@ -547,37 +523,11 @@ This table is ingested by the following connectors:
 |:-------------|
 | [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"`
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Url"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Url"`<br>`msg_s has "Web Category:"`
 
 | Workbook |
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AksSecurity](../content/github-only-akssecurity-918bcecd.md) | `Category == "kube-audit"`<br>`Resource in "clusterrolebindings,events,pods,secrets"` |
-| [AutomationHealth](../content/github-only-automationhealth-5e9d0998.md) | `ResourceProvider == "MICROSOFT.LOGIC"` |
-| [AzDDoSStandardWorkbook](../content/github-only-azddosstandardworkbook-d0f23e11.md) | `Category in "DDoSMitigationFlowLogs,DDoSMitigationReports,DDoSProtectionNotifications"`<br>`Resource in ",{Resource:label}"` |
-| [AzureFirewall](../content/github-only-azurefirewall-cc14a54b.md) | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"`<br>`ResourceType == "AZUREFIREWALLS"` |
-| [AzureFirewallWorkbook](../content/github-only-azurefirewallworkbook-50a98c04.md) | `Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"`<br>`Resource in ",{Resource:label}"`<br>`ResourceType == "AZUREFIREWALLS"` |
-| [AzureKeyVaultWorkbook](../content/github-only-azurekeyvaultworkbook-81485e59.md) | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` |
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [AzureOpenAIMonitoring](../content/github-only-azureopenaimonitoring-99c696c7.md) | `Category == "RequestResponse"`<br>`Resource contains "GPT3"`<br>`ResourceProvider in "MICROSOFT.COGNITIVESERVICES,MICROSOFT.LOGIC"` |
-| [AzureSentinelCost](../content/github-only-azuresentinelcost-2ae05990.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `Category in "Device,NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "Device"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` |
-| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) | `Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"` |
-| [MicrosoftSentinelCostEUR](../content/github-only-microsoftsentinelcosteur-f339a745.md) |  |
-| [MicrosoftSentinelCostGBP](../content/github-only-microsoftsentinelcostgbp-451ae793.md) |  |
-| [PlaybookHealth](../content/github-only-playbookhealth-6ce06262.md) | `Resource == "Microsoft.EmptyWorkflow"`<br>`ResourceProvider == "MICROSOFT.LOGIC"` |
-| [UserMap](../content/github-only-usermap-db59dcfa.md) | `Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"`<br>`ResourceProvider == "MICROSOFT.NETWORK"`<br>`ResourceType == "FRONTDOORS"` |
-| [WebApplicationFirewallFirewallEvents](../content/github-only-webapplicationfirewallfirewallevents-0d536af9.md) | `ResourceType == "APPLICATIONGATEWAYS"` |
-| [WebApplicationFirewallGatewayAccessEvents](../content/github-only-webapplicationfirewallgatewayaccessevents-1f17b42e.md) | `ResourceType == "APPLICATIONGATEWAYS"` |
-| [WebApplicationFirewallOverview](../content/github-only-webapplicationfirewalloverview-d139fc4e.md) | `ResourceType == "APPLICATIONGATEWAYS"` |
-| [WebApplicationFirewallWAFTypeEvents](../content/github-only-webapplicationfirewallwaftypeevents-96b07e7c.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `Category in "Device,NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "Device"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` |
 
 ## Parsers Using This Table (2)
 
@@ -588,54 +538,55 @@ This table is ingested by the following connectors:
 | [AzureFirewallApplicationRule](../parsers/azurefirewallapplicationrule.md) | *(Legacy)* |  |
 | [AzureFirewallNetworkRule](../parsers/azurefirewallnetworkrule.md) | *(Legacy)* | `Category == "AzureFirewallNetworkRule"` |
 
-## Selection Criteria Summary (41 criteria, 80 total references)
+## Selection Criteria Summary (42 criteria, 77 total references)
 
-References by type: 15 connectors, 64 content items, 0 ASIM parsers, 1 other parsers.
+References by type: 15 connectors, 61 content items, 0 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Category == "SQLSecurityAuditEvents"` | - | 18 | - | - | **18** |
-| `ResourceType == "VAULTS"` | - | 7 | - | - | **7** |
-| `Category == "FrontDoorWebApplicationFirewallLog"` | - | 4 | - | - | **4** |
-| `Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"` | - | 4 | - | - | **4** |
+| `ResourceType == "VAULTS"` | - | 6 | - | - | **6** |
+| `Category == "FrontDoorWebApplicationFirewallLog"`<br>`action_s in "AnomalyScoring,Block"` | - | 4 | - | - | **4** |
+| `Category in "ApplicationGatewayAccessLog,ApplicationGatewayFirewallLog,FrontdoorAccessLog,FrontdoorWebApplicationFirewallLog"` | - | 3 | - | - | **3** |
 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | - | 3 | - | - | **3** |
-| `ResourceType == "APPLICATIONGATEWAYS"` | - | 3 | - | - | **3** |
 | `ResourceProvider == "MICROSOFT.LOGIC"` | 1 | 1 | - | - | **2** |
 | `Category == "DDoSMitigationFlowLogs"`<br>`ResourceType == "PUBLICIPADDRESSES"` | - | 2 | - | - | **2** |
 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"` | - | 2 | - | - | **2** |
-| `Category == "ApplicationGatewayFirewallLog"` | - | 2 | - | - | **2** |
 | `Category == "AzureFirewallNetworkRule"` | - | 1 | - | 1 | **2** |
+| `ResourceType == "APPLICATIONGATEWAYS"` | - | 2 | - | - | **2** |
 | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 2 | - | - | **2** |
-| `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
-| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.SERVICEBUS"` | 1 | - | - | - | **1** |
-| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
-| `Resource == "SlashnextFunctionApp"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.BATCH"` | 1 | - | - | - | **1** |
-| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.EVENTHUB"` | 1 | - | - | - | **1** |
-| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.SEARCH"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | 1 | - | - | - | **1** |
+| `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
+| `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
+| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
 | `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
+| `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.SERVICEBUS"` | 1 | - | - | - | **1** |
+| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"`<br>`action_s == "Blocked"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.BATCH"` | 1 | - | - | - | **1** |
+| `Resource == "SlashnextFunctionApp"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.EVENTHUB"` | 1 | - | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"`<br>`ResourceProvider == "MICROSOFT.NETWORK"` | - | 1 | - | - | **1** |
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
 | `Category == "kube-audit"`<br>`Resource == "ClusterRoleBinding"` | - | 1 | - | - | **1** |
 | `Category == "kube-audit"` | - | 1 | - | - | **1** |
-| `Category == "NetworkSecurityGroupEvent"` | - | 1 | - | - | **1** |
-| `Category in "DDoSMitigationFlowLogs,DDoSMitigationReports,DDoSProtectionNotifications"`<br>`Resource in ",{Resource:label}"` | - | 1 | - | - | **1** |
-| `Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"`<br>`Resource in ",{Resource:label}"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
+| `ResourceType == "VAULTS"`<br>`ResultType == "Success"` | - | 1 | - | - | **1** |
+| `Category in "DDoSMitigationFlowLogs,DDoSMitigationReports,DDoSProtectionNotifications"`<br>`Message == "Packet was forwarded to service"`<br>`Message startswith "Protocol violation"`<br>`Resource in ",{Resource:label}"` | - | 1 | - | - | **1** |
+| `Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"`<br>`Resource in ",{Resource:label}"`<br>`ResourceType == "AZUREFIREWALLS"`<br>`msg_s !has ". Rule Collection:"`<br>`msg_s !has ". Url"`<br>`msg_s !has "DNAT"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Policy:"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "Rule Collection:"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Type="`<br>`msg_s !has "Url"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Rule Collection:"`<br>`msg_s has ". Url"`<br>`msg_s has "DNAT"`<br>`msg_s has "Policy:"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Rule Collection:"`<br>`msg_s has "Type="`<br>`msg_s has "Url"`<br>`msg_s has "Web Category:"` | - | 1 | - | - | **1** |
 | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` | - | 1 | - | - | **1** |
 | `Category == "kube-audit"`<br>`Resource in "clusterrolebindings,events,pods,secrets"` | - | 1 | - | - | **1** |
-| `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
+| `Message == "*"`<br>`Message has "SQL Injection"`<br>`Message has "attack"`<br>`ResourceType == "APPLICATIONGATEWAYS"`<br>`action_s in "Blocked,Detected"`<br>`instanceId_s has "role"` | - | 1 | - | - | **1** |
+| `Message has "attack"` | - | 1 | - | - | **1** |
+| `Category in "All,AzureFirewallNetworkRule,NetworkSecurityGroupRuleCounter"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType == "AZUREFIREWALLS"`<br>`msg_s !has ". Rule Collection:"`<br>`msg_s !has "DNAT"`<br>`msg_s !has "Policy:"`<br>`msg_s !has "Rule Collection:"`<br>`msg_s !has "Type="`<br>`msg_s has ". Rule Collection:"`<br>`msg_s has "DNAT"`<br>`msg_s has "Policy:"`<br>`msg_s has "Rule Collection:"`<br>`msg_s has "Type="` | - | 1 | - | - | **1** |
 | `Category == "AzureFirewallApplicationRule"` | - | 1 | - | - | **1** |
 | `Category == "AzureFirewallNetworkRule"`<br>`Category == "SQLSecurityAuditEvents"` | - | 1 | - | - | **1** |
-| `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"` | - | 1 | - | - | **1** |
+| `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Web Category:"` | - | 1 | - | - | **1** |
 | `ResourceType == "PUBLICIPADDRESSES"` | - | 1 | - | - | **1** |
-| `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 1 | - | - | **1** |
-| **Total** | **15** | **64** | **0** | **1** | **80** |
+| `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Url"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Url"`<br>`msg_s has "Web Category:"` | - | 1 | - | - | **1** |
+| **Total** | **15** | **61** | **0** | **1** | **77** |
 
 ### Category
 
@@ -643,20 +594,26 @@ References by type: 15 connectors, 64 content items, 0 ASIM parsers, 1 other par
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `SQLSecurityAuditEvents` | 1 | 24 | - | - | **25** |
 | `kube-audit` | 1 | 7 | - | - | **8** |
-| `ApplicationGatewayFirewallLog` | - | 8 | - | - | **8** |
 | `AzureFirewallNetworkRule` | - | 7 | - | 1 | **8** |
-| `FrontdoorWebApplicationFirewallLog` | - | 7 | - | - | **7** |
-| `NetworkSecurityGroupEvent` | 1 | 5 | - | - | **6** |
+| `FrontdoorWebApplicationFirewallLog` | - | 6 | - | - | **6** |
+| `NetworkSecurityGroupEvent` | 1 | 4 | - | - | **5** |
+| `ApplicationGatewayFirewallLog` | - | 5 | - | - | **5** |
 | `AzureFirewallApplicationRule` | - | 5 | - | - | **5** |
 | `FrontDoorWebApplicationFirewallLog` | - | 4 | - | - | **4** |
-| `ApplicationGatewayAccessLog` | - | 4 | - | - | **4** |
-| `FrontdoorAccessLog` | - | 4 | - | - | **4** |
 | `contains SQL` | - | 4 | - | - | **4** |
 | `DDoSMitigationReports` | 1 | 2 | - | - | **3** |
 | `DDoSMitigationFlowLogs` | - | 3 | - | - | **3** |
+| `ApplicationGatewayAccessLog` | - | 3 | - | - | **3** |
+| `FrontdoorAccessLog` | - | 3 | - | - | **3** |
 | `NetworkSecurityGroupRuleCounter` | 1 | 1 | - | - | **2** |
 | `AzureFirewallDnsProxy` | - | 2 | - | - | **2** |
 | `WebApplicationFirewallLogs` | - | 2 | - | - | **2** |
+| `cluster-autoscaler` | 1 | - | - | - | **1** |
+| `guard` | 1 | - | - | - | **1** |
+| `kube-apiserver` | 1 | - | - | - | **1** |
+| `kube-audit-admin` | 1 | - | - | - | **1** |
+| `kube-controller-manager` | 1 | - | - | - | **1** |
+| `kube-scheduler` | 1 | - | - | - | **1** |
 | `AutomaticTuning` | 1 | - | - | - | **1** |
 | `Basic` | 1 | - | - | - | **1** |
 | `Blocks` | 1 | - | - | - | **1** |
@@ -670,12 +627,6 @@ References by type: 15 connectors, 64 content items, 0 ASIM parsers, 1 other par
 | `Timeouts` | 1 | - | - | - | **1** |
 | `WorkloadManagement` | 1 | - | - | - | **1** |
 | `contains SQLSecurityAuditEvents` | 1 | - | - | - | **1** |
-| `cluster-autoscaler` | 1 | - | - | - | **1** |
-| `guard` | 1 | - | - | - | **1** |
-| `kube-apiserver` | 1 | - | - | - | **1** |
-| `kube-audit-admin` | 1 | - | - | - | **1** |
-| `kube-controller-manager` | 1 | - | - | - | **1** |
-| `kube-scheduler` | 1 | - | - | - | **1** |
 | `DDoSProtectionNotifications` | - | 1 | - | - | **1** |
 | `AuditEvent` | - | 1 | - | - | **1** |
 | `All` | - | 1 | - | - | **1** |
@@ -686,6 +637,16 @@ References by type: 15 connectors, 64 content items, 0 ASIM parsers, 1 other par
 | `RouteDiagnosticLog` | - | 1 | - | - | **1** |
 | `TunnelDiagnosticLog` | - | 1 | - | - | **1** |
 | `UserManagement` | - | 1 | - | - | **1** |
+
+### Message
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has attack` | - | 2 | - | - | **2** |
+| `Packet was forwarded to service` | - | 1 | - | - | **1** |
+| `startswith Protocol violation` | - | 1 | - | - | **1** |
+| `*` | - | 1 | - | - | **1** |
+| `has SQL Injection` | - | 1 | - | - | **1** |
 
 ### Resource
 
@@ -707,12 +668,12 @@ References by type: 15 connectors, 64 content items, 0 ASIM parsers, 1 other par
 | `MICROSOFT.KEYVAULT` | 1 | 5 | - | - | **6** |
 | `MICROSOFT.SQL` | 1 | 2 | - | - | **3** |
 | `MICROSOFT.LOGIC` | 1 | 1 | - | - | **2** |
-| `MICROSOFT.SERVICEBUS` | 1 | - | - | - | **1** |
-| `MICROSOFT.BATCH` | 1 | - | - | - | **1** |
-| `MICROSOFT.EVENTHUB` | 1 | - | - | - | **1** |
 | `MICROSOFT.SEARCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.DATALAKESTORE` | 1 | - | - | - | **1** |
+| `MICROSOFT.SERVICEBUS` | 1 | - | - | - | **1** |
 | `MICROSOFT.STREAMANALYTICS` | 1 | - | - | - | **1** |
+| `MICROSOFT.BATCH` | 1 | - | - | - | **1** |
+| `MICROSOFT.EVENTHUB` | 1 | - | - | - | **1** |
 | `MICROSOFT.NETWORK` | - | 1 | - | - | **1** |
 | `MICROSOFT.CONTAINERSERVICE` | - | 1 | - | - | **1** |
 
@@ -721,13 +682,62 @@ References by type: 15 connectors, 64 content items, 0 ASIM parsers, 1 other par
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `PUBLICIPADDRESSES` | 1 | 7 | - | - | **8** |
-| `APPLICATIONGATEWAYS` | 1 | 7 | - | - | **8** |
 | `AZUREFIREWALLS` | 1 | 7 | - | - | **8** |
+| `APPLICATIONGATEWAYS` | 1 | 7 | - | - | **8** |
 | `VAULTS` | - | 8 | - | - | **8** |
 | `SERVERS/DATABASES` | 1 | 4 | - | - | **5** |
 | `CDNWEBAPPLICATIONFIREWALLPOLICIES` | 1 | 4 | - | - | **5** |
 | `FRONTDOORS` | 1 | 4 | - | - | **5** |
 | `PROFILES` | - | 4 | - | - | **4** |
+
+### ResultType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Success` | - | 1 | - | - | **1** |
+
+### action_s
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `AnomalyScoring` | - | 4 | - | - | **4** |
+| `Block` | - | 4 | - | - | **4** |
+| `Blocked` | 1 | 1 | - | - | **2** |
+| `Detected` | - | 1 | - | - | **1** |
+
+### instanceId_s
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has role` | - | 1 | - | - | **1** |
+
+### msg_s
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!has . Url` | - | 3 | - | - | **3** |
+| `!has No rule matched` | - | 3 | - | - | **3** |
+| `!has Reason:` | - | 3 | - | - | **3** |
+| `!has Rule Collection` | - | 3 | - | - | **3** |
+| `!has TLS extension was missing` | - | 3 | - | - | **3** |
+| `!has Web Category:` | - | 3 | - | - | **3** |
+| `has . No rule matched` | - | 3 | - | - | **3** |
+| `has . Url` | - | 3 | - | - | **3** |
+| `has Reason:` | - | 3 | - | - | **3** |
+| `has Rule Collection Group` | - | 3 | - | - | **3** |
+| `has Web Category:` | - | 3 | - | - | **3** |
+| `!has . Rule Collection:` | - | 2 | - | - | **2** |
+| `!has DNAT` | - | 2 | - | - | **2** |
+| `!has Policy:` | - | 2 | - | - | **2** |
+| `!has Rule Collection:` | - | 2 | - | - | **2** |
+| `!has Type=` | - | 2 | - | - | **2** |
+| `!has Url` | - | 2 | - | - | **2** |
+| `has . Rule Collection:` | - | 2 | - | - | **2** |
+| `has DNAT` | - | 2 | - | - | **2** |
+| `has Policy:` | - | 2 | - | - | **2** |
+| `has Rule Collection:` | - | 2 | - | - | **2** |
+| `has Type=` | - | 2 | - | - | **2** |
+| `has Url` | - | 2 | - | - | **2** |
 
 ---
 

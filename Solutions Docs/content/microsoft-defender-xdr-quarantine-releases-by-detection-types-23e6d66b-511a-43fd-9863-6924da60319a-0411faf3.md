@@ -22,10 +22,10 @@ This query visualises emails released from quarantine and summarizing the result
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
-| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ? |
+| [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | `Action == "Quarantine release"`<br>`DeliveryLocation == "Quarantine"` | ✓ | ✗ | ? |
 
 ---
 

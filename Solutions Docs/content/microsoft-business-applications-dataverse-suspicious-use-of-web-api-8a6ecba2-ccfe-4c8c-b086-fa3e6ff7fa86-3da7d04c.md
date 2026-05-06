@@ -25,10 +25,10 @@ Identifies sign-in across multiple Dataverse environments, breaching a predefine
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message == "UserSignIn"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"` | ✓ | ✗ | ? |
 
 ---
 

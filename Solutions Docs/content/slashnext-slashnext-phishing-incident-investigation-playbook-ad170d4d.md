@@ -14,6 +14,26 @@ Enhance your security with threat hunting and incident investigation using this 
 | **Solution** | [SlashNext](../solutions/slashnext.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextPhishingIncidentInvestigation/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `SlashNext` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`SlashNext`** (customApi):
+- *Repute*: method=`post`, path=`/api/v1/urls/repute`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SlashNextPhishingIncidentInvestigation/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextPhishingIncidentInvestigation/readme.md)*

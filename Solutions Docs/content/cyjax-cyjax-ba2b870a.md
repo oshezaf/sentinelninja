@@ -16,12 +16,12 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CyjaxAdHocEnrichment_CL`](../tables/cyjaxadhocenrichment-cl.md) 🔶 | ? | ✓ | ? |
-| [`CyjaxDataBreaches_CL`](../tables/cyjaxdatabreaches-cl.md) 🔶 | ? | ✓ | ? |
-| [`CyjaxDomainMonitor_CL`](../tables/cyjaxdomainmonitor-cl.md) 🔶 | ? | ✓ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CyjaxAdHocEnrichment_CL`](../tables/cyjaxadhocenrichment-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`CyjaxDataBreaches_CL`](../tables/cyjaxdatabreaches-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`CyjaxDomainMonitor_CL`](../tables/cyjaxdomainmonitor-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
 
 ---
 

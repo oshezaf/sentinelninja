@@ -14,6 +14,29 @@ This playbook checks if malicious IP address is blocked or unblocked by Cisco Me
 | **Solution** | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/IP-Address-Enrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `MerakiConnector` | Custom | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`MerakiConnector`** (customApi):
+- *Get_Network_Appliance_Firewall_L3_Firewall_Rules*: method=`get`, path=`/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/firewall/l3FirewallRules`
+- *Get_Network_Appliance_Firewall_L7_Firewall_Rules*: method=`get`, path=`/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/firewall/l7FirewallRules`
+- *Get_Networks*: method=`get`, path=`/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks`
+- *Get_Organizations*: method=`get`, path=`/organizations`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [IP-Address-Enrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/IP-Address-Enrichment/readme.md)*

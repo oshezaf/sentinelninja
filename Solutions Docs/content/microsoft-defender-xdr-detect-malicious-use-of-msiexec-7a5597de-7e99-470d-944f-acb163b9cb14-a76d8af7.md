@@ -21,9 +21,9 @@ This query detects possible download and execution using Msiexec.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "http"`<br>`ProcessCommandLine has "return"` | ✓ | ✗ | ? |
 
 ---
 

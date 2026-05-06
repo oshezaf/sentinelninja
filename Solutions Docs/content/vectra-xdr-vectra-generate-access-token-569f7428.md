@@ -14,6 +14,31 @@ This playbook will generate access token and refresh token for another playbooks
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraGenerateAccessToken/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 3 |
+| `http` | Built-in | 0 | 5 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Refresh_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Refresh-Token')}/value`
+- *Get_Vectra_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Client-ID')}/value`
+- *Get_Vectra_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Client-Secret')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Update_Access_Token_In_Key_Vault_Via_Refresh_Token*: method=`PUT`, uri=`@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('access_token_secret_name'),'?api-version=7.4')}`
+- *HTTP_Request_To_Generate_Access_Token_Via_Refresh_Token*: method=`POST`, uri=`@{variables('base_url')}/oauth2/token`
+- *HTTP_Request_To_Update_Access_Token_In_Key_Vault*: method=`PUT`, uri=`@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('access_token_secret_name'),'?api-version=7.4')}`
+- *HTTP_Request_To_Update_Refresh_Token_in_Key_Vault*: method=`PUT`, uri=`@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('refresh_token_secret_name'),'?api-version=7.4')}`
+- *HTTP_Request_To_Generate_Access_Token*: method=`POST`, uri=`@{variables('base_url')}/oauth2/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [VectraGenerateAccessToken/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraGenerateAccessToken/readme.md)*

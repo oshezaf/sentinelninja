@@ -22,10 +22,10 @@ This query joins UEBA to Security Alerts from Microsoft products for a correlati
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityInsights contains "ISP"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
 
 ---
 

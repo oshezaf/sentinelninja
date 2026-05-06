@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventSourceName == "Microsoft-Windows-Eventlog"` | ✓ | ✓ | ? |
 | [`WindowsEvent`](../tables/windowsevent.md) | `EventID == "1102"`<br>`Provider == "Microsoft-Windows-Eventlog"` | ✓ | ✓ | ? |
 
 ---

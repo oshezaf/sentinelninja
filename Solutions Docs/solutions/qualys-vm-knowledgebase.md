@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-17 |
 | **Last Updated** | 2026-04-10 |
@@ -34,7 +34,7 @@ The [Qualys Vulnerability Management](https://www.qualys.com/apps/vulnerability-
 This solution provides **2 data connector(s)**:
 
 - [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶
-- [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md)
+- [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -45,7 +45,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`QualysKB_CL`](../tables/qualyskb-cl.md) 🔶 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) | - |
+| [`QualysKB_CL`](../tables/qualyskb-cl.md) 🔶 | [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md), [Qualys VM KnowledgeBase](../connectors/qualyskb.md) | - |
 | [`QualysKnowledgeBase`](../tables/qualysknowledgebase.md) | [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md), [Qualys VM KnowledgeBase](../connectors/qualyskb.md) | - |
 
 
@@ -69,6 +69,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                                                                                |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3.1.2       | 29-04-2026                     | Moving Connector to GA                                                                                                                            |
 | 3.1.1       | 23-04-2026                     | Moved endpoint to target Qualys KB API v4.0                                                                                                       |
 | 3.1.0       | 19-03-2026                     | Added **Codeless Connector** to solution and updated parser to add fields and clean up typos.                                                     |
 | 3.0.1       | 03-05-2024                     | Added Deploy to Azure Goverment button for Government portal in **Dataconnector** <br/> Fixed Metadata issue for ParserName and ParentId mismatch |

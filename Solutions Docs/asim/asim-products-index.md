@@ -6,7 +6,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**91 products** with 89 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**92 products** with 90 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 ## Products Overview
 
@@ -26,6 +26,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [CheckPointFirewall](#checkpointfirewall) | 1 | 1 | 1 |
 | [CheckPointSmartDefense](#checkpointsmartdefense) | 1 | 1 | 1 |
 | [Cisco Adaptive Security Appliance (ASA)](#cisco-adaptive-security-appliance-asa) | 1 | 1 | 1 |
+| [Cisco DNAC](#cisco-dnac) | 1 | 1 | 1 |
 | [Cisco Firepower](#cisco-firepower) | 2 | 2 | 1 |
 | [Cisco IOS](#cisco-ios) | 1 | 1 | 1 |
 | [Cisco ISE](#cisco-ise) | 4 | 4 | 1 |
@@ -280,6 +281,18 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAuthenticationCiscoASA](asimauthenticationciscoasa.md)<br>vim: [vimAuthenticationCiscoASA](vimauthenticationciscoasa.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.1 |
+
+## Cisco DNAC
+
+**Schemas:** Authentication
+
+**Tables:** [Syslog](../tables/syslog.md)
+
+### Parsers
+
+| Parser | Schema | Tables | Version |
+|:-------|:-------|:-------|:--------|
+| ASim: [ASimAuthenticationCiscoDNAC](asimauthenticationciscodnac.md)<br>vim: [vimAuthenticationCiscoDNAC](vimauthenticationciscodnac.md) | Authentication | [Syslog](../tables/syslog.md) | 0.1.0 |
 
 ## Cisco Firepower
 

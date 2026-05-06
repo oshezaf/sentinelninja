@@ -24,9 +24,9 @@ This alert is designed to monitor data connector configurations. This alert is t
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue contains "Microsoft.SecurityInsights/dataConnectors/"` | ? | ✗ | ? |
 
 ---
 

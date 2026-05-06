@@ -14,6 +14,37 @@ This playbook allows users to filter the group list by providing a group type an
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraDynamicAssignMembersToGroup/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault_3` | Managed | 0 | 2 |
+| `teams` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 2 |
+| `workflow` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault_3`** (managedApi):
+- *Get_Access_Token_For_Groups_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+- *Get_Access_Token_For_Assign_Members_To_Group*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+
+**`teams`** (managedApi):
+- *Post_Message_For_No_Groups_Found*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Available_Groups*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/groups`
+- *HTTP_Request_To_Assign_Members_To_Group*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('selected_group')}`
+
+**`workflow`** (builtin):
+- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [VectraDynamicAssignMembersToGroup/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraDynamicAssignMembersToGroup/readme.md)*

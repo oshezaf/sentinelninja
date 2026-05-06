@@ -14,6 +14,27 @@ This playbook showcases an example of triggering an incident within a targeted T
 | **Solution** | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-BlockDomain/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `ciscoumbrellaenforcement` | Managed | 0 | 1 |
+| `CiscoUmbrellaEnforcementAPI` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`ciscoumbrellaenforcement`** (managedApi):
+- *Block_domain*: method=`post`, path=`/1.0/events`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoUmbrellaPlaybooks/CiscoUmbrella-BlockDomain/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-BlockDomain/readme.md)*

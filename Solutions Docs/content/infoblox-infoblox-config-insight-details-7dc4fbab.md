@@ -14,6 +14,26 @@ The playbook retrieves Config Insight Details Data and ingests it into a custom 
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/InfoBlox%20Config%20Insight%20Details/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 0 |
+| `azureloganalyticsdatacollector_11` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector_11`** (managedApi):
+- *Send_Data_to_Sentinel*: method=`post`, path=`/api/logs`
+
+**`http`** (builtin):
+- *GET_Config_Insight_Details*: method=`GET`, uri=`@variables('config_insight_details_url')`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [InfoBlox Config Insight Details/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/InfoBlox%20Config%20Insight%20Details/readme.md)*

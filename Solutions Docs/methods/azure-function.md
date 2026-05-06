@@ -19,8 +19,8 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **139** |
-| Active | 103 |
-| Deprecated 🚫 | 28 |
+| Active | 104 |
+| Deprecated 🚫 | 27 |
 | Unpublished ⚠️ | 8 |
 
 ## Connectors Using This Method
@@ -52,6 +52,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [ContrastADR](../connectors/contrastadr.md) 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | CrowdStrike | 1 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM](../connectors/cyberarkepm.md) 🔶 | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
@@ -151,7 +152,6 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) | Box | 2 | [Box](../solutions/box.md) |
 | 🚫 [[DEPRECATED] Cisco Secure Endpoint (AMP)](../connectors/ciscosecureendpoint.md) | Cisco | 1 | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | 🚫 [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) | Cloudflare | 1 | [Cloudflare](../solutions/cloudflare.md) |
-| 🚫 [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | 🚫 [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | Google | 1 | [Google Apigee](../solutions/google-apigee.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) | Google | 1 | [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | Google | 1 | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
@@ -165,7 +165,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | Proofpoint | 6 | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | 🚫 [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
 | 🚫 [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | Qualys | 2 | [QualysVM](../solutions/qualysvm.md) |
-| 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Salesforce | 2 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Salesforce | 3 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | SentinelOne | 6 | [SentinelOne](../solutions/sentinelone.md) |
 | 🚫 [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | Slack | 3 | [SlackAudit](../solutions/slackaudit.md) |
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |

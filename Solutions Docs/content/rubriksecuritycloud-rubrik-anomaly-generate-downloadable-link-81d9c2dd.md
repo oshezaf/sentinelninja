@@ -14,6 +14,32 @@ This playbook will generate downloadable links according to objectType (VMware, 
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyGenerateDownloadableLink/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 2 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Enrich_Anomaly_incident_with_anomalous_files_and_downloadable_link_details*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *Get_Cluster_Information*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_downloadable_link_for_given_object*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+
+**`workflow`** (builtin):
+- *RubrikPollAsyncResult*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('PollAsyncResultPlaybookName'))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikAnomalyGenerateDownloadableLink/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyGenerateDownloadableLink/readme.md)*

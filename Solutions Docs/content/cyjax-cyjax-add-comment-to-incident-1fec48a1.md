@@ -14,6 +14,23 @@ This playbook is triggered via HTTP request and is designed to be used as a sub-
 | **Solution** | [Cyjax](../solutions/cyjax.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Playbooks/CyjaxAddCommentToIncident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_Comment_To_Incident_As_Comment_Character_Limit_Exceeded*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_To_Incident_For_Comment_Limit_Exceeded*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_for_Remaining_Data*: method=`post`, path=`/Incidents/Comment`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CyjaxAddCommentToIncident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Playbooks/CyjaxAddCommentToIncident/readme.md)*

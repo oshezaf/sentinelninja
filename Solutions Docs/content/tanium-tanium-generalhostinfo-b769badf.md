@@ -14,6 +14,34 @@ Tanium's real-time data can speed up investigations by providing important conte
 | **Solution** | [Tanium](../solutions/tanium.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-GeneralHostInfo/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_Received_Info_to_Incident*: method=`post`, path=`/Incidents/Comment`
+- *Get_Hosts_From_Incident*: method=`post`, path=`/entities/host`
+- *Add_comment__-_no_hosts_found*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment__-_no_data_in_Tanium*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('TaniumApiToken')}/value`
+
+**`http`** (builtin):
+- *Get_next_page*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+- *Get_General_Host_Info*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+- *Requery_the_API_Gateway*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Tanium-GeneralHostInfo/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-GeneralHostInfo/readme.md)*

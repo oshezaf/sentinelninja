@@ -25,9 +25,9 @@ Identifies individual record ownership changes including sharing of records with
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message in "Assign,GrantAccess,ModifyAccess"` | ✓ | ✗ | ? |
 
 ---
 

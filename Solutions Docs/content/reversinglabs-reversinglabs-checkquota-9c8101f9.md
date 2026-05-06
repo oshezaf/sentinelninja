@@ -22,6 +22,40 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`RLTiCloudQuotas_CL`](../tables/rlticloudquotas-cl.md) | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 7 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 6 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data_4*: method=`post`, path=`/api/logs`
+- *Send_Data_5*: method=`post`, path=`/api/logs`
+- *Send_Data*: method=`post`, path=`/api/logs`
+- *Send_Data_3*: method=`post`, path=`/api/logs`
+- *Send_Data_2*: method=`post`, path=`/api/logs`
+- *Send_Data_user_usage*: method=`post`, path=`/api/logs`
+- *Send_Data_user_monthly_usage*: method=`post`, path=`/api/logs`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('ticloudpw')}/value`
+
+**`http`** (builtin):
+- *HTTP_-_GET_Company_Quota_Limits*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/limits/company`
+- *HTTP_-_GET_company_daily_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/company/daily`
+- *HTTP_-_GET_company_monthly_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/company/monthly`
+- *HTTP_-_GET_test_connection*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/daily`
+- *HTTP_-_GET_user_daily_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/daily`
+- *HTTP_-_GET_user_monthly_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/monthly`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ReversingLabs-CheckQuota/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs/Playbooks/ReversingLabs-CheckQuota/readme.md)*

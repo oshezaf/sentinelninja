@@ -14,6 +14,30 @@ This playbook gets triggered when a new sentinel incident is created 1.For each 
 | **Solution** | [Cisco ISE](../solutions/cisco-ise.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-FalsePositivesClearPolicies/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 1 |
+| `CiscoISE` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Find_MAC_in_watchlist*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`CiscoISE`** (customApi):
+- *Release_rejected_endpoint*: method=`put`, path=`/ers/config/endpoint/@{encodeURIComponent(items('For_each_MACAddress'))}/releaserejectedendpoint`
+- *Get_rejected_endpoints*: method=`get`, path=`/ers/config/endpoint/getrejectedendpoints`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoISE-FalsePositivesClearPolicies/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-FalsePositivesClearPolicies/readme.md)*

@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"`<br>`NewProcessName !endswith "conhost.exe"` | ✓ | ✓ | ? |
 
 ---
 

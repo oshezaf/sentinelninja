@@ -14,6 +14,26 @@ This playbook will send a Teams adaptive card with incident and entity informati
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Teams-Adaptive-Card-XDRPortal/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `teams` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`teams`** (managedApi):
+- *Post_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+
+**`http`** (builtin):
+- *HTTP*: method=`GET`, uri=`@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Send-Incident-Teams-Adaptive-Card-XDRPortal/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Teams-Adaptive-Card-XDRPortal/readme.md)*

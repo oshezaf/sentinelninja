@@ -56,11 +56,11 @@ This table is used by the following solutions:
 
 ### Workbooks (1)
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `Namespace in "Memory,Network,Processor"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 ## Resource Types
 
@@ -76,6 +76,23 @@ This table collects data from the following Azure resource types:
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.hybridcontainerservice/provisionedclusters`
 - `microsoft.devices/iothubs`
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Namespace in "Memory,Network,Processor"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### Namespace
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Memory` | - | 1 | - | - | **1** |
+| `Network` | - | 1 | - | - | **1** |
+| `Processor` | - | 1 | - | - | **1** |
 
 ---
 

@@ -22,6 +22,21 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`atlassian_beacon_alerts_CL`](../tables/atlassian-beacon-alerts-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data*: method=`post`, path=`/api/logs`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

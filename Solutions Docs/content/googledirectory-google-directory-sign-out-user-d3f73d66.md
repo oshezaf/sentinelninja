@@ -16,6 +16,27 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `GoogleDirectory` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`GoogleDirectory`** (customApi):
+- *Sign_Out_User*: method=`post`, path=`/admin/directory/v1/users/@{encodeURIComponent(outputs('get_user_email'))}/signOut`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/Google-SignOutUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleDirectory/Playbooks/Playbooks/Google-SignOutUser/readme.md)*

@@ -14,6 +14,27 @@ This playbook can be triggered manually from a Domain Entity context to fetch ge
 | **Solution** | [Shodan](../solutions/shodan.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks/Shodan-EnrichDomain-EntityTrigger/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `ShodanCustomConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`ShodanCustomConnector`** (customApi):
+- *GetServiceDetailsForIP*: method=`get`, path=`/shodan/host/@{encodeURIComponent(body('Parse_IP_JSON'))}`
+- *ResolveDomainName*: method=`get`, path=`/dns/resolve`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ShodanPlaybooks/Shodan-EnrichDomain-EntityTrigger/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan/Playbooks/ShodanPlaybooks/Shodan-EnrichDomain-EntityTrigger/readme.md)*

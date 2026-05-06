@@ -96,7 +96,7 @@ This solution includes **24 content item(s)**:
 | [Okta Fast Pass phishing Detection](../content/okta-single-sign-on-okta-fast-pass-phishing-detection-78d2b06c-8dc0-40e1-91c8-66d916c186f3-fefae1c8.md) | Medium | InitialAccess | [`OktaV2_CL`](../tables/oktav2-cl.md)<br>[`Okta_CL`](../tables/okta-cl.md) |
 | [Potential Password Spray Attack](../content/okta-single-sign-on-potential-password-spray-attack-e27dd7e5-4367-4c40-a2b7-fcd7e7a8a508-8d39fbf2.md) | Medium | CredentialAccess | [`OktaV2_CL`](../tables/oktav2-cl.md)<br>[`Okta_CL`](../tables/okta-cl.md) |
 | [User Login from Different Countries within 3 hours](../content/okta-single-sign-on-user-login-from-different-countries-within-3-hours-2954d424-f786-4677-9ffc-c24c44c6e7d5-965998c8.md) | High | InitialAccess | [`OktaV2_CL`](../tables/oktav2-cl.md)<br>[`Okta_CL`](../tables/okta-cl.md) |
-| [User Session Impersonation(Okta)](../content/okta-single-sign-on-user-session-impersonation-okta-35846296-4052-4de2-8098-beb6bb5f2203-cf2f2ba3.md) | Medium | PrivilegeEscalation | [`Okta_CL`](../tables/okta-cl.md) |
+| [User Session Impersonation(Okta)](../content/okta-single-sign-on-user-session-impersonation-okta-35846296-4052-4de2-8098-beb6bb5f2203-cf2f2ba3.md) | Medium | PrivilegeEscalation | [`OktaV2_CL`](../tables/oktav2-cl.md)<br>[`Okta_CL`](../tables/okta-cl.md) |
 
 ### Hunting Queries
 
@@ -137,6 +137,7 @@ This solution includes **24 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                            |
 |-------------|--------------------------------|---------------------------------------------------------------|
+| 3.1.7       | 28-04-2026                     | Update query with OktaSSO **parser** so that the OktaV2_CL table is considered. |
 | 3.1.6       | 14-04-2026                     | Deprecate Okta Single Sign-On (using Azure Function) |
 | 3.1.5       | 02-04-2026                     | Rename CCF solution to Okta Single Sign-On (via Codeless Connector Framework).<br> Add SessionId variable and reference in template. |
 | 3.1.4       | 13-01-2026                     | Updated non-functional link from MFA Fatigue (OKTA) **Analytic rule** |

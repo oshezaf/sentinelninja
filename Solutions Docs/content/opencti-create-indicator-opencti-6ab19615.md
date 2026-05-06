@@ -14,6 +14,46 @@ This playbook adds new indicator in OpenCTI based on the entities info present i
 | **Solution** | [OpenCTI](../solutions/opencti.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks/OpenCTI-CreateIndicator/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `OpenCTICustomConnector` | Custom | 1 | 17 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`OpenCTICustomConnector`** (customApi):
+- *Run_GraphQL_Query_Create_Org*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Create_new_label*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Create_Marking_Info*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Create_Indicator_-_account*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_to_get_indicator_info_-_Accounts*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Create_Indicator_-_FileHash*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_to_get_indicator_info_-_FileHash*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Create_Indicator_-_Host*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_to_get_indicator_info_-_Host*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Create_Indicator_-_IP*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_to_get_indicator_info_-_IP*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Create_Indicator_-_URL*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_to_get_indicator_info_-_URLs*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Get_Marking_info*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Get_Label_info*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_for_Orginfo*: method=`post`, path=`/graphql`
+- *Run_Sample_GraphQL_Query_to_check_Auth_*: method=`post`, path=`/graphql`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [OpenCTIPlaybooks/OpenCTI-CreateIndicator/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks/OpenCTI-CreateIndicator/readme.md)*

@@ -14,6 +14,22 @@ This playbook is triggered by HTTP POST requests with entity information and per
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Http-Trigger-Entity-Analyzer/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `sentinelmcp` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`sentinelmcp`** (managedApi):
+- *User_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
+- *Url_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Http-Trigger-Entity-Analyzer/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Http-Trigger-Entity-Analyzer/readme.md)*

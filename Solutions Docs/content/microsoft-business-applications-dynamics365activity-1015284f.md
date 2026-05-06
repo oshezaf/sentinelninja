@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message in "Delete,SendEmail"`<br>`Message contains "ExportToExcel"`<br>`Message contains "Retrieve"`<br>`OriginalObjectId startswith "GrantAccess"` | ✓ | ✗ | ? |
 
 ---
 

@@ -18,9 +18,29 @@ This playbook updates alert statuses in Defender for IoT whenever a related aler
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `SystemAlertId == "IncidentAlertIds"` | ✓ | ✗ | ? |
+
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_-_GetAlerts*: method=`post`, path=`/queryData`
+
+**`http`** (builtin):
+- *HTTP*: method=`PATCH`, uri=`@{items('Send_HTTP_status_update')}`
+
+</details>
 
 ---
 

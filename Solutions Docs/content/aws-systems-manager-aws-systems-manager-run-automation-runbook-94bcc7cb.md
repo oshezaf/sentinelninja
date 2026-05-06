@@ -14,6 +14,27 @@ When a new sentinel incident is created, this playbook gets triggered and runs t
 | **Solution** | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-RunAutomationRunbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `function` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`function`** (builtin):
+- *GetAutomationExecution_status*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
+- *GetAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
+- *StartAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AWSSystemsManagerPlaybooks/AWS-SSM-RunAutomationRunbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-RunAutomationRunbook/readme.md)*

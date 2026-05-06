@@ -14,6 +14,21 @@ This playbook will update incident with action to perform on endpoint
 | **Solution** | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor/Playbooks/Forescout-DNSSniffEventPlaybook.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Update_incident*: method=`put`, path=`/Incidents`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForescoutHostPropertyMonitor/Playbooks/readme.md)*

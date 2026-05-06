@@ -14,6 +14,32 @@ This playbook adds URLs to the Zscaler security blacklist using OAuth2 authentic
 | **Solution** | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2BlacklistURL/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `azuresentinel_1` | Managed | 0 | 2 |
+| `http` | Built-in | 0 | 2 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel_1`** (managedApi):
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *Get_Security_Config*: method=`GET`, uri=`https://api.zsapi.net/zia/api/v1/security/advanced`
+- *Update_Security_Config*: method=`PUT`, uri=`https://api.zsapi.net/zia/api/v1/security/advanced`
+
+**`workflow`** (builtin):
+- *Zscaler-Oauth2-Authentication*: workflowId=`[variables('ZscalerAuthenticationFlow')]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Oauth2BlacklistURL/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2BlacklistURL/readme.md)*

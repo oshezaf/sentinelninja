@@ -22,9 +22,9 @@ This query helps hunt for external malicious Teams messages sent from internal s
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`MessageEvents`](../tables/messageevents.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "1"`<br>`ThreatTypes has_any "Phish"` | ? | ✗ | ? |
 
 ---
 

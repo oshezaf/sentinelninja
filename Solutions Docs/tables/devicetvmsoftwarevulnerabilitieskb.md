@@ -54,22 +54,30 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (1)
 
-### Hunting Queries (3)
+### Hunting Queries (1)
 
-**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):**
+**In solution [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md):** `CveId == "22117"`
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities](../content/microsoft-defender-xdr-detect-cisa-alert-aa22-117a-2021-top-routinely-exploited-vulnerabilities-180bacfd-18de-450a-8e0c-7d2fa399ca49-875b2843.md) |  |
+| Hunting Query |
+|:-------------|
+| [Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities](../content/microsoft-defender-xdr-detect-cisa-alert-aa22-117a-2021-top-routinely-exploited-vulnerabilities-180bacfd-18de-450a-8e0c-7d2fa399ca49-875b2843.md) |
 
-**GitHub Only:**
+## Selection Criteria Summary (1 criteria, 1 total references)
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities](../content/github-only-detect-cisa-alert-aa22-117a-2021-top-routinely-exploited-vulnerabilities-755f0151-223f-4234-b534-9fc74b19903d-9f9e5724.md) |  |
-| [fireeye-red-team-tools-CVEs [Nobelium]](../content/github-only-fireeye-red-team-tools-cves-[nobelium]-c4c6a792-2309-4218-bd2c-13f3cbe0600f-3bb5ffb6.md) |  |
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `CveId == "22117"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### CveId
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `22117` | - | 1 | - | - | **1** |
 
 ---
 

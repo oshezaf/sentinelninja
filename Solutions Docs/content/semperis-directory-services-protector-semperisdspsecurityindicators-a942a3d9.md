@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "9208,9211,9212"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` | ✓ | ✓ | ? |
 
 ---
 

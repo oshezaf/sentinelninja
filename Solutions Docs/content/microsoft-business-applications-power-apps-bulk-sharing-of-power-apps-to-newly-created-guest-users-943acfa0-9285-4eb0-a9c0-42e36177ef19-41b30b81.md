@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Invite external user"` | ✓ | ✗ | ? |
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) |  | ✓ | ✗ | ? |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | `EventOriginalType == "PowerAppPermissionEdited"` | ✓ | ✗ | ? |
 
 ---
 

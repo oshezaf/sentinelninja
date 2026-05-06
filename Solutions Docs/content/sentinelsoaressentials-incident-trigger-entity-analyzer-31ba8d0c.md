@@ -14,6 +14,30 @@ This playbook is triggered by Microsoft Sentinel incidents and performs automate
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 5 |
+| `sentinelmcp` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_Url_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_User_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Add_Skip_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+
+**`sentinelmcp`** (managedApi):
+- *URL_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
+- *User_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Incident-Trigger-Entity-Analyzer/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/readme.md)*

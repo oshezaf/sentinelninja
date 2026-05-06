@@ -14,6 +14,27 @@ This playbook can be run from incident context manually or from automation rule 
 | **Solution** | [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks/GCPBigQuery-CreateWatchlist-From-BigQueryTable/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `GCPBigQueryCustomConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Watchlists_-_Create_a_new_Watchlist_with_data_(Raw_Content)*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/workspaces/@{encodeURIComponent(triggerBody()?['workspaceId'])}/watchlists/@{encodeURIComponent(parameters('WatchlistName'))}`
+
+**`GCPBigQueryCustomConnector`** (customApi):
+- *Get_Table_Data*: method=`get`, path=`/projects/@{encodeURIComponent(parameters('ProjectID'))}/datasets/@{encodeURIComponent(parameters('DatasetID'))}/tables/@{encodeURIComponent(parameters('TableID'))}/data`
+- *Get_Table_Details*: method=`get`, path=`/projects/@{encodeURIComponent(parameters('ProjectID'))}/datasets/@{encodeURIComponent(parameters('DatasetID'))}/tables/@{encodeURIComponent(parameters('TableID'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [GCPBigQueryPlaybooks/GCPBigQuery-CreateWatchlist-From-BigQueryTable/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks/GCPBigQuery-CreateWatchlist-From-BigQueryTable/readme.md)*

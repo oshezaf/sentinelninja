@@ -57,11 +57,26 @@ This table is used by the following solutions:
 
 ### Workbooks (1)
 
-**In solution [Global Secure Access](../solutions/global-secure-access.md):**
+**In solution [Global Secure Access](../solutions/global-secure-access.md):** `Activity == "Mcp"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [GSAMCPInsights](../content/global-secure-access-gsamcpinsights-87ae8ba3.md) |  |
+| Workbook |
+|:-------------|
+| [GSAMCPInsights](../content/global-secure-access-gsamcpinsights-87ae8ba3.md) |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Activity == "Mcp"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### Activity
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Mcp` | - | 1 | - | - | **1** |
 
 ---
 

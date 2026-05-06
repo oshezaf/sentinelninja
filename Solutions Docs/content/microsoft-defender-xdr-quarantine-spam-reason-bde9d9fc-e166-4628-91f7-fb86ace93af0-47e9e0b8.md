@@ -22,9 +22,9 @@ This query visualises the total amount of spam emails that are quarantined, summ
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` | ✓ | ✗ | ? |
 
 ---
 

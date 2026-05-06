@@ -29,9 +29,9 @@ This ASIM parser supports normalizing file activity in AWS Cloud Trail for the f
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventSource == "s3.amazonaws.com"` | ✓ | ✓ | ? |
 
 ## Parameters
 

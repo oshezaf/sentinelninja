@@ -22,9 +22,9 @@ This query visualises total inbound emails with Spam detections summarizing the 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Spam"` | ✓ | ✗ | ? |
 
 ---
 

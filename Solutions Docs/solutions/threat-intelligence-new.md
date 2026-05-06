@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.13 |
+| **Version** | 3.0.18 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-02 |
 | **Last Updated** | 2026-04-15 |
@@ -40,7 +40,7 @@ This solution provides **5 data connector(s)** (plus 1 discovered⚠️):
 - [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md)
 - [Threat Intelligence Platforms](../connectors/threatintelligence.md)
 - [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md)
-- [Threat intelligence - TAXII Export (Preview)](../connectors/threatintelligencetaxiiexport.md)
+- [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md)
 - [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) ⚠️
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
@@ -74,7 +74,7 @@ This solution uses **29 table(s)**:
 | [`SecurityEvent`](../tables/securityevent.md) | - | Analytics, Hunting |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
 | [`Syslog`](../tables/syslog.md) | - | Analytics, Hunting |
-| [`ThreatIntelExportOperation`](../tables/threatintelexportoperation.md) | [Threat intelligence - TAXII Export (Preview)](../connectors/threatintelligencetaxiiexport.md) | - |
+| [`ThreatIntelExportOperation`](../tables/threatintelexportoperation.md) | [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md) | - |
 | [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md), [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md), [Threat Intelligence Platforms](../connectors/threatintelligence.md), [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md), [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | - |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | - | Analytics |
 | [`VMConnection`](../tables/vmconnection.md) | - | Analytics, Hunting |
@@ -188,7 +188,8 @@ This solution includes **59 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-|3.0.17       | 02-04-2026                     |  Updated **TI map Domain entity to SecurityAlert** analytic rule with deduplication and filters   |
+| 3.0.18      | 04-05-2026                     | Export to TAXII **connector** proceeds to GA. |
+| 3.0.17      | 02-04-2026                     | Updated **TI map Domain entity to SecurityAlert** analytic rule with deduplication and filters   |
 | 3.0.16      | 25-03-2026                     | Optimized **TI map Domain entity to EmailUrlInfo** analytic rule with deduplication and filters |
 | 3.0.15      | 09-03-2026                     | Update **IPEntity_DuoSecurity Analytic Rule**                |
 | 3.0.14      | 16-02-2026                     | Added **Analytic Rule** for URL IOC                  |

@@ -22,9 +22,9 @@ This query searches for failed sign-in attempts to disabled accounts summarized 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SigninLogs`](../tables/signinlogs.md) | `ResultDescription == "User account is disabled. The account has been disabled by an administrator."`<br>`ResultType == "50057"` | ✓ | ✗ | ? |
 
 ---
 

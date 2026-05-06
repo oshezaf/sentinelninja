@@ -22,9 +22,9 @@ Based on a Watchlist Detects when a user has been added to a privileged group/ro
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName has_any "Add eligible member to role"`<br>`LoggedByService in "Core Directory,PIM"` | ✓ | ✗ | ? |
 
 ---
 

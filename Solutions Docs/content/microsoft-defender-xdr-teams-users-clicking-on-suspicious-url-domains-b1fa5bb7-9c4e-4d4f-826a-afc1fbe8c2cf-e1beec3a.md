@@ -22,9 +22,9 @@ This query helps hunt for Teams users clicking on suspicious URL domains.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`MessageUrlInfo`](../tables/messageurlinfo.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`MessageUrlInfo`](../tables/messageurlinfo.md) |  | ? | ✗ | ? |
 
 ---
 

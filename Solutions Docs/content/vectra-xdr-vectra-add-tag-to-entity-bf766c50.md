@@ -14,6 +14,34 @@ This playbook extracts tags from incident comments and adds them to the entity i
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraAddTagToEntity/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 2 |
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 2 |
+| `workflow` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+- *Get_Access_Token_For_Fetching_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Add_Tag_To_Vectra_Entity*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/tagging/entity/@{int(variables('entity_id'))}`
+- *HTTP_Request_To_Fetch_Tags_Of_An_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/tagging/entity/@{int(variables('entity_id'))}`
+
+**`workflow`** (builtin):
+- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+- *GenerateAccessTokenVectra_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [VectraAddTagToEntity/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraAddTagToEntity/readme.md)*

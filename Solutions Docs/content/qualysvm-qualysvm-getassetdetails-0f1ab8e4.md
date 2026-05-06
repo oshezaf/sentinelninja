@@ -14,6 +14,26 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [QualysVM](../solutions/qualysvm.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks/QualysVM-GetAssetDetails/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `QualysCustomConnector` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`QualysCustomConnector`** (customApi):
+- *Get_Asset_Details_By_IP*: method=`post`, path=`/api/2.0/fo/asset/host/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [QualysVMPlaybooks/QualysVM-GetAssetDetails/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks/QualysVM-GetAssetDetails/readme.md)*

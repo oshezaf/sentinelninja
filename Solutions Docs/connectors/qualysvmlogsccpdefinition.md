@@ -36,7 +36,7 @@ This connector ingests data into the following tables:
 - **Workspace** (Workspace): Read and Write permissions are required.
 
 **Custom Permissions:**
-- **API access and roles**: Ensure the Qualys VM user has a role of Reader or higher. If the role is Reader, ensure that API access is enabled for the account. Auditor role is not supported to access the API. For more details, refer to the Qualys VM [Host Detection API](https://docs.qualys.com/en/vm/qweb-all-api/mergedProjects/qapi-assets/host_lists/host_detection.htm#v_3_0) and [User role Comparison](https://qualysguard.qualys.com/qwebhelp/fo_portal/user_accounts/user_roles_comparison_vm.htm) document.
+- **API access and roles**: Ensure the Qualys VM user has a role of Reader or higher. If the role is Reader, ensure that API access is enabled for the account. Auditor role is not supported to access the API. For more details, refer to the Qualys VM [Host Detection API](https://docs.qualys.com/en/vm/qweb-all-api/mergedProjects/qapi-assets/host_lists/host_detection.htm#v_5_0) and [User role Comparison](https://qualysguard.qualys.com/qwebhelp/fo_portal/user_accounts/user_roles_comparison_vm.htm) document.
 
 ## Setup Instructions
 

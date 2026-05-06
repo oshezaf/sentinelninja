@@ -14,6 +14,26 @@ This playbook will ingest Microsoft Sentinel Security Alerts into Dynatrace.
 | **Solution** | [Dynatrace](../solutions/dynatrace.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Ingest-DynatraceMSSentinelSecurityAlerts/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Dynatrace_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value`
+
+**`http`** (builtin):
+- *Ingest_Dynatrace_Log_Entries*: method=`POST`, uri=`https://@{parameters('Tenant')}/api/v2/logs/ingest`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Ingest-DynatraceMSSentinelSecurityAlerts/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Ingest-DynatraceMSSentinelSecurityAlerts/readme.md)*

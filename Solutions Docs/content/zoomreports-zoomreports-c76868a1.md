@@ -18,6 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`ZoomV2_CL`](../tables/zoomv2-cl.md) | ? | ✓ | ? |
 | [`Zoom_CL`](../tables/zoom-cl.md) | ? | ✓ | ? |
 
 ---

@@ -24,9 +24,9 @@ Detects when a Global Administrator elevates access to all subscriptions and man
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName == "User has elevated their access to User Access Administrator for their Azure Resources"` | ✓ | ✗ | ? |
 
 ---
 

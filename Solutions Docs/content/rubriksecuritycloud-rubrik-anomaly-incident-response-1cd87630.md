@@ -14,6 +14,28 @@ This playbook provides an end to end example of the collection of Ransomware Ano
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyIncidentResponse/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `teams` | Managed | 1 | 0 |
+| `workflow` | Built-in | 0 | 6 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`workflow`** (builtin):
+- *RubrikFilesetRansomwareDiscovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikFilesetRansomwareDiscovery')]`, triggerName=`manual`
+- *RubrikRansomwareDiscoveryAndFileRecovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikRansomwareDiscoveryAndFileRecovery')]`, triggerName=`manual`
+- *RubrikRansomwareDiscoveryAndVMRecovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikRansomwareDiscoveryAndVMRecovery')]`, triggerName=`manual`
+- *RubrikAnomalyAnalysis*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikAnomalyAnalysis')]`, triggerName=`manual`
+- *RubrikDataObjectDiscovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikDataObjectDiscovery')]`, triggerName=`manual`
+- *RubrikFileObjectContextAnalysis*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikFileObjectContextAnalysis')]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikAnomalyIncidentResponse/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyIncidentResponse/readme.md)*

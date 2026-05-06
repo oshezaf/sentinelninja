@@ -14,6 +14,24 @@ Syncs closed incidents from Microsoft Sentinel back to SOCRadar platform. Uses S
 | **Solution** | [SOCRadar](../solutions/socradar.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOCRadar/Playbooks/SOCRadar-Alarm-Sync/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Query_Closed_Page*: method=`GET`, uri=`@variables('closed_next_link')`
+- *Update_SOCRadar_Status*: method=`POST`, uri=`https://platform.socradar.com/api/company/@{parameters('CompanyId')}/alarms/status/change`
+- *Update_SOCRadar_Severity*: method=`POST`, uri=`https://platform.socradar.com/api/company/@{parameters('CompanyId')}/alarm/severity`
+- *Add_Synced_Tag*: method=`PUT`, uri=`[concat(variables('_managementBaseUrl'), 'subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('WorkspaceResourceGroup'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/providers/Microsoft.SecurityInsights/incidents/@{items(''For_Each_Incident'')?[''name'']}?api-version=2023-11-01')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SOCRadar-Alarm-Sync/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOCRadar/Playbooks/SOCRadar-Alarm-Sync/readme.md)*

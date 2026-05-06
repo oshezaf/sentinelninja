@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spur IP Enrichment &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="spur-ip-enrichment">Spur IP Enrichment</h1>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>This Playbook Submits IP Addresses associated with an alert to Spur Context API</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/spur.html">Spur</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Alert-Trigger/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>4</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>spurconnector</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Spur-Context-Connector</code></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+
+**`spurconnector`** (managedApi):
+- *Get_IP_Context*: method=`get`, path=`/v2/context/@{encodeURIComponent(body('Parse_IP_Entity_')?['address'])}`
+
+**`http`** (builtin):
+- *GetAccessTokenSpur*: method=`POST`, uri=`@variables('access_token_url')`
+- *HTTP_-_Save_to_Custom_Table*: method=`POST`, uri=`@concat(parameters('DCE_Endpoint_URL'),'/dataCollectionRules/',parameters('DCR_Immutable_ID'),'/streams/Custom-','Spur_IP_Context_Details_CL','?api-version=2023-01-01')`
+
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Alert-Trigger/readme.md">Spur-Get-IP-Context-Data-Alert-Trigger/readme.md</a></em></p>
+</blockquote>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#deployplaybook">Deploy Spur IP Enrichment Alert Trigger Playbook</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#deployment">Deployment</a></li>
+<li><a href="#postdeployment">Post Deployment Steps</a></li>
+</ol>
+<p><a name="overview"></p>
+<h1 id="overview">Overview</h1>
+<p>This playbook uses the Spur Context API. It is able to provide hosted high-performance IP enrichment lookups of the highest-fidelity IP intelligence available. With pre-built integrations into the most common threat analysis platforms and services, Spur ensures that security teams can instantly leverage data to protect their environments from the latest evasion and obfuscation methods, such as VPNs, residential proxies, and bot automation.</p>
+<p>When a new Azure Sentinel Alert is created, this playbook gets triggered and performs the following actions:</p>
+<ul>
+<li>It fetches all the IP address entities in the Alert.</li>
+<li>Iterates through the IP address enities and fetches the results from Spur Context API for each IP Address.</li>
+<li>All the details from Spur Context API will be added as comments in a tabular format.</li>
+<li>Optionally, is saved the Context API data into Log Analytics custom table.</li>
+</ul>
+<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Alert-Trigger/images/comments.png" />
+<img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Alert-Trigger/images/custom_table.png" /></p>
+<p><a name="deployplaybook"></p>
+<h2 id="links-to-deploy-the-domaintools-iris-enrich-domain-playbook">Links to deploy the DomainTools Iris Enrich Domain Playbook:</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpur%2FPlaybooks%2FSpur-Get-IP-Context-Data-Alert-Trigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpur%2FPlaybooks%2FSpur-Get-IP-Context-Data-Alert-Trigger%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a name="prerequisites"></p>
+<h2 id="prerequisites-for-using-and-deploying-playbook">Prerequisites for using and deploying playbook</h2>
+<ul>
+<li>A Spur API Key.</li>
+<li>Spur Custom Connector.</li>
+</ul>
+<p><a name="deployment"></p>
+<h4 id="deployment-instructions">Deployment instructions</h4>
+<ul>
+<li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Fill in the required parameters for deploying the playbook.
+  <img alt="deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Alert-Trigger/images/deployment.png" /></li>
+<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
+</ul>
+<p><a name="postdeployment"></p>
+<h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
+<h4 id="a-authorize-connections">a. Authorize connections</h4>
+<p>Once deployment is complete, you will need to authorize each connection:
+- Open the Logic App in the edit mode.
+- Logic App prompts any missing connections, please update the connections.
+  <img alt="postdeployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Alert-Trigger/images/post_deployment_connections.png" />
+- As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.
+- Click on 'Parameter' and Enter All Parameters to save data as logs.
+- Set the following parameters:
+  - <code>Save_To_Custom_Table</code>: Set to <code>true</code> to enable saving Spur data to a custom Log Analytics table
+  - <code>DCE_Endpoint_URL</code>: Data Collection Endpoint URL for your Log Analytics workspace
+  - <code>DCR_Immutable_ID</code>: Immutable ID of the Data Collection Rule
+  - <code>TenantID</code>: Azure AD tenant ID for authentication (From Azure App Registration)
+  - <code>ClientID</code>: Application (client) ID of the service principal (From Azure App Registration)
+  - <code>ClientSecret</code>: Client secret for the service principal (secure string)(From Azure App Registration)
+  - <code>Auth_LoginEndpoint</code>: Login endpoint for authentication. Copy and paste this value in parameter-'https://login.microsoftonline.com'</p>
+<h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel:</h4>
+<ul>
+<li>In Azure Sentinel, analytical rules should be configured to trigger an Alert with IP indicators.</li>
+<li>Configure the automation rules to trigger the playbook.</li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spur.html">Back to Spur</a></p>
+</div>
+
+</body>
+</html>

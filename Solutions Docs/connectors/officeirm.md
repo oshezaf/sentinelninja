@@ -42,9 +42,9 @@ These alerts can be imported into Microsoft Sentinel with this connector, allowi
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft 365 Insider Risk Management"` | ✓ | ✗ | ? |
 
 ## Permissions
 

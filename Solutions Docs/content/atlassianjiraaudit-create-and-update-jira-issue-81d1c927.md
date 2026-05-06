@@ -14,6 +14,27 @@ This playbook will create or update incident in Jira. When incident is created, 
 | **Solution** | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `jira` | Managed | 1 | 2 |
+| `microsoftsentinel` | Managed | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`jira`** (managedApi):
+- *Create_a_new_issue*: method=`post`, path=`/issue`
+- *Add_comment*: method=`post`, path=`/issue/@{encodeURIComponent(variables('Jira ID'))}/comment`
+
+**`microsoftsentinel`** (managedApi):
+- *Update_incident*: method=`put`, path=`/Incidents`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Jira-CreateAndUpdateIssue/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Jira-CreateAndUpdateIssue/readme.md)*

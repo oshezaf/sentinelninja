@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ThreatIntelIndicators &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="threatintelindicators">ThreatIntelIndicators</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for ThreatIntelIndicators table in Azure Monitor Logs.</p>
 <table>
@@ -208,7 +208,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (15)</h2>
+<h2 id="solutions">Solutions (17)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></li>
@@ -219,15 +219,17 @@
 <li><a href="../solutions/dora-compliance.html">DORA Compliance</a></li>
 <li><a href="../solutions/global-secure-access.html">Global Secure Access</a></li>
 <li><a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a></li>
+<li><a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a></li>
 <li><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></li>
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
+<li><a href="../solutions/misp2sentinel.html">MISP2Sentinel</a></li>
 <li><a href="../solutions/recorded-future.html">Recorded Future</a></li>
 <li><a href="../solutions/reversinglabs.html">ReversingLabs</a></li>
 <li><a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/threatconnect.html">ThreatConnect</a></li>
 </ul>
-<h2 id="connectors">Connectors (9)</h2>
+<h2 id="connectors">Connectors (11)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -239,19 +241,27 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem == "CrowdStrike Falcon Adversary Intelligence"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/cyjaxiocapi.html">Cyjax Threat Intelligence IOC Connector</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem == "Cyjax-IOCs"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
+<td style="text-align: left;"><code>SourceSystem == "GreyNoise"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/lumenthreatfeedconnectorv2.html">Lumen Defender Threat Feed Data Connector V2</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey in "domain-name:value,ipv4-addr:value"</code><br><code>SourceSystem == "Lumen"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/lumenthreatfeedconnectorv2privatenetworking.html">Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey in "domain-name:value,ipv4-addr:value"</code><br><code>SourceSystem == "Lumen"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/misp2sentinelconnector.html">MISP2Sentinel</a></td>
+<td style="text-align: left;"><code>SourceSystem == "MISP"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/microsoftdefenderthreatintelligence.html">Microsoft Defender Threat Intelligence</a></td>
@@ -276,7 +286,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (105)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (101)</h2>
 <h3 id="analytic-rules">Analytic Rules (71)</h3>
 <p><strong>In solution <a href="../solutions/global-secure-access.html">Global Secure Access</a>:</strong></p>
 <table>
@@ -312,19 +322,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.html">Google Threat Intelligence - Threat Hunting Domain</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "domain-name:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.html">Google Threat Intelligence - Threat Hunting Hash</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey contains "file:hashes"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.html">Google Threat Intelligence - Threat Hunting IP</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "ipv4-addr:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-89290690-54c4-4196-91c5-d32b1df5d873-c5fc6b01.html">Google Threat Intelligence - Threat Hunting Url</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "url:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 </tbody>
 </table>
@@ -382,7 +392,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-domain-all-actors-acbf7ef6-f964-44c3-9031-7834ec68175f-9002c0d5.html">RecordedFuture Threat Hunting Domain All Actors</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "domain-name:value"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-hash-all-actors-6db6a8e6-2959-440b-ba57-a505875fcb37-f0b99a01.html">RecordedFuture Threat Hunting Hash All Actors</a></td>
@@ -390,11 +400,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-e31bc14e-2b4c-42a4-af34-5bfd7d768aea-57f811e9.html">RecordedFuture Threat Hunting IP All Actors</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "ipv4-addr:value"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-url-all-actors-3f6f0d1a-f2f9-4e01-881a-c55a4a71905b-8b23fa82.html">RecordedFuture Threat Hunting Url All Actors</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "url:value"</code></td>
 </tr>
 </tbody>
 </table>
@@ -617,7 +627,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (15)</h3>
+<h3 id="hunting-queries">Hunting Queries (14)</h3>
 <p><strong>In solution <a href="../solutions/google-threat-intelligence.html">Google Threat Intelligence</a>:</strong></p>
 <table>
 <thead>
@@ -629,19 +639,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-34288e97-5194-4f2e-abf2-c2783189f6ae-2dfdacdc.html">Google Threat Intelligence - Threat Hunting Domain</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "domain-name:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-0051a0d9-684f-4317-abbd-c1e5c24b39cb-5660b61d.html">Google Threat Intelligence - Threat Hunting Hash</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey contains "file:hashes"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-faa83502-2763-49ae-9216-e576fa1fdccb-c11a3364.html">Google Threat Intelligence - Threat Hunting IP</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "ipv4-addr:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/google-threat-intelligence-google-threat-intelligence-threat-hunting-url-a1705fa5-c904-4f1b-9e2d-a4ccb30377a2-b18588af.html">Google Threat Intelligence - Threat Hunting Url</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "url:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
 </tr>
 </tbody>
 </table>
@@ -671,19 +681,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-domain-all-actors-d641a534-ead8-41aa-a7c8-2b35e6b64c9f-095de712.html">RecordedFuture Threat Hunting Domain All Actors</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "domain-name:value"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-hash-all-actors-905da21a-c7d2-4f5b-b8fc-c8321da3ee83-003a7b7a.html">RecordedFuture Threat Hunting Hash All Actors</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey contains "file:hashes"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-ip-all-actors-7b5eb44d-3533-440e-9774-73a4d99bc2b2-0bac2271.html">RecordedFuture Threat Hunting IP All Actors</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "ipv4-addr:value"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuture-threat-hunting-url-all-actors-dbc2438a-0d16-4890-aaae-cbe0dc433b08-1c8d9da1.html">RecordedFuture Threat Hunting URL All Actors</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "url:value"</code></td>
 </tr>
 </tbody>
 </table>
@@ -718,22 +728,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.html">Teams Threat Intelligence Indicator Hit for Domain or URL</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (19)</h3>
+<h3 id="workbooks">Workbooks (16)</h3>
 <p><strong>In solution <a href="../solutions/ciscomeraki.html">CiscoMeraki</a>:</strong></p>
 <table>
 <thead>
@@ -794,18 +789,29 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong> <code>ObservableKey contains "file:hashes."</code><br><code>ObservableKey contains "network-traffic"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/dora-compliance-doracompliance-21bcc12f.html">DORACompliance</a></td>
-<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a>:</strong> <code>SourceSystem == "GreyNoise"</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.html">GreyNoiseOverview</a></td>
 </tr>
 </tbody>
 </table>
@@ -850,7 +856,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuturedomaincorrelation-be3669be.html">RecordedFutureDomainCorrelation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "domain-name:value"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfuturehashcorrelation-1e41d39d.html">RecordedFutureHashCorrelation</a></td>
@@ -858,11 +864,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfutureipcorrelation-65ad70f0.html">RecordedFutureIPCorrelation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "ipv4-addr:value"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/recorded-future-recordedfutureurlcorrelation-7c307c28.html">RecordedFutureURLCorrelation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ObservableKey == "url:value"</code></td>
 </tr>
 </tbody>
 </table>
@@ -926,33 +932,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-intsightsiocworkbook-88f7baed.html">IntsightsIOCWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-optimizationworkbook-7387c8bb.html">OptimizationWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-threatintelligence-250cda74.html">ThreatIntelligence</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (3)</h2>
 <h3 id="other-parsers">Other Parsers (3)</h3>
 <table>
@@ -986,9 +965,271 @@
 <ul>
 <li><code>microsoft.securityinsights/threatintelligence</code></li>
 </ul>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (14 criteria, 26 total references)</h2>
+<p>References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ObservableKey == "domain-name:value"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey == "ipv4-addr:value"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey == "url:value"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey in "domain-name:value,ipv4-addr:value"</code><br><code>SourceSystem == "Lumen"</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem == "GreyNoise"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey == "domain-name:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey contains "file:hashes"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey == "ipv4-addr:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey == "url:value"</code><br><code>SourceSystem == "Google Threat Intelligence"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem == "MISP"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem == "CrowdStrike Falcon Adversary Intelligence"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem == "Cyjax-IOCs"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey contains "file:hashes"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ObservableKey contains "file:hashes."</code><br><code>ObservableKey contains "network-traffic"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;"><strong>20</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>26</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="observablekey">ObservableKey</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>domain-name:value</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ipv4-addr:value</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>url:value</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains file:hashes</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains file:hashes.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains network-traffic</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sourcesystem">SourceSystem</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Google Threat Intelligence</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Lumen</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GreyNoise</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MISP</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CrowdStrike Falcon Adversary Intelligence</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Cyjax-IOCs</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

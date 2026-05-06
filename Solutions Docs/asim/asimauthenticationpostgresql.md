@@ -46,8 +46,9 @@ The following connectors provide data for this parser:
 | Connector | Solution |
 |:----------|:---------|
 | [CustomlogsviaAMA](../connectors/customlogsviaama.md) | [CustomLogsAma](../solutions/customlogsama.md) |
+| [PostgreSQL](../connectors/postgresql.md) | [PostgreSQL (legacy connector)](../solutions/postgresql.md) |
 
-**Solutions:** [CustomLogsAma](../solutions/customlogsama.md)
+**Solutions:** [CustomLogsAma](../solutions/customlogsama.md), [PostgreSQL (legacy connector)](../solutions/postgresql.md)
 
 ## References
 

@@ -14,6 +14,38 @@ This playbook will assign an Incident to an owner based on the Shifts schedule i
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Assignment-Shifts/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 2 |
+| `office365` | Managed | 1 | 1 |
+| `shifts` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_-_Get_user_with_low_assignment_*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+
+**`office365`** (managedApi):
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+**`shifts`** (managedApi):
+- *List_all_shifts*: method=`get`, path=`/v1.0/teams/@{encodeURIComponent('')}/schedule/shifts`
+
+**`http`** (builtin):
+- *HTTP_-_Get_total_incidents_for_user*: method=`GET`, uri=`[uriComponentToString(uri(variables('azure'),'subscriptions/@{triggerBody()?[''workspaceInfo'']?[''SubscriptionId'']}/resourceGroups/@{triggerBody()?[''workspaceInfo'']?[''ResourceGroupName'']}/providers/Microsoft.OperationalInsights/workspaces/@{triggerBody()?[''workspaceInfo'']?[''WorkspaceName'']}/providers/Microsoft.SecurityInsights/Incidents?api-version=2020-01-01&$filter=(properties/owner/objectId eq ''@{items(''For_each_Shifts_list'')?[''userId'']}'' and properties/createdTimeUtc ge @{items(''For_each_Shifts_list'')?[''sharedShift'']?[''startDateTime'']})&$top=1000'))]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Incident-Assignment-Shifts/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Assignment-Shifts/readme.md)*

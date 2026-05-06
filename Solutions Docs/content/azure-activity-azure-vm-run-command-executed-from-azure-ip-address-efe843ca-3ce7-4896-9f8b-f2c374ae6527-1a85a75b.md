@@ -22,9 +22,9 @@ Identifies any Azure VM Run Command operation executed from an Azure IP address.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `Authorization has "virtualMachines"`<br>`OperationNameValue == "Microsoft.Compute/virtualMachines/runCommand/action"` | ? | ✗ | ? |
 
 ---
 

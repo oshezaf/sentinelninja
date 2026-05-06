@@ -33,12 +33,12 @@ This union parser includes parsers for the following products:
 |  | [_Im_ProcessCreate_MD4IoT](im-processcreate-md4iot.md) |  |
 |  | [_Im_ProcessCreate_MicrosoftSecurityEvents](im-processcreate-microsoftsecurityevents.md) |  |
 |  | [_Im_ProcessCreate_MicrosoftWindowsEvents](im-processcreate-microsoftwindowsevents.md) |  |
-| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) |  |
+| SentinelOne | [_Im_ProcessCreate_SentinelOne](asimprocesscreatesentinelone.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
 |  | [_Im_ProcessCreate_VMwareCarbonBlackCloud](im-processcreate-vmwarecarbonblackcloud.md) |  |
 | Sysmon | [_Im_ProcessEvent_CreateMicrosoftSysmon](asimprocesseventcreatemicrosoftsysmon.md) |  |
 | Sysmon | [_Im_ProcessEvent_CreateMicrosoftSysmonWindowsEvent](asimprocesseventcreatemicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Microsoft 365 Defender for endpoint | [_Im_ProcessEvent_Microsoft365D](asimprocesseventmicrosoft365d.md) |  |
-| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)<br>[VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| Native | [_Im_ProcessEvent_Native](asimprocesseventnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 |  | [_Im_ProcessTerminate_LinuxSysmon](im-processterminate-linuxsysmon.md) |  |
 |  | [_Im_ProcessTerminate_MD4IoT](im-processterminate-md4iot.md) |  |
 |  | [_Im_ProcessTerminate_MicrosoftSecurityEvents](im-processterminate-microsoftsecurityevents.md) |  |

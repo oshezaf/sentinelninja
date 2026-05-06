@@ -16,6 +16,29 @@ author: IronNet
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 9 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *CommentOnAlert_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/CommentOnAlert`
+- *GetAlertIronDomeInformation_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetAlertIronDomeInformation`
+- *GetAlerts_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetAlerts`
+- *GetEvents_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetEvents`
+- *RateAlert_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
+- *ReportObservedBadActivity_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/ReportObservedBadActivity`
+- *SetAlertStatus_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/SetAlertStatus`
+- *GetEvent_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetEvent`
+- *IronNet_Login*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/Login`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [IronNet_Validate_IronNet_API/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Playbooks/IronNet_Validate_IronNet_API/readme.md)*

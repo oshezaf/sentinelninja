@@ -22,6 +22,26 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`Tenable_IO_Assets_CL`](../tables/tenable-io-assets-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/Tenable-EnrichIncidentWithAssetsInfo/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableIO/Playbooks/Playbooks/Tenable-EnrichIncidentWithAssetsInfo/readme.md)*

@@ -22,9 +22,9 @@ This query helps reviewing list of top users click on Phis URLs
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | `ThreatTypes contains "Phish"` | ✓ | ✗ | ? |
 
 ---
 

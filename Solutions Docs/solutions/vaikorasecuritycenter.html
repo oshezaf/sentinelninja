@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ VaikoraSecurityCenter &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="vaikorasecuritycenter">⚠️ VaikoraSecurityCenter</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="VaikoraSecurityCenter Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.data443.com">https://www.data443.com</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Data443 Risk Mitigation, Inc. - support@data443.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-04-02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-AzureSecurityCenter">Vaikora-AzureSecurityCenter</a></td>
+</tr>
+</tbody>
+</table>
+<p>The Vaikora Microsoft Defender for Cloud solution integrates <a href="https://vaikora.com">Vaikora</a> AI-driven security signal detection with Microsoft Sentinel and Microsoft Defender for Cloud. A Logic App playbook polls the Vaikora API every 6 hours, filters high-severity actions, anomalies, and threat detections, and writes them to a custom Log Analytics table (Vaikora_SecurityAlerts_CL). Analytic rules then surface these signals in Sentinel for investigation.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#internal-tables">Internal Tables</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2 id="internal-tables">Internal Tables</h2>
+<p>The following <strong>1 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+<td>Analytics, Playbooks (writes)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikorasecuritycenter-vaikora-anomaly-detection-c0984707-0855-430e-9c36-5e2d0d0ce56f-f798b3f0.html">Vaikora - Anomaly detection</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Discovery, LateralMovement, Collection, Exfiltration</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikorasecuritycenter-vaikora-feed-outage-detection-5f7789fa-0a6b-4dff-a2da-dfa4b682f3af-c7fc740b.html">Vaikora - Feed outage detection</a></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikorasecuritycenter-vaikora-high-severity-security-alerts-ac3ec787-fd49-4e93-88cc-aaa9b31061ac-e38a4327.html">Vaikora - High severity security alerts</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">InitialAccess, Execution, Persistence, DefenseEvasion, CredentialAccess, Discovery, LateralMovement, Collection, CommandAndControl, Exfiltration, Impact</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/vaikorasecuritycenter-vaikora-to-microsoft-defender-for-cloud-deb83906.html">Vaikora to Microsoft Defender for Cloud</a></td>
+<td style="text-align: left;">This playbook polls the Vaikora AI signal exchange API every 6 hours, filters actions with high/crit...</td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/vaikora-securityalerts-cl.html"><code>Vaikora_SecurityAlerts_CL</code></a> <em>(write)</em></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

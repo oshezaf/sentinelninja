@@ -56,11 +56,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**GitHub Only:**
+**In solution [Cribl](../solutions/cribl.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [CriblWorkbook](../content/github-only-criblworkbook-923de34f.md) |  |
+| [CriblWorkbook](../content/cribl-criblworkbook-903a9c58.md) |  |
 
 ## Parsers Using This Table (1)
 

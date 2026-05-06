@@ -50,7 +50,7 @@ Reference for Syslog table in Azure Monitor Logs.
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
 
-## Solutions (55)
+## Solutions (54)
 
 This table is used by the following solutions:
 
@@ -97,7 +97,6 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Sophos XG Firewall](../solutions/sophos-xg-firewall.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md)
 - [Symantec VIP](../solutions/symantec-vip.md)
 - [SymantecProxySG](../solutions/symantecproxysg.md)
@@ -116,50 +115,50 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) |  |
-| [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) |  |
+| [[Deprecated] Barracuda CloudGen Firewall](../connectors/barracudacloudfirewall.md) | `ProcessName == "box_Firewall_Activity"` |
+| [[Deprecated] Blackberry CylancePROTECT](../connectors/blackberrycylanceprotect.md) | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` |
 | [CTERA Syslog](../connectors/ctera.md) | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` |
-| [[Deprecated] Cisco Application Centric Infrastructure](../connectors/ciscoaci.md) |  |
-| [[Deprecated] Cisco Identity Services Engine](../connectors/ciscoise.md) |  |
+| [[Deprecated] Cisco Application Centric Infrastructure](../connectors/ciscoaci.md) | `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` |
+| [[Deprecated] Cisco Identity Services Engine](../connectors/ciscoise.md) | `ProcessName has_any "CISE,CSCO"` |
 | [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) |  |
 | [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) |  |
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) |  |
 | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) |  |
 | [[Deprecated] Cisco UCS](../connectors/ciscoucs.md) |  |
-| [[Deprecated] Cisco Web Security Appliance](../connectors/ciscowsa.md) |  |
+| [[Deprecated] Cisco Web Security Appliance](../connectors/ciscowsa.md) | `ProcessName == "cisco_wsa"` |
 | [[Deprecated] Citrix ADC (former NetScaler)](../connectors/citrixadc.md) |  |
-| [[Deprecated] Digital Guardian Data Loss Prevention](../connectors/digitalguardiandlp.md) |  |
-| [[Deprecated] ESET PROTECT](../connectors/esetprotect.md) |  |
-| [[Deprecated] Exabeam Advanced Analytics](../connectors/exabeam.md) |  |
+| [[Deprecated] Digital Guardian Data Loss Prevention](../connectors/digitalguardiandlp.md) | `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` |
+| [[Deprecated] ESET PROTECT](../connectors/esetprotect.md) | `ProcessName == "ERAServer"` |
+| [[Deprecated] Exabeam Advanced Analytics](../connectors/exabeam.md) | `ProcessName contains "Exabeam"` |
 | [Forescout](../connectors/forescout.md) |  |
-| [[Deprecated] GitLab](../connectors/gitlab.md) |  |
-| [[Deprecated] ISC Bind](../connectors/iscbind.md) |  |
-| [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md) |  |
-| [[Deprecated] Ivanti Unified Endpoint Management](../connectors/ivantiuem.md) |  |
-| [[Deprecated] Juniper SRX](../connectors/junipersrx.md) |  |
-| [[Deprecated] McAfee Network Security Platform](../connectors/mcafeensp.md) |  |
-| [[Deprecated] McAfee ePolicy Orchestrator (ePO)](../connectors/mcafeeepo.md) |  |
+| [[Deprecated] GitLab](../connectors/gitlab.md) | `Facility == "local7"`<br>`ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` |
+| [[Deprecated] ISC Bind](../connectors/iscbind.md) | `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` |
+| [[Deprecated] Infoblox NIOS](../connectors/infobloxnios.md) | `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` |
+| [[Deprecated] Ivanti Unified Endpoint Management](../connectors/ivantiuem.md) | `SyslogMessage has_all "Alert"` |
+| [[Deprecated] Juniper SRX](../connectors/junipersrx.md) | `ProcessName == "RT_FLOW"`<br>`ProcessName in "RT_IDS,sshd"`<br>`ProcessName !in "sshd,RT_IDS,RT_FLOW"` |
+| [[Deprecated] McAfee Network Security Platform](../connectors/mcafeensp.md) | `ProcessName == "SyslogAlertForwarderNSP"` |
+| [[Deprecated] McAfee ePolicy Orchestrator (ePO)](../connectors/mcafeeepo.md) | `ProcessName contains "EPOEvents"`<br>`SyslogMessage contains "<EPOevent>"`<br>`SyslogMessage contains "<UpdateEvents>"` |
 | [[Deprecated] Microsoft Sysmon For Linux](../connectors/microsoftsysmonforlinux.md) | `ProcessName == "sysmon"` |
 | [[Deprecated] Nasuni Edge Appliance](../connectors/nasuniedgeappliance.md) | `Facility != "cron"` |
-| [[Deprecated] OpenVPN Server](../connectors/openvpn.md) |  |
-| [[Deprecated] Oracle Database Audit](../connectors/oracledatabaseaudit.md) |  |
-| [[Deprecated] Pulse Connect Secure](../connectors/pulseconnectsecure.md) |  |
+| [[Deprecated] OpenVPN Server](../connectors/openvpn.md) | `ProcessName == "openvpn"` |
+| [[Deprecated] Oracle Database Audit](../connectors/oracledatabaseaudit.md) | `SyslogMessage contains "Oracle Unified Audit"` |
+| [[Deprecated] Pulse Connect Secure](../connectors/pulseconnectsecure.md) | `Facility == "local7"` |
 | [[Deprecated] RSA® SecurID (Authentication Manager)](../connectors/rsasecuridam.md) |  |
-| [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md) |  |
-| [[Deprecated] Cisco Secure Cloud Analytics](../connectors/stealthwatch.md) |  |
-| [[Deprecated] Symantec Endpoint Protection](../connectors/symantecendpointprotection.md) |  |
-| [[Deprecated] Symantec ProxySG](../connectors/symantecproxysg.md) |  |
-| [[Deprecated] Symantec VIP](../connectors/symantecvip.md) |  |
+| [[Deprecated] Sophos XG Firewall](../connectors/sophosxgfirewall.md) | `Facility == "local0"` |
+| [[Deprecated] Cisco Secure Cloud Analytics](../connectors/stealthwatch.md) | `SyslogMessage has "Stealthwatch"` |
+| [[Deprecated] Symantec Endpoint Protection](../connectors/symantecendpointprotection.md) | `ProcessName == "SymantecServer"` |
+| [[Deprecated] Symantec ProxySG](../connectors/symantecproxysg.md) | `Facility == "local0"` |
+| [[Deprecated] Symantec VIP](../connectors/symantecvip.md) | `Facility == "local5"` |
 | [Syslog via Legacy Agent](../connectors/syslog.md) | `Facility != "cron"` |
 | [Syslog via AMA](../connectors/syslogama.md) | `Facility != "cron"` |
-| [[Deprecated] VMware ESXi](../connectors/vmwareesxi.md) |  |
+| [[Deprecated] VMware ESXi](../connectors/vmwareesxi.md) | `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` |
 | [[Deprecated] WatchGuard Firebox](../connectors/watchguardfirebox.md) |  |
 
 ---
 
-## Content Items Using This Table (386)
+## Content Items Using This Table (356)
 
-### Analytic Rules (241)
+### Analytic Rules (237)
 
 **In solution [CTERA](../solutions/ctera.md):**
 
@@ -240,7 +239,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [GitLab - Abnormal number of repositories deleted](../content/gitlab-gitlab-abnormal-number-of-repositories-deleted-3efd09bd-a582-4410-b7ec-5ff21cfad7bd-e932ffd2.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` |
 | [GitLab - Brute-force Attempts](../content/gitlab-gitlab-brute-force-attempts-2238d13a-cf05-4973-a83f-d12a25dbb153-84a2fd44.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` |
-| [GitLab - External User Added to GitLab](../content/gitlab-gitlab-external-user-added-to-gitlab-c1544d8f-cbbd-4e35-8d32-5b9312279833-0ecac57f.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` |
+| [GitLab - External User Added to GitLab](../content/gitlab-gitlab-external-user-added-to-gitlab-c1544d8f-cbbd-4e35-8d32-5b9312279833-0ecac57f.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` |
 | [GitLab - Local Auth - No MFA](../content/gitlab-gitlab-local-auth-no-mfa-e0b45487-5c79-482d-8ac0-695de8c031af-0b436ca9.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` |
 | [GitLab - Personal Access Tokens creation over time](../content/gitlab-gitlab-personal-access-tokens-creation-over-time-4d6d8b0e-6d9a-4857-a141-f5d89393cddb-e2442425.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` |
 | [GitLab - Repository visibility to Public](../content/gitlab-gitlab-repository-visibility-to-public-8b291c3d-90ba-4ebf-af2c-0283192d430e-27c058ed.md) | `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` |
@@ -347,7 +346,7 @@ This table is ingested by the following connectors:
 | [ClientDeniedAccess](../content/symantec-vip-clientdeniedaccess-a9956d3a-07a9-44a6-a279-081a85020cae-b3aec064.md) |
 | [Excessive Failed Authentication from Invalid Inputs](../content/symantec-vip-excessive-failed-authentication-from-invalid-inputs-c775a46b-21b1-46d7-afa6-37e3e577a27b-0e6ce55d.md) |
 
-**In solution [SymantecProxySG](../solutions/symantecproxysg.md):** `Facility == "local0"`
+**In solution [SymantecProxySG](../solutions/symantecproxysg.md):** `Computer == "datasource"`<br>`Facility == "local0"`
 
 | Analytic Rule |
 |:-------------|
@@ -523,16 +522,7 @@ This table is ingested by the following connectors:
 | [WAN Accelerator Deleted](../content/veeam-wan-accelerator-deleted-5b19f19b-d92c-486f-be98-ba2c5945e240-ad4cbb3c.md) |
 | [WAN Accelerator Settings Updated](../content/veeam-wan-accelerator-settings-updated-2e4fe360-ce67-433b-930e-42f83058dfd0-752109e1.md) |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Failed AzureAD logons but success logon to host](../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "Accepted"` |
-| [Failed host logons but success logon to AzureAD](../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.md) | `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "from"`<br>`SyslogMessage has_any "Accepted,Disconnected,Disconnecting,[preauth],disconnect"` |
-| [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md) | `Facility in "auth,authpriv"`<br>`SyslogMessage matchesregex ".*password changed for.*"` |
-| [PulseConnectSecure - CVE-2021-22893 Possible Pulse Connect Secure RCE Vulnerability Attack](../content/standalone-content-pulseconnectsecure-cve-2021-22893-possible-pulse-connect-secure-rce-vulnerability-att-d0c82b7f-40b2-4180-a4d6-7aa0541b7599-46e4de61.md) |  |
-
-### Hunting Queries (84)
+### Hunting Queries (82)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -640,7 +630,7 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Crypto currency miners EXECVE](../content/syslog-crypto-currency-miners-execve-1ef1c38f-26dd-4e28-b884-5b3665352648-c1378546.md) |  |
-| [Editing Linux scheduled tasks through Crontab](../content/syslog-editing-linux-scheduled-tasks-through-crontab-6f0f1821-5981-408a-930b-8b2ca60e9e6c-5de4e857.md) | `Facility == "cron"`<br>`ProcessName == "crontab"` |
+| [Editing Linux scheduled tasks through Crontab](../content/syslog-editing-linux-scheduled-tasks-through-crontab-6f0f1821-5981-408a-930b-8b2ca60e9e6c-5de4e857.md) | `Facility == "cron"`<br>`ProcessName == "crontab"`<br>`SeverityLevel == "info"` |
 | [Linux scheduled task Aggregation](../content/syslog-linux-scheduled-task-aggregation-eb09da09-6f6c-4502-bf74-f7b9f1343539-ae42cc38.md) | `Facility == "cron"`<br>`ProcessName in "CRON,CROND"`<br>`SyslogMessage contains "CMD"` |
 | [Rare process running on a Linux host](../content/syslog-rare-process-running-on-a-linux-host-d0ae35df-0eaf-491f-b23e-8190e4f3ffe9-bece04a6.md) |  |
 | [SCX Execute RunAs Providers](../content/syslog-scx-execute-runas-providers-0d298a1d-1a08-4f4b-8b28-687bfe0012e8-bc82896d.md) | `SyslogMessage has "AUOMS_EXECVE"` |
@@ -676,14 +666,7 @@ This table is ingested by the following connectors:
 | [VMware ESXi - Root logins failures](../content/vmwareesxi-vmware-esxi-root-logins-failures-fc6c0440-1bb6-4661-89e9-4cb2c8f1e5e2-48dd363d.md) |
 | [VMware ESXi - VM high resource load](../content/vmwareesxi-vmware-esxi-vm-high-resource-load-3467bb11-7cbf-49f7-9e71-c3d0da327af5-9c6a697a.md) |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Disabled accounts using Squid proxy](../content/standalone-content-disabled-accounts-using-squid-proxy-959fe0f0-7ac0-467c-944f-5b8c6fdc9e72-ec4ae627.md) | `ProcessName contains "squid"` |
-| [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
-
-### Workbooks (61)
+### Workbooks (37)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):** `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"`<br>`SyslogMessage has "jndi"`<br>`SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"`
 
@@ -771,7 +754,7 @@ This table is ingested by the following connectors:
 | [IllumioFlowData](../content/illumiosaas-illumioflowdata-b836f8b9.md) | `SyslogMessage has "illumio_pce/agent"` |
 | [IllumioOnPremHealth](../content/illumiosaas-illumioonpremhealth-4cde69e6.md) | `SyslogMessage has "disk=Policy"`<br>`SyslogMessage has "disk=Traffic"`<br>`SyslogMessage has "illumio_pce/system_health"`<br>`SyslogMessage has "src=collector"`<br>`SyslogMessage has "src=disk_latency"`<br>`SyslogMessage has "src=flow_analytics"` |
 
-**In solution [Infoblox NIOS](../solutions/infoblox-nios.md):** `SyslogMessage has "DHCPOFFER"`
+**In solution [Infoblox NIOS](../solutions/infoblox-nios.md):** `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"`
 
 | Workbook |
 |:-------------|
@@ -850,7 +833,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [SymantecVIP](../content/symantec-vip-symantecvip-eae32760.md) |
 
-**In solution [SymantecProxySG](../solutions/symantecproxysg.md):** `Facility == "local0"`
+**In solution [SymantecProxySG](../solutions/symantecproxysg.md):** `Computer == "datasource"`<br>`Facility == "local0"`
 
 | Workbook |
 |:-------------|
@@ -887,43 +870,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
-**GitHub Only:**
+## Parsers Using This Table (97)
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Barracuda](../content/github-only-barracuda-84e65401.md) |  |
-| [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [InfobloxNIOS](../content/github-only-infobloxnios-714844bb.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [LinuxMachines](../content/github-only-linuxmachines-637c38c6.md) |  |
-| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) | `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"`<br>`SyslogMessage has "jndi"`<br>`SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"` |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [PulseConnectSecure](../content/github-only-pulseconnectsecure-cfc93618.md) |  |
-| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SophosXGFirewall](../content/github-only-sophosxgfirewall-ecabbd5c.md) |  |
-| [SymantecProxySG](../content/github-only-symantecproxysg-6bc65392.md) |  |
-| [SymantecVIP](../content/github-only-symantecvip-4200d062.md) |  |
-| [Syslog-Bifurcation](../content/github-only-syslog-bifurcation-4a1765ba.md) |  |
-| [VeeamDataPlatformMonitoring](../content/github-only-veeamdataplatformmonitoring-93349d26.md) |  |
-| [VeeamSecurityActivites](../content/github-only-veeamsecurityactivites-4f8fb3e5.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"` |
-| [VeeamSecurityActivities](../content/github-only-veeamsecurityactivities-c31c4544.md) | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"` |
-| [WatchGuardFireboxWorkbook](../content/github-only-watchguardfireboxworkbook-20acd14a.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
-| [syslogoverview](../content/github-only-syslogoverview-74ed5a6a.md) |  |
-
-## Parsers Using This Table (96)
-
-### ASIM Parsers (21)
+### ASIM Parsers (22)
 
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuditEventCiscoISE](../asim/asimauditeventciscoise.md) | AuditEvent | Cisco ISE | `ProcessName has_any "CISE,CSCO"` |
 | [ASimAuditEventCiscoMerakiSyslog](../asim/asimauditeventciscomerakisyslog.md) | AuditEvent | Cisco Meraki |  |
+| [ASimAuthenticationCiscoDNAC](../asim/asimauthenticationciscodnac.md) | Authentication | Cisco DNAC | `ProcessName == "DNAC"`<br>`SyslogMessage has "LOGIN_USER_EVENT"`<br>`SyslogMessage has "LOGOFF_USER_EVENT"` |
 | [ASimAuthenticationCiscoIOS](../asim/asimauthenticationciscoios.md) | Authentication | Cisco IOS | `SyslogMessage has "%SEC_LOGIN-4-LOGIN_FAILED"`<br>`SyslogMessage has "%SEC_LOGIN-5-LOGIN_SUCCESS"`<br>`SyslogMessage has "%SYS-6-LOGOUT"` |
 | [ASimAuthenticationCiscoISE](../asim/asimauthenticationciscoise.md) | Authentication | Cisco ISE | `ProcessName has_any "CISE,CSCO"` |
 | [ASimAuthenticationCiscoISEAdministrator](../asim/asimauthenticationciscoiseadministrator.md) | Authentication | Cisco ISE Administrator | `ProcessName has "CISE_Administrative_and_Operational_Audit"`<br>`SyslogMessage has "Administrator-Login"` |
@@ -936,13 +891,13 @@ This table is ingested by the following connectors:
 | [ASimFileEventLinuxSysmonFileDeleted](../asim/asimfileeventlinuxsysmonfiledeleted.md) | FileEvent | Microsoft Sysmon for Linux | `SyslogMessage has "<Provider Name="`<br>`SyslogMessage has_any "<EventID>23</EventID>,<EventID>26</EventID>"` |
 | [ASimNetworkSessionAppGateSDP](../asim/asimnetworksessionappgatesdp.md) | NetworkSession | AppGate SDP | `ProcessName in "cz-sessiond,cz-vpnd"`<br>`SyslogMessage has_all "[AUDIT]"`<br>`SyslogMessage has_any ":"` |
 | [ASimNetworkSessionCiscoISE](../asim/asimnetworksessionciscoise.md) | NetworkSession | Cisco ISE | `ProcessName has_any "CISE,CSCO"` |
-| [ASimNetworkSessionCiscoMerakiSyslog](../asim/asimnetworksessionciscomerakisyslog.md) | NetworkSession | Cisco Meraki |  |
+| [ASimNetworkSessionCiscoMerakiSyslog](../asim/asimnetworksessionciscomerakisyslog.md) | NetworkSession | Cisco Meraki | `Computer == "CiscoMeraki"` |
 | [ASimNetworkSessionLinuxSysmon](../asim/asimnetworksessionlinuxsysmon.md) | NetworkSession | Sysmon for Linux | `SyslogMessage has_all "<Provider Name="` |
 | [ASimNetworkSessionWatchGuardFirewareOS](../asim/asimnetworksessionwatchguardfirewareos.md) | NetworkSession | WatchGuard Fireware OS | `SyslogMessage !has "3000-0151"`<br>`SyslogMessage !has "icmp"`<br>`SyslogMessage !has "igmp"`<br>`SyslogMessage !has "msg="`<br>`SyslogMessage has "3000-0151"`<br>`SyslogMessage has "icmp"`<br>`SyslogMessage has "igmp"`<br>`SyslogMessage has_any "msg_id="` |
 | [ASimProcessCreateLinuxSysmon](../asim/asimprocesscreatelinuxsysmon.md) | ProcessEvent | Sysmon for Linux | `SyslogMessage has_all "<Provider Name="` |
 | [ASimProcessTerminateLinuxSysmon](../asim/asimprocessterminatelinuxsysmon.md) | ProcessEvent | Sysmon for Linux | `SyslogMessage has_all "<Provider Name="` |
 | [ASimUserManagementCiscoISE](../asim/asimusermanagementciscoise.md) | UserManagement | Cisco ISE | `ProcessName has_any "CISE,CSCO"` |
-| [ASimUserManagementLinuxAuthpriv](../asim/asimusermanagementlinuxauthpriv.md) | UserManagement | Microsoft | `Facility == "authpriv"`<br>`ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"` |
+| [ASimUserManagementLinuxAuthpriv](../asim/asimusermanagementlinuxauthpriv.md) | UserManagement | Microsoft | `Computer == "LinuxAuthpriv"`<br>`Facility == "authpriv"`<br>`ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"` |
 
 ### Other Parsers (75)
 
@@ -1009,7 +964,7 @@ This table is ingested by the following connectors:
 | [SophosXGFirewall](../parsers/sophosxgfirewall.md) | [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) | `Facility == "local0"` |
 | [StealthwatchEvent](../parsers/stealthwatchevent.md) | [Cisco Secure Cloud Analytics](../solutions/cisco-secure-cloud-analytics.md) | `SyslogMessage has "Stealthwatch"` |
 | [SymantecEndpointProtection](../parsers/symantecendpointprotection.md) | [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) | `ProcessName == "SymantecServer"` |
-| [SymantecProxySG](../parsers/symantecproxysg.md) | *(Legacy)* | `Facility == "local0"` |
+| [SymantecProxySG](../parsers/symantecproxysg.md) | *(Legacy)* | `Computer == "datasource"`<br>`Facility == "local0"` |
 | [SymantecProxySG](../parsers/symantecproxysg.md) | [SymantecProxySG](../solutions/symantecproxysg.md) | `Facility == "local0"` |
 | [SymantecVIP](../parsers/symantecvip.md) | [Symantec VIP](../solutions/symantec-vip.md) | `Facility == "local5"` |
 | [SyslogEventTypeData](../parsers/syslogeventtypedata.md) | *(Legacy)* |  |
@@ -1040,41 +995,48 @@ This table collects data from the following Azure resource types:
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.hybridcontainerservice/provisionedclusters`
 
-## Selection Criteria Summary (93 criteria, 417 total references)
+## Selection Criteria Summary (94 criteria, 439 total references)
 
-References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other parsers.
+References by type: 29 connectors, 331 content items, 20 ASIM parsers, 59 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `SyslogMessage has "instanceId"` | - | 112 | - | 3 | **115** |
-| `ProcessName has_any "CISE,CSCO"` | - | 21 | 4 | 1 | **26** |
-| `ProcessName contains "EPOEvents"`<br>`SyslogMessage contains "<EPOevent>"`<br>`SyslogMessage contains "<UpdateEvents>"` | - | 25 | - | 1 | **26** |
-| `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | - | 25 | - | 1 | **26** |
-| `SyslogMessage contains "Oracle Unified Audit"` | - | 22 | - | 2 | **24** |
-| `ProcessName == "cisco_wsa"` | - | 22 | - | 1 | **23** |
-| `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` | - | 21 | - | 1 | **22** |
+| `ProcessName contains "EPOEvents"`<br>`SyslogMessage contains "<EPOevent>"`<br>`SyslogMessage contains "<UpdateEvents>"` | 1 | 25 | - | 1 | **27** |
+| `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | 1 | 25 | - | 1 | **27** |
+| `ProcessName has_any "CISE,CSCO"` | 1 | 21 | 4 | 1 | **27** |
+| `SyslogMessage contains "Oracle Unified Audit"` | 1 | 22 | - | 2 | **25** |
+| `ProcessName == "cisco_wsa"` | 1 | 22 | - | 1 | **24** |
+| `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` | 1 | 21 | - | 1 | **23** |
 | `SyslogMessage has "illumio_pce/agent"` | - | 8 | - | 1 | **9** |
-| `Facility == "local0"` | - | 6 | - | 3 | **9** |
-| `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` | - | 6 | - | 1 | **7** |
-| `ProcessName contains "squid"` | - | 7 | - | - | **7** |
+| `Facility == "local0"` | 2 | 3 | - | 2 | **7** |
 | `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"` | - | 7 | - | - | **7** |
+| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | 2 | 2 | - | 2 | **6** |
+| `ProcessName == "ERAServer"` | 1 | 3 | - | 2 | **6** |
 | `ProcessName == "gw-audit"` | - | 6 | - | - | **6** |
-| `ProcessName == "ERAServer"` | - | 3 | - | 2 | **5** |
-| `Facility == "local7"` | - | 3 | - | 1 | **4** |
+| `Facility == "local7"`<br>`ProcessName == "GitLab-Audit-Logs"` | - | 5 | - | 1 | **6** |
+| `ProcessName contains "squid"` | - | 6 | - | - | **6** |
+| `ProcessName == "SymantecServer"` | 1 | 3 | - | 1 | **5** |
+| `Facility == "local5"` | 1 | 3 | - | 1 | **5** |
+| `Facility == "local7"` | 1 | 3 | - | 1 | **5** |
+| `ProcessName == "box_Firewall_Activity"` | 1 | 1 | - | 2 | **4** |
 | `SyslogMessage has "purity.alert"` | - | 2 | - | 2 | **4** |
-| `ProcessName == "SymantecServer"` | - | 3 | - | 1 | **4** |
-| `Facility == "local5"` | - | 3 | - | 1 | **4** |
+| `Computer == "datasource"`<br>`Facility == "local0"` | - | 3 | - | 1 | **4** |
 | `SyslogMessage has_all "<Provider Name="` | - | - | 4 | - | **4** |
+| `ProcessName contains "Exabeam"` | 1 | - | - | 2 | **3** |
 | `Facility != "cron"` | 3 | - | - | - | **3** |
-| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | - | 1 | - | 2 | **3** |
-| `ProcessName == "box_Firewall_Activity"` | - | 1 | - | 2 | **3** |
-| `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` | - | 1 | - | 1 | **2** |
+| `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | 1 | - | - | 2 | **3** |
+| `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` | - | 2 | - | 1 | **3** |
+| `ProcessName == "SyslogAlertForwarderNSP"` | 1 | - | - | 1 | **2** |
+| `SyslogMessage has_all "Alert"` | 1 | - | - | 1 | **2** |
+| `ProcessName == "RT_FLOW"`<br>`ProcessName in "RT_IDS,sshd"`<br>`ProcessName !in "sshd,RT_IDS,RT_FLOW"` | 1 | - | - | 1 | **2** |
+| `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | 1 | - | - | 1 | **2** |
+| `ProcessName == "openvpn"` | 1 | - | - | 1 | **2** |
+| `SyslogMessage has "Stealthwatch"` | 1 | - | - | 1 | **2** |
 | `ProcessName has "sftp"`<br>`SyslogMessage has "bytes read"`<br>`SyslogMessage has "close"`<br>`SyslogMessage has "session opened for"` | - | 2 | - | - | **2** |
-| `SyslogMessage has "DHCPOFFER"` | - | 1 | - | 1 | **2** |
-| `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | - | - | - | 2 | **2** |
-| `ProcessName contains "Exabeam"` | - | - | - | 2 | **2** |
-| `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
+| `Facility == "local7"`<br>`ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | 1 | - | - | - | **1** |
 | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
+| `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
 | `SyslogMessage contains "found an infected file"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransomware incident detected"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransom Protect mechanism blocked"` | - | 1 | - | - | **1** |
@@ -1086,13 +1048,10 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `SyslogMessage contains "VCF Alert"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "VCF Drop"`<br>`SyslogMessage contains "packet too big"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Reverse path forwarding check fail"`<br>`SyslogMessage contains "VCF Drop"` | - | 1 | - | - | **1** |
-| `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "Accepted"` | - | 1 | - | - | **1** |
-| `Facility contains "auth"`<br>`ProcessName != "sudo"`<br>`SyslogMessage has "from"`<br>`SyslogMessage has_any "Accepted,Disconnected,Disconnecting,[preauth],disconnect"` | - | 1 | - | - | **1** |
-| `Facility in "auth,authpriv"`<br>`SyslogMessage matchesregex ".*password changed for.*"` | - | 1 | - | - | **1** |
 | `SyslogMessage has "AUOMS_EXECVE"`<br>`SyslogMessage has "jndi"`<br>`SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"` | - | 1 | - | - | **1** |
 | `SyslogMessage matchesregex "(nasuni.)([0-9A-Za-z]{8}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{4}-[0-9A-Za-z]{1})"` | - | 1 | - | - | **1** |
 | `Facility == "cron"`<br>`ProcessName in "CRON,CROND"`<br>`SyslogMessage contains "CMD"` | - | 1 | - | - | **1** |
-| `Facility == "cron"`<br>`ProcessName == "crontab"` | - | 1 | - | - | **1** |
+| `Facility == "cron"`<br>`ProcessName == "crontab"`<br>`SeverityLevel == "info"` | - | 1 | - | - | **1** |
 | `SyslogMessage has "AUOMS_EXECVE"` | - | 1 | - | - | **1** |
 | `Facility == "user"`<br>`SyslogMessage has "AUOMS_EXECVE"`<br>`SyslogMessage has "jndi"`<br>`SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"` | - | 1 | - | - | **1** |
 | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "ctera_audit"`<br>`SyslogMessage contains "op=delete"` | - | 1 | - | - | **1** |
@@ -1102,6 +1061,7 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `SyslogMessage has_any "ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change"`<br>`SyslogMessage has_any "auditd stopped,logging stopped,rsyslog stopped,syslog stopped"`<br>`SyslogMessage has_any "change,config,edit,modified,updated"`<br>`SyslogMessage has_any "change,config,modified,registry,updated"`<br>`SyslogMessage has_any "checksum mismatch,file deleted,file modified,file tamper"` | - | 1 | - | - | **1** |
 | `SyslogMessage has "instanceId"`<br>`SyslogMessage has "predefined_alarm_id"`<br>`SyslogMessage has "instanceId"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "ACTION=VCF"`<br>`SyslogMessage contains "VCF Alert"` | - | 1 | - | - | **1** |
+| `ProcessName == "DNAC"`<br>`SyslogMessage has "LOGIN_USER_EVENT"`<br>`SyslogMessage has "LOGOFF_USER_EVENT"` | - | - | 1 | - | **1** |
 | `SyslogMessage has "%SEC_LOGIN-4-LOGIN_FAILED"`<br>`SyslogMessage has "%SEC_LOGIN-5-LOGIN_SUCCESS"`<br>`SyslogMessage has "%SYS-6-LOGOUT"` | - | - | 1 | - | **1** |
 | `ProcessName has "CISE_Administrative_and_Operational_Audit"`<br>`SyslogMessage has "Administrator-Login"` | - | - | 1 | - | **1** |
 | `ProcessName == "sshd"`<br>`SyslogMessage has "Failed"`<br>`SyslogMessage has "but this does not map back to the address"`<br>`SyslogMessage has "key RSA"`<br>`SyslogMessage has "publickey"`<br>`SyslogMessage startswith "Accepted"`<br>`SyslogMessage startswith "Failed"`<br>`SyslogMessage startswith "Invalid user"`<br>`SyslogMessage startswith "Nasty PTR record"`<br>`SyslogMessage startswith "Timeout"`<br>`SyslogMessage startswith "message repeated"`<br>`SyslogMessage startswith "reverse mapping checking getaddrinfo for"` | - | - | 1 | - | **1** |
@@ -1110,12 +1070,11 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `ProcessName == "named"`<br>`SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | - | - | 1 | - | **1** |
 | `SyslogMessage has "<Provider Name="`<br>`SyslogMessage has_any "<EventID>23</EventID>,<EventID>26</EventID>"` | - | - | 1 | - | **1** |
 | `ProcessName in "cz-sessiond,cz-vpnd"`<br>`SyslogMessage has_all "[AUDIT]"`<br>`SyslogMessage has_any ":"` | - | - | 1 | - | **1** |
+| `Computer == "CiscoMeraki"` | - | - | 1 | - | **1** |
 | `SyslogMessage !has "3000-0151"`<br>`SyslogMessage !has "icmp"`<br>`SyslogMessage !has "igmp"`<br>`SyslogMessage !has "msg="`<br>`SyslogMessage has "3000-0151"`<br>`SyslogMessage has "icmp"`<br>`SyslogMessage has "igmp"`<br>`SyslogMessage has_any "msg_id="` | - | - | 1 | - | **1** |
-| `Facility == "authpriv"`<br>`ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"` | - | - | 1 | - | **1** |
+| `Computer == "LinuxAuthpriv"`<br>`Facility == "authpriv"`<br>`ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"` | - | - | 1 | - | **1** |
 | `Facility == "local6"`<br>`ProcessName in "dhcpd,named"`<br>`ProcessName !in "dhcp,named"` | - | - | - | 1 | **1** |
-| `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "%FW-6-LOG_SUMMARY:"` | - | - | - | 1 | **1** |
-| `SyslogMessage has "Stealthwatch"` | - | - | - | 1 | **1** |
 | `Facility == "local7"`<br>`ProcessName == "GitLab-Access-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "illumio_pce/collector"` | - | - | - | 1 | **1** |
 | `SyslogMessage has_any "AccessRight,Added,AdminGroup,AdminMember,Created Role,DHCPACK,DHCPDISCOVER,DHCPEXPIRE,DHCPINFORM,DHCPOFFER,DHCPRELEASE,Login_Allowed,Login_Denied,Option,Removed,balanced,balancing,bind,delegatedzone,failover,forwardzone,r-l-e"` | - | - | - | 1 | **1** |
@@ -1126,6 +1085,7 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `SyslogMessage startswith "DHCPDISCOVER"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "DHCPEXPIRE"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "DHCPINFORM"` | - | - | - | 1 | **1** |
+| `SyslogMessage has "DHCPOFFER"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "Option"` | - | - | - | 1 | **1** |
 | `SyslogMessage has_any "AccessRight,AdminGroup,AdminMember,Created Role,Login_Allowed,Login_Denied,balanced,balancing,delegatedzone,failover,forwardzone"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "DHCPRELEASE"` | - | - | - | 1 | **1** |
@@ -1134,46 +1094,50 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `SyslogMessage has "r-l-e"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "gss_accept_sec_context"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "zone"` | - | - | - | 1 | **1** |
-| `SyslogMessage has_all "Alert"` | - | - | - | 1 | **1** |
-| `ProcessName == "RT_FLOW"`<br>`ProcessName in "RT_IDS,sshd"`<br>`ProcessName !in "sshd,RT_IDS,RT_FLOW"` | - | - | - | 1 | **1** |
-| `ProcessName == "SyslogAlertForwarderNSP"` | - | - | - | 1 | **1** |
-| `ProcessName == "openvpn"` | - | - | - | 1 | **1** |
 | `SyslogMessage has "predefined_alarm_id"` | - | - | - | 1 | **1** |
-| **Total** | **5** | **335** | **18** | **59** | **417** |
+| **Total** | **29** | **331** | **20** | **59** | **439** |
 
 ### Facility / ProcessName
 
 | Facility | ProcessName | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-|  | `has_any hostd-probe` | - | 26 | - | 1 | **27** |
-|  | `has_any vmkwarning` | - | 26 | - | 1 | **27** |
-|  | `has_any vpxd-main` | - | 26 | - | 1 | **27** |
-|  | `has_any CISE` | - | 21 | 4 | 1 | **26** |
-|  | `has_any CSCO` | - | 21 | 4 | 1 | **26** |
-|  | `contains EPOEvents` | - | 25 | - | 1 | **26** |
-|  | `cisco_wsa` | - | 22 | - | 1 | **23** |
-| `local0` |  | - | 6 | - | 3 | **9** |
+|  | `has_any hostd-probe` | 1 | 26 | - | 1 | **28** |
+|  | `has_any vmkwarning` | 1 | 26 | - | 1 | **28** |
+|  | `has_any vpxd-main` | 1 | 26 | - | 1 | **28** |
+|  | `contains EPOEvents` | 1 | 25 | - | 1 | **27** |
+|  | `has_any CISE` | 1 | 21 | 4 | 1 | **27** |
+|  | `has_any CSCO` | 1 | 21 | 4 | 1 | **27** |
+|  | `cisco_wsa` | 1 | 22 | - | 1 | **24** |
+| `local0` |  | 2 | 6 | - | 3 | **11** |
 |  | `gw-audit` | 1 | 7 | - | - | **8** |
 | `user` |  | - | 8 | - | - | **8** |
-| `local7` | `GitLab-Audit-Logs` | - | 6 | - | 1 | **7** |
-|  | `contains squid` | - | 7 | - | - | **7** |
-|  | `ERAServer` | - | 3 | - | 2 | **5** |
-| `local7` |  | - | 3 | - | 1 | **4** |
-|  | `SymantecServer` | - | 3 | - | 1 | **4** |
-| `local5` |  | - | 3 | - | 1 | **4** |
+| `local7` | `GitLab-Audit-Logs` | 1 | 5 | - | 1 | **7** |
+|  | `ERAServer` | 1 | 3 | - | 2 | **6** |
+|  | `contains squid` | - | 6 | - | - | **6** |
+|  | `SymantecServer` | 1 | 3 | - | 1 | **5** |
+| `local5` |  | 1 | 3 | - | 1 | **5** |
+| `local7` |  | 1 | 3 | - | 1 | **5** |
+|  | `box_Firewall_Activity` | 1 | 1 | - | 2 | **4** |
+| `local7` | `GitLab-Application-Logs` | 1 | 2 | - | 1 | **4** |
+|  | `sshd` | 1 | 1 | 1 | 1 | **4** |
+|  | `contains Exabeam` | 1 | - | - | 2 | **3** |
 | `!= cron` |  | 3 | - | - | - | **3** |
-| `authpriv` |  | - | 3 | - | - | **3** |
-|  | `sshd` | - | 1 | 1 | 1 | **3** |
-|  | `box_Firewall_Activity` | - | 1 | - | 2 | **3** |
-| `local7` | `GitLab-Application-Logs` | - | 1 | - | 1 | **2** |
+|  | `SyslogAlertForwarderNSP` | 1 | - | - | 1 | **2** |
+| `local7` | `GitLab-Access-Logs` | 1 | - | - | 1 | **2** |
+|  | `RT_FLOW` | 1 | - | - | 1 | **2** |
+|  | `RT_IDS` | 1 | - | - | 1 | **2** |
+|  | `!= sshd` | 1 | - | - | 1 | **2** |
+|  | `!= RT_IDS` | 1 | - | - | 1 | **2** |
+|  | `!= RT_FLOW` | 1 | - | - | 1 | **2** |
+|  | `openvpn` | 1 | - | - | 1 | **2** |
+| `authpriv` |  | - | 2 | - | - | **2** |
 |  | `has sftp` | - | 2 | - | - | **2** |
-| `contains auth` | `!= sudo` | - | 2 | - | - | **2** |
-| `auth` |  | - | 2 | - | - | **2** |
-|  | `contains Exabeam` | - | - | - | 2 | **2** |
 |  | `sysmon` | 1 | - | - | - | **1** |
 | `cron` | `CRON` | - | 1 | - | - | **1** |
 | `cron` | `CROND` | - | 1 | - | - | **1** |
 | `cron` | `crontab` | - | 1 | - | - | **1** |
+| `auth` |  | - | 1 | - | - | **1** |
+|  | `DNAC` | - | - | 1 | - | **1** |
 |  | `has CISE_Administrative_and_Operational_Audit` | - | - | 1 | - | **1** |
 |  | `su` | - | - | 1 | - | **1** |
 |  | `sudo` | - | - | 1 | - | **1** |
@@ -1191,31 +1155,52 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `local6` | `named` | - | - | - | 1 | **1** |
 | `local6` | `!= dhcp` | - | - | - | 1 | **1** |
 | `local6` | `!= named` | - | - | - | 1 | **1** |
-| `local7` | `GitLab-Access-Logs` | - | - | - | 1 | **1** |
-|  | `RT_FLOW` | - | - | - | 1 | **1** |
-|  | `RT_IDS` | - | - | - | 1 | **1** |
-|  | `!= sshd` | - | - | - | 1 | **1** |
-|  | `!= RT_IDS` | - | - | - | 1 | **1** |
-|  | `!= RT_FLOW` | - | - | - | 1 | **1** |
-|  | `SyslogAlertForwarderNSP` | - | - | - | 1 | **1** |
-|  | `openvpn` | - | - | - | 1 | **1** |
+
+### Computer
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `datasource` | - | 3 | - | 1 | **4** |
+| `CiscoMeraki` | - | - | 1 | - | **1** |
+| `LinuxAuthpriv` | - | - | 1 | - | **1** |
+
+### SeverityLevel
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `info` | - | 1 | - | - | **1** |
 
 ### SyslogMessage
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `has instanceId` | - | 114 | - | 3 | **117** |
-| `contains <EPOevent>` | - | 25 | - | 1 | **26** |
-| `contains <UpdateEvents>` | - | 25 | - | 1 | **26** |
-| `contains Oracle Unified Audit` | - | 22 | - | 2 | **24** |
-| `contains managed_device_id` | - | 21 | - | 1 | **22** |
-| `contains number_of_incidents` | - | 21 | - | 1 | **22** |
+| `contains <EPOevent>` | 1 | 25 | - | 1 | **27** |
+| `contains <UpdateEvents>` | 1 | 25 | - | 1 | **27** |
+| `contains Oracle Unified Audit` | 1 | 22 | - | 2 | **25** |
+| `contains managed_device_id` | 1 | 21 | - | 1 | **23** |
+| `contains number_of_incidents` | 1 | 21 | - | 1 | **23** |
 | `has AUOMS_EXECVE` | - | 10 | - | - | **10** |
 | `has illumio_pce/agent` | - | 8 | - | 1 | **9** |
+| `!has response:` | 2 | 2 | 1 | 2 | **7** |
+| `has_all client` | 2 | 2 | 1 | 2 | **7** |
 | `has purity.alert` | - | 3 | - | 2 | **5** |
-| `!has response:` | - | 1 | 1 | 2 | **4** |
-| `has_all client` | - | 1 | 1 | 2 | **4** |
 | `has_all <Provider Name=` | - | - | 4 | - | **4** |
+| `contains AuditLog` | 1 | - | - | 2 | **3** |
+| `contains Device,` | 1 | - | - | 2 | **3** |
+| `contains DeviceControl` | 1 | - | - | 2 | **3** |
+| `contains ScriptControl` | 1 | - | - | 2 | **3** |
+| `contains Threat` | 1 | - | - | 2 | **3** |
+| `has_all Alert` | 1 | - | - | 1 | **2** |
+| `contains HTTP` | 1 | - | - | 1 | **2** |
+| `has_any DELETE` | 1 | - | - | 1 | **2** |
+| `has_any GET` | 1 | - | - | 1 | **2** |
+| `has_any PATCH` | 1 | - | - | 1 | **2** |
+| `has_any POST` | 1 | - | - | 1 | **2** |
+| `has_any PUT` | 1 | - | - | 1 | **2** |
+| `contains SYSTEM_MSG` | 1 | - | - | 1 | **2** |
+| `contains %LOG_LOCAL` | 1 | - | - | 1 | **2** |
+| `has Stealthwatch` | 1 | - | - | 1 | **2** |
 | `has bytes read` | - | 2 | - | - | **2** |
 | `has close` | - | 2 | - | - | **2** |
 | `has session opened for` | - | 2 | - | - | **2** |
@@ -1229,17 +1214,11 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `has_any nds` | - | 2 | - | - | **2** |
 | `has_any nis` | - | 2 | - | - | **2** |
 | `has_any rmi` | - | 2 | - | - | **2** |
-| `has DHCPOFFER` | - | 1 | - | 1 | **2** |
 | `has_any change` | - | 2 | - | - | **2** |
 | `has_any config` | - | 2 | - | - | **2** |
 | `has_any modified` | - | 2 | - | - | **2** |
 | `has_any updated` | - | 2 | - | - | **2** |
 | `has predefined_alarm_id` | - | 1 | - | 1 | **2** |
-| `contains AuditLog` | - | - | - | 2 | **2** |
-| `contains Device,` | - | - | - | 2 | **2** |
-| `contains DeviceControl` | - | - | - | 2 | **2** |
-| `contains ScriptControl` | - | - | - | 2 | **2** |
-| `contains Threat` | - | - | - | 2 | **2** |
 | `has_any AccessRight` | - | - | - | 2 | **2** |
 | `has_any AdminGroup` | - | - | - | 2 | **2** |
 | `has_any AdminMember` | - | - | - | 2 | **2** |
@@ -1265,13 +1244,6 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `contains Failed password for invalid user` | - | 1 | - | - | **1** |
 | `contains packet too big` | - | 1 | - | - | **1** |
 | `contains Reverse path forwarding check fail` | - | 1 | - | - | **1** |
-| `has Accepted` | - | 1 | - | - | **1** |
-| `has from` | - | 1 | - | - | **1** |
-| `has_any Accepted` | - | 1 | - | - | **1** |
-| `has_any Disconnected` | - | 1 | - | - | **1** |
-| `has_any Disconnecting` | - | 1 | - | - | **1** |
-| `has_any [preauth]` | - | 1 | - | - | **1** |
-| `has_any disconnect` | - | 1 | - | - | **1** |
 | `contains CMD` | - | 1 | - | - | **1** |
 | `contains ctera_audit` | - | 1 | - | - | **1** |
 | `contains op=delete` | - | 1 | - | - | **1** |
@@ -1299,6 +1271,8 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `has_any file modified` | - | 1 | - | - | **1** |
 | `has_any file tamper` | - | 1 | - | - | **1** |
 | `contains ACTION=VCF` | - | 1 | - | - | **1** |
+| `has LOGIN_USER_EVENT` | - | - | 1 | - | **1** |
+| `has LOGOFF_USER_EVENT` | - | - | 1 | - | **1** |
 | `has %SEC_LOGIN-4-LOGIN_FAILED` | - | - | 1 | - | **1** |
 | `has %SEC_LOGIN-5-LOGIN_SUCCESS` | - | - | 1 | - | **1** |
 | `has %SYS-6-LOGOUT` | - | - | 1 | - | **1** |
@@ -1336,16 +1310,7 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `has icmp` | - | - | 1 | - | **1** |
 | `has igmp` | - | - | 1 | - | **1** |
 | `has_any msg_id=` | - | - | 1 | - | **1** |
-| `contains SYSTEM_MSG` | - | - | - | 1 | **1** |
-| `contains %LOG_LOCAL` | - | - | - | 1 | **1** |
 | `has %FW-6-LOG_SUMMARY:` | - | - | - | 1 | **1** |
-| `has Stealthwatch` | - | - | - | 1 | **1** |
-| `contains HTTP` | - | - | - | 1 | **1** |
-| `has_any DELETE` | - | - | - | 1 | **1** |
-| `has_any GET` | - | - | - | 1 | **1** |
-| `has_any PATCH` | - | - | - | 1 | **1** |
-| `has_any POST` | - | - | - | 1 | **1** |
-| `has_any PUT` | - | - | - | 1 | **1** |
 | `has illumio_pce/collector` | - | - | - | 1 | **1** |
 | `has_any Added` | - | - | - | 1 | **1** |
 | `has_any DHCPACK` | - | - | - | 1 | **1** |
@@ -1366,6 +1331,7 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `startswith DHCPDISCOVER` | - | - | - | 1 | **1** |
 | `has DHCPEXPIRE` | - | - | - | 1 | **1** |
 | `has DHCPINFORM` | - | - | - | 1 | **1** |
+| `has DHCPOFFER` | - | - | - | 1 | **1** |
 | `has Option` | - | - | - | 1 | **1** |
 | `has DHCPRELEASE` | - | - | - | 1 | **1** |
 | `has Removed` | - | - | - | 1 | **1** |
@@ -1373,7 +1339,6 @@ References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other p
 | `has r-l-e` | - | - | - | 1 | **1** |
 | `has gss_accept_sec_context` | - | - | - | 1 | **1** |
 | `has zone` | - | - | - | 1 | **1** |
-| `has_all Alert` | - | - | - | 1 | **1** |
 
 ---
 

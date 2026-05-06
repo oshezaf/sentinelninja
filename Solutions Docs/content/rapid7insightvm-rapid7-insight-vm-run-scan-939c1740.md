@@ -14,6 +14,30 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Playbooks/Playbooks/Rapid7InsightVM-RunScan/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `teams` | Managed | 1 | 0 |
+| `Rapid7InsightVMCloud` | Custom | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`Rapid7InsightVMCloud`** (customApi):
+- *Start_Scan*: method=`post`, path=`/v4/integration/scan`
+- *Search_Assets*: method=`post`, path=`/v4/integration/assets`
+- *Get_Scan_Engines*: method=`get`, path=`/v4/integration/scan/engine`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/Rapid7InsightVM-RunScan/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Playbooks/Playbooks/Rapid7InsightVM-RunScan/readme.md)*

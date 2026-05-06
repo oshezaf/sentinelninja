@@ -14,6 +14,35 @@ This playbook provides the user essential details in comments section of trigger
 | **Solution** | [Entrust identity as Service](../solutions/entrust-identity-as-service.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks/Entrust-EnrichIncidentWithUserDetails/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `keyvault` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 5 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Entrust Secret Key Name'))}/value`
+
+**`http`** (builtin):
+- *HTTP_-_Get_Group_Details*: method=`GET`, uri=`https://@{parameters('Host End Point')}/api/web/v1/groups/@{items('For_each_-_fetching_all_group_details')?['id']}`
+- *HTTP_-_Get_User*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v3/users/userid`
+- *HTTP_-_collecting_source_IP_last_24_hours*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v2/reports/auditeventspaged`
+- *HTTP_-_get_roles_assigned*: method=`GET`, uri=`https://@{parameters('Host End Point')}/api/web/v1/users/@{body('Parse_JSON_-Get_User')?['id']}/roles`
+- *HTTP_-_generate_login_token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v1/adminapi/authenticate`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [EntrustPlaybooks/Entrust-EnrichIncidentWithUserDetails/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Entrust%20identity%20as%20Service/Playbooks/EntrustPlaybooks/Entrust-EnrichIncidentWithUserDetails/readme.md)*

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "FileAccessed,FileUploaded"`<br>`Operation in "MemberAdded,MemberRemoved"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | ✓ | ✗ | ? |
 
 ---
 

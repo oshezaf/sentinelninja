@@ -22,6 +22,29 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CyjaxAdHocEnrichment_CL`](../tables/cyjaxadhocenrichment-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data_To_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+
+**`keyvault`** (managedApi):
+- *Get_Cyjax_API_Key*: method=`get`, path=`/secrets/@{encodeURIComponent('Cyjax-API-Key')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_IOC_Enrichment_Data_From_Cyjax*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/indicator-of-compromise/enrichment`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CyjaxAdHocEnrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Playbooks/CyjaxAdHocEnrichment/readme.md)*

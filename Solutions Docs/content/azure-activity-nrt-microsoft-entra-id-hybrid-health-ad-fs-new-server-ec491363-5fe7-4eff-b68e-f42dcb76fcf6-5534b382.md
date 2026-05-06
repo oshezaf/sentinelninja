@@ -25,9 +25,9 @@ This detection uses AzureActivity logs (Administrative category) to identify the
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "Administrative"`<br>`OperationNameValue == "Microsoft.ADHybridHealthService/services/servicemembers/action"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` | ? | ✗ | ? |
 
 ---
 

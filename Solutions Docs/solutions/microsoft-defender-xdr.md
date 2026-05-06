@@ -51,7 +51,7 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **27 table(s)**:
+This solution uses **28 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -74,6 +74,7 @@ This solution uses **27 table(s)**:
 | [`EmailEvents`](../tables/emailevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
+| [`Event`](../tables/event.md) | - | Hunting |
 | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Hunting, Workbooks |
 | [`IdentityLogonEvents`](../tables/identitylogonevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Analytics, Hunting, Workbooks |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | Workbooks |
@@ -97,11 +98,11 @@ The following **5 table(s)** are used internally by this solution's content item
 
 ## Content Items
 
-This solution includes **374 content item(s)** (371 in solution, 3 discovered 🔍):
+This solution includes **376 content item(s)** (371 in solution, 5 discovered 🔍):
 
 | Content Type | Total | In Solution | Discovered |
 |:-------------|------:|------------:|-----------:|
-| Hunting Queries | 330 | 328 | 2 |
+| Hunting Queries | 332 | 328 | 4 |
 | Analytic Rules | 40 | 40 | - |
 | Workbooks | 3 | 3 | - |
 | Playbooks | 1 | 0 | 1 |
@@ -242,7 +243,9 @@ This solution includes **374 content item(s)** (371 in solution, 3 discovered �
 | [Group quarantine release](../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md) |
 | [High Confidence Phish Released](../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.md) | InitialAccess | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`EmailEvents`](../tables/emailevents.md) |
 | [Hunt for Admin email access](../content/microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.md) | PrivilegeEscalation | [`CloudAppEvents`](../tables/cloudappevents.md) |
+| [Hunt for RMM tool execution following Teams messages](../content/microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.md) ⚠️ | InitialAccess, Execution | [`DeviceProcessEvents`](../tables/deviceprocessevents.md)<br>[`MessageEvents`](../tables/messageevents.md) |
 | [Hunt for TABL changes](../content/microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.md) | DefenseEvasion | [`CloudAppEvents`](../tables/cloudappevents.md) |
+| [Hunt for alerts correlated with Teams messages](../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) ⚠️ | InitialAccess, Discovery | [`CloudAppEvents`](../tables/cloudappevents.md)<br>[`Event`](../tables/event.md)<br>[`MessageEvents`](../tables/messageevents.md)<br>*Internal use:*<br>[`AlertEvidence`](../tables/alertevidence.md) |
 | [Hunt for email bombing attacks](../content/microsoft-defender-xdr-hunt-for-email-bombing-attacks-dd4a480b-aa24-4b62-b1f3-f538d8abbdfb-5261bafb.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Hunt for email conversation take over attempts](../content/microsoft-defender-xdr-hunt-for-email-conversation-take-over-attempts-fb46ca1b-0b46-4d9c-b3b3-2f8f807e9f72-2af16c6e.md) | InitialAccess | [`EmailEvents`](../tables/emailevents.md) |
 | [Hunt for malicious URLs using external IOC source](../content/microsoft-defender-xdr-hunt-for-malicious-urls-using-external-ioc-source-57f95ba7-938d-4a76-b411-c01034c0d167-96846dc9.md) | InitialAccess | [`EmailUrlInfo`](../tables/emailurlinfo.md) |

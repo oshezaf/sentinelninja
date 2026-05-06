@@ -14,6 +14,25 @@ Use this playbook to send Microsoft Sentinel alerts to Salem Virtual Cyber Analy
 | **Solution** | [SalemCyber](../solutions/salemcyber.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber/Playbooks/SendAlertToSalem/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `eventhubs` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+
+**`eventhubs`** (managedApi):
+- *Send_event*: method=`post`, path=`/@{encodeURIComponent('alerts')}/events`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SendAlertToSalem/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SalemCyber/Playbooks/SendAlertToSalem/readme.md)*

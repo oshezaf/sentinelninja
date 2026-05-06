@@ -66,7 +66,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (35)
+## Content Items Using This Table (17)
 
 ### Analytic Rules (1)
 
@@ -87,7 +87,7 @@ This table is used by the following solutions:
 | [M2131_RecommendedDatatableNotLogged_EL2](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el2-76326a24-1223-4066-88a3-3826e3768932-869d983c.md) |  |
 | [M2131_RecommendedDatatableNotLogged_EL3](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el3-8b415f2d-44c1-4edb-8ca6-ddf7d2d28b20-0cceb968.md) |  |
 
-### Workbooks (28)
+### Workbooks (10)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
@@ -117,7 +117,7 @@ This table is used by the following solutions:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) |  |
+| [AzureSentinelCost](../content/soc-handbook-azuresentinelcost-81caaf3b.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,MDCFileIntegrityMonitoringEvents,McasShadowItReporting,ProtectionStatus,SecurityAlert,SecurityBaseline,SecurityBaselineSummary,SecurityDetection,SecurityEvent,SigninLogs,WindowsFirewall"` |
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 | [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md) |  |
 
@@ -139,28 +139,55 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
-**GitHub Only:**
+## Selection Criteria Summary (1 criteria, 1 total references)
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) |  |
-| [ArchivingBasicLogsRetention](../content/github-only-archivingbasiclogsretention-2a012287.md) |  |
-| [AzureSentinelCost](../content/github-only-azuresentinelcost-2ae05990.md) |  |
-| [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [LogSourcesAndAnalyticRulesCoverage](../content/github-only-logsourcesandanalyticrulescoverage-d4c48df0.md) |  |
-| [MITREAttack](../content/github-only-mitreattack-27c36827.md) |  |
-| [MicrosoftSentinelCostEUR](../content/github-only-microsoftsentinelcosteur-f339a745.md) |  |
-| [MicrosoftSentinelCostGBP](../content/github-only-microsoftsentinelcostgbp-451ae793.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
-| [SentinelCosts](../content/github-only-sentinelcosts-07de117e.md) |  |
-| [Sentinel_Central](../content/github-only-sentinel-central-2a36f7ae.md) |  |
-| [VisualizationDemo](../content/github-only-visualizationdemo-12456b23.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,MDCFileIntegrityMonitoringEvents,McasShadowItReporting,ProtectionStatus,SecurityAlert,SecurityBaseline,SecurityBaselineSummary,SecurityDetection,SecurityEvent,SigninLogs,WindowsFirewall"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### DataType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `AADManagedIdentitySignInLogs` | - | 1 | - | - | **1** |
+| `AADNonInteractiveUserSignInLogs` | - | 1 | - | - | **1** |
+| `AADProvisioningLogs` | - | 1 | - | - | **1** |
+| `AADServicePrincipalSignInLogs` | - | 1 | - | - | **1** |
+| `ADFSSignInLogs` | - | 1 | - | - | **1** |
+| `AlertEvidence` | - | 1 | - | - | **1** |
+| `AuditLogs` | - | 1 | - | - | **1** |
+| `CloudAppEvents` | - | 1 | - | - | **1** |
+| `DeviceEvents` | - | 1 | - | - | **1** |
+| `DeviceFileCertificateInfo` | - | 1 | - | - | **1** |
+| `DeviceFileEvents` | - | 1 | - | - | **1** |
+| `DeviceImageLoadEvents` | - | 1 | - | - | **1** |
+| `DeviceInfo` | - | 1 | - | - | **1** |
+| `DeviceLogonEvents` | - | 1 | - | - | **1** |
+| `DeviceNetworkEvents` | - | 1 | - | - | **1** |
+| `DeviceNetworkInfo` | - | 1 | - | - | **1** |
+| `DeviceProcessEvents` | - | 1 | - | - | **1** |
+| `DeviceRegistryEvents` | - | 1 | - | - | **1** |
+| `EmailAttachmentInfo` | - | 1 | - | - | **1** |
+| `EmailEvents` | - | 1 | - | - | **1** |
+| `EmailPostDeliveryEvents` | - | 1 | - | - | **1** |
+| `EmailUrlInfo` | - | 1 | - | - | **1** |
+| `IdentityDirectoryEvents` | - | 1 | - | - | **1** |
+| `IdentityLogonEvents` | - | 1 | - | - | **1** |
+| `IdentityQueryEvents` | - | 1 | - | - | **1** |
+| `InformationProtectionLogs_CL` | - | 1 | - | - | **1** |
+| `MDCFileIntegrityMonitoringEvents` | - | 1 | - | - | **1** |
+| `McasShadowItReporting` | - | 1 | - | - | **1** |
+| `ProtectionStatus` | - | 1 | - | - | **1** |
+| `SecurityAlert` | - | 1 | - | - | **1** |
+| `SecurityBaseline` | - | 1 | - | - | **1** |
+| `SecurityBaselineSummary` | - | 1 | - | - | **1** |
+| `SecurityDetection` | - | 1 | - | - | **1** |
+| `SecurityEvent` | - | 1 | - | - | **1** |
+| `SigninLogs` | - | 1 | - | - | **1** |
+| `WindowsFirewall` | - | 1 | - | - | **1** |
 
 ---
 

@@ -23,10 +23,10 @@ Matches domain name IOCs related to Forest Blizzard group activity with CommonSe
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
 
 ---
 

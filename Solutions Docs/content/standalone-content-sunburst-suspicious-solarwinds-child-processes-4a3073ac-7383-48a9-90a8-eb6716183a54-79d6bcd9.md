@@ -23,9 +23,9 @@ Identifies suspicious child processes of SolarWinds.Orion.Core.BusinessLayer.dll
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "solarwinds.businesslayerhost.exe"` | ✓ | ✗ | ? |
 
 ---
 

@@ -14,6 +14,27 @@ When a new Microsoft Sentinel incident is created for leaked credentials, this p
 | **Solution** | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Response/CPEM_CredentialLeakResponse/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_severity*: method=`put`, path=`/Incidents`
+
+**`http`** (builtin):
+- *Query_Leaked_Credentials*: method=`POST`, uri=`@{parameters('API_Base_URL')}/by_domain/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Response/CPEM_CredentialLeakResponse/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Response/CPEM_CredentialLeakResponse/readme.md)*

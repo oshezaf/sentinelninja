@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AWSCloudTrail &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="awscloudtrail">AWSCloudTrail</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for AWSCloudTrail table in Azure Monitor Logs.</p>
 <table>
@@ -352,7 +352,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (14)</h2>
+<h2 id="solutions">Solutions (13)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/amazon-web-services.html">Amazon Web Services</a></li>
@@ -365,7 +365,6 @@
 <li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
 <li><a href="../solutions/network-threat-protection-essentials.html">Network Threat Protection Essentials</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
@@ -391,8 +390,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (131)</h2>
-<h3 id="analytic-rules">Analytic Rules (76)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (118)</h2>
+<h3 id="analytic-rules">Analytic Rules (73)</h3>
 <p><strong>In solution <a href="../solutions/amazon-web-services.html">Amazon Web Services</a>:</strong></p>
 <table>
 <thead>
@@ -424,7 +423,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-changes-to-amazon-vpc-settings-65360bb0-8986-4ade-a89d-af3cf44d28aa-7eb96dcd.html">Changes to Amazon VPC settings</a></td>
-<td style="text-align: left;"><code>EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"</code></td>
+<td style="text-align: left;"><code>EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"</code><br><code>EventSource != "apigateway.amazonaws.com"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-changes-to-internet-facing-aws-rds-database-instances-8c2ef238-67a0-497d-b1dd-5c8a0f533e25-7db09d92.html">Changes to internet facing AWS RDS Database instances</a></td>
@@ -484,7 +483,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-ec2-startup-shell-script-changed-f8577e4d-8481-437b-a94e-06f615985668-a9f4a4d4.html">EC2 Startup Shell Script Changed</a></td>
-<td style="text-align: left;"><code>EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"</code></td>
+<td style="text-align: left;"><code>EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"</code><br><code>RequestParameters contains "userData"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-ecr-image-scan-findings-high-or-critical-f6928301-56da-4d2c-aabe-e1a552bc8892-f574c629.html">ECR image scan findings high or critical</a></td>
@@ -500,15 +499,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-login-to-aws-management-console-without-mfa-d25b1998-a592-4bc5-8a3a-92b39eedb1bc-bb2d6da4.html">Login to AWS Management Console without MFA</a></td>
-<td style="text-align: left;"><code>EventName == "ConsoleLogin"</code></td>
+<td style="text-align: left;"><code>EventName == "ConsoleLogin"</code><br><code>SessionIssuerUserName !contains "AWSReservedSSO"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-b389d8ba.html">Monitor AWS Credential abuse or hijacking</a></td>
-<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code></td>
+<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code><br><code>UserIdentityType == "AssumedRole"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-nrt-login-to-aws-management-console-without-mfa-0ee2aafb-4500-4e36-bcb1-e90eec2f0b9b-1415b390.html">NRT Login to AWS Management Console without MFA</a></td>
-<td style="text-align: left;"><code>EventName == "ConsoleLogin"</code></td>
+<td style="text-align: left;"><code>EventName == "ConsoleLogin"</code><br><code>SessionIssuerUserName !contains "AWSReservedSSO"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-network-acl-with-all-the-open-ports-to-a-specified-cidr-f8ea7d50-e33b-4b9d-9c3e-a59fcbcee281-147ac220.html">Network ACL with all the open ports to a specified CIDR</a></td>
@@ -580,7 +579,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-s3-object-exfiltration-from-anonymous-user-15d3bf4e-8708-41c8-a836-8b0aa5be730e-38fbb5c4.html">S3 Object Exfiltration from Anonymous User</a></td>
-<td style="text-align: left;"><code>EventName == "GetObject"</code></td>
+<td style="text-align: left;"><code>EventName == "GetObject"</code><br><code>UserIdentityPrincipalid == "Anonymous"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-s3-bucket-access-point-publicly-exposed-b7a44e0d-ae4c-4fb2-be1b-aa0e45f2327b-90b31572.html">S3 bucket access point publicly exposed</a></td>
@@ -620,7 +619,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-suspicious-aws-cli-command-execution-8c2dc344-9352-4ca1-8863-b1b7a5e09e59-994383ab.html">Suspicious AWS CLI Command Execution</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UserAgent startswith "aws-cli"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-suspicious-aws-ec2-compute-resource-deployments-9e457dc4-81f0-4d25-bc37-a5fa4a17946a-9f074032.html">Suspicious AWS EC2 Compute Resource Deployments</a></td>
@@ -628,7 +627,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-32ecf6f6.html">Suspicious command sent to EC2</a></td>
-<td style="text-align: left;"><code>EventName in "CreateAssociation,PutObject,SendCommand"</code></td>
+<td style="text-align: left;"><code>EventName in "CreateAssociation,PutObject,SendCommand"</code><br><code>Resources contains "accountId"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-suspicious-overly-permissive-kms-key-policy-created-60dfc193-0f73-4279-b43c-110ade02b201-aa84cc85.html">Suspicious overly permissive KMS key policy created</a></td>
@@ -640,7 +639,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-d8c84c0d.html">Unauthorized EC2 Instance Setup Attempt</a></td>
-<td style="text-align: left;"><code>EventName == "RunInstances"</code></td>
+<td style="text-align: left;"><code>ErrorCode == "Client.UnauthorizedOperation"</code><br><code>EventName == "RunInstances"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-user-iam-enumeration-cfaaf0bc-16d1-48df-ac8b-9d901bbd516a-530e5578.html">User IAM Enumeration</a></td>
@@ -712,7 +711,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-high-risk-cross-cloud-user-impersonation-f4a28082-2808-4783-9736-33c1ae117475-11195fd6.html">High-Risk Cross-Cloud User Impersonation</a></td>
-<td style="text-align: left;"><code>EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"</code></td>
+<td style="text-align: left;"><code>EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"</code><br><code>EventSource in "iam.amazonaws.com,identitystore.amazonaws.com,workdocs.amazonaws.com,workmail.amazonaws.com"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.html">Successful AWS Console Login from IP Address Observed Conducting Password Spray</a></td>
@@ -773,30 +772,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-aws-console-logons-but-success-logon-to-azuread-910124df-913c-47e3-a7cd-29e1643fa55e-c02ad301.html">Failed AWS Console logons but success logon to AzureAD</a></td>
-<td style="text-align: left;"><code>EventName == "ConsoleLogin"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-azuread-logons-but-success-logon-to-aws-console-643c2025-9604-47c5-833f-7b4b9378a1f5-4ca50ad1.html">Failed AzureAD logons but success logon to AWS Console</a></td>
-<td style="text-align: left;"><code>EventName == "ConsoleLogin"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.html">Malformed user agent</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (38)</h3>
+<h3 id="hunting-queries">Hunting Queries (37)</h3>
 <p><strong>In solution <a href="../solutions/amazon-web-services.html">Amazon Web Services</a>:</strong></p>
 <table>
 <thead>
@@ -836,15 +812,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-excessive-execution-of-discovery-events-c9ccaebf-314c-446d-b3f6-314560ccb0e1-58abf9b4.html">Excessive execution of discovery events</a></td>
-<td style="text-align: left;"><code>EventName startswith "Describe"</code><br><code>EventName startswith "Get"</code><br><code>EventName startswith "List"</code></td>
+<td style="text-align: left;"><code>EventName startswith "Describe"</code><br><code>EventName startswith "Get"</code><br><code>EventName startswith "List"</code><br><code>UserAgent has "aws-cli"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-failed-brute-force-on-s3-bucket-13afb771-5d55-4d69-a745-83d2fc69a923-d8dd59bc.html">Failed brute force on S3 bucket</a></td>
-<td style="text-align: left;"><code>EventName == "GetObject"</code></td>
+<td style="text-align: left;"><code>EventName == "GetObject"</code><br><code>UserIdentityAccountId == "ANONYMOUS_PRINCIPAL"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-iam-accessdenied-discovery-events-7e258a45-b356-44f6-9a62-2643cef7b869-7c065274.html">IAM AccessDenied discovery events</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ErrorMessage in "Access Denied,AccessDenied"</code><br><code>UserAgent !endswith ".amazonaws.com"</code><br><code>UserIdentityType == "IAMUser"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-iam-privilege-escalation-by-instance-profile-attachment-e1a91db8-f2b3-4531-bff6-da133d4f4f1a-8b33d03d.html">IAM Privilege Escalation by Instance Profile attachment</a></td>
@@ -852,11 +828,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-iam-assume-role-policy-brute-force-2b8cecfe-f705-432d-9f38-08207b9473e1-82485ab3.html">IAM assume role policy brute force</a></td>
-<td style="text-align: left;"><code>EventName == "AssumeRole"</code></td>
+<td style="text-align: left;"><code>ErrorMessage == "AccessDenied"</code><br><code>EventName == "AssumeRole"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-lambda-updatefunctioncode-2dd2143b-6667-4a7a-b04f-98d22caeffac-426afada.html">Lambda UpdateFunctionCode</a></td>
-<td style="text-align: left;"><code>EventName startswith "UpdateFunctionCode"</code></td>
+<td style="text-align: left;"><code>EventName startswith "UpdateFunctionCode"</code><br><code>EventSource == "lambda.amazonaws.com"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-lambda-function-throttled-d82ea1db-f600-4c9e-8ba8-d271e9c12eb8-d7a33aaf.html">Lambda function throttled</a></td>
@@ -920,7 +896,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-suspicious-ec2-launched-without-a-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-4a29619e.html">Suspicious EC2 launched without a key pair</a></td>
-<td style="text-align: left;"><code>EventName == "RunInstances"</code></td>
+<td style="text-align: left;"><code>EventName == "RunInstances"</code><br><code>RequestParameters contains "userData"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-kubernetes-worker-node-46685737-676a-4084-8e98-31b2998062db-3753805b.html">Suspicious activity of STS Token related to Kubernetes worker node</a></td>
@@ -967,22 +943,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (17)</h3>
+<h3 id="workbooks">Workbooks (8)</h3>
 <p><strong>In solution <a href="../solutions/amazon-web-services.html">Amazon Web Services</a>:</strong></p>
 <table>
 <thead>
@@ -994,11 +955,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.html">AmazonWebServicesNetworkActivities</a></td>
-<td style="text-align: left;"><code>EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"</code><br><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code></td>
+<td style="text-align: left;"><code>EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"</code><br><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code><br><code>EventSource == "ec2.amazonaws.com"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/amazon-web-services-amazonwebservicesuseractivities-9c51ee6e.html">AmazonWebServicesUserActivities</a></td>
-<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code><br><code>EventName contains "Login"</code><br><code>EventName contains "login"</code><br><code>EventName contains "signin"</code></td>
+<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code><br><code>EventName contains "Login"</code><br><code>EventName contains "login"</code><br><code>EventName contains "signin"</code><br><code>UserIdentityType in "AssumedRole,IAMUser"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1092,53 +1053,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-awss3-8722dc32.html">AWSS3</a></td>
-<td style="text-align: left;"><code>EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,GetCallerIdentity,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"</code><br><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName contains "Login"</code><br><code>EventName contains "login"</code><br><code>EventName contains "signin"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-amazonwebservicesnetworkactivities-3fb3ce58.html">AmazonWebServicesNetworkActivities</a></td>
-<td style="text-align: left;"><code>EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"</code><br><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-amazonwebservicesuseractivities-59b7a9c6.html">AmazonWebServicesUserActivities</a></td>
-<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code><br><code>EventName contains "Login"</code><br><code>EventName contains "login"</code><br><code>EventName contains "signin"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code></td>
-</tr>
-</tbody>
-</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (3)</h2>
 <h3 id="asim-parsers">ASIM Parsers (3)</h3>
 <table>
@@ -1161,18 +1075,18 @@
 <td style="text-align: left;"><a href="../asim/asimfileeventawscloudtrail.html">ASimFileEventAWSCloudTrail</a></td>
 <td style="text-align: left;">FileEvent</td>
 <td style="text-align: left;">AWS Cloud Trail</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>EventSource == "s3.amazonaws.com"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../asim/asimusermanagementawscloudtrail.html">ASimUserManagementAWSCloudTrail</a></td>
 <td style="text-align: left;">UserManagement</td>
 <td style="text-align: left;">AWS Cloud Trail</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>EventSource in "cognito-idp.amazonaws.com,iam.amazonaws.com"</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (57 criteria, 99 total references)</h2>
-<p>References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (67 criteria, 101 total references)</h2>
+<p>References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1204,10 +1118,10 @@
 <tr>
 <td style="text-align: left;"><code>EventName == "ConsoleLogin"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">8</td>
+<td style="text-align: center;">4</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>EventName == "DescribeImageScanFindings"</code></td>
@@ -1219,22 +1133,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventName == "GetObject"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventName == "RunInstances"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
@@ -1258,7 +1156,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName in "CreateKey,PutKeyPolicy"</code></td>
+<td style="text-align: left;"><code>EventName == "ConsoleLogin"</code><br><code>SessionIssuerUserName !contains "AWSReservedSSO"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1266,7 +1164,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName == "AssumeRole"</code></td>
+<td style="text-align: left;"><code>EventName in "CreateKey,PutKeyPolicy"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1290,7 +1188,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"</code></td>
+<td style="text-align: left;"><code>EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"</code><br><code>EventSource != "apigateway.amazonaws.com"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1298,7 +1196,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code></td>
+<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code><br><code>UserIdentityType == "AssumedRole"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1306,7 +1204,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"</code></td>
+<td style="text-align: left;"><code>EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"</code><br><code>RequestParameters contains "userData"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1370,6 +1268,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>EventName == "GetObject"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>EventName == "PutAccessPointPolicy"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -1387,6 +1293,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>EventName == "PutBucketPolicy"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventName == "GetObject"</code><br><code>UserIdentityPrincipalid == "Anonymous"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1434,7 +1348,15 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName in "CreateAssociation,PutObject,SendCommand"</code></td>
+<td style="text-align: left;"><code>EventName in "CreateAssociation,PutObject,SendCommand"</code><br><code>Resources contains "accountId"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ErrorCode == "Client.UnauthorizedOperation"</code><br><code>EventName == "RunInstances"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1450,6 +1372,22 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>UserAgent startswith "aws-cli"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventName == "RunInstances"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateRole,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteLoginProfile,DeleteRole,DeleteUser,RemoveUserFromGroup"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -1458,7 +1396,15 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"</code></td>
+<td style="text-align: left;"><code>EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"</code><br><code>EventSource in "iam.amazonaws.com,identitystore.amazonaws.com,workdocs.amazonaws.com,workmail.amazonaws.com"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ErrorMessage == "AccessDenied"</code><br><code>EventName == "AssumeRole"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1482,7 +1428,31 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName startswith "Describe"</code><br><code>EventName startswith "Get"</code><br><code>EventName startswith "List"</code></td>
+<td style="text-align: left;"><code>EventName == "RunInstances"</code><br><code>RequestParameters contains "userData"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventName startswith "Describe"</code><br><code>EventName startswith "Get"</code><br><code>EventName startswith "List"</code><br><code>UserAgent has "aws-cli"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventName == "GetObject"</code><br><code>UserIdentityAccountId == "ANONYMOUS_PRINCIPAL"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ErrorMessage in "Access Denied,AccessDenied"</code><br><code>UserAgent !endswith ".amazonaws.com"</code><br><code>UserIdentityType == "IAMUser"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1530,7 +1500,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName startswith "UpdateFunctionCode"</code></td>
+<td style="text-align: left;"><code>EventName startswith "UpdateFunctionCode"</code><br><code>EventSource == "lambda.amazonaws.com"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1626,7 +1596,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"</code><br><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code></td>
+<td style="text-align: left;"><code>EventName == "AssumeRole"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1634,10 +1604,34 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code><br><code>EventName contains "Login"</code><br><code>EventName contains "login"</code><br><code>EventName contains "signin"</code></td>
+<td style="text-align: left;"><code>EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"</code><br><code>EventName !contains "Image"</code><br><code>EventName !contains "KeyPair"</code><br><code>EventName !contains "LaunchTemplate"</code><br><code>EventName !contains "Tags"</code><br><code>EventName !contains "Volume"</code><br><code>EventName startswith "authorize"</code><br><code>EventName startswith "create"</code><br><code>EventName startswith "delete"</code><br><code>EventName startswith "replace"</code><br><code>EventName startswith "revoke"</code><br><code>EventSource == "ec2.amazonaws.com"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventName == "GetCallerIdentity"</code><br><code>EventName contains "Login"</code><br><code>EventName contains "login"</code><br><code>EventName contains "signin"</code><br><code>UserIdentityType in "AssumedRole,IAMUser"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventSource == "s3.amazonaws.com"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventSource in "cognito-idp.amazonaws.com,iam.amazonaws.com"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
@@ -1645,9 +1639,63 @@
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>97</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>99</strong></td>
+<td style="text-align: center;"><strong>101</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="errorcode">ErrorCode</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Client.UnauthorizedOperation</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="errormessage">ErrorMessage</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>AccessDenied</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Access Denied</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1731,10 +1779,10 @@
 <tr>
 <td style="text-align: left;"><code>ConsoleLogin</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">8</td>
+<td style="text-align: center;">6</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>CreateAccessKey</code></td>
@@ -2746,9 +2794,281 @@
 </tr>
 </tbody>
 </table>
+<h3 id="eventsource">EventSource</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>iam.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= apigateway.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>identitystore.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>workdocs.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>workmail.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>lambda.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ec2.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>s3.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cognito-idp.amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="requestparameters">RequestParameters</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains userData</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="resources">Resources</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains accountId</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sessionissuerusername">SessionIssuerUserName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!contains AWSReservedSSO</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="useragent">UserAgent</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>startswith aws-cli</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has aws-cli</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!endswith .amazonaws.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="useridentityaccountid">UserIdentityAccountId</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ANONYMOUS_PRINCIPAL</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="useridentityprincipalid">UserIdentityPrincipalid</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Anonymous</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="useridentitytype">UserIdentityType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>AssumedRole</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>IAMUser</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

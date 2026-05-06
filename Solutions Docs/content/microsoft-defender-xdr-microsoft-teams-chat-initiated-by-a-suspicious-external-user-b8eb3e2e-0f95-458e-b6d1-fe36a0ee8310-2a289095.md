@@ -22,9 +22,9 @@ Use AlertInfo and AlertEvidence to collect general information and clickable lin
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AlertInfo`](../tables/alertinfo.md) | `Title == "Microsoft Teams chat initiated by a suspicious external user"` | ✓ | ✗ | ? |
 
 ---
 

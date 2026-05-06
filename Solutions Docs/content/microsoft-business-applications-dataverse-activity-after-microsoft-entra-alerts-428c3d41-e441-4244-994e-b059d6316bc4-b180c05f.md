@@ -22,10 +22,10 @@ This hunting query looks for users conducting Dataverse/Dynamics 365 activity sh
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "IPC"` | ✓ | ✗ | ? |
 
 ---
 

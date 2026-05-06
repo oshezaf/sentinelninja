@@ -193,8 +193,8 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` |
-| [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [Windows DNS Events via AMA](../connectors/asimdnsactivitylogs.md) | `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
@@ -235,7 +235,7 @@ References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventProduct == "DNS Server"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
+| `EventProduct == "DNS Server"`<br>`EventResult == "Failure"`<br>`EventResultDetails == "NXDOMAIN"`<br>`EventType == "Query"`<br>`EventVendor == "Microsoft"` | 1 | - | - | - | **1** |
 | **Total** | **1** | **0** | **0** | **0** | **1** |
 
 ### EventProduct / EventVendor
@@ -243,6 +243,18 @@ References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parse
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `DNS Server` | `Microsoft` | 1 | - | - | - | **1** |
+
+### EventResult
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Failure` | 1 | - | - | - | **1** |
+
+### EventResultDetails
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `NXDOMAIN` | 1 | - | - | - | **1** |
 
 ### EventType
 

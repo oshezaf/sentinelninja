@@ -76,9 +76,11 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Microsoft Purview](../connectors/microsoftazurepurview.md) |  |
+**Selection Criteria:** `Classification has "Social Security Number"`
+
+| Connector |
+|:----------|
+| [Microsoft Purview](../connectors/microsoftazurepurview.md) |
 
 ---
 
@@ -90,8 +92,8 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Sensitive Data Discovered in the Last 24 Hours](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060-60c3db5f.md) |  |
-| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-customized-79f296d9-e6e4-45dc-9ca7-1770955435fa-d7061393.md) |  |
+| [Sensitive Data Discovered in the Last 24 Hours](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-7ae7e8b0-07e9-43cb-b783-b04082f09060-60c3db5f.md) | `Classification != "[]"` |
+| [Sensitive Data Discovered in the Last 24 Hours - Customized](../content/microsoft-purview-sensitive-data-discovered-in-the-last-24-hours-customized-79f296d9-e6e4-45dc-9ca7-1770955435fa-d7061393.md) | `Classification contains "Social Security Number"`<br>`SourceRegion == "westeurope"`<br>`SourceType contains "Amazon"` |
 
 ### Workbooks (3)
 
@@ -107,11 +109,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
 
-**In solution [Microsoft Purview](../solutions/microsoft-purview.md):**
+**In solution [Microsoft Purview](../solutions/microsoft-purview.md):** `ActivityType in "Classification,Labeling"`<br>`Classification != "[]"`<br>`PurviewAccountName in ",{PurviewAccount:label}"`<br>`SensitivityLabel != "[]"`<br>`SourceType in ",{DataSource:label}"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftPurview](../content/microsoft-purview-microsoftpurview-c44ab5ce.md) |  |
+| Workbook |
+|:-------------|
+| [MicrosoftPurview](../content/microsoft-purview-microsoftpurview-c44ab5ce.md) |
 
 ## Resource Types
 
@@ -119,6 +121,58 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/purview`
 - `microsoft.purview/accounts`
+
+## Selection Criteria Summary (4 criteria, 4 total references)
+
+References by type: 1 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Classification has "Social Security Number"` | 1 | - | - | - | **1** |
+| `Classification != "[]"` | - | 1 | - | - | **1** |
+| `Classification contains "Social Security Number"`<br>`SourceRegion == "westeurope"`<br>`SourceType contains "Amazon"` | - | 1 | - | - | **1** |
+| `ActivityType in "Classification,Labeling"`<br>`Classification != "[]"`<br>`PurviewAccountName in ",{PurviewAccount:label}"`<br>`SensitivityLabel != "[]"`<br>`SourceType in ",{DataSource:label}"` | - | 1 | - | - | **1** |
+| **Total** | **1** | **3** | **0** | **0** | **4** |
+
+### ActivityType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Classification` | - | 1 | - | - | **1** |
+| `Labeling` | - | 1 | - | - | **1** |
+
+### Classification
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= []` | - | 2 | - | - | **2** |
+| `has Social Security Number` | 1 | - | - | - | **1** |
+| `contains Social Security Number` | - | 1 | - | - | **1** |
+
+### PurviewAccountName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `{PurviewAccount:label}` | - | 1 | - | - | **1** |
+
+### SensitivityLabel
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= []` | - | 1 | - | - | **1** |
+
+### SourceRegion
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `westeurope` | - | 1 | - | - | **1** |
+
+### SourceType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains Amazon` | - | 1 | - | - | **1** |
+| `{DataSource:label}` | - | 1 | - | - | **1** |
 
 ---
 

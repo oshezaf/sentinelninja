@@ -23,11 +23,11 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) | ? | ✓ | ? |
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ? |
-| [`meraki_CL`](../tables/meraki-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CiscoMerakiNativePoller_CL`](../tables/ciscomerakinativepoller-cl.md) |  | ? | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ? |
+| [`meraki_CL`](../tables/meraki-cl.md) |  | ? | ✓ | ? |
 
 ---
 

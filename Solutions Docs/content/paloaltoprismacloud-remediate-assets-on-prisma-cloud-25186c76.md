@@ -14,6 +14,39 @@ This playbook provides/updates the compliance security posture details of asset 
 | **Solution** | [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Playbooks/PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Remediation/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 0 | 1 |
+| `teams` | Managed | 1 | 3 |
+| `PrismaCloudCSPMCustomConnector` | Custom | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value`
+
+**`teams`** (managedApi):
+- *Update_an_adaptive_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Update_an_adaptive_card_in_a_chat_or_channel_2*: method=`post`, path=`/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Update_an_adaptive_card_in_a_chat_or_channel_3*: method=`post`, path=`/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+
+**`PrismaCloudCSPMCustomConnector`** (customApi):
+- *List_Remediation_command*: method=`post`, path=`/alert/remediation`
+- *List_Alerts*: method=`get`, path=`/alert`
+- *Remediate_Alert*: method=`patch`, path=`/alert/remediation/@{encodeURIComponent(items('For_each_2_-_fetching_response_from_teams_channel_and_taking_action')['Alert id'])}`
+- *Login_Generate_Token*: method=`post`, path=`/login`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Remediation/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Playbooks/PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Remediation/readme.md)*

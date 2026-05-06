@@ -14,6 +14,40 @@ This playbook enables user to close detections associated with a Vectra Entity w
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraCloseDetections/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 3 |
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 3 |
+| `workflow` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_Access_Token_For_Detections_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+- *Get_Access_Token_For_Remediated_Closing_Detections*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+- *Get_Access_Token_For_Closing_Benign_Detections*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections`
+- *HTTP_Request_To_Close_Remediated_Detections*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections/close`
+- *HTTP_Request_To_Close_Benign_Detections*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections/close`
+
+**`workflow`** (builtin):
+- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+- *GenerateAccessTokenVectra_For_Benign*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [VectraCloseDetections/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraCloseDetections/readme.md)*

@@ -22,9 +22,9 @@ Identifies what ports may have been opened for a given Azure Resource over the l
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Accepted"`<br>`OperationNameValue endswith "write"`<br>`OperationNameValue has_any "ipfilterrules"` | ? | ✗ | ? |
 
 ---
 

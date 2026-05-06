@@ -25,9 +25,9 @@ Identifies a match for a Scanner detection user agent based attack in the App Ga
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | `Action in "Blocked,Matched"`<br>`Message contains "Found User-Agent associated with security scanner"` | ✓ | ✗ | ? |
 
 ---
 

@@ -1,4 +1,4 @@
-# Threat intelligence - TAXII Export (Preview)
+# Threat intelligence - TAXII Export
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 

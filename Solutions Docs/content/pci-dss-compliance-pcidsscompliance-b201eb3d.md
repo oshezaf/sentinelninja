@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 |  | ? | ✗ | ? |
 | [`Event`](../tables/event.md) |  | ✓ | ✓ | ? |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ? | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `Activity has "privileged"`<br>`Activity has_any "An account failed to log on"`<br>`SubjectUserName !has "$"` | ✓ | ✓ | ? |
 | [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "Oracle Unified Audit"` | ✓ | ✓ | ? |
 | [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ | ? |
 

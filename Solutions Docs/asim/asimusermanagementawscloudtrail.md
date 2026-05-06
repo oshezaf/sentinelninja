@@ -29,9 +29,9 @@ This ASIM parser supports normalizing user management activity in AWS Cloud Trai
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventSource in "cognito-idp.amazonaws.com,iam.amazonaws.com"` | ✓ | ✓ | ? |
 
 ## Parameters
 

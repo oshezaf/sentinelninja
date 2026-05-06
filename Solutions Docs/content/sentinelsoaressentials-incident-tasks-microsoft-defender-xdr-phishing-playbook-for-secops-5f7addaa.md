@@ -14,6 +14,28 @@ This playbook add Incident Tasks based on Microsoft Defender XDR Phishing Playbo
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `microsoftsentinel` | Managed | 0 | 7 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftsentinel`** (managedApi):
+- *Add_task_to_incident_-_Contain*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Introduction*: method=`post`, path=`/Incidents/CreateTask`
+- *Mark_a_task_as_completed_-_Introduction*: method=`post`, path=`/Incidents/CompleteTask`
+- *Add_task_to_incident_-_Investigate*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Investigate_involved_users*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Prevent*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Remediate*: method=`post`, path=`/Incidents/CreateTask`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_Phishing_Playbook_for_SecOps-Tasks/readme.md)*

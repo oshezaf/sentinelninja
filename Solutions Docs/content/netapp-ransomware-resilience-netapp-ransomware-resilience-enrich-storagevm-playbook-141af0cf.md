@@ -14,6 +14,22 @@ This playbook enriches storage data by calling the updated NetApp Ransomware Res
 | **Solution** | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Enrich_StorageVM_Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Call_Auth_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]`
+- *Get_StorageVM_Data*: method=`GET`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/enrich/storage?agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [NetApp-RansomwareResilience_Enrich_StorageVM_Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Enrich_StorageVM_Playbook/readme.md)*

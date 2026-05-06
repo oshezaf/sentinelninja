@@ -25,6 +25,33 @@ This content item queries data from the following tables:
 | [`GIBTIAHIThreatActor_CL`](../tables/gibtiahithreatactor-cl.md) | ? | ✓ | ? |
 | [`GIBTechTable_CL`](../tables/gibtechtable-cl.md) | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 4 |
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Update_Last_Item_id_in_Tech_table_*: method=`post`, path=`/api/logs`
+- *Init_TechTable*: method=`post`, path=`/api/logs`
+- *Send_Data*: method=`post`, path=`/api/logs`
+- *Save_seqUpdate*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Get_last_received_item_ID_from_Azure_Log_DB*: method=`post`, path=`/queryData`
+
+**`http`** (builtin):
+- *HTTP*: method=`GET`, uri=`@{parameters('GIB API URL ')}sequence_list`
+- *Get_next_portion_of_events_from_GIB*: method=`GET`, uri=`@{parameters('GIB API URL ')}@{parameters('Collection Name')}/updated`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/readme.md)*

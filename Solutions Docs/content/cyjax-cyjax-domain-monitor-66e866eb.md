@@ -22,6 +22,29 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CyjaxDomainMonitor_CL`](../tables/cyjaxdomainmonitor-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Domain_Monitor_Data_To_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+
+**`keyvault`** (managedApi):
+- *Get_Cyjax_API_Key*: method=`get`, path=`/secrets/@{encodeURIComponent('Cyjax-API-Key')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Domain_Monitor_Data*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/domain-monitor/potential-malicious-domain`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CyjaxDomainMonitor/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Playbooks/CyjaxDomainMonitor/readme.md)*

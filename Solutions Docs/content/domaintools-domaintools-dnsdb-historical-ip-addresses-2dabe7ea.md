@@ -14,6 +14,29 @@ This playbook uses the Farsight DNSDB connector to automatically enrich IP Addre
 | **Solution** | [DomainTools](../solutions/domaintools.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `farsightdnsdb` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`farsightdnsdb`** (managedApi):
+- *RRSet_Lookup_with_RRType_AAAA_Records*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('AAAA')}`
+- *RRSet_Lookup_with_RRType_A_Records*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('A')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DomainTools-DNSDB-Historical-Addresses/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Addresses/readme.md)*

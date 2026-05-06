@@ -65,7 +65,7 @@ This connector ingests data into the following tables:
 | [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ | ? |
 | [`IdentityLogonEvents`](../tables/identitylogonevents.md) |  | ✓ | ✗ | ? |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | ✓ | ✗ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
 | [`UrlClickEvents`](../tables/urlclickevents.md) |  | ✓ | ✗ | ? |
 

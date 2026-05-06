@@ -21,9 +21,9 @@ This query checks for attempts to clear at least 10 log entries from event logs 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "CL"`<br>`ProcessCommandLine has "WEVTUTIL"` | ✓ | ✗ | ? |
 
 ---
 

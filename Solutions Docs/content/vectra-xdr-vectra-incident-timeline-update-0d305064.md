@@ -23,6 +23,26 @@ This content item queries data from the following tables:
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ? |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_most_recent_Alerts_to_keep_in_Incident_Timeline*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_alert_to_incident*: method=`post`, path=`/Incidents/Relation/Create`
+- *Remove_alert_from_incident*: method=`post`, path=`/Incidents/Relation/Delete`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [VectraIncidentTimelineUpdate/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraIncidentTimelineUpdate/readme.md)*

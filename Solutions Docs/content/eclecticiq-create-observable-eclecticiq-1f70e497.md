@@ -14,6 +14,34 @@ This playbook adds new observable in EclecticIQ based on the entities info prese
 | **Solution** | [EclecticIQ](../solutions/eclecticiq.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks/EclecticIQ-CreateObservable/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `EclecticIQCustomConnector` | Custom | 1 | 5 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`EclecticIQCustomConnector`** (customApi):
+- *Create_or_Update_Observables_-_Accounts*: method=`put`, path=`/api/v1/observables/`
+- *Create_or_Update_Observables-FileHash*: method=`put`, path=`/api/v1/observables/`
+- *Create_or_Update_Observables-Host*: method=`put`, path=`/api/v1/observables/`
+- *Create_or_Update_Observables-IP*: method=`put`, path=`/api/v1/observables/`
+- *Create_or_Update_Observables-URI*: method=`put`, path=`/api/v1/observables/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [EclecticIQPlaybooks/EclecticIQ-CreateObservable/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks/EclecticIQ-CreateObservable/readme.md)*

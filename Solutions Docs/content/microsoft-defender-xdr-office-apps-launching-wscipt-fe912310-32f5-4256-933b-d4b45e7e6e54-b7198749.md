@@ -21,9 +21,9 @@ The query searches for Office applications launching wscript.exe to run a JSE fi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName in "excel.exe,outlook.exe,winword.exe"`<br>`ProcessCommandLine has ".jse"` | ✓ | ✗ | ? |
 
 ---
 

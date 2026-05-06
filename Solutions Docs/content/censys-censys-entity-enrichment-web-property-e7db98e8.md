@@ -14,6 +14,37 @@ This playbook is triggered automatically when a DNS entity (domain name) is dete
 | **Solution** | [Censys](../solutions/censys.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysEntityEnrichmentWebProperty/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Ingest_Censys_WebProperty_Data*: method=`post`, path=`/api/logs`
+
+**`azuresentinel`** (managedApi):
+- *Get_incident*: method=`post`, path=`/Incidents`
+
+**`keyvault`** (managedApi):
+- *Get_Censys_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Call_to_Fetch_WebProperty_Data*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty`
+
+**`workflow`** (builtin):
+- *CensysIncidentEnrichment*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('IncidentEnrichmentPlaybookName')))]`, triggerName=`When_an_HTTP_request_is_received`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CensysEntityEnrichmentWebProperty/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysEntityEnrichmentWebProperty/readme.md)*

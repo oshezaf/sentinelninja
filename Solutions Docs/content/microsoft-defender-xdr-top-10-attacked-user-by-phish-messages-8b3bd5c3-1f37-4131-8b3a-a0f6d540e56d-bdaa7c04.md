@@ -22,9 +22,9 @@ Top 10 attacked users by Phish messages from external senders using Teams
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`MessageEvents`](../tables/messageevents.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`ThreatTypes has "Phish"` | ? | ✗ | ? |
 
 ---
 

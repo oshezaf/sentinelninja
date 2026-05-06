@@ -22,9 +22,9 @@ This query helps reviewing count of spoof and impersonation detections done per 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DetectionMethods contains "impersonation"`<br>`DetectionMethods contains "spoof"` | ✓ | ✗ | ? |
 
 ---
 

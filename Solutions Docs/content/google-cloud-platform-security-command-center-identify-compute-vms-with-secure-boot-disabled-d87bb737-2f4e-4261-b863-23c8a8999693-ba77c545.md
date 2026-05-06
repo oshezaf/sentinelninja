@@ -22,9 +22,9 @@ Identifies Google Compute Engine VM instances reported by Security Command Cente
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) |  | ✓ | ✓ | ? |
 
 ---
 

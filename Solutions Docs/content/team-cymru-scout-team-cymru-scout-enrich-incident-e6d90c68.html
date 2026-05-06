@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Team Cymru Scout Enrich Incident &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="team-cymru-scout-enrich-incident">Team Cymru Scout Enrich Incident</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will fetch and ingest IP or Domain Indicator data based on Entity mapped in Microsoft Sentinel Incident and notify to pre-defined or user customizable email id.</p>
 <table>
@@ -42,6 +42,84 @@
 </tr>
 </tbody>
 </table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>5</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>azuremonitorlogs</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>outlook</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Top_Fingerprints_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_Open_Ports_Section_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_Top_Pdns_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_Whois_Data_To_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+- *Send_Insights_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_IP_Indicator_To_Live_Investigation_Indicators_Table*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_Query_and_List_Results_for_Top_PDNS*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_Open_Ports*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_Fingerprints*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Whois*: method=`post`, path=`/queryData`
+- *Run_Query_And_List_Insights_Data_And_Country_Code_For_Indicator*: method=`post`, path=`/queryData`
+- *Run_Query_And_Check_Whether_This_is_First_Execution_Or_Not*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_IP_Data_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_Limit_Has_Been_Exceeded_To_100_For_Incident_*: method=`post`, path=`/Incidents/Comment`
+- *Add_Domain_Data_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_Limit_Has_Been_Exceeded_For_Incident*: method=`post`, path=`/Incidents/Comment`
+
+**`outlook`** (managedApi):
+- *Send_An_Email_For_IP*: method=`post`, path=`/v2/Mail`
+- *Send_An_Email_For_Domain*: method=`post`, path=`/v2/Mail`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Details_Of_IP_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{items('For_Each_IP_Address')}/details`
+- *HTTP_Request_To_Fetch_Details_Of_Domain_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/search`
+
+</details>
+
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutEnrichIncident/readme.md">TeamCymruScoutEnrichIncident/readme.md</a></em></p>
@@ -83,7 +161,7 @@
 5. Members: select managed identity for "assigned access to" and add your logic app as a member.
 6. Click on review+assign</p>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/team-cymru-scout.html">Back to Team Cymru Scout</a></p>
 </div>
 

@@ -23,6 +23,27 @@ This content item queries data from the following tables:
 | [`DNS_Summarized_Logs_ip_CL`](../tables/dns-summarized-logs-ip-cl.md) 🔶 | ? | ✓ | ? |
 | [`DNS_Summarized_Logs_sourceInfo_CL`](../tables/dns-summarized-logs-sourceinfo-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
+| `azuremonitorlogs` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data_-_IP*: method=`post`, path=`/api/logs`
+- *Send_Data*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_-_IP*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_SourceInfo*: method=`post`, path=`/queryData`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SummarizeData_DNSEssentials/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DNS%20Essentials/Playbooks/SummarizeData_DNSEssentials/readme.md)*

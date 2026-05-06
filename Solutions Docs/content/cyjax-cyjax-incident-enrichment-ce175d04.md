@@ -14,6 +14,30 @@ This playbook is triggered manually or automatically from a incident in Microsof
 | **Solution** | [Cyjax](../solutions/cyjax.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Playbooks/CyjaxIncidentEnrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Cyjax_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Cyjax-API-Key')}/value`
+
+**`http`** (builtin):
+- *HTTP_Call_to_Fetch_IOCs_Data*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/indicator-of-compromise/enrichment`
+
+**`workflow`** (builtin):
+- *CyjaxAddCommentToIncident*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('AddIncidentCommentPlaybookName')))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CyjaxIncidentEnrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Playbooks/CyjaxIncidentEnrichment/readme.md)*

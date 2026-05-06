@@ -14,6 +14,34 @@ This playbook provides an end-to-end example of how alert enrichment works. This
 | **Solution** | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Playbooks/DataminrPulseAlertEnrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 1 | 3 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_when_matching_alert_data_found*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_when_no_matching_alert_data_found*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('DataMinrPulse-clientId')}/value`
+- *Get_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('DataMinrPulse-clientSecret')}/value`
+- *Get_DmaToken*: method=`get`, path=`/secrets/@{encodeURIComponent('DataMinrPulse-DmaToken')}/value`
+
+**`http`** (builtin):
+- *Get_Alerts_from_Dataminr_Pulse_API*: method=`GET`, uri=`@{concat(variables('BaseUrl'),'api/3/alerts')}`
+- *Generate_auth_token*: method=`POST`, uri=`@{concat(variables('BaseUrl'),'auth/2/token')}`
+- *Update_DmaToken_in_Keyvault*: method=`PUT`, uri=`@{concat('https://',variables('KeyVaultName'),'.',parameters('azure key vault'),'.net/secrets/',body('Get_DmaToken')?['name'],'?api-version=7.2')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DataminrPulseAlertEnrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Playbooks/DataminrPulseAlertEnrichment/readme.md)*

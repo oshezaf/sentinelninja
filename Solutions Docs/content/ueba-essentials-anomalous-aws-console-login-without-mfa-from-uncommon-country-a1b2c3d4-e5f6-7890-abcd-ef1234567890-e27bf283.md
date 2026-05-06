@@ -22,10 +22,10 @@ Detect unusual logon times, MFA fatigue, or service principal misuse across hybr
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
-| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType == "signin.amazonaws.com"`<br>`EventSource contains "aws"` | ✓ | ✗ | ? |
+| [`TacitRed_Findings_CL`](../tables/tacitred-findings-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---
 

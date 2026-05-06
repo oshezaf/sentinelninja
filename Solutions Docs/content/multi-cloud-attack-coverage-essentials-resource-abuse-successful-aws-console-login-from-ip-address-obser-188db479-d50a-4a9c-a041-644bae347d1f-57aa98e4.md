@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ConsoleLogin"` | ✓ | ✓ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName in "Multiple failed user log on attempts to an app,Password Spray"`<br>`ProductName in "Azure Active Directory Identity Protection,Microsoft Cloud App Security"` | ✓ | ✗ | ? |
 
 ---
 

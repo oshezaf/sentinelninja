@@ -14,6 +14,30 @@ This playbook leverages Microsoft Sentinel Watchlists in order to get the releva
 | **Solution** | [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities/Playbooks/Watchlist-InformSubowner-IncidentTrigger/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `office365` | Managed | 1 | 1 |
+| `teams` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_-_Get_Watchlist*: method=`post`, path=`/queryData`
+
+**`office365`** (managedApi):
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+**`teams`** (managedApi):
+- *Post_a_message_as_the_Flow_bot_to_a_user*: method=`post`, path=`/flowbot/actions/notification/recipienttypes/user`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Watchlist-InformSubowner-IncidentTrigger/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchlists%20Utilities/Playbooks/Watchlist-InformSubowner-IncidentTrigger/readme.md)*

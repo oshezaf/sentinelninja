@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ThreatIntelligenceIndicator &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="threatintelligenceindicator">ThreatIntelligenceIndicator</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.</p>
 <table>
@@ -397,7 +397,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (27)</h2>
+<h2 id="solutions">Solutions (26)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a></li>
@@ -411,7 +411,6 @@
 <li><a href="../solutions/infoblox-cloud-data-connector.html">Infoblox Cloud Data Connector</a></li>
 <li><a href="../solutions/joesandbox.html">JoeSandbox</a></li>
 <li><a href="../solutions/lastpass-enterprise-activity-monitoring.html">Lastpass Enterprise Activity Monitoring</a></li>
-<li><a href="../solutions/misp2sentinel.html">MISP2Sentinel</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
 <li><a href="../solutions/microsoft-defender-threat-intelligence.html">Microsoft Defender Threat Intelligence</a></li>
@@ -428,7 +427,7 @@
 <li><a href="../solutions/web-session-essentials.html">Web Session Essentials</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
-<h2 id="connectors">Connectors (14)</h2>
+<h2 id="connectors">Connectors (12)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -440,31 +439,23 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../connectors/cofenseintelligence.html">Cofense Intelligence Threat Indicators Ingestion</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem startswith "Cofense Intelligence :"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/cofensetriage.html">Cofense Triage Threat Indicators Ingestion</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem !startswith "Cofense :"</code><br><code>SourceSystem startswith "Cofense :"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/cognyteluminar.html">Luminar IOCs and Leaked Credentials</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem !contains "Luminar"</code><br><code>SourceSystem contains "Luminar"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/datalake2sentinelconnector.html">Datalake2Sentinel</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem == "Datalake - OrangeCyberdefense"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/joesandbox.html">JoeSandboxThreatIntelligence</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/misp2sentinelconnector.html">MISP2Sentinel</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem !contains "JoeSandbox"</code><br><code>SourceSystem contains "JoeSandbox"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/microsoftdefenderthreatintelligence.html">Microsoft Defender Threat Intelligence</a></td>
@@ -480,7 +471,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/threatintelligence.html">Threat Intelligence Platforms</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ThreatType == "DDoS"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/threatintelligencetaxii.html">Threat intelligence - TAXII</a></td>
@@ -492,12 +483,12 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/vmray.html">VMRayThreatIntelligence</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SourceSystem !contains "VMRay"</code><br><code>SourceSystem contains "VMRay"</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (100)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (92)</h2>
 <h3 id="analytic-rules">Analytic Rules (72)</h3>
 <p><strong>In solution <a href="../solutions/gitlab.html">GitLab</a>:</strong></p>
 <table>
@@ -918,19 +909,17 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (23)</h3>
-<p><strong>In solution <a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a>:</strong></p>
+<h3 id="workbooks">Workbooks (15)</h3>
+<p><strong>In solution <a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a>:</strong> <code>SourceSystem == "Cofense Intelligence"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/cofenseintelligence-cofenseintelligencethreatindicators-d6be930b.html">CofenseIntelligenceThreatIndicators</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -960,21 +949,6 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.html">ForcepointNGFWAdvanced</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>In solution <a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a>:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.html">GreyNoiseOverview</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -1137,45 +1111,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dstimworkbook-062fa645.html">DSTIMWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-forcepointngfwadvanced-901d419d.html">ForcepointNGFWAdvanced</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-phishinganalysis-8b6323cf.html">PhishingAnalysis</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
 <h3 id="other-parsers">Other Parsers (1)</h3>
 <table>
@@ -1194,9 +1129,223 @@
 </tr>
 </tbody>
 </table>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (8 criteria, 8 total references)</h2>
+<p>References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>SourceSystem !contains "JoeSandbox"</code><br><code>SourceSystem contains "JoeSandbox"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem !contains "VMRay"</code><br><code>SourceSystem contains "VMRay"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem !contains "Luminar"</code><br><code>SourceSystem contains "Luminar"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem == "Datalake - OrangeCyberdefense"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ThreatType == "DDoS"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem startswith "Cofense Intelligence :"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem !startswith "Cofense :"</code><br><code>SourceSystem startswith "Cofense :"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SourceSystem == "Cofense Intelligence"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sourcesystem">SourceSystem</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!contains JoeSandbox</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains JoeSandbox</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!contains VMRay</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains VMRay</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!contains Luminar</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Luminar</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Datalake - OrangeCyberdefense</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith Cofense Intelligence :</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!startswith Cofense :</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith Cofense :</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Cofense Intelligence</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="threattype">ThreatType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>DDoS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

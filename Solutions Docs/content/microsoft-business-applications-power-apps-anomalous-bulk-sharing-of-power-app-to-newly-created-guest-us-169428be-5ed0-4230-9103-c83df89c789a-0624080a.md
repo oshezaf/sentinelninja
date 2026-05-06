@@ -22,10 +22,10 @@ The query detects anomalous attempts to perform bulk sharing of Power App to new
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | `EventOriginalType == "PowerAppPermissionEdited"`<br>`SourceSystem == "Azure AD"` | ✓ | ✗ | ? |
 
 ---
 

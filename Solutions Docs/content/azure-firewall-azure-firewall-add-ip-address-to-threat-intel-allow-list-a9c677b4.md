@@ -14,6 +14,35 @@ This playbook allows the SOC to automatically response to Microsoft Sentinel inc
 | **Solution** | [Azure Firewall](../solutions/azure-firewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-AddIPtoTIAllowList/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `teams` | Managed | 1 | 0 |
+| `virustotal` | Managed | 1 | 1 |
+| `AzureFirewallConnector` | Custom | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_with_the_endpoint_information_and_action_taken*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`virustotal`** (managedApi):
+- *Ip_scan_report_V3*: method=`get`, path=`/api/v3/ip_addresses/@{encodeURIComponent(items('Each_malicious_IP_Address_Entity_present_in_the_Incident')?['Address'])}`
+
+**`AzureFirewallConnector`** (customApi):
+- *Creates_or_updates_the_specified_Firewall_Policy*: method=`put`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/firewallPolicies/@{encodeURIComponent(outputs('Firewall_policy_name'))}`
+- *Gets_the_specified_Firewall_Policy*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/firewallPolicies/@{encodeURIComponent(outputs('Firewall_policy_name'))}`
+- *Gets_all_the_Firewall_Policies_in_a_subscription*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/providers/Microsoft.Network/firewallPolicies`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AzureFirewall-AddIPtoTIAllowList/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-AddIPtoTIAllowList/readme.md)*

@@ -20,8 +20,8 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AzureActivity`](../tables/azureactivity.md) |  | ? | ✗ | ? |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceType == "PUBLICIPADDRESSES"` | ? | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
-| [`SecurityBaseline`](../tables/securitybaseline.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` | ✓ | ✗ | ? |
+| [`SecurityBaseline`](../tables/securitybaseline.md) | `AnalyzeResult in "Failed,Passed"` | ✓ | ✗ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | ? |
 | [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |

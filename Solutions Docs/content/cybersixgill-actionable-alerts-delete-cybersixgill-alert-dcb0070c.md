@@ -14,6 +14,29 @@ This playbook will delete Alert on Cybersixgill portal when resective Incident i
 | **Solution** | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 3 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Cybersixgill_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Client ID key name'))}/value`
+- *Get_Cybersixgill_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Client Secret key name'))}/value`
+- *Get_Cybersixgill_Organization_ID*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Organization ID key name'))}/value`
+
+**`http`** (builtin):
+- *Authenticate_Sixgill_API*: method=`POST`, uri=`https://api.cybersixgill.com/auth/token`
+- *Delete_Incident_from_Cybersixgill*: method=`DELETE`, uri=`https://api.cybersixgill.com/alerts/actionable_alert/@{body('Parse_JSON')?['id']}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DeleteCybersixgillAlert/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/readme.md)*

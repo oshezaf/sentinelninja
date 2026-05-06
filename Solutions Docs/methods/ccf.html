@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Codeless Connector Framework CCF &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="codeless-connector-framework">Codeless Connector Framework (CCF)</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Methods Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Methods Index</a></p>
 <hr />
 <p>The Codeless Connector Framework (CCF) enables creating data connectors using a declarative JSON configuration without writing code. CCF connectors can poll REST APIs, process responses, and ingest data into custom log tables. This framework is used for many modern Microsoft Sentinel connectors.</p>
 <h2 id="documentation">Documentation</h2>
@@ -37,11 +37,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;">Total Connectors</td>
-<td style="text-align: right;"><strong>134</strong></td>
+<td style="text-align: right;"><strong>150</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;">Active</td>
-<td style="text-align: right;">128</td>
+<td style="text-align: right;">127</td>
 </tr>
 <tr>
 <td style="text-align: left;">Deprecated 🚫</td>
@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">Unpublished ⚠️</td>
-<td style="text-align: right;">6</td>
+<td style="text-align: right;">23</td>
 </tr>
 </tbody>
 </table>
@@ -70,12 +70,6 @@
 <td style="text-align: left;">Dragos</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="../solutions/dragos.html">Dragos</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/1password-serverless.html">1Password (Serverless)</a></td>
-<td style="text-align: left;">Unknown (ARM variable)</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="../solutions/1password.html">1Password</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/1passwordccpdefinition.html">1Password (Serverless)</a></td>
@@ -684,9 +678,9 @@
 <td style="text-align: left;"><a href="../solutions/quokka.html">Quokka</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/qualyskbconnector.html">Qualys Knowledge Base (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"><a href="../connectors/qualyskbconnector.html">Qualys Knowledge Base (via Codeless Connector Framework)</a> 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="../solutions/qualys-vm-knowledgebase.html">Qualys VM Knowledgebase</a></td>
 </tr>
 <tr>
@@ -716,7 +710,7 @@
 <tr>
 <td style="text-align: left;"><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a></td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="../solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></td>
 </tr>
 <tr>
@@ -858,10 +852,112 @@
 <td style="text-align: left;"><a href="../solutions/zeronetworks.html">ZeroNetworks</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxadvanceddarkwebdefinition.html">ZeroFox Enterprise - Advanced Dark Web</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../connectors/zerofoxalertsdefinition.html">ZeroFox Enterprise - Alerts (Polling CCF)</a> 🔶</td>
 <td style="text-align: left;">ZeroFox Enterprise</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="../solutions/zerofox.html">ZeroFox</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxbotnetdefinition.html">ZeroFox Enterprise - Botnet</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxbotnetccdefinition.html">ZeroFox Enterprise - Botnet Compromised Credentials</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxbreachesdefinition.html">ZeroFox Enterprise - Breaches</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxcompromisedcredentialsdefinition.html">ZeroFox Enterprise - Compromised Credentials</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxcreditcardsdefinition.html">ZeroFox Enterprise - Credit Cards</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxdarkwebdefinition.html">ZeroFox Enterprise - Dark Web</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxdiscorddefinition.html">ZeroFox Enterprise - Discord</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxdisruptiondefinition.html">ZeroFox Enterprise - Disruption</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxemailaddressesdefinition.html">ZeroFox Enterprise - Email Addresses</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxexploitsdefinition.html">ZeroFox Enterprise - Exploits</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxindicatorsdefinition.html">ZeroFox Enterprise - Indicators</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxkeyincidentsdefinition.html">ZeroFox Enterprise - Key Incidents</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxnationalidsdefinition.html">ZeroFox Enterprise - National IDs</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxphysicalthreatsdefinition.html">ZeroFox Enterprise - Physical Threats</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxtelegramdefinition.html">ZeroFox Enterprise - Telegram</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../connectors/zerofoxvulnerabilitiesdefinition.html">ZeroFox Enterprise - Vulnerabilities</a> ⚠️</td>
+<td style="text-align: left;">ZeroFox Enterprise</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="../solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/zoomreportsconnector.html">Zoom Reports Connector (via Codeless Connector Framework)</a></td>
@@ -876,8 +972,8 @@
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Methods Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Methods Index</a></p>
 </div>
 
 </body>

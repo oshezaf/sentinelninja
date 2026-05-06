@@ -87,9 +87,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (4)
 
-### Workbooks (7)
+### Workbooks (4)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -109,19 +109,11 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) |  |
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+**In solution [SOC Handbook](../solutions/soc-handbook.md):** `Classification != "Feature Packs"`<br>`UpdateState != "Installed"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| Workbook |
+|:-------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
 
 ## Resource Types
 
@@ -133,6 +125,27 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.automation/automationaccounts`
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Classification != "Feature Packs"`<br>`UpdateState != "Installed"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### Classification
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= Feature Packs` | - | 1 | - | - | **1** |
+
+### UpdateState
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= Installed` | - | 1 | - | - | **1** |
 
 ---
 

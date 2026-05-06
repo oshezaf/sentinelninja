@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Abnormal Security Push &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="abnormal-security">Abnormal Security (Push)</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AbnormalSecurity/Data%20Connectors/Logo/abnormalsecurity.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
@@ -60,6 +60,10 @@
 <td style="text-align: left;"><strong>Ingestion API</strong></td>
 <td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
 </tr>
+<tr>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+</tr>
 </tbody>
 </table>
 <p>The <a href="https://abnormalsecurity.com">Abnormal Security</a> connector pushes real-time security events (threats, cases, audit logs, abuse mailbox reports, posture changes, ATO cases, remediations, and vendor cases) from Abnormal's cloud email security platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. Events are routed to per-event-type tables matching the legacy connector naming convention, enabling seamless migration.</p>
@@ -76,49 +80,49 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-abuse-mailbox-cl.html"><code>ABNORMAL_SECURITY_ABUSE_MAILBOX_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-ato-case-cl.html"><code>ABNORMAL_SECURITY_ATO_CASE_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-ato-case-cl.html"><code>ABNORMAL_SECURITY_ATO_CASE_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-audit-log-cl.html"><code>ABNORMAL_SECURITY_AUDIT_LOG_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-audit-log-cl.html"><code>ABNORMAL_SECURITY_AUDIT_LOG_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-case-cl.html"><code>ABNORMAL_SECURITY_CASE_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-case-cl.html"><code>ABNORMAL_SECURITY_CASE_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-posture-change-cl.html"><code>ABNORMAL_SECURITY_POSTURE_CHANGE_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-posture-change-cl.html"><code>ABNORMAL_SECURITY_POSTURE_CHANGE_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-remediation-cl.html"><code>ABNORMAL_SECURITY_REMEDIATION_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-remediation-cl.html"><code>ABNORMAL_SECURITY_REMEDIATION_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-threat-log-cl.html"><code>ABNORMAL_SECURITY_THREAT_LOG_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -188,8 +192,8 @@ Wait 5-10 minutes after enabling the integration, then run this KQL query:</p>
 <p>union ABNORMAL_SECURITY_THREAT_LOG_CL, ABNORMAL_SECURITY_CASE_CL, ABNORMAL_SECURITY_AUDIT_LOG_CL, ABNORMAL_SECURITY_ABUSE_MAILBOX_CL, ABNORMAL_SECURITY_POSTURE_CHANGE_CL, ABNORMAL_SECURITY_ATO_CASE_CL, ABNORMAL_SECURITY_REMEDIATION_CL, ABNORMAL_SECURITY_VENDOR_CASE_CL, AbnormalSecurityLogs_CL | where TimeGenerated &gt; ago(1h) | extend event_type = tostring(abx_metadata.event_type) | summarize count() by event_type | order by count_ desc</p>
 <p>If no data appears after 15 minutes, verify credentials in the Abnormal Security Portal and check Azure Monitor for ingestion errors.</p>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 </div>
 
 </body>

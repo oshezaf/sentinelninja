@@ -54,7 +54,7 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Subscription-based Microsoft Defender for Cloud (Legacy)](../connectors/azuresecuritycenter.md) | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) ➕ | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Microsoft | 3 | [Threat Intelligence](../solutions/threat-intelligence.md) |
-| [Threat intelligence - TAXII Export (Preview)](../connectors/threatintelligencetaxiiexport.md) | Microsoft | 1 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
+| [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md) | Microsoft | 1 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Microsoft | 4 | [Threat Intelligence](../solutions/threat-intelligence.md) |
 
 ---

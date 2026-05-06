@@ -14,6 +14,35 @@ Submits a attachment or set of attachment associated with an office 365 email to
 | **Solution** | [JoeSandbox](../solutions/joesandbox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-File-Outlook-Attachment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `office365` | Managed | 1 | 2 |
+| `function` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Create_incident*: method=`put`, path=`[concat('/Incidents/subscriptions/',variables('subscription'),'/resourceGroups/',variables('resourceGroupName'),'/workspaces/',parameters('WorkspaceName'))]`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Threat_Intelligence_-_Upload_Indicators_of_Compromise_(V2)_(Preview)*: method=`post`, path=`/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/`
+
+**`office365`** (managedApi):
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+- *Send_an_email_(V2)_for_clean_analysis*: method=`post`, path=`/v2/Mail`
+
+**`function`** (builtin):
+- *GetJoeSanboxFiles*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxSubmitFile')]`
+- *GetJoeSanboxIOCs*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetIOCs')]`
+- *GetJoeSanbdoxAnalysis*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetAnalysisInfo')]`
+- *GetJoeSanboxSubmissions*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetSubmissionInfo')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [JoeSandbox-Submit-File-Outlook-Attachment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-File-Outlook-Attachment/readme.md)*

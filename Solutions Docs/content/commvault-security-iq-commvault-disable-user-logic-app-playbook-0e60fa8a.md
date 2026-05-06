@@ -14,6 +14,28 @@ This Logic App executes when called upon by an Automation Rule. Accessing the Ke
 | **Solution** | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/Playbooks/Commvault_Disable_User_Logic_App/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureautomation` | Managed | 1 | 2 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureautomation`** (managedApi):
+- *Disable_User_Job*: method=`put`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs`
+- *Disable_User_Job_Output*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs/@{encodeURIComponent(body('Disable_User_Job')?['properties']?['jobId'])}/output`
+
+**`keyvault`** (managedApi):
+- *Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('access-token')}/value`
+- *Environment_Endpoint_URL*: method=`get`, path=`/secrets/@{encodeURIComponent('environment-endpoint-url')}/value`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Commvault_Disable_User_Logic_App/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Commvault%20Security%20IQ/Playbooks/Commvault_Disable_User_Logic_App/readme.md)*

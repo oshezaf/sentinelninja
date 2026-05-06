@@ -25,9 +25,9 @@ This detection looks at process executions - in some cases with specific command
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `FolderPath startswith "C:\\Program Files (x86)\\Microsoft Visual Studio"`<br>`InitiatingProcessFileName in "WDExpress.exe,devenv.exe"`<br>`InitiatingProcessFolderPath startswith "C:\\Program Files (x86)\\Microsoft Visual Studio"`<br>`ProcessCommandLine has_any "/exe"`<br>`ProcessCommandLine has_any "out"` | ✓ | ✗ | ? |
 
 ---
 

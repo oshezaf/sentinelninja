@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Isolate-AzVM &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="isolate-azvm">Isolate-AzVM</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" width="75px" height="75px"> <strong>Note:</strong> Please refer to the following before installing the playbook: • Review the <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Isolate-AzVM/readme.md">README</a> • This playbook is intended to be run from a Microsoft Sentinel incident that has one or more Host entity mappings. The playbook will immediately execute against all Host entities in the associa</p>
 <table>
@@ -42,8 +42,59 @@
 </tr>
 </tbody>
 </table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>2</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">14</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Update_IR_-_success*: method=`post`, path=`/Incidents/Comment`
+- *Update_IR_-_fail*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *HTTP_-_Get_Subs*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}/subscriptions`
+- *HTTP_-_Query_ARG*: method=`POST`, uri=`@{parameters('ResourceMgrURL')}/providers/Microsoft.ResourceGraph/resources`
+- *HTTP_-_Get_VM*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}@{variables('vmid')}`
+- *HTTP_-_Get_NIC*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}`
+- *HTTP_-_Create_NSG*: method=`PUT`, uri=`@{parameters('ResourceMgrURL')}/subscriptions/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -7)]}/resourceGroups/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -5)]}/providers/Microsoft.Network/networkSecurityGroups/@{variables('NSG')}`
+- *HTTP_-_Get_NSG*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}/subscriptions/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -7)]}/resourceGroups/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -5)]}/providers/Microsoft.Network/networkSecurityGroups/@{variables('NSG')}`
+- *HTTP_-_Assign_NSG*: method=`PUT`, uri=`@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}`
+- *HTTP_-_Test_NIC_NSG*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}`
+- *HTTP_-_Test_NIC_State*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}`
+- *HTTP_-_Shutdown_VM*: method=`POST`, uri=`@{parameters('ResourceMgrURL')}@{variables('vmid')}/deallocate`
+- *HTTP_-_Snap_DataDisk*: method=`PUT`, uri=`@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_LUN@{variables('LUN')}_@{variables('DTG')}`
+- *HTTP_-_Test_Data_Snap*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_LUN@{variables('LUN')}_@{variables('DTG')}`
+- *HTTP_-_Test_OS_Snap*: method=`GET`, uri=`@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_DiskOS_@{variables('DTG')}`
+- *HTTP_-_Snapshot_OS*: method=`PUT`, uri=`@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_DiskOS_@{variables('DTG')}`
+
+</details>
+
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
 </div>
 

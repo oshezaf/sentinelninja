@@ -25,9 +25,9 @@ This query searches for injected processes launching discovery activity. Qakbot 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine endswith "127.0.0.1"`<br>`InitiatingProcessCommandLine has "-a"`<br>`InitiatingProcessCommandLine has "-nao"`<br>`InitiatingProcessCommandLine has "-t"`<br>`InitiatingProcessCommandLine has "/all"`<br>`InitiatingProcessFileName in "explorer.exe,mobsync.exe"` | ✓ | ✗ | ? |
 
 ---
 

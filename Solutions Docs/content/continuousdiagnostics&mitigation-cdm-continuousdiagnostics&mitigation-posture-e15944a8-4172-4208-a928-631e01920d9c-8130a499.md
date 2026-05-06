@@ -23,9 +23,9 @@ This hunting query is designed to monitor Azure policies aligned with the Contin
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityRecommendation`](../tables/securityrecommendation.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) | `RecommendationState in "Healthy,NotApplicable,Removed,Unhealthy"` | ✓ | ✗ | ? |
 
 ---
 

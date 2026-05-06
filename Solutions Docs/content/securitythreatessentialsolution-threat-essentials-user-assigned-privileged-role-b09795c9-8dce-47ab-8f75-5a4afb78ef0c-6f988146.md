@@ -25,9 +25,9 @@ Identifies when a new privileged role is assigned to a user.  Any account eligib
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `AADOperationType in "Assign,AssignEligibleRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` | ✓ | ✗ | ? |
 
 ---
 

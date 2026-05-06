@@ -22,9 +22,9 @@ This query helps reviewing mail that is likely a reply but there is no history o
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryLocation != "Quarantine"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`UserLevelAction != "Block"` | ✓ | ✗ | ? |
 
 ---
 

@@ -8,6 +8,7 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
 | **Ingestion API Supported** | ✓ Yes |
 
 ## Contents
@@ -16,16 +17,28 @@
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (4 columns)
+## Schema (16 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity%5CData%20Connectors%5CAbnormalSecurity_CCF/AbnormalSecurity_table_AtoCase.json)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
-| abx_body | dynamic | Account takeover case event payload |
-| abx_metadata | dynamic | Event metadata including event_type, tenant_id, and timestamp |
+| abx_body | string | Account takeover case event payload |
+| abx_body_abx_body_ato_case_id_s | string | Unique ATO case identifier |
+| abx_body_abx_body_compromised_account_s | string | Email address of the compromised account |
+| abx_body_abx_body_first_detected_t | datetime | Timestamp when ATO was first detected |
+| abx_body_abx_body_indicators_s | string | Attack indicators (JSON array) |
+| abx_body_abx_body_severity_s | string | Severity of the ATO case |
+| abx_body_abx_body_status_s | string | Current status of the ATO case |
+| abx_body_abx_metadata_event_type_s | string | From abx_body.abx_metadata |
+| abx_body_abx_metadata_timestamp_s | string | From abx_body.abx_metadata |
+| abx_body_abx_metadata_trace_id_g | string | From abx_body.abx_metadata |
+| abx_metadata | string | Full event metadata object containing event_type, timestamp, and trace_id |
+| abx_metadata_event_type_s | string | Event type identifier from top-level abx_metadata |
+| abx_metadata_timestamp_s | string | Event timestamp from top-level abx_metadata |
+| abx_metadata_trace_id_g | string | Trace ID (GUID) from top-level abx_metadata |
 | Time | string | Event timestamp in RFC3339 format |
-| TimeGenerated | datetime | Timestamp when the event was ingested into Microsoft Sentinel |
+| TimeGenerated | string | Timestamp when the event was ingested into Microsoft Sentinel |
 
 ## Solutions (1)
 

@@ -14,6 +14,27 @@ This playbooks will be used to submit URL to CheckPhish and gets the repution of
 | **Solution** | [CheckPhish by Bolster](../solutions/checkphish-by-bolster.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `CheckPhishbyBolsterCustomConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`CheckPhishbyBolsterCustomConnector`** (customApi):
+- *Submit_URL*: method=`post`, path=`/api/neo/scan`
+- *Get_Scan_Result*: method=`post`, path=`/api/neo/scan/status`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/readme.md)*

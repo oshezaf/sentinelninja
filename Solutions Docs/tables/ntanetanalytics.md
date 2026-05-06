@@ -130,11 +130,32 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 
 ## Parsers Using This Table (1)
 
-### ASIM Parsers (1)
+### ASIM Parsers (1) — Selection Criteria: `CompletedFlows != "0"`<br>`SubType == "FlowLog"`
 
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimNetworkSessionNTANetAnalytics](../asim/asimnetworksessionntanetanalytics.md) | NetworkSession | Azure NTANetAnalytics |  |
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimNetworkSessionNTANetAnalytics](../asim/asimnetworksessionntanetanalytics.md) | NetworkSession | Azure NTANetAnalytics |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `CompletedFlows != "0"`<br>`SubType == "FlowLog"` | - | - | 1 | - | **1** |
+| **Total** | **0** | **0** | **1** | **0** | **1** |
+
+### CompletedFlows
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 0` | - | - | 1 | - | **1** |
+
+### SubType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `FlowLog` | - | - | 1 | - | **1** |
 
 ---
 

@@ -14,6 +14,42 @@ This playbook will create an incident for suspicious or malicious ip and notify 
 | **Solution** | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutCreateIncidentAndNotify/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 7 |
+| `azuresentinel` | Managed | 1 | 8 |
+| `outlook` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_Query_And_List_Insights_Data_And_Country_Code_For_Indicator*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Insights*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_PDNS*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_Certs*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_Open_Ports*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_Fingerprints*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Whois*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_Insights_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Open_Ports_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_PDNS_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Create_Incident_For_IP*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/', trim(parameters('WorkspaceName')))]`
+- *Add_Certs_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Fingerprints_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Whois_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Scout_link_And_General_Information_To_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+
+**`outlook`** (managedApi):
+- *Send_An_Email_(V2)*: method=`post`, path=`/v2/Mail`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [TeamCymruScoutCreateIncidentAndNotify/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutCreateIncidentAndNotify/readme.md)*

@@ -14,6 +14,34 @@ This playbook interacts with Rubrik Security Cloud to scan backups for specified
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikIOCScan/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault_1` | Managed | 0 | 2 |
+| `RubrikCustomConnector` | Custom | 1 | 1 |
+| `http` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault_1`** (managedApi):
+- *ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
+- *ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`RubrikCustomConnector`** (customApi):
+- *Authentication*: method=`post`, path=`/api/client_token`
+
+**`http`** (builtin):
+- *Get_scan_results*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *rubrik-radar-ioc-scan-results*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Start_IOC_scan*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *rubrik-radar-ioc-scan-status*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikIOCScan/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikIOCScan/readme.md)*

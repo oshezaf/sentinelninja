@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.greynoise.io/contact/general](https://www.greynoise.io/contact/general) |
 | **Categories** | domains |
-| **Version** | 3.1.0 |
+| **Version** | 3.1.1 |
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-05 |
-| **Last Updated** | 2026-03-24 |
+| **Last Updated** | 2026-04-29 |
 | **Solution Folder** | [GreyNoiseThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/greynoiseintelligenceinc1681236078693.microsoft-sentinel-byol-greynoise) · Popularity: ⚪ Very Low (0%) |
 
@@ -47,16 +47,17 @@ This solution uses **4 table(s)**:
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics |
 | [`DnsEvents`](../tables/dnsevents.md) | - | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | Analytics, Workbooks |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 
 ### Internal Tables
 
-The following **2 table(s)** are used internally by this solution's content items:
+The following **3 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | Workbooks |
 
 ## Content Items
 
@@ -81,12 +82,13 @@ This solution includes **6 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [GreyNoiseOverview](../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.md) | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md)<br>*Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md) |
+| [GreyNoiseOverview](../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.md) | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md)<br>[`SecurityIncident`](../tables/securityincident.md)<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.1       | 9-04-2026                     | Fix packaging issues, updated Data Connector status query and workbook templates to reflect the new ThreatIntelIndicators table |
 | 3.1.0       | 12-03-2026                     | Updated to use GreyNoise Python SDK v3.0.3, updated Data Connector instructions, Fixed python module mismatches, bumped Az Functions Runtime |
 | 3.0.3      | 17-07-2025                     | Updated to use GreyNoise Python SDK v3.0.1, use new Threat Intel API, updated requirements.txt, updated Data Connector instructions |
 | 3.0.2       | 30-05-2024                     | Added missing AMA **Data Connector** reference in **Analytic rules**  |

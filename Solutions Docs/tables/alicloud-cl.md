@@ -15,7 +15,6 @@
 - [Schema](#schema)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (28 columns)
@@ -68,16 +67,6 @@ This table is ingested by the following connectors:
 | [AliCloud](../connectors/alicloud.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AliCloudWorkbook](../content/github-only-alicloudworkbook-2adacca8.md) |  |
 
 ## Parsers Using This Table (1)
 

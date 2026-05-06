@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://upwind.io](https://upwind.io) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Upwind - hello@upwind.io |
 | **First Published** | 2026-03-10 |
 | **Solution Folder** | [Upwind](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind) |
@@ -119,6 +119,7 @@ Click the button below to deploy all required Azure resources (DCE, custom table
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                 |
 |-------------|--------------------------------|------------------------------------------------------------------------------------|
+| 3.0.2       | 28-04-2026                     | Fixed Function App deployment: restructured zip package to flat layout and removed separate App Service Plan for correct code deployment. |
 | 3.0.1       | 12-04-2026                     | Updated **SolutionMetadata** publisherId to align the solution package metadata with publisher validation requirements. |
 | 3.0.0       | 10-03-2026                     | Initial solution release.                                                          |
 

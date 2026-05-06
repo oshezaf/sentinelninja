@@ -46,21 +46,28 @@ This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CriblAccess_CL`](../tables/criblaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
-| [`CriblAudit_CL`](../tables/criblaudit-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
-| [`CriblInternal_CL`](../tables/criblinternal-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
-| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | - |
+| [`CriblAccess_CL`](../tables/criblaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | Workbooks |
+| [`CriblAudit_CL`](../tables/criblaudit-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | Workbooks |
+| [`CriblInternal_CL`](../tables/criblinternal-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | Workbooks |
+| [`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) 🔶 | [Cribl](../connectors/cribl.md) | Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 
-This solution includes **4 content item(s)**:
+This solution includes **5 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Parsers | 4 |
+| Workbooks | 1 |
+
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [CriblWorkbook](../content/cribl-criblworkbook-903a9c58.md) | [`CriblAccess_CL`](../tables/criblaccess-cl.md)<br>[`CriblAudit_CL`](../tables/criblaudit-cl.md)<br>[`CriblInternal_CL`](../tables/criblinternal-cl.md)<br>[`CriblUIAccess_CL`](../tables/cribluiaccess-cl.md) |
 
 ### Parsers
 

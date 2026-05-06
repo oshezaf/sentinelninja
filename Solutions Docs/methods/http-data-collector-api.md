@@ -19,8 +19,8 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **142** |
-| Active | 104 |
-| Deprecated 🚫 | 29 |
+| Active | 105 |
+| Deprecated 🚫 | 28 |
 | Unpublished ⚠️ | 9 |
 
 ### By Collection Method
@@ -66,6 +66,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Corelight | 108 | [Corelight](../solutions/corelight.md) |
 | [Cribl](../connectors/cribl.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cribl | 4 | [Cribl](../solutions/cribl.md) |
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | [Azure Function](../methods/azure-function.md) | CrowdStrike | 1 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | [Azure Function](../methods/azure-function.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [CyberArkEPM](../connectors/cyberarkepm.md) 🔶 | [Azure Function](../methods/azure-function.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | [Azure Function](../methods/azure-function.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
@@ -161,7 +162,6 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) | [Azure Function](../methods/azure-function.md) | Box | 2 | [Box](../solutions/box.md) |
 | 🚫 [[DEPRECATED] Cisco Secure Endpoint (AMP)](../connectors/ciscosecureendpoint.md) | [Azure Function](../methods/azure-function.md) | Cisco | 1 | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | 🚫 [[DEPRECATED] Cloudflare](../connectors/cloudflaredataconnector.md) | [Azure Function](../methods/azure-function.md) | Cloudflare | 1 | [Cloudflare](../solutions/cloudflare.md) |
-| 🚫 [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | [Azure Function](../methods/azure-function.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | 🚫 [[DEPRECATED] Google ApigeeX](../connectors/apigeexdataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [Google Apigee](../solutions/google-apigee.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform Cloud Monitoring](../connectors/gcpmonitordataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [Google Cloud Platform Cloud Monitoring](../solutions/google-cloud-platform-cloud-monitoring.md) |
 | 🚫 [[DEPRECATED] Google Cloud Platform DNS](../connectors/gcpdnsdataconnector.md) | [Azure Function](../methods/azure-function.md) | Google | 1 | [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
@@ -176,7 +176,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[Deprecated] Proofpoint On Demand Email Security](../connectors/proofpointpod.md) | [Azure Function](../methods/azure-function.md) | Proofpoint | 6 | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | 🚫 [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) | [Azure Function](../methods/azure-function.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
 | 🚫 [[DEPRECATED] Qualys Vulnerability Management](../connectors/qualysvulnerabilitymanagement.md) | [Azure Function](../methods/azure-function.md) | Qualys | 2 | [QualysVM](../solutions/qualysvm.md) |
-| 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | [Azure Function](../methods/azure-function.md) | Salesforce | 2 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| 🚫 [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | [Azure Function](../methods/azure-function.md) | Salesforce | 3 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | 🚫 [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | [Azure Function](../methods/azure-function.md) | SentinelOne | 6 | [SentinelOne](../solutions/sentinelone.md) |
 | 🚫 [[DEPRECATED] Slack Audit](../connectors/slackauditapi.md) | [Azure Function](../methods/azure-function.md) | Slack | 3 | [SlackAudit](../solutions/slackaudit.md) |
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | [Azure Function](../methods/azure-function.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |

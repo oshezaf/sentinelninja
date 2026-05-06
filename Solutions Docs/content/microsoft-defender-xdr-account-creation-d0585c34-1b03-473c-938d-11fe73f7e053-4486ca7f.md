@@ -20,9 +20,9 @@ This query looks for the creation of user accounts on a machine using the "net u
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "net.exe"`<br>`ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "/domain"` | ✓ | ✗ | ? |
 
 ---
 

@@ -14,6 +14,27 @@ This playbook uses Druva-Ransomware-Response capabilities to stop the spread of 
 | **Solution** | [DruvaDataSecurityCloud](../solutions/druvadatasecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineUsingResourceID/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_secret_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientID')}/value`
+- *Get_secret_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value`
+
+**`http`** (builtin):
+- *Quarantine_Resource_API*: method=`POST`, uri=`@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{triggerBody()?['resourceID']}`
+- *Generate_Bearer_Token*: method=`POST`, uri=`@{parameters('api_host')}/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DruvaQuarantineUsingResourceID/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineUsingResourceID/readme.md)*

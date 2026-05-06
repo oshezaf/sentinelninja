@@ -14,6 +14,25 @@ This playbook will fetch the data from 'Services' API and ingest it into custom 
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Get%20Service%20Name/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data_Into_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Services_Endpoint*: method=`GET`, uri=`@{variables('base_url')}/api/infra/v1/services`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox Get Service Name/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Get%20Service%20Name/readme.md)*

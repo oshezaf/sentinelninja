@@ -60,7 +60,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Threat intelligence - TAXII Export (Preview)](../connectors/threatintelligencetaxiiexport.md) |  |
+| [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md) |  |
 
 ---
 

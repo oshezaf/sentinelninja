@@ -87,7 +87,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | UserIdentityUserName | string | The name of the identity that made the call. |
 | VpcEndpointId | string | Identifies the VPC endpoint in which requests were made from a VPC to another AWS service. |
 
-## Solutions (14)
+## Solutions (13)
 
 This table is used by the following solutions:
 
@@ -101,7 +101,6 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -117,9 +116,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (131)
+## Content Items Using This Table (118)
 
-### Analytic Rules (76)
+### Analytic Rules (73)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -130,7 +129,7 @@ This table is ingested by the following connectors:
 | [Changes made to AWS CloudTrail logs](../content/amazon-web-services-changes-made-to-aws-cloudtrail-logs-610d3850-c26f-4f20-8d86-f10fdf2425f5-0948a9d0.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail"` |
 | [Changes to AWS Elastic Load Balancer security groups](../content/amazon-web-services-changes-to-aws-elastic-load-balancer-security-groups-c7bfadd4-34a6-4fa5-82f8-3691a32261e8-61c6a3f8.md) | `EventName in "ApplySecurityGroupsToLoadBalancer,SetSecurityGroups"` |
 | [Changes to AWS Security Group ingress and egress settings](../content/amazon-web-services-changes-to-aws-security-group-ingress-and-egress-settings-4f19d4e3-ec5f-4abc-9e61-819eb131758c-a08b61de.md) | `EventName in "AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"` |
-| [Changes to Amazon VPC settings](../content/amazon-web-services-changes-to-amazon-vpc-settings-65360bb0-8986-4ade-a89d-af3cf44d28aa-7eb96dcd.md) | `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"` |
+| [Changes to Amazon VPC settings](../content/amazon-web-services-changes-to-amazon-vpc-settings-65360bb0-8986-4ade-a89d-af3cf44d28aa-7eb96dcd.md) | `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"`<br>`EventSource != "apigateway.amazonaws.com"` |
 | [Changes to internet facing AWS RDS Database instances](../content/amazon-web-services-changes-to-internet-facing-aws-rds-database-instances-8c2ef238-67a0-497d-b1dd-5c8a0f533e25-7db09d92.md) | `EventName in "AuthorizeDBSecurityGroupIngress,CreateDBSecurityGroup,DeleteDBSecurityGroup,RevokeDBSecurityGroupIngress"` |
 | [CloudFormation policy created then used for privilege escalation](../content/amazon-web-services-cloudformation-policy-created-then-used-for-privilege-escalation-efdc3cff-f006-426f-97fd-4657862f7b9a-8646101b.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
 | [Created CRUD S3 policy and then privilege escalation](../content/amazon-web-services-created-crud-s3-policy-and-then-privilege-escalation-467cbe7e-e6d4-4f4e-8e44-84dd01932c32-db5bbe56.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
@@ -145,13 +144,13 @@ This table is ingested by the following connectors:
 | [Creation of Lambda policy and then privilege escalation](../content/amazon-web-services-creation-of-lambda-policy-and-then-privilege-escalation-796a45ee-220b-42be-8415-c8c933cf3b6d-7f05d6d4.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
 | [Creation of SSM policy and then privilege escalation](../content/amazon-web-services-creation-of-ssm-policy-and-then-privilege-escalation-aaa2c05e-fdd4-4fa0-9072-6cffe3641b34-11a16b37.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
 | [Creation of new CRUD IAM policy and then privilege escalation.](../content/amazon-web-services-creation-of-new-crud-iam-policy-and-then-privilege-escalation.-8a607285-d95c-473d-8aab-59920de63af6-be8b1cae.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [EC2 Startup Shell Script Changed](../content/amazon-web-services-ec2-startup-shell-script-changed-f8577e4d-8481-437b-a94e-06f615985668-a9f4a4d4.md) | `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"` |
+| [EC2 Startup Shell Script Changed](../content/amazon-web-services-ec2-startup-shell-script-changed-f8577e4d-8481-437b-a94e-06f615985668-a9f4a4d4.md) | `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"`<br>`RequestParameters contains "userData"` |
 | [ECR image scan findings high or critical](../content/amazon-web-services-ecr-image-scan-findings-high-or-critical-f6928301-56da-4d2c-aabe-e1a552bc8892-f574c629.md) | `EventName == "DescribeImageScanFindings"` |
 | [Full Admin policy created and then attached to Roles, Users or Groups](../content/amazon-web-services-full-admin-policy-created-and-then-attached-to-roles,-users-or-groups-826bb2f8-7894-4785-9a6b-a8a855d8366f-be654393.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
 | [GuardDuty detector disabled or suspended](../content/amazon-web-services-guardduty-detector-disabled-or-suspended-9da99021-d318-4711-a78a-6dea76129b3a-3f13ad74.md) | `EventName in "DeleteDetector,UpdateDetector"` |
-| [Login to AWS Management Console without MFA](../content/amazon-web-services-login-to-aws-management-console-without-mfa-d25b1998-a592-4bc5-8a3a-92b39eedb1bc-bb2d6da4.md) | `EventName == "ConsoleLogin"` |
-| [Monitor AWS Credential abuse or hijacking](../content/amazon-web-services-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-b389d8ba.md) | `EventName == "GetCallerIdentity"` |
-| [NRT Login to AWS Management Console without MFA](../content/amazon-web-services-nrt-login-to-aws-management-console-without-mfa-0ee2aafb-4500-4e36-bcb1-e90eec2f0b9b-1415b390.md) | `EventName == "ConsoleLogin"` |
+| [Login to AWS Management Console without MFA](../content/amazon-web-services-login-to-aws-management-console-without-mfa-d25b1998-a592-4bc5-8a3a-92b39eedb1bc-bb2d6da4.md) | `EventName == "ConsoleLogin"`<br>`SessionIssuerUserName !contains "AWSReservedSSO"` |
+| [Monitor AWS Credential abuse or hijacking](../content/amazon-web-services-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-b389d8ba.md) | `EventName == "GetCallerIdentity"`<br>`UserIdentityType == "AssumedRole"` |
+| [NRT Login to AWS Management Console without MFA](../content/amazon-web-services-nrt-login-to-aws-management-console-without-mfa-0ee2aafb-4500-4e36-bcb1-e90eec2f0b9b-1415b390.md) | `EventName == "ConsoleLogin"`<br>`SessionIssuerUserName !contains "AWSReservedSSO"` |
 | [Network ACL with all the open ports to a specified CIDR](../content/amazon-web-services-network-acl-with-all-the-open-ports-to-a-specified-cidr-f8ea7d50-e33b-4b9d-9c3e-a59fcbcee281-147ac220.md) | `EventName in "CreateNetworkAclEntry,ReplaceNetworkAclEntry"` |
 | [Policy version set to default](../content/amazon-web-services-policy-version-set-to-default-874a1762-3fd7-4489-b411-6d4a9e9e8a59-2b04a521.md) | `EventName == "SetDefaultPolicyVersion"` |
 | [Privilege escalation via CRUD DynamoDB policy](../content/amazon-web-services-privilege-escalation-via-crud-dynamodb-policy-b9be2aa6-911d-4131-8658-d2a537ed49f4-58258049.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
@@ -169,7 +168,7 @@ This table is ingested by the following connectors:
 | [Privilege escalation with FullAccess managed policy](../content/amazon-web-services-privilege-escalation-with-fullaccess-managed-policy-afb4191b-a142-4065-a0da-f721ee3d006c-39ed48c2.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
 | [Privilege escalation with admin managed policy](../content/amazon-web-services-privilege-escalation-with-admin-managed-policy-49ce5322-60d7-4b02-ad79-99f650aa5790-d6a3d173.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
 | [RDS instance publicly exposed](../content/amazon-web-services-rds-instance-publicly-exposed-8f1630c2-2e45-4df2-be43-50fba90f601d-2e6eb8ab.md) | `EventName in "CreateDBInstance,ModifyDBInstance"` |
-| [S3 Object Exfiltration from Anonymous User](../content/amazon-web-services-s3-object-exfiltration-from-anonymous-user-15d3bf4e-8708-41c8-a836-8b0aa5be730e-38fbb5c4.md) | `EventName == "GetObject"` |
+| [S3 Object Exfiltration from Anonymous User](../content/amazon-web-services-s3-object-exfiltration-from-anonymous-user-15d3bf4e-8708-41c8-a836-8b0aa5be730e-38fbb5c4.md) | `EventName == "GetObject"`<br>`UserIdentityPrincipalid == "Anonymous"` |
 | [S3 bucket access point publicly exposed](../content/amazon-web-services-s3-bucket-access-point-publicly-exposed-b7a44e0d-ae4c-4fb2-be1b-aa0e45f2327b-90b31572.md) | `EventName == "PutAccessPointPolicy"` |
 | [S3 bucket exposed via ACL](../content/amazon-web-services-s3-bucket-exposed-via-acl-6b9b4ee6-f4c1-4b86-8c8c-beb0bb59ae44-e329f88e.md) | `EventName == "PutBucketAcl"` |
 | [S3 bucket exposed via policy](../content/amazon-web-services-s3-bucket-exposed-via-policy-44a5b65e-b0a9-4591-aabc-388fd92a28c4-701bf828.md) | `EventName == "PutBucketPolicy"` |
@@ -179,12 +178,12 @@ This table is ingested by the following connectors:
 | [SSM document is publicly exposed](../content/amazon-web-services-ssm-document-is-publicly-exposed-75647b58-bcc8-4eb5-9658-46698d3fa153-2110e2eb.md) | `EventName == "ModifyDocumentPermission"` |
 | [Successful API executed from a Tor exit node](../content/amazon-web-services-successful-api-executed-from-a-tor-exit-node-0adab960-5565-4978-ba6d-044553e4acc4-eec69aba.md) |  |
 | [Successful brute force attack on S3 Bucket.](../content/amazon-web-services-successful-brute-force-attack-on-s3-bucket.-31b9e94b-0df6-4a3d-a297-3457b53c5d86-636adc43.md) | `EventName == "GetObject"` |
-| [Suspicious AWS CLI Command Execution](../content/amazon-web-services-suspicious-aws-cli-command-execution-8c2dc344-9352-4ca1-8863-b1b7a5e09e59-994383ab.md) |  |
+| [Suspicious AWS CLI Command Execution](../content/amazon-web-services-suspicious-aws-cli-command-execution-8c2dc344-9352-4ca1-8863-b1b7a5e09e59-994383ab.md) | `UserAgent startswith "aws-cli"` |
 | [Suspicious AWS EC2 Compute Resource Deployments](../content/amazon-web-services-suspicious-aws-ec2-compute-resource-deployments-9e457dc4-81f0-4d25-bc37-a5fa4a17946a-9f074032.md) | `EventName == "RunInstances"` |
-| [Suspicious command sent to EC2](../content/amazon-web-services-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-32ecf6f6.md) | `EventName in "CreateAssociation,PutObject,SendCommand"` |
+| [Suspicious command sent to EC2](../content/amazon-web-services-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-32ecf6f6.md) | `EventName in "CreateAssociation,PutObject,SendCommand"`<br>`Resources contains "accountId"` |
 | [Suspicious overly permissive KMS key policy created](../content/amazon-web-services-suspicious-overly-permissive-kms-key-policy-created-60dfc193-0f73-4279-b43c-110ade02b201-aa84cc85.md) | `EventName in "CreateKey,PutKeyPolicy"` |
 | [Tampering to AWS CloudTrail logs](../content/amazon-web-services-tampering-to-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-4824c69a.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail"` |
-| [Unauthorized EC2 Instance Setup Attempt](../content/amazon-web-services-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-d8c84c0d.md) | `EventName == "RunInstances"` |
+| [Unauthorized EC2 Instance Setup Attempt](../content/amazon-web-services-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-d8c84c0d.md) | `ErrorCode == "Client.UnauthorizedOperation"`<br>`EventName == "RunInstances"` |
 | [User IAM Enumeration](../content/amazon-web-services-user-iam-enumeration-cfaaf0bc-16d1-48df-ac8b-9d901bbd516a-530e5578.md) | `EventName in "ListAccessKeys,ListAttachedRolePolicies,ListAttachedUserPolicies,ListGroupsForUser,ListRoles,ListUsers"` |
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
@@ -211,7 +210,7 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Cross-Cloud Password Spray detection](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-password-spray-detection-1f40ed57-f54b-462f-906a-ac3a89cc90d4-5128b308.md) | `EventName == "ConsoleLogin"` |
-| [High-Risk Cross-Cloud User Impersonation](../content/multi-cloud-attack-coverage-essentials-resource-abuse-high-risk-cross-cloud-user-impersonation-f4a28082-2808-4783-9736-33c1ae117475-11195fd6.md) | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"` |
+| [High-Risk Cross-Cloud User Impersonation](../content/multi-cloud-attack-coverage-essentials-resource-abuse-high-risk-cross-cloud-user-impersonation-f4a28082-2808-4783-9736-33c1ae117475-11195fd6.md) | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"`<br>`EventSource in "iam.amazonaws.com,identitystore.amazonaws.com,workdocs.amazonaws.com,workmail.amazonaws.com"` |
 | [Successful AWS Console Login from IP Address Observed Conducting Password Spray](../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.md) | `EventName == "ConsoleLogin"` |
 | [Suspicious AWS console logins by credential access alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md) | `EventName == "ConsoleLogin"` |
 | [User impersonation by Identity Protection alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.md) | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateRole,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteLoginProfile,DeleteRole,DeleteUser,RemoveUserFromGroup"` |
@@ -234,15 +233,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Failed AWS Console logons but success logon to AzureAD](../content/standalone-content-failed-aws-console-logons-but-success-logon-to-azuread-910124df-913c-47e3-a7cd-29e1643fa55e-c02ad301.md) | `EventName == "ConsoleLogin"` |
-| [Failed AzureAD logons but success logon to AWS Console](../content/standalone-content-failed-azuread-logons-but-success-logon-to-aws-console-643c2025-9604-47c5-833f-7b4b9378a1f5-4ca50ad1.md) | `EventName == "ConsoleLogin"` |
-| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
-
-### Hunting Queries (38)
+### Hunting Queries (37)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -255,12 +246,12 @@ This table is ingested by the following connectors:
 | [CreatePolicyVersion with excessive permissions](../content/amazon-web-services-createpolicyversion-with-excessive-permissions-e73ebd34-4f04-4684-a5f0-dba820127ce8-e4285cf3.md) | `EventName == "CreatePolicyVersion"` |
 | [ECR image scan findings low](../content/amazon-web-services-ecr-image-scan-findings-low-b5b172b1-d976-4113-af1f-02f7bf7d2092-3cd30c1e.md) | `EventName == "DescribeImageScanFindings"` |
 | [ECR image scan findings medium](../content/amazon-web-services-ecr-image-scan-findings-medium-4fbbae0a-ce5b-4b2a-b5e6-700920561680-7e59c4e9.md) | `EventName == "DescribeImageScanFindings"` |
-| [Excessive execution of discovery events](../content/amazon-web-services-excessive-execution-of-discovery-events-c9ccaebf-314c-446d-b3f6-314560ccb0e1-58abf9b4.md) | `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"` |
-| [Failed brute force on S3 bucket](../content/amazon-web-services-failed-brute-force-on-s3-bucket-13afb771-5d55-4d69-a745-83d2fc69a923-d8dd59bc.md) | `EventName == "GetObject"` |
-| [IAM AccessDenied discovery events](../content/amazon-web-services-iam-accessdenied-discovery-events-7e258a45-b356-44f6-9a62-2643cef7b869-7c065274.md) |  |
+| [Excessive execution of discovery events](../content/amazon-web-services-excessive-execution-of-discovery-events-c9ccaebf-314c-446d-b3f6-314560ccb0e1-58abf9b4.md) | `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"`<br>`UserAgent has "aws-cli"` |
+| [Failed brute force on S3 bucket](../content/amazon-web-services-failed-brute-force-on-s3-bucket-13afb771-5d55-4d69-a745-83d2fc69a923-d8dd59bc.md) | `EventName == "GetObject"`<br>`UserIdentityAccountId == "ANONYMOUS_PRINCIPAL"` |
+| [IAM AccessDenied discovery events](../content/amazon-web-services-iam-accessdenied-discovery-events-7e258a45-b356-44f6-9a62-2643cef7b869-7c065274.md) | `ErrorMessage in "Access Denied,AccessDenied"`<br>`UserAgent !endswith ".amazonaws.com"`<br>`UserIdentityType == "IAMUser"` |
 | [IAM Privilege Escalation by Instance Profile attachment](../content/amazon-web-services-iam-privilege-escalation-by-instance-profile-attachment-e1a91db8-f2b3-4531-bff6-da133d4f4f1a-8b33d03d.md) | `EventName in "AddRoleToInstanceProfile,RemoveRoleFromInstanceProfile"` |
-| [IAM assume role policy brute force](../content/amazon-web-services-iam-assume-role-policy-brute-force-2b8cecfe-f705-432d-9f38-08207b9473e1-82485ab3.md) | `EventName == "AssumeRole"` |
-| [Lambda UpdateFunctionCode](../content/amazon-web-services-lambda-updatefunctioncode-2dd2143b-6667-4a7a-b04f-98d22caeffac-426afada.md) | `EventName startswith "UpdateFunctionCode"` |
+| [IAM assume role policy brute force](../content/amazon-web-services-iam-assume-role-policy-brute-force-2b8cecfe-f705-432d-9f38-08207b9473e1-82485ab3.md) | `ErrorMessage == "AccessDenied"`<br>`EventName == "AssumeRole"` |
+| [Lambda UpdateFunctionCode](../content/amazon-web-services-lambda-updatefunctioncode-2dd2143b-6667-4a7a-b04f-98d22caeffac-426afada.md) | `EventName startswith "UpdateFunctionCode"`<br>`EventSource == "lambda.amazonaws.com"` |
 | [Lambda function throttled](../content/amazon-web-services-lambda-function-throttled-d82ea1db-f600-4c9e-8ba8-d271e9c12eb8-d7a33aaf.md) | `EventName startswith "PutFunctionConcurrency"` |
 | [Lambda layer imported from external account](../content/amazon-web-services-lambda-layer-imported-from-external-account-77d0aadc-aaea-4346-b61a-bf7ac6b71bba-133cc638.md) | `EventName startswith "CreateFunction"`<br>`EventName startswith "UpdateFunctionConfiguration"` |
 | [Login profile updated](../content/amazon-web-services-login-profile-updated-838f59d4-fe47-422b-819d-1be502940547-de9db028.md) | `EventName == "UpdateLoginProfile"` |
@@ -276,7 +267,7 @@ This table is ingested by the following connectors:
 | [Risky role name created](../content/amazon-web-services-risky-role-name-created-70c36558-e6d8-48b4-98b3-185d555cd5af-a0e5c4e0.md) | `EventName == "CreateRole"` |
 | [S3 bucket encryption modified](../content/amazon-web-services-s3-bucket-encryption-modified-6eb59239-78c5-401d-acfa-5cb9b3d31cd4-aea42032.md) | `EventName in "DeleteBucketEncryption,PutBucketEncryption"` |
 | [S3 bucket has been deleted](../content/amazon-web-services-s3-bucket-has-been-deleted-356aa5a8-fa6f-4eb9-baa9-ffcf725e3e82-7a253da6.md) | `EventName == "DeleteBucket"` |
-| [Suspicious EC2 launched without a key pair](../content/amazon-web-services-suspicious-ec2-launched-without-a-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-4a29619e.md) | `EventName == "RunInstances"` |
+| [Suspicious EC2 launched without a key pair](../content/amazon-web-services-suspicious-ec2-launched-without-a-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-4a29619e.md) | `EventName == "RunInstances"`<br>`RequestParameters contains "userData"` |
 | [Suspicious activity of STS Token related to Kubernetes worker node](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-kubernetes-worker-node-46685737-676a-4084-8e98-31b2998062db-3753805b.md) |  |
 | [Suspicious activity of STS token related to EC2](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-ec2-82ecf967-d6e9-4757-8f5d-42c562a8f05f-a39130ee.md) |  |
 | [Suspicious activity of STS token related to ECS](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-ecs-67af1633-311f-4a94-bc8f-f904a54637b2-43fff997.md) |  |
@@ -291,20 +282,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md) |  |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
-
-### Workbooks (17)
+### Workbooks (8)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [AmazonWebServicesUserActivities](../content/amazon-web-services-amazonwebservicesuseractivities-9c51ee6e.md) | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"` |
+| [AmazonWebServicesNetworkActivities](../content/amazon-web-services-amazonwebservicesnetworkactivities-3dba3320.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"`<br>`EventSource == "ec2.amazonaws.com"` |
+| [AmazonWebServicesUserActivities](../content/amazon-web-services-amazonwebservicesuseractivities-9c51ee6e.md) | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`UserIdentityType in "AssumedRole,IAMUser"` |
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -342,20 +327,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,GetCallerIdentity,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [AmazonWebServicesNetworkActivities](../content/github-only-amazonwebservicesnetworkactivities-3fb3ce58.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [AmazonWebServicesUserActivities](../content/github-only-amazonwebservicesuseractivities-59b7a9c6.md) | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"` |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
-
 ## Parsers Using This Table (3)
 
 ### ASIM Parsers (3)
@@ -363,31 +334,29 @@ This table is ingested by the following connectors:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAWSCloudTrail](../asim/asimauthenticationawscloudtrail.md) | Authentication | AWS | `EventName == "ConsoleLogin"` |
-| [ASimFileEventAWSCloudTrail](../asim/asimfileeventawscloudtrail.md) | FileEvent | AWS Cloud Trail |  |
-| [ASimUserManagementAWSCloudTrail](../asim/asimusermanagementawscloudtrail.md) | UserManagement | AWS Cloud Trail |  |
+| [ASimFileEventAWSCloudTrail](../asim/asimfileeventawscloudtrail.md) | FileEvent | AWS Cloud Trail | `EventSource == "s3.amazonaws.com"` |
+| [ASimUserManagementAWSCloudTrail](../asim/asimusermanagementawscloudtrail.md) | UserManagement | AWS Cloud Trail | `EventSource in "cognito-idp.amazonaws.com,iam.amazonaws.com"` |
 
-## Selection Criteria Summary (57 criteria, 99 total references)
+## Selection Criteria Summary (67 criteria, 101 total references)
 
-References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | - | 12 | - | - | **12** |
 | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` | - | 11 | - | - | **11** |
-| `EventName == "ConsoleLogin"` | - | 8 | 1 | - | **9** |
+| `EventName == "ConsoleLogin"` | - | 4 | 1 | - | **5** |
 | `EventName == "DescribeImageScanFindings"` | - | 3 | - | - | **3** |
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` | - | 3 | - | - | **3** |
-| `EventName == "GetObject"` | - | 3 | - | - | **3** |
-| `EventName == "RunInstances"` | - | 3 | - | - | **3** |
 | `EventName == "CreateAccessKey"` | - | 3 | - | - | **3** |
 | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail"` | - | 2 | - | - | **2** |
+| `EventName == "ConsoleLogin"`<br>`SessionIssuerUserName !contains "AWSReservedSSO"` | - | 2 | - | - | **2** |
 | `EventName in "CreateKey,PutKeyPolicy"` | - | 2 | - | - | **2** |
-| `EventName == "AssumeRole"` | - | 2 | - | - | **2** |
 | `EventName == "CreateUser"` | 1 | - | - | - | **1** |
 | `EventName in "AuthorizeDBSecurityGroupIngress,CreateDBSecurityGroup,DeleteDBSecurityGroup,RevokeDBSecurityGroupIngress"` | - | 1 | - | - | **1** |
-| `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"` | - | 1 | - | - | **1** |
-| `EventName == "GetCallerIdentity"` | - | 1 | - | - | **1** |
-| `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"` | - | 1 | - | - | **1** |
+| `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"`<br>`EventSource != "apigateway.amazonaws.com"` | - | 1 | - | - | **1** |
+| `EventName == "GetCallerIdentity"`<br>`UserIdentityType == "AssumedRole"` | - | 1 | - | - | **1** |
+| `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"`<br>`RequestParameters contains "userData"` | - | 1 | - | - | **1** |
 | `EventName == "PutImageScanningConfiguration"` | - | 1 | - | - | **1** |
 | `EventName in "DeleteDetector,UpdateDetector"` | - | 1 | - | - | **1** |
 | `EventName in "AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"` | - | 1 | - | - | **1** |
@@ -395,27 +364,36 @@ References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other pars
 | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail"` | - | 1 | - | - | **1** |
 | `EventName in "CreateNetworkAclEntry,ReplaceNetworkAclEntry"` | - | 1 | - | - | **1** |
 | `EventName in "CreateDBInstance,ModifyDBInstance"` | - | 1 | - | - | **1** |
+| `EventName == "GetObject"` | - | 1 | - | - | **1** |
 | `EventName == "PutAccessPointPolicy"` | - | 1 | - | - | **1** |
 | `EventName == "PutBucketAcl"` | - | 1 | - | - | **1** |
 | `EventName == "PutBucketPolicy"` | - | 1 | - | - | **1** |
+| `EventName == "GetObject"`<br>`UserIdentityPrincipalid == "Anonymous"` | - | 1 | - | - | **1** |
 | `EventName == "PutObjectAcl"` | - | 1 | - | - | **1** |
 | `EventName in "GetObject,PutObject"` | - | 1 | - | - | **1** |
 | `EventName == "UpdateSAMLProvider"` | - | 1 | - | - | **1** |
 | `EventName == "SetDefaultPolicyVersion"` | - | 1 | - | - | **1** |
 | `EventName == "ModifyDocumentPermission"` | - | 1 | - | - | **1** |
-| `EventName in "CreateAssociation,PutObject,SendCommand"` | - | 1 | - | - | **1** |
+| `EventName in "CreateAssociation,PutObject,SendCommand"`<br>`Resources contains "accountId"` | - | 1 | - | - | **1** |
+| `ErrorCode == "Client.UnauthorizedOperation"`<br>`EventName == "RunInstances"` | - | 1 | - | - | **1** |
 | `EventName in "ListAccessKeys,ListAttachedRolePolicies,ListAttachedUserPolicies,ListGroupsForUser,ListRoles,ListUsers"` | - | 1 | - | - | **1** |
+| `UserAgent startswith "aws-cli"` | - | 1 | - | - | **1** |
+| `EventName == "RunInstances"` | - | 1 | - | - | **1** |
 | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateRole,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteLoginProfile,DeleteRole,DeleteUser,RemoveUserFromGroup"` | - | 1 | - | - | **1** |
-| `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"` | - | 1 | - | - | **1** |
+| `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"`<br>`EventSource in "iam.amazonaws.com,identitystore.amazonaws.com,workdocs.amazonaws.com,workmail.amazonaws.com"` | - | 1 | - | - | **1** |
+| `ErrorMessage == "AccessDenied"`<br>`EventName == "AssumeRole"` | - | 1 | - | - | **1** |
 | `EventName == "PutBucketVersioning"` | - | 1 | - | - | **1** |
 | `EventName == "CreateLoginProfile"` | - | 1 | - | - | **1** |
-| `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"` | - | 1 | - | - | **1** |
+| `EventName == "RunInstances"`<br>`RequestParameters contains "userData"` | - | 1 | - | - | **1** |
+| `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"`<br>`UserAgent has "aws-cli"` | - | 1 | - | - | **1** |
+| `EventName == "GetObject"`<br>`UserIdentityAccountId == "ANONYMOUS_PRINCIPAL"` | - | 1 | - | - | **1** |
+| `ErrorMessage in "Access Denied,AccessDenied"`<br>`UserAgent !endswith ".amazonaws.com"`<br>`UserIdentityType == "IAMUser"` | - | 1 | - | - | **1** |
 | `EventName in "CreateUser,DeleteGroup,DeleteUser"` | - | 1 | - | - | **1** |
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion,DeleteGroupPolicy,DeletePolicy,DeletePolicyVersion,DeleteRolePolicy,DeleteUserPolicy,DetachGroupPolicy,DetachRolePolicy,PutGroupPolicy,PutUserPolicy"` | - | 1 | - | - | **1** |
 | `EventName in "AddRoleToInstanceProfile,RemoveRoleFromInstanceProfile"` | - | 1 | - | - | **1** |
 | `EventName startswith "PutFunctionConcurrency"` | - | 1 | - | - | **1** |
 | `EventName startswith "CreateFunction"`<br>`EventName startswith "UpdateFunctionConfiguration"` | - | 1 | - | - | **1** |
-| `EventName startswith "UpdateFunctionCode"` | - | 1 | - | - | **1** |
+| `EventName startswith "UpdateFunctionCode"`<br>`EventSource == "lambda.amazonaws.com"` | - | 1 | - | - | **1** |
 | `EventName == "UpdateLoginProfile"` | - | 1 | - | - | **1** |
 | `EventName in "CreateRoute,DeleteRoute,ReplaceRoute"` | - | 1 | - | - | **1** |
 | `EventName == "ModifySubnetAttribute"` | - | 1 | - | - | **1** |
@@ -427,9 +405,25 @@ References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other pars
 | `EventName == "CreateRole"` | - | 1 | - | - | **1** |
 | `EventName == "DeleteBucket"` | - | 1 | - | - | **1** |
 | `EventName in "DeleteBucketEncryption,PutBucketEncryption"` | - | 1 | - | - | **1** |
-| `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` | - | 1 | - | - | **1** |
-| `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"` | - | 1 | - | - | **1** |
-| **Total** | **1** | **97** | **1** | **0** | **99** |
+| `EventName == "AssumeRole"` | - | 1 | - | - | **1** |
+| `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"`<br>`EventSource == "ec2.amazonaws.com"` | - | 1 | - | - | **1** |
+| `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`UserIdentityType in "AssumedRole,IAMUser"` | - | 1 | - | - | **1** |
+| `EventSource == "s3.amazonaws.com"` | - | - | 1 | - | **1** |
+| `EventSource in "cognito-idp.amazonaws.com,iam.amazonaws.com"` | - | - | 1 | - | **1** |
+| **Total** | **1** | **97** | **3** | **0** | **101** |
+
+### ErrorCode
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Client.UnauthorizedOperation` | - | 1 | - | - | **1** |
+
+### ErrorMessage
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `AccessDenied` | - | 2 | - | - | **2** |
+| `Access Denied` | - | 1 | - | - | **1** |
 
 ### EventName
 
@@ -443,7 +437,7 @@ References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other pars
 | `PutGroupPolicy` | - | 12 | - | - | **12** |
 | `PutUserPolicy` | - | 12 | - | - | **12** |
 | `PutRolePolicy` | - | 11 | - | - | **11** |
-| `ConsoleLogin` | - | 8 | 1 | - | **9** |
+| `ConsoleLogin` | - | 6 | 1 | - | **7** |
 | `CreateAccessKey` | - | 5 | - | - | **5** |
 | `CreateUser` | 1 | 3 | - | - | **4** |
 | `GetObject` | - | 4 | - | - | **4** |
@@ -570,6 +564,65 @@ References by type: 1 connectors, 97 content items, 1 ASIM parsers, 0 other pars
 | `contains Login` | - | 1 | - | - | **1** |
 | `contains login` | - | 1 | - | - | **1** |
 | `contains signin` | - | 1 | - | - | **1** |
+
+### EventSource
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `iam.amazonaws.com` | - | 1 | 1 | - | **2** |
+| `!= apigateway.amazonaws.com` | - | 1 | - | - | **1** |
+| `identitystore.amazonaws.com` | - | 1 | - | - | **1** |
+| `workdocs.amazonaws.com` | - | 1 | - | - | **1** |
+| `workmail.amazonaws.com` | - | 1 | - | - | **1** |
+| `lambda.amazonaws.com` | - | 1 | - | - | **1** |
+| `ec2.amazonaws.com` | - | 1 | - | - | **1** |
+| `s3.amazonaws.com` | - | - | 1 | - | **1** |
+| `cognito-idp.amazonaws.com` | - | - | 1 | - | **1** |
+
+### RequestParameters
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains userData` | - | 2 | - | - | **2** |
+
+### Resources
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains accountId` | - | 1 | - | - | **1** |
+
+### SessionIssuerUserName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!contains AWSReservedSSO` | - | 2 | - | - | **2** |
+
+### UserAgent
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `startswith aws-cli` | - | 1 | - | - | **1** |
+| `has aws-cli` | - | 1 | - | - | **1** |
+| `!endswith .amazonaws.com` | - | 1 | - | - | **1** |
+
+### UserIdentityAccountId
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ANONYMOUS_PRINCIPAL` | - | 1 | - | - | **1** |
+
+### UserIdentityPrincipalid
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Anonymous` | - | 1 | - | - | **1** |
+
+### UserIdentityType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `AssumedRole` | - | 2 | - | - | **2** |
+| `IAMUser` | - | 2 | - | - | **2** |
 
 ---
 

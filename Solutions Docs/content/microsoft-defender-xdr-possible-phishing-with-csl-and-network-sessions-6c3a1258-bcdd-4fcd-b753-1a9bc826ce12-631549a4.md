@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "BrowserLaunchedToOpenUrl"` | ✓ | ✗ | ? |
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType == "BrowserLaunchedToOpenUrl"`<br>`EntityType in "MailMessage,Url"`<br>`ServiceSource == "Microsoft Defender for Office 365"` | ✓ | ✗ | ? |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ? |
 | [`DeviceEvents`](../tables/deviceevents.md) |  | ✓ | ✗ | ? |
 

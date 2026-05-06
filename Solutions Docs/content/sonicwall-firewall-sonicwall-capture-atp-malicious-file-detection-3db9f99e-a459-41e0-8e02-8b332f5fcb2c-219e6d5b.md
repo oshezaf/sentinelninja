@@ -25,9 +25,9 @@ This rule identifies malicious file verdicts from the SonicWall Capture ATP serv
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Protocol !contains "/"`<br>`Protocol contains "-"` | ✓ | ✓ | ? |
 
 ---
 

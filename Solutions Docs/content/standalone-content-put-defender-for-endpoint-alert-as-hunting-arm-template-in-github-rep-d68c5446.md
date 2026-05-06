@@ -18,27 +18,30 @@ This Playbook Provides the automation to Push Defender for Endpoint Alerts inclu
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Defender Advanced Threat Protection"`<br>`Tactics != "Unknown"` | ✓ | ✗ | ? |
 
-## Associated Connectors
+## Logic App Connectors
 
-The following connectors provide data for this content item:
+This playbook uses **2** Logic App connectors / built-in actions:
 
-| Connector | Solution |
-|:----------|:---------|
-| [AzureActiveDirectoryIdentityProtection](../connectors/azureactivedirectoryidentityprotection.md) | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
-| [AzureAdvancedThreatProtection](../connectors/azureadvancedthreatprotection.md) | [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md) |
-| [AzureSecurityCenter](../connectors/azuresecuritycenter.md) | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
-| [IoT](../connectors/iot.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [MicrosoftCloudAppSecurity](../connectors/microsoftcloudappsecurity.md) | [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
-| [MicrosoftDefenderAdvancedThreatProtection](../connectors/microsoftdefenderadvancedthreatprotection.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
-| [MicrosoftDefenderForCloudTenantBased](../connectors/microsoftdefenderforcloudtenantbased.md) | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
-| [OfficeATP](../connectors/officeatp.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [OfficeIRM](../connectors/officeirm.md) | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 3 |
 
-**Solutions:** [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md), [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md), [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md), [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md), [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md), [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md), [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Grab_MDE_Alerts_with_Mitre_Techniques*: method=`post`, path=`/queryData`
+
+**`http`** (builtin):
+- *Post_Hunting_JSON_Arm_Template_to_Github*: method=`PUT`, uri=`https://api.github.com/repos/@{parameters('GitHubRepoOwnerName')}/@{parameters('GitHubRepoName')}/contents/Hunting/MDE_@{replace(replace(item()?['AlertName'], ' ', '_'), '/', '_')}_@{replace(replace(item()?['MitreTechnique'], ';', '_'), '.', '_')}.json`
+- *Get_Github_Key_from_Keyvault*: method=`GET`, uri=`@parameters('KeyVaultGitHubCredentialsURL')`
+- *Get_Github_Repo_Contents*: method=`GET`, uri=`https://api.github.com/repos/@{parameters('GitHubRepoOwnerName')}/@{parameters('GitHubRepoName')}/contents/Hunting`
+
+</details>
 
 ---
 

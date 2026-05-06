@@ -14,6 +14,46 @@ This playbook creates a team notification and once acted on team notification it
 | **Solution** | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-AddIpToDestinationList/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 2 |
+| `microsoftsentinel` | Managed | 0 | 13 |
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Client_Id*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value`
+- *Get_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value`
+
+**`microsoftsentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_high_severity*: method=`put`, path=`/Incidents`
+- *Update_incident_informational_severity*: method=`put`, path=`/Incidents`
+- *Update_incident_low_severity*: method=`put`, path=`/Incidents`
+- *Update_incident_medium_severity*: method=`put`, path=`/Incidents`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Update_incident_2*: method=`put`, path=`/Incidents`
+- *Update_incident_3*: method=`put`, path=`/Incidents`
+- *Update_incident_4*: method=`put`, path=`/Incidents`
+- *Update_incident_5*: method=`put`, path=`/Incidents`
+- *Update_incident_6*: method=`put`, path=`/Incidents`
+- *Update_incident_7*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`http`** (builtin):
+- *HTTP_-_Add_list_of_destinations_to_destination_list*: method=`POST`, uri=`https://@{parameters('Host End Point')}/policies/v2/destinationlists/@{encodeURIComponent(body('Post_adaptive_card_and_wait_for_a_response')['data']['action_choices'])}/destinations`
+- *HTTP_-_Generate_Login_Token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/auth/v2/token`
+- *HTTP_-_Retrieve_all_destination_lists*: method=`GET`, uri=`https://@{parameters('Host End Point')}/policies/v2/destinationlists`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoUmbrellaPlaybooks/CiscoUmbrella-AddIpToDestinationList/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-AddIpToDestinationList/readme.md)*

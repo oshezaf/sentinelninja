@@ -32,18 +32,18 @@ This union parser includes parsers for the following products:
 | Azure Firewall | [_ASim_Dns_AzureFirewall](asimdnsazurefirewall.md) | [Azure Firewall](../solutions/azure-firewall.md) |
 | Cisco Umbrella | [_ASim_Dns_CiscoUmbrella](asimdnsciscoumbrella.md) | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | Corelight Zeek | [_ASim_Dns_CorelightZeek](asimdnscorelightzeek.md) | [Corelight](../solutions/corelight.md) |
-| Fortinet FortiGate | [_ASim_Dns_FortinetFortiGate](asimdnsfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
-| GCP Cloud DNS | [_ASim_Dns_Gcp](asimdnsgcp.md) |  |
-| Infoblox BloxOne | [_ASim_Dns_InfobloxBloxOne](asimdnsinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Fortinet FortiGate | [_ASim_Dns_FortinetFortiGate](asimdnsfortinetfortigate.md) | [Common Event Format](../solutions/common-event-format.md)<br>[Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel (legacy connector)](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| GCP Cloud DNS | [_ASim_Dns_Gcp](asimdnsgcp.md) | [GoogleCloudPlatformDNS (legacy connector)](../solutions/googlecloudplatformdns.md) |
+| Infoblox BloxOne | [_ASim_Dns_InfobloxBloxOne](asimdnsinfobloxbloxone.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Infoblox NIOS | [_ASim_Dns_InfobloxNIOS](asimdnsinfobloxnios.md) | [Syslog](../solutions/syslog.md) |
-| MS DNS Events | [_ASim_Dns_MicrosoftNXlog](asimdnsmicrosoftnxlog.md) | [NXLogDNSLogs](../solutions/nxlogdnslogs.md) |
+| MS DNS Events | [_ASim_Dns_MicrosoftNXlog](asimdnsmicrosoftnxlog.md) |  |
 | MS DNS Events | [_ASim_Dns_MicrosoftOMS](asimdnsmicrosoftoms.md) | [Windows Server DNS](../solutions/windows-server-dns.md) |
 | Microsoft Windows Events Sysmon | [_ASim_Dns_MicrosoftSysmon](asimdnsmicrosoftsysmon.md) |  |
 | Microsoft Windows Events Sysmon | [_ASim_Dns_MicrosoftSysmonWindowsEvent](asimdnsmicrosoftsysmonwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Native | [_ASim_Dns_Native](asimdnsnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
-| SentinelOne | [_ASim_Dns_SentinelOne](asimdnssentinelone.md) |  |
+| SentinelOne | [_ASim_Dns_SentinelOne](asimdnssentinelone.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
 | Vectra AI Streams | [_ASim_Dns_VectraAI](asimdnsvectraai.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[Vectra AI Stream](../solutions/vectra-ai-stream.md) |
-| Zscaler ZIA DNS | [_ASim_Dns_ZscalerZIA](asimdnszscalerzia.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md)<br>[Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
+| Zscaler ZIA DNS | [_ASim_Dns_ZscalerZIA](asimdnszscalerzia.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 
 ## Parameters
 

@@ -24,41 +24,41 @@ This content item queries data from the following tables:
 | [`AWSGuardDuty`](../tables/awsguardduty.md) |  | ✓ | ✓ | ? |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ | ? |
 | [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ? |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | ✓ | ✗ | ? |
-| [`AzureActivity`](../tables/azureactivity.md) |  | ? | ✗ | ? |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"` | ? | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Success"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationNameValue contains "Microsoft.Network/loadBalancers/"`<br>`OperationNameValue contains "Network"`<br>`ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"` | ? | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Web Category:"` | ? | ✗ | ? |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ? | ✓ | ? |
-| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ? |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ? |
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |  | ✓ | ✓ | ? |
-| [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ | ? |
-| [`ConfigurationData`](../tables/configurationdata.md) |  | ✓ | ✗ | ? |
+| [`ConfigurationChange`](../tables/configurationchange.md) | `ConfigChangeType == "Registry"` | ✓ | ✗ | ? |
+| [`ConfigurationData`](../tables/configurationdata.md) | `ConfigDataType == "Registry"` | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ | ? |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ | ? |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ? |
-| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ? |
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Junked"`<br>`DetectionMethods contains "spam"` | ✓ | ✗ | ? |
 | [`EmailUrlInfo`](../tables/emailurlinfo.md) |  | ✓ | ✗ | ? |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ? | ✗ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`InsightsMetrics`](../tables/insightsmetrics.md) |  | ✓ | ✗ | ? |
+| [`InsightsMetrics`](../tables/insightsmetrics.md) | `Namespace in "Memory,Network,Processor"` | ✓ | ✗ | ? |
 | [`IntuneAuditLogs`](../tables/intuneauditlogs.md) |  | ✓ | ✗ | ? |
 | [`IntuneDevices`](../tables/intunedevices.md) |  | ✓ | ✗ | ? |
 | [`IntuneOperationalLogs`](../tables/intuneoperationallogs.md) |  | ✓ | ✗ | ? |
 | [`KubeEvents_CL`](../tables/kubeevents-cl.md) |  | ? | ✓ | ? |
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`RecordType == "ExchangeAdmin"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`Operation !contains "access"`<br>`Operation contains "policy"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`<br>`RecordType == "ExchangeAdmin"` | ✓ | ✗ | ? |
 | [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
 | [`QualysHostDetectionV3_CL`](../tables/qualyshostdetectionv3-cl.md) |  | ? | ✓ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `GroupMembership contains "admin"`<br>`GroupMembership contains "contributor"` | ✓ | ✓ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
-| [`SecurityRecommendation`](../tables/securityrecommendation.md) |  | ✓ | ✗ | ? |
+| [`SecurityRecommendation`](../tables/securityrecommendation.md) | `RecommendationDisplayName contains "AWS"`<br>`RecommendationDisplayName contains "Amazon"`<br>`RecommendationDisplayName contains "certificate"`<br>`RecommendationDisplayName contains "container"`<br>`RecommendationDisplayName contains "database"`<br>`RecommendationDisplayName contains "encrypt"`<br>`RecommendationDisplayName contains "endpoint protection"`<br>`RecommendationDisplayName contains "exploit"`<br>`RecommendationDisplayName contains "key"`<br>`RecommendationDisplayName contains "kube"`<br>`RecommendationDisplayName contains "pod"`<br>`RecommendationDisplayName contains "sql"`<br>`RecommendationDisplayName contains "vault"`<br>`RecommendationDisplayName contains "virus"`<br>`RecommendationDisplayName contains "vuln"`<br>`RecommendationDisplayName has "GCP"`<br>`RecommendationDisplayName has "Google"`<br>`RecommendationName contains "container"`<br>`RecommendationName contains "kube"`<br>`RecommendationName contains "kubernetes"`<br>`RecommendationName contains "pod"`<br>`RecommendationName contains "update"`<br>`RecommendationState in "Healthy,NotApplicable,Removed,Unhealthy"` | ✓ | ✗ | ? |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName in "Azure Active Directory PowerShell,Microsoft Azure CLI"`<br>`AppDisplayName contains "ACOM"`<br>`AppDisplayName contains "CLI"`<br>`AppDisplayName contains "PowerShell"`<br>`AppDisplayName contains "command"`<br>`AppDisplayName contains "graph"` | ✓ | ✗ | ? |
 | [`StorageBlobLogs`](../tables/storagebloblogs.md) |  | ✓ | ✗ | ? |
 | [`StorageFileLogs`](../tables/storagefilelogs.md) |  | ✓ | ✗ | ? |
 | [`Syslog`](../tables/syslog.md) | `SyslogMessage contains "runas"`<br>`SyslogMessage contains "sudo"`<br>`ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | ✓ | ✓ | ? |

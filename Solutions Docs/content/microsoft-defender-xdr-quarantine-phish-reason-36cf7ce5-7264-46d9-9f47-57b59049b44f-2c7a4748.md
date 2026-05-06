@@ -22,9 +22,9 @@ This query visualises the total amount of phish emails that are quarantined, sum
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryLocation == "Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"` | ✓ | ✗ | ? |
 
 ---
 

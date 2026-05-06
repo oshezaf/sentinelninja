@@ -25,9 +25,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine has_all "advfirewall"`<br>`InitiatingProcessFileName == "netsh.exe"` | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) | `Source == "Microsoft-Windows-Sysmon"` | ✓ | ✓ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "1"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `AccountType != "Machine"`<br>`CommandLine has_all "advfirewall"`<br>`EventID == "1"`<br>`Process == "netsh.exe"` | ✓ | ✓ | ? |
 
 ---
 

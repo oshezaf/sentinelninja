@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `ClientIP has "."`<br>`ClientIP has "["`<br>`OfficeWorkload == "Exchange"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters contains "RedirectTo"` | ✓ | ✗ | ? |
 
 ---
 

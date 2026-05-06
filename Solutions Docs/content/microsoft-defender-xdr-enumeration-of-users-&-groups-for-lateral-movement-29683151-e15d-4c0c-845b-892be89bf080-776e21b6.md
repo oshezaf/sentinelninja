@@ -20,9 +20,9 @@ This query hunts for attempts to list users or groups using Net commands, which 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine !contains "/add"`<br>`ProcessCommandLine !contains "\\"`<br>`ProcessCommandLine contains "/do"`<br>`ProcessCommandLine contains "/domain"`<br>`ProcessCommandLine contains "group"`<br>`ProcessCommandLine contains "user"` | ✓ | ✗ | ? |
 
 ---
 

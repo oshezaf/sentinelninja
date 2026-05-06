@@ -29,15 +29,25 @@ This ASIM parser supports normalizing the Google Workspace (Drive) logs ingested
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GWorkspace_ReportsAPI_drive_CL`](../tables/gworkspace-reportsapi-drive-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GWorkspace_ReportsAPI_drive_CL`](../tables/gworkspace-reportsapi-drive-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ## Parameters
 
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [GoogleWorkspaceReportsAPI](../connectors/googleworkspacereportsapi.md) | [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md) |
+
+**Solutions:** [GoogleWorkspaceReports (legacy connector)](../solutions/googleworkspacereports.md)
 
 ## References
 

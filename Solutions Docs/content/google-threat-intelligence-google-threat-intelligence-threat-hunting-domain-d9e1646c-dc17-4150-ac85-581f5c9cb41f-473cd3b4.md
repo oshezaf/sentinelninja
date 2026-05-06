@@ -24,9 +24,9 @@ Google Threat Intelligence domain correlation.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | ✓ | ✓ | ? |
 
 ---
 

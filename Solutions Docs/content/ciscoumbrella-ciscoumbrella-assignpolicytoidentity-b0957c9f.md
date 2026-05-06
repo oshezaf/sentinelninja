@@ -14,6 +14,32 @@ This playbook provides an automated way to associate an identity to an existing 
 | **Solution** | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-AssignPolicyToIdentity/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 2 |
+| `microsoftsentinel` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Client_Id*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value`
+- *Get_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value`
+
+**`microsoftsentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *HTTP_-_Assign_a_policy_to_an_identity*: method=`PUT`, uri=`https://@{parameters('Host End Point')}/deployments/v2/policies/@{encodeURIComponent(variables('policyId'))}/identities/@{encodeURIComponent(items('For_each_originId_assign_policy_to_originId'))}`
+- *HTTP_-_Generate_Login_Token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/auth/v2/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoUmbrellaPlaybooks/CiscoUmbrella-AssignPolicyToIdentity/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-AssignPolicyToIdentity/readme.md)*

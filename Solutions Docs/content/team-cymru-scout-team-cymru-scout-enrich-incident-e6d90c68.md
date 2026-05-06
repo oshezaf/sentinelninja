@@ -14,6 +14,52 @@ This playbook will fetch and ingest IP or Domain Indicator data based on Entity 
 | **Solution** | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutEnrichIncident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 6 |
+| `azuremonitorlogs` | Managed | 1 | 6 |
+| `azuresentinel` | Managed | 1 | 4 |
+| `outlook` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Top_Fingerprints_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_Open_Ports_Section_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_Top_Pdns_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_Whois_Data_To_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+- *Send_Insights_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
+- *Send_IP_Indicator_To_Live_Investigation_Indicators_Table*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_Query_and_List_Results_for_Top_PDNS*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_Open_Ports*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Top_Fingerprints*: method=`post`, path=`/queryData`
+- *Run_Query_and_List_Results_for_Whois*: method=`post`, path=`/queryData`
+- *Run_Query_And_List_Insights_Data_And_Country_Code_For_Indicator*: method=`post`, path=`/queryData`
+- *Run_Query_And_Check_Whether_This_is_First_Execution_Or_Not*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_IP_Data_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_Limit_Has_Been_Exceeded_To_100_For_Incident_*: method=`post`, path=`/Incidents/Comment`
+- *Add_Domain_Data_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_Limit_Has_Been_Exceeded_For_Incident*: method=`post`, path=`/Incidents/Comment`
+
+**`outlook`** (managedApi):
+- *Send_An_Email_For_IP*: method=`post`, path=`/v2/Mail`
+- *Send_An_Email_For_Domain*: method=`post`, path=`/v2/Mail`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Details_Of_IP_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{items('For_Each_IP_Address')}/details`
+- *HTTP_Request_To_Fetch_Details_Of_Domain_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/search`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [TeamCymruScoutEnrichIncident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout/Playbooks/TeamCymruScoutEnrichIncident/readme.md)*

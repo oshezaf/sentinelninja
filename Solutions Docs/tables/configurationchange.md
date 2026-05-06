@@ -98,9 +98,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (5)
+## Content Items Using This Table (4)
 
-### Workbooks (5)
+### Workbooks (4)
 
 **In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
@@ -108,11 +108,11 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ConfigChangeType == "Registry"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 **In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
@@ -126,12 +126,6 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
 
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
-
 ## Resource Types
 
 This table collects data from the following Azure resource types:
@@ -141,6 +135,21 @@ This table collects data from the following Azure resource types:
 - `microsoft.azurestackhci/virtualmachines`
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ConfigChangeType == "Registry"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### ConfigChangeType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Registry` | - | 1 | - | - | **1** |
 
 ---
 

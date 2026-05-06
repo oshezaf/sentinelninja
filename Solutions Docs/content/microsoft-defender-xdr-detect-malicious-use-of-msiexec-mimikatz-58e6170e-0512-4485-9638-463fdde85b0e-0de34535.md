@@ -21,9 +21,9 @@ This query searches for malicious use of msiexec.exe, particularly alongside mim
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "msiexec.exe"`<br>`ProcessCommandLine contains "privilege::"`<br>`ProcessCommandLine contains "token::"`<br>`ProcessCommandLine has "sekurlsa"` | ✓ | ✗ | ? |
 
 ---
 

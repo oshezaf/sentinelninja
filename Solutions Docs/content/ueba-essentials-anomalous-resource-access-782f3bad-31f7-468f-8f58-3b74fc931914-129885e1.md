@@ -22,9 +22,9 @@ The adversary may be trying to move through the environment. APT29 and APT32, fo
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityInsights has "True"`<br>`ActivityType == "LogOn"` | ✓ | ✗ | ? |
 
 ---
 

@@ -22,10 +22,10 @@ This query hunts for command line activity linked to Dev-0322's compromise of ZO
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine matchesregex "save HKLM\\SYSTEM [^ ]*_System.HIV"`<br>`ProcessCommandLine matchesregex "cmd.exe /c"`<br>`ProcessCommandLine matchesregex "save HKLM\\SYSTEM [^ ]*_System.HIV"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
 
 ---
 

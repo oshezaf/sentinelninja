@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "30001"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "30001"`<br>`EventSourceName == "Semperis-DSP-Notifications"` | ✓ | ✓ | ? |
 
 ---
 

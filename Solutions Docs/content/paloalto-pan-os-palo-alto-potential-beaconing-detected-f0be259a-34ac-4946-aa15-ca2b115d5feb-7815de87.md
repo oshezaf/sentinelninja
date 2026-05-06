@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity == "TRAFFIC"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ? |
 | [`fluentbit_CL`](../tables/fluentbit-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---

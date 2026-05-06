@@ -151,7 +151,7 @@
 | [Box - New external user](box-box-new-external-user-fd36ac88-cd92-4137-aa23-37a3648621fa-96cd22de.md) | Medium | 📦 [Box](../solutions/box.md) |
 | [Box - User logged in as admin](box-box-user-logged-in-as-admin-b2197d7f-4731-483c-89de-d48606b872da-6058ec71.md) | Medium | 📦 [Box](../solutions/box.md) |
 | [Box - User role changed to owner](box-box-user-role-changed-to-owner-174c31c9-22ec-42e5-8226-814391c08200-4e0da2af.md) | Medium | 📦 [Box](../solutions/box.md) |
-| [Brute force attack against a Cloud PC](microsoft-entra-id-brute-force-attack-against-a-cloud-pc-3fbc20a4-04c4-464e-8fcb-6667f53e4987-a1e86b1d.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+| [Brute force attack against an Entra-authenticated Windows device](microsoft-entra-id-brute-force-attack-against-an-entra-authenticated-windows-device-3fbc20a4-04c4-464e-8fcb-6667f53e4987-a6e41f5c.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Brute force attack against Azure Portal](microsoft-entra-id-brute-force-attack-against-azure-portal-28b42356-45af-40a6-a0b4-a554cdfd5d8a-5dc74411.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Brute Force Attack against GitHub Account](microsoft-entra-id-brute-force-attack-against-github-account-97ad74c4-fdd9-4a3f-b6bf-5e28f4f71e06-409b9696.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Brute force attack against user credentials](salesforce-service-cloud-brute-force-attack-against-user-credentials-5a6ce089-e756-40fb-b022-c8e8864a973a-39827da6.md) | Medium | 📦 [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |

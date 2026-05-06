@@ -23,9 +23,9 @@ Identifies a set of Microsoft Sentinel Data Connectors for administrative and op
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivitySubstatusValue in "Created,OK"` | ? | ✗ | ? |
 
 ---
 

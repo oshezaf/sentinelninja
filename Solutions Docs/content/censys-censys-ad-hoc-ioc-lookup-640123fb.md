@@ -14,6 +14,38 @@ This playbook will be triggered from the workbook. This will fetch associated IP
 | **Solution** | [Censys](../solutions/censys.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysIOCLookup/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 7 |
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault-1` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Host_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
+- *Send_Host_Field_Data_-_Services*: method=`post`, path=`/api/logs`
+- *Send_Web_Property_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
+- *Send_Web_Property_Field_Data_-_Endpoint*: method=`post`, path=`/api/logs`
+- *Send_Web_Property_Field_Data_-_Vulns*: method=`post`, path=`/api/logs`
+- *Send_Web_Property_Field_Data_-_Threat*: method=`post`, path=`/api/logs`
+- *Send_Certificate_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
+
+**`keyvault-1`** (managedApi):
+- *Get_Censys_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Host_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{triggerBody()?['indicator_value']}`
+- *HTTP_Request_To_Fetch_Web_Property_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty/@{triggerBody()?['indicator_value']}`
+- *HTTP_Request_To_Fetch_Certificate_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/certificate/@{triggerBody()?['indicator_value']}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CensysIOCLookup/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysIOCLookup/readme.md)*

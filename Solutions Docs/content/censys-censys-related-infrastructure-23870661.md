@@ -22,6 +22,31 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CensysRelatedInfrastructure_CL`](../tables/censysrelatedinfrastructure-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Related_Infrastructure_to_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+
+**`keyvault`** (managedApi):
+- *Get_Censys_API_Key*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Post_Request_To_Create_Pivot_Analysis_Job*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}`
+- *HTTP_Call_to_Fetch_Job_Status*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}/@{variables('job_id')}`
+- *HTTP_Call_to_Fetch_Job_result_data*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}/@{variables('job_id')}/results`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CensysRelatedInfrastructure/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysRelatedInfrastructure/readme.md)*

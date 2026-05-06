@@ -22,9 +22,9 @@ This query looking for potential partner compromise via comparing outbound Teams
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`MessageEvents`](../tables/messageevents.md) | `IsExternalThread == "1"`<br>`IsOwnedThread in "0,1"` | ? | ✗ | ? |
 
 ---
 

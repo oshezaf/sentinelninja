@@ -14,6 +14,23 @@ This playbook leverages Illumio workloads API to quarantine a workload based on 
 | **Solution** | [IllumioSaaS](../solutions/illumiosaas.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Quarantine-Workload/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `office365` | Managed | 1 | 0 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`function`** (builtin):
+- *QuarantineWorkloadFuncApp-quarantineWorkloadHTTPTrigger*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/quarantineWorkloadHTTPTrigger')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Illumio-Quarantine-Workload/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Quarantine-Workload/readme.md)*

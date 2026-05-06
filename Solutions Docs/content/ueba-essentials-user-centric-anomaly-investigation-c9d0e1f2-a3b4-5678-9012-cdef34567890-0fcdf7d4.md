@@ -20,9 +20,9 @@ Investigates all anomalous activities associated with a specific user account ov
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`Anomalies`](../tables/anomalies.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Anomalies`](../tables/anomalies.md) | `UserPrincipalName == "myuser@mydomain.com"` | ✓ | ✓ | ? |
 
 ---
 

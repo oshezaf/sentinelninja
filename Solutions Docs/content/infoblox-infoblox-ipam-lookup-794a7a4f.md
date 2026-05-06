@@ -14,6 +14,35 @@ The playbook will retrieve IP entities from an incident, call an API to obtain I
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20IPAM%20Lookup/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 9 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_Comment_To_Incident_No_IPs_Found*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_Comment_To_Incident_For_Empty_IP_Address_Found*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_To_Incident_For_No_Results_Found_For_IP_Address*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_To_Incident_For_Whole_API_Response_Of_One_IP_Traversed_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_To_Incident*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(3)*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Lookup_Information_For_An_IP_Space_*: method=`GET`, uri=`@{variables('base_url')}/api/ddi/v1/@{variables('ip_space_id')}`
+- *HTTP_Request_To_Lookup_Information_For_Subnet*: method=`GET`, uri=`@{variables('base_url')}/api/ddi/v1/@{variables('subnet_id')}`
+- *HTTP_Request_To_Lookup_Information_About_An_IP_Address*: method=`GET`, uri=`@{variables('base_url')}/api/ddi/v1/ipam/address`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox IPAM Lookup/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20IPAM%20Lookup/readme.md)*

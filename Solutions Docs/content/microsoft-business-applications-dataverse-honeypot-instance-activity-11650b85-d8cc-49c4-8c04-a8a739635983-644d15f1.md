@@ -25,9 +25,9 @@ Identifies activities in a predefined Honeypot Dataverse instance. Alerts when e
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message == "UserSignIn"`<br>`UserId != "Unknown"`<br>`UserId !endswith "@onmicrosoft.com"` | ✓ | ✗ | ? |
 
 ---
 

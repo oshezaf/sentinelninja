@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "ConsoleLogin"` | ✓ | ✓ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertSeverity == "High"`<br>`ProductName in "Azure Active Directory,Azure Active Directory Identity Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender ATP,Microsoft Defender Advanced Threat Protection"`<br>`Tactics in "CredentialAccess,InitialAccess"` | ✓ | ✗ | ? |
 
 ---
 

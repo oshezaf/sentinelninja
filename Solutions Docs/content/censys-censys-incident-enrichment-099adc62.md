@@ -24,6 +24,39 @@ This content item queries data from the following tables:
 | [`CensysHost_CL`](../tables/censyshost-cl.md) 🔶 | ? | ✓ | ? |
 | [`CensysWebProperty_CL`](../tables/censyswebproperty-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **6** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 3 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault-1` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 3 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Ingest_Censys_Host_Data*: method=`post`, path=`/api/logs`
+- *Ingest_Censys_Certificate_Data*: method=`post`, path=`/api/logs`
+- *Ingest_Censys_Web_Property_Data*: method=`post`, path=`/api/logs`
+
+**`keyvault-1`** (managedApi):
+- *Get_Censys_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Call_to_Fetch_Host_Data*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/host`
+- *HTTP_Call_to_Fetch_Certificates_Data*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/certificate`
+- *HTTP_Call_to_Fetch_WebProperty_Data*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty`
+
+**`workflow`** (builtin):
+- *CensysIncidentEnrichment*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('IncidentEnrichmentPlaybookName')))]`, triggerName=`When_an_HTTP_request_is_received`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CensysIncidentEnrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysIncidentEnrichment/readme.md)*

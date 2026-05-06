@@ -22,9 +22,9 @@ This query helps hunt for communication from suspicious external users.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`MessageEvents`](../tables/messageevents.md) | `SenderDisplayName contains "desk"`<br>`SenderDisplayName contains "help"`<br>`SenderDisplayName contains "home"`<br>`SenderDisplayName contains "it"`<br>`SenderDisplayName contains "support"`<br>`SenderDisplayName contains "working"` | ? | ✗ | ? |
 
 ---
 

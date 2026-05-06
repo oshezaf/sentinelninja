@@ -14,6 +14,41 @@ This playbook queries Rubrik Security Cloud to enrich the Anomaly event with add
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikUpdateAnomalyStatusViaIncident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 1 | 2 |
+| `RubrikCustomConnector` | Custom | 1 | 1 |
+| `http` | Built-in | 0 | 3 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Close_Incident_Due_To_Resolve_Anomaly_Or_Report_False_Positive*: method=`put`, path=`/Incidents`
+- *Close_Incident_Due_To_Anomaly_Is_Already_Resolved_Or_It_Is_Not_An_Anomaly*: method=`put`, path=`/Incidents`
+
+**`keyvault`** (managedApi):
+- *Get_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
+- *Get_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`RubrikCustomConnector`** (customApi):
+- *Authentication*: method=`post`, path=`/api/client_token`
+
+**`http`** (builtin):
+- *Get_Anomaly_Type*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
+- *Get_Cdmid*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
+- *Get_SnapshotFid*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
+
+**`workflow`** (builtin):
+- *RubrikUpdateAnomalyStatus*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikUpdateAnomalyStatusViaIncident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikUpdateAnomalyStatusViaIncident/readme.md)*

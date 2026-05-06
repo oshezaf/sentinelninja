@@ -22,9 +22,9 @@ This query looks for Teams messages from an external user with a suspicious disp
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`MessageEvents`](../tables/messageevents.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"` | ? | ✗ | ? |
 
 ---
 

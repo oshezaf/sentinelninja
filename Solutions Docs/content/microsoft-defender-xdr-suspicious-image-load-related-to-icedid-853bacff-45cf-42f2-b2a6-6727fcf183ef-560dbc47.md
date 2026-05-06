@@ -21,9 +21,9 @@ This query searches for suspicious load image events by rundll32.exe or regsvr32
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) | `InitiatingProcessFileName in "regsvr32.exe,rundll32.exe"` | ✓ | ✗ | ? |
 
 ---
 

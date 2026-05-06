@@ -25,9 +25,9 @@ Identifies modifications of SharePoint document management integration. Document
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) | `EntityName == "sharepointsite"`<br>`Message in "Create,Update"` | ✓ | ✗ | ? |
 
 ---
 

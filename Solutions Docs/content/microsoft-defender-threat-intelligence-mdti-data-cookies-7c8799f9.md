@@ -14,6 +14,29 @@ This playbook uses the MDTI Components data to automatically enrich incidents ge
 | **Solution** | [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence/Playbooks/MDTI-Data-Cookies/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *Cookies_by_Hostname*: method=`GET`, uri=`@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_Host')?['HostName']}.@{items('For_each_Host')?['DnsDomain']}')/cookies?$count=true`
+- *Cookies_by_IP_Address*: method=`GET`, uri=`@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_IP_Address')?['Address']}')/cookies?$count=true`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [MDTI-Data-Cookies/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence/Playbooks/MDTI-Data-Cookies/readme.md)*

@@ -14,6 +14,30 @@ This playbook will create a new Microsoft Sentinel incident when Microsoft Forms
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `microsoftforms` | Managed | 1 | 1 |
+| `office365` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Create_incident*: method=`put`, path=`/Incidents/subscriptions/@{encodeURIComponent(parameters('Subscription'))}/resourceGroups/@{encodeURIComponent(parameters('Resource Group'))}/workspaces/@{encodeURIComponent(parameters('Workspace Name'))}`
+
+**`microsoftforms`** (managedApi):
+- *Get_response_details*: method=`get`, path=`/formapi/api/forms('@{encodeURIComponent(parameters('Microsoft Forms ID'))}')/responses`
+
+**`office365`** (managedApi):
+- *Send_an_email_(V2)_-_success*: method=`post`, path=`/v2/Mail`
+- *Send_an_email_(V2)_-_fail*: method=`post`, path=`/v2/Mail`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CreateIncident-MicrosoftForms/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/readme.md)*

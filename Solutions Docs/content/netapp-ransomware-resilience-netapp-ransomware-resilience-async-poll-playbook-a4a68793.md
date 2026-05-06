@@ -14,6 +14,23 @@ This playbook polls NetApp Ransomware Resilience job status asynchronously until
 | **Solution** | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Async_Poll_Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Call_Auth_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]`
+- *Initial_Status_Check*: method=`GET`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/job/status?source=@{variables('Source')}&job_id=@{variables('JobId')}&agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}`
+- *Check_Job_Status*: method=`GET`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/job/status?source=@{variables('Source')}&job_id=@{variables('JobId')}&agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [NetApp-RansomwareResilience_Async_Poll_Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Async_Poll_Playbook/readme.md)*

@@ -14,6 +14,35 @@ This playbook retrieves sensitive IP and Host data to enrich the incident detail
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikWorkloadAnalysis/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 5 |
+| `keyvault` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Update_Incident_(2)*: method=`put`, path=`/Incidents`
+- *Add_Failed_IP_-_Host_List_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+- *Update_Incident*: method=`put`, path=`/Incidents`
+- *Add_Detail_Response_Of_IP_To_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_For_30000_Characters_Limit*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_Rubrik_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-Client-Id')}/value`
+- *Get_Rubrik_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-Client-Secret')}/value`
+
+**`http`** (builtin):
+- *Get_Information*: method=`GET`, uri=`@{variables('Base_URL')}/api/thirdparty/workload_summary`
+- *Get_Access_Token*: method=`POST`, uri=`@{variables('Base_URL')}/api/client_token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikWorkloadAnalysis/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikWorkloadAnalysis/readme.md)*

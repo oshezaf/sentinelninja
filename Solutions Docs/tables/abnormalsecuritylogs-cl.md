@@ -10,23 +10,6 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-
-## Schema (4 columns)
-
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity%5CData%20Connectors%5CAbnormalSecurity_CCF/AbnormalSecurity_table_AbnormalSecurityLogs.json)
-
-| Column Name | Type | Description |
-|:------------|:-----|:------------|
-| abx_body | dynamic | Event payload containing case details, threat information, policy violations, and other security data |
-| abx_metadata | dynamic | Event metadata including event_type, tenant_id, and timestamp |
-| Time | string | Event timestamp in RFC3339 format |
-| TimeGenerated | datetime | Timestamp when the event was ingested into Microsoft Sentinel |
-
 ## Solutions (1)
 
 This table is used by the following solutions:

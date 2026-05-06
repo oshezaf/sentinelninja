@@ -14,6 +14,28 @@ The SpyCloud Enterprise API is able to provide breach data for a IP address or s
 | **Solution** | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-IP-Breach-Data-Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `spycloud-enterprise-connector` | Managed | 0 | 1 |
+| `SpyCloud-Enterprise-Protection` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`spycloud-enterprise-connector`** (managedApi):
+- *Get_Breach_Data_by_IP_Address*: method=`get`, path=`/breach/data/ips/@{encodeURIComponent(items('For_Each_Incident_IPS')?['Address'])}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SpyCloud-Get-IP-Breach-Data-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-IP-Breach-Data-Playbook/readme.md)*

@@ -100,9 +100,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (19)
+## Content Items Using This Table (20)
 
-### Analytic Rules (8)
+### Analytic Rules (9)
 
 **In solution [Okta Single Sign-On](../solutions/okta-single-sign-on.md):**
 
@@ -116,6 +116,7 @@ This table is ingested by the following connectors:
 | [Okta Fast Pass phishing Detection](../content/okta-single-sign-on-okta-fast-pass-phishing-detection-78d2b06c-8dc0-40e1-91c8-66d916c186f3-fefae1c8.md) |  |
 | [Potential Password Spray Attack](../content/okta-single-sign-on-potential-password-spray-attack-e27dd7e5-4367-4c40-a2b7-fcd7e7a8a508-8d39fbf2.md) |  |
 | [User Login from Different Countries within 3 hours](../content/okta-single-sign-on-user-login-from-different-countries-within-3-hours-2954d424-f786-4677-9ffc-c24c44c6e7d5-965998c8.md) |  |
+| [User Session Impersonation(Okta)](../content/okta-single-sign-on-user-session-impersonation-okta-35846296-4052-4de2-8098-beb6bb5f2203-cf2f2ba3.md) |  |
 
 ### Hunting Queries (10)
 

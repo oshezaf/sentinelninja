@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `ResourceType == "APPLICATIONGATEWAYS"` | ? | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Message == "*"`<br>`Message has "SQL Injection"`<br>`Message has "attack"`<br>`ResourceType == "APPLICATIONGATEWAYS"`<br>`action_s in "Blocked,Detected"`<br>`instanceId_s has "role"` | ? | ✗ | ? |
 
 ---
 

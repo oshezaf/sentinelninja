@@ -14,6 +14,32 @@ This playbook uses the DomainTools Parsed Whois API. Given a ip address or set o
 | **Solution** | [DomainTools](../solutions/domaintools.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 8 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_Parsed_WhoIs_data_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_basic_Parsed_WhoIs_data_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_parsed_whois_contacts_to_incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_parsed_whois_networks_to_incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_parsed_whois_routes_data_to_incident_comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_refferral_servers_comments_to_incident_comments*: method=`post`, path=`/Incidents/Comment`
+
+**`function`** (builtin):
+- *ParsedWhois*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/ParsedWhois')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DomainTools-IP-Address-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/readme.md)*

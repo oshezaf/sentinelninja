@@ -22,12 +22,12 @@ This content item queries data from the following tables:
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType == "ConnectionSuccess"` | ✓ | ✗ | ? |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "Set-MpPreference"` | ✓ | ✗ | ? |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ? | ✗ | ? |
 | [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
 | [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4624,4625"` | ✓ | ✓ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `AuthenticationRequirement == "multiFactorAuthentication"` | ✓ | ✗ | ? |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ? |
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
 | [`Watchlist`](../tables/watchlist.md) |  | ✓ | ✗ | ? |

@@ -14,6 +14,36 @@ This playbook is used to get Security Information about a particular domain. It 
 | **Solution** | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-GetDomainInfo/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 2 |
+| `microsoftsentinel` | Managed | 0 | 4 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Client_Id*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value`
+- *Get_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value`
+
+**`microsoftsentinel`** (managedApi):
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *HTTP_-_Get_domain_security_data*: method=`GET`, uri=`https://@{parameters('Host End Point')}/investigate/v2/security/name/@{encodeURIComponent(outputs('Get_domain_from_URL'))}`
+- *HTTP_-_Get_Risk_score_for_a_domain*: method=`GET`, uri=`https://@{parameters('Host End Point')}/investigate/v2/domains/risk-score/@{encodeURIComponent(outputs('Get_domain_from_URL'))}`
+- *HTTP_-_Generate_Login_Token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/auth/v2/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoUmbrellaPlaybooks/CiscoUmbrella-GetDomainInfo/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoUmbrella/Playbooks/CiscoUmbrellaPlaybooks/CiscoUmbrella-GetDomainInfo/readme.md)*

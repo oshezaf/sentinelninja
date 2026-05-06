@@ -14,6 +14,32 @@ Submits a url or set of urls associated with an incident to JoeSandbox for Analy
 | **Solution** | [JoeSandbox](../solutions/joesandbox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 5 |
+| `function` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Threat_Intelligence_-_Upload_Indicators_of_Compromise_(V2)_(Preview)*: method=`post`, path=`/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/`
+- *Add_comment_to_incident_(V3)_1*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+
+**`function`** (builtin):
+- *joesandboxenrichttb-JoeSandboxGetIOCs*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetIOCs')]`
+- *joesandboxenrichttb-JoeSandboxGetAnalysisInfo*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetAnalysisInfo')]`
+- *joesandboxenrichttb-JoeSandboxGetSubmissionInfo*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetSubmissionInfo')]`
+- *joesandboxenrichttb-JoeSandboxSubmitUrl*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxSubmitUrl')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [JoeSandbox-Submit-Url-Sentinel-Incident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/readme.md)*

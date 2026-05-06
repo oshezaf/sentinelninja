@@ -16,15 +16,15 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [GreyNoiseConnector_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence/Data%20Connectors/GreyNoiseConnector_UploadIndicatorsAPI.json) |
 
-This Data Connector installs an Azure Function app to download GreyNoise indicators once per day and inserts them into the ThreatIntelligenceIndicator table in Microsoft Sentinel.
+This Data Connector installs an Azure Function app to download GreyNoise indicators once per day and inserts them into the ThreatIntelIndicators table in Microsoft Sentinel.
 
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `SourceSystem == "GreyNoise"` | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -69,7 +69,7 @@ Follow this section here to add **'ThreatIndicators.ReadWrite.OwnedBy'** permiss
 
 **5. Deploy the Threat Intelligence (New) Solution, (v3.0.14 or later) which includes the Threat Intelligence Upload Indicators API (Preview)**
 
-See Microsoft Sentinel Content Hub for this Solution, and install it in the Microsoft Sentinel instance. Note that you do not need to do any confirguration in this step.
+See Microsoft Sentinel Content Hub for this Solution, and install it in the Microsoft Sentinel instance. Note that you do not need to do any configuration in this step.
 
 **6. Deploy the Azure Function**
 

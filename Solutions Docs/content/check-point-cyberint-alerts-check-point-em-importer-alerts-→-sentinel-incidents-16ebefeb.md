@@ -18,9 +18,29 @@ Queries the argsentdc_CL custom table (populated by the CCP data connector) for 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`argsentdc_CL`](../tables/argsentdc-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`argsentdc_CL`](../tables/argsentdc-cl.md) |  | ? | ✓ | ? |
+
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_KQL_Query*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Create_incident*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/', parameters('Workspace_Name'))]`
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+
+</details>
 
 ## Additional Documentation
 

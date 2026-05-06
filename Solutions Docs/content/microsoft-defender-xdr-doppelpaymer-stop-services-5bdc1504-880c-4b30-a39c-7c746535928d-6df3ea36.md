@@ -25,9 +25,9 @@ This query was originally published in the threat analytics report, Doppelpaymer
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName startswith "psexe"`<br>`ProcessCommandLine has "msexchange"`<br>`ProcessCommandLine has "sql"`<br>`ProcessCommandLine has "stop-service"` | ✓ | ✗ | ? |
 
 ---
 

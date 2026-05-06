@@ -14,6 +14,26 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [AbuseIPDB](../solutions/abuseipdb.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-ReportIPsAfterUserResponseInMSTeams/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `teams` | Managed | 1 | 0 |
+| `AbuseIPDBAPI` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`AbuseIPDBAPI`** (customApi):
+- *REPORT_Endpoint*: method=`post`, path=`/report`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AbuseIPDB-ReportIPsAfterUserResponseInMSTeams/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-ReportIPsAfterUserResponseInMSTeams/readme.md)*

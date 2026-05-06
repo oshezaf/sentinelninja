@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateRole,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteLoginProfile,DeleteRole,DeleteUser,RemoveUserFromGroup"` | ✓ | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertSeverity == "High"`<br>`ProductName has "Azure Active Directory Identity Protection"` | ✓ | ✗ | ? |
 
 ---
 

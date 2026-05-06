@@ -197,7 +197,7 @@ This table is ingested by the following connectors:
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
-| [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) | `EventProduct == "Windows Firewall"` |
 | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
@@ -205,21 +205,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
-
-**GitHub Only:** `EventProduct == "Windows Firewall"`
-
-| Workbook |
-|:-------------|
-| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |
 
 ## Parsers Using This Table (2)
 

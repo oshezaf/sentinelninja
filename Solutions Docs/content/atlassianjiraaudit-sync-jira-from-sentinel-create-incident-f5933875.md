@@ -14,6 +14,29 @@ This Playbook will create JIRA incidents for every Microsoft Sentinel which is c
 | **Solution** | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Sync-Incidents/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName Jira'), ''')}/value')]`
+
+**`http`** (builtin):
+- *Create_JIRA_Ticket*: method=`POST`, uri=`[parameters('JIRA API URL')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Sync-Incidents/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Sync-Incidents/readme.md)*

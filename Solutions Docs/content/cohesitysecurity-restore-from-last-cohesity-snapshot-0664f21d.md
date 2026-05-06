@@ -14,6 +14,35 @@ This playbook restores the latest good Data Hawk (Helios) snapshot.
 | **Solution** | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Restore_From_Last_Snapshot/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureblob` | Managed | 1 | 6 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureblob`** (managedApi):
+- *Get_cid_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
+- *Get_entity_id_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
+- *Get_job_id_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
+- *Get_job_instance_id_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
+- *Get_job_start_time_usecs_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
+- *Get_object_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('ApiKey')}/value`
+
+**`http`** (builtin):
+- *HTTP*: method=`POST`, uri=`https://helios.cohesity.com/irisservices/api/v1/public/restore/recover`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Cohesity_Restore_From_Last_Snapshot/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Restore_From_Last_Snapshot/readme.md)*

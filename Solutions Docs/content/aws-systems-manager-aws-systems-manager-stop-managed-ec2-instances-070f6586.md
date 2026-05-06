@@ -14,6 +14,32 @@ This playbook can be used by SOC Analysts to stop malicious or compromised EC2 i
 | **Solution** | [AWS Systems Manager](../solutions/aws-systems-manager.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-StopManagedInstance/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `function` | Built-in | 0 | 6 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`function`** (builtin):
+- *Create_Automation_Shutdown_Document*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/CreateDocument')]`
+- *DeleteDocument*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/DeleteDocument')]`
+- *GetAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
+- *StartAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]`
+- *GetAutomationExecution_again*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
+- *GetInventory*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetInventory')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AWSSystemsManagerPlaybooks/AWS-SSM-StopManagedInstance/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-StopManagedInstance/readme.md)*

@@ -21,11 +21,11 @@ This query identifies users who created new package feed to Azure DevOps pipelin
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) | ? | ✓ | ? |
-| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ADOAuditLogs_CL`](../tables/adoauditlogs-cl.md) |  | ? | ✓ | ? |
+| [`AzureDevOpsAuditing`](../tables/azuredevopsauditing.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "IPC"` | ✓ | ✗ | ? |
 
 ---
 

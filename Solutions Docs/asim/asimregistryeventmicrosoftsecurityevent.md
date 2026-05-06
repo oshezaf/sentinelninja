@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4657,4663"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4657,4663"`<br>`ObjectType == "Key"` | ✓ | ✓ | ? |
 
 ## Parameters
 

@@ -14,6 +14,28 @@ This Playbook will run daily, gets the watchlist data from SpyCloud API and save
 | **Solution** | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
+| `spycloud-enterprise-connector` | Managed | 0 | 2 |
+| `SpyCloud-Enterprise-Protection` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Save_Modified_Records_to_Custom_Logs_Table*: method=`post`, path=`/api/logs`
+- *Save_New_Records_to_Custom_Logs_Table*: method=`post`, path=`/api/logs`
+
+**`spycloud-enterprise-connector`** (managedApi):
+- *Get_Breach_Data_for_Entire_Watchlist_2*: method=`get`, path=`/breach/data/watchlist`
+- *Get_Breach_Data_for_Entire_Watchlist*: method=`get`, path=`/breach/data/watchlist`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SpyCloud-Monitor-Watchlist-Data/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/readme.md)*

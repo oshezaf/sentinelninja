@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4657,4688"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "4657,4688"`<br>`ParentProcessName endswith "cmd.exe"`<br>`ParentProcessName endswith "powershell.exe"`<br>`ParentProcessName endswith "powershell_ise.exe"`<br>`Process == "fodhelper.exe"` | ✓ | ✓ | ? |
 
 ---
 

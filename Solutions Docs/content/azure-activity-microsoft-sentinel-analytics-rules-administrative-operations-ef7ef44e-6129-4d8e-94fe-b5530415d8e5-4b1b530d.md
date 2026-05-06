@@ -23,9 +23,9 @@ Identifies Microsoft Sentinel Analytics Rules administrative operations
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivitySubstatusValue in "Created,OK"`<br>`CategoryValue == "Administrative"` | ? | ✗ | ? |
 
 ---
 

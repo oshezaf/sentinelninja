@@ -21,9 +21,9 @@ This query detects if an instance of Qakbot has attempted to overwrite its origi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine has "-n 6"`<br>`InitiatingProcessCommandLine has "127.0.0.1"`<br>`InitiatingProcessCommandLine has "calc.exe"`<br>`InitiatingProcessFileName == "cmd.exe"` | ✓ | ✗ | ? |
 
 ---
 

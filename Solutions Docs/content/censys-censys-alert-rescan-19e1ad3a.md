@@ -25,6 +25,41 @@ This content item queries data from the following tables:
 | [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
 | [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ? |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
+| `azuremonitorlogs` | Managed | 1 | 2 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 3 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Ingest_Censys_Rescan_Host_Data*: method=`post`, path=`/api/logs`
+- *Ingest_Censys_Recan_Web_Property_Data*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_Query_And_List_Related_Entities*: method=`post`, path=`/queryData`
+- *Run_Query_And_Get_Related_Incident_ARM_Id_and_Comment_Count*: method=`post`, path=`/queryData`
+
+**`keyvault`** (managedApi):
+- *Get_Censys_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Call_to_Fetch_Scan_Status*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/scans/@{body('Parse_JSON_for_Rescan_Response')?['result']?['tracked_scan_id']}`
+- *HTTP_Post_Request_For_Rescan*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/scans/rescan`
+- *HTTP_Call_to_Fetch_IOC_data*: method=`GET`, uri=`@variables('url_for_ioc_data')`
+
+**`workflow`** (builtin):
+- *CensysIncidentEnrichment*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('IncidentEnrichmentPlaybookName')))]`, triggerName=`When_an_HTTP_request_is_received`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CensysAlertRescan/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysAlertRescan/readme.md)*

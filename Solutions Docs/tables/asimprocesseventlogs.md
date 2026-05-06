@@ -189,10 +189,10 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
-| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
-| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
+| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
+| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
 
 ---
 
@@ -200,11 +200,11 @@ This table is ingested by the following connectors:
 
 ### Workbooks (1)
 
-**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
+**In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):** `Type == "microsoft.operationalinsights/workspaces"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
+| Workbook |
+|:-------------|
+| [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |
 
 ## Parsers Using This Table (2)
 
@@ -225,6 +225,28 @@ This table is ingested by the following connectors:
 This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/processeventnormalized`
+
+## Selection Criteria Summary (2 criteria, 3 total references)
+
+References by type: 2 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 2 | - | - | - | **2** |
+| `Type == "microsoft.operationalinsights/workspaces"` | - | 1 | - | - | **1** |
+| **Total** | **2** | **1** | **0** | **0** | **3** |
+
+### EventProduct / EventVendor
+
+| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Carbon Black Cloud` | `VMWare` | 2 | - | - | - | **2** |
+
+### Type
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `microsoft.operationalinsights/workspaces` | - | 1 | - | - | **1** |
 
 ---
 

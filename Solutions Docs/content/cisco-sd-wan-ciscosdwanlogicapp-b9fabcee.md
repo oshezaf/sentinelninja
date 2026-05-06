@@ -14,6 +14,51 @@ This playbook provides an end-to-end example of sending an email, posting a mess
 | **Solution** | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANLogicAPP/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **9** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azurecommunicationservicessms` | Managed | 1 | 3 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `jira` | Managed | 1 | 0 |
+| `jira_2` | Managed | 0 | 3 |
+| `outlook` | Managed | 1 | 0 |
+| `outlook_2` | Managed | 0 | 3 |
+| `service-now` | Managed | 1 | 0 |
+| `service-now_1` | Managed | 0 | 3 |
+| `teams` | Managed | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azurecommunicationservicessms`** (managedApi):
+- *Send_SMS_2*: method=`post`, path=`/v2/sms`
+- *Send_SMS_3*: method=`post`, path=`/v2/sms`
+- *Send_SMS*: method=`post`, path=`/v2/sms`
+
+**`jira_2`** (managedApi):
+- *Create_a_new_issue_(V3)_2*: method=`post`, path=`/v3/issue`
+- *Create_a_new_issue_(V3)_3*: method=`post`, path=`/v3/issue`
+- *Create_a_new_issue_(V3)*: method=`post`, path=`/v3/issue`
+
+**`outlook_2`** (managedApi):
+- *Send_an_email_(V2)_2*: method=`post`, path=`/v2/Mail`
+- *Send_an_email_(V2)_3*: method=`post`, path=`/v2/Mail`
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+**`service-now_1`** (managedApi):
+- *Create_Record_2*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
+- *Create_Record_3*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
+- *Create_Record*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
+
+**`teams`** (managedApi):
+- *Post_message_in_a_chat_or_channel_2*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Post_message_in_a_chat_or_channel_3*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+- *Post_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/@{encodeURIComponent('Flow bot')}/location/@{encodeURIComponent('Channel')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoSDWANLogicAPP/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANLogicAPP/readme.md)*

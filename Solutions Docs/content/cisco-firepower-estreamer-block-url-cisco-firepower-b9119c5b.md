@@ -14,6 +14,43 @@ This playbook allows blocking of FQDNs in Cisco Firepower, using a **Network Gro
 | **Solution** | [Cisco Firepower EStreamer](../solutions/cisco-firepower-estreamer.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockFQDN-NetworkGroup/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 5 |
+| `azuresentinel_1` | Managed | 0 | 1 |
+| `cisco-firepower-connector` | Managed | 0 | 10 |
+| `CiscoFirepowerConnector` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_incident_(V3):_No_URLs_found*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Add_comment_to_incident_(V3):_Network_Group_object_not_found*: method=`post`, path=`/Incidents/Comment`
+
+**`azuresentinel_1`** (managedApi):
+- *Add_comment_to_incident_(V3):_Network_Group_object_not_found_2*: method=`post`, path=`/Incidents/Comment`
+
+**`cisco-firepower-connector`** (managedApi):
+- *Create_the_FQDN_object*: method=`post`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/fqdns`
+- *Create_the_FQDN_object_2*: method=`post`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/fqdns`
+- *Retrieves_list_of_all_FQDN_objects*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/fqdns`
+- *Modifies_the_network_group_object_associated_with_the_specified_ID*: method=`put`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(body('Retrieves_the_network_group_object_associated_with_the_specified_ID')?['id'])}`
+- *Retrieves_the_network_group_object_associated_with_the_specified_ID*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group object')?['id'])}`
+- *Revoke_access:_Network_Group_object_not_found*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+- *Generate_token*: method=`post`, path=`/api/fmc_platform/v1/auth/generatetoken`
+- *Revoke_access:_Network_Group_object_not_found_2*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+- *Retrieves_list_of_all_network_group_objects*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups`
+- *Revoke_access*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoFirepower-BlockFQDN-NetworkGroup/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockFQDN-NetworkGroup/readme.md)*

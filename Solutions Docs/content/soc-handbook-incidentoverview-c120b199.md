@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Azure Sentinel"` | ✓ | ✗ | ? |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
 
 ---
 

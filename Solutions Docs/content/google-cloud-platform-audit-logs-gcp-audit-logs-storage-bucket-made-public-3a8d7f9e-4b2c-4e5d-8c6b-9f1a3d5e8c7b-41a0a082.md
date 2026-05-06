@@ -25,9 +25,9 @@ Detects when a Google Cloud Storage bucket is made publicly accessible by granti
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "gcs_bucket"`<br>`MethodName == "storage.setIamPermissions"`<br>`ServiceName == "storage.googleapis.com"` | ✓ | ✓ | ? |
 
 ---
 

@@ -22,9 +22,9 @@ Looks for anomalous number of resources creation or deployment activities in azu
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue in "microsoft.compute/virtualMachines/write,microsoft.resources/deployments/write"` | ? | ✗ | ? |
 
 ---
 

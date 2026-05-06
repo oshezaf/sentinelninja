@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.joesecurity.org/support](https://www.joesecurity.org/support) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Stefan Bühlmann |
 | **First Published** | 2025-09-12 |
 | **Last Updated** | 2026-02-18 |
@@ -137,7 +137,8 @@ This solution includes **2 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.0       | 13-02-2026                     | Initial Solution Release. <br/> Removed Manual Deployment Steps.|
+| 3.0.1       | 24-04-2026                     | Fix Azure templates. |
+| 3.0.0       | 13-02-2026                     | Initial Solution Release. <br/> Removed Manual Deployment Steps. |
 
 ---
 

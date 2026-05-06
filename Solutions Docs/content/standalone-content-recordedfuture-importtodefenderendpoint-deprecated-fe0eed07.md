@@ -14,6 +14,21 @@ DEPRECATED: This playbook is no longer functional. Microsoft has deprecated the 
 | **Solution** | Standalone Content |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/RecordedFuture-Block-IPs-and-Domains-on-Microsoft-Defender-for-Endpoint/RecordedFuture-ImportToDefenderEndpoint.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `microsoftgraphsecurity` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftgraphsecurity`** (managedApi):
+- *Submit_multiple_tiIndicators*: method=`post`, path=`/beta/security/tiIndicators/submitTiIndicators`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

@@ -59,36 +59,27 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (3)
 
-### Workbooks (7)
+### Workbooks (3)
 
-**In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):**
+**In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):** `InstanceName == "BNGF"`<br>`ObjectName == "Connections_New"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md) |  |
+| Workbook |
+|:-------------|
+| [Barracuda](../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.md) |
 
-**In solution [Forcepoint NGFW](../solutions/forcepoint-ngfw.md):**
+**In solution [Forcepoint NGFW](../solutions/forcepoint-ngfw.md):** `CounterName contains "Processor Time"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) |  |
+| Workbook |
+|:-------------|
+| [ForcepointNGFWAdvanced](../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.md) |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Barracuda](../content/github-only-barracuda-84e65401.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
-| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
 
 ## Resource Types
 
@@ -103,6 +94,34 @@ This table collects data from the following Azure resource types:
 - `microsoft.compute/virtualmachinescalesets`
 - `microsoft.azurestackhci/clusters`
 - `microsoft.hybridcontainerservice/provisionedclusters`
+
+## Selection Criteria Summary (2 criteria, 2 total references)
+
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `InstanceName == "BNGF"`<br>`ObjectName == "Connections_New"` | - | 1 | - | - | **1** |
+| `CounterName contains "Processor Time"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
+
+### CounterName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains Processor Time` | - | 1 | - | - | **1** |
+
+### InstanceName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `BNGF` | - | 1 | - | - | **1** |
+
+### ObjectName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Connections_New` | - | 1 | - | - | **1** |
 
 ---
 

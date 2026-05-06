@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OfficeActivity &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="officeactivity">OfficeActivity</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for OfficeActivity table in Azure Monitor Logs.</p>
 <table>
@@ -788,7 +788,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (26)</h2>
+<h2 id="solutions">Solutions (25)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -810,7 +810,6 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/teams.html">Teams</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
@@ -834,8 +833,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (104)</h2>
-<h3 id="analytic-rules">Analytic Rules (42)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (78)</h2>
+<h3 id="analytic-rules">Analytic Rules (33)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -855,18 +854,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong> <code>Operation == "New-InboxRule"</code><br><code>Parameters has "DeleteMessage"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-malicious-bec-inbox-rule-8ac77493-3cae-4840-8634-15fb23f8fb68-ae4ecd95.html">Malicious BEC Inbox Rule</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -911,15 +908,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-accessed-files-shared-by-temporary-external-user-bff058b2-500e-4ae5-bb49-a5b1423cbd5b-0f3d0272.html">Accessed files shared by temporary external user</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "FileAccessed,FileUploaded"</code><br><code>Operation in "MemberAdded,MemberRemoved"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-exchange-auditlog-disabled-194dd92e-d6e7-4249-85a5-273350a7f5ce-9595c198.html">Exchange AuditLog Disabled</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "Set-AdminAuditLogConfig"</code><br><code>UserType in "Admin,DcAdmin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-exchange-workflow-mailitemsaccessed-operation-anomaly-b4ceb583-4c44-4555-8ecf-39f572e827ba-0035b923.html">Exchange workflow MailItemsAccessed operation anomaly</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "MailItemsAccessed"</code><br><code>ResultStatus == "Succeeded"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-external-user-added-and-removed-in-short-timeframe-bff093b2-500e-4ae5-bb49-a5b1423cbd5b-5d676e58.html">External user added and removed in short timeframe</a></td>
@@ -931,35 +928,35 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-malicious-inbox-rule-7b907bf7-77d4-41d0-a208-5643ff75bf9a-809a0fef.html">Malicious Inbox Rule</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "New-InboxRule"</code><br><code>Parameters has "DeleteMessage"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code><br><code>ResultStatus in "Succeeded,True"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-multiple-teams-deleted-by-a-single-user-173f8699-6af5-484a-8b06-8c47ba89b380-fee08c77.html">Multiple Teams deleted by a single user</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "TeamDeleted"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-871ba14c-88ef-48aa-ad38-810f26760ca3-2182889a.html">Multiple users email forwarded to same destination</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"</code><br><code>Parameters has_any "ForwardTo"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-new-executable-via-office-fileuploaded-operation-d722831e-88f5-4e25-b106-4ef6e29f8c13-14098899.html">New executable via Office FileUploaded Operation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Operation contains "download"</code><br><code>Operation contains "upload"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-office-policy-tampering-fbd72eb8-087e-466b-bd54-1ca6ea08c6d3-dcc56d58.html">Office Policy Tampering</a></td>
-<td style="text-align: left;"><code>RecordType == "ExchangeAdmin"</code></td>
+<td style="text-align: left;"><code>ClientIP has "."</code><br><code>ClientIP has "["</code><br><code>RecordType == "ExchangeAdmin"</code><br><code>UserType in "Admin,DcAdmin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-office365-sharepoint-file-transfer-folders-above-threshold-8a547285-801c-4290-aa2e-5e7e20ca157d-1211cb69.html">Office365 Sharepoint File transfer Folders above threshold</a></td>
-<td style="text-align: left;"><code>OfficeWorkload has_any "OneDrive,SharePoint"</code></td>
+<td style="text-align: left;"><code>EventSource == "SharePoint"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>Operation has_any "FileDownloaded"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-office365-sharepoint-file-transfer-above-threshold-8b4f03e7-3460-4401-824d-e65a8dd464f0-55393788.html">Office365 Sharepoint File transfer above threshold</a></td>
-<td style="text-align: left;"><code>OfficeWorkload has_any "OneDrive,SharePoint"</code></td>
+<td style="text-align: left;"><code>EventSource == "SharePoint"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>Operation has_any "FileDownloaded"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-rare-and-potentially-high-risk-office-operations-957cb240-f45d-4491-9ba5-93430a3c08be-0f639b30.html">Rare and potentially high-risk Office operations</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"</code><br><code>UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-5dd76a87-9f87-4576-bab3-268b0e2b338b-ccd6f2dd.html">SharePointFileOperation via devices with previously unseen user agents</a></td>
@@ -982,7 +979,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-executable-uploaded-to-sharepoint-document-management-site-ba5e608f-7879-4927-8b0d-a9948b4fe6f3-a46cc5a8.html">Dataverse - Executable uploaded to SharePoint document management site</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code><br><code>Operation == "FileUploaded"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.html">Dataverse - Malware found in SharePoint document management site</a></td>
@@ -990,7 +987,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-mass-download-from-sharepoint-document-management-95e02f1b-5886-4043-8f0e-a42e6e23330f-26e23cc8.html">Dataverse - Mass download from SharePoint document management</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code><br><code>Operation == "FileDownloaded"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.html">Dataverse - New user agent type that was not used with Office 365</a></td>
@@ -1098,54 +1095,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-anomalous-login-followed-by-teams-action-2b701288-b428-4fb8-805e-e4372c574786-2da015d8.html">Anomalous login followed by Teams action</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&amp;-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.html">Detecting Impossible travel with mailbox permission tampering &amp; Privilege Escalation attempt</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.html">Europium - Hash and IP IOCs - September 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-high-risk-office-operation-conducted-by-ip-address-that-recently-attempted-to-log-int-9adbd1c3-a4be-44ef-ac2f-503fd25692ee-6176c458.html">High risk Office operation conducted by IP Address that recently attempted to log into a disabled account</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.html">Malformed user agent</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.html">Mercury - Domain, Hash and IP IOCs - August 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.html">Multiple Password Reset by user</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "AzureActiveDirectory"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-nrt-malicious-inbox-rule-b79f6190-d104-4691-b7db-823e05980895-a7d65038.html">NRT Malicious Inbox Rule</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-nrt-multiple-users-email-forwarded-to-same-destination-3b05727d-a8d1-477d-bbdd-d957da96ac7b-d149a49e.html">NRT Multiple users email forwarded to same destination</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (30)</h3>
+<h3 id="hunting-queries">Hunting Queries (26)</h3>
 <p><strong>In solution <a href="../solutions/business-email-compromise-financial-fraud.html">Business Email Compromise - Financial Fraud</a>:</strong></p>
 <table>
 <thead>
@@ -1176,27 +1126,27 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-anomalous-access-to-other-users'-mailboxes-271e8881-3044-4332-a5f4-42264c2e0315-9868f994.html">Anomalous access to other users' mailboxes</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Operation == "MailItemsAccessed"</code><br><code>ResultStatus == "Succeeded"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-bots-added-to-multiple-teams-9eb64924-ec8d-44d0-b1f2-10665150fb74-b469374c.html">Bots added to multiple teams</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "BotAddedToTeam"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-exes-with-double-file-extension-and-access-summary-d12580c2-1474-4125-a8a3-553f50d91215-647a7b68.html">Exes with double file extension and access summary</a></td>
-<td style="text-align: left;"><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>OfficeObjectId has ".exe."</code><br><code>Operation in "FileAccessed,FileDownloaded"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-external-user-added-and-removed-in-a-short-timeframe-119d9e1c-afcc-4d23-b239-cdb4e7bf851c-733c7514.html">External user added and removed in a short timeframe</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "MemberAdded,MemberRemoved"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-external-user-from-a-new-organisation-added-to-teams-6fce5baf-bfc2-4c56-a6b7-9c4733fc5a45-c611f8a9.html">External user from a new organisation added to Teams</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "MemberAdded"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-files-uploaded-to-teams-and-access-summary-90e198a9-efb6-4719-ad89-81b8e93633a7-969f9eb8.html">Files uploaded to teams and access summary</a></td>
-<td style="text-align: left;"><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>Operation in "FileAccessed,FileDownloaded,FileUploaded"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code><br><code>UserId != "app@sharepoint"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-mail-redirect-via-exo-transport-rule-9891684a-1e3a-4546-9403-3439513cbc70-09a65cff.html">Mail redirect via ExO transport rule</a></td>
@@ -1204,31 +1154,31 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-multiple-teams-deleted-by-a-single-user-64990414-b015-4edf-bef0-343b741e68c5-4d5737ab.html">Multiple Teams deleted by a single user</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "TeamDeleted"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-a1551ae4-f61c-4bca-9c57-4d0d681db2e9-2e204a61.html">Multiple users email forwarded to same destination</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"</code><br><code>Parameters has_any "ForwardTo"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-new-admin-account-activity-seen-which-was-not-seen-historically-723c5f46-133f-4f1e-ada6-5c138f811d75-81219d98.html">New Admin account activity seen which was not seen historically</a></td>
-<td style="text-align: left;"><code>RecordType == "ExchangeAdmin"</code></td>
+<td style="text-align: left;"><code>RecordType == "ExchangeAdmin"</code><br><code>UserType in "Admin,DcAdmin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-new-windows-reserved-filenames-staged-on-office-file-services-641ecd2d-27c9-4f05-8433-8205096b09fc-56b1939d.html">New Windows Reserved Filenames staged on Office file services</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UserAgent !has "Mac OS"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-non-owner-mailbox-login-activity-0a8f410d-38b5-4d75-90da-32b472b97230-5ba0724d.html">Non-owner mailbox login activity</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>Logon_Type != "Owner"</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "MailboxLogin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-office-mail-forwarding-hunting-version-d49fc965-aef3-49f6-89ad-10cc4697eb5b-08bdc191.html">Office Mail Forwarding - Hunting Version</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>ClientIP has "."</code><br><code>ClientIP has "["</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Parameters contains "ForwardTo"</code><br><code>Parameters contains "ForwardingSmtpAddress"</code><br><code>Parameters contains "RedirectTo"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-powershell-or-non-browser-mailbox-login-activity-49a4f65a-fe18-408e-afec-042fde93d3ce-d9f865de.html">PowerShell or non-browser mailbox login activity</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "MailboxLogin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-previously-unseen-bot-or-application-added-to-teams-bf76e508-9282-4cf1-9cc1-5c20c3dea2ee-9699a7e1.html">Previously unseen bot or application added to Teams</a></td>
@@ -1240,23 +1190,23 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-f2367171-1514-4c67-88ef-27434b6a1093-8d3d8113.html">SharePointFileOperation via devices with previously unseen user agents</a></td>
-<td style="text-align: left;"><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>Operation in "FileDownloaded,FileUploaded"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-e3d24cfd-b2a1-4ba7-8f80-0360892f9d57-bf177f44.html">SharePointFileOperation via previously unseen IPs</a></td>
-<td style="text-align: left;"><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>Operation in "FileDownloaded,FileUploaded"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-user-added-to-teams-and-immediately-uploads-file-3d6d0c04-7337-40cf-ace6-c471d442356d-ae882f16.html">User added to Teams and immediately uploads file</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "FileUploaded,MemberAdded"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-user-made-owner-of-multiple-teams-558f15dd-3171-4b11-bf24-31c0610a20e0-775b29b2.html">User made Owner of multiple teams</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "MemberRoleChanged"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-windows-reserved-filenames-staged-on-office-file-services-61c28cd7-3139-4731-8ea7-2cbbeabb4684-b20eb95c.html">Windows Reserved Filenames staged on Office file services</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UserAgent !has "Mac OS"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1305,45 +1255,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.html">Rare domains seen in Cloud Logs</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.html">Tracking Password Changes</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.html">New Location Sign in with Mail forwarding activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (32)</h3>
+<h3 id="workbooks">Workbooks (19)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -1359,22 +1271,20 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong> <code>OperationName contains "PIM"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>RecordType == "MicrosoftTeams"</code></p>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "Add"</code><br><code>OperationName contains "Audit"</code><br><code>OperationName contains "Change"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Log"</code><br><code>OperationName contains "Monitor"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "Write"</code><br><code>OperationName contains "reset"</code><br><code>RecordType == "MicrosoftTeams"</code></p>
 <table>
 <thead>
 <tr>
@@ -1387,7 +1297,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code></p>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"</code><br><code>ExternalAccess == "True"</code><br><code>Logon_Type != "Owner"</code><br><code>OfficeObjectId has ".exe."</code><br><code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"</code><br><code>OperationName == "Sign-in activity"</code><br><code>OperationName != "Consent to application"</code><br><code>Parameters contains "ForwardTo"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></p>
 <table>
 <thead>
 <tr>
@@ -1400,7 +1310,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code></p>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"</code><br><code>ExternalAccess == "True"</code><br><code>Logon_Type != "Owner"</code><br><code>OfficeObjectId has ".exe."</code><br><code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"</code><br><code>OperationName == "Sign-in activity"</code><br><code>OperationName != "Consent to application"</code><br><code>Parameters contains "ForwardTo"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></p>
 <table>
 <thead>
 <tr>
@@ -1441,7 +1351,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>OfficeWorkload == "Exchange"</code><br><code>RecordType == "ExchangeAdmin"</code></p>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>OfficeWorkload == "Exchange"</code><br><code>Operation !contains "access"</code><br><code>Operation contains "policy"</code><br><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code><br><code>RecordType == "ExchangeAdmin"</code></p>
 <table>
 <thead>
 <tr>
@@ -1465,11 +1375,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-exchangeonline-c35f597f.html">ExchangeOnline</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
+<td style="text-align: left;"><code>ExternalAccess == "True"</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"</code><br><code>Operation contains "HardDelete"</code><br><code>UserType == "Admin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-office365-0c09583c.html">Office365</a></td>
-<td style="text-align: left;"><code>OfficeWorkload in "Exchange,OneDrive,SharePoint"</code></td>
+<td style="text-align: left;"><code>ExternalAccess == "True"</code><br><code>OfficeWorkload in "Exchange,OneDrive,SharePoint"</code><br><code>Operation in "FileDownloaded,FileUploaded,MailboxLogin"</code><br><code>Operation contains "File"</code><br><code>Operation contains "Folder"</code><br><code>Operation contains "add"</code><br><code>Operation contains "create"</code><br><code>Operation contains "delete"</code><br><code>Operation contains "group"</code><br><code>Operation contains "update"</code><br><code>Operation contains "user"</code><br><code>UserType == "Admin"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-365-sharepointandonedrive-f8028d14.html">SharePointAndOneDrive</a></td>
@@ -1493,7 +1403,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"</code><br><code>Logon_Type != "Owner"</code><br><code>OfficeObjectId has ".exe."</code><br><code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"</code><br><code>OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"</code><br><code>OperationName != "Consent to application"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "delet"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code><br><code>OperationName has "Create"</code><br><code>OperationName has_any "Create,Update"</code><br><code>OperationName has_any "Ip,Security Rule"</code><br><code>Parameters contains "ForwardTo"</code><br><code>Parameters contains "ForwardingSmtpAddress"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></p>
 <table>
 <thead>
 <tr>
@@ -1506,37 +1416,33 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong> <code>Operation contains "file"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>Operation in "New-InboxRule,Set-Mailbox"</code><br><code>OperationName == "Consent to application"</code><br><code>OperationName == "Disable Strong Authentication"</code><br><code>OperationName contains "password"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"</code><br><code>OperationName has_any "directory write,policy update,role assignment,role update"</code></p>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"</code></p>
 <table>
 <thead>
 <tr>
@@ -1549,7 +1455,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/teams.html">Teams</a>:</strong> <code>OfficeWorkload == "MicrosoftTeams"</code><br><code>RecordType == "SharePointFileOperation"</code></p>
+<p><strong>In solution <a href="../solutions/teams.html">Teams</a>:</strong> <code>CommunicationType == "Team"</code><br><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"</code><br><code>Operation contains "Added"</code><br><code>Operation contains "Created"</code><br><code>Operation contains "Deleted"</code><br><code>Operation contains "Removed"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></p>
 <table>
 <thead>
 <tr>
@@ -1562,7 +1468,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>RecordType == "MicrosoftTeams"</code></p>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>RecordType == "MicrosoftTeams"</code></p>
 <table>
 <thead>
 <tr>
@@ -1572,69 +1478,6 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-advancedworkbookconcepts-3495e806.html">AdvancedWorkbookConcepts</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-exchangeonline-663577e1.html">ExchangeOnline</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftteams-429824b1.html">MicrosoftTeams</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-office365-fa05d9ea.html">Office365</a></td>
-<td style="text-align: left;"><code>OfficeWorkload in "Exchange,OneDrive,SharePoint"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sharepointandonedrive-a82e2f82.html">SharePointAndOneDrive</a></td>
-<td style="text-align: left;"><code>OfficeWorkload in "OneDrive,SharePoint"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>OperationName == "Add member to group"</code><br><code>OperationName in "Set domain authentication,Set federation settings on domain"</code><br><code>OperationName has_any "Add service principal,Certificates</code><br><code>secrets management"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1671,8 +1514,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (17 criteria, 54 total references)</h2>
-<p>References by type: 1 connectors, 51 content items, 1 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (47 criteria, 60 total references)</h2>
+<p>References by type: 1 connectors, 57 content items, 1 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1688,53 +1531,21 @@
 <tr>
 <td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">15</td>
+<td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>15</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>RecordType == "ExchangeAdmin"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>RecordType == "SharePointFileOperation"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>OfficeWorkload has_any "OneDrive,SharePoint"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1742,7 +1553,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>RecordType == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "TeamDeleted"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1750,7 +1561,39 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"</code><br><code>Parameters has_any "ForwardTo"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventSource == "SharePoint"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>Operation has_any "FileDownloaded"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Operation in "FileDownloaded,FileUploaded"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UserAgent !has "Mac OS"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"</code><br><code>ExternalAccess == "True"</code><br><code>Logon_Type != "Owner"</code><br><code>OfficeObjectId has ".exe."</code><br><code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OfficeWorkload has_any "OneDrive,SharePoint"</code><br><code>OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"</code><br><code>OperationName == "Sign-in activity"</code><br><code>OperationName != "Consent to application"</code><br><code>Parameters contains "ForwardTo"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -1766,7 +1609,207 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OfficeWorkload == "AzureActiveDirectory"</code></td>
+<td style="text-align: left;"><code>Operation == "New-InboxRule"</code><br><code>Parameters has "DeleteMessage"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "Set-AdminAuditLogConfig"</code><br><code>UserType in "Admin,DcAdmin"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "FileAccessed,FileUploaded"</code><br><code>Operation in "MemberAdded,MemberRemoved"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "MailItemsAccessed"</code><br><code>ResultStatus == "Succeeded"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "New-InboxRule"</code><br><code>Parameters has "DeleteMessage"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code><br><code>ResultStatus in "Succeeded,True"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ClientIP has "."</code><br><code>ClientIP has "["</code><br><code>RecordType == "ExchangeAdmin"</code><br><code>UserType in "Admin,DcAdmin"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Operation contains "download"</code><br><code>Operation contains "upload"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"</code><br><code>UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code><br><code>Operation == "FileUploaded"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "SharePoint"</code><br><code>Operation == "FileDownloaded"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Operation == "MailItemsAccessed"</code><br><code>ResultStatus == "Succeeded"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeObjectId has ".exe."</code><br><code>Operation in "FileAccessed,FileDownloaded"</code><br><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "MemberAdded,MemberRemoved"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "MemberAdded"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "BotAddedToTeam"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation == "MemberRoleChanged"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RecordType == "ExchangeAdmin"</code><br><code>UserType in "Admin,DcAdmin"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Logon_Type != "Owner"</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "MailboxLogin"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ClientIP has "."</code><br><code>ClientIP has "["</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Parameters contains "ForwardTo"</code><br><code>Parameters contains "ForwardingSmtpAddress"</code><br><code>Parameters contains "RedirectTo"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Operation == "MailboxLogin"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RecordType == "SharePointFileOperation"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Operation in "FileAccessed,FileDownloaded,FileUploaded"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code><br><code>UserId != "app@sharepoint"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "FileUploaded,MemberAdded"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OperationName contains "PIM"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "Add"</code><br><code>OperationName contains "Audit"</code><br><code>OperationName contains "Change"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Log"</code><br><code>OperationName contains "Monitor"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "Write"</code><br><code>OperationName contains "reset"</code><br><code>RecordType == "MicrosoftTeams"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1782,7 +1825,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>RecordType == "ExchangeAdmin"</code></td>
+<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>Operation !contains "access"</code><br><code>Operation contains "policy"</code><br><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code><br><code>RecordType == "ExchangeAdmin"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1790,7 +1833,15 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OfficeWorkload in "Exchange,OneDrive,SharePoint"</code></td>
+<td style="text-align: left;"><code>ExternalAccess == "True"</code><br><code>OfficeWorkload == "Exchange"</code><br><code>Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"</code><br><code>Operation contains "HardDelete"</code><br><code>UserType == "Admin"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ExternalAccess == "True"</code><br><code>OfficeWorkload in "Exchange,OneDrive,SharePoint"</code><br><code>Operation in "FileDownloaded,FileUploaded,MailboxLogin"</code><br><code>Operation contains "File"</code><br><code>Operation contains "Folder"</code><br><code>Operation contains "add"</code><br><code>Operation contains "create"</code><br><code>Operation contains "delete"</code><br><code>Operation contains "group"</code><br><code>Operation contains "update"</code><br><code>Operation contains "user"</code><br><code>UserType == "Admin"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1806,7 +1857,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code></td>
+<td style="text-align: left;"><code>ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"</code><br><code>Logon_Type != "Owner"</code><br><code>OfficeObjectId has ".exe."</code><br><code>OfficeWorkload == "Exchange"</code><br><code>OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"</code><br><code>OfficeWorkload has_any "Exchange,OneDrive"</code><br><code>OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"</code><br><code>OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"</code><br><code>OperationName != "Consent to application"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "delet"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code><br><code>OperationName has "Create"</code><br><code>OperationName has_any "Create,Update"</code><br><code>OperationName has_any "Ip,Security Rule"</code><br><code>Parameters contains "ForwardTo"</code><br><code>Parameters contains "ForwardingSmtpAddress"</code><br><code>Parameters has "Deleted Items"</code><br><code>Parameters has "Junk Email"</code><br><code>RecordType in "ExchangeAdmin,SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1814,7 +1865,39 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"</code><br><code>OperationName has_any "directory write,policy update,role assignment,role update"</code></td>
+<td style="text-align: left;"><code>Operation contains "file"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Operation in "New-InboxRule,Set-Mailbox"</code><br><code>OperationName == "Consent to application"</code><br><code>OperationName == "Disable Strong Authentication"</code><br><code>OperationName contains "password"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommunicationType == "Team"</code><br><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"</code><br><code>Operation contains "Added"</code><br><code>Operation contains "Created"</code><br><code>Operation contains "Deleted"</code><br><code>Operation contains "Removed"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>RecordType == "MicrosoftTeams"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1824,10 +1907,179 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>51</strong></td>
+<td style="text-align: center;"><strong>57</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>54</strong></td>
+<td style="text-align: center;"><strong>60</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="clientip">ClientIP</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has .</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has [</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="clientinfostring">ClientInfoString</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="communicationtype">CommunicationType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Team</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="eventsource">EventSource</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>SharePoint</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="externalaccess">ExternalAccess</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>True</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="logon_type">Logon_Type</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!= Owner</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="officeobjectid">OfficeObjectId</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has .exe.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1847,10 +2099,10 @@
 <tr>
 <td style="text-align: left;"><code>Exchange</code></td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;">21</td>
+<td style="text-align: center;">19</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;"><strong>20</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>MicrosoftTeams</code></td>
@@ -1895,10 +2147,10 @@
 <tr>
 <td style="text-align: left;"><code>AzureActiveDirectory</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>has_any Exchange</code></td>
@@ -1926,6 +2178,413 @@
 </tr>
 </tbody>
 </table>
+<h3 id="operation">Operation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>FileUploaded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>New-InboxRule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MemberAdded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FileDownloaded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Set-Mailbox</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MemberRemoved</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MailboxLogin</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FileAccessed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>TeamDeleted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Set-InboxRule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MemberRoleChanged</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MailItemsAccessed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Add-MailboxPermission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any FileDownloaded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>BotAddedToTeam</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Set-AdminAuditLogConfig</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains download</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains upload</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Add-MailboxFolderPermission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>New-ManagementRoleAssignment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Set-TransportRule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!contains access</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains policy</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Remove-MailboxPermission</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>UpdateFolderPermissions</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains HardDelete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains File</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Folder</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains add</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains group</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains file</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AddFolderPermissions</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AddedToGroup</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>GroupAdded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ModifyFolderPermissions</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PermissionLevelAdded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Remove-ConditionalAccessPolicy</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Set-ConditionalAccessPolicy</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SharingSet</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AppInstalled</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>TeamsAdminAction</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Added</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Created</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Deleted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Removed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <h3 id="operationname">OperationName</h3>
 <table>
 <thead>
@@ -1940,7 +2599,127 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>has_any Add directory role member</code></td>
+<td style="text-align: left;"><code>Add member to role</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Add user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Reset user password</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Update user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains PIM</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Consent to application</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Sign-in activity</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= Consent to application</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NetworkSecurityGroupEvents</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Remove</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ApplicationGatewayFirewall</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AzureFirewallIDSLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Add</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1948,7 +2727,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any Add member to role</code></td>
+<td style="text-align: left;"><code>contains Audit</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1956,7 +2735,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any Add user</code></td>
+<td style="text-align: left;"><code>contains Change</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1964,7 +2743,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any Create user</code></td>
+<td style="text-align: left;"><code>contains Log</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1972,7 +2751,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any Role assignment</code></td>
+<td style="text-align: left;"><code>contains Monitor</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1980,7 +2759,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any Update user</code></td>
+<td style="text-align: left;"><code>contains Write</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1988,7 +2767,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any directory write</code></td>
+<td style="text-align: left;"><code>contains reset</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1996,7 +2775,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any policy update</code></td>
+<td style="text-align: left;"><code>!contains external</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2004,7 +2783,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any role assignment</code></td>
+<td style="text-align: left;"><code>!contains invite</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2012,7 +2791,254 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any role update</code></td>
+<td style="text-align: left;"><code>!contains licnense</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains group</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains member</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains principal</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains role</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Create Deployment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Create or Update Virtual Machine</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Create role assignment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>List Storage Account Keys</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Set domain authentication</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Set federation settings on domain</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains delet</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains remove</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Ip</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Security Rule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Disable Strong Authentication</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains password</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AzureFirewallThreatIntelLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has Deleted Items</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Junk Email</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains ForwardTo</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has DeleteMessage</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any ForwardTo</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains ForwardingSmtpAddress</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains RedirectTo</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2060,9 +3086,148 @@
 </tr>
 </tbody>
 </table>
+<h3 id="resultstatus">ResultStatus</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Succeeded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>True</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sourcerelativeurl">SourceRelativeUrl</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has Microsoft Teams Chat Files</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="useragent">UserAgent</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!has Mac OS</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="userid">UserId</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has_any NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= app@sharepoint</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="usertype">UserType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Admin</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DcAdmin</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

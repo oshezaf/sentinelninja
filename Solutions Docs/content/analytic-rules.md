@@ -8,7 +8,7 @@
 
 Analytic rules are the core detection mechanism in Microsoft Sentinel. They run scheduled queries against your data to identify security threats, anomalies, and suspicious activities. When a rule's conditions are met, it generates alerts that can trigger incidents for investigation. [Learn more](https://learn.microsoft.com/azure/sentinel/detect-threats-built-in)
 
-**2178 analytic rules** across all Microsoft Sentinel solutions.
+**2181 analytic rules** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
@@ -36,7 +36,7 @@ Analytic rules are the core detection mechanism in Microsoft Sentinel. They run 
 | [S](analytic-rules-s.md) | 183 |
 | [T](analytic-rules-t.md) | 201 |
 | [U](analytic-rules-u.md) | 47 |
-| [V](analytic-rules-v.md) | 84 |
+| [V](analytic-rules-v.md) | 87 |
 | [W](analytic-rules-w.md) | 11 |
 | [X](analytic-rules-x.md) | 4 |
 | [Z](analytic-rules-z.md) | 20 |

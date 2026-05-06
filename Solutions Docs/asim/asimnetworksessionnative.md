@@ -45,11 +45,9 @@ The following connectors provide data for this parser:
 
 | Connector | Solution |
 |:----------|:---------|
-| [CiscoMerakiMultiRule](../connectors/ciscomerakimultirule.md) | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md) |
 | [SynqlyIntegrationConnector](../connectors/synqlyintegrationconnector.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
-| [carbonBlackAWSS3](../connectors/carbonblackawss3.md) | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 
-**Solutions:** [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md), [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md), [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
+**Solutions:** [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 
 ## References
 

@@ -25,9 +25,9 @@ Identifies a match for a Code Injection based attack in the App Gateway WAF logs
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AGWFirewallLogs`](../tables/agwfirewalllogs.md) | `Action in "Blocked,Matched"`<br>`Message has "File Inclusion"`<br>`Message has "Injection"` | ✓ | ✗ | ? |
 
 ---
 

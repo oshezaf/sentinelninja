@@ -25,9 +25,9 @@ This alert leverages Defender for IoT to detect an unusually high bandwidth whic
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName in "ARP Spoofing,Abnormal Traffic Bandwidth,Abnormal Traffic Bandwidth Between Devices,ICMP Flooding"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ? |
 
 ---
 

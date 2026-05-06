@@ -14,6 +14,26 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [Neustar IP GeoPoint](../solutions/neustar-ip-geopoint.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint/Playbooks/Neustar-GetIPGeoInfo/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`function`** (builtin):
+- *GetIPGeoInfo*: method=`GET`, functionId=`[concat(variables('NeustarIPGeoPointFuntionAppId'), '/functions/GetIPGeoInfo')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Neustar-GetIPGeoInfo/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Neustar%20IP%20GeoPoint/Playbooks/Neustar-GetIPGeoInfo/readme.md)*

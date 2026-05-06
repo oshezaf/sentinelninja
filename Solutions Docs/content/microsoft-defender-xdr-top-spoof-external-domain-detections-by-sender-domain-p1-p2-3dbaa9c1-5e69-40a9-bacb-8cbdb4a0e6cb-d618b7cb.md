@@ -22,9 +22,9 @@ This query visualises total emails with Phish-Spoof-external domain detections s
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DetectionMethods has_any "Phish"`<br>`EmailDirection == "Inbound"` | ✓ | ✗ | ? |
 
 ---
 

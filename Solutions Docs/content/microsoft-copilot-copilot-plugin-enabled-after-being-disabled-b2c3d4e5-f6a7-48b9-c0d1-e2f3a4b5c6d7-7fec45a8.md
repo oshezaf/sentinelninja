@@ -23,9 +23,9 @@ Detects when a Copilot plugin is re-enabled after being previously disabled. Thi
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CopilotActivity`](../tables/copilotactivity.md) |  | ✓ | ✗ | ? |
 
 ---
 

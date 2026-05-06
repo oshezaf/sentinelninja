@@ -22,9 +22,9 @@ Visualises malicious URL clicks that were allowed through Safe Links over time, 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | `IsClickedThrough == "1"` | ✓ | ✗ | ? |
 
 ---
 

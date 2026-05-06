@@ -25,9 +25,9 @@ Identifies Office operations that are typically rare and can provide capabilitie
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"`<br>`UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"` | ✓ | ✗ | ? |
 
 ---
 

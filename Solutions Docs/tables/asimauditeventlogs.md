@@ -178,10 +178,10 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
-| [[DEPRECATED] CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
-| [Workday User Activity](../connectors/workdayccpdefinition.md) |  |
+| [Workday User Activity](../connectors/workdayccpdefinition.md) | `EventProduct == "Workday"` |
 
 ---
 
@@ -221,20 +221,24 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/auditeventnormalized`
 
-## Selection Criteria Summary (1 criteria, 2 total references)
+## Selection Criteria Summary (3 criteria, 4 total references)
 
-References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 2 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventVendor == "Workday"` | - | 2 | - | - | **2** |
-| **Total** | **0** | **2** | **0** | **0** | **2** |
+| `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
+| `EventProduct == "Workday"` | 1 | - | - | - | **1** |
+| **Total** | **2** | **2** | **0** | **0** | **4** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 |  | `Workday` | - | 2 | - | - | **2** |
+| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
+| `Workday` |  | 1 | - | - | - | **1** |
 
 ---
 

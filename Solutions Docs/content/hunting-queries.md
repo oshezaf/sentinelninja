@@ -8,7 +8,7 @@
 
 Hunting queries enable proactive threat hunting by security analysts. Unlike analytic rules that run automatically, hunting queries are designed for manual investigation to uncover hidden threats, explore suspicious patterns, and identify indicators of compromise that automated detection may have missed. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting)
 
-**2313 hunting queries** across all Microsoft Sentinel solutions.
+**2317 hunting queries** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -933,6 +933,8 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [HTA Startup Persistence](github-only-hta-startup-persistence-10d275ce-bb52-41b7-b67e-05b974ed1179-9f00709f.md) | Ransomware | 🔗 GitHub Only |
 | [Hunt for Admin email access](microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.md) | PrivilegeEscalation | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Hunt for Admin email access](github-only-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-d5705ebe.md) | PrivilegeEscalation | 🔗 GitHub Only |
+| [Hunt for alerts correlated with Teams messages](microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.md) ⚠️ | InitialAccess, Discovery | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Hunt for alerts correlated with Teams messages](github-only-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-5cff556f.md) | InitialAccess, Discovery | 🔗 GitHub Only |
 | [Hunt for email bombing attacks](microsoft-defender-xdr-hunt-for-email-bombing-attacks-dd4a480b-aa24-4b62-b1f3-f538d8abbdfb-5261bafb.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Hunt for email bombing attacks](github-only-hunt-for-email-bombing-attacks-24eb9c13-c188-4b3c-8e89-654e56ce4c56-4d5b0646.md) | InitialAccess | 🔗 GitHub Only |
 | [Hunt for email conversation take over attempts](microsoft-defender-xdr-hunt-for-email-conversation-take-over-attempts-fb46ca1b-0b46-4d9c-b3b3-2f8f807e9f72-2af16c6e.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -943,6 +945,8 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Hunt for malicious messages using External Threat Intelligence](github-only-hunt-for-malicious-messages-using-external-threat-intelligence-4dcb872f-9b39-4b95-8f30-3664f9f70dc2-9728c854.md) | InitialAccess | 🔗 GitHub Only |
 | [Hunt for malicious URLs using external IOC source](microsoft-defender-xdr-hunt-for-malicious-urls-using-external-ioc-source-57f95ba7-938d-4a76-b411-c01034c0d167-96846dc9.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Hunt for malicious URLs using external IOC source](github-only-hunt-for-malicious-urls-using-external-ioc-source-57f95ba7-938d-4a76-b411-c01034c0d167-931ce69c.md) | InitialAccess | 🔗 GitHub Only |
+| [Hunt for RMM tool execution following Teams messages](microsoft-defender-xdr-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-962a0f7b.md) ⚠️ | InitialAccess, Execution | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Hunt for RMM tool execution following Teams messages](github-only-hunt-for-rmm-tool-execution-following-teams-messages-a2ad014d-0a3a-45eb-ad58-b20532b86015-2774ed0b.md) | InitialAccess, Execution | 🔗 GitHub Only |
 | [Hunt for TABL changes](microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.md) | DefenseEvasion | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Hunt for TABL changes](github-only-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-e8de7769.md) | DefenseEvasion | 🔗 GitHub Only |
 | [Hunting for sender patterns](microsoft-defender-xdr-hunting-for-sender-patterns-68aa199c-259b-4bb0-8e7a-8ed6f96c5525-4214a903.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |

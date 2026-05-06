@@ -14,6 +14,27 @@ This playbook allows blocking an IP outbound from protected assets in Zero Netwo
 | **Solution** | [ZeroNetworks](../solutions/zeronetworks.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddBlockOutboundRule/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `ZeroNetworksConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`ZeroNetworksConnector`** (customApi):
+- *Create_Outbound_Block_rule*: method=`post`, path=`/protection/rules/outbound-block`
+- *Encode_IP_Address_to_AssetId*: method=`get`, path=`/entities/encode-ip`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ZeroNetworksSegment-AddBlockOutboundRule/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddBlockOutboundRule/readme.md)*

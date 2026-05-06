@@ -14,6 +14,22 @@ Send Microsoft Sentinel Incident To Cyware Orchestrate
 | **Solution** | [Cyware](../solutions/cyware.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware/Playbooks/Send_Incident_To_Cyware_Orchestrate/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *HTTP*: method=`POST`, uri=`@{parameters('COWebHookURL')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Send_Incident_To_Cyware_Orchestrate/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyware/Playbooks/Send_Incident_To_Cyware_Orchestrate/readme.md)*

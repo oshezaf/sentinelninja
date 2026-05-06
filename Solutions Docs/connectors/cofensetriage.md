@@ -62,11 +62,11 @@ The [Cofense-Triage](https://cofense.com/product-services/cofense-triage/) data 
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`Cofense_Triage_failed_indicators_CL`](../tables/cofense-triage-failed-indicators-cl.md) 🔶 | ? | ✓ | ? |
-| [`Report_links_data_CL`](../tables/report-links-data-cl.md) 🔶 | ? | ✓ | ? |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Cofense_Triage_failed_indicators_CL`](../tables/cofense-triage-failed-indicators-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Report_links_data_CL`](../tables/report-links-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -14,6 +14,23 @@ This playbook gets triggered every hour and perform the following actions: 1. Ge
 | **Solution** | [Australian Cyber Security Centre](../solutions/australian-cyber-security-centre.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre/Playbooks/AusCtisExportTaggedIndicators/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *HTTP_appendTags_request*: method=`POST`, uri=`[uriComponentToString(uri(variables('azure'), 'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/indicators/@{items(''For_each_filtered_indicator'')?[''name'']}/appendTags?api-version=2021-10-01'))]`
+- *HTTP_POST_stix_bundle_to_TAXII_server*: method=`POST`, uri=`@{parameters('TAXIIServerRootURL')}/collections/@{parameters('CollectionID')}/objects/`
+- *HTTP_queryIndicators_request*: method=`POST`, uri=`[uriComponentToString(uri(variables('azure'),'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/queryIndicators?api-version=2022-06-01-preview'))]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AusCtisExportTaggedIndicators/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Australian%20Cyber%20Security%20Centre/Playbooks/AusCtisExportTaggedIndicators/readme.md)*

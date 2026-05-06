@@ -14,6 +14,37 @@ Given a domain or set of domains associated with an incident return all Iris Inv
 | **Solution** | [DomainTools](../solutions/domaintools.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 9 |
+| `farsightdnsdb` | Managed | 1 | 1 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_RData_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Iris_Investigate_Table_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_Pivoting_Data_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_Malicious_tags_to_Incident*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Add_Error_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`farsightdnsdb`** (managedApi):
+- *RData_Lookup_with_RRType*: method=`get`, path=`/lookup/rdata/name/@{encodeURIComponent(items('For_each_domain_list'))}/ANY`
+
+**`function`** (builtin):
+- *InvestigateDomain*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/InvestigateDomain')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DomainTools-Iris-Investigate-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/readme.md)*

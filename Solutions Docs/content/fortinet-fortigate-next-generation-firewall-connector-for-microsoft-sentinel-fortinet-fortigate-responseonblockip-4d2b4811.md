@@ -14,6 +14,36 @@ This playbook allows the SOC users to automatically response to Microsoft Sentin
 | **Solution** | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](../solutions/fortinet-fortigate-next-generation-firewall-connector-for-microsoft-sentinel.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnIP/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `fortinetconnector` | Managed | 0 | 2 |
+| `teams` | Managed | 1 | 0 |
+| `FortinetCustomConnector` | Custom | 1 | 0 |
+| `function` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`fortinetconnector`** (managedApi):
+- *Create_an_address_object*: method=`post`, path=`/api/v2/cmdb/firewall/address`
+- *Update_address_group*: method=`put`, path=`/api/v2/cmdb/firewall/addrgrp/@{encodeURIComponent(variables('Pre-definedGroupName'))}`
+
+**`function`** (builtin):
+- *Address_group_details*: method=`GET`, functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]`
+- *Check_address_object_is_already_exist_in_firewall*: method=`GET`, functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Fortinet_ResponseOnIP/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel/Playbooks/Fortinet_ResponseOnIP/readme.md)*

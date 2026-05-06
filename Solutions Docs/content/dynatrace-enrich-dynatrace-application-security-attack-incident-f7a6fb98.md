@@ -14,6 +14,30 @@ This playbook will enriche Dynatrace Application Security Attack Incidents with 
 | **Solution** | [Dynatrace](../solutions/dynatrace.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Enrich_DynatraceApplicationSecurityAttackIncident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 1 |
+| `microsoftsentinel` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Dynatrace_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value`
+
+**`microsoftsentinel`** (managedApi):
+- *Update_incident_with_tags*: method=`put`, path=`/Incidents`
+
+**`http`** (builtin):
+- *Get_Dynatrace_Attack_Details*: method=`GET`, uri=`https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['attackIdentifier'])}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Enrich_DynatraceApplicationSecurityAttackIncident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Enrich_DynatraceApplicationSecurityAttackIncident/readme.md)*

@@ -20,9 +20,9 @@ Shows all Key Vault modification activities performed by high-privilege users. I
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType == "Administrative"` | ✓ | ✗ | ? |
 
 ---
 

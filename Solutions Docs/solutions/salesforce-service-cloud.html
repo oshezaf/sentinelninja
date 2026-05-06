@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Salesforce Service Cloud &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="salesforce-service-cloud">Salesforce Service Cloud</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="Salesforce Service Cloud Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -46,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.10</td>
+<td style="text-align: left;">3.2.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -81,17 +81,17 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
+<p>This solution has <strong>2 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
 <ul>
 <li><a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a> ⚠️ 🔶</li>
-<li><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a> ⚠️</li>
 </ul>
 <blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -103,6 +103,11 @@
 <tbody>
 <tr>
 <td><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a></td>
+<td><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a>, <a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
+<td>Analytics, Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a></td>
 <td><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a>, <a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
 <td>Analytics, Workbooks</td>
 </tr>
@@ -173,19 +178,19 @@
 <td style="text-align: left;"><a href="../content/salesforce-service-cloud-brute-force-attack-against-user-credentials-5a6ce089-e756-40fb-b022-c8e8864a973a-39827da6.html">Brute force attack against user credentials</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CredentialAccess</td>
-<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/salesforce-service-cloud-potential-password-spray-attack-64d16e62-1a17-4a35-9ea7-2b9fe6f07118-5b230e48.html">Potential Password Spray Attack</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">CredentialAccess</td>
-<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/salesforce-service-cloud-user-sign-in-from-different-countries-3094e036-e5ae-4d6e-8626-b0f86ebc71f2-a92654f0.html">User Sign in from different countries</a></td>
 <td style="text-align: left;">Medium</td>
 <td style="text-align: left;">InitialAccess</td>
-<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -200,7 +205,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/salesforce-service-cloud-salesforceservicecloud-a9451acb.html">SalesforceServiceCloud</a></td>
-<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a><br><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a><br><em>Internal use:</em><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -217,7 +222,7 @@
 <tr>
 <td style="text-align: left;"><a href="../parsers/salesforceservicecloud.html">SalesforceServiceCloud</a></td>
 <td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a> <em>(read)</em><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a> <em>(read)</em></td>
+<td style="text-align: left;"><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a> <em>(read)</em><br><a href="../tables/salesforceservicecloudv3-cl.html"><code>SalesforceServiceCloudV3_CL</code></a> <em>(read)</em><br><a href="../tables/salesforceservicecloud-cl.html"><code>SalesforceServiceCloud_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -231,6 +236,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.2.0</td>
+<td>01-05-2026</td>
+<td>Updated <strong>CCF Data Connector</strong> to include new V3 table that includes additional fields and support for multiple domains.</td>
+</tr>
 <tr>
 <td>3.1.0</td>
 <td>27-04-2026</td>
@@ -294,8 +304,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DestinationServiceName contains "Microsoft"`<br>`DestinationServiceName contains "Onedrive"`<br>`DestinationServiceName contains "Outlook"`<br>`DestinationServiceName contains "Sharepoint"`<br>`DestinationServiceName contains "Skype"`<br>`DestinationServiceName contains "office.com"`<br>`DeviceCustomString2 == "Phishing"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ | ? |
 
 ---
 

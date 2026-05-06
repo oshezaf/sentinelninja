@@ -21,9 +21,9 @@ This query detects suspicious rundll.exe activity associated with Trickbot campa
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `InitiatingProcessCommandLine has "rundll32.exe"`<br>`InitiatingProcessFileName == "rundll32.exe"` | ✓ | ✗ | ? |
 
 ---
 

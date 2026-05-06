@@ -261,7 +261,7 @@ Reference for SecurityEvent table in Azure Monitor Logs.
 | Workstation | string | The name of the machine that was used to perform the event. |
 | WorkstationName | string | Machine name from which a logon attempt was performed. |
 
-## Solutions (30)
+## Solutions (29)
 
 This table is used by the following solutions:
 
@@ -287,7 +287,6 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
@@ -306,14 +305,14 @@ This table is ingested by the following connectors:
 | [[Deprecated] Microsoft Exchange Logs and Events](../connectors/esi-exchangeadminauditlogevents.md) |  |
 | [ Microsoft Active-Directory Domain Controllers Security Event Logs](../connectors/esi-opt34domaincontrollerssecurityeventlogs.md) |  |
 | [Security Events via Legacy Agent](../connectors/securityevents.md) |  |
-| [Semperis Directory Services Protector](../connectors/semperisdsp.md) | `EventID in "9211,9212"` |
+| [Semperis Directory Services Protector](../connectors/semperisdsp.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
 | [Windows Security Events via AMA](../connectors/windowssecurityevents.md) |  |
 
 ---
 
-## Content Items Using This Table (218)
+## Content Items Using This Table (145)
 
-### Analytic Rules (85)
+### Analytic Rules (50)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -330,7 +329,7 @@ This table is ingested by the following connectors:
 | [Dev-0270 Registry IOC - September 2022](../content/dev-0270-detection-and-hunting-dev-0270-registry-ioc-september-2022-2566e99f-ad0f-472a-b9ac-d3899c9283e6-d97be37a.md) |  |
 | [Dev-0270 WMIC  Discovery](../content/dev-0270-detection-and-hunting-dev-0270-wmic-discovery-6b652b4f-9810-4eec-9027-7aa88ce4db23-8289b5fe.md) |  |
 
-**In solution [EatonForeseer](../solutions/eatonforeseer.md):** `EventID in "4624,4625,4634,4647,4648,4675"`
+**In solution [EatonForeseer](../solutions/eatonforeseer.md):** `AccountType == "User"`<br>`EventID in "4624,4625,4634,4647,4648,4675"`
 
 | Analytic Rule |
 |:-------------|
@@ -342,18 +341,18 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Base64 encoded Windows process command-lines](../content/endpoint-threat-protection-essentials-base64-encoded-windows-process-command-lines-ca67c83e-7fff-4127-a3e3-1af66d6d4cad-01f53023.md) |  |
 | [Malware in the recycle bin](../content/endpoint-threat-protection-essentials-malware-in-the-recycle-bin-75bf9902-0789-47c1-a5d8-f57046aa72df-2b92e7a9.md) |  |
-| [Potential Remote Desktop Tunneling](../content/endpoint-threat-protection-essentials-potential-remote-desktop-tunneling-d2e8fd50-8d66-11ec-b909-0242ac120002-811dbf83.md) | `EventID in "4624,4625"` |
+| [Potential Remote Desktop Tunneling](../content/endpoint-threat-protection-essentials-potential-remote-desktop-tunneling-d2e8fd50-8d66-11ec-b909-0242ac120002-811dbf83.md) | `EventID in "4624,4625"`<br>`LogonType == "10"` |
 | [Process executed from binary hidden in Base64 encoded file](../content/endpoint-threat-protection-essentials-process-executed-from-binary-hidden-in-base64-encoded-file-d6190dde-8fd2-456a-ac5b-0a32400b0464-f2c6e93c.md) |  |
-| [Security Event log cleared](../content/endpoint-threat-protection-essentials-security-event-log-cleared-80da0a8f-cfe1-4cd0-a895-8bc1771a720e-2f5b4cb9.md) |  |
-| [Windows Binaries Executed from Non-Default Directory](../content/endpoint-threat-protection-essentials-windows-binaries-executed-from-non-default-directory-15049017-527f-4d3b-b011-b0e99e68ef45-75e820c5.md) | `EventID == "4688"` |
+| [Security Event log cleared](../content/endpoint-threat-protection-essentials-security-event-log-cleared-80da0a8f-cfe1-4cd0-a895-8bc1771a720e-2f5b4cb9.md) | `EventSourceName == "Microsoft-Windows-Eventlog"` |
+| [Windows Binaries Executed from Non-Default Directory](../content/endpoint-threat-protection-essentials-windows-binaries-executed-from-non-default-directory-15049017-527f-4d3b-b011-b0e99e68ef45-75e820c5.md) | `EventID == "4688"`<br>`NewProcessName has "C:\\Windows\\"` |
 
 **In solution [FalconFriday](../solutions/falconfriday.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Certified Pre-Owned - TGTs requested with certificate authentication](../content/falconfriday-certified-pre-owned-tgts-requested-with-certificate-authentication-b838a13c-052e-45b8-a5ac-7d3eb62efa11-8b984753.md) | `EventID == "4768"` |
-| [Certified Pre-Owned - backup of CA private key - rule 1](../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-1-aa5eaac7-1264-4833-b620-8f062be75541-ac010cd6.md) | `EventID == "5058"` |
-| [Certified Pre-Owned - backup of CA private key - rule 2](../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-2-88f8fbc0-345d-458e-85f6-f73921d5ef50-fbc7bd12.md) | `EventID == "5059"` |
+| [Certified Pre-Owned - backup of CA private key - rule 1](../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-1-aa5eaac7-1264-4833-b620-8f062be75541-ac010cd6.md) | `Computer contains "<YOUR CA MACHINE NAME>"`<br>`EventID == "5058"` |
+| [Certified Pre-Owned - backup of CA private key - rule 2](../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-2-88f8fbc0-345d-458e-85f6-f73921d5ef50-fbc7bd12.md) | `Computer contains "<YOUR CA MACHINE NAME>"`<br>`EventID == "5059"` |
 | [Excessive share permissions](../content/falconfriday-excessive-share-permissions-aba0b08c-aace-40c5-a21d-39153023dcaa-6377fa2a.md) | `EventID == "5143"` |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
@@ -372,14 +371,14 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Semperis DSP Failed Logons](../content/semperis-directory-services-protector-semperis-dsp-failed-logons-0e105444-fe13-4ce6-9239-21880076a3f9-2263251b.md) | `EventID == "20002"` |
-| [Semperis DSP Kerberos krbtgt account with old password](../content/semperis-directory-services-protector-semperis-dsp-kerberos-krbtgt-account-with-old-password-9ff3b26b-7636-412e-ac46-072b084b94cb-7cfe67a4.md) | `EventID in "9208,9211,9212"` |
-| [Semperis DSP Mimikatz's DCShadow Alert](../content/semperis-directory-services-protector-semperis-dsp-mimikatz's-dcshadow-alert-1a6d0a49-64b3-4ca1-96c3-f154c16c218c-044ebdda.md) | `EventID in "9208,9211,9212"` |
-| [Semperis DSP Operations Critical Notifications](../content/semperis-directory-services-protector-semperis-dsp-operations-critical-notifications-8f471e21-3bb2-466f-9bc2-0a0326a60788-3ceee4d9.md) | `EventID == "30001"` |
-| [Semperis DSP RBAC Changes](../content/semperis-directory-services-protector-semperis-dsp-rbac-changes-e5edf3f3-de53-45e6-b0d7-1ce1c048df4a-21be9fb7.md) | `EventID == "20012"` |
-| [Semperis DSP Recent sIDHistory changes on AD objects](../content/semperis-directory-services-protector-semperis-dsp-recent-sidhistory-changes-on-ad-objects-64796da3-6383-4de2-9c97-866c83c459ae-0217ae73.md) | `EventID in "9208,9211,9212"` |
-| [Semperis DSP Well-known privileged SIDs in sIDHistory](../content/semperis-directory-services-protector-semperis-dsp-well-known-privileged-sids-in-sidhistory-ddd75d93-5b8b-4349-babe-c4e15343c5a3-fe463147.md) | `EventID in "9208,9211,9212"` |
-| [Semperis DSP Zerologon vulnerability](../content/semperis-directory-services-protector-semperis-dsp-zerologon-vulnerability-85c1f9e4-6f14-46bf-82d5-dbe495b92aab-46434387.md) | `EventID in "9208,9211,9212"` |
+| [Semperis DSP Failed Logons](../content/semperis-directory-services-protector-semperis-dsp-failed-logons-0e105444-fe13-4ce6-9239-21880076a3f9-2263251b.md) | `EventID == "20002"`<br>`EventSourceName == "Semperis-Operation-Log"` |
+| [Semperis DSP Kerberos krbtgt account with old password](../content/semperis-directory-services-protector-semperis-dsp-kerberos-krbtgt-account-with-old-password-9ff3b26b-7636-412e-ac46-072b084b94cb-7cfe67a4.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
+| [Semperis DSP Mimikatz's DCShadow Alert](../content/semperis-directory-services-protector-semperis-dsp-mimikatz's-dcshadow-alert-1a6d0a49-64b3-4ca1-96c3-f154c16c218c-044ebdda.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
+| [Semperis DSP Operations Critical Notifications](../content/semperis-directory-services-protector-semperis-dsp-operations-critical-notifications-8f471e21-3bb2-466f-9bc2-0a0326a60788-3ceee4d9.md) | `EventID == "30001"`<br>`EventSourceName == "Semperis-DSP-Notifications"` |
+| [Semperis DSP RBAC Changes](../content/semperis-directory-services-protector-semperis-dsp-rbac-changes-e5edf3f3-de53-45e6-b0d7-1ce1c048df4a-21be9fb7.md) | `EventID == "20012"`<br>`EventSourceName == "Semperis-Operation-Log"` |
+| [Semperis DSP Recent sIDHistory changes on AD objects](../content/semperis-directory-services-protector-semperis-dsp-recent-sidhistory-changes-on-ad-objects-64796da3-6383-4de2-9c97-866c83c459ae-0217ae73.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
+| [Semperis DSP Well-known privileged SIDs in sIDHistory](../content/semperis-directory-services-protector-semperis-dsp-well-known-privileged-sids-in-sidhistory-ddd75d93-5b8b-4349-babe-c4e15343c5a3-fe463147.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
+| [Semperis DSP Zerologon vulnerability](../content/semperis-directory-services-protector-semperis-dsp-zerologon-vulnerability-85c1f9e4-6f14-46bf-82d5-dbe495b92aab-46434387.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -395,7 +394,7 @@ This table is ingested by the following connectors:
 | [TI map Email entity to SecurityEvent](../content/threat-intelligence-new-ti-map-email-entity-to-securityevent-0a59051d-aed4-4fb6-bf84-bc80534482b2-60b9192e.md) |  |
 | [TI map File Hash to Security Event](../content/threat-intelligence-new-ti-map-file-hash-to-security-event-9f7dc779-1e51-4925-ae4a-db1db933077f-d8ffe445.md) |  |
 
-**In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):** `EventID in "4663,4688"`
+**In solution [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md):** `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine has "SysAidServer"`<br>`EventID in "4663,4688"`<br>`ObjectName endswith ".jsp"`<br>`Process has_any "java.exe"`
 
 | Analytic Rule |
 |:-------------|
@@ -407,20 +406,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [AD FS Remote Auth Sync Connection](../content/windows-security-events-ad-fs-remote-auth-sync-connection-2f4165a6-c4fb-4e94-861e-37f1b4d6c0e6-a47c2516.md) | `EventID in "412,501,5156"` |
 | [AD user enabled and password not set within 48 hours](../content/windows-security-events-ad-user-enabled-and-password-not-set-within-48-hours-62085097-d113-459f-9ea7-30216f2ee6af-03184bd5.md) |  |
-| [Excessive Windows Logon Failures](../content/windows-security-events-excessive-windows-logon-failures-2391ce61-8c8d-41ac-9723-d945b2e90720-36e38369.md) | `EventID == "4625"` |
+| [Excessive Windows Logon Failures](../content/windows-security-events-excessive-windows-logon-failures-2391ce61-8c8d-41ac-9723-d945b2e90720-36e38369.md) | `AccountType == "User"`<br>`EventID == "4625"` |
 | [Exchange OAB Virtual Directory Attribute Containing Potential Webshell](../content/windows-security-events-exchange-oab-virtual-directory-attribute-containing-potential-webshell-faf1a6ff-53b5-4f92-8c55-4b20e9957594-0a1c5425.md) | `EventID == "5136"` |
-| [Gain Code Execution on ADFS Server via SMB + Remote Service or Scheduled Task](../content/windows-security-events-gain-code-execution-on-adfs-server-via-smb-+-remote-service-or-scheduled-task-12dcea64-bec2-41c9-9df2-9f28461b1295-478b123d.md) | `EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"` |
+| [Gain Code Execution on ADFS Server via SMB + Remote Service or Scheduled Task](../content/windows-security-events-gain-code-execution-on-adfs-server-via-smb-+-remote-service-or-scheduled-task-12dcea64-bec2-41c9-9df2-9f28461b1295-478b123d.md) | `Account !endswith "$"`<br>`EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"`<br>`LogonType == "3"`<br>`RelativeTargetName in "atsvc,svcctl"` |
 | [Microsoft Entra ID Local Device Join Information and Transport Key Registry Keys Access](../content/windows-security-events-microsoft-entra-id-local-device-join-information-and-transport-key-registry-keys-a356c8bd-c81d-428b-aa36-83be706be034-52ba1a8d.md) | `EventID in "4656,4663"` |
-| [NRT Base64 Encoded Windows Process Command-lines](../content/windows-security-events-nrt-base64-encoded-windows-process-command-lines-c3e5dbaa-a540-408c-8b36-68bdfb3df088-bed67057.md) | `EventID == "4688"` |
-| [NRT Process executed from binary hidden in Base64 encoded file](../content/windows-security-events-nrt-process-executed-from-binary-hidden-in-base64-encoded-file-7ad4c32b-d0d2-411c-a0e8-b557afa12fce-92d97690.md) | `EventID == "4688"` |
-| [NRT Security Event log cleared](../content/windows-security-events-nrt-security-event-log-cleared-508cef41-2cd8-4d40-a519-b04826a9085f-67c5b6b4.md) | `EventID == "1102"` |
-| [New EXE deployed via Default Domain or Default Domain Controller Policies](../content/windows-security-events-new-exe-deployed-via-default-domain-or-default-domain-controller-policies-05b4bccd-dd12-423d-8de4-5a6fb526bb4f-aa6653ca.md) | `EventID == "4688"` |
-| [Non Domain Controller Active Directory Replication](../content/windows-security-events-non-domain-controller-active-directory-replication-b9d2eebc-5dcb-4888-8165-900db44443ab-b36ed5cd.md) | `EventID in "4624,4662"` |
-| [Potential Fodhelper UAC Bypass](../content/windows-security-events-potential-fodhelper-uac-bypass-56f3f35c-3aca-4437-a1fb-b7a84dc4af00-9be2fced.md) | `EventID in "4657,4688"` |
-| [Potential re-named sdelete usage](../content/windows-security-events-potential-re-named-sdelete-usage-720d12c6-a08c-44c4-b18f-2236412d59b0-d334efe2.md) | `EventID == "4688"` |
+| [NRT Base64 Encoded Windows Process Command-lines](../content/windows-security-events-nrt-base64-encoded-windows-process-command-lines-c3e5dbaa-a540-408c-8b36-68bdfb3df088-bed67057.md) | `CommandLine contains "TVqQAAMAAAAEAAA"`<br>`EventID == "4688"` |
+| [NRT Process executed from binary hidden in Base64 encoded file](../content/windows-security-events-nrt-process-executed-from-binary-hidden-in-base64-encoded-file-7ad4c32b-d0d2-411c-a0e8-b557afa12fce-92d97690.md) | `CommandLine contains ".decode("`<br>`CommandLine contains ".decode64("`<br>`CommandLine contains "base64 --decode"`<br>`EventID == "4688"` |
+| [NRT Security Event log cleared](../content/windows-security-events-nrt-security-event-log-cleared-508cef41-2cd8-4d40-a519-b04826a9085f-67c5b6b4.md) | `EventID == "1102"`<br>`EventSourceName == "Microsoft-Windows-Eventlog"` |
+| [New EXE deployed via Default Domain or Default Domain Controller Policies](../content/windows-security-events-new-exe-deployed-via-default-domain-or-default-domain-controller-policies-05b4bccd-dd12-423d-8de4-5a6fb526bb4f-aa6653ca.md) | `EventID == "4688"`<br>`NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"` |
+| [Non Domain Controller Active Directory Replication](../content/windows-security-events-non-domain-controller-active-directory-replication-b9d2eebc-5dcb-4888-8165-900db44443ab-b36ed5cd.md) | `AccountType != "Machine"`<br>`EventID in "4624,4662"`<br>`LogonType == "3"`<br>`ObjectServer == "DS"`<br>`Properties has "1131f6aa-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "1131f6ad-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "89e95b76-444d-4c62-991a-0facbeda640c"` |
+| [Potential Fodhelper UAC Bypass](../content/windows-security-events-potential-fodhelper-uac-bypass-56f3f35c-3aca-4437-a1fb-b7a84dc4af00-9be2fced.md) | `EventID in "4657,4688"`<br>`ParentProcessName endswith "cmd.exe"`<br>`ParentProcessName endswith "powershell.exe"`<br>`ParentProcessName endswith "powershell_ise.exe"`<br>`Process == "fodhelper.exe"` |
+| [Potential re-named sdelete usage](../content/windows-security-events-potential-re-named-sdelete-usage-720d12c6-a08c-44c4-b18f-2236412d59b0-d334efe2.md) | `CommandLine !has "sdelete"`<br>`CommandLine has_all "accepteula"`<br>`EventID == "4688"`<br>`Process != "sdelete.exe"` |
 | [Process Execution Frequency Anomaly](../content/windows-security-events-process-execution-frequency-anomaly-2c55fe7a-b06f-4029-a5b9-c54a2320d7b8-7d56da33.md) | `EventID == "4688"` |
 | [Scheduled Task Hide](../content/windows-security-events-scheduled-task-hide-6dd2629c-534b-4275-8201-d7968b4fa77e-3293d2af.md) | `EventID == "4657"` |
-| [Sdelete deployed via GPO and run recursively](../content/windows-security-events-sdelete-deployed-via-gpo-and-run-recursively-d9f28fdf-abc8-4f1a-a7e7-1aaec87a2fc5-8f72bd3c.md) | `EventID == "4688"` |
+| [Sdelete deployed via GPO and run recursively](../content/windows-security-events-sdelete-deployed-via-gpo-and-run-recursively-d9f28fdf-abc8-4f1a-a7e7-1aaec87a2fc5-8f72bd3c.md) | `CommandLine has "-k GPSvcGroup"`<br>`CommandLine has "-s gpsvc"`<br>`CommandLine has "sdelete"`<br>`CommandLine has_all "-s"`<br>`EventID == "4688"`<br>`ParentProcessName endswith "svchost.exe"`<br>`Process in "sdelete.exe,svchost.exe"` |
 | [SecurityEvent - Multiple authentication failures followed by a success](../content/windows-security-events-securityevent-multiple-authentication-failures-followed-by-a-success-cf3ede88-a429-493b-9108-3e46d3c741f7-2bfab486.md) | `EventID in "4624,4625"` |
 | [Starting or Stopping HealthService to Avoid Detection](../content/windows-security-events-starting-or-stopping-healthservice-to-avoid-detection-2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae-cde90857.md) | `EventID in "4624,4656"` |
 
@@ -430,47 +429,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Zinc Actor IOCs files - October 2022](../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [AD FS Abnormal EKU object identifier attribute](../content/standalone-content-ad-fs-abnormal-eku-object-identifier-attribute-cfc1ae62-db63-4a3e-b88b-dc04030c2257-02097b85.md) | `EventID == "501"` |
-| [AD account with Don't Expire Password](../content/standalone-content-ad-account-with-don't-expire-password-6c360107-f3ee-4b91-9f43-f4cfd90441cf-b63ef58d.md) |  |
-| [ADFS DKM Master Key Export](../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.md) |  |
-| [Account added and removed from privileged groups](../content/standalone-content-account-added-and-removed-from-privileged-groups-7efc75ce-e2a4-400f-a8b1-283d3b0f2c60-50f0398b.md) |  |
-| [AdminSDHolder Modifications](../content/standalone-content-adminsdholder-modifications-52aec824-96c1-4a03-8e44-bb70532e6cea-5f0a7fb2.md) | `EventID == "5136"` |
-| [Audit policy manipulation using auditpol utility](../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.md) | `EventID == "1"` |
-| [COM Registry Key Modified to Point to File in Color Profile Folder](../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.md) | `EventID == "4657"` |
-| [Email access via active sync](../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.md) | `EventID in "1,4688"` |
-| [Failed AzureAD logons but success logon to host](../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.md) |  |
-| [Failed host logons but success logon to AzureAD](../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.md) |  |
-| [Failed logon attempts by valid accounts within 10 mins](../content/standalone-content-failed-logon-attempts-by-valid-accounts-within-10-mins-0777f138-e5d8-4eab-bec1-e11ddfbc2be2-127ed234.md) |  |
-| [Fake computer account created](../content/standalone-content-fake-computer-account-created-c1faf5e8-6958-11ec-90d6-0242ac120003-5106eb49.md) | `EventID == "4720"` |
-| [Gain Code Execution on ADFS Server via Remote WMI Execution](../content/standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.md) |  |
-| [Group created then added to built in domain local or global group](../content/standalone-content-group-created-then-added-to-built-in-domain-local-or-global-group-a7564d76-ec6b-4519-a66b-fcc80c42332b-1a2e6754.md) |  |
-| [Identify Mango Sandstorm powershell commands](../content/standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.md) |  |
-| [Microsoft Entra ID Health Monitoring Agent Registry Keys Access](../content/standalone-content-microsoft-entra-id-health-monitoring-agent-registry-keys-access-f819c592-c5f9-4d5c-a79f-1e6819863533-9af33463.md) |  |
-| [Microsoft Entra ID Health Service Agents Registry Keys Access](../content/standalone-content-microsoft-entra-id-health-service-agents-registry-keys-access-06bbf969-fcbe-43fa-bac2-b2fa131d113a-b4251aca.md) | `EventID in "4656,4663"` |
-| [Midnight Blizzard - Script payload stored in Registry](../content/standalone-content-midnight-blizzard-script-payload-stored-in-registry-00cb180c-08a8-4e55-a276-63fb1442d5b5-7c2a822d.md) |  |
-| [Midnight Blizzard - suspicious rundll32.exe execution of vbscript](../content/standalone-content-midnight-blizzard-suspicious-rundll32.exe-execution-of-vbscript-d82e1987-4356-4a7b-bc5e-064f29b143c0-e1d64a0c.md) |  |
-| [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md) |  |
-| [Multiple RDP connections from Single System](../content/standalone-content-multiple-rdp-connections-from-single-system-78422ef2-62bf-48ca-9bab-72c69818a425-6fdca3be.md) |  |
-| [New user created and added to the built-in administrators group](../content/standalone-content-new-user-created-and-added-to-the-built-in-administrators-group-aa1eff90-29d4-49dc-a3ea-b65199f516db-5300f307.md) |  |
-| [Possible Resource-Based Constrained Delegation Abuse](../content/standalone-content-possible-resource-based-constrained-delegation-abuse-2937bc6b-7cda-4fba-b452-ea43ba8e835f-0940e8da.md) | `EventID == "5136"` |
-| [Potential Build Process Compromise](../content/standalone-content-potential-build-process-compromise-5ef06767-b37c-4818-b035-47de950d0046-3d9f2492.md) |  |
-| [Potential Kerberoasting](../content/standalone-content-potential-kerberoasting-1572e66b-20a7-4012-9ec4-77ec4b101bc8-6d60a025.md) |  |
-| [RDP Nesting](../content/standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.md) |  |
-| [Rare RDP Connections](../content/standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.md) |  |
-| [Security Service Registry ACL Modification](../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.md) |  |
-| [Service Principal Name (SPN) Assigned to User Account](../content/standalone-content-service-principal-name-spn-assigned-to-user-account-875d0eb1-883a-4191-bd0e-dbfdeb95a464-6875f39b.md) | `EventID == "5136"` |
-| [Silk Typhoon New UM Service Child Process](../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.md) |  |
-| [Solorigate Named Pipe](../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.md) |  |
-| [Unusual identity creation using exchange powershell](../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md) |  |
-| [User account added to built in domain local or global group](../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.md) |  |
-| [User account created and deleted within 10 mins](../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.md) |  |
-| [User account enabled and disabled within 10 mins](../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.md) |  |
-
-### Hunting Queries (90)
+### Hunting Queries (73)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -482,16 +441,16 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Attempted VBScript Stored in Non-Run CurrentVersion Registry Key Value](../content/cyborg-security-hunter-attempted-vbscript-stored-in-non-run-currentversion-registry-key-value-d7233f14-4705-403e-9db9-e0d677c9506b-73ff2c75.md) |  |
-| [Excessive Windows Discovery and Execution Processes - Potential Malware Installation](../content/cyborg-security-hunter-excessive-windows-discovery-and-execution-processes-potential-malware-installatio-6d1c9f13-e43e-4b52-a443-5799465d573b-01b94334.md) |  |
-| [LSASS Memory Dumping using WerFault.exe - Command Identification](../content/cyborg-security-hunter-lsass-memory-dumping-using-werfault.exe-command-identification-4894a60b-d2ee-4f24-be61-0d0c96a84e63-4b9d94b1.md) |  |
-| [Metasploit / Impacket PsExec Process Creation Activity](../content/cyborg-security-hunter-metasploit-impacket-psexec-process-creation-activity-37cba0d1-8aa5-4f8f-bb26-25a45475ca9a-bc3bb419.md) | `EventID == "4688"` |
+| [Attempted VBScript Stored in Non-Run CurrentVersion Registry Key Value](../content/cyborg-security-hunter-attempted-vbscript-stored-in-non-run-currentversion-registry-key-value-d7233f14-4705-403e-9db9-e0d677c9506b-73ff2c75.md) | `NewValue contains "CreateObject"`<br>`NewValue contains "Execute("`<br>`NewValue contains "RegRead"`<br>`NewValue contains "RunHTMLApplication"`<br>`NewValue contains "jscript"`<br>`NewValue contains "mshtml"`<br>`NewValue contains "mshtml,"`<br>`NewValue contains "vbscript"`<br>`NewValue contains "window.close"`<br>`ObjectName !has "\\Run"`<br>`ObjectName has "\\CurrentVersion"` |
+| [Excessive Windows Discovery and Execution Processes - Potential Malware Installation](../content/cyborg-security-hunter-excessive-windows-discovery-and-execution-processes-potential-malware-installatio-6d1c9f13-e43e-4b52-a443-5799465d573b-01b94334.md) | `NewProcessName has_any "arp.exe"` |
+| [LSASS Memory Dumping using WerFault.exe - Command Identification](../content/cyborg-security-hunter-lsass-memory-dumping-using-werfault.exe-command-identification-4894a60b-d2ee-4f24-be61-0d0c96a84e63-4b9d94b1.md) | `NewProcessName endswith "werfault.exe"`<br>`ObjectName endswith "lsass.exe"` |
+| [Metasploit / Impacket PsExec Process Creation Activity](../content/cyborg-security-hunter-metasploit-impacket-psexec-process-creation-activity-37cba0d1-8aa5-4f8f-bb26-25a45475ca9a-bc3bb419.md) | `EventID == "4688"`<br>`NewProcessName matchesregex "C:\\\\Windows\\\\[a-zA-Z]{8}.exe"`<br>`ParentProcessName has "services.exe"` |
 | [Potential Maldoc Execution Chain Observed](../content/cyborg-security-hunter-potential-maldoc-execution-chain-observed-b194088b-c846-4c72-a4b7-933627878db4-47180af7.md) |  |
-| [PowerShell Pastebin Download](../content/cyborg-security-hunter-powershell-pastebin-download-e186a8af-3d4a-4003-93b7-9b199e0b1dd1-3dd8ecd4.md) |  |
-| [Powershell Encoded Command Execution](../content/cyborg-security-hunter-powershell-encoded-command-execution-d2d3bbc2-6e57-4043-ab24-988a6a6c88db-40d11177.md) |  |
-| [Prohibited Applications Spawning cmd.exe or powershell.exe](../content/cyborg-security-hunter-prohibited-applications-spawning-cmd.exe-or-powershell.exe-fc36d683-385a-4ec2-842d-2982dbed97a4-e72a0598.md) |  |
-| [Proxy VBScript Execution via CurrentVersion Registry Key](../content/cyborg-security-hunter-proxy-vbscript-execution-via-currentversion-registry-key-3ac1e703-3ed0-45e1-ae1d-0fa60baf99fb-df6259d3.md) |  |
-| [Rundll32 or cmd Executing Application from Explorer - Potential Malware Execution Chain](../content/cyborg-security-hunter-rundll32-or-cmd-executing-application-from-explorer-potential-malware-execution-c-3bc6e8ef-9e08-4626-89e9-fda87866cc82-3815ee01.md) |  |
+| [PowerShell Pastebin Download](../content/cyborg-security-hunter-powershell-pastebin-download-e186a8af-3d4a-4003-93b7-9b199e0b1dd1-3dd8ecd4.md) | `CommandLine contains ".onion"`<br>`CommandLine contains "http"`<br>`CommandLine contains "paste."`<br>`CommandLine has_any "pastebin"`<br>`Process has "powershell.exe"` |
+| [Powershell Encoded Command Execution](../content/cyborg-security-hunter-powershell-encoded-command-execution-d2d3bbc2-6e57-4043-ab24-988a6a6c88db-40d11177.md) | `CommandLine matchesregex "-[Ee^]{1,2}[NnCcOoDdEeMmAaPpHh^`]+\\s+\"`<br>`NewProcessName endswith "powershell.exe"` |
+| [Prohibited Applications Spawning cmd.exe or powershell.exe](../content/cyborg-security-hunter-prohibited-applications-spawning-cmd.exe-or-powershell.exe-fc36d683-385a-4ec2-842d-2982dbed97a4-e72a0598.md) | `NewProcessName has_any "cmd.exe"`<br>`NewProcessName has_any "winword.exe"` |
+| [Proxy VBScript Execution via CurrentVersion Registry Key](../content/cyborg-security-hunter-proxy-vbscript-execution-via-currentversion-registry-key-3ac1e703-3ed0-45e1-ae1d-0fa60baf99fb-df6259d3.md) | `CommandLine contains "\\Microsoft\\Windows\\CurrentVersion"`<br>`CommandLine has_all "Execute"`<br>`CommandLine has_all "vbscript"`<br>`Process has_any "cmd.exe"` |
+| [Rundll32 or cmd Executing Application from Explorer - Potential Malware Execution Chain](../content/cyborg-security-hunter-rundll32-or-cmd-executing-application-from-explorer-potential-malware-execution-c-3bc6e8ef-9e08-4626-89e9-fda87866cc82-3815ee01.md) | `CommandLine has "cmd.exe"`<br>`CommandLine has_any ",.dll"`<br>`CommandLine has_any "explorer"`<br>`CommandLine matchesregex "\\/[Cc] +[Ss][Tt][Aa][Rr][Tt].*\\.exe"`<br>`ParentProcessName has "explorer.exe"`<br>`Process has_any "wscript.exe"` |
 
 **In solution [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md):**
 
@@ -501,9 +460,9 @@ This table is ingested by the following connectors:
 | [Download of New File Using Curl](../content/endpoint-threat-protection-essentials-download-of-new-file-using-curl-7108c86b-a3ef-42d0-b50b-3e251fb1f84c-09e03acc.md) |  |
 | [Persisting via IFEO Registry Key](../content/endpoint-threat-protection-essentials-persisting-via-ifeo-registry-key-f82c89fa-c969-4d12-832f-04d55d14522c-6020db66.md) |  |
 | [Potential Microsoft Security Services Tampering](../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.md) |  |
-| [Rare Windows Firewall Rule updates using Netsh](../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.md) | `EventID == "1"` |
+| [Rare Windows Firewall Rule updates using Netsh](../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.md) | `AccountType != "Machine"`<br>`CommandLine has_all "advfirewall"`<br>`EventID == "1"`<br>`Process == "netsh.exe"` |
 | [Remote Login Performed with WMI](../content/endpoint-threat-protection-essentials-remote-login-performed-with-wmi-8f658a80-7fa9-4524-a95b-d9ab608e8850-57d50f63.md) | `EventID in "4624,4625"` |
-| [Remote Scheduled Task Creation or Update using ATSVC Named Pipe](../content/endpoint-threat-protection-essentials-remote-scheduled-task-creation-or-update-using-atsvc-named-pipe-7aad876a-a6fe-4c11-879e-8b29d35ff739-f9a3a936.md) | `EventID == "5145"` |
+| [Remote Scheduled Task Creation or Update using ATSVC Named Pipe](../content/endpoint-threat-protection-essentials-remote-scheduled-task-creation-or-update-using-atsvc-named-pipe-7aad876a-a6fe-4c11-879e-8b29d35ff739-f9a3a936.md) | `EventID == "5145"`<br>`RelativeTargetName == "atsvc"` |
 | [Scheduled Task Creation or Update from User Writable Directory](../content/endpoint-threat-protection-essentials-scheduled-task-creation-or-update-from-user-writable-directory-0b827a49-427e-4721-b05e-b151a8af524e-f6c2b013.md) | `EventID in "4698,4702"` |
 | [Unicode Obfuscation in Command Line](../content/endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.md) |  |
 
@@ -533,83 +492,61 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [AD Account Lockout](../content/windows-security-events-ad-account-lockout-a308d780-1c39-4fa7-8c21-bb54f174b065-798b810f.md) | `EventID == "4740"` |
-| [Commands executed by WMI on new hosts - potential Impacket](../content/windows-security-events-commands-executed-by-wmi-on-new-hosts-potential-impacket-9ce755c1-d2e6-4e2f-82d5-7871ec1aef91-d645d9b4.md) | `EventID == "4688"` |
-| [Crash dump disabled on host](../content/windows-security-events-crash-dump-disabled-on-host-5a3615af-21c9-427e-8bf1-ed2350992bb4-8623f73e.md) | `EventID == "4657"` |
+| [Commands executed by WMI on new hosts - potential Impacket](../content/windows-security-events-commands-executed-by-wmi-on-new-hosts-potential-impacket-9ce755c1-d2e6-4e2f-82d5-7871ec1aef91-d645d9b4.md) | `EventID == "4688"`<br>`ParentProcessName endswith "wmiprvse.exe"` |
+| [Crash dump disabled on host](../content/windows-security-events-crash-dump-disabled-on-host-5a3615af-21c9-427e-8bf1-ed2350992bb4-8623f73e.md) | `EventID == "4657"`<br>`ObjectValueName == "CrashDumpEnabled"` |
 | [Cscript script daily summary breakdown](../content/windows-security-events-cscript-script-daily-summary-breakdown-36abe031-962d-482e-8e1e-a556ed99d5a3-056955b7.md) | `EventID == "4688"` |
 | [Decoy User Account Authentication Attempt](../content/windows-security-events-decoy-user-account-authentication-attempt-a4dbc292-87eb-11ec-a8a3-0242ac120002-38f94fe7.md) | `EventID in "4624,4625"` |
-| [Discord download invoked from cmd line](../content/windows-security-events-discord-download-invoked-from-cmd-line-e7dd442a-0af8-48eb-8358-9e91f4911849-404b8911.md) | `EventID == "4688"` |
+| [Discord download invoked from cmd line](../content/windows-security-events-discord-download-invoked-from-cmd-line-e7dd442a-0af8-48eb-8358-9e91f4911849-404b8911.md) | `CommandLine has "powershell"`<br>`CommandLine has_any "cdn.discordapp.com"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` |
 | [Domain controller installation media creation](../content/windows-security-events-domain-controller-installation-media-creation-7e5f3a9a-542c-417a-a429-4ed500c5c4d8-fec25b2e.md) |  |
 | [Entropy for Processes for a given Host](../content/windows-security-events-entropy-for-processes-for-a-given-host-05208917-82de-46f7-a190-a65739a690f4-59ba7296.md) | `EventID == "4688"` |
 | [Enumeration of users and groups](../content/windows-security-events-enumeration-of-users-and-groups-a1e993de-770a-4434-83e9-9e3b47a6e470-31ff9f63.md) | `EventID == "4688"` |
 | [Establishing internal proxies](../content/windows-security-events-establishing-internal-proxies-ce38c16c-a560-46c0-88d6-7757b88f08e9-e3cde3e0.md) |  |
-| [Exchange PowerShell Snapin Added](../content/windows-security-events-exchange-powershell-snapin-added-8afd1086-fc9a-4d26-b3ff-5c794c79a59a-8e25d87f.md) | `EventID == "4688"` |
+| [Exchange PowerShell Snapin Added](../content/windows-security-events-exchange-powershell-snapin-added-8afd1086-fc9a-4d26-b3ff-5c794c79a59a-8e25d87f.md) | `CommandLine has "Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin"`<br>`EventID == "4688"`<br>`Process has_any "cmd.exe"` |
 | [Group added to Built in Domain Local or Global Group](../content/windows-security-events-group-added-to-built-in-domain-local-or-global-group-cb47a115-2616-4d56-890d-b28c14bc83e4-cbcd997b.md) | `EventID in "4727,4728,4731,4732,4754,4756"` |
-| [Host Exporting Mailbox and Removing Export](../content/windows-security-events-host-exporting-mailbox-and-removing-export-2e2fab4b-83dd-4cf8-b2dd-063d0fd15513-f6188024.md) | `EventID == "4688"` |
+| [Host Exporting Mailbox and Removing Export](../content/windows-security-events-host-exporting-mailbox-and-removing-export-2e2fab4b-83dd-4cf8-b2dd-063d0fd15513-f6188024.md) | `CommandLine has "New-MailboxExportRequest"`<br>`CommandLine has "Remove-MailboxExportRequest"`<br>`EventID == "4688"`<br>`Process in "cmd.exe,powershell.exe"` |
 | [Hosts Running a Rare Process](../content/windows-security-events-hosts-running-a-rare-process-82e04ff9-a289-4005-9fcd-f1deec72e3fc-91003c14.md) | `EventID == "4688"` |
 | [Hosts Running a Rare Process with Commandline](../content/windows-security-events-hosts-running-a-rare-process-with-commandline-5550b630-7b8a-444e-a585-ec8c7533c028-2ae5a42b.md) | `EventID == "4688"` |
 | [Hosts with new logons](../content/windows-security-events-hosts-with-new-logons-62e2df59-1535-4c8e-ac6c-c91faeed0179-01cac37a.md) | `EventID in "4624,4625"` |
-| [Invoke-PowerShellTcpOneLine Usage.](../content/windows-security-events-invoke-powershelltcponeline-usage.-a344e28e-095d-47fb-84a8-d06edd31d2cb-5e9d5425.md) | `EventID == "4688"` |
+| [Invoke-PowerShellTcpOneLine Usage.](../content/windows-security-events-invoke-powershelltcponeline-usage.-a344e28e-095d-47fb-84a8-d06edd31d2cb-5e9d5425.md) | `CommandLine has "$client = New-Object System.Net.Sockets.TCPClient"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` |
 | [Least Common Parent And Child Process Pairs](../content/windows-security-events-least-common-parent-and-child-process-pairs-3712595d-6f47-416b-963a-605201ed2764-304136a9.md) | `EventID == "4688"` |
 | [Least Common Processes Including Folder Depth](../content/windows-security-events-least-common-processes-including-folder-depth-6d04a1ef-1b4d-4ff8-a76c-ad7d1a396136-6a4e1ff5.md) | `EventID == "4688"` |
-| [Least Common Processes by Command Line](../content/windows-security-events-least-common-processes-by-command-line-088d30e9-c02b-46b1-bd1f-d5b6d6b782f0-21ac6383.md) | `EventID == "4688"` |
-| [Long lookback User Account Created and Deleted within 10mins](../content/windows-security-events-long-lookback-user-account-created-and-deleted-within-10mins-6135a90e-ba30-4f36-9b6a-3a350050704b-6a4acaf0.md) | `EventID in "4720,4726"` |
-| [Masquerading files](../content/windows-security-events-masquerading-files-60304ebf-ebdd-4869-a702-e0216d90ab46-fbac27a6.md) |  |
-| [Multiple Explicit Credential Usage - 4648 events](../content/windows-security-events-multiple-explicit-credential-usage-4648-events-9e3fab4b-94dd-4cf9-b2aa-063d0fd25513-bf7d18d4.md) | `EventID == "4648"` |
+| [Least Common Processes by Command Line](../content/windows-security-events-least-common-processes-by-command-line-088d30e9-c02b-46b1-bd1f-d5b6d6b782f0-21ac6383.md) | `EventID == "4688"`<br>`NewProcessName !endswith "conhost.exe"` |
+| [Long lookback User Account Created and Deleted within 10mins](../content/windows-security-events-long-lookback-user-account-created-and-deleted-within-10mins-6135a90e-ba30-4f36-9b6a-3a350050704b-6a4acaf0.md) | `AccountType == "User"`<br>`EventID in "4720,4726"` |
+| [Masquerading files](../content/windows-security-events-masquerading-files-60304ebf-ebdd-4869-a702-e0216d90ab46-fbac27a6.md) | `NewProcessName !has ":\\Windows\\System32"`<br>`NewProcessName !has ":\\Windows\\Syswow64"`<br>`NewProcessName endswith "\\svchost.exe"`<br>`SubjectUserSid !in "S-1-5-18,S-1-5-19,S-1-5-20"` |
+| [Multiple Explicit Credential Usage - 4648 events](../content/windows-security-events-multiple-explicit-credential-usage-4648-events-9e3fab4b-94dd-4cf9-b2aa-063d0fd25513-bf7d18d4.md) | `EventID == "4648"`<br>`SubjectUserSid != "S-1-0-0"`<br>`TargetInfo has "/"` |
 | [New Child Process of W3WP.exe](../content/windows-security-events-new-child-process-of-w3wp.exe-f885fb16-dfd3-4c90-83d9-7a66b9d9b654-75c40006.md) | `EventID == "4688"` |
 | [New PowerShell scripts encoded on the commandline](../content/windows-security-events-new-powershell-scripts-encoded-on-the-commandline-4e78daf1-8bba-4b5d-8a8b-c75fe9bbc2d9-fc78c747.md) | `EventID == "4688"` |
 | [New processes observed in last 24 hours](../content/windows-security-events-new-processes-observed-in-last-24-hours-513e3a11-e1bb-4cfc-8af9-451da0407e6b-2f72302d.md) | `EventID == "4688"` |
-| [Nishang Reverse TCP Shell in Base64](../content/windows-security-events-nishang-reverse-tcp-shell-in-base64-87c1f90a-f868-4528-a9c1-15520249cae6-29ac834c.md) | `EventID == "4688"` |
-| [Potential Exploitation of MS-RPRN printer bug](../content/windows-security-events-potential-exploitation-of-ms-rprn-printer-bug-c29a03c6-d074-4934-afae-df1aeb30da70-2d22b8de.md) | `EventID == "5145"` |
+| [Nishang Reverse TCP Shell in Base64](../content/windows-security-events-nishang-reverse-tcp-shell-in-base64-87c1f90a-f868-4528-a9c1-15520249cae6-29ac834c.md) | `CommandLine has "-e"`<br>`EventID == "4688"`<br>`Process in "powershell.exe,powershell_ise.exe"` |
+| [Potential Exploitation of MS-RPRN printer bug](../content/windows-security-events-potential-exploitation-of-ms-rprn-printer-bug-c29a03c6-d074-4934-afae-df1aeb30da70-2d22b8de.md) | `EventID == "5145"`<br>`RelativeTargetName == "spoolss"`<br>`ShareName == "\\\\*\\IPC$"` |
 | [PowerShell downloads](../content/windows-security-events-powershell-downloads-d83f40fc-bbcc-4020-8d45-ad2d82355cb2-eb98129c.md) | `EventID == "4688"` |
-| [Powercat Download](../content/windows-security-events-powercat-download-c2112ca3-aae0-4079-9bff-d74c54bb5fe5-e8217682.md) | `EventID == "4688"` |
+| [Powercat Download](../content/windows-security-events-powercat-download-c2112ca3-aae0-4079-9bff-d74c54bb5fe5-e8217682.md) | `EventID == "4688"`<br>`Process has_any "cmd.exe"` |
 | [Rare Process Path](../content/windows-security-events-rare-process-path-0ff22697-dc58-4623-b844-a767629840cd-668afb9c.md) | `EventID == "4688"` |
 | [Rare Processes Run by Service Accounts](../content/windows-security-events-rare-processes-run-by-service-accounts-af02987c-949d-47d5-b0ae-64d8e1b674e2-173a9ff0.md) | `EventID in "4624,4688"` |
-| [Remote Task Creation/Update using Schtasks Process](../content/windows-security-events-remote-task-creation-update-using-schtasks-process-1e4a5be3-4a60-4099-b286-2d3642575889-38edc3ad.md) | `EventID == "4688"` |
-| [Summary of user logons by logon type](../content/windows-security-events-summary-of-user-logons-by-logon-type-d0f13bb9-e713-4f89-b610-1806326a1dea-12378152.md) | `EventID in "4624,4625"` |
+| [Remote Task Creation/Update using Schtasks Process](../content/windows-security-events-remote-task-creation-update-using-schtasks-process-1e4a5be3-4a60-4099-b286-2d3642575889-38edc3ad.md) | `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` |
+| [Summary of user logons by logon type](../content/windows-security-events-summary-of-user-logons-by-logon-type-d0f13bb9-e713-4f89-b610-1806326a1dea-12378152.md) | `AccountType == "User"`<br>`EventID in "4624,4625"` |
 | [Summary of users created using uncommon/undocumented commandline switches](../content/windows-security-events-summary-of-users-created-using-uncommon-undocumented-commandline-switches-5e76eaf9-79a7-448c-bace-28e5b53b8396-824f28e4.md) | `EventID == "4688"` |
-| [Suspected LSASS Dump](../content/windows-security-events-suspected-lsass-dump-58fe8fc8-54fa-48cd-bac3-197f8d862429-8666c9e8.md) | `EventID == "4688"` |
-| [Suspicious Enumeration using Adfind Tool](../content/windows-security-events-suspicious-enumeration-using-adfind-tool-dd6fb889-43ef-44e1-a01d-093ab4bb12b2-fef95624.md) | `EventID == "4688"` |
-| [Suspicious Windows Login Outside Normal Hours](../content/windows-security-events-suspicious-windows-login-outside-normal-hours-e7bfbc3f-98c7-4aaa-a64c-de9c058b86b2-15ccdfd0.md) | `EventID in "4624,4625"` |
-| [Suspicious command line tokens in LolBins or LolScripts](../content/windows-security-events-suspicious-command-line-tokens-in-lolbins-or-lolscripts-6cdef739-18f6-4b3a-8fdc-93e9a4302dbf-46ec7a62.md) | `EventID == "4688"` |
+| [Suspected LSASS Dump](../content/windows-security-events-suspected-lsass-dump-58fe8fc8-54fa-48cd-bac3-197f8d862429-8666c9e8.md) | `CommandLine has_all "procdump"`<br>`CommandLine has_all "rundll32"`<br>`EventID == "4688"` |
+| [Suspicious Enumeration using Adfind Tool](../content/windows-security-events-suspicious-enumeration-using-adfind-tool-dd6fb889-43ef-44e1-a01d-093ab4bb12b2-fef95624.md) | `CommandLine matchesregex "(.*)>(.*)"`<br>`EventID == "4688"` |
+| [Suspicious Windows Login Outside Normal Hours](../content/windows-security-events-suspicious-windows-login-outside-normal-hours-e7bfbc3f-98c7-4aaa-a64c-de9c058b86b2-15ccdfd0.md) | `EventID in "4624,4625"`<br>`TargetDomainName !in "Window Manager,Font Driver Host"` |
+| [Suspicious command line tokens in LolBins or LolScripts](../content/windows-security-events-suspicious-command-line-tokens-in-lolbins-or-lolscripts-6cdef739-18f6-4b3a-8fdc-93e9a4302dbf-46ec7a62.md) | `EventID == "4688"`<br>`SubjectUserName != "SYSTEM"`<br>`SubjectUserName !endswith "$"` |
 | [Uncommon processes - bottom 5%](../content/windows-security-events-uncommon-processes-bottom-5-2ff4b10c-7056-4898-83fd-774104189fd5-2ef29fea.md) | `EventID == "4688"` |
-| [User Account added to Built in Sensitive or Privileged Domain Local or Global Group](../content/windows-security-events-user-account-added-to-built-in-sensitive-or-privileged-domain-local-or-global-gr-8d69a665-074a-443b-aae6-5dd9bdd5cfb1-0118579e.md) | `EventID in "4728,4732,4756"` |
+| [User Account added to Built in Sensitive or Privileged Domain Local or Global Group](../content/windows-security-events-user-account-added-to-built-in-sensitive-or-privileged-domain-local-or-global-gr-8d69a665-074a-443b-aae6-5dd9bdd5cfb1-0118579e.md) | `AccountType == "User"`<br>`EventID in "4728,4732,4756"`<br>`TargetSid !in "S-1-5-32-555"` |
 | [User account added or removed from a security group by an unauthorized user](../content/windows-security-events-user-account-added-or-removed-from-a-security-group-by-an-unauthorized-user-d57f675c-ad6c-44d0-95fb-3bf707e70155-3834c59d.md) | `EventID in "4728,4729,4732,4733,4746,4747,4751,4752,4756,4757,4761,4762"` |
-| [User created by unauthorized user](../content/windows-security-events-user-created-by-unauthorized-user-42ae9690-89ce-4063-9a90-465badad5395-6cbb1bb9.md) | `EventID == "4720"` |
-| [VIP account more than 6 failed logons in 10](../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-892cd37e-f9e1-49c3-b0b2-d74f52ac7b71-f57a0ad0.md) | `EventID == "4625"` |
-| [VIP account more than 6 failed logons in 10](../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.md) | `EventID == "4625"` |
+| [User created by unauthorized user](../content/windows-security-events-user-created-by-unauthorized-user-42ae9690-89ce-4063-9a90-465badad5395-6cbb1bb9.md) | `AccountType == "User"`<br>`EventID == "4720"` |
+| [VIP account more than 6 failed logons in 10](../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-892cd37e-f9e1-49c3-b0b2-d74f52ac7b71-f57a0ad0.md) | `AccountType == "User"`<br>`EventID == "4625"` |
+| [VIP account more than 6 failed logons in 10](../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.md) | `AccountType == "User"`<br>`EventID == "4625"`<br>`LogonType in "2,3"` |
 | [Windows System Time changed on hosts](../content/windows-security-events-windows-system-time-changed-on-hosts-9fd6f61d-2cc3-48de-acf5-7194e78d6ea1-9fe3fe4a.md) | `EventID == "4616"` |
 
-**Standalone Content:**
+**GitHub Only:** `EventID == "4740"`
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [External IP address in Command Line](../content/standalone-content-external-ip-address-in-command-line-2f6032ac-bb18-48b0-855a-7b05cf074957-0a0cb851.md) | `EventID == "4688"` |
-| [Failed Login Attempt by Expired account](../content/standalone-content-failed-login-attempt-by-expired-account-562900b1-39c4-4baf-a050-9cad1641db35-d62dcff7.md) | `EventID in "4625,4769,4776"` |
-| [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) | `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` |
+| Hunting Query |
+|:-------------|
+| [Summary of failed user logons by reason of failure](../content/windows-security-events-summary-of-failed-user-logons-by-reason-of-failure-e7642e6e-cf27-46ec-a4b9-e4475228fead-bc8b05cf.md) |
 
-**GitHub Only:**
+### Workbooks (22)
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [AD Account Lockout](../content/github-only-ad-account-lockout-e7642e6e-cf27-46ec-a4b9-e4475228fead-ea34d25c.md) | `EventID == "4740"` |
-| [Critical user management operations followed by disabling of System Restore from admin account](../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.md) |  |
-| [Download of New File Using Curl](../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.md) |  |
-| [Fake computer account authentication attempt](../content/github-only-fake-computer-account-authentication-attempt-f68084a2-87eb-11ec-a8a3-0242ac120002-10c686fb.md) | `EventID in "4624,4625"` |
-| [Large Scale Malware Deployment via GPO Scheduled Task Modification](../content/github-only-large-scale-malware-deployment-via-gpo-scheduled-task-modification-a1a06ba2-87f8-11ec-a8a3-0242ac120002-da222fca.md) | `EventID == "5145"` |
-| [Possible command injection attempts against Azure Integration Runtimes](../content/github-only-possible-command-injection-attempts-against-azure-integration-runtimes-2d1a3e86-f1a0-49d0-b88a-55789e1d6660-cb9d3e64.md) |  |
-| [Potential Process Doppelganging](../content/github-only-potential-process-doppelganging-97ff9459-dade-404a-b90e-d93b9acde1a4-9e113d99.md) | `EventID == "4985"` |
-| [RID Hijacking](../content/github-only-rid-hijacking-fcdeec10-6948-11ec-90d6-0242ac120003-a1db9674.md) | `EventID in "4624,4625"` |
-| [Rare firewall rule changes using netsh](../content/github-only-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-309055ae.md) | `EventID == "1"` |
-| [Recon Activity with Interactive Logon Correlation](../content/github-only-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-430a32b6.md) | `EventID == "4624"` |
-| [Remote Task Creation/Update using Schtasks Process](../content/github-only-remote-task-creation-update-using-schtasks-process-9a5f5afa-8d85-11ec-b909-0242ac120002-98b45ded.md) | `EventID == "4688"` |
-| [Summary of failed user logons by reason of failure](../content/windows-security-events-summary-of-failed-user-logons-by-reason-of-failure-e7642e6e-cf27-46ec-a4b9-e4475228fead-bc8b05cf.md) | `EventID == "4740"` |
-| [Suspicious command line tokens in LolBins or LolScripts](../content/github-only-suspicious-command-line-tokens-in-lolbins-or-lolscripts-4a6030de-c11c-4206-b4ea-cd005ebf80a2-42ab652c.md) | `EventID == "4688"` |
-| [Users Opening and Reading the Local Device Identity Key](../content/github-only-users-opening-and-reading-the-local-device-identity-key-9feddda0-6f46-43b4-a54f-5921e2b136b8-8ee3fb2f.md) |  |
-
-### Workbooks (43)
-
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `EventID in "2889,3000,4624,4768,4769,4776"`
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `Account !contains "ANONYMOUS LOGON"`<br>`AuthenticationPackageName == "NTLM"`<br>`EventID in "2889,3000,4624,4768,4769,4776"`<br>`LmPackageName == "NTLM V1"`<br>`PackageName contains "WDigest"`
 
 | Workbook |
 |:-------------|
@@ -627,7 +564,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
 
-**In solution [EatonForeseer](../solutions/eatonforeseer.md):** `EventID in "4624,4625,4634,4647,4648,4675"`
+**In solution [EatonForeseer](../solutions/eatonforeseer.md):** `AccountType == "User"`<br>`EventID in "4624,4625,4634,4647,4648,4675"`<br>`Process != "-"`
 
 | Workbook |
 |:-------------|
@@ -645,11 +582,11 @@ This table is ingested by the following connectors:
 |:-------------|
 | [HIPAACompliance](../content/hipaa-compliance-hipaacompliance-3850f8c8.md) |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `GroupMembership contains "admin"`<br>`GroupMembership contains "contributor"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
 **In solution [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md):** `EventID in "4624,4720,4722,4724,4725,4726,7036"`
 
@@ -657,7 +594,7 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Microsoft Exchange Admin Activity](../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.md) |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `EventID in "4723,4724"`
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ErrorCode == "50126"`<br>`EventID in "4723,4724"`
 
 | Workbook |
 |:-------------|
@@ -669,20 +606,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):**
+**In solution [PCI DSS Compliance](../solutions/pci-dss-compliance.md):** `Activity has "privileged"`<br>`Activity has_any "An account failed to log on"`<br>`SubjectUserName !has "$"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) |  |
+| Workbook |
+|:-------------|
+| [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | `EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"` |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | `AccountType != "Computer"`<br>`AccountType != "Machine"`<br>`ErrorCode == "500121"`<br>`EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"`<br>`TargetAccount !contains "NT AUTHORITY"`<br>`TargetAccount !endswith "$"` |
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"`
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"`<br>`ObjectName has_any "xlsx"`
 
 | Workbook |
 |:-------------|
@@ -693,11 +630,11 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SemperisDSPNotifications](../content/semperis-directory-services-protector-semperisdspnotifications-fcd6b926.md) |  |
-| [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md) | `EventID in "20000,20002,20012,9208,9211,9212"` |
-| [SemperisDSPSecurityIndicators](../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.md) | `EventID in "9208,9211,9212"` |
-| [SemperisDSPWorkbook](../content/semperis-directory-services-protector-semperisdspworkbook-523d6926.md) | `EventID in "9208,9211,9212"` |
+| [SemperisDSPQuickviewDashboard](../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.md) | `ClassName == "group"`<br>`ClassName != "dnsNode"`<br>`EventID in "20000,20002,20012,9208,9211,9212"`<br>`EventSourceName in "Semperis-DSP-Notifications,Semperis-DSP-Security,Semperis-Operation-Log"` |
+| [SemperisDSPSecurityIndicators](../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
+| [SemperisDSPWorkbook](../content/semperis-directory-services-protector-semperisdspworkbook-523d6926.md) | `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` |
 
-**In solution [Windows Firewall](../solutions/windows-firewall.md):** `EventID in "4624,4625"`
+**In solution [Windows Firewall](../solutions/windows-firewall.md):** `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"`
 
 | Workbook |
 |:-------------|
@@ -708,39 +645,13 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [EventAnalyzer](../content/windows-security-events-eventanalyzer-30e8f73e.md) | `EventID in "4656,4657,4658,4660,4661,4663,4664,4670,4671,4673,4674,4690,4691,4698,4699,4700,4701,4702,4715,4719,4817,4902,4904,4905,4906,4907,4908,4912,4985,5031,5039,5051,5140,5142,5143,5144,5148,5149,5150,5151,5154,5155,5156,5157,5158,5159,5168,5888,5889,5890"` |
-| [IdentityAndAccess](../content/windows-security-events-identityandaccess-d8681d3f.md) |  |
+| [IdentityAndAccess](../content/windows-security-events-identityandaccess-d8681d3f.md) | `Process != "-"` |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) | `EventID == "and test !has"` |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [EventAnalyzer](../content/github-only-eventanalyzer-fed80a16.md) | `EventID in "4656,4657,4658,4660,4661,4663,4664,4670,4671,4673,4674,4690,4691,4698,4699,4700,4701,4702,4715,4719,4817,4902,4904,4905,4906,4907,4908,4912,4985,5031,5039,5051,5140,5142,5143,5144,5148,5149,5150,5151,5154,5155,5156,5157,5158,5159,5168,5888,5889,5890"` |
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `EventID in "3,4663,4688,5136"` |
-| [IdentityAndAccess](../content/github-only-identityandaccess-c7aa136c.md) |  |
-| [InsecureProtocols](../content/github-only-insecureprotocols-bd42e6f8.md) | `EventID in "2889,3000,4624,4768,4769,4776,5827,5828,5829,5830,5831"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"` |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `EventID in "17,18,4624,4662,4670,4688,5145,87"` |
-| [SysmonThreatHunting](../content/github-only-sysmonthreathunting-ea4856c6.md) | `EventID in "1,10,11,12,13,17,18,22,3,4624,4625,4720,4722,4723,4724,4725,4726,4728,4729,4732,4733,4738,4740,4746,4747,4751,4752,4756,4761,4762,4767,4771,4781,7,8"` |
-| [WindowsAuditChecker](../content/github-only-windowsauditchecker-d8c63df2.md) | `EventID in "4624,4625,4768,4769,4771"` |
-| [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `EventID in "4624,4625"` |
-| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) | `EventID in "4624,4625"` |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (7)
 
@@ -749,13 +660,13 @@ This table is ingested by the following connectors:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuditEventMicrosoftSecurityEvents](../asim/asimauditeventmicrosoftsecurityevents.md) | AuditEvent | Microsoft Windows |  |
-| [ASimFileEventMicrosoftSecurityEvents](../asim/asimfileeventmicrosoftsecurityevents.md) | FileEvent | Microsoft Windows Events | `EventID == "4663"` |
+| [ASimFileEventMicrosoftSecurityEvents](../asim/asimfileeventmicrosoftsecurityevents.md) | FileEvent | Microsoft Windows Events | `EventID == "4663"`<br>`ObjectType == "File"` |
 | [ASimProcessCreateMicrosoftSecurityEvents](../asim/asimprocesscreatemicrosoftsecurityevents.md) | ProcessEvent | Security Events | `EventID == "4688"` |
 | [ASimProcessTerminateMicrosoftSecurityEvents](../asim/asimprocessterminatemicrosoftsecurityevents.md) | ProcessEvent | Security Events | `EventID == "4689"` |
-| [ASimRegistryEventMicrosoftSecurityEvent](../asim/asimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | Security Events | `EventID in "4657,4663"` |
+| [ASimRegistryEventMicrosoftSecurityEvent](../asim/asimregistryeventmicrosoftsecurityevent.md) | RegistryEvent | Security Events | `EventID in "4657,4663"`<br>`ObjectType == "Key"` |
 | [ASimUserManagementMicrosoftSecurityEvent](../asim/asimusermanagementmicrosoftsecurityevent.md) | UserManagement | Microsoft Security Event | `EventID in "4744,4748,4749,4753,4759,4763"` |
 
-### Other Parsers (1) — Selection Criteria: `EventID in "9208,9211,9212"`
+### Other Parsers (1) — Selection Criteria: `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"`
 
 | Parser | Solution |
 |:-------|:---------|
@@ -772,96 +683,219 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (53 criteria, 124 total references)
+## Selection Criteria Summary (86 criteria, 116 total references)
 
-References by type: 1 connectors, 117 content items, 5 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 109 content items, 5 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventID == "4688"` | - | 37 | 1 | - | **38** |
-| `EventID in "4624,4625"` | - | 11 | - | - | **11** |
-| `EventID in "9208,9211,9212"` | - | 7 | - | 1 | **8** |
-| `EventID == "5136"` | - | 4 | - | - | **4** |
-| `EventID == "4625"` | - | 3 | - | - | **3** |
-| `EventID == "4657"` | - | 3 | - | - | **3** |
-| `EventID == "1"` | - | 3 | - | - | **3** |
-| `EventID == "5145"` | - | 3 | - | - | **3** |
-| `EventID == "4740"` | - | 3 | - | - | **3** |
-| `EventID in "4624,4625,4634,4647,4648,4675"` | - | 2 | - | - | **2** |
-| `EventID in "4656,4663"` | - | 2 | - | - | **2** |
-| `EventID == "4720"` | - | 2 | - | - | **2** |
+| `EventID == "4688"` | - | 15 | 1 | - | **16** |
+| `EventID in "9208,9211,9212"`<br>`EventSourceName == "Semperis-DSP-Security"` | 1 | 7 | - | 1 | **9** |
+| `EventID in "4624,4625"` | - | 5 | - | - | **5** |
+| `AccountType == "User"`<br>`EventID == "4625"` | - | 2 | - | - | **2** |
 | `EventID in "4648,4673,4688,8002"` | - | 2 | - | - | **2** |
-| `EventID in "9211,9212"` | 1 | - | - | - | **1** |
-| `EventID == "5058"` | - | 1 | - | - | **1** |
-| `EventID == "5059"` | - | 1 | - | - | **1** |
+| `EventID == "4740"` | - | 2 | - | - | **2** |
+| `AccountType == "User"`<br>`EventID in "4624,4625,4634,4647,4648,4675"` | - | 1 | - | - | **1** |
+| `EventID in "4624,4625"`<br>`LogonType == "10"` | - | 1 | - | - | **1** |
+| `EventSourceName == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`NewProcessName has "C:\\Windows\\"` | - | 1 | - | - | **1** |
+| `Computer contains "<YOUR CA MACHINE NAME>"`<br>`EventID == "5058"` | - | 1 | - | - | **1** |
+| `Computer contains "<YOUR CA MACHINE NAME>"`<br>`EventID == "5059"` | - | 1 | - | - | **1** |
 | `EventID == "4768"` | - | 1 | - | - | **1** |
 | `EventID == "5143"` | - | 1 | - | - | **1** |
-| `EventID == "20002"` | - | 1 | - | - | **1** |
-| `EventID == "30001"` | - | 1 | - | - | **1** |
-| `EventID == "20012"` | - | 1 | - | - | **1** |
-| `EventID in "4663,4688"` | - | 1 | - | - | **1** |
+| `EventID == "20002"`<br>`EventSourceName == "Semperis-Operation-Log"` | - | 1 | - | - | **1** |
+| `EventID == "30001"`<br>`EventSourceName == "Semperis-DSP-Notifications"` | - | 1 | - | - | **1** |
+| `EventID == "20012"`<br>`EventSourceName == "Semperis-Operation-Log"` | - | 1 | - | - | **1** |
+| `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine has "SysAidServer"`<br>`EventID in "4663,4688"`<br>`ObjectName endswith ".jsp"`<br>`Process has_any "java.exe"` | - | 1 | - | - | **1** |
 | `EventID in "412,501,5156"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4662"` | - | 1 | - | - | **1** |
-| `EventID == "1102"` | - | 1 | - | - | **1** |
-| `EventID in "4657,4688"` | - | 1 | - | - | **1** |
+| `EventID == "5136"` | - | 1 | - | - | **1** |
+| `Account !endswith "$"`<br>`EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"`<br>`LogonType == "3"`<br>`RelativeTargetName in "atsvc,svcctl"` | - | 1 | - | - | **1** |
+| `EventID in "4656,4663"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"` | - | 1 | - | - | **1** |
+| `AccountType != "Machine"`<br>`EventID in "4624,4662"`<br>`LogonType == "3"`<br>`ObjectServer == "DS"`<br>`Properties has "1131f6aa-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "1131f6ad-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "89e95b76-444d-4c62-991a-0facbeda640c"` | - | 1 | - | - | **1** |
+| `CommandLine contains "TVqQAAMAAAAEAAA"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
+| `CommandLine contains ".decode("`<br>`CommandLine contains ".decode64("`<br>`CommandLine contains "base64 --decode"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
+| `EventID == "1102"`<br>`EventSourceName == "Microsoft-Windows-Eventlog"` | - | 1 | - | - | **1** |
+| `EventID in "4657,4688"`<br>`ParentProcessName endswith "cmd.exe"`<br>`ParentProcessName endswith "powershell.exe"`<br>`ParentProcessName endswith "powershell_ise.exe"`<br>`Process == "fodhelper.exe"` | - | 1 | - | - | **1** |
+| `CommandLine !has "sdelete"`<br>`CommandLine has_all "accepteula"`<br>`EventID == "4688"`<br>`Process != "sdelete.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4657"` | - | 1 | - | - | **1** |
+| `CommandLine has "-k GPSvcGroup"`<br>`CommandLine has "-s gpsvc"`<br>`CommandLine has "sdelete"`<br>`CommandLine has_all "-s"`<br>`EventID == "4688"`<br>`ParentProcessName endswith "svchost.exe"`<br>`Process in "sdelete.exe,svchost.exe"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4656"` | - | 1 | - | - | **1** |
-| `EventID in "1,4688"` | - | 1 | - | - | **1** |
-| `EventID == "501"` | - | 1 | - | - | **1** |
+| `NewValue contains "CreateObject"`<br>`NewValue contains "Execute("`<br>`NewValue contains "RegRead"`<br>`NewValue contains "RunHTMLApplication"`<br>`NewValue contains "jscript"`<br>`NewValue contains "mshtml"`<br>`NewValue contains "mshtml,"`<br>`NewValue contains "vbscript"`<br>`NewValue contains "window.close"`<br>`ObjectName !has "\\Run"`<br>`ObjectName has "\\CurrentVersion"` | - | 1 | - | - | **1** |
+| `NewProcessName has_any "arp.exe"` | - | 1 | - | - | **1** |
+| `NewProcessName endswith "werfault.exe"`<br>`ObjectName endswith "lsass.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`NewProcessName matchesregex "C:\\\\Windows\\\\[a-zA-Z]{8}.exe"`<br>`ParentProcessName has "services.exe"` | - | 1 | - | - | **1** |
+| `CommandLine matchesregex "-[Ee^]{1,2}[NnCcOoDdEeMmAaPpHh^`]+\\s+\"`<br>`NewProcessName endswith "powershell.exe"` | - | 1 | - | - | **1** |
+| `CommandLine contains ".onion"`<br>`CommandLine contains "http"`<br>`CommandLine contains "paste."`<br>`CommandLine has_any "pastebin"`<br>`Process has "powershell.exe"` | - | 1 | - | - | **1** |
+| `NewProcessName has_any "cmd.exe"`<br>`NewProcessName has_any "winword.exe"` | - | 1 | - | - | **1** |
+| `CommandLine contains "\\Microsoft\\Windows\\CurrentVersion"`<br>`CommandLine has_all "Execute"`<br>`CommandLine has_all "vbscript"`<br>`Process has_any "cmd.exe"` | - | 1 | - | - | **1** |
+| `CommandLine has "cmd.exe"`<br>`CommandLine has_any ",.dll"`<br>`CommandLine has_any "explorer"`<br>`CommandLine matchesregex "\\/[Cc] +[Ss][Tt][Aa][Rr][Tt].*\\.exe"`<br>`ParentProcessName has "explorer.exe"`<br>`Process has_any "wscript.exe"` | - | 1 | - | - | **1** |
+| `EventID == "5145"`<br>`RelativeTargetName == "atsvc"` | - | 1 | - | - | **1** |
 | `EventID in "4698,4702"` | - | 1 | - | - | **1** |
+| `AccountType != "Machine"`<br>`CommandLine has_all "advfirewall"`<br>`EventID == "1"`<br>`Process == "netsh.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`ParentProcessName endswith "wmiprvse.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4657"`<br>`ObjectValueName == "CrashDumpEnabled"` | - | 1 | - | - | **1** |
+| `CommandLine has "powershell"`<br>`CommandLine has_any "cdn.discordapp.com"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | - | 1 | - | - | **1** |
+| `CommandLine has "Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin"`<br>`EventID == "4688"`<br>`Process has_any "cmd.exe"` | - | 1 | - | - | **1** |
 | `EventID in "4727,4728,4731,4732,4754,4756"` | - | 1 | - | - | **1** |
-| `EventID == "4648"` | - | 1 | - | - | **1** |
+| `CommandLine has "New-MailboxExportRequest"`<br>`CommandLine has "Remove-MailboxExportRequest"`<br>`EventID == "4688"`<br>`Process in "cmd.exe,powershell.exe"` | - | 1 | - | - | **1** |
+| `CommandLine has "$client = New-Object System.Net.Sockets.TCPClient"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`NewProcessName !endswith "conhost.exe"` | - | 1 | - | - | **1** |
+| `NewProcessName !has ":\\Windows\\System32"`<br>`NewProcessName !has ":\\Windows\\Syswow64"`<br>`NewProcessName endswith "\\svchost.exe"`<br>`SubjectUserSid !in "S-1-5-18,S-1-5-19,S-1-5-20"` | - | 1 | - | - | **1** |
+| `EventID == "5145"`<br>`RelativeTargetName == "spoolss"`<br>`ShareName == "\\\\*\\IPC$"` | - | 1 | - | - | **1** |
+| `EventID == "4648"`<br>`SubjectUserSid != "S-1-0-0"`<br>`TargetInfo has "/"` | - | 1 | - | - | **1** |
+| `CommandLine has "-e"`<br>`EventID == "4688"`<br>`Process in "powershell.exe,powershell_ise.exe"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`Process has_any "cmd.exe"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4688"` | - | 1 | - | - | **1** |
-| `EventID in "4728,4732,4756"` | - | 1 | - | - | **1** |
-| `EventID in "4720,4726"` | - | 1 | - | - | **1** |
+| `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` | - | 1 | - | - | **1** |
+| `CommandLine has_all "procdump"`<br>`CommandLine has_all "rundll32"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
+| `EventID == "4688"`<br>`SubjectUserName != "SYSTEM"`<br>`SubjectUserName !endswith "$"` | - | 1 | - | - | **1** |
+| `CommandLine matchesregex "(.*)>(.*)"`<br>`EventID == "4688"` | - | 1 | - | - | **1** |
+| `EventID in "4624,4625"`<br>`TargetDomainName !in "Window Manager,Font Driver Host"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID in "4624,4625"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID in "4728,4732,4756"`<br>`TargetSid !in "S-1-5-32-555"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID in "4720,4726"` | - | 1 | - | - | **1** |
 | `EventID in "4728,4729,4732,4733,4746,4747,4751,4752,4756,4757,4761,4762"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID == "4720"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID == "4625"`<br>`LogonType in "2,3"` | - | 1 | - | - | **1** |
 | `EventID == "4616"` | - | 1 | - | - | **1** |
-| `EventID in "4625,4769,4776"` | - | 1 | - | - | **1** |
-| `EventID == "4624"` | - | 1 | - | - | **1** |
-| `EventID in "4624,4625,4720,4726,4728,4732,4756,7045"` | - | 1 | - | - | **1** |
-| `EventID == "4985"` | - | 1 | - | - | **1** |
-| `EventID in "2889,3000,4624,4768,4769,4776"` | - | 1 | - | - | **1** |
+| `Account !contains "ANONYMOUS LOGON"`<br>`AuthenticationPackageName == "NTLM"`<br>`EventID in "2889,3000,4624,4768,4769,4776"`<br>`LmPackageName == "NTLM V1"`<br>`PackageName contains "WDigest"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID in "4624,4625,4634,4647,4648,4675"`<br>`Process != "-"` | - | 1 | - | - | **1** |
+| `GroupMembership contains "admin"`<br>`GroupMembership contains "contributor"` | - | 1 | - | - | **1** |
 | `EventID in "4624,4720,4722,4724,4725,4726,7036"` | - | 1 | - | - | **1** |
-| `EventID in "4723,4724"` | - | 1 | - | - | **1** |
-| `EventID in "20000,20002,20012,9208,9211,9212"` | - | 1 | - | - | **1** |
-| `EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"` | - | 1 | - | - | **1** |
-| `EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"` | - | 1 | - | - | **1** |
+| `ErrorCode == "50126"`<br>`EventID in "4723,4724"` | - | 1 | - | - | **1** |
+| `Activity has "privileged"`<br>`Activity has_any "An account failed to log on"`<br>`SubjectUserName !has "$"` | - | 1 | - | - | **1** |
+| `ClassName == "group"`<br>`ClassName != "dnsNode"`<br>`EventID in "20000,20002,20012,9208,9211,9212"`<br>`EventSourceName in "Semperis-DSP-Notifications,Semperis-DSP-Security,Semperis-Operation-Log"` | - | 1 | - | - | **1** |
+| `AccountType != "Computer"`<br>`AccountType != "Machine"`<br>`ErrorCode == "500121"`<br>`EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"`<br>`TargetAccount !contains "NT AUTHORITY"`<br>`TargetAccount !endswith "$"` | - | 1 | - | - | **1** |
+| `EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"`<br>`ObjectName has_any "xlsx"` | - | 1 | - | - | **1** |
+| `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"` | - | 1 | - | - | **1** |
 | `EventID in "4656,4657,4658,4660,4661,4663,4664,4670,4671,4673,4674,4690,4691,4698,4699,4700,4701,4702,4715,4719,4817,4902,4904,4905,4906,4907,4908,4912,4985,5031,5039,5051,5140,5142,5143,5144,5148,5149,5150,5151,5154,5155,5156,5157,5158,5159,5168,5888,5889,5890"` | - | 1 | - | - | **1** |
-| `EventID == "4663"` | - | - | 1 | - | **1** |
+| `Process != "-"` | - | 1 | - | - | **1** |
+| `EventID == "4663"`<br>`ObjectType == "File"` | - | - | 1 | - | **1** |
 | `EventID == "4689"` | - | - | 1 | - | **1** |
-| `EventID in "4657,4663"` | - | - | 1 | - | **1** |
+| `EventID in "4657,4663"`<br>`ObjectType == "Key"` | - | - | 1 | - | **1** |
 | `EventID in "4744,4748,4749,4753,4759,4763"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **117** | **5** | **1** | **124** |
+| **Total** | **1** | **109** | **5** | **1** | **116** |
+
+### AccessMask
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `0x10` | - | 1 | - | - | **1** |
+| `0x100` | - | 1 | - | - | **1** |
+| `0x2` | - | 1 | - | - | **1** |
+| `0x4` | - | 1 | - | - | **1** |
+
+### Account
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!endswith $` | - | 1 | - | - | **1** |
+| `!contains ANONYMOUS LOGON` | - | 1 | - | - | **1** |
+
+### AccountType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `User` | - | 10 | - | - | **10** |
+| `!= Machine` | - | 3 | - | - | **3** |
+| `!= Computer` | - | 1 | - | - | **1** |
+
+### Activity
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has privileged` | - | 1 | - | - | **1** |
+| `has_any An account failed to log on` | - | 1 | - | - | **1** |
+
+### AuthenticationPackageName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `NTLM` | - | 1 | - | - | **1** |
+
+### ClassName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `group` | - | 1 | - | - | **1** |
+| `!= dnsNode` | - | 1 | - | - | **1** |
+
+### CommandLine
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has SysAidServer` | - | 1 | - | - | **1** |
+| `contains TVqQAAMAAAAEAAA` | - | 1 | - | - | **1** |
+| `contains .decode(` | - | 1 | - | - | **1** |
+| `contains .decode64(` | - | 1 | - | - | **1** |
+| `contains base64 --decode` | - | 1 | - | - | **1** |
+| `!has sdelete` | - | 1 | - | - | **1** |
+| `has_all accepteula` | - | 1 | - | - | **1** |
+| `has -k GPSvcGroup` | - | 1 | - | - | **1** |
+| `has -s gpsvc` | - | 1 | - | - | **1** |
+| `has sdelete` | - | 1 | - | - | **1** |
+| `has_all -s` | - | 1 | - | - | **1** |
+| `contains .onion` | - | 1 | - | - | **1** |
+| `contains http` | - | 1 | - | - | **1** |
+| `contains paste.` | - | 1 | - | - | **1** |
+| `has_any pastebin` | - | 1 | - | - | **1** |
+| `contains \\Microsoft\\Windows\\CurrentVersion` | - | 1 | - | - | **1** |
+| `has_all Execute` | - | 1 | - | - | **1** |
+| `has_all vbscript` | - | 1 | - | - | **1** |
+| `has cmd.exe` | - | 1 | - | - | **1** |
+| `has_any .dll` | - | 1 | - | - | **1** |
+| `has_any explorer` | - | 1 | - | - | **1** |
+| `has_all advfirewall` | - | 1 | - | - | **1** |
+| `has powershell` | - | 1 | - | - | **1** |
+| `has_any cdn.discordapp.com` | - | 1 | - | - | **1** |
+| `has Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin` | - | 1 | - | - | **1** |
+| `has New-MailboxExportRequest` | - | 1 | - | - | **1** |
+| `has Remove-MailboxExportRequest` | - | 1 | - | - | **1** |
+| `has $client = New-Object System.Net.Sockets.TCPClient` | - | 1 | - | - | **1** |
+| `has -e` | - | 1 | - | - | **1** |
+| `has /s` | - | 1 | - | - | **1** |
+| `has_all procdump` | - | 1 | - | - | **1** |
+| `has_all rundll32` | - | 1 | - | - | **1** |
+
+### Computer
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains <YOUR CA MACHINE NAME>` | - | 2 | - | - | **2** |
+
+### ErrorCode
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `50126` | - | 1 | - | - | **1** |
+| `500121` | - | 1 | - | - | **1** |
 
 ### EventID
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `4688` | - | 46 | 1 | - | **47** |
-| `4624` | - | 22 | - | - | **22** |
-| `4625` | - | 19 | - | - | **19** |
+| `4688` | - | 42 | 1 | - | **43** |
+| `4624` | - | 18 | - | - | **18** |
+| `4625` | - | 15 | - | - | **15** |
+| `9208` | 1 | 8 | - | 1 | **10** |
 | `9211` | 1 | 8 | - | 1 | **10** |
 | `9212` | 1 | 8 | - | 1 | **10** |
-| `9208` | - | 8 | - | 1 | **9** |
-| `4663` | - | 5 | 2 | - | **7** |
-| `4657` | - | 6 | 1 | - | **7** |
-| `4720` | - | 7 | - | - | **7** |
+| `4663` | - | 4 | 2 | - | **6** |
+| `4657` | - | 5 | 1 | - | **6** |
 | `4648` | - | 5 | - | - | **5** |
-| `4656` | - | 5 | - | - | **5** |
-| `4732` | - | 5 | - | - | **5** |
-| `5136` | - | 4 | - | - | **4** |
-| `5145` | - | 4 | - | - | **4** |
-| `1` | - | 4 | - | - | **4** |
-| `4728` | - | 4 | - | - | **4** |
-| `4756` | - | 4 | - | - | **4** |
-| `4726` | - | 4 | - | - | **4** |
+| `4720` | - | 5 | - | - | **5** |
+| `4656` | - | 4 | - | - | **4** |
+| `4732` | - | 4 | - | - | **4** |
 | `4768` | - | 3 | - | - | **3** |
 | `4698` | - | 3 | - | - | **3** |
 | `4702` | - | 3 | - | - | **3** |
+| `5145` | - | 3 | - | - | **3** |
 | `1102` | - | 3 | - | - | **3** |
 | `4673` | - | 3 | - | - | **3** |
-| `4740` | - | 3 | - | - | **3** |
-| `4776` | - | 3 | - | - | **3** |
+| `4728` | - | 3 | - | - | **3** |
+| `4756` | - | 3 | - | - | **3** |
+| `4726` | - | 3 | - | - | **3** |
 | `4724` | - | 3 | - | - | **3** |
 | `4719` | - | 3 | - | - | **3** |
 | `4634` | - | 2 | - | - | **2** |
@@ -870,15 +904,14 @@ References by type: 1 connectors, 117 content items, 5 ASIM parsers, 1 other par
 | `5143` | - | 2 | - | - | **2** |
 | `20002` | - | 2 | - | - | **2** |
 | `20012` | - | 2 | - | - | **2** |
-| `501` | - | 2 | - | - | **2** |
 | `5156` | - | 2 | - | - | **2** |
 | `4699` | - | 2 | - | - | **2** |
 | `4700` | - | 2 | - | - | **2** |
 | `4701` | - | 2 | - | - | **2** |
 | `8002` | - | 2 | - | - | **2** |
+| `4740` | - | 2 | - | - | **2** |
 | `4754` | - | 2 | - | - | **2** |
-| `4769` | - | 2 | - | - | **2** |
-| `4985` | - | 2 | - | - | **2** |
+| `4776` | - | 2 | - | - | **2** |
 | `4723` | - | 2 | - | - | **2** |
 | `4660` | - | 2 | - | - | **2** |
 | `4670` | - | 2 | - | - | **2** |
@@ -887,8 +920,11 @@ References by type: 1 connectors, 117 content items, 5 ASIM parsers, 1 other par
 | `5059` | - | 1 | - | - | **1** |
 | `30001` | - | 1 | - | - | **1** |
 | `412` | - | 1 | - | - | **1** |
+| `501` | - | 1 | - | - | **1** |
+| `5136` | - | 1 | - | - | **1** |
 | `4697` | - | 1 | - | - | **1** |
 | `4662` | - | 1 | - | - | **1** |
+| `1` | - | 1 | - | - | **1** |
 | `4727` | - | 1 | - | - | **1** |
 | `4731` | - | 1 | - | - | **1** |
 | `4729` | - | 1 | - | - | **1** |
@@ -901,9 +937,9 @@ References by type: 1 connectors, 117 content items, 5 ASIM parsers, 1 other par
 | `4761` | - | 1 | - | - | **1** |
 | `4762` | - | 1 | - | - | **1** |
 | `4616` | - | 1 | - | - | **1** |
-| `7045` | - | 1 | - | - | **1** |
 | `2889` | - | 1 | - | - | **1** |
 | `3000` | - | 1 | - | - | **1** |
+| `4769` | - | 1 | - | - | **1** |
 | `4722` | - | 1 | - | - | **1** |
 | `4725` | - | 1 | - | - | **1** |
 | `7036` | - | 1 | - | - | **1** |
@@ -930,6 +966,7 @@ References by type: 1 connectors, 117 content items, 5 ASIM parsers, 1 other par
 | `4906` | - | 1 | - | - | **1** |
 | `4908` | - | 1 | - | - | **1** |
 | `4912` | - | 1 | - | - | **1** |
+| `4985` | - | 1 | - | - | **1** |
 | `5031` | - | 1 | - | - | **1** |
 | `5039` | - | 1 | - | - | **1** |
 | `5051` | - | 1 | - | - | **1** |
@@ -956,6 +993,198 @@ References by type: 1 connectors, 117 content items, 5 ASIM parsers, 1 other par
 | `4753` | - | - | 1 | - | **1** |
 | `4759` | - | - | 1 | - | **1** |
 | `4763` | - | - | 1 | - | **1** |
+
+### EventSourceName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Semperis-DSP-Security` | 1 | 8 | - | 1 | **10** |
+| `Semperis-Operation-Log` | - | 3 | - | - | **3** |
+| `Microsoft-Windows-Eventlog` | - | 2 | - | - | **2** |
+| `Semperis-DSP-Notifications` | - | 2 | - | - | **2** |
+
+### GroupMembership
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains admin` | - | 1 | - | - | **1** |
+| `contains contributor` | - | 1 | - | - | **1** |
+
+### LmPackageName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `NTLM V1` | - | 1 | - | - | **1** |
+
+### LogonType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `3` | - | 3 | - | - | **3** |
+| `10` | - | 2 | - | - | **2** |
+| `2` | - | 1 | - | - | **1** |
+
+### NewProcessName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has C:\\Windows\\` | - | 1 | - | - | **1** |
+| `has_any Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}` | - | 1 | - | - | **1** |
+| `has_any arp.exe` | - | 1 | - | - | **1** |
+| `endswith werfault.exe` | - | 1 | - | - | **1** |
+| `endswith powershell.exe` | - | 1 | - | - | **1** |
+| `has_any cmd.exe` | - | 1 | - | - | **1** |
+| `has_any winword.exe` | - | 1 | - | - | **1** |
+| `!endswith conhost.exe` | - | 1 | - | - | **1** |
+| `!has :\\Windows\\System32` | - | 1 | - | - | **1** |
+| `!has :\\Windows\\Syswow64` | - | 1 | - | - | **1** |
+| `endswith \\svchost.exe` | - | 1 | - | - | **1** |
+| `C:\\Windows\\System32\\schtasks.exe` | - | 1 | - | - | **1** |
+
+### NewValue
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains CreateObject` | - | 1 | - | - | **1** |
+| `contains Execute(` | - | 1 | - | - | **1** |
+| `contains RegRead` | - | 1 | - | - | **1** |
+| `contains RunHTMLApplication` | - | 1 | - | - | **1** |
+| `contains jscript` | - | 1 | - | - | **1** |
+| `contains mshtml` | - | 1 | - | - | **1** |
+| `contains mshtml,` | - | 1 | - | - | **1** |
+| `contains vbscript` | - | 1 | - | - | **1** |
+| `contains window.close` | - | 1 | - | - | **1** |
+
+### ObjectName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `endswith .jsp` | - | 1 | - | - | **1** |
+| `!has \\Run` | - | 1 | - | - | **1** |
+| `has \\CurrentVersion` | - | 1 | - | - | **1** |
+| `endswith lsass.exe` | - | 1 | - | - | **1** |
+| `has_any xlsx` | - | 1 | - | - | **1** |
+
+### ObjectServer
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `DS` | - | 1 | - | - | **1** |
+
+### ObjectType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `File` | - | - | 1 | - | **1** |
+| `Key` | - | - | 1 | - | **1** |
+
+### ObjectValueName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `CrashDumpEnabled` | - | 1 | - | - | **1** |
+
+### PackageName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains WDigest` | - | 1 | - | - | **1** |
+
+### ParentProcessName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `endswith cmd.exe` | - | 1 | - | - | **1** |
+| `endswith powershell.exe` | - | 1 | - | - | **1** |
+| `endswith powershell_ise.exe` | - | 1 | - | - | **1** |
+| `endswith svchost.exe` | - | 1 | - | - | **1** |
+| `has services.exe` | - | 1 | - | - | **1** |
+| `has explorer.exe` | - | 1 | - | - | **1** |
+| `endswith wmiprvse.exe` | - | 1 | - | - | **1** |
+
+### Process
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has_any cmd.exe` | - | 3 | - | - | **3** |
+| `has_any powershell.exe` | - | 2 | - | - | **2** |
+| `powershell.exe` | - | 2 | - | - | **2** |
+| `!= -` | - | 2 | - | - | **2** |
+| `has_any java.exe` | - | 1 | - | - | **1** |
+| `fodhelper.exe` | - | 1 | - | - | **1** |
+| `!= sdelete.exe` | - | 1 | - | - | **1** |
+| `sdelete.exe` | - | 1 | - | - | **1** |
+| `svchost.exe` | - | 1 | - | - | **1** |
+| `has powershell.exe` | - | 1 | - | - | **1** |
+| `has_any wscript.exe` | - | 1 | - | - | **1** |
+| `netsh.exe` | - | 1 | - | - | **1** |
+| `cmd.exe` | - | 1 | - | - | **1** |
+| `powershell_ise.exe` | - | 1 | - | - | **1** |
+
+### Properties
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2` | - | 1 | - | - | **1** |
+| `has 1131f6ad-9c07-11d1-f79f-00c04fc2dcd2` | - | 1 | - | - | **1** |
+| `has 89e95b76-444d-4c62-991a-0facbeda640c` | - | 1 | - | - | **1** |
+
+### RelativeTargetName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `atsvc` | - | 2 | - | - | **2** |
+| `svcctl` | - | 1 | - | - | **1** |
+| `spoolss` | - | 1 | - | - | **1** |
+
+### ShareName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `\\\\*\\IPC$` | - | 1 | - | - | **1** |
+
+### SubjectUserName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= SYSTEM` | - | 1 | - | - | **1** |
+| `!endswith $` | - | 1 | - | - | **1** |
+| `!has $` | - | 1 | - | - | **1** |
+
+### SubjectUserSid
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= S-1-5-18` | - | 1 | - | - | **1** |
+| `!= S-1-5-19` | - | 1 | - | - | **1** |
+| `!= S-1-5-20` | - | 1 | - | - | **1** |
+| `!= S-1-0-0` | - | 1 | - | - | **1** |
+
+### TargetAccount
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!contains NT AUTHORITY` | - | 1 | - | - | **1** |
+| `!endswith $` | - | 1 | - | - | **1** |
+
+### TargetDomainName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= Window Manager` | - | 1 | - | - | **1** |
+| `!= Font Driver Host` | - | 1 | - | - | **1** |
+
+### TargetInfo
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has /` | - | 1 | - | - | **1** |
+
+### TargetSid
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= S-1-5-32-555` | - | 1 | - | - | **1** |
 
 ---
 

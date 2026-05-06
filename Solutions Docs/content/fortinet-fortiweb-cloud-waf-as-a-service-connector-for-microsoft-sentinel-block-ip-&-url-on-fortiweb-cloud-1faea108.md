@@ -14,6 +14,30 @@ This Playbook Provides the automation on blocking the suspicious/malicious IP an
 | **Solution** | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-BlockIP-URL/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `fortiweb` | Managed | 0 | 4 |
+| `FortiWebCloud` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_(IP)_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_(URL)_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`fortiweb`** (managedApi):
+- *Update_IP_Protection*: method=`put`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection`
+- *Update_URL_Access*: method=`put`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess`
+- *Get_IP_protection_2*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection`
+- *Get_URL_Access*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [FortiWebPlaybooks/FortiWeb-BlockIP-URL/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-BlockIP-URL/readme.md)*

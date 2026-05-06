@@ -18,10 +18,10 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **134** |
-| Active | 128 |
+| Total Connectors | **150** |
+| Active | 127 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 6 |
+| Unpublished ⚠️ | 23 |
 
 ## Connectors Using This Method
 
@@ -30,7 +30,6 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
 | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) | Dragos | 1 | [Dragos](../solutions/dragos.md) |
-| [1Password (Serverless)](../connectors/1password-serverless.md) | Unknown (ARM variable) | 1 | [1Password](../solutions/1password.md) |
 | [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [Alibaba Cloud ActionTrail (via Codeless Connector Framework)](../connectors/alicloudactiontrailccpdefinition.md) | Microsoft | 1 | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
 | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md) | Microsoft | ? | [Alibaba Cloud Networking](../solutions/alibaba-cloud-networking.md) |
@@ -132,12 +131,12 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Proofpoint On Demand Email Security (via Codeless Connector Platform)](../connectors/proofpointccpdefinition.md) | Proofpoint | 2 | [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |
 | [Proofpoint TAP (via Codeless Connector Platform)](../connectors/proofpointtapv2.md) | Proofpoint | 4 | [ProofPointTap](../solutions/proofpointtap.md) |
 | [QscoutAppEventsConnector (via Codeless Connector Framework)](../connectors/qscoutappeventsccfdefinition.md) | Quokka | 1 | [Quokka](../solutions/quokka.md) |
-| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) | Microsoft | 1 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
+| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) 🔶 | Microsoft | 2 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | [Qualys Vulnerability Management (via Codeless Connector Framework)](../connectors/qualysvmlogsccpdefinition.md) | Microsoft | 1 | [QualysVM](../solutions/qualysvm.md) |
 | [Rapid7 Insight Platform Vulnerability Management Reports (via Codeless Connector Framework)](../connectors/rapid7insightvmconnector.md) | Microsoft | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | [RSA ID Plus Admin Logs Connector](../connectors/rsaidplus-adminglogs-connector.md) | RSA | 1 | [RSAIDPlus_AdminLogs_Connector](../solutions/rsaidplus-adminlogs-connector.md) |
 | [Rubrik Security Cloud Protection Status (using Codeless Connector Framework)](../connectors/rubrikprotectionstatus.md) | Rubrik, Inc | 1 | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
-| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | Microsoft | 2 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | [SAP BTP](../connectors/sapbtpauditevents.md) | Microsoft | 1 | [SAP BTP](../solutions/sap-btp.md) |
 | [SAP Enterprise Threat Detection, cloud edition](../connectors/sapetdalerts.md) | SAP | 2 | [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | [SAP S/4HANA Cloud Public Edition](../connectors/saps4publicalerts.md) | SAP | 1 | [SAP S4 Cloud Public Edition](../solutions/sap-s4-cloud-public-edition.md) |
@@ -161,7 +160,24 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | Microsoft | 7 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | [Workday User Activity](../connectors/workdayccpdefinition.md) | Microsoft | 1 | [Workday](../solutions/workday.md) |
 | [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md) | Zero Networks | 1 | [ZeroNetworks](../solutions/zeronetworks.md) |
+| [ZeroFox Enterprise - Advanced Dark Web](../connectors/zerofoxadvanceddarkwebdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) 🔶 | ZeroFox Enterprise | 1 | [ZeroFox](../solutions/zerofox.md) |
+| [ZeroFox Enterprise - Botnet](../connectors/zerofoxbotnetdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Botnet Compromised Credentials](../connectors/zerofoxbotnetccdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Breaches](../connectors/zerofoxbreachesdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Compromised Credentials](../connectors/zerofoxcompromisedcredentialsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Credit Cards](../connectors/zerofoxcreditcardsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Dark Web](../connectors/zerofoxdarkwebdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Discord](../connectors/zerofoxdiscorddefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Disruption](../connectors/zerofoxdisruptiondefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Email Addresses](../connectors/zerofoxemailaddressesdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Exploits](../connectors/zerofoxexploitsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Indicators](../connectors/zerofoxindicatorsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Key Incidents](../connectors/zerofoxkeyincidentsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - National IDs](../connectors/zerofoxnationalidsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Physical Threats](../connectors/zerofoxphysicalthreatsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Telegram](../connectors/zerofoxtelegramdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Vulnerabilities](../connectors/zerofoxvulnerabilitiesdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md) | Microsoft | 1 | [ZoomReports](../solutions/zoomreports.md) |
 
 ---

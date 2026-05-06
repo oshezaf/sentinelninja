@@ -35,7 +35,7 @@ This union parser includes parsers for the following products:
 | Microsoft Security Event | [_ASim_UserManagement_MicrosoftSecurityEvent](asimusermanagementmicrosoftsecurityevent.md) | [Windows Security Events](../solutions/windows-security-events.md) |
 | Microsoft Windows Event | [_ASim_UserManagement_MicrosoftWindowsEvent](asimusermanagementmicrosoftwindowsevent.md) | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) |
 | Native | [_ASim_UserManagement_Native](asimusermanagementnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
-| SentinelOne | [_ASim_UserManagement_SentinelOne](asimusermanagementsentinelone.md) |  |
+| SentinelOne | [_ASim_UserManagement_SentinelOne](asimusermanagementsentinelone.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
 
 ## Parameters
 

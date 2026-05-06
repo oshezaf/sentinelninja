@@ -14,6 +14,27 @@ This playbook takes a host from a Microsoft Sentinel incident and adds it to pro
 | **Solution** | [ZeroNetworks](../solutions/zeronetworks.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddAssettoProtection/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `ZeroNetworksConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+
+**`ZeroNetworksConnector`** (customApi):
+- *Add_asset_to_protection*: method=`post`, path=`/assets/protect`
+- *Search_for_an_Asset*: method=`get`, path=`/assets`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ZeroNetworksSegment-AddAssettoProtection/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Playbooks/ZeroNetworksSegment-AddAssettoProtection/readme.md)*

@@ -14,6 +14,23 @@ This playbook creates a NetApp volume snapshot using the updated NetApp Ransomwa
 | **Solution** | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Volume_Snapshot_Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Call_Auth_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]`
+- *Submit_Volume_Snapshot*: method=`POST`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/storage/take-snapshot`
+- *Call_Async_Poll_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAsyncPollPlaybookName'), 'manual'), '2019-05-01').value]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [NetApp-RansomwareResilience_Volume_Snapshot_Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Volume_Snapshot_Playbook/readme.md)*

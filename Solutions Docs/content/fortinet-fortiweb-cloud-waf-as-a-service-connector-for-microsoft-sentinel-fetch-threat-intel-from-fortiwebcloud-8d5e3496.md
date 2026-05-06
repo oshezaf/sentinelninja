@@ -14,6 +14,27 @@ This playbook provides/updates the threat intel and essential details in comment
 | **Solution** | [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-enrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `fortiweb` | Managed | 0 | 2 |
+| `FortiWebCloud` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`fortiweb`** (managedApi):
+- *Get_Attack_Log_Detail*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs/@{encodeURIComponent(items('For_each_2')?['msg_id'])}`
+- *Get_Attack_Logs_List*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [FortiWebPlaybooks/FortiWeb-enrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-enrichment/readme.md)*

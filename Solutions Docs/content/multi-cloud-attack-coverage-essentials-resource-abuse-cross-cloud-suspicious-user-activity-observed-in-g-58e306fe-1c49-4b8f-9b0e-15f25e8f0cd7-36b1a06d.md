@@ -24,10 +24,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `AuthenticationInfo !has "system:"`<br>`PrincipalEmail !endswith "gserviceaccount.com"` | ✓ | ✓ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName !in "Azure Sentinel"` | ✓ | ✗ | ? |
 
 ---
 

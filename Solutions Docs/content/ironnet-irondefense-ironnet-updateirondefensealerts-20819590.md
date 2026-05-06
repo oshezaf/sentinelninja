@@ -16,6 +16,31 @@ author: IronNet
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 11 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Get_All_Updated_Incident*: method=`GET`, uri=`@variables('Next Link')`
+- *IronNet_Login_to_fetch_the_Token*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/Login`
+- *Get_Incident_and_System_Alert_relations*: method=`GET`, uri=`https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Loop_through_each_Incident')?['name']}/relations?api-version=2019-01-01-preview`
+- *Update_Incident_Rating*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
+- *Update_Incident_Rating_without_comment*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
+- *Update_Incident_Rating_with_classification_comment*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
+- *Update_Incident_Status*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/SetAlertStatus`
+- *Update_Incident_Status_without_comment*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/SetAlertStatus`
+- *Get_Entities*: method=`GET`, uri=`https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/Entities/@{items('Loop_through_Alerts')?['properties']?['relatedResourceName']}?api-version=2019-01-01-preview`
+- *Get_Incident_latest_Comments*: method=`GET`, uri=`https://management.azure.com@{items('Loop_through_each_Incident')?['id']}/comments?api-version=2020-01-01`
+- *Generate_the_token_for_Azure_Sentinel_Incident*: method=`POST`, uri=`https://login.microsoftonline.com/@{parameters('TenantId')}/oauth2/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [IronNet_UpdateIronDefenseAlerts/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Playbooks/IronNet_UpdateIronDefenseAlerts/readme.md)*

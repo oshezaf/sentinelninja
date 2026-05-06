@@ -14,6 +14,21 @@ This playbook will write Recorded Future threat hunting indicators to ThreatInte
 | **Solution** | [Recorded Future](../solutions/recorded-future.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/ThreatHunting/RecordedFuture-ActorThreatHunt-IndicatorImport/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `RecordedFuture-CustomConnector` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`RecordedFuture-CustomConnector`** (customApi):
+- *Fetch_Threat_Indicators_for_Actors_in_STIX_format*: method=`post`, path=`/threat/indicators/actors`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

@@ -22,9 +22,9 @@ Hunts for commonly utilized Microsoft programs (Word, Excel, Publisher, etc) and
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `NewProcessName has_any "cmd.exe"`<br>`NewProcessName has_any "winword.exe"` | ✓ | ✓ | ? |
 
 ---
 

@@ -16,6 +16,28 @@ author: Henry Stern, Farsight Security, Inc.
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `farsightdnsdb` | Managed | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`farsightdnsdb`** (managedApi):
+- *RRSet_Lookup_with_RRType_A*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(items('For_each_RRName_'))}/@{encodeURIComponent('A')}`
+- *RRSet_Lookup_with_RRType_AAAA*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(items('For_each_RRName_'))}/@{encodeURIComponent('AAAA')}`
+- *RData_Lookup_with_RRType*: method=`get`, path=`/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each')?['Address'])}/ANY`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DNSDB_Co_Located_IP_Address/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_IP_Address/readme.md)*

@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.10 |
+| **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
 | **Last Updated** | 2026-01-27 |
@@ -37,10 +37,10 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
+This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
 
 - [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️ 🔶
-- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md)
+- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) ⚠️
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -49,11 +49,12 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 
 ### Internal Tables
@@ -81,26 +82,27 @@ This solution includes **5 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Brute force attack against user credentials](../content/salesforce-service-cloud-brute-force-attack-against-user-credentials-5a6ce089-e756-40fb-b022-c8e8864a973a-39827da6.md) | Medium | CredentialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
-| [Potential Password Spray Attack](../content/salesforce-service-cloud-potential-password-spray-attack-64d16e62-1a17-4a35-9ea7-2b9fe6f07118-5b230e48.md) | Medium | CredentialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
-| [User Sign in from different countries](../content/salesforce-service-cloud-user-sign-in-from-different-countries-3094e036-e5ae-4d6e-8626-b0f86ebc71f2-a92654f0.md) | Medium | InitialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
+| [Brute force attack against user credentials](../content/salesforce-service-cloud-brute-force-attack-against-user-credentials-5a6ce089-e756-40fb-b022-c8e8864a973a-39827da6.md) | Medium | CredentialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
+| [Potential Password Spray Attack](../content/salesforce-service-cloud-potential-password-spray-attack-64d16e62-1a17-4a35-9ea7-2b9fe6f07118-5b230e48.md) | Medium | CredentialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
+| [User Sign in from different countries](../content/salesforce-service-cloud-user-sign-in-from-different-countries-3094e036-e5ae-4d6e-8626-b0f86ebc71f2-a92654f0.md) | Medium | InitialAccess | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [SalesforceServiceCloud](../content/salesforce-service-cloud-salesforceservicecloud-a9451acb.md) | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
+| [SalesforceServiceCloud](../content/salesforce-service-cloud-salesforceservicecloud-a9451acb.md) | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md)<br>[`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md)<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md)<br>*Internal use:*<br>[`ThreatIntelIndicators`](../tables/threatintelindicators.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [SalesforceServiceCloud](../parsers/salesforceservicecloud.md) | - | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) *(read)*<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) *(read)* |
+| [SalesforceServiceCloud](../parsers/salesforceservicecloud.md) | - | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) *(read)*<br>[`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) *(read)*<br>[`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.2.0       | 01-05-2026                     | Updated **CCF Data Connector** to include new V3 table that includes additional fields and support for multiple domains. |
 | 3.1.0       | 27-04-2026                     | Updated CCP data connector with expanded DCR, table definitions, and polling configuration |
 | 3.0.10      | 23-01-2026                     | Update the Salesforce data connector with instructions for the Salesforce Shield Event Monitoring license requirement     |
 | 3.0.9       | 17-11-2025                     | Resolved bug in **CCF Data Connector** related to column names     |

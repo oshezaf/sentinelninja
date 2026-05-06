@@ -14,6 +14,29 @@ Given a domain or set of domains associated with an incident return all Iris Enr
 | **Solution** | [DomainTools](../solutions/domaintools.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Enrich-Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 5 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_Iris_Enrich_Table_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Add_Error_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`function`** (builtin):
+- *EnrichDomain*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/EnrichDomain')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DomainTools-Iris-Enrich-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Enrich-Playbook/readme.md)*

@@ -29,15 +29,25 @@ This ASIM parser supports normalizing SentinelOne logs to the ASIM Process Event
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ## Parameters
 
 | Name | Type | Default |
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
+
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [SentinelOne](../connectors/sentinelone.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
+
+**Solutions:** [SentinelOne (legacy connector)](../solutions/sentinelone.md)
 
 ## References
 

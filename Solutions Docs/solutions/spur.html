@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Spur &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="spur">⚠️ Spur</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Spur_Context_API.svg" alt="Spur Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Spur</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://spur.us/">https://spur.us/</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Spur - support@spur.us</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-04-25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur">Spur</a></td>
+</tr>
+</tbody>
+</table>
+<p>Spur Context API provides access to the highest-fidelity IP intelligence available on-demand, delivering the right IP enriched data in real-time to protect digital assets from the risk of obscured VPN, residential proxy, and bot automation traffic. This solution includes playbooks for IP enrichment on incidents and alerts, with context data added to incident comments and optionally saved in Log Analytics custom tables.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>2 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/spur-spur-ip-enrichment-199e693a.html">Spur IP Enrichment</a></td>
+<td style="text-align: left;">This Playbook Submits IP Addresses associated with an alert to Spur Context API</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/spur-spur-ip-enrichment-9f8c24e8.html">Spur IP Enrichment</a></td>
+<td style="text-align: left;">This Playbook Submits IP Addresses associated with an incident to Spur Context API</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/README.md">Spur/README.md</a></em></p>
+</blockquote>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#enrichment">Enrichment</a></li>
+<li><a href="#appregistration">App Registration</a></li>
+<li><a href="#deployorder">Deployment Instructions</a></li>
+</ol>
+<p><a name="overview"></p>
+<h2 id="overview">Overview</h2>
+<p>Spur Context API provides access to the highest-fidelity IP intelligence available on-demand, delivering the right IP enriched data in real-time to protect digital assets from the risk of obscured VPN, residential proxy, and bot automation traffic.</p>
+<p>Spur Context API delivers:</p>
+<ul>
+<li>Broad Coverage: Tracks hundreds of millions of active anonymous IPs and more than 1,000 VPN and proxy services, updated in real-time.</li>
+<li>Depth of Data: Returns 20+ enrichment attributes per IP – covering geography, ASN, proxy/VPN attribution, device and connection type, and tunnel entry/exit context.</li>
+<li>Zero Latency Access: Provides immediate enrichment for millions of IPs, including ASN, geolocation, and non-anonymized addresses, with no delay to decisioning systems.</li>
+<li>Real-Time Data: Continuously refreshes to reflect the latest observed anonymization infrastructure and behavioral changes.</li>
+<li>Also available as part of the Spur IP Intelligence and Session Enrichment Platform, Context API offers options and add-ons to match access and query volume  requirements for the most complex security, threat hunting, and fraud use cases.</li>
+</ul>
+<p>This solution contains the following:</p>
+<ul>
+<li>Two playbooks,</li>
+<li>One custom connector. </li>
+</ul>
+<p><a name="enrichment"></a></p>
+<h2 id="enrichment-usecase">Enrichment Usecase</h2>
+<table>
+<thead>
+<tr>
+<th>Playbook</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Spur-IP-Enrichment-Incident-Trigger</strong></td>
+<td>This playbook runs on an incident trigger, fetches all the IP address entities associated with the incident, and adds the context data back to incident comments for further Analysis. Optionally, the context data is also saved in the log Analytics cusom table.</td>
+</tr>
+<tr>
+<td><strong>Spur-IP-Enrichment-Alert-Trigger</strong></td>
+<td>This playbook runs on an alert trigger, fetches all the IP address entities associated with the incident, and adds the context data back to incident comments for further Analysis. Optionally, the context data is also saved in the log Analytics cusom table.</td>
+</tr>
+</tbody>
+</table>
+<p>Please refer to the documentation pages for each playbook for more information.</p>
+<p><a name="appregistration"></a></p>
+<h2 id="app-registration">App Registration</h2>
+<p>Before deploying the solution, you need to create an App Registration in Azure:</p>
+<ol>
+<li>
+<p><strong>Create App Registration</strong>
+   - Search for "App registrations" in the search bar
+   - Click on "App registrations" from the results
+   - Click the "New registration" button</p>
+</li>
+<li>
+<p><strong>Configure App Registration</strong>
+   - <strong>Name</strong>: Enter a name for your app (e.g., "Spur-Context-Connector")
+   - <strong>Supported account types</strong>: Select "Accounts in this organizational directory only" (single tenant)
+   - <strong>Redirect URI (optional)</strong>: Add if needed for your application
+   - Click "Register"</p>
+</li>
+<li>
+<p><strong>Copy Application Details</strong>
+   - After registration, note down:</p>
+<ul>
+<li><strong>Application (client) ID</strong> - displayed on the Overview page</li>
+</ul>
+</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>25-04-2026</td>
+<td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

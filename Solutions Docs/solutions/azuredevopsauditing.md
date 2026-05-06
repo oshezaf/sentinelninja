@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.0.8 |
+| **Version** | 3.0.9 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-20 |
 | **Last Updated** | 2026-02-17 |
@@ -120,7 +120,8 @@ This solution includes **37 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                      |
 | ----------- | ------------------------------ | --------------------------------------------------------------------------------------- |
-| 3.0.8       | 26-01-2026                     | Updated **Data Connector** to support dynamic Redirect URI |
+| 3.0.9       | 17-04-2026                     | Updated **Polling Config** to fix parameter mismatch                                    |
+| 3.0.8       | 26-01-2026                     | Updated **Data Connector** to support dynamic Redirect URI                              |
 | 3.0.7       | 22-01-2026                     | Updated solution description by eliminating legacy streaming text                       |
 | 3.0.6       | 19-06-2025                     | Updated **Data Connector** instructions to include a note about User permissions.       |
 | 3.0.5       | 05-05-2025                     | Updated **Data Connector** instructions.                                                |

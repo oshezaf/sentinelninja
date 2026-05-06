@@ -14,6 +14,37 @@ This playbook fetches the object mapped with incident and starts turbo threat hu
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikTurboThreatHunt/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 1 | 2 |
+| `teams` | Managed | 1 | 0 |
+| `RubrikCustomConnector` | Custom | 1 | 1 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_Hunt_Details_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_Limit_Has_Been_Exceeded_For_Incident*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
+- *ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`RubrikCustomConnector`** (customApi):
+- *Authentication*: method=`post`, path=`/api/client_token`
+
+**`http`** (builtin):
+- *Start_Turbo_Threat_Hunt*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
+- *Check_Turbo_Threat_Hunt_Status*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikTurboThreatHunt/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikTurboThreatHunt/readme.md)*

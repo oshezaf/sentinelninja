@@ -135,28 +135,28 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) |  |
-| [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md) |  |
-| [Subscription-based Microsoft Defender for Cloud (Legacy)](../connectors/azuresecuritycenter.md) |  |
-| [Microsoft Defender for IoT](../connectors/iot.md) |  |
-| [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) |  |
-| [Microsoft Defender for Endpoint](../connectors/microsoftdefenderadvancedthreatprotection.md) |  |
-| [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) |  |
-| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) |  |
-| [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) |  |
-| [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) |  |
+| [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) | `ProductName == "Azure Active Directory Identity Protection"` |
+| [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md) | `ProductName == "Azure Advanced Threat Protection"` |
+| [Subscription-based Microsoft Defender for Cloud (Legacy)](../connectors/azuresecuritycenter.md) | `ProductName == "Azure Security Center"` |
+| [Microsoft Defender for IoT](../connectors/iot.md) | `ProductName == "Azure Security Center for IoT"` |
+| [Microsoft Defender for Cloud Apps](../connectors/microsoftcloudappsecurity.md) | `ProductName == "Microsoft Cloud App Security"` |
+| [Microsoft Defender for Endpoint](../connectors/microsoftdefenderadvancedthreatprotection.md) | `ProviderName == "MDATP"` |
+| [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) | `ProductName == "Azure Security Center"` |
+| [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) | `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` |
+| [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) | `ProviderName == "OATP"` |
+| [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) | `ProductName == "Microsoft 365 Insider Risk Management"` |
 
 ---
 
-## Content Items Using This Table (177)
+## Content Items Using This Table (119)
 
-### Analytic Rules (56)
+### Analytic Rules (42)
 
-**In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
+**In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):** `ProviderName == "IPC"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure DevOps Pipeline modified by a new user](../content/azuredevopsauditing-azure-devops-pipeline-modified-by-a-new-user-155e9134-d5ad-4a6f-88f3-99c220040b66-1f2f0f72.md) |  |
+| Analytic Rule |
+|:-------------|
+| [Azure DevOps Pipeline modified by a new user](../content/azuredevopsauditing-azure-devops-pipeline-modified-by-a-new-user-155e9134-d5ad-4a6f-88f3-99c220040b66-1f2f0f72.md) |
 
 **In solution [Dragos](../solutions/dragos.md):**
 
@@ -168,28 +168,28 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Denial of Service (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-denial-of-service-microsoft-defender-for-iot-e068187a-01f5-4737-bc13-25db4027b7ea-d30730fd.md) |  |
-| [Excessive Login Attempts (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-excessive-login-attempts-microsoft-defender-for-iot-f5217b4c-3f1f-4d89-b4f3-5d7581da1c1c-69d7913b.md) |  |
-| [Firmware Updates (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-firmware-updates-microsoft-defender-for-iot-7cad4b66-5e83-4756-8de4-f21315ab1e77-3b526082.md) |  |
-| [High bandwidth in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-high-bandwidth-in-the-network-microsoft-defender-for-iot-caa4665f-21fa-462d-bb31-92226e746c68-b6499206.md) |  |
-| [Illegal Function Codes for ICS traffic (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-illegal-function-codes-for-ics-traffic-microsoft-defender-for-io-70be4a31-9d2b-433b-bdc7-da8928988069-a9b23f60.md) |  |
-| [Internet Access (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-internet-access-microsoft-defender-for-iot-9ff3b13b-287a-4ed0-8f6b-7e7b66cbbcbd-e6f35abc.md) |  |
-| [Multiple scans in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-multiple-scans-in-the-network-microsoft-defender-for-iot-493916d5-a094-4bfa-bdd1-d983a063ea3d-caac186a.md) |  |
-| [No traffic on Sensor Detected (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-no-traffic-on-sensor-detected-microsoft-defender-for-iot-208c3f5b-3ba2-49b5-9bca-c44e58cd5fd3-d7b2b3ed.md) |  |
-| [PLC Stop Command (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-plc-stop-command-microsoft-defender-for-iot-a7d3f642-15d8-4e83-99ee-83ca3352525d-8e009448.md) |  |
-| [PLC unsecure key state (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-plc-unsecure-key-state-microsoft-defender-for-iot-f9df500a-e2a4-4104-a517-dc1d85bb654f-78ea192f.md) |  |
-| [Suspicious malware found in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-suspicious-malware-found-in-the-network-microsoft-defender-for-i-6fb1acd5-356d-40f7-9b97-78d993c6a183-8e31acda.md) |  |
-| [Unauthorized DHCP configuration in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-dhcp-configuration-in-the-network-microsoft-defende-c52ec521-9188-4a9e-a4cd-34a3dfbc3d27-dbbcfa22.md) |  |
-| [Unauthorized PLC changes (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-plc-changes-microsoft-defender-for-iot-c2fb27c7-5f67-49c4-aaf3-d82934234a69-06e12e1b.md) |  |
-| [Unauthorized device in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-device-in-the-network-microsoft-defender-for-iot-f4c71e55-6192-47ca-92e2-0856ae502a46-c1fb4a17.md) |  |
-| [Unauthorized remote access to the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-remote-access-to-the-network-microsoft-defender-for-1ff4fa3d-150b-4c87-b733-26c289af0d49-1d4743ff.md) |  |
+| [Denial of Service (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-denial-of-service-microsoft-defender-for-iot-e068187a-01f5-4737-bc13-25db4027b7ea-d30730fd.md) | `AlertName == "Suspicion of Denial Of Service Attack"`<br>`ProviderName == "IoTSecurity"` |
+| [Excessive Login Attempts (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-excessive-login-attempts-microsoft-defender-for-iot-f5217b4c-3f1f-4d89-b4f3-5d7581da1c1c-69d7913b.md) | `AlertName in "Excessive Login Attempts,Excessive Number of Sessions,Excessive SMB login attempts,Password Guessing Attempt Detected"`<br>`ProviderName == "IoTSecurity"` |
+| [Firmware Updates (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-firmware-updates-microsoft-defender-for-iot-7cad4b66-5e83-4756-8de4-f21315ab1e77-3b526082.md) | `AlertName has_any "Beckhoff Software Changed"`<br>`ProviderName == "IoTSecurity"` |
+| [High bandwidth in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-high-bandwidth-in-the-network-microsoft-defender-for-iot-caa4665f-21fa-462d-bb31-92226e746c68-b6499206.md) | `AlertName in "ARP Spoofing,Abnormal Traffic Bandwidth,Abnormal Traffic Bandwidth Between Devices,ICMP Flooding"`<br>`ProviderName == "IoTSecurity"` |
+| [Illegal Function Codes for ICS traffic (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-illegal-function-codes-for-ics-traffic-microsoft-defender-for-io-70be4a31-9d2b-433b-bdc7-da8928988069-a9b23f60.md) | `ProviderName == "IoTSecurity"` |
+| [Internet Access (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-internet-access-microsoft-defender-for-iot-9ff3b13b-287a-4ed0-8f6b-7e7b66cbbcbd-e6f35abc.md) | `AlertName has "Internet"`<br>`ProviderName == "IoTSecurity"` |
+| [Multiple scans in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-multiple-scans-in-the-network-microsoft-defender-for-iot-493916d5-a094-4bfa-bdd1-d983a063ea3d-caac186a.md) | `AlertName has "Scan"`<br>`ProviderName == "IoTSecurity"` |
+| [No traffic on Sensor Detected (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-no-traffic-on-sensor-detected-microsoft-defender-for-iot-208c3f5b-3ba2-49b5-9bca-c44e58cd5fd3-d7b2b3ed.md) | `AlertName == "No Traffic Detected on Sensor Interface"`<br>`ProviderName == "IoTSecurity"` |
+| [PLC Stop Command (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-plc-stop-command-microsoft-defender-for-iot-a7d3f642-15d8-4e83-99ee-83ca3352525d-8e009448.md) | `ProviderName == "IoTSecurity"` |
+| [PLC unsecure key state (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-plc-unsecure-key-state-microsoft-defender-for-iot-f9df500a-e2a4-4104-a517-dc1d85bb654f-78ea192f.md) | `AlertName has "PLC Operating Mode Changed"`<br>`ProviderName == "IoTSecurity"` |
+| [Suspicious malware found in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-suspicious-malware-found-in-the-network-microsoft-defender-for-i-6fb1acd5-356d-40f7-9b97-78d993c6a183-8e31acda.md) | `ProviderName == "IoTSecurity"` |
+| [Unauthorized DHCP configuration in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-dhcp-configuration-in-the-network-microsoft-defende-c52ec521-9188-4a9e-a4cd-34a3dfbc3d27-dbbcfa22.md) | `AlertName == "Device Failed to Receive a Dynamic IP Address"`<br>`ProviderName == "IoTSecurity"` |
+| [Unauthorized PLC changes (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-plc-changes-microsoft-defender-for-iot-c2fb27c7-5f67-49c4-aaf3-d82934234a69-06e12e1b.md) | `ProviderName == "IoTSecurity"` |
+| [Unauthorized device in the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-device-in-the-network-microsoft-defender-for-iot-f4c71e55-6192-47ca-92e2-0856ae502a46-c1fb4a17.md) | `AlertName in "Abnormal usage of MAC Addresses,Field Device Discovered Unexpectedly,New Asset Detected,New LLDP Device Configuration"`<br>`ProviderName == "IoTSecurity"` |
+| [Unauthorized remote access to the network (Microsoft Defender for IoT)](../content/iototthreatmonitoringwithdefenderforiot-unauthorized-remote-access-to-the-network-microsoft-defender-for-1ff4fa3d-150b-4c87-b733-26c289af0d49-1d4743ff.md) | `AlertName == "Unauthorized SSH Access"`<br>`ProviderName == "IoTSecurity"` |
 
 **In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Dataverse - Guest user exfiltration following Power Platform defense impairment](../content/microsoft-business-applications-dataverse-guest-user-exfiltration-following-power-platform-defense-impai-39efbf4b-b347-4cc7-895e-99a868bf29ea-f29caf4d.md) |  |
-| [Dataverse - Suspicious use of TDS endpoint](../content/microsoft-business-applications-dataverse-suspicious-use-of-tds-endpoint-d875af10-6bb9-4d6a-a6e4-78439a98bf4b-79440ea8.md) |  |
+| [Dataverse - Suspicious use of TDS endpoint](../content/microsoft-business-applications-dataverse-suspicious-use-of-tds-endpoint-d875af10-6bb9-4d6a-a6e4-78439a98bf4b-79440ea8.md) | `Entities has "Type"` |
 | [Dataverse - Terminated employee exfiltration over email](../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-over-email-de039242-47e0-43fa-84d7-b6be24305349-d5733918.md) |  |
 | [Power Apps - Multiple users access a malicious link after launching new app](../content/microsoft-business-applications-power-apps-multiple-users-access-a-malicious-link-after-launching-new-ap-4bd7e93a-0646-4e02-8dcb-aa16d16618f4-45705870.md) |  |
 
@@ -199,7 +199,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [AV detections related to SpringShell Vulnerability](../content/microsoft-defender-xdr-av-detections-related-to-springshell-vulnerability-3bd33158-3f0b-47e3-a50f-7c20a1b88038-091061ce.md) |  |
 | [AV detections related to Tarrask malware](../content/microsoft-defender-xdr-av-detections-related-to-tarrask-malware-1785d372-b9fe-4283-96a6-3a1d83cabfd1-8b612d87.md) |  |
-| [AV detections related to Ukraine threats](../content/microsoft-defender-xdr-av-detections-related-to-ukraine-threats-b6685757-3ed1-4b05-a5bd-2cacadc86c2a-396e651e.md) |  |
+| [AV detections related to Ukraine threats](../content/microsoft-defender-xdr-av-detections-related-to-ukraine-threats-b6685757-3ed1-4b05-a5bd-2cacadc86c2a-396e651e.md) | `ProviderName == "MDATP"` |
 
 **In solution [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md):**
 
@@ -219,27 +219,27 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Correlate Unfamiliar sign-in properties & atypical travel alerts](../content/microsoft-entra-id-protection-correlate-unfamiliar-sign-in-properties-&-atypical-travel-alerts-a3df4a32-4805-4c6d-8699-f3c888af2f67-965fe5ef.md) |  |
 
-**In solution [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md):**
+**In solution [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md):** `ProviderName == "MDATP"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Aqua Blizzard AV hits - Feb 2022](../content/microsoftdefenderforendpoint-aqua-blizzard-av-hits-feb-2022-18dbdc22-b69f-4109-9e39-723d9465f45f-f3ce8313.md) |  |
+| Analytic Rule |
+|:-------------|
+| [Aqua Blizzard AV hits - Feb 2022](../content/microsoftdefenderforendpoint-aqua-blizzard-av-hits-feb-2022-18dbdc22-b69f-4109-9e39-723d9465f45f-f3ce8313.md) |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Insider Risk_High User Security Alert Correlations](../content/microsoftpurviewinsiderriskmanagement-insider-risk-high-user-security-alert-correlations-a4fb4255-f55b-4c24-b396-976ee075d406-d76ca4d2.md) |  |
-| [Insider Risk_Microsoft Purview Insider Risk Management Alert Observed](../content/microsoftpurviewinsiderriskmanagement-insider-risk-microsoft-purview-insider-risk-management-alert-obser-69660e65-0e5c-4700-8b99-5caf59786606-3217bb57.md) |  |
+| [Insider Risk_Microsoft Purview Insider Risk Management Alert Observed](../content/microsoftpurviewinsiderriskmanagement-insider-risk-microsoft-purview-insider-risk-management-alert-obser-69660e65-0e5c-4700-8b99-5caf59786606-3217bb57.md) | `ProductName == "Microsoft 365 Insider Risk Management"` |
 
 **In solution [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-user-activity-observed-in-g-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7-36b1a06d.md) |  |
-| [Successful AWS Console Login from IP Address Observed Conducting Password Spray](../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.md) |  |
-| [Suspicious AWS console logins by credential access alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md) |  |
-| [User impersonation by Identity Protection alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.md) |  |
+| [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-user-activity-observed-in-g-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7-36b1a06d.md) | `ProductName !in "Azure Sentinel"` |
+| [Successful AWS Console Login from IP Address Observed Conducting Password Spray](../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.md) | `AlertName in "Multiple failed user log on attempts to an app,Password Spray"`<br>`ProductName in "Azure Active Directory Identity Protection,Microsoft Cloud App Security"` |
+| [Suspicious AWS console logins by credential access alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md) | `AlertSeverity == "High"`<br>`ProductName in "Azure Active Directory,Azure Active Directory Identity Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender ATP,Microsoft Defender Advanced Threat Protection"`<br>`Tactics in "CredentialAccess,InitialAccess"` |
+| [User impersonation by Identity Protection alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.md) | `AlertSeverity == "High"`<br>`ProductName has "Azure Active Directory Identity Protection"` |
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -269,38 +269,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [AV detections related to Zinc actors](../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.md) |  |
 
-**Standalone Content:**
+### Hunting Queries (14)
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [AV detections related to Dev-0530 actors](../content/standalone-content-av-detections-related-to-dev-0530-actors-5f171045-88ab-4634-baae-a7b6509f483b-61a76c5a.md) |  |
-| [AV detections related to Europium actors](../content/standalone-content-av-detections-related-to-europium-actors-186970ee-5001-41c1-8c73-3178f75ce96a-1724290f.md) |  |
-| [AV detections related to Hive Ransomware](../content/standalone-content-av-detections-related-to-hive-ransomware-4e5914a4-2ccd-429d-a845-fa597f0bd8c5-0f4ac020.md) |  |
-| [Detecting Impossible travel with mailbox permission tampering & Privilege Escalation attempt](../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.md) |  |
-| [Dev-0228 File Path Hashes November 2021](../content/standalone-content-dev-0228-file-path-hashes-november-2021-3b443f22-9be9-4c35-ac70-a94757748439-59975a39.md) |  |
-| [Dev-0228 File Path Hashes November 2021 (ASIM Version)](../content/standalone-content-dev-0228-file-path-hashes-november-2021-asim-version-29a29e5d-354e-4f5e-8321-8b39d25047bf-517d1ab6.md) |  |
-| [M365D Alerts Correlation to non-Microsoft Network device network activity involved in successful sign-in Activity](../content/standalone-content-m365d-alerts-correlation-to-non-microsoft-network-device-network-activity-involved-in-779731f7-8ba0-4198-8524-5701b7defddc-15ad9d20.md) |  |
-| [Mass Download & copy to USB device by single user](../content/standalone-content-mass-download-&-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.md) |  |
-| [Microsoft Defender for Endpoint (MDE) signatures for Azure Synapse pipelines and Azure Data Factory](../content/standalone-content-microsoft-defender-for-endpoint-mde-signatures-for-azure-synapse-pipelines-and-azure--a333d8bf-22a3-4c55-a1e9-5f0a135c0253-63a30dd5.md) |  |
-| [Phishing link click observed in Network Traffic](../content/standalone-content-phishing-link-click-observed-in-network-traffic-2fed0668-6d43-4c78-87e6-510f96f12145-72384c6d.md) |  |
-| [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) |  |
-| [Solorigate Defender Detections](../content/standalone-content-solorigate-defender-detections-e70fa6e0-796a-4e85-9420-98b17b0bb749-ecd5908d.md) |  |
-| [Workspace deletion activity from an infected device](../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md) |  |
+**In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):** `ProviderName == "IPC"`
 
-**GitHub Only:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Suspicious VM Instance Creation Activity Detected](../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) |  |
-
-### Hunting Queries (31)
-
-**In solution [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md):**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure DevOps - New Package Feed Created](../content/azuredevopsauditing-azure-devops-new-package-feed-created-3d1aa540-b4c7-4789-8c4c-4174b3c2371f-bf70da4e.md) |  |
-| [Azure DevOps - New Release Pipeline Created](../content/azuredevopsauditing-azure-devops-new-release-pipeline-created-2dfa9c23-1590-4589-995a-d1486be66028-f51a2902.md) |  |
+| Hunting Query |
+|:-------------|
+| [Azure DevOps - New Package Feed Created](../content/azuredevopsauditing-azure-devops-new-package-feed-created-3d1aa540-b4c7-4789-8c4c-4174b3c2371f-bf70da4e.md) |
+| [Azure DevOps - New Release Pipeline Created](../content/azuredevopsauditing-azure-devops-new-release-pipeline-created-2dfa9c23-1590-4589-995a-d1486be66028-f51a2902.md) |
 
 **In solution [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md):**
 
@@ -317,14 +293,14 @@ This table is ingested by the following connectors:
 | [Dev-0322 Command Line Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-command-line-activity-november-2021-asim-version-6bfea14f-2122-46b3-8f8b-3947e0fb6d92-de921320.md) |  |
 | [Dev-0322 File Drop Activity November 2021](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.md) |  |
 | [Dev-0322 File Drop Activity November 2021 (ASIM Version)](../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-asim-version-9b72769e-6ab1-4736-988b-018d92dc5e62-87c81fe1.md) |  |
-| [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md) |  |
+| [Nylon Typhoon Command Line Activity November 2021](../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.md) | `ProductName == "Microsoft Defender Advanced Threat Protection"` |
 | [Retrospective hunt for Forest Blizzard IP IOCs](../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md) |  |
 
-**In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):**
+**In solution [Microsoft Business Applications](../solutions/microsoft-business-applications.md):** `ProviderName == "IPC"`
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Dataverse - Activity after Microsoft Entra alerts](../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.md) |  |
+| Hunting Query |
+|:-------------|
+| [Dataverse - Activity after Microsoft Entra alerts](../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.md) |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -334,34 +310,7 @@ This table is ingested by the following connectors:
 | [Insider Risk_ISP Anomaly to Exfil](../content/microsoftpurviewinsiderriskmanagement-insider-risk-isp-anomaly-to-exfil-12b6582f-b715-4f91-98e1-1582ebad348a-a6296594.md) |  |
 | [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) |  |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Alerts On Host](../content/standalone-content-alerts-on-host-61a6edc0-e71a-4084-8f3c-05a58e1b9012-01045ee3.md) |  |
-| [Alerts related to File](../content/standalone-content-alerts-related-to-file-11d808a1-32fe-4618-946a-cfd43523347a-23c48a6a.md) |  |
-| [Alerts related to IP](../content/standalone-content-alerts-related-to-ip-0b520385-6a16-4e6f-ba89-c320d857695f-8206f0fa.md) |  |
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
-| [Web shell command alert enrichment](../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.md) |  |
-| [Web shell file alert enrichment](../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.md) |  |
-
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Alerts With This Process](../content/github-only-alerts-with-this-process-635cba46-c077-4959-a2d9-b7eb6fecb854-b270f153.md) |  |
-| [Alerts related to account](../content/github-only-alerts-related-to-account-3a72ba65-00fa-4bbc-b246-be1ff3f73ce1-04f2c907.md) |  |
-| [BitLocker Key Retrieval](../content/github-only-bitlocker-key-retrieval-8ea8b2af-f1ce-4464-964c-6763641cc4f6-15a3a6bb.md) |  |
-| [Dev-0056 Command Line Activity November 2021 (ASIM Version)](../content/github-only-dev-0056-command-line-activity-november-2021-asim-version-98fdd28d-9c13-431b-aca9-e6cfbb90a5a9-23489333.md) |  |
-| [Exchange Servers and Associated Security Alerts](../content/github-only-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-6ad26286.md) |  |
-| [Integrate Purview with Cloud App Events](../content/github-only-integrate-purview-with-cloud-app-events-a1adce9c-5945-4a20-984e-d95b6071a791-32b130d4.md) |  |
-| [Recon Activity with Interactive Logon Correlation](../content/github-only-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-430a32b6.md) |  |
-| [SQL Alert Correlation with CommonSecurityLogs and AuditLogs](../content/github-only-sql-alert-correlation-with-commonsecuritylogs-and-auditlogs-dc5adcc9-70ab-4fba-8690-f57767e8ca02-cdd2aa29.md) |  |
-| [Storage Alert Correlation with CommonSecurityLogs and StorageLogs](../content/github-only-storage-alert-correlation-with-commonsecuritylogs-and-storagelogs-7098cae1-c632-4b40-b715-86d6b07720d7-78ea9953.md) |  |
-| [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.md) |  |
-| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) |  |
-
-### Workbooks (72)
+### Workbooks (45)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -369,29 +318,29 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Log4jImpactAssessment](../content/apache-log4j-vulnerability-detection-log4jimpactassessment-68e9e1d6.md) |  |
 
-**In solution [Azure Key Vault](../solutions/azure-key-vault.md):**
+**In solution [Azure Key Vault](../solutions/azure-key-vault.md):** `AlertType startswith "KV_"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureKeyVaultWorkbook](../content/azure-key-vault-azurekeyvaultworkbook-72b1692d.md) |  |
+| Workbook |
+|:-------------|
+| [AzureKeyVaultWorkbook](../content/azure-key-vault-azurekeyvaultworkbook-72b1692d.md) |
 
-**In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
+**In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):** `AlertType startswith "SQL."`<br>`AlertType startswith "SQl."`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) |  |
+| Workbook |
+|:-------------|
+| [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) |
 
-**In solution [Azure kubernetes Service](../solutions/azure-kubernetes-service.md):**
+**In solution [Azure kubernetes Service](../solutions/azure-kubernetes-service.md):** `AlertType in "K8S_ClusterAdminBinding,K8S_MaliciousContainerExec,K8S_PrivilegedContainer,K8S_SensitiveMount"`<br>`AlertType startswith "K8S_"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AksSecurity](../content/azure-kubernetes-service-akssecurity-51e44b54.md) |  |
+| Workbook |
+|:-------------|
+| [AksSecurity](../content/azure-kubernetes-service-akssecurity-51e44b54.md) |
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `AlertName contains "auth"`<br>`AlertName contains "cert"`<br>`AlertName contains "cred"`<br>`AlertName contains "password"`<br>`AlertName contains "secret"`<br>`ProviderName == "IPC"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+| Workbook |
+|:-------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
 
 **In solution [Censys](../solutions/censys.md):**
 
@@ -399,17 +348,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Censys](../content/censys-censys-21c23ffd.md) |  |
 
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management,Microsoft Defender Advanced Threat Protection"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
+| Workbook |
+|:-------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `ProductName == "Microsoft 365 Insider Risk Management"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+| Workbook |
+|:-------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 
@@ -417,29 +366,29 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [DNSSolutionWorkbook](../content/dns-essentials-dnssolutionworkbook-9b8ac8e7.md) |  |
 
-**In solution [DORA Compliance](../solutions/dora-compliance.md):**
+**In solution [DORA Compliance](../solutions/dora-compliance.md):** `AlertName has_any "Backup Failure"`<br>`AlertName has_any "Blocked"`<br>`AlertName has_any "Compliance Violation"`<br>`AlertName has_any "Credential Access"`<br>`AlertName has_any "Data Exfiltration"`<br>`AlertName has_any "Incident Reported"`<br>`AlertName has_any "Malware"`<br>`AlertName has_any "Policy Change"`<br>`AlertName has_any "Service Outage"`<br>`AlertName has_any "Suspicious Login"`<br>`AlertName has_any "TLPT"`<br>`AlertName has_any "Third-Party"`<br>`AlertName has_any "Threat Intelligence"`<br>`AlertName has_any "Unauthorized Access"`<br>`AlertName has_any "Vulnerability Exploitation"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) |  |
+| Workbook |
+|:-------------|
+| [DORACompliance](../content/dora-compliance-doracompliance-21bcc12f.md) |
 
-**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
+| Workbook |
+|:-------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |
 
-**In solution [ExtraHop](../solutions/extrahop.md):**
+**In solution [ExtraHop](../solutions/extrahop.md):** `ProductName == "ExtraHop"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview-b10f683c.md) |  |
+| Workbook |
+|:-------------|
+| [ExtraHopDetectionsOverview](../content/extrahop-extrahopdetectionsoverview-b10f683c.md) |
 
-**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
+| Workbook |
+|:-------------|
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
 
 **In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
 
@@ -491,23 +440,23 @@ This table is ingested by the following connectors:
 | [MicrosoftDefenderForIdentity](../content/microsoft-defender-xdr-microsoftdefenderforidentity-19dcc30d.md) |  |
 | [MicrosoftDefenderForOffice365detectionsandinsights](../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.md) |  |
 
-**In solution [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md):**
+**In solution [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md):** `AlertType has "DISCOVERY"`<br>`ProductName == "Microsoft Cloud App Security"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md) |  |
+| Workbook |
+|:-------------|
+| [MicrosoftCloudAppSecurity](../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.md) |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `AlertName contains "PII"`<br>`AlertName contains "anomal"`<br>`AlertName contains "confidential"`<br>`AlertName contains "data"`<br>`AlertName contains "fusion"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`ProductName == "Microsoft 365 Insider Risk Management"`<br>`ProviderName contains "anomal"`<br>`ProviderName contains "fusion"`<br>`Tactics contains "exfil"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
+| Workbook |
+|:-------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+**In solution [NISTSP80053](../solutions/nistsp80053.md):** `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
+| Workbook |
+|:-------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
 
 **In solution [Network Session Essentials](../solutions/network-session-essentials.md):**
 
@@ -522,24 +471,24 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ReversingLabs-CapabilitiesOverview](../content/reversinglabs-reversinglabs-capabilitiesoverview-cf6695da.md) |  |
 
-**In solution [SAP BTP](../solutions/sap-btp.md):**
+**In solution [SAP BTP](../solutions/sap-btp.md):** `Entities has "SAP BTP"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) |  |
+| Workbook |
+|:-------------|
+| [SAPBTPActivity](../content/sap-btp-sapbtpactivity-8f5b3a2b.md) |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency-ba1ee629.md) |  |
+| [AnalyticsEfficiency](../content/soc-handbook-analyticsefficiency-ba1ee629.md) | `ProductName == "Azure Sentinel"` |
 | [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) |  |
 | [AzureSentinelSecurityAlerts](../content/soc-handbook-azuresentinelsecurityalerts-8f5f1c6c.md) |  |
-| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) |  |
+| [IncidentOverview](../content/soc-handbook-incidentoverview-c120b199.md) | `ProductName == "Azure Sentinel"` |
 | [IntsightsIOCWorkbook](../content/soc-handbook-intsightsiocworkbook-5df8c818.md) |  |
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 | [MITREAttack](../content/soc-handbook-mitreattack-3fb92d64.md) |  |
-| [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md) |  |
+| [SentinelCentral](../content/soc-handbook-sentinelcentral-27b23efc.md) | `DisplayName has "Incident"`<br>`DisplayName has "Investigation"`<br>`DisplayName has "Security operations efficiency"` |
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -557,7 +506,7 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) |  |
+| [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) | `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` |
 | [ThreatAnalysis&Response](../content/threatanalysis&response-threatanalysis&response-56e66291.md) |  |
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
@@ -572,43 +521,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [WebSessionEssentials](../content/web-session-essentials-websessionessentials-73073115.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `AlertName contains "mal"`<br>`Entities contains "Fail"`<br>`Entities contains "inbound"`<br>`Entities contains "outbound"`<br>`ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ASC-ComplianceandProtection](../content/github-only-asc-complianceandprotection-70588a9c.md) |  |
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [AksSecurity](../content/github-only-akssecurity-918bcecd.md) |  |
-| [AnalyticsEfficiency](../content/github-only-analyticsefficiency-b881d5ae.md) |  |
-| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
-| [AzureKeyVaultWorkbook](../content/github-only-azurekeyvaultworkbook-81485e59.md) |  |
-| [AzureSentinelSecurityAlerts](../content/github-only-azuresentinelsecurityalerts-60128b78.md) |  |
-| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
-| [IOT_Alerts](../content/github-only-iot-alerts-e63618f3.md) |  |
-| [IntsightsIOCWorkbook](../content/github-only-intsightsiocworkbook-88f7baed.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [MITREAttack](../content/github-only-mitreattack-27c36827.md) |  |
-| [MicrosoftCloudAppSecurity](../content/github-only-microsoftcloudappsecurity-2887ca06.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
-| [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [Sentinel_Central](../content/github-only-sentinel-central-2a36f7ae.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
-| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
-| [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |
-| [VisualizationDemo](../content/github-only-visualizationdemo-12456b23.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
-| [microsoftdefenderforidentity](../content/github-only-microsoftdefenderforidentity-215ba93a.md) |  |
+| Workbook |
+|:-------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
 ## Parsers Using This Table (2)
 
@@ -624,6 +541,194 @@ This table is ingested by the following connectors:
 This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/securityinsights`
+
+## Selection Criteria Summary (43 criteria, 57 total references)
+
+References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ProviderName == "IPC"` | - | 4 | - | - | **4** |
+| `ProviderName == "IoTSecurity"` | - | 4 | - | - | **4** |
+| `ProductName == "Microsoft 365 Insider Risk Management"` | 1 | 2 | - | - | **3** |
+| `ProviderName == "MDATP"` | 1 | 2 | - | - | **3** |
+| `ProductName == "Azure Security Center"` | 2 | - | - | - | **2** |
+| `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"` | - | 2 | - | - | **2** |
+| `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` | - | 2 | - | - | **2** |
+| `ProductName == "Azure Sentinel"` | - | 2 | - | - | **2** |
+| `ProductName == "Azure Security Center for IoT"` | 1 | - | - | - | **1** |
+| `ProductName == "Microsoft Cloud App Security"` | 1 | - | - | - | **1** |
+| `ProviderName == "OATP"` | 1 | - | - | - | **1** |
+| `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Advanced Threat Protection"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Active Directory Identity Protection"` | 1 | - | - | - | **1** |
+| `AlertName == "Suspicion of Denial Of Service Attack"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName in "Excessive Login Attempts,Excessive Number of Sessions,Excessive SMB login attempts,Password Guessing Attempt Detected"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName has_any "Beckhoff Software Changed"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName in "ARP Spoofing,Abnormal Traffic Bandwidth,Abnormal Traffic Bandwidth Between Devices,ICMP Flooding"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName == "No Traffic Detected on Sensor Interface"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName has "PLC Operating Mode Changed"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName has "Internet"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName has "Scan"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName in "Abnormal usage of MAC Addresses,Field Device Discovered Unexpectedly,New Asset Detected,New LLDP Device Configuration"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName == "Device Failed to Receive a Dynamic IP Address"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `AlertName == "Unauthorized SSH Access"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
+| `Entities has "Type"` | - | 1 | - | - | **1** |
+| `ProductName !in "Azure Sentinel"` | - | 1 | - | - | **1** |
+| `AlertName in "Multiple failed user log on attempts to an app,Password Spray"`<br>`ProductName in "Azure Active Directory Identity Protection,Microsoft Cloud App Security"` | - | 1 | - | - | **1** |
+| `AlertSeverity == "High"`<br>`ProductName in "Azure Active Directory,Azure Active Directory Identity Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender ATP,Microsoft Defender Advanced Threat Protection"`<br>`Tactics in "CredentialAccess,InitialAccess"` | - | 1 | - | - | **1** |
+| `AlertSeverity == "High"`<br>`ProductName has "Azure Active Directory Identity Protection"` | - | 1 | - | - | **1** |
+| `ProductName == "Microsoft Defender Advanced Threat Protection"` | - | 1 | - | - | **1** |
+| `AlertType startswith "KV_"` | - | 1 | - | - | **1** |
+| `AlertType in "K8S_ClusterAdminBinding,K8S_MaliciousContainerExec,K8S_PrivilegedContainer,K8S_SensitiveMount"`<br>`AlertType startswith "K8S_"` | - | 1 | - | - | **1** |
+| `AlertType startswith "SQL."`<br>`AlertType startswith "SQl."` | - | 1 | - | - | **1** |
+| `AlertName contains "auth"`<br>`AlertName contains "cert"`<br>`AlertName contains "cred"`<br>`AlertName contains "password"`<br>`AlertName contains "secret"`<br>`ProviderName == "IPC"` | - | 1 | - | - | **1** |
+| `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management,Microsoft Defender Advanced Threat Protection"` | - | 1 | - | - | **1** |
+| `AlertName has_any "Backup Failure"`<br>`AlertName has_any "Blocked"`<br>`AlertName has_any "Compliance Violation"`<br>`AlertName has_any "Credential Access"`<br>`AlertName has_any "Data Exfiltration"`<br>`AlertName has_any "Incident Reported"`<br>`AlertName has_any "Malware"`<br>`AlertName has_any "Policy Change"`<br>`AlertName has_any "Service Outage"`<br>`AlertName has_any "Suspicious Login"`<br>`AlertName has_any "TLPT"`<br>`AlertName has_any "Third-Party"`<br>`AlertName has_any "Threat Intelligence"`<br>`AlertName has_any "Unauthorized Access"`<br>`AlertName has_any "Vulnerability Exploitation"` | - | 1 | - | - | **1** |
+| `ProductName == "ExtraHop"` | - | 1 | - | - | **1** |
+| `AlertType has "DISCOVERY"`<br>`ProductName == "Microsoft Cloud App Security"` | - | 1 | - | - | **1** |
+| `AlertName contains "PII"`<br>`AlertName contains "anomal"`<br>`AlertName contains "confidential"`<br>`AlertName contains "data"`<br>`AlertName contains "fusion"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`ProductName == "Microsoft 365 Insider Risk Management"`<br>`ProviderName contains "anomal"`<br>`ProviderName contains "fusion"`<br>`Tactics contains "exfil"` | - | 1 | - | - | **1** |
+| `Entities has "SAP BTP"` | - | 1 | - | - | **1** |
+| `DisplayName has "Incident"`<br>`DisplayName has "Investigation"`<br>`DisplayName has "Security operations efficiency"` | - | 1 | - | - | **1** |
+| `AlertName contains "mal"`<br>`Entities contains "Fail"`<br>`Entities contains "inbound"`<br>`Entities contains "outbound"`<br>`ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` | - | 1 | - | - | **1** |
+| **Total** | **10** | **47** | **0** | **0** | **57** |
+
+### AlertName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains PII` | - | 3 | - | - | **3** |
+| `contains confidential` | - | 3 | - | - | **3** |
+| `contains intellectual` | - | 3 | - | - | **3** |
+| `contains leak` | - | 3 | - | - | **3** |
+| `contains sensitive` | - | 3 | - | - | **3** |
+| `contains spill` | - | 3 | - | - | **3** |
+| `contains steal` | - | 3 | - | - | **3** |
+| `contains theft` | - | 3 | - | - | **3** |
+| `Suspicion of Denial Of Service Attack` | - | 1 | - | - | **1** |
+| `Excessive Login Attempts` | - | 1 | - | - | **1** |
+| `Excessive Number of Sessions` | - | 1 | - | - | **1** |
+| `Excessive SMB login attempts` | - | 1 | - | - | **1** |
+| `Password Guessing Attempt Detected` | - | 1 | - | - | **1** |
+| `has_any Beckhoff Software Changed` | - | 1 | - | - | **1** |
+| `ARP Spoofing` | - | 1 | - | - | **1** |
+| `Abnormal Traffic Bandwidth` | - | 1 | - | - | **1** |
+| `Abnormal Traffic Bandwidth Between Devices` | - | 1 | - | - | **1** |
+| `ICMP Flooding` | - | 1 | - | - | **1** |
+| `No Traffic Detected on Sensor Interface` | - | 1 | - | - | **1** |
+| `has PLC Operating Mode Changed` | - | 1 | - | - | **1** |
+| `has Internet` | - | 1 | - | - | **1** |
+| `has Scan` | - | 1 | - | - | **1** |
+| `Abnormal usage of MAC Addresses` | - | 1 | - | - | **1** |
+| `Field Device Discovered Unexpectedly` | - | 1 | - | - | **1** |
+| `New Asset Detected` | - | 1 | - | - | **1** |
+| `New LLDP Device Configuration` | - | 1 | - | - | **1** |
+| `Device Failed to Receive a Dynamic IP Address` | - | 1 | - | - | **1** |
+| `Unauthorized SSH Access` | - | 1 | - | - | **1** |
+| `Multiple failed user log on attempts to an app` | - | 1 | - | - | **1** |
+| `Password Spray` | - | 1 | - | - | **1** |
+| `contains auth` | - | 1 | - | - | **1** |
+| `contains cert` | - | 1 | - | - | **1** |
+| `contains cred` | - | 1 | - | - | **1** |
+| `contains password` | - | 1 | - | - | **1** |
+| `contains secret` | - | 1 | - | - | **1** |
+| `has_any Backup Failure` | - | 1 | - | - | **1** |
+| `has_any Blocked` | - | 1 | - | - | **1** |
+| `has_any Compliance Violation` | - | 1 | - | - | **1** |
+| `has_any Credential Access` | - | 1 | - | - | **1** |
+| `has_any Data Exfiltration` | - | 1 | - | - | **1** |
+| `has_any Incident Reported` | - | 1 | - | - | **1** |
+| `has_any Malware` | - | 1 | - | - | **1** |
+| `has_any Policy Change` | - | 1 | - | - | **1** |
+| `has_any Service Outage` | - | 1 | - | - | **1** |
+| `has_any Suspicious Login` | - | 1 | - | - | **1** |
+| `has_any TLPT` | - | 1 | - | - | **1** |
+| `has_any Third-Party` | - | 1 | - | - | **1** |
+| `has_any Threat Intelligence` | - | 1 | - | - | **1** |
+| `has_any Unauthorized Access` | - | 1 | - | - | **1** |
+| `has_any Vulnerability Exploitation` | - | 1 | - | - | **1** |
+| `contains anomal` | - | 1 | - | - | **1** |
+| `contains data` | - | 1 | - | - | **1** |
+| `contains fusion` | - | 1 | - | - | **1** |
+| `contains mal` | - | 1 | - | - | **1** |
+
+### AlertSeverity
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `High` | - | 2 | - | - | **2** |
+
+### AlertType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `startswith KV_` | - | 1 | - | - | **1** |
+| `K8S_ClusterAdminBinding` | - | 1 | - | - | **1** |
+| `K8S_MaliciousContainerExec` | - | 1 | - | - | **1** |
+| `K8S_PrivilegedContainer` | - | 1 | - | - | **1** |
+| `K8S_SensitiveMount` | - | 1 | - | - | **1** |
+| `startswith K8S_` | - | 1 | - | - | **1** |
+| `startswith SQL.` | - | 1 | - | - | **1** |
+| `startswith SQl.` | - | 1 | - | - | **1** |
+| `has DISCOVERY` | - | 1 | - | - | **1** |
+
+### DisplayName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has Incident` | - | 1 | - | - | **1** |
+| `has Investigation` | - | 1 | - | - | **1** |
+| `has Security operations efficiency` | - | 1 | - | - | **1** |
+
+### Entities
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has Type` | - | 1 | - | - | **1** |
+| `has SAP BTP` | - | 1 | - | - | **1** |
+| `contains Fail` | - | 1 | - | - | **1** |
+| `contains inbound` | - | 1 | - | - | **1** |
+| `contains outbound` | - | 1 | - | - | **1** |
+
+### ProductName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Microsoft 365 Insider Risk Management` | 1 | 7 | - | - | **8** |
+| `Azure Active Directory Identity Protection` | 1 | 6 | - | - | **7** |
+| `Azure Security Center for IoT` | 1 | 4 | - | - | **5** |
+| `Microsoft Cloud App Security` | 2 | 3 | - | - | **5** |
+| `Microsoft Defender Advanced Threat Protection` | 1 | 3 | - | - | **4** |
+| `Azure Security Center` | 2 | - | - | - | **2** |
+| `Azure Advanced Threat Protection` | 2 | - | - | - | **2** |
+| `Microsoft 365 Defender` | 1 | 1 | - | - | **2** |
+| `Azure Sentinel` | - | 2 | - | - | **2** |
+| `Office 365 Advanced Threat Protection` | 1 | - | - | - | **1** |
+| `!= Azure Sentinel` | - | 1 | - | - | **1** |
+| `Azure Active Directory` | - | 1 | - | - | **1** |
+| `Microsoft Defender ATP` | - | 1 | - | - | **1** |
+| `has Azure Active Directory Identity Protection` | - | 1 | - | - | **1** |
+| `ExtraHop` | - | 1 | - | - | **1** |
+
+### ProviderName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `IoTSecurity` | - | 15 | - | - | **15** |
+| `IPC` | - | 5 | - | - | **5** |
+| `MDATP` | 1 | 2 | - | - | **3** |
+| `OATP` | 1 | - | - | - | **1** |
+| `Microsoft 365 Defender` | 1 | - | - | - | **1** |
+| `contains anomal` | - | 1 | - | - | **1** |
+| `contains fusion` | - | 1 | - | - | **1** |
+
+### Tactics
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains exfil` | - | 3 | - | - | **3** |
+| `CredentialAccess` | - | 1 | - | - | **1** |
+| `InitialAccess` | - | 1 | - | - | **1** |
 
 ---
 

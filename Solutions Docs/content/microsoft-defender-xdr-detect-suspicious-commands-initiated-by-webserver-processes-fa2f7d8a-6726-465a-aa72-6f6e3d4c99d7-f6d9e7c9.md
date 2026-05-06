@@ -21,9 +21,9 @@ Detect suspicious commands initiated by web server processes used for network di
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName in "beasvc.exe,httpd.exe,w3wp.exe"`<br>`InitiatingProcessFileName startswith "tomcat"`<br>`InitiatingProcessParentFileName in "beasvc.exe,httpd.exe,w3wp.exe"`<br>`InitiatingProcessParentFileName startswith "tomcat"`<br>`ProcessCommandLine contains "%temp%"`<br>`ProcessCommandLine has "certutil"`<br>`ProcessCommandLine has "ipconfig"`<br>`ProcessCommandLine has "ping"`<br>`ProcessCommandLine has "systeminfo"`<br>`ProcessCommandLine has "timeout"`<br>`ProcessCommandLine has "wget"`<br>`ProcessCommandLine has "whoami"` | ✓ | ✗ | ? |
 
 ---
 

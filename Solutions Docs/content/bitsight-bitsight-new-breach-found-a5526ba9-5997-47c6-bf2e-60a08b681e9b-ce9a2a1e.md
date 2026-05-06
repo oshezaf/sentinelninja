@@ -25,9 +25,9 @@ Rule helps to detect a new breach generated in BitSight.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) |  | ? | ✓ | ? |
 
 ---
 

@@ -14,6 +14,55 @@ This playbook showcases an example of triggering an incident within a targeted T
 | **Solution** | [Teams](../solutions/teams.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **8** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `arm` | Managed | 1 | 5 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `azuresentinel_2` | Managed | 0 | 1 |
+| `service-now` | Managed | 1 | 4 |
+| `teams` | Managed | 1 | 3 |
+| `virustotal` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`arm`** (managedApi):
+- *Get_playbook_callback_URL*: method=`post`, path=`/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8])}/@{encodeURIComponent('triggers/',body('Get_resource_trigger_name')?['value'][0]['name'],'/listCallbackUrl')}`
+- *Get_resource_trigger_name*: method=`get`, path=`/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8],'/triggers')}`
+- *Read_a_resource*: method=`get`, path=`/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8])}`
+- *List_resources_by_subscription*: method=`get`, path=`/subscriptions/@{encodeURIComponent(item()?['subscriptionId'])}/resources`
+- *List_subscriptions*: method=`get`, path=`/subscriptions`
+
+**`azuresentinel_2`** (managedApi):
+- *Azure_Sentinel_-_Add_comment_to_related_Incident*: method=`post`, path=`/Incidents/Comment`
+
+**`service-now`** (managedApi):
+- *ServiceNow_-_Create_Record_for_Incident*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
+- *ServiceNow_-_Add_additional_comments_in_ServiceNow_Ticket*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('ServiceNowSystemID'))}`
+- *ServiceNow_-_Query_for_Sentinel_Incident_Number*: method=`get`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
+- *ServiceNow_-_Update_Record_with_Response_from_User*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('ServiceNowSystemID'))}`
+
+**`teams`** (managedApi):
+- *Teams_-_Reply_to_Alert_Thread*: method=`post`, path=`/v2/beta/teams/@{encodeURIComponent(parameters('TeamsGroupId'))}/channels/@{encodeURIComponent(parameters('AlertChannelId'))}/messages/@{encodeURIComponent(body('Post_Incident_in_SOC_Alerts_Channel')?['id'])}/replies`
+- *Post_Incident_in_SOC_Alerts_Channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/@{encodeURIComponent('User')}/location/@{encodeURIComponent('Channel')}`
+- *Update_Incident_Thread_from_Investigation_Response*: method=`post`, path=`/v2/beta/teams/@{encodeURIComponent(parameters('TeamsGroupId'))}/channels/@{encodeURIComponent(parameters('AlertChannelId'))}/messages/@{encodeURIComponent(body('Post_Incident_in_SOC_Alerts_Channel')?['id'])}/replies`
+
+**`virustotal`** (managedApi):
+- *Get_an_IP_report*: method=`get`, path=`/api/v3/ip_addresses/@{encodeURIComponent(items('For_each')?['properties']?['Address'])}`
+
+**`http`** (builtin):
+- *Call_the_playbook_and_pass_alert_to_playbook*: method=`POST`, uri=`@{body('Find_playbook_based_on_playbook_name_provided')[0]?['callbackUrl']}`
+
+**`workflow`** (builtin):
+- *LogicApp_-_Get_tagged_playbooks*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('PlaybookName'),'-fn-getListOfTaggedPlaybooks')]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Advanced-ServiceNow-Teams-Integration/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Advanced-ServiceNow-Teams-Integration/readme.md)*

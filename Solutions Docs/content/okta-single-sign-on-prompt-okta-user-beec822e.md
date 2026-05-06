@@ -14,6 +14,31 @@ This playbook uses the OKTA connector to prompt the risky user on Teams. User is
 | **Solution** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-PromptUser/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `teams` | Managed | 1 | 0 |
+| `OktaCustomConnector` | Custom | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_a_comment_to_the_incident_with_the_information_collected_and_conclusion*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_to_close_it*: method=`put`, path=`/Incidents`
+- *Add_a_comment_to_the_incident_with_the_information_collected*: method=`post`, path=`/Incidents/Comment`
+
+**`OktaCustomConnector`** (customApi):
+- *Clear_User_Sessions*: method=`delete`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/sessions`
+- *Reset_Password*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password`
+- *Get_User*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [OktaPlaybooks/Okta-PromptUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-PromptUser/readme.md)*

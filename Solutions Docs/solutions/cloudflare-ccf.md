@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.cloudflare.com](https://support.cloudflare.com) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.2 |
 | **Author** | Cloudflare - support@cloudflare.com |
 | **First Published** | 2025-09-30 |
 | **Last Updated** | 2026-02-11 |
@@ -112,6 +112,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |------------|-------------------------------|--------------------|
+| 3.0.2      | 22-04-2026                    | Fixed DCR transformKql for Type field and corrected invalid field data types |
 | 3.0.1      | 08-12-2025                    | Fixed invalid GUIDs, updated analytic rules, aligned URL entity mappings with legacy Cloudflare solution |
 | 3.0.0      | 02-10-2025                    | Includes all CCF connector definitions and configurations. |
 

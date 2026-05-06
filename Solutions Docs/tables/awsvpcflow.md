@@ -95,13 +95,13 @@ This table is ingested by the following connectors:
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Amazon Web Services S3 VPC Flow Logs](../connectors/awss3vpcflowlogsparquetdefinition.md) |  |
-| [Amazon Web Services S3](../connectors/awss3.md) |  |
+| [Amazon Web Services S3](../connectors/awss3.md) | `Action == "REJECT"` |
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (4)
 
-### Workbooks (7)
+### Workbooks (4)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -127,14 +127,6 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AWSS3](../content/github-only-awss3-8722dc32.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
-
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -142,6 +134,21 @@ This table is ingested by the following connectors:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimNetworkSessionAWSVPC](../asim/asimnetworksessionawsvpc.md) | NetworkSession | AWS VPC |  |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Action == "REJECT"` | 1 | - | - | - | **1** |
+| **Total** | **1** | **0** | **0** | **0** | **1** |
+
+### Action
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `REJECT` | 1 | - | - | - | **1** |
 
 ---
 

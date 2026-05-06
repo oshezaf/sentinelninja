@@ -14,6 +14,22 @@ Send a webhook request to a Blink workflow trigger whenever a new Incident is cr
 | **Solution** | [BlinkOps](../solutions/blinkops.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Trigger_Blink_Workflow*: method=`POST`, uri=`@parameters('Blink-Webhook-Full-URL')`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Sentinel-Incident-Handler/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/readme.md)*

@@ -102,9 +102,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (78)
+## Content Items Using This Table (53)
 
-### Analytic Rules (25)
+### Analytic Rules (21)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -116,32 +116,32 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Azure Machine Learning Write Operations](../content/azure-activity-azure-machine-learning-write-operations-68c89998-8052-4c80-a1f6-9d81060b6d57-78e6b271.md) |  |
-| [Creation of expensive computes in Azure](../content/azure-activity-creation-of-expensive-computes-in-azure-9736e5f1-7b6e-4bfb-a708-e53ff1d182c3-ceac9b06.md) |  |
-| [Mass Cloud resource deletions Time Series Anomaly](../content/azure-activity-mass-cloud-resource-deletions-time-series-anomaly-ed43bdb7-eaab-4ea4-be52-6951fcfa7e3b-bbd8cfc2.md) |  |
-| [Microsoft Entra ID Hybrid Health AD FS New Server](../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-new-server-88f453ff-7b9e-45bb-8c12-4058ca5e44ee-ede40a47.md) |  |
-| [Microsoft Entra ID Hybrid Health AD FS Service Delete](../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-service-delete-86a036b2-3686-42eb-b417-909fc0867771-676dbeac.md) |  |
-| [Microsoft Entra ID Hybrid Health AD FS Suspicious Application](../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-suspicious-application-d9938c3b-16f9-444d-bc22-ea9a9110e0fd-8920c2ac.md) |  |
-| [NRT Creation of expensive computes in Azure](../content/azure-activity-nrt-creation-of-expensive-computes-in-azure-56fe0db0-6779-46fa-b3c5-006082a53064-7552960d.md) |  |
-| [NRT Microsoft Entra ID Hybrid Health AD FS New Server](../content/azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.md) |  |
-| [New CloudShell User](../content/azure-activity-new-cloudshell-user-6d7214d9-4a28-44df-aafb-0910b9e6ae3e-a064ab7a.md) |  |
+| [Azure Machine Learning Write Operations](../content/azure-activity-azure-machine-learning-write-operations-68c89998-8052-4c80-a1f6-9d81060b6d57-78e6b271.md) | `OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"`<br>`OperationNameValue contains "write"`<br>`ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"` |
+| [Creation of expensive computes in Azure](../content/azure-activity-creation-of-expensive-computes-in-azure-9736e5f1-7b6e-4bfb-a708-e53ff1d182c3-ceac9b06.md) | `ActivityStatusValue startswith "Accept"`<br>`Properties has "vmSize"` |
+| [Mass Cloud resource deletions Time Series Anomaly](../content/azure-activity-mass-cloud-resource-deletions-time-series-anomaly-ed43bdb7-eaab-4ea4-be52-6951fcfa7e3b-bbd8cfc2.md) | `OperationNameValue endswith "delete"` |
+| [Microsoft Entra ID Hybrid Health AD FS New Server](../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-new-server-88f453ff-7b9e-45bb-8c12-4058ca5e44ee-ede40a47.md) | `CategoryValue == "Administrative"`<br>`OperationNameValue == "Microsoft.ADHybridHealthService/services/servicemembers/action"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` |
+| [Microsoft Entra ID Hybrid Health AD FS Service Delete](../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-service-delete-86a036b2-3686-42eb-b417-909fc0867771-676dbeac.md) | `CategoryValue == "Administrative"`<br>`OperationNameValue == "Microsoft.ADHybridHealthService/services/delete"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` |
+| [Microsoft Entra ID Hybrid Health AD FS Suspicious Application](../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-suspicious-application-d9938c3b-16f9-444d-bc22-ea9a9110e0fd-8920c2ac.md) | `CategoryValue == "Administrative"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` |
+| [NRT Creation of expensive computes in Azure](../content/azure-activity-nrt-creation-of-expensive-computes-in-azure-56fe0db0-6779-46fa-b3c5-006082a53064-7552960d.md) | `ActivityStatusValue startswith "Accept"`<br>`Properties has "vmSize"` |
+| [NRT Microsoft Entra ID Hybrid Health AD FS New Server](../content/azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.md) | `CategoryValue == "Administrative"`<br>`OperationNameValue == "Microsoft.ADHybridHealthService/services/servicemembers/action"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` |
+| [New CloudShell User](../content/azure-activity-new-cloudshell-user-6d7214d9-4a28-44df-aafb-0910b9e6ae3e-a064ab7a.md) | `ActivityStatusValue == "Success"`<br>`OperationNameValue in "Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write"`<br>`ResourceGroup has "cloud-shell"` |
 | [Rare subscription-level operations in Azure](../content/azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.md) |  |
-| [Subscription moved to another tenant](../content/azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.md) |  |
+| [Subscription moved to another tenant](../content/azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.md) | `CategoryValue == "Security"`<br>`OperationNameValue == "Microsoft.Subscription/updateTenant/action"` |
 | [Suspicious Resource deployment](../content/azure-activity-suspicious-resource-deployment-9fb57e58-3ed8-4b89-afcf-c8e786508b1c-a84aefba.md) |  |
 | [Suspicious granting of permissions to an account](../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.md) |  |
 | [Suspicious number of resource creation or deployment activities](../content/azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue contains "Microsoft.SecurityInsights/dataConnectors/"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [M2131_DataConnectorAddedChangedRemoved](../content/maturitymodelforeventlogmanagementm2131-m2131-dataconnectoraddedchangedremoved-eeb11b6b-e626-4228-b74d-3e730dca8999-c8fea928.md) |  |
+| Analytic Rule |
+|:-------------|
+| [M2131_DataConnectorAddedChangedRemoved](../content/maturitymodelforeventlogmanagementm2131-m2131-dataconnectoraddedchangedremoved-eeb11b6b-e626-4228-b74d-3e730dca8999-c8fea928.md) |
 
-**In solution [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md):**
+**In solution [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md):** `OperationNameValue endswith "delete"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Threat Essentials - Mass Cloud resource deletions Time Series Anomaly](../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.md) |  |
+| Analytic Rule |
+|:-------------|
+| [Threat Essentials - Mass Cloud resource deletions Time Series Anomaly](../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.md) |
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -157,42 +157,33 @@ This table is ingested by the following connectors:
 | [TI Map IP Entity to AzureActivity](../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.md) |  |
 | [TI map Email entity to AzureActivity](../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure Diagnostic settings removed from a resource](../content/standalone-content-azure-diagnostic-settings-removed-from-a-resource-6e95aef3-a1e0-4063-8e74-cd59aa59f245-652cb0e3.md) |  |
-| [Azure VM Run Command operation executed during suspicious login window](../content/standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.md) |  |
-| [Azure VM Run Command operations executing a unique PowerShell script](../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.md) |  |
-| [Workspace deletion activity from an infected device](../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md) |  |
-
-### Hunting Queries (22)
+### Hunting Queries (17)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Anomalous Azure Operation Hunting Model](../content/azure-activity-anomalous-azure-operation-hunting-model-43cb0347-bdcc-4e83-af5a-cebbd03971d8-cab991db.md) |  |
-| [Azure Machine Learning Write Operations](../content/azure-activity-azure-machine-learning-write-operations-26d116bd-324b-4bb8-b102-d4a282607ad7-c243c1ab.md) |  |
-| [Azure Network Security Group NSG Administrative Operations](../content/azure-activity-azure-network-security-group-nsg-administrative-operations-e94d6756-981c-4f02-9a81-d006d80c8b41-633c60f3.md) |  |
-| [Azure VM Run Command executed from Azure IP address](../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.md) |  |
-| [Azure Virtual Network Subnets Administrative Operations](../content/azure-activity-azure-virtual-network-subnets-administrative-operations-57784ba5-7791-422e-916f-65ef94fe1dbb-9d2f39f9.md) |  |
-| [Azure storage key enumeration](../content/azure-activity-azure-storage-key-enumeration-5d2399f9-ea5c-4e67-9435-1fba745f3a39-dc9ad5ce.md) |  |
-| [AzureActivity Administration From VPS Providers](../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.md) |  |
-| [Common deployed resources](../content/azure-activity-common-deployed-resources-0278e3b8-9899-45c5-8928-700cd80d2d80-cd2dd606.md) |  |
-| [Creation of an anomalous number of resources](../content/azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.md) |  |
-| [Granting permissions to account](../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.md) | `OperationName == "Create role assignment"` |
-| [Microsoft Sentinel Analytics Rules Administrative Operations](../content/azure-activity-microsoft-sentinel-analytics-rules-administrative-operations-ef7ef44e-6129-4d8e-94fe-b5530415d8e5-4b1b530d.md) |  |
-| [Microsoft Sentinel Connectors Administrative Operations](../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.md) |  |
-| [Microsoft Sentinel Workbooks Administrative Operations](../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.md) |  |
-| [Port opened for an Azure Resource](../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.md) |  |
+| [Azure Machine Learning Write Operations](../content/azure-activity-azure-machine-learning-write-operations-26d116bd-324b-4bb8-b102-d4a282607ad7-c243c1ab.md) | `OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"`<br>`OperationNameValue contains "write"`<br>`ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"` |
+| [Azure Network Security Group NSG Administrative Operations](../content/azure-activity-azure-network-security-group-nsg-administrative-operations-e94d6756-981c-4f02-9a81-d006d80c8b41-633c60f3.md) | `ActivitySubstatusValue in "Accepted,Created,OK"` |
+| [Azure VM Run Command executed from Azure IP address](../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.md) | `Authorization has "virtualMachines"`<br>`OperationNameValue == "Microsoft.Compute/virtualMachines/runCommand/action"` |
+| [Azure Virtual Network Subnets Administrative Operations](../content/azure-activity-azure-virtual-network-subnets-administrative-operations-57784ba5-7791-422e-916f-65ef94fe1dbb-9d2f39f9.md) | `ActivitySubstatusValue in "Accepted,Created"`<br>`CategoryValue == "Administrative"` |
+| [Azure storage key enumeration](../content/azure-activity-azure-storage-key-enumeration-5d2399f9-ea5c-4e67-9435-1fba745f3a39-dc9ad5ce.md) | `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue == "microsoft.storage/storageaccounts/listkeys/action"` |
+| [AzureActivity Administration From VPS Providers](../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.md) | `CategoryValue == "Administrative"` |
+| [Common deployed resources](../content/azure-activity-common-deployed-resources-0278e3b8-9899-45c5-8928-700cd80d2d80-cd2dd606.md) | `ActivityStatusValue == "Succeeded"` |
+| [Creation of an anomalous number of resources](../content/azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.md) | `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue in "microsoft.compute/virtualMachines/write,microsoft.resources/deployments/write"` |
+| [Granting permissions to account](../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.md) | `ActivityStatus == "Succeeded"`<br>`OperationName == "Create role assignment"` |
+| [Microsoft Sentinel Analytics Rules Administrative Operations](../content/azure-activity-microsoft-sentinel-analytics-rules-administrative-operations-ef7ef44e-6129-4d8e-94fe-b5530415d8e5-4b1b530d.md) | `ActivitySubstatusValue in "Created,OK"`<br>`CategoryValue == "Administrative"` |
+| [Microsoft Sentinel Connectors Administrative Operations](../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.md) | `ActivitySubstatusValue in "Created,OK"` |
+| [Microsoft Sentinel Workbooks Administrative Operations](../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.md) | `ActivitySubstatusValue in "Created,OK"` |
+| [Port opened for an Azure Resource](../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.md) | `ActivityStatusValue == "Accepted"`<br>`OperationNameValue endswith "write"`<br>`OperationNameValue has_any "ipfilterrules"` |
 | [Rare Custom Script Extension](../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.md) | `OperationName == "Create or Update Virtual Machine Extension"` |
 
-**In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):**
+**In solution [Cloud Service Threat Protection Essentials](../solutions/cloud-service-threat-protection-essentials.md):** `ActivityStatusValue has_any "Succeeded"`<br>`Properties contains "publicipaddress"`
 
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md) |  |
+| Hunting Query |
+|:-------------|
+| [Azure Resources Assigned Public IP Addresses](../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.md) |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `OperationName contains "delete"`<br>`OperationName contains "remove"`
 
@@ -200,41 +191,26 @@ This table is ingested by the following connectors:
 |:-------------|
 | [Insider Risk_Possible Sabotage](../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.md) |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Anomalous Resource Creation and related Network Activity](../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.md) |  |
-| [Azure CloudShell Usage](../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md) |  |
-| [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) | `OperationName has "Create"` |
-
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Azure VM Run Command linked with MDE](../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.md) |  |
-| [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) |  |
-
-### Workbooks (30)
+### Workbooks (14)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [AzureActivity](../content/azure-activity-azureactivity-dc7bc453.md) |  |
-| [AzureServiceHealthWorkbook](../content/azure-activity-azureservicehealthworkbook-d3085bda.md) |  |
+| [AzureActivity](../content/azure-activity-azureactivity-dc7bc453.md) | `Level in "Error,Informational,Warning"` |
+| [AzureServiceHealthWorkbook](../content/azure-activity-azureservicehealthworkbook-d3085bda.md) | `CategoryValue == "ServiceHealth"`<br>`Level in "Error,Information,Warning"` |
 
-**In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):**
+**In solution [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md):** `ActivityStatusValue == "Succeeded"`<br>`Caller has "@"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) |  |
+| Workbook |
+|:-------------|
+| [Workbook-AzureSQLSecurity](../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.md) |
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue contains "recovery"`<br>`OperationNameValue startswith "Microsoft.KeyVault"`<br>`OperationNameValue startswith "Microsoft.Logic"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
+| Workbook |
+|:-------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -242,11 +218,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `OperationNameValue contains "Insights"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+| Workbook |
+|:-------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -254,23 +230,23 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `ActivityStatusValue == "Success"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationNameValue contains "Microsoft.Network/loadBalancers/"`<br>`OperationNameValue contains "Network"`<br>`ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
+| Workbook |
+|:-------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ActivityStatus in "Accepted,Succeeded"`<br>`ActivitySubstatusValue in "Created,OK"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
+| Workbook |
+|:-------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+**In solution [NISTSP80053](../solutions/nistsp80053.md):** `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue contains "cluster"`<br>`OperationNameValue contains "insights"`<br>`OperationNameValue contains "storage"`<br>`OperationNameValue startswith "Microsoft.Logic"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
+| Workbook |
+|:-------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
@@ -278,11 +254,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):**
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
+| Workbook |
+|:-------------|
+| [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
 
 **In solution [ThreatAnalysis&Response](../solutions/threatanalysis&response.md):**
 
@@ -290,40 +266,19 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [DynamicThreatModeling&Response](../content/threatanalysis&response-dynamicthreatmodeling&response-54123c47.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue startswith "Microsoft.Logic"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AzureActivity](../content/github-only-azureactivity-31e8481e.md) |  |
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [AzureServiceHealthWorkbook](../content/github-only-azureservicehealthworkbook-c0a0870d.md) |  |
-| [AzureThreatResearchMatrixWorkbook](../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.md) | `OperationName in "Add application,Add conditional access policy,Delete conditional access policy,Invite external user,Redeem external user invite,Update application – Certificates`<br>`secrets management,Update conditional access policy"`<br>`OperationName in "Add service principal,Add user,Admin deleted security info,Admin registered security info,Admin updated security info,Register device,Unregister device,User changed default security info,User deleted security info,User registered security info"`<br>`OperationName has "Add app role assignment to service principal"`<br>`OperationName has "Add delegated permission grant"`<br>`OperationName has "Consent to application"`<br>`OperationName has_any "Update user"` |
-| [CopilotforSecurityMonitoring](../content/github-only-copilotforsecuritymonitoring-b67b6028.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) | `ResourceProvider == "Microsoft.HybridCompute"` |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [PlaybookHealth](../content/github-only-playbookhealth-6ce06262.md) | `OperationName == "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName has "Create"`<br>`OperationName has "Delete"`<br>`OperationName has "Disable"`<br>`OperationName has "Enable"`<br>`OperationName has "set"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowAction"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRun"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowRunCompleted"`<br>`OperationName startswith "Microsoft.Logic/workflows/workflowTrigger"` |
-| [SensitiveOperationsinAzureActivityLogReview](../content/github-only-sensitiveoperationsinazureactivitylogreview-eb1864d3.md) | `OperationName == "Create or Update Virtual Machine Extension"` |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [WorkspaceAuditing](../content/github-only-workspaceauditing-b4e840dd.md) | `OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"` |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `OperationName !in "Microsoft.SecurityInsights/Incidents/investigations/write,Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action"`<br>`ResourceProvider == "Microsoft.SecurityInsights"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+| Workbook |
+|:-------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
 
 ## Parsers Using This Table (1)
 
-### ASIM Parsers (1)
+### ASIM Parsers (1) — Selection Criteria: `CategoryValue == "Administrative"`
 
-| Parser | Schema | Product | Selection Criteria |
-|:-------|:-------|:--------|:-------------------|
-| [ASimAuditEventAzureActivity](../asim/asimauditeventazureactivity.md) | AuditEvent | Microsoft Azure |  |
+| Parser | Schema | Product |
+|:-------|:-------|:--------|
+| [ASimAuditEventAzureActivity](../asim/asimauditeventazureactivity.md) | AuditEvent | Microsoft Azure |
 
 ## Resource Types
 
@@ -459,17 +414,100 @@ This table collects data from the following Azure resource types:
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
 
-## Selection Criteria Summary (4 criteria, 4 total references)
+## Selection Criteria Summary (33 criteria, 39 total references)
 
-References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 38 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OperationName == "Create role assignment"` | - | 1 | - | - | **1** |
+| `CategoryValue == "Administrative"`<br>`OperationNameValue == "Microsoft.ADHybridHealthService/services/servicemembers/action"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` | - | 2 | - | - | **2** |
+| `ActivityStatusValue startswith "Accept"`<br>`Properties has "vmSize"` | - | 2 | - | - | **2** |
+| `OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"`<br>`OperationNameValue contains "write"`<br>`ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"` | - | 2 | - | - | **2** |
+| `OperationNameValue endswith "delete"` | - | 2 | - | - | **2** |
+| `CategoryValue == "Administrative"` | - | 1 | 1 | - | **2** |
+| `ActivitySubstatusValue in "Created,OK"` | - | 2 | - | - | **2** |
+| `CategoryValue == "Administrative"`<br>`OperationNameValue == "Microsoft.ADHybridHealthService/services/delete"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` | - | 1 | - | - | **1** |
+| `CategoryValue == "Administrative"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Success"`<br>`OperationNameValue in "Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write"`<br>`ResourceGroup has "cloud-shell"` | - | 1 | - | - | **1** |
+| `CategoryValue == "Security"`<br>`OperationNameValue == "Microsoft.Subscription/updateTenant/action"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue contains "Microsoft.SecurityInsights/dataConnectors/"` | - | 1 | - | - | **1** |
+| `ActivitySubstatusValue in "Created,OK"`<br>`CategoryValue == "Administrative"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue == "microsoft.storage/storageaccounts/listkeys/action"` | - | 1 | - | - | **1** |
+| `ActivitySubstatusValue in "Accepted,Created,OK"` | - | 1 | - | - | **1** |
+| `Authorization has "virtualMachines"`<br>`OperationNameValue == "Microsoft.Compute/virtualMachines/runCommand/action"` | - | 1 | - | - | **1** |
+| `ActivitySubstatusValue in "Accepted,Created"`<br>`CategoryValue == "Administrative"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Succeeded"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue in "microsoft.compute/virtualMachines/write,microsoft.resources/deployments/write"` | - | 1 | - | - | **1** |
+| `ActivityStatus == "Succeeded"`<br>`OperationName == "Create role assignment"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Accepted"`<br>`OperationNameValue endswith "write"`<br>`OperationNameValue has_any "ipfilterrules"` | - | 1 | - | - | **1** |
 | `OperationName == "Create or Update Virtual Machine Extension"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue has_any "Succeeded"`<br>`Properties contains "publicipaddress"` | - | 1 | - | - | **1** |
 | `OperationName contains "delete"`<br>`OperationName contains "remove"` | - | 1 | - | - | **1** |
-| `OperationName has "Create"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **4** | **0** | **0** | **4** |
+| `Level in "Error,Informational,Warning"` | - | 1 | - | - | **1** |
+| `CategoryValue == "ServiceHealth"`<br>`Level in "Error,Information,Warning"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Succeeded"`<br>`Caller has "@"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue contains "recovery"`<br>`OperationNameValue startswith "Microsoft.KeyVault"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
+| `OperationNameValue contains "Insights"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue == "Success"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationNameValue contains "Microsoft.Network/loadBalancers/"`<br>`OperationNameValue contains "Network"`<br>`ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"` | - | 1 | - | - | **1** |
+| `ActivityStatus in "Accepted,Succeeded"`<br>`ActivitySubstatusValue in "Created,OK"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue contains "cluster"`<br>`OperationNameValue contains "insights"`<br>`OperationNameValue contains "storage"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
+| `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
+| `ActivityStatusValue in "Succeeded,Success"`<br>`OperationNameValue startswith "Microsoft.Logic"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **38** | **1** | **0** | **39** |
+
+### ActivityStatus
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Succeeded` | - | 2 | - | - | **2** |
+| `Accepted` | - | 1 | - | - | **1** |
+
+### ActivityStatusValue
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Succeeded` | - | 8 | - | - | **8** |
+| `Success` | - | 5 | - | - | **5** |
+| `startswith Accept` | - | 2 | - | - | **2** |
+| `Accepted` | - | 1 | - | - | **1** |
+| `has_any Succeeded` | - | 1 | - | - | **1** |
+
+### ActivitySubstatusValue
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Created` | - | 7 | - | - | **7** |
+| `OK` | - | 6 | - | - | **6** |
+| `Accepted` | - | 2 | - | - | **2** |
+
+### Authorization
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has virtualMachines` | - | 1 | - | - | **1** |
+
+### Caller
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has @` | - | 1 | - | - | **1** |
+
+### CategoryValue
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Administrative` | - | 7 | 1 | - | **8** |
+| `Security` | - | 1 | - | - | **1** |
+| `ServiceHealth` | - | 1 | - | - | **1** |
+
+### Level
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Error` | - | 2 | - | - | **2** |
+| `Warning` | - | 2 | - | - | **2** |
+| `Informational` | - | 1 | - | - | **1** |
+| `Information` | - | 1 | - | - | **1** |
 
 ### OperationName
 
@@ -479,7 +517,73 @@ References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parse
 | `Create or Update Virtual Machine Extension` | - | 1 | - | - | **1** |
 | `contains delete` | - | 1 | - | - | **1** |
 | `contains remove` | - | 1 | - | - | **1** |
-| `has Create` | - | 1 | - | - | **1** |
+| `has_any Add directory role member` | - | 1 | - | - | **1** |
+| `has_any Add member to role` | - | 1 | - | - | **1** |
+| `has_any Add user` | - | 1 | - | - | **1** |
+| `has_any Create user` | - | 1 | - | - | **1** |
+| `has_any Role assignment` | - | 1 | - | - | **1** |
+| `has_any Update user` | - | 1 | - | - | **1** |
+| `has_any directory write` | - | 1 | - | - | **1** |
+| `has_any policy update` | - | 1 | - | - | **1** |
+| `has_any role assignment` | - | 1 | - | - | **1** |
+| `has_any role update` | - | 1 | - | - | **1** |
+
+### OperationNameValue
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `startswith Microsoft.Logic` | - | 3 | - | - | **3** |
+| `Microsoft.ADHybridHealthService/services/servicemembers/action` | - | 2 | - | - | **2** |
+| `!contains MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE` | - | 2 | - | - | **2** |
+| `contains write` | - | 2 | - | - | **2** |
+| `endswith delete` | - | 2 | - | - | **2** |
+| `Microsoft.ADHybridHealthService/services/delete` | - | 1 | - | - | **1** |
+| `Microsoft.Storage/storageAccounts/listKeys/action` | - | 1 | - | - | **1** |
+| `Microsoft.Storage/storageAccounts/write` | - | 1 | - | - | **1** |
+| `Microsoft.Subscription/updateTenant/action` | - | 1 | - | - | **1** |
+| `contains Microsoft.SecurityInsights/dataConnectors/` | - | 1 | - | - | **1** |
+| `microsoft.storage/storageaccounts/listkeys/action` | - | 1 | - | - | **1** |
+| `Microsoft.Compute/virtualMachines/runCommand/action` | - | 1 | - | - | **1** |
+| `microsoft.compute/virtualMachines/write` | - | 1 | - | - | **1** |
+| `microsoft.resources/deployments/write` | - | 1 | - | - | **1** |
+| `endswith write` | - | 1 | - | - | **1** |
+| `has_any ipfilterrules` | - | 1 | - | - | **1** |
+| `contains recovery` | - | 1 | - | - | **1** |
+| `startswith Microsoft.KeyVault` | - | 1 | - | - | **1** |
+| `contains Insights` | - | 1 | - | - | **1** |
+| `contains Microsoft.Network/loadBalancers/` | - | 1 | - | - | **1** |
+| `contains Network` | - | 1 | - | - | **1** |
+| `contains cluster` | - | 1 | - | - | **1** |
+| `contains insights` | - | 1 | - | - | **1** |
+| `contains storage` | - | 1 | - | - | **1** |
+
+### Properties
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has vmSize` | - | 2 | - | - | **2** |
+| `contains publicipaddress` | - | 1 | - | - | **1** |
+
+### ResourceGroup
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has cloud-shell` | - | 1 | - | - | **1** |
+
+### ResourceProviderValue
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Microsoft.ADHybridHealthService` | - | 4 | - | - | **4** |
+| `MICROSOFT.MACHINELEARNINGSERVICES` | - | 2 | - | - | **2** |
+| `MICROSOFT.CONTAINERSERVICE` | - | 1 | - | - | **1** |
+| `MICROSOFT.LOGIC` | - | 1 | - | - | **1** |
+
+### _ResourceId
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has AdFederationService` | - | 4 | - | - | **4** |
 
 ---
 

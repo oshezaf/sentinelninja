@@ -14,6 +14,34 @@ This playbook perform look up into EclecticIQ for the entities (Account, Host, I
 | **Solution** | [EclecticIQ](../solutions/eclecticiq.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks/EclecticIQ-EnrichIncident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `EclecticIQCustomConnector` | Custom | 1 | 5 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`EclecticIQCustomConnector`** (customApi):
+- *Get_Observables*: method=`get`, path=`/api/v1/observables`
+- *Get_Observables_FileHash*: method=`get`, path=`/api/v1/observables`
+- *Get_Observables_-_Hosts*: method=`get`, path=`/api/v1/observables`
+- *Get_Observables_-_IP*: method=`get`, path=`/api/v1/observables`
+- *Get_Observables_-_URL*: method=`get`, path=`/api/v1/observables`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [EclecticIQPlaybooks/EclecticIQ-EnrichIncident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/EclecticIQ/Playbooks/EclecticIQPlaybooks/EclecticIQ-EnrichIncident/readme.md)*

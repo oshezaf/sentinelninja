@@ -22,6 +22,25 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`ShadowByteAriaForums_CL`](../tables/shadowbyteariaforums-cl.md) | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `ShadowByteAriaConnector` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data*: method=`post`, path=`/api/logs`
+
+**`ShadowByteAriaConnector`** (customApi):
+- *Breach_Search*: method=`get`, path=`/v2/breach/search`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ShadowByte_Aria_Search_for_Breaches/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ShadowByte%20Aria/Playbooks/ShadowByte_Aria_Search_for_Breaches/readme.md)*

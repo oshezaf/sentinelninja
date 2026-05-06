@@ -22,9 +22,9 @@ This query can be used as a Custom Detection Rule (CDR) to trigger when a partne
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`MessageEvents`](../tables/messageevents.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`MessageEvents`](../tables/messageevents.md) | `IsExternalThread == "1"`<br>`IsOwnedThread == "0"`<br>`SenderDisplayName contains "@contoso.com"` | ? | ✗ | ? |
 
 ---
 

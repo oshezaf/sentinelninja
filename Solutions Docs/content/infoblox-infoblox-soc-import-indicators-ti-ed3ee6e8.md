@@ -14,6 +14,28 @@ Imports each Indicator of a Microsoft Sentinel Incident triggered by an Infoblox
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Import%20Indicators%20TI/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 2 |
+| `azuresentinel` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Get_Domains*: method=`post`, path=`/queryDataV2`
+- *Get_IPs*: method=`post`, path=`/queryDataV2`
+
+**`http`** (builtin):
+- *Send_IPs_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
+- *Send_Domains_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox SOC Import Indicators TI/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Import%20Indicators%20TI/readme.md)*

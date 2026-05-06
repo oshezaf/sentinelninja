@@ -25,9 +25,9 @@ This query was originally published in the threat analytics report, Ryuk ransomw
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` | ✓ | ✗ | ? |
 
 ---
 

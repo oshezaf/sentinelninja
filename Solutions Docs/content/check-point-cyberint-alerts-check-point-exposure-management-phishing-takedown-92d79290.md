@@ -14,6 +14,29 @@ When a new Microsoft Sentinel incident is created for a phishing website alert, 
 | **Solution** | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Response/CPEM_PhishingTakedown/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_enrichment_comment*: method=`post`, path=`/Incidents/Comment`
+- *Add_takedown_comment*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_tags*: method=`put`, path=`/Incidents`
+- *Add_below_threshold_comment*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *Get_Alert_Details*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}`
+- *Submit_Takedown_Request*: method=`POST`, uri=`@{parameters('API_Base_URL')}/api/v1/submit`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Response/CPEM_PhishingTakedown/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Response/CPEM_PhishingTakedown/readme.md)*

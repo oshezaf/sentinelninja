@@ -21,9 +21,9 @@ This query checks for attempts to turn off at least 10 existing services using s
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "config"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"` | ✓ | ✗ | ? |
 
 ---
 

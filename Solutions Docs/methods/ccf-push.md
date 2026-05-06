@@ -29,7 +29,7 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
+| [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Citrix Analytics (via Codeless Connector Framework)](../connectors/citrixanalyticsdefinition.md) ⚠️ | Citrix | 6 | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
 | [Contrast ADR Push Connector](../connectors/contrastadrccf.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [DataBahn](../connectors/databahnpush.md) | DataBahn | 3 | [Databahn](../solutions/databahn.md) |

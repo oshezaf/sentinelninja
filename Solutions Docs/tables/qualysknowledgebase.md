@@ -72,7 +72,7 @@ This table is ingested by the following connectors:
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) |  |
-| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) |  |
+| [Qualys Knowledge Base (via Codeless Connector Framework)](../connectors/qualyskbconnector.md) | `Patchable in "0,1"` |
 
 ---
 
@@ -83,6 +83,22 @@ This table is ingested by the following connectors:
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [QualysKB](../parsers/qualyskb.md) | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |  |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Patchable in "0,1"` | 1 | - | - | - | **1** |
+| **Total** | **1** | **0** | **0** | **0** | **1** |
+
+### Patchable
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `0` | 1 | - | - | - | **1** |
+| `1` | 1 | - | - | - | **1** |
 
 ---
 

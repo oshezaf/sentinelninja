@@ -14,10 +14,10 @@
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/cudeso/misp2sentinel](https://github.com/cudeso/misp2sentinel) |
 | **Categories** | domains,verticals |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | MISP project & cudeso.be - info@cudeso.be |
 | **First Published** | 2023-07-29 |
-| **Last Updated** | 2023-07-29 |
+| **Last Updated** | 2026-04-18 |
 | **Solution Folder** | [MISP2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-misp2sentinel) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🟢 High (86%) |
 
@@ -28,7 +28,7 @@ The MISP2Sentinel solution allows you to automatically push threat indicators fr
 ## Contents
 
 - [Data Connectors](#data-connectors)
-- [Tables Used](#tables-used)
+- [Internal Tables](#internal-tables)
 - [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
@@ -37,13 +37,13 @@ This solution provides **1 data connector(s)**:
 
 - [MISP2Sentinel](../connectors/misp2sentinelconnector.md)
 
-## Tables Used
+## Internal Tables
 
-This solution uses **1 table(s)**:
+The following **1 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | - |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | - |
 
 ## Additional Documentation
 
@@ -59,7 +59,8 @@ Release notes and versions are at [https://github.com/cudeso/misp2sentinel](http
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.0       | 29-07-2023                     | **Data Connector** Initial version of MISP2Sentinel with support for Upload Indicators API
+| 3.1.0       | 18-04-2026                     | Support for the new **Upload Indicators API**  |
+| 3.0.0       | 29-07-2023                     | **Data Connector** Initial version of MISP2Sentinel with support for Upload Indicators API |
 
 ---
 

@@ -22,9 +22,9 @@ This query visualizes user clicks in Teams summarizing the data by the various U
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | `Workload == "Teams"` | ✓ | ✗ | ? |
 
 ---
 

@@ -57,9 +57,11 @@ This table is used by the following solutions:
 
 This table is ingested by the following connectors:
 
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Azure Firewall](../connectors/azurefirewall.md) |  |
+**Selection Criteria:** `Flag == "INVALID"`
+
+| Connector |
+|:----------|
+| [Azure Firewall](../connectors/azurefirewall.md) |
 
 ---
 
@@ -79,6 +81,21 @@ This table is ingested by the following connectors:
 This table collects data from the following Azure resource types:
 
 - `microsoft.network/azurefirewalls`
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Flag == "INVALID"` | 1 | - | - | - | **1** |
+| **Total** | **1** | **0** | **0** | **0** | **1** |
+
+### Flag
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `INVALID` | 1 | - | - | - | **1** |
 
 ---
 

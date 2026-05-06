@@ -14,6 +14,51 @@ A Microsoft Sentinel playbook that configures Key Vault secrets and hybrid conne
 | **Solution** | [Veeam](../solutions/veeam.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Playbooks/Veeam-SetupConnectionsPlaybook/SetupConnectionsPlaybook.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `http` | Built-in | 0 | 22 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Update_Watchlist_Item_With_KeyVault_IDs_VONE*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItem/@{encodeURIComponent(items('For_each_VONE_server_set_missing_parameters')?['name'])}`
+- *Watchlists_-_Get_Updated_VONE_Settings*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItems`
+- *Update_Watchlist_Item_With_KeyVault_IDs*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItem/@{encodeURIComponent(items('For_each_VBR_server_set_missing_parameters')?['name'])}`
+- *Watchlists_-_Get_Updated_VBR_Settings*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems`
+- *Watchlists_-_Get_VONE_Settings_*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItems`
+- *Watchlists_-_Get_VBR_Settings*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems`
+
+**`http`** (builtin):
+- *Check_Username_Secret_Exists_VONE*: method=`GET`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VoneUsernameId'), '?api-version=7.4')`
+- *Create_Username_Secret_VONE*: method=`PUT`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VoneUsernameId'), '?api-version=7.4')`
+- *Check_Password_Secret_Exists_VONE*: method=`GET`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VonePasswordId'), '?api-version=7.4')`
+- *Create_Password_Secret_VONE*: method=`PUT`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VonePasswordId'), '?api-version=7.4')`
+- *Check_Hybrid_Connection_Exists_VONE*: method=`GET`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '?api-version=2024-01-01')`
+- *Create_Hybrid_Connection_VONE*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '?api-version=2024-01-01')`
+- *Create_Listener_Rule_VONE*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultListener?api-version=2024-01-01')`
+- *Create_Sender_Rule_VONE*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultSender?api-version=2024-01-01')`
+- *Get_Sender_Key_VONE*: method=`POST`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultSender/listKeys?api-version=2024-01-01')`
+- *Check_Function_App_Binding_Exists_VONE*: method=`GET`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VoneServerName'), '?api-version=2022-03-01')`
+- *Bind_To_Function_App_VONE*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VoneServerName'), '?api-version=2022-03-01')`
+- *Check_Username_Secret_Exists_VBR*: method=`GET`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrUsernameId'), '?api-version=7.4')`
+- *Create_Username_Secret_VBR*: method=`PUT`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrUsernameId'), '?api-version=7.4')`
+- *Check_Password_Secret_Exists_VBR*: method=`GET`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrPasswordId'), '?api-version=7.4')`
+- *Create_Password_Secret_VBR*: method=`PUT`, uri=`@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrPasswordId'), '?api-version=7.4')`
+- *Check_Hybrid_Connection_Exists_VBR*: method=`GET`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '?api-version=2024-01-01')`
+- *Create_Hybrid_Connection_VBR*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '?api-version=2024-01-01')`
+- *Create_Listener_Rule_VBR*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultListener?api-version=2024-01-01')`
+- *Create_Sender_Rule_VBR*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultSender?api-version=2024-01-01')`
+- *Get_Sender_Key_VBR*: method=`POST`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultSender/listKeys?api-version=2024-01-01')`
+- *Check_Function_App_Binding_Exists_VBR*: method=`GET`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VbrServerName'), '?api-version=2022-03-01')`
+- *Bind_To_Function_App_VBR*: method=`PUT`, uri=`@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VbrServerName'), '?api-version=2022-03-01')`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

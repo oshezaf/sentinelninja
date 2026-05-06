@@ -21,9 +21,9 @@ This query checks for multiple signs of ransomware activity to identify affected
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "cl"`<br>`ProcessCommandLine has "config"`<br>`ProcessCommandLine has "delete"`<br>`ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "disabled"`<br>`ProcessCommandLine has "sc"`<br>`ProcessCommandLine has "shadowcopy delete"`<br>`ProcessCommandLine has "usn"`<br>`ProcessCommandLine has "wbadmin"`<br>`ProcessCommandLine has "wevtutil"`<br>`ProcessCommandLine has "wmic"` | ✓ | ✗ | ? |
 
 ---
 

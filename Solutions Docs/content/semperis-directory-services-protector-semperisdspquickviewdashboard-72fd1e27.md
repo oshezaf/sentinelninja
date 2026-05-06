@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "Core Directory"` | ✓ | ✓ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID in "20000,20002,20012,9208,9211,9212"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `ClassName == "group"`<br>`ClassName != "dnsNode"`<br>`EventID in "20000,20002,20012,9208,9211,9212"`<br>`EventSourceName in "Semperis-DSP-Notifications,Semperis-DSP-Security,Semperis-Operation-Log"` | ✓ | ✓ | ? |
 
 ---
 

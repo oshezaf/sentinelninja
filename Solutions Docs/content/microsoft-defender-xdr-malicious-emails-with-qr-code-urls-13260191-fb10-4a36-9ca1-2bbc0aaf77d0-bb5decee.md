@@ -22,10 +22,10 @@ Visualises emails containing QR code URLs that have been detected as malicious, 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
-| [`EmailUrlInfo`](../tables/emailurlinfo.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ? |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | `UrlLocation == "QRCode"` | ✓ | ✗ | ? |
 
 ---
 

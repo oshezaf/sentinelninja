@@ -23,9 +23,9 @@ Identifies a set of Azure Virtual Network Subnets for administrative and operati
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivitySubstatusValue in "Accepted,Created"`<br>`CategoryValue == "Administrative"` | ? | ✗ | ? |
 
 ---
 

@@ -14,6 +14,22 @@ Sends an HTTPS request to a webhook trigger in Torq everytime a new Incident is 
 | **Solution** | [Torq](../solutions/torq.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq/Playbooks/Torq-Sentinel-Incident-Trigger/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Send_Notification_to_Torq*: method=`POST`, uri=`@parameters('Torq_Webhook_Enpoint_URL')`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Torq-Sentinel-Incident-Trigger/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq/Playbooks/Torq-Sentinel-Incident-Trigger/readme.md)*

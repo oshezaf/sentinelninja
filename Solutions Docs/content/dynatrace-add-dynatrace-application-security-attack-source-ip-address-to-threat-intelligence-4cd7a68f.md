@@ -14,6 +14,32 @@ This playbook will add an attackers source ip to Threat Intelligence when a new 
 | **Solution** | [Dynatrace](../solutions/dynatrace.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Add_DynatraceApplicationSecurityAttackSourceIpThreatIntelligence/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `keyvault` | Managed | 1 | 1 |
+| `microsoftgraphsecurity` | Managed | 1 | 3 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Dynatrace_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value`
+
+**`microsoftgraphsecurity`** (managedApi):
+- *Create_tiIndicator_for_attackers_source_ip*: method=`post`, path=`/beta/security/tiIndicators`
+- *Update_tiIndicator_expiration*: method=`patch`, path=`/beta/security/tiIndicators/@{encodeURIComponent(items('For_each_tiIndicator')?['id'])}`
+- *Get_Existing_tiIndicator*: method=`get`, path=`/beta/security/tiIndicators`
+
+**`http`** (builtin):
+- *Get_Dynatrace_Attack_Details*: method=`GET`, uri=`https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['attackIdentifier'])}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Add_DynatraceApplicationSecurityAttackSourceIpThreatIntelligence/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Add_DynatraceApplicationSecurityAttackSourceIpThreatIntelligence/readme.md)*

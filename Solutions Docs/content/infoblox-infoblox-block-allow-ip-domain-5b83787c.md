@@ -14,6 +14,23 @@ The playbook will add/remove IP or Domain value in Named List of Infoblox.
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Block%20Allow%20IP%20Domain/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *HTTP_Call_To_Add_Remove_IP_or_Domain_in_Selected_Name_List*: method=`PATCH`, uri=`@{variables('base_url')}/api/atcfw/v1/named_lists/@{variables('list_id')}/items`
+- *HTTP_Call_For_Get_List_For_Named_List_Endpoint*: method=`GET`, uri=`@{variables('base_url')}/api/atcfw/v1/named_lists`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox Block Allow IP Domain/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Block%20Allow%20IP%20Domain/readme.md)*

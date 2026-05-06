@@ -22,9 +22,9 @@ Lists all Google Cloud Platform firewall rule operations performed by principals
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "gce_firewall_rule"`<br>`MethodName has "delete"`<br>`MethodName has "insert"`<br>`MethodName has "patch"`<br>`MethodName has "update"`<br>`MethodName has_any "compute.firewalls.insert"`<br>`ServiceName == "compute.googleapis.com"` | ✓ | ✓ | ? |
 
 ---
 

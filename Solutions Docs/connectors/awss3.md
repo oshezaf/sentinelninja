@@ -45,7 +45,7 @@ This connector ingests data into the following tables:
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName == "CreateUser"` | ✓ | ✓ | ? |
 | [`AWSCloudWatch`](../tables/awscloudwatch.md) |  | ✓ | ✓ | ? |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) |  | ✓ | ✓ | ? |
-| [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ | ? |
+| [`AWSVPCFlow`](../tables/awsvpcflow.md) | `Action == "REJECT"` | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

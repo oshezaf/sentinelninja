@@ -22,9 +22,9 @@ This query finds CloudTrail trails with log file validation disabled using AWS S
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | `AwsSecurityFindingGeneratorId == "security-control/CloudTrail.4"`<br>`ComplianceSecurityControlId == "CloudTrail.4"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` | ✓ | ✓ | ? |
 
 ---
 

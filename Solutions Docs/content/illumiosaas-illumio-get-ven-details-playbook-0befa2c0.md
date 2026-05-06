@@ -14,6 +14,26 @@ This playbook leverages Illumio workloads API to enrich IP, Hostname and Labels,
 | **Solution** | [IllumioSaaS](../solutions/illumiosaas.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Get-Ven-Details/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `office365` | Managed | 1 | 1 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`office365`** (managedApi):
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+**`function`** (builtin):
+- *IllumioVenDetails-fetchVenDetails*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/fetchVenDetails')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Illumio-Get-Ven-Details/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Get-Ven-Details/readme.md)*

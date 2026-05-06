@@ -30,6 +30,41 @@ This content item queries data from the following tables:
 | [`NetworkCustomAnalytics_threat_CL`](../tables/networkcustomanalytics-threat-cl.md) | ? | ✓ | ? |
 | [`NetworkCustomAnalytics_threat_ioc_CL`](../tables/networkcustomanalytics-threat-ioc-cl.md) | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 9 |
+| `azuremonitorlogs` | Managed | 1 | 9 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data_-_IP*: method=`post`, path=`/api/logs`
+- *Send_Data_-_Port*: method=`post`, path=`/api/logs`
+- *Send_Data_-_GeoCountry*: method=`post`, path=`/api/logs`
+- *Send_Data_-_Overall*: method=`post`, path=`/api/logs`
+- *Send_Data_-_Protocol*: method=`post`, path=`/api/logs`
+- *Send_Data_-_SourceInfo*: method=`post`, path=`/api/logs`
+- *Send_Data_-_Threat*: method=`post`, path=`/api/logs`
+- *Send_Data_-_Threat_IOC*: method=`post`, path=`/api/logs`
+- *Send_Data_-_Rule*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_-_IP*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_Port*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_GeoCountry*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_Overall*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_Protocol*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_Rules*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_SourceInfo*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_Threat*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_-_Threat_IOC*: method=`post`, path=`/queryData`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SummarizeData_NSE/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials/Playbooks/SummarizeData_NSE/readme.md)*

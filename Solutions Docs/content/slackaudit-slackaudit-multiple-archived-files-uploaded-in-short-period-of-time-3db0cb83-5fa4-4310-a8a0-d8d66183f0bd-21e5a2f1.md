@@ -25,11 +25,11 @@ This query helps to detect when a user uploads multiple archived files in short 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
-| [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) |  | ? | ✓ | ? |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---
 

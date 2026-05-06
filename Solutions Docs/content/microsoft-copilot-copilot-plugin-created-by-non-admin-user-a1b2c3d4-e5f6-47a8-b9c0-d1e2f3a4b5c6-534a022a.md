@@ -25,9 +25,9 @@ Detects when a normal user creates a Copilot plugin. This can be used to inject 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CopilotActivity`](../tables/copilotactivity.md) | `ActorUserType != "Admin"` | ✓ | ✗ | ? |
 
 ---
 

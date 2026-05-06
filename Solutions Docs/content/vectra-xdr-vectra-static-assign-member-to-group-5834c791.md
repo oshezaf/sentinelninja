@@ -14,6 +14,31 @@ This playbook will take input of group id and members from user via MS teams and
 | **Solution** | [Vectra XDR](../solutions/vectra-xdr.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraStaticAssignMembersToGroup/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault_3` | Managed | 0 | 1 |
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 1 |
+| `workflow` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault_3`** (managedApi):
+- *Get_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Add_Member_To_Group*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('group_id')}`
+
+**`workflow`** (builtin):
+- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [VectraStaticAssignMembersToGroup/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraStaticAssignMembersToGroup/readme.md)*

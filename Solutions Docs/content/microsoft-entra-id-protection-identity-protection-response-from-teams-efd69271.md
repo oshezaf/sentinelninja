@@ -14,6 +14,38 @@ Run this playbook on incidents which contains suspicious Microsoft Entra ID iden
 | **Solution** | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuread` | Managed | 1 | 1 |
+| `azureadip` | Managed | 1 | 5 |
+| `azuresentinel` | Managed | 1 | 5 |
+| `teams` | Managed | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuread`** (managedApi):
+- *Get_user*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(concat(string(item()?['Name']), '@', string(item()?['UPNSuffix'])))}`
+
+**`azureadip`** (managedApi):
+- *Get_risky_user*: method=`get`, path=`/beta/riskyUsers/@{encodeURIComponent(body('Get_user')?['id'])}`
+- *Confirm_a_risky_user_as_compromised*: method=`post`, path=`/beta/riskyUsers/confirmCompromised`
+- *Get_risky_user_2*: method=`get`, path=`/beta/riskyUsers/@{encodeURIComponent(body('Get_risky_user')?['id'])}`
+- *Dismiss_a_risky_user*: method=`post`, path=`/beta/riskyUsers/dismiss`
+- *Get_risky_user_3*: method=`get`, path=`/beta/riskyUsers/@{encodeURIComponent(body('Get_risky_user')?['id'])}`
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Update_incident_2*: method=`put`, path=`/Incidents`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [IdentityProtection-TeamsBotResponse/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/readme.md)*

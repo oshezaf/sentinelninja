@@ -14,6 +14,25 @@ By every day reccurence, this playbook gets triggered and performs the following
 | **Solution** | [AbuseIPDB](../solutions/abuseipdb.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-BlacklistIpToThreatIntelligence/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `microsoftgraphsecurity` | Managed | 1 | 1 |
+| `AbuseIPDBAPI` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftgraphsecurity`** (managedApi):
+- *Submit_multiple_tiIndicators*: method=`post`, path=`/beta/security/tiIndicators/submitTiIndicators`
+
+**`AbuseIPDBAPI`** (customApi):
+- *BLACKLIST_Endpoint*: method=`get`, path=`/blacklist`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AbuseIPDB-BlacklistIpToThreatIntelligence/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-BlacklistIpToThreatIntelligence/readme.md)*

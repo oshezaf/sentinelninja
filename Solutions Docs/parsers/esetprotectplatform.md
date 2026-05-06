@@ -23,9 +23,9 @@
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`IntegrationTable_CL`](../tables/integrationtable-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`IntegrationTable_CL`](../tables/integrationtable-cl.md) |  | ? | ✓ | ? |
 
 ---
 

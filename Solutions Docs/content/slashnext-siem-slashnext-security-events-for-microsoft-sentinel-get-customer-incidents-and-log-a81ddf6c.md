@@ -22,6 +22,34 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlashNext_CL`](../tables/slashnext-cl.md) | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureblob` | Managed | 0 | 2 |
+| `azureloganalyticsdatacollector` | Managed | 0 | 3 |
+| `slashnext` | Managed | 0 | 2 |
+| `SlashNext-CMS` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureblob`** (managedApi):
+- *create_file*: method=`post`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files`
+- *Get_content*: method=`get`, path=`[replace(variables('storage_path'),'slashnextstorage',parameters('Storage Account Name'))]`
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Email_Text_Threat_Data*: method=`post`, path=`/api/logs`
+- *Send_Email_Threat_Data_*: method=`post`, path=`/api/logs`
+- *Send_Threat_Data*: method=`post`, path=`/api/logs`
+
+**`slashnext`** (managedApi):
+- *Events_details*: method=`post`, path=`/api/integration/v4/incidents/detail`
+- *incident_list_response*: method=`post`, path=`/api/integration/v4/incidents/list`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

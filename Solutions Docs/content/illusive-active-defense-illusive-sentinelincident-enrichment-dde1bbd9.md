@@ -16,6 +16,34 @@
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `http` | Built-in | 0 | 5 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_Illusive_Incident_details_to_Sentinel_Incident_comment*: method=`post`, path=`/Incidents/Comment`
+- *Update_Sentinel_Incident_with_Critical_severity_and_Closed_status*: method=`put`, path=`/Incidents`
+- *Update_Sentinel_Incident_with_Critical_severity_and_existing_tag*: method=`put`, path=`/Incidents`
+- *Update_Sentinel_Incident_with_Critical_severity_and_no_tag*: method=`put`, path=`/Incidents`
+- *Update_Sentinel_Incident_with_Non_Critical_severity_and_Closed_status*: method=`put`, path=`/Incidents`
+- *Update_Sentinel_Incident_with_Severity_and_Status*: method=`put`, path=`/Incidents`
+
+**`http`** (builtin):
+- *Get_Events_of_an_Illusive_Incident*: method=`GET`, uri=`@{parameters('Illusive Base URL')}/api/v1/incidents/events?incident_id=@{variables('Illusive Incident Id')}`
+- *Get_the_Triggering_Process_Information*: method=`GET`, uri=`@{parameters('Illusive Base URL')}/api/v1/forensics/triggering_process_info?event_id=@{max(variables('Event Id'))}`
+- *Generate_the_token_for_Azure_Sentinel_Incident*: method=`POST`, uri=`https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/token`
+- *Get_Illusive_Incident_Details*: method=`GET`, uri=`@{parameters('Illusive Base URL')}/api/v2/incidents/incident?incident_id=@{variables('Illusive Incident Id')}`
+- *Get_Sentinel_Incident_with_the_Title*: method=`GET`, uri=`https://management.azure.com@{parameters('ResourceGroup')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('Workspace_Name')}/providers/Microsoft.SecurityInsights/incidents?api-version=2020-01-01&$filter=properties/title eq 'Illusive Incident: @{variables('Illusive Incident Id')}'`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Illusive-SentinelIncident-Enrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Enrichment/readme.md)*

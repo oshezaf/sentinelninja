@@ -22,10 +22,10 @@ This query detects the use of the built-in "Dynamics 365 Example Application" to
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DataverseActivity`](../tables/dataverseactivity.md) |  | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"`<br>`ResultType == "0"` | ✓ | ✗ | ? |
 
 ---
 

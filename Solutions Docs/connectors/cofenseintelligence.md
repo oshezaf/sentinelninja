@@ -64,10 +64,10 @@ The [Cofense-Intelligence](https://cofense.com/product-services/phishing-intelli
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`Malware_Data_CL`](../tables/malware-data-cl.md) 🔶 | ? | ✓ | ? |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Malware_Data_CL`](../tables/malware-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | `SourceSystem startswith "Cofense Intelligence :"` | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

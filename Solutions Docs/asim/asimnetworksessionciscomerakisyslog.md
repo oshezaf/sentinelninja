@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Cisco Meraki logs ingested in 'Syslog' to 
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) | `Computer == "CiscoMeraki"` | ✓ | ✓ | ? |
 
 ## Parameters
 

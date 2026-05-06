@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"`<br>`Resource in ",{Resource:label}"`<br>`ResourceType == "AZUREFIREWALLS"` | ? | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule"`<br>`Resource in ",{Resource:label}"`<br>`ResourceType == "AZUREFIREWALLS"`<br>`msg_s !has ". Rule Collection:"`<br>`msg_s !has ". Url"`<br>`msg_s !has "DNAT"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Policy:"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "Rule Collection:"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Type="`<br>`msg_s !has "Url"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Rule Collection:"`<br>`msg_s has ". Url"`<br>`msg_s has "DNAT"`<br>`msg_s has "Policy:"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Rule Collection:"`<br>`msg_s has "Type="`<br>`msg_s has "Url"`<br>`msg_s has "Web Category:"` | ? | ✗ | ? |
 
 ---
 

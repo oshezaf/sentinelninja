@@ -14,6 +14,26 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [Tenable App](../solutions/tenable-app.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Playbooks/Playbooks/Tenable-LaunchScan/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `tenablevm` | Managed | 0 | 1 |
+| `TenableVulnerabilityManagement` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`tenablevm`** (managedApi):
+- *Launch_scan*: method=`post`, path=`/scans/@{encodeURIComponent(variables('scan_id'))}/launch`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/Tenable-LaunchScan/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Playbooks/Playbooks/Tenable-LaunchScan/readme.md)*

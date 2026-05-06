@@ -70,7 +70,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (8)
+## Content Items Using This Table (7)
 
 ### Analytic Rules (4)
 
@@ -79,8 +79,8 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Copilot - File Uploads Disabled](../content/microsoft-copilot-copilot-file-uploads-disabled-c3d4e5f6-a7b8-49c0-d1e2-f3a4b5c6d7e8-2b49efb6.md) |  |
-| [Copilot - Jailbreak Attempt Detected](../content/microsoft-copilot-copilot-jailbreak-attempt-detected-e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0-37101c05.md) |  |
-| [Copilot - Plugin Created by Non-Admin User](../content/microsoft-copilot-copilot-plugin-created-by-non-admin-user-a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6-534a022a.md) |  |
+| [Copilot - Jailbreak Attempt Detected](../content/microsoft-copilot-copilot-jailbreak-attempt-detected-e5f6a7b8-c9d0-41e2-f3a4-b5c6d7e8f9a0-37101c05.md) | `LLMEventData has "JailbreakDetected"` |
+| [Copilot - Plugin Created by Non-Admin User](../content/microsoft-copilot-copilot-plugin-created-by-non-admin-user-a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6-534a022a.md) | `ActorUserType != "Admin"` |
 | [Copilot - Plugin Tampering (Enable and Disable Within 5 Minutes)](../content/microsoft-copilot-copilot-plugin-tampering-enable-and-disable-within-5-minutes-d4e5f6a7-b8c9-40d1-e2f3-a4b5c6d7e8f9-e650fbfe.md) |  |
 
 ### Hunting Queries (2)
@@ -89,10 +89,10 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Copilot - Access From External IP Address](../content/microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.md) |  |
+| [Copilot - Access From External IP Address](../content/microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.md) | `SrcIpAddr !startswith "10."`<br>`SrcIpAddr !startswith "172."`<br>`SrcIpAddr !startswith "192.168"` |
 | [Copilot - Plugin Enabled After Being Disabled](../content/microsoft-copilot-copilot-plugin-enabled-after-being-disabled-b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7-7fec45a8.md) |  |
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Microsoft Copilot](../solutions/microsoft-copilot.md):**
 
@@ -100,11 +100,36 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [MicrosoftCopilotActivityMonitoring](../content/microsoft-copilot-microsoftcopilotactivitymonitoring-4219cdf5.md) |  |
 
-**GitHub Only:**
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftCopilotActivityMonitoring](../content/github-only-microsoftcopilotactivitymonitoring-5169439d.md) |  |
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `LLMEventData has "JailbreakDetected"` | - | 1 | - | - | **1** |
+| `ActorUserType != "Admin"` | - | 1 | - | - | **1** |
+| `SrcIpAddr !startswith "10."`<br>`SrcIpAddr !startswith "172."`<br>`SrcIpAddr !startswith "192.168"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
+
+### ActorUserType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= Admin` | - | 1 | - | - | **1** |
+
+### LLMEventData
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has JailbreakDetected` | - | 1 | - | - | **1** |
+
+### SrcIpAddr
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!startswith 10.` | - | 1 | - | - | **1** |
+| `!startswith 172.` | - | 1 | - | - | **1** |
+| `!startswith 192.168` | - | 1 | - | - | **1** |
 
 ---
 

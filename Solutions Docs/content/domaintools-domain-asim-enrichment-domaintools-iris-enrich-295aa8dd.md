@@ -14,6 +14,22 @@ Given a domain or set of domains associated with an alert return all Iris Enrich
 | **Solution** | [DomainTools](../solutions/domaintools.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-ASIM-DNS-Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`function`** (builtin):
+- *EnrichDomain*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/EnrichDomain')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DomainTools-ASIM-DNS-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-ASIM-DNS-Playbook/readme.md)*

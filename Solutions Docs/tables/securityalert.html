@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SecurityAlert &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="securityalert">SecurityAlert</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for SecurityAlert table in Azure Monitor Logs.</p>
 <table>
@@ -320,61 +320,59 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../connectors/azureactivedirectoryidentityprotection.html">Microsoft Entra ID Protection</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Azure Active Directory Identity Protection"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/azureadvancedthreatprotection.html">Microsoft Defender for Identity</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Azure Advanced Threat Protection"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/azuresecuritycenter.html">Subscription-based Microsoft Defender for Cloud (Legacy)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Azure Security Center"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/iot.html">Microsoft Defender for IoT</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Azure Security Center for IoT"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/microsoftcloudappsecurity.html">Microsoft Defender for Cloud Apps</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Microsoft Cloud App Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/microsoftdefenderadvancedthreatprotection.html">Microsoft Defender for Endpoint</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProviderName == "MDATP"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/microsoftdefenderforcloudtenantbased.html">Tenant-based Microsoft Defender for Cloud</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Azure Security Center"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"</code><br><code>ProviderName == "Microsoft 365 Defender"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/officeatp.html">Microsoft Defender for Office 365 (Preview)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProviderName == "OATP"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/officeirm.html">Microsoft 365 Insider Risk Management</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Microsoft 365 Insider Risk Management"</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (177)</h2>
-<h3 id="analytic-rules">Analytic Rules (56)</h3>
-<p><strong>In solution <a href="../solutions/azuredevopsauditing.html">AzureDevOpsAuditing</a>:</strong></p>
+<h2 id="content-items-using-this-table">Content Items Using This Table (119)</h2>
+<h3 id="analytic-rules">Analytic Rules (42)</h3>
+<p><strong>In solution <a href="../solutions/azuredevopsauditing.html">AzureDevOpsAuditing</a>:</strong> <code>ProviderName == "IPC"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/azuredevopsauditing-azure-devops-pipeline-modified-by-a-new-user-155e9134-d5ad-4a6f-88f3-99c220040b66-1f2f0f72.html">Azure DevOps Pipeline modified by a new user</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -404,63 +402,63 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-denial-of-service-microsoft-defender-for-iot-e068187a-01f5-4737-bc13-25db4027b7ea-d30730fd.html">Denial of Service (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName == "Suspicion of Denial Of Service Attack"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-excessive-login-attempts-microsoft-defender-for-iot-f5217b4c-3f1f-4d89-b4f3-5d7581da1c1c-69d7913b.html">Excessive Login Attempts (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName in "Excessive Login Attempts,Excessive Number of Sessions,Excessive SMB login attempts,Password Guessing Attempt Detected"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-firmware-updates-microsoft-defender-for-iot-7cad4b66-5e83-4756-8de4-f21315ab1e77-3b526082.html">Firmware Updates (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName has_any "Beckhoff Software Changed"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-high-bandwidth-in-the-network-microsoft-defender-for-iot-caa4665f-21fa-462d-bb31-92226e746c68-b6499206.html">High bandwidth in the network (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName in "ARP Spoofing,Abnormal Traffic Bandwidth,Abnormal Traffic Bandwidth Between Devices,ICMP Flooding"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-illegal-function-codes-for-ics-traffic-microsoft-defender-for-io-70be4a31-9d2b-433b-bdc7-da8928988069-a9b23f60.html">Illegal Function Codes for ICS traffic (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-internet-access-microsoft-defender-for-iot-9ff3b13b-287a-4ed0-8f6b-7e7b66cbbcbd-e6f35abc.html">Internet Access (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName has "Internet"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-multiple-scans-in-the-network-microsoft-defender-for-iot-493916d5-a094-4bfa-bdd1-d983a063ea3d-caac186a.html">Multiple scans in the network (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName has "Scan"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-no-traffic-on-sensor-detected-microsoft-defender-for-iot-208c3f5b-3ba2-49b5-9bca-c44e58cd5fd3-d7b2b3ed.html">No traffic on Sensor Detected (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName == "No Traffic Detected on Sensor Interface"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-plc-stop-command-microsoft-defender-for-iot-a7d3f642-15d8-4e83-99ee-83ca3352525d-8e009448.html">PLC Stop Command (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-plc-unsecure-key-state-microsoft-defender-for-iot-f9df500a-e2a4-4104-a517-dc1d85bb654f-78ea192f.html">PLC unsecure key state (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName has "PLC Operating Mode Changed"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-suspicious-malware-found-in-the-network-microsoft-defender-for-i-6fb1acd5-356d-40f7-9b97-78d993c6a183-8e31acda.html">Suspicious malware found in the network (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-unauthorized-dhcp-configuration-in-the-network-microsoft-defende-c52ec521-9188-4a9e-a4cd-34a3dfbc3d27-dbbcfa22.html">Unauthorized DHCP configuration in the network (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName == "Device Failed to Receive a Dynamic IP Address"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-unauthorized-plc-changes-microsoft-defender-for-iot-c2fb27c7-5f67-49c4-aaf3-d82934234a69-06e12e1b.html">Unauthorized PLC changes (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-unauthorized-device-in-the-network-microsoft-defender-for-iot-f4c71e55-6192-47ca-92e2-0856ae502a46-c1fb4a17.html">Unauthorized device in the network (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName in "Abnormal usage of MAC Addresses,Field Device Discovered Unexpectedly,New Asset Detected,New LLDP Device Configuration"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/iototthreatmonitoringwithdefenderforiot-unauthorized-remote-access-to-the-network-microsoft-defender-for-1ff4fa3d-150b-4c87-b733-26c289af0d49-1d4743ff.html">Unauthorized remote access to the network (Microsoft Defender for IoT)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName == "Unauthorized SSH Access"</code><br><code>ProviderName == "IoTSecurity"</code></td>
 </tr>
 </tbody>
 </table>
@@ -479,7 +477,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-suspicious-use-of-tds-endpoint-d875af10-6bb9-4d6a-a6e4-78439a98bf4b-79440ea8.html">Dataverse - Suspicious use of TDS endpoint</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Entities has "Type"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-over-email-de039242-47e0-43fa-84d7-b6be24305349-d5733918.html">Dataverse - Terminated employee exfiltration over email</a></td>
@@ -510,7 +508,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-av-detections-related-to-ukraine-threats-b6685757-3ed1-4b05-a5bd-2cacadc86c2a-396e651e.html">AV detections related to Ukraine threats</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProviderName == "MDATP"</code></td>
 </tr>
 </tbody>
 </table>
@@ -559,18 +557,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoftdefenderforendpoint.html">MicrosoftDefenderForEndpoint</a>:</strong> <code>ProviderName == "MDATP"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoftdefenderforendpoint-aqua-blizzard-av-hits-feb-2022-18dbdc22-b69f-4109-9e39-723d9465f45f-f3ce8313.html">Aqua Blizzard AV hits - Feb 2022</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -589,7 +585,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insider-risk-microsoft-purview-insider-risk-management-alert-obser-69660e65-0e5c-4700-8b99-5caf59786606-3217bb57.html">Insider Risk_Microsoft Purview Insider Risk Management Alert Observed</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Microsoft 365 Insider Risk Management"</code></td>
 </tr>
 </tbody>
 </table>
@@ -604,19 +600,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-user-activity-observed-in-g-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7-36b1a06d.html">Cross-Cloud Suspicious user activity observed in GCP Envourment</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName !in "Azure Sentinel"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.html">Successful AWS Console Login from IP Address Observed Conducting Password Spray</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName in "Multiple failed user log on attempts to an app,Password Spray"</code><br><code>ProductName in "Azure Active Directory Identity Protection,Microsoft Cloud App Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.html">Suspicious AWS console logins by credential access alerts</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertSeverity == "High"</code><br><code>ProductName in "Azure Active Directory,Azure Active Directory Identity Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender ATP,Microsoft Defender Advanced Threat Protection"</code><br><code>Tactics in "CredentialAccess,InitialAccess"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.html">User impersonation by Identity Protection alerts</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertSeverity == "High"</code><br><code>ProductName has "Azure Active Directory Identity Protection"</code></td>
 </tr>
 </tbody>
 </table>
@@ -696,101 +692,20 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-av-detections-related-to-dev-0530-actors-5f171045-88ab-4634-baae-a7b6509f483b-61a76c5a.html">AV detections related to Dev-0530 actors</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-av-detections-related-to-europium-actors-186970ee-5001-41c1-8c73-3178f75ce96a-1724290f.html">AV detections related to Europium actors</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-av-detections-related-to-hive-ransomware-4e5914a4-2ccd-429d-a845-fa597f0bd8c5-0f4ac020.html">AV detections related to Hive Ransomware</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&amp;-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.html">Detecting Impossible travel with mailbox permission tampering &amp; Privilege Escalation attempt</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-dev-0228-file-path-hashes-november-2021-3b443f22-9be9-4c35-ac70-a94757748439-59975a39.html">Dev-0228 File Path Hashes November 2021</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-dev-0228-file-path-hashes-november-2021-asim-version-29a29e5d-354e-4f5e-8321-8b39d25047bf-517d1ab6.html">Dev-0228 File Path Hashes November 2021 (ASIM Version)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-m365d-alerts-correlation-to-non-microsoft-network-device-network-activity-involved-in-779731f7-8ba0-4198-8524-5701b7defddc-15ad9d20.html">M365D Alerts Correlation to non-Microsoft Network device network activity involved in successful sign-in Activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mass-download-&amp;-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.html">Mass Download &amp; copy to USB device by single user</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-microsoft-defender-for-endpoint-mde-signatures-for-azure-synapse-pipelines-and-azure--a333d8bf-22a3-4c55-a1e9-5f0a135c0253-63a30dd5.html">Microsoft Defender for Endpoint (MDE) signatures for Azure Synapse pipelines and Azure Data Factory</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-phishing-link-click-observed-in-network-traffic-2fed0668-6d43-4c78-87e6-510f96f12145-72384c6d.html">Phishing link click observed in Network Traffic</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.html">Prestige ransomware IOCs Oct 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-solorigate-defender-detections-e70fa6e0-796a-4e85-9420-98b17b0bb749-ecd5908d.html">Solorigate Defender Detections</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.html">Workspace deletion activity from an infected device</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.html">Suspicious VM Instance Creation Activity Detected</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (31)</h3>
-<p><strong>In solution <a href="../solutions/azuredevopsauditing.html">AzureDevOpsAuditing</a>:</strong></p>
+<h3 id="hunting-queries">Hunting Queries (14)</h3>
+<p><strong>In solution <a href="../solutions/azuredevopsauditing.html">AzureDevOpsAuditing</a>:</strong> <code>ProviderName == "IPC"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/azuredevopsauditing-azure-devops-new-package-feed-created-3d1aa540-b4c7-4789-8c4c-4174b3c2371f-bf70da4e.html">Azure DevOps - New Package Feed Created</a></td>
-<td style="text-align: left;"></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/azuredevopsauditing-azure-devops-new-release-pipeline-created-2dfa9c23-1590-4589-995a-d1486be66028-f51a2902.html">Azure DevOps - New Release Pipeline Created</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -840,7 +755,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-nylon-typhoon-command-line-activity-november-2021-bb30abbc-9af6-4a37-9536-e9207e023989-bdd1efea.html">Nylon Typhoon Command Line Activity November 2021</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Microsoft Defender Advanced Threat Protection"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.html">Retrospective hunt for Forest Blizzard IP IOCs</a></td>
@@ -848,18 +763,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong> <code>ProviderName == "IPC"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.html">Dataverse - Activity after Microsoft Entra alerts</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -886,97 +799,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-alerts-on-host-61a6edc0-e71a-4084-8f3c-05a58e1b9012-01045ee3.html">Alerts On Host</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-alerts-related-to-file-11d808a1-32fe-4618-946a-cfd43523347a-23c48a6a.html">Alerts related to File</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-alerts-related-to-ip-0b520385-6a16-4e6f-ba89-c320d857695f-8206f0fa.html">Alerts related to IP</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.html">Web shell command alert enrichment</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.html">Web shell file alert enrichment</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-alerts-with-this-process-635cba46-c077-4959-a2d9-b7eb6fecb854-b270f153.html">Alerts With This Process</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-alerts-related-to-account-3a72ba65-00fa-4bbc-b246-be1ff3f73ce1-04f2c907.html">Alerts related to account</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-bitlocker-key-retrieval-8ea8b2af-f1ce-4464-964c-6763641cc4f6-15a3a6bb.html">BitLocker Key Retrieval</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dev-0056-command-line-activity-november-2021-asim-version-98fdd28d-9c13-431b-aca9-e6cfbb90a5a9-23489333.html">Dev-0056 Command Line Activity November 2021 (ASIM Version)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-6ad26286.html">Exchange Servers and Associated Security Alerts</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-integrate-purview-with-cloud-app-events-a1adce9c-5945-4a20-984e-d95b6071a791-32b130d4.html">Integrate Purview with Cloud App Events</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-430a32b6.html">Recon Activity with Interactive Logon Correlation</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sql-alert-correlation-with-commonsecuritylogs-and-auditlogs-dc5adcc9-70ab-4fba-8690-f57767e8ca02-cdd2aa29.html">SQL Alert Correlation with CommonSecurityLogs and AuditLogs</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-storage-alert-correlation-with-commonsecuritylogs-and-storagelogs-7098cae1-c632-4b40-b715-86d6b07720d7-78ea9953.html">Storage Alert Correlation with CommonSecurityLogs and StorageLogs</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&amp;-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.html">Storage Alerts Correlation with CommonSecurityLogs &amp; AuditLogs</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.html">Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (72)</h3>
+<h3 id="workbooks">Workbooks (45)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -992,63 +815,55 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azure-key-vault.html">Azure Key Vault</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/azure-key-vault.html">Azure Key Vault</a>:</strong> <code>AlertType startswith "KV_"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/azure-key-vault-azurekeyvaultworkbook-72b1692d.html">AzureKeyVaultWorkbook</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong> <code>AlertType startswith "SQL."</code><br><code>AlertType startswith "SQl."</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.html">Workbook-AzureSQLSecurity</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azure-kubernetes-service.html">Azure kubernetes Service</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/azure-kubernetes-service.html">Azure kubernetes Service</a>:</strong> <code>AlertType in "K8S_ClusterAdminBinding,K8S_MaliciousContainerExec,K8S_PrivilegedContainer,K8S_SensitiveMount"</code><br><code>AlertType startswith "K8S_"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/azure-kubernetes-service-akssecurity-51e44b54.html">AksSecurity</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>AlertName contains "auth"</code><br><code>AlertName contains "cert"</code><br><code>AlertName contains "cred"</code><br><code>AlertName contains "password"</code><br><code>AlertName contains "secret"</code><br><code>ProviderName == "IPC"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1067,33 +882,29 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong> <code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management,Microsoft Defender Advanced Threat Protection"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>ProductName == "Microsoft 365 Insider Risk Management"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1112,63 +923,55 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong> <code>AlertName has_any "Backup Failure"</code><br><code>AlertName has_any "Blocked"</code><br><code>AlertName has_any "Compliance Violation"</code><br><code>AlertName has_any "Credential Access"</code><br><code>AlertName has_any "Data Exfiltration"</code><br><code>AlertName has_any "Incident Reported"</code><br><code>AlertName has_any "Malware"</code><br><code>AlertName has_any "Policy Change"</code><br><code>AlertName has_any "Service Outage"</code><br><code>AlertName has_any "Suspicious Login"</code><br><code>AlertName has_any "TLPT"</code><br><code>AlertName has_any "Third-Party"</code><br><code>AlertName has_any "Threat Intelligence"</code><br><code>AlertName has_any "Unauthorized Access"</code><br><code>AlertName has_any "Vulnerability Exploitation"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/dora-compliance-doracompliance-21bcc12f.html">DORACompliance</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>AlertName contains "PII"</code><br><code>AlertName contains "confidential"</code><br><code>AlertName contains "intellectual"</code><br><code>AlertName contains "leak"</code><br><code>AlertName contains "sensitive"</code><br><code>AlertName contains "spill"</code><br><code>AlertName contains "steal"</code><br><code>AlertName contains "theft"</code><br><code>Tactics contains "exfil"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/extrahop.html">ExtraHop</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/extrahop.html">ExtraHop</a>:</strong> <code>ProductName == "ExtraHop"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/extrahop-extrahopdetectionsoverview-b10f683c.html">ExtraHopDetectionsOverview</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>AlertName contains "PII"</code><br><code>AlertName contains "confidential"</code><br><code>AlertName contains "intellectual"</code><br><code>AlertName contains "leak"</code><br><code>AlertName contains "sensitive"</code><br><code>AlertName contains "spill"</code><br><code>AlertName contains "steal"</code><br><code>AlertName contains "theft"</code><br><code>Tactics contains "exfil"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1300,48 +1103,42 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-for-cloud-apps.html">Microsoft Defender for Cloud Apps</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-for-cloud-apps.html">Microsoft Defender for Cloud Apps</a>:</strong> <code>AlertType has "DISCOVERY"</code><br><code>ProductName == "Microsoft Cloud App Security"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-for-cloud-apps-microsoftcloudappsecurity-0234df86.html">MicrosoftCloudAppSecurity</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>AlertName contains "PII"</code><br><code>AlertName contains "anomal"</code><br><code>AlertName contains "confidential"</code><br><code>AlertName contains "data"</code><br><code>AlertName contains "fusion"</code><br><code>AlertName contains "intellectual"</code><br><code>AlertName contains "leak"</code><br><code>AlertName contains "sensitive"</code><br><code>AlertName contains "spill"</code><br><code>AlertName contains "steal"</code><br><code>AlertName contains "theft"</code><br><code>ProductName == "Microsoft 365 Insider Risk Management"</code><br><code>ProviderName contains "anomal"</code><br><code>ProviderName contains "fusion"</code><br><code>Tactics contains "exfil"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong> <code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1379,18 +1176,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/sap-btp.html">SAP BTP</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/sap-btp.html">SAP BTP</a>:</strong> <code>Entities has "SAP BTP"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/sap-btp-sapbtpactivity-8f5b3a2b.html">SAPBTPActivity</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1405,7 +1200,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-analyticsefficiency-ba1ee629.html">AnalyticsEfficiency</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Azure Sentinel"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-anomalydata-44d72d0f.html">AnomalyData</a></td>
@@ -1417,7 +1212,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-incidentoverview-c120b199.html">IncidentOverview</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName == "Azure Sentinel"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-intsightsiocworkbook-5df8c818.html">IntsightsIOCWorkbook</a></td>
@@ -1433,7 +1228,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-sentinelcentral-27b23efc.html">SentinelCentral</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>DisplayName has "Incident"</code><br><code>DisplayName has "Investigation"</code><br><code>DisplayName has "Security operations efficiency"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1478,7 +1273,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/threatanalysis&amp;response-dynamicthreatmodeling&amp;response-54123c47.html">DynamicThreatModeling&amp;Response</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/threatanalysis&amp;response-threatanalysis&amp;response-56e66291.html">ThreatAnalysis&amp;Response</a></td>
@@ -1516,137 +1311,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>AlertName contains "mal"</code><br><code>Entities contains "Fail"</code><br><code>Entities contains "inbound"</code><br><code>Entities contains "outbound"</code><br><code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-asc-complianceandprotection-70588a9c.html">ASC-ComplianceandProtection</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-advancedworkbookconcepts-3495e806.html">AdvancedWorkbookConcepts</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-akssecurity-918bcecd.html">AksSecurity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-analyticsefficiency-b881d5ae.html">AnalyticsEfficiency</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-anomalydata-27a3f7c6.html">AnomalyData</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-azurekeyvaultworkbook-81485e59.html">AzureKeyVaultWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-azuresentinelsecurityalerts-60128b78.html">AzureSentinelSecurityAlerts</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dstimworkbook-062fa645.html">DSTIMWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-iot-alerts-e63618f3.html">IOT_Alerts</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-intsightsiocworkbook-88f7baed.html">IntsightsIOCWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-mitreattack-27c36827.html">MITREAttack</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftcloudappsecurity-2887ca06.html">MicrosoftCloudAppSecurity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-optimizationworkbook-7387c8bb.html">OptimizationWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-phishinganalysis-8b6323cf.html">PhishingAnalysis</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sentinel-central-2a36f7ae.html">Sentinel_Central</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-threatintelligence-250cda74.html">ThreatIntelligence</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-userentitybehavioranalytics-2c986bb5.html">UserEntityBehaviorAnalytics</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-visualizationdemo-12456b23.html">VisualizationDemo</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforidentity-215ba93a.html">microsoftdefenderforidentity</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1678,9 +1352,1273 @@
 <ul>
 <li><code>microsoft.securityinsights/securityinsights</code></li>
 </ul>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (43 criteria, 57 total references)</h2>
+<p>References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>ProviderName == "IPC"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Microsoft 365 Insider Risk Management"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProviderName == "MDATP"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Azure Security Center"</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName contains "PII"</code><br><code>AlertName contains "confidential"</code><br><code>AlertName contains "intellectual"</code><br><code>AlertName contains "leak"</code><br><code>AlertName contains "sensitive"</code><br><code>AlertName contains "spill"</code><br><code>AlertName contains "steal"</code><br><code>AlertName contains "theft"</code><br><code>Tactics contains "exfil"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Azure Sentinel"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Azure Security Center for IoT"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Microsoft Cloud App Security"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProviderName == "OATP"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"</code><br><code>ProviderName == "Microsoft 365 Defender"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Azure Advanced Threat Protection"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Azure Active Directory Identity Protection"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName == "Suspicion of Denial Of Service Attack"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName in "Excessive Login Attempts,Excessive Number of Sessions,Excessive SMB login attempts,Password Guessing Attempt Detected"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName has_any "Beckhoff Software Changed"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName in "ARP Spoofing,Abnormal Traffic Bandwidth,Abnormal Traffic Bandwidth Between Devices,ICMP Flooding"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName == "No Traffic Detected on Sensor Interface"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName has "PLC Operating Mode Changed"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName has "Internet"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName has "Scan"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName in "Abnormal usage of MAC Addresses,Field Device Discovered Unexpectedly,New Asset Detected,New LLDP Device Configuration"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName == "Device Failed to Receive a Dynamic IP Address"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName == "Unauthorized SSH Access"</code><br><code>ProviderName == "IoTSecurity"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Entities has "Type"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName !in "Azure Sentinel"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName in "Multiple failed user log on attempts to an app,Password Spray"</code><br><code>ProductName in "Azure Active Directory Identity Protection,Microsoft Cloud App Security"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertSeverity == "High"</code><br><code>ProductName in "Azure Active Directory,Azure Active Directory Identity Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender ATP,Microsoft Defender Advanced Threat Protection"</code><br><code>Tactics in "CredentialAccess,InitialAccess"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertSeverity == "High"</code><br><code>ProductName has "Azure Active Directory Identity Protection"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "Microsoft Defender Advanced Threat Protection"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertType startswith "KV_"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertType in "K8S_ClusterAdminBinding,K8S_MaliciousContainerExec,K8S_PrivilegedContainer,K8S_SensitiveMount"</code><br><code>AlertType startswith "K8S_"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertType startswith "SQL."</code><br><code>AlertType startswith "SQl."</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName contains "auth"</code><br><code>AlertName contains "cert"</code><br><code>AlertName contains "cred"</code><br><code>AlertName contains "password"</code><br><code>AlertName contains "secret"</code><br><code>ProviderName == "IPC"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management,Microsoft Defender Advanced Threat Protection"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName has_any "Backup Failure"</code><br><code>AlertName has_any "Blocked"</code><br><code>AlertName has_any "Compliance Violation"</code><br><code>AlertName has_any "Credential Access"</code><br><code>AlertName has_any "Data Exfiltration"</code><br><code>AlertName has_any "Incident Reported"</code><br><code>AlertName has_any "Malware"</code><br><code>AlertName has_any "Policy Change"</code><br><code>AlertName has_any "Service Outage"</code><br><code>AlertName has_any "Suspicious Login"</code><br><code>AlertName has_any "TLPT"</code><br><code>AlertName has_any "Third-Party"</code><br><code>AlertName has_any "Threat Intelligence"</code><br><code>AlertName has_any "Unauthorized Access"</code><br><code>AlertName has_any "Vulnerability Exploitation"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProductName == "ExtraHop"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertType has "DISCOVERY"</code><br><code>ProductName == "Microsoft Cloud App Security"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName contains "PII"</code><br><code>AlertName contains "anomal"</code><br><code>AlertName contains "confidential"</code><br><code>AlertName contains "data"</code><br><code>AlertName contains "fusion"</code><br><code>AlertName contains "intellectual"</code><br><code>AlertName contains "leak"</code><br><code>AlertName contains "sensitive"</code><br><code>AlertName contains "spill"</code><br><code>AlertName contains "steal"</code><br><code>AlertName contains "theft"</code><br><code>ProductName == "Microsoft 365 Insider Risk Management"</code><br><code>ProviderName contains "anomal"</code><br><code>ProviderName contains "fusion"</code><br><code>Tactics contains "exfil"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Entities has "SAP BTP"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DisplayName has "Incident"</code><br><code>DisplayName has "Investigation"</code><br><code>DisplayName has "Security operations efficiency"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AlertName contains "mal"</code><br><code>Entities contains "Fail"</code><br><code>Entities contains "inbound"</code><br><code>Entities contains "outbound"</code><br><code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>10</strong></td>
+<td style="text-align: center;"><strong>47</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>57</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alertname">AlertName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains PII</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains confidential</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains intellectual</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains leak</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains sensitive</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains spill</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains steal</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains theft</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Suspicion of Denial Of Service Attack</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Excessive Login Attempts</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Excessive Number of Sessions</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Excessive SMB login attempts</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Password Guessing Attempt Detected</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Beckhoff Software Changed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ARP Spoofing</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Abnormal Traffic Bandwidth</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Abnormal Traffic Bandwidth Between Devices</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ICMP Flooding</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>No Traffic Detected on Sensor Interface</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has PLC Operating Mode Changed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Internet</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Scan</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Abnormal usage of MAC Addresses</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Field Device Discovered Unexpectedly</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>New Asset Detected</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>New LLDP Device Configuration</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Device Failed to Receive a Dynamic IP Address</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Unauthorized SSH Access</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Multiple failed user log on attempts to an app</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Password Spray</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains auth</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains cert</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains cred</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains password</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains secret</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Backup Failure</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Blocked</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Compliance Violation</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Credential Access</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Data Exfiltration</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Incident Reported</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Malware</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Policy Change</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Service Outage</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Suspicious Login</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any TLPT</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Third-Party</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Threat Intelligence</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Unauthorized Access</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Vulnerability Exploitation</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains anomal</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains data</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains fusion</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains mal</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alertseverity">AlertSeverity</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>High</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="alerttype">AlertType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>startswith KV_</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>K8S_ClusterAdminBinding</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>K8S_MaliciousContainerExec</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>K8S_PrivilegedContainer</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>K8S_SensitiveMount</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith K8S_</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith SQL.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>startswith SQl.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has DISCOVERY</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="displayname">DisplayName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has Incident</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Investigation</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Security operations efficiency</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="entities">Entities</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has Type</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has SAP BTP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Fail</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains inbound</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains outbound</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="productname">ProductName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Microsoft 365 Insider Risk Management</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Azure Active Directory Identity Protection</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Azure Security Center for IoT</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Microsoft Cloud App Security</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Microsoft Defender Advanced Threat Protection</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Azure Security Center</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Azure Advanced Threat Protection</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Microsoft 365 Defender</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Azure Sentinel</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Office 365 Advanced Threat Protection</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= Azure Sentinel</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Azure Active Directory</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Microsoft Defender ATP</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Azure Active Directory Identity Protection</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ExtraHop</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="providername">ProviderName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>IoTSecurity</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>15</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>IPC</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>MDATP</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>OATP</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Microsoft 365 Defender</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains anomal</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains fusion</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tactics">Tactics</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains exfil</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CredentialAccess</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>InitialAccess</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

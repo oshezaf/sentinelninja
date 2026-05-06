@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Syslog &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="syslog">Syslog</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for Syslog table in Azure Monitor Logs.</p>
 <table>
@@ -163,7 +163,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (55)</h2>
+<h2 id="solutions">Solutions (54)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -209,7 +209,6 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/sophos-xg-firewall.html">Sophos XG Firewall</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/symantec-endpoint-protection.html">Symantec Endpoint Protection</a></li>
 <li><a href="../solutions/symantec-vip.html">Symantec VIP</a></li>
 <li><a href="../solutions/symantecproxysg.html">SymantecProxySG</a></li>
@@ -234,11 +233,11 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../connectors/barracudacloudfirewall.html">[Deprecated] Barracuda CloudGen Firewall</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName == "box_Firewall_Activity"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/blackberrycylanceprotect.html">[Deprecated] Blackberry CylancePROTECT</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage contains "AuditLog"</code><br><code>SyslogMessage contains "Device,"</code><br><code>SyslogMessage contains "DeviceControl"</code><br><code>SyslogMessage contains "ScriptControl"</code><br><code>SyslogMessage contains "Threat"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/ctera.html">CTERA Syslog</a></td>
@@ -246,11 +245,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/ciscoaci.html">[Deprecated] Cisco Application Centric Infrastructure</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage contains "SYSTEM_MSG"</code><br><code>SyslogMessage contains "%LOG_LOCAL"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/ciscoise.html">[Deprecated] Cisco Identity Services Engine</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName has_any "CISE,CSCO"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/ciscomeraki.html">[Deprecated] Cisco Meraki</a></td>
@@ -274,7 +273,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/ciscowsa.html">[Deprecated] Cisco Web Security Appliance</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName == "cisco_wsa"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/citrixadc.html">[Deprecated] Citrix ADC (former NetScaler)</a></td>
@@ -282,15 +281,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/digitalguardiandlp.html">[Deprecated] Digital Guardian Data Loss Prevention</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage contains "managed_device_id"</code><br><code>SyslogMessage contains "number_of_incidents"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/esetprotect.html">[Deprecated] ESET PROTECT</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName == "ERAServer"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/exabeam.html">[Deprecated] Exabeam Advanced Analytics</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName contains "Exabeam"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/forescout.html">Forescout</a></td>
@@ -298,31 +297,31 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/gitlab.html">[Deprecated] GitLab</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Facility == "local7"</code><br><code>ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"</code><br><code>SyslogMessage contains "HTTP"</code><br><code>SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/iscbind.html">[Deprecated] ISC Bind</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/infobloxnios.html">[Deprecated] Infoblox NIOS</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/ivantiuem.html">[Deprecated] Ivanti Unified Endpoint Management</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage has_all "Alert"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/junipersrx.html">[Deprecated] Juniper SRX</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName == "RT_FLOW"</code><br><code>ProcessName in "RT_IDS,sshd"</code><br><code>ProcessName !in "sshd,RT_IDS,RT_FLOW"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/mcafeensp.html">[Deprecated] McAfee Network Security Platform</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName == "SyslogAlertForwarderNSP"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/mcafeeepo.html">[Deprecated] McAfee ePolicy Orchestrator (ePO)</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName contains "EPOEvents"</code><br><code>SyslogMessage contains "&lt;EPOevent&gt;"</code><br><code>SyslogMessage contains "&lt;UpdateEvents&gt;"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/microsoftsysmonforlinux.html">[Deprecated] Microsoft Sysmon For Linux</a></td>
@@ -334,15 +333,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/openvpn.html">[Deprecated] OpenVPN Server</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName == "openvpn"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/oracledatabaseaudit.html">[Deprecated] Oracle Database Audit</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage contains "Oracle Unified Audit"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/pulseconnectsecure.html">[Deprecated] Pulse Connect Secure</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Facility == "local7"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/rsasecuridam.html">[Deprecated] RSA® SecurID (Authentication Manager)</a></td>
@@ -350,23 +349,23 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/sophosxgfirewall.html">[Deprecated] Sophos XG Firewall</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Facility == "local0"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/stealthwatch.html">[Deprecated] Cisco Secure Cloud Analytics</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SyslogMessage has "Stealthwatch"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/symantecendpointprotection.html">[Deprecated] Symantec Endpoint Protection</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName == "SymantecServer"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/symantecproxysg.html">[Deprecated] Symantec ProxySG</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Facility == "local0"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/symantecvip.html">[Deprecated] Symantec VIP</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Facility == "local5"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/syslog.html">Syslog via Legacy Agent</a></td>
@@ -378,7 +377,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/vmwareesxi.html">[Deprecated] VMware ESXi</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/watchguardfirebox.html">[Deprecated] WatchGuard Firebox</a></td>
@@ -387,8 +386,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (386)</h2>
-<h3 id="analytic-rules">Analytic Rules (241)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (356)</h2>
+<h3 id="analytic-rules">Analytic Rules (237)</h3>
 <p><strong>In solution <a href="../solutions/ctera.html">CTERA</a>:</strong></p>
 <table>
 <thead>
@@ -609,7 +608,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/gitlab-gitlab-external-user-added-to-gitlab-c1544d8f-cbbd-4e35-8d32-5b9312279833-0ecac57f.html">GitLab - External User Added to GitLab</a></td>
-<td style="text-align: left;"><code>Facility == "local7"</code><br><code>ProcessName == "GitLab-Audit-Logs"</code></td>
+<td style="text-align: left;"><code>Facility == "local7"</code><br><code>ProcessName == "GitLab-Application-Logs"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/gitlab-gitlab-local-auth-no-mfa-e0b45487-5c79-482d-8ac0-695de8c031af-0b436ca9.html">GitLab - Local Auth - No MFA</a></td>
@@ -889,7 +888,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/symantecproxysg.html">SymantecProxySG</a>:</strong> <code>Facility == "local0"</code></p>
+<p><strong>In solution <a href="../solutions/symantecproxysg.html">SymantecProxySG</a>:</strong> <code>Computer == "datasource"</code><br><code>Facility == "local0"</code></p>
 <table>
 <thead>
 <tr>
@@ -1400,34 +1399,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.html">Failed AzureAD logons but success logon to host</a></td>
-<td style="text-align: left;"><code>Facility contains "auth"</code><br><code>ProcessName != "sudo"</code><br><code>SyslogMessage has "Accepted"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.html">Failed host logons but success logon to AzureAD</a></td>
-<td style="text-align: left;"><code>Facility contains "auth"</code><br><code>ProcessName != "sudo"</code><br><code>SyslogMessage has "from"</code><br><code>SyslogMessage has_any "Accepted,Disconnected,Disconnecting,[preauth],disconnect"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.html">Multiple Password Reset by user</a></td>
-<td style="text-align: left;"><code>Facility in "auth,authpriv"</code><br><code>SyslogMessage matchesregex ".*password changed for.*"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-pulseconnectsecure-cve-2021-22893-possible-pulse-connect-secure-rce-vulnerability-att-d0c82b7f-40b2-4180-a4d6-7aa0541b7599-46e4de61.html">PulseConnectSecure - CVE-2021-22893 Possible Pulse Connect Secure RCE Vulnerability Attack</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (84)</h3>
+<h3 id="hunting-queries">Hunting Queries (82)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -1714,7 +1686,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/syslog-editing-linux-scheduled-tasks-through-crontab-6f0f1821-5981-408a-930b-8b2ca60e9e6c-5de4e857.html">Editing Linux scheduled tasks through Crontab</a></td>
-<td style="text-align: left;"><code>Facility == "cron"</code><br><code>ProcessName == "crontab"</code></td>
+<td style="text-align: left;"><code>Facility == "cron"</code><br><code>ProcessName == "crontab"</code><br><code>SeverityLevel == "info"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/syslog-linux-scheduled-task-aggregation-eb09da09-6f6c-4502-bf74-f7b9f1343539-ae42cc38.html">Linux scheduled task Aggregation</a></td>
@@ -1816,26 +1788,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-disabled-accounts-using-squid-proxy-959fe0f0-7ac0-467c-944f-5b8c6fdc9e72-ec4ae627.html">Disabled accounts using Squid proxy</a></td>
-<td style="text-align: left;"><code>ProcessName contains "squid"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.html">Tracking Password Changes</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (61)</h3>
+<h3 id="workbooks">Workbooks (37)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>Facility == "user"</code><br><code>SyslogMessage has "AUOMS_EXECVE"</code><br><code>SyslogMessage has "jndi"</code><br><code>SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"</code></p>
 <table>
 <thead>
@@ -2040,7 +1993,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage has "DHCPOFFER"</code></p>
+<p><strong>In solution <a href="../solutions/infoblox-nios.html">Infoblox NIOS</a>:</strong> <code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></p>
 <table>
 <thead>
 <tr>
@@ -2217,7 +2170,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/symantecproxysg.html">SymantecProxySG</a>:</strong> <code>Facility == "local0"</code></p>
+<p><strong>In solution <a href="../solutions/symantecproxysg.html">SymantecProxySG</a>:</strong> <code>Computer == "datasource"</code><br><code>Facility == "local0"</code></p>
 <table>
 <thead>
 <tr>
@@ -2305,115 +2258,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-barracuda-84e65401.html">Barracuda</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dcr-toolkit-37d84106.html">DCR-Toolkit</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-infobloxnios-714844bb.html">InfobloxNIOS</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-linuxmachines-637c38c6.html">LinuxMachines</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
-<td style="text-align: left;"><code>Facility == "user"</code><br><code>SyslogMessage has "AUOMS_EXECVE"</code><br><code>SyslogMessage has "jndi"</code><br><code>SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-pulseconnectsecure-cfc93618.html">PulseConnectSecure</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-securitystatus-c79b09ad.html">SecurityStatus</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sophosxgfirewall-ecabbd5c.html">SophosXGFirewall</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-symantecproxysg-6bc65392.html">SymantecProxySG</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-symantecvip-4200d062.html">SymantecVIP</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-syslog-bifurcation-4a1765ba.html">Syslog-Bifurcation</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-veeamdataplatformmonitoring-93349d26.html">VeeamDataPlatformMonitoring</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-veeamsecurityactivites-4f8fb3e5.html">VeeamSecurityActivites</a></td>
-<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-veeamsecurityactivities-c31c4544.html">VeeamSecurityActivities</a></td>
-<td style="text-align: left;"><code>SyslogMessage has "instanceId"</code><br><code>SyslogMessage has "predefined_alarm_id"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-watchguardfireboxworkbook-20acd14a.html">WatchGuardFireboxWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-syslogoverview-74ed5a6a.html">syslogoverview</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h2 id="parsers-using-this-table">Parsers Using This Table (96)</h2>
-<h3 id="asim-parsers">ASIM Parsers (21)</h3>
+<h2 id="parsers-using-this-table">Parsers Using This Table (97)</h2>
+<h3 id="asim-parsers">ASIM Parsers (22)</h3>
 <table>
 <thead>
 <tr>
@@ -2435,6 +2281,12 @@
 <td style="text-align: left;">AuditEvent</td>
 <td style="text-align: left;">Cisco Meraki</td>
 <td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../asim/asimauthenticationciscodnac.html">ASimAuthenticationCiscoDNAC</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;">Cisco DNAC</td>
+<td style="text-align: left;"><code>ProcessName == "DNAC"</code><br><code>SyslogMessage has "LOGIN_USER_EVENT"</code><br><code>SyslogMessage has "LOGOFF_USER_EVENT"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../asim/asimauthenticationciscoios.html">ASimAuthenticationCiscoIOS</a></td>
@@ -2512,7 +2364,7 @@
 <td style="text-align: left;"><a href="../asim/asimnetworksessionciscomerakisyslog.html">ASimNetworkSessionCiscoMerakiSyslog</a></td>
 <td style="text-align: left;">NetworkSession</td>
 <td style="text-align: left;">Cisco Meraki</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Computer == "CiscoMeraki"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../asim/asimnetworksessionlinuxsysmon.html">ASimNetworkSessionLinuxSysmon</a></td>
@@ -2548,7 +2400,7 @@
 <td style="text-align: left;"><a href="../asim/asimusermanagementlinuxauthpriv.html">ASimUserManagementLinuxAuthpriv</a></td>
 <td style="text-align: left;">UserManagement</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><code>Facility == "authpriv"</code><br><code>ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"</code></td>
+<td style="text-align: left;"><code>Computer == "LinuxAuthpriv"</code><br><code>Facility == "authpriv"</code><br><code>ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2870,7 +2722,7 @@
 <tr>
 <td style="text-align: left;"><a href="../parsers/symantecproxysg.html">SymantecProxySG</a></td>
 <td style="text-align: left;"><em>(Legacy)</em></td>
-<td style="text-align: left;"><code>Facility == "local0"</code></td>
+<td style="text-align: left;"><code>Computer == "datasource"</code><br><code>Facility == "local0"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../parsers/symantecproxysg.html">SymantecProxySG</a></td>
@@ -2955,8 +2807,8 @@
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 <li><code>microsoft.hybridcontainerservice/provisionedclusters</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (93 criteria, 417 total references)</h2>
-<p>References by type: 5 connectors, 335 content items, 18 ASIM parsers, 59 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (94 criteria, 439 total references)</h2>
+<p>References by type: 29 connectors, 331 content items, 20 ASIM parsers, 59 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2978,52 +2830,52 @@
 <td style="text-align: center;"><strong>115</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ProcessName has_any "CISE,CSCO"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">21</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>ProcessName contains "EPOEvents"</code><br><code>SyslogMessage contains "&lt;EPOevent&gt;"</code><br><code>SyslogMessage contains "&lt;UpdateEvents&gt;"</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">25</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
+<td style="text-align: center;"><strong>27</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">25</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
+<td style="text-align: center;"><strong>27</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName has_any "CISE,CSCO"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>27</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>SyslogMessage contains "Oracle Unified Audit"</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">22</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>24</strong></td>
+<td style="text-align: center;"><strong>25</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>ProcessName == "cisco_wsa"</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">22</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>23</strong></td>
+<td style="text-align: center;"><strong>24</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>SyslogMessage contains "managed_device_id"</code><br><code>SyslogMessage contains "number_of_incidents"</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">21</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;"><strong>23</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>SyslogMessage has "illumio_pce/agent"</code></td>
@@ -3035,26 +2887,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>Facility == "local0"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;">3</td>
-<td style="text-align: center;"><strong>9</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Facility == "local7"</code><br><code>ProcessName == "GitLab-Audit-Logs"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>7</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ProcessName contains "squid"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
@@ -3066,6 +2902,22 @@
 <td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName == "ERAServer"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>ProcessName == "gw-audit"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">6</td>
@@ -3074,19 +2926,51 @@
 <td style="text-align: center;"><strong>6</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ProcessName == "ERAServer"</code></td>
+<td style="text-align: left;"><code>Facility == "local7"</code><br><code>ProcessName == "GitLab-Audit-Logs"</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName contains "squid"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName == "SymantecServer"</code></td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Facility == "local5"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Facility == "local7"</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName == "box_Firewall_Activity"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
@@ -3098,15 +2982,7 @@
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ProcessName == "SymantecServer"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Facility == "local5"</code></td>
+<td style="text-align: left;"><code>Computer == "datasource"</code><br><code>Facility == "local0"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
@@ -3122,6 +2998,14 @@
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ProcessName contains "Exabeam"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>Facility != "cron"</code></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
@@ -3130,17 +3014,9 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage !has "response:"</code><br><code>SyslogMessage has_all "client"</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;"><code>SyslogMessage contains "AuditLog"</code><br><code>SyslogMessage contains "Device,"</code><br><code>SyslogMessage contains "DeviceControl"</code><br><code>SyslogMessage contains "ScriptControl"</code><br><code>SyslogMessage contains "Threat"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ProcessName == "box_Firewall_Activity"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;"><strong>3</strong></td>
@@ -3148,7 +3024,55 @@
 <tr>
 <td style="text-align: left;"><code>Facility == "local7"</code><br><code>ProcessName == "GitLab-Application-Logs"</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName == "SyslogAlertForwarderNSP"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SyslogMessage has_all "Alert"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName == "RT_FLOW"</code><br><code>ProcessName in "RT_IDS,sshd"</code><br><code>ProcessName !in "sshd,RT_IDS,RT_FLOW"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SyslogMessage contains "SYSTEM_MSG"</code><br><code>SyslogMessage contains "%LOG_LOCAL"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName == "openvpn"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>SyslogMessage has "Stealthwatch"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>2</strong></td>
@@ -3162,31 +3086,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage has "DHCPOFFER"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>SyslogMessage contains "AuditLog"</code><br><code>SyslogMessage contains "Device,"</code><br><code>SyslogMessage contains "DeviceControl"</code><br><code>SyslogMessage contains "ScriptControl"</code><br><code>SyslogMessage contains "Threat"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ProcessName contains "Exabeam"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ProcessName == "sysmon"</code></td>
+<td style="text-align: left;"><code>Facility == "local7"</code><br><code>ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"</code><br><code>SyslogMessage contains "HTTP"</code><br><code>SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3195,6 +3095,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>ProcessName == "gw-audit"</code><br><code>SyslogMessage contains "gw-audit[-]:"</code><br><code>SyslogMessage contains "portal portal[-]:"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ProcessName == "sysmon"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3290,30 +3198,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Facility contains "auth"</code><br><code>ProcessName != "sudo"</code><br><code>SyslogMessage has "Accepted"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Facility contains "auth"</code><br><code>ProcessName != "sudo"</code><br><code>SyslogMessage has "from"</code><br><code>SyslogMessage has_any "Accepted,Disconnected,Disconnecting,[preauth],disconnect"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Facility in "auth,authpriv"</code><br><code>SyslogMessage matchesregex ".*password changed for.*"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>SyslogMessage has "AUOMS_EXECVE"</code><br><code>SyslogMessage has "jndi"</code><br><code>SyslogMessage has_any "corba,dns,iiop,ldap,nds,nis,rmi"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3338,7 +3222,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Facility == "cron"</code><br><code>ProcessName == "crontab"</code></td>
+<td style="text-align: left;"><code>Facility == "cron"</code><br><code>ProcessName == "crontab"</code><br><code>SeverityLevel == "info"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3418,6 +3302,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>ProcessName == "DNAC"</code><br><code>SyslogMessage has "LOGIN_USER_EVENT"</code><br><code>SyslogMessage has "LOGOFF_USER_EVENT"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>SyslogMessage has "%SEC_LOGIN-4-LOGIN_FAILED"</code><br><code>SyslogMessage has "%SEC_LOGIN-5-LOGIN_SUCCESS"</code><br><code>SyslogMessage has "%SYS-6-LOGOUT"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3482,6 +3374,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>Computer == "CiscoMeraki"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>SyslogMessage !has "3000-0151"</code><br><code>SyslogMessage !has "icmp"</code><br><code>SyslogMessage !has "igmp"</code><br><code>SyslogMessage !has "msg="</code><br><code>SyslogMessage has "3000-0151"</code><br><code>SyslogMessage has "icmp"</code><br><code>SyslogMessage has "igmp"</code><br><code>SyslogMessage has_any "msg_id="</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3490,7 +3390,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Facility == "authpriv"</code><br><code>ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"</code></td>
+<td style="text-align: left;"><code>Computer == "LinuxAuthpriv"</code><br><code>Facility == "authpriv"</code><br><code>ProcessName in "gpasswd,groupadd,groupdel,groupmod,useradd,userdel,usermod"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3506,23 +3406,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage contains "SYSTEM_MSG"</code><br><code>SyslogMessage contains "%LOG_LOCAL"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>SyslogMessage has "%FW-6-LOG_SUMMARY:"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>SyslogMessage has "Stealthwatch"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3610,6 +3494,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>SyslogMessage has "DHCPOFFER"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>SyslogMessage has "Option"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3674,38 +3566,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SyslogMessage has_all "Alert"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ProcessName == "RT_FLOW"</code><br><code>ProcessName in "RT_IDS,sshd"</code><br><code>ProcessName !in "sshd,RT_IDS,RT_FLOW"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ProcessName == "SyslogAlertForwarderNSP"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ProcessName == "openvpn"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>SyslogMessage has "predefined_alarm_id"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -3715,11 +3575,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>5</strong></td>
-<td style="text-align: center;"><strong>335</strong></td>
-<td style="text-align: center;"><strong>18</strong></td>
+<td style="text-align: center;"><strong>29</strong></td>
+<td style="text-align: center;"><strong>331</strong></td>
+<td style="text-align: center;"><strong>20</strong></td>
 <td style="text-align: center;"><strong>59</strong></td>
-<td style="text-align: center;"><strong>417</strong></td>
+<td style="text-align: center;"><strong>439</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3740,26 +3600,35 @@
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>has_any hostd-probe</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">26</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>27</strong></td>
+<td style="text-align: center;"><strong>28</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>has_any vmkwarning</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">26</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>27</strong></td>
+<td style="text-align: center;"><strong>28</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>has_any vpxd-main</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">26</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>28</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>contains EPOEvents</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">25</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>27</strong></td>
@@ -3767,47 +3636,38 @@
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>has_any CISE</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">21</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
+<td style="text-align: center;"><strong>27</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>has_any CSCO</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">21</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>contains EPOEvents</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">25</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
+<td style="text-align: center;"><strong>27</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>cisco_wsa</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">22</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>23</strong></td>
+<td style="text-align: center;"><strong>24</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>local0</code></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;">6</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
-<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;"><strong>11</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
@@ -3830,56 +3690,92 @@
 <tr>
 <td style="text-align: left;"><code>local7</code></td>
 <td style="text-align: left;"><code>GitLab-Audit-Logs</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">6</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>7</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>contains squid</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><code>ERAServer</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>contains squid</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>SymantecServer</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>local5</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>local7</code></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>box_Firewall_Activity</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>local7</code></td>
+<td style="text-align: left;"><code>GitLab-Application-Logs</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><code>SymantecServer</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;"><code>sshd</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>local5</code></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;"><code>contains Exabeam</code></td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>!= cron</code></td>
@@ -3891,39 +3787,84 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>authpriv</code></td>
 <td style="text-align: left;"></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>sshd</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>box_Firewall_Activity</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;"><code>SyslogAlertForwarderNSP</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>local7</code></td>
-<td style="text-align: left;"><code>GitLab-Application-Logs</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;"><code>GitLab-Access-Logs</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>RT_FLOW</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>RT_IDS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>!= sshd</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>!= RT_IDS</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>!= RT_FLOW</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>openvpn</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>authpriv</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
@@ -3933,33 +3874,6 @@
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains auth</code></td>
-<td style="text-align: left;"><code>!= sudo</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>auth</code></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>contains Exabeam</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
@@ -3995,6 +3909,24 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>auth</code></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>DNAC</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
@@ -4151,76 +4083,66 @@
 <td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
+</tbody>
+</table>
+<h3 id="computer">Computer</h3>
+<table>
+<thead>
 <tr>
-<td style="text-align: left;"><code>local7</code></td>
-<td style="text-align: left;"><code>GitLab-Access-Logs</code></td>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>datasource</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CiscoMeraki</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>RT_FLOW</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;"><code>LinuxAuthpriv</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
+</tbody>
+</table>
+<h3 id="severitylevel">SeverityLevel</h3>
+<table>
+<thead>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>RT_IDS</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>!= sshd</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
+<td style="text-align: left;"><code>info</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>!= RT_IDS</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>!= RT_FLOW</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>SyslogAlertForwarderNSP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"><code>openvpn</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
@@ -4248,43 +4170,43 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains &lt;EPOevent&gt;</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">25</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
+<td style="text-align: center;"><strong>27</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains &lt;UpdateEvents&gt;</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">25</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>26</strong></td>
+<td style="text-align: center;"><strong>27</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains Oracle Unified Audit</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">22</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>24</strong></td>
+<td style="text-align: center;"><strong>25</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains managed_device_id</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">21</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;"><strong>23</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains number_of_incidents</code></td>
-<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">21</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;"><strong>23</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>has AUOMS_EXECVE</code></td>
@@ -4303,6 +4225,22 @@
 <td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>!has response:</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all client</code></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>7</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>has purity.alert</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
@@ -4311,28 +4249,132 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!has response:</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_all client</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>has_all &lt;Provider Name=</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains AuditLog</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Device,</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains DeviceControl</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains ScriptControl</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Threat</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all Alert</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains HTTP</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any DELETE</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any GET</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any PATCH</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any POST</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any PUT</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains SYSTEM_MSG</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains %LOG_LOCAL</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Stealthwatch</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>has bytes read</code></td>
@@ -4439,14 +4481,6 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has DHCPOFFER</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>has_any change</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -4484,46 +4518,6 @@
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains AuditLog</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains Device,</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains DeviceControl</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains ScriptControl</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains Threat</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
@@ -4720,62 +4714,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>contains Reverse path forwarding check fail</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has Accepted</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has from</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Accepted</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Disconnected</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any Disconnecting</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any [preauth]</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any disconnect</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -4995,6 +4933,22 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has LOGIN_USER_EVENT</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has LOGOFF_USER_EVENT</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
@@ -5295,79 +5249,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains SYSTEM_MSG</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains %LOG_LOCAL</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>has %FW-6-LOG_SUMMARY:</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has Stealthwatch</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains HTTP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any DELETE</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any GET</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any PATCH</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any POST</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>has_any PUT</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -5535,6 +5417,14 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>has DHCPOFFER</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>has Option</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -5590,19 +5480,11 @@
 <td style="text-align: center;">1</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
-<tr>
-<td style="text-align: left;"><code>has_all Alert</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

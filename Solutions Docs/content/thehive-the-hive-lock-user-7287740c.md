@@ -14,6 +14,31 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [TheHive](../solutions/thehive.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-LockUser/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `TheHive` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_5*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_6*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+
+**`TheHive`** (customApi):
+- *Lock_user_by_id*: method=`patch`, path=`/api/v1/user/@{encodeURIComponent(items('Lock_users_by_UserId'))}`
+- *Lock_user_by_login*: method=`patch`, path=`/api/v1/user/@{encodeURIComponent(items('Lock_users_by_UserLogin'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [TheHive-LockUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-LockUser/readme.md)*

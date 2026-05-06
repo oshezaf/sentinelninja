@@ -14,6 +14,25 @@ This playbook disables public access AWS S3 bucket. It is triggered by an incide
 | **Solution** | [AWS_IAM](../solutions/aws-iam.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWS-DisableS3BucketPublicAccess/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`function`** (builtin):
+- *disabls3bucketpublicaccess-DisableS3BucketPublicAccess*: method=`GET`, functionId=`[concat(variables('AWSIAMFunctionAppID'), '/functions/DisableS3BucketPublicAccess')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/AWS-DisableS3BucketPublicAccess/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS_IAM/Playbooks/Playbooks/AWS-DisableS3BucketPublicAccess/readme.md)*

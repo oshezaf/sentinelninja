@@ -22,9 +22,9 @@ This query visualises total emails with Phish detections over time summarizing t
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"`<br>`ThreatTypes has "Phish"` | ✓ | ✗ | ? |
 
 ---
 

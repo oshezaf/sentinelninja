@@ -14,6 +14,21 @@
 | **Solution** | [Recorded Future](../solutions/recorded-future.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Deprecated/RecordedFuture-ImportToSentinel/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `microsoftgraphsecurity` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftgraphsecurity`** (managedApi):
+- *Submit_multiple_tiIndicators*: method=`post`, path=`/beta/security/tiIndicators/submitTiIndicators`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Deprecated/RecordedFuture-ImportToSentinel/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Deprecated/RecordedFuture-ImportToSentinel/readme.md)*

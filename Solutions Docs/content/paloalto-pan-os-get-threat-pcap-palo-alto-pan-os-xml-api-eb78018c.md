@@ -14,6 +14,36 @@ This playbook allows us to get a threat PCAP for a given PCAP ID.
 | **Solution** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **5** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureblob` | Managed | 1 | 1 |
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 3 |
+| `paloaltoconnector` | Managed | 0 | 1 |
+| `PAN-OSXmlApiCustomConnector` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureblob`** (managedApi):
+- *Create_blob_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent(parameters('Storage Name')))}/files`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`paloaltoconnector`** (managedApi):
+- *Query_Palo_Alto_XML_API*: method=`get`, path=`/api/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md)*

@@ -21,9 +21,9 @@ Detects the use of ProcDump to dump credentials from LSASS memory by DoppelPayme
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine contains "-ma"`<br>`ProcessCommandLine has "-accepteula"`<br>`ProcessCommandLine has "lsass"` | ✓ | ✗ | ? |
 
 ---
 

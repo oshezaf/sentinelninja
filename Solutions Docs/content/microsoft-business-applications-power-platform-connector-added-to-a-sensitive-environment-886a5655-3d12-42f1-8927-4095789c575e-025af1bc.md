@@ -25,9 +25,9 @@ Identifies occurrences of new API connector creations within Power Platform, spe
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | `EventOriginalType == "PutConnection"` | ✓ | ✗ | ? |
 
 ---
 

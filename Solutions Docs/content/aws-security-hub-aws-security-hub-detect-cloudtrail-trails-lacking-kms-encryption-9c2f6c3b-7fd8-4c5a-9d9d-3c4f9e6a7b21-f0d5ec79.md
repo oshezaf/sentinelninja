@@ -25,9 +25,9 @@ This query detects AWS CloudTrail trails that are not configured to use server-s
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | `ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` | ✓ | ✓ | ? |
 
 ---
 

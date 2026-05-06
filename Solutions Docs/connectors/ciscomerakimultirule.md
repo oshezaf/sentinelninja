@@ -38,11 +38,11 @@ The [Cisco Meraki](https://aka.ms/ciscomeraki) connector allows you to easily co
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | ✓ | ✓ | ? |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) | ✓ | ✓ | ? |
-| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | ✓ | ✓ | ? |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimWebSessionLogs`](../tables/asimwebsessionlogs.md) |  | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

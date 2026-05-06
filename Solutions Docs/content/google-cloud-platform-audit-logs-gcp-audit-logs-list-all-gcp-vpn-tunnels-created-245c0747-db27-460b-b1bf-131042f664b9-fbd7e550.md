@@ -22,9 +22,9 @@ Lists all Google Cloud VPN tunnel creation operations to identify network connec
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.insert"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` | ✓ | ✓ | ? |
 
 ---
 

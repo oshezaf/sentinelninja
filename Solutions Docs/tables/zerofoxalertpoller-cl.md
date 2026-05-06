@@ -75,18 +75,20 @@
 | TimeGenerated | datetime |
 | timestamp_t | datetime |
 
-## Solutions (1)
+## Solutions (2)
 
 This table is used by the following solutions:
 
 - [ZeroFox](../solutions/zerofox.md)
+- [ZeroFoxAlerts](../solutions/zerofoxalerts.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [ZeroFox Alerts](../connectors/zerofoxalertsdefinition.md) |  |
 | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) |  |
 
 ---

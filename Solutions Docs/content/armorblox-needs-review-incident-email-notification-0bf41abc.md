@@ -14,6 +14,22 @@ This playbook will send an email notification when a new incident is created in 
 | **Solution** | [Armorblox](../solutions/armorblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox/Playbooks/Needs-Review-Incident-Email-Notification/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `office365` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`office365`** (managedApi):
+- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Needs-Review-Incident-Email-Notification/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armorblox/Playbooks/Needs-Review-Incident-Email-Notification/readme.md)*

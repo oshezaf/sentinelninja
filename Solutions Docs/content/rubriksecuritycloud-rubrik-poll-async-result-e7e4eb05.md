@@ -14,6 +14,32 @@ This playbook is used by other playbooks to poll for results from some of the as
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikPollAsyncResult/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault_1` | Managed | 0 | 2 |
+| `RubrikCustomConnector` | Custom | 1 | 1 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault_1`** (managedApi):
+- *Get_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
+- *Get_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`RubrikCustomConnector`** (customApi):
+- *Authentication*: method=`post`, path=`/api/client_token`
+
+**`http`** (builtin):
+- *GPS_Async_Result*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_Async_Results*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikPollAsyncResult/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikPollAsyncResult/readme.md)*

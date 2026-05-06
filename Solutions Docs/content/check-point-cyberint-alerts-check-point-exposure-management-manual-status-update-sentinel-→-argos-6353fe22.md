@@ -14,6 +14,26 @@ On-demand playbook that reads the current Sentinel incident status and pushes it
 | **Solution** | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_ManualStatusUpdate/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_sync_comment*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_tags*: method=`put`, path=`/Incidents`
+
+**`http`** (builtin):
+- *Update_Argos_Alert_Status*: method=`PUT`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Sync/CPEM_ManualStatusUpdate/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_ManualStatusUpdate/readme.md)*

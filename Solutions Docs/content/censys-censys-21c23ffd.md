@@ -16,20 +16,20 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CensysRelatedInfrastructure_CL`](../tables/censysrelatedinfrastructure-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Certificate_IOC_CL`](../tables/censys-certificate-ioc-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Host_History_Data_CL`](../tables/censys-host-history-data-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Host_IOC_CL`](../tables/censys-host-ioc-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Host_Services_CL`](../tables/censys-host-services-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Web_Property_Endpoint_CL`](../tables/censys-web-property-endpoint-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Web_Property_IOC_CL`](../tables/censys-web-property-ioc-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Web_Property_Threat_CL`](../tables/censys-web-property-threat-cl.md) 🔶 | ? | ✓ | ? |
-| [`Censys_Web_Property_Vuln_CL`](../tables/censys-web-property-vuln-cl.md) 🔶 | ? | ✓ | ? |
-| [`Incident_Enrich_Data_CL`](../tables/incident-enrich-data-cl.md) 🔶 | ? | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CensysRelatedInfrastructure_CL`](../tables/censysrelatedinfrastructure-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Certificate_IOC_CL`](../tables/censys-certificate-ioc-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Host_History_Data_CL`](../tables/censys-host-history-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Host_IOC_CL`](../tables/censys-host-ioc-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Host_Services_CL`](../tables/censys-host-services-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Web_Property_Endpoint_CL`](../tables/censys-web-property-endpoint-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Web_Property_IOC_CL`](../tables/censys-web-property-ioc-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Web_Property_Threat_CL`](../tables/censys-web-property-threat-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Censys_Web_Property_Vuln_CL`](../tables/censys-web-property-vuln-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Incident_Enrich_Data_CL`](../tables/incident-enrich-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
 
 ---
 

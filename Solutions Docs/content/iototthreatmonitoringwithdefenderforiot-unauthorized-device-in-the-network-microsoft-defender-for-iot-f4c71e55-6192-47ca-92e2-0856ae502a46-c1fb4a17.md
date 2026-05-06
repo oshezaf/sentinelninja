@@ -25,9 +25,9 @@ This alert leverages Defender for IoT to detect a new device indicating a legiti
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName in "Abnormal usage of MAC Addresses,Field Device Discovered Unexpectedly,New Asset Detected,New LLDP Device Configuration"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ? |
 
 ---
 

@@ -18,27 +18,41 @@ author: Bridewell Consulting - Robert Kitching
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityAlert`](../tables/securityalert.md) | `SystemAlertId == "@{items("` | ✓ | ✗ | ? |
 
-## Associated Connectors
+## Logic App Connectors
 
-The following connectors provide data for this content item:
+This playbook uses **4** Logic App connectors / built-in actions:
 
-| Connector | Solution |
-|:----------|:---------|
-| [AzureActiveDirectoryIdentityProtection](../connectors/azureactivedirectoryidentityprotection.md) | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
-| [AzureAdvancedThreatProtection](../connectors/azureadvancedthreatprotection.md) | [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md) |
-| [AzureSecurityCenter](../connectors/azuresecuritycenter.md) | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
-| [IoT](../connectors/iot.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [MicrosoftCloudAppSecurity](../connectors/microsoftcloudappsecurity.md) | [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
-| [MicrosoftDefenderAdvancedThreatProtection](../connectors/microsoftdefenderadvancedthreatprotection.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
-| [MicrosoftDefenderForCloudTenantBased](../connectors/microsoftdefenderforcloudtenantbased.md) | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
-| [OfficeATP](../connectors/officeatp.md) | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [OfficeIRM](../connectors/officeirm.md) | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuremonitorlogs_1` | Managed | 0 | 2 |
+| `wdatp` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 5 |
 
-**Solutions:** [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md), [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md), [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md), [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md), [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md), [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md), [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md), [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md)
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_2*: method=`post`, path=`/queryData`
+
+**`azuremonitorlogs_1`** (managedApi):
+- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_3*: method=`post`, path=`/queryData`
+
+**`wdatp`** (managedApi):
+- *Alerts_-_Update_alert*: method=`patch`, path=`/api/alerts/@{encodeURIComponent('body(''Run_query_and_list_results_2'')[''value''][0][''VendorOriginalId'']')}`
+
+**`http`** (builtin):
+- *Get_incident_relation_data*: method=`GET`, uri=`https://management.azure.com/subscriptions/@{variables('Settings')['subscriptionId']}/resourcegroups/@{variables('Settings')['resourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{variables('Settings')['logWorkspace']}/providers/Microsoft.SecurityInsights/incidents/@{items('For_each')['name']}/relations`
+- *HTTP*: method=`POST`, uri=`https://management.azure.com/subscriptions/@{body('Run_query_and_list_results')['value'][0]['ascsubid']}/resourcegroups/@{body('Run_query_and_list_results')['value'][0]['ascrgname']}/providers/Microsoft.Security/locations/@{body('Run_query_and_list_results')['value'][0]['asclocation']}/alerts/@{body('Run_query_and_list_results')['value'][0]['ascalertname']}/dismiss`
+- *Resolve_MCAS_Alert*: method=`POST`, uri=`[concat(parameters('McasBaseUrl'),'api/v1/alerts/resolve/')]`
+- *Dismiss_MCAS_Alert*: method=`POST`, uri=`[concat(parameters('McasBaseUrl'),'api/v1/alerts/','@{body(''Run_query_and_list_results_3'')[''value''][0][''alertId'']}','/dismiss/')]`
+- *Get_incidents*: method=`GET`, uri=`@variables('requestUrl')`
+
+</details>
 
 ---
 

@@ -18,9 +18,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct in "Alert,Audit"`<br>`DeviceVendor in "FORCEPOINT,Forcepoint"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity in "File_Malware-Blocked,URL_Category-Accounting"`<br>`DeviceAction == "Discard"`<br>`DeviceAction != "Discard"`<br>`DeviceAction != "Terminate"`<br>`DeviceFacility == "Inspection"`<br>`DeviceProduct in "Alert,Audit"`<br>`DeviceVendor in "FORCEPOINT,Forcepoint"`<br>`Message contains "Login succeeded"`<br>`Message contains "Logout"`<br>`Message contains "created"`<br>`Message contains "modified"` | ✓ | ✓ | ? |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ? | ✗ | ? |
-| [`Perf`](../tables/perf.md) |  | ✓ | ✗ | ? |
+| [`Perf`](../tables/perf.md) | `CounterName contains "Processor Time"` | ✓ | ✗ | ? |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ? |
 
 ---

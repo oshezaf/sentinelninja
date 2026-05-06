@@ -21,9 +21,9 @@ This query searches for alerts related to suspected ransomware and Cobalt Strike
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AlertInfo`](../tables/alertinfo.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AlertInfo`](../tables/alertinfo.md) | `Title in "An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected"` | ✓ | ✗ | ? |
 
 ---
 

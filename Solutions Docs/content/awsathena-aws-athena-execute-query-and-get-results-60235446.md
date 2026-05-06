@@ -14,6 +14,28 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [AWSAthena](../solutions/awsathena.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWSAthena/Playbooks/AWSAthenaPlaybooks/AWSAthena-GetQueryResults/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `function` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`function`** (builtin):
+- *GetQueryResults*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryResults')]`
+- *GetQueryExecution*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryExecution')]`
+- *StartQueryExecution*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/StartQueryExecution')]`
+- *GetQueryExecution_again*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryExecution')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AWSAthenaPlaybooks/AWSAthena-GetQueryResults/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWSAthena/Playbooks/AWSAthenaPlaybooks/AWSAthena-GetQueryResults/readme.md)*

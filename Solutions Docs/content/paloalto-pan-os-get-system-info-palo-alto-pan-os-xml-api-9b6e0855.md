@@ -14,6 +14,26 @@ This playbook allows us to get System Info of a Palo Alto device for a Microsoft
 | **Solution** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetSystemInfo/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `paloaltoconnector` | Managed | 0 | 1 |
+| `PAN-OSXmlApiCustomConnector` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`paloaltoconnector`** (managedApi):
+- *Query_Palo_Alto_XML_API*: method=`get`, path=`/api/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [PaloAltoPlaybooks/PaloAlto-PAN-OS-GetSystemInfo/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetSystemInfo/readme.md)*

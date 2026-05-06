@@ -14,6 +14,26 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [Cisco ISE](../solutions/cisco-ise.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-SuspendGuestUser/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `CiscoISE` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+
+**`CiscoISE`** (customApi):
+- *Suspend_guest_user_by_name*: method=`put`, path=`/ers/config/guestuser/suspend/name/@{encodeURIComponent(item()['Name'])}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoISE-SuspendGuestUser/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE/Playbooks/CiscoISE-SuspendGuestUser/readme.md)*

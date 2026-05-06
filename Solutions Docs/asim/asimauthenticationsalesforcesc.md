@@ -39,6 +39,16 @@ This parser reads from the following tables:
 |:-----|:-----|:--------|
 | `disabled` | bool | False |
 
+## Associated Connectors
+
+The following connectors provide data for this parser:
+
+| Connector | Solution |
+|:----------|:---------|
+| [SalesforceServiceCloud](../connectors/salesforceservicecloud.md) | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) |
+
+**Solutions:** [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md)
+
 ## References
 
 - [ASIM Authentication Schema](https://aka.ms/ASimAuthenticationDoc)

@@ -14,6 +14,41 @@ This playbook interacts with Rubrik Security Cloud to (1) optionally preserve ev
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikRansomwareDiscoveryAndFileRecovery/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **6** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault_1` | Managed | 0 | 2 |
+| `teams` | Managed | 1 | 0 |
+| `RubrikCustomConnector` | Custom | 1 | 1 |
+| `http` | Built-in | 0 | 4 |
+| `workflow` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault_1`** (managedApi):
+- *Get_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-clientId')}/value`
+- *Get_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`RubrikCustomConnector`** (customApi):
+- *Authentication*: method=`post`, path=`/api/client_token`
+
+**`http`** (builtin):
+- *Create_Snapshot_for_evidence*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Recover_snapshot_files*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *List_all_Snapshots*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Fetch_Yara_rule(s)_from_file_URLs*: method=`GET`, uri=`@body('Collect_IOC_Scan_Data')?['data']?['ioc Yara rule file URL ']`
+
+**`workflow`** (builtin):
+- *RubrikPollAsyncResult*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
+- *RubrikPollAsyncResult_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
+- *RubrikIOCScan*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikRansomwareDiscoveryAndFileRecovery/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikRansomwareDiscoveryAndFileRecovery/readme.md)*

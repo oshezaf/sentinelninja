@@ -14,6 +14,27 @@ This playbook uses the RiskIQ PassiveTotal connector to automatically enrich inc
 | **Solution** | [RiskIQ](../solutions/riskiq.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ/Playbooks/RiskIQ-Data-PassiveDns-Domain/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `riskiqpassivetotal` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`riskiqpassivetotal`** (managedApi):
+- *Get_passive_DNS*: method=`get`, path=`/dns/passive`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RiskIQ-Data-PassiveDns-Domain/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ/Playbooks/RiskIQ-Data-PassiveDns-Domain/readme.md)*

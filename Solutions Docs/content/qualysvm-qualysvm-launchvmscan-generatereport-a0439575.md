@@ -14,6 +14,43 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [QualysVM](../solutions/qualysvm.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks/QualysVM-LaunchVMScan-GenerateReport/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureblob` | Managed | 1 | 2 |
+| `azuresentinel` | Managed | 1 | 2 |
+| `QualysCustomConnector` | Custom | 1 | 13 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureblob`** (managedApi):
+- *Create_SAS_URI_by_path_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent('AccountNameFromSettings')}/CreateSharedLinkByPath`
+- *Create_blob_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files`
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`QualysCustomConnector`** (customApi):
+- *Check_Scan_Status*: method=`post`, path=`/api/2.0/fo/scan/`
+- *Launch_Scan*: method=`post`, path=`/api/2.0/fo/scan/`
+- *Check_Scan_Status_Again*: method=`post`, path=`/api/2.0/fo/scan/`
+- *Create_Option_Profile_for_Scan*: method=`post`, path=`/api/2.0/fo/subscription/option_profile/vm/`
+- *List_Scanner_Appliances*: method=`get`, path=`/api/2.0/fo/appliance/`
+- *Create_Scan_Report_Template*: method=`post`, path=`/api/2.0/fo/report/template/scan/`
+- *Delete_Option_Profile*: method=`post`, path=`/api/2.0/fo/subscription/option_profile/vm/`
+- *Delete_Scan_Report_Template*: method=`post`, path=`/api/2.0/fo/report/template/scan/`
+- *Download_Scan_Report*: method=`post`, path=`/api/2.0/fo/report/`
+- *Get_Asset_Details_By_IP*: method=`post`, path=`/api/2.0/fo/asset/host/`
+- *Get_Report_Status*: method=`post`, path=`/api/2.0/fo/report/`
+- *Launch_VM_Scan_Report*: method=`post`, path=`/api/2.0/fo/report/`
+- *Get_Report_Status_Again*: method=`post`, path=`/api/2.0/fo/report/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [QualysVMPlaybooks/QualysVM-LaunchVMScan-GenerateReport/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Playbooks/QualysVMPlaybooks/QualysVM-LaunchVMScan-GenerateReport/readme.md)*

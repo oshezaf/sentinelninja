@@ -16,6 +16,29 @@ author: Henry Stern, Farsight Security, Inc.
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `farsightdnsdb` | Managed | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`farsightdnsdb`** (managedApi):
+- *RData_Lookup_with_RRType*: method=`get`, path=`/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each_Unique_IPS'))}/ANY`
+- *RRSet_Lookup_with_RRType_AAAA_Records*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('AAAA')}`
+- *RRSet_Lookup_with_RRType_A_Records*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('A')}`
+- *RRSet_Lookup_with_RRType_CNAME*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('CNAME')}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DNSDB_Co_Located_Hosts/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_Hosts/readme.md)*

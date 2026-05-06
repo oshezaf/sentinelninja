@@ -15,7 +15,7 @@
 | **Used in Solutions** | [SeraphicSecurity](../solutions/seraphicsecurity.md) |
 | **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
 | **Connector Definition Files** | [SeraphicSecurityConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity/Data%20Connectors/SeraphicSecurityConnector.json) |
-| **CCF Capabilities** | `APIKey` |
+| **CCF Capabilities** | `APIKey`, `Paging` |
 
 The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
 
@@ -35,7 +35,7 @@ This connector ingests data into the following tables:
 - **Workspace** (Workspace): read and write permissions are required.
 
 **Custom Permissions:**
-- **Seraphic API key**: API key for Microsoft Sentinel connected to your Seraphic Web Security tenant. To get this API key for your tenant - [read this documentation](https://constellation.seraphicsecurity.com/integrations/microsoft_sentinel/Guidance/MicrosoftSentinel-IntegrationGuide-230822.pdf).
+- **Seraphic API key**: API key for Microsoft Sentinel connected to your Seraphic Web Security tenant. To get this API key for your tenant - visit the Integrations page in your Seraphic Console.
 
 ## Setup Instructions
 

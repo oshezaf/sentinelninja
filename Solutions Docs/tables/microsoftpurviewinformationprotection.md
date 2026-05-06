@@ -129,21 +129,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (4)
+## Content Items Using This Table (3)
 
-### Workbooks (4)
+### Workbooks (3)
 
-**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `LabelName !in "General"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
+| Workbook |
+|:-------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |
 
-**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `LabelName !in "General"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
+| Workbook |
+|:-------------|
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
 
 **In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
@@ -151,11 +151,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
-**GitHub Only:**
+## Selection Criteria Summary (1 criteria, 2 total references)
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [MicrosoftPurviewInformationProtection](../content/github-only-microsoftpurviewinformationprotection-87c9682e.md) |  |
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `LabelName !in "General"` | - | 2 | - | - | **2** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
+
+### LabelName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= General` | - | 2 | - | - | **2** |
 
 ---
 

@@ -14,6 +14,33 @@ This playbook checks if malicious device client is blocked by Cisco Meraki netwo
 | **Solution** | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-Device-Client/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `MerakiConnector` | Custom | 1 | 7 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+
+**`MerakiConnector`** (customApi):
+- *Get_Network_Group_Policy*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/groupPolicies/@{encodeURIComponent(body('Get_Network_Client_Policy')?['groupPolicyId'])}`
+- *Update_Network_Client_Policy*: method=`put`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients/@{encodeURIComponent(outputs('Compose_network_client')?['id'])}/policy`
+- *Get_Network_Client_Policy*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients/@{encodeURIComponent(outputs('Compose_network_client')?['id'])}/policy`
+- *Get_Network_Clients*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients`
+- *Get_Network_Group_Policies*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/groupPolicies`
+- *Get_Networks*: method=`get`, path=`/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks`
+- *Get_Organizations*: method=`get`, path=`/organizations`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Block-Device-Client/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/Block-Device-Client/readme.md)*

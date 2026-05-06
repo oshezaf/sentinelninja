@@ -14,6 +14,27 @@ This playbook uses the Farsight DNSDB connector to automatically enrich Domain's
 | **Solution** | [DomainTools](../solutions/domaintools.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Hosts/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `farsightdnsdb` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`farsightdnsdb`** (managedApi):
+- *RData_Lookup_with_RRType*: method=`get`, path=`/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each')?['Address'])}/ANY`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DomainTools-DNSDB-Historical-Hosts/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Historical-Hosts/readme.md)*

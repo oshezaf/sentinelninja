@@ -14,6 +14,32 @@ This playbook will enrich a Microsoft Sentinel Incident with information about n
 | **Solution** | [ReversingLabs](../solutions/reversinglabs.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs/Playbooks/SpectraIntelligence-EnrichNetworkEntities/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `reversinglabstitaniu` | Managed | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_1*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+
+**`reversinglabstitaniu`** (managedApi):
+- *Get_the_URL_report*: method=`post`, path=`/api/networking/url/v1/report/query/json`
+- *Get_the_domain_report*: method=`post`, path=`/api/networking/domain/report/v1/query/json`
+- *Get_the_IP_address_report*: method=`post`, path=`/api/networking/ip/report/v1/query/json`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SpectraIntelligence-EnrichNetworkEntities/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ReversingLabs/Playbooks/SpectraIntelligence-EnrichNetworkEntities/readme.md)*

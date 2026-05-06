@@ -22,6 +22,29 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data_To_Log_Table*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_Query_For_Caching_Mechanism*: method=`post`, path=`/queryData`
+
+**`http`** (builtin):
+- *HTTP_Request_To_Fetch_Threat_Data*: method=`GET`, uri=`@{variables('base_url')}/tide/api/data/threats`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox TIDE Lookup/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20TIDE%20Lookup/readme.md)*

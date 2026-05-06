@@ -25,9 +25,9 @@ Identifies when a new eligible or active privileged role is assigned to a user. 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `AADOperationType in "Assign,AssignEligibleRole,CreateRequestGrantedRole,CreateRequestPermanentEligibleRole,CreateRequestPermanentGrantedRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` | ✓ | ✗ | ? |
 
 ---
 

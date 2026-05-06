@@ -14,6 +14,39 @@ When a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [GoogleCloudPlatformIAM](../solutions/googlecloudplatformiam.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Playbooks/GCP-DisableServiceAccountFromTeams/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 12 |
+| `gcpiamapi` | Managed | 0 | 2 |
+| `teams` | Managed | 1 | 0 |
+| `GoogleCloudPlatformIAM` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Update_incident_2*: method=`put`, path=`/Incidents`
+- *Update_incident_3*: method=`put`, path=`/Incidents`
+- *Update_incident_4*: method=`put`, path=`/Incidents`
+- *Update_incident_5*: method=`put`, path=`/Incidents`
+- *Update_incident_6*: method=`put`, path=`/Incidents`
+- *Update_incident_7*: method=`put`, path=`/Incidents`
+- *Update_incident_8*: method=`put`, path=`/Incidents`
+- *Update_incident_9*: method=`put`, path=`/Incidents`
+- *Update_incident_10*: method=`put`, path=`/Incidents`
+- *Update_incident_11*: method=`put`, path=`/Incidents`
+
+**`gcpiamapi`** (managedApi):
+- *iam.projects.serviceAccounts.disable*: method=`post`, path=`/v1/projects/@{encodeURIComponent(outputs('parse_project_id'))}/serviceAccounts/@{encodeURIComponent(items('For_each_service_account'))}:disable`
+- *iam.projects.serviceAccounts.delete*: method=`delete`, path=`/v1/projects/@{encodeURIComponent(outputs('parse_project_id'))}/serviceAccounts/@{encodeURIComponent(items('For_each_service_account'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [GCP-DisableServiceAccountFromTeams/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformIAM/Playbooks/GCP-DisableServiceAccountFromTeams/readme.md)*

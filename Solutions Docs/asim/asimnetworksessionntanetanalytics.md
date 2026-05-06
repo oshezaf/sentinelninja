@@ -29,9 +29,9 @@ This ASIM parser supports normalizing the Traffic Analytics records for Flowlog 
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`NTANetAnalytics`](../tables/ntanetanalytics.md) | `CompletedFlows != "0"`<br>`SubType == "FlowLog"` | ✓ | ✗ | ? |
 
 ## Parameters
 

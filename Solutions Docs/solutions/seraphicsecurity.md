@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://seraphicsecurity.com](https://seraphicsecurity.com) |
 | **Categories** | domains |
-| **Version** | 2.0.0 |
-| **Author** | Seraphic Security - support@seraphicsecurity.con |
+| **Version** | 3.0.0 |
+| **Author** | Seraphic Security - support@seraphicsecurity.com |
 | **First Published** | 2023-07-31 |
-| **Last Updated** | 2023-07-31 |
+| **Last Updated** | 2026-04-09 |
 | **Solution Folder** | [SeraphicSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/seraphicalgorithmsltd1616061090462.seraphic-security-sentinel) · Popularity: ⚪ Very Low (0%) |
 
@@ -41,9 +41,10 @@ This solution uses **1 table(s)**:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYY)** | **Change History**                         |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                         |
 |-------------|-------------------------------|--------------------------------------------|
-| 2.0.0       | 17-11-2023                    |Initial Solution Release                             |
+| 3.0.0       | 09-04-2026                    | Upgraded to v3 content schema: contentPackages pattern, polling v3.0 with health check and LinkHeader paging, IsConnectedQuery connectivity, API version 2023-02-01, fixed author email typo |
+| 2.0.0       | 17-11-2023                    | Initial Solution Release                   |
 
 ---
 

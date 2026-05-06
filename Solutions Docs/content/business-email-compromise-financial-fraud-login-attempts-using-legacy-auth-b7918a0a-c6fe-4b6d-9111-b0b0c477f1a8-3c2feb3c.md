@@ -22,11 +22,11 @@ This query identifies use of legacy authentication in Microsoft Entra ID sign-in
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"` | ✓ | ✗ | ? |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
 
 ---
 

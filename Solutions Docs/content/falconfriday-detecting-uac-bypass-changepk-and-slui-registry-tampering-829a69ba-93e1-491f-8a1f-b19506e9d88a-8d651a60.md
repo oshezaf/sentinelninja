@@ -25,9 +25,9 @@ This query identifies setting a registry key under HKCU, launching slui.exe and 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "changepk.exe"`<br>`InitiatingProcessParentFileName == "slui.exe"`<br>`ProcessIntegrityLevel == "High"` | ✓ | ✗ | ? |
 
 ---
 

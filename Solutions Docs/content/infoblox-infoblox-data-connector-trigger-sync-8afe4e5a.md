@@ -14,6 +14,23 @@ Playbook to sync timer trigger of all Infoblox data connectors.
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Data%20Connector%20Trigger%20Sync/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Sync_timer_trigger_request*: method=`POST`, uri=`https://@{variables('Manage')}.azure.com/subscriptions/@{variables('Subscription Id')}/resourceGroups/@{variables('Resource Group Name')}/providers/Microsoft.Web/sites/@{items('For_each_app')?['name']}/syncfunctiontriggers?api-version=2022-03-01`
+- *Get_Auth_token*: method=`POST`, uri=`https://login.@{variables('MicrosoftOnline')}.com/@{variables('Tenant Id')}/oauth2/v2.0/token`
+- *Get_function_app_list*: method=`GET`, uri=`https://@{variables('Manage')}.azure.com/subscriptions/@{variables('Subscription Id')}/resourceGroups/@{variables('Resource Group Name')}/providers/Microsoft.Web/sites?api-version=2022-03-01`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox Data Connector Trigger Sync/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20Data%20Connector%20Trigger%20Sync/readme.md)*

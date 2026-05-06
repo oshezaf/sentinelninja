@@ -14,6 +14,26 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Playbooks/Playbooks/Rapid7InsightVM-EnrichIncidentWithAssetInfo/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `Rapid7InsightVMCloud` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`Rapid7InsightVMCloud`** (customApi):
+- *Search_Assets*: method=`post`, path=`/v4/integration/assets`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/Rapid7InsightVM-EnrichIncidentWithAssetInfo/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Playbooks/Playbooks/Rapid7InsightVM-EnrichIncidentWithAssetInfo/readme.md)*

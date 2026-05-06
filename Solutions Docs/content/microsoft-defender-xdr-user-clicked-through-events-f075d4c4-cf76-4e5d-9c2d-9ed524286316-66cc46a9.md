@@ -22,9 +22,9 @@ This query helps reviewing malicious clicks where user was allowed to proceed th
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`UrlClickEvents`](../tables/urlclickevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`UrlClickEvents`](../tables/urlclickevents.md) | `ThreatTypes has "Phish"` | ✓ | ✗ | ? |
 
 ---
 

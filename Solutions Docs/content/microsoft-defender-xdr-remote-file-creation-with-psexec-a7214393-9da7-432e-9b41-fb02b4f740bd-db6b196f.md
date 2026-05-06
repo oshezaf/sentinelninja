@@ -21,9 +21,9 @@ This query detects remote file creation events that might indicate an active att
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath has "\\\\"`<br>`InitiatingProcessCommandLine !has ".ps1"`<br>`InitiatingProcessCommandLine has ".bat"`<br>`InitiatingProcessCommandLine has "accepteula"` | ✓ | ✗ | ? |
 
 ---
 

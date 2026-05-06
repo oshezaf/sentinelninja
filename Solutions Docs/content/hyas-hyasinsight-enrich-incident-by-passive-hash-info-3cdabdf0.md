@@ -14,6 +14,27 @@ This playbook enriches hosts asscociated with an incident with By Passive Hash i
 | **Solution** | [HYAS](../solutions/hyas.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS/Playbooks/HYAS-Insight-Domain-Passive-Hash-Data/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `hyasinsight` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`hyasinsight`** (managedApi):
+- *Get_Passive_Hash_Information*: method=`get`, path=`/passivehash`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [HYAS-Insight-Domain-Passive-Hash-Data/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS/Playbooks/HYAS-Insight-Domain-Passive-Hash-Data/readme.md)*

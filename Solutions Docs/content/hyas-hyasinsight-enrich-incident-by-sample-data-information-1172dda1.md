@@ -14,6 +14,27 @@ This playbook enriches ip addresses asscociated with an incident with by sample 
 | **Solution** | [HYAS](../solutions/hyas.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS/Playbooks/HYAS-Insight-IP-Malware-Sample-Data/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `hyasinsight` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+
+**`hyasinsight`** (managedApi):
+- *Get_Malware_Sample_Record_Information*: method=`get`, path=`/sample`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [HYAS-Insight-IP-Malware-Sample-Data/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS/Playbooks/HYAS-Insight-IP-Malware-Sample-Data/readme.md)*

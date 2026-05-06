@@ -14,6 +14,37 @@ This Playbook Provides the automation on blocking the suspicious/malicious IP an
 | **Solution** | [ThreatXCloud](../solutions/threatxcloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud/Playbooks/ThreatXPlaybooks/ThreatX-BlockIP-URL/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+| `keyvault` | Managed | 0 | 1 |
+| `ThreatX-WAFCustomConnector` | Custom | 1 | 6 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Threatx_Key_name'))}/value`
+
+**`ThreatX-WAFCustomConnector`** (customApi):
+- *Get-Post_Blacklist_Blocklist_Whitelist_3*: method=`post`, path=`/tx_api/v1/lists`
+- *List_or_Create_Customer_Rule_2*: method=`post`, path=`/tx_api/v1/rules`
+- *Get-Post_Blacklist_Blocklist_Whitelist*: method=`post`, path=`/tx_api/v1/lists`
+- *Get-Post_Blacklist_Blocklist_Whitelist_2*: method=`post`, path=`/tx_api/v1/lists`
+- *List_or_Create_Customer_Rule*: method=`post`, path=`/tx_api/v1/rules`
+- *Login_Generate_Token*: method=`post`, path=`/tx_api/v1/login`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ThreatXPlaybooks/ThreatX-BlockIP-URL/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud/Playbooks/ThreatXPlaybooks/ThreatX-BlockIP-URL/readme.md)*

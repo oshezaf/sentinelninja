@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertType has "DISCOVERY"`<br>`ProductName == "Microsoft Cloud App Security"` | ✓ | ✗ | ? |
 
 ---
 

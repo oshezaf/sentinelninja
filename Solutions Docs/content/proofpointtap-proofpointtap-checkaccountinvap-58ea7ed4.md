@@ -14,6 +14,28 @@ Once a new sentinel incident is created, this playbook gets triggered and perfor
 | **Solution** | [ProofPointTap](../solutions/proofpointtap.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Playbooks/ProofpointTAP-CheckAccountInVAP/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `proofpointtapapi` | Managed | 0 | 1 |
+| `proofpointtap` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Change_incident_severity_to_high*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+
+**`proofpointtapapi`** (managedApi):
+- *Get_Very_Attacked_People*: method=`get`, path=`/v2/people/vap`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ProofpointTAP-CheckAccountInVAP/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Playbooks/ProofpointTAP-CheckAccountInVAP/readme.md)*

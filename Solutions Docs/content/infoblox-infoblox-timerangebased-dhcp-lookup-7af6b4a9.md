@@ -14,6 +14,33 @@ The playbook will retrieve IP entities from an incident, search for related DHCP
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20TimeRangeBased%20DHCP%20Lookup/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 9 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_Query_And_List_DHCP_Lookup_Data_For_Provided_Time_Range*: method=`post`, path=`/queryDataV2`
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_Comment_To_Incident_For_Empty_IP_Address_Found*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment__For_Empty_Results_Found_For_IP*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2)*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_To_Incident_For_Remaining_Records*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_To_Incident_For_Limit_Exceeded*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_For_DHCP_Record_In_HTML_Table_Format_*: method=`post`, path=`/Incidents/Comment`
+- *Add_Comment_That_Limit_Has_Been_Exceeded*: method=`post`, path=`/Incidents/Comment`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox TimeRangeBased DHCP Lookup/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20TimeRangeBased%20DHCP%20Lookup/readme.md)*

@@ -14,6 +14,22 @@ This playbook will resolve or report false positive to unresolved anomaly and up
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikUpdateAnomalyStatus/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `teams` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Resolve_Anomaly*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikUpdateAnomalyStatus/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikUpdateAnomalyStatus/readme.md)*

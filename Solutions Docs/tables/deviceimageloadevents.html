@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DeviceImageLoadEvents &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="deviceimageloadevents">DeviceImageLoadEvents</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>DLL loading events</p>
 <table>
@@ -316,12 +316,11 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (3)</h2>
+<h2 id="solutions">Solutions (2)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/falconfriday.html">FalconFriday</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
@@ -340,8 +339,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (29)</h2>
-<h3 id="analytic-rules">Analytic Rules (8)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (10)</h2>
+<h3 id="analytic-rules">Analytic Rules (5)</h3>
 <p><strong>In solution <a href="../solutions/falconfriday.html">FalconFriday</a>:</strong></p>
 <table>
 <thead>
@@ -357,7 +356,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.html">Hijack Execution Flow - DLL Side-Loading</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -384,30 +383,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.html">Europium - Hash and IP IOCs - September 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.html">Mercury - Domain, Hash and IP IOCs - August 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.html">Prestige ransomware IOCs Oct 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (18)</h3>
+<h3 id="hunting-queries">Hunting Queries (4)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
@@ -427,82 +403,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-suspicious-image-load-related-to-icedid-853bacff-45cf-42f2-b2a6-6727fcf183ef-560dbc47.html">Suspicious Image Load related to IcedId</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>InitiatingProcessFileName in "regsvr32.exe,rundll32.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-suspicious-spoolsv-child-process-084a6349-b3d6-4528-91e4-4de5d52424e5-f5f0ac34.html">Suspicious Spoolsv Child Process</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>InitiatingProcessFileName == "spoolsv.exe"</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.html">Abuse.ch Recent Threat Feed</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.html">Abuse.ch Recent Threat Feed (1)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-powershell-v2-downgrade-70c41ff4-b95a-43a3-8fb5-794ed69be100-f267821b.html">Detect PowerShell v2 Downgrade</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.html">Rare-process-as-a-service</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-suspicious-image-load-related-to-icedid-b64c8a59-94ad-4659-b95e-36238312da5c-ab8f04b9.html">Suspicious Image Load related to IcedId</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-suspicious-spoolsv-child-process-ece67992-9699-44f5-a5c5-f7e5c2d1d5d4-6e87ead2.html">Suspicious Spoolsv Child Process</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-zip-doc-creation-of-jpg-payload-file-b760519d-392b-4baf-a2d6-087dc302de1c-669b967f.html">Zip-Doc - Creation of JPG Payload File</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-da57d533.html">check-for-shadowhammer-activity-implant</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-fireeye-red-team-tools-hashs-[nobelium]-3e9ac786-134c-4917-99bd-4a7ce01049ab-cc118b80.html">fireeye-red-team-tools-HASHs [Nobelium]</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-locate-dll-loaded-in-memory[nobelium]-bfea1fee-aa17-467d-b285-932d5a45ca53-34f871d8.html">locate-dll-loaded-in-memory[Nobelium]</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.html">rare_sch_task_with_activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.html">regsvr32-rundll32-abnormal-image-loads</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileRenamed"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-regsvr32-rundll32-image-loads-abnormal-extension-f24f6403-cba0-4f3c-9f88-28782b9ea39a-555df071.html">regsvr32-rundll32-image-loads-abnormal-extension</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (3)</h3>
+<h3 id="workbooks">Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
@@ -514,25 +423,6 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -552,7 +442,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
+<td style="text-align: left;"><code>InitiatingProcessFileName in "regsvr32.exe,rundll32.exe"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -560,7 +450,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileRenamed"</code></td>
+<td style="text-align: left;"><code>InitiatingProcessFileName == "spoolsv.exe"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -577,7 +467,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="actiontype">ActionType</h3>
+<h3 id="initiatingprocessfilename">InitiatingProcessFileName</h3>
 <table>
 <thead>
 <tr>
@@ -591,15 +481,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>FileCreated</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FileModified</code></td>
+<td style="text-align: left;"><code>regsvr32.exe</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -607,7 +489,15 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>FileRenamed</code></td>
+<td style="text-align: left;"><code>rundll32.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>spoolsv.exe</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -617,8 +507,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

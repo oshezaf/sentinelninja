@@ -14,6 +14,22 @@ This playbook will post a message in a Microsoft Teams channel when an Incident 
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Post-Message-Teams/incident-trigger/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `teams` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`teams`** (managedApi):
+- *Post_a_message_(V3)*: method=`post`, path=`[concat('/v3/beta/teams/@{encodeURIComponent(''', parameters('TeamsGroupId'), ''')}', '/channels/@{encodeURIComponent(''', parameters('TeamsChannelId'), ''')}/messages')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Post-Message-Teams/incident-trigger/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Post-Message-Teams/incident-trigger/readme.md)*

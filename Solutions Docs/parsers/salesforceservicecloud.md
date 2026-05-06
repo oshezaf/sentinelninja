@@ -13,7 +13,7 @@
 | Title | Parser for SalesforceServiceCloud |
 | Location | Solution |
 | Solution | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
-| Version | 1.0.0 |
+| Version | 3.2.0 |
 | Last Updated | 2023-08-23 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
@@ -26,6 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ? | ✓ | ? |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

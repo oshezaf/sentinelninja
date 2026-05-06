@@ -14,6 +14,27 @@ This playbook will collect user information from Okta and post a report on the i
 | **Solution** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `OktaCustomConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_a_comment_to_the_incident_with_the_information_collected*: method=`post`, path=`/Incidents/Comment`
+
+**`OktaCustomConnector`** (customApi):
+- *Get_User*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}`
+- *Get_User_Groups*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}/groups`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-EnrichIncidentWithUserDetails/readme.md)*

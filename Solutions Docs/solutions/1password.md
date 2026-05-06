@@ -39,10 +39,9 @@ a.  [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [1Password](../connectors/1password.md) ⚠️
-- [1Password (Serverless)](../connectors/1password-serverless.md) ⚠️
 - [1Password (Serverless)](../connectors/1passwordccpdefinition.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
@@ -53,7 +52,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | [1Password](../connectors/1password.md), [1Password (Serverless)](../connectors/1passwordccpdefinition.md), [1Password (Serverless)](../connectors/1password-serverless.md) | Analytics, Workbooks |
+| [`OnePasswordEventLogs_CL`](../tables/onepasswordeventlogs-cl.md) | [1Password](../connectors/1password.md), [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | Analytics, Workbooks |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Workbooks |
 
 ## Content Items

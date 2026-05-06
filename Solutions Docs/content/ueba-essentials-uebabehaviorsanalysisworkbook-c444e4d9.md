@@ -16,10 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SentinelBehaviorEntities`](../tables/sentinelbehaviorentities.md) | ? | ✗ | ? |
-| [`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SentinelBehaviorEntities`](../tables/sentinelbehaviorentities.md) | `EntityType != "Ip"` | ? | ✗ | ? |
+| [`SentinelBehaviorInfo`](../tables/sentinelbehaviorinfo.md) |  | ? | ✗ | ? |
 
 ---
 

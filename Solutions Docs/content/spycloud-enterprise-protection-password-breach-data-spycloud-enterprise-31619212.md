@@ -14,6 +14,22 @@ The SpyCloud Enterprise API is able to provide breach data for a provided passwo
 | **Solution** | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Password-Breach-Data-Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `spycloud-enterprise-connector` | Managed | 0 | 1 |
+| `SpyCloud-Enterprise-Protection` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`spycloud-enterprise-connector`** (managedApi):
+- *Get_Breach_Data_by_Password_Search*: method=`get`, path=`/breach/data/passwords/@{encodeURIComponent(variables('password_to_search'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SpyCloud-Get-Password-Breach-Data-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Password-Breach-Data-Playbook/readme.md)*

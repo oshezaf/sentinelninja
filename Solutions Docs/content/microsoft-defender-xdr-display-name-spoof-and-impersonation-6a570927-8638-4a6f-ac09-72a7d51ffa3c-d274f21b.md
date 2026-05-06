@@ -22,9 +22,9 @@ This query helps reviewing incoming email messages where the Display Name of the
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Delivered"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelAction != "Block"`<br>`SenderDisplayName contains "Microsoft"`<br>`UserLevelAction != "Block"` | ✓ | ✗ | ? |
 
 ---
 

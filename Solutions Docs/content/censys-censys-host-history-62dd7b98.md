@@ -14,6 +14,29 @@ This playbook is triggered manually via HTTP request, typically invoked from a M
 | **Solution** | [Censys](../solutions/censys.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysHostHistory/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Ingest_host_history_data*: method=`post`, path=`/api/logs`
+
+**`keyvault`** (managedApi):
+- *Get_Censys_API_token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+
+**`http`** (builtin):
+- *HTTP_request_to_get_host_history_from_Censys*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{trim(triggerBody()?['host'])}/timeline`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CensysHostHistory/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysHostHistory/readme.md)*

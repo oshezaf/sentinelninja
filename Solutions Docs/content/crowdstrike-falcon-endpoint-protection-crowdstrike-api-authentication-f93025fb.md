@@ -14,6 +14,26 @@ This is Crowdstrike base template which is used to generate access token and thi
 | **Solution** | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Base/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 0 | 2 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_secret_-_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent(variables('ClientID'))}/value`
+- *Get_secret_-_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(variables('ClientSecret'))}/value`
+
+**`http`** (builtin):
+- *HTTP_-_Get_Access_Token*: method=`POST`, uri=`@{variables('FalconHost')}/oauth2/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CrowdStrike_Base/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Playbooks/CrowdStrike_Base/readme.md)*

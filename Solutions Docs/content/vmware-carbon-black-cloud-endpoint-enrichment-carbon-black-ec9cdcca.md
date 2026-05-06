@@ -14,6 +14,26 @@ This playbook will collect device information from Carbon Black and post a repor
 | **Solution** | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-DeviceEnrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `CarbonBlackCloudConnector` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+
+**`CarbonBlackCloudConnector`** (customApi):
+- *Search_devices_in_your_organization*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CarbonBlack-DeviceEnrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-DeviceEnrichment/readme.md)*

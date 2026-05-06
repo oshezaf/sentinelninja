@@ -14,6 +14,29 @@ A Microsoft Sentinel playbook with an incident trigger, that performs quick back
 | **Solution** | [Veeam](../solutions/veeam.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Playbooks/Veeam-StartQuickBackup/StartQuickBackup.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `function` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Indicate_starting_with_comment*: method=`post`, path=`/Incidents/Comment`
+- *Indicate_failure_with_comment*: method=`post`, path=`/Incidents/Comment`
+- *Show_result_as_a_comment*: method=`post`, path=`/Incidents/Comment`
+
+**`function`** (builtin):
+- *GetBackupObjectByIdAsync*: functionId=`[concat(variables('functionAppId'), '/functions/GetBackupObjectByIdAsync')]`
+- *StartQuickBackupJobAsync*: functionId=`[concat(variables('functionAppId'), '/functions/StartQuickBackupJobAsync')]`
+- *GetSession_*: functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

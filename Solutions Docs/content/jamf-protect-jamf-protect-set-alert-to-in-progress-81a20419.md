@@ -14,6 +14,26 @@ This Jamf Protect Playbook can be used manually or in a Automation Rule to chang
 | **Solution** | [Jamf Protect](../solutions/jamf-protect.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *HTTP_POST_-_Change_Alert_Status_using_Jamf_Protect's_GraphQL_API_Endpoint*: method=`POST`, uri=`@{parameters('jamfProtectURL')}/graphql`
+- *Generate_Access_Token*: method=`POST`, uri=`@{parameters('jamfProtectURL')}/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [JamfProtect_Alert_Status_InProgress/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_Alert_Status_InProgress/readme.md)*

@@ -14,6 +14,22 @@ This playbook sends an email to the recipient with the details related to the in
 | **Solution** | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Send_Incident_Email/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `outlook` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`outlook`** (managedApi):
+- *Send_email_(V2)*: method=`post`, path=`/v2/Mail`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Cohesity_Send_Incident_Email/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Send_Incident_Email/readme.md)*

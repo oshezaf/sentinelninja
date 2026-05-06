@@ -14,6 +14,34 @@ This playbook provides/updates the compliance security posture details of asset 
 | **Solution** | [PaloAltoPrismaCloud](../solutions/paloaltoprismacloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Playbooks/PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Enrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `keyvault` | Managed | 0 | 1 |
+| `PrismaCloudCSPMCustomConnector` | Custom | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value`
+
+**`PrismaCloudCSPMCustomConnector`** (customApi):
+- *Assets_Resource_Scan*: method=`get`, path=`/resource/scan_info`
+- *Assets_Enrichment*: method=`post`, path=`/uai/v1/asset`
+- *Get_Alert_Info*: method=`get`, path=`/alert/@{encodeURIComponent(items('For_each_-_storing_alert_info_in_variable'))}`
+- *Login_Generate_Token*: method=`post`, path=`/login`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Enrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Playbooks/PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Enrichment/readme.md)*

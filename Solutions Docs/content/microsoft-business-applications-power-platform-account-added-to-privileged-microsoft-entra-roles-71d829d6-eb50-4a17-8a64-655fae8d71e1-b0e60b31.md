@@ -25,9 +25,9 @@ Identifies changes to privileged directory roles impacting Power Platform: - Dyn
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `Identity != "MS-PIM"`<br>`Identity != "MS-PIM-Fairfax"` | ✓ | ✗ | ? |
 
 ---
 

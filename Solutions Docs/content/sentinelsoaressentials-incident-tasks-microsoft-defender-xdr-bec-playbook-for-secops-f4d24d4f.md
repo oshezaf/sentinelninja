@@ -14,6 +14,30 @@ This playbook add Incident Tasks based on Microsoft Defender XDR BEC Playbook fo
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_BEC_Playbook_for_SecOps-Tasks/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `microsoftsentinel` | Managed | 0 | 9 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftsentinel`** (managedApi):
+- *Add_task_to_incident_-_Contain*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Introduction*: method=`post`, path=`/Incidents/CreateTask`
+- *Mark_a_task_as_completed_-_Introduction*: method=`post`, path=`/Incidents/CompleteTask`
+- *Add_task_to_incident_-_Investigation_-_Step_1*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Investigation_-_Step_2*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Investigation_-_Step_3*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Investigation_-_Step_4*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Prevention*: method=`post`, path=`/Incidents/CreateTask`
+- *Add_task_to_incident_-_Remediation*: method=`post`, path=`/Incidents/CreateTask`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Defender_XDR_BEC_Playbook_for_SecOps-Tasks/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Defender_XDR_BEC_Playbook_for_SecOps-Tasks/readme.md)*

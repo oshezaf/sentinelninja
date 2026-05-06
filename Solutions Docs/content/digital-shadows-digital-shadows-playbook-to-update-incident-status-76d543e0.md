@@ -14,6 +14,24 @@ This playbook will update the status of Microsoft Sentinel incidents to match th
 | **Solution** | [Digital Shadows](../solutions/digital-shadows.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Playbooks/DigitalShadowsPlaybooktoUpdateIncidentStatus/DigitalShadowsPlaybook-UpdateIncidentStatus.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Update_incident_2*: method=`put`, path=`/Incidents`
+- *Update_incident_3*: method=`put`, path=`/Incidents`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [DigitalShadowsPlaybooktoUpdateIncidentStatus/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Playbooks/DigitalShadowsPlaybooktoUpdateIncidentStatus/readme.md)*

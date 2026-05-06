@@ -22,10 +22,10 @@ Threat actors may use tools such as Curl to download additional files, communica
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `InitiatingProcessFileName has "curl"` | ✓ | ✗ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
 
 ---
 

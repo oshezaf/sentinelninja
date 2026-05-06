@@ -14,6 +14,31 @@ This playbook will create a new Microsoft Sentinel incident when new email arriv
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `conversionservice` | Managed | 1 | 1 |
+| `office365` | Managed | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Create_incident*: method=`put`, path=`/Incidents/subscriptions/@{encodeURIComponent(parameters('Subscription'))}/resourceGroups/@{encodeURIComponent(parameters('Resource Group'))}/workspaces/@{encodeURIComponent(parameters('Workspace Name'))}`
+
+**`conversionservice`** (managedApi):
+- *Email_body_to_text*: method=`post`, path=`/html2text`
+
+**`office365`** (managedApi):
+- *Send_an_email_from_a_shared_mailbox_(V2)*: method=`post`, path=`/v2/SharedMailbox/Mail`
+- *Send_an_email_from_a_shared_mailbox_(V2)_3*: method=`post`, path=`/v2/SharedMailbox/Mail`
+- *When_a_new_email_arrives_in_a_shared_mailbox_(V2)*: method=`get`, path=`/v2/SharedMailbox/Mail/OnNewEmail`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CreateIncident-SharedMailbox/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-SharedMailbox/readme.md)*

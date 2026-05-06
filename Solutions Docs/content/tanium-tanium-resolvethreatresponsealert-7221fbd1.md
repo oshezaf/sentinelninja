@@ -14,6 +14,30 @@ Maintaining alert hygiene in multiple consoles can be overwhelming. This playboo
 | **Solution** | [Tanium](../solutions/tanium.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-ResolveThreatResponseAlert/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Comment_success*: method=`post`, path=`/Incidents/Comment`
+- *Comment_failure*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('TaniumApiToken')}/value`
+
+**`http`** (builtin):
+- *Resolve_Threat_Response_Alert*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Tanium-ResolveThreatResponseAlert/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-ResolveThreatResponseAlert/readme.md)*

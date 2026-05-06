@@ -14,6 +14,21 @@ This playbook ingests TacitRed threat intelligence into Microsoft Defender Threa
 | **Solution** | [TacitRed-Defender-ThreatIntelligence](../solutions/tacitred-defender-threatintelligence.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence/Playbooks/TacitRedToDefenderTI/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `function` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`function`** (builtin):
+- *Call_Function_App*: method=`POST`, functionId=`[concat(variables('functionAppId'), '/functions/TacitRedToDefenderTI')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [TacitRedToDefenderTI/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence/Playbooks/TacitRedToDefenderTI/readme.md)*

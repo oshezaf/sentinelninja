@@ -22,9 +22,9 @@ This query identifies phishing emails sent that were successfully delivered, by 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Delivered"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` | ✓ | ✗ | ? |
 
 ---
 

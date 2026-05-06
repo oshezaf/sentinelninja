@@ -14,6 +14,29 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [TheHive](../solutions/thehive.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-CreateCase/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `TheHive` | Custom | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+
+**`TheHive`** (customApi):
+- *create_observable_for_a_case*: method=`post`, path=`/api/v0/case/@{encodeURIComponent(body('create_case')?['caseId'])}/artifact`
+- *create_observable_for_a_case_2*: method=`post`, path=`/api/v0/case/@{encodeURIComponent(body('create_case')?['caseId'])}/artifact`
+- *create_case*: method=`post`, path=`/api/case`
+- *create_task*: method=`post`, path=`/api/case/@{encodeURIComponent(body('create_case')?['caseId'])}/task`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [TheHive-CreateCase/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-CreateCase/readme.md)*

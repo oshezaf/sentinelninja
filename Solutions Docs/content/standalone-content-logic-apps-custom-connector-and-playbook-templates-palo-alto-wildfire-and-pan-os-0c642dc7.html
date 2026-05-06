@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Logic Apps Custom Connector and Playbook templates - Palo Alto Wildfire and PAN-OS &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="logic-apps-custom-connector-and-playbook-templates---palo-alto-wildfire-and-pan-os">Logic Apps Custom Connector and Playbook templates - Palo Alto Wildfire and PAN-OS</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This is a consolidated json file for deploying WildFire custom connector + 3 Playbooks</p>
 <table>
@@ -42,8 +42,99 @@
 </tr>
 </tbody>
 </table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>7</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>office365</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>panosconnector</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>wildfireconnector</code></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PaloAltoPANOS</code></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PaloAltoWildFire</code></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_FileHash*: method=`post`, path=`/entities/filehash`
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_when_exceeds_limit*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_the_incident*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Update_Incident_for_configuration_case*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+
+**`office365`** (managedApi):
+- *Send_email_with_FileHash_attachment*: method=`post`, path=`/v2/Mail`
+
+**`panosconnector`** (managedApi):
+- *Create_address_object_to_apply_security_rule*: method=`post`, path=`/restapi/v10.0/Objects/Addresses`
+- *Add_address_objects_to_security_policy_rules*: method=`put`, path=`/restapi/v10.0/Policies/SecurityRules`
+- *Get_address_list*: method=`get`, path=`/restapi/v10.0/Objects/Addresses`
+- *Get_existing_member_of_the_security_rules*: method=`get`, path=`/restapi/v10.0/Policies/SecurityRules`
+- *Add_address_objects_to_security_policy_rules*: method=`put`, path=`/restapi/v10.0/Policies/SecurityRules`
+- *Add_address_objects_to_security_rules*: method=`post`, path=`/restapi/v10.0/Objects/Addresses`
+- *Get_address_list*: method=`get`, path=`/restapi/v10.0/Objects/Addresses`
+- *Get_existing_member_of_the_security_rules*: method=`get`, path=`/restapi/v10.0/Policies/SecurityRules`
+
+**`wildfireconnector`** (managedApi):
+- *Get_FileHash_analysis_report_in_PDF_or_XML_format*: method=`post`, path=`/get/report`
+- *Get_FileHash_analysis_report_in_PDF_or_XML_format_2*: method=`post`, path=`/get/report`
+- *Get_URL_or_Hash_Verdict*: method=`post`, path=`/get/verdict`
+- *Get_URL_or_Hash_verdict*: method=`post`, path=`/get/verdict`
+- *Get_URL_or_Hash_verdict*: method=`post`, path=`/get/verdict`
+
+</details>
+
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
 </div>
 

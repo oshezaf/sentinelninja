@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GreyNoise Enterprise Solution for Microsoft Sentinel &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="greynoise-enterprise-solution-for-microsoft-sentinel">GreyNoise Enterprise Solution for Microsoft Sentinel</h1>
 <p><em>Solution: GreyNoiseThreatIntelligence</em></p>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/greynoise_logomark_black.svg" alt="GreyNoiseThreatIntelligence Logo" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.1.0</td>
+<td style="text-align: left;">3.1.1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-03-24</td>
+<td style="text-align: left;">2026-04-29</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -112,13 +112,13 @@
 </tr>
 <tr>
 <td><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
-<td><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
-<td>Analytics, Workbooks</td>
+<td>-</td>
+<td>Analytics</td>
 </tr>
 </tbody>
 </table>
 <h3 id="internal-tables">Internal Tables</h3>
-<p>The following <strong>2 table(s)</strong> are used internally by this solution's content items:</p>
+<p>The following <strong>3 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
 <tr>
@@ -136,6 +136,11 @@
 <tr>
 <td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
 <td>-</td>
+<td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td><a href="../connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
 <td>Workbooks</td>
 </tr>
 </tbody>
@@ -214,7 +219,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/greynoisethreatintelligence-greynoiseoverview-879c7a2d.html">GreyNoiseOverview</a></td>
-<td style="text-align: left;"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a><br><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td style="text-align: left;"><em>Internal use:</em><br><a href="../tables/securityalert.html"><code>SecurityAlert</code></a><br><a href="../tables/securityincident.html"><code>SecurityIncident</code></a><br><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -228,6 +233,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.1.1</td>
+<td>9-04-2026</td>
+<td>Fix packaging issues, updated Data Connector status query and workbook templates to reflect the new ThreatIntelIndicators table</td>
+</tr>
 <tr>
 <td>3.1.0</td>
 <td>12-03-2026</td>
@@ -256,8 +266,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#solutions">Back to Solutions Index</a></p>
 </div>
 
 </body>

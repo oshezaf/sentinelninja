@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**562 workbooks** across all Microsoft Sentinel solutions.
+**563 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -187,6 +187,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [Corelight_Security_Workflow](corelight-corelight-security-workflow-7c756761.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Sensor_Overview](corelight-corelight-sensor-overview-71e61142.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [CPEMAlertOverview](check-point-cyberint-alerts-cpemalertoverview-1fe40da5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
+| [CriblWorkbook](cribl-criblworkbook-903a9c58.md) | 📦 [Cribl](../solutions/cribl.md) |
 | [CriblWorkbook](github-only-criblworkbook-923de34f.md) | 🔗 GitHub Only |
 | [CrowdStrikeFalconEndpointProtection](crowdstrike-falcon-endpoint-protection-crowdstrikefalconendpointprotection-b9a8efc3.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CTERA_Workbook](ctera-ctera-workbook-5bba0e18.md) | 📦 [CTERA](../solutions/ctera.md) |

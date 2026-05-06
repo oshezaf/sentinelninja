@@ -14,6 +14,31 @@ This playbook provides/updates the threat intel and essential details in comment
 | **Solution** | [ThreatXCloud](../solutions/threatxcloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud/Playbooks/ThreatXPlaybooks/ThreatX-Enrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 0 | 1 |
+| `ThreatX-WAFCustomConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Threatx_Key_name'))}/value`
+
+**`ThreatX-WAFCustomConnector`** (customApi):
+- *Event_Logs*: method=`post`, path=`/tx_api/v2/logs`
+- *Login_Generate_Token*: method=`post`, path=`/tx_api/v1/login`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [ThreatXPlaybooks/ThreatX-Enrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ThreatXCloud/Playbooks/ThreatXPlaybooks/ThreatX-Enrichment/readme.md)*

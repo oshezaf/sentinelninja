@@ -14,6 +14,43 @@ This playbook allows blocking of IPs in Cisco Firepower, using a **Network Group
 | **Solution** | [Cisco Firepower EStreamer](../solutions/cisco-firepower-estreamer.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 6 |
+| `cisco-firepower-connector` | Managed | 0 | 9 |
+| `teams` | Managed | 1 | 0 |
+| `CiscoFirepowerConnector` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Add_comment_to_incident_(V3):_No_IPs_found*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3):_Network_Group_object_not_found*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3):_Network_Group_object_not_found_2*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+
+**`cisco-firepower-connector`** (managedApi):
+- *Revoke_access:_Network_Group_object_not_found*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+- *Generate_token*: method=`post`, path=`/api/fmc_platform/v1/auth/generatetoken`
+- *Generate_token_2*: method=`post`, path=`/api/fmc_platform/v1/auth/generatetoken`
+- *Modifies_the_network_group_object_associated_with_the_specified_ID*: method=`put`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(body('Retrieves_the_network_group_object_associated_with_the_specified_ID_2')?['id'])}`
+- *Retrieves_the_network_group_object_associated_with_the_specified_ID_2*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}`
+- *Revoke_access_2*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+- *Retrieves_list_of_all_network_group_objects*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups`
+- *Retrieves_the_network_group_object_associated_with_the_specified_ID*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}`
+- *Revoke_access*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+
+**`CiscoFirepowerConnector`** (customApi):
+- *Revoke_access:_Network_Group_object_not_found_2*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoFirepower-BlockIP-Teams/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/readme.md)*

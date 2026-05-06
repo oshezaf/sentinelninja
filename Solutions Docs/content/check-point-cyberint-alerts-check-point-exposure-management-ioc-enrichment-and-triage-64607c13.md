@@ -14,6 +14,32 @@ When a new Microsoft Sentinel incident is created, this playbook enriches IOC en
 | **Solution** | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_IOCEnrichment/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 5 |
+| `http` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
+- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *Enrich_IP*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/ipv4/@{encodeURIComponent(items('For_each_IP')?['Address'])}`
+- *Enrich_FileHash*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/sha256/@{encodeURIComponent(items('For_each_FileHash')?['Value'])}`
+- *Enrich_Domain*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/domain/@{encodeURIComponent(items('For_each_Domain')?['DomainName'])}`
+- *Enrich_URL*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/url`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Enrichment/CPEM_IOCEnrichment/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_IOCEnrichment/readme.md)*

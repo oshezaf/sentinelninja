@@ -14,6 +14,49 @@ This playbook queries Rubrik Security Cloud to enrich the Anomaly event with add
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyAnalysis/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **6** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `keyvault` | Managed | 1 | 0 |
+| `keyvault_1` | Managed | 0 | 2 |
+| `RubrikCustomConnector` | Custom | 1 | 1 |
+| `http` | Built-in | 0 | 9 |
+| `workflow` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Close_Incident_Due_To_Anomaly_Is_Already_Resolved*: method=`put`, path=`/Incidents`
+- *Close_incident_due_to_resolve_anomaly_or_report_false_positive*: method=`put`, path=`/Incidents`
+
+**`keyvault_1`** (managedApi):
+- *Get_Client_Id_*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+
+**`RubrikCustomConnector`** (customApi):
+- *Authentication*: method=`post`, path=`/api/client_token`
+
+**`http`** (builtin):
+- *Determine_the_status_of_the_Rubrik_Radar_analysis_process*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *sonar_sensitive_hits(Object_Details)*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_Suspicious_files_for_a_latest_snpshot_of_given_object*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Get_cdm_snapshotid_for_latest_snapshotfid*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *Gather_the_final_Radar_Analysis_results*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *GenericPolling*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *rubrik-cdm-cluster-connection-state*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *rubrik-cdm-cluster-location*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+- *rubrik-sonar-sensitive-hits(Object_List)*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+
+**`workflow`** (builtin):
+- *RubrikGenerateDownloadableLink*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('DownloadableLinkGeneratePlaybookName'))]`, triggerName=`manual`
+- *RubrikUpdateAnomalyStatus*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikAnomalyAnalysis/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyAnalysis/readme.md)*

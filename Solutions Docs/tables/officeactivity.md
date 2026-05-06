@@ -174,7 +174,7 @@ Reference for OfficeActivity table in Azure Monitor Logs.
 | UserSharedWith | string | The user that a resource was shared with |
 | UserType | string | The type of user that performed the operation. See the UserType table for details on the types of users |
 
-## Solutions (26)
+## Solutions (25)
 
 This table is used by the following solutions:
 
@@ -197,7 +197,6 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Teams](../solutions/teams.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
@@ -217,9 +216,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (104)
+## Content Items Using This Table (78)
 
-### Analytic Rules (42)
+### Analytic Rules (33)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -228,11 +227,11 @@ This table is ingested by the following connectors:
 | [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md) |  |
 | [User agent search for log4j exploitation attempt](../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.md) |  |
 
-**In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
+**In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):** `Operation == "New-InboxRule"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Malicious BEC Inbox Rule](../content/business-email-compromise-financial-fraud-malicious-bec-inbox-rule-8ac77493-3cae-4840-8634-15fb23f8fb68-ae4ecd95.md) |  |
+| Analytic Rule |
+|:-------------|
+| [Malicious BEC Inbox Rule](../content/business-email-compromise-financial-fraud-malicious-bec-inbox-rule-8ac77493-3cae-4840-8634-15fb23f8fb68-ae4ecd95.md) |
 
 **In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
 
@@ -250,19 +249,19 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Accessed files shared by temporary external user](../content/microsoft-365-accessed-files-shared-by-temporary-external-user-bff058b2-500e-4ae5-bb49-a5b1423cbd5b-0f3d0272.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` |
-| [Exchange AuditLog Disabled](../content/microsoft-365-exchange-auditlog-disabled-194dd92e-d6e7-4249-85a5-273350a7f5ce-9595c198.md) | `OfficeWorkload == "Exchange"` |
-| [Exchange workflow MailItemsAccessed operation anomaly](../content/microsoft-365-exchange-workflow-mailitemsaccessed-operation-anomaly-b4ceb583-4c44-4555-8ecf-39f572e827ba-0035b923.md) | `OfficeWorkload == "Exchange"` |
+| [Accessed files shared by temporary external user](../content/microsoft-365-accessed-files-shared-by-temporary-external-user-bff058b2-500e-4ae5-bb49-a5b1423cbd5b-0f3d0272.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "FileAccessed,FileUploaded"`<br>`Operation in "MemberAdded,MemberRemoved"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` |
+| [Exchange AuditLog Disabled](../content/microsoft-365-exchange-auditlog-disabled-194dd92e-d6e7-4249-85a5-273350a7f5ce-9595c198.md) | `OfficeWorkload == "Exchange"`<br>`Operation == "Set-AdminAuditLogConfig"`<br>`UserType in "Admin,DcAdmin"` |
+| [Exchange workflow MailItemsAccessed operation anomaly](../content/microsoft-365-exchange-workflow-mailitemsaccessed-operation-anomaly-b4ceb583-4c44-4555-8ecf-39f572e827ba-0035b923.md) | `OfficeWorkload == "Exchange"`<br>`Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` |
 | [External user added and removed in short timeframe](../content/microsoft-365-external-user-added-and-removed-in-short-timeframe-bff093b2-500e-4ae5-bb49-a5b1423cbd5b-5d676e58.md) | `OfficeWorkload == "MicrosoftTeams"` |
 | [Mail redirect via ExO transport rule](../content/microsoft-365-mail-redirect-via-exo-transport-rule-500415fb-bba7-4227-a08a-9857fb61b6a7-63b69125.md) | `OfficeWorkload == "Exchange"` |
-| [Malicious Inbox Rule](../content/microsoft-365-malicious-inbox-rule-7b907bf7-77d4-41d0-a208-5643ff75bf9a-809a0fef.md) | `OfficeWorkload == "Exchange"` |
-| [Multiple Teams deleted by a single user](../content/microsoft-365-multiple-teams-deleted-by-a-single-user-173f8699-6af5-484a-8b06-8c47ba89b380-fee08c77.md) | `OfficeWorkload == "MicrosoftTeams"` |
-| [Multiple users email forwarded to same destination](../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-871ba14c-88ef-48aa-ad38-810f26760ca3-2182889a.md) | `OfficeWorkload == "Exchange"` |
-| [New executable via Office FileUploaded Operation](../content/microsoft-365-new-executable-via-office-fileuploaded-operation-d722831e-88f5-4e25-b106-4ef6e29f8c13-14098899.md) |  |
-| [Office Policy Tampering](../content/microsoft-365-office-policy-tampering-fbd72eb8-087e-466b-bd54-1ca6ea08c6d3-dcc56d58.md) | `RecordType == "ExchangeAdmin"` |
-| [Office365 Sharepoint File transfer Folders above threshold](../content/microsoft-365-office365-sharepoint-file-transfer-folders-above-threshold-8a547285-801c-4290-aa2e-5e7e20ca157d-1211cb69.md) | `OfficeWorkload has_any "OneDrive,SharePoint"` |
-| [Office365 Sharepoint File transfer above threshold](../content/microsoft-365-office365-sharepoint-file-transfer-above-threshold-8b4f03e7-3460-4401-824d-e65a8dd464f0-55393788.md) | `OfficeWorkload has_any "OneDrive,SharePoint"` |
-| [Rare and potentially high-risk Office operations](../content/microsoft-365-rare-and-potentially-high-risk-office-operations-957cb240-f45d-4491-9ba5-93430a3c08be-0f639b30.md) |  |
+| [Malicious Inbox Rule](../content/microsoft-365-malicious-inbox-rule-7b907bf7-77d4-41d0-a208-5643ff75bf9a-809a0fef.md) | `OfficeWorkload == "Exchange"`<br>`Operation == "New-InboxRule"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`ResultStatus in "Succeeded,True"` |
+| [Multiple Teams deleted by a single user](../content/microsoft-365-multiple-teams-deleted-by-a-single-user-173f8699-6af5-484a-8b06-8c47ba89b380-fee08c77.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "TeamDeleted"` |
+| [Multiple users email forwarded to same destination](../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-871ba14c-88ef-48aa-ad38-810f26760ca3-2182889a.md) | `OfficeWorkload == "Exchange"`<br>`Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"`<br>`Parameters has_any "ForwardTo"` |
+| [New executable via Office FileUploaded Operation](../content/microsoft-365-new-executable-via-office-fileuploaded-operation-d722831e-88f5-4e25-b106-4ef6e29f8c13-14098899.md) | `Operation contains "download"`<br>`Operation contains "upload"` |
+| [Office Policy Tampering](../content/microsoft-365-office-policy-tampering-fbd72eb8-087e-466b-bd54-1ca6ea08c6d3-dcc56d58.md) | `ClientIP has "."`<br>`ClientIP has "["`<br>`RecordType == "ExchangeAdmin"`<br>`UserType in "Admin,DcAdmin"` |
+| [Office365 Sharepoint File transfer Folders above threshold](../content/microsoft-365-office365-sharepoint-file-transfer-folders-above-threshold-8a547285-801c-4290-aa2e-5e7e20ca157d-1211cb69.md) | `EventSource == "SharePoint"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`Operation has_any "FileDownloaded"` |
+| [Office365 Sharepoint File transfer above threshold](../content/microsoft-365-office365-sharepoint-file-transfer-above-threshold-8b4f03e7-3460-4401-824d-e65a8dd464f0-55393788.md) | `EventSource == "SharePoint"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`Operation has_any "FileDownloaded"` |
+| [Rare and potentially high-risk Office operations](../content/microsoft-365-rare-and-potentially-high-risk-office-operations-957cb240-f45d-4491-9ba5-93430a3c08be-0f639b30.md) | `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"`<br>`UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"` |
 | [SharePointFileOperation via devices with previously unseen user agents](../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-5dd76a87-9f87-4576-bab3-268b0e2b338b-ccd6f2dd.md) |  |
 | [SharePointFileOperation via previously unseen IPs](../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-4b11568b-3f5f-4ba1-80c8-7f1dc8390eb7-e94212cd.md) |  |
 
@@ -270,9 +269,9 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Dataverse - Executable uploaded to SharePoint document management site](../content/microsoft-business-applications-dataverse-executable-uploaded-to-sharepoint-document-management-site-ba5e608f-7879-4927-8b0d-a9948b4fe6f3-a46cc5a8.md) | `OfficeWorkload == "SharePoint"` |
+| [Dataverse - Executable uploaded to SharePoint document management site](../content/microsoft-business-applications-dataverse-executable-uploaded-to-sharepoint-document-management-site-ba5e608f-7879-4927-8b0d-a9948b4fe6f3-a46cc5a8.md) | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileUploaded"` |
 | [Dataverse - Malware found in SharePoint document management site](../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.md) | `OfficeWorkload == "SharePoint"` |
-| [Dataverse - Mass download from SharePoint document management](../content/microsoft-business-applications-dataverse-mass-download-from-sharepoint-document-management-95e02f1b-5886-4043-8f0e-a42e6e23330f-26e23cc8.md) | `OfficeWorkload == "SharePoint"` |
+| [Dataverse - Mass download from SharePoint document management](../content/microsoft-business-applications-dataverse-mass-download-from-sharepoint-document-management-95e02f1b-5886-4043-8f0e-a42e6e23330f-26e23cc8.md) | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileDownloaded"` |
 | [Dataverse - New user agent type that was not used with Office 365](../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.md) |  |
 
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
@@ -314,21 +313,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Anomalous login followed by Teams action](../content/standalone-content-anomalous-login-followed-by-teams-action-2b701288-b428-4fb8-805e-e4372c574786-2da015d8.md) |  |
-| [Detecting Impossible travel with mailbox permission tampering & Privilege Escalation attempt](../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.md) |  |
-| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
-| [High risk Office operation conducted by IP Address that recently attempted to log into a disabled account](../content/standalone-content-high-risk-office-operation-conducted-by-ip-address-that-recently-attempted-to-log-int-9adbd1c3-a4be-44ef-ac2f-503fd25692ee-6176c458.md) |  |
-| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
-| [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md) | `OfficeWorkload == "AzureActiveDirectory"` |
-| [NRT Malicious Inbox Rule](../content/standalone-content-nrt-malicious-inbox-rule-b79f6190-d104-4691-b7db-823e05980895-a7d65038.md) | `OfficeWorkload == "Exchange"` |
-| [NRT Multiple users email forwarded to same destination](../content/standalone-content-nrt-multiple-users-email-forwarded-to-same-destination-3b05727d-a8d1-477d-bbdd-d957da96ac7b-d149a49e.md) | `OfficeWorkload == "Exchange"` |
-
-### Hunting Queries (30)
+### Hunting Queries (26)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -341,27 +326,27 @@ This table is ingested by the following connectors:
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Anomalous access to other users' mailboxes](../content/microsoft-365-anomalous-access-to-other-users'-mailboxes-271e8881-3044-4332-a5f4-42264c2e0315-9868f994.md) |  |
-| [Bots added to multiple teams](../content/microsoft-365-bots-added-to-multiple-teams-9eb64924-ec8d-44d0-b1f2-10665150fb74-b469374c.md) | `OfficeWorkload == "MicrosoftTeams"` |
-| [Exes with double file extension and access summary](../content/microsoft-365-exes-with-double-file-extension-and-access-summary-d12580c2-1474-4125-a8a3-553f50d91215-647a7b68.md) | `RecordType == "SharePointFileOperation"` |
-| [External user added and removed in a short timeframe](../content/microsoft-365-external-user-added-and-removed-in-a-short-timeframe-119d9e1c-afcc-4d23-b239-cdb4e7bf851c-733c7514.md) | `OfficeWorkload == "MicrosoftTeams"` |
-| [External user from a new organisation added to Teams](../content/microsoft-365-external-user-from-a-new-organisation-added-to-teams-6fce5baf-bfc2-4c56-a6b7-9c4733fc5a45-c611f8a9.md) | `OfficeWorkload == "MicrosoftTeams"` |
-| [Files uploaded to teams and access summary](../content/microsoft-365-files-uploaded-to-teams-and-access-summary-90e198a9-efb6-4719-ad89-81b8e93633a7-969f9eb8.md) | `RecordType == "SharePointFileOperation"` |
+| [Anomalous access to other users' mailboxes](../content/microsoft-365-anomalous-access-to-other-users'-mailboxes-271e8881-3044-4332-a5f4-42264c2e0315-9868f994.md) | `Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` |
+| [Bots added to multiple teams](../content/microsoft-365-bots-added-to-multiple-teams-9eb64924-ec8d-44d0-b1f2-10665150fb74-b469374c.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "BotAddedToTeam"` |
+| [Exes with double file extension and access summary](../content/microsoft-365-exes-with-double-file-extension-and-access-summary-d12580c2-1474-4125-a8a3-553f50d91215-647a7b68.md) | `OfficeObjectId has ".exe."`<br>`Operation in "FileAccessed,FileDownloaded"`<br>`RecordType == "SharePointFileOperation"` |
+| [External user added and removed in a short timeframe](../content/microsoft-365-external-user-added-and-removed-in-a-short-timeframe-119d9e1c-afcc-4d23-b239-cdb4e7bf851c-733c7514.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "MemberAdded,MemberRemoved"` |
+| [External user from a new organisation added to Teams](../content/microsoft-365-external-user-from-a-new-organisation-added-to-teams-6fce5baf-bfc2-4c56-a6b7-9c4733fc5a45-c611f8a9.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "MemberAdded"` |
+| [Files uploaded to teams and access summary](../content/microsoft-365-files-uploaded-to-teams-and-access-summary-90e198a9-efb6-4719-ad89-81b8e93633a7-969f9eb8.md) | `Operation in "FileAccessed,FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`<br>`UserId != "app@sharepoint"` |
 | [Mail redirect via ExO transport rule](../content/microsoft-365-mail-redirect-via-exo-transport-rule-9891684a-1e3a-4546-9403-3439513cbc70-09a65cff.md) | `OfficeWorkload == "Exchange"` |
-| [Multiple Teams deleted by a single user](../content/microsoft-365-multiple-teams-deleted-by-a-single-user-64990414-b015-4edf-bef0-343b741e68c5-4d5737ab.md) | `OfficeWorkload == "MicrosoftTeams"` |
-| [Multiple users email forwarded to same destination](../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-a1551ae4-f61c-4bca-9c57-4d0d681db2e9-2e204a61.md) | `OfficeWorkload == "Exchange"` |
-| [New Admin account activity seen which was not seen historically](../content/microsoft-365-new-admin-account-activity-seen-which-was-not-seen-historically-723c5f46-133f-4f1e-ada6-5c138f811d75-81219d98.md) | `RecordType == "ExchangeAdmin"` |
-| [New Windows Reserved Filenames staged on Office file services](../content/microsoft-365-new-windows-reserved-filenames-staged-on-office-file-services-641ecd2d-27c9-4f05-8433-8205096b09fc-56b1939d.md) |  |
-| [Non-owner mailbox login activity](../content/microsoft-365-non-owner-mailbox-login-activity-0a8f410d-38b5-4d75-90da-32b472b97230-5ba0724d.md) | `OfficeWorkload == "Exchange"` |
-| [Office Mail Forwarding - Hunting Version](../content/microsoft-365-office-mail-forwarding-hunting-version-d49fc965-aef3-49f6-89ad-10cc4697eb5b-08bdc191.md) | `OfficeWorkload == "Exchange"` |
-| [PowerShell or non-browser mailbox login activity](../content/microsoft-365-powershell-or-non-browser-mailbox-login-activity-49a4f65a-fe18-408e-afec-042fde93d3ce-d9f865de.md) | `OfficeWorkload == "Exchange"` |
+| [Multiple Teams deleted by a single user](../content/microsoft-365-multiple-teams-deleted-by-a-single-user-64990414-b015-4edf-bef0-343b741e68c5-4d5737ab.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "TeamDeleted"` |
+| [Multiple users email forwarded to same destination](../content/microsoft-365-multiple-users-email-forwarded-to-same-destination-a1551ae4-f61c-4bca-9c57-4d0d681db2e9-2e204a61.md) | `OfficeWorkload == "Exchange"`<br>`Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"`<br>`Parameters has_any "ForwardTo"` |
+| [New Admin account activity seen which was not seen historically](../content/microsoft-365-new-admin-account-activity-seen-which-was-not-seen-historically-723c5f46-133f-4f1e-ada6-5c138f811d75-81219d98.md) | `RecordType == "ExchangeAdmin"`<br>`UserType in "Admin,DcAdmin"` |
+| [New Windows Reserved Filenames staged on Office file services](../content/microsoft-365-new-windows-reserved-filenames-staged-on-office-file-services-641ecd2d-27c9-4f05-8433-8205096b09fc-56b1939d.md) | `UserAgent !has "Mac OS"` |
+| [Non-owner mailbox login activity](../content/microsoft-365-non-owner-mailbox-login-activity-0a8f410d-38b5-4d75-90da-32b472b97230-5ba0724d.md) | `Logon_Type != "Owner"`<br>`OfficeWorkload == "Exchange"`<br>`Operation == "MailboxLogin"` |
+| [Office Mail Forwarding - Hunting Version](../content/microsoft-365-office-mail-forwarding-hunting-version-d49fc965-aef3-49f6-89ad-10cc4697eb5b-08bdc191.md) | `ClientIP has "."`<br>`ClientIP has "["`<br>`OfficeWorkload == "Exchange"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters contains "RedirectTo"` |
+| [PowerShell or non-browser mailbox login activity](../content/microsoft-365-powershell-or-non-browser-mailbox-login-activity-49a4f65a-fe18-408e-afec-042fde93d3ce-d9f865de.md) | `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`OfficeWorkload == "Exchange"`<br>`Operation == "MailboxLogin"` |
 | [Previously unseen bot or application added to Teams](../content/microsoft-365-previously-unseen-bot-or-application-added-to-teams-bf76e508-9282-4cf1-9cc1-5c20c3dea2ee-9699a7e1.md) | `OfficeWorkload == "MicrosoftTeams"` |
 | [SharePointFileOperation via clientIP with previously unseen user agents](../content/microsoft-365-sharepointfileoperation-via-clientip-with-previously-unseen-user-agents-e8ae1375-4640-430c-ae8e-2514d09c71eb-01381674.md) | `RecordType == "SharePointFileOperation"` |
-| [SharePointFileOperation via devices with previously unseen user agents](../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-f2367171-1514-4c67-88ef-27434b6a1093-8d3d8113.md) | `RecordType == "SharePointFileOperation"` |
-| [SharePointFileOperation via previously unseen IPs](../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-e3d24cfd-b2a1-4ba7-8f80-0360892f9d57-bf177f44.md) | `RecordType == "SharePointFileOperation"` |
-| [User added to Teams and immediately uploads file](../content/microsoft-365-user-added-to-teams-and-immediately-uploads-file-3d6d0c04-7337-40cf-ace6-c471d442356d-ae882f16.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` |
-| [User made Owner of multiple teams](../content/microsoft-365-user-made-owner-of-multiple-teams-558f15dd-3171-4b11-bf24-31c0610a20e0-775b29b2.md) | `OfficeWorkload == "MicrosoftTeams"` |
-| [Windows Reserved Filenames staged on Office file services](../content/microsoft-365-windows-reserved-filenames-staged-on-office-file-services-61c28cd7-3139-4731-8ea7-2cbbeabb4684-b20eb95c.md) |  |
+| [SharePointFileOperation via devices with previously unseen user agents](../content/microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-f2367171-1514-4c67-88ef-27434b6a1093-8d3d8113.md) | `Operation in "FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"` |
+| [SharePointFileOperation via previously unseen IPs](../content/microsoft-365-sharepointfileoperation-via-previously-unseen-ips-e3d24cfd-b2a1-4ba7-8f80-0360892f9d57-bf177f44.md) | `Operation in "FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"` |
+| [User added to Teams and immediately uploads file](../content/microsoft-365-user-added-to-teams-and-immediately-uploads-file-3d6d0c04-7337-40cf-ace6-c471d442356d-ae882f16.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "FileUploaded,MemberAdded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` |
+| [User made Owner of multiple teams](../content/microsoft-365-user-made-owner-of-multiple-teams-558f15dd-3171-4b11-bf24-31c0610a20e0-775b29b2.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "MemberRoleChanged"` |
+| [Windows Reserved Filenames staged on Office file services](../content/microsoft-365-windows-reserved-filenames-staged-on-office-file-services-61c28cd7-3139-4731-8ea7-2cbbeabb4684-b20eb95c.md) | `UserAgent !has "Mac OS"` |
 
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
 
@@ -381,21 +366,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map File Entity to OfficeActivity Event](../content/threat-intelligence-new-ti-map-file-entity-to-officeactivity-event-bbdb951c-9aba-4d66-85df-f564a1f86881-bfe1f81a.md) |  |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Rare domains seen in Cloud Logs](../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.md) |  |
-| [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
-| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
-
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [New Location Sign in with Mail forwarding activity](../content/github-only-new-location-sign-in-with-mail-forwarding-activity-a689a21c-9369-47e6-b5fa-e1f65045c1cf-7ac74009.md) |  |
-
-### Workbooks (32)
+### Workbooks (19)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -403,25 +374,25 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Log4jPostCompromiseHunting](../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.md) |  |
 
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `OperationName contains "PIM"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
+| Workbook |
+|:-------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `RecordType == "MicrosoftTeams"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`<br>`RecordType == "MicrosoftTeams"`
 
 | Workbook |
 |:-------------|
 | [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
 
-**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`ExternalAccess == "True"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`Parameters contains "ForwardTo"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`
 
 | Workbook |
 |:-------------|
 | [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |
 
-**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`ExternalAccess == "True"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`Parameters contains "ForwardTo"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`
 
 | Workbook |
 |:-------------|
@@ -439,7 +410,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `OfficeWorkload == "Exchange"`<br>`RecordType == "ExchangeAdmin"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `OfficeWorkload == "Exchange"`<br>`Operation !contains "access"`<br>`Operation contains "policy"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`<br>`RecordType == "ExchangeAdmin"`
 
 | Workbook |
 |:-------------|
@@ -449,8 +420,8 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [ExchangeOnline](../content/microsoft-365-exchangeonline-c35f597f.md) | `OfficeWorkload == "Exchange"` |
-| [Office365](../content/microsoft-365-office365-0c09583c.md) | `OfficeWorkload in "Exchange,OneDrive,SharePoint"` |
+| [ExchangeOnline](../content/microsoft-365-exchangeonline-c35f597f.md) | `ExternalAccess == "True"`<br>`OfficeWorkload == "Exchange"`<br>`Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"`<br>`Operation contains "HardDelete"`<br>`UserType == "Admin"` |
+| [Office365](../content/microsoft-365-office365-0c09583c.md) | `ExternalAccess == "True"`<br>`OfficeWorkload in "Exchange,OneDrive,SharePoint"`<br>`Operation in "FileDownloaded,FileUploaded,MailboxLogin"`<br>`Operation contains "File"`<br>`Operation contains "Folder"`<br>`Operation contains "add"`<br>`Operation contains "create"`<br>`Operation contains "delete"`<br>`Operation contains "group"`<br>`Operation contains "update"`<br>`Operation contains "user"`<br>`UserType == "Admin"` |
 | [SharePointAndOneDrive](../content/microsoft-365-sharepointandonedrive-f8028d14.md) | `OfficeWorkload in "OneDrive,SharePoint"` |
 
 **In solution [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md):** `RecordType == "ExchangeAdmin"`
@@ -460,59 +431,41 @@ This table is ingested by the following connectors:
 | [Microsoft Exchange Admin Activity - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-admin-activity-online-c51be957.md) |
 | [Microsoft Exchange Search AdminAuditLog - Online](../content/microsoft-exchange-security-exchange-online-microsoft-exchange-search-adminauditlog-online-11d0bde2.md) |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`
 
 | Workbook |
 |:-------------|
 | [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):**
+**In solution [NISTSP80053](../solutions/nistsp80053.md):** `Operation contains "file"`<br>`OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
+| Workbook |
+|:-------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):**
+**In solution [SOC Handbook](../solutions/soc-handbook.md):** `Operation in "New-InboxRule,Set-Mailbox"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+| Workbook |
+|:-------------|
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |
 
-**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"`
+**In solution [SOX IT Compliance](../solutions/sox-it-compliance.md):** `Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"`
 
 | Workbook |
 |:-------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |
 
-**In solution [Teams](../solutions/teams.md):** `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"`
+**In solution [Teams](../solutions/teams.md):** `CommunicationType == "Team"`<br>`OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"`<br>`Operation contains "Added"`<br>`Operation contains "Created"`<br>`Operation contains "Deleted"`<br>`Operation contains "Removed"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`
 
 | Workbook |
 |:-------------|
 | [MicrosoftTeams](../content/teams-microsoftteams-d6922450.md) |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `RecordType == "MicrosoftTeams"`
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`RecordType == "MicrosoftTeams"`
 
 | Workbook |
 |:-------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AdvancedWorkbookConcepts](../content/github-only-advancedworkbookconcepts-3495e806.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [ExchangeOnline](../content/github-only-exchangeonline-663577e1.md) | `OfficeWorkload == "Exchange"` |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
-| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
-| [MicrosoftTeams](../content/github-only-microsoftteams-429824b1.md) | `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` |
-| [Office365](../content/github-only-office365-fa05d9ea.md) | `OfficeWorkload in "Exchange,OneDrive,SharePoint"` |
-| [SharePointAndOneDrive](../content/github-only-sharepointandonedrive-a82e2f82.md) | `OfficeWorkload in "OneDrive,SharePoint"` |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `OfficeWorkload == "Exchange"`<br>`OperationName == "Add member to group"`<br>`OperationName in "Set domain authentication,Set federation settings on domain"`<br>`OperationName has_any "Add service principal,Certificates`<br>`secrets management"` |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (2)
 
@@ -528,60 +481,236 @@ This table is ingested by the following connectors:
 |:-------|:---------|
 | [MESOfficeActivityLogs](../parsers/mesofficeactivitylogs.md) | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 
-## Selection Criteria Summary (17 criteria, 54 total references)
+## Selection Criteria Summary (47 criteria, 60 total references)
 
-References by type: 1 connectors, 51 content items, 1 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 57 content items, 1 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OfficeWorkload == "Exchange"` | - | 15 | - | - | **15** |
-| `OfficeWorkload == "MicrosoftTeams"` | - | 8 | - | - | **8** |
-| `RecordType == "ExchangeAdmin"` | - | 4 | 1 | 1 | **6** |
-| `RecordType == "SharePointFileOperation"` | - | 5 | - | - | **5** |
-| `OfficeWorkload == "MicrosoftTeams"`<br>`RecordType == "SharePointFileOperation"` | - | 3 | - | - | **3** |
-| `OfficeWorkload == "SharePoint"` | - | 3 | - | - | **3** |
-| `OfficeWorkload has_any "OneDrive,SharePoint"` | - | 2 | - | - | **2** |
-| `RecordType == "MicrosoftTeams"` | - | 2 | - | - | **2** |
-| `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"` | - | 2 | - | - | **2** |
+| `OfficeWorkload == "Exchange"` | - | 4 | - | - | **4** |
+| `RecordType == "ExchangeAdmin"` | - | 2 | 1 | 1 | **4** |
+| `OfficeWorkload == "MicrosoftTeams"` | - | 2 | - | - | **2** |
+| `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "TeamDeleted"` | - | 2 | - | - | **2** |
+| `OfficeWorkload == "Exchange"`<br>`Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"`<br>`Parameters has_any "ForwardTo"` | - | 2 | - | - | **2** |
+| `EventSource == "SharePoint"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`Operation has_any "FileDownloaded"` | - | 2 | - | - | **2** |
+| `Operation in "FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"` | - | 2 | - | - | **2** |
+| `UserAgent !has "Mac OS"` | - | 2 | - | - | **2** |
+| `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`ExternalAccess == "True"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`Parameters contains "ForwardTo"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 2 | - | - | **2** |
 | `OfficeWorkload in "Exchange,MicrosoftTeams,OneDrive,SharePoint"` | 1 | - | - | - | **1** |
-| `OfficeWorkload == "AzureActiveDirectory"` | - | 1 | - | - | **1** |
+| `Operation == "New-InboxRule"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "Exchange"`<br>`Operation == "Set-AdminAuditLogConfig"`<br>`UserType in "Admin,DcAdmin"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "FileAccessed,FileUploaded"`<br>`Operation in "MemberAdded,MemberRemoved"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "Exchange"`<br>`Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "Exchange"`<br>`Operation == "New-InboxRule"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`ResultStatus in "Succeeded,True"` | - | 1 | - | - | **1** |
+| `ClientIP has "."`<br>`ClientIP has "["`<br>`RecordType == "ExchangeAdmin"`<br>`UserType in "Admin,DcAdmin"` | - | 1 | - | - | **1** |
+| `Operation contains "download"`<br>`Operation contains "upload"` | - | 1 | - | - | **1** |
+| `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"`<br>`UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "SharePoint"`<br>`Operation == "FileUploaded"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "SharePoint"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "SharePoint"`<br>`Operation == "FileDownloaded"` | - | 1 | - | - | **1** |
+| `Operation == "MailItemsAccessed"`<br>`ResultStatus == "Succeeded"` | - | 1 | - | - | **1** |
+| `OfficeObjectId has ".exe."`<br>`Operation in "FileAccessed,FileDownloaded"`<br>`RecordType == "SharePointFileOperation"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "MemberAdded,MemberRemoved"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "MemberAdded"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "BotAddedToTeam"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "MicrosoftTeams"`<br>`Operation == "MemberRoleChanged"` | - | 1 | - | - | **1** |
+| `RecordType == "ExchangeAdmin"`<br>`UserType in "Admin,DcAdmin"` | - | 1 | - | - | **1** |
+| `Logon_Type != "Owner"`<br>`OfficeWorkload == "Exchange"`<br>`Operation == "MailboxLogin"` | - | 1 | - | - | **1** |
+| `ClientIP has "."`<br>`ClientIP has "["`<br>`OfficeWorkload == "Exchange"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters contains "RedirectTo"` | - | 1 | - | - | **1** |
+| `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`OfficeWorkload == "Exchange"`<br>`Operation == "MailboxLogin"` | - | 1 | - | - | **1** |
+| `RecordType == "SharePointFileOperation"` | - | 1 | - | - | **1** |
+| `Operation in "FileAccessed,FileDownloaded,FileUploaded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"`<br>`UserId != "app@sharepoint"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "FileUploaded,MemberAdded"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
+| `OperationName contains "PIM"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`<br>`RecordType == "MicrosoftTeams"` | - | 1 | - | - | **1** |
 | `OfficeWorkload in "Exchange,OneDrive,SPO/OneDrive,SharePoint,Teams"` | - | 1 | - | - | **1** |
-| `OfficeWorkload == "Exchange"`<br>`RecordType == "ExchangeAdmin"` | - | 1 | - | - | **1** |
-| `OfficeWorkload in "Exchange,OneDrive,SharePoint"` | - | 1 | - | - | **1** |
+| `OfficeWorkload == "Exchange"`<br>`Operation !contains "access"`<br>`Operation contains "policy"`<br>`OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`<br>`RecordType == "ExchangeAdmin"` | - | 1 | - | - | **1** |
+| `ExternalAccess == "True"`<br>`OfficeWorkload == "Exchange"`<br>`Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"`<br>`Operation contains "HardDelete"`<br>`UserType == "Admin"` | - | 1 | - | - | **1** |
+| `ExternalAccess == "True"`<br>`OfficeWorkload in "Exchange,OneDrive,SharePoint"`<br>`Operation in "FileDownloaded,FileUploaded,MailboxLogin"`<br>`Operation contains "File"`<br>`Operation contains "Folder"`<br>`Operation contains "add"`<br>`Operation contains "create"`<br>`Operation contains "delete"`<br>`Operation contains "group"`<br>`Operation contains "update"`<br>`Operation contains "user"`<br>`UserType == "Admin"` | - | 1 | - | - | **1** |
 | `OfficeWorkload in "OneDrive,SharePoint"` | - | 1 | - | - | **1** |
-| `OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"` | - | 1 | - | - | **1** |
-| `OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"`<br>`OperationName has_any "directory write,policy update,role assignment,role update"` | - | 1 | - | - | **1** |
-| **Total** | **1** | **51** | **1** | **1** | **54** |
+| `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"`<br>`Parameters contains "ForwardTo"`<br>`Parameters contains "ForwardingSmtpAddress"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
+| `Operation contains "file"`<br>`OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"` | - | 1 | - | - | **1** |
+| `Operation in "New-InboxRule,Set-Mailbox"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | - | 1 | - | - | **1** |
+| `Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"` | - | 1 | - | - | **1** |
+| `CommunicationType == "Team"`<br>`OfficeWorkload == "MicrosoftTeams"`<br>`Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"`<br>`Operation contains "Added"`<br>`Operation contains "Created"`<br>`Operation contains "Deleted"`<br>`Operation contains "Removed"`<br>`RecordType == "SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`RecordType == "MicrosoftTeams"` | - | 1 | - | - | **1** |
+| **Total** | **1** | **57** | **1** | **1** | **60** |
+
+### ClientIP
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has .` | - | 2 | - | - | **2** |
+| `has [` | - | 2 | - | - | **2** |
+
+### ClientInfoString
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client` | - | 4 | - | - | **4** |
+
+### CommunicationType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Team` | - | 1 | - | - | **1** |
+
+### EventSource
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `SharePoint` | - | 2 | - | - | **2** |
+
+### ExternalAccess
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `True` | - | 4 | - | - | **4** |
+
+### Logon_Type
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= Owner` | - | 4 | - | - | **4** |
+
+### OfficeObjectId
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has .exe.` | - | 4 | - | - | **4** |
 
 ### OfficeWorkload
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Exchange` | 1 | 21 | - | - | **22** |
+| `Exchange` | 1 | 19 | - | - | **20** |
 | `MicrosoftTeams` | 1 | 14 | - | - | **15** |
 | `SharePoint` | 1 | 6 | - | - | **7** |
 | `has_any OneDrive` | - | 7 | - | - | **7** |
 | `OneDrive` | 1 | 3 | - | - | **4** |
 | `has_any SharePoint` | - | 4 | - | - | **4** |
-| `AzureActiveDirectory` | - | 4 | - | - | **4** |
+| `AzureActiveDirectory` | - | 3 | - | - | **3** |
 | `has_any Exchange` | - | 3 | - | - | **3** |
 | `SPO/OneDrive` | - | 1 | - | - | **1** |
 | `Teams` | - | 1 | - | - | **1** |
+
+### Operation
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `FileUploaded` | - | 8 | - | - | **8** |
+| `New-InboxRule` | - | 6 | - | - | **6** |
+| `MemberAdded` | - | 6 | - | - | **6** |
+| `FileDownloaded` | - | 6 | - | - | **6** |
+| `Set-Mailbox` | - | 5 | - | - | **5** |
+| `MemberRemoved` | - | 4 | - | - | **4** |
+| `MailboxLogin` | - | 4 | - | - | **4** |
+| `FileAccessed` | - | 3 | - | - | **3** |
+| `TeamDeleted` | - | 3 | - | - | **3** |
+| `Set-InboxRule` | - | 3 | - | - | **3** |
+| `MemberRoleChanged` | - | 3 | - | - | **3** |
+| `MailItemsAccessed` | - | 2 | - | - | **2** |
+| `Add-MailboxPermission` | - | 2 | - | - | **2** |
+| `has_any FileDownloaded` | - | 2 | - | - | **2** |
+| `BotAddedToTeam` | - | 2 | - | - | **2** |
+| `Set-AdminAuditLogConfig` | - | 1 | - | - | **1** |
+| `contains download` | - | 1 | - | - | **1** |
+| `contains upload` | - | 1 | - | - | **1** |
+| `Add-MailboxFolderPermission` | - | 1 | - | - | **1** |
+| `New-ManagementRoleAssignment` | - | 1 | - | - | **1** |
+| `Set-TransportRule` | - | 1 | - | - | **1** |
+| `!contains access` | - | 1 | - | - | **1** |
+| `contains policy` | - | 1 | - | - | **1** |
+| `Remove-MailboxPermission` | - | 1 | - | - | **1** |
+| `UpdateFolderPermissions` | - | 1 | - | - | **1** |
+| `contains HardDelete` | - | 1 | - | - | **1** |
+| `contains File` | - | 1 | - | - | **1** |
+| `contains Folder` | - | 1 | - | - | **1** |
+| `contains add` | - | 1 | - | - | **1** |
+| `contains create` | - | 1 | - | - | **1** |
+| `contains delete` | - | 1 | - | - | **1** |
+| `contains group` | - | 1 | - | - | **1** |
+| `contains update` | - | 1 | - | - | **1** |
+| `contains user` | - | 1 | - | - | **1** |
+| `contains file` | - | 1 | - | - | **1** |
+| `AddFolderPermissions` | - | 1 | - | - | **1** |
+| `AddedToGroup` | - | 1 | - | - | **1** |
+| `GroupAdded` | - | 1 | - | - | **1** |
+| `ModifyFolderPermissions` | - | 1 | - | - | **1** |
+| `PermissionLevelAdded` | - | 1 | - | - | **1** |
+| `Remove-ConditionalAccessPolicy` | - | 1 | - | - | **1** |
+| `Set-ConditionalAccessPolicy` | - | 1 | - | - | **1** |
+| `SharingSet` | - | 1 | - | - | **1** |
+| `AppInstalled` | - | 1 | - | - | **1** |
+| `TeamsAdminAction` | - | 1 | - | - | **1** |
+| `contains Added` | - | 1 | - | - | **1** |
+| `contains Created` | - | 1 | - | - | **1** |
+| `contains Deleted` | - | 1 | - | - | **1** |
+| `contains Removed` | - | 1 | - | - | **1** |
 
 ### OperationName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has_any Add directory role member` | - | 1 | - | - | **1** |
-| `has_any Add member to role` | - | 1 | - | - | **1** |
-| `has_any Add user` | - | 1 | - | - | **1** |
-| `has_any Create user` | - | 1 | - | - | **1** |
-| `has_any Role assignment` | - | 1 | - | - | **1** |
-| `has_any Update user` | - | 1 | - | - | **1** |
-| `has_any directory write` | - | 1 | - | - | **1** |
-| `has_any policy update` | - | 1 | - | - | **1** |
-| `has_any role assignment` | - | 1 | - | - | **1** |
-| `has_any role update` | - | 1 | - | - | **1** |
+| `Add member to role` | - | 6 | - | - | **6** |
+| `Add user` | - | 6 | - | - | **6** |
+| `Reset user password` | - | 6 | - | - | **6** |
+| `Update user` | - | 6 | - | - | **6** |
+| `contains PIM` | - | 4 | - | - | **4** |
+| `Consent to application` | - | 4 | - | - | **4** |
+| `contains Delete` | - | 3 | - | - | **3** |
+| `Sign-in activity` | - | 3 | - | - | **3** |
+| `!= Consent to application` | - | 3 | - | - | **3** |
+| `NetworkSecurityGroupEvents` | - | 2 | - | - | **2** |
+| `contains Create` | - | 2 | - | - | **2** |
+| `contains Remove` | - | 2 | - | - | **2** |
+| `contains Update` | - | 2 | - | - | **2** |
+| `ApplicationGatewayFirewall` | - | 2 | - | - | **2** |
+| `AzureFirewallIDSLog` | - | 2 | - | - | **2** |
+| `contains Add` | - | 1 | - | - | **1** |
+| `contains Audit` | - | 1 | - | - | **1** |
+| `contains Change` | - | 1 | - | - | **1** |
+| `contains Log` | - | 1 | - | - | **1** |
+| `contains Monitor` | - | 1 | - | - | **1** |
+| `contains Write` | - | 1 | - | - | **1** |
+| `contains reset` | - | 1 | - | - | **1** |
+| `!contains external` | - | 1 | - | - | **1** |
+| `!contains invite` | - | 1 | - | - | **1** |
+| `!contains licnense` | - | 1 | - | - | **1** |
+| `contains group` | - | 1 | - | - | **1** |
+| `contains member` | - | 1 | - | - | **1** |
+| `contains principal` | - | 1 | - | - | **1** |
+| `contains role` | - | 1 | - | - | **1** |
+| `contains user` | - | 1 | - | - | **1** |
+| `Create Deployment` | - | 1 | - | - | **1** |
+| `Create or Update Virtual Machine` | - | 1 | - | - | **1** |
+| `Create role assignment` | - | 1 | - | - | **1** |
+| `List Storage Account Keys` | - | 1 | - | - | **1** |
+| `Set domain authentication` | - | 1 | - | - | **1** |
+| `Set federation settings on domain` | - | 1 | - | - | **1** |
+| `contains delet` | - | 1 | - | - | **1** |
+| `contains delete` | - | 1 | - | - | **1** |
+| `contains remove` | - | 1 | - | - | **1** |
+| `has Create` | - | 1 | - | - | **1** |
+| `has_any Create` | - | 1 | - | - | **1** |
+| `has_any Update` | - | 1 | - | - | **1** |
+| `has_any Ip` | - | 1 | - | - | **1** |
+| `has_any Security Rule` | - | 1 | - | - | **1** |
+| `Disable Strong Authentication` | - | 1 | - | - | **1** |
+| `contains password` | - | 1 | - | - | **1** |
+| `AzureFirewallThreatIntelLog` | - | 1 | - | - | **1** |
+
+### Parameters
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has Deleted Items` | - | 5 | - | - | **5** |
+| `has Junk Email` | - | 5 | - | - | **5** |
+| `contains ForwardTo` | - | 4 | - | - | **4** |
+| `has DeleteMessage` | - | 2 | - | - | **2** |
+| `has_any ForwardTo` | - | 2 | - | - | **2** |
+| `contains ForwardingSmtpAddress` | - | 2 | - | - | **2** |
+| `contains RedirectTo` | - | 1 | - | - | **1** |
 
 ### RecordType
 
@@ -590,6 +719,39 @@ References by type: 1 connectors, 51 content items, 1 ASIM parsers, 1 other pars
 | `SharePointFileOperation` | - | 11 | - | - | **11** |
 | `ExchangeAdmin` | - | 8 | 1 | 1 | **10** |
 | `MicrosoftTeams` | - | 2 | - | - | **2** |
+
+### ResultStatus
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Succeeded` | - | 3 | - | - | **3** |
+| `True` | - | 1 | - | - | **1** |
+
+### SourceRelativeUrl
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has Microsoft Teams Chat Files` | - | 7 | - | - | **7** |
+
+### UserAgent
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!has Mac OS` | - | 2 | - | - | **2** |
+
+### UserId
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has_any NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)` | - | 1 | - | - | **1** |
+| `!= app@sharepoint` | - | 1 | - | - | **1** |
+
+### UserType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Admin` | - | 5 | - | - | **5** |
+| `DcAdmin` | - | 3 | - | - | **3** |
 
 ---
 

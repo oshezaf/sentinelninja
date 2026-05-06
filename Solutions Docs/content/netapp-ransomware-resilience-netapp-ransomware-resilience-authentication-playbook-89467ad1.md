@@ -14,6 +14,27 @@ This playbook creates a shared Key Vault for NetApp Ransomware Resilience creden
 | **Solution** | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience-Auth-Playbook/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `keyvault` | Managed | 1 | 3 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`keyvault`** (managedApi):
+- *Get_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('client-id')}/value`
+- *Get_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('client-secret')}/value`
+- *Get_Account_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('account-id')}/value`
+
+**`http`** (builtin):
+- *HTTP_Token_Request*: method=`POST`, uri=`https://netapp-cloud-account.auth0.com/oauth/token`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [NetApp-RansomwareResilience-Auth-Playbook/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience-Auth-Playbook/readme.md)*

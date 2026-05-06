@@ -14,6 +14,22 @@
 | **Solution** | [Recorded Future](../solutions/recorded-future.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Deprecated/RecordedFuture-HASH-Observed_in_Underground_Virus_Test_Sites-IndicatorProcessor/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `recordedfuture` | Managed | 0 | 1 |
+| `recordedfuturev2` | Managed | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`recordedfuture`** (managedApi):
+- *Recorded_Future_RiskLists_and_SCF_Download*: method=`get`, path=`/fusion/files`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Deprecated/RecordedFuture-HASH-Observed_in_Underground_Virus_Test_Sites-IndicatorProcessor/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Deprecated/RecordedFuture-HASH-Observed_in_Underground_Virus_Test_Sites-IndicatorProcessor/readme.md)*

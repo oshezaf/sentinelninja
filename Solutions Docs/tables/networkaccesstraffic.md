@@ -147,7 +147,7 @@ This table is ingested by the following connectors:
 | [GSA - Detect Abnormal Deny Rate for Source to Destination IP](../content/global-secure-access-gsa-detect-abnormal-deny-rate-for-source-to-destination-ip-e3b6a9e7-4c3a-45e6-8baf-1d3bfa8e0c2b-aebab9fd.md) |  |
 | [GSA - Detect Connections Outside Operational Hours](../content/global-secure-access-gsa-detect-connections-outside-operational-hours-4c9f0a9e-44d7-4c9b-b7f0-f6a6e0d8f8fa-4e59bfee.md) |  |
 | [GSA - Detect Protocol Changes for Destination Ports](../content/global-secure-access-gsa-detect-protocol-changes-for-destination-ports-f6a8d6a5-3e9f-47c8-a8d5-1b2b9d3b7d6a-c17b64bc.md) |  |
-| [GSA - Detect Source IP Scanning Multiple Open Ports](../content/global-secure-access-gsa-detect-source-ip-scanning-multiple-open-ports-82cfa6b9-5f7e-4b8b-8b2f-a63f21b7a7d1-5a266ab8.md) |  |
+| [GSA - Detect Source IP Scanning Multiple Open Ports](../content/global-secure-access-gsa-detect-source-ip-scanning-multiple-open-ports-82cfa6b9-5f7e-4b8b-8b2f-a63f21b7a7d1-5a266ab8.md) | `Action == "Allowed"` |
 | [GSA - TI Domain Entity](../content/global-secure-access-gsa-ti-domain-entity-4ef07345-5d89-4f5b-9c64-a180d81a6176-c4743d20.md) |  |
 | [GSA - TI IP Entity](../content/global-secure-access-gsa-ti-ip-entity-3ebd25b1-6f54-49f9-b5a5-0246357ce4ca-9601350c.md) |  |
 | [GSA - TI URL Entity](../content/global-secure-access-gsa-ti-url-entity-347c6cb3-33d2-4753-b7f6-eab946a8cd51-ab57a79a.md) |  |
@@ -158,8 +158,34 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) |  |
-| [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md) |  |
+| [GSAM365EnrichedEvents](../content/global-secure-access-gsam365enrichedevents-b8162378.md) | `TrafficType in "entra,microsoft365"` |
+| [GSANetworkTraffic](../content/global-secure-access-gsanetworktraffic-b1c45294.md) | `Action in "Allow,Block"` |
+
+## Selection Criteria Summary (3 criteria, 3 total references)
+
+References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Action == "Allowed"` | - | 1 | - | - | **1** |
+| `TrafficType in "entra,microsoft365"` | - | 1 | - | - | **1** |
+| `Action in "Allow,Block"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **3** | **0** | **0** | **3** |
+
+### Action
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Allowed` | - | 1 | - | - | **1** |
+| `Allow` | - | 1 | - | - | **1** |
+| `Block` | - | 1 | - | - | **1** |
+
+### TrafficType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `entra` | - | 1 | - | - | **1** |
+| `microsoft365` | - | 1 | - | - | **1** |
 
 ---
 

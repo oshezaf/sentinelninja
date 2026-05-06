@@ -16,6 +16,24 @@ This playbook creates an educational Attack Simulator 'How-To Guide' simulation 
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `http` | Built-in | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`http`** (builtin):
+- *Get_Incident*: method=`GET`, uri=`https://graph.microsoft.com/beta/security/incidents/@{variables('DefenderIncidentID')}?$expand=alerts`
+- *Run_Hunting_Query_to_find_non_reporting_users*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/runHuntingQuery`
+- *Create_How_To_guide_Simulation_against_non_reporters*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/attackSimulation/simulations`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [AttackSimulatorTrainingNonReporters/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Playbooks/AttackSimulatorTrainingNonReporters/readme.md)*

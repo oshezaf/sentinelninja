@@ -14,6 +14,32 @@ This playbook allows blocking/unblocking URLs in PaloAlto, using **predefined ad
 | **Solution** | [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-BlockURL-EntityTrigger/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `paloaltoconnector` | Managed | 0 | 5 |
+| `teams` | Managed | 1 | 0 |
+| `PAN-OSRestApiCustomConnector` | Custom | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+
+**`paloaltoconnector`** (managedApi):
+- *Create_an_address_object*: method=`post`, path=`/restapi/v10.0/Objects/Addresses`
+- *Update_an_address_object_group*: method=`put`, path=`/restapi/v10.0/Objects/AddressGroups`
+- *List_address_groups*: method=`get`, path=`/restapi/v10.0/Objects/AddressGroups`
+- *List_address_objects*: method=`get`, path=`/restapi/v10.0/Objects/Addresses`
+- *List_security_rules*: method=`get`, path=`/restapi/v10.0/Policies/SecurityRules`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [PaloAltoPlaybooks/PaloAlto-PAN-OS-BlockURL-EntityTrigger/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-BlockURL-EntityTrigger/readme.md)*

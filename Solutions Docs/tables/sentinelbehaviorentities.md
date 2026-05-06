@@ -90,17 +90,32 @@ This table is used by the following solutions:
 
 ### Workbooks (1)
 
-**In solution [UEBA Essentials](../solutions/ueba-essentials.md):**
+**In solution [UEBA Essentials](../solutions/ueba-essentials.md):** `EntityType != "Ip"`
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [UEBABehaviorsAnalysisWorkbook](../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.md) |  |
+| Workbook |
+|:-------------|
+| [UEBABehaviorsAnalysisWorkbook](../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.md) |
 
 ## Resource Types
 
 This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/securityinsights`
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EntityType != "Ip"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### EntityType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= Ip` | - | 1 | - | - | **1** |
 
 ---
 

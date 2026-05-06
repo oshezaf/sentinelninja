@@ -83,8 +83,24 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Power Automate - Departing employee flow activity](../content/microsoft-business-applications-power-automate-departing-employee-flow-activity-b1e11b8c-545a-4dea-a912-0008e160d183-ecbb18b0.md) |  |
+| [Power Automate - Departing employee flow activity](../content/microsoft-business-applications-power-automate-departing-employee-flow-activity-b1e11b8c-545a-4dea-a912-0008e160d183-ecbb18b0.md) | `EventOriginalType in "CreateFlow,EditFlow"` |
 | [Power Automate - Unusual bulk deletion of flow resources](../content/microsoft-business-applications-power-automate-unusual-bulk-deletion-of-flow-resources-56cb646e-56a0-4f0e-8866-9bc1dd15da78-eb6e5a2f.md) |  |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventOriginalType in "CreateFlow,EditFlow"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### EventOriginalType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `CreateFlow` | - | 1 | - | - | **1** |
+| `EditFlow` | - | 1 | - | - | **1** |
 
 ---
 

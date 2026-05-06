@@ -14,6 +14,22 @@ This playbook fetches indicators from OpenCTI and send to Sentinel. Supported ty
 | **Solution** | [OpenCTI](../solutions/opencti.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks/OpenCTI-GetIndicatorsStream/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `OpenCTICustomConnector` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`OpenCTICustomConnector`** (customApi):
+- *Run_Sample_GraphQL_Query_to_check_Auth_*: method=`post`, path=`/graphql`
+- *Run_GraphQL_Query_Get_Indicators*: method=`post`, path=`/graphql`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [OpenCTIPlaybooks/OpenCTI-GetIndicatorsStream/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenCTI/Playbooks/OpenCTIPlaybooks/OpenCTI-GetIndicatorsStream/readme.md)*

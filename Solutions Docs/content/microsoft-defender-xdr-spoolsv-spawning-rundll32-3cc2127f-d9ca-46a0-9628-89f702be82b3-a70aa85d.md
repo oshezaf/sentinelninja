@@ -21,9 +21,9 @@ Look for the spoolsv.exe launching rundll32.exe with an empty command line.
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine endswith "rundll32.exe"`<br>`InitiatingProcessFileName == "rundll32.exe"`<br>`InitiatingProcessParentFileName has "spoolsv.exe"` | ✓ | ✗ | ? |
 
 ---
 

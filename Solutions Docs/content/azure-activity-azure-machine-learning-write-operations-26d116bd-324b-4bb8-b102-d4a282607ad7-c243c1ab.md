@@ -22,9 +22,9 @@ Shows the most prevalent users who perform write operations on Azure Machine Lea
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"`<br>`OperationNameValue contains "write"`<br>`ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"` | ? | ✗ | ? |
 
 ---
 

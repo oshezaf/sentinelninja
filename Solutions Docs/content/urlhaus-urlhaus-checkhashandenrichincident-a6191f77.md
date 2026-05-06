@@ -14,6 +14,27 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [URLhaus](../solutions/urlhaus.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/URLhaus/Playbooks/URLhaus-CheckHashAndEnrichIncident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `URLhausAPI` | Custom | 1 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+
+**`URLhausAPI`** (customApi):
+- *Query_payload_information(md5_hash)*: method=`post`, path=`/payload/`
+- *Query_payload_information(sha256_hash)*: method=`post`, path=`/payload/`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [URLhaus-CheckHashAndEnrichIncident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/URLhaus/Playbooks/URLhaus-CheckHashAndEnrichIncident/readme.md)*

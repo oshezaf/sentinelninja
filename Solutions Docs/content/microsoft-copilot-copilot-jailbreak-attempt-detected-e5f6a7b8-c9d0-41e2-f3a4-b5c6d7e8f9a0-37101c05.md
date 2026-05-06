@@ -25,9 +25,9 @@ Detects jailbreak attempts in Copilot interactions where users are trying to byp
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CopilotActivity`](../tables/copilotactivity.md) | `LLMEventData has "JailbreakDetected"` | ✓ | ✗ | ? |
 
 ---
 

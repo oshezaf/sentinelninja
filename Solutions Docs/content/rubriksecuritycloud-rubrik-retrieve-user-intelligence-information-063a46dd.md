@@ -14,6 +14,38 @@ This playbook queries Rubrik Security Cloud to get risk detail and policy hits d
 | **Solution** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikRetrieveUserIntelligenceInformation/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
+| `azuresentinel` | Managed | 1 | 8 |
+| `http` | Built-in | 0 | 2 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_User_Details_to_Workspace*: method=`post`, path=`/api/logs`
+- *Send_Policy_hits_details_to_Workspace*: method=`post`, path=`/api/logs`
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_with_userDetails*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_with_user_access_details_only*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_with_user_and_risk_details*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_with_user_data*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_with_user_policy_data*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_for_no_policy_hits_data*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_with_user_and_risk_details_only*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`http`** (builtin):
+- *Get_Policy_hits_details_for_user*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
+- *Get_User_Details*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RubrikRetrieveUserIntelligenceInformation/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikRetrieveUserIntelligenceInformation/readme.md)*

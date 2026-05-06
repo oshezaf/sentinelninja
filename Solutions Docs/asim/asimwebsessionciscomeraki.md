@@ -29,10 +29,10 @@ This ASIM parser supports normalizing Cisco Meraki logs to the ASIM Web Session 
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | ✓ | ✓ | ? |
-| [`meraki_CL`](../tables/meraki-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ? |
+| [`meraki_CL`](../tables/meraki-cl.md) |  | ? | ✓ | ? |
 
 ## Parameters
 
@@ -46,13 +46,15 @@ The following connectors provide data for this parser:
 
 | Connector | Solution |
 |:----------|:---------|
-| [CiscoMeraki(usingRESTAPI)](../connectors/ciscomeraki-usingrestapi.md) | [CiscoMeraki](../solutions/ciscomeraki.md) |
-| [CiscoMerakiNativePoller](../connectors/ciscomerakinativepoller.md) | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [CiscoSDWAN](../connectors/ciscosdwan.md) | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
+| [CiscoUCS](../connectors/ciscoucs.md) | [Cisco UCS (legacy connector)](../solutions/cisco-ucs.md) |
+| [CitrixADC](../connectors/citrixadc.md) | [Citrix ADC (legacy connector)](../solutions/citrix-adc.md) |
 | [CustomlogsviaAMA](../connectors/customlogsviaama.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | [Forescout](../connectors/forescout.md) | [Forescout (Legacy)](../solutions/forescout-legacy.md) |
+| [RSASecurIDAM](../connectors/rsasecuridam.md) | [RSA SecurID (legacy connector)](../solutions/rsa-securid.md) |
+| [WatchguardFirebox](../connectors/watchguardfirebox.md) | [Watchguard Firebox (legacy connector)](../solutions/watchguard-firebox.md) |
 
-**Solutions:** [Cisco SD-WAN](../solutions/cisco-sd-wan.md), [CiscoMeraki](../solutions/ciscomeraki.md), [CustomLogsAma](../solutions/customlogsama.md), [Forescout (Legacy)](../solutions/forescout-legacy.md)
+**Solutions:** [Cisco SD-WAN](../solutions/cisco-sd-wan.md), [Cisco UCS (legacy connector)](../solutions/cisco-ucs.md), [Citrix ADC (legacy connector)](../solutions/citrix-adc.md), [CustomLogsAma](../solutions/customlogsama.md), [Forescout (Legacy)](../solutions/forescout-legacy.md), [RSA SecurID (legacy connector)](../solutions/rsa-securid.md), [Watchguard Firebox (legacy connector)](../solutions/watchguard-firebox.md)
 
 ## References
 

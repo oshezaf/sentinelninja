@@ -14,6 +14,33 @@ This playbook sends an adaptive card to the SOC Teams channel, lets the analyst 
 | **Solution** | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-TakeDeviceActionFromTeams/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `teams` | Managed | 1 | 1 |
+| `CarbonBlackCloudConnector` | Custom | 1 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident*: method=`put`, path=`/Incidents`
+- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+
+**`teams`** (managedApi):
+- *Post_your_own_adaptive_card_as_the_Flow_bot_to_a_channel*: method=`post`, path=`/flowbot/actions/adaptivecard/recipienttypes/channel`
+
+**`CarbonBlackCloudConnector`** (customApi):
+- *Search_devices_in_your_organization*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search`
+- *device_actions_QUARANTINE*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions`
+- *device_actions_UPDATE_POLICY*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CarbonBlack-TakeDeviceActionFromTeams/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Playbooks/CarbonBlack-TakeDeviceActionFromTeams/readme.md)*

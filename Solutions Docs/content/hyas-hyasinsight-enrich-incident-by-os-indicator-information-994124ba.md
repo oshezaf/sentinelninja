@@ -14,6 +14,28 @@ This playbook enriches file hashes asscociated with an incident with by os indic
 | **Solution** | [HYAS](../solutions/hyas.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS/Playbooks/HYAS-Insight-File-Hash-OS-Indicator-Data/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `hyasinsight` | Managed | 1 | 0 |
+| `hyasinsight_1` | Managed | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
+
+**`hyasinsight_1`** (managedApi):
+- *Get_Open_Source_Indicators_Information_SHA1*: method=`get`, path=`/os_indicators`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [HYAS-Insight-File-Hash-OS-Indicator-Data/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HYAS/Playbooks/HYAS-Insight-File-Hash-OS-Indicator-Data/readme.md)*

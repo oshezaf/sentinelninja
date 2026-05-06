@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Event &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="event">Event</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for Event table in Azure Monitor Logs.</p>
 <table>
@@ -200,10 +200,10 @@
 <li><a href="../solutions/dora-compliance.html">DORA Compliance</a></li>
 <li><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></li>
 <li><a href="../solutions/legacy-ioc-based-threat-protection.html">Legacy IOC based Threat Protection</a></li>
+<li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></li>
 <li><a href="../solutions/microsoft-exchange-security-exchange-online.html">Microsoft Exchange Security - Exchange Online</a></li>
 <li><a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/veeam.html">Veeam</a></li>
 <li><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></li>
 <li><a href="../solutions/windows-security-events.html">Windows Security Events</a></li>
@@ -221,7 +221,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../connectors/automatedlogicwebctrl.html">Automated Logic WebCTRL </a></td>
-<td style="text-align: left;"><code>Source == "ALCWebCTRL"</code></td>
+<td style="text-align: left;"><code>EventLevel in "1,2,3"</code><br><code>Source == "ALCWebCTRL"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a></td>
@@ -238,8 +238,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (64)</h2>
-<h3 id="analytic-rules">Analytic Rules (30)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (39)</h2>
+<h3 id="analytic-rules">Analytic Rules (18)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong> <code>EventID == "3"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code></p>
 <table>
 <thead>
@@ -327,7 +327,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a>:</strong> <code>EventID == "0"</code><br><code>EventLog == "Application"</code><br><code>Source == "MOVEit DMZ Audit"</code></p>
+<p><strong>In solution <a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a>:</strong> <code>EventID == "0"</code><br><code>EventLog == "Application"</code><br><code>RenderedDescription has_any "Downloaded"</code><br><code>Source == "MOVEit DMZ Audit"</code></p>
 <table>
 <thead>
 <tr>
@@ -381,66 +381,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.html">ADFS DKM Master Key Export</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.html">Audit policy manipulation using auditpol utility</a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-com-event-system-loading-new-dll-02f6c2e5-219d-4426-a0bf-ad67abc63d53-d3c38f00.html">COM Event System Loading New DLL</a></td>
-<td style="text-align: left;"><code>EventID in "1,7"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-dsrm-account-abuse-979c42dd-533e-4ede-b18b-31a84ba8b3d6-7eba24fb.html">DSRM Account Abuse</a></td>
-<td style="text-align: left;"><code>EventID == "13"</code><br><code>EventLog == "Microsoft-Windows-Sysmon/Operational"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.html">Email access via active sync</a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.html">Europium - Hash and IP IOCs - September 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.html">Gain Code Execution on ADFS Server via Remote WMI Execution</a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.html">Mercury - Domain, Hash and IP IOCs - August 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-modification-of-accessibility-features-d714ef62-1a56-4779-804f-91c4158e528d-44b1d2cd.html">Modification of Accessibility Features</a></td>
-<td style="text-align: left;"><code>EventID == "1"</code><br><code>EventLog == "Microsoft-Windows-Sysmon/Operational"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.html">Prestige ransomware IOCs Oct 2022</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-silk-typhoon-suspicious-um-service-error-0625fcce-6d52-491e-8c68-1d9b801d25b9-6787e2f2.html">Silk Typhoon Suspicious UM Service Error</a></td>
-<td style="text-align: left;"><code>EventLog == "Application"</code><br><code>Source startswith "MSExchange"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.html">Solorigate Named Pipe</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (16)</h3>
+<h3 id="hunting-queries">Hunting Queries (12)</h3>
 <p><strong>In solution <a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -464,7 +405,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-potential-microsoft-security-services-tampering-e10e1d2f-265d-4d90-9037-7f3a6ed8a91e-8c1dc76e.html">Potential Microsoft Security Services Tampering</a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-SENSE"</code></td>
+<td style="text-align: left;"><code>ParameterXml in "&lt;Param&gt;WinDefend&lt;/Param&gt;,&lt;Param&gt;sgrmbroker&lt;/Param&gt;"</code><br><code>Source == "Microsoft-Windows-SENSE"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.html">Rare Windows Firewall Rule updates using Netsh</a></td>
@@ -515,21 +456,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
 <p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
@@ -540,24 +466,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-ad-fs-database-local-sql-statements-81fab62b-ef92-487a-9c35-a91a116309e6-3d6b6fc8.html">AD FS Database Local SQL Statements</a></td>
-<td style="text-align: left;"><code>EventID == "33205"</code><br><code>EventLog == "Application"</code><br><code>Source == "MSSQL$MICROSOFT##WID"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-potential-local-exploitation-for-privilege-escalation-a78b826e-f2d1-42f9-b21b-20cf3bc2d391-4c7607f3.html">Potential Local Exploitation for Privilege Escalation</a></td>
-<td style="text-align: left;"><code>EventID == "1"</code><br><code>EventLog == "Microsoft-Windows-Sysmon/Operational"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-309055ae.html">Rare firewall rule changes using netsh</a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-windows-system-shutdown-reboot-sysmon-024b3726-add7-4e06-842d-932034ba21f7-a74b2f46.html">Windows System Shutdown/Reboot(Sysmon)</a></td>
-<td style="text-align: left;"><code>EventID == "1"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.html">Hunt for alerts correlated with Teams messages</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (18)</h3>
+<h3 id="workbooks">Workbooks (9)</h3>
 <p><strong>In solution <a href="../solutions/azure-web-application-firewall-waf.html">Azure Web Application Firewall (WAF)</a>:</strong></p>
 <table>
 <thead>
@@ -588,22 +502,20 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>RenderedDescription contains "Hello"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong> <code>EventID in "1001,1069,1205"</code></p>
+<p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong> <code>EventID in "1001,1069,1205"</code><br><code>EventLevelName == "Error"</code><br><code>RenderedDescription has_any "failover"</code></p>
 <table>
 <thead>
 <tr>
@@ -671,53 +583,6 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/veeam-veeamsecurityactivities-f559a349.html">VeeamSecurityActivities</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-<td style="text-align: left;"><code>EventLog == "Application"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code><br><code>Source startswith "MSExchange"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-insecureprotocols-bd42e6f8.html">InsecureProtocols</a></td>
-<td style="text-align: left;"><code>EventLog == "Microsoft-Windows-SMBServer/Audit"</code><br><code>EventLog == "System"</code><br><code>Source == "NETLOGON"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code><br><code>Source == "Microsoft-Windows-SENSE"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code><br><code>Source == "Microsoft-Windows-SENSE"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sysmonthreathunting-ea4856c6.html">SysmonThreatHunting</a></td>
-<td style="text-align: left;"><code>Source contains "sysmon"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-veeamsecurityactivities-c31c4544.html">VeeamSecurityActivities</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-webapplicationfirewallwaftypeevents-96b07e7c.html">WebApplicationFirewallWAFTypeEvents</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -836,8 +701,8 @@
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 <li><code>microsoft.azurestackhci/clusters</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (31 criteria, 59 total references)</h2>
-<p>References by type: 4 connectors, 42 content items, 6 ASIM parsers, 7 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (29 criteria, 49 total references)</h2>
+<p>References by type: 4 connectors, 32 content items, 6 ASIM parsers, 7 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -851,22 +716,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>9</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "1"</code><br><code>EventLog == "Microsoft-Windows-Sysmon/Operational"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>6</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>EventID in "1,6"</code><br><code>EventLog == "MSExchange Management"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">5</td>
@@ -875,18 +724,18 @@
 <td style="text-align: center;"><strong>6</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "13"</code><br><code>EventLog == "Microsoft-Windows-Sysmon/Operational"</code></td>
+<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "1"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code></td>
+<td style="text-align: left;"><code>EventID == "1"</code><br><code>EventLog == "Microsoft-Windows-Sysmon/Operational"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
@@ -899,6 +748,22 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>EventID == "13"</code><br><code>EventLog == "Microsoft-Windows-Sysmon/Operational"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "1"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>EventID == "3"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -907,12 +772,20 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "0"</code><br><code>EventLog == "Application"</code><br><code>Source == "MOVEit DMZ Audit"</code></td>
+<td style="text-align: left;"><code>EventID == "0"</code><br><code>EventLog == "Application"</code><br><code>RenderedDescription has_any "Downloaded"</code><br><code>Source == "MOVEit DMZ Audit"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventLog == "MSExchange Management"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>EventLog == "Application"</code></td>
@@ -923,23 +796,15 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>EventLevel in "1,2,3"</code><br><code>Source == "ALCWebCTRL"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>EventLog in "Application,MSExchange Management,System"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Source == "ALCWebCTRL"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventLog == "MSExchange Management"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -979,23 +844,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "1,7"</code><br><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventLog == "Application"</code><br><code>Source startswith "MSExchange"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-SENSE"</code></td>
+<td style="text-align: left;"><code>ParameterXml in "&lt;Param&gt;WinDefend&lt;/Param&gt;,&lt;Param&gt;sgrmbroker&lt;/Param&gt;"</code><br><code>Source == "Microsoft-Windows-SENSE"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1011,7 +860,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "33205"</code><br><code>EventLog == "Application"</code><br><code>Source == "MSSQL$MICROSOFT##WID"</code></td>
+<td style="text-align: left;"><code>RenderedDescription contains "Hello"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1019,7 +868,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "1001,1069,1205"</code></td>
+<td style="text-align: left;"><code>EventID in "1001,1069,1205"</code><br><code>EventLevelName == "Error"</code><br><code>RenderedDescription has_any "failover"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1101,10 +950,10 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>4</strong></td>
-<td style="text-align: center;"><strong>42</strong></td>
+<td style="text-align: center;"><strong>32</strong></td>
 <td style="text-align: center;"><strong>6</strong></td>
 <td style="text-align: center;"><strong>7</strong></td>
-<td style="text-align: center;"><strong>59</strong></td>
+<td style="text-align: center;"><strong>49</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1124,10 +973,10 @@
 <tr>
 <td style="text-align: left;"><code>1</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">16</td>
+<td style="text-align: center;">12</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">5</td>
-<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;"><strong>18</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>6</code></td>
@@ -1140,10 +989,10 @@
 <tr>
 <td style="text-align: left;"><code>13</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">4</td>
-<td style="text-align: center;"><strong>9</strong></td>
+<td style="text-align: center;"><strong>8</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>3</code></td>
@@ -1171,14 +1020,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>10</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;"><strong>5</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>7</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1282,6 +1123,14 @@
 <td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>7</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>8</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1320,14 +1169,6 @@
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>33205</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>1001</code></td>
@@ -1379,6 +1220,68 @@
 </tr>
 </tbody>
 </table>
+<h3 id="eventlevel">EventLevel</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>1</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>2</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>3</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="eventlevelname">EventLevelName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Error</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <h3 id="eventlog">EventLog</h3>
 <table>
 <thead>
@@ -1395,10 +1298,10 @@
 <tr>
 <td style="text-align: left;"><code>Microsoft-Windows-Sysmon/Operational</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">12</td>
+<td style="text-align: center;">9</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>12</strong></td>
+<td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>MSExchange Management</code></td>
@@ -1411,10 +1314,10 @@
 <tr>
 <td style="text-align: left;"><code>Application</code></td>
 <td style="text-align: center;">2</td>
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>System</code></td>
@@ -1426,6 +1329,76 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>has shutdown.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameterxml">ParameterXml</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>&lt;Param&gt;WinDefend&lt;/Param&gt;</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;Param&gt;sgrmbroker&lt;/Param&gt;</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="rendereddescription">RenderedDescription</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has_any Downloaded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Hello</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any failover</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1450,10 +1423,10 @@
 <tr>
 <td style="text-align: left;"><code>Microsoft-Windows-Sysmon</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">16</td>
+<td style="text-align: center;">10</td>
 <td style="text-align: center;">6</td>
 <td style="text-align: center;">5</td>
-<td style="text-align: center;"><strong>27</strong></td>
+<td style="text-align: center;"><strong>21</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>Service Control Manager</code></td>
@@ -1480,23 +1453,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith MSExchange</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>Microsoft-Windows-SENSE</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>MSSQL$MICROSOFT##WID</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1514,8 +1471,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

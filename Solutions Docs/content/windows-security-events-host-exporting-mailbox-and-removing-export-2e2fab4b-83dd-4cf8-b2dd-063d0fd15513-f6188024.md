@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "New-MailboxExportRequest"`<br>`CommandLine has "Remove-MailboxExportRequest"`<br>`EventID == "4688"`<br>`Process in "cmd.exe,powershell.exe"` | ✓ | ✓ | ? |
 
 ---
 

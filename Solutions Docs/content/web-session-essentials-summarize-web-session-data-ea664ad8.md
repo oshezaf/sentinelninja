@@ -25,6 +25,31 @@ This content item queries data from the following tables:
 | [`WebSession_Summarized_SrcInfo_CL`](../tables/websession-summarized-srcinfo-cl.md) 🔶 | ? | ✓ | ? |
 | [`WebSession_Summarized_ThreatInfo_CL`](../tables/websession-summarized-threatinfo-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 4 |
+| `azuremonitorlogs` | Managed | 1 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector`** (managedApi):
+- *Send_Data_DstIP*: method=`post`, path=`/api/logs`
+- *Send_Data_SourceInfo*: method=`post`, path=`/api/logs`
+- *Send_Data_SrcIP*: method=`post`, path=`/api/logs`
+- *Send_Data*: method=`post`, path=`/api/logs`
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_DstIP*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_SourceInfo*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_SrcIP*: method=`post`, path=`/queryData`
+- *Run_query_and_list_results_ThreatInfo*: method=`post`, path=`/queryData`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [SummarizeWebSessionData/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Session%20Essentials/Playbooks/SummarizeWebSessionData/readme.md)*

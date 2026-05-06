@@ -14,6 +14,21 @@ This playbook provides an end-to-end example of adding a comment in the generate
 | **Solution** | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANIntrusionLogicAPP/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [CiscoSDWANIntrusionLogicAPP/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Playbooks/CiscoSDWANIntrusionLogicAPP/readme.md)*

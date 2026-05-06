@@ -14,6 +14,25 @@ This playbook can be run from incident context manually or from automation rule 
 | **Solution** | [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks/GCPBigQuery-GetQueryResults/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 1 |
+| `GCPBigQueryCustomConnector` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+
+**`GCPBigQueryCustomConnector`** (customApi):
+- *Run_Query_Job*: method=`post`, path=`/projects/@{encodeURIComponent(parameters('ProjectID'))}/queries`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [GCPBigQueryPlaybooks/GCPBigQuery-GetQueryResults/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20BigQuery/Playbooks/GCPBigQueryPlaybooks/GCPBigQuery-GetQueryResults/readme.md)*

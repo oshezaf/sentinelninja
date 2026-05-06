@@ -25,9 +25,9 @@ Background Intelligent Transfer Service (BITS) is a way to reliably download fil
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine has "/Upload"`<br>`ProcessCommandLine has_any "/Transfer"` | ✓ | ✗ | ? |
 
 ---
 

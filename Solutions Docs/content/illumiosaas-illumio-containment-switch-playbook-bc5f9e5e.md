@@ -14,6 +14,29 @@ This playbook leverages Illumio workloads API to contain and isolate a workload 
 | **Solution** | [IllumioSaaS](../solutions/illumiosaas.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `office365` | Managed | 1 | 0 |
+| `function` | Built-in | 0 | 7 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`function`** (builtin):
+- *PortBlockingFunction-runTrafficQuery*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/runTrafficQuery')]`
+- *PortBlockingFunction-fetchVisibilityOnlyWorkloadsFromTrafficResults*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/fetchVisibilityOnlyWorkloadsFromTrafficResults')]`
+- *PortBlockingFunction-createVirtualService*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createVirtualService')]`
+- *PortBlockingFunction-bindWorkloadsToVirtualService*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/bindWorkloadsToVirtualService')]`
+- *PortBlockingFunction-createAllowRuleForVirtualService*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createAllowRuleForVirtualService')]`
+- *PortBlockingFunction-changeWorkloadEnforcementState*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/changeWorkloadEnforcementState')]`
+- *PortBlockingFunction-createDenyRule*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createDenyRule')]`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Illumio-Port-Blocking-Switch/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/readme.md)*

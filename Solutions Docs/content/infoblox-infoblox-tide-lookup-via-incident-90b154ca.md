@@ -14,6 +14,32 @@ The playbook takes entity type and value from incident available in Workbook and
 | **Solution** | [Infoblox](../solutions/infoblox.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20TIDE%20Lookup%20Incident%20Based/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `azuresentinel_1` | Managed | 0 | 4 |
+| `workflow` | Built-in | 0 | 4 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel_1`** (managedApi):
+- *Get_FileHashes_From_Entities*: method=`post`, path=`/entities/filehash`
+- *Get_Hosts_From_Entities*: method=`post`, path=`/entities/host`
+- *Get_IPs_From_Entities*: method=`post`, path=`/entities/ip`
+- *Get_URLs_From_Entities*: method=`post`, path=`/entities/url`
+
+**`workflow`** (builtin):
+- *Infoblox_TIDE_Lookup_For_Hash*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
+- *Infoblox_TIDE_Lookup_For_Host*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
+- *Infoblox_TIDE_Lookup_For_IP*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
+- *Infoblox_TIDE_Lookup_For_URL*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox TIDE Lookup Incident Based/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20TIDE%20Lookup%20Incident%20Based/readme.md)*

@@ -14,6 +14,24 @@ This playbook will send Microsoft Teams Adaptive Card on incident creation, with
 | **Solution** | [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Teams-adaptive-card-on-incident-creation/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `microsoftsentinel` | Managed | 0 | 2 |
+| `teams` | Managed | 1 | 0 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftsentinel`** (managedApi):
+- *Update_incident_-_update_severity*: method=`put`, path=`/Incidents`
+- *Update_incident_-_close_incident*: method=`put`, path=`/Incidents`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Send-Teams-adaptive-card-on-incident-creation/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Teams-adaptive-card-on-incident-creation/readme.md)*

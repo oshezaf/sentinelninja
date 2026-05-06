@@ -57,7 +57,7 @@ Reference for DnsEvents table in Azure Monitor Logs.
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
 
-## Solutions (15)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -69,7 +69,6 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
@@ -87,9 +86,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (42)
+## Content Items Using This Table (31)
 
-### Analytic Rules (16)
+### Analytic Rules (14)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -97,11 +96,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Log4j vulnerability exploit aka Log4Shell IP IOC](../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md) |  |
 
-**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):**
+**In solution [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md):** `SubType == "LookupQuery"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [GreyNoise TI Map IP Entity to DnsEvents](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-dnsevents-ddf47b6f-870c-5712-a296-1383acb13c82-ac046e7e.md) |  |
+| Analytic Rule |
+|:-------------|
+| [GreyNoise TI Map IP Entity to DnsEvents](../content/greynoisethreatintelligence-greynoise-ti-map-ip-entity-to-dnsevents-ddf47b6f-870c-5712-a296-1383acb13c82-ac046e7e.md) |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -113,14 +112,14 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI Map IP Entity to DnsEvents](../content/threat-intelligence-ti-map-ip-entity-to-dnsevents-69b7723c-2889-469f-8b55-a2d355ed9c87-bb4a4c77.md) |  |
+| [TI Map IP Entity to DnsEvents](../content/threat-intelligence-ti-map-ip-entity-to-dnsevents-69b7723c-2889-469f-8b55-a2d355ed9c87-bb4a4c77.md) | `SubType == "LookupQuery"` |
 | [TI map Domain entity to DnsEvents](../content/threat-intelligence-ti-map-domain-entity-to-dnsevents-85aca4d1-5d15-4001-abd9-acb86ca1786a-1658942e.md) |  |
 
 **In solution [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [TI Map IP Entity to DnsEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-dnsevents-6418fd33-92f2-407b-bd61-91c0d4bbcb8a-5cae9331.md) |  |
+| [TI Map IP Entity to DnsEvents](../content/threat-intelligence-new-ti-map-ip-entity-to-dnsevents-6418fd33-92f2-407b-bd61-91c0d4bbcb8a-5cae9331.md) | `SubType == "LookupQuery"` |
 | [TI map Domain entity to DnsEvents](../content/threat-intelligence-new-ti-map-domain-entity-to-dnsevents-03a8e294-3fc7-4d65-9da2-cff91fb5b6dc-1b58bbc8.md) |  |
 
 **In solution [ThreatConnect](../solutions/threatconnect.md):**
@@ -145,14 +144,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
-
-### Hunting Queries (10)
+### Hunting Queries (9)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -165,21 +157,15 @@ This table is ingested by the following connectors:
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
 | [Abnormally long DNS URI queries](../content/windows-server-dns-abnormally-long-dns-uri-queries-a0954a17-cc66-4d47-9651-8bf524bbdcc8-2ac71219.md) |  |
-| [DNS - domain anomalous lookup increase](../content/windows-server-dns-dns-domain-anomalous-lookup-increase-1d9951b7-51f0-4aa7-af0c-654359aadfff-26eb2bc8.md) |  |
+| [DNS - domain anomalous lookup increase](../content/windows-server-dns-dns-domain-anomalous-lookup-increase-1d9951b7-51f0-4aa7-af0c-654359aadfff-26eb2bc8.md) | `SubType == "LookupQuery"` |
 | [DNS Domains linked to WannaCry ransomware campaign](../content/windows-server-dns-dns-domains-linked-to-wannacry-ransomware-campaign-aaf84b80-7764-420c-98eb-239b5e194b3d-74157fd9.md) |  |
-| [DNS Full Name anomalous lookup increase](../content/windows-server-dns-dns-full-name-anomalous-lookup-increase-81b478a7-46e2-4f7f-a1aa-aba5e541232b-21ae26d6.md) |  |
+| [DNS Full Name anomalous lookup increase](../content/windows-server-dns-dns-full-name-anomalous-lookup-increase-81b478a7-46e2-4f7f-a1aa-aba5e541232b-21ae26d6.md) | `SubType == "LookupQuery"` |
 | [DNS lookups for commonly abused TLDs](../content/windows-server-dns-dns-lookups-for-commonly-abused-tlds-8e9c4680-8c0b-4885-b183-3b09efd8fc2c-5cb006c9.md) |  |
 | [High reverse DNS count by host](../content/windows-server-dns-high-reverse-dns-count-by-host-fda90754-4e22-4bb1-8b99-2bb49a991eae-98bb4c25.md) |  |
 | [Potential DGA detected](../content/windows-server-dns-potential-dga-detected-543e1ec6-ee5e-4368-aaa6-405f0551ba5c-d483d155.md) |  |
-| [Solorigate DNS Pattern](../content/windows-server-dns-solorigate-dns-pattern-0fb54a5c-5599-4ff9-80a2-f788c3ed285e-42e0ed66.md) |  |
+| [Solorigate DNS Pattern](../content/windows-server-dns-solorigate-dns-pattern-0fb54a5c-5599-4ff9-80a2-f788c3ed285e-42e0ed66.md) | `IPAddresses != "127.0.0.1"` |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [RareDNSLookupWithDataTransfer](../content/standalone-content-rarednslookupwithdatatransfer-06c52a66-fffe-4d3b-a05a-646ff65b7ec2-5a6c4b85.md) |  |
-
-### Workbooks (16)
+### Workbooks (8)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -209,7 +195,7 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) |  |
+| [InvestigationInsights](../content/soc-handbook-investigationinsights-6227a80b.md) | `ResultCode == "0"` |
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
@@ -223,19 +209,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Dns](../content/github-only-dns-ff664046.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
-| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
-| [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 
@@ -253,6 +226,35 @@ This table collects data from the following Azure resource types:
 - `microsoft.conenctedvmwarevsphere/virtualmachines`
 - `microsoft.azurestackhci/virtualmachines`
 - `microsoft.scvmm/virtualmachines`
+
+## Selection Criteria Summary (3 criteria, 7 total references)
+
+References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `SubType == "LookupQuery"` | - | 5 | - | - | **5** |
+| `IPAddresses != "127.0.0.1"` | - | 1 | - | - | **1** |
+| `ResultCode == "0"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **7** | **0** | **0** | **7** |
+
+### IPAddresses
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 127.0.0.1` | - | 1 | - | - | **1** |
+
+### ResultCode
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `0` | - | 1 | - | - | **1** |
+
+### SubType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `LookupQuery` | - | 5 | - | - | **5** |
 
 ---
 

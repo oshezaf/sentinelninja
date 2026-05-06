@@ -22,11 +22,11 @@ Detects successful sign ins from devices marked non-compliant. Best practice is 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | ✓ | ✗ | ? |
-| [`IdentityInfo`](../tables/identityinfo.md) | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"` | ✓ | ✗ | ? |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "0"` | ✓ | ✗ | ? |
 
 ---
 

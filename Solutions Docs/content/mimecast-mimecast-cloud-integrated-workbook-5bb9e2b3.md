@@ -16,9 +16,9 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Cloud_Integrated_CL`](../tables/cloud-integrated-cl.md) |  | ? | ✓ | ? |
 
 ---
 

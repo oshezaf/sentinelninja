@@ -14,6 +14,21 @@ This playbook creates a shared API Connection for all RiskIQ playbooks to levera
 | **Solution** | [RiskIQ](../solutions/riskiq.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ/Playbooks/RiskIQ-Base/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **1** Logic App connector / built-in action:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `riskiqpassivetotal` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`riskiqpassivetotal`** (managedApi):
+- *Get_account_metadata_and_settings*: method=`get`, path=`/account`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [RiskIQ-Base/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RiskIQ/Playbooks/RiskIQ-Base/readme.md)*

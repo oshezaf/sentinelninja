@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anomalies &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="anomalies">Anomalies</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for Anomalies table in Azure Monitor Logs.</p>
 <table>
@@ -265,7 +265,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (12)</h2>
+<h2 id="solutions">Solutions (11)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/dns-essentials.html">DNS Essentials</a></li>
@@ -277,13 +277,12 @@
 <li><a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a></li>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/ueba-essentials.html">UEBA Essentials</a></li>
 <li><a href="../solutions/web-session-essentials.html">Web Session Essentials</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (36)</h2>
-<h3 id="analytic-rules">Analytic Rules (13)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (25)</h2>
+<h3 id="analytic-rules">Analytic Rules (11)</h3>
 <p><strong>In solution <a href="../solutions/dns-essentials.html">DNS Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -383,37 +382,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-time-series-anomaly-for-data-size-transferred-to-public-internet-f2dd4a3a-ebac-4994-9499-1a859938c947-b66aa17e.html">Time series anomaly for data size transferred to public internet</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-unusual-anomaly-d0255b5f-2a3c-4112-8744-e6757af3283a-77d2d4f7.html">Unusual Anomaly</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (9)</h3>
+<h3 id="hunting-queries">Hunting Queries (8)</h3>
 <p><strong>In solution <a href="../solutions/dns-essentials.html">DNS Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -471,30 +440,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.html">UEBA Multi-Source Anomalous Activity Overview</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AnomalyTemplateName in "UEBA Anomalous Activity in GCP Audit Logs,UEBA Anomalous Activity in Okta_CL,UEBA Anomalous Authentication,UEBA Anomalous Logon in AwsCloudTrail,UEBA Anomalous MFA Failures in Okta_CL"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.html">User-Centric Anomaly Investigation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UserPrincipalName == "myuser@mydomain.com"</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-user-accounts-successful-sign-in-spikes-3c7fcea1-ec9f-4ea2-a555-156073b2d183-277cd450.html">User Accounts - Successful Sign in Spikes</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (14)</h3>
+<h3 id="workbooks">Workbooks (6)</h3>
 <p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong></p>
 <table>
 <thead>
@@ -574,52 +528,127 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (2 criteria, 2 total references)</h2>
+<p>References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
 <th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-anomaliesvisualization-9d418617.html">AnomaliesVisualization</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AnomalyTemplateName in "UEBA Anomalous Activity in GCP Audit Logs,UEBA Anomalous Activity in Okta_CL,UEBA Anomalous Authentication,UEBA Anomalous Logon in AwsCloudTrail,UEBA Anomalous MFA Failures in Okta_CL"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-anomalydata-27a3f7c6.html">AnomalyData</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UserPrincipalName == "myuser@mydomain.com"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-dstimworkbook-062fa645.html">DSTIMWorkbook</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="anomalytemplatename">AnomalyTemplateName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>UEBA Anomalous Activity in GCP Audit Logs</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UEBA Anomalous Activity in Okta_CL</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-optimizationworkbook-7387c8bb.html">OptimizationWorkbook</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UEBA Anomalous Authentication</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UEBA Anomalous Logon in AwsCloudTrail</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-userentitybehavioranalytics-2c986bb5.html">UserEntityBehaviorAnalytics</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>UEBA Anomalous MFA Failures in Okta_CL</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
+</tbody>
+</table>
+<h3 id="userprincipalname">UserPrincipalName</h3>
+<table>
+<thead>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
-<td style="text-align: left;"></td>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>myuser@mydomain.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

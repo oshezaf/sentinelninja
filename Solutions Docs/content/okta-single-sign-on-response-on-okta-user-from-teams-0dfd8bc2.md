@@ -14,6 +14,34 @@ This playbooks sends an adaptive card to the SOC Teams channel with information 
 | **Solution** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-ResponseFromTeams/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 3 |
+| `teams` | Managed | 1 | 0 |
+| `OktaCustomConnector` | Custom | 1 | 7 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+- *Add_a_comment_to_the_incident_with_the_information_collected_and_action_taken*: method=`post`, path=`/Incidents/Comment`
+- *Update_incident_to_change_severity_and_status_according_to_choice*: method=`put`, path=`/Incidents`
+
+**`OktaCustomConnector`** (customApi):
+- *Get_User*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}`
+- *Group_–_Add_member*: method=`put`, path=`/api/v1/groups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['GroupId'])}/users/@{encodeURIComponent(body('Get_User')?['id'])}`
+- *Expire_Password*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/expire_password`
+- *Reset_Password*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password`
+- *Suspend_User*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/suspend`
+- *Unsuspend_User*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/unsuspend`
+- *List_Groups*: method=`get`, path=`/api/v1/groups`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [OktaPlaybooks/Okta-ResponseFromTeams/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-ResponseFromTeams/readme.md)*

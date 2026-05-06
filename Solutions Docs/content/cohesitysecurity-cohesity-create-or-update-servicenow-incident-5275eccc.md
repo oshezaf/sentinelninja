@@ -14,6 +14,29 @@ This playbook creates and updates the incident in the ServiceNow platform.
 | **Solution** | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_CreateOrUpdate_ServiceNow_Incident/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **4** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `microsoftsentinel` | Managed | 0 | 1 |
+| `service-now` | Managed | 1 | 0 |
+| `service-now_1` | Managed | 0 | 3 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`microsoftsentinel`** (managedApi):
+- *Update_incident*: method=`put`, path=`/Incidents`
+
+**`service-now_1`** (managedApi):
+- *Create_Record*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
+- *Update_Record_-_Incident_closed*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('SNOW System ID'))}`
+- *Update_Record_-_incident_not_closed*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('SNOW System ID'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Cohesity_CreateOrUpdate_ServiceNow_Incident/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_CreateOrUpdate_ServiceNow_Incident/readme.md)*

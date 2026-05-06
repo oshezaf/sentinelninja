@@ -25,9 +25,9 @@ This query detects GCP Firewall rules that allow unrestricted (0.0.0.0/0) ingres
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GoogleCloudSCC`](../tables/googlecloudscc.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GoogleCloudSCC`](../tables/googlecloudscc.md) |  | ✓ | ✓ | ? |
 
 ---
 

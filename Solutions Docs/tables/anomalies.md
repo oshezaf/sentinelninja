@@ -68,7 +68,7 @@ Reference for Anomalies table in Azure Monitor Logs.
 | VendorName | string | The name of the vendor that generated this anomaly. |
 | WorkspaceId | string | The ID of the Sentinel workspace. |
 
-## Solutions (12)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -81,15 +81,14 @@ This table is used by the following solutions:
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 - [Web Session Essentials](../solutions/web-session-essentials.md)
 
 ---
 
-## Content Items Using This Table (36)
+## Content Items Using This Table (25)
 
-### Analytic Rules (13)
+### Analytic Rules (11)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 
@@ -127,19 +126,7 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Detect unauthorized data transfers using timeseries anomaly (ASIM Web Session)](../content/web-session-essentials-detect-unauthorized-data-transfers-using-timeseries-anomaly-asim-web-session-5965d3e7-8ed0-477c-9b42-e75d9237fab0-8fc606c8.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Time series anomaly for data size transferred to public internet](../content/standalone-content-time-series-anomaly-for-data-size-transferred-to-public-internet-f2dd4a3a-ebac-4994-9499-1a859938c947-b66aa17e.md) |  |
-
-**GitHub Only:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Unusual Anomaly](../content/github-only-unusual-anomaly-d0255b5f-2a3c-4112-8744-e6757af3283a-77d2d4f7.md) |  |
-
-### Hunting Queries (9)
+### Hunting Queries (8)
 
 **In solution [DNS Essentials](../solutions/dns-essentials.md):**
 
@@ -161,16 +148,10 @@ This table is used by the following solutions:
 | [Anomaly Detection Trend Analysis](../content/ueba-essentials-anomaly-detection-trend-analysis-d0e1f2a3-b4c5-6789-0123-def456789012-8fe6ea06.md) |  |
 | [Anomaly Template Distribution by Tactics and Techniques](../content/ueba-essentials-anomaly-template-distribution-by-tactics-and-techniques-b8c9d0e1-f2a3-4567-8901-bcdef2345678-bf92b782.md) |  |
 | [Top Anomalous Source IP Triage](../content/ueba-essentials-top-anomalous-source-ip-triage-e1f2a3b4-c5d6-7890-1234-abcdef567890-63722402.md) |  |
-| [UEBA Multi-Source Anomalous Activity Overview](../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md) |  |
-| [User-Centric Anomaly Investigation](../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.md) |  |
+| [UEBA Multi-Source Anomalous Activity Overview](../content/ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md) | `AnomalyTemplateName in "UEBA Anomalous Activity in GCP Audit Logs,UEBA Anomalous Activity in Okta_CL,UEBA Anomalous Authentication,UEBA Anomalous Logon in AwsCloudTrail,UEBA Anomalous MFA Failures in Okta_CL"` |
+| [User-Centric Anomaly Investigation](../content/ueba-essentials-user-centric-anomaly-investigation-c9d0e1f2-a3b4-5678-9012-cdef34567890-0fcdf7d4.md) | `UserPrincipalName == "myuser@mydomain.com"` |
 
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [User Accounts - Successful Sign in Spikes](../content/github-only-user-accounts-successful-sign-in-spikes-3c7fcea1-ec9f-4ea2-a555-156073b2d183-277cd450.md) |  |
-
-### Workbooks (14)
+### Workbooks (6)
 
 **In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
 
@@ -203,18 +184,31 @@ This table is used by the following solutions:
 | [AnomaliesVisualization](../content/soc-handbook-anomaliesvisualization-8cb75567.md) |  |
 | [AnomalyData](../content/soc-handbook-anomalydata-44d72d0f.md) |  |
 
-**GitHub Only:**
+## Selection Criteria Summary (2 criteria, 2 total references)
 
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AnomaliesVisualization](../content/github-only-anomaliesvisualization-9d418617.md) |  |
-| [AnomalyData](../content/github-only-anomalydata-27a3f7c6.md) |  |
-| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
-| [UserEntityBehaviorAnalytics](../content/github-only-userentitybehavioranalytics-2c986bb5.md) |  |
-| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) |  |
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `AnomalyTemplateName in "UEBA Anomalous Activity in GCP Audit Logs,UEBA Anomalous Activity in Okta_CL,UEBA Anomalous Authentication,UEBA Anomalous Logon in AwsCloudTrail,UEBA Anomalous MFA Failures in Okta_CL"` | - | 1 | - | - | **1** |
+| `UserPrincipalName == "myuser@mydomain.com"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
+
+### AnomalyTemplateName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `UEBA Anomalous Activity in GCP Audit Logs` | - | 1 | - | - | **1** |
+| `UEBA Anomalous Activity in Okta_CL` | - | 1 | - | - | **1** |
+| `UEBA Anomalous Authentication` | - | 1 | - | - | **1** |
+| `UEBA Anomalous Logon in AwsCloudTrail` | - | 1 | - | - | **1** |
+| `UEBA Anomalous MFA Failures in Okta_CL` | - | 1 | - | - | **1** |
+
+### UserPrincipalName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `myuser@mydomain.com` | - | 1 | - | - | **1** |
 
 ---
 

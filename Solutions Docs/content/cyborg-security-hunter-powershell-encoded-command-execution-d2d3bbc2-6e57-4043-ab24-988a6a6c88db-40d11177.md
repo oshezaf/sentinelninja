@@ -22,9 +22,9 @@ Looks for valid variations of the -EncodedCommand parameter. Commonly used to en
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine matchesregex "-[Ee^]{1,2}[NnCcOoDdEeMmAaPpHh^`]+\\s+\"`<br>`NewProcessName endswith "powershell.exe"` | ✓ | ✓ | ? |
 
 ---
 

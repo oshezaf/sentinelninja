@@ -25,9 +25,9 @@ Detects suspicious network activity based on unusual source/destination IPs, geo
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`NetskopeWebTransactions_CL`](../tables/netskopewebtransactions-cl.md) |  | ? | ✓ | ? |
 
 ---
 

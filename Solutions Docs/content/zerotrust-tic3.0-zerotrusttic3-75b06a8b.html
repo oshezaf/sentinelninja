@@ -4,20 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZeroTrustTIC3 &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="zerotrusttic3">ZeroTrustTIC3</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <table>
 <thead>
@@ -70,28 +70,28 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Title contains "IDS"</code><br><code>Title contains "IPS"</code><br><code>Title contains "anomal"</code><br><code>Title contains "auth"</code><br><code>Title contains "behavior"</code><br><code>Title contains "data"</code><br><code>Title contains "deception"</code><br><code>Title contains "denial"</code><br><code>Title contains "detonation"</code><br><code>Title contains "dns"</code><br><code>Title contains "dos"</code><br><code>Title contains "dynamic"</code><br><code>Title contains "email"</code><br><code>Title contains "exfil"</code><br><code>Title contains "exploit"</code><br><code>Title contains "fusion"</code><br><code>Title contains "honeytoken"</code><br><code>Title contains "intrusion"</code><br><code>Title contains "learning"</code><br><code>Title contains "login"</code><br><code>Title contains "loss"</code><br><code>Title contains "mal"</code><br><code>Title contains "malware"</code><br><code>Title contains "password"</code><br><code>Title contains "phish"</code><br><code>Title contains "sand"</code><br><code>Title contains "url"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
-<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code></td>
+<td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>ActivityStatusValue in "Succeeded,Success"</code><br><code>OperationNameValue startswith "Microsoft.Logic"</code></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
-<td style="text-align: left;"><code>Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>Resource == "SOC-NS-AG-WAFV2"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></td>
+<td style="text-align: left;"><code>Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>Resource == "SOC-NS-AG-WAFV2"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code><br><code>msg_s !has ". Url"</code><br><code>msg_s !has "No rule matched"</code><br><code>msg_s !has "Reason:"</code><br><code>msg_s !has "Rule Collection"</code><br><code>msg_s !has "TLS extension was missing"</code><br><code>msg_s !has "Url"</code><br><code>msg_s !has "Web Category:"</code><br><code>msg_s has ". No rule matched"</code><br><code>msg_s has ". Url"</code><br><code>msg_s has "Reason:"</code><br><code>msg_s has "Rule Collection Group"</code><br><code>msg_s has "Url"</code><br><code>msg_s has "Web Category:"</code></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -182,7 +182,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
-<td style="text-align: left;"><code>RecordType == "MicrosoftTeams"</code></td>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>RecordType == "MicrosoftTeams"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -203,14 +203,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AlertName contains "mal"</code><br><code>Entities contains "Fail"</code><br><code>Entities contains "inbound"</code><br><code>Entities contains "outbound"</code><br><code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securitybaseline.html"><code>SecurityBaseline</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AnalyzeResult in "Failed,Passed"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -231,14 +231,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/securityrecommendation.html"><code>SecurityRecommendation</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>RecommendationDisplayName contains "JIT"</code><br><code>RecommendationDisplayName contains "Just"</code><br><code>RecommendationDisplayName contains "VPC"</code><br><code>RecommendationDisplayName contains "Web Application Firewall"</code><br><code>RecommendationDisplayName contains "account"</code><br><code>RecommendationDisplayName contains "adaptive"</code><br><code>RecommendationDisplayName contains "admin"</code><br><code>RecommendationDisplayName contains "application gateway"</code><br><code>RecommendationDisplayName contains "audit"</code><br><code>RecommendationDisplayName contains "authentication"</code><br><code>RecommendationDisplayName contains "authorized"</code><br><code>RecommendationDisplayName contains "automation"</code><br><code>RecommendationDisplayName contains "back"</code><br><code>RecommendationDisplayName contains "balance"</code><br><code>RecommendationDisplayName contains "cert"</code><br><code>RecommendationDisplayName contains "certificate"</code><br><code>RecommendationDisplayName contains "config"</code><br><code>RecommendationDisplayName contains "deception"</code><br><code>RecommendationDisplayName contains "defender"</code><br><code>RecommendationDisplayName contains "denial"</code><br><code>RecommendationDisplayName contains "disaster"</code><br><code>RecommendationDisplayName contains "dns"</code><br><code>RecommendationDisplayName contains "encrypt"</code><br><code>RecommendationDisplayName contains "endpoint protection"</code><br><code>RecommendationDisplayName contains "express"</code><br><code>RecommendationDisplayName contains "firewall"</code><br><code>RecommendationDisplayName contains "geo"</code><br><code>RecommendationDisplayName contains "guest"</code><br><code>RecommendationDisplayName contains "honey"</code><br><code>RecommendationDisplayName contains "identity"</code><br><code>RecommendationDisplayName contains "java"</code><br><code>RecommendationDisplayName contains "load"</code><br><code>RecommendationDisplayName contains "log"</code><br><code>RecommendationDisplayName contains "logic"</code><br><code>RecommendationDisplayName contains "malware"</code><br><code>RecommendationDisplayName contains "network access"</code><br><code>RecommendationDisplayName contains "network gateway"</code><br><code>RecommendationDisplayName contains "network security group"</code><br><code>RecommendationDisplayName contains "notification"</code><br><code>RecommendationDisplayName contains "password"</code><br><code>RecommendationDisplayName contains "patch"</code><br><code>RecommendationDisplayName contains "playbook"</code><br><code>RecommendationDisplayName contains "private"</code><br><code>RecommendationDisplayName contains "privilege"</code><br><code>RecommendationDisplayName contains "protected by Azure Firewall"</code><br><code>RecommendationDisplayName contains "proxy"</code><br><code>RecommendationDisplayName contains "recover"</code><br><code>RecommendationDisplayName contains "redundant"</code><br><code>RecommendationDisplayName contains "region"</code><br><code>RecommendationDisplayName contains "safe"</code><br><code>RecommendationDisplayName contains "scale"</code><br><code>RecommendationDisplayName contains "security group"</code><br><code>RecommendationDisplayName contains "segment"</code><br><code>RecommendationDisplayName contains "shared"</code><br><code>RecommendationDisplayName contains "subnet"</code><br><code>RecommendationDisplayName contains "update"</code><br><code>RecommendationDisplayName contains "upgrade"</code><br><code>RecommendationDisplayName contains "version"</code><br><code>RecommendationDisplayName contains "vpn"</code><br><code>RecommendationDisplayName contains "vuln"</code><br><code>RecommendationDisplayName contains "watcher"</code><br><code>RecommendationDisplayName contains "web apps"</code><br><code>RecommendationState in "Healthy,Unhealthy"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>AppDisplayName has_any "teams"</code></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✗</td>
 <td style="text-align: center;">?</td>
@@ -288,7 +288,7 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/zerotrust-tic3.0.html">Back to ZeroTrust(TIC3.0)</a></p>
 </div>
 

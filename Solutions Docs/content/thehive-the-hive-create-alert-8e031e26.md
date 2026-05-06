@@ -14,6 +14,22 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 | **Solution** | [TheHive](../solutions/thehive.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-CreateAlert/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 0 |
+| `TheHive` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`TheHive`** (customApi):
+- *Create_alert*: method=`post`, path=`/api/alert`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [TheHive-CreateAlert/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Playbooks/TheHive-CreateAlert/readme.md)*

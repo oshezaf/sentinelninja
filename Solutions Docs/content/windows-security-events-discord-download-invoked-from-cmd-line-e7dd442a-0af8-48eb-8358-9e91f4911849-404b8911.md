@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "powershell"`<br>`CommandLine has_any "cdn.discordapp.com"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | ✓ | ✓ | ? |
 
 ---
 

@@ -25,9 +25,9 @@ Detects when a Google Cloud Platform organization policy is deleted or updated. 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `MethodName has_any "OrgPolicy.DeletePolicy"`<br>`ServiceName == "orgpolicy.googleapis.com"` | ✓ | ✓ | ? |
 
 ---
 

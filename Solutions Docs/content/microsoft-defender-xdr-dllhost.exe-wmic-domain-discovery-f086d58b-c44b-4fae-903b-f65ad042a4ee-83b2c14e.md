@@ -21,9 +21,9 @@ This query checks for dllhost.exe calling WMIC to discover additional hosts and 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessCommandLine == "dllhost.exe"`<br>`InitiatingProcessFileName == "dllhost.exe"`<br>`ProcessCommandLine has "wmic computersystem get domain"` | ✓ | ✗ | ? |
 
 ---
 

@@ -21,9 +21,9 @@ Prior to deploying Macaw ransomware in an organization, the adversary frequently
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "wmiprvse.exe"`<br>`ProcessCommandLine has "programdata"` | ✓ | ✗ | ? |
 
 ---
 

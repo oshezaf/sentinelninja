@@ -14,6 +14,25 @@ Author: John Joyner
 | **Solution** | Standalone Content |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Create-Incident-on-missing-Data-Source/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuremonitorlogs` | Managed | 1 | 1 |
+| `azuresentinel` | Managed | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuremonitorlogs`** (managedApi):
+- *Run_query_and_list_results_V2_(Preview)_-_Check_Data_Source_for_last_day*: method=`post`, path=`/queryDataV2`
+
+**`azuresentinel`** (managedApi):
+- *Create_incident_-_One_or_more_Data_Sources_stopped_sending_data*: method=`put`, path=`/Incidents/subscriptions/@{encodeURIComponent(parameters('SentinelSubID'))}/resourceGroups/@{encodeURIComponent(parameters('SentinelWSResourceGroup'))}/workspaces/@{encodeURIComponent(parameters('SentinelWSName'))}`
+
+</details>
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [📊](../statistics.md)

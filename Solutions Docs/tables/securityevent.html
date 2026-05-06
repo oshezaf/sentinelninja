@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SecurityEvent &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="securityevent">SecurityEvent</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for SecurityEvent table in Azure Monitor Logs.</p>
 <table>
@@ -1218,7 +1218,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (30)</h2>
+<h2 id="solutions">Solutions (29)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a></li>
@@ -1243,7 +1243,6 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
 <li><a href="../solutions/semperis-directory-services-protector.html">Semperis Directory Services Protector</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 <li><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></li>
@@ -1280,7 +1279,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/semperisdsp.html">Semperis Directory Services Protector</a></td>
-<td style="text-align: left;"><code>EventID in "9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../connectors/windowssecurityevents.html">Windows Security Events via AMA</a></td>
@@ -1289,8 +1288,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (218)</h2>
-<h3 id="analytic-rules">Analytic Rules (85)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (145)</h2>
+<h3 id="analytic-rules">Analytic Rules (50)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -1333,7 +1332,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/eatonforeseer.html">EatonForeseer</a>:</strong> <code>EventID in "4624,4625,4634,4647,4648,4675"</code></p>
+<p><strong>In solution <a href="../solutions/eatonforeseer.html">EatonForeseer</a>:</strong> <code>AccountType == "User"</code><br><code>EventID in "4624,4625,4634,4647,4648,4675"</code></p>
 <table>
 <thead>
 <tr>
@@ -1365,7 +1364,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-potential-remote-desktop-tunneling-d2e8fd50-8d66-11ec-b909-0242ac120002-811dbf83.html">Potential Remote Desktop Tunneling</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
+<td style="text-align: left;"><code>EventID in "4624,4625"</code><br><code>LogonType == "10"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-process-executed-from-binary-hidden-in-base64-encoded-file-d6190dde-8fd2-456a-ac5b-0a32400b0464-f2c6e93c.html">Process executed from binary hidden in Base64 encoded file</a></td>
@@ -1373,11 +1372,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-security-event-log-cleared-80da0a8f-cfe1-4cd0-a895-8bc1771a720e-2f5b4cb9.html">Security Event log cleared</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>EventSourceName == "Microsoft-Windows-Eventlog"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-windows-binaries-executed-from-non-default-directory-15049017-527f-4d3b-b011-b0e99e68ef45-75e820c5.html">Windows Binaries Executed from Non-Default Directory</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName has "C:\\Windows\\"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1396,11 +1395,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-1-aa5eaac7-1264-4833-b620-8f062be75541-ac010cd6.html">Certified Pre-Owned - backup of CA private key - rule 1</a></td>
-<td style="text-align: left;"><code>EventID == "5058"</code></td>
+<td style="text-align: left;"><code>Computer contains "&lt;YOUR CA MACHINE NAME&gt;"</code><br><code>EventID == "5058"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/falconfriday-certified-pre-owned-backup-of-ca-private-key-rule-2-88f8fbc0-345d-458e-85f6-f73921d5ef50-fbc7bd12.html">Certified Pre-Owned - backup of CA private key - rule 2</a></td>
-<td style="text-align: left;"><code>EventID == "5059"</code></td>
+<td style="text-align: left;"><code>Computer contains "&lt;YOUR CA MACHINE NAME&gt;"</code><br><code>EventID == "5059"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/falconfriday-excessive-share-permissions-aba0b08c-aace-40c5-a21d-39153023dcaa-6377fa2a.html">Excessive share permissions</a></td>
@@ -1449,35 +1448,35 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-failed-logons-0e105444-fe13-4ce6-9239-21880076a3f9-2263251b.html">Semperis DSP Failed Logons</a></td>
-<td style="text-align: left;"><code>EventID == "20002"</code></td>
+<td style="text-align: left;"><code>EventID == "20002"</code><br><code>EventSourceName == "Semperis-Operation-Log"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-kerberos-krbtgt-account-with-old-password-9ff3b26b-7636-412e-ac46-072b084b94cb-7cfe67a4.html">Semperis DSP Kerberos krbtgt account with old password</a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-mimikatz's-dcshadow-alert-1a6d0a49-64b3-4ca1-96c3-f154c16c218c-044ebdda.html">Semperis DSP Mimikatz's DCShadow Alert</a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-operations-critical-notifications-8f471e21-3bb2-466f-9bc2-0a0326a60788-3ceee4d9.html">Semperis DSP Operations Critical Notifications</a></td>
-<td style="text-align: left;"><code>EventID == "30001"</code></td>
+<td style="text-align: left;"><code>EventID == "30001"</code><br><code>EventSourceName == "Semperis-DSP-Notifications"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-rbac-changes-e5edf3f3-de53-45e6-b0d7-1ce1c048df4a-21be9fb7.html">Semperis DSP RBAC Changes</a></td>
-<td style="text-align: left;"><code>EventID == "20012"</code></td>
+<td style="text-align: left;"><code>EventID == "20012"</code><br><code>EventSourceName == "Semperis-Operation-Log"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-recent-sidhistory-changes-on-ad-objects-64796da3-6383-4de2-9c97-866c83c459ae-0217ae73.html">Semperis DSP Recent sIDHistory changes on AD objects</a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-well-known-privileged-sids-in-sidhistory-ddd75d93-5b8b-4349-babe-c4e15343c5a3-fe463147.html">Semperis DSP Well-known privileged SIDs in sIDHistory</a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperis-dsp-zerologon-vulnerability-85c1f9e4-6f14-46bf-82d5-dbe495b92aab-46434387.html">Semperis DSP Zerologon vulnerability</a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1519,7 +1518,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a>:</strong> <code>EventID in "4663,4688"</code></p>
+<p><strong>In solution <a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a>:</strong> <code>AccessMask in "0x10,0x100,0x2,0x4"</code><br><code>CommandLine has "SysAidServer"</code><br><code>EventID in "4663,4688"</code><br><code>ObjectName endswith ".jsp"</code><br><code>Process has_any "java.exe"</code></p>
 <table>
 <thead>
 <tr>
@@ -1551,7 +1550,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-excessive-windows-logon-failures-2391ce61-8c8d-41ac-9723-d945b2e90720-36e38369.html">Excessive Windows Logon Failures</a></td>
-<td style="text-align: left;"><code>EventID == "4625"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID == "4625"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-exchange-oab-virtual-directory-attribute-containing-potential-webshell-faf1a6ff-53b5-4f92-8c55-4b20e9957594-0a1c5425.html">Exchange OAB Virtual Directory Attribute Containing Potential Webshell</a></td>
@@ -1559,7 +1558,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-gain-code-execution-on-adfs-server-via-smb-+-remote-service-or-scheduled-task-12dcea64-bec2-41c9-9df2-9f28461b1295-478b123d.html">Gain Code Execution on ADFS Server via SMB + Remote Service or Scheduled Task</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"</code></td>
+<td style="text-align: left;"><code>Account !endswith "$"</code><br><code>EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"</code><br><code>LogonType == "3"</code><br><code>RelativeTargetName in "atsvc,svcctl"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-microsoft-entra-id-local-device-join-information-and-transport-key-registry-keys-a356c8bd-c81d-428b-aa36-83be706be034-52ba1a8d.html">Microsoft Entra ID Local Device Join Information and Transport Key Registry Keys Access</a></td>
@@ -1567,31 +1566,31 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-nrt-base64-encoded-windows-process-command-lines-c3e5dbaa-a540-408c-8b36-68bdfb3df088-bed67057.html">NRT Base64 Encoded Windows Process Command-lines</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine contains "TVqQAAMAAAAEAAA"</code><br><code>EventID == "4688"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-nrt-process-executed-from-binary-hidden-in-base64-encoded-file-7ad4c32b-d0d2-411c-a0e8-b557afa12fce-92d97690.html">NRT Process executed from binary hidden in Base64 encoded file</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine contains ".decode("</code><br><code>CommandLine contains ".decode64("</code><br><code>CommandLine contains "base64 --decode"</code><br><code>EventID == "4688"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-nrt-security-event-log-cleared-508cef41-2cd8-4d40-a519-b04826a9085f-67c5b6b4.html">NRT Security Event log cleared</a></td>
-<td style="text-align: left;"><code>EventID == "1102"</code></td>
+<td style="text-align: left;"><code>EventID == "1102"</code><br><code>EventSourceName == "Microsoft-Windows-Eventlog"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-new-exe-deployed-via-default-domain-or-default-domain-controller-policies-05b4bccd-dd12-423d-8de4-5a6fb526bb4f-aa6653ca.html">New EXE deployed via Default Domain or Default Domain Controller Policies</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-non-domain-controller-active-directory-replication-b9d2eebc-5dcb-4888-8165-900db44443ab-b36ed5cd.html">Non Domain Controller Active Directory Replication</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4662"</code></td>
+<td style="text-align: left;"><code>AccountType != "Machine"</code><br><code>EventID in "4624,4662"</code><br><code>LogonType == "3"</code><br><code>ObjectServer == "DS"</code><br><code>Properties has "1131f6aa-9c07-11d1-f79f-00c04fc2dcd2"</code><br><code>Properties has "1131f6ad-9c07-11d1-f79f-00c04fc2dcd2"</code><br><code>Properties has "89e95b76-444d-4c62-991a-0facbeda640c"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-potential-fodhelper-uac-bypass-56f3f35c-3aca-4437-a1fb-b7a84dc4af00-9be2fced.html">Potential Fodhelper UAC Bypass</a></td>
-<td style="text-align: left;"><code>EventID in "4657,4688"</code></td>
+<td style="text-align: left;"><code>EventID in "4657,4688"</code><br><code>ParentProcessName endswith "cmd.exe"</code><br><code>ParentProcessName endswith "powershell.exe"</code><br><code>ParentProcessName endswith "powershell_ise.exe"</code><br><code>Process == "fodhelper.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-potential-re-named-sdelete-usage-720d12c6-a08c-44c4-b18f-2236412d59b0-d334efe2.html">Potential re-named sdelete usage</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine !has "sdelete"</code><br><code>CommandLine has_all "accepteula"</code><br><code>EventID == "4688"</code><br><code>Process != "sdelete.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-process-execution-frequency-anomaly-2c55fe7a-b06f-4029-a5b9-c54a2320d7b8-7d56da33.html">Process Execution Frequency Anomaly</a></td>
@@ -1603,7 +1602,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-sdelete-deployed-via-gpo-and-run-recursively-d9f28fdf-abc8-4f1a-a7e7-1aaec87a2fc5-8f72bd3c.html">Sdelete deployed via GPO and run recursively</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has "-k GPSvcGroup"</code><br><code>CommandLine has "-s gpsvc"</code><br><code>CommandLine has "sdelete"</code><br><code>CommandLine has_all "-s"</code><br><code>EventID == "4688"</code><br><code>ParentProcessName endswith "svchost.exe"</code><br><code>Process in "sdelete.exe,svchost.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-securityevent-multiple-authentication-failures-followed-by-a-success-cf3ede88-a429-493b-9108-3e46d3c741f7-2bfab486.html">SecurityEvent - Multiple authentication failures followed by a success</a></td>
@@ -1630,158 +1629,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-ad-fs-abnormal-eku-object-identifier-attribute-cfc1ae62-db63-4a3e-b88b-dc04030c2257-02097b85.html">AD FS Abnormal EKU object identifier attribute</a></td>
-<td style="text-align: left;"><code>EventID == "501"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-ad-account-with-don't-expire-password-6c360107-f3ee-4b91-9f43-f4cfd90441cf-b63ef58d.html">AD account with Don't Expire Password</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-adfs-dkm-master-key-export-18e6a87e-9d06-4a4e-8b59-3469cd49552d-b85786be.html">ADFS DKM Master Key Export</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-account-added-and-removed-from-privileged-groups-7efc75ce-e2a4-400f-a8b1-283d3b0f2c60-50f0398b.html">Account added and removed from privileged groups</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-adminsdholder-modifications-52aec824-96c1-4a03-8e44-bb70532e6cea-5f0a7fb2.html">AdminSDHolder Modifications</a></td>
-<td style="text-align: left;"><code>EventID == "5136"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-audit-policy-manipulation-using-auditpol-utility-66276b14-32c5-4226-88e3-080dacc31ce1-c1e75d10.html">Audit policy manipulation using auditpol utility</a></td>
-<td style="text-align: left;"><code>EventID == "1"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-com-registry-key-modified-to-point-to-file-in-color-profile-folder-ed8c9153-6f7a-4602-97b4-48c336b299e1-d490be15.html">COM Registry Key Modified to Point to File in Color Profile Folder</a></td>
-<td style="text-align: left;"><code>EventID == "4657"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-email-access-via-active-sync-2f561e20-d97b-4b13-b02d-18b34af6e87c-db926024.html">Email access via active sync</a></td>
-<td style="text-align: left;"><code>EventID in "1,4688"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-azuread-logons-but-success-logon-to-host-8ee967a2-a645-4832-85f4-72b635bcb3a6-d05c051f.html">Failed AzureAD logons but success logon to host</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-host-logons-but-success-logon-to-azuread-1ce5e766-26ab-4616-b7c8-3b33ae321e80-db4ff93a.html">Failed host logons but success logon to AzureAD</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-logon-attempts-by-valid-accounts-within-10-mins-0777f138-e5d8-4eab-bec1-e11ddfbc2be2-127ed234.html">Failed logon attempts by valid accounts within 10 mins</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-fake-computer-account-created-c1faf5e8-6958-11ec-90d6-0242ac120003-5106eb49.html">Fake computer account created</a></td>
-<td style="text-align: left;"><code>EventID == "4720"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-gain-code-execution-on-adfs-server-via-remote-wmi-execution-0bd65651-1404-438b-8f63-eecddcec87b4-d7675a11.html">Gain Code Execution on ADFS Server via Remote WMI Execution</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-group-created-then-added-to-built-in-domain-local-or-global-group-a7564d76-ec6b-4519-a66b-fcc80c42332b-1a2e6754.html">Group created then added to built in domain local or global group</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-identify-mango-sandstorm-powershell-commands-ce74dc9a-cb3c-4081-8c2f-7d39f6b7bae1-0c4365d3.html">Identify Mango Sandstorm powershell commands</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-microsoft-entra-id-health-monitoring-agent-registry-keys-access-f819c592-c5f9-4d5c-a79f-1e6819863533-9af33463.html">Microsoft Entra ID Health Monitoring Agent Registry Keys Access</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-microsoft-entra-id-health-service-agents-registry-keys-access-06bbf969-fcbe-43fa-bac2-b2fa131d113a-b4251aca.html">Microsoft Entra ID Health Service Agents Registry Keys Access</a></td>
-<td style="text-align: left;"><code>EventID in "4656,4663"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-midnight-blizzard-script-payload-stored-in-registry-00cb180c-08a8-4e55-a276-63fb1442d5b5-7c2a822d.html">Midnight Blizzard - Script payload stored in Registry</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-midnight-blizzard-suspicious-rundll32.exe-execution-of-vbscript-d82e1987-4356-4a7b-bc5e-064f29b143c0-e1d64a0c.html">Midnight Blizzard - suspicious rundll32.exe execution of vbscript</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.html">Multiple Password Reset by user</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-multiple-rdp-connections-from-single-system-78422ef2-62bf-48ca-9bab-72c69818a425-6fdca3be.html">Multiple RDP connections from Single System</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-new-user-created-and-added-to-the-built-in-administrators-group-aa1eff90-29d4-49dc-a3ea-b65199f516db-5300f307.html">New user created and added to the built-in administrators group</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-possible-resource-based-constrained-delegation-abuse-2937bc6b-7cda-4fba-b452-ea43ba8e835f-0940e8da.html">Possible Resource-Based Constrained Delegation Abuse</a></td>
-<td style="text-align: left;"><code>EventID == "5136"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-potential-build-process-compromise-5ef06767-b37c-4818-b035-47de950d0046-3d9f2492.html">Potential Build Process Compromise</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-potential-kerberoasting-1572e66b-20a7-4012-9ec4-77ec4b101bc8-6d60a025.html">Potential Kerberoasting</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.html">RDP Nesting</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.html">Rare RDP Connections</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-security-service-registry-acl-modification-473d57e6-f787-435c-a16b-b38b51fa9a4b-e336a7bc.html">Security Service Registry ACL Modification</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-service-principal-name-spn-assigned-to-user-account-875d0eb1-883a-4191-bd0e-dbfdeb95a464-6875f39b.html">Service Principal Name (SPN) Assigned to User Account</a></td>
-<td style="text-align: left;"><code>EventID == "5136"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-silk-typhoon-new-um-service-child-process-95a15f39-d9cc-4667-8cdd-58f3113691c9-5ebb271f.html">Silk Typhoon New UM Service Child Process</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-solorigate-named-pipe-11b4c19d-2a79-4da3-af38-b067e1273dee-7c9da0a1.html">Solorigate Named Pipe</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.html">Unusual identity creation using exchange powershell</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-user-account-added-to-built-in-domain-local-or-global-group-a35f2c18-1b97-458f-ad26-e033af18eb99-fb766415.html">User account added to built in domain local or global group</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-user-account-created-and-deleted-within-10-mins-4b93c5af-d20b-4236-b696-a28b8c51407f-630c51ec.html">User account created and deleted within 10 mins</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-user-account-enabled-and-disabled-within-10-mins-3d023f64-8225-41a2-9570-2bd7c2c4535e-4f6dcffb.html">User account enabled and disabled within 10 mins</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="hunting-queries">Hunting Queries (90)</h3>
+<h3 id="hunting-queries">Hunting Queries (73)</h3>
 <p><strong>In solution <a href="../solutions/attacker-tools-threat-protection-essentials.html">Attacker Tools Threat Protection Essentials</a>:</strong></p>
 <table>
 <thead>
@@ -1808,19 +1656,19 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-attempted-vbscript-stored-in-non-run-currentversion-registry-key-value-d7233f14-4705-403e-9db9-e0d677c9506b-73ff2c75.html">Attempted VBScript Stored in Non-Run CurrentVersion Registry Key Value</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>NewValue contains "CreateObject"</code><br><code>NewValue contains "Execute("</code><br><code>NewValue contains "RegRead"</code><br><code>NewValue contains "RunHTMLApplication"</code><br><code>NewValue contains "jscript"</code><br><code>NewValue contains "mshtml"</code><br><code>NewValue contains "mshtml,"</code><br><code>NewValue contains "vbscript"</code><br><code>NewValue contains "window.close"</code><br><code>ObjectName !has "\\Run"</code><br><code>ObjectName has "\\CurrentVersion"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-excessive-windows-discovery-and-execution-processes-potential-malware-installatio-6d1c9f13-e43e-4b52-a443-5799465d573b-01b94334.html">Excessive Windows Discovery and Execution Processes - Potential Malware Installation</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>NewProcessName has_any "arp.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-lsass-memory-dumping-using-werfault.exe-command-identification-4894a60b-d2ee-4f24-be61-0d0c96a84e63-4b9d94b1.html">LSASS Memory Dumping using WerFault.exe - Command Identification</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>NewProcessName endswith "werfault.exe"</code><br><code>ObjectName endswith "lsass.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-metasploit-impacket-psexec-process-creation-activity-37cba0d1-8aa5-4f8f-bb26-25a45475ca9a-bc3bb419.html">Metasploit / Impacket PsExec Process Creation Activity</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName matchesregex "C:\\\\Windows\\\\[a-zA-Z]{8}.exe"</code><br><code>ParentProcessName has "services.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-potential-maldoc-execution-chain-observed-b194088b-c846-4c72-a4b7-933627878db4-47180af7.html">Potential Maldoc Execution Chain Observed</a></td>
@@ -1828,23 +1676,23 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-powershell-pastebin-download-e186a8af-3d4a-4003-93b7-9b199e0b1dd1-3dd8ecd4.html">PowerShell Pastebin Download</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>CommandLine contains ".onion"</code><br><code>CommandLine contains "http"</code><br><code>CommandLine contains "paste."</code><br><code>CommandLine has_any "pastebin"</code><br><code>Process has "powershell.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-powershell-encoded-command-execution-d2d3bbc2-6e57-4043-ab24-988a6a6c88db-40d11177.html">Powershell Encoded Command Execution</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>CommandLine matchesregex "-[Ee^]{1,2}[NnCcOoDdEeMmAaPpHh^</code>]+\s+\"<code>&lt;br&gt;</code>NewProcessName endswith "powershell.exe"`</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-prohibited-applications-spawning-cmd.exe-or-powershell.exe-fc36d683-385a-4ec2-842d-2982dbed97a4-e72a0598.html">Prohibited Applications Spawning cmd.exe or powershell.exe</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>NewProcessName has_any "cmd.exe"</code><br><code>NewProcessName has_any "winword.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-proxy-vbscript-execution-via-currentversion-registry-key-3ac1e703-3ed0-45e1-ae1d-0fa60baf99fb-df6259d3.html">Proxy VBScript Execution via CurrentVersion Registry Key</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>CommandLine contains "\\Microsoft\\Windows\\CurrentVersion"</code><br><code>CommandLine has_all "Execute"</code><br><code>CommandLine has_all "vbscript"</code><br><code>Process has_any "cmd.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/cyborg-security-hunter-rundll32-or-cmd-executing-application-from-explorer-potential-malware-execution-c-3bc6e8ef-9e08-4626-89e9-fda87866cc82-3815ee01.html">Rundll32 or cmd Executing Application from Explorer - Potential Malware Execution Chain</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>CommandLine has "cmd.exe"</code><br><code>CommandLine has_any ",.dll"</code><br><code>CommandLine has_any "explorer"</code><br><code>CommandLine matchesregex "\\/[Cc] +[Ss][Tt][Aa][Rr][Tt].*\\.exe"</code><br><code>ParentProcessName has "explorer.exe"</code><br><code>Process has_any "wscript.exe"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1875,7 +1723,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-rare-windows-firewall-rule-updates-using-netsh-e3e8c913-e5e9-4517-b4f7-dd1ec071888f-d0fef21e.html">Rare Windows Firewall Rule updates using Netsh</a></td>
-<td style="text-align: left;"><code>EventID == "1"</code></td>
+<td style="text-align: left;"><code>AccountType != "Machine"</code><br><code>CommandLine has_all "advfirewall"</code><br><code>EventID == "1"</code><br><code>Process == "netsh.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-remote-login-performed-with-wmi-8f658a80-7fa9-4524-a95b-d9ab608e8850-57d50f63.html">Remote Login Performed with WMI</a></td>
@@ -1883,7 +1731,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-remote-scheduled-task-creation-or-update-using-atsvc-named-pipe-7aad876a-a6fe-4c11-879e-8b29d35ff739-f9a3a936.html">Remote Scheduled Task Creation or Update using ATSVC Named Pipe</a></td>
-<td style="text-align: left;"><code>EventID == "5145"</code></td>
+<td style="text-align: left;"><code>EventID == "5145"</code><br><code>RelativeTargetName == "atsvc"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/endpoint-threat-protection-essentials-scheduled-task-creation-or-update-from-user-writable-directory-0b827a49-427e-4721-b05e-b151a8af524e-f6c2b013.html">Scheduled Task Creation or Update from User Writable Directory</a></td>
@@ -1963,11 +1811,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-commands-executed-by-wmi-on-new-hosts-potential-impacket-9ce755c1-d2e6-4e2f-82d5-7871ec1aef91-d645d9b4.html">Commands executed by WMI on new hosts - potential Impacket</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>ParentProcessName endswith "wmiprvse.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-crash-dump-disabled-on-host-5a3615af-21c9-427e-8bf1-ed2350992bb4-8623f73e.html">Crash dump disabled on host</a></td>
-<td style="text-align: left;"><code>EventID == "4657"</code></td>
+<td style="text-align: left;"><code>EventID == "4657"</code><br><code>ObjectValueName == "CrashDumpEnabled"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-cscript-script-daily-summary-breakdown-36abe031-962d-482e-8e1e-a556ed99d5a3-056955b7.html">Cscript script daily summary breakdown</a></td>
@@ -1979,7 +1827,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-discord-download-invoked-from-cmd-line-e7dd442a-0af8-48eb-8358-9e91f4911849-404b8911.html">Discord download invoked from cmd line</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has "powershell"</code><br><code>CommandLine has_any "cdn.discordapp.com"</code><br><code>EventID == "4688"</code><br><code>Process has_any "powershell.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-domain-controller-installation-media-creation-7e5f3a9a-542c-417a-a429-4ed500c5c4d8-fec25b2e.html">Domain controller installation media creation</a></td>
@@ -1999,7 +1847,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-exchange-powershell-snapin-added-8afd1086-fc9a-4d26-b3ff-5c794c79a59a-8e25d87f.html">Exchange PowerShell Snapin Added</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has "Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin"</code><br><code>EventID == "4688"</code><br><code>Process has_any "cmd.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-group-added-to-built-in-domain-local-or-global-group-cb47a115-2616-4d56-890d-b28c14bc83e4-cbcd997b.html">Group added to Built in Domain Local or Global Group</a></td>
@@ -2007,7 +1855,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-host-exporting-mailbox-and-removing-export-2e2fab4b-83dd-4cf8-b2dd-063d0fd15513-f6188024.html">Host Exporting Mailbox and Removing Export</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has "New-MailboxExportRequest"</code><br><code>CommandLine has "Remove-MailboxExportRequest"</code><br><code>EventID == "4688"</code><br><code>Process in "cmd.exe,powershell.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-hosts-running-a-rare-process-82e04ff9-a289-4005-9fcd-f1deec72e3fc-91003c14.html">Hosts Running a Rare Process</a></td>
@@ -2023,7 +1871,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-invoke-powershelltcponeline-usage.-a344e28e-095d-47fb-84a8-d06edd31d2cb-5e9d5425.html">Invoke-PowerShellTcpOneLine Usage.</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has "$client = New-Object System.Net.Sockets.TCPClient"</code><br><code>EventID == "4688"</code><br><code>Process has_any "powershell.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-least-common-parent-and-child-process-pairs-3712595d-6f47-416b-963a-605201ed2764-304136a9.html">Least Common Parent And Child Process Pairs</a></td>
@@ -2035,19 +1883,19 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-least-common-processes-by-command-line-088d30e9-c02b-46b1-bd1f-d5b6d6b782f0-21ac6383.html">Least Common Processes by Command Line</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName !endswith "conhost.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-long-lookback-user-account-created-and-deleted-within-10mins-6135a90e-ba30-4f36-9b6a-3a350050704b-6a4acaf0.html">Long lookback User Account Created and Deleted within 10mins</a></td>
-<td style="text-align: left;"><code>EventID in "4720,4726"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4720,4726"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-masquerading-files-60304ebf-ebdd-4869-a702-e0216d90ab46-fbac27a6.html">Masquerading files</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>NewProcessName !has ":\\Windows\\System32"</code><br><code>NewProcessName !has ":\\Windows\\Syswow64"</code><br><code>NewProcessName endswith "\\svchost.exe"</code><br><code>SubjectUserSid !in "S-1-5-18,S-1-5-19,S-1-5-20"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-multiple-explicit-credential-usage-4648-events-9e3fab4b-94dd-4cf9-b2aa-063d0fd25513-bf7d18d4.html">Multiple Explicit Credential Usage - 4648 events</a></td>
-<td style="text-align: left;"><code>EventID == "4648"</code></td>
+<td style="text-align: left;"><code>EventID == "4648"</code><br><code>SubjectUserSid != "S-1-0-0"</code><br><code>TargetInfo has "/"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-new-child-process-of-w3wp.exe-f885fb16-dfd3-4c90-83d9-7a66b9d9b654-75c40006.html">New Child Process of W3WP.exe</a></td>
@@ -2063,11 +1911,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-nishang-reverse-tcp-shell-in-base64-87c1f90a-f868-4528-a9c1-15520249cae6-29ac834c.html">Nishang Reverse TCP Shell in Base64</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has "-e"</code><br><code>EventID == "4688"</code><br><code>Process in "powershell.exe,powershell_ise.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-potential-exploitation-of-ms-rprn-printer-bug-c29a03c6-d074-4934-afae-df1aeb30da70-2d22b8de.html">Potential Exploitation of MS-RPRN printer bug</a></td>
-<td style="text-align: left;"><code>EventID == "5145"</code></td>
+<td style="text-align: left;"><code>EventID == "5145"</code><br><code>RelativeTargetName == "spoolss"</code><br><code>ShareName == "\\\\*\\IPC$"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-powershell-downloads-d83f40fc-bbcc-4020-8d45-ad2d82355cb2-eb98129c.html">PowerShell downloads</a></td>
@@ -2075,7 +1923,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-powercat-download-c2112ca3-aae0-4079-9bff-d74c54bb5fe5-e8217682.html">Powercat Download</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>Process has_any "cmd.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-rare-process-path-0ff22697-dc58-4623-b844-a767629840cd-668afb9c.html">Rare Process Path</a></td>
@@ -2087,11 +1935,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-remote-task-creation-update-using-schtasks-process-1e4a5be3-4a60-4099-b286-2d3642575889-38edc3ad.html">Remote Task Creation/Update using Schtasks Process</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has "/s"</code><br><code>EventID == "4688"</code><br><code>NewProcessName == "C:\\Windows\\System32\\schtasks.exe"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-summary-of-user-logons-by-logon-type-d0f13bb9-e713-4f89-b610-1806326a1dea-12378152.html">Summary of user logons by logon type</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4624,4625"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-summary-of-users-created-using-uncommon-undocumented-commandline-switches-5e76eaf9-79a7-448c-bace-28e5b53b8396-824f28e4.html">Summary of users created using uncommon/undocumented commandline switches</a></td>
@@ -2099,19 +1947,19 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-suspected-lsass-dump-58fe8fc8-54fa-48cd-bac3-197f8d862429-8666c9e8.html">Suspected LSASS Dump</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine has_all "procdump"</code><br><code>CommandLine has_all "rundll32"</code><br><code>EventID == "4688"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-suspicious-enumeration-using-adfind-tool-dd6fb889-43ef-44e1-a01d-093ab4bb12b2-fef95624.html">Suspicious Enumeration using Adfind Tool</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>CommandLine matchesregex "(.*)&gt;(.*)"</code><br><code>EventID == "4688"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-suspicious-windows-login-outside-normal-hours-e7bfbc3f-98c7-4aaa-a64c-de9c058b86b2-15ccdfd0.html">Suspicious Windows Login Outside Normal Hours</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
+<td style="text-align: left;"><code>EventID in "4624,4625"</code><br><code>TargetDomainName !in "Window Manager,Font Driver Host"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-suspicious-command-line-tokens-in-lolbins-or-lolscripts-6cdef739-18f6-4b3a-8fdc-93e9a4302dbf-46ec7a62.html">Suspicious command line tokens in LolBins or LolScripts</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>SubjectUserName != "SYSTEM"</code><br><code>SubjectUserName !endswith "$"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-uncommon-processes-bottom-5-2ff4b10c-7056-4898-83fd-774104189fd5-2ef29fea.html">Uncommon processes - bottom 5%</a></td>
@@ -2119,7 +1967,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-user-account-added-to-built-in-sensitive-or-privileged-domain-local-or-global-gr-8d69a665-074a-443b-aae6-5dd9bdd5cfb1-0118579e.html">User Account added to Built in Sensitive or Privileged Domain Local or Global Group</a></td>
-<td style="text-align: left;"><code>EventID in "4728,4732,4756"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4728,4732,4756"</code><br><code>TargetSid !in "S-1-5-32-555"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-user-account-added-or-removed-from-a-security-group-by-an-unauthorized-user-d57f675c-ad6c-44d0-95fb-3bf707e70155-3834c59d.html">User account added or removed from a security group by an unauthorized user</a></td>
@@ -2127,15 +1975,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-user-created-by-unauthorized-user-42ae9690-89ce-4063-9a90-465badad5395-6cbb1bb9.html">User created by unauthorized user</a></td>
-<td style="text-align: left;"><code>EventID == "4720"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID == "4720"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-892cd37e-f9e1-49c3-b0b2-d74f52ac7b71-f57a0ad0.html">VIP account more than 6 failed logons in 10</a></td>
-<td style="text-align: left;"><code>EventID == "4625"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID == "4625"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-vip-account-more-than-6-failed-logons-in-10-e8d36582-c403-4466-bd44-ebede5b6fa6e-f9a5b0f7.html">VIP account more than 6 failed logons in 10</a></td>
-<td style="text-align: left;"><code>EventID == "4625"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID == "4625"</code><br><code>LogonType in "2,3"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-windows-system-time-changed-on-hosts-9fd6f61d-2cc3-48de-acf5-7194e78d6ea1-9fe3fe4a.html">Windows System Time changed on hosts</a></td>
@@ -2143,102 +1991,21 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong></p>
+<p><strong>GitHub Only:</strong> <code>EventID == "4740"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-external-ip-address-in-command-line-2f6032ac-bb18-48b0-855a-7b05cf074957-0a0cb851.html">External IP address in Command Line</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-failed-login-attempt-by-expired-account-562900b1-39c4-4baf-a050-9cad1641db35-d62dcff7.html">Failed Login Attempt by Expired account</a></td>
-<td style="text-align: left;"><code>EventID in "4625,4769,4776"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.html">Tracking Password Changes</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625,4720,4726,4728,4732,4756,7045"</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-ad-account-lockout-e7642e6e-cf27-46ec-a4b9-e4475228fead-ea34d25c.html">AD Account Lockout</a></td>
-<td style="text-align: left;"><code>EventID == "4740"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.html">Critical user management operations followed by disabling of System Restore from admin account</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-download-of-new-file-using-curl-96066361-e101-4c8a-ad37-b0f58d75cd2b-761009fc.html">Download of New File Using Curl</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-fake-computer-account-authentication-attempt-f68084a2-87eb-11ec-a8a3-0242ac120002-10c686fb.html">Fake computer account authentication attempt</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-large-scale-malware-deployment-via-gpo-scheduled-task-modification-a1a06ba2-87f8-11ec-a8a3-0242ac120002-da222fca.html">Large Scale Malware Deployment via GPO Scheduled Task Modification</a></td>
-<td style="text-align: left;"><code>EventID == "5145"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-possible-command-injection-attempts-against-azure-integration-runtimes-2d1a3e86-f1a0-49d0-b88a-55789e1d6660-cb9d3e64.html">Possible command injection attempts against Azure Integration Runtimes</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-potential-process-doppelganging-97ff9459-dade-404a-b90e-d93b9acde1a4-9e113d99.html">Potential Process Doppelganging</a></td>
-<td style="text-align: left;"><code>EventID == "4985"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-rid-hijacking-fcdeec10-6948-11ec-90d6-0242ac120003-a1db9674.html">RID Hijacking</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-rare-firewall-rule-changes-using-netsh-3dc5dc8b-160b-407e-9925-24a91e3599df-309055ae.html">Rare firewall rule changes using netsh</a></td>
-<td style="text-align: left;"><code>EventID == "1"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-430a32b6.html">Recon Activity with Interactive Logon Correlation</a></td>
-<td style="text-align: left;"><code>EventID == "4624"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-remote-task-creation-update-using-schtasks-process-9a5f5afa-8d85-11ec-b909-0242ac120002-98b45ded.html">Remote Task Creation/Update using Schtasks Process</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
-</tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-summary-of-failed-user-logons-by-reason-of-failure-e7642e6e-cf27-46ec-a4b9-e4475228fead-bc8b05cf.html">Summary of failed user logons by reason of failure</a></td>
-<td style="text-align: left;"><code>EventID == "4740"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-suspicious-command-line-tokens-in-lolbins-or-lolscripts-4a6030de-c11c-4206-b4ea-cd005ebf80a2-42ab652c.html">Suspicious command line tokens in LolBins or LolScripts</a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-users-opening-and-reading-the-local-device-identity-key-9feddda0-6f46-43b4-a54f-5921e2b136b8-8ee3fb2f.html">Users Opening and Reading the Local Device Identity Key</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (43)</h3>
-<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>EventID in "2889,3000,4624,4768,4769,4776"</code></p>
+<h3 id="workbooks">Workbooks (22)</h3>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>Account !contains "ANONYMOUS LOGON"</code><br><code>AuthenticationPackageName == "NTLM"</code><br><code>EventID in "2889,3000,4624,4768,4769,4776"</code><br><code>LmPackageName == "NTLM V1"</code><br><code>PackageName contains "WDigest"</code></p>
 <table>
 <thead>
 <tr>
@@ -2281,7 +2048,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/eatonforeseer.html">EatonForeseer</a>:</strong> <code>EventID in "4624,4625,4634,4647,4648,4675"</code></p>
+<p><strong>In solution <a href="../solutions/eatonforeseer.html">EatonForeseer</a>:</strong> <code>AccountType == "User"</code><br><code>EventID in "4624,4625,4634,4647,4648,4675"</code><br><code>Process != "-"</code></p>
 <table>
 <thead>
 <tr>
@@ -2322,18 +2089,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>GroupMembership contains "admin"</code><br><code>GroupMembership contains "contributor"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -2350,7 +2115,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>EventID in "4723,4724"</code></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>ErrorCode == "50126"</code><br><code>EventID in "4723,4724"</code></p>
 <table>
 <thead>
 <tr>
@@ -2378,18 +2143,16 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a>:</strong> <code>Activity has "privileged"</code><br><code>Activity has_any "An account failed to log on"</code><br><code>SubjectUserName !has "$"</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/pci-dss-compliance-pcidsscompliance-b201eb3d.html">PCIDSSCompliance</a></td>
-<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -2404,7 +2167,7 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
-<td style="text-align: left;"><code>EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"</code></td>
+<td style="text-align: left;"><code>AccountType != "Computer"</code><br><code>AccountType != "Machine"</code><br><code>ErrorCode == "500121"</code><br><code>EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"</code><br><code>TargetAccount !contains "NT AUTHORITY"</code><br><code>TargetAccount !endswith "$"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
@@ -2412,7 +2175,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"</code></p>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"</code><br><code>ObjectName has_any "xlsx"</code></p>
 <table>
 <thead>
 <tr>
@@ -2440,19 +2203,19 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspquickviewdashboard-72fd1e27.html">SemperisDSPQuickviewDashboard</a></td>
-<td style="text-align: left;"><code>EventID in "20000,20002,20012,9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>ClassName == "group"</code><br><code>ClassName != "dnsNode"</code><br><code>EventID in "20000,20002,20012,9208,9211,9212"</code><br><code>EventSourceName in "Semperis-DSP-Notifications,Semperis-DSP-Security,Semperis-Operation-Log"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspsecurityindicators-a942a3d9.html">SemperisDSPSecurityIndicators</a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/semperis-directory-services-protector-semperisdspworkbook-523d6926.html">SemperisDSPWorkbook</a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/windows-firewall.html">Windows Firewall</a>:</strong> <code>EventID in "4624,4625"</code></p>
+<p><strong>In solution <a href="../solutions/windows-firewall.html">Windows Firewall</a>:</strong> <code>AccountType == "User"</code><br><code>EventID in "4624,4625"</code><br><code>LogonType == "10"</code></p>
 <table>
 <thead>
 <tr>
@@ -2480,7 +2243,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/windows-security-events-identityandaccess-d8681d3f.html">IdentityAndAccess</a></td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>Process != "-"</code></td>
 </tr>
 </tbody>
 </table>
@@ -2495,101 +2258,6 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-amamigrationtracker-7a7462f4.html">AMAmigrationTracker</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-advancedworkbookconcepts-3495e806.html">AdvancedWorkbookConcepts</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dcr-toolkit-37d84106.html">DCR-Toolkit</a></td>
-<td style="text-align: left;"><code>EventID == "and test !has"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-eventanalyzer-fed80a16.html">EventAnalyzer</a></td>
-<td style="text-align: left;"><code>EventID in "4656,4657,4658,4660,4661,4663,4664,4670,4671,4673,4674,4690,4691,4698,4699,4700,4701,4702,4715,4719,4817,4902,4904,4905,4906,4907,4908,4912,4985,5031,5039,5051,5140,5142,5143,5144,5148,5149,5150,5151,5154,5155,5156,5157,5158,5159,5168,5888,5889,5890"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-<td style="text-align: left;"><code>EventID in "3,4663,4688,5136"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-identityandaccess-c7aa136c.html">IdentityAndAccess</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-insecureprotocols-bd42e6f8.html">InsecureProtocols</a></td>
-<td style="text-align: left;"><code>EventID in "2889,3000,4624,4768,4769,4776,5827,5828,5829,5830,5831"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"><code>EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-securitystatus-c79b09ad.html">SecurityStatus</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"><code>EventID in "17,18,4624,4662,4670,4688,5145,87"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-sysmonthreathunting-ea4856c6.html">SysmonThreatHunting</a></td>
-<td style="text-align: left;"><code>EventID in "1,10,11,12,13,17,18,22,3,4624,4625,4720,4722,4723,4724,4725,4726,4728,4729,4732,4733,4738,4740,4746,4747,4751,4752,4756,4761,4762,4767,4771,4781,7,8"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-windowsauditchecker-d8c63df2.html">WindowsAuditChecker</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625,4768,4769,4771"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-windowsfirewall-e0440cb8.html">WindowsFirewall</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-windowsfirewallviaama-c6e9060b.html">WindowsFirewallViaAMA</a></td>
-<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
 <td style="text-align: left;"></td>
 </tr>
 </tbody>
@@ -2616,7 +2284,7 @@
 <td style="text-align: left;"><a href="../asim/asimfileeventmicrosoftsecurityevents.html">ASimFileEventMicrosoftSecurityEvents</a></td>
 <td style="text-align: left;">FileEvent</td>
 <td style="text-align: left;">Microsoft Windows Events</td>
-<td style="text-align: left;"><code>EventID == "4663"</code></td>
+<td style="text-align: left;"><code>EventID == "4663"</code><br><code>ObjectType == "File"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../asim/asimprocesscreatemicrosoftsecurityevents.html">ASimProcessCreateMicrosoftSecurityEvents</a></td>
@@ -2634,7 +2302,7 @@
 <td style="text-align: left;"><a href="../asim/asimregistryeventmicrosoftsecurityevent.html">ASimRegistryEventMicrosoftSecurityEvent</a></td>
 <td style="text-align: left;">RegistryEvent</td>
 <td style="text-align: left;">Security Events</td>
-<td style="text-align: left;"><code>EventID in "4657,4663"</code></td>
+<td style="text-align: left;"><code>EventID in "4657,4663"</code><br><code>ObjectType == "Key"</code></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../asim/asimusermanagementmicrosoftsecurityevent.html">ASimUserManagementMicrosoftSecurityEvent</a></td>
@@ -2644,7 +2312,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="other-parsers-1-selection-criteria-eventid-in-920892119212">Other Parsers (1) — Selection Criteria: <code>EventID in "9208,9211,9212"</code></h3>
+<h3 id="other-parsers-1-selection-criteria-eventid-in-920892119212eventsourcename-semperis-dsp-security">Other Parsers (1) — Selection Criteria: <code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></h3>
 <table>
 <thead>
 <tr>
@@ -2669,8 +2337,8 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (53 criteria, 124 total references)</h2>
-<p>References by type: 1 connectors, 117 content items, 5 ASIM parsers, 1 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (86 criteria, 116 total references)</h2>
+<p>References by type: 1 connectors, 109 content items, 5 ASIM parsers, 1 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -2686,93 +2354,29 @@
 <tr>
 <td style="text-align: left;"><code>EventID == "4688"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">37</td>
+<td style="text-align: center;">15</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>38</strong></td>
+<td style="text-align: center;"><strong>16</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>9</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">11</td>
+<td style="text-align: center;">5</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>11</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>8</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "5136"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "4625"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "4657"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "1"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "5145"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "4740"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID in "4624,4625,4634,4647,4648,4675"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID in "4656,4663"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "4720"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID == "4625"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -2788,15 +2392,23 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "9211,9212"</code></td>
-<td style="text-align: center;">1</td>
+<td style="text-align: left;"><code>EventID == "4740"</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4624,4625,4634,4647,4648,4675"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "5058"</code></td>
+<td style="text-align: left;"><code>EventID in "4624,4625"</code><br><code>LogonType == "10"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2804,7 +2416,31 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "5059"</code></td>
+<td style="text-align: left;"><code>EventSourceName == "Microsoft-Windows-Eventlog"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName has "C:\\Windows\\"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Computer contains "&lt;YOUR CA MACHINE NAME&gt;"</code><br><code>EventID == "5058"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Computer contains "&lt;YOUR CA MACHINE NAME&gt;"</code><br><code>EventID == "5059"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2828,7 +2464,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "20002"</code></td>
+<td style="text-align: left;"><code>EventID == "20002"</code><br><code>EventSourceName == "Semperis-Operation-Log"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2836,7 +2472,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "30001"</code></td>
+<td style="text-align: left;"><code>EventID == "30001"</code><br><code>EventSourceName == "Semperis-DSP-Notifications"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2844,7 +2480,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "20012"</code></td>
+<td style="text-align: left;"><code>EventID == "20012"</code><br><code>EventSourceName == "Semperis-Operation-Log"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2852,7 +2488,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4663,4688"</code></td>
+<td style="text-align: left;"><code>AccessMask in "0x10,0x100,0x2,0x4"</code><br><code>CommandLine has "SysAidServer"</code><br><code>EventID in "4663,4688"</code><br><code>ObjectName endswith ".jsp"</code><br><code>Process has_any "java.exe"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2868,7 +2504,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"</code></td>
+<td style="text-align: left;"><code>EventID == "5136"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2876,7 +2512,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4624,4662"</code></td>
+<td style="text-align: left;"><code>Account !endswith "$"</code><br><code>EventID in "4624,4688,4697,4698,4699,4700,4701,4702,5145"</code><br><code>LogonType == "3"</code><br><code>RelativeTargetName in "atsvc,svcctl"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2884,7 +2520,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "1102"</code></td>
+<td style="text-align: left;"><code>EventID in "4656,4663"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2892,7 +2528,71 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4657,4688"</code></td>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AccountType != "Machine"</code><br><code>EventID in "4624,4662"</code><br><code>LogonType == "3"</code><br><code>ObjectServer == "DS"</code><br><code>Properties has "1131f6aa-9c07-11d1-f79f-00c04fc2dcd2"</code><br><code>Properties has "1131f6ad-9c07-11d1-f79f-00c04fc2dcd2"</code><br><code>Properties has "89e95b76-444d-4c62-991a-0facbeda640c"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine contains "TVqQAAMAAAAEAAA"</code><br><code>EventID == "4688"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine contains ".decode("</code><br><code>CommandLine contains ".decode64("</code><br><code>CommandLine contains "base64 --decode"</code><br><code>EventID == "4688"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "1102"</code><br><code>EventSourceName == "Microsoft-Windows-Eventlog"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID in "4657,4688"</code><br><code>ParentProcessName endswith "cmd.exe"</code><br><code>ParentProcessName endswith "powershell.exe"</code><br><code>ParentProcessName endswith "powershell_ise.exe"</code><br><code>Process == "fodhelper.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine !has "sdelete"</code><br><code>CommandLine has_all "accepteula"</code><br><code>EventID == "4688"</code><br><code>Process != "sdelete.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4657"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine has "-k GPSvcGroup"</code><br><code>CommandLine has "-s gpsvc"</code><br><code>CommandLine has "sdelete"</code><br><code>CommandLine has_all "-s"</code><br><code>EventID == "4688"</code><br><code>ParentProcessName endswith "svchost.exe"</code><br><code>Process in "sdelete.exe,svchost.exe"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2908,7 +2608,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "1,4688"</code></td>
+<td style="text-align: left;"><code>NewValue contains "CreateObject"</code><br><code>NewValue contains "Execute("</code><br><code>NewValue contains "RegRead"</code><br><code>NewValue contains "RunHTMLApplication"</code><br><code>NewValue contains "jscript"</code><br><code>NewValue contains "mshtml"</code><br><code>NewValue contains "mshtml,"</code><br><code>NewValue contains "vbscript"</code><br><code>NewValue contains "window.close"</code><br><code>ObjectName !has "\\Run"</code><br><code>ObjectName has "\\CurrentVersion"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2916,7 +2616,71 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "501"</code></td>
+<td style="text-align: left;"><code>NewProcessName has_any "arp.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NewProcessName endswith "werfault.exe"</code><br><code>ObjectName endswith "lsass.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName matchesregex "C:\\\\Windows\\\\[a-zA-Z]{8}.exe"</code><br><code>ParentProcessName has "services.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine matchesregex "-[Ee^]{1,2}[NnCcOoDdEeMmAaPpHh^</code>]+\s+\"<code>&lt;br&gt;</code>NewProcessName endswith "powershell.exe"`</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine contains ".onion"</code><br><code>CommandLine contains "http"</code><br><code>CommandLine contains "paste."</code><br><code>CommandLine has_any "pastebin"</code><br><code>Process has "powershell.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NewProcessName has_any "cmd.exe"</code><br><code>NewProcessName has_any "winword.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine contains "\\Microsoft\\Windows\\CurrentVersion"</code><br><code>CommandLine has_all "Execute"</code><br><code>CommandLine has_all "vbscript"</code><br><code>Process has_any "cmd.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine has "cmd.exe"</code><br><code>CommandLine has_any ",.dll"</code><br><code>CommandLine has_any "explorer"</code><br><code>CommandLine matchesregex "\\/[Cc] +[Ss][Tt][Aa][Rr][Tt].*\\.exe"</code><br><code>ParentProcessName has "explorer.exe"</code><br><code>Process has_any "wscript.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "5145"</code><br><code>RelativeTargetName == "atsvc"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2932,6 +2696,46 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>AccountType != "Machine"</code><br><code>CommandLine has_all "advfirewall"</code><br><code>EventID == "1"</code><br><code>Process == "netsh.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>ParentProcessName endswith "wmiprvse.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4657"</code><br><code>ObjectValueName == "CrashDumpEnabled"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine has "powershell"</code><br><code>CommandLine has_any "cdn.discordapp.com"</code><br><code>EventID == "4688"</code><br><code>Process has_any "powershell.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine has "Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin"</code><br><code>EventID == "4688"</code><br><code>Process has_any "cmd.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>EventID in "4727,4728,4731,4732,4754,4756"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -2940,7 +2744,63 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "4648"</code></td>
+<td style="text-align: left;"><code>CommandLine has "New-MailboxExportRequest"</code><br><code>CommandLine has "Remove-MailboxExportRequest"</code><br><code>EventID == "4688"</code><br><code>Process in "cmd.exe,powershell.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine has "$client = New-Object System.Net.Sockets.TCPClient"</code><br><code>EventID == "4688"</code><br><code>Process has_any "powershell.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>NewProcessName !endswith "conhost.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>NewProcessName !has ":\\Windows\\System32"</code><br><code>NewProcessName !has ":\\Windows\\Syswow64"</code><br><code>NewProcessName endswith "\\svchost.exe"</code><br><code>SubjectUserSid !in "S-1-5-18,S-1-5-19,S-1-5-20"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "5145"</code><br><code>RelativeTargetName == "spoolss"</code><br><code>ShareName == "\\\\*\\IPC$"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4648"</code><br><code>SubjectUserSid != "S-1-0-0"</code><br><code>TargetInfo has "/"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine has "-e"</code><br><code>EventID == "4688"</code><br><code>Process in "powershell.exe,powershell_ise.exe"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>Process has_any "cmd.exe"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2956,7 +2816,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4728,4732,4756"</code></td>
+<td style="text-align: left;"><code>CommandLine has "/s"</code><br><code>EventID == "4688"</code><br><code>NewProcessName == "C:\\Windows\\System32\\schtasks.exe"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2964,7 +2824,55 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4720,4726"</code></td>
+<td style="text-align: left;"><code>CommandLine has_all "procdump"</code><br><code>CommandLine has_all "rundll32"</code><br><code>EventID == "4688"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4688"</code><br><code>SubjectUserName != "SYSTEM"</code><br><code>SubjectUserName !endswith "$"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CommandLine matchesregex "(.*)&gt;(.*)"</code><br><code>EventID == "4688"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID in "4624,4625"</code><br><code>TargetDomainName !in "Window Manager,Font Driver Host"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4624,4625"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4728,4732,4756"</code><br><code>TargetSid !in "S-1-5-32-555"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4720,4726"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2980,6 +2888,22 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID == "4720"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID == "4625"</code><br><code>LogonType in "2,3"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>EventID == "4616"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -2988,7 +2912,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4625,4769,4776"</code></td>
+<td style="text-align: left;"><code>Account !contains "ANONYMOUS LOGON"</code><br><code>AuthenticationPackageName == "NTLM"</code><br><code>EventID in "2889,3000,4624,4768,4769,4776"</code><br><code>LmPackageName == "NTLM V1"</code><br><code>PackageName contains "WDigest"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -2996,7 +2920,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "4624"</code></td>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4624,4625,4634,4647,4648,4675"</code><br><code>Process != "-"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3004,23 +2928,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4624,4625,4720,4726,4728,4732,4756,7045"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID == "4985"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>EventID in "2889,3000,4624,4768,4769,4776"</code></td>
+<td style="text-align: left;"><code>GroupMembership contains "admin"</code><br><code>GroupMembership contains "contributor"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3036,7 +2944,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4723,4724"</code></td>
+<td style="text-align: left;"><code>ErrorCode == "50126"</code><br><code>EventID in "4723,4724"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3044,7 +2952,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "20000,20002,20012,9208,9211,9212"</code></td>
+<td style="text-align: left;"><code>Activity has "privileged"</code><br><code>Activity has_any "An account failed to log on"</code><br><code>SubjectUserName !has "$"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3052,7 +2960,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"</code></td>
+<td style="text-align: left;"><code>ClassName == "group"</code><br><code>ClassName != "dnsNode"</code><br><code>EventID in "20000,20002,20012,9208,9211,9212"</code><br><code>EventSourceName in "Semperis-DSP-Notifications,Semperis-DSP-Security,Semperis-Operation-Log"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3060,7 +2968,23 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"</code></td>
+<td style="text-align: left;"><code>AccountType != "Computer"</code><br><code>AccountType != "Machine"</code><br><code>ErrorCode == "500121"</code><br><code>EventID in "1102,4624,4625,4688,4719,4720,4723,4724,4768,4771,4776"</code><br><code>TargetAccount !contains "NT AUTHORITY"</code><br><code>TargetAccount !endswith "$"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"</code><br><code>ObjectName has_any "xlsx"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AccountType == "User"</code><br><code>EventID in "4624,4625"</code><br><code>LogonType == "10"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3076,7 +3000,15 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID == "4663"</code></td>
+<td style="text-align: left;"><code>Process != "-"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>EventID == "4663"</code><br><code>ObjectType == "File"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3092,7 +3024,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EventID in "4657,4663"</code></td>
+<td style="text-align: left;"><code>EventID in "4657,4663"</code><br><code>ObjectType == "Key"</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3110,10 +3042,537 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>117</strong></td>
+<td style="text-align: center;"><strong>109</strong></td>
 <td style="text-align: center;"><strong>5</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>124</strong></td>
+<td style="text-align: center;"><strong>116</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="accessmask">AccessMask</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>0x10</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>0x100</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>0x2</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>0x4</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="account">Account</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!endswith $</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!contains ANONYMOUS LOGON</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="accounttype">AccountType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>User</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>10</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= Machine</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= Computer</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="activity">Activity</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has privileged</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any An account failed to log on</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="authenticationpackagename">AuthenticationPackageName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>NTLM</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="classname">ClassName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>group</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= dnsNode</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="commandline">CommandLine</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has SysAidServer</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains TVqQAAMAAAAEAAA</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains .decode(</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains .decode64(</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains base64 --decode</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!has sdelete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all accepteula</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has -k GPSvcGroup</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has -s gpsvc</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has sdelete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all -s</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains .onion</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains http</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains paste.</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any pastebin</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains \\Microsoft\\Windows\\CurrentVersion</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all Execute</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all vbscript</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has cmd.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any .dll</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any explorer</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all advfirewall</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has powershell</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any cdn.discordapp.com</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Add-PSSnapin Microsoft.Exchange.Management.Powershell.Snapin</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has New-MailboxExportRequest</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has Remove-MailboxExportRequest</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has $client = New-Object System.Net.Sockets.TCPClient</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has -e</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has /s</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all procdump</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_all rundll32</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="computer">Computer</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains &lt;YOUR CA MACHINE NAME&gt;</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="errorcode">ErrorCode</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>50126</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>500121</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -3133,26 +3592,34 @@
 <tr>
 <td style="text-align: left;"><code>4688</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">46</td>
+<td style="text-align: center;">42</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>47</strong></td>
+<td style="text-align: center;"><strong>43</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>4624</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">22</td>
+<td style="text-align: center;">18</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>22</strong></td>
+<td style="text-align: center;"><strong>18</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>4625</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">19</td>
+<td style="text-align: center;">15</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>19</strong></td>
+<td style="text-align: center;"><strong>15</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>9208</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>10</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>9211</code></td>
@@ -3171,36 +3638,20 @@
 <td style="text-align: center;"><strong>10</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>9208</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;"><strong>9</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>4663</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
+<td style="text-align: center;">4</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>4657</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>7</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>4720</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>4648</code></td>
@@ -3211,63 +3662,23 @@
 <td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>4656</code></td>
+<td style="text-align: left;"><code>4720</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>5</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>4656</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>4732</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>5136</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>5145</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>1</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>4728</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>4756</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>4726</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
@@ -3299,6 +3710,14 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>5145</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>1102</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
@@ -3315,7 +3734,7 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>4740</code></td>
+<td style="text-align: left;"><code>4728</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
@@ -3323,7 +3742,15 @@
 <td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>4776</code></td>
+<td style="text-align: left;"><code>4756</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>4726</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 <td style="text-align: center;">-</td>
@@ -3395,14 +3822,6 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>501</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>5156</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -3443,6 +3862,14 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>4740</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>4754</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
@@ -3451,15 +3878,7 @@
 <td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>4769</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>4985</code></td>
+<td style="text-align: left;"><code>4776</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
@@ -3531,6 +3950,22 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;"><code>501</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>5136</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>4697</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3540,6 +3975,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>4662</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>1</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3643,14 +4086,6 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>7045</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>2889</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
@@ -3660,6 +4095,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>3000</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>4769</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -3868,6 +4311,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><code>4912</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>4985</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -4084,9 +4535,995 @@
 </tr>
 </tbody>
 </table>
+<h3 id="eventsourcename">EventSourceName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>Semperis-DSP-Security</code></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>10</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Semperis-Operation-Log</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Microsoft-Windows-Eventlog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Semperis-DSP-Notifications</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="groupmembership">GroupMembership</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains admin</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains contributor</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="lmpackagename">LmPackageName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>NTLM V1</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="logontype">LogonType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>3</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>10</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>2</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="newprocessname">NewProcessName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has C:\\Windows\\</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any arp.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith werfault.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith powershell.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any cmd.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any winword.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!endswith conhost.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!has :\\Windows\\System32</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!has :\\Windows\\Syswow64</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith \\svchost.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>C:\\Windows\\System32\\schtasks.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="newvalue">NewValue</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains CreateObject</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains Execute(</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains RegRead</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains RunHTMLApplication</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains jscript</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains mshtml</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains mshtml,</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains vbscript</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>contains window.close</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objectname">ObjectName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>endswith .jsp</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!has \\Run</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has \\CurrentVersion</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith lsass.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any xlsx</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objectserver">ObjectServer</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>DS</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objecttype">ObjectType</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>File</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Key</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="objectvaluename">ObjectValueName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>CrashDumpEnabled</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="packagename">PackageName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>contains WDigest</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parentprocessname">ParentProcessName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>endswith cmd.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith powershell.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith powershell_ise.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith svchost.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has services.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has explorer.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>endswith wmiprvse.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="process">Process</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has_any cmd.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any powershell.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>powershell.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= -</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any java.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>fodhelper.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= sdelete.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>sdelete.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>svchost.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has powershell.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has_any wscript.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>netsh.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>cmd.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>powershell_ise.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has 1131f6ad-9c07-11d1-f79f-00c04fc2dcd2</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>has 89e95b76-444d-4c62-991a-0facbeda640c</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="relativetargetname">RelativeTargetName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>atsvc</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>svcctl</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>spoolss</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="sharename">ShareName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>\\\\*\\IPC$</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="subjectusername">SubjectUserName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!= SYSTEM</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!endswith $</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!has $</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="subjectusersid">SubjectUserSid</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!= S-1-5-18</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= S-1-5-19</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= S-1-5-20</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= S-1-0-0</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="targetaccount">TargetAccount</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!contains NT AUTHORITY</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!endswith $</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="targetdomainname">TargetDomainName</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!= Window Manager</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= Font Driver Host</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="targetinfo">TargetInfo</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has /</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="targetsid">TargetSid</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!= S-1-5-32-555</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 </div>
 <script>
 $(function() {

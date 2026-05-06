@@ -23,9 +23,9 @@ Detects when Copilot is accessed from an external IP address outside the corpora
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`CopilotActivity`](../tables/copilotactivity.md) | `SrcIpAddr !startswith "10."`<br>`SrcIpAddr !startswith "172."`<br>`SrcIpAddr !startswith "192.168"` | ✓ | ✗ | ? |
 
 ---
 

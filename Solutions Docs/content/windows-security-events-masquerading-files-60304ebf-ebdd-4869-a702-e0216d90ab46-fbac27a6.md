@@ -21,9 +21,9 @@ Malware writers often use windows system process names like svchost.exe to hide 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | ✓ | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SecurityEvent`](../tables/securityevent.md) | `NewProcessName !has ":\\Windows\\System32"`<br>`NewProcessName !has ":\\Windows\\Syswow64"`<br>`NewProcessName endswith "\\svchost.exe"`<br>`SubjectUserSid !in "S-1-5-18,S-1-5-19,S-1-5-20"` | ✓ | ✓ | ? |
 
 ---
 

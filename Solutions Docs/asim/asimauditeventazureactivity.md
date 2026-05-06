@@ -29,9 +29,9 @@ This ASIM parser supports normalizing Azure administrative activity in the Azure
 
 This parser reads from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | ? | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "Administrative"` | ? | ✗ | ? |
 
 ## Parameters
 

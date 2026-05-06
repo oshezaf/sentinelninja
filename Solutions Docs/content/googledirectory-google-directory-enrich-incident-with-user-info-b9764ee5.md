@@ -16,6 +16,26 @@ Once a new Microsoft Sentinel incident is created, this playbook gets triggered 
 
 > ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
 
+## Logic App Connectors
+
+This playbook uses **2** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 2 |
+| `GoogleDirectory` | Custom | 1 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+
+**`GoogleDirectory`** (customApi):
+- *Get_User*: method=`get`, path=`/admin/directory/v1/users/@{encodeURIComponent(outputs('get_user_email'))}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Playbooks/Google-EnrichIncidentWithUserInfo/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleDirectory/Playbooks/Playbooks/Google-EnrichIncidentWithUserInfo/readme.md)*

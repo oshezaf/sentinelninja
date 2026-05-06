@@ -25,9 +25,9 @@ Identifies when executable file types are uploaded to Office services such as Sh
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | ✓ | ✗ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`OfficeActivity`](../tables/officeactivity.md) | `Operation contains "download"`<br>`Operation contains "upload"` | ✓ | ✗ | ? |
 
 ---
 

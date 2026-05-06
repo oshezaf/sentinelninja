@@ -22,6 +22,26 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) 🔶 | ? | ✓ | ? |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azureloganalyticsdatacollector` | Managed | 1 | 0 |
+| `azureloganalyticsdatacollector_1` | Managed | 0 | 1 |
+| `http` | Built-in | 0 | 1 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azureloganalyticsdatacollector_1`** (managedApi):
+- *Send_Data*: method=`post`, path=`/api/logs`
+
+**`http`** (builtin):
+- *Get_All_Insights*: method=`GET`, uri=`https://csp.infoblox.com/api/v1/insights`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Infoblox SOC Get Open Insights API/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Get%20Open%20Insights%20API/readme.md)*

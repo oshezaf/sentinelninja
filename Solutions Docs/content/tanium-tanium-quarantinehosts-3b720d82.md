@@ -14,6 +14,46 @@ During an investigation, it may be critical to isolate endpoints quickly if a co
 | **Solution** | [Tanium](../solutions/tanium.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-QuarantineHosts/azuredeploy.json) |
 
+## Logic App Connectors
+
+This playbook uses **3** Logic App connectors / built-in actions:
+
+| Connector / Action | Type | Connections | Actions |
+|:-------------------|:-----|:-----------:|:-------:|
+| `azuresentinel` | Managed | 1 | 8 |
+| `keyvault` | Managed | 1 | 1 |
+| `http` | Built-in | 0 | 11 |
+
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+**`azuresentinel`** (managedApi):
+- *Add_Issued_Actions_to_Incident*: method=`post`, path=`/Incidents/Comment`
+- *Get_Hosts_From_Incident*: method=`post`, path=`/entities/host`
+- *Add_comment__-_no_hosts_found*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment__-_no_data_in_Tanium*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_-_hosts_that_will_be_targeted*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_-_known_and_unknown_action_results*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_-_known_action_results*: method=`post`, path=`/Incidents/Comment`
+- *Add_comment_to_incident_-_unknown_action_results*: method=`post`, path=`/Incidents/Comment`
+
+**`keyvault`** (managedApi):
+- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('TaniumApiToken')}/value`
+
+**`http`** (builtin):
+- *Get_the_"All_Computers"_group*: method=`GET`, uri=`@parameters('TaniumAllComputersUrl')`
+- *Get_Linux_Quarantine_package*: method=`GET`, uri=`@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('linuxPackageName')))}`
+- *Issue_Linux_Quarantine_action*: method=`POST`, uri=`@parameters('TaniumActionsApi')`
+- *Get_Windows_Quarantine_package*: method=`GET`, uri=`@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('windowsPackageName')))}`
+- *Issue_Windows_Quarantine_action*: method=`POST`, uri=`@parameters('TaniumActionsApi')`
+- *Get_macOS_Quarantine_package*: method=`GET`, uri=`@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('macOsPackageName')))}`
+- *Issue_macOS_Quarantine_action*: method=`POST`, uri=`@parameters('TaniumActionsApi')`
+- *Get_General_Host_Info*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+- *Requery_the_API_Gateway*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+- *Get_next_page*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+- *Get_action_result*: method=`GET`, uri=`@{concat(parameters('TaniumActionResultDataUrlFragment'), items('Collect_action_results_for_each_issued_action')?['id'])}`
+
+</details>
+
 ## Additional Documentation
 
 > 📄 *Source: [Tanium-QuarantineHosts/readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-QuarantineHosts/readme.md)*
