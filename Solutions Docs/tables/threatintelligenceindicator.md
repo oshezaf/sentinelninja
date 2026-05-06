@@ -377,13 +377,13 @@ References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `SourceSystem !contains "JoeSandbox"`<br>`SourceSystem contains "JoeSandbox"` | 1 | - | - | - | **1** |
-| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
-| `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
-| `SourceSystem == "Datalake - OrangeCyberdefense"` | 1 | - | - | - | **1** |
 | `ThreatType == "DDoS"` | 1 | - | - | - | **1** |
+| `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
 | `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
+| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
+| `SourceSystem == "Datalake - OrangeCyberdefense"` | 1 | - | - | - | **1** |
+| `SourceSystem !contains "JoeSandbox"`<br>`SourceSystem contains "JoeSandbox"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
 | **Total** | **7** | **1** | **0** | **0** | **8** |
 
@@ -391,16 +391,16 @@ References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!contains JoeSandbox` | 1 | - | - | - | **1** |
-| `contains JoeSandbox` | 1 | - | - | - | **1** |
-| `!contains VMRay` | 1 | - | - | - | **1** |
-| `contains VMRay` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
-| `Datalake - OrangeCyberdefense` | 1 | - | - | - | **1** |
 | `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `!startswith Cofense :` | 1 | - | - | - | **1** |
 | `startswith Cofense :` | 1 | - | - | - | **1** |
+| `!contains VMRay` | 1 | - | - | - | **1** |
+| `contains VMRay` | 1 | - | - | - | **1** |
+| `Datalake - OrangeCyberdefense` | 1 | - | - | - | **1** |
+| `!contains JoeSandbox` | 1 | - | - | - | **1** |
+| `contains JoeSandbox` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
 
 ### ThreatType
