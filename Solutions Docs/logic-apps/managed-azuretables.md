@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/azuretables/](https://learn.microsoft.com/en-us/connectors/azuretables/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuretables/) |
 
 ## Playbooks Using This Connector
 

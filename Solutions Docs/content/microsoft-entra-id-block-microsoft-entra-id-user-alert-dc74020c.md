@@ -20,30 +20,42 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinel` | Managed | 0 | 5 |
-| `office365` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 5 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Get_user_-_details*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix']))}`
-- *Update_user_-_disable_user*: method=`patch`, path=`/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix']))}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`microsoftsentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_comment_to_incident_-_with_manager_-_no_admin*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_no_manager_-_no_admin*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_error_details*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_user_-_details | get | `/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix']))}` | — |
+| Update_user_-_disable_user | patch | `/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix']))}` | — |
 
-**`office365`** (managedApi):
-- *Send_an_email_-_to_manager_-_no_admin*: method=`post`, path=`/v2/Mail`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_get_user_manager*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/users/@{concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix'])}/manager`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_comment_to_incident_-_with_manager_-_no_admin | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_no_manager_-_no_admin | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_error_details | post | `/Incidents/Comment` | — |
+
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_-_to_manager_-_no_admin | post | `/v2/Mail` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_get_user_manager | GET | `https://graph.microsoft.com/v1.0/users/@{concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix'])}/manager` | — |
 
 </details>
 

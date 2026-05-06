@@ -28,21 +28,30 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}`
-- *Add_comment_to_incident_(V2)*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(body('Alert_-_Get_incident')?['properties']?['CaseNumber'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`https://www.virustotal.com/vtapi/v2/url/report`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}` | — |
+| Add_comment_to_incident_(V2) | put | `/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(body('Alert_-_Get_incident')?['properties']?['CaseNumber'])}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `https://www.virustotal.com/vtapi/v2/url/report` | — |
 
 </details>
 

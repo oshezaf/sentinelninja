@@ -20,28 +20,40 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 2 |
-| `teams` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
-| `workflow` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Access_Token_For_Detections_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Opening_Detections*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections`
-- *HTTP_Request_To_Open_Detections*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections/open`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token_For_Detections_Data | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Opening_Detections | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections` | — |
+| HTTP_Request_To_Open_Detections | PATCH | `@{variables('base_url')}/api/@{variables('api_version')}/detections/open` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

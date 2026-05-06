@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `recordedfuturesandbo` | Managed | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`recordedfuturesandbo`](../logic-apps/managed-recordedfuturesandbo.md) | Managed | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`recordedfuturesandbo`** (managedApi):
-- *Get_the_full_report*: method=`get`, path=`/samples/@{encodeURIComponent(body('Get_the_full_summary')?['id'])}/overview.json`
-- *Submit_url_samples*: method=`post`, path=`/samples/url`
-- *Get_the_full_summary*: method=`get`, path=`/samples/@{encodeURIComponent(body('Submit_url_samples')?['id'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`recordedfuturesandbo`](../logic-apps/managed-recordedfuturesandbo.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_the_full_report | get | `/samples/@{encodeURIComponent(body('Get_the_full_summary')?['id'])}/overview.json` | — |
+| Submit_url_samples | post | `/samples/url` | — |
+| Get_the_full_summary | get | `/samples/@{encodeURIComponent(body('Submit_url_samples')?['id'])}` | — |
 
 </details>
 

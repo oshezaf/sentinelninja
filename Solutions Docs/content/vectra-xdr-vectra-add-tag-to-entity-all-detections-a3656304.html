@@ -55,31 +55,31 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>workflow</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -88,20 +88,29 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Access_Token_For_Adding_Tags_To_Each_Detection*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Fetching_Tags*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Detections_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Request_To_Add_Tags_To_Detection_Associated_With_Vectra_Entity*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/tagging/detection/@{items('For_Each_Loop_To_Add_Tag_To_Detection')}`
-- *HTTP_Request_To_Fetch_Detection_Tags*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/tagging/detection/@{items('For_Each_Loop_To_Add_Tag_To_Detection')}`
-- *HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token_For_Adding_Tags_To_Each_Detection | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Fetching_Tags | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Detections_Data | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Add_Tags_To_Detection_Associated_With_Vectra_Entity | PATCH | `@{variables('base_url')}/api/@{variables('api_version')}/tagging/detection/@{items('For_Each_Loop_To_Add_Tag_To_Detection')}` | — |
+| HTTP_Request_To_Fetch_Detection_Tags | GET | `@{variables('base_url')}/api/@{variables('api_version')}/tagging/detection/@{items('For_Each_Loop_To_Add_Tag_To_Detection')}` | — |
+| HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_3 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

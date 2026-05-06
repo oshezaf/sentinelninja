@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 0 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/kusto/](https://learn.microsoft.com/en-us/connectors/kusto/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/kusto/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| ADX-health-playbook | - | 1 | 1 |
+| [ADX-health-playbook](../content/github-only-adx-health-playbook-8c510171.md) | 🔗 GitHub Only | 1 | 1 |
 
 ---
 

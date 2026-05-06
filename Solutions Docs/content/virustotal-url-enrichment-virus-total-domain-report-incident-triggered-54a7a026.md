@@ -28,23 +28,32 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 3 |
-| `virustotal` | Managed | 1 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`virustotal`](../logic-apps/managed-virustotal.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
-- *Send_Data_2*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
+| Send_Data_2 | post | `/api/logs` | — |
 
-**`virustotal`** (managedApi):
-- *Get_Domain_report*: method=`get`, path=`/api/v3/domains/@{encodeURIComponent(if(greater(length(split(items('For_each')?['Url'], '/')), 2), split(items('For_each')?['Url'], '/')[2], items('For_each')?['Url']))}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`virustotal`](../logic-apps/managed-virustotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Domain_report | get | `/api/v3/domains/@{encodeURIComponent(if(greater(length(split(items('For_each')?['Url'], '/')), 2), split(items('For_each')?['Url'], '/')[2], items('For_each')?['Url']))}` | — |
 
 </details>
 

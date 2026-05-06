@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `MerakiConnector` | Custom | 1 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`MerakiConnector`](../logic-apps/custom-merakiconnector.md) | Custom | 1 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`MerakiConnector`** (customApi):
-- *Get_Network_Appliance_Firewall_L3_Firewall_Rules*: method=`get`, path=`/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/firewall/l3FirewallRules`
-- *Get_Network_Appliance_Firewall_L7_Firewall_Rules*: method=`get`, path=`/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/firewall/l7FirewallRules`
-- *Get_Networks*: method=`get`, path=`/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks`
-- *Get_Organizations*: method=`get`, path=`/organizations`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`MerakiConnector`](../logic-apps/custom-merakiconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Network_Appliance_Firewall_L3_Firewall_Rules | get | `/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/firewall/l3FirewallRules` | — |
+| Get_Network_Appliance_Firewall_L7_Firewall_Rules | get | `/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/firewall/l7FirewallRules` | — |
+| Get_Networks | get | `/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks` | — |
+| Get_Organizations | get | `/organizations` | — |
 
 </details>
 

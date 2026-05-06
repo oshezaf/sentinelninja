@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `ZeroNetworksConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`ZeroNetworksConnector`](../logic-apps/custom-zeronetworksconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ZeroNetworksConnector`** (customApi):
-- *Create_Outbound_Block_rule*: method=`post`, path=`/protection/rules/outbound-block`
-- *Encode_IP_Address_to_AssetId*: method=`get`, path=`/entities/encode-ip`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`ZeroNetworksConnector`](../logic-apps/custom-zeronetworksconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Outbound_Block_rule | post | `/protection/rules/outbound-block` | — |
+| Encode_IP_Address_to_AssetId | get | `/entities/encode-ip` | — |
 
 </details>
 

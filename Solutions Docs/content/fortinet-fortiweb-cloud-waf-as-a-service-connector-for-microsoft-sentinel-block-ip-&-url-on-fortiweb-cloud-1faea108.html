@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>fortiweb</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-fortiweb.html"><code>fortiweb</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>FortiWebCloud</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-fortiwebcloud.html"><code>FortiWebCloud</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
@@ -76,15 +76,21 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_(IP)_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_(URL)_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`fortiweb`** (managedApi):
-- *Update_IP_Protection*: method=`put`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection`
-- *Update_URL_Access*: method=`put`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess`
-- *Get_IP_protection_2*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection`
-- *Get_URL_Access*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_(IP)_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_(URL)_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`fortiweb`](../logic-apps/managed-fortiweb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_IP_Protection | put | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection` | — |
+| Update_URL_Access | put | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess` | — |
+| Get_IP_protection_2 | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection` | — |
+| Get_URL_Access | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess` | — |
 
 </details>
 

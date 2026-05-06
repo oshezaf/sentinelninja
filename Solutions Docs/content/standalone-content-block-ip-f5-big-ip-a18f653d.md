@@ -20,24 +20,33 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 2 |
-| `workflow` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP-Add_URL_to_URL_Block_List_category*: method=`PATCH`, uri=`@{body('F5BigIP_Base_call')?['F5BigIPHost']}/mgmt/tm/sys/url-db/url-category/@{parameters('URLBlocklistcategoryName')}`
-- *HTTP-Get_specific_URL_Block_list_category*: method=`GET`, uri=`@{body('F5BigIP_Base')?['F5BigIPHost']}/mgmt/tm/sys/url-db/url-category/@{parameters('URLBlocklistcategoryName')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
 
-**`workflow`** (builtin):
-- *F5BigIP_Base_call*: workflowId=`[variables('F5BigIP_Base_id')]`, triggerName=`manual`
-- *F5BigIP_Base*: workflowId=`[variables('F5BigIP_Base_id')]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP-Add_URL_to_URL_Block_List_category | PATCH | `@{body('F5BigIP_Base_call')?['F5BigIPHost']}/mgmt/tm/sys/url-db/url-category/@{parameters('URLBlocklistcategoryName')}` | — |
+| HTTP-Get_specific_URL_Block_list_category | GET | `@{body('F5BigIP_Base')?['F5BigIPHost']}/mgmt/tm/sys/url-db/url-category/@{parameters('URLBlocklistcategoryName')}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| F5BigIP_Base_call | — | — | workflowId=`[variables('F5BigIP_Base_id')]`<br>triggerName=`manual` |
+| F5BigIP_Base | — | — | workflowId=`[variables('F5BigIP_Base_id')]`<br>triggerName=`manual` |
 
 </details>
 

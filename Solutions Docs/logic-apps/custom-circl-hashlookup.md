@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Enrich MD5 and SHA1 entities - CIRCL hashlookup](../content/standalone-content-enrich-md5-and-sha1-entities-circl-hashlookup-6559b135.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 2 |
+| [Enrich MD5 and SHA1 entities - CIRCL hashlookup](../content/standalone-content-enrich-md5-and-sha1-entities-circl-hashlookup-6559b135.md) | 📄 Standalone | 1 | 2 |
 
 ---
 

@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>SlashNext</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-slashnext.html"><code>SlashNext</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>function</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">4</td>
@@ -76,18 +76,27 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`SlashNext`** (customApi):
-- *Repute*: method=`post`, path=`/api/v1/urls/repute`
+#### [`SlashNext`](../logic-apps/custom-slashnext.md) (Custom)
 
-**`function`** (builtin):
-- *Extract_List_of_URLs*: functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]`
-- *Generate_URL_Mapping*: functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Repute | post | `/api/v1/urls/repute` | — |
 
-**`http`** (builtin):
-- *Query_for_table_names*: method=`POST`, uri=`@variables('Query API')`
-- *Query_data_from_each_table*: method=`POST`, uri=`@variables('Query API')`
-- *Add_Comment_in_Existing_Incident*: method=`PUT`, uri=`[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Incident_Creating_Loop')['hash']}/comments/@{guid()}?api-version=2021-10-01'))]`
-- *Insert_Incident*: method=`PUT`, uri=`[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{body('Parse_URL_Mapping')?['hash']}?api-version=2021-10-01-preview'))]`
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Extract_List_of_URLs | — | — | functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]` |
+| Generate_URL_Mapping | — | — | functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]` |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Query_for_table_names | POST | `@variables('Query API')` | — |
+| Query_data_from_each_table | POST | `@variables('Query API')` | — |
+| Add_Comment_in_Existing_Incident | PUT | `[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Incident_Creating_Loop')['hash']}/comments/@{guid()}?api-version=2021-10-01'))]` | — |
+| Insert_Incident | PUT | `[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{body('Parse_URL_Mapping')?['hash']}?api-version=2021-10-01-preview'))]` | — |
 
 </details>
 

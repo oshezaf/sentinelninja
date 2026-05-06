@@ -20,24 +20,33 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(replace(items('IP_Loop')?['Address'], '.', '-'))}/value`
-- *Get_Volumes_list*: method=`get`, path=`/secrets/@{encodeURIComponent(concat(replace(items('IP_Loop')?['Address'], '.', '-'),'-volumes'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
 
-**`http`** (builtin):
-- *Fetching_API_version*: method=`GET`, uri=`https://@{items('IP_Loop')?['Address']}/api/api_version`
-- *Retrieving_auth_token*: method=`POST`, uri=`https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/login`
-- *Volume_snapshot*: method=`POST`, uri=`https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/volume-snapshots`
-- *Logout*: method=`POST`, uri=`https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/logout`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(replace(items('IP_Loop')?['Address'], '.', '-'))}/value` | — |
+| Get_Volumes_list | get | `/secrets/@{encodeURIComponent(concat(replace(items('IP_Loop')?['Address'], '.', '-'),'-volumes'))}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetching_API_version | GET | `https://@{items('IP_Loop')?['Address']}/api/api_version` | — |
+| Retrieving_auth_token | POST | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/login` | — |
+| Volume_snapshot | POST | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/volume-snapshots` | — |
+| Logout | POST | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/logout` | — |
 
 </details>
 

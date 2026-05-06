@@ -20,21 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinel` | Managed | 0 | 9 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 9 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Add_task_to_incident_-_Contain*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Introduction*: method=`post`, path=`/Incidents/CreateTask`
-- *Mark_a_task_as_completed_-_Introduction*: method=`post`, path=`/Incidents/CompleteTask`
-- *Add_task_to_incident_-_Investigation_-_Step_1*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Investigation_-_Step_2*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Investigation_-_Step_3*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Investigation_-_Step_4*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Prevention*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Remediation*: method=`post`, path=`/Incidents/CreateTask`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_task_to_incident_-_Contain | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Introduction | post | `/Incidents/CreateTask` | — |
+| Mark_a_task_as_completed_-_Introduction | post | `/Incidents/CompleteTask` | — |
+| Add_task_to_incident_-_Investigation_-_Step_1 | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Investigation_-_Step_2 | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Investigation_-_Step_3 | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Investigation_-_Step_4 | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Prevention | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Remediation | post | `/Incidents/CreateTask` | — |
 
 </details>
 

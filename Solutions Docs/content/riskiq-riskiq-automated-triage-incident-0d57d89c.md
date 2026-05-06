@@ -20,22 +20,28 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 6 |
-| `riskiqpassivetotal` | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 6 |
+| [`riskiqpassivetotal`](../logic-apps/managed-riskiqpassivetotal.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Update_incident_2*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`riskiqpassivetotal`** (managedApi):
-- *Get_reputation_for_host*: method=`get`, path=`/reputation`
-- *Get_reputation*: method=`get`, path=`/reputation`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Update_incident_2 | put | `/Incidents` | — |
+
+#### [`riskiqpassivetotal`](../logic-apps/managed-riskiqpassivetotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_reputation_for_host | get | `/reputation` | — |
+| Get_reputation | get | `/reputation` | — |
 
 </details>
 

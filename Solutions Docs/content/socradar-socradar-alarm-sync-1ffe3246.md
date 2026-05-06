@@ -20,15 +20,18 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Query_Closed_Page*: method=`GET`, uri=`@variables('closed_next_link')`
-- *Update_SOCRadar_Status*: method=`POST`, uri=`https://platform.socradar.com/api/company/@{parameters('CompanyId')}/alarms/status/change`
-- *Update_SOCRadar_Severity*: method=`POST`, uri=`https://platform.socradar.com/api/company/@{parameters('CompanyId')}/alarm/severity`
-- *Add_Synced_Tag*: method=`PUT`, uri=`[concat(variables('_managementBaseUrl'), 'subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('WorkspaceResourceGroup'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/providers/Microsoft.SecurityInsights/incidents/@{items(''For_Each_Incident'')?[''name'']}?api-version=2023-11-01')]`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Query_Closed_Page | GET | `@variables('closed_next_link')` | — |
+| Update_SOCRadar_Status | POST | `https://platform.socradar.com/api/company/@{parameters('CompanyId')}/alarms/status/change` | — |
+| Update_SOCRadar_Severity | POST | `https://platform.socradar.com/api/company/@{parameters('CompanyId')}/alarm/severity` | — |
+| Add_Synced_Tag | PUT | `[concat(variables('_managementBaseUrl'), 'subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('WorkspaceResourceGroup'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/providers/Microsoft.SecurityInsights/incidents/@{items(''For_Each_Incident'')?[''name'']}?api-version=2023-11-01')]` | — |
 
 </details>
 

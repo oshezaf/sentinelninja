@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuread</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuread.html"><code>azuread</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>wdatp</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -76,13 +76,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`wdatp`** (managedApi):
-- *Alerts_-_Get_single_alert_2*: method=`get`, path=`/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}`
-- *Alerts_-_Update_alert_2*: method=`patch`, path=`/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Update_incident | put | `/Incidents` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alerts_-_Get_single_alert_2 | get | `/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}` | — |
+| Alerts_-_Update_alert_2 | patch | `/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}` | — |
 
 </details>
 

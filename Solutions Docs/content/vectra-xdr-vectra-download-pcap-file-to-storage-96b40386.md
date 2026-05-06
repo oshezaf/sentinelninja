@@ -20,36 +20,51 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azurefile` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 3 |
-| `teams` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 3 |
-| `workflow` | Built-in | 0 | 2 |
+| [`azurefile`](../logic-apps/managed-azurefile.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azurefile`** (managedApi):
-- *Create_Pcap_File_In_Azure_Storage*: method=`post`, path=`/datasets/default/files`
-- *Create_Pcap_File_In_Azure_Storage_For_Failed_Detections*: method=`post`, path=`/datasets/default/files`
+#### [`azurefile`](../logic-apps/managed-azurefile.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_Comment_List_Of_Detection_IDs_For_Which_Pcap_File_Downloaded*: method=`post`, path=`/Incidents/Comment`
-- *Comment_For_No_Pcap_File_Found_For_Any_Detection_of_Entity*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Pcap_File_In_Azure_Storage | post | `/datasets/default/files` | — |
+| Create_Pcap_File_In_Azure_Storage_For_Failed_Detections | post | `/datasets/default/files` | — |
 
-**`keyvault`** (managedApi):
-- *Get_Access_Token_For_Detections_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Fetch_Pcap_File*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Fetch_Pcap_File_Again*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections`
-- *HTTP_Request_To_Fetch_Pcap_File_for_Detection*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap`
-- *HTTP_Request_To_Fetch_Pcap_File_Again_for_Detection_Failed_Detections*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Comment_List_Of_Detection_IDs_For_Which_Pcap_File_Downloaded | post | `/Incidents/Comment` | — |
+| Comment_For_No_Pcap_File_Found_For_Any_Detection_of_Entity | post | `/Incidents/Comment` | — |
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token_For_Detections_Data | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Fetch_Pcap_File | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Fetch_Pcap_File_Again | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections` | — |
+| HTTP_Request_To_Fetch_Pcap_File_for_Detection | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap` | — |
+| HTTP_Request_To_Fetch_Pcap_File_Again_for_Detection_Failed_Detections | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

@@ -22,50 +22,56 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 33 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 33 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Update_Sentinel_Incident_for_MDE_Host_Isolation*: method=`put`, path=`/Incidents`
-- *Update_Sentinel_Incident_for_Process_Isolation*: method=`put`, path=`/Incidents`
-- *Update_Sentinel_Incident_for_Host_Isolation*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Generate_the_token_for_Azure_Sentinel_Incident*: method=`POST`, uri=`https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/token`
-- *Get_Illusive_Incident_Details*: method=`GET`, uri=`@{parameters('Illusive Base URL')}/api/v2/incidents/incident?incident_id=@{variables('Illusive Incident Id')}`
-- *Get_incident_with_the_name*: method=`GET`, uri=`https://management.azure.com/subscriptions/@{triggerBody()?['WorkspaceSubscriptionId']}/resourceGroups/@{triggerBody()?['WorkspaceResourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('Workspace_Name')}/providers/Microsoft.SecurityInsights/incidents?api-version=2020-01-01&$filter=properties/title eq 'Illusive Incident: @{variables('Illusive Incident Id')}'`
-- *Authorize_MDE_for_Process_Isolation*: method=`POST`, uri=`https://login.microsoftonline.com/@{parameters('MDE Tenant Id')}/oauth2/v2.0/token`
-- *MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_for_multiple_resource*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})`
-- *MDE_call_to_fetch_The_Machine_Id_with_hostname_for_process*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'`
-- *MDE_call_to_fetch_The_Machine_Id_with_IP_for_process*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})`
-- *MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_with_no_SourceHostName*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})`
-- *Get_Files_in_MDE_using_SHA256_of_the_process*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/files/@{items('For_each_of_the_Processes')?['sha256']}`
-- *Isolate_the_host_with_MDE*: method=`POST`, uri=`https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/isolate`
-- *Isolate_process_with_MDE*: method=`POST`, uri=`https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/StopAndQuarantineFile`
-- *Authorize_Crowdstrike_for_process*: method=`POST`, uri=`@{parameters('Crowdstrike Base URL')}/oauth2/token`
-- *Crowdstrike_call_to_fetch_all_Processes*: method=`POST`, uri=`@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-command/v1`
-- *Crowdstrike_call_to_fetch_the_batch_Session_id*: method=`POST`, uri=`@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-init-session/v1`
-- *Isolating_the_Process_of_Crowdstrike*: method=`POST`, uri=`@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-active-responder-command/v1`
-- *Get_machine_id_using_localip*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'`
-- *Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname_for_Process*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&host:'@{variables('Machine Host')}'`
-- *Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'`
-- *Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process_with_no_sourceip*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'`
-- *Authorize_Crowdstrike*: method=`POST`, uri=`@{parameters('Crowdstrike Base URL')}/oauth2/token`
-- *Get_machine_id_using_localip_for_Host*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'`
-- *Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&host:'@{variables('Machine Host')}'`
-- *Crowdstrike_call_to_fetch_the_Machine_Id_with_IP*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'`
-- *Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_with_no_sourceip*: method=`GET`, uri=`@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'`
-- *Isolate_the_host_using_Crowdstrike*: method=`POST`, uri=`@{parameters('Crowdstrike Base URL')}/devices/entities/devices-actions/v2?action_name=contain`
-- *Authorize_MDE*: method=`POST`, uri=`https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/v2.0/token`
-- *MDE_call_to_fetch_The_Machine_Id_with_IP_for_more_resources_in_Host*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})`
-- *MDE_call_to_fetch_The_Machine_Id_with_host*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'`
-- *MDE_call_to_fetch_The_Machine_Id_with_IP*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})`
-- *MDE_call_to_fetch_The_Machine_Id_with_IP_with_sourceIP*: method=`GET`, uri=`https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})`
-- *Isolate_Host_using_MDE*: method=`POST`, uri=`https://api.securitycenter.microsoft.com/api/machines/@{items('For_each_resources_for_MDE')?['id']}/isolate`
-- *Get_Events_of_the_Incident*: method=`GET`, uri=`@{parameters('Illusive Base URL')}/api/v1/incidents/events?incident_id=@{variables('Illusive Incident Id')}`
-- *Get_Triggering_Process_of_the_Events*: method=`GET`, uri=`@{parameters('Illusive Base URL')}/api/v1/forensics/triggering_process_info?event_id=@{max(variables('EventId'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_Sentinel_Incident_for_MDE_Host_Isolation | put | `/Incidents` | — |
+| Update_Sentinel_Incident_for_Process_Isolation | put | `/Incidents` | — |
+| Update_Sentinel_Incident_for_Host_Isolation | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Generate_the_token_for_Azure_Sentinel_Incident | POST | `https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/token` | — |
+| Get_Illusive_Incident_Details | GET | `@{parameters('Illusive Base URL')}/api/v2/incidents/incident?incident_id=@{variables('Illusive Incident Id')}` | — |
+| Get_incident_with_the_name | GET | `https://management.azure.com/subscriptions/@{triggerBody()?['WorkspaceSubscriptionId']}/resourceGroups/@{triggerBody()?['WorkspaceResourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('Workspace_Name')}/providers/Microsoft.SecurityInsights/incidents?api-version=2020-01-01&$filter=properties/title eq 'Illusive Incident: @{variables('Illusive Incident Id')}'` | — |
+| Authorize_MDE_for_Process_Isolation | POST | `https://login.microsoftonline.com/@{parameters('MDE Tenant Id')}/oauth2/v2.0/token` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_for_multiple_resource | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_hostname_for_process | GET | `https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_IP_for_process | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_with_no_SourceHostName | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
+| Get_Files_in_MDE_using_SHA256_of_the_process | GET | `https://api.securitycenter.microsoft.com/api/files/@{items('For_each_of_the_Processes')?['sha256']}` | — |
+| Isolate_the_host_with_MDE | POST | `https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/isolate` | — |
+| Isolate_process_with_MDE | POST | `https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/StopAndQuarantineFile` | — |
+| Authorize_Crowdstrike_for_process | POST | `@{parameters('Crowdstrike Base URL')}/oauth2/token` | — |
+| Crowdstrike_call_to_fetch_all_Processes | POST | `@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-command/v1` | — |
+| Crowdstrike_call_to_fetch_the_batch_Session_id | POST | `@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-init-session/v1` | — |
+| Isolating_the_Process_of_Crowdstrike | POST | `@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-active-responder-command/v1` | — |
+| Get_machine_id_using_localip | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
+| Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname_for_Process | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&host:'@{variables('Machine Host')}'` | — |
+| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
+| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process_with_no_sourceip | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
+| Authorize_Crowdstrike | POST | `@{parameters('Crowdstrike Base URL')}/oauth2/token` | — |
+| Get_machine_id_using_localip_for_Host | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
+| Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&host:'@{variables('Machine Host')}'` | — |
+| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
+| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_with_no_sourceip | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
+| Isolate_the_host_using_Crowdstrike | POST | `@{parameters('Crowdstrike Base URL')}/devices/entities/devices-actions/v2?action_name=contain` | — |
+| Authorize_MDE | POST | `https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/v2.0/token` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_IP_for_more_resources_in_Host | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_host | GET | `https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_IP | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
+| MDE_call_to_fetch_The_Machine_Id_with_IP_with_sourceIP | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
+| Isolate_Host_using_MDE | POST | `https://api.securitycenter.microsoft.com/api/machines/@{items('For_each_resources_for_MDE')?['id']}/isolate` | — |
+| Get_Events_of_the_Incident | GET | `@{parameters('Illusive Base URL')}/api/v1/incidents/events?incident_id=@{variables('Illusive Incident Id')}` | — |
+| Get_Triggering_Process_of_the_Events | GET | `@{parameters('Illusive Base URL')}/api/v1/forensics/triggering_process_info?event_id=@{max(variables('EventId'))}` | — |
 
 </details>
 

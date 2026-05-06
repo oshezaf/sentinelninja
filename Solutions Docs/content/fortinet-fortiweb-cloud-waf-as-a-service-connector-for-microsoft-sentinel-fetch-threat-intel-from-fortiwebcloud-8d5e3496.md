@@ -20,18 +20,24 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `fortiweb` | Managed | 0 | 2 |
-| `FortiWebCloud` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`fortiweb`](../logic-apps/managed-fortiweb.md) | Managed | 0 | 2 |
+| [`FortiWebCloud`](../logic-apps/custom-fortiwebcloud.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`fortiweb`** (managedApi):
-- *Get_Attack_Log_Detail*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs/@{encodeURIComponent(items('For_each_2')?['msg_id'])}`
-- *Get_Attack_Logs_List*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`fortiweb`](../logic-apps/managed-fortiweb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Attack_Log_Detail | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs/@{encodeURIComponent(items('For_each_2')?['msg_id'])}` | — |
+| Get_Attack_Logs_List | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs` | — |
 
 </details>
 

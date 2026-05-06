@@ -20,46 +20,67 @@ This playbook uses **8** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `arm` | Managed | 1 | 5 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `azuresentinel_2` | Managed | 0 | 1 |
-| `service-now` | Managed | 1 | 4 |
-| `teams` | Managed | 1 | 3 |
-| `virustotal` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
-| `workflow` | Built-in | 0 | 1 |
+| [`arm`](../logic-apps/managed-arm.md) | Managed | 1 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`azuresentinel_2`](../logic-apps/managed-azuresentinel-2.md) | Managed | 0 | 1 |
+| [`service-now`](../logic-apps/managed-service-now.md) | Managed | 1 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 3 |
+| [`virustotal`](../logic-apps/managed-virustotal.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`arm`** (managedApi):
-- *Get_playbook_callback_URL*: method=`post`, path=`/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8])}/@{encodeURIComponent('triggers/',body('Get_resource_trigger_name')?['value'][0]['name'],'/listCallbackUrl')}`
-- *Get_resource_trigger_name*: method=`get`, path=`/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8],'/triggers')}`
-- *Read_a_resource*: method=`get`, path=`/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8])}`
-- *List_resources_by_subscription*: method=`get`, path=`/subscriptions/@{encodeURIComponent(item()?['subscriptionId'])}/resources`
-- *List_subscriptions*: method=`get`, path=`/subscriptions`
+#### [`arm`](../logic-apps/managed-arm.md) (Managed)
 
-**`azuresentinel_2`** (managedApi):
-- *Azure_Sentinel_-_Add_comment_to_related_Incident*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_playbook_callback_URL | post | `/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8])}/@{encodeURIComponent('triggers/',body('Get_resource_trigger_name')?['value'][0]['name'],'/listCallbackUrl')}` | — |
+| Get_resource_trigger_name | get | `/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8],'/triggers')}` | — |
+| Read_a_resource | get | `/subscriptions/@{encodeURIComponent(outputs('split_the_resource_ID')[2])}/resourcegroups/@{encodeURIComponent(outputs('split_the_resource_ID')[4])}/providers/@{encodeURIComponent('Microsoft.Logic')}/@{encodeURIComponent('workflows/',outputs('split_the_resource_ID')[8])}` | — |
+| List_resources_by_subscription | get | `/subscriptions/@{encodeURIComponent(item()?['subscriptionId'])}/resources` | — |
+| List_subscriptions | get | `/subscriptions` | — |
 
-**`service-now`** (managedApi):
-- *ServiceNow_-_Create_Record_for_Incident*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
-- *ServiceNow_-_Add_additional_comments_in_ServiceNow_Ticket*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('ServiceNowSystemID'))}`
-- *ServiceNow_-_Query_for_Sentinel_Incident_Number*: method=`get`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
-- *ServiceNow_-_Update_Record_with_Response_from_User*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('ServiceNowSystemID'))}`
+#### [`azuresentinel_2`](../logic-apps/managed-azuresentinel-2.md) (Managed)
 
-**`teams`** (managedApi):
-- *Teams_-_Reply_to_Alert_Thread*: method=`post`, path=`/v2/beta/teams/@{encodeURIComponent(parameters('TeamsGroupId'))}/channels/@{encodeURIComponent(parameters('AlertChannelId'))}/messages/@{encodeURIComponent(body('Post_Incident_in_SOC_Alerts_Channel')?['id'])}/replies`
-- *Post_Incident_in_SOC_Alerts_Channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/@{encodeURIComponent('User')}/location/@{encodeURIComponent('Channel')}`
-- *Update_Incident_Thread_from_Investigation_Response*: method=`post`, path=`/v2/beta/teams/@{encodeURIComponent(parameters('TeamsGroupId'))}/channels/@{encodeURIComponent(parameters('AlertChannelId'))}/messages/@{encodeURIComponent(body('Post_Incident_in_SOC_Alerts_Channel')?['id'])}/replies`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Azure_Sentinel_-_Add_comment_to_related_Incident | post | `/Incidents/Comment` | — |
 
-**`virustotal`** (managedApi):
-- *Get_an_IP_report*: method=`get`, path=`/api/v3/ip_addresses/@{encodeURIComponent(items('For_each')?['properties']?['Address'])}`
+#### [`service-now`](../logic-apps/managed-service-now.md) (Managed)
 
-**`http`** (builtin):
-- *Call_the_playbook_and_pass_alert_to_playbook*: method=`POST`, uri=`@{body('Find_playbook_based_on_playbook_name_provided')[0]?['callbackUrl']}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| ServiceNow_-_Create_Record_for_Incident | post | `/api/now/v2/table/@{encodeURIComponent('incident')}` | — |
+| ServiceNow_-_Add_additional_comments_in_ServiceNow_Ticket | put | `/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('ServiceNowSystemID'))}` | — |
+| ServiceNow_-_Query_for_Sentinel_Incident_Number | get | `/api/now/v2/table/@{encodeURIComponent('incident')}` | — |
+| ServiceNow_-_Update_Record_with_Response_from_User | put | `/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('ServiceNowSystemID'))}` | — |
 
-**`workflow`** (builtin):
-- *LogicApp_-_Get_tagged_playbooks*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('PlaybookName'),'-fn-getListOfTaggedPlaybooks')]`, triggerName=`manual`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Teams_-_Reply_to_Alert_Thread | post | `/v2/beta/teams/@{encodeURIComponent(parameters('TeamsGroupId'))}/channels/@{encodeURIComponent(parameters('AlertChannelId'))}/messages/@{encodeURIComponent(body('Post_Incident_in_SOC_Alerts_Channel')?['id'])}/replies` | — |
+| Post_Incident_in_SOC_Alerts_Channel | post | `/v1.0/teams/conversation/adaptivecard/poster/@{encodeURIComponent('User')}/location/@{encodeURIComponent('Channel')}` | — |
+| Update_Incident_Thread_from_Investigation_Response | post | `/v2/beta/teams/@{encodeURIComponent(parameters('TeamsGroupId'))}/channels/@{encodeURIComponent(parameters('AlertChannelId'))}/messages/@{encodeURIComponent(body('Post_Incident_in_SOC_Alerts_Channel')?['id'])}/replies` | — |
+
+#### [`virustotal`](../logic-apps/managed-virustotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_an_IP_report | get | `/api/v3/ip_addresses/@{encodeURIComponent(items('For_each')?['properties']?['Address'])}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Call_the_playbook_and_pass_alert_to_playbook | POST | `@{body('Find_playbook_based_on_playbook_name_provided')[0]?['callbackUrl']}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| LogicApp_-_Get_tagged_playbooks | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('PlaybookName'),'-fn-getListOfTaggedPlaybooks')]`<br>triggerName=`manual` |
 
 </details>
 

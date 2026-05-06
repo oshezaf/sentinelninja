@@ -20,17 +20,20 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 6 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Send_Emails_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
-- *Send_Hashes_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
-- *Send_Hosts_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
-- *Send_IPs_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
-- *Send_URLs_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
-- *Get_TIDE_Data*: method=`GET`, uri=`https://csp.infoblox.com/tide/api/data/threats/ip/hourly`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Emails_to_Sentinel | POST | `https://graph.microsoft.com/beta/security/tiIndicators` | — |
+| Send_Hashes_to_Sentinel | POST | `https://graph.microsoft.com/beta/security/tiIndicators` | — |
+| Send_Hosts_to_Sentinel | POST | `https://graph.microsoft.com/beta/security/tiIndicators` | — |
+| Send_IPs_to_Sentinel | POST | `https://graph.microsoft.com/beta/security/tiIndicators` | — |
+| Send_URLs_to_Sentinel | POST | `https://graph.microsoft.com/beta/security/tiIndicators` | — |
+| Get_TIDE_Data | GET | `https://csp.infoblox.com/tide/api/data/threats/ip/hourly` | — |
 
 </details>
 

@@ -20,32 +20,47 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 2 |
-| `RubrikCustomConnector` | Custom | 1 | 1 |
-| `http` | Built-in | 0 | 3 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) | Custom | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Close_Incident_Due_To_Resolve_Anomaly_Or_Report_False_Positive*: method=`put`, path=`/Incidents`
-- *Close_Incident_Due_To_Anomaly_Is_Already_Resolved_Or_It_Is_Not_An_Anomaly*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *Get_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Close_Incident_Due_To_Resolve_Anomaly_Or_Report_False_Positive | put | `/Incidents` | — |
+| Close_Incident_Due_To_Anomaly_Is_Already_Resolved_Or_It_Is_Not_An_Anomaly | put | `/Incidents` | — |
 
-**`RubrikCustomConnector`** (customApi):
-- *Authentication*: method=`post`, path=`/api/client_token`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Anomaly_Type*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
-- *Get_Cdmid*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
-- *Get_SnapshotFid*: method=`POST`, uri=`@{variables('Base_URL')}/api/graphql`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_ID | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| Get_Client_Secret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
 
-**`workflow`** (builtin):
-- *RubrikUpdateAnomalyStatus*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]`, triggerName=`manual`
+#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Authentication | post | `/api/client_token` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Anomaly_Type | POST | `@{variables('Base_URL')}/api/graphql` | — |
+| Get_Cdmid | POST | `@{variables('Base_URL')}/api/graphql` | — |
+| Get_SnapshotFid | POST | `@{variables('Base_URL')}/api/graphql` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikUpdateAnomalyStatus | — | — | workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]`<br>triggerName=`manual` |
 
 </details>
 

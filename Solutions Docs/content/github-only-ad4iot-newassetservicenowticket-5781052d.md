@@ -20,13 +20,16 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `service-now` | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`service-now`](../logic-apps/managed-service-now.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`service-now`** (managedApi):
-- *Create_Record*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
+#### [`service-now`](../logic-apps/managed-service-now.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Record | post | `/api/now/v2/table/@{encodeURIComponent('incident')}` | — |
 
 </details>
 

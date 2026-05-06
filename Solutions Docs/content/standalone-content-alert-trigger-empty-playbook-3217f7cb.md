@@ -20,7 +20,7 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
 
 ---
 

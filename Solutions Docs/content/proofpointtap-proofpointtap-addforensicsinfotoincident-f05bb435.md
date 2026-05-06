@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `proofpointtapapi` | Managed | 0 | 1 |
-| `proofpointtap` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`proofpointtapapi`](../logic-apps/managed-proofpointtapapi.md) | Managed | 0 | 1 |
+| [`proofpointtap`](../logic-apps/custom-proofpointtap.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`proofpointtapapi`** (managedApi):
-- *Get_Forensics*: method=`get`, path=`/v2/forensics`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`proofpointtapapi`](../logic-apps/managed-proofpointtapapi.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Forensics | get | `/v2/forensics` | — |
 
 </details>
 

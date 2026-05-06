@@ -28,21 +28,30 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Secret_-_MuleSoft_Client_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('MulesoftClientSecretName'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_Access_Token*: method=`POST`, uri=`https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token`
-- *HTTP_-_Get_Audit_Logs*: method=`POST`, uri=`[concat('https://anypoint.mulesoft.com/audit/v2/organizations/', parameters('MulesoftOrgId'), '/query')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret_-_MuleSoft_Client_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('MulesoftClientSecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Access_Token | POST | `https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token` | — |
+| HTTP_-_Get_Audit_Logs | POST | `[concat('https://anypoint.mulesoft.com/audit/v2/organizations/', parameters('MulesoftOrgId'), '/query')]` | — |
 
 </details>
 

@@ -20,13 +20,16 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `TheHive` | Custom | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`TheHive`](../logic-apps/custom-thehive.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`TheHive`** (customApi):
-- *Create_alert*: method=`post`, path=`/api/alert`
+#### [`TheHive`](../logic-apps/custom-thehive.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_alert | post | `/api/alert` | — |
 
 </details>
 

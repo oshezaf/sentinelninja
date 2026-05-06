@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">5</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -76,20 +76,29 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Update_Incident_(2)*: method=`put`, path=`/Incidents`
-- *Add_Failed_IP_-_Host_List_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Update_Incident*: method=`put`, path=`/Incidents`
-- *Add_Detail_Response_Of_IP_To_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_For_30000_Characters_Limit*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Rubrik_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-Client-Id')}/value`
-- *Get_Rubrik_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-Client-Secret')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_Incident_(2) | put | `/Incidents` | — |
+| Add_Failed_IP_-_Host_List_Into_Incident_Comment | post | `/Incidents/Comment` | — |
+| Update_Incident | put | `/Incidents` | — |
+| Add_Detail_Response_Of_IP_To_Incident_Comment | post | `/Incidents/Comment` | — |
+| Add_Comment_For_30000_Characters_Limit | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *Get_Information*: method=`GET`, uri=`@{variables('Base_URL')}/api/thirdparty/workload_summary`
-- *Get_Access_Token*: method=`POST`, uri=`@{variables('Base_URL')}/api/client_token`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Rubrik_Client_ID | get | `/secrets/@{encodeURIComponent('Rubrik-Client-Id')}/value` | — |
+| Get_Rubrik_Client_Secret | get | `/secrets/@{encodeURIComponent('Rubrik-Client-Secret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Information | GET | `@{variables('Base_URL')}/api/thirdparty/workload_summary` | — |
+| Get_Access_Token | POST | `@{variables('Base_URL')}/api/client_token` | — |
 
 </details>
 

@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">21</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuremonitorlogs</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">7</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>workflow</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -82,44 +82,56 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Proto_By_IP_Sections_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Top_Asns_By_IP_Sections_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Top_Certs_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Top_Country_Codes_Sections_Data_To_Log_Analytics_Table_Name*: method=`post`, path=`/api/logs`
-- *Send_Top_Fingerprints_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Open_Ports_Section_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Top_Pdns_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Top_Services_By_IP_Sections_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Top_Tags_By_IP_Sections_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_IP_Indicator_Data_To_IP_Details_Table*: method=`post`, path=`/api/logs`
-- *Send_Identity_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Whois_Data_To_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
-- *Send_IP_Indicator_To_Live_Investigation_Indicators_Table*: method=`post`, path=`/api/logs`
-- *Send_Insights_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Communication_Peers_Data_To_Log_Analytic_Table*: method=`post`, path=`/api/logs`
-- *Send_Main_PDNS_Data_To_Log_Analytic_Table*: method=`post`, path=`/api/logs`
-- *Send_Main_Open_Ports_Data_To_Log_Analytic_Table*: method=`post`, path=`/api/logs`
-- *Send_Main_Fingerprints_Data_To_Log_Analytic_Table*: method=`post`, path=`/api/logs`
-- *Send_Main_X509_Data_To_Log_Analytic_Table*: method=`post`, path=`/api/logs`
-- *Send_Domain_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Domain_Indicator_To_Live_Investigation_Indicators_Table*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_Query_And_Check_Whether_This_is_First_Execution_Or_Not*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Proto_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Top_Asns_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Top_Certs_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Top_Country_Codes_Sections_Data_To_Log_Analytics_Table_Name | post | `/api/logs` | — |
+| Send_Top_Fingerprints_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Open_Ports_Section_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Top_Pdns_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Top_Services_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Top_Tags_By_IP_Sections_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_IP_Indicator_Data_To_IP_Details_Table | post | `/api/logs` | — |
+| Send_Identity_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Whois_Data_To_Log_Analytics_Workspace | post | `/api/logs` | — |
+| Send_IP_Indicator_To_Live_Investigation_Indicators_Table | post | `/api/logs` | — |
+| Send_Insights_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Communication_Peers_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
+| Send_Main_PDNS_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
+| Send_Main_Open_Ports_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
+| Send_Main_Fingerprints_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
+| Send_Main_X509_Data_To_Log_Analytic_Table | post | `/api/logs` | — |
+| Send_Domain_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Domain_Indicator_To_Live_Investigation_Indicators_Table | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Proto_By_IP_Sections_Data*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details`
-- *HTTP_Request_To_Fetch_Top_Asns_By_IP_Sections_Data*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details`
-- *HTTP_Request_To_Fetch_Top_Country_Codes_By_IP_Sections_Data*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details`
-- *HTTP_Request_To_Fetch_Top_Services_By_IP_Sections_Data*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details`
-- *HTTP_Request_To_Fetch_Top_Tags_By_IP_Sections_Data*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details`
-- *HTTP_Request_To_Fetch_Details_Of_IP_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details`
-- *HTTP_Request_To_Fetch_Details_Of_Domain_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/search`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`workflow`** (builtin):
-- *TeamCymruScoutCreateIncidentAndNotifyForFirstRun*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('CreateIncidentAndNotifyPlaybookName')))]`, triggerName=`manual`
-- *TeamCymruScoutCreateIncidentAndNotify*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('CreateIncidentAndNotifyPlaybookName')))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Query_And_Check_Whether_This_is_First_Execution_Or_Not | post | `/queryData` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Proto_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
+| HTTP_Request_To_Fetch_Top_Asns_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
+| HTTP_Request_To_Fetch_Top_Country_Codes_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
+| HTTP_Request_To_Fetch_Top_Services_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
+| HTTP_Request_To_Fetch_Top_Tags_By_IP_Sections_Data | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
+| HTTP_Request_To_Fetch_Details_Of_IP_Indicator | GET | `@{variables('base_url')}/api/scout/ip/@{variables('indicator_value')}/details` | — |
+| HTTP_Request_To_Fetch_Details_Of_Domain_Indicator | GET | `@{variables('base_url')}/api/scout/search` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| TeamCymruScoutCreateIncidentAndNotifyForFirstRun | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('CreateIncidentAndNotifyPlaybookName')))]`<br>triggerName=`manual` |
+| TeamCymruScoutCreateIncidentAndNotify | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('CreateIncidentAndNotifyPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

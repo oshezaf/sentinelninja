@@ -20,15 +20,18 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinel` | Managed | 0 | 2 |
-| `teams` | Managed | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Update_incident_-_update_severity*: method=`put`, path=`/Incidents`
-- *Update_incident_-_close_incident*: method=`put`, path=`/Incidents`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident_-_update_severity | put | `/Incidents` | — |
+| Update_incident_-_close_incident | put | `/Incidents` | — |
 
 </details>
 

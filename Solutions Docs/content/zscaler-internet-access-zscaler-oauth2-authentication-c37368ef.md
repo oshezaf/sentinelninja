@@ -20,12 +20,15 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *HTTP_Get_OAuth_Token*: method=`POST`, uri=`@parameters('oauthUrl')`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Get_OAuth_Token | POST | `@parameters('oauthUrl')` | — |
 
 </details>
 

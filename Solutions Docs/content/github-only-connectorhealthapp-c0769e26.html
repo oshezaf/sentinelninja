@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuremonitorlogs</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>office365</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
@@ -82,15 +82,24 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Heartbeat_Query*: method=`post`, path=`/visualizeQuery`
-- *Ingestion_Anomaly_Query*: method=`post`, path=`/visualizeQuery`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_an_email_to_the_SOC_Team*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Heartbeat_Query | post | `/visualizeQuery` | — |
+| Ingestion_Anomaly_Query | post | `/visualizeQuery` | — |
 
-**`teams`** (managedApi):
-- *Post_a_message_as_the_Flow_bot_to_a_channel*: method=`post`, path=`/flowbot/actions/notification/recipienttypes/channel`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_to_the_SOC_Team | post | `/v2/Mail` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_a_message_as_the_Flow_bot_to_a_channel | post | `/flowbot/actions/notification/recipienttypes/channel` | — |
 
 </details>
 

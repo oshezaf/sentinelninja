@@ -22,20 +22,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Update_incident_2*: method=`put`, path=`/Incidents`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Alert_IronDome_Information*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetAlertIronDomeInformation`
-- *Generate_the_token_for_Azure_Sentinel_Incident*: method=`POST`, uri=`https://login.microsoftonline.com/@{parameters('TenantId')}/oauth2/token`
-- *Get_Sentinel_Incident*: method=`GET`, uri=`https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/incidents?api-version=2020-01-01&$filter=endsWith(properties/title,'(@{variables('IronNet Alert Id')})')`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident_2 | put | `/Incidents` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Alert_IronDome_Information | POST | `@{parameters('IronNetUrl')}/IronApi/GetAlertIronDomeInformation` | — |
+| Generate_the_token_for_Azure_Sentinel_Incident | POST | `https://login.microsoftonline.com/@{parameters('TenantId')}/oauth2/token` | — |
+| Get_Sentinel_Incident | GET | `https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/incidents?api-version=2020-01-01&$filter=endsWith(properties/title,'(@{variables('IronNet Alert Id')})')` | — |
 
 </details>
 

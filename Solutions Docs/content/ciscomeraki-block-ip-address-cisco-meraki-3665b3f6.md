@@ -20,22 +20,28 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `MerakiConnector` | Custom | 1 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`MerakiConnector`](../logic-apps/custom-merakiconnector.md) | Custom | 1 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`MerakiConnector`** (customApi):
-- *Get_Network_Appliance_Firewall_L3_Firewall_Rules*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/appliance/firewall/l3FirewallRules`
-- *Get_Network_Appliance_Firewall_L7_Firewall_Rules*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/appliance/firewall/l7FirewallRules`
-- *Update_Network_Appliance_L3_Firewall_Rules*: method=`put`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/appliance/firewall/l3FirewallRules`
-- *Get_Networks*: method=`get`, path=`/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks`
-- *Get_Organizations*: method=`get`, path=`/organizations`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`MerakiConnector`](../logic-apps/custom-merakiconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Network_Appliance_Firewall_L3_Firewall_Rules | get | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/appliance/firewall/l3FirewallRules` | — |
+| Get_Network_Appliance_Firewall_L7_Firewall_Rules | get | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/appliance/firewall/l7FirewallRules` | — |
+| Update_Network_Appliance_L3_Firewall_Rules | put | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/appliance/firewall/l3FirewallRules` | — |
+| Get_Networks | get | `/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks` | — |
+| Get_Organizations | get | `/organizations` | — |
 
 </details>
 

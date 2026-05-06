@@ -20,28 +20,37 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `keyvault` | Managed | 0 | 1 |
-| `ThreatX-WAFCustomConnector` | Custom | 1 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 0 | 1 |
+| [`ThreatX-WAFCustomConnector`](../logic-apps/custom-threatx-wafcustomconnector.md) | Custom | 1 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Threatx_Key_name'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_4 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
 
-**`ThreatX-WAFCustomConnector`** (customApi):
-- *Get-Post_Blacklist_Blocklist_Whitelist_3*: method=`post`, path=`/tx_api/v1/lists`
-- *List_or_Create_Customer_Rule_2*: method=`post`, path=`/tx_api/v1/rules`
-- *Get-Post_Blacklist_Blocklist_Whitelist*: method=`post`, path=`/tx_api/v1/lists`
-- *Get-Post_Blacklist_Blocklist_Whitelist_2*: method=`post`, path=`/tx_api/v1/lists`
-- *List_or_Create_Customer_Rule*: method=`post`, path=`/tx_api/v1/rules`
-- *Login_Generate_Token*: method=`post`, path=`/tx_api/v1/login`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('Threatx_Key_name'))}/value` | — |
+
+#### [`ThreatX-WAFCustomConnector`](../logic-apps/custom-threatx-wafcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get-Post_Blacklist_Blocklist_Whitelist_3 | post | `/tx_api/v1/lists` | — |
+| List_or_Create_Customer_Rule_2 | post | `/tx_api/v1/rules` | — |
+| Get-Post_Blacklist_Blocklist_Whitelist | post | `/tx_api/v1/lists` | — |
+| Get-Post_Blacklist_Blocklist_Whitelist_2 | post | `/tx_api/v1/lists` | — |
+| List_or_Create_Customer_Rule | post | `/tx_api/v1/rules` | — |
+| Login_Generate_Token | post | `/tx_api/v1/login` | — |
 
 </details>
 

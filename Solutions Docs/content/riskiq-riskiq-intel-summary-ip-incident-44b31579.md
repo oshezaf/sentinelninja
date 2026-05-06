@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `riskiqpassivetotal` | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`riskiqpassivetotal`](../logic-apps/managed-riskiqpassivetotal.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`riskiqpassivetotal`** (managedApi):
-- *Get_articles_by_indicator_ip*: method=`get`, path=`/articles/indicator`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`riskiqpassivetotal`](../logic-apps/managed-riskiqpassivetotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_articles_by_indicator_ip | get | `/articles/indicator` | — |
 
 </details>
 

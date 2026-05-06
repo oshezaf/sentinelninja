@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `office365` | Managed | 1 | 1 |
-| `teams` | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`office365`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
 
-**`teams`** (managedApi):
-- *Post_adaptive_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_adaptive_card_in_a_chat_or_channel | post | `/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
 
 </details>
 

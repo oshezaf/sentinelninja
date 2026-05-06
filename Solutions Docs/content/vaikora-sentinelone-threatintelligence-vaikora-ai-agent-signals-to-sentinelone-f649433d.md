@@ -20,15 +20,18 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Get_Vaikora_Actions*: method=`GET`, uri=`@{concat(parameters('Vaikora_ApiBaseUrl'), '/actions?agent_id=', encodeUriComponent(parameters('VaikoraAgentId')), '&per_page=100')}`
-- *List_STAR_Rules*: method=`GET`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules?accountIds=@{parameters('SentinelOne_AccountId')}`
-- *Create_STAR_Rule*: method=`POST`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules`
-- *Post_IOC_to_SentinelOne*: method=`POST`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Vaikora_Actions | GET | `@{concat(parameters('Vaikora_ApiBaseUrl'), '/actions?agent_id=', encodeUriComponent(parameters('VaikoraAgentId')), '&per_page=100')}` | — |
+| List_STAR_Rules | GET | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules?accountIds=@{parameters('SentinelOne_AccountId')}` | — |
+| Create_STAR_Rule | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules` | — |
+| Post_IOC_to_SentinelOne | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs` | — |
 
 </details>
 

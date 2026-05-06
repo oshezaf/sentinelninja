@@ -22,20 +22,23 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 9 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 9 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *CommentOnAlert_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/CommentOnAlert`
-- *GetAlertIronDomeInformation_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetAlertIronDomeInformation`
-- *GetAlerts_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetAlerts`
-- *GetEvents_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetEvents`
-- *RateAlert_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
-- *ReportObservedBadActivity_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/ReportObservedBadActivity`
-- *SetAlertStatus_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/SetAlertStatus`
-- *GetEvent_API_call*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/GetEvent`
-- *IronNet_Login*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/Login`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CommentOnAlert_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/CommentOnAlert` | — |
+| GetAlertIronDomeInformation_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/GetAlertIronDomeInformation` | — |
+| GetAlerts_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/GetAlerts` | — |
+| GetEvents_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/GetEvents` | — |
+| RateAlert_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/RateAlert` | — |
+| ReportObservedBadActivity_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/ReportObservedBadActivity` | — |
+| SetAlertStatus_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/SetAlertStatus` | — |
+| GetEvent_API_call | POST | `@{parameters('IronNetUrl')}/IronApi/GetEvent` | — |
+| IronNet_Login | POST | `@{parameters('IronNetUrl')}/IronApi/Login` | — |
 
 </details>
 

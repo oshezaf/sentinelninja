@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Get-GeoFromIpAndTagIncident](../content/standalone-content-get-geofromipandtagincident-e5f2a00f.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
+| [Get-GeoFromIpAndTagIncident](../content/standalone-content-get-geofromipandtagincident-e5f2a00f.md) | 📄 Standalone | 1 | 1 |
 
 ---
 

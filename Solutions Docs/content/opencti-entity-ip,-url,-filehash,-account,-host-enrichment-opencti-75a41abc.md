@@ -20,26 +20,32 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 6 |
-| `OpenCTICustomConnector` | Custom | 1 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 6 |
+| [`OpenCTICustomConnector`](../logic-apps/custom-opencticustomconnector.md) | Custom | 1 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`OpenCTICustomConnector`** (customApi):
-- *Run_GraphQL_Query_to_get_indicator_info_-_Accounts*: method=`post`, path=`/graphql`
-- *Run_GraphQL_Query_to_get_indicator_info_-_FileHash*: method=`post`, path=`/graphql`
-- *Run_GraphQL_Query_to_get_indicator_info_-_Host*: method=`post`, path=`/graphql`
-- *Run_GraphQL_Query_to_get_indicator_info_-_IP*: method=`post`, path=`/graphql`
-- *Run_GraphQL_Query_to_get_indicator_info_-_URLs*: method=`post`, path=`/graphql`
-- *Run_Sample_GraphQL_Query_to_check_Auth_*: method=`post`, path=`/graphql`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`OpenCTICustomConnector`](../logic-apps/custom-opencticustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_GraphQL_Query_to_get_indicator_info_-_Accounts | post | `/graphql` | — |
+| Run_GraphQL_Query_to_get_indicator_info_-_FileHash | post | `/graphql` | — |
+| Run_GraphQL_Query_to_get_indicator_info_-_Host | post | `/graphql` | — |
+| Run_GraphQL_Query_to_get_indicator_info_-_IP | post | `/graphql` | — |
+| Run_GraphQL_Query_to_get_indicator_info_-_URLs | post | `/graphql` | — |
+| Run_Sample_GraphQL_Query_to_check_Auth_ | post | `/graphql` | — |
 
 </details>
 

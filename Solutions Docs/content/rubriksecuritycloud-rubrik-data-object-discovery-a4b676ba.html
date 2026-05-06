@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault_1</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault_1</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>RubrikCustomConnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -82,17 +82,26 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault_1`** (managedApi):
-- *ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
 
-**`RubrikCustomConnector`** (customApi):
-- *Authentication_2*: method=`post`, path=`/api/client_token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
 
-**`http`** (builtin):
-- *List_the_snapshots_for_all_objects_2*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Search_the_global_objects*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *List_the_snapshots_for_all_objects*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Authentication_2 | post | `/api/client_token` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| List_the_snapshots_for_all_objects_2 | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Search_the_global_objects | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| List_the_snapshots_for_all_objects | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
 
 </details>
 

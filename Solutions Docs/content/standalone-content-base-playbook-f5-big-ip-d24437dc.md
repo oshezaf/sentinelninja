@@ -20,12 +20,15 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *HTTP_-_Get_Access_Token*: method=`POST`, uri=`@{parameters('F5BigIPHost')}/mgmt/shared/authn/login`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Access_Token | POST | `@{parameters('F5BigIPHost')}/mgmt/shared/authn/login` | — |
 
 </details>
 

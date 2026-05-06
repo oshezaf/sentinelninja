@@ -20,28 +20,40 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 0 |
-| `keyvault_3` | Managed | 0 | 2 |
-| `teams` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
-| `workflow` | Built-in | 0 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 0 |
+| [`keyvault_3`](../logic-apps/managed-keyvault-3.md) | Managed | 0 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault_3`** (managedApi):
-- *Get_Access_Token_For_Groups_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Assign_Members_To_Group*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+#### [`keyvault_3`](../logic-apps/managed-keyvault-3.md) (Managed)
 
-**`teams`** (managedApi):
-- *Post_Message_For_No_Groups_Found*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token_For_Groups_Data | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Assign_Members_To_Group | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Available_Groups*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/groups`
-- *HTTP_Request_To_Assign_Members_To_Group*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('selected_group')}`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_Message_For_No_Groups_Found | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Available_Groups | GET | `@{variables('base_url')}/api/@{variables('api_version')}/groups` | — |
+| HTTP_Request_To_Assign_Members_To_Group | PATCH | `@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('selected_group')}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

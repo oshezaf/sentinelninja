@@ -15,8 +15,8 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Block IP addresses by Username - ForcepointNGFW](../content/standalone-content-block-ip-addresses-by-username-forcepointngfw-8e5483c2.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
-| [Logic Apps Custom Connectors and Playbook templates - ForcepointNGFW](../content/standalone-content-logic-apps-custom-connectors-and-playbook-templates-forcepointngfw-5a1f7dba.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
+| [Block IP addresses by Username - ForcepointNGFW](../content/standalone-content-block-ip-addresses-by-username-forcepointngfw-8e5483c2.md) | 📄 Standalone | 1 | 1 |
+| [Logic Apps Custom Connectors and Playbook templates - ForcepointNGFW](../content/standalone-content-logic-apps-custom-connectors-and-playbook-templates-forcepointngfw-5a1f7dba.md) | 📄 Standalone | 1 | 1 |
 
 ---
 

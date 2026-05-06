@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `function` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *DescribeInstancePatches*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/DescribeInstancePatches')]`
-- *GetInventory*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetInventory')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| DescribeInstancePatches | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/DescribeInstancePatches')]` |
+| GetInventory | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetInventory')]` |
 
 </details>
 

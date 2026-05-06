@@ -28,16 +28,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_to_Log_Analytics*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`http`** (builtin):
-- *Poll_Vaikora_Actions*: method=`GET`, uri=`https://api.vaikora.com/api/v1/actions`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_to_Log_Analytics | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Poll_Vaikora_Actions | GET | `https://api.vaikora.com/api/v1/actions` | — |
 
 </details>
 

@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureblob` | Managed | 1 | 1 |
-| `azuremonitorlogs` | Managed | 1 | 2 |
+| [`azureblob`](../logic-apps/managed-azureblob.md) | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *Create_blob*: method=`post`, path=`/datasets/default/files`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_2*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_blob | post | `/datasets/default/files` | — |
+
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_2 | post | `/queryData` | — |
+| Run_query_and_list_results | post | `/queryData` | — |
 
 </details>
 

@@ -20,32 +20,44 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 0 |
-| `keyvault_1` | Managed | 0 | 2 |
-| `teams` | Managed | 1 | 0 |
-| `RubrikCustomConnector` | Custom | 1 | 1 |
-| `http` | Built-in | 0 | 4 |
-| `workflow` | Built-in | 0 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 0 |
+| [`keyvault_1`](../logic-apps/managed-keyvault-1.md) | Managed | 0 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) | Custom | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault_1`** (managedApi):
-- *Get_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-clientId')}/value`
-- *Get_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
 
-**`RubrikCustomConnector`** (customApi):
-- *Authentication*: method=`post`, path=`/api/client_token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-clientId')}/value` | — |
+| Get_ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
 
-**`http`** (builtin):
-- *Create_Snapshot_for_evidence*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Recover_snapshot_files*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *List_all_Snapshots*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Fetch_Yara_rule(s)_from_file_URLs*: method=`GET`, uri=`@body('Collect_IOC_Scan_Data')?['data']?['ioc Yara rule file URL ']`
+#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
 
-**`workflow`** (builtin):
-- *RubrikPollAsyncResult*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
-- *RubrikPollAsyncResult_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
-- *RubrikIOCScan*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Authentication | post | `/api/client_token` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Snapshot_for_evidence | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Recover_snapshot_files | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| List_all_Snapshots | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Fetch_Yara_rule(s)_from_file_URLs | GET | `@body('Collect_IOC_Scan_Data')?['data']?['ioc Yara rule file URL ']` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikPollAsyncResult | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`<br>triggerName=`manual` |
+| RubrikPollAsyncResult_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`<br>triggerName=`manual` |
+| RubrikIOCScan | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`<br>triggerName=`manual` |
 
 </details>
 

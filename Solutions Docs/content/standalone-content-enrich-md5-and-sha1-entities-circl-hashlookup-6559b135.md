@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `CIRCL-hashlookup` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`CIRCL-hashlookup`](../logic-apps/custom-circl-hashlookup.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_-_ThreatIntelFound*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_-_ThreatIntelFound*: method=`put`, path=`/Incidents`
-- *Update_incident_-_NoThreatIntelFound*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`CIRCL-hashlookup`** (customApi):
-- *Bulk_search_of_MD5_hashes*: method=`post`, path=`/bulk/md5`
-- *Bulk_search_of_SHA-1_hashes*: method=`post`, path=`/bulk/sha1`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_-_ThreatIntelFound | post | `/Incidents/Comment` | — |
+| Update_incident_-_ThreatIntelFound | put | `/Incidents` | — |
+| Update_incident_-_NoThreatIntelFound | put | `/Incidents` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+
+#### [`CIRCL-hashlookup`](../logic-apps/custom-circl-hashlookup.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Bulk_search_of_MD5_hashes | post | `/bulk/md5` | — |
+| Bulk_search_of_SHA-1_hashes | post | `/bulk/sha1` | — |
 
 </details>
 

@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>microsoftsentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
@@ -76,11 +76,17 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_-_session_revoked*: method=`post`, path=`/Incidents/Comment`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_revoke_sign-in_session*: method=`POST`, uri=`https://graph.microsoft.com/v1.0/users/@{concat(triggerBody()?['Entity']?['properties']?['Name'], '@', triggerBody()?['Entity']?['properties']?['upnSuffix'])}/revokeSignInSessions`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_-_session_revoked | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_revoke_sign-in_session | POST | `https://graph.microsoft.com/v1.0/users/@{concat(triggerBody()?['Entity']?['properties']?['Name'], '@', triggerBody()?['Entity']?['properties']?['upnSuffix'])}/revokeSignInSessions` | — |
 
 </details>
 

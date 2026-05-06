@@ -20,19 +20,25 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `proofpointtapapi` | Managed | 0 | 1 |
-| `proofpointtap` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`proofpointtapapi`](../logic-apps/managed-proofpointtapapi.md) | Managed | 0 | 1 |
+| [`proofpointtap`](../logic-apps/custom-proofpointtap.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Change_incident_severity_to_high*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`proofpointtapapi`** (managedApi):
-- *Get_Very_Attacked_People*: method=`get`, path=`/v2/people/vap`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Change_incident_severity_to_high | put | `/Incidents` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+
+#### [`proofpointtapapi`](../logic-apps/managed-proofpointtapapi.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Very_Attacked_People | get | `/v2/people/vap` | — |
 
 </details>
 

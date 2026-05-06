@@ -15,9 +15,9 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Block URL - Palo Alto Wildfire and PAN-OS](../content/standalone-content-block-url-palo-alto-wildfire-and-pan-os-7b02ebc1.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 4 |
-| [Block URL From Teams - Palo Alto Wildfire and PAN-OS](../content/standalone-content-block-url-from-teams-palo-alto-wildfire-and-pan-os-9330592a.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 4 |
-| [Logic Apps Custom Connector and Playbook templates - Palo Alto Wildfire and PAN-OS](../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-palo-alto-wildfire-and-pan-os-0c642dc7.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 8 |
+| [Block URL - Palo Alto Wildfire and PAN-OS](../content/standalone-content-block-url-palo-alto-wildfire-and-pan-os-7b02ebc1.md) | 📄 Standalone | 0 | 4 |
+| [Block URL From Teams - Palo Alto Wildfire and PAN-OS](../content/standalone-content-block-url-from-teams-palo-alto-wildfire-and-pan-os-9330592a.md) | 📄 Standalone | 0 | 4 |
+| [Logic Apps Custom Connector and Playbook templates - Palo Alto Wildfire and PAN-OS](../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-palo-alto-wildfire-and-pan-os-0c642dc7.md) | 📄 Standalone | 0 | 8 |
 
 ---
 

@@ -20,13 +20,16 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `recordedfuturev2` | Managed | 1 | 2 |
+| [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`recordedfuturev2`** (managedApi):
-- *Recorded_Future_-_C2_IP_download*: method=`get`, path=`/fusion/files`
-- *Recorded_Future_-_Weaponized_Domains_download*: method=`get`, path=`/fusion/files`
+#### [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Recorded_Future_-_C2_IP_download | get | `/fusion/files` | — |
+| Recorded_Future_-_Weaponized_Domains_download | get | `/fusion/files` | — |
 
 </details>
 

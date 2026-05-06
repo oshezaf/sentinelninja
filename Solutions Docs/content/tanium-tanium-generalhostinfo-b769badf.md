@@ -20,25 +20,34 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_Received_Info_to_Incident*: method=`post`, path=`/Incidents/Comment`
-- *Get_Hosts_From_Incident*: method=`post`, path=`/entities/host`
-- *Add_comment__-_no_hosts_found*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment__-_no_data_in_Tanium*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('TaniumApiToken')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Received_Info_to_Incident | post | `/Incidents/Comment` | — |
+| Get_Hosts_From_Incident | post | `/entities/host` | — |
+| Add_comment__-_no_hosts_found | post | `/Incidents/Comment` | — |
+| Add_comment__-_no_data_in_Tanium | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *Get_next_page*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
-- *Get_General_Host_Info*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
-- *Requery_the_API_Gateway*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('TaniumApiToken')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_next_page | POST | `@parameters('TaniumApiGatewayApi')` | — |
+| Get_General_Host_Info | POST | `@parameters('TaniumApiGatewayApi')` | — |
+| Requery_the_API_Gateway | POST | `@parameters('TaniumApiGatewayApi')` | — |
 
 </details>
 

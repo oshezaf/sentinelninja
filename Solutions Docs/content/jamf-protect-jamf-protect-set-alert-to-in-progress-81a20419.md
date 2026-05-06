@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_POST_-_Change_Alert_Status_using_Jamf_Protect's_GraphQL_API_Endpoint*: method=`POST`, uri=`@{parameters('jamfProtectURL')}/graphql`
-- *Generate_Access_Token*: method=`POST`, uri=`@{parameters('jamfProtectURL')}/token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_POST_-_Change_Alert_Status_using_Jamf_Protect's_GraphQL_API_Endpoint | POST | `@{parameters('jamfProtectURL')}/graphql` | — |
+| Generate_Access_Token | POST | `@{parameters('jamfProtectURL')}/token` | — |
 
 </details>
 

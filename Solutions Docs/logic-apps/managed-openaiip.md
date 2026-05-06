@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 0 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/openaiip/](https://learn.microsoft.com/en-us/connectors/openaiip/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/openaiip/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| AI-Commandline-Analysis | - | 1 | 1 |
+| [AI-Commandline-Analysis](../content/github-only-ai-commandline-analysis-5d127fc0.md) | 🔗 GitHub Only | 1 | 1 |
 
 ---
 

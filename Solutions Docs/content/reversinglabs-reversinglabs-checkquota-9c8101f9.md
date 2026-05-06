@@ -28,31 +28,40 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 7 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 6 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 7 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_4*: method=`post`, path=`/api/logs`
-- *Send_Data_5*: method=`post`, path=`/api/logs`
-- *Send_Data*: method=`post`, path=`/api/logs`
-- *Send_Data_3*: method=`post`, path=`/api/logs`
-- *Send_Data_2*: method=`post`, path=`/api/logs`
-- *Send_Data_user_usage*: method=`post`, path=`/api/logs`
-- *Send_Data_user_monthly_usage*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('ticloudpw')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_4 | post | `/api/logs` | — |
+| Send_Data_5 | post | `/api/logs` | — |
+| Send_Data | post | `/api/logs` | — |
+| Send_Data_3 | post | `/api/logs` | — |
+| Send_Data_2 | post | `/api/logs` | — |
+| Send_Data_user_usage | post | `/api/logs` | — |
+| Send_Data_user_monthly_usage | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_-_GET_Company_Quota_Limits*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/limits/company`
-- *HTTP_-_GET_company_daily_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/company/daily`
-- *HTTP_-_GET_company_monthly_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/company/monthly`
-- *HTTP_-_GET_test_connection*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/daily`
-- *HTTP_-_GET_user_daily_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/daily`
-- *HTTP_-_GET_user_monthly_usage*: method=`GET`, uri=`https://data.reversinglabs.com/api/customer_usage/v1/usage/monthly`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('ticloudpw')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_GET_Company_Quota_Limits | GET | `https://data.reversinglabs.com/api/customer_usage/v1/limits/company` | — |
+| HTTP_-_GET_company_daily_usage | GET | `https://data.reversinglabs.com/api/customer_usage/v1/usage/company/daily` | — |
+| HTTP_-_GET_company_monthly_usage | GET | `https://data.reversinglabs.com/api/customer_usage/v1/usage/company/monthly` | — |
+| HTTP_-_GET_test_connection | GET | `https://data.reversinglabs.com/api/customer_usage/v1/usage/daily` | — |
+| HTTP_-_GET_user_daily_usage | GET | `https://data.reversinglabs.com/api/customer_usage/v1/usage/daily` | — |
+| HTTP_-_GET_user_monthly_usage | GET | `https://data.reversinglabs.com/api/customer_usage/v1/usage/monthly` | — |
 
 </details>
 

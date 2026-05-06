@@ -20,13 +20,16 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `signl4` | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`signl4`](../logic-apps/managed-signl4.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`signl4`** (managedApi):
-- *Trigger_Alert*: method=`post`, path=`/alerts`
+#### [`signl4`](../logic-apps/managed-signl4.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Trigger_Alert | post | `/alerts` | — |
 
 </details>
 

@@ -20,37 +20,49 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 0 |
-| `keyvault_1` | Managed | 0 | 2 |
-| `teams` | Managed | 1 | 0 |
-| `RubrikCustomConnector` | Custom | 1 | 1 |
-| `http` | Built-in | 0 | 9 |
-| `workflow` | Built-in | 0 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 0 |
+| [`keyvault_1`](../logic-apps/managed-keyvault-1.md) | Managed | 0 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) | Custom | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 9 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault_1`** (managedApi):
-- *ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
 
-**`RubrikCustomConnector`** (customApi):
-- *Authentication*: method=`post`, path=`/api/client_token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
 
-**`http`** (builtin):
-- *Fetch_yara_rule_from_URLs*: method=`GET`, uri=`@body('Collect_IOC_scan_and_general_recovery_data')?['data']?['ioc Yara rule file URL']`
-- *Create_Snapshot_for_evidence*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_VM_metadata*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_HostID*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_Vsphere_Host_ID*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Live-Mount_recovered_snapshot*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Export_recovered_snapshot*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_Vsphere_Datastore_ID*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_Vsphere_Host_ID_-_2*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
 
-**`workflow`** (builtin):
-- *RubrikPollAsyncResult_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
-- *RubrikPollAsyncResult_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`, triggerName=`manual`
-- *RubrikIOCScan*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Authentication | post | `/api/client_token` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_yara_rule_from_URLs | GET | `@body('Collect_IOC_scan_and_general_recovery_data')?['data']?['ioc Yara rule file URL']` | — |
+| Create_Snapshot_for_evidence | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_VM_metadata | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_HostID | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_Vsphere_Host_ID | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Live-Mount_recovered_snapshot | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Export_recovered_snapshot | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_Vsphere_Datastore_ID | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_Vsphere_Host_ID_-_2 | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikPollAsyncResult_3 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`<br>triggerName=`manual` |
+| RubrikPollAsyncResult_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikPollAsyncResult')]`<br>triggerName=`manual` |
+| RubrikIOCScan | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`<br>triggerName=`manual` |
 
 </details>
 

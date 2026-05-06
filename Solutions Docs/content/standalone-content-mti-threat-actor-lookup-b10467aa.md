@@ -20,45 +20,60 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 2 | 12 |
-| `keyvault` | Managed | 1 | 1 |
-| `securitycopilot` | Managed | 1 | 4 |
-| `http` | Built-in | 0 | 4 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 2 | 12 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`securitycopilot`](../logic-apps/managed-securitycopilot.md) | Managed | 1 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_2*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)_1*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_1*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)_5*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_6*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_3*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('MechanicsDemo-AzureFunction')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Update_incident_2 | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3)_1 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_4 | post | `/Incidents/Comment` | — |
+| Update_incident_1 | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3)_5 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_6 | post | `/Incidents/Comment` | — |
+| Update_incident_3 | put | `/Incidents` | — |
 
-**`securitycopilot`** (managedApi):
-- *Submit_a_Copilot_for_Security_prompt_2*: method=`post`, path=`/process-prompt`
-- *Submit_a_Copilot_for_Security_prompt_1*: method=`post`, path=`/process-prompt`
-- *Submit_a_Copilot_for_Security_prompt*: method=`post`, path=`/process-prompt`
-- *Submit_a_Copilot_for_Security_prompt_4*: method=`post`, path=`/process-prompt`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *MDTI_API_Hosts*: method=`GET`, uri=`https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each')?['HostName']}.@{items('For_each')?['DnsDomain']}/reputation`
-- *MDTI_API_IPs*: method=`GET`, uri=`https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each_2')?['Address']}/reputation`
-- *Function_App_call*: method=`POST`, uri=`@{parameters('Function App URL')}item=@{items('For_each_3')?['Address']}&code=@{body('Get_secret')?['value']}`
-- *Function_App_call_1*: method=`POST`, uri=`@{parameters('Function App URL')}item=@{item()?['HostName']}.@{item()?['DnsDomain']}&code=@{body('Get_secret')?['value']}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('MechanicsDemo-AzureFunction')}/value` | — |
 
-**`workflow`** (builtin):
-- *MDTI-Base*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/MDTI-Base')]`, triggerName=`manual`
+#### [`securitycopilot`](../logic-apps/managed-securitycopilot.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Submit_a_Copilot_for_Security_prompt_2 | post | `/process-prompt` | — |
+| Submit_a_Copilot_for_Security_prompt_1 | post | `/process-prompt` | — |
+| Submit_a_Copilot_for_Security_prompt | post | `/process-prompt` | — |
+| Submit_a_Copilot_for_Security_prompt_4 | post | `/process-prompt` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| MDTI_API_Hosts | GET | `https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each')?['HostName']}.@{items('For_each')?['DnsDomain']}/reputation` | — |
+| MDTI_API_IPs | GET | `https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each_2')?['Address']}/reputation` | — |
+| Function_App_call | POST | `@{parameters('Function App URL')}item=@{items('For_each_3')?['Address']}&code=@{body('Get_secret')?['value']}` | — |
+| Function_App_call_1 | POST | `@{parameters('Function App URL')}item=@{item()?['HostName']}.@{item()?['DnsDomain']}&code=@{body('Get_secret')?['value']}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| MDTI-Base | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/MDTI-Base')]`<br>triggerName=`manual` |
 
 </details>
 

@@ -20,21 +20,27 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `office365` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_hosts*: method=`post`, path=`/entities/host`
-- *Alert_-_Get_incident*: method=`get`, path=`/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}`
-- *Add_comment_to_incident_(V2)*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_2*: method=`POST`, uri=`https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2018-09-01-preview`
-- *HTTP_5*: method=`PATCH`, uri=`https://management.azure.com@{variables('storageid')}?api-version=2019-06-01`
-- *HTTP*: method=`GET`, uri=`https://management.azure.com/subscriptions?api-version=2016-06-01`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_hosts | post | `/entities/host` | — |
+| Alert_-_Get_incident | get | `/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}` | — |
+| Add_comment_to_incident_(V2) | put | `/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_2 | POST | `https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2018-09-01-preview` | — |
+| HTTP_5 | PATCH | `https://management.azure.com@{variables('storageid')}?api-version=2019-06-01` | — |
+| HTTP | GET | `https://management.azure.com/subscriptions?api-version=2016-06-01` | — |
 
 </details>
 

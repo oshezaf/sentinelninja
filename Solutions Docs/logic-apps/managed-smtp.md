@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 0 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/smtp/](https://learn.microsoft.com/en-us/connectors/smtp/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/smtp/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| Export-Report-CSV | - | 0 | 3 |
+| [Export-Report-CSV](../content/github-only-export-report-csv-ec08489b.md) | 🔗 GitHub Only | 0 | 3 |
 
 ---
 

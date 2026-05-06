@@ -20,26 +20,35 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureblob` | Managed | 1 | 6 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureblob`](../logic-apps/managed-azureblob.md) | Managed | 1 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *Get_cid_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
-- *Get_entity_id_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
-- *Get_job_id_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
-- *Get_job_instance_id_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
-- *Get_job_start_time_usecs_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
-- *Get_object_from_blob_content*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('ApiKey')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_cid_from_blob_content | get | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath` | — |
+| Get_entity_id_from_blob_content | get | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath` | — |
+| Get_job_id_from_blob_content | get | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath` | — |
+| Get_job_instance_id_from_blob_content | get | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath` | — |
+| Get_job_start_time_usecs_from_blob_content | get | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath` | — |
+| Get_object_from_blob_content | get | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/GetFileContentByPath` | — |
 
-**`http`** (builtin):
-- *HTTP*: method=`POST`, uri=`https://helios.cohesity.com/irisservices/api/v1/public/restore/recover`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('ApiKey')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | POST | `https://helios.cohesity.com/irisservices/api/v1/public/restore/recover` | — |
 
 </details>
 

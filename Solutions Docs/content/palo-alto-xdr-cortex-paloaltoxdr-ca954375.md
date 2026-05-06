@@ -30,30 +30,42 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 4 |
-| `teams` | Managed | 1 | 2 |
-| `virustotal` | Managed | 1 | 0 |
-| `virustotal_1` | Managed | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 2 |
+| [`virustotal`](../logic-apps/managed-virustotal.md) | Managed | 1 | 0 |
+| [`virustotal_1`](../logic-apps/managed-virustotal-1.md) | Managed | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_2*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
+| Run_query_and_list_results_2 | post | `/queryData` | — |
 
-**`teams`** (managedApi):
-- *Post_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_message_in_a_chat_or_channel_2*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`virustotal_1`** (managedApi):
-- *Get_an_IP_report*: method=`get`, path=`/api/v3/ip_addresses/connectorV2/@{encodeURIComponent(items('For_each_IP_in_incident')?['Address'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_message_in_a_chat_or_channel | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_message_in_a_chat_or_channel_2 | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`virustotal_1`](../logic-apps/managed-virustotal-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_an_IP_report | get | `/api/v3/ip_addresses/connectorV2/@{encodeURIComponent(items('For_each_IP_in_incident')?['Address'])}` | — |
 
 </details>
 

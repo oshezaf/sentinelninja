@@ -20,27 +20,39 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 4 |
-| `wdatp` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`wdatp`](../logic-apps/managed-wdatp.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
 
-**`wdatp`** (managedApi):
-- *Machines_-_Get_single_machine*: method=`get`, path=`/api/machines/@{encodeURIComponent(items('For_each')?['HostName'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`POST`, uri=`https://api.security.microsoft.com/api/advancedHunting/run`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_4 | post | `/Incidents/Comment` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Machines_-_Get_single_machine | get | `/api/machines/@{encodeURIComponent(items('For_each')?['HostName'])}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | POST | `https://api.security.microsoft.com/api/advancedHunting/run` | — |
 
 </details>
 

@@ -20,25 +20,34 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_when_matching_alert_data_found*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_when_no_matching_alert_data_found*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('DataMinrPulse-clientId')}/value`
-- *Get_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('DataMinrPulse-clientSecret')}/value`
-- *Get_DmaToken*: method=`get`, path=`/secrets/@{encodeURIComponent('DataMinrPulse-DmaToken')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_when_matching_alert_data_found | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_when_no_matching_alert_data_found | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *Get_Alerts_from_Dataminr_Pulse_API*: method=`GET`, uri=`@{concat(variables('BaseUrl'),'api/3/alerts')}`
-- *Generate_auth_token*: method=`POST`, uri=`@{concat(variables('BaseUrl'),'auth/2/token')}`
-- *Update_DmaToken_in_Keyvault*: method=`PUT`, uri=`@{concat('https://',variables('KeyVaultName'),'.',parameters('azure key vault'),'.net/secrets/',body('Get_DmaToken')?['name'],'?api-version=7.2')}`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_ClientId | get | `/secrets/@{encodeURIComponent('DataMinrPulse-clientId')}/value` | — |
+| Get_ClientSecret | get | `/secrets/@{encodeURIComponent('DataMinrPulse-clientSecret')}/value` | — |
+| Get_DmaToken | get | `/secrets/@{encodeURIComponent('DataMinrPulse-DmaToken')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Alerts_from_Dataminr_Pulse_API | GET | `@{concat(variables('BaseUrl'),'api/3/alerts')}` | — |
+| Generate_auth_token | POST | `@{concat(variables('BaseUrl'),'auth/2/token')}` | — |
+| Update_DmaToken_in_Keyvault | PUT | `@{concat('https://',variables('KeyVaultName'),'.',parameters('azure key vault'),'.net/secrets/',body('Get_DmaToken')?['name'],'?api-version=7.2')}` | — |
 
 </details>
 

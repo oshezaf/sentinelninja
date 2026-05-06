@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Update_incident*: method=`put`, path=`/Incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident | put | `/Incidents` | — |
 
 </details>
 

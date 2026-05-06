@@ -20,27 +20,36 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `azuresentinel-1` | Managed | 0 | 1 |
-| `function` | Built-in | 0 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`azuresentinel-1`](../logic-apps/managed-azuresentinel-1.md) | Managed | 0 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Threat_Intelligence_-_Upload_Indicators_of_Compromise_(V2)_(Preview)*: method=`post`, path=`/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/`
-- *Add_comment_to_incident_(V3)_1*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`azuresentinel-1`** (managedApi):
-- *Add_Comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Threat_Intelligence_-_Upload_Indicators_of_Compromise_(V2)_(Preview) | post | `/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/` | — |
+| Add_comment_to_incident_(V3)_1 | post | `/Incidents/Comment` | — |
 
-**`function`** (builtin):
-- *UplaodURL*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/UplaodURL')]`
-- *GetVMRaySubmission*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRaySubmission')]`
-- *GetVMRaySample*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRaySample')]`
-- *GetVMRayIOCs*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRayIOCs')]`
-- *vmrayenrichcox-GetVMRayVTIs*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRayVTIs')]`
+#### [`azuresentinel-1`](../logic-apps/managed-azuresentinel-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Comment_to_incident | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| UplaodURL | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/UplaodURL')]` |
+| GetVMRaySubmission | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRaySubmission')]` |
+| GetVMRaySample | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRaySample')]` |
+| GetVMRayIOCs | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRayIOCs')]` |
+| vmrayenrichcox-GetVMRayVTIs | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/GetVMRayVTIs')]` |
 
 </details>
 

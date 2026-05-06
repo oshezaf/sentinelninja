@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *GetAutomationExecution_status*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
-- *GetAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
-- *StartAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GetAutomationExecution_status | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]` |
+| GetAutomationExecution | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]` |
+| StartAutomationExecution | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]` |
 
 </details>
 

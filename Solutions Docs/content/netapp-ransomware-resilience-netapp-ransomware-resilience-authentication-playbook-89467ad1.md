@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('client-id')}/value`
-- *Get_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('client-secret')}/value`
-- *Get_Account_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('account-id')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Token_Request*: method=`POST`, uri=`https://netapp-cloud-account.auth0.com/oauth/token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_ID | get | `/secrets/@{encodeURIComponent('client-id')}/value` | — |
+| Get_Client_Secret | get | `/secrets/@{encodeURIComponent('client-secret')}/value` | — |
+| Get_Account_ID | get | `/secrets/@{encodeURIComponent('account-id')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Token_Request | POST | `https://netapp-cloud-account.auth0.com/oauth/token` | — |
 
 </details>
 

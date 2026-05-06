@@ -20,19 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinel` | Managed | 0 | 7 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 7 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Add_task_to_incident_-_Contain*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Introduction*: method=`post`, path=`/Incidents/CreateTask`
-- *Mark_a_task_as_completed_-_Introduction*: method=`post`, path=`/Incidents/CompleteTask`
-- *Add_task_to_incident_-_Investigate*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Investigate_involved_users*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Prevent*: method=`post`, path=`/Incidents/CreateTask`
-- *Add_task_to_incident_-_Remediate*: method=`post`, path=`/Incidents/CreateTask`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_task_to_incident_-_Contain | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Introduction | post | `/Incidents/CreateTask` | — |
+| Mark_a_task_as_completed_-_Introduction | post | `/Incidents/CompleteTask` | — |
+| Add_task_to_incident_-_Investigate | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Investigate_involved_users | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Prevent | post | `/Incidents/CreateTask` | — |
+| Add_task_to_incident_-_Remediate | post | `/Incidents/CreateTask` | — |
 
 </details>
 

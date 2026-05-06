@@ -20,21 +20,30 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 1 |
-| `microsoftsentinel` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Dynatrace_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`microsoftsentinel`** (managedApi):
-- *Update_incident_with_tags*: method=`put`, path=`/Incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Dynatrace_Access_Token | get | `/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value` | — |
 
-**`http`** (builtin):
-- *Get_Dynatrace_Attack_Details*: method=`GET`, uri=`https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['attackIdentifier'])}`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident_with_tags | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Dynatrace_Attack_Details | GET | `https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['attackIdentifier'])}` | — |
 
 </details>
 

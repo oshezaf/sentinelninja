@@ -20,24 +20,33 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(replace(items('IP_Loop')?['Address'], '.', '-'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
 
-**`http`** (builtin):
-- *Fetching_API_version*: method=`GET`, uri=`https://@{items('IP_Loop')?['Address']}/api/api_version`
-- *Retrieving_auth_token*: method=`POST`, uri=`https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/login`
-- *Executing_User_Delete_API*: method=`DELETE`, uri=`https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/admins`
-- *Logging_Out*: method=`POST`, uri=`https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/logout`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(replace(items('IP_Loop')?['Address'], '.', '-'))}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetching_API_version | GET | `https://@{items('IP_Loop')?['Address']}/api/api_version` | — |
+| Retrieving_auth_token | POST | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/login` | — |
+| Executing_User_Delete_API | DELETE | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/admins` | — |
+| Logging_Out | POST | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/logout` | — |
 
 </details>
 

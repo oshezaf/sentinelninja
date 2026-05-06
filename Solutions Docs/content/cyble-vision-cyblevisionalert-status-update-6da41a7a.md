@@ -20,14 +20,17 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *post_comment-copy*: method=`POST`, uri=`https://bifrost.cyble.ai/engine/api/v1/y/tpi/sentinel/alerts/@{variables('var_alertId')}/comments`
-- *update_alert_details*: method=`PUT`, uri=`https://bifrost.cyble.ai/engine/api/v1/y/tpi/sentinel/alerts`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| post_comment-copy | POST | `https://bifrost.cyble.ai/engine/api/v1/y/tpi/sentinel/alerts/@{variables('var_alertId')}/comments` | — |
+| update_alert_details | PUT | `https://bifrost.cyble.ai/engine/api/v1/y/tpi/sentinel/alerts` | — |
 
 </details>
 

@@ -20,20 +20,29 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName AAD SP'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident | put | `/Incidents` | — |
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/users?$filter=DisplayName eq '@{concat(triggerBody()?['fields']?['assignee']?['displayName'], ' (Operator)')}'`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName AAD SP'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `https://graph.microsoft.com/v1.0/users?$filter=DisplayName eq '@{concat(triggerBody()?['fields']?['assignee']?['displayName'], ' (Operator)')}'` | — |
 
 </details>
 

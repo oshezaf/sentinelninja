@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_secret_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientID')}/value`
-- *Get_secret_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *Quarantine_Resource_API*: method=`POST`, uri=`@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{triggerBody()?['resourceID']}`
-- *Generate_Bearer_Token*: method=`POST`, uri=`@{parameters('api_host')}/token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret_ClientId | get | `/secrets/@{encodeURIComponent('Druva-ClientID')}/value` | — |
+| Get_secret_ClientSecret | get | `/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Quarantine_Resource_API | POST | `@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{triggerBody()?['resourceID']}` | — |
+| Generate_Bearer_Token | POST | `@{parameters('api_host')}/token` | — |
 
 </details>
 

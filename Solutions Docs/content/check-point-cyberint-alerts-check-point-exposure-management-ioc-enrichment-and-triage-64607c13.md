@@ -20,23 +20,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 5 |
-| `http` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 5 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Enrich_IP*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/ipv4/@{encodeURIComponent(items('For_each_IP')?['Address'])}`
-- *Enrich_FileHash*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/sha256/@{encodeURIComponent(items('For_each_FileHash')?['Value'])}`
-- *Enrich_Domain*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/domain/@{encodeURIComponent(items('For_each_Domain')?['DomainName'])}`
-- *Enrich_URL*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/file/url`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Enrich_IP | GET | `@{parameters('API_Base_URL')}/api/v1/file/ipv4/@{encodeURIComponent(items('For_each_IP')?['Address'])}` | — |
+| Enrich_FileHash | GET | `@{parameters('API_Base_URL')}/api/v1/file/sha256/@{encodeURIComponent(items('For_each_FileHash')?['Value'])}` | — |
+| Enrich_Domain | GET | `@{parameters('API_Base_URL')}/api/v1/file/domain/@{encodeURIComponent(items('For_each_Domain')?['DomainName'])}` | — |
+| Enrich_URL | GET | `@{parameters('API_Base_URL')}/api/v1/file/url` | — |
 
 </details>
 

@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureautomation` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
+| [`azureautomation`](../logic-apps/managed-azureautomation.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureautomation`** (managedApi):
-- *Trigger_Automation*: method=`put`, path=`[concat('/subscriptions/@{encodeURIComponent(''', subscription().subscriptionId, ''')}/resourceGroups/@{encodeURIComponent(''', resourceGroup().name ,''')}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent(''', parameters('AutomationAccount') , ''')}/jobs')]`
+#### [`azureautomation`](../logic-apps/managed-azureautomation.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Trigger_Automation | put | `[concat('/subscriptions/@{encodeURIComponent(''', subscription().subscriptionId, ''')}/resourceGroups/@{encodeURIComponent(''', resourceGroup().name ,''')}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent(''', parameters('AutomationAccount') , ''')}/jobs')]` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
 </details>
 

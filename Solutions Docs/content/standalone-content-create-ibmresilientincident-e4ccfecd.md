@@ -20,22 +20,28 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `Resilient-Incidents` | Custom | 1 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`Resilient-Incidents`](../logic-apps/custom-resilient-incidents.md) | Custom | 1 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`Resilient-Incidents`** (customApi):
-- *create_IncidentArtifact*: method=`post`, path=`/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts`
-- *create_IncidentArtifact_2*: method=`post`, path=`/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts`
-- *create_IncidentArtifact_3*: method=`post`, path=`/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts`
-- *create_IncidentArtifact_4*: method=`post`, path=`/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts`
-- *create_incident*: method=`post`, path=`/incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`Resilient-Incidents`](../logic-apps/custom-resilient-incidents.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| create_IncidentArtifact | post | `/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts` | — |
+| create_IncidentArtifact_2 | post | `/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts` | — |
+| create_IncidentArtifact_3 | post | `/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts` | — |
+| create_IncidentArtifact_4 | post | `/incidents/@{encodeURIComponent(body('create_incident')?['id'])}/artifacts` | — |
+| create_incident | post | `/incidents` | — |
 
 </details>
 

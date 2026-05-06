@@ -20,27 +20,39 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 1 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
-**`function`** (builtin):
-- *CreateJWT*: functionId=`[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Web/sites/', parameters('FunctionAppName'), '/functions/CreateJWT')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Block_GitHub_user_from_organization*: method=`PUT`, uri=`[concat('https://api.github.com/orgs/', parameters('GitHubOrganizationName'), '/blocks/@{items(''For_each_-_Account_entity'')?[''Name'']}')]`
-- *HTTP_-_Remove_GitHub_user_as_a_member_from_organization*: method=`DELETE`, uri=`[concat('https://api.github.com/orgs/', parameters('GitHubOrganizationName'),'/members/@{items(''For_each_-_Account_entity'')?[''Name'']}')]`
-- *HTTP_-_Authenticate_as_a_GitHub_App_installation*: method=`POST`, uri=`[concat('https://api.github.com/app/installations/', parameters('GitHubAppInstallationID'), '/access_tokens')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CreateJWT | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Web/sites/', parameters('FunctionAppName'), '/functions/CreateJWT')]` |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Block_GitHub_user_from_organization | PUT | `[concat('https://api.github.com/orgs/', parameters('GitHubOrganizationName'), '/blocks/@{items(''For_each_-_Account_entity'')?[''Name'']}')]` | — |
+| HTTP_-_Remove_GitHub_user_as_a_member_from_organization | DELETE | `[concat('https://api.github.com/orgs/', parameters('GitHubOrganizationName'),'/members/@{items(''For_each_-_Account_entity'')?[''Name'']}')]` | — |
+| HTTP_-_Authenticate_as_a_GitHub_App_installation | POST | `[concat('https://api.github.com/app/installations/', parameters('GitHubAppInstallationID'), '/access_tokens')]` | — |
 
 </details>
 

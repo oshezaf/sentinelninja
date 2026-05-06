@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">5</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>googlethreatintelligence</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-googlethreatintelligence.html"><code>googlethreatintelligence</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>GoogleThreatIntelligence-CustomConnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-googlethreatintelligence-customconnector.html"><code>GoogleThreatIntelligence-CustomConnector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
@@ -76,18 +76,24 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`googlethreatintelligence`** (managedApi):
-- *Get_IP_Report*: method=`get`, path=`/ip_addresses/@{encodeURIComponent(item()?['Address'])}`
-- *Get_File_Report*: method=`get`, path=`/files/@{encodeURIComponent(item()?['Value'])}`
-- *Get_URL_Report*: method=`get`, path=`/urls/@{encodeURIComponent(replace(base64(item()?['Url']),'=',''))}`
-- *Get_Domain_Report*: method=`get`, path=`/domains/@{encodeURIComponent(item()?['DomainName'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`googlethreatintelligence`](../logic-apps/managed-googlethreatintelligence.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_IP_Report | get | `/ip_addresses/@{encodeURIComponent(item()?['Address'])}` | — |
+| Get_File_Report | get | `/files/@{encodeURIComponent(item()?['Value'])}` | — |
+| Get_URL_Report | get | `/urls/@{encodeURIComponent(replace(base64(item()?['Url']),'=',''))}` | — |
+| Get_Domain_Report | get | `/domains/@{encodeURIComponent(item()?['DomainName'])}` | — |
 
 </details>
 

@@ -20,18 +20,24 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `jira` | Managed | 1 | 2 |
-| `microsoftsentinel` | Managed | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`jira`](../logic-apps/managed-jira.md) | Managed | 1 | 2 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`jira`** (managedApi):
-- *Create_a_new_issue*: method=`post`, path=`/issue`
-- *Add_comment*: method=`post`, path=`/issue/@{encodeURIComponent(variables('Jira ID'))}/comment`
+#### [`jira`](../logic-apps/managed-jira.md) (Managed)
 
-**`microsoftsentinel`** (managedApi):
-- *Update_incident*: method=`put`, path=`/Incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_a_new_issue | post | `/issue` | — |
+| Add_comment | post | `/issue/@{encodeURIComponent(variables('Jira ID'))}/comment` | — |
+
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident | put | `/Incidents` | — |
 
 </details>
 

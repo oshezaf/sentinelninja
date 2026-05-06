@@ -20,13 +20,16 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `spycloud-enterprise-connector` | Managed | 0 | 1 |
-| `SpyCloud-Enterprise-Protection` | Custom | 1 | 0 |
+| [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) | Managed | 0 | 1 |
+| [`SpyCloud-Enterprise-Protection`](../logic-apps/custom-spycloud-enterprise-protection.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`spycloud-enterprise-connector`** (managedApi):
-- *Get_Breach_Data_by_Password_Search*: method=`get`, path=`/breach/data/passwords/@{encodeURIComponent(variables('password_to_search'))}`
+#### [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Breach_Data_by_Password_Search | get | `/breach/data/passwords/@{encodeURIComponent(variables('password_to_search'))}` | — |
 
 </details>
 

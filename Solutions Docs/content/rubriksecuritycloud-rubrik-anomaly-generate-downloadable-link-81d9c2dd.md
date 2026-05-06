@@ -20,23 +20,32 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `teams` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Enrich_Anomaly_incident_with_anomalous_files_and_downloadable_link_details*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Cluster_Information*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_downloadable_link_for_given_object*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Enrich_Anomaly_incident_with_anomalous_files_and_downloadable_link_details | post | `/Incidents/Comment` | — |
 
-**`workflow`** (builtin):
-- *RubrikPollAsyncResult*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('PollAsyncResultPlaybookName'))]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Cluster_Information | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_downloadable_link_for_given_object | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikPollAsyncResult | — | — | workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('PollAsyncResultPlaybookName'))]`<br>triggerName=`manual` |
 
 </details>
 

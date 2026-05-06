@@ -20,19 +20,25 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureautomation` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 2 |
+| [`azureautomation`](../logic-apps/managed-azureautomation.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureautomation`** (managedApi):
-- *Disable_IDP_Job*: method=`put`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs`
-- *Disable_IDP_Job_Output*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs/@{encodeURIComponent(body('Disable_IDP_Job')?['properties']?['jobId'])}/output`
+#### [`azureautomation`](../logic-apps/managed-azureautomation.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('access-token')}/value`
-- *Environment_Endpoint_URL*: method=`get`, path=`/secrets/@{encodeURIComponent('environment-endpoint-url')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Disable_IDP_Job | put | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs` | — |
+| Disable_IDP_Job_Output | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs/@{encodeURIComponent(body('Disable_IDP_Job')?['properties']?['jobId'])}/output` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Access_Token | get | `/secrets/@{encodeURIComponent('access-token')}/value` | — |
+| Environment_Endpoint_URL | get | `/secrets/@{encodeURIComponent('environment-endpoint-url')}/value` | — |
 
 </details>
 

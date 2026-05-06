@@ -28,25 +28,37 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
-| `recordedfuturev2` | Managed | 1 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_2*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_2 | post | `/api/logs` | — |
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Create_incident*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/workspaces/',parameters('workspace_name') ) ]`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`recordedfuturev2`** (managedApi):
-- *Search_Triggered_Alerts*: method=`get`, path=`/v2/alerts`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Create_incident | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/workspaces/',parameters('workspace_name') ) ]` | — |
+
+#### [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Search_Triggered_Alerts | get | `/v2/alerts` | — |
 
 </details>
 

@@ -20,23 +20,29 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `recordedfuture` | Managed | 0 | 4 |
-| `recordedfuturev2` | Managed | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`recordedfuture`](../logic-apps/managed-recordedfuture.md) | Managed | 0 | 4 |
+| [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_-_Domain*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_-_Hash*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_-_Link*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_-_IP*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`recordedfuture`** (managedApi):
-- *Domain_Enrichment*: method=`get`, path=`/lookup/domain/@{encodeURIComponent(body('Parse_JSON_-_DNS_Resolution')?['domainName'])}`
-- *Hash_Enrichment*: method=`get`, path=`/lookup/hash/@{encodeURIComponent(body('Parse_JSON_-_File_Hash')?['hashValue'])}`
-- *URL_Enrichment*: method=`get`, path=`/lookup/url/@{encodeURIComponent(if(or(startsWith(body('Parse_JSON_-_Url')?['url'], 'http://'), startsWith(body('Parse_JSON_-_Url')?['url'], 'https://')), body('Parse_JSON_-_Url')?['url'], concat('https://', body('Parse_JSON_-_Url')?['url'])))}`
-- *IP_Enrichment*: method=`get`, path=`/lookup/ip/@{encodeURIComponent(body('Parse_JSON_-_Ip')?['address'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_-_Domain | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_-_Hash | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_-_Link | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_-_IP | post | `/Incidents/Comment` | — |
+
+#### [`recordedfuture`](../logic-apps/managed-recordedfuture.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Domain_Enrichment | get | `/lookup/domain/@{encodeURIComponent(body('Parse_JSON_-_DNS_Resolution')?['domainName'])}` | — |
+| Hash_Enrichment | get | `/lookup/hash/@{encodeURIComponent(body('Parse_JSON_-_File_Hash')?['hashValue'])}` | — |
+| URL_Enrichment | get | `/lookup/url/@{encodeURIComponent(if(or(startsWith(body('Parse_JSON_-_Url')?['url'], 'http://'), startsWith(body('Parse_JSON_-_Url')?['url'], 'https://')), body('Parse_JSON_-_Url')?['url'], concat('https://', body('Parse_JSON_-_Url')?['url'])))}` | — |
+| IP_Enrichment | get | `/lookup/ip/@{encodeURIComponent(body('Parse_JSON_-_Ip')?['address'])}` | — |
 
 </details>
 

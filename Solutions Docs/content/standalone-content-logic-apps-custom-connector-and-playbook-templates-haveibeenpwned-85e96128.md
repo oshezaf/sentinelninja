@@ -20,33 +20,42 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 10 |
-| `office365` | Managed | 1 | 1 |
-| `teams` | Managed | 1 | 0 |
-| `HaveIBeenPwnedConnector` | Custom | 1 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 10 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`HaveIBeenPwnedConnector`](../logic-apps/custom-haveibeenpwnedconnector.md) | Custom | 1 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_an_email_of_breach_information_to_user*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
-**`HaveIBeenPwnedConnector`** (customApi):
-- *Get_breached_site_information*: method=`get`, path=`/api/v3/breaches`
-- *Get_all_breaches_for_an_account*: method=`get`, path=`/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}`
-- *Get_all_breaches_for_an_account*: method=`get`, path=`/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}`
-- *Get_all_breaches_for_an_account*: method=`get`, path=`/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_of_breach_information_to_user | post | `/v2/Mail` | — |
+
+#### [`HaveIBeenPwnedConnector`](../logic-apps/custom-haveibeenpwnedconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_breached_site_information | get | `/api/v3/breaches` | — |
+| Get_all_breaches_for_an_account | get | `/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}` | — |
+| Get_all_breaches_for_an_account | get | `/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}` | — |
+| Get_all_breaches_for_an_account | get | `/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}` | — |
 
 </details>
 

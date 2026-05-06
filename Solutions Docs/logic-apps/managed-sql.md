@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/sql/](https://learn.microsoft.com/en-us/connectors/sql/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/sql/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Watchlist-SendSQLData-Watchlist](../content/standalone-content-watchlist-sendsqldata-watchlist-2903cb5f.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 0 |
+| [Watchlist-SendSQLData-Watchlist](../content/standalone-content-watchlist-sendsqldata-watchlist-2903cb5f.md) | 📄 Standalone | 1 | 0 |
 
 ---
 

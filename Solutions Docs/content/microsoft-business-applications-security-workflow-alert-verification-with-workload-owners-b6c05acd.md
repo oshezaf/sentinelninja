@@ -20,21 +20,27 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `azuresentinel_1` | Managed | 0 | 2 |
-| `office365` | Managed | 1 | 3 |
-| `teams` | Managed | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) | Managed | 0 | 2 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel_1`** (managedApi):
-- *Add_alert_to_incident*: method=`post`, path=`/Incidents/Relation/Create`
-- *Create_incident*: method=`put`, path=`/Incidents/subscriptions/@{triggerBody()?['workspaceInfo']?['SubscriptionId']}/resourceGroups/@{triggerBody()?['workspaceInfo']?['ResourceGroupName']}/workspaces/@{triggerBody()?['workspaceInfo']?['WorkspaceName']}`
+#### [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_an_email_escalation_due_to_timeout*: method=`post`, path=`/v2/SharedMailbox/Mail`
-- *Send_an_email_from_a_shared_mailbox_(V2)*: method=`post`, path=`/v2/SharedMailbox/Mail`
-- *Send_an_email_notification_of_failure*: method=`post`, path=`/v2/SharedMailbox/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_alert_to_incident | post | `/Incidents/Relation/Create` | — |
+| Create_incident | put | `/Incidents/subscriptions/@{triggerBody()?['workspaceInfo']?['SubscriptionId']}/resourceGroups/@{triggerBody()?['workspaceInfo']?['ResourceGroupName']}/workspaces/@{triggerBody()?['workspaceInfo']?['WorkspaceName']}` | — |
+
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_escalation_due_to_timeout | post | `/v2/SharedMailbox/Mail` | — |
+| Send_an_email_from_a_shared_mailbox_(V2) | post | `/v2/SharedMailbox/Mail` | — |
+| Send_an_email_notification_of_failure | post | `/v2/SharedMailbox/Mail` | — |
 
 </details>
 

@@ -29,18 +29,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
-| `azuremonitorlogs` | Managed | 1 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_-_IP*: method=`post`, path=`/api/logs`
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_-_IP*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_SourceInfo*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_IP | post | `/api/logs` | — |
+| Send_Data | post | `/api/logs` | — |
+
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_-_IP | post | `/queryData` | — |
+| Run_query_and_list_results_-_SourceInfo | post | `/queryData` | — |
 
 </details>
 

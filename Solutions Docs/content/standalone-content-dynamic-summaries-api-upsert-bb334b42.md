@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_PUT_to_Dynamic_Summaries_API*: method=`PUT`, uri=`[variables('DynamicSummariesAPIUri')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_PUT_to_Dynamic_Summaries_API | PUT | `[variables('DynamicSummariesAPIUri')]` | — |
 
 </details>
 

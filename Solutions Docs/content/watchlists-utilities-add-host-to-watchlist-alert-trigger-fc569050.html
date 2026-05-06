@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>microsoftsentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">7</td>
@@ -70,14 +70,17 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Watchlists_-_Add_a_new_watchlist_item_-_MDFC*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}/watchlistItem`
-- *Watchlists_-_Create_a_new_watchlist_with_data_-_MDFC*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}`
-- *Watchlists_-_Get_a_watchlist_by_alias_-_MDFC*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}`
-- *Watchlists_-_Add_a_new_watchlist_item*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}/watchlistItem`
-- *Watchlists_-_Create_a_new_watchlist_with_data*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}`
-- *Watchlists_-_Get_a_watchlist_by_alias*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Watchlists_-_Add_a_new_watchlist_item_-_MDFC | put | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}/watchlistItem` | — |
+| Watchlists_-_Create_a_new_watchlist_with_data_-_MDFC | put | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}` | — |
+| Watchlists_-_Get_a_watchlist_by_alias_-_MDFC | get | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}` | — |
+| Watchlists_-_Add_a_new_watchlist_item | put | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}/watchlistItem` | — |
+| Watchlists_-_Create_a_new_watchlist_with_data | put | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}` | — |
+| Watchlists_-_Get_a_watchlist_by_alias | get | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/watchlists/@{encodeURIComponent(variables('Watchlist alias'))}` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
 
 </details>
 

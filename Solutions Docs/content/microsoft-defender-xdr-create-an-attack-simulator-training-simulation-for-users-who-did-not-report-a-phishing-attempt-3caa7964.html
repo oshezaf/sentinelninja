@@ -58,13 +58,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -73,10 +73,13 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Get_Incident*: method=`GET`, uri=`https://graph.microsoft.com/beta/security/incidents/@{variables('DefenderIncidentID')}?$expand=alerts`
-- *Run_Hunting_Query_to_find_non_reporting_users*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/runHuntingQuery`
-- *Create_How_To_guide_Simulation_against_non_reporters*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/attackSimulation/simulations`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Incident | GET | `https://graph.microsoft.com/beta/security/incidents/@{variables('DefenderIncidentID')}?$expand=alerts` | — |
+| Run_Hunting_Query_to_find_non_reporting_users | POST | `https://graph.microsoft.com/beta/security/runHuntingQuery` | — |
+| Create_How_To_guide_Simulation_against_non_reporters | POST | `https://graph.microsoft.com/beta/security/attackSimulation/simulations` | — |
 
 </details>
 

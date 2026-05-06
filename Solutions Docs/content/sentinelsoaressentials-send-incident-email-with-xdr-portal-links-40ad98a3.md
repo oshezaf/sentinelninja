@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `office365` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`office365`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts` | — |
 
 </details>
 

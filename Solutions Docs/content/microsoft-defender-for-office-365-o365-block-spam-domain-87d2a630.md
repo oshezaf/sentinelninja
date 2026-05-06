@@ -20,26 +20,35 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `keyvault` | Managed | 0 | 1 |
-| `function` | Built-in | 0 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 0 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Certificate_key_name'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
-**`function`** (builtin):
-- *CreateSpamPolicy*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/CreateSpamPolicy')]`
-- *CreateSpamRule*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/CreateSpamRule')]`
-- *ConnectExchangeOnline*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/ConnectExchangeOnline')]`
-- *DisconnectExchangeOnline*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/DisconnectExchangeOnline')]`
-- *ListSpamPolicy*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/ListSpamPolicy')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('Certificate_key_name'))}/value` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CreateSpamPolicy | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/CreateSpamPolicy')]` |
+| CreateSpamRule | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/CreateSpamRule')]` |
+| ConnectExchangeOnline | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/ConnectExchangeOnline')]` |
+| DisconnectExchangeOnline | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/DisconnectExchangeOnline')]` |
+| ListSpamPolicy | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/ListSpamPolicy')]` |
 
 </details>
 

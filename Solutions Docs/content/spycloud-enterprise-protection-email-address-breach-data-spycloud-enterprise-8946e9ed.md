@@ -20,19 +20,25 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `spycloud-enterprise-connector` | Managed | 0 | 1 |
-| `SpyCloud-Enterprise-Protection` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) | Managed | 0 | 1 |
+| [`SpyCloud-Enterprise-Protection`](../logic-apps/custom-spycloud-enterprise-protection.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`spycloud-enterprise-connector`** (managedApi):
-- *Get_Breach_Data_by_Email_Search*: method=`get`, path=`/breach/data/emails/@{encodeURIComponent(variables('email_address'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Breach_Data_by_Email_Search | get | `/breach/data/emails/@{encodeURIComponent(variables('email_address'))}` | — |
 
 </details>
 

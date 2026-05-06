@@ -20,34 +20,49 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 2 |
-| `azureadip` | Managed | 1 | 1 |
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
-| `RFI-CustomConnector-0-2-0` | Custom | 1 | 5 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 2 |
+| [`azureadip`](../logic-apps/managed-azureadip.md) | Managed | 1 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`RFI-CustomConnector-0-2-0`](../logic-apps/custom-rfi-customconnector-0-2-0.md) | Custom | 1 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Add_risky_user_to_Active_Directory_security_group_for_users_at_risk*: method=`post`, path=`/v1.0/groups/@{encodeURIComponent(parameters('entra_id_security_group_id'))}/members/$ref`
-- *Get_User_-_Check_if_the_user_exists_in_Active_Directory*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(outputs('Compute_user_principal_name'))}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azureadip`** (managedApi):
-- *Confirm_a_risky_user_as_compromised*: method=`post`, path=`/beta/riskyUsers/confirmCompromised`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_risky_user_to_Active_Directory_security_group_for_users_at_risk | post | `/v1.0/groups/@{encodeURIComponent(parameters('entra_id_security_group_id'))}/members/$ref` | — |
+| Get_User_-_Check_if_the_user_exists_in_Active_Directory | get | `/v1.0/users/@{encodeURIComponent(outputs('Compute_user_principal_name'))}` | — |
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_-_Save_Playbook_alert_to_LogAnalytics_Custom_Log*: method=`post`, path=`/api/logs`
+#### [`azureadip`](../logic-apps/managed-azureadip.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Create_incident*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/workspaces/',parameters('sentinel_workspace_name') ) ]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Confirm_a_risky_user_as_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
 
-**`RFI-CustomConnector-0-2-0`** (customApi):
-- *Playbook_Alerts_-_Detailed_Identity_Novel_Exposures_alert_data*: method=`get`, path=`/playbook-alerts/@{encodeURIComponent(item()?['alert_id'])}`
-- *Playbook_Alerts_-_Update_Playbook_Alert_-_Incident_created*: method=`put`, path=`/playbook-alerts/update`
-- *Playbook_Alerts_-_Update_Playbook_Alert-_If_user_found*: method=`put`, path=`/playbook-alerts/update`
-- *Playbook_Alerts_-_Update_Playbook_Alert_-_If_user_not_found*: method=`put`, path=`/playbook-alerts/update`
-- *Playbook_Alerts_-_Search_for_novel_identity_exposures*: method=`post`, path=`/playbook-alerts/search`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_Save_Playbook_alert_to_LogAnalytics_Custom_Log | post | `/api/logs` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Create_incident | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/workspaces/',parameters('sentinel_workspace_name') ) ]` | — |
+
+#### [`RFI-CustomConnector-0-2-0`](../logic-apps/custom-rfi-customconnector-0-2-0.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Playbook_Alerts_-_Detailed_Identity_Novel_Exposures_alert_data | get | `/playbook-alerts/@{encodeURIComponent(item()?['alert_id'])}` | — |
+| Playbook_Alerts_-_Update_Playbook_Alert_-_Incident_created | put | `/playbook-alerts/update` | — |
+| Playbook_Alerts_-_Update_Playbook_Alert-_If_user_found | put | `/playbook-alerts/update` | — |
+| Playbook_Alerts_-_Update_Playbook_Alert_-_If_user_not_found | put | `/playbook-alerts/update` | — |
+| Playbook_Alerts_-_Search_for_novel_identity_exposures | post | `/playbook-alerts/search` | — |
 
 </details>
 

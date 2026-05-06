@@ -20,27 +20,39 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 1 |
-| `azureautomation` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 3 |
-| `office365` | Managed | 1 | 2 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 1 |
+| [`azureautomation`](../logic-apps/managed-azureautomation.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Disable_Account_on_Azure_AD*: method=`patch`, path=`/v1.0/users/@{encodeURIComponent(body('Parse_JSON')?['AadUserId'])}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azureautomation`** (managedApi):
-- *Create_job*: method=`put`, path=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('automationAccountRG'), '/providers/Microsoft.Automation/automationAccounts/', parameters('automationAccountName'), '/jobs')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Disable_Account_on_Azure_AD | patch | `/v1.0/users/@{encodeURIComponent(body('Parse_JSON')?['AadUserId'])}` | — |
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azureautomation`](../logic-apps/managed-azureautomation.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
-- *Send_an_email_(V2)_2*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_job | put | `[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('automationAccountRG'), '/providers/Microsoft.Automation/automationAccounts/', parameters('automationAccountName'), '/jobs')]` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+| Send_an_email_(V2)_2 | post | `/v2/Mail` | — |
 
 </details>
 

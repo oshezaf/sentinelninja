@@ -20,25 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `teams` | Managed | 1 | 0 |
-| `OktaCustomConnector` | Custom | 1 | 7 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`OktaCustomConnector`](../logic-apps/custom-oktacustomconnector.md) | Custom | 1 | 7 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_a_comment_to_the_incident_with_the_information_collected_and_action_taken*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_to_change_severity_and_status_according_to_choice*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`OktaCustomConnector`** (customApi):
-- *Get_User*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}`
-- *Group_–_Add_member*: method=`put`, path=`/api/v1/groups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['GroupId'])}/users/@{encodeURIComponent(body('Get_User')?['id'])}`
-- *Expire_Password*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/expire_password`
-- *Reset_Password*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password`
-- *Suspend_User*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/suspend`
-- *Unsuspend_User*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/unsuspend`
-- *List_Groups*: method=`get`, path=`/api/v1/groups`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_a_comment_to_the_incident_with_the_information_collected_and_action_taken | post | `/Incidents/Comment` | — |
+| Update_incident_to_change_severity_and_status_according_to_choice | put | `/Incidents` | — |
+
+#### [`OktaCustomConnector`](../logic-apps/custom-oktacustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_User | get | `/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}` | — |
+| Group_–_Add_member | put | `/api/v1/groups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['GroupId'])}/users/@{encodeURIComponent(body('Get_User')?['id'])}` | — |
+| Expire_Password | post | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/expire_password` | — |
+| Reset_Password | post | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password` | — |
+| Suspend_User | post | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/suspend` | — |
+| Unsuspend_User | post | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/unsuspend` | — |
+| List_Groups | get | `/api/v1/groups` | — |
 
 </details>
 

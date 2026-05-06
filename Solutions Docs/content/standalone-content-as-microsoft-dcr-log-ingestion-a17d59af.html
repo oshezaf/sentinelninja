@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">10</td>
@@ -70,21 +70,27 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Sending_App_Registration_Client_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SendingAppRegistrationKeyVaultSecretName'), ''')}/value')]`
-- *Get_Receiving_App_Registration_Client_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('ReceivingAppRegistrationKeyVaultSecretName'), ''')}/value')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Send_Data_to_Office_Activity_Logs_Data_Collection_Endpoint*: method=`POST`, uri=`[concat(parameters('OfficeActivityIngestionURL'), '/dataCollectionRules/', parameters('OfficeActivtyImmutableId'), '/streams/', parameters('OfficeActivtyDataSource'), '?api-version=2023-01-01')]`
-- *HTTP_-_Get_O365_Content*: method=`GET`, uri=`@{items('For_Each_-_O365_Audit_Logs')?['contentUri']}`
-- *HTTP_-_Send_Data_to_Entra_Audit_Log_Data_Collection_Endpoint*: method=`POST`, uri=`[concat(parameters('EntraAuditLogsIngestionURL'), '/dataCollectionRules/', parameters('EntraAuditLogsImmutableId'), '/streams/', parameters('EntraAuditLogsDataSource'), '?api-version=2023-01-01')]`
-- *HTTP_-_Send_Data_to_SignInLog_Data_Collection_Endpoint*: method=`POST`, uri=`[concat(parameters('EntraSignInLogsIngestionURL'), '/dataCollectionRules/', parameters('EntraSignInLogsImmutableId'), '/streams/', parameters('EntraSignInLogsDataSource'), '?api-version=2023-01-01')]`
-- *HTTP-_Authenticate_to_Entra_AuditLogs_Data_Collection_Endpoint*: method=`POST`, uri=`[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]`
-- *HTTP_-_Authenticate_to_OfficeActivityLogs_Data_Collection_Endpoint*: method=`POST`, uri=`[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]`
-- *HTTP_-_Authenticate_to_SignInLogs_Data_Collection_Endpoint*: method=`POST`, uri=`[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]`
-- *HTTP_-_Get_Entra_Audit_Logs*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?$filter=activityDateTime ge @{addMinutes(variables('UTCNow'), -5)}`
-- *HTTP_-_Get_Entra_SignIn_Logs*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/auditLogs/signIns?$filter=createdDateTime ge @{addMinutes(variables('UTCNow'), -5)}`
-- *HTTP_-_Get_O365_Audit_General_Logs*: method=`GET`, uri=`[concat('https://manage.office.com/api/v1.0/', parameters('SendingTenantSubscriptionID'),'/activity/feed/subscriptions/content?contentType=Audit.AzureActiveDirectory&PublisherIdentifier=Microsoft?&startTime=@{addMinutes(variables(''UTCNow''), -5)}&endTime=@{variables(''UTCNow'')}')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Sending_App_Registration_Client_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SendingAppRegistrationKeyVaultSecretName'), ''')}/value')]` | — |
+| Get_Receiving_App_Registration_Client_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('ReceivingAppRegistrationKeyVaultSecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Send_Data_to_Office_Activity_Logs_Data_Collection_Endpoint | POST | `[concat(parameters('OfficeActivityIngestionURL'), '/dataCollectionRules/', parameters('OfficeActivtyImmutableId'), '/streams/', parameters('OfficeActivtyDataSource'), '?api-version=2023-01-01')]` | — |
+| HTTP_-_Get_O365_Content | GET | `@{items('For_Each_-_O365_Audit_Logs')?['contentUri']}` | — |
+| HTTP_-_Send_Data_to_Entra_Audit_Log_Data_Collection_Endpoint | POST | `[concat(parameters('EntraAuditLogsIngestionURL'), '/dataCollectionRules/', parameters('EntraAuditLogsImmutableId'), '/streams/', parameters('EntraAuditLogsDataSource'), '?api-version=2023-01-01')]` | — |
+| HTTP_-_Send_Data_to_SignInLog_Data_Collection_Endpoint | POST | `[concat(parameters('EntraSignInLogsIngestionURL'), '/dataCollectionRules/', parameters('EntraSignInLogsImmutableId'), '/streams/', parameters('EntraSignInLogsDataSource'), '?api-version=2023-01-01')]` | — |
+| HTTP-_Authenticate_to_Entra_AuditLogs_Data_Collection_Endpoint | POST | `[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]` | — |
+| HTTP_-_Authenticate_to_OfficeActivityLogs_Data_Collection_Endpoint | POST | `[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]` | — |
+| HTTP_-_Authenticate_to_SignInLogs_Data_Collection_Endpoint | POST | `[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]` | — |
+| HTTP_-_Get_Entra_Audit_Logs | GET | `https://graph.microsoft.com/v1.0/auditLogs/directoryAudits?$filter=activityDateTime ge @{addMinutes(variables('UTCNow'), -5)}` | — |
+| HTTP_-_Get_Entra_SignIn_Logs | GET | `https://graph.microsoft.com/v1.0/auditLogs/signIns?$filter=createdDateTime ge @{addMinutes(variables('UTCNow'), -5)}` | — |
+| HTTP_-_Get_O365_Audit_General_Logs | GET | `[concat('https://manage.office.com/api/v1.0/', parameters('SendingTenantSubscriptionID'),'/activity/feed/subscriptions/content?contentType=Audit.AzureActiveDirectory&PublisherIdentifier=Microsoft?&startTime=@{addMinutes(variables(''UTCNow''), -5)}&endTime=@{variables(''UTCNow'')}')]` | — |
 
 </details>
 

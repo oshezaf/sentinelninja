@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `workflow` | Built-in | 0 | 3 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`workflow`** (builtin):
-- *Step_1_Call_IP_Enrichment*: workflowId=`[variables('IPEnrichmentPlaybookId')]`, triggerName=`manual`
-- *Step_2_Call_StorageVM_Enrichment*: workflowId=`[variables('StorageVMEnrichmentPlaybookId')]`, triggerName=`manual`
-- *Step_3_Call_Volume_Offline*: workflowId=`[variables('VolumeOfflinePlaybookId')]`, triggerName=`manual`
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Step_1_Call_IP_Enrichment | — | — | workflowId=`[variables('IPEnrichmentPlaybookId')]`<br>triggerName=`manual` |
+| Step_2_Call_StorageVM_Enrichment | — | — | workflowId=`[variables('StorageVMEnrichmentPlaybookId')]`<br>triggerName=`manual` |
+| Step_3_Call_Volume_Offline | — | — | workflowId=`[variables('VolumeOfflinePlaybookId')]`<br>triggerName=`manual` |
 
 </details>
 

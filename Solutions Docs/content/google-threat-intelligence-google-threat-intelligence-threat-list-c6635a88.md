@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `googlethreatintelligence` | Managed | 0 | 1 |
-| `GoogleThreatIntelligence-CustomConnector` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`googlethreatintelligence`](../logic-apps/managed-googlethreatintelligence.md) | Managed | 0 | 1 |
+| [`GoogleThreatIntelligence-CustomConnector`](../logic-apps/custom-googlethreatintelligence-customconnector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Threat_Intelligence_-_Upload_STIX_Objects_(Preview)*: method=`post`, path=`/ThreatIntelligence/@{encodeURIComponent('')}/UploadStixObjects/`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`googlethreatintelligence`** (managedApi):
-- *get_threat_list*: method=`get`, path=`/threat_lists/@{encodeURIComponent('ransomware')}/@{encodeURIComponent(convertTimeZone(utcNow(), 'UTC', 'Mid-Atlantic Standard Time','yyyyMMddHH'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Threat_Intelligence_-_Upload_STIX_Objects_(Preview) | post | `/ThreatIntelligence/@{encodeURIComponent('')}/UploadStixObjects/` | — |
+
+#### [`googlethreatintelligence`](../logic-apps/managed-googlethreatintelligence.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| get_threat_list | get | `/threat_lists/@{encodeURIComponent('ransomware')}/@{encodeURIComponent(convertTimeZone(utcNow(), 'UTC', 'Mid-Atlantic Standard Time','yyyyMMddHH'))}` | — |
 
 </details>
 

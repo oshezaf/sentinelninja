@@ -20,21 +20,27 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *Create_Automation_Shutdown_Document*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/CreateDocument')]`
-- *DeleteDocument*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/DeleteDocument')]`
-- *GetAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
-- *StartAutomationExecution*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]`
-- *GetAutomationExecution_again*: functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]`
-- *GetInventory*: functionId=`/subscriptions/4383ac89-7cd1-48c1-8061-b0b3c5ccfd97/resourceGroups/awssystemsmanager/providers/Microsoft.Web/sites/AWSSystemsManager/functions/GetInventory`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Automation_Shutdown_Document | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/CreateDocument')]` |
+| DeleteDocument | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/DeleteDocument')]` |
+| GetAutomationExecution | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]` |
+| StartAutomationExecution | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]` |
+| GetAutomationExecution_again | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]` |
+| GetInventory | — | — | functionId=`/subscriptions/4383ac89-7cd1-48c1-8061-b0b3c5ccfd97/resourceGroups/awssystemsmanager/providers/Microsoft.Web/sites/AWSSystemsManager/functions/GetInventory` |
 
 </details>
 

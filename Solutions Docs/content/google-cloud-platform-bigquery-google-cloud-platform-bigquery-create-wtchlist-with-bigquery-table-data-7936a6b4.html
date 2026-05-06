@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>GCPBigQueryCustomConnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-gcpbigquerycustomconnector.html"><code>GCPBigQueryCustomConnector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
@@ -70,13 +70,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Watchlists_-_Create_a_new_Watchlist_with_data_(Raw_Content)*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/workspaces/@{encodeURIComponent(triggerBody()?['workspaceId'])}/watchlists/@{encodeURIComponent(parameters('WatchlistName'))}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`GCPBigQueryCustomConnector`** (customApi):
-- *Get_Table_Data*: method=`get`, path=`/projects/@{encodeURIComponent(parameters('ProjectID'))}/datasets/@{encodeURIComponent(parameters('DatasetID'))}/tables/@{encodeURIComponent(parameters('TableID'))}/data`
-- *Get_Table_Details*: method=`get`, path=`/projects/@{encodeURIComponent(parameters('ProjectID'))}/datasets/@{encodeURIComponent(parameters('DatasetID'))}/tables/@{encodeURIComponent(parameters('TableID'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Watchlists_-_Create_a_new_Watchlist_with_data_(Raw_Content) | put | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/workspaces/@{encodeURIComponent(triggerBody()?['workspaceId'])}/watchlists/@{encodeURIComponent(parameters('WatchlistName'))}` | — |
+
+#### [`GCPBigQueryCustomConnector`](../logic-apps/custom-gcpbigquerycustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Table_Data | get | `/projects/@{encodeURIComponent(parameters('ProjectID'))}/datasets/@{encodeURIComponent(parameters('DatasetID'))}/tables/@{encodeURIComponent(parameters('TableID'))}/data` | — |
+| Get_Table_Details | get | `/projects/@{encodeURIComponent(parameters('ProjectID'))}/datasets/@{encodeURIComponent(parameters('DatasetID'))}/tables/@{encodeURIComponent(parameters('TableID'))}` | — |
 
 </details>
 

@@ -20,24 +20,33 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `SlashNext` | Custom | 1 | 1 |
-| `function` | Built-in | 0 | 2 |
-| `http` | Built-in | 0 | 4 |
+| [`SlashNext`](../logic-apps/custom-slashnext.md) | Custom | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`SlashNext`** (customApi):
-- *Repute*: method=`post`, path=`/api/v1/urls/repute`
+#### [`SlashNext`](../logic-apps/custom-slashnext.md) (Custom)
 
-**`function`** (builtin):
-- *Extract_List_of_URLs*: functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]`
-- *Generate_URL_Mapping*: functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Repute | post | `/api/v1/urls/repute` | — |
 
-**`http`** (builtin):
-- *Query_for_table_names*: method=`POST`, uri=`@variables('Query API')`
-- *Query_data_from_each_table*: method=`POST`, uri=`@variables('Query API')`
-- *Add_Comment_in_Existing_Incident*: method=`PUT`, uri=`[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Incident_Creating_Loop')['hash']}/comments/@{guid()}?api-version=2021-10-01'))]`
-- *Insert_Incident*: method=`PUT`, uri=`[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{body('Parse_URL_Mapping')?['hash']}?api-version=2021-10-01-preview'))]`
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Extract_List_of_URLs | — | — | functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]` |
+| Generate_URL_Mapping | — | — | functionId=`[concat('/subscriptions/',subscription().subscriptionId, '/resourceGroups/', resourceGroup().name,'/providers/Microsoft.Web/sites/',variables('azureFunction'),'/functions/processlogs')]` |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Query_for_table_names | POST | `@variables('Query API')` | — |
+| Query_data_from_each_table | POST | `@variables('Query API')` | — |
+| Add_Comment_in_Existing_Incident | PUT | `[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Incident_Creating_Loop')['hash']}/comments/@{guid()}?api-version=2021-10-01'))]` | — |
+| Insert_Incident | PUT | `[uriComponentToString(uri(variables('domain'),'subscriptions/@{variables('subscription_id')}/resourceGroups/@{variables('resource_group')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{body('Parse_URL_Mapping')?['hash']}?api-version=2021-10-01-preview'))]` | — |
 
 </details>
 

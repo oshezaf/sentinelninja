@@ -20,12 +20,15 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `function` | Built-in | 0 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`function`** (builtin):
-- *Call_Function_App*: method=`POST`, functionId=`[concat(variables('functionAppId'), '/functions/TacitRedToDefenderTI')]`
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Call_Function_App | POST | — | functionId=`[concat(variables('functionAppId'), '/functions/TacitRedToDefenderTI')]` |
 
 </details>
 

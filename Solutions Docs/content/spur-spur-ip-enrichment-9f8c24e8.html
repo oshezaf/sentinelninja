@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>spurconnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-spurconnector.html"><code>spurconnector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Spur-Context-Connector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-spur-context-connector.html"><code>Spur-Context-Connector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -82,17 +82,26 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`spurconnector`** (managedApi):
-- *Get_IP_Context*: method=`get`, path=`/v2/context/@{encodeURIComponent(body('Parse_IP_Entity_')?['address'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
 
-**`http`** (builtin):
-- *GetAccessTokenSpur*: method=`POST`, uri=`@variables('access_token_url')`
-- *HTTP_-_Save_to_Custom_Table*: method=`POST`, uri=`@concat(parameters('DCE_Endpoint_URL'),'/dataCollectionRules/',parameters('DCR_Immutable_ID'),'/streams/Custom-','Spur_IP_Context_Details_CL','?api-version=2023-01-01')`
+#### [`spurconnector`](../logic-apps/managed-spurconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_IP_Context | get | `/v2/context/@{encodeURIComponent(body('Parse_IP_Entity_')?['address'])}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GetAccessTokenSpur | POST | `@variables('access_token_url')` | — |
+| HTTP_-_Save_to_Custom_Table | POST | `@concat(parameters('DCE_Endpoint_URL'),'/dataCollectionRules/',parameters('DCR_Immutable_ID'),'/streams/Custom-','Spur_IP_Context_Details_CL','?api-version=2023-01-01')` | — |
 
 </details>
 

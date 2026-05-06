@@ -9,16 +9,16 @@
 | **Type** | Managed |
 | **Playbooks using** | 4 |
 | **Solutions** | 2 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/eventhubs/](https://learn.microsoft.com/en-us/connectors/eventhubs/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/eventhubs/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [Get Sentinel Alerts Evidence - incident trigger](../content/standalone-content-get-sentinel-alerts-evidence-incident-trigger-a3ba2e8b.md) | 📄 Standalone | 1 | 1 |
+| [Get-SentinelAlertsEvidence](../content/standalone-content-get-sentinelalertsevidence-905ed402.md) | 📄 Standalone | 1 | 1 |
+| [IncidentUpdate-GetSentinelAlertsEvidence](../content/standalone-content-incidentupdate-getsentinelalertsevidence-8798cbda.md) | 📄 Standalone | 1 | 0 |
 | [Send-Sentinel-Alerts-to-Salem](../content/salemcyber-send-sentinel-alerts-to-salem-be5bcfdf.md) | [SalemCyber](../solutions/salemcyber.md) | 1 | 1 |
-| [Get Sentinel Alerts Evidence - incident trigger](../content/standalone-content-get-sentinel-alerts-evidence-incident-trigger-a3ba2e8b.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
-| [Get-SentinelAlertsEvidence](../content/standalone-content-get-sentinelalertsevidence-905ed402.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
-| [IncidentUpdate-GetSentinelAlertsEvidence](../content/standalone-content-incidentupdate-getsentinelalertsevidence-8798cbda.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 0 |
 
 ---
 

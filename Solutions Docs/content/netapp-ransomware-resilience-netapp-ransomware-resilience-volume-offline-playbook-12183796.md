@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Call_Auth_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]`
-- *Submit_Volume_Offline*: method=`POST`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/storage/take-volume-offline`
-- *Call_Async_Poll_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAsyncPollPlaybookName'), 'manual'), '2019-05-01').value]`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Call_Auth_Playbook | POST | `[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]` | — |
+| Submit_Volume_Offline | POST | `https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/storage/take-volume-offline` | — |
+| Call_Async_Poll_Playbook | POST | `[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAsyncPollPlaybookName'), 'manual'), '2019-05-01').value]` | — |
 
 </details>
 

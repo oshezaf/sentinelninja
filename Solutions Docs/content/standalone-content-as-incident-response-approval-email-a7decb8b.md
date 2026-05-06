@@ -20,23 +20,32 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `keyvault` | Managed | 1 | 1 |
-| `office365` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Update_incident_-_Close_as_benign_positive*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)_-_Indicate_true_positive*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Update_incident_-_Close_as_benign_positive | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3)_-_Indicate_true_positive | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_User_Manager*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/users/@{items('For_each_-_User_account')?['AadUserId']}/manager`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_User_Manager | GET | `https://graph.microsoft.com/v1.0/users/@{items('For_each_-_User_account')?['AadUserId']}/manager` | — |
 
 </details>
 

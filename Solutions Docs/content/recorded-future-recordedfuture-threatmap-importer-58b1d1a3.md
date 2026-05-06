@@ -28,17 +28,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `recordedfuturecustomconnector` | Managed | 0 | 1 |
-| `RecordedFuture-CustomConnector` | Custom | 1 | 0 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`recordedfuturecustomconnector`](../logic-apps/managed-recordedfuturecustomconnector.md) | Managed | 0 | 1 |
+| [`RecordedFuture-CustomConnector`](../logic-apps/custom-recordedfuture-customconnector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_-_Save_full_ThreatMap_response*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`recordedfuturecustomconnector`** (managedApi):
-- *Fetch_Threat_Map_actors*: method=`post`, path=`/threat/map/actors`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_Save_full_ThreatMap_response | post | `/api/logs` | — |
+
+#### [`recordedfuturecustomconnector`](../logic-apps/managed-recordedfuturecustomconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_Threat_Map_actors | post | `/threat/map/actors` | — |
 
 </details>
 

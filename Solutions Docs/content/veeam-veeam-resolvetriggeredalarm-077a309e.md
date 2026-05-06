@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `function` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_success_comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_failure_comment*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *ResolveTriggeredAlarm*: functionId=`[concat(variables('functionAppId'), '/functions/ResolveTriggeredAlarmAsync')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_success_comment | post | `/Incidents/Comment` | — |
+| Add_failure_comment | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| ResolveTriggeredAlarm | — | — | functionId=`[concat(variables('functionAppId'), '/functions/ResolveTriggeredAlarmAsync')]` |
 
 </details>
 

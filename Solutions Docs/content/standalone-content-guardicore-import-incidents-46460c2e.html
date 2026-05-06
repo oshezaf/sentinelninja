@@ -75,13 +75,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -90,13 +90,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`http`** (builtin):
-- *Send_authorization_callout*: method=`POST`, uri=`[concat('', parameters('GCURL'), '/api/v3.0/authenticate')]`
-- *Send_get_incidents_callout*: method=`GET`, uri=`[concat('', parameters('GCURL'), '/api/v3.0/incidents?tags__not=sentinel')]`
-- *Send_update_incident_callout_to_Guardicore*: method=`PUT`, uri=`[concat('', parameters('GCURL'), '/api/v3.0/incidents/@{items(''For_each_Guardicore_incident'')?[''_Id'']}?action=add_user_tag')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_authorization_callout | POST | `[concat('', parameters('GCURL'), '/api/v3.0/authenticate')]` | — |
+| Send_get_incidents_callout | GET | `[concat('', parameters('GCURL'), '/api/v3.0/incidents?tags__not=sentinel')]` | — |
+| Send_update_incident_callout_to_Guardicore | PUT | `[concat('', parameters('GCURL'), '/api/v3.0/incidents/@{items(''For_each_Guardicore_incident'')?[''_Id'']}?action=add_user_tag')]` | — |
 
 </details>
 

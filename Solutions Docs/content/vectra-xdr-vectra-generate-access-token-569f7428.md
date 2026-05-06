@@ -20,22 +20,28 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 5 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Refresh_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Refresh-Token')}/value`
-- *Get_Vectra_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Client-ID')}/value`
-- *Get_Vectra_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Client-Secret')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Request_To_Update_Access_Token_In_Key_Vault_Via_Refresh_Token*: method=`PUT`, uri=`@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('access_token_secret_name'),'?api-version=7.4')}`
-- *HTTP_Request_To_Generate_Access_Token_Via_Refresh_Token*: method=`POST`, uri=`@{variables('base_url')}/oauth2/token`
-- *HTTP_Request_To_Update_Access_Token_In_Key_Vault*: method=`PUT`, uri=`@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('access_token_secret_name'),'?api-version=7.4')}`
-- *HTTP_Request_To_Update_Refresh_Token_in_Key_Vault*: method=`PUT`, uri=`@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('refresh_token_secret_name'),'?api-version=7.4')}`
-- *HTTP_Request_To_Generate_Access_Token*: method=`POST`, uri=`@{variables('base_url')}/oauth2/token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Refresh_Token | get | `/secrets/@{encodeURIComponent('Vectra-Refresh-Token')}/value` | — |
+| Get_Vectra_Client_ID | get | `/secrets/@{encodeURIComponent('Vectra-Client-ID')}/value` | — |
+| Get_Vectra_Client_Secret | get | `/secrets/@{encodeURIComponent('Vectra-Client-Secret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Update_Access_Token_In_Key_Vault_Via_Refresh_Token | PUT | `@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('access_token_secret_name'),'?api-version=7.4')}` | — |
+| HTTP_Request_To_Generate_Access_Token_Via_Refresh_Token | POST | `@{variables('base_url')}/oauth2/token` | — |
+| HTTP_Request_To_Update_Access_Token_In_Key_Vault | PUT | `@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('access_token_secret_name'),'?api-version=7.4')}` | — |
+| HTTP_Request_To_Update_Refresh_Token_in_Key_Vault | PUT | `@{concat('https://',variables('key_vault_name'),'.',parameters('azure key vault'),'.net/secrets/',variables('refresh_token_secret_name'),'?api-version=7.4')}` | — |
+| HTTP_Request_To_Generate_Access_Token | POST | `@{variables('base_url')}/oauth2/token` | — |
 
 </details>
 

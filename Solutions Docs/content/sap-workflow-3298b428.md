@@ -22,32 +22,41 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 0 | 4 |
-| `teams` | Managed | 0 | 10 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 0 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 0 | 10 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(true_positive)*: method=`post`, path=`/Incidents/Comment`
-- *Close_Sentinel_incident*: method=`put`, path=`/Incidents`
-- *Add_false-positive_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Flag_false_positive*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`teams`** (managedApi):
-- *Reply_with_a_message_in_a_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_with_a_message_in_a_channel_2*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Notify_impacted_colleague_working_with_SAP*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}`
-- *Reply_with_SAP_lock_message_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_with_true_positive_success*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_to_Admins_with_lock_error_in_Channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_with_false_positive_success*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_timeout_message_in_Channel*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_parsing_error_message_to_Logic_App_admin*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}`
-- *Post_processing_error_message_to_Logic_App_admin*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(true_positive) | post | `/Incidents/Comment` | — |
+| Close_Sentinel_incident | put | `/Incidents` | — |
+| Add_false-positive_comment_to_incident | post | `/Incidents/Comment` | — |
+| Flag_false_positive | put | `/Incidents` | — |
 
-**`http`** (builtin):
-- *Block_User_via_SOAP_exposed_BAPI*: method=`POST`, uri=`@{parameters('SOAPApiBasePath')}/sap-com:document:sap:rfc:functions:ZWS_BAPI_USER_LOCK:BAPI_USER_LOCKRequest?sap-client=@{variables('sap-client-id')}`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Reply_with_a_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_with_a_message_in_a_channel_2 | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Notify_impacted_colleague_working_with_SAP | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
+| Reply_with_SAP_lock_message_in_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_with_true_positive_success | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_to_Admins_with_lock_error_in_Channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_with_false_positive_success | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_timeout_message_in_Channel | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_parsing_error_message_to_Logic_App_admin | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
+| Post_processing_error_message_to_Logic_App_admin | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Block_User_via_SOAP_exposed_BAPI | POST | `@{parameters('SOAPApiBasePath')}/sap-com:document:sap:rfc:functions:ZWS_BAPI_USER_LOCK:BAPI_USER_LOCKRequest?sap-client=@{variables('sap-client-id')}` | — |
 
 </details>
 

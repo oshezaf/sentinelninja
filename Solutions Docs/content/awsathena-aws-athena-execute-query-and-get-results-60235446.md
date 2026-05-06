@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *GetQueryResults*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryResults')]`
-- *GetQueryExecution*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryExecution')]`
-- *StartQueryExecution*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/StartQueryExecution')]`
-- *GetQueryExecution_again*: method=`POST`, functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryExecution')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GetQueryResults | POST | — | functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryResults')]` |
+| GetQueryExecution | POST | — | functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryExecution')]` |
+| StartQueryExecution | POST | — | functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/StartQueryExecution')]` |
+| GetQueryExecution_again | POST | — | functionId=`[concat(variables('AWSAthenaFuntionAppId'), '/functions/GetQueryExecution')]` |
 
 </details>
 

@@ -55,31 +55,31 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuremonitorlogs</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>outlook</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-outlook.html"><code>outlook</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -88,35 +88,50 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Top_Fingerprints_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Open_Ports_Section_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Top_Pdns_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_Whois_Data_To_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
-- *Send_Insights_Data_To_Log_Analytics_Table*: method=`post`, path=`/api/logs`
-- *Send_IP_Indicator_To_Live_Investigation_Indicators_Table*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_Query_and_List_Results_for_Top_PDNS*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Top_Open_Ports*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Top_Fingerprints*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Whois*: method=`post`, path=`/queryData`
-- *Run_Query_And_List_Insights_Data_And_Country_Code_For_Indicator*: method=`post`, path=`/queryData`
-- *Run_Query_And_Check_Whether_This_is_First_Execution_Or_Not*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Top_Fingerprints_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Open_Ports_Section_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Top_Pdns_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_Whois_Data_To_Log_Analytics_Workspace | post | `/api/logs` | — |
+| Send_Insights_Data_To_Log_Analytics_Table | post | `/api/logs` | — |
+| Send_IP_Indicator_To_Live_Investigation_Indicators_Table | post | `/api/logs` | — |
 
-**`azuresentinel`** (managedApi):
-- *Add_IP_Data_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_Limit_Has_Been_Exceeded_To_100_For_Incident_*: method=`post`, path=`/Incidents/Comment`
-- *Add_Domain_Data_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_Limit_Has_Been_Exceeded_For_Incident*: method=`post`, path=`/Incidents/Comment`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`outlook`** (managedApi):
-- *Send_An_Email_For_IP*: method=`post`, path=`/v2/Mail`
-- *Send_An_Email_For_Domain*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Query_and_List_Results_for_Top_PDNS | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Top_Open_Ports | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Top_Fingerprints | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Whois | post | `/queryData` | — |
+| Run_Query_And_List_Insights_Data_And_Country_Code_For_Indicator | post | `/queryData` | — |
+| Run_Query_And_Check_Whether_This_is_First_Execution_Or_Not | post | `/queryData` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Details_Of_IP_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/ip/@{items('For_Each_IP_Address')}/details`
-- *HTTP_Request_To_Fetch_Details_Of_Domain_Indicator*: method=`GET`, uri=`@{variables('base_url')}/api/scout/search`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_IP_Data_Into_Incident_Comment | post | `/Incidents/Comment` | — |
+| Add_Comment_Limit_Has_Been_Exceeded_To_100_For_Incident_ | post | `/Incidents/Comment` | — |
+| Add_Domain_Data_Into_Incident_Comment | post | `/Incidents/Comment` | — |
+| Add_Comment_Limit_Has_Been_Exceeded_For_Incident | post | `/Incidents/Comment` | — |
+
+#### [`outlook`](../logic-apps/managed-outlook.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_An_Email_For_IP | post | `/v2/Mail` | — |
+| Send_An_Email_For_Domain | post | `/v2/Mail` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Details_Of_IP_Indicator | GET | `@{variables('base_url')}/api/scout/ip/@{items('For_Each_IP_Address')}/details` | — |
+| HTTP_Request_To_Fetch_Details_Of_Domain_Indicator | GET | `@{variables('base_url')}/api/scout/search` | — |
 
 </details>
 

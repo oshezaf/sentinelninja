@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `OktaCustomConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`OktaCustomConnector`](../logic-apps/custom-oktacustomconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_a_comment_to_the_incident_with_the_information_collected*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`OktaCustomConnector`** (customApi):
-- *Get_User*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}`
-- *Get_User_Groups*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}/groups`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_a_comment_to_the_incident_with_the_information_collected | post | `/Incidents/Comment` | — |
+
+#### [`OktaCustomConnector`](../logic-apps/custom-oktacustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_User | get | `/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}` | — |
+| Get_User_Groups | get | `/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}/groups` | — |
 
 </details>
 

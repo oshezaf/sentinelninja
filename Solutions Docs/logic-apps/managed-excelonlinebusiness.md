@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 0 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/excelonlinebusiness/](https://learn.microsoft.com/en-us/connectors/excelonlinebusiness/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/excelonlinebusiness/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| TritonPlayook | - | 1 | 2 |
+| [TritonPlayook](../content/github-only-tritonplayook-82d64ec7.md) | 🔗 GitHub Only | 1 | 2 |
 
 ---
 

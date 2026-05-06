@@ -22,33 +22,42 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `teams` | Managed | 1 | 9 |
-| `http` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 9 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_no_SAP_alert*: method=`post`, path=`/Incidents/Comment`
-- *Close_Sentinel_incident*: method=`put`, path=`/Incidents`
-- *Close_incident_false_positive*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`teams`** (managedApi):
-- *Reply_success_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_unblock_success_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_unblock_error_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_error_in_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_AAD_placeholder*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_BTP_placeholder*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_timeout_message*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Notify_admin_on_extraction_error*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}`
-- *Notify_admin_on_processing_error*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_no_SAP_alert | post | `/Incidents/Comment` | — |
+| Close_Sentinel_incident | put | `/Incidents` | — |
+| Close_incident_false_positive | put | `/Incidents` | — |
 
-**`http`** (builtin):
-- *Get_OAuth_token_for_SAP*: method=`POST`, uri=`@{parameters('SAPOAuthTokenEndpoint')}`
-- *Block_User_via_SAP*: method=`POST`, uri=`@{variables('AgentGuid')}/http/community/sentinel/sap-user-block`
-- *Get_OAuth_token_for_SAP_unblock*: method=`POST`, uri=`@{parameters('SAPOAuthTokenEndpoint')}`
-- *Unblock_User_via_SAP*: method=`POST`, uri=`@{variables('AgentGuid')}/http/community/sentinel/sap-user-block`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Reply_success_in_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_unblock_success_in_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_unblock_error_in_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_error_in_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_AAD_placeholder | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_BTP_placeholder | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_timeout_message | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Notify_admin_on_extraction_error | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
+| Notify_admin_on_processing_error | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_OAuth_token_for_SAP | POST | `@{parameters('SAPOAuthTokenEndpoint')}` | — |
+| Block_User_via_SAP | POST | `@{variables('AgentGuid')}/http/community/sentinel/sap-user-block` | — |
+| Get_OAuth_token_for_SAP_unblock | POST | `@{parameters('SAPOAuthTokenEndpoint')}` | — |
+| Unblock_User_via_SAP | POST | `@{variables('AgentGuid')}/http/community/sentinel/sap-user-block` | — |
 
 </details>
 

@@ -20,29 +20,41 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `teams` | Managed | 1 | 2 |
-| `virustotal` | Managed | 1 | 1 |
-| `AzureFirewallConnector` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 2 |
+| [`virustotal`](../logic-apps/managed-virustotal.md) | Managed | 1 | 1 |
+| [`AzureFirewallConnector`](../logic-apps/custom-azurefirewallconnector.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_with_the_Virus_Total_report_and_the_action_taken_*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`teams`** (managedApi):
-- *Post_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/@{encodeURIComponent('User')}/location/@{encodeURIComponent('Channel')}`
-- *Post_deny_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/@{encodeURIComponent('User')}/location/@{encodeURIComponent('Channel')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_with_the_Virus_Total_report_and_the_action_taken_ | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`virustotal`** (managedApi):
-- *Get_an_IP_report*: method=`get`, path=`/api/v3/ip_addresses/connectorV2/@{encodeURIComponent(triggerBody()?['Entity']?['properties']?['Address'])}`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
 
-**`AzureFirewallConnector`** (customApi):
-- *Creates_or_updates_an_ipGroups_in_a_specified_resource_group*: method=`put`, path=`/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}`
-- *Gets_the_specified_ipGroups*: method=`get`, path=`/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}`
-- *Gets_all_IpGroups_in_a_resource_group*: method=`get`, path=`/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/providers/Microsoft.Network/ipGroups`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_message_in_a_chat_or_channel | post | `/beta/teams/conversation/message/poster/@{encodeURIComponent('User')}/location/@{encodeURIComponent('Channel')}` | — |
+| Post_deny_message_in_a_chat_or_channel | post | `/beta/teams/conversation/message/poster/@{encodeURIComponent('User')}/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`virustotal`](../logic-apps/managed-virustotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_an_IP_report | get | `/api/v3/ip_addresses/connectorV2/@{encodeURIComponent(triggerBody()?['Entity']?['properties']?['Address'])}` | — |
+
+#### [`AzureFirewallConnector`](../logic-apps/custom-azurefirewallconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Creates_or_updates_an_ipGroups_in_a_specified_resource_group | put | `/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}` | — |
+| Gets_the_specified_ipGroups | get | `/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}` | — |
+| Gets_all_IpGroups_in_a_resource_group | get | `/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/providers/Microsoft.Network/ipGroups` | — |
 
 </details>
 

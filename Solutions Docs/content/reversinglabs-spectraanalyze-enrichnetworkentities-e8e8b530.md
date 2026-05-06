@@ -20,23 +20,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 6 |
-| `reversinglabsa1000` | Managed | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 6 |
+| [`reversinglabsa1000`](../logic-apps/managed-reversinglabsa1000.md) | Managed | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_1*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`reversinglabsa1000`** (managedApi):
-- *Retrieve_information_for_a_URL_1*: method=`get`, path=`/api/network-threat-intel/url/`
-- *Retrieve_information_for_a_domain_1*: method=`get`, path=`/api/network-threat-intel/domain/@{encodeURIComponent(item()?['DomainName'])}/`
-- *Retrieve_information_for_an_IP_address_1*: method=`get`, path=`/api/network-threat-intel/ip/@{encodeURIComponent(item()?['Address'])}/report/`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_1 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`reversinglabsa1000`](../logic-apps/managed-reversinglabsa1000.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Retrieve_information_for_a_URL_1 | get | `/api/network-threat-intel/url/` | — |
+| Retrieve_information_for_a_domain_1 | get | `/api/network-threat-intel/domain/@{encodeURIComponent(item()?['DomainName'])}/` | — |
+| Retrieve_information_for_an_IP_address_1 | get | `/api/network-threat-intel/ip/@{encodeURIComponent(item()?['Address'])}/report/` | — |
 
 </details>
 

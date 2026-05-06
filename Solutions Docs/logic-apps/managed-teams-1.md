@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Ingestion Cost Alert Playbook](../content/standalone-content-ingestion-cost-alert-playbook-e92ea9a8.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
+| [Ingestion Cost Alert Playbook](../content/standalone-content-ingestion-cost-alert-playbook-e92ea9a8.md) | 📄 Standalone | 0 | 1 |
 
 ---
 

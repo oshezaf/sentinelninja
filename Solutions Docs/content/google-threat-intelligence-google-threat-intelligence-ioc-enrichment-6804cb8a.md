@@ -20,25 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 6 |
-| `googlethreatintelligence` | Managed | 0 | 4 |
-| `GoogleThreatIntelligence-CustomConnector` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 6 |
+| [`googlethreatintelligence`](../logic-apps/managed-googlethreatintelligence.md) | Managed | 0 | 4 |
+| [`GoogleThreatIntelligence-CustomConnector`](../logic-apps/custom-googlethreatintelligence-customconnector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`googlethreatintelligence`** (managedApi):
-- *Get_IP_Report*: method=`get`, path=`/ip_addresses/@{encodeURIComponent(item()?['Address'])}`
-- *Get_File_Report*: method=`get`, path=`/files/@{encodeURIComponent(item()?['Value'])}`
-- *Get_URL_Report*: method=`get`, path=`/urls/@{encodeURIComponent(replace(base64(item()?['Url']),'=',''))}`
-- *Get_Domain_Report*: method=`get`, path=`/domains/@{encodeURIComponent(item()?['DomainName'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`googlethreatintelligence`](../logic-apps/managed-googlethreatintelligence.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_IP_Report | get | `/ip_addresses/@{encodeURIComponent(item()?['Address'])}` | — |
+| Get_File_Report | get | `/files/@{encodeURIComponent(item()?['Value'])}` | — |
+| Get_URL_Report | get | `/urls/@{encodeURIComponent(replace(base64(item()?['Url']),'=',''))}` | — |
+| Get_Domain_Report | get | `/domains/@{encodeURIComponent(item()?['DomainName'])}` | — |
 
 </details>
 

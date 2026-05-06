@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 0 | 2 |
-| `http` | Built-in | 0 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 0 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_secret_-_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent(variables('ClientID'))}/value`
-- *Get_secret_-_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(variables('ClientSecret'))}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Get_Access_Token*: method=`POST`, uri=`@{variables('FalconHost')}/oauth2/token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret_-_Client_ID | get | `/secrets/@{encodeURIComponent(variables('ClientID'))}/value` | — |
+| Get_secret_-_Client_Secret | get | `/secrets/@{encodeURIComponent(variables('ClientSecret'))}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Access_Token | POST | `@{variables('FalconHost')}/oauth2/token` | — |
 
 </details>
 

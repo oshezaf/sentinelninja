@@ -20,20 +20,29 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Lookup_URL*: method=`POST`, uri=`https://api.zsapi.net/zia/api/v1/urlLookup`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
 
-**`workflow`** (builtin):
-- *zscaler*: workflowId=`[variables('ZscalerAuthenticationFlow')]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Lookup_URL | POST | `https://api.zsapi.net/zia/api/v1/urlLookup` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| zscaler | — | — | workflowId=`[variables('ZscalerAuthenticationFlow')]`<br>triggerName=`manual` |
 
 </details>
 

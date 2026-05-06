@@ -20,34 +20,43 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 6 |
-| `cisco-firepower-connector` | Managed | 0 | 9 |
-| `teams` | Managed | 1 | 0 |
-| `CiscoFirepowerConnector` | Custom | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 6 |
+| [`cisco-firepower-connector`](../logic-apps/managed-cisco-firepower-connector.md) | Managed | 0 | 9 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`CiscoFirepowerConnector`](../logic-apps/custom-ciscofirepowerconnector.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3):_No_IPs_found*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3):_Network_Group_object_not_found*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3):_Network_Group_object_not_found_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`cisco-firepower-connector`** (managedApi):
-- *Revoke_access:_Network_Group_object_not_found*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
-- *Generate_token*: method=`post`, path=`/api/fmc_platform/v1/auth/generatetoken`
-- *Generate_token_2*: method=`post`, path=`/api/fmc_platform/v1/auth/generatetoken`
-- *Modifies_the_network_group_object_associated_with_the_specified_ID*: method=`put`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(body('Retrieves_the_network_group_object_associated_with_the_specified_ID_2')?['id'])}`
-- *Retrieves_the_network_group_object_associated_with_the_specified_ID_2*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}`
-- *Revoke_access_2*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
-- *Retrieves_list_of_all_network_group_objects*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups`
-- *Retrieves_the_network_group_object_associated_with_the_specified_ID*: method=`get`, path=`/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}`
-- *Revoke_access*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3):_No_IPs_found | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3):_Network_Group_object_not_found | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3):_Network_Group_object_not_found_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
 
-**`CiscoFirepowerConnector`** (customApi):
-- *Revoke_access:_Network_Group_object_not_found_2*: method=`post`, path=`/api/fmc_platform/v1/auth/revokeaccess`
+#### [`cisco-firepower-connector`](../logic-apps/managed-cisco-firepower-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Revoke_access:_Network_Group_object_not_found | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
+| Generate_token | post | `/api/fmc_platform/v1/auth/generatetoken` | — |
+| Generate_token_2 | post | `/api/fmc_platform/v1/auth/generatetoken` | — |
+| Modifies_the_network_group_object_associated_with_the_specified_ID | put | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(body('Retrieves_the_network_group_object_associated_with_the_specified_ID_2')?['id'])}` | — |
+| Retrieves_the_network_group_object_associated_with_the_specified_ID_2 | get | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}` | — |
+| Revoke_access_2 | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
+| Retrieves_list_of_all_network_group_objects | get | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups` | — |
+| Retrieves_the_network_group_object_associated_with_the_specified_ID | get | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}` | — |
+| Revoke_access | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
+
+#### [`CiscoFirepowerConnector`](../logic-apps/custom-ciscofirepowerconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Revoke_access:_Network_Group_object_not_found_2 | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
 
 </details>
 

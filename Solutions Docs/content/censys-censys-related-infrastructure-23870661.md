@@ -28,22 +28,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 3 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Related_Infrastructure_to_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Censys_API_Key*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Related_Infrastructure_to_Log_Analytics_Workspace | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_Post_Request_To_Create_Pivot_Analysis_Job*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}`
-- *HTTP_Call_to_Fetch_Job_Status*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}/@{variables('job_id')}`
-- *HTTP_Call_to_Fetch_Job_result_data*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}/@{variables('job_id')}/results`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Censys_API_Key | get | `/secrets/@{encodeURIComponent('Censys-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Post_Request_To_Create_Pivot_Analysis_Job | POST | `@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}` | — |
+| HTTP_Call_to_Fetch_Job_Status | GET | `@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}/@{variables('job_id')}` | — |
+| HTTP_Call_to_Fetch_Job_result_data | GET | `@{variables('base_url')}/@{variables('api_version')}/@{variables('pivot_analysis_job_endpoint')}/@{variables('job_id')}/results` | — |
 
 </details>
 

@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)-1*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)-2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Alert_and_Block_Sha1*: method=`POST`, uri=`https://api.securitycenter.windows.com/api/indicators`
-- *HTTP_Alert_and_Block_Sha256*: method=`POST`, uri=`https://api.securitycenter.windows.com/api/indicators`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)-1 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)-2 | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Alert_and_Block_Sha1 | POST | `https://api.securitycenter.windows.com/api/indicators` | — |
+| HTTP_Alert_and_Block_Sha256 | POST | `https://api.securitycenter.windows.com/api/indicators` | — |
 
 </details>
 

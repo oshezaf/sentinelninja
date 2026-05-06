@@ -20,22 +20,28 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `forcepointsmcapiconnector` | Managed | 0 | 4 |
-| `ForcepointSMC-Connector` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`forcepointsmcapiconnector`](../logic-apps/managed-forcepointsmcapiconnector.md) | Managed | 0 | 4 |
+| [`ForcepointSMC-Connector`](../logic-apps/custom-forcepointsmc-connector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`forcepointsmcapiconnector`** (managedApi):
-- *Add_IP_Address_into_IP_List*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
-- *Get_IP_address*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list`
-- *Get_IP_List_Element*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list`
-- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`forcepointsmcapiconnector`](../logic-apps/managed-forcepointsmcapiconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_IP_Address_into_IP_List | post | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list` | — |
+| Get_IP_address | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list/@{encodeURIComponent(last(split(body('Get_IP_List_Element')?['result']?[0]?['href'],'/')))}/ip_address_list` | — |
+| Get_IP_List_Element | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/ip_list` | — |
+| Login | post | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/login` | — |
 
 </details>
 

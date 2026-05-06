@@ -17,30 +17,35 @@
 <div class="doc-content">
 <h1 id="logic-app-connectors-and-built-in-actions">Logic App Connectors and Built-in Actions</h1>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <strong>Logic Apps</strong> · <a href="../statistics.html">📊</a></p>
-<p>Logic Apps connectors and built-in actions referenced by Microsoft Sentinel playbooks. <strong>Managed</strong> connectors come from <code>Microsoft.Web/connections</code> resources backed by Microsoft-published APIs (<code>/providers/Microsoft.Web/locations/.../managedApis/...</code>). <strong>Custom</strong> connectors are solution-specific APIs (<code>/customApis/...</code>). <strong>Built-in</strong> rows are workflow actions of type <code>Http</code>, <code>Function</code>, <code>Workflow</code>, or <code>ApiManagement</code> that don't use a connection resource. Multiple action instances of the same connector within a playbook are aggregated.</p>
+<p>Logic Apps connectors and built-in actions referenced by Microsoft Sentinel playbooks. Multiple action instances of the same connector within a playbook are aggregated.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Type</th>
 <th style="text-align: right;">Count</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">Managed connectors</td>
 <td style="text-align: right;">96</td>
+<td style="text-align: left;"><code>Microsoft.Web/connections</code> resources backed by Microsoft-published APIs (<code>/providers/Microsoft.Web/locations/.../managedApis/...</code>).</td>
 </tr>
 <tr>
 <td style="text-align: left;">Custom connectors</td>
 <td style="text-align: right;">56</td>
+<td style="text-align: left;">Solution-specific APIs (<code>/customApis/...</code>).</td>
 </tr>
 <tr>
 <td style="text-align: left;">Built-in action types</td>
 <td style="text-align: right;">3</td>
+<td style="text-align: left;">Workflow actions of type <code>Http</code>, <code>Function</code>, <code>Workflow</code>, or <code>ApiManagement</code> that don't use a connection resource.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Playbooks using Logic App connectors / built-ins</td>
 <td style="text-align: right;">870</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -61,6 +66,13 @@
 <td style="text-align: right;">683</td>
 <td style="text-align: right;">118</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/azuresentinel/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: right;">374</td>
+<td style="text-align: right;">58</td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http">Learn</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-keyvault.html"><code>keyvault</code></a></td>
@@ -96,6 +108,20 @@
 <td style="text-align: right;">71</td>
 <td style="text-align: right;">19</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/office365/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="builtin-workflow.html"><code>workflow</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="builtin-function.html"><code>function</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions">Learn</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-microsoftsentinel.html"><code>microsoftsentinel</code></a></td>
@@ -203,6 +229,13 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/jira/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-service-now.html"><code>service-now</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">9</td>
@@ -213,6 +246,20 @@
 <td style="text-align: left;"><a href="managed-googlethreatintelligence.html"><code>googlethreatintelligence</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-googlethreatintelligence-customconnector.html"><code>GoogleThreatIntelligence-CustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-forcepointsmc-connector.html"><code>ForcepointSMC-Connector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">7</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
 </tr>
@@ -245,8 +292,29 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/outlook/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-pan-osrestapicustomconnector.html"><code>PAN-OSRestApiCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-servicenowtisccustomconnector.html"><code>ServiceNowTISCCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-spycloud-enterprise-connector.html"><code>spycloud-enterprise-connector</code></a></td>
 <td style="text-align: left;">Managed</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-spycloud-enterprise-protection.html"><code>SpyCloud-Enterprise-Protection</code></a></td>
+<td style="text-align: left;">Custom</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
@@ -273,6 +341,13 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-ciscoasaconnector.html"><code>CiscoASAConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-azureautomation.html"><code>azureautomation</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">5</td>
@@ -280,11 +355,32 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/azureautomation/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-azurefirewallconnector.html"><code>AzureFirewallConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-haveibeenpwnedconnector.html"><code>HaveIBeenPwnedConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-ipqsfraudandriskscor.html"><code>ipqsfraudandriskscor</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">5</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/ipqsfraudandriskscor/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-merakiconnector.html"><code>MerakiConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-eventhubs.html"><code>eventhubs</code></a></td>
@@ -301,9 +397,44 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-paloaltowildfire.html"><code>PaloAltoWildFire</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-pan-osxmlapicustomconnector.html"><code>PAN-OSXmlApiCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-qualyscustomconnector.html"><code>QualysCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-recordedfuture-customconnector.html"><code>RecordedFuture-CustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-wildfireconnector.html"><code>wildfireconnector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-abuseipdbapi.html"><code>AbuseIPDBAPI</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
 </tr>
@@ -315,8 +446,36 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/azurecommunicationservicessms/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-carbonblackcloudconnector.html"><code>CarbonBlackCloudConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-cisco-firepower-connector.html"><code>cisco-firepower-connector</code></a></td>
 <td style="text-align: left;">Managed</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-ciscofirepowerconnector.html"><code>CiscoFirepowerConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-ciscoise.html"><code>CiscoISE</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-gcpbigquerycustomconnector.html"><code>GCPBigQueryCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
@@ -329,6 +488,20 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-googlecloudplatformiam.html"><code>GoogleCloudPlatformIAM</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-googledirectory.html"><code>GoogleDirectory</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-office365users.html"><code>office365users</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">3</td>
@@ -336,8 +509,36 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/office365users/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-oktacustomconnector.html"><code>OktaCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-opencticustomconnector.html"><code>OpenCTICustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-paloaltopanos.html"><code>PaloAltoPANOS</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-panosconnector.html"><code>panosconnector</code></a></td>
 <td style="text-align: left;">Managed</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-rapid7insightvmcloud.html"><code>Rapid7InsightVMCloud</code></a></td>
+<td style="text-align: left;">Custom</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
@@ -350,6 +551,13 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/recordedfuturesandbo/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-rfi-customconnector-0-2-0.html"><code>RFI-CustomConnector-0-2-0</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-sentinelmcp.html"><code>sentinelmcp</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">3</td>
@@ -357,11 +565,39 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/sentinelmcp/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-shodancustomconnector.html"><code>ShodanCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-slack.html"><code>slack</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/slack/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-thehive.html"><code>TheHive</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-urlhausapi.html"><code>URLhausAPI</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-zeronetworksconnector.html"><code>ZeroNetworksConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-arm.html"><code>arm</code></a></td>
@@ -392,6 +628,20 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-eclecticiqcustomconnector.html"><code>EclecticIQCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-forcepointfuidconnector.html"><code>ForcepointFUIDConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-fortinetconnector.html"><code>fortinetconnector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">2</td>
@@ -399,8 +649,29 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-fortinetconnector.html"><code>FortinetConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-fortinetcustomconnector.html"><code>FortinetCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-fortiweb.html"><code>fortiweb</code></a></td>
 <td style="text-align: left;">Managed</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-fortiwebcloud.html"><code>FortiWebCloud</code></a></td>
+<td style="text-align: left;">Custom</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
@@ -427,6 +698,27 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-minemeldcustomconnector.html"><code>MinemeldCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-prismacloudcspmcustomconnector.html"><code>PrismaCloudCSPMCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-proofpointtap.html"><code>proofpointtap</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-proofpointtapapi.html"><code>proofpointtapapi</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">2</td>
@@ -446,6 +738,13 @@
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/recordedfutureidenti/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-resilient-incidents.html"><code>Resilient-Incidents</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-reversinglabsa1000.html"><code>reversinglabsa1000</code></a></td>
@@ -469,11 +768,32 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-shadowbyteariaconnector.html"><code>ShadowByteAriaConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-sharepointonline.html"><code>sharepointonline</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/sharepointonline/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-slashnext.html"><code>SlashNext</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-spur-context-connector.html"><code>Spur-Context-Connector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-spurconnector.html"><code>spurconnector</code></a></td>
@@ -487,6 +807,20 @@
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">2</td>
 <td style="text-align: right;">2</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-tenablevulnerabilitymanagement.html"><code>TenableVulnerabilityManagement</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-threatx-wafcustomconnector.html"><code>ThreatX-WAFCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
@@ -539,8 +873,36 @@
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/azurevm/">Learn</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-checkphishbybolstercustomconnector.html"><code>CheckPhishbyBolsterCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-checkpointmgmtconnector.html"><code>CheckPointMgmtConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-circl-hashlookup.html"><code>CIRCL-hashlookup</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-ciscoumbrellaenforcement.html"><code>ciscoumbrellaenforcement</code></a></td>
 <td style="text-align: left;">Managed</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-ciscoumbrellaenforcementapi.html"><code>CiscoUmbrellaEnforcementAPI</code></a></td>
+<td style="text-align: left;">Custom</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
@@ -551,6 +913,13 @@
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/conversionservice/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-elasticsearchcustomconnector.html"><code>ElasticSearchCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-eventhub.html"><code>eventhub</code></a></td>
@@ -581,8 +950,29 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-intezer-analyze-community.html"><code>Intezer-Analyze-Community</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-ip-api.html"><code>IP-API</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-ip-api.html"><code>ip-api</code></a></td>
 <td style="text-align: left;">Managed</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-ipapicustomconnector.html"><code>IPAPICustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
@@ -600,6 +990,13 @@
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/kusto/">Learn</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-malwarebazaar.html"><code>MalwareBazaar</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="managed-microsoftforms.html"><code>microsoftforms</code></a></td>
@@ -651,6 +1048,20 @@
 <td style="text-align: left;">—</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="custom-paloaltoconnector.html"><code>PaloAltoConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-rfi-customconnector-0-1-0.html"><code>RFI-CustomConnector-0-1-0</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="managed-securitycopilot.html"><code>securitycopilot</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: right;">1</td>
@@ -674,6 +1085,13 @@
 <tr>
 <td style="text-align: left;"><a href="managed-slashnext.html"><code>slashnext</code></a></td>
 <td style="text-align: left;">Managed</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="custom-slashnext-cms.html"><code>SlashNext-CMS</code></a></td>
+<td style="text-align: left;">Custom</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;">—</td>
@@ -726,419 +1144,6 @@
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/connectors/zendesk/">Learn</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: right;">374</td>
-<td style="text-align: right;">58</td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http">Learn</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="builtin-workflow.html"><code>workflow</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: right;">63</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps">Learn</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="builtin-function.html"><code>function</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: right;">54</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/connectors/connectors-native-azurefunctions">Learn</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-googlethreatintelligence-customconnector.html"><code>GoogleThreatIntelligence-CustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-forcepointsmc-connector.html"><code>ForcepointSMC-Connector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-pan-osrestapicustomconnector.html"><code>PAN-OSRestApiCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-servicenowtisccustomconnector.html"><code>ServiceNowTISCCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-spycloud-enterprise-protection.html"><code>SpyCloud-Enterprise-Protection</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-ciscoasaconnector.html"><code>CiscoASAConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-azurefirewallconnector.html"><code>AzureFirewallConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-haveibeenpwnedconnector.html"><code>HaveIBeenPwnedConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-merakiconnector.html"><code>MerakiConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-paloaltowildfire.html"><code>PaloAltoWildFire</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-pan-osxmlapicustomconnector.html"><code>PAN-OSXmlApiCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-qualyscustomconnector.html"><code>QualysCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-recordedfuture-customconnector.html"><code>RecordedFuture-CustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-abuseipdbapi.html"><code>AbuseIPDBAPI</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-carbonblackcloudconnector.html"><code>CarbonBlackCloudConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-ciscofirepowerconnector.html"><code>CiscoFirepowerConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-ciscoise.html"><code>CiscoISE</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-gcpbigquerycustomconnector.html"><code>GCPBigQueryCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-googlecloudplatformiam.html"><code>GoogleCloudPlatformIAM</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-googledirectory.html"><code>GoogleDirectory</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-oktacustomconnector.html"><code>OktaCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-opencticustomconnector.html"><code>OpenCTICustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-paloaltopanos.html"><code>PaloAltoPANOS</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-rapid7insightvmcloud.html"><code>Rapid7InsightVMCloud</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-rfi-customconnector-0-2-0.html"><code>RFI-CustomConnector-0-2-0</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-shodancustomconnector.html"><code>ShodanCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-thehive.html"><code>TheHive</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-urlhausapi.html"><code>URLhausAPI</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-zeronetworksconnector.html"><code>ZeroNetworksConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-eclecticiqcustomconnector.html"><code>EclecticIQCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-forcepointfuidconnector.html"><code>ForcepointFUIDConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-fortinetconnector.html"><code>FortinetConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-fortinetcustomconnector.html"><code>FortinetCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-fortiwebcloud.html"><code>FortiWebCloud</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-minemeldcustomconnector.html"><code>MinemeldCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-prismacloudcspmcustomconnector.html"><code>PrismaCloudCSPMCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-proofpointtap.html"><code>proofpointtap</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-resilient-incidents.html"><code>Resilient-Incidents</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-shadowbyteariaconnector.html"><code>ShadowByteAriaConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-slashnext.html"><code>SlashNext</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-spur-context-connector.html"><code>Spur-Context-Connector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-tenablevulnerabilitymanagement.html"><code>TenableVulnerabilityManagement</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-threatx-wafcustomconnector.html"><code>ThreatX-WAFCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-checkphishbybolstercustomconnector.html"><code>CheckPhishbyBolsterCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-checkpointmgmtconnector.html"><code>CheckPointMgmtConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-circl-hashlookup.html"><code>CIRCL-hashlookup</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-ciscoumbrellaenforcementapi.html"><code>CiscoUmbrellaEnforcementAPI</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-elasticsearchcustomconnector.html"><code>ElasticSearchCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-intezer-analyze-community.html"><code>Intezer-Analyze-Community</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-ip-api.html"><code>IP-API</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-ipapicustomconnector.html"><code>IPAPICustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-malwarebazaar.html"><code>MalwareBazaar</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-paloaltoconnector.html"><code>PaloAltoConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-rfi-customconnector-0-1-0.html"><code>RFI-CustomConnector-0-1-0</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="custom-slashnext-cms.html"><code>SlashNext-CMS</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">—</td>
 </tr>
 </tbody>
 </table>

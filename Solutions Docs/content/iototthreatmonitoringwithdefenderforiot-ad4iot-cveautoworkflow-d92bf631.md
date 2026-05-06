@@ -28,28 +28,40 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 2 | 0 |
-| `azuresentinel_1` | Managed | 0 | 3 |
-| `office365` | Managed | 1 | 0 |
-| `office365_1` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 2 | 0 |
+| [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) | Managed | 0 | 3 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
+| [`office365_1`](../logic-apps/managed-office365-1.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel_1`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
 
-**`office365_1`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`POST`, uri=`@variables('ARGEndPoint')`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+
+#### [`office365_1`](../logic-apps/managed-office365-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | POST | `@variables('ARGEndPoint')` | — |
 
 </details>
 

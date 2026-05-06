@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 1 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Update_user*: method=`patch`, path=`/v1.0/users/@{encodeURIComponent(items('For_each')?['AadUserId'])}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_user | patch | `/v1.0/users/@{encodeURIComponent(items('For_each')?['AadUserId'])}` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
 </details>
 

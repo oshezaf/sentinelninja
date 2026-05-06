@@ -20,34 +20,46 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 4 |
-| `teams` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 4 |
-| `workflow` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Access_Token_For_Account_Entity*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Host_Entity*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Active_Detection*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Resolve_Assignment*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`teams`** (managedApi):
-- *Post_Message_For_No_Open_Assignment_Found_For_Associated_Entity*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token_For_Account_Entity | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Host_Entity | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Active_Detection | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Resolve_Assignment | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Data_Of_Associated_Account_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/accounts/@{int(variables('entity_id'))}`
-- *HTTP_Request_To_Fetch_Data_Of_Associated_Host_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/hosts/@{int(variables('entity_id'))}`
-- *HTTP_Request_To_Fetch_Active_Detections_For_Associated_Entity*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/detections`
-- *HTTP_Request_To_Resolve_Assignment*: method=`PUT`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/assignments/@{variables('assignment_id')}/resolve`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_4*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_Message_For_No_Open_Assignment_Found_For_Associated_Entity | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Data_Of_Associated_Account_Entity | GET | `@{variables('base_url')}/api/@{variables('api_version')}/accounts/@{int(variables('entity_id'))}` | — |
+| HTTP_Request_To_Fetch_Data_Of_Associated_Host_Entity | GET | `@{variables('base_url')}/api/@{variables('api_version')}/hosts/@{int(variables('entity_id'))}` | — |
+| HTTP_Request_To_Fetch_Active_Detections_For_Associated_Entity | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections` | — |
+| HTTP_Request_To_Resolve_Assignment | PUT | `@{variables('base_url')}/api/@{variables('api_version')}/assignments/@{variables('assignment_id')}/resolve` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_4 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_3 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

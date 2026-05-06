@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinel` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_-_session_revoked*: method=`post`, path=`/Incidents/Comment`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_revoke_sign-in_session*: method=`POST`, uri=`https://graph.microsoft.com/v1.0/users/@{concat(triggerBody()?['Entity']?['properties']?['Name'], '@', triggerBody()?['Entity']?['properties']?['upnSuffix'])}/revokeSignInSessions`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_-_session_revoked | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_revoke_sign-in_session | POST | `https://graph.microsoft.com/v1.0/users/@{concat(triggerBody()?['Entity']?['properties']?['Name'], '@', triggerBody()?['Entity']?['properties']?['upnSuffix'])}/revokeSignInSessions` | — |
 
 </details>
 

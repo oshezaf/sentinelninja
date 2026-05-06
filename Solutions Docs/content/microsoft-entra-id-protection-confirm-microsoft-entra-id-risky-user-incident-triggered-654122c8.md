@@ -20,21 +20,30 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 1 |
-| `azureadip` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 1 |
+| [`azureadip`](../logic-apps/managed-azureadip.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Get_user*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('For_each')?['UPNSuffix']))}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azureadip`** (managedApi):
-- *Confirm_a_risky_user_as_compromised*: method=`post`, path=`/beta/riskyUsers/confirmCompromised`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_user | get | `/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('For_each')?['UPNSuffix']))}` | — |
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azureadip`](../logic-apps/managed-azureadip.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Confirm_a_risky_user_as_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
 </details>
 

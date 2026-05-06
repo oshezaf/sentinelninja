@@ -20,25 +20,34 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `keyvault` | Managed | 0 | 1 |
-| `PrismaCloudCSPMCustomConnector` | Custom | 1 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 0 | 1 |
+| [`PrismaCloudCSPMCustomConnector`](../logic-apps/custom-prismacloudcspmcustomconnector.md) | Custom | 1 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`PrismaCloudCSPMCustomConnector`** (customApi):
-- *Assets_Resource_Scan*: method=`get`, path=`/resource/scan_info`
-- *Assets_Enrichment*: method=`post`, path=`/uai/v1/asset`
-- *Get_Alert_Info*: method=`get`, path=`/alert/@{encodeURIComponent(items('For_each_-_storing_alert_info_in_variable'))}`
-- *Login_Generate_Token*: method=`post`, path=`/login`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value` | — |
+
+#### [`PrismaCloudCSPMCustomConnector`](../logic-apps/custom-prismacloudcspmcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Assets_Resource_Scan | get | `/resource/scan_info` | — |
+| Assets_Enrichment | post | `/uai/v1/asset` | — |
+| Get_Alert_Info | get | `/alert/@{encodeURIComponent(items('For_each_-_storing_alert_info_in_variable'))}` | — |
+| Login_Generate_Token | post | `/login` | — |
 
 </details>
 

@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `function` | Built-in | 0 | 3 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`function`** (builtin):
-- *StartSecurityComplianceAnalyzer*: functionId=`[concat(variables('functionAppId'), '/functions/StartSecurityComplianceAnalyzerAsync')]`
-- *GetSession*: functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]`
-- *GetSecurityComplianceAnalyzerResultsAsync*: functionId=`[concat(variables('functionAppId'), '/functions/GetSecurityComplianceAnalyzerResultsAsync')]`
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| StartSecurityComplianceAnalyzer | — | — | functionId=`[concat(variables('functionAppId'), '/functions/StartSecurityComplianceAnalyzerAsync')]` |
+| GetSession | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]` |
+| GetSecurityComplianceAnalyzerResultsAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetSecurityComplianceAnalyzerResultsAsync')]` |
 
 </details>
 

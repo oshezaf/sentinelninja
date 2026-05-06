@@ -20,18 +20,24 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 0 |
-| `azureloganalyticsdatacollector_1` | Managed | 0 | 1 |
-| `identityconnectorupdate` | Managed | 0 | 1 |
-| `RFI-CustomConnector-0-1-0` | Custom | 1 | 0 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 0 |
+| [`azureloganalyticsdatacollector_1`](../logic-apps/managed-azureloganalyticsdatacollector-1.md) | Managed | 0 | 1 |
+| [`identityconnectorupdate`](../logic-apps/managed-identityconnectorupdate.md) | Managed | 0 | 1 |
+| [`RFI-CustomConnector-0-1-0`](../logic-apps/custom-rfi-customconnector-0-1-0.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector_1`** (managedApi):
-- *Send_Data_-_Save_Lookup_results_to_LogAnalytics_Custom_Log*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector_1`](../logic-apps/managed-azureloganalyticsdatacollector-1.md) (Managed)
 
-**`identityconnectorupdate`** (managedApi):
-- *Credential_Lookup_V2_-_Look_up_credential_data_for_one_or_more_users*: method=`post`, path=`/v2/credentials/lookup`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_Save_Lookup_results_to_LogAnalytics_Custom_Log | post | `/api/logs` | — |
+
+#### [`identityconnectorupdate`](../logic-apps/managed-identityconnectorupdate.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Credential_Lookup_V2_-_Look_up_credential_data_for_one_or_more_users | post | `/v2/credentials/lookup` | — |
 
 </details>
 

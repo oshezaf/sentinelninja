@@ -20,21 +20,30 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `office365` | Managed | 1 | 1 |
-| `teams` | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_-_Get_Watchlist*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_-_Get_Watchlist | post | `/queryData` | — |
 
-**`teams`** (managedApi):
-- *Post_a_message_as_the_Flow_bot_to_a_user*: method=`post`, path=`/flowbot/actions/notification/recipienttypes/user`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_a_message_as_the_Flow_bot_to_a_user | post | `/flowbot/actions/notification/recipienttypes/user` | — |
 
 </details>
 

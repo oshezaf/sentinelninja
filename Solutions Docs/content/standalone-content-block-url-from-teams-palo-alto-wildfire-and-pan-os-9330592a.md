@@ -20,28 +20,37 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `panosconnector` | Managed | 0 | 4 |
-| `teams` | Managed | 1 | 0 |
-| `wildfireconnector` | Managed | 0 | 1 |
-| `PaloAltoPANOS` | Custom | 1 | 0 |
-| `PaloAltoWildFire` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`panosconnector`](../logic-apps/managed-panosconnector.md) | Managed | 0 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`wildfireconnector`](../logic-apps/managed-wildfireconnector.md) | Managed | 0 | 1 |
+| [`PaloAltoPANOS`](../logic-apps/custom-paloaltopanos.md) | Custom | 1 | 0 |
+| [`PaloAltoWildFire`](../logic-apps/custom-paloaltowildfire.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Update_Incident_for_configuration_case*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`panosconnector`** (managedApi):
-- *Add_address_objects_to_security_policy_rules*: method=`put`, path=`/restapi/v10.0/Policies/SecurityRules`
-- *Add_address_objects_to_security_rules*: method=`post`, path=`/restapi/v10.0/Objects/Addresses`
-- *Get_address_list*: method=`get`, path=`/restapi/v10.0/Objects/Addresses`
-- *Get_existing_member_of_the_security_rules*: method=`get`, path=`/restapi/v10.0/Policies/SecurityRules`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_Incident_for_configuration_case | put | `/Incidents` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
 
-**`wildfireconnector`** (managedApi):
-- *Get_URL_or_Hash_verdict*: method=`post`, path=`/get/verdict`
+#### [`panosconnector`](../logic-apps/managed-panosconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_address_objects_to_security_policy_rules | put | `/restapi/v10.0/Policies/SecurityRules` | — |
+| Add_address_objects_to_security_rules | post | `/restapi/v10.0/Objects/Addresses` | — |
+| Get_address_list | get | `/restapi/v10.0/Objects/Addresses` | — |
+| Get_existing_member_of_the_security_rules | get | `/restapi/v10.0/Policies/SecurityRules` | — |
+
+#### [`wildfireconnector`](../logic-apps/managed-wildfireconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_URL_or_Hash_verdict | post | `/get/verdict` | — |
 
 </details>
 

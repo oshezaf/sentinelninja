@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Get_group_members*: method=`get`, path=`[concat('/v1.0/groups/@{encodeURIComponent(''', parameters('GroupId'), ''')}/members')]`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Watchlists_-_Add_a_new_watchlist_item*: method=`put`, path=`[concat('/Watchlists/subscriptions/@{encodeURIComponent(''', subscription().subscriptionId, ''')}/resourceGroups/@{encodeURIComponent(''', resourceGroup().name, ''')}/workspaces/@{encodeURIComponent(''', parameters('WorkspaceId'), ''')}/watchlists/@{encodeURIComponent(''', parameters('WatchlistName'), ''')}/watchlistItem')]`
-- *Watchlists_-_Get_all_watchlist_Items_for_a_given_watchlist*: method=`get`, path=`[concat('/Watchlists/subscriptions/@{encodeURIComponent(''', subscription().subscriptionId, ''')}/resourceGroups/@{encodeURIComponent(''', resourceGroup().name, ''')}/workspaces/@{encodeURIComponent(''', parameters('WorkspaceId'), ''')}/watchlists/@{encodeURIComponent(''', parameters('WatchlistName'), ''')}/watchlistItems')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_group_members | get | `[concat('/v1.0/groups/@{encodeURIComponent(''', parameters('GroupId'), ''')}/members')]` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Watchlists_-_Add_a_new_watchlist_item | put | `[concat('/Watchlists/subscriptions/@{encodeURIComponent(''', subscription().subscriptionId, ''')}/resourceGroups/@{encodeURIComponent(''', resourceGroup().name, ''')}/workspaces/@{encodeURIComponent(''', parameters('WorkspaceId'), ''')}/watchlists/@{encodeURIComponent(''', parameters('WatchlistName'), ''')}/watchlistItem')]` | — |
+| Watchlists_-_Get_all_watchlist_Items_for_a_given_watchlist | get | `[concat('/Watchlists/subscriptions/@{encodeURIComponent(''', subscription().subscriptionId, ''')}/resourceGroups/@{encodeURIComponent(''', resourceGroup().name, ''')}/workspaces/@{encodeURIComponent(''', parameters('WorkspaceId'), ''')}/watchlists/@{encodeURIComponent(''', parameters('WatchlistName'), ''')}/watchlistItems')]` | — |
 
 </details>
 

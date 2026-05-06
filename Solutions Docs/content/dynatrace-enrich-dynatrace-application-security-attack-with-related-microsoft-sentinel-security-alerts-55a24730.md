@@ -28,22 +28,31 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Get_Related_Security_Alerts*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Dynatrace_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Related_Security_Alerts | post | `/queryData` | — |
 
-**`http`** (builtin):
-- *Get_Dynatrace_Attack_Details*: method=`GET`, uri=`https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['AttackIdentifier'])}`
-- *Ingest_Dynatrace_Log_Entries*: method=`POST`, uri=`https://@{parameters('Tenant')}/api/v2/logs/ingest`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Dynatrace_Access_Token | get | `/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Dynatrace_Attack_Details | GET | `https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['AttackIdentifier'])}` | — |
+| Ingest_Dynatrace_Log_Entries | POST | `https://@{parameters('Tenant')}/api/v2/logs/ingest` | — |
 
 </details>
 

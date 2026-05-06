@@ -9,13 +9,18 @@
 | **Type** | Built-in |
 | **Playbooks using** | 63 |
 | **Solutions** | 12 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-logic-apps) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| Get-AlertEntitiesEnrichment | - | 0 | 1 |
+| [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 0 | 1 |
+| [AS-IAM-Entra-ID-Master-Playbook](../content/standalone-content-as-iam-entra-id-master-playbook-fdf9518a.md) | 📄 Standalone | 0 | 2 |
+| [AS-IAM-Master-Playbook](../content/standalone-content-as-iam-master-playbook-e5d5f8fe.md) | 📄 Standalone | 0 | 4 |
+| [Block IP - F5 BIG-IP](../content/standalone-content-block-ip-f5-big-ip-a18f653d.md) | 📄 Standalone | 0 | 2 |
+| [Block IP - Zscaler](../content/standalone-content-block-ip-zscaler-b2a77c41.md) | 📄 Standalone | 0 | 1 |
+| [Block URL - F5 BIG-IP](../content/standalone-content-block-url-f5-big-ip-a53cff23.md) | 📄 Standalone | 0 | 2 |
 | [Censys Alert Enrichment](../content/censys-censys-alert-enrichment-65242474.md) | [Censys](../solutions/censys.md) | 0 | 1 |
 | [Censys Alert Rescan](../content/censys-censys-alert-rescan-19e1ad3a.md) | [Censys](../solutions/censys.md) | 0 | 1 |
 | [Censys Entity Enrichment - Certificate](../content/censys-censys-entity-enrichment-certificate-ea0d81ab.md) | [Censys](../solutions/censys.md) | 0 | 1 |
@@ -23,11 +28,17 @@
 | [Censys Entity Enrichment - Web Property](../content/censys-censys-entity-enrichment-web-property-e7db98e8.md) | [Censys](../solutions/censys.md) | 0 | 1 |
 | [Censys Incident Enrichment](../content/censys-censys-incident-enrichment-099adc62.md) | [Censys](../solutions/censys.md) | 0 | 1 |
 | [Censys Rescan](../content/censys-censys-rescan-51275b90.md) | [Censys](../solutions/censys.md) | 0 | 1 |
-| [Endpoint enrichment - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-endpoint-enrichment-crowdstrike-9fdce9cc.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | 0 | 1 |
-| [Isolate endpoint - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-isolate-endpoint-crowdstrike-8e772c42.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | 0 | 1 |
+| [Crowdstrike-ResponsefromTeams](../content/standalone-content-crowdstrike-responsefromteams-0d7b6e98.md) | 📄 Standalone | 0 | 2 |
 | [Cyjax Incident Enrichment](../content/cyjax-cyjax-incident-enrichment-ce175d04.md) | [Cyjax](../solutions/cyjax.md) | 0 | 1 |
+| [Endpoint enrichment - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-endpoint-enrichment-crowdstrike-9fdce9cc.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | 0 | 1 |
+| [Enrichment IP - F5 BIG-IP](../content/standalone-content-enrichment-ip-f5-big-ip-6acfa6fd.md) | 📄 Standalone | 0 | 1 |
+| [Four Playbook templates - F5BigIP](../content/standalone-content-four-playbook-templates-f5bigip-225fa1ac.md) | 📄 Standalone | 0 | 5 |
+| [Get-AlertEntitiesEnrichment](../content/github-only-get-alertentitiesenrichment-6987da42.md) | 🔗 GitHub Only | 0 | 1 |
 | [Infoblox-TIDE-Lookup-Via-Incident](../content/infoblox-infoblox-tide-lookup-via-incident-90b154ca.md) | [Infoblox](../solutions/infoblox.md) | 0 | 4 |
+| [Isolate endpoint - Crowdstrike](../content/crowdstrike-falcon-endpoint-protection-isolate-endpoint-crowdstrike-8e772c42.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | 0 | 1 |
+| [MTI Threat Actor Lookup](../content/standalone-content-mti-threat-actor-lookup-b10467aa.md) | 📄 Standalone | 0 | 1 |
 | [NetApp RRS Manual IP to Volume Offline](../content/netapp-ransomware-resilience-netapp-rrs-manual-ip-to-volume-offline-5b223956.md) | [NetApp Ransomware Resilience](../solutions/netapp-ransomware-resilience.md) | 0 | 3 |
+| [Query Azure Resource Graph and enrich sentinel incident](../content/standalone-content-query-azure-resource-graph-and-enrich-sentinel-incident-9599ecfc.md) | 📄 Standalone | 0 | 1 |
 | [RFI-search-external-user](../content/recorded-future-identity-rfi-search-external-user-b3c5c779.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 0 | 3 |
 | [RFI-search-workforce-user](../content/recorded-future-identity-rfi-search-workforce-user-cc3f078e.md) | [Recorded Future Identity](../solutions/recorded-future-identity.md) | 0 | 3 |
 | [Rubrik Anomaly Analysis](../content/rubriksecuritycloud-rubrik-anomaly-analysis-bb96264b.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 2 |
@@ -38,19 +49,7 @@
 | [Rubrik Ransomware Discovery and VM Recovery](../content/rubriksecuritycloud-rubrik-ransomware-discovery-and-vm-recovery-d3cd3154.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 3 |
 | [Rubrik Update Anomaly Status Via Incident](../content/rubriksecuritycloud-rubrik-update-anomaly-status-via-incident-31d4f8cc.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 1 |
 | [Rubrik User Intelligence Analysis](../content/rubriksecuritycloud-rubrik-user-intelligence-analysis-4de09304.md) | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) | 0 | 2 |
-| [AS-IAM-Entra-ID-Master-Playbook](../content/standalone-content-as-iam-entra-id-master-playbook-fdf9518a.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 2 |
-| [AS-IAM-Master-Playbook](../content/standalone-content-as-iam-master-playbook-e5d5f8fe.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 4 |
-| [Block IP - F5 BIG-IP](../content/standalone-content-block-ip-f5-big-ip-a18f653d.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 2 |
-| [Block IP - Zscaler](../content/standalone-content-block-ip-zscaler-b2a77c41.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
-| [Block URL - F5 BIG-IP](../content/standalone-content-block-url-f5-big-ip-a53cff23.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 2 |
-| [Crowdstrike-ResponsefromTeams](../content/standalone-content-crowdstrike-responsefromteams-0d7b6e98.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 2 |
-| [Enrichment IP - F5 BIG-IP](../content/standalone-content-enrichment-ip-f5-big-ip-6acfa6fd.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
-| [Four Playbook templates - F5BigIP](../content/standalone-content-four-playbook-templates-f5bigip-225fa1ac.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 5 |
-| [MTI Threat Actor Lookup](../content/standalone-content-mti-threat-actor-lookup-b10467aa.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
-| [Query Azure Resource Graph and enrich sentinel incident](../content/standalone-content-query-azure-resource-graph-and-enrich-sentinel-incident-9599ecfc.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
-| [Zscaler URL category lookup](../content/standalone-content-zscaler-url-category-lookup-92bad5b5.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
 | [Team Cymru Scout Live Investigation](../content/team-cymru-scout-team-cymru-scout-live-investigation-9c215d68.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) | 0 | 2 |
-| [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 0 | 1 |
 | [Vectra Add Note To Entity](../content/vectra-xdr-vectra-add-note-to-entity-869bea53.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Tag To Entity](../content/vectra-xdr-vectra-add-tag-to-entity-bf766c50.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 2 |
 | [Vectra Add Tag To Entity All Detections](../content/vectra-xdr-vectra-add-tag-to-entity-all-detections-a3656304.md) | [Vectra XDR](../solutions/vectra-xdr.md) | 0 | 3 |
@@ -76,6 +75,7 @@
 | [Zscaler OAuth2 Lookup URL](../content/zscaler-internet-access-zscaler-oauth2-lookup-url-5639e8da.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |
 | [Zscaler OAuth2 Unblock IP](../content/zscaler-internet-access-zscaler-oauth2-unblock-ip-d1f2a8b5.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |
 | [Zscaler OAuth2 Unblock URL](../content/zscaler-internet-access-zscaler-oauth2-unblock-url-04fceeb1.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |
+| [Zscaler URL category lookup](../content/standalone-content-zscaler-url-category-lookup-92bad5b5.md) | 📄 Standalone | 0 | 1 |
 | [Zscaler-Oauth2-UnblacklistURL](../content/zscaler-internet-access-zscaler-oauth2-unblacklisturl-374efebd.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |
 | [Zscaler-Oauth2-WhitelistURL](../content/zscaler-internet-access-zscaler-oauth2-whitelisturl-0a27cd81.md) | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) | 0 | 1 |
 

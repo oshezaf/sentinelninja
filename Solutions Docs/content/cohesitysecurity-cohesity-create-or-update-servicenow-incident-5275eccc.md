@@ -20,20 +20,26 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinel` | Managed | 0 | 1 |
-| `service-now` | Managed | 1 | 0 |
-| `service-now_1` | Managed | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 1 |
+| [`service-now`](../logic-apps/managed-service-now.md) | Managed | 1 | 0 |
+| [`service-now_1`](../logic-apps/managed-service-now-1.md) | Managed | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
 
-**`service-now_1`** (managedApi):
-- *Create_Record*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
-- *Update_Record_-_Incident_closed*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('SNOW System ID'))}`
-- *Update_Record_-_incident_not_closed*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('SNOW System ID'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident | put | `/Incidents` | — |
+
+#### [`service-now_1`](../logic-apps/managed-service-now-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Record | post | `/api/now/v2/table/@{encodeURIComponent('incident')}` | — |
+| Update_Record_-_Incident_closed | put | `/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('SNOW System ID'))}` | — |
+| Update_Record_-_incident_not_closed | put | `/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(variables('SNOW System ID'))}` | — |
 
 </details>
 

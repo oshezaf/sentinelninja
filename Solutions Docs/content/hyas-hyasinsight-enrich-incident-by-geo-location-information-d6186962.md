@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `hyasinsight` | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`hyasinsight`](../logic-apps/managed-hyasinsight.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`hyasinsight`** (managedApi):
-- *Get_Mobile_Geolocation_Information_2*: method=`get`, path=`/device_geo`
-- *Get_Mobile_Geolocation_Information*: method=`get`, path=`/device_geo`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+
+#### [`hyasinsight`](../logic-apps/managed-hyasinsight.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Mobile_Geolocation_Information_2 | get | `/device_geo` | — |
+| Get_Mobile_Geolocation_Information | get | `/device_geo` | — |
 
 </details>
 

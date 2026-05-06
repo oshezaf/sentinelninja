@@ -20,13 +20,16 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `OpenCTICustomConnector` | Custom | 1 | 2 |
+| [`OpenCTICustomConnector`](../logic-apps/custom-opencticustomconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`OpenCTICustomConnector`** (customApi):
-- *Run_Sample_GraphQL_Query_to_check_Auth_*: method=`post`, path=`/graphql`
-- *Run_GraphQL_Query_Get_Indicators*: method=`post`, path=`/graphql`
+#### [`OpenCTICustomConnector`](../logic-apps/custom-opencticustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Sample_GraphQL_Query_to_check_Auth_ | post | `/graphql` | — |
+| Run_GraphQL_Query_Get_Indicators | post | `/graphql` | — |
 
 </details>
 

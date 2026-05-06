@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `wdatp` | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`wdatp`](../logic-apps/managed-wdatp.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)1*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`wdatp`** (managedApi):
-- *Machines_-_Get_list_of_machines*: method=`get`, path=`/api/machines`
-- *Actions_-_Unisolate_machine*: method=`post`, path=`/api/machines/@{encodeURIComponent(variables('MDEDeviceId'))}/unisolate`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)1 | post | `/Incidents/Comment` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Machines_-_Get_list_of_machines | get | `/api/machines` | — |
+| Actions_-_Unisolate_machine | post | `/api/machines/@{encodeURIComponent(variables('MDEDeviceId'))}/unisolate` | — |
 
 </details>
 

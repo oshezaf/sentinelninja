@@ -20,14 +20,17 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *HTTP_-_Get_IP_Info*: method=`POST`, uri=`http://ip-api.com/json/@{items('For_Each_-_Entities')?['properties']?['friendlyName']}`
-- *HTTP_-_Post_Slack_Message*: method=`POST`, uri=`https://slack.com/api/chat.postMessage`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_IP_Info | POST | `http://ip-api.com/json/@{items('For_Each_-_Entities')?['properties']?['friendlyName']}` | — |
+| HTTP_-_Post_Slack_Message | POST | `https://slack.com/api/chat.postMessage` | — |
 
 </details>
 

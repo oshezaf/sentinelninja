@@ -20,13 +20,16 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `sentinelmcp` | Managed | 1 | 2 |
+| [`sentinelmcp`](../logic-apps/managed-sentinelmcp.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`sentinelmcp`** (managedApi):
-- *User_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
-- *Url_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
+#### [`sentinelmcp`](../logic-apps/managed-sentinelmcp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| User_Analyzer | post | `/aiprimitives/analysis` | — |
+| Url_Analyzer | post | `/aiprimitives/analysis` | — |
 
 </details>
 

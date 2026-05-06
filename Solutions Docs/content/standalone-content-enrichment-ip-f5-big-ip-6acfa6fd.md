@@ -20,22 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 2 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP-Get_Global_Firewall_Policy_Rules*: method=`GET`, uri=`@{body('F5BigIP_Base')?['F5BigIPHost']}/mgmt/tm/security/firewall/policy/~Common~global_fwpolicy/rules/`
-- *HTTP-Get_specific_Address_list*: method=`GET`, uri=`@{body('F5BigIP_Base')?['F5BigIPHost']}/mgmt/tm/security/firewall/address-list/@{parameters('AddressListName')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
 
-**`workflow`** (builtin):
-- *F5BigIP_Base*: workflowId=`[variables('F5BigIP_Base_id')]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP-Get_Global_Firewall_Policy_Rules | GET | `@{body('F5BigIP_Base')?['F5BigIPHost']}/mgmt/tm/security/firewall/policy/~Common~global_fwpolicy/rules/` | — |
+| HTTP-Get_specific_Address_list | GET | `@{body('F5BigIP_Base')?['F5BigIPHost']}/mgmt/tm/security/firewall/address-list/@{parameters('AddressListName')}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| F5BigIP_Base | — | — | workflowId=`[variables('F5BigIP_Base_id')]`<br>triggerName=`manual` |
 
 </details>
 

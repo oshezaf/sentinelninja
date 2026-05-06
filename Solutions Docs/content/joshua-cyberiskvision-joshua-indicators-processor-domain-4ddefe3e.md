@@ -20,13 +20,16 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *HTTP_-_Joshua_API_2*: method=`GET`, uri=`[parameters('Joshua_API_URI')]`
-- *HTTP_-_Joshua_API*: method=`GET`, uri=`[parameters('Joshua_API_URI')]`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Joshua_API_2 | GET | `[parameters('Joshua_API_URI')]` | — |
+| HTTP_-_Joshua_API | GET | `[parameters('Joshua_API_URI')]` | — |
 
 </details>
 

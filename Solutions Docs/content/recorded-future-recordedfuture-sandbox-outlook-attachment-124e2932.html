@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>outlook</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-outlook.html"><code>outlook</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>recordedfuturesandbo</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-recordedfuturesandbo.html"><code>recordedfuturesandbo</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
@@ -76,17 +76,26 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Create_incident*: method=`put`, path=`/Incidents/subscriptions/@{encodeURIComponent('5129b3ff-c0c6-4e86-bd1c-70e5fcd579cf')}/resourceGroups/@{encodeURIComponent('RF')}/workspaces/@{encodeURIComponent('RF-log-analyitics')}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`outlook`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Create_incident | put | `/Incidents/subscriptions/@{encodeURIComponent('5129b3ff-c0c6-4e86-bd1c-70e5fcd579cf')}/resourceGroups/@{encodeURIComponent('RF')}/workspaces/@{encodeURIComponent('RF-log-analyitics')}` | — |
 
-**`recordedfuturesandbo`** (managedApi):
-- *Get_the_full_report*: method=`get`, path=`/samples/@{encodeURIComponent(body('Get_the_full_summary')?['id'])}/overview.json`
-- *Submit_file_samples*: method=`post`, path=`/samples/file`
-- *Get_the_full_summary*: method=`get`, path=`/samples/@{encodeURIComponent(body('Submit_file_samples')?['id'])}`
+#### [`outlook`](../logic-apps/managed-outlook.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`recordedfuturesandbo`](../logic-apps/managed-recordedfuturesandbo.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_the_full_report | get | `/samples/@{encodeURIComponent(body('Get_the_full_summary')?['id'])}/overview.json` | — |
+| Submit_file_samples | post | `/samples/file` | — |
+| Get_the_full_summary | get | `/samples/@{encodeURIComponent(body('Submit_file_samples')?['id'])}` | — |
 
 </details>
 

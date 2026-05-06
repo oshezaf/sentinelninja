@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>office365</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>wildfireconnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-wildfireconnector.html"><code>wildfireconnector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>PaloAltoWildFire</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-paloaltowildfire.html"><code>PaloAltoWildFire</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
@@ -82,18 +82,27 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_FileHash*: method=`post`, path=`/entities/filehash`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_when_exceeds_limit*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_email_with_FileHash_attachment*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_FileHash | post | `/entities/filehash` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_when_exceeds_limit | post | `/Incidents/Comment` | — |
 
-**`wildfireconnector`** (managedApi):
-- *Get_FileHash_analysis_report_in_PDF_or_XML_format*: method=`post`, path=`/get/report`
-- *Get_FileHash_analysis_report_in_PDF_or_XML_format_2*: method=`post`, path=`/get/report`
-- *Get_URL_or_Hash_Verdict*: method=`post`, path=`/get/verdict`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_email_with_FileHash_attachment | post | `/v2/Mail` | — |
+
+#### [`wildfireconnector`](../logic-apps/managed-wildfireconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_FileHash_analysis_report_in_PDF_or_XML_format | post | `/get/report` | — |
+| Get_FileHash_analysis_report_in_PDF_or_XML_format_2 | post | `/get/report` | — |
+| Get_URL_or_Hash_Verdict | post | `/get/verdict` | — |
 
 </details>
 

@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Add_comment_to_incident_(V3)-1*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)-2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`POST`, uri=`https://api.securitycenter.windows.com/api/indicators`
-- *HTTP_2*: method=`POST`, uri=`https://api.securitycenter.windows.com/api/indicators`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Add_comment_to_incident_(V3)-1 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)-2 | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | POST | `https://api.securitycenter.windows.com/api/indicators` | — |
+| HTTP_2 | POST | `https://api.securitycenter.windows.com/api/indicators` | — |
 
 </details>
 

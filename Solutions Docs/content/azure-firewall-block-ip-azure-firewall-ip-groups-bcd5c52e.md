@@ -20,26 +20,35 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `teams` | Managed | 1 | 0 |
-| `virustotal` | Managed | 1 | 1 |
-| `AzureFirewallConnector` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`virustotal`](../logic-apps/managed-virustotal.md) | Managed | 1 | 1 |
+| [`AzureFirewallConnector`](../logic-apps/custom-azurefirewallconnector.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_with_the_Virus_Total_report_and_the_action_taken_*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`virustotal`** (managedApi):
-- *Ip_scan_report_V3*: method=`get`, path=`/api/v3/ip_addresses/@{encodeURIComponent(items('For_each_Malicious_IP_Address_Entity_present_in_the_Incident')?['Address'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_with_the_Virus_Total_report_and_the_action_taken_ | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`AzureFirewallConnector`** (customApi):
-- *Creates_or_updates_an_ipGroups_in_a_specified_resource_group*: method=`put`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}`
-- *Gets_the_specified_ipGroups*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}`
-- *Gets_all_IpGroups_in_a_resource_group*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups`
+#### [`virustotal`](../logic-apps/managed-virustotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Ip_scan_report_V3 | get | `/api/v3/ip_addresses/@{encodeURIComponent(items('For_each_Malicious_IP_Address_Entity_present_in_the_Incident')?['Address'])}` | — |
+
+#### [`AzureFirewallConnector`](../logic-apps/custom-azurefirewallconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Creates_or_updates_an_ipGroups_in_a_specified_resource_group | put | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}` | — |
+| Gets_the_specified_ipGroups | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}` | — |
+| Gets_all_IpGroups_in_a_resource_group | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups` | — |
 
 </details>
 

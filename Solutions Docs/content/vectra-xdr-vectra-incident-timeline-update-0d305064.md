@@ -29,17 +29,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_most_recent_Alerts_to_keep_in_Incident_Timeline*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_alert_to_incident*: method=`post`, path=`/Incidents/Relation/Create`
-- *Remove_alert_from_incident*: method=`post`, path=`/Incidents/Relation/Delete`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_most_recent_Alerts_to_keep_in_Incident_Timeline | post | `/queryData` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_alert_to_incident | post | `/Incidents/Relation/Create` | — |
+| Remove_alert_from_incident | post | `/Incidents/Relation/Delete` | — |
 
 </details>
 

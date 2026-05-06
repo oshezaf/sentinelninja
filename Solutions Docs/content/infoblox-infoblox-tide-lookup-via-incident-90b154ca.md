@@ -20,23 +20,29 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `azuresentinel_1` | Managed | 0 | 4 |
-| `workflow` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) | Managed | 0 | 4 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel_1`** (managedApi):
-- *Get_FileHashes_From_Entities*: method=`post`, path=`/entities/filehash`
-- *Get_Hosts_From_Entities*: method=`post`, path=`/entities/host`
-- *Get_IPs_From_Entities*: method=`post`, path=`/entities/ip`
-- *Get_URLs_From_Entities*: method=`post`, path=`/entities/url`
+#### [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) (Managed)
 
-**`workflow`** (builtin):
-- *Infoblox_TIDE_Lookup_For_Hash*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
-- *Infoblox_TIDE_Lookup_For_Host*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
-- *Infoblox_TIDE_Lookup_For_IP*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
-- *Infoblox_TIDE_Lookup_For_URL*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_FileHashes_From_Entities | post | `/entities/filehash` | — |
+| Get_Hosts_From_Entities | post | `/entities/host` | — |
+| Get_IPs_From_Entities | post | `/entities/ip` | — |
+| Get_URLs_From_Entities | post | `/entities/url` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Infoblox_TIDE_Lookup_For_Hash | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`<br>triggerName=`manual` |
+| Infoblox_TIDE_Lookup_For_Host | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`<br>triggerName=`manual` |
+| Infoblox_TIDE_Lookup_For_IP | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`<br>triggerName=`manual` |
+| Infoblox_TIDE_Lookup_For_URL | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/','Infoblox-TIDE-Lookup')]`<br>triggerName=`manual` |
 
 </details>
 

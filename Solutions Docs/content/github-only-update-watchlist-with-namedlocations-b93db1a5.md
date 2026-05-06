@@ -20,21 +20,30 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 0 | 1 |
-| `keyvault` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 0 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Watchlists_-_Add_a_new_watchlist_item*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceName'))}/watchlists/@{encodeURIComponent(parameters('watchlistAlias'))}/watchlistItem`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('KeyVault'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Watchlists_-_Add_a_new_watchlist_item | put | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceName'))}/watchlists/@{encodeURIComponent(parameters('watchlistAlias'))}/watchlistItem` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_Named_Location_IPs*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/@{parameters('NamedLocationID')}`
-- *HTTP_-_Get_Watchlist*: method=`GET`, uri=`https://management.azure.com/subscriptions/@{parameters('SubscriptionId')}/resourceGroups/@{parameters('resourceGroupName')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{parameters('watchlistAlias')}/watchlistitems?api-version=2019-01-01-preview`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('KeyVault'))}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Named_Location_IPs | GET | `https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations/@{parameters('NamedLocationID')}` | — |
+| HTTP_-_Get_Watchlist | GET | `https://management.azure.com/subscriptions/@{parameters('SubscriptionId')}/resourceGroups/@{parameters('resourceGroupName')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{parameters('watchlistAlias')}/watchlistitems?api-version=2019-01-01-preview` | — |
 
 </details>
 

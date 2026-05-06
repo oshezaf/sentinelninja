@@ -20,22 +20,28 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 6 |
-| `TheHive` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 6 |
+| [`TheHive`](../logic-apps/custom-thehive.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_5*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_6*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`TheHive`** (customApi):
-- *Lock_user_by_id*: method=`patch`, path=`/api/v1/user/@{encodeURIComponent(items('Lock_users_by_UserId'))}`
-- *Lock_user_by_login*: method=`patch`, path=`/api/v1/user/@{encodeURIComponent(items('Lock_users_by_UserLogin'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_5 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_6 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_4 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+
+#### [`TheHive`](../logic-apps/custom-thehive.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Lock_user_by_id | patch | `/api/v1/user/@{encodeURIComponent(items('Lock_users_by_UserId'))}` | — |
+| Lock_user_by_login | patch | `/api/v1/user/@{encodeURIComponent(items('Lock_users_by_UserLogin'))}` | — |
 
 </details>
 

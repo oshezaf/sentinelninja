@@ -28,23 +28,32 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 0 |
-| `azuremonitorlogs_1` | Managed | 0 | 1 |
-| `office365` | Managed | 1 | 0 |
-| `office365_1` | Managed | 0 | 1 |
-| `teams` | Managed | 1 | 0 |
-| `teams_1` | Managed | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 0 |
+| [`azuremonitorlogs_1`](../logic-apps/managed-azuremonitorlogs-1.md) | Managed | 0 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
+| [`office365_1`](../logic-apps/managed-office365-1.md) | Managed | 0 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`teams_1`](../logic-apps/managed-teams-1.md) | Managed | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs_1`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs_1`](../logic-apps/managed-azuremonitorlogs-1.md) (Managed)
 
-**`office365_1`** (managedApi):
-- *Send_an_email_*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
 
-**`teams_1`** (managedApi):
-- *Post_a_message_in_a_Teams_channel*: method=`post`, path=`/flowbot/actions/notification/recipienttypes/channel`
+#### [`office365_1`](../logic-apps/managed-office365-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_ | post | `/v2/Mail` | — |
+
+#### [`teams_1`](../logic-apps/managed-teams-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_a_message_in_a_Teams_channel | post | `/flowbot/actions/notification/recipienttypes/channel` | — |
 
 </details>
 

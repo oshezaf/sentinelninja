@@ -20,25 +20,31 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 3 |
-| `azuresentinel` | Managed | 1 | 8 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 8 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Each_Host_Data*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Data*: method=`post`, path=`/api/logs`
-- *Send_certificate_data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_1*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_5*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_6*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_7*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_8*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Each_Host_Data | post | `/api/logs` | — |
+| Send_Web_Property_Data | post | `/api/logs` | — |
+| Send_certificate_data | post | `/api/logs` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_1 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_5 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_6 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_7 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_8 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
 </details>
 

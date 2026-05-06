@@ -20,20 +20,26 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `azuresentinel_2` | Managed | 0 | 2 |
-| `teams` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`azuresentinel_2`](../logic-apps/managed-azuresentinel-2.md) | Managed | 0 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel_2`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel_2`](../logic-apps/managed-azuresentinel-2.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Call_To_Add_Remove_IP_or_Domain_in_Selected_Name_List*: method=`PATCH`, uri=`@{variables('base_url')}/api/atcfw/v1/named_lists/@{variables('list_id')}/items`
-- *HTTP_Call_For_Get_List_For_Named_List_Endpoint*: method=`GET`, uri=`@{variables('base_url')}/api/atcfw/v1/named_lists`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Call_To_Add_Remove_IP_or_Domain_in_Selected_Name_List | PATCH | `@{variables('base_url')}/api/atcfw/v1/named_lists/@{variables('list_id')}/items` | — |
+| HTTP_Call_For_Get_List_For_Named_List_Endpoint | GET | `@{variables('base_url')}/api/atcfw/v1/named_lists` | — |
 
 </details>
 

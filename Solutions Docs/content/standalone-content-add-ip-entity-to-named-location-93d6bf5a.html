@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -70,13 +70,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get-Named-Location*: method=`GET`, uri=`https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}`
-- *Get-Named-Location-Id*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations?$filter=displayName%20eq%20'@{encodeUriComponent(variables('namedLocationName'))}'`
-- *Update-Named-Location*: method=`PATCH`, uri=`https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get-Named-Location | GET | `https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}` | — |
+| Get-Named-Location-Id | GET | `https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations?$filter=displayName%20eq%20'@{encodeUriComponent(variables('namedLocationName'))}'` | — |
+| Update-Named-Location | PATCH | `https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}` | — |
 
 </details>
 

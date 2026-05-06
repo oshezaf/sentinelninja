@@ -75,13 +75,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -90,12 +90,18 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`http`** (builtin):
-- *Send_Authorization_Callout*: method=`POST`, uri=`[concat('', parameters('GCURL'), '/api/v3.0/authenticate')]`
-- *Send_Get_Assets_Callout*: method=`GET`, uri=`[concat('', parameters('GCURL'), '/api/v3.0/assets')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Authorization_Callout | POST | `[concat('', parameters('GCURL'), '/api/v3.0/authenticate')]` | — |
+| Send_Get_Assets_Callout | GET | `[concat('', parameters('GCURL'), '/api/v3.0/assets')]` | — |
 
 </details>
 

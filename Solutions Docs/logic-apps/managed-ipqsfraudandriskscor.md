@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 5 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/ipqsfraudandriskscor/](https://learn.microsoft.com/en-us/connectors/ipqsfraudandriskscor/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/ipqsfraudandriskscor/) |
 
 ## Playbooks Using This Connector
 

@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 3 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/sentinelmcp/](https://learn.microsoft.com/en-us/connectors/sentinelmcp/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/sentinelmcp/) |
 
 ## Playbooks Using This Connector
 

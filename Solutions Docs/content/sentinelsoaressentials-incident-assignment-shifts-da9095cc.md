@@ -20,29 +20,44 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
-| `office365` | Managed | 1 | 1 |
-| `shifts` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`shifts`](../logic-apps/managed-shifts.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_-_Get_user_with_low_assignment_*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_-_Get_user_with_low_assignment_ | post | `/queryData` | — |
 
-**`office365`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`shifts`** (managedApi):
-- *List_all_shifts*: method=`get`, path=`/v1.0/teams/@{encodeURIComponent('')}/schedule/shifts`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_total_incidents_for_user*: method=`GET`, uri=`[uriComponentToString(uri(variables('azure'),'subscriptions/@{triggerBody()?[''workspaceInfo'']?[''SubscriptionId'']}/resourceGroups/@{triggerBody()?[''workspaceInfo'']?[''ResourceGroupName'']}/providers/Microsoft.OperationalInsights/workspaces/@{triggerBody()?[''workspaceInfo'']?[''WorkspaceName'']}/providers/Microsoft.SecurityInsights/Incidents?api-version=2020-01-01&$filter=(properties/owner/objectId eq ''@{items(''For_each_Shifts_list'')?[''userId'']}'' and properties/createdTimeUtc ge @{items(''For_each_Shifts_list'')?[''sharedShift'']?[''startDateTime'']})&$top=1000'))]`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`shifts`](../logic-apps/managed-shifts.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| List_all_shifts | get | `/v1.0/teams/@{encodeURIComponent('')}/schedule/shifts` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_total_incidents_for_user | GET | `[uriComponentToString(uri(variables('azure'),'subscriptions/@{triggerBody()?[''workspaceInfo'']?[''SubscriptionId'']}/resourceGroups/@{triggerBody()?[''workspaceInfo'']?[''ResourceGroupName'']}/providers/Microsoft.OperationalInsights/workspaces/@{triggerBody()?[''workspaceInfo'']?[''WorkspaceName'']}/providers/Microsoft.SecurityInsights/Incidents?api-version=2020-01-01&$filter=(properties/owner/objectId eq ''@{items(''For_each_Shifts_list'')?[''userId'']}'' and properties/createdTimeUtc ge @{items(''For_each_Shifts_list'')?[''sharedShift'']?[''startDateTime'']})&$top=1000'))]` | — |
 
 </details>
 

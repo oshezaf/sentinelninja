@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `reversinglabstitaniu` | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`reversinglabstitaniu`](../logic-apps/managed-reversinglabstitaniu.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`reversinglabstitaniu`** (managedApi):
-- *Get_file_analysis_(single_query)*: method=`get`, path=`/api/databrowser/rldata/query/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Algorithm'])}/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Value'])}`
-- *Get_file_reputation_(single_query)*: method=`get`, path=`/api/databrowser/malware_presence/query/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Algorithm'])}/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Value'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`reversinglabstitaniu`](../logic-apps/managed-reversinglabstitaniu.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_file_analysis_(single_query) | get | `/api/databrowser/rldata/query/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Algorithm'])}/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Value'])}` | — |
+| Get_file_reputation_(single_query) | get | `/api/databrowser/malware_presence/query/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Algorithm'])}/@{encodeURIComponent(items('For_each_-_File_hash_reputation')?['Value'])}` | — |
 
 </details>
 

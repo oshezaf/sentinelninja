@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_attachments_comment*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_tags*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Alert_Details*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}`
-- *Get_Attachment*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}`
-- *Get_Analysis_Report*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_attachments_comment | post | `/Incidents/Comment` | — |
+| Update_incident_tags | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Alert_Details | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}` | — |
+| Get_Attachment | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}` | — |
+| Get_Analysis_Report | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report` | — |
 
 </details>
 

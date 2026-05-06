@@ -20,25 +20,37 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 1 |
-| `office365` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Secret_API_Key*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('KeySecretName'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
-**`office365`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP-_Start_Scan*: method=`GET`, uri=`[concat('https://', parameters('SpiderfootSubdomain'), '.hx.spiderfoot.net/api?func=scanstart&apikey=@{body(''Get_Secret_API_Key'')?[''value'']}&name=ScanFromSentinel@{formatDateTime(utcNow(), ''MMddyyyy'')}&target=@{variables(''Scan Targets'')}&options=iterate_names=0,correlations=1&modules=sfp_haveibeenpwned')]`
-- *HTTP-_Scan_Status*: method=`GET`, uri=`[concat('https://', parameters('SpiderfootSubdomain'), '.hx.spiderfoot.net/api?func=scanstatus&apikey=@{body(''Get_Secret_API_Key'')?[''value'']}&id=@{variables(''Scan ID'')}')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret_API_Key | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('KeySecretName'), ''')}/value')]` | — |
+
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP-_Start_Scan | GET | `[concat('https://', parameters('SpiderfootSubdomain'), '.hx.spiderfoot.net/api?func=scanstart&apikey=@{body(''Get_Secret_API_Key'')?[''value'']}&name=ScanFromSentinel@{formatDateTime(utcNow(), ''MMddyyyy'')}&target=@{variables(''Scan Targets'')}&options=iterate_names=0,correlations=1&modules=sfp_haveibeenpwned')]` | — |
+| HTTP-_Scan_Status | GET | `[concat('https://', parameters('SpiderfootSubdomain'), '.hx.spiderfoot.net/api?func=scanstatus&apikey=@{body(''Get_Secret_API_Key'')?[''value'']}&id=@{variables(''Scan ID'')}')]` | — |
 
 </details>
 

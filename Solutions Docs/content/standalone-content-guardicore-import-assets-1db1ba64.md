@@ -28,17 +28,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`http`** (builtin):
-- *Send_Authorization_Callout*: method=`POST`, uri=`[concat('', parameters('GCURL'), '/api/v3.0/authenticate')]`
-- *Send_Get_Assets_Callout*: method=`GET`, uri=`[concat('', parameters('GCURL'), '/api/v3.0/assets')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Authorization_Callout | POST | `[concat('', parameters('GCURL'), '/api/v3.0/authenticate')]` | — |
+| Send_Get_Assets_Callout | GET | `[concat('', parameters('GCURL'), '/api/v3.0/assets')]` | — |
 
 </details>
 

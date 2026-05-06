@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -70,12 +70,18 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Watchlists_-_Get_all_Collection_Times*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent(parameters('watchlistName'))}/watchlistItems`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Current_Workflow_Definition*: method=`GET`, uri=`@concat(parameters('environmentResourceManagerUrl'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Logic/workflows/', body('Parse_setting')?['properties.itemsKeyValue']?['CollectionPlaybookName'], '?api-version=', parameters('logicAppsApiVersion'))`
-- *Update_Events_Workflow*: method=`PUT`, uri=`@concat(parameters('environmentResourceManagerUrl'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Logic/workflows/', body('Parse_setting')?['properties.itemsKeyValue']?['CollectionPlaybookName'], '?api-version=', parameters('logicAppsApiVersion'))`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Watchlists_-_Get_all_Collection_Times | get | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent(parameters('watchlistName'))}/watchlistItems` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Current_Workflow_Definition | GET | `@concat(parameters('environmentResourceManagerUrl'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Logic/workflows/', body('Parse_setting')?['properties.itemsKeyValue']?['CollectionPlaybookName'], '?api-version=', parameters('logicAppsApiVersion'))` | — |
+| Update_Events_Workflow | PUT | `@concat(parameters('environmentResourceManagerUrl'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Logic/workflows/', body('Parse_setting')?['properties.itemsKeyValue']?['CollectionPlaybookName'], '?api-version=', parameters('logicAppsApiVersion'))` | — |
 
 </details>
 

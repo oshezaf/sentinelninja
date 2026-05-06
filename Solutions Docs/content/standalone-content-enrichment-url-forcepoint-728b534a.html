@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>forcepointsmcapiconnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-forcepointsmcapiconnector.html"><code>forcepointsmcapiconnector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ForcepointSMC-Connector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-forcepointsmc-connector.html"><code>ForcepointSMC-Connector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
@@ -76,15 +76,21 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`forcepointsmcapiconnector`** (managedApi):
-- *Get_URLs_from_URL_list*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application/@{encodeURIComponent(last(split(items('For_each_URL_list')?['href'],'/')))}`
-- *Find_IP_or_URL_in_SMC*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements`
-- *Get_URL_List*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application`
-- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`forcepointsmcapiconnector`](../logic-apps/managed-forcepointsmcapiconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_URLs_from_URL_list | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application/@{encodeURIComponent(last(split(items('For_each_URL_list')?['href'],'/')))}` | — |
+| Find_IP_or_URL_in_SMC | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements` | — |
+| Get_URL_List | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application` | — |
+| Login | post | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/login` | — |
 
 </details>
 

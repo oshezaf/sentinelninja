@@ -28,25 +28,37 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_V2*: method=`post`, path=`/queryDataV2`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
 
-**`keyvault`** (managedApi):
-- *Get_Secret_-_API_Key*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('APIKeySecretName'), ''')}/value')]`
-- *Get_Secret_-_Application_Key*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('ApplicationKeySecretName'), ''')}/value')]`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Get_Events*: method=`GET`, uri=`[concat('https://', parameters('DatadogDomain'), '/api/v2/events?filter[from]=@{variables(''Unix Start Time'')}&filter[to]=@{variables(''Unix End Time'')}')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_V2 | post | `/queryDataV2` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret_-_API_Key | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('APIKeySecretName'), ''')}/value')]` | — |
+| Get_Secret_-_Application_Key | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('ApplicationKeySecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Events | GET | `[concat('https://', parameters('DatadogDomain'), '/api/v2/events?filter[from]=@{variables(''Unix Start Time'')}&filter[to]=@{variables(''Unix End Time'')}')]` | — |
 
 </details>
 

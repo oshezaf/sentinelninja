@@ -20,23 +20,32 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 0 |
-| `keyvault_1` | Managed | 0 | 2 |
-| `RubrikCustomConnector` | Custom | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 0 |
+| [`keyvault_1`](../logic-apps/managed-keyvault-1.md) | Managed | 0 | 2 |
+| [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) | Custom | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault_1`** (managedApi):
-- *Get_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *Get_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
 
-**`RubrikCustomConnector`** (customApi):
-- *Authentication*: method=`post`, path=`/api/client_token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| Get_ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
 
-**`http`** (builtin):
-- *GPS_Async_Result*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_Async_Results*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Authentication | post | `/api/client_token` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GPS_Async_Result | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_Async_Results | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
 
 </details>
 

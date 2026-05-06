@@ -33,51 +33,72 @@ This playbook uses **7** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 3 |
-| `azuresentinel` | Managed | 1 | 10 |
-| `excelonlinebusiness` | Managed | 1 | 2 |
-| `office365` | Managed | 1 | 2 |
-| `teams` | Managed | 1 | 2 |
-| `wdatp` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 10 |
+| [`excelonlinebusiness`](../logic-apps/managed-excelonlinebusiness.md) | Managed | 1 | 2 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 2 |
+| [`wdatp`](../logic-apps/managed-wdatp.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_-_Remote_Access_connections*: method=`post`, path=`/queryData`
-- *Get_all_logs_from_the_attacker_machine_2*: method=`post`, path=`/queryData`
-- *Get_all_logs_from_the_attacker_machine*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Close_incident_with_reason_-_Sent_from_Engineering_Station*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Status/@{encodeURIComponent('Closed')}`
-- *Resolve_incident_-_Authorized_PC*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Status/@{encodeURIComponent('Closed')}`
-- *Change_incident_severity_to_critical*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('Critical')}`
-- *Change_incident_severity_to_high*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('High')}`
-- *Enrich_incident_with_investigation_details*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}`
-- *Enrich_the_incident_with_the_logs_2*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}`
-- *Raise_incident_severity_to_high_2*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('High')}`
-- *Enrich_the_incident_with_the_logs*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}`
-- *Raise_incident_severity_to_high*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('High')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_-_Remote_Access_connections | post | `/queryData` | — |
+| Get_all_logs_from_the_attacker_machine_2 | post | `/queryData` | — |
+| Get_all_logs_from_the_attacker_machine | post | `/queryData` | — |
 
-**`excelonlinebusiness`** (managedApi):
-- *Get_a_row_-_Look_for_IP_address_in_Authorized_PCs*: method=`get`, path=`/drives/@{encodeURIComponent('')}/files/@{encodeURIComponent('')}/tables/@{encodeURIComponent('{}')}/items/@{encodeURIComponent(encodeURIComponent(items('For_each_2')?['Address']))}`
-- *Get_a_row*: method=`get`, path=`/drives/@{encodeURIComponent('b!79ydF-l5akakWEPLRYRmfwN1MtPhqNZHoIJxp6doXEZZX9DLHdm8T6FXj7AHSJ6i')}/files/@{encodeURIComponent('01QES7VSN32ZDFMJSCJBAJ2F3EHL2BXONF')}/tables/@{encodeURIComponent('Table1')}/items/@{encodeURIComponent(encodeURIComponent(items('For_each_2')?['Address']))}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`office365`** (managedApi):
-- *Notify_by_email_to_stakeholders_2*: method=`post`, path=`/v2/Mail`
-- *Notify_by_email_to_stakeholders*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Close_incident_with_reason_-_Sent_from_Engineering_Station | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Status/@{encodeURIComponent('Closed')}` | — |
+| Resolve_incident_-_Authorized_PC | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Status/@{encodeURIComponent('Closed')}` | — |
+| Change_incident_severity_to_critical | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('Critical')}` | — |
+| Change_incident_severity_to_high | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('High')}` | — |
+| Enrich_incident_with_investigation_details | put | `/Comment/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}` | — |
+| Enrich_the_incident_with_the_logs_2 | put | `/Comment/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}` | — |
+| Raise_incident_severity_to_high_2 | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('High')}` | — |
+| Enrich_the_incident_with_the_logs | put | `/Comment/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}` | — |
+| Raise_incident_severity_to_high | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('High')}` | — |
 
-**`teams`** (managedApi):
-- *Send_a_Teams_message_to_the_SOC_for_critical_IT-OT_threat*: method=`post`, path=`/v3/beta/teams/@{encodeURIComponent('teamsid')}/channels/@{encodeURIComponent('channel')}/messages`
-- *Send_a_Teams_message_to_the_SOC_for_IT-OT_threat*: method=`post`, path=`/v3/beta/teams/@{encodeURIComponent('teamid')}/channels/@{encodeURIComponent('channelid')}/messages`
+#### [`excelonlinebusiness`](../logic-apps/managed-excelonlinebusiness.md) (Managed)
 
-**`wdatp`** (managedApi):
-- *Actions_-_Isolate_machine*: method=`post`, path=`/api/machines/@{encodeURIComponent('machineID')}/isolate`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_a_row_-_Look_for_IP_address_in_Authorized_PCs | get | `/drives/@{encodeURIComponent('')}/files/@{encodeURIComponent('')}/tables/@{encodeURIComponent('{}')}/items/@{encodeURIComponent(encodeURIComponent(items('For_each_2')?['Address']))}` | — |
+| Get_a_row | get | `/drives/@{encodeURIComponent('b!79ydF-l5akakWEPLRYRmfwN1MtPhqNZHoIJxp6doXEZZX9DLHdm8T6FXj7AHSJ6i')}/files/@{encodeURIComponent('01QES7VSN32ZDFMJSCJBAJ2F3EHL2BXONF')}/tables/@{encodeURIComponent('Table1')}/items/@{encodeURIComponent(encodeURIComponent(items('For_each_2')?['Address']))}` | — |
 
-**`http`** (builtin):
-- *HTTP_-_get_machine_by_IP_address*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/findbyip(ip='@{first(body('Run_query_and_list_results_-_Remote_Access_connections')?['value'])?['SourceIp']}',timestamp=@{utcNow()})`
-- *Gather_all_PC_alerts_in_MDATP*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/ips/@{items('For_each_2')?['Address']}/alerts`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Notify_by_email_to_stakeholders_2 | post | `/v2/Mail` | — |
+| Notify_by_email_to_stakeholders | post | `/v2/Mail` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_a_Teams_message_to_the_SOC_for_critical_IT-OT_threat | post | `/v3/beta/teams/@{encodeURIComponent('teamsid')}/channels/@{encodeURIComponent('channel')}/messages` | — |
+| Send_a_Teams_message_to_the_SOC_for_IT-OT_threat | post | `/v3/beta/teams/@{encodeURIComponent('teamid')}/channels/@{encodeURIComponent('channelid')}/messages` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Actions_-_Isolate_machine | post | `/api/machines/@{encodeURIComponent('machineID')}/isolate` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_get_machine_by_IP_address | GET | `https://api.securitycenter.windows.com/api/machines/findbyip(ip='@{first(body('Run_query_and_list_results_-_Remote_Access_connections')?['value'])?['SourceIp']}',timestamp=@{utcNow()})` | — |
+| Gather_all_PC_alerts_in_MDATP | GET | `https://api.securitycenter.windows.com/api/ips/@{items('For_each_2')?['Address']}/alerts` | — |
 
 </details>
 

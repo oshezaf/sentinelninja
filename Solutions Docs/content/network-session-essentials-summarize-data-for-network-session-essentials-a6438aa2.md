@@ -36,32 +36,38 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 9 |
-| `azuremonitorlogs` | Managed | 1 | 9 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 9 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 9 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_-_IP*: method=`post`, path=`/api/logs`
-- *Send_Data_-_Port*: method=`post`, path=`/api/logs`
-- *Send_Data_-_GeoCountry*: method=`post`, path=`/api/logs`
-- *Send_Data_-_Overall*: method=`post`, path=`/api/logs`
-- *Send_Data_-_Protocol*: method=`post`, path=`/api/logs`
-- *Send_Data_-_SourceInfo*: method=`post`, path=`/api/logs`
-- *Send_Data_-_Threat*: method=`post`, path=`/api/logs`
-- *Send_Data_-_Threat_IOC*: method=`post`, path=`/api/logs`
-- *Send_Data_-_Rule*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_-_IP*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_Port*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_GeoCountry*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_Overall*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_Protocol*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_Rules*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_SourceInfo*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_Threat*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_-_Threat_IOC*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_IP | post | `/api/logs` | — |
+| Send_Data_-_Port | post | `/api/logs` | — |
+| Send_Data_-_GeoCountry | post | `/api/logs` | — |
+| Send_Data_-_Overall | post | `/api/logs` | — |
+| Send_Data_-_Protocol | post | `/api/logs` | — |
+| Send_Data_-_SourceInfo | post | `/api/logs` | — |
+| Send_Data_-_Threat | post | `/api/logs` | — |
+| Send_Data_-_Threat_IOC | post | `/api/logs` | — |
+| Send_Data_-_Rule | post | `/api/logs` | — |
+
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_-_IP | post | `/queryData` | — |
+| Run_query_and_list_results_-_Port | post | `/queryData` | — |
+| Run_query_and_list_results_-_GeoCountry | post | `/queryData` | — |
+| Run_query_and_list_results_-_Overall | post | `/queryData` | — |
+| Run_query_and_list_results_-_Protocol | post | `/queryData` | — |
+| Run_query_and_list_results_-_Rules | post | `/queryData` | — |
+| Run_query_and_list_results_-_SourceInfo | post | `/queryData` | — |
+| Run_query_and_list_results_-_Threat | post | `/queryData` | — |
+| Run_query_and_list_results_-_Threat_IOC | post | `/queryData` | — |
 
 </details>
 

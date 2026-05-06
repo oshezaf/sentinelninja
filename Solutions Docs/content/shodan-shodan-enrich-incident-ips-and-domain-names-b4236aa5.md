@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `ShodanCustomConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`ShodanCustomConnector`](../logic-apps/custom-shodancustomconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ShodanCustomConnector`** (customApi):
-- *ResolveDomainName*: method=`get`, path=`/dns/resolve`
-- *GetServiceDetailsForIP*: method=`get`, path=`/shodan/host/@{encodeURIComponent(items('For_each_IP_Address'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`ShodanCustomConnector`](../logic-apps/custom-shodancustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| ResolveDomainName | get | `/dns/resolve` | — |
+| GetServiceDetailsForIP | get | `/shodan/host/@{encodeURIComponent(items('For_each_IP_Address'))}` | — |
 
 </details>
 

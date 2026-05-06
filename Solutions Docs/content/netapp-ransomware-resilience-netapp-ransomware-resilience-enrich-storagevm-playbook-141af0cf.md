@@ -20,13 +20,16 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Call_Auth_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]`
-- *Get_StorageVM_Data*: method=`GET`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/enrich/storage?agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Call_Auth_Playbook | POST | `[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]` | — |
+| Get_StorageVM_Data | GET | `https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/enrich/storage?agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}` | — |
 
 </details>
 

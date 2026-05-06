@@ -20,19 +20,25 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Get_Domains*: method=`post`, path=`/queryDataV2`
-- *Get_IPs*: method=`post`, path=`/queryDataV2`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`http`** (builtin):
-- *Send_IPs_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
-- *Send_Domains_to_Sentinel*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/tiIndicators`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Domains | post | `/queryDataV2` | — |
+| Get_IPs | post | `/queryDataV2` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_IPs_to_Sentinel | POST | `https://graph.microsoft.com/beta/security/tiIndicators` | — |
+| Send_Domains_to_Sentinel | POST | `https://graph.microsoft.com/beta/security/tiIndicators` | — |
 
 </details>
 

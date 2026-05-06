@@ -20,23 +20,32 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 3 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Add_IP*: method=`PUT`, uri=`[concat(parameters('Zscaler Admin Url'), '/api/v1/urlCategories/@{variables(''Category'')}?action=ADD_TO_LIST')]`
-- *HTTP_Activate_Changes*: method=`POST`, uri=`[concat(parameters('Zscaler Admin Url'), '/api/v1/status/activate')]`
-- *HTTP_Delete_Api_Session*: method=`DELETE`, uri=`[concat(parameters('Zscaler Admin Url'), '/api/v1/authenticatedSession')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
 
-**`workflow`** (builtin):
-- *zscaler*: workflowId=`[variables('ZscalerAuthenticationFlow')]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Add_IP | PUT | `[concat(parameters('Zscaler Admin Url'), '/api/v1/urlCategories/@{variables(''Category'')}?action=ADD_TO_LIST')]` | — |
+| HTTP_Activate_Changes | POST | `[concat(parameters('Zscaler Admin Url'), '/api/v1/status/activate')]` | — |
+| HTTP_Delete_Api_Session | DELETE | `[concat(parameters('Zscaler Admin Url'), '/api/v1/authenticatedSession')]` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| zscaler | — | — | workflowId=`[variables('ZscalerAuthenticationFlow')]`<br>triggerName=`manual` |
 
 </details>
 

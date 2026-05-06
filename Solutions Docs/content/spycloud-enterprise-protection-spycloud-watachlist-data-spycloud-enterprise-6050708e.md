@@ -20,19 +20,25 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
-| `spycloud-enterprise-connector` | Managed | 0 | 2 |
-| `SpyCloud-Enterprise-Protection` | Custom | 1 | 0 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
+| [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) | Managed | 0 | 2 |
+| [`SpyCloud-Enterprise-Protection`](../logic-apps/custom-spycloud-enterprise-protection.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Save_Modified_Records_to_Custom_Logs_Table*: method=`post`, path=`/api/logs`
-- *Save_New_Records_to_Custom_Logs_Table*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`spycloud-enterprise-connector`** (managedApi):
-- *Get_Breach_Data_for_Entire_Watchlist_2*: method=`get`, path=`/breach/data/watchlist`
-- *Get_Breach_Data_for_Entire_Watchlist*: method=`get`, path=`/breach/data/watchlist`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Save_Modified_Records_to_Custom_Logs_Table | post | `/api/logs` | — |
+| Save_New_Records_to_Custom_Logs_Table | post | `/api/logs` | — |
+
+#### [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Breach_Data_for_Entire_Watchlist_2 | get | `/breach/data/watchlist` | — |
+| Get_Breach_Data_for_Entire_Watchlist | get | `/breach/data/watchlist` | — |
 
 </details>
 

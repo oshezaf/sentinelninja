@@ -20,24 +20,33 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `teams` | Managed | 1 | 1 |
-| `CarbonBlackCloudConnector` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
+| [`CarbonBlackCloudConnector`](../logic-apps/custom-carbonblackcloudconnector.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`teams`** (managedApi):
-- *Post_your_own_adaptive_card_as_the_Flow_bot_to_a_channel*: method=`post`, path=`/flowbot/actions/adaptivecard/recipienttypes/channel`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
 
-**`CarbonBlackCloudConnector`** (customApi):
-- *Search_devices_in_your_organization*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search`
-- *device_actions_QUARANTINE*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions`
-- *device_actions_UPDATE_POLICY*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_your_own_adaptive_card_as_the_Flow_bot_to_a_channel | post | `/flowbot/actions/adaptivecard/recipienttypes/channel` | — |
+
+#### [`CarbonBlackCloudConnector`](../logic-apps/custom-carbonblackcloudconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Search_devices_in_your_organization | post | `/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search` | — |
+| device_actions_QUARANTINE | post | `/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions` | — |
+| device_actions_UPDATE_POLICY | post | `/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions` | — |
 
 </details>
 

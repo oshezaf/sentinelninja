@@ -55,31 +55,31 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault_3</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault-3.html"><code>keyvault_3</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>workflow</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -88,20 +88,32 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault_3`** (managedApi):
-- *Get_Access_Token_For_Groups_Data*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Assign_Members_To_Group*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+#### [`keyvault_3`](../logic-apps/managed-keyvault-3.md) (Managed)
 
-**`teams`** (managedApi):
-- *Post_Message_For_No_Groups_Found*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token_For_Groups_Data | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Assign_Members_To_Group | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Available_Groups*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/groups`
-- *HTTP_Request_To_Assign_Members_To_Group*: method=`PATCH`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('selected_group')}`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_Message_For_No_Groups_Found | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Available_Groups | GET | `@{variables('base_url')}/api/@{variables('api_version')}/groups` | — |
+| HTTP_Request_To_Assign_Members_To_Group | PATCH | `@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('selected_group')}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

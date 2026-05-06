@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Call_Auth_Playbook*: method=`POST`, uri=`[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]`
-- *Initial_Status_Check*: method=`GET`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/job/status?source=@{variables('Source')}&job_id=@{variables('JobId')}&agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}`
-- *Check_Job_Status*: method=`GET`, uri=`https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/job/status?source=@{variables('Source')}&job_id=@{variables('JobId')}&agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Call_Auth_Playbook | POST | `[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]` | — |
+| Initial_Status_Check | GET | `https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/job/status?source=@{variables('Source')}&job_id=@{variables('JobId')}&agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}` | — |
+| Check_Job_Status | GET | `https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/job/status?source=@{variables('Source')}&job_id=@{variables('JobId')}&agent_id=@{variables('AgentId')}&system_id=@{variables('SystemId')}` | — |
 
 </details>
 

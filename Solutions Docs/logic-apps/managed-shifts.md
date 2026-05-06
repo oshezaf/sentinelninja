@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/shifts/](https://learn.microsoft.com/en-us/connectors/shifts/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/shifts/) |
 
 ## Playbooks Using This Connector
 

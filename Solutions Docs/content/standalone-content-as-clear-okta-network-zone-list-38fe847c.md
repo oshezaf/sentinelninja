@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Update_Network_Zone*: method=`PUT`, uri=`[concat('https://', parameters('OktaSubdomain') ,'.okta.com/api/v1/zones/@{variables(''Network Zone Object'')?[''id'']}')]`
-- *HTTP_-_Get_Network_Zones*: method=`GET`, uri=`[concat('https://', parameters('OktaSubdomain') ,'.okta.com/api/v1/zones')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Update_Network_Zone | PUT | `[concat('https://', parameters('OktaSubdomain') ,'.okta.com/api/v1/zones/@{variables(''Network Zone Object'')?[''id'']}')]` | — |
+| HTTP_-_Get_Network_Zones | GET | `[concat('https://', parameters('OktaSubdomain') ,'.okta.com/api/v1/zones')]` | — |
 
 </details>
 

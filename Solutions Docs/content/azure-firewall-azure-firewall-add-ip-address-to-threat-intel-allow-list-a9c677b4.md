@@ -20,26 +20,35 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `teams` | Managed | 1 | 0 |
-| `virustotal` | Managed | 1 | 1 |
-| `AzureFirewallConnector` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`virustotal`](../logic-apps/managed-virustotal.md) | Managed | 1 | 1 |
+| [`AzureFirewallConnector`](../logic-apps/custom-azurefirewallconnector.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_with_the_endpoint_information_and_action_taken*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`virustotal`** (managedApi):
-- *Ip_scan_report_V3*: method=`get`, path=`/api/v3/ip_addresses/@{encodeURIComponent(items('Each_malicious_IP_Address_Entity_present_in_the_Incident')?['Address'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_with_the_endpoint_information_and_action_taken | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
 
-**`AzureFirewallConnector`** (customApi):
-- *Creates_or_updates_the_specified_Firewall_Policy*: method=`put`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/firewallPolicies/@{encodeURIComponent(outputs('Firewall_policy_name'))}`
-- *Gets_the_specified_Firewall_Policy*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/firewallPolicies/@{encodeURIComponent(outputs('Firewall_policy_name'))}`
-- *Gets_all_the_Firewall_Policies_in_a_subscription*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/providers/Microsoft.Network/firewallPolicies`
+#### [`virustotal`](../logic-apps/managed-virustotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Ip_scan_report_V3 | get | `/api/v3/ip_addresses/@{encodeURIComponent(items('Each_malicious_IP_Address_Entity_present_in_the_Incident')?['Address'])}` | — |
+
+#### [`AzureFirewallConnector`](../logic-apps/custom-azurefirewallconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Creates_or_updates_the_specified_Firewall_Policy | put | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/firewallPolicies/@{encodeURIComponent(outputs('Firewall_policy_name'))}` | — |
+| Gets_the_specified_Firewall_Policy | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(outputs('Resource_Group_name'))}/providers/Microsoft.Network/firewallPolicies/@{encodeURIComponent(outputs('Firewall_policy_name'))}` | — |
+| Gets_all_the_Firewall_Policies_in_a_subscription | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/providers/Microsoft.Network/firewallPolicies` | — |
 
 </details>
 

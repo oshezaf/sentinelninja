@@ -20,22 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `conversionservice` | Managed | 1 | 1 |
-| `office365` | Managed | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`conversionservice`](../logic-apps/managed-conversionservice.md) | Managed | 1 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Create_incident*: method=`put`, path=`/Incidents/subscriptions/@{encodeURIComponent(parameters('Subscription'))}/resourceGroups/@{encodeURIComponent(parameters('Resource Group'))}/workspaces/@{encodeURIComponent(parameters('Workspace Name'))}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`conversionservice`** (managedApi):
-- *Email_body_to_text*: method=`post`, path=`/html2text`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_incident | put | `/Incidents/subscriptions/@{encodeURIComponent(parameters('Subscription'))}/resourceGroups/@{encodeURIComponent(parameters('Resource Group'))}/workspaces/@{encodeURIComponent(parameters('Workspace Name'))}` | — |
 
-**`office365`** (managedApi):
-- *Send_an_email_from_a_shared_mailbox_(V2)*: method=`post`, path=`/v2/SharedMailbox/Mail`
-- *Send_an_email_from_a_shared_mailbox_(V2)_3*: method=`post`, path=`/v2/SharedMailbox/Mail`
-- *When_a_new_email_arrives_in_a_shared_mailbox_(V2)*: method=`get`, path=`/v2/SharedMailbox/Mail/OnNewEmail`
+#### [`conversionservice`](../logic-apps/managed-conversionservice.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Email_body_to_text | post | `/html2text` | — |
+
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_from_a_shared_mailbox_(V2) | post | `/v2/SharedMailbox/Mail` | — |
+| Send_an_email_from_a_shared_mailbox_(V2)_3 | post | `/v2/SharedMailbox/Mail` | — |
+| When_a_new_email_arrives_in_a_shared_mailbox_(V2) | get | `/v2/SharedMailbox/Mail/OnNewEmail` | — |
 
 </details>
 

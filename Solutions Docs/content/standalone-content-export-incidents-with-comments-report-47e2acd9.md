@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `office365` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`office365`** (managedApi):
-- *Send_an_email_from_a_shared_mailbox_(V2)*: method=`post`, path=`/v2/SharedMailbox/Mail`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Incident_Comments*: method=`GET`, uri=`https://management.azure.com/subscriptions/@{variables('Settings')['subscriptionId']}/resourcegroups/@{variables('Settings')['resourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{variables('Settings')['logWorkspace']}/providers/Microsoft.SecurityInsights/incidents/@{items('For_each')?['name']}/comments?api-version=2019-01-01-preview`
-- *Get_incidents*: method=`GET`, uri=`@variables('requestUrl')`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_from_a_shared_mailbox_(V2) | post | `/v2/SharedMailbox/Mail` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Incident_Comments | GET | `https://management.azure.com/subscriptions/@{variables('Settings')['subscriptionId']}/resourcegroups/@{variables('Settings')['resourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{variables('Settings')['logWorkspace']}/providers/Microsoft.SecurityInsights/incidents/@{items('For_each')?['name']}/comments?api-version=2019-01-01-preview` | — |
+| Get_incidents | GET | `@variables('requestUrl')` | — |
 
 </details>
 

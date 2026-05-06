@@ -20,25 +20,37 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 0 |
-| `keyvault_3` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 1 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 0 |
+| [`keyvault_3`](../logic-apps/managed-keyvault-3.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_Comment_To_Incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault_3`** (managedApi):
-- *Get_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Comment_To_Incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Add_Note_To_Vectra_Entity*: method=`POST`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/entities/@{int(variables('entity_id'))}/notes`
+#### [`keyvault_3`](../logic-apps/managed-keyvault-3.md) (Managed)
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Add_Note_To_Vectra_Entity | POST | `@{variables('base_url')}/api/@{variables('api_version')}/entities/@{int(variables('entity_id'))}/notes` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

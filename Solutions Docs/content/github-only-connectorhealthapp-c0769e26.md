@@ -20,22 +20,31 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `office365` | Managed | 1 | 1 |
-| `teams` | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Heartbeat_Query*: method=`post`, path=`/visualizeQuery`
-- *Ingestion_Anomaly_Query*: method=`post`, path=`/visualizeQuery`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_an_email_to_the_SOC_Team*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Heartbeat_Query | post | `/visualizeQuery` | — |
+| Ingestion_Anomaly_Query | post | `/visualizeQuery` | — |
 
-**`teams`** (managedApi):
-- *Post_a_message_as_the_Flow_bot_to_a_channel*: method=`post`, path=`/flowbot/actions/notification/recipienttypes/channel`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_to_the_SOC_Team | post | `/v2/Mail` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_a_message_as_the_Flow_bot_to_a_channel | post | `/flowbot/actions/notification/recipienttypes/channel` | — |
 
 </details>
 

@@ -20,23 +20,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 0 | 6 |
-| `smtp` | Managed | 0 | 3 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 0 | 6 |
+| [`smtp`](../logic-apps/managed-smtp.md) | Managed | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_daily_report_query_and_list_results*: method=`post`, path=`/queryData`
-- *Get_Daily_Report_List*: method=`post`, path=`/queryData`
-- *Run_monthly_queries_and_list_results*: method=`post`, path=`/queryData`
-- *Get_Monthly_Report_List*: method=`post`, path=`/queryData`
-- *Run_weekly_queries_and_list_results*: method=`post`, path=`/queryData`
-- *Get_Weekly_Report_List*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`smtp`** (managedApi):
-- *Send_Daily_Emails*: method=`post`, path=`/SendEmailV3`
-- *Send_Monthly_Emails*: method=`post`, path=`/SendEmailV3`
-- *Send_Weekly_Emails*: method=`post`, path=`/SendEmailV3`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_daily_report_query_and_list_results | post | `/queryData` | — |
+| Get_Daily_Report_List | post | `/queryData` | — |
+| Run_monthly_queries_and_list_results | post | `/queryData` | — |
+| Get_Monthly_Report_List | post | `/queryData` | — |
+| Run_weekly_queries_and_list_results | post | `/queryData` | — |
+| Get_Weekly_Report_List | post | `/queryData` | — |
+
+#### [`smtp`](../logic-apps/managed-smtp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Daily_Emails | post | `/SendEmailV3` | — |
+| Send_Monthly_Emails | post | `/SendEmailV3` | — |
+| Send_Weekly_Emails | post | `/SendEmailV3` | — |
 
 </details>
 

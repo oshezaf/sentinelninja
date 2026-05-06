@@ -20,27 +20,33 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 7 |
-| `ElasticSearchCustomConnector` | Custom | 1 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 7 |
+| [`ElasticSearchCustomConnector`](../logic-apps/custom-elasticsearchcustomconnector.md) | Custom | 1 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ElasticSearchCustomConnector`** (customApi):
-- *Run_Search_Account*: method=`post`, path=`/@{encodeURIComponent(variables('ElasticIndex'))}/_search`
-- *Run_Search_FileHash*: method=`post`, path=`/@{encodeURIComponent(variables('ElasticIndex'))}/_search`
-- *Run_Search_Host*: method=`post`, path=`/@{encodeURIComponent(variables('ElasticIndex'))}/_search`
-- *Run_Search*: method=`post`, path=`/@{encodeURIComponent(variables('ElasticIndex'))}/_search`
-- *Run_Search_URL*: method=`post`, path=`/@{encodeURIComponent(variables('ElasticIndex'))}/_search`
-- *Search_Shards*: method=`get`, path=`/@{encodeURIComponent('*')}/_search_shards`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`ElasticSearchCustomConnector`](../logic-apps/custom-elasticsearchcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Search_Account | post | `/@{encodeURIComponent(variables('ElasticIndex'))}/_search` | — |
+| Run_Search_FileHash | post | `/@{encodeURIComponent(variables('ElasticIndex'))}/_search` | — |
+| Run_Search_Host | post | `/@{encodeURIComponent(variables('ElasticIndex'))}/_search` | — |
+| Run_Search | post | `/@{encodeURIComponent(variables('ElasticIndex'))}/_search` | — |
+| Run_Search_URL | post | `/@{encodeURIComponent(variables('ElasticIndex'))}/_search` | — |
+| Search_Shards | get | `/@{encodeURIComponent('*')}/_search_shards` | — |
 
 </details>
 

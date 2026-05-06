@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get-Named-Location*: method=`GET`, uri=`https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}`
-- *Get-Named-Location-Id*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations?$filter=displayName%20eq%20'@{encodeUriComponent(variables('namedLocationName'))}'`
-- *Update-Named-Location*: method=`PATCH`, uri=`https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get-Named-Location | GET | `https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}` | — |
+| Get-Named-Location-Id | GET | `https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocations?$filter=displayName%20eq%20'@{encodeUriComponent(variables('namedLocationName'))}'` | — |
+| Update-Named-Location | PATCH | `https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{body('Get-Named-Location-Id')['value'][0]['id']}` | — |
 
 </details>
 

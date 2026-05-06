@@ -20,22 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Client_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('KeyVaultSecretName'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Revoke_user_sign_in_sessions*: method=`POST`, uri=`https://graph.microsoft.com/v1.0/users/@{variables('UPN')}/revokeSignInSessions`
-- *HTTP_-_Authenticate*: method=`POST`, uri=`[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('KeyVaultSecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Revoke_user_sign_in_sessions | POST | `https://graph.microsoft.com/v1.0/users/@{variables('UPN')}/revokeSignInSessions` | — |
+| HTTP_-_Authenticate | POST | `[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/v2.0/token')]` | — |
 
 </details>
 

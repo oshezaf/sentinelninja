@@ -20,37 +20,46 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 2 |
-| `microsoftsentinel` | Managed | 0 | 13 |
-| `teams` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 13 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Client_Id*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value`
-- *Get_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`microsoftsentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_high_severity*: method=`put`, path=`/Incidents`
-- *Update_incident_informational_severity*: method=`put`, path=`/Incidents`
-- *Update_incident_low_severity*: method=`put`, path=`/Incidents`
-- *Update_incident_medium_severity*: method=`put`, path=`/Incidents`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Update_incident_2*: method=`put`, path=`/Incidents`
-- *Update_incident_3*: method=`put`, path=`/Incidents`
-- *Update_incident_4*: method=`put`, path=`/Incidents`
-- *Update_incident_5*: method=`put`, path=`/Incidents`
-- *Update_incident_6*: method=`put`, path=`/Incidents`
-- *Update_incident_7*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_Id | get | `/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value` | — |
+| Get_Secret | get | `/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Add_list_of_destinations_to_destination_list*: method=`POST`, uri=`https://@{parameters('Host End Point')}/policies/v2/destinationlists/@{encodeURIComponent(body('Post_adaptive_card_and_wait_for_a_response')['data']['action_choices'])}/destinations`
-- *HTTP_-_Generate_Login_Token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/auth/v2/token`
-- *HTTP_-_Retrieve_all_destination_lists*: method=`GET`, uri=`https://@{parameters('Host End Point')}/policies/v2/destinationlists`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident_high_severity | put | `/Incidents` | — |
+| Update_incident_informational_severity | put | `/Incidents` | — |
+| Update_incident_low_severity | put | `/Incidents` | — |
+| Update_incident_medium_severity | put | `/Incidents` | — |
+| Update_incident | put | `/Incidents` | — |
+| Update_incident_2 | put | `/Incidents` | — |
+| Update_incident_3 | put | `/Incidents` | — |
+| Update_incident_4 | put | `/Incidents` | — |
+| Update_incident_5 | put | `/Incidents` | — |
+| Update_incident_6 | put | `/Incidents` | — |
+| Update_incident_7 | put | `/Incidents` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Add_list_of_destinations_to_destination_list | POST | `https://@{parameters('Host End Point')}/policies/v2/destinationlists/@{encodeURIComponent(body('Post_adaptive_card_and_wait_for_a_response')['data']['action_choices'])}/destinations` | — |
+| HTTP_-_Generate_Login_Token | POST | `https://@{parameters('Host End Point')}/auth/v2/token` | — |
+| HTTP_-_Retrieve_all_destination_lists | GET | `https://@{parameters('Host End Point')}/policies/v2/destinationlists` | — |
 
 </details>
 

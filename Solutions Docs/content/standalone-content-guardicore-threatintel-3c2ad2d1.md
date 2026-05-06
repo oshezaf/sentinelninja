@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `microsoftgraphsecurity` | Managed | 1 | 5 |
-| `http` | Built-in | 0 | 1 |
+| [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) | Managed | 1 | 5 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftgraphsecurity`** (managedApi):
-- *Create_tiIndicator_2*: method=`post`, path=`/beta/security/tiIndicators`
-- *Create_tiIndicator*: method=`post`, path=`/beta/security/tiIndicators`
-- *Create_Threat_Indicator_for_C2_IP*: method=`post`, path=`/beta/security/tiIndicators`
-- *Create_Threat_Indicator_for_Scanner*: method=`post`, path=`/beta/security/tiIndicators`
-- *Create_Threat_Indicator_for_Attacker*: method=`post`, path=`/beta/security/tiIndicators`
+#### [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP-_Get_GC_Data*: method=`GET`, uri=`https://threatintelligence.guardicore.com/downloads/latest.json`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_tiIndicator_2 | post | `/beta/security/tiIndicators` | — |
+| Create_tiIndicator | post | `/beta/security/tiIndicators` | — |
+| Create_Threat_Indicator_for_C2_IP | post | `/beta/security/tiIndicators` | — |
+| Create_Threat_Indicator_for_Scanner | post | `/beta/security/tiIndicators` | — |
+| Create_Threat_Indicator_for_Attacker | post | `/beta/security/tiIndicators` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP-_Get_GC_Data | GET | `https://threatintelligence.guardicore.com/downloads/latest.json` | — |
 
 </details>
 

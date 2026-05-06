@@ -20,21 +20,30 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 1 |
-| `CiscoISE` | Custom | 1 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`CiscoISE`](../logic-apps/custom-ciscoise.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Find_MAC_in_watchlist*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Find_MAC_in_watchlist | post | `/queryData` | — |
 
-**`CiscoISE`** (customApi):
-- *Release_rejected_endpoint*: method=`put`, path=`/ers/config/endpoint/@{encodeURIComponent(items('For_each_MACAddress'))}/releaserejectedendpoint`
-- *Get_rejected_endpoints*: method=`get`, path=`/ers/config/endpoint/getrejectedendpoints`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`CiscoISE`](../logic-apps/custom-ciscoise.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Release_rejected_endpoint | put | `/ers/config/endpoint/@{encodeURIComponent(items('For_each_MACAddress'))}/releaserejectedendpoint` | — |
+| Get_rejected_endpoints | get | `/ers/config/endpoint/getrejectedendpoints` | — |
 
 </details>
 

@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `SlashNext` | Custom | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`SlashNext`](../logic-apps/custom-slashnext.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`SlashNext`** (customApi):
-- *Repute*: method=`post`, path=`/api/v1/urls/repute`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`SlashNext`](../logic-apps/custom-slashnext.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Repute | post | `/api/v1/urls/repute` | — |
 
 </details>
 

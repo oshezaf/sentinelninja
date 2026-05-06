@@ -55,55 +55,55 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azurecommunicationservicessms</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azurecommunicationservicessms.html"><code>azurecommunicationservicessms</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>jira</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-jira.html"><code>jira</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>jira_2</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-jira-2.html"><code>jira_2</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>outlook</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-outlook.html"><code>outlook</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>outlook_2</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-outlook-2.html"><code>outlook_2</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>service-now</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-service-now.html"><code>service-now</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>service-now_1</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-service-now-1.html"><code>service-now_1</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
@@ -112,30 +112,45 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azurecommunicationservicessms`** (managedApi):
-- *Send_SMS_2*: method=`post`, path=`/v2/sms`
-- *Send_SMS_3*: method=`post`, path=`/v2/sms`
-- *Send_SMS*: method=`post`, path=`/v2/sms`
+#### [`azurecommunicationservicessms`](../logic-apps/managed-azurecommunicationservicessms.md) (Managed)
 
-**`jira_2`** (managedApi):
-- *Create_a_new_issue_(V3)_2*: method=`post`, path=`/v3/issue`
-- *Create_a_new_issue_(V3)_3*: method=`post`, path=`/v3/issue`
-- *Create_a_new_issue_(V3)*: method=`post`, path=`/v3/issue`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_SMS_2 | post | `/v2/sms` | — |
+| Send_SMS_3 | post | `/v2/sms` | — |
+| Send_SMS | post | `/v2/sms` | — |
 
-**`outlook_2`** (managedApi):
-- *Send_an_email_(V2)_2*: method=`post`, path=`/v2/Mail`
-- *Send_an_email_(V2)_3*: method=`post`, path=`/v2/Mail`
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`jira_2`](../logic-apps/managed-jira-2.md) (Managed)
 
-**`service-now_1`** (managedApi):
-- *Create_Record_2*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
-- *Create_Record_3*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
-- *Create_Record*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_a_new_issue_(V3)_2 | post | `/v3/issue` | — |
+| Create_a_new_issue_(V3)_3 | post | `/v3/issue` | — |
+| Create_a_new_issue_(V3) | post | `/v3/issue` | — |
 
-**`teams`** (managedApi):
-- *Post_message_in_a_chat_or_channel_2*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_message_in_a_chat_or_channel_3*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/@{encodeURIComponent('Flow bot')}/location/@{encodeURIComponent('Channel')}`
+#### [`outlook_2`](../logic-apps/managed-outlook-2.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2)_2 | post | `/v2/Mail` | — |
+| Send_an_email_(V2)_3 | post | `/v2/Mail` | — |
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`service-now_1`](../logic-apps/managed-service-now-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Record_2 | post | `/api/now/v2/table/@{encodeURIComponent('ticket')}` | — |
+| Create_Record_3 | post | `/api/now/v2/table/@{encodeURIComponent('ticket')}` | — |
+| Create_Record | post | `/api/now/v2/table/@{encodeURIComponent('ticket')}` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_message_in_a_chat_or_channel_2 | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_message_in_a_chat_or_channel_3 | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_message_in_a_chat_or_channel | post | `/beta/teams/conversation/message/poster/@{encodeURIComponent('Flow bot')}/location/@{encodeURIComponent('Channel')}` | — |
 
 </details>
 

@@ -20,21 +20,27 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `forcepointsmcapiconnector` | Managed | 0 | 4 |
-| `ForcepointSMC-Connector` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`forcepointsmcapiconnector`](../logic-apps/managed-forcepointsmcapiconnector.md) | Managed | 0 | 4 |
+| [`ForcepointSMC-Connector`](../logic-apps/custom-forcepointsmc-connector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`forcepointsmcapiconnector`** (managedApi):
-- *Get_URLs_from_URL_list*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application/@{encodeURIComponent(last(split(items('For_each_URL_list')?['href'],'/')))}`
-- *Find_IP_or_URL_in_SMC*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements`
-- *Get_URL_List*: method=`get`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application`
-- *Login*: method=`post`, path=`/@{encodeURIComponent(variables('SMC Api Version Number'))}/login`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`forcepointsmcapiconnector`](../logic-apps/managed-forcepointsmcapiconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_URLs_from_URL_list | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application/@{encodeURIComponent(last(split(items('For_each_URL_list')?['href'],'/')))}` | — |
+| Find_IP_or_URL_in_SMC | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements` | — |
+| Get_URL_List | get | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/elements/url_list_application` | — |
+| Login | post | `/@{encodeURIComponent(variables('SMC Api Version Number'))}/login` | — |
 
 </details>
 

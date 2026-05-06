@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `GCPBigQueryCustomConnector` | Custom | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`GCPBigQueryCustomConnector`](../logic-apps/custom-gcpbigquerycustomconnector.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`GCPBigQueryCustomConnector`** (customApi):
-- *Run_Query_Job*: method=`post`, path=`/projects/@{encodeURIComponent(parameters('ProjectID'))}/queries`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`GCPBigQueryCustomConnector`](../logic-apps/custom-gcpbigquerycustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Query_Job | post | `/projects/@{encodeURIComponent(parameters('ProjectID'))}/queries` | — |
 
 </details>
 

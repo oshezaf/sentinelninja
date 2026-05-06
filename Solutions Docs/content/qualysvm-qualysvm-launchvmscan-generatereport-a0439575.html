@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureblob</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>QualysCustomConnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-qualyscustomconnector.html"><code>QualysCustomConnector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">13</td>
@@ -76,28 +76,37 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *Create_SAS_URI_by_path_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent('AccountNameFromSettings')}/CreateSharedLinkByPath`
-- *Create_blob_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_SAS_URI_by_path_(V2) | post | `/v2/datasets/@{encodeURIComponent('AccountNameFromSettings')}/CreateSharedLinkByPath` | — |
+| Create_blob_(V2) | post | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files` | — |
 
-**`QualysCustomConnector`** (customApi):
-- *Check_Scan_Status*: method=`post`, path=`/api/2.0/fo/scan/`
-- *Launch_Scan*: method=`post`, path=`/api/2.0/fo/scan/`
-- *Check_Scan_Status_Again*: method=`post`, path=`/api/2.0/fo/scan/`
-- *Create_Option_Profile_for_Scan*: method=`post`, path=`/api/2.0/fo/subscription/option_profile/vm/`
-- *List_Scanner_Appliances*: method=`get`, path=`/api/2.0/fo/appliance/`
-- *Create_Scan_Report_Template*: method=`post`, path=`/api/2.0/fo/report/template/scan/`
-- *Delete_Option_Profile*: method=`post`, path=`/api/2.0/fo/subscription/option_profile/vm/`
-- *Delete_Scan_Report_Template*: method=`post`, path=`/api/2.0/fo/report/template/scan/`
-- *Download_Scan_Report*: method=`post`, path=`/api/2.0/fo/report/`
-- *Get_Asset_Details_By_IP*: method=`post`, path=`/api/2.0/fo/asset/host/`
-- *Get_Report_Status*: method=`post`, path=`/api/2.0/fo/report/`
-- *Launch_VM_Scan_Report*: method=`post`, path=`/api/2.0/fo/report/`
-- *Get_Report_Status_Again*: method=`post`, path=`/api/2.0/fo/report/`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`QualysCustomConnector`](../logic-apps/custom-qualyscustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Check_Scan_Status | post | `/api/2.0/fo/scan/` | — |
+| Launch_Scan | post | `/api/2.0/fo/scan/` | — |
+| Check_Scan_Status_Again | post | `/api/2.0/fo/scan/` | — |
+| Create_Option_Profile_for_Scan | post | `/api/2.0/fo/subscription/option_profile/vm/` | — |
+| List_Scanner_Appliances | get | `/api/2.0/fo/appliance/` | — |
+| Create_Scan_Report_Template | post | `/api/2.0/fo/report/template/scan/` | — |
+| Delete_Option_Profile | post | `/api/2.0/fo/subscription/option_profile/vm/` | — |
+| Delete_Scan_Report_Template | post | `/api/2.0/fo/report/template/scan/` | — |
+| Download_Scan_Report | post | `/api/2.0/fo/report/` | — |
+| Get_Asset_Details_By_IP | post | `/api/2.0/fo/asset/host/` | — |
+| Get_Report_Status | post | `/api/2.0/fo/report/` | — |
+| Launch_VM_Scan_Report | post | `/api/2.0/fo/report/` | — |
+| Get_Report_Status_Again | post | `/api/2.0/fo/report/` | — |
 
 </details>
 

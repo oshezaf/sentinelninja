@@ -31,22 +31,28 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 4 |
-| `azuremonitorlogs` | Managed | 1 | 4 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 4 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_DstIP*: method=`post`, path=`/api/logs`
-- *Send_Data_SourceInfo*: method=`post`, path=`/api/logs`
-- *Send_Data_SrcIP*: method=`post`, path=`/api/logs`
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_DstIP*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_SourceInfo*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_SrcIP*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_ThreatInfo*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_DstIP | post | `/api/logs` | — |
+| Send_Data_SourceInfo | post | `/api/logs` | — |
+| Send_Data_SrcIP | post | `/api/logs` | — |
+| Send_Data | post | `/api/logs` | — |
+
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_DstIP | post | `/queryData` | — |
+| Run_query_and_list_results_SourceInfo | post | `/queryData` | — |
+| Run_query_and_list_results_SrcIP | post | `/queryData` | — |
+| Run_query_and_list_results_ThreatInfo | post | `/queryData` | — |
 
 </details>
 

@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 2 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/reversinglabsa1000/](https://learn.microsoft.com/en-us/connectors/reversinglabsa1000/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/reversinglabsa1000/) |
 
 ## Playbooks Using This Connector
 

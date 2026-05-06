@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `gcpiamapi` | Managed | 0 | 1 |
-| `GoogleCloudPlatformIAM` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`gcpiamapi`](../logic-apps/managed-gcpiamapi.md) | Managed | 0 | 1 |
+| [`GoogleCloudPlatformIAM`](../logic-apps/custom-googlecloudplatformiam.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`gcpiamapi`** (managedApi):
-- *iam.projects.serviceAccounts.get*: method=`get`, path=`/v1/projects/@{encodeURIComponent(outputs('parse_project_id'))}/serviceAccounts/@{encodeURIComponent(items('For_each_service_account'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`gcpiamapi`](../logic-apps/managed-gcpiamapi.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| iam.projects.serviceAccounts.get | get | `/v1/projects/@{encodeURIComponent(outputs('parse_project_id'))}/serviceAccounts/@{encodeURIComponent(items('For_each_service_account'))}` | — |
 
 </details>
 

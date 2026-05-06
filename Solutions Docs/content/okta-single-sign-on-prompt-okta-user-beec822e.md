@@ -20,22 +20,28 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `teams` | Managed | 1 | 0 |
-| `OktaCustomConnector` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`OktaCustomConnector`](../logic-apps/custom-oktacustomconnector.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_a_comment_to_the_incident_with_the_information_collected_and_conclusion*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_to_close_it*: method=`put`, path=`/Incidents`
-- *Add_a_comment_to_the_incident_with_the_information_collected*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`OktaCustomConnector`** (customApi):
-- *Clear_User_Sessions*: method=`delete`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/sessions`
-- *Reset_Password*: method=`post`, path=`/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password`
-- *Get_User*: method=`get`, path=`/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_a_comment_to_the_incident_with_the_information_collected_and_conclusion | post | `/Incidents/Comment` | — |
+| Update_incident_to_close_it | put | `/Incidents` | — |
+| Add_a_comment_to_the_incident_with_the_information_collected | post | `/Incidents/Comment` | — |
+
+#### [`OktaCustomConnector`](../logic-apps/custom-oktacustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Clear_User_Sessions | delete | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/sessions` | — |
+| Reset_Password | post | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password` | — |
+| Get_User | get | `/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}` | — |
 
 </details>
 

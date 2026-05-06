@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `ServiceNowTISCCustomConnector` | Custom | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`ServiceNowTISCCustomConnector`](../logic-apps/custom-servicenowtisccustomconnector.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ServiceNowTISCCustomConnector`** (customApi):
-- *Fetch_Observables_TISC_API*: method=`post`, path=`/api/sn_sec_tisc/threat_intel_data/observables`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`ServiceNowTISCCustomConnector`](../logic-apps/custom-servicenowtisccustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_Observables_TISC_API | post | `/api/sn_sec_tisc/threat_intel_data/observables` | — |
 
 </details>
 

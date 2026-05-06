@@ -20,37 +20,46 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 8 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 11 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 8 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 11 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_Issued_Actions_to_Incident*: method=`post`, path=`/Incidents/Comment`
-- *Get_Hosts_From_Incident*: method=`post`, path=`/entities/host`
-- *Add_comment__-_no_hosts_found*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment__-_no_data_in_Tanium*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_hosts_that_will_be_targeted*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_known_and_unknown_action_results*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_known_action_results*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_unknown_action_results*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('TaniumApiToken')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Issued_Actions_to_Incident | post | `/Incidents/Comment` | — |
+| Get_Hosts_From_Incident | post | `/entities/host` | — |
+| Add_comment__-_no_hosts_found | post | `/Incidents/Comment` | — |
+| Add_comment__-_no_data_in_Tanium | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_hosts_that_will_be_targeted | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_known_and_unknown_action_results | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_known_action_results | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_unknown_action_results | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *Get_the_"All_Computers"_group*: method=`GET`, uri=`@parameters('TaniumAllComputersUrl')`
-- *Get_Linux_Quarantine_package*: method=`GET`, uri=`@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('linuxPackageName')))}`
-- *Issue_Linux_Quarantine_action*: method=`POST`, uri=`@parameters('TaniumActionsApi')`
-- *Get_Windows_Quarantine_package*: method=`GET`, uri=`@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('windowsPackageName')))}`
-- *Issue_Windows_Quarantine_action*: method=`POST`, uri=`@parameters('TaniumActionsApi')`
-- *Get_macOS_Quarantine_package*: method=`GET`, uri=`@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('macOsPackageName')))}`
-- *Issue_macOS_Quarantine_action*: method=`POST`, uri=`@parameters('TaniumActionsApi')`
-- *Get_General_Host_Info*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
-- *Requery_the_API_Gateway*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
-- *Get_next_page*: method=`POST`, uri=`@parameters('TaniumApiGatewayApi')`
-- *Get_action_result*: method=`GET`, uri=`@{concat(parameters('TaniumActionResultDataUrlFragment'), items('Collect_action_results_for_each_issued_action')?['id'])}`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('TaniumApiToken')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_the_"All_Computers"_group | GET | `@parameters('TaniumAllComputersUrl')` | — |
+| Get_Linux_Quarantine_package | GET | `@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('linuxPackageName')))}` | — |
+| Issue_Linux_Quarantine_action | POST | `@parameters('TaniumActionsApi')` | — |
+| Get_Windows_Quarantine_package | GET | `@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('windowsPackageName')))}` | — |
+| Issue_Windows_Quarantine_action | POST | `@parameters('TaniumActionsApi')` | — |
+| Get_macOS_Quarantine_package | GET | `@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('macOsPackageName')))}` | — |
+| Issue_macOS_Quarantine_action | POST | `@parameters('TaniumActionsApi')` | — |
+| Get_General_Host_Info | POST | `@parameters('TaniumApiGatewayApi')` | — |
+| Requery_the_API_Gateway | POST | `@parameters('TaniumApiGatewayApi')` | — |
+| Get_next_page | POST | `@parameters('TaniumApiGatewayApi')` | — |
+| Get_action_result | GET | `@{concat(parameters('TaniumActionResultDataUrlFragment'), items('Collect_action_results_for_each_issued_action')?['id'])}` | — |
 
 </details>
 

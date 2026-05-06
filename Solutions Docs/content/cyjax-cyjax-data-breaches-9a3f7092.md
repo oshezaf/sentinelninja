@@ -28,20 +28,29 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Breaches_Data_To_Log_Analytics_Workspace*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Cyjax_API_Key*: method=`get`, path=`/secrets/@{encodeURIComponent('Cyjax-API-Key')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Breaches_Data_To_Log_Analytics_Workspace | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Data_breaches*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/data-leak/credentials`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Cyjax_API_Key | get | `/secrets/@{encodeURIComponent('Cyjax-API-Key')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Data_breaches | GET | `@{variables('base_url')}/@{variables('api_version')}/data-leak/credentials` | — |
 
 </details>
 

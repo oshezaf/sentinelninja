@@ -20,23 +20,32 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `azuresentinel_1` | Managed | 0 | 2 |
-| `http` | Built-in | 0 | 2 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) | Managed | 0 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel_1`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Security_Config*: method=`GET`, uri=`https://api.zsapi.net/zia/api/v1/security/advanced`
-- *Update_Security_Config*: method=`PUT`, uri=`https://api.zsapi.net/zia/api/v1/security/advanced`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
 
-**`workflow`** (builtin):
-- *Zscaler-Oauth2-Authentication*: workflowId=`[variables('ZscalerAuthenticationFlow')]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Security_Config | GET | `https://api.zsapi.net/zia/api/v1/security/advanced` | — |
+| Update_Security_Config | PUT | `https://api.zsapi.net/zia/api/v1/security/advanced` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Zscaler-Oauth2-Authentication | — | — | workflowId=`[variables('ZscalerAuthenticationFlow')]`<br>triggerName=`manual` |
 
 </details>
 

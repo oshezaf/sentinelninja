@@ -20,27 +20,39 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `keyvault` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_-_Affected_Google_Users*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_-_No_Affected_Google_Users*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret_-_Google_Service_Account_Private_Key*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_-_Affected_Google_Users | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_-_No_Affected_Google_Users | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
-**`function`** (builtin):
-- *CreateGoogleJWT*: functionId=`[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Web/sites/', parameters('FunctionAppName'), '/functions/CreateGoogleJWT')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Sign_Out_User*: method=`POST`, uri=`https://admin.googleapis.com/admin/directory/v1/users/@{concat(items('For_each_-_Account')?['name'], '@', items('For_each_-_Account')?['UPNSuffix'])}/signOut`
-- *HTTP_-_Access_Token*: method=`POST`, uri=`https://oauth2.googleapis.com/token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret_-_Google_Service_Account_Private_Key | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CreateGoogleJWT | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId,'/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Web/sites/', parameters('FunctionAppName'), '/functions/CreateGoogleJWT')]` |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Sign_Out_User | POST | `https://admin.googleapis.com/admin/directory/v1/users/@{concat(items('For_each_-_Account')?['name'], '@', items('For_each_-_Account')?['UPNSuffix'])}/signOut` | — |
+| HTTP_-_Access_Token | POST | `https://oauth2.googleapis.com/token` | — |
 
 </details>
 

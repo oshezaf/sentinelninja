@@ -28,29 +28,41 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuremonitorlogs_1` | Managed | 0 | 2 |
-| `wdatp` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 5 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuremonitorlogs_1`](../logic-apps/managed-azuremonitorlogs-1.md) | Managed | 0 | 2 |
+| [`wdatp`](../logic-apps/managed-wdatp.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_2*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuremonitorlogs_1`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_3*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_2 | post | `/queryData` | — |
 
-**`wdatp`** (managedApi):
-- *Alerts_-_Update_alert*: method=`patch`, path=`/api/alerts/@{encodeURIComponent('body(''Run_query_and_list_results_2'')[''value''][0][''VendorOriginalId'']')}`
+#### [`azuremonitorlogs_1`](../logic-apps/managed-azuremonitorlogs-1.md) (Managed)
 
-**`http`** (builtin):
-- *Get_incident_relation_data*: method=`GET`, uri=`https://management.azure.com/subscriptions/@{variables('Settings')['subscriptionId']}/resourcegroups/@{variables('Settings')['resourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{variables('Settings')['logWorkspace']}/providers/Microsoft.SecurityInsights/incidents/@{items('For_each')['name']}/relations`
-- *HTTP*: method=`POST`, uri=`https://management.azure.com/subscriptions/@{body('Run_query_and_list_results')['value'][0]['ascsubid']}/resourcegroups/@{body('Run_query_and_list_results')['value'][0]['ascrgname']}/providers/Microsoft.Security/locations/@{body('Run_query_and_list_results')['value'][0]['asclocation']}/alerts/@{body('Run_query_and_list_results')['value'][0]['ascalertname']}/dismiss`
-- *Resolve_MCAS_Alert*: method=`POST`, uri=`[concat(parameters('McasBaseUrl'),'api/v1/alerts/resolve/')]`
-- *Dismiss_MCAS_Alert*: method=`POST`, uri=`[concat(parameters('McasBaseUrl'),'api/v1/alerts/','@{body(''Run_query_and_list_results_3'')[''value''][0][''alertId'']}','/dismiss/')]`
-- *Get_incidents*: method=`GET`, uri=`@variables('requestUrl')`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
+| Run_query_and_list_results_3 | post | `/queryData` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alerts_-_Update_alert | patch | `/api/alerts/@{encodeURIComponent('body(''Run_query_and_list_results_2'')[''value''][0][''VendorOriginalId'']')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_incident_relation_data | GET | `https://management.azure.com/subscriptions/@{variables('Settings')['subscriptionId']}/resourcegroups/@{variables('Settings')['resourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{variables('Settings')['logWorkspace']}/providers/Microsoft.SecurityInsights/incidents/@{items('For_each')['name']}/relations` | — |
+| HTTP | POST | `https://management.azure.com/subscriptions/@{body('Run_query_and_list_results')['value'][0]['ascsubid']}/resourcegroups/@{body('Run_query_and_list_results')['value'][0]['ascrgname']}/providers/Microsoft.Security/locations/@{body('Run_query_and_list_results')['value'][0]['asclocation']}/alerts/@{body('Run_query_and_list_results')['value'][0]['ascalertname']}/dismiss` | — |
+| Resolve_MCAS_Alert | POST | `[concat(parameters('McasBaseUrl'),'api/v1/alerts/resolve/')]` | — |
+| Dismiss_MCAS_Alert | POST | `[concat(parameters('McasBaseUrl'),'api/v1/alerts/','@{body(''Run_query_and_list_results_3'')[''value''][0][''alertId'']}','/dismiss/')]` | — |
+| Get_incidents | GET | `@variables('requestUrl')` | — |
 
 </details>
 

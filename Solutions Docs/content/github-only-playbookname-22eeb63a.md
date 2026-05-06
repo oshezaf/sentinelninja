@@ -20,19 +20,25 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 2 | 0 |
-| `azuresentinel` | Managed | 0 | 2 |
-| `wdatp` | Managed | 0 | 2 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 2 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 0 | 2 |
+| [`wdatp`](../logic-apps/managed-wdatp.md) | Managed | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`wdatp`** (managedApi):
-- *Alerts_-_Get_single_alert_2*: method=`get`, path=`/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}`
-- *Alerts_-_Update_alert_2*: method=`patch`, path=`/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Update_incident | put | `/Incidents` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alerts_-_Get_single_alert_2 | get | `/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}` | — |
+| Alerts_-_Update_alert_2 | patch | `/api/alerts/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}` | — |
 
 </details>
 

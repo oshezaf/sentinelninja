@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `CarbonBlackCloudConnector` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`CarbonBlackCloudConnector`](../logic-apps/custom-carbonblackcloudconnector.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`CarbonBlackCloudConnector`** (customApi):
-- *Search_devices_in_your_organization_based_on_device_name*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search`
-- *device_actions*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions`
-- *Search_devices_in_your_organization*: method=`post`, path=`/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+
+#### [`CarbonBlackCloudConnector`](../logic-apps/custom-carbonblackcloudconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Search_devices_in_your_organization_based_on_device_name | post | `/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search` | — |
+| device_actions | post | `/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/device_actions` | — |
+| Search_devices_in_your_organization | post | `/appservices/v6/orgs/@{encodeURIComponent(variables('OrganizationKey'))}/devices/_search` | — |
 
 </details>
 

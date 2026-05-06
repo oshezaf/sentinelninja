@@ -28,18 +28,24 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 0 |
-| `azureloganalyticsdatacollector_1` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 0 |
+| [`azureloganalyticsdatacollector_1`](../logic-apps/managed-azureloganalyticsdatacollector-1.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector_1`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector_1`](../logic-apps/managed-azureloganalyticsdatacollector-1.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_2*: method=`GET`, uri=`https://cloud.tenable.com/workbenches/assets/@{items('For_each')?['id']}/vulnerabilities`
-- *HTTP*: method=`GET`, uri=`https://cloud.tenable.com/workbenches/assets/vulnerabilities`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_2 | GET | `https://cloud.tenable.com/workbenches/assets/@{items('For_each')?['id']}/vulnerabilities` | — |
+| HTTP | GET | `https://cloud.tenable.com/workbenches/assets/vulnerabilities` | — |
 
 </details>
 

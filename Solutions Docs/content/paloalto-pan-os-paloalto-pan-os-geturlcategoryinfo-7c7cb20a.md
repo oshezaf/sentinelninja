@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `PAN-OSRestApiCustomConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`PAN-OSRestApiCustomConnector`](../logic-apps/custom-pan-osrestapicustomconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`PAN-OSRestApiCustomConnector`** (customApi):
-- *List_address_objects*: method=`get`, path=`/restapi/v10.0/Objects/Addresses`
-- *List_custom_url_categories*: method=`get`, path=`/restapi/v10.0/Objects/CustomURLCategories`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`PAN-OSRestApiCustomConnector`](../logic-apps/custom-pan-osrestapicustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| List_address_objects | get | `/restapi/v10.0/Objects/Addresses` | — |
+| List_custom_url_categories | get | `/restapi/v10.0/Objects/CustomURLCategories` | — |
 
 </details>
 

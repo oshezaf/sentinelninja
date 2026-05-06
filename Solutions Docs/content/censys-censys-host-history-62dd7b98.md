@@ -20,20 +20,29 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Ingest_host_history_data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Censys_API_token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Ingest_host_history_data | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_request_to_get_host_history_from_Censys*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{trim(triggerBody()?['host'])}/timeline`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Censys_API_token | get | `/secrets/@{encodeURIComponent('Censys-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_request_to_get_host_history_from_Censys | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{trim(triggerBody()?['host'])}/timeline` | — |
 
 </details>
 

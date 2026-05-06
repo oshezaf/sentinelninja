@@ -20,23 +20,32 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 2 |
-| `microsoftsentinel` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Client_Id*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value`
-- *Get_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`microsoftsentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_Id | get | `/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value` | — |
+| Get_Secret | get | `/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Assign_a_policy_to_an_identity*: method=`PUT`, uri=`https://@{parameters('Host End Point')}/deployments/v2/policies/@{encodeURIComponent(variables('policyId'))}/identities/@{encodeURIComponent(items('For_each_originId_assign_policy_to_originId'))}`
-- *HTTP_-_Generate_Login_Token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/auth/v2/token`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Assign_a_policy_to_an_identity | PUT | `https://@{parameters('Host End Point')}/deployments/v2/policies/@{encodeURIComponent(variables('policyId'))}/identities/@{encodeURIComponent(items('For_each_originId_assign_policy_to_originId'))}` | — |
+| HTTP_-_Generate_Login_Token | POST | `https://@{parameters('Host End Point')}/auth/v2/token` | — |
 
 </details>
 

@@ -20,28 +20,37 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 9 |
-| `farsightdnsdb` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 9 |
+| [`farsightdnsdb`](../logic-apps/managed-farsightdnsdb.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_RData_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Iris_Investigate_Table_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
-- *Add_Pivoting_Data_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
-- *Add_Malicious_tags_to_Incident*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_Error_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`farsightdnsdb`** (managedApi):
-- *RData_Lookup_with_RRType*: method=`get`, path=`/lookup/rdata/name/@{encodeURIComponent(items('For_each_domain_list'))}/ANY`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_RData_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_Iris_Investigate_Table_to_Incident_Comments | post | `/Incidents/Comment` | — |
+| Add_Pivoting_Data_to_Incident_Comments | post | `/Incidents/Comment` | — |
+| Add_Malicious_tags_to_Incident | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_Error_to_Incident_Comments | post | `/Incidents/Comment` | — |
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
 
-**`function`** (builtin):
-- *InvestigateDomain*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/InvestigateDomain')]`
+#### [`farsightdnsdb`](../logic-apps/managed-farsightdnsdb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RData_Lookup_with_RRType | get | `/lookup/rdata/name/@{encodeURIComponent(items('For_each_domain_list'))}/ANY` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| InvestigateDomain | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/InvestigateDomain')]` |
 
 </details>
 

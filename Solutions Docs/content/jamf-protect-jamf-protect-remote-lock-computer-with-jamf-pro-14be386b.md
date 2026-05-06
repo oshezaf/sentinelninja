@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_JSSID_for_given_computer_in_Jamf_Pro*: method=`GET`, uri=`@{parameters('jamfProURL')}/JSSResource/computers/name/@{items('For_each_host_send_DeviceLock_command')?['properties']?['friendlyName']}`
-- *Get_managementID_for_given_computer_in_Jamf_Pro*: method=`GET`, uri=`@{parameters('jamfProURL')}/api/v1/computers-inventory/@{body('Parse_JSON_response_for_given_computer')?['computer']?['general']?['id']}?section=GENERAL`
-- *Send_DeviceLock_command_to_given_computers_JSSID*: method=`POST`, uri=`@{parameters('jamfProURL')}/JSSResource/computercommands/command/DeviceLock/passcode/@{outputs('Generate_a_randomised_6_digit_value')}/id/@{body('Parse_JSON_for_given_computer_based_on_managementID')?['general']?['site']?['id']}`
-- *Generate_Access_Token_using_API_Client*: method=`POST`, uri=`@{parameters('jamfProURL')}/api/oauth/token`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_JSSID_for_given_computer_in_Jamf_Pro | GET | `@{parameters('jamfProURL')}/JSSResource/computers/name/@{items('For_each_host_send_DeviceLock_command')?['properties']?['friendlyName']}` | — |
+| Get_managementID_for_given_computer_in_Jamf_Pro | GET | `@{parameters('jamfProURL')}/api/v1/computers-inventory/@{body('Parse_JSON_response_for_given_computer')?['computer']?['general']?['id']}?section=GENERAL` | — |
+| Send_DeviceLock_command_to_given_computers_JSSID | POST | `@{parameters('jamfProURL')}/JSSResource/computercommands/command/DeviceLock/passcode/@{outputs('Generate_a_randomised_6_digit_value')}/id/@{body('Parse_JSON_for_given_computer_based_on_managementID')?['general']?['site']?['id']}` | — |
+| Generate_Access_Token_using_API_Client | POST | `@{parameters('jamfProURL')}/api/oauth/token` | — |
 
 </details>
 

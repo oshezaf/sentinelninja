@@ -20,20 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `office365` | Managed | 1 | 0 |
-| `function` | Built-in | 0 | 7 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 7 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`function`** (builtin):
-- *PortBlockingFunction-runTrafficQuery*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/runTrafficQuery')]`
-- *PortBlockingFunction-fetchVisibilityOnlyWorkloadsFromTrafficResults*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/fetchVisibilityOnlyWorkloadsFromTrafficResults')]`
-- *PortBlockingFunction-createVirtualService*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createVirtualService')]`
-- *PortBlockingFunction-bindWorkloadsToVirtualService*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/bindWorkloadsToVirtualService')]`
-- *PortBlockingFunction-createAllowRuleForVirtualService*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createAllowRuleForVirtualService')]`
-- *PortBlockingFunction-changeWorkloadEnforcementState*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/changeWorkloadEnforcementState')]`
-- *PortBlockingFunction-createDenyRule*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createDenyRule')]`
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| PortBlockingFunction-runTrafficQuery | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/runTrafficQuery')]` |
+| PortBlockingFunction-fetchVisibilityOnlyWorkloadsFromTrafficResults | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/fetchVisibilityOnlyWorkloadsFromTrafficResults')]` |
+| PortBlockingFunction-createVirtualService | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createVirtualService')]` |
+| PortBlockingFunction-bindWorkloadsToVirtualService | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/bindWorkloadsToVirtualService')]` |
+| PortBlockingFunction-createAllowRuleForVirtualService | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createAllowRuleForVirtualService')]` |
+| PortBlockingFunction-changeWorkloadEnforcementState | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/changeWorkloadEnforcementState')]` |
+| PortBlockingFunction-createDenyRule | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createDenyRule')]` |
 
 </details>
 

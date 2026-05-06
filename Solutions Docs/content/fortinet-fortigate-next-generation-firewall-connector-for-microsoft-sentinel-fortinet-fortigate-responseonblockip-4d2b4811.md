@@ -20,27 +20,36 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `fortinetconnector` | Managed | 0 | 2 |
-| `teams` | Managed | 1 | 0 |
-| `FortinetCustomConnector` | Custom | 1 | 0 |
-| `function` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`fortinetconnector`](../logic-apps/managed-fortinetconnector.md) | Managed | 0 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`FortinetCustomConnector`](../logic-apps/custom-fortinetcustomconnector.md) | Custom | 1 | 0 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`fortinetconnector`** (managedApi):
-- *Create_an_address_object*: method=`post`, path=`/api/v2/cmdb/firewall/address`
-- *Update_address_group*: method=`put`, path=`/api/v2/cmdb/firewall/addrgrp/@{encodeURIComponent(variables('Pre-definedGroupName'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
 
-**`function`** (builtin):
-- *Address_group_details*: method=`GET`, functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]`
-- *Check_address_object_is_already_exist_in_firewall*: method=`GET`, functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]`
+#### [`fortinetconnector`](../logic-apps/managed-fortinetconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_an_address_object | post | `/api/v2/cmdb/firewall/address` | — |
+| Update_address_group | put | `/api/v2/cmdb/firewall/addrgrp/@{encodeURIComponent(variables('Pre-definedGroupName'))}` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Address_group_details | GET | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]` |
+| Check_address_object_is_already_exist_in_firewall | GET | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]` |
 
 </details>
 

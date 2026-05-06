@@ -20,33 +20,42 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 7 |
-| `azuresentinel` | Managed | 1 | 8 |
-| `outlook` | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 7 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 8 |
+| [`outlook`](../logic-apps/managed-outlook.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_Query_And_List_Insights_Data_And_Country_Code_For_Indicator*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Insights*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Top_PDNS*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Top_Certs*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Top_Open_Ports*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Top_Fingerprints*: method=`post`, path=`/queryData`
-- *Run_Query_and_List_Results_for_Whois*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_Insights_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Open_Ports_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_PDNS_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Create_Incident_For_IP*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/', trim(parameters('WorkspaceName')))]`
-- *Add_Certs_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Fingerprints_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Whois_Details_To_Incident_Comment_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Scout_link_And_General_Information_To_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Query_And_List_Insights_Data_And_Country_Code_For_Indicator | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Insights | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Top_PDNS | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Top_Certs | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Top_Open_Ports | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Top_Fingerprints | post | `/queryData` | — |
+| Run_Query_and_List_Results_for_Whois | post | `/queryData` | — |
 
-**`outlook`** (managedApi):
-- *Send_An_Email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Insights_Details_To_Incident_Comment_(V3) | post | `/Incidents/Comment` | — |
+| Add_Open_Ports_Details_To_Incident_Comment_(V3) | post | `/Incidents/Comment` | — |
+| Add_PDNS_Details_To_Incident_Comment_(V3) | post | `/Incidents/Comment` | — |
+| Create_Incident_For_IP | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/', trim(parameters('WorkspaceName')))]` | — |
+| Add_Certs_Details_To_Incident_Comment_(V3) | post | `/Incidents/Comment` | — |
+| Add_Fingerprints_Details_To_Incident_Comment_(V3) | post | `/Incidents/Comment` | — |
+| Add_Whois_Details_To_Incident_Comment_(V3) | post | `/Incidents/Comment` | — |
+| Add_Scout_link_And_General_Information_To_Incident_Comment | post | `/Incidents/Comment` | — |
+
+#### [`outlook`](../logic-apps/managed-outlook.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_An_Email_(V2) | post | `/v2/Mail` | — |
 
 </details>
 

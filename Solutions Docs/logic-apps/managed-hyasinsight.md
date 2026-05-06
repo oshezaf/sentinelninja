@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 25 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/hyasinsight/](https://learn.microsoft.com/en-us/connectors/hyasinsight/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/hyasinsight/) |
 
 ## Playbooks Using This Connector
 

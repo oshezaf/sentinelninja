@@ -20,37 +20,55 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `keyvault` | Managed | 1 | 1 |
-| `sharepointonline` | Managed | 1 | 3 |
-| `wdatp` | Managed | 1 | 1 |
-| `wordonlinebusiness` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`sharepointonline`](../logic-apps/managed-sharepointonline.md) | Managed | 1 | 3 |
+| [`wdatp`](../logic-apps/managed-wdatp.md) | Managed | 1 | 1 |
+| [`wordonlinebusiness`](../logic-apps/managed-wordonlinebusiness.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_hosts*: method=`post`, path=`/entities/host`
-- *Add_comment_to_incident_(V2)*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(body('Alert_-_Get_incident')?['properties']?['CaseNumber'])}`
-- *Alert_-_Get_incident*: method=`get`, path=`/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('DefenderATP-VulnAlerts')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_hosts | post | `/entities/host` | — |
+| Add_comment_to_incident_(V2) | put | `/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(body('Alert_-_Get_incident')?['properties']?['CaseNumber'])}` | — |
+| Alert_-_Get_incident | get | `/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}` | — |
 
-**`sharepointonline`** (managedApi):
-- *Create_PDF*: method=`post`, path=`/datasets//files`
-- *Create_Word_Doc*: method=`post`, path=`/datasets//files`
-- *Create_sharing_link_for_a_file_or_folder*: method=`post`, path=`/datasets//codeless/_api/v2.0/sites/root/lists//items/@{encodeURIComponent(encodeURIComponent(body('Create_PDF')?['ItemId']))}/driveItem/createLink`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`wdatp`** (managedApi):
-- *Machines_-_Get_list_of_machines*: method=`get`, path=`/api/machines`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('DefenderATP-VulnAlerts')}/value` | — |
 
-**`wordonlinebusiness`** (managedApi):
-- *Convert_Word_Document_to_PDF*: method=`get`, path=`/api/templates/convertFile`
-- *Populate_Vulnerability_Report_template*: method=`post`, path=`/api/templates/getFile`
+#### [`sharepointonline`](../logic-apps/managed-sharepointonline.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host')?['id']}/vulnerabilities`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_PDF | post | `/datasets//files` | — |
+| Create_Word_Doc | post | `/datasets//files` | — |
+| Create_sharing_link_for_a_file_or_folder | post | `/datasets//codeless/_api/v2.0/sites/root/lists//items/@{encodeURIComponent(encodeURIComponent(body('Create_PDF')?['ItemId']))}/driveItem/createLink` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Machines_-_Get_list_of_machines | get | `/api/machines` | — |
+
+#### [`wordonlinebusiness`](../logic-apps/managed-wordonlinebusiness.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Convert_Word_Document_to_PDF | get | `/api/templates/convertFile` | — |
+| Populate_Vulnerability_Report_template | post | `/api/templates/getFile` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host')?['id']}/vulnerabilities` | — |
 
 </details>
 

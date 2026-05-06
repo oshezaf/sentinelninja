@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `teams` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`teams`** (managedApi):
-- *Post_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_card_in_a_chat_or_channel | post | `/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts` | — |
 
 </details>
 

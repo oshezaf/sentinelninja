@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 14 |
 | **Solutions** | 2 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/recordedfuturev2/](https://learn.microsoft.com/en-us/connectors/recordedfuturev2/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/recordedfuturev2/) |
 
 ## Playbooks Using This Connector
 
@@ -24,11 +24,11 @@
 | [RecordedFuture-IP-Actively_Comm_C2_Server-TIProcessor](../content/recorded-future-recordedfuture-ip-actively-comm-c2-server-tiprocessor-5ba5fd7f.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 0 |
 | [RecordedFuture-IP-IndicatorImport](../content/recorded-future-recordedfuture-ip-indicatorimport-12100b20.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 0 |
 | [RecordedFuture-Playbook-Alert-Importer](../content/recorded-future-recordedfuture-playbook-alert-importer-3166bf69.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 2 |
+| [RecordedFuture-TIforDefenderEndpoint (DEPRECATED)](../content/standalone-content-recordedfuture-tifordefenderendpoint-deprecated-2371ab28.md) | 📄 Standalone | 1 | 2 |
 | [RecordedFuture-Ukraine-IndicatorProcessor](../content/recorded-future-recordedfuture-ukraine-indicatorprocessor-803dc885.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 0 |
 | [RecordedFuture-URL-IndicatorImport](../content/recorded-future-recordedfuture-url-indicatorimport-6e39cf42.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 0 |
 | [RecordedFuture-URL-Recent_Rep_by_Insikt-TIProcessor](../content/recorded-future-recordedfuture-url-recent-rep-by-insikt-tiprocessor-0e7085c0.md) | [Recorded Future](../solutions/recorded-future.md) | 1 | 0 |
-| [RecordedFuture-TIforDefenderEndpoint (DEPRECATED)](../content/standalone-content-recordedfuture-tifordefenderendpoint-deprecated-2371ab28.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 2 |
-| [RecordedFuture_IP_SCF_IndicatorProcessor (DEPRECATED)](../content/standalone-content-recordedfuture-ip-scf-indicatorprocessor-deprecated-024c3d12.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
+| [RecordedFuture_IP_SCF_IndicatorProcessor (DEPRECATED)](../content/standalone-content-recordedfuture-ip-scf-indicatorprocessor-deprecated-024c3d12.md) | 📄 Standalone | 1 | 1 |
 
 ---
 

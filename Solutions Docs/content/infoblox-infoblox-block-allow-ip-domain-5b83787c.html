@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -70,9 +70,12 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *HTTP_Call_To_Add_Remove_IP_or_Domain_in_Selected_Name_List*: method=`PATCH`, uri=`@{variables('base_url')}/api/atcfw/v1/named_lists/@{variables('list_id')}/items`
-- *HTTP_Call_For_Get_List_For_Named_List_Endpoint*: method=`GET`, uri=`@{variables('base_url')}/api/atcfw/v1/named_lists`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Call_To_Add_Remove_IP_or_Domain_in_Selected_Name_List | PATCH | `@{variables('base_url')}/api/atcfw/v1/named_lists/@{variables('list_id')}/items` | — |
+| HTTP_Call_For_Get_List_For_Named_List_Endpoint | GET | `@{variables('base_url')}/api/atcfw/v1/named_lists` | — |
 
 </details>
 

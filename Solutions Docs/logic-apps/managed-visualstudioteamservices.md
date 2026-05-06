@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 7 |
 | **Solutions** | 6 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/visualstudioteamservices/](https://learn.microsoft.com/en-us/connectors/visualstudioteamservices/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/visualstudioteamservices/) |
 
 ## Playbooks Using This Connector
 
@@ -19,9 +19,9 @@
 | [Create-AzureDevOpsTask](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-create-azuredevopstask-4301bcc7.md) | [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md) | 1 | 1 |
 | [Create-AzureDevOpsTask](../content/maturitymodelforeventlogmanagementm2131-create-azuredevopstask-410499f4.md) | [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md) | 1 | 1 |
 | [Create-AzureDevOpsTask](../content/nistsp80053-create-azuredevopstask-acaee95e.md) | [NISTSP80053](../solutions/nistsp80053.md) | 1 | 1 |
-| [Create-AzureDevOpsTask-alert-trigger](../content/standalone-content-create-azuredevopstask-alert-trigger-205d9bba.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
-| [Create-AzureDevOpsTask-incident-trigger](../content/standalone-content-create-azuredevopstask-incident-trigger-7e028911.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
 | [Create-AzureDevOpsTask](../content/zerotrust-tic3.0-create-azuredevopstask-ddcb5103.md) | [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md) | 1 | 1 |
+| [Create-AzureDevOpsTask-alert-trigger](../content/standalone-content-create-azuredevopstask-alert-trigger-205d9bba.md) | 📄 Standalone | 1 | 1 |
+| [Create-AzureDevOpsTask-incident-trigger](../content/standalone-content-create-azuredevopstask-incident-trigger-7e028911.md) | 📄 Standalone | 1 | 1 |
 
 ---
 

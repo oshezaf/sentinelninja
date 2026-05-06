@@ -20,15 +20,18 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *GET_Client_Secret_From_Key_Vault_-_Graph_API*: method=`GET`, uri=`@parameters('KeyVaultClientCredentialsURL-GraphAPI')`
-- *GET_Client_Secret_from_Key_Vault_-_BigDataCloud*: method=`GET`, uri=`@parameters('KeyVaultClientCredentialsURL-BigDataCloud')`
-- *GET_TOR_Exit_Nodes*: method=`GET`, uri=`https://api.bigdatacloud.net/data/tor-exit-nodes-list?batchSize=900&offset=0&localityLanguage=en&key=@{body('Parse_Response_from_Key_Vault_-_BigDataCloud')?['value']}`
-- *UPDATE_Named_Location_List*: method=`PUT`, uri=`https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{parameters('NamedLocationID')}`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GET_Client_Secret_From_Key_Vault_-_Graph_API | GET | `@parameters('KeyVaultClientCredentialsURL-GraphAPI')` | — |
+| GET_Client_Secret_from_Key_Vault_-_BigDataCloud | GET | `@parameters('KeyVaultClientCredentialsURL-BigDataCloud')` | — |
+| GET_TOR_Exit_Nodes | GET | `https://api.bigdatacloud.net/data/tor-exit-nodes-list?batchSize=900&offset=0&localityLanguage=en&key=@{body('Parse_Response_from_Key_Vault_-_BigDataCloud')?['value']}` | — |
+| UPDATE_Named_Location_List | PUT | `https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations/@{parameters('NamedLocationID')}` | — |
 
 </details>
 

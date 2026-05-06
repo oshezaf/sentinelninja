@@ -20,25 +20,34 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault_1` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault_1`](../logic-apps/managed-keyvault-1.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault_1`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Entrust Secret Key Name'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_Group_Details*: method=`GET`, uri=`https://@{parameters('Host End Point')}/api/web/v1/groups/@{items('For_each_-_fetching_all_group_details')?['id']}`
-- *HTTP_-_Get_User*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v3/users/userid`
-- *HTTP_-_collecting_source_IP_last_24_hours*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v2/reports/auditeventspaged`
-- *HTTP_-_get_roles_assigned*: method=`GET`, uri=`https://@{parameters('Host End Point')}/api/web/v1/users/@{body('Parse_JSON_-Get_User')?['id']}/roles`
-- *HTTP_-_generate_login_token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/api/web/v1/adminapi/authenticate`
+#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('Entrust Secret Key Name'))}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Group_Details | GET | `https://@{parameters('Host End Point')}/api/web/v1/groups/@{items('For_each_-_fetching_all_group_details')?['id']}` | — |
+| HTTP_-_Get_User | POST | `https://@{parameters('Host End Point')}/api/web/v3/users/userid` | — |
+| HTTP_-_collecting_source_IP_last_24_hours | POST | `https://@{parameters('Host End Point')}/api/web/v2/reports/auditeventspaged` | — |
+| HTTP_-_get_roles_assigned | GET | `https://@{parameters('Host End Point')}/api/web/v1/users/@{body('Parse_JSON_-Get_User')?['id']}/roles` | — |
+| HTTP_-_generate_login_token | POST | `https://@{parameters('Host End Point')}/api/web/v1/adminapi/authenticate` | — |
 
 </details>
 

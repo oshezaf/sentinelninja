@@ -20,12 +20,15 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `RecordedFuture-CustomConnector` | Custom | 1 | 1 |
+| [`RecordedFuture-CustomConnector`](../logic-apps/custom-recordedfuture-customconnector.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`RecordedFuture-CustomConnector`** (customApi):
-- *Fetch_Threat_Indicators_for_Actors_in_STIX_format*: method=`post`, path=`/threat/indicators/actors`
+#### [`RecordedFuture-CustomConnector`](../logic-apps/custom-recordedfuture-customconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_Threat_Indicators_for_Actors_in_STIX_format | post | `/threat/indicators/actors` | — |
 
 </details>
 

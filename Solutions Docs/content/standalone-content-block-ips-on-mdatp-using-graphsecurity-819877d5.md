@@ -20,18 +20,24 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `microsoftgraphsecurity` | Managed | 1 | 1 |
-| `office365` | Managed | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) | Managed | 1 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Alert_-_Get_incident*: method=`get`, path=`/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`microsoftgraphsecurity`** (managedApi):
-- *Submit_TiIndicator_to_MDATP_to_block_IP*: method=`post`, path=`/beta/security/tiIndicators`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_IPs | post | `/entities/ip` | — |
+| Alert_-_Get_incident | get | `/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}` | — |
+
+#### [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Submit_TiIndicator_to_MDATP_to_block_IP | post | `/beta/security/tiIndicators` | — |
 
 </details>
 

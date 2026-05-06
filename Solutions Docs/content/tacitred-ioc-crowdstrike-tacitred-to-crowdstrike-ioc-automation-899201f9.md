@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Get_TacitRed_Findings*: method=`GET`, uri=`@{parameters('TacitRed_ApiUrl')}?types[]=compromised_credentials&page=1&page_size=50`
-- *Get_CrowdStrike_Token*: method=`POST`, uri=`@{parameters('CrowdStrike_BaseUrl')}@{parameters('CrowdStrike_TokenPath')}`
-- *Post_IOC_to_CrowdStrike*: method=`POST`, uri=`@{parameters('CrowdStrike_BaseUrl')}@{parameters('CrowdStrike_IocPath')}?ignore_warnings=true`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_TacitRed_Findings | GET | `@{parameters('TacitRed_ApiUrl')}?types[]=compromised_credentials&page=1&page_size=50` | — |
+| Get_CrowdStrike_Token | POST | `@{parameters('CrowdStrike_BaseUrl')}@{parameters('CrowdStrike_TokenPath')}` | — |
+| Post_IOC_to_CrowdStrike | POST | `@{parameters('CrowdStrike_BaseUrl')}@{parameters('CrowdStrike_IocPath')}?ignore_warnings=true` | — |
 
 </details>
 

@@ -20,27 +20,39 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureblob` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 3 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureblob`](../logic-apps/managed-azureblob.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *Create_SAS_URI_by_path_(V2)*: method=`post`, path=`[concat('/v2/datasets/@{encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),')}/CreateSharedLinkByPath')]`
-- *Create_blob_(V2)*: method=`post`, path=`[concat('/v2/datasets/@{encodeURIComponent(encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),'))}/files')]`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_SAS_URI_by_path_(V2) | post | `[concat('/v2/datasets/@{encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),')}/CreateSharedLinkByPath')]` | — |
+| Create_blob_(V2) | post | `[concat('/v2/datasets/@{encodeURIComponent(encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),'))}/files')]` | — |
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(', variables('singlequote'), variables('KeyName'), variables('singlequote'), ')}/value')]`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`@{variables('Server')}/api/v1/devices/@{items('For_each')?['IpAddress']?['Address']}/cves`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `[concat('/secrets/@{encodeURIComponent(', variables('singlequote'), variables('KeyName'), variables('singlequote'), ')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `@{variables('Server')}/api/v1/devices/@{items('For_each')?['IpAddress']?['Address']}/cves` | — |
 
 </details>
 

@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `CheckPhishbyBolsterCustomConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`CheckPhishbyBolsterCustomConnector`](../logic-apps/custom-checkphishbybolstercustomconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`CheckPhishbyBolsterCustomConnector`** (customApi):
-- *Submit_URL*: method=`post`, path=`/api/neo/scan`
-- *Get_Scan_Result*: method=`post`, path=`/api/neo/scan/status`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`CheckPhishbyBolsterCustomConnector`](../logic-apps/custom-checkphishbybolstercustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Submit_URL | post | `/api/neo/scan` | — |
+| Get_Scan_Result | post | `/api/neo/scan/status` | — |
 
 </details>
 

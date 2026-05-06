@@ -20,26 +20,35 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 5 |
-| `keyvault` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 5 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Update_Incident_(2)*: method=`put`, path=`/Incidents`
-- *Add_Failed_IP_-_Host_List_Into_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Update_Incident*: method=`put`, path=`/Incidents`
-- *Add_Detail_Response_Of_IP_To_Incident_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_For_30000_Characters_Limit*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Rubrik_Client_ID*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-Client-Id')}/value`
-- *Get_Rubrik_Client_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-Client-Secret')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_Incident_(2) | put | `/Incidents` | — |
+| Add_Failed_IP_-_Host_List_Into_Incident_Comment | post | `/Incidents/Comment` | — |
+| Update_Incident | put | `/Incidents` | — |
+| Add_Detail_Response_Of_IP_To_Incident_Comment | post | `/Incidents/Comment` | — |
+| Add_Comment_For_30000_Characters_Limit | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *Get_Information*: method=`GET`, uri=`@{variables('Base_URL')}/api/thirdparty/workload_summary`
-- *Get_Access_Token*: method=`POST`, uri=`@{variables('Base_URL')}/api/client_token`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Rubrik_Client_ID | get | `/secrets/@{encodeURIComponent('Rubrik-Client-Id')}/value` | — |
+| Get_Rubrik_Client_Secret | get | `/secrets/@{encodeURIComponent('Rubrik-Client-Secret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Information | GET | `@{variables('Base_URL')}/api/thirdparty/workload_summary` | — |
+| Get_Access_Token | POST | `@{variables('Base_URL')}/api/client_token` | — |
 
 </details>
 

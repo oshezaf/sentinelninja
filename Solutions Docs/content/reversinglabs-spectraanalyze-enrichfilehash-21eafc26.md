@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `reversinglabsa1000` | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`reversinglabsa1000`](../logic-apps/managed-reversinglabsa1000.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`reversinglabsa1000`** (managedApi):
-- *Retrieve_classification_for_a_sample*: method=`get`, path=`/api/samples/v3/@{encodeURIComponent(items('For_each_file_hash_entity')?['hashValue'])}/classification/`
-- *Retrieve_the_static_analysis_report*: method=`get`, path=`/api/v2/samples/@{encodeURIComponent(items('For_each_file_hash_entity')?['hashValue'])}/ticore/`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`reversinglabsa1000`](../logic-apps/managed-reversinglabsa1000.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Retrieve_classification_for_a_sample | get | `/api/samples/v3/@{encodeURIComponent(items('For_each_file_hash_entity')?['hashValue'])}/classification/` | — |
+| Retrieve_the_static_analysis_report | get | `/api/v2/samples/@{encodeURIComponent(items('For_each_file_hash_entity')?['hashValue'])}/ticore/` | — |
 
 </details>
 

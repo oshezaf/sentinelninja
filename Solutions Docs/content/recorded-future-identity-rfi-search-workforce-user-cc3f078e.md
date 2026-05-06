@@ -20,28 +20,40 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
-| `azuremonitorlogs` | Managed | 1 | 2 |
-| `recordedfutureidenti` | Managed | 1 | 1 |
-| `workflow` | Built-in | 0 | 3 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
+| [`recordedfutureidenti`](../logic-apps/managed-recordedfutureidenti.md) | Managed | 1 | 1 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data_-_Save_new_Credential_dump_exposures_into_Log_Analytics_Custom_Log*: method=`post`, path=`/api/logs`
-- *Send_Data_-_Save_new_Malware_log_exposures_into_Log_Analytics_Custom_Log*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Query_Log_Analytics_for_Credential_dump_exposures*: method=`post`, path=`/queryData`
-- *Query_Log_Analytics_for_Malware_log_exposures*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_-_Save_new_Credential_dump_exposures_into_Log_Analytics_Custom_Log | post | `/api/logs` | — |
+| Send_Data_-_Save_new_Malware_log_exposures_into_Log_Analytics_Custom_Log | post | `/api/logs` | — |
 
-**`recordedfutureidenti`** (managedApi):
-- *Credential_Search_-_Search_credential_data_for_one_or_more_domains*: method=`post`, path=`/credentials/search`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`workflow`** (builtin):
-- *RFI-add-EntraID-security-group-user*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/', parameters('Playbook-Name-add-EntraID-security-group-user'))]`, triggerName=`manual`
-- *RFI-lookup-and-save-user*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/', parameters('Playbook-Name-lookup-and-save-user'))]`, triggerName=`manual`
-- *RFI-confirm-EntraID-risky-user*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/', parameters('Playbook-Name-confirm-EntraID-risky-user'))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Query_Log_Analytics_for_Credential_dump_exposures | post | `/queryData` | — |
+| Query_Log_Analytics_for_Malware_log_exposures | post | `/queryData` | — |
+
+#### [`recordedfutureidenti`](../logic-apps/managed-recordedfutureidenti.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Credential_Search_-_Search_credential_data_for_one_or_more_domains | post | `/credentials/search` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RFI-add-EntraID-security-group-user | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/', parameters('Playbook-Name-add-EntraID-security-group-user'))]`<br>triggerName=`manual` |
+| RFI-lookup-and-save-user | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/', parameters('Playbook-Name-lookup-and-save-user'))]`<br>triggerName=`manual` |
+| RFI-confirm-EntraID-risky-user | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/', parameters('Playbook-Name-confirm-EntraID-risky-user'))]`<br>triggerName=`manual` |
 
 </details>
 

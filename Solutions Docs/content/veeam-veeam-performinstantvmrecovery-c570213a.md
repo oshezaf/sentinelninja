@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `function` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *GetLastCleanRestorePointForVMAsync*: functionId=`[concat(variables('functionAppId'), '/functions/GetCleanRestorePointsAsync')]`
-- *StartInstantVMRecoveryAsync*: functionId=`[concat(variables('functionAppId'), '/functions/StartInstantVMRecoveryAsync')]`
-- *GetSession_*: functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GetLastCleanRestorePointForVMAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetCleanRestorePointsAsync')]` |
+| StartInstantVMRecoveryAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/StartInstantVMRecoveryAsync')]` |
+| GetSession_ | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]` |
 
 </details>
 

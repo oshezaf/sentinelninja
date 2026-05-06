@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `QualysCustomConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`QualysCustomConnector`](../logic-apps/custom-qualyscustomconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`QualysCustomConnector`** (customApi):
-- *Asset_Count_for_Port*: method=`post`, path=`/qps/rest/2.0/count/am/hostasset`
-- *Search_Asset_By_Port*: method=`post`, path=`/qps/rest/2.0/search/am/hostasset`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`QualysCustomConnector`](../logic-apps/custom-qualyscustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Asset_Count_for_Port | post | `/qps/rest/2.0/count/am/hostasset` | — |
+| Search_Asset_By_Port | post | `/qps/rest/2.0/search/am/hostasset` | — |
 
 </details>
 

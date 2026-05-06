@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">5</td>
@@ -82,20 +82,29 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Policy_Hits_data_to_log_analytics*: method=`post`, path=`/api/logs`
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Rubrik_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *Get_Rubrik_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Policy_Hits_data_to_log_analytics | post | `/api/logs` | — |
+| Send_Data | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *Get_policy_hits_for_file_based_object*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *Get_Object_List*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *Get_Access_Token*: method=`POST`, uri=`@{variables('BaseUrl')}/api/client_token`
-- *Get_Latest_SnapshotId_for_given_ObjectId*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *HTTP*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Rubrik_ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| Get_Rubrik_ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_policy_hits_for_file_based_object | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| Get_Object_List | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| Get_Access_Token | POST | `@{variables('BaseUrl')}/api/client_token` | — |
+| Get_Latest_SnapshotId_for_given_ObjectId | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| HTTP | POST | `@{variables('BaseUrl')}/api/graphql` | — |
 
 </details>
 

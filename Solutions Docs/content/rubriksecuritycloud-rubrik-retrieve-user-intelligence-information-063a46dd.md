@@ -20,29 +20,38 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 8 |
-| `http` | Built-in | 0 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 8 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_User_Details_to_Workspace*: method=`post`, path=`/api/logs`
-- *Send_Policy_hits_details_to_Workspace*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_with_userDetails*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_with_user_access_details_only*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_with_user_and_risk_details*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_with_user_data*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_with_user_policy_data*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_for_no_policy_hits_data*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_with_user_and_risk_details_only*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_User_Details_to_Workspace | post | `/api/logs` | — |
+| Send_Policy_hits_details_to_Workspace | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *Get_Policy_hits_details_for_user*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *Get_User_Details*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_with_userDetails | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_with_user_access_details_only | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_with_user_and_risk_details | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_with_user_data | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_with_user_policy_data | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_for_no_policy_hits_data | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_with_user_and_risk_details_only | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Policy_hits_details_for_user | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| Get_User_Details | POST | `@{variables('BaseUrl')}/api/graphql` | — |
 
 </details>
 

@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `TheHive` | Custom | 1 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`TheHive`](../logic-apps/custom-thehive.md) | Custom | 1 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`TheHive`** (customApi):
-- *create_observable_for_a_case*: method=`post`, path=`/api/v0/case/@{encodeURIComponent(body('create_case')?['caseId'])}/artifact`
-- *create_observable_for_a_case_2*: method=`post`, path=`/api/v0/case/@{encodeURIComponent(body('create_case')?['caseId'])}/artifact`
-- *create_case*: method=`post`, path=`/api/case`
-- *create_task*: method=`post`, path=`/api/case/@{encodeURIComponent(body('create_case')?['caseId'])}/task`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`TheHive`](../logic-apps/custom-thehive.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| create_observable_for_a_case | post | `/api/v0/case/@{encodeURIComponent(body('create_case')?['caseId'])}/artifact` | — |
+| create_observable_for_a_case_2 | post | `/api/v0/case/@{encodeURIComponent(body('create_case')?['caseId'])}/artifact` | — |
+| create_case | post | `/api/case` | — |
+| create_task | post | `/api/case/@{encodeURIComponent(body('create_case')?['caseId'])}/task` | — |
 
 </details>
 

@@ -20,30 +20,39 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 4 |
-| `http` | Built-in | 0 | 4 |
-| `workflow` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Access_Token_For_Assigning_User_To_Entity*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Reassigning_User_To_Entity*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Host_Entity*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
-- *Get_Access_Token_For_Account_Entity*: method=`get`, path=`/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Request_To_Assign_Static_User_To_Entity_In_Vectra*: method=`POST`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/assignments`
-- *HTTP_Request_To_Reassign_Static_User_To_Entity_In_Vectra*: method=`PUT`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/assignments/@{variables('assignment_id')}`
-- *HTTP_Request_To_Fetch_Associated_Host_Entity_Data*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/hosts/@{int(variables('entity_id'))}`
-- *HTTP_Request_To_Fetch_Associated_Account_Entity_Data*: method=`GET`, uri=`@{variables('base_url')}/api/@{variables('api_version')}/accounts/@{int(variables('entity_id'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token_For_Assigning_User_To_Entity | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Reassigning_User_To_Entity | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Host_Entity | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+| Get_Access_Token_For_Account_Entity | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
 
-**`workflow`** (builtin):
-- *GenerateAccessTokenVectra*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_4*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_2*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
-- *GenerateAccessTokenVectra_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Assign_Static_User_To_Entity_In_Vectra | POST | `@{variables('base_url')}/api/@{variables('api_version')}/assignments` | — |
+| HTTP_Request_To_Reassign_Static_User_To_Entity_In_Vectra | PUT | `@{variables('base_url')}/api/@{variables('api_version')}/assignments/@{variables('assignment_id')}` | — |
+| HTTP_Request_To_Fetch_Associated_Host_Entity_Data | GET | `@{variables('base_url')}/api/@{variables('api_version')}/hosts/@{int(variables('entity_id'))}` | — |
+| HTTP_Request_To_Fetch_Associated_Account_Entity_Data | GET | `@{variables('base_url')}/api/@{variables('api_version')}/accounts/@{int(variables('entity_id'))}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_4 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+| GenerateAccessTokenVectra_3 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

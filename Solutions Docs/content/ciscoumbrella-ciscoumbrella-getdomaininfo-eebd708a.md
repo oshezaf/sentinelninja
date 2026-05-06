@@ -20,27 +20,36 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 2 |
-| `microsoftsentinel` | Managed | 0 | 4 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Client_Id*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value`
-- *Get_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`microsoftsentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_Id | get | `/secrets/@{encodeURIComponent(parameters('Umbrella API ClientId Key Name'))}/value` | — |
+| Get_Secret | get | `/secrets/@{encodeURIComponent(parameters('Umbrella API Secret Key Name'))}/value` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_domain_security_data*: method=`GET`, uri=`https://@{parameters('Host End Point')}/investigate/v2/security/name/@{encodeURIComponent(outputs('Get_domain_from_URL'))}`
-- *HTTP_-_Get_Risk_score_for_a_domain*: method=`GET`, uri=`https://@{parameters('Host End Point')}/investigate/v2/domains/risk-score/@{encodeURIComponent(outputs('Get_domain_from_URL'))}`
-- *HTTP_-_Generate_Login_Token*: method=`POST`, uri=`https://@{parameters('Host End Point')}/auth/v2/token`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_domain_security_data | GET | `https://@{parameters('Host End Point')}/investigate/v2/security/name/@{encodeURIComponent(outputs('Get_domain_from_URL'))}` | — |
+| HTTP_-_Get_Risk_score_for_a_domain | GET | `https://@{parameters('Host End Point')}/investigate/v2/domains/risk-score/@{encodeURIComponent(outputs('Get_domain_from_URL'))}` | — |
+| HTTP_-_Generate_Login_Token | POST | `https://@{parameters('Host End Point')}/auth/v2/token` | — |
 
 </details>
 

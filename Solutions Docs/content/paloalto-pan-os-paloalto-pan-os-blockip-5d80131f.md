@@ -20,24 +20,30 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `paloaltoconnector` | Managed | 0 | 5 |
-| `teams` | Managed | 1 | 0 |
-| `PAN-OSRestApiCustomConnector` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`paloaltoconnector`](../logic-apps/managed-paloaltoconnector.md) | Managed | 0 | 5 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`PAN-OSRestApiCustomConnector`](../logic-apps/custom-pan-osrestapicustomconnector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`paloaltoconnector`** (managedApi):
-- *Create_an_address_object*: method=`post`, path=`/restapi/v10.0/Objects/Addresses`
-- *Update_an_address_object_group*: method=`put`, path=`/restapi/v10.0/Objects/AddressGroups`
-- *List_address_groups*: method=`get`, path=`/restapi/v10.0/Objects/AddressGroups`
-- *List_address_objects*: method=`get`, path=`/restapi/v10.0/Objects/Addresses`
-- *List_security_rules*: method=`get`, path=`/restapi/v10.0/Policies/SecurityRules`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`paloaltoconnector`](../logic-apps/managed-paloaltoconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_an_address_object | post | `/restapi/v10.0/Objects/Addresses` | — |
+| Update_an_address_object_group | put | `/restapi/v10.0/Objects/AddressGroups` | — |
+| List_address_groups | get | `/restapi/v10.0/Objects/AddressGroups` | — |
+| List_address_objects | get | `/restapi/v10.0/Objects/Addresses` | — |
+| List_security_rules | get | `/restapi/v10.0/Policies/SecurityRules` | — |
 
 </details>
 

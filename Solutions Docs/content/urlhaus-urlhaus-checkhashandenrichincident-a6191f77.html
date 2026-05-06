@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>URLhausAPI</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-urlhausapi.html"><code>URLhausAPI</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
@@ -70,13 +70,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`URLhausAPI`** (customApi):
-- *Query_payload_information(md5_hash)*: method=`post`, path=`/payload/`
-- *Query_payload_information(sha256_hash)*: method=`post`, path=`/payload/`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+
+#### [`URLhausAPI`](../logic-apps/custom-urlhausapi.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Query_payload_information(md5_hash) | post | `/payload/` | — |
+| Query_payload_information(sha256_hash) | post | `/payload/` | — |
 
 </details>
 

@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `ShodanCustomConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`ShodanCustomConnector`](../logic-apps/custom-shodancustomconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ShodanCustomConnector`** (customApi):
-- *GetServiceDetailsForIP*: method=`get`, path=`/shodan/host/@{encodeURIComponent(body('Parse_IP_JSON'))}`
-- *ResolveDomainName*: method=`get`, path=`/dns/resolve`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`ShodanCustomConnector`](../logic-apps/custom-shodancustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GetServiceDetailsForIP | get | `/shodan/host/@{encodeURIComponent(body('Parse_IP_JSON'))}` | — |
+| ResolveDomainName | get | `/dns/resolve` | — |
 
 </details>
 

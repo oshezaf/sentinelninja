@@ -20,42 +20,57 @@ This playbook uses **9** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azurecommunicationservicessms` | Managed | 1 | 3 |
-| `azuresentinel` | Managed | 1 | 0 |
-| `jira` | Managed | 1 | 0 |
-| `jira_2` | Managed | 0 | 3 |
-| `outlook` | Managed | 1 | 0 |
-| `outlook_2` | Managed | 0 | 3 |
-| `service-now` | Managed | 1 | 0 |
-| `service-now_1` | Managed | 0 | 3 |
-| `teams` | Managed | 1 | 3 |
+| [`azurecommunicationservicessms`](../logic-apps/managed-azurecommunicationservicessms.md) | Managed | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`jira`](../logic-apps/managed-jira.md) | Managed | 1 | 0 |
+| [`jira_2`](../logic-apps/managed-jira-2.md) | Managed | 0 | 3 |
+| [`outlook`](../logic-apps/managed-outlook.md) | Managed | 1 | 0 |
+| [`outlook_2`](../logic-apps/managed-outlook-2.md) | Managed | 0 | 3 |
+| [`service-now`](../logic-apps/managed-service-now.md) | Managed | 1 | 0 |
+| [`service-now_1`](../logic-apps/managed-service-now-1.md) | Managed | 0 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azurecommunicationservicessms`** (managedApi):
-- *Send_SMS_2*: method=`post`, path=`/v2/sms`
-- *Send_SMS_3*: method=`post`, path=`/v2/sms`
-- *Send_SMS*: method=`post`, path=`/v2/sms`
+#### [`azurecommunicationservicessms`](../logic-apps/managed-azurecommunicationservicessms.md) (Managed)
 
-**`jira_2`** (managedApi):
-- *Create_a_new_issue_(V3)_2*: method=`post`, path=`/v3/issue`
-- *Create_a_new_issue_(V3)_3*: method=`post`, path=`/v3/issue`
-- *Create_a_new_issue_(V3)*: method=`post`, path=`/v3/issue`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_SMS_2 | post | `/v2/sms` | — |
+| Send_SMS_3 | post | `/v2/sms` | — |
+| Send_SMS | post | `/v2/sms` | — |
 
-**`outlook_2`** (managedApi):
-- *Send_an_email_(V2)_2*: method=`post`, path=`/v2/Mail`
-- *Send_an_email_(V2)_3*: method=`post`, path=`/v2/Mail`
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+#### [`jira_2`](../logic-apps/managed-jira-2.md) (Managed)
 
-**`service-now_1`** (managedApi):
-- *Create_Record_2*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
-- *Create_Record_3*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
-- *Create_Record*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('ticket')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_a_new_issue_(V3)_2 | post | `/v3/issue` | — |
+| Create_a_new_issue_(V3)_3 | post | `/v3/issue` | — |
+| Create_a_new_issue_(V3) | post | `/v3/issue` | — |
 
-**`teams`** (managedApi):
-- *Post_message_in_a_chat_or_channel_2*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_message_in_a_chat_or_channel_3*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/@{encodeURIComponent('Flow bot')}/location/@{encodeURIComponent('Channel')}`
+#### [`outlook_2`](../logic-apps/managed-outlook-2.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2)_2 | post | `/v2/Mail` | — |
+| Send_an_email_(V2)_3 | post | `/v2/Mail` | — |
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
+
+#### [`service-now_1`](../logic-apps/managed-service-now-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Record_2 | post | `/api/now/v2/table/@{encodeURIComponent('ticket')}` | — |
+| Create_Record_3 | post | `/api/now/v2/table/@{encodeURIComponent('ticket')}` | — |
+| Create_Record | post | `/api/now/v2/table/@{encodeURIComponent('ticket')}` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_message_in_a_chat_or_channel_2 | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_message_in_a_chat_or_channel_3 | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_message_in_a_chat_or_channel | post | `/beta/teams/conversation/message/poster/@{encodeURIComponent('Flow bot')}/location/@{encodeURIComponent('Channel')}` | — |
 
 </details>
 

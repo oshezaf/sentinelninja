@@ -32,30 +32,39 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 5 |
-| `azuresentinel` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 6 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Summary_(Insight)_Data*: method=`post`, path=`/api/logs`
-- *Send_Asset_Data*: method=`post`, path=`/api/logs`
-- *Send_Comment_Data*: method=`post`, path=`/api/logs`
-- *Send_Event_Data*: method=`post`, path=`/api/logs`
-- *Send_Indicator_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_InfobloxInsightID_Tag*: method=`put`, path=`/Incidents`
-- *Update_Incident_Tags*: method=`put`, path=`/Incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Summary_(Insight)_Data | post | `/api/logs` | — |
+| Send_Asset_Data | post | `/api/logs` | — |
+| Send_Comment_Data | post | `/api/logs` | — |
+| Send_Event_Data | post | `/api/logs` | — |
+| Send_Indicator_Data | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *Test_Connection_to_Infoblox_CSP*: method=`GET`, uri=`https://csp.infoblox.com/api/v1/insights/@{items('For_each')?['properties']?['objectGuid']}`
-- *Get_Summary_Data*: method=`GET`, uri=`https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}`
-- *Get_Asset_Data*: method=`GET`, uri=`https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/assets`
-- *Get_Comment_Data*: method=`GET`, uri=`https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/comments`
-- *Get_Event_Data*: method=`GET`, uri=`https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/events`
-- *Get_Indicator_Data*: method=`GET`, uri=`https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/indicators`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_InfobloxInsightID_Tag | put | `/Incidents` | — |
+| Update_Incident_Tags | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Test_Connection_to_Infoblox_CSP | GET | `https://csp.infoblox.com/api/v1/insights/@{items('For_each')?['properties']?['objectGuid']}` | — |
+| Get_Summary_Data | GET | `https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}` | — |
+| Get_Asset_Data | GET | `https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/assets` | — |
+| Get_Comment_Data | GET | `https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/comments` | — |
+| Get_Event_Data | GET | `https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/events` | — |
+| Get_Indicator_Data | GET | `https://csp.infoblox.com/api/v1/insights/@{items('For_each_Insight_ID')?['properties']?['objectGuid']}/indicators` | — |
 
 </details>
 

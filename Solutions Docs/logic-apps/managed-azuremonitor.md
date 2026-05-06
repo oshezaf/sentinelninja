@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [IncidentUpdate-GetSentinelAlertsEvidence](../content/standalone-content-incidentupdate-getsentinelalertsevidence-8798cbda.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 2 |
+| [IncidentUpdate-GetSentinelAlertsEvidence](../content/standalone-content-incidentupdate-getsentinelalertsevidence-8798cbda.md) | 📄 Standalone | 0 | 2 |
 
 ---
 

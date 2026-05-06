@@ -22,15 +22,18 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Get_Incident*: method=`GET`, uri=`https://graph.microsoft.com/beta/security/incidents/@{variables('DefenderIncidentID')}?$expand=alerts`
-- *Run_Hunting_Query_to_find_non_reporting_users*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/runHuntingQuery`
-- *Create_How_To_guide_Simulation_against_non_reporters*: method=`POST`, uri=`https://graph.microsoft.com/beta/security/attackSimulation/simulations`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Incident | GET | `https://graph.microsoft.com/beta/security/incidents/@{variables('DefenderIncidentID')}?$expand=alerts` | — |
+| Run_Hunting_Query_to_find_non_reporting_users | POST | `https://graph.microsoft.com/beta/security/runHuntingQuery` | — |
+| Create_How_To_guide_Simulation_against_non_reporters | POST | `https://graph.microsoft.com/beta/security/attackSimulation/simulations` | — |
 
 </details>
 

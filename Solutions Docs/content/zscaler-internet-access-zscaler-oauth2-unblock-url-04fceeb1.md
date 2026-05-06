@@ -20,22 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 2 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Remove_URL*: method=`PUT`, uri=`https://api.zsapi.net/zia/api/v1/urlCategories/@{variables('Category')}?action=REMOVE_FROM_LIST`
-- *HTTP_Activate_Changes*: method=`POST`, uri=`https://api.zsapi.net/zia/api/v1/status/activate`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`workflow`** (builtin):
-- *zscaler*: workflowId=`[variables('ZscalerAuthenticationFlow')]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Remove_URL | PUT | `https://api.zsapi.net/zia/api/v1/urlCategories/@{variables('Category')}?action=REMOVE_FROM_LIST` | — |
+| HTTP_Activate_Changes | POST | `https://api.zsapi.net/zia/api/v1/status/activate` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| zscaler | — | — | workflowId=`[variables('ZscalerAuthenticationFlow')]`<br>triggerName=`manual` |
 
 </details>
 

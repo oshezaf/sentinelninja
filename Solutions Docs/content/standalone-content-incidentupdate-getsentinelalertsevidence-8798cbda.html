@@ -98,25 +98,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuremonitor</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitor.html"><code>azuremonitor</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuremonitorlogs</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>eventhub</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-eventhub.html"><code>eventhub</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>eventhubs</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-eventhubs.html"><code>eventhubs</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
@@ -125,13 +125,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitor`** (managedApi):
-- *Run_query_and_list_results_(get_events_from_scheduled_rule)*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_(get_alerts_added_to_incidents)*: method=`post`, path=`/queryData`
+#### [`azuremonitor`](../logic-apps/managed-azuremonitor.md) (Managed)
 
-**`eventhub`** (managedApi):
-- *Send_event_(send_information_with_events_to_eventhub)*: method=`post`, path=`/@{encodeURIComponent('incidentalerteventhub')}/events`
-- *Send_event_(send_information_of_alert_and_incident_to_eventhub)*: method=`post`, path=`/@{encodeURIComponent('incidentalerteventhub')}/events`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_(get_events_from_scheduled_rule) | post | `/queryData` | — |
+| Run_query_and_list_results_(get_alerts_added_to_incidents) | post | `/queryData` | — |
+
+#### [`eventhub`](../logic-apps/managed-eventhub.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_event_(send_information_with_events_to_eventhub) | post | `/@{encodeURIComponent('incidentalerteventhub')}/events` | — |
+| Send_event_(send_information_of_alert_and_incident_to_eventhub) | post | `/@{encodeURIComponent('incidentalerteventhub')}/events` | — |
 
 </details>
 

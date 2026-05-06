@@ -20,15 +20,18 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `ServiceNowTISCCustomConnector` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`ServiceNowTISCCustomConnector`](../logic-apps/custom-servicenowtisccustomconnector.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`ServiceNowTISCCustomConnector`** (customApi):
-- *Add_Observables_TISC_API_-_MD5*: method=`post`, path=`/api/sn_sec_tisc/threat_intel_data/add_observables`
-- *Add_Observables_TISC_API_-_SHA256*: method=`post`, path=`/api/sn_sec_tisc/threat_intel_data/add_observables`
-- *Add_Observables_TISC_API_-_SHA1*: method=`post`, path=`/api/sn_sec_tisc/threat_intel_data/add_observables`
+#### [`ServiceNowTISCCustomConnector`](../logic-apps/custom-servicenowtisccustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Observables_TISC_API_-_MD5 | post | `/api/sn_sec_tisc/threat_intel_data/add_observables` | — |
+| Add_Observables_TISC_API_-_SHA256 | post | `/api/sn_sec_tisc/threat_intel_data/add_observables` | — |
+| Add_Observables_TISC_API_-_SHA1 | post | `/api/sn_sec_tisc/threat_intel_data/add_observables` | — |
 
 </details>
 

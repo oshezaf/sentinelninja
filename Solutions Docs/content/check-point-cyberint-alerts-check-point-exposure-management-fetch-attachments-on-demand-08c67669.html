@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -70,14 +70,20 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_attachments_comment*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_tags*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Alert_Details*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}`
-- *Get_Attachment*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}`
-- *Get_Analysis_Report*: method=`GET`, uri=`@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_attachments_comment | post | `/Incidents/Comment` | — |
+| Update_incident_tags | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Alert_Details | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}` | — |
+| Get_Attachment | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}` | — |
+| Get_Analysis_Report | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report` | — |
 
 </details>
 

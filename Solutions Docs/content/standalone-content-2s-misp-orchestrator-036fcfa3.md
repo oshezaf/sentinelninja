@@ -20,20 +20,23 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 9 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 9 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Add_IoC_to_existing_event_MISP_-_FileHash*: method=`POST`, uri=`@{variables('MISPURI')}/attributes/add/@{variables('EventId')}`
-- *Add_IoC_to_existing_event_MISP_-_FileName*: method=`POST`, uri=`@{variables('MISPURI')}/attributes/add/@{variables('EventId')}`
-- *Add_attribute_-_IncidentID_internal_only*: method=`POST`, uri=`@{variables('MISPURI')}/attributes/add/@{variables('EventId')}`
-- *Add_attribute_-_IncidentUri_link_internal_only*: method=`POST`, uri=`@{variables('MISPURI')}/attributes/add/@{variables('EventId')}`
-- *Add_event_tag_MISP_-_tlp_green*: method=`POST`, uri=`@{variables('MISPURI')}/events/addTag/@{variables('EventId')}/10789`
-- *Add_IoC_to_new_event_MISP_-_FileHash*: method=`POST`, uri=`@{variables('MISPURI')}/attributes/add/@{variables('EventId')}`
-- *Add_IoC_to_new_event_MISP_-_FileName*: method=`POST`, uri=`@{variables('MISPURI')}/attributes/add/@{variables('EventId')}`
-- *Create_new_event_MISP*: method=`POST`, uri=`@{variables('MISPURI')}/events/add/`
-- *Get_EventInfo_MISP*: method=`POST`, uri=`@{variables('MISPURI')}/events/restSearch`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_IoC_to_existing_event_MISP_-_FileHash | POST | `@{variables('MISPURI')}/attributes/add/@{variables('EventId')}` | — |
+| Add_IoC_to_existing_event_MISP_-_FileName | POST | `@{variables('MISPURI')}/attributes/add/@{variables('EventId')}` | — |
+| Add_attribute_-_IncidentID_internal_only | POST | `@{variables('MISPURI')}/attributes/add/@{variables('EventId')}` | — |
+| Add_attribute_-_IncidentUri_link_internal_only | POST | `@{variables('MISPURI')}/attributes/add/@{variables('EventId')}` | — |
+| Add_event_tag_MISP_-_tlp_green | POST | `@{variables('MISPURI')}/events/addTag/@{variables('EventId')}/10789` | — |
+| Add_IoC_to_new_event_MISP_-_FileHash | POST | `@{variables('MISPURI')}/attributes/add/@{variables('EventId')}` | — |
+| Add_IoC_to_new_event_MISP_-_FileName | POST | `@{variables('MISPURI')}/attributes/add/@{variables('EventId')}` | — |
+| Create_new_event_MISP | POST | `@{variables('MISPURI')}/events/add/` | — |
+| Get_EventInfo_MISP | POST | `@{variables('MISPURI')}/events/restSearch` | — |
 
 </details>
 

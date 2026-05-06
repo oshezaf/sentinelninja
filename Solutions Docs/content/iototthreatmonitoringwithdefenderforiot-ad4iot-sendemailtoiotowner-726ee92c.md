@@ -28,29 +28,41 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 5 |
-| `office365` | Managed | 2 | 0 |
-| `office365version1` | Managed | 0 | 1 |
-| `office365version2` | Managed | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 5 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 2 | 0 |
+| [`office365version1`](../logic-apps/managed-office365version1.md) | Managed | 0 | 1 |
+| [`office365version2`](../logic-apps/managed-office365version2.md) | Managed | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_as_false_positive*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
 
-**`office365version1`** (managedApi):
-- *Send_false_positive_email*: method=`post`, path=`/v2/Mail`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`office365version2`** (managedApi):
-- *Send_true_positive_email*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident_as_false_positive | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+
+#### [`office365version1`](../logic-apps/managed-office365version1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_false_positive_email | post | `/v2/Mail` | — |
+
+#### [`office365version2`](../logic-apps/managed-office365version2.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_true_positive_email | post | `/v2/Mail` | — |
 
 </details>
 

@@ -20,27 +20,36 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 2 |
-| `teams` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 5 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Policy_Hits_data_to_log_analytics*: method=`post`, path=`/api/logs`
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Rubrik_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *Get_Rubrik_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Policy_Hits_data_to_log_analytics | post | `/api/logs` | — |
+| Send_Data | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *Get_policy_hits_for_file_based_object*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *Get_Object_List*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *Get_Access_Token*: method=`POST`, uri=`@{variables('BaseUrl')}/api/client_token`
-- *Get_Latest_SnapshotId_for_given_ObjectId*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *HTTP*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Rubrik_ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| Get_Rubrik_ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_policy_hits_for_file_based_object | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| Get_Object_List | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| Get_Access_Token | POST | `@{variables('BaseUrl')}/api/client_token` | — |
+| Get_Latest_SnapshotId_for_given_ObjectId | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| HTTP | POST | `@{variables('BaseUrl')}/api/graphql` | — |
 
 </details>
 

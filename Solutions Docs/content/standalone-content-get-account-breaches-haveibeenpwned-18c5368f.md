@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `HaveIBeenPwnedConnector` | Custom | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`HaveIBeenPwnedConnector`](../logic-apps/custom-haveibeenpwnedconnector.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`HaveIBeenPwnedConnector`** (customApi):
-- *Get_all_breaches_for_an_account*: method=`get`, path=`/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+
+#### [`HaveIBeenPwnedConnector`](../logic-apps/custom-haveibeenpwnedconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_all_breaches_for_an_account | get | `/api/v3/breachedaccount/@{encodeURIComponent(items('For_each_account')?['Name'])}` | — |
 
 </details>
 

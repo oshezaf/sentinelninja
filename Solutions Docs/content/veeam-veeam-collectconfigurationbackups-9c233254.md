@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Watchlists_-_Get_VBR_Settings*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *StartConfigurationBackupAsync*: functionId=`[concat(variables('functionAppId'), '/functions/StartConfigurationBackupAsync')]`
-- *GetSession*: functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]`
-- *IngestSessionDataBySessionIdAsync*: functionId=`[concat(variables('functionAppId'), '/functions/IngestSessionDataBySessionIdAsync')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Watchlists_-_Get_VBR_Settings | get | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| StartConfigurationBackupAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/StartConfigurationBackupAsync')]` |
+| GetSession | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]` |
+| IngestSessionDataBySessionIdAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/IngestSessionDataBySessionIdAsync')]` |
 
 </details>
 

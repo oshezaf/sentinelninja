@@ -20,12 +20,15 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `ServiceNowTISCCustomConnector` | Custom | 1 | 1 |
+| [`ServiceNowTISCCustomConnector`](../logic-apps/custom-servicenowtisccustomconnector.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`ServiceNowTISCCustomConnector`** (customApi):
-- *Import_Observables_in_Indicator_STIX_format_TISC_API*: method=`post`, path=`/api/sn_sec_tisc/threat_intel_data/observables_indicator_stix_format`
+#### [`ServiceNowTISCCustomConnector`](../logic-apps/custom-servicenowtisccustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Import_Observables_in_Indicator_STIX_format_TISC_API | post | `/api/sn_sec_tisc/threat_intel_data/observables_indicator_stix_format` | — |
 
 </details>
 

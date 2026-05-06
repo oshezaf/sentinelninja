@@ -20,14 +20,17 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinelconnection` | Managed | 0 | 1 |
-| `office365` | Managed | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinelconnection`](../logic-apps/managed-microsoftsentinelconnection.md) | Managed | 0 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinelconnection`** (managedApi):
-- *Create_incident*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/',parameters('WorkspaceName'))]`
+#### [`microsoftsentinelconnection`](../logic-apps/managed-microsoftsentinelconnection.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_incident | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/',parameters('WorkspaceName'))]` | — |
 
 </details>
 

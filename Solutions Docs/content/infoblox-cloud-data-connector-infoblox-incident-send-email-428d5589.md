@@ -20,21 +20,30 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `office365` | Managed | 1 | 0 |
-| `office365_1` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
+| [`office365_1`](../logic-apps/managed-office365-1.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`office365_1`** (managedApi):
-- *Send_an_email_with_Incident_details*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_TIDE_Data_(Hosts)*: method=`GET`, uri=`https://csp.infoblox.com/tide/api/data/threats`
+#### [`office365_1`](../logic-apps/managed-office365-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_with_Incident_details | post | `/v2/Mail` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_TIDE_Data_(Hosts) | GET | `https://csp.infoblox.com/tide/api/data/threats` | — |
 
 </details>
 

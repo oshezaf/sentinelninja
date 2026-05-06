@@ -20,20 +20,29 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `function` | Built-in | 0 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_data_to_LogAnalytics*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`function`** (builtin):
-- *CidrRanges*: functionId=`[concat(variables('sites_CidrIpRange_externalid'), '/functions/CidrRanges')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_data_to_LogAnalytics | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *Get_named_locations*: method=`GET`, uri=`https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$select=displayName,microsoft.graph.ipNamedLocation/ipRanges/&$filter=microsoft.graph.ipNamedLocation/isTrusted`
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CidrRanges | — | — | functionId=`[concat(variables('sites_CidrIpRange_externalid'), '/functions/CidrRanges')]` |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_named_locations | GET | `https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocations?$select=displayName,microsoft.graph.ipNamedLocation/ipRanges/&$filter=microsoft.graph.ipNamedLocation/isTrusted` | — |
 
 </details>
 

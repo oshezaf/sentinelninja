@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuread</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuread.html"><code>azuread</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azureadip</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureadip.html"><code>azureadip</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>RFI-CustomConnector-0-2-0</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-rfi-customconnector-0-2-0.html"><code>RFI-CustomConnector-0-2-0</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
@@ -76,17 +76,26 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Add_risky_user_to_Active_Directory_security_group_for_users_at_risk*: method=`post`, path=`/v1.0/groups/@{encodeURIComponent(parameters('entra_id_security_group_id'))}/members/$ref`
-- *Get_User_-_Check_if_the_user_exists_in_Active_Directory*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(outputs('Compute_user_principal_name'))}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azureadip`** (managedApi):
-- *Confirm_a_risky_user_as_compromised*: method=`post`, path=`/beta/riskyUsers/confirmCompromised`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_risky_user_to_Active_Directory_security_group_for_users_at_risk | post | `/v1.0/groups/@{encodeURIComponent(parameters('entra_id_security_group_id'))}/members/$ref` | — |
+| Get_User_-_Check_if_the_user_exists_in_Active_Directory | get | `/v1.0/users/@{encodeURIComponent(outputs('Compute_user_principal_name'))}` | — |
 
-**`RFI-CustomConnector-0-2-0`** (customApi):
-- *Playbook_Alerts_-_Update_Playbook_Alert*: method=`put`, path=`/playbook-alerts/update`
-- *Playbook_Alerts_-_Update_Playbook_Alert_-_If_user_not_found*: method=`put`, path=`/playbook-alerts/update`
-- *Playbook_Alerts_-_Search_for_novel_identity_exposures*: method=`post`, path=`/playbook-alerts/search`
+#### [`azureadip`](../logic-apps/managed-azureadip.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Confirm_a_risky_user_as_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
+
+#### [`RFI-CustomConnector-0-2-0`](../logic-apps/custom-rfi-customconnector-0-2-0.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Playbook_Alerts_-_Update_Playbook_Alert | put | `/playbook-alerts/update` | — |
+| Playbook_Alerts_-_Update_Playbook_Alert_-_If_user_not_found | put | `/playbook-alerts/update` | — |
+| Playbook_Alerts_-_Search_for_novel_identity_exposures | post | `/playbook-alerts/search` | — |
 
 </details>
 

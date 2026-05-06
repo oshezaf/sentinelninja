@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `PaloAltoConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`PaloAltoConnector`](../logic-apps/custom-paloaltoconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`PaloAltoConnector`** (customApi):
-- *List_address_objects*: method=`get`, path=`/restapi/v10.0/Objects/Addresses`
-- *List_custom_url_categories*: method=`get`, path=`/restapi/v10.0/Objects/CustomURLCategories`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`PaloAltoConnector`](../logic-apps/custom-paloaltoconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| List_address_objects | get | `/restapi/v10.0/Objects/Addresses` | — |
+| List_custom_url_categories | get | `/restapi/v10.0/Objects/CustomURLCategories` | — |
 
 </details>
 

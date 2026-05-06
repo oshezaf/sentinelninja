@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_V2_(Preview)_-_Check_Data_Source_for_last_day*: method=`post`, path=`/queryDataV2`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Create_incident_-_One_or_more_Data_Sources_stopped_sending_data*: method=`put`, path=`/Incidents/subscriptions/@{encodeURIComponent(parameters('SentinelSubID'))}/resourceGroups/@{encodeURIComponent(parameters('SentinelWSResourceGroup'))}/workspaces/@{encodeURIComponent(parameters('SentinelWSName'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_V2_(Preview)_-_Check_Data_Source_for_last_day | post | `/queryDataV2` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_incident_-_One_or_more_Data_Sources_stopped_sending_data | put | `/Incidents/subscriptions/@{encodeURIComponent(parameters('SentinelSubID'))}/resourceGroups/@{encodeURIComponent(parameters('SentinelWSResourceGroup'))}/workspaces/@{encodeURIComponent(parameters('SentinelWSName'))}` | — |
 
 </details>
 

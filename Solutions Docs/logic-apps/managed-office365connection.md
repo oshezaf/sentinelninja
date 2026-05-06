@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Create-Incident-Logic-App](../content/standalone-content-create-incident-logic-app-e7dfe0c9.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
+| [Create-Incident-Logic-App](../content/standalone-content-create-incident-logic-app-e7dfe0c9.md) | 📄 Standalone | 0 | 1 |
 
 ---
 

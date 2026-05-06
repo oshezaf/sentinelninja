@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>cisco-asav-connector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-cisco-asav-connector.html"><code>cisco-asav-connector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>CiscoASAConnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-ciscoasaconnector.html"><code>CiscoASAConnector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
@@ -82,15 +82,21 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`cisco-asav-connector`** (managedApi):
-- *Fetch_inbound_access_rules_on_an_interface*: method=`get`, path=`/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules`
-- *Create_an_inbound_access_rule_on_an_interface*: method=`post`, path=`/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules`
-- *Remove_an_inbound_access_rule_on_an_interface*: method=`delete`, path=`/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules/@{encodeURIComponent(items('For_each_over_ipAddresses')['extendedAceItemObjectId'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+
+#### [`cisco-asav-connector`](../logic-apps/managed-cisco-asav-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_inbound_access_rules_on_an_interface | get | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules` | — |
+| Create_an_inbound_access_rule_on_an_interface | post | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules` | — |
+| Remove_an_inbound_access_rule_on_an_interface | delete | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules/@{encodeURIComponent(items('For_each_over_ipAddresses')['extendedAceItemObjectId'])}` | — |
 
 </details>
 

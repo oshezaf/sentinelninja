@@ -55,25 +55,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">7</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault-1</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault-1</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -82,22 +82,31 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Host_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
-- *Send_Host_Field_Data_-_Services*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Field_Data_-_Endpoint*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Field_Data_-_Vulns*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Field_Data_-_Threat*: method=`post`, path=`/api/logs`
-- *Send_Certificate_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault-1`** (managedApi):
-- *Get_Censys_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Host_Data_To_Log_Analytics | post | `/api/logs` | — |
+| Send_Host_Field_Data_-_Services | post | `/api/logs` | — |
+| Send_Web_Property_Data_To_Log_Analytics | post | `/api/logs` | — |
+| Send_Web_Property_Field_Data_-_Endpoint | post | `/api/logs` | — |
+| Send_Web_Property_Field_Data_-_Vulns | post | `/api/logs` | — |
+| Send_Web_Property_Field_Data_-_Threat | post | `/api/logs` | — |
+| Send_Certificate_Data_To_Log_Analytics | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Host_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{triggerBody()?['indicator_value']}`
-- *HTTP_Request_To_Fetch_Web_Property_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty/@{triggerBody()?['indicator_value']}`
-- *HTTP_Request_To_Fetch_Certificate_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/certificate/@{triggerBody()?['indicator_value']}`
+#### [`keyvault-1`](../logic-apps/managed-keyvault-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Censys_API_Token | get | `/secrets/@{encodeURIComponent('Censys-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Host_Details | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{triggerBody()?['indicator_value']}` | — |
+| HTTP_Request_To_Fetch_Web_Property_Details | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty/@{triggerBody()?['indicator_value']}` | — |
+| HTTP_Request_To_Fetch_Certificate_Details | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/certificate/@{triggerBody()?['indicator_value']}` | — |
 
 </details>
 

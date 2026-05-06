@@ -20,19 +20,25 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 4 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *SearchSecurityIncident*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Change_incident_status_4*: method=`put`, path=`/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each_4')?['IncidentNumber'])}/Status/@{encodeURIComponent('Closed')}`
-- *Change_incident_status*: method=`put`, path=`/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each')?['IncidentNumber'])}/Status/@{encodeURIComponent(triggerBody()?['bulkoperation']?['operationstatus'])}`
-- *Change_incident_status_5*: method=`put`, path=`/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each_5'))}/Status/@{encodeURIComponent('Closed')}`
-- *Change_incident_status_2*: method=`put`, path=`/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each_2'))}/Status/@{encodeURIComponent(triggerBody()?['bulkoperation']?['operationstatus'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| SearchSecurityIncident | post | `/queryData` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Change_incident_status_4 | put | `/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each_4')?['IncidentNumber'])}/Status/@{encodeURIComponent('Closed')}` | — |
+| Change_incident_status | put | `/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each')?['IncidentNumber'])}/Status/@{encodeURIComponent(triggerBody()?['bulkoperation']?['operationstatus'])}` | — |
+| Change_incident_status_5 | put | `/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each_5'))}/Status/@{encodeURIComponent('Closed')}` | — |
+| Change_incident_status_2 | put | `/Case/@{encodeURIComponent(parameters('SentinelSubId'))}/@{encodeURIComponent(parameters('SentinelWorkspaceId'))}/@{encodeURIComponent(parameters('SentinelResourceGroup'))}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(items('For_each_2'))}/Status/@{encodeURIComponent(triggerBody()?['bulkoperation']?['operationstatus'])}` | — |
 
 </details>
 

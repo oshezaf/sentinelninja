@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Get_CrowdStrike_Token*: method=`POST`, uri=`@{parameters('CrowdStrike_BaseUrl')}/oauth2/token`
-- *Get_Vaikora_Actions*: method=`GET`, uri=`@{parameters('Vaikora_BaseUrl')}/actions?agent_id=@{parameters('VaikoraAgentId')}&per_page=100`
-- *Post_IOC_to_CrowdStrike*: method=`POST`, uri=`@{parameters('CrowdStrike_BaseUrl')}/iocs/entities/indicators/v1?ignore_warnings=true`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_CrowdStrike_Token | POST | `@{parameters('CrowdStrike_BaseUrl')}/oauth2/token` | — |
+| Get_Vaikora_Actions | GET | `@{parameters('Vaikora_BaseUrl')}/actions?agent_id=@{parameters('VaikoraAgentId')}&per_page=100` | — |
+| Post_IOC_to_CrowdStrike | POST | `@{parameters('CrowdStrike_BaseUrl')}/iocs/entities/indicators/v1?ignore_warnings=true` | — |
 
 </details>
 

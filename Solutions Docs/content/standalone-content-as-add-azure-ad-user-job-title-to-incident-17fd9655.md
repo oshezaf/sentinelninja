@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 2 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Get_user*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(items('For_each_-_Account')?['AadUserId'])}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_user | get | `/v1.0/users/@{encodeURIComponent(items('For_each_-_Account')?['AadUserId'])}` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
 </details>
 

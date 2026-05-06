@@ -20,40 +20,55 @@ This playbook uses **6** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 0 |
-| `keyvault_1` | Managed | 0 | 2 |
-| `RubrikCustomConnector` | Custom | 1 | 1 |
-| `http` | Built-in | 0 | 9 |
-| `workflow` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 0 |
+| [`keyvault_1`](../logic-apps/managed-keyvault-1.md) | Managed | 0 | 2 |
+| [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) | Custom | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 9 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Close_Incident_Due_To_Anomaly_Is_Already_Resolved*: method=`put`, path=`/Incidents`
-- *Close_incident_due_to_resolve_anomaly_or_report_false_positive*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault_1`** (managedApi):
-- *Get_Client_Id_*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Close_Incident_Due_To_Anomaly_Is_Already_Resolved | put | `/Incidents` | — |
+| Close_incident_due_to_resolve_anomaly_or_report_false_positive | put | `/Incidents` | — |
 
-**`RubrikCustomConnector`** (customApi):
-- *Authentication*: method=`post`, path=`/api/client_token`
+#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
 
-**`http`** (builtin):
-- *Determine_the_status_of_the_Rubrik_Radar_analysis_process*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *sonar_sensitive_hits(Object_Details)*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_Suspicious_files_for_a_latest_snpshot_of_given_object*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Get_cdm_snapshotid_for_latest_snapshotfid*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *Gather_the_final_Radar_Analysis_results*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *GenericPolling*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *rubrik-cdm-cluster-connection-state*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *rubrik-cdm-cluster-location*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
-- *rubrik-sonar-sensitive-hits(Object_List)*: method=`POST`, uri=`@{triggerBody()?['BaseUrl']}/api/graphql`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_Id_ | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| Get_secret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
 
-**`workflow`** (builtin):
-- *RubrikGenerateDownloadableLink*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('DownloadableLinkGeneratePlaybookName'))]`, triggerName=`manual`
-- *RubrikUpdateAnomalyStatus*: workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]`, triggerName=`manual`
+#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Authentication | post | `/api/client_token` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Determine_the_status_of_the_Rubrik_Radar_analysis_process | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| sonar_sensitive_hits(Object_Details) | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_Suspicious_files_for_a_latest_snpshot_of_given_object | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_cdm_snapshotid_for_latest_snapshotfid | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Gather_the_final_Radar_Analysis_results | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| GenericPolling | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| rubrik-cdm-cluster-connection-state | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| rubrik-cdm-cluster-location | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| rubrik-sonar-sensitive-hits(Object_List) | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikGenerateDownloadableLink | — | — | workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('DownloadableLinkGeneratePlaybookName'))]`<br>triggerName=`manual` |
+| RubrikUpdateAnomalyStatus | — | — | workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]`<br>triggerName=`manual` |
 
 </details>
 

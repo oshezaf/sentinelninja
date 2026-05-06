@@ -20,25 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureadip` | Managed | 1 | 5 |
-| `azuresentinel` | Managed | 1 | 5 |
-| `teams` | Managed | 1 | 0 |
+| [`azureadip`](../logic-apps/managed-azureadip.md) | Managed | 1 | 5 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 5 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureadip`** (managedApi):
-- *Get_risky_user*: method=`get`, path=`/beta/riskyUsers/@{encodeURIComponent(items('For_each')?['AadUserId'])}`
-- *Confirm_a_risky_user_as_compromised*: method=`post`, path=`/beta/riskyUsers/confirmCompromised`
-- *Get_risky_user_2*: method=`get`, path=`/beta/riskyUsers/@{encodeURIComponent(items('For_each')?['AadUserId'])}`
-- *Dismiss_a_risky_user*: method=`post`, path=`/beta/riskyUsers/dismiss`
-- *Get_risky_user_3*: method=`get`, path=`/beta/riskyUsers/@{encodeURIComponent(items('For_each')?['AadUserId'])}`
+#### [`azureadip`](../logic-apps/managed-azureadip.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Update_incident_2*: method=`put`, path=`/Incidents`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_risky_user | get | `/beta/riskyUsers/@{encodeURIComponent(items('For_each')?['AadUserId'])}` | — |
+| Confirm_a_risky_user_as_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
+| Get_risky_user_2 | get | `/beta/riskyUsers/@{encodeURIComponent(items('For_each')?['AadUserId'])}` | — |
+| Dismiss_a_risky_user | post | `/beta/riskyUsers/dismiss` | — |
+| Get_risky_user_3 | get | `/beta/riskyUsers/@{encodeURIComponent(items('For_each')?['AadUserId'])}` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Update_incident_2 | put | `/Incidents` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
 </details>
 

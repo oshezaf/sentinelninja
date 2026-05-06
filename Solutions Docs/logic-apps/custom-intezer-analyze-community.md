@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Enrich file hash entities - Intezer Analyze](../content/standalone-content-enrich-file-hash-entities-intezer-analyze-de32bdd5.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
+| [Enrich file hash entities - Intezer Analyze](../content/standalone-content-enrich-file-hash-entities-intezer-analyze-de32bdd5.md) | 📄 Standalone | 1 | 1 |
 
 ---
 

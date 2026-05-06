@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 3 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/recordedfuturesandbo/](https://learn.microsoft.com/en-us/connectors/recordedfuturesandbo/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/recordedfuturesandbo/) |
 
 ## Playbooks Using This Connector
 

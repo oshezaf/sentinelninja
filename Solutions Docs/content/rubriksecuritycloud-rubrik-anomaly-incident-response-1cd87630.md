@@ -20,19 +20,22 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `teams` | Managed | 1 | 0 |
-| `workflow` | Built-in | 0 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`workflow`** (builtin):
-- *RubrikFilesetRansomwareDiscovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikFilesetRansomwareDiscovery')]`, triggerName=`manual`
-- *RubrikRansomwareDiscoveryAndFileRecovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikRansomwareDiscoveryAndFileRecovery')]`, triggerName=`manual`
-- *RubrikRansomwareDiscoveryAndVMRecovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikRansomwareDiscoveryAndVMRecovery')]`, triggerName=`manual`
-- *RubrikAnomalyAnalysis*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikAnomalyAnalysis')]`, triggerName=`manual`
-- *RubrikDataObjectDiscovery*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikDataObjectDiscovery')]`, triggerName=`manual`
-- *RubrikFileObjectContextAnalysis*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikFileObjectContextAnalysis')]`, triggerName=`manual`
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikFilesetRansomwareDiscovery | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikFilesetRansomwareDiscovery')]`<br>triggerName=`manual` |
+| RubrikRansomwareDiscoveryAndFileRecovery | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikRansomwareDiscoveryAndFileRecovery')]`<br>triggerName=`manual` |
+| RubrikRansomwareDiscoveryAndVMRecovery | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikRansomwareDiscoveryAndVMRecovery')]`<br>triggerName=`manual` |
+| RubrikAnomalyAnalysis | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikAnomalyAnalysis')]`<br>triggerName=`manual` |
+| RubrikDataObjectDiscovery | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikDataObjectDiscovery')]`<br>triggerName=`manual` |
+| RubrikFileObjectContextAnalysis | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikFileObjectContextAnalysis')]`<br>triggerName=`manual` |
 
 </details>
 

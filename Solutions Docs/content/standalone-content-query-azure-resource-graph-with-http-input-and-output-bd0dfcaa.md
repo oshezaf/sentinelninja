@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_secret_azureresourcegraph-clientid*: method=`get`, path=`/secrets/@{encodeURIComponent('azureresourcegraph-clientid')}/value`
-- *Get_secret_azureresourcegraph-clientsecret*: method=`get`, path=`/secrets/@{encodeURIComponent('azureresourcegraph-clientsecret')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Azure_Login*: method=`POST`, uri=`[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/token')]`
-- *HTTP_Query_Azure_Resource_Graph*: method=`POST`, uri=`https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret_azureresourcegraph-clientid | get | `/secrets/@{encodeURIComponent('azureresourcegraph-clientid')}/value` | — |
+| Get_secret_azureresourcegraph-clientsecret | get | `/secrets/@{encodeURIComponent('azureresourcegraph-clientsecret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Azure_Login | POST | `[concat('https://login.microsoftonline.com/', subscription().tenantId, '/oauth2/token')]` | — |
+| HTTP_Query_Azure_Resource_Graph | POST | `https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01` | — |
 
 </details>
 

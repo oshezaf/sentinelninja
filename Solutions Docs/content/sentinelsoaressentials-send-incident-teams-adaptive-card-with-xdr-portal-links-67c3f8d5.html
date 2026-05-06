@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
@@ -76,11 +76,17 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`teams`** (managedApi):
-- *Post_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_card_in_a_chat_or_channel | post | `/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts` | — |
 
 </details>
 

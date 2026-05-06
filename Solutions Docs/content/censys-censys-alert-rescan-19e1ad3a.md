@@ -31,32 +31,47 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 2 |
-| `azuremonitorlogs` | Managed | 1 | 2 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 3 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Ingest_Censys_Rescan_Host_Data*: method=`post`, path=`/api/logs`
-- *Ingest_Censys_Recan_Web_Property_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_Query_And_List_Related_Entities*: method=`post`, path=`/queryData`
-- *Run_Query_And_Get_Related_Incident_ARM_Id_and_Comment_Count*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Ingest_Censys_Rescan_Host_Data | post | `/api/logs` | — |
+| Ingest_Censys_Recan_Web_Property_Data | post | `/api/logs` | — |
 
-**`keyvault`** (managedApi):
-- *Get_Censys_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Call_to_Fetch_Scan_Status*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/scans/@{body('Parse_JSON_for_Rescan_Response')?['result']?['tracked_scan_id']}`
-- *HTTP_Post_Request_For_Rescan*: method=`POST`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/scans/rescan`
-- *HTTP_Call_to_Fetch_IOC_data*: method=`GET`, uri=`@variables('url_for_ioc_data')`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Query_And_List_Related_Entities | post | `/queryData` | — |
+| Run_Query_And_Get_Related_Incident_ARM_Id_and_Comment_Count | post | `/queryData` | — |
 
-**`workflow`** (builtin):
-- *CensysIncidentEnrichment*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('IncidentEnrichmentPlaybookName')))]`, triggerName=`When_an_HTTP_request_is_received`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Censys_API_Token | get | `/secrets/@{encodeURIComponent('Censys-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Call_to_Fetch_Scan_Status | GET | `@{variables('base_url')}/@{variables('api_version')}/global/scans/@{body('Parse_JSON_for_Rescan_Response')?['result']?['tracked_scan_id']}` | — |
+| HTTP_Post_Request_For_Rescan | POST | `@{variables('base_url')}/@{variables('api_version')}/global/scans/rescan` | — |
+| HTTP_Call_to_Fetch_IOC_data | GET | `@variables('url_for_ioc_data')` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CensysIncidentEnrichment | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('IncidentEnrichmentPlaybookName')))]`<br>triggerName=`When_an_HTTP_request_is_received` |
 
 </details>
 

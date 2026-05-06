@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Watchlist-SendSQLData-Watchlist](../content/standalone-content-watchlist-sendsqldata-watchlist-2903cb5f.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
+| [Watchlist-SendSQLData-Watchlist](../content/standalone-content-watchlist-sendsqldata-watchlist-2903cb5f.md) | 📄 Standalone | 0 | 1 |
 
 ---
 

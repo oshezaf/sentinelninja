@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureautomation</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureautomation.html"><code>azureautomation</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
@@ -76,13 +76,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureautomation`** (managedApi):
-- *Disable_Data_Aging_Job_Output*: method=`get`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs/@{encodeURIComponent(body('Create_Disable_Data_Aging')?['properties']?['jobId'])}/output`
-- *Create_Disable_Data_Aging*: method=`put`, path=`/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs`
+#### [`azureautomation`](../logic-apps/managed-azureautomation.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('access-token')}/value`
-- *Environment_Endpoint_URL*: method=`get`, path=`/secrets/@{encodeURIComponent('environment-endpoint-url')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Disable_Data_Aging_Job_Output | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs/@{encodeURIComponent(body('Create_Disable_Data_Aging')?['properties']?['jobId'])}/output` | — |
+| Create_Disable_Data_Aging | put | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Automation/automationAccounts/@{encodeURIComponent('Commvault-Automation-Account')}/jobs` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Access_Token | get | `/secrets/@{encodeURIComponent('access-token')}/value` | — |
+| Environment_Endpoint_URL | get | `/secrets/@{encodeURIComponent('environment-endpoint-url')}/value` | — |
 
 </details>
 

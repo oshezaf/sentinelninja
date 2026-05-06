@@ -20,18 +20,24 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinelconnection` | Managed | 0 | 1 |
-| `office365` | Managed | 1 | 0 |
-| `office365connection` | Managed | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinelconnection`](../logic-apps/managed-microsoftsentinelconnection.md) | Managed | 0 | 1 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 0 |
+| [`office365connection`](../logic-apps/managed-office365connection.md) | Managed | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinelconnection`** (managedApi):
-- *Create_incident*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/',parameters('WorkspaceName'))]`
+#### [`microsoftsentinelconnection`](../logic-apps/managed-microsoftsentinelconnection.md) (Managed)
 
-**`office365connection`** (managedApi):
-- *When_a_new_email_arrives*: method=`get`, path=`/Mail/OnNewEmail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_incident | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/',parameters('WorkspaceName'))]` | — |
+
+#### [`office365connection`](../logic-apps/managed-office365connection.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| When_a_new_email_arrives | get | `/Mail/OnNewEmail` | — |
 
 </details>
 

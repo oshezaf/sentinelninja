@@ -20,21 +20,30 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
-| `workflow` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Cyjax_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Cyjax-API-Key')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Call_to_Fetch_IOCs_Data*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/indicator-of-compromise/enrichment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Cyjax_API_Token | get | `/secrets/@{encodeURIComponent('Cyjax-API-Key')}/value` | — |
 
-**`workflow`** (builtin):
-- *CyjaxAddCommentToIncident*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('AddIncidentCommentPlaybookName')))]`, triggerName=`manual`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Call_to_Fetch_IOCs_Data | GET | `@{variables('base_url')}/@{variables('api_version')}/indicator-of-compromise/enrichment` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CyjaxAddCommentToIncident | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('AddIncidentCommentPlaybookName')))]`<br>triggerName=`manual` |
 
 </details>
 

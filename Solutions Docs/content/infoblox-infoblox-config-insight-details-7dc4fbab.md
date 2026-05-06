@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 0 |
-| `azureloganalyticsdatacollector_11` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 0 |
+| [`azureloganalyticsdatacollector_11`](../logic-apps/managed-azureloganalyticsdatacollector-11.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector_11`** (managedApi):
-- *Send_Data_to_Sentinel*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector_11`](../logic-apps/managed-azureloganalyticsdatacollector-11.md) (Managed)
 
-**`http`** (builtin):
-- *GET_Config_Insight_Details*: method=`GET`, uri=`@variables('config_insight_details_url')`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data_to_Sentinel | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GET_Config_Insight_Details | GET | `@variables('config_insight_details_url')` | — |
 
 </details>
 

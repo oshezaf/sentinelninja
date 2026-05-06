@@ -20,18 +20,24 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Secret*: method=`get`, path=`/secrets/@{encodeURIComponent('AS-Okta-Terminate-User-Sessions-API-Token')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP-_Terminate_User_Sessions*: method=`DELETE`, uri=`[concat('https://', parameters('OktaSubdomain') , '.okta.com/api/v1/users/@{body(''HTTP_-_Get_Okta_User_Account'')?[0]?[''id'']}/sessions')]`
-- *HTTP_-_Get_Okta_User_Account*: method=`GET`, uri=`[concat('https://', parameters('OktaSubdomain') , '.okta.com/api/v1/users?search=profile.email%20eq%20%22@{concat(replace(encodeUriComponent(triggerBody()?[''Entity'']?[''properties'']?[''Name'']),''.'',''%2E''), ''%40'', replace(encodeUriComponent(triggerBody()?[''Entity'']?[''properties'']?[''UPNSuffix'']),''.'',''%2E''))}%22')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret | get | `/secrets/@{encodeURIComponent('AS-Okta-Terminate-User-Sessions-API-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP-_Terminate_User_Sessions | DELETE | `[concat('https://', parameters('OktaSubdomain') , '.okta.com/api/v1/users/@{body(''HTTP_-_Get_Okta_User_Account'')?[0]?[''id'']}/sessions')]` | — |
+| HTTP_-_Get_Okta_User_Account | GET | `[concat('https://', parameters('OktaSubdomain') , '.okta.com/api/v1/users?search=profile.email%20eq%20%22@{concat(replace(encodeUriComponent(triggerBody()?[''Entity'']?[''properties'']?[''Name'']),''.'',''%2E''), ''%40'', replace(encodeUriComponent(triggerBody()?[''Entity'']?[''properties'']?[''UPNSuffix'']),''.'',''%2E''))}%22')]` | — |
 
 </details>
 

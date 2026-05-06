@@ -20,28 +20,34 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 12 |
-| `teams` | Managed | 1 | 0 |
-| `CiscoISE` | Custom | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 12 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`CiscoISE`](../logic-apps/custom-ciscoise.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Update_incident_2*: method=`put`, path=`/Incidents`
-- *Update_incident_3*: method=`put`, path=`/Incidents`
-- *Update_incident_4*: method=`put`, path=`/Incidents`
-- *Update_incident_5*: method=`put`, path=`/Incidents`
-- *Update_incident_6*: method=`put`, path=`/Incidents`
-- *Update_incident_7*: method=`put`, path=`/Incidents`
-- *Update_incident_8*: method=`put`, path=`/Incidents`
-- *Update_incident_9*: method=`put`, path=`/Incidents`
-- *Update_incident_10*: method=`put`, path=`/Incidents`
-- *Update_incident_11*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`CiscoISE`** (customApi):
-- *Assign_an_ANC_policy_to_an_endpoint*: method=`put`, path=`/ers/config/ancendpoint/apply`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Update_incident_2 | put | `/Incidents` | — |
+| Update_incident_3 | put | `/Incidents` | — |
+| Update_incident_4 | put | `/Incidents` | — |
+| Update_incident_5 | put | `/Incidents` | — |
+| Update_incident_6 | put | `/Incidents` | — |
+| Update_incident_7 | put | `/Incidents` | — |
+| Update_incident_8 | put | `/Incidents` | — |
+| Update_incident_9 | put | `/Incidents` | — |
+| Update_incident_10 | put | `/Incidents` | — |
+| Update_incident_11 | put | `/Incidents` | — |
+
+#### [`CiscoISE`](../logic-apps/custom-ciscoise.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Assign_an_ANC_policy_to_an_endpoint | put | `/ers/config/ancendpoint/apply` | — |
 
 </details>
 

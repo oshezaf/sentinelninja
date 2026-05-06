@@ -20,23 +20,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `CheckPointMgmtConnector` | Custom | 1 | 8 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`CheckPointMgmtConnector`](../logic-apps/custom-checkpointmgmtconnector.md) | Custom | 1 | 8 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`CheckPointMgmtConnector`** (customApi):
-- *add-host*: method=`post`, path=`/add-host`
-- *set-group*: method=`post`, path=`/set-group`
-- *show-task_install-policy*: method=`post`, path=`/show-task`
-- *show-task_publish*: method=`post`, path=`/show-task`
-- *install-policy*: method=`post`, path=`/install-policy`
-- *login*: method=`post`, path=`/login`
-- *logout*: method=`post`, path=`/logout`
-- *publish*: method=`post`, path=`/publish`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`CheckPointMgmtConnector`](../logic-apps/custom-checkpointmgmtconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| add-host | post | `/add-host` | — |
+| set-group | post | `/set-group` | — |
+| show-task_install-policy | post | `/show-task` | — |
+| show-task_publish | post | `/show-task` | — |
+| install-policy | post | `/install-policy` | — |
+| login | post | `/login` | — |
+| logout | post | `/logout` | — |
+| publish | post | `/publish` | — |
 
 </details>
 

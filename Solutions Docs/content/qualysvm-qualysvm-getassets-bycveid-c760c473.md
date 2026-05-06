@@ -20,28 +20,37 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureblob` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 1 |
-| `QualysCustomConnector` | Custom | 1 | 8 |
+| [`azureblob`](../logic-apps/managed-azureblob.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`QualysCustomConnector`](../logic-apps/custom-qualyscustomconnector.md) | Custom | 1 | 8 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *Create_SAS_URI_by_path_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent('AccountNameFromSettings')}/CreateSharedLinkByPath`
-- *Create_blob_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_SAS_URI_by_path_(V2) | post | `/v2/datasets/@{encodeURIComponent('AccountNameFromSettings')}/CreateSharedLinkByPath` | — |
+| Create_blob_(V2) | post | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files` | — |
 
-**`QualysCustomConnector`** (customApi):
-- *Create_Dynamic_Search_List_of_CVEs*: method=`post`, path=`/api/2.0/fo/qid/search_list/dynamic/`
-- *Create_Scan_Report_Template*: method=`post`, path=`/api/2.0/fo/report/template/scan/`
-- *Delete_Dynamic_Search_List*: method=`post`, path=`/api/2.0/fo/qid/search_list/dynamic/`
-- *Delete_Scan_Report_Template*: method=`post`, path=`/api/2.0/fo/report/template/scan/`
-- *Download_Report*: method=`post`, path=`/api/2.0/fo/report/`
-- *Get_Report_Status*: method=`post`, path=`/api/2.0/fo/report/`
-- *Launch_Scan_Report*: method=`post`, path=`/api/2.0/fo/report/`
-- *Get_Report_Status_Again*: method=`post`, path=`/api/2.0/fo/report/`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`QualysCustomConnector`](../logic-apps/custom-qualyscustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Dynamic_Search_List_of_CVEs | post | `/api/2.0/fo/qid/search_list/dynamic/` | — |
+| Create_Scan_Report_Template | post | `/api/2.0/fo/report/template/scan/` | — |
+| Delete_Dynamic_Search_List | post | `/api/2.0/fo/qid/search_list/dynamic/` | — |
+| Delete_Scan_Report_Template | post | `/api/2.0/fo/report/template/scan/` | — |
+| Download_Report | post | `/api/2.0/fo/report/` | — |
+| Get_Report_Status | post | `/api/2.0/fo/report/` | — |
+| Launch_Scan_Report | post | `/api/2.0/fo/report/` | — |
+| Get_Report_Status_Again | post | `/api/2.0/fo/report/` | — |
 
 </details>
 

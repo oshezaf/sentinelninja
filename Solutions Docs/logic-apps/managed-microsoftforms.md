@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/microsoftforms/](https://learn.microsoft.com/en-us/connectors/microsoftforms/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/microsoftforms/) |
 
 ## Playbooks Using This Connector
 

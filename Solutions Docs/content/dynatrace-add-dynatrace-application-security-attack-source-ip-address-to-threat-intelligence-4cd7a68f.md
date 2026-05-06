@@ -20,23 +20,32 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 1 |
-| `microsoftgraphsecurity` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_Dynatrace_Access_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`microsoftgraphsecurity`** (managedApi):
-- *Create_tiIndicator_for_attackers_source_ip*: method=`post`, path=`/beta/security/tiIndicators`
-- *Update_tiIndicator_expiration*: method=`patch`, path=`/beta/security/tiIndicators/@{encodeURIComponent(items('For_each_tiIndicator')?['id'])}`
-- *Get_Existing_tiIndicator*: method=`get`, path=`/beta/security/tiIndicators`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Dynatrace_Access_Token | get | `/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value` | — |
 
-**`http`** (builtin):
-- *Get_Dynatrace_Attack_Details*: method=`GET`, uri=`https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['attackIdentifier'])}`
+#### [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_tiIndicator_for_attackers_source_ip | post | `/beta/security/tiIndicators` | — |
+| Update_tiIndicator_expiration | patch | `/beta/security/tiIndicators/@{encodeURIComponent(items('For_each_tiIndicator')?['id'])}` | — |
+| Get_Existing_tiIndicator | get | `/beta/security/tiIndicators` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Dynatrace_Attack_Details | GET | `https://@{parameters('Tenant')}/api/v2/attacks/@{first(body('Parse_Incident_Alert_Custom_Body_JSON')?['attackIdentifier'])}` | — |
 
 </details>
 

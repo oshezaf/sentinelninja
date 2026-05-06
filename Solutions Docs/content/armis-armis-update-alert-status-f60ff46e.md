@@ -20,18 +20,24 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('ArmisAPISecretKey')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *Armis_Alert_Status_Update_to_Portal*: method=`PATCH`, uri=`@{variables('ArmisAPIBaseURL')}/api/v1/alerts/@{variables('ArmisAlertID')}/`
-- *Armis_Authentication*: method=`POST`, uri=`@{variables('ArmisAPIBaseURL')}/api/v1/access_token/`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('ArmisAPISecretKey')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Armis_Alert_Status_Update_to_Portal | PATCH | `@{variables('ArmisAPIBaseURL')}/api/v1/alerts/@{variables('ArmisAlertID')}/` | — |
+| Armis_Authentication | POST | `@{variables('ArmisAPIBaseURL')}/api/v1/access_token/` | — |
 
 </details>
 

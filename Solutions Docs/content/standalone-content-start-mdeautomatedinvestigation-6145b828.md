@@ -20,22 +20,31 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `teams` | Managed | 1 | 1 |
-| `wdatp` | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
+| [`wdatp`](../logic-apps/managed-wdatp.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`teams`** (managedApi):
-- *Post_a_message_(V3)*: method=`post`, path=`[concat('/v3/beta/teams/@{encodeURIComponent(', variables('SingleQuote'), parameters('TeamsId'), variables('SingleQuote'), ')}/channels/@{encodeURIComponent(', variables('SingleQuote'), parameters('TeamsChannelId'), variables('SingleQuote'),')}/messages')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`wdatp`** (managedApi):
-- *Actions_-_Start_automated_investigation_on_a_machine*: method=`post`, path=`/api/machines/@{encodeURIComponent(body('Machines_-_Get_single_machine')?['id'])}/startInvestigation`
-- *Machines_-_Get_single_machine*: method=`get`, path=`/api/machines/@{encodeURIComponent(items('For_each')?['HostName'])}`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_a_message_(V3) | post | `[concat('/v3/beta/teams/@{encodeURIComponent(', variables('SingleQuote'), parameters('TeamsId'), variables('SingleQuote'), ')}/channels/@{encodeURIComponent(', variables('SingleQuote'), parameters('TeamsChannelId'), variables('SingleQuote'),')}/messages')]` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Actions_-_Start_automated_investigation_on_a_machine | post | `/api/machines/@{encodeURIComponent(body('Machines_-_Get_single_machine')?['id'])}/startInvestigation` | — |
+| Machines_-_Get_single_machine | get | `/api/machines/@{encodeURIComponent(items('For_each')?['HostName'])}` | — |
 
 </details>
 

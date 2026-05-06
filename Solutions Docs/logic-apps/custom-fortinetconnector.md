@@ -15,8 +15,8 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| Fortinet_ResponseOnIP | - | 1 | 2 |
-| Fortinet_ResponseOnURL | - | 1 | 2 |
+| [Fortinet_ResponseOnIP](../content/github-only-fortinet-responseonip-67a4dec0.md) | 🔗 GitHub Only | 1 | 2 |
+| [Fortinet_ResponseOnURL](../content/github-only-fortinet-responseonurl-e52c2a3b.md) | 🔗 GitHub Only | 1 | 2 |
 
 ---
 

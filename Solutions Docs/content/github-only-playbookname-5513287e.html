@@ -55,37 +55,37 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>sharepointonline</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-sharepointonline.html"><code>sharepointonline</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>wdatp</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>wordonlinebusiness</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-wordonlinebusiness.html"><code>wordonlinebusiness</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
@@ -94,28 +94,46 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_hosts*: method=`post`, path=`/entities/host`
-- *Add_comment_to_incident_(V2)*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(body('Alert_-_Get_incident')?['properties']?['CaseNumber'])}`
-- *Alert_-_Get_incident*: method=`get`, path=`/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent('DefenderATP-VulnAlerts')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_hosts | post | `/entities/host` | — |
+| Add_comment_to_incident_(V2) | put | `/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(body('Alert_-_Get_incident')?['properties']?['CaseNumber'])}` | — |
+| Alert_-_Get_incident | get | `/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}` | — |
 
-**`sharepointonline`** (managedApi):
-- *Create_PDF*: method=`post`, path=`/datasets//files`
-- *Create_Word_Doc*: method=`post`, path=`/datasets//files`
-- *Create_sharing_link_for_a_file_or_folder*: method=`post`, path=`/datasets//codeless/_api/v2.0/sites/root/lists//items/@{encodeURIComponent(encodeURIComponent(body('Create_PDF')?['ItemId']))}/driveItem/createLink`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`wdatp`** (managedApi):
-- *Machines_-_Get_list_of_machines*: method=`get`, path=`/api/machines`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent('DefenderATP-VulnAlerts')}/value` | — |
 
-**`wordonlinebusiness`** (managedApi):
-- *Convert_Word_Document_to_PDF*: method=`get`, path=`/api/templates/convertFile`
-- *Populate_Vulnerability_Report_template*: method=`post`, path=`/api/templates/getFile`
+#### [`sharepointonline`](../logic-apps/managed-sharepointonline.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host')?['id']}/vulnerabilities`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_PDF | post | `/datasets//files` | — |
+| Create_Word_Doc | post | `/datasets//files` | — |
+| Create_sharing_link_for_a_file_or_folder | post | `/datasets//codeless/_api/v2.0/sites/root/lists//items/@{encodeURIComponent(encodeURIComponent(body('Create_PDF')?['ItemId']))}/driveItem/createLink` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Machines_-_Get_list_of_machines | get | `/api/machines` | — |
+
+#### [`wordonlinebusiness`](../logic-apps/managed-wordonlinebusiness.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Convert_Word_Document_to_PDF | get | `/api/templates/convertFile` | — |
+| Populate_Vulnerability_Report_template | post | `/api/templates/getFile` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host')?['id']}/vulnerabilities` | — |
 
 </details>
 

@@ -20,16 +20,19 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `microsoftsentinel` | Managed | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) | Managed | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftsentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Change_incident_severity*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('Critical')}`
-- *Change_incident_title_(V2)*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Title`
-- *Watchlists_-_Get_all_watchlist_Items_for_a_given_watchlist*: method=`get`, path=`/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/workspaces/@{encodeURIComponent(triggerBody()?['workspaceId'])}/watchlists/@{encodeURIComponent(parameters('WatchlistAlias'))}/watchlistItems`
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Change_incident_severity | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Severity/@{encodeURIComponent('Critical')}` | — |
+| Change_incident_title_(V2) | put | `/Case/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/@{encodeURIComponent(triggerBody()?['workspaceId'])}/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/@{encodeURIComponent('Incident')}/@{encodeURIComponent(triggerBody()?['object']?['properties']?['incidentNumber'])}/Title` | — |
+| Watchlists_-_Get_all_watchlist_Items_for_a_given_watchlist | get | `/Watchlists/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/workspaces/@{encodeURIComponent(triggerBody()?['workspaceId'])}/watchlists/@{encodeURIComponent(parameters('WatchlistAlias'))}/watchlistItems` | — |
 
 </details>
 

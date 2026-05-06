@@ -20,23 +20,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 8 |
-| `function` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 8 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_Parsed_WhoIs_data_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
-- *Add_basic_Parsed_WhoIs_data_to_Incident_Comments*: method=`post`, path=`/Incidents/Comment`
-- *Add_parsed_whois_contacts_to_incident_Comments*: method=`post`, path=`/Incidents/Comment`
-- *Add_parsed_whois_networks_to_incident_Comments*: method=`post`, path=`/Incidents/Comment`
-- *Add_parsed_whois_routes_data_to_incident_comments*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_refferral_servers_comments_to_incident_comments*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *ParsedWhois*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/ParsedWhois')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_Parsed_WhoIs_data_to_Incident_Comments | post | `/Incidents/Comment` | — |
+| Add_basic_Parsed_WhoIs_data_to_Incident_Comments | post | `/Incidents/Comment` | — |
+| Add_parsed_whois_contacts_to_incident_Comments | post | `/Incidents/Comment` | — |
+| Add_parsed_whois_networks_to_incident_Comments | post | `/Incidents/Comment` | — |
+| Add_parsed_whois_routes_data_to_incident_comments | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_refferral_servers_comments_to_incident_comments | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| ParsedWhois | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/ParsedWhois')]` |
 
 </details>
 

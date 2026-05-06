@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ZeroNetworksConnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-zeronetworksconnector.html"><code>ZeroNetworksConnector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
@@ -70,13 +70,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ZeroNetworksConnector`** (customApi):
-- *Create_Outbound_Block_rule*: method=`post`, path=`/protection/rules/outbound-block`
-- *Encode_IP_Address_to_AssetId*: method=`get`, path=`/entities/encode-ip`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`ZeroNetworksConnector`](../logic-apps/custom-zeronetworksconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Outbound_Block_rule | post | `/protection/rules/outbound-block` | — |
+| Encode_IP_Address_to_AssetId | get | `/entities/encode-ip` | — |
 
 </details>
 

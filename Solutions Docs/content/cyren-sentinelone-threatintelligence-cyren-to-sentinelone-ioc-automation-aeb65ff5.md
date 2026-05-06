@@ -20,17 +20,20 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 6 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *List_STAR_Rules*: method=`GET`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules?accountIds=@{parameters('SentinelOne_AccountId')}`
-- *Create_STAR_Rule*: method=`POST`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules`
-- *Get_IpRep_Feed_Page*: method=`GET`, uri=`@{outputs('Build_IpRep_Api_Url')}`
-- *Post_IpRep_IOC_to_SentinelOne*: method=`POST`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs`
-- *Get_MalwareUrl_Feed_Page*: method=`GET`, uri=`@{outputs('Build_MalwareUrl_Api_Url')}`
-- *Post_MalwareUrl_IOC_to_SentinelOne*: method=`POST`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| List_STAR_Rules | GET | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules?accountIds=@{parameters('SentinelOne_AccountId')}` | — |
+| Create_STAR_Rule | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/cloud-detection/rules` | — |
+| Get_IpRep_Feed_Page | GET | `@{outputs('Build_IpRep_Api_Url')}` | — |
+| Post_IpRep_IOC_to_SentinelOne | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs` | — |
+| Get_MalwareUrl_Feed_Page | GET | `@{outputs('Build_MalwareUrl_Api_Url')}` | — |
+| Post_MalwareUrl_IOC_to_SentinelOne | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs` | — |
 
 </details>
 

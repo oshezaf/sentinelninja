@@ -9,14 +9,14 @@
 | **Type** | Managed |
 | **Playbooks using** | 2 |
 | **Solutions** | 2 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/arm/](https://learn.microsoft.com/en-us/connectors/arm/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/arm/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [AutoConnect-ASCSubscriptions](../content/standalone-content-autoconnect-ascsubscriptions-c97cf156.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 3 |
 | [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 1 | 5 |
+| [AutoConnect-ASCSubscriptions](../content/standalone-content-autoconnect-ascsubscriptions-c97cf156.md) | 📄 Standalone | 1 | 3 |
 
 ---
 

@@ -20,24 +20,30 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `MerakiConnector` | Custom | 1 | 7 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`MerakiConnector`](../logic-apps/custom-merakiconnector.md) | Custom | 1 | 7 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`MerakiConnector`** (customApi):
-- *Get_Network_Group_Policy*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/groupPolicies/@{encodeURIComponent(body('Get_Network_Client_Policy')?['groupPolicyId'])}`
-- *Update_Network_Client_Policy*: method=`put`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients/@{encodeURIComponent(outputs('Compose_network_client')?['id'])}/policy`
-- *Get_Network_Client_Policy*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients/@{encodeURIComponent(outputs('Compose_network_client')?['id'])}/policy`
-- *Get_Network_Clients*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients`
-- *Get_Network_Group_Policies*: method=`get`, path=`/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/groupPolicies`
-- *Get_Networks*: method=`get`, path=`/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks`
-- *Get_Organizations*: method=`get`, path=`/organizations`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+
+#### [`MerakiConnector`](../logic-apps/custom-merakiconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Network_Group_Policy | get | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/groupPolicies/@{encodeURIComponent(body('Get_Network_Client_Policy')?['groupPolicyId'])}` | — |
+| Update_Network_Client_Policy | put | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients/@{encodeURIComponent(outputs('Compose_network_client')?['id'])}/policy` | — |
+| Get_Network_Client_Policy | get | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients/@{encodeURIComponent(outputs('Compose_network_client')?['id'])}/policy` | — |
+| Get_Network_Clients | get | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/clients` | — |
+| Get_Network_Group_Policies | get | `/networks/@{encodeURIComponent(outputs('Compose_Network_Id'))}/groupPolicies` | — |
+| Get_Networks | get | `/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks` | — |
+| Get_Organizations | get | `/organizations` | — |
 
 </details>
 

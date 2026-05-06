@@ -20,37 +20,49 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 10 |
-| `keyvault` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 3 |
-| `workflow` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 10 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_that_more_users_details_can_be_found_in_table*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_Severity_to_High_based_on_user_risk*: method=`put`, path=`/Incidents`
-- *Update_incident_severity_to_low*: method=`put`, path=`/Incidents`
-- *Update_incident_severity_to_medium*: method=`put`, path=`/Incidents`
-- *Add_comment_that_no_information_is_available_related_to_username*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_Severity_to_High*: method=`put`, path=`/Incidents`
-- *Update_incident_severity_to_low_based_on_user_email*: method=`put`, path=`/Incidents`
-- *Update_incident_severity_to_medium_based_risk_of_email_user*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_that_no_users_are_available*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Rubrik_ClientId*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value`
-- *Get_Rubrik_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_that_more_users_details_can_be_found_in_table | post | `/Incidents/Comment` | — |
+| Update_incident_Severity_to_High_based_on_user_risk | put | `/Incidents` | — |
+| Update_incident_severity_to_low | put | `/Incidents` | — |
+| Update_incident_severity_to_medium | put | `/Incidents` | — |
+| Add_comment_that_no_information_is_available_related_to_username | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident_Severity_to_High | put | `/Incidents` | — |
+| Update_incident_severity_to_low_based_on_user_email | put | `/Incidents` | — |
+| Update_incident_severity_to_medium_based_risk_of_email_user | put | `/Incidents` | — |
+| Add_comment_to_incident_that_no_users_are_available | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *Get_User_risk_information_for_username*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *Get_user_risk_information*: method=`POST`, uri=`@{variables('BaseUrl')}/api/graphql`
-- *Get_Access_Token*: method=`POST`, uri=`@{variables('BaseUrl')}/api/client_token`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`workflow`** (builtin):
-- *RubrikUserRiskPolicyDetails_3*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('RiskPolicyHitsPlaybookName'))]`, triggerName=`manual`
-- *RubrikUserRiskPolicyDetails*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('RiskPolicyHitsPlaybookName'))]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Rubrik_ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| Get_Rubrik_ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_User_risk_information_for_username | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| Get_user_risk_information | POST | `@{variables('BaseUrl')}/api/graphql` | — |
+| Get_Access_Token | POST | `@{variables('BaseUrl')}/api/client_token` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikUserRiskPolicyDetails_3 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('RiskPolicyHitsPlaybookName'))]`<br>triggerName=`manual` |
+| RubrikUserRiskPolicyDetails | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('RiskPolicyHitsPlaybookName'))]`<br>triggerName=`manual` |
 
 </details>
 

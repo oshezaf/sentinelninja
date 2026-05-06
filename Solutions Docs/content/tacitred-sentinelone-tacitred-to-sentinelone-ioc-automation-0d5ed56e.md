@@ -20,13 +20,16 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Get_TacitRed_Findings*: method=`GET`, uri=`@{parameters('TacitRed_ApiUrl')}?types[]=compromised_credentials&date_from=@{formatDateTime(addDays(utcNow(), -7), 'yyyy-MM-dd')}&page=1&page_size=100`
-- *Post_IOC_to_SentinelOne*: method=`POST`, uri=`@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_TacitRed_Findings | GET | `@{parameters('TacitRed_ApiUrl')}?types[]=compromised_credentials&date_from=@{formatDateTime(addDays(utcNow(), -7), 'yyyy-MM-dd')}&page=1&page_size=100` | — |
+| Post_IOC_to_SentinelOne | POST | `@{parameters('SentinelOne_BaseUrl')}/web/api/v2.1/threat-intelligence/iocs` | — |
 
 </details>
 

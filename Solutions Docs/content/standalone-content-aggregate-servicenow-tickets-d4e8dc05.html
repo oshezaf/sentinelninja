@@ -54,13 +54,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>service-now</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-service-now.html"><code>service-now</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
@@ -69,13 +69,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}`
-- *Add_labels_to_incident*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/AddLabels`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`service-now`** (managedApi):
-- *Update_Record*: method=`put`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(substring(concat(body('Alert_-_Get_incident')?['properties']?['Labels']),add(indexOf(concat(body('Alert_-_Get_incident')?['properties']?['Labels']),'sysid'), 5),32))}`
-- *Create_Record*: method=`post`, path=`/api/now/v2/table/@{encodeURIComponent('incident')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Cases/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}` | — |
+| Add_labels_to_incident | put | `/Case/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/AddLabels` | — |
+
+#### [`service-now`](../logic-apps/managed-service-now.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_Record | put | `/api/now/v2/table/@{encodeURIComponent('incident')}/@{encodeURIComponent(substring(concat(body('Alert_-_Get_incident')?['properties']?['Labels']),add(indexOf(concat(body('Alert_-_Get_incident')?['properties']?['Labels']),'sysid'), 5),32))}` | — |
+| Create_Record | post | `/api/now/v2/table/@{encodeURIComponent('incident')}` | — |
 
 </details>
 

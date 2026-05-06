@@ -31,23 +31,32 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 3 |
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 3 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Update_Last_Item_id_in_Tech_table_*: method=`post`, path=`/api/logs`
-- *Send_Data*: method=`post`, path=`/api/logs`
-- *Save_seqUpdate*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Get_last_received_item_ID_from_Azure_Log_DB*: method=`post`, path=`/queryData`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_Last_Item_id_in_Tech_table_ | post | `/api/logs` | — |
+| Send_Data | post | `/api/logs` | — |
+| Save_seqUpdate | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`@{parameters('GIB API URL ')}sequence_list`
-- *Get_next_portion_of_events_from_GIB*: method=`GET`, uri=`@{parameters('GIB API URL ')}@{parameters('Collection Name')}/updated`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_last_received_item_ID_from_Azure_Log_DB | post | `/queryData` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `@{parameters('GIB API URL ')}sequence_list` | — |
+| Get_next_portion_of_events_from_GIB | GET | `@{parameters('GIB API URL ')}@{parameters('Collection Name')}/updated` | — |
 
 </details>
 

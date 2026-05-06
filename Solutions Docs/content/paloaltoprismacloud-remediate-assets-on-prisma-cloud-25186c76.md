@@ -20,30 +20,42 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `keyvault` | Managed | 0 | 1 |
-| `teams` | Managed | 1 | 3 |
-| `PrismaCloudCSPMCustomConnector` | Custom | 1 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 0 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 3 |
+| [`PrismaCloudCSPMCustomConnector`](../logic-apps/custom-prismacloudcspmcustomconnector.md) | Custom | 1 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`teams`** (managedApi):
-- *Update_an_adaptive_card_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Update_an_adaptive_card_in_a_chat_or_channel_2*: method=`post`, path=`/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Update_an_adaptive_card_in_a_chat_or_channel_3*: method=`post`, path=`/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`PrismaCloudCSPMCustomConnector`** (customApi):
-- *List_Remediation_command*: method=`post`, path=`/alert/remediation`
-- *List_Alerts*: method=`get`, path=`/alert`
-- *Remediate_Alert*: method=`patch`, path=`/alert/remediation/@{encodeURIComponent(items('For_each_2_-_fetching_response_from_teams_channel_and_taking_action')['Alert id'])}`
-- *Login_Generate_Token*: method=`post`, path=`/login`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_an_adaptive_card_in_a_chat_or_channel | post | `/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Update_an_adaptive_card_in_a_chat_or_channel_2 | post | `/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Update_an_adaptive_card_in_a_chat_or_channel_3 | post | `/v1.0/teams/conversation/updateAdaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`PrismaCloudCSPMCustomConnector`](../logic-apps/custom-prismacloudcspmcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| List_Remediation_command | post | `/alert/remediation` | — |
+| List_Alerts | get | `/alert` | — |
+| Remediate_Alert | patch | `/alert/remediation/@{encodeURIComponent(items('For_each_2_-_fetching_response_from_teams_channel_and_taking_action')['Alert id'])}` | — |
+| Login_Generate_Token | post | `/login` | — |
 
 </details>
 

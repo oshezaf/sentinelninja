@@ -28,25 +28,34 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureblob` | Managed | 0 | 2 |
-| `azureloganalyticsdatacollector` | Managed | 0 | 3 |
-| `slashnext` | Managed | 0 | 2 |
-| `SlashNext-CMS` | Custom | 1 | 0 |
+| [`azureblob`](../logic-apps/managed-azureblob.md) | Managed | 0 | 2 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 0 | 3 |
+| [`slashnext`](../logic-apps/managed-slashnext.md) | Managed | 0 | 2 |
+| [`SlashNext-CMS`](../logic-apps/custom-slashnext-cms.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *create_file*: method=`post`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files`
-- *Get_content*: method=`get`, path=`[replace(variables('storage_path'),'slashnextstorage',parameters('Storage Account Name'))]`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Email_Text_Threat_Data*: method=`post`, path=`/api/logs`
-- *Send_Email_Threat_Data_*: method=`post`, path=`/api/logs`
-- *Send_Threat_Data*: method=`post`, path=`/api/logs`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| create_file | post | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files` | — |
+| Get_content | get | `[replace(variables('storage_path'),'slashnextstorage',parameters('Storage Account Name'))]` | — |
 
-**`slashnext`** (managedApi):
-- *Events_details*: method=`post`, path=`/api/integration/v4/incidents/detail`
-- *incident_list_response*: method=`post`, path=`/api/integration/v4/incidents/list`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Email_Text_Threat_Data | post | `/api/logs` | — |
+| Send_Email_Threat_Data_ | post | `/api/logs` | — |
+| Send_Threat_Data | post | `/api/logs` | — |
+
+#### [`slashnext`](../logic-apps/managed-slashnext.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Events_details | post | `/api/integration/v4/incidents/detail` | — |
+| incident_list_response | post | `/api/integration/v4/incidents/list` | — |
 
 </details>
 

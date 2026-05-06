@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 27 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/riskiqpassivetotal/](https://learn.microsoft.com/en-us/connectors/riskiqpassivetotal/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/riskiqpassivetotal/) |
 
 ## Playbooks Using This Connector
 

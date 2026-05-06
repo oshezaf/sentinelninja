@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `tenablevm` | Managed | 0 | 1 |
-| `TenableVulnerabilityManagement` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`tenablevm`](../logic-apps/managed-tenablevm.md) | Managed | 0 | 1 |
+| [`TenableVulnerabilityManagement`](../logic-apps/custom-tenablevulnerabilitymanagement.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`tenablevm`** (managedApi):
-- *Launch_scan*: method=`post`, path=`/scans/@{encodeURIComponent(variables('scan_id'))}/launch`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`tenablevm`](../logic-apps/managed-tenablevm.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Launch_scan | post | `/scans/@{encodeURIComponent(variables('scan_id'))}/launch` | — |
 
 </details>
 

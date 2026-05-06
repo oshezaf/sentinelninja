@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Watchlists_-_Add_a_new_watchlist_item*: method=`put`, path=`/Watchlists/subscriptions/@{encodeURIComponent(variables('SubscriptionId'))}/resourceGroups/@{encodeURIComponent(variables('ResourceGroup'))}/workspaces/@{encodeURIComponent(variables('WorkspaceName'))}/watchlists/@{encodeURIComponent(variables('WatchListAlias'))}/watchlistItem`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`@{variables('ResourceUrl')}/beta/myorganization/@{variables('ObjectClass')}s?$select=displayName,id,appId,keyCredentials`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Watchlists_-_Add_a_new_watchlist_item | put | `/Watchlists/subscriptions/@{encodeURIComponent(variables('SubscriptionId'))}/resourceGroups/@{encodeURIComponent(variables('ResourceGroup'))}/workspaces/@{encodeURIComponent(variables('WorkspaceName'))}/watchlists/@{encodeURIComponent(variables('WatchListAlias'))}/watchlistItem` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `@{variables('ResourceUrl')}/beta/myorganization/@{variables('ObjectClass')}s?$select=displayName,id,appId,keyCredentials` | — |
 
 </details>
 

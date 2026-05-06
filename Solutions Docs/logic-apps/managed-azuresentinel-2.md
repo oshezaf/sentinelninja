@@ -15,8 +15,8 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Infoblox-Block-Allow-IP-Domain-Incident-Based](../content/infoblox-infoblox-block-allow-ip-domain-incident-based-92e85e82.md) | [Infoblox](../solutions/infoblox.md) | 0 | 2 |
 | [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 0 | 1 |
+| [Infoblox-Block-Allow-IP-Domain-Incident-Based](../content/infoblox-infoblox-block-allow-ip-domain-incident-based-92e85e82.md) | [Infoblox](../solutions/infoblox.md) | 0 | 2 |
 
 ---
 

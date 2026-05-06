@@ -22,22 +22,25 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 11 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 11 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Get_All_Updated_Incident*: method=`GET`, uri=`@variables('Next Link')`
-- *IronNet_Login_to_fetch_the_Token*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/Login`
-- *Get_Incident_and_System_Alert_relations*: method=`GET`, uri=`https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Loop_through_each_Incident')?['name']}/relations?api-version=2019-01-01-preview`
-- *Update_Incident_Rating*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
-- *Update_Incident_Rating_without_comment*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
-- *Update_Incident_Rating_with_classification_comment*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/RateAlert`
-- *Update_Incident_Status*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/SetAlertStatus`
-- *Update_Incident_Status_without_comment*: method=`POST`, uri=`@{parameters('IronNetUrl')}/IronApi/SetAlertStatus`
-- *Get_Entities*: method=`GET`, uri=`https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/Entities/@{items('Loop_through_Alerts')?['properties']?['relatedResourceName']}?api-version=2019-01-01-preview`
-- *Get_Incident_latest_Comments*: method=`GET`, uri=`https://management.azure.com@{items('Loop_through_each_Incident')?['id']}/comments?api-version=2020-01-01`
-- *Generate_the_token_for_Azure_Sentinel_Incident*: method=`POST`, uri=`https://login.microsoftonline.com/@{parameters('TenantId')}/oauth2/token`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_All_Updated_Incident | GET | `@variables('Next Link')` | — |
+| IronNet_Login_to_fetch_the_Token | POST | `@{parameters('IronNetUrl')}/IronApi/Login` | — |
+| Get_Incident_and_System_Alert_relations | GET | `https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Loop_through_each_Incident')?['name']}/relations?api-version=2019-01-01-preview` | — |
+| Update_Incident_Rating | POST | `@{parameters('IronNetUrl')}/IronApi/RateAlert` | — |
+| Update_Incident_Rating_without_comment | POST | `@{parameters('IronNetUrl')}/IronApi/RateAlert` | — |
+| Update_Incident_Rating_with_classification_comment | POST | `@{parameters('IronNetUrl')}/IronApi/RateAlert` | — |
+| Update_Incident_Status | POST | `@{parameters('IronNetUrl')}/IronApi/SetAlertStatus` | — |
+| Update_Incident_Status_without_comment | POST | `@{parameters('IronNetUrl')}/IronApi/SetAlertStatus` | — |
+| Get_Entities | GET | `https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/Entities/@{items('Loop_through_Alerts')?['properties']?['relatedResourceName']}?api-version=2019-01-01-preview` | — |
+| Get_Incident_latest_Comments | GET | `https://management.azure.com@{items('Loop_through_each_Incident')?['id']}/comments?api-version=2020-01-01` | — |
+| Generate_the_token_for_Azure_Sentinel_Incident | POST | `https://login.microsoftonline.com/@{parameters('TenantId')}/oauth2/token` | — |
 
 </details>
 

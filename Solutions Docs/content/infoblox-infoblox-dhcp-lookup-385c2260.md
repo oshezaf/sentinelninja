@@ -28,23 +28,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 8 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 8 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_Query_And_Fetch_Latest_DHCP_Lookup_Data_For_Selected_Time_Period*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_Comment_To_Incident_For_Empty_IP_Address_Found*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment__For_Empty_Results_Found_For_IP*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2)*: method=`post`, path=`/Incidents/Comment`
-- *Comment_For_HTML_Table*: method=`post`, path=`/Incidents/Comment`
-- *Comment_For_Characters_Limit*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Query_And_Fetch_Latest_DHCP_Lookup_Data_For_Selected_Time_Period | post | `/queryData` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_Comment_To_Incident_For_Empty_IP_Address_Found | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_To_100 | post | `/Incidents/Comment` | — |
+| Add_Comment__For_Empty_Results_Found_For_IP | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2) | post | `/Incidents/Comment` | — |
+| Comment_For_HTML_Table | post | `/Incidents/Comment` | — |
+| Comment_For_Characters_Limit | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded | post | `/Incidents/Comment` | — |
 
 </details>
 

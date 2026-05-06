@@ -20,25 +20,34 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `office365` | Managed | 1 | 1 |
-| `wildfireconnector` | Managed | 0 | 3 |
-| `PaloAltoWildFire` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`office365`](../logic-apps/managed-office365.md) | Managed | 1 | 1 |
+| [`wildfireconnector`](../logic-apps/managed-wildfireconnector.md) | Managed | 0 | 3 |
+| [`PaloAltoWildFire`](../logic-apps/custom-paloaltowildfire.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_FileHash*: method=`post`, path=`/entities/filehash`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_when_exceeds_limit*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`office365`** (managedApi):
-- *Send_email_with_FileHash_attachment*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_FileHash | post | `/entities/filehash` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_when_exceeds_limit | post | `/Incidents/Comment` | — |
 
-**`wildfireconnector`** (managedApi):
-- *Get_FileHash_analysis_report_in_PDF_or_XML_format*: method=`post`, path=`/get/report`
-- *Get_FileHash_analysis_report_in_PDF_or_XML_format_2*: method=`post`, path=`/get/report`
-- *Get_URL_or_Hash_Verdict*: method=`post`, path=`/get/verdict`
+#### [`office365`](../logic-apps/managed-office365.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_email_with_FileHash_attachment | post | `/v2/Mail` | — |
+
+#### [`wildfireconnector`](../logic-apps/managed-wildfireconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_FileHash_analysis_report_in_PDF_or_XML_format | post | `/get/report` | — |
+| Get_FileHash_analysis_report_in_PDF_or_XML_format_2 | post | `/get/report` | — |
+| Get_URL_or_Hash_Verdict | post | `/get/verdict` | — |
 
 </details>
 

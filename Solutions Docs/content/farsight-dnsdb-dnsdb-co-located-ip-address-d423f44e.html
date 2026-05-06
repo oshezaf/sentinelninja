@@ -58,13 +58,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>farsightdnsdb</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">3</td>
@@ -73,14 +73,20 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`farsightdnsdb`** (managedApi):
-- *RRSet_Lookup_with_RRType_A*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(items('For_each_RRName_'))}/@{encodeURIComponent('A')}`
-- *RRSet_Lookup_with_RRType_AAAA*: method=`get`, path=`/lookup/rrset/name/@{encodeURIComponent(items('For_each_RRName_'))}/@{encodeURIComponent('AAAA')}`
-- *RData_Lookup_with_RRType*: method=`get`, path=`/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each')?['Address'])}/ANY`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`farsightdnsdb`](../logic-apps/managed-farsightdnsdb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RRSet_Lookup_with_RRType_A | get | `/lookup/rrset/name/@{encodeURIComponent(items('For_each_RRName_'))}/@{encodeURIComponent('A')}` | — |
+| RRSet_Lookup_with_RRType_AAAA | get | `/lookup/rrset/name/@{encodeURIComponent(items('For_each_RRName_'))}/@{encodeURIComponent('AAAA')}` | — |
+| RData_Lookup_with_RRType | get | `/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each')?['Address'])}/ANY` | — |
 
 </details>
 

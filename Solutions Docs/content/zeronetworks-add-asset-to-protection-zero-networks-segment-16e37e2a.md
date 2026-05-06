@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `ZeroNetworksConnector` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`ZeroNetworksConnector`](../logic-apps/custom-zeronetworksconnector.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ZeroNetworksConnector`** (customApi):
-- *Add_asset_to_protection*: method=`post`, path=`/assets/protect`
-- *Search_for_an_Asset*: method=`get`, path=`/assets`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+
+#### [`ZeroNetworksConnector`](../logic-apps/custom-zeronetworksconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_asset_to_protection | post | `/assets/protect` | — |
+| Search_for_an_Asset | get | `/assets` | — |
 
 </details>
 

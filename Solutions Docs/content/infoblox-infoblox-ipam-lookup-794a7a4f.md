@@ -20,26 +20,32 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 9 |
-| `http` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 9 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_Comment_To_Incident_No_IPs_Found*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_Comment_To_Incident_For_Empty_IP_Address_Found*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_For_No_Results_Found_For_IP_Address*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_For_Whole_API_Response_Of_One_IP_Traversed_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Request_To_Lookup_Information_For_An_IP_Space_*: method=`GET`, uri=`@{variables('base_url')}/api/ddi/v1/@{variables('ip_space_id')}`
-- *HTTP_Request_To_Lookup_Information_For_Subnet*: method=`GET`, uri=`@{variables('base_url')}/api/ddi/v1/@{variables('subnet_id')}`
-- *HTTP_Request_To_Lookup_Information_About_An_IP_Address*: method=`GET`, uri=`@{variables('base_url')}/api/ddi/v1/ipam/address`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Comment_To_Incident_No_IPs_Found | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_Comment_To_Incident_For_Empty_IP_Address_Found | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_To_100 | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_For_No_Results_Found_For_IP_Address | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2) | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_For_Whole_API_Response_Of_One_IP_Traversed_(V3) | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(3) | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Lookup_Information_For_An_IP_Space_ | GET | `@{variables('base_url')}/api/ddi/v1/@{variables('ip_space_id')}` | — |
+| HTTP_Request_To_Lookup_Information_For_Subnet | GET | `@{variables('base_url')}/api/ddi/v1/@{variables('subnet_id')}` | — |
+| HTTP_Request_To_Lookup_Information_About_An_IP_Address | GET | `@{variables('base_url')}/api/ddi/v1/ipam/address` | — |
 
 </details>
 

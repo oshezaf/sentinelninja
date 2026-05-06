@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `function` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Indicate_starting_with_comment*: method=`post`, path=`/Incidents/Comment`
-- *Indicate_failure_with_comment*: method=`post`, path=`/Incidents/Comment`
-- *Show_result_as_a_comment*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *GetBackupObjectByIdAsync*: functionId=`[concat(variables('functionAppId'), '/functions/GetBackupObjectByIdAsync')]`
-- *StartQuickBackupJobAsync*: functionId=`[concat(variables('functionAppId'), '/functions/StartQuickBackupJobAsync')]`
-- *GetSession_*: functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Indicate_starting_with_comment | post | `/Incidents/Comment` | — |
+| Indicate_failure_with_comment | post | `/Incidents/Comment` | — |
+| Show_result_as_a_comment | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GetBackupObjectByIdAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetBackupObjectByIdAsync')]` |
+| StartQuickBackupJobAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/StartQuickBackupJobAsync')]` |
+| GetSession_ | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]` |
 
 </details>
 

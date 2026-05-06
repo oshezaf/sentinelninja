@@ -20,25 +20,34 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `spurconnector` | Managed | 0 | 1 |
-| `Spur-Context-Connector` | Custom | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`spurconnector`](../logic-apps/managed-spurconnector.md) | Managed | 0 | 1 |
+| [`Spur-Context-Connector`](../logic-apps/custom-spur-context-connector.md) | Custom | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`spurconnector`** (managedApi):
-- *Get_IP_Context*: method=`get`, path=`/v2/context/@{encodeURIComponent(body('Parse_IP_Entity_')?['address'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
 
-**`http`** (builtin):
-- *GetAccessTokenSpur*: method=`POST`, uri=`@variables('access_token_url')`
-- *HTTP_-_Save_to_Custom_Table*: method=`POST`, uri=`@concat(parameters('DCE_Endpoint_URL'),'/dataCollectionRules/',parameters('DCR_Immutable_ID'),'/streams/Custom-','Spur_IP_Context_Details_CL','?api-version=2023-01-01')`
+#### [`spurconnector`](../logic-apps/managed-spurconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_IP_Context | get | `/v2/context/@{encodeURIComponent(body('Parse_IP_Entity_')?['address'])}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GetAccessTokenSpur | POST | `@variables('access_token_url')` | — |
+| HTTP_-_Save_to_Custom_Table | POST | `@concat(parameters('DCE_Endpoint_URL'),'/dataCollectionRules/',parameters('DCR_Immutable_ID'),'/streams/Custom-','Spur_IP_Context_Details_CL','?api-version=2023-01-01')` | — |
 
 </details>
 

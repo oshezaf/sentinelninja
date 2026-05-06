@@ -75,19 +75,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureloganalyticsdatacollector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -96,15 +96,24 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_Secret_-_MuleSoft_Client_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('MulesoftClientSecretName'), ''')}/value')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_-_Get_Access_Token*: method=`POST`, uri=`https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token`
-- *HTTP_-_Get_Audit_Logs*: method=`POST`, uri=`[concat('https://anypoint.mulesoft.com/audit/v2/organizations/', parameters('MulesoftOrgId'), '/query')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret_-_MuleSoft_Client_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('MulesoftClientSecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Access_Token | POST | `https://anypoint.mulesoft.com/accounts/api/v2/oauth2/token` | — |
+| HTTP_-_Get_Audit_Logs | POST | `[concat('https://anypoint.mulesoft.com/audit/v2/organizations/', parameters('MulesoftOrgId'), '/query')]` | — |
 
 </details>
 

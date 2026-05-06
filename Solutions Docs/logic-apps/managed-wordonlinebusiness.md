@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 0 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/wordonlinebusiness/](https://learn.microsoft.com/en-us/connectors/wordonlinebusiness/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/wordonlinebusiness/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| PlaybookName | - | 1 | 2 |
+| [Get-MDATPVulnerabilities](../content/github-only-playbookname-5513287e.md) | 🔗 GitHub Only | 1 | 2 |
 
 ---
 

@@ -20,13 +20,16 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `zendesk` | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`zendesk`](../logic-apps/managed-zendesk.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`zendesk`** (managedApi):
-- *Create_Item*: method=`post`, path=`/datasets/default/tables/@{encodeURIComponent(encodeURIComponent('tickets'))}/items`
+#### [`zendesk`](../logic-apps/managed-zendesk.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Item | post | `/datasets/default/tables/@{encodeURIComponent(encodeURIComponent('tickets'))}/items` | — |
 
 </details>
 

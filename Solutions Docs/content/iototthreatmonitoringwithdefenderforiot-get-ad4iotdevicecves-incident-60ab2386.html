@@ -58,25 +58,25 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azureblob</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>keyvault</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
@@ -85,19 +85,31 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *Create_SAS_URI_by_path_(V2)*: method=`post`, path=`[concat('/v2/datasets/@{encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),')}/CreateSharedLinkByPath')]`
-- *Create_blob_(V2)*: method=`post`, path=`[concat('/v2/datasets/@{encodeURIComponent(encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),'))}/files')]`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_SAS_URI_by_path_(V2) | post | `[concat('/v2/datasets/@{encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),')}/CreateSharedLinkByPath')]` | — |
+| Create_blob_(V2) | post | `[concat('/v2/datasets/@{encodeURIComponent(encodeURIComponent(', variables('singlequote'), variables('AzureStorageName'), variables('singlequote'),'))}/files')]` | — |
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(', variables('singlequote'), variables('KeyName'), variables('singlequote'), ')}/value')]`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP*: method=`GET`, uri=`@{variables('Server')}/api/v1/devices/@{items('For_each')?['IpAddress']?['Address']}/cves`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `[concat('/secrets/@{encodeURIComponent(', variables('singlequote'), variables('KeyName'), variables('singlequote'), ')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `@{variables('Server')}/api/v1/devices/@{items('For_each')?['IpAddress']?['Address']}/cves` | — |
 
 </details>
 

@@ -22,34 +22,49 @@ This playbook uses **5** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 0 | 1 |
-| `azuresentinel` | Managed | 0 | 2 |
-| `azurevm` | Managed | 0 | 1 |
-| `teams` | Managed | 0 | 6 |
-| `http` | Built-in | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 0 | 2 |
+| [`azurevm`](../logic-apps/managed-azurevm.md) | Managed | 0 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 0 | 6 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_SAPConnectorHealth_check*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Add_SAP_SOC_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_SAPConnectorHealth_check | post | `/queryData` | — |
 
-**`azurevm`** (managedApi):
-- *Restart_Sentinel_Collector_virtual_machine*: method=`post`, path=`/subscriptions/@{encodeURIComponent(parameters('SentinelCollectorSubscriptionId'))}/resourcegroups/@{encodeURIComponent(parameters('SentinelCollectorResourceGroup'))}/providers/Microsoft.Compute/virtualMachines/@{encodeURIComponent(parameters('SentinelCollectorVMName'))}/restart`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`teams`** (managedApi):
-- *Reply_with_processed_message_in_a_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_with_restart_error_message_in_a_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Reply_with_restart_success_message_in_a_channel*: method=`post`, path=`/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_adaptive_card_for_unlikely_attack_in_a_chat_or_channel*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_REST_API_error_message_in_a_chat_or_channel*: method=`post`, path=`/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
-- *Post_card_in_a_chat_or_channel_despite_ACSS_connection_error*: method=`post`, path=`/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_SAP_SOC_comment_to_incident | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
 
-**`http`** (builtin):
-- *Get_SAP_virtual_instance_state_by_SID_from_ACSS_via_Azure_Resource_Graph*: method=`POST`, uri=`https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01`
+#### [`azurevm`](../logic-apps/managed-azurevm.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Restart_Sentinel_Collector_virtual_machine | post | `/subscriptions/@{encodeURIComponent(parameters('SentinelCollectorSubscriptionId'))}/resourcegroups/@{encodeURIComponent(parameters('SentinelCollectorResourceGroup'))}/providers/Microsoft.Compute/virtualMachines/@{encodeURIComponent(parameters('SentinelCollectorVMName'))}/restart` | — |
+
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Reply_with_processed_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_with_restart_error_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Reply_with_restart_success_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_adaptive_card_for_unlikely_attack_in_a_chat_or_channel | post | `/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_REST_API_error_message_in_a_chat_or_channel | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+| Post_card_in_a_chat_or_channel_despite_ACSS_connection_error | post | `/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_SAP_virtual_instance_state_by_SID_from_ACSS_via_Azure_Resource_Graph | POST | `https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01` | — |
 
 </details>
 

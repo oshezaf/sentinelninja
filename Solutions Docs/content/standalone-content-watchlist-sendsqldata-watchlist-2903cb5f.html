@@ -55,19 +55,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>sql</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-sql.html"><code>sql</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>sql-1</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-sql-1.html"><code>sql-1</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">3</td>
@@ -76,13 +76,19 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`sql-1`** (managedApi):
-- *Execute_a_SQL_query_(V2)*: method=`post`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('default'))},@{encodeURIComponent(encodeURIComponent('default'))}/query/sql`
+#### [`sql-1`](../logic-apps/managed-sql-1.md) (Managed)
 
-**`http`** (builtin):
-- *Update_existing_Watchlist_*: method=`PUT`, uri=`https://management.azure.com/subscriptions/@{variables('SubscriptionID')}/resourceGroups/@{variables('ResourceGroup')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('WorkspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{variables('Watchlist_Name')}?api-version=2019-01-01-preview`
-- *Create_a_watchlist_and_Watchlist_Items*: method=`PUT`, uri=`https://management.azure.com/subscriptions/@{variables('SubscriptionID')}/resourceGroups/@{variables('ResourceGroup')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('WorkspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{variables('Watchlist_Name')}?api-version=2019-01-01-preview`
-- *check_if_watchlist_exist_*: method=`GET`, uri=`https://management.azure.com/subscriptions/@{variables('SubscriptionID')}/resourceGroups/@{variables('ResourceGroup')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('WorkspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{variables('Watchlist_Name')}?api-version=2019-01-01-preview`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Execute_a_SQL_query_(V2) | post | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('default'))},@{encodeURIComponent(encodeURIComponent('default'))}/query/sql` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_existing_Watchlist_ | PUT | `https://management.azure.com/subscriptions/@{variables('SubscriptionID')}/resourceGroups/@{variables('ResourceGroup')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('WorkspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{variables('Watchlist_Name')}?api-version=2019-01-01-preview` | — |
+| Create_a_watchlist_and_Watchlist_Items | PUT | `https://management.azure.com/subscriptions/@{variables('SubscriptionID')}/resourceGroups/@{variables('ResourceGroup')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('WorkspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{variables('Watchlist_Name')}?api-version=2019-01-01-preview` | — |
+| check_if_watchlist_exist_ | GET | `https://management.azure.com/subscriptions/@{variables('SubscriptionID')}/resourceGroups/@{variables('ResourceGroup')}/providers/Microsoft.OperationalInsights/workspaces/@{variables('WorkspaceName')}/providers/Microsoft.SecurityInsights/watchlists/@{variables('Watchlist_Name')}?api-version=2019-01-01-preview` | — |
 
 </details>
 

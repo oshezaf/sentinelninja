@@ -20,14 +20,17 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Create_Pipeline_Run*: method=`POST`, uri=`[variables('SynapsePipelineRunUri')]`
-- *Update_Pipeline_Parameters*: method=`PUT`, uri=`[variables('SynapsePipelineUri')]`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_Pipeline_Run | POST | `[variables('SynapsePipelineRunUri')]` | — |
+| Update_Pipeline_Parameters | PUT | `[variables('SynapsePipelineUri')]` | — |
 
 </details>
 

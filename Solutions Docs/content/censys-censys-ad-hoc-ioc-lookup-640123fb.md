@@ -20,29 +20,38 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 7 |
-| `keyvault` | Managed | 1 | 0 |
-| `keyvault-1` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 3 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 7 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 0 |
+| [`keyvault-1`](../logic-apps/managed-keyvault-1.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Host_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
-- *Send_Host_Field_Data_-_Services*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Field_Data_-_Endpoint*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Field_Data_-_Vulns*: method=`post`, path=`/api/logs`
-- *Send_Web_Property_Field_Data_-_Threat*: method=`post`, path=`/api/logs`
-- *Send_Certificate_Data_To_Log_Analytics*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`keyvault-1`** (managedApi):
-- *Get_Censys_API_Token*: method=`get`, path=`/secrets/@{encodeURIComponent('Censys-Access-Token')}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Host_Data_To_Log_Analytics | post | `/api/logs` | — |
+| Send_Host_Field_Data_-_Services | post | `/api/logs` | — |
+| Send_Web_Property_Data_To_Log_Analytics | post | `/api/logs` | — |
+| Send_Web_Property_Field_Data_-_Endpoint | post | `/api/logs` | — |
+| Send_Web_Property_Field_Data_-_Vulns | post | `/api/logs` | — |
+| Send_Web_Property_Field_Data_-_Threat | post | `/api/logs` | — |
+| Send_Certificate_Data_To_Log_Analytics | post | `/api/logs` | — |
 
-**`http`** (builtin):
-- *HTTP_Request_To_Fetch_Host_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{triggerBody()?['indicator_value']}`
-- *HTTP_Request_To_Fetch_Web_Property_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty/@{triggerBody()?['indicator_value']}`
-- *HTTP_Request_To_Fetch_Certificate_Details*: method=`GET`, uri=`@{variables('base_url')}/@{variables('api_version')}/global/asset/certificate/@{triggerBody()?['indicator_value']}`
+#### [`keyvault-1`](../logic-apps/managed-keyvault-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Censys_API_Token | get | `/secrets/@{encodeURIComponent('Censys-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Fetch_Host_Details | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/host/@{triggerBody()?['indicator_value']}` | — |
+| HTTP_Request_To_Fetch_Web_Property_Details | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/webproperty/@{triggerBody()?['indicator_value']}` | — |
+| HTTP_Request_To_Fetch_Certificate_Details | GET | `@{variables('base_url')}/@{variables('api_version')}/global/asset/certificate/@{triggerBody()?['indicator_value']}` | — |
 
 </details>
 

@@ -20,12 +20,15 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `riskiqpassivetotal` | Managed | 1 | 1 |
+| [`riskiqpassivetotal`](../logic-apps/managed-riskiqpassivetotal.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`riskiqpassivetotal`** (managedApi):
-- *Get_account_metadata_and_settings*: method=`get`, path=`/account`
+#### [`riskiqpassivetotal`](../logic-apps/managed-riskiqpassivetotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_account_metadata_and_settings | get | `/account` | — |
 
 </details>
 

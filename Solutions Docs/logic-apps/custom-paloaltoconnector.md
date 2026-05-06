@@ -15,7 +15,7 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [PaloAlto-PAN-OS-GetURLCategoryInfo](../content/standalone-content-paloalto-pan-os-geturlcategoryinfo-89cce459.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 2 |
+| [PaloAlto-PAN-OS-GetURLCategoryInfo](../content/standalone-content-paloalto-pan-os-geturlcategoryinfo-89cce459.md) | 📄 Standalone | 1 | 2 |
 
 ---
 

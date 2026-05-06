@@ -556,12 +556,12 @@ References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other par
 | `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"` | - | 2 | - | - | **2** |
 | `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` | - | 2 | - | - | **2** |
 | `ProductName == "Azure Sentinel"` | - | 2 | - | - | **2** |
-| `ProductName == "Azure Security Center for IoT"` | 1 | - | - | - | **1** |
-| `ProductName == "Microsoft Cloud App Security"` | 1 | - | - | - | **1** |
-| `ProductName == "Azure Active Directory Identity Protection"` | 1 | - | - | - | **1** |
-| `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | 1 | - | - | - | **1** |
-| `ProductName == "Azure Advanced Threat Protection"` | 1 | - | - | - | **1** |
 | `ProviderName == "OATP"` | 1 | - | - | - | **1** |
+| `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | 1 | - | - | - | **1** |
+| `ProductName == "Microsoft Cloud App Security"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Advanced Threat Protection"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Active Directory Identity Protection"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Security Center for IoT"` | 1 | - | - | - | **1** |
 | `AlertName == "Suspicion of Denial Of Service Attack"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
 | `AlertName in "Excessive Login Attempts,Excessive Number of Sessions,Excessive SMB login attempts,Password Guessing Attempt Detected"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
 | `AlertName has_any "Beckhoff Software Changed"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
@@ -696,12 +696,12 @@ References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other par
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Microsoft 365 Insider Risk Management` | 1 | 7 | - | - | **8** |
 | `Azure Active Directory Identity Protection` | 1 | 6 | - | - | **7** |
-| `Azure Security Center for IoT` | 1 | 4 | - | - | **5** |
 | `Microsoft Cloud App Security` | 2 | 3 | - | - | **5** |
+| `Azure Security Center for IoT` | 1 | 4 | - | - | **5** |
 | `Microsoft Defender Advanced Threat Protection` | 1 | 3 | - | - | **4** |
-| `Azure Security Center` | 2 | - | - | - | **2** |
 | `Azure Advanced Threat Protection` | 2 | - | - | - | **2** |
 | `Microsoft 365 Defender` | 1 | 1 | - | - | **2** |
+| `Azure Security Center` | 2 | - | - | - | **2** |
 | `Azure Sentinel` | - | 2 | - | - | **2** |
 | `Office 365 Advanced Threat Protection` | 1 | - | - | - | **1** |
 | `!= Azure Sentinel` | - | 1 | - | - | **1** |
@@ -717,8 +717,8 @@ References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other par
 | `IoTSecurity` | - | 15 | - | - | **15** |
 | `IPC` | - | 5 | - | - | **5** |
 | `MDATP` | 1 | 2 | - | - | **3** |
-| `Microsoft 365 Defender` | 1 | - | - | - | **1** |
 | `OATP` | 1 | - | - | - | **1** |
+| `Microsoft 365 Defender` | 1 | - | - | - | **1** |
 | `contains anomal` | - | 1 | - | - | **1** |
 | `contains fusion` | - | 1 | - | - | **1** |
 

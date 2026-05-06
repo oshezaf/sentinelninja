@@ -20,17 +20,23 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `teams` | Managed | 1 | 0 |
-| `http` | Built-in | 0 | 1 |
-| `workflow` | Built-in | 0 | 1 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
+| [`workflow`](../logic-apps/builtin-workflow.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Fetch_Yara_rule(s)_from_file_URLs*: method=`GET`, uri=`@body('Collect_IOC_Data')?['data']?['ioc Yara rule file URL to scan for']`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
 
-**`workflow`** (builtin):
-- *RubrikIOCScan*: workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`, triggerName=`manual`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_Yara_rule(s)_from_file_URLs | GET | `@body('Collect_IOC_Data')?['data']?['ioc Yara rule file URL to scan for']` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RubrikIOCScan | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/RubrikIOCScan')]`<br>triggerName=`manual` |
 
 </details>
 

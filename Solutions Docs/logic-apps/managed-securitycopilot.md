@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/securitycopilot/](https://learn.microsoft.com/en-us/connectors/securitycopilot/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/securitycopilot/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [MTI Threat Actor Lookup](../content/standalone-content-mti-threat-actor-lookup-b10467aa.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 4 |
+| [MTI Threat Actor Lookup](../content/standalone-content-mti-threat-actor-lookup-b10467aa.md) | 📄 Standalone | 1 | 4 |
 
 ---
 

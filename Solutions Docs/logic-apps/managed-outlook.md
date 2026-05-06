@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 7 |
 | **Solutions** | 5 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/outlook/](https://learn.microsoft.com/en-us/connectors/outlook/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/outlook/) |
 
 ## Playbooks Using This Connector
 

@@ -18,17 +18,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azurecommunicationservicessms` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 1 |
+| [`azurecommunicationservicessms`](../logic-apps/managed-azurecommunicationservicessms.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azurecommunicationservicessms`** (managedApi):
-- *Send_SMS*: method=`post`, path=`/v2/sms`
-- *Send_SMS_2*: method=`post`, path=`/v2/sms`
+#### [`azurecommunicationservicessms`](../logic-apps/managed-azurecommunicationservicessms.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Alert_-_Get_incident*: method=`get`, path=`/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_SMS | post | `/v2/sms` | — |
+| Send_SMS_2 | post | `/v2/sms` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
 
 </details>
 

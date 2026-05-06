@@ -20,23 +20,32 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `keyvault` | Managed | 0 | 1 |
-| `function` | Built-in | 0 | 4 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 0 | 1 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`keyvault`** (managedApi):
-- *Get_secret*: method=`get`, path=`/secrets/@{encodeURIComponent(parameters('Certificate_key_name'))}/value`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
 
-**`function`** (builtin):
-- *CreateAllowBlockList*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/CreateAllowBlockList')]`
-- *ConnectExchangeOnline*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/ConnectExchangeOnline')]`
-- *DisconnectExchangeOnline*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/DisconnectExchangeOnline')]`
-- *TenantAllowBlockList*: functionId=`[concat(variables('o365FuntionsAppId'), '/functions/TenantAllowBlockList')]`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('Certificate_key_name'))}/value` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| CreateAllowBlockList | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/CreateAllowBlockList')]` |
+| ConnectExchangeOnline | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/ConnectExchangeOnline')]` |
+| DisconnectExchangeOnline | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/DisconnectExchangeOnline')]` |
+| TenantAllowBlockList | — | — | functionId=`[concat(variables('o365FuntionsAppId'), '/functions/TenantAllowBlockList')]` |
 
 </details>
 

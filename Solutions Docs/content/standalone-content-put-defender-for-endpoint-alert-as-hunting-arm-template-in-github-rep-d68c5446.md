@@ -28,18 +28,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 3 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Grab_MDE_Alerts_with_Mitre_Techniques*: method=`post`, path=`/queryData`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`http`** (builtin):
-- *Post_Hunting_JSON_Arm_Template_to_Github*: method=`PUT`, uri=`https://api.github.com/repos/@{parameters('GitHubRepoOwnerName')}/@{parameters('GitHubRepoName')}/contents/Hunting/MDE_@{replace(replace(item()?['AlertName'], ' ', '_'), '/', '_')}_@{replace(replace(item()?['MitreTechnique'], ';', '_'), '.', '_')}.json`
-- *Get_Github_Key_from_Keyvault*: method=`GET`, uri=`@parameters('KeyVaultGitHubCredentialsURL')`
-- *Get_Github_Repo_Contents*: method=`GET`, uri=`https://api.github.com/repos/@{parameters('GitHubRepoOwnerName')}/@{parameters('GitHubRepoName')}/contents/Hunting`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Grab_MDE_Alerts_with_Mitre_Techniques | post | `/queryData` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_Hunting_JSON_Arm_Template_to_Github | PUT | `https://api.github.com/repos/@{parameters('GitHubRepoOwnerName')}/@{parameters('GitHubRepoName')}/contents/Hunting/MDE_@{replace(replace(item()?['AlertName'], ' ', '_'), '/', '_')}_@{replace(replace(item()?['MitreTechnique'], ';', '_'), '.', '_')}.json` | — |
+| Get_Github_Key_from_Keyvault | GET | `@parameters('KeyVaultGitHubCredentialsURL')` | — |
+| Get_Github_Repo_Contents | GET | `https://api.github.com/repos/@{parameters('GitHubRepoOwnerName')}/@{parameters('GitHubRepoName')}/contents/Hunting` | — |
 
 </details>
 

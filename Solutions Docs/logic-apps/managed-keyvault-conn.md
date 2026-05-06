@@ -15,8 +15,8 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [spur_alert](../content/standalone-content-spur-alert-3028854a.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
-| [spur_alert](../content/standalone-content-spur-alert-4d9df5af.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
+| [spur_alert](../content/standalone-content-spur-alert-3028854a.md) | 📄 Standalone | 0 | 1 |
+| [spur_alert](../content/standalone-content-spur-alert-4d9df5af.md) | 📄 Standalone | 0 | 1 |
 
 ---
 

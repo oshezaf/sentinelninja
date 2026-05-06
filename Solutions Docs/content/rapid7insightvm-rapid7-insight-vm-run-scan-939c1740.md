@@ -20,21 +20,27 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `teams` | Managed | 1 | 0 |
-| `Rapid7InsightVMCloud` | Custom | 1 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`Rapid7InsightVMCloud`](../logic-apps/custom-rapid7insightvmcloud.md) | Custom | 1 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`Rapid7InsightVMCloud`** (customApi):
-- *Start_Scan*: method=`post`, path=`/v4/integration/scan`
-- *Search_Assets*: method=`post`, path=`/v4/integration/assets`
-- *Get_Scan_Engines*: method=`get`, path=`/v4/integration/scan/engine`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`Rapid7InsightVMCloud`](../logic-apps/custom-rapid7insightvmcloud.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Start_Scan | post | `/v4/integration/scan` | — |
+| Search_Assets | post | `/v4/integration/assets` | — |
+| Get_Scan_Engines | get | `/v4/integration/scan/engine` | — |
 
 </details>
 

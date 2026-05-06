@@ -20,22 +20,28 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 6 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 6 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Update_incident_2*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_Reputation_for_host*: method=`GET`, uri=`@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_Host')?['HostName']}.@{items('For_each_Host')?['DnsDomain']}')/reputation`
-- *Get_reputation*: method=`GET`, uri=`@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_IP_Address')?['Address']}')/reputation`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Update_incident_2 | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Reputation_for_host | GET | `@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_Host')?['HostName']}.@{items('For_each_Host')?['DnsDomain']}')/reputation` | — |
+| Get_reputation | GET | `@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_IP_Address')?['Address']}')/reputation` | — |
 
 </details>
 

@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 4 |
-| `http` | Built-in | 0 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 4 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Hosts*: method=`post`, path=`/entities/host`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)_4*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *PassiveDns_by_Hostname*: method=`GET`, uri=`@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_Host')?['HostName']}.@{items('For_each_Host')?['DnsDomain']}')/passiveDns?$count=true`
-- *PassiveDns_by_IP_Address*: method=`GET`, uri=`@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_IP_Address')?['Address']}')/passiveDns?$count=true`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3)_4 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| PassiveDns_by_Hostname | GET | `@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_Host')?['HostName']}.@{items('For_each_Host')?['DnsDomain']}')/passiveDns?$count=true` | — |
+| PassiveDns_by_IP_Address | GET | `@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_IP_Address')?['Address']}')/passiveDns?$count=true` | — |
 
 </details>
 

@@ -20,22 +20,28 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `cisco-asav-connector` | Managed | 0 | 3 |
-| `teams` | Managed | 1 | 0 |
-| `CiscoASAConnector` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`cisco-asav-connector`](../logic-apps/managed-cisco-asav-connector.md) | Managed | 0 | 3 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 0 |
+| [`CiscoASAConnector`](../logic-apps/custom-ciscoasaconnector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`cisco-asav-connector`** (managedApi):
-- *Fetch_inbound_access_rules_on_an_interface*: method=`get`, path=`/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules`
-- *Create_an_inbound_access_rule_on_an_interface*: method=`post`, path=`/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules`
-- *Remove_an_inbound_access_rule_on_an_interface*: method=`delete`, path=`/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules/@{encodeURIComponent(items('For_each_over_ipAddresses')['extendedAceItemObjectId'])}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+
+#### [`cisco-asav-connector`](../logic-apps/managed-cisco-asav-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_inbound_access_rules_on_an_interface | get | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules` | — |
+| Create_an_inbound_access_rule_on_an_interface | post | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules` | — |
+| Remove_an_inbound_access_rule_on_an_interface | delete | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules/@{encodeURIComponent(items('For_each_over_ipAddresses')['extendedAceItemObjectId'])}` | — |
 
 </details>
 

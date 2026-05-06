@@ -20,23 +20,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 0 | 3 |
-| `http` | Built-in | 0 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 0 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Change_incident_status*: method=`put`, path=`/Case/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/Status/@{encodeURIComponent('Closed')}`
-- *Add_comment_to_incident_closed*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
-- *Add_comment_to_incident_open*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Get_user_details*: method=`GET`, uri=`https://graph.microsoft.com/beta/users/@{outputs('Compose_UPN')}`
-- *Get_user_AAD_risk_status*: method=`GET`, uri=`https://graph.microsoft.com/beta/riskyUsers/@{body('Parse_user_details')?['id']}/`
-- *Get_user_manager*: method=`GET`, uri=`https://graph.microsoft.com/beta/users/@{body('Parse_user_details')?['userPrincipalName']}/manager`
-- *Get_user_OOF*: method=`POST`, uri=`https://graph.microsoft.com/beta/users/@{body('Parse_user_details')?['userPrincipalName']}/getMailTips`
-- *Check_group_membership*: method=`POST`, uri=`https://graph.microsoft.com/beta/users/@{body('Parse_user_details')?['userPrincipalName']}/checkMemberGroups`
-- *Resolve_Cloud_App_Security_alert*: method=`POST`, uri=`[concat(parameters('mcasAPI').tenantUrl, '/cas/api/v1/alerts/resolve/')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Change_incident_status | put | `/Case/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}/Status/@{encodeURIComponent('Closed')}` | — |
+| Add_comment_to_incident_closed | put | `/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+| Add_comment_to_incident_open | put | `/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent('Alert')}/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_user_details | GET | `https://graph.microsoft.com/beta/users/@{outputs('Compose_UPN')}` | — |
+| Get_user_AAD_risk_status | GET | `https://graph.microsoft.com/beta/riskyUsers/@{body('Parse_user_details')?['id']}/` | — |
+| Get_user_manager | GET | `https://graph.microsoft.com/beta/users/@{body('Parse_user_details')?['userPrincipalName']}/manager` | — |
+| Get_user_OOF | POST | `https://graph.microsoft.com/beta/users/@{body('Parse_user_details')?['userPrincipalName']}/getMailTips` | — |
+| Check_group_membership | POST | `https://graph.microsoft.com/beta/users/@{body('Parse_user_details')?['userPrincipalName']}/checkMemberGroups` | — |
+| Resolve_Cloud_App_Security_alert | POST | `[concat(parameters('mcasAPI').tenantUrl, '/cas/api/v1/alerts/resolve/')]` | — |
 
 </details>
 

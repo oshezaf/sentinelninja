@@ -15,8 +15,8 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Create-IBMResilientIncident](../content/standalone-content-create-ibmresilientincident-e4ccfecd.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 5 |
-| [IBMResilient-Incidents](../content/standalone-content-ibmresilient-incidents-87e1e7ca.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 5 |
+| [Create-IBMResilientIncident](../content/standalone-content-create-ibmresilientincident-e4ccfecd.md) | 📄 Standalone | 1 | 5 |
+| [IBMResilient-Incidents](../content/standalone-content-ibmresilient-incidents-87e1e7ca.md) | 📄 Standalone | 1 | 5 |
 
 ---
 

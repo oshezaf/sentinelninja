@@ -20,16 +20,19 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `recordedfuture` | Managed | 0 | 4 |
-| `recordedfuturev2` | Managed | 1 | 0 |
+| [`recordedfuture`](../logic-apps/managed-recordedfuture.md) | Managed | 0 | 4 |
+| [`recordedfuturev2`](../logic-apps/managed-recordedfuturev2.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`recordedfuture`** (managedApi):
-- *Recorded_Future_RiskLists_and_SCF_Download*: method=`get`, path=`/fusion/files`
-- *Recorded_Future_RiskLists_and_SCF_Download_2*: method=`get`, path=`/fusion/files`
-- *Recorded_Future_RiskLists_and_SCF_Download_3*: method=`get`, path=`/fusion/files`
-- *Recorded_Future_RiskLists_and_SCF_Download_4*: method=`get`, path=`/fusion/files`
+#### [`recordedfuture`](../logic-apps/managed-recordedfuture.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Recorded_Future_RiskLists_and_SCF_Download | get | `/fusion/files` | — |
+| Recorded_Future_RiskLists_and_SCF_Download_2 | get | `/fusion/files` | — |
+| Recorded_Future_RiskLists_and_SCF_Download_3 | get | `/fusion/files` | — |
+| Recorded_Future_RiskLists_and_SCF_Download_4 | get | `/fusion/files` | — |
 
 </details>
 

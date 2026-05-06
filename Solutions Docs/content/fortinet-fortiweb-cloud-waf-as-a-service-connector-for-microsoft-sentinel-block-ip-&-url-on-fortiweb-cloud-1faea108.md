@@ -20,21 +20,27 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `fortiweb` | Managed | 0 | 4 |
-| `FortiWebCloud` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`fortiweb`](../logic-apps/managed-fortiweb.md) | Managed | 0 | 4 |
+| [`FortiWebCloud`](../logic-apps/custom-fortiwebcloud.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_(IP)_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_(URL)_to_incident_(V3)_2*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`fortiweb`** (managedApi):
-- *Update_IP_Protection*: method=`put`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection`
-- *Update_URL_Access*: method=`put`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess`
-- *Get_IP_protection_2*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection`
-- *Get_URL_Access*: method=`get`, path=`/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_(IP)_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_(URL)_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`fortiweb`](../logic-apps/managed-fortiweb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_IP_Protection | put | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection` | — |
+| Update_URL_Access | put | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess` | — |
+| Get_IP_protection_2 | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/ipprotection` | — |
+| Get_URL_Access | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/urlaccess` | — |
 
 </details>
 

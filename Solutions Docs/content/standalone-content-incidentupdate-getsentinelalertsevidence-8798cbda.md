@@ -39,20 +39,26 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitor` | Managed | 0 | 2 |
-| `azuremonitorlogs` | Managed | 1 | 0 |
-| `eventhub` | Managed | 0 | 2 |
-| `eventhubs` | Managed | 1 | 0 |
+| [`azuremonitor`](../logic-apps/managed-azuremonitor.md) | Managed | 0 | 2 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 0 |
+| [`eventhub`](../logic-apps/managed-eventhub.md) | Managed | 0 | 2 |
+| [`eventhubs`](../logic-apps/managed-eventhubs.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitor`** (managedApi):
-- *Run_query_and_list_results_(get_events_from_scheduled_rule)*: method=`post`, path=`/queryData`
-- *Run_query_and_list_results_(get_alerts_added_to_incidents)*: method=`post`, path=`/queryData`
+#### [`azuremonitor`](../logic-apps/managed-azuremonitor.md) (Managed)
 
-**`eventhub`** (managedApi):
-- *Send_event_(send_information_with_events_to_eventhub)*: method=`post`, path=`/@{encodeURIComponent('incidentalerteventhub')}/events`
-- *Send_event_(send_information_of_alert_and_incident_to_eventhub)*: method=`post`, path=`/@{encodeURIComponent('incidentalerteventhub')}/events`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_(get_events_from_scheduled_rule) | post | `/queryData` | — |
+| Run_query_and_list_results_(get_alerts_added_to_incidents) | post | `/queryData` | — |
+
+#### [`eventhub`](../logic-apps/managed-eventhub.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_event_(send_information_with_events_to_eventhub) | post | `/@{encodeURIComponent('incidentalerteventhub')}/events` | — |
+| Send_event_(send_information_of_alert_and_incident_to_eventhub) | post | `/@{encodeURIComponent('incidentalerteventhub')}/events` | — |
 
 </details>
 

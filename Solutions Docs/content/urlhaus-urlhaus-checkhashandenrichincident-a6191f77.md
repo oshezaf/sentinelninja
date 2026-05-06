@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `URLhausAPI` | Custom | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`URLhausAPI`](../logic-apps/custom-urlhausapi.md) | Custom | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_FileHashes*: method=`post`, path=`/entities/filehash`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`URLhausAPI`** (customApi):
-- *Query_payload_information(md5_hash)*: method=`post`, path=`/payload/`
-- *Query_payload_information(sha256_hash)*: method=`post`, path=`/payload/`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
+
+#### [`URLhausAPI`](../logic-apps/custom-urlhausapi.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Query_payload_information(md5_hash) | post | `/payload/` | — |
+| Query_payload_information(sha256_hash) | post | `/payload/` | — |
 
 </details>
 

@@ -20,21 +20,27 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 5 |
-| `sentinelmcp` | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 5 |
+| [`sentinelmcp`](../logic-apps/managed-sentinelmcp.md) | Managed | 1 | 2 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
-- *Add_Url_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
-- *Add_User_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Add_Skip_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`sentinelmcp`** (managedApi):
-- *URL_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
-- *User_Analyzer*: method=`post`, path=`/aiprimitives/analysis`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+| Add_Url_comment_to_incident | post | `/Incidents/Comment` | — |
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Add_User_comment_to_incident | post | `/Incidents/Comment` | — |
+| Add_Skip_comment_to_incident | post | `/Incidents/Comment` | — |
+
+#### [`sentinelmcp`](../logic-apps/managed-sentinelmcp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| URL_Analyzer | post | `/aiprimitives/analysis` | — |
+| User_Analyzer | post | `/aiprimitives/analysis` | — |
 
 </details>
 

@@ -20,25 +20,31 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 6 |
-| `http` | Built-in | 0 | 5 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 6 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 5 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *M365_Secure_Score_Send_Data*: method=`post`, path=`/api/logs`
-- *M365_Secure_Score_Controls_Send_Data*: method=`post`, path=`/api/logs`
-- *MDE_Exposure_Score_Send_Data*: method=`post`, path=`/api/logs`
-- *MDE_Recommendations_Send_Data*: method=`post`, path=`/api/logs`
-- *MDE_Secure_Score_Send_Data*: method=`post`, path=`/api/logs`
-- *MDE_Vulnerabilities_Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`http`** (builtin):
-- *M365_Secure_Score_HTTP*: method=`GET`, uri=`https://graph.microsoft.com/v1.0/security/secureScores?$top=1`
-- *MDE_Exposure_Score_HTTP*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/exposureScore`
-- *MDE_Recommendations_HTTP*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/recommendations`
-- *MDE_Secure_Score_HTTP*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/configurationScore`
-- *MDE_Vulnerabilities_HTTP*: method=`GET`, uri=`https://api.securitycenter.windows.com/api/Vulnerabilities`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| M365_Secure_Score_Send_Data | post | `/api/logs` | — |
+| M365_Secure_Score_Controls_Send_Data | post | `/api/logs` | — |
+| MDE_Exposure_Score_Send_Data | post | `/api/logs` | — |
+| MDE_Recommendations_Send_Data | post | `/api/logs` | — |
+| MDE_Secure_Score_Send_Data | post | `/api/logs` | — |
+| MDE_Vulnerabilities_Send_Data | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| M365_Secure_Score_HTTP | GET | `https://graph.microsoft.com/v1.0/security/secureScores?$top=1` | — |
+| MDE_Exposure_Score_HTTP | GET | `https://api.securitycenter.windows.com/api/exposureScore` | — |
+| MDE_Recommendations_HTTP | GET | `https://api.securitycenter.windows.com/api/recommendations` | — |
+| MDE_Secure_Score_HTTP | GET | `https://api.securitycenter.windows.com/api/configurationScore` | — |
+| MDE_Vulnerabilities_HTTP | GET | `https://api.securitycenter.windows.com/api/Vulnerabilities` | — |
 
 </details>
 

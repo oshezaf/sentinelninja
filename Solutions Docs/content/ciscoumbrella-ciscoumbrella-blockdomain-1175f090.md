@@ -20,18 +20,24 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 2 |
-| `ciscoumbrellaenforcement` | Managed | 0 | 1 |
-| `CiscoUmbrellaEnforcementAPI` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 2 |
+| [`ciscoumbrellaenforcement`](../logic-apps/managed-ciscoumbrellaenforcement.md) | Managed | 0 | 1 |
+| [`CiscoUmbrellaEnforcementAPI`](../logic-apps/custom-ciscoumbrellaenforcementapi.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`ciscoumbrellaenforcement`** (managedApi):
-- *Block_domain*: method=`post`, path=`/1.0/events`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`ciscoumbrellaenforcement`](../logic-apps/managed-ciscoumbrellaenforcement.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Block_domain | post | `/1.0/events` | — |
 
 </details>
 

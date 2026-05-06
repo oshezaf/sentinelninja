@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -70,15 +70,21 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_-_Failed*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_Success*: method=`post`, path=`/Incidents/Comment`
-- *Add_comment_to_incident_-_No_IP_Entity*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Get_NSG*: method=`GET`, uri=`https://management.azure.com@{parameters('NSGResourceId')}`
-- *HTTP_-_Set_NSG*: method=`PUT`, uri=`https://management.azure.com@{parameters('NSGResourceId')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_-_Failed | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_Success | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_-_No_IP_Entity | post | `/Incidents/Comment` | — |
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_NSG | GET | `https://management.azure.com@{parameters('NSGResourceId')}` | — |
+| HTTP_-_Set_NSG | PUT | `https://management.azure.com@{parameters('NSGResourceId')}` | — |
 
 </details>
 

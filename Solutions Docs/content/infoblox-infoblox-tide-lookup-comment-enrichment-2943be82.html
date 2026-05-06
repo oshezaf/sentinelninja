@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">17</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>http</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">4</td>
@@ -70,30 +70,36 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_Comment_To_Incident_If_Entity_Mapping_Not_Found*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_Hash*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_For_Hash*: method=`post`, path=`/Incidents/Comment`
-- *Add_Hash_TIDE_Data_As_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_Host*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_For_Host*: method=`post`, path=`/Incidents/Comment`
-- *Add_Host_TIDE_Data_As_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_IP*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_For_IP*: method=`post`, path=`/Incidents/Comment`
-- *Add_IP_TIDE_Data_As_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_URL*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_For_URL*: method=`post`, path=`/Incidents/Comment`
-- *Add_URL_TIDE_Data_As_Comment*: method=`post`, path=`/Incidents/Comment`
-- *Get_FileHashes_From_Entities*: method=`post`, path=`/entities/filehash`
-- *Get_Hosts_From_Entities*: method=`post`, path=`/entities/host`
-- *Get_IPs_From_Entities*: method=`post`, path=`/entities/ip`
-- *Get_URLs_From_Entities*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_Request_To_Get_TIDE_Data_Of_Type_Hash*: method=`GET`, uri=`@{variables('base_url')}/tide/api/data/threats`
-- *HTTP_Request_To_Get_TIDE_Data_Of_Type_Host*: method=`GET`, uri=`@{variables('base_url')}/tide/api/data/threats`
-- *HTTP_Request_To_Get_TIDE_Data_Of_Type_IP*: method=`GET`, uri=`@{variables('base_url')}/tide/api/data/threats`
-- *HTTP_Request_To_Get_TIDE_Data_Of_Type_URL*: method=`GET`, uri=`@{variables('base_url')}/tide/api/data/threats`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_Comment_To_Incident_If_Entity_Mapping_Not_Found | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_Hash | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_For_Hash | post | `/Incidents/Comment` | — |
+| Add_Hash_TIDE_Data_As_Comment | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_Host | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_For_Host | post | `/Incidents/Comment` | — |
+| Add_Host_TIDE_Data_As_Comment | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_IP | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_For_IP | post | `/Incidents/Comment` | — |
+| Add_IP_TIDE_Data_As_Comment | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_If_No_TIDE_Data_Found_For_URL | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_For_URL | post | `/Incidents/Comment` | — |
+| Add_URL_TIDE_Data_As_Comment | post | `/Incidents/Comment` | — |
+| Get_FileHashes_From_Entities | post | `/entities/filehash` | — |
+| Get_Hosts_From_Entities | post | `/entities/host` | — |
+| Get_IPs_From_Entities | post | `/entities/ip` | — |
+| Get_URLs_From_Entities | post | `/entities/url` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Get_TIDE_Data_Of_Type_Hash | GET | `@{variables('base_url')}/tide/api/data/threats` | — |
+| HTTP_Request_To_Get_TIDE_Data_Of_Type_Host | GET | `@{variables('base_url')}/tide/api/data/threats` | — |
+| HTTP_Request_To_Get_TIDE_Data_Of_Type_IP | GET | `@{variables('base_url')}/tide/api/data/threats` | — |
+| HTTP_Request_To_Get_TIDE_Data_Of_Type_URL | GET | `@{variables('base_url')}/tide/api/data/threats` | — |
 
 </details>
 

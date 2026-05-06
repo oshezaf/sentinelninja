@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *Sync_timer_trigger_request*: method=`POST`, uri=`https://@{variables('Manage')}.azure.com/subscriptions/@{variables('Subscription Id')}/resourceGroups/@{variables('Resource Group Name')}/providers/Microsoft.Web/sites/@{items('For_each_app')?['name']}/syncfunctiontriggers?api-version=2022-03-01`
-- *Get_Auth_token*: method=`POST`, uri=`https://login.@{variables('MicrosoftOnline')}.com/@{variables('Tenant Id')}/oauth2/v2.0/token`
-- *Get_function_app_list*: method=`GET`, uri=`https://@{variables('Manage')}.azure.com/subscriptions/@{variables('Subscription Id')}/resourceGroups/@{variables('Resource Group Name')}/providers/Microsoft.Web/sites?api-version=2022-03-01`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Sync_timer_trigger_request | POST | `https://@{variables('Manage')}.azure.com/subscriptions/@{variables('Subscription Id')}/resourceGroups/@{variables('Resource Group Name')}/providers/Microsoft.Web/sites/@{items('For_each_app')?['name']}/syncfunctiontriggers?api-version=2022-03-01` | — |
+| Get_Auth_token | POST | `https://login.@{variables('MicrosoftOnline')}.com/@{variables('Tenant Id')}/oauth2/v2.0/token` | — |
+| Get_function_app_list | GET | `https://@{variables('Manage')}.azure.com/subscriptions/@{variables('Subscription Id')}/resourceGroups/@{variables('Resource Group Name')}/providers/Microsoft.Web/sites?api-version=2022-03-01` | — |
 
 </details>
 

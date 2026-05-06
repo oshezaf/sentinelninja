@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `visualstudioteamservices` | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`visualstudioteamservices`](../logic-apps/managed-visualstudioteamservices.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V2)*: method=`put`, path=`/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent(triggerBody()?['AlertType'])}/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`visualstudioteamservices`** (managedApi):
-- *Create_a_work_item*: method=`patch`, path=`/@{encodeURIComponent('DevOpsProject123')}/_apis/wit/workitems/$@{encodeURIComponent('Task')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V2) | put | `/Comment/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/@{encodeURIComponent(triggerBody()?['AlertType'])}/@{encodeURIComponent(triggerBody()?['ProviderAlertId'])}` | — |
+
+#### [`visualstudioteamservices`](../logic-apps/managed-visualstudioteamservices.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_a_work_item | patch | `/@{encodeURIComponent('DevOpsProject123')}/_apis/wit/workitems/$@{encodeURIComponent('Task')}` | — |
 
 </details>
 

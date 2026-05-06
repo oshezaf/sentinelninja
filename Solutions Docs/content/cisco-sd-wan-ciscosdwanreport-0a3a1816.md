@@ -20,22 +20,28 @@ This playbook uses **3** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 6 |
-| `outlook` | Managed | 1 | 0 |
-| `outlook_1` | Managed | 0 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 6 |
+| [`outlook`](../logic-apps/managed-outlook.md) | Managed | 1 | 0 |
+| [`outlook_1`](../logic-apps/managed-outlook-1.md) | Managed | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Chart_for_AMP_Events*: method=`post`, path=`/visualizeQueryV2`
-- *Chart_for_IPS_Events*: method=`post`, path=`/visualizeQueryV2`
-- *Table_for_AMP_Events*: method=`post`, path=`/visualizeQueryV2`
-- *Table_for_Application_Used*: method=`post`, path=`/visualizeQueryV2`
-- *Table_for_IPS_Events*: method=`post`, path=`/visualizeQueryV2`
-- *Table_for_Internet_Browsing*: method=`post`, path=`/visualizeQueryV2`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`outlook_1`** (managedApi):
-- *Send_an_email_(V2)*: method=`post`, path=`/v2/Mail`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Chart_for_AMP_Events | post | `/visualizeQueryV2` | — |
+| Chart_for_IPS_Events | post | `/visualizeQueryV2` | — |
+| Table_for_AMP_Events | post | `/visualizeQueryV2` | — |
+| Table_for_Application_Used | post | `/visualizeQueryV2` | — |
+| Table_for_IPS_Events | post | `/visualizeQueryV2` | — |
+| Table_for_Internet_Browsing | post | `/visualizeQueryV2` | — |
+
+#### [`outlook_1`](../logic-apps/managed-outlook-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_an_email_(V2) | post | `/v2/Mail` | — |
 
 </details>
 

@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 3 |
 | **Solutions** | 2 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/office365users/](https://learn.microsoft.com/en-us/connectors/office365users/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/office365users/) |
 
 ## Playbooks Using This Connector
 

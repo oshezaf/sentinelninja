@@ -20,14 +20,17 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureblob` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 0 |
+| [`azureblob`](../logic-apps/managed-azureblob.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureblob`** (managedApi):
-- *Delete_blob_(V2)*: method=`delete`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files/@{encodeURIComponent(encodeURIComponent(items('For_each')?['Path']))}`
-- *Lists_blobs_(V2)*: method=`get`, path=`/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/foldersV2/@{encodeURIComponent(encodeURIComponent('/cohesity-extra-parameters/',variables('heliosID'),'/'))}`
+#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Delete_blob_(V2) | delete | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files/@{encodeURIComponent(encodeURIComponent(items('For_each')?['Path']))}` | — |
+| Lists_blobs_(V2) | get | `/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/foldersV2/@{encodeURIComponent(encodeURIComponent('/cohesity-extra-parameters/',variables('heliosID'),'/'))}` | — |
 
 </details>
 

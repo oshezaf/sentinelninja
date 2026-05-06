@@ -20,23 +20,29 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `keyvault` | Managed | 1 | 2 |
-| `http` | Built-in | 0 | 4 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 2 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 4 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`keyvault`** (managedApi):
-- *Get_secret_ClientSecret*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value`
-- *Get_secret_ClientID*: method=`get`, path=`/secrets/@{encodeURIComponent('Druva-ClientID')}/value`
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
 
-**`http`** (builtin):
-- *Generate_Bearer_Token*: method=`POST`, uri=`@{parameters('api_host')}/token`
-- *Find_User*: method=`GET`, uri=`@{parameters('api_host')}/realize/ransomwarerecovery/v1/users`
-- *Find_Users_Device*: method=`GET`, uri=`@concat(parameters('api_host'),
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret_ClientSecret | get | `/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value` | — |
+| Get_secret_ClientID | get | `/secrets/@{encodeURIComponent('Druva-ClientID')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Generate_Bearer_Token | POST | `@{parameters('api_host')}/token` | — |
+| Find_User | GET | `@{parameters('api_host')}/realize/ransomwarerecovery/v1/users` | — |
+| Find_Users_Device | GET | `@concat(parameters('api_host'),
     '/realize/ransomwarerecovery/v1/search/device?',
     outputs('Compose_api_host')
-)`
-- *Quarantine_Resource_API*: method=`POST`, uri=`@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{item()?['resourceID']}`
+)` | — |
+| Quarantine_Resource_API | POST | `@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{item()?['resourceID']}` | — |
 
 </details>
 

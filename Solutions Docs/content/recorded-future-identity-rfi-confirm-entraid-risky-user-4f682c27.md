@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 1 |
-| `azureadip` | Managed | 1 | 1 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 1 |
+| [`azureadip`](../logic-apps/managed-azureadip.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Get_User_-_Check_if_the_user_exists_in_Active_Directory*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(variables('user_principal_name'))}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azureadip`** (managedApi):
-- *Confirm_the_user_is_indeed_compromised*: method=`post`, path=`/beta/riskyUsers/confirmCompromised`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_User_-_Check_if_the_user_exists_in_Active_Directory | get | `/v1.0/users/@{encodeURIComponent(variables('user_principal_name'))}` | — |
+
+#### [`azureadip`](../logic-apps/managed-azureadip.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Confirm_the_user_is_indeed_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
 
 </details>
 

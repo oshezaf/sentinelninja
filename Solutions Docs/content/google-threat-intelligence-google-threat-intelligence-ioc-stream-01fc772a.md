@@ -20,23 +20,32 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 1 |
-| `azuretables` | Managed | 1 | 3 |
-| `googlethreatintelligence` | Managed | 0 | 1 |
-| `GoogleThreatIntelligence-CustomConnector` | Custom | 1 | 0 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
+| [`azuretables`](../logic-apps/managed-azuretables.md) | Managed | 1 | 3 |
+| [`googlethreatintelligence`](../logic-apps/managed-googlethreatintelligence.md) | Managed | 0 | 1 |
+| [`GoogleThreatIntelligence-CustomConnector`](../logic-apps/custom-googlethreatintelligence-customconnector.md) | Custom | 1 | 0 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Threat_Intelligence_-_Upload_STIX_Objects_(Preview)*: method=`post`, path=`/ThreatIntelligence/@{encodeURIComponent('')}/UploadStixObjects/`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`azuretables`** (managedApi):
-- *Update_last_execution*: method=`put`, path=`/v2/storageAccounts/@{encodeURIComponent(encodeURIComponent(variables('account_name')))}/tables/@{encodeURIComponent(variables('table_name'))}/entities(PartitionKey='@{encodeURIComponent('IoCStream-',workflow().name)}',RowKey='@{encodeURIComponent('LastExTimestamp')}')`
-- *Create_table_(V2)*: method=`post`, path=`/v2/storageAccounts/@{encodeURIComponent(encodeURIComponent(variables('account_name')))}/tables`
-- *Get_last_execution*: method=`get`, path=`/v2/storageAccounts/@{encodeURIComponent(encodeURIComponent(variables('account_name')))}/tables/@{encodeURIComponent(variables('table_name'))}/entities(PartitionKey='@{encodeURIComponent('IoCStream-',workflow().name)}',RowKey='@{encodeURIComponent('LastExTimestamp')}')`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Threat_Intelligence_-_Upload_STIX_Objects_(Preview) | post | `/ThreatIntelligence/@{encodeURIComponent('')}/UploadStixObjects/` | — |
 
-**`googlethreatintelligence`** (managedApi):
-- *Get_IoC_Stream_list*: method=`get`, path=`/ioc_stream`
+#### [`azuretables`](../logic-apps/managed-azuretables.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_last_execution | put | `/v2/storageAccounts/@{encodeURIComponent(encodeURIComponent(variables('account_name')))}/tables/@{encodeURIComponent(variables('table_name'))}/entities(PartitionKey='@{encodeURIComponent('IoCStream-',workflow().name)}',RowKey='@{encodeURIComponent('LastExTimestamp')}')` | — |
+| Create_table_(V2) | post | `/v2/storageAccounts/@{encodeURIComponent(encodeURIComponent(variables('account_name')))}/tables` | — |
+| Get_last_execution | get | `/v2/storageAccounts/@{encodeURIComponent(encodeURIComponent(variables('account_name')))}/tables/@{encodeURIComponent(variables('table_name'))}/entities(PartitionKey='@{encodeURIComponent('IoCStream-',workflow().name)}',RowKey='@{encodeURIComponent('LastExTimestamp')}')` | — |
+
+#### [`googlethreatintelligence`](../logic-apps/managed-googlethreatintelligence.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_IoC_Stream_list | get | `/ioc_stream` | — |
 
 </details>
 

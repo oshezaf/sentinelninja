@@ -55,31 +55,31 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuresentinel</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>fortinetconnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-fortinetconnector.html"><code>fortinetconnector</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>teams</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>FortinetCustomConnector</code></td>
+<td style="text-align: left;"><a href="../logic-apps/custom-fortinetcustomconnector.html"><code>FortinetCustomConnector</code></a></td>
 <td style="text-align: left;">Custom</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>function</code></td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
 <td style="text-align: left;">Built-in</td>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">2</td>
@@ -88,19 +88,28 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_comment_to_incident_(V3)_3*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident*: method=`put`, path=`/Incidents`
-- *Add_comment_to_incident_(V3)*: method=`post`, path=`/Incidents/Comment`
-- *Entities_-_Get_URLs*: method=`post`, path=`/entities/url`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`fortinetconnector`** (managedApi):
-- *Create_an_address_object*: method=`post`, path=`/api/v2/cmdb/firewall/address`
-- *Update_pre-defined_address_group*: method=`put`, path=`/api/v2/cmdb/firewall/addrgrp/@{encodeURIComponent(variables('Pre-definedGroupName'))}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Entities_-_Get_URLs | post | `/entities/url` | — |
 
-**`function`** (builtin):
-- *Address_group_details*: functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]`
-- *Check_address_object_is_already_exist_in_firewall*: method=`GET`, functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]`
+#### [`fortinetconnector`](../logic-apps/managed-fortinetconnector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_an_address_object | post | `/api/v2/cmdb/firewall/address` | — |
+| Update_pre-defined_address_group | put | `/api/v2/cmdb/firewall/addrgrp/@{encodeURIComponent(variables('Pre-definedGroupName'))}` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Address_group_details | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]` |
+| Check_address_object_is_already_exist_in_firewall | GET | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',variables('functionAppName'),'/functions/Fortinet-GetEntityDetails')]` |
 
 </details>
 

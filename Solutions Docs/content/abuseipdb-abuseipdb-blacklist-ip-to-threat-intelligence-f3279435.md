@@ -20,16 +20,22 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `microsoftgraphsecurity` | Managed | 1 | 1 |
-| `AbuseIPDBAPI` | Custom | 1 | 1 |
+| [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) | Managed | 1 | 1 |
+| [`AbuseIPDBAPI`](../logic-apps/custom-abuseipdbapi.md) | Custom | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftgraphsecurity`** (managedApi):
-- *Submit_multiple_tiIndicators*: method=`post`, path=`/beta/security/tiIndicators/submitTiIndicators`
+#### [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) (Managed)
 
-**`AbuseIPDBAPI`** (customApi):
-- *BLACKLIST_Endpoint*: method=`get`, path=`/blacklist`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Submit_multiple_tiIndicators | post | `/beta/security/tiIndicators/submitTiIndicators` | — |
+
+#### [`AbuseIPDBAPI`](../logic-apps/custom-abuseipdbapi.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| BLACKLIST_Endpoint | get | `/blacklist` | — |
 
 </details>
 

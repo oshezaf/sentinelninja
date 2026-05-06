@@ -20,12 +20,15 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `microsoftgraphsecurity` | Managed | 1 | 1 |
+| [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`microsoftgraphsecurity`** (managedApi):
-- *Submit_multiple_tiIndicators*: method=`post`, path=`/beta/security/tiIndicators/submitTiIndicators`
+#### [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Submit_multiple_tiIndicators | post | `/beta/security/tiIndicators/submitTiIndicators` | — |
 
 </details>
 

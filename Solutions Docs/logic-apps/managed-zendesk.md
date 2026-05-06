@@ -9,13 +9,13 @@
 | **Type** | Managed |
 | **Playbooks using** | 1 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/zendesk/](https://learn.microsoft.com/en-us/connectors/zendesk/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/zendesk/) |
 
 ## Playbooks Using This Connector
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Create Zendesk ticket](../content/standalone-content-create-zendesk-ticket-5dd6920c.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
+| [Create Zendesk ticket](../content/standalone-content-create-zendesk-ticket-5dd6920c.md) | 📄 Standalone | 1 | 1 |
 
 ---
 

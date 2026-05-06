@@ -15,8 +15,8 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [CDC_Dismiss_Upstream_Events](../content/standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 2 |
-| [Ingestion Cost Alert Playbook](../content/standalone-content-ingestion-cost-alert-playbook-e92ea9a8.md) | [Standalone Content](../solutions/standalone-content.md) | 0 | 1 |
+| [CDC_Dismiss_Upstream_Events](../content/standalone-content-cdc-dismiss-upstream-events-694a3d2e.md) | 📄 Standalone | 0 | 2 |
+| [Ingestion Cost Alert Playbook](../content/standalone-content-ingestion-cost-alert-playbook-e92ea9a8.md) | 📄 Standalone | 0 | 1 |
 
 ---
 

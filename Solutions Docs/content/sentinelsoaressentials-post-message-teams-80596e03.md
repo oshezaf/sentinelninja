@@ -20,13 +20,16 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 0 |
-| `teams` | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 0 |
+| [`teams`](../logic-apps/managed-teams.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`teams`** (managedApi):
-- *Post_a_message_(V3)*: method=`post`, path=`[concat('/v3/beta/teams/@{encodeURIComponent(''', parameters('TeamsGroupId'), ''')}', '/channels/@{encodeURIComponent(''', parameters('TeamsChannelId'), ''')}/messages')]`
+#### [`teams`](../logic-apps/managed-teams.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Post_a_message_(V3) | post | `[concat('/v3/beta/teams/@{encodeURIComponent(''', parameters('TeamsGroupId'), ''')}', '/channels/@{encodeURIComponent(''', parameters('TeamsChannelId'), ''')}/messages')]` | — |
 
 </details>
 

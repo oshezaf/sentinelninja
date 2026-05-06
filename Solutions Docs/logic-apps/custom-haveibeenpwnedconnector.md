@@ -15,11 +15,11 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
-| [Get Account Breaches - HaveIBeenPwned](../content/standalone-content-get-account-breaches-haveibeenpwned-18c5368f.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
-| [Get Site Breaches - HaveIBeenPwned](../content/standalone-content-get-site-breaches-haveibeenpwned-2d649890.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
-| [Logic Apps Custom Connector and Playbook templates - HaveIBeenPwned](../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-haveibeenpwned-85e96128.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 4 |
-| [Response on Teams - HaveIBeenPwned](../content/standalone-content-response-on-teams-haveibeenpwned-518cb843.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
-| [Send Email - HaveIBeenPwned](../content/standalone-content-send-email-haveibeenpwned-a905322f.md) | [Standalone Content](../solutions/standalone-content.md) | 1 | 1 |
+| [Get Account Breaches - HaveIBeenPwned](../content/standalone-content-get-account-breaches-haveibeenpwned-18c5368f.md) | 📄 Standalone | 1 | 1 |
+| [Get Site Breaches - HaveIBeenPwned](../content/standalone-content-get-site-breaches-haveibeenpwned-2d649890.md) | 📄 Standalone | 1 | 1 |
+| [Logic Apps Custom Connector and Playbook templates - HaveIBeenPwned](../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-haveibeenpwned-85e96128.md) | 📄 Standalone | 1 | 4 |
+| [Response on Teams - HaveIBeenPwned](../content/standalone-content-response-on-teams-haveibeenpwned-518cb843.md) | 📄 Standalone | 1 | 1 |
+| [Send Email - HaveIBeenPwned](../content/standalone-content-send-email-haveibeenpwned-a905322f.md) | 📄 Standalone | 1 | 1 |
 
 ---
 

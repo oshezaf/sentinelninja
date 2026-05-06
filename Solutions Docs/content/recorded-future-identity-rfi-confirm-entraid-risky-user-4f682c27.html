@@ -55,13 +55,13 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>azuread</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuread.html"><code>azuread</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>azureadip</code></td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureadip.html"><code>azureadip</code></a></td>
 <td style="text-align: left;">Managed</td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">1</td>
@@ -70,11 +70,17 @@
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Get_User_-_Check_if_the_user_exists_in_Active_Directory*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(variables('user_principal_name'))}`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azureadip`** (managedApi):
-- *Confirm_the_user_is_indeed_compromised*: method=`post`, path=`/beta/riskyUsers/confirmCompromised`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_User_-_Check_if_the_user_exists_in_Active_Directory | get | `/v1.0/users/@{encodeURIComponent(variables('user_principal_name'))}` | — |
+
+#### [`azureadip`](../logic-apps/managed-azureadip.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Confirm_the_user_is_indeed_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
 
 </details>
 

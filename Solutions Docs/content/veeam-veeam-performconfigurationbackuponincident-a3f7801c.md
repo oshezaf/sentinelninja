@@ -20,20 +20,26 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `function` | Built-in | 0 | 3 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`function`](../logic-apps/builtin-function.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Add_backup_started_comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_backup_completed_comment*: method=`post`, path=`/Incidents/Comment`
-- *Add_no_hostname_comment*: method=`post`, path=`/Incidents/Comment`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`function`** (builtin):
-- *StartConfigurationBackupAsync*: functionId=`[concat(variables('functionAppId'), '/functions/StartConfigurationBackupAsync')]`
-- *GetSession*: functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]`
-- *IngestSessionDataBySessionIdAsync*: functionId=`[concat(variables('functionAppId'), '/functions/IngestSessionDataBySessionIdAsync')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_backup_started_comment | post | `/Incidents/Comment` | — |
+| Add_backup_completed_comment | post | `/Incidents/Comment` | — |
+| Add_no_hostname_comment | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| StartConfigurationBackupAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/StartConfigurationBackupAsync')]` |
+| GetSession | — | — | functionId=`[concat(variables('functionAppId'), '/functions/GetSessionAsync')]` |
+| IngestSessionDataBySessionIdAsync | — | — | functionId=`[concat(variables('functionAppId'), '/functions/IngestSessionDataBySessionIdAsync')]` |
 
 </details>
 

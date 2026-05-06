@@ -20,24 +20,30 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `azuresentinel` | Managed | 1 | 9 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 9 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_Query_And_List_DHCP_Lookup_Data_For_Provided_Time_Range*: method=`post`, path=`/queryDataV2`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_IPs*: method=`post`, path=`/entities/ip`
-- *Add_Comment_To_Incident_For_Empty_IP_Address_Found*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment__For_Empty_Results_Found_For_IP*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2)*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_For_Remaining_Records*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_To_Incident_For_Limit_Exceeded*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_For_DHCP_Record_In_HTML_Table_Format_*: method=`post`, path=`/Incidents/Comment`
-- *Add_Comment_That_Limit_Has_Been_Exceeded*: method=`post`, path=`/Incidents/Comment`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_Query_And_List_DHCP_Lookup_Data_For_Provided_Time_Range | post | `/queryDataV2` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_Comment_To_Incident_For_Empty_IP_Address_Found | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_To_100 | post | `/Incidents/Comment` | — |
+| Add_Comment__For_Empty_Results_Found_For_IP | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded_To_100_(2) | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_For_Remaining_Records | post | `/Incidents/Comment` | — |
+| Add_Comment_To_Incident_For_Limit_Exceeded | post | `/Incidents/Comment` | — |
+| Add_Comment_For_DHCP_Record_In_HTML_Table_Format_ | post | `/Incidents/Comment` | — |
+| Add_Comment_That_Limit_Has_Been_Exceeded | post | `/Incidents/Comment` | — |
 
 </details>
 

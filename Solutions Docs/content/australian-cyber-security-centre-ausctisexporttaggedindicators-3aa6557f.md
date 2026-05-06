@@ -20,14 +20,17 @@ This playbook uses **1** Logic App connector / built-in action:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `http` | Built-in | 0 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`http`** (builtin):
-- *HTTP_appendTags_request*: method=`POST`, uri=`[uriComponentToString(uri(variables('azure'), 'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/indicators/@{items(''For_each_filtered_indicator'')?[''name'']}/appendTags?api-version=2021-10-01'))]`
-- *HTTP_POST_stix_bundle_to_TAXII_server*: method=`POST`, uri=`@{parameters('TAXIIServerRootURL')}/collections/@{parameters('CollectionID')}/objects/`
-- *HTTP_queryIndicators_request*: method=`POST`, uri=`[uriComponentToString(uri(variables('azure'),'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/queryIndicators?api-version=2022-06-01-preview'))]`
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_appendTags_request | POST | `[uriComponentToString(uri(variables('azure'), 'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/indicators/@{items(''For_each_filtered_indicator'')?[''name'']}/appendTags?api-version=2021-10-01'))]` | — |
+| HTTP_POST_stix_bundle_to_TAXII_server | POST | `@{parameters('TAXIIServerRootURL')}/collections/@{parameters('CollectionID')}/objects/` | — |
+| HTTP_queryIndicators_request | POST | `[uriComponentToString(uri(variables('azure'),'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/queryIndicators?api-version=2022-06-01-preview'))]` | — |
 
 </details>
 

@@ -20,18 +20,24 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 1 | 3 |
-| `http` | Built-in | 0 | 1 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 3 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_DNS*: method=`post`, path=`/entities/dnsresolution`
-- *Add_comment_to_incident*: method=`post`, path=`/Incidents/Comment`
-- *Update_incident_Tags*: method=`put`, path=`/Incidents`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Get_TIDE_Data_(Hosts)*: method=`GET`, uri=`https://csp.infoblox.com/tide/api/data/threats`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+| Update_incident_Tags | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_TIDE_Data_(Hosts) | GET | `https://csp.infoblox.com/tide/api/data/threats` | — |
 
 </details>
 

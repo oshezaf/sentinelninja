@@ -20,21 +20,27 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuresentinel` | Managed | 0 | 1 |
-| `http` | Built-in | 0 | 6 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 0 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 6 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuresentinel`** (managedApi):
-- *Create_New_Incident*: method=`put`, path=`[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('WorkspaceResourceGroup'), '/workspaces/', parameters('WorkspaceName'))]`
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
 
-**`http`** (builtin):
-- *Query_Existing_SOCRadar_Incidents*: method=`GET`, uri=`[concat(variables('_managementBaseUrl'), 'subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('WorkspaceResourceGroup'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/providers/Microsoft.SecurityInsights/incidents?api-version=2023-11-01&$top=1&$filter=startswith(properties/title, ''[SOCRadar]'')')]`
-- *Get_SOCRadar_Page*: method=`GET`, uri=`https://platform.socradar.com/api/company/@{parameters('CompanyId')}/incidents/v4`
-- *Query_Incidents_Page*: method=`GET`, uri=`@variables('incidents_next_link')`
-- *Create_Closed_Incident*: method=`PUT`, uri=`@{concat(parameters('ManagementBaseUrl'), '/subscriptions/', parameters('SubscriptionId'), '/resourceGroups/', parameters('ResourceGroupName'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/providers/Microsoft.SecurityInsights/incidents/', guid(), '?api-version=2023-11-01')}`
-- *Log_Audit_Event*: method=`POST`, uri=`@{concat(parameters('AuditDcrEndpoint'), '/dataCollectionRules/', parameters('AuditDcrImmutableId'), '/streams/', parameters('AuditStreamName'), '?api-version=2023-01-01')}`
-- *Ingest_To_Custom_Table*: method=`POST`, uri=`@{concat(parameters('DceEndpoint'), '/dataCollectionRules/', parameters('AlarmsDcrImmutableId'), '/streams/', parameters('AlarmsStreamName'), '?api-version=2023-01-01')}`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_New_Incident | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('WorkspaceResourceGroup'), '/workspaces/', parameters('WorkspaceName'))]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Query_Existing_SOCRadar_Incidents | GET | `[concat(variables('_managementBaseUrl'), 'subscriptions/', subscription().subscriptionId, '/resourceGroups/', parameters('WorkspaceResourceGroup'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/providers/Microsoft.SecurityInsights/incidents?api-version=2023-11-01&$top=1&$filter=startswith(properties/title, ''[SOCRadar]'')')]` | — |
+| Get_SOCRadar_Page | GET | `https://platform.socradar.com/api/company/@{parameters('CompanyId')}/incidents/v4` | — |
+| Query_Incidents_Page | GET | `@variables('incidents_next_link')` | — |
+| Create_Closed_Incident | PUT | `@{concat(parameters('ManagementBaseUrl'), '/subscriptions/', parameters('SubscriptionId'), '/resourceGroups/', parameters('ResourceGroupName'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('WorkspaceName'), '/providers/Microsoft.SecurityInsights/incidents/', guid(), '?api-version=2023-11-01')}` | — |
+| Log_Audit_Event | POST | `@{concat(parameters('AuditDcrEndpoint'), '/dataCollectionRules/', parameters('AuditDcrImmutableId'), '/streams/', parameters('AuditStreamName'), '?api-version=2023-01-01')}` | — |
+| Ingest_To_Custom_Table | POST | `@{concat(parameters('DceEndpoint'), '/dataCollectionRules/', parameters('AlarmsDcrImmutableId'), '/streams/', parameters('AlarmsStreamName'), '?api-version=2023-01-01')}` | — |
 
 </details>
 

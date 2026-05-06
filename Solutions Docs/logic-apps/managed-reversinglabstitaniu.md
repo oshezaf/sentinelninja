@@ -9,7 +9,7 @@
 | **Type** | Managed |
 | **Playbooks using** | 2 |
 | **Solutions** | 1 |
-| **Microsoft Learn** | [https://learn.microsoft.com/en-us/connectors/reversinglabstitaniu/](https://learn.microsoft.com/en-us/connectors/reversinglabstitaniu/) |
+| **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/reversinglabstitaniu/) |
 
 ## Playbooks Using This Connector
 

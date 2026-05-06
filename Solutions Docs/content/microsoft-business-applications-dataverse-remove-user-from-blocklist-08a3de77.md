@@ -20,17 +20,23 @@ This playbook uses **2** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azuread` | Managed | 1 | 2 |
-| `azuresentinel` | Managed | 1 | 1 |
+| [`azuread`](../logic-apps/managed-azuread.md) | Managed | 1 | 2 |
+| [`azuresentinel`](../logic-apps/managed-azuresentinel.md) | Managed | 1 | 1 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azuread`** (managedApi):
-- *Get_user*: method=`get`, path=`/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix']))}`
-- *Remove_Member_From_Group*: method=`delete`, path=`/v1.0/groups/@{encodeURIComponent(parameters('GroupId'))}/members/@{encodeURIComponent(body('Get_user')?['id'])}/$ref`
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
 
-**`azuresentinel`** (managedApi):
-- *Entities_-_Get_Accounts*: method=`post`, path=`/entities/account`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_user | get | `/v1.0/users/@{encodeURIComponent(concat(items('For_each')?['Name'], '@', items('for_each')?['UPNSuffix']))}` | — |
+| Remove_Member_From_Group | delete | `/v1.0/groups/@{encodeURIComponent(parameters('GroupId'))}/members/@{encodeURIComponent(body('Get_user')?['id'])}/$ref` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
 
 </details>
 

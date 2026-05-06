@@ -28,26 +28,38 @@ This playbook uses **4** Logic App connectors / built-in actions:
 
 | Connector / Action | Type | Connections | Actions |
 |:-------------------|:-----|:-----------:|:-------:|
-| `azureloganalyticsdatacollector` | Managed | 1 | 1 |
-| `azuremonitorlogs` | Managed | 1 | 1 |
-| `keyvault` | Managed | 1 | 1 |
-| `http` | Built-in | 0 | 3 |
+| [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) | Managed | 1 | 1 |
+| [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) | Managed | 1 | 1 |
+| [`keyvault`](../logic-apps/managed-keyvault.md) | Managed | 1 | 1 |
+| [`http`](../logic-apps/builtin-http.md) | Built-in | 0 | 3 |
 
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-**`azureloganalyticsdatacollector`** (managedApi):
-- *Send_Data*: method=`post`, path=`/api/logs`
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
 
-**`azuremonitorlogs`** (managedApi):
-- *Run_query_and_list_results_V2_-_Get_Potential_Duplicates*: method=`post`, path=`/queryDataV2`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_Data | post | `/api/logs` | — |
 
-**`keyvault`** (managedApi):
-- *Get_Secret*: method=`get`, path=`[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]`
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
 
-**`http`** (builtin):
-- *HTTP_-_Get_Complete_Alerts*: method=`POST`, uri=`[concat('https://', parameters('CrowdstrikeDomain') ,'/alerts/entities/alerts/v1')]`
-- *HTTP_-_Get_Alert_IDs*: method=`GET`, uri=`[concat('https://', parameters('CrowdstrikeDomain') ,'/alerts/queries/alerts/v2?filter=created_timestamp:>=''@{addMinutes(variables(''Local Timestamp''), -10)}''&created_timestamp:<=''@{variables(''Local Timestamp'')}''&sort=created_timestamp.desc')]`
-- *HTTP_-_Get_Token*: method=`POST`, uri=`[concat('https://', parameters('CrowdstrikeDomain') ,'/oauth2/token')]`
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_V2_-_Get_Potential_Duplicates | post | `/queryDataV2` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_-_Get_Complete_Alerts | POST | `[concat('https://', parameters('CrowdstrikeDomain') ,'/alerts/entities/alerts/v1')]` | — |
+| HTTP_-_Get_Alert_IDs | GET | `[concat('https://', parameters('CrowdstrikeDomain') ,'/alerts/queries/alerts/v2?filter=created_timestamp:>=''@{addMinutes(variables(''Local Timestamp''), -10)}''&created_timestamp:<=''@{variables(''Local Timestamp'')}''&sort=created_timestamp.desc')]` | — |
+| HTTP_-_Get_Token | POST | `[concat('https://', parameters('CrowdstrikeDomain') ,'/oauth2/token')]` | — |
 
 </details>
 
