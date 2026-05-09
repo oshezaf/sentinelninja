@@ -35,7 +35,7 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 ## Contents
 
 - [Data Connectors](#data-connectors)
-- [Internal Tables](#internal-tables)
+- [Tables Used](#tables-used)
 - [Content Items](#content-items)
 
 ## Data Connectors
@@ -44,7 +44,15 @@ This solution provides **1 data connector(s)**:
 
 - [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md)
 
-## Internal Tables
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) | - |
+
+### Internal Tables
 
 The following **4 table(s)** are used internally by this solution's content items:
 

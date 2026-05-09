@@ -34,17 +34,17 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: right;"><strong>150</strong></td>
-<td style="text-align: right;">127</td>
+<td style="text-align: right;"><strong>142</strong></td>
+<td style="text-align: right;">119</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">23</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: right;"><strong>139</strong></td>
-<td style="text-align: right;">104</td>
-<td style="text-align: right;">27</td>
-<td style="text-align: right;">8</td>
+<td style="text-align: right;"><strong>125</strong></td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">5</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
@@ -62,8 +62,8 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
-<td style="text-align: right;"><strong>57</strong></td>
-<td style="text-align: right;">52</td>
+<td style="text-align: right;"><strong>55</strong></td>
+<td style="text-align: right;">50</td>
 <td style="text-align: right;">1</td>
 <td style="text-align: right;">4</td>
 </tr>
@@ -96,11 +96,32 @@
 <td style="text-align: right;">2</td>
 </tr>
 <tr>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: right;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: right;"><strong>13</strong></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: right;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: right;"><strong>8</strong></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
 <td style="text-align: right;"><strong>8</strong></td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/unknown-custom-log.html">Unknown (Custom Log)</a></td>
@@ -110,9 +131,16 @@
 <td style="text-align: right;">1</td>
 </tr>
 <tr>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: right;">REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md)</td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>613</strong></td>
-<td style="text-align: right;"><strong>416</strong></td>
+<td style="text-align: right;"><strong>612</strong></td>
+<td style="text-align: right;"><strong>415</strong></td>
 <td style="text-align: right;"><strong>151</strong></td>
 <td style="text-align: right;"><strong>46</strong></td>
 </tr>
@@ -123,6 +151,41 @@
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
+<h2 id="how-collection-methods-are-assigned-to-tables">How collection methods are assigned to tables</h2>
+<p>Each table's <code>collection_method</code> is resolved in this order:</p>
+<ol>
+<li><strong>ASIM short-circuit</strong> — tables whose name starts with <code>ASim</code> (case-insensitive) are classified as <strong><code>Various</code></strong>, since ASIM is a normalization layer that aggregates events from many heterogeneous sources.</li>
+<li><strong>Intrinsic value</strong> from <code>tables_reference.csv</code> (e.g. <code>AMA</code> for tables with VM resource types). The shared agent-collected tables — <code>Syslog</code>, <code>CommonSecurityLog</code>, <code>SecurityEvent</code>, and <code>Event</code> — are intrinsically classified as <strong><code>AMA</code></strong> since AMA is the supported modern collection path, even though some legacy connectors that feed them still use MMA.</li>
+<li><strong>Defender XDR override</strong> — tables flagged <code>source_defender_xdr=Yes</code> are classified as <code>Defender</code>.</li>
+<li><strong>Azure Resources override</strong> — tables in the <code>Azure Resources</code> category are classified as <code>Azure Diagnostics</code>.</li>
+<li><strong>Inherited from feeding connectors</strong> when all of them use the same atomized method (1:1). Connector <code>collection_method</code> values are split on <code>|</code> before comparison.</li>
+<li><strong>Published-connector trump</strong> — when feeding connectors disagree but only some are published in the marketplace, the unpublished connectors are dropped from inference. If that yields a single method, it is used.</li>
+<li><strong>Precedence collapse</strong> when feeding connectors still disagree and the disagreement is a known generation overlap. Newer / canonical technology wins:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Co-feeding methods</th>
+<th style="text-align: left;">Inferred method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>AMA</code> + <code>MMA</code></td>
+<td style="text-align: left;"><code>AMA</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>CCF</code> + <code>CCF (Legacy)</code></td>
+<td style="text-align: left;"><code>CCF</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>Azure Function</code> + <code>CCF</code></td>
+<td style="text-align: left;"><code>CCF</code></td>
+</tr>
+</tbody>
+</table>
+<p>If steps 2–4 produced an intrinsic value that disagrees with what step 5–7 would infer, the intrinsic value wins and the disagreement is logged in the analyzer's exceptions report with <code>reason=table_method_conflict</code>. If feeding connectors still disagree after the published-trump filter and precedence collapse, no method is back-propagated and the table is logged with <code>reason=table_method_ambiguity</code> (only when no intrinsic value was set).</p>
+<p><code>tables.csv</code> records the resolution path on every row via the <code>collection_method_source</code>, <code>collection_method_candidates</code>, and <code>feeding_connector_ids</code> columns.</p>
 <hr />
 <h2 id="ingestion-api-by-collection-method">Ingestion API by Collection Method</h2>
 <p>API-based connectors (CCF Push, Azure Function, REST Pull API, and Custom Log) use one of two APIs to send data to the Log Analytics workspace. CCF and CCF (Legacy) are excluded as their ingestion is platform-managed.</p>
@@ -140,9 +203,9 @@
 <tr>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
 <td style="text-align: right;">42</td>
-<td style="text-align: right;">87</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;"><strong>135</strong></td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"><strong>120</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
@@ -159,11 +222,39 @@
 <td style="text-align: right;"><strong>34</strong></td>
 </tr>
 <tr>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: right;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: right;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: right;">REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md)</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: right;"><strong>76</strong></td>
-<td style="text-align: right;"><strong>142</strong></td>
-<td style="text-align: right;"><strong>6</strong></td>
-<td style="text-align: right;"><strong>224</strong></td>
+<td style="text-align: right;"><strong>84</strong></td>
+<td style="text-align: right;"><strong>130</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>237</strong></td>
 </tr>
 </tbody>
 </table>

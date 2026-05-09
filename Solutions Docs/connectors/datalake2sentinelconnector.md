@@ -13,8 +13,9 @@
 | **Connector ID** | `Datalake2SentinelConnector` |
 | **Publisher** | Orange Cyberdefense |
 | **Used in Solutions** | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
-| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
+| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [Datalake2SentinelConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel/Data%20Connectors/Datalake2SentinelConnector.json) |
+| **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *External Azure Function code calls https://api.ti.sentinel.azure.com/workspaces/{workspace_id}/threat-intelligence-stix-objects:upload (verified at cert-orangecyberdefense/datalake2sentinel)* |
 
 This solution installs the Datalake2Sentinel connector which is built using the Codeless Connector Platform and allows you to automatically ingest threat intelligence indicators from **Datalake Orange Cyberdefense's CTI platform** into Microsoft Sentinel via the Upload Indicators REST API. After installing the solution, configure and enable this data connector by following guidance in Manage solution view.
 
@@ -24,7 +25,8 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | `SourceSystem == "Datalake - OrangeCyberdefense"` | ✓ | ✓ | ? |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) |  | ✓ | ✓ | ? |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) |  | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

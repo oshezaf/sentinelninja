@@ -43,7 +43,15 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [VMRayThreatIntelligence](../connectors/vmray.md) | - |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [VMRayThreatIntelligence](../connectors/vmray.md) | - |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [VMRayThreatIntelligence](../connectors/vmray.md) | - |
 
 ## Content Items
 

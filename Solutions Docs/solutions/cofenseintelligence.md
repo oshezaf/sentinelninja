@@ -48,10 +48,7 @@ c.[Microsoft Threat Intelligence Indicator API](https://learn.microsoft.com/en-u
 
 This solution provides **1 data connector(s)**:
 
-- [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+- [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md)
 
 ## Tables Used
 
@@ -59,11 +56,8 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Malware_Data_CL`](../tables/malware-data-cl.md) 🔶 | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) | Workbooks |
+| [`Malware_Data_CL`](../tables/malware-data-cl.md) | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) | Workbooks |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) | Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 ## Content Items
 

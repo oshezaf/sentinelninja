@@ -15,7 +15,7 @@
 | **Used in Solutions** | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [BeyondTrustPMCloud_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud/Data%20Connectors/BeyondTrustPMCloud_API_FunctionApp.json) |
-| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Ingestion API** | [Log Ingestion API|HTTP Data Collector API](../methods/log-ingestion-api-http-data-collector-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources|Connector definition requires workspace key (SharedKey pattern)* |
 
 The BeyondTrust Privilege Management Cloud data connector provides the capability to ingest activity audit logs and client event logs from BeyondTrust PM Cloud into Microsoft Sentinel.
 

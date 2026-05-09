@@ -17,7 +17,7 @@
 | **Used in Solutions** | [Upwind](../solutions/upwind.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [UpwindLogsLoader_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind/Data%20Connectors/UpwindLogsLoader_API_FunctionApp.json) |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code uses LogsIngestionClient/Log Ingestion API* |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
 
 The **Upwind Logs Loader** data connector ingests compute platform assets from the [Upwind](https://upwind.io) cloud security platform into a Microsoft Sentinel custom table using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
 

@@ -6,17 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-
 ## Schema (23 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Infoblox_Failed_Indicators_CL.json)
@@ -46,20 +35,6 @@
 | type_s | string |
 | valid_from_t | datetime |
 | valid_until_t | datetime |
-
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Infoblox](../solutions/infoblox.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) |  |
 
 ---
 

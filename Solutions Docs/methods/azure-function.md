@@ -18,10 +18,10 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **139** |
-| Active | 104 |
-| Deprecated 🚫 | 27 |
-| Unpublished ⚠️ | 8 |
+| Total Connectors | **125** |
+| Active | 94 |
+| Deprecated 🚫 | 26 |
+| Unpublished ⚠️ | 5 |
 
 ## Connectors Using This Method
 
@@ -46,19 +46,14 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | Cisco | 12 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶 | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
 | [Cisco ETD](../connectors/ciscoetd.md) 🔶 | Cisco | 1 | [Cisco ETD](../solutions/cisco-etd.md) |
-| [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) ⚠️ 🔶 | Cofense | 2 | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
-| [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) ⚠️ 🔶 | Cofense | 3 | [CofenseTriage](../solutions/cofensetriage.md) |
 | [Cohesity](../connectors/cohesitydataconnector.md) | Cohesity | 1 | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [ContrastADR](../connectors/contrastadr.md) 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
-| [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | CrowdStrike | 1 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM](../connectors/cyberarkepm.md) 🔶 | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
-| [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) ⚠️ | Cyjax | 1 | [Cyjax](../solutions/cyjax.md) |
-| [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | Dataminr | 1 | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
 | [ESET Inspect](../connectors/esetinspect.md) 🔶 | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
 | [ESET Protect Platform](../connectors/esetprotectplatform.md) ⚠️ | ESET | 2 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
@@ -67,13 +62,11 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶 | Fortinet | 3 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Microsoft | 1 | [GitHub](../solutions/github.md) |
 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) 🔶 | Microsoft | 2 | [GitHub](../solutions/github.md) |
-| [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | GreyNoise, Inc. and BlueCycle LLC | 1 | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
 | [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶 | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | [HYAS Protect](../connectors/hyasprotect.md) 🔶 | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶 | Imperva | 3 | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
-| [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) 🔶 | Infoblox | 18 | [Infoblox](../solutions/infoblox.md) |
 | [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo ASN Data Connector](../connectors/ipinfoasndataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
@@ -94,16 +87,12 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | Joe Security LLC | 1 | [JoeSandbox](../solutions/joesandbox.md) |
 | [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) 🔶 | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
-| [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md) | Lumen Technologies, Inc. | 1 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
-| [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | Lumen Technologies, Inc. | 1 | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
-| [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md) | Cognyte Technologies Israel Ltd | 1 | [CognyteLuminar](../solutions/cognyteluminar.md) |
-| [Mimecast Audit](../connectors/mimecastauditapi.md) 🔶 | Mimecast | 2 | [Mimecast](../solutions/mimecast.md) |
+| [Mimecast Audit](../connectors/mimecastauditapi.md) | Mimecast | 1 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | Mimecast | 4 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Cloud Integrated](../connectors/mimecastciapi.md) | Mimecast | 1 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md) | Mimecast | 2 | [Mimecast](../solutions/mimecast.md) |
-| [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) 🔶 | Mimecast | 6 | [Mimecast](../solutions/mimecast.md) |
+| [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Mimecast | 3 | [Mimecast](../solutions/mimecast.md) |
 | [MongoDB Atlas Logs](../connectors/mongodbatlaslogsazurefunctions.md) | MongoDB | 1 | [MongoDBAtlas](../solutions/mongodbatlas.md) |
 | [MuleSoft Cloudhub](../connectors/mulesoft.md) 🔶 | MuleSoft | 1 | [Mulesoft](../solutions/mulesoft.md) |
 | [Netskope](../connectors/netskope.md) 🔶 | Netskope | 1 | [Netskope](../solutions/netskope.md) |
@@ -120,7 +109,6 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) 🔶 | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) 🔶 | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | Semperis | 7 | [SemperisLightning](../solutions/semperislightning.md) |
-| [SlashNext Function App](../connectors/slashnextfunctionapp.md) 🔶 | SlashNext | 2 | [SlashNext](../solutions/slashnext.md) |
 | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | Team Cymru Scout | 14 | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | [Tenable Vulnerability Management](../connectors/tenablevm.md) | Tenable | 5 | [Tenable App](../solutions/tenable-app.md) |
 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶 | Tenable | 2 | [TenableIO](../solutions/tenableio.md) |
@@ -133,7 +121,6 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Vectra XDR](../connectors/vectraxdr.md) | Vectra | 6 | [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Veeam | 6 | [Veeam](../solutions/veeam.md) |
 | [VirtualMetric Director Proxy](../connectors/virtualmetricdirectorproxy.md) | VirtualMetric | 1 | [VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
-| [VMRayThreatIntelligence](../connectors/vmray.md) | VMRay | 1 | [VMRay](../solutions/vmray.md) |
 | [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md) ⚠️ | VMware by Broadcom | 4 | [VMware SASE](../solutions/vmware-sase.md) |
 | [WithSecure Elements API (Azure Function)](../connectors/withsecureelementsviafunction.md) | WithSecure | 1 | [WithSecureElementsViaFunction](../solutions/withsecureelementsviafunction.md) |
 | [Wiz](../connectors/wiz.md) 🔶 | Wiz | 6 | [Wiz](../solutions/wiz.md) |
@@ -171,7 +158,6 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |
 | 🚫 [[DEPRECATED] Sophos Endpoint Protection (using Azure Function)](../connectors/sophosep.md) | Sophos | 1 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | 🚫 [[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)](../connectors/vmwarecarbonblack.md) | VMware | 3 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
-| 🚫 [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) | Mimecast | 1 | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
 | 🚫 [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Mimecast | 2 | [MimecastSEG](../solutions/mimecastseg.md) |
 
 ---

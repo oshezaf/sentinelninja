@@ -16,6 +16,31 @@ Reference for SalesforceAuditTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceaudittrail) |
 
+## Schema (18 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceaudittrail)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| Action | string | The action performed. |
+| CreatedByContext | string | The context in which the user made the change. |
+| CreatedByEmail | string | The email of the user who made the change. |
+| CreatedById | string | The ID of the user who made the change. |
+| CreatedByIssuer | string | The issuer of the user's identity. |
+| CreatedByName | string | The name of the user who made the change. |
+| CreatedByUsername | string | The username of the user who made the change. |
+| CreatedDate | datetime | The date and time when the change was made. |
+| DelegateUser | string | The user who delegated the change. |
+| Display | string | A user-friendly display name for the change. |
+| Id | string | The unique identifier for the audit trail entry. |
+| Section | string | The section of the Salesforce setup that was changed. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
+| Type | string | The name of the table |
+
 ---
 
 ---

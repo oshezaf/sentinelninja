@@ -42,7 +42,7 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Microsoft Defender for Identity](../connectors/azureadvancedthreatprotection.md) | Microsoft | 1 | [Microsoft Defender for Identity](../solutions/microsoft-defender-for-identity.md) |
 | [Microsoft Defender for IoT](../connectors/iot.md) | Microsoft | 1 | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) | Microsoft | 1 | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
-| [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) | Microsoft | 3 | [Threat Intelligence](../solutions/threat-intelligence.md) |
+| [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Microsoft Defender XDR](../connectors/microsoftthreatprotection.md) ➕ | Microsoft | 22 | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Microsoft Entra ID](../connectors/azureactivedirectory.md) ➕ | Microsoft | 12 | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Microsoft Entra ID Assets](../connectors/entraidassets.md) | Microsoft | ? | [Microsoft Entra ID Assets](../solutions/microsoft-entra-id-assets.md) |
@@ -50,12 +50,12 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Microsoft PowerBI](../connectors/officepowerbi.md) | Microsoft | 1 | [Microsoft PowerBI](../solutions/microsoft-powerbi.md) |
 | [Microsoft Project](../connectors/office365project.md) | Microsoft | 1 | [Microsoft Project](../solutions/microsoft-project.md) |
 | [Microsoft Purview Information Protection](../connectors/microsoftpurviewinformationprotection.md) ➕ | Microsoft | 1 | [Microsoft Purview Information Protection](../solutions/microsoft-purview-information-protection.md) |
-| [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) | Microsoft | 3 | [Threat Intelligence](../solutions/threat-intelligence.md) |
+| [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Subscription-based Microsoft Defender for Cloud (Legacy)](../connectors/azuresecuritycenter.md) | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) ➕ | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
-| [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Microsoft | 3 | [Threat Intelligence](../solutions/threat-intelligence.md) |
+| [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md) | Microsoft | 1 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
-| [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Microsoft | 4 | [Threat Intelligence](../solutions/threat-intelligence.md) |
+| [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Microsoft | 3 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 
 ---
 

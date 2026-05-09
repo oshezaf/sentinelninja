@@ -8,9 +8,9 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 
 | Resource | Count | Details |
 |:---------|------:|:--------|
-| [Solutions](solutions-index.md) | 526 | 418 with connectors, 420 with content |
-| [Connectors](connectors-index.md) | 613 | Data ingestion methods |
-| [Methods](methods-index.md) | 11 | Data collection methods |
+| [Solutions](solutions-index.md) | 522 | 414 with connectors, 420 with content |
+| [Connectors](connectors-index.md) | 612 | Data ingestion methods |
+| [Methods](methods-index.md) | 15 | Data collection methods |
 | [Tables](tables-index.md) | 1958 | Log Analytics tables |
 | [Content](content/content-index.md) | 6,005 | Analytics, hunting, playbooks, workbooks |
 | [Parsers](parsers/parsers-index.md) | 549 | Non-ASIM KQL functions |

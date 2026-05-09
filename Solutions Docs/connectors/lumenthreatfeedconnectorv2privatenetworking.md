@@ -13,8 +13,9 @@
 | **Connector ID** | `LumenThreatFeedConnectorV2PrivateNetworking` |
 | **Publisher** | Lumen Technologies, Inc. |
 | **Used in Solutions** | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
-| **Collection Method** | [Azure Function](../methods/azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
 | **Connector Definition Files** | [LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/Data%20Connectors/LumenThreatFeedv2/LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json) |
+| **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector code references STIX 2.1 Upload Indicators API endpoint (matched 'api.ti.sentinel.azure.com')* |
 
 The [Lumen Defender Threat Feed](https://www.lumen.com/en-us/security/black-lotus-labs.html) connector provides the capability to ingest STIX-formatted threat intelligence indicators from Lumen's Black Lotus Labs research team into Microsoft Sentinel. The connector automatically downloads and uploads threat intelligence indicators including IPv4 addresses and domains to the ThreatIntelIndicators table via the STIX Objects Upload API.
 
@@ -29,6 +30,7 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | ✓ | ✓ | ? |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) |  | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

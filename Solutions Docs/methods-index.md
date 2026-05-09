@@ -12,24 +12,50 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
-| [CCF](methods/ccf.md) | **150** | 127 | 0 | 23 |
-| [Azure Function](methods/azure-function.md) | **139** | 104 | 27 | 8 |
+| [CCF](methods/ccf.md) | **142** | 119 | 0 | 23 |
+| [Azure Function](methods/azure-function.md) | **125** | 94 | 26 | 5 |
 | [MMA](methods/mma.md) | **109** | 14 | 89 | 6 |
 | [AMA](methods/ama.md) | **58** | 25 | 33 | 0 |
-| [REST Pull API](methods/rest-pull-api.md) | **57** | 52 | 1 | 4 |
+| [REST Pull API](methods/rest-pull-api.md) | **55** | 50 | 1 | 4 |
 | [CCF Push](methods/ccf-push.md) | **34** | 33 | 0 | 1 |
 | [Native](methods/native.md) | **25** | 25 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [CCF (Legacy)](methods/ccf-legacy.md) | **15** | 12 | 1 | 2 |
+| [Azure Function (TI Upload API)|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | **13** | 9 | 1 | 3 |
+| [CCF|Azure Function](methods/ccf-azure-function.md) | **8** | 8 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **8** | 7 | 0 | 1 |
+| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **1** | 1 | 0 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 0 | 0 | 1 |
-| **Total** | **613** | **416** | **151** | **46** |
+| [Azure Function (TI Upload API)|REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md) | **1** | 1 | 0 | 0 |
+| **Total** | **612** | **415** | **151** | **46** |
 
 ---
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+
+## How collection methods are assigned to tables
+
+Each table's `collection_method` is resolved in this order:
+
+1. **ASIM short-circuit** — tables whose name starts with `ASim` (case-insensitive) are classified as **`Various`**, since ASIM is a normalization layer that aggregates events from many heterogeneous sources.
+2. **Intrinsic value** from `tables_reference.csv` (e.g. `AMA` for tables with VM resource types). The shared agent-collected tables — `Syslog`, `CommonSecurityLog`, `SecurityEvent`, and `Event` — are intrinsically classified as **`AMA`** since AMA is the supported modern collection path, even though some legacy connectors that feed them still use MMA.
+3. **Defender XDR override** — tables flagged `source_defender_xdr=Yes` are classified as `Defender`.
+4. **Azure Resources override** — tables in the `Azure Resources` category are classified as `Azure Diagnostics`.
+5. **Inherited from feeding connectors** when all of them use the same atomized method (1:1). Connector `collection_method` values are split on `|` before comparison.
+6. **Published-connector trump** — when feeding connectors disagree but only some are published in the marketplace, the unpublished connectors are dropped from inference. If that yields a single method, it is used.
+7. **Precedence collapse** when feeding connectors still disagree and the disagreement is a known generation overlap. Newer / canonical technology wins:
+
+   | Co-feeding methods | Inferred method |
+   |:-------------------|:----------------|
+   | `AMA` + `MMA` | `AMA` |
+   | `CCF` + `CCF (Legacy)` | `CCF` |
+   | `Azure Function` + `CCF` | `CCF` |
+
+If steps 2–4 produced an intrinsic value that disagrees with what step 5–7 would infer, the intrinsic value wins and the disagreement is logged in the analyzer's exceptions report with `reason=table_method_conflict`. If feeding connectors still disagree after the published-trump filter and precedence collapse, no method is back-propagated and the table is logged with `reason=table_method_ambiguity` (only when no intrinsic value was set).
+
+`tables.csv` records the resolution path on every row via the `collection_method_source`, `collection_method_candidates`, and `feeding_connector_ids` columns.
 
 ---
 
@@ -39,10 +65,14 @@ API-based connectors (CCF Push, Azure Function, REST Pull API, and Custom Log) u
 
 | Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
-| [Azure Function](methods/azure-function.md) | 42 | 87 | 6 | **135** |
+| [Azure Function](methods/azure-function.md) | 42 | 75 | 3 | **120** |
 | [REST Pull API](methods/rest-pull-api.md) | - | 55 | - | **55** |
 | [CCF Push](methods/ccf-push.md) | 34 | - | - | **34** |
-| **Total** | **76** | **142** | **6** | **224** |
+| [Azure Function (TI Upload API)|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | - | - | - | **0** |
+| [CCF|Azure Function](methods/ccf-azure-function.md) | 8 | - | - | **8** |
+| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
+| [Azure Function (TI Upload API)|REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md) | - | - | - | **0** |
+| **Total** | **84** | **130** | **3** | **237** |
 
 ---
 

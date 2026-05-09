@@ -15,9 +15,9 @@
 | **Connector ID** | `CyjaxIOCAPI` |
 | **Publisher** | Cyjax |
 | **Used in Solutions** | [Cyjax](../solutions/cyjax.md) |
-| **Collection Method** | [Azure Function](../methods/azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
 | **Connector Definition Files** | [CyjaxIOC_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyjax/Data%20Connectors/CyjaxIOC_API_FunctionApp.json) |
-| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector code references STIX 2.1 Upload Indicators API endpoint (matched 'api.ti.sentinel.azure.com')* |
 
 The [Cyjax](https://www.cyjax.com/) Threat Intelligence IOC data connector provides the capability to ingest Indicators of Compromise (IOCs) from the Cyjax API v2 into Microsoft Sentinel as STIX 2.1 Threat Intelligence indicators. The connector fetches IOCs including IPs, domains, URLs, file hashes, emails, and hostnames, enriches them with GeoIP, ASN, and sighting data, and uploads them to the Microsoft Sentinel Threat Intelligence platform via the Upload Indicator API.
 
@@ -42,6 +42,7 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `SourceSystem == "Cyjax-IOCs"` | ✓ | ✓ | ? |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) |  | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

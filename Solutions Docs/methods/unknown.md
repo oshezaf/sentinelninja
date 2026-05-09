@@ -34,7 +34,7 @@ The collection method for these connectors could not be automatically determined
 | [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) ⚠️ ➕ | Microsoft | 2 | [SAP](../solutions/sap.md) |
-| [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) | Microsoft | 3 | [Threat Intelligence](../solutions/threat-intelligence.md) |
+| [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 
 ---
 

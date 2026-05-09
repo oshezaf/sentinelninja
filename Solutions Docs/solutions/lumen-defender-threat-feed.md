@@ -38,7 +38,7 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **22 table(s)**:
+This solution uses **23 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -63,6 +63,7 @@ This solution uses **22 table(s)**:
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics, Workbooks |
 | [`SecurityEvent`](../tables/securityevent.md) | - | Analytics |
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics, Workbooks |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md), [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | - |
 | [`WindowsEvent`](../tables/windowsevent.md) | - | Analytics |
 
 ### Internal Tables

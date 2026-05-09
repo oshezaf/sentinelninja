@@ -15,7 +15,6 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (13 columns)
@@ -43,14 +42,6 @@
 This table is used by the following solutions:
 
 - [MimecastAudit](../solutions/mimecastaudit.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) |  |
 
 ---
 

@@ -18,7 +18,7 @@
 | **Publisher** | MarkLogic |
 | **Used in Solutions** | [MarkLogicAudit](../solutions/marklogicaudit.md) |
 | **Collection Method** | [MMA](../methods/mma.md) |
-| **Connector Definition Files** | [Connector_MarkLogicAudit.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MarkLogicAudit/Data%20Connectors/Connector_MarkLogicAudit.json) |
+| **Connector Definition Files** | [Connector_MarkLogicAudit.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MarkLogicAudit/DataConnectors/Connector_MarkLogicAudit.json) |
 
 MarkLogic data connector provides the capability to ingest [MarkLogicAudit](https://www.marklogic.com/) logs into Microsoft Sentinel. Refer to [MarkLogic documentation](https://docs.marklogic.com/guide/getting-started) for more information.
 

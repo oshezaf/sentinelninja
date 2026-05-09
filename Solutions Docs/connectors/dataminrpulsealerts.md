@@ -13,9 +13,9 @@
 | **Connector ID** | `DataminrPulseAlerts` |
 | **Publisher** | Dataminr |
 | **Used in Solutions** | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
-| **Collection Method** | [Azure Function](../methods/azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
 | **Connector Definition Files** | [DataminrPulseAlerts_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Data%20Connectors/DataminrPulseAlerts/DataminrPulseAlerts_FunctionApp.json) |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code uses LogsIngestionClient/Log Ingestion API* |
+| **Ingestion API** | [Log Ingestion API|Sentinel REST createIndicator API](../methods/log-ingestion-api-sentinel-rest-createindicator-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources|Connector code references Sentinel REST createIndicator API endpoint (matched 'threatintelligence/main/createindicator')* |
 
 Dataminr Pulse Alerts Data Connector brings our AI-powered real-time intelligence into Microsoft Sentinel for faster threat detection and response.
 

@@ -40,13 +40,14 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **4 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | - | Analytics |
 | [`DnsEvents`](../tables/dnsevents.md) | - | Analytics |
 | [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | - |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | - | Analytics |
 
 ### Internal Tables

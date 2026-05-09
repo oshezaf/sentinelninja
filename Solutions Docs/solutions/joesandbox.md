@@ -44,7 +44,15 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | - |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | - |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | - |
 
 ## Content Items
 

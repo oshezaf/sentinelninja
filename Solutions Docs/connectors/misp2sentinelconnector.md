@@ -13,8 +13,9 @@
 | **Connector ID** | `MISP2SentinelConnector` |
 | **Publisher** | MISP project & cudeso.be |
 | **Used in Solutions** | [MISP2Sentinel](../solutions/misp2sentinel.md) |
-| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
+| **Collection Method** | [Azure Function (TI Upload API)|REST Pull API](../methods/azure-function-ti-upload-api-rest-pull-api.md) |
 | **Connector Definition Files** | [MISP2SentinelConnector_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel/Data%20Connectors/MISP2SentinelConnector_UploadIndicatorsAPI.json) |
+| **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector definition filename suffix '_UploadIndicatorsAPI' indicates STIX 2.1 Upload Indicators API* |
 
 This solution installs the MISP2Sentinel connector that allows you to automatically push threat indicators from MISP to Microsoft Sentinel via the Upload Indicators REST API. After installing the solution, configure and enable this data connector by following guidance in Manage solution view.
 
@@ -25,6 +26,7 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `SourceSystem == "MISP"` | ✓ | ✓ | ? |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) |  | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

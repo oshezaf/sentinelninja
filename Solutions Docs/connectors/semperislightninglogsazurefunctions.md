@@ -15,7 +15,7 @@
 | **Used in Solutions** | [SemperisLightning](../solutions/semperislightning.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [SemperisLightningLogs_AzureFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SemperisLightning/Data%20Connectors/SemperisLightningLogs/SemperisLightningLogs_AzureFunction.json) |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code uses LogsIngestionClient/Log Ingestion API* |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
 
 The [Semperis Lightning](https://www.semperis.com/platform/) connector uses Azure Functions to ingest Semperis Lightning identity security data into Microsoft Sentinel. The connector deploys an Azure Function and collects data into custom Log Analytics tables for investigation and threat hunting.
 

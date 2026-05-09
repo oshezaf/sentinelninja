@@ -18,8 +18,8 @@ REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **57** |
-| Active | 52 |
+| Total Connectors | **55** |
+| Active | 50 |
 | Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 4 |
 
@@ -44,7 +44,6 @@ REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs 
 | [Cribl](../connectors/cribl.md) 🔶 | Cribl | 4 | [Cribl](../solutions/cribl.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶 | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
-| [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | Orange Cyberdefense | 1 | [Datalake2Sentinel](../solutions/datalake2sentinel.md) |
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |
@@ -59,7 +58,6 @@ REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs 
 | [MailGuard 365](../connectors/mailguard365.md) 🔶 | MailGuard365 | 1 | [MailGuard 365](../solutions/mailguard-365.md) |
 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
-| [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | MISP project & cudeso.be | 1 | [MISP2Sentinel](../solutions/misp2sentinel.md) |
 | [NC Protect](../connectors/nucleuscyberncprotect.md) 🔶 | archTIS | 1 | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |

@@ -15,7 +15,6 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (18 columns)
@@ -48,14 +47,6 @@
 This table is used by the following solutions:
 
 - [Infoblox](../solutions/infoblox.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) |  |
 
 ---
 

@@ -15,7 +15,6 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
-- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (25 columns)
@@ -55,14 +54,6 @@
 This table is used by the following solutions:
 
 - [MimecastTTP](../solutions/mimecastttp.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) |  |
 
 ---
 

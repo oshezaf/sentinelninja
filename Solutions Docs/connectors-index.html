@@ -19,7 +19,7 @@
 <p>Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you to collect security data from various sources into your Log Analytics workspace. Each connector defines how data flows from a source system to Sentinel tables, including the collection method (such as Azure Functions, Diagnostic Settings, or Log Analytics Agent) and the target table schema.</p>
 <p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <strong>Connectors</strong> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="statistics.html">📊</a></p>
 <hr />
-<p><strong>613 unique connectors</strong> (462 active, 151 deprecated). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>612 unique connectors</strong> (461 active, 151 deprecated). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <hr />
 <p>Browse connectors alphabetically:</p>
 <p><strong>Jump to:</strong> <a href="##">#</a> | <a href="#a">A</a> | <a href="#b">B</a> | <a href="#c">C</a> | <a href="#d">D</a> | <a href="#e">E</a> | <a href="#f">F</a> | <a href="#g">G</a> | <a href="#h">H</a> | <a href="#i">I</a> | <a href="#j">J</a> | <a href="#k">K</a> | <a href="#l">L</a> | <a href="#m">M</a> | <a href="#n">N</a> | <a href="#o">O</a> | <a href="#p">P</a> | <a href="#q">Q</a> | <a href="#r">R</a> | <a href="#s">S</a> | <a href="#t">T</a> | <a href="#u">U</a> | <a href="#v">V</a> | <a href="#w">W</a> | <a href="#x">X</a> | <a href="#z">Z</a> | <a href="#deprecated-connectors">Deprecated</a></p>
@@ -71,9 +71,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/azurekid/Azure-Sentinel/master/Logos/1password.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/1passwordccpdefinition.html">1Password (Serverless)</a></td>
 <td style="text-align: left;">1Password</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/1password.html">1Password</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="40" height="40"></td>
@@ -350,9 +350,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/atlassian.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/jiraauditccpdefinition.html">Atlassian Jira Audit (via Codeless Connector Framework)</a></td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Auth0.svg" alt="" width="40" height="40"></td>
@@ -802,19 +802,19 @@
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/cofenseintelligence.html">Cofense Intelligence Threat Indicators Ingestion</a> ⚠️ 🔶</td>
+<td style="text-align: left;"><a href="connectors/cofenseintelligence.html">Cofense Intelligence Threat Indicators Ingestion</a> ⚠️</td>
 <td style="text-align: left;">Cofense</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">2</td>
-<td style="text-align: left;"><a href="solutions/cofenseintelligence.html">CofenseIntelligence</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cofensetriage.html">Cofense Triage Threat Indicators Ingestion</a> ⚠️ 🔶</td>
 <td style="text-align: left;">Cofense</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;"><a href="solutions/cofensetriage.html">CofenseTriage</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">3</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cognni-logo.svg" alt="" width="40" height="40"></td>
@@ -908,9 +908,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a></td>
 <td style="text-align: left;">CrowdStrike</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="40" height="40"></td>
@@ -972,9 +972,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cyberarkauditccpdefinition.html">CyberArk Audit</a></td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/cyberarkaudit.html">CyberArkAudit</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="40" height="40"></td>
@@ -1076,9 +1076,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyjax.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cyjaxiocapi.html">Cyjax Threat Intelligence IOC Connector</a> ⚠️</td>
 <td style="text-align: left;">Cyjax</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/cyjax.html">Cyjax</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cynerio.svg" alt="" width="40" height="40"></td>
@@ -1139,17 +1139,17 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OrangeCyberdefenseLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/datalake2sentinelconnector.html">Datalake2Sentinel</a></td>
 <td style="text-align: left;">Orange Cyberdefense</td>
-<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
-<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/datalake2sentinel.html">Datalake2Sentinel</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DataminrPulse.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/dataminrpulsealerts.html">Dataminr Pulse Alerts Data Connector</a></td>
 <td style="text-align: left;">Dataminr</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/dataminr-pulse.html">Dataminr Pulse</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/datawiza_logo.svg" alt="" width="40" height="40"></td>
@@ -1680,9 +1680,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/greynoise_logomark_black.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
 <td style="text-align: left;">GreyNoise, Inc. and BlueCycle LLC</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 </tbody>
 </table>
@@ -1790,9 +1790,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/IllumioLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/illumiosaasccfdefinition.html">Illumio Saas</a> 🔍</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/illumiosaas.html">IllumioSaaS</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="" width="40" height="40"></td>
@@ -1820,11 +1820,11 @@
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a> 🔶</td>
+<td style="text-align: left;"><a href="connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
 <td style="text-align: left;">Infoblox</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">18</td>
-<td style="text-align: left;"><a href="solutions/infoblox.html">Infoblox</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="40" height="40"></td>
@@ -2069,9 +2069,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/joesandbox.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/joesandbox.html">JoeSandboxThreatIntelligence</a></td>
 <td style="text-align: left;">Joe Security LLC</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/joesandbox.html">JoeSandbox</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 </tbody>
 </table>
@@ -2147,25 +2147,25 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/lumenthreatfeedconnectorv2.html">Lumen Defender Threat Feed Data Connector V2</a></td>
 <td style="text-align: left;">Lumen Technologies, Inc.</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/lumenthreatfeedconnectorv2privatenetworking.html">Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)</a></td>
 <td style="text-align: left;">Lumen Technologies, Inc.</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CognyteLuminar.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cognyteluminar.html">Luminar IOCs and Leaked Credentials</a></td>
 <td style="text-align: left;">Cognyte Technologies Israel Ltd</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/cognyteluminar.html">CognyteLuminar</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 </tbody>
 </table>
@@ -2291,8 +2291,8 @@
 <td style="text-align: left;"><a href="connectors/microsoftdefenderthreatintelligence.html">Microsoft Defender Threat Intelligence</a></td>
 <td style="text-align: left;">Microsoft</td>
 <td style="text-align: left;"><a href="methods/native.html">Native</a></td>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;"><a href="solutions/threat-intelligence.html">Threat Intelligence</a></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
@@ -2416,10 +2416,10 @@
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/mimecastauditapi.html">Mimecast Audit</a> 🔶</td>
+<td style="text-align: left;"><a href="connectors/mimecastauditapi.html">Mimecast Audit</a></td>
 <td style="text-align: left;">Mimecast</td>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/mimecast.html">Mimecast</a></td>
 </tr>
 <tr>
@@ -2448,10 +2448,10 @@
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a> 🔶</td>
+<td style="text-align: left;"><a href="connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a></td>
 <td style="text-align: left;">Mimecast</td>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">6</td>
+<td style="text-align: center;">3</td>
 <td style="text-align: left;"><a href="solutions/mimecast.html">Mimecast</a></td>
 </tr>
 <tr>
@@ -2474,9 +2474,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/misp-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/misp2sentinelconnector.html">MISP2Sentinel</a></td>
 <td style="text-align: left;">MISP project &amp; cudeso.be</td>
-<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/misp2sentinel.html">MISP2Sentinel</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/MongoDBAtlas/Data%20Connectors/Logos/mongodb.svg" alt="" width="40" height="40"></td>
@@ -2736,17 +2736,17 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/oci-connector-ccp-definition.html">Oracle Cloud Infrastructure (via CCP) – Preview</a> 🔍 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/oraclecloudinfraconnector.html">Oracle Cloud Infrastructure (via Codeless Connector Framework)</a> 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OrcaSecurity.svg" alt="" width="40" height="40"></td>
@@ -2872,8 +2872,8 @@
 <td style="text-align: left;"><a href="connectors/premiummicrosoftdefenderforthreatintelligence.html">Premium Microsoft Defender Threat Intelligence</a></td>
 <td style="text-align: left;">Microsoft</td>
 <td style="text-align: left;"><a href="methods/native.html">Native</a></td>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;"><a href="solutions/threat-intelligence.html">Threat Intelligence</a></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/PFPTLogo.svg" alt="" width="40" height="40"></td>
@@ -3044,9 +3044,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a> 🔍</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">2</td>
-<td style="text-align: left;"><a href="solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Samsung_Knox_Asset_Intelligence.svg" alt="" width="40" height="40"></td>
@@ -3217,14 +3217,6 @@
 <td style="text-align: left;"><a href="solutions/slackaudit.html">SlackAudit</a></td>
 </tr>
 <tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/slashnext-logo.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/slashnextfunctionapp.html">SlashNext Function App</a> 🔶</td>
-<td style="text-align: left;">SlashNext</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">2</td>
-<td style="text-align: left;"><a href="solutions/slashnext.html">SlashNext</a></td>
-</tr>
-<tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/snowflakelogsccpdefinition.html">Snowflake (via Codeless Connector Framework)</a></td>
 <td style="text-align: left;">Microsoft</td>
@@ -3260,9 +3252,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/sophosendpointprotectionccpdefinition.html">Sophos Endpoint Protection (via Codeless Connector Platform)</a></td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: center;">2</td>
-<td style="text-align: left;"><a href="solutions/sophos-endpoint-protection.html">Sophos Endpoint Protection</a></td>
+<td style="text-align: left;">[CCF</td>
+<td style="text-align: center;">Azure Function](methods/ccf-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SquadraTechnologiesLogo.svg" alt="" width="40" height="40"></td>
@@ -3436,8 +3428,8 @@
 <td style="text-align: left;"><a href="connectors/threatintelligencetaxii.html">Threat intelligence - TAXII</a></td>
 <td style="text-align: left;">Microsoft</td>
 <td style="text-align: left;"><a href="methods/native.html">Native</a></td>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;"><a href="solutions/threat-intelligence.html">Threat Intelligence</a></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
@@ -3452,16 +3444,16 @@
 <td style="text-align: left;"><a href="connectors/threatintelligence.html">Threat Intelligence Platforms</a></td>
 <td style="text-align: left;">Microsoft</td>
 <td style="text-align: left;"><a href="methods/native.html">Native</a></td>
-<td style="text-align: center;">4</td>
-<td style="text-align: left;"><a href="solutions/threat-intelligence.html">Threat Intelligence</a></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"><a href="solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/threatintelligenceuploadindicatorsapi.html">Threat Intelligence Upload API (Preview)</a> 🔍</td>
 <td style="text-align: left;">Microsoft</td>
 <td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;"><a href="solutions/threat-intelligence.html">Threat Intelligence</a></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/Logos/Transmit_Security_Logo.svg" alt="" width="40" height="40"></td>
@@ -3649,9 +3641,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vmray.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/vmray.html">VMRayThreatIntelligence</a></td>
 <td style="text-align: left;">VMRay</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/vmray.html">VMRay</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">2</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
@@ -5326,9 +5318,9 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;">🚫 <a href="connectors/mimecasttiregionalconnectorazurefunctions.html">Mimecast Intelligence for Microsoft - Microsoft Sentinel</a></td>
 <td style="text-align: left;">Mimecast</td>
-<td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/mimecasttiregional.html">MimecastTIRegional</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
+<td style="text-align: center;">Azure Function](methods/azure-function-ti-upload-api-azure-function.md)</td>
+<td style="text-align: left;">1</td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"></td>

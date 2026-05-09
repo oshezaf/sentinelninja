@@ -42,11 +42,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;">[Azure Function (TI Upload API)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Connector Definition Files</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/Data%20Connectors/LumenThreatFeedv2/LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json">LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/stix-2.1-upload-indicators-api.html">STIX 2.1 Upload Indicators API</a> — <em>Connector code references STIX 2.1 Upload Indicators API endpoint (matched 'api.ti.sentinel.azure.com')</em></td>
 </tr>
 </tbody>
 </table>
@@ -68,6 +72,13 @@
 <tr>
 <td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
 <td style="text-align: left;"><code>ObservableKey in "domain-name:value,ipv4-addr:value"</code><br><code>SourceSystem == "Lumen"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelobjects.html"><code>ThreatIntelObjects</code></a></td>
+<td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>

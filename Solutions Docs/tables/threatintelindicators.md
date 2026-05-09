@@ -59,7 +59,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | ValidUntil | datetime | The time at which this indicator should no longer be considered a valid indicator of the bahviors it is related to or represents. |
 | WorkspaceId | string | The workspace that submitted the indicator. |
 
-## Solutions (17)
+## Solutions (21)
 
 This table is used by the following solutions:
 
@@ -69,10 +69,13 @@ This table is used by the following solutions:
 - [Cyjax](../solutions/cyjax.md)
 - [DNS Essentials](../solutions/dns-essentials.md)
 - [DORA Compliance](../solutions/dora-compliance.md)
+- [Datalake2Sentinel](../solutions/datalake2sentinel.md)
 - [Global Secure Access](../solutions/global-secure-access.md)
 - [Google Threat Intelligence](../solutions/google-threat-intelligence.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [HIPAA Compliance](../solutions/hipaa-compliance.md)
+- [Infoblox](../solutions/infoblox.md)
+- [JoeSandbox](../solutions/joesandbox.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MISP2Sentinel](../solutions/misp2sentinel.md)
 - [Recorded Future](../solutions/recorded-future.md)
@@ -80,8 +83,9 @@ This table is used by the following solutions:
 - [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
+- [VMRay](../solutions/vmray.md)
 
-## Connectors (11)
+## Connectors (15)
 
 This table is ingested by the following connectors:
 
@@ -89,7 +93,10 @@ This table is ingested by the following connectors:
 |:----------|:-------------------|
 | [CrowdStrike Falcon Adversary Intelligence ](../connectors/crowdstrikefalconadversaryintelligence.md) | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` |
 | [Cyjax Threat Intelligence IOC Connector](../connectors/cyjaxiocapi.md) | `SourceSystem == "Cyjax-IOCs"` |
+| [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) |  |
 | [GreyNoise Threat Intelligence](../connectors/greynoise2sentinelapi.md) | `SourceSystem == "GreyNoise"` |
+| [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) |  |
+| [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) |  |
 | [Lumen Defender Threat Feed Data Connector V2](../connectors/lumenthreatfeedconnectorv2.md) | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` |
 | [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | `SourceSystem == "MISP"` |
@@ -98,6 +105,7 @@ This table is ingested by the following connectors:
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) |  |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) |  |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) |  |
+| [VMRayThreatIntelligence](../connectors/vmray.md) |  |
 
 ---
 
@@ -345,15 +353,15 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey == "domain-name:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "ipv4-addr:value"` | - | 3 | - | - | **3** |
 | `ObservableKey == "url:value"` | - | 3 | - | - | **3** |
-| `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
 | `ObservableKey in "domain-name:value,ipv4-addr:value"`<br>`SourceSystem == "Lumen"` | 2 | - | - | - | **2** |
+| `SourceSystem == "GreyNoise"` | 1 | 1 | - | - | **2** |
 | `ObservableKey == "domain-name:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
-| `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
-| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
 | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
+| `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
+| `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
 | **Total** | **6** | **20** | **0** | **0** | **26** |
@@ -374,11 +382,11 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
-| `GreyNoise` | 1 | 1 | - | - | **2** |
 | `Lumen` | 2 | - | - | - | **2** |
-| `Cyjax-IOCs` | 1 | - | - | - | **1** |
-| `MISP` | 1 | - | - | - | **1** |
+| `GreyNoise` | 1 | 1 | - | - | **2** |
 | `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
+| `MISP` | 1 | - | - | - | **1** |
+| `Cyjax-IOCs` | 1 | - | - | - | **1** |
 
 ---
 

@@ -96,7 +96,7 @@ Reference for ThreatIntelligenceIndicator table in Azure Monitor Logs.
 | Url | string | The url observable. |
 | UserAgent | string | The user agent observable. |
 
-## Solutions (26)
+## Solutions (23)
 
 This table is used by the following solutions:
 
@@ -104,12 +104,10 @@ This table is used by the following solutions:
 - [CofenseTriage](../solutions/cofensetriage.md)
 - [CognyteLuminar](../solutions/cognyteluminar.md)
 - [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md)
-- [Datalake2Sentinel](../solutions/datalake2sentinel.md)
 - [Forcepoint NGFW](../solutions/forcepoint-ngfw.md)
 - [GitLab](../solutions/gitlab.md)
 - [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md)
 - [Infoblox Cloud Data Connector](../solutions/infoblox-cloud-data-connector.md)
-- [JoeSandbox](../solutions/joesandbox.md)
 - [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Business Applications](../solutions/microsoft-business-applications.md)
@@ -123,11 +121,10 @@ This table is used by the following solutions:
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [ThreatConnect](../solutions/threatconnect.md)
 - [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md)
-- [VMRay](../solutions/vmray.md)
 - [Web Session Essentials](../solutions/web-session-essentials.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
-## Connectors (12)
+## Connectors (4)
 
 This table is ingested by the following connectors:
 
@@ -136,15 +133,7 @@ This table is ingested by the following connectors:
 | [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) | `SourceSystem startswith "Cofense Intelligence :"` |
 | [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) | `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` |
 | [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md) | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` |
-| [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | `SourceSystem == "Datalake - OrangeCyberdefense"` |
-| [JoeSandboxThreatIntelligence](../connectors/joesandbox.md) | `SourceSystem !contains "JoeSandbox"`<br>`SourceSystem contains "JoeSandbox"` |
-| [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) |  |
 | [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) |  |
-| [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) |  |
-| [Threat Intelligence Platforms](../connectors/threatintelligence.md) | `ThreatType == "DDoS"` |
-| [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) |  |
-| [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) |  |
-| [VMRayThreatIntelligence](../connectors/vmray.md) | `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` |
 
 ---
 
@@ -371,43 +360,28 @@ This table is ingested by the following connectors:
 |:-------|:---------|:-------------------|
 | [CymruScoutCorrelate](../parsers/cymruscoutcorrelate.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) |  |
 
-## Selection Criteria Summary (8 criteria, 8 total references)
+## Selection Criteria Summary (4 criteria, 4 total references)
 
-References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 3 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ThreatType == "DDoS"` | 1 | - | - | - | **1** |
-| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
-| `SourceSystem !contains "JoeSandbox"`<br>`SourceSystem contains "JoeSandbox"` | 1 | - | - | - | **1** |
 | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
-| `SourceSystem == "Datalake - OrangeCyberdefense"` | 1 | - | - | - | **1** |
-| `SourceSystem !contains "VMRay"`<br>`SourceSystem contains "VMRay"` | 1 | - | - | - | **1** |
+| `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
 | `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
-| **Total** | **7** | **1** | **0** | **0** | **8** |
+| **Total** | **3** | **1** | **0** | **0** | **4** |
 
 ### SourceSystem
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!startswith Cofense :` | 1 | - | - | - | **1** |
-| `startswith Cofense :` | 1 | - | - | - | **1** |
-| `!contains JoeSandbox` | 1 | - | - | - | **1** |
-| `contains JoeSandbox` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
-| `Datalake - OrangeCyberdefense` | 1 | - | - | - | **1** |
-| `!contains VMRay` | 1 | - | - | - | **1** |
-| `contains VMRay` | 1 | - | - | - | **1** |
+| `!startswith Cofense :` | 1 | - | - | - | **1** |
+| `startswith Cofense :` | 1 | - | - | - | **1** |
 | `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
-
-### ThreatType
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `DDoS` | 1 | - | - | - | **1** |
 
 ---
 

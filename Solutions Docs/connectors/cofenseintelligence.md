@@ -15,10 +15,9 @@
 | **Connector ID** | `CofenseIntelligence` |
 | **Publisher** | Cofense |
 | **Used in Solutions** | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
-| **Collection Method** | [Azure Function](../methods/azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
 | **Connector Definition Files** | [CofenseIntelligence_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence/Data%20Connectors/CofenseIntelligenceDataConnector/CofenseIntelligence_API_FunctionApp.json) |
-| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Ingestion API** | [Sentinel REST createIndicator API](../methods/sentinel-rest-createindicator-api.md) — *Connector code references Sentinel REST createIndicator API endpoint (matched 'threatintelligence/main/createindicator')* |
 
 The [Cofense-Intelligence](https://cofense.com/product-services/phishing-intelligence/) data connector provides the following capabilities: 
 
@@ -66,7 +65,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Malware_Data_CL`](../tables/malware-data-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`Malware_Data_CL`](../tables/malware-data-cl.md) |  | ? | ✓ | ? |
 | [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | `SourceSystem startswith "Cofense Intelligence :"` | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

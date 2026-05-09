@@ -42,7 +42,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 This solution provides **5 data connector(s)**:
 
 - [[Recommended] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md)
-- [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) 🔶
+- [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md)
 - [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md)
 - [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) 🔶
 - [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md)
@@ -52,36 +52,35 @@ This solution provides **5 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **22 table(s)**:
+This solution uses **21 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent](../connectors/infobloxsocinsightsdataconnector-legacy.md), [[Recommended] Infoblox Cloud Data Connector via AMA](../connectors/infobloxclouddataconnectorama.md), [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md) | Analytics, Playbooks, Workbooks |
-| [`Failed_Range_To_Ingest_CL`](../tables/failed-range-to-ingest-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
 | [`Host_Name_Info_CL`](../tables/host-name-info-cl.md) 🔶 | - | Workbooks |
 | [`IP_Space_Info_CL`](../tables/ip-space-info-cl.md) 🔶 | - | Workbooks |
-| [`Infoblox_Failed_Indicators_CL`](../tables/infoblox-failed-indicators-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
 | [`Service_Name_Info_CL`](../tables/service-name-info-cl.md) 🔶 | - | Workbooks |
-| [`dossier_atp_CL`](../tables/dossier-atp-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_dns_CL`](../tables/dossier-dns-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_geo_CL`](../tables/dossier-geo-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_inforank_CL`](../tables/dossier-inforank-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_ptr_CL`](../tables/dossier-ptr-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
-| [`dossier_whois_CL`](../tables/dossier-whois-cl.md) 🔶 | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | Workbooks |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
+| [`dossier_atp_CL`](../tables/dossier-atp-cl.md) 🔶 | - | Workbooks |
+| [`dossier_atp_threat_CL`](../tables/dossier-atp-threat-cl.md) 🔶 | - | Workbooks |
+| [`dossier_dns_CL`](../tables/dossier-dns-cl.md) 🔶 | - | Workbooks |
+| [`dossier_geo_CL`](../tables/dossier-geo-cl.md) 🔶 | - | Workbooks |
+| [`dossier_infoblox_web_cat_CL`](../tables/dossier-infoblox-web-cat-cl.md) 🔶 | - | Workbooks |
+| [`dossier_inforank_CL`](../tables/dossier-inforank-cl.md) 🔶 | - | Workbooks |
+| [`dossier_malware_analysis_v3_CL`](../tables/dossier-malware-analysis-v3-cl.md) 🔶 | - | Workbooks |
+| [`dossier_nameserver_CL`](../tables/dossier-nameserver-cl.md) 🔶 | - | Workbooks |
+| [`dossier_nameserver_matches_CL`](../tables/dossier-nameserver-matches-cl.md) 🔶 | - | Workbooks |
+| [`dossier_ptr_CL`](../tables/dossier-ptr-cl.md) 🔶 | - | Workbooks |
+| [`dossier_rpz_feeds_CL`](../tables/dossier-rpz-feeds-cl.md) 🔶 | - | Workbooks |
+| [`dossier_rpz_feeds_records_CL`](../tables/dossier-rpz-feeds-records-cl.md) 🔶 | - | Workbooks |
+| [`dossier_threat_actor_CL`](../tables/dossier-threat-actor-cl.md) 🔶 | - | Workbooks |
+| [`dossier_tld_risk_CL`](../tables/dossier-tld-risk-cl.md) 🔶 | - | Workbooks |
+| [`dossier_whitelist_CL`](../tables/dossier-whitelist-cl.md) 🔶 | - | Workbooks |
+| [`dossier_whois_CL`](../tables/dossier-whois-cl.md) 🔶 | - | Workbooks |
 
 ### Internal Tables
 
-The following **8 table(s)** are used internally by this solution's content items:
+The following **9 table(s)** are used internally by this solution's content items:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -92,6 +91,7 @@ The following **8 table(s)** are used internally by this solution's content item
 | [`InfobloxInsight_CL`](../tables/infobloxinsight-cl.md) 🔶 | [Infoblox SOC Insight Data Connector via REST API](../connectors/infobloxsocinsightsdataconnector-api.md) | Analytics, Playbooks (writes), Workbooks |
 | [`SecurityAlert`](../tables/securityalert.md) | - | Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Infoblox Data Connector via REST API](../connectors/infobloxdataconnector.md) | - |
 | [`tide_lookup_data_CL`](../tables/tide-lookup-data-cl.md) 🔶 | - | Playbooks (writes), Workbooks |
 
 

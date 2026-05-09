@@ -14,7 +14,7 @@
 | **Publisher** | CyberArk |
 | **Used in Solutions** | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
-| **Connector Definition Files** | [CyberArkEPM_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Data%20Connectors/CyberArkEPM_API_FunctionApp.json) |
+| **Connector Definition Files** | [CyberArkEPM_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/DataConnectors/CyberArkEPM_API_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 

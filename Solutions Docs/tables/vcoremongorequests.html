@@ -52,7 +52,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (23 columns)</h2>
+<h2 id="schema">Schema (25 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -129,6 +129,11 @@
 <td style="text-align: left;">Full text query for this Mongo (vCore) request.</td>
 </tr>
 <tr>
+<td style="text-align: left;">ReadRequest</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The server-side read request latency for this request.</td>
+</tr>
+<tr>
 <td style="text-align: left;">RegionName</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The region against which this request was issued.</td>
@@ -177,6 +182,11 @@
 <td style="text-align: left;">UserId</td>
 <td style="text-align: left;">string</td>
 <td style="text-align: left;">The user id associated with the client issuing the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WriteResponse</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The server-side write request latency for this request.</td>
 </tr>
 </tbody>
 </table>

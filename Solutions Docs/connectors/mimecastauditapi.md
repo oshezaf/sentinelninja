@@ -12,11 +12,10 @@
 |:----------|:------|
 | **Connector ID** | `MimecastAuditAPI` |
 | **Publisher** | Mimecast |
-| **Used in Solutions** | [Mimecast](../solutions/mimecast.md), [MimecastAudit](../solutions/mimecastaudit.md) |
+| **Used in Solutions** | [Mimecast](../solutions/mimecast.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Mimecast_Audit_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Data%20Connectors/MimecastAudit/Mimecast_Audit_FunctionApp.json) |
-| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code uses LogsIngestionClient/Log Ingestion API* |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
 
 The data connector for [Mimecast Audit](https://integrations.mimecast.com/tech-partners/microsoft-sentinel/) provides customers with the visibility into security events related to audit and authentication events within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into user activity, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities.  
 
@@ -33,7 +32,6 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`Audit_CL`](../tables/audit-cl.md) | ? | ✓ | ? |
-| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

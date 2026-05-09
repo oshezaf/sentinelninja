@@ -397,19 +397,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (26)</h2>
+<h2 id="solutions">Solutions (23)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a></li>
 <li><a href="../solutions/cofensetriage.html">CofenseTriage</a></li>
 <li><a href="../solutions/cognyteluminar.html">CognyteLuminar</a></li>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
-<li><a href="../solutions/datalake2sentinel.html">Datalake2Sentinel</a></li>
 <li><a href="../solutions/forcepoint-ngfw.html">Forcepoint NGFW</a></li>
 <li><a href="../solutions/gitlab.html">GitLab</a></li>
 <li><a href="../solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a></li>
 <li><a href="../solutions/infoblox-cloud-data-connector.html">Infoblox Cloud Data Connector</a></li>
-<li><a href="../solutions/joesandbox.html">JoeSandbox</a></li>
 <li><a href="../solutions/lastpass-enterprise-activity-monitoring.html">Lastpass Enterprise Activity Monitoring</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a></li>
@@ -423,11 +421,10 @@
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threatconnect.html">ThreatConnect</a></li>
 <li><a href="../solutions/ubiquiti-unifi.html">Ubiquiti UniFi</a></li>
-<li><a href="../solutions/vmray.html">VMRay</a></li>
 <li><a href="../solutions/web-session-essentials.html">Web Session Essentials</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
-<h2 id="connectors">Connectors (12)</h2>
+<h2 id="connectors">Connectors (4)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -450,40 +447,8 @@
 <td style="text-align: left;"><code>SourceSystem !contains "Luminar"</code><br><code>SourceSystem contains "Luminar"</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/datalake2sentinelconnector.html">Datalake2Sentinel</a></td>
-<td style="text-align: left;"><code>SourceSystem == "Datalake - OrangeCyberdefense"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/joesandbox.html">JoeSandboxThreatIntelligence</a></td>
-<td style="text-align: left;"><code>SourceSystem !contains "JoeSandbox"</code><br><code>SourceSystem contains "JoeSandbox"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/microsoftdefenderthreatintelligence.html">Microsoft Defender Threat Intelligence</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="../connectors/mimecasttiregionalconnectorazurefunctions.html">Mimecast Intelligence for Microsoft - Microsoft Sentinel</a></td>
 <td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/premiummicrosoftdefenderforthreatintelligence.html">Premium Microsoft Defender Threat Intelligence</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/threatintelligence.html">Threat Intelligence Platforms</a></td>
-<td style="text-align: left;"><code>ThreatType == "DDoS"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/threatintelligencetaxii.html">Threat intelligence - TAXII</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/threatintelligenceuploadindicatorsapi.html">Threat Intelligence Upload API (Preview)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../connectors/vmray.html">VMRayThreatIntelligence</a></td>
-<td style="text-align: left;"><code>SourceSystem !contains "VMRay"</code><br><code>SourceSystem contains "VMRay"</code></td>
 </tr>
 </tbody>
 </table>
@@ -1129,8 +1094,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (8 criteria, 8 total references)</h2>
-<p>References by type: 7 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (4 criteria, 4 total references)</h2>
+<p>References by type: 3 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1144,30 +1109,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>ThreatType == "DDoS"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>SourceSystem !startswith "Cofense :"</code><br><code>SourceSystem startswith "Cofense :"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>SourceSystem !contains "JoeSandbox"</code><br><code>SourceSystem contains "JoeSandbox"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>SourceSystem !contains "Luminar"</code><br><code>SourceSystem contains "Luminar"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1176,15 +1117,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SourceSystem == "Datalake - OrangeCyberdefense"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>SourceSystem !contains "VMRay"</code><br><code>SourceSystem contains "VMRay"</code></td>
+<td style="text-align: left;"><code>SourceSystem !startswith "Cofense :"</code><br><code>SourceSystem startswith "Cofense :"</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1209,11 +1142,11 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>7</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 <td style="text-align: center;"><strong>1</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1231,38 +1164,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!startswith Cofense :</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>startswith Cofense :</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>!contains JoeSandbox</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains JoeSandbox</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
 <td style="text-align: left;"><code>!contains Luminar</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
@@ -1279,7 +1180,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Datalake - OrangeCyberdefense</code></td>
+<td style="text-align: left;"><code>!startswith Cofense :</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1287,15 +1188,7 @@
 <td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!contains VMRay</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>contains VMRay</code></td>
+<td style="text-align: left;"><code>startswith Cofense :</code></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
@@ -1314,29 +1207,6 @@
 <td style="text-align: left;"><code>Cofense Intelligence</code></td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="threattype">ThreatType</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>DDoS</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>1</strong></td>

@@ -16,7 +16,7 @@ Reference for VCoreMongoRequests table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests) |
 
-## Schema (23 columns)
+## Schema (25 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vcoremongorequests)
 
@@ -35,6 +35,7 @@ Reference for VCoreMongoRequests table in Azure Monitor Logs.
 | ErrorCode | int | The error code (if applicable) for this request. |
 | OperationName | string | The Mongo (vCore) operation that was executed. |
 | PiiCommandText | string | Full text query for this Mongo (vCore) request. |
+| ReadRequest | string | The server-side read request latency for this request. |
 | RegionName | string | The region against which this request was issued. |
 | RequestLength | real | The payload size (in bytes) of the request. |
 | ResponseLength | real | The payload size (in bytes) of the server response. |
@@ -45,6 +46,7 @@ Reference for VCoreMongoRequests table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UserAgent | string | The user agent suffix associated with the client issuing the request. |
 | UserId | string | The user id associated with the client issuing the request. |
+| WriteResponse | string | The server-side write request latency for this request. |
 
 ---
 

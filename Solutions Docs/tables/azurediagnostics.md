@@ -199,7 +199,7 @@ Reference for AzureDiagnostics table in Azure Monitor Logs.
 | server_principal_sid_s | String |  |
 | session_id_d | Double |  |
 
-## Solutions (35)
+## Solutions (34)
 
 This table is used by the following solutions:
 
@@ -231,7 +231,6 @@ This table is used by the following solutions:
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
-- [SlashNext](../solutions/slashnext.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
@@ -239,7 +238,7 @@ This table is used by the following solutions:
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 - [Zinc Open Source](../solutions/zinc-open-source.md)
 
-## Connectors (15)
+## Connectors (14)
 
 This table is ingested by the following connectors:
 
@@ -258,7 +257,6 @@ This table is ingested by the following connectors:
 | [Azure SQL Databases](../connectors/azuresql.md) | `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"`<br>`ResourceType == "SERVERS/DATABASES"` |
 | [Azure Stream Analytics](../connectors/azurestreamanalytics-ccp.md) | `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` |
 | [Azure DDoS Protection](../connectors/ddos.md) | `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` |
-| [SlashNext Function App](../connectors/slashnextfunctionapp.md) | `Resource == "SlashnextFunctionApp"` |
 | [Azure Web Application Firewall (WAF)](../connectors/waf.md) | `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"`<br>`action_s == "Blocked"` |
 
 ---
@@ -538,9 +536,9 @@ This table is ingested by the following connectors:
 | [AzureFirewallApplicationRule](../parsers/azurefirewallapplicationrule.md) | *(Legacy)* |  |
 | [AzureFirewallNetworkRule](../parsers/azurefirewallnetworkrule.md) | *(Legacy)* | `Category == "AzureFirewallNetworkRule"` |
 
-## Selection Criteria Summary (42 criteria, 77 total references)
+## Selection Criteria Summary (41 criteria, 76 total references)
 
-References by type: 15 connectors, 61 content items, 0 ASIM parsers, 1 other parsers.
+References by type: 14 connectors, 61 content items, 0 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -555,20 +553,19 @@ References by type: 15 connectors, 61 content items, 0 ASIM parsers, 1 other par
 | `Category == "AzureFirewallNetworkRule"` | - | 1 | - | 1 | **2** |
 | `ResourceType == "APPLICATIONGATEWAYS"` | - | 2 | - | - | **2** |
 | `Category in "NetworkSecurityGroupEvent,kube-audit"`<br>`Category contains "SQL"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"` | - | 2 | - | - | **2** |
-| `Resource == "SlashnextFunctionApp"` | 1 | - | - | - | **1** |
-| `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.BATCH"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.SERVICEBUS"` | 1 | - | - | - | **1** |
 | `Category in "cluster-autoscaler,guard,kube-apiserver,kube-audit,kube-audit-admin,kube-controller-manager,kube-scheduler"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.EVENTHUB"` | 1 | - | - | - | **1** |
-| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"`<br>`action_s == "Blocked"` | 1 | - | - | - | **1** |
-| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
 | `ResourceProvider == "MICROSOFT.SEARCH"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | 1 | - | - | - | **1** |
-| `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.BATCH"` | 1 | - | - | - | **1** |
+| `ResourceType in "APPLICATIONGATEWAYS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS"`<br>`action_s == "Blocked"` | 1 | - | - | - | **1** |
 | `Category in "AutomaticTuning,Basic,Blocks,DatabaseWaitStatistics,Deadlocks,DevOpsOperationsAudit,Errors,InstanceAndAppAdvanced,QueryStoreWaitStatistics,SQLInsights,SQLSecurityAuditEvents,Timeouts,WorkloadManagement"`<br>`Category contains "SQLSecurityAuditEvents"`<br>`ResourceProvider == "MICROSOFT.SQL"`<br>`ResourceType == "SERVERS/DATABASES"` | 1 | - | - | - | **1** |
+| `ResourceType == "AZUREFIREWALLS"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.SERVICEBUS"` | 1 | - | - | - | **1** |
 | `Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.STREAMANALYTICS"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.EVENTHUB"` | 1 | - | - | - | **1** |
+| `Category == "DDoSMitigationReports"`<br>`ResourceType == "PUBLICIPADDRESSES"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.KEYVAULT"` | 1 | - | - | - | **1** |
+| `ResourceProvider == "MICROSOFT.DATALAKESTORE"` | 1 | - | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,FrontdoorWebApplicationFirewallLog"`<br>`ResourceProvider == "MICROSOFT.NETWORK"` | - | 1 | - | - | **1** |
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule"`<br>`ResourceType == "AZUREFIREWALLS"` | - | 1 | - | - | **1** |
 | `Category == "kube-audit"`<br>`Resource == "ClusterRoleBinding"` | - | 1 | - | - | **1** |
@@ -586,7 +583,7 @@ References by type: 15 connectors, 61 content items, 0 ASIM parsers, 1 other par
 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Web Category:"` | - | 1 | - | - | **1** |
 | `ResourceType == "PUBLICIPADDRESSES"` | - | 1 | - | - | **1** |
 | `Category in "ApplicationGatewayFirewallLog,AzureFirewallApplicationRule,AzureFirewallDnsProxy,AzureFirewallNetworkRule,DDoSMitigationReports,FrontdoorWebApplicationFirewallLog,NetworkSecurityGroupEvent,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider == "MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Url"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Url"`<br>`msg_s has "Web Category:"` | - | 1 | - | - | **1** |
-| **Total** | **15** | **61** | **0** | **1** | **77** |
+| **Total** | **14** | **61** | **0** | **1** | **76** |
 
 ### Category
 
@@ -654,7 +651,6 @@ References by type: 15 connectors, 61 content items, 0 ASIM parsers, 1 other par
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `{Resource:label}` | - | 2 | - | - | **2** |
 | `SOC-NS-AG-WAFV2` | - | 2 | - | - | **2** |
-| `SlashnextFunctionApp` | 1 | - | - | - | **1** |
 | `ClusterRoleBinding` | - | 1 | - | - | **1** |
 | `clusterrolebindings` | - | 1 | - | - | **1** |
 | `events` | - | 1 | - | - | **1** |
@@ -668,12 +664,12 @@ References by type: 15 connectors, 61 content items, 0 ASIM parsers, 1 other par
 | `MICROSOFT.KEYVAULT` | 1 | 5 | - | - | **6** |
 | `MICROSOFT.SQL` | 1 | 2 | - | - | **3** |
 | `MICROSOFT.LOGIC` | 1 | 1 | - | - | **2** |
+| `MICROSOFT.SEARCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.BATCH` | 1 | - | - | - | **1** |
 | `MICROSOFT.SERVICEBUS` | 1 | - | - | - | **1** |
-| `MICROSOFT.EVENTHUB` | 1 | - | - | - | **1** |
-| `MICROSOFT.SEARCH` | 1 | - | - | - | **1** |
-| `MICROSOFT.DATALAKESTORE` | 1 | - | - | - | **1** |
 | `MICROSOFT.STREAMANALYTICS` | 1 | - | - | - | **1** |
+| `MICROSOFT.EVENTHUB` | 1 | - | - | - | **1** |
+| `MICROSOFT.DATALAKESTORE` | 1 | - | - | - | **1** |
 | `MICROSOFT.NETWORK` | - | 1 | - | - | **1** |
 | `MICROSOFT.CONTAINERSERVICE` | - | 1 | - | - | **1** |
 
@@ -681,8 +677,8 @@ References by type: 15 connectors, 61 content items, 0 ASIM parsers, 1 other par
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `AZUREFIREWALLS` | 1 | 7 | - | - | **8** |
 | `APPLICATIONGATEWAYS` | 1 | 7 | - | - | **8** |
+| `AZUREFIREWALLS` | 1 | 7 | - | - | **8** |
 | `PUBLICIPADDRESSES` | 1 | 7 | - | - | **8** |
 | `VAULTS` | - | 8 | - | - | **8** |
 | `CDNWEBAPPLICATIONFIREWALLPOLICIES` | 1 | 4 | - | - | **5** |

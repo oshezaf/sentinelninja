@@ -87,7 +87,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <p>This solution provides <strong>5 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/infobloxclouddataconnectorama.html">[Recommended] Infoblox Cloud Data Connector via AMA</a></li>
-<li><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a> 🔶</li>
+<li><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-ama.html">[Recommended] Infoblox SOC Insight Data Connector via AMA</a></li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a> 🔶</li>
 <li><a href="../connectors/infobloxsocinsightsdataconnector-legacy.html">[Deprecated] Infoblox SOC Insight Data Connector via Legacy Agent</a></li>
@@ -96,7 +96,7 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>22 table(s)</strong>:</p>
+<p>This solution uses <strong>21 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -112,11 +112,6 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <td>Analytics, Playbooks, Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/failed-range-to-ingest-cl.html"><code>Failed_Range_To_Ingest_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
-<td>-</td>
-</tr>
-<tr>
 <td><a href="../tables/host-name-info-cl.html"><code>Host_Name_Info_CL</code></a> 🔶</td>
 <td>-</td>
 <td>Workbooks</td>
@@ -127,99 +122,99 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/infoblox-failed-indicators-cl.html"><code>Infoblox_Failed_Indicators_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
-<td>-</td>
-</tr>
-<tr>
 <td><a href="../tables/service-name-info-cl.html"><code>Service_Name_Info_CL</code></a> 🔶</td>
 <td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
-<td><a href="../tables/dossier-atp-cl.html"><code>dossier_atp_CL</code></a> 🔶</td>
+<td><a href="../tables/threatintelobjects.html"><code>ThreatIntelObjects</code></a></td>
 <td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/dossier-atp-cl.html"><code>dossier_atp_CL</code></a> 🔶</td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-atp-threat-cl.html"><code>dossier_atp_threat_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-dns-cl.html"><code>dossier_dns_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-geo-cl.html"><code>dossier_geo_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-infoblox-web-cat-cl.html"><code>dossier_infoblox_web_cat_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-inforank-cl.html"><code>dossier_inforank_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-malware-analysis-v3-cl.html"><code>dossier_malware_analysis_v3_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-nameserver-cl.html"><code>dossier_nameserver_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-nameserver-matches-cl.html"><code>dossier_nameserver_matches_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-ptr-cl.html"><code>dossier_ptr_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-rpz-feeds-cl.html"><code>dossier_rpz_feeds_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-rpz-feeds-records-cl.html"><code>dossier_rpz_feeds_records_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-threat-actor-cl.html"><code>dossier_threat_actor_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-tld-risk-cl.html"><code>dossier_tld_risk_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-whitelist-cl.html"><code>dossier_whitelist_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/dossier-whois-cl.html"><code>dossier_whois_CL</code></a> 🔶</td>
-<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 <td>Workbooks</td>
 </tr>
 </tbody>
 </table>
 <h3 id="internal-tables">Internal Tables</h3>
-<p>The following <strong>8 table(s)</strong> are used internally by this solution's content items:</p>
+<p>The following <strong>9 table(s)</strong> are used internally by this solution's content items:</p>
 <table>
 <thead>
 <tr>
@@ -263,6 +258,11 @@ SOC analysts will benefit from the app’s ability to provide contextual network
 <td><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
 <td>-</td>
 <td>Workbooks</td>
+</tr>
+<tr>
+<td><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td><a href="../connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
+<td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/tide-lookup-data-cl.html"><code>tide_lookup_data_CL</code></a> 🔶</td>

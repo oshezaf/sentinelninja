@@ -13,9 +13,9 @@
 | **Connector ID** | `CrowdStrikeFalconAdversaryIntelligence` |
 | **Publisher** | CrowdStrike |
 | **Used in Solutions** | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
-| **Collection Method** | [Azure Function](../methods/azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
 | **Connector Definition Files** | [CrowdStrikeFalconAdversaryIntelligence_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeFalconAdversaryIntelligence/CrowdStrikeFalconAdversaryIntelligence_FunctionApp.json) |
-| **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Ingestion API** | [STIX 2.0 Upload Indicators API](../methods/stix-2.0-upload-indicators-api.md) — *Connector code references STIX 2.0 Upload Indicators API endpoint (matched 'threatintelligenceindicators:upload')* |
 
 The [CrowdStrike](https://www.crowdstrike.com/) Falcon Indicators of Compromise connector retrieves the Indicators of Compromise from the Falcon Intel API and uploads them [Microsoft Sentinel Threat Intel](https://learn.microsoft.com/en-us/azure/sentinel/understand-threat-intelligence).
 
@@ -26,6 +26,7 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | ✓ | ✓ | ? |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) |  | ✓ | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -45,7 +45,15 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | - |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | - |
+
+### Internal Tables
+
+The following **1 table(s)** are used internally by this solution's content items:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Datalake2Sentinel](../connectors/datalake2sentinelconnector.md) | - |
 
 ## Additional Documentation
 

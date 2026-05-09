@@ -28,7 +28,7 @@ The MISP2Sentinel solution allows you to automatically push threat indicators fr
 ## Contents
 
 - [Data Connectors](#data-connectors)
-- [Internal Tables](#internal-tables)
+- [Tables Used](#tables-used)
 - [Additional Documentation](#additional-documentation)
 
 ## Data Connectors
@@ -37,7 +37,15 @@ This solution provides **1 data connector(s)**:
 
 - [MISP2Sentinel](../connectors/misp2sentinelconnector.md)
 
-## Internal Tables
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) | - |
+
+### Internal Tables
 
 The following **1 table(s)** are used internally by this solution's content items:
 

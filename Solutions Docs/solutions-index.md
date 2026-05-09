@@ -8,7 +8,7 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 ---
 
-**526 solutions** with 459 unique connectors and 418 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
+**522 solutions** with 458 unique connectors and 414 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -397,10 +397,8 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [MicrosoftDefenderForEndpoint](solutions/microsoftdefenderforendpoint.md) | 2022-01-31 | 🟢 High (98%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [MicrosoftPurviewInsiderRiskManagement](solutions/microsoftpurviewinsiderriskmanagement.md) | 2021-10-20 | 🟢 High (87%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [Mimecast](solutions/mimecast.md) | 2024-09-10 | 🟢 High (85%) | Mimecast |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastAudit](solutions/mimecastaudit.md) 🚫 | 2022-02-24 | ⚪ Very Low (0%) | Mimecast |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastSEG](solutions/mimecastseg.md) 🚫 | 2022-02-24 | 🟡 Low (44%) | Mimecast |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastTIRegional](solutions/mimecasttiregional.md) 🚫 | 2023-08-23 | ⚪ Very Low (1%) | Mimecast |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"> | [MimecastTTP](solutions/mimecastttp.md) 🚫 | 2022-02-24 | ⚪ Very Low (9%) | Mimecast |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Minemeld](solutions/minemeld.md) | 2022-10-11 | ⚪ Very Low (6%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Miro.svg" alt="" width="40" height="40"> | [Miro](solutions/miro.md) |  | ⚪ Very Low (0%) | Miro |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/misp-logo.svg" alt="" width="40" height="40"> | [MISP2Sentinel](solutions/misp2sentinel.md) | 2023-07-29 | 🟢 High (86%) | Community |
@@ -539,7 +537,6 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/silverfort-logo.svg" alt="" width="40" height="40"> | [Silverfort](solutions/silverfort.md) | 2024-09-01 | 🔵 Medium (65%) | Silverfort |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SSG.svg" alt="" width="40" height="40"> | [SINEC Security Guard](solutions/sinec-security-guard.md) | 2024-07-15 |  | Siemens AG |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="" width="40" height="40"> | [SlackAudit](solutions/slackaudit.md) | 2021-03-24 | ⚪ Very Low (0%) | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/slashnext-logo.svg" alt="" width="40" height="40"> | [SlashNext](solutions/slashnext.md) | 2022-08-12 |  | SlashNext |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlashNext%20SIEM/Playbook/logo/slashnext-logo.svg" alt="" width="40" height="40"> | [SlashNext SIEM](solutions/slashnext-siem.md) | 2023-05-26 |  | SlashNext |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Snowflake](solutions/snowflake.md) | 2021-10-23 | 🟢 High (97%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [SOC Handbook](solutions/soc-handbook.md) | 2022-11-30 | 🟢 High (86%) | Community |
@@ -583,7 +580,6 @@ Browse solutions alphabetically:
 |  | [TestSolution](solutions/testsolution.md) ⚠️ |  |  |  |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [TheHive](solutions/thehive.md) | 2021-10-23 | ⚪ Very Low (1%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="" width="40" height="40"> | [Theom](solutions/theom.md) | 2022-11-04 | ⚪ Very Low (0%) | Theom |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Threat Intelligence](solutions/threat-intelligence.md) | 2022-05-18 | 🟢 High (91%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Threat Intelligence (NEW)](solutions/threat-intelligence-new.md) | 2025-04-02 | 🟢 High (95%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Threat Intelligence Solution for Azure Government](solutions/threat-intelligence-solution-for-azure-government.md) ⚠️ | 2023-03-06 |  | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [ThreatAnalysis&Response](solutions/threatanalysis&response.md) | 2021-10-20 | 🟡 Low (41%) | Microsoft Corporation |

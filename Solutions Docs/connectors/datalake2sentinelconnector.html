@@ -42,11 +42,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/rest-pull-api.html">REST Pull API</a></td>
+<td style="text-align: left;"><a href="../methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Connector Definition Files</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel/Data%20Connectors/Datalake2SentinelConnector.json">Datalake2SentinelConnector.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/stix-2.1-upload-indicators-api.html">STIX 2.1 Upload Indicators API</a> — <em>External Azure Function code calls https://api.ti.sentinel.azure.com/workspaces/{workspace_id}/threat-intelligence-stix-objects:upload (verified at cert-orangecyberdefense/datalake2sentinel)</em></td>
 </tr>
 </tbody>
 </table>
@@ -65,8 +69,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
-<td style="text-align: left;"><code>SourceSystem == "Datalake - OrangeCyberdefense"</code></td>
+<td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../tables/threatintelobjects.html"><code>ThreatIntelObjects</code></a></td>
+<td style="text-align: left;"></td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>

@@ -21,7 +21,7 @@ Reference for Usage table in Azure Monitor Logs.
 - [Solutions](#solutions)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (22 columns)
+## Schema (23 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/usage)
 
@@ -40,6 +40,7 @@ Reference for Usage table in Azure Monitor Logs.
 | LinkedMeterId | string | Deprecated |
 | LinkedResourceUri | string | Deprecated |
 | MeterId | string | GUID of the meter used for billing. |
+| Plan | string | Plan of this table (Analytics, Basic or Auxiliary). |
 | Quantity | real | Size of data in Mbytes. |
 | QuantityUnit | string | Value is alwais Mbytes. |
 | ResourceUri | string | The URI of the workspace. This will be same for all records in this table in workspace. |

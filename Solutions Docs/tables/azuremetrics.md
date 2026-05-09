@@ -70,21 +70,19 @@ Reference for AzureMetrics table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UnitName | string | Unit of the metric. Examples include Seconds Percent Bytes. |
 
-## Solutions (2)
+## Solutions (1)
 
 This table is used by the following solutions:
 
 - [Azure Storage](../solutions/azure-storage.md)
-- [SlashNext](../solutions/slashnext.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Azure Storage Account](../connectors/azurestorageaccount.md) |  |
-| [SlashNext Function App](../connectors/slashnextfunctionapp.md) | `MetricName == "FunctionExecutionCount"` |
 
 ---
 
@@ -189,21 +187,6 @@ This table collects data from the following Azure resource types:
 - `microsoft.streamanalytics/streamingjobs`
 - `microsoft.network/bastionhosts`
 - `microsoft.healthcareapis/services`
-
-## Selection Criteria Summary (1 criteria, 1 total references)
-
-References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `MetricName == "FunctionExecutionCount"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **0** | **0** | **0** | **1** |
-
-### MetricName
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FunctionExecutionCount` | 1 | - | - | - | **1** |
 
 ---
 
