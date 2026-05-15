@@ -13,7 +13,7 @@
 | **Connector ID** | `MISP2SentinelConnector` |
 | **Publisher** | MISP project & cudeso.be |
 | **Used in Solutions** | [MISP2Sentinel](../solutions/misp2sentinel.md) |
-| **Collection Method** | [Azure Function (TI Upload API)|REST Pull API](../methods/azure-function-ti-upload-api-rest-pull-api.md) |
+| **Collection Method** | [Azure Function (TI Upload API)|REST Push API](../methods/azure-function-ti-upload-api-rest-push-api.md) |
 | **Connector Definition Files** | [MISP2SentinelConnector_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel/Data%20Connectors/MISP2SentinelConnector_UploadIndicatorsAPI.json) |
 | **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector definition filename suffix '_UploadIndicatorsAPI' indicates STIX 2.1 Upload Indicators API* |
 

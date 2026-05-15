@@ -15,7 +15,7 @@
 | **Connector ID** | `KnowBe4DefendPolling` |
 | **Publisher** | KnowBe4 |
 | **Used in Solutions** | [KnowBe4 Defend](../solutions/knowbe4-defend.md) |
-| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [DefendAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/KnowBe4%20Defend/Data%20Connectors/DefendAPIConnector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

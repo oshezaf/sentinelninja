@@ -13,7 +13,7 @@
 | **Connector ID** | `TenableIE` |
 | **Publisher** | Tenable |
 | **Used in Solutions** | [Tenable App](../solutions/tenable-app.md) |
-| **Collection Method** | [MMA](../methods/mma.md) |
+| **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [TenableIE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/TenableIE.json) |
 
 Tenable Identity Exposure connector allows Indicators of Exposure, Indicators of Attack and trailflow logs to be ingested into Microsoft Sentinel.The different work books and data parsers allow you to more easily manipulate logs and monitor your Active Directory environment.  The analytic templates allow you to automate responses regarding different events, exposures and attacks.
@@ -24,8 +24,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | ? | ✓ | ? |
 | [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | ? | ✓ | ? |
+| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

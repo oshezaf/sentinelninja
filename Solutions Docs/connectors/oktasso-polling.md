@@ -15,7 +15,7 @@
 | **Connector ID** | `OktaSSO_Polling` |
 | **Publisher** | Okta |
 | **Used in Solutions** | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
-| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [azuredeploy_Okta_native_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Data%20Connectors/OktaNativePollerConnector/azuredeploy_Okta_native_poller_connector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 

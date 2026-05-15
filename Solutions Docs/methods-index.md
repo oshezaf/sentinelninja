@@ -12,21 +12,20 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
-| [CCF](methods/ccf.md) | **142** | 119 | 0 | 23 |
+| [AMA](methods/ama.md) | **166** | 38 | 122 | 6 |
+| [CCF](methods/ccf.md) | **157** | 131 | 1 | 25 |
 | [Azure Function](methods/azure-function.md) | **125** | 94 | 26 | 5 |
-| [MMA](methods/mma.md) | **109** | 14 | 89 | 6 |
-| [AMA](methods/ama.md) | **58** | 25 | 33 | 0 |
-| [REST Pull API](methods/rest-pull-api.md) | **55** | 50 | 1 | 4 |
+| [REST Push API](methods/rest-push-api.md) | **55** | 50 | 1 | 4 |
 | [CCF Push](methods/ccf-push.md) | **34** | 33 | 0 | 1 |
-| [Native](methods/native.md) | **25** | 25 | 0 | 0 |
+| [Native](methods/native.md) | **18** | 18 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
-| [CCF (Legacy)](methods/ccf-legacy.md) | **15** | 12 | 1 | 2 |
+| [Unknown](methods/unknown.md) | **15** | 14 | 0 | 1 |
 | [Azure Function (TI Upload API)|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | **13** | 9 | 1 | 3 |
 | [CCF|Azure Function](methods/ccf-azure-function.md) | **8** | 8 | 0 | 0 |
-| [Unknown](methods/unknown.md) | **8** | 7 | 0 | 1 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **1** | 1 | 0 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 0 | 0 | 1 |
-| [Azure Function (TI Upload API)|REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md) | **1** | 1 | 0 | 0 |
+| [Azure Function (TI Upload API)|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | **1** | 1 | 0 | 0 |
+| [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
 | **Total** | **612** | **415** | **151** | **46** |
 
 ---
@@ -61,17 +60,17 @@ If steps 2–4 produced an intrinsic value that disagrees with what step 5–7 w
 
 ## Ingestion API by Collection Method
 
-API-based connectors (CCF Push, Azure Function, REST Pull API, and Custom Log) use one of two APIs to send data to the Log Analytics workspace. CCF and CCF (Legacy) are excluded as their ingestion is platform-managed.
+API-based connectors (CCF Push, Azure Function, REST Push API, and Custom Log) use one of two APIs to send data to the Log Analytics workspace. CCF and CCF (Legacy) are excluded as their ingestion is platform-managed.
 
 | Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
 | [Azure Function](methods/azure-function.md) | 42 | 75 | 3 | **120** |
-| [REST Pull API](methods/rest-pull-api.md) | - | 55 | - | **55** |
+| [REST Push API](methods/rest-push-api.md) | - | 55 | - | **55** |
 | [CCF Push](methods/ccf-push.md) | 34 | - | - | **34** |
 | [Azure Function (TI Upload API)|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | - | - | - | **0** |
 | [CCF|Azure Function](methods/ccf-azure-function.md) | 8 | - | - | **8** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
-| [Azure Function (TI Upload API)|REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md) | - | - | - | **0** |
+| [Azure Function (TI Upload API)|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | - | - | - | **0** |
 | **Total** | **84** | **130** | **3** | **237** |
 
 ---

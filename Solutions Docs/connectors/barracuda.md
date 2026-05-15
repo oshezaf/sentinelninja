@@ -15,7 +15,7 @@
 | **Connector ID** | `Barracuda` |
 | **Publisher** | Barracuda |
 | **Used in Solutions** | [Barracuda WAF](../solutions/barracuda-waf.md) |
-| **Collection Method** | [MMA](../methods/mma.md) |
+| **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_Barracuda.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF/Data%20Connectors/template_Barracuda.json) |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 

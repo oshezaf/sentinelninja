@@ -33,11 +33,18 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="methods/ama.html">AMA</a></td>
+<td style="text-align: right;"><strong>166</strong></td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">122</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
-<td style="text-align: right;"><strong>142</strong></td>
-<td style="text-align: right;">119</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">23</td>
+<td style="text-align: right;"><strong>157</strong></td>
+<td style="text-align: right;">131</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">25</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
@@ -47,21 +54,7 @@
 <td style="text-align: right;">5</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
-<td style="text-align: right;"><strong>109</strong></td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">89</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="methods/ama.html">AMA</a></td>
-<td style="text-align: right;"><strong>58</strong></td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">33</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
+<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
 <td style="text-align: right;"><strong>55</strong></td>
 <td style="text-align: right;">50</td>
 <td style="text-align: right;">1</td>
@@ -76,8 +69,8 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/native.html">Native</a></td>
-<td style="text-align: right;"><strong>25</strong></td>
-<td style="text-align: right;">25</td>
+<td style="text-align: right;"><strong>18</strong></td>
+<td style="text-align: right;">18</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
@@ -89,11 +82,11 @@
 <td style="text-align: right;">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="methods/ccf-legacy.html">CCF (Legacy)</a></td>
+<td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
 <td style="text-align: right;"><strong>15</strong></td>
-<td style="text-align: right;">12</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">2</td>
 </tr>
 <tr>
 <td style="text-align: left;">[Azure Function (TI Upload API)</td>
@@ -108,13 +101,6 @@
 <td style="text-align: right;"><strong>8</strong></td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">0</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
-<td style="text-align: right;"><strong>8</strong></td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
@@ -132,9 +118,16 @@
 </tr>
 <tr>
 <td style="text-align: left;">[Azure Function (TI Upload API)</td>
-<td style="text-align: right;">REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md)</td>
+<td style="text-align: right;">REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md)</td>
 <td style="text-align: right;"><strong>1</strong></td>
 <td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="methods/mma.html">MMA</a></td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr>
@@ -188,7 +181,7 @@
 <p><code>tables.csv</code> records the resolution path on every row via the <code>collection_method_source</code>, <code>collection_method_candidates</code>, and <code>feeding_connector_ids</code> columns.</p>
 <hr />
 <h2 id="ingestion-api-by-collection-method">Ingestion API by Collection Method</h2>
-<p>API-based connectors (CCF Push, Azure Function, REST Pull API, and Custom Log) use one of two APIs to send data to the Log Analytics workspace. CCF and CCF (Legacy) are excluded as their ingestion is platform-managed.</p>
+<p>API-based connectors (CCF Push, Azure Function, REST Push API, and Custom Log) use one of two APIs to send data to the Log Analytics workspace. CCF and CCF (Legacy) are excluded as their ingestion is platform-managed.</p>
 <table>
 <thead>
 <tr>
@@ -208,7 +201,7 @@
 <td style="text-align: right;"><strong>120</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
+<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
 <td style="text-align: right;">-</td>
 <td style="text-align: right;">55</td>
 <td style="text-align: right;">-</td>
@@ -244,7 +237,7 @@
 </tr>
 <tr>
 <td style="text-align: left;">[Azure Function (TI Upload API)</td>
-<td style="text-align: right;">REST Pull API](methods/azure-function-ti-upload-api-rest-pull-api.md)</td>
+<td style="text-align: right;">REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md)</td>
 <td style="text-align: right;">-</td>
 <td style="text-align: right;">-</td>
 <td style="text-align: right;">-</td>

@@ -15,7 +15,7 @@
 | **Connector ID** | `IronNetIronDefense` |
 | **Publisher** | IronNet |
 | **Used in Solutions** | [IronNet IronDefense](../solutions/ironnet-irondefense.md) |
-| **Collection Method** | [MMA](../methods/mma.md) |
+| **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [IronNetIronDefense.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/DataConnectors/IronNetIronDefense.json) |
 
 The IronNet IronDefense connector enables ingest of IronDefense alerts, events, and IronDome notifications into Sentinel, enabling Sentinel to utilize IronDefense's behavioral analytics and the IronDome community to quickly identify threats in your enterprise network.

@@ -13,7 +13,7 @@
 | **Connector ID** | `AIVectraStream` |
 | **Publisher** | Vectra AI |
 | **Used in Solutions** | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
-| **Collection Method** | [MMA](../methods/mma.md) |
+| **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Connector_VectraAI_Stream.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20AI%20Stream/Data%20Connectors/Connector_VectraAI_Stream.json) |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 

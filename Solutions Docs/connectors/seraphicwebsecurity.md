@@ -13,7 +13,7 @@
 | **Connector ID** | `SeraphicWebSecurity` |
 | **Publisher** | Seraphic |
 | **Used in Solutions** | [SeraphicSecurity](../solutions/seraphicsecurity.md) |
-| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SeraphicSecurityConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity/Data%20Connectors/SeraphicSecurityConnector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 

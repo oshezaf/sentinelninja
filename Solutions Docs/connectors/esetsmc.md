@@ -15,7 +15,7 @@
 | **Connector ID** | `EsetSMC` |
 | **Publisher** | Eset |
 | **Used in Solutions** | [Eset Security Management Center](../solutions/eset-security-management-center.md) |
-| **Collection Method** | [MMA](../methods/mma.md) |
+| **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [esetSmc.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Eset%20Security%20Management%20Center/Data%20Connectors/esetSmc.json) |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 

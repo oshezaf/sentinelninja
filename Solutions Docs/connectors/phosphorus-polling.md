@@ -13,7 +13,7 @@
 | **Connector ID** | `Phosphorus_Polling` |
 | **Publisher** | Phosphorus Inc. |
 | **Used in Solutions** | [Phosphorus](../solutions/phosphorus.md) |
-| **Collection Method** | [CCF (Legacy)](../methods/ccf-legacy.md) |
+| **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [PhosphorusDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus/Data%20Connectors/PhosphorusDataConnector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 

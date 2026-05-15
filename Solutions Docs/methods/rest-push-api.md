@@ -1,4 +1,4 @@
-# REST Pull API / Custom Integration
+# REST Push API / Custom Integration
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -6,7 +6,7 @@
 
 ---
 
-REST Pull API-based connectors use the Azure Monitor Data Collector API or Logs Ingestion API to send data to Microsoft Sentinel. These connectors may use custom scripts, Logic Apps, or other integration methods to collect and ingest data.
+REST Push API-based connectors push data into Microsoft Sentinel via the Azure Monitor HTTP Data Collector API or the Logs Ingestion API (DCR/DCE). The external source initiates the HTTP requests; Sentinel does not poll. These connectors may use custom scripts, Logic Apps, or other integration methods to collect data and send it to the workspace.
 
 ## Documentation
 

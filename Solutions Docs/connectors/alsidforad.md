@@ -15,7 +15,7 @@
 | **Connector ID** | `AlsidForAD` |
 | **Publisher** | Alsid |
 | **Used in Solutions** | [Alsid For AD](../solutions/alsid-for-ad.md) |
-| **Collection Method** | [MMA](../methods/mma.md) |
+| **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [AlsidForAD.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alsid%20For%20AD/Data%20Connectors/AlsidForAD.json) |
 
 Alsid for Active Directory connector allows to export Alsid Indicators of Exposures, trailflow and Indicators of Attacks logs to Azure Sentinel in real time.
@@ -29,6 +29,8 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AlsidForADLog_CL`](../tables/alsidforadlog-cl.md) | ? | ✓ | ? |
+| [`Tenable_IE_CL`](../tables/tenable-ie-cl.md) | ? | ✓ | ? |
+| [`Tenable_ad_CL`](../tables/tenable-ad-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
