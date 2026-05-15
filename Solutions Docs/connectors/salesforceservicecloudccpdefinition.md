@@ -15,7 +15,7 @@
 | **Connector ID** | `SalesforceServiceCloudCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
-| **Collection Method** | [CCF|Azure Function](../methods/ccf-azure-function.md) |
+| **Collection Method** | [CCF\|Azure Function](../methods/ccf-azure-function.md) |
 | **Connector Definition Files** | [azuredeploy_SalesforceServiceCloud_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/azuredeploy_SalesforceServiceCloud_poller_connector.json) |
 | **CCF Configuration** | [SalesforceServiceCloud_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/SalesforceServiceCloud_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging`, `Nested` |

@@ -13,7 +13,7 @@
 | **Connector ID** | `CyberArkAuditCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [CyberArkAudit](../solutions/cyberarkaudit.md) |
-| **Collection Method** | [CCF|Azure Function](../methods/ccf-azure-function.md) |
+| **Collection Method** | [CCF\|Azure Function](../methods/ccf-azure-function.md) |
 | **Connector Definition Files** | [CyberArkAudit_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_DataConnectorDefinition.json) |
 | **CCF Configuration** | [CyberArkAudit_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST`, `Nested` |

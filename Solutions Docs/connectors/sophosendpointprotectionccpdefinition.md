@@ -13,7 +13,7 @@
 | **Connector ID** | `SophosEndpointProtectionCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
-| **Collection Method** | [CCF|Azure Function](../methods/ccf-azure-function.md) |
+| **Collection Method** | [CCF\|Azure Function](../methods/ccf-azure-function.md) |
 | **Connector Definition Files** | [SophosEP_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_ccp/SophosEP_DataConnectorDefinition.json) |
 | **CCF Configuration** | [SophosEP_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20Endpoint%20Protection/Data%20Connectors/SophosEP_ccp/SophosEP_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |

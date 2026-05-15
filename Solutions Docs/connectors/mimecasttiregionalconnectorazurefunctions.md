@@ -15,7 +15,7 @@
 | **Connector ID** | `MimecastTIRegionalConnectorAzureFunctions` |
 | **Publisher** | Mimecast |
 | **Used in Solutions** | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
-| **Collection Method** | [Azure Function (TI Upload API)|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
 | **Connector Definition Files** | [MimecastTIRegional_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastTIRegional/Data%20Connectors/MimecastTIRegional_API_AzureFunctionApp.json) |
 | **Ingestion API** | [Microsoft Graph tiIndicators API](../methods/microsoft-graph-tiindicators-api.md) — *Connector code references Microsoft Graph tiIndicators API endpoint (matched 'tiindicators/submittiindicators')* |
 

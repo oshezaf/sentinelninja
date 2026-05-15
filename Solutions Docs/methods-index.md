@@ -67,10 +67,10 @@ API-based connectors (CCF Push, Azure Function, REST Push API, and Custom Log) u
 | [Azure Function](methods/azure-function.md) | 42 | 75 | 3 | **120** |
 | [REST Push API](methods/rest-push-api.md) | - | 55 | - | **55** |
 | [CCF Push](methods/ccf-push.md) | 34 | - | - | **34** |
-| [Azure Function (TI Upload API)|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | - | - | - | **0** |
-| [CCF|Azure Function](methods/ccf-azure-function.md) | 8 | - | - | **8** |
+| [Azure Function (TI Upload API)\|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | - | - | - | **0** |
+| [CCF\|Azure Function](methods/ccf-azure-function.md) | 8 | - | - | **8** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
-| [Azure Function (TI Upload API)|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | - | - | - | **0** |
+| [Azure Function (TI Upload API)\|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | - | - | - | **0** |
 | **Total** | **84** | **130** | **3** | **237** |
 
 ---

@@ -13,7 +13,7 @@
 | **Connector ID** | `1PasswordCCPDefinition` |
 | **Publisher** | 1Password |
 | **Used in Solutions** | [1Password](../solutions/1password.md) |
-| **Collection Method** | [CCF|Azure Function](../methods/ccf-azure-function.md) |
+| **Collection Method** | [CCF\|Azure Function](../methods/ccf-azure-function.md) |
 | **Connector Definition Files** | [1Password_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password/Data%20Connectors/1Password_ccpv2/1Password_DataConnectorDefinition.json) |
 | **CCF Configuration** | [1Password_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password/Data%20Connectors/1Password_ccpv2/1Password_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |

@@ -13,7 +13,7 @@
 | **Connector ID** | `JiraAuditCCPDefinition` |
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
-| **Collection Method** | [CCF|Azure Function](../methods/ccf-azure-function.md) |
+| **Collection Method** | [CCF\|Azure Function](../methods/ccf-azure-function.md) |
 | **Connector Definition Files** | [JiraAudit_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Data%20Connectors/JiraAuditAPISentinelConnector_ccpv2/JiraAudit_DataConnectorDefinition.json) |
 | **CCF Configuration** | [JiraAudit_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Data%20Connectors/JiraAuditAPISentinelConnector_ccpv2/JiraAudit_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |

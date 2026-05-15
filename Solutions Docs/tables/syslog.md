@@ -1002,9 +1002,9 @@ References by type: 29 connectors, 331 content items, 20 ASIM parsers, 59 other 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `SyslogMessage has "instanceId"` | - | 112 | - | 3 | **115** |
+| `ProcessName has_any "CISE,CSCO"` | 1 | 21 | 4 | 1 | **27** |
 | `ProcessName contains "EPOEvents"`<br>`SyslogMessage contains "<EPOevent>"`<br>`SyslogMessage contains "<UpdateEvents>"` | 1 | 25 | - | 1 | **27** |
 | `ProcessName has_any "hostd-probe,vmkwarning,vpxd-main"` | 1 | 25 | - | 1 | **27** |
-| `ProcessName has_any "CISE,CSCO"` | 1 | 21 | 4 | 1 | **27** |
 | `SyslogMessage contains "Oracle Unified Audit"` | 1 | 22 | - | 2 | **25** |
 | `ProcessName == "cisco_wsa"` | 1 | 22 | - | 1 | **24** |
 | `SyslogMessage contains "managed_device_id"`<br>`SyslogMessage contains "number_of_incidents"` | 1 | 21 | - | 1 | **23** |
@@ -1015,29 +1015,29 @@ References by type: 29 connectors, 331 content items, 20 ASIM parsers, 59 other 
 | `ProcessName == "ERAServer"` | 1 | 3 | - | 2 | **6** |
 | `ProcessName == "gw-audit"` | - | 6 | - | - | **6** |
 | `ProcessName contains "squid"` | - | 6 | - | - | **6** |
-| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | 2 | 1 | - | 2 | **5** |
-| `Facility == "local5"` | 1 | 3 | - | 1 | **5** |
-| `Facility == "local7"` | 1 | 3 | - | 1 | **5** |
 | `ProcessName == "SymantecServer"` | 1 | 3 | - | 1 | **5** |
+| `SyslogMessage !has "response:"`<br>`SyslogMessage has_all "client"` | 2 | 1 | - | 2 | **5** |
+| `Facility == "local7"` | 1 | 3 | - | 1 | **5** |
+| `Facility == "local5"` | 1 | 3 | - | 1 | **5** |
 | `ProcessName == "box_Firewall_Activity"` | 1 | 1 | - | 2 | **4** |
 | `SyslogMessage has "purity.alert"` | - | 2 | - | 2 | **4** |
 | `Computer == "datasource"`<br>`Facility == "local0"` | - | 3 | - | 1 | **4** |
 | `SyslogMessage has_all "<Provider Name="` | - | - | 4 | - | **4** |
+| `ProcessName contains "Exabeam"` | 1 | - | - | 2 | **3** |
 | `Facility != "cron"` | 3 | - | - | - | **3** |
 | `SyslogMessage contains "AuditLog"`<br>`SyslogMessage contains "Device,"`<br>`SyslogMessage contains "DeviceControl"`<br>`SyslogMessage contains "ScriptControl"`<br>`SyslogMessage contains "Threat"` | 1 | - | - | 2 | **3** |
-| `ProcessName contains "Exabeam"` | 1 | - | - | 2 | **3** |
-| `ProcessName == "SyslogAlertForwarderNSP"` | 1 | - | - | 1 | **2** |
-| `ProcessName == "openvpn"` | 1 | - | - | 1 | **2** |
-| `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | 1 | - | - | 1 | **2** |
-| `SyslogMessage has "Stealthwatch"` | 1 | - | - | 1 | **2** |
-| `SyslogMessage has_all "Alert"` | 1 | - | - | 1 | **2** |
 | `ProcessName == "RT_FLOW"`<br>`ProcessName in "RT_IDS,sshd"`<br>`ProcessName !in "sshd,RT_IDS,RT_FLOW"` | 1 | - | - | 1 | **2** |
+| `SyslogMessage contains "SYSTEM_MSG"`<br>`SyslogMessage contains "%LOG_LOCAL"` | 1 | - | - | 1 | **2** |
+| `SyslogMessage has_all "Alert"` | 1 | - | - | 1 | **2** |
+| `SyslogMessage has "Stealthwatch"` | 1 | - | - | 1 | **2** |
+| `ProcessName == "openvpn"` | 1 | - | - | 1 | **2** |
+| `ProcessName == "SyslogAlertForwarderNSP"` | 1 | - | - | 1 | **2** |
 | `Facility == "local7"`<br>`ProcessName == "GitLab-Application-Logs"` | - | 1 | - | 1 | **2** |
 | `ProcessName has "sftp"`<br>`SyslogMessage has "bytes read"`<br>`SyslogMessage has "close"`<br>`SyslogMessage has "session opened for"` | - | 2 | - | - | **2** |
 | `SyslogMessage startswith "DHCPDISCOVER"` | - | 1 | - | 1 | **2** |
-| `Facility == "local7"`<br>`ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | 1 | - | - | - | **1** |
-| `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
 | `ProcessName == "gw-audit"`<br>`SyslogMessage contains "gw-audit[-]:"`<br>`SyslogMessage contains "portal portal[-]:"` | 1 | - | - | - | **1** |
+| `ProcessName == "sysmon"` | 1 | - | - | - | **1** |
+| `Facility == "local7"`<br>`ProcessName in "GitLab-Access-Logs,GitLab-Application-Logs,GitLab-Audit-Logs"`<br>`SyslogMessage contains "HTTP"`<br>`SyslogMessage has_any "DELETE,GET,PATCH,POST,PUT"` | 1 | - | - | - | **1** |
 | `SyslogMessage contains "found an infected file"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransomware incident detected"` | - | 1 | - | - | **1** |
 | `SyslogMessage contains "Ransom Protect mechanism blocked"` | - | 1 | - | - | **1** |
@@ -1104,32 +1104,32 @@ References by type: 29 connectors, 331 content items, 20 ASIM parsers, 59 other 
 |  | `has_any hostd-probe` | 1 | 26 | - | 1 | **28** |
 |  | `has_any vmkwarning` | 1 | 26 | - | 1 | **28** |
 |  | `has_any vpxd-main` | 1 | 26 | - | 1 | **28** |
-|  | `contains EPOEvents` | 1 | 25 | - | 1 | **27** |
 |  | `has_any CISE` | 1 | 21 | 4 | 1 | **27** |
 |  | `has_any CSCO` | 1 | 21 | 4 | 1 | **27** |
+|  | `contains EPOEvents` | 1 | 25 | - | 1 | **27** |
 |  | `cisco_wsa` | 1 | 22 | - | 1 | **24** |
 | `local0` |  | 2 | 6 | - | 3 | **11** |
-| `local7` | `GitLab-Audit-Logs` | 1 | 6 | - | 1 | **8** |
 |  | `gw-audit` | 1 | 7 | - | - | **8** |
+| `local7` | `GitLab-Audit-Logs` | 1 | 6 | - | 1 | **8** |
 | `user` |  | - | 8 | - | - | **8** |
 |  | `ERAServer` | 1 | 3 | - | 2 | **6** |
 |  | `contains squid` | - | 6 | - | - | **6** |
-| `local5` |  | 1 | 3 | - | 1 | **5** |
-| `local7` |  | 1 | 3 | - | 1 | **5** |
 |  | `SymantecServer` | 1 | 3 | - | 1 | **5** |
-|  | `box_Firewall_Activity` | 1 | 1 | - | 2 | **4** |
+| `local7` |  | 1 | 3 | - | 1 | **5** |
+| `local5` |  | 1 | 3 | - | 1 | **5** |
 |  | `sshd` | 1 | 1 | 1 | 1 | **4** |
-| `local7` | `GitLab-Application-Logs` | 1 | 1 | - | 1 | **3** |
-| `!= cron` |  | 3 | - | - | - | **3** |
+|  | `box_Firewall_Activity` | 1 | 1 | - | 2 | **4** |
 |  | `contains Exabeam` | 1 | - | - | 2 | **3** |
-| `local7` | `GitLab-Access-Logs` | 1 | - | - | 1 | **2** |
-|  | `SyslogAlertForwarderNSP` | 1 | - | - | 1 | **2** |
-|  | `openvpn` | 1 | - | - | 1 | **2** |
+| `!= cron` |  | 3 | - | - | - | **3** |
+| `local7` | `GitLab-Application-Logs` | 1 | 1 | - | 1 | **3** |
 |  | `RT_FLOW` | 1 | - | - | 1 | **2** |
 |  | `RT_IDS` | 1 | - | - | 1 | **2** |
 |  | `!= sshd` | 1 | - | - | 1 | **2** |
 |  | `!= RT_IDS` | 1 | - | - | 1 | **2** |
 |  | `!= RT_FLOW` | 1 | - | - | 1 | **2** |
+|  | `openvpn` | 1 | - | - | 1 | **2** |
+|  | `SyslogAlertForwarderNSP` | 1 | - | - | 1 | **2** |
+| `local7` | `GitLab-Access-Logs` | 1 | - | - | 1 | **2** |
 | `authpriv` |  | - | 2 | - | - | **2** |
 |  | `has sftp` | - | 2 | - | - | **2** |
 |  | `sysmon` | 1 | - | - | - | **1** |
@@ -1191,16 +1191,16 @@ References by type: 29 connectors, 331 content items, 20 ASIM parsers, 59 other 
 | `contains DeviceControl` | 1 | - | - | 2 | **3** |
 | `contains ScriptControl` | 1 | - | - | 2 | **3** |
 | `contains Threat` | 1 | - | - | 2 | **3** |
+| `contains SYSTEM_MSG` | 1 | - | - | 1 | **2** |
+| `contains %LOG_LOCAL` | 1 | - | - | 1 | **2** |
+| `has_all Alert` | 1 | - | - | 1 | **2** |
+| `has Stealthwatch` | 1 | - | - | 1 | **2** |
 | `contains HTTP` | 1 | - | - | 1 | **2** |
 | `has_any DELETE` | 1 | - | - | 1 | **2** |
 | `has_any GET` | 1 | - | - | 1 | **2** |
 | `has_any PATCH` | 1 | - | - | 1 | **2** |
 | `has_any POST` | 1 | - | - | 1 | **2** |
 | `has_any PUT` | 1 | - | - | 1 | **2** |
-| `contains SYSTEM_MSG` | 1 | - | - | 1 | **2** |
-| `contains %LOG_LOCAL` | 1 | - | - | 1 | **2** |
-| `has Stealthwatch` | 1 | - | - | 1 | **2** |
-| `has_all Alert` | 1 | - | - | 1 | **2** |
 | `has bytes read` | - | 2 | - | - | **2** |
 | `has close` | - | 2 | - | - | **2** |
 | `has session opened for` | - | 2 | - | - | **2** |
