@@ -13,7 +13,7 @@
 | **Connector ID** | `LumenThreatFeedConnectorV2PrivateNetworking` |
 | **Publisher** | Lumen Technologies, Inc. |
 | **Used in Solutions** | [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md) |
-| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lumen%20Defender%20Threat%20Feed/Data%20Connectors/LumenThreatFeedv2/LumenThreatFeedConnectorV2_PrivateNetworking_ConnectorUI.json) |
 | **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector code references STIX 2.1 Upload Indicators API endpoint (matched 'api.ti.sentinel.azure.com')* |
 

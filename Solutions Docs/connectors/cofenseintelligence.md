@@ -15,7 +15,7 @@
 | **Connector ID** | `CofenseIntelligence` |
 | **Publisher** | Cofense |
 | **Used in Solutions** | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
-| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [CofenseIntelligence_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseIntelligence/Data%20Connectors/CofenseIntelligenceDataConnector/CofenseIntelligence_API_FunctionApp.json) |
 | **Ingestion API** | [Sentinel REST createIndicator API](../methods/sentinel-rest-createindicator-api.md) — *Connector code references Sentinel REST createIndicator API endpoint (matched 'threatintelligence/main/createindicator')* |
 

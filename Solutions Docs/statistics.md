@@ -95,9 +95,8 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [Native](methods/native.md) | **18** | 18 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **15** | 14 | 0 | 1 |
-| [Azure Function (TI Upload API)\|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | **13** | 9 | 1 | 3 |
+| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **14** | 10 | 1 | 3 |
 | [CCF\|Azure Function](methods/ccf-azure-function.md) | **8** | 8 | 0 | 0 |
-| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **1** | 1 | 0 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 0 | 0 | 1 |
 | [Azure Function (TI Upload API)\|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
@@ -117,9 +116,8 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [Native](methods/native.md) | 18 / 0 / 0 / **18** | - | - | - |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | 17 / 0 / 0 / **17** | - | - | - |
 | [Unknown](methods/unknown.md) | 14 / 0 / 0 / **14** | - | - | 0 / 0 / 1 / **1** |
-| [Azure Function (TI Upload API)\|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | 1 / 0 / 0 / **1** | 8 / 1 / 3 / **12** | - | - |
+| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 / 0 / 0 / **1** | 9 / 1 / 3 / **13** | - | - |
 | [CCF\|Azure Function](methods/ccf-azure-function.md) | 5 / 0 / 0 / **5** | 3 / 0 / 0 / **3** | - | - |
-| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | 1 / 0 / 0 / **1** | - | - |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 0 / 0 / 1 / **1** | - | - |
 | [Azure Function (TI Upload API)\|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | - | - | 1 / 0 / 0 / **1** | - |
 | [MMA](methods/mma.md) | 1 / 0 / 0 / **1** | - | - | - |
@@ -187,9 +185,8 @@ API-based connectors use one of two APIs to send data to the workspace:
 | [Azure Function](methods/azure-function.md) | 42 | 75 | 3 | **120** |
 | [REST Push API](methods/rest-push-api.md) | - | 55 | - | **55** |
 | [CCF Push](methods/ccf-push.md) | 34 | - | - | **34** |
-| [Azure Function (TI Upload API)\|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | - | - | - | **0** |
-| [CCF\|Azure Function](methods/ccf-azure-function.md) | 8 | - | - | **8** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
+| [CCF\|Azure Function](methods/ccf-azure-function.md) | 8 | - | - | **8** |
 | [Azure Function (TI Upload API)\|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | - | - | - | **0** |
 | **Total** | **84** | **130** | **3** | **217** |
 
@@ -215,7 +212,7 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 | [AMA](methods/ama.md) | 7 |
 | [CCF Push](methods/ccf-push.md) | 2 |
 | [CCF\|Azure Function](methods/ccf-azure-function.md) | 2 |
-| [Azure Function (TI Upload API)\|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | 1 |
+| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 |
 | **Total** | **158** |
 
 **By Ingestion API:**
@@ -240,7 +237,7 @@ Each table is assigned a single discovery source ("Discovered Via") by priority:
 | Discovery Source | Discovered Via | Total |
 |:-----------------|---------------:|------:|
 | Connector | 909 | 909 |
-| Content | 233 | 785 |
+| Content | 233 | 784 |
 | [Azure Monitor Tables Reference](https://learn.microsoft.com/azure/azure-monitor/reference/tables/tables-resourcetype) | 639 | 806 |
 | [Defender XDR Advanced Hunting Schema](https://learn.microsoft.com/defender-xdr/advanced-hunting-schema-tables) | 28 | 63 |
 | [Sentinel Tables and Connectors Reference](https://learn.microsoft.com/azure/sentinel/data-connectors-reference) | 0 | 0 |

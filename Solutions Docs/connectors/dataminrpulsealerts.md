@@ -13,7 +13,7 @@
 | **Connector ID** | `DataminrPulseAlerts` |
 | **Publisher** | Dataminr |
 | **Used in Solutions** | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
-| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [DataminrPulseAlerts_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse/Data%20Connectors/DataminrPulseAlerts/DataminrPulseAlerts_FunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API|Sentinel REST createIndicator API](../methods/log-ingestion-api-sentinel-rest-createindicator-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources|Connector code references Sentinel REST createIndicator API endpoint (matched 'threatintelligence/main/createindicator')* |
 

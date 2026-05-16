@@ -550,15 +550,15 @@ References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other par
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `ProviderName == "IPC"` | - | 4 | - | - | **4** |
 | `ProviderName == "IoTSecurity"` | - | 4 | - | - | **4** |
-| `ProviderName == "MDATP"` | 1 | 2 | - | - | **3** |
 | `ProductName == "Microsoft 365 Insider Risk Management"` | 1 | 2 | - | - | **3** |
+| `ProviderName == "MDATP"` | 1 | 2 | - | - | **3** |
 | `ProductName == "Azure Security Center"` | 2 | - | - | - | **2** |
 | `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"` | - | 2 | - | - | **2** |
 | `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` | - | 2 | - | - | **2** |
 | `ProductName == "Azure Sentinel"` | - | 2 | - | - | **2** |
-| `ProductName == "Azure Active Directory Identity Protection"` | 1 | - | - | - | **1** |
 | `ProductName == "Azure Advanced Threat Protection"` | 1 | - | - | - | **1** |
 | `ProductName == "Azure Security Center for IoT"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Active Directory Identity Protection"` | 1 | - | - | - | **1** |
 | `ProductName == "Microsoft Cloud App Security"` | 1 | - | - | - | **1** |
 | `ProviderName == "OATP"` | 1 | - | - | - | **1** |
 | `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | 1 | - | - | - | **1** |
