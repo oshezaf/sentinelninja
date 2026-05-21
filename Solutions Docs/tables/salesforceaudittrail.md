@@ -16,6 +16,12 @@ Reference for SalesforceAuditTrail table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceaudittrail) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
 ## Schema (18 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceaudittrail)
@@ -40,6 +46,20 @@ Reference for SalesforceAuditTrail table in Azure Monitor Logs.
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
 | Type | string | The name of the table |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) |  |
 
 ---
 

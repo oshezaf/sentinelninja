@@ -15,8 +15,8 @@
 
 | Playbook | Solution | Connections | Actions |
 |:---------|:---------|------------:|--------:|
+| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
 | [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | [Intel471](../solutions/intel471.md) | 1 | 2 |
-| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-4cd7a68f.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 1 |
 | [Add URL - Netskope](../content/standalone-content-add-url-netskope-185417c7.md) | 📄 Standalone | 1 | 1 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 1 | 1 |
 | [AS-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone | 1 | 2 |
@@ -25,7 +25,7 @@
 | [AS-Block-GitHub-User](../content/standalone-content-as-block-github-user-8d97b5dd.md) | 📄 Standalone | 1 | 1 |
 | [AS-Block-Hash-in-Defender](../content/standalone-content-as-block-hash-in-defender-0c0410bc.md) | 📄 Standalone | 1 | 1 |
 | [AS-Checkmarx-Audit-Ingestion](../content/standalone-content-as-checkmarx-audit-ingestion-8715fea6.md) | 📄 Standalone | 0 | 1 |
-| [AS-Checkmarx-SAST-Ingestion](../content/standalone-content-as-checkmarx-sast-ingestion-2e72d789.md) | 📄 Standalone | 0 | 1 |
+| [AS-Checkmarx-SAST-Ingestion](../content/standalone-content-as-checkmarx-sast-ingestion-2e72d789.md) | 📄 Standalone | 1 | 1 |
 | [AS-Clear-Okta-Network-Zone-List](../content/standalone-content-as-clear-okta-network-zone-list-38fe847c.md) | 📄 Standalone | 1 | 1 |
 | [AS-Create-Opsgenie-Incident](../content/standalone-content-as-create-opsgenie-incident-220c25ba.md) | 📄 Standalone | 1 | 1 |
 | [AS-CrowdstrikeAlerts-Integration](../content/standalone-content-as-crowdstrikealerts-integration-670b72b9.md) | 📄 Standalone | 1 | 1 |

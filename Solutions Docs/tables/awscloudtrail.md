@@ -87,7 +87,7 @@ Reference for AWSCloudTrail table in Azure Monitor Logs.
 | UserIdentityUserName | string | The name of the identity that made the call. |
 | VpcEndpointId | string | Identifies the VPC endpoint in which requests were made from a VPC to another AWS service. |
 
-## Solutions (13)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -101,6 +101,7 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
@@ -116,75 +117,75 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (118)
+## Content Items Using This Table (131)
 
-### Analytic Rules (73)
+### Analytic Rules (76)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [AWS Config Service Resource Deletion Attempts](../content/amazon-web-services-aws-config-service-resource-deletion-attempts-093fe75e-44f1-4d3e-94dc-6d258a6dd2d2-c24c7483.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail"` |
-| [Automatic image scanning disabled for ECR](../content/amazon-web-services-automatic-image-scanning-disabled-for-ecr-19602494-94af-43c8-90ba-eb0e14999612-4cbaf0c4.md) | `EventName == "PutImageScanningConfiguration"` |
-| [Changes made to AWS CloudTrail logs](../content/amazon-web-services-changes-made-to-aws-cloudtrail-logs-610d3850-c26f-4f20-8d86-f10fdf2425f5-0948a9d0.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail"` |
-| [Changes to AWS Elastic Load Balancer security groups](../content/amazon-web-services-changes-to-aws-elastic-load-balancer-security-groups-c7bfadd4-34a6-4fa5-82f8-3691a32261e8-61c6a3f8.md) | `EventName in "ApplySecurityGroupsToLoadBalancer,SetSecurityGroups"` |
-| [Changes to AWS Security Group ingress and egress settings](../content/amazon-web-services-changes-to-aws-security-group-ingress-and-egress-settings-4f19d4e3-ec5f-4abc-9e61-819eb131758c-a08b61de.md) | `EventName in "AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"` |
-| [Changes to Amazon VPC settings](../content/amazon-web-services-changes-to-amazon-vpc-settings-65360bb0-8986-4ade-a89d-af3cf44d28aa-7eb96dcd.md) | `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"`<br>`EventSource != "apigateway.amazonaws.com"` |
-| [Changes to internet facing AWS RDS Database instances](../content/amazon-web-services-changes-to-internet-facing-aws-rds-database-instances-8c2ef238-67a0-497d-b1dd-5c8a0f533e25-7db09d92.md) | `EventName in "AuthorizeDBSecurityGroupIngress,CreateDBSecurityGroup,DeleteDBSecurityGroup,RevokeDBSecurityGroupIngress"` |
-| [CloudFormation policy created then used for privilege escalation](../content/amazon-web-services-cloudformation-policy-created-then-used-for-privilege-escalation-efdc3cff-f006-426f-97fd-4657862f7b9a-8646101b.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Created CRUD S3 policy and then privilege escalation](../content/amazon-web-services-created-crud-s3-policy-and-then-privilege-escalation-467cbe7e-e6d4-4f4e-8e44-84dd01932c32-db5bbe56.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creating keys with encrypt policy without MFA](../content/amazon-web-services-creating-keys-with-encrypt-policy-without-mfa-454133a7-5427-4a7c-bdc4-0adfa84dda16-37ea0ba0.md) | `EventName in "CreateKey,PutKeyPolicy"` |
-| [Creation of Access Key for IAM User](../content/amazon-web-services-creation-of-access-key-for-iam-user-9a6554e6-63d9-4f94-9b32-64d1d40628f2-db15ca72.md) | `EventName == "CreateAccessKey"` |
-| [Creation of CRUD DynamoDB policy and then privilege escalation.](../content/amazon-web-services-creation-of-crud-dynamodb-policy-and-then-privilege-escalation.-6f675c17-7a61-440c-abd1-c73ef4d748ec-ffcdf757.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of CRUD KMS policy and then privilege escalation](../content/amazon-web-services-creation-of-crud-kms-policy-and-then-privilege-escalation-8e15998e-1e32-4b6d-abd1-e8482e8f3def-17ec57fb.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of CRUD Lambda policy and then privilege escalation](../content/amazon-web-services-creation-of-crud-lambda-policy-and-then-privilege-escalation-22115d3c-e87c-485a-9130-33797d619124-978cd658.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of DataPipeline policy and then privilege escalation.](../content/amazon-web-services-creation-of-datapipeline-policy-and-then-privilege-escalation.-6009c632-94e9-4ffb-a11a-b4b99f457f88-1d6dfe0a.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of EC2 policy and then privilege escalation](../content/amazon-web-services-creation-of-ec2-policy-and-then-privilege-escalation-a694e977-740c-4578-9f8f-5e39029f1d23-01a26226.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of Glue policy and then privilege escalation](../content/amazon-web-services-creation-of-glue-policy-and-then-privilege-escalation-56626956-304f-4408-8ea6-7ba5746ce09e-75660064.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of Lambda policy and then privilege escalation](../content/amazon-web-services-creation-of-lambda-policy-and-then-privilege-escalation-796a45ee-220b-42be-8415-c8c933cf3b6d-7f05d6d4.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of SSM policy and then privilege escalation](../content/amazon-web-services-creation-of-ssm-policy-and-then-privilege-escalation-aaa2c05e-fdd4-4fa0-9072-6cffe3641b34-11a16b37.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [Creation of new CRUD IAM policy and then privilege escalation.](../content/amazon-web-services-creation-of-new-crud-iam-policy-and-then-privilege-escalation.-8a607285-d95c-473d-8aab-59920de63af6-be8b1cae.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [EC2 Startup Shell Script Changed](../content/amazon-web-services-ec2-startup-shell-script-changed-f8577e4d-8481-437b-a94e-06f615985668-a9f4a4d4.md) | `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"`<br>`RequestParameters contains "userData"` |
-| [ECR image scan findings high or critical](../content/amazon-web-services-ecr-image-scan-findings-high-or-critical-f6928301-56da-4d2c-aabe-e1a552bc8892-f574c629.md) | `EventName == "DescribeImageScanFindings"` |
-| [Full Admin policy created and then attached to Roles, Users or Groups](../content/amazon-web-services-full-admin-policy-created-and-then-attached-to-roles,-users-or-groups-826bb2f8-7894-4785-9a6b-a8a855d8366f-be654393.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
-| [GuardDuty detector disabled or suspended](../content/amazon-web-services-guardduty-detector-disabled-or-suspended-9da99021-d318-4711-a78a-6dea76129b3a-3f13ad74.md) | `EventName in "DeleteDetector,UpdateDetector"` |
-| [Login to AWS Management Console without MFA](../content/amazon-web-services-login-to-aws-management-console-without-mfa-d25b1998-a592-4bc5-8a3a-92b39eedb1bc-bb2d6da4.md) | `EventName == "ConsoleLogin"`<br>`SessionIssuerUserName !contains "AWSReservedSSO"` |
-| [Monitor AWS Credential abuse or hijacking](../content/amazon-web-services-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-b389d8ba.md) | `EventName == "GetCallerIdentity"`<br>`UserIdentityType == "AssumedRole"` |
-| [NRT Login to AWS Management Console without MFA](../content/amazon-web-services-nrt-login-to-aws-management-console-without-mfa-0ee2aafb-4500-4e36-bcb1-e90eec2f0b9b-1415b390.md) | `EventName == "ConsoleLogin"`<br>`SessionIssuerUserName !contains "AWSReservedSSO"` |
-| [Network ACL with all the open ports to a specified CIDR](../content/amazon-web-services-network-acl-with-all-the-open-ports-to-a-specified-cidr-f8ea7d50-e33b-4b9d-9c3e-a59fcbcee281-147ac220.md) | `EventName in "CreateNetworkAclEntry,ReplaceNetworkAclEntry"` |
-| [Policy version set to default](../content/amazon-web-services-policy-version-set-to-default-874a1762-3fd7-4489-b411-6d4a9e9e8a59-2b04a521.md) | `EventName == "SetDefaultPolicyVersion"` |
-| [Privilege escalation via CRUD DynamoDB policy](../content/amazon-web-services-privilege-escalation-via-crud-dynamodb-policy-b9be2aa6-911d-4131-8658-d2a537ed49f4-58258049.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via CRUD IAM policy](../content/amazon-web-services-privilege-escalation-via-crud-iam-policy-e20d35a3-4fec-4c8b-81b1-fc33b41990b0-36c5f48a.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via CRUD KMS policy](../content/amazon-web-services-privilege-escalation-via-crud-kms-policy-d7c39e15-997f-49e5-a782-73bf07db8aa5-487f4413.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via CRUD Lambda policy](../content/amazon-web-services-privilege-escalation-via-crud-lambda-policy-d0953d50-3dc1-4fa3-80fa-4d3e973a0959-9a222ae8.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via CRUD S3 policy](../content/amazon-web-services-privilege-escalation-via-crud-s3-policy-fc3061bb-319c-4fe9-abe2-f59899a6d907-0765d145.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via CloudFormation policy](../content/amazon-web-services-privilege-escalation-via-cloudformation-policy-719d5204-10ab-4b1f-aee1-da7326750260-51abdf17.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via DataPipeline policy](../content/amazon-web-services-privilege-escalation-via-datapipeline-policy-48896551-1c28-4a09-8388-e51e5a927d23-2c0da5f6.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via EC2 policy](../content/amazon-web-services-privilege-escalation-via-ec2-policy-a2b2a984-c820-4d93-830e-139bffd81fa3-3972a1f2.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via Glue policy](../content/amazon-web-services-privilege-escalation-via-glue-policy-370f0e5e-da1d-4a14-8ced-d1d7ab66a8d7-cf7e2271.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via Lambda policy](../content/amazon-web-services-privilege-escalation-via-lambda-policy-8e01c41d-bd4c-4bbe-aed5-18592735052d-5b9881d5.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation via SSM policy](../content/amazon-web-services-privilege-escalation-via-ssm-policy-c668c09f-5a49-43f9-b249-6b89a31ec8fb-c5f4272e.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
-| [Privilege escalation with AdministratorAccess managed policy](../content/amazon-web-services-privilege-escalation-with-administratoraccess-managed-policy-139e7116-3884-4246-9978-c8f740770bdf-2cd937dc.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
-| [Privilege escalation with FullAccess managed policy](../content/amazon-web-services-privilege-escalation-with-fullaccess-managed-policy-afb4191b-a142-4065-a0da-f721ee3d006c-39ed48c2.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
-| [Privilege escalation with admin managed policy](../content/amazon-web-services-privilege-escalation-with-admin-managed-policy-49ce5322-60d7-4b02-ad79-99f650aa5790-d6a3d173.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
-| [RDS instance publicly exposed](../content/amazon-web-services-rds-instance-publicly-exposed-8f1630c2-2e45-4df2-be43-50fba90f601d-2e6eb8ab.md) | `EventName in "CreateDBInstance,ModifyDBInstance"` |
-| [S3 Object Exfiltration from Anonymous User](../content/amazon-web-services-s3-object-exfiltration-from-anonymous-user-15d3bf4e-8708-41c8-a836-8b0aa5be730e-38fbb5c4.md) | `EventName == "GetObject"`<br>`UserIdentityPrincipalid == "Anonymous"` |
-| [S3 bucket access point publicly exposed](../content/amazon-web-services-s3-bucket-access-point-publicly-exposed-b7a44e0d-ae4c-4fb2-be1b-aa0e45f2327b-90b31572.md) | `EventName == "PutAccessPointPolicy"` |
-| [S3 bucket exposed via ACL](../content/amazon-web-services-s3-bucket-exposed-via-acl-6b9b4ee6-f4c1-4b86-8c8c-beb0bb59ae44-e329f88e.md) | `EventName == "PutBucketAcl"` |
-| [S3 bucket exposed via policy](../content/amazon-web-services-s3-bucket-exposed-via-policy-44a5b65e-b0a9-4591-aabc-388fd92a28c4-701bf828.md) | `EventName == "PutBucketPolicy"` |
-| [S3 bucket suspicious ransomware activity](../content/amazon-web-services-s3-bucket-suspicious-ransomware-activity-b442b9e2-5cc4-4129-a85b-a5ef38a9e5f0-b6d1d5e8.md) | `EventName in "GetObject,PutObject"` |
-| [S3 object publicly exposed](../content/amazon-web-services-s3-object-publicly-exposed-09f2a28b-3286-4268-9e2f-33805f104e5d-c5935689.md) | `EventName == "PutObjectAcl"` |
-| [SAML update identity provider](../content/amazon-web-services-saml-update-identity-provider-bce1dcba-4948-414d-8838-6385afb9d496-ee6e8731.md) | `EventName == "UpdateSAMLProvider"` |
-| [SSM document is publicly exposed](../content/amazon-web-services-ssm-document-is-publicly-exposed-75647b58-bcc8-4eb5-9658-46698d3fa153-2110e2eb.md) | `EventName == "ModifyDocumentPermission"` |
-| [Successful API executed from a Tor exit node](../content/amazon-web-services-successful-api-executed-from-a-tor-exit-node-0adab960-5565-4978-ba6d-044553e4acc4-eec69aba.md) |  |
-| [Successful brute force attack on S3 Bucket.](../content/amazon-web-services-successful-brute-force-attack-on-s3-bucket.-31b9e94b-0df6-4a3d-a297-3457b53c5d86-636adc43.md) | `EventName == "GetObject"` |
-| [Suspicious AWS CLI Command Execution](../content/amazon-web-services-suspicious-aws-cli-command-execution-8c2dc344-9352-4ca1-8863-b1b7a5e09e59-994383ab.md) | `UserAgent startswith "aws-cli"` |
-| [Suspicious AWS EC2 Compute Resource Deployments](../content/amazon-web-services-suspicious-aws-ec2-compute-resource-deployments-9e457dc4-81f0-4d25-bc37-a5fa4a17946a-9f074032.md) | `EventName == "RunInstances"` |
-| [Suspicious command sent to EC2](../content/amazon-web-services-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-32ecf6f6.md) | `EventName in "CreateAssociation,PutObject,SendCommand"`<br>`Resources contains "accountId"` |
-| [Suspicious overly permissive KMS key policy created](../content/amazon-web-services-suspicious-overly-permissive-kms-key-policy-created-60dfc193-0f73-4279-b43c-110ade02b201-aa84cc85.md) | `EventName in "CreateKey,PutKeyPolicy"` |
-| [Tampering to AWS CloudTrail logs](../content/amazon-web-services-tampering-to-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-4824c69a.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail"` |
-| [Unauthorized EC2 Instance Setup Attempt](../content/amazon-web-services-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-d8c84c0d.md) | `ErrorCode == "Client.UnauthorizedOperation"`<br>`EventName == "RunInstances"` |
-| [User IAM Enumeration](../content/amazon-web-services-user-iam-enumeration-cfaaf0bc-16d1-48df-ac8b-9d901bbd516a-530e5578.md) | `EventName in "ListAccessKeys,ListAttachedRolePolicies,ListAttachedUserPolicies,ListGroupsForUser,ListRoles,ListUsers"` |
+| [AWSCloudTrail - AWS GuardDuty detector disabled or suspended](../content/amazon-web-services-awscloudtrail-aws-guardduty-detector-disabled-or-suspended-9da99021-d318-4711-a78a-6dea76129b3a-d8d5ec35.md) | `EventName in "DeleteDetector,UpdateDetector"` |
+| [AWSCloudTrail - Amazon ECR image scanning disabled](../content/amazon-web-services-awscloudtrail-amazon-ecr-image-scanning-disabled-19602494-94af-43c8-90ba-eb0e14999612-fa0ab87d.md) | `EventName == "PutImageScanningConfiguration"` |
+| [AWSCloudTrail - Changes made to AWS CloudTrail logs](../content/amazon-web-services-awscloudtrail-changes-made-to-aws-cloudtrail-logs-610d3850-c26f-4f20-8d86-f10fdf2425f5-3031541f.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail"` |
+| [AWSCloudTrail - Changes to AWS Elastic Load Balancer security groups](../content/amazon-web-services-awscloudtrail-changes-to-aws-elastic-load-balancer-security-groups-c7bfadd4-34a6-4fa5-82f8-3691a32261e8-aab1fbbd.md) | `EventName in "ApplySecurityGroupsToLoadBalancer,SetSecurityGroups"` |
+| [AWSCloudTrail - Changes to AWS Security Group ingress and egress settings](../content/amazon-web-services-awscloudtrail-changes-to-aws-security-group-ingress-and-egress-settings-4f19d4e3-ec5f-4abc-9e61-819eb131758c-134ac8d9.md) | `EventName in "AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"` |
+| [AWSCloudTrail - Changes to Amazon VPC settings](../content/amazon-web-services-awscloudtrail-changes-to-amazon-vpc-settings-65360bb0-8986-4ade-a89d-af3cf44d28aa-d3c8d22d.md) | `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"`<br>`EventSource != "apigateway.amazonaws.com"` |
+| [AWSCloudTrail - Changes to internet facing AWS RDS Database instances](../content/amazon-web-services-awscloudtrail-changes-to-internet-facing-aws-rds-database-instances-8c2ef238-67a0-497d-b1dd-5c8a0f533e25-351ba1e8.md) | `EventName in "AuthorizeDBSecurityGroupIngress,CreateDBSecurityGroup,DeleteDBSecurityGroup,RevokeDBSecurityGroupIngress"` |
+| [AWSCloudTrail - CloudFormation policy created then used for privilege escalation](../content/amazon-web-services-awscloudtrail-cloudformation-policy-created-then-used-for-privilege-escalation-efdc3cff-f006-426f-97fd-4657862f7b9a-85f1c49c.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Config Service Resource Deletion Attempts](../content/amazon-web-services-awscloudtrail-config-service-resource-deletion-attempts-093fe75e-44f1-4d3e-94dc-6d258a6dd2d2-bafeee07.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteTrail,StopLogging,UpdateTrail"` |
+| [AWSCloudTrail - Created CRUD S3 policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-created-crud-s3-policy-and-then-privilege-escalation-467cbe7e-e6d4-4f4e-8e44-84dd01932c32-4a7cb6c9.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Creating keys with encrypt policy without MFA](../content/amazon-web-services-awscloudtrail-creating-keys-with-encrypt-policy-without-mfa-454133a7-5427-4a7c-bdc4-0adfa84dda16-f1115dc2.md) | `EventName in "CreateKey,PutKeyPolicy"` |
+| [AWSCloudTrail - Creation of Access Key for IAM User](../content/amazon-web-services-awscloudtrail-creation-of-access-key-for-iam-user-9a6554e6-63d9-4f94-9b32-64d1d40628f2-977d1674.md) | `EventName == "CreateAccessKey"` |
+| [AWSCloudTrail - Creation of CRUD DynamoDB policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-crud-dynamodb-policy-and-then-privilege-escalation-6f675c17-7a61-440c-abd1-c73ef4d748ec-857f9ac6.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Creation of CRUD KMS policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-crud-kms-policy-and-then-privilege-escalation-8e15998e-1e32-4b6d-abd1-e8482e8f3def-857966d8.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Creation of CRUD Lambda policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-crud-lambda-policy-and-then-privilege-escalation-22115d3c-e87c-485a-9130-33797d619124-c2fdc799.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Creation of DataPipeline policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-datapipeline-policy-and-then-privilege-escalation-6009c632-94e9-4ffb-a11a-b4b99f457f88-c11979c5.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Creation of EC2 policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-ec2-policy-and-then-privilege-escalation-a694e977-740c-4578-9f8f-5e39029f1d23-7e0e59f1.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Creation of Glue policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-glue-policy-and-then-privilege-escalation-56626956-304f-4408-8ea6-7ba5746ce09e-ac43e2a6.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Creation of Lambda policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-lambda-policy-and-then-privilege-escalation-796a45ee-220b-42be-8415-c8c933cf3b6d-48a5739b.md) |  |
+| [AWSCloudTrail - Creation of SSM policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-ssm-policy-and-then-privilege-escalation-aaa2c05e-fdd4-4fa0-9072-6cffe3641b34-dc576820.md) |  |
+| [AWSCloudTrail - Creation of new CRUD IAM policy and then privilege escalation](../content/amazon-web-services-awscloudtrail-creation-of-new-crud-iam-policy-and-then-privilege-escalation-8a607285-d95c-473d-8aab-59920de63af6-e678eb90.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - EC2 Startup Shell Script Changed](../content/amazon-web-services-awscloudtrail-ec2-startup-shell-script-changed-f8577e4d-8481-437b-a94e-06f615985668-8756a070.md) | `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"` |
+| [AWSCloudTrail - ECR image scan findings high or critical](../content/amazon-web-services-awscloudtrail-ecr-image-scan-findings-high-or-critical-f6928301-56da-4d2c-aabe-e1a552bc8892-e7a0ac8a.md) | `EventName == "DescribeImageScanFindings"` |
+| [AWSCloudTrail - Full Admin policy created and then attached to Roles, Users or Groups](../content/amazon-web-services-awscloudtrail-full-admin-policy-created-and-then-attached-to-roles,-users-or-groups-826bb2f8-7894-4785-9a6b-a8a855d8366f-3b82a1fc.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` |
+| [AWSCloudTrail - Login to AWS Management Console without MFA](../content/amazon-web-services-awscloudtrail-login-to-aws-management-console-without-mfa-d25b1998-a592-4bc5-8a3a-92b39eedb1bc-6d8cebff.md) | `EventName == "ConsoleLogin"`<br>`SessionIssuerUserName !contains "AWSReservedSSO"` |
+| [AWSCloudTrail - Monitor AWS Credential abuse or hijacking](../content/amazon-web-services-awscloudtrail-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-cefae132.md) | `EventName == "GetCallerIdentity"`<br>`UserIdentityType == "AssumedRole"` |
+| [AWSCloudTrail - NRT Login to AWS Management Console without MFA](../content/amazon-web-services-awscloudtrail-nrt-login-to-aws-management-console-without-mfa-0ee2aafb-4500-4e36-bcb1-e90eec2f0b9b-764a0a78.md) | `EventName == "ConsoleLogin"`<br>`SessionIssuerUserName !contains "AWSReservedSSO"` |
+| [AWSCloudTrail - Network ACL with all the open ports to a specified CIDR](../content/amazon-web-services-awscloudtrail-network-acl-with-all-the-open-ports-to-a-specified-cidr-f8ea7d50-e33b-4b9d-9c3e-a59fcbcee281-552cb8bd.md) | `EventName in "CreateNetworkAclEntry,ReplaceNetworkAclEntry"` |
+| [AWSCloudTrail - Policy version set to default](../content/amazon-web-services-awscloudtrail-policy-version-set-to-default-874a1762-3fd7-4489-b411-6d4a9e9e8a59-2d4f4620.md) | `EventName == "SetDefaultPolicyVersion"` |
+| [AWSCloudTrail - Privilege escalation via CRUD DynamoDB policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-crud-dynamodb-policy-b9be2aa6-911d-4131-8658-d2a537ed49f4-9aca34de.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via CRUD IAM policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-crud-iam-policy-e20d35a3-4fec-4c8b-81b1-fc33b41990b0-10f0c050.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via CRUD KMS policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-crud-kms-policy-d7c39e15-997f-49e5-a782-73bf07db8aa5-fe8bac63.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via CRUD Lambda policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-crud-lambda-policy-d0953d50-3dc1-4fa3-80fa-4d3e973a0959-0489a5ca.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via CRUD S3 policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-crud-s3-policy-fc3061bb-319c-4fe9-abe2-f59899a6d907-8eb35dd7.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via CloudFormation policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-cloudformation-policy-719d5204-10ab-4b1f-aee1-da7326750260-7260bbb8.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via DataPipeline policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-datapipeline-policy-48896551-1c28-4a09-8388-e51e5a927d23-824ac05e.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via EC2 policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-ec2-policy-a2b2a984-c820-4d93-830e-139bffd81fa3-9f283ee6.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via Glue policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-glue-policy-370f0e5e-da1d-4a14-8ced-d1d7ab66a8d7-f015d888.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via Lambda policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-lambda-policy-8e01c41d-bd4c-4bbe-aed5-18592735052d-3ded9c3d.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation via SSM policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-via-ssm-policy-c668c09f-5a49-43f9-b249-6b89a31ec8fb-2eac3429.md) | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation with AdministratorAccess managed policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-with-administratoraccess-managed-policy-139e7116-3884-4246-9978-c8f740770bdf-7232a27f.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation with FullAccess managed policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-with-fullaccess-managed-policy-afb4191b-a142-4065-a0da-f721ee3d006c-9cb6a522.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
+| [AWSCloudTrail - Privilege escalation with admin managed policy](../content/amazon-web-services-awscloudtrail-privilege-escalation-with-admin-managed-policy-49ce5322-60d7-4b02-ad79-99f650aa5790-88b4ddf8.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
+| [AWSCloudTrail - RDS instance publicly exposed](../content/amazon-web-services-awscloudtrail-rds-instance-publicly-exposed-8f1630c2-2e45-4df2-be43-50fba90f601d-253e1f3d.md) | `EventName in "CreateDBInstance,ModifyDBInstance"` |
+| [AWSCloudTrail - S3 Object Exfiltration from Anonymous User](../content/amazon-web-services-awscloudtrail-s3-object-exfiltration-from-anonymous-user-15d3bf4e-8708-41c8-a836-8b0aa5be730e-e98dba56.md) | `EventName == "GetObject"`<br>`UserIdentityPrincipalid == "Anonymous"` |
+| [AWSCloudTrail - S3 bucket access point publicly exposed](../content/amazon-web-services-awscloudtrail-s3-bucket-access-point-publicly-exposed-b7a44e0d-ae4c-4fb2-be1b-aa0e45f2327b-3e56facb.md) | `EventName == "PutAccessPointPolicy"` |
+| [AWSCloudTrail - S3 bucket exposed via ACL](../content/amazon-web-services-awscloudtrail-s3-bucket-exposed-via-acl-6b9b4ee6-f4c1-4b86-8c8c-beb0bb59ae44-39ac40e4.md) | `EventName == "PutBucketAcl"` |
+| [AWSCloudTrail - S3 bucket exposed via policy](../content/amazon-web-services-awscloudtrail-s3-bucket-exposed-via-policy-44a5b65e-b0a9-4591-aabc-388fd92a28c4-e2389d6e.md) | `EventName == "PutBucketPolicy"` |
+| [AWSCloudTrail - S3 bucket suspicious ransomware activity](../content/amazon-web-services-awscloudtrail-s3-bucket-suspicious-ransomware-activity-b442b9e2-5cc4-4129-a85b-a5ef38a9e5f0-3277ac7a.md) | `EventName in "GetObject,PutObject"` |
+| [AWSCloudTrail - S3 object publicly exposed](../content/amazon-web-services-awscloudtrail-s3-object-publicly-exposed-09f2a28b-3286-4268-9e2f-33805f104e5d-aff994f4.md) | `EventName == "PutObjectAcl"` |
+| [AWSCloudTrail - SAML update identity provider](../content/amazon-web-services-awscloudtrail-saml-update-identity-provider-bce1dcba-4948-414d-8838-6385afb9d496-6cc6eb28.md) | `EventName == "UpdateSAMLProvider"` |
+| [AWSCloudTrail - SSM document is publicly exposed](../content/amazon-web-services-awscloudtrail-ssm-document-is-publicly-exposed-75647b58-bcc8-4eb5-9658-46698d3fa153-e013c5b0.md) | `EventName == "ModifyDocumentPermission"` |
+| [AWSCloudTrail - Successful API executed from a Tor exit node](../content/amazon-web-services-awscloudtrail-successful-api-executed-from-a-tor-exit-node-0adab960-5565-4978-ba6d-044553e4acc4-282e80e5.md) |  |
+| [AWSCloudTrail - Successful brute force attack on S3 Bucket](../content/amazon-web-services-awscloudtrail-successful-brute-force-attack-on-s3-bucket-31b9e94b-0df6-4a3d-a297-3457b53c5d86-5bb93808.md) | `EventName == "GetObject"` |
+| [AWSCloudTrail - Suspicious AWS CLI Command Execution](../content/amazon-web-services-awscloudtrail-suspicious-aws-cli-command-execution-8c2dc344-9352-4ca1-8863-b1b7a5e09e59-79c3e5c0.md) | `UserAgent startswith "aws-cli"` |
+| [AWSCloudTrail - Suspicious AWS EC2 Compute Resource Deployments](../content/amazon-web-services-awscloudtrail-suspicious-aws-ec2-compute-resource-deployments-9e457dc4-81f0-4d25-bc37-a5fa4a17946a-9de0bbd4.md) | `EventName == "RunInstances"` |
+| [AWSCloudTrail - Suspicious command sent to EC2](../content/amazon-web-services-awscloudtrail-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-5905ef82.md) | `EventName in "CreateAssociation,PutObject,SendCommand"`<br>`Resources contains "accountId"` |
+| [AWSCloudTrail - Suspicious overly permissive KMS key policy created](../content/amazon-web-services-awscloudtrail-suspicious-overly-permissive-kms-key-policy-created-60dfc193-0f73-4279-b43c-110ade02b201-4de725d8.md) | `EventName in "CreateKey,PutKeyPolicy"` |
+| [AWSCloudTrail - Tampering to AWS CloudTrail logs](../content/amazon-web-services-awscloudtrail-tampering-to-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-4959dd40.md) | `EventName in "DeleteEventBus,DeleteFlowLogs,DeleteLogGroup,DeleteTrail,StopLogging,UpdateTrail"` |
+| [AWSCloudTrail - Unauthorized EC2 Instance Setup Attempt](../content/amazon-web-services-awscloudtrail-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-89175481.md) | `ErrorCode == "Client.UnauthorizedOperation"`<br>`EventName == "RunInstances"` |
+| [AWSCloudTrail - User IAM Enumeration](../content/amazon-web-services-awscloudtrail-user-iam-enumeration-cfaaf0bc-16d1-48df-ac8b-9d901bbd516a-52b30ca2.md) | `EventName in "ListAccessKeys,ListAttachedRolePolicies,ListAttachedUserPolicies,ListGroupsForUser,ListRoles,ListUsers"` |
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -233,48 +234,56 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI map IP entity to AWSCloudTrail](../content/threat-intelligence-new-ti-map-ip-entity-to-awscloudtrail-69f55be4-1b13-42d0-b975-a1e59c996dd2-4cc25f87.md) |  |
 
-### Hunting Queries (37)
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Failed AWS Console logons but success logon to AzureAD](../content/standalone-content-failed-aws-console-logons-but-success-logon-to-azuread-910124df-913c-47e3-a7cd-29e1643fa55e-c02ad301.md) | `EventName == "ConsoleLogin"` |
+| [Failed AzureAD logons but success logon to AWS Console](../content/standalone-content-failed-azuread-logons-but-success-logon-to-aws-console-643c2025-9604-47c5-833f-7b4b9378a1f5-4ca50ad1.md) | `EventName == "ConsoleLogin"` |
+| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
+
+### Hunting Queries (38)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
-| [Bucket versioning suspended](../content/amazon-web-services-bucket-versioning-suspended-48c49b1d-2aa0-442b-96e3-cae6ad1251cd-9e746ab9.md) | `EventName == "PutBucketVersioning"` |
-| [Changes made to AWS IAM objects](../content/amazon-web-services-changes-made-to-aws-iam-objects-d022a62c-643b-4e8a-b583-0230e32a96e4-8d6124b9.md) | `EventName in "CreateUser,DeleteGroup,DeleteUser"` |
-| [Changes made to AWS IAM policy](../content/amazon-web-services-changes-made-to-aws-iam-policy-e0a67cd7-b4e5-4468-aae0-26cb16a1bbd2-3b3fe70f.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion,DeleteGroupPolicy,DeletePolicy,DeletePolicyVersion,DeleteRolePolicy,DeleteUserPolicy,DetachGroupPolicy,DetachRolePolicy,PutGroupPolicy,PutUserPolicy"` |
-| [CreateLoginProfile detected](../content/amazon-web-services-createloginprofile-detected-4e3c81bf-61a4-47f4-b20d-a5a414ea08aa-6940fe12.md) | `EventName == "CreateLoginProfile"` |
-| [CreatePolicyVersion with excessive permissions](../content/amazon-web-services-createpolicyversion-with-excessive-permissions-e73ebd34-4f04-4684-a5f0-dba820127ce8-e4285cf3.md) | `EventName == "CreatePolicyVersion"` |
-| [ECR image scan findings low](../content/amazon-web-services-ecr-image-scan-findings-low-b5b172b1-d976-4113-af1f-02f7bf7d2092-3cd30c1e.md) | `EventName == "DescribeImageScanFindings"` |
-| [ECR image scan findings medium](../content/amazon-web-services-ecr-image-scan-findings-medium-4fbbae0a-ce5b-4b2a-b5e6-700920561680-7e59c4e9.md) | `EventName == "DescribeImageScanFindings"` |
-| [Excessive execution of discovery events](../content/amazon-web-services-excessive-execution-of-discovery-events-c9ccaebf-314c-446d-b3f6-314560ccb0e1-58abf9b4.md) | `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"`<br>`UserAgent has "aws-cli"` |
-| [Failed brute force on S3 bucket](../content/amazon-web-services-failed-brute-force-on-s3-bucket-13afb771-5d55-4d69-a745-83d2fc69a923-d8dd59bc.md) | `EventName == "GetObject"`<br>`UserIdentityAccountId == "ANONYMOUS_PRINCIPAL"` |
-| [IAM AccessDenied discovery events](../content/amazon-web-services-iam-accessdenied-discovery-events-7e258a45-b356-44f6-9a62-2643cef7b869-7c065274.md) | `ErrorMessage in "Access Denied,AccessDenied"`<br>`UserAgent !endswith ".amazonaws.com"`<br>`UserIdentityType == "IAMUser"` |
-| [IAM Privilege Escalation by Instance Profile attachment](../content/amazon-web-services-iam-privilege-escalation-by-instance-profile-attachment-e1a91db8-f2b3-4531-bff6-da133d4f4f1a-8b33d03d.md) | `EventName in "AddRoleToInstanceProfile,RemoveRoleFromInstanceProfile"` |
-| [IAM assume role policy brute force](../content/amazon-web-services-iam-assume-role-policy-brute-force-2b8cecfe-f705-432d-9f38-08207b9473e1-82485ab3.md) | `ErrorMessage == "AccessDenied"`<br>`EventName == "AssumeRole"` |
-| [Lambda UpdateFunctionCode](../content/amazon-web-services-lambda-updatefunctioncode-2dd2143b-6667-4a7a-b04f-98d22caeffac-426afada.md) | `EventName startswith "UpdateFunctionCode"`<br>`EventSource == "lambda.amazonaws.com"` |
-| [Lambda function throttled](../content/amazon-web-services-lambda-function-throttled-d82ea1db-f600-4c9e-8ba8-d271e9c12eb8-d7a33aaf.md) | `EventName startswith "PutFunctionConcurrency"` |
-| [Lambda layer imported from external account](../content/amazon-web-services-lambda-layer-imported-from-external-account-77d0aadc-aaea-4346-b61a-bf7ac6b71bba-133cc638.md) | `EventName startswith "CreateFunction"`<br>`EventName startswith "UpdateFunctionConfiguration"` |
-| [Login profile updated](../content/amazon-web-services-login-profile-updated-838f59d4-fe47-422b-819d-1be502940547-de9db028.md) | `EventName == "UpdateLoginProfile"` |
-| [Modification of route-table attributes](../content/amazon-web-services-modification-of-route-table-attributes-3b7df29e-a798-4b6b-9ef7-73b9a3cf56a2-db6c80fd.md) | `EventName in "CreateRoute,DeleteRoute,ReplaceRoute"` |
-| [Modification of subnet attributes](../content/amazon-web-services-modification-of-subnet-attributes-05167149-4670-4a9f-b34e-5a0a92243194-7605c0bc.md) | `EventName == "ModifySubnetAttribute"` |
-| [Modification of vpc attributes](../content/amazon-web-services-modification-of-vpc-attributes-a3a19731-9e82-49b6-9142-2dd570feefd5-e33d1371.md) | `EventName == "ModifyVpcAttribute"` |
-| [Multiple failed login attempts to an existing user without MFA](../content/amazon-web-services-multiple-failed-login-attempts-to-an-existing-user-without-mfa-bf130d1d-702b-4af6-9528-8bc4229e59f4-bb3fdc82.md) | `EventName == "ConsoleLogin"` |
-| [Network ACL deleted](../content/amazon-web-services-network-acl-deleted-49bae199-ea04-4a2e-95a6-e3a1f68ab259-038e38e1.md) | `EventName == "DeleteNetworkAclEntry"` |
-| [New AccessKey created for Root user](../content/amazon-web-services-new-accesskey-created-for-root-user-4055466c-8a84-44c6-91d0-46469f3ba0b9-42884d7f.md) | `EventName == "CreateAccessKey"` |
-| [New access key created to user](../content/amazon-web-services-new-access-key-created-to-user-a2772445-9bb1-4176-9481-b262cb59118a-d5f0bb4f.md) | `EventName == "CreateAccessKey"` |
-| [Privileged role attached to Instance](../content/amazon-web-services-privileged-role-attached-to-instance-0db42a94-e7c8-4bf1-99a7-1a2fb4158212-e01481fe.md) | `EventName in "AddRoleToInstanceProfile,AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
-| [RDS instance master password changed](../content/amazon-web-services-rds-instance-master-password-changed-b9b0fd12-d72d-4f66-a013-c1acdeea2670-7c08e965.md) | `EventName == "ModifyDBCluster"` |
-| [Risky role name created](../content/amazon-web-services-risky-role-name-created-70c36558-e6d8-48b4-98b3-185d555cd5af-a0e5c4e0.md) | `EventName == "CreateRole"` |
-| [S3 bucket encryption modified](../content/amazon-web-services-s3-bucket-encryption-modified-6eb59239-78c5-401d-acfa-5cb9b3d31cd4-aea42032.md) | `EventName in "DeleteBucketEncryption,PutBucketEncryption"` |
-| [S3 bucket has been deleted](../content/amazon-web-services-s3-bucket-has-been-deleted-356aa5a8-fa6f-4eb9-baa9-ffcf725e3e82-7a253da6.md) | `EventName == "DeleteBucket"` |
-| [Suspicious EC2 launched without a key pair](../content/amazon-web-services-suspicious-ec2-launched-without-a-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-4a29619e.md) | `EventName == "RunInstances"`<br>`RequestParameters contains "userData"` |
-| [Suspicious activity of STS Token related to Kubernetes worker node](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-kubernetes-worker-node-46685737-676a-4084-8e98-31b2998062db-3753805b.md) |  |
-| [Suspicious activity of STS token related to EC2](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-ec2-82ecf967-d6e9-4757-8f5d-42c562a8f05f-a39130ee.md) |  |
-| [Suspicious activity of STS token related to ECS](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-ecs-67af1633-311f-4a94-bc8f-f904a54637b2-43fff997.md) |  |
-| [Suspicious activity of STS token related to Glue](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-glue-0cd3eb95-6c8e-4eeb-8338-a0decdc0a328-d801b492.md) |  |
-| [Suspicious activity of STS token related to Lambda](../content/amazon-web-services-suspicious-activity-of-sts-token-related-to-lambda-70a6e84f-6f3b-4ce1-83d6-ea6df9e7a9dd-fb38780a.md) |  |
-| [Suspicious credential token access of valid IAM Roles](../content/amazon-web-services-suspicious-credential-token-access-of-valid-iam-roles-5b6ee21d-da53-46eb-827c-eab2a9ba3d2f-ed892985.md) | `EventName == "AssumeRole"` |
-| [Unused or Unsupported Cloud Regions](../content/amazon-web-services-unused-or-unsupported-cloud-regions-e0d57543-acbd-428b-bb96-24a67506f84d-bfc3cdb8.md) |  |
+| [AWSCloudTrail - AWS STS token suspicious activity from EC2](../content/amazon-web-services-awscloudtrail-aws-sts-token-suspicious-activity-from-ec2-82ecf967-d6e9-4757-8f5d-42c562a8f05f-83ac2ebc.md) |  |
+| [AWSCloudTrail - Activity in unused or unsupported cloud regions](../content/amazon-web-services-awscloudtrail-activity-in-unused-or-unsupported-cloud-regions-e0d57543-acbd-428b-bb96-24a67506f84d-88f44c79.md) |  |
+| [AWSCloudTrail - EC2 Instance Launched Without Key Pair](../content/amazon-web-services-awscloudtrail-ec2-instance-launched-without-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-cd4aae7c.md) | `EventName == "RunInstances"`<br>`RequestParameters contains "userData"` |
+| [AWSCloudTrail - ECR Container Image Low Severity Findings](../content/amazon-web-services-awscloudtrail-ecr-container-image-low-severity-findings-b5b172b1-d976-4113-af1f-02f7bf7d2092-809b5848.md) | `EventName == "DescribeImageScanFindings"` |
+| [AWSCloudTrail - ECR Container Image Medium Severity Findings](../content/amazon-web-services-awscloudtrail-ecr-container-image-medium-severity-findings-4fbbae0a-ce5b-4b2a-b5e6-700920561680-eb4d0524.md) | `EventName == "DescribeImageScanFindings"` |
+| [AWSCloudTrail - Failed Brute Force on S3 Bucket](../content/amazon-web-services-awscloudtrail-failed-brute-force-on-s3-bucket-13afb771-5d55-4d69-a745-83d2fc69a923-fefcfb34.md) | `EventName == "GetObject"`<br>`UserIdentityAccountId == "ANONYMOUS_PRINCIPAL"` |
+| [AWSCloudTrail - High Volume of Enumeration Events](../content/amazon-web-services-awscloudtrail-high-volume-of-enumeration-events-c9ccaebf-314c-446d-b3f6-314560ccb0e1-e294b951.md) | `EventName startswith "Describe"`<br>`EventName startswith "Get"`<br>`EventName startswith "List"`<br>`UserAgent has "aws-cli"` |
+| [AWSCloudTrail - IAM AccessDenied discovery events](../content/amazon-web-services-awscloudtrail-iam-accessdenied-discovery-events-7e258a45-b356-44f6-9a62-2643cef7b869-80af9957.md) | `ErrorMessage in "Access Denied,AccessDenied"`<br>`UserAgent !endswith ".amazonaws.com"`<br>`UserIdentityType == "IAMUser"` |
+| [AWSCloudTrail - IAM Assume Role Brute Force](../content/amazon-web-services-awscloudtrail-iam-assume-role-brute-force-2b8cecfe-f705-432d-9f38-08207b9473e1-61590fdc.md) | `ErrorMessage == "AccessDenied"`<br>`EventName == "AssumeRole"` |
+| [AWSCloudTrail - IAM CreateLoginProfile Activity](../content/amazon-web-services-awscloudtrail-iam-createloginprofile-activity-4e3c81bf-61a4-47f4-b20d-a5a414ea08aa-d09ee872.md) | `EventName == "CreateLoginProfile"` |
+| [AWSCloudTrail - IAM New Access Key Created for User](../content/amazon-web-services-awscloudtrail-iam-new-access-key-created-for-user-a2772445-9bb1-4176-9481-b262cb59118a-f9147ae0.md) | `EventName == "CreateAccessKey"` |
+| [AWSCloudTrail - IAM Policy Change Activity](../content/amazon-web-services-awscloudtrail-iam-policy-change-activity-e0a67cd7-b4e5-4468-aae0-26cb16a1bbd2-ac1aba9f.md) | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion,DeleteGroupPolicy,DeletePolicy,DeletePolicyVersion,DeleteRolePolicy,DeleteUserPolicy,DetachGroupPolicy,DetachRolePolicy,PutGroupPolicy,PutUserPolicy"` |
+| [AWSCloudTrail - IAM Policy with Excessive Wildcard Permissions](../content/amazon-web-services-awscloudtrail-iam-policy-with-excessive-wildcard-permissions-e73ebd34-4f04-4684-a5f0-dba820127ce8-29c5cf1d.md) | `EventName == "CreatePolicyVersion"` |
+| [AWSCloudTrail - IAM Privilege Escalation by Instance Profile Attachment](../content/amazon-web-services-awscloudtrail-iam-privilege-escalation-by-instance-profile-attachment-e1a91db8-f2b3-4531-bff6-da133d4f4f1a-179fea4f.md) | `EventName in "AddRoleToInstanceProfile,RemoveRoleFromInstanceProfile"` |
+| [AWSCloudTrail - IAM Privileged Role Attached to Instance](../content/amazon-web-services-awscloudtrail-iam-privileged-role-attached-to-instance-0db42a94-e7c8-4bf1-99a7-1a2fb4158212-7cba679d.md) | `EventName in "AddRoleToInstanceProfile,AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` |
+| [AWSCloudTrail - IAM Risky Role Name Created](../content/amazon-web-services-awscloudtrail-iam-risky-role-name-created-70c36558-e6d8-48b4-98b3-185d555cd5af-8cef1d4c.md) | `EventName == "CreateRole"` |
+| [AWSCloudTrail - IAM login profile updated](../content/amazon-web-services-awscloudtrail-iam-login-profile-updated-838f59d4-fe47-422b-819d-1be502940547-213a3c44.md) | `EventName == "UpdateLoginProfile"` |
+| [AWSCloudTrail - IAM suspicious STS AssumeRole from unseen identity](../content/amazon-web-services-awscloudtrail-iam-suspicious-sts-assumerole-from-unseen-identity-5b6ee21d-da53-46eb-827c-eab2a9ba3d2f-ce3eba1e.md) | `EventName == "AssumeRole"` |
+| [AWSCloudTrail - IAM user and group object changes](../content/amazon-web-services-awscloudtrail-iam-user-and-group-object-changes-d022a62c-643b-4e8a-b583-0230e32a96e4-6350d01a.md) | `EventName in "CreateUser,DeleteGroup,DeleteUser"` |
+| [AWSCloudTrail - Lambda function code updated](../content/amazon-web-services-awscloudtrail-lambda-function-code-updated-2dd2143b-6667-4a7a-b04f-98d22caeffac-c83df0f7.md) | `EventName startswith "UpdateFunctionCode"`<br>`EventSource == "lambda.amazonaws.com"` |
+| [AWSCloudTrail - Lambda function throttled](../content/amazon-web-services-awscloudtrail-lambda-function-throttled-d82ea1db-f600-4c9e-8ba8-d271e9c12eb8-bec1fd27.md) | `EventName startswith "PutFunctionConcurrency"` |
+| [AWSCloudTrail - Lambda layer imported from external account](../content/amazon-web-services-awscloudtrail-lambda-layer-imported-from-external-account-77d0aadc-aaea-4346-b61a-bf7ac6b71bba-6b1f9278.md) | `EventName startswith "CreateFunction"`<br>`EventName startswith "UpdateFunctionConfiguration"` |
+| [AWSCloudTrail - Multiple Failed Login Attempts Without MFA](../content/amazon-web-services-awscloudtrail-multiple-failed-login-attempts-without-mfa-bf130d1d-702b-4af6-9528-8bc4229e59f4-de20c91a.md) | `EventName == "ConsoleLogin"` |
+| [AWSCloudTrail - Network ACL entry deleted](../content/amazon-web-services-awscloudtrail-network-acl-entry-deleted-49bae199-ea04-4a2e-95a6-e3a1f68ab259-cd656d28.md) | `EventName == "DeleteNetworkAclEntry"` |
+| [AWSCloudTrail - RDS Master Password Changed](../content/amazon-web-services-awscloudtrail-rds-master-password-changed-b9b0fd12-d72d-4f66-a013-c1acdeea2670-b4879e68.md) | `EventName == "ModifyDBCluster"` |
+| [AWSCloudTrail - Root User New Access Key Created](../content/amazon-web-services-awscloudtrail-root-user-new-access-key-created-4055466c-8a84-44c6-91d0-46469f3ba0b9-667428fe.md) | `EventName == "CreateAccessKey"` |
+| [AWSCloudTrail - Route table attribute modifications](../content/amazon-web-services-awscloudtrail-route-table-attribute-modifications-3b7df29e-a798-4b6b-9ef7-73b9a3cf56a2-c81143cf.md) | `EventName in "CreateRoute,DeleteRoute,ReplaceRoute"` |
+| [AWSCloudTrail - S3 Bucket Deleted](../content/amazon-web-services-awscloudtrail-s3-bucket-deleted-356aa5a8-fa6f-4eb9-baa9-ffcf725e3e82-e409c947.md) | `EventName == "DeleteBucket"` |
+| [AWSCloudTrail - S3 Bucket Encryption Configuration Modified](../content/amazon-web-services-awscloudtrail-s3-bucket-encryption-configuration-modified-6eb59239-78c5-401d-acfa-5cb9b3d31cd4-3d80450e.md) | `EventName in "DeleteBucketEncryption,PutBucketEncryption"` |
+| [AWSCloudTrail - S3 Bucket Versioning Suspended](../content/amazon-web-services-awscloudtrail-s3-bucket-versioning-suspended-48c49b1d-2aa0-442b-96e3-cae6ad1251cd-25f51be2.md) | `EventName == "PutBucketVersioning"` |
+| [AWSCloudTrail - STS Token Suspicious Activity from Kubernetes Worker Node](../content/amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-kubernetes-worker-node-46685737-676a-4084-8e98-31b2998062db-8878da1d.md) |  |
+| [AWSCloudTrail - STS Token Suspicious Activity from Lambda](../content/amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-lambda-70a6e84f-6f3b-4ce1-83d6-ea6df9e7a9dd-57731e23.md) |  |
+| [AWSCloudTrail - STS token suspicious activity from ECS](../content/amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-ecs-67af1633-311f-4a94-bc8f-f904a54637b2-4431dce9.md) |  |
+| [AWSCloudTrail - STS token suspicious activity from Glue](../content/amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-glue-0cd3eb95-6c8e-4eeb-8338-a0decdc0a328-cb819178.md) |  |
+| [AWSCloudTrail - Subnet attribute modifications](../content/amazon-web-services-awscloudtrail-subnet-attribute-modifications-05167149-4670-4a9f-b34e-5a0a92243194-bedbff3d.md) | `EventName == "ModifySubnetAttribute"` |
+| [AWSCloudTrail - VPC attribute modifications](../content/amazon-web-services-awscloudtrail-vpc-attribute-modifications-a3a19731-9e82-49b6-9142-2dd570feefd5-972eed78.md) | `EventName == "ModifyVpcAttribute"` |
 
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
 
@@ -282,7 +291,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Exploit and Pentest Framework User Agent](../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.md) |  |
 
-### Workbooks (8)
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
+
+### Workbooks (17)
 
 **In solution [Amazon Web Services](../solutions/amazon-web-services.md):**
 
@@ -327,6 +342,20 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AWSS3](../content/github-only-awss3-8722dc32.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,GetCallerIdentity,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"`<br>`EventSource == "ec2.amazonaws.com"`<br>`UserIdentityType in "AssumedRole,IAMUser"` |
+| [AmazonWebServicesNetworkActivities](../content/github-only-amazonwebservicesnetworkactivities-3fb3ce58.md) | `EventName in "AllocateAddress,AssociateAddress,AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,CreateNetworkAcl,CreateSecurityGroup,DeleteNetworkAcl,DeleteSecurityGroup,DisassociateAddress,ReleaseAddress,ReplaceNetworkAclEntry,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"`<br>`EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"`<br>`EventSource == "ec2.amazonaws.com"` |
+| [AmazonWebServicesUserActivities](../content/github-only-amazonwebservicesuseractivities-59b7a9c6.md) | `EventName == "GetCallerIdentity"`<br>`EventName contains "Login"`<br>`EventName contains "login"`<br>`EventName contains "signin"`<br>`UserIdentityType in "AssumedRole,IAMUser"` |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `EventName !contains "Image"`<br>`EventName !contains "KeyPair"`<br>`EventName !contains "LaunchTemplate"`<br>`EventName !contains "Tags"`<br>`EventName !contains "Volume"`<br>`EventName startswith "authorize"`<br>`EventName startswith "create"`<br>`EventName startswith "delete"`<br>`EventName startswith "replace"`<br>`EventName startswith "revoke"` |
+
 ## Parsers Using This Table (3)
 
 ### ASIM Parsers (3)
@@ -343,9 +372,9 @@ References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other pars
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | - | 12 | - | - | **12** |
 | `EventName in "PutGroupPolicy,PutRolePolicy,PutUserPolicy"` | - | 11 | - | - | **11** |
-| `EventName == "ConsoleLogin"` | - | 4 | 1 | - | **5** |
+| `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy,CreatePolicy,CreatePolicyVersion"` | - | 10 | - | - | **10** |
+| `EventName == "ConsoleLogin"` | - | 6 | 1 | - | **7** |
 | `EventName == "DescribeImageScanFindings"` | - | 3 | - | - | **3** |
 | `EventName in "AttachGroupPolicy,AttachRolePolicy,AttachUserPolicy"` | - | 3 | - | - | **3** |
 | `EventName == "CreateAccessKey"` | - | 3 | - | - | **3** |
@@ -356,7 +385,7 @@ References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other pars
 | `EventName in "AuthorizeDBSecurityGroupIngress,CreateDBSecurityGroup,DeleteDBSecurityGroup,RevokeDBSecurityGroupIngress"` | - | 1 | - | - | **1** |
 | `EventName in "CreateInternetGateway,CreateNatGateway,CreateNetworkAclEntry,CreateRoute,CreateRouteTable"`<br>`EventSource != "apigateway.amazonaws.com"` | - | 1 | - | - | **1** |
 | `EventName == "GetCallerIdentity"`<br>`UserIdentityType == "AssumedRole"` | - | 1 | - | - | **1** |
-| `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"`<br>`RequestParameters contains "userData"` | - | 1 | - | - | **1** |
+| `EventName in "CreateLaunchTemplate,ModifyInstanceAttribute"` | - | 1 | - | - | **1** |
 | `EventName == "PutImageScanningConfiguration"` | - | 1 | - | - | **1** |
 | `EventName in "DeleteDetector,UpdateDetector"` | - | 1 | - | - | **1** |
 | `EventName in "AuthorizeSecurityGroupEgress,AuthorizeSecurityGroupIngress,RevokeSecurityGroupEgress,RevokeSecurityGroupIngress"` | - | 1 | - | - | **1** |
@@ -429,15 +458,15 @@ References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `AttachGroupPolicy` | - | 17 | - | - | **17** |
-| `AttachRolePolicy` | - | 17 | - | - | **17** |
-| `AttachUserPolicy` | - | 17 | - | - | **17** |
-| `CreatePolicyVersion` | - | 14 | - | - | **14** |
-| `CreatePolicy` | - | 13 | - | - | **13** |
+| `AttachGroupPolicy` | - | 15 | - | - | **15** |
+| `AttachRolePolicy` | - | 15 | - | - | **15** |
+| `AttachUserPolicy` | - | 15 | - | - | **15** |
+| `CreatePolicyVersion` | - | 12 | - | - | **12** |
 | `PutGroupPolicy` | - | 12 | - | - | **12** |
 | `PutUserPolicy` | - | 12 | - | - | **12** |
+| `CreatePolicy` | - | 11 | - | - | **11** |
 | `PutRolePolicy` | - | 11 | - | - | **11** |
-| `ConsoleLogin` | - | 6 | 1 | - | **7** |
+| `ConsoleLogin` | - | 8 | 1 | - | **9** |
 | `CreateAccessKey` | - | 5 | - | - | **5** |
 | `CreateUser` | 1 | 3 | - | - | **4** |
 | `GetObject` | - | 4 | - | - | **4** |
@@ -583,7 +612,7 @@ References by type: 1 connectors, 97 content items, 3 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `contains userData` | - | 2 | - | - | **2** |
+| `contains userData` | - | 1 | - | - | **1** |
 
 ### Resources
 

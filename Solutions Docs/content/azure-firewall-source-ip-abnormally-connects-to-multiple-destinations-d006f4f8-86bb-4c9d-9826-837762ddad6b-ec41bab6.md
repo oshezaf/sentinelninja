@@ -13,7 +13,8 @@ Identifies source IP that abnormally connects to multiple destinations according
 | **Type** | Hunting Query |
 | **Solution** | [Azure Firewall](../solutions/azure-firewall.md) |
 | **ID** | `d006f4f8-86bb-4c9d-9826-837762ddad6b` |
-| **Tactics** | Execution, LateralMovement |
+| **Tactics** | CommandAndControl, LateralMovement |
+| **Techniques** | T1021, T1570 |
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Hunting%20Queries/Azure%20Firewall%20-%20Source%20IP%20Abnormally%20Connects%20to%20Multiple%20Destinations.yaml) |
 

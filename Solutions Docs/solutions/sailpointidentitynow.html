@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SailPoint for Microsoft Sentinel &mdash; Solutions Analyzer</title>
+<title>SailPointIdentityNow &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,8 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="sailpoint-for-microsoft-sentinel">SailPoint for Microsoft Sentinel</h1>
-<p><em>Solution: SailPointIdentityNow</em></p>
+<h1 id="sailpointidentitynow">SailPointIdentityNow</h1>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="SailPointIdentityNow Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
@@ -31,11 +30,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">SailPoint</td>
+<td style="text-align: left;">Microsoft Corporation</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Support Tier</strong></td>
-<td style="text-align: left;">Partner</td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Categories</strong></td>
@@ -43,7 +46,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.0</td>
+<td style="text-align: left;">3.0.1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -57,17 +60,14 @@
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow">SailPointIdentityNow</a></td>
 </tr>
-<tr>
-<td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sailpoint1582673310610.sentinel_offering">Azure Marketplace</a> · Rating: ★★★★★ 4.7/5 (170 ratings) · Popularity: 🟢 High (85%)</td>
-</tr>
 </tbody>
 </table>
-<p>The <a href="https://www.sailpoint.com/">SailPoint Integration</a> solution provides the capability to ingest SailPoint IdentityNow search events into Microsoft Sentinel through the REST API. </p>
-<p>** Underlying Microsoft Technologies used: ** </p>
+<p>The <a href="https://www.sailpoint.com/">SailPoint Integration</a> solution provides the capability to ingest SailPoint IdentityNow search events into Microsoft Sentinel through the REST API. The solution includes two data connectors: a legacy Azure Function-based connector and a Codeless Connector Framework (CCF) based connector. </p>
+<p>** Underlying Microsoft Technologies used: ** </p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs: </p>
-<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a> </p>
-<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a></p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a> <em>(used by the Azure Function-based connector)</em> </p>
+<p>b. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a> <em>(used by the Azure Function-based connector)</em> </p>
+<p>c. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Microsoft Sentinel Codeless Connector Framework</a> <em>(used by the CCF-based connector)</em></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -75,15 +75,16 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/sailpointidentitynow.html">SailPoint IdentityNow</a> 🔶</li>
+<li><a href="../connectors/sailpointidentitynowconnector.html">SailPoint IdentityNow (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -94,9 +95,14 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../tables/sailpointidn-eventsv2-cl.html"><code>SailPointIDN_EventsV2_CL</code></a></td>
+<td><a href="../connectors/sailpointidentitynowconnector.html">SailPoint IdentityNow (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><a href="../tables/sailpointidn-events-cl.html"><code>SailPointIDN_Events_CL</code></a> 🔶</td>
 <td><a href="../connectors/sailpointidentitynow.html">SailPoint IdentityNow</a></td>
-<td>Analytics</td>
+<td>-</td>
 </tr>
 <tr>
 <td><a href="../tables/sailpointidn-triggers-cl.html"><code>SailPointIDN_Triggers_CL</code></a> 🔶</td>
@@ -145,51 +151,38 @@
 <td style="text-align: left;"><a href="../content/sailpointidentitynow-sailpointidentitynoweventtype-48bb92e2-bad4-4fd4-9684-26cb188299b7-bbc83429.html">SailPointIdentityNowEventType</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess</td>
-<td style="text-align: left;"><a href="../tables/sailpointidn-events-cl.html"><code>SailPointIDN_Events_CL</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/sailpointidentitynow-sailpointidentitynoweventtypetechnicalname-2151e8ea-4838-4c74-be12-4d6a950dde7a-679f873f.html">SailPointIdentityNowEventTypeTechnicalName</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess</td>
-<td style="text-align: left;"><a href="../tables/sailpointidn-events-cl.html"><code>SailPointIDN_Events_CL</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/sailpointidentitynow-sailpointidentitynowfailedevents-c3835197-fd07-447e-a0ac-7540d51a1f64-dc29bee3.html">SailPointIdentityNowFailedEvents</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess</td>
-<td style="text-align: left;"><a href="../tables/sailpointidn-events-cl.html"><code>SailPointIDN_Events_CL</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/sailpointidentitynow-sailpointidentitynowfailedeventsbasedontime-175b79ef-0fc3-4b27-b92a-89b2db6c85c2-086ffffa.html">SailPointIdentityNowFailedEventsBasedOnTime</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess</td>
-<td style="text-align: left;"><a href="../tables/sailpointidn-events-cl.html"><code>SailPointIDN_Events_CL</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/sailpointidentitynow-sailpointidentitynowuserwithfailedevent-2a215222-bfc5-4858-a530-6d4088ebfa15-2928054a.html">SailPointIdentityNowUserWithFailedEvent</a></td>
 <td style="text-align: left;">High</td>
 <td style="text-align: left;">InitialAccess</td>
-<td style="text-align: left;"><a href="../tables/sailpointidn-events-cl.html"><code>SailPointIDN_Events_CL</code></a></td>
+<td style="text-align: left;">-</td>
 </tr>
 </tbody>
 </table>
 <h2 id="release-notes">Release Notes</h2>
-<table>
-<thead>
-<tr>
-<th><strong>Version</strong></th>
-<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-<th><strong>Change History</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3.0.0</td>
-<td>28-08-2024</td>
-<td><strong>Data Connector</strong> instruction updated</td>
-</tr>
-</tbody>
-</table>
+<p>| <strong>Version</strong> | <strong>Date Modified (DD-MM-YYYY)</strong> | <strong>Change History</strong>                          |
+| 3.0.1       | 11-05-2026                     | Added CCF <strong>Data Connector</strong> support with one  <strong>Parser</strong> for backward compatibility and new schema for SailPoint IdentityNow events; updated <strong>Analytic Rules</strong> to use the parser alias and new connector ID |
+| 3.0.0       | 28-08-2024                     | <strong>Data Connector</strong> instruction updated      |</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

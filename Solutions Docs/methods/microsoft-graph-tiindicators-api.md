@@ -19,7 +19,7 @@
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | 2 |
+| [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | 2 |
 | **Total** | **2** |
 
 ## Connectors Using This API
@@ -28,13 +28,13 @@
 
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
-| [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Cognyte Technologies Israel Ltd | 1 | [CognyteLuminar](../solutions/cognyteluminar.md) |
+| [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md) | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | Cognyte Technologies Israel Ltd | 1 | [CognyteLuminar](../solutions/cognyteluminar.md) |
 
 ### Deprecated Connectors 🚫
 
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
-| 🚫 [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Mimecast | 1 | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
+| 🚫 [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | Mimecast | 1 | [MimecastTIRegional](../solutions/mimecasttiregional.md) |
 
 ---
 

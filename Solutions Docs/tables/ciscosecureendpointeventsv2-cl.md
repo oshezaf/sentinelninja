@@ -18,12 +18,13 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (194 columns)
+## Schema (195 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/CiscoSecureEndpointEventsV2_CL.json)
 
 | Column Name | Type |
 |:------------|:-----|
+| _ItemId | string |
 | BpDataAudit | bool |
 | BpDataDemo | bool |
 | BpDataDetailsActions | string |
@@ -279,7 +280,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Cisco Secure Endpoint Overview](../content/cisco-secure-endpoint-cisco-secure-endpoint-overview-653ce4d3.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimAlertEventCiscoSecureEndpoint](../asim/asimalerteventciscosecureendpoint.md) | AlertEvent | Cisco Secure Endpoint |  |
 
 ### Other Parsers (1)
 

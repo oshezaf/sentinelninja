@@ -176,10 +176,10 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
+| [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
-| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
-| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
+| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
+| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
 
 ---
 
@@ -201,17 +201,34 @@ This table is ingested by the following connectors:
 |:-------|:-------|:--------|:-------------------|
 | [ASimFileEventNative](../asim/asimfileeventnative.md) | FileEvent | Native |  |
 
-### Other Parsers (1)
+### Other Parsers (1) — Selection Criteria: `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"`
 
-| Parser | Solution | Selection Criteria |
-|:-------|:---------|:-------------------|
-| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |  |
+| Parser | Solution |
+|:-------|:---------|
+| [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 
 ## Resource Types
 
 This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/asimtables`
+
+## Selection Criteria Summary (2 criteria, 4 total references)
+
+References by type: 3 connectors, 0 content items, 0 ASIM parsers, 1 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | 1 | - | - | 1 | **2** |
+| `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 2 | - | - | - | **2** |
+| **Total** | **3** | **0** | **0** | **1** | **4** |
+
+### EventProduct / EventVendor
+
+| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Falcon Data Replicator` | `CrowdStrike` | 1 | - | - | 1 | **2** |
+| `Carbon Black Cloud` | `VMWare` | 2 | - | - | - | **2** |
 
 ---
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚠️ Agari Phishing Defense and Brand Protection &mdash; Solutions Analyzer</title>
+<title>⚠️ 🔍 Agari Phishing Defense and Brand Protection &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,9 +15,10 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="agari-phishing-defense-and-brand-protection">⚠️ Agari Phishing Defense and Brand Protection</h1>
+<h1 id="agari-phishing-defense-and-brand-protection">⚠️ 🔍 Agari Phishing Defense and Brand Protection</h1>
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
 <p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -61,7 +62,7 @@
 </tr>
 </tbody>
 </table>
-<p>This connector uses a Agari REST API connection to push data into Azure Sentinel Log Analytics.</p>
+<p>This connector uses a Agari REST API connection to push data into Microsoft Sentinel Log Analytics.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
@@ -104,11 +105,11 @@
 <p><strong>Custom Permissions:</strong>
 - <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
 - <strong>Agari Phishing Defense, Phishing Response or Brand Protection API Client ID and Secret</strong>: Ensure you have your Client ID and Secret keys. Instructions can be found on the <a href="https://developers.agari.com/agari-platform/docs/quick-start">Agari Developers Site</a>.
-- <strong>(Optional) Microsoft Security Graph API</strong>: The Agari Function App has the ability to share threat intelleigence with Sentinel via the Security Graph API. To use this feature, you will need to enable the <a href="https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence">Sentinel Threat Intelligence Platforms connector</a> as well as register an application in Azure Active Directory.</p>
+- <strong>(Optional) Microsoft Security Graph API</strong>: The Agari Function App has the ability to share threat intelleigence with Microsoft Sentinel via the Security Graph API. To use this feature, you will need to enable the <a href="https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence">Microsoft Sentinel Threat Intelligence Platforms connector</a> as well as register an application in Azure Active Directory.</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
-<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Agari APIs to pull its logs into Azure Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the Agari APIs to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
 <p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
 </blockquote>
 <p><strong>1. STEP 1 - Get your Agari API credentials</strong></p>
@@ -119,7 +120,7 @@
 <li>Copy both the client_id and client_secret that are generated</li>
 </ol>
 <p><strong>2. STEP 2 - (Optional) Enable the Security Graph API</strong></p>
-<p>Follow the instrcutions found on article <a href="https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence#connect-azure-sentinel-to-your-threat-intelligence-platform">Connect Azure Sentinel to your threat intelligence platform</a>. Once the application is created you will need to record the Tenant ID, Client ID and Client Secret.</p>
+<p>Follow the instrcutions found on article <a href="https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence#connect-azure-sentinel-to-your-threat-intelligence-platform">Connect Microsoft Sentinel to your threat intelligence platform</a>. Once the application is created you will need to record the Tenant ID, Client ID and Client Secret.</p>
 <p><strong>3. STEP 3 - Deploy the connector and the associated Azure Function</strong></p>
 <blockquote>
 <p><strong>IMPORTANT:</strong> Before deploying the Agari Connector, have the Workspace ID and Workspace Primary Key (can be copied from the following), as well as the Agari API credentials from the previous step.

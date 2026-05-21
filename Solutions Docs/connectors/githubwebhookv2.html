@@ -168,7 +168,7 @@
 <li>Choose content type as "application/json".</li>
 <li>Subscribe for events and Click on "Add Webhook"</li>
 </ol>
-<p><em>Now we are done with the GitHub Webhook V2 configuration. Once GitHub events are triggered, after the delay of 5 to 10 mins, you should be able to see all the transactional events from GitHub in the LogAnalytics workspace table called <code>GitHubAdvancedSecurityAlerts_CL</code>. Use the <code>githubscanaudit()</code> parser function for a unified view that includes data from both the legacy <code>githubscanaudit_CL</code> and new <code>GitHubAdvancedSecurityAlerts_CL</code> tables.</em></p>
+<p><em>Now we are done with the GitHub Webhook V2 configuration. Once GitHub events are triggered, after the delay of 5 to 10 mins, you should be able to see all the transactional events from GitHub in the LogAnalytics workspace table called <code>GitHubAdvancedSecurityAlerts_CL</code>. Use the <code>githubscanaudit</code> parser function for a unified view that includes data from both the legacy <code>githubscanaudit_CL</code> and new <code>GitHubAdvancedSecurityAlerts_CL</code> tables.</em></p>
 <p><strong>4. ⚠️ IMPORTANT: Migrating from GitHub Webhook V1 to V2</strong></p>
 <p>If you are currently using the original <strong>GitHub (using Webhooks)</strong> connector (<code>githubscanaudit_CL</code> table), follow these steps to migrate to V2 without disrupting existing data or breaking workbooks and analytic rules.</p>
 <p><strong>Before you begin:</strong> Both connectors can run side-by-side. V1 data lands in <code>githubscanaudit_CL</code> and V2 data lands in <code>GitHubAdvancedSecurityAlerts_CL</code>. The <code>githubscanaudit()</code> parser function unions both tables so all workbooks, analytic rules, and hunting queries continue to work unchanged during and after migration.</p>
@@ -244,7 +244,7 @@
 <tr>
 <td><strong>Unified view</strong></td>
 <td><code>githubscanaudit_CL</code> only</td>
-<td><code>githubscanaudit()</code> parser (unions both tables)</td>
+<td><code>githubscanaudit</code> parser (unions both tables)</td>
 </tr>
 <tr>
 <td><strong>Recommendation</strong></td>
@@ -411,15 +411,15 @@ DCR → Log Analytics Workspace → GitHubAdvancedSecurityAlerts_CL table
 <td>All V2 events</td>
 </tr>
 <tr>
-<td><code>githubscanaudit() \| sort by TimeGenerated desc</code></td>
+<td><code>githubscanaudit \| sort by TimeGenerated desc</code></td>
 <td>Unified view (V1 + V2, all historical data)</td>
 </tr>
 <tr>
-<td><code>GitHubCodeScanningData()</code></td>
-<td>Code scanning alerts (uses <code>githubscanaudit()</code> — works with both tables)</td>
+<td><code>GitHubCodeScanningData</code></td>
+<td>Code scanning alerts (uses <code>githubscanaudit</code> — works with both tables)</td>
 </tr>
 <tr>
-<td><code>GitHubDependabotData()</code></td>
+<td><code>GitHubDependabotData</code></td>
 <td>Dependabot vulnerability alerts</td>
 </tr>
 <tr>
@@ -432,7 +432,7 @@ DCR → Log Analytics Workspace → GitHubAdvancedSecurityAlerts_CL table
 <blockquote>
 <p>⚠️ <strong>Microsoft is replacing the CLv1 HTTP Data Collector API (used by the original GitHub Webhook connector) with the Logs Ingestion API (CLv2). V2 is the recommended replacement. Migrate existing V1 deployments to V2 to remain on a supported ingestion path.</strong></p>
 </blockquote>
-<p>Because both tables share identical column names (<code>_s</code> / <code>_d</code> / <code>_b</code> suffixes), all existing workbooks, analytic rules, hunting queries, and parsers (<code>GitHubCodeScanningData</code>, <code>GitHubDependabotData</code>, <code>GitHubSecretScanningData</code>) continue to work without modification via the <code>githubscanaudit()</code> union parser.</p>
+<p>Because both tables share identical column names (<code>_s</code> / <code>_d</code> / <code>_b</code> suffixes), all existing workbooks, analytic rules, hunting queries, and parsers (<code>GitHubCodeScanningData</code>, <code>GitHubDependabotData</code>, <code>GitHubSecretScanningData</code>) continue to work without modification via the <code>githubscanaudit</code> union parser.</p>
 <p><strong>Migration Steps:</strong></p>
 <ol>
 <li>
@@ -447,7 +447,7 @@ DCR → Log Analytics Workspace → GitHubAdvancedSecurityAlerts_CL table
 <li>
 <p><strong>Validate the unified parser.</strong> Run the following in Log Analytics to confirm events appear:
    <code>kql
-   githubscanaudit()
+   githubscanaudit
    | sort by TimeGenerated desc
    | take 50</code></p>
 </li>
@@ -458,7 +458,7 @@ DCR → Log Analytics Workspace → GitHubAdvancedSecurityAlerts_CL table
    - This prevents any residual processing while freeing up Function App compute costs.</p>
 </li>
 <li>
-<p><strong>Retain V1 historical data.</strong> The <code>githubscanaudit_CL</code> table data is subject to your workspace retention policy. No action is required — historical V1 data remains queryable via <code>githubscanaudit()</code> until it ages out.</p>
+<p><strong>Retain V1 historical data.</strong> The <code>githubscanaudit_CL</code> table data is subject to your workspace retention policy. No action is required — historical V1 data remains queryable via <code>githubscanaudit</code> until it ages out.</p>
 </li>
 </ol>
 <blockquote>

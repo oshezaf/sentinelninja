@@ -2,7 +2,7 @@
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
-<img src="raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Spur_Context_API.svg" alt="Spur Logo" width="75" height="75">
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Spur_Context_API.svg" alt="Spur Logo" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -116,9 +116,9 @@ Before deploying the solution, you need to create an App Registration in Azure:
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**       |
-|-------------|--------------------------------|--------------------------|
-| 3.0.0       | 25-04-2026                     | Initial Solution Release.|
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                        |
+|-------------|--------------------------------|-------------------------------------------|
+| 3.0.0       | 11-05-2026                     | Initial Solution Release.<br> Logo Fixed. |
 
 ---
 

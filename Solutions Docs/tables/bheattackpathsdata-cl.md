@@ -74,7 +74,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) |  |
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) |  |
 
 ---
 

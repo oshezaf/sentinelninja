@@ -1,6 +1,8 @@
-# ⚠️ Agari Phishing Defense and Brand Protection
+# ⚠️ 🔍 Agari Phishing Defense and Brand Protection
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="75" height="75">
 
@@ -20,7 +22,7 @@
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 
-This connector uses a Agari REST API connection to push data into Azure Sentinel Log Analytics.
+This connector uses a Agari REST API connection to push data into Microsoft Sentinel Log Analytics.
 
 ## Tables Ingested
 
@@ -43,13 +45,13 @@ This connector ingests data into the following tables:
 **Custom Permissions:**
 - **Microsoft.Web/sites permissions**: Read and write permissions to Azure Functions to create a Function App is required. [See the documentation to learn more about Azure Functions](https://docs.microsoft.com/azure/azure-functions/).
 - **Agari Phishing Defense, Phishing Response or Brand Protection API Client ID and Secret**: Ensure you have your Client ID and Secret keys. Instructions can be found on the [Agari Developers Site](https://developers.agari.com/agari-platform/docs/quick-start).
-- **(Optional) Microsoft Security Graph API**: The Agari Function App has the ability to share threat intelleigence with Sentinel via the Security Graph API. To use this feature, you will need to enable the [Sentinel Threat Intelligence Platforms connector](https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence) as well as register an application in Azure Active Directory.
+- **(Optional) Microsoft Security Graph API**: The Agari Function App has the ability to share threat intelleigence with Microsoft Sentinel via the Security Graph API. To use this feature, you will need to enable the [Microsoft Sentinel Threat Intelligence Platforms connector](https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence) as well as register an application in Azure Active Directory.
 
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
 
->**NOTE:** This connector uses Azure Functions to connect to the Agari APIs to pull its logs into Azure Sentinel. This might result in additional data ingestion costs. Check the [Azure Functions pricing page](https://azure.microsoft.com/pricing/details/functions/) for details.
+>**NOTE:** This connector uses Azure Functions to connect to the Agari APIs to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the [Azure Functions pricing page](https://azure.microsoft.com/pricing/details/functions/) for details.
 
 >**(Optional Step)** Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. [Follow these instructions](https://docs.microsoft.com/azure/app-service/app-service-key-vault-references) to use Azure Key Vault with an Azure Function App.
 
@@ -62,7 +64,7 @@ This connector ingests data into the following tables:
 
 **2. STEP 2 - (Optional) Enable the Security Graph API**
 
-Follow the instrcutions found on article [Connect Azure Sentinel to your threat intelligence platform](https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence#connect-azure-sentinel-to-your-threat-intelligence-platform). Once the application is created you will need to record the Tenant ID, Client ID and Client Secret.
+Follow the instrcutions found on article [Connect Microsoft Sentinel to your threat intelligence platform](https://docs.microsoft.com/azure/sentinel/connect-threat-intelligence#connect-azure-sentinel-to-your-threat-intelligence-platform). Once the application is created you will need to record the Tenant ID, Client ID and Client Secret.
 
 **3. STEP 3 - Deploy the connector and the associated Azure Function**
 

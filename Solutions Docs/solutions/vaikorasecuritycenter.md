@@ -1,6 +1,6 @@
-# ⚠️ VaikoraSecurityCenter
+# Vaikora AI Agent Signals for Microsoft Defender for Cloud
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: VaikoraSecurityCenter*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="VaikoraSecurityCenter Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2026-04-02 |
+| **Last Updated** | 2026-05-07 |
 | **Solution Folder** | [Vaikora-AzureSecurityCenter](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-AzureSecurityCenter) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.vaikora-security-center-connector) · Popularity: ⚪ Very Low (0%) |
 
 The Vaikora Microsoft Defender for Cloud solution integrates [Vaikora](https://vaikora.com) AI-driven security signal detection with Microsoft Sentinel and Microsoft Defender for Cloud. A Logic App playbook polls the Vaikora API every 6 hours, filters high-severity actions, anomalies, and threat detections, and writes them to a custom Log Analytics table (Vaikora_SecurityAlerts_CL). Analytic rules then surface these signals in Sentinel for investigation.
 

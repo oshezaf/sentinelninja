@@ -6,7 +6,7 @@
 
 ---
 
-Detects multiple failed logins to same destinations.
+Detects multiple failed login attempts to the same Claroty SRA destination site within a 5-minute window. The rule counts failed logins per site and alerts when the number of failures exceeds the threshold value of 10.
 
 | Attribute | Value |
 |:----------|:------|

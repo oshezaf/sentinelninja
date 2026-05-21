@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">2.0.0</td>
+<td style="text-align: left;">3.0.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -78,12 +78,13 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/elasticagent.html">Elastic Agent</a></li>
+<li><a href="../connectors/elasticagentconnector.html">Elastic Agent (via Codeless Connector Framework)</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -94,6 +95,11 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../tables/elasticagentlogsv2-cl.html"><code>ElasticAgentLogsV2_CL</code></a></td>
+<td><a href="../connectors/elasticagentconnector.html">Elastic Agent (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><a href="../tables/elasticagentlogs-cl.html"><code>ElasticAgentLogs_CL</code></a></td>
 <td><a href="../connectors/elasticagent.html">Elastic Agent</a></td>
 <td>-</td>
@@ -101,22 +107,18 @@
 </tbody>
 </table>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>1 content item(s)</strong> (0 in solution, 1 discovered 🔍):</p>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Content Type</th>
-<th style="text-align: right;">Total</th>
-<th style="text-align: right;">In Solution</th>
-<th style="text-align: right;">Discovered</th>
+<th style="text-align: left;">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">Parsers</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
 </tr>
 </tbody>
 </table>
@@ -131,15 +133,34 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../parsers/elasticagentevent.html">ElasticAgentEvent</a> ⚠️</td>
+<td style="text-align: left;"><a href="../parsers/elasticagentevent.html">ElasticAgentEvent</a></td>
 <td style="text-align: left;">-</td>
 <td style="text-align: left;"><a href="../tables/elasticagentlogs-cl.html"><code>ElasticAgentLogs_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
-</blockquote>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>11-05-2026</td>
+<td><strong>Data Connector</strong> via Codeless Connector Framework added</td>
+</tr>
+<tr>
+<td>2.0.0</td>
+<td>14-06-2022</td>
+<td><strong>Data Connector</strong> customs added</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

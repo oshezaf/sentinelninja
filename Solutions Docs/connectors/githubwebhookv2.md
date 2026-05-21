@@ -120,7 +120,7 @@ This connector ingests data into the following tables:
  4. Choose content type as "application/json".
  5. Subscribe for events and Click on "Add Webhook"
 
-*Now we are done with the GitHub Webhook V2 configuration. Once GitHub events are triggered, after the delay of 5 to 10 mins, you should be able to see all the transactional events from GitHub in the LogAnalytics workspace table called `GitHubAdvancedSecurityAlerts_CL`. Use the `githubscanaudit()` parser function for a unified view that includes data from both the legacy `githubscanaudit_CL` and new `GitHubAdvancedSecurityAlerts_CL` tables.*
+*Now we are done with the GitHub Webhook V2 configuration. Once GitHub events are triggered, after the delay of 5 to 10 mins, you should be able to see all the transactional events from GitHub in the LogAnalytics workspace table called `GitHubAdvancedSecurityAlerts_CL`. Use the `githubscanaudit` parser function for a unified view that includes data from both the legacy `githubscanaudit_CL` and new `GitHubAdvancedSecurityAlerts_CL` tables.*
 
 **4. ⚠️ IMPORTANT: Migrating from GitHub Webhook V1 to V2**
 
@@ -172,7 +172,7 @@ As of now the solution supports the following GitHub Advanced Security events:
 | **Auth** | SharedKey (`WorkspaceID` + `WorkspaceKey`) | Managed Identity (`DefaultAzureCredential`) |
 | **Table** | `githubscanaudit_CL` | `GitHubAdvancedSecurityAlerts_CL` |
 | **Column names** | Auto-generated `_s` / `_d` / `_b` suffixes | Explicit schema, identical `_s` / `_d` / `_b` names |
-| **Unified view** | `githubscanaudit_CL` only | `githubscanaudit()` parser (unions both tables) |
+| **Unified view** | `githubscanaudit_CL` only | `githubscanaudit` parser (unions both tables) |
 | **Recommendation** | Migrate to V2 | ✅ Recommended for all deployments |
 
 ## Architecture
@@ -298,16 +298,16 @@ After 5–10 minutes (Log Analytics needs time to spin up resources on first ing
 | Query | Description |
 |---|---|
 | `GitHubAdvancedSecurityAlerts_CL \| sort by TimeGenerated desc` | All V2 events |
-| `githubscanaudit() \| sort by TimeGenerated desc` | Unified view (V1 + V2, all historical data) |
-| `GitHubCodeScanningData()` | Code scanning alerts (uses `githubscanaudit()` — works with both tables) |
-| `GitHubDependabotData()` | Dependabot vulnerability alerts |
+| `githubscanaudit \| sort by TimeGenerated desc` | Unified view (V1 + V2, all historical data) |
+| `GitHubCodeScanningData` | Code scanning alerts (uses `githubscanaudit` — works with both tables) |
+| `GitHubDependabotData` | Dependabot vulnerability alerts |
 | `GitHubSecretScanningData()` | Secret scanning alerts |
 
 ## Migrating from V1
 
 > ⚠️ **Microsoft is replacing the CLv1 HTTP Data Collector API (used by the original GitHub Webhook connector) with the Logs Ingestion API (CLv2). V2 is the recommended replacement. Migrate existing V1 deployments to V2 to remain on a supported ingestion path.**
 
-Because both tables share identical column names (`_s` / `_d` / `_b` suffixes), all existing workbooks, analytic rules, hunting queries, and parsers (`GitHubCodeScanningData`, `GitHubDependabotData`, `GitHubSecretScanningData`) continue to work without modification via the `githubscanaudit()` union parser.
+Because both tables share identical column names (`_s` / `_d` / `_b` suffixes), all existing workbooks, analytic rules, hunting queries, and parsers (`GitHubCodeScanningData`, `GitHubDependabotData`, `GitHubSecretScanningData`) continue to work without modification via the `githubscanaudit` union parser.
 
 **Migration Steps:**
 
@@ -319,7 +319,7 @@ Because both tables share identical column names (`_s` / `_d` / `_b` suffixes), 
 
 4. **Validate the unified parser.** Run the following in Log Analytics to confirm events appear:
    ```kql
-   githubscanaudit()
+   githubscanaudit
    | sort by TimeGenerated desc
    | take 50
    ```
@@ -329,7 +329,7 @@ Because both tables share identical column names (`_s` / `_d` / `_b` suffixes), 
    - Under **Overview**, click **Stop**.
    - This prevents any residual processing while freeing up Function App compute costs.
 
-6. **Retain V1 historical data.** The `githubscanaudit_CL` table data is subject to your workspace retention policy. No action is required — historical V1 data remains queryable via `githubscanaudit()` until it ages out.
+6. **Retain V1 historical data.** The `githubscanaudit_CL` table data is subject to your workspace retention policy. No action is required — historical V1 data remains queryable via `githubscanaudit` until it ages out.
 
 > **Note:** Do not delete V1 Function App resources until you are satisfied V2 is fully operational and you do not need to roll back.
 

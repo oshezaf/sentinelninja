@@ -33,15 +33,15 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Agari</td>
+<td style="text-align: left;">Microsoft Corporation</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Support Tier</strong></td>
-<td style="text-align: left;">Partner</td>
+<td style="text-align: left;">Microsoft</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Support Link</strong></td>
-<td style="text-align: left;"><a href="https://support.agari.com/hc/en-us/articles/360000645632-How-to-access-Agari-Support">https://support.agari.com/hc/en-us/articles/360000645632-How-to-access-Agari-Support</a></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Categories</strong></td>
@@ -49,15 +49,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">2.0.0</td>
+<td style="text-align: left;">3.0.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
-<td style="text-align: left;">Agari</td>
+<td style="text-align: left;">Agari - support@agari.com</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>First Published</strong></td>
-<td style="text-align: left;">2022-05-02</td>
+<td style="text-align: left;">2026-05-14</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -65,22 +65,24 @@
 </tr>
 </tbody>
 </table>
-<p>Agari Phishing Defense and Brand Protection Solution for Microsoft Azure Sentinel makes it easy to connect Agari email threat data to the Microsoft Sentinel SOAR, improving visibility into email threats, accelerating incident response, and driving SOC efficiency. The Agari Data Connector included in the solution supports every Agari product: <a href="https://www.agari.com/insights/solution-briefs/agari-brand-protection/">Agari Brand Protection</a>, <a href="https://www.agari.com/products/phishing-defense/">Agari Phishing Defense</a>, and <a href="https://www.agari.com/products/phishing-response/">Agari Phishing Response</a>. Leveraging Agari data to enrich and share threat intelligence across multiple applications helps safeguard your entire infrastructure against email threats. For more details about this solution refer to <a href="https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/">https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/</a></p>
+<p>Agari Phishing Defense and Brand Protection Solution for Microsoft Sentinel makes it easy to connect Agari email threat data to the Microsoft Sentinel SOAR, improving visibility into email threats, accelerating incident response, and driving SOC efficiency. The Agari Data Connector included in the solution supports every Agari product: <a href="https://www.agari.com/insights/solution-briefs/agari-brand-protection/">Agari Brand Protection</a>, <a href="https://www.agari.com/products/phishing-defense/">Agari Phishing Defense</a>, and <a href="https://www.agari.com/products/phishing-response/">Agari Phishing Response</a>. Leveraging Agari data to enrich and share threat intelligence across multiple applications helps safeguard your entire infrastructure against email threats. For more details about this solution refer to <a href="https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/">https://www.agari.com/insights/solution-briefs/microsoft-azure-sentinel-integration/</a></p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
-<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:
- a. <a href="https://azure.microsoft.com/services/functions/#overview">Azure Functions</a>
-  b. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a>
-c. <a href="https://docs.microsoft.com/graph/api/resources/security-api-overview?view=graph-rest-1.0">Microsoft Security Graph API</a></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
+<p>b. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Log Ingestion API</a></p>
+<p>c. <a href="https://docs.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Data Collection Rules (DCR)</a></p>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
-<li><a href="../connectors/agari.html">Agari Phishing Defense and Brand Protection</a> 🔶</li>
+<li><a href="../connectors/agari.html">Agari Phishing Defense and Brand Protection</a> ⚠️ 🔶</li>
+<li><a href="../connectors/agariconnector.html">Fortra Agari Data Connector (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
+<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>3 table(s)</strong>:</p>
+<p>This solution uses <strong>8 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -90,6 +92,31 @@ c. <a href="https://docs.microsoft.com/graph/api/resources/security-api-overview
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="../tables/agariapdpolicylog-cl.html"><code>AgariAPDPolicyLog_CL</code></a></td>
+<td><a href="../connectors/agariconnector.html">Fortra Agari Data Connector (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/agariapdtclog-cl.html"><code>AgariAPDTCLog_CL</code></a></td>
+<td><a href="../connectors/agariconnector.html">Fortra Agari Data Connector (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/agariaprinvestigationslog-cl.html"><code>AgariAPRInvestigationsLog_CL</code></a></td>
+<td><a href="../connectors/agariconnector.html">Fortra Agari Data Connector (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/agaribpalertslog-cl.html"><code>AgariBPAlertsLog_CL</code></a></td>
+<td><a href="../connectors/agariconnector.html">Fortra Agari Data Connector (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/agaribpthreatfeedsubs-cl.html"><code>AgariBPThreatFeedSubs_CL</code></a></td>
+<td><a href="../connectors/agariconnector.html">Fortra Agari Data Connector (via Codeless Connector Framework)</a></td>
+<td>-</td>
+</tr>
 <tr>
 <td><a href="../tables/agari-apdpolicy-log-cl.html"><code>agari_apdpolicy_log_CL</code></a> 🔶</td>
 <td><a href="../connectors/agari.html">Agari Phishing Defense and Brand Protection</a></td>
@@ -110,6 +137,23 @@ c. <a href="https://docs.microsoft.com/graph/api/resources/security-api-overview
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>14-05-2026</td>
+<td>Created a Data Connector for Agari CCF Container.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>

@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 374 |
-| **Solutions** | 58 |
+| **Playbooks using** | 375 |
+| **Solutions** | 59 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 
 ## Playbooks Using This Connector
@@ -17,10 +17,10 @@
 |:---------|:---------|------------:|--------:|
 | [2S-MISP-Forwarder](../content/standalone-content-2s-misp-forwarder-5acdf96c.md) | 📄 Standalone | 0 | 1 |
 | [2S-MISP-Orchestrator](../content/standalone-content-2s-misp-orchestrator-036fcfa3.md) | 📄 Standalone | 0 | 9 |
+| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
 | [[Deprecated] Intel 471 Malware Intelligence to Graph Security](../content/intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | [Intel471](../solutions/intel471.md) | 0 | 1 |
 | [AD4IoT-AutoAlertStatusSync](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-autoalertstatussync-23507deb.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 0 | 1 |
 | [AD4IoT-CVEAutoWorkflow](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-cveautoworkflow-d92bf631.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 0 | 1 |
-| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-4cd7a68f.md) | [Dynatrace](../solutions/dynatrace.md) | 0 | 1 |
 | [Add IP Entity To Named Location](../content/standalone-content-add-ip-entity-to-named-location-93d6bf5a.md) | 📄 Standalone | 0 | 3 |
 | [Add IP Entity To Network Security Group](../content/standalone-content-add-ip-entity-to-network-security-group-6470a74d.md) | 📄 Standalone | 0 | 2 |
 | [Add URL - Netskope](../content/standalone-content-add-url-netskope-185417c7.md) | 📄 Standalone | 0 | 3 |
@@ -119,6 +119,7 @@
 | [Cyjax Data Breaches](../content/cyjax-cyjax-data-breaches-9a3f7092.md) | [Cyjax](../solutions/cyjax.md) | 0 | 1 |
 | [Cyjax Domain Monitor](../content/cyjax-cyjax-domain-monitor-66e866eb.md) | [Cyjax](../solutions/cyjax.md) | 0 | 1 |
 | [Cyjax Incident Enrichment](../content/cyjax-cyjax-incident-enrichment-ce175d04.md) | [Cyjax](../solutions/cyjax.md) | 0 | 1 |
+| [Cyren to CrowdStrike IOC Automation](../content/cyren-crowdstrike-threatintelligence-cyren-to-crowdstrike-ioc-automation-635f4db9.md) | [Cyren-CrowdStrike-ThreatIntelligence](../solutions/cyren-crowdstrike-threatintelligence.md) | 0 | 5 |
 | [Cyren to SentinelOne IOC Automation](../content/cyren-sentinelone-threatintelligence-cyren-to-sentinelone-ioc-automation-aeb65ff5.md) | [Cyren-SentinelOne-ThreatIntelligence](../solutions/cyren-sentinelone-threatintelligence.md) | 0 | 6 |
 | [DataminrPulseAlertEnrichment](../content/dataminr-pulse-dataminrpulsealertenrichment-262cc5df.md) | [Dataminr Pulse](../solutions/dataminr-pulse.md) | 0 | 3 |
 | [Dataverse: Send notification to manager](../content/microsoft-business-applications-dataverse-send-notification-to-manager-f5cc710c.md) | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | 0 | 2 |

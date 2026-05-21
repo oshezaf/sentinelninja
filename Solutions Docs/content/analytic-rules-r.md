@@ -1,6 +1,6 @@
 # Analytic Rules - R
 
-**49 analytic rules** starting with 'R'.
+**53 analytic rules** starting with 'R'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -35,7 +35,6 @@
 | [Rare RDP Connections](standalone-content-rare-rdp-connections-45b903c5-6f56-4969-af10-ae62ac709718-9368c501.md) | Medium | 📄 Standalone Content |
 | [Rare subscription-level operations in Azure](azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.md) | Low | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [RDP Nesting](standalone-content-rdp-nesting-69a45b05-71f5-45ca-8944-2e038747fb39-c48bfa3a.md) | Medium | 📄 Standalone Content |
-| [RDS instance publicly exposed](amazon-web-services-rds-instance-publicly-exposed-8f1630c2-2e45-4df2-be43-50fba90f601d-2e6eb8ab.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Recorded Future Identity - Credential Exposure Detected](recorded-future-identity-recorded-future-identity-credential-exposure-detected-b1c2d3e4-5678-90ab-cdef-444444444444-dd38ff85.md) | High | 📦 [Recorded Future Identity](../solutions/recorded-future-identity.md) |
 | [RecordedFuture Threat Hunting Domain All Actors](recorded-future-recordedfuture-threat-hunting-domain-all-actors-acbf7ef6-f964-44c3-9031-7834ec68175f-9002c0d5.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [RecordedFuture Threat Hunting Hash All Actors](recorded-future-recordedfuture-threat-hunting-hash-all-actors-6db6a8e6-2959-440b-ba57-a505875fcb37-f0b99a01.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
@@ -43,6 +42,11 @@
 | [RecordedFuture Threat Hunting Url All Actors](recorded-future-recordedfuture-threat-hunting-url-all-actors-3f6f0d1a-f2f9-4e01-881a-c55a4a71905b-8b23fa82.md) | Medium | 📦 [Recorded Future](../solutions/recorded-future.md) |
 | [Recovery Token Deleted](veeam-recovery-token-deleted-9f37ded4-f27a-4ef6-b5e6-de6430070808-4cb5b9b4.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
 | [Red Canary Threat Detection](red-canary-red-canary-threat-detection-6d263abb-6445-45cc-93e9-c593d3d77b89-44ff5a3e.md) ⚠️ | High | 📦 [Red Canary](../solutions/red-canary.md) |
+| [Red Sift - Email with URL to previously unseen domain](red-sift-red-sift-email-with-url-to-previously-unseen-domain-8972b513-12a2-4b46-8263-3f091d88a8bc-3eb79665.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
+| [Red Sift - Login from previously unseen IP address](red-sift-red-sift-login-from-previously-unseen-ip-address-c3d4e5f6-a7b8-9012-cdef-123456789012-17a3cf45.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
+| [Red Sift - MFA disabled on account](red-sift-red-sift-mfa-disabled-on-account-16f26d2c-6296-490b-af4f-b30bcf1c4461-c60400fe.md) | High | 📦 [Red Sift](../solutions/red-sift.md) |
+| [Red Sift - New email with URL from previously unseen sender](red-sift-red-sift-new-email-with-url-from-previously-unseen-sender-6e0b70d4-0ab8-480e-9707-8ad45fc21a65-b32b0a35.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
+| [Red Sift - New email with URL from previously unseen source](red-sift-red-sift-new-email-with-url-from-previously-unseen-source-6084dfd8-830b-4839-9a9c-5f08cc984729-91610c56.md) | Medium | 📦 [Red Sift](../solutions/red-sift.md) |
 | [Refactor AWS policy based on activities in the last 60 days](authomize-refactor-aws-policy-based-on-activities-in-the-last-60-days-642de064-c67b-4eb7-98bd-3f8cd51f282c-6026e372.md) | High | 📦 [Authomize](../solutions/authomize.md) |
 | [Registries Alerts for Prancer](prancer-pensuiteai-integration-registries-alerts-for-prancer-08706063-c15e-4d96-beae-9e8d92ccefbb-f9077415.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Registry Persistence via AppCert DLL Modification](endpoint-threat-protection-essentials-registry-persistence-via-appcert-dll-modification-c61ad0ac-ad68-4ebb-b41a-74296d3e0044-b5180a51.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |

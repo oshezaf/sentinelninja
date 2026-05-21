@@ -8,7 +8,7 @@
 
 Hunting queries enable proactive threat hunting by security analysts. Unlike analytic rules that run automatically, hunting queries are designed for manual investigation to uncover hidden threats, explore suspicious patterns, and identify indicators of compromise that automated detection may have missed. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting)
 
-**2317 hunting queries** across all Microsoft Sentinel solutions.
+**2337 hunting queries** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -69,6 +69,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Add uncommon credential type to application [Nobelium]](github-only-add-uncommon-credential-type-to-application-[nobelium]-63a191f4-a0ad-4ed7-b994-24ffc89b3596-aff5bb4b.md) | Privilege escalation | 🔗 GitHub Only |
 | [AddedCredentialFromContryXAndSigninFromCountryY](github-only-addedcredentialfromcontryxandsigninfromcountryy-9644e2ae-07a2-4086-a85a-6ee2bca45f4e-5872c09f.md) | Persistence | 🔗 GitHub Only |
 | [ADFSDomainTrustMods[Nobelium]](github-only-adfsdomaintrustmods[nobelium]-8b55db72-9ece-4e93-b551-cd7eb7355104-b7fc6a3c.md) | Defense evasion | 🔗 GitHub Only |
+| [Admin consent granted to application](standalone-content-admin-consent-granted-to-application-0364b6b6-65cf-4ba2-ad0d-9ce80e0ae71e-4b1d0e36.md) | CredentialAccess, Persistence | 📄 Standalone Content |
 | [Admin privilege granted (Okta)](okta-single-sign-on-admin-privilege-granted-okta-5309ea6b-463c-4449-a3c4-2fc8ee0080ee-23fe94ba.md) | Persistence | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | [Admin SaaS account detected](authomize-admin-saas-account-detected-b3430fb5-78aa-4729-8595-f66c06138478-6473e22c.md) | PrivilegeEscalation | 📦 [Authomize](../solutions/authomize.md) |
 | [Admin Submission Trend (FN)](microsoft-defender-xdr-admin-submission-trend-fn-c51b0367-573a-42c3-a4a2-2d8b1ef6bea9-9d96e671.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -108,6 +109,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Alerts With This Process](github-only-alerts-with-this-process-635cba46-c077-4959-a2d9-b7eb6fecb854-b270f153.md) | Persistence, Discovery, LateralMovement, Collection | 🔗 GitHub Only |
 | [alt-data-streams](github-only-alt-data-streams-7d8692e0-e643-43cb-ac77-6efc5a6b7f4d-95ce681f.md) | Defense evasion | 🔗 GitHub Only |
 | [Anomalies on users tagged as VIP](ueba-essentials-anomalies-on-users-tagged-as-vip-028ac38c-f5a4-483b-a58a-aa83d500bf27-67c13b87.md) | - | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
+| [Anomalous .NET runtime loading for fileless payload](standalone-content-anomalous-.net-runtime-loading-for-fileless-payload-2df3fa1f-d573-4e0a-82f2-da62d3f2973f-299463cb.md) | DefenseEvasion, Execution | 📄 Standalone Content |
 | [Anomalous access to other users' mailboxes](microsoft-365-anomalous-access-to-other-users'-mailboxes-271e8881-3044-4332-a5f4-42264c2e0315-9868f994.md) | Collection | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
 | [Anomalous action performed in tenant by privileged user](ueba-essentials-anomalous-action-performed-in-tenant-by-privileged-user-9ba2b304-7767-4d54-b03c-b0161ae87cc7-f2b7cf70.md) | - | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Activity Role Assignment](ueba-essentials-anomalous-activity-role-assignment-bd6fda76-c0df-41b0-b8cd-808190e1ded0-f28cc576.md) | PrivilegeEscalation | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
@@ -129,6 +131,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Anomalous login activity originated from Botnet, Tor proxy or C2](ueba-essentials-anomalous-login-activity-originated-from-botnet,-tor-proxy-or-c2-c3b09dd3-ee50-41ae-b863-8603620e5f48-79aee61c.md) | - | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Microsoft Entra ID Account Creation](ueba-essentials-anomalous-microsoft-entra-id-account-creation-0454c8d8-d0a6-42a4-8d03-f5b4fdcbd173-21d82dda.md) | Persistence | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Microsoft Entra ID apps based on authentication location](standalone-content-anomalous-microsoft-entra-id-apps-based-on-authentication-location-73ac88c0-f073-4b23-8ac4-9f40ea11308d-a7ccd2d4.md) | InitialAccess | 📄 Standalone Content |
+| [Anomalous non-interactive token issuance after interactive sign-in (AiTM pattern)](standalone-content-anomalous-non-interactive-token-issuance-after-interactive-sign-in-aitm-pattern-2a2c676e-885f-43d9-90cb-2c035772e31c-8b8b5297.md) | InitialAccess, CredentialAccess | 📄 Standalone Content |
 | [Anomalous Okta First-Time or Uncommon Actions](ueba-essentials-anomalous-okta-first-time-or-uncommon-actions-d4e5f6g7-h8i9-0123-defg-hi4567890123-0ea8a6e8.md) | InitialAccess, CredentialAccess, Persistence | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Password Reset](ueba-essentials-anomalous-password-reset-22b0262c-b6b5-4f15-82a4-93663e9965d7-b04b510f.md) | Impact | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Payload Delivered from ISO files](microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | Execution | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -171,6 +174,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [app-armor-stopped](github-only-app-armor-stopped-a188fa21-dd3a-4cf9-910b-1384711f7dce-d7b5a08f.md) | - | 🔗 GitHub Only |
 | [Application Granted EWS Permissions](cloud-identity-threat-protection-essentials-application-granted-ews-permissions-c7941212-4ff9-4d2d-b38d-54d78fa087cc-2ba49c1b.md) | Collection, PrivilegeEscalation | 📦 [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md) |
 | [Application not using client credentials](senservapro-application-not-using-client-credentials-1bdb9a37-dc72-4c5a-a222-08443865dc0d-f2f6e002.md) | Impact | 📦 [SenservaPro](../solutions/senservapro.md) |
+| [Application registration or update with external redirect URI](standalone-content-application-registration-or-update-with-external-redirect-uri-c4e0baf0-283b-49d7-8b40-a1c72e92a4b2-4881368c.md) | CredentialAccess | 📄 Standalone Content |
 | [AppLocker Policy Design Assistant](github-only-applocker-policy-design-assistant-7ae72c80-c114-43cd-bd99-46dab7c13338-5b32f24a.md) | - | 🔗 GitHub Only |
 | [Approved Access Packages Details](github-only-approved-access-packages-details-aff7eb5f-3359-48ab-b73b-6c466d3806dc-eab499eb.md) | DefenseEvasion, Persistence | 🔗 GitHub Only |
 | [Appspot Phishing Abuse](microsoft-defender-xdr-appspot-phishing-abuse-cdac93ef-56c0-45bf-9e7f-9cbf0ad06808-efbaa02a.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -203,6 +207,42 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [AWS Security Hub - CloudTrail trails without log file validation](aws-security-hub-aws-security-hub-cloudtrail-trails-without-log-file-validation-e40c3c7d-0b6d-4f2d-90a4-4d9d77c2e3f5-632597f9.md) | DefenseEvasion | 📦 [AWS Security Hub](../solutions/aws-security-hub.md) |
 | [AWS Security Hub - EC2 instances with public IPv4 address](aws-security-hub-aws-security-hub-ec2-instances-with-public-ipv4-address-2b7f9e4e-6c3a-4c8f-9b1d-1a2f3e4c5d6b-a62da3c4.md) | InitialAccess, Exfiltration | 📦 [AWS Security Hub](../solutions/aws-security-hub.md) |
 | [AWS Security Hub - IAM users with console password and no MFA](aws-security-hub-aws-security-hub-iam-users-with-console-password-and-no-mfa-d5818873-a2ab-4467-8e97-60fe56ca10cc-19aaeb10.md) | PrivilegeEscalation, CredentialAccess, DefenseEvasion | 📦 [AWS Security Hub](../solutions/aws-security-hub.md) |
+| [AWSCloudTrail - Activity in unused or unsupported cloud regions](amazon-web-services-awscloudtrail-activity-in-unused-or-unsupported-cloud-regions-e0d57543-acbd-428b-bb96-24a67506f84d-88f44c79.md) | DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - AWS STS token suspicious activity from EC2](amazon-web-services-awscloudtrail-aws-sts-token-suspicious-activity-from-ec2-82ecf967-d6e9-4757-8f5d-42c562a8f05f-83ac2ebc.md) | CredentialAccess, LateralMovement | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - EC2 Instance Launched Without Key Pair](amazon-web-services-awscloudtrail-ec2-instance-launched-without-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-cd4aae7c.md) | Execution | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - ECR Container Image Low Severity Findings](amazon-web-services-awscloudtrail-ecr-container-image-low-severity-findings-b5b172b1-d976-4113-af1f-02f7bf7d2092-809b5848.md) | Execution | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - ECR Container Image Medium Severity Findings](amazon-web-services-awscloudtrail-ecr-container-image-medium-severity-findings-4fbbae0a-ce5b-4b2a-b5e6-700920561680-eb4d0524.md) | Execution | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Failed Brute Force on S3 Bucket](amazon-web-services-awscloudtrail-failed-brute-force-on-s3-bucket-13afb771-5d55-4d69-a745-83d2fc69a923-fefcfb34.md) | Discovery | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - High Volume of Enumeration Events](amazon-web-services-awscloudtrail-high-volume-of-enumeration-events-c9ccaebf-314c-446d-b3f6-314560ccb0e1-e294b951.md) | Discovery | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM AccessDenied discovery events](amazon-web-services-awscloudtrail-iam-accessdenied-discovery-events-7e258a45-b356-44f6-9a62-2643cef7b869-80af9957.md) | Discovery | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM Assume Role Brute Force](amazon-web-services-awscloudtrail-iam-assume-role-brute-force-2b8cecfe-f705-432d-9f38-08207b9473e1-61590fdc.md) | CredentialAccess, PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM CreateLoginProfile Activity](amazon-web-services-awscloudtrail-iam-createloginprofile-activity-4e3c81bf-61a4-47f4-b20d-a5a414ea08aa-d09ee872.md) | Persistence, PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM login profile updated](amazon-web-services-awscloudtrail-iam-login-profile-updated-838f59d4-fe47-422b-819d-1be502940547-213a3c44.md) | Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM New Access Key Created for User](amazon-web-services-awscloudtrail-iam-new-access-key-created-for-user-a2772445-9bb1-4176-9481-b262cb59118a-f9147ae0.md) | Persistence, PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM Policy Change Activity](amazon-web-services-awscloudtrail-iam-policy-change-activity-e0a67cd7-b4e5-4468-aae0-26cb16a1bbd2-ac1aba9f.md) | PrivilegeEscalation, DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM Policy with Excessive Wildcard Permissions](amazon-web-services-awscloudtrail-iam-policy-with-excessive-wildcard-permissions-e73ebd34-4f04-4684-a5f0-dba820127ce8-29c5cf1d.md) | PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM Privilege Escalation by Instance Profile Attachment](amazon-web-services-awscloudtrail-iam-privilege-escalation-by-instance-profile-attachment-e1a91db8-f2b3-4531-bff6-da133d4f4f1a-179fea4f.md) | PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM Privileged Role Attached to Instance](amazon-web-services-awscloudtrail-iam-privileged-role-attached-to-instance-0db42a94-e7c8-4bf1-99a7-1a2fb4158212-7cba679d.md) | PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM Risky Role Name Created](amazon-web-services-awscloudtrail-iam-risky-role-name-created-70c36558-e6d8-48b4-98b3-185d555cd5af-8cef1d4c.md) | Persistence, PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM suspicious STS AssumeRole from unseen identity](amazon-web-services-awscloudtrail-iam-suspicious-sts-assumerole-from-unseen-identity-5b6ee21d-da53-46eb-827c-eab2a9ba3d2f-ce3eba1e.md) | InitialAccess, DefenseEvasion, PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - IAM user and group object changes](amazon-web-services-awscloudtrail-iam-user-and-group-object-changes-d022a62c-643b-4e8a-b583-0230e32a96e4-6350d01a.md) | PrivilegeEscalation, DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Lambda function code updated](amazon-web-services-awscloudtrail-lambda-function-code-updated-2dd2143b-6667-4a7a-b04f-98d22caeffac-c83df0f7.md) | Execution, Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Lambda function throttled](amazon-web-services-awscloudtrail-lambda-function-throttled-d82ea1db-f600-4c9e-8ba8-d271e9c12eb8-bec1fd27.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Lambda layer imported from external account](amazon-web-services-awscloudtrail-lambda-layer-imported-from-external-account-77d0aadc-aaea-4346-b61a-bf7ac6b71bba-6b1f9278.md) | Persistence, DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Multiple Failed Login Attempts Without MFA](amazon-web-services-awscloudtrail-multiple-failed-login-attempts-without-mfa-bf130d1d-702b-4af6-9528-8bc4229e59f4-de20c91a.md) | CredentialAccess | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Network ACL entry deleted](amazon-web-services-awscloudtrail-network-acl-entry-deleted-49bae199-ea04-4a2e-95a6-e3a1f68ab259-cd656d28.md) | DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - RDS Master Password Changed](amazon-web-services-awscloudtrail-rds-master-password-changed-b9b0fd12-d72d-4f66-a013-c1acdeea2670-b4879e68.md) | Persistence, PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Root User New Access Key Created](amazon-web-services-awscloudtrail-root-user-new-access-key-created-4055466c-8a84-44c6-91d0-46469f3ba0b9-667428fe.md) | Persistence, PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Route table attribute modifications](amazon-web-services-awscloudtrail-route-table-attribute-modifications-3b7df29e-a798-4b6b-9ef7-73b9a3cf56a2-c81143cf.md) | DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - S3 Bucket Deleted](amazon-web-services-awscloudtrail-s3-bucket-deleted-356aa5a8-fa6f-4eb9-baa9-ffcf725e3e82-e409c947.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - S3 Bucket Encryption Configuration Modified](amazon-web-services-awscloudtrail-s3-bucket-encryption-configuration-modified-6eb59239-78c5-401d-acfa-5cb9b3d31cd4-3d80450e.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - S3 Bucket Versioning Suspended](amazon-web-services-awscloudtrail-s3-bucket-versioning-suspended-48c49b1d-2aa0-442b-96e3-cae6ad1251cd-25f51be2.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - STS token suspicious activity from ECS](amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-ecs-67af1633-311f-4a94-bc8f-f904a54637b2-4431dce9.md) | CredentialAccess, LateralMovement | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - STS token suspicious activity from Glue](amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-glue-0cd3eb95-6c8e-4eeb-8338-a0decdc0a328-cb819178.md) | CredentialAccess, LateralMovement | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - STS Token Suspicious Activity from Kubernetes Worker Node](amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-kubernetes-worker-node-46685737-676a-4084-8e98-31b2998062db-8878da1d.md) | CredentialAccess, LateralMovement | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - STS Token Suspicious Activity from Lambda](amazon-web-services-awscloudtrail-sts-token-suspicious-activity-from-lambda-70a6e84f-6f3b-4ce1-83d6-ea6df9e7a9dd-57731e23.md) | CredentialAccess, LateralMovement | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - Subnet attribute modifications](amazon-web-services-awscloudtrail-subnet-attribute-modifications-05167149-4670-4a9f-b34e-5a0a92243194-bedbff3d.md) | DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
+| [AWSCloudTrail - VPC attribute modifications](amazon-web-services-awscloudtrail-vpc-attribute-modifications-a3a19731-9e82-49b6-9142-2dd570feefd5-972eed78.md) | DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Azure CloudShell Usage](standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.md) | Execution | 📄 Standalone Content |
 | [Azure DevOps - Build Check Deleted](azuredevopsauditing-azure-devops-build-check-deleted-940386c3-4b2c-4147-ac8e-dcddedaaae52-6714bd40.md) | DefenseEvasion | 📦 [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md) |
 | [Azure DevOps - Build Deleted After Pipeline Modification](azuredevopsauditing-azure-devops-build-deleted-after-pipeline-modification-47857f1f-f8e6-470d-b132-03a8a606b3f4-80419f62.md) | Persistence | 📦 [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md) |
@@ -295,9 +335,9 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Box - Uploaded data volume per user](box-box-uploaded-data-volume-per-user-484f9c1c-a8d6-4a78-b526-d38958ade100-a4aab1ac.md) | Exfiltration, Collection | 📦 [Box](../solutions/box.md) |
 | [Box - Users with owner permissions](box-box-users-with-owner-permissions-09fee766-d5ba-4e8c-8e9e-363915aee1f4-c5ab842d.md) | PrivilegeEscalation | 📦 [Box](../solutions/box.md) |
 | [Browser Extension Enumeration via DeviceFileEvents](github-only-browser-extension-enumeration-via-devicefileevents-ede058ab-97a8-4494-aa76-b7f5f6d78cba-a2f66fb1.md) | Discovery | 🔗 GitHub Only |
-| [Bucket versioning suspended](amazon-web-services-bucket-versioning-suspended-48c49b1d-2aa0-442b-96e3-cae6ad1251cd-9e746ab9.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Bulk Emails by Sender Bulk Complaint level](microsoft-defender-xdr-bulk-emails-by-sender-bulk-complaint-level-2e903da3-32fe-46b0-8df7-5f39e55db17e-a6bce306.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Bulk Emails by Sender Bulk Complaint level](github-only-bulk-emails-by-sender-bulk-complaint-level-46837704-62cb-4e37-ae25-eecced47c0f4-a91c459c.md) | InitialAccess | 🔗 GitHub Only |
+| [Bulk role assignments performed by the same actor in a short window](standalone-content-bulk-role-assignments-performed-by-the-same-actor-in-a-short-window-8d2cc40f-f0e0-49bf-8983-164f7be3975d-39bbfebc.md) | Persistence, PrivilegeEscalation | 📄 Standalone Content |
 
 ## C
 
@@ -320,8 +360,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [CDM_ContinuousDiagnostics&Mitigation_Posture](continuousdiagnostics&mitigation-cdm-continuousdiagnostics&mitigation-posture-e15944a8-4172-4208-a928-631e01920d9c-8130a499.md) | Discovery | 📦 [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md) |
 | [Certutil (LOLBins and LOLScripts, Normalized Process Events)](endpoint-threat-protection-essentials-certutil-lolbins-and-lolscripts,-normalized-process-events-eb022863-9ae2-41d4-b633-29e4d024b76f-bf894765.md) | CommandAndControl | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Certutil (LOLBins and LOLScripts, Normalized Process Events)](github-only-certutil-lolbins-and-lolscripts,-normalized-process-events-28233666-c235-4d55-b456-5cfdda29d62d-e0fba63b.md) | CommandAndControl | 🔗 GitHub Only |
-| [Changes made to AWS IAM objects](amazon-web-services-changes-made-to-aws-iam-objects-d022a62c-643b-4e8a-b583-0230e32a96e4-8d6124b9.md) | PrivilegeEscalation, DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Changes made to AWS IAM policy](amazon-web-services-changes-made-to-aws-iam-policy-e0a67cd7-b4e5-4468-aae0-26cb16a1bbd2-3b3fe70f.md) | PrivilegeEscalation, DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Changes to Blocked Teams Domains](github-only-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-38df3c33.md) | DefenseEvasion | 🔗 GitHub Only |
 | [Changes to Blocked Teams Domains (NRT)](github-only-changes-to-blocked-teams-domains-nrt-f3ceca1b-8190-4511-beac-06b3368b8360-f9fcf37d.md) | DefenseEvasion | 🔗 GitHub Only |
 | [Check critical ports opened to the entire internet](standalone-content-check-critical-ports-opened-to-the-entire-internet-66d494c0-233c-438a-9b1b-5fe839790d38-7cf5a163.md) | InitialAccess | 📄 Standalone Content |
@@ -391,15 +429,15 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [CiscoISE - Rare or new useragent](cisco-ise-ciscoise-rare-or-new-useragent-32abe28a-c1c8-4eb4-adfb-858abdbacbfe-fd92f37c.md) | InitialAccess | 📦 [Cisco ISE](../solutions/cisco-ise.md) |
 | [CiscoISE - Sources with high number of 'Failed Authentication' events](cisco-ise-ciscoise-sources-with-high-number-of-'failed-authentication'-events-4fb45425-b758-41d8-80bc-843b5b0f119e-4f32de58.md) | CredentialAccess | 📦 [Cisco ISE](../solutions/cisco-ise.md) |
 | [Claroty - Baseline deviation](claroty-claroty-baseline-deviation-6b24f3aa-01db-4d26-9d60-538dd9a56391-8531ba45.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - Conflict assets](claroty-claroty-conflict-assets-8038c683-f4dc-481e-94c6-f906d880b0ec-65ea2c65.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - Critical Events](claroty-claroty-critical-events-a81f3a44-049c-409d-8b98-b78aa256dacf-39a2f0b4.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - Network scan sources](claroty-claroty-network-scan-sources-6c43a50e-2e59-48d9-848b-825f50927bbf-07e5f692.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - Network scan targets](claroty-claroty-network-scan-targets-8e70ddf9-32c3-4acd-9cb9-59570344335e-d9fbab3a.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - PLC logins](claroty-claroty-plc-logins-15569b45-4c34-4693-bf99-841e76b5da65-ce51ab47.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - Conflict assets](claroty-claroty-conflict-assets-8038c683-f4dc-481e-94c6-f906d880b0ec-65ea2c65.md) | InitialAccess, Discovery | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - Critical Events](claroty-claroty-critical-events-a81f3a44-049c-409d-8b98-b78aa256dacf-39a2f0b4.md) | InitialAccess, Impact | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - Network scan sources](claroty-claroty-network-scan-sources-6c43a50e-2e59-48d9-848b-825f50927bbf-07e5f692.md) | Reconnaissance, InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - Network scan targets](claroty-claroty-network-scan-targets-8e70ddf9-32c3-4acd-9cb9-59570344335e-d9fbab3a.md) | InitialAccess, Reconnaissance | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - PLC logins](claroty-claroty-plc-logins-15569b45-4c34-4693-bf99-841e76b5da65-ce51ab47.md) | InitialAccess, CredentialAccess | 📦 [Claroty](../solutions/claroty.md) |
 | [Claroty - Unapproved access](claroty-claroty-unapproved-access-de0fca32-85f3-45df-872e-41e980e5d8d3-d0ee72f9.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - Unresolved alerts](claroty-claroty-unresolved-alerts-fad6cb81-9a05-4acb-9c5b-a7c62af28034-0c927404.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - User failed logins](claroty-claroty-user-failed-logins-917364b7-2925-4c5d-a27c-64137a3b75b5-050519b3.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
-| [Claroty - Write and Execute operations](claroty-claroty-write-and-execute-operations-3882ffbf-6228-4e1f-ab8f-8d79a26da0fb-6e35713e.md) | InitialAccess | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - Unresolved alerts](claroty-claroty-unresolved-alerts-fad6cb81-9a05-4acb-9c5b-a7c62af28034-0c927404.md) | InitialAccess, Discovery, Impact | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - User failed logins](claroty-claroty-user-failed-logins-917364b7-2925-4c5d-a27c-64137a3b75b5-050519b3.md) | InitialAccess, CredentialAccess | 📦 [Claroty](../solutions/claroty.md) |
+| [Claroty - Write and Execute operations](claroty-claroty-write-and-execute-operations-3882ffbf-6228-4e1f-ab8f-8d79a26da0fb-6e35713e.md) | InitialAccess, Execution, Impact | 📦 [Claroty](../solutions/claroty.md) |
 | [Clear System Logs](microsoft-defender-xdr-clear-system-logs-6284b962-ab0d-46d8-a47f-1eb1ac1be463-c8af8f2d.md) | DefenseEvasion | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [clear-system-logs](github-only-clear-system-logs-5aa2b168-ab4f-44ab-8668-7845c7defcb1-86c8d25b.md) | Defense evasion | 🔗 GitHub Only |
 | [Clearing of forensic evidence from event logs using wevtutil](microsoft-defender-xdr-clearing-of-forensic-evidence-from-event-logs-using-wevtutil-3dd9ab09-0ea3-4f47-ba10-f84045ab52c3-f7cf440c.md) | DefenseEvasion | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -437,6 +475,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [CompAuth Failure Trend](github-only-compauth-failure-trend-9d5d0ba9-e1b3-4dbb-9beb-e0f4c7fb6524-191fcbde.md) | InitialAccess | 🔗 GitHub Only |
 | [compromised NVIDIA certificates[Lapsus$]](github-only-compromised-nvidia-certificates[lapsus$]-fa2db236-b846-45b7-b161-00da96717051-2612812c.md) | Privilege escalation, Vulnerability | 🔗 GitHub Only |
 | [compromised-certificate[Nobelium]](github-only-compromised-certificate[nobelium]-8d8a5c56-54b8-4cd9-9a9b-83d0325bf802-a4781efd.md) | Privilege escalation, Vulnerability | 🔗 GitHub Only |
+| [Conditional Access policy disabled or deleted](standalone-content-conditional-access-policy-disabled-or-deleted-0456a783-2fd9-4e07-aa05-4aa0afdab0a6-8da2e27a.md) | DefenseEvasion, Persistence | 📄 Standalone Content |
 | [confluence-weblogic-targeted](github-only-confluence-weblogic-targeted-8b8be25f-1bc0-4d57-81a7-76ef97f1d64f-6b0dcc76.md) | Vulnerability | 🔗 GitHub Only |
 | [ConnectedNetworkDeviceDiscovery](github-only-connectednetworkdevicediscovery-c7813a5c-ef11-4ee9-8feb-731402f31259-5481412c.md) | - | 🔗 GitHub Only |
 | [Connection from external IP to OMI related Ports](legacy-ioc-based-threat-protection-connection-from-external-ip-to-omi-related-ports-767b8f6d-8029-4c92-afe1-282167d9d49a-0ad0779a.md) | Reconnaissance, InitialAccess | 📦 [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md) |
@@ -479,8 +518,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Create account (1)](github-only-create-account-1-eba83f84-b844-4fc9-96f4-cb51b0b20c1d-dd413b60.md) | - | 🔗 GitHub Only |
 | [Create API Token (Okta)](okta-single-sign-on-create-api-token-okta-c5134bac-044d-447a-a260-d1d439653ae7-0e45b431.md) | PrivilegeEscalation | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | [Create new user with known DEV-0270 username and password](github-only-create-new-user-with-known-dev-0270-username-and-password-f2e7c61a-6e29-4ddf-ac2e-97eb7b37d621-2d31c2c7.md) | Persistence | 🔗 GitHub Only |
-| [CreateLoginProfile detected](amazon-web-services-createloginprofile-detected-4e3c81bf-61a4-47f4-b20d-a5a414ea08aa-6940fe12.md) | Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [CreatePolicyVersion with excessive permissions](amazon-web-services-createpolicyversion-with-excessive-permissions-e73ebd34-4f04-4684-a5f0-dba820127ce8-e4285cf3.md) | Privilege Escalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Creation of an anomalous number of resources](azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.md) | Impact | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [Credential Harvesting Using LaZagne](microsoft-defender-xdr-credential-harvesting-using-lazagne-79f9bb6b-6d31-412e-b3bc-6e5ad1303112-a9fbb57d.md) | CredentialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [CredentialsAddAfterAdminConsentedToApp[Nobelium]](github-only-credentialsaddafteradminconsentedtoapp[nobelium]-0d49b34e-ac5a-441f-a79f-672ad045870e-006b3161.md) | Persistence | 🔗 GitHub Only |
@@ -695,8 +732,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
-| [ECR image scan findings low](amazon-web-services-ecr-image-scan-findings-low-b5b172b1-d976-4113-af1f-02f7bf7d2092-3cd30c1e.md) | Execution | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [ECR image scan findings medium](amazon-web-services-ecr-image-scan-findings-medium-4fbbae0a-ce5b-4b2a-b5e6-700920561680-7e59c4e9.md) | Execution | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Editing Linux scheduled tasks through Crontab](syslog-editing-linux-scheduled-tasks-through-crontab-6f0f1821-5981-408a-930b-8b2ca60e9e6c-5de4e857.md) | Persistence, Execution | 📦 [Syslog](../solutions/syslog.md) |
 | [Electron-CVE-2018-1000006](github-only-electron-cve-2018-1000006-2953f075-035c-4803-9ea2-a9b0771ffc3d-1e8e8e25.md) | - | 🔗 GitHub Only |
 | [Elise backdoor](github-only-elise-backdoor-2a044f6d-a670-4977-9c7b-da556aa6c8d0-afbfaf05.md) | - | 🔗 GitHub Only |
@@ -760,7 +795,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Excel file download domain pattern](github-only-excel-file-download-domain-pattern-1dd47f50-d42d-4e2f-9c2b-6e6c22147916-ed8cb6fe.md) | Initial access | 🔗 GitHub Only |
 | [Excel launching anomalous processes](github-only-excel-launching-anomalous-processes-f387a52b-a1c3-43dc-b4cf-e6cbf895a3da-643b9b5f.md) | Execution | 🔗 GitHub Only |
 | [Excel Macro Execution](github-only-excel-macro-execution-fa2c1c3a-18f8-4c83-8501-ea110873f99f-9835a497.md) | Execution | 🔗 GitHub Only |
-| [Excessive execution of discovery events](amazon-web-services-excessive-execution-of-discovery-events-c9ccaebf-314c-446d-b3f6-314560ccb0e1-58abf9b4.md) | Discovery | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Excessive number of forbidden requests detected (ASIM Web Session)](web-session-essentials-excessive-number-of-forbidden-requests-detected-asim-web-session-43c2832e-6c01-4dc1-bd9e-bc3f330c2b31-62e59fca.md) | Persistence, CredentialAccess | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |
 | [Excessive Windows Discovery and Execution Processes - Potential Malware Installation](cyborg-security-hunter-excessive-windows-discovery-and-execution-processes-potential-malware-installatio-6d1c9f13-e43e-4b52-a443-5799465d573b-01b94334.md) | Discovery | 📦 [Cyborg Security HUNTER](../solutions/cyborg-security-hunter.md) |
 | [Exchange IIS Worker Dropping Webshells](web-shells-threat-protection-exchange-iis-worker-dropping-webshells-42e7df5b-80f6-49a5-946a-08026ec24807-918c2a7e.md) | Execution, Persistence | 📦 [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md) |
@@ -802,7 +836,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
 | [Failed attempt to access Azure Portal](standalone-content-failed-attempt-to-access-azure-portal-cf83633e-5dfd-4887-993b-c910452439da-614be104.md) | InitialAccess | 📄 Standalone Content |
-| [Failed brute force on S3 bucket](amazon-web-services-failed-brute-force-on-s3-bucket-13afb771-5d55-4d69-a745-83d2fc69a923-d8dd59bc.md) | Discovery | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Failed Login Attempt by Expired account](standalone-content-failed-login-attempt-by-expired-account-562900b1-39c4-4baf-a050-9cad1641db35-d62dcff7.md) | InitialAccess | 📄 Standalone Content |
 | [Failed Logon Attempt](github-only-failed-logon-attempt-95d68a9c-91d3-41ce-ab9f-f1baadc74f8a-5ac66053.md) | - | 🔗 GitHub Only |
 | [Failed Logon Attempts on SQL Server](microsoft-windows-sql-server-database-audit-failed-logon-attempts-on-sql-server-d98256d5-0c9a-4ffc-8618-66a3404412f8-90519277.md) | CredentialAccess | 📦 [Microsoft Windows SQL Server Database Audit](../solutions/microsoft-windows-sql-server-database-audit.md) |
@@ -899,6 +932,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Group added to Built in Domain Local or Global Group](windows-security-events-group-added-to-built-in-domain-local-or-global-group-cb47a115-2616-4d56-890d-b28c14bc83e4-cbcd997b.md) | Persistence, PrivilegeEscalation | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Group quarantine release](microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Group quarantine release](github-only-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-9e1fce5c.md) | InitialAccess | 🔗 GitHub Only |
+| [Guest or external account added to a privileged Entra ID role](standalone-content-guest-or-external-account-added-to-a-privileged-entra-id-role-abed6064-9406-4171-a961-5fd38de5f79a-29f73c4f.md) | Persistence, PrivilegeEscalation | 📄 Standalone Content |
 | [GWorkspace - Document Copied from Share Drive to Private Drive](googleworkspacereports-gworkspace-document-copied-from-share-drive-to-private-drive-69e8a40f-6508-4f43-8eef-2f78ad6174df-0174362a.md) ⚠️ | Exfiltration, Impact | 📦 [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | [GWorkspace - Document shared externally](googleworkspacereports-gworkspace-document-shared-externally-00d743e2-5dac-11ec-bf63-0242ac130002-a98aa9d1.md) | Exfiltration, Impact | 📦 [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
 | [GWorkspace - Document shared publicy in web](googleworkspacereports-gworkspace-document-shared-publicy-in-web-e37c86ea-5dab-11ec-bf63-0242ac130002-99cd7239.md) | Exfiltration, Impact | 📦 [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) |
@@ -924,6 +958,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [High count download from a SAP Privileged account](business-email-compromise-financial-fraud-high-count-download-from-a-sap-privileged-account-2843e796-3d6c-4a78-a815-1db783b346a3-6000edff.md) | InitialAccess, Exfiltration | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [High reverse DNS count by host](windows-server-dns-high-reverse-dns-count-by-host-fda90754-4e22-4bb1-8b99-2bb49a991eae-98bb4c25.md) | Discovery | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [High Risk Sign In Around Authentication Method Added or Device Registration](github-only-high-risk-sign-in-around-authentication-method-added-or-device-registration-d61c3213-77ba-4998-8818-1da2f85dacdf-af95e228.md) | Persistence | 🔗 GitHub Only |
+| [High-privilege application role assigned to service principal](standalone-content-high-privilege-application-role-assigned-to-service-principal-840c673e-a712-49eb-a6a9-6759d5259c4b-461cb93b.md) | Persistence, CredentialAccess | 📄 Standalone Content |
 | [Host Exporting Mailbox and Removing Export](windows-security-events-host-exporting-mailbox-and-removing-export-2e2fab4b-83dd-4cf8-b2dd-063d0fd15513-f6188024.md) | Collection | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Host Exporting Mailbox and Removing Export (Normalized Process Events)](github-only-host-exporting-mailbox-and-removing-export-normalized-process-events-4500a2ff-455b-4ee7-a21d-5ac5c7c9ea87-3351b1ff.md) | Collection | 🔗 GitHub Only |
 | [HostExportingMailboxAndRemovingExport[Solarigate]](github-only-hostexportingmailboxandremovingexport[solarigate]-1a6f998a-b9a4-4030-bd58-6606d66608f9-3cb8218b.md) | Collection | 🔗 GitHub Only |
@@ -963,12 +998,11 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 |:-----|:--------|:-------|
 | [IaaS admin detected](authomize-iaas-admin-detected-ab80b41c-23e5-4264-ac23-806aad2a57af-85ec11f2.md) | PrivilegeEscalation | 📦 [Authomize](../solutions/authomize.md) |
 | [IaaS shadow admin detected](authomize-iaas-shadow-admin-detected-fad675f5-b743-40c6-873d-019de93f18db-f9a27b45.md) | PrivilegeEscalation | 📦 [Authomize](../solutions/authomize.md) |
-| [IAM AccessDenied discovery events](amazon-web-services-iam-accessdenied-discovery-events-7e258a45-b356-44f6-9a62-2643cef7b869-7c065274.md) | Discovery | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [IAM assume role policy brute force](amazon-web-services-iam-assume-role-policy-brute-force-2b8cecfe-f705-432d-9f38-08207b9473e1-82485ab3.md) | Credential Access | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [IAM Privilege Escalation by Instance Profile attachment](amazon-web-services-iam-privilege-escalation-by-instance-profile-attachment-e1a91db8-f2b3-4531-bff6-da133d4f4f1a-8b33d03d.md) | PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [IcedId attachments](github-only-icedid-attachments-bdbbf32f-10a9-492b-a05c-e5987922f8fc-34364cf8.md) | Ransomware | 🔗 GitHub Only |
 | [IcedId Delivery](github-only-icedid-delivery-b2f3ee1c-f379-465c-a339-412ecf3b1bcb-39a15c94.md) | Initial access, Ransomware | 🔗 GitHub Only |
 | [IcedId email delivery](github-only-icedid-email-delivery-1d8393fe-e363-40c1-8efb-66cf1ad68a05-ca86f7e1.md) | Initial access, Ransomware | 🔗 GitHub Only |
+| [Identify acting user for reported phish](microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.md) ⚠️ | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Identify acting user for reported phish](github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.md) | InitialAccess | 🔗 GitHub Only |
 | [Identify Compute VMs with Secure Boot Disabled](google-cloud-platform-security-command-center-identify-compute-vms-with-secure-boot-disabled-d87bb737-2f4e-4261-b863-23c8a8999693-ba77c545.md) | ResourceDevelopment, DefenseEvasion | 📦 [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
 | [Identify EUROPIUM IOCs](github-only-identify-europium-iocs-f33abf94-6759-4820-9973-51d2a41749a4-cb611a2a.md) | Impact | 🔗 GitHub Only |
 | [Identify GCP Instances with Full API Access](google-cloud-platform-security-command-center-identify-gcp-instances-with-full-api-access-0cbdd537-b31b-41b7-a3f2-8a421ea89a43-1fe82858.md) | PrivilegeEscalation | 📦 [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
@@ -1081,9 +1115,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
-| [Lambda function throttled](amazon-web-services-lambda-function-throttled-d82ea1db-f600-4c9e-8ba8-d271e9c12eb8-d7a33aaf.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Lambda layer imported from external account](amazon-web-services-lambda-layer-imported-from-external-account-77d0aadc-aaea-4346-b61a-bf7ac6b71bba-133cc638.md) | Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Lambda UpdateFunctionCode](amazon-web-services-lambda-updatefunctioncode-2dd2143b-6667-4a7a-b04f-98d22caeffac-426afada.md) | Execution | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Large Scale Malware Deployment via GPO Scheduled Task Modification](github-only-large-scale-malware-deployment-via-gpo-scheduled-task-modification-a1a06ba2-87f8-11ec-a8a3-0242ac120002-da222fca.md) | LateralMovement | 🔗 GitHub Only |
 | [launch-questd-w-osascript](github-only-launch-questd-w-osascript-4e186f05-8cff-4afa-a0c8-4f0f0e7aeb82-8ca89ebc.md) | Execution, Impact | 🔗 GitHub Only |
 | [launching-base64-powershell[Nobelium]](github-only-launching-base64-powershell[nobelium]-fd25665b-9376-4c38-b046-76757eff0e40-b99b9275.md) | Execution, Defense evasion | 🔗 GitHub Only |
@@ -1125,7 +1156,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Login attempt by Blocked MFA user](standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.md) | InitialAccess | 📄 Standalone Content |
 | [Login attempts using Legacy Auth](business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.md) | InitialAccess, Persistence | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [Login into LastPass from a previously unknown IP.](lastpass-enterprise-activity-monitoring-login-into-lastpass-from-a-previously-unknown-ip.-d292d770-69a4-4399-9272-6e86c4e53e58-cac0163b.md) | InitialAccess | 📦 [Lastpass Enterprise Activity Monitoring](../solutions/lastpass-enterprise-activity-monitoring.md) |
-| [Login profile updated](amazon-web-services-login-profile-updated-838f59d4-fe47-422b-819d-1be502940547-de9db028.md) | Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Login spike with increase failure rate](standalone-content-login-spike-with-increase-failure-rate-528c1708-a67e-4e2f-b76d-d5e5e88a22aa-3bf718cc.md) | InitialAccess | 📄 Standalone Content |
 | [Logins originating from VPS Providers](okta-single-sign-on-logins-originating-from-vps-providers-f262fc3a-0acc-4c8b-9a73-fdc09f55fff2-61a9231a.md) | InitialAccess | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 | [logon-attempts-after-malicious-email](github-only-logon-attempts-after-malicious-email-44a5c680-d2ac-4bed-8210-c3aafea47308-4a967afa.md) | Credential Access | 🔗 GitHub Only |
@@ -1258,6 +1288,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Message with URL listed on OpenPhish delivered into Inbox](microsoft-defender-xdr-message-with-url-listed-on-openphish-delivered-into-inbox-a8c66aec-2000-45d8-8481-36aaa17f1033-65f2779d.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Message with URL listed on OpenPhish delivered into Inbox](github-only-message-with-url-listed-on-openphish-delivered-into-inbox-d16f57cb-6a39-4e90-ae25-8902c68232ab-86361001.md) | InitialAccess | 🔗 GitHub Only |
 | [Metasploit / Impacket PsExec Process Creation Activity](cyborg-security-hunter-metasploit-impacket-psexec-process-creation-activity-37cba0d1-8aa5-4f8f-bb26-25a45475ca9a-bc3bb419.md) | Execution | 📦 [Cyborg Security HUNTER](../solutions/cyborg-security-hunter.md) |
+| [MFA method registered from an IP address not seen in user sign-in history](standalone-content-mfa-method-registered-from-an-ip-address-not-seen-in-user-sign-in-history-3d36b19f-cd62-4522-8869-23cdd9cc0c9f-5f452383.md) | Persistence, DefenseEvasion | 📄 Standalone Content |
 | [MFA Spamming](standalone-content-mfa-spamming-7f87c43a-6aff-44fe-907f-651986cbf956-1ec9d2a3.md) | InitialAccess | 📄 Standalone Content |
 | [Microsoft Defender AV details](github-only-microsoft-defender-av-details-fee07b7b-e704-4216-bbfc-3b1344136e07-7c2ddb5f.md) | - | 🔗 GitHub Only |
 | [Microsoft Defender AV Engine up to date info](github-only-microsoft-defender-av-engine-up-to-date-info-02be358b-8733-46b7-8e3d-624b1f918237-1f994ffa.md) | - | 🔗 GitHub Only |
@@ -1274,9 +1305,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Mismatch between Destination App name and Destination Port (ASIM Network Session schema)](network-session-essentials-mismatch-between-destination-app-name-and-destination-port-asim-network-sessi-a61e9fc1-dd9e-4588-a497-2a34a1d811bf-f510f729.md) | Discovery | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
 | [MITRE - Suspicious Events](microsoft-defender-xdr-mitre-suspicious-events-8722489a-d6f1-4b66-98e9-e3dfda902019-d9aac0e5.md) | - | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [MITRE - Suspicious Events](github-only-mitre-suspicious-events-132beb12-7146-45a5-9132-c82feee53b71-54da484f.md) | - | 🔗 GitHub Only |
-| [Modification of route-table attributes](amazon-web-services-modification-of-route-table-attributes-3b7df29e-a798-4b6b-9ef7-73b9a3cf56a2-db6c80fd.md) | Defense Evasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Modification of subnet attributes](amazon-web-services-modification-of-subnet-attributes-05167149-4670-4a9f-b34e-5a0a92243194-7605c0bc.md) | Defense Evasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Modification of vpc attributes](amazon-web-services-modification-of-vpc-attributes-a3a19731-9e82-49b6-9142-2dd570feefd5-e33d1371.md) | Defense Evasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Modifying the registry to add a ransom message notification](github-only-modifying-the-registry-to-add-a-ransom-message-notification-acd4112f-5271-4680-ab2a-f07952d71888-52476027.md) | Impact | 🔗 GitHub Only |
 | [MosaicLoader](microsoft-defender-xdr-mosaicloader-0efbcea0-1dc0-4844-8a9c-3a1d98fc1697-1d4d4510.md) | CommandAndControl | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [MosaicLoader](github-only-mosaicloader-625dce50-2fec-4f49-be92-ad4cab98b313-31f04ab2.md) | Command and control | 🔗 GitHub Only |
@@ -1284,7 +1312,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Multiple Entra ID Admin Removals](github-only-multiple-entra-id-admin-removals-7ffb31ee-f164-4613-a9a7-4d04d0dba5d7-8058f067.md) | Persistence | 🔗 GitHub Only |
 | [Multiple Entra ID Admins Removed](github-only-multiple-entra-id-admins-removed-18793540-3b93-4a7f-8e30-871291a1c6cf-49eec3ae.md) | Impact | 🔗 GitHub Only |
 | [Multiple Explicit Credential Usage - 4648 events](windows-security-events-multiple-explicit-credential-usage-4648-events-9e3fab4b-94dd-4cf9-b2aa-063d0fd25513-bf7d18d4.md) | Discovery, LateralMovement | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
-| [Multiple failed login attempts to an existing user without MFA](amazon-web-services-multiple-failed-login-attempts-to-an-existing-user-without-mfa-bf130d1d-702b-4af6-9528-8bc4229e59f4-bb3fdc82.md) | Credential Access | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Multiple Failed Logon on SQL Server in Short time Span](microsoft-windows-sql-server-database-audit-multiple-failed-logon-on-sql-server-in-short-time-span-aef212b5-c770-42e1-9abf-bc513e4e749c-a2c0eaef.md) | CredentialAccess | 📦 [Microsoft Windows SQL Server Database Audit](../solutions/microsoft-windows-sql-server-database-audit.md) |
 | [Multiple large queries made by user](standalone-content-multiple-large-queries-made-by-user-cd11d6a1-e2ad-47fa-9a9f-4c70b143d4fd-5c0b6215.md) | Exfiltration | 📄 Standalone Content |
 | [Multiple Teams deleted by a single user](microsoft-365-multiple-teams-deleted-by-a-single-user-64990414-b015-4edf-bef0-343b741e68c5-4d5737ab.md) | Impact | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
@@ -1297,7 +1324,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
 | [Nasuni File Delete Activity](nasuni-nasuni-file-delete-activity-64a3477e-d06f-4491-86a5-6f99702e267f-9caf20b1.md) | Impact | 📦 [Nasuni](../solutions/nasuni.md) |
-| [Network ACL deleted](amazon-web-services-network-acl-deleted-49bae199-ea04-4a2e-95a6-e3a1f68ab259-038e38e1.md) | Defense Evasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Network Connection to New External LDAP Server](apache-log4j-vulnerability-detection-network-connection-to-new-external-ldap-server-bf094505-fd2e-484f-b72a-acd79ee00ce8-d9ed48fd.md) | InitialAccess | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [Network footprint](github-only-network-footprint-aca2c8fd-03e2-4638-b5df-88ef5c4db16f-7efde93b.md) | - | 🔗 GitHub Only |
 | [Network footprint (1)](github-only-network-footprint-1-42b5b09c-7132-4f37-a2fd-4efeed2c540c-0142100d.md) | - | 🔗 GitHub Only |
@@ -1305,8 +1331,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Network footprint (3)](github-only-network-footprint-3-44b02f8c-d206-4e1a-9859-6aa06b80c346-72e9d427.md) | - | 🔗 GitHub Only |
 | [Network info of machine](github-only-network-info-of-machine-86fb56b4-3a10-443b-8345-d00a45046d15-7a7ced1d.md) | - | 🔗 GitHub Only |
 | [Network Logons with Local Accounts](github-only-network-logons-with-local-accounts-95a44d0f-b717-4e34-902f-2fad4d6fcbe3-eb5d3cb9.md) | Lateral movement | 🔗 GitHub Only |
-| [New access key created to user](amazon-web-services-new-access-key-created-to-user-a2772445-9bb1-4176-9481-b262cb59118a-d5f0bb4f.md) | Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [New AccessKey created for Root user](amazon-web-services-new-accesskey-created-for-root-user-4055466c-8a84-44c6-91d0-46469f3ba0b9-42884d7f.md) | Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [New Admin account activity seen which was not seen historically](microsoft-365-new-admin-account-activity-seen-which-was-not-seen-historically-723c5f46-133f-4f1e-ada6-5c138f811d75-81219d98.md) | PrivilegeEscalation, Collection | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
 | [New Child Process of W3WP.exe](windows-security-events-new-child-process-of-w3wp.exe-f885fb16-dfd3-4c90-83d9-7a66b9d9b654-75c40006.md) | Execution | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [New client running queries](standalone-content-new-client-running-queries-1dd98313-f43f-4d8b-9870-5a1dfb2cf93f-c7d32c1c.md) | Collection, Exfiltration | 📄 Standalone Content |
@@ -1353,10 +1377,12 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
+| [OAuth application consent to high-risk permission scope](standalone-content-oauth-application-consent-to-high-risk-permission-scope-2a166359-a104-4d72-93ae-643ae69bf801-772e9f50.md) | Persistence, CredentialAccess | 📄 Standalone Content |
 | [OAuth Application Required Resource Access Update](github-only-oauth-application-required-resource-access-update-665e6075-3a3f-42c0-a6c7-7e83dc44f281-a8e15d97.md) | Persistence | 🔗 GitHub Only |
 | [OAuth Apps accessing user mail via GraphAPI [Nobelium]](github-only-oauth-apps-accessing-user-mail-via-graphapi-[nobelium]-19cbed50-3554-44ed-b8de-90f275b69c8a-0abcf539.md) | Exfiltration | 🔗 GitHub Only |
 | [OAuth Apps reading mail both via GraphAPI and directly [Nobelium]](github-only-oauth-apps-reading-mail-both-via-graphapi-and-directly-[nobelium]-8ea80cde-a211-45e3-a7c3-62fae160026c-a816b2f6.md) | Exfiltration | 🔗 GitHub Only |
 | [OAuth Apps reading mail via GraphAPI anomaly [Nobelium]](github-only-oauth-apps-reading-mail-via-graphapi-anomaly-[nobelium]-010d76aa-f2e9-4b88-8134-1ae59655aafe-f5708c74.md) | Exfiltration | 🔗 GitHub Only |
+| [OAuth consent to high-risk permission by a new or rarely seen application](standalone-content-oauth-consent-to-high-risk-permission-by-a-new-or-rarely-seen-application-c449826b-d6d0-4ac8-8dad-19acc3fc75a7-6627d942.md) | CredentialAccess | 📄 Standalone Content |
 | [OceanLotus registry activity](github-only-oceanlotus-registry-activity-3e571521-6f73-423f-9280-aff6170c9d81-1a08b9f1.md) | - | 🔗 GitHub Only |
 | [oceanlotus-apt32-files](github-only-oceanlotus-apt32-files-d868871c-bdd6-45e9-9e9d-e3c4521654a7-df57d4d6.md) | Execution, Persistence, Defense evasion, Discovery, Malware, component | 🔗 GitHub Only |
 | [oceanlotus-apt32-network](github-only-oceanlotus-apt32-network-8e2c33f5-0c00-4246-b10b-9fb43da56365-c439e0f9.md) | Discovery, Lateral movement, Command and control | 🔗 GitHub Only |
@@ -1540,8 +1566,8 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Privileged Account Password Changes](github-only-privileged-account-password-changes-d9cccaf9-d15e-4731-a62a-06d76e9c5e67-592fbe65.md) | InitialAccess | 🔗 GitHub Only |
 | [Privileged Accounts - Failed MFA](github-only-privileged-accounts-failed-mfa-d9524fcf-de06-4f95-84b0-1637a30ad595-277f290a.md) | InitialAccess | 🔗 GitHub Only |
 | [Privileged Accounts Locked Out](github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.md) | InitialAccess | 🔗 GitHub Only |
+| [Privileged directory role assigned outside PIM workflow](standalone-content-privileged-directory-role-assigned-outside-pim-workflow-2df6ff4f-f90f-4158-ac4a-98c1b23d9e18-e097cfc4.md) | Persistence, PrivilegeEscalation | 📄 Standalone Content |
 | [Privileged Machines Exposed to the Internet](authomize-privileged-machines-exposed-to-the-internet-7457a420-8c28-4ce2-a55e-d050e5a6bc4f-3beb4360.md) | Discovery | 📦 [Authomize](../solutions/authomize.md) |
-| [Privileged role attached to Instance](amazon-web-services-privileged-role-attached-to-instance-0db42a94-e7c8-4bf1-99a7-1a2fb4158212-e01481fe.md) | PrivilegeEscalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Probable AdFind Recon Tool Usage](microsoftdefenderforendpoint-probable-adfind-recon-tool-usage-c63ae777-d5e0-4113-8c9a-c2c9d3d09fcd-d6063f03.md) | Discovery | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
 | [procdump-lsass-credentials](github-only-procdump-lsass-credentials-0b985ed8-aacd-41ba-9b17-489be9224159-4d59622b.md) | Credential Access | 🔗 GitHub Only |
 | [Prohibited Applications Spawning cmd.exe or powershell.exe](cyborg-security-hunter-prohibited-applications-spawning-cmd.exe-or-powershell.exe-fc36d683-385a-4ec2-842d-2982dbed97a4-e72a0598.md) | CommandandControl | 📦 [Cyborg Security HUNTER](../solutions/cyborg-security-hunter.md) |
@@ -1631,7 +1657,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [rare_sch_task_with_activity](github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.md) | Persistence | 🔗 GitHub Only |
 | [RareDNSLookupWithDataTransfer](standalone-content-rarednslookupwithdatatransfer-06c52a66-fffe-4d3b-a05a-646ff65b7ec2-5a6c4b85.md) | CommandAndControl, Exfiltration | 📄 Standalone Content |
 | [rce-on-vulnerable-server](github-only-rce-on-vulnerable-server-ec7ec6bb-c15a-4d2b-9682-a92bf5a22c8e-24434d66.md) | - | 🔗 GitHub Only |
-| [RDS instance master password changed](amazon-web-services-rds-instance-master-password-changed-b9b0fd12-d72d-4f66-a013-c1acdeea2670-7c08e965.md) | Privilege Escalation | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Recon Activity with Interactive Logon Correlation](github-only-recon-activity-with-interactive-logon-correlation-346d36c9-2e79-4d8f-8c14-1eef73d38737-430a32b6.md) | InitialAccess, Impact | 🔗 GitHub Only |
 | [Recon with Rundll](microsoft-defender-xdr-recon-with-rundll-76c14475-9a22-4cc1-922c-437d7f614a36-e593fe5e.md) | Discovery, Collection, CommandAndControl | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [recon-with-rundll](github-only-recon-with-rundll-c720f607-7f7b-41c8-bed9-2d9a240d965c-97ed53b5.md) | Discovery, Collection, Command and control | 🔗 GitHub Only |
@@ -1826,7 +1851,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [reverse-shell-ransomware-macos](github-only-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-5fee050e.md) | Command and control | 🔗 GitHub Only |
 | [RID Hijacking](github-only-rid-hijacking-fcdeec10-6948-11ec-90d6-0242ac120003-a1db9674.md) | PrivilegeEscalation | 🔗 GitHub Only |
 | [Risky base64 encoded command in URL](network-threat-protection-essentials-risky-base64-encoded-command-in-url-c46eeb45-c324-4a84-9df1-248c6d1507bb-5cdc18f9.md) | CommandAndControl | 📦 [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md) |
-| [Risky role name created](amazon-web-services-risky-role-name-created-70c36558-e6d8-48b4-98b3-185d555cd5af-a0e5c4e0.md) | Persistence | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Risky sign-in attempt from a non-managed device](microsoft-defender-xdr-risky-sign-in-attempt-from-a-non-managed-device-8d298b5c-feca-4add-bd42-e43e0a317a88-e5e2a978.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Risky sign-in attempt from a non-managed device](github-only-risky-sign-in-attempt-from-a-non-managed-device-8d298b5c-feca-4add-bd42-e43e0a317a88-78c04c24.md) | InitialAccess | 🔗 GitHub Only |
 | [Risky Sign-in with Device Registration](github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) | Persistence | 🔗 GitHub Only |
@@ -1848,8 +1872,6 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 
 | Name | Tactics | Source |
 |:-----|:--------|:-------|
-| [S3 bucket encryption modified](amazon-web-services-s3-bucket-encryption-modified-6eb59239-78c5-401d-acfa-5cb9b3d31cd4-aea42032.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [S3 bucket has been deleted](amazon-web-services-s3-bucket-has-been-deleted-356aa5a8-fa6f-4eb9-baa9-ffcf725e3e82-7a253da6.md) | Impact | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [S3 Bucket outbound Data transfer anomaly](business-email-compromise-financial-fraud-s3-bucket-outbound-data-transfer-anomaly-0ef8dee1-eb94-44c8-b59b-2eb096a4b983-3e43e48f.md) | Exfiltration | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [Safe Attachments detections](microsoft-defender-xdr-safe-attachments-detections-16eda414-1550-4cdc-8512-0769901d3f05-5b330159.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Safe Attachments detections](github-only-safe-attachments-detections-16eda414-1550-4cdc-8512-0769901d3f05-9ff76efc.md) | InitialAccess | 🔗 GitHub Only |
@@ -1881,7 +1903,9 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Sentinel One - Users by alert count](sentinelone-sentinel-one-users-by-alert-count-56500e23-4e64-45a5-a444-98a1acb2f700-01daf4b9.md) | InitialAccess | 📦 [SentinelOne](../solutions/sentinelone.md) |
 | [Service Accounts Performing Remote PS](microsoft-defender-xdr-service-accounts-performing-remote-ps-cedc5bfa-01f6-4e54-b87b-1edbe430e27a-710fd8d7.md) | LateralMovement | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Service installation from user writable directory](windows-security-events-service-installation-from-user-writable-directory-5a9ccb48-1316-46e1-89d1-aca0355c305e-81f8a107.md) | Execution | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
+| [Service principal credential addition by non-historical actor](standalone-content-service-principal-credential-addition-by-non-historical-actor-4519bc3b-1849-4f37-b98b-6e8d67b34c71-1c253dcd.md) | Persistence | 📄 Standalone Content |
 | [Service principal not using client credentials](senservapro-service-principal-not-using-client-credentials-b604620b-0d87-4ffd-be2e-7e40e81ce559-da428640.md) | InitialAccess | 📦 [SenservaPro](../solutions/senservapro.md) |
+| [Service principal or application credential addition by a rarely observed actor](standalone-content-service-principal-or-application-credential-addition-by-a-rarely-observed-actor-138381e3-95d5-4d21-ab0b-13f941b82acc-e4e5a87e.md) | Persistence | 📄 Standalone Content |
 | [ServiceAccountsPerformingRemotePS](github-only-serviceaccountsperformingremoteps-9fb83ddb-ff6c-49e4-920a-ac72e63c191d-014c48bf.md) | - | 🔗 GitHub Only |
 | [ServicePrincipalAddedToRole [Nobelium]](github-only-serviceprincipaladdedtorole-[nobelium]-ca7c93e0-49d3-44ff-b07e-ae117ba13c9a-529dc696.md) | Privilege escalation | 🔗 GitHub Only |
 | [Services](github-only-services-dd76f1c0-edc9-45cb-aeae-f5142caf583c-adae9da2.md) | - | 🔗 GitHub Only |
@@ -1891,6 +1915,9 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [SharePointFileOperation via devices with previously unseen user agents](microsoft-365-sharepointfileoperation-via-devices-with-previously-unseen-user-agents-f2367171-1514-4c67-88ef-27434b6a1093-8d3d8113.md) | Exfiltration | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
 | [SharePointFileOperation via previously unseen IPs](microsoft-365-sharepointfileoperation-via-previously-unseen-ips-e3d24cfd-b2a1-4ba7-8f80-0360892f9d57-bf177f44.md) | Exfiltration | 📦 [Microsoft 365](../solutions/microsoft-365.md) |
 | [shimcache-flushed](github-only-shimcache-flushed-cd90d859-0d8f-458e-9d96-7f2945fe87a6-02c815de.md) | Defense evasion | 🔗 GitHub Only |
+| [Short-window IP failure burst followed by successful sign-in](standalone-content-short-window-ip-failure-burst-followed-by-successful-sign-in-5c3a480b-d7a8-4a9c-a6b5-5bb2e3ebac89-8986ee67.md) | CredentialAccess, InitialAccess | 📄 Standalone Content |
+| [Short-window sign-in mismatch between interactive and non-interactive activity](standalone-content-short-window-sign-in-mismatch-between-interactive-and-non-interactive-activity-868599d4-84f7-4c31-ba00-d2a2c87efaab-1195d0e0.md) | CredentialAccess | 📄 Standalone Content |
+| [Sign-in from new country followed by sensitive operation within one hour](standalone-content-sign-in-from-new-country-followed-by-sensitive-operation-within-one-hour-271f4bf9-e387-48ef-a537-654bd53ca8e8-d3920a50.md) | InitialAccess, Persistence, PrivilegeEscalation | 📄 Standalone Content |
 | [Sign-ins from IPs that attempt sign-ins to disabled accounts](github-only-sign-ins-from-ips-that-attempt-sign-ins-to-disabled-accounts-53b6d42e-ff74-46a8-abee-ec72181f66ba-e036bce2.md) | InitialAccess, Persistence | 🔗 GitHub Only |
 | [Sign-ins from Nord VPN Providers](cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.md) | InitialAccess | 📦 [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md) |
 | [Sign-ins from Nord VPN Providers](okta-single-sign-on-sign-ins-from-nord-vpn-providers-708c33ec-22a2-4739-b248-c14919500cdd-3c19da48.md) | InitialAccess | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
@@ -1936,7 +1963,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [SolarWinds Inventory (Normalized Process Events)](github-only-solarwinds-inventory-normalized-process-events-c3f1606e-48eb-464e-a60c-d53af5a5796e-063305a6.md) | Execution | 🔗 GitHub Only |
 | [Solorigate DNS Pattern](windows-server-dns-solorigate-dns-pattern-0fb54a5c-5599-4ff9-80a2-f788c3ed285e-42e0ed66.md) | CommandAndControl | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [Solorigate Encoded Domain in URL](windows-server-dns-solorigate-encoded-domain-in-url-29a1815a-3ada-4182-a178-e52c483d2f95-55f1aaa9.md) | CommandAndControl | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
-| [Source IP Abnormally Connects to Multiple Destinations](azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.md) | Execution, LateralMovement | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
+| [Source IP Abnormally Connects to Multiple Destinations](azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.md) | CommandAndControl, LateralMovement | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [Spam and Phish allowed to inbox by Admin Overrides](microsoft-defender-xdr-spam-and-phish-allowed-to-inbox-by-admin-overrides-02e237ed-f7b5-49dd-92e6-1b340d5e37fb-84bc507a.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Spam and Phish allowed to inbox by Admin Overrides](github-only-spam-and-phish-allowed-to-inbox-by-admin-overrides-0e37c1a4-86cd-4641-a514-28a431824369-1d798a77.md) | InitialAccess | 🔗 GitHub Only |
 | [Spam and Phish allowed to inbox by User Overrides](microsoft-defender-xdr-spam-and-phish-allowed-to-inbox-by-user-overrides-b1f797d1-6ea4-4f8f-b663-6c8a1c1018e9-d96be501.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -2006,21 +2033,14 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Suspected Brute force attack Investigation](github-only-suspected-brute-force-attack-investigation-056ceb9b-8f07-42b3-853e-ef3779de222e-dadf67eb.md) | CredentialAccess | 🔗 GitHub Only |
 | [Suspected LSASS Dump](windows-security-events-suspected-lsass-dump-58fe8fc8-54fa-48cd-bac3-197f8d862429-8666c9e8.md) | CredentialAccess | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Suspected ProxyToken Exploitation](github-only-suspected-proxytoken-exploitation-141a3be6-be08-4519-9698-2fc908f6761c-6b9da17e.md) | InitialAccess | 🔗 GitHub Only |
-| [Suspicious activity of STS token related to EC2](amazon-web-services-suspicious-activity-of-sts-token-related-to-ec2-82ecf967-d6e9-4757-8f5d-42c562a8f05f-a39130ee.md) | Credential Access | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Suspicious activity of STS token related to ECS](amazon-web-services-suspicious-activity-of-sts-token-related-to-ecs-67af1633-311f-4a94-bc8f-f904a54637b2-43fff997.md) | Credential Access | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Suspicious activity of STS token related to Glue](amazon-web-services-suspicious-activity-of-sts-token-related-to-glue-0cd3eb95-6c8e-4eeb-8338-a0decdc0a328-d801b492.md) | Credential Access | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Suspicious activity of STS Token related to Kubernetes worker node](amazon-web-services-suspicious-activity-of-sts-token-related-to-kubernetes-worker-node-46685737-676a-4084-8e98-31b2998062db-3753805b.md) | Credential Access | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Suspicious activity of STS token related to Lambda](amazon-web-services-suspicious-activity-of-sts-token-related-to-lambda-70a6e84f-6f3b-4ce1-83d6-ea6df9e7a9dd-fb38780a.md) | Credential Access | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Suspicious Base64 download activity detected](apache-log4j-vulnerability-detection-suspicious-base64-download-activity-detected-78882f9a-f3ef-4010-973c-3f6336f5bef7-90a64218.md) | Persistence, Execution | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [Suspicious Bitlocker Encryption](github-only-suspicious-bitlocker-encryption-476c9326-c53d-495c-8a54-c304a43cb446-bfe8af16.md) | Ransomware | 🔗 GitHub Only |
 | [Suspicious command line tokens in LolBins or LolScripts](windows-security-events-suspicious-command-line-tokens-in-lolbins-or-lolscripts-6cdef739-18f6-4b3a-8fdc-93e9a4302dbf-46ec7a62.md) | Execution | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Suspicious command line tokens in LolBins or LolScripts](github-only-suspicious-command-line-tokens-in-lolbins-or-lolscripts-4a6030de-c11c-4206-b4ea-cd005ebf80a2-42ab652c.md) | Execution | 🔗 GitHub Only |
-| [Suspicious credential token access of valid IAM Roles](amazon-web-services-suspicious-credential-token-access-of-valid-iam-roles-5b6ee21d-da53-46eb-827c-eab2a9ba3d2f-ed892985.md) | InitialAccess, DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Suspicious crytocurrency mining related threat activity detected](syslog-suspicious-crytocurrency-mining-related-threat-activity-detected-005d6e3c-7453-46f6-aef3-f59695594545-4f6cf014.md) | DefenseEvasion | 📦 [Syslog](../solutions/syslog.md) |
 | [Suspicious Data Access to S3 Bucket from Unknown IP](business-email-compromise-financial-fraud-suspicious-data-access-to-s3-bucket-from-unknown-ip-669e1338-b1a2-4d73-b720-a1e60d5d1474-b350221c.md) | Collection | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [Suspicious DLLs in spool Folder](microsoft-defender-xdr-suspicious-dlls-in-spool-folder-0b5b076b-9a1c-440c-a11f-8471a75f46fd-160d1915.md) | PrivilegeEscalation, Execution | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Suspicious DLLs in spool folder](github-only-suspicious-dlls-in-spool-folder-cabb3aa3-cbfa-4359-9464-a3093d8b44f3-0d5ee674.md) | Privilege escalation, Exploit | 🔗 GitHub Only |
-| [Suspicious EC2 launched without a key pair](amazon-web-services-suspicious-ec2-launched-without-a-key-pair-81a8880f-cc20-40ce-98d6-2fc6a1c5b9a4-4a29619e.md) | Execution | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Suspicious Enumeration using Adfind Tool](windows-security-events-suspicious-enumeration-using-adfind-tool-dd6fb889-43ef-44e1-a01d-093ab4bb12b2-fef95624.md) | Execution, Discovery, Collection | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Suspicious enumeration using Adfind tool (Normalized Process Events)](github-only-suspicious-enumeration-using-adfind-tool-normalized-process-events-1eacb645-9354-49cd-8872-8d68a4fd3f59-67fb22dc.md) | Execution, Discovery, Collection | 🔗 GitHub Only |
 | [Suspicious Files in spool Folder](microsoft-defender-xdr-suspicious-files-in-spool-folder-2d16b6fc-eb63-491c-a2c2-1160e2e41dcf-ac7a0cd6.md) | PrivilegeEscalation, Execution | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -2280,14 +2300,13 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [UEBA Multi-Source Anomalous Activity Overview](ueba-essentials-ueba-multi-source-anomalous-activity-overview-b2c3d4e5-f6g7-8901-bcde-fg2345678901-43dc4d3b.md) | InitialAccess, CredentialAccess, Persistence, PrivilegeEscalation | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [UMWorkerProcess Creating Webshell](web-shells-threat-protection-umworkerprocess-creating-webshell-60d15bd4-1fad-4a70-bc3b-094dc1c5e554-5e3339db.md) | Execution, Persistence, Exploit | 📦 [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md) |
 | [umworkerprocess-unusual-subprocess-activity](github-only-umworkerprocess-unusual-subprocess-activity-13355269-f755-4b81-8a72-e80c3f4a8016-d4a98cc0.md) | Execution, Exploit | 🔗 GitHub Only |
-| [Uncommon Port for Organization](azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md) | Defense Evasion, Exfiltration, CommandAndControl | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
+| [Uncommon Port for Organization](azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.md) | Exfiltration, CommandAndControl | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [Uncommon Port to IP](azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.md) | Exfiltration, CommandAndControl | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [Uncommon processes - bottom 5%](windows-security-events-uncommon-processes-bottom-5-2ff4b10c-7056-4898-83fd-774104189fd5-2ef29fea.md) | Execution | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Uncommon processes - bottom 5% (Normalized Process Events)](github-only-uncommon-processes-bottom-5-normalized-process-events-4e3af8e3-a29f-4eec-ac25-55517dca6512-10f52a4c.md) | Execution | 🔗 GitHub Only |
 | [Unexpected top level domains (ASIM DNS Solution)](dns-essentials-unexpected-top-level-domains-asim-dns-solution-4c8d6412-5a48-42c3-8b5e-1f29fb15c749-c748185b.md) | CommandAndControl | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
 | [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | InitialAccess, Impact | 🔗 GitHub Only |
 | [Unicode Obfuscation in Command Line](endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.md) | DefenseEvasion | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
-| [Unused or Unsupported Cloud Regions](amazon-web-services-unused-or-unsupported-cloud-regions-e0d57543-acbd-428b-bb96-24a67506f84d-bfc3cdb8.md) | DefenseEvasion | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Unusual volume of file deletion by user.](github-only-unusual-volume-of-file-deletion-by-user.-611ebbc2-c789-42ad-93e3-6dc02bfa5e3d-b849c152.md) | Impact | 🔗 GitHub Only |
 | [Unusual Volume of file deletion by users](microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.md) | Impact | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Unusual volume of file sharing with external user.](github-only-unusual-volume-of-file-sharing-with-external-user.-bafc1446-1cc4-4f6d-ad76-1250b8c3b60c-2e8e1831.md) | Exfiltration | 🔗 GitHub Only |
@@ -2427,6 +2446,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Windows System Time changed on hosts](windows-security-events-windows-system-time-changed-on-hosts-9fd6f61d-2cc3-48de-acf5-7194e78d6ea1-9fe3fe4a.md) | DefenseEvasion | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [winrar-cve-2018-20250-ace-files](github-only-winrar-cve-2018-20250-ace-files-8320de94-2411-4748-9329-e1543f257323-0cb5affb.md) | Execution, Lateral movement, Impact | 🔗 GitHub Only |
 | [winrar-cve-2018-20250-file-creation](github-only-winrar-cve-2018-20250-file-creation-04eaf822-d364-4434-b2c8-a6378d97f192-8819b592.md) | Execution, Lateral movement, Impact | 🔗 GitHub Only |
+| [Workload identity sign-in from a country not in 14-day baseline](standalone-content-workload-identity-sign-in-from-a-country-not-in-14-day-baseline-e366bd25-400c-433f-b984-c5b8aece15f2-42cfd1d8.md) | InitialAccess, CredentialAccess | 📄 Standalone Content |
 
 ## Z
 

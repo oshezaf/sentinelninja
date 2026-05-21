@@ -6,7 +6,7 @@
 
 ---
 
-Detects multiple failed logins by same user.
+Detects multiple failed logins by the same user in Claroty SRA event logs. The rule looks for failed Login to SRA events, extracts the source username from the event message, and alerts when a user exceeds 5 failed logins within 5 minutes.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,8 +16,8 @@ Detects multiple failed logins by same user.
 | **Severity** | High |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190, T1133 |
+| **Tactics** | CredentialAccess, InitialAccess |
+| **Techniques** | T1110, T1190, T1133 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Analytic%20Rules/ClarotyMultipleFailedLogin.yaml) |
 

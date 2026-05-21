@@ -6,7 +6,7 @@
 
 ---
 
-Triggers when a new asset has been added into the environment.
+Triggers when Claroty reports a new asset event in the environment, indicating that a previously unseen device or system has been discovered and should be reviewed for authorization, ownership, and expected network placement.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,8 +16,8 @@ Triggers when a new asset has been added into the environment.
 | **Severity** | High |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190, T1133 |
+| **Tactics** | InitialAccess, Discovery |
+| **Techniques** | T1190, T1133, T1082 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Analytic%20Rules/ClarotyNewAsset.yaml) |
 

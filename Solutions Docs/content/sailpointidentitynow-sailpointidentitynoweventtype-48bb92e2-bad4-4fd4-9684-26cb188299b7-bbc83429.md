@@ -18,16 +18,8 @@ Created to detect failed events of particular type from SailPointIDN_Events.
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess |
 | **Techniques** | T1133 |
-| **Required Connectors** | [SailPointIdentityNow](../connectors/sailpointidentitynow.md) |
+| **Required Connectors** | [SailPointIdentityNow](../connectors/sailpointidentitynow.md), [SailPointIdentityNowConnector](../connectors/sailpointidentitynowconnector.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Analytic%20Rules/SailPointIdentityNowEventType.yaml) |
-
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SailPointIDN_Events_CL`](../tables/sailpointidn-events-cl.md) 🔶 | ? | ✓ | ? |
 
 ---
 

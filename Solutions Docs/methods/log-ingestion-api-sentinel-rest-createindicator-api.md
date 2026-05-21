@@ -19,7 +19,7 @@
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | 1 |
+| [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | 1 |
 | **Total** | **1** |
 
 ## Connectors Using This API
@@ -28,7 +28,7 @@
 
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
-| [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Dataminr | 1 | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
+| [Dataminr Pulse Alerts Data Connector](../connectors/dataminrpulsealerts.md) | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | Dataminr | 1 | [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 
 ---
 

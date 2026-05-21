@@ -1,6 +1,6 @@
 # Analytic Rules - G
 
-**123 analytic rules** starting with 'G'.
+**122 analytic rules** starting with 'G'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -95,7 +95,6 @@
 | [GSA - TI Domain Entity](global-secure-access-gsa-ti-domain-entity-4ef07345-5d89-4f5b-9c64-a180d81a6176-c4743d20.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSA - TI IP Entity](global-secure-access-gsa-ti-ip-entity-3ebd25b1-6f54-49f9-b5a5-0246357ce4ca-9601350c.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSA - TI URL Entity](global-secure-access-gsa-ti-url-entity-347c6cb3-33d2-4753-b7f6-eab946a8cd51-ab57a79a.md) | Medium | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
-| [GuardDuty detector disabled or suspended](amazon-web-services-guardduty-detector-disabled-or-suspended-9da99021-d318-4711-a78a-6dea76129b3a-3f13ad74.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Guardian- Additional check JSON Policy Violation Detection](aishield-ai-security-monitoring-guardian-additional-check-json-policy-violation-detection-9ff28525-3c6f-47ba-806b-ffd913406989-011e6a7c.md) | Informational | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [Guardian- Ban Topic Policy Violation Detection](aishield-ai-security-monitoring-guardian-ban-topic-policy-violation-detection-97a76b2d-02ea-4ae5-b0c4-79e834036481-104a0831.md) | Medium | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
 | [Guardian- BII Detection Policy Violation Detection](aishield-ai-security-monitoring-guardian-bii-detection-policy-violation-detection-e7493b80-88d0-44fb-b11d-40a0467cc497-e3e2a3d5.md) | High | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |

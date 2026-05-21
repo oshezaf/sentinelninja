@@ -12,20 +12,19 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
+| [CCF](methods/ccf.md) | **171** | 143 | 1 | 27 |
 | [AMA](methods/ama.md) | **166** | 38 | 122 | 6 |
-| [CCF](methods/ccf.md) | **157** | 131 | 1 | 25 |
 | [Azure Function](methods/azure-function.md) | **125** | 94 | 26 | 5 |
-| [REST Push API](methods/rest-push-api.md) | **55** | 50 | 1 | 4 |
-| [CCF Push](methods/ccf-push.md) | **34** | 33 | 0 | 1 |
+| [REST Pull API](methods/rest-pull-api.md) | **50** | 45 | 1 | 4 |
+| [CCF Push](methods/ccf-push.md) | **36** | 34 | 0 | 2 |
 | [Native](methods/native.md) | **18** | 18 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **15** | 14 | 0 | 1 |
-| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **14** | 10 | 1 | 3 |
-| [CCF|Azure Function](methods/ccf-azure-function.md) | **8** | 8 | 0 | 0 |
+| [Azure Function (TI Upload API)|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | **13** | 9 | 1 | 3 |
+| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **2** | 2 | 0 | 0 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 0 | 0 | 1 |
-| [Azure Function (TI Upload API)|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **612** | **415** | **151** | **46** |
+| **Total** | **615** | **415** | **151** | **49** |
 
 ---
 
@@ -64,12 +63,12 @@ API-based connectors (CCF Push, Azure Function, REST Push API, and Custom Log) u
 | Collection Method | [Log Ingestion API](methods/log-ingestion-api.md) | [HTTP Data Collector API](methods/http-data-collector-api.md) | [Undetermined](methods/undetermined.md) | **Total** |
 |:-----------------|------:|------:|------:|------:|
 | [Azure Function](methods/azure-function.md) | 42 | 75 | 3 | **120** |
-| [REST Push API](methods/rest-push-api.md) | - | 55 | - | **55** |
-| [CCF Push](methods/ccf-push.md) | 34 | - | - | **34** |
+| [REST Pull API](methods/rest-pull-api.md) | - | 50 | - | **50** |
+| [CCF Push](methods/ccf-push.md) | 36 | - | - | **36** |
+| [Azure Function (TI Upload API)\|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | - | - | - | **0** |
+| [CCF](methods/ccf.md) | 8 | - | - | **8** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
-| [CCF\|Azure Function](methods/ccf-azure-function.md) | 8 | - | - | **8** |
-| [Azure Function (TI Upload API)\|REST Push API](methods/azure-function-ti-upload-api-rest-push-api.md) | - | - | - | **0** |
-| **Total** | **84** | **130** | **3** | **237** |
+| **Total** | **86** | **125** | **3** | **234** |
 
 ---
 

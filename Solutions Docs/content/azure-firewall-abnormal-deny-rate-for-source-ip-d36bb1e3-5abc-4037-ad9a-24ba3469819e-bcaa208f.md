@@ -16,8 +16,8 @@
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | InitialAccess, Exfiltration, CommandAndControl |
-| **Techniques** | T1190, T1041, T1568 |
+| **Tactics** | InitialAccess, Exfiltration, CommandAndControl, Discovery |
+| **Techniques** | T1190, T1041, T1568.001, T1568.002, T1046 |
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Analytic%20Rules/Azure%20Firewall%20-%20Abnormal%20Deny%20Rate%20for%20Source%20IP.yaml) |
 

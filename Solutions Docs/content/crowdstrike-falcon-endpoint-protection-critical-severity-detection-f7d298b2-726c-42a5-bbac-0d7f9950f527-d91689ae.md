@@ -6,7 +6,7 @@
 
 ---
 
-Creates an incident when a CrowdStrike Falcon sensor detection is triggered with a Critical Severity
+Creates an incident when a CrowdStrike Falcon sensor detection is triggered with Critical severity. The rule queries CrowdStrikeFalconEventStream for DetectionSummaryEvent records where Severity is Critical, summarizes detections by host, source IP, user, activity, technique, file details, hash, and message, and raises an incident for each matching result.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,6 +16,8 @@ Creates an incident when a CrowdStrike Falcon sensor detection is triggered with
 | **Severity** | High |
 | **Status** | Available |
 | **Kind** | Scheduled |
+| **Tactics** | Execution, Impact |
+| **Techniques** | T1204.002, T1499 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Analytic%20Rules/CriticalSeverityDetection.yaml) |
 

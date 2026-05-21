@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://flare.io/contact/](https://flare.io/contact/) |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Flare - support@flare.io |
 | **First Published** | 2021-10-20 |
 | **Last Updated** | 2026-02-10 |
@@ -53,11 +53,11 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **10 content item(s)**:
+This solution includes **12 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
-| Analytic Rules | 8 |
+| Analytic Rules | 10 |
 | Workbooks | 1 |
 | Playbooks | 1 |
 
@@ -65,14 +65,16 @@ This solution includes **10 content item(s)**:
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Flare Cloud bucket result](../content/flare-flare-cloud-bucket-result-9cb7c337-f172-4af6-b0e8-b6b7552d762d-271a57e6.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
-| [Flare Google Dork result found](../content/flare-flare-google-dork-result-found-9cb7c337-f174-4af6-b0e8-b6b7552d762d-840d1848.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
-| [Flare Host result](../content/flare-flare-host-result-9cb7c337-f175-4af6-b0e8-b6b7552d762d-ff5f9a5f.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
-| [Flare Infected Device](../content/flare-flare-infected-device-9cb7c337-f176-4af6-b0e8-b6b7552d762d-3c772b70.md) | Medium | CredentialAccess | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
-| [Flare Leaked Credentials](../content/flare-flare-leaked-credentials-9cb7c337-f170-4af6-b0e8-b6b7552d762d-a455dcf6.md) | Medium | CredentialAccess | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
-| [Flare Paste result](../content/flare-flare-paste-result-9cb7c337-f177-4af6-b0e8-b6b7552d762d-18a2af71.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
-| [Flare SSL Certificate result](../content/flare-flare-ssl-certificate-result-9cb7c337-f179-4af6-b0e8-b6b7552d762d-0725723f.md) | Medium | ResourceDevelopment | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
-| [Flare Source Code found](../content/flare-flare-source-code-found-9cb7c337-f178-4af6-b0e8-b6b7552d762d-4e606f91.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare chat results](../content/flare-flare-chat-results-76210211-3ade-47b6-b7f2-c871cd05ec43-5e65d8c7.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare cloud bucket results](../content/flare-flare-cloud-bucket-results-9cb7c337-f172-4af6-b0e8-b6b7552d762d-2b70bb23.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare google dork results](../content/flare-flare-google-dork-results-9cb7c337-f174-4af6-b0e8-b6b7552d762d-298023cb.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare host results](../content/flare-flare-host-results-9cb7c337-f175-4af6-b0e8-b6b7552d762d-ffdb44ac.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare infected device results](../content/flare-flare-infected-device-results-9cb7c337-f176-4af6-b0e8-b6b7552d762d-d6cc2fc5.md) | Medium | CredentialAccess | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare leaked credentials results](../content/flare-flare-leaked-credentials-results-9cb7c337-f170-4af6-b0e8-b6b7552d762d-ae131a18.md) | Medium | CredentialAccess | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare lookalike domain results](../content/flare-flare-lookalike-domain-results-8e5ae0d6-7f2d-475e-ada3-ed33441deeba-8cc368fa.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare marketplace results](../content/flare-flare-marketplace-results-9265ae4d-6bb0-4c18-961d-f7aae67d1546-78fb8e2f.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare paste results](../content/flare-flare-paste-results-9cb7c337-f177-4af6-b0e8-b6b7552d762d-9f498bb5.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
+| [Flare source code results](../content/flare-flare-source-code-results-9cb7c337-f178-4af6-b0e8-b6b7552d762d-c8c5f322.md) | Medium | Reconnaissance | [`FireworkV2_CL`](../tables/fireworkv2-cl.md) |
 
 ### Workbooks
 
@@ -84,7 +86,7 @@ This solution includes **10 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [credential-warning](../content/flare-credential-warning-d8db989d.md) | This playbook monitors all data received from Firework looking for leaked credentials (email:passwor... | - |
+| [credential-warning](../content/flare-credential-warning-d8db989d.md) | **This playbook is deprecated and will be replaced in a future update. Functionality may be limited ... | - |
 
 ## Release Notes
 
@@ -95,7 +97,9 @@ Earlier versions did not have published release notes.
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                        |
 | ----------- | ------------------------------ | ------------------------------------------------------------------------- |
-| 3.0.0       | 26-12-2025                     | Added new **CFF Data Connector** for this solution                        |
+| 3.1.0       | 21-04-2026                     | Updated Analytic Rules and Workbooks queries to be more accurate.<br>Added three new Analytic Rules and removed one.                                                     |
+| 3.0.0       | 15-12-2025                     | New CFF connector that replaces deprecated Rest API connector.<br>New Polling config for CFF connector.<br>New DCR config for CFF connector.<br>Added Table definition for FireworkV2_CL.<br>Fixed Analytic Rules to handle missing columns using `column_ifexists()`.<br>Added `ReleaseNotes.md` file. |
+| 1.0.0       | 21-10-2021                     | Initial Solution Release.                                                 |
 
 ---
 

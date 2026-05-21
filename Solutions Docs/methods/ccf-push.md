@@ -18,10 +18,10 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **34** |
-| Active | 33 |
+| Total Connectors | **36** |
+| Active | 34 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 1 |
+| Unpublished ⚠️ | 2 |
 
 ## Connectors Using This Method
 
@@ -42,12 +42,14 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 | [Onapsis Defend Integration](../connectors/onapsis.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | [OneTrust](../connectors/onetrustpush.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
 | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | Pathlock Inc. | 2 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
+| [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) ⚠️ | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
 | [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | SAP SE | 1 | [SAP LogServ](../solutions/sap-logserv.md) |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) ➕ | SecurityBridge Group GmbH | 2 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) | Synqly | 10 | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶 | Tanium Inc. | 10 | [Tanium](../solutions/tanium.md) |
 | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | Varonis | 1 | [Varonis Purview](../solutions/varonis-purview.md) |
 | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | Zero Networks | 4 | [ZeroNetworks](../solutions/zeronetworks.md) |
+| [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 | [Zscaler Internet Access Cloud NSS Audit Log Push Connector](../connectors/cloudnssauditlogs-ccp.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Zscaler Internet Access Cloud NSS CASB Activity Log Push Connector](../connectors/cloudnsscasbactivitylogs-ccp.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Zscaler Internet Access Cloud NSS CASB Cloud Storage Log Push Connector](../connectors/cloudnsscasbcloudstoragelogs-ccp.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |

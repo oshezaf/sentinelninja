@@ -22,9 +22,9 @@ This content item queries data from the following tables:
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ | ? |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "AntivirusDetection"` | ✓ | ✗ | ? |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ? |
+| [`DeviceInfo`](../tables/deviceinfo.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ | ? |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ | ? |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | ? |
 | [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceRegistryEvents`](../tables/deviceregistryevents.md) |  | ✓ | ✗ | ? |

@@ -6,17 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-
 ## Schema (27 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NXLogFIM_CL.json)
@@ -50,20 +39,6 @@
 | SourceModuleType_s | string |
 | TimeGenerated | datetime |
 | Type | string |
-
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [NXLog FIM](../solutions/nxlog-fim.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [NXLog FIM](../connectors/nxlogfim.md) |  |
 
 ---
 

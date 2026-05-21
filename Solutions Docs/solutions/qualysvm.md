@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.7 |
+| **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2020-12-14 |
 | **Last Updated** | 2025-11-18 |
@@ -105,6 +105,7 @@ This solution includes **8 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                            	|
 |-------------|--------------------------------|----------------------------------------------------------------|
+| 3.0.8       | 14-05-2026                     | Bumping API version                                            |
 | 3.0.7       | 18-11-2025                     | Adding adjustable API partition limit & rate limit protection. |
 | 3.0.6       | 18-09-2025                     | Updated Analytic rules, Parsers, and Workbooks in Sentinel solution content for **CCF connector** compatibility.     |
 | 3.0.5       | 29-07-2025                     | Removed Deprecated **Data Connector**.							|  

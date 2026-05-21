@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
 | **Categories** | domains |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.7 |
 | **Author** | Lookout |
 | **First Published** | 2021-10-18 |
-| **Last Updated** | 2026-04-24 |
+| **Last Updated** | 2026-05-07 |
 | **Solution Folder** | [Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel) · Rating: ★☆☆☆☆ 1.0/5 (2 ratings) · Popularity: 🔵 Medium (50%) |
 
@@ -68,12 +68,13 @@ This solution uses **2 table(s)**:
 
 ## Content Items
 
-This solution includes **12 content item(s)**:
+This solution includes **15 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 5 |
 | Workbooks | 5 |
+| Playbooks | 3 |
 | Hunting Queries | 1 |
 | Parsers | 1 |
 
@@ -102,6 +103,14 @@ This solution includes **12 content item(s)**:
 | [LookoutExecutiveDashboard](../content/lookout-lookoutexecutivedashboard-f8721bde.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [LookoutIOAInvestigationDashboard](../content/lookout-lookoutioainvestigationdashboard-3c024d7b.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
 | [LookoutSecurityInvestigationDashboard](../content/lookout-lookoutsecurityinvestigationdashboard-1578bafc.md) | [`LookoutMtdV2_CL`](../tables/lookoutmtdv2-cl.md) |
+
+### Playbooks
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [Lookout-DeviceCompliance-Remediation](../content/lookout-lookout-devicecompliance-remediation-91e42a86.md) | When a device compliance or security posture degradation incident is created in Microsoft Sentinel b... | - |
+| [Lookout-MobileThreat-NotifyAndEnrich](../content/lookout-lookout-mobilethreat-notifyandenrich-24480cec.md) | When a high or critical severity mobile threat incident is created in Microsoft Sentinel by Lookout,... | - |
+| [Lookout-SmishingAlert-UserNotify](../content/lookout-lookout-smishingalert-usernotify-6368ad8f.md) | When a critical or high severity smishing or phishing incident is created in Microsoft Sentinel by L... | - |
 
 ### Parsers
 
@@ -180,6 +189,7 @@ Solutions/Lookout/
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.5       | 07-05-2026                     | Fixed all 5 workbook metadata `description` fields that contained raw PowerShell serialization artifacts (`System.Object[]`) instead of actual description text — a template generation script bug that produced malformed strings like `@{workbookKey=...; dataTypesDependencies=System.Object[]...}.description`. |
 | 3.0.4       | 24-04-2026                     | Fixed `APIKey` bracket escaping in `mainTemplate.json`: changed `[[parameters('applicationKey')]]` to `[[parameters('applicationKey')]` to prevent ARM expression evaluation error (`expected token 'EndOfData' and actual 'RightSquareBracket'`) when Sentinel instantiates the ResourcesDataConnector template. |
 | 3.0.3       | 23-04-2026                     | Version bump for certification resubmission. Fixed `workspace-location` parameter `defaultValue` to use `[resourceGroup().location]` ARM expression. |
 | 3.0.2       | 11-03-2026                     | Updated `lastPublishDate` across solution metadata and package to 2026-03-11. Cleaned up stale v4.0.0 branches. Resubmission for certification after resolving link discrepancy flagged in Best Practice Test 300.4.1.1. Fixed product branding: updated "Azure Sentinel" to "Microsoft Sentinel" in workbook descriptions. Fixed DCR transform query error: undefined symbol `detections` corrected to `smishing_alert.detections`. Aligned data connector version from `1.0.0` to `3.0.2` for consistent version tracking across all solution components. Updated all template version references from `3.0.1` to `3.0.2` in package. Added **Parsers** and **Notebooks** steps to the install wizard (`createUiDefinition.json`) for improved discoverability during solution deployment. |

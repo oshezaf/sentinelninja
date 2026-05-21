@@ -104,6 +104,12 @@
 <td style="text-align: center;">?</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="../tables/abnormal-security-logs-cl.html"><code>ABNORMAL_SECURITY_LOGS_CL</code></a> 🔶</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="../tables/abnormal-security-posture-change-cl.html"><code>ABNORMAL_SECURITY_POSTURE_CHANGE_CL</code></a> 🔶</td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
@@ -123,12 +129,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../tables/abnormal-security-vendor-case-cl.html"><code>ABNORMAL_SECURITY_VENDOR_CASE_CL</code></a> 🔶</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../tables/abnormalsecuritylogs-cl.html"><code>AbnormalSecurityLogs_CL</code></a></td>
 <td style="text-align: center;">?</td>
 <td style="text-align: center;">✓</td>
 <td style="text-align: center;">?</td>
@@ -172,9 +172,7 @@ Deploy Abnormal Security Push Connector</p>
 - <strong>Data Collection Endpoint URI</strong>: <code>DataCollectionEndpoint</code>
 <em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
 - <strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code>
-<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
-- <strong>Fallback Stream Name</strong>: <code>Custom-AbnormalSecurityLogs</code>
-- <strong>Stream Prefix (for per-event-type routing)</strong>: <code>Custom-ABNORMAL_SECURITY_</code></p>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
 <h4 id="configure-in-abnormal-security-portal">Configure in Abnormal Security Portal</h4>
 <ol>
@@ -185,11 +183,11 @@ Deploy Abnormal Security Push Connector</p>
 <li>Click <strong>Verify Credentials</strong> to test the connection</li>
 <li>Click <strong>Save</strong> and <strong>Enable</strong> the integration</li>
 </ol>
-<p><strong>Multi-table routing:</strong> Events are automatically routed to per-event-type tables (e.g., threat logs → <code>ABNORMAL_SECURITY_THREAT_LOG_CL</code>, cases → <code>ABNORMAL_SECURITY_CASE_CL</code>). Unknown event types go to the fallback table <code>AbnormalSecurityLogs_CL</code>.</p>
+<p><strong>Multi-table routing:</strong> Events are automatically routed to per-event-type tables (e.g., threat logs → <code>ABNORMAL_SECURITY_THREAT_LOG_CL</code>, cases → <code>ABNORMAL_SECURITY_CASE_CL</code>). Unknown event types go to the fallback table <code>ABNORMAL_SECURITY_LOGS_CL</code>.</p>
 <p><strong>3. Verify Data Ingestion</strong></p>
 <p>Confirm events are flowing from Abnormal Security to Sentinel.
 Wait 5-10 minutes after enabling the integration, then run this KQL query:</p>
-<p>union ABNORMAL_SECURITY_THREAT_LOG_CL, ABNORMAL_SECURITY_CASE_CL, ABNORMAL_SECURITY_AUDIT_LOG_CL, ABNORMAL_SECURITY_ABUSE_MAILBOX_CL, ABNORMAL_SECURITY_POSTURE_CHANGE_CL, ABNORMAL_SECURITY_ATO_CASE_CL, ABNORMAL_SECURITY_REMEDIATION_CL, ABNORMAL_SECURITY_VENDOR_CASE_CL, AbnormalSecurityLogs_CL | where TimeGenerated &gt; ago(1h) | extend event_type = tostring(abx_metadata.event_type) | summarize count() by event_type | order by count_ desc</p>
+<p>union ABNORMAL_SECURITY_THREAT_LOG_CL, ABNORMAL_SECURITY_CASE_CL, ABNORMAL_SECURITY_AUDIT_LOG_CL, ABNORMAL_SECURITY_ABUSE_MAILBOX_CL, ABNORMAL_SECURITY_POSTURE_CHANGE_CL, ABNORMAL_SECURITY_ATO_CASE_CL, ABNORMAL_SECURITY_REMEDIATION_CL, ABNORMAL_SECURITY_VENDOR_CASE_CL, ABNORMAL_SECURITY_LOGS_CL | where TimeGenerated &gt; ago(1h) | extend event_type = tostring(abx_metadata.event_type) | summarize count() by event_type | order by count_ desc</p>
 <p>If no data appears after 15 minutes, verify credentials in the Abnormal Security Portal and check Azure Monitor for ingestion errors.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>

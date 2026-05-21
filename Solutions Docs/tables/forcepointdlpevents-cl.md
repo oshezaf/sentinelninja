@@ -70,15 +70,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Forcepoint DLP](../solutions/forcepoint-dlp.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ForcepointDLP](../content/forcepoint-dlp-forcepointdlp-aa61cdb9.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ForcepointDLP](../content/github-only-forcepointdlp-897d7584.md) |  |
 
 ---
 

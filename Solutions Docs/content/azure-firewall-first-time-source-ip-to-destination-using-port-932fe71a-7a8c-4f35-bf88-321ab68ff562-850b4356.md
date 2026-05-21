@@ -14,6 +14,7 @@ Identifies the first time a source IP communicates with a destination using a sp
 | **Solution** | [Azure Firewall](../solutions/azure-firewall.md) |
 | **ID** | `932fe71a-7a8c-4f35-bf88-321ab68ff562` |
 | **Tactics** | Exfiltration, CommandAndControl |
+| **Techniques** | T1048, T1071 |
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Hunting%20Queries/Azure%20Firewall%20-%20First%20Time%20Source%20IP%20to%20Destination%20Using%20Port.yaml) |
 

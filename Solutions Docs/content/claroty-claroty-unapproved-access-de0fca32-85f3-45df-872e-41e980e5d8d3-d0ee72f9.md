@@ -15,7 +15,7 @@ Query searches for unapproved access events.
 | **ID** | `de0fca32-85f3-45df-872e-41e980e5d8d3` |
 | **Severity** | Medium |
 | **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Techniques** | T1190, T1133 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotyUnapprovedAccess.yaml) |
 

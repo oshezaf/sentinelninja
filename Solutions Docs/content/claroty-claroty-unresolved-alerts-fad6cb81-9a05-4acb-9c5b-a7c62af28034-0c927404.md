@@ -6,7 +6,7 @@
 
 ---
 
-Query searches for alerts with unresolved status.
+Query searches for Claroty alerts with unresolved status to identify alerts that remain open for investigation.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,8 +14,8 @@ Query searches for alerts with unresolved status.
 | **Solution** | [Claroty](../solutions/claroty.md) |
 | **ID** | `fad6cb81-9a05-4acb-9c5b-a7c62af28034` |
 | **Severity** | Medium |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | InitialAccess, Discovery, Impact |
+| **Techniques** | T1190, T1082, T1499 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotyUnresolvedAlerts.yaml) |
 

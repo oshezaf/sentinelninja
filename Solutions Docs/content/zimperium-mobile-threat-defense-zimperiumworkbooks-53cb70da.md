@@ -12,6 +12,8 @@
 | **Solution** | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense/Workbooks/ZimperiumWorkbooks.json) |
 
+> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
+
 ## Tables Used
 
 This content item queries data from the following tables:

@@ -6,7 +6,7 @@
 
 ---
 
-Detects when critical deviation from baseline occurs.
+Detects Claroty events where EventOriginalType or EventType indicates a Baseline Deviation and EventSeverity is 5, which represents a critical deviation from baseline that may indicate disruptive or unauthorized activity.
 
 | Attribute | Value |
 |:----------|:------|
@@ -17,7 +17,7 @@ Detects when critical deviation from baseline occurs.
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Impact |
-| **Techniques** | T1529 |
+| **Techniques** | T1529, T1565.001 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Analytic%20Rules/ClarotyCriticalBaselineDeviation.yaml) |
 

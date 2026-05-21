@@ -10,11 +10,42 @@
 |:----------|:------|
 | **Ingestion API Supported** | ✓ Yes |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
+
+## Schema (9 columns)
+
+**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEPostureHistoryData_CL.json)
+
+| Column Name | Type |
+|:------------|:-----|
+| data_type | string |
+| domain_id | string |
+| domain_name | string |
+| end_time | datetime |
+| metric_date | datetime |
+| start_time | datetime |
+| tenant_url | string |
+| TimeGenerated | datetime |
+| value | int |
+
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [BloodHound Enterprise](../solutions/bloodhound-enterprise.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) |  |
 
 ---
 

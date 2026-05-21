@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.3.2</td>
+<td style="text-align: left;">3.3.3</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -73,13 +73,14 @@
 </table>
 <p>The Illumio Insights data connector allows ingesting logs from the Illumio API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform. It uses the Illumio API to fetch logs and it supports DCR-based ingestion time transformations that parses the received security data into a custom table so that queries don't need to parse it again, thus resulting in better performance.</p>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>2 data connector(s)</strong>:</p>
+<p>This solution provides <strong>3 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/illumioinsightsdefinition.html">Illumio Insights</a></li>
 <li><a href="../connectors/illumioinsightssummaryccp.html">Illumio Insights Summary</a></li>
+<li><a href="../connectors/sentinelillumioinsightsgraphccp.html">Illumio Insights Graph</a></li>
 </ul>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -89,6 +90,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="../tables/illumioinsightsgraph-cl.html"><code>IllumioInsightsGraph_CL</code></a></td>
+<td><a href="../connectors/sentinelillumioinsightsgraphccp.html">Illumio Insights Graph</a></td>
+<td>-</td>
+</tr>
 <tr>
 <td><a href="../tables/illumioinsightssummary-cl.html"><code>IllumioInsightsSummary_CL</code></a></td>
 <td><a href="../connectors/illumioinsightssummaryccp.html">Illumio Insights Summary</a></td>
@@ -111,6 +117,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.3.3</td>
+<td>17-05-2026</td>
+<td>Description , Polling api and Table columns changes for <strong>CCF Data Connector</strong></td>
+</tr>
 <tr>
 <td>3.3.2</td>
 <td>29-09-2025</td>

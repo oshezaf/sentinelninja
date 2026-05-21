@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lookout-MobileThreat-NotifyAndEnrich &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="lookout-mobilethreat-notifyandenrich">Lookout-MobileThreat-NotifyAndEnrich</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>When a high or critical severity mobile threat incident is created in Microsoft Sentinel by Lookout, this playbook enriches the incident with a detailed investigation comment including threat intelligence context, device risk details, and recommended next steps for the analyst.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/lookout.html">Lookout</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Playbooks/Lookout-MobileThreat-NotifyAndEnrich/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>1</strong> Logic App connector / built-in action:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Add_incident_enrichment_comment | post | `/Incidents/Comment` | — |
+
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Playbooks/Lookout-MobileThreat-NotifyAndEnrich/readme.md">Lookout-MobileThreat-NotifyAndEnrich/readme.md</a></em></p>
+</blockquote>
+<h2 id="overview">Overview</h2>
+<p>This playbook triggers automatically when Microsoft Sentinel creates an incident from the <strong>Lookout - High Severity Mobile Threats Detected (v2)</strong> analytic rule. It performs three automated actions:</p>
+<ol>
+<li><strong>SOC Notification</strong> — Posts a detailed Teams message to the SOC channel with full threat intelligence: threat type, category, risk score, classifications, device platform, security status, and a direct link to the Sentinel incident.</li>
+<li><strong>Device Owner Email</strong> — Sends a formatted HTML email to the device owner with immediate actions required: stop using affected apps, open Lookout for Work, disconnect from corporate resources, and contact IT Security.</li>
+<li><strong>Incident Enrichment</strong> — Adds a structured comment to the Sentinel incident with threat intelligence context, device risk details, MDM connector status, and recommended next steps for the analyst.</li>
+</ol>
+<h2 id="analytic-rules-supported">Analytic Rules Supported</h2>
+<table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lookout - High Severity Mobile Threats Detected (v2)</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Lookout - New Threat events found</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>A Microsoft Teams team and channel configured for SOC security alerts.</li>
+<li>A Microsoft 365 / Office 365 account authorized to send email.</li>
+<li>The playbook managed identity must be granted the <strong>Microsoft Sentinel Responder</strong> role on the Log Analytics workspace.</li>
+</ol>
+<h2 id="deployment">Deployment</h2>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FLookout%2FPlaybooks%2FLookout-MobileThreat-NotifyAndEnrich%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<h3 id="deployment-parameters">Deployment Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PlaybookName</td>
+<td>No</td>
+<td>Name of the Logic App (default: <code>Lookout-MobileThreat-NotifyAndEnrich</code>)</td>
+</tr>
+<tr>
+<td>TeamsGroupId</td>
+<td>Yes</td>
+<td>Microsoft Teams Group (Team) ID for SOC notifications</td>
+</tr>
+<tr>
+<td>TeamsChannelId</td>
+<td>Yes</td>
+<td>Microsoft Teams Channel ID for SOC notifications</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Finding your Teams IDs:</strong> In Microsoft Teams, right-click the channel → <strong>Get link to channel</strong>. The URL contains both <code>groupId</code> and the channel ID.</p>
+<h2 id="post-deployment-configuration">Post-Deployment Configuration</h2>
+<h3 id="step-1-authorize-api-connections">Step 1 — Authorize API Connections</h3>
+<p>After deployment, navigate to the resource group in the Azure portal and authorize the API connections:</p>
+<ol>
+<li>Open the <strong>teams-Lookout-MobileThreat-NotifyAndEnrich</strong> connection → <strong>Edit API connection</strong> → <strong>Authorize</strong> → <strong>Save</strong>.</li>
+<li>Open the <strong>office365-Lookout-MobileThreat-NotifyAndEnrich</strong> connection → <strong>Edit API connection</strong> → <strong>Authorize</strong> → <strong>Save</strong>.</li>
+</ol>
+<h3 id="step-2-assign-sentinel-responder-role">Step 2 — Assign Sentinel Responder Role</h3>
+<ol>
+<li>Navigate to your <strong>Microsoft Sentinel</strong> workspace → <strong>Settings</strong> → <strong>Workspace settings</strong>.</li>
+<li>Select <strong>Access control (IAM)</strong> → <strong>Add role assignment</strong>.</li>
+<li>Role: <strong>Microsoft Sentinel Responder</strong>.</li>
+<li>Assign to: the Logic App's managed identity (<code>Lookout-MobileThreat-NotifyAndEnrich</code>).</li>
+</ol>
+<h3 id="step-3-create-automation-rule">Step 3 — Create Automation Rule</h3>
+<ol>
+<li>In <strong>Microsoft Sentinel</strong>, go to <strong>Automation</strong> → <strong>+ Create</strong> → <strong>Automation rule</strong>.</li>
+<li>Configure:
+   - <strong>Trigger</strong>: When incident is created
+   - <strong>Conditions</strong>: Analytics rule name — Contains — <code>Lookout - High Severity Mobile Threats</code>
+   - <strong>Actions</strong>: Run playbook → <code>Lookout-MobileThreat-NotifyAndEnrich</code></li>
+<li>Save the automation rule.</li>
+</ol>
+<h2 id="permissions-summary">Permissions Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Connection</th>
+<th>Auth Method</th>
+<th>Permission Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft Sentinel</td>
+<td>Managed Identity</td>
+<td>Microsoft Sentinel Responder</td>
+</tr>
+<tr>
+<td>Microsoft Teams</td>
+<td>User Account</td>
+<td>Channel Post Messages</td>
+</tr>
+<tr>
+<td>Office 365</td>
+<td>User Account</td>
+<td>Send Email</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/lookout.html">Back to Lookout</a></p>
+</div>
+
+</body>
+</html>

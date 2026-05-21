@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.2</td>
+<td style="text-align: left;">3.0.7</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">2026-04-24</td>
+<td style="text-align: left;">2026-05-07</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -123,7 +123,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>12 content item(s)</strong>:</p>
+<p>This solution includes <strong>15 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -139,6 +139,10 @@
 <tr>
 <td style="text-align: left;">Workbooks</td>
 <td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: left;">3</td>
 </tr>
 <tr>
 <td style="text-align: left;">Hunting Queries</td>
@@ -241,6 +245,33 @@
 </tr>
 </tbody>
 </table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-devicecompliance-remediation-91e42a86.html">Lookout-DeviceCompliance-Remediation</a></td>
+<td style="text-align: left;">When a device compliance or security posture degradation incident is created in Microsoft Sentinel b...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-mobilethreat-notifyandenrich-24480cec.html">Lookout-MobileThreat-NotifyAndEnrich</a></td>
+<td style="text-align: left;">When a high or critical severity mobile threat incident is created in Microsoft Sentinel by Lookout,...</td>
+<td style="text-align: left;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/lookout-lookout-smishingalert-usernotify-6368ad8f.html">Lookout-SmishingAlert-UserNotify</a></td>
+<td style="text-align: left;">When a critical or high severity smishing or phishing incident is created in Microsoft Sentinel by L...</td>
+<td style="text-align: left;">-</td>
+</tr>
+</tbody>
+</table>
 <h3 id="parsers">Parsers</h3>
 <table>
 <thead>
@@ -331,6 +362,11 @@ Solutions/Lookout/
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.5</td>
+<td>07-05-2026</td>
+<td>Fixed all 5 workbook metadata <code>description</code> fields that contained raw PowerShell serialization artifacts (<code>System.Object[]</code>) instead of actual description text — a template generation script bug that produced malformed strings like <code>@{workbookKey=...; dataTypesDependencies=System.Object[]...}.description</code>.</td>
+</tr>
 <tr>
 <td>3.0.4</td>
 <td>24-04-2026</td>

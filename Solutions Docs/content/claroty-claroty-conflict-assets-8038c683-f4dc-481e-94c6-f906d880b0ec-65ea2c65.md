@@ -13,9 +13,9 @@ Query searches for conflicting assets.
 | **Type** | Hunting Query |
 | **Solution** | [Claroty](../solutions/claroty.md) |
 | **ID** | `8038c683-f4dc-481e-94c6-f906d880b0ec` |
-| **Severity** | Medium |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Status** | Available |
+| **Tactics** | InitialAccess, Discovery |
+| **Techniques** | T1016, T1190, T1613 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotyConflictAssets.yaml) |
 

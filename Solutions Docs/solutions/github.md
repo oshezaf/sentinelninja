@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.2.0 |
+| **Version** | 3.2.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-18 |
 | **Last Updated** | 2026-03-27 |
@@ -61,7 +61,7 @@ This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) | - |
+| [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md) 🔶 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) | Workbooks |
 | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) | [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
 | [`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) | [GitHub Enterprise Audit Log (via Codeless Connector Framework)](../connectors/githubauditdefinitionv2.md), [[Deprecated] GitHub Enterprise Audit Log](../connectors/githubecauditlogpolling.md) | Analytics, Hunting |
 | [`GitHubRepoLogs_CL`](../tables/githubrepologs-cl.md) | - | Analytics |
@@ -105,35 +105,36 @@ This solution includes **29 content item(s)**:
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
 | [GitHub First Time Invite Member and Add Member to Repo](../content/github-github-first-time-invite-member-and-add-member-to-repo-f0d30d3c-e6ad-480a-90e8-1bd7cc84881b-0912ca5c.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub First Time Repo Delete](../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c-69cfe798.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Inactive or New Account Access or Usage](../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-be1de63d.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Mass Deletion of repos or projects](../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48-2f132015.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub OAuth App Restrictions Disabled](../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959-0ae7ca34.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Repo switched from private to public](../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1-cb2a47a1.md) | Collection | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub Update Permissions](../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860-a49819f7.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
-| [GitHub User Grants Access and Other User Grants Access](../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a-1b34b5bf.md) | Persistence, PrivilegeEscalation | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) |
+| [GitHub First Time Repo Delete](../content/github-github-first-time-repo-delete-c3237d88-fdc4-4dee-8b90-118ded2c507c-69cfe798.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHub_CL`](../tables/github-cl.md) |
+| [GitHub Inactive or New Account Access or Usage](../content/github-github-inactive-or-new-account-access-or-usage-b8508e24-47a6-4f8e-9066-3cc937197e7f-be1de63d.md) | Persistence | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHub_CL`](../tables/github-cl.md) |
+| [GitHub Mass Deletion of repos or projects](../content/github-github-mass-deletion-of-repos-or-projects-67da5c4e-49f2-476d-96ff-2dbe4b855a48-2f132015.md) | Impact | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHub_CL`](../tables/github-cl.md) |
+| [GitHub OAuth App Restrictions Disabled](../content/github-github-oauth-app-restrictions-disabled-667e6a70-adc9-49b7-9cf3-f21927c71959-0ae7ca34.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHub_CL`](../tables/github-cl.md) |
+| [GitHub Repo switched from private to public](../content/github-github-repo-switched-from-private-to-public-a6e2afd3-559c-4e88-a693-39c1f6789ef1-cb2a47a1.md) | Collection | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHub_CL`](../tables/github-cl.md) |
+| [GitHub Update Permissions](../content/github-github-update-permissions-ec986fb7-34ed-4528-a5f3-a496e61d8860-a49819f7.md) | Persistence, DefenseEvasion | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHub_CL`](../tables/github-cl.md) |
+| [GitHub User Grants Access and Other User Grants Access](../content/github-github-user-grants-access-and-other-user-grants-access-f18c4dfb-4fa6-4a9d-9bd3-f7569d1d685a-1b34b5bf.md) | Persistence, PrivilegeEscalation | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md)<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md)<br>[`GitHub_CL`](../tables/github-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [GitHub](../content/github-github-87916f66.md) | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) |
-| [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md) | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) |
+| [GitHub](../content/github-github-87916f66.md) | [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md)<br>[`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) |
+| [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md) | [`GitHubAdvancedSecurityAlerts_CL`](../tables/githubadvancedsecurityalerts-cl.md)<br>[`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [GitHubAuditData](../parsers/githubauditdata.md) | - | [`GitHubAuditLogPolling_CL`](../tables/githubauditlogpolling-cl.md) *(read)*<br>[`GitHubAuditLogsV2_CL`](../tables/githubauditlogsv2-cl.md) *(read)* |
-| [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
-| [GitHubDependabotData](../parsers/githubdependabotdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | - | - |
+| [GitHubDependabotData](../parsers/githubdependabotdata.md) | - | - |
 | [GitHubScanAudit](../parsers/githubscanaudit.md) | - | - |
-| [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | - | [`githubscanaudit_CL`](../tables/githubscanaudit-cl.md) *(read)* |
+| [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | - | - |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.2.1       | 04-05-2026                     | Migrated Parsers and Workbooks to `githubscanaudit` CLv1 & CLv2 union alias          |
 | 3.2.0       | 24-04-2026                     | Added **GitHub Webhook V2** data connector (CLv2/Logs Ingestion API) public preview |
 | 3.1.4       | 19-03-2026                     | Fix NRT 2FA rule for new parser format. |
 | 3.1.3       | 29-01-2026                     | Promoted GitHub Enterprise Cloud Audit Log CCF connector from Public Preview to GA. |

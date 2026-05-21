@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SailPointIDNEventsV2CL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="sailpointidn_eventsv2_cl">SailPointIDN_EventsV2_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (40 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow%5CData%20Connectors%5CSearchEvent_CCF/table_SailPointIDN_EventsV2.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Action performed during the event (e.g., USER_STEP_UP_AUTH).</td>
+</tr>
+<tr>
+<td style="text-align: left;">ActorName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the actor that triggered the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesAggregationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Aggregation job ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesCapability</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Capability associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesDirectoryRolesDeltaTokenAfter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Directory roles delta token after aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesDirectoryRolesDeltaTokenBefore</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Directory roles delta token before aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesDuration</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Duration of the aggregation process.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesGroupsDeltaTokenAfter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Groups delta token after aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesGroupsDeltaTokenBefore</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Groups delta token before aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesHostName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Host name associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesIdentitiesProcessed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of identities processed during aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesIdentitiesSelected</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of identities selected during aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesIdentitiesTotal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Total number of identities in the aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesOperation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operation type within the event attributes (e.g., for aggregation events).</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesProcessId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Process ID of the aggregation job.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Scope of the event action.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesSourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source ID associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesSourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source name associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesUserDeltaTokenAfter</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User delta token after aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesUserDeltaTokenBefore</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User delta token before aggregation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">AttributesUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User ID associated with the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Created</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">UTC timestamp when the event was created in SailPoint.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Details</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional contextual details about the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DocType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SailPoint internal Elasticsearch document type (value is always 'event'). Renamed from 'SailPointDocType'; maps from API field '_type'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">High-level event type category (e.g., USER_MANAGEMENT, AUTH). Maps from API field 'type'; renamed to avoid conflict with the Azure Monitor reserved 'Type' system column.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the audit event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Index</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SailPoint internal Elasticsearch index identifier. Renamed from 'SailPointIndex'; maps from API field '_index'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Human-readable name of the event type.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Objects</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Related object names or identifiers involved in the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Operation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operation performed during the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Org</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SailPoint tenant/org identifier.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SailPoint infrastructure pod where the event originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hard-coded source system identifier for backwards compatibility with the Azure Function connector (SailPointIDN_Events_CL). Value is always 'RestAPI'.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stack</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Stack or service layer where the event originated.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Outcome status of the event (e.g., PASSED, FAILED).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Synced</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">UTC timestamp when the event was synced to the platform.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TargetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the target object affected by the event.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TechnicalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Technical name identifying the specific event subtype (e.g., USER_AUTHENTICATION_STEP_UP_SETUP_PASSED).</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">TrackingNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tracking number for access request-related events.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/sailpointidentitynow.html">SailPointIdentityNow</a></li>
+</ul>
+<h2 id="connectors">Connectors (1)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../connectors/sailpointidentitynowconnector.html">SailPoint IdentityNow (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

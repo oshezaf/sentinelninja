@@ -13,7 +13,7 @@
 | **Connector ID** | `MailGuard365` |
 | **Publisher** | MailGuard365 |
 | **Used in Solutions** | [MailGuard 365](../solutions/mailguard-365.md) |
-| **Collection Method** | [REST Push API](../methods/rest-push-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [MailGuard365.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365/Data%20Connectors/MailGuard365.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

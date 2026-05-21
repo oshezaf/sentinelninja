@@ -1,6 +1,6 @@
 # Analytic Rules - L
 
-**28 analytic rules** starting with 'L'.
+**27 analytic rules** starting with 'L'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -27,7 +27,6 @@
 | [Linked Malicious Storage Artifacts](microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.md) | Medium | 📦 [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
 | [Local Admin Group Changes](microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Log4j vulnerability exploit aka Log4Shell IP IOC](apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.md) | High | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
-| [Login to AWS Management Console without MFA](amazon-web-services-login-to-aws-management-console-without-mfa-d25b1998-a592-4bc5-8a3a-92b39eedb1bc-bb2d6da4.md) | Low | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Lookout - Critical Audit and Policy Changes (v2)](lookout-lookout-critical-audit-and-policy-changes-v2-6b2d4e8a-5f7c-4b9e-8a1d-3c5e7a9b2f4d-c2a4c32f.md) | Medium | 📦 [Lookout](../solutions/lookout.md) |
 | [Lookout - Critical Smishing and Phishing Alerts (v2)](lookout-lookout-critical-smishing-and-phishing-alerts-v2-7a3e5f9b-4c8d-4a2e-9f1b-6d8e2a4c7f9e-766d3a1e.md) | High | 📦 [Lookout](../solutions/lookout.md) |
 | [Lookout - Device Compliance and Security Status Changes (v2)](lookout-lookout-device-compliance-and-security-status-changes-v2-9c5b6d8f-3a02-4e9b-af4c-2d7e9b1f5a8c-f6dcf4b4.md) | Medium | 📦 [Lookout](../solutions/lookout.md) |

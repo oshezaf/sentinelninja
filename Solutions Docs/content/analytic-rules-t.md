@@ -1,6 +1,6 @@
 # Analytic Rules - T
 
-**201 analytic rules** starting with 'T'.
+**200 analytic rules** starting with 'T'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -16,7 +16,6 @@
 |:-----|:---------|:-------|
 | [TacitRed - High Confidence Compromise](tacitredthreatintelligence-tacitred-high-confidence-compromise-b2c3d4e5-f6a7-8901-bcde-f23456789012-9220bb1c.md) | High | 📦 [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
 | [TacitRed - Repeat Compromise Detection](tacitredthreatintelligence-tacitred-repeat-compromise-detection-a1b2c3d4-e5f6-7890-abcd-ef1234567890-01245705.md) | High | 📦 [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
-| [Tampering to AWS CloudTrail logs](amazon-web-services-tampering-to-aws-cloudtrail-logs-633a91df-d031-4b6e-a413-607a61540559-4824c69a.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Tanium Threat Response Alerts](tanium-tanium-threat-response-alerts-dd9aa0ff-7ac1-4448-879c-e1a18d5890b4-94582d48.md) | High | 📦 [Tanium](../solutions/tanium.md) |
 | [Tape Erase Job Started](veeam-tape-erase-job-started-06ba509c-606e-4967-baee-21815ae61f8e-409f1252.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Tape Library Deleted](veeam-tape-library-deleted-ecf98b4a-3986-4739-879d-dd446e839153-859b6cf4.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |

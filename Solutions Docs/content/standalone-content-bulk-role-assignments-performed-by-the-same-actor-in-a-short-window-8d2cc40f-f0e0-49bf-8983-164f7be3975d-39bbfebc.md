@@ -1,0 +1,45 @@
+# Bulk role assignments performed by the same actor in a short window
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Content Index](../content/content-index.md)
+
+---
+
+Identifies actors who perform three or more Entra ID directory role assignments within a ten-minute window, consistent with automated post-compromise persistence. Results are enriched with the actor's most recent sign-in country for analyst triage. Adjust the threshold variable for environments with routine bulk provisioning workflows. References: - https://learn.microsoft.com/azure/active-directory/roles/permissions-reference - https://learn.microsoft.com/azure/active-directory/reports-monitori
+
+| Attribute | Value |
+|:----------|:------|
+| **Type** | Hunting Query |
+| **Solution** | Standalone Content |
+| **ID** | `8d2cc40f-f0e0-49bf-8983-164f7be3975d` |
+| **Tactics** | Persistence, PrivilegeEscalation |
+| **Techniques** | T1098.003 |
+| **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
+| **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/MultipleDataSources/BulkRoleAssignmentsInShortWindow.yaml) |
+
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Add member to role."` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
+
+## Associated Connectors
+
+The following connectors provide data for this content item:
+
+| Connector | Solution |
+|:----------|:---------|
+| [AzureActiveDirectory](../connectors/azureactivedirectory.md) | [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
+
+**Solutions:** [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Hunting Queries](hunting-queries.md)
+

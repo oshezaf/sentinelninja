@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 683 |
-| **Solutions** | 118 |
+| **Playbooks using** | 686 |
+| **Solutions** | 119 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
 
 ## Playbooks Using This Connector
@@ -17,6 +17,7 @@
 |:---------|:---------|------------:|--------:|
 | [ ProofpointTAP-CheckAccountInVAP](../content/proofpointtap-proofpointtap-checkaccountinvap-58ea7ed4.md) | [ProofPointTap](../solutions/proofpointtap.md) | 1 | 3 |
 | [2S-MISP-Forwarder](../content/standalone-content-2s-misp-forwarder-5acdf96c.md) | 📄 Standalone | 1 | 0 |
+| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 0 |
 | [AbuseIPDB Enrich Incident By IP Info](../content/abuseipdb-abuseipdb-enrich-incident-by-ip-info-ec814639.md) | [AbuseIPDB](../solutions/abuseipdb.md) | 1 | 2 |
 | [AbuseIPDB Report IPs To AbuseIPDB After User Response In MSTeams](../content/abuseipdb-abuseipdb-report-ips-to-abuseipdb-after-user-response-in-msteams-1d81545b.md) | [AbuseIPDB](../solutions/abuseipdb.md) | 1 | 1 |
 | [AD4IoT-AutoAlertStatusSync](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-autoalertstatussync-23507deb.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 1 | 0 |
@@ -31,7 +32,6 @@
 | [AD4IoT-SendEmailtoIoTOwner](../content/iototthreatmonitoringwithdefenderforiot-ad4iot-sendemailtoiotowner-726ee92c.md) | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) | 1 | 5 |
 | [Add Asset to Protection - Zero Networks Segment](../content/zeronetworks-add-asset-to-protection-zero-networks-segment-16e37e2a.md) | [ZeroNetworks](../solutions/zeronetworks.md) | 1 | 2 |
 | [Add Block Outbound Rule - Zero Networks Acccess Orchestrator](../content/zeronetworks-add-block-outbound-rule-zero-networks-acccess-orchestrator-7ca46c7d.md) | [ZeroNetworks](../solutions/zeronetworks.md) | 1 | 2 |
-| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-4cd7a68f.md) | [Dynatrace](../solutions/dynatrace.md) | 1 | 0 |
 | [Add Host To Watchlist - Alert Trigger](../content/watchlists-utilities-add-host-to-watchlist-alert-trigger-fc569050.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 0 |
 | [Add Host To Watchlist - Incident Trigger](../content/watchlists-utilities-add-host-to-watchlist-incident-trigger-6dc249a3.md) | [Watchlists Utilities](../solutions/watchlists-utilities.md) | 1 | 0 |
 | [Add IP Entity To Named Location](../content/standalone-content-add-ip-entity-to-named-location-93d6bf5a.md) | 📄 Standalone | 1 | 1 |
@@ -434,6 +434,9 @@
 | [Logic Apps Custom Connector and Playbook templates - HaveIBeenPwned](../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-haveibeenpwned-85e96128.md) | 📄 Standalone | 1 | 10 |
 | [Logic Apps Custom Connector and Playbook templates - Palo Alto Wildfire and PAN-OS](../content/standalone-content-logic-apps-custom-connector-and-playbook-templates-palo-alto-wildfire-and-pan-os-0c642dc7.md) | 📄 Standalone | 1 | 9 |
 | [Logic Apps Custom Connectors and Playbook templates - ForcepointNGFW](../content/standalone-content-logic-apps-custom-connectors-and-playbook-templates-forcepointngfw-5a1f7dba.md) | 📄 Standalone | 1 | 17 |
+| [Lookout-DeviceCompliance-Remediation](../content/lookout-lookout-devicecompliance-remediation-91e42a86.md) | [Lookout](../solutions/lookout.md) | 1 | 3 |
+| [Lookout-MobileThreat-NotifyAndEnrich](../content/lookout-lookout-mobilethreat-notifyandenrich-24480cec.md) | [Lookout](../solutions/lookout.md) | 1 | 3 |
+| [Lookout-SmishingAlert-UserNotify](../content/lookout-lookout-smishingalert-usernotify-6368ad8f.md) | [Lookout](../solutions/lookout.md) | 1 | 2 |
 | [MDTI-Automated-Triage](../content/microsoft-defender-threat-intelligence-mdti-automated-triage-400e9aca.md) | [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md) | 1 | 6 |
 | [MDTI-Data-Cookies](../content/microsoft-defender-threat-intelligence-mdti-data-cookies-7c8799f9.md) | [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md) | 1 | 4 |
 | [MDTI-Data-PassiveDns](../content/microsoft-defender-threat-intelligence-mdti-data-passivedns-5b8a0b63.md) | [Microsoft Defender Threat Intelligence](../solutions/microsoft-defender-threat-intelligence.md) | 1 | 4 |

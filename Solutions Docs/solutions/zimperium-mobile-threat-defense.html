@@ -17,7 +17,7 @@
 <div class="doc-content">
 <h1 id="zimperium-mtd-for-sentinel">Zimperium MTD for Sentinel</h1>
 <p><em>Solution: Zimperium Mobile Threat Defense</em></p>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_square2.svg" alt="Zimperium Mobile Threat Defense Logo" width="75" height="75"></p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_orange.svg" alt="Zimperium Mobile Threat Defense Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
@@ -47,7 +47,7 @@
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">2.0.1</td>
+<td style="text-align: left;">3.0.0</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Author</strong></td>
@@ -56,6 +56,10 @@
 <tr>
 <td style="text-align: left;"><strong>First Published</strong></td>
 <td style="text-align: left;">2022-05-02</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-04-28</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Solution Folder</strong></td>
@@ -70,7 +74,7 @@
 <p>The <a href="https://www.zimperium.com/">Zimperium</a> Mobile Threat Defense solution gives you the ability to connect the <a href="https://www.zimperium.com/mtd-maturity-model/">Zimperium Mobile Threat Defense</a> log with Microsoft Sentinel to view dashboards, create custom alerts, and improve investigation.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
-<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api">Azure Monitor HTTP Data Collector API</a></p>
+<p>a. <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-push-codeless-connector">Codeless Connector Framework (CCF) Push</a></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -78,8 +82,9 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<p>This solution provides <strong>1 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
+<li><a href="../connectors/zimperiummtdpush.html">Zimperium Mobile Threat Defense CCF</a></li>
 <li><a href="../connectors/zimperiummtdalerts.html">Zimperium Mobile Threat Defense</a> ⚠️ 🔶</li>
 </ul>
 <blockquote>
@@ -87,7 +92,7 @@
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>2 table(s)</strong>:</p>
+<p>This solution uses <strong>4 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -98,9 +103,19 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="../tables/zimperiummitigationlogv2-cl.html"><code>ZimperiumMitigationLogV2_CL</code></a></td>
+<td><a href="../connectors/zimperiummtdpush.html">Zimperium Mobile Threat Defense CCF</a></td>
+<td>-</td>
+</tr>
+<tr>
 <td><a href="../tables/zimperiummitigationlog-cl.html"><code>ZimperiumMitigationLog_CL</code></a> 🔶</td>
 <td><a href="../connectors/zimperiummtdalerts.html">Zimperium Mobile Threat Defense</a></td>
 <td>-</td>
+</tr>
+<tr>
+<td><a href="../tables/zimperiumthreatlogv2-cl.html"><code>ZimperiumThreatLogV2_CL</code></a></td>
+<td><a href="../connectors/zimperiummtdpush.html">Zimperium Mobile Threat Defense CCF</a></td>
+<td>Workbooks</td>
 </tr>
 <tr>
 <td><a href="../tables/zimperiumthreatlog-cl.html"><code>ZimperiumThreatLog_CL</code></a> 🔶</td>
@@ -113,18 +128,22 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<p>This solution includes <strong>2 content item(s)</strong> (1 in solution, 1 discovered 🔍):</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Content Type</th>
-<th style="text-align: left;">Count</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">In Solution</th>
+<th style="text-align: right;">Discovered</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: left;">Workbooks</td>
-<td style="text-align: left;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
 </tr>
 </tbody>
 </table>
@@ -138,8 +157,32 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.html">ZimperiumWorkbooks</a></td>
+<td style="text-align: left;"><a href="../content/zimperium-mobile-threat-defense-zimperiummtdccfworkbooks-2bb0d331.html">ZimperiumMTDCCFWorkbooks</a></td>
+<td style="text-align: left;"><a href="../tables/zimperiumthreatlogv2-cl.html"><code>ZimperiumThreatLogV2_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.html">ZimperiumWorkbooks</a> ⚠️</td>
 <td style="text-align: left;"><a href="../tables/zimperiumthreatlog-cl.html"><code>ZimperiumThreatLog_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
+</blockquote>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>28-04-2026</td>
+<td>Added data ingestion support using CCF (Codeless Connector Framework) <strong>Push connector</strong>.</td>
 </tr>
 </tbody>
 </table>

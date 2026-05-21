@@ -16,8 +16,8 @@ Identifies communication for well known protocol over a non-standard port based 
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | Exfiltration, CommandAndControl |
-| **Techniques** | T1041, T1571 |
+| **Tactics** | Exfiltration, CommandAndControl, DefenseEvasion |
+| **Techniques** | T1041, T1571, T1572 |
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Analytic%20Rules/Azure%20Firewall%20-%20Abnormal%20Port%20to%20Protocol.yaml) |
 

@@ -1,0 +1,89 @@
+# Salesforce Audit Logs (via Codeless Connector Framework)
+
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="75" height="75">
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+
+---
+
+| Attribute | Value |
+|:----------|:------|
+| **Connector ID** | `SalesforceAuditLogsConnector` |
+| **Publisher** | Microsoft |
+| **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| **Collection Method** | [CCF](../methods/ccf.md) |
+| **Connector Definition Files** | [SalesforceAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_DataConnectorDefinition.json) |
+| **CCF Configuration** | [SalesforceAuditLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_PollingConfig.json) |
+| **CCF Capabilities** | `OAuth2`, `Paging` |
+
+The Salesforce Audit Logs data connector provides the capability to ingest administrative changes and configuration modifications from your Salesforce org into Microsoft Sentinel through the REST API. The connector provides the ability to ingest [Setup Audit Trail](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_setupaudittrail.htm) and [Login History](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_loginhistory.htm) events into Microsoft Sentinel which track changes made to your org's configuration, helping you maintain security and compliance visibility.
+
+## Tables Ingested
+
+This connector ingests data into the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | ✓ | ✗ | ? |
+| [`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) | ✓ | ✗ | ? |
+
+## Permissions
+
+**Resource Provider Permissions:**
+- **Workspace** (Workspace): Read and Write permissions are required.
+
+**Custom Permissions:**
+- **Salesforce Service Cloud API access**: Access to the Salesforce Service Cloud API through a Connected App is required.
+
+## Setup Instructions
+
+> ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
+
+**1. Connect Salesforce to Microsoft Sentinel**
+
+Follow [Create a Connected App in Salesforce for OAuth](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) and [Configure a Connected App for the OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_client_credentials_setup.htm&type=5) to create a Connected App with access to the Salesforce Service Cloud API. Through those instructions, you should get the Consumer Key and Consumer Secret.
+ For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, and select My Domain to view your domain details. Make sure to enter the domain name without a trailing slash (e.g., https://your-domain.my.salesforce.com). Fill the form below with that information.
+**Connector Management Interface**
+
+This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
+
+📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
+- **Connector Alias**
+- **Salesforce Base URL**
+- **Data Type**
+- **Grant Type**
+
+➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
+
+🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
+
+> 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Configure API Connection**
+
+*Connect to Salesforce to ingest data*
+
+When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
+
+*Base Configuration*
+
+- **Connection Alias** (required): Production or Sandbox
+- **Salesforce Base URL** (required): Example: https://your-domain.my.salesforce.com
+- **Data Types** (required): Select from available options
+  - Setup Audit Trail - Administrative changes and configurations
+  - Login History - User login events and authentication
+*OAuth2 Credentials*
+
+### OAuth2 Client Credentials
+
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+

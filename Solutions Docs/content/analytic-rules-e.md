@@ -1,6 +1,6 @@
 # Analytic Rules - E
 
-**41 analytic rules** starting with 'E'.
+**39 analytic rules** starting with 'E'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -15,8 +15,6 @@
 | Name | Severity | Source |
 |:-----|:---------|:-------|
 | [EatonForeseer - Unauthorized Logins](eatonforeseer-eatonforeseer-unauthorized-logins-5a7fccb8-3ed0-44f2-8477-540af3ef4d92-5a9d46ba.md) | High | 📦 [EatonForeseer](../solutions/eatonforeseer.md) |
-| [EC2 Startup Shell Script Changed](amazon-web-services-ec2-startup-shell-script-changed-f8577e4d-8481-437b-a94e-06f615985668-a9f4a4d4.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [ECR image scan findings high or critical](amazon-web-services-ecr-image-scan-findings-high-or-critical-f6928301-56da-4d2c-aabe-e1a552bc8892-f574c629.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Egress Defend - Dangerous Attachment Detected](egress-defend-egress-defend-dangerous-attachment-detected-a0e55dd4-8454-4396-91e6-f28fec3d2cab-f2c1e438.md) | Medium | 📦 [Egress Defend](../solutions/egress-defend.md) |
 | [Egress Defend - Dangerous Link Click](egress-defend-egress-defend-dangerous-link-click-a896123e-03a5-4a4d-a7e3-fd814846dfb2-cd7508b8.md) | Medium | 📦 [Egress Defend](../solutions/egress-defend.md) |
 | [Elevation of Privilege attempt detected](azure-firewall-elevation-of-privilege-attempt-detected-7a0f78b3-9a55-4ad0-a56d-b6616fdbff6a-b129ebd8.md) | High | 📦 [Azure Firewall](../solutions/azure-firewall.md) |

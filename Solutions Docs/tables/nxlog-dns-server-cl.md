@@ -6,18 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-- [Parsers](#parsers-using-this-table)
-
 ## Schema (69 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NXLog_DNS_Server_CL.json)
@@ -93,20 +81,6 @@
 | XID_s | string |
 | Zone_s | string |
 | ZoneScope_s | string |
-
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [NXLogDNSLogs](../solutions/nxlogdnslogs.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [NXLog DNS Logs](../connectors/nxlogdnslogs.md) |  |
 
 ---
 

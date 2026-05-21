@@ -6,7 +6,7 @@
 
 ---
 
-Detects Collection of known malware commands and control servers.
+Detects Claroty events where EventOriginalType or EventType contains 'Threat', identifying Threat-related activity and surfacing the destination IP address for investigation.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,8 +16,8 @@ Detects Collection of known malware commands and control servers.
 | **Severity** | High |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | Discovery |
-| **Techniques** | T1018 |
+| **Tactics** | Discovery, Reconnaissance |
+| **Techniques** | T1018, T1595 |
 | **Required Connectors** | [Claroty](../connectors/claroty.md), [ClarotyAma](../connectors/clarotyama.md), [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Analytic%20Rules/ClarotyThreat.yaml) |
 

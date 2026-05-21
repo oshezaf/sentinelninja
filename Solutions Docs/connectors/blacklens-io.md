@@ -13,7 +13,7 @@
 | **Connector ID** | `blacklens_io` |
 | **Publisher** | snapSEC GmbH |
 | **Used in Solutions** | [Blacklens](../solutions/blacklens.md) |
-| **Collection Method** | [REST Push API](../methods/rest-push-api.md) |
+| **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [blacklens_io.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blacklens/Data%20Connectors/blacklens_io.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 

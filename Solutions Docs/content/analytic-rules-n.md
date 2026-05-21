@@ -1,6 +1,6 @@
 # Analytic Rules - N
 
-**79 analytic rules** starting with 'N'.
+**77 analytic rules** starting with 'N'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -27,7 +27,6 @@
 | [Netskope - Suspicious Network Context (Unusual IPs/Geo/Ports)](netskopewebtx-netskope-suspicious-network-context-unusual-ips-geo-ports-6d989fb0-933e-4ae6-88fa-10e7b51c8897-d6216d9a.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - Unsanctioned/Risky Cloud App Access (Shadow IT)](netskopewebtx-netskope-unsanctioned-risky-cloud-app-access-shadow-it-cdc01279-d6ea-41b1-a32d-49d726be95b8-be0feda5.md) | Medium | 📦 [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Netskope - WebTransaction Error Detection](netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md) | Medium | 📦 [Netskopev2](../solutions/netskopev2.md) |
-| [Network ACL with all the open ports to a specified CIDR](amazon-web-services-network-acl-with-all-the-open-ports-to-a-specified-cidr-f8ea7d50-e33b-4b9d-9c3e-a59fcbcee281-147ac220.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Network endpoint to host executable correlation](network-threat-protection-essentials-network-endpoint-to-host-executable-correlation-01f64465-b1ef-41ea-a7f5-31553a11ad43-f4ed06da.md) | Medium | 📦 [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md) |
 | [Network Port Sweep from External Network (ASIM Network Session schema)](network-session-essentials-network-port-sweep-from-external-network-asim-network-session-schema-cd8faa84-4464-4b4e-96dc-b22f50c27541-330ca527.md) | High | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
 | [NetworkSecurityGroups Alert From Prancer](prancer-pensuiteai-integration-networksecuritygroups-alert-from-prancer-a8babf91-b844-477c-8abf-d31e3df74933-55e376e3.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
@@ -80,7 +79,6 @@
 | [NRT DNS events related to mining pools](windows-server-dns-nrt-dns-events-related-to-mining-pools-d5b32cd4-2328-43da-ab47-cd289c1f5efc-8dd1a5ad.md) | Low | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [NRT First access credential added to Application or Service Principal where no credential was present](microsoft-entra-id-nrt-first-access-credential-added-to-application-or-service-principal-where-no-creden-b6988c32-4f3b-4a45-8313-b46b33061a74-b17559b5.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [NRT GitHub Two Factor Auth Disable](github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | 📦 [GitHub](../solutions/github.md) |
-| [NRT Login to AWS Management Console without MFA](amazon-web-services-nrt-login-to-aws-management-console-without-mfa-0ee2aafb-4500-4e36-bcb1-e90eec2f0b9b-1415b390.md) | Low | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [NRT Malicious Inbox Rule](standalone-content-nrt-malicious-inbox-rule-b79f6190-d104-4691-b7db-823e05980895-a7d65038.md) | Medium | 📄 Standalone Content |
 | [NRT Microsoft Entra ID Hybrid Health AD FS New Server](azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.md) | Medium | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [NRT Modified domain federation trust settings](microsoft-entra-id-nrt-modified-domain-federation-trust-settings-8540c842-5bbc-4a24-9fb2-a836c0e55a51-3b2b599c.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |

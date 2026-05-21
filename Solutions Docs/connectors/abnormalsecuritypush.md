@@ -32,11 +32,11 @@ This connector ingests data into the following tables:
 | [`ABNORMAL_SECURITY_ATO_CASE_CL`](../tables/abnormal-security-ato-case-cl.md) 🔶 | ? | ✓ | ? |
 | [`ABNORMAL_SECURITY_AUDIT_LOG_CL`](../tables/abnormal-security-audit-log-cl.md) 🔶 | ? | ✓ | ? |
 | [`ABNORMAL_SECURITY_CASE_CL`](../tables/abnormal-security-case-cl.md) 🔶 | ? | ✓ | ? |
+| [`ABNORMAL_SECURITY_LOGS_CL`](../tables/abnormal-security-logs-cl.md) 🔶 | ? | ✓ | ? |
 | [`ABNORMAL_SECURITY_POSTURE_CHANGE_CL`](../tables/abnormal-security-posture-change-cl.md) 🔶 | ? | ✓ | ? |
 | [`ABNORMAL_SECURITY_REMEDIATION_CL`](../tables/abnormal-security-remediation-cl.md) 🔶 | ? | ✓ | ? |
 | [`ABNORMAL_SECURITY_THREAT_LOG_CL`](../tables/abnormal-security-threat-log-cl.md) 🔶 | ? | ✓ | ? |
 | [`ABNORMAL_SECURITY_VENDOR_CASE_CL`](../tables/abnormal-security-vendor-case-cl.md) 🔶 | ? | ✓ | ? |
-| [`AbnormalSecurityLogs_CL`](../tables/abnormalsecuritylogs-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -81,8 +81,6 @@ Use the following parameters to configure the Microsoft Sentinel integration in 
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Data Collection Rule Immutable ID**: `DataCollectionRuleId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-- **Fallback Stream Name**: `Custom-AbnormalSecurityLogs`
-- **Stream Prefix (for per-event-type routing)**: `Custom-ABNORMAL_SECURITY_`
 #### Configure in Abnormal Security Portal
 1. Log in to [Abnormal Security Portal](https://portal.abnormalsecurity.com)
 2. Navigate to **Settings > Integrations > SIEM**
@@ -91,14 +89,14 @@ Use the following parameters to configure the Microsoft Sentinel integration in 
 5. Click **Verify Credentials** to test the connection
 6. Click **Save** and **Enable** the integration
 
-**Multi-table routing:** Events are automatically routed to per-event-type tables (e.g., threat logs → `ABNORMAL_SECURITY_THREAT_LOG_CL`, cases → `ABNORMAL_SECURITY_CASE_CL`). Unknown event types go to the fallback table `AbnormalSecurityLogs_CL`.
+**Multi-table routing:** Events are automatically routed to per-event-type tables (e.g., threat logs → `ABNORMAL_SECURITY_THREAT_LOG_CL`, cases → `ABNORMAL_SECURITY_CASE_CL`). Unknown event types go to the fallback table `ABNORMAL_SECURITY_LOGS_CL`.
 
 **3. Verify Data Ingestion**
 
 Confirm events are flowing from Abnormal Security to Sentinel.
 Wait 5-10 minutes after enabling the integration, then run this KQL query:
 
-union ABNORMAL_SECURITY_THREAT_LOG_CL, ABNORMAL_SECURITY_CASE_CL, ABNORMAL_SECURITY_AUDIT_LOG_CL, ABNORMAL_SECURITY_ABUSE_MAILBOX_CL, ABNORMAL_SECURITY_POSTURE_CHANGE_CL, ABNORMAL_SECURITY_ATO_CASE_CL, ABNORMAL_SECURITY_REMEDIATION_CL, ABNORMAL_SECURITY_VENDOR_CASE_CL, AbnormalSecurityLogs_CL | where TimeGenerated > ago(1h) | extend event_type = tostring(abx_metadata.event_type) | summarize count() by event_type | order by count_ desc
+union ABNORMAL_SECURITY_THREAT_LOG_CL, ABNORMAL_SECURITY_CASE_CL, ABNORMAL_SECURITY_AUDIT_LOG_CL, ABNORMAL_SECURITY_ABUSE_MAILBOX_CL, ABNORMAL_SECURITY_POSTURE_CHANGE_CL, ABNORMAL_SECURITY_ATO_CASE_CL, ABNORMAL_SECURITY_REMEDIATION_CL, ABNORMAL_SECURITY_VENDOR_CASE_CL, ABNORMAL_SECURITY_LOGS_CL | where TimeGenerated > ago(1h) | extend event_type = tostring(abx_metadata.event_type) | summarize count() by event_type | order by count_ desc
 
 If no data appears after 15 minutes, verify credentials in the Abnormal Security Portal and check Azure Monitor for ingestion errors.
 

@@ -15,8 +15,8 @@
 | **Schema** | Authentication |
 | **Schema Version** | 0.1.4 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.2.14 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md)) |
-| **Last Updated** | Apr 29, 2026 |
+| **Parser Version** | 0.2.15 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md)) |
+| **Last Updated** | May 05, 2026 |
 | **Source File** | [Parsers\ASimAuthentication\Parsers\ASimAuthentication.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthentication.yaml) |
 
 ## Description
@@ -64,6 +64,7 @@ This union parser includes parsers for the following products:
 | su | [_ASim_Authentication_Su](asimauthenticationsu.md) | [Syslog](../solutions/syslog.md) |
 | sudo | [_ASim_Authentication_Sudo](asimauthenticationsudo.md) | [Syslog](../solutions/syslog.md) |
 | VMware Carbon Black Cloud | [_ASim_Authentication_VMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) | [VMware Carbon Black Cloud (legacy connector)](../solutions/vmware-carbon-black-cloud.md) |
+| VMware ESXi | [_ASim_Authentication_VMwareESXi](asimauthenticationvmwareesxi.md) | [Cisco SD-WAN](../solutions/cisco-sd-wan.md)<br>[Cisco UCS (legacy connector)](../solutions/cisco-ucs.md)<br>[Citrix ADC (legacy connector)](../solutions/citrix-adc.md)<br>[Forescout (Legacy)](../solutions/forescout-legacy.md)<br>[RSA SecurID (legacy connector)](../solutions/rsa-securid.md)<br>[Watchguard Firebox (legacy connector)](../solutions/watchguard-firebox.md) |
 | VMware vCenter | [_ASim_Authentication_VMwareVCenter](asimauthenticationvmwarevcenter.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[VMware vCenter (legacy connector)](../solutions/vmware-vcenter.md) |
 | Vectra | [_ASim_Authentication_VectraXDRAudit](asimauthenticationvectraxdraudit.md) | [Vectra XDR](../solutions/vectra-xdr.md) |
 

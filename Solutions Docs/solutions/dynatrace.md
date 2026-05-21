@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dynatrace.com/services-support/](https://www.dynatrace.com/services-support/) |
 | **Categories** | domains |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.3 |
 | **Author** | Dynatrace - microsoftalliances@dynatrace.com |
 | **First Published** | 2022-10-18 |
 | **Last Updated** | 2026-04-23 |
@@ -116,12 +116,12 @@ This solution includes **16 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-4cd7a68f.md) | This playbook will add an attackers source ip to Threat Intelligence when a new incident is opened i... | - |
 | [Enrich Dynatrace Application Security Attack Incident](../content/dynatrace-enrich-dynatrace-application-security-attack-incident-f7a6fb98.md) | This playbook will enriche Dynatrace Application Security Attack Incidents with additional informati... | - |
 | [Enrich Dynatrace Application Security Attack with related Microsoft Defender XDR insights](../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-defender-xdr-insights-92196b5f.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Defender XDR ... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
 | [Enrich Dynatrace Application Security Attack with related Microsoft Sentinel Security Alerts](../content/dynatrace-enrich-dynatrace-application-security-attack-with-related-microsoft-sentinel-security-alerts-55a24730.md) | This playbook will enrich Dynatrace Application Security Attack with related Microsoft Sentinel Secu... | *Internal use:*<br>[`SecurityAlert`](../tables/securityalert.md) *(read)* |
 | [Ingest Microsoft Defender XDR insights into Dynatrace](../content/dynatrace-ingest-microsoft-defender-xdr-insights-into-dynatrace-d6ce2895.md) | This playbook will ingest Microsoft Defender XDR insights into Dynatrace. | - |
 | [Ingest Microsoft Sentinel Security Alerts into Dynatrace](../content/dynatrace-ingest-microsoft-sentinel-security-alerts-into-dynatrace-c03a9bfe.md) | This playbook will ingest Microsoft Sentinel Security Alerts into Dynatrace. | - |
+| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](../content/dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | This playbook will add an attackers source ip to Threat Intelligence when a new incident is opened i... | - |
 
 ### Parsers
 
@@ -136,6 +136,7 @@ This solution includes **16 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.3       | 28-04-2026                     | Fixed timestamp type mismatch in **Parsers** (DynatraceAttacks, DynatraceAuditLogs, DynatraceProblems, DynatraceSecurityProblems): V1 Unix epoch millisecond fields now converted to datetime, resolving duplicate typed columns in query results. Marked **Add_DynatraceApplicationSecurityAttackSourceIpThreatIntelligence** playbook as deprecated due to the deprecation of the Microsoft Graph Security tiIndicators API and its connector in Logic Apps. |
 | 3.0.2       | 02-04-2026                     | Added DCR based connectors.                 |
 | 3.0.1       | 18-01-2024                     | Changes for rebranding from Microsoft 365 Defender to Microsoft Defender XDR, Updated user-agent strings used when calling Dynatrace REST API's, Added new Entity Mappings to **Analytic Rules**                                    Aligned Playbook, Data Connector & Workbook version numbers with rest of solution.           |
 | 3.0.0       | 16-10-2023                     | Enabled new api paging mode on **Data Connector** to fix issues related to polling Dynatrace REST API's with a large number of results.     |

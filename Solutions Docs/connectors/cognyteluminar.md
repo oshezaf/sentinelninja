@@ -13,7 +13,7 @@
 | **Connector ID** | `CognyteLuminar` |
 | **Publisher** | Cognyte Technologies Israel Ltd |
 | **Used in Solutions** | [CognyteLuminar](../solutions/cognyteluminar.md) |
-| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
+| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
 | **Connector Definition Files** | [CognyteLuminar_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar/Data%20Connectors/CognyteLuminar_FunctionApp.json) |
 | **Ingestion API** | [Microsoft Graph tiIndicators API](../methods/microsoft-graph-tiindicators-api.md) — *Connector code references Microsoft Graph tiIndicators API endpoint (matched 'tiindicators/submittiindicators')* |
 

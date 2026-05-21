@@ -76,15 +76,12 @@ This table is ingested by the following connectors:
 | [GitHub](../content/github-github-87916f66.md) |  |
 | [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md) |  |
 
-## Parsers Using This Table (4)
+## Parsers Using This Table (1)
 
-### Other Parsers (4)
+### Other Parsers (1)
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [GitHubCodeScanningData](../parsers/githubcodescanningdata.md) | [GitHub](../solutions/github.md) |  |
-| [GitHubDependabotData](../parsers/githubdependabotdata.md) | [GitHub](../solutions/github.md) |  |
-| [GitHubSecretScanningData](../parsers/githubsecretscanningdata.md) | [GitHub](../solutions/github.md) |  |
 | [githubscanaudit](../parsers/githubscanaudit.md) | [GitHub](../solutions/github.md) |  |
 
 ---

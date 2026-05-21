@@ -14,8 +14,8 @@ Query searches for PLC login security alerts.
 | **Solution** | [Claroty](../solutions/claroty.md) |
 | **ID** | `15569b45-4c34-4693-bf99-841e76b5da65` |
 | **Severity** | High |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | InitialAccess, CredentialAccess |
+| **Techniques** | T1190, T1078, T1078.001 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotyPLCLogins.yaml) |
 

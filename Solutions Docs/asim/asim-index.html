@@ -20,7 +20,7 @@
 <p>📚 <strong>Learn more:</strong> <a href="https://learn.microsoft.com/azure/sentinel/domain-based-essential-solutions">ASIM-based domain solutions for Microsoft Sentinel</a></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <hr />
-<p><strong>13 schemas</strong> with 90 source parser pairs and 15 union parser pairs. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>13 schemas</strong> with 91 source parser pairs and 15 union parser pairs. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <p>* <em>Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.</em></p>
 <h2 id="schemas">Schemas</h2>
 <ul>
@@ -77,17 +77,17 @@
 <tr>
 <td style="text-align: left;"><a href="asimalertevent.html">ASimAlertEvent</a></td>
 <td style="text-align: left;"><code>_ASim_AlertEvent</code></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md">0.1.0</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md">0.1.1</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="imalertevent.html">imAlertEvent</a></td>
 <td style="text-align: left;"><code>_Im_AlertEvent</code></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md">0.1.0</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md">0.1.1</a></td>
 </tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
-<p><a href="asim-products-index.md#microsoft-defender-xdr">Microsoft Defender XDR</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a></p>
+<p><a href="asim-products-index.md#cisco-secure-endpoint">Cisco Secure Endpoint</a>, <a href="asim-products-index.md#microsoft-defender-xdr">Microsoft Defender XDR</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a></p>
 <h3 id="source-parsers">Source Parsers</h3>
 <table>
 <thead>
@@ -99,6 +99,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="asimalerteventciscosecureendpoint.html">CiscoSecureEndpoint</a></td>
+<td style="text-align: left;">Cisco Secure Endpoint</td>
+<td style="text-align: left;"><a href="../solutions/cisco-secure-endpoint.html">Cisco Secure Endpoint</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md">0.1.0</a></td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="asimalerteventmicrosoftdefenderxdr.html">MicrosoftDefenderXDR</a></td>
 <td style="text-align: left;">Microsoft Defender XDR</td>
@@ -311,17 +317,17 @@
 <tr>
 <td style="text-align: left;"><a href="asimauthentication.html">ASimAuthentication</a></td>
 <td style="text-align: left;"><code>_ASim_Authentication</code></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md">0.2.14</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md">0.2.15</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="imauthentication.html">imAuthentication</a></td>
 <td style="text-align: left;"><code>_Im_Authentication</code></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md">0.3.11</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md">0.3.12</a></td>
 </tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
-<p><a href="asim-products-index.md#aws">AWS</a>, <a href="asim-products-index.md#barracuda-waf">Barracuda WAF</a>, <a href="asim-products-index.md#cisco-adaptive-security-appliance-asa">Cisco Adaptive Security Appliance (ASA)</a>, <a href="asim-products-index.md#cisco-dnac">Cisco DNAC</a>, <a href="asim-products-index.md#cisco-ios">Cisco IOS</a>, <a href="asim-products-index.md#cisco-ise">Cisco ISE</a>, <a href="asim-products-index.md#cisco-ise-administrator">Cisco ISE Administrator</a>, <a href="asim-products-index.md#cisco-meraki">Cisco Meraki</a>, <a href="asim-products-index.md#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a>, <a href="asim-products-index.md#fortigate">Fortigate</a>, <a href="asim-products-index.md#google-workspace">Google Workspace</a>, <a href="asim-products-index.md#illumio">Illumio</a>, <a href="asim-products-index.md#m365-defender-for-endpoint">M365 Defender for EndPoint</a>, <a href="asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a>, <a href="asim-products-index.md#microsoft-entra-id">Microsoft Entra ID</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#okta">Okta</a>, <a href="asim-products-index.md#openssh">OpenSSH</a>, <a href="asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a>, <a href="asim-products-index.md#palo-alto-pan-os">Palo Alto PAN-OS</a>, <a href="asim-products-index.md#palo-alto-pan-os-globalprotect">Palo Alto PAN-OS GlobalProtect</a>, <a href="asim-products-index.md#postgresql">PostgreSQL</a>, <a href="asim-products-index.md#salesforce-service-cloud">Salesforce Service Cloud</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#su">su</a>, <a href="asim-products-index.md#sudo">sudo</a>, <a href="asim-products-index.md#vectra">Vectra</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a>, <a href="asim-products-index.md#vmware-vcenter">VMware vCenter</a>, <a href="asim-products-index.md#windows-security-events">Windows Security Events</a></p>
+<p><a href="asim-products-index.md#aws">AWS</a>, <a href="asim-products-index.md#barracuda-waf">Barracuda WAF</a>, <a href="asim-products-index.md#cisco-adaptive-security-appliance-asa">Cisco Adaptive Security Appliance (ASA)</a>, <a href="asim-products-index.md#cisco-dnac">Cisco DNAC</a>, <a href="asim-products-index.md#cisco-ios">Cisco IOS</a>, <a href="asim-products-index.md#cisco-ise">Cisco ISE</a>, <a href="asim-products-index.md#cisco-ise-administrator">Cisco ISE Administrator</a>, <a href="asim-products-index.md#cisco-meraki">Cisco Meraki</a>, <a href="asim-products-index.md#crowdstrike-falcon-endpoint-protection">CrowdStrike Falcon Endpoint Protection</a>, <a href="asim-products-index.md#fortigate">Fortigate</a>, <a href="asim-products-index.md#google-workspace">Google Workspace</a>, <a href="asim-products-index.md#illumio">Illumio</a>, <a href="asim-products-index.md#m365-defender-for-endpoint">M365 Defender for EndPoint</a>, <a href="asim-products-index.md#microsoft-defender-for-iot">Microsoft Defender for IoT</a>, <a href="asim-products-index.md#microsoft-entra-id">Microsoft Entra ID</a>, <a href="asim-products-index.md#native">Native</a>, <a href="asim-products-index.md#okta">Okta</a>, <a href="asim-products-index.md#openssh">OpenSSH</a>, <a href="asim-products-index.md#palo-alto-cortex-data-lake">Palo Alto Cortex Data Lake</a>, <a href="asim-products-index.md#palo-alto-pan-os">Palo Alto PAN-OS</a>, <a href="asim-products-index.md#palo-alto-pan-os-globalprotect">Palo Alto PAN-OS GlobalProtect</a>, <a href="asim-products-index.md#postgresql">PostgreSQL</a>, <a href="asim-products-index.md#salesforce-service-cloud">Salesforce Service Cloud</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a>, <a href="asim-products-index.md#su">su</a>, <a href="asim-products-index.md#sudo">sudo</a>, <a href="asim-products-index.md#vectra">Vectra</a>, <a href="asim-products-index.md#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a>, <a href="asim-products-index.md#vmware-esxi">VMware ESXi</a>, <a href="asim-products-index.md#vmware-vcenter">VMware vCenter</a>, <a href="asim-products-index.md#windows-security-events">Windows Security Events</a></p>
 <h3 id="source-parsers">Source Parsers</h3>
 <table>
 <thead>
@@ -538,10 +544,16 @@
 <td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareCarbonBlackCloud.md">0.1.0</a></td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="asimauthenticationvmwareesxi.html">VMwareESXi</a></td>
+<td style="text-align: left;">VMware ESXi</td>
+<td style="text-align: left;"><a href="../solutions/cisco-sd-wan.html">Cisco SD-WAN</a><br><a href="../solutions/cisco-ucs.html">Cisco UCS (legacy connector)</a><br><a href="../solutions/citrix-adc.html">Citrix ADC (legacy connector)</a><br><a href="../solutions/forescout-legacy.html">Forescout (Legacy)</a><br><a href="../solutions/rsa-securid.html">RSA SecurID (legacy connector)</a><br><a href="../solutions/watchguard-firebox.html">Watchguard Firebox (legacy connector)</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareESXi.md">0.1.0</a></td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="asimauthenticationvmwarevcenter.html">VMwareVCenter</a></td>
 <td style="text-align: left;">VMware vCenter</td>
 <td style="text-align: left;"><a href="../solutions/customlogsama.html">CustomLogsAma</a><br><a href="../solutions/vmware-vcenter.html">VMware vCenter (legacy connector)</a></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareVCenter.md">0.1.1</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareVCenter.md">0.1.2</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="asimauthenticationvectraxdraudit.html">VectraXDRAudit</a></td>
@@ -1248,7 +1260,7 @@
 <td style="text-align: left;"><a href="asimprocesseventmicrosoft365d.html">Microsoft365D</a></td>
 <td style="text-align: left;">Microsoft 365 Defender for endpoint</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMicrosoft365D.md">0.3.0</a></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMicrosoft365D.md">0.3.1</a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="asimprocesseventnative.html">Native</a></td>

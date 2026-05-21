@@ -1,6 +1,6 @@
 # Analytic Rules - P
 
-**139 analytic rules** starting with 'P'.
+**124 analytic rules** starting with 'P'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -62,7 +62,6 @@
 | [Ping Federate - Unusual mail domain.](pingfederate-ping-federate-unusual-mail-domain.-dc79de7d-2590-4852-95fb-f8e02b34f4da-2fa89f0f.md) | Medium | 📦 [PingFederate](../solutions/pingfederate.md) |
 | [PLC Stop Command (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-plc-stop-command-microsoft-defender-for-iot-a7d3f642-15d8-4e83-99ee-83ca3352525d-8e009448.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [PLC unsecure key state (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-plc-unsecure-key-state-microsoft-defender-for-iot-f9df500a-e2a4-4104-a517-dc1d85bb654f-78ea192f.md) | Low | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [Policy version set to default](amazon-web-services-policy-version-set-to-default-874a1762-3fd7-4489-b411-6d4a9e9e8a59-2b04a521.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Port Scan](azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.md) | Medium | 📦 [Azure Firewall](../solutions/azure-firewall.md) |
 | [Port Scan Detected](sophos-xg-firewall-port-scan-detected-427e4c9e-8cf4-4094-a684-a2d060dbca38-b0e76aa0.md) | Medium | 📦 [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) |
 | [Port scan detected  (ASIM Network Session schema)](network-session-essentials-port-scan-detected-asim-network-session-schema-1da9853f-3dea-4ea9-b7e5-26730da3d537-7c6a0649.md) | Medium | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
@@ -109,20 +108,6 @@
 | [Preview - TI map Email entity to Cloud App Events](threat-intelligence-preview-ti-map-email-entity-to-cloud-app-events-47b9bb10-d216-4359-8cef-08ca2c67e5be-e757d151.md) | Medium | 📦 [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [Preview - TI map IP entity to Cloud App Events](threat-intelligence-preview-ti-map-ip-entity-to-cloud-app-events-4e0a6fc8-697e-4455-be47-831b41ea91ac-e0fcbf3b.md) | Medium | 📦 [Threat Intelligence](../solutions/threat-intelligence.md) |
 | [Preview - TI map URL entity to Cloud App Events](threat-intelligence-preview-ti-map-url-entity-to-cloud-app-events-e8ae92dd-1d41-4530-8be8-85c5014c7b47-7067e6da.md) | Medium | 📦 [Threat Intelligence](../solutions/threat-intelligence.md) |
-| [Privilege escalation via CloudFormation policy](amazon-web-services-privilege-escalation-via-cloudformation-policy-719d5204-10ab-4b1f-aee1-da7326750260-51abdf17.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via CRUD DynamoDB policy](amazon-web-services-privilege-escalation-via-crud-dynamodb-policy-b9be2aa6-911d-4131-8658-d2a537ed49f4-58258049.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via CRUD IAM policy](amazon-web-services-privilege-escalation-via-crud-iam-policy-e20d35a3-4fec-4c8b-81b1-fc33b41990b0-36c5f48a.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via CRUD KMS policy](amazon-web-services-privilege-escalation-via-crud-kms-policy-d7c39e15-997f-49e5-a782-73bf07db8aa5-487f4413.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via CRUD Lambda policy](amazon-web-services-privilege-escalation-via-crud-lambda-policy-d0953d50-3dc1-4fa3-80fa-4d3e973a0959-9a222ae8.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via CRUD S3 policy](amazon-web-services-privilege-escalation-via-crud-s3-policy-fc3061bb-319c-4fe9-abe2-f59899a6d907-0765d145.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via DataPipeline policy](amazon-web-services-privilege-escalation-via-datapipeline-policy-48896551-1c28-4a09-8388-e51e5a927d23-2c0da5f6.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via EC2 policy](amazon-web-services-privilege-escalation-via-ec2-policy-a2b2a984-c820-4d93-830e-139bffd81fa3-3972a1f2.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via Glue policy](amazon-web-services-privilege-escalation-via-glue-policy-370f0e5e-da1d-4a14-8ced-d1d7ab66a8d7-cf7e2271.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via Lambda policy](amazon-web-services-privilege-escalation-via-lambda-policy-8e01c41d-bd4c-4bbe-aed5-18592735052d-5b9881d5.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation via SSM policy](amazon-web-services-privilege-escalation-via-ssm-policy-c668c09f-5a49-43f9-b249-6b89a31ec8fb-c5f4272e.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation with admin managed policy](amazon-web-services-privilege-escalation-with-admin-managed-policy-49ce5322-60d7-4b02-ad79-99f650aa5790-d6a3d173.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation with AdministratorAccess managed policy](amazon-web-services-privilege-escalation-with-administratoraccess-managed-policy-139e7116-3884-4246-9978-c8f740770bdf-2cd937dc.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Privilege escalation with FullAccess managed policy](amazon-web-services-privilege-escalation-with-fullaccess-managed-policy-afb4191b-a142-4065-a0da-f721ee3d006c-39ed48c2.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Privileged Account Permissions Changed](business-email-compromise-financial-fraud-privileged-account-permissions-changed-0433c8a3-9aa6-4577-beef-2ea23be41137-ddff1dcb.md) | Medium | 📦 [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md) |
 | [Privileged Accounts - Sign in Failure Spikes](microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Privileged Machines Exposed to the Internet](authomize-privileged-machines-exposed-to-the-internet-72891de4-da70-44e4-9984-35fcea98d000-c1efb0ea.md) | High | 📦 [Authomize](../solutions/authomize.md) |

@@ -6,16 +6,15 @@
 
 ---
 
-Query searches for sources of network scans.
+Query searches for sources of network scans in Claroty telemetry to identify potentially hostile reconnaissance activity.
 
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Hunting Query |
 | **Solution** | [Claroty](../solutions/claroty.md) |
 | **ID** | `6c43a50e-2e59-48d9-848b-825f50927bbf` |
-| **Severity** | Medium |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | Reconnaissance, InitialAccess |
+| **Techniques** | T1595.001, T1190, T1595 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotyScanSources.yaml) |
 

@@ -9,12 +9,12 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | Managed connectors | 96 | `Microsoft.Web/connections` resources backed by Microsoft-published APIs (`/providers/Microsoft.Web/locations/.../managedApis/...`). |
 | Custom connectors | 56 | Solution-specific APIs (`/customApis/...`). |
 | Built-in action types | 3 | Workflow actions of type `Http`, `Function`, `Workflow`, or `ApiManagement` that don't use a connection resource. |
-| Playbooks using Logic App connectors / built-ins | 870 | |
+| Playbooks using Logic App connectors / built-ins | 874 | |
 
 | Connector / Action | Type | Playbooks | Solutions | Microsoft Learn |
 |:-------------------|:-----|----------:|----------:|:----------------|
-| [`azuresentinel`](managed-azuresentinel.md) | Managed | 683 | 118 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
-| [`http`](builtin-http.md) | Built-in | 374 | 58 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
+| [`azuresentinel`](managed-azuresentinel.md) | Managed | 686 | 119 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
+| [`http`](builtin-http.md) | Built-in | 375 | 59 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 | [`keyvault`](managed-keyvault.md) | Managed | 151 | 25 | [Learn](https://learn.microsoft.com/en-us/connectors/keyvault/) |
 | [`azuremonitorlogs`](managed-azuremonitorlogs.md) | Managed | 107 | 27 | [Learn](https://learn.microsoft.com/en-us/connectors/azuremonitorlogs/) |
 | [`teams`](managed-teams.md) | Managed | 104 | 33 | [Learn](https://learn.microsoft.com/en-us/connectors/teams/) |

@@ -197,13 +197,13 @@
 <tr>
 <td style="text-align: left;"><a href="../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.html">Abnormal Deny Rate for Source IP</a></td>
 <td style="text-align: left;">Medium</td>
-<td style="text-align: left;">InitialAccess, Exfiltration, CommandAndControl</td>
+<td style="text-align: left;">InitialAccess, Exfiltration, CommandAndControl, Discovery</td>
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwflowtrace.html"><code>AZFWFlowTrace</code></a><br><a href="../tables/azfwidpssignature.html"><code>AZFWIdpsSignature</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.html">Abnormal Port to Protocol</a></td>
 <td style="text-align: left;">Medium</td>
-<td style="text-align: left;">Exfiltration, CommandAndControl</td>
+<td style="text-align: left;">Exfiltration, CommandAndControl, DefenseEvasion</td>
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
 </tr>
 <tr>
@@ -239,13 +239,13 @@
 <tr>
 <td style="text-align: left;"><a href="../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.html">Port Scan</a></td>
 <td style="text-align: left;">Medium</td>
-<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;">Discovery, Reconnaissance</td>
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.html">Port Sweep</a></td>
 <td style="text-align: left;">Medium</td>
-<td style="text-align: left;">Discovery</td>
+<td style="text-align: left;">Discovery, Reconnaissance</td>
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
 </tr>
 <tr>
@@ -284,12 +284,12 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.html">Source IP Abnormally Connects to Multiple Destinations</a></td>
-<td style="text-align: left;">Execution, LateralMovement</td>
+<td style="text-align: left;">CommandAndControl, LateralMovement</td>
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.html">Uncommon Port for Organization</a></td>
-<td style="text-align: left;">Defense Evasion, Exfiltration, CommandAndControl</td>
+<td style="text-align: left;">Exfiltration, CommandAndControl</td>
 <td style="text-align: left;"><a href="../tables/azfwapplicationrule.html"><code>AZFWApplicationRule</code></a><br><a href="../tables/azfwnetworkrule.html"><code>AZFWNetworkRule</code></a><br><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a></td>
 </tr>
 <tr>
@@ -365,6 +365,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>3.0.6</td>
+<td>06-05-2026</td>
+<td>Updated <strong>Analytical Rules</strong> and <strong>Hunting Queries</strong> to Quality improvements.</td>
+</tr>
 <tr>
 <td>3.0.5</td>
 <td>13-02-2026</td>

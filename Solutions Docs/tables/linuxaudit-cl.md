@@ -6,17 +6,6 @@
 
 ---
 
-| Attribute | Value |
-|:----------|:------|
-| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
-| **Ingestion API Supported** | ✓ Yes |
-
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Connectors](#connectors)
-
 ## Schema (53 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/LinuxAudit_CL.json)
@@ -76,20 +65,6 @@
 | Type | string |
 | type_s | string |
 | uid_s | string |
-
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [NXLog LinuxAudit](../solutions/nxlog-linuxaudit.md)
-
-## Connectors (1)
-
-This table is ingested by the following connectors:
-
-| Connector | Selection Criteria |
-|:----------|:-------------------|
-| [NXLog LinuxAudit](../connectors/nxloglinuxaudit.md) |  |
 
 ---
 

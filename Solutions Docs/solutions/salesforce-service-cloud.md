@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.2.0 |
+| **Version** | 3.3.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
 | **Last Updated** | 2026-01-27 |
@@ -37,8 +37,9 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 
 ## Data Connectors
 
-This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
+- [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md)
 - [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️ 🔶
 - [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) ⚠️
 
@@ -49,10 +50,12 @@ This solution has **2 discovered data connector(s)⚠️** (not in Solution defi
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
+| [`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 | [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
@@ -102,6 +105,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.3.0       | 07-05-2026                     | Add new **Salesforce Audit logs CCF Data Connector** to pull **SetupAuditTrails** and **LoginHistory** logs. |
 | 3.2.0       | 01-05-2026                     | Updated **CCF Data Connector** to include new V3 table that includes additional fields and support for multiple domains. |
 | 3.1.0       | 27-04-2026                     | Updated CCP data connector with expanded DCR, table definitions, and polling configuration |
 | 3.0.10      | 23-01-2026                     | Update the Salesforce data connector with instructions for the Salesforce Shield Event Monitoring license requirement     |

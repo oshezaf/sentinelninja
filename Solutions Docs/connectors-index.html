@@ -19,7 +19,7 @@
 <p>Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you to collect security data from various sources into your Log Analytics workspace. Each connector defines how data flows from a source system to Sentinel tables, including the collection method (such as Azure Functions, Diagnostic Settings, or Log Analytics Agent) and the target table schema.</p>
 <p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <strong>Connectors</strong> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="statistics.html">📊</a></p>
 <hr />
-<p><strong>612 unique connectors</strong> (461 active, 151 deprecated). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>615 unique connectors</strong> (464 active, 151 deprecated). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <hr />
 <p>Browse connectors alphabetically:</p>
 <p><strong>Jump to:</strong> <a href="##">#</a> | <a href="#a">A</a> | <a href="#b">B</a> | <a href="#c">C</a> | <a href="#d">D</a> | <a href="#e">E</a> | <a href="#f">F</a> | <a href="#g">G</a> | <a href="#h">H</a> | <a href="#i">I</a> | <a href="#j">J</a> | <a href="#k">K</a> | <a href="#l">L</a> | <a href="#m">M</a> | <a href="#n">N</a> | <a href="#o">O</a> | <a href="#p">P</a> | <a href="#q">Q</a> | <a href="#r">R</a> | <a href="#s">S</a> | <a href="#t">T</a> | <a href="#u">U</a> | <a href="#v">V</a> | <a href="#w">W</a> | <a href="#x">X</a> | <a href="#z">Z</a> | <a href="#deprecated-connectors">Deprecated</a></p>
@@ -71,7 +71,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/azurekid/Azure-Sentinel/master/Logos/1password.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/1passwordccpdefinition.html">1Password (Serverless)</a></td>
 <td style="text-align: left;">1Password</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/1password.html">1Password</a></td>
 </tr>
@@ -115,14 +115,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/A365.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/a365.html">A365 Observability</a></td>
-<td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: left;"><a href="solutions/a365-observability.html">A365 Observability</a></td>
-</tr>
-<tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AbnormalSecurity/Data%20Connectors/Logo/abnormalsecurity.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/abnormalsecuritypush.html">Abnormal Security (Push)</a> 🔶</td>
 <td style="text-align: left;">Abnormal Security</td>
@@ -140,11 +132,19 @@
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/agari.html">Agari Phishing Defense and Brand Protection</a> ⚠️ 🔶</td>
+<td style="text-align: left;"><a href="connectors/agari.html">Agari Phishing Defense and Brand Protection</a> ⚠️ 🔍 🔶</td>
 <td style="text-align: left;">Agari</td>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: left;"><a href="solutions/agari.html">Agari</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/A365.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/a365.html">Agent 365</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;"><a href="methods/unknown.html">Unknown</a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: left;"><a href="solutions/agent-365.html">Agent 365</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AIVectraDetect.svg" alt="" width="40" height="40"></td>
@@ -158,7 +158,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AIShield%20AI%20Security%20Monitoring/Data%20Connectors/Logo/AIShield_Logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/boschaishield.html">AIShield</a></td>
 <td style="text-align: left;">Bosch</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/aishield-ai-security-monitoring.html">AIShield AI Security Monitoring</a></td>
 </tr>
@@ -270,7 +270,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/42CrunchLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/42crunchapiprotection.html">API Protection</a> 🔶</td>
 <td style="text-align: left;">42Crunch</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/42crunch-api-protection.html">42Crunch API Protection</a></td>
 </tr>
@@ -278,7 +278,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/ARGOSCloudSecurity/Workbooks/images/logos/argos-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/argoscloudsecurity.html">ARGOS Cloud Security</a> 🔶</td>
 <td style="text-align: left;">ARGOS Cloud Security</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/argoscloudsecurity.html">ARGOSCloudSecurity</a></td>
 </tr>
@@ -326,7 +326,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/atlassianbeaconalerts.html">Atlassian Beacon Alerts</a> 🔶</td>
 <td style="text-align: left;">DEFEND Ltd.</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/integration-for-atlassian-beacon.html">Integration for Atlassian Beacon</a></td>
 </tr>
@@ -350,7 +350,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/atlassian.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/jiraauditccpdefinition.html">Atlassian Jira Audit (via Codeless Connector Framework)</a></td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
 </tr>
@@ -366,7 +366,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Authomize.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/authomize.html">Authomize Data Connector</a> ⚠️ 🔶</td>
 <td style="text-align: left;">Authomize</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/authomize.html">Authomize</a></td>
 </tr>
@@ -422,7 +422,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/PaloAlto-PAN-OS/logo/Palo-alto-logo.png" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/azurecloudngfwbypaloaltonetworks.html">Azure CloudNGFW By Palo Alto Networks</a> 🔶</td>
 <td style="text-align: left;">Palo Alto Networks</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/azure-cloud-ngfw-by-palo-alto-networks.html">Azure Cloud NGFW By Palo Alto Networks</a></td>
 </tr>
@@ -565,7 +565,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BETTER_MTD_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/bettermtd.html">BETTER Mobile Threat Defense (MTD)</a> 🔶</td>
 <td style="text-align: left;">BETTER Mobile</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">4</td>
 <td style="text-align: left;"><a href="solutions/better-mobile-threat-defense-mtd.html">BETTER Mobile Threat Defense (MTD)</a></td>
 </tr>
@@ -573,7 +573,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Beyond%20Security%20Logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/beyondsecuritybesecure.html">Beyond Security beSECURE</a> ⚠️ 🔍 🔶</td>
 <td style="text-align: left;">Beyond Security</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: left;"><a href="solutions/beyond-security-besecure.html">Beyond Security beSECURE</a></td>
 </tr>
@@ -621,16 +621,16 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/blacklens.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/blacklens-io.html">blacklens.io</a></td>
 <td style="text-align: left;">snapSEC GmbH</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/blacklens.html">Blacklens</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/bloodhoundenterprise.html">Bloodhound Enterprise</a></td>
+<td style="text-align: left;"><a href="connectors/bloodhoundenterprise.html">BloodHound Enterprise Data Connector (using Azure Functions)</a></td>
 <td style="text-align: left;">SpecterOps</td>
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
 <td style="text-align: left;"><a href="solutions/bloodhound-enterprise.html">BloodHound Enterprise</a></td>
 </tr>
 <tr>
@@ -780,7 +780,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/citrix.html">CITRIX SECURITY ANALYTICS</a> 🔶</td>
 <td style="text-align: left;">CITRIX</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">4</td>
 <td style="text-align: left;"><a href="solutions/citrix-analytics-for-security.html">Citrix Analytics for Security</a></td>
 </tr>
@@ -804,7 +804,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cofenseintelligence.html">Cofense Intelligence Threat Indicators Ingestion</a> ⚠️</td>
 <td style="text-align: left;">Cofense</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/cofenseintelligence.html">CofenseIntelligence</a></td>
 </tr>
@@ -812,7 +812,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CofenseTriage.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cofensetriage.html">Cofense Triage Threat Indicators Ingestion</a> ⚠️ 🔶</td>
 <td style="text-align: left;">Cofense</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: left;"><a href="solutions/cofensetriage.html">CofenseTriage</a></td>
 </tr>
@@ -820,7 +820,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cognni-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cognnisentineldataconnector.html">Cognni</a> 🔶</td>
 <td style="text-align: left;">Cognni</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/cognni.html">Cognni</a></td>
 </tr>
@@ -876,7 +876,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Corelight/Data%20Connectors/Logo/corelight.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/corelightconnectorexporter.html">Corelight Connector Exporter</a> 🔶</td>
 <td style="text-align: left;">Corelight</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">108</td>
 <td style="text-align: left;"><a href="solutions/corelight.html">Corelight</a></td>
 </tr>
@@ -892,7 +892,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cribl-Logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cribl.html">Cribl</a> 🔶</td>
 <td style="text-align: left;">Cribl</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">4</td>
 <td style="text-align: left;"><a href="solutions/cribl.html">Cribl</a></td>
 </tr>
@@ -908,7 +908,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/Logo/crowdstrike.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/crowdstrikefalconadversaryintelligence.html">CrowdStrike Falcon Adversary Intelligence </a></td>
 <td style="text-align: left;">CrowdStrike</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/crowdstrike-falcon-endpoint-protection.html">CrowdStrike Falcon Endpoint Protection</a></td>
 </tr>
@@ -972,7 +972,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cyberarkauditccpdefinition.html">CyberArk Audit</a></td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/cyberarkaudit.html">CyberArkAudit</a></td>
 </tr>
@@ -1076,7 +1076,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyjax.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cyjaxiocapi.html">Cyjax Threat Intelligence IOC Connector</a> ⚠️</td>
 <td style="text-align: left;">Cyjax</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/cyjax.html">Cyjax</a></td>
 </tr>
@@ -1084,7 +1084,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cynerio.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cyneriosecurityevents.html">Cynerio Security Events</a> 🔶</td>
 <td style="text-align: left;">Cynerio</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/cynerio.html">Cynerio</a></td>
 </tr>
@@ -1123,7 +1123,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/darktracerestconnector.html">Darktrace Connector for Microsoft Sentinel REST API</a> 🔶</td>
 <td style="text-align: left;">Darktrace</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/darktrace.html">Darktrace</a></td>
 </tr>
@@ -1147,7 +1147,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/DataminrPulse.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/dataminrpulsealerts.html">Dataminr Pulse Alerts Data Connector</a></td>
 <td style="text-align: left;">Dataminr</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/dataminr-pulse.html">Dataminr Pulse</a></td>
 </tr>
@@ -1155,7 +1155,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/datawiza_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/datawizadapsolution.html">Datawiza DAP</a> 🔶</td>
 <td style="text-align: left;">Datawiza</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/datawiza.html">Datawiza</a></td>
 </tr>
@@ -1163,7 +1163,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/signl4.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/derdacksignl4.html">Derdack SIGNL4</a> 🔶</td>
 <td style="text-align: left;">Derdack</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/signl4.html">SIGNL4</a></td>
 </tr>
@@ -1187,7 +1187,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/doppel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/doppel-dataconnector.html">Doppel Data Connector</a></td>
 <td style="text-align: left;">Doppel</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/doppel.html">Doppel</a></td>
 </tr>
@@ -1319,6 +1319,14 @@
 <td style="text-align: left;"><a href="solutions/elasticagent.html">ElasticAgent</a></td>
 </tr>
 <tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/elasticagentconnector.html">Elastic Agent (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="solutions/elasticagent.html">ElasticAgent</a></td>
+</tr>
+<tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Ermes_Browser_Security_Logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/ermesbrowsersecurityevents.html">Ermes Browser Security Events</a></td>
 <td style="text-align: left;">Ermes Cyber Security S.p.A.</td>
@@ -1354,7 +1362,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/esi-exchangeonpremisescollector.html">Exchange Security Insights On-Premises Collector</a> 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
 </tr>
@@ -1393,7 +1401,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/F5%20BIG-IP/Workbooks/Images/Logo/f5_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/f5bigip.html">F5 BIG-IP</a> 🔶</td>
 <td style="text-align: left;">F5 Networks</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: left;"><a href="solutions/f5-big-ip.html">F5 Big-IP</a></td>
 </tr>
@@ -1417,7 +1425,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/forcepoint-dlp.html">Forcepoint DLP</a> 🔍 🔶</td>
 <td style="text-align: left;">Forcepoint</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/forcepoint-dlp.html">Forcepoint DLP</a></td>
 </tr>
@@ -1433,7 +1441,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/forescout-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/forescout-eyeinspect-for-ot-security.html">Forescout eyeInspect for OT Security</a> ⚠️ 🔍</td>
 <td style="text-align: left;">Forescout</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/forescout-eyeinspect-for-ot-security.html">Forescout eyeInspect for OT Security</a></td>
 </tr>
@@ -1441,7 +1449,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/forescout-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/forescouthostpropertymonitor.html">Forescout Host Property Monitor</a> 🔶</td>
 <td style="text-align: left;">Forescout</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">3</td>
 <td style="text-align: left;"><a href="solutions/forescouthostpropertymonitor.html">ForescoutHostPropertyMonitor</a></td>
 </tr>
@@ -1460,6 +1468,14 @@
 <td style="text-align: left;"><a href="methods/ama.html">AMA</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.html">Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/agariconnector.html">Fortra Agari Data Connector (via Codeless Connector Framework)</a> ⚠️</td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="solutions/agari.html">Agari</a></td>
 </tr>
 </tbody>
 </table>
@@ -1480,7 +1496,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Garrison_Logomark.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/garrisonultraremotelogs.html">Garrison ULTRA Remote Logs</a></td>
 <td style="text-align: left;">Garrison</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/garrison-ultra.html">Garrison ULTRA</a></td>
 </tr>
@@ -1680,7 +1696,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/greynoise_logomark_black.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/greynoise2sentinelapi.html">GreyNoise Threat Intelligence</a></td>
 <td style="text-align: left;">GreyNoise, Inc. and BlueCycle LLC</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/greynoisethreatintelligence.html">GreyNoiseThreatIntelligence</a></td>
 </tr>
@@ -1772,6 +1788,14 @@
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/sentinelillumioinsightsgraphccp.html">Illumio Insights Graph</a></td>
+<td style="text-align: left;">Illumio</td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="solutions/illumio-insight.html">Illumio Insight</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/illumioinsightssummaryccp.html">Illumio Insights Summary</a></td>
 <td style="text-align: left;">Illumio</td>
 <td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
@@ -1790,7 +1814,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/IllumioLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/illumiosaasccfdefinition.html">Illumio Saas</a> 🔍</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/illumiosaas.html">IllumioSaaS</a></td>
 </tr>
@@ -1822,7 +1846,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/infobloxdataconnector.html">Infoblox Data Connector via REST API</a></td>
 <td style="text-align: left;">Infoblox</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/infoblox.html">Infoblox</a></td>
 </tr>
@@ -1830,7 +1854,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/infoblox_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/infobloxsocinsightsdataconnector-api.html">Infoblox SOC Insight Data Connector via REST API</a> 🔶</td>
 <td style="text-align: left;">Infoblox</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/infoblox.html">Infoblox</a></td>
 </tr>
@@ -1838,7 +1862,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AgileSec%20Analytics%20Connector/Workbooks/Images/Logo/infosecglobal.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/infosecdataconnector.html">InfoSecGlobal Data Connector</a> 🔶</td>
 <td style="text-align: left;">InfoSecGlobal</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/agilesec-analytics-connector.html">AgileSec Analytics Connector</a></td>
 </tr>
@@ -2069,7 +2093,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/joesandbox.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/joesandbox.html">JoeSandboxThreatIntelligence</a></td>
 <td style="text-align: left;">Joe Security LLC</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/joesandbox.html">JoeSandbox</a></td>
 </tr>
@@ -2147,7 +2171,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/lumenthreatfeedconnectorv2.html">Lumen Defender Threat Feed Data Connector V2</a></td>
 <td style="text-align: left;">Lumen Technologies, Inc.</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></td>
 </tr>
@@ -2155,7 +2179,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Lumen%20Defender%20Threat%20Feed/Workbooks/Images/Logo/Lumen.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/lumenthreatfeedconnectorv2privatenetworking.html">Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)</a></td>
 <td style="text-align: left;">Lumen Technologies, Inc.</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></td>
 </tr>
@@ -2163,7 +2187,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CognyteLuminar.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/cognyteluminar.html">Luminar IOCs and Leaked Credentials</a></td>
 <td style="text-align: left;">Cognyte Technologies Israel Ltd</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/cognyteluminar.html">CognyteLuminar</a></td>
 </tr>
@@ -2186,7 +2210,7 @@
 <td style="text-align: center;"></td>
 <td style="text-align: left;"><a href="connectors/mailguard365.html">MailGuard 365</a> 🔍 🔶</td>
 <td style="text-align: left;">MailGuard365</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/mailguard-365.html">MailGuard 365</a></td>
 </tr>
@@ -2338,7 +2362,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/esi-opt7exchangehttpproxylogs.html">Microsoft Exchange HTTP Proxy Logs</a> 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
 </tr>
@@ -2354,7 +2378,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/esi-opt6exchangemessagetrackinglogs.html">Microsoft Exchange Message Tracking Logs</a> 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
 </tr>
@@ -2474,7 +2498,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/misp-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/misp2sentinelconnector.html">MISP2Sentinel</a></td>
 <td style="text-align: left;">MISP project &amp; cudeso.be</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-rest-push-api.html">Azure Function (TI Upload API)|REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/misp2sentinel.html">MISP2Sentinel</a></td>
 </tr>
@@ -2521,7 +2545,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NCProtectLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/nucleuscyberncprotect.html">NC Protect</a> 🔶</td>
 <td style="text-align: left;">archTIS</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/nc-protect-data-connector.html">NC Protect Data Connector</a></td>
 </tr>
@@ -2529,7 +2553,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NetCleanImpactLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/netclean-proactive-incidents.html">Netclean ProActive Incidents</a> 🔶</td>
 <td style="text-align: left;">NetClean Technologies</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/netclean-proactive.html">NetClean ProActive</a></td>
 </tr>
@@ -2585,7 +2609,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/nonamesecuritymicrosoftsentinel.html">Noname Security for Microsoft Sentinel</a> 🔶</td>
 <td style="text-align: left;">Noname Security</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/noname-api-security-solution-for-microsoft-sentinel.html">Noname API Security Solution for Microsoft Sentinel</a></td>
 </tr>
@@ -2596,46 +2620,6 @@
 <td style="text-align: left;"><a href="methods/azure-function.html">Azure Function</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/nordpass.html">NordPass</a></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/nxlogaixaudit.html">NXLog AIX Audit</a> 🔶</td>
-<td style="text-align: left;">NXLog</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/nxlogaixaudit.html">NXLogAixAudit</a></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/nxlogbsmmacos.html">NXLog BSM macOS</a> 🔶</td>
-<td style="text-align: left;">NXLog</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/nxlog-bsm-macos.html">NXLog BSM macOS</a></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/nxlogdnslogs.html">NXLog DNS Logs</a> 🔶</td>
-<td style="text-align: left;">NXLog</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/nxlogdnslogs.html">NXLogDNSLogs</a></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/nxlogfim.html">NXLog FIM</a> 🔶</td>
-<td style="text-align: left;">NXLog</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/nxlog-fim.html">NXLog FIM</a></td>
-</tr>
-<tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"></td>
-<td style="text-align: left;"><a href="connectors/nxloglinuxaudit.html">NXLog LinuxAudit</a> 🔶</td>
-<td style="text-align: left;">NXLog</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;"><a href="solutions/nxlog-linuxaudit.html">NXLog LinuxAudit</a></td>
 </tr>
 </tbody>
 </table>
@@ -2736,7 +2720,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/oci-connector-ccp-definition.html">Oracle Cloud Infrastructure (via CCP) – Preview</a> 🔍 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
 </tr>
@@ -2744,7 +2728,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/oraclecloudinfraconnector.html">Oracle Cloud Infrastructure (via Codeless Connector Framework)</a> 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/oracle-cloud-infrastructure.html">Oracle Cloud Infrastructure</a></td>
 </tr>
@@ -2752,7 +2736,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OrcaSecurity.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/orcasecurityalerts.html">Orca Security Alerts</a> 🔶</td>
 <td style="text-align: left;">Orca Security</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/orca-security-alerts.html">Orca Security Alerts</a></td>
 </tr>
@@ -2815,7 +2799,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/prismacloudcomputenativepoller.html">Palo Alto Prisma Cloud CWPP (using REST API)</a> 🔍 🔶</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/palo-alto-prisma-cloud-cwpp.html">Palo Alto Prisma Cloud CWPP</a></td>
 </tr>
@@ -2839,7 +2823,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Perimeter81_Logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/perimeter81activitylogs.html">Perimeter 81 Activity Logs</a> 🔶</td>
 <td style="text-align: left;">Perimeter 81</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/perimeter-81.html">Perimeter 81</a></td>
 </tr>
@@ -2863,7 +2847,7 @@
 <td style="text-align: center;"></td>
 <td style="text-align: left;"><a href="connectors/prancerlogdata.html">Prancer Data Connector</a> 🔍 🔶</td>
 <td style="text-align: left;">Prancer</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/prancer-pensuiteai-integration.html">Prancer PenSuiteAI Integration</a></td>
 </tr>
@@ -2981,9 +2965,17 @@
 <td style="text-align: center;"></td>
 <td style="text-align: left;"><a href="connectors/redcanarydataconnector.html">Red Canary Threat Detection</a> 🔍 🔶</td>
 <td style="text-align: left;">Red Canary</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/red-canary.html">Red Canary</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/redsift_logo.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/redsiftpush.html">Red Sift Events (CCP Push)</a> ⚠️</td>
+<td style="text-align: left;">Red Sift</td>
+<td style="text-align: left;"><a href="methods/ccf-push.html">CCF Push</a></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="solutions/red-sift.html">Red Sift</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RSA_IDPlus.svg" alt="" width="40" height="40"></td>
@@ -3028,7 +3020,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ValenceSecurityLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/valencesecurity.html">SaaS Security</a> 🔶</td>
 <td style="text-align: left;">Valence Security</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/valence-security.html">Valence Security</a></td>
 </tr>
@@ -3041,10 +3033,26 @@
 <td style="text-align: left;"><a href="solutions/sailpointidentitynow.html">SailPointIdentityNow</a></td>
 </tr>
 <tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/sailpointidentitynowconnector.html">SailPoint IdentityNow (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"><a href="solutions/sailpointidentitynow.html">SailPointIdentityNow</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/salesforceauditlogsconnector.html">Salesforce Audit Logs (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></td>
+</tr>
+<tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a> 🔍</td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/salesforce-service-cloud.html">Salesforce Service Cloud</a></td>
 </tr>
@@ -3052,7 +3060,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Samsung_Knox_Asset_Intelligence.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/samsungdcdefinition.html">Samsung Knox Asset Intelligence</a></td>
 <td style="text-align: left;">Samsung</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">6</td>
 <td style="text-align: left;"><a href="solutions/samsung-knox-asset-intelligence.html">Samsung Knox Asset Intelligence</a></td>
 </tr>
@@ -3156,7 +3164,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SenservaPro/Data Connectors/Logo/SenservaPro_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/senservapro.html">SenservaPro (Preview)</a> 🔶</td>
 <td style="text-align: left;">Senserva</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/senservapro.html">SenservaPro</a></td>
 </tr>
@@ -3180,7 +3188,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sevcosecurity.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/sevcodevices.html">Sevco Platform - Devices</a> ⚠️ 🔶</td>
 <td style="text-align: left;">Sevco Security</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/sevcosecurity.html">SevcoSecurity</a></td>
 </tr>
@@ -3196,7 +3204,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SSG.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/ssg.html">SINEC Security Guard</a></td>
 <td style="text-align: left;">Siemens AG</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/sinec-security-guard.html">SINEC Security Guard</a></td>
 </tr>
@@ -3236,7 +3244,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SonraiSecurity/Workbooks/Images/Logo/Sonrai.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/sonraidataconnector.html">Sonrai Data Connector</a> 🔶</td>
 <td style="text-align: left;">Sonrai</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/sonraisecurity.html">SonraiSecurity</a></td>
 </tr>
@@ -3244,7 +3252,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/sophoscloudoptix.html">Sophos Cloud Optix</a> 🔶</td>
 <td style="text-align: left;">Sophos</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/sophos-cloud-optix.html">Sophos Cloud Optix</a></td>
 </tr>
@@ -3252,7 +3260,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/sophosendpointprotectionccpdefinition.html">Sophos Endpoint Protection (via Codeless Connector Platform)</a></td>
 <td style="text-align: left;">Microsoft</td>
-<td style="text-align: left;"><a href="methods/ccf-azure-function.html">CCF|Azure Function</a></td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/sophos-endpoint-protection.html">Sophos Endpoint Protection</a></td>
 </tr>
@@ -3260,9 +3268,17 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SquadraTechnologiesLogo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/squadratechnologiessecrmm.html">Squadra Technologies secRMM</a> 🔶</td>
 <td style="text-align: left;">Squadra Technologies</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/squadra-technologies-secrmm.html">Squadra Technologies SecRmm</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/StriderShield.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/stridershieldccf.html">Strider Shield</a> ⚠️</td>
+<td style="text-align: left;">NVISO</td>
+<td style="text-align: left;"><a href="methods/ccf.html">CCF</a></td>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"><a href="solutions/strider-shield.html">Strider Shield</a></td>
 </tr>
 <tr>
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/styx-logo-black.svg" alt="" width="40" height="40"></td>
@@ -3284,7 +3300,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/symantec.html">Symantec Integrated Cyber Defense Exchange</a> 🔶</td>
 <td style="text-align: left;">Symantec</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/symantec-integrated-cyber-defense.html">Symantec Integrated Cyber Defense</a></td>
 </tr>
@@ -3339,7 +3355,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Talon.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/talonlogs.html">Talon Insights</a> 🔶</td>
 <td style="text-align: left;">Talon Security</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/talon.html">Talon</a></td>
 </tr>
@@ -3419,7 +3435,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/theom-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/theom.html">Theom</a> 🔶</td>
 <td style="text-align: left;">Theom</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/theom.html">Theom</a></td>
 </tr>
@@ -3641,7 +3657,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vmray.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/vmray.html">VMRayThreatIntelligence</a></td>
 <td style="text-align: left;">VMRay</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/vmray.html">VMRay</a></td>
 </tr>
@@ -3963,10 +3979,18 @@
 <td style="text-align: left;"><a href="solutions/zerofox-threat-intelligence.html">ZeroFox Threat Intelligence</a></td>
 </tr>
 <tr>
-<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_square2.svg" alt="" width="40" height="40"></td>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_orange.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;"><a href="connectors/zimperiummtdalerts.html">Zimperium Mobile Threat Defense</a> 🔍 🔶</td>
 <td style="text-align: left;">Zimperium</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"><a href="solutions/zimperium-mobile-threat-defense.html">Zimperium Mobile Threat Defense</a></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_orange.svg" alt="" width="40" height="40"></td>
+<td style="text-align: left;"><a href="connectors/zimperiummtdpush.html">Zimperium Mobile Threat Defense CCF</a></td>
+<td style="text-align: left;">Zimperium</td>
+<td style="text-align: left;"><a href="methods/ccf-push.html">CCF Push</a></td>
 <td style="text-align: center;">2</td>
 <td style="text-align: left;"><a href="solutions/zimperium-mobile-threat-defense.html">Zimperium Mobile Threat Defense</a></td>
 </tr>
@@ -4742,7 +4766,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ionix-logo.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;">🚫 <a href="connectors/cyberpionsecuritylogs.html">[DEPRECATED] IONIX Security Logs (Push)</a></td>
 <td style="text-align: left;">IONIX</td>
-<td style="text-align: left;"><a href="methods/rest-push-api.html">REST Push API</a></td>
+<td style="text-align: left;"><a href="methods/rest-pull-api.html">REST Pull API</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/ionix.html">IONIX</a></td>
 </tr>
@@ -5318,7 +5342,7 @@
 <td style="text-align: center;"><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Mimecast.svg" alt="" width="40" height="40"></td>
 <td style="text-align: left;">🚫 <a href="connectors/mimecasttiregionalconnectorazurefunctions.html">Mimecast Intelligence for Microsoft - Microsoft Sentinel</a></td>
 <td style="text-align: left;">Mimecast</td>
-<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api.html">Azure Function (TI Upload API)</a></td>
+<td style="text-align: left;"><a href="methods/azure-function-ti-upload-api-azure-function.html">Azure Function (TI Upload API)|Azure Function</a></td>
 <td style="text-align: center;">1</td>
 <td style="text-align: left;"><a href="solutions/mimecasttiregional.html">MimecastTIRegional</a></td>
 </tr>

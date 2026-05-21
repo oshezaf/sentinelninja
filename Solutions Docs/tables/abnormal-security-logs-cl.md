@@ -6,6 +6,17 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
+| **Ingestion API Supported** | ✓ Yes |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
 ## Schema (10 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity%5CData%20Connectors%5CAbnormalSecurity_CCF/AbnormalSecurity_table_AbnormalSecurityLogs.json)
@@ -21,7 +32,21 @@
 | abx_metadata_timestamp_s | string | Event timestamp from top-level abx_metadata |
 | abx_metadata_trace_id_g | string | Trace ID (GUID) from top-level abx_metadata |
 | Time | string | Event timestamp in RFC3339 format |
-| TimeGenerated | string | Timestamp when the event was ingested into Microsoft Sentinel |
+| TimeGenerated | datetime | Timestamp when the event was ingested into Microsoft Sentinel |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [AbnormalSecurity](../solutions/abnormalsecurity.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) |  |
 
 ---
 

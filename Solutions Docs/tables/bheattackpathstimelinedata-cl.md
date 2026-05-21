@@ -14,9 +14,10 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (14 columns)
+## Schema (15 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEAttackPathsTimelineData_CL.json)
 
@@ -35,6 +36,7 @@
 | ImpactedAssetCount | int |
 | path_title | string |
 | tenant_url | string |
+| TimeGenerated | datetime |
 | updated_at | datetime |
 
 ## Solutions (1)
@@ -42,6 +44,14 @@
 This table is used by the following solutions:
 
 - [BloodHound Enterprise](../solutions/bloodhound-enterprise.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) |  |
 
 ---
 

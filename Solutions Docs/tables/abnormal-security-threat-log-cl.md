@@ -75,7 +75,7 @@
 | abx_metadata_timestamp_s | string | Event timestamp from top-level abx_metadata |
 | abx_metadata_trace_id_g | string | Trace ID (GUID) from top-level abx_metadata |
 | Time | string | Event timestamp in RFC3339 format |
-| TimeGenerated | string | Timestamp when the event was ingested into Microsoft Sentinel |
+| TimeGenerated | datetime | Timestamp when the event was ingested into Microsoft Sentinel |
 
 ## Solutions (1)
 

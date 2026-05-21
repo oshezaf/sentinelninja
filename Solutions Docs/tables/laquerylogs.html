@@ -242,16 +242,98 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (3)</h2>
+<h2 id="solutions">Solutions (4)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/dpdp-compliance.html">DPDP Compliance</a></li>
 <li><a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a></li>
 <li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
-<h3 id="workbooks">Workbooks (3)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (20)</h2>
+<h3 id="analytic-rules">Analytic Rules (1)</h3>
+<p><strong>Standalone Content:</strong> <code>QueryText has_any "_GetWatchlist("</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Analytic Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-users-searching-for-vip-user-activity-f7f4a77e-f68f-4b56-9aaf-a0c9d87d7a8e-aebfac5d.html">Users searching for VIP user activity</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (11)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-cross-workspace-query-anomolies-8f18c6ea-fcd0-4d9a-a8fd-19a6aaa1660c-c649c5f9.html">Cross workspace query anomolies</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-multiple-large-queries-made-by-user-cd11d6a1-e2ad-47fa-9a9f-4c70b143d4fd-5c0b6215.html">Multiple large queries made by user</a></td>
+<td style="text-align: left;"><code>ResponseRowCount == "10001"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-new-serviceprincipal-running-queries-98e4df23-7bd2-480d-814a-a03f77efc670-8103d8fa.html">New ServicePrincipal running queries</a></td>
+<td style="text-align: left;"><code>AADEmail !contains "@"</code><br><code>RequestClientApp != "AppAnalytics"</code><br><code>ResponseCode == "200"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-new-client-running-queries-1dd98313-f43f-4d8b-9870-5a1dfb2cf93f-c7d32c1c.html">New client running queries</a></td>
+<td style="text-align: left;"><code>ResponseCode == "200"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-new-users-running-queries-8c4fb385-98b0-4ef5-b3da-65db0fb22d89-113f7831.html">New users running queries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-query-data-volume-anomolies-97543188-a4e8-4439-980d-17b231149617-2488d78c.html">Query data volume anomolies</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-query-looking-for-secrets-2bf19f27-0466-4c16-a821-ce84e524476d-bba63411.html">Query looking for secrets</a></td>
+<td style="text-align: left;"><code>RequestClientApp != "Sentinel-General"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-user-returning-more-data-than-daily-average-8699df3f-f89e-431f-9dea-056c4ce7014a-cb19a4e5.html">User returning more data than daily average</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/standalone-content-user-running-multiple-queries-that-fail-a2fca6ac-1155-4eec-934b-65aa62cdbb09-4fd90040.html">User running multiple queries that fail</a></td>
+<td style="text-align: left;"><code>ResponseCode != "200"</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-cross-service-azure-data-explorer-queries-58b17f82-f594-4d36-9b78-4e4b03992708-26494ee3.html">Cross-service Azure Data Explorer queries</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-new-users-calling-sensitive-watchlist-f3dc87f3-64f9-405d-aa1b-fed98f859357-5436e4d3.html">New users calling sensitive Watchlist</a></td>
+<td style="text-align: left;"><code>QueryText has_any "_GetWatchlist("</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (8)</h3>
 <p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>RequestClientApp != "Sentinel-General"</code></p>
 <table>
 <thead>
@@ -291,13 +373,44 @@
 </tr>
 </tbody>
 </table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-loganalyticsqueryanalysis-50cfc93a.html">LogAnalyticsQueryAnalysis</a></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-logsourcesandanalyticrulescoverage-d4c48df0.html">LogSourcesAndAnalyticRulesCoverage</a></td>
+<td style="text-align: left;"><code>QueryText !startswith "search"</code><br><code>QueryText !startswith "top"</code><br><code>QueryText !startswith "union"</code><br><code>RequestClientApp in "ASC_Portal,ASI_Portal,AppAnalytics,AppInsightsPortalExtension,AzureInformationProtection,AzureMonitorLogsConnector,IbizaExtension,Sentinel-Investigation-Queries,Sentinel-analyticsManagement-customerQuery"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-workspaceauditing-b4e840dd.html">WorkspaceAuditing</a></td>
+<td style="text-align: left;"><code>ResponseCode != "200"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <h2 id="resource-types">Resource Types</h2>
 <p>This table collects data from the following Azure resource types:</p>
 <ul>
 <li><code>microsoft.operationalinsights/workspaces</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (2 criteria, 3 total references)</h2>
-<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (7 criteria, 10 total references)</h2>
+<p>References by type: 0 connectors, 10 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -313,10 +426,50 @@
 <tr>
 <td style="text-align: left;"><code>RequestClientApp != "Sentinel-General"</code></td>
 <td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>QueryText has_any "_GetWatchlist("</code></td>
+<td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResponseRowCount == "10001"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResponseCode == "200"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AADEmail !contains "@"</code><br><code>RequestClientApp != "AppAnalytics"</code><br><code>ResponseCode == "200"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>ResponseCode != "200"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
 <td style="text-align: left;"><code>RequestClientApp != "Sentinel-General"</code><br><code>ResponseCode != "200"</code><br><code>ResponseRowCount == "5000"</code></td>
@@ -329,10 +482,56 @@
 <tr>
 <td style="text-align: left;"><strong>Total</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>10</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
 <td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>10</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="aademail">AADEmail</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>!contains @</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="querytext">QueryText</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>has_any _GetWatchlist(</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -352,10 +551,18 @@
 <tr>
 <td style="text-align: left;"><code>!= Sentinel-General</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>4</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!= AppAnalytics</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -373,12 +580,20 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><code>200</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr>
 <td style="text-align: left;"><code>!= 200</code></td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -395,6 +610,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><code>10001</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
 <tr>
 <td style="text-align: left;"><code>5000</code></td>
 <td style="text-align: center;">-</td>

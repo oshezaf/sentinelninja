@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**563 workbooks** across all Microsoft Sentinel solutions.
+**565 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -692,7 +692,9 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 |:-----|:-------|
 | [ZeroTrustStrategyWorkbook](github-only-zerotruststrategyworkbook-cd80dc2b.md) | 🔗 GitHub Only |
 | [ZeroTrustTIC3](zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) | 📦 [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md) |
-| [ZimperiumWorkbooks](zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.md) | 📦 [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
+| [ZimperiumMTDCCFWorkbooks](zimperium-mobile-threat-defense-zimperiummtdccfworkbooks-2bb0d331.md) | 📦 [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
+| [ZimperiumMTDCCFWorkbooks](github-only-zimperiummtdccfworkbooks-92ace659.md) | 🔗 GitHub Only |
+| [ZimperiumWorkbooks](zimperium-mobile-threat-defense-zimperiumworkbooks-53cb70da.md) ⚠️ | 📦 [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 | [ZimperiumWorkbooks](github-only-zimperiumworkbooks-4e6ee705.md) | 🔗 GitHub Only |
 | [ZNSegmentAudit](zeronetworks-znsegmentaudit-0143013d.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
 | [ZoomReports](zoomreports-zoomreports-c76868a1.md) | 📦 [ZoomReports](../solutions/zoomreports.md) |

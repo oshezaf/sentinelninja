@@ -8,7 +8,7 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 
 ---
 
-**13 schemas** with 90 source parser pairs and 15 union parser pairs. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**13 schemas** with 91 source parser pairs and 15 union parser pairs. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
 
@@ -47,17 +47,18 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
-| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
+| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
+| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
 
 ### Supported Products
 
-[Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [SentinelOne](asim-products-index.md#sentinelone)
+[Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [SentinelOne](asim-products-index.md#sentinelone)
 
 ### Source Parsers
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
+| [CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | Cisco Secure Endpoint | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md) |
 | [MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR |  | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md) |
 | [SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | SentinelOne | [SentinelOne (legacy connector)](../solutions/sentinelone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventSentinelOneSingularity.md) |
 
@@ -120,12 +121,12 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAuthentication](asimauthentication.md) | `_ASim_Authentication` | [0.2.14](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md) |
-| [imAuthentication](imauthentication.md) | `_Im_Authentication` | [0.3.11](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md) |
+| [ASimAuthentication](asimauthentication.md) | `_ASim_Authentication` | [0.2.15](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthentication.md) |
+| [imAuthentication](imauthentication.md) | `_Im_Authentication` | [0.3.12](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/imAuthentication.md) |
 
 ### Supported Products
 
-[AWS](asim-products-index.md#aws), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Adaptive Security Appliance (ASA)](asim-products-index.md#cisco-adaptive-security-appliance-asa), [Cisco DNAC](asim-products-index.md#cisco-dnac), [Cisco IOS](asim-products-index.md#cisco-ios), [Cisco ISE](asim-products-index.md#cisco-ise), [Cisco ISE Administrator](asim-products-index.md#cisco-ise-administrator), [Cisco Meraki](asim-products-index.md#cisco-meraki), [CrowdStrike Falcon Endpoint Protection](asim-products-index.md#crowdstrike-falcon-endpoint-protection), [Fortigate](asim-products-index.md#fortigate), [Google Workspace](asim-products-index.md#google-workspace), [Illumio](asim-products-index.md#illumio), [M365 Defender for EndPoint](asim-products-index.md#m365-defender-for-endpoint), [Microsoft Defender for IoT](asim-products-index.md#microsoft-defender-for-iot), [Microsoft Entra ID](asim-products-index.md#microsoft-entra-id), [Native](asim-products-index.md#native), [Okta](asim-products-index.md#okta), [OpenSSH](asim-products-index.md#openssh), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto PAN-OS](asim-products-index.md#palo-alto-pan-os), [Palo Alto PAN-OS GlobalProtect](asim-products-index.md#palo-alto-pan-os-globalprotect), [PostgreSQL](asim-products-index.md#postgresql), [Salesforce Service Cloud](asim-products-index.md#salesforce-service-cloud), [SentinelOne](asim-products-index.md#sentinelone), [su](asim-products-index.md#su), [sudo](asim-products-index.md#sudo), [Vectra](asim-products-index.md#vectra), [VMware Carbon Black Cloud](asim-products-index.md#vmware-carbon-black-cloud), [VMware vCenter](asim-products-index.md#vmware-vcenter), [Windows Security Events](asim-products-index.md#windows-security-events)
+[AWS](asim-products-index.md#aws), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Adaptive Security Appliance (ASA)](asim-products-index.md#cisco-adaptive-security-appliance-asa), [Cisco DNAC](asim-products-index.md#cisco-dnac), [Cisco IOS](asim-products-index.md#cisco-ios), [Cisco ISE](asim-products-index.md#cisco-ise), [Cisco ISE Administrator](asim-products-index.md#cisco-ise-administrator), [Cisco Meraki](asim-products-index.md#cisco-meraki), [CrowdStrike Falcon Endpoint Protection](asim-products-index.md#crowdstrike-falcon-endpoint-protection), [Fortigate](asim-products-index.md#fortigate), [Google Workspace](asim-products-index.md#google-workspace), [Illumio](asim-products-index.md#illumio), [M365 Defender for EndPoint](asim-products-index.md#m365-defender-for-endpoint), [Microsoft Defender for IoT](asim-products-index.md#microsoft-defender-for-iot), [Microsoft Entra ID](asim-products-index.md#microsoft-entra-id), [Native](asim-products-index.md#native), [Okta](asim-products-index.md#okta), [OpenSSH](asim-products-index.md#openssh), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto PAN-OS](asim-products-index.md#palo-alto-pan-os), [Palo Alto PAN-OS GlobalProtect](asim-products-index.md#palo-alto-pan-os-globalprotect), [PostgreSQL](asim-products-index.md#postgresql), [Salesforce Service Cloud](asim-products-index.md#salesforce-service-cloud), [SentinelOne](asim-products-index.md#sentinelone), [su](asim-products-index.md#su), [sudo](asim-products-index.md#sudo), [Vectra](asim-products-index.md#vectra), [VMware Carbon Black Cloud](asim-products-index.md#vmware-carbon-black-cloud), [VMware ESXi](asim-products-index.md#vmware-esxi), [VMware vCenter](asim-products-index.md#vmware-vcenter), [Windows Security Events](asim-products-index.md#windows-security-events)
 
 ### Source Parsers
 
@@ -165,7 +166,8 @@ These are the main entry points that combine all source parsers:
 | [Su](asimauthenticationsu.md) | su | [Syslog](../solutions/syslog.md) | [0.3.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSu.md) |
 | [Sudo](asimauthenticationsudo.md) | sudo | [Syslog](../solutions/syslog.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSudo.md) |
 | [VMwareCarbonBlackCloud](asimauthenticationvmwarecarbonblackcloud.md) | VMware Carbon Black Cloud | [VMware Carbon Black Cloud (legacy connector)](../solutions/vmware-carbon-black-cloud.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareCarbonBlackCloud.md) |
-| [VMwareVCenter](asimauthenticationvmwarevcenter.md) | VMware vCenter | [CustomLogsAma](../solutions/customlogsama.md)<br>[VMware vCenter (legacy connector)](../solutions/vmware-vcenter.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareVCenter.md) |
+| [VMwareESXi](asimauthenticationvmwareesxi.md) | VMware ESXi | [Cisco SD-WAN](../solutions/cisco-sd-wan.md)<br>[Cisco UCS (legacy connector)](../solutions/cisco-ucs.md)<br>[Citrix ADC (legacy connector)](../solutions/citrix-adc.md)<br>[Forescout (Legacy)](../solutions/forescout-legacy.md)<br>[RSA SecurID (legacy connector)](../solutions/rsa-securid.md)<br>[Watchguard Firebox (legacy connector)](../solutions/watchguard-firebox.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareESXi.md) |
+| [VMwareVCenter](asimauthenticationvmwarevcenter.md) | VMware vCenter | [CustomLogsAma](../solutions/customlogsama.md)<br>[VMware vCenter (legacy connector)](../solutions/vmware-vcenter.md) | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVMwareVCenter.md) |
 | [VectraXDRAudit](asimauthenticationvectraxdraudit.md) | Vectra | [Vectra XDR](../solutions/vectra-xdr.md) | [0.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationVectraXDRAudit.md) |
 
 ## DhcpEvent
@@ -351,7 +353,7 @@ These are the main entry points that combine all source parsers:
 | [CreateMicrosoftSysmon](asimprocesseventcreatemicrosoftsysmon.md) | Sysmon |  | [0.4.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreateMicrosoftSysmon.md) |
 | [CreateMicrosoftSysmonWindowsEvent](asimprocesseventcreatemicrosoftsysmonwindowsevent.md) | Sysmon | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) | [0.4.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventCreateMicrosoftSysmonWindowsEvent.md) |
 | [MD4IoT](asimprocesseventmd4iot.md) | Microsoft Defender for IoT |  | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMD4IoT.md) |
-| [Microsoft365D](asimprocesseventmicrosoft365d.md) | Microsoft 365 Defender for endpoint |  | [0.3.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMicrosoft365D.md) |
+| [Microsoft365D](asimprocesseventmicrosoft365d.md) | Microsoft 365 Defender for endpoint |  | [0.3.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventMicrosoft365D.md) |
 | [Native](asimprocesseventnative.md) | Native | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventNative.md) |
 | [TerminateMicrosoftSysmon](asimprocesseventterminatemicrosoftsysmon.md) | Microsoft Windows Events Sysmon |  | [0.3.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminateMicrosoftSysmon.md) |
 | [TerminateMicrosoftSysmonWindowsEvent](asimprocesseventterminatemicrosoftsysmonwindowsevent.md) | Microsoft Windows Events Sysmon | [Windows Forwarded Events](../solutions/windows-forwarded-events.md) | [0.4.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimProcessEvent/CHANGELOG/ASimProcessEventTerminateMicrosoftSysmonWindowsEvent.md) |

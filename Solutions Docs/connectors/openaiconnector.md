@@ -20,16 +20,16 @@
 | **CCF Configuration** | [OpenAI_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI/Data%20Connectors/OpenAI_CCP/OpenAI_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 
-The OpenAI data connector enables you to ingest audit logs, chat completion data, or both from your OpenAI organization into Microsoft Sentinel through the OpenAI API. Each data type uses a separate REST API poller and requires a different API key type: **audit logs** (user actions, API key management, organization changes, security events) require an **organization-level admin API key**, while **chat completions** (model usage, token consumption, performance metrics) require a **project-level API key**. You may configure one or both data types independently. Data is collected into separate tables (OpenAIAuditLogs and OpenAIChatCompletions) for security monitoring, compliance analysis, and usage monitoring. Refer to [OpenAI API documentation](https://platform.openai.com/docs/api-reference) for more information.
+The OpenAI data connector enables you to ingest audit logs, chat completion data, or both from your OpenAI organization into Microsoft Sentinel through the OpenAI API. Each data type uses a separate REST API poller and requires a different API key type: **audit logs** (user actions, API key management, organization changes, security events) require an **organization-level admin API key**, while **chat completions** (model usage, token consumption, performance metrics) require a **project-level API key**. You may configure one or both data types independently. Audit logs are collected into the custom OpenAIAuditLogs_CL table (aliased by the OpenAIAuditLogs parser). Chat completions are normalized into the ASimAgentEventLogs standard ASIM table (aliased by the OpenAIChatCompletions parser) for security monitoring, compliance analysis, and usage monitoring. Refer to [OpenAI API documentation](https://platform.openai.com/docs/api-reference) for more information.
 
 ## Tables Ingested
 
 This connector ingests data into the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`OpenAIAuditLogs_CL`](../tables/openaiauditlogs-cl.md) | ? | ✓ | ? |
-| [`OpenAIChatCompletions_CL`](../tables/openaichatcompletions-cl.md) | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`ASimAgentEventLogs`](../tables/asimagenteventlogs.md) | `EventProduct == "OpenAI API Platform"`<br>`EventType == "ChatCompletion"`<br>`EventVendor == "OpenAI"` | ? | ? | ? |
+| [`OpenAIAuditLogs_CL`](../tables/openaiauditlogs-cl.md) |  | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -52,9 +52,10 @@ Details on the connections used to collect data from OpenAI's API.
     - Use **organization-level admin API keys**.
     - Audit logging must be enabled in your OpenAI organization settings. Organization owners can go to OpenAI's `Organization settings` -> `Data controls` -> `Data retention` to enable audit logging.
     - Once OpenAI audit logging is enabled, it cannot be disabled without contacting OpenAI support.
-- **Chat Completions** (`OpenAIChatCompletions`):
+- **Chat Completions** (`ASimAgentEventLogs`):
     - Use **project-level API keys**.
     - Only chat completions created with the `store` parameter set to `true` will be collected.
+    - Chat completions are normalized into the **ASimAgentEventLogs** ASIM standard table.
     - Deleting stored chat completions while this connector is active may require you to disconnect and reconnect to reset the data collection state.
 
 **2. Add OpenAI Audit Logs Connection**
@@ -89,7 +90,7 @@ When you click the "Add Connection" button in the portal, a configuration form w
 
 ## OpenAI Chat Completions Connection
 
-Configure your OpenAI project-level API key to collect chat completions data (model usage, token consumption, performance metrics).
+Configure your OpenAI project-level API key to collect chat completions data (model usage, token consumption, performance metrics) into the **ASimAgentEventLogs** ASIM standard table.
 
 > **Note:** Chat completions require a **project-level API key**. These can be created under a specific project in the OpenAI dashboard. Only chat completions created with the `store` parameter set to `true` will be collected.
 
@@ -105,7 +106,7 @@ This section is an interactive interface in the Microsoft Sentinel portal that a
 
 📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
 - **Friendly Name**
-- **Data Type**
+- **Alias**
 - **URL**
 
 ➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).

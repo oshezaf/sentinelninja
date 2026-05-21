@@ -1,6 +1,6 @@
 # Analytic Rules - S
 
-**183 analytic rules** starting with 'S'.
+**169 analytic rules** starting with 'S'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -14,19 +14,12 @@
 
 | Name | Severity | Source |
 |:-----|:---------|:-------|
-| [S3 bucket access point publicly exposed](amazon-web-services-s3-bucket-access-point-publicly-exposed-b7a44e0d-ae4c-4fb2-be1b-aa0e45f2327b-90b31572.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [S3 bucket exposed via ACL](amazon-web-services-s3-bucket-exposed-via-acl-6b9b4ee6-f4c1-4b86-8c8c-beb0bb59ae44-e329f88e.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [S3 bucket exposed via policy](amazon-web-services-s3-bucket-exposed-via-policy-44a5b65e-b0a9-4591-aabc-388fd92a28c4-701bf828.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [S3 bucket suspicious ransomware activity](amazon-web-services-s3-bucket-suspicious-ransomware-activity-b442b9e2-5cc4-4129-a85b-a5ef38a9e5f0-b6d1d5e8.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [S3 Object Exfiltration from Anonymous User](amazon-web-services-s3-object-exfiltration-from-anonymous-user-15d3bf4e-8708-41c8-a836-8b0aa5be730e-38fbb5c4.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [S3 object publicly exposed](amazon-web-services-s3-object-publicly-exposed-09f2a28b-3286-4268-9e2f-33805f104e5d-c5935689.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [SailPointIdentityNowAlertForTriggers](sailpointidentitynow-sailpointidentitynowalertfortriggers-08330c3d-487e-4f5e-a539-1e7d06dea786-9d60dbe5.md) | Informational | 📦 [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [SailPointIdentityNowEventType](sailpointidentitynow-sailpointidentitynoweventtype-48bb92e2-bad4-4fd4-9684-26cb188299b7-bbc83429.md) | High | 📦 [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [SailPointIdentityNowEventTypeTechnicalName](sailpointidentitynow-sailpointidentitynoweventtypetechnicalname-2151e8ea-4838-4c74-be12-4d6a950dde7a-679f873f.md) | High | 📦 [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [SailPointIdentityNowFailedEvents](sailpointidentitynow-sailpointidentitynowfailedevents-c3835197-fd07-447e-a0ac-7540d51a1f64-dc29bee3.md) | High | 📦 [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [SailPointIdentityNowFailedEventsBasedOnTime](sailpointidentitynow-sailpointidentitynowfailedeventsbasedontime-175b79ef-0fc3-4b27-b92a-89b2db6c85c2-086ffffa.md) | High | 📦 [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | [SailPointIdentityNowUserWithFailedEvent](sailpointidentitynow-sailpointidentitynowuserwithfailedevent-2a215222-bfc5-4858-a530-6d4088ebfa15-2928054a.md) | High | 📦 [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
-| [SAML update identity provider](amazon-web-services-saml-update-identity-provider-bce1dcba-4948-414d-8838-6385afb9d496-ee6e8731.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Samsung Knox - Application Privilege Escalation or Change Events](samsung-knox-asset-intelligence-samsung-knox-application-privilege-escalation-or-change-events-215e89ca-cdbc-4661-b8b2-7041f6ecc7fb-d43356a9.md) | High | 📦 [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | [Samsung Knox - Mobile Device Boot Compromise Events](samsung-knox-asset-intelligence-samsung-knox-mobile-device-boot-compromise-events-fae7e371-aee8-4d3f-8311-2255a45a30b3-015abeee.md) | High | 📦 [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | [Samsung Knox - Password Lockout Events](samsung-knox-asset-intelligence-samsung-knox-password-lockout-events-fbff0a97-1972-4df8-a78c-254ccb9879ef-066202c7.md) | High | 📦 [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
@@ -142,7 +135,6 @@
 | [SSG_Security_Incidents](sinec-security-guard-ssg-security-incidents-d41fa731-45a2-4b23-bb1d-29896fbc5298-8490c938.md) | HIGH | 📦 [SINEC Security Guard](../solutions/sinec-security-guard.md) |
 | [SSH - Potential Brute Force](syslog-ssh-potential-brute-force-e1ce0eab-10d1-4aae-863f-9a383345ba88-08e1a5a9.md) | Low | 📦 [Syslog](../solutions/syslog.md) |
 | [SSH Credentials Changed](veeam-ssh-credentials-changed-40b8e739-1077-42d8-9501-b68736c2c4d2-7a80fa5a.md) | High | 📦 [Veeam](../solutions/veeam.md) |
-| [SSM document is publicly exposed](amazon-web-services-ssm-document-is-publicly-exposed-75647b58-bcc8-4eb5-9658-46698d3fa153-2110e2eb.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Stale AWS policy attachment to identity](authomize-stale-aws-policy-attachment-to-identity-766a3b1b-0d5b-4a8d-b0d6-7dd379e73567-c0294924.md) | Low | 📦 [Authomize](../solutions/authomize.md) |
 | [Stale IAAS policy attachment to role](authomize-stale-iaas-policy-attachment-to-role-ccdf3f87-7890-4549-9d0f-8f43c1d2751d-5cb7f68e.md) | Informational | 📦 [Authomize](../solutions/authomize.md) |
 | [Stale last password change](senservapro-stale-last-password-change-645a8724-5c7e-4a1f-81cb-c33aff1439eb-b265e3ab.md) | Low | 📦 [SenservaPro](../solutions/senservapro.md) |
@@ -156,9 +148,7 @@
 | [Subscription moved to another tenant](azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.md) | Low | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [Subtenant Deleted](veeam-subtenant-deleted-1c23715c-3a28-4b98-b135-fece6e7dcb8b-220743c9.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Subtenant Updated](veeam-subtenant-updated-e1d0d9ce-b7c9-4e28-883d-04429f80d6d7-75b596f8.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
-| [Successful API executed from a Tor exit node](amazon-web-services-successful-api-executed-from-a-tor-exit-node-0adab960-5565-4978-ba6d-044553e4acc4-eec69aba.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Successful AWS Console Login from IP Address Observed Conducting Password Spray](multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
-| [Successful brute force attack on S3 Bucket.](amazon-web-services-successful-brute-force-attack-on-s3-bucket.-31b9e94b-0df6-4a3d-a297-3457b53c5d86-636adc43.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Successful logins to SOC Prime platform from bad IP addresses](soc-prime-ccf-successful-logins-to-soc-prime-platform-from-bad-ip-addresses-f8e7d6c5-b4a3-4122-8110-0987654321fe-043a0380.md) | Medium | 📦 [SOC Prime CCF](../solutions/soc-prime-ccf.md) |
 | [Successful logon from IP and failure from a different IP](microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [SUNBURST and SUPERNOVA backdoor hashes](microsoft-defender-xdr-sunburst-and-supernova-backdoor-hashes-a3c144f9-8051-47d4-ac29-ffb0c312c910-6f0d9998.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -174,10 +164,7 @@
 | [Suspicious application consent for offline access](microsoft-entra-id-suspicious-application-consent-for-offline-access-3533f74c-9207-4047-96e2-0eb9383be587-fa7e45f8.md) | Low | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Suspicious application consent similar to O365 Attack Toolkit](microsoft-entra-id-suspicious-application-consent-similar-to-o365-attack-toolkit-f948a32f-226c-4116-bddd-d95e91d97eb9-f8a2446b.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Suspicious application consent similar to PwnAuth](microsoft-entra-id-suspicious-application-consent-similar-to-pwnauth-39198934-62a0-4781-8416-a81265c03fd6-18583afd.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [Suspicious AWS CLI Command Execution](amazon-web-services-suspicious-aws-cli-command-execution-8c2dc344-9352-4ca1-8863-b1b7a5e09e59-994383ab.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Suspicious AWS console logins by credential access alerts](multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
-| [Suspicious AWS EC2 Compute Resource Deployments](amazon-web-services-suspicious-aws-ec2-compute-resource-deployments-9e457dc4-81f0-4d25-bc37-a5fa4a17946a-9f074032.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
-| [Suspicious command sent to EC2](amazon-web-services-suspicious-command-sent-to-ec2-21702832-aff3-4bd6-a8e1-663b6818503d-32ecf6f6.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Suspicious Entra ID Joined Device Update](microsoft-entra-id-suspicious-entra-id-joined-device-update-3a3c6835-0086-40ca-b033-a93bf26d878f-b40b663f.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Suspicious granting of permissions to an account](azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.md) | Medium | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [Suspicious link sharing pattern](standalone-content-suspicious-link-sharing-pattern-1218175f-c534-421c-8070-5dcaabf28067-905979e8.md) | Low | 📄 Standalone Content |
@@ -187,7 +174,6 @@
 | [Suspicious modification of Global Administrator user properties](standalone-content-suspicious-modification-of-global-administrator-user-properties-48602a24-67cf-4362-b258-3f4249e55def-fe1c2532.md) | Medium | 📄 Standalone Content |
 | [Suspicious named pipes](falconfriday-suspicious-named-pipes-ddf7c669-db26-4215-acaf-11e2953a04e6-377a4889.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Suspicious number of resource creation or deployment activities](azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.md) | Medium | 📦 [Azure Activity](../solutions/azure-activity.md) |
-| [Suspicious overly permissive KMS key policy created](amazon-web-services-suspicious-overly-permissive-kms-key-policy-created-60dfc193-0f73-4279-b43c-110ade02b201-aa84cc85.md) | High | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Suspicious parentprocess relationship - Office child processes.](falconfriday-suspicious-parentprocess-relationship-office-child-processes.-5ee34fa1-64ed-48c7-afa2-794b244f6c60-081c16fa.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |
 | [Suspicious Powershell Commandlet Executed](endpoint-threat-protection-essentials-suspicious-powershell-commandlet-executed-b5153fb3-ada9-4ce4-9131-79c771efb50d-34e7bcf0.md) | Medium | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
 | [Suspicious Process Injection from Office application](falconfriday-suspicious-process-injection-from-office-application-a4d8e681-6f30-440a-a2f3-c312bc1389d0-f6ee7c3b.md) | Medium | 📦 [FalconFriday](../solutions/falconfriday.md) |

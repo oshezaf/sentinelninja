@@ -1,6 +1,6 @@
 # Analytic Rules - M
 
-**107 analytic rules** starting with 'M'.
+**106 analytic rules** starting with 'M'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -106,7 +106,6 @@
 | [Missing Domain Controller Heartbeat](standalone-content-missing-domain-controller-heartbeat-b8b8ba09-1e89-45a1-8bd7-691cd23bfa32-3caae499.md) | High | 📄 Standalone Content |
 | [Modification of Accessibility Features](standalone-content-modification-of-accessibility-features-d714ef62-1a56-4779-804f-91c4158e528d-44b1d2cd.md) | Medium | 📄 Standalone Content |
 | [Modified domain federation trust settings](microsoft-entra-id-modified-domain-federation-trust-settings-95dc4ae3-e0f2-48bd-b996-cdd22b90f9af-cb9684ef.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [Monitor AWS Credential abuse or hijacking](amazon-web-services-monitor-aws-credential-abuse-or-hijacking-32555639-b639-4c2b-afda-c0ae0abefa55-b389d8ba.md) | Low | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [MosaicLoader](microsoft-defender-xdr-mosaicloader-506f4d6b-3864-4bb1-8f75-a13fb066f97a-66639731.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Multi-Factor Authentication Disabled](veeam-multi-factor-authentication-disabled-6881f4f5-f58e-43d7-a05e-b5d05a4c09f9-2fe15a9f.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Multi-Factor Authentication Disabled for a User](cloud-identity-threat-protection-essentials-multi-factor-authentication-disabled-for-a-user-65c78944-930b-4cae-bd79-c3664ae30ba7-478ef443.md) | Medium | 📦 [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md) |

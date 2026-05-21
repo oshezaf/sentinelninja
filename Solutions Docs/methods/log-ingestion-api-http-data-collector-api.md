@@ -29,7 +29,7 @@
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | [Azure Function](../methods/azure-function.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
-| [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | [Azure Function](../methods/azure-function.md) | SpecterOps | 1 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | [Azure Function](../methods/azure-function.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 
 ---
 

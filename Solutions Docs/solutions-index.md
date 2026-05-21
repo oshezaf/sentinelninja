@@ -8,7 +8,7 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 ---
 
-**522 solutions** with 458 unique connectors and 414 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
+**526 solutions** with 460 unique connectors and 414 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -33,11 +33,11 @@ Browse solutions alphabetically:
 
 | | Solution | First Published | Popularity | Publisher |
 |:--:|----------|----------------|:----------:|----------|
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/A365.svg" alt="" width="40" height="40"> | [A365 Observability](solutions/a365-observability.md) | 2026-02-25 | ⚪ Very Low (0%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AbnormalSecurity/Data%20Connectors/Logo/abnormalsecurity.svg" alt="" width="40" height="40"> | [AbnormalSecurity](solutions/abnormalsecurity.md) | 2021-10-20 | 🟡 Low (29%) | Abnormal Security |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [AbuseIPDB](solutions/abuseipdb.md) | 2022-05-23 | 🟡 Low (12%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Acronis.svg" alt="" width="40" height="40"> | [Acronis Cyber Protect Cloud](solutions/acronis-cyber-protect-cloud.md) | 2025-10-28 | ⚪ Very Low (0%) | Acronis International GmbH |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="40" height="40"> | [Agari](solutions/agari.md) ⚠️ | 2022-05-02 |  | Agari |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="40" height="40"> | [Agari](solutions/agari.md) ⚠️ | 2026-05-14 |  | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/A365.svg" alt="" width="40" height="40"> | [Agent 365](solutions/agent-365.md) | 2026-02-25 | ⚪ Very Low (0%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AgileSec%20Analytics%20Connector/Workbooks/Images/Logo/infosecglobal.svg" alt="" width="40" height="40"> | [AgileSec Analytics Connector](solutions/agilesec-analytics-connector.md) |  | ⚪ Very Low (0%) | InfoSecGlobal |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Darktrace.svg" alt="" width="40" height="40"> | [AI Analyst Darktrace](solutions/ai-analyst-darktrace.md) | 2022-05-02 |  | Darktrace |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AIShield%20AI%20Security%20Monitoring/Data%20Connectors/Logo/AIShield_Logo.svg" alt="" width="40" height="40"> | [AIShield AI Security Monitoring](solutions/aishield-ai-security-monitoring.md) | 2022-01-11 | ⚪ Very Low (0%) | AIShield |
@@ -184,6 +184,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyfirma_logo.svg" alt="" width="40" height="40"> | [Cyfirma Vulnerabilities Intel](solutions/cyfirma-vulnerabilities-intel.md) | 2025-05-15 | ⚪ Very Low (0%) | CYFIRMA |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cyjax.svg" alt="" width="40" height="40"> | [Cyjax](solutions/cyjax.md) ⚠️ | 2026-03-24 |  | Cyjax |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Cynerio.svg" alt="" width="40" height="40"> | [Cynerio](solutions/cynerio.md) | 2023-03-29 | ⚪ Very Low (0%) | Cynerio |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/cyren_logo.svg" alt="" width="40" height="40"> | [Cyren-CrowdStrike-ThreatIntelligence](solutions/cyren-crowdstrike-threatintelligence.md) ⚠️ | 2026-02-17 |  | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/cyren_logo.svg" alt="" width="40" height="40"> | [Cyren-SentinelOne-ThreatIntelligence](solutions/cyren-sentinelone-threatintelligence.md) | 2026-02-17 | ⚪ Very Low (0%) | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="" width="40" height="40"> | [CyrenThreatIntelligence](solutions/cyrenthreatintelligence.md) | 2025-11-16 | ⚪ Very Low (0%) | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyware-logo.svg" alt="" width="40" height="40"> | [Cyware](solutions/cyware.md) | 2024-03-18 | ⚪ Very Low (0%) | Cyware |
@@ -287,7 +288,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="40" height="40"> | [GoogleCloudPlatformNAT](solutions/googlecloudplatformnat.md) | 2025-05-29 | ⚪ Very Low (0%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="40" height="40"> | [GoogleCloudPlatformResourceManager](solutions/googlecloudplatformresourcemanager.md) | 2025-03-07 | 🟡 Low (30%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="40" height="40"> | [GoogleCloudPlatformSQL](solutions/googlecloudplatformsql.md) | 2021-07-30 | ⚪ Very Low (0%) | Microsoft Corporation |
-|  | [GoogleDirectory](solutions/googledirectory.md) ⚠️ |  |  |  |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="" width="40" height="40"> | [GoogleDirectory](solutions/googledirectory.md) | 2026-05-15 | ⚪ Very Low (0%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google-workspace-logo.svg" alt="" width="40" height="40"> | [GoogleWorkspaceReports](solutions/googleworkspacereports.md) | 2022-01-24 | 🔵 Medium (72%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Bitdefender.svg" alt="" width="40" height="40"> | [GravityZone](solutions/gravityzone.md) ⚠️ | 2026-04-21 |  | Bitdefender SRL |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/greynoise_logomark_black.svg" alt="" width="40" height="40"> | [GreyNoiseThreatIntelligence](solutions/greynoisethreatintelligence.md) | 2023-09-05 | ⚪ Very Low (0%) | GreyNoise |
@@ -303,6 +304,7 @@ Browse solutions alphabetically:
 |  | [HoneyTokens](solutions/honeytokens.md) ⚠️ |  |  |  |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Hyas.svg" alt="" width="40" height="40"> | [HYAS](solutions/hyas.md) | 2021-10-20 | ⚪ Very Low (4%) | HYAS |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Hyas.svg" alt="" width="40" height="40"> | [HYAS Protect](solutions/hyas-protect.md) | 2023-09-26 |  | HYAS |
+|  | [Hybrid Attack - Cloud & Identity](solutions/hybrid-attack-cloud-&-identity.md) ⚠️ |  |  |  |
 
 ### I
 
@@ -429,11 +431,11 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Noname API Security Solution for Microsoft Sentinel](solutions/noname-api-security-solution-for-microsoft-sentinel.md) | 2022-12-01 |  | Noname Security |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NordPass.svg" alt="" width="40" height="40"> | [NordPass](solutions/nordpass.md) | 2025-04-22 | 🔵 Medium (64%) | NordPass |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [NozomiNetworks](solutions/nozominetworks.md) | 2022-07-12 | 🟡 Low (35%) | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"> | [NXLog BSM macOS](solutions/nxlog-bsm-macos.md) | 2022-05-02 |  | NXLog |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"> | [NXLog FIM](solutions/nxlog-fim.md) | 2022-08-15 |  | NXLog |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"> | [NXLog LinuxAudit](solutions/nxlog-linuxaudit.md) | 2022-05-05 |  | NXLog |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"> | [NXLogAixAudit](solutions/nxlogaixaudit.md) | 2022-05-05 |  | NXLog |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NXLog.svg" alt="" width="40" height="40"> | [NXLogDNSLogs](solutions/nxlogdnslogs.md) | 2022-05-24 |  | NXLog |
+|  | [NXLog BSM macOS](solutions/nxlog-bsm-macos.md) |  |  |  |
+|  | [NXLog FIM](solutions/nxlog-fim.md) |  |  |  |
+|  | [NXLog LinuxAudit](solutions/nxlog-linuxaudit.md) |  |  |  |
+|  | [NXLogAixAudit](solutions/nxlogaixaudit.md) |  |  |  |
+|  | [NXLogDnsLogs](solutions/nxlogdnslogs.md) |  |  |  |
 
 ### O
 
@@ -499,6 +501,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RecordedFuture.svg" alt="" width="40" height="40"> | [Recorded Future](solutions/recorded-future.md) | 2021-11-01 | 🔵 Medium (56%) | Recorded Future Support Team |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RecordedFuture.svg" alt="" width="40" height="40"> | [Recorded Future Identity](solutions/recorded-future-identity.md) | 2022-09-06 | 🟡 Low (31%) | Recorded Future Support Team |
 |  | [Red Canary](solutions/red-canary.md) | 2022-03-04 |  | Red Canary |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/redsift_logo.svg" alt="" width="40" height="40"> | [Red Sift](solutions/red-sift.md) ⚠️ | 2026-04-10 |  | Red Sift |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/reversinglabs.svg" alt="" width="40" height="40"> | [ReversingLabs](solutions/reversinglabs.md) | 2022-08-08 | ⚪ Very Low (0%) | ReversingLabs |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/RidgeSecurity.svg" alt="" width="40" height="40"> | [RidgeSecurity](solutions/ridgesecurity.md) | 2023-10-23 | ⚪ Very Low (0%) | RidgeSecurity |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [RiskIQ](solutions/riskiq.md) | 2021-10-20 | 🟡 Low (29%) | Microsoft Corporation |
@@ -510,7 +513,7 @@ Browse solutions alphabetically:
 
 | | Solution | First Published | Popularity | Publisher |
 |:--:|----------|----------------|:----------:|----------|
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [SailPointIdentityNow](solutions/sailpointidentitynow.md) | 2021-10-26 | 🟢 High (85%) | SailPoint |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [SailPointIdentityNow](solutions/sailpointidentitynow.md) | 2021-10-26 |  | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salem_logo.svg" alt="" width="40" height="40"> | [SalemCyber](solutions/salemcyber.md) ⚠️ | 2023-07-21 |  | Salem Cyber |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="40" height="40"> | [Salesforce Service Cloud](solutions/salesforce-service-cloud.md) | 2022-05-16 | 🟢 High (93%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Samsung_Knox_Asset_Intelligence.svg" alt="" width="40" height="40"> | [Samsung Knox Asset Intelligence](solutions/samsung-knox-asset-intelligence.md) | 2025-01-15 | 🔵 Medium (79%) | Samsung Electronics Co., Ltd. |
@@ -549,10 +552,11 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="40" height="40"> | [Sophos Endpoint Protection](solutions/sophos-endpoint-protection.md) | 2021-07-07 | 🟢 High (85%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="" width="40" height="40"> | [Sophos XG Firewall](solutions/sophos-xg-firewall.md) | 2021-10-20 | 🟢 High (91%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [SOX IT Compliance](solutions/sox-it-compliance.md) | 2025-12-11 | ⚪ Very Low (0%) | Microsoft Corporation |
-| <img src="raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Spur_Context_API.svg" alt="" width="40" height="40"> | [Spur](solutions/spur.md) ⚠️ | 2026-04-25 |  | Spur |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Spur_Context_API.svg" alt="" width="40" height="40"> | [Spur](solutions/spur.md) ⚠️ | 2026-04-25 |  | Spur |
 | <img src="raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SpyCloud_Enterprise_Protection.svg" alt="" width="40" height="40"> | [SpyCloud Enterprise Protection](solutions/spycloud-enterprise-protection.md) | 2023-09-09 | ⚪ Very Low (0%) | Spycloud |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SquadraTechnologiesLogo.svg" alt="" width="40" height="40"> | [Squadra Technologies SecRmm](solutions/squadra-technologies-secrmm.md) | 2022-05-09 |  | Squadra Technologies |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [SquidProxy](solutions/squidproxy.md) | 2022-05-16 | 🔵 Medium (76%) | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/StriderShield.svg" alt="" width="40" height="40"> | [Strider Shield](solutions/strider-shield.md) ⚠️ | 2026-04-28 |  | NVISO |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/styx-logo-black.svg" alt="" width="40" height="40"> | [Styx Intelligence](solutions/styx-intelligence.md) ⚠️ | 2025-02-07 |  | Styx Intelligence |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="40" height="40"> | [Symantec Endpoint Protection](solutions/symantec-endpoint-protection.md) ➕ | 2022-07-01 | 🔵 Medium (59%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/symantec_logo.svg" alt="" width="40" height="40"> | [Symantec Integrated Cyber Defense](solutions/symantec-integrated-cyber-defense.md) | 2022-06-02 | ⚪ Very Low (0%) | Microsoft Corporation |
@@ -612,7 +616,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="" width="40" height="40"> | [Vaikora-CrowdStrike-ThreatIntelligence](solutions/vaikora-crowdstrike-threatintelligence.md) ⚠️ | 2026-04-02 |  | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="" width="40" height="40"> | [Vaikora-Sentinel](solutions/vaikora-sentinel.md) ⚠️ | 2026-04-03 |  | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="" width="40" height="40"> | [Vaikora-SentinelOne-ThreatIntelligence](solutions/vaikora-sentinelone-threatintelligence.md) ⚠️ | 2026-04-02 |  | Data443 Risk Mitigation, Inc. |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="" width="40" height="40"> | [VaikoraSecurityCenter](solutions/vaikorasecuritycenter.md) ⚠️ | 2026-04-02 |  | Data443 Risk Mitigation, Inc. |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/vaikora_logo.svg" alt="" width="40" height="40"> | [VaikoraSecurityCenter](solutions/vaikorasecuritycenter.md) | 2026-04-02 | ⚪ Very Low (0%) | Data443 Risk Mitigation, Inc. |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ValenceSecurityLogo.svg" alt="" width="40" height="40"> | [Valence Security](solutions/valence-security.md) | 2023-11-20 | ⚪ Very Low (0%) | Valence Security |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/valimail.svg" alt="" width="40" height="40"> | [ValimailEnforce](solutions/valimailenforce.md) ⚠️ | 2026-03-31 |  | Valimail |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/vArmour%20Application%20Controller/Data%20Connectors/Logo/varmour-logo.svg" alt="" width="40" height="40"> | [vArmour Application Controller](solutions/varmour-application-controller.md) | 2022-06-01 | ⚪ Very Low (0%) | vArmour Networks |
@@ -668,7 +672,7 @@ Browse solutions alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/foxy-mark.svg" alt="" width="40" height="40"> | [ZeroFoxAlerts](solutions/zerofoxalerts.md) ⚠️ | 2026-04-01 |  | ZeroFox |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZeroNetworks.svg" alt="" width="40" height="40"> | [ZeroNetworks](solutions/zeronetworks.md) | 2022-06-06 | 🟡 Low (48%) | Zero Networks |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [ZeroTrust(TIC3.0)](solutions/zerotrust-tic3.0.md) | 2021-10-20 | ⚪ Very Low (0%) | Microsoft Corporation |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_square2.svg" alt="" width="40" height="40"> | [Zimperium Mobile Threat Defense](solutions/zimperium-mobile-threat-defense.md) | 2022-05-02 | ⚪ Very Low (0%) | Zimperium |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZIMPERIUM-logo_orange.svg" alt="" width="40" height="40"> | [Zimperium Mobile Threat Defense](solutions/zimperium-mobile-threat-defense.md) | 2022-05-02 | ⚪ Very Low (0%) | Zimperium |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Zinc Open Source](solutions/zinc-open-source.md) | 2022-10-03 | ⚪ Very Low (0%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [ZoomReports](solutions/zoomreports.md) | 2022-05-23 | 🟡 Low (14%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZscalerLogo.svg" alt="" width="40" height="40"> | [Zscaler Internet Access](solutions/zscaler-internet-access.md) | 2022-10-10 |  | Zscaler |

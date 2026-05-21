@@ -15,6 +15,15 @@ This query identifies A365 AI agents that are shared publicly. Such configuratio
 | **ID** | `8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f` |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AI%20Agents/A365%20Connector/AIAgentsPubliclyShared.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`AIAgentsInfo`](../tables/aiagentsinfo.md) | `RegistrySource == "A365"` | ? | ✗ | ? |
+| [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

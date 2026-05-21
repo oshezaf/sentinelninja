@@ -14,9 +14,10 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (110 columns)
+## Schema (111 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHETierZeroAssetsData_CL.json)
 
@@ -120,6 +121,7 @@
 | tier_zero_active_assets_count | int |
 | tier_zero_exposure_percent | real |
 | tier_zero_total_assets_count | int |
+| TimeGenerated | datetime |
 | Title | string |
 | trustedtoauth | bool |
 | unconstraineddelegation | bool |
@@ -138,6 +140,14 @@
 This table is used by the following solutions:
 
 - [BloodHound Enterprise](../solutions/bloodhound-enterprise.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) |  |
 
 ---
 

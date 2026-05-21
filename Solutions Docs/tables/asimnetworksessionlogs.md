@@ -196,24 +196,30 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 | [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md) | `EventProduct == "Windows Firewall"` |
-| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
-| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
+| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
+| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
+
+**GitHub Only:** `DstPortNumber == "3389"`<br>`DvcAction in "Allow,Drop"`<br>`EventProduct == "Windows Firewall"`<br>`SrcIpAddr !in "::1,-"`
+
+| Workbook |
+|:-------------|
+| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |
 
 ## Parsers Using This Table (2)
 
@@ -235,24 +241,20 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/networksessionnormalized`
 
-## Selection Criteria Summary (4 criteria, 5 total references)
+## Selection Criteria Summary (2 criteria, 2 total references)
 
-References by type: 4 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 2 | - | - | - | **2** |
-| `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
 | `EventType in "EndpointNetworkSession,L2NetworkSession"` | - | - | 1 | - | **1** |
-| **Total** | **4** | **0** | **1** | **0** | **5** |
+| **Total** | **1** | **0** | **1** | **0** | **2** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Carbon Black Cloud` | `VMWare` | 2 | - | - | - | **2** |
-| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 | `Windows Firewall` |  | 1 | - | - | - | **1** |
 
 ### EventType

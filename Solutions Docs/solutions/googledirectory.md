@@ -1,6 +1,6 @@
-# ⚠️ GoogleDirectory
+# GoogleDirectory
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="GoogleDirectory Logo" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -10,9 +10,24 @@
 
 | Attribute | Value |
 |:------------------------|:------|
-| **Publisher** |  |
-| **Support Tier** |  |
+| **Publisher** | Microsoft Corporation |
+| **Support Tier** | Microsoft |
+| **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
+| **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Microsoft - support@microsoft.com |
+| **First Published** | 2026-05-15 |
+| **Last Updated** | 2026-05-19 |
 | **Solution Folder** | [GoogleDirectory](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleDirectory) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gd) · Popularity: ⚪ Very Low (0%) |
+
+The Google Directory API Connector and associated Playbooks enable automated Google Workspace identity and access response actions from Microsoft Sentinel. These integrations support user context enrichment, active session termination, and account suspension workflows to streamline security operations and incident response.
+
+ For more information about common tasks, see the [User Accounts Developer's Guide](https://developers.google.com/workspace/admin/directory/v1/guides/manage-users.html) and the [User Aliases Developer's Guide](https://developers.google.com/workspace/admin/directory/v1/guides/manage-user-aliases.html).
+
+ This custom connector connects to [Google Directory Users API](https://developers.google.com/admin-sdk/directory/reference/rest/v1/users).
+
+ For more information about the Playbooks, refer to the documentation for each Playbook.
 
 ## Data Connectors
 
@@ -22,21 +37,25 @@ This solution may contain other components such as analytics rules, workbooks, h
 
 ## Content Items
 
-This solution includes **3 content item(s)** (0 in solution, 3 discovered 🔍):
+This solution includes **3 content item(s)**:
 
-| Content Type | Total | In Solution | Discovered |
-|:-------------|------:|------------:|-----------:|
-| Playbooks | 3 | 0 | 3 |
+| Content Type | Count |
+|:-------------|:------|
+| Playbooks | 3 |
 
 ### Playbooks
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [Google Directory - Enrich Incident With User Info](../content/googledirectory-google-directory-enrich-incident-with-user-info-b9764ee5.md) ⚠️ | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [Google Directory - Sign Out User](../content/googledirectory-google-directory-sign-out-user-d3f73d66.md) ⚠️ | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
-| [Google Directory - Suspend User](../content/googledirectory-google-directory-suspend-user-ed8afb0c.md) ⚠️ | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Google Directory - Enrich Incident With User Info](../content/googledirectory-google-directory-enrich-incident-with-user-info-b9764ee5.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Google Directory - Sign Out User](../content/googledirectory-google-directory-sign-out-user-d3f73d66.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
+| [Google Directory - Suspend User](../content/googledirectory-google-directory-suspend-user-ed8afb0c.md) | Once a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the fol... | - |
 
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
+## Release Notes
+
+**Version** | **Date Modified (DD-MM-YYYY)**| **ChangeHistory**                                                                         |
+|------------|-------------------------------|-------------------------------------------------------------------------------------------|
+| 3.0.0      | 15-05-2026                    | Initial Solution Release                             |
 
 ---
 

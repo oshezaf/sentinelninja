@@ -8,14 +8,14 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 
 | Resource | Count | Details |
 |:---------|------:|:--------|
-| [Solutions](solutions-index.md) | 522 | 414 with connectors, 420 with content |
-| [Connectors](connectors-index.md) | 612 | Data ingestion methods |
-| [Methods](methods-index.md) | 13 | Data collection methods |
-| [Tables](tables-index.md) | 1958 | Log Analytics tables |
-| [Content](content/content-index.md) | 6,005 | Analytics, hunting, playbooks, workbooks |
-| [Parsers](parsers/parsers-index.md) | 549 | Non-ASIM KQL functions |
-| [ASIM Parsers](asim/asim-index.md) | 105 pairs | Normalized schema parsers |
-| [ASIM Products](asim/asim-products-index.md) | 92 | Products with ASIM support |
+| [Solutions](solutions-index.md) | 526 | 411 with connectors, 420 with content |
+| [Connectors](connectors-index.md) | 615 | Data ingestion methods |
+| [Methods](methods-index.md) | 12 | Data collection methods |
+| [Tables](tables-index.md) | 1976 | Log Analytics tables |
+| [Content](content/content-index.md) | 6,038 | Analytics, hunting, playbooks, workbooks |
+| [Parsers](parsers/parsers-index.md) | 547 | Non-ASIM KQL functions |
+| [ASIM Parsers](asim/asim-index.md) | 106 pairs | Normalized schema parsers |
+| [ASIM Products](asim/asim-products-index.md) | 94 | Products with ASIM support |
 | [Statistics](statistics.md) | - | Comprehensive statistics and metrics |
 | [Interactive Index](https://oshezaf.github.io/sentinelninja/index.html) | - | Sortable/filterable HTML view |
 

@@ -14,6 +14,7 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
 ## Schema (16 columns)
@@ -44,6 +45,14 @@
 This table is used by the following solutions:
 
 - [BloodHound Enterprise](../solutions/bloodhound-enterprise.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) |  |
 
 ---
 

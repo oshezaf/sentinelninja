@@ -41,7 +41,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](../connectors/bitglass.md) 🔶 | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
-| [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | SpecterOps | 1 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶 | Cisco | 12 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | Cisco | 12 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶 | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |

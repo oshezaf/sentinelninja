@@ -32,7 +32,7 @@ The BloodHound Enterprise Microsoft Sentinel solution ingests your BloodHound En
 
 This solution provides **1 data connector(s)**:
 
-- [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md)
+- [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md)
 
 ## Tables Used
 
@@ -40,12 +40,12 @@ This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | [Bloodhound Enterprise](../connectors/bloodhoundenterprise.md) | Analytics, Workbooks |
-| [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | - | Workbooks |
-| [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md) | - | Workbooks |
-| [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md) | - | Workbooks |
-| [`BHEPostureHistoryData_CL`](../tables/bheposturehistorydata-cl.md) | - | Workbooks |
-| [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md) | - | Workbooks |
+| [`BHEAttackPathsData_CL`](../tables/bheattackpathsdata-cl.md) | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | Analytics, Workbooks |
+| [`BHEAttackPathsTimelineData_CL`](../tables/bheattackpathstimelinedata-cl.md) | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | Workbooks |
+| [`BHEAuditLogsData_CL`](../tables/bheauditlogsdata-cl.md) | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | Workbooks |
+| [`BHEFindingTrendsData_CL`](../tables/bhefindingtrendsdata-cl.md) | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | Workbooks |
+| [`BHEPostureHistoryData_CL`](../tables/bheposturehistorydata-cl.md) | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | Workbooks |
+| [`BHETierZeroAssetsData_CL`](../tables/bhetierzeroassetsdata-cl.md) | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | Workbooks |
 
 ## Content Items
 

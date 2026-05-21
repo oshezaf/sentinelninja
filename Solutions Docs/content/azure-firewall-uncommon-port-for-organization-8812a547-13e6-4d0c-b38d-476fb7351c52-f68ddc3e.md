@@ -13,7 +13,8 @@ Identifies abnormal ports used in the organization based on learning period acti
 | **Type** | Hunting Query |
 | **Solution** | [Azure Firewall](../solutions/azure-firewall.md) |
 | **ID** | `8812a547-13e6-4d0c-b38d-476fb7351c52` |
-| **Tactics** | Defense Evasion, Exfiltration, CommandAndControl |
+| **Tactics** | Exfiltration, CommandAndControl |
+| **Techniques** | T1571, T1048 |
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Hunting%20Queries/Azure%20Firewall%20-%20Uncommon%20Port%20for%20Organization.yaml) |
 

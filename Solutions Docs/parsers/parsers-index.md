@@ -8,7 +8,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 ---
 
-**564 parsers** (35 legacy, 493 solution, 36 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**562 parsers** (35 legacy, 493 solution, 34 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 *Legacy parsers are located in the top-level `/Parsers` folder. Solution parsers are included within specific solution packages.*
 
@@ -96,7 +96,6 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ArmisDevice](armisdevice.md) | 📦 [Armis](../solutions/armis.md) | Armis_Devices_CL |
 | [ArubaClearPass](arubaclearpass.md) | 📦 [Aruba ClearPass](../solutions/aruba-clearpass.md) | CommonSecurityLog |
 | [ASimAuthenticationOpenSystems](asimauthenticationopensystems.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsAuthenticationLogs_CL |
-| [ASimDnsMicrosoftNXLog](asimdnsmicrosoftnxlog.md) | 📦 [NXLogDNSLogs](../solutions/nxlogdnslogs.md) | ? |
 | [ASimNetworkSessionOpenSystemsFirewall](asimnetworksessionopensystemsfirewall.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
 | [ASimWebSessionOpenSystemsSecureWebGateway](asimwebsessionopensystemssecurewebgateway.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
 | [AssignedIPAddress](assignedipaddress.md) | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | DeviceNetworkInfo |
@@ -358,7 +357,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
-| [ElasticAgentEvent](elasticagentevent.md) ⚠️ | 📦 [ElasticAgent](../solutions/elasticagent.md) | ElasticAgentLogs_CL |
+| [ElasticAgentEvent](elasticagentevent.md) | 📦 [ElasticAgent](../solutions/elasticagent.md) | ElasticAgentLogs_CL |
 | [ESETPROTECT](esetprotect.md) | 📦 [ESETPROTECT](../solutions/esetprotect.md) | Syslog |
 | [ESETProtectPlatform](esetprotectplatform.md) | 📦 [ESET Protect Platform](../solutions/eset-protect-platform.md) | IntegrationTable_CL |
 | [EventIncident](eventincident.md) | 📦 [Netskopev2](../solutions/netskopev2.md) | eventsincidentdata_CL |
@@ -396,11 +395,11 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [getForgeRockUsers](getforgerockusers.md) ⚠️ | 📦 [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) | CommonSecurityLog |
 | [GitHubAudit](githubaudit.md) | 📂 *Legacy* | GitHub_CL |
 | [GitHubAuditData](githubauditdata.md) | 📦 [GitHub](../solutions/github.md) | GitHubAuditLogPolling_CL, GitHubAuditLogsV2_CL |
-| [GitHubCodeScanningData](githubcodescanningdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
-| [GitHubDependabotData](githubdependabotdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
+| [GitHubCodeScanningData](githubcodescanningdata.md) | 📦 [GitHub](../solutions/github.md) | ? |
+| [GitHubDependabotData](githubdependabotdata.md) | 📦 [GitHub](../solutions/github.md) | ? |
 | [GitHubRepo](githubrepo.md) | 📂 *Legacy* | GitHubRepoLogs_CL |
 | [githubscanaudit](githubscanaudit.md) | 📦 [GitHub](../solutions/github.md) | GitHubAdvancedSecurityAlerts_CL, githubscanaudit_CL |
-| [GitHubSecretScanningData](githubsecretscanningdata.md) | 📦 [GitHub](../solutions/github.md) | githubscanaudit_CL |
+| [GitHubSecretScanningData](githubsecretscanningdata.md) | 📦 [GitHub](../solutions/github.md) | ? |
 | [GitLabAccess](gitlabaccess.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
 | [GitLabApp](gitlabapp.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
 | [GitLabAudit](gitlabaudit.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
@@ -542,7 +541,6 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [NetwrixAuditor](netwrixauditor.md) | 📦 [Netwrix Auditor](../solutions/netwrix-auditor.md) | CommonSecurityLog |
 | [NGINXHTTPServer](nginxhttpserver.md) | 📦 [NGINX HTTP Server](../solutions/nginx-http-server.md) | NGINX_CL |
 | [NozomiNetworksEvents](nozominetworksevents.md) | 📦 [NozomiNetworks](../solutions/nozominetworks.md) | CommonSecurityLog |
-| [NXLog_parsed_AIX_Audit_view](nxlog-parsed-aix-audit-view.md) ⚠️ | 📦 [NXLogAixAudit](../solutions/nxlogaixaudit.md) | AIX_Audit_CL |
 
 ## O
 
@@ -601,7 +599,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [SophosXGFirewall](sophosxgfirewall.md) | 📦 [Sophos XG Firewall](../solutions/sophos-xg-firewall.md) | Syslog |
 | [SQLServer_Parser](sqlserver-parser.md) | 📂 *Legacy* | Event |
 | [SquidProxy](squidproxy.md) | 📦 [SquidProxy](../solutions/squidproxy.md) | SquidProxy_CL |
-| [StealthDefend](stealthdefend.md) | 📂 *Legacy* | CommonSecurityLog |
+| [StealthBits StealthDefend Parser](stealthbits-stealthdefend-parser.md) | 📂 *Legacy* | CommonSecurityLog |
 | [StealthwatchEvent](stealthwatchevent.md) | 📦 [Cisco Secure Cloud Analytics](../solutions/cisco-secure-cloud-analytics.md) | Syslog |
 | [SymantecDLP](symantecdlp.md) | 📦 [Broadcom SymantecDLP](../solutions/broadcom-symantecdlp.md) | CommonSecurityLog |
 | [SymantecEndpointProtection](symantecendpointprotection.md) | 📦 [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) | Syslog |

@@ -19,7 +19,7 @@
 <p>This index organizes ASIM parsers by the product or data source they normalize. Use this view to find ASIM support for a specific product, including which schemas are supported and which tables contain the source data.</p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <strong>ASIM Products</strong> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <hr />
-<p><strong>92 products</strong> with 90 source parser pairs covering 11 schemas. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>94 products</strong> with 91 source parser pairs covering 11 schemas. See <a href="../statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <h2 id="products-overview">Products Overview</h2>
 <table>
 <thead>
@@ -150,6 +150,12 @@
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">4</td>
 <td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#cisco-secure-endpoint">Cisco Secure Endpoint</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="#cisco-umbrella">Cisco Umbrella</a></td>
@@ -533,6 +539,12 @@
 <td style="text-align: left;"><a href="#vmware-carbon-black-cloud">VMware Carbon Black Cloud</a></td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="#vmware-esxi">VMware ESXi</a></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
 <td style="text-align: right;">3</td>
 </tr>
 <tr>
@@ -1139,6 +1151,28 @@
 </tr>
 </tbody>
 </table>
+<h2 id="cisco-secure-endpoint">Cisco Secure Endpoint</h2>
+<p><strong>Schemas:</strong> AlertEvent</p>
+<p><strong>Tables:</strong> <a href="../tables/ciscosecureendpointeventsv2-cl.html">CiscoSecureEndpointEventsV2_CL</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimalerteventciscosecureendpoint.html">ASimAlertEventCiscoSecureEndpoint</a><br>vim: <a href="vimalerteventciscosecureendpoint.html">vimAlertEventCiscoSecureEndpoint</a></td>
+<td style="text-align: left;">AlertEvent</td>
+<td style="text-align: left;"><a href="../tables/ciscosecureendpointeventsv2-cl.html">CiscoSecureEndpointEventsV2_CL</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="cisco-umbrella">Cisco Umbrella</h2>
 <p><strong>Schemas:</strong> Dns, WebSession</p>
 <p><strong>Tables:</strong> <a href="../tables/cisco-umbrella-dns-cl.html">Cisco_Umbrella_dns_CL</a>, <a href="../tables/cisco-umbrella-proxy-cl.html">Cisco_Umbrella_proxy_CL</a></p>
@@ -1673,7 +1707,7 @@
 <td style="text-align: left;">ASim: <a href="asimprocesseventmicrosoft365d.html">ASimProcessEventMicrosoft365D</a><br>vim: <a href="vimprocesseventmicrosoft365d.html">vimProcessEventMicrosoft365D</a></td>
 <td style="text-align: left;">ProcessEvent</td>
 <td style="text-align: left;"><a href="../tables/deviceprocessevents.html">DeviceProcessEvents</a></td>
-<td style="text-align: left;">0.3.0</td>
+<td style="text-align: left;">0.3.1</td>
 </tr>
 </tbody>
 </table>
@@ -2937,6 +2971,28 @@
 </tr>
 </tbody>
 </table>
+<h2 id="vmware-esxi">VMware ESXi</h2>
+<p><strong>Schemas:</strong> Authentication</p>
+<p><strong>Tables:</strong> <a href="../tables/avsesxisyslog.html">AVSEsxiSyslog</a>, <a href="../tables/avssyslog.html">AVSSyslog</a>, <a href="../tables/syslog.html">Syslog</a></p>
+<h3 id="parsers">Parsers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Tables</th>
+<th style="text-align: left;">Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ASim: <a href="asimauthenticationvmwareesxi.html">ASimAuthenticationVMwareESXi</a><br>vim: <a href="vimauthenticationvmwareesxi.html">vimAuthenticationVMwareESXi</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;"><a href="../tables/avsesxisyslog.html">AVSEsxiSyslog</a>, <a href="../tables/avssyslog.html">AVSSyslog</a>, <a href="../tables/syslog.html">Syslog</a></td>
+<td style="text-align: left;">0.1.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="vmware-vcenter">VMware vCenter</h2>
 <p><strong>Schemas:</strong> Authentication</p>
 <p><strong>Tables:</strong> <a href="../tables/avsvcsyslog.html">AVSVcSyslog</a>, <a href="../tables/vcenter-cl.html">vcenter_CL</a></p>
@@ -2955,7 +3011,7 @@
 <td style="text-align: left;">ASim: <a href="asimauthenticationvmwarevcenter.html">ASimAuthenticationVMwareVCenter</a><br>vim: <a href="vimauthenticationvmwarevcenter.html">vimAuthenticationVMwareVCenter</a></td>
 <td style="text-align: left;">Authentication</td>
 <td style="text-align: left;"><a href="../tables/avsvcsyslog.html">AVSVcSyslog</a>, <a href="../tables/vcenter-cl.html">vcenter_CL</a></td>
-<td style="text-align: left;">0.1.1</td>
+<td style="text-align: left;">0.1.2</td>
 </tr>
 </tbody>
 </table>

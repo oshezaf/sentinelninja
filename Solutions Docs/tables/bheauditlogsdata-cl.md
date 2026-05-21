@@ -14,9 +14,10 @@
 
 - [Schema](#schema)
 - [Solutions](#solutions)
+- [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (12 columns)
+## Schema (13 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/BHEAuditLogsData_CL.json)
 
@@ -34,12 +35,21 @@
 | source_ip_address | string |
 | status | string |
 | tenant_url | string |
+| TimeGenerated | datetime |
 
 ## Solutions (1)
 
 This table is used by the following solutions:
 
 - [BloodHound Enterprise](../solutions/bloodhound-enterprise.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) |  |
 
 ---
 

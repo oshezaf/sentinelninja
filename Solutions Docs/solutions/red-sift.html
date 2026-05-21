@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Red Sift &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="red-sift">⚠️ Red Sift</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/redsift_logo.svg" alt="Red Sift Logo" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Red Sift</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.redsift.com/contact">https://www.redsift.com/contact</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">domains</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Red Sift - support@redsift.com</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2026-04-10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">2026-04-10</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift">Red Sift</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://redsift.com/">Red Sift</a> solution for Microsoft Sentinel provides the capability to ingest authentication events from Red Sift Pulse and email forensics events from OnDMARC into your Microsoft Sentinel workspace using the Codeless Connector Framework (CCF) Push pattern.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/overview">Microsoft Sentinel</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/overview">Azure Monitor</a></p>
+<p>c. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Codeless Connector Framework</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/redsiftpush.html">Red Sift Events (CCP Push)</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../tables/redsiftauth-cl.html"><code>RedSiftAuth_CL</code></a></td>
+<td><a href="../connectors/redsiftpush.html">Red Sift Events (CCP Push)</a></td>
+<td>Analytics</td>
+</tr>
+<tr>
+<td><a href="../tables/redsiftemailforensics-cl.html"><code>RedSiftEmailForensics_CL</code></a></td>
+<td><a href="../connectors/redsiftpush.html">Red Sift Events (CCP Push)</a></td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: left;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Analytic Rules</td>
+<td style="text-align: left;">5</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Severity</th>
+<th style="text-align: left;">Tactics</th>
+<th style="text-align: left;">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../content/red-sift-red-sift-email-with-url-to-previously-unseen-domain-8972b513-12a2-4b46-8263-3f091d88a8bc-3eb79665.html">Red Sift - Email with URL to previously unseen domain</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/redsiftemailforensics-cl.html"><code>RedSiftEmailForensics_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/red-sift-red-sift-login-from-previously-unseen-ip-address-c3d4e5f6-a7b8-9012-cdef-123456789012-17a3cf45.html">Red Sift - Login from previously unseen IP address</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/redsiftauth-cl.html"><code>RedSiftAuth_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/red-sift-red-sift-mfa-disabled-on-account-16f26d2c-6296-490b-af4f-b30bcf1c4461-c60400fe.html">Red Sift - MFA disabled on account</a></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">DefenseEvasion</td>
+<td style="text-align: left;"><a href="../tables/redsiftauth-cl.html"><code>RedSiftAuth_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/red-sift-red-sift-new-email-with-url-from-previously-unseen-sender-6e0b70d4-0ab8-480e-9707-8ad45fc21a65-b32b0a35.html">Red Sift - New email with URL from previously unseen sender</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/redsiftemailforensics-cl.html"><code>RedSiftEmailForensics_CL</code></a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="../content/red-sift-red-sift-new-email-with-url-from-previously-unseen-source-6084dfd8-830b-4839-9a9c-5f08cc984729-91610c56.html">Red Sift - New email with URL from previously unseen source</a></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">InitialAccess</td>
+<td style="text-align: left;"><a href="../tables/redsiftemailforensics-cl.html"><code>RedSiftEmailForensics_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.0</td>
+<td>10-04-2026</td>
+<td>Initial release with <strong>CCF Data Connector</strong> and 5 <strong>Analytic Rules</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+</div>
+
+</body>
+</html>

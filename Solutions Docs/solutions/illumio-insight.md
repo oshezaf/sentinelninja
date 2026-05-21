@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.illumio.com/support/support](https://www.illumio.com/support/support) |
 | **Categories** | domains |
-| **Version** | 3.3.2 |
+| **Version** | 3.3.3 |
 | **Author** | Microsoft |
 | **First Published** | 2025-08-10 |
 | **Last Updated** | 2025-12-14 |
@@ -27,17 +27,19 @@ The Illumio Insights data connector allows ingesting logs from the Illumio API i
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)**:
+This solution provides **3 data connector(s)**:
 
 - [Illumio Insights](../connectors/illumioinsightsdefinition.md)
 - [Illumio Insights Summary](../connectors/illumioinsightssummaryccp.md)
+- [Illumio Insights Graph](../connectors/sentinelillumioinsightsgraphccp.md)
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`IllumioInsightsGraph_CL`](../tables/illumioinsightsgraph-cl.md) | [Illumio Insights Graph](../connectors/sentinelillumioinsightsgraphccp.md) | - |
 | [`IllumioInsightsSummary_CL`](../tables/illumioinsightssummary-cl.md) | [Illumio Insights Summary](../connectors/illumioinsightssummaryccp.md) | - |
 | [`IllumioInsights_CL`](../tables/illumioinsights-cl.md) | [Illumio Insights](../connectors/illumioinsightsdefinition.md) | - |
 
@@ -45,6 +47,7 @@ This solution uses **2 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                  |
 |-------------|--------------------------------|-----------------------------------------------------|
+| 3.3.3      | 17-05-2026                 | Description , Polling api and Table columns changes for **CCF Data Connector**
 |3.3.2      | 29-09-2025                 | Dsecription , Instruction changes for **CCF Data Connector** , changing ps script to change desriptions in UiDefnition
 | 3.3.1       | 12-09-2025                     | Adding iIlumio InsightsSummary **CCF Data Connector** to Illumio Insights Solution, changing URL of Illumio Resources to `gw.console.illum.io` |
 | 3.0.0       | 10-08-2025                     | Corrected the links in the solution.  	             |

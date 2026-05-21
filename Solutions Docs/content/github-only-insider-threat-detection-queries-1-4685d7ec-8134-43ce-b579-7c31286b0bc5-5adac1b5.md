@@ -17,6 +17,14 @@ Intent: - Use MTP capability to look for insider threat potential risk indicator
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/General%20queries/insider-threat-detection-queries%20%281%29.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `FolderPath matchesregex ".*Confidential|Restricted.*"`<br>`InitiatingProcessFileName in "7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe"` | ✓ | ✗ | ? |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

@@ -6,7 +6,7 @@
 
 ---
 
-This playbook monitors all data received from Firework looking for leaked credentials (email:password combinations). When found, this playbook will send an email to the email address warning their password has been leaked, recommending appropriate measures if necessary. To learn more about how to connect Firework to Microsoft Sentinel, see the [API documentation](https://docs.flared.io/azure-sentinel-integration).
+**This playbook is deprecated and will be replaced in a future update. Functionality may be limited or unavailable.** This playbook monitors all data received from Firework looking for leaked credentials (email:password combinations). When found, this playbook will send an email to the email address warning their password has been leaked, recommending appropriate measures if necessary. To learn more about how to connect Firework to Microsoft Sentinel, see the [official documentation](https://doc
 
 | Attribute | Value |
 |:----------|:------|

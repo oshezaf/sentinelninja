@@ -6,7 +6,7 @@
 
 ---
 
-Detects policy violations.
+Detects Claroty policy violation events from ClarotyEvent when EventOriginalType or EventType contains 'Policy Violation'. Use this rule to identify policy enforcement events that may indicate unauthorized discovery or prohibited network activity. This rule expects ClarotyEvent data to be available in the workspace.
 
 | Attribute | Value |
 |:----------|:------|
@@ -17,7 +17,7 @@ Detects policy violations.
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Discovery |
-| **Techniques** | T1018 |
+| **Techniques** | T1018, T1135 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Analytic%20Rules/ClarotyPolicyViolation.yaml) |
 

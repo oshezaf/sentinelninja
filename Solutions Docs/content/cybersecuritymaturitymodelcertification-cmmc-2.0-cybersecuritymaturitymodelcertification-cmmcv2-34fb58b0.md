@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallApplicationRule"` | ? | ✗ | ? |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
 | [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ | ? |
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "FileCreated,UsbDriveMounted"` | ✓ | ✗ | ? |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | ✓ | ✗ | ? |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`Event`](../tables/event.md) | `RenderedDescription contains "Hello"` | ✓ | ✓ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 |  | ? | ✓ | ? |

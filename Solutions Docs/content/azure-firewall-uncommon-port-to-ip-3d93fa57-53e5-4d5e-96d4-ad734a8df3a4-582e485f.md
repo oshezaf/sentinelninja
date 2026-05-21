@@ -6,7 +6,7 @@
 
 ---
 
-Identifies abnormal ports used by machines to connect to a destination IP based on learning period activity. This can indicate exfiltration attack or C2 control from machines in the organization by using new a port that has never been used.
+Identifies abnormal ports used by machines to connect to a destination IP based on learning period activity. This can indicate exfiltration attack or C2 control from machines in the organization by using a new port.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,6 +14,7 @@ Identifies abnormal ports used by machines to connect to a destination IP based 
 | **Solution** | [Azure Firewall](../solutions/azure-firewall.md) |
 | **ID** | `3d93fa57-53e5-4d5e-96d4-ad734a8df3a4` |
 | **Tactics** | Exfiltration, CommandAndControl |
+| **Techniques** | T1571, T1048 |
 | **Required Connectors** | [AzureFirewall](../connectors/azurefirewall.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Hunting%20Queries/Azure%20Firewall%20-%20Uncommon%20Port%20to%20IP.yaml) |
 

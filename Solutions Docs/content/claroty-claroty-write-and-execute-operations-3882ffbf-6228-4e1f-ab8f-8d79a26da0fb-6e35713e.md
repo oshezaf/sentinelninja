@@ -13,9 +13,9 @@ Query searches for operations with Write and Execute accesses.
 | **Type** | Hunting Query |
 | **Solution** | [Claroty](../solutions/claroty.md) |
 | **ID** | `3882ffbf-6228-4e1f-ab8f-8d79a26da0fb` |
-| **Severity** | Medium |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Status** | Available |
+| **Tactics** | InitialAccess, Execution, Impact |
+| **Techniques** | T1190, T1204, T1106 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotyWriteExecuteOperations.yaml) |
 

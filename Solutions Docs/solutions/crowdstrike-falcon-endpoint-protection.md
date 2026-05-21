@@ -119,8 +119,8 @@ This solution includes **10 content item(s)** (9 in solution, 1 discovered 🔍)
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
-| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | - | - |
+| [Critical Severity Detection](../content/crowdstrike-falcon-endpoint-protection-critical-severity-detection-f7d298b2-726c-42a5-bbac-0d7f9950f527-d91689ae.md) | High | Execution, Impact | [`CommonSecurityLog`](../tables/commonsecuritylog.md) |
+| [Critical or High Severity Detections by User](../content/crowdstrike-falcon-endpoint-protection-critical-or-high-severity-detections-by-user-4465ebde-b381-45f7-ad08-7d818070a11c-be3ff818.md) | High | Impact, DefenseEvasion | - |
 
 ### Workbooks
 

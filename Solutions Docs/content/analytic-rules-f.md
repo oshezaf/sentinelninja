@@ -1,6 +1,6 @@
 # Analytic Rules - F
 
-**48 analytic rules** starting with 'F'.
+**49 analytic rules** starting with 'F'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -42,14 +42,16 @@
 | [Firewall rule manipulation attempts stateful anomaly on database](azure-sql-database-solution-for-sentinel-firewall-rule-manipulation-attempts-stateful-anomaly-on-databas-05030ca6-ef66-42ca-b672-2e84d4aaf5d7-c6bd8fb4.md) | Medium | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Firmware Updates (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-firmware-updates-microsoft-defender-for-iot-7cad4b66-5e83-4756-8de4-f21315ab1e77-3b526082.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [First access credential added to Application or Service Principal where no credential was present](microsoft-entra-id-first-access-credential-added-to-application-or-service-principal-where-no-credential-2cfc3c6e-f424-4b88-9cc9-c89f482d016a-ec11980a.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-| [Flare Cloud bucket result](flare-flare-cloud-bucket-result-9cb7c337-f172-4af6-b0e8-b6b7552d762d-271a57e6.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flare Google Dork result found](flare-flare-google-dork-result-found-9cb7c337-f174-4af6-b0e8-b6b7552d762d-840d1848.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flare Host result](flare-flare-host-result-9cb7c337-f175-4af6-b0e8-b6b7552d762d-ff5f9a5f.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flare Infected Device](flare-flare-infected-device-9cb7c337-f176-4af6-b0e8-b6b7552d762d-3c772b70.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flare Leaked Credentials](flare-flare-leaked-credentials-9cb7c337-f170-4af6-b0e8-b6b7552d762d-a455dcf6.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flare Paste result](flare-flare-paste-result-9cb7c337-f177-4af6-b0e8-b6b7552d762d-18a2af71.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flare Source Code found](flare-flare-source-code-found-9cb7c337-f178-4af6-b0e8-b6b7552d762d-4e606f91.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flare SSL Certificate result](flare-flare-ssl-certificate-result-9cb7c337-f179-4af6-b0e8-b6b7552d762d-0725723f.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare chat results](flare-flare-chat-results-76210211-3ade-47b6-b7f2-c871cd05ec43-5e65d8c7.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare cloud bucket results](flare-flare-cloud-bucket-results-9cb7c337-f172-4af6-b0e8-b6b7552d762d-2b70bb23.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare google dork results](flare-flare-google-dork-results-9cb7c337-f174-4af6-b0e8-b6b7552d762d-298023cb.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare host results](flare-flare-host-results-9cb7c337-f175-4af6-b0e8-b6b7552d762d-ffdb44ac.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare infected device results](flare-flare-infected-device-results-9cb7c337-f176-4af6-b0e8-b6b7552d762d-d6cc2fc5.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare leaked credentials results](flare-flare-leaked-credentials-results-9cb7c337-f170-4af6-b0e8-b6b7552d762d-ae131a18.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare lookalike domain results](flare-flare-lookalike-domain-results-8e5ae0d6-7f2d-475e-ada3-ed33441deeba-8cc368fa.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare marketplace results](flare-flare-marketplace-results-9265ae4d-6bb0-4c18-961d-f7aae67d1546-78fb8e2f.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare paste results](flare-flare-paste-results-9cb7c337-f177-4af6-b0e8-b6b7552d762d-9f498bb5.md) | Medium | 📦 [Flare](../solutions/flare.md) |
+| [Flare source code results](flare-flare-source-code-results-9cb7c337-f178-4af6-b0e8-b6b7552d762d-c8c5f322.md) | Medium | 📦 [Flare](../solutions/flare.md) |
 | [Flow Logs Alerts for Prancer](prancer-pensuiteai-integration-flow-logs-alerts-for-prancer-59336232-1bbc-4f66-90dd-5ac3708e4405-d4069eb4.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Forescout-DNS_Sniff_Event_Monitor](forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e-39ee6063.md) | Medium | 📦 [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Fortinet - Beacon pattern detected](standalone-content-fortinet-beacon-pattern-detected-3255ec41-6bd6-4f35-84b1-c032b18bbfcb-3dd31f10.md) | Low | 📄 Standalone Content |
@@ -60,7 +62,6 @@
 | [Four-Eyes Authorization Request Rejected](veeam-four-eyes-authorization-request-rejected-dfd1d756-623d-4951-84a5-ce51f726d322-7d804843.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Front Door Premium WAF - SQLi Detection](azure-web-application-firewall-waf-front-door-premium-waf-sqli-detection-16da3a2a-af29-48a0-8606-d467c180fe18-3acd0e4e.md) | High | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
 | [Front Door Premium WAF - XSS Detection](azure-web-application-firewall-waf-front-door-premium-waf-xss-detection-b7643904-5081-4920-917e-a559ddc3448f-f46a8943.md) | High | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
-| [Full Admin policy created and then attached to Roles, Users or Groups](amazon-web-services-full-admin-policy-created-and-then-attached-to-roles,-users-or-groups-826bb2f8-7894-4785-9a6b-a8a855d8366f-be654393.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [full_access_as_app Granted To Application](microsoft-entra-id-full-access-as-app-granted-to-application-54e22fed-0ec6-4fb2-8312-2a3809a93f63-6d6d5e9f.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 
 > ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.

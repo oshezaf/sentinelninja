@@ -16,6 +16,12 @@ Reference for SalesforceLoginHistory table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceloginhistory) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
 ## Schema (29 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/salesforceloginhistory)
@@ -51,6 +57,20 @@ Reference for SalesforceLoginHistory table in Azure Monitor Logs.
 | TlsProtocol | string | The TLS protocol used for the login. |
 | Type | string | The name of the table |
 | UserId | string | ID of the user logging in. |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) |  |
 
 ---
 

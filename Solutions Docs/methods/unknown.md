@@ -27,7 +27,7 @@ The collection method for these connectors could not be automatically determined
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [A365 Observability](../connectors/a365.md) | Microsoft | ? | [A365 Observability](../solutions/a365-observability.md) |
+| [Agent 365](../connectors/a365.md) | Microsoft | ? | [Agent 365](../solutions/agent-365.md) |
 | [Azure Resource Graph](../connectors/azureresourcegraph.md) | Microsoft | ? | [Azure Resource Graph](../solutions/azure-resource-graph.md) |
 | [Google Security Command Center](../connectors/googlesccdefinition.md) ➕ | Microsoft | 1 | [Google Cloud Platform Security Command Center](../solutions/google-cloud-platform-security-command-center.md) |
 | [Microsoft Dataverse](../connectors/microsoftdataverse.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |

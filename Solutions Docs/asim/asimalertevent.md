@@ -15,8 +15,8 @@
 | **Schema** | AlertEvent |
 | **Schema Version** | 0.1 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md)) |
-| **Last Updated** | Oct 18, 2024 |
+| **Parser Version** | 0.1.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md)) |
+| **Last Updated** | Mar 04, 2026 |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEvent.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEvent.yaml) |
 
 ## Description
@@ -29,6 +29,7 @@ This union parser includes parsers for the following products:
 
 | Product | Source Parser | Solutions |
 |:--------|:--------------|:----------|
+| Cisco Secure Endpoint | [_ASim_AlertEvent_CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | Microsoft Defender XDR | [_ASim_AlertEvent_MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) |  |
 | SentinelOne | [_ASim_AlertEvent_SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | [SentinelOne (legacy connector)](../solutions/sentinelone.md) |
 

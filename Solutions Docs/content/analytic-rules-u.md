@@ -1,6 +1,6 @@
 # Analytic Rules - U
 
-**47 analytic rules** starting with 'U'.
+**45 analytic rules** starting with 'U'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -26,7 +26,6 @@
 | [Ubiquiti - Unusual traffic](ubiquiti-unifi-ubiquiti-unusual-traffic-31e868c0-91d3-40eb-accc-3fa73aa96f8e-8875bc63.md) | Medium | 📦 [Ubiquiti UniFi](../solutions/ubiquiti-unifi.md) |
 | [Unauthorized device in the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-device-in-the-network-microsoft-defender-for-iot-f4c71e55-6192-47ca-92e2-0856ae502a46-c1fb4a17.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Unauthorized DHCP configuration in the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-dhcp-configuration-in-the-network-microsoft-defende-c52ec521-9188-4a9e-a4cd-34a3dfbc3d27-dbbcfa22.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
-| [Unauthorized EC2 Instance Setup Attempt](amazon-web-services-unauthorized-ec2-instance-setup-attempt-f7210a45-12a4-4d02-b59e-f23476827a4b-d8c84c0d.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Unauthorized PLC changes (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-plc-changes-microsoft-defender-for-iot-c2fb27c7-5f67-49c4-aaf3-d82934234a69-06e12e1b.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Unauthorized remote access to the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-remote-access-to-the-network-microsoft-defender-for-1ff4fa3d-150b-4c87-b733-26c289af0d49-1d4743ff.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Unauthorized user access across AWS and Azure](multi-cloud-attack-coverage-essentials-resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b-6d3ff85e.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
@@ -48,7 +47,6 @@
 | [User agent search for log4j exploitation attempt](apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.md) | High | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [User Assigned New Privileged Role](microsoft-entra-id-user-assigned-new-privileged-role-746ddb63-f51b-4563-b449-a8b13cf302ec-dac38182.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [User assigned to a default admin role](authomize-user-assigned-to-a-default-admin-role-c04ed74c-3b23-48cd-9c11-fd10cffddc64-5d7a4cf8.md) | High | 📦 [Authomize](../solutions/authomize.md) |
-| [User IAM Enumeration](amazon-web-services-user-iam-enumeration-cfaaf0bc-16d1-48df-ac8b-9d901bbd516a-530e5578.md) | Medium | 📦 [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [User impersonation by Identity Protection alerts](multi-cloud-attack-coverage-essentials-resource-abuse-user-impersonation-by-identity-protection-alerts-11c3d541-5fa5-49df-8218-d1c98584473b-06b1ea41.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
 | [User joining Zoom meeting from suspicious timezone](standalone-content-user-joining-zoom-meeting-from-suspicious-timezone-58fc0170-0877-4ea8-a9ff-d805e361cfae-3329dad5.md) | Low | 📄 Standalone Content |
 | [User Login from Different Countries within 3 hours](okta-single-sign-on-user-login-from-different-countries-within-3-hours-2954d424-f786-4677-9ffc-c24c44c6e7d5-965998c8.md) | High | 📦 [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |

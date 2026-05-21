@@ -14,8 +14,8 @@ Query searches for login failure events.
 | **Solution** | [Claroty](../solutions/claroty.md) |
 | **ID** | `917364b7-2925-4c5d-a27c-64137a3b75b5` |
 | **Severity** | High |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | InitialAccess, CredentialAccess |
+| **Techniques** | T1190, T1110.001, T1078 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotySRAFailedLogins.yaml) |
 

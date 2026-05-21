@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**870 playbooks** across all Microsoft Sentinel solutions.
+**874 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -29,6 +29,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [<PlaybookName>](github-only-playbookname-4f698749.md) | 🔗 GitHub Only |
 | [<PlaybookName>](github-only-playbookname-22eeb63a.md) | 🔗 GitHub Only |
 | [<PlaybookName>](github-only-playbookname-f38224c8.md) | 🔗 GitHub Only |
+| [[[Deprecated]] Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](dynatrace-[[deprecated]]-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-16514af7.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
 | [[Deprecated] Intel 471 Malware Intelligence to Graph Security](intel471-[deprecated]-intel-471-malware-intelligence-to-graph-security-7470b626.md) | 📦 [Intel471](../solutions/intel471.md) |
 
 ## A
@@ -50,7 +51,6 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [AD4IoT-SendEmailtoIoTOwner](iototthreatmonitoringwithdefenderforiot-ad4iot-sendemailtoiotowner-726ee92c.md) | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Add Asset to Protection - Zero Networks Segment](zeronetworks-add-asset-to-protection-zero-networks-segment-16e37e2a.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
 | [Add Block Outbound Rule - Zero Networks Acccess Orchestrator](zeronetworks-add-block-outbound-rule-zero-networks-acccess-orchestrator-7ca46c7d.md) | 📦 [ZeroNetworks](../solutions/zeronetworks.md) |
-| [Add Dynatrace Application Security Attack Source IP Address to Threat Intelligence](dynatrace-add-dynatrace-application-security-attack-source-ip-address-to-threat-intelligence-4cd7a68f.md) | 📦 [Dynatrace](../solutions/dynatrace.md) |
 | [Add Host To Watchlist - Alert Trigger](watchlists-utilities-add-host-to-watchlist-alert-trigger-fc569050.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Add Host To Watchlist - Incident Trigger](watchlists-utilities-add-host-to-watchlist-incident-trigger-6dc249a3.md) | 📦 [Watchlists Utilities](../solutions/watchlists-utilities.md) |
 | [Add IP Entity To Named Location](standalone-content-add-ip-entity-to-named-location-93d6bf5a.md) | 📄 Standalone Content |
@@ -279,6 +279,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Cyjax Data Breaches](cyjax-cyjax-data-breaches-9a3f7092.md) | 📦 [Cyjax](../solutions/cyjax.md) |
 | [Cyjax Domain Monitor](cyjax-cyjax-domain-monitor-66e866eb.md) | 📦 [Cyjax](../solutions/cyjax.md) |
 | [Cyjax Incident Enrichment](cyjax-cyjax-incident-enrichment-ce175d04.md) | 📦 [Cyjax](../solutions/cyjax.md) |
+| [Cyren to CrowdStrike IOC Automation](cyren-crowdstrike-threatintelligence-cyren-to-crowdstrike-ioc-automation-635f4db9.md) | 📦 [Cyren-CrowdStrike-ThreatIntelligence](../solutions/cyren-crowdstrike-threatintelligence.md) |
 | [Cyren to SentinelOne IOC Automation](cyren-sentinelone-threatintelligence-cyren-to-sentinelone-ioc-automation-aeb65ff5.md) | 📦 [Cyren-SentinelOne-ThreatIntelligence](../solutions/cyren-sentinelone-threatintelligence.md) |
 
 ## D
@@ -444,9 +445,9 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Google Cloud Platform BigQuery - Create Wtchlist with BigQuery Table Data](google-cloud-platform-bigquery-google-cloud-platform-bigquery-create-wtchlist-with-bigquery-table-data-7936a6b4.md) | 📦 [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
 | [Google Cloud Platform BigQuery - Enrich Incident with BigQuery Table Data](google-cloud-platform-bigquery-google-cloud-platform-bigquery-enrich-incident-with-bigquery-table-data-8f3d12e9.md) | 📦 [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
 | [Google Cloud Platform BigQuery - Query BigQuery Table](google-cloud-platform-bigquery-google-cloud-platform-bigquery-query-bigquery-table-1eef7d07.md) | 📦 [Google Cloud Platform BigQuery](../solutions/google-cloud-platform-bigquery.md) |
-| [Google Directory - Enrich Incident With User Info](googledirectory-google-directory-enrich-incident-with-user-info-b9764ee5.md) ⚠️ | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
-| [Google Directory - Sign Out User](googledirectory-google-directory-sign-out-user-d3f73d66.md) ⚠️ | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
-| [Google Directory - Suspend User](googledirectory-google-directory-suspend-user-ed8afb0c.md) ⚠️ | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
+| [Google Directory - Enrich Incident With User Info](googledirectory-google-directory-enrich-incident-with-user-info-b9764ee5.md) | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
+| [Google Directory - Sign Out User](googledirectory-google-directory-sign-out-user-d3f73d66.md) | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
+| [Google Directory - Suspend User](googledirectory-google-directory-suspend-user-ed8afb0c.md) | 📦 [GoogleDirectory](../solutions/googledirectory.md) |
 | [Google Threat Intelligence - Domain Enrichment](google-threat-intelligence-google-threat-intelligence-domain-enrichment-4dd0e649.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - FileHash Enrichment](google-threat-intelligence-google-threat-intelligence-filehash-enrichment-2c6963ed.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - IOC Enrichment](google-threat-intelligence-google-threat-intelligence-ioc-enrichment-6804cb8a.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
@@ -595,6 +596,9 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Logic Apps Custom Connector and Playbook templates - HaveIBeenPwned](standalone-content-logic-apps-custom-connector-and-playbook-templates-haveibeenpwned-85e96128.md) | 📄 Standalone Content |
 | [Logic Apps Custom Connector and Playbook templates - Palo Alto Wildfire and PAN-OS](standalone-content-logic-apps-custom-connector-and-playbook-templates-palo-alto-wildfire-and-pan-os-0c642dc7.md) | 📄 Standalone Content |
 | [Logic Apps Custom Connectors and Playbook templates - ForcepointNGFW](standalone-content-logic-apps-custom-connectors-and-playbook-templates-forcepointngfw-5a1f7dba.md) | 📄 Standalone Content |
+| [Lookout-DeviceCompliance-Remediation](lookout-lookout-devicecompliance-remediation-91e42a86.md) | 📦 [Lookout](../solutions/lookout.md) |
+| [Lookout-MobileThreat-NotifyAndEnrich](lookout-lookout-mobilethreat-notifyandenrich-24480cec.md) | 📦 [Lookout](../solutions/lookout.md) |
+| [Lookout-SmishingAlert-UserNotify](lookout-lookout-smishingalert-usernotify-6368ad8f.md) | 📦 [Lookout](../solutions/lookout.md) |
 
 ## M
 

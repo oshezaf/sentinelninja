@@ -16,6 +16,7 @@
 - [Schema](#schema)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (28 columns)
@@ -68,6 +69,17 @@ This table is ingested by the following connectors:
 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) |  |
 
 ---
+
+## Content Items Using This Table (2)
+
+### Workbooks (2)
+
+**In solution [GitHub](../solutions/github.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [GitHub](../content/github-github-87916f66.md) |  |
+| [GitHubAdvancedSecurity](../content/github-githubadvancedsecurity-62e1aa58.md) |  |
 
 ## Parsers Using This Table (1)
 

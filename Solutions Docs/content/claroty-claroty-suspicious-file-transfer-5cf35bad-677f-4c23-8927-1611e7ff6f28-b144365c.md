@@ -6,7 +6,7 @@
 
 ---
 
-Detects suspicious file transfer activity.
+Detects Claroty events where EventOriginalType or EventType contains Suspicious File Transfer and maps the destination IP as the primary entity for triage.
 
 | Attribute | Value |
 |:----------|:------|
@@ -16,8 +16,8 @@ Detects suspicious file transfer activity.
 | **Severity** | High |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | Discovery |
-| **Techniques** | T1018 |
+| **Tactics** | Discovery, Exfiltration |
+| **Techniques** | T1018, T1020 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Analytic%20Rules/ClarotySuspiciousFileTransfer.yaml) |
 

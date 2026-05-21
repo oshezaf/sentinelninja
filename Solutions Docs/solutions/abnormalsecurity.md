@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://abnormalsecurity.com/contact](https://abnormalsecurity.com/contact) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.0 |
 | **Author** | AbnormalSecurity - support@abnormalsecurity.com |
 | **First Published** | 2021-10-20 |
 | **Last Updated** | 2026-02-17 |
@@ -46,12 +46,12 @@ This solution uses **11 table(s)**:
 | [`ABNORMAL_SECURITY_ATO_CASE_CL`](../tables/abnormal-security-ato-case-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_SECURITY_AUDIT_LOG_CL`](../tables/abnormal-security-audit-log-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_SECURITY_CASE_CL`](../tables/abnormal-security-case-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
+| [`ABNORMAL_SECURITY_LOGS_CL`](../tables/abnormal-security-logs-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_SECURITY_POSTURE_CHANGE_CL`](../tables/abnormal-security-posture-change-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_SECURITY_REMEDIATION_CL`](../tables/abnormal-security-remediation-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_SECURITY_THREAT_LOG_CL`](../tables/abnormal-security-threat-log-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_SECURITY_VENDOR_CASE_CL`](../tables/abnormal-security-vendor-case-cl.md) 🔶 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 | [`ABNORMAL_THREAT_MESSAGES_CL`](../tables/abnormal-threat-messages-cl.md) 🔶 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) | - |
-| [`AbnormalSecurityLogs_CL`](../tables/abnormalsecuritylogs-cl.md) | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -60,8 +60,7 @@ This solution uses **11 table(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
-| 3.0.1       | 27-04-2026                     | Updated CCF table schemas and DCR transformKql for full MLA column parity: renamed abx_body_* columns to abx_body_abx_body_*, added abx_body_abx_metadata_* columns across all 9 streams, fixed abx_metadata_timestamp type from datetime to string. |
-| 3.0.0       | 04-03-2026                     | Added CCF Push connector with multi-table routing (9 tables), DeployPushConnectorButton, and OAuth 2.0 authentication. Legacy Azure Functions connector retained for backward compatibility. |
+| 3.0.0       | 08-05-2026                     | Added CCF Push connector with multi-table routing (9 tables), DeployPushConnectorButton, and OAuth 2.0 authentication. Legacy Azure Functions connector retained for backward compatibility. <br> Full MLA column parity: renamed abx_body_* columns to abx_body_abx_body_*, added abx_body_abx_metadata_* columns across all 9 streams. Fixed DCR transforms with explicit tostring(abx_body) and tostring(abx_metadata) conversions. Fixed fallback stream to Custom-ABNORMAL_SECURITY_LOGS_CL. Added top-level workspace/tables resources in mainTemplate for direct ARM deployment. |
 | 2.0.1       | 29-06-2023                     | Renaming Azure Function to Azure Functions in **Data Connector** Description and  Updated the python runtime version to 3.11      |
 
 ---

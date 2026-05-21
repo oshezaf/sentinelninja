@@ -6,7 +6,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**92 products** with 90 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**94 products** with 91 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 ## Products Overview
 
@@ -32,6 +32,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Cisco ISE](#cisco-ise) | 4 | 4 | 1 |
 | [Cisco ISE Administrator](#cisco-ise-administrator) | 1 | 1 | 1 |
 | [Cisco Meraki](#cisco-meraki) | 7 | 4 | 2 |
+| [Cisco Secure Endpoint](#cisco-secure-endpoint) | 1 | 1 | 1 |
 | [Cisco Umbrella](#cisco-umbrella) | 2 | 2 | 2 |
 | [CiscoASA](#ciscoasa) | 1 | 1 | 1 |
 | [Citrix NetScaler](#citrix-netscaler) | 1 | 1 | 1 |
@@ -96,6 +97,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Vectra AI Streams](#vectra-ai-streams) | 3 | 3 | 1 |
 | [VMConnection](#vmconnection) | 1 | 1 | 1 |
 | [VMware Carbon Black Cloud](#vmware-carbon-black-cloud) | 7 | 6 | 3 |
+| [VMware ESXi](#vmware-esxi) | 1 | 1 | 3 |
 | [VMware vCenter](#vmware-vcenter) | 1 | 1 | 2 |
 | [WatchGuard Fireware OS](#watchguard-fireware-os) | 1 | 1 | 1 |
 | [Windows Firewall](#windows-firewall) | 2 | 1 | 3 |
@@ -363,6 +365,18 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimNetworkSessionCiscoMeraki](asimnetworksessionciscomeraki.md)<br>vim: [vimNetworkSessionCiscoMeraki](vimnetworksessionciscomeraki.md) | NetworkSession | [meraki_CL](../tables/meraki-cl.md) | 1.2.2 |
 | ASim: [ASimNetworkSessionCiscoMerakiSyslog](asimnetworksessionciscomerakisyslog.md)<br>vim: [vimNetworkSessionCiscoMerakiSyslog](vimnetworksessionciscomerakisyslog.md) | NetworkSession | [Syslog](../tables/syslog.md) | 1.2.2 |
 | ASim: [ASimWebSessionCiscoMeraki](asimwebsessionciscomeraki.md)<br>vim: [vimWebSessionCiscoMeraki](vimwebsessionciscomeraki.md) | WebSession | [Syslog](../tables/syslog.md), [meraki_CL](../tables/meraki-cl.md) | 0.1.1 |
+
+## Cisco Secure Endpoint
+
+**Schemas:** AlertEvent
+
+**Tables:** [CiscoSecureEndpointEventsV2_CL](../tables/ciscosecureendpointeventsv2-cl.md)
+
+### Parsers
+
+| Parser | Schema | Tables | Version |
+|:-------|:-------|:-------|:--------|
+| ASim: [ASimAlertEventCiscoSecureEndpoint](asimalerteventciscosecureendpoint.md)<br>vim: [vimAlertEventCiscoSecureEndpoint](vimalerteventciscosecureendpoint.md) | AlertEvent | [CiscoSecureEndpointEventsV2_CL](../tables/ciscosecureendpointeventsv2-cl.md) | 0.1.0 |
 
 ## Cisco Umbrella
 
@@ -635,7 +649,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimProcessEventMicrosoft365D](asimprocesseventmicrosoft365d.md)<br>vim: [vimProcessEventMicrosoft365D](vimprocesseventmicrosoft365d.md) | ProcessEvent | [DeviceProcessEvents](../tables/deviceprocessevents.md) | 0.3.0 |
+| ASim: [ASimProcessEventMicrosoft365D](asimprocesseventmicrosoft365d.md)<br>vim: [vimProcessEventMicrosoft365D](vimprocesseventmicrosoft365d.md) | ProcessEvent | [DeviceProcessEvents](../tables/deviceprocessevents.md) | 0.3.1 |
 
 ## Microsoft 365 Defender for Endpoint
 
@@ -1197,6 +1211,18 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimProcessTerminateVMwareCarbonBlackCloud](asimprocessterminatevmwarecarbonblackcloud.md)<br>vim: [vimProcessTerminateVMwareCarbonBlackCloud](vimprocessterminatevmwarecarbonblackcloud.md) | ProcessEvent | [CarbonBlackEvents_CL](../tables/carbonblackevents-cl.md) | 0.1.0 |
 | ASim: [ASimRegistryEventVMwareCarbonBlackCloud](asimregistryeventvmwarecarbonblackcloud.md)<br>vim: [vimRegistryEventVMwareCarbonBlackCloud](vimregistryeventvmwarecarbonblackcloud.md) | RegistryEvent | [CarbonBlackEvents_CL](../tables/carbonblackevents-cl.md) | 0.1.1 |
 
+## VMware ESXi
+
+**Schemas:** Authentication
+
+**Tables:** [AVSEsxiSyslog](../tables/avsesxisyslog.md), [AVSSyslog](../tables/avssyslog.md), [Syslog](../tables/syslog.md)
+
+### Parsers
+
+| Parser | Schema | Tables | Version |
+|:-------|:-------|:-------|:--------|
+| ASim: [ASimAuthenticationVMwareESXi](asimauthenticationvmwareesxi.md)<br>vim: [vimAuthenticationVMwareESXi](vimauthenticationvmwareesxi.md) | Authentication | [AVSEsxiSyslog](../tables/avsesxisyslog.md), [AVSSyslog](../tables/avssyslog.md), [Syslog](../tables/syslog.md) | 0.1.0 |
+
 ## VMware vCenter
 
 **Schemas:** Authentication
@@ -1207,7 +1233,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationVMwareVCenter](asimauthenticationvmwarevcenter.md)<br>vim: [vimAuthenticationVMwareVCenter](vimauthenticationvmwarevcenter.md) | Authentication | [AVSVcSyslog](../tables/avsvcsyslog.md), [vcenter_CL](../tables/vcenter-cl.md) | 0.1.1 |
+| ASim: [ASimAuthenticationVMwareVCenter](asimauthenticationvmwarevcenter.md)<br>vim: [vimAuthenticationVMwareVCenter](vimauthenticationvmwarevcenter.md) | Authentication | [AVSVcSyslog](../tables/avsvcsyslog.md), [vcenter_CL](../tables/vcenter-cl.md) | 0.1.2 |
 
 ## WatchGuard Fireware OS
 

@@ -14,8 +14,8 @@ Query searches for critical severity events.
 | **Solution** | [Claroty](../solutions/claroty.md) |
 | **ID** | `a81f3a44-049c-409d-8b98-b78aa256dacf` |
 | **Severity** | High |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | InitialAccess, Impact |
+| **Techniques** | T1190, T0889 |
 | **Required Connectors** | [CefAma](../connectors/cefama.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Hunting%20Queries/ClarotyCriticalEvents.yaml) |
 

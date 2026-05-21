@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 2.0.0 |
+| **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-12 |
 | **Solution Folder** | [ElasticAgent](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent) |
@@ -41,33 +41,40 @@ The [Elastic Agent](https://www.elastic.co/security) solution provides the capab
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Elastic Agent](../connectors/elasticagent.md)
+- [Elastic Agent (via Codeless Connector Framework)](../connectors/elasticagentconnector.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`ElasticAgentLogsV2_CL`](../tables/elasticagentlogsv2-cl.md) | [Elastic Agent (via Codeless Connector Framework)](../connectors/elasticagentconnector.md) | - |
 | [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) | [Elastic Agent](../connectors/elasticagent.md) | - |
 
 ## Content Items
 
-This solution includes **1 content item(s)** (0 in solution, 1 discovered 🔍):
+This solution includes **1 content item(s)**:
 
-| Content Type | Total | In Solution | Discovered |
-|:-------------|------:|------------:|-----------:|
-| Parsers | 1 | 0 | 1 |
+| Content Type | Count |
+|:-------------|:------|
+| Parsers | 1 |
 
 ### Parsers
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [ElasticAgentEvent](../parsers/elasticagentevent.md) ⚠️ | - | [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) *(read)* |
+| [ElasticAgentEvent](../parsers/elasticagentevent.md) | - | [`ElasticAgentLogs_CL`](../tables/elasticagentlogs-cl.md) *(read)* |
 
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|---|---|---|
+| 3.0.0 | 11-05-2026 | **Data Connector** via Codeless Connector Framework added |
+| 2.0.0 | 14-06-2022 | **Data Connector** customs added |
 
 ---
 

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elastic Agent via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="elastic-agent">Elastic Agent (via Codeless Connector Framework)</h1>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>ElasticAgentConnector</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/elasticagent.html">ElasticAgent</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_ConnectorDefinition.json">ElasticAgent_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Configuration</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_PollingConfig.json">ElasticAgent_PollingConfig.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
+<td style="text-align: left;"><code>APIKey</code>, <code>Paging</code>, <code>POST</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Elastic Agent data connector enables you to ingest system metrics, logs, and telemetry data collected by Elastic Agent from Elasticsearch into Microsoft Sentinel. This connector uses the Elasticsearch Search API with API key authentication to query multiple data streams (CPU, memory, process, filesystem, network, load, uptime, agent metrics, and logs). It supports DCR-based ingestion time transformations for efficient query execution. For more information, see the API documentation: https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-search</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="../tables/elasticagentlogsv2-cl.html"><code>ElasticAgentLogsV2_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Prerequisites</strong></p>
+<p>Ensure you have the required access and configuration.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>An Elasticsearch deployment (self-managed or Elastic Cloud)</li>
+<li>Elastic Agent deployed with System integration enabled</li>
+<li>Agent monitoring enabled for logs and metrics</li>
+<li>Elasticsearch API key with read permissions on all indices</li>
+<li>Network connectivity from Microsoft Sentinel to your Elasticsearch endpoint</li>
+</ul>
+<h3 id="required-indices">Required Indices</h3>
+<p>The connector queries the following Elasticsearch indices:</p>
+<p><strong>Metrics:</strong>
+- <code>metrics-system.cpu-*</code> - CPU metrics
+- <code>metrics-system.memory-*</code> - Memory metrics
+- <code>metrics-system.process-*</code> - Process metrics
+- <code>metrics-system.filesystem-*</code> - Filesystem metrics
+- <code>metrics-system.network-*</code> - Network metrics
+- <code>metrics-system.load-*</code> - System load (Linux only)
+- <code>metrics-system.uptime-*</code> - System uptime
+- <code>metrics-elastic_agent.*</code> - Agent telemetry</p>
+<p><strong>Logs:</strong>
+- <code>logs-elastic_agent-*</code> - Agent logs</p>
+<p><strong>2. Configure Elasticsearch Connections</strong></p>
+<p>Add one or more Elasticsearch connections to collect data from.</p>
+<h2 id="elasticsearch-connections">Elasticsearch Connections</h2>
+<p>You can add multiple connections to collect data from different Elasticsearch deployments. Each connection requires its own Elasticsearch URL and API key.</p>
+<h3 id="creating-an-api-key">Creating an API Key</h3>
+<ol>
+<li>In Kibana, go to <strong>Stack Management &gt; API Keys</strong></li>
+<li>Click <strong>Create API key</strong></li>
+<li>Set a name and configure permissions:
+   - Read access to <code>metrics-system.*</code>
+   - Read access to <code>metrics-elastic_agent.*</code>
+   - Read access to <code>logs-elastic_agent-*</code></li>
+<li>Copy the Base64-encoded API key value
+<strong>Connector Management Interface</strong></li>
+</ol>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:
+- <strong>Stream Name</strong>
+- <strong>Elasticsearch URL</strong></p>
+<p>➕ <strong>Add New Collector</strong>: Click the "Add new collector" button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add Elasticsearch Connection</strong></p>
+<p><em>Connect to Elasticsearch</em></p>
+<p>When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:</p>
+<h3 id="connection-details">Connection Details</h3>
+<p>Provide the connection details for your Elasticsearch deployment.</p>
+<ul>
+<li><strong>Connector Name</strong> (required): e.g. Production Cluster, Dev Environment</li>
+<li><strong>Elasticsearch URL</strong> (required): e.g. https://your-deployment.es.us-east-1.aws.elastic.cloud</li>
+<li><strong>API Key</strong> (required): Enter your Elasticsearch API key (base64 encoded)</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+</div>
+
+</body>
+</html>
