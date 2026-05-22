@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Dynatrace](../solutions/dynatrace.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Connector_Dynatrace_RuntimeVulnerabilities_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Data%20Connectors/DynatraceRuntimeVulnerabilitiesV2/Connector_Dynatrace_RuntimeVulnerabilities_Definition.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#dynatrace-runtime-vulnerabilities) |
 
 This connector uses the [Dynatrace Security Problem REST API](https://docs.dynatrace.com/docs/dynatrace-api/environment-api/application-security/vulnerabilities/get-vulnerabilities) to ingest detected runtime vulnerabilities into Microsoft Sentinel Log Analytics.
 

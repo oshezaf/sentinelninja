@@ -557,11 +557,11 @@ References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other par
 | `ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management"` | - | 2 | - | - | **2** |
 | `ProductName == "Azure Sentinel"` | - | 2 | - | - | **2** |
 | `ProductName == "Microsoft Cloud App Security"` | 1 | - | - | - | **1** |
-| `ProductName == "Azure Security Center for IoT"` | 1 | - | - | - | **1** |
-| `ProductName == "Azure Advanced Threat Protection"` | 1 | - | - | - | **1** |
-| `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | 1 | - | - | - | **1** |
-| `ProviderName == "OATP"` | 1 | - | - | - | **1** |
 | `ProductName == "Azure Active Directory Identity Protection"` | 1 | - | - | - | **1** |
+| `ProviderName == "OATP"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Advanced Threat Protection"` | 1 | - | - | - | **1** |
+| `ProductName == "Azure Security Center for IoT"` | 1 | - | - | - | **1** |
+| `ProductName in "Azure Advanced Threat Protection,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"`<br>`ProviderName == "Microsoft 365 Defender"` | 1 | - | - | - | **1** |
 | `AlertName == "Suspicion of Denial Of Service Attack"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
 | `AlertName in "Excessive Login Attempts,Excessive Number of Sessions,Excessive SMB login attempts,Password Guessing Attempt Detected"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
 | `AlertName has_any "Beckhoff Software Changed"`<br>`ProviderName == "IoTSecurity"` | - | 1 | - | - | **1** |
@@ -717,8 +717,8 @@ References by type: 10 connectors, 47 content items, 0 ASIM parsers, 0 other par
 | `IoTSecurity` | - | 15 | - | - | **15** |
 | `IPC` | - | 5 | - | - | **5** |
 | `MDATP` | 1 | 2 | - | - | **3** |
-| `Microsoft 365 Defender` | 1 | - | - | - | **1** |
 | `OATP` | 1 | - | - | - | **1** |
+| `Microsoft 365 Defender` | 1 | - | - | - | **1** |
 | `contains anomal` | - | 1 | - | - | **1** |
 | `contains fusion` | - | 1 | - | - | **1** |
 
