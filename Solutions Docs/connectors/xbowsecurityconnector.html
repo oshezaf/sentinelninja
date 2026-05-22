@@ -53,6 +53,10 @@
   <td style="text-align:left"><strong>Ingestion API</strong></td>
   <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#xbow-security-platform-via-azure-function">View on Learn</a></td>
+</tr>
 </tbody>
 </table>
 <p>The <strong>XBOW</strong> data connector ingests asset snapshots, vulnerability findings, and assessment activity from the <a href="https://console.xbow.com">XBOW Security Platform</a> into Microsoft Sentinel. An Azure Function polls the XBOW API on a timer and pushes asset JSON snapshots into <code>XbowAssets_CL</code>, enriched findings (with evidence, PoC recipes, impact, and mitigations) into <code>XbowFindings_CL</code>, and assessment lifecycle events into <code>XbowAssessments_CL</code>, using the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Ingestion API</a> (DCE/DCR).</p>

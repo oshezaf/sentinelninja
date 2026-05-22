@@ -241,11 +241,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (2)</h2>
+<h2 id="solutions">Solutions (1)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
@@ -264,7 +263,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (10)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
 <h3 id="analytic-rules">Analytic Rules (1)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == &quot;LogonSuccess&quot;</code><br><code>Protocol == &quot;Kerberos&quot;</code></p>
 <table>
@@ -279,7 +278,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (6)</h3>
+<h3 id="hunting-queries">Hunting Queries (1)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == &quot;LogonSuccess&quot;</code><br><code>Protocol == &quot;Kerberos&quot;</code></p>
 <table>
 <thead>
@@ -293,47 +292,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Standalone Content:</strong> <code>Application == &quot;Active Directory&quot;</code><br><code>LogonType in &quot;Failed logon,Resource access&quot;</code><br><code>Protocol == &quot;Kerberos&quot;</code></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-kerberos-as-authentications-8abe561f-eecd-45cb-a0a3-152189d2c064-15a22f7a.html">Kerberos AS authentications</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-detect-potential-kerberoast-activities-ed25a5c7-2051-44f4-be22-b6cd2f0ad2d0-77205ebd.html">Detect potential kerberoast activities</a></td>
-  <td style="text-align:left"><code>ActionType == &quot;LogonSuccess&quot;</code><br><code>Protocol == &quot;Kerberos&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-detect-not-active-ad-user-accounts-9131b716-334f-416e-a50f-809927d63b42-c58cf5c0.html">Detect-Not-Active-AD-User-Accounts</a></td>
-  <td style="text-align:left"><code>AccountName startswith &quot;XXX&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-device-logons-from-unknown-ips-a6d76204-efb2-4ccd-a068-d5a9e6876236-62ddb799.html">Device Logons from Unknown IPs</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-logon-attempts-after-malicious-email-44a5c680-d2ac-4bed-8210-c3aafea47308-4a967afa.html">logon-attempts-after-malicious-email</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<h3 id="workbooks">Workbooks (3)</h3>
+<h3 id="workbooks">Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>LogonType in &quot;Credentials validation,Resource access&quot;</code></p>
 <table>
 <thead>
@@ -347,27 +306,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-microsoftdefenderforidentity-215ba93a.html">microsoftdefenderforidentity</a></td>
-  <td style="text-align:left"><code>LogonType in &quot;Credentials validation,Resource access&quot;</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (4 criteria, 6 total references)</h2>
-<p>References by type: 0 connectors, 6 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (2 criteria, 3 total references)</h2>
+<p>References by type: 0 connectors, 3 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -383,26 +323,10 @@
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;LogonSuccess&quot;</code><br><code>Protocol == &quot;Kerberos&quot;</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Application == &quot;Active Directory&quot;</code><br><code>LogonType in &quot;Failed logon,Resource access&quot;</code><br><code>Protocol == &quot;Kerberos&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>AccountName startswith &quot;XXX&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>LogonType in &quot;Credentials validation,Resource access&quot;</code></td>
@@ -415,33 +339,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
+  <td style="text-align:center"><strong>3</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="accountname">AccountName</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>startswith XXX</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
@@ -461,33 +362,10 @@
 <tr>
   <td style="text-align:left"><code>LogonSuccess</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-</tbody>
-</table>
-<h3 id="application">Application</h3>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><code>Active Directory</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -505,15 +383,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Resource access</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Failed logon</code></td>
+  <td style="text-align:left"><code>Credentials validation</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -521,7 +391,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Credentials validation</code></td>
+  <td style="text-align:left"><code>Resource access</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -546,10 +416,10 @@
 <tr>
   <td style="text-align:left"><code>Kerberos</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>

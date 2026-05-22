@@ -57,6 +57,10 @@
   <td style="text-align:left"><strong>CCF Capabilities</strong></td>
   <td style="text-align:left"><code>JwtToken</code>, <code>Paging</code></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zoom-reports-connector-via-codeless-connector-framework">View on Learn</a></td>
+</tr>
 </tbody>
 </table>
 <p>The <a href="https://developers.zoom.us/docs/api/">Zoom Reports</a> data connector enables you to ingest Zoom Reports data into Microsoft Sentinel through the Zoom REST API v2, allowing you to monitor and audit Zoom usage across your organization. This connector uses server-to-server OAuth account credentials for authentication and supports ingestion of multiple report types including Daily Usage Reports for meeting statistics and usage metrics, User Reports for active/inactive user host information, Telephony Reports for telephony usage statistics, Cloud Recording Usage Reports for cloud storage and recording usage, Operation Logs for administrative operations and audit trail, and Activity Logs for user sign-in/sign-out activities. Each report type is collected in a separate polling configuration with automatic pagination support using NextPageToken. The data connector is built on Microsoft Sentinel Codeless Connector Platform and supports DCR-based <a href="https://docs.microsoft.com/azure/azure-monitor/logs/custom-logs-overview">ingestion time transformations</a> for optimized query performance.</p>
