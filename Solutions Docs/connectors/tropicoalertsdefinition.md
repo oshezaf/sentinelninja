@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [TropicoAlerts_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoAlerts_CCF/TropicoAlerts_ConnectorDefinition.json) |
 | **CCF Configuration** | [TropicoAlerts_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico/Data%20Connectors/TropicoAlerts_CCF/TropicoAlerts_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#tropico-security---alerts) |
 
 Ingest security alerts from Tropico Security Platform in OCSF Security Finding format.
 

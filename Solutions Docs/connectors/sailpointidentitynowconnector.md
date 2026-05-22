@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [SailPointIdentityNow_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SearchEvent_CCF/SailPointIdentityNow_ConnectorDefinition.json) |
 | **CCF Configuration** | [SailPointIdentityNow_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SearchEvent_CCF/SailPointIdentityNow_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#sailpoint-identitynow-using-azure-functions) |
 
 The [SailPoint](https://www.sailpoint.com/) IdentityNow data connector provides the capability to ingest [SailPoint IdentityNow] search events into Microsoft Sentinel through the REST API. The connector provides customers the ability to extract audit information from their IdentityNow tenant. It supports connecting multiple SailPoint IdentityNow tenants simultaneously - each identified by its unique Tenant ID and domain - making it easy to monitor multiple environments (production, demo, partner) from a single Microsoft Sentinel workspace. Refer to [SailPoint Developer Documentation](https://developer.sailpoint.com/docs/api/authentication/) for API authentication details.
 

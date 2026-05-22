@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [CognyteLuminar_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CognyteLuminar/Data%20Connectors/CognyteLuminar_FunctionApp.json) |
 | **Ingestion API** | [Microsoft Graph tiIndicators API](../methods/microsoft-graph-tiindicators-api.md) — *Connector code references Microsoft Graph tiIndicators API endpoint (matched 'tiindicators/submittiindicators')* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#luminar-iocs-and-leaked-credentials-using-azure-functions) |
 
 Luminar IOCs and Leaked Credentials connector allows integration of intelligence-based IOC data and customer-related leaked records identified by Luminar.
 

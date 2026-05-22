@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [ESI-ExchangeOnlineCollector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20Online/Data%20Connectors/ESI-ExchangeOnlineCollector.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#exchange-security-insights-online-collector-using-azure-functions) |
 
 Connector used to push Exchange Online Security configuration for Microsoft Sentinel Analysis
 

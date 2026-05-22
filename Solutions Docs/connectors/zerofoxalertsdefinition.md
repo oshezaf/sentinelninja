@@ -18,6 +18,7 @@
 | **CCF Configuration** | [ZeroFoxAlerts_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox/Data%20Connectors/Alerts/ZeroFoxAlerts_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zerofox-enterprise---alerts-polling-ccf) |
 
 Collects alerts from ZeroFox API.
 

@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [Rapid7InsightVM_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Data%20Connectors/Rapid7InsightVM_CCP/Rapid7InsightVM_ConnectorDefinition.json) |
 | **CCF Configuration** | [Rapid7InsightVM_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM/Data%20Connectors/Rapid7InsightVM_CCP/Rapid7InsightVM_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST`, `Nested` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#rapid7-insight-platform-vulnerability-management-reports-using-azure-functions) |
 
 The [Rapid7 Insight VM](https://www.rapid7.com/products/insightvm/) Report data connector provides the capability to ingest Scan reports and vulnerability data into Microsoft Sentinel through the REST API from the Rapid7 Insight platform (Managed in the cloud). Refer to [API documentation](https://docs.rapid7.com/insight/api-overview/) for more information. The connector provides ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.
 
