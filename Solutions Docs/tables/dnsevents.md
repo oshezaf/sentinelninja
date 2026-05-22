@@ -57,7 +57,7 @@ Reference for DnsEvents table in Azure Monitor Logs.
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
 
-## Solutions (15)
+## Solutions (14)
 
 This table is used by the following solutions:
 
@@ -69,7 +69,6 @@ This table is used by the following solutions:
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatConnect](../solutions/threatconnect.md)
@@ -87,9 +86,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (42)
+## Content Items Using This Table (31)
 
-### Analytic Rules (16)
+### Analytic Rules (14)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -145,14 +144,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022](../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
-| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
-
-### Hunting Queries (10)
+### Hunting Queries (9)
 
 **In solution [Attacker Tools Threat Protection Essentials](../solutions/attacker-tools-threat-protection-essentials.md):**
 
@@ -173,13 +165,7 @@ This table is ingested by the following connectors:
 | [Potential DGA detected](../content/windows-server-dns-potential-dga-detected-543e1ec6-ee5e-4368-aaa6-405f0551ba5c-d483d155.md) |  |
 | [Solorigate DNS Pattern](../content/windows-server-dns-solorigate-dns-pattern-0fb54a5c-5599-4ff9-80a2-f788c3ed285e-42e0ed66.md) | `IPAddresses != "127.0.0.1"` |
 
-**Standalone Content:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [RareDNSLookupWithDataTransfer](../content/standalone-content-rarednslookupwithdatatransfer-06c52a66-fffe-4d3b-a05a-646ff65b7ec2-5a6c4b85.md) |  |
-
-### Workbooks (16)
+### Workbooks (8)
 
 **In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
@@ -223,19 +209,6 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [Dns](../content/github-only-dns-ff664046.md) |  |
-| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
-| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `ResultCode == "0"` |
-| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `IPAddresses != "127.0.0.1"` |
-| [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
-| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Parsers Using This Table (1)
 

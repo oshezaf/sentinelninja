@@ -4,57 +4,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Attempted VBScript Stored in Non-Run CurrentVersion Registry Key Value &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="attempted-vbscript-stored-in-non-run-currentversion-registry-key-value">Attempted VBScript Stored in Non-Run CurrentVersion Registry Key Value</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Identify potential new registry key name that is a non-autorun and non-run key in the HKLM\Software\Microsoft\Windows\CurrentVersion\ registry key containing VBScript in the key value value.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Hunting Query</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Hunting Query</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/cyborg-security-hunter.html">Cyborg Security HUNTER</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/cyborg-security-hunter.html">Cyborg Security HUNTER</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>d7233f14-4705-403e-9db9-e0d677c9506b</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>d7233f14-4705-403e-9db9-e0d677c9506b</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">DefenseEvasion</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">DefenseEvasion</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Techniques</strong></td>
-<td style="text-align: left;">T1112</td>
+  <td style="text-align:left"><strong>Techniques</strong></td>
+  <td style="text-align:left">T1112</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/securityevent.html">SecurityEvent</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/securityevent.html">SecurityEvent</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER/Hunting%20Queries/Attempted%20VBScript%20Stored%20in%20Non-Run%20CurrentVersion%20Registry%20Key%20Value.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER/Hunting%20Queries/Attempted%20VBScript%20Stored%20in%20Non-Run%20CurrentVersion%20Registry%20Key%20Value.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -63,26 +63,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-<td style="text-align: left;"><code>NewValue contains "CreateObject"</code><br><code>NewValue contains "Execute("</code><br><code>NewValue contains "RegRead"</code><br><code>NewValue contains "RunHTMLApplication"</code><br><code>NewValue contains "jscript"</code><br><code>NewValue contains "mshtml"</code><br><code>NewValue contains "mshtml,"</code><br><code>NewValue contains "vbscript"</code><br><code>NewValue contains "window.close"</code><br><code>ObjectName !has "\\Run"</code><br><code>ObjectName has "\\CurrentVersion"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td style="text-align:left"><code>NewValue contains &quot;CreateObject&quot;</code><br><code>NewValue contains &quot;Execute(&quot;</code><br><code>NewValue contains &quot;RegRead&quot;</code><br><code>NewValue contains &quot;RunHTMLApplication&quot;</code><br><code>NewValue contains &quot;jscript&quot;</code><br><code>NewValue contains &quot;mshtml&quot;</code><br><code>NewValue contains &quot;mshtml,&quot;</code><br><code>NewValue contains &quot;vbscript&quot;</code><br><code>NewValue contains &quot;window.close&quot;</code><br><code>ObjectName !has &quot;\\Run&quot;</code><br><code>ObjectName has &quot;\\CurrentVersion&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="hunting-queries.html">Back to Hunting Queries</a> · <a href="../solutions/cyborg-security-hunter.html">Back to Cyborg Security HUNTER</a></p>
+
 </div>
 
 </body>

@@ -4,49 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tenable Identity Exposure &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="tenable-identity-exposure">Tenable Identity Exposure</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Tenable.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>TenableIE</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>TenableIE</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Tenable</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Tenable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/tenable-app.html">Tenable App</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/tenable-app.html">Tenable App</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/TenableIE.json">TenableIE.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/TenableIE.json">TenableIE.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -56,24 +57,24 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/alsidforadlog-cl.html"><code>AlsidForADLog_CL</code></a></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/tenable-ie-cl.html"><code>Tenable_IE_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/tenable-ie-cl.html"><code>Tenable_IE_CL</code></a></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/tenable-ad-cl.html"><code>Tenable_ad_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -81,19 +82,25 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions are required.
-- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<p><strong>Custom Permissions:</strong>
-- <strong>Access to TenableIE Configuration</strong>: Permissions to configure syslog alerting engine</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Access to TenableIE Configuration</strong>: Permissions to configure syslog alerting engine</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<blockquote>
 <p>This data connector depends on <a href="https://aka.ms/sentinel-TenableApp-afad-parser">afad_parser</a> based on a Kusto Function to work as expected which is deployed with the Microsoft Sentinel Solution.</p>
 </blockquote>
 <p><strong>1. Configure the Syslog server</strong></p>
 <p>You will first need a <strong>linux Syslog</strong> server that TenableIE will send logs to. Typically you can run <strong>rsyslog</strong> on <strong>Ubuntu</strong>.
- You can then configure this server as you wish, but it is recommended to be able to output TenableIE logs in a separate file.</p>
+You can then configure this server as you wish, but it is recommended to be able to output TenableIE logs in a separate file.</p>
 <p>Configure rsyslog to accept logs from your TenableIE IP address. Choose one of the following options:</p>
 <p><strong>Option 1: Using AllowedSender directive</strong></p>
 <p>This configuration restricts which hosts can send logs to your syslog server at the network level. It's more secure as it rejects unauthorized connections before processing them.</p>
@@ -117,11 +124,15 @@
 <p>The OMS agent will receive the TenableIE syslog events and publish it in Microsoft Sentinel :
 <strong>Choose where to install the agent:</strong></p>
 <p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
-<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
-  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.</p>
+<ul>
+<li><strong>Install agent on Linux Virtual Machine</strong></li>
+</ul>
 <p><strong>Install agent on a non-Azure Linux Machine</strong></p>
-<p>Download the agent on the relevant machine and follow the instructions.
-  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.</p>
+<ul>
+<li><strong>Install agent on Linux (Non-Azure)</strong></li>
+</ul>
 <p><strong>3. Check agent logs on the Syslog server</strong></p>
 <pre><code class="language-shell">tail -f /var/opt/microsoft/omsagent/log/omsagent.log
 </code></pre>
@@ -148,7 +159,7 @@ If you used the Quickstart template, the Syslog server will by default listen on
 </blockquote>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
-<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable App\Data Connectors\TenableIE\README.md">Tenable App\Data Connectors\TenableIE\README.md</a></em></p>
+<p>📄 <em>Source: [Tenable App\Data Connectors\TenableIE\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable App\Data Connectors\TenableIE\README.md)</em></p>
 </blockquote>
 <h1 id="tenable-identity-exposure-data-connector">Tenable Identity Exposure Data Connector</h1>
 <p>This data connector allows Tenable Identity Exposure (formerly AlsidForAD) logs to be ingested into Microsoft Sentinel. The connector captures Indicators of Exposure, Indicators of Attack, and trailflow logs to help monitor your Active Directory environment.</p>
@@ -188,52 +199,44 @@ If you used the Quickstart template, the Syslog server will by default listen on
 <p>Choose one of the following options:</p>
 <h4 id="option-1-using-allowedsender-directive">Option 1: Using AllowedSender Directive</h4>
 <ol>
-<li><strong>Download the configuration file:</strong></li>
-</ol>
-<p><code>https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-allowedsender.conf</code></p>
-<ol start="2">
-<li><strong>Run in sudo mode:</strong></li>
-</ol>
-<p><code>bash
-   sudo -i</code></p>
-<ol start="3">
-<li><strong>Set your TenableIE IP address:</strong></li>
-</ol>
-<p><code>bash
-   export TENABLE_IE_IP={Enter your actual TenableIE IP address}</code></p>
-<ol start="4">
-<li>
-<p><strong>Execute the commands from the downloaded configuration file</strong> to create <code>/etc/rsyslog.d/80-tenable.conf</code></p>
+<li><p><strong>Download the configuration file:</strong></p>
+<pre><code>https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-allowedsender.conf
+</code></pre>
 </li>
-<li>
-<p><strong>Restart rsyslog:</strong>
-   <code>bash
-   systemctl restart rsyslog</code></p>
+<li><p><strong>Run in sudo mode:</strong></p>
+<pre><code class="language-bash">sudo -i
+</code></pre>
+</li>
+<li><p><strong>Set your TenableIE IP address:</strong></p>
+<pre><code class="language-bash">export TENABLE_IE_IP={Enter your actual TenableIE IP address}
+</code></pre>
+</li>
+<li><p><strong>Execute the commands from the downloaded configuration file</strong> to create <code>/etc/rsyslog.d/80-tenable.conf</code></p>
+</li>
+<li><p><strong>Restart rsyslog:</strong></p>
+<pre><code class="language-bash">systemctl restart rsyslog
+</code></pre>
 </li>
 </ol>
 <h4 id="option-2-filter-logs-by-source-ip">Option 2: Filter Logs by Source IP</h4>
 <ol>
-<li><strong>Download the configuration file:</strong></li>
-</ol>
-<p><code>https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-filter.conf</code></p>
-<ol start="2">
-<li><strong>Run in sudo mode:</strong></li>
-</ol>
-<p><code>bash
-   sudo -i</code></p>
-<ol start="3">
-<li><strong>Set your TenableIE IP address:</strong></li>
-</ol>
-<p><code>bash
-   export TENABLE_IE_IP={Enter your actual TenableIE IP address}</code></p>
-<ol start="4">
-<li>
-<p><strong>Execute the commands from the downloaded configuration file</strong> to create <code>/etc/rsyslog.d/80-tenable.conf</code></p>
+<li><p><strong>Download the configuration file:</strong></p>
+<pre><code>https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/80-tenable-filter.conf
+</code></pre>
 </li>
-<li>
-<p><strong>Restart rsyslog:</strong>
-   <code>bash
-   systemctl restart rsyslog</code></p>
+<li><p><strong>Run in sudo mode:</strong></p>
+<pre><code class="language-bash">sudo -i
+</code></pre>
+</li>
+<li><p><strong>Set your TenableIE IP address:</strong></p>
+<pre><code class="language-bash">export TENABLE_IE_IP={Enter your actual TenableIE IP address}
+</code></pre>
+</li>
+<li><p><strong>Execute the commands from the downloaded configuration file</strong> to create <code>/etc/rsyslog.d/80-tenable.conf</code></p>
+</li>
+<li><p><strong>Restart rsyslog:</strong></p>
+<pre><code class="language-bash">systemctl restart rsyslog
+</code></pre>
 </li>
 </ol>
 <h3 id="step-2-install-and-onboard-the-microsoft-agent-for-linux">Step 2: Install and Onboard the Microsoft Agent for Linux</h3>
@@ -256,7 +259,7 @@ If you used the Quickstart template, the Syslog server will by default listen on
 <li><strong>Log in to your TenableIE portal</strong></li>
 <li><strong>Navigate to:</strong> System → Configuration → Syslog</li>
 <li><strong>Create a new Syslog alert</strong> pointing to your syslog server</li>
-<li><strong>Test the configuration</strong> using the "Test the configuration" button</li>
+<li><strong>Test the configuration</strong> using the &quot;Test the configuration&quot; button</li>
 <li><strong>Verify logs are gathered</strong> in the separate file on your server</li>
 </ol>
 <p><strong>Default Port Configuration:</strong></p>
@@ -268,12 +271,14 @@ If you used the Quickstart template, the Syslog server will by default listen on
 <h3 id="step-5-configure-custom-logs-in-microsoft-sentinel">Step 5: Configure Custom Logs in Microsoft Sentinel</h3>
 <ol>
 <li><strong>In Microsoft Sentinel, go to:</strong> Configuration → Settings → Workspace settings → Custom logs</li>
-<li><strong>Click "Add custom log"</strong></li>
+<li><strong>Click &quot;Add custom log&quot;</strong></li>
 <li><strong>Upload a sample TenableIE.log file</strong> from your Linux syslog server and click <strong>Next</strong></li>
 <li><strong>Set the record delimiter</strong> to <strong>New Line</strong> and click <strong>Next</strong></li>
-<li><strong>Select Linux</strong> and enter the file path to the syslog file:
-   - Default location: <code>/var/log/TenableIE.log</code>
-   - For Tenable version &lt; 3.1.0: <code>/var/log/AlsidForAD.log</code></li>
+<li><strong>Select Linux</strong> and enter the file path to the syslog file:<ul>
+<li>Default location: <code>/var/log/TenableIE.log</code></li>
+<li>For Tenable version &lt; 3.1.0: <code>/var/log/AlsidForAD.log</code></li>
+</ul>
+</li>
 <li><strong>Click +</strong> then <strong>Next</strong></li>
 <li><strong>Set the Name</strong> to <code>Tenable_IE_CL</code> (Azure automatically adds <code>*_CL</code>)</li>
 <li><strong>Click Next</strong>, review the summary, then click <strong>Create</strong></li>
@@ -285,67 +290,70 @@ If you used the Quickstart template, the Syslog server will by default listen on
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Value</th>
+  <th>Parameter</th>
+  <th>Description</th>
+  <th>Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>$ModLoad imudp</code></td>
-<td>Load UDP module for syslog reception</td>
-<td>Required</td>
+  <td><code>$ModLoad imudp</code></td>
+  <td>Load UDP module for syslog reception</td>
+  <td>Required</td>
 </tr>
 <tr>
-<td><code>$UDPServerRun 514</code></td>
-<td>Run UDP server on port 514</td>
-<td>Standard syslog port</td>
+  <td><code>$UDPServerRun 514</code></td>
+  <td>Run UDP server on port 514</td>
+  <td>Standard syslog port</td>
 </tr>
 <tr>
-<td><code>$ModLoad imtcp</code></td>
-<td>Load TCP module for syslog reception</td>
-<td>Required</td>
+  <td><code>$ModLoad imtcp</code></td>
+  <td>Load TCP module for syslog reception</td>
+  <td>Required</td>
 </tr>
 <tr>
-<td><code>$InputTCPServerRun 514</code></td>
-<td>Run TCP server on port 514</td>
-<td>Standard syslog port</td>
+  <td><code>$InputTCPServerRun 514</code></td>
+  <td>Run TCP server on port 514</td>
+  <td>Standard syslog port</td>
 </tr>
 <tr>
-<td><code>$AllowedSender</code></td>
-<td>Restrict allowed sender IPs (Option 1 only)</td>
-<td>127.0.0.1, TENABLE_IE_IP</td>
+  <td><code>$AllowedSender</code></td>
+  <td>Restrict allowed sender IPs (Option 1 only)</td>
+  <td>127.0.0.1, TENABLE_IE_IP</td>
 </tr>
 <tr>
-<td><code>$MsgTemplate</code></td>
-<td>Format log messages with timestamp</td>
-<td>RFC3339 format</td>
+  <td><code>$MsgTemplate</code></td>
+  <td>Format log messages with timestamp</td>
+  <td>RFC3339 format</td>
 </tr>
 <tr>
-<td><code>$remote-incoming-logs</code></td>
-<td>Template for log file location</td>
-<td><code>/var/log/%PROGRAMNAME%.log</code></td>
+  <td><code>$remote-incoming-logs</code></td>
+  <td>Template for log file location</td>
+  <td><code>/var/log/%PROGRAMNAME%.log</code></td>
 </tr>
 </tbody>
 </table>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="common-issues">Common Issues</h3>
 <ol>
-<li>
-<p><strong>Logs not appearing in Sentinel:</strong>
-   - Check rsyslog service: <code>systemctl status rsyslog</code>
-   - Verify agent logs: <code>tail -f /var/opt/microsoft/omsagent/log/omsagent.log</code>
-   - Confirm firewall rules allow ports 514/UDP and 514/TCP</p>
+<li><p><strong>Logs not appearing in Sentinel:</strong></p>
+<ul>
+<li>Check rsyslog service: <code>systemctl status rsyslog</code></li>
+<li>Verify agent logs: <code>tail -f /var/opt/microsoft/omsagent/log/omsagent.log</code></li>
+<li>Confirm firewall rules allow ports 514/UDP and 514/TCP</li>
+</ul>
 </li>
-<li>
-<p><strong>Permission denied errors:</strong>
-   - Ensure running commands with <code>sudo -i</code>
-   - Check file permissions in <code>/etc/rsyslog.d/</code></p>
+<li><p><strong>Permission denied errors:</strong></p>
+<ul>
+<li>Ensure running commands with <code>sudo -i</code></li>
+<li>Check file permissions in <code>/etc/rsyslog.d/</code></li>
+</ul>
 </li>
-<li>
-<p><strong>Incorrect IP filtering:</strong>
-   - Verify <code>TENABLE_IE_IP</code> environment variable is set correctly
-   - Check if TenableIE IP matches the actual source IP</p>
+<li><p><strong>Incorrect IP filtering:</strong></p>
+<ul>
+<li>Verify <code>TENABLE_IE_IP</code> environment variable is set correctly</li>
+<li>Check if TenableIE IP matches the actual source IP</li>
+</ul>
 </li>
 </ol>
 <h3 id="verification-commands">Verification Commands</h3>
@@ -365,8 +373,9 @@ systemctl status omsagent
 telnet &lt;syslog-server-ip&gt; 514
 </code></pre>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

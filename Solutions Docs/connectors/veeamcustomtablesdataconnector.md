@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Veeam_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Data%20Connectors/Veeam_API_FunctionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#veeam-data-connector-using-azure-functions) |
 
 Veeam Data Connector allows you to ingest Veeam telemetry data from multiple custom tables into Microsoft Sentinel.
 

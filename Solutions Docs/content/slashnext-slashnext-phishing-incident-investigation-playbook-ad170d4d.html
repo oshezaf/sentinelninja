@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SlashNext Phishing Incident Investigation Playbook &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="slashnext-phishing-incident-investigation-playbook">SlashNext Phishing Incident Investigation Playbook</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Enhance your security with threat hunting and incident investigation using this playbook. Scan with world’s largest, real-time phishing intelligence database for accurate, definitive binary verdicts on suspicious URLs and download phishing forensics including webpage screenshots, HTML and text. The playbook shall perform the analysis of all URL entities attached to an existing incident using SlashNext Logic Apps Connector and add threat information to each malicious incident.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/slashnext.html">SlashNext</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/slashnext.html">SlashNext</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextPhishingIncidentInvestigation/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/Playbooks/SlashNextPhishingIncidentInvestigation/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,42 +47,73 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-slashnext.html"><code>SlashNext</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-slashnext.html"><code>SlashNext</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident | post | `/Incidents/Comment` | — |
-| Entities_-_Get_URLs | post | `/entities/url` | — |
-
-#### [`SlashNext`](../logic-apps/custom-slashnext.md) (Custom)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Repute | post | `/api/v1/urls/repute` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="slashnext"><a href="../logic-apps/custom-slashnext.html"><code>SlashNext</code></a> (Custom)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Repute</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/v1/urls/repute</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -94,13 +125,13 @@
 <p>Enhance your security with threat hunting and incident investigation using this playbook. Scan with world’s largest, real-time phishing intelligence database for accurate, definitive binary verdicts on suspicious URLs and download phishing forensics including webpage screenshots, HTML and text. The playbook shall perform the analysis of all URL entities attached to an existing incident using SlashNext Logic Apps Connector and add threat information to each malicious incident.</p>
 <h2 id="slashnext-phishing-incident-investigation-playbook">SlashNext Phishing Incident Investigation Playbook</h2>
 <h3 id="prerequisites">Prerequisites</h3>
-<p><strong>SlashNext Logic Apps Connector</strong> supports <strong>Basic</strong> authentication, while creating connection you will be asked to provide API key. 
+<p><strong>SlashNext Logic Apps Connector</strong> supports <strong>Basic</strong> authentication, while creating connection you will be asked to provide API key.
 To acquire SlashNext API key, please contact us at <a href="mailto:support@slashnext.com">support@slashnext.com</a> or visit <a href="www.slashnext.com">SlashNext.com</a></p>
 <h3 id="deployment-instructions">Deployment Instructions</h3>
 <p><strong>Deploy with Incident Trigger</strong> (recommended) - After deployment, attach this playbook to an <strong>automation rule</strong> so it runs when the incident is created.</p>
 <p><a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinekl%2Fmaster%2FSolutions%2FSlashNext%2FPlaybooks%2FSlashNextPhishingIncidentInvestigation%2Fdeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSlashNext%2FPlaybooks%2FSlashNextPhishingIncidentInvestigation%2Fdeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinekl%2Fmaster%2FSolutions%2FSlashNext%2FPlaybooks%2FSlashNextPhishingIncidentInvestigation%2Fdeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSlashNext%2FPlaybooks%2FSlashNextPhishingIncidentInvestigation%2Fdeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
 <h4 id="a-authorize-connection">a. Authorize Connection</h4>
 <p>Once deployment is complete, authorize SlashNext Logic Apps Connector connection.</p>
@@ -111,8 +142,9 @@ To acquire SlashNext API key, please contact us at <a href="mailto:support@slash
 <li>Click <strong>Save</strong></li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/slashnext.html">Back to SlashNext</a></p>
+
 </div>
 
 </body>

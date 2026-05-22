@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pure Storage User Deletion &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="pure-storage-user-deletion">Pure Storage User Deletion</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook gets triggered when a Microsoft Sentinel Incident created for suspicious user activity and it deletes the respective user from storage array</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/pure-storage.html">Pure Storage</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/pure-storage.html">Pure Storage</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage/Playbooks/Pure-Storage-User-Delete/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pure%20Storage/Playbooks/Pure-Storage-User-Delete/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,62 +47,122 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_Accounts | post | `/entities/account` | — |
-| Entities_-_Get_IPs | post | `/entities/ip` | — |
-
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_secret | get | `/secrets/@{encodeURIComponent(replace(items('IP_Loop')?['Address'], '.', '-'))}/value` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Fetching_API_version | GET | `https://@{items('IP_Loop')?['Address']}/api/api_version` | — |
-| Retrieving_auth_token | POST | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/login` | — |
-| Executing_User_Delete_API | DELETE | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/admins` | — |
-| Logging_Out | POST | `https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/logout` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Accounts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/account</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_IPs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/ip</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent(replace(items('IP_Loop')?['Address'], '.', '-'))}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Fetching_API_version</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://@{items('IP_Loop')?['Address']}/api/api_version</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Retrieving_auth_token</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/login</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Executing_User_Delete_API</td>
+  <td style="text-align:left">DELETE</td>
+  <td style="text-align:left"><code>https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/admins</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Logging_Out</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://@{items('IP_Loop')?['Address']}/api/@{last(body('Fetching_API_version')?['version'])}/logout</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/pure-storage.html">Back to Pure Storage</a></p>
+
 </div>
 
 </body>

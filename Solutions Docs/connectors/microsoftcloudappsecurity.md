@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Defender for Cloud Apps](../solutions/microsoft-defender-for-cloud-apps.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [MicrosoftCloudAppSecurity.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Cloud%20Apps/Data%20Connectors/MicrosoftCloudAppSecurity.JSON) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-defender-for-cloud-apps) |
 
 By connecting with [Microsoft Defender for Cloud Apps](https://aka.ms/asi-mcas-connector-description) you will gain visibility into your cloud apps, get sophisticated analytics to identify and combat cyberthreats, and control how your data travels.
 

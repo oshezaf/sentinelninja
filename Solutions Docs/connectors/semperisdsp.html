@@ -4,49 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Semperis Directory Services Protector &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="semperis-directory-services-protector">Semperis Directory Services Protector</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Semperis%20Directory%20Services%20Protector/Workbooks/Images/Logo/Semperis.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Semperis%20Directory%20Services%20Protector/Workbooks/Images/Logo/Semperis.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>SemperisDSP</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>SemperisDSP</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">SEMPERIS</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">SEMPERIS</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/semperis-directory-services-protector.html">Semperis Directory Services Protector</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/semperis-directory-services-protector.html">Semperis Directory Services Protector</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector/Data%20Connectors/SemperisDSP-connector.json">SemperisDSP-connector.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector/Data%20Connectors/SemperisDSP-connector.json">SemperisDSP-connector.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,20 +58,20 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-<td style="text-align: left;"><code>EventID in "9208,9211,9212"</code><br><code>EventSourceName == "Semperis-DSP-Security"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td style="text-align:left"><code>EventID in &quot;9208,9211,9212&quot;</code><br><code>EventSourceName == &quot;Semperis-DSP-Security&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -78,15 +79,17 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions are required.
-- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-SemperisDSP-parser"><strong>dsp_parser</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
-<p><strong>2. </strong>Configure Windows Security Events via AMA connector****</p>
+<p>**2. **Configure Windows Security Events via AMA connector****</p>
 <p>Collect Windows security events logs from your <strong>Semperis DSP Management Server</strong> .</p>
 <p><strong>1. Install the Azure Monitor Agent (AMA)</strong></p>
 <p>On your <strong>Semperis DSP Management Server</strong> install the AMA on the DSP machine that will act as the event log forwarder.
@@ -102,9 +105,11 @@ You can skip this step if you have already installed the Microsoft agent for Win
 <strong>Choose where to install the agent:</strong></li>
 </ol>
 <p><strong>Install agent on Semperis DSP Management Server</strong></p>
-<p>Download the agent on the relevant machine and follow the instructions.
-  - <strong>Install/configure: InstallAgentOnNonAzure</strong></p>
-<p><strong>3. </strong>Configure Common Event Format via AMA connector****</p>
+<p>Download the agent on the relevant machine and follow the instructions.</p>
+<ul>
+<li><strong>Install/configure: InstallAgentOnNonAzure</strong></li>
+</ul>
+<p>**3. **Configure Common Event Format via AMA connector****</p>
 <p>Collect syslog messages send from your <strong>Semperis DSP Management Server</strong> .</p>
 <p><strong>1. Install the Azure Monitor Agent (AMA)</strong></p>
 <p>Install the AMA on the Linux machine that will act as the log forwarder. This machine will collect and forward CEF logs to Microsoft Sentinel.
@@ -120,16 +125,19 @@ You can skip this step if you have already installed the Microsoft agent for Lin
 <strong>Choose where to install the agent:</strong></li>
 </ol>
 <p><strong>Install agent on Semperis DSP Management Server</strong></p>
-<p>Download the agent on the relevant machine and follow the instructions.
-  - <strong>Install/configure: InstallAgentOnNonAzure</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.</p>
+<ul>
+<li><strong>Install/configure: InstallAgentOnNonAzure</strong></li>
+</ul>
 <p><strong>3. Configure sending CEF logs on your Semperis DSP Management Server</strong></p>
 <p>Configure your <strong>Semperis DSP Management Server</strong> to send CEF logs to the Linux machine where the AMA is installed. This involves setting the destination IP address and port for the CEF logs</p>
 <blockquote>
 <p>You should now be able to receive logs in the <em>Windows event log</em> table and <em>common log</em> table, log data can be parsed using the <strong>dsp_parser()</strong> function, used by all query samples, workbooks and analytic templates.</p>
 </blockquote>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

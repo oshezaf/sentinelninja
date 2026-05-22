@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [CTM360_HV_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/HackerView/CTM360_HV_ConnectorDefinition.json) |
 | **CCF Configuration** | [CTM360_HV_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/HackerView/CTM360_HV_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#ctm360-hackerview-serverless) |
 
 The CTM360 HackerView connector enables you to ingest security issues and vulnerabilities from your HackerView External Attack Surface Management platform into Microsoft Sentinel. This serverless connector uses the REST API to automatically pull issue data for analysis and correlation with other security events.
 

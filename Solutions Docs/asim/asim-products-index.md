@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> ASIM Parsers by Product
+# <img src="../images/asim-badge.png" alt="ASIM" style="height:32px;width:auto;vertical-align:middle"> ASIM Parsers by Product
 
 This index organizes ASIM parsers by the product or data source they normalize. Use this view to find ASIM support for a specific product, including which schemas are supported and which tables contain the source data.
 

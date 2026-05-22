@@ -4,69 +4,69 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Authentication ASIM parser for Cisco DNAC Syslog Message &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#asim" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#asim" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="authentication-asim-parser-for-cisco-dnac-syslog-message"><img src="../images/asim-badge.png" alt="ASIM" height="32"> Authentication ASIM parser for Cisco DNAC Syslog Message</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#asim">Back to ASIM Index</a></p>
+<h1 id="authentication-asim-parser-for-cisco-dnac-syslog-message"><img src="../images/asim-badge.png" alt="ASIM" style="height:32px;width:auto;vertical-align:middle"> Authentication ASIM parser for Cisco DNAC Syslog Message</h1>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#asim">Back to ASIM Index</a></p>
 <hr />
 <h2 id="parser-information">Parser Information</h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Property</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Property</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Parser Name</strong></td>
-<td style="text-align: left;"><code>ASimAuthenticationCiscoDNAC</code></td>
+  <td style="text-align:left"><strong>Parser Name</strong></td>
+  <td style="text-align:left"><code>ASimAuthenticationCiscoDNAC</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Built-in Parser</strong></td>
-<td style="text-align: left;"><code>_ASim_Authentication_CiscoDNAC</code></td>
+  <td style="text-align:left"><strong>Built-in Parser</strong></td>
+  <td style="text-align:left"><code>_ASim_Authentication_CiscoDNAC</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Schema</strong></td>
-<td style="text-align: left;">Authentication</td>
+  <td style="text-align:left"><strong>Schema</strong></td>
+  <td style="text-align:left">Authentication</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Schema Version</strong></td>
-<td style="text-align: left;">0.1.4</td>
+  <td style="text-align:left"><strong>Schema Version</strong></td>
+  <td style="text-align:left">0.1.4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Parser Type</strong></td>
-<td style="text-align: left;">🔌 Source (product-specific)</td>
+  <td style="text-align:left"><strong>Parser Type</strong></td>
+  <td style="text-align:left">🔌 Source (product-specific)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Product</strong></td>
-<td style="text-align: left;">Cisco DNAC</td>
+  <td style="text-align:left"><strong>Product</strong></td>
+  <td style="text-align:left">Cisco DNAC</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Parser Version</strong></td>
-<td style="text-align: left;">0.1.0 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoDNAC.md">version history</a>)</td>
+  <td style="text-align:left"><strong>Parser Version</strong></td>
+  <td style="text-align:left">0.1.0 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationCiscoDNAC.md">version history</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Last Updated</strong></td>
-<td style="text-align: left;">Apr 29, 2026</td>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">Apr 29, 2026</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Unifying Parser</strong></td>
-<td style="text-align: left;"><a href="asimauthentication.html">ASimAuthentication</a></td>
+  <td style="text-align:left"><strong>Unifying Parser</strong></td>
+  <td style="text-align:left"><a href="asimauthentication.html">ASimAuthentication</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source File</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationCiscoDNAC.yaml">Parsers\ASimAuthentication\Parsers\ASimAuthenticationCiscoDNAC.yaml</a></td>
+  <td style="text-align:left"><strong>Source File</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationCiscoDNAC.yaml">Parsers\ASimAuthentication\Parsers\ASimAuthenticationCiscoDNAC.yaml</a></td>
 </tr>
 </tbody>
 </table>
@@ -77,20 +77,20 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td style="text-align: left;"><code>ProcessName == "DNAC"</code><br><code>SyslogMessage has "LOGIN_USER_EVENT"</code><br><code>SyslogMessage has "LOGOFF_USER_EVENT"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><code>ProcessName == &quot;DNAC&quot;</code><br><code>SyslogMessage has &quot;LOGIN_USER_EVENT&quot;</code><br><code>SyslogMessage has &quot;LOGOFF_USER_EVENT&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -98,16 +98,16 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Default</th>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>disabled</code></td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">False</td>
+  <td style="text-align:left"><code>disabled</code></td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">False</td>
 </tr>
 </tbody>
 </table>
@@ -116,14 +116,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Solution</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Solution</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/syslogama.html">SyslogAma</a></td>
-<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+  <td style="text-align:left"><a href="../connectors/syslogama.html">SyslogAma</a></td>
+  <td style="text-align:left"><a href="../solutions/syslog.html">Syslog</a></td>
 </tr>
 </tbody>
 </table>
@@ -135,8 +135,9 @@
 <li><a href="https://www.cisco.com/c/en/us/td/docs/routers/access/wireless/software/guide/SysMsgLogging.html">About Cisco DNAC System Log Messages</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#asim">Back to ASIM Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#asim">Back to ASIM Index</a></p>
+
 </div>
 
 </body>

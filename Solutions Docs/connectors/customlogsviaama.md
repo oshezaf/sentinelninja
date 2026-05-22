@@ -16,6 +16,7 @@
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CustomLogsViaAmaTemplate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CustomLogsAma/Data%20Connectors/CustomLogsViaAmaTemplate.json) |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#custom-logs-via-ama) |
 
 Many applications log information to text or JSON files instead of standard logging services, such as Windows Event logs, Syslog or CEF. The Custom Logs data connector allows you to collect events from files on both Windows and Linux computers and stream them to custom logs tables you created. While streaming the data you can parse and transform the contents using the DCR. After collecting the data, you can apply analytic rules, hunting, searching, threat intelligence, enrichments and more.
 

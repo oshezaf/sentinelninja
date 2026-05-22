@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1><PlaybookName></h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Intent: As an IT admin, I want to be know which users have publicly posted compromised passwords and I want to ensure these passwords and variations of those passwords are not used in my environment.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">GitHub Only</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">GitHub Only</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Get-CompromisedPasswords/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Get-CompromisedPasswords/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,54 +47,121 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">6</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">6</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
-| Entities_-_Get_Accounts | post | `/entities/account` | — |
-| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Passwords | GET | `https://api.dehashed.com/search?query=@{body('Parse_AAD_User_Info')?['mail']}` | — |
-| Graph_-_Get_AAD_User_Info | GET | `https://graph.microsoft.com/v1.0/users/@{items('For_Each_Account')?['AadUserId']}` | — |
-| Update_Password_Settings | PATCH | `https://graph.microsoft.com/beta/settings//5bfc75a9-c4cb-42d5-9abc-56d458ab560d` | — |
-| Get_Client_Secret_from_Vault_-_Dehashed | GET | `@parameters('KeyVaultClientCredentialsURL-DeHashed-Password')` | — |
-| Get_Client_Secret_from_Vault_-_Graph_API | GET | `@parameters('KeyVaultClientCredentialsURL-GraphAPI')` | — |
-| Get_Password_Settings | GET | `https://graph.microsoft.com/beta/settings/5bfc75a9-c4cb-42d5-9abc-56d458ab560d` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Alert_-_Get_incident</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Accounts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/account</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Passwords</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.dehashed.com/search?query=@{body('Parse_AAD_User_Info')?['mail']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Graph_-_Get_AAD_User_Info</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{items('For_Each_Account')?['AadUserId']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Password_Settings</td>
+  <td style="text-align:left">PATCH</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/settings//5bfc75a9-c4cb-42d5-9abc-56d458ab560d</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Client_Secret_from_Vault_-_Dehashed</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@parameters('KeyVaultClientCredentialsURL-DeHashed-Password')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Client_Secret_from_Vault_-_Graph_API</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@parameters('KeyVaultClientCredentialsURL-GraphAPI')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Password_Settings</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/settings/5bfc75a9-c4cb-42d5-9abc-56d458ab560d</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

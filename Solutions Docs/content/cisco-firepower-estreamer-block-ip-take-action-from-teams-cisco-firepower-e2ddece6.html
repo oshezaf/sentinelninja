@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Block IP - Take Action from Teams - Cisco Firepower &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="block-ip---take-action-from-teams---cisco-firepower">Block IP - Take Action from Teams - Cisco Firepower</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook allows blocking of IPs in Cisco Firepower, using a <strong>Network Group object</strong>. This allows making changes to a Network Group selected members, instead of making Access List Entries. The Network Group object itself should be part of an Access List Entry.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/cisco-firepower-estreamer.html">Cisco Firepower EStreamer</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/cisco-firepower-estreamer.html">Cisco Firepower EStreamer</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,72 +47,176 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">6</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-cisco-firepower-connector.html"><code>cisco-firepower-connector</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">9</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-cisco-firepower-connector.html"><code>cisco-firepower-connector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">9</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-ciscofirepowerconnector.html"><code>CiscoFirepowerConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-ciscofirepowerconnector.html"><code>CiscoFirepowerConnector</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_IPs | post | `/entities/ip` | — |
-| Add_comment_to_incident_(V3):_No_IPs_found | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3):_Network_Group_object_not_found | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3):_Network_Group_object_not_found_2 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Update_incident | put | `/Incidents` | — |
-
-#### [`cisco-firepower-connector`](../logic-apps/managed-cisco-firepower-connector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Revoke_access:_Network_Group_object_not_found | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
-| Generate_token | post | `/api/fmc_platform/v1/auth/generatetoken` | — |
-| Generate_token_2 | post | `/api/fmc_platform/v1/auth/generatetoken` | — |
-| Modifies_the_network_group_object_associated_with_the_specified_ID | put | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(body('Retrieves_the_network_group_object_associated_with_the_specified_ID_2')?['id'])}` | — |
-| Retrieves_the_network_group_object_associated_with_the_specified_ID_2 | get | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}` | — |
-| Revoke_access_2 | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
-| Retrieves_list_of_all_network_group_objects | get | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups` | — |
-| Retrieves_the_network_group_object_associated_with_the_specified_ID | get | `/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}` | — |
-| Revoke_access | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
-
-#### [`CiscoFirepowerConnector`](../logic-apps/custom-ciscofirepowerconnector.md) (Custom)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Revoke_access:_Network_Group_object_not_found_2 | post | `/api/fmc_platform/v1/auth/revokeaccess` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_IPs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/ip</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3):_No_IPs_found</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3):_Network_Group_object_not_found</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3):_Network_Group_object_not_found_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cisco-firepower-connector"><a href="../logic-apps/managed-cisco-firepower-connector.html"><code>cisco-firepower-connector</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Revoke_access:_Network_Group_object_not_found</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/fmc_platform/v1/auth/revokeaccess</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Generate_token</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/fmc_platform/v1/auth/generatetoken</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Generate_token_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/fmc_platform/v1/auth/generatetoken</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Modifies_the_network_group_object_associated_with_the_specified_ID</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(body('Retrieves_the_network_group_object_associated_with_the_specified_ID_2')?['id'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Retrieves_the_network_group_object_associated_with_the_specified_ID_2</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token_2')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Revoke_access_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/fmc_platform/v1/auth/revokeaccess</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Retrieves_list_of_all_network_group_objects</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Retrieves_the_network_group_object_associated_with_the_specified_ID</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/fmc_config/v1/domain/@{encodeURIComponent(outputs('Generate_token')['headers']['DOMAIN_UUID'])}/object/networkgroups/@{encodeURIComponent(variables('Network Group Object')?['id'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Revoke_access</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/fmc_platform/v1/auth/revokeaccess</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ciscofirepowerconnector"><a href="../logic-apps/custom-ciscofirepowerconnector.html"><code>CiscoFirepowerConnector</code></a> (Custom)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Revoke_access:_Network_Group_object_not_found_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/fmc_platform/v1/auth/revokeaccess</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -122,17 +226,19 @@
 <h1 id="cisco-firepower---add-ip-addresses-to-a-network-group-object-with-teams">Cisco Firepower - Add IP Addresses to a Network Group object with Teams</h1>
 <h2 id="summary">Summary</h2>
 <p>This playbook allows blocking of IPs in Cisco Firepower, using a <strong>Network Group object</strong>. This allows making changes to a Network Group selected members, instead of making Access List Entries. The Network Group object itself should be part of an Access List Entry.</p>
-<p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions.
-1. For the IPs we check if they are already selected for the Network Group object
-2. An adaptive card is sent to a Teams channel with information about the incident and giving the option to ignore an IP, or depending on it's current status block it by adding it to the Network Group object or unblock it by removing it from the Network Group object
-    <img alt="Teams Adaptive Card preview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-AdaptiveCard.png" />
-3. The chosen changes are applied to the Network Group object
-4. Comment is added to Microsoft Sentinel incident
-    <img alt="Microsoft Sentinel comment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-AzureSentinel-Comments.png" /></p>
+<p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions.</p>
+<ol>
+<li>For the IPs we check if they are already selected for the Network Group object</li>
+<li>An adaptive card is sent to a Teams channel with information about the incident and giving the option to ignore an IP, or depending on it's current status block it by adding it to the Network Group object or unblock it by removing it from the Network Group object
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-AdaptiveCard.png" alt="Teams Adaptive Card preview" /></li>
+<li>The chosen changes are applied to the Network Group object</li>
+<li>Comment is added to Microsoft Sentinel incident
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-AzureSentinel-Comments.png" alt="Microsoft Sentinel comment" /></li>
+</ol>
 <p>** IP is added to Cisco Firepower Network Group object:**</p>
-<p><img alt="Cisco Firepower Network Group object" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-CiscoFirepowerAdd.png" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-CiscoFirepowerAdd.png" alt="Cisco Firepower Network Group object" /></p>
 <p><strong>Playbook overview:</strong></p>
-<p><img alt="Playbook overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-LogicApp.png" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer/Playbooks/CiscoFirepower-BlockIP-Teams/Images/BlockIP-Teams-LogicApp.png" alt="Playbook overview" /></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Cisco Firepower custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found in the connector doc pages.</li>
@@ -141,10 +247,10 @@
 <p><a name="deployment-instructions"></a></p>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%2520Firepower%2520EStreamer%2FPlaybooks%2FCiscoFirepower-BlockIP-Teams%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%2520Firepower%2520EStreamer%2FPlaybooks%2FCiscoFirepower-BlockIP-Teams%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%2520Firepower%2520EStreamer%2FPlaybooks%2FCiscoFirepower-BlockIP-Teams%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCisco%2520Firepower%2520EStreamer%2FPlaybooks%2FCiscoFirepower-BlockIP-Teams%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <ol start="2">
 <li>Fill in the required parameters:<ul>
 <li>Playbook Name: Enter the playbook name here (ex:CiscoFirepower-BlockIP-Teams)</li>
@@ -155,28 +261,33 @@
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection.
-1.  Click the Microsoft Sentinel connection resource
-2.  Click edit API connection
-3.  Click Authorize
-4.  Sign in
-5.  Click Save
-6.  Repeat steps for other connections such as Teams and Cisco Firepower (For authorizing the Cisco Firepower API connection, the username and password needs to be provided)</p>
+<p>Once deployment is complete, you will need to authorize each connection.</p>
+<ol>
+<li>Click the Microsoft Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections such as Teams and Cisco Firepower (For authorizing the Cisco Firepower API connection, the username and password needs to be provided)</li>
+</ol>
 <h4 id="b-select-teams-channel">b. Select Teams channel</h4>
-<p>The Teams channel to which the adaptive card will be posted will need to be configured.
-1. Click the Azure Logic app resource
-2. Edit the Logic App
-3. Find the 'PostToTeams' action
-4. Select a Team and Channel
-5. Save the Logic App</p>
+<p>The Teams channel to which the adaptive card will be posted will need to be configured.</p>
+<ol>
+<li>Click the Azure Logic app resource</li>
+<li>Edit the Logic App</li>
+<li>Find the 'PostToTeams' action</li>
+<li>Select a Team and Channel</li>
+<li>Save the Logic App</li>
+</ol>
 <h4 id="c-configurations-in-sentinel">c. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft sentinel analytical rules should be configured to trigger an incident with IP Entity.</li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cisco-firepower-estreamer.html">Back to Cisco Firepower EStreamer</a></p>
+
 </div>
 
 </body>

@@ -13,9 +13,10 @@
 | **Connector ID** | `InfobloxDataConnector` |
 | **Publisher** | Infoblox |
 | **Used in Solutions** | [Infoblox](../solutions/infoblox.md) |
-| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [Infoblox_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Data%20Connectors/InfobloxCloudDataConnector/Infoblox_API_FunctionApp.json) |
 | **Ingestion API** | [STIX 2.0 Upload Indicators API](../methods/stix-2.0-upload-indicators-api.md) — *Connector code references STIX 2.0 Upload Indicators API endpoint (matched 'sentinelus.azure-api.net')* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#infoblox-data-connector-via-rest-api) |
 
 The Infoblox Data Connector allows you to easily connect your Infoblox TIDE data and Dossier data with Microsoft Sentinel. By connecting your data to Microsoft Sentinel, you can take advantage of search & correlation, alerting, and threat intelligence enrichment for each log.
 

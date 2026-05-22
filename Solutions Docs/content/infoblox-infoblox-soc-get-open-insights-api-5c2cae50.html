@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Infoblox-SOC-Get-Open-Insights-API &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="infoblox-soc-get-open-insights-api">Infoblox-SOC-Get-Open-Insights-API</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Leverages the Infoblox SOC Insights API to ingest all Open/Active SOC Insights at time of run into the custom InfobloxInsight table. This playbook is scheduled to run on a daily basis.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/infoblox.html">Infoblox</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/infoblox.html">Infoblox</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Get%20Open%20Insights%20API/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Infoblox/Playbooks/Infoblox%20SOC%20Get%20Open%20Insights%20API/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,18 +47,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> 🔶</td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/infobloxinsight-cl.html"><code>InfobloxInsight_CL</code></a> 🔶</td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -67,47 +67,73 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector-1.html"><code>azureloganalyticsdatacollector_1</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector-1.html"><code>azureloganalyticsdatacollector_1</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azureloganalyticsdatacollector_1`](../logic-apps/managed-azureloganalyticsdatacollector-1.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_Data | post | `/api/logs` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_All_Insights | GET | `https://csp.infoblox.com/api/v1/insights` | — |
-
+<h4 id="azureloganalyticsdatacollector_1"><a href="../logic-apps/managed-azureloganalyticsdatacollector-1.html"><code>azureloganalyticsdatacollector_1</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_Data</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/logs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_All_Insights</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://csp.infoblox.com/api/v1/insights</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -121,8 +147,8 @@
 <li><a href="#Post-Deployment-instructions">Post-Deployment instructions</a></li>
 </ul>
 <h2 id="summary">Summary<a name="Summary"></a></h2>
-<p>This playbook uses the Infoblox SOC Insights REST API to ingest all Open/Active SOC Insights at time of run into the custom <code>InfobloxInsight</code> table. </p>
-<p>This playbook is an alternative to using the <strong>Infoblox SOC Insight Data Connectors via the Microsoft forwarding agent</strong>, which require the <strong>Infoblox Cloud Data Connector (CDC)</strong>. Instead, this playbook <strong>ingests the same type of data via REST API</strong>. This way, you do not need to set up and deploy and Infoblox CDC in your environment. </p>
+<p>This playbook uses the Infoblox SOC Insights REST API to ingest all Open/Active SOC Insights at time of run into the custom <code>InfobloxInsight</code> table.</p>
+<p>This playbook is an alternative to using the <strong>Infoblox SOC Insight Data Connectors via the Microsoft forwarding agent</strong>, which require the <strong>Infoblox Cloud Data Connector (CDC)</strong>. Instead, this playbook <strong>ingests the same type of data via REST API</strong>. This way, you do not need to set up and deploy and Infoblox CDC in your environment.</p>
 <p>You can use both methods in the same workspace, but <strong>beware of duplicate data</strong>.</p>
 <p>Simply input your <strong>Infoblox API Key</strong> into the playbook parameters and it will ingest every open SOC Insight at runtime.</p>
 <p>The Analytic Query <strong>Infoblox - SOC Insight Detected - API Source</strong> will read this data for insights and create an Incident when one is found. It is OK to run the playbook multiple times, as the Analytic Queries will group SOC Insight Incidents into one that have the same Infoblox Insight ID in the underlying data tables.</p>
@@ -142,7 +168,7 @@
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Open%20Insights%20API%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Open%20Insights%20API%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Open%20Insights%20API%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FInfoblox%2FPlaybooks%2FInfoblox%20SOC%20Get%20Open%20Insights%20API%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions<a name="Post-Deployment-instructions"></a></h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
@@ -153,8 +179,9 @@
 <li>Click Save</li>
 </ol>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/infoblox.html">Back to Infoblox</a></p>
+
 </div>
 
 </body>

@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [ZNSegmentAudit_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegmentAudit_CCP_Pull/ZNSegmentAudit_ConnectorDefinition.json) |
 | **CCF Configuration** | [ZNSegmentAudit_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegmentAudit_CCP_Pull/ZNSegmentAudit_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zero-networks-segment-audit) |
 
 The [Zero Networks Segment](https://zeronetworks.com/) Audit data connector provides the capability to ingest Zero Networks Audit events into Microsoft Sentinel through the REST API. This data connector uses Microsoft Sentinel native polling capability.
 

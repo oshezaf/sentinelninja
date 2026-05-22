@@ -19,7 +19,7 @@
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | 2 |
+| [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | 2 |
 | **Total** | **2** |
 
 ## Connectors Using This API
@@ -28,8 +28,8 @@
 
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
-| [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) ⚠️ | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | Cofense | 2 | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
-| [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) ⚠️ 🔶 | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) | Cofense | 3 | [CofenseTriage](../solutions/cofensetriage.md) |
+| [Cofense Intelligence Threat Indicators Ingestion](../connectors/cofenseintelligence.md) ⚠️ | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Cofense | 2 | [CofenseIntelligence](../solutions/cofenseintelligence.md) |
+| [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) ⚠️ 🔶 | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) | Cofense | 3 | [CofenseTriage](../solutions/cofensetriage.md) |
 
 ---
 

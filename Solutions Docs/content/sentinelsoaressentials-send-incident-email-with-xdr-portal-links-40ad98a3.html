@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Send incident email with XDR Portal links &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="send-incident-email-with-xdr-portal-links">Send incident email with XDR Portal links</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will send an email with incident and entity information with all links pointing to the security.microsoft.com portal</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Email-XDRPortal/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Email-XDRPortal/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,47 +47,73 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`office365`](../logic-apps/managed-office365.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_an_email_(V2) | post | `/v2/Mail` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP | GET | `@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts` | — |
-
+<h4 id="office365"><a href="../logic-apps/managed-office365.html"><code>office365</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_an_email_(V2)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/Mail</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('GRAPH_ENDPOINT')}/v1.0/security/incidents/@{triggerBody()?['object']?['properties']?['providerIncidentId']}?$expand=alerts</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -116,8 +142,8 @@
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Incident-Email-XDRPortal%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Incident-Email-XDRPortal%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Incident-Email-XDRPortal%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FSend-Incident-Email-XDRPortal%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a>
 <br><br></p>
 <h2 id="post-deployment-instructions">Post-deployment Instructions</h2>
 <h3 id="authorize-connections">Authorize connections</h3>
@@ -156,17 +182,20 @@ Write-Host &quot;Assigned permissions to Managed Identity Service Principal.&quo
 </code></pre>
 <h3 id="b-attach-the-playbook">b. Attach the playbook</h3>
 <ol>
-<li>In Microsoft Sentinel, configure an automation rule to trigger this playbook when an incident is created.
-   - <a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></li>
+<li>In Microsoft Sentinel, configure an automation rule to trigger this playbook when an incident is created.<ul>
+<li><a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></li>
+</ul>
+</li>
 </ol>
 <h2 id="screenshots">Screenshots</h2>
 <p><strong>Playbook</strong><br>
-<img alt="Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Email-XDRPortal/images/LightPlaybook_SendEmailXDR.png" /></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Email-XDRPortal/images/LightPlaybook_SendEmailXDR.png" alt="Playbook" /></p>
 <p><strong>Email</strong><br>
-<img alt="Email" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Email-XDRPortal/images/LightEmail_SendEmailXDR.png" /></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Send-Incident-Email-XDRPortal/images/LightEmail_SendEmailXDR.png" alt="Email" /></p>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
+
 </div>
 
 </body>

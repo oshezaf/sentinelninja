@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>URL Trigger Entity Analyzer &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="url-trigger-entity-analyzer">URL Trigger Entity Analyzer</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook is triggered manually when a URL entity is selected in a Microsoft Sentinel incident and provides detailed security insights including classification, analysis results, and recommendations.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,41 +47,67 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-sentinelmcp.html"><code>sentinelmcp</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-sentinelmcp.html"><code>sentinelmcp</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-
-#### [`sentinelmcp`](../logic-apps/managed-sentinelmcp.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| URL_Analyzer | post | `/aiprimitives/analysis` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sentinelmcp"><a href="../logic-apps/managed-sentinelmcp.html"><code>sentinelmcp</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">URL_Analyzer</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/aiprimitives/analysis</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -91,48 +117,62 @@
 <h1 id="url-entity-analyzer---microsoft-sentinel-playbook">URL Entity Analyzer - Microsoft Sentinel Playbook</h1>
 <p>Activating the 'Deploy' button initiates the deployment of an Azure Logic App integrated with Microsoft Sentinel MCP Actions, utilizing a Microsoft Sentinel entity trigger.
 The Logic App is configured to run manually when a URL entity is selected in a Sentinel incident. This Logic App analyzes suspicious URLs and provides detailed security insights including classification, analysis results, and recommendations.</p>
-<p><img alt="Deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/deployment.png" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/deployment.png" alt="Deployment" /></p>
 <p><strong>Important Note:</strong> As of now, this playbook only works when triggered from the <strong>Microsoft Sentinel portal in Azure</strong>. It is not currently supported in the Defender portal.</p>
-<p>The playbook can be manually triggered when:
-- A URL entity is identified in a Microsoft Sentinel incident
-- Security analysts need detailed analysis of suspicious URLs
-- Automated threat intelligence is required for URL-based investigations</p>
-<p>After the analysis is complete, the MCP Entity Analyzer conducts a comprehensive investigation of the URL entity and automatically adds a detailed comment to the incident with:
-- <strong>Classification</strong>: Security classification of the URL
-- <strong>Entity Type</strong>: Confirmation of the URL entity type
-- <strong>Analysis Result</strong>: Detailed security analysis findings
-- <strong>Recommendation</strong>: Security recommendations based on the analysis
-- <strong>Disclaimer</strong>: AI-generated analysis disclaimer
-- <strong>Data Sources</strong>: List of data sources used in the analysis</p>
+<p>The playbook can be manually triggered when:</p>
+<ul>
+<li>A URL entity is identified in a Microsoft Sentinel incident</li>
+<li>Security analysts need detailed analysis of suspicious URLs</li>
+<li>Automated threat intelligence is required for URL-based investigations</li>
+</ul>
+<p>After the analysis is complete, the MCP Entity Analyzer conducts a comprehensive investigation of the URL entity and automatically adds a detailed comment to the incident with:</p>
+<ul>
+<li><strong>Classification</strong>: Security classification of the URL</li>
+<li><strong>Entity Type</strong>: Confirmation of the URL entity type</li>
+<li><strong>Analysis Result</strong>: Detailed security analysis findings</li>
+<li><strong>Recommendation</strong>: Security recommendations based on the analysis</li>
+<li><strong>Disclaimer</strong>: AI-generated analysis disclaimer</li>
+<li><strong>Data Sources</strong>: List of data sources used in the analysis</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>Prior to beginning the installation process, it's crucial to confirm that you have met the following prerequisites:
-- The user deploying this Logic App needs to have a <strong>Contributor Role</strong>
-- The user has permissions to access <strong>Microsoft Sentinel</strong> workspace
-- You have the <strong>Workspace ID</strong> for your Sentinel environment
-- The <strong>SentinelMCP connector</strong> is available in your environment
-- Access to <strong>Microsoft Sentinel portal in Azure</strong> (not Defender portal)</p>
+<p>Prior to beginning the installation process, it's crucial to confirm that you have met the following prerequisites:</p>
+<ul>
+<li>The user deploying this Logic App needs to have a <strong>Contributor Role</strong></li>
+<li>The user has permissions to access <strong>Microsoft Sentinel</strong> workspace</li>
+<li>You have the <strong>Workspace ID</strong> for your Sentinel environment</li>
+<li>The <strong>SentinelMCP connector</strong> is available in your environment</li>
+<li>Access to <strong>Microsoft Sentinel portal in Azure</strong> (not Defender portal)</li>
+</ul>
 <h3 id="parameters">Parameters</h3>
-<p>During deployment, you'll need to provide:
-- <strong>PlaybookName</strong>: Name for the Logic App (default: "Entity-analyzer-Url-Trigger")
-- <strong>lookBackDays</strong>: Number of days to look back for entity analysis (default: 10 days)
-- <strong>workspaceId</strong>: Your Microsoft Sentinel workspace ID (required)</p>
+<p>During deployment, you'll need to provide:</p>
+<ul>
+<li><strong>PlaybookName</strong>: Name for the Logic App (default: &quot;Entity-analyzer-Url-Trigger&quot;)</li>
+<li><strong>lookBackDays</strong>: Number of days to look back for entity analysis (default: 10 days)</li>
+<li><strong>workspaceId</strong>: Your Microsoft Sentinel workspace ID (required)</li>
+</ul>
 <h3 id="deployment">Deployment</h3>
-<p>To deploy the URL Entity Analyzer Logic App:
-1. Press on the Deploy button below
-2. Select your subscription and resource group (use the same tenant where Microsoft Sentinel is configured)
-3. Provide the required Workspace ID parameter
-4. Configure the lookBackDays parameter if needed (default is 10 days)</p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FUrl-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FUrl-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a></p>
+<p>To deploy the URL Entity Analyzer Logic App:</p>
+<ol>
+<li>Press on the Deploy button below</li>
+<li>Select your subscription and resource group (use the same tenant where Microsoft Sentinel is configured)</li>
+<li>Provide the required Workspace ID parameter</li>
+<li>Configure the lookBackDays parameter if needed (default is 10 days)</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FUrl-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FUrl-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" alt="Deploy to Azure Gov" /></a></p>
 <h3 id="post-deployment">Post Deployment</h3>
-<p>After successful deployment:
-- The Logic App will be automatically enabled and ready to use
-- <strong>Authenticate the connections</strong>: Go to the Logic App → API connections and authenticate:
-  - <strong>Microsoft Sentinel connection</strong>: Authenticate with a user that has Sentinel permissions
-  - <strong>SentinelMCP connection</strong>: Authenticate with Microsoft Sentinel MCP permissions
-- The playbook will be available to run manually from incident entities
-- Results will be automatically added as comments to the relevant incidents</p>
-<p><img alt="Logic App Designer" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/logicapp_dis.png" /></p>
+<p>After successful deployment:</p>
+<ul>
+<li>The Logic App will be automatically enabled and ready to use</li>
+<li><strong>Authenticate the connections</strong>: Go to the Logic App → API connections and authenticate:<ul>
+<li><strong>Microsoft Sentinel connection</strong>: Authenticate with a user that has Sentinel permissions</li>
+<li><strong>SentinelMCP connection</strong>: Authenticate with Microsoft Sentinel MCP permissions</li>
+</ul>
+</li>
+<li>The playbook will be available to run manually from incident entities</li>
+<li>Results will be automatically added as comments to the relevant incidents</li>
+</ul>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/logicapp_dis.png" alt="Logic App Designer" /></p>
 <h3 id="how-to-run-the-playbook">How to Run the Playbook</h3>
 <p>To manually trigger the URL Entity Analyzer:</p>
 <ol>
@@ -144,7 +184,7 @@ The Logic App is configured to run manually when a URL entity is selected in a S
 <li>Select <strong>Entity-analyzer-Url-Trigger</strong> from the playbook list</li>
 <li>The analysis will run and results will be added as a comment to the incident</li>
 </ol>
-<p><img alt="Run Playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/trigger.png" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Url-Trigger-Entity-Analyzer/images/trigger.png" alt="Run Playbook" /></p>
 <h3 id="how-it-works">How It Works</h3>
 <ol>
 <li><strong>Manual Trigger</strong>: The Logic App is manually triggered when a security analyst selects a URL entity in a Sentinel incident and runs the playbook</li>
@@ -152,8 +192,9 @@ The Logic App is configured to run manually when a URL entity is selected in a S
 </ol>
 <p><em>[Content truncated...]</em></p>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
+
 </div>
 
 </body>

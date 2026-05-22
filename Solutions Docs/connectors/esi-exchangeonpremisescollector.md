@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [ESI-ExchangeOnPremisesCollector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises/Data%20Connectors/ESI-ExchangeOnPremisesCollector.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#exchange-security-insights-on-premises-collector) |
 
 Connector used to push Exchange On-Premises Security configuration for Microsoft Sentinel Analysis
 

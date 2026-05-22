@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [OrcaSecurityAlerts.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Orca%20Security%20Alerts/Data%20Connectors/OrcaSecurityAlerts.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#orca-security-alerts) |
 
 The Orca Security Alerts connector allows you to easily export Alerts logs to Microsoft Sentinel.
 

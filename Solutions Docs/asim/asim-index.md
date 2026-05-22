@@ -1,4 +1,4 @@
-# <img src="../images/asim-badge.png" alt="ASIM" height="32"> ASIM Parsers Index
+# <img src="../images/asim-badge.png" alt="ASIM" style="height:32px;width:auto;vertical-align:middle"> ASIM Parsers Index
 
 The Advanced Security Information Model (ASIM) provides a layer of abstraction between the various data sources and the user. ASIM parsers normalize data from different sources to a common schema, enabling queries that work across multiple data sources.
 

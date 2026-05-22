@@ -19,6 +19,7 @@
 | **Connector Definition Files** | [Forcepoint%20DLP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20DLP/Data%20Connectors/Forcepoint%20DLP.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#forcepoint-dlp) |
 
 The Forcepoint DLP (Data Loss Prevention) connector allows you to automatically export DLP incident data from Forcepoint DLP into Microsoft Sentinel in real-time. This enriches visibility into user activities and data loss incidents, enables further correlation with data from Azure workloads and other feeds, and improves monitoring capability with Workbooks inside Microsoft Sentinel.
 

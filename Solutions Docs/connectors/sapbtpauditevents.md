@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [SAPBTP_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_DataConnectorDefinition.json) |
 | **CCF Configuration** | [SAPBTP_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20BTP/Data%20Connectors/SAPBTPPollerConnector/SAPBTP_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#sap-btp) |
 
 SAP Business Technology Platform (SAP BTP) brings together data management, analytics, artificial intelligence, application development, automation, and integration in one, unified environment.
 

@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NetworkCustomAnalyticsprotocolCL &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="networkcustomanalytics_protocol_cl">NetworkCustomAnalytics_protocol_CL</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <blockquote>
 <p><strong>Internal Use Table:</strong> This table is created and used internally by the <a href="../solutions/network-session-essentials.html">Network Session Essentials</a> solution. It is written to by playbooks for solution-specific data storage.</p>
@@ -27,22 +27,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Internal</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Internal</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Custom Log V1</strong></td>
-<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+  <td style="text-align:left"><strong>Custom Log V1</strong></td>
+  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 </tbody>
 </table>
@@ -57,46 +57,46 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">count__d</td>
-<td style="text-align: left;">int</td>
+  <td style="text-align:left">count__d</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
-<td style="text-align: left;">DstAppName_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">DstAppName_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">DstPortNumber_d</td>
-<td style="text-align: left;">int</td>
+  <td style="text-align:left">DstPortNumber_d</td>
+  <td style="text-align:left">int</td>
 </tr>
 <tr>
-<td style="text-align: left;">DvcAction_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">DvcAction_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventTime_t</td>
-<td style="text-align: left;">datetime</td>
+  <td style="text-align:left">EventTime_t</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">NetworkDirection_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">NetworkDirection_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">NetworkProtocol_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">NetworkProtocol_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
 </tr>
 </tbody>
 </table>
@@ -112,22 +112,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/network-session-essentials-anomaly-found-in-network-session-traffic-asim-network-session-schema-cd6def0d-3ef0-4d55-a7e3-faa96c46ba12-0317d139.html">Anomaly found in Network Session Traffic (ASIM Network Session schema)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-session-essentials-anomaly-found-in-network-session-traffic-asim-network-session-schema-cd6def0d-3ef0-4d55-a7e3-faa96c46ba12-0317d139.html">Anomaly found in Network Session Traffic (ASIM Network Session schema)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-based-detection-asim-network-session-schema-cbf07406-fa2a-48b0-82b8-efad58db14ec-0bc6af2a.html">Detect port misuse by anomaly based detection (ASIM Network Session schema)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-based-detection-asim-network-session-schema-cbf07406-fa2a-48b0-82b8-efad58db14ec-0bc6af2a.html">Detect port misuse by anomaly based detection (ASIM Network Session schema)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/network-session-essentials-detect-port-misuse-by-static-threshold-asim-network-session-schema-156997bd-da0f-4729-b47a-0a3e02dd50c8-8ef7d8bb.html">Detect port misuse by static threshold (ASIM Network Session schema)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-static-threshold-asim-network-session-schema-156997bd-da0f-4729-b47a-0a3e02dd50c8-8ef7d8bb.html">Detect port misuse by static threshold (ASIM Network Session schema)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -136,18 +136,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-asim-network-session-schema-906c20c6-b62c-4af7-be91-d7300e3bded2-d8a6fcbc.html">Detect port misuse by anomaly (ASIM Network Session schema)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-anomaly-asim-network-session-schema-906c20c6-b62c-4af7-be91-d7300e3bded2-d8a6fcbc.html">Detect port misuse by anomaly (ASIM Network Session schema)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/network-session-essentials-detect-port-misuse-by-static-threshold-asim-network-session-schema-70e2a349-87f0-4266-809c-e92fc71e0830-c23666f7.html">Detect port misuse by static threshold (ASIM Network Session schema)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-session-essentials-detect-port-misuse-by-static-threshold-asim-network-session-schema-70e2a349-87f0-4266-809c-e92fc71e0830-c23666f7.html">Detect port misuse by static threshold (ASIM Network Session schema)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -156,14 +156,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/network-session-essentials-networksessionessentials-5de17c97.html">NetworkSessionEssentials</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-session-essentials-networksessionessentials-5de17c97.html">NetworkSessionEssentials</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -171,24 +171,25 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -18,6 +18,7 @@
 | **CCF Configuration** | [QualysKB_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Qualys%20VM%20Knowledgebase/Data%20Connectors/QualysKB_ccf/QualysKB_PollingConfig.json) |
 | **CCF Capabilities** | `Basic` |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#qualys-knowledge-base-via-codeless-connector-framework) |
 
 Ingest Qualys Knowledge Base Vulnerability Data into Microsoft Sentinel using version 4.0 of the Qualys API.
 

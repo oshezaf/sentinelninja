@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AWS Systems Manager - Stop Managed EC2 Instances Host Entity Trigger &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="aws-systems-manager---stop-managed-ec2-instances-host-entity-trigger">AWS Systems Manager - Stop Managed EC2 Instances Host Entity Trigger</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook can be used by SOC Analysts to stop malicious or compromised EC2 instances in AWS. The playbook can be triggered from a Host entity context in an incident. The playbook takes the Hostname and stops the managed EC2 instances using the Instance ID. The playbook also adds a comment to the incident with instance that was stopped.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/aws-systems-manager.html">AWS Systems Manager</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/aws-systems-manager.html">AWS Systems Manager</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-StopManagedInstance-HostEntityTrigger/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Systems%20Manager/Playbooks/AWSSystemsManagerPlaybooks/AWS-SSM-StopManagedInstance-HostEntityTrigger/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,46 +47,97 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">6</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">6</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-
-#### [`function`](../logic-apps/builtin-function.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Create_Automation_Shutdown_Document | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/CreateDocument')]` |
-| DeleteDocument | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/DeleteDocument')]` |
-| GetAutomationExecution | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]` |
-| StartAutomationExecution | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]` |
-| GetAutomationExecution_again | — | — | functionId=`[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]` |
-| GetInventory | — | — | functionId=`/subscriptions/4383ac89-7cd1-48c1-8061-b0b3c5ccfd97/resourceGroups/awssystemsmanager/providers/Microsoft.Web/sites/AWSSystemsManager/functions/GetInventory` |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Create_Automation_Shutdown_Document</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat(variables('AWSSSMFuntionsAppId'), '/functions/CreateDocument')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">DeleteDocument</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat(variables('AWSSSMFuntionsAppId'), '/functions/DeleteDocument')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">GetAutomationExecution</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">StartAutomationExecution</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat(variables('AWSSSMFuntionsAppId'), '/functions/StartAutomationExecution')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">GetAutomationExecution_again</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat(variables('AWSSSMFuntionsAppId'), '/functions/GetAutomationExecution')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">GetInventory</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>/subscriptions/4383ac89-7cd1-48c1-8061-b0b3c5ccfd97/resourceGroups/awssystemsmanager/providers/Microsoft.Web/sites/AWSSystemsManager/functions/GetInventory</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -108,7 +159,7 @@
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Prior to the deployment of this playbook, <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/">AWS Systems Manager API Function App Connector</a> needs to be deployed under the same subscription.</li>
-<li>Refer to <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/readme.html">AWS Systems Manager API Function App Connector</a> documentation to obtain AWS Access Key ID, Secret Access Key and Region. </li>
+<li>Refer to <a href="../../CustomConnector/AWS_SSM_FunctionAppConnector/readme.html">AWS Systems Manager API Function App Connector</a> documentation to obtain AWS Access Key ID, Secret Access Key and Region.</li>
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
@@ -119,7 +170,7 @@
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-StopManagedInstance-HostEntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-StopManagedInstance-HostEntityTrigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-StopManagedInstance-HostEntityTrigger%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAWS%2520Systems%2520Manager%2FPlaybooks%2FAWSSystemsManagerPlaybooks%2FAWS-SSM-StopManagedInstance-HostEntityTrigger%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
@@ -153,8 +204,9 @@
 <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html">AWS Systems Manager Boto3 Documentation</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/aws-systems-manager.html">Back to AWS Systems Manager</a></p>
+
 </div>
 
 </body>

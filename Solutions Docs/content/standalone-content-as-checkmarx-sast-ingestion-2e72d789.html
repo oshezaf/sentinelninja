@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AS-Checkmarx-SAST-Ingestion &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="as-checkmarx-sast-ingestion">AS-Checkmarx-SAST-Ingestion</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook ingests Checkmarx SAST scan findings into a custom Microsoft Sentinel table on a daily schedule. This single template deploys the custom Log Analytics table, Data Collection Endpoint, Data Collection Rule, Key Vault API connection, Logic App, and all required role assignments.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/AS-Checkmarx-SAST-Ingestion/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/AS-Checkmarx-SAST-Ingestion/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,49 +47,91 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('KeyVaultSecretName'), ''')}/value')]` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP_-_Get_Token | POST | `[concat(parameters('CheckmarxIAMBaseUrl'), '/auth/realms/', parameters('CheckmarxTenant'), '/protocol/openid-connect/token')]` | — |
-| HTTP_-_Get_Scans_Page | GET | `[concat(parameters('CheckmarxASTBaseUrl'), '/api/scans?statuses=Completed&from-date=@{variables(''FromDate'')}&limit=@{variables(''ScanPageSize'')}&offset=@{variables(''ScanOffset'')}')]` | — |
-| HTTP_-_Get_SAST_Results_Page | GET | `[concat(parameters('CheckmarxASTBaseUrl'), '/api/sast-results/?scan-id=@{items(''For_Each_Scan'')?[''id'']}')]` | — |
-| HTTP_-_Send_SAST_Batch_to_DCR | POST | `[concat(reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('dataCollectionEndpointName'))).logsIngestion.endpoint, '/dataCollectionRules/', reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('dataCollectionRuleName'))).immutableId, '/streams/', variables('streamName'), '?api-version=2023-01-01')]` | — |
-
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>[concat('/secrets/@{encodeURIComponent(''', parameters('KeyVaultSecretName'), ''')}/value')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_Token</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[concat(parameters('CheckmarxIAMBaseUrl'), '/auth/realms/', parameters('CheckmarxTenant'), '/protocol/openid-connect/token')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_Scans_Page</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>[concat(parameters('CheckmarxASTBaseUrl'), '/api/scans?statuses=Completed&amp;from-date=@{variables(''FromDate'')}&amp;limit=@{variables(''ScanPageSize'')}&amp;offset=@{variables(''ScanOffset'')}')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_SAST_Results_Page</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>[concat(parameters('CheckmarxASTBaseUrl'), '/api/sast-results/?scan-id=@{items(''For_Each_Scan'')?[''id'']}')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Send_SAST_Batch_to_DCR</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[concat(reference(resourceId('Microsoft.Insights/dataCollectionEndpoints', variables('dataCollectionEndpointName'))).logsIngestion.endpoint, '/dataCollectionRules/', reference(resourceId('Microsoft.Insights/dataCollectionRules', variables('dataCollectionRuleName'))).immutableId, '/streams/', variables('streamName'), '?api-version=2023-01-01')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

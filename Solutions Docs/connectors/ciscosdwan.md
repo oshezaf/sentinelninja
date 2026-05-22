@@ -16,6 +16,7 @@
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CiscoSDWAN.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN/Data%20Connectors/CiscoSDWAN.json) |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cisco-software-defined-wan) |
 
 The Cisco Software Defined WAN(SD-WAN) data connector provides the capability to ingest [Cisco SD-WAN](https://www.cisco.com/c/en_in/solutions/enterprise-networks/sd-wan/index.html) Syslog and Netflow data into Microsoft Sentinel.
 

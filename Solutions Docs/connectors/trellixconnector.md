@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [Trellix_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/Trellix_DataConnectorDefinition.json) |
 | **CCF Configuration** | [Trellix_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/Trellix_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#trellix-endpoint-security-via-codeless-connector-framework) |
 
 The [Trellix Endpoint Security](https://www.trellix.com/) data connector enables you to ingest security events from Trellix ePO (ePolicy Orchestrator) into Microsoft Sentinel. This connector uses OAuth2 client credentials authentication and automatically handles pagination to collect comprehensive endpoint security data including threat detections, analyzer information, source and target system details, and threat response actions.
 

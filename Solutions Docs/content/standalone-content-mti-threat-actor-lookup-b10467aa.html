@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MTI Threat Actor Lookup &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="mti-threat-actor-lookup">MTI Threat Actor Lookup</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>To be deployed with the bundled function app to automate infrastructure chaining with the MTI API</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/MDTI-Actor-Lookup/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/MDTI-Actor-Lookup/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,99 +47,250 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">12</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">12</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-securitycopilot.html"><code>securitycopilot</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-securitycopilot.html"><code>securitycopilot</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_Hosts | post | `/entities/host` | — |
-| Entities_-_Get_IPs | post | `/entities/ip` | — |
-| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
-| Update_incident_2 | put | `/Incidents` | — |
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Update_incident | put | `/Incidents` | — |
-| Add_comment_to_incident_(V3)_1 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_4 | post | `/Incidents/Comment` | — |
-| Update_incident_1 | put | `/Incidents` | — |
-| Add_comment_to_incident_(V3)_5 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_6 | post | `/Incidents/Comment` | — |
-| Update_incident_3 | put | `/Incidents` | — |
-
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_secret | get | `/secrets/@{encodeURIComponent('MechanicsDemo-AzureFunction')}/value` | — |
-
-#### [`securitycopilot`](../logic-apps/managed-securitycopilot.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Submit_a_Copilot_for_Security_prompt_2 | post | `/process-prompt` | — |
-| Submit_a_Copilot_for_Security_prompt_1 | post | `/process-prompt` | — |
-| Submit_a_Copilot_for_Security_prompt | post | `/process-prompt` | — |
-| Submit_a_Copilot_for_Security_prompt_4 | post | `/process-prompt` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| MDTI_API_Hosts | GET | `https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each')?['HostName']}.@{items('For_each')?['DnsDomain']}/reputation` | — |
-| MDTI_API_IPs | GET | `https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each_2')?['Address']}/reputation` | — |
-| Function_App_call | POST | `@{parameters('Function App URL')}item=@{items('For_each_3')?['Address']}&code=@{body('Get_secret')?['value']}` | — |
-| Function_App_call_1 | POST | `@{parameters('Function App URL')}item=@{item()?['HostName']}.@{item()?['DnsDomain']}&code=@{body('Get_secret')?['value']}` | — |
-
-#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| MDTI-Base | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/MDTI-Base')]`<br>triggerName=`manual` |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_IPs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/ip</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_2</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_1</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_4</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_1</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_5</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_6</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_3</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('MechanicsDemo-AzureFunction')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="securitycopilot"><a href="../logic-apps/managed-securitycopilot.html"><code>securitycopilot</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Submit_a_Copilot_for_Security_prompt_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/process-prompt</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Submit_a_Copilot_for_Security_prompt_1</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/process-prompt</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Submit_a_Copilot_for_Security_prompt</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/process-prompt</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Submit_a_Copilot_for_Security_prompt_4</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/process-prompt</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">MDTI_API_Hosts</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each')?['HostName']}.@{items('For_each')?['DnsDomain']}/reputation</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDTI_API_IPs</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/security/threatIntelligence/hosts/@{items('For_each_2')?['Address']}/reputation</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Function_App_call</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Function App URL')}item=@{items('For_each_3')?['Address']}&amp;code=@{body('Get_secret')?['value']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Function_App_call_1</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Function App URL')}item=@{item()?['HostName']}.@{item()?['DnsDomain']}&amp;code=@{body('Get_secret')?['value']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">MDTI-Base</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/MDTI-Base')]</code><br>triggerName=<code>manual</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

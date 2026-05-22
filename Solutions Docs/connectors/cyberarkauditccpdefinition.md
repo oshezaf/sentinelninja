@@ -18,6 +18,7 @@
 | **CCF Configuration** | [CyberArkAudit_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit/Data%20Connectors/CyberArkAudit_CCP/CyberArkAudit_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST`, `Nested` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cyberark-audit) |
 
 The [CyberArk Audit](https://docs.cyberark.com/Audit/Latest/en/Content/Resources/_TopNav/cc_Home.htm) data connector enables Microsoft Sentinel to ingest security event logs and other events from the CyberArk Audit service via REST API. This integration helps you detect potential security risks, monitor user activity, analyze collaboration patterns, troubleshoot configuration issues, and gain deeper insights into your environment.
 

@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [AWSELBConnector_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_ConnectorDefinition.json) |
 | **CCF Configuration** | [AWSELBConnector_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#amazon-web-services-elastic-load-balancing-via-codeless-connector-framework) |
 
 The AWS Elastic Load Balancing (ELB) connector for Microsoft Sentinel allows you to ingest access logs and flow logs from AWS Application Load Balancers (ALB), Network Load Balancers (NLB), and Gateway Load Balancers (GLB) into Microsoft Sentinel. These logs provide detailed information about requests processed by your load balancers and VPC traffic flows, enabling security monitoring, threat detection, and traffic analysis.
 

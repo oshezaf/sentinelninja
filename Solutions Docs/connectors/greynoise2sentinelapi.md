@@ -13,9 +13,10 @@
 | **Connector ID** | `GreyNoise2SentinelAPI` |
 | **Publisher** | GreyNoise, Inc. and BlueCycle LLC |
 | **Used in Solutions** | [GreyNoiseThreatIntelligence](../solutions/greynoisethreatintelligence.md) |
-| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [GreyNoiseConnector_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence/Data%20Connectors/GreyNoiseConnector_UploadIndicatorsAPI.json) |
 | **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector code references STIX 2.1 Upload Indicators API endpoint (matched 'api.ti.sentinel.azure.com')* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#greynoise-threat-intelligence) |
 
 This Data Connector installs an Azure Function app to download GreyNoise indicators once per day and inserts them into the ThreatIntelIndicators table in Microsoft Sentinel.
 

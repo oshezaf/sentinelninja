@@ -20,8 +20,7 @@ Data connectors use different collection methods to ingest data into Microsoft S
 | [Native](methods/native.md) | **18** | 18 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Unknown](methods/unknown.md) | **15** | 14 | 0 | 1 |
-| [Azure Function (TI Upload API)|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | **13** | 9 | 1 | 3 |
-| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **2** | 2 | 0 | 0 |
+| [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 0 | 0 | 1 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
 | **Total** | **615** | **415** | **151** | **49** |
@@ -65,9 +64,8 @@ API-based connectors (CCF Push, Azure Function, REST Push API, and Custom Log) u
 | [Azure Function](methods/azure-function.md) | 42 | 75 | 3 | **120** |
 | [REST Pull API](methods/rest-pull-api.md) | - | 50 | - | **50** |
 | [CCF Push](methods/ccf-push.md) | 36 | - | - | **36** |
-| [Azure Function (TI Upload API)\|Azure Function](methods/azure-function-ti-upload-api-azure-function.md) | - | - | - | **0** |
-| [CCF](methods/ccf.md) | 8 | - | - | **8** |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | - | - | - | **0** |
+| [CCF](methods/ccf.md) | 8 | - | - | **8** |
 | **Total** | **86** | **125** | **3** | **234** |
 
 ---

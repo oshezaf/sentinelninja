@@ -4,51 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AppServiceHTTPLogs &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="appservicehttplogs">AppServiceHTTPLogs</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for AppServiceHTTPLogs table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicehttplogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appservicehttplogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,141 +64,141 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">CIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the client</td>
+  <td style="text-align:left">CIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the client</td>
 </tr>
 <tr>
-<td style="text-align: left;">ComputerName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the server on which the log file entry was generated.</td>
+  <td style="text-align:left">ComputerName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the server on which the log file entry was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Cookie</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Cookie on HTTP request</td>
+  <td style="text-align:left">Cookie</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cookie on HTTP request</td>
 </tr>
 <tr>
-<td style="text-align: left;">CsBytes</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Number of bytes received by server</td>
+  <td style="text-align:left">CsBytes</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Number of bytes received by server</td>
 </tr>
 <tr>
-<td style="text-align: left;">CsHost</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Host name header on HTTP request</td>
+  <td style="text-align:left">CsHost</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Host name header on HTTP request</td>
 </tr>
 <tr>
-<td style="text-align: left;">CsMethod</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The request HTTP verb</td>
+  <td style="text-align:left">CsMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The request HTTP verb</td>
 </tr>
 <tr>
-<td style="text-align: left;">CsUriQuery</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URI query on HTTP request</td>
+  <td style="text-align:left">CsUriQuery</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URI query on HTTP request</td>
 </tr>
 <tr>
-<td style="text-align: left;">CsUriStem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The target of the request</td>
+  <td style="text-align:left">CsUriStem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The target of the request</td>
 </tr>
 <tr>
-<td style="text-align: left;">CsUsername</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the authenticated user on HTTP request</td>
+  <td style="text-align:left">CsUsername</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the authenticated user on HTTP request</td>
 </tr>
 <tr>
-<td style="text-align: left;">Referer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The site that the user last visited. This site provided a link to the current site</td>
+  <td style="text-align:left">Referer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The site that the user last visited. This site provided a link to the current site</td>
 </tr>
 <tr>
-<td style="text-align: left;">Result</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Success / Failure of HTTP request</td>
+  <td style="text-align:left">Result</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Success / Failure of HTTP request</td>
 </tr>
 <tr>
-<td style="text-align: left;">ScBytes</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Number of bytes sent by server</td>
+  <td style="text-align:left">ScBytes</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Number of bytes sent by server</td>
 </tr>
 <tr>
-<td style="text-align: left;">ScStatus</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">HTTP status code</td>
+  <td style="text-align:left">ScStatus</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">HTTP status code</td>
 </tr>
 <tr>
-<td style="text-align: left;">ScSubStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Substatus error code on HTTP request</td>
+  <td style="text-align:left">ScSubStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Substatus error code on HTTP request</td>
 </tr>
 <tr>
-<td style="text-align: left;">ScWin32Status</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Windows status code on HTTP request</td>
+  <td style="text-align:left">ScWin32Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Windows status code on HTTP request</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SPort</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Server port number</td>
+  <td style="text-align:left">SPort</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Server port number</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time when event is generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time when event is generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeTaken</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Time taken by HTTP request in milliseconds</td>
+  <td style="text-align:left">TimeTaken</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Time taken by HTTP request in milliseconds</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User agent on HTTP request</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User agent on HTTP request</td>
 </tr>
 </tbody>
 </table>
@@ -215,14 +215,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-appservicehttplogs-f9949656-473f-4503-bf43-a9d9890f7d08-106c6a94.html">TI map IP entity to AppServiceHTTPLogs</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-ti-map-ip-entity-to-appservicehttplogs-f9949656-473f-4503-bf43-a9d9890f7d08-106c6a94.html">TI map IP entity to AppServiceHTTPLogs</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -230,14 +230,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-7ce08041.html">TI map IP entity to AppServiceHTTPLogs</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-7ce08041.html">TI map IP entity to AppServiceHTTPLogs</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -246,14 +246,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -263,8 +263,9 @@
 <li><code>microsoft.web/sites</code></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

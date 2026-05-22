@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="as-blob-storage-add-domains-to-zscaler-url-category">AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will use Azure blob storage to maintain a Zscaler custom URL category of your choice. If the azure blob storage is modified, the Zscaler URL category values will be updated to match.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/AS-Blob-Storage-Add-Domains-to-Zscaler-URL-Category/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,59 +47,121 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">7</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">7</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Secret_-_Password | get | `/secrets/@{encodeURIComponent('AS-Zscaler-Integration-Password')}/value` | — |
-| Get_Secret_API_Key | get | `/secrets/@{encodeURIComponent('AS-Zscaler-Integration-API-Key')}/value` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP-_Activate_Changes | POST | `[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/status/activate')]` | — |
-| HTTP-_Add_Blob_Domains | PUT | `[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories/@{variables(''URL Category Id'')}?action=ADD_TO_LIST')]` | — |
-| HTTP_-_Get_existing_URLs | GET | `[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories/@{variables(''URL Category Id'')}')]` | — |
-| HTTP_-_Remove_existing_urls | PUT | `[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories/@{variables(''URL Category Id'')}?action=REMOVE_FROM_LIST')]` | — |
-| HTTP-_Authenticate | POST | `[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/authenticatedSession')]` | — |
-| HTTP-_End_Session | DELETE | `[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/authenticatedSession')]` | — |
-| HTTP-_Get_URLCategories | GET | `[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories?customOnly=true')]` | — |
-
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Secret_-_Password</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('AS-Zscaler-Integration-Password')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Secret_API_Key</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('AS-Zscaler-Integration-API-Key')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP-_Activate_Changes</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/status/activate')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-_Add_Blob_Domains</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories/@{variables(''URL Category Id'')}?action=ADD_TO_LIST')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_existing_URLs</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories/@{variables(''URL Category Id'')}')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Remove_existing_urls</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories/@{variables(''URL Category Id'')}?action=REMOVE_FROM_LIST')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-_Authenticate</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/authenticatedSession')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-_End_Session</td>
+  <td style="text-align:left">DELETE</td>
+  <td style="text-align:left"><code>[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/authenticatedSession')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP-_Get_URLCategories</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>[concat('https://', parameters('ZscalerRootDomain'), '/api/v1/urlCategories?customOnly=true')]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

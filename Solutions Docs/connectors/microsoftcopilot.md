@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [MicrosoftCopilot_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot/Data%20Connectors/MicrosoftCopilot_ConnectorDefinition.json) |
 | **CCF Configuration** | [MicrosoftCopilot_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot/Data%20Connectors/MicrosoftCopilot_PollingConfig.json) |
 | **CCF Capabilities** | `PurviewAudit` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-copilot) |
 
 The Microsoft Copilot logs connector in Microsoft Sentinel enables seamless ingestion of Copilot-generated activity logs from M365 Copilot and Security Copilot into Microsoft Sentinel for advanced threat detection, investigation and response. It collects telemetry from Microsoft Copilot services such as usage data and system responses and ingests into Microsoft Sentinel, allowing security teams to monitor for misuse, detect anomalies, and maintain compliance with organizational policies.
 

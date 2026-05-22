@@ -4,53 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hosts Running a Rare Process with Commandline &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="hosts-running-a-rare-process-with-commandline">Hosts Running a Rare Process with Commandline</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This query searches for hosts running a rare process. A rare process has execution requency of less than 1% of the average for 30 days and less than a count of 100 on a given host or less than a 14 count on a given host from the last 7 days</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Hunting Query</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Hunting Query</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>5550b630-7b8a-444e-a585-ec8c7533c028</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>5550b630-7b8a-444e-a585-ec8c7533c028</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">Execution, Persistence, Discovery, LateralMovement, Collection</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">Execution, Persistence, Discovery, LateralMovement, Collection</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events/Hunting%20Queries/RareProcessWithCmdLine.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Security%20Events/Hunting%20Queries/RareProcessWithCmdLine.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -59,26 +59,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-<td style="text-align: left;"><code>EventID == "4688"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td style="text-align:left"><code>EventID == &quot;4688&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="hunting-queries.html">Back to Hunting Queries</a> · <a href="../solutions/windows-security-events.html">Back to Windows Security Events</a></p>
+
 </div>
 
 </body>

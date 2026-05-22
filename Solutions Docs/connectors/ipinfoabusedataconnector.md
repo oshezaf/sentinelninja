@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [IPinfo_Abuse_API_AzureFunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IPinfo/Data%20Connectors/Abuse/IPinfo_Abuse_API_AzureFunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Azure Function code uses LogsIngestionClient/Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#ipinfo-abuse-data-connector) |
 
 This IPinfo data connector installs an Azure Function app to download standard_abuse datasets and insert it into custom log table in Microsoft Sentinel
 

@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TacitRed to Defender TI &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="tacitred-to-defender-ti">TacitRed to Defender TI</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook ingests TacitRed threat intelligence into Microsoft Defender Threat Intelligence via an Azure Function. It runs on a recurring schedule, retrieves compromised credentials from TacitRed, and pushes indicators using the Upload API.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/tacitred-defender-threatintelligence.html">TacitRed-Defender-ThreatIntelligence</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/tacitred-defender-threatintelligence.html">TacitRed-Defender-ThreatIntelligence</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence/Playbooks/TacitRedToDefenderTI/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-Defender-ThreatIntelligence/Playbooks/TacitRedToDefenderTI/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,29 +47,42 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`function`](../logic-apps/builtin-function.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Call_Function_App | POST | — | functionId=`[concat(variables('functionAppId'), '/functions/TacitRedToDefenderTI')]` |
-
+<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Call_Function_App</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat(variables('functionAppId'), '/functions/TacitRedToDefenderTI')]</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -84,23 +97,27 @@
 <li><strong>Microsoft Sentinel workspace</strong> - Must be onboarded to Microsoft Sentinel</li>
 <li><strong>TacitRed API Key</strong> - Obtain from your TacitRed account</li>
 <li><strong>Azure Function App</strong> - Deployed automatically with this solution (note the FunctionAppName prefix used)</li>
-<li><strong>RBAC Permissions</strong>:
-   - Reader role on the workspace
-   - Microsoft Sentinel Contributor role on the workspace</li>
+<li><strong>RBAC Permissions</strong>:<ul>
+<li>Reader role on the workspace</li>
+<li>Microsoft Sentinel Contributor role on the workspace</li>
+</ul>
+</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
 <p>This playbook is deployed automatically as part of the TacitRed Defender Threat Intelligence solution from Microsoft Sentinel Content Hub.</p>
 <h3 id="manual-deployment">Manual Deployment</h3>
 <ol>
 <li>Click the <strong>Deploy to Azure</strong> button below</li>
-<li>Fill in the required parameters:
-   - <strong>Subscription</strong>: Your Azure subscription
-   - <strong>Resource Group</strong>: Target resource group
-   - <strong>PlaybookName</strong>: Name of the Logic App
-   - <strong>TacitRed API Key</strong>: Your TacitRed API key
-   - <strong>FunctionAppName</strong>: Prefix used when deploying the TacitRed Defender TI Function App (before uniqueString is applied)</li>
+<li>Fill in the required parameters:<ul>
+<li><strong>Subscription</strong>: Your Azure subscription</li>
+<li><strong>Resource Group</strong>: Target resource group</li>
+<li><strong>PlaybookName</strong>: Name of the Logic App</li>
+<li><strong>TacitRed API Key</strong>: Your TacitRed API key</li>
+<li><strong>FunctionAppName</strong>: Prefix used when deploying the TacitRed Defender TI Function App (before uniqueString is applied)</li>
+</ul>
+</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTacitRed-Defender-ThreatIntelligence%2FPlaybooks%2FTacitRedToDefenderTI%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTacitRed-Defender-ThreatIntelligence%2FPlaybooks%2FTacitRedToDefenderTI%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <h2 id="how-it-works">How It Works</h2>
 <ol>
 <li><strong>Scheduled Trigger</strong>: The Logic App runs on a configurable schedule (default: every 4 hours)</li>
@@ -125,31 +142,31 @@
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
-<th>Default</th>
+  <th>Parameter</th>
+  <th>Description</th>
+  <th>Default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>TacitRed_ApiKey</td>
-<td>Your TacitRed API key</td>
-<td>Required</td>
+  <td>TacitRed_ApiKey</td>
+  <td>Your TacitRed API key</td>
+  <td>Required</td>
 </tr>
 <tr>
-<td>FunctionAppName</td>
-<td>Prefix for the Azure Function App name</td>
-<td>tacitreddefenderti</td>
+  <td>FunctionAppName</td>
+  <td>Prefix for the Azure Function App name</td>
+  <td>tacitreddefenderti</td>
 </tr>
 <tr>
-<td>Domains</td>
-<td>Filter by specific domains (empty = all)</td>
-<td>[]</td>
+  <td>Domains</td>
+  <td>Filter by specific domains (empty = all)</td>
+  <td>[]</td>
 </tr>
 <tr>
-<td>DateRange</td>
-<td>How far back to look for findings</td>
-<td>30 days</td>
+  <td>DateRange</td>
+  <td>How far back to look for findings</td>
+  <td>30 days</td>
 </tr>
 </tbody>
 </table>
@@ -177,32 +194,33 @@
 <table>
 <thead>
 <tr>
-<th>Version</th>
-<th>Date</th>
-<th>Changes</th>
+  <th>Version</th>
+  <th>Date</th>
+  <th>Changes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>3.0.0</td>
-<td>2025-12-11</td>
-<td>Switched to ARM-based createIndicator API</td>
+  <td>3.0.0</td>
+  <td>2025-12-11</td>
+  <td>Switched to ARM-based createIndicator API</td>
 </tr>
 <tr>
-<td>2.0.0</td>
-<td>2025-11-10</td>
-<td>Added Function App for processing</td>
+  <td>2.0.0</td>
+  <td>2025-11-10</td>
+  <td>Added Function App for processing</td>
 </tr>
 <tr>
-<td>1.0.0</td>
-<td>2025-10-01</td>
-<td>Initial release</td>
+  <td>1.0.0</td>
+  <td>2025-10-01</td>
+  <td>Initial release</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/tacitred-defender-threatintelligence.html">Back to TacitRed-Defender-ThreatIntelligence</a></p>
+
 </div>
 
 </body>

@@ -18,6 +18,7 @@
 | **CCF Configuration** | [DataBahn_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Databahn/Data%20Connectors/DataBahn_PUSH_CCP/DataBahn_dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#databahn) |
 
 The [DataBahn](https://databahn.ai/) connector provides the capability to push real-time platform telemetry from your DataBahn environment directly into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. This connector ingests audit logs, operational alerts, and device inventory into custom Log Analytics tables for analysis, alerting, and visualization.
 

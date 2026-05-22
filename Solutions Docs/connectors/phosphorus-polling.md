@@ -16,6 +16,7 @@
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [PhosphorusDataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Phosphorus/Data%20Connectors/PhosphorusDataConnector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#phosphorus-devices) |
 
 The Phosphorus Device Connector provides the capability to Phosphorus to ingest device data logs into Microsoft Sentinel through the Phosphorus REST API. The Connector provides visibility into the devices enrolled in Phosphorus. This Data Connector pulls devices information along with its corresponding alerts.
 

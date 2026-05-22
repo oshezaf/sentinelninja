@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [GCPCloudSQLLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL/Data%20Connectors/GCPCloudSQLLog_CCF/GCPCloudSQLLog_ConnectorDefinition.json) |
 | **CCF Configuration** | [GCPCloudSQLLog_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL/Data%20Connectors/GCPCloudSQLLog_CCF/GCPCloudSQLLog_PollingConfig.json) |
 | **CCF Capabilities** | `GCP` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#gcp-cloud-sql-via-codeless-connector-framework) |
 
 The GCP Cloud SQL data connector provides the capability to ingest Audit logs into Microsoft Sentinel using the GCP Cloud SQL API. Refer to [GCP cloud SQL Audit Logs](https://cloud.google.com/sql/docs/mysql/audit-logging) documentation for more information.
 

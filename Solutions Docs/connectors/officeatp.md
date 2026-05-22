@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_OfficeATP.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20for%20Office%20365/Data%20Connectors/template_OfficeATP.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-defender-for-office-365-preview) |
 
 Microsoft Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. By ingesting Microsoft Defender for Office 365 alerts into Microsoft Sentinel, you can incorporate information about email- and URL-based threats into your broader risk analysis and build response scenarios accordingly.
 

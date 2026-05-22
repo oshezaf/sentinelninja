@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [mainTemplate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Package/mainTemplate.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-power-platform-admin-activity) |
 
 Microsoft Power Platform is a low-code/no-code suite empowering both citizen and pro developers to streamline business processes by enabling the creation of custom apps, automation of workflows, and data analysis with minimal coding. The Power Platform Admin data connector provides the capability to ingest Power Platform administrator activity logs from the Microsoft Purview Audit log into Microsoft Sentinel.
 

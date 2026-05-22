@@ -57,7 +57,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (1)
 
 ### Analytic Rules (1)
 
@@ -66,46 +66,6 @@ This table is used by the following solutions:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [Execution of software vulnerable to webp buffer overflow of CVE-2023-4863](../content/microsoft-defender-xdr-execution-of-software-vulnerable-to-webp-buffer-overflow-of-cve-2023-4863-26e81021-2de6-4442-a74a-a77885e96911-15de3ea9.md) |  |
-
-### Hunting Queries (5)
-
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Most Common Services](../content/github-only-most-common-services-4a5e9079-8fca-451a-99f5-a3384755a6e8-b20ac17e.md) |  |
-| [devices_with_vuln_and_users_received_payload](../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.md) |  |
-| [devices_with_vuln_and_users_received_payload (1)](../content/github-only-devices-with-vuln-and-users-received-payload-1-9c2ba784-c664-40f1-b0df-8f34c6626be5-4864d8ed.md) |  |
-| [known-affected-software-orion[Nobelium]](../content/github-only-known-affected-software-orion[nobelium]-720e10a2-d005-4d0d-bbae-0c31ed952d83-0691bd85.md) | `CveId == "TVM-2020-0002"` |
-| [possible-affected-software-orion[Nobelium]](../content/github-only-possible-affected-software-orion[nobelium]-ee0f4b76-c9dc-4d54-96c2-78145d6a0fe0-a0ec520c.md) | `SoftwareName startswith "orion"`<br>`SoftwareVendor == "solarwinds"` |
-
-## Selection Criteria Summary (2 criteria, 2 total references)
-
-References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `CveId == "TVM-2020-0002"` | - | 1 | - | - | **1** |
-| `SoftwareName startswith "orion"`<br>`SoftwareVendor == "solarwinds"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **2** | **0** | **0** | **2** |
-
-### CveId
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `TVM-2020-0002` | - | 1 | - | - | **1** |
-
-### SoftwareName
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `startswith orion` | - | 1 | - | - | **1** |
-
-### SoftwareVendor
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `solarwinds` | - | 1 | - | - | **1** |
 
 ---
 

@@ -4,60 +4,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Microsoft 365 Insider Risk Management &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="microsoft-365-insider-risk-management">Microsoft 365 Insider Risk Management</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>OfficeIRM</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>OfficeIRM</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Microsoft</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/native.html">Native</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/native.html">Native</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement/Data%20Connectors/template_OfficeIRM.JSON">template_OfficeIRM.JSON</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MicrosoftPurviewInsiderRiskManagement/Data%20Connectors/template_OfficeIRM.JSON">template_OfficeIRM.JSON</a></td>
 </tr>
 </tbody>
 </table>
 <p>Microsoft 365 Insider Risk Management is a compliance solution in Microsoft 365 that helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization. Risk analysts in your organization can quickly take appropriate actions to make sure users are compliant with your organization's compliance standards.</p>
 <p>Insider risk policies allow you to:</p>
 <ul>
-<li>
-<p>define the types of risks you want to identify and detect in your organization.</p>
+<li><p>define the types of risks you want to identify and detect in your organization.</p>
 </li>
-<li>
-<p>decide on what actions to take in response, including escalating cases to Microsoft Advanced eDiscovery if needed.</p>
+<li><p>decide on what actions to take in response, including escalating cases to Microsoft Advanced eDiscovery if needed.</p>
 </li>
 </ul>
 <p>This solution produces alerts that can be seen by Office customers in the Insider Risk Management solution in Microsoft 365 Compliance Center.</p>
@@ -68,29 +67,33 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-<td style="text-align: left;"><code>ProductName == "Microsoft 365 Insider Risk Management"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+  <td style="text-align:left"><code>ProductName == &quot;Microsoft 365 Insider Risk Management&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions.</li>
+</ul>
 <p><strong>Custom Permissions:</strong></p>
-<p><strong>Licenses:</strong>
-- Office Information Rights Management</p>
+<p><strong>Licenses:</strong></p>
+<ul>
+<li>Office Information Rights Management</li>
+</ul>
 <p><strong>Tenant Permissions:</strong>
 Requires GlobalAdmin, SecurityAdmin on the workspace's tenant</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
@@ -98,11 +101,14 @@ Requires GlobalAdmin, SecurityAdmin on the workspace's tenant</p>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Connect Microsoft 365 Insider Risk Management alerts to Microsoft Sentinel</strong></p>
-<p>Connecting Microsoft 365 Insider Risk Management will cause your data that is collected by Microsoft 365 Insider Risk Management service to be stored and processed in the location that you have configured your Microsoft Sentinel workspace.
-- Connect Microsoft 365 Insider Risk Management</p>
+<p>Connecting Microsoft 365 Insider Risk Management will cause your data that is collected by Microsoft 365 Insider Risk Management service to be stored and processed in the location that you have configured your Microsoft Sentinel workspace.</p>
+<ul>
+<li>Connect Microsoft 365 Insider Risk Management</li>
+</ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

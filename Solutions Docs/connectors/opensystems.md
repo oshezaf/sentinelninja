@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [OpenSystems.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems/DataConnectors/OpenSystems.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#open-systems-data-connector) |
 
 The Open Systems Logs API Microsoft Sentinel Connector provides the capability to ingest Open Systems logs into Microsoft Sentinel using Open Systems Logs API.
 

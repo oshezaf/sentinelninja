@@ -4,59 +4,60 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Detects several users with the same MAC address ASIM Network Session schema &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="detects-several-users-with-the-same-mac-address">Detects several users with the same MAC address (ASIM Network Session schema)</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Ideally one user should be associated with one MAC ID, this hunting query will identify if same MAC ID is associated with more than one user which can be a case of MAC spoofing attack.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Hunting Query</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Hunting Query</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/network-session-essentials.html">Network Session Essentials</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/network-session-essentials.html">Network Session Essentials</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>cbe10c58-e96b-4827-853e-5c1f22fdcc74</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>cbe10c58-e96b-4827-853e-5c1f22fdcc74</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">InitialAccess</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">InitialAccess</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/awss3.html">AWSS3</a>, <a href="../connectors/microsoftthreatprotection.html">MicrosoftThreatProtection</a>, <a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a>, <a href="../connectors/windowsforwardedevents.html">WindowsForwardedEvents</a>, <a href="../connectors/zscaler.html">Zscaler</a>, <a href="../connectors/microsoftsysmonforlinux.html">MicrosoftSysmonForLinux</a>, <a href="../connectors/paloaltonetworks.html">PaloAltoNetworks</a>, <a href="../connectors/azuremonitor-vminsights.html">AzureMonitor(VMInsights)</a>, <a href="../connectors/azurefirewall.html">AzureFirewall</a>, <a href="../connectors/azurensg.html">AzureNSG</a>, <a href="../connectors/ciscoasa.html">CiscoASA</a>, <a href="../connectors/ciscoasaama.html">CiscoAsaAma</a>, <a href="../connectors/corelight.html">Corelight</a>, <a href="../connectors/aivectrastream.html">AIVectraStream</a>, <a href="../connectors/checkpoint.html">CheckPoint</a>, <a href="../connectors/fortinet.html">Fortinet</a>, <a href="../connectors/ciscomeraki.html">CiscoMeraki</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/awss3.html">AWSS3</a>, <a href="../connectors/microsoftthreatprotection.html">MicrosoftThreatProtection</a>, <a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a>, <a href="../connectors/windowsforwardedevents.html">WindowsForwardedEvents</a>, <a href="../connectors/zscaler.html">Zscaler</a>, <a href="../connectors/microsoftsysmonforlinux.html">MicrosoftSysmonForLinux</a>, <a href="../connectors/paloaltonetworks.html">PaloAltoNetworks</a>, <a href="../connectors/azuremonitor-vminsights.html">AzureMonitor(VMInsights)</a>, <a href="../connectors/azurefirewall.html">AzureFirewall</a>, <a href="../connectors/azurensg.html">AzureNSG</a>, <a href="../connectors/ciscoasa.html">CiscoASA</a>, <a href="../connectors/ciscoasaama.html">CiscoAsaAma</a>, <a href="../connectors/corelight.html">Corelight</a>, <a href="../connectors/aivectrastream.html">AIVectraStream</a>, <a href="../connectors/checkpoint.html">CheckPoint</a>, <a href="../connectors/fortinet.html">Fortinet</a>, <a href="../connectors/ciscomeraki.html">CiscoMeraki</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials/Hunting%20Queries/DetectsSeveralUsersWithTheSameMACAddress.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Network%20Session%20Essentials/Hunting%20Queries/DetectsSeveralUsersWithTheSameMACAddress.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="hunting-queries.html">Back to Hunting Queries</a> · <a href="../solutions/network-session-essentials.html">Back to Network Session Essentials</a></p>
+
 </div>
 
 </body>

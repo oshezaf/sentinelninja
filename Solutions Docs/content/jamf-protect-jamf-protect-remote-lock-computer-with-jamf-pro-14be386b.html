@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jamf Protect - Remote lock computer with Jamf Pro &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="jamf-protect---remote-lock-computer-with-jamf-pro">Jamf Protect - Remote lock computer with Jamf Pro</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This Playbook can be used manually or in a Automation Rule to send an remote MDM command with Jamf Pro to lock the computer with an randomised 6 digit passcode.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,44 +47,85 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_JSSID_for_given_computer_in_Jamf_Pro | GET | `@{parameters('jamfProURL')}/JSSResource/computers/name/@{items('For_each_host_send_DeviceLock_command')?['properties']?['friendlyName']}` | — |
-| Get_managementID_for_given_computer_in_Jamf_Pro | GET | `@{parameters('jamfProURL')}/api/v1/computers-inventory/@{body('Parse_JSON_response_for_given_computer')?['computer']?['general']?['id']}?section=GENERAL` | — |
-| Send_DeviceLock_command_to_given_computers_JSSID | POST | `@{parameters('jamfProURL')}/JSSResource/computercommands/command/DeviceLock/passcode/@{outputs('Generate_a_randomised_6_digit_value')}/id/@{body('Parse_JSON_for_given_computer_based_on_managementID')?['general']?['site']?['id']}` | — |
-| Generate_Access_Token_using_API_Client | POST | `@{parameters('jamfProURL')}/api/oauth/token` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_JSSID_for_given_computer_in_Jamf_Pro</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('jamfProURL')}/JSSResource/computers/name/@{items('For_each_host_send_DeviceLock_command')?['properties']?['friendlyName']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_managementID_for_given_computer_in_Jamf_Pro</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('jamfProURL')}/api/v1/computers-inventory/@{body('Parse_JSON_response_for_given_computer')?['computer']?['general']?['id']}?section=GENERAL</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_DeviceLock_command_to_given_computers_JSSID</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('jamfProURL')}/JSSResource/computercommands/command/DeviceLock/passcode/@{outputs('Generate_a_randomised_6_digit_value')}/id/@{body('Parse_JSON_for_given_computer_based_on_managementID')?['general']?['site']?['id']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Generate_Access_Token_using_API_Client</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('jamfProURL')}/api/oauth/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -92,9 +133,9 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_LockComputer_with_JamfPro/readme.md">JamfProtect_LockComputer_with_JamfPro/readme.md</a></em></p>
 </blockquote>
 <h1 id="jamfprotect_lockcomputer_with_jamfpro">JamfProtect_LockComputer_with_JamfPro</h1>
-<p>## Summary
-This Playbook can be used manually or in a Automation Rule to send an remote MDM command with Jamf Pro to lock the computer with an randomised 6 digit passcode.</p>
-<p><img alt="JamfProtect_LockComputer_with_JamfPro" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/images/designerOverviewCollapsedLight.png" /></p>
+<h2 id="summary">Summary</h2>
+<p>This Playbook can be used manually or in a Automation Rule to send an remote MDM command with Jamf Pro to lock the computer with an randomised 6 digit passcode.</p>
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/images/designerOverviewCollapsedLight.png" alt="JamfProtect_LockComputer_with_JamfPro" /></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Generate API Client in Jamf Pro and take note of the CLientID and Secret. <a href="https://learn.jamf.com/search?bundle=jamf-pro-documentation-current&amp;q=api%20client">learn how</a>.</li>
@@ -102,9 +143,9 @@ This Playbook can be used manually or in a Automation Rule to send an remote MDM
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
-<li>
-<p>Fill in the required parameters:</p>
+<li><p>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</p>
+</li>
+<li><p>Fill in the required parameters:</p>
 <ul>
 <li>jamfProURL: Enter the Jamf Pro instance URL.</li>
 <li>jamfProClientID: Enter the ClientID of Jamf Pro API Client.</li>
@@ -113,7 +154,7 @@ This Playbook can be used manually or in a Automation Rule to send an remote MDM
 </ul>
 </li>
 </ol>
-<p><a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_LockComputer_with_JamfPro/azuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <h2 id="playbook-steps-explained">Playbook steps explained</h2>
 <h3 id="microsoft-sentinel-incident">Microsoft Sentinel Incident</h3>
 <p>When an Incident is being created and we have an Automation Rule in place to rule this trigger we can use the Incident details.</p>
@@ -148,11 +189,11 @@ This action will generated a randomised 6 digit integer value
 This HTTP action will send a DeviceLock command to the stored JSSID and using the randomised 6 digit integer value as passcode.
 
 ### Add comment to incident (V3)
-This action will generate a comment to the Incident and stores the host including the passcode we have been sending a command to.
-</code></pre>
+This action will generate a comment to the Incident and stores the host including the passcode we have been sending a command to.</code></pre>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/jamf-protect.html">Back to Jamf Protect</a></p>
+
 </div>
 
 </body>

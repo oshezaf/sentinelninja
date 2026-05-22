@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Tenable App](../solutions/tenable-app.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [TenableIE.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tenable%20App/Data%20Connectors/TenableIE/TenableIE.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#tenable-identity-exposure) |
 
 Tenable Identity Exposure connector allows Indicators of Exposure, Indicators of Attack and trailflow logs to be ingested into Microsoft Sentinel.The different work books and data parsers allow you to more easily manipulate logs and monitor your Active Directory environment.  The analytic templates allow you to automate responses regarding different events, exposures and attacks.
 

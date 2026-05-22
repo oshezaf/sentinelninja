@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Censys Add Incident Comment &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="censys-add-incident-comment">Censys Add Incident Comment</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook is triggered via HTTP request and is designed to be used as a sub-playbook by other Censys playbooks (CensysIncidentEnrichment, CensysEntityEnrichmentHost, CensysEntityEnrichmentCertificate, CensysEntityEnrichmentWebProperty, CensysAlertEnrichment). It receives enrichment data (host, web_property, certificate) along with the incident ARM ID and parent playbook name. The playbook processes each data type, extracts relevant fields (IP, autonomous system, WHOIS, location, DNS, service</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/censys.html">Censys</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/censys.html">Censys</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysAddIncidentComment/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Censys/Playbooks/CensysAddIncidentComment/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,50 +47,121 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">8</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">8</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_Each_Host_Data | post | `/api/logs` | — |
-| Send_Web_Property_Data | post | `/api/logs` | — |
-| Send_certificate_data | post | `/api/logs` | — |
-
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_1 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_5 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_6 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_7 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_8 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-
+<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_Each_Host_Data</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/logs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_Web_Property_Data</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/logs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_certificate_data</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/logs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_3</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_1</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_5</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_6</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_7</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_8</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -108,33 +179,42 @@
 <h3 id="deployment-instructions">Deployment Instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
-<li>Fill in the required parameters:
-   * PlaybookName: Enter the playbook name here (default: CensysAddIncidentComment).</li>
+<li>Fill in the required parameters:<ul>
+<li>PlaybookName: Enter the playbook name here (default: CensysAddIncidentComment).</li>
+</ul>
+</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCensys%2FPlaybooks%2FCensysAddIncidentComment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCensys%2FPlaybooks%2FCensysAddIncidentComment%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCensys%2FPlaybooks%2FCensysAddIncidentComment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCensys%2FPlaybooks%2FCensysAddIncidentComment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, authorize each connection.
-1. Go to your logic app → API connections → Select Microsoft Sentinel connection resource.
-2. Go to General → Edit API connection.
-3. Click Authorize.
-4. Sign in.
-5. Click Save.
-6. Repeat steps for Log Analytics Data Collector connection.</p>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Go to your logic app → API connections → Select Microsoft Sentinel connection resource.</li>
+<li>Go to General → Edit API connection.</li>
+<li>Click Authorize.</li>
+<li>Sign in.</li>
+<li>Click Save.</li>
+<li>Repeat steps for Log Analytics Data Collector connection.</li>
+</ol>
 <h4 id="b-configure-parent-playbooks">b. Configure parent playbooks</h4>
-<p>Configure the parent playbooks to call this sub-playbook using its HTTP trigger URL.
-1. Go to Logic App → <em>your Logic App</em> → Logic app designer.
-2. Copy the HTTP POST URL from the trigger.
-3. Use this URL in parent playbooks (CensysEnrichment, CensysEntityEnrichmentHost, etc.) to invoke this sub-playbook.</p>
+<p>Configure the parent playbooks to call this sub-playbook using its HTTP trigger URL.</p>
+<ol>
+<li>Go to Logic App → <em>your Logic App</em> → Logic app designer.</li>
+<li>Copy the HTTP POST URL from the trigger.</li>
+<li>Use this URL in parent playbooks (CensysEnrichment, CensysEntityEnrichmentHost, etc.) to invoke this sub-playbook.</li>
+</ol>
 <h4 id="c-permissions">c. Permissions</h4>
-<p>Ensure the playbook has appropriate permissions to add comments to incidents.
-1. Go to Log Analytics workspace → Access control (IAM) → Add role assignment.
-2. Select Microsoft Sentinel Contributor role.
-3. Select Managed identity and choose the playbook's identity.
-4. Click Save.</p>
+<p>Ensure the playbook has appropriate permissions to add comments to incidents.</p>
+<ol>
+<li>Go to Log Analytics workspace → Access control (IAM) → Add role assignment.</li>
+<li>Select Microsoft Sentinel Contributor role.</li>
+<li>Select Managed identity and choose the playbook's identity.</li>
+<li>Click Save.</li>
+</ol>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/censys.html">Back to Censys</a></p>
+
 </div>
 
 </body>

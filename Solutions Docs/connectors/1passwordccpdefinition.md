@@ -18,6 +18,7 @@
 | **CCF Configuration** | [1Password_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/1Password/Data%20Connectors/1Password_ccpv2/1Password_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#1password-serverless) |
 
 The 1Password CCP connector allows the user to ingest 1Password Audit, Signin & ItemUsage events into Microsoft Sentinel.
 

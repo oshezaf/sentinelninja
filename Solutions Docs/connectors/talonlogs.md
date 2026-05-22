@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [TalonLogs.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Talon/Data%20Connectors/TalonLogs.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#talon-insights) |
 
 The Talon Security Logs connector allows you to easily connect your Talon events and audit logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation.
 

@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [AWSEKS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_ConnectorDefinition.json) |
 | **CCF Configuration** | [AWSEKS_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#aws-eks-data-connector-via-codeless-connector-framework) |
 
 The AWS EKS data connector provides the capability to ingest audit logs from [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) into Microsoft Sentinel. This connector focuses on EKS audit logs (JSON format) which contain detailed information about API server requests, authentication decisions, and cluster activities. The connector uses AWS SQS to receive notifications when new audit log files are exported to S3, ensuring real-time security monitoring and compliance tracking for your Kubernetes clusters.
 

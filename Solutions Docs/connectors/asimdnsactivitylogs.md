@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Windows Server DNS](../solutions/windows-server-dns.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_ASimDnsActivityLogs.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS/Data%20Connectors/template_ASimDnsActivityLogs.JSON) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#windows-dns-events-via-ama) |
 
 The Windows DNS log connector allows you to easily filter and stream all analytics logs from your Windows DNS servers to your Microsoft Sentinel workspace using the Azure Monitoring agent (AMA). Having this data in Microsoft Sentinel helps you identify issues and security threats such as:
 

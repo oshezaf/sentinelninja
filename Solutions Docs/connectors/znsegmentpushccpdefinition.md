@@ -18,6 +18,7 @@
 | **CCF Configuration** | [ZNSegmentPush_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegment_CCP_Push/ZNSegmentPush_dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#zero-networks-segment-push) |
 
 The [Zero Networks Segment](https://zeronetworks.com/) push connector allows Zero Networks to send Audits, Network Activities, Identity Activities, and RPC Activities directly to Microsoft Sentinel in real time. Deploy the connector to create a Data Collection Rule (DCR) and Microsoft Entra app; then configure your Zero Networks application with the connection details to push events.
 

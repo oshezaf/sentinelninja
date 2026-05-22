@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [MicrosoftThreatProtection.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Data%20Connectors/MicrosoftThreatProtection.JSON) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-defender-xdr) |
 
 Microsoft Defender XDR is a unified, natively integrated, pre- and post-breach enterprise defense suite that protects endpoint, identity, email, and applications and helps you detect, prevent, investigate, and automatically respond to sophisticated threats.
 

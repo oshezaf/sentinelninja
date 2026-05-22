@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MessagePostDeliveryEvents &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="messagepostdeliveryevents">MessagePostDeliveryEvents</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <blockquote>
 <p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
@@ -28,22 +28,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">XDR</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">XDR</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messagepostdeliveryevents-table">View Documentation</a></td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-messagepostdeliveryevents-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -58,86 +58,86 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Action</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Action taken on the message: Blocked, Moved to quarantine</td>
+  <td style="text-align:left">Action</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Action taken on the message: Blocked, Moved to quarantine</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionResult</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Result of the action</td>
+  <td style="text-align:left">ActionResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Result of the action</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionTrigger</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates whether an action was triggered by an administrator (manually or through approval of a pending automated action), or by some special mechanism, such as a ZAP or Dynamic Delivery</td>
+  <td style="text-align:left">ActionTrigger</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether an action was triggered by an administrator (manually or through approval of a pending automated action), or by some special mechanism, such as a ZAP or Dynamic Delivery</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of activity that triggered the event: Manual remediation, Phish ZAP, Malware ZAP</td>
+  <td style="text-align:left">ActionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of activity that triggered the event: Manual remediation, Phish ZAP, Malware ZAP</td>
 </tr>
 <tr>
-<td style="text-align: left;">ConfidenceLevel</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">List of confidence levels for each threat type identified</td>
+  <td style="text-align:left">ConfidenceLevel</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of confidence levels for each threat type identified</td>
 </tr>
 <tr>
-<td style="text-align: left;">DetectionMethods</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Methods used to detect malware, phishing, or other threats found in the message</td>
+  <td style="text-align:left">DetectionMethods</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Methods used to detect malware, phishing, or other threats found in the message</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsExternalThread</td>
-<td style="text-align: left;">boolean</td>
-<td style="text-align: left;">Indicates if there are external recipients in the thread (1) or none (0)</td>
+  <td style="text-align:left">IsExternalThread</td>
+  <td style="text-align:left">boolean</td>
+  <td style="text-align:left">Indicates if there are external recipients in the thread (1) or none (0)</td>
 </tr>
 <tr>
-<td style="text-align: left;">LatestDeliveryLocation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Last known location of the message</td>
+  <td style="text-align:left">LatestDeliveryLocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Last known location of the message</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecipientDetails</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Array of recipient data (RecipientSmtpAddress, RecipientDisplayName, RecipientType, RecipientObjectId)</td>
+  <td style="text-align:left">RecipientDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Array of recipient data (RecipientSmtpAddress, RecipientDisplayName, RecipientType, RecipientObjectId)</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReportId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the event</td>
+  <td style="text-align:left">ReportId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">SafetyTip</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The safety tip that has been added on a message, if any</td>
+  <td style="text-align:left">SafetyTip</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The safety tip that has been added on a message, if any</td>
 </tr>
 <tr>
-<td style="text-align: left;">SenderEmailAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Email address of the sender</td>
+  <td style="text-align:left">SenderEmailAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Email address of the sender</td>
 </tr>
 <tr>
-<td style="text-align: left;">TeamsMessageId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the message, as generated by Microsoft 365</td>
+  <td style="text-align:left">TeamsMessageId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the message, as generated by Microsoft 365</td>
 </tr>
 <tr>
-<td style="text-align: left;">ThreatTypes</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Verdict from the filtering stack on whether the message contains malware, phishing, or other threats</td>
+  <td style="text-align:left">ThreatTypes</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Verdict from the filtering stack on whether the message contains malware, phishing, or other threats</td>
 </tr>
 <tr>
-<td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the event was recorded</td>
+  <td style="text-align:left">Timestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the event was recorded</td>
 </tr>
 </tbody>
 </table>
@@ -153,38 +153,38 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-potentially-malicious-url-click-in-teams-8d25156b-2ac4-4528-b1b1-f8427267f9f2-e9efebeb.html">Potentially malicious URL click in Teams</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-potentially-malicious-url-click-in-teams-8d25156b-2ac4-4528-b1b1-f8427267f9f2-e9efebeb.html">Potentially malicious URL click in Teams</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-malware-zap-4684afc7-3d05-4ec1-8fb0-342707d0ac5d-cc928c54.html">Teams Malware ZAP</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-malware-zap-4684afc7-3d05-4ec1-8fb0-342707d0ac5d-cc928c54.html">Teams Malware ZAP</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-phish-zap-abd7e757-7737-4c9f-af7a-92e87172ff4f-1c12f41b.html">Teams Phish ZAP</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-phish-zap-abd7e757-7737-4c9f-af7a-92e87172ff4f-1c12f41b.html">Teams Phish ZAP</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-spam-zap-008ff55b-0588-4d39-af03-c08f1bb519d7-03330511.html">Teams Spam ZAP</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-spam-zap-008ff55b-0588-4d39-af03-c08f1bb519d7-03330511.html">Teams Spam ZAP</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-message-zaped-with-the-same-url-in-email-8b7a84e9-5831-4e90-9b98-bd57493c6cc9-c563797b.html">Teams message ZAPed with the same URL in Email</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-message-zaped-with-the-same-url-in-email-8b7a84e9-5831-4e90-9b98-bd57493c6cc9-c563797b.html">Teams message ZAPed with the same URL in Email</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-post-delivery-events-daily-trend-fea3f03b-0723-4f3e-9f6a-c8a6a67fbde0-0852a1b1.html">Teams post delivery events daily trend</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-post-delivery-events-daily-trend-fea3f03b-0723-4f3e-9f6a-c8a6a67fbde0-0852a1b1.html">Teams post delivery events daily trend</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-url-click-on-urls-in-zap-d-teams-messages-2ae448b1-b27d-4043-a92f-ef10202cdb7a-f825e6d2.html">URL click on URLs in ZAP-d Teams messages</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-click-on-urls-in-zap-d-teams-messages-2ae448b1-b27d-4043-a92f-ef10202cdb7a-f825e6d2.html">URL click on URLs in ZAP-d Teams messages</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -192,44 +192,45 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-potentially-malicious-url-click-in-teams-be6ae743-71b5-4cbf-b5f0-e7c99c8bd197-3db0c86d.html">Potentially malicious URL click in Teams</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-potentially-malicious-url-click-in-teams-be6ae743-71b5-4cbf-b5f0-e7c99c8bd197-3db0c86d.html">Potentially malicious URL click in Teams</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-teams-malware-zap-dc961519-a3d3-4b95-8459-982858f0cca6-aef88905.html">Teams Malware ZAP</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-teams-malware-zap-dc961519-a3d3-4b95-8459-982858f0cca6-aef88905.html">Teams Malware ZAP</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-teams-phish-zap-9d6594d8-1d0b-42c7-9dab-2a2c1db5c330-b98c8663.html">Teams Phish ZAP</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-teams-phish-zap-9d6594d8-1d0b-42c7-9dab-2a2c1db5c330-b98c8663.html">Teams Phish ZAP</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-teams-spam-zap-f9e101e9-a71c-4ed5-a248-31965fe6ace6-e3edcf09.html">Teams Spam ZAP</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-teams-spam-zap-f9e101e9-a71c-4ed5-a248-31965fe6ace6-e3edcf09.html">Teams Spam ZAP</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-teams-message-zaped-with-the-same-url-in-email-5a34a9c3-041b-46bf-b035-bb17e7ff0be6-198bf756.html">Teams message ZAPed with the same URL in Email</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-teams-message-zaped-with-the-same-url-in-email-5a34a9c3-041b-46bf-b035-bb17e7ff0be6-198bf756.html">Teams message ZAPed with the same URL in Email</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-teams-post-delivery-events-daily-trend-ceea323e-89c9-4594-9fe7-c3075c1b051d-d9bbc40e.html">Teams post delivery events daily trend</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-teams-post-delivery-events-daily-trend-ceea323e-89c9-4594-9fe7-c3075c1b051d-d9bbc40e.html">Teams post delivery events daily trend</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-url-click-on-urls-in-zap-d-teams-messages-4741e46e-1bdd-453a-90a8-13302a352a73-10e346ec.html">URL click on URLs in ZAP-d Teams messages</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-url-click-on-urls-in-zap-d-teams-messages-4741e46e-1bdd-453a-90a8-13302a352a73-10e346ec.html">URL click on URLs in ZAP-d Teams messages</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

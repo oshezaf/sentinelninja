@@ -18,6 +18,7 @@
 | **CCF Configuration** | [Pathlock_TDnR_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_PollingConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#pathlock-inc-threat-detection-and-response-for-sap) |
 
 The [Pathlock Threat Detection and Response (TD&R)](https://pathlock.com/products/cybersecurity-application-controls/) integration with **Microsoft Sentinel Solution for SAP** delivers unified, real-time visibility into SAP security events, enabling organizations to detect and act on threats across all SAP landscapes. This out-of-the-box integration allows Security Operations Centers (SOCs) to correlate SAP-specific alerts with enterprise-wide telemetry, creating actionable intelligence that connects IT security with business processes.
 

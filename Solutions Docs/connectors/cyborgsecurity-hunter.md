@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Cyborg Security HUNTER](../solutions/cyborg-security-hunter.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [CyborgSecurity_HUNTER.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER/Data%20Connectors/CyborgSecurity_HUNTER.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cyborg-security-hunter-hunt-packages) |
 
 Cyborg Security is a leading provider of advanced threat hunting solutions, with a mission to empower organizations with cutting-edge technology and collaborative tools to proactively detect and respond to cyber threats. Cyborg Security's flagship offering, the HUNTER Platform, combines powerful analytics, curated threat hunting content, and comprehensive hunt management capabilities to create a dynamic ecosystem for effective threat hunting operations.
 

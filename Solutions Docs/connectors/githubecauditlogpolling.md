@@ -18,6 +18,7 @@
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [azuredeploy_GitHub_native_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/azuredeploy_GitHub_native_poller_connector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#deprecated-github-enterprise-audit-log) |
 
 The GitHub audit log connector provides the capability to ingest GitHub logs into Microsoft Sentinel. By connecting GitHub audit logs into Microsoft Sentinel, you can view this data in workbooks, use it to create custom alerts, and improve your investigation process. 
 

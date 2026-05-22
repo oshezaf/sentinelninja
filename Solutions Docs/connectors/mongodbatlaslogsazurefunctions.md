@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [MongoDBAtlasLogs_AzureFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas/Data%20Connectors/MongoDBAtlasLogs/MongoDBAtlasLogs_AzureFunction.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#mongodb-atlas-logs) |
 
 The [MongoDBAtlas](https://www.mongodb.com/products/platform/atlas-database) Logs connector gives the capability to upload MongoDB Atlas database logs into Microsoft Sentinel through the MongoDB Atlas Administration API. Refer to the [API documentation](https://www.mongodb.com/docs/api/doc/atlas-admin-api-v2/) for more information. The connector provides the ability to get a range of database log messages for the specified hosts and specified project.
 

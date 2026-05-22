@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Prompt Okta user &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="prompt-okta-user">Prompt Okta user</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook uses the OKTA connector to prompt the risky user on Teams. User is asked action was taken by them. Based on the user confirmation the SOC admin is notified to investige on the user account. Also, comment is added to the incident with user information and summary of actions taken.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/okta-single-sign-on.html">Okta Single Sign-On</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-PromptUser/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-PromptUser/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,52 +47,103 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-oktacustomconnector.html"><code>OktaCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-oktacustomconnector.html"><code>OktaCustomConnector</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_Accounts | post | `/entities/account` | — |
-| Add_a_comment_to_the_incident_with_the_information_collected_and_conclusion | post | `/Incidents/Comment` | — |
-| Update_incident_to_close_it | put | `/Incidents` | — |
-| Add_a_comment_to_the_incident_with_the_information_collected | post | `/Incidents/Comment` | — |
-
-#### [`OktaCustomConnector`](../logic-apps/custom-oktacustomconnector.md) (Custom)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Clear_User_Sessions | delete | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/sessions` | — |
-| Reset_Password | post | `/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password` | — |
-| Get_User | get | `/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Accounts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/account</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_a_comment_to_the_incident_with_the_information_collected_and_conclusion</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_to_close_it</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_a_comment_to_the_incident_with_the_information_collected</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="oktacustomconnector"><a href="../logic-apps/custom-oktacustomconnector.html"><code>OktaCustomConnector</code></a> (Custom)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Clear_User_Sessions</td>
+  <td style="text-align:left">delete</td>
+  <td style="text-align:left"><code>/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/sessions</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reset_Password</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/v1/users/@{encodeURIComponent(body('Get_User')?['id'])}/lifecycle/reset_password</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_User</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/v1/users/@{encodeURIComponent(items('For_each-risky_account_received_from_the_incident')?['Name'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -100,17 +151,19 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks/Okta-PromptUser/readme.md">OktaPlaybooks/Okta-PromptUser/readme.md</a></em></p>
 </blockquote>
 <h1 id="okta-prompt-user-playbook">Okta-Prompt User Playbook</h1>
-<p>## Summary</p>
-<p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions:
-1. An adaptive card is sent to the risky user asking if they have done the malicious activity
-2. If user confirms yes, the incident will be closed  and enriched as a comment with the user details
-3. Else, the <strong>user sessions will be cleared</strong> and <strong>reset password link will be sent to user</strong> 
-4. An adaptive card is sent to the SOC Teams channel, providing information about the incident and risky user details. The SOC can investigate further on the user.</p>
-<p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/Okta-PromptUser.PNG" /><br></p>
+<h2 id="summary">Summary</h2>
+<p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions:</p>
+<ol>
+<li>An adaptive card is sent to the risky user asking if they have done the malicious activity</li>
+<li>If user confirms yes, the incident will be closed  and enriched as a comment with the user details</li>
+<li>Else, the <strong>user sessions will be cleared</strong> and <strong>reset password link will be sent to user</strong></li>
+<li>An adaptive card is sent to the SOC Teams channel, providing information about the incident and risky user details. The SOC can investigate further on the user.</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/Okta-PromptUser.PNG" alt="Playbook Designer view" /><br></p>
 <p><strong>This is the adaptive card user will recieve when playbook is triggered:</strong><br><br>
-<img alt="Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtotheEnduser.PNG" /><br><br></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtotheEnduser.PNG" alt="Adaptive Card example" /><br><br></p>
 <p><strong>This is the adaptive card SOC will recieve if user confirms they didn't to the malicious activity:</strong><br><br>
-<img alt="Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtoSOCadminon%2520teamschannel.PNG" /><br><br></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On/Playbooks/OktaPlaybooks%5COkta-PromptUser/images/AdaptivecardtoSOCadminon%2520teamschannel.PNG" alt="Adaptive Card example" /><br><br></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Okta custom connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
@@ -118,31 +171,33 @@
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.</li>
+<li>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deplyoing an ARM Template wizard.</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-PromptUser%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-PromptUser%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-PromptUser%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FOkta%2FOktaPlaybooks%2FOkta-PromptUser%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <ol start="2">
 <li>Fill in the required paramteres:<ul>
 <li>Playbook Name : Enter the playbook name here (ex:OktaPlaybook)</li>
 <li>Teams GroupId : Enter the Teams channel id to send the adaptive card</li>
 <li>Teams ChannelId : Enter the Teams Group id to send the adaptive card
- <a href="https://docs.microsoft.com/powershell/module/teams/get-teamchannel?view=teams-ps">Refer the below link to get the channel id and group id</a></li>
+<a href="https://docs.microsoft.com/powershell/module/teams/get-teamchannel?view=teams-ps">Refer the below link to get the channel id and group id</a></li>
 </ul>
 </li>
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection.
-1.  Click the Microsoft Sentinel connection resource
-2.  Click edit API connection
-3.  Click Authorize
-4.  Sign in
-5.  Click Save
-6.  Repeat steps for other connections such as Teams connection and Okta Api  Connection (For authorizing the Okta API connection, the API Key needs to be provided)</p>
+<p>Once deployment is complete, you will need to authorize each connection.</p>
+<ol>
+<li>Click the Microsoft Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections such as Teams connection and Okta Api  Connection (For authorizing the Okta API connection, the API Key needs to be provided)</li>
+</ol>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
-<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky user account </li>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky user account</li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
 <h2 id="playbook-steps-explained">Playbook steps explained</h2>
@@ -152,28 +207,31 @@
 <p>Get the list of risky/malicious accounts as entities from the Incident</p>
 <h3 id="for-each-risky-account-received-from-the-incident">For each-risky account received from the incident</h3>
 <p>Iterates on the accounts found in this incident (probably one) and performs the following:
-For the risky user account, playbook uses "Get User" action to get user details from Okta</p>
+For the risky user account, playbook uses &quot;Get User&quot; action to get user details from Okta</p>
 <h4 id="posts-an-adaptive-card-to-user">Posts an Adaptive card to  user</h4>
 <p>In this step we post a message in Microsoft Teams to the risky user with Incident details and ask for his confirmation on the malicious activity described in the incident.</p>
 <h4 id="if-condition-based-on-the-user-confirmation">If Condition based on the user confirmation</h4>
 <h4 id="if-the-user-confirms-it-was-him">If the user confirms it was him:</h4>
-<p>a. Incident is commented with all the  details below
-   * User information collected by "Get User" action from Okta
-     User id, User name, User login, User email, User status, User created, User activated, User statusChanged, User lastLogin, User lastUpdated, User passwordChanged
-   * Actions taken on Sentinel </p>
+<p>a. Incident is commented with all the  details below</p>
+<ul>
+<li>User information collected by &quot;Get User&quot; action from Okta
+User id, User name, User login, User email, User status, User created, User activated, User statusChanged, User lastLogin, User lastUpdated, User passwordChanged</li>
+<li>Actions taken on Sentinel</li>
+</ul>
 <p>b. Close Incident</p>
 <h4 id="if-the-user-confirms-it-was-not-him">If the user confirms it was not him:</h4>
-<p>a. Playbook uses "Clear User Sessions" action to clear the user sessions in Okta</p>
-<p>b. Playbook uses "Reset Password" action to resest the password of the user in Okta</p>
+<p>a. Playbook uses &quot;Clear User Sessions&quot; action to clear the user sessions in Okta</p>
+<p>b. Playbook uses &quot;Reset Password&quot; action to resest the password of the user in Okta</p>
 <p>c. SOC user will be sent an adaptive card with the user details, Incident information to investigate further</p>
 <p>d. Add a comment to the incident with the following details:</p>
 <ul>
-<li>User information collected by "Get User" action from Okta such as</li>
+<li>User information collected by &quot;Get User&quot; action from Okta such as</li>
 </ul>
 <p><em>[Content truncated...]</em></p>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/okta-single-sign-on.html">Back to Okta Single Sign-On</a></p>
+
 </div>
 
 </body>

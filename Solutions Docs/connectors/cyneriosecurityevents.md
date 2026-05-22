@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [Cynerio_Connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cynerio/Data%20Connectors/Cynerio_Connector.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cynerio-security-events) |
 
 The [Cynerio](https://www.cynerio.com/) connector allows you to easily connect your Cynerio Security Events with Microsoft Sentinel, to view IDS Events. This gives you more insight into your organization network security posture and improves your security operation capabilities. 
 

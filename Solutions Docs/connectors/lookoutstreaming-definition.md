@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [LookoutStreaming_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_DataConnectorDefinition.json) |
 | **CCF Configuration** | [LookoutStreaming_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Data%20Connectors/LookoutStreamingConnector_ccp/LookoutStreaming_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#lookout-mobile-threat-detection-connector-via-codeless-connector-framework-preview) |
 
 The [Lookout Mobile Threat Detection](https://lookout.com) data connector provides the capability to ingest events related to mobile security risks into Microsoft Sentinel through the Mobile Risk API. Refer to [API documentation](https://esupport.lookout.com/s/article/Mobile-Risk-API-V2-Guide) for more information. This connector helps you examine potential security risks detected in mobile devices.
 

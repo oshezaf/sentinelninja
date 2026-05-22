@@ -19,24 +19,6 @@ This query looks for errors that may indicate that an attacker is attempting to 
 | **Techniques** | T1190 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/SecurityEvent/SilkTyphoonSuspiciousUMServiceError.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Event`](../tables/event.md) | `EventLevelName == "error"`<br>`EventLog == "Application"`<br>`RenderedDescription !contains "System.OutOfMemoryException"`<br>`RenderedDescription contains "MSExchange Unified Messaging"`<br>`RenderedDescription contains "TextFormattingRunProperties"`<br>`RenderedDescription contains "umworkerprocess"`<br>`RenderedDescription startswith "An unhandled exception occurred in a UM worker process"`<br>`RenderedDescription startswith "The Microsoft Exchange Unified Messaging service"`<br>`RenderedDescription startswith "Watson report"`<br>`Source startswith "MSExchange"` | ✓ | ✓ | ? |
-
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [ESI-Opt2ExchangeServersEventLogs](../connectors/esi-opt2exchangeserverseventlogs.md) | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
-
-**Solutions:** [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

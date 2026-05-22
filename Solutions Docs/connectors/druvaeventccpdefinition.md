@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [Druva_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Data%20Connectors/Druva_ccp/Druva_DataConnectorDefinition.json) |
 | **CCF Configuration** | [Druva_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Data%20Connectors/Druva_ccp/Druva_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#druva-events-connector) |
 
 Provides capability to ingest the Druva events from Druva APIs
 

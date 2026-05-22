@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UserEnrichment.template &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="userenrichmenttemplate">UserEnrichment.template</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>author: Sebastien Molendijk - Microsoft</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">GitHub Only</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">GitHub Only</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Get-AlertEntitiesEnrichment/UserEnrichment.template.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Get-AlertEntitiesEnrichment/UserEnrichment.template.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,49 +47,138 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">16</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">16</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_user_details | GET | `https://graph.microsoft.com/beta/users/@{body('Parse_trigger')?['userPrincipalName']}` | — |
-| Get_user_manager | GET | `https://graph.microsoft.com/beta/users/@{body('Parse_trigger')?['userPrincipalName']}/manager` | — |
-| Get_user_MFA-SSPR_status | GET | `https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails?$filter=userPrincipalName  eq '@{body('Get_user_details')?['userPrincipalName']}'` | — |
-| Get_user_AAD_risk_status | GET | `https://graph.microsoft.com/beta/riskyUsers/@{body('Parse_user_details')?['id']}/` | — |
-| Get_user_signins | GET | `https://graph.microsoft.com/beta/auditLogs/signIns?$filter=@{outputs('Compose_filter')}` | — |
-| Get_user_owned_devices | GET | `https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/ownedDevices` | — |
-| Advanced_Hunting | POST | `https://api.securitycenter.windows.com/api/advancedqueries/run` | — |
-| Check_group_membership | POST | `https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/checkMemberGroups` | — |
-| Get_role_details | GET | `https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/@{items('Foreach_role')?['roleDefinitionId']}` | — |
-| Get_user_admin_roles | GET | `https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq '@{body('Parse_user_details')?['id']}'` | — |
-| Get_inbox_folder | GET | `https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/mailFolders/@{items('For_each_inbox_rule')?['actions']?['moveToFolder']}` | — |
-| Get_user_OOF | POST | `https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/getMailTips` | — |
-| Get_user_inbox_rules | GET | `https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/mailFolders/inbox/messageRules` | — |
-| Get_user_password_reset_activities | GET | `https://graph.microsoft.com/beta/reports/userCredentialUsageDetails?$filter=userPrincipalName  eq '@{body('Get_user_details')?['userPrincipalName']}'` | — |
-| Get_user_locations_habits | GET | `@{parameters('mcas-tenantUrl')}/cas/api/v1/activities_locations/by_user/?username=@{variables('userMcasId')}/` | — |
-| Get_mcas_user_profile | GET | `@{parameters('mcas-tenantUrl')}/cas/api/v1/entities/@{variables('userMcasId')}/` | — |
-
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_user_details</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{body('Parse_trigger')?['userPrincipalName']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_manager</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{body('Parse_trigger')?['userPrincipalName']}/manager</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_MFA-SSPR_status</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails?$filter=userPrincipalName  eq '@{body('Get_user_details')?['userPrincipalName']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_AAD_risk_status</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/riskyUsers/@{body('Parse_user_details')?['id']}/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_signins</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/auditLogs/signIns?$filter=@{outputs('Compose_filter')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_owned_devices</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/ownedDevices</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Advanced_Hunting</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/advancedqueries/run</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_group_membership</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/checkMemberGroups</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_role_details</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/@{items('Foreach_role')?['roleDefinitionId']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_admin_roles</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$filter=principalId eq '@{body('Parse_user_details')?['id']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_inbox_folder</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/mailFolders/@{items('For_each_inbox_rule')?['actions']?['moveToFolder']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_OOF</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/getMailTips</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_inbox_rules</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{body('Get_user_details')?['userPrincipalName']}/mailFolders/inbox/messageRules</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_password_reset_activities</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/reports/userCredentialUsageDetails?$filter=userPrincipalName  eq '@{body('Get_user_details')?['userPrincipalName']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_user_locations_habits</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('mcas-tenantUrl')}/cas/api/v1/activities_locations/by_user/?username=@{variables('userMcasId')}/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_mcas_user_profile</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('mcas-tenantUrl')}/cas/api/v1/entities/@{variables('userMcasId')}/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [WithSecureElementsViaFunction.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WithSecureElementsViaFunction/Data%20Connectors/WithSecureElementsViaFunction.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#withsecure-elements-api-azure-function) |
 
 WithSecure Elements is the unified cloud-based cyber security platform designed to reduce risk, complexity, and inefficiency.
 

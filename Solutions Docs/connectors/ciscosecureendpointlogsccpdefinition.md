@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [CiscoSecureEndpointLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpointLogs_ccp/CiscoSecureEndpointLogs_ConnectorDefinition.json) |
 | **CCF Configuration** | [CiscoSecureEndpointLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Secure%20Endpoint/Data%20Connectors/CiscoSecureEndpointLogs_ccp/CiscoSecureEndpointLogs_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cisco-secure-endpoint-via-codeless-connector-framework) |
 
 The Cisco Secure Endpoint (formerly AMP for Endpoints) data connector provides the capability to ingest Cisco Secure Endpoint [audit logs](https://developer.cisco.com/docs/secure-endpoint/auditlog/) and [events](https://developer.cisco.com/docs/secure-endpoint/v1-api-reference-event/) into Microsoft Sentinel.
 

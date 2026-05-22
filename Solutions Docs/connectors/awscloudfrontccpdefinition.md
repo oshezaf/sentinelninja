@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [AWSCloudFrontLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront/Data%20Connectors/AWSCloudFrontLog_CCF/AWSCloudFrontLog_ConnectorDefinition.json) |
 | **CCF Configuration** | [AWSCloudFrontLog_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront/Data%20Connectors/AWSCloudFrontLog_CCF/AWSCloudFrontLog_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#amazon-web-services-cloudfront-via-codeless-connector-framework-preview) |
 
 This data connector enables the integration of AWS CloudFront logs with Microsoft Sentinel to support advanced threat detection, investigation, and security monitoring. By utilizing Amazon S3 for log storage and Amazon SQS for message queuing, the connector reliably ingests CloudFront access logs into Microsoft Sentinel
 

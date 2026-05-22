@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Incident Trigger Entity Analyzer &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="incident-trigger-entity-analyzer">Incident Trigger Entity Analyzer</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook is triggered by Microsoft Sentinel incidents and performs automated investigation and enrichment of URL and User entities associated with the incident. It includes intelligent user identifier detection supporting objectGuid, aadUserId, UPN, and Name+UPNSuffix combinations.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,46 +47,97 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">5</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-sentinelmcp.html"><code>sentinelmcp</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-sentinelmcp.html"><code>sentinelmcp</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_URLs | post | `/entities/url` | — |
-| Add_Url_comment_to_incident | post | `/Incidents/Comment` | — |
-| Entities_-_Get_Accounts | post | `/entities/account` | — |
-| Add_User_comment_to_incident | post | `/Incidents/Comment` | — |
-| Add_Skip_comment_to_incident | post | `/Incidents/Comment` | — |
-
-#### [`sentinelmcp`](../logic-apps/managed-sentinelmcp.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| URL_Analyzer | post | `/aiprimitives/analysis` | — |
-| User_Analyzer | post | `/aiprimitives/analysis` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Url_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Accounts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/account</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_User_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Skip_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sentinelmcp"><a href="../logic-apps/managed-sentinelmcp.html"><code>sentinelmcp</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">URL_Analyzer</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/aiprimitives/analysis</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">User_Analyzer</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/aiprimitives/analysis</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -96,68 +147,93 @@
 <h1 id="multi-entity-analyzer---microsoft-sentinel-playbook">Multi-Entity Analyzer - Microsoft Sentinel Playbook</h1>
 <p>Activating the 'Deploy' button initiates the deployment of an Azure Logic App integrated with Microsoft Sentinel MCP Actions, utilizing a Microsoft Sentinel incident trigger.
 The Logic App is configured to run when a new incident is created in Sentinel. This Logic App automatically analyzes all URL and User entities within the incident and provides detailed security insights including classification, analysis results, and recommendations for each entity type.</p>
-<p><img alt="Deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/images/deployment.png" /></p>
-<p>The playbook automatically triggers when:
-- A new incident is created in Microsoft Sentinel
-- The incident contains URL entities that need security analysis
-- The incident contains User/Account entities that require behavioral analysis
-- Security analysts need comprehensive automated analysis of multiple entity types</p>
-<p>After the analysis is complete, the MCP Entity Analyzer conducts a comprehensive investigation of each entity type and automatically adds detailed comments to the incident with:
-- <strong>URL Analysis</strong>: Security classification, threat intelligence, and URL reputation analysis
-- <strong>User Analysis</strong>: Behavioral analysis, risk assessment, and user activity patterns
-- <strong>Classification</strong>: Security classification for each entity
-- <strong>Analysis Results</strong>: Detailed security analysis findings for each entity
-- <strong>Recommendations</strong>: Security recommendations based on the analysis
-- <strong>Disclaimer</strong>: AI-generated analysis disclaimer</p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/images/deployment.png" alt="Deployment" /></p>
+<p>The playbook automatically triggers when:</p>
+<ul>
+<li>A new incident is created in Microsoft Sentinel</li>
+<li>The incident contains URL entities that need security analysis</li>
+<li>The incident contains User/Account entities that require behavioral analysis</li>
+<li>Security analysts need comprehensive automated analysis of multiple entity types</li>
+</ul>
+<p>After the analysis is complete, the MCP Entity Analyzer conducts a comprehensive investigation of each entity type and automatically adds detailed comments to the incident with:</p>
+<ul>
+<li><strong>URL Analysis</strong>: Security classification, threat intelligence, and URL reputation analysis</li>
+<li><strong>User Analysis</strong>: Behavioral analysis, risk assessment, and user activity patterns</li>
+<li><strong>Classification</strong>: Security classification for each entity</li>
+<li><strong>Analysis Results</strong>: Detailed security analysis findings for each entity</li>
+<li><strong>Recommendations</strong>: Security recommendations based on the analysis</li>
+<li><strong>Disclaimer</strong>: AI-generated analysis disclaimer</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>Prior to beginning the installation process, it's crucial to confirm that you have met the following prerequisites:
-- The user deploying this Logic App needs to have a <strong>Contributor Role</strong>
-- The user has permissions to access <strong>Microsoft Sentinel</strong> workspace
-- The <strong>SentinelMCP connector</strong> is available in your environment
-- The Logic App will automatically use the workspace ID from the incident trigger</p>
+<p>Prior to beginning the installation process, it's crucial to confirm that you have met the following prerequisites:</p>
+<ul>
+<li>The user deploying this Logic App needs to have a <strong>Contributor Role</strong></li>
+<li>The user has permissions to access <strong>Microsoft Sentinel</strong> workspace</li>
+<li>The <strong>SentinelMCP connector</strong> is available in your environment</li>
+<li>The Logic App will automatically use the workspace ID from the incident trigger</li>
+</ul>
 <h3 id="parameters">Parameters</h3>
-<p>During deployment, you'll need to provide:
-- <strong>PlaybookName</strong>: Name for the Logic App (default: "Entity-Analyzer-Incident-Trigger")
-- <strong>lookBackDays</strong>: Number of days to look back for entity analysis (default: 60 days)</p>
+<p>During deployment, you'll need to provide:</p>
+<ul>
+<li><strong>PlaybookName</strong>: Name for the Logic App (default: &quot;Entity-Analyzer-Incident-Trigger&quot;)</li>
+<li><strong>lookBackDays</strong>: Number of days to look back for entity analysis (default: 60 days)</li>
+</ul>
 <h3 id="deployment">Deployment</h3>
-<p>To deploy the Multi-Entity Analyzer Logic App:
-1. Press on the Deploy button below
-2. Select your subscription and resource group (use the same tenant where Microsoft Sentinel is configured)
-3. Configure the lookBackDays parameter if needed (default is 60 days)
-4. The workspace ID will be automatically retrieved from the incident</p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FIncident-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FIncident-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a></p>
+<p>To deploy the Multi-Entity Analyzer Logic App:</p>
+<ol>
+<li>Press on the Deploy button below</li>
+<li>Select your subscription and resource group (use the same tenant where Microsoft Sentinel is configured)</li>
+<li>Configure the lookBackDays parameter if needed (default is 60 days)</li>
+<li>The workspace ID will be automatically retrieved from the incident</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FIncident-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FIncident-Trigger-Entity-Analyzer%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" alt="Deploy to Azure Gov" /></a></p>
 <h3 id="post-deployment">Post Deployment</h3>
-<p>After successful deployment:
-- The Logic App will be automatically enabled and ready to use
-- <strong>Authenticate the connections</strong>: Go to the Logic App → API connections and authenticate:
-  - <strong>Microsoft Sentinel connection</strong>: Authenticate with a user that has Sentinel permissions
-  - <strong>SentinelMCP connection</strong>: Authenticate with Microsoft Sentinel MCP permissions
-- The playbook will automatically trigger when new incidents are created
-- <strong>Manual execution</strong>: You can also run this playbook manually from the incident page
-- <strong>Automation Rule</strong>: Consider creating an automation rule to run this playbook automatically on specific incident types</p>
-<p><img alt="Logic App Designer" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/images/logicapp_dis.png" /></p>
+<p>After successful deployment:</p>
+<ul>
+<li>The Logic App will be automatically enabled and ready to use</li>
+<li><strong>Authenticate the connections</strong>: Go to the Logic App → API connections and authenticate:<ul>
+<li><strong>Microsoft Sentinel connection</strong>: Authenticate with a user that has Sentinel permissions</li>
+<li><strong>SentinelMCP connection</strong>: Authenticate with Microsoft Sentinel MCP permissions</li>
+</ul>
+</li>
+<li>The playbook will automatically trigger when new incidents are created</li>
+<li><strong>Manual execution</strong>: You can also run this playbook manually from the incident page</li>
+<li><strong>Automation Rule</strong>: Consider creating an automation rule to run this playbook automatically on specific incident types</li>
+</ul>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/Incident-Trigger-Entity-Analyzer/images/logicapp_dis.png" alt="Logic App Designer" /></p>
 <h3 id="how-it-works">How It Works</h3>
 <ol>
 <li><strong>Trigger</strong>: The Logic App triggers when a new incident is created in Microsoft Sentinel</li>
 <li><strong>Entity Extraction</strong>: The playbook extracts all URL and User entities from the incident</li>
-<li><strong>Parallel Analysis</strong>: 
-   - <strong>URLs</strong>: Each URL is analyzed for security threats, reputation, and classification
-   - <strong>Users</strong>: Each user account is analyzed for behavioral patterns and risk assessment</li>
+<li><strong>Parallel Analysis</strong>:<ul>
+<li><strong>URLs</strong>: Each URL is analyzed for security threats, reputation, and classification</li>
+<li><strong>Users</strong>: Each user account is analyzed for behavioral patterns and risk assessment</li>
+</ul>
+</li>
 <li><strong>Processing</strong>: The analysis results are formatted with emojis and proper formatting</li>
-<li><strong>Output</strong>: Separate detailed comments are added to the incident for each analyzed entity:
-   - One comment per URL entity analyzed
-   - One comment per User entity analyzed</li>
+<li><strong>Output</strong>: Separate detailed comments are added to the incident for each analyzed entity:<ul>
+<li>One comment per URL entity analyzed</li>
+<li>One comment per User entity analyzed</li>
+</ul>
+</li>
 </ol>
 <h3 id="sample-output">Sample Output</h3>
 <p>The playbook generates formatted comments in the incident for each entity type:</p>
-<p><strong>URL Analysis Output:</strong>
-```
-🔗 URL Analysis for: https://example.com</p>
-<p><em>[Content truncated...]</em></p>
-<hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
+<p><strong>URL Analysis Output:</strong></p>
+<pre><code>🔗 URL Analysis for: https://example.com
+
+
+*[Content truncated...]*
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Playbooks](playbooks.md) · [Back to SentinelSOARessentials](../solutions/sentinelsoaressentials.md)
+
+</code></pre>
+
 </div>
 
 </body>

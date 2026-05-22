@@ -4,53 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>remote-file-creation-with-psexec &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="remote-file-creation-with-psexec">remote-file-creation-with-psexec</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This query was originally published in the threat analytics report, Ryuk ransomware. There is also a related blog. Ryuk is human-operated ransomware. Much like DoppelPaymer ransomware, Ryuk is spread manually, often on networks that are already infected with Trickbot. Ryuk operators use PsExec to manually spread the ransomware to other devices. The following query detects remote file creation events that might indicate an active attack. The See also section below lists links to other queries ass</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Hunting Query</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Hunting Query</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">GitHub Only</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">GitHub Only</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>8b1d8f83-08f3-44fb-8328-1229521f109c</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>8b1d8f83-08f3-44fb-8328-1229521f109c</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">Lateral movement</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">Lateral movement</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">MicrosoftThreatProtection</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/microsoftthreatprotection.html">MicrosoftThreatProtection</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Lateral%20Movement/remote-file-creation-with-psexec.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left">[View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Lateral%20Movement/remote-file-creation-with-psexec.yaml)</td>
 </tr>
 </tbody>
 </table>
@@ -59,26 +59,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
-<td style="text-align: left;"><code>FolderPath has "\\\\"</code><br><code>InitiatingProcessCommandLine !has ".ps1"</code><br><code>InitiatingProcessCommandLine has ".bat"</code><br><code>InitiatingProcessCommandLine has "accepteula"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+  <td style="text-align:left"><code>FolderPath has &quot;\\\\&quot;</code><br><code>InitiatingProcessCommandLine !has &quot;.ps1&quot;</code><br><code>InitiatingProcessCommandLine has &quot;.bat&quot;</code><br><code>InitiatingProcessCommandLine has &quot;accepteula&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="hunting-queries.html">Back to Hunting Queries</a></p>
+
 </div>
 
 </body>

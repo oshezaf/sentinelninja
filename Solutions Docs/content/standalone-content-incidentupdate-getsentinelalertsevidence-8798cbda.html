@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IncidentUpdate-GetSentinelAlertsEvidence &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="incidentupdate-getsentinelalertsevidence">IncidentUpdate-GetSentinelAlertsEvidence</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will run on a time schedule base (every hour) and it will check for any incident that was updated (in the last hour) in your Sentinel workspace by Sentinel Alerts. <br> It will then automatically attach the new alert evidence from the updated Azure Sentinel incident (from the last hour) and send the evidence to an Event Hub that can be consumed by a 3rd party SIEM solution.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/IncidentUpdate%20-Get-SentinelAlertsEvidence/IncidentUpdate-GetSentinelAlertsEvidence.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/IncidentUpdate%20-Get-SentinelAlertsEvidence/IncidentUpdate-GetSentinelAlertsEvidence.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,24 +47,24 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -73,14 +73,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Solution</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Solution</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/derdacksignl4.html">DerdackSIGNL4</a></td>
-<td style="text-align: left;"><a href="../solutions/signl4.html">SIGNL4</a></td>
+  <td style="text-align:left"><a href="../connectors/derdacksignl4.html">DerdackSIGNL4</a></td>
+  <td style="text-align:left"><a href="../solutions/signl4.html">SIGNL4</a></td>
 </tr>
 </tbody>
 </table>
@@ -90,60 +90,97 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitor.html"><code>azuremonitor</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitor.html"><code>azuremonitor</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-eventhub.html"><code>eventhub</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-eventhub.html"><code>eventhub</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-eventhubs.html"><code>eventhubs</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-eventhubs.html"><code>eventhubs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuremonitor`](../logic-apps/managed-azuremonitor.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Run_query_and_list_results_(get_events_from_scheduled_rule) | post | `/queryData` | — |
-| Run_query_and_list_results_(get_alerts_added_to_incidents) | post | `/queryData` | — |
-
-#### [`eventhub`](../logic-apps/managed-eventhub.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_event_(send_information_with_events_to_eventhub) | post | `/@{encodeURIComponent('incidentalerteventhub')}/events` | — |
-| Send_event_(send_information_of_alert_and_incident_to_eventhub) | post | `/@{encodeURIComponent('incidentalerteventhub')}/events` | — |
-
+<h4 id="azuremonitor"><a href="../logic-apps/managed-azuremonitor.html"><code>azuremonitor</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Run_query_and_list_results_(get_events_from_scheduled_rule)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Run_query_and_list_results_(get_alerts_added_to_incidents)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="eventhub"><a href="../logic-apps/managed-eventhub.html"><code>eventhub</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_event_(send_information_with_events_to_eventhub)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/@{encodeURIComponent('incidentalerteventhub')}/events</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_event_(send_information_of_alert_and_incident_to_eventhub)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/@{encodeURIComponent('incidentalerteventhub')}/events</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

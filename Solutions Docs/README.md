@@ -10,14 +10,14 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 |:---------|------:|:--------|
 | [Solutions](solutions-index.md) | 526 | 411 with connectors, 420 with content |
 | [Connectors](connectors-index.md) | 615 | Data ingestion methods |
-| [Methods](methods-index.md) | 12 | Data collection methods |
-| [Tables](tables-index.md) | 1976 | Log Analytics tables |
+| [Methods](methods-index.md) | 11 | Data collection methods |
+| [Tables](tables-index.md) | 1972 | Log Analytics tables |
 | [Content](content/content-index.md) | 6,038 | Analytics, hunting, playbooks, workbooks |
 | [Parsers](parsers/parsers-index.md) | 547 | Non-ASIM KQL functions |
 | [ASIM Parsers](asim/asim-index.md) | 106 pairs | Normalized schema parsers |
 | [ASIM Products](asim/asim-products-index.md) | 94 | Products with ASIM support |
 | [Statistics](statistics.md) | - | Comprehensive statistics and metrics |
-| [Interactive Index](https://oshezaf.github.io/sentinelninja/index.html) | - | Sortable/filterable HTML view |
+| [Interactive Index](index.html) | - | Sortable/filterable HTML view |
 
 ---
 
@@ -46,7 +46,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 │   ├── asim-index.md       # ASIM parsers index by schema
 │   ├── asim-products-index.md  # ASIM parsers index by product
 │   └── *.md                # Individual parser pages
-└── index.html              # Interactive index (on GitHub Pages)
+└── index.html              # Interactive index (sortable/filterable)
 ```
 
 ## Source

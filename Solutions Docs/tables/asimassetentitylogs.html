@@ -4,47 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ASimAssetEntityLogs &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="asimassetentitylogs">ASimAssetEntityLogs</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for ASimAssetEntityLogs table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Normalized</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Normalized</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimassetentitylogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimassetentitylogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,341 +53,341 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AADTenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Azure Active Directory tenant identifier associated with the asset or entity.</td>
+  <td style="text-align:left">AADTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Azure Active Directory tenant identifier associated with the asset or entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalAssetOwners</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">A dynamic collection of additional owners or co-owners associated with the asset.</td>
+  <td style="text-align:left">AdditionalAssetOwners</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A dynamic collection of additional owners or co-owners associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalFields</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional information about the entity that is not captured by other fields in the schema.</td>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional information about the entity that is not captured by other fields in the schema.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetClassificationLastScanDateTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the asset was last scanned for data classification.</td>
+  <td style="text-align:left">AssetClassificationLastScanDateTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the asset was last scanned for data classification.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetIsProtectedByDlp</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the asset is protected by a Data Loss Prevention (DLP) policy.</td>
+  <td style="text-align:left">AssetIsProtectedByDlp</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the asset is protected by a Data Loss Prevention (DLP) policy.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOriginalDataClassificationType</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The original data classification type(s) assigned to the asset as reported by the source system.</td>
+  <td style="text-align:left">AssetOriginalDataClassificationType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The original data classification type(s) assigned to the asset as reported by the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOriginalPermissions</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The original permission set assigned to the asset as reported by the source system.</td>
+  <td style="text-align:left">AssetOriginalPermissions</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The original permission set assigned to the asset as reported by the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOriginalRiskDetails</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The full risk details for the asset as provided by the source system.</td>
+  <td style="text-align:left">AssetOriginalRiskDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The full risk details for the asset as provided by the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOriginalRiskLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The risk level assigned to the asset as reported by the source system, before normalization.</td>
+  <td style="text-align:left">AssetOriginalRiskLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The risk level assigned to the asset as reported by the source system, before normalization.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOriginalSensitivityLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The sensitivity level as reported by the source system, before normalization.</td>
+  <td style="text-align:left">AssetOriginalSensitivityLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The sensitivity level as reported by the source system, before normalization.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOriginalType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original type of the asset as reported by the source system.</td>
+  <td style="text-align:left">AssetOriginalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original type of the asset as reported by the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOwnerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the user or principal that owns the asset.</td>
+  <td style="text-align:left">AssetOwnerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the user or principal that owns the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOwnerIdType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type or format of the asset owner identifier, such as UPN or SID.</td>
+  <td style="text-align:left">AssetOwnerIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type or format of the asset owner identifier, such as UPN or SID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOwnerScope</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The organizational or administrative scope to which the asset owner belongs.</td>
+  <td style="text-align:left">AssetOwnerScope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The organizational or administrative scope to which the asset owner belongs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOwnerScopeId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the scope to which the asset owner belongs.</td>
+  <td style="text-align:left">AssetOwnerScopeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the scope to which the asset owner belongs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetOwnerType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the asset owner, such as User, Group, or ServicePrincipal.</td>
+  <td style="text-align:left">AssetOwnerType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the asset owner, such as User, Group, or ServicePrincipal.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The alias of either FilePath or SitePath.</td>
+  <td style="text-align:left">AssetPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The alias of either FilePath or SitePath.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetRelatedIndicators</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">A dynamic collection of threat indicators or signals related to the asset.</td>
+  <td style="text-align:left">AssetRelatedIndicators</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A dynamic collection of threat indicators or signals related to the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetRiskFirstReportedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the risk associated with the asset was first reported.</td>
+  <td style="text-align:left">AssetRiskFirstReportedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the risk associated with the asset was first reported.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetRiskLastReportedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the risk associated with the asset was most recently reported.</td>
+  <td style="text-align:left">AssetRiskLastReportedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the risk associated with the asset was most recently reported.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetRiskLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The normalized risk level assigned to the asset, such as Low, Medium, High, or Critical.</td>
+  <td style="text-align:left">AssetRiskLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The normalized risk level assigned to the asset, such as Low, Medium, High, or Critical.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetRiskName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The normalized name of the risk or threat associated with the asset.</td>
+  <td style="text-align:left">AssetRiskName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The normalized name of the risk or threat associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetSensitivityLabel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The sensitivity label applied to the asset, such as Confidential or Public.</td>
+  <td style="text-align:left">AssetSensitivityLabel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The sensitivity label applied to the asset, such as Confidential or Public.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The high-level type of the asset, such as File, or Site.</td>
+  <td style="text-align:left">AssetType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The high-level type of the asset, such as File, or Site.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityCreatedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the entity was originally created in the source system.</td>
+  <td style="text-align:left">EntityCreatedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the entity was originally created in the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityFeedType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type or category of the data feed that provided the entity record.</td>
+  <td style="text-align:left">EntityFeedType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type or category of the data feed that provided the entity record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the entity within the normalized schema.</td>
+  <td style="text-align:left">EntityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the entity within the normalized schema.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityIngestionTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the entity record was ingested into the system.</td>
+  <td style="text-align:left">EntityIngestionTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the entity record was ingested into the system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityIsDeleted</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the entity has been deleted in the source system.</td>
+  <td style="text-align:left">EntityIsDeleted</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the entity has been deleted in the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityLastAccessedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the entity was last accessed.</td>
+  <td style="text-align:left">EntityLastAccessedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the entity was last accessed.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityLastModifiedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the entity was last modified in the source system.</td>
+  <td style="text-align:left">EntityLastModifiedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the entity was last modified in the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The display name or identifier of the entity.</td>
+  <td style="text-align:left">EntityName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The display name or identifier of the entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityNameType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type or format of the entity name, such as UPN, or username.</td>
+  <td style="text-align:left">EntityNameType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type or format of the entity name, such as UPN, or username.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityOriginalId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original identifier for the entity as reported by the source system.</td>
+  <td style="text-align:left">EntityOriginalId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original identifier for the entity as reported by the source system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityOriginalSource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original data source or connector that provided the entity record.</td>
+  <td style="text-align:left">EntityOriginalSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original data source or connector that provided the entity record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityProduct</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The product name associated with the source that reported the entity.</td>
+  <td style="text-align:left">EntityProduct</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The product name associated with the source that reported the entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntitySchema</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ASIM schema name for this entity record.</td>
+  <td style="text-align:left">EntitySchema</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ASIM schema name for this entity record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntitySchemaVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the ASIM schema used for this entity record.</td>
+  <td style="text-align:left">EntitySchemaVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the ASIM schema used for this entity record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntitySource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The data source or connector that provided the entity record.</td>
+  <td style="text-align:left">EntitySource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The data source or connector that provided the entity record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntitySubProduct</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The sub-product or component name associated with the source that reported the entity.</td>
+  <td style="text-align:left">EntitySubProduct</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The sub-product or component name associated with the source that reported the entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityUpdatedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the entity record was last updated.</td>
+  <td style="text-align:left">EntityUpdatedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the entity record was last updated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityVendor</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The vendor or provider that reported the entity.</td>
+  <td style="text-align:left">EntityVendor</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The vendor or provider that reported the entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExternalUsersCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The number of external users associated with or having access to the asset.</td>
+  <td style="text-align:left">ExternalUsersCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of external users associated with or having access to the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileExtension</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The file extension of the file associated with the asset, such as .exe or .pdf.</td>
+  <td style="text-align:left">FileExtension</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The file extension of the file associated with the asset, such as .exe or .pdf.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileIsSignatureValid</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the digital signature of the file is valid.</td>
+  <td style="text-align:left">FileIsSignatureValid</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the digital signature of the file is valid.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileMD5</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The MD5 hash of the file associated with the asset.</td>
+  <td style="text-align:left">FileMD5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The MD5 hash of the file associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FilePath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The full path of the file associated with the asset.</td>
+  <td style="text-align:left">FilePath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The full path of the file associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSHA1</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The SHA-1 hash of the file associated with the asset.</td>
+  <td style="text-align:left">FileSHA1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The SHA-1 hash of the file associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSHA256</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The SHA-256 hash of the file associated with the asset.</td>
+  <td style="text-align:left">FileSHA256</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The SHA-256 hash of the file associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSHA512</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The SHA-512 hash of the file associated with the asset.</td>
+  <td style="text-align:left">FileSHA512</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The SHA-512 hash of the file associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSignatureDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Details about the digital signature of the file, such as the signer or certificate information.</td>
+  <td style="text-align:left">FileSignatureDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details about the digital signature of the file, such as the signer or certificate information.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The size of the file in bytes.</td>
+  <td style="text-align:left">FileSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The size of the file in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IdentityDirectoryId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the identity directory associated with the entity.</td>
+  <td style="text-align:left">IdentityDirectoryId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the identity directory associated with the entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IdentityDirectoryName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the identity directory, such as Active Directory or Azure AD, associated with the entity.</td>
+  <td style="text-align:left">IdentityDirectoryName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the identity directory, such as Active Directory or Azure AD, associated with the entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InternalUsersCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The number of internal users associated with or having access to the asset.</td>
+  <td style="text-align:left">InternalUsersCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of internal users associated with or having access to the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SitePath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The path of the site or storage location associated with the asset.</td>
+  <td style="text-align:left">SitePath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The path of the site or storage location associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SitePrimaryUri</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The primary URI of the site or storage location associated with the asset.</td>
+  <td style="text-align:left">SitePrimaryUri</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The primary URI of the site or storage location associated with the asset.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the log was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">User</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The alias of AssetOwnerId.</td>
+  <td style="text-align:left">User</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The alias of AssetOwnerId.</td>
 </tr>
 </tbody>
 </table>
@@ -398,8 +398,9 @@
 <li><code>microsoft.securityinsights/assetentitynormalized</code></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NetApp Ransomware Resilience Volume Offline Playbook &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="netapp-ransomware-resilience-volume-offline-playbook">NetApp Ransomware Resilience Volume Offline Playbook</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook takes a NetApp volume offline using the updated NetApp Ransomware Resilience take-volume-offline API endpoint and optionally polls for completion.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/netapp-ransomware-resilience.html">NetApp Ransomware Resilience</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/netapp-ransomware-resilience.html">NetApp Ransomware Resilience</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Volume_Offline_Playbook/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience_Volume_Offline_Playbook/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,31 +47,54 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Call_Auth_Playbook | POST | `[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]` | — |
-| Submit_Volume_Offline | POST | `https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/storage/take-volume-offline` | — |
-| Call_Async_Poll_Playbook | POST | `[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAsyncPollPlaybookName'), 'manual'), '2019-05-01').value]` | — |
-
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Call_Auth_Playbook</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAuthPlaybookName'), 'manual'), '2019-05-01').value]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Submit_Volume_Offline</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.bluexp.netapp.com/v1/services/rps/v1/account/@{variables('AccountId')}/storage/take-volume-offline</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Call_Async_Poll_Playbook</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>[listCallbackUrl(resourceId('Microsoft.Logic/workflows/triggers', parameters('NetAppRansomwareResilienceAsyncPollPlaybookName'), 'manual'), '2019-05-01').value]</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -84,12 +107,14 @@
 <h2 id="purpose">Purpose</h2>
 <p>When you identify a volume that is compromised by ransomware or under active attack, taking it offline immediately stops all access, preventing the spread of malware and protecting other parts of your infrastructure.</p>
 <h2 id="deployment-order">Deployment Order</h2>
-<p><strong>This playbook should be deployed SIXTH</strong>, after:
-1. ✅ Auth Playbook (required)
-2. ✅ Async Poll Playbook (required)
-3. ✅ Enrich IP Playbook (optional)
-4. ✅ Enrich StorageVM Playbook (optional)
-5. ✅ Volume Snapshot Playbook (optional, but <strong>strongly recommended</strong>)</p>
+<p><strong>This playbook should be deployed SIXTH</strong>, after:</p>
+<ol>
+<li>✅ Auth Playbook (required)</li>
+<li>✅ Async Poll Playbook (required)</li>
+<li>✅ Enrich IP Playbook (optional)</li>
+<li>✅ Enrich StorageVM Playbook (optional)</li>
+<li>✅ Volume Snapshot Playbook (optional, but <strong>strongly recommended</strong>)</li>
+</ol>
 <h2 id="what-it-does">What It Does</h2>
 <ul>
 <li>Accepts volume ID, agent ID, and system ID as input</li>
@@ -100,61 +125,80 @@
 <li>Returns operation status</li>
 </ul>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before deploying this playbook:
-1. Auth Playbook must be deployed and functioning correctly
-2. Async Poll Playbook must be deployed and functioning correctly
-3. Valid NetApp API credentials configured</p>
+<p>Before deploying this playbook:</p>
+<ol>
+<li>Auth Playbook must be deployed and functioning correctly</li>
+<li>Async Poll Playbook must be deployed and functioning correctly</li>
+<li>Valid NetApp API credentials configured</li>
+</ol>
 <h2 id="how-to-use">How to Use</h2>
-<p>This playbook can be:
-- Called manually when you need to isolate a compromised volume
-- Triggered automatically by Microsoft Sentinel automation rules during high-severity incidents
-- Used as the final step in incident response workflows
-- Combined with snapshot playbooks for data protection before isolation</p>
-<p><strong>Input Required:</strong>
-- <code>volume_id</code>: The ID of the volume to take offline
-- <code>agent_id</code>: The NetApp agent identifier
-- <code>system_id</code>: The NetApp system identifier</p>
+<p>This playbook can be:</p>
+<ul>
+<li>Called manually when you need to isolate a compromised volume</li>
+<li>Triggered automatically by Microsoft Sentinel automation rules during high-severity incidents</li>
+<li>Used as the final step in incident response workflows</li>
+<li>Combined with snapshot playbooks for data protection before isolation</li>
+</ul>
+<p><strong>Input Required:</strong></p>
+<ul>
+<li><code>volume_id</code>: The ID of the volume to take offline</li>
+<li><code>agent_id</code>: The NetApp agent identifier</li>
+<li><code>system_id</code>: The NetApp system identifier</li>
+</ul>
 <h2 id="critical-considerations">⚠️ Critical Considerations</h2>
-<p><strong>Before taking a volume offline:</strong>
-- <strong>Create a snapshot first</strong> using the Volume Snapshot Playbook—this ensures you have a recovery point
-- Understand the business impact—offline volumes are completely inaccessible
-- Verify you're targeting the correct volume
-- Have a recovery plan in place
-- Document the reason for taking the volume offline</p>
+<p><strong>Before taking a volume offline:</strong></p>
+<ul>
+<li><strong>Create a snapshot first</strong> using the Volume Snapshot Playbook—this ensures you have a recovery point</li>
+<li>Understand the business impact—offline volumes are completely inaccessible</li>
+<li>Verify you're targeting the correct volume</li>
+<li>Have a recovery plan in place</li>
+<li>Document the reason for taking the volume offline</li>
+</ul>
 <h2 id="use-case-example">Use Case Example</h2>
-<p><strong>Ransomware Containment:</strong>
-1. Receive alert about active file encryption on a volume
-2. Use Enrich IP or Enrich StorageVM playbooks to confirm the affected volume
-3. <strong>Use Volume Snapshot playbook to create a clean recovery point</strong>
-4. <strong>Use this playbook to take the compromised volume offline</strong>
-5. Investigation and remediation can proceed safely
-6. Restore from snapshot when ready</p>
+<p><strong>Ransomware Containment:</strong></p>
+<ol>
+<li>Receive alert about active file encryption on a volume</li>
+<li>Use Enrich IP or Enrich StorageVM playbooks to confirm the affected volume</li>
+<li><strong>Use Volume Snapshot playbook to create a clean recovery point</strong></li>
+<li><strong>Use this playbook to take the compromised volume offline</strong></li>
+<li>Investigation and remediation can proceed safely</li>
+<li>Restore from snapshot when ready</li>
+</ol>
 <h2 id="post-deployment-configuration">Post-Deployment Configuration</h2>
-<p>After deploying this playbook:
-1. Test with a non-production volume using valid IDs
-2. Verify the volume is taken offline successfully
-3. Test bringing the volume back online to ensure recoverability
-4. Configure automation rules with appropriate severity thresholds
-5. Document your volume offline procedures and approval workflows</p>
+<p>After deploying this playbook:</p>
+<ol>
+<li>Test with a non-production volume using valid IDs</li>
+<li>Verify the volume is taken offline successfully</li>
+<li>Test bringing the volume back online to ensure recoverability</li>
+<li>Configure automation rules with appropriate severity thresholds</li>
+<li>Document your volume offline procedures and approval workflows</li>
+</ol>
 <h2 id="building-custom-workflows">Building Custom Workflows</h2>
-<p>This playbook is typically the <strong>final protective action</strong> in an incident response workflow:
-- Enrich IP → Identify volume → Take snapshot → <strong>Take volume offline</strong>
-- Critical alert → Enrich StorageVM → Snapshot critical volumes → <strong>Offline compromised volume</strong></p>
+<p>This playbook is typically the <strong>final protective action</strong> in an incident response workflow:</p>
+<ul>
+<li>Enrich IP → Identify volume → Take snapshot → <strong>Take volume offline</strong></li>
+<li>Critical alert → Enrich StorageVM → Snapshot critical volumes → <strong>Offline compromised volume</strong></li>
+</ul>
 <h2 id="need-help">Need Help?</h2>
-<p>If the volume offline operation isn't working, verify:
-- The Auth Playbook is returning valid tokens
-- The Async Poll Playbook is functioning correctly
-- Volume ID, agent ID, and system ID are correct
-- You have appropriate permissions to modify volume states
-- The volume is currently online and accessible</p>
+<p>If the volume offline operation isn't working, verify:</p>
+<ul>
+<li>The Auth Playbook is returning valid tokens</li>
+<li>The Async Poll Playbook is functioning correctly</li>
+<li>Volume ID, agent ID, and system ID are correct</li>
+<li>You have appropriate permissions to modify volume states</li>
+<li>The volume is currently online and accessible</li>
+</ul>
 <h2 id="recovery">Recovery</h2>
-<p>To bring a volume back online after remediation:
-- Use NetApp management tools or APIs
-- Verify the threat has been fully remediated before bringing volumes online
-- Restore from snapshots if data was compromised</p>
+<p>To bring a volume back online after remediation:</p>
+<ul>
+<li>Use NetApp management tools or APIs</li>
+<li>Verify the threat has been fully remediated before bringing volumes online</li>
+<li>Restore from snapshots if data was compromised</li>
+</ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/netapp-ransomware-resilience.html">Back to NetApp Ransomware Resilience</a></p>
+
 </div>
 
 </body>

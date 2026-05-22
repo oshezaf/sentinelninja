@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [mainTemplate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Package/mainTemplate.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-power-automate) |
 
 Power Automate is a Microsoft service that helps users create automated workflows between apps and services to synchronize files, get notifications, collect data, and more. It simplifies task automation, increasing efficiency by reducing manual, repetitive tasks, and enhancing productivity. The Power Automate data connector provides the capability to ingest Power Automate activity logs from the Microsoft Purview Audit log into Microsoft Sentinel.
 

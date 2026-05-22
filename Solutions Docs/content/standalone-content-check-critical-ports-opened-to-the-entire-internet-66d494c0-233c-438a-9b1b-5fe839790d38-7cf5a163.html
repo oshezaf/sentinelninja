@@ -4,53 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Check critical ports opened to the entire internet &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="check-critical-ports-opened-to-the-entire-internet">Check critical ports opened to the entire internet</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Discover all critical ports from a list having rules like 'Any' for sourceIp, which means that they are opened to everyone. Critial ports should not be opened to everyone, and should be filtered.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Hunting Query</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Hunting Query</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>66d494c0-233c-438a-9b1b-5fe839790d38</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>66d494c0-233c-438a-9b1b-5fe839790d38</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">InitialAccess</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">InitialAccess</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/waf.html">WAF</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/waf.html">WAF</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AzureDiagnostics/CriticalPortsOpened.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left">[View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/AzureDiagnostics/CriticalPortsOpened.yaml)</td>
 </tr>
 </tbody>
 </table>
@@ -59,26 +59,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
-<td style="text-align: left;"><code>Category == "NetworkSecurityGroupEvent"</code><br><code>conditions_destinationPortRange_s in "0-65535,137,137-137,138,138-138,139,139-139,1521,1521-1521,161,161-161,20,20-20,21,21-21,22,22-22,2483,2483-2483,25,25-25,27017,27017-27017,3020,3020-3020,3306,3306-3306,3389,3389-3389,389,389-389,445,445-445,53,53-53,5432,5432-5432"</code><br><code>conditions_sourceIP_s in "0.0.0.0/0,0.0.0.0/0,0.0.0.0/0"</code><br><code>conditions_sourcePortRange_s == "0-65535"</code><br><code>direction_s == "In"</code></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+  <td style="text-align:left"><code>Category == &quot;NetworkSecurityGroupEvent&quot;</code><br><code>conditions_destinationPortRange_s in &quot;0-65535,137,137-137,138,138-138,139,139-139,1521,1521-1521,161,161-161,20,20-20,21,21-21,22,22-22,2483,2483-2483,25,25-25,27017,27017-27017,3020,3020-3020,3306,3306-3306,3389,3389-3389,389,389-389,445,445-445,53,53-53,5432,5432-5432&quot;</code><br><code>conditions_sourceIP_s in &quot;0.0.0.0/0,0.0.0.0/0,0.0.0.0/0&quot;</code><br><code>conditions_sourcePortRange_s == &quot;0-65535&quot;</code><br><code>direction_s == &quot;In&quot;</code></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="hunting-queries.html">Back to Hunting Queries</a></p>
+
 </div>
 
 </body>

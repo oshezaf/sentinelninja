@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [Datalake2SentinelConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datalake2Sentinel/Data%20Connectors/Datalake2SentinelConnector.json) |
 | **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *External Azure Function code calls https://api.ti.sentinel.azure.com/workspaces/{workspace_id}/threat-intelligence-stix-objects:upload (verified at cert-orangecyberdefense/datalake2sentinel)* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#datalake2sentinel) |
 
 This solution installs the Datalake2Sentinel connector which is built using the Codeless Connector Platform and allows you to automatically ingest threat intelligence indicators from **Datalake Orange Cyberdefense's CTI platform** into Microsoft Sentinel via the Upload Indicators REST API. After installing the solution, configure and enable this data connector by following guidance in Manage solution view.
 

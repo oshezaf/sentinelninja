@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>JoeSandbox URL Analyis &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="joesandbox-url-analyis">JoeSandbox URL Analyis</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Submits a url or set of urls associated with an incident to JoeSandbox for Analyis.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/joesandbox.html">JoeSandbox</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/joesandbox.html">JoeSandbox</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,48 +47,109 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">5</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_URLs | post | `/entities/url` | — |
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Threat_Intelligence_-_Upload_Indicators_of_Compromise_(V2)_(Preview) | post | `/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/` | — |
-| Add_comment_to_incident_(V3)_1 | post | `/Incidents/Comment` | — |
-| Add_Comment_to_incident | post | `/Incidents/Comment` | — |
-
-#### [`function`](../logic-apps/builtin-function.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| joesandboxenrichttb-JoeSandboxGetIOCs | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetIOCs')]` |
-| joesandboxenrichttb-JoeSandboxGetAnalysisInfo | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetAnalysisInfo')]` |
-| joesandboxenrichttb-JoeSandboxGetSubmissionInfo | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetSubmissionInfo')]` |
-| joesandboxenrichttb-JoeSandboxSubmitUrl | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxSubmitUrl')]` |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Threat_Intelligence_-<em>Upload_Indicators_of_Compromise</em>(V2)_(Preview)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/V2/ThreatIntelligence/@{encodeURIComponent(triggerBody()?['workspaceId'])}/UploadIndicators/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_1</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">joesandboxenrichttb-JoeSandboxGetIOCs</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetIOCs')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">joesandboxenrichttb-JoeSandboxGetAnalysisInfo</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetAnalysisInfo')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">joesandboxenrichttb-JoeSandboxGetSubmissionInfo</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxGetSubmissionInfo')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">joesandboxenrichttb-JoeSandboxSubmitUrl</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('functionappName'), '/functions/JoeSandboxSubmitUrl')]</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -105,7 +166,8 @@
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
-<p><a name="overview"></p>
+<a name="overview">
+
 <h1 id="overview">Overview</h1>
 <p>When a new Azure Sentinel Incident is created, this playbook gets triggered and performs the following actions:</p>
 <ul>
@@ -113,77 +175,58 @@
 <li>Iterates through the URL objects and submits to JoeSanbox for analysis and fetches the results for each URL.</li>
 <li>All the details from JoeSanbox will be added as comments in a tabular format.</li>
 </ul>
-<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/Images/incident_url_comment.png" /></p>
-<p><a name="deployplaybook"></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/Images/incident_url_comment.png" alt="Incident Comments" /></p>
+<a name="deployplaybook">
+
 <h2 id="links-to-deploy-playbook">Links to deploy Playbook:</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> 
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FJoeSandbox%2FPlaybooks%2FJoeSandbox-Submit-Url-Sentinel-Incident%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <ul>
 <li>Click on Deploy to Azure</li>
 <li>It will redirect to configuration page</li>
 </ul>
-<p><img alt="url_playbook" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/Images/url_playbook.png" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/JoeSandbox/Playbooks/JoeSandbox-Submit-Url-Sentinel-Incident/Images/url_playbook.png" alt="url_playbook" /></p>
 <ul>
 <li>Please provide the values accordingly</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Fields</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Subscription</td>
-<td style="text-align: left;">Select the appropriate Azure Subscription</td>
-</tr>
-<tr>
-<td style="text-align: left;">Resource Group</td>
-<td style="text-align: left;">Select the appropriate Resource Group</td>
-</tr>
-<tr>
-<td style="text-align: left;">Region</td>
-<td style="text-align: left;">Based on Resource Group this will be uto populated</td>
-</tr>
-<tr>
-<td style="text-align: left;">Playbook Name</td>
-<td style="text-align: left;">Please provide a playbook name, if needed</td>
-</tr>
-<tr>
-<td style="text-align: left;">Workspace ID</td>
-<td style="text-align: left;">Please provide Log Analytics Workspace ID</td>
-</tr>
-<tr>
-<td style="text-align: left;">Function App Name</td>
-<td style="text-align: left;">Please provide the JoeSandbox enrichment function app name</td>
-</tr>
-</tbody>
-</table>
+<p>|       Fields       | Description                                                |
+|:---------------------|:-----------------------------------------------------------
+| Subscription		| Select the appropriate Azure Subscription                  |
+| Resource Group 	| Select the appropriate Resource Group                      |
+| Region			| Based on Resource Group this will be uto populated         |
+| Playbook Name		| Please provide a playbook name, if needed                  |
+| Workspace ID		| Please provide Log Analytics Workspace ID                  |
+| Function App Name		| Please provide the JoeSandbox enrichment function app name |</p>
 <ul>
 <li>Once you provide the above values, please click on <code>Review + create</code> button.</li>
 </ul>
-<p><a name="authentication"></p>
+<a name="authentication">
+
 <h2 id="authentication">Authentication</h2>
-<p>Authentication methods this connector supports:
-- <a href="https://www.joesecurity.org/joe-sandbox-cloud#subscriptions">API Key authentication</a></p>
-<p><a name="prerequisites"></p>
+<p>Authentication methods this connector supports:</p>
+<ul>
+<li><a href="https://www.joesecurity.org/joe-sandbox-cloud#subscriptions">API Key authentication</a></li>
+</ul>
+<a name="prerequisites">
+
 <h2 id="prerequisites-for-using-and-deploying-playbook">Prerequisites for using and deploying playbook</h2>
 <ul>
 <li>A JoeSanbox API Key.</li>
 <li>JoeSandbox CustomConnector</li>
 </ul>
-<p><a name="deployment"></p>
+<a name="deployment">
+
 <h4 id="deployment-instructions">Deployment instructions</h4>
 <ul>
-<li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbooks by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.</li>
-<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
+<li>Click &quot;Review + create&quot;. Once the validation is successful, click on &quot;Create&quot;.</li>
 </ul>
-<p><a name="postdeployment"></p>
+<a name="postdeployment">
+
 <h3 id="post-deployment-instructions">Post-Deployment instructions.</h3>
 <ul>
-<li>As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
+<li>As a best practice, we have used the Sentinel connection in Logic Apps that use &quot;ManagedSecurityIdentity&quot; permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
 </ul>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel:</h4>
 <ul>
@@ -191,8 +234,9 @@
 <li>Configure the automation rules to trigger the playbook.</li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/joesandbox.html">Back to JoeSandbox</a></p>
+
 </div>
 
 </body>

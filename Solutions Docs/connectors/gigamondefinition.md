@@ -18,6 +18,7 @@
 | **CCF Configuration** | [Gigamon_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector/Data%20Connectors/Gigamon_CCF/Gigamon_dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#gigamon-amx-connector) |
 
 The Gigamon connector provides the capability to read raw event data from Gigamon in Microsoft Sentinel.
 

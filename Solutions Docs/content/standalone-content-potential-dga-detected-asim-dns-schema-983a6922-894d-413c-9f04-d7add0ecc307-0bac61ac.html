@@ -4,71 +4,72 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Potential DGA detected ASIM DNS Schema &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="potential-dga-detected">Potential DGA detected (ASIM DNS Schema)</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>Identifies clients with a high NXDomain count which could be indicative of a DGA (cycling through possible C2 domains where most C2s are not live). Alert is generated when a new IP address is seen (based on not being seen associated with  NXDomain records in prior 10-day baseline period). This analytic rule uses <a href="https://aka.ms/AboutASIM">ASIM</a> and supports any built-in or custom source that supports the ASIM DNS schema</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Analytic Rule</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Analytic Rule</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>983a6922-894d-413c-9f04-d7add0ecc307</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>983a6922-894d-413c-9f04-d7add0ecc307</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Severity</strong></td>
-<td style="text-align: left;">Medium</td>
+  <td style="text-align:left"><strong>Severity</strong></td>
+  <td style="text-align:left">Medium</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Kind</strong></td>
-<td style="text-align: left;">Scheduled</td>
+  <td style="text-align:left"><strong>Kind</strong></td>
+  <td style="text-align:left">Scheduled</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">CommandAndControl</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">CommandAndControl</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Techniques</strong></td>
-<td style="text-align: left;">T1568, T1008</td>
+  <td style="text-align:left"><strong>Techniques</strong></td>
+  <td style="text-align:left">T1568, T1008</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/dns.html">DNS</a>, <a href="../connectors/azurefirewall.html">AzureFirewall</a>, <a href="../connectors/zscaler.html">Zscaler</a>, <a href="../connectors/infobloxnios.html">InfobloxNIOS</a>, <a href="../connectors/gcpdnsdataconnector.html">GCPDNSDataConnector</a>, <a href="../connectors/nxlogdnslogs.html">NXLogDnsLogs</a>, <a href="../connectors/ciscoumbrelladataconnector.html">CiscoUmbrellaDataConnector</a>, <a href="../connectors/corelight.html">Corelight</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/dns.html">DNS</a>, <a href="../connectors/azurefirewall.html">AzureFirewall</a>, <a href="../connectors/zscaler.html">Zscaler</a>, <a href="../connectors/infobloxnios.html">InfobloxNIOS</a>, <a href="../connectors/gcpdnsdataconnector.html">GCPDNSDataConnector</a>, <a href="../connectors/nxlogdnslogs.html">NXLogDnsLogs</a>, <a href="../connectors/ciscoumbrelladataconnector.html">CiscoUmbrellaDataConnector</a>, <a href="../connectors/corelight.html">Corelight</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimDNS/imDns_HighNXDomainCount_detection.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimDNS/imDns_HighNXDomainCount_detection.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a></p>
+
 </div>
 
 </body>

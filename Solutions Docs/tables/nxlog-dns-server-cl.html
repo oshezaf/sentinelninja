@@ -4,308 +4,308 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>NXLogDNSServerCL &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="nxlog_dns_server_cl">NXLog_DNS_Server_CL</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <h2 id="schema">Schema (69 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/NXLog_DNS_Server_CL.json">KQL validation test schema</a></p>
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_ItemId</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">_ItemId</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">AA_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">AA_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountName_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">AccountName_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountType_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">AccountType_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">AD_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">AD_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalInfo_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">AdditionalInfo_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">BufferSize_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">BufferSize_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheScope_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">CacheScope_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ChannelID_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">ChannelID_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Destination_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Destination_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">DNS_LogType_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">DNS_LogType_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">DNSSEC_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">DNSSEC_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">DNSSeverType_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">DNSSeverType_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Domain_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Domain_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ElapsedTime_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">ElapsedTime_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventID_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">EventID_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventReceivedTime_t</td>
-<td style="text-align: left;">datetime</td>
+  <td style="text-align:left">EventReceivedTime_t</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventTime_t</td>
-<td style="text-align: left;">datetime</td>
+  <td style="text-align:left">EventTime_t</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventType_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">EventType_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutionProcessID_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">ExecutionProcessID_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutionThreadID_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">ExecutionThreadID_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">FilePath_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">FilePath_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Flags_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Flags_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">GUID_g</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">GUID_g</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">HostIP_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">HostIP_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Hostname_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Hostname_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">InterfaceIP_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">InterfaceIP_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Keywords_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Keywords_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ManagementGroupName</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">MG</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">MG</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">NAME_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">NAME_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">OpcodeValue_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">OpcodeValue_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">PacketData_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">PacketData_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">PolicyName_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">PolicyName_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Port_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Port_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProviderGuid_g</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">ProviderGuid_g</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">QNAME_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">QNAME_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">QTYPE_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">QTYPE_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">QXID_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">QXID_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">RawData</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">RawData</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">RCODE_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">RCODE_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">RD_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">RD_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">RDATA_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">RDATA_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Reason_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Reason_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecursionDepth_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">RecursionDepth_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecursionScope_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">RecursionScope_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Scope_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Scope_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Severity_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Severity_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">SeverityValue_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">SeverityValue_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">Source_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Source_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceModuleName_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">SourceModuleName_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceModuleType_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">SourceModuleType_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceName_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">SourceName_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">TaskValue_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">TaskValue_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">TCP_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">TCP_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
 </tr>
 <tr>
-<td style="text-align: left;">TTL_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">TTL_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Type_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserID_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">UserID_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Version_d</td>
-<td style="text-align: left;">real</td>
+  <td style="text-align:left">Version_d</td>
+  <td style="text-align:left">real</td>
 </tr>
 <tr>
-<td style="text-align: left;">VirtualizationID_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">VirtualizationID_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">XID_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">XID_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">Zone_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">Zone_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 <tr>
-<td style="text-align: left;">ZoneScope_s</td>
-<td style="text-align: left;">string</td>
+  <td style="text-align:left">ZoneScope_s</td>
+  <td style="text-align:left">string</td>
 </tr>
 </tbody>
 </table>
@@ -315,24 +315,25 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Schema</th>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimdnsmicrosoftnxlog.html">ASimDnsMicrosoftNXlog</a></td>
-<td style="text-align: left;">Dns</td>
-<td style="text-align: left;">MS DNS Events</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../asim/asimdnsmicrosoftnxlog.html">ASimDnsMicrosoftNXlog</a></td>
+  <td style="text-align:left">Dns</td>
+  <td style="text-align:left">MS DNS Events</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

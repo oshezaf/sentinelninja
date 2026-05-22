@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Veeam-SetupConnections &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="veeam-setupconnections">Veeam-SetupConnections</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>A Microsoft Sentinel playbook that configures Key Vault secrets and hybrid connections for Veeam servers. The playbook gets server settings and Key Vault secrets from vbr_settings and vone_settings watchlists, creates Key Vault IDs, and sets all collection flags to True if required.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/veeam.html">Veeam</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/veeam.html">Veeam</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Playbooks/Veeam-SetupConnectionsPlaybook/SetupConnectionsPlaybook.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam/Playbooks/Veeam-SetupConnectionsPlaybook/SetupConnectionsPlaybook.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,72 +47,229 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">6</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">22</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">22</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Update_Watchlist_Item_With_KeyVault_IDs_VONE | put | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItem/@{encodeURIComponent(items('For_each_VONE_server_set_missing_parameters')?['name'])}` | — |
-| Watchlists_-_Get_Updated_VONE_Settings | get | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItems` | — |
-| Update_Watchlist_Item_With_KeyVault_IDs | put | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItem/@{encodeURIComponent(items('For_each_VBR_server_set_missing_parameters')?['name'])}` | — |
-| Watchlists_-_Get_Updated_VBR_Settings | get | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems` | — |
-| Watchlists_-_Get_VONE_Settings_ | get | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItems` | — |
-| Watchlists_-_Get_VBR_Settings | get | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Check_Username_Secret_Exists_VONE | GET | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VoneUsernameId'), '?api-version=7.4')` | — |
-| Create_Username_Secret_VONE | PUT | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VoneUsernameId'), '?api-version=7.4')` | — |
-| Check_Password_Secret_Exists_VONE | GET | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VonePasswordId'), '?api-version=7.4')` | — |
-| Create_Password_Secret_VONE | PUT | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VonePasswordId'), '?api-version=7.4')` | — |
-| Check_Hybrid_Connection_Exists_VONE | GET | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '?api-version=2024-01-01')` | — |
-| Create_Hybrid_Connection_VONE | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '?api-version=2024-01-01')` | — |
-| Create_Listener_Rule_VONE | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultListener?api-version=2024-01-01')` | — |
-| Create_Sender_Rule_VONE | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultSender?api-version=2024-01-01')` | — |
-| Get_Sender_Key_VONE | POST | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultSender/listKeys?api-version=2024-01-01')` | — |
-| Check_Function_App_Binding_Exists_VONE | GET | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VoneServerName'), '?api-version=2022-03-01')` | — |
-| Bind_To_Function_App_VONE | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VoneServerName'), '?api-version=2022-03-01')` | — |
-| Check_Username_Secret_Exists_VBR | GET | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrUsernameId'), '?api-version=7.4')` | — |
-| Create_Username_Secret_VBR | PUT | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrUsernameId'), '?api-version=7.4')` | — |
-| Check_Password_Secret_Exists_VBR | GET | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrPasswordId'), '?api-version=7.4')` | — |
-| Create_Password_Secret_VBR | PUT | `@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrPasswordId'), '?api-version=7.4')` | — |
-| Check_Hybrid_Connection_Exists_VBR | GET | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '?api-version=2024-01-01')` | — |
-| Create_Hybrid_Connection_VBR | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '?api-version=2024-01-01')` | — |
-| Create_Listener_Rule_VBR | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultListener?api-version=2024-01-01')` | — |
-| Create_Sender_Rule_VBR | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultSender?api-version=2024-01-01')` | — |
-| Get_Sender_Key_VBR | POST | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultSender/listKeys?api-version=2024-01-01')` | — |
-| Check_Function_App_Binding_Exists_VBR | GET | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VbrServerName'), '?api-version=2022-03-01')` | — |
-| Bind_To_Function_App_VBR | PUT | `@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VbrServerName'), '?api-version=2022-03-01')` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Update_Watchlist_Item_With_KeyVault_IDs_VONE</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItem/@{encodeURIComponent(items('For_each_VONE_server_set_missing_parameters')?['name'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Watchlists_-_Get_Updated_VONE_Settings</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItems</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Watchlist_Item_With_KeyVault_IDs</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItem/@{encodeURIComponent(items('For_each_VBR_server_set_missing_parameters')?['name'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Watchlists_-_Get_Updated_VBR_Settings</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Watchlists_-<em>Get_VONE_Settings</em></td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vone_settings')}/watchlistItems</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Watchlists_-_Get_VBR_Settings</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('subscriptionId'))}/resourceGroups/@{encodeURIComponent(parameters('resourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('workspaceId'))}/watchlists/@{encodeURIComponent('vbr_settings')}/watchlistItems</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Check_Username_Secret_Exists_VONE</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VoneUsernameId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Username_Secret_VONE</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VoneUsernameId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_Password_Secret_Exists_VONE</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VonePasswordId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Password_Secret_VONE</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VonePasswordId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_Hybrid_Connection_Exists_VONE</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Hybrid_Connection_VONE</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Listener_Rule_VONE</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultListener?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Sender_Rule_VONE</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultSender?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Sender_Key_VONE</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VoneServerName'), '/authorizationRules/defaultSender/listKeys?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_Function_App_Binding_Exists_VONE</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VoneServerName'), '?api-version=2022-03-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Bind_To_Function_App_VONE</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VoneServerName'), '?api-version=2022-03-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_Username_Secret_Exists_VBR</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrUsernameId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Username_Secret_VBR</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrUsernameId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_Password_Secret_Exists_VBR</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrPasswordId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Password_Secret_VBR</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat('https://', parameters('keyVaultName'), parameters('keyVaultDomain'), '/secrets/', variables('VbrPasswordId'), '?api-version=7.4')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_Hybrid_Connection_Exists_VBR</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Hybrid_Connection_VBR</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Listener_Rule_VBR</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultListener?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Sender_Rule_VBR</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultSender?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Sender_Key_VBR</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Relay/namespaces/', parameters('relayNamespaceName'), '/hybridConnections/', variables('VbrServerName'), '/authorizationRules/defaultSender/listKeys?api-version=2024-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Check_Function_App_Binding_Exists_VBR</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VbrServerName'), '?api-version=2022-03-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Bind_To_Function_App_VBR</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@concat(parameters('azureManagementDomain'), '/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('resourceGroupName'), '/providers/Microsoft.Web/sites/', parameters('functionAppName'), '/hybridConnectionNamespaces/', parameters('relayNamespaceName'), '/relays/', variables('VbrServerName'), '?api-version=2022-03-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/veeam.html">Back to Veeam</a></p>
+
 </div>
 
 </body>

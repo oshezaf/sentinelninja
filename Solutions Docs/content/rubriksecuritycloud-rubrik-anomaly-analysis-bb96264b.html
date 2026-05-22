@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rubrik Anomaly Analysis &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="rubrik-anomaly-analysis">Rubrik Anomaly Analysis</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook queries Rubrik Security Cloud to enrich the Anomaly event with additional information regarding the Ransomware analysis, results from sensitive data scans, (to aid in incident prioritization), and additional information about the Rubrik cluster. Also it retrieves suspiciousFiles information associated with anomalous snapshot and internally calls RubrikAnomalyGenerateDownloadableLink playbook to get downloadable links and enrich the anomaly incident and RubrikUpdateAnomalyStatus pla</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyAnalysis/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikAnomalyAnalysis/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,94 +47,214 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault_1</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault_1</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">9</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">9</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Close_Incident_Due_To_Anomaly_Is_Already_Resolved | put | `/Incidents` | — |
-| Close_incident_due_to_resolve_anomaly_or_report_false_positive | put | `/Incidents` | — |
-
-#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Client_Id_ | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
-| Get_secret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
-
-#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Authentication | post | `/api/client_token` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Determine_the_status_of_the_Rubrik_Radar_analysis_process | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| sonar_sensitive_hits(Object_Details) | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| Get_Suspicious_files_for_a_latest_snpshot_of_given_object | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| Get_cdm_snapshotid_for_latest_snapshotfid | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| Gather_the_final_Radar_Analysis_results | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| GenericPolling | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| rubrik-cdm-cluster-connection-state | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| rubrik-cdm-cluster-location | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-| rubrik-sonar-sensitive-hits(Object_List) | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
-
-#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| RubrikGenerateDownloadableLink | — | — | workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('DownloadableLinkGeneratePlaybookName'))]`<br>triggerName=`manual` |
-| RubrikUpdateAnomalyStatus | — | — | workflowId=`[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]`<br>triggerName=`manual` |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Close_Incident_Due_To_Anomaly_Is_Already_Resolved</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Close_incident_due_to_resolve_anomaly_or_report_false_positive</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault_1"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault_1</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Client_Id_</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="rubrikcustomconnector"><a href="../logic-apps/custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a> (Custom)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/client_token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Determine_the_status_of_the_Rubrik_Radar_analysis_process</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">sonar_sensitive_hits(Object_Details)</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Suspicious_files_for_a_latest_snpshot_of_given_object</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_cdm_snapshotid_for_latest_snapshotfid</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Gather_the_final_Radar_Analysis_results</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">GenericPolling</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">rubrik-cdm-cluster-connection-state</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">rubrik-cdm-cluster-location</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">rubrik-sonar-sensitive-hits(Object_List)</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">RubrikGenerateDownloadableLink</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('DownloadableLinkGeneratePlaybookName'))]</code><br>triggerName=<code>manual</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">RubrikUpdateAnomalyStatus</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/',subscription().subscriptionId,'/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',parameters('UpdateAnomalyStatusPlaybookName'))]</code><br>triggerName=<code>manual</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -149,8 +269,8 @@
 <li>The Rubrik Security Cloud solution should be configured to <a href="https://docs.rubrik.com/en-us/saas/saas/polaris_api_access_with_service_accounts.html">connect to Rubrik Security Cloud API end points using a Service Account</a>, the service account should be assigned a role that includes the relevant privileges necessary to perform the desired operations (see <a href="https://docs.rubrik.com/en-us/saas/saas/common/roles_and_permissions.html">Roles and Permissions</a> in the Rubrik Security Cloud user guide).</li>
 <li>Rubrik custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found in the connector doc page.</li>
 <li>Store Service account credentials in Key Vault and obtain keyvault name and tenantId
-    a. Create a Key Vault with unique name
-    b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Rubrik-AS-Int-ClientId' &amp; 'Rubrik-AS-Int-ClientSecret' for storing client_id and client_secret respectively</li>
+a. Create a Key Vault with unique name
+b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Rubrik-AS-Int-ClientId' &amp; 'Rubrik-AS-Int-ClientSecret' for storing client_id and client_secret respectively</li>
 <li>Make sure that RubrikAnomalyGenerateDownloadableLink and RubrikUpdateAnomalyStatus playbook are deployed before deploying RubrikAnomalyAnalysis playbook.</li>
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
@@ -166,7 +286,7 @@
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikAnomalyAnalysis%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikAnomalyAnalysis%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikAnomalyAnalysis%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikAnomalyAnalysis%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection like keyvault.</p>
@@ -179,15 +299,18 @@
 <li>Repeat steps for other connections</li>
 </ol>
 <h4 id="b-assign-role-to-close-incident">b. Assign Role to close incident</h4>
-<p>Assign role to this playbook.
-1. Go to Log Analytics Workspace → <your workspace> → Access Control → Add
-2. Add role assignment
-3. Assignment type: Job function roles -&gt; Add 'Microsoft Sentinel Contributor' as a Role
-4. Members: select managed identity for assigned access to and add your logic app as member
-5. Click on review+assign</p>
+<p>Assign role to this playbook.</p>
+<ol>
+<li>Go to Log Analytics Workspace → <your workspace> → Access Control → Add</li>
+<li>Add role assignment</li>
+<li>Assignment type: Job function roles -&gt; Add 'Microsoft Sentinel Contributor' as a Role</li>
+<li>Members: select managed identity for assigned access to and add your logic app as member</li>
+<li>Click on review+assign</li>
+</ol>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/rubriksecuritycloud.html">Back to RubrikSecurityCloud</a></p>
+
 </div>
 
 </body>

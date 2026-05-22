@@ -16,6 +16,7 @@
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SeraphicSecurityConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SeraphicSecurity/Data%20Connectors/SeraphicSecurityConnector.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#seraphic-web-security) |
 
 The Seraphic Web Security data connector provides the capability to ingest [Seraphic Web Security](https://seraphicsecurity.com/) events and alerts into Microsoft Sentinel.
 

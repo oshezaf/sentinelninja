@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Project](../solutions/microsoft-project.md) |
 | **Collection Method** | [Native](../methods/native.md) |
 | **Connector Definition Files** | [template_Office365Project.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Project/Data%20Connectors/template_Office365Project.JSON) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-project) |
 
 Microsoft Project (MSP) is a project management software solution. Depending on your plan, Microsoft Project lets you plan projects, assign tasks, manage resources, create reports and more. This connector allows you to stream your Azure Project audit logs into Microsoft Sentinel in order to track your project activities.
 

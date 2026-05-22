@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [CTM360_CBS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/CBS/CTM360_CBS_ConnectorDefinition.json) |
 | **CCF Configuration** | [CTM360_CBS_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/CBS/CTM360_CBS_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#ctm360-cyberblindspot-serverless) |
 
 The CTM360 Cyber Blind Spot (CBS) connector provides integration with CTM360's CBS platform to ingest security data across 6 module types: incidents, malware logs, breached credentials, compromised cards, domain infringement, and subdomain infringement. This connector uses the Codeless Connector Framework (CCF) for serverless data collection.
 

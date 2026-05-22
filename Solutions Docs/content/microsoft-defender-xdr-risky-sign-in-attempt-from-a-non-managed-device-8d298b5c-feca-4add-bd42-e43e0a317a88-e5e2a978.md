@@ -25,7 +25,6 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) | `ClientAppUsed == "Browser"`<br>`IsCompliant != "1"`<br>`IsManaged != "1"` | ? | ✗ | ? |
-| [`EntraIdSignInEvents`](../tables/entraidsigninevents.md) |  | ? | ✗ | ? |
 
 ---
 

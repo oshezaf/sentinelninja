@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Crowdstrike-ResponsefromTeams &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="crowdstrike-responsefromteams">Crowdstrike-ResponsefromTeams</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>When a new Azure Sentinel incident is created, this playbook gets triggered and performs below actions: 1. Fetches the device information from Crowdstrike 1. Contain the device or run a script based on SOC action 1. Add a comment to the incident with the information collected from the Crowdstrike, summary of the actions taken and close the incident</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/CrowdStrike/Playbooks/CrowdStrike_ResponsefromTeams/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/CrowdStrike/Playbooks/CrowdStrike_ResponsefromTeams/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,79 +47,177 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">7</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">7</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Update_incident | put | `/Incidents` | — |
-| Entities_-_Get_Hosts | post | `/entities/host` | — |
-
-#### [`teams`](../logic-apps/managed-teams.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Post_your_own_adaptive_card_as_the_Flow_bot_to_a_channel | post | `/flowbot/actions/adaptivecard/recipienttypes/channel` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP_-_Get_device_information | GET | `@{body('CrowdStrike_Base')?['FalconHost']}/devices/entities/devices/v1?ids=@{body('Parse_JSON_Get_device_id_response')?['resources']?[0]}` | — |
-| HTTP_-_Get_Scripts | GET | `@{body('CrowdStrike_Base')?['FalconHost']}/real-time-response/entities/scripts/v1` | — |
-| HTTP_-_Get_device_id | GET | `@{body('CrowdStrike_Base')?['FalconHost']}/devices/queries/devices/v1?filter=hostname:'@{body('Entities_-_Get_Hosts')?['Hosts']?[0]?['HostName']}'` | — |
-| HTTP_Contain_a_device | POST | `@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/devices/entities/devices-actions/v2?action_name=contain` | — |
-| HTTP_Lift_containment_on_device | POST | `@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/devices/entities/devices-actions/v2?action_name=lift_containment` | — |
-| HTTP_run_a_script | POST | `@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/real-time-response/entities/admin-command/v1` | — |
-| HTTP_create_a_session_to_host_to_run_a_script | POST | `@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/real-time-response/entities/sessions/v1` | — |
-
-#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| CrowdStrike_Base | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Logic/workflows/', parameters('CrowdStrike_Base_Playbook_Name'))]`<br>triggerName=`manual` |
-| CrowdStrike_Base_call_after_SOC_responds | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Logic/workflows/', parameters('CrowdStrike_Base_Playbook_Name'))]`<br>triggerName=`manual` |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="teams"><a href="../logic-apps/managed-teams.html"><code>teams</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Post_your_own_adaptive_card_as_the_Flow_bot_to_a_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/flowbot/actions/adaptivecard/recipienttypes/channel</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_device_information</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{body('CrowdStrike_Base')?['FalconHost']}/devices/entities/devices/v1?ids=@{body('Parse_JSON_Get_device_id_response')?['resources']?[0]}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_Scripts</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{body('CrowdStrike_Base')?['FalconHost']}/real-time-response/entities/scripts/v1</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_device_id</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{body('CrowdStrike_Base')?['FalconHost']}/devices/queries/devices/v1?filter=hostname:'@{body('Entities_-_Get_Hosts')?['Hosts']?[0]?['HostName']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_Contain_a_device</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/devices/entities/devices-actions/v2?action_name=contain</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_Lift_containment_on_device</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/devices/entities/devices-actions/v2?action_name=lift_containment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_run_a_script</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/real-time-response/entities/admin-command/v1</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_create_a_session_to_host_to_run_a_script</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{body('CrowdStrike_Base_call_after_SOC_responds')?['FalconHost']}/real-time-response/entities/sessions/v1</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">CrowdStrike_Base</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Logic/workflows/', parameters('CrowdStrike_Base_Playbook_Name'))]</code><br>triggerName=<code>manual</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">CrowdStrike_Base_call_after_SOC_responds</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name ,'/providers/Microsoft.Logic/workflows/', parameters('CrowdStrike_Base_Playbook_Name'))]</code><br>triggerName=<code>manual</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Mimecast_Audit_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast/Data%20Connectors/MimecastAudit/Mimecast_Audit_FunctionApp.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *Sibling ARM template declares DCR / Log Ingestion API resources* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#mimecast-audit) |
 
 The data connector for [Mimecast Audit](https://integrations.mimecast.com/tech-partners/microsoft-sentinel/) provides customers with the visibility into security events related to audit and authentication events within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into user activity, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities.  
 

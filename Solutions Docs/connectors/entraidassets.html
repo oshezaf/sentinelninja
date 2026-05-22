@@ -4,49 +4,50 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Microsoft Entra ID Assets &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="microsoft-entra-id-assets">Microsoft Entra ID Assets</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/refs/heads/master/Logos/AADCloudSync.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/refs/heads/master/Logos/AADCloudSync.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>EntraIDAssets</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>EntraIDAssets</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Microsoft</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/microsoft-entra-id-assets.html">Microsoft Entra ID Assets</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/microsoft-entra-id-assets.html">Microsoft Entra ID Assets</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/unknown.html">Unknown</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/unknown.html">Unknown</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Assets/Data%20Connectors/EntraIDAssets_DataConnectorDefinition.json">EntraIDAssets_DataConnectorDefinition.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Assets/Data%20Connectors/EntraIDAssets_DataConnectorDefinition.json">EntraIDAssets_DataConnectorDefinition.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -59,20 +60,23 @@ Requires GlobalAdmin, SecurityAdmin on the workspace's tenant</p>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <ol>
-<li>Connect Microsoft Entra ID assets to ingest into Microsoft Sentinel Lake.
-  - EntraApplications
-  - EntraDevices
-  - EntraGroupMemberships
-  - EntraGroups
-  - EntraMembers
-  - EntraOrgContacts
-  - EntraOrganizations
-  - EntraServicePrincipals
-  - EntraUsers</li>
+<li>Connect Microsoft Entra ID assets to ingest into Microsoft Sentinel Lake.</li>
 </ol>
+<ul>
+<li>EntraApplications</li>
+<li>EntraDevices</li>
+<li>EntraGroupMemberships</li>
+<li>EntraGroups</li>
+<li>EntraMembers</li>
+<li>EntraOrgContacts</li>
+<li>EntraOrganizations</li>
+<li>EntraServicePrincipals</li>
+<li>EntraUsers</li>
+</ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

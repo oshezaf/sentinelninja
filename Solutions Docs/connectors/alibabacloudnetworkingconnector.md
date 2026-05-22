@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [AlibabaCloudNetworking_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking/Data%20Connectors/AlibabaCloudNetworking_CCP/AlibabaCloudNetworking_ConnectorDefinition.json) |
 | **CCF Configuration** | [AlibabaCloudNetworking_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking/Data%20Connectors/AlibabaCloudNetworking_CCP/AlibabaCloudNetworking_PollingConfig.json) |
 | **CCF Capabilities** | `AliCloudSlsV1`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#alibaba-cloud-networking-data-connector-via-codeless-connector-framework) |
 
 The Alibaba Cloud Networking data connector provides the capability to ingest [Alibaba Cloud](https://www.alibabacloud.com/) networking data into Microsoft Sentinel through the Simple Log Service (SLS) REST API. Refer to [API documentation](https://www.alibabacloud.com/help/en/sls/developer-reference/api-sls-2020-12-30-endpoint) for more information. The connector provides the ability to get VPC Flow Logs, WAF Logs, and API Gateway Logs from Alibaba Cloud.
 

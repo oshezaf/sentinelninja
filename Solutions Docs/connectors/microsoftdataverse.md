@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [mainTemplate.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications/Package/mainTemplate.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-dataverse) |
 
 Microsoft Dataverse is a scalable and secure data platform that enables organizations to store and manage data used by business applications. The Microsoft Dataverse data connector provides the capability to ingest Dataverse and Dynamics 365 CRM activity logs from the Microsoft Purview Audit log into Microsoft Sentinel.
 

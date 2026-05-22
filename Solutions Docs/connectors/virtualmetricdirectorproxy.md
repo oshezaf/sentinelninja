@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [Template_DirectorProxy.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream/Data%20Connectors/VirtualMetric-DirectorProxy/Template_DirectorProxy.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#virtualmetric-director-proxy) |
 
 VirtualMetric Director Proxy deploys an Azure Function App to securely bridge VirtualMetric DataStream with Azure services including Microsoft Sentinel, Azure Data Explorer, and Azure Storage.
 

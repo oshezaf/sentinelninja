@@ -205,21 +205,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
-
-**GitHub Only:** `DstPortNumber == "3389"`<br>`DvcAction in "Allow,Drop"`<br>`EventProduct == "Windows Firewall"`<br>`SrcIpAddr !in "::1,-"`
-
-| Workbook |
-|:-------------|
-| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |
 
 ## Parsers Using This Table (2)
 

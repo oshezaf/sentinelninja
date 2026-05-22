@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IdentityInfo &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="identityinfo">IdentityInfo</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <blockquote>
 <p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
@@ -28,26 +28,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Internal</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Internal</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table">View Documentation</a></td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -62,241 +62,241 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">AccountDisplayName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname.</td>
+  <td style="text-align:left">AccountDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountDomain*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Domain of the account</td>
+  <td style="text-align:left">AccountDomain*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User name of the account</td>
+  <td style="text-align:left">AccountName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User name of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the account in Microsoft Entra ID</td>
+  <td style="text-align:left">AccountObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the account in Microsoft Entra ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountUpn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User principal name (UPN) of the account</td>
+  <td style="text-align:left">AccountUpn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User principal name (UPN) of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">Address</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Address of the account user</td>
+  <td style="text-align:left">Address</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Address of the account user</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssignedRoles*</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">For identities from Microsoft Entra-only, the roles assigned to the account user</td>
+  <td style="text-align:left">AssignedRoles*</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">For identities from Microsoft Entra-only, the roles assigned to the account user</td>
 </tr>
 <tr>
-<td style="text-align: left;">BlastRadius**</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A calculation based on the position of the user in the org tree and the user's Microsoft Entra roles and permissions; possible values: Low, Medium, High</td>
+  <td style="text-align:left">BlastRadius**</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A calculation based on the position of the user in the org tree and the user's Microsoft Entra roles and permissions; possible values: Low, Medium, High</td>
 </tr>
 <tr>
-<td style="text-align: left;">ChangeSource*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Identifies which identity provider or process triggered the addition of the new row. For example, theSystem-UserPersistencevalue is used for any rows added by an automated process.</td>
+  <td style="text-align:left">ChangeSource*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifies which identity provider or process triggered the addition of the new row. For example, theSystem-UserPersistencevalue is used for any rows added by an automated process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">City</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">City where the account user is located</td>
+  <td style="text-align:left">City</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">City where the account user is located</td>
 </tr>
 <tr>
-<td style="text-align: left;">CloudSid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Cloud security identifier of the account</td>
+  <td style="text-align:left">CloudSid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud security identifier of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">CompanyName**</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the company for which the user works</td>
+  <td style="text-align:left">CompanyName**</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the company for which the user works</td>
 </tr>
 <tr>
-<td style="text-align: left;">Country</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Country/Region where the account user is located</td>
+  <td style="text-align:left">Country</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Country/Region where the account user is located</td>
 </tr>
 <tr>
-<td style="text-align: left;">CreatedDateTime*</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the account user was created</td>
+  <td style="text-align:left">CreatedDateTime*</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the account user was created</td>
 </tr>
 <tr>
-<td style="text-align: left;">CriticalityLevel</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The criticality score of the account</td>
+  <td style="text-align:left">CriticalityLevel</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The criticality score of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeletedDateTime**</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the user account was deleted</td>
+  <td style="text-align:left">DeletedDateTime**</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the user account was deleted</td>
 </tr>
 <tr>
-<td style="text-align: left;">Department</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the department that the account user belongs to</td>
+  <td style="text-align:left">Department</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the department that the account user belongs to</td>
 </tr>
 <tr>
-<td style="text-align: left;">DistinguishedName*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user'sdistinguished name</td>
+  <td style="text-align:left">DistinguishedName*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user'sdistinguished name</td>
 </tr>
 <tr>
-<td style="text-align: left;">EmailAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SMTP address of the account</td>
+  <td style="text-align:left">EmailAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SMTP address of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">EmployeeId**</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Employee identifier assigned to the user by the organization</td>
+  <td style="text-align:left">EmployeeId**</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Employee identifier assigned to the user by the organization</td>
 </tr>
 <tr>
-<td style="text-align: left;">GivenName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Given name or first name of the account user</td>
+  <td style="text-align:left">GivenName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Given name or first name of the account user</td>
 </tr>
 <tr>
-<td style="text-align: left;">GroupMembership**</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Microsoft Entra ID groups where the user account is a member</td>
+  <td style="text-align:left">GroupMembership**</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Microsoft Entra ID groups where the user account is a member</td>
 </tr>
 <tr>
-<td style="text-align: left;">IdentityEnvironment</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Environment where the identity is used; possible values: CloudOnly, Hybrid, On-premises</td>
+  <td style="text-align:left">IdentityEnvironment</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Environment where the identity is used; possible values: CloudOnly, Hybrid, On-premises</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsAccountEnabled</td>
-<td style="text-align: left;">boolean</td>
-<td style="text-align: left;">Indicates whether the account is enabled or not</td>
+  <td style="text-align:left">IsAccountEnabled</td>
+  <td style="text-align:left">boolean</td>
+  <td style="text-align:left">Indicates whether the account is enabled or not</td>
 </tr>
 <tr>
-<td style="text-align: left;">JobTitle</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Job title of the account user</td>
+  <td style="text-align:left">JobTitle</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Job title of the account user</td>
 </tr>
 <tr>
-<td style="text-align: left;">Manager*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The listed manager of the account user</td>
+  <td style="text-align:left">Manager*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The listed manager of the account user</td>
 </tr>
 <tr>
-<td style="text-align: left;">OnPremObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Active Directory object ID of the user</td>
+  <td style="text-align:left">OnPremObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Active Directory object ID of the user</td>
 </tr>
 <tr>
-<td style="text-align: left;">OnPremSid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">On-premises security identifier (SID) of the account</td>
+  <td style="text-align:left">OnPremSid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">On-premises security identifier (SID) of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">OtherMailAddresses**</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional email addresses of the user account</td>
+  <td style="text-align:left">OtherMailAddresses**</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional email addresses of the user account</td>
 </tr>
 <tr>
-<td style="text-align: left;">Phone*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The listed phone number of the account user</td>
+  <td style="text-align:left">Phone*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The listed phone number of the account user</td>
 </tr>
 <tr>
-<td style="text-align: left;">PrivilegedEntraPimRoles(Preview)***</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">A snapshot of privileged role assignment schedules and eligibility schedules for the account as maintained by Microsoft Entra Privileged Identity Management (excluding activated assignments)</td>
+  <td style="text-align:left">PrivilegedEntraPimRoles(Preview)***</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A snapshot of privileged role assignment schedules and eligibility schedules for the account as maintained by Microsoft Entra Privileged Identity Management (excluding activated assignments)</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReportId*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the event</td>
+  <td style="text-align:left">ReportId*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">RiskLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Microsoft Entra ID risk level of the user account; possible values: Low, Medium, High</td>
+  <td style="text-align:left">RiskLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Microsoft Entra ID risk level of the user account; possible values: Low, Medium, High</td>
 </tr>
 <tr>
-<td style="text-align: left;">RiskLevelDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Details regarding the Microsoft Entra ID risk level</td>
+  <td style="text-align:left">RiskLevelDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details regarding the Microsoft Entra ID risk level</td>
 </tr>
 <tr>
-<td style="text-align: left;">RiskStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Status of the user's risk; possible values: None, ConfirmedSafe, Remediated, Dismissed, AtRisk, ConfirmedCompromised, UnknownFutureValue</td>
+  <td style="text-align:left">RiskStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of the user's risk; possible values: None, ConfirmedSafe, Remediated, Dismissed, AtRisk, ConfirmedCompromised, UnknownFutureValue</td>
 </tr>
 <tr>
-<td style="text-align: left;">SipProxyAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Voice over IP (VOIP) session initiation protocol (SIP) address of the account</td>
+  <td style="text-align:left">SipProxyAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Voice over IP (VOIP) session initiation protocol (SIP) address of the account</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceProviders</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Source providers of the accounts for the identity; possible values: ActiveDirectory, EntraID, Okta</td>
+  <td style="text-align:left">SourceProviders</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Source providers of the accounts for the identity; possible values: ActiveDirectory, EntraID, Okta</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The source system for the record</td>
+  <td style="text-align:left">SourceSystem*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source system for the record</td>
 </tr>
 <tr>
-<td style="text-align: left;">State**</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">State where the sign-in occurred, if available</td>
+  <td style="text-align:left">State**</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">State where the sign-in occurred, if available</td>
 </tr>
 <tr>
-<td style="text-align: left;">Surname</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Surname, family name, or last name of the account user</td>
+  <td style="text-align:left">Surname</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Surname, family name, or last name of the account user</td>
 </tr>
 <tr>
-<td style="text-align: left;">Tags*</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Tags assigned to the account user by Defender for Identity</td>
+  <td style="text-align:left">Tags*</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tags assigned to the account user by Defender for Identity</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier representing your organization's instance of Microsoft Entra ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier representing your organization's instance of Microsoft Entra ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantMembershipType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User type in Microsoft Entra ID; possible values: Guest, Member</td>
+  <td style="text-align:left">TenantMembershipType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User type in Microsoft Entra ID; possible values: Guest, Member</td>
 </tr>
 <tr>
-<td style="text-align: left;">Timestamp*</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time that the line was written to the database.This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added.</td>
+  <td style="text-align:left">Timestamp*</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time that the line was written to the database.This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type*</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of identity; possible values: User, ServiceAccount</td>
+  <td style="text-align:left">Type*</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of identity; possible values: User, ServiceAccount</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAccountControl</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Security attributes of the user account in the Active Directory domain</td>
+  <td style="text-align:left">UserAccountControl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Security attributes of the user account in the Active Directory domain</td>
 </tr>
 </tbody>
 </table>
@@ -329,14 +329,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.html">Suspicious granting of permissions to an account</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.html">Suspicious granting of permissions to an account</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -344,18 +344,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-authentication-method-changed-for-privileged-account-feb0a2fb-ae75-4343-8cbc-ed545f1da289-05036a5e.html">Authentication Method Changed for Privileged Account</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-authentication-method-changed-for-privileged-account-feb0a2fb-ae75-4343-8cbc-ed545f1da289-05036a5e.html">Authentication Method Changed for Privileged Account</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-privileged-account-permissions-changed-0433c8a3-9aa6-4577-beef-2ea23be41137-ddff1dcb.html">Privileged Account Permissions Changed</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-privileged-account-permissions-changed-0433c8a3-9aa6-4577-beef-2ea23be41137-ddff1dcb.html">Privileged Account Permissions Changed</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -363,14 +363,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.html">Local Admin Group Changes</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63aa43c2-e88e-4102-aea5-0432851c541a-92e9a57c.html">Local Admin Group Changes</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -378,30 +378,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-entra-id-authentication-methods-changed-for-privileged-account-694c91ee-d606-4ba9-928e-405a2dd0ff0f-513c9e02.html">Authentication Methods Changed for Privileged Account</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-entra-id-authentication-methods-changed-for-privileged-account-694c91ee-d606-4ba9-928e-405a2dd0ff0f-513c9e02.html">Authentication Methods Changed for Privileged Account</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.html">MFA Rejected by User</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-entra-id-mfa-rejected-by-user-d99cf5c3-d660-436c-895b-8a8f8448da23-b3c993fb.html">MFA Rejected by User</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.html">Privileged Accounts - Sign in Failure Spikes</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-entra-id-privileged-accounts-sign-in-failure-spikes-34c5aff9-a8c2-4601-9654-c7e46342d03b-ebff2fbe.html">Privileged Accounts - Sign in Failure Spikes</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.html">Successful logon from IP and failure from a different IP</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-entra-id-successful-logon-from-ip-and-failure-from-a-different-ip-02ef8d7e-fc3a-4d86-a457-650fa571d8d2-8d1712d5.html">Successful logon from IP and failure from a different IP</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.html">User Accounts - Sign in Failure due to CA Spikes</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-entra-id-user-accounts-sign-in-failure-due-to-ca-spikes-3a9d5ede-2b9d-43a2-acc4-d272321ff77c-0daea6fb.html">User Accounts - Sign in Failure due to CA Spikes</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -409,14 +409,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-entra-id-protection-correlate-unfamiliar-sign-in-properties-&amp;-atypical-travel-alerts-a3df4a32-4805-4c6d-8699-f3c888af2f67-965fe5ef.html">Correlate Unfamiliar sign-in properties &amp; atypical travel alerts</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-entra-id-protection-correlate-unfamiliar-sign-in-properties-&amp;-atypical-travel-alerts-a3df4a32-4805-4c6d-8699-f3c888af2f67-965fe5ef.html">Correlate Unfamiliar sign-in properties &amp; atypical travel alerts</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -424,18 +424,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.html">Successful AWS Console Login from IP Address Observed Conducting Password Spray</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.html">Successful AWS Console Login from IP Address Observed Conducting Password Spray</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.html">Suspicious AWS console logins by credential access alerts</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.html">Suspicious AWS console logins by credential access alerts</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -443,30 +443,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-addition-of-a-temporary-access-pass-to-a-privileged-account-d7feb859-f03e-4e8d-8b21-617be0213b13-1bb54eef.html">Addition of a Temporary Access Pass to a Privileged Account</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-addition-of-a-temporary-access-pass-to-a-privileged-account-d7feb859-f03e-4e8d-8b21-617be0213b13-1bb54eef.html">Addition of a Temporary Access Pass to a Privileged Account</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-authentications-of-privileged-accounts-outside-of-expected-controls-af435ca1-fb70-4de1-92c1-7435c48482a9-4ae23dd0.html">Authentications of Privileged Accounts Outside of Expected Controls</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-authentications-of-privileged-accounts-outside-of-expected-controls-af435ca1-fb70-4de1-92c1-7435c48482a9-4ae23dd0.html">Authentications of Privileged Accounts Outside of Expected Controls</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-privileged-user-logon-from-new-asn-55073036-bb86-47d3-a85a-b113ac3d9396-417005b2.html">Privileged User Logon from new ASN</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-privileged-user-logon-from-new-asn-55073036-bb86-47d3-a85a-b113ac3d9396-417005b2.html">Privileged User Logon from new ASN</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-suspicious-modification-of-global-administrator-user-properties-48602a24-67cf-4362-b258-3f4249e55def-fe1c2532.html">Suspicious modification of Global Administrator user properties</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-suspicious-modification-of-global-administrator-user-properties-48602a24-67cf-4362-b258-3f4249e55def-fe1c2532.html">Suspicious modification of Global Administrator user properties</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.html">Workspace deletion activity from an infected device</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.html">Workspace deletion activity from an infected device</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -474,14 +474,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.html">Suspicious VM Instance Creation Activity Detected</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.html">Suspicious VM Instance Creation Activity Detected</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -490,34 +490,34 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.html">Login attempts using Legacy Auth</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-login-attempts-using-legacy-auth-b7918a0a-c6fe-4b6d-9111-b0b0c477f1a8-3c2feb3c.html">Login attempts using Legacy Auth</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-microsoft-entra-id-signins-from-new-locations-41fa6e2d-afe9-4398-9356-cec3a927e44e-6ce1e4de.html">Microsoft Entra ID signins from new locations</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-microsoft-entra-id-signins-from-new-locations-41fa6e2d-afe9-4398-9356-cec3a927e44e-6ce1e4de.html">Microsoft Entra ID signins from new locations</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.html">Risky Sign-in with new MFA method</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-risky-sign-in-with-new-mfa-method-bfacf634-c75e-4291-998c-ecbc0323d943-114a4a02.html">Risky Sign-in with new MFA method</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.html">Successful Signin From Non-Compliant Device</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-successful-signin-from-non-compliant-device-99885ff5-00cf-49e8-9452-6de6aba2a5c7-20eaa2d1.html">Successful Signin From Non-Compliant Device</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-accounts-unusual-authentications-occurring-when-countries-f56b2223-0d4d-4347-9de4-822d195624ee-ea198d62.html">User Accounts - Unusual authentications occurring when countries do not conduct normal business operations.</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-user-accounts-unusual-authentications-occurring-when-countries-f56b2223-0d4d-4347-9de4-822d195624ee-ea198d62.html">User Accounts - Unusual authentications occurring when countries do not conduct normal business operations.</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.html">User Login IP Address Teleportation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/business-email-compromise-financial-fraud-user-login-ip-address-teleportation-09a7c5fc-0649-4f7d-a21b-36a754cef6b6-e3c0bf58.html">User Login IP Address Teleportation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -525,26 +525,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-detect-disabled-account-sign-in-attempts-by-account-name-b00f127c-46fa-40bd-9ab6-b266974d29cc-dff302a4.html">Detect Disabled Account Sign-in Attempts by Account Name</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/cloud-identity-threat-protection-essentials-detect-disabled-account-sign-in-attempts-by-account-name-b00f127c-46fa-40bd-9ab6-b266974d29cc-dff302a4.html">Detect Disabled Account Sign-in Attempts by Account Name</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954-088cc628.html">Sign-ins From VPS Providers</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-vps-providers-86490334-5371-40a2-971a-3749c2654954-088cc628.html">Sign-ins From VPS Providers</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.html">Sign-ins from Nord VPN Providers</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/cloud-identity-threat-protection-essentials-sign-ins-from-nord-vpn-providers-cdc9b092-8a16-4559-9e5e-831877e8209a-d746cc8d.html">Sign-ins from Nord VPN Providers</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.html">Suspicious Sign-ins to Privileged Account</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.html">Suspicious Sign-ins to Privileged Account</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -552,14 +552,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.html">Dataverse - Identity management activity outside of privileged directory role membership</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.html">Dataverse - Identity management activity outside of privileged directory role membership</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -567,14 +567,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63142c12-5d8b-48cf-a0f6-b523c855497c-cbc59b70.html">Local Admin Group Changes</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-local-admin-group-changes-63142c12-5d8b-48cf-a0f6-b523c855497c-cbc59b70.html">Local Admin Group Changes</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -582,14 +582,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/ueba-essentials-anomalous-connection-from-highly-privileged-user-741fdf32-e002-4577-ac9b-839fb49f128e-22b5a707.html">Anomalous connection from highly privileged user</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ueba-essentials-anomalous-connection-from-highly-privileged-user-741fdf32-e002-4577-ac9b-839fb49f128e-22b5a707.html">Anomalous connection from highly privileged user</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -597,14 +597,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.html">Login attempt by Blocked MFA user</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.html">Login attempt by Blocked MFA user</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -612,98 +612,98 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-http-requests-to-non-https-endpoints-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c-9d4340c8.html">A365 AI Agents - HTTP Requests to Non-HTTPS Endpoints</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-http-requests-to-non-https-endpoints-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c-9d4340c8.html">A365 AI Agents - HTTP Requests to Non-HTTPS Endpoints</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-http-requests-to-non-standard-ports-9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a-ac521aee.html">A365 AI Agents - HTTP Requests to Non-standard Ports</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-http-requests-to-non-standard-ports-9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a-ac521aee.html">A365 AI Agents - HTTP Requests to Non-standard Ports</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-hard-coded-credentials-in-tools-or-actions-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d-0acbbd53.html">A365 AI Agents - Hard-coded credentials in Tools or Actions</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-hard-coded-credentials-in-tools-or-actions-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d-0acbbd53.html">A365 AI Agents - Hard-coded credentials in Tools or Actions</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-mcp-tool-configured-2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f-bac34b9a.html">A365 AI Agents - MCP Tool Configured</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-mcp-tool-configured-2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f-bac34b9a.html">A365 AI Agents - MCP Tool Configured</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-missing-tools-in-instructions-7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a-14b1b82a.html">A365 AI Agents - Missing Tools in Instructions</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-missing-tools-in-instructions-7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a-14b1b82a.html">A365 AI Agents - Missing Tools in Instructions</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-orphaned-agents-with-disabled-owners-6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b-069ee2a6.html">A365 AI Agents - Orphaned Agents with Disabled Owners</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-orphaned-agents-with-disabled-owners-6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b-069ee2a6.html">A365 AI Agents - Orphaned Agents with Disabled Owners</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-publicly-shared-8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f-f1f42fc4.html">A365 AI Agents - Publicly Shared</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-publicly-shared-8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f-f1f42fc4.html">A365 AI Agents - Publicly Shared</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-published-agents-with-short-instructions-5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c-3833b204.html">A365 AI Agents - Published Agents with Short Instructions</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-published-agents-with-short-instructions-5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c-3833b204.html">A365 AI Agents - Published Agents with Short Instructions</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-a365-ai-agents-published-agents-without-instructions-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d-3cdf25a6.html">A365 AI Agents - Published Agents without Instructions</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-a365-ai-agents-published-agents-without-instructions-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d-3cdf25a6.html">A365 AI Agents - Published Agents without Instructions</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-5e0f4a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b-4b3d8cb1.html">AI Agents - Orphaned Agents with Disabled Owners</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-5e0f4a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b-4b3d8cb1.html">AI Agents - Orphaned Agents with Disabled Owners</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-administrators-authenticating-to-another-microsoft-entra-id-tenant-3a0447c1-7f43-43d0-aeac-d5e1247964a8-2f7868c7.html">Administrators Authenticating to Another Microsoft Entra ID Tenant</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-administrators-authenticating-to-another-microsoft-entra-id-tenant-3a0447c1-7f43-43d0-aeac-d5e1247964a8-2f7868c7.html">Administrators Authenticating to Another Microsoft Entra ID Tenant</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-anomolous-sign-ins-based-on-time-8ed5b8f1-a43a-49dc-847c-e44d7a590c17-7db3ce6c.html">Anomolous Sign Ins Based on Time</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-anomolous-sign-ins-based-on-time-8ed5b8f1-a43a-49dc-847c-e44d7a590c17-7db3ce6c.html">Anomolous Sign Ins Based on Time</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-copilot-studio-ai-agents-sending-email-to-external-mailboxes-0d5e9f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a-c7f37367.html">Copilot Studio AI Agents - Sending email to external mailboxes</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-copilot-studio-ai-agents-sending-email-to-external-mailboxes-0d5e9f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a-c7f37367.html">Copilot Studio AI Agents - Sending email to external mailboxes</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.html">Critical user management operations followed by disabling of System Restore from admin account</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.html">Critical user management operations followed by disabling of System Restore from admin account</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-localadmingroupchanges-dd2c4f48-b732-4a75-b2c4-b44bacc66d00-632cb4a0.html">LocalAdminGroupChanges</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-localadmingroupchanges-dd2c4f48-b732-4a75-b2c4-b44bacc66d00-632cb4a0.html">LocalAdminGroupChanges</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-non-intended-user-logon-ef645ae9-da22-4ebe-b2ad-c3ad024b807c-7d6ee057.html">Non_intended_user_logon</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-non-intended-user-logon-ef645ae9-da22-4ebe-b2ad-c3ad024b807c-7d6ee057.html">Non_intended_user_logon</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-privileged-account-password-changes-d9cccaf9-d15e-4731-a62a-06d76e9c5e67-592fbe65.html">Privileged Account Password Changes</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-privileged-account-password-changes-d9cccaf9-d15e-4731-a62a-06d76e9c5e67-592fbe65.html">Privileged Account Password Changes</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-privileged-accounts-failed-mfa-d9524fcf-de06-4f95-84b0-1637a30ad595-277f290a.html">Privileged Accounts - Failed MFA</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-privileged-accounts-failed-mfa-d9524fcf-de06-4f95-84b0-1637a30ad595-277f290a.html">Privileged Accounts - Failed MFA</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.html">Privileged Accounts Locked Out</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.html">Privileged Accounts Locked Out</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.html">User not covered under display name impersonation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.html">User not covered under display name impersonation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-492381f4.html">User not covered under display name impersonation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-492381f4.html">User not covered under display name impersonation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.html">devices_with_vuln_and_users_received_payload</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.html">devices_with_vuln_and_users_received_payload</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -712,14 +712,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -727,14 +727,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -742,14 +742,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -757,14 +757,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -772,14 +772,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -787,14 +787,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -802,14 +802,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -817,14 +817,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -832,40 +832,41 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-user-analytics-workbook-b95f3e5a.html">User_Analytics_Workbook</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-user-analytics-workbook-b95f3e5a.html">User_Analytics_Workbook</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-workspaceusage-97e7cfa7.html">WorkspaceUsage</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

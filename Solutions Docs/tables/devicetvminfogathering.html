@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DeviceTvmInfoGathering &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="devicetvminfogathering">DeviceTvmInfoGathering</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <blockquote>
 <p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
@@ -28,22 +28,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">MDE</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">MDE</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvminfogathering-table">View Documentation</a></td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvminfogathering-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -52,41 +52,41 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">AdditionalFields</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional information about the entity or event</td>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional information about the entity or event</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the device in the service</td>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the device in the service</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Fully qualified domain name (FQDN) of the device</td>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Fully qualified domain name (FQDN) of the device</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastSeenTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the service last saw the device</td>
+  <td style="text-align:left">LastSeenTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the service last saw the device</td>
 </tr>
 <tr>
-<td style="text-align: left;">OSPlatform</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</td>
+  <td style="text-align:left">OSPlatform</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the record was generated</td>
+  <td style="text-align:left">Timestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the record was generated</td>
 </tr>
 </tbody>
 </table>
@@ -97,36 +97,37 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoft-defender-av-engine-up-to-date-info-02be358b-8733-46b7-8e3d-624b1f918237-1f994ffa.html">Microsoft Defender AV Engine up to date info</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-defender-av-engine-up-to-date-info-02be358b-8733-46b7-8e3d-624b1f918237-1f994ffa.html">Microsoft Defender AV Engine up to date info</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoft-defender-av-platform-up-to-date-information-4eba78b0-8e8e-4e9a-9aff-160372bdd201-2b9d34cb.html">Microsoft Defender AV Platform up to date information</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-defender-av-platform-up-to-date-information-4eba78b0-8e8e-4e9a-9aff-160372bdd201-2b9d34cb.html">Microsoft Defender AV Platform up to date information</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoft-defender-av-security-intelligence-up-to-date-information-0f2179fb-bacc-4b71-80b3-29de436e965c-e636be5e.html">Microsoft Defender AV Security Intelligence up to date information</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-defender-av-security-intelligence-up-to-date-information-0f2179fb-bacc-4b71-80b3-29de436e965c-e636be5e.html">Microsoft Defender AV Security Intelligence up to date information</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoft-defender-av-details-fee07b7b-e704-4216-bbfc-3b1344136e07-7c2ddb5f.html">Microsoft Defender AV details</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-defender-av-details-fee07b7b-e704-4216-bbfc-3b1344136e07-7c2ddb5f.html">Microsoft Defender AV details</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoft-defender-av-mode-device-count-9fddf2f5-88ac-4186-ba48-7a4187a4f755-2c788b2c.html">Microsoft Defender AV mode device count</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoft-defender-av-mode-device-count-9fddf2f5-88ac-4186-ba48-7a4187a4f755-2c788b2c.html">Microsoft Defender AV mode device count</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

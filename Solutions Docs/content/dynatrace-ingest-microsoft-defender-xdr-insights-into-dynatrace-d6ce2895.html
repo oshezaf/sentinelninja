@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ingest Microsoft Defender XDR insights into Dynatrace &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="ingest-microsoft-defender-xdr-insights-into-dynatrace">Ingest Microsoft Defender XDR insights into Dynatrace</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook will ingest Microsoft Defender XDR insights into Dynatrace.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/dynatrace.html">Dynatrace</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Ingest-DynatraceMSDefenderXDR/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace/Playbooks/Ingest-DynatraceMSDefenderXDR/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,47 +47,73 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Dynatrace_Access_Token | get | `/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Ingest_Dynatrace_Log_Entries | POST | `https://@{parameters('Tenant')}/api/v2/logs/ingest` | — |
-
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Dynatrace_Access_Token</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('DynatraceAccessToken')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Ingest_Dynatrace_Log_Entries</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://@{parameters('Tenant')}/api/v2/logs/ingest</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -97,11 +123,13 @@
 <h1 id="ingest-dynatracemsdefenderxdr">Ingest-DynatraceMSDefenderXDR</h1>
 <p>author: Dynatrace</p>
 <p>This playbook will ingest Microsoft Defender XDR insights to Dynatrace. You need a valid Dynatrace tenant with <a href="https://www.dynatrace.com/platform/application-security/">Application Security</a> enabled, you will also need to install the <a href="https://learn.microsoft.com/en-us/azure/sentinel/connect-microsoft-365-defender">Microsoft Defender XDR</a> Sentinel connector to make use of this playbook. To learn more about the Dynatrace platform <a href="https://www.dynatrace.com/trial">Start your free trial</a></p>
-<p>** Prerequisites ** 
-- Follow <a href="https://docs.dynatrace.com/docs/shortlink/token#create-api-token">these instructions</a> to generate a Dynatrace access token, the token should have Ingest logs (logs.ingest) scope.
-- [Important step]Store the Dynatrace Access Token as a <a href="https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal">secret in Azure Key vault</a> and provide the key vault name during playbook deployment, by convention the secret name should be 'DynatraceAccessToken'.</p>
+<p>** Prerequisites **</p>
+<ul>
+<li>Follow <a href="https://docs.dynatrace.com/docs/shortlink/token#create-api-token">these instructions</a> to generate a Dynatrace access token, the token should have Ingest logs (logs.ingest) scope.</li>
+<li>[Important step]Store the Dynatrace Access Token as a <a href="https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal">secret in Azure Key vault</a> and provide the key vault name during playbook deployment, by convention the secret name should be 'DynatraceAccessToken'.</li>
+</ul>
 <p>** Post Install Notes:**</p>
-<p>The Logic App uses a Managed System Identity (MSI). </p>
+<p>The Logic App uses a Managed System Identity (MSI).</p>
 <p>Assign RBAC 'Microsoft Sentinel Reader' role to the Logic App at the Resource Group level of the Log Analytics Workspace.</p>
 <p>Assign access policy on key vault for Playbook to fetch the secret key</p>
 <h2 id="initial-setup">Initial Setup</h2>
@@ -109,18 +137,25 @@
 <p>Basic steps for setup of the playbook and automation rule are as follows :</p>
 <ol>
 <li>Go to the Automation blade in Microsoft Sentinel.</li>
-<li>Create a new playbook from the 'Ingest Microsoft Defender XDR insights into Dynatrace' <a href="https://learn.microsoft.com/en-us/azure/sentinel/use-playbook-templates">playbook template</a>
-- KeyvaultName: The name of the keyvault created as pre-requisite
-- DynatraceTenant: xyz.dynatrace.com</li>
-<li>Create a new <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-manage-use-automation-rules">automation rule</a>
-- Name : Ingest Microsoft Defender XDR insights into Dynatrace
-- Trigger : When alert is created
-- Conditions : If Analytic rule name contains 'Dynatrace Application Security - Attack detection'
-- Actions : Run playbook IngestDynatraceMSDefender365</li>
+<li>Create a new playbook from the 'Ingest Microsoft Defender XDR insights into Dynatrace' <a href="https://learn.microsoft.com/en-us/azure/sentinel/use-playbook-templates">playbook template</a></li>
 </ol>
+<ul>
+<li>KeyvaultName: The name of the keyvault created as pre-requisite</li>
+<li>DynatraceTenant: xyz.dynatrace.com</li>
+</ul>
+<ol start="3">
+<li>Create a new <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-manage-use-automation-rules">automation rule</a></li>
+</ol>
+<ul>
+<li>Name : Ingest Microsoft Defender XDR insights into Dynatrace</li>
+<li>Trigger : When alert is created</li>
+<li>Conditions : If Analytic rule name contains 'Dynatrace Application Security - Attack detection'</li>
+<li>Actions : Run playbook IngestDynatraceMSDefender365</li>
+</ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/dynatrace.html">Back to Dynatrace</a></p>
+
 </div>
 
 </body>

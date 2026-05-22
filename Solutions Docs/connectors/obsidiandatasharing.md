@@ -18,6 +18,7 @@
 | **CCF Configuration** | [ObsidianDatasharing_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Obsidian%20Datasharing/Data%20Connectors/ObsidianDatasharing_CCP/ObsidianDatasharing_PollerConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#obsidian-datasharing-connector) |
 
 The Obsidian Datasharing connector provides the capability to read raw event data from Obsidian Datasharing in Microsoft Sentinel.
 

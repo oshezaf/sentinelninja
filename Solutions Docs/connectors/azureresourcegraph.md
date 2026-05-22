@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Azure Resource Graph](../solutions/azure-resource-graph.md) |
 | **Collection Method** | [Unknown](../methods/unknown.md) |
 | **Connector Definition Files** | [AzureResourceGraph_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Resource%20Graph/Data%20Connectors/AzureResourceGraph_DataConnectorDefinition.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#azure-resource-graph) |
 
 Azure Resource Graph connector gives richer insights into Azure events by supplementing details about Azure subscriptions and Azure resources.
 

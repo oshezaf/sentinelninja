@@ -4,57 +4,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Amazon Web Services CloudFront via Codeless Connector Framework Preview &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="amazon-web-services-cloudfront-via-codeless-connector-framework">Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>AwsCloudfrontCcpDefinition</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>AwsCloudfrontCcpDefinition</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Microsoft</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/aws-cloudfront.html">AWS CloudFront</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/aws-cloudfront.html">AWS CloudFront</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront/Data%20Connectors/AWSCloudFrontLog_CCF/AWSCloudFrontLog_ConnectorDefinition.json">AWSCloudFrontLog_ConnectorDefinition.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront/Data%20Connectors/AWSCloudFrontLog_CCF/AWSCloudFrontLog_ConnectorDefinition.json">AWSCloudFrontLog_ConnectorDefinition.json</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>CCF Configuration</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront/Data%20Connectors/AWSCloudFrontLog_CCF/AWSCloudFrontLog_PollingConfig.json">AWSCloudFrontLog_PollingConfig.json</a></td>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20CloudFront/Data%20Connectors/AWSCloudFrontLog_CCF/AWSCloudFrontLog_PollingConfig.json">AWSCloudFrontLog_PollingConfig.json</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
-<td style="text-align: left;"><code>AmazonWebServicesS3</code></td>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>AmazonWebServicesS3</code></td>
 </tr>
 </tbody>
 </table>
@@ -66,18 +67,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/awscloudfront-accesslog-cl.html"><code>AWSCloudFront_AccessLog_CL</code></a></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/awscloudfront-accesslog-cl.html"><code>AWSCloudFront_AccessLog_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -85,8 +86,10 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -101,32 +104,40 @@
 <li>AWS CloudFront configuration</li>
 </ul>
 <h4 id="1-aws-cloudformation-deployment">1. AWS CloudFormation Deployment</h4>
-<p>To configure access on AWS, two templates has been generated to set up the AWS environment to send logs from an S3 bucket to your Log Analytics Workspace.
- #### For each template, create Stack in AWS: 
- 1. Go to <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>. 
- 2. Choose the ‘<strong>Specify template</strong>’ option, then ‘<strong>Upload a template file</strong>’ by clicking on ‘<strong>Choose file</strong>’ and selecting the appropriate CloudFormation template file provided below. click ‘<strong>Choose file</strong>’ and select the downloaded template. 
- 3. Click '<strong>Next</strong>' and '<strong>Create stack</strong>'.
-- <strong>Template 1: OpenID connect authentication deployment</strong>: <code>Oidc</code></p>
-<blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
-- <strong>Template 2: AWSCloudFront resources deployment</strong>: <code>AWSCloudFront</code>
-<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+<p>To configure access on AWS, two templates has been generated to set up the AWS environment to send logs from an S3 bucket to your Log Analytics Workspace.</p>
+<h4 id="for-each-template-create-stack-in-aws">For each template, create Stack in AWS:</h4>
+<ol>
+<li>Go to <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation Stacks</a>.</li>
+<li>Choose the ‘<strong>Specify template</strong>’ option, then ‘<strong>Upload a template file</strong>’ by clicking on ‘<strong>Choose file</strong>’ and selecting the appropriate CloudFormation template file provided below. click ‘<strong>Choose file</strong>’ and select the downloaded template.</li>
+<li>Click '<strong>Next</strong>' and '<strong>Create stack</strong>'.</li>
+</ol>
+<ul>
+<li><strong>Template 1: OpenID connect authentication deployment</strong>: <code>Oidc</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
+</li>
+<li><strong>Template 2: AWSCloudFront resources deployment</strong>: <code>AWSCloudFront</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ul>
 <h4 id="2-connect-new-collectors">2. Connect new collectors</h4>
 <p>To enable AWS S3 for Microsoft Sentinel, click the Add new collector button, fill the required information in the context pane and click on Connect.
 <strong>Connector Management Interface</strong></p>
 <p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
-<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:
-- <strong>Role ARN</strong>
-- <strong>Queue URL</strong></p>
-<p>➕ <strong>Add New Collector</strong>: Click the "Add new collector" button to configure a new data collector (see configuration form below).</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Role ARN</strong></li>
+<li><strong>Queue URL</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
 <p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
 </blockquote>
 <p><strong>Add new controller</strong></p>
 <p><em>AWS S3 connector</em></p>
-<p>When you click the "Add new collector" button in the portal, a configuration form will open. You'll need to provide:</p>
+<p>When you click the &quot;Add new collector&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
 <p><em>Account details</em></p>
 <ul>
 <li><strong>Role ARN</strong> (required)</li>
@@ -137,39 +148,43 @@
 </blockquote>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
-<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS CloudFront\Data Connectors\README.md">AWS CloudFront\Data Connectors\README.md</a></em></p>
+<p>📄 <em>Source: [AWS CloudFront\Data Connectors\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS CloudFront\Data Connectors\README.md)</em></p>
 </blockquote>
 <h1 id="aws-cloudfront-logs-integration-with-microsoft-sentinel">AWS CloudFront Logs Integration with Microsoft Sentinel</h1>
 <h2 id="overview">Overview</h2>
 <p>This guide explains how to integrate AWS CloudFront logs with Microsoft Sentinel using an AWS CloudFormation template. The template automates the deployment of necessary AWS resources to collect, process, and forward CloudFront access logs to Sentinel via S3 and SQS.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before deploying, ensure you have:
-- An AWS account with permissions to deploy CloudFormation stacks.
-- An active Microsoft Sentinel Log Analytics Workspace ID.
-- An existing CloudFront distribution with logging enabled or to be enabled.
-- Required IAM permissions to configure AWS services (IAM, S3, SQS, CloudFront).</p>
+<p>Before deploying, ensure you have:</p>
+<ul>
+<li>An AWS account with permissions to deploy CloudFormation stacks.</li>
+<li>An active Microsoft Sentinel Log Analytics Workspace ID.</li>
+<li>An existing CloudFront distribution with logging enabled or to be enabled.</li>
+<li>Required IAM permissions to configure AWS services (IAM, S3, SQS, CloudFront).</li>
+</ul>
 <h2 id="cloudformation-template">CloudFormation Template</h2>
-<p>Download Both the CloudFormation templates(Template 1: OpenID connect authentication deployment,Template 2: AWSCloudFront resources deployment) from connector UI page and deploy in your AWS environment.
-1. OIDC Web Identity Provider</p>
+<p>Download Both the CloudFormation templates(Template 1: OpenID connect authentication deployment,Template 2: AWSCloudFront resources deployment) from connector UI page and deploy in your AWS environment.</p>
+<ol>
+<li><p>OIDC Web Identity Provider</p>
 <p>The OIDC (OpenID Connect) Web Identity Provider allows AWS services to securely authenticate using an external identity provider without managing long-term credentials. The CloudFormation template configures OIDC as a trusted identity provider in AWS, enabling secure role-based access for forwarding AWS CloudFront logs to Microsoft Sentinel.</p>
-<ol start="2">
-<li>
-<p>AWS CloudFront Configuration</p>
+</li>
+<li><p>AWS CloudFront Configuration</p>
 <p>The AWS CloudFront Configuration template sets up logging for AWS CloudFront by creating an S3 bucket, SQS queues, and event notifications. This ensures logs are captured and forwarded to Microsoft Sentinel for monitoring and threat detection.</p>
 </li>
 </ol>
 <h2 id="cloudformation-deployment">CloudFormation Deployment</h2>
 <h3 id="deploying-the-stack">Deploying the Stack</h3>
 <h4 id="oidc-web-identity">OIDC Web Identity</h4>
+<ul>
+<li>Navigate to the <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation console</a></li>
+<li>Choose create stack</li>
+<li>Select upload a template file</li>
+<li>Upload the ODIC Web identity template and select next</li>
+<li>Provide the stack name and select next</li>
+<li>Submit the stack</li>
+</ul>
 <blockquote>
 <p><strong>Note:</strong><br />
-If you have already deployed the <strong>OIDC Web Identity Provider</strong> for another AWS data connector in Microsoft Sentinel (e.g., VPC Flow Logs, GuardDuty, etc.), you do <strong>not</strong> need to deploy it again. You can safely skip this step and continue with the CloudFront configuration.
-- Navigate to the <a href="https://aka.ms/awsCloudFormationLink#/stacks/create">AWS CloudFormation console</a>
-- Choose create stack
-- Select upload a template file
-- Upload the ODIC Web identity template and select next
-- Provide the stack name and select next
-- Submit the stack</p>
+If you have already deployed the <strong>OIDC Web Identity Provider</strong> for another AWS data connector in Microsoft Sentinel (e.g., VPC Flow Logs, GuardDuty, etc.), you do <strong>not</strong> need to deploy it again. You can safely skip this step and continue with the CloudFront configuration.</p>
 </blockquote>
 <h4 id="aws-cloudfront-configuration">AWS CloudFront Configuration</h4>
 <ul>
@@ -195,16 +210,20 @@ If you have already deployed the <strong>OIDC Web Identity Provider</strong> for
 <li><strong>IAM Role &amp; Policy</strong> granting Microsoft Sentinel access to the S3 bucket and SQS queue.</li>
 </ul>
 <h2 id="configuring-cloudfront-logging">Configuring CloudFront Logging</h2>
-<p>To enable logging for your CloudFront distribution and route logs to the S3 bucket created by the CloudFormation stack:
-- Go to the <strong>AWS CloudFront Console</strong>.
-- Select the relevant <strong>CloudFront distribution</strong>.
-- Navigate to the <strong>Logging</strong> tab.
--  Under <strong>Standard log destinations</strong>, click <strong>Add</strong> and choose <strong>Amazon S3</strong>.
--   In the <strong>S3 bucket</strong> field, enter the bucket name provisioned by the CloudFormation stack (e.g., <code>aws-cloudfront-logs-&lt;BucketName&gt;</code>)
--   Expand <strong>Additional settings</strong>:
-   - Set <strong>Output format</strong> to <strong>Plain-text</strong>.
-   - Set <strong>Field delimiter</strong> to <code>\t</code> (tab).
-- Click <strong>Save changes</strong> to apply the configuration.</p>
+<p>To enable logging for your CloudFront distribution and route logs to the S3 bucket created by the CloudFormation stack:</p>
+<ul>
+<li>Go to the <strong>AWS CloudFront Console</strong>.</li>
+<li>Select the relevant <strong>CloudFront distribution</strong>.</li>
+<li>Navigate to the <strong>Logging</strong> tab.</li>
+<li>Under <strong>Standard log destinations</strong>, click <strong>Add</strong> and choose <strong>Amazon S3</strong>.</li>
+<li>In the <strong>S3 bucket</strong> field, enter the bucket name provisioned by the CloudFormation stack (e.g., <code>aws-cloudfront-logs-&lt;BucketName&gt;</code>)</li>
+<li>Expand <strong>Additional settings</strong>:<ul>
+<li>Set <strong>Output format</strong> to <strong>Plain-text</strong>.</li>
+<li>Set <strong>Field delimiter</strong> to <code>\t</code> (tab).</li>
+</ul>
+</li>
+<li>Click <strong>Save changes</strong> to apply the configuration.</li>
+</ul>
 <blockquote>
 <p>📌 This ensures that CloudFront logs are written to the correct S3 bucket and in a format compatible with Microsoft Sentinel ingestion.</p>
 </blockquote>
@@ -213,22 +232,25 @@ If you have already deployed the <strong>OIDC Web Identity Provider</strong> for
 <li>Go to <strong>Microsoft Sentinel</strong> in the Azure Portal</li>
 <li>Navigate to <strong>Content Hub &gt; Amazon Web Services CloudFront</strong> data connector</li>
 <li>Click <strong>Connect</strong></li>
-<li>Provide the required details:</li>
+<li>Provide the required details:<ul>
 <li><strong>IAM Role ARN</strong> (from the CloudFormation stack output)</li>
 <li><strong>SQS Queue URL</strong> (from the stack output)</li>
+</ul>
+</li>
 <li>Complete the setup</li>
 </ul>
 <h2 id="verifying-logs-in-sentinel">Verifying Logs in Sentinel</h2>
 <ul>
 <li>Go to <strong>Microsoft Sentinel &gt; Logs</strong></li>
-<li>Run the following Kusto Query Language (KQL) query:
-  ```kql
-  AWSCloudFront_AccessLog_CL
-  | where TimeGenerated &gt; ago(1h)</li>
+<li>Run the following Kusto Query Language (KQL) query:<pre><code class="language-kql">AWSCloudFront_AccessLog_CL
+| where TimeGenerated &gt; ago(1h)
+</code></pre>
+</li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

@@ -4,47 +4,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DeviceCustomImageLoadEvents &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="devicecustomimageloadevents">DeviceCustomImageLoadEvents</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for DeviceCustomImageLoadEvents table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">MDE</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">MDE</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomimageloadevents">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomimageloadevents">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,268 +53,269 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of activity that triggered the event.</td>
+  <td style="text-align:left">ActionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of activity that triggered the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppGuardContainerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Identifier for the virtualized container used by Application Guard to isolate browser activity.</td>
+  <td style="text-align:left">AppGuardContainerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier for the virtualized container used by Application Guard to isolate browser activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the device in the service.</td>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the device in the service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Fully qualified domain name (FQDN) of the device.</td>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Fully qualified domain name (FQDN) of the device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Domain of the account.</td>
+  <td style="text-align:left">FileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain of the account.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Size of the file in bytes.</td>
+  <td style="text-align:left">FileSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Size of the file in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FolderPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Domain of the account.</td>
+  <td style="text-align:left">FolderPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain of the account.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountDomain</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Domain of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User name of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User name of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure AD object ID of the user account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure AD object ID of the user account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountSid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Security Identifier (SID) of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountSid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Security Identifier (SID) of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountUpn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User principal name (UPN) of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountUpn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User principal name (UPN) of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessCommandLine</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Command line used to run the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessCommandLine</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line used to run the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the process that initiated the event was started.</td>
+  <td style="text-align:left">InitiatingProcessCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the process that initiated the event was started.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessFileSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Size in bytes of the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessFileSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Size in bytes of the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessFolderPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Folder containing the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessFolderPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Folder containing the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Process ID (PID) of the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Process ID (PID) of the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessIntegrityLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.</td>
+  <td style="text-align:left">InitiatingProcessIntegrityLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessMD5</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">MD5 hash of the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessMD5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MD5 hash of the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessParentCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the parent of the process responsible for the event was started.</td>
+  <td style="text-align:left">InitiatingProcessParentCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the parent of the process responsible for the event was started.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessParentFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the parent process that spawned the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessParentFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the parent process that spawned the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessParentId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Process ID (PID) of the parent process that spawned the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessParentId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Process ID (PID) of the parent process that spawned the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessRemoteSessionDeviceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
+  <td style="text-align:left">InitiatingProcessRemoteSessionDeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessRemoteSessionIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
+  <td style="text-align:left">InitiatingProcessRemoteSessionIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessSessionId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Windows session ID of the initiating process.</td>
+  <td style="text-align:left">InitiatingProcessSessionId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Windows session ID of the initiating process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessSHA1</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-1 hash of the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessSHA1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-1 hash of the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessSHA256</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.</td>
+  <td style="text-align:left">InitiatingProcessSHA256</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessTokenElevation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessTokenElevation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessUniqueId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
+  <td style="text-align:left">InitiatingProcessUniqueId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoCompanyName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Company name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoCompanyName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Company name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoFileDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoFileDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoInternalFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Internal file name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoInternalFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Internal file name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoOriginalFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Original file name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoOriginalFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Original file name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoProductName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Product name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoProductName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Product name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoProductVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Product version from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoProductVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Product version from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsInitiatingProcessRemoteSession</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
+  <td style="text-align:left">IsInitiatingProcessRemoteSession</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
 </tr>
 <tr>
-<td style="text-align: left;">MachineGroup</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Machine group of the machine. This group is used by role-based access control to determine access to the machine.</td>
+  <td style="text-align:left">MachineGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Machine group of the machine. This group is used by role-based access control to determine access to the machine.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MD5</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">MD5 hash of the file that the recorded action was applied to.</td>
+  <td style="text-align:left">MD5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MD5 hash of the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReportId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.</td>
+  <td style="text-align:left">ReportId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleLastModificationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the rule that collected the event was last modified.</td>
+  <td style="text-align:left">RuleLastModificationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the rule that collected the event was last modified.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the rule that collected the event</td>
+  <td style="text-align:left">RuleName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the rule that collected the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">SHA1</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-1 hash of the file that the recorded action was applied to.</td>
+  <td style="text-align:left">SHA1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-1 hash of the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SHA256</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-256 of the file that the recorded action was applied to.</td>
+  <td style="text-align:left">SHA256</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-256 of the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the event was recorded by the MDE agent on the endpoint.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the event was recorded by the MDE agent on the endpoint.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

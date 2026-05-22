@@ -17,12 +17,6 @@ Inventory of software installed on devices, including their version information 
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwareinventory-table) |
 
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Content Items](#content-items-using-this-table)
-
 ## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory)
@@ -47,44 +41,7 @@ Inventory of software installed on devices, including their version information 
 | TimeGenerated | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
 
-## Solutions (1)
-
-This table is used by the following solutions:
-
-- [Standalone Content](../solutions/standalone-content.md)
-
 ---
-
-## Content Items Using This Table (2)
-
-### Hunting Queries (2)
-
-**Standalone Content:** `OSPlatform contains "iOS"`
-
-| Hunting Query |
-|:-------------|
-| [MDE_SoftwareInventorybyOS](../content/standalone-content-mde-softwareinventorybyos-36aa42d5-c2f5-4ede-9400-d55366bf0255-0f191efc.md) |
-
-**GitHub Only:**
-
-| Hunting Query | Selection Criteria |
-|:-------------|:-------------------|
-| [Find Software By Name and Version](../content/github-only-find-software-by-name-and-version-929d1046-11a9-40c1-977e-bd1984b30c31-dd87e6fe.md) |  |
-
-## Selection Criteria Summary (1 criteria, 1 total references)
-
-References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `OSPlatform contains "iOS"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **1** | **0** | **0** | **1** |
-
-### OSPlatform
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `contains iOS` | - | 1 | - | - | **1** |
 
 ---
 

@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [Connector_ARGOS.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ARGOSCloudSecurity/Data%20Connectors/Connector_ARGOS.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#argos-cloud-security) |
 
 The ARGOS Cloud Security integration for Microsoft Sentinel allows you to have all your important cloud security events in one place. This enables you to easily create dashboards, alerts, and correlate events across multiple systems. Overall this will improve your organization's security posture and security incident response.
 

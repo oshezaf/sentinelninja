@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [dragosSitestoreDataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Data%20Connectors/DragosSiteStore_CCP/dragosSitestoreDataConnectorDefinition.json) |
 | **CCF Configuration** | [dataPoller.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dragos/Data%20Connectors/DragosSiteStore_CCP/dataPoller.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#dragos-notifications-via-cloud-sitestore) |
 
 The [Dragos Platform](https://www.dragos.com/) is the leading Industrial Cyber Security platform it offers a comprehensive Operational Technology (OT) cyber threat detection built by unrivaled industrial cybersecurity expertise. This solution enables Dragos Platform notification data to be viewed in Microsoft Sentinel so that security analysts are able to triage potential cyber security events occurring in their industrial environments.
 

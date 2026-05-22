@@ -4,55 +4,55 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DeviceFileEvents &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="devicefileevents">DeviceFileEvents</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>File creation, modification, and other file system events</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">MDE</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">MDE</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicefileevents">View Documentation</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table">View Documentation</a></td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicefileevents-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -69,331 +69,331 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of activity that triggered the event.</td>
+  <td style="text-align:left">ActionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of activity that triggered the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalFields</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional information about the entity or event.</td>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional information about the entity or event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppGuardContainerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Identifier for the virtualized container used by Application Guard to isolate browser activity.</td>
+  <td style="text-align:left">AppGuardContainerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier for the virtualized container used by Application Guard to isolate browser activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the device in the service.</td>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the device in the service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Fully qualified domain name (FQDN) of the device.</td>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Fully qualified domain name (FQDN) of the device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the file that the recorded action was applied to.</td>
+  <td style="text-align:left">FileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileOriginIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address where the file was downloaded from.</td>
+  <td style="text-align:left">FileOriginIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address where the file was downloaded from.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileOriginReferrerUrl</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URL of the web page that links to the downloaded file.</td>
+  <td style="text-align:left">FileOriginReferrerUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL of the web page that links to the downloaded file.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileOriginUrl</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URL where the file was downloaded from.</td>
+  <td style="text-align:left">FileOriginUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL where the file was downloaded from.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Size of the file in bytes.</td>
+  <td style="text-align:left">FileSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Size of the file in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FolderPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Folder containing the file that the recorded action was applied to.</td>
+  <td style="text-align:left">FolderPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Folder containing the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountDomain</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Domain of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User name of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User name of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure AD object ID of the user account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure AD object ID of the user account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountSid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Security Identifier (SID) of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountSid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Security Identifier (SID) of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessAccountUpn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User principal name (UPN) of the account that ran the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessAccountUpn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User principal name (UPN) of the account that ran the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessCommandLine</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Command line used to run the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessCommandLine</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line used to run the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the process that initiated the event was started.</td>
+  <td style="text-align:left">InitiatingProcessCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the process that initiated the event was started.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessFileSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Size in bytes of the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessFileSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Size in bytes of the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessFolderPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Folder containing the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessFolderPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Folder containing the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Process ID (PID) of the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Process ID (PID) of the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessIntegrityLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.</td>
+  <td style="text-align:left">InitiatingProcessIntegrityLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessMD5</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">MD5 hash of the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessMD5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MD5 hash of the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessParentCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the parent of the process responsible for the event was started.</td>
+  <td style="text-align:left">InitiatingProcessParentCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the parent of the process responsible for the event was started.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessParentFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the parent process that spawned the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessParentFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the parent process that spawned the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessParentId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Process ID (PID) of the parent process that spawned the process responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessParentId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Process ID (PID) of the parent process that spawned the process responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessRemoteSessionDeviceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
+  <td style="text-align:left">InitiatingProcessRemoteSessionDeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessRemoteSessionIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
+  <td style="text-align:left">InitiatingProcessRemoteSessionIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessSessionId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Windows session ID of the initiating process.</td>
+  <td style="text-align:left">InitiatingProcessSessionId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Windows session ID of the initiating process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessSHA1</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-1 hash of the process (image file) that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessSHA1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-1 hash of the process (image file) that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessSHA256</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.</td>
+  <td style="text-align:left">InitiatingProcessSHA256</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessTokenElevation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event.</td>
+  <td style="text-align:left">InitiatingProcessTokenElevation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessUniqueId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
+  <td style="text-align:left">InitiatingProcessUniqueId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoCompanyName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Company name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoCompanyName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Company name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoFileDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoFileDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoInternalFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Internal file name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoInternalFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Internal file name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoOriginalFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Original file name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoOriginalFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Original file name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoProductName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Product name from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoProductName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Product name from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatingProcessVersionInfoProductVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Product version from the version information of the process (image file) responsible for the event.</td>
+  <td style="text-align:left">InitiatingProcessVersionInfoProductVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Product version from the version information of the process (image file) responsible for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsAzureInfoProtectionApplied</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the file is encrypted by Azure Information Protection.</td>
+  <td style="text-align:left">IsAzureInfoProtectionApplied</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the file is encrypted by Azure Information Protection.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsInitiatingProcessRemoteSession</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
+  <td style="text-align:left">IsInitiatingProcessRemoteSession</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
 </tr>
 <tr>
-<td style="text-align: left;">MachineGroup</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Machine group of the machine. This group is used by role-based access control to determine access to the machine.</td>
+  <td style="text-align:left">MachineGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Machine group of the machine. This group is used by role-based access control to determine access to the machine.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MD5</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">MD5 hash of the file that the recorded action was applied to.</td>
+  <td style="text-align:left">MD5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MD5 hash of the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PreviousFileName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Original name of the file that was renamed as a result of the action.</td>
+  <td style="text-align:left">PreviousFileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Original name of the file that was renamed as a result of the action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PreviousFolderPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Original folder containing the file before the recorded action was applied.</td>
+  <td style="text-align:left">PreviousFolderPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Original folder containing the file before the recorded action was applied.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReportId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.</td>
+  <td style="text-align:left">ReportId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestAccountDomain</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Domain of the account used to remotely initiate the activity.</td>
+  <td style="text-align:left">RequestAccountDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain of the account used to remotely initiate the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestAccountName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User name of account used to remotely initiate the activity.</td>
+  <td style="text-align:left">RequestAccountName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User name of account used to remotely initiate the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestAccountSid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Security Identifier (SID) of the account used to remotely initiate the activity.</td>
+  <td style="text-align:left">RequestAccountSid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Security Identifier (SID) of the account used to remotely initiate the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestProtocol</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Network protocol, if applicable, used to initiate the activity: Unknown, Local, SMB, or NFS.</td>
+  <td style="text-align:left">RequestProtocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Network protocol, if applicable, used to initiate the activity: Unknown, Local, SMB, or NFS.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestSourceIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IPv4 or IPv6 address of the remote device that initiated the activity.</td>
+  <td style="text-align:left">RequestSourceIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IPv4 or IPv6 address of the remote device that initiated the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestSourcePort</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Source port on the remote device that initiated the activity.</td>
+  <td style="text-align:left">RequestSourcePort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Source port on the remote device that initiated the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitivityLabel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Label applied to an email, file, or other content to classify it for information protection.</td>
+  <td style="text-align:left">SensitivityLabel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Label applied to an email, file, or other content to classify it for information protection.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitivitySubLabel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently.</td>
+  <td style="text-align:left">SensitivitySubLabel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Sublabel applied to an email, file, or other content to classify it for information protection; sensitivity sublabels are grouped under sensitivity labels but are treated independently.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SHA1</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-1 hash of the file that the recorded action was applied to.</td>
+  <td style="text-align:left">SHA1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-1 hash of the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SHA256</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SHA-256 of the file that the recorded action was applied to.</td>
+  <td style="text-align:left">SHA256</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA-256 of the file that the recorded action was applied to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ShareName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of shared folder containing the file.</td>
+  <td style="text-align:left">ShareName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of shared folder containing the file.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the event was recorded by the MDE agent on the endpoint.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the event was recorded by the MDE agent on the endpoint.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -422,14 +422,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -440,22 +440,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.html">ASR Bypassing Writing Executable Content</a></td>
-<td style="text-align: left;"><code>ActionType == "FileRenamed"</code><br><code>InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"</code></td>
+  <td style="text-align:left"><a href="../content/falconfriday-asr-bypassing-writing-executable-content-efe4efef-5ca7-4b51-a53e-0e96492ce97a-78c522d8.html">ASR Bypassing Writing Executable Content</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileRenamed&quot;</code><br><code>InitiatingProcessFileName in &quot;excel.exe,outlook.exe,powerpnt.exe,winword.exe&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.html">Hijack Execution Flow - DLL Side-Loading</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
+  <td style="text-align:left"><a href="../content/falconfriday-hijack-execution-flow-dll-side-loading-3084b487-fad6-4000-9544-6085b9657290-16d7660f.html">Hijack Execution Flow - DLL Side-Loading</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.html">Ingress Tool Transfer - Certutil</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/falconfriday-ingress-tool-transfer-certutil-f0be11a9-ec48-4df6-801d-479556044d4e-e41d03ca.html">Ingress Tool Transfer - Certutil</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -463,14 +463,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.html">Dataverse - Terminated employee exfiltration to USB drive</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.html">Dataverse - Terminated employee exfiltration to USB drive</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -478,30 +478,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.html">Files Copied to USB Drives</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.html">Files Copied to USB Drives</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,UsbDriveMounted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.html">Potential Build Process Compromise - MDE</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-potential-build-process-compromise-mde-1bf6e165-5e32-420e-ab4f-0da8558a8be2-c676927e.html">Potential Build Process Compromise - MDE</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.html">Rare Process as a Service</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-91a451e3-178f-41b2-9e5d-da97d75b9971-365d2f3a.html">Rare Process as a Service</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-remote-file-creation-with-psexec-35ab0d58-baab-4154-87ed-fa2f69797e9e-384e377c.html">Remote File Creation with PsExec</a></td>
-<td style="text-align: left;"><code>FolderPath has "\\\\"</code><br><code>InitiatingProcessCommandLine !has ".ps1"</code><br><code>InitiatingProcessCommandLine has ".bat"</code><br><code>InitiatingProcessCommandLine has "accepteula"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-remote-file-creation-with-psexec-35ab0d58-baab-4154-87ed-fa2f69797e9e-384e377c.html">Remote File Creation with PsExec</a></td>
+  <td style="text-align:left"><code>FolderPath has &quot;\\\\&quot;</code><br><code>InitiatingProcessCommandLine !has &quot;.ps1&quot;</code><br><code>InitiatingProcessCommandLine has &quot;.bat&quot;</code><br><code>InitiatingProcessCommandLine has &quot;accepteula&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-sunburst-and-supernova-backdoor-hashes-a3c144f9-8051-47d4-ac29-ffb0c312c910-6f0d9998.html">SUNBURST and SUPERNOVA backdoor hashes</a></td>
-<td style="text-align: left;"><code>MD5 == "5"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-sunburst-and-supernova-backdoor-hashes-a3c144f9-8051-47d4-ac29-ffb0c312c910-6f0d9998.html">SUNBURST and SUPERNOVA backdoor hashes</a></td>
+  <td style="text-align:left"><code>MD5 == &quot;5&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -509,14 +509,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-file-hash-to-devicefileevents-event-bc0eca2e-db50-44e6-8fa3-b85f91ff5ee7-89fca104.html">TI map File Hash to DeviceFileEvents Event</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-ti-map-file-hash-to-devicefileevents-event-bc0eca2e-db50-44e6-8fa3-b85f91ff5ee7-89fca104.html">TI map File Hash to DeviceFileEvents Event</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -524,14 +524,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-file-hash-to-devicefileevents-event-d6f04915-4471-4cb3-b163-a8b72997cf72-94f54e22.html">TI map File Hash to DeviceFileEvents Event</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-file-hash-to-devicefileevents-event-d6f04915-4471-4cb3-b163-a8b72997cf72-94f54e22.html">TI map File Hash to DeviceFileEvents Event</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -539,14 +539,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/visa-threat-intelligence-vti-vti-high-severity-sha1-collision-detection-dbd9e28f-973d-47f3-a8c3-9e18da846870-1dd78c47.html">VTI - High Severity SHA1 Collision Detection</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/visa-threat-intelligence-vti-vti-high-severity-sha1-collision-detection-dbd9e28f-973d-47f3-a8c3-9e18da846870-1dd78c47.html">VTI - High Severity SHA1 Collision Detection</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -554,14 +554,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.html">Identify SysAid Server web shell creation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-identify-sysaid-server-web-shell-creation-50eb4cbd-188f-44f4-b964-bab84dcdec10-5faaa2d1.html">Identify SysAid Server web shell creation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -569,18 +569,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.html">Zinc Actor IOCs files - October 2022</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/zinc-open-source-zinc-actor-iocs-files-october-2022-9a7f6651-801b-491c-a548-8b454b356eaa-72407d32.html">Zinc Actor IOCs files - October 2022</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/zinc-open-source-[deprecated]-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.html">[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/zinc-open-source-%5Bdeprecated%5D-zinc-actor-iocs-domains-hashes-ips-and-useragent-october-2022-95543d6d-f00d-4193-a63f-4edeefb7ec36-8da482ab.html">[Deprecated] - Zinc Actor IOCs domains hashes IPs and useragent - October 2022</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -588,38 +588,38 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.html">Azure VM Run Command operations executing a unique PowerShell script</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.html">Azure VM Run Command operations executing a unique PowerShell script</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-dev-0530-file-extension-rename-d82eb796-d1eb-43c8-a813-325ce3417cef-f293cb3e.html">Dev-0530 File Extension Rename</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-dev-0530-file-extension-rename-d82eb796-d1eb-43c8-a813-325ce3417cef-f293cb3e.html">Dev-0530 File Extension Rename</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.html">Europium - Hash and IP IOCs - September 2022</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.html">Europium - Hash and IP IOCs - September 2022</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mass-download-&amp;-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.html">Mass Download &amp; copy to USB device by single user</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-mass-download-&amp;-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.html">Mass Download &amp; copy to USB device by single user</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.html">Mercury - Domain, Hash and IP IOCs - August 2022</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.html">Mercury - Domain, Hash and IP IOCs - August 2022</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.html">PE file dropped in Color Profile Folder</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath has "C:\\Windows\\System32\\spool\\drivers\\color\\"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-pe-file-dropped-in-color-profile-folder-f68a5046-b7eb-4f69-9519-1e99708bb9e0-99c9d950.html">PE file dropped in Color Profile Folder</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath has &quot;C:\\Windows\\System32\\spool\\drivers\\color\\&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.html">Prestige ransomware IOCs Oct 2022</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.html">Prestige ransomware IOCs Oct 2022</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -628,14 +628,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.html">Dev-0322 File Drop Activity November 2021</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/legacy-ioc-based-threat-protection-dev-0322-file-drop-activity-november-2021-5bf2d4d8-ea03-4673-aaf8-716a61446022-414e8f6c.html">Dev-0322 File Drop Activity November 2021</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -643,46 +643,46 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-dropping-payload-via-certutil-4d11f63f-5b64-416e-8d77-266e4c6d382e-5c641ea8.html">Dropping Payload via certutil</a></td>
-<td style="text-align: left;"><code>InitiatingProcessFileName != "certutil.exe"</code><br><code>InitiatingProcessFileName != "cmd.exe"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-dropping-payload-via-certutil-4d11f63f-5b64-416e-8d77-266e4c6d382e-5c641ea8.html">Dropping Payload via certutil</a></td>
+  <td style="text-align:left"><code>InitiatingProcessFileName != &quot;certutil.exe&quot;</code><br><code>InitiatingProcessFileName != &quot;cmd.exe&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.html">Files Copied to USB Drives</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-files-copied-to-usb-drives-f350f0e7-0e52-434c-a113-197883219f00-69c4055e.html">Files Copied to USB Drives</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,UsbDriveMounted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.html">PrintNightmare CVE-2021-1675 usage Detection</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-printnightmare-cve-2021-1675-usage-detection-8f404352-c4ff-44d1-8d70-c50ee2fad8f8-b52df162.html">PrintNightmare CVE-2021-1675 usage Detection</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.html">Rare Process as a Service</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-rare-process-as-a-service-96976bb1-1993-45b8-a477-8236ee93976b-cf1c1157.html">Rare Process as a Service</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-remote-file-creation-with-psexec-a7214393-9da7-432e-9b41-fb02b4f740bd-db6b196f.html">Remote File Creation with PsExec</a></td>
-<td style="text-align: left;"><code>FolderPath has "\\\\"</code><br><code>InitiatingProcessCommandLine !has ".ps1"</code><br><code>InitiatingProcessCommandLine has ".bat"</code><br><code>InitiatingProcessCommandLine has "accepteula"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-remote-file-creation-with-psexec-a7214393-9da7-432e-9b41-fb02b4f740bd-db6b196f.html">Remote File Creation with PsExec</a></td>
+  <td style="text-align:left"><code>FolderPath has &quot;\\\\&quot;</code><br><code>InitiatingProcessCommandLine !has &quot;.ps1&quot;</code><br><code>InitiatingProcessCommandLine has &quot;.bat&quot;</code><br><code>InitiatingProcessCommandLine has &quot;accepteula&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-robbinhood-driver-4713d763-122d-419c-bf6f-bdef111cd8e2-6f03bc00.html">Robbinhood Driver</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-robbinhood-driver-4713d763-122d-419c-bf6f-bdef111cd8e2-6f03bc00.html">Robbinhood Driver</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-suspicious-dlls-in-spool-folder-0b5b076b-9a1c-440c-a11f-8471a75f46fd-160d1915.html">Suspicious DLLs in spool Folder</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileRenamed"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-dlls-in-spool-folder-0b5b076b-9a1c-440c-a11f-8471a75f46fd-160d1915.html">Suspicious DLLs in spool Folder</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileRenamed&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-suspicious-files-in-spool-folder-2d16b6fc-eb63-491c-a2c2-1160e2e41dcf-ac7a0cd6.html">Suspicious Files in spool Folder</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-files-in-spool-folder-2d16b6fc-eb63-491c-a2c2-1160e2e41dcf-ac7a0cd6.html">Suspicious Files in spool Folder</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-windows-print-spooler-service-suspicious-file-creation-daa347a4-8251-43a7-9730-32f22aa741ab-21c8edf9.html">Windows Print Spooler Service Suspicious File Creation</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-windows-print-spooler-service-suspicious-file-creation-daa347a4-8251-43a7-9730-32f22aa741ab-21c8edf9.html">Windows Print Spooler Service Suspicious File Creation</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -690,22 +690,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-exchange-iis-worker-dropping-webshells-42e7df5b-80f6-49a5-946a-08026ec24807-918c2a7e.html">Exchange IIS Worker Dropping Webshells</a></td>
-<td style="text-align: left;"><code>FolderPath !endswith ".ini"</code><br><code>FolderPath !endswith ".js"</code><br><code>FolderPath !endswith ".json"</code><br><code>FolderPath !endswith ".log"</code><br><code>FolderPath !endswith ".tmp"</code><br><code>FolderPath !endswith ".vb"</code><br><code>FolderPath !endswith ".xml"</code><br><code>FolderPath has_any "\\wwwroot\\"</code><br><code>InitiatingProcessCommandLine contains "MSExchange"</code><br><code>InitiatingProcessFileName == "w3wp.exe"</code></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-exchange-iis-worker-dropping-webshells-42e7df5b-80f6-49a5-946a-08026ec24807-918c2a7e.html">Exchange IIS Worker Dropping Webshells</a></td>
+  <td style="text-align:left"><code>FolderPath !endswith &quot;.ini&quot;</code><br><code>FolderPath !endswith &quot;.js&quot;</code><br><code>FolderPath !endswith &quot;.json&quot;</code><br><code>FolderPath !endswith &quot;.log&quot;</code><br><code>FolderPath !endswith &quot;.tmp&quot;</code><br><code>FolderPath !endswith &quot;.vb&quot;</code><br><code>FolderPath !endswith &quot;.xml&quot;</code><br><code>FolderPath has_any &quot;\\wwwroot\\&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;MSExchange&quot;</code><br><code>InitiatingProcessFileName == &quot;w3wp.exe&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-possible-webshell-drop-8f2a256f-c9f1-4f0a-941a-a5a131d4bf3b-5ddc946f.html">Possible webshell drop</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified,FileRenamed"</code></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-possible-webshell-drop-8f2a256f-c9f1-4f0a-941a-a5a131d4bf3b-5ddc946f.html">Possible webshell drop</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;FileCreated,FileModified,FileRenamed&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-umworkerprocess-creating-webshell-60d15bd4-1fad-4a70-bc3b-094dc1c5e554-5e3339db.html">UMWorkerProcess Creating Webshell</a></td>
-<td style="text-align: left;"><code>InitiatingProcessFileName == "UMWorkerProcess.exe"</code></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-umworkerprocess-creating-webshell-60d15bd4-1fad-4a70-bc3b-094dc1c5e554-5e3339db.html">UMWorkerProcess Creating Webshell</a></td>
+  <td style="text-align:left"><code>InitiatingProcessFileName == &quot;UMWorkerProcess.exe&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -713,353 +713,120 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mde-browserextensioninstalled-73871df7-f708-4fe7-8fb9-a62bd5072ef9-8664bc22.html">MDE_BrowserExtensionInstalled</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-mde-browserextensioninstalled-73871df7-f708-4fe7-8fb9-a62bd5072ef9-8664bc22.html">MDE_BrowserExtensionInstalled</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mde-findlnkfilesonendpoints-76925b23-296e-4f62-8732-27b8045056f6-e65d5ff3.html">MDE_FindLNKFilesOnEndpoints</a></td>
-<td style="text-align: left;"><code>DeviceName == "EndpointNameHere"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-mde-findlnkfilesonendpoints-76925b23-296e-4f62-8732-27b8045056f6-e65d5ff3.html">MDE_FindLNKFilesOnEndpoints</a></td>
+  <td style="text-align:left"><code>DeviceName == &quot;EndpointNameHere&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mde-findmountedisoanddriveletters-19270420-5d36-43df-8bed-c34a47fadc92-9edbea2e.html">MDE_FindMountedISOandDriveLetters</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-mde-findmountedisoanddriveletters-19270420-5d36-43df-8bed-c34a47fadc92-9edbea2e.html">MDE_FindMountedISOandDriveLetters</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-mde-showusbmountedandfilescopied-ca4cf47f-6dfd-487a-a759-01d97120bfe2-66f21ec5.html">MDE_ShowUSBMountedandfilescopied</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-mde-showusbmountedandfilescopied-ca4cf47f-6dfd-487a-a759-01d97120bfe2-66f21ec5.html">MDE_ShowUSBMountedandfilescopied</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-0c3cb3a4.html">AV Detections with Source</a></td>
-<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.html">Abuse.ch Recent Threat Feed</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.html">Abuse.ch Recent Threat Feed (1)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-abusing-settingcontent-ms-07a17371-bea3-41e5-91d1-99728cd44955-bb277017.html">Abusing settingcontent-ms</a></td>
-<td style="text-align: left;"><code>InitiatingProcessFileName in "browser_broker.exe,chrome.exe,firefox.exe,iexplore.exe,outlook.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-dbe14580.html">Accessibility Features</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-acrord-exploits-c87df1a7-fa54-4730-bc90-cbc1f8ac01aa-c43b739b.html">AcroRd-Exploits</a></td>
-<td style="text-align: left;"><code>FolderPath contains "\\Start Menu\\Programs\\Startup"</code><br><code>InitiatingProcessFileName == "acrord32.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.html">Azure VM Run Command linked with MDE</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-browser-extension-enumeration-via-devicefileevents-ede058ab-97a8-4494-aa76-b7f5f6d78cba-a2f66fb1.html">Browser Extension Enumeration via DeviceFileEvents</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-data-copied-to-other-location-than-c-drive-8899867b-0fd8-4cfd-b6f0-0f04ef37142c-d7d474ee.html">Data copied to other location than C drive</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.html">Doc attachment with link to download</a></td>
-<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dropbox-downloads-linked-from-other-site-de93670b-a1db-4c8c-80aa-5b3146428631-d523e10d.html">Dropbox downloads linked from other site</a></td>
-<td style="text-align: left;"><code>FileOriginReferrerUrl !startswith "https://www.dropbox.com/"</code><br><code>FileOriginUrl startswith "https://dl.dropboxusercontent.com/"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dropping-payload-via-certutil-f5ff5b00-a90e-40b8-b241-9427a8ec5189-47bd6693.html">Dropping payload via certutil</a></td>
-<td style="text-align: left;"><code>InitiatingProcessFileName != "certutil.exe"</code><br><code>InitiatingProcessFileName != "cmd.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.html">Email link + download + SmartScreen warning</a></td>
-<td style="text-align: left;"><code>ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.html">File Copy and Execution</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.html">Files copied to USB drives</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-general-attempts-to-access-local-email-store-c3e585d2-f1d0-4789-85a2-cdf7642fdf8b-8b60ca1e.html">General attempts to access local email store</a></td>
-<td style="text-align: left;"><code>FolderPath has "Outlook"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-hta-startup-persistence-10d275ce-bb52-41b7-b67e-05b974ed1179-9f00709f.html">HTA Startup Persistence</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-icedid-delivery-b2f3ee1c-f379-465c-a339-412ecf3b1bcb-39a15c94.html">IcedId Delivery</a></td>
-<td style="text-align: left;"><code>FileOriginReferrerUrl has ".php"</code><br><code>FileOriginReferrerUrl has ".top"</code><br><code>InitiatingProcessFileName in "7zFM.exe,browser_broker.exe,chrome.exe,explorer.exe,firefox.exe,msedge.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-identify-europium-iocs-f33abf94-6759-4820-9973-51d2a41749a4-cb611a2a.html">Identify EUROPIUM IOCs</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-knotweed-pe-file-dropped-in-color-profile-folder-cfdb2ccb-0eb3-47ed-9220-d56795906fdc-aa0e134d.html">KNOTWEED-PE File Dropped in Color Profile Folder</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath has "C:\\Windows\\System32\\spool\\drivers\\color\\"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-malicious-excel-delivery-6fa3cf44-517f-4ce5-8727-948b0783b507-d9d7c2fd.html">Malicious Excel Delivery</a></td>
-<td style="text-align: left;"><code>FileOriginReferrerUrl has "/account"</code><br><code>FileOriginReferrerUrl has "/case"</code><br><code>FileOriginUrl has "/cancel.php"</code><br><code>FileOriginUrl has "/download.php"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-malicious-bat-file-c903138d-b948-4975-a660-57495b3f8754-637f496c.html">Malicious bat file</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-network-footprint-3-44b02f8c-d206-4e1a-9859-6aa06b80c346-72e9d427.html">Network footprint (3)</a></td>
-<td style="text-align: left;"><code>FileOriginReferrerUrl contains "URL GOES HERE"</code><br><code>FileOriginUrl == "IP ADDRESS GOES HERE"</code><br><code>FileOriginUrl contains "URL GOES HERE"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-possible-file-copy-to-usb-drive-34be41b9-eddf-43ca-b208-5b912937f496-537e220c.html">Possible File Copy to USB Drive</a></td>
-<td style="text-align: left;"><code>ActionType == "PnpDeviceConnected"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-private-key-files-2ca01fd3-afb5-4050-8a1d-6b821bdab080-d378a671.html">Private Key Files</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-qakbot-email-theft-20b3ece3-7d4a-4952-914b-88623ccf6c09-8ae6138d.html">Qakbot email theft</a></td>
-<td style="text-align: left;"><code>InitiatingProcessFileName == "ping.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-qakbot-email-theft-1-a5c3ebdf-e427-4b1b-985e-c1f1e20067b7-81d315af.html">Qakbot email theft (1)</a></td>
-<td style="text-align: left;"><code>FolderPath endswith ".eml"</code><br><code>InitiatingProcessCommandLine == "ping.exe -t 127.0.0.1"</code><br><code>InitiatingProcessFileName == "ping.exe"</code><br><code>InitiatingProcessParentFileName in "mobsync.exe,msra.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-ransomware-hits-healthcare-vulnerable-gigabyte-drivers-6eade795-7040-48eb-aae7-3f75bf7fad2e-0c90f3d2.html">Ransomware hits healthcare - Vulnerable Gigabyte drivers</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.html">Rare-process-as-a-service</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.html">SmartScreen URL block ignored by user</a></td>
-<td style="text-align: left;"><code>ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.html">Storage File Seen on Endpoint</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-suspicious-dlls-in-spool-folder-cabb3aa3-cbfa-4359-9464-a3093d8b44f3-0d5ee674.html">Suspicious DLLs in spool folder</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileRenamed"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-suspicious-files-in-spool-folder-664afd0d-c979-4970-affe-fc17f01276fb-73c9a13f.html">Suspicious files in spool folder</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-windows-anitivirus-and-edr-elevation-of-privilege-vulnerability-a9eb9b06-4345-47f2-abe6-29f7200ddf83-a74f0b08.html">Windows Anitivirus and EDR Elevation of Privilege Vulnerability</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\temp\\Windows\\System32\\drivers\\"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-windows-spooler-service-suspicious-file-creation-67309406-12ad-4591-84db-0cc331634d0c-34e2df90.html">Windows Spooler Service Suspicious File Creation</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-apt-unidentified-nov-18-1-9bff1151-227c-4581-946d-643266c346a6-f1793d96.html">apt unidentified nov 18 (1)</a></td>
-<td style="text-align: left;"><code>FolderPath has "ds7002.lnk"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-da57d533.html">check-for-shadowhammer-activity-implant</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-cve-2019-0808-nufsys-file-creation-447cdff3-2bfc-4f7a-b718-048d6d0ebd87-e9728721.html">cve-2019-0808-nufsys-file creation</a></td>
-<td style="text-align: left;"><code>FolderPath contains "temp"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-dell-driver-vulnerability-2021-4eadcfeb-2ed8-40ce-941a-6691d7ddbdca-9454ccec.html">dell-driver-vulnerability-2021</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-archive-exfiltration-to-competitor-8baad907-3b15-4f26-be09-dbba3d32fc3f-deef7303.html">detect-archive-exfiltration-to-competitor</a></td>
-<td style="text-align: left;"><code>InitiatingProcessFileName in "7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-bluekeep-related-mining-2bf77176-1b8a-4466-9b64-6b9fd4023fa5-d96a0d55.html">detect-bluekeep-related-mining</a></td>
-<td style="text-align: left;"><code>FolderPath endswith "spool\\svchost.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-cve-2019-1053-sandboxescape-exploit-c176e100-03cc-4b02-873b-d9686f354330-7a841f28.html">detect-cve-2019-1053-sandboxescape-exploit</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-cve-2019-1069-bearlpe-exploit-d82cdd92-4818-4f55-9e14-68021c154cdb-40fccba2.html">detect-cve-2019-1069-bearlpe-exploit</a></td>
-<td style="text-align: left;"><code>InitiatingProcessCommandLine !contains "/S"</code><br><code>InitiatingProcessCommandLine !contains "/SD"</code><br><code>InitiatingProcessCommandLine !contains "/ST"</code><br><code>InitiatingProcessCommandLine contains "/RP"</code><br><code>InitiatingProcessCommandLine contains "/RU"</code><br><code>InitiatingProcessCommandLine contains "/TN"</code><br><code>InitiatingProcessCommandLine contains "/change"</code><br><code>InitiatingProcessIntegrityLevel !in "High,System"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.html">detect-impacket-psexec-module</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-jscript-file-creation-7913cb78-0e5a-4c4c-ab5b-31ef823ba25b-0fb9d2ff.html">detect-jscript-file-creation</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-nbtscan-activity-28ebbb87-535b-4ba0-80f4-6fbf80b7c55a-2d50bb55.html">detect-nbtscan-activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-prifou-pua-62bc4944-46dd-4c2f-ba04-72837bbfec3f-6e8f169c.html">detect-prifou-pua</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-detect-steganography-exfiltration-e0003bf6-b5f2-4dd1-a130-8651eb0b9f04-5c9b5fd7.html">detect-steganography-exfiltration</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-devices-with-vuln-and-users-received-payload-1-9c2ba784-c664-40f1-b0df-8f34c6626be5-4864d8ed.html">devices_with_vuln_and_users_received_payload (1)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-files-from-malicious-sender-43625c12-5712-44df-8741-c334746aeccc-a436fe47.html">files-from-malicious-sender</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-fireeye-red-team-tools-hashs-[nobelium]-3e9ac786-134c-4917-99bd-4a7ce01049ab-cc118b80.html">fireeye-red-team-tools-HASHs [Nobelium]</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-hiding-java-class-file-c5196191-609a-407f-a623-f37785eca019-3753e6c0.html">hiding-java-class-file</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-1-4685d7ec-8134-43ce-b579-7c31286b0bc5-5adac1b5.html">insider-threat-detection-queries (1)</a></td>
-<td style="text-align: left;"><code>FolderPath matchesregex ".*Confidential|Restricted.*"</code><br><code>InitiatingProcessFileName in "7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-16-2d4f4889-ef25-4e3c-9ece-2275e55e8332-a9dfda53.html">insider-threat-detection-queries (16)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-2-1cdf6fe8-6232-48ba-bbd8-b9881c30e0e9-8b3f26dc.html">insider-threat-detection-queries (2)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-insider-threat-detection-queries-7-caa8bd4f-3d4c-41fb-94b2-7a3e819c1688-a78e2c78.html">insider-threat-detection-queries (7)</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-launch-questd-w-osascript-4e186f05-8cff-4afa-a0c8-4f0f0e7aeb82-8ca89ebc.html">launch-questd-w-osascript</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-locate-alpc-local-privilege-elevation-exploit-8f26a2c6-4c60-469c-ac7a-f4d1ccccab9f-9b89eb2d.html">locate-ALPC-local-privilege-elevation-exploit</a></td>
-<td style="text-align: left;"><code>InitiatingProcessIntegrityLevel != "High"</code><br><code>InitiatingProcessIntegrityLevel != "System"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-locate-dll-created-locally[nobelium]-644a6cea-7662-45db-89d0-a9136a9a5da6-766ed37d.html">locate-dll-created-locally[Nobelium]</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.html">lsass-credential-dumping</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,OpenProcessApiCall"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-oceanlotus-apt32-files-d868871c-bdd6-45e9-9e9d-e3c4521654a7-df57d4d6.html">oceanlotus-apt32-files</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-oracle-weblogic-executing-powershell-2397f77e-e33e-4658-9a81-fe9dbafb810d-8e8bbd09.html">oracle-webLogic-executing-powershell</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-printnightmare-cve-2021-1675-usage-detection-ec1934d5-c591-4ff4-9968-079dba04d28e-3fae6a29.html">printnightmare-cve-2021-1675 usage detection</a></td>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-python-use-by-ransomware-macos-8d52dce6-6143-44e9-8ff5-a62f2df742b2-dd2119b7.html">python-use-by-ransomware-macos</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-qakbot-campaign-outlook-221ba640-3727-4b48-b30c-f5bb7398be7b-b74f08a4.html">qakbot-campaign-outlook</a></td>
-<td style="text-align: left;"><code>FolderPath has "Outlook"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-ransom-note-creation-macos-fbe63fdf-142f-4b0a-b73e-8f16aaf46be7-72efc9f8.html">ransom-note-creation-macos</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.html">rare_sch_task_with_activity</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.html">regsvr32-rundll32-abnormal-image-loads</a></td>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileRenamed"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-remote-file-creation-with-psexec-8b1d8f83-08f3-44fb-8328-1229521f109c-c59300e9.html">remote-file-creation-with-psexec</a></td>
-<td style="text-align: left;"><code>FolderPath has "\\\\"</code><br><code>InitiatingProcessCommandLine !has ".ps1"</code><br><code>InitiatingProcessCommandLine has ".bat"</code><br><code>InitiatingProcessCommandLine has "accepteula"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-5fee050e.html">reverse-shell-ransomware-macos</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-robbinhood-driver-cd718abb-96e4-436e-9a6c-63c09d40cc5c-337420a5.html">robbinhood-driver</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-snip3-encoded-powershell-structure-c85c5b11-a5b9-480d-b9cf-79ba2289f770-99077009.html">snip3-encoded-powershell-structure</a></td>
-<td style="text-align: left;"><code>InitiatingProcessCommandLine has_all "IEX"</code><br><code>InitiatingProcessCommandLine has_any "Unrestricted"</code><br><code>InitiatingProcessFileName == "powershell.exe"</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-winrar-cve-2018-20250-ace-files-8320de94-2411-4748-9329-e1543f257323-0cb5affb.html">winrar-cve-2018-20250-ace-files</a></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../content/github-only-winrar-cve-2018-20250-file-creation-04eaf822-d364-4434-b2c8-a6378d97f192-8819b592.html">winrar-cve-2018-20250-file-creation</a></td>
-<td style="text-align: left;"><code>FolderPath contains "Programs\\Startup"</code><br><code>InitiatingProcessCommandLine contains ".rar"</code><br><code>InitiatingProcessFileName == "winrar.exe"</code></td>
-</tr>
-</tbody>
-</table>
+<p>| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| <a href="../content/github-only-av-detections-with-source-52c9e90b-84f4-4e2d-ae3d-eef85e8aa069-0c3cb3a4.html">AV Detections with Source</a> | <code>ActionType == &quot;AntivirusDetection&quot;</code> |
+| <a href="../content/github-only-abuse.ch-recent-threat-feed-2bcdf59a-679d-4585-93e7-f14d674de205-f83323a5.html">Abuse.ch Recent Threat Feed</a> |  |
+| <a href="../content/github-only-abuse.ch-recent-threat-feed-1-8bd9e7c0-82b9-43b4-b58e-53d1ee6d9180-d82c3247.html">Abuse.ch Recent Threat Feed (1)</a> |  |
+| <a href="../content/github-only-abusing-settingcontent-ms-07a17371-bea3-41e5-91d1-99728cd44955-bb277017.html">Abusing settingcontent-ms</a> | <code>InitiatingProcessFileName in &quot;browser_broker.exe,chrome.exe,firefox.exe,iexplore.exe,outlook.exe&quot;</code> |
+| <a href="../content/github-only-accessibility-features-a5649d8b-e54b-4e2b-925a-106bf838d69c-dbe14580.html">Accessibility Features</a> |  |
+| <a href="../content/github-only-acrord-exploits-c87df1a7-fa54-4730-bc90-cbc1f8ac01aa-c43b739b.html">AcroRd-Exploits</a> | <code>FolderPath contains &quot;\\Start Menu\\Programs\\Startup&quot;</code><br><code>InitiatingProcessFileName == &quot;acrord32.exe&quot;</code> |
+| <a href="../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.html">Azure VM Run Command linked with MDE</a> |  |
+| <a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a> |  |
+| <a href="../content/github-only-browser-extension-enumeration-via-devicefileevents-ede058ab-97a8-4494-aa76-b7f5f6d78cba-a2f66fb1.html">Browser Extension Enumeration via DeviceFileEvents</a> |  |
+| <a href="../content/github-only-data-copied-to-other-location-than-c-drive-8899867b-0fd8-4cfd-b6f0-0f04ef37142c-d7d474ee.html">Data copied to other location than C drive</a> | <code>ActionType == &quot;FileCreated&quot;</code> |
+| <a href="../content/github-only-doc-attachment-with-link-to-download-cf259a7a-801a-435a-af3f-3ef998561145-16155f72.html">Doc attachment with link to download</a> | <code>ActionType == &quot;BrowserLaunchedToOpenUrl&quot;</code> |
+| <a href="../content/github-only-dropbox-downloads-linked-from-other-site-de93670b-a1db-4c8c-80aa-5b3146428631-d523e10d.html">Dropbox downloads linked from other site</a> | <code>FileOriginReferrerUrl !startswith &quot;https://www.dropbox.com/&quot;</code><br><code>FileOriginUrl startswith &quot;https://dl.dropboxusercontent.com/&quot;</code> |
+| <a href="../content/github-only-dropping-payload-via-certutil-f5ff5b00-a90e-40b8-b241-9427a8ec5189-47bd6693.html">Dropping payload via certutil</a> | <code>InitiatingProcessFileName != &quot;certutil.exe&quot;</code><br><code>InitiatingProcessFileName != &quot;cmd.exe&quot;</code> |
+| <a href="../content/github-only-email-link-+-download-+-smartscreen-warning-b29c75ca-a110-4c58-8d0b-6afac6d61078-bc09f2d6.html">Email link + download + SmartScreen warning</a> | <code>ActionType in &quot;BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride&quot;</code> |
+| <a href="../content/github-only-file-copy-and-execution-a27d5cb6-c533-4a81-9d11-d5c0ed257bc7-20375a6a.html">File Copy and Execution</a> |  |
+| <a href="../content/github-only-files-copied-to-usb-drives-fc2c5bbb-5347-4903-87e6-c2c76c43e420-289491f6.html">Files copied to USB drives</a> | <code>ActionType in &quot;FileCreated,UsbDriveMounted&quot;</code> |
+| <a href="../content/github-only-general-attempts-to-access-local-email-store-c3e585d2-f1d0-4789-85a2-cdf7642fdf8b-8b60ca1e.html">General attempts to access local email store</a> | <code>FolderPath has &quot;Outlook&quot;</code> |
+| <a href="../content/github-only-hta-startup-persistence-10d275ce-bb52-41b7-b67e-05b974ed1179-9f00709f.html">HTA Startup Persistence</a> |  |
+| <a href="../content/github-only-icedid-delivery-b2f3ee1c-f379-465c-a339-412ecf3b1bcb-39a15c94.html">IcedId Delivery</a> | <code>FileOriginReferrerUrl has &quot;.php&quot;</code><br><code>FileOriginReferrerUrl has &quot;.top&quot;</code><br><code>InitiatingProcessFileName in &quot;7zFM.exe,browser_broker.exe,chrome.exe,explorer.exe,firefox.exe,msedge.exe&quot;</code> |
+| <a href="../content/github-only-identify-europium-iocs-f33abf94-6759-4820-9973-51d2a41749a4-cb611a2a.html">Identify EUROPIUM IOCs</a> |  |
+| <a href="../content/github-only-knotweed-pe-file-dropped-in-color-profile-folder-cfdb2ccb-0eb3-47ed-9220-d56795906fdc-aa0e134d.html">KNOTWEED-PE File Dropped in Color Profile Folder</a> | <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath has &quot;C:\\Windows\\System32\\spool\\drivers\\color\\&quot;</code> |
+| <a href="../content/github-only-malicious-excel-delivery-6fa3cf44-517f-4ce5-8727-948b0783b507-d9d7c2fd.html">Malicious Excel Delivery</a> | <code>FileOriginReferrerUrl has &quot;/account&quot;</code><br><code>FileOriginReferrerUrl has &quot;/case&quot;</code><br><code>FileOriginUrl has &quot;/cancel.php&quot;</code><br><code>FileOriginUrl has &quot;/download.php&quot;</code> |
+| <a href="../content/github-only-malicious-bat-file-c903138d-b948-4975-a660-57495b3f8754-637f496c.html">Malicious bat file</a> |  |
+| <a href="../content/github-only-network-footprint-3-44b02f8c-d206-4e1a-9859-6aa06b80c346-72e9d427.html">Network footprint (3)</a> | <code>FileOriginReferrerUrl contains &quot;URL GOES HERE&quot;</code><br><code>FileOriginUrl == &quot;IP ADDRESS GOES HERE&quot;</code><br><code>FileOriginUrl contains &quot;URL GOES HERE&quot;</code> |
+| <a href="../content/github-only-possible-file-copy-to-usb-drive-34be41b9-eddf-43ca-b208-5b912937f496-537e220c.html">Possible File Copy to USB Drive</a> | <code>ActionType == &quot;PnpDeviceConnected&quot;</code> |
+| <a href="../content/github-only-private-key-files-2ca01fd3-afb5-4050-8a1d-6b821bdab080-d378a671.html">Private Key Files</a> |  |
+| <a href="../content/github-only-qakbot-email-theft-20b3ece3-7d4a-4952-914b-88623ccf6c09-8ae6138d.html">Qakbot email theft</a> | <code>InitiatingProcessFileName == &quot;ping.exe&quot;</code> |
+| <a href="../content/github-only-qakbot-email-theft-1-a5c3ebdf-e427-4b1b-985e-c1f1e20067b7-81d315af.html">Qakbot email theft (1)</a> | <code>FolderPath endswith &quot;.eml&quot;</code><br><code>InitiatingProcessCommandLine == &quot;ping.exe -t 127.0.0.1&quot;</code><br><code>InitiatingProcessFileName == &quot;ping.exe&quot;</code><br><code>InitiatingProcessParentFileName in &quot;mobsync.exe,msra.exe&quot;</code> |
+| <a href="../content/github-only-ransomware-hits-healthcare-vulnerable-gigabyte-drivers-6eade795-7040-48eb-aae7-3f75bf7fad2e-0c90f3d2.html">Ransomware hits healthcare - Vulnerable Gigabyte drivers</a> |  |
+| <a href="../content/github-only-rare-process-as-a-service-a60ac80f-dce6-43ec-b102-9ae8c094d5dc-8648e4a1.html">Rare-process-as-a-service</a> |  |
+| <a href="../content/github-only-smartscreen-url-block-ignored-by-user-172e5bee-9298-4c59-bd2a-e96d87e8e6d8-a0038d18.html">SmartScreen URL block ignored by user</a> | <code>ActionType in &quot;SmartScreenUrlWarning,SmartScreenUserOverride&quot;</code> |
+| <a href="../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.html">Storage File Seen on Endpoint</a> | <code>ActionType == &quot;FileCreated&quot;</code> |
+| <a href="../content/github-only-suspicious-dlls-in-spool-folder-cabb3aa3-cbfa-4359-9464-a3093d8b44f3-0d5ee674.html">Suspicious DLLs in spool folder</a> | <code>ActionType in &quot;FileCreated,FileRenamed&quot;</code> |
+| <a href="../content/github-only-suspicious-files-in-spool-folder-664afd0d-c979-4970-affe-fc17f01276fb-73c9a13f.html">Suspicious files in spool folder</a> |  |
+| <a href="../content/github-only-windows-anitivirus-and-edr-elevation-of-privilege-vulnerability-a9eb9b06-4345-47f2-abe6-29f7200ddf83-a74f0b08.html">Windows Anitivirus and EDR Elevation of Privilege Vulnerability</a> | <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\temp\\Windows\\System32\\drivers\\&quot;</code> |
+| <a href="../content/github-only-windows-spooler-service-suspicious-file-creation-67309406-12ad-4591-84db-0cc331634d0c-34e2df90.html">Windows Spooler Service Suspicious File Creation</a> | <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\&quot;</code> |
+| <a href="../content/github-only-apt-unidentified-nov-18-1-9bff1151-227c-4581-946d-643266c346a6-f1793d96.html">apt unidentified nov 18 (1)</a> | <code>FolderPath has &quot;ds7002.lnk&quot;</code> |
+| <a href="../content/github-only-check-for-shadowhammer-activity-implant-fb6f89ae-4af3-4c37-8f12-d719e882e8a5-da57d533.html">check-for-shadowhammer-activity-implant</a> |  |
+| <a href="../content/github-only-cve-2019-0808-nufsys-file-creation-447cdff3-2bfc-4f7a-b718-048d6d0ebd87-e9728721.html">cve-2019-0808-nufsys-file creation</a> | <code>FolderPath contains &quot;temp&quot;</code> |
+| <a href="../content/github-only-dell-driver-vulnerability-2021-4eadcfeb-2ed8-40ce-941a-6691d7ddbdca-9454ccec.html">dell-driver-vulnerability-2021</a> |  |
+| <a href="../content/github-only-detect-archive-exfiltration-to-competitor-8baad907-3b15-4f26-be09-dbba3d32fc3f-deef7303.html">detect-archive-exfiltration-to-competitor</a> | <code>InitiatingProcessFileName in &quot;7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe&quot;</code> |
+| <a href="../content/github-only-detect-bluekeep-related-mining-2bf77176-1b8a-4466-9b64-6b9fd4023fa5-d96a0d55.html">detect-bluekeep-related-mining</a> | <code>FolderPath endswith &quot;spool\\svchost.exe&quot;</code> |
+| <a href="../content/github-only-detect-cve-2019-1053-sandboxescape-exploit-c176e100-03cc-4b02-873b-d9686f354330-7a841f28.html">detect-cve-2019-1053-sandboxescape-exploit</a> |  |
+| <a href="../content/github-only-detect-cve-2019-1069-bearlpe-exploit-d82cdd92-4818-4f55-9e14-68021c154cdb-40fccba2.html">detect-cve-2019-1069-bearlpe-exploit</a> | <code>InitiatingProcessCommandLine !contains &quot;/S&quot;</code><br><code>InitiatingProcessCommandLine !contains &quot;/SD&quot;</code><br><code>InitiatingProcessCommandLine !contains &quot;/ST&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/RP&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/RU&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/TN&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/change&quot;</code><br><code>InitiatingProcessIntegrityLevel !in &quot;High,System&quot;</code> |
+| <a href="../content/github-only-detect-impacket-psexec-module-6e6e6486-1bfc-4de0-bcbe-1ed88dfee2a1-ba6e359d.html">detect-impacket-psexec-module</a> | <code>ActionType == &quot;FileCreated&quot;</code> |
+| <a href="../content/github-only-detect-jscript-file-creation-7913cb78-0e5a-4c4c-ab5b-31ef823ba25b-0fb9d2ff.html">detect-jscript-file-creation</a> |  |
+| <a href="../content/github-only-detect-nbtscan-activity-28ebbb87-535b-4ba0-80f4-6fbf80b7c55a-2d50bb55.html">detect-nbtscan-activity</a> |  |
+| <a href="../content/github-only-detect-prifou-pua-62bc4944-46dd-4c2f-ba04-72837bbfec3f-6e8f169c.html">detect-prifou-pua</a> |  |
+| <a href="../content/github-only-detect-steganography-exfiltration-e0003bf6-b5f2-4dd1-a130-8651eb0b9f04-5c9b5fd7.html">detect-steganography-exfiltration</a> |  |
+| <a href="../content/github-only-devices-with-vuln-and-users-received-payload-1-9c2ba784-c664-40f1-b0df-8f34c6626be5-4864d8ed.html">devices_with_vuln_and_users_received_payload (1)</a> |  |
+| <a href="../content/github-only-files-from-malicious-sender-43625c12-5712-44df-8741-c334746aeccc-a436fe47.html">files-from-malicious-sender</a> |  |
+| <a href="../content/github-only-fireeye-red-team-tools-hashs-%5Bnobelium%5D-3e9ac786-134c-4917-99bd-4a7ce01049ab-cc118b80.html">fireeye-red-team-tools-HASHs [Nobelium]</a> |  |
+| <a href="../content/github-only-hiding-java-class-file-c5196191-609a-407f-a623-f37785eca019-3753e6c0.html">hiding-java-class-file</a> |  |
+| <a href="../content/github-only-insider-threat-detection-queries-1-4685d7ec-8134-43ce-b579-7c31286b0bc5-5adac1b5.html">insider-threat-detection-queries (1)</a> | <code>FolderPath matchesregex &quot;.*Confidential|Restricted.*&quot;</code><br><code>InitiatingProcessFileName in &quot;7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe&quot;</code> |
+| <a href="../content/github-only-insider-threat-detection-queries-16-2d4f4889-ef25-4e3c-9ece-2275e55e8332-a9dfda53.html">insider-threat-detection-queries (16)</a> |  |
+| <a href="../content/github-only-insider-threat-detection-queries-2-1cdf6fe8-6232-48ba-bbd8-b9881c30e0e9-8b3f26dc.html">insider-threat-detection-queries (2)</a> |  |
+| <a href="../content/github-only-insider-threat-detection-queries-7-caa8bd4f-3d4c-41fb-94b2-7a3e819c1688-a78e2c78.html">insider-threat-detection-queries (7)</a> |  |
+| <a href="../content/github-only-launch-questd-w-osascript-4e186f05-8cff-4afa-a0c8-4f0f0e7aeb82-8ca89ebc.html">launch-questd-w-osascript</a> |  |
+| <a href="../content/github-only-locate-alpc-local-privilege-elevation-exploit-8f26a2c6-4c60-469c-ac7a-f4d1ccccab9f-9b89eb2d.html">locate-ALPC-local-privilege-elevation-exploit</a> | <code>InitiatingProcessIntegrityLevel != &quot;High&quot;</code><br><code>InitiatingProcessIntegrityLevel != &quot;System&quot;</code> |
+| <a href="../content/github-only-locate-dll-created-locally%5Bnobelium%5D-644a6cea-7662-45db-89d0-a9136a9a5da6-766ed37d.html">locate-dll-created-locally[Nobelium]</a> |  |
+| <a href="../content/github-only-lsass-credential-dumping-a50138af-4bad-4615-9e55-ced36a836806-0a5fbccf.html">lsass-credential-dumping</a> | <code>ActionType in &quot;FileCreated,OpenProcessApiCall&quot;</code> |
+| <a href="../content/github-only-oceanlotus-apt32-files-d868871c-bdd6-45e9-9e9d-e3c4521654a7-df57d4d6.html">oceanlotus-apt32-files</a> |  |
+| <a href="../content/github-only-oracle-weblogic-executing-powershell-2397f77e-e33e-4658-9a81-fe9dbafb810d-8e8bbd09.html">oracle-webLogic-executing-powershell</a> |  |
+| <a href="../content/github-only-printnightmare-cve-2021-1675-usage-detection-ec1934d5-c591-4ff4-9968-079dba04d28e-3fae6a29.html">printnightmare-cve-2021-1675 usage detection</a> | <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers&quot;</code> |
+| <a href="../content/github-only-python-use-by-ransomware-macos-8d52dce6-6143-44e9-8ff5-a62f2df742b2-dd2119b7.html">python-use-by-ransomware-macos</a> |  |
+| <a href="../content/github-only-qakbot-campaign-outlook-221ba640-3727-4b48-b30c-f5bb7398be7b-b74f08a4.html">qakbot-campaign-outlook</a> | <code>FolderPath has &quot;Outlook&quot;</code> |
+| <a href="../content/github-only-ransom-note-creation-macos-fbe63fdf-142f-4b0a-b73e-8f16aaf46be7-72efc9f8.html">ransom-note-creation-macos</a> |  |
+| <a href="../content/github-only-rare-sch-task-with-activity-ce76992a-8cd6-4605-9f45-cde9aae87244-3f342058.html">rare_sch_task_with_activity</a> |  |
+| <a href="../content/github-only-regsvr32-rundll32-abnormal-image-loads-69eb9fb7-fe0d-4c34-8c81-3a828fc12abd-b77ab5f2.html">regsvr32-rundll32-abnormal-image-loads</a> | <code>ActionType in &quot;FileCreated,FileRenamed&quot;</code> |
+| <a href="../content/github-only-remote-file-creation-with-psexec-8b1d8f83-08f3-44fb-8328-1229521f109c-c59300e9.html">remote-file-creation-with-psexec</a> | <code>FolderPath has &quot;\\\\&quot;</code><br><code>InitiatingProcessCommandLine !has &quot;.ps1&quot;</code><br><code>InitiatingProcessCommandLine has &quot;.bat&quot;</code><br><code>InitiatingProcessCommandLine has &quot;accepteula&quot;</code> |
+| <a href="../content/github-only-reverse-shell-ransomware-macos-936d985d-f44c-4ec7-81ae-7aa1995f940d-5fee050e.html">reverse-shell-ransomware-macos</a> |  |
+| <a href="../content/github-only-robbinhood-driver-cd718abb-96e4-436e-9a6c-63c09d40cc5c-337420a5.html">robbinhood-driver</a> |  |
+| <a href="../content/github-only-snip3-encoded-powershell-structure-c85c5b11-a5b9-480d-b9cf-79ba2289f770-99077009.html">snip3-encoded-powershell-structure</a> | <code>InitiatingProcessCommandLine has_all &quot;IEX&quot;</code><br><code>InitiatingProcessCommandLine has_any &quot;Unrestricted&quot;</code><br><code>InitiatingProcessFileName == &quot;powershell.exe&quot;</code> |
+| <a href="../content/github-only-winrar-cve-2018-20250-ace-files-8320de94-2411-4748-9329-e1543f257323-0cb5affb.html">winrar-cve-2018-20250-ace-files</a> |  |
+| <a href="../content/github-only-winrar-cve-2018-20250-file-creation-04eaf822-d364-4434-b2c8-a6378d97f192-8819b592.html">winrar-cve-2018-20250-file-creation</a> | <code>FolderPath contains &quot;Programs\\Startup&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;.rar&quot;</code><br><code>InitiatingProcessFileName == &quot;winrar.exe&quot;</code> |</p>
 <h3 id="workbooks">Workbooks (11)</h3>
 <p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -1067,14 +834,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -1082,14 +849,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/dora-compliance-doracompliance-21bcc12f.html">DORACompliance</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/dora-compliance-doracompliance-21bcc12f.html">DORACompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -1097,14 +864,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -1112,27 +879,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == "AntivirusDetection"</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == &quot;AntivirusDetection&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
 </tr>
 </tbody>
 </table>
@@ -1140,14 +907,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -1155,499 +922,193 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
-<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoftdefenderforendpoint-ac005534.html">MicrosoftDefenderForEndPoint</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AntivirusDetection&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-solarwindspostcompromisehunting-09062974.html">SolarWindsPostCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
-<h3 id="asim-parsers-1-selection-criteria-folderpath-startswith">ASIM Parsers (1) — Selection Criteria: <code>FolderPath startswith "/"</code></h3>
+<h3 id="asim-parsers-1-selection-criteria-folderpath-startswith-quotquot">ASIM Parsers (1) — Selection Criteria: <code>FolderPath startswith &quot;/&quot;</code></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Schema</th>
-<th style="text-align: left;">Product</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimfileeventmicrosoft365d.html">ASimFileEventMicrosoft365D</a></td>
-<td style="text-align: left;">FileEvent</td>
-<td style="text-align: left;">Microsoft 365 Defender for EndPoint</td>
+  <td style="text-align:left"><a href="../asim/asimfileeventmicrosoft365d.html">ASimFileEventMicrosoft365D</a></td>
+  <td style="text-align:left">FileEvent</td>
+  <td style="text-align:left">Microsoft 365 Defender for EndPoint</td>
 </tr>
 </tbody>
 </table>
 <h2 id="selection-criteria-summary">Selection Criteria Summary (41 criteria, 56 total references)</h2>
 <p>References by type: 0 connectors, 55 content items, 1 ASIM parsers, 0 other parsers.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,UsbDriveMounted"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath has "\\\\"</code><br><code>InitiatingProcessCommandLine !has ".ps1"</code><br><code>InitiatingProcessCommandLine has ".bat"</code><br><code>InitiatingProcessCommandLine has "accepteula"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileRenamed"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath has "C:\\Windows\\System32\\spool\\drivers\\color\\"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\"</code><br><code>FolderPath startswith "C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessFileName != "certutil.exe"</code><br><code>InitiatingProcessFileName != "cmd.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath has "Outlook"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "AntivirusDetection"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "FileRenamed"</code><br><code>InitiatingProcessFileName in "excel.exe,outlook.exe,powerpnt.exe,winword.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>MD5 == "5"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath !endswith ".ini"</code><br><code>FolderPath !endswith ".js"</code><br><code>FolderPath !endswith ".json"</code><br><code>FolderPath !endswith ".log"</code><br><code>FolderPath !endswith ".tmp"</code><br><code>FolderPath !endswith ".vb"</code><br><code>FolderPath !endswith ".xml"</code><br><code>FolderPath has_any "\\wwwroot\\"</code><br><code>InitiatingProcessCommandLine contains "MSExchange"</code><br><code>InitiatingProcessFileName == "w3wp.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,FileModified,FileRenamed"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessFileName == "UMWorkerProcess.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessFileName in "browser_broker.exe,chrome.exe,firefox.exe,iexplore.exe,outlook.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath has "ds7002.lnk"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessCommandLine has_all "IEX"</code><br><code>InitiatingProcessCommandLine has_any "Unrestricted"</code><br><code>InitiatingProcessFileName == "powershell.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType in "FileCreated,OpenProcessApiCall"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "BrowserLaunchedToOpenUrl"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FileOriginReferrerUrl !startswith "https://www.dropbox.com/"</code><br><code>FileOriginUrl startswith "https://dl.dropboxusercontent.com/"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType in "BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>DeviceName == "EndpointNameHere"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath endswith "spool\\svchost.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessFileName in "7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "PnpDeviceConnected"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath contains "\\Start Menu\\Programs\\Startup"</code><br><code>InitiatingProcessFileName == "acrord32.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath contains "Programs\\Startup"</code><br><code>InitiatingProcessCommandLine contains ".rar"</code><br><code>InitiatingProcessFileName == "winrar.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath matchesregex ".*Confidential|Restricted.*"</code><br><code>InitiatingProcessFileName in "7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FileOriginReferrerUrl contains "URL GOES HERE"</code><br><code>FileOriginUrl == "IP ADDRESS GOES HERE"</code><br><code>FileOriginUrl contains "URL GOES HERE"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath contains "temp"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType == "FileCreated"</code><br><code>FolderPath startswith "C:\\temp\\Windows\\System32\\drivers\\"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessCommandLine !contains "/S"</code><br><code>InitiatingProcessCommandLine !contains "/SD"</code><br><code>InitiatingProcessCommandLine !contains "/ST"</code><br><code>InitiatingProcessCommandLine contains "/RP"</code><br><code>InitiatingProcessCommandLine contains "/RU"</code><br><code>InitiatingProcessCommandLine contains "/TN"</code><br><code>InitiatingProcessCommandLine contains "/change"</code><br><code>InitiatingProcessIntegrityLevel !in "High,System"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessIntegrityLevel != "High"</code><br><code>InitiatingProcessIntegrityLevel != "System"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>ActionType in "SmartScreenUrlWarning,SmartScreenUserOverride"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FileOriginReferrerUrl has ".php"</code><br><code>FileOriginReferrerUrl has ".top"</code><br><code>InitiatingProcessFileName in "7zFM.exe,browser_broker.exe,chrome.exe,explorer.exe,firefox.exe,msedge.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FileOriginReferrerUrl has "/account"</code><br><code>FileOriginReferrerUrl has "/case"</code><br><code>FileOriginUrl has "/cancel.php"</code><br><code>FileOriginUrl has "/download.php"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath endswith ".eml"</code><br><code>InitiatingProcessCommandLine == "ping.exe -t 127.0.0.1"</code><br><code>InitiatingProcessFileName == "ping.exe"</code><br><code>InitiatingProcessParentFileName in "mobsync.exe,msra.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>InitiatingProcessFileName == "ping.exe"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><code>FolderPath startswith "/"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>55</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>56</strong></td>
-</tr>
-</tbody>
-</table>
+<p>| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| <code>ActionType in &quot;FileCreated,UsbDriveMounted&quot;</code> | - | 3 | - | - | <strong>3</strong> |
+| <code>FolderPath has &quot;\\\\&quot;</code><br><code>InitiatingProcessCommandLine !has &quot;.ps1&quot;</code><br><code>InitiatingProcessCommandLine has &quot;.bat&quot;</code><br><code>InitiatingProcessCommandLine has &quot;accepteula&quot;</code> | - | 3 | - | - | <strong>3</strong> |
+| <code>ActionType in &quot;FileCreated,FileRenamed&quot;</code> | - | 3 | - | - | <strong>3</strong> |
+| <code>ActionType == &quot;FileCreated&quot;</code> | - | 3 | - | - | <strong>3</strong> |
+| <code>ActionType in &quot;FileCreated,FileModified&quot;</code> | - | 2 | - | - | <strong>2</strong> |
+| <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath has &quot;C:\\Windows\\System32\\spool\\drivers\\color\\&quot;</code> | - | 2 | - | - | <strong>2</strong> |
+| <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers&quot;</code> | - | 2 | - | - | <strong>2</strong> |
+| <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\&quot;</code><br><code>FolderPath startswith &quot;C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\&quot;</code> | - | 2 | - | - | <strong>2</strong> |
+| <code>InitiatingProcessFileName != &quot;certutil.exe&quot;</code><br><code>InitiatingProcessFileName != &quot;cmd.exe&quot;</code> | - | 2 | - | - | <strong>2</strong> |
+| <code>FolderPath has &quot;Outlook&quot;</code> | - | 2 | - | - | <strong>2</strong> |
+| <code>ActionType == &quot;AntivirusDetection&quot;</code> | - | 2 | - | - | <strong>2</strong> |
+| <code>ActionType == &quot;FileRenamed&quot;</code><br><code>InitiatingProcessFileName in &quot;excel.exe,outlook.exe,powerpnt.exe,winword.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>MD5 == &quot;5&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath !endswith &quot;.ini&quot;</code><br><code>FolderPath !endswith &quot;.js&quot;</code><br><code>FolderPath !endswith &quot;.json&quot;</code><br><code>FolderPath !endswith &quot;.log&quot;</code><br><code>FolderPath !endswith &quot;.tmp&quot;</code><br><code>FolderPath !endswith &quot;.vb&quot;</code><br><code>FolderPath !endswith &quot;.xml&quot;</code><br><code>FolderPath has_any &quot;\\wwwroot\\&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;MSExchange&quot;</code><br><code>InitiatingProcessFileName == &quot;w3wp.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>ActionType in &quot;FileCreated,FileModified,FileRenamed&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>InitiatingProcessFileName == &quot;UMWorkerProcess.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>InitiatingProcessFileName in &quot;browser_broker.exe,chrome.exe,firefox.exe,iexplore.exe,outlook.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath has &quot;ds7002.lnk&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>InitiatingProcessCommandLine has_all &quot;IEX&quot;</code><br><code>InitiatingProcessCommandLine has_any &quot;Unrestricted&quot;</code><br><code>InitiatingProcessFileName == &quot;powershell.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>ActionType in &quot;FileCreated,OpenProcessApiCall&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>ActionType == &quot;BrowserLaunchedToOpenUrl&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FileOriginReferrerUrl !startswith &quot;https://www.dropbox.com/&quot;</code><br><code>FileOriginUrl startswith &quot;https://dl.dropboxusercontent.com/&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>ActionType in &quot;BrowserLaunchedToOpenUrl,SmartScreenAppWarning,SmartScreenUserOverride&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>DeviceName == &quot;EndpointNameHere&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath endswith &quot;spool\\svchost.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>InitiatingProcessFileName in &quot;7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>ActionType == &quot;PnpDeviceConnected&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath contains &quot;\\Start Menu\\Programs\\Startup&quot;</code><br><code>InitiatingProcessFileName == &quot;acrord32.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath contains &quot;Programs\\Startup&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;.rar&quot;</code><br><code>InitiatingProcessFileName == &quot;winrar.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath matchesregex &quot;.*Confidential|Restricted.*&quot;</code><br><code>InitiatingProcessFileName in &quot;7z.exe,7zG.exe,AxCrypt.exe,BitLocker.exe,Diskcryptor.exe,GNUPrivacyGuard.exe,GPG4Win.exe,PeaZip.exe,VeraCrypt.exe,WinRAR.exe,WinZip.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FileOriginReferrerUrl contains &quot;URL GOES HERE&quot;</code><br><code>FileOriginUrl == &quot;IP ADDRESS GOES HERE&quot;</code><br><code>FileOriginUrl contains &quot;URL GOES HERE&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath contains &quot;temp&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>ActionType == &quot;FileCreated&quot;</code><br><code>FolderPath startswith &quot;C:\\temp\\Windows\\System32\\drivers\\&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>InitiatingProcessCommandLine !contains &quot;/S&quot;</code><br><code>InitiatingProcessCommandLine !contains &quot;/SD&quot;</code><br><code>InitiatingProcessCommandLine !contains &quot;/ST&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/RP&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/RU&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/TN&quot;</code><br><code>InitiatingProcessCommandLine contains &quot;/change&quot;</code><br><code>InitiatingProcessIntegrityLevel !in &quot;High,System&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>InitiatingProcessIntegrityLevel != &quot;High&quot;</code><br><code>InitiatingProcessIntegrityLevel != &quot;System&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>ActionType in &quot;SmartScreenUrlWarning,SmartScreenUserOverride&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FileOriginReferrerUrl has &quot;.php&quot;</code><br><code>FileOriginReferrerUrl has &quot;.top&quot;</code><br><code>InitiatingProcessFileName in &quot;7zFM.exe,browser_broker.exe,chrome.exe,explorer.exe,firefox.exe,msedge.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FileOriginReferrerUrl has &quot;/account&quot;</code><br><code>FileOriginReferrerUrl has &quot;/case&quot;</code><br><code>FileOriginUrl has &quot;/cancel.php&quot;</code><br><code>FileOriginUrl has &quot;/download.php&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath endswith &quot;.eml&quot;</code><br><code>InitiatingProcessCommandLine == &quot;ping.exe -t 127.0.0.1&quot;</code><br><code>InitiatingProcessFileName == &quot;ping.exe&quot;</code><br><code>InitiatingProcessParentFileName in &quot;mobsync.exe,msra.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>InitiatingProcessFileName == &quot;ping.exe&quot;</code> | - | 1 | - | - | <strong>1</strong> |
+| <code>FolderPath startswith &quot;/&quot;</code> | - | - | 1 | - | <strong>1</strong> |
+| <strong>Total</strong> | <strong>0</strong> | <strong>55</strong> | <strong>1</strong> | <strong>0</strong> | <strong>56</strong> |</p>
 <h3 id="actiontype">ActionType</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>FileCreated</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>20</strong></td>
+  <td style="text-align:left"><code>FileCreated</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">20</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>20</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>FileRenamed</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
+  <td style="text-align:left"><code>FileRenamed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>FileModified</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>FileModified</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UsbDriveMounted</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>UsbDriveMounted</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>BrowserLaunchedToOpenUrl</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>BrowserLaunchedToOpenUrl</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SmartScreenUserOverride</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>SmartScreenUserOverride</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AntivirusDetection</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>AntivirusDetection</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>OpenProcessApiCall</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>OpenProcessApiCall</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SmartScreenAppWarning</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>SmartScreenAppWarning</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>PnpDeviceConnected</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>PnpDeviceConnected</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SmartScreenUrlWarning</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>SmartScreenUrlWarning</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1655,22 +1116,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>EndpointNameHere</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>EndpointNameHere</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1678,62 +1139,62 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!startswith https://www.dropbox.com/</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!startswith https://www.dropbox.com/</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains URL GOES HERE</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains URL GOES HERE</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has .php</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has .php</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has .top</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has .top</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has /account</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has /account</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has /case</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has /case</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1741,54 +1202,54 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>startswith https://dl.dropboxusercontent.com/</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>startswith https://dl.dropboxusercontent.com/</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>IP ADDRESS GOES HERE</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>IP ADDRESS GOES HERE</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains URL GOES HERE</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains URL GOES HERE</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has /cancel.php</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has /cancel.php</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has /download.php</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has /download.php</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1796,190 +1257,190 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>has \\\\</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>has \\\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has C:\\Windows\\System32\\spool\\drivers\\color\\</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>has C:\\Windows\\System32\\spool\\drivers\\color\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>startswith C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>startswith C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\3\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>startswith C:\\WINDOWS\\SYSTEM32\\SPOOL\\drivers\\x64\\\4\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has Outlook</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>has Outlook</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith .ini</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith .ini</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith .js</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith .js</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith .json</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith .json</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith .log</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith .log</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith .tmp</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith .tmp</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith .vb</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith .vb</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith .xml</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith .xml</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any \\wwwroot\\</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has_any \\wwwroot\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has ds7002.lnk</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has ds7002.lnk</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>endswith spool\\svchost.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>endswith spool\\svchost.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains \\Start Menu\\Programs\\Startup</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains \\Start Menu\\Programs\\Startup</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains Programs\\Startup</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains Programs\\Startup</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains temp</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains temp</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith C:\\temp\\Windows\\System32\\drivers\\</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>startswith C:\\temp\\Windows\\System32\\drivers\\</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>endswith .eml</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>endswith .eml</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith /</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>startswith /</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1987,134 +1448,134 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!has .ps1</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>!has .ps1</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has .bat</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>has .bat</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has accepteula</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>has accepteula</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains MSExchange</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains MSExchange</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_all IEX</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has_all IEX</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any Unrestricted</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has_any Unrestricted</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains .rar</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains .rar</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!contains /S</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!contains /S</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!contains /SD</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!contains /SD</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!contains /ST</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!contains /ST</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains /RP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains /RP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains /RU</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains /RU</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains /TN</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains /TN</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains /change</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains /change</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ping.exe -t 127.0.0.1</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ping.exe -t 127.0.0.1</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2122,254 +1583,254 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>outlook.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>outlook.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!= certutil.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!= certutil.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!= cmd.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!= cmd.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>browser_broker.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>browser_broker.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>chrome.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>chrome.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>firefox.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>firefox.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>7z.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>7z.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>7zG.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>7zG.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AxCrypt.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>AxCrypt.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>BitLocker.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>BitLocker.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Diskcryptor.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>Diskcryptor.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>GNUPrivacyGuard.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>GNUPrivacyGuard.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>GPG4Win.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>GPG4Win.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>PeaZip.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>PeaZip.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>VeraCrypt.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>VeraCrypt.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>WinRAR.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>WinRAR.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>WinZip.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>WinZip.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ping.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>ping.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>excel.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>excel.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>powerpnt.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>powerpnt.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>winword.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>winword.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>w3wp.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>w3wp.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UMWorkerProcess.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>UMWorkerProcess.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>iexplore.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>iexplore.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>powershell.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>powershell.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>acrord32.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>acrord32.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>winrar.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>winrar.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>7zFM.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>7zFM.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>explorer.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>explorer.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>msedge.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>msedge.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2377,30 +1838,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!= High</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!= High</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!= System</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!= System</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2408,30 +1869,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>mobsync.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>mobsync.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>msra.exe</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>msra.exe</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2439,28 +1900,29 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>5</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>5</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

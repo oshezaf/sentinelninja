@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [NetskopeWebtx_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx/Data%20Connectors/NetskopeWebTx_CCF/NetskopeWebtx_connectorDefinition.json) |
 | **CCF Configuration** | [NetskopeWebtx_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetskopeWebTx/Data%20Connectors/NetskopeWebTx_CCF/NetskopeWebtx_PollingConfig.json) |
 | **CCF Capabilities** | `StorageAccountBlobContainer`, `ServicePrincipal` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#netskope-web-transaction-connector-via-blob-storage) |
 
 The Netskope Web Transaction connector ingests web transaction logs from Netskope Log Streaming into Microsoft Sentinel via Azure Blob Storage using the Codeless Connector Framework (CCF).
 

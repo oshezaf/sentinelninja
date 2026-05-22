@@ -4,57 +4,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Auth0 Logs via Codeless Connector Framework &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="auth0-logs">Auth0 Logs (via Codeless Connector Framework)</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Auth0.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Auth0.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>Auth0ConnectorCCPDefinition</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>Auth0ConnectorCCPDefinition</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Microsoft</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/auth0.html">Auth0</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/auth0.html">Auth0</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/DataConnectorDefinition.json">DataConnectorDefinition.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/DataConnectorDefinition.json">DataConnectorDefinition.json</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>CCF Configuration</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/PollingConfig.json">PollingConfig.json</a></td>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Auth0/Data%20Connectors/Auth0_CCP/PollingConfig.json">PollingConfig.json</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>CCF Capabilities</strong></td>
-<td style="text-align: left;"><code>OAuth2</code></td>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>OAuth2</code></td>
 </tr>
 </tbody>
 </table>
@@ -64,18 +65,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/auth0logs-cl.html"><code>Auth0Logs_CL</code></a></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/auth0logs-cl.html"><code>Auth0Logs_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -83,24 +84,31 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <h4 id="step-1---configuration-steps-for-the-auth0-management-api">STEP 1 - Configuration steps for the Auth0 Management API</h4>
-<p>Follow the instructions to obtain the credentials. 
- 1. In Auth0 Dashboard, go to [<strong>Applications &gt; Applications</strong>]
- 2. Select your Application. This should be a [<strong>Machine-to-Machine</strong>] Application configured with at least [<strong>read:logs</strong>] and [<strong>read:logs_users</strong>] permissions. 
- 3. Copy [<strong>Domain, ClientID, Client Secret</strong>]
-- <strong>Base API URL</strong>: https://example.auth0.com
-- <strong>Client ID</strong>: Client ID
-- <strong>Client Secret</strong>: (password field)
-- Click 'Connect' to establish connection</p>
+<p>Follow the instructions to obtain the credentials.</p>
+<ol>
+<li>In Auth0 Dashboard, go to [<strong>Applications &gt; Applications</strong>]</li>
+<li>Select your Application. This should be a [<strong>Machine-to-Machine</strong>] Application configured with at least [<strong>read:logs</strong>] and [<strong>read:logs_users</strong>] permissions.</li>
+<li>Copy [<strong>Domain, ClientID, Client Secret</strong>]</li>
+</ol>
+<ul>
+<li><strong>Base API URL</strong>: https://example.auth0.com</li>
+<li><strong>Client ID</strong>: Client ID</li>
+<li><strong>Client Secret</strong>: (password field)</li>
+<li>Click 'Connect' to establish connection</li>
+</ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

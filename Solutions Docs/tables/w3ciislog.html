@@ -4,51 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>W3CIISLog &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="w3ciislog">W3CIISLog</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for W3CIISLog table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">IT &amp; Management Tools, Virtual Machines</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">IT &amp; Management Tools, Virtual Machines</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/w3ciislog">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -66,231 +66,231 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AzureDeploymentID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent when data is pulled from Azure storage.</td>
+  <td style="text-align:left">AzureDeploymentID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent when data is pulled from Azure storage.</td>
 </tr>
 <tr>
-<td style="text-align: left;">cIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the client that accessed the web server.</td>
+  <td style="text-align:left">cIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the client that accessed the web server.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the computer that the event was collected from.</td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the computer that the event was collected from.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Confidence</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+  <td style="text-align:left">Confidence</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Number of bytes that the server received.</td>
+  <td style="text-align:left">csBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of bytes that the server received.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csCookie</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Content of the cookie sent or received if any.</td>
+  <td style="text-align:left">csCookie</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Content of the cookie sent or received if any.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csHost</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Host header name if any.</td>
+  <td style="text-align:left">csHost</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Host header name if any.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csMethod</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Method of the request such as GET or POST.</td>
+  <td style="text-align:left">csMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Method of the request such as GET or POST.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csReferer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Site that the user last visited. This site provided a link to the current site.</td>
+  <td style="text-align:left">csReferer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Site that the user last visited. This site provided a link to the current site.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csUriQuery</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The query if any that the client was trying to perform. A Universal Resource Identifier (URI) query is necessary only for dynamic pages.</td>
+  <td style="text-align:left">csUriQuery</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The query if any that the client was trying to perform. A Universal Resource Identifier (URI) query is necessary only for dynamic pages.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csUriStem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Target of the action such as a web page for example Default.htm.</td>
+  <td style="text-align:left">csUriStem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Target of the action such as a web page for example Default.htm.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csUserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Browser type of the client.</td>
+  <td style="text-align:left">csUserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Browser type of the client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csUserName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the authenticated user that accessed the server. Anonymous users are indicated by a hyphen.</td>
+  <td style="text-align:left">csUserName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the authenticated user that accessed the server. Anonymous users are indicated by a hyphen.</td>
 </tr>
 <tr>
-<td style="text-align: left;">csVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Protocol version that the client used.</td>
+  <td style="text-align:left">csVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Protocol version that the client used.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Description</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+  <td style="text-align:left">Description</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
 </tr>
 <tr>
-<td style="text-align: left;">FirstReportedDateTime</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+  <td style="text-align:left">FirstReportedDateTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
 </tr>
 <tr>
-<td style="text-align: left;">IndicatorThreatType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+  <td style="text-align:left">IndicatorThreatType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsActive</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+  <td style="text-align:left">IsActive</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastReportedDateTime</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+  <td style="text-align:left">LastReportedDateTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
 </tr>
 <tr>
-<td style="text-align: left;">MaliciousIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
+  <td style="text-align:left">MaliciousIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ManagementGroupName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the management group for Operations Manager agents. For other agents this is AOI-<workspace ID>.</td>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the management group for Operations Manager agents. For other agents this is AOI-<workspace ID>.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPCountry</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Country/region of the IP address of the client.</td>
+  <td style="text-align:left">RemoteIPCountry</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Country/region of the IP address of the client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPLatitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Latitude of the client IP address.</td>
+  <td style="text-align:left">RemoteIPLatitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Latitude of the client IP address.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPLongitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Longitude of the client IP address.</td>
+  <td style="text-align:left">RemoteIPLongitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Longitude of the client IP address.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Role</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Role instance of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.</td>
+  <td style="text-align:left">Role</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Role instance of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RoleInstance</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Role of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.</td>
+  <td style="text-align:left">RoleInstance</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Role of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent and data is pulled from Azure storage.</td>
 </tr>
 <tr>
-<td style="text-align: left;">scBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Number of bytes that the server sent.</td>
+  <td style="text-align:left">scBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of bytes that the server sent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">scStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">HTTP status code.</td>
+  <td style="text-align:left">scStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP status code.</td>
 </tr>
 <tr>
-<td style="text-align: left;">scSubStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Substatus error code.</td>
+  <td style="text-align:left">scSubStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Substatus error code.</td>
 </tr>
 <tr>
-<td style="text-align: left;">scWin32Status</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Windows status code.</td>
+  <td style="text-align:left">scWin32Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Windows status code.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Severity</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
 </tr>
 <tr>
-<td style="text-align: left;">sIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the server on which the log file entry was generated.</td>
+  <td style="text-align:left">sIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the server on which the log file entry was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">sPort</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Server port number that is configured for the service.</td>
+  <td style="text-align:left">sPort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Server port number that is configured for the service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">sSiteName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the IIS site.</td>
+  <td style="text-align:left">sSiteName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the IIS site.</td>
 </tr>
 <tr>
-<td style="text-align: left;">StorageAccount</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+  <td style="text-align:left">StorageAccount</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the record was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the record was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeTaken</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Length of time to process the request in milliseconds.</td>
+  <td style="text-align:left">TimeTaken</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Length of time to process the request in milliseconds.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TLPLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
+  <td style="text-align:left">TLPLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -311,18 +311,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/esi-exchangeadminauditlogevents.html">[Deprecated] Microsoft Exchange Logs and Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/esi-opt5exchangeiislogs.html">IIS Logs of Microsoft Exchange Servers</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -333,18 +333,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.html">User agent search for log4j exploitation attempt</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/apache-log4j-vulnerability-detection-user-agent-search-for-log4j-exploitation-attempt-29283b22-a1c0-4d16-b0a9-3460b655a46a-d67cde36.html">User agent search for log4j exploitation attempt</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -352,40 +352,40 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/network-threat-protection-essentials-new-useragent-observed-in-last-24-hours-b725d62c-eb77-42ff-96f6-bdc6745fc6e0-a94f1913.html">New UserAgent observed in last 24 hours</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-threat-protection-essentials-new-useragent-observed-in-last-24-hours-b725d62c-eb77-42ff-96f6-bdc6745fc6e0-a94f1913.html">New UserAgent observed in last 24 hours</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong> <code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code></p>
+<p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong> <code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
+  <th style="text-align:left">Analytic Rule</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-w3ciislog-5e45930c-09b1-4430-b2d1-cc75ada0dc0f-b8687c20.html">TI Map IP Entity to W3CIISLog</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-ti-map-ip-entity-to-w3ciislog-5e45930c-09b1-4430-b2d1-cc75ada0dc0f-b8687c20.html">TI Map IP Entity to W3CIISLog</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong> <code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code></p>
+<p><strong>In solution <a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a>:</strong> <code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
+  <th style="text-align:left">Analytic Rule</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-w3ciislog-888c4736-e604-48eb-b2c7-3462356d9510-ad1df7ff.html">TI Map IP Entity to W3CIISLog</a></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-w3ciislog-888c4736-e604-48eb-b2c7-3462356d9510-ad1df7ff.html">TI Map IP Entity to W3CIISLog</a></td>
 </tr>
 </tbody>
 </table>
@@ -393,18 +393,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.html">Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.html">Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.html">SUPERNOVA webshell</a></td>
-<td style="text-align: left;"><code>csMethod == "GET"</code><br><code>csUriQuery contains "args"</code><br><code>csUriQuery contains "clazz"</code><br><code>csUriQuery contains "codes"</code><br><code>csUriQuery contains "method"</code><br><code>csUriStem contains "logoimagehandler.ashx"</code></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.html">SUPERNOVA webshell</a></td>
+  <td style="text-align:left"><code>csMethod == &quot;GET&quot;</code><br><code>csUriQuery contains &quot;args&quot;</code><br><code>csUriQuery contains &quot;clazz&quot;</code><br><code>csUriQuery contains &quot;codes&quot;</code><br><code>csUriQuery contains &quot;method&quot;</code><br><code>csUriStem contains &quot;logoimagehandler.ashx&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -412,42 +412,42 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-anomalous-user-agent-connection-attempt-f845881e-2500-44dc-8ed7-b372af3e1e25-29a3ec02.html">Anomalous User Agent connection attempt</a></td>
-<td style="text-align: left;"><code>cIP != "::1"</code><br><code>cIP !startswith "192.168."</code><br><code>csUserAgent !in "-,MSRPC"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-anomalous-user-agent-connection-attempt-f845881e-2500-44dc-8ed7-b372af3e1e25-29a3ec02.html">Anomalous User Agent connection attempt</a></td>
+  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-exchange-ssrf-autodiscover-proxyshell-detection-968358d6-6af8-49bb-aaa4-187b3067fb95-9f834a08.html">Exchange SSRF Autodiscover ProxyShell - Detection</a></td>
-<td style="text-align: left;"><code>csUriQuery !has "Protocol"</code><br><code>csUriQuery contains ":"</code><br><code>csUriQuery contains "@"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-exchange-ssrf-autodiscover-proxyshell-detection-968358d6-6af8-49bb-aaa4-187b3067fb95-9f834a08.html">Exchange SSRF Autodiscover ProxyShell - Detection</a></td>
+  <td style="text-align:left"><code>csUriQuery !has &quot;Protocol&quot;</code><br><code>csUriQuery contains &quot;:&quot;</code><br><code>csUriQuery contains &quot;@&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-exchange-worker-process-making-remote-call-2c701f94-783c-4cd4-bc9b-3b3334976090-ea016158.html">Exchange Worker Process Making Remote Call</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-exchange-worker-process-making-remote-call-2c701f94-783c-4cd4-bc9b-3b3334976090-ea016158.html">Exchange Worker Process Making Remote Call</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-high-count-of-connections-by-client-ip-on-many-ports-44a555d8-ecee-4a25-95ce-055879b4b14b-ec2b57ee.html">High count of connections by client IP on many ports</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-high-count-of-connections-by-client-ip-on-many-ports-44a555d8-ecee-4a25-95ce-055879b4b14b-ec2b57ee.html">High count of connections by client IP on many ports</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-high-count-of-failed-attempts-from-same-client-ip-19e01883-15d8-4eb6-a7a5-3276cd668388-e4e52bb9.html">High count of failed attempts from same client IP</a></td>
-<td style="text-align: left;"><code>csUserName != "-"</code><br><code>scStatus in "401,403"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-high-count-of-failed-attempts-from-same-client-ip-19e01883-15d8-4eb6-a7a5-3276cd668388-e4e52bb9.html">High count of failed attempts from same client IP</a></td>
+  <td style="text-align:left"><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-high-count-of-failed-logons-by-a-user-884c4957-70ea-4f57-80b9-1bca3890315b-2a0ac893.html">High count of failed logons by a user</a></td>
-<td style="text-align: left;"><code>csUserName != "-"</code><br><code>scStatus in "401,403"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-high-count-of-failed-logons-by-a-user-884c4957-70ea-4f57-80b9-1bca3890315b-2a0ac893.html">High count of failed logons by a user</a></td>
+  <td style="text-align:left"><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.html">Malformed user agent</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.html">Malformed user agent</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-silk-typhoon-suspicious-exchange-request-23005e87-2d3a-482b-b03d-edbebd1ae151-e396d92c.html">Silk Typhoon Suspicious Exchange Request</a></td>
-<td style="text-align: left;"><code>csUriQuery startswith "t="</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-silk-typhoon-suspicious-exchange-request-23005e87-2d3a-482b-b03d-edbebd1ae151-e396d92c.html">Silk Typhoon Suspicious Exchange Request</a></td>
+  <td style="text-align:left"><code>csUriQuery startswith &quot;t=&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -456,14 +456,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.html">Exploit and Pentest Framework User Agent</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/network-threat-protection-essentials-exploit-and-pentest-framework-user-agent-df75ac6c-7b0b-40d2-82e4-191c012f1a07-77056d12.html">Exploit and Pentest Framework User Agent</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -471,18 +471,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-web-shell-activity-e0c947c3-fe83-46ff-bbda-a43224a785fd-524bd9eb.html">Web Shell Activity</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-web-shell-activity-e0c947c3-fe83-46ff-bbda-a43224a785fd-524bd9eb.html">Web Shell Activity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/web-shells-threat-protection-webshell-detection-cc087e7c-4db0-4bf9-9e48-287a9c9c3fbc-b4d60786.html">Webshell Detection</a></td>
-<td style="text-align: left;"><code>csMethod == "GET"</code><br><code>csReferer has "whoami"</code><br><code>csUriQuery has "whoami"</code><br><code>csUriStem has "whoami"</code></td>
+  <td style="text-align:left"><a href="../content/web-shells-threat-protection-webshell-detection-cc087e7c-4db0-4bf9-9e48-287a9c9c3fbc-b4d60786.html">Webshell Detection</a></td>
+  <td style="text-align:left"><code>csMethod == &quot;GET&quot;</code><br><code>csReferer has &quot;whoami&quot;</code><br><code>csUriQuery has &quot;whoami&quot;</code><br><code>csUriStem has &quot;whoami&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -490,46 +490,46 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-potential-iis-brute-force-934011da-1fe6-4507-aadb-d3914c877bcd-a771ce72.html">Potential IIS brute force</a></td>
-<td style="text-align: left;"><code>cIP != "::1"</code><br><code>cIP !startswith "192.168."</code><br><code>csUserName != "-"</code><br><code>scStatus in "401,403"</code><br><code>scStatus startswith "20"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-potential-iis-brute-force-934011da-1fe6-4507-aadb-d3914c877bcd-a771ce72.html">Potential IIS brute force</a></td>
+  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code><br><code>scStatus startswith &quot;20&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-potential-iis-code-injection-attempt-96977c95-74b4-4cc2-b1a7-6a3ab17bd3f9-83c60a16.html">Potential IIS code injection attempt</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-potential-iis-code-injection-attempt-96977c95-74b4-4cc2-b1a7-6a3ab17bd3f9-83c60a16.html">Potential IIS code injection attempt</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-rare-user-agent-strings-3de523b5-9608-43d5-801e-732c741dd82e-fcfe2bac.html">Rare User Agent strings</a></td>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>csUserAgent !in "-,MSRPC"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-rare-user-agent-strings-3de523b5-9608-43d5-801e-732c741dd82e-fcfe2bac.html">Rare User Agent strings</a></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-same-ip-address-with-multiple-csuseragent-4edbb420-2df7-4089-9906-c335f065803e-844fb539.html">Same IP address with multiple csUserAgent</a></td>
-<td style="text-align: left;"><code>cIP != "::1"</code><br><code>cIP !startswith "127."</code><br><code>cIP !startswith "192.168."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>scStatus !startswith "20"</code><br><code>scStatus !startswith "30"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-same-ip-address-with-multiple-csuseragent-4edbb420-2df7-4089-9906-c335f065803e-844fb539.html">Same IP address with multiple csUserAgent</a></td>
+  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>scStatus !startswith &quot;20&quot;</code><br><code>scStatus !startswith &quot;30&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-suspect-mailbox-export-on-iis-owa-a523786c-8382-4029-80e9-f1a7ecd067c1-c99d7e83.html">Suspect Mailbox Export on IIS/OWA</a></td>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>csUriStem contains "/owa/"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-suspect-mailbox-export-on-iis-owa-a523786c-8382-4029-80e9-f1a7ecd067c1-c99d7e83.html">Suspect Mailbox Export on IIS/OWA</a></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUriStem contains &quot;/owa/&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.html">Tracking Privileged Account Rare Activity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-uri-requests-from-single-client-a787a819-40df-4c9f-a5ae-850d5a2a0cf6-02dc8d65.html">URI requests from single client</a></td>
-<td style="text-align: left;"><code>csUserAgent startswith "Mozilla"</code></td>
+  <td style="text-align:left"><a href="../content/standalone-content-uri-requests-from-single-client-a787a819-40df-4c9f-a5ae-850d5a2a0cf6-02dc8d65.html">URI requests from single client</a></td>
+  <td style="text-align:left"><code>csUserAgent startswith &quot;Mozilla&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.html">Web shell command alert enrichment</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.html">Web shell command alert enrichment</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.html">Web shell file alert enrichment</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.html">Web shell file alert enrichment</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -537,26 +537,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-exchange-server-proxylogon-uris-bcbebbae-d59a-4692-b138-93434bccf3db-59863ca0.html">Exchange Server ProxyLogon URIs</a></td>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-exchange-server-proxylogon-uris-bcbebbae-d59a-4692-b138-93434bccf3db-59863ca0.html">Exchange Server ProxyLogon URIs</a></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-exchange-server-suspicious-uris-visited-3122423d-6c33-43c8-bc10-6d27b4350176-f62a3505.html">Exchange Server Suspicious URIs Visited</a></td>
-<td style="text-align: left;"><code>csUriStem == "/ews/exchange.asmx"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-exchange-server-suspicious-uris-visited-3122423d-6c33-43c8-bc10-6d27b4350176-f62a3505.html">Exchange Server Suspicious URIs Visited</a></td>
+  <td style="text-align:left"><code>csUriStem == &quot;/ews/exchange.asmx&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-6ad26286.html">Exchange Servers and Associated Security Alerts</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-6ad26286.html">Exchange Servers and Associated Security Alerts</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-suspected-proxytoken-exploitation-141a3be6-be08-4519-9698-2fc908f6761c-6b9da17e.html">Suspected ProxyToken Exploitation</a></td>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>csCookie has "SecurityToken"</code><br><code>csMethod == "POST"</code><br><code>csUriQuery has "msExchEcpCanary"</code><br><code>csUriStem has "/ecp"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-suspected-proxytoken-exploitation-141a3be6-be08-4519-9698-2fc908f6761c-6b9da17e.html">Suspected ProxyToken Exploitation</a></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csCookie has &quot;SecurityToken&quot;</code><br><code>csMethod == &quot;POST&quot;</code><br><code>csUriQuery has &quot;msExchEcpCanary&quot;</code><br><code>csUriStem has &quot;/ecp&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -565,14 +565,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.html">Log4jPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/apache-log4j-vulnerability-detection-log4jpostcompromisehunting-8811d292.html">Log4jPostCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -580,14 +580,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.html">Microsoft Exchange Admin Activity</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-exchange-security-exchange-on-premises-microsoft-exchange-admin-activity-dd1fad82.html">Microsoft Exchange Admin Activity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -595,14 +595,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -610,26 +610,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
-<td style="text-align: left;"><code>cIP !startswith "10."</code><br><code>cIP !startswith "127."</code><br><code>cIP !startswith "172."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>csUriQuery startswith "t="</code><br><code>csUriStem == "/ews/exchange.asmx"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;10.&quot;</code><br><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;172.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUriQuery startswith &quot;t=&quot;</code><br><code>csUriStem == &quot;/ews/exchange.asmx&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-securitystatus-c79b09ad.html">SecurityStatus</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-securitystatus-c79b09ad.html">SecurityStatus</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/github-only-usermap-db59dcfa.html">UserMap</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-usermap-db59dcfa.html">UserMap</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -638,18 +638,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Schema</th>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimwebsessioniis.html">ASimWebSessionIIS</a></td>
-<td style="text-align: left;">WebSession</td>
-<td style="text-align: left;">Internet Information Services (IIS)</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../asim/asimwebsessioniis.html">ASimWebSessionIIS</a></td>
+  <td style="text-align:left">WebSession</td>
+  <td style="text-align:left">Internet Information Services (IIS)</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -667,134 +667,134 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>csUserName != "-"</code><br><code>scStatus in "401,403"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>csMethod == "GET"</code><br><code>csUriQuery contains "args"</code><br><code>csUriQuery contains "clazz"</code><br><code>csUriQuery contains "codes"</code><br><code>csUriQuery contains "method"</code><br><code>csUriStem contains "logoimagehandler.ashx"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>csMethod == &quot;GET&quot;</code><br><code>csUriQuery contains &quot;args&quot;</code><br><code>csUriQuery contains &quot;clazz&quot;</code><br><code>csUriQuery contains &quot;codes&quot;</code><br><code>csUriQuery contains &quot;method&quot;</code><br><code>csUriStem contains &quot;logoimagehandler.ashx&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>cIP != "::1"</code><br><code>cIP !startswith "192.168."</code><br><code>csUserAgent !in "-,MSRPC"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>csUriQuery !has "Protocol"</code><br><code>csUriQuery contains ":"</code><br><code>csUriQuery contains "@"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>csUriQuery !has &quot;Protocol&quot;</code><br><code>csUriQuery contains &quot;:&quot;</code><br><code>csUriQuery contains &quot;@&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>csUriQuery startswith "t="</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>csUriQuery startswith &quot;t=&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>csMethod == "GET"</code><br><code>csReferer has "whoami"</code><br><code>csUriQuery has "whoami"</code><br><code>csUriStem has "whoami"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>csMethod == &quot;GET&quot;</code><br><code>csReferer has &quot;whoami&quot;</code><br><code>csUriQuery has &quot;whoami&quot;</code><br><code>csUriStem has &quot;whoami&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>cIP != "::1"</code><br><code>cIP !startswith "127."</code><br><code>cIP !startswith "192.168."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>scStatus !startswith "20"</code><br><code>scStatus !startswith "30"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>scStatus !startswith &quot;20&quot;</code><br><code>scStatus !startswith &quot;30&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>csUriStem == "/ews/exchange.asmx"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>csUriStem == &quot;/ews/exchange.asmx&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>cIP != "::1"</code><br><code>cIP !startswith "192.168."</code><br><code>csUserName != "-"</code><br><code>scStatus in "401,403"</code><br><code>scStatus startswith "20"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>cIP != &quot;::1&quot;</code><br><code>cIP !startswith &quot;192.168.&quot;</code><br><code>csUserName != &quot;-&quot;</code><br><code>scStatus in &quot;401,403&quot;</code><br><code>scStatus startswith &quot;20&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>csUserAgent startswith "Mozilla"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>csUserAgent startswith &quot;Mozilla&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>csUserAgent !in "-,MSRPC"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUserAgent !in &quot;-,MSRPC&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>csUriStem contains "/owa/"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csUriStem contains &quot;/owa/&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>cIP !startswith "127."</code><br><code>cIP !startswith "::"</code><br><code>cIP !startswith "fe80"</code><br><code>csCookie has "SecurityToken"</code><br><code>csMethod == "POST"</code><br><code>csUriQuery has "msExchEcpCanary"</code><br><code>csUriStem has "/ecp"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>cIP !startswith &quot;127.&quot;</code><br><code>cIP !startswith &quot;::&quot;</code><br><code>cIP !startswith &quot;fe80&quot;</code><br><code>csCookie has &quot;SecurityToken&quot;</code><br><code>csMethod == &quot;POST&quot;</code><br><code>csUriQuery has &quot;msExchEcpCanary&quot;</code><br><code>csUriStem has &quot;/ecp&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>17</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>17</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>17</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>17</strong></td>
 </tr>
 </tbody>
 </table>
@@ -802,54 +802,54 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!startswith 127.</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>7</strong></td>
+  <td style="text-align:left"><code>!startswith 127.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!startswith ::</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>7</strong></td>
+  <td style="text-align:left"><code>!startswith ::</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!startswith fe80</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>7</strong></td>
+  <td style="text-align:left"><code>!startswith fe80</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!= ::1</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>!= ::1</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!startswith 192.168.</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>!startswith 192.168.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
@@ -857,22 +857,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>has SecurityToken</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has SecurityToken</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -880,30 +880,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>GET</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>GET</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>POST</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>POST</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -911,22 +911,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>has whoami</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has whoami</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -934,94 +934,94 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>contains args</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains args</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains clazz</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains clazz</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains codes</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains codes</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains method</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains method</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!has Protocol</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!has Protocol</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains :</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains :</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains @</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains @</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith t=</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>startswith t=</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has whoami</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has whoami</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has msExchEcpCanary</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has msExchEcpCanary</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1029,54 +1029,54 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>contains logoimagehandler.ashx</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains logoimagehandler.ashx</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has whoami</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has whoami</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>/ews/exchange.asmx</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>/ews/exchange.asmx</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains /owa/</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains /owa/</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has /ecp</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has /ecp</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1084,38 +1084,38 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!= -</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!= -</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!= MSRPC</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!= MSRPC</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith Mozilla</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>startswith Mozilla</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1123,22 +1123,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!= -</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>!= -</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1146,60 +1146,61 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>401</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>401</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>403</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>403</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!startswith 20</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!startswith 20</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!startswith 30</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!startswith 30</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>startswith 20</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>startswith 20</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

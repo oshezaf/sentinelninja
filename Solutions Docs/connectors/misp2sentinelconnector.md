@@ -16,6 +16,7 @@
 | **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [MISP2SentinelConnector_UploadIndicatorsAPI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel/Data%20Connectors/MISP2SentinelConnector_UploadIndicatorsAPI.json) |
 | **Ingestion API** | [STIX 2.1 Upload Indicators API](../methods/stix-2.1-upload-indicators-api.md) — *Connector definition filename suffix '_UploadIndicatorsAPI' indicates STIX 2.1 Upload Indicators API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#misp2sentinel) |
 
 This solution installs the MISP2Sentinel connector that allows you to automatically push threat indicators from MISP to Microsoft Sentinel via the Upload Indicators REST API. After installing the solution, configure and enable this data connector by following guidance in Manage solution view.
 

@@ -4,41 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Get Threat PCAP - Palo Alto PAN-OS XML API &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="get-threat-pcap---palo-alto-pan-os-xml-api">Get Threat PCAP - Palo Alto PAN-OS XML API</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#content">Back to Content Index</a></p>
 <hr />
 <p>This playbook allows us to get a threat PCAP for a given PCAP ID.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/paloalto-pan-os.html">PaloAlto-PAN-OS</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/paloalto-pan-os.html">PaloAlto-PAN-OS</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,73 +47,135 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-paloaltoconnector.html"><code>paloaltoconnector</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-paloaltoconnector.html"><code>paloaltoconnector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-pan-osxmlapicustomconnector.html"><code>PAN-OSXmlApiCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-pan-osxmlapicustomconnector.html"><code>PAN-OSXmlApiCustomConnector</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azureblob`](../logic-apps/managed-azureblob.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Create_blob_(V2) | post | `/v2/datasets/@{encodeURIComponent(encodeURIComponent(parameters('Storage Name')))}/files` | — |
-
-#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Run_query_and_list_results | post | `/queryData` | — |
-
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
-
-#### [`paloaltoconnector`](../logic-apps/managed-paloaltoconnector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Query_Palo_Alto_XML_API | get | `/api/` | — |
-
+<h4 id="azureblob"><a href="../logic-apps/managed-azureblob.html"><code>azureblob</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Create_blob_(V2)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/datasets/@{encodeURIComponent(encodeURIComponent(parameters('Storage Name')))}/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Run_query_and_list_results</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_3</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="paloaltoconnector"><a href="../logic-apps/managed-paloaltoconnector.html"><code>paloaltoconnector</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Query_Palo_Alto_XML_API</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -121,34 +183,30 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAlto-PAN-OS/Playbooks/PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md">PaloAltoPlaybooks/PaloAlto-PAN-OS-GetThreatPCAP/readme.md</a></em></p>
 </blockquote>
 <h1 id="paloalto-pan-os-getthreatpcap">PaloAlto-PAN-OS-GetThreatPCAP</h1>
-<p>## Summary</p>
-<p>This playbook allows us to get a threat PCAP for a given PCAP ID. </p>
+<h2 id="summary">Summary</h2>
+<p>This playbook allows us to get a threat PCAP for a given PCAP ID.</p>
 <p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions:</p>
 <ol>
-<li>
-<p>Gets the various parameters from the alert</p>
+<li><p>Gets the various parameters from the alert</p>
 </li>
-<li>
-<p>Gets the PCAP from the device.</p>
+<li><p>Gets the PCAP from the device.</p>
 </li>
-<li>
-<p>Puts the PCAP in Blob Storage</p>
+<li><p>Puts the PCAP in Blob Storage</p>
 </li>
-<li>
-<p>Creates a Sentinel Incident and updates it with a link to the blob.</p>
+<li><p>Creates a Sentinel Incident and updates it with a link to the blob.</p>
 </li>
 </ol>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>PaloAlto connector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.</li>
 <li>Generate an API key.<a href="https://docs.paloaltonetworks.com/pan-os/10-1/pan-os-panorama-api/get-started-with-the-pan-os-xml-api/get-your-api-key">Refer this link on how to generate the API Key</a></li>
-<li>This playbook only works for Palo Alto incidents with a threat PCAP where the PCAP ID is not null or zero. </li>
+<li>This playbook only works for Palo Alto incidents with a threat PCAP where the PCAP ID is not null or zero.</li>
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAlto-PAN-OS%2FPlaybooks%2FPaloAltoPlaybooks%2FPaloAlto-PAN-OS-GetThreatPCAP%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>   <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAlto-PAN-OS%2FPlaybooks%2FPaloAltoPlaybooks%2FPaloAlto-PAN-OS-GetThreatPCAP%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAlto-PAN-OS%2FPlaybooks%2FPaloAltoPlaybooks%2FPaloAlto-PAN-OS-GetThreatPCAP%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>   <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAlto-PAN-OS%2FPlaybooks%2FPaloAltoPlaybooks%2FPaloAlto-PAN-OS-GetThreatPCAP%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <ol start="2">
 <li>Fill in the required parameters:<ul>
 <li>Playbook Name: The playbook name here (e.g. PaloAlto-PAN-OS-GetThreatPCAP)</li>
@@ -162,17 +220,19 @@
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection.
-1.  Click the Microsoft Sentinel connection resource
-2.  Click edit API connection
-3.  Click Authorize
-4.  Sign in
-5.  Click Save
-6.  Repeat steps for other connections such as Blob Store connection and PAN-OS API connection (For authorizing the PAN-OS API connection, API Key needs to be provided)</p>
+<p>Once deployment is complete, you will need to authorize each connection.</p>
+<ol>
+<li>Click the Microsoft Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for other connections such as Blob Store connection and PAN-OS API connection (For authorizing the PAN-OS API connection, API Key needs to be provided)</li>
+</ol>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
-<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with results having column "TimeGenerated", "Computer", "pcap_id", "sessionid", "event_time".</li>
-<li>Entity mapping not needed beacuse playbook will internally hit the query again and fetches the required column from result. </li>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with results having column &quot;TimeGenerated&quot;, &quot;Computer&quot;, &quot;pcap_id&quot;, &quot;sessionid&quot;, &quot;event_time&quot;.</li>
+<li>Entity mapping not needed beacuse playbook will internally hit the query again and fetches the required column from result.</li>
 <li>Configure the automation rules to trigger this playbook</li>
 </ol>
 <h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
@@ -202,14 +262,15 @@
 <h6 id="query-xml-api">Query XML API</h6>
 <p>Sets the PCAP ID, time generated, Session ID and the device name, and queries the device's XML API to retrieve a threat PCAP</p>
 <h6 id="create-blob">Create Blob (V2)</h6>
-<p>Creates a blob in aV2 blob storage account, denoted by Storage Account Name, in the folder denoted by the Folder Path with a name of the type "paloalto1235678920220101102000.pcap" where the name is a concatenation of the  "paloalto"+pcapid+timegenerated+".pcap"</p>
+<p>Creates a blob in aV2 blob storage account, denoted by Storage Account Name, in the folder denoted by the Folder Path with a name of the type &quot;paloalto1235678920220101102000.pcap&quot; where the name is a concatenation of the  &quot;paloalto&quot;+pcapid+timegenerated+&quot;.pcap&quot;</p>
 <h6 id="alert---get-incident">Alert - Get Incident</h6>
 <p>Creates Incident for the alert</p>
 <h6 id="add-comment-to-incident">Add Comment to Incident (V3)</h6>
 <p>Adds a comment containing a link to the pcap in the blob storage to the incident</p>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/paloalto-pan-os.html">Back to PaloAlto-PAN-OS</a></p>
+
 </div>
 
 </body>

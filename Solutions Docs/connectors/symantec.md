@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [SymantecICDX.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Symantec%20Integrated%20Cyber%20Defense/Data%20Connectors/SymantecICDX.JSON) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#symantec-integrated-cyber-defense-exchange) |
 
 Symantec ICDx connector allows you to easily connect your Symantec security solutions logs with Microsoft Sentinel, to view dashboards, create custom alerts, and improve investigation. This gives you more insight into your organization’s network and improves your security operation capabilities.
 

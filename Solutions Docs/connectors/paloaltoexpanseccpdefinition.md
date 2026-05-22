@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [CortexXpanse_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF/Data%20Connectors/CortexXpanse_ccp/CortexXpanse_ConnectorDefinition.json) |
 | **CCF Configuration** | [CortexXpanse_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Palo%20Alto%20Cortex%20Xpanse%20CCF/Data%20Connectors/CortexXpanse_ccp/CortexXpanse_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#palo-alto-cortex-xpanse-via-codeless-connector-framework) |
 
 The Palo Alto Cortex Xpanse data connector ingests alerts data into Microsoft Sentinel.
 

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Windows Server DNS](../solutions/windows-server-dns.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [template_DNS.JSON](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Server%20DNS/Data%20Connectors/template_DNS.JSON) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#dns) |
 
 The DNS log connector allows you to easily connect your DNS analytic and audit logs with Microsoft Sentinel, and other related data, to improve investigation.
 

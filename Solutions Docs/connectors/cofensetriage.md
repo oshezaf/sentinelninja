@@ -15,7 +15,7 @@
 | **Connector ID** | `CofenseTriage` |
 | **Publisher** | Cofense |
 | **Used in Solutions** | [CofenseTriage](../solutions/cofensetriage.md) |
-| **Collection Method** | [Azure Function (TI Upload API)\|Azure Function](../methods/azure-function-ti-upload-api-azure-function.md) |
+| **Collection Method** | [Azure Function (TI Upload API)](../methods/azure-function-ti-upload-api.md) |
 | **Connector Definition Files** | [CofenseTriage_API_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CofenseTriage/Data%20Connectors/CofenseTriageDataConnector/CofenseTriage_API_FunctionApp.json) |
 | **Ingestion API** | [Sentinel REST createIndicator API](../methods/sentinel-rest-createindicator-api.md) — *Connector code references Sentinel REST createIndicator API endpoint (matched '/main/createindicator')* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

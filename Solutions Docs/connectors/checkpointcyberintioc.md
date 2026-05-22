@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [CyberintArgosIOCLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC/Data%20Connectors/CyberintArgosIOCLogs_ccp/CyberintArgosIOCLogs_connectorDefinition.json) |
 | **CCF Configuration** | [CyberintArgosIOCLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20IOC/Data%20Connectors/CyberintArgosIOCLogs_ccp/CyberintArgosIOCLogs_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#check-point-cyberint-ioc-connector) |
 
 Cyberint, a Check Point company, provides a Microsoft Sentinel integration to ingest Indicators of Compromise (IOCs) from the Infinity External Risk Management solution into Microsoft Sentinel. This connector automatically pulls the daily IOC feed — including malicious IPs, domains, URLs, and file hashes — enriched with threat context such as severity, confidence, and detected activity.
 

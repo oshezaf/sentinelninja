@@ -4,38 +4,38 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ABNORMALSECURITYATOCASECL &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="abnormal_security_ato_case_cl">ABNORMAL_SECURITY_ATO_CASE_CL</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Custom Log V1</strong></td>
-<td style="text-align: left;">Yes 🔶 — uses type-suffixed column names</td>
+  <td style="text-align:left"><strong>Custom Log V1</strong></td>
+  <td style="text-align:left">Yes 🔶 — uses type-suffixed column names</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 </tbody>
 </table>
@@ -50,91 +50,91 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">abx_body</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Account takeover case event payload</td>
+  <td style="text-align:left">abx_body</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Account takeover case event payload</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_body_ato_case_id_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique ATO case identifier</td>
+  <td style="text-align:left">abx_body_abx_body_ato_case_id_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique ATO case identifier</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_body_compromised_account_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Email address of the compromised account</td>
+  <td style="text-align:left">abx_body_abx_body_compromised_account_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Email address of the compromised account</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_body_first_detected_t</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp when ATO was first detected</td>
+  <td style="text-align:left">abx_body_abx_body_first_detected_t</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when ATO was first detected</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_body_indicators_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Attack indicators (JSON array)</td>
+  <td style="text-align:left">abx_body_abx_body_indicators_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Attack indicators (JSON array)</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_body_severity_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Severity of the ATO case</td>
+  <td style="text-align:left">abx_body_abx_body_severity_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Severity of the ATO case</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_body_status_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Current status of the ATO case</td>
+  <td style="text-align:left">abx_body_abx_body_status_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current status of the ATO case</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_metadata_event_type_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">From abx_body.abx_metadata</td>
+  <td style="text-align:left">abx_body_abx_metadata_event_type_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">From abx_body.abx_metadata</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_metadata_timestamp_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">From abx_body.abx_metadata</td>
+  <td style="text-align:left">abx_body_abx_metadata_timestamp_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">From abx_body.abx_metadata</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_body_abx_metadata_trace_id_g</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">From abx_body.abx_metadata</td>
+  <td style="text-align:left">abx_body_abx_metadata_trace_id_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">From abx_body.abx_metadata</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_metadata</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Full event metadata object containing event_type, timestamp, and trace_id</td>
+  <td style="text-align:left">abx_metadata</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Full event metadata object containing event_type, timestamp, and trace_id</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_metadata_event_type_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Event type identifier from top-level abx_metadata</td>
+  <td style="text-align:left">abx_metadata_event_type_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Event type identifier from top-level abx_metadata</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_metadata_timestamp_s</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Event timestamp from top-level abx_metadata</td>
+  <td style="text-align:left">abx_metadata_timestamp_s</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Event timestamp from top-level abx_metadata</td>
 </tr>
 <tr>
-<td style="text-align: left;">abx_metadata_trace_id_g</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Trace ID (GUID) from top-level abx_metadata</td>
+  <td style="text-align:left">abx_metadata_trace_id_g</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Trace ID (GUID) from top-level abx_metadata</td>
 </tr>
 <tr>
-<td style="text-align: left;">Time</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Event timestamp in RFC3339 format</td>
+  <td style="text-align:left">Time</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Event timestamp in RFC3339 format</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp when the event was ingested into Microsoft Sentinel</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the event was ingested into Microsoft Sentinel</td>
 </tr>
 </tbody>
 </table>
@@ -148,21 +148,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/abnormalsecuritypush.html">Abnormal Security (Push)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/abnormalsecuritypush.html">Abnormal Security (Push)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

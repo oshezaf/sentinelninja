@@ -4,51 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>InsightsMetrics &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="insightsmetrics">InsightsMetrics</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for InsightsMetrics table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Low value</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Low value</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/insightsmetrics">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/insightsmetrics">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,81 +64,81 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique ID of the agent that sourced the metric instance</td>
+  <td style="text-align:left">AgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique ID of the agent that sourced the metric instance</td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Computer name/Node name that sourced the metric instance</td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Computer name/Node name that sourced the metric instance</td>
 </tr>
 <tr>
-<td style="text-align: left;">Namespace</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name space/Category of the metric. Ex;- 'container.azm.ms/disk'</td>
+  <td style="text-align:left">Namespace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name space/Category of the metric. Ex;- 'container.azm.ms/disk'</td>
 </tr>
 <tr>
-<td style="text-align: left;">Origin</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Source of the metric. Ex;- 'container.azm.ms/telegraf'</td>
+  <td style="text-align:left">Origin</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source of the metric. Ex;- 'container.azm.ms/telegraf'</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">Tags</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Dimensions of the metric in json</td>
+  <td style="text-align:left">Tags</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Dimensions of the metric in json</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the record was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the record was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">Val</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Value of the metric</td>
+  <td style="text-align:left">Val</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Value of the metric</td>
 </tr>
 <tr>
-<td style="text-align: left;">Value</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Value</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -150,16 +150,16 @@
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
 <h3 id="workbooks">Workbooks (1)</h3>
-<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>Namespace in "Memory,Network,Processor"</code></p>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>Namespace in &quot;Memory,Network,Processor&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
 </tr>
 </tbody>
 </table>
@@ -182,30 +182,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Namespace in "Memory,Network,Processor"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Namespace in &quot;Memory,Network,Processor&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -213,44 +213,45 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Memory</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Memory</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Network</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Network</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Processor</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Processor</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Forescout (Legacy)](../solutions/forescout-legacy.md) |
 | **Collection Method** | [AMA](../methods/ama.md) |
 | **Connector Definition Files** | [Forescout_syslog.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forescout%20%28Legacy%29/Data%20Connectors/Forescout_syslog.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#forescout) |
 
 The [Forescout](https://www.forescout.com/) data connector provides the capability to ingest [Forescout events](https://docs.forescout.com/bundle/syslog-3-6-1-h/page/syslog-3-6-1-h.How-to-Work-with-the-Syslog-Plugin.html) into Microsoft Sentinel. Refer to [Forescout documentation](https://docs.forescout.com/bundle/syslog-msg-3-6-tn/page/syslog-msg-3-6-tn.About-Syslog-Messages-in-Forescout.html) for more information.
 

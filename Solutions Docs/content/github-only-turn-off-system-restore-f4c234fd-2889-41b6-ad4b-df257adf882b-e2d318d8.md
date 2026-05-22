@@ -17,14 +17,6 @@ This query was originally published in the threat analytics report, Ransomware c
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Impact/turn-off-system-restore.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `InitiatingProcessFileName == "rundll32.exe"`<br>`ProcessCommandLine has "Change"`<br>`ProcessCommandLine has "SystemRestore"`<br>`ProcessCommandLine has "disable"` | ✓ | ✗ | ? |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

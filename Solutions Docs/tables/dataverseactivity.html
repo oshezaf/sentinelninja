@@ -4,51 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DataverseActivity &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="dataverseactivity">DataverseActivity</h1>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for DataverseActivity table in Azure Monitor Logs.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Audit, Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Audit, Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dataverseactivity">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dataverseactivity">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -65,171 +65,171 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The IP address of the device that was used when the activity was logged.</td>
+  <td style="text-align:left">ClientIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the device that was used when the activity was logged.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique value used to associate related rows.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique value used to associate related rows.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CrmOrganizationUniqueName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique name of the organization.</td>
+  <td style="text-align:left">CrmOrganizationUniqueName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique name of the organization.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of the entity.</td>
+  <td style="text-align:left">EntityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the entity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the entity in the organization.</td>
+  <td style="text-align:left">EntityName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the entity in the organization.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Fields</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">JSON of Key Value pair reflecting the values that were created or updated.</td>
+  <td style="text-align:left">Fields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">JSON of Key Value pair reflecting the values that were created or updated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InstanceUrl</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URL to the instance.</td>
+  <td style="text-align:left">InstanceUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL to the instance.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ItemType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of object that was accessed or modified. See the ItemType table for details on the types of objects.</td>
+  <td style="text-align:left">ItemType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of object that was accessed or modified. See the ItemType table for details on the types of objects.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ItemUrl</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URL to the record emitting the log.</td>
+  <td style="text-align:left">ItemUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL to the record emitting the log.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Message</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the message called in the Dynamics 365 SDK.</td>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the message called in the Dynamics 365 SDK.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Operation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the operation that the user is performing.</td>
+  <td style="text-align:left">Operation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the operation that the user is performing.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OrganizationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The GUID for your organization's Office 365 tenant. This value will always be the same for your organization.</td>
+  <td style="text-align:left">OrganizationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GUID for your organization's Office 365 tenant. This value will always be the same for your organization.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ObjectId for Dataverse operation or business activity.</td>
+  <td style="text-align:left">OriginalObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ObjectId for Dataverse operation or business activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Query</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The query filter parameters used while executing the FetchXML.</td>
+  <td style="text-align:left">Query</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The query filter parameters used while executing the FetchXML.</td>
 </tr>
 <tr>
-<td style="text-align: left;">QueryResults</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call.</td>
+  <td style="text-align:left">QueryResults</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates whether the action (specified in the Operation property) was successful or not.</td>
+  <td style="text-align:left">ResultStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether the action (specified in the Operation property) was successful or not.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceContextId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique id associated with service context.</td>
+  <td style="text-align:left">ServiceContextId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique id associated with service context.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceContextIdType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application defined token to define context use.</td>
+  <td style="text-align:left">ServiceContextIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application defined token to define context use.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the Service generating the log.</td>
+  <td style="text-align:left">ServiceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the Service generating the log.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceRecordId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of an audit record.</td>
+  <td style="text-align:left">SourceRecordId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of an audit record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SystemUserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of the user GUID in the organization.</td>
+  <td style="text-align:left">SystemUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the user GUID in the organization.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time in (UTC) when the user performed the activity.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time in (UTC) when the user performed the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user agent.</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Dataverse user ID of the user who performed the action (specified in the Operation property) that resulted in the record being logged.</td>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Dataverse user ID of the user who performed the action (specified in the Operation property) that resulted in the record being logged.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserKey</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">An alternative ID for the user identified in the UserId property.</td>
+  <td style="text-align:left">UserKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An alternative ID for the user identified in the UserId property.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of user that performed the operation. See the UserType table in Office 365 management activity api schema documentation for details on the types of users.</td>
+  <td style="text-align:left">UserType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of user that performed the operation. See the UserType table in Office 365 management activity api schema documentation for details on the types of users.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserUpn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged.</td>
+  <td style="text-align:left">UserUpn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged.</td>
 </tr>
 </tbody>
 </table>
@@ -245,14 +245,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/microsoftdataverse.html">Microsoft Dataverse</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/microsoftdataverse.html">Microsoft Dataverse</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -263,130 +263,130 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-anomalous-application-user-activity-0820da12-e895-417f-9175-7c256fcfb33e-25e83157.html">Dataverse - Anomalous application user activity</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-anomalous-application-user-activity-0820da12-e895-417f-9175-7c256fcfb33e-25e83157.html">Dataverse - Anomalous application user activity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-audit-log-data-deletion-f1634822-b7e9-44f5-95ac-fa4a04f14513-cd7a11d3.html">Dataverse - Audit log data deletion</a></td>
-<td style="text-align: left;"><code>Message in "DeleteAuditData,DeleteRecordChangeHistory"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-audit-log-data-deletion-f1634822-b7e9-44f5-95ac-fa4a04f14513-cd7a11d3.html">Dataverse - Audit log data deletion</a></td>
+  <td style="text-align:left"><code>Message in &quot;DeleteAuditData,DeleteRecordChangeHistory&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-audit-logging-disabled-ea07523b-e6b8-469b-9e25-cdef1ae6fb45-1a78c3d9.html">Dataverse - Audit logging disabled</a></td>
-<td style="text-align: left;"><code>Message in "Update,UpdateAuditSettings"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-audit-logging-disabled-ea07523b-e6b8-469b-9e25-cdef1ae6fb45-1a78c3d9.html">Dataverse - Audit logging disabled</a></td>
+  <td style="text-align:left"><code>Message in &quot;Update,UpdateAuditSettings&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-bulk-record-ownership-re-assignment-or-sharing-6e480329-84bc-409a-b97b-22e8102af3ca-962cb9c9.html">Dataverse - Bulk record ownership re-assignment or sharing</a></td>
-<td style="text-align: left;"><code>Message in "Assign,GrantAccess,ModifyAccess"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-bulk-record-ownership-re-assignment-or-sharing-6e480329-84bc-409a-b97b-22e8102af3ca-962cb9c9.html">Dataverse - Bulk record ownership re-assignment or sharing</a></td>
+  <td style="text-align:left"><code>Message in &quot;Assign,GrantAccess,ModifyAccess&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.html">Dataverse - Export activity from terminated or notified employee</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-export-activity-from-terminated-or-notified-employee-0881b209-62c9-4b15-9f9a-e0c1d1b1eb7b-d925cc5f.html">Dataverse - Export activity from terminated or notified employee</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.html">Dataverse - Hierarchy security manipulation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-hierarchy-security-manipulation-2df0adf5-92a8-4ee0-a123-3eb5be1eed02-f5cc5237.html">Dataverse - Hierarchy security manipulation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.html">Dataverse - Honeypot instance activity</a></td>
-<td style="text-align: left;"><code>Message == "UserSignIn"</code><br><code>UserId != "Unknown"</code><br><code>UserId !endswith "@onmicrosoft.com"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-honeypot-instance-activity-11650b85-d8cc-49c4-8c04-a8a739635983-644d15f1.html">Dataverse - Honeypot instance activity</a></td>
+  <td style="text-align:left"><code>Message == &quot;UserSignIn&quot;</code><br><code>UserId != &quot;Unknown&quot;</code><br><code>UserId !endswith &quot;@onmicrosoft.com&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.html">Dataverse - Login by a sensitive privileged user</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-login-by-a-sensitive-privileged-user-f327816b-9328-4b17-9290-a02adc2f4928-32716765.html">Dataverse - Login by a sensitive privileged user</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.html">Dataverse - Login from IP in the block list</a></td>
-<td style="text-align: left;"><code>Message == "UserSignIn"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-login-from-ip-in-the-block-list-666fef96-1bb8-4abf-ad72-e5cb49561381-2bf699c4.html">Dataverse - Login from IP in the block list</a></td>
+  <td style="text-align:left"><code>Message == &quot;UserSignIn&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.html">Dataverse - Login from IP not in the allow list</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-login-from-ip-not-in-the-allow-list-81c693fe-f6c4-4352-bc10-3526f6e22637-6a1a9333.html">Dataverse - Login from IP not in the allow list</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.html">Dataverse - Malware found in SharePoint document management site</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-malware-found-in-sharepoint-document-management-site-2e3878bb-d519-43aa-9992-ea069df099e4-82c1f402.html">Dataverse - Malware found in SharePoint document management site</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-mass-deletion-of-records-716cf6d4-97ad-407b-923e-6790083acb58-2ea9461e.html">Dataverse - Mass deletion of records</a></td>
-<td style="text-align: left;"><code>Message == "BulkDelete"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-mass-deletion-of-records-716cf6d4-97ad-407b-923e-6790083acb58-2ea9461e.html">Dataverse - Mass deletion of records</a></td>
+  <td style="text-align:left"><code>Message == &quot;BulkDelete&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-mass-export-of-records-to-excel-57000f0d-ff5d-4166-94b6-aa5fb62b16ec-17a490af.html">Dataverse - Mass export of records to Excel</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-mass-export-of-records-to-excel-57000f0d-ff5d-4166-94b6-aa5fb62b16ec-17a490af.html">Dataverse - Mass export of records to Excel</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-mass-record-updates-df577f0f-1d8a-4420-9057-a07f0edb15c8-7ce89bac.html">Dataverse - Mass record updates</a></td>
-<td style="text-align: left;"><code>Message == "Update"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-mass-record-updates-df577f0f-1d8a-4420-9057-a07f0edb15c8-7ce89bac.html">Dataverse - Mass record updates</a></td>
+  <td style="text-align:left"><code>Message == &quot;Update&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-new-dataverse-application-user-activity-type-5c768e7d-7e5e-4d57-80d4-3f50c96fbf70-4573a9e7.html">Dataverse - New Dataverse application user activity type</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-new-dataverse-application-user-activity-type-5c768e7d-7e5e-4d57-80d4-3f50c96fbf70-4573a9e7.html">Dataverse - New Dataverse application user activity type</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-new-non-interactive-identity-granted-access-682e230c-e5da-4085-8666-701d1f1be7de-981cd709.html">Dataverse - New non-interactive identity granted access</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-new-non-interactive-identity-granted-access-682e230c-e5da-4085-8666-701d1f1be7de-981cd709.html">Dataverse - New non-interactive identity granted access</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-new-sign-in-from-an-unauthorized-domain-4c1c9aee-8e44-4bb9-bd53-f3e7d6761282-361ae9c5.html">Dataverse - New sign-in from an unauthorized domain</a></td>
-<td style="text-align: left;"><code>Message == "UserSignIn"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-new-sign-in-from-an-unauthorized-domain-4c1c9aee-8e44-4bb9-bd53-f3e7d6761282-361ae9c5.html">Dataverse - New sign-in from an unauthorized domain</a></td>
+  <td style="text-align:left"><code>Message == &quot;UserSignIn&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-before-34a5d79b-8f9a-420c-aa64-7f4d262ac29a-99e2d75d.html">Dataverse - New user agent type that was not used before</a></td>
-<td style="text-align: left;"><code>UserAgent has_any "Gecko"</code><br><code>UserId has_any "@onmicrosoft.com"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-before-34a5d79b-8f9a-420c-aa64-7f4d262ac29a-99e2d75d.html">Dataverse - New user agent type that was not used before</a></td>
+  <td style="text-align:left"><code>UserAgent has_any &quot;Gecko&quot;</code><br><code>UserId has_any &quot;@onmicrosoft.com&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.html">Dataverse - New user agent type that was not used with Office 365</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-new-user-agent-type-that-was-not-used-with-office-365-094b3c0a-1f63-42f7-9535-c8c7b7198328-ba0f47d1.html">Dataverse - New user agent type that was not used with Office 365</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-organization-settings-modified-a6f6b734-3db8-4259-a988-69e0b8eac0c2-7b2f4c63.html">Dataverse - Organization settings modified</a></td>
-<td style="text-align: left;"><code>EntityName == "organization"</code><br><code>Message == "Update"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-organization-settings-modified-a6f6b734-3db8-4259-a988-69e0b8eac0c2-7b2f4c63.html">Dataverse - Organization settings modified</a></td>
+  <td style="text-align:left"><code>EntityName == &quot;organization&quot;</code><br><code>Message == &quot;Update&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-removal-of-blocked-file-extensions-1b1061be-2595-4492-af6d-1c8a5fc9576d-1471a08b.html">Dataverse - Removal of blocked file extensions</a></td>
-<td style="text-align: left;"><code>EntityName == "organization"</code><br><code>Message == "Update"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-removal-of-blocked-file-extensions-1b1061be-2595-4492-af6d-1c8a5fc9576d-1471a08b.html">Dataverse - Removal of blocked file extensions</a></td>
+  <td style="text-align:left"><code>EntityName == &quot;organization&quot;</code><br><code>Message == &quot;Update&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-sharepoint-document-management-site-added-or-updated-c4c3510a-0ee0-4561-9835-47882ffa7f46-49ba329f.html">Dataverse - SharePoint document management site added or updated</a></td>
-<td style="text-align: left;"><code>EntityName == "sharepointsite"</code><br><code>Message in "Create,Update"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-sharepoint-document-management-site-added-or-updated-c4c3510a-0ee0-4561-9835-47882ffa7f46-49ba329f.html">Dataverse - SharePoint document management site added or updated</a></td>
+  <td style="text-align:left"><code>EntityName == &quot;sharepointsite&quot;</code><br><code>Message in &quot;Create,Update&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-suspicious-security-role-modifications-e44a58b2-b63a-4eb9-92da-85660d73495c-6fcc2dde.html">Dataverse - Suspicious security role modifications</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-suspicious-security-role-modifications-e44a58b2-b63a-4eb9-92da-85660d73495c-6fcc2dde.html">Dataverse - Suspicious security role modifications</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-suspicious-use-of-tds-endpoint-d875af10-6bb9-4d6a-a6e4-78439a98bf4b-79440ea8.html">Dataverse - Suspicious use of TDS endpoint</a></td>
-<td style="text-align: left;"><code>Message == "ExecutePowerBISql"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-suspicious-use-of-tds-endpoint-d875af10-6bb9-4d6a-a6e4-78439a98bf4b-79440ea8.html">Dataverse - Suspicious use of TDS endpoint</a></td>
+  <td style="text-align:left"><code>Message == &quot;ExecutePowerBISql&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-suspicious-use-of-web-api-8a6ecba2-ccfe-4c8c-b086-fa3e6ff7fa86-3da7d04c.html">Dataverse - Suspicious use of Web API</a></td>
-<td style="text-align: left;"><code>Message == "UserSignIn"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-suspicious-use-of-web-api-8a6ecba2-ccfe-4c8c-b086-fa3e6ff7fa86-3da7d04c.html">Dataverse - Suspicious use of Web API</a></td>
+  <td style="text-align:left"><code>Message == &quot;UserSignIn&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-ti-map-ip-to-dataverseactivity-56d5aa0c-d871-4167-ba13-61c2f0fd17bf-cc32474f.html">Dataverse - TI map IP to DataverseActivity</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-ti-map-ip-to-dataverseactivity-56d5aa0c-d871-4167-ba13-61c2f0fd17bf-cc32474f.html">Dataverse - TI map IP to DataverseActivity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-ti-map-url-to-dataverseactivity-d88a0e22-3b6a-40c2-af28-c064b44d03b7-bcfd5ea3.html">Dataverse - TI map URL to DataverseActivity</a></td>
-<td style="text-align: left;"><code>Fields has "http"</code><br><code>Message in "Create,Update"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-ti-map-url-to-dataverseactivity-d88a0e22-3b6a-40c2-af28-c064b44d03b7-bcfd5ea3.html">Dataverse - TI map URL to DataverseActivity</a></td>
+  <td style="text-align:left"><code>Fields has &quot;http&quot;</code><br><code>Message in &quot;Create,Update&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.html">Dataverse - Terminated employee exfiltration to USB drive</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.html">Dataverse - Terminated employee exfiltration to USB drive</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.html">Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection</a></td>
-<td style="text-align: left;"><code>UserId !endswith "@microsoft.com"</code><br><code>UserId !endswith "@onmicrosoft.com"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-unusual-sign-in-following-disabled-ip-address-based-cookie-bin-d7c9549c-7246-4555-8e53-d7b0db546764-05625607.html">Dataverse - Unusual sign-in following disabled IP address-based cookie binding protection</a></td>
+  <td style="text-align:left"><code>UserId !endswith &quot;@microsoft.com&quot;</code><br><code>UserId !endswith &quot;@onmicrosoft.com&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-user-bulk-retrieval-outside-normal-activity-08cb7ffc-59c6-4e7d-88e0-327371c9431b-d673ce2b.html">Dataverse - User bulk retrieval outside normal activity</a></td>
-<td style="text-align: left;"><code>Message == "RetrieveMultiple"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-user-bulk-retrieval-outside-normal-activity-08cb7ffc-59c6-4e7d-88e0-327371c9431b-d673ce2b.html">Dataverse - User bulk retrieval outside normal activity</a></td>
+  <td style="text-align:left"><code>Message == &quot;RetrieveMultiple&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -395,52 +395,52 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.html">Dataverse - Activity after Microsoft Entra alerts</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-activity-after-microsoft-entra-alerts-428c3d41-e441-4244-994e-b059d6316bc4-b180c05f.html">Dataverse - Activity after Microsoft Entra alerts</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-activity-after-failed-logons-dafcc598-2987-4aa0-947e-7d0449677689-8b8942dc.html">Dataverse - Activity after failed logons</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-activity-after-failed-logons-dafcc598-2987-4aa0-947e-7d0449677689-8b8942dc.html">Dataverse - Activity after failed logons</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-cross-environment-data-export-activity-74a48db8-dc1d-414e-9709-39fa3f8a2246-f5b62c63.html">Dataverse - Cross-environment data export activity</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-cross-environment-data-export-activity-74a48db8-dc1d-414e-9709-39fa3f8a2246-f5b62c63.html">Dataverse - Cross-environment data export activity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.html">Dataverse - Dataverse export copied to USB devices</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.html">Dataverse - Dataverse export copied to USB devices</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-generic-client-app-used-to-access-production-environments-90bcbd4e-e8b5-4a5d-9fe6-d0f9f0220b4a-72c7ad56.html">Dataverse - Generic client app used to access production environments</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-generic-client-app-used-to-access-production-environments-90bcbd4e-e8b5-4a5d-9fe6-d0f9f0220b4a-72c7ad56.html">Dataverse - Generic client app used to access production environments</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.html">Dataverse - Identity management activity outside of privileged directory role membership</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-identity-management-activity-outside-of-privileged-directory-r-c7e6e48a-0514-4989-bc90-4a3c9207ede1-5ce4101d.html">Dataverse - Identity management activity outside of privileged directory role membership</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-identity-management-changes-without-mfa-385234b7-d96c-4dc3-9c0e-ceb46048d487-58611350.html">Dataverse - Identity management changes without MFA</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-identity-management-changes-without-mfa-385234b7-d96c-4dc3-9c0e-ceb46048d487-58611350.html">Dataverse - Identity management changes without MFA</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <h3 id="workbooks">Workbooks (1)</h3>
-<p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong> <code>Message in "Delete,SendEmail"</code><br><code>Message contains "ExportToExcel"</code><br><code>Message contains "Retrieve"</code><br><code>OriginalObjectId startswith "GrantAccess"</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-business-applications.html">Microsoft Business Applications</a>:</strong> <code>Message in &quot;Delete,SendEmail&quot;</code><br><code>Message contains &quot;ExportToExcel&quot;</code><br><code>Message contains &quot;Retrieve&quot;</code><br><code>OriginalObjectId startswith &quot;GrantAccess&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-business-applications-dynamics365activity-1015284f.html">Dynamics365Activity</a></td>
+  <td style="text-align:left"><a href="../content/microsoft-business-applications-dynamics365activity-1015284f.html">Dynamics365Activity</a></td>
 </tr>
 </tbody>
 </table>
@@ -449,142 +449,142 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Message == "UserSignIn"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>Message == &quot;UserSignIn&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EntityName == "organization"</code><br><code>Message == "Update"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>EntityName == &quot;organization&quot;</code><br><code>Message == &quot;Update&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message in "DeleteAuditData,DeleteRecordChangeHistory"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message in &quot;DeleteAuditData,DeleteRecordChangeHistory&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message in "Update,UpdateAuditSettings"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message in &quot;Update,UpdateAuditSettings&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message in "Assign,GrantAccess,ModifyAccess"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message in &quot;Assign,GrantAccess,ModifyAccess&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message == "UserSignIn"</code><br><code>UserId != "Unknown"</code><br><code>UserId !endswith "@onmicrosoft.com"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message == &quot;UserSignIn&quot;</code><br><code>UserId != &quot;Unknown&quot;</code><br><code>UserId !endswith &quot;@onmicrosoft.com&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message == "BulkDelete"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message == &quot;BulkDelete&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message == "Update"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message == &quot;Update&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UserAgent has_any "Gecko"</code><br><code>UserId has_any "@onmicrosoft.com"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>UserAgent has_any &quot;Gecko&quot;</code><br><code>UserId has_any &quot;@onmicrosoft.com&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>EntityName == "sharepointsite"</code><br><code>Message in "Create,Update"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>EntityName == &quot;sharepointsite&quot;</code><br><code>Message in &quot;Create,Update&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message == "ExecutePowerBISql"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message == &quot;ExecutePowerBISql&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Fields has "http"</code><br><code>Message in "Create,Update"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Fields has &quot;http&quot;</code><br><code>Message in &quot;Create,Update&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UserId !endswith "@microsoft.com"</code><br><code>UserId !endswith "@onmicrosoft.com"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>UserId !endswith &quot;@microsoft.com&quot;</code><br><code>UserId !endswith &quot;@onmicrosoft.com&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message == "RetrieveMultiple"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message == &quot;RetrieveMultiple&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Message in "Delete,SendEmail"</code><br><code>Message contains "ExportToExcel"</code><br><code>Message contains "Retrieve"</code><br><code>OriginalObjectId startswith "GrantAccess"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Message in &quot;Delete,SendEmail&quot;</code><br><code>Message contains &quot;ExportToExcel&quot;</code><br><code>Message contains &quot;Retrieve&quot;</code><br><code>OriginalObjectId startswith &quot;GrantAccess&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>18</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>18</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>18</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>18</strong></td>
 </tr>
 </tbody>
 </table>
@@ -592,30 +592,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>organization</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>organization</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>sharepointsite</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>sharepointsite</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -623,22 +623,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>has http</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has http</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -646,142 +646,142 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Update</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>6</strong></td>
+  <td style="text-align:left"><code>Update</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">6</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UserSignIn</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+  <td style="text-align:left"><code>UserSignIn</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Create</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>Create</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>DeleteAuditData</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>DeleteAuditData</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>DeleteRecordChangeHistory</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>DeleteRecordChangeHistory</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UpdateAuditSettings</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>UpdateAuditSettings</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Assign</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Assign</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>GrantAccess</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>GrantAccess</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ModifyAccess</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ModifyAccess</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>BulkDelete</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>BulkDelete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ExecutePowerBISql</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ExecutePowerBISql</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>RetrieveMultiple</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>RetrieveMultiple</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Delete</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Delete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SendEmail</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>SendEmail</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains ExportToExcel</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains ExportToExcel</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains Retrieve</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains Retrieve</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -789,22 +789,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>startswith GrantAccess</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>startswith GrantAccess</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -812,22 +812,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>has_any Gecko</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has_any Gecko</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -835,52 +835,53 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!endswith @onmicrosoft.com</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!endswith @onmicrosoft.com</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!= Unknown</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!= Unknown</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has_any @onmicrosoft.com</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has_any @onmicrosoft.com</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>!endswith @microsoft.com</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!endswith @microsoft.com</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

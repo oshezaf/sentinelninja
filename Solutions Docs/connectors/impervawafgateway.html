@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>⚠️ Imperva WAF Gateway &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../../css/page.css">
+<link rel="stylesheet" href="../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
@@ -19,37 +19,38 @@
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="" width="75" height="75"></p>
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Imperva_DarkGrey_final_75x75.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>ImpervaWAFGateway</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>ImpervaWAFGateway</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Imperva</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Imperva</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/imperva-waf-gateway.html">Imperva WAF Gateway</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/imperva-waf-gateway.html">Imperva WAF Gateway</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway/Data%20Connectors/Connector_Imperva_WAF_Gateway.json">Connector_Imperva_WAF_Gateway.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Imperva%20WAF%20Gateway/Data%20Connectors/Connector_Imperva_WAF_Gateway.json">Connector_Imperva_WAF_Gateway.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -59,20 +60,20 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td style="text-align: left;"><code>Activity == "sql-injection"</code><br><code>DeviceAction == "block"</code><br><code>DeviceProduct == "WAF Gateway"</code><br><code>DeviceVendor in "Imperva,Imperva Inc."</code><br><code>LogSeverity == "High"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td style="text-align:left"><code>Activity == &quot;sql-injection&quot;</code><br><code>DeviceAction == &quot;block&quot;</code><br><code>DeviceProduct == &quot;WAF Gateway&quot;</code><br><code>DeviceVendor in &quot;Imperva,Imperva Inc.&quot;</code><br><code>LogSeverity == &quot;High&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -80,9 +81,11 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions are required.
-- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -98,16 +101,18 @@
 <p>Install the Microsoft Monitoring Agent on your Linux machine and configure the machine to listen on the necessary port and forward messages to your Azure Sentinel workspace. The CEF collector collects CEF messages on port 514 TCP.</p>
 <blockquote>
 <ol>
-<li>
-<p>Make sure that you have Python on your machine using the following command: python -version.</p>
-</li>
-<li>
-<p>You must have elevated permissions (sudo) on your machine.
-  - <strong>Run the following command to install and apply the CEF collector:</strong>: <code>sudo wget -O cef_installer.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_installer.py&amp;&amp;sudo python cef_installer.py {0} {1}</code>
-<strong>2. Forward Common Event Format (CEF) logs to Syslog agent</strong></p>
-</li>
+<li>Make sure that you have Python on your machine using the following command: python -version.</li>
 </ol>
 </blockquote>
+<blockquote>
+<ol start="2">
+<li>You must have elevated permissions (sudo) on your machine.</li>
+</ol>
+</blockquote>
+<ul>
+<li><strong>Run the following command to install and apply the CEF collector:</strong>: <code>sudo wget -O cef_installer.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_installer.py&amp;&amp;sudo python cef_installer.py {0} {1}</code>
+<strong>2. Forward Common Event Format (CEF) logs to Syslog agent</strong></li>
+</ul>
 <p>Set your security solution to send Syslog messages in CEF format to the proxy machine. Make sure you to send the logs to port 514 TCP on the machine's IP address.</p>
 <p><strong>3. SecureSphere MX Configuration</strong></p>
 <p>This connector requires an Action Interface and Action Set to be created on the Imperva SecureSphere MX.  <a href="https://community.imperva.com/blogs/craig-burlingame1/2020/11/13/steps-for-enabling-imperva-waf-gateway-alert">Follow the steps</a> to create the requirements.
@@ -121,13 +126,14 @@
 <p>Follow the instructions to validate your connectivity:</p>
 <p>Open Log Analytics to check if the logs are received using the CommonSecurityLog schema.
 **4.1 Check for logs in the past 5 minutes using the following command.</p>
-<p>CommonSecurityLog | where DeviceVendor == "Imperva Inc." | where DeviceProduct == "WAF Gateway" | where TimeGenerated == ago(5m)<strong>
-</strong>5. Secure your machine**</p>
+<p>CommonSecurityLog | where DeviceVendor == &quot;Imperva Inc.&quot; | where DeviceProduct == &quot;WAF Gateway&quot; | where TimeGenerated == ago(5m)**
+<strong>5. Secure your machine</strong></p>
 <p>Make sure to configure the machine's security according to your organization's security policy</p>
 <p><a href="https://aka.ms/SecureCEF">Learn more &gt;</a></p>
 <hr />
-<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>
