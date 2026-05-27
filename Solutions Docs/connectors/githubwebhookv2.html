@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GitHub using Webhooks V2 &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../css/page.css">
+<link rel="stylesheet" href="../../css/page.css">
 
 </head>
 <body>
 <nav class="navbar">
-    <a href="../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="github-using-webhooks-v2">GitHub (using Webhooks) V2</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/GitHub.svg" alt="" width="75" height="75">
 
-<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <p>| Attribute | Value |
 |:----------|:------|
@@ -29,7 +29,8 @@
 | <strong>Collection Method</strong> | <a href="../methods/azure-function.html">Azure Function</a> |
 | <strong>Connector Definition Files</strong> | <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GitHub/Data%20Connectors/GithubWebhookV2/GithubWebhookV2_API_FunctionApp.json">GithubWebhookV2_API_FunctionApp.json</a> |
 | <strong>Ingestion API</strong> | <a href="../methods/log-ingestion-api-undetermined.html">Log Ingestion API|Undetermined</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources|Azure Function code contains both Log Ingestion API and HTTP Data Collector API patterns</em> |
-| <strong>Custom Log V1 Tables</strong> | Yes 🔶 — ingests into tables with type-suffixed columns |</p>
+| <strong>Custom Log V1 Tables</strong> | Yes 🔶 — ingests into tables with type-suffixed columns |
+| <strong>Microsoft Learn</strong> | <a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#github-using-webhooks">View on Learn</a> |</p>
 <p>The <a href="https://www.github.com">GitHub</a> webhook data connector (V2) provides the capability to ingest GitHub subscribed events into Microsoft Sentinel using <a href="https://docs.github.com/en/developers/webhooks-and-events/webhooks/webhook-events-and-payloads">GitHub webhook events</a>. This connector uses the Azure Monitor <strong>Logs Ingestion API (CLv2)</strong> with <strong>Managed Identity</strong> authentication and is the designated successor to the original GitHub (using Webhooks) connector, which uses the CLv1 HTTP Data Collector API (ODS endpoint) that Microsoft is replacing with CLv2.</p>
 <p>Events are written to the <code>GitHubAdvancedSecurityAlerts_CL</code> table. The <code>githubscanaudit</code> parser function provides a unified view across both the legacy <code>githubscanaudit_CL</code> table and the new <code>GitHubAdvancedSecurityAlerts_CL</code> table, so all existing workbooks, analytic rules, and hunting queries continue to work without modification.</p>
 <blockquote>
@@ -474,8 +475,8 @@ Example: <code>https://fngithubwebhookv2.azurewebsites.net/api/GithubWebhookConn
 <li><a href="https://docs.microsoft.com/python/api/overview/azure/monitor-ingestion-readme">Azure Monitor Ingestion client library for Python</a></li>
 </ul>
 <hr />
-<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../index.html#connectors">Back to Connectors Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 
 </div>
 

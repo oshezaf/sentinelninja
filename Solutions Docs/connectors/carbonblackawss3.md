@@ -30,10 +30,10 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) |  | ✓ | ✓ | ? |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | ✓ | ✓ | ? |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) |  | ✓ | ✓ | ? |
-| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | ✓ | ✓ | ? |
+| [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) |  | ✓ | ✓ | ? |
 | [`CarbonBlack_Alerts_CL`](../tables/carbonblack-alerts-cl.md) |  | ? | ✓ | ? |
 | [`CarbonBlack_Watchlist_CL`](../tables/carbonblack-watchlist-cl.md) |  | ? | ✓ | ? |
 

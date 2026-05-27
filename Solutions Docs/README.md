@@ -17,7 +17,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 | [ASIM Parsers](asim/asim-index.md) | 106 pairs | Normalized schema parsers |
 | [ASIM Products](asim/asim-products-index.md) | 94 | Products with ASIM support |
 | [Statistics](statistics.md) | - | Comprehensive statistics and metrics |
-| [Interactive Index](index.html) | - | Sortable/filterable HTML view |
+| [Interactive Index](https://oshezaf.github.io/sentinelninja/index.html) | - | Sortable/filterable HTML view |
 
 ---
 
@@ -46,7 +46,7 @@ This documentation provides comprehensive information about Microsoft Sentinel S
 │   ├── asim-index.md       # ASIM parsers index by schema
 │   ├── asim-products-index.md  # ASIM parsers index by product
 │   └── *.md                # Individual parser pages
-└── index.html              # Interactive index (sortable/filterable)
+└── index.html              # Interactive index (on GitHub Pages)
 ```
 
 ## Source

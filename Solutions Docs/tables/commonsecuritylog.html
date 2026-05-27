@@ -4,22 +4,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CommonSecurityLog &mdash; Solutions Analyzer</title>
-<link rel="stylesheet" href="../css/page.css">
+<link rel="stylesheet" href="../../css/page.css">
 <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
-    <a href="../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
     <div class="navbar-nav-links">
-        <a href="../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
     </div>
 </nav>
 <div class="doc-content">
 <h1 id="commonsecuritylog">CommonSecurityLog</h1>
-<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
 <p>Reference for CommonSecurityLog table in Azure Monitor Logs.</p>
 <table>
@@ -3806,7 +3806,15 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;Claroty&quot;</code></td>
+  <td style="text-align:left"><code>DeviceEventClassID == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">22</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>24</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct has &quot;PingFederate&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">21</td>
   <td style="text-align:center">-</td>
@@ -3830,17 +3838,9 @@
   <td style="text-align:center"><strong>24</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceProduct has &quot;PingFederate&quot;</code></td>
+  <td style="text-align:left"><code>DeviceVendor == &quot;Claroty&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">21</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>24</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceEventClassID == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">22</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>24</strong></td>
@@ -3862,6 +3862,14 @@
   <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>DeviceProduct == &quot;FalconHost&quot;</code><br><code>DeviceVendor == &quot;CrowdStrike&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>DeviceProduct == &quot;Votiro cloud&quot;</code><br><code>DeviceVendor == &quot;Votiro&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">3</td>
@@ -3875,14 +3883,6 @@
   <td style="text-align:center">4</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;FalconHost&quot;</code><br><code>DeviceVendor == &quot;CrowdStrike&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
@@ -3926,23 +3926,23 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceCustomString1Label in &quot;dst_vulns,event_href&quot;</code><br><code>DeviceCustomString2Label in &quot;resource_changes,state&quot;</code><br><code>DeviceCustomString4Label in &quot;dst_labels,notifications&quot;</code><br><code>DeviceCustomString6Label == &quot;dst_href&quot;</code><br><code>DeviceVendor == &quot;Illumio&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceVendor has &quot;Nozomi&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>DeviceProduct == &quot;ClearPass&quot;</code><br><code>DeviceVendor == &quot;Aruba Networks&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct == &quot;akamai_siem&quot;</code><br><code>DeviceVendor == &quot;Akamai&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceCustomString1Label in &quot;dst_vulns,event_href&quot;</code><br><code>DeviceCustomString2Label in &quot;resource_changes,state&quot;</code><br><code>DeviceCustomString4Label in &quot;dst_labels,notifications&quot;</code><br><code>DeviceCustomString6Label == &quot;dst_href&quot;</code><br><code>DeviceVendor == &quot;Illumio&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -3966,14 +3966,6 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;FireEye&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>DeviceVendor == &quot;Contrast Security&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">1</td>
@@ -3982,7 +3974,15 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;akamai_siem&quot;</code><br><code>DeviceVendor == &quot;Akamai&quot;</code></td>
+  <td style="text-align:left"><code>DeviceVendor == &quot;FireEye&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceVendor has &quot;Nozomi&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4014,78 +4014,6 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceVendor has &quot;OSSEC&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Activity has &quot;SECRET - CREATE&quot;</code><br><code>Activity has &quot;SECRET - VIEW&quot;</code><br><code>DeviceProduct == &quot;Secret Server&quot;</code><br><code>DeviceVendor in &quot;Delinea Software,Thycotic Software&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;Barracuda&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct startswith &quot;Fortigate&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Activity == &quot;Blocked&quot;</code><br><code>DeviceProduct in &quot;Email,Web&quot;</code><br><code>DeviceVendor == &quot;Forcepoint CSG&quot;</code><br><code>LogSeverity == &quot;6&quot;</code><br><code>SourceUserID != &quot;Not available&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>AdditionalExtensions has &quot;InfobloxRPZ=APP_&quot;</code><br><code>AdditionalExtensions has &quot;InfobloxRPZ=CAT_&quot;</code><br><code>DeviceEventClassID == &quot;DHCP-LEASE-CREATE&quot;</code><br><code>DeviceEventClassID has &quot;Audit&quot;</code><br><code>DeviceEventClassID has &quot;DHCP&quot;</code><br><code>DeviceEventClassID has &quot;DNS&quot;</code><br><code>DeviceEventClassID has &quot;RPZ&quot;</code><br><code>DeviceEventClassID has &quot;Service&quot;</code><br><code>DeviceProduct == &quot;Data Connector&quot;</code><br><code>DeviceVendor == &quot;Infoblox&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;F5&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;UnityOne&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ApplicationProtocol in &quot;DNS,HTTP,TDS&quot;</code><br><code>DeviceProduct == &quot;WireX NFP&quot;</code><br><code>DeviceVendor == &quot;WireX&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>DeviceProduct == &quot;Vault&quot;</code><br><code>DeviceVendor == &quot;Cyber-Ark&quot;</code><br><code>LogSeverity in &quot;10,7&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -4102,6 +4030,78 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>AdditionalExtensions has &quot;InfobloxRPZ=APP_&quot;</code><br><code>AdditionalExtensions has &quot;InfobloxRPZ=CAT_&quot;</code><br><code>DeviceEventClassID == &quot;DHCP-LEASE-CREATE&quot;</code><br><code>DeviceEventClassID has &quot;Audit&quot;</code><br><code>DeviceEventClassID has &quot;DHCP&quot;</code><br><code>DeviceEventClassID has &quot;DNS&quot;</code><br><code>DeviceEventClassID has &quot;RPZ&quot;</code><br><code>DeviceEventClassID has &quot;Service&quot;</code><br><code>DeviceProduct == &quot;Data Connector&quot;</code><br><code>DeviceVendor == &quot;Infoblox&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity == &quot;File Malware Event&quot;</code><br><code>DestinationPort == &quot;80&quot;</code><br><code>DeviceAction != &quot;Allow&quot;</code><br><code>DeviceProduct == &quot;Firepower&quot;</code><br><code>DeviceVendor == &quot;Cisco&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity == &quot;Blocked&quot;</code><br><code>DeviceProduct in &quot;Email,Web&quot;</code><br><code>DeviceVendor == &quot;Forcepoint CSG&quot;</code><br><code>LogSeverity == &quot;6&quot;</code><br><code>SourceUserID != &quot;Not available&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct == &quot;UnityOne&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceVendor == &quot;Forcepoint CASB&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceVendor has &quot;OSSEC&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity contains &quot;compromise&quot;</code><br><code>DeviceAction == &quot;Terminate&quot;</code><br><code>DeviceProduct == &quot;NGFW&quot;</code><br><code>DeviceVendor == &quot;Forcepoint&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity has &quot;SECRET - CREATE&quot;</code><br><code>Activity has &quot;SECRET - VIEW&quot;</code><br><code>DeviceProduct == &quot;Secret Server&quot;</code><br><code>DeviceVendor in &quot;Delinea Software,Thycotic Software&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct startswith &quot;Fortigate&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>DeviceEventClassID == &quot;ExtraHop Detection&quot;</code><br><code>DeviceVendor == &quot;ExtraHop&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -4110,23 +4110,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>AdditionalExtensions contains &quot;fw_action=&quot;</code><br><code>DeviceVendor == &quot;SonicWall&quot;</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceEventClassID == &quot;4001&quot;</code><br><code>DeviceVendor == &quot;RidgeSecurity&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;Darktrace&quot;</code></td>
+  <td style="text-align:left"><code>ApplicationProtocol in &quot;DNS,HTTP,TDS&quot;</code><br><code>DeviceProduct == &quot;WireX NFP&quot;</code><br><code>DeviceVendor == &quot;WireX&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4142,7 +4126,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Activity contains &quot;compromise&quot;</code><br><code>DeviceAction == &quot;Terminate&quot;</code><br><code>DeviceProduct == &quot;NGFW&quot;</code><br><code>DeviceVendor == &quot;Forcepoint&quot;</code></td>
+  <td style="text-align:left"><code>DeviceVendor == &quot;Darktrace&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4150,9 +4134,17 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;Forcepoint CASB&quot;</code></td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:left"><code>DeviceEventClassID == &quot;4001&quot;</code><br><code>DeviceVendor == &quot;RidgeSecurity&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceVendor == &quot;Barracuda&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
@@ -4166,7 +4158,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Activity == &quot;File Malware Event&quot;</code><br><code>DestinationPort == &quot;80&quot;</code><br><code>DeviceAction != &quot;Allow&quot;</code><br><code>DeviceProduct == &quot;Firepower&quot;</code><br><code>DeviceVendor == &quot;Cisco&quot;</code></td>
+  <td style="text-align:left"><code>AdditionalExtensions contains &quot;fw_action=&quot;</code><br><code>DeviceVendor == &quot;SonicWall&quot;</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceVendor == &quot;F5&quot;</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4270,47 +4270,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSEmaildlplog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;NSSAuditlog&quot;</code><br><code>EventOutcome == &quot;Failure&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;Fortiweb&quot;</code><br><code>DeviceProduct has &quot;Fortiweb&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;OSP&quot;</code><br><code>DeviceVendor == &quot;Onapsis&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceEventClassID == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSDNSlog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;OSSEC&quot;</code><br><code>DeviceVendor has &quot;OSSEC&quot;</code></td>
+  <td style="text-align:left"><code>DeviceProduct == &quot;NSSFWlog&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4326,135 +4286,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;Fortigate&quot;</code><br><code>DeviceProduct startswith &quot;Fortigate&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct in &quot;IronDefense,IronDome&quot;</code><br><code>DeviceVendor == &quot;IronNet&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceEventClassID == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code><br><code>DeviceProduct == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code><br><code>DeviceVendor == &quot;Cisco&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceEventClassID in &quot;IPSec Phase1,IPSec Phase2,Tunnel Event&quot;</code><br><code>DeviceProduct == &quot;NSSTunnellog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceVendor == &quot;WithSecure™&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Activity == &quot;THREAT&quot;</code><br><code>DeviceProduct == &quot;PAN-OS&quot;</code><br><code>DeviceProduct has &quot;PAN-OS&quot;</code><br><code>DeviceVendor == &quot;Palo Alto Networks&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbcrmlog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbfilesharinglog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceVendor in &quot;Claroty,Medigate&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbcloudstoragelog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbactivitylog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Activity == &quot;THREAT&quot;</code><br><code>DeviceProduct has &quot;PAN-OS&quot;</code><br><code>DeviceVendor == &quot;Palo Alto Networks&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Prevented (Blocked)&quot;</code><br><code>DeviceProduct == &quot;Cortex XDR&quot;</code><br><code>DeviceVendor == &quot;Palo Alto Networks&quot;</code><br><code>LogSeverity == &quot;6&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;NSSFWlog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbemaillog&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Computer contains &quot;Fortiweb&quot;</code><br><code>DeviceProduct contains &quot;Fortiweb&quot;</code><br><code>DeviceProduct has &quot;Fortiweb&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code><br><code>DeviceVendor contains &quot;Fortinet&quot;</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>DeviceEventClassID == &quot;NewIncident&quot;</code><br><code>DeviceProduct == &quot;Admin Console&quot;</code><br><code>DeviceProduct has &quot;Admin Console&quot;</code><br><code>DeviceVendor == &quot;Silverfort&quot;</code><br><code>DeviceVendor has &quot;Silverfort&quot;</code><br><code>Message has &quot;UserBruteForce&quot;</code></td>
+  <td style="text-align:left"><code>Activity == &quot;sql-injection&quot;</code><br><code>DeviceAction == &quot;block&quot;</code><br><code>DeviceProduct == &quot;WAF Gateway&quot;</code><br><code>DeviceVendor in &quot;Imperva,Imperva Inc.&quot;</code><br><code>LogSeverity == &quot;High&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4470,7 +4302,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>AdditionalExtensions contains &quot;amaExternalLogService=true&quot;</code><br><code>DeviceVendor == &quot;iboss&quot;</code></td>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbcloudstoragelog&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4478,7 +4310,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbrepolog&quot;</code></td>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbfilesharinglog&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4486,7 +4318,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;FAILED&quot;</code><br><code>DeviceProduct == &quot;IDM&quot;</code><br><code>DeviceVendor == &quot;ForgeRock Inc&quot;</code></td>
+  <td style="text-align:left"><code>DeviceProduct == &quot;NSSAuditlog&quot;</code><br><code>EventOutcome == &quot;Failure&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4494,7 +4326,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Activity == &quot;SessionClosed&quot;</code><br><code>DeviceCustomString1Label == &quot;Session ID&quot;</code><br><code>DeviceProduct == &quot;SPS&quot;</code><br><code>DeviceVendor == &quot;OneIdentity&quot;</code></td>
+  <td style="text-align:left"><code>DeviceProduct == &quot;Fortigate&quot;</code><br><code>DeviceProduct startswith &quot;Fortigate&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4502,7 +4334,23 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceVendor !in &quot;Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour&quot;</code><br><code>DeviceVendor !in &quot;Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour,Votiro&quot;</code></td>
+  <td style="text-align:left"><code>DeviceVendor == &quot;WithSecure™&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct == &quot;OSP&quot;</code><br><code>DeviceVendor == &quot;Onapsis&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSEmaildlplog&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4518,7 +4366,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceProduct == &quot;ASA&quot;</code><br><code>DeviceVendor == &quot;Cisco&quot;</code><br><code>SimplifiedDeviceAction == &quot;Deny&quot;</code></td>
+  <td style="text-align:left"><code>DeviceVendor !in &quot;Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour&quot;</code><br><code>DeviceVendor !in &quot;Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour,Votiro&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4526,7 +4374,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbitsmlog&quot;</code></td>
+  <td style="text-align:left"><code>DeviceEventClassID == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code><br><code>DeviceProduct == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code><br><code>DeviceVendor == &quot;Cisco&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceVendor == &quot;OSSEC&quot;</code><br><code>DeviceVendor has &quot;OSSEC&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4542,6 +4398,14 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Computer contains &quot;Fortiweb&quot;</code><br><code>DeviceProduct contains &quot;Fortiweb&quot;</code><br><code>DeviceProduct has &quot;Fortiweb&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code><br><code>DeviceVendor contains &quot;Fortinet&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>DeviceEventClassID == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSWeblog&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -4550,7 +4414,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Activity == &quot;sql-injection&quot;</code><br><code>DeviceAction == &quot;block&quot;</code><br><code>DeviceProduct == &quot;WAF Gateway&quot;</code><br><code>DeviceVendor in &quot;Imperva,Imperva Inc.&quot;</code><br><code>LogSeverity == &quot;High&quot;</code></td>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbitsmlog&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -4559,6 +4423,142 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>AdditionalExtensions !contains &quot;amaExternalLogService=true&quot;</code><br><code>DeviceVendor == &quot;iboss&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceEventClassID in &quot;IPSec Phase1,IPSec Phase2,Tunnel Event&quot;</code><br><code>DeviceProduct == &quot;NSSTunnellog&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity == &quot;THREAT&quot;</code><br><code>DeviceProduct == &quot;PAN-OS&quot;</code><br><code>DeviceProduct has &quot;PAN-OS&quot;</code><br><code>DeviceVendor == &quot;Palo Alto Networks&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity == &quot;THREAT&quot;</code><br><code>DeviceProduct has &quot;PAN-OS&quot;</code><br><code>DeviceVendor == &quot;Palo Alto Networks&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct == &quot;ASA&quot;</code><br><code>DeviceVendor == &quot;Cisco&quot;</code><br><code>SimplifiedDeviceAction == &quot;Deny&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct in &quot;IronDefense,IronDome&quot;</code><br><code>DeviceVendor == &quot;IronNet&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbemaillog&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceAction == &quot;Prevented (Blocked)&quot;</code><br><code>DeviceProduct == &quot;Cortex XDR&quot;</code><br><code>DeviceVendor == &quot;Palo Alto Networks&quot;</code><br><code>LogSeverity == &quot;6&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbrepolog&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceVendor in &quot;Claroty,Medigate&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Activity == &quot;SessionClosed&quot;</code><br><code>DeviceCustomString1Label == &quot;Session ID&quot;</code><br><code>DeviceProduct == &quot;SPS&quot;</code><br><code>DeviceVendor == &quot;OneIdentity&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbactivitylog&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceProduct == &quot;Fortiweb&quot;</code><br><code>DeviceProduct has &quot;Fortiweb&quot;</code><br><code>DeviceVendor == &quot;Fortinet&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AdditionalExtensions contains &quot;amaExternalLogService=true&quot;</code><br><code>DeviceVendor == &quot;iboss&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceAction == &quot;FAILED&quot;</code><br><code>DeviceProduct == &quot;IDM&quot;</code><br><code>DeviceVendor == &quot;ForgeRock Inc&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceAction == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSCasbcrmlog&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceEventClassID == &quot;Blocked&quot;</code><br><code>DeviceProduct == &quot;NSSDNSlog&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>DeviceEventClassID == &quot;NewIncident&quot;</code><br><code>DeviceProduct == &quot;Admin Console&quot;</code><br><code>DeviceProduct has &quot;Admin Console&quot;</code><br><code>DeviceVendor == &quot;Silverfort&quot;</code><br><code>DeviceVendor has &quot;Silverfort&quot;</code><br><code>Message has &quot;UserBruteForce&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -5551,19 +5551,19 @@
   <td style="text-align:center"><strong>27</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>has PingFederate</code></td>
   <td style="text-align:left"></td>
-  <td style="text-align:left"><code>Claroty</code></td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">21</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">22</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>25</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has PingFederate</code></td>
   <td style="text-align:left"></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">22</td>
+  <td style="text-align:left"><code>Claroty</code></td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">21</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>25</strong></td>
@@ -5632,21 +5632,21 @@
   <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has Fortiweb</code></td>
-  <td style="text-align:left"><code>Fortinet</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>7</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>Contrast Security</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">5</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Fortiweb</code></td>
+  <td style="text-align:left"><code>Fortinet</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
@@ -5659,48 +5659,21 @@
   <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Votiro cloud</code></td>
-  <td style="text-align:left"><code>Votiro</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>5</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Awake Security</code></td>
-  <td style="text-align:left"><code>Arista Networks</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>SonicWall</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>PAN-OS</code></td>
-  <td style="text-align:left"><code>Palo Alto Networks</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>ASA</code></td>
   <td style="text-align:left"><code>Cisco</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Votiro cloud</code></td>
+  <td style="text-align:left"><code>Votiro</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
@@ -5713,6 +5686,15 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>PAN-OS</code></td>
+  <td style="text-align:left"><code>Palo Alto Networks</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>NetScaler</code></td>
   <td style="text-align:left"><code>Citrix</code></td>
   <td style="text-align:center">2</td>
@@ -5722,20 +5704,29 @@
   <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>startswith Fortigate</code></td>
-  <td style="text-align:left"><code>Fortinet</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>SonicWall</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has PAN-OS</code></td>
-  <td style="text-align:left"><code>Palo Alto Networks</code></td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:left"><code>Awake Security</code></td>
+  <td style="text-align:left"><code>Arista Networks</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Firepower</code></td>
+  <td style="text-align:left"><code>Cisco</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
@@ -5749,8 +5740,8 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Firepower</code></td>
-  <td style="text-align:left"><code>Cisco</code></td>
+  <td style="text-align:left"><code>startswith Fortigate</code></td>
+  <td style="text-align:left"><code>Fortinet</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -5776,6 +5767,15 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>has PAN-OS</code></td>
+  <td style="text-align:left"><code>Palo Alto Networks</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>NSSWeblog</code></td>
   <td style="text-align:left"><code>Zscaler</code></td>
   <td style="text-align:center">-</td>
@@ -5785,12 +5785,66 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Vault</code></td>
+  <td style="text-align:left"><code>Cyber-Ark</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Email</code></td>
+  <td style="text-align:left"><code>Forcepoint CSG</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Web</code></td>
+  <td style="text-align:left"><code>Forcepoint CSG</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ClearPass</code></td>
+  <td style="text-align:left"><code>Aruba Networks</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>akamai_siem</code></td>
+  <td style="text-align:left"><code>Akamai</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>has OSSEC</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NGFW</code></td>
+  <td style="text-align:left"><code>Forcepoint</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
@@ -5821,64 +5875,10 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Email</code></td>
-  <td style="text-align:left"><code>Forcepoint CSG</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Web</code></td>
-  <td style="text-align:left"><code>Forcepoint CSG</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>has Nozomi</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ClearPass</code></td>
-  <td style="text-align:left"><code>Aruba Networks</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Vault</code></td>
-  <td style="text-align:left"><code>Cyber-Ark</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>ExtraHop</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>RidgeSecurity</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>3</strong></td>
@@ -5903,6 +5903,15 @@
 </tr>
 <tr>
   <td style="text-align:left"></td>
+  <td style="text-align:left"><code>RidgeSecurity</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
   <td style="text-align:left"><code>FireEye</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
@@ -5911,17 +5920,8 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NGFW</code></td>
-  <td style="text-align:left"><code>Forcepoint</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>akamai_siem</code></td>
-  <td style="text-align:left"><code>Akamai</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>has Nozomi</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -5965,8 +5965,8 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>NSSFWlog</code></td>
   <td style="text-align:left"></td>
-  <td style="text-align:left"><code>Barracuda</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -5974,17 +5974,8 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NSSDNSlog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>F5</code></td>
+  <td style="text-align:left"><code>illusive</code></td>
+  <td style="text-align:left"><code>illusive</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -6001,64 +5992,10 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>WireX NFP</code></td>
-  <td style="text-align:left"><code>WireX</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>illusive</code></td>
-  <td style="text-align:left"><code>illusive</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>Darktrace</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Cortex XDR</code></td>
-  <td style="text-align:left"><code>Palo Alto Networks</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSFWlog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"></td>
   <td style="text-align:left"><code>Forcepoint CASB</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>SPS</code></td>
-  <td style="text-align:left"><code>OneIdentity</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
@@ -6433,6 +6370,69 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>WireX NFP</code></td>
+  <td style="text-align:left"><code>WireX</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>Darktrace</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>Barracuda</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Cortex XDR</code></td>
+  <td style="text-align:left"><code>Palo Alto Networks</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>F5</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SPS</code></td>
+  <td style="text-align:left"><code>OneIdentity</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSDNSlog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>IronDefense</code></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">-</td>
@@ -6487,8 +6487,8 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NSSEmaildlplog</code></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>WAF Gateway</code></td>
+  <td style="text-align:left"><code>Imperva</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -6496,8 +6496,8 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NSSAuditlog</code></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>WAF Gateway</code></td>
+  <td style="text-align:left"><code>Imperva Inc.</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -6505,61 +6505,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Fortiweb</code></td>
-  <td style="text-align:left"><code>Fortinet</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>OSP</code></td>
-  <td style="text-align:left"><code>Onapsis</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>OSSEC</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Fortigate</code></td>
-  <td style="text-align:left"><code>Fortinet</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>IronDefense</code></td>
-  <td style="text-align:left"><code>IronNet</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>IronDome</code></td>
-  <td style="text-align:left"><code>IronNet</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>ESA_CONSOLIDATED_LOG_EVENT</code></td>
+  <td style="text-align:left"><code>FTD</code></td>
   <td style="text-align:left"><code>Cisco</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -6568,25 +6514,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NSSTunnellog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>WithSecure™</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSCasbcrmlog</code></td>
+  <td style="text-align:left"><code>NSSCasbcloudstoragelog</code></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -6604,16 +6532,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>Medigate</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSCasbcloudstoragelog</code></td>
+  <td style="text-align:left"><code>NSSAuditlog</code></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -6622,7 +6541,34 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NSSCasbactivitylog</code></td>
+  <td style="text-align:left"><code>Fortigate</code></td>
+  <td style="text-align:left"><code>Fortinet</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>WithSecure™</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>OSP</code></td>
+  <td style="text-align:left"><code>Onapsis</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSEmaildlplog</code></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -6631,7 +6577,43 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NSSCasbemaillog</code></td>
+  <td style="text-align:left"><code>NSSEndpointdlplog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>!= Votiro</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ESA_CONSOLIDATED_LOG_EVENT</code></td>
+  <td style="text-align:left"><code>Cisco</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>OSSEC</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSCasbcollablog</code></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -6667,6 +6649,114 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>NSSWeblog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSCasbitsmlog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSTunnellog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>IronDefense</code></td>
+  <td style="text-align:left"><code>IronNet</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>IronDome</code></td>
+  <td style="text-align:left"><code>IronNet</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSCasbemaillog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSCasbrepolog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>Medigate</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSCasbactivitylog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Fortiweb</code></td>
+  <td style="text-align:left"><code>Fortinet</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>IDM</code></td>
+  <td style="text-align:left"><code>ForgeRock Inc</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NSSCasbcrmlog</code></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Admin Console</code></td>
   <td style="text-align:left"><code>Silverfort</code></td>
   <td style="text-align:center">1</td>
@@ -6687,96 +6777,6 @@
 <tr>
   <td style="text-align:left"><code>has Admin Console</code></td>
   <td style="text-align:left"><code>Silverfort</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>FTD</code></td>
-  <td style="text-align:left"><code>Cisco</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSCasbrepolog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>IDM</code></td>
-  <td style="text-align:left"><code>ForgeRock Inc</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"></td>
-  <td style="text-align:left"><code>!= Votiro</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSEndpointdlplog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSCasbitsmlog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSCasbcollablog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>NSSWeblog</code></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>WAF Gateway</code></td>
-  <td style="text-align:left"><code>Imperva</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>WAF Gateway</code></td>
-  <td style="text-align:left"><code>Imperva Inc.</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -7309,15 +7309,7 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has SECRET - CREATE</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has SECRET - VIEW</code></td>
+  <td style="text-align:left"><code>File Malware Event</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -7334,6 +7326,22 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>contains compromise</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has SECRET - CREATE</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has SECRET - VIEW</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -7368,14 +7376,6 @@
   <td style="text-align:left"><code>SessionClosed</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>File Malware Event</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center"><strong>2</strong></td>
@@ -7620,7 +7620,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains amaExternalLogService=true</code></td>
+  <td style="text-align:left"><code>!contains amaExternalLogService=true</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -7628,7 +7628,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!contains amaExternalLogService=true</code></td>
+  <td style="text-align:left"><code>contains amaExternalLogService=true</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -9035,6 +9035,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>block</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Prevented (Blocked)</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -9044,14 +9052,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>FAILED</code></td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>block</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -9688,30 +9688,6 @@
   <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has Audit</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>has Service</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Blocked</code></td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>illusive:access</code></td>
   <td style="text-align:center">2</td>
   <td style="text-align:center">1</td>
@@ -9736,6 +9712,30 @@
   <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>has Audit</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Service</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Blocked</code></td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>contains Allow</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">3</td>
@@ -9752,7 +9752,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Tunnel Event</code></td>
+  <td style="text-align:left"><code>4001</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -9760,7 +9760,7 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>4001</code></td>
+  <td style="text-align:left"><code>Tunnel Event</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -11648,8 +11648,8 @@
 </tbody>
 </table>
 <hr />
-<p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <a href="../index.html#tables">Tables</a> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
-<p>↑ <a href="../index.html#tables">Back to Tables Index</a></p>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 
 </div>
 <script>
