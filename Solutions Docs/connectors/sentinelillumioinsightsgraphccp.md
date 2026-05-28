@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Illumio Insight](../solutions/illumio-insight.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [IllumioInsightsGraph_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsGraph_CCP/IllumioInsightsGraph_ConnectorDefinition.json) |
+| **DCR Definition Files** | [IllumioInsightsGraph_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsGraph_CCP/IllumioInsightsGraph_DCR.json) |
 | **CCF Configuration** | [IllumioInsightsGraph_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illumio%20Insight/Data%20Connectors/IllumioInsightsGraph_CCP/IllumioInsightsGraph_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey` |
 

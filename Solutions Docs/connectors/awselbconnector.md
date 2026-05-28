@@ -15,6 +15,7 @@
 | **Used in Solutions** | [AWS ELB](../solutions/aws-elb.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSELBConnector_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_ConnectorDefinition.json) |
+| **DCR Definition Files** | [AWSELBConnector_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_DCR.json) |
 | **CCF Configuration** | [AWSELBConnector_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB/Data%20Connectors/AWSELBConnector_CCF/AWSELBConnector_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#amazon-web-services-elastic-load-balancing-via-codeless-connector-framework) |

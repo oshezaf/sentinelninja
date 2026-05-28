@@ -15,6 +15,7 @@
 | **Used in Solutions** | [meshStack](../solutions/meshstack.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [meshStackEventLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/Data%20Connectors/meshStackEventLogs_ccp/meshStackEventLogs_connectorDefinition.json) |
+| **DCR Definition Files** | [meshStackEventLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/Data%20Connectors/meshStackEventLogs_ccp/meshStackEventLogs_DCR.json) |
 | **CCF Configuration** | [meshStackEventLogs_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/Data%20Connectors/meshStackEventLogs_ccp/meshStackEventLogs_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
 

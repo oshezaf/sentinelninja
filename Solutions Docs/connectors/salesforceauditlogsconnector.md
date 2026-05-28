@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SalesforceAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [SalesforceAuditLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_DCR.json) |
 | **CCF Configuration** | [SalesforceAuditLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
 

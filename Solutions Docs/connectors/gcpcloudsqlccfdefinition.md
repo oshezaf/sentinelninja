@@ -15,6 +15,7 @@
 | **Used in Solutions** | [GoogleCloudPlatformSQL](../solutions/googlecloudplatformsql.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPCloudSQLLog_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL/Data%20Connectors/GCPCloudSQLLog_CCF/GCPCloudSQLLog_ConnectorDefinition.json) |
+| **DCR Definition Files** | [GCPCloudSQLLog_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL/Data%20Connectors/GCPCloudSQLLog_CCF/GCPCloudSQLLog_DCR.json) |
 | **CCF Configuration** | [GCPCloudSQLLog_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformSQL/Data%20Connectors/GCPCloudSQLLog_CCF/GCPCloudSQLLog_PollingConfig.json) |
 | **CCF Capabilities** | `GCP` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#gcp-cloud-sql-via-codeless-connector-framework) |

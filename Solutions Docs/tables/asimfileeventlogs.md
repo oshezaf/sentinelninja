@@ -178,8 +178,8 @@ This table is ingested by the following connectors:
 |:----------|:-------------------|
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
-| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
-| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` |
+| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
+| [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
 
 ---
 
@@ -213,22 +213,20 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/asimtables`
 
-## Selection Criteria Summary (2 criteria, 4 total references)
+## Selection Criteria Summary (1 criteria, 2 total references)
 
-References by type: 3 connectors, 0 content items, 0 ASIM parsers, 1 other parsers.
+References by type: 1 connectors, 0 content items, 0 ASIM parsers, 1 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | 1 | - | - | 1 | **2** |
-| `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 2 | - | - | - | **2** |
-| **Total** | **3** | **0** | **0** | **1** | **4** |
+| **Total** | **1** | **0** | **0** | **1** | **2** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Falcon Data Replicator` | `CrowdStrike` | 1 | - | - | 1 | **2** |
-| `Carbon Black Cloud` | `VMWare` | 2 | - | - | - | **2** |
 
 ---
 

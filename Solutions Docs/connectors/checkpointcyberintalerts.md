@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyberintArgosAlertsLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Data%20Connectors/CyberintArgosAlertsLogs_ccp/CyberintArgosAlertsLogs_connectorDefinition.json) |
+| **DCR Definition Files** | [CyberintArgosAlertsLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Data%20Connectors/CyberintArgosAlertsLogs_ccp/CyberintArgosAlertsLogs_DCR.json) |
 | **CCF Configuration** | [CyberintArgosAlertsLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Data%20Connectors/CyberintArgosAlertsLogs_ccp/CyberintArgosAlertsLogs_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#check-point-cyberint-alerts-connector-via-codeless-connector-platform) |

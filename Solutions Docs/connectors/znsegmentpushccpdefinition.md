@@ -15,6 +15,7 @@
 | **Used in Solutions** | [ZeroNetworks](../solutions/zeronetworks.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [ZNSegmentPush_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegment_CCP_Push/ZNSegmentPush_connectorDefinition.json) |
+| **DCR Definition Files** | [ZNSegmentPush_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegment_CCP_Push/ZNSegmentPush_DCR.json) |
 | **CCF Configuration** | [ZNSegmentPush_dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroNetworks/Data%20Connectors/ZNSegment_CCP_Push/ZNSegmentPush_dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |

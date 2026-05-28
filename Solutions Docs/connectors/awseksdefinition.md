@@ -15,6 +15,7 @@
 | **Used in Solutions** | [AWS EKS](../solutions/aws-eks.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSEKS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_ConnectorDefinition.json) |
+| **DCR Definition Files** | [AWSEKS_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_DCR.json) |
 | **CCF Configuration** | [AWSEKS_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20EKS/Data%20Connectors/AWSEKS_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#aws-eks-data-connector-via-codeless-connector-framework) |

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [ElasticAgent](../solutions/elasticagent.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ElasticAgent_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_ConnectorDefinition.json) |
+| **DCR Definition Files** | [ElasticAgent_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_DCR.json) |
 | **CCF Configuration** | [ElasticAgent_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 

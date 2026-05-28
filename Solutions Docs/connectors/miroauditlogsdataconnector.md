@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Miro](../solutions/miro.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MiroAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [MiroAuditLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_DCR.json) |
 | **CCF Configuration** | [MiroAuditLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Miro/Data%20Connectors/MiroAuditLogs_CCF/MiroAuditLogs_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 

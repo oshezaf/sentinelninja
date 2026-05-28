@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Alibaba Cloud Networking](../solutions/alibaba-cloud-networking.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AlibabaCloudNetworking_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking/Data%20Connectors/AlibabaCloudNetworking_CCP/AlibabaCloudNetworking_ConnectorDefinition.json) |
+| **DCR Definition Files** | [AlibabaCloudNetworking_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking/Data%20Connectors/AlibabaCloudNetworking_CCP/AlibabaCloudNetworking_DCR.json) |
 | **CCF Configuration** | [AlibabaCloudNetworking_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking/Data%20Connectors/AlibabaCloudNetworking_CCP/AlibabaCloudNetworking_PollingConfig.json) |
 | **CCF Capabilities** | `AliCloudSlsV1`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#alibaba-cloud-networking-data-connector-via-codeless-connector-framework) |

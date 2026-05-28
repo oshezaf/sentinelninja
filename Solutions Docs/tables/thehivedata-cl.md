@@ -6,6 +6,16 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✓ Yes |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
 ## Schema (35 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive%5CData%20Connectors%5CCCF/table_TheHiveData.json)
@@ -47,6 +57,20 @@
 | UpdatedAt | long | Updated at |
 | UpdatedBy | string | Updated by |
 | UserPermissions | dynamic | User permissions |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [TheHive](../solutions/thehive.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [TheHive (via Codeless Connector Framework)](../connectors/thehiveconnector.md) |  |
 
 ---
 

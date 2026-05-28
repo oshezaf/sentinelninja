@@ -15,6 +15,7 @@
 | **Used in Solutions** | [CTM360](../solutions/ctm360.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CTM360_HV_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/HackerView/CTM360_HV_ConnectorDefinition.json) |
+| **DCR Definition Files** | [CTM360_HV_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/HackerView/CTM360_HV_DCR.json) |
 | **CCF Configuration** | [CTM360_HV_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Data%20Connectors/CCF/HackerView/CTM360_HV_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#ctm360-hackerview-serverless) |

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [PingOne](../solutions/pingone.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [PingOneAuditLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne/Data%20Connectors/PingOneAuditLogs_ccp/PingOneAuditLogs_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [PingOneAuditLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne/Data%20Connectors/PingOneAuditLogs_ccp/PingOneAuditLogs_DCR.json) |
 | **CCF Configuration** | [PingOneAuditLogs__PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne/Data%20Connectors/PingOneAuditLogs_ccp/PingOneAuditLogs__PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#ping-one-via-codeless-connector-framework) |

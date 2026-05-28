@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Anvilogic](../solutions/anvilogic.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Anvilogic_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic/Data%20Connectors/AnviLogic_CCF/Anvilogic_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [Anvilogic_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic/Data%20Connectors/AnviLogic_CCF/Anvilogic_DCR.json) |
 | **CCF Configuration** | [Anvilogic_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Anvilogic/Data%20Connectors/AnviLogic_CCF/Anvilogic_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#anvilogic) |

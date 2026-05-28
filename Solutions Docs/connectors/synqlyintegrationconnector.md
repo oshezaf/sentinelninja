@@ -15,6 +15,7 @@
 | **Used in Solutions** | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [SynqlyIntegrationConnector_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SynqlyIntegrationConnector/Data%20Connectors/SynqlyIntegrationConnector_CCF/SynqlyIntegrationConnector_ConnectorDefinition.json) |
+| **DCR Definition Files** | [SynqlyIntegrationConnector_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SynqlyIntegrationConnector/Data%20Connectors/SynqlyIntegrationConnector_CCF/SynqlyIntegrationConnector_DCR.json) |
 | **CCF Configuration** | [SynqlyIntegrationConnector_DataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SynqlyIntegrationConnector/Data%20Connectors/SynqlyIntegrationConnector_CCF/SynqlyIntegrationConnector_DataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |

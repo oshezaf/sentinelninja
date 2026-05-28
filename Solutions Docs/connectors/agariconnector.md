@@ -17,6 +17,7 @@
 | **Used in Solutions** | [Agari](../solutions/agari.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Agari_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/Agari_ConnectorDefinition.json) |
+| **DCR Definition Files** | [Agari_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/Agari_DCR.json) |
 | **CCF Configuration** | [Agari_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/Agari_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging`, `Nested` |
 

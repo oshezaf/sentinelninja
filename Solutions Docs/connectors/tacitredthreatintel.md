@@ -15,6 +15,7 @@
 | **Used in Solutions** | [TacitRedThreatIntelligence](../solutions/tacitredthreatintelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [TacitRed_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_ConnectorDefinition.json) |
+| **DCR Definition Files** | [TacitRed_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_DCR.json) |
 | **CCF Configuration** | [TacitRed_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRedThreatIntelligence/Data%20Connectors/TacitRed_CCF/TacitRed_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |

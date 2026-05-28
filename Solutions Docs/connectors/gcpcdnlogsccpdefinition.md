@@ -15,6 +15,7 @@
 | **Used in Solutions** | [GoogleCloudPlatformCDN](../solutions/googlecloudplatformcdn.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPCDNLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformCDN/Data%20Connectors/GCPCDNLogs_ccp/GCPCDNLogs_ConnectorDefinition.json) |
+| **DCR Definition Files** | [GCPCDNLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformCDN/Data%20Connectors/GCPCDNLogs_ccp/GCPCDNLogs_DCR.json) |
 | **CCF Configuration** | [GCPCDNLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformCDN/Data%20Connectors/GCPCDNLogs_ccp/GCPCDNLogs_PollingConfig.json) |
 | **CCF Capabilities** | `GCP` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#google-cloud-platform-cdn-via-codeless-connector-framework) |

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [GoogleCloudPlatformNAT](../solutions/googlecloudplatformnat.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPNATLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformNAT/Data%20Connectors/GCPNATLogs_ccp/GCPNATLogs_ConnectorDefinition.json) |
+| **DCR Definition Files** | [GCPNATLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformNAT/Data%20Connectors/GCPNATLogs_ccp/GCPNATLogs_DCR.json) |
 | **CCF Configuration** | [GCPNATLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleCloudPlatformNAT/Data%20Connectors/GCPNATLogs_ccp/GCPNATLogs_PollingConfig.json) |
 | **CCF Capabilities** | `GCP` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#google-cloud-platform-nat-via-codeless-connector-framework) |

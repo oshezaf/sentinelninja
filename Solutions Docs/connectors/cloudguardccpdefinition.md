@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Check Point CloudGuard CNAPP](../solutions/check-point-cloudguard-cnapp.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CloudGuard_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP/Data%20Connectors/CloudGuard_ccp/CloudGuard_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [CloudGuard_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP/Data%20Connectors/CloudGuard_ccp/CloudGuard_DCR.json) |
 | **CCF Configuration** | [CloudGuard_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20CloudGuard%20CNAPP/Data%20Connectors/CloudGuard_ccp/CloudGuard_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#check-point-cloudguard-cnapp-connector-for-microsoft-sentinel) |

@@ -15,6 +15,7 @@
 | **Used in Solutions** | [CyeraDSPM](../solutions/cyeradspm.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [CyeraDSPMLogs_ConnectorDefinitionCCF.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM/Data%20Connectors/CyeraDSPM_CCF/CyeraDSPMLogs_ConnectorDefinitionCCF.json) |
+| **DCR Definition Files** | [CyeraDSPM_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM/Data%20Connectors/CyeraDSPM_CCF/CyeraDSPM_DCR.json) |
 | **CCF Configuration** | [CyeraDSPMLogs_DataConnectorPoller.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyeraDSPM/Data%20Connectors/CyeraDSPM_CCF/CyeraDSPMLogs_DataConnectorPoller.json) |
 | **CCF Capabilities** | `JwtToken` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#cyera-dspm-microsoft-sentinel-data-connector) |

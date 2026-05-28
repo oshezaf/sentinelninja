@@ -15,6 +15,7 @@
 | **Used in Solutions** | [QualysVM](../solutions/qualysvm.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [QualysVMHostLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Data%20Connectors/QualysVMHostLogs_ccp/QualysVMHostLogs_ConnectorDefinition.json) |
+| **DCR Definition Files** | [QualysVMHostLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Data%20Connectors/QualysVMHostLogs_ccp/QualysVMHostLogs_DCR.json) |
 | **CCF Configuration** | [QualysVMHostLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM/Data%20Connectors/QualysVMHostLogs_ccp/QualysVMHostLogs_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#qualys-vulnerability-management-via-codeless-connector-framework) |

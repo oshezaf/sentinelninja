@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Google Cloud Platform Cloud Run](../solutions/google-cloud-platform-cloud-run.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [GCPCloudRunLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run/Data%20Connectors/GCPCloudRunLog_CCF/GCPCloudRunLogs_ConnectorDefinition.json) |
+| **DCR Definition Files** | [GCPCloudRunLog_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run/Data%20Connectors/GCPCloudRunLog_CCF/GCPCloudRunLog_DCR.json) |
 | **CCF Configuration** | [GCPCloudRunLog_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run/Data%20Connectors/GCPCloudRunLog_CCF/GCPCloudRunLog_PollingConfig.json) |
 | **CCF Capabilities** | `GCP` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#gcp-cloud-run-via-codeless-connector-framework) |

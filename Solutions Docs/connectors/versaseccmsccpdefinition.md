@@ -15,6 +15,7 @@
 | **Used in Solutions** | [VersasecCMS](../solutions/versaseccms.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [VersasecCMS_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_ConnectorDefinition.json) |
+| **DCR Definition Files** | [VersasecCMS_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_DCR.json) |
 | **CCF Configuration** | [VersasecCMS_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VersasecCMS/Data%20Connectors/VersasecCMS_CCF/VersasecCMS_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#versaseccms) |

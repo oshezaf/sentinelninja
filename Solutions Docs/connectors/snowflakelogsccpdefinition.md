@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Snowflake](../solutions/snowflake.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SnowflakeLogs_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_ConnectorDefinition.json) |
+| **DCR Definition Files** | [SnowflakeLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_DCR.json) |
 | **CCF Configuration** | [SnowflakeLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Snowflake/Data%20Connectors/SnowflakeLogs_ccp/SnowflakeLogs_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#snowflake-via-codeless-connector-framework) |

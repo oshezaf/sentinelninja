@@ -15,6 +15,7 @@
 | **Used in Solutions** | [SAP S4 Cloud Public Edition](../solutions/sap-s4-cloud-public-edition.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SAPS4Public_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition/Data%20Connectors/SAPS4PublicPollerConnector/SAPS4Public_connectorDefinition.json) |
+| **DCR Definition Files** | [SAPS4Public_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition/Data%20Connectors/SAPS4PublicPollerConnector/SAPS4Public_DCR.json) |
 | **CCF Configuration** | [SAPS4Public_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20S4%20Cloud%20Public%20Edition/Data%20Connectors/SAPS4PublicPollerConnector/SAPS4Public_PollingConfig.json) |
 | **CCF Capabilities** | `Basic`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#sap-s4hana-cloud-public-edition) |

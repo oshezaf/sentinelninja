@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AliCloudActionTrail_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail/Data%20Connectors/AliCloudCloudTrailConnector_CCP/AliCloudActionTrail_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [AliCloudActionTrail_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail/Data%20Connectors/AliCloudCloudTrailConnector_CCP/AliCloudActionTrail_DCR.json) |
 | **CCF Configuration** | [AliCloudActionTrail_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20ActionTrail/Data%20Connectors/AliCloudCloudTrailConnector_CCP/AliCloudActionTrail_PollingConfig.json) |
 | **CCF Capabilities** | `AliCloudSlsV1`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#alibaba-cloud-actiontrail-via-codeless-connector-framework) |

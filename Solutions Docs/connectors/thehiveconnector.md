@@ -15,11 +15,22 @@
 | **Used in Solutions** | [TheHive](../solutions/thehive.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/ConnectorDefinition.json) |
+| **DCR Definition Files** | [DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/DCR.json) |
 | **CCF Configuration** | [PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#thehive-via-codeless-connector-framework) |
 
 The TheHive data connector provides the capability to ingest [TheHive](https://thehive-project.org/) security incident response platform data into Microsoft Sentinel through the REST API. Refer to [API documentation](https://docs.thehive-project.org/thehive/legacy/thehive3/api/api-guide/) for more information. The connector provides the ability to get cases, tasks, and alerts from TheHive and visualize them in Azure Sentinel.
+
+## Tables Ingested
+
+This connector ingests data into the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`TheHiveData_CL`](../tables/thehivedata-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
 ## Permissions
 

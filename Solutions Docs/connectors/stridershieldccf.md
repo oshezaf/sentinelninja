@@ -17,6 +17,7 @@
 | **Used in Solutions** | [Strider Shield](../solutions/strider-shield.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [StriderShield_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield/Data%20Connectors/StriderShieldCCF/StriderShield_ConnectorDefinition.json) |
+| **DCR Definition Files** | [StriderShield_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield/Data%20Connectors/StriderShieldCCF/StriderShield_DCR.json) |
 | **CCF Configuration** | [StriderShield_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Strider%20Shield/Data%20Connectors/StriderShieldCCF/StriderShield_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2` |
 

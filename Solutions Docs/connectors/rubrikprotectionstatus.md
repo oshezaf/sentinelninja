@@ -15,6 +15,7 @@
 | **Used in Solutions** | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [RubrikSecurityCloud_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikSecurityCloud_CCF/RubrikSecurityCloud_ConnectorDefinition.json) |
+| **DCR Definition Files** | [RubrikSecurityCloud_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikSecurityCloud_CCF/RubrikSecurityCloud_DCR.json) |
 | **CCF Configuration** | [RubrikSecurityCloud_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Data%20Connectors/RubrikSecurityCloud_CCF/RubrikSecurityCloud_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST` |
 

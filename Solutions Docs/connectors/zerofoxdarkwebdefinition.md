@@ -17,6 +17,7 @@
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_DarkWeb_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Dark%20Web/ZeroFoxThreatIntelligence_DarkWeb_ConnectorDefinition.json) |
+| **DCR Definition Files** | [ZeroFoxThreatIntelligence_DarkWeb_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Dark%20Web/ZeroFoxThreatIntelligence_DarkWeb_DCR.json) |
 | **CCF Configuration** | [ZeroFoxThreatIntelligence_DarkWeb_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Dark%20Web/ZeroFoxThreatIntelligence_DarkWeb_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
 

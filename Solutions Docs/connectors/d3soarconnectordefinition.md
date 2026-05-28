@@ -15,6 +15,7 @@
 | **Used in Solutions** | [D3SmartSOAR](../solutions/d3smartsoar.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [D3SOAR_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR/Data%20Connectors/D3SOAR_CCF/D3SOAR_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [D3SOAR_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR/Data%20Connectors/D3SOAR_CCF/D3SOAR_DCR.json) |
 | **CCF Configuration** | [D3SOAR_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR/Data%20Connectors/D3SOAR_CCF/D3SOAR_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#d3-smart-soar-incidents) |

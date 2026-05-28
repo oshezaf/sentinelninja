@@ -17,6 +17,7 @@
 | **Used in Solutions** | [AWS VPC Flow Logs](../solutions/aws-vpc-flow-logs.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [AWSVPCFlowLogs_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs/Data%20Connectors/AWSVPCFlowLogs_CCP/AWSVPCFlowLogs_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [AWSVPCFlowLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs/Data%20Connectors/AWSVPCFlowLogs_CCP/AWSVPCFlowLogs_DCR.json) |
 | **CCF Configuration** | [AWSVPCFlowLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20VPC%20Flow%20Logs/Data%20Connectors/AWSVPCFlowLogs_CCP/AWSVPCFlowLogs_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
 

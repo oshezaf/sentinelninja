@@ -50,6 +50,10 @@
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/ConnectorDefinition.json">ConnectorDefinition.json</a></td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/DCR.json">DCR.json</a></td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>CCF Configuration</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TheHive/Data%20Connectors/CCF/PollingConfig.json">PollingConfig.json</a></td>
 </tr>
@@ -64,6 +68,29 @@
 </tbody>
 </table>
 <p>The TheHive data connector provides the capability to ingest <a href="https://thehive-project.org/">TheHive</a> security incident response platform data into Microsoft Sentinel through the REST API. Refer to <a href="https://docs.thehive-project.org/thehive/legacy/thehive3/api/api-guide/">API documentation</a> for more information. The connector provides the ability to get cases, tasks, and alerts from TheHive and visualize them in Azure Sentinel.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/thehivedata-cl.html"><code>TheHiveData_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
 <h2 id="permissions">Permissions</h2>
 <p><strong>Resource Provider Permissions:</strong></p>
 <ul>

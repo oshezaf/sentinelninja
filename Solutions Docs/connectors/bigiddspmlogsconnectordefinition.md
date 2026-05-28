@@ -15,6 +15,7 @@
 | **Used in Solutions** | [BigID](../solutions/bigid.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [BigIDDSPMLogs_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID/Data%20Connectors/BigIDDSPMLogs_ccp/BigIDDSPMLogs_connectorDefinition.json) |
+| **DCR Definition Files** | [BigIDDSPMLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID/Data%20Connectors/BigIDDSPMLogs_ccp/BigIDDSPMLogs_DCR.json) |
 | **CCF Configuration** | [BigIDDSPMLogs_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BigID/Data%20Connectors/BigIDDSPMLogs_ccp/BigIDDSPMLogs_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging`, `MvExpand`, `Nested` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#bigid-dspm-connector) |

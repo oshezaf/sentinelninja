@@ -15,6 +15,7 @@
 | **Used in Solutions** | [ProofPointTap](../solutions/proofpointtap.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ProofpointTAP_defination.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofpointTAP_defination.json) |
+| **DCR Definition Files** | [ProofpointTAP_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofpointTAP_DCR.json) |
 | **CCF Configuration** | [ProofpointTAP_pollingconfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap/Data%20Connectors/ProofpointTAP_CCP/ProofpointTAP_pollingconfig.json) |
 | **CCF Capabilities** | `Basic` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#proofpoint-tap-via-codeless-connector-platform) |

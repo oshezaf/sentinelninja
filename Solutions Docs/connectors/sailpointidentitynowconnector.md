@@ -15,6 +15,7 @@
 | **Used in Solutions** | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [SailPointIdentityNow_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SearchEvent_CCF/SailPointIdentityNow_ConnectorDefinition.json) |
+| **DCR Definition Files** | [SailPointIdentityNow_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SearchEvent_CCF/SailPointIdentityNow_DCR.json) |
 | **CCF Configuration** | [SailPointIdentityNow_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SailPointIdentityNow/Data%20Connectors/SearchEvent_CCF/SailPointIdentityNow_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `POST` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#sailpoint-identitynow-using-azure-functions) |

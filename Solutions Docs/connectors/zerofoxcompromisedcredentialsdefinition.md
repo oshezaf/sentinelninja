@@ -17,6 +17,7 @@
 | **Used in Solutions** | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [ZeroFoxThreatIntelligence_CompromisedCredentials_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Compromised%20Credentials/ZeroFoxThreatIntelligence_CompromisedCredentials_ConnectorDefinition.json) |
+| **DCR Definition Files** | [ZeroFoxThreatIntelligence_CompromisedCredentials_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Compromised%20Credentials/ZeroFoxThreatIntelligence_CompromisedCredentials_DCR.json) |
 | **CCF Configuration** | [ZeroFoxThreatIntelligence_CompromisedCredentials_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ZeroFox%20Threat%20Intelligence/Data%20Connectors/Compromised%20Credentials/ZeroFoxThreatIntelligence_CompromisedCredentials_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
 

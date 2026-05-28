@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Trellix](../solutions/trellix.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [Trellix_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/Trellix_DataConnectorDefinition.json) |
+| **DCR Definition Files** | [Trellix_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/Trellix_DCR.json) |
 | **CCF Configuration** | [Trellix_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix/Data%20Connectors/Trellix_CCF/Trellix_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#trellix-endpoint-security-via-codeless-connector-framework) |

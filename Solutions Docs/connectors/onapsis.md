@@ -17,6 +17,7 @@
 | **Used in Solutions** | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [Onapsis.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend/Data%20Connectors/Onapsis.json) |
+| **DCR Definition Files** | [Onapsis_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend/Data%20Connectors/Onapsis_PUSH_CCP/Onapsis_DCR.json) |
 | **CCF Configuration** | [Onapsis_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Onapsis%20Defend/Data%20Connectors/Onapsis_PUSH_CCP/Onapsis_PollingConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |

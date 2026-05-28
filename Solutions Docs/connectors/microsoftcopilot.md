@@ -15,6 +15,7 @@
 | **Used in Solutions** | [Microsoft Copilot](../solutions/microsoft-copilot.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
 | **Connector Definition Files** | [MicrosoftCopilot_ConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot/Data%20Connectors/MicrosoftCopilot_ConnectorDefinition.json) |
+| **DCR Definition Files** | [MicrosoftCopilot_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot/Data%20Connectors/MicrosoftCopilot_DCR.json) |
 | **CCF Configuration** | [MicrosoftCopilot_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Copilot/Data%20Connectors/MicrosoftCopilot_PollingConfig.json) |
 | **CCF Capabilities** | `PurviewAudit` |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#microsoft-copilot) |

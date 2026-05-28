@@ -17,6 +17,7 @@
 | **Used in Solutions** | [Red Sift](../solutions/red-sift.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
 | **Connector Definition Files** | [RedSift_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift/Data%20Connectors/RedSift_ccp/RedSift_Definition.json) |
+| **DCR Definition Files** | [RedSift_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift/Data%20Connectors/RedSift_ccp/RedSift_DCR.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
 
 The [Red Sift](https://redsift.com/) connector provides the capability to ingest Red Sift authentication and email forensics events into Microsoft Sentinel using the CCP push model with DCE + DCR.
