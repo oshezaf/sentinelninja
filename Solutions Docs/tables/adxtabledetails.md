@@ -16,12 +16,6 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxtabledetails) |
 
-## Contents
-
-- [Schema](#schema)
-- [Content Items](#content-items-using-this-table)
-- [Resource Types](#resource-types)
-
 ## Schema (27 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxtabledetails)
@@ -57,16 +51,6 @@ Reference for ADXTableDetails table in Azure Monitor Logs.
 | Type | string | The name of the table |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**GitHub Only:** `TableName !contains "raw"`<br>`TableName contains "raw"`
-
-| Workbook |
-|:-------------|
-| [ADXvsLA](../content/github-only-adxvsla-0ddedeb5.md) |
 
 ## Resource Types
 

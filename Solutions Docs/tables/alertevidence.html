@@ -301,14 +301,13 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (7)</h2>
+<h2 id="solutions">Solutions (6)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></li>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
 <li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
-<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/vectra-xdr.html">Vectra XDR</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
@@ -329,7 +328,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (25)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (12)</h2>
 <h3 id="analytic-rules">Analytic Rules (2)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType == &quot;BrowserLaunchedToOpenUrl&quot;</code><br><code>EntityType in &quot;MailMessage,Url&quot;</code><br><code>ServiceSource == &quot;Microsoft Defender for Office 365&quot;</code></p>
 <table>
@@ -357,22 +356,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (16)</h3>
-<p><strong>Standalone Content:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/standalone-content-mde-evidenceforasingledevice-f173f87f-fa09-4258-8eaf-d95164318e7e-49f4057e.html">MDE_Evidenceforasingledevice</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
+<h3 id="hunting-queries">Hunting Queries (5)</h3>
 <p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
@@ -383,35 +367,11 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/github-only-baseline-comparison-4d17ae75-87e8-4272-9aec-16448b1430bc-6e7e6931.html">Baseline Comparison</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.html">Hunt for alerts correlated with Teams messages</a></td>
   <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/github-only-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-5cff556f.html">Hunt for alerts correlated with Teams messages</a></td>
-  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-identify-microsoft-defender-antivirus-detection-related-to-europium-d02275d6-45ba-4ddc-be90-8fa260aebe55-44e9cbeb.html">Identify Microsoft Defender Antivirus detection related to EUROPIUM</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.html">Identify acting user for reported phish</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.html">Identify acting user for reported phish</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-impersonateduserfootprint-aeb65be9-7a40-409e-a227-56ebbcf33de4-ee8b7da4.html">ImpersonatedUserFootprint</a></td>
-  <td style="text-align:left"><code>EntityType == &quot;User&quot;</code></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-knotweed-av-detections-24b0f252-08fd-4f70-b387-9015bea1b34c-89938558.html">KNOTWEED-AV Detections</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
@@ -419,32 +379,16 @@
   <td style="text-align:left"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.html">MDO daily detection summary report</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-suspiciousurlclicked-959f8d6a-53b8-488f-a628-999b3410702e-9def1dab.html">SuspiciousUrlClicked</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.html">URL click on ZAP email</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-2bbd70d9.html">URL click on ZAP email</a></td>
   <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.html">URLClick details based on malicious URL click alert</a></td>
   <td style="text-align:left"></td>
 </tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-8acf46eb.html">URLClick details based on malicious URL click alert</a></td>
-  <td style="text-align:left"></td>
-</tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (7)</h3>
+<h3 id="workbooks">Workbooks (5)</h3>
 <p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
 <table>
 <thead>
@@ -512,25 +456,6 @@
 </tr>
 </tbody>
 </table>
-<p><strong>GitHub Only:</strong></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
-  <td style="text-align:left"></td>
-</tr>
-<tr>
-  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
 <h3 id="asim-parsers">ASIM Parsers (1)</h3>
 <table>
@@ -551,8 +476,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (8 criteria, 9 total references)</h2>
-<p>References by type: 0 connectors, 9 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (7 criteria, 7 total references)</h2>
+<p>References by type: 0 connectors, 7 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -565,14 +490,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
 <tr>
   <td style="text-align:left"><code>ActionType == &quot;BrowserLaunchedToOpenUrl&quot;</code><br><code>EntityType in &quot;MailMessage,Url&quot;</code><br><code>ServiceSource == &quot;Microsoft Defender for Office 365&quot;</code></td>
   <td style="text-align:center">-</td>
@@ -590,7 +507,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>EntityType == &quot;User&quot;</code></td>
+  <td style="text-align:left"><code>ActionType == &quot;ChatCreated&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -632,10 +549,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>9</strong></td>
+  <td style="text-align:center"><strong>7</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>9</strong></td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 </tbody>
 </table>
@@ -653,15 +570,15 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>ChatCreated</code></td>
+  <td style="text-align:left"><code>BrowserLaunchedToOpenUrl</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>BrowserLaunchedToOpenUrl</code></td>
+  <td style="text-align:left"><code>ChatCreated</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -900,14 +817,6 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>User</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
-</tr>
-<tr>
   <td style="text-align:left"><code>MailMessage</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -925,6 +834,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>Device</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>User</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

@@ -1,6 +1,4 @@
-# Microsoft Exchange Security for Exchange On-Premises
-
-*Solution: Microsoft Exchange Security - Exchange On-Premises*
+# Microsoft Exchange Security - Exchange On-Premises
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Microsoft Exchange Security - Exchange On-Premises Logo" width="75" height="75">
 
@@ -20,7 +18,6 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-12-21 |
 | **Solution Folder** | [Microsoft Exchange Security - Exchange On-Premises](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Exchange%20Security%20-%20Exchange%20On-Premises) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-exchangesecurityinsights) · Popularity: 🔵 Medium (79%) |
 
 The Exchange Security Audit and Configuration Insight solution analyze Exchange On-Premises configuration and logs from a security lens to provide insights and alerts.
 

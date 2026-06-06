@@ -1,6 +1,4 @@
-# TacitRed SentinelOne IOC Automation for Microsoft Sentinel
-
-*Solution: TacitRed-SentinelOne*
+# TacitRed-SentinelOne
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/tacitred_logo.svg" alt="TacitRed-SentinelOne Logo" width="75" height="75">
 
@@ -19,9 +17,8 @@
 | **Version** | 3.0.3 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-12-01 |
-| **Last Updated** | 2026-03-09 |
+| **Last Updated** | 2025-12-10 |
 | **Solution Folder** | [TacitRed-SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TacitRed-SentinelOne) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-tacitred-s1-ioc-auto) · Popularity: 🔵 Medium (71%) |
 
 The TacitRed SentinelOne IOC Automation solution provides example playbooks that demonstrate how to consume TacitRed threat intelligence from Microsoft Sentinel and prepare indicators for ingestion into SentinelOne.
 

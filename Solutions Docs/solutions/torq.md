@@ -1,6 +1,4 @@
-# Trigger Torq Workflows from Microsoft Sentinel Incidents
-
-*Solution: Torq*
+# Torq
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Torq.svg" alt="Torq Logo" width="75" height="75">
 
@@ -20,7 +18,6 @@
 | **Author** | Torq - support@torq.io |
 | **First Published** | 2024-12-24 |
 | **Solution Folder** | [Torq](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Torq) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/torqtechnologiesltd2020.torq_sentinel_solution) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (71%) |
 
 [Torq](https://www.recordedfuture.com/) is the AI-Driven Hyperautomation Platform that helps security teams automate more faster
 

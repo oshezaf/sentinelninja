@@ -26,7 +26,6 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) |  | ? | ✗ | ? |
 | [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "MailItemsAccessed"` | ✓ | ✗ | ✓ |
-| [`EntraIdSignInEvents`](../tables/entraidsigninevents.md) |  | ? | ✗ | ? |
 
 ---
 

@@ -144,21 +144,15 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (1)
 
-### Workbooks (2)
+### Workbooks (1)
 
 **In solution [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZimperiumMTDCCFWorkbooks](../content/zimperium-mobile-threat-defense-zimperiummtdccfworkbooks-2bb0d331.md) |  |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [ZimperiumMTDCCFWorkbooks](../content/github-only-zimperiummtdccfworkbooks-92ace659.md) |  |
 
 ---
 

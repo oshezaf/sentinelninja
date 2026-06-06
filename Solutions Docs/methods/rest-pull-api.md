@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **50** |
-| Active | 44 |
+| Active | 42 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 5 |
+| Unpublished ⚠️ | 7 |
 
 ## Connectors Using This Method
 
@@ -31,7 +31,7 @@ The collection method for these connectors could not be automatically determined
 | [API Protection](../connectors/42crunchapiprotection.md) 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
-| [Authomize Data Connector](../connectors/authomize.md) 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
+| [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
 | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
@@ -63,7 +63,7 @@ The collection method for these connectors could not be automatically determined
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
+| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [SaaS Security](../connectors/valencesecurity.md) 🔶 | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | [SenservaPro (Preview)](../connectors/senservapro.md) 🔶 | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |

@@ -61,7 +61,7 @@ Reference for Heartbeat table in Azure Monitor Logs.
 | Version | string | Version of the agent. |
 | VMUUID | string | Unique identifier of the virtual machine. |
 
-## Solutions (11)
+## Solutions (10)
 
 This table is used by the following solutions:
 
@@ -73,7 +73,6 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
-- [Standalone Content](../solutions/standalone-content.md)
 - [VMware SASE](../solutions/vmware-sase.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 
@@ -87,9 +86,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (20)
+## Content Items Using This Table (11)
 
-### Analytic Rules (3)
+### Analytic Rules (1)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -97,14 +96,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [M2131_AssetStoppedLogging](../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223-416aad3a.md) |  |
 
-**Standalone Content:**
-
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Missing Domain Controller Heartbeat](../content/standalone-content-missing-domain-controller-heartbeat-b8b8ba09-1e89-45a1-8bd7-691cd23bfa32-3caae499.md) |  |
-| [OMI Vulnerability Exploitation](../content/standalone-content-omi-vulnerability-exploitation-3cc5ccd8-b416-4141-bb2d-4eba370e37a5-f90e5eee.md) |  |
-
-### Workbooks (17)
+### Workbooks (10)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 
@@ -160,18 +152,6 @@ This table is ingested by the following connectors:
 | Workbook |
 |:-------------|
 | [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md) |
-
-**GitHub Only:**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
-| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
-| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
-| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
-| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
-| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
-| [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `Solutions contains "windowsFirewall"` |
 
 ## Resource Types
 

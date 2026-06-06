@@ -1,6 +1,4 @@
-# Cisco Firepower eStreamer
-
-*Solution: Cisco Firepower EStreamer*
+# Cisco Firepower EStreamer
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="Cisco Firepower EStreamer Logo" width="75" height="75">
 
@@ -20,7 +18,6 @@
 | **Author** | Cisco |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [Cisco Firepower EStreamer](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20Firepower%20EStreamer) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-firepower-estreamer) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Cisco Firepower](https://www.cisco.com/site/in/en/products/security/firewalls/index.html) eStreamer Solution for Microsoft Sentinel works with [Cisco Event Streamer](https://github.com/CiscoSecurity/fp-05-microsoft-sentinel-connector) (also known as eStreamer) and allows you to stream System intrusion, discovery and connection data from Firepower Management Center (FMC) or managed device to Microsoft Sentinel 

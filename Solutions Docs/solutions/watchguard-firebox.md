@@ -1,4 +1,6 @@
-# Watchguard Firebox
+# WatchGuard Firebox for Microsoft Sentinel
+
+*Solution: Watchguard Firebox*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/WatchGuard_Logo-SVG_Format.svg" alt="Watchguard Firebox Logo" width="75" height="75">
 
@@ -18,6 +20,7 @@
 | **Author** | WatchGuard |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [Watchguard Firebox](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Watchguard%20Firebox) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/watchguard-technologies.watchguard_firebox_mss) · Popularity: 🔵 Medium (77%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [WatchGuard](https://www.watchguard.com/) Firebox Microsoft Sentinel Solutions enables delivery of Watchguard Firewall log events into Microsoft Sentinel.

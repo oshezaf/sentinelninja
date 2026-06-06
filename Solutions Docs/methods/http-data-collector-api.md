@@ -19,9 +19,9 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **124** |
-| Active | 86 |
+| Active | 84 |
 | Deprecated 🚫 | 27 |
-| Unpublished ⚠️ | 27 |
+| Unpublished ⚠️ | 29 |
 
 ### By Collection Method
 
@@ -45,7 +45,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | [Armorblox](../connectors/armorblox.md) 🔶 | [Azure Function](../methods/azure-function.md) | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
-| [Authomize Data Connector](../connectors/authomize.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Authomize | 1 | [Authomize](../solutions/authomize.md) |
+| [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Authomize | 1 | [Authomize](../solutions/authomize.md) |
 | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
@@ -104,7 +104,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶 | [Azure Function](../methods/azure-function.md) | Qualys | 2 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Rapid7 | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
-| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
+| [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [Rubrik Security Cloud data connector](../connectors/rubriksecuritycloudazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | Rubrik, Inc | 4 | [RubrikSecurityCloud](../solutions/rubriksecuritycloud.md) |
 | [SaaS Security](../connectors/valencesecurity.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [SailPoint IdentityNow](../connectors/sailpointidentitynow.md) 🔶 | [Azure Function](../methods/azure-function.md) | SailPoint | 2 | [SailPointIdentityNow](../solutions/sailpointidentitynow.md) |
