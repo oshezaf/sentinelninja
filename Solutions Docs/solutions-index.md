@@ -8,7 +8,7 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 ---
 
-**531 solutions** with 493 unique connectors and 418 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
+**531 solutions** with 496 unique connectors and 418 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 

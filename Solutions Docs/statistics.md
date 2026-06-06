@@ -41,7 +41,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
 | Solutions | **531** | 470 | 61 |
-| With Connectors | **343** | 299 | 44 |
+| With Connectors | **346** | 302 | 44 |
 | With Content | **418** | 374 | 44 |
 
 ### Support Ownership
@@ -58,7 +58,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Count |
 |:-------|------:|
-| Unique Connectors | 493 |
+| Unique Connectors | 496 |
 | Tables Used | 965 |
 
 ## Connectors
@@ -69,8 +69,8 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **493** | 412 | 42 | 39 |
-| Discovered 🔍 | **133** | 3 | 109 | 21 |
+| In Solutions | **496** | 415 | 42 | 39 |
+| Discovered 🔍 | **130** | 0 | 109 | 21 |
 | **Total** | **626** | **415** | **151** | **60** |
 
 ### Support Ownership

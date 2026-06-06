@@ -1,6 +1,4 @@
-# 🔍 Cisco Meraki (using REST API)
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+# Cisco Meraki (using REST API)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CiscoMeraki/Connector/MerakiConnector/logo.jpg" alt="" width="75" height="75">
 

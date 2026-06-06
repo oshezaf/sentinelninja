@@ -94,7 +94,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Onapsis Defend Integration](../connectors/onapsis.md) | [CCF Push](../methods/ccf-push.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | [OneTrust](../connectors/onetrustpush.md) | [CCF Push](../methods/ccf-push.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
 | [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) 🔶 | [CCF](../methods/ccf.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
-| [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) 🔍 | [CCF Push](../methods/ccf-push.md) | Pathlock Inc. | 1 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
+| [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) | [CCF Push](../methods/ccf-push.md) | Pathlock Inc. | 1 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) | [CCF Push](../methods/ccf-push.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
 | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | [CCF Push](../methods/ccf-push.md) | SAP SE | 1 | [SAP LogServ](../solutions/sap-logserv.md) |

@@ -1,6 +1,4 @@
-# 🔍 Pathlock Threat Detection and Response Integration
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+# Pathlock Threat Detection and Response Integration
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/pathlock_logo.svg" alt="" width="75" height="75">
 

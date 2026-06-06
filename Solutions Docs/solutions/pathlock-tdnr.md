@@ -43,11 +43,9 @@ This out-of-the-box connector simplifies secure event forwarding from SAP to Mic
 
 ## Data Connectors
 
-This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)**:
 
-- [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) ⚠️
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+- [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md)
 
 ## Tables Used
 

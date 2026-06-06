@@ -52,10 +52,10 @@ This solution depends on **1 other solution(s)**:
 
 ## Data Connectors
 
-This solution has **2 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 - [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) ⚠️
-- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ⚠️
+- [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md)
 
 Connectors from dependency solutions:
 
