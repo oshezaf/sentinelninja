@@ -41,10 +41,8 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [ASimNetworkSessionOpenSystemsFirewall](../parsers/asimnetworksessionopensystemsfirewall.md) | [Open Systems](../solutions/open-systems.md) ⚠️ |  |
-| [vimNetworkSessionOpenSystemsFirewall](../parsers/vimnetworksessionopensystemsfirewall.md) | [Open Systems](../solutions/open-systems.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+| [ASimNetworkSessionOpenSystemsFirewall](../parsers/asimnetworksessionopensystemsfirewall.md) | [Open Systems](../solutions/open-systems.md) |  |
+| [vimNetworkSessionOpenSystemsFirewall](../parsers/vimnetworksessionopensystemsfirewall.md) | [Open Systems](../solutions/open-systems.md) |  |
 
 ---
 

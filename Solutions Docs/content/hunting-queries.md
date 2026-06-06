@@ -1001,8 +1001,8 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Hunting for sender patterns](github-only-hunting-for-sender-patterns-68aa199c-259b-4bb0-8e7a-8ed6f96c5525-a7084d35.md) | InitialAccess | 🔗 GitHub Only |
 | [Hunting for user signals-clusters](microsoft-defender-xdr-hunting-for-user-signals-clusters-8c852f12-499f-499b-afc1-25c50aa9b462-97023f5f.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Hunting for user signals-clusters](github-only-hunting-for-user-signals-clusters-8c852f12-499f-499b-afc1-25c50aa9b462-c62773ae.md) | InitialAccess | 🔗 GitHub Only |
-| [Hunting Query for Failed CSPM Scan Items](prancer-pensuiteai-integration-hunting-query-for-failed-cspm-scan-items-322591e4-5b68-4574-be00-2e1b618eab7c-0f2f8db3.md) ⚠️ | Collection | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [Hunting Query for High Severity PAC findings](prancer-pensuiteai-integration-hunting-query-for-high-severity-pac-findings-37cb2dea-7a62-4a8d-923b-d588c6372608-4b151227.md) ⚠️ | Collection | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Hunting Query for Failed CSPM Scan Items](prancer-pensuiteai-integration-hunting-query-for-failed-cspm-scan-items-322591e4-5b68-4574-be00-2e1b618eab7c-f3f9773b.md) | Collection | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Hunting Query for High Severity PAC findings](prancer-pensuiteai-integration-hunting-query-for-high-severity-pac-findings-37cb2dea-7a62-4a8d-923b-d588c6372608-27744bcd.md) | Collection | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Hurricane Panda activity](github-only-hurricane-panda-activity-c8a459ae-cb3e-46c0-82b1-670649dd3e7a-f24f7fba.md) | - | 🔗 GitHub Only |
 
 ## I

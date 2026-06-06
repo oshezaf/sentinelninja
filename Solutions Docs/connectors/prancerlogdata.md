@@ -1,6 +1,6 @@
-# 🔍 Prancer Data Connector
+# Prancer Data Connector
 
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Prancer.svg" alt="" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -12,7 +12,7 @@
 |:----------|:------|
 | **Connector ID** | `PrancerLogData` |
 | **Publisher** | Prancer |
-| **Used in Solutions** | [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| **Used in Solutions** | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [PrancerLogData.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration/Data%20Connectors/PrancerLogData.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |

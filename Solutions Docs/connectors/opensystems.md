@@ -1,6 +1,6 @@
-# 🔍 Open Systems Data Connector
+# Open Systems Data Connector
 
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/opensystems_logo.svg" alt="" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 

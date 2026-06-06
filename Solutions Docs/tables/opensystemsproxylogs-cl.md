@@ -41,10 +41,8 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [ASimWebSessionOpenSystemsSecureWebGateway](../parsers/asimwebsessionopensystemssecurewebgateway.md) | [Open Systems](../solutions/open-systems.md) ⚠️ |  |
-| [vimWebSessionOpenSystemsProxySecureWebGateway](../parsers/vimwebsessionopensystemsproxysecurewebgateway.md) | [Open Systems](../solutions/open-systems.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+| [ASimWebSessionOpenSystemsSecureWebGateway](../parsers/asimwebsessionopensystemssecurewebgateway.md) | [Open Systems](../solutions/open-systems.md) |  |
+| [vimWebSessionOpenSystemsProxySecureWebGateway](../parsers/vimwebsessionopensystemsproxysecurewebgateway.md) | [Open Systems](../solutions/open-systems.md) |  |
 
 ---
 

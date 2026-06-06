@@ -249,7 +249,7 @@
 | [CyberArkEPM - Uncommon Windows process started from System folder](cyberarkepm-cyberarkepm-uncommon-windows-process-started-from-system-folder-16b940d2-aaf8-4eaa-a5e1-05df5f5c3d43-515a91a8.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - Unexpected executable extension](cyberarkepm-cyberarkepm-unexpected-executable-extension-911d5b75-a1ce-4f13-a839-9c2474768696-814c115f.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkEPM - Unexpected executable location](cyberarkepm-cyberarkepm-unexpected-executable-location-c1fcbbd7-74f8-4f32-8116-0a533ebd3878-f588775e.md) | Medium | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) |
-| [CyberBlindSpot - Any Issue Detected](ctm360-cyberblindspot-any-issue-detected-abe1a662-d00d-482e-aa68-9394622ae02e-cd8c88d0.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
+| [CyberBlindSpot - Any Issue Detected](ctm360-cyberblindspot-any-issue-detected-abe1a662-d00d-482e-aa68-9394622ae02e-cd8c88d0.md) | Informational | 📦 [CTM360](../solutions/ctm360.md) |
 | [Cyble Advisory Alerts Advisory](cyble-vision-cyble-advisory-alerts-advisory-1932dcfd-a32e-49f9-a212-5bcd084fbd78-26eb1bc8.md) ⚠️ | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyble Vision Alerts Assets](cyble-vision-cyble-vision-alerts-assets-0012714c-c595-4dcd-8949-4a5c1d49aaa8-26bf60ce.md) | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |
 | [Cyble Vision Alerts Bitbucket](cyble-vision-cyble-vision-alerts-bitbucket-f3c25011-4509-41c8-be27-35d891531c39-c74f9461.md) | Low | 📦 [Cyble Vision](../solutions/cyble-vision.md) |

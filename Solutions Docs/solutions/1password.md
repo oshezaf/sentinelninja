@@ -39,12 +39,10 @@ a.  [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
+This solution provides **2 data connector(s)**:
 
-- [1Password](../connectors/1password.md) ⚠️
+- [1Password](../connectors/1password.md)
 - [1Password (Serverless)](../connectors/1passwordccpdefinition.md)
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

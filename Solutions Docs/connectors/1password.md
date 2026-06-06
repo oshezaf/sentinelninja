@@ -1,6 +1,4 @@
-# 🔍 1Password
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+# 1Password
 
 <img src="https://raw.githubusercontent.com/azurekid/Azure-Sentinel/master/Logos/1password.svg" alt="" width="75" height="75">
 

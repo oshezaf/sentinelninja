@@ -17,6 +17,8 @@
 <div class="doc-content">
 <h1 id="azure-data-lake-storage-gen1-solution-for-sentinel">Azure Data Lake Storage Gen1 solution for Sentinel</h1>
 <p><em>Solution: Azure Data Lake Storage Gen1</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Azure Data Lake Storage Gen1 Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
@@ -45,6 +47,14 @@
   <td style="text-align:left">domains</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">2.0.1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Microsoft - support@microsoft.com</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>First Published</strong></td>
   <td style="text-align:left">2022-06-24</td>
 </tr>
@@ -58,15 +68,15 @@
 </tr>
 </tbody>
 </table>
-<p>Azure Data Lake Storage Gen1 solution for Sentinel</p>
+<p>The <a href="https://docs.microsoft.com/azure/data-lake-store/data-lake-store-overview">Azure Data Lake Storage Gen1</a> solution for Microsoft Sentinel enables you to ingest Azure Data Lake Storage Gen1 diagnostics logs using Diagnostic Settings into Microsoft Sentinel.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://docs.microsoft.com/azure/azure-monitor/essentials/diagnostic-settings?tabs=portal">Azure Monitor Resource Diagnostics</a></p>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/azuredatalakestoragegen1-ccp.html">Azure Data Lake Storage Gen1</a> ⚠️ 🔶</li>
+<li><a href="../connectors/azuredatalakestoragegen1-ccp.html">Azure Data Lake Storage Gen1</a> 🔶</li>
 </ul>
-<blockquote>
-<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-</blockquote>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>

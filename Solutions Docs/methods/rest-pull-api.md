@@ -62,7 +62,7 @@ The collection method for these connectors could not be automatically determined
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
-| [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [SaaS Security](../connectors/valencesecurity.md) 🔶 | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |

@@ -26,7 +26,7 @@
 | [Valimail Enforce - High-Value User Management Event](valimailenforce-valimail-enforce-high-value-user-management-event-e960f5b0-cd80-474a-996a-013ff3989772-199686de.md) | High | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [Valimail Enforce - Unusual Rate of Configuration Changes or User Additions](valimailenforce-valimail-enforce-unusual-rate-of-configuration-changes-or-user-additions-3cbb78d9-81ac-42c9-b3cd-7e6baea7d9ff-19771ced.md) | Medium | 📦 [ValimailEnforce](../solutions/valimailenforce.md) |
 | [vArmour AppController - SMB Realm Traversal](varmour-application-controller-varmour-appcontroller-smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e-f56ac1bb.md) | Medium | 📦 [vArmour Application Controller](../solutions/varmour-application-controller.md) |
-| [Vaults Alerts for Prancer](prancer-pensuiteai-integration-vaults-alerts-for-prancer-0b76eef3-5dc0-41b1-9f67-fffa7783f5f6-72954fb5.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Vaults Alerts for Prancer](prancer-pensuiteai-integration-vaults-alerts-for-prancer-0b76eef3-5dc0-41b1-9f67-fffa7783f5f6-9e72e923.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [vCenter - Root impersonation](vmware-vcenter-vcenter-root-impersonation-f1fcb22c-b459-42f2-a7ee-7276b5f1309c-9fa02551.md) | Medium | 📦 [VMware vCenter](../solutions/vmware-vcenter.md) |
 | [Vectra Account's Behaviors](vectra-ai-detect-vectra-account's-behaviors-ce54b5d3-4c31-4eaf-a73e-31412270b6ab-45fe2d23.md) | Informational | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
 | [Vectra AI Detect - Detections with High Severity](vectra-ai-detect-vectra-ai-detect-detections-with-high-severity-39e48890-2c02-487e-aa9e-3ba494061798-5f2d3995.md) | High | 📦 [Vectra AI Detect](../solutions/vectra-ai-detect.md) |
@@ -63,8 +63,8 @@
 | [VIP Mailbox manipulation](microsoft-exchange-security-exchange-on-premises-vip-mailbox-manipulation-5170c3c4-b8c9-485c-910d-a21d965ee181-521c4b8b.md) | Medium | 📦 [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Virtual Lab Deleted](veeam-virtual-lab-deleted-384e92a7-103c-4a47-945d-381ae9653f91-65be69c1.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
 | [Virtual Lab Settings Updated](veeam-virtual-lab-settings-updated-a21eccd5-0148-4f88-a5d7-a8f86e9e4d8e-be075442.md) | Low | 📦 [Veeam](../solutions/veeam.md) |
-| [Virtual Machines Alerts for Prancer](prancer-pensuiteai-integration-virtual-machines-alerts-for-prancer-c13b025c-ea31-4e4b-8e08-955b8fa91fa0-cecfef04.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
-| [VirtualNetworkPeerings Alerts From Prancer](prancer-pensuiteai-integration-virtualnetworkpeerings-alerts-from-prancer-6bd031cf-78d0-4edd-8191-60f84b6eef7a-4bd81a33.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Virtual Machines Alerts for Prancer](prancer-pensuiteai-integration-virtual-machines-alerts-for-prancer-c13b025c-ea31-4e4b-8e08-955b8fa91fa0-aef7c25d.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [VirtualNetworkPeerings Alerts From Prancer](prancer-pensuiteai-integration-virtualnetworkpeerings-alerts-from-prancer-6bd031cf-78d0-4edd-8191-60f84b6eef7a-31453452.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [VMware Cloud Web Security - Data Loss Prevention Violation](vmware-sase-vmware-cloud-web-security-data-loss-prevention-violation-d811ef72-66b9-43a3-ba29-cd9e4bf75b74-2c6b5792.md) | Medium | 📦 [VMware SASE](../solutions/vmware-sase.md) |
 | [VMware Cloud Web Security - Policy Change Detected](vmware-sase-vmware-cloud-web-security-policy-change-detected-3efebd49-c985-431b-9da8-d7d397092d18-1ae30e0f.md) | Informational | 📦 [VMware SASE](../solutions/vmware-sase.md) |
 | [VMware Cloud Web Security - Policy Publish Event](vmware-sase-vmware-cloud-web-security-policy-publish-event-b26a7d97-6b6e-43ab-870e-eb18460ae602-67b089d5.md) | Informational | 📦 [VMware SASE](../solutions/vmware-sase.md) |
@@ -101,8 +101,6 @@
 | [Vulerabilities](ridgesecurity-vulerabilities-d096643d-6789-4c74-8893-dd3fc8a94069-d1a748f6.md) | High | 📦 [RidgeSecurity](../solutions/ridgesecurity.md) |
 | [Vulnerable Machines related to log4j CVE-2021-44228](apache-log4j-vulnerability-detection-vulnerable-machines-related-to-log4j-cve-2021-44228-3d71fc38-f249-454e-8479-0a358382ef9a-5fca98f8.md) | High | 📦 [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md) |
 | [Vulnerable Machines related to OMIGOD CVE-2021-38647](standalone-content-vulnerable-machines-related-to-omigod-cve-2021-38647-4d94d4a9-dc96-450a-9dea-4d4d4594199b-99c76b14.md) | High | 📄 Standalone Content |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

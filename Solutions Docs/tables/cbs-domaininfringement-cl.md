@@ -36,9 +36,7 @@
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [CBS_DomainInfringement](../parsers/cbs-domaininfringement.md) | [CTM360](../solutions/ctm360.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+| [CBS_DomainInfringement](../parsers/cbs-domaininfringement.md) | [CTM360](../solutions/ctm360.md) |  |
 
 ---
 

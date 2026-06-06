@@ -21,8 +21,6 @@ Generic alert that triggers when ANY CyberBlindSpot issue/incident is detected i
 | **Required Connectors** | [CTM360CBSConnectorDefinition](../connectors/ctm360cbsconnectordefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Analytic%20Rules/CBSAnyIssueDetected.yaml) |
 
-> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
-
 ## Tables Used
 
 This content item queries data from the following tables:

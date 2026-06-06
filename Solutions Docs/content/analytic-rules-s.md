@@ -92,7 +92,7 @@
 | [Silverfort - Log4Shell Incident](silverfort-silverfort-log4shell-incident-d6abed70-4043-46da-9304-a98f3446fa5f-69483854.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
 | [Silverfort - NoPacBreach Incident](silverfort-silverfort-nopacbreach-incident-bdfd2c45-10a0-44e7-a90a-ba7b6bdd9ff2-486f0310.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
 | [Silverfort - UserBruteForce Incident](silverfort-silverfort-userbruteforce-incident-46ff357b-9e98-465b-9e45-cd52fa4a7522-aec505ad.md) | High | 📦 [Silverfort](../solutions/silverfort.md) |
-| [Sites Alerts for Prancer](prancer-pensuiteai-integration-sites-alerts-for-prancer-bbeb2f26-cb99-4e4b-900f-24ce9809142d-a31ca03e.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Sites Alerts for Prancer](prancer-pensuiteai-integration-sites-alerts-for-prancer-bbeb2f26-cb99-4e4b-900f-24ce9809142d-5b489163.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [SlackAudit - Empty User Agent](slackaudit-slackaudit-empty-user-agent-04528635-a5f1-438b-ab74-21ca7bc3aa32-dc53a71b.md) | Low | 📦 [SlackAudit](../solutions/slackaudit.md) |
 | [SlackAudit - Multiple archived files uploaded in short period of time](slackaudit-slackaudit-multiple-archived-files-uploaded-in-short-period-of-time-3db0cb83-5fa4-4310-a8a0-d8d66183f0bd-21e5a2f1.md) | Low | 📦 [SlackAudit](../solutions/slackaudit.md) |
 | [SlackAudit - Multiple failed logins for user](slackaudit-slackaudit-multiple-failed-logins-for-user-93a91c37-032c-4380-847c-957c001957ad-b5073227.md) | Medium | 📦 [SlackAudit](../solutions/slackaudit.md) |
@@ -141,10 +141,10 @@
 | [Star Blizzard C2 Domains August 2022](standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) | High | 📄 Standalone Content |
 | [Starting or Stopping HealthService to Avoid Detection](windows-security-events-starting-or-stopping-healthservice-to-avoid-detection-2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae-cde90857.md) | Medium | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [Stopping multiple processes using taskkill](microsoft-defender-xdr-stopping-multiple-processes-using-taskkill-4dd31bd5-11a3-4b9c-a7c5-4927ab4f2a77-6e396de6.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| [Storage Accounts Alerts From Prancer](prancer-pensuiteai-integration-storage-accounts-alerts-from-prancer-4adf2b5d-6b88-4b96-8cc2-a3c7fbbee10b-bd7c3258.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Storage Accounts Alerts From Prancer](prancer-pensuiteai-integration-storage-accounts-alerts-from-prancer-4adf2b5d-6b88-4b96-8cc2-a3c7fbbee10b-3428feb9.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Storage Deleted](veeam-storage-deleted-7cf8c19b-6cd2-4d0c-814b-45d34e68568b-1589fb76.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Storage Settings Updated](veeam-storage-settings-updated-be47e508-e35b-4c63-979b-a75b72102344-eda2a675.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
-| [Subnets Alerts for Prancer](prancer-pensuiteai-integration-subnets-alerts-for-prancer-10be8f37-d83c-4b7e-81c2-1271c51ac09f-bc56763f.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Subnets Alerts for Prancer](prancer-pensuiteai-integration-subnets-alerts-for-prancer-10be8f37-d83c-4b7e-81c2-1271c51ac09f-e9a03647.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Subscription moved to another tenant](azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.md) | Low | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [Subtenant Deleted](veeam-subtenant-deleted-1c23715c-3a28-4b98-b135-fece6e7dcb8b-220743c9.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Subtenant Updated](veeam-subtenant-updated-e1d0d9ce-b7c9-4e28-883d-04429f80d6d7-75b596f8.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
@@ -183,8 +183,6 @@
 | [Suspicious Sign In Followed by MFA Modification](microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [Suspicious VM Instance Creation Activity Detected](github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) | Medium | 🔗 GitHub Only |
 | [Syntax errors stateful anomaly on database](azure-sql-database-solution-for-sentinel-syntax-errors-stateful-anomaly-on-database-c815008d-f4d1-4645-b13b-8b4bc188d5de-75deac2f.md) | Medium | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

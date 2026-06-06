@@ -40,25 +40,25 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
-| Solutions | **531** | 473 | 58 |
-| With Connectors | **337** | 296 | 41 |
-| With Content | **418** | 376 | 42 |
+| Solutions | **531** | 472 | 59 |
+| With Connectors | **343** | 301 | 42 |
+| With Content | **418** | 375 | 43 |
 
 ### Support Ownership
 
 | Support Tier | Total | Published | Unpublished ⚠️ |
 |:-------------|------:|----------:|------------:|
 | Microsoft | **243** | 227 | 16 |
-| Partner | **259** | 228 | 31 |
+| Partner | **259** | 227 | 32 |
 | Community | **11** | 11 | 0 |
 | Unknown | **18** | 7 | 11 |
-| **Total** | **531** | **473** | **58** |
+| **Total** | **531** | **472** | **59** |
 
 ### Other Metrics
 
 | Metric | Count |
 |:-------|------:|
-| Unique Connectors | 484 |
+| Unique Connectors | 493 |
 | Tables Used | 965 |
 
 ## Connectors
@@ -69,27 +69,27 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **484** | 421 | 42 | 21 |
-| Discovered 🔍 | **143** | 16 | 109 | 18 |
-| **Total** | **627** | **437** | **151** | **39** |
+| In Solutions | **493** | 430 | 42 | 21 |
+| Discovered 🔍 | **133** | 4 | 109 | 20 |
+| **Total** | **626** | **434** | **151** | **41** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| Microsoft | **265** | 159 | 95 | 11 |
-| Partner | **340** | 268 | 48 | 24 |
+| Microsoft | **264** | 158 | 95 | 11 |
+| Partner | **340** | 266 | 48 | 26 |
 | Community | **18** | 10 | 8 | 0 |
 | Unknown | **4** | 0 | 0 | 4 |
-| **Total** | **627** | **437** | **151** | **39** |
+| **Total** | **626** | **434** | **151** | **41** |
 
 ### Collection Methods
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-----------------|------:|-------:|-----------:|------------:|
-| [CCF](methods/ccf.md) | **178** | 165 | 1 | 12 |
+| [CCF](methods/ccf.md) | **177** | 164 | 1 | 12 |
 | [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
-| [Azure Function](methods/azure-function.md) | **125** | 91 | 26 | 8 |
+| [Azure Function](methods/azure-function.md) | **125** | 89 | 26 | 10 |
 | [REST Pull API](methods/rest-pull-api.md) | **50** | 44 | 1 | 5 |
 | [CCF Push](methods/ccf-push.md) | **39** | 38 | 0 | 1 |
 | [Native](methods/native.md) | **18** | 18 | 0 | 0 |
@@ -98,7 +98,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **627** | **437** | **151** | **39** |
+| **Total** | **626** | **434** | **151** | **41** |
 
 ### Collection Methods by Support Tier
 
@@ -106,9 +106,9 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Collection Method | Microsoft | Partner | Community | Unknown |
 |:-----------------|:---------:|:---------:|:---------:|:---------:|
-| [CCF](methods/ccf.md) | 75 / 1 / 5 / **81** | 90 / 0 / 7 / **97** | - | - |
+| [CCF](methods/ccf.md) | 74 / 1 / 5 / **80** | 90 / 0 / 7 / **97** | - | - |
 | [AMA](methods/ama.md) | 16 / 73 / 2 / **91** | 16 / 41 / 4 / **61** | 4 / 8 / 0 / **12** | 0 / 0 / 2 / **2** |
-| [Azure Function](methods/azure-function.md) | 15 / 21 / 2 / **38** | 75 / 5 / 6 / **86** | 1 / 0 / 0 / **1** | - |
+| [Azure Function](methods/azure-function.md) | 15 / 21 / 2 / **38** | 73 / 5 / 8 / **86** | 1 / 0 / 0 / **1** | - |
 | [REST Pull API](methods/rest-pull-api.md) | 1 / 0 / 2 / **3** | 39 / 1 / 3 / **43** | 4 / 0 / 0 / **4** | - |
 | [CCF Push](methods/ccf-push.md) | - | 38 / 0 / 1 / **39** | - | - |
 | [Native](methods/native.md) | 18 / 0 / 0 / **18** | - | - | - |
@@ -117,24 +117,24 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 / 0 / 0 / **1** | 9 / 1 / 3 / **13** | 1 / 0 / 0 / **1** | - |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 1 / 0 / 0 / **1** | - | - |
 | [MMA](methods/mma.md) | 1 / 0 / 0 / **1** | - | - | - |
-| **Total** | 159 / 95 / 11 / **265** | 268 / 48 / 24 / **340** | 10 / 8 / 0 / **18** | 0 / 0 / 4 / **4** |
+| **Total** | 158 / 95 / 11 / **264** | 266 / 48 / 26 / **340** | 10 / 8 / 0 / **18** | 0 / 0 / 4 / **4** |
 
 ### CCF Capabilities
 
 | Metric | Count |
 |:-------|------:|
-| CCF Connectors (polling) | 178 |
+| CCF Connectors (polling) | 177 |
 | CCF Push Connectors | 39 |
 | CCF Legacy Connectors | 0 |
-| **Total CCF** | **217** |
+| **Total CCF** | **216** |
 | With config file | 195 |
-| With capabilities detected | 210 |
+| With capabilities detected | 209 |
 
 **Connector Kind** (non-default kinds; REST Pull API polling is the default):
 
 | Kind | Count |
 |:-----|------:|
-| REST Pull API Polling *(default)* | 133 |
+| REST Pull API Polling *(default)* | 132 |
 | Push | 38 |
 | GCP | 16 |
 | AmazonWebServicesS3 | 14 |
@@ -149,7 +149,7 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Auth Type | Count |
 |:----------|------:|
-| APIKey | 69 |
+| APIKey | 68 |
 | OAuth2 | 30 |
 | JwtToken | 22 |
 | Basic | 14 |
@@ -160,7 +160,7 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Feature | Count |
 |:--------|------:|
-| Paging | 111 |
+| Paging | 110 |
 | POST | 21 |
 | Nested | 9 |
 | MvExpand | 1 |
@@ -172,9 +172,9 @@ API-based connectors use one of two APIs to send data to the workspace:
 | Ingestion API | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
 | [Log Ingestion API](methods/log-ingestion-api.md) | **90** | 86 | 0 | 4 |
-| [HTTP Data Collector API](methods/http-data-collector-api.md) | **124** | 88 | 27 | 9 |
+| [HTTP Data Collector API](methods/http-data-collector-api.md) | **124** | 86 | 27 | 11 |
 | [Undetermined](methods/undetermined.md) | **3** | 1 | 0 | 2 |
-| **Total** | **237** | **191** | **28** | **18** |
+| **Total** | **237** | **189** | **28** | **20** |
 
 **By Collection Method:**
 
@@ -194,9 +194,9 @@ Connectors that use at least one Custom Log V1 table (identified by type-suffixe
 | Metric | Count |
 |:-------|------:|
 | CLv1 Connectors | **147** |
-| Active | 105 |
+| Active | 103 |
 | Deprecated 🚫 | 29 |
-| Unpublished ⚠️ | 13 |
+| Unpublished ⚠️ | 15 |
 
 **By Collection Method:**
 
@@ -276,17 +276,17 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Metric | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-------|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,680** | 4,776 | 128 | 157 | 486 | 1,290 |
+| **Content Items** | **6,680** | 4,804 | 100 | 157 | 486 | 1,290 |
 
 ### Content Items by Type
 
 | Type | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-----|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
-| Analytic Rules | 2,268 | 2,066 | 32 | 53 | 158 | 12 |
-| Hunting Queries | 2,366 | 1,173 | 16 | 3 | 131 | 1,046 |
+| Analytic Rules | 2,268 | 2,079 | 19 | 53 | 158 | 12 |
+| Hunting Queries | 2,366 | 1,175 | 14 | 3 | 131 | 1,046 |
 | Playbooks | 875 | 610 | 38 | 61 | 190 | 37 |
-| Workbooks | 567 | 368 | 10 | 23 | 0 | 189 |
-| Parsers* | 530 | 498 | 32 | 17 | 0 | 0 |
+| Workbooks | 567 | 369 | 9 | 23 | 0 | 189 |
+| Parsers* | 530 | 510 | 20 | 17 | 0 | 0 |
 | Watchlists | 49 | 43 | 0 | 0 | 0 | 6 |
 | Summary Rules | 25 | 18 | 0 | 0 | 7 | 0 |
 
@@ -339,8 +339,8 @@ Connectors and built-in actions referenced by playbooks. Managed/custom rows com
 | Category | Count |
 |:---------|------:|
 | Legacy Parsers | 35 |
-| Solution Parsers (in Solution JSON) | 499 |
-| Discovered Parsers 🔍 | 34 |
+| Solution Parsers (in Solution JSON) | 511 |
+| Discovered Parsers 🔍 | 22 |
 | **Total Parsers** | **568** |
 | Solutions with Parsers | 164 |
 

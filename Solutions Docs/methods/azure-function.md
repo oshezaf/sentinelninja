@@ -19,9 +19,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **125** |
-| Active | 91 |
+| Active | 89 |
 | Deprecated 🚫 | 26 |
-| Unpublished ⚠️ | 8 |
+| Unpublished ⚠️ | 10 |
 
 ## Connectors Using This Method
 
@@ -50,7 +50,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [ContrastADR](../connectors/contrastadr.md) ⚠️ 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
+| [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) ⚠️ 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
 | [CyberArkEPM](../connectors/cyberarkepm.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
@@ -62,7 +62,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶 | Fortinet | 3 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Microsoft | 1 | [GitHub](../solutions/github.md) |
 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) 🔶 | Microsoft | 2 | [GitHub](../solutions/github.md) |
-| [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
+| [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) ⚠️ 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶 | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | [HYAS Protect](../connectors/hyasprotect.md) 🔶 | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |

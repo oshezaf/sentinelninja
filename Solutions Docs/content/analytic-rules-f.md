@@ -54,7 +54,7 @@
 | [Flare marketplace results](flare-flare-marketplace-results-9265ae4d-6bb0-4c18-961d-f7aae67d1546-78fb8e2f.md) | Medium | 📦 [Flare](../solutions/flare.md) |
 | [Flare paste results](flare-flare-paste-results-9cb7c337-f177-4af6-b0e8-b6b7552d762d-9f498bb5.md) | Medium | 📦 [Flare](../solutions/flare.md) |
 | [Flare source code results](flare-flare-source-code-results-9cb7c337-f178-4af6-b0e8-b6b7552d762d-c8c5f322.md) | Medium | 📦 [Flare](../solutions/flare.md) |
-| [Flow Logs Alerts for Prancer](prancer-pensuiteai-integration-flow-logs-alerts-for-prancer-59336232-1bbc-4f66-90dd-5ac3708e4405-d4069eb4.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Flow Logs Alerts for Prancer](prancer-pensuiteai-integration-flow-logs-alerts-for-prancer-59336232-1bbc-4f66-90dd-5ac3708e4405-72e2fad9.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Forescout-DNS_Sniff_Event_Monitor](forescouthostpropertymonitor-forescout-dns-sniff-event-monitor-d272e277-f285-4dbc-ae2d-7f65ba64a79e-39ee6063.md) | Medium | 📦 [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Fortinet - Beacon pattern detected](standalone-content-fortinet-beacon-pattern-detected-3255ec41-6bd6-4f35-84b1-c032b18bbfcb-3dd31f10.md) | Low | 📄 Standalone Content |
 | [Fortiweb - WAF Allowed threat](fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel-fortiweb-waf-allowed-threat-86e9409f-b9ea-4e9a-8b72-5132ba43bcae-93ed74f7.md) | High | 📦 [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) |
@@ -65,8 +65,6 @@
 | [Front Door Premium WAF - SQLi Detection](azure-web-application-firewall-waf-front-door-premium-waf-sqli-detection-16da3a2a-af29-48a0-8606-d467c180fe18-3acd0e4e.md) | High | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
 | [Front Door Premium WAF - XSS Detection](azure-web-application-firewall-waf-front-door-premium-waf-xss-detection-b7643904-5081-4920-917e-a559ddc3448f-f46a8943.md) | High | 📦 [Azure Web Application Firewall (WAF)](../solutions/azure-web-application-firewall-waf.md) |
 | [full_access_as_app Granted To Application](microsoft-entra-id-full-access-as-app-granted-to-application-54e22fed-0ec6-4fb2-8312-2a3809a93f63-6d6d5e9f.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

@@ -29,7 +29,7 @@
 | [Netskope - WebTransaction Error Detection](netskopev2-netskope-webtransaction-error-detection-66c4cd4c-d391-47e8-b4e6-93e55d86ca9f-9bf88cfb.md) | Medium | 📦 [Netskopev2](../solutions/netskopev2.md) |
 | [Network endpoint to host executable correlation](network-threat-protection-essentials-network-endpoint-to-host-executable-correlation-01f64465-b1ef-41ea-a7f5-31553a11ad43-f4ed06da.md) | Medium | 📦 [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md) |
 | [Network Port Sweep from External Network (ASIM Network Session schema)](network-session-essentials-network-port-sweep-from-external-network-asim-network-session-schema-cd8faa84-4464-4b4e-96dc-b22f50c27541-330ca527.md) | High | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
-| [NetworkSecurityGroups Alert From Prancer](prancer-pensuiteai-integration-networksecuritygroups-alert-from-prancer-a8babf91-b844-477c-8abf-d31e3df74933-55e376e3.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [NetworkSecurityGroups Alert From Prancer](prancer-pensuiteai-integration-networksecuritygroups-alert-from-prancer-a8babf91-b844-477c-8abf-d31e3df74933-eb7ac46a.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [New access credential added to Application or Service Principal](microsoft-entra-id-new-access-credential-added-to-application-or-service-principal-79566f41-df67-4e10-a703-c38a6213afd8-15b8a555.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [New Agent Added to Pool by New User or Added to a New OS Type](azuredevopsauditing-new-agent-added-to-pool-by-new-user-or-added-to-a-new-os-type-4ce177b3-56b1-4f0e-b83e-27eed4cb0b16-f73a36a1.md) | Medium | 📦 [AzureDevOpsAuditing](../solutions/azuredevopsauditing.md) |
 | [New CloudShell User](azure-activity-new-cloudshell-user-6d7214d9-4a28-44df-aafb-0910b9e6ae3e-a064ab7a.md) | Low | 📦 [Azure Activity](../solutions/azure-activity.md) |
@@ -92,8 +92,6 @@
 | [NRT Sensitive Azure Key Vault operations](azure-key-vault-nrt-sensitive-azure-key-vault-operations-884ead54-cb3f-4676-a1eb-b26532d6cbfd-6787446f.md) | Low | 📦 [Azure Key Vault](../solutions/azure-key-vault.md) |
 | [NRT Squid proxy events related to mining pools](syslog-nrt-squid-proxy-events-related-to-mining-pools-dd03057e-4347-4853-bf1e-2b2d21eb4e59-bc48dba2.md) | Low | 📦 [Syslog](../solutions/syslog.md) |
 | [NRT User added to Microsoft Entra ID Privileged Groups](microsoft-entra-id-nrt-user-added-to-microsoft-entra-id-privileged-groups-70fc7201-f28e-4ba7-b9ea-c04b96701f13-c42c23de.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

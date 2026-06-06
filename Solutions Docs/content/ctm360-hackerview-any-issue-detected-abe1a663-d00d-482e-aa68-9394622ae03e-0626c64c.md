@@ -21,8 +21,6 @@ Generic alert that triggers when ANY HackerView issue/incident is detected in th
 | **Required Connectors** | [CTM360HackerViewConnectorDefinition](../connectors/ctm360hackerviewconnectordefinition.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CTM360/Analytic%20Rules/HackerViewAnyIssueDetected.yaml) |
 
-> ⚠️ **Not listed in Solution JSON:** This content item was discovered by scanning the solution folder but is not included in the official Solution JSON file. It may be a legacy item, under development, or excluded from the official solution package.
-
 ## Tables Used
 
 This content item queries data from the following tables:

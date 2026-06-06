@@ -92,9 +92,7 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [HackerViewLog](../parsers/hackerviewlog.md) | [CTM360](../solutions/ctm360.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+| [HackerViewLog](../parsers/hackerviewlog.md) | [CTM360](../solutions/ctm360.md) |  |
 
 ---
 

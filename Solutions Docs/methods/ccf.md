@@ -18,8 +18,8 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **178** |
-| Active | 165 |
+| Total Connectors | **177** |
+| Active | 164 |
 | Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 12 |
 
@@ -58,7 +58,6 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Check Point Cyberint Alerts Connector (via Codeless Connector Platform)](../connectors/checkpointcyberintalerts.md) | Checkpoint Cyberint | 1 | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Cyberint IOC Connector](../connectors/checkpointcyberintioc.md) | Checkpoint Cyberint | 1 | [Check Point Cyberint IOC](../solutions/check-point-cyberint-ioc.md) |
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) ➕ | Microsoft | 3 | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md) |
-| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ➕ | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md) | Microsoft | 2 | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
 | [Cisco Umbrella (via Codeless Connector Framework)](../connectors/ciscoumbrellaconnector.md) | Cisco | 10 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |

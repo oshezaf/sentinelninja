@@ -44,14 +44,13 @@ This table is used by the following solutions:
 - [CiscoMeraki](../solutions/ciscomeraki.md)
 - [CustomLogsAma](../solutions/customlogsama.md)
 
-## Connectors (4)
+## Connectors (3)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [[Deprecated] Cisco Meraki](../connectors/ciscomeraki.md) |  |
-| [Cisco Meraki (using REST API)](../connectors/ciscomeraki-usingrestapi.md) |  |
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) |  |
 | [Custom logs via AMA](../connectors/customlogsviaama.md) |  |
 

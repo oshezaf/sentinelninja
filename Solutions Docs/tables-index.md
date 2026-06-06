@@ -582,7 +582,7 @@ Browse tables alphabetically:
 | [Cisco_Umbrella_ztna_CL](tables/cisco-umbrella-ztna-cl.md) 📖 🔶 | Connector | [1](tables/cisco-umbrella-ztna-cl.md) | [2](tables/cisco-umbrella-ztna-cl.md) | Analytics, Hunting, Workbooks |
 | [CiscoDuo_CL](tables/ciscoduo-cl.md) 📖 🔶 | Connector | [2](tables/ciscoduo-cl.md) | [1](tables/ciscoduo-cl.md) | Analytics, Hunting, Workbooks |
 | [CiscoETD_CL](tables/ciscoetd-cl.md) 📖 🔶 | Connector | [1](tables/ciscoetd-cl.md) | [1](tables/ciscoetd-cl.md) | Workbooks |
-| [CiscoMerakiNativePoller_CL](tables/ciscomerakinativepoller-cl.md) 📖 | Connector | [1](tables/ciscomerakinativepoller-cl.md) | [3](tables/ciscomerakinativepoller-cl.md) | Workbooks |
+| [CiscoMerakiNativePoller_CL](tables/ciscomerakinativepoller-cl.md) 📖 | Connector | [1](tables/ciscomerakinativepoller-cl.md) | [2](tables/ciscomerakinativepoller-cl.md) | Workbooks |
 | [CiscoSDWANNetflow_CL](tables/ciscosdwannetflow-cl.md) 📖 🔶 | Connector | [1](tables/ciscosdwannetflow-cl.md) | [1](tables/ciscosdwannetflow-cl.md) | Analytics, Workbooks |
 | [CiscoSecureEndpoint_CL](tables/ciscosecureendpoint-cl.md) 📖 🔶 | Connector | [1](tables/ciscosecureendpoint-cl.md) | [1](tables/ciscosecureendpoint-cl.md) | Analytics, Hunting, Workbooks |
 | [CiscoSecureEndpointAuditLogsV2_CL](tables/ciscosecureendpointauditlogsv2-cl.md) 📖 | Connector | [1](tables/ciscosecureendpointauditlogsv2-cl.md) | [1](tables/ciscosecureendpointauditlogsv2-cl.md) | Analytics, Hunting, Workbooks |
@@ -1466,7 +1466,7 @@ Browse tables alphabetically:
 | [MDfESecureScore_CL](tables/mdfesecurescore-cl.md) | Content | - | - | Playbooks |
 | [MDfEVulnerabilitiesList_CL](tables/mdfevulnerabilitieslist-cl.md) | Content | [1](tables/mdfevulnerabilitieslist-cl.md) | - | Playbooks, Workbooks |
 | [MDPResourceLog](tables/mdpresourcelog.md) 📖 | Docs | - | - | - |
-| [meraki_CL](tables/meraki-cl.md) 📖 | Connector | [2](tables/meraki-cl.md) | [4](tables/meraki-cl.md) | Workbooks |
+| [meraki_CL](tables/meraki-cl.md) 📖 | Connector | [2](tables/meraki-cl.md) | [3](tables/meraki-cl.md) | Workbooks |
 | [MerakiConfigurationChanges_CL](tables/merakiconfigurationchanges-cl.md) | Content | [1](tables/merakiconfigurationchanges-cl.md) | - | Playbooks, Workbooks |
 | [MerakiSecurityEvents_CL](tables/merakisecurityevents-cl.md) | Content | [1](tables/merakisecurityevents-cl.md) | - | Playbooks, Workbooks |
 | [MeshControlPlane](tables/meshcontrolplane.md) 📖 | Docs | - | - | - |
@@ -1923,7 +1923,7 @@ Browse tables alphabetically:
 | [SynapseSqlPoolRequestSteps](tables/synapsesqlpoolrequeststeps.md) 📖 | Docs | - | - | - |
 | [SynapseSqlPoolSqlRequests](tables/synapsesqlpoolsqlrequests.md) 📖 | Docs | - | - | - |
 | [SynapseSqlPoolWaits](tables/synapsesqlpoolwaits.md) 📖 | Docs | - | - | - |
-| [Syslog](tables/syslog.md) 📖 | Connector | [55](tables/syslog.md) | [38](tables/syslog.md) | Analytics, Hunting, Workbooks |
+| [Syslog](tables/syslog.md) 📖 | Connector | [55](tables/syslog.md) | [37](tables/syslog.md) | Analytics, Hunting, Workbooks |
 
 ## T
 

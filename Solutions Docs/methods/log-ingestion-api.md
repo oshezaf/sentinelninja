@@ -39,7 +39,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
-| [1Password](../connectors/1password.md) 🔍 | [Azure Function](../methods/azure-function.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
+| [1Password](../connectors/1password.md) | [Azure Function](../methods/azure-function.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | [CCF](../methods/ccf.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | [CCF Push](../methods/ccf-push.md) | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | [CCF Push](../methods/ccf-push.md) | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
@@ -91,13 +91,13 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [NordPass](../connectors/nordpass.md) | [Azure Function](../methods/azure-function.md) | NordPass | 1 | [NordPass](../solutions/nordpass.md) |
 | [NordStellar (Push)](../connectors/nordstellarpush.md) | [CCF Push](../methods/ccf-push.md) | Nord Security Inc. | 1 | [NordStellar](../solutions/nordstellar.md) |
 | [Obsidian Datasharing Connector](../connectors/obsidiandatasharing.md) | [CCF Push](../methods/ccf-push.md) | Obsidian Security | 2 | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |
-| [Onapsis Defend Integration](../connectors/onapsis.md) 🔍 | [CCF Push](../methods/ccf-push.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
+| [Onapsis Defend Integration](../connectors/onapsis.md) | [CCF Push](../methods/ccf-push.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | [OneTrust](../connectors/onetrustpush.md) | [CCF Push](../methods/ccf-push.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
 | [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) 🔶 | [CCF](../methods/ccf.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
 | [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) 🔍 | [CCF Push](../methods/ccf-push.md) | Pathlock Inc. | 1 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) | [CCF Push](../methods/ccf-push.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
 | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
-| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) 🔍 | [CCF Push](../methods/ccf-push.md) | SAP SE | 1 | [SAP LogServ](../solutions/sap-logserv.md) |
+| [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) | [CCF Push](../methods/ccf-push.md) | SAP SE | 1 | [SAP LogServ](../solutions/sap-logserv.md) |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | [CCF Push](../methods/ccf-push.md) | SecurityBridge Group GmbH | 2 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | [Azure Function](../methods/azure-function.md) | Semperis | 7 | [SemperisLightning](../solutions/semperislightning.md) |
 | [Sonrai Security Push Connector](../connectors/sonraisecuritypush.md) | [CCF Push](../methods/ccf-push.md) | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |

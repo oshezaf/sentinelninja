@@ -41,9 +41,7 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [ASimAuthenticationOpenSystems](../parsers/asimauthenticationopensystems.md) | [Open Systems](../solutions/open-systems.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+| [ASimAuthenticationOpenSystems](../parsers/asimauthenticationopensystems.md) | [Open Systems](../solutions/open-systems.md) |  |
 
 ---
 

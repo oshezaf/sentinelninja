@@ -14,7 +14,7 @@
 
 | Name | Severity | Source |
 |:-----|:---------|:-------|
-| [HackerView - Any Issue Detected](ctm360-hackerview-any-issue-detected-abe1a663-d00d-482e-aa68-9394622ae03e-0626c64c.md) ⚠️ | Informational | 📦 [CTM360](../solutions/ctm360.md) |
+| [HackerView - Any Issue Detected](ctm360-hackerview-any-issue-detected-abe1a663-d00d-482e-aa68-9394622ae03e-0626c64c.md) | Informational | 📦 [CTM360](../solutions/ctm360.md) |
 | [High bandwidth in the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-high-bandwidth-in-the-network-microsoft-defender-for-iot-caa4665f-21fa-462d-bb31-92226e746c68-b6499206.md) | Low | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [High count of connections by client IP on many ports](standalone-content-high-count-of-connections-by-client-ip-on-many-ports-44a555d8-ecee-4a25-95ce-055879b4b14b-ec2b57ee.md) | Medium | 📄 Standalone Content |
 | [High count of failed attempts from same client IP](standalone-content-high-count-of-failed-attempts-from-same-client-ip-19e01883-15d8-4eb6-a7a5-3276cd668388-e4e52bb9.md) | Medium | 📄 Standalone Content |
@@ -31,8 +31,6 @@
 | [Host Settings Updated](veeam-host-settings-updated-ac1a85f1-0e3f-4ae8-9f59-a240fc04b03f-906860a3.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Hypervisor Host Deleted](veeam-hypervisor-host-deleted-4e41c85f-d495-4a23-a218-41b938140dce-e8282830.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [Hypervisor Host Settings Updated](veeam-hypervisor-host-settings-updated-580da4d1-8e39-4420-855d-3d4f653fe127-469cf764.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in their Solution JSON file. They were discovered by scanning solution folders.
 
 ---
 

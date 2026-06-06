@@ -27,11 +27,9 @@ Empower security teams with deep visibility into unique exploit, zero-day, and t
 
 ## Data Connectors
 
-This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)**:
 
-- [Onapsis Defend Integration](../connectors/onapsis.md) ⚠️
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+- [Onapsis Defend Integration](../connectors/onapsis.md)
 
 ## Tables Used
 

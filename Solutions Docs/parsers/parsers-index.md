@@ -8,7 +8,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 ---
 
-**568 parsers** (35 legacy, 499 solution, 34 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**568 parsers** (35 legacy, 511 solution, 22 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 *Legacy parsers are located in the top-level `/Parsers` folder. Solution parsers are included within specific solution packages.*
 
@@ -95,9 +95,9 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ArmisAlerts](armisalerts.md) | 📦 [Armis](../solutions/armis.md) | Armis_Alerts_CL |
 | [ArmisDevice](armisdevice.md) | 📦 [Armis](../solutions/armis.md) | Armis_Devices_CL |
 | [ArubaClearPass](arubaclearpass.md) | 📦 [Aruba ClearPass](../solutions/aruba-clearpass.md) | CommonSecurityLog |
-| [ASimAuthenticationOpenSystems](asimauthenticationopensystems.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsAuthenticationLogs_CL |
-| [ASimNetworkSessionOpenSystemsFirewall](asimnetworksessionopensystemsfirewall.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
-| [ASimWebSessionOpenSystemsSecureWebGateway](asimwebsessionopensystemssecurewebgateway.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
+| [ASimAuthenticationOpenSystems](asimauthenticationopensystems.md) | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsAuthenticationLogs_CL |
+| [ASimNetworkSessionOpenSystemsFirewall](asimnetworksessionopensystemsfirewall.md) | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
+| [ASimWebSessionOpenSystemsSecureWebGateway](asimwebsessionopensystemssecurewebgateway.md) | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
 | [AssignedIPAddress](assignedipaddress.md) | 📦 [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) | DeviceNetworkInfo |
 | [Auth0](auth0.md) | 📦 [Auth0](../solutions/auth0.md) | Auth0AM_CL, Auth0_CL |
 | [Auth0AM](auth0am.md) | 📦 [Auth0](../solutions/auth0.md) | Auth0AM_CL, Auth0Logs_CL |
@@ -138,12 +138,12 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
 | [CassandraAuditLog](cassandraauditlog.md) | 📂 *Legacy* | CassandraAuditLog_CL |
-| [CBS_BreachedCredentials](cbs-breachedcredentials.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_BreachedCredentials_AzureV2_CL, CBS_BreachedCredentials_CL |
-| [CBS_CompromisedCards](cbs-compromisedcards.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_CompromisedCards_AzureV2_CL, CBS_CompromisedCards_CL |
-| [CBS_DomainInfringement](cbs-domaininfringement.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_DomainInfringement_AzureV2_CL, CBS_DomainInfringement_CL |
-| [CBS_MalwareLogs](cbs-malwarelogs.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_MalwareLogs_AzureV2_CL, CBS_MalwareLogs_CL |
-| [CBS_SubdomainInfringement](cbs-subdomaininfringement.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_SubdomainInfringement_AzureV2_CL, CBS_SubdomainInfringement_CL |
-| [CBSLog](cbslog.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBSLog_AzureV2_CL, CBSLog_Azure_1_CL |
+| [CBS_BreachedCredentials](cbs-breachedcredentials.md) | 📦 [CTM360](../solutions/ctm360.md) | CBS_BreachedCredentials_AzureV2_CL, CBS_BreachedCredentials_CL |
+| [CBS_CompromisedCards](cbs-compromisedcards.md) | 📦 [CTM360](../solutions/ctm360.md) | CBS_CompromisedCards_AzureV2_CL, CBS_CompromisedCards_CL |
+| [CBS_DomainInfringement](cbs-domaininfringement.md) | 📦 [CTM360](../solutions/ctm360.md) | CBS_DomainInfringement_AzureV2_CL, CBS_DomainInfringement_CL |
+| [CBS_MalwareLogs](cbs-malwarelogs.md) | 📦 [CTM360](../solutions/ctm360.md) | CBS_MalwareLogs_AzureV2_CL, CBS_MalwareLogs_CL |
+| [CBS_SubdomainInfringement](cbs-subdomaininfringement.md) | 📦 [CTM360](../solutions/ctm360.md) | CBS_SubdomainInfringement_AzureV2_CL, CBS_SubdomainInfringement_CL |
+| [CBSLog](cbslog.md) | 📦 [CTM360](../solutions/ctm360.md) | CBSLog_AzureV2_CL, CBSLog_Azure_1_CL |
 | [CGFWFirewallActivity](cgfwfirewallactivity.md) | 📦 [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md) | Syslog |
 | [Cisco_Umbrella](cisco-umbrella.md) | 📦 [CiscoUmbrella](../solutions/ciscoumbrella.md) | CiscoUmbrellaAdminAudit_CL, CiscoUmbrellaCloudFirewall_CL, ... |
 | [CiscoACIEvent](ciscoacievent.md) | 📦 [Cisco ACI](../solutions/cisco-aci.md) | Syslog |
@@ -416,7 +416,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
-| [HackerViewLog](hackerviewlog.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | HackerViewLog_AzureV2_CL, HackerViewLog_Azure_1_CL |
+| [HackerViewLog](hackerviewlog.md) | 📦 [CTM360](../solutions/ctm360.md) | HackerViewLog_AzureV2_CL, HackerViewLog_Azure_1_CL |
 | [HYASProtectDNSActivity](hyasprotectdnsactivity.md) | 📦 [HYAS Protect](../solutions/hyas-protect.md) | HYASProtectDnsSecurityLogs_CL |
 
 ## I
@@ -682,8 +682,8 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [Veeam_GetVeeamONEAlarms](veeam-getveeamonealarms.md) | 📦 [Veeam](../solutions/veeam.md) | Syslog |
 | [VersasecCmsError](versaseccmserror.md) | 📦 [VersasecCMS](../solutions/versaseccms.md) | VersasecCmsErrorLogs_CL |
 | [VersasecCmsSyslog](versaseccmssyslog.md) | 📦 [VersasecCMS](../solutions/versaseccms.md) | VersasecCmsSysLogs_CL |
-| [vimNetworkSessionOpenSystemsFirewall](vimnetworksessionopensystemsfirewall.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
-| [vimWebSessionOpenSystemsProxySecureWebGateway](vimwebsessionopensystemsproxysecurewebgateway.md) ⚠️ | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
+| [vimNetworkSessionOpenSystemsFirewall](vimnetworksessionopensystemsfirewall.md) | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsFirewallLogs_CL |
+| [vimWebSessionOpenSystemsProxySecureWebGateway](vimwebsessionopensystemsproxysecurewebgateway.md) | 📦 [Open Systems](../solutions/open-systems.md) | OpenSystemsProxyLogs_CL |
 | [VMwareESXi](vmwareesxi.md) | 📦 [VMWareESXi](../solutions/vmwareesxi.md) | Syslog |
 | [VotiroEvents](votiroevents.md) | 📦 [Votiro](../solutions/votiro.md) | CommonSecurityLog |
 

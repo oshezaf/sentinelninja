@@ -17,6 +17,8 @@
 <div class="doc-content">
 <h1 id="open-systems-data-connector-for-microsoft-sentinel">Open Systems Data Connector for Microsoft Sentinel</h1>
 <p><em>Solution: Open Systems</em></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/opensystems_logo.svg" alt="Open Systems Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
@@ -45,6 +47,14 @@
   <td style="text-align:left">domains</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Open Systems - support@open-systems.com</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>First Published</strong></td>
   <td style="text-align:left">2025-05-12</td>
 </tr>
@@ -58,7 +68,11 @@
 </tr>
 </tbody>
 </table>
-<p>The data connector ingests log data into Microsoft Sentinel using Open Systems Logs API.</p>
+<p>Designed for security teams, the Open Systems Data Connector for Microsoft Sentinel delivers log data to customers. It extracts network security data and pushes it seamlessly to Microsoft Sentinel to provide SOC teams and incident responders with vital insights into their cybersecurity landscape.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies:</p>
+<p>a. <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/data-collection/data-collection-rule-overview">Azure Monitor Data Collection</a></p>
+<p>b. <a href="https://azure.microsoft.com/services/container-apps/">Azure Container Apps</a></p>
 <h2 id="contents">Contents</h2>
 <ul>
 <li><a href="#data-connectors">Data Connectors</a></li>
@@ -66,13 +80,10 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution has <strong>1 discovered data connector(s)⚠️</strong> (not in Solution definition):</p>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/opensystems.html">Open Systems Data Connector</a> ⚠️ 🔶</li>
+<li><a href="../connectors/opensystems.html">Open Systems Data Connector</a> 🔶</li>
 </ul>
-<blockquote>
-<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-</blockquote>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
@@ -113,22 +124,18 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>5 content item(s)</strong> (0 in solution, 5 discovered 🔍):</p>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Content Type</th>
-  <th style="text-align:right">Total</th>
-  <th style="text-align:right">In Solution</th>
-  <th style="text-align:right">Discovered</th>
+  <th style="text-align:left">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left">Parsers</td>
-  <td style="text-align:right">5</td>
-  <td style="text-align:right">0</td>
-  <td style="text-align:right">5</td>
+  <td style="text-align:left">5</td>
 </tr>
 </tbody>
 </table>
@@ -143,35 +150,32 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../parsers/authasimparser.html">AuthASIMParser</a> ⚠️</td>
+  <td style="text-align:left"><a href="../parsers/authasimparser.html">AuthASIMParser</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../parsers/firewallasimparser.html">FirewallASIMParser</a> ⚠️</td>
+  <td style="text-align:left"><a href="../parsers/firewallasimparser.html">FirewallASIMParser</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../parsers/firewallasimparserfilter.html">FirewallASIMParserFilter</a> ⚠️</td>
+  <td style="text-align:left"><a href="../parsers/firewallasimparserfilter.html">FirewallASIMParserFilter</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../parsers/proxyasimparser.html">ProxyASIMParser</a> ⚠️</td>
+  <td style="text-align:left"><a href="../parsers/proxyasimparser.html">ProxyASIMParser</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../parsers/proxyasimparserfilter.html">ProxyASIMParserFilter</a> ⚠️</td>
+  <td style="text-align:left"><a href="../parsers/proxyasimparserfilter.html">ProxyASIMParserFilter</a></td>
   <td style="text-align:left">-</td>
   <td style="text-align:left">-</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
-</blockquote>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>

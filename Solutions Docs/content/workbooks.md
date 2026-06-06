@@ -502,7 +502,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [PhishingAnalysis](github-only-phishinganalysis-8b6323cf.md) | 🔗 GitHub Only |
 | [PingFederate](pingfederate-pingfederate-c26986d3.md) | 📦 [PingFederate](../solutions/pingfederate.md) |
 | [PlaybookHealth](github-only-playbookhealth-6ce06262.md) | 🔗 GitHub Only |
-| [PrancerSentinelAnalytics](prancer-pensuiteai-integration-prancersentinelanalytics-90750e32.md) ⚠️ | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [PrancerSentinelAnalytics](prancer-pensuiteai-integration-prancersentinelanalytics-cba49168.md) | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [PrancerSentinelAnalytics](github-only-prancersentinelanalytics-43012f16.md) | 🔗 GitHub Only |
 | [PreventWorkbook](egress-iris-preventworkbook-e3444c6a.md) | 📦 [Egress Iris](../solutions/egress-iris.md) |
 | [ProofpointPOD](proofpoint-on-demand-pod-email-security-proofpointpod-14c159d7.md) | 📦 [Proofpoint On demand(POD) Email Security](../solutions/proofpoint-on-demand-pod-email-security.md) |

@@ -34,16 +34,14 @@ Microsoft Sentinel has recently improved its threat intelligence hunting experie
 
 ## Data Connectors
 
-This solution provides **5 data connector(s)** (plus 1 discovered⚠️):
+This solution provides **6 data connector(s)**:
 
 - [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md)
 - [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md)
 - [Threat Intelligence Platforms](../connectors/threatintelligence.md)
 - [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md)
 - [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md)
-- [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) ⚠️
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+- [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md)
 
 ## Tables Used
 

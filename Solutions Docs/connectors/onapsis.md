@@ -1,6 +1,4 @@
-# 🔍 Onapsis Defend Integration
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+# Onapsis Defend Integration
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/onapsis_logo.svg" alt="" width="75" height="75">
 

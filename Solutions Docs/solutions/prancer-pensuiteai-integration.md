@@ -1,6 +1,8 @@
 # Prancer PenSuite AI
 
-*Solution: Prancer PenSuiteAI Integration*
+*Solution: Prancer PensuiteAI Integration*
+
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Prancer.svg" alt="Prancer PensuiteAI Integration Logo" width="75" height="75">
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -14,11 +16,21 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.prancer.io](https://www.prancer.io) |
 | **Categories** | domains |
+| **Version** | 3.0.0 |
+| **Author** | Prancer |
 | **First Published** | 2023-08-02 |
 | **Solution Folder** | [Prancer PenSuiteAI Integration](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Prancer%20PenSuiteAI%20Integration) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/prancerenterprise1600813133757.microsoft-sentinel-solution-prancer) · Popularity: ⚪ Very Low (0%) |
 
-Prancer PenSuite AI provides integration with Microsoft Sentinel
+The Prancer solution for Microsoft Sentinel enables you to ingest data from the Prancer portal for PAC and CSPM scans. Refer to [Prancer Documentation Site](https://docs.prancer.io/web/) for more information.
+
+**Underlying Microsoft Technologies used:**
+
+This solution is dependent on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
+
+a.  [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api) 
+ 
+ b.  [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 ## Contents
 
@@ -28,11 +40,9 @@ Prancer PenSuite AI provides integration with Microsoft Sentinel
 
 ## Data Connectors
 
-This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)**:
 
-- [Prancer Data Connector](../connectors/prancerlogdata.md) ⚠️ 🔶
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+- [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -50,44 +60,42 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **14 content item(s)** (0 in solution, 14 discovered 🔍):
+This solution includes **14 content item(s)**:
 
-| Content Type | Total | In Solution | Discovered |
-|:-------------|------:|------------:|-----------:|
-| Analytic Rules | 11 | 0 | 11 |
-| Hunting Queries | 2 | 0 | 2 |
-| Workbooks | 1 | 0 | 1 |
+| Content Type | Count |
+|:-------------|:------|
+| Analytic Rules | 11 |
+| Hunting Queries | 2 |
+| Workbooks | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [Disks Alerts From Prancer](../content/prancer-pensuiteai-integration-disks-alerts-from-prancer-8c484ef9-d758-4827-9920-f4f77158f03e-68b007b3.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Flow Logs Alerts for Prancer](../content/prancer-pensuiteai-integration-flow-logs-alerts-for-prancer-59336232-1bbc-4f66-90dd-5ac3708e4405-d4069eb4.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [NetworkSecurityGroups Alert From Prancer](../content/prancer-pensuiteai-integration-networksecuritygroups-alert-from-prancer-a8babf91-b844-477c-8abf-d31e3df74933-55e376e3.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [PAC high severity](../content/prancer-pensuiteai-integration-pac-high-severity-7caa1c03-d20b-42f2-ac95-5232f6e570da-633aead8.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Registries Alerts for Prancer](../content/prancer-pensuiteai-integration-registries-alerts-for-prancer-08706063-c15e-4d96-beae-9e8d92ccefbb-f9077415.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Sites Alerts for Prancer](../content/prancer-pensuiteai-integration-sites-alerts-for-prancer-bbeb2f26-cb99-4e4b-900f-24ce9809142d-a31ca03e.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Storage Accounts Alerts From Prancer](../content/prancer-pensuiteai-integration-storage-accounts-alerts-from-prancer-4adf2b5d-6b88-4b96-8cc2-a3c7fbbee10b-bd7c3258.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Subnets Alerts for Prancer](../content/prancer-pensuiteai-integration-subnets-alerts-for-prancer-10be8f37-d83c-4b7e-81c2-1271c51ac09f-bc56763f.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Vaults Alerts for Prancer](../content/prancer-pensuiteai-integration-vaults-alerts-for-prancer-0b76eef3-5dc0-41b1-9f67-fffa7783f5f6-72954fb5.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Virtual Machines Alerts for Prancer](../content/prancer-pensuiteai-integration-virtual-machines-alerts-for-prancer-c13b025c-ea31-4e4b-8e08-955b8fa91fa0-cecfef04.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
-| [VirtualNetworkPeerings Alerts From Prancer](../content/prancer-pensuiteai-integration-virtualnetworkpeerings-alerts-from-prancer-6bd031cf-78d0-4edd-8191-60f84b6eef7a-4bd81a33.md) ⚠️ | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Disks Alerts From Prancer](../content/prancer-pensuiteai-integration-disks-alerts-from-prancer-8c484ef9-d758-4827-9920-f4f77158f03e-23416112.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Flow Logs Alerts for Prancer](../content/prancer-pensuiteai-integration-flow-logs-alerts-for-prancer-59336232-1bbc-4f66-90dd-5ac3708e4405-72e2fad9.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [NetworkSecurityGroups Alert From Prancer](../content/prancer-pensuiteai-integration-networksecuritygroups-alert-from-prancer-a8babf91-b844-477c-8abf-d31e3df74933-eb7ac46a.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [PAC high severity](../content/prancer-pensuiteai-integration-pac-high-severity-7caa1c03-d20b-42f2-ac95-5232f6e570da-68b6570f.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Registries Alerts for Prancer](../content/prancer-pensuiteai-integration-registries-alerts-for-prancer-08706063-c15e-4d96-beae-9e8d92ccefbb-24c9cc5e.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Sites Alerts for Prancer](../content/prancer-pensuiteai-integration-sites-alerts-for-prancer-bbeb2f26-cb99-4e4b-900f-24ce9809142d-5b489163.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Storage Accounts Alerts From Prancer](../content/prancer-pensuiteai-integration-storage-accounts-alerts-from-prancer-4adf2b5d-6b88-4b96-8cc2-a3c7fbbee10b-3428feb9.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Subnets Alerts for Prancer](../content/prancer-pensuiteai-integration-subnets-alerts-for-prancer-10be8f37-d83c-4b7e-81c2-1271c51ac09f-e9a03647.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Vaults Alerts for Prancer](../content/prancer-pensuiteai-integration-vaults-alerts-for-prancer-0b76eef3-5dc0-41b1-9f67-fffa7783f5f6-9e72e923.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Virtual Machines Alerts for Prancer](../content/prancer-pensuiteai-integration-virtual-machines-alerts-for-prancer-c13b025c-ea31-4e4b-8e08-955b8fa91fa0-aef7c25d.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
+| [VirtualNetworkPeerings Alerts From Prancer](../content/prancer-pensuiteai-integration-virtualnetworkpeerings-alerts-from-prancer-6bd031cf-78d0-4edd-8191-60f84b6eef7a-31453452.md) | High | Reconnaissance | [`prancer_CL`](../tables/prancer-cl.md) |
 
 ### Hunting Queries
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [Hunting Query for Failed CSPM Scan Items](../content/prancer-pensuiteai-integration-hunting-query-for-failed-cspm-scan-items-322591e4-5b68-4574-be00-2e1b618eab7c-0f2f8db3.md) ⚠️ | Collection | [`prancer_CL`](../tables/prancer-cl.md) |
-| [Hunting Query for High Severity PAC findings](../content/prancer-pensuiteai-integration-hunting-query-for-high-severity-pac-findings-37cb2dea-7a62-4a8d-923b-d588c6372608-4b151227.md) ⚠️ | Collection | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Hunting Query for Failed CSPM Scan Items](../content/prancer-pensuiteai-integration-hunting-query-for-failed-cspm-scan-items-322591e4-5b68-4574-be00-2e1b618eab7c-f3f9773b.md) | Collection | [`prancer_CL`](../tables/prancer-cl.md) |
+| [Hunting Query for High Severity PAC findings](../content/prancer-pensuiteai-integration-hunting-query-for-high-severity-pac-findings-37cb2dea-7a62-4a8d-923b-d588c6372608-27744bcd.md) | Collection | [`prancer_CL`](../tables/prancer-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [PrancerSentinelAnalytics](../content/prancer-pensuiteai-integration-prancersentinelanalytics-90750e32.md) ⚠️ | [`prancer_CL`](../tables/prancer-cl.md) |
-
-> ⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.
+| [PrancerSentinelAnalytics](../content/prancer-pensuiteai-integration-prancersentinelanalytics-cba49168.md) | [`prancer_CL`](../tables/prancer-cl.md) |
 
 ## Release Notes
 

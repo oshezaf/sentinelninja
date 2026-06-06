@@ -19,9 +19,9 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **124** |
-| Active | 88 |
+| Active | 86 |
 | Deprecated 🚫 | 27 |
-| Unpublished ⚠️ | 25 |
+| Unpublished ⚠️ | 27 |
 
 ### By Collection Method
 
@@ -62,7 +62,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Corelight | 108 | [Corelight](../solutions/corelight.md) |
 | [Cribl](../connectors/cribl.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cribl | 4 | [Cribl](../solutions/cribl.md) |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | [Azure Function](../methods/azure-function.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
-| [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
+| [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | [Azure Function](../methods/azure-function.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
 | [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
@@ -79,7 +79,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Forescout Host Property Monitor](../connectors/forescouthostpropertymonitor.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Forescout | 3 | [ForescoutHostPropertyMonitor](../solutions/forescouthostpropertymonitor.md) |
 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Fortinet | 3 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
 | [Garrison ULTRA Remote Logs](../connectors/garrisonultraremotelogs.md) | [REST Pull API](../methods/rest-pull-api.md) | Garrison | 1 | [Garrison ULTRA](../solutions/garrison-ultra.md) |
-| [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
+| [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶 | [Azure Function](../methods/azure-function.md) | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | [HYAS Protect](../connectors/hyasprotect.md) 🔶 | [Azure Function](../methods/azure-function.md) | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Imperva | 3 | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
@@ -96,12 +96,12 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Netskope Data Connector](../connectors/netskopedataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 17 | [Netskopev2](../solutions/netskopev2.md) |
 | [Netskope Web Transactions Data Connector](../connectors/netskopewebtransactionsdataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | Netskope | 2 | [Netskopev2](../solutions/netskopev2.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
-| [Open Systems Data Connector](../connectors/opensystems.md) 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Open Systems | 4 | [Open Systems](../solutions/open-systems.md) |
+| [Open Systems Data Connector](../connectors/opensystems.md) 🔶 | [Azure Function](../methods/azure-function.md) | Open Systems | 4 | [Open Systems](../solutions/open-systems.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [PDNS Block Data Connector](../connectors/pdnsblockdataconnector.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | Nominet | 1 | [PDNS Block Data Connector](../solutions/pdns-block-data-connector.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
-| [Prancer Data Connector](../connectors/prancerlogdata.md) 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Prancer | 1 | [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Prancer | 1 | [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Qualys VM KnowledgeBase](../connectors/qualyskb.md) 🔶 | [Azure Function](../methods/azure-function.md) | Qualys | 2 | [Qualys VM Knowledgebase](../solutions/qualys-vm-knowledgebase.md) |
 | [Rapid7 Insight Platform Vulnerability Management Reports](../connectors/insightvmcloudapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Rapid7 | 2 | [Rapid7InsightVM](../solutions/rapid7insightvm.md) |
 | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |

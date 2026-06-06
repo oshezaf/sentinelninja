@@ -14,7 +14,7 @@
 
 | Name | Severity | Source |
 |:-----|:---------|:-------|
-| [PAC high severity](prancer-pensuiteai-integration-pac-high-severity-7caa1c03-d20b-42f2-ac95-5232f6e570da-633aead8.md) ⚠️ | High | 📦 [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
+| [PAC high severity](prancer-pensuiteai-integration-pac-high-severity-7caa1c03-d20b-42f2-ac95-5232f6e570da-68b6570f.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Palo Alto - possible internal to external port scanning](paloalto-pan-os-palo-alto-possible-internal-to-external-port-scanning-5b72f527-e3f6-4a00-9908-8e4fee14da9f-56e27714.md) | Low | 📦 [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | [Palo Alto - possible nmap scan on with top 100 option](paloalto-pan-os-palo-alto-possible-nmap-scan-on-with-top-100-option-4d61bb9a-7f6d-45b1-ac0e-517e2a92f6fd-008533ce.md) | Medium | 📦 [PaloAlto-PAN-OS](../solutions/paloalto-pan-os.md) |
 | [Palo Alto - potential beaconing detected](azure-cloud-ngfw-by-palo-alto-networks-palo-alto-potential-beaconing-detected-f0be259a-34ac-4946-aa15-ca2b115d5feb-ed56266d.md) | Low | 📦 [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |

@@ -60,9 +60,7 @@ This table is ingested by the following connectors:
 
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
-| [CBS_BreachedCredentials](../parsers/cbs-breachedcredentials.md) | [CTM360](../solutions/ctm360.md) ⚠️ |  |
-
-> ⚠️ Parsers marked with ⚠️ are not listed in their Solution JSON file.
+| [CBS_BreachedCredentials](../parsers/cbs-breachedcredentials.md) | [CTM360](../solutions/ctm360.md) |  |
 
 ---
 
