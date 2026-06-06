@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [SalesforceAuditLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_DCR.json) |
 | **CCF Configuration** | [SalesforceAuditLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceAuditLogsConnector_CCF/SalesforceAuditLogs_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#salesforce-audit-logs-via-codeless-connector-framework) |
 
 The Salesforce Audit Logs data connector provides the capability to ingest administrative changes and configuration modifications from your Salesforce org into Microsoft Sentinel through the REST API. The connector provides the ability to ingest [Setup Audit Trail](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_setupaudittrail.htm) and [Login History](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_loginhistory.htm) events into Microsoft Sentinel which track changes made to your org's configuration, helping you maintain security and compliance visibility.
 
@@ -27,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | ✓ | ✗ | ? |
+| [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | ✓ | ✗ | ✓ |
 | [`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) | ✓ | ✗ | ? |
 
 ## Permissions

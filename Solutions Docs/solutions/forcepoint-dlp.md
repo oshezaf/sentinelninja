@@ -18,7 +18,7 @@
 | **Author** | Forcepoint - isv@email.com |
 | **First Published** | 2022-05-09 |
 | **Solution Folder** | [Forcepoint DLP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20DLP) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-forcepoint-dlp) · Popularity: 🔵 Medium (76%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-forcepoint-dlp) · Popularity: 🟢 High (82%) |
 
 The [Forcepoint DLP (Data Loss Prevention)](https://www.forcepoint.com/product/dlp-data-loss-prevention) Solution for Microsoft Sentinel allows you to automatically export DLP incident data from Forcepoint DLP into Microsoft Sentinel in real-time. This enriches visibility into user activities and data loss incidents, enables further correlation with data from Azure workloads and other feeds, and improves monitoring capability with Workbooks inside Microsoft Sentinel.
 
@@ -38,11 +38,9 @@ This solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)**:
 
-- [Forcepoint DLP](../connectors/forcepoint-dlp.md) ⚠️ 🔶
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+- [Forcepoint DLP](../connectors/forcepoint-dlp.md) 🔶
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 

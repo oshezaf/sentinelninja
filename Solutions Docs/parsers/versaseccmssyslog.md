@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`VersasecCmsSysLogs_CL`](../tables/versaseccmssyslogs-cl.md) | ? | ✓ | ? |
+| [`VersasecCmsSysLogs_CL`](../tables/versaseccmssyslogs-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

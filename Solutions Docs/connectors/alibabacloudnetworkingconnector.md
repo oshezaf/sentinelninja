@@ -22,6 +22,14 @@
 
 The Alibaba Cloud Networking data connector provides the capability to ingest [Alibaba Cloud](https://www.alibabacloud.com/) networking data into Microsoft Sentinel through the Simple Log Service (SLS) REST API. Refer to [API documentation](https://www.alibabacloud.com/help/en/sls/developer-reference/api-sls-2020-12-30-endpoint) for more information. The connector provides the ability to get VPC Flow Logs, WAF Logs, and API Gateway Logs from Alibaba Cloud.
 
+## Tables Ingested
+
+This connector ingests data into the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`AlibabaCloudVPCFlowLogs`](../tables/alibabacloudvpcflowlogs.md) | ✗ | ✗ | ✗ |
+
 ## Permissions
 
 **Resource Provider Permissions:**

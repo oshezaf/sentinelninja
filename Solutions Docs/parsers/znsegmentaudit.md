@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZNAudit_CL`](../tables/znaudit-cl.md) | ? | ✓ | ? |
-| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | ? | ✓ | ? |
+| [`ZNAudit_CL`](../tables/znaudit-cl.md) | ✓ | ✓ | ✓ |
+| [`ZNSegmentAuditNativePoller_CL`](../tables/znsegmentauditnativepoller-cl.md) | ✓ | ✓ | ✓ |
 
 ---
 

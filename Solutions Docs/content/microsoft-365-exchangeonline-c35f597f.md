@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `ExternalAccess == "True"`<br>`OfficeWorkload == "Exchange"`<br>`Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"`<br>`Operation contains "HardDelete"`<br>`UserType == "Admin"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `ExternalAccess == "True"`<br>`OfficeWorkload == "Exchange"`<br>`Operation in "Add-MailboxPermission,MailboxLogin,Remove-MailboxPermission,Set-Mailbox,UpdateFolderPermissions"`<br>`Operation contains "HardDelete"`<br>`UserType == "Admin"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
 
 ---

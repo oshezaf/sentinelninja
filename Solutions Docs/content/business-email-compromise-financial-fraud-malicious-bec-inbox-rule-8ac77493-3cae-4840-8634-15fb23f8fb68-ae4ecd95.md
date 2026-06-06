@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `Operation == "New-InboxRule"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `Operation == "New-InboxRule"`<br>`Parameters has "DeleteMessage"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"` | ✓ | ✗ | ✓ |
 
 ---
 

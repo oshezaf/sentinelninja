@@ -31,11 +31,9 @@ Forescout eyeInspect is a cybersecurity platform designed for Operational Tech
 
 ## Data Connectors
 
-This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)**:
 
-- [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md) ⚠️
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+- [Forescout eyeInspect for OT Security](../connectors/forescout-eyeinspect-for-ot-security.md)
 
 ## Tables Used
 

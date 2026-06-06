@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 | [`Usage`](../tables/usage.md) |  | ? | ✗ | ? |
 
 ---

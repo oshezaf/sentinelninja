@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID !in "0100022949,0100022952"`<br>`DeviceProduct has "Fortigate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID !in "0100022949,0100022952"`<br>`DeviceProduct has "Fortigate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has_all "procdump"`<br>`CommandLine has_all "rundll32"`<br>`EventID == "4688"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has_all "procdump"`<br>`CommandLine has_all "rundll32"`<br>`EventID == "4688"` | ✓ | ✓ | ✓ |
 
 ---
 

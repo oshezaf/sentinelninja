@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"`<br>`Parameters has_any "ForwardTo"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "Exchange"`<br>`Operation in "New-InboxRule,Set-InboxRule,Set-Mailbox"`<br>`Parameters has_any "ForwardTo"` | ✓ | ✗ | ✓ |
 
 ---
 

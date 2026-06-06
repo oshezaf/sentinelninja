@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ? |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | ✓ | ✗ | ? |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | ✓ | ✗ | ✓ |
 
 ---
 

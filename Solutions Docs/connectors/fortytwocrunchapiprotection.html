@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>42Crunch API Protection Push Connector via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="42crunch-api-protection">42Crunch API Protection (Push Connector via Codeless Connector Framework)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/42CrunchLogo.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>FortyTwoCrunchAPIProtection</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft Corporation</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/42crunch-api-protection.html">42Crunch API Protection</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/42CrunchAPIProtection.json">42CrunchAPIProtection.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/DCR.json">DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Data%20Connectors/42Crunch_CCF/PollingConfig.json">PollingConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>Connects the 42Crunch API protection to Microsoft Sentinel via the Azure Monitor DCE/DCR REST API interface. The integration uses Docker containers (API Firewall and Log Forwarder) to forward API traffic logs to Microsoft Sentinel for threat detection and analysis.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/fortytwocrunchapiprotectionv2-cl.html"><code>FortyTwoCrunchAPIProtectionV2_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft.Insights/dataCollectionEndpoints</strong>: Data Collection Endpoint is required for the modern push connector to receive data from the external security system.</li>
+<li><strong>Microsoft.Insights/dataCollectionRules</strong>: Data Collection Rule is required to define the schema and transformations for incoming data.</li>
+<li><strong>Microsoft.Authorization/roleAssignments</strong>: Role assignment is required to grant the Entra application permissions to send data to the Data Collection Rule.</li>
+<li><strong>42Crunch API Firewall requirement</strong>: The 42Crunch API Firewall and Log Forwarder Docker containers must be deployed and running. Obtain your API Firewall token (42C_FIREWALL_TOKEN) and platform URL (42C_PLATFORM_URL) from the 42Crunch platform at https://platform.42crunch.com. Full deployment instructions are available at https://github.com/42Crunch/azure-sentinel-integration.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Create ARM Resources and Provide the Required Permissions</strong></p>
+<p>This connector receives data from external security systems that push logs to Microsoft Sentinel. The external system must be configured to send raw event data to the Microsoft Sentinel Ingestion API. Clicking on <strong>Deploy</strong> will trigger the creation of Log Analytics tables and a Data Collection Rule (DCR). It will then create an Entra application, link the DCR to it, and set the entered secret in the application. This setup enables data to be sent securely to the DCR using an Entra token.</p>
+<p><a href="https://review.learn.microsoft.com/azure/sentinel/create-push-codeless-connector">Learn more about the connector setup process</a></p>
+<h2 id="azure-resource-deployment">Azure Resource Deployment</h2>
+<p>The deployment process will create the following resources:</p>
+<ul>
+<li>Log Analytics custom table(s)</li>
+<li>Data Collection Endpoint (DCE)</li>
+<li>Data Collection Rule (DCR)</li>
+<li>Entra ID Application Registration</li>
+<li>Role assignments for data ingestion
+Deploy 42Crunch API Protection connector resources</li>
+</ul>
+<h3 id="configuration-values">Configuration Values</h3>
+<p>After deployment, copy the following values to configure your external security system:</p>
+<ul>
+<li><strong>Tenant ID (Directory ID)</strong>: <code>{0}</code></li>
+<li><strong>Entra App Registration Application ID</strong>: <code>{0}</code></li>
+<li><strong>Entra App Registration Secret</strong>: <code>{0}</code></li>
+<li><strong>Data Collection Endpoint Url</strong>: <code>{0}</code></li>
+<li><strong>Data Collection Rule Immutable ID</strong>: <code>{0}</code></li>
+<li><strong>Stream Name (FortyTwoCrunchAPIProtectionV2)</strong>: <code>Custom-FortyTwoCrunchAPIProtectionV2_CL</code></li>
+</ul>
+<p>ℹ️ Keep these values secure. You will need them to configure your external security system.</p>
+<p><strong>2. Configure your external system to push logs</strong></p>
+<p>Use the following parameters to configure your external security system to send logs to the workspace.</p>
+<h3 id="configuration-steps">Configuration Steps</h3>
+<ol>
+<li>Access your external security system's configuration interface.</li>
+<li>Navigate to the data forwarding, integration, or SIEM settings.</li>
+<li>Select <strong>Azure Monitor</strong> or <strong>Microsoft Sentinel</strong> as the destination.</li>
+<li>Select <strong>Data Collection Endpoint</strong> as the authentication method.</li>
+<li>Configure the required fields using the values from the previous step:<ul>
+<li><strong>Tenant ID</strong>: Copy from above</li>
+<li><strong>Application (Client) ID</strong>: Copy from above</li>
+<li><strong>Client Secret</strong>: Copy from above</li>
+<li><strong>Data Collection Endpoint</strong>: Copy from above</li>
+<li><strong>Data Collection Rule Immutable ID</strong>: Copy from above</li>
+<li><strong>Stream Name</strong>: Copy the appropriate stream name from above</li>
+</ul>
+</li>
+<li>Save the configuration and enable/start the forwarder.</li>
+</ol>
+<h3 id="validation">Validation</h3>
+<blockquote>
+<p><strong>Note</strong>: Data will appear in the <strong>FortyTwoCrunchAPIProtectionV2</strong> table in your Log Analytics workspace within a few minutes.</p>
+</blockquote>
+<p>To verify data is being received, run the following query in your Log Analytics workspace:</p>
+<pre><code class="language-kusto">FortyTwoCrunchAPIProtectionV2
+| where TimeGenerated &gt; ago(1h)
+| take 10
+</code></pre>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<p>If data is not appearing:</p>
+<ul>
+<li>Verify the configuration values are correct</li>
+<li>Check that the forwarder/integration is enabled and running</li>
+<li>Review logs in your external security system for any errors</li>
+<li>Ensure network connectivity from your system to Azure</li>
+<li>Verify the Entra application has the correct permissions
+After deploying the Azure resources, configure the <strong>42Crunch Log Forwarder</strong> Docker container to send data to the deployed DCE/DCR endpoints instead of the legacy HTTP Data Collector API.</li>
+</ul>
+<h3 id="update-docker-compose-helm-chart-environment-variables">Update Docker Compose / Helm Chart Environment Variables</h3>
+<p>Replace the legacy <code>WORKSPACE_ID</code> and <code>WORKSPACE_KEY</code> environment variables with the new DCE/DCR configuration:</p>
+<pre><code class="language-yaml">environment:
+  # Legacy (remove these):
+  # - WORKSPACE_ID=&lt;workspace-id&gt;
+  # - WORKSPACE_KEY=&lt;primary-key&gt;
+
+  # New CCF Push Connector configuration:
+  - DCE_ENDPOINT=&lt;data-collection-endpoint-url&gt;
+  - DCR_IMMUTABLE_ID=&lt;data-collection-rule-immutable-id&gt;
+  - DCR_STREAM_NAME=Custom-FortyTwoCrunchAPIProtectionV2_CL
+
+  # 42Crunch platform credentials (unchanged):
+  - 42C_FIREWALL_TOKEN=&lt;your-firewall-token&gt;
+  - 42C_PLATFORM_URL=&lt;your-platform-url&gt;
+</code></pre>
+<p>The DCE endpoint URL and DCR immutable ID are displayed after deploying the ARM resources in Step 1. For full configuration details, refer to the <a href="https://github.com/42Crunch/azure-sentinel-integration">42Crunch Microsoft Sentinel Integration</a> documentation.</p>
+<h3 id="important-connection-status">Important: Connection Status</h3>
+<p>This is a <strong>push-based connector</strong> - it receives data from the 42Crunch Log Forwarder and does not maintain an active polling connection. The connector shows as <strong>Connected</strong> when data has been received within the last 7 days.</p>
+<p><strong>1. Uninstall connector</strong></p>
+<p>Use this PowerShell script to delete the connector instance.</p>
+<h3 id="delete-the-connector-instance">Delete the Connector Instance</h3>
+<p>Run the following PowerShell commands to remove the data connector instance:</p>
+<pre><code class="language-powershell">$sub = &quot;&lt;subscription-id&gt;&quot;
+$rg  = &quot;&lt;resource-group-name&gt;&quot;
+$ws  = &quot;&lt;workspace-name&gt;&quot;
+$connectorName = &quot;FortyTwoCrunchAPIProtection&quot;
+$armEndpoint = (az cloud show --query endpoints.resourceManager -o tsv).TrimEnd('/')
+
+Write-Host &quot;Deleting $connectorName...&quot; -NoNewline
+az rest --method DELETE --uri &quot;$armEndpoint/subscriptions/$sub/resourceGroups/$rg/providers/Microsoft.OperationalInsights/workspaces/$ws/providers/Microsoft.SecurityInsights/dataConnectors/$connectorName`?api-version=2024-09-01&quot;
+Write-Host &quot; Done&quot; -ForegroundColor Green
+</code></pre>
+<blockquote>
+<p>NOTE: Replace <code>&lt;subscription-id&gt;</code>, <code>&lt;resource-group-name&gt;</code>, and <code>&lt;workspace-name&gt;</code> with your actual Azure values before running the script.
+This removes the push connector instance. Historical data in your Log Analytics workspace will be retained.</p>
+</blockquote>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

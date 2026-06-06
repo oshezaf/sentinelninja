@@ -19,9 +19,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **125** |
-| Active | 94 |
+| Active | 91 |
 | Deprecated 🚫 | 26 |
-| Unpublished ⚠️ | 5 |
+| Unpublished ⚠️ | 8 |
 
 ## Connectors Using This Method
 
@@ -33,8 +33,8 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [AbnormalSecurity ](../connectors/abnormalsecurity.md) 🔶 | AbnormalSecurity | 2 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Agari Phishing Defense and Brand Protection](../connectors/agari.md) ⚠️ 🔶 | Agari | 3 | [Agari](../solutions/agari.md) |
 | [AliCloud](../connectors/alicloud.md) | AliCloud | 1 | [Alibaba Cloud](../solutions/alibaba-cloud.md) |
-| [Armis Activities](../connectors/armisactivities.md) | Armis | 1 | [Armis](../solutions/armis.md) |
-| [Armis Alerts](../connectors/armisalerts.md) | Armis | 1 | [Armis](../solutions/armis.md) |
+| [Armis Activities](../connectors/armisactivities.md) ⚠️ | Armis | 1 | [Armis](../solutions/armis.md) |
+| [Armis Alerts](../connectors/armisalerts.md) ⚠️ | Armis | 1 | [Armis](../solutions/armis.md) |
 | [Armis Alerts Activities](../connectors/armisalertsactivities.md) | Armis | 2 | [Armis](../solutions/armis.md) |
 | [Armis Devices](../connectors/armisdevices.md) | Armis | 1 | [Armis](../solutions/armis.md) |
 | [Armorblox](../connectors/armorblox.md) 🔶 | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
@@ -42,17 +42,17 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Bitglass](../connectors/bitglass.md) 🔶 | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
 | [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
-| [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶 | Cisco | 12 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
-| [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | Cisco | 12 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
+| [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶 | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
+| [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶 | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
 | [Cisco ETD](../connectors/ciscoetd.md) 🔶 | Cisco | 1 | [Cisco ETD](../solutions/cisco-etd.md) |
 | [Cohesity](../connectors/cohesitydataconnector.md) | Cohesity | 1 | [CohesitySecurity](../solutions/cohesitysecurity.md) |
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
-| [ContrastADR](../connectors/contrastadr.md) 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
+| [ContrastADR](../connectors/contrastadr.md) ⚠️ 🔶 | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) | Crowdstrike | 15 | [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) |
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
-| [CyberArkEPM](../connectors/cyberarkepm.md) 🔶 | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
+| [CyberArkEPM](../connectors/cyberarkepm.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
 | [ESET Inspect](../connectors/esetinspect.md) 🔶 | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
@@ -112,11 +112,11 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | Team Cymru Scout | 14 | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | [Tenable Vulnerability Management](../connectors/tenablevm.md) | Tenable | 5 | [Tenable App](../solutions/tenable-app.md) |
 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶 | Tenable | 2 | [TenableIO](../solutions/tenableio.md) |
-| [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) 🔶 | TheHive Project | 1 | [TheHive](../solutions/thehive.md) |
+| [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) ⚠️ 🔶 | TheHive Project | 1 | [TheHive](../solutions/thehive.md) |
 | [Transmit Security Connector](../connectors/transmitsecurity.md) 🔶 | TransmitSecurity | 1 | [TransmitSecurity](../solutions/transmitsecurity.md) |
 | [Trend Micro Cloud App Security](../connectors/trendmicrocas.md) 🔶 | Trend Micro | 1 | [Trend Micro Cloud App Security](../solutions/trend-micro-cloud-app-security.md) |
 | [Trend Vision One](../connectors/trendmicroxdr.md) 🔶 | Trend Micro | 4 | [Trend Micro Vision One](../solutions/trend-micro-vision-one.md) |
-| [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) ⚠️ | Upwind | 1 | [Upwind](../solutions/upwind.md) |
+| [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) | Upwind | 1 | [Upwind](../solutions/upwind.md) |
 | [Varonis SaaS](../connectors/varonissaas.md) 🔶 | Varonis | 1 | [VaronisSaaS](../solutions/varonissaas.md) |
 | [Vectra XDR](../connectors/vectraxdr.md) | Vectra | 6 | [Vectra XDR](../solutions/vectra-xdr.md) |
 | [Veeam Data Connector (using Azure Functions)](../connectors/veeamcustomtablesdataconnector.md) | Veeam | 6 | [Veeam](../solutions/veeam.md) |

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `AlertName == "No Traffic Detected on Sensor Interface"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName == "No Traffic Detected on Sensor Interface"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ✓ |
 
 ---
 

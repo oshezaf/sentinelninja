@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `Computer contains "<YOUR CA MACHINE NAME>"`<br>`EventID == "5059"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `Computer contains "<YOUR CA MACHINE NAME>"`<br>`EventID == "5059"` | ✓ | ✓ | ✓ |
 
 ---
 

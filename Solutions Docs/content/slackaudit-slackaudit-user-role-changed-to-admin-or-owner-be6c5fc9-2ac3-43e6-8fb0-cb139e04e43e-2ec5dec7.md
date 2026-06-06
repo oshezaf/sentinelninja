@@ -6,7 +6,7 @@
 
 ---
 
-This query helps to detect a change in the users role to admin or owner.
+This query detects Slack audit events where a user role is changed to admin or owner, indicating potential privilege escalation or persistence activity. It monitors role change actions in Slack audit logs and maps the affected user as the primary account entity for investigation.
 
 | Attribute | Value |
 |:----------|:------|
@@ -28,7 +28,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

@@ -1,4 +1,6 @@
-# 🚫 🔍 [DEPRECATED] OneLogin IAM Platform
+# 🚫 ⚠️ 🔍 [DEPRECATED] OneLogin IAM Platform
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
@@ -35,8 +37,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | ? | ✓ | ? |
-| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | ? | ✓ | ? |
+| [`OneLoginEventsV2_CL`](../tables/onelogineventsv2-cl.md) | ✓ | ✓ | ✓ |
+| [`OneLoginUsersV2_CL`](../tables/oneloginusersv2-cl.md) | ✓ | ✓ | ✓ |
 | [`OneLogin_CL`](../tables/onelogin-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

@@ -29,7 +29,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityType in "FailedLogOn,LogOn"` | ✓ | ✗ | ? |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "500121"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "500121"` | ✓ | ✗ | ✓ |
 
 ---
 

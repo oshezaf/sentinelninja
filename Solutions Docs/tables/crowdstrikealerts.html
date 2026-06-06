@@ -47,6 +47,10 @@
   <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikealerts">View Documentation</a></td>
 </tr>
@@ -62,7 +66,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 </ul>
-<h2 id="schema">Schema (43 columns)</h2>
+<h2 id="schema">Schema (109 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikealerts">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -99,6 +103,11 @@
   <td style="text-align:left">The type or category of the CrowdStrike alert.</td>
 </tr>
 <tr>
+  <td style="text-align:left">AllegedFiletype</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The suspected file type of the malicious file associated with the alert.</td>
+</tr>
+<tr>
   <td style="text-align:left">AssignedToName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Name of the user assigned to handle the alert.</td>
@@ -114,9 +123,29 @@
   <td style="text-align:left">UUID of the assigned user.</td>
 </tr>
 <tr>
+  <td style="text-align:left">Categorization</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Categorization of the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ChildProcessIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of child process IDs spawned by the detected process.</td>
+</tr>
+<tr>
   <td style="text-align:left">Cid</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Customer ID in the CrowdStrike platform.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CloudIndicator</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates if the alert involves cloud-based indicators.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Cmdline</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Command line used to execute the detected process.</td>
 </tr>
 <tr>
   <td style="text-align:left">CompositeId</td>
@@ -127,6 +156,36 @@
   <td style="text-align:left">Confidence</td>
   <td style="text-align:left">int</td>
   <td style="text-align:left">Confidence score of the alert (0-100).</td>
+</tr>
+<tr>
+  <td style="text-align:left">ContextTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp providing additional context for the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationRuleCreateCase</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates if the correlation rule is configured to create a case.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationRuleExecutionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Execution ID of the correlation rule that triggered the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationRuleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the correlation rule that triggered the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationRuleUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User ID associated with the correlation rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationRuleUserUuid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">UUID of the user associated with the correlation rule.</td>
 </tr>
 <tr>
   <td style="text-align:left">CrawledTimestamp</td>
@@ -149,6 +208,16 @@
   <td style="text-align:left">Detailed description of the alert.</td>
 </tr>
 <tr>
+  <td style="text-align:left">DetectionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the detection associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Device</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about the device where the alert was detected.</td>
+</tr>
+<tr>
   <td style="text-align:left">DisplayName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Human-readable name for the alert.</td>
@@ -159,9 +228,59 @@
   <td style="text-align:left">Indicates if an email notification was sent for this alert.</td>
 </tr>
 <tr>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp when the alert activity ended.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EnrichedEntities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Enriched entity information associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventCorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Correlation ID linking related events.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Event IDs associated with the alert.</td>
+</tr>
+<tr>
   <td style="text-align:left">External</td>
   <td style="text-align:left">bool</td>
   <td style="text-align:left">Indicates if the alert originated from an external source.</td>
+</tr>
+<tr>
+  <td style="text-align:left">FalconHostLink</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Link to the alert details in the CrowdStrike Falcon console.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Filename</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the file associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Filepath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Full path to the file associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">GlobalPrevalence</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Global prevalence rating of the detected file.</td>
+</tr>
+<tr>
+  <td style="text-align:left">GrandparentDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Details about the grandparent process in the process tree.</td>
+</tr>
+<tr>
+  <td style="text-align:left">HasTruncatedEntities</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates if the alert entities have been truncated.</td>
 </tr>
 <tr>
   <td style="text-align:left">Id</td>
@@ -169,9 +288,109 @@
   <td style="text-align:left">Unique identifier for the alert.</td>
 </tr>
 <tr>
+  <td style="text-align:left">IndicatorId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier for the indicator of compromise that triggered the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IocContext</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Context information about the indicator of compromise.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsClosed</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates if the alert has been closed.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LeadId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier for the lead associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LeadType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the lead associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalAddressIp4</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IPv4 address of the local endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalAddressIp6</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IPv6 address of the local endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalPrevalence</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Local prevalence rating within the organization.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LocalProcessId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Local process ID on the system where the alert occurred.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LogonDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Domain used for user logon associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Md5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">MD5 hash of the file associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">MitreAttack</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">MITRE ATT&amp;CK tactics and techniques associated with the alert.</td>
+</tr>
+<tr>
   <td style="text-align:left">Objective</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The attacker's presumed objective.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OriginalCorrelationRulesEntitiesCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Original count of correlation rule entities.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OriginalIndicatorEntitiesCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Original count of indicator entities.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OriginCid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Customer ID of the originating tenant.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Details about the parent process in the process tree.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ParentProcessId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Process ID of the parent process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PatternDisposition</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Numerical identifier for the action taken by the detection pattern.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PatternDispositionDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Text description of the pattern disposition action.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PatternDispositionDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Detailed information about the pattern disposition.</td>
 </tr>
 <tr>
   <td style="text-align:left">PatternId</td>
@@ -184,6 +403,31 @@
   <td style="text-align:left">Operating system or platform where the alert was detected.</td>
 </tr>
 <tr>
+  <td style="text-align:left">PolyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Poly ID associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PriorityDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Priority details associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessEndTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp when the detected process ended.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Process ID of the detected process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessStartTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp when the detected process started.</td>
+</tr>
+<tr>
   <td style="text-align:left">Product</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">CrowdStrike product that generated the alert.</td>
@@ -192,6 +436,11 @@
   <td style="text-align:left">Scenario</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Security scenario that triggered the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Score</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Score associated with the alert.</td>
 </tr>
 <tr>
   <td style="text-align:left">SecondsToResolved</td>
@@ -214,9 +463,49 @@
   <td style="text-align:left">Text representation of the severity level.</td>
 </tr>
 <tr>
+  <td style="text-align:left">Sha1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA1 hash of the file associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Sha256</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SHA256 hash of the file associated with the alert.</td>
+</tr>
+<tr>
   <td style="text-align:left">ShowInUi</td>
   <td style="text-align:left">bool</td>
   <td style="text-align:left">Indicates if the alert should be displayed in the user interface.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalEndTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp when the signal ended.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalStartTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp when the signal started.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SignalUpdatedTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp when the signal was last updated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceEndpointAddressIp4</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IPv4 address of the source endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceEndpointAddressIp6</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IPv6 address of the source endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceIps</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of source IP addresses associated with the alert.</td>
 </tr>
 <tr>
   <td style="text-align:left">SourceProducts</td>
@@ -232,6 +521,11 @@
   <td style="text-align:left">SourceVendors</td>
   <td style="text-align:left">dynamic</td>
   <td style="text-align:left">List of vendors associated with the alert sources.</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Timestamp when the alert activity started.</td>
 </tr>
 <tr>
   <td style="text-align:left">Status</td>
@@ -264,9 +558,19 @@
   <td style="text-align:left">Identifier of the MITRE ATT&amp;CK technique.</td>
 </tr>
 <tr>
+  <td style="text-align:left">TemplateInstanceId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Instance ID of the detection template used.</td>
+</tr>
+<tr>
   <td style="text-align:left">TenantId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatgraphIndicators</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Threat graph indicators associated with the alert.</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
@@ -279,6 +583,11 @@
   <td style="text-align:left">Time when the alert event occurred.</td>
 </tr>
 <tr>
+  <td style="text-align:left">TriggeringProcessGraphId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Graph ID of the process that triggered the alert.</td>
+</tr>
+<tr>
   <td style="text-align:left">Type</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the table</td>
@@ -287,6 +596,31 @@
   <td style="text-align:left">UpdatedTimestamp</td>
   <td style="text-align:left">datetime</td>
   <td style="text-align:left">Time when the alert was last updated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User ID associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Username associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Users</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of users associated with the alert.</td>
+</tr>
+<tr>
+  <td style="text-align:left">VendorPatternId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Vendor-specific pattern identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">XdrEventId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">XDR event ID associated with the alert.</td>
 </tr>
 </tbody>
 </table>

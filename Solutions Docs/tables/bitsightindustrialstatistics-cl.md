@@ -1,0 +1,64 @@
+# BitsightIndustrialStatistics_CL
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+| Attribute | Value |
+|:----------|:------|
+| **Ingestion API Supported** | ✓ Yes |
+
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+- [Parsers](#parsers-using-this-table)
+
+## Schema (8 columns)
+
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight%5CData%20Connectors%5CBitSight_CCF/table_BitsightIndustrialStatistics.json)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| AverageDurationDays | real | Average duration in days for incidents of this risk vector in the industry. |
+| CompanyGuid | string | GUID of the company. |
+| CompanyName | string | Name of the company. |
+| ConnectorName | string | Connection name identifier for multi-instance tracking. |
+| CountPeriod | string | Measurement period (e.g., 'year'). |
+| IncidentCount | int | Number of incidents for this risk vector in the industry over the measured period. |
+| RiskVector | string | Risk vector slug (dict key — always null due to CCF JSONPath limitation). |
+| TimeGenerated | datetime |  |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [BitSight](../solutions/bitsight.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) |  |
+
+---
+
+## Parsers Using This Table (1)
+
+### Other Parsers (1)
+
+| Parser | Solution | Selection Criteria |
+|:-------|:---------|:-------------------|
+| [BitSightIndustrialStatistics](../parsers/bitsightindustrialstatistics.md) | [BitSight](../solutions/bitsight.md) |  |
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

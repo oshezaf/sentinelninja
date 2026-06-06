@@ -17,6 +17,14 @@ This query identifies common processes run by ransomware malware to destroy volu
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Execution/Possible%20Ransomware%20Related%20Destruction%20Activity.yaml) |
 
+## Tables Used
+
+This content item queries data from the following tables:
+
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ProcessCommandLine contains "/grant Everyone:F"`<br>`ProcessCommandLine contains "/w"`<br>`ProcessCommandLine has "/all"`<br>`ProcessCommandLine has "/change"`<br>`ProcessCommandLine has "/d"`<br>`ProcessCommandLine has "/disable"`<br>`ProcessCommandLine has "/quiet"`<br>`ProcessCommandLine has "delete shadows"`<br>`ProcessCommandLine has "deletejournal"`<br>`ProcessCommandLine has "shadowcopy delete"`<br>`ProcessCommandLine has "usn"` | ✓ | ✗ | ? |
+
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

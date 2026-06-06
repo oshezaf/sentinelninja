@@ -1,6 +1,4 @@
-# ⚠️ Authomize
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Authomize
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Authomize.svg" alt="Authomize Logo" width="75" height="75">
 

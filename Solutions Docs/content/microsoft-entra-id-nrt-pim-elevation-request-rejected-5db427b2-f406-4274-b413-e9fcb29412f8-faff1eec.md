@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName == "Add member to role request denied (PIM activation)"`<br>`ResultReason != "RoleAssignmentExists"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName == "Add member to role request denied (PIM activation)"`<br>`ResultReason != "RoleAssignmentExists"` | ✓ | ✗ | ✓ |
 
 ---
 

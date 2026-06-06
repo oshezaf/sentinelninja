@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | domains |
-| **Version** | 3.3.0 |
+| **Version** | 3.4.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
-| **Last Updated** | 2026-01-27 |
+| **Last Updated** | 2026-05-28 |
 | **Solution Folder** | [Salesforce Service Cloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (93%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud) · Popularity: 🟢 High (92%) |
 
 The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cloud/overview/) solution for Microsoft Sentinel enables you to ingest Service Cloud events into Microsoft Sentinel.
   
@@ -37,11 +37,12 @@ The [Salesforce Service Cloud](https://www.salesforce.com/in/products/service-cl
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
+This solution provides **3 data connector(s)** (plus 1 discovered⚠️):
 
+- [SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)](../connectors/salesforcertemconnector.md)
 - [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md)
 - [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) ⚠️ 🔶
-- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) ⚠️
+- [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -50,13 +51,14 @@ This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **5 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`SalesForceRealTimeEventMonitoring_CL`](../tables/salesforcerealtimeeventmonitoring-cl.md) | [SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)](../connectors/salesforcertemconnector.md) | - |
 | [`SalesforceAuditTrail`](../tables/salesforceaudittrail.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
 | [`SalesforceLoginHistory`](../tables/salesforceloginhistory.md) | [Salesforce Audit Logs (via Codeless Connector Framework)](../connectors/salesforceauditlogsconnector.md) | - |
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
+| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 | [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md), [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | [[DEPRECATED] Salesforce Service Cloud](../connectors/salesforceservicecloud.md) | Analytics, Workbooks |
 
@@ -105,6 +107,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.4.0       | 26-05-2026                     | Added new **Real time event monitoring data connector** with 19 event types |
 | 3.3.0       | 07-05-2026                     | Add new **Salesforce Audit logs CCF Data Connector** to pull **SetupAuditTrails** and **LoginHistory** logs. |
 | 3.2.0       | 01-05-2026                     | Updated **CCF Data Connector** to include new V3 table that includes additional fields and support for multiple domains. |
 | 3.1.0       | 27-04-2026                     | Updated CCP data connector with expanded DCR, table definitions, and polling configuration |

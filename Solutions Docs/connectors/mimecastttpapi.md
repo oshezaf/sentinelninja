@@ -36,9 +36,9 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | ? | ✓ | ? |
-| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | ? | ✓ | ? |
-| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | ? | ✓ | ? |
+| [`Ttp_Attachment_CL`](../tables/ttp-attachment-cl.md) | ✓ | ✓ | ✓ |
+| [`Ttp_Impersonation_CL`](../tables/ttp-impersonation-cl.md) | ✓ | ✓ | ✓ |
+| [`Ttp_Url_CL`](../tables/ttp-url-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

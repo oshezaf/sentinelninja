@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) |  | ? | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "ExtraHop"` | ✓ | ✗ | ? |
+| [`ExtraHop_Detections_CL`](../tables/extrahop-detections-cl.md) |  | ✗ | ✓ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "ExtraHop"` | ✓ | ✗ | ✓ |
 
 ---
 

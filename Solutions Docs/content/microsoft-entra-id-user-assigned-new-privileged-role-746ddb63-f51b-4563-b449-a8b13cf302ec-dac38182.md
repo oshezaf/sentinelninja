@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `AADOperationType in "Assign,AssignEligibleRole,CreateRequestGrantedRole,CreateRequestPermanentEligibleRole,CreateRequestPermanentGrantedRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `AADOperationType in "Assign,AssignEligibleRole,CreateRequestGrantedRole,CreateRequestPermanentEligibleRole,CreateRequestPermanentGrantedRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` | ✓ | ✗ | ✓ |
 
 ---
 

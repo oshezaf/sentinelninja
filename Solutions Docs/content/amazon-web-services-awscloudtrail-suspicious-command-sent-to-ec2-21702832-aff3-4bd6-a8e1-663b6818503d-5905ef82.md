@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateAssociation,PutObject,SendCommand"`<br>`Resources contains "accountId"` | ✓ | ✓ | ? |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "CreateAssociation,PutObject,SendCommand"`<br>`Resources contains "accountId"` | ✓ | ✓ | ✓ |
 
 ---
 

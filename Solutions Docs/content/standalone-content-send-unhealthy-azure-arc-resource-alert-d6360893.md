@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue in "Active,Resolved"`<br>`CategoryValue == "ResourceHealth"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue in "Active,Resolved"`<br>`CategoryValue == "ResourceHealth"` | ✗ | ✗ | ✗ |
 
 ## Associated Connectors
 

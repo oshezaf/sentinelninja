@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | ✓ | ✗ | ? |
+| [`CopilotActivity`](../tables/copilotactivity.md) | ✓ | ✗ | ✓ |
 
 ---
 

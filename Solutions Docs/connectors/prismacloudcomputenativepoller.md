@@ -1,4 +1,6 @@
-# 🔍 Palo Alto Prisma Cloud CWPP (using REST API)
+# ⚠️ 🔍 Palo Alto Prisma Cloud CWPP (using REST API)
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -29,7 +31,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`PrismaCloudCompute_CL`](../tables/prismacloudcompute-cl.md) 🔶 | ? | ✓ | ? |
+| [`PrismaCloudCompute_CL`](../tables/prismacloudcompute-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

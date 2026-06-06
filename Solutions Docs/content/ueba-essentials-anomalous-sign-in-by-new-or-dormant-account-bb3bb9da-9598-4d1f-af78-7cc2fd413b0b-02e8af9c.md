@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityInsights has "True"` | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `RiskDetail != "none"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `RiskDetail != "none"` | ✓ | ✗ | ✓ |
 
 ---
 

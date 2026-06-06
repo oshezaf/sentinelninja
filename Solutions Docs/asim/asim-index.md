@@ -15,7 +15,7 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 ## Schemas
 
 - [AgentEvent](#agentevent) (1 union pair)
-- [AlertEvent](#alertevent) (1 source pairs, 1 union pair)
+- [AlertEvent](#alertevent) (2 source pairs, 1 union pair)
 - [AssetEntity](#assetentity) (1 union pair)
 - [AuditEvent](#auditevent) (10 source pairs, 1 union pair)
 - [Authentication](#authentication) (18 source pairs, 1 union pair)
@@ -47,17 +47,18 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
-| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
+| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
+| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
 
 ### Supported Products
 
-[Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [SentinelOne](asim-products-index.md#sentinelone)
+[Bitdefender](asim-products-index.md#bitdefender), [Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [SentinelOne](asim-products-index.md#sentinelone)
 
 ### Source Parsers
 
 | Parser | Product | Solution | Version |
 |:-------|:--------|:---------|:--------|
+| [BitdefenderGravityZone](asimalerteventbitdefendergravityzone.md) | Bitdefender | [GravityZone](../solutions/gravityzone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventBitdefenderGravityZone.md) |
 | [CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | Cisco Secure Endpoint | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md) |
 | [MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR |  | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md) |
 | [SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | SentinelOne | [SentinelOne (legacy connector)](../solutions/sentinelone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventSentinelOneSingularity.md) |
@@ -156,8 +157,8 @@ These are the main entry points that combine all source parsers:
 | [OktaSystemLogs](asimauthenticationoktasystemlogs.md) | Okta |  | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationOktaSystemLogs.md) |
 | [OktaV2](asimauthenticationoktav2.md) | Okta | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) | [0.4.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationOktaV2.md) |
 | [PaloAltoCortexDataLake](asimauthenticationpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAltoCDL (legacy connector)](../solutions/paloaltocdl.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoCortexDataLake.md) |
-| [PaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md) | Palo Alto PAN-OS GlobalProtect | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoGlobalProtect.md) |
-| [PaloAltoPanOS](asimauthenticationpaloaltopanos.md) | Palo Alto PAN-OS | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoPanOS.md) |
+| [PaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md) | Palo Alto PAN-OS GlobalProtect | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoGlobalProtect.md) |
+| [PaloAltoPanOS](asimauthenticationpaloaltopanos.md) | Palo Alto PAN-OS | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoPanOS.md) |
 | [PostgreSQL](asimauthenticationpostgresql.md) | PostgreSQL | [CustomLogsAma](../solutions/customlogsama.md)<br>[PostgreSQL (legacy connector)](../solutions/postgresql.md) | [0.1.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPostgreSQL.md) |
 | [SalesforceSC](asimauthenticationsalesforcesc.md) | Salesforce Service Cloud | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSalesforceSC.md) |
 | [SentinelOne](asimauthenticationsentinelone.md) | SentinelOne | [SentinelOne (legacy connector)](../solutions/sentinelone.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationSentinelOne.md) |
@@ -289,7 +290,7 @@ These are the main entry points that combine all source parsers:
 | [AzureNSG](asimnetworksessionazurensg.md) | Azure NSG flows |  | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionAzureNSG.md) |
 | [BarracudaCEF](asimnetworksessionbarracudacef.md) | Barracuda WAF | [Barracuda WAF (legacy connector)](../solutions/barracuda-waf.md)<br>[Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionBarracudaCEF.md) |
 | [BarracudaWAF](asimnetworksessionbarracudawaf.md) | Barracuda WAF |  | [0.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionBarracudaWAF.md) |
-| [CheckPointFirewall](asimnetworksessioncheckpointfirewall.md) | CheckPointFirewall | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [1.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md) |
+| [CheckPointFirewall](asimnetworksessioncheckpointfirewall.md) | CheckPointFirewall | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [1.2.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md) |
 | [CheckPointSmartDefense](asimnetworksessioncheckpointsmartdefense.md) | CheckPointSmartDefense | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointSmartDefense.md) |
 | [CiscoASA](asimnetworksessionciscoasa.md) | CiscoASA | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [1.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoASA.md) |
 | [CiscoFirepower](asimnetworksessionciscofirepower.md) | Cisco Firepower | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCiscoFirepower.md) |

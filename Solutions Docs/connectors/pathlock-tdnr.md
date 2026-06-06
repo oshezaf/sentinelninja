@@ -1,4 +1,6 @@
-# Pathlock Inc.: Threat Detection and Response for SAP
+# 🔍 Pathlock Threat Detection and Response Integration
+
+> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/pathlock_logo.svg" alt="" width="75" height="75">
 
@@ -14,26 +16,12 @@
 | **Publisher** | Pathlock Inc. |
 | **Used in Solutions** | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
 | **Collection Method** | [CCF Push](../methods/ccf-push.md) |
-| **Connector Definition Files** | [Pathlock_TDnR_connectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_connectorDefinition.json) |
-| **DCR Definition Files** | [Pathlock_TDnR_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_DCR.json) |
+| **Connector Definition Files** | [Pathlock_TDnR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR.json) |
 | **CCF Configuration** | [Pathlock_TDnR_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_PollingConfig.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#pathlock-inc-threat-detection-and-response-for-sap) |
 
-The [Pathlock Threat Detection and Response (TD&R)](https://pathlock.com/products/cybersecurity-application-controls/) integration with **Microsoft Sentinel Solution for SAP** delivers unified, real-time visibility into SAP security events, enabling organizations to detect and act on threats across all SAP landscapes. This out-of-the-box integration allows Security Operations Centers (SOCs) to correlate SAP-specific alerts with enterprise-wide telemetry, creating actionable intelligence that connects IT security with business processes.
-
-
-
-Pathlock’s connector is purpose-built for SAP and forwards only **security-relevant events by default**, minimizing data volume and noise while maintaining the flexibility to forward all log sources when needed. Each event is enriched with **business process context**, allowing Microsoft Sentinel Solution for SAP analytics to distinguish operational patterns from real threats and to prioritize what truly matters.
-
-
-
-This precision-driven approach helps security teams drastically reduce false positives, focus investigations, and accelerate **mean time to detect (MTTD)** and **mean time to respond (MTTR)**. Pathlock’s library consists of more than 1,500 SAP-specific detection signatures across 70+ log sources, the solution uncovers complex attack behaviors, configuration weaknesses, and access anomalies.
-
-
-
-By combining business-context intelligence with advanced analytics, Pathlock enables enterprises to strengthen detection accuracy, streamline response actions, and maintain continuous control across their SAP environments—without adding complexity or redundant monitoring layers.
+Pathlock Threat Detection and Response enables seamless forwarding of security alerts and logs detected and collected by the Pathlock Platform into Microsoft Sentinel Solution for SAP.
 
 ## Tables Ingested
 
@@ -41,7 +29,6 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ABAPAuditLog`](../tables/abapauditlog.md) | ✓ | ✓ | ? |
 | [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
@@ -50,7 +37,7 @@ This connector ingests data into the following tables:
 
 **Resource Provider Permissions:**
 - **Workspace** (Workspace): Read and Write permissions are required.
-- **Keys** (Workspace): Read permissions to shared keys for the workspace are required. [See the documentation to learn more about workspace keys](https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key)
+- **Keys** (Workspace): Read permissions to shared keys for the workspace are required.
 
 **Custom Permissions:**
 - **Microsoft Entra**: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.
@@ -67,19 +54,18 @@ We will create data collection rule (DCR) and data collection endpoint (DCE) res
 Clicking on "Deploy push connector resources" will trigger the creation of DCR and DCE resources.
 It will then create a Microsoft Entra app registration with client secret and grant permissions on the DCR. This setup enables data to be sent securely to the DCR using a OAuth v2 client credentials.
 - Deploy push connector resources
-  Application: Pathlock Inc. Threat Detection and Response for SAP
+  Application: Pathlock Threat Detection and Response forwarding to Microsoft Sentinel Solution for SAP
 
-**2. Maintain the data collection endpoint details and authentication info in your central instance of Pathlock's Cybersecurity Application Controls: Threat Detection and Response**
+**2. Maintain the data collection endpoint details and authentication info in Pathlock Threat Detection and Response**
 
-Share the data collection endpoint URL and authentication info with the Pathlock administrator to configure the plug and play forwarding in Threat Detection and Response to send data to the data collection endpoint.
-Please do not hesitate to contact Pathlock if support is needed.
+Share the data collection endpoint URL and authentication info with the Pathlock Threat Detection and Response Integration administrator to configure the Integration.
 - **Use this value to configure as Tenant ID in the LogIngestionAPI credential.**: `TenantId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Entra Application ID**: `ApplicationId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **Entra Application Secret**: `ApplicationSecret`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
-- **Use this value to configure the LogsIngestionURL parameter when deploying the IFlow.**: `DataCollectionEndpoint`
+- **Use this value to configure the LogsIngestionURL parameter.**: `DataCollectionEndpoint`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*
 - **DCR Immutable ID**: `DataCollectionRuleId`
   > *Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.*

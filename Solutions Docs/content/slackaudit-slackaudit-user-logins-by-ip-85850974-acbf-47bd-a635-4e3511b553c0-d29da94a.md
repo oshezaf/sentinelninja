@@ -6,7 +6,7 @@
 
 ---
 
-This query shows user IP table statistics for login events.
+This hunt surfaces Slack user login activity by source IP to identify unusual account access patterns and credential abuse.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,8 +14,8 @@ This query shows user IP table statistics for login events.
 | **Solution** | [SlackAudit](../solutions/slackaudit.md) |
 | **ID** | `85850974-acbf-47bd-a635-4e3511b553c0` |
 | **Severity** | Medium |
-| **Tactics** | InitialAccess, Persistence |
-| **Techniques** | T1078 |
+| **Tactics** | InitialAccess, Persistence, DefenseEvasion |
+| **Techniques** | T1078, T1078.001, T1078.003 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditUserLoginsByIP.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

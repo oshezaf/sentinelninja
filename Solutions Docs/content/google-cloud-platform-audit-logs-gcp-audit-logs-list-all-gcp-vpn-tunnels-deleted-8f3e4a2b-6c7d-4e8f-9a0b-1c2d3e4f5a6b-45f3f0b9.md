@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.delete"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` | ✓ | ✓ | ? |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.delete"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` | ✓ | ✓ | ✓ |
 
 ---
 

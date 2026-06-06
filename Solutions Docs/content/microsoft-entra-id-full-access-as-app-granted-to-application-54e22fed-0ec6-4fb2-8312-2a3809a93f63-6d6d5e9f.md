@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `LoggedByService == "Core Directory"`<br>`OperationName == "Consent to application"`<br>`TargetResources has "full_access_as_app"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `LoggedByService == "Core Directory"`<br>`OperationName == "Consent to application"`<br>`TargetResources has "full_access_as_app"` | ✓ | ✗ | ✓ |
 
 ---
 

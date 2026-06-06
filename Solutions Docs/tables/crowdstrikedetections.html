@@ -62,7 +62,7 @@
 <li><a href="#solutions">Solutions</a></li>
 <li><a href="#connectors">Connectors</a></li>
 </ul>
-<h2 id="schema">Schema (108 columns)</h2>
+<h2 id="schema">Schema (110 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -549,9 +549,19 @@
   <td style="text-align:left">Instance ID of the detection template used.</td>
 </tr>
 <tr>
+  <td style="text-align:left">TemplateInstanceIdText</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Instance ID of the detection template used (string representation).</td>
+</tr>
+<tr>
   <td style="text-align:left">TemplateInterfaceId</td>
   <td style="text-align:left">int</td>
   <td style="text-align:left">Interface ID of the detection template.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TemplateInterfaceIdText</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Interface ID of the detection template (string representation).</td>
 </tr>
 <tr>
   <td style="text-align:left">TemplateInterfaceName</td>

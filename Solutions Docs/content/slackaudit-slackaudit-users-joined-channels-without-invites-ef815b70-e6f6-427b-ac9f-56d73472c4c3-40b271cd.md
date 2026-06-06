@@ -6,7 +6,7 @@
 
 ---
 
-Query searches for users which joined channels without invites.
+Query searches for users which joined Slack channels without invites to identify potentially unauthorized channel access or suspicious collaboration activity.
 
 | Attribute | Value |
 |:----------|:------|
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

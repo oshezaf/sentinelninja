@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`W3CIISLog`](../tables/w3ciislog.md) | `csMethod == "GET"`<br>`csUriQuery contains "args"`<br>`csUriQuery contains "clazz"`<br>`csUriQuery contains "codes"`<br>`csUriQuery contains "method"`<br>`csUriStem contains "logoimagehandler.ashx"` | ✓ | ✗ | ? |
+| [`W3CIISLog`](../tables/w3ciislog.md) | `csMethod == "GET"`<br>`csUriQuery contains "args"`<br>`csUriQuery contains "clazz"`<br>`csUriQuery contains "codes"`<br>`csUriQuery contains "method"`<br>`csUriStem contains "logoimagehandler.ashx"` | ✓ | ✗ | ✗ |
 
 ---
 

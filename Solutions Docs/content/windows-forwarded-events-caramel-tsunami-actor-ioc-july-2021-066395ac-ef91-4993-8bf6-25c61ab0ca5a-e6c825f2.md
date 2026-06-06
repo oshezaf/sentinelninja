@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`WindowsEvent`](../tables/windowsevent.md) | `EventData has_any "reg add"`<br>`EventID == "4688"` | ✓ | ✓ | ? |
+| [`WindowsEvent`](../tables/windowsevent.md) | `EventData has_any "reg add"`<br>`EventID == "4688"` | ✓ | ✓ | ✓ |
 
 ---
 

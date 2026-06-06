@@ -6,7 +6,7 @@
 
 ---
 
-This query shows top users by downloads over time.
+This hunt highlights Slack users with the highest file-download volume over the last 24 hours to help identify unusual collection or staging activity.
 
 | Attribute | Value |
 |:----------|:------|
@@ -14,8 +14,8 @@ This query shows top users by downloads over time.
 | **Solution** | [SlackAudit](../solutions/slackaudit.md) |
 | **ID** | `7865b00c-26c8-46db-9422-bb9e4ee696ac` |
 | **Severity** | Medium |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1189, T1133 |
+| **Tactics** | InitialAccess, Collection |
+| **Techniques** | T1189, T1133, T1213, T1119 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditDownloadedFilesByUser.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

@@ -6,7 +6,7 @@
 
 ---
 
-This alert is designed to monitor Azure policies aligned with the Azure Security Benchmark Regulatory Compliance initiative. The alert triggers when policy compliance falls below 70% within a 1 week time-frame.
+This rule monitors Azure policies aligned with the Azure Security Benchmark regulatory compliance initiative and triggers when policy compliance falls below 70% within a 7-day time window.
 
 | Attribute | Value |
 |:----------|:------|
@@ -17,6 +17,7 @@ This alert is designed to monitor Azure policies aligned with the Azure Security
 | **Kind** | Scheduled |
 | **Tactics** | Discovery |
 | **Techniques** | T1082 |
+| **Required Connectors** | [AzureSecurityCenter](../connectors/azuresecuritycenter.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AzureSecurityBenchmark/Analytic%20Rules/AzureSecurityBenchmarkPostureChanged.yaml) |
 
 ## Tables Used

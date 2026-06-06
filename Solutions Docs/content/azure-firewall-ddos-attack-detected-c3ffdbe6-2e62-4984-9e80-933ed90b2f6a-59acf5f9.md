@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | ✓ | ✗ | ? |
+| [`AZFWIdpsSignature`](../tables/azfwidpssignature.md) | ✓ | ✗ | ✓ |
 
 ---
 

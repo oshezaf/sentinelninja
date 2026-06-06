@@ -1,6 +1,6 @@
 # Analytic Rules - N
 
-**77 analytic rules** starting with 'N'.
+**78 analytic rules** starting with 'N'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -79,6 +79,7 @@
 | [NRT DNS events related to mining pools](windows-server-dns-nrt-dns-events-related-to-mining-pools-d5b32cd4-2328-43da-ab47-cd289c1f5efc-8dd1a5ad.md) | Low | 📦 [Windows Server DNS](../solutions/windows-server-dns.md) |
 | [NRT First access credential added to Application or Service Principal where no credential was present](microsoft-entra-id-nrt-first-access-credential-added-to-application-or-service-principal-where-no-creden-b6988c32-4f3b-4a45-8313-b46b33061a74-b17559b5.md) | Medium | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
 | [NRT GitHub Two Factor Auth Disable](github-nrt-github-two-factor-auth-disable-594c653d-719a-4c23-b028-36e3413e632e-4470b247.md) | Medium | 📦 [GitHub](../solutions/github.md) |
+| [NRT GravityZone Incident Alerts](gravityzone-nrt-gravityzone-incident-alerts-73c803aa-1188-45dd-8379-62a3319d3d9f-c35dc426.md) | Medium | 📦 [GravityZone](../solutions/gravityzone.md) |
 | [NRT Malicious Inbox Rule](standalone-content-nrt-malicious-inbox-rule-b79f6190-d104-4691-b7db-823e05980895-a7d65038.md) | Medium | 📄 Standalone Content |
 | [NRT Microsoft Entra ID Hybrid Health AD FS New Server](azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.md) | Medium | 📦 [Azure Activity](../solutions/azure-activity.md) |
 | [NRT Modified domain federation trust settings](microsoft-entra-id-nrt-modified-domain-federation-trust-settings-8540c842-5bbc-4a24-9fb2-a836c0e55a51-3b2b599c.md) | High | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |

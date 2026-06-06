@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "kube-audit"`<br>`Resource in "clusterrolebindings,events,pods,secrets"` | ? | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `AlertType in "K8S_ClusterAdminBinding,K8S_MaliciousContainerExec,K8S_PrivilegedContainer,K8S_SensitiveMount"`<br>`AlertType startswith "K8S_"` | ✓ | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "kube-audit"`<br>`Resource in "clusterrolebindings,events,pods,secrets"` | ✗ | ✗ | ✗ |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertType in "K8S_ClusterAdminBinding,K8S_MaliciousContainerExec,K8S_PrivilegedContainer,K8S_SensitiveMount"`<br>`AlertType startswith "K8S_"` | ✓ | ✗ | ✓ |
 
 ---
 

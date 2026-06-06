@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue startswith "Accept"`<br>`Properties has "vmSize"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue startswith "Accept"`<br>`Properties has "vmSize"` | ✗ | ✗ | ✗ |
 
 ---
 

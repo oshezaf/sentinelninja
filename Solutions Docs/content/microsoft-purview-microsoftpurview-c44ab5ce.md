@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `ActivityType in "Classification,Labeling"`<br>`Classification != "[]"`<br>`PurviewAccountName in ",{PurviewAccount:label}"`<br>`SensitivityLabel != "[]"`<br>`SourceType in ",{DataSource:label}"` | ✓ | ✗ | ? |
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `ActivityType in "Classification,Labeling"`<br>`Classification != "[]"`<br>`PurviewAccountName in ",{PurviewAccount:label}"`<br>`SensitivityLabel != "[]"`<br>`SourceType in ",{DataSource:label}"` | ✓ | ✗ | ✓ |
 
 ---
 

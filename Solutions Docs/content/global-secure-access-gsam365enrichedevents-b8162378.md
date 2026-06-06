@@ -19,8 +19,8 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`EnrichedMicrosoft365AuditLogs`](../tables/enrichedmicrosoft365auditlogs.md) | `Workload in "Exchange,Other,SharePoint,Teams"` | ✓ | ✗ | ? |
-| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | `TrafficType in "entra,microsoft365"` | ✓ | ✗ | ? |
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload in "Exchange,OneDrive,SPO/OneDrive,SharePoint,Teams"` | ✓ | ✗ | ? |
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | `TrafficType in "entra,microsoft365"` | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload in "Exchange,OneDrive,SPO/OneDrive,SharePoint,Teams"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
 
 ---

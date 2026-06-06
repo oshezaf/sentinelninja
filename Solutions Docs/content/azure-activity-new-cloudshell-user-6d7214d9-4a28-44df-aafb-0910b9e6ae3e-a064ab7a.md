@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Success"`<br>`OperationNameValue in "Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write"`<br>`ResourceGroup has "cloud-shell"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Success"`<br>`OperationNameValue in "Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write"`<br>`ResourceGroup has "cloud-shell"` | ✗ | ✗ | ✗ |
 
 ---
 

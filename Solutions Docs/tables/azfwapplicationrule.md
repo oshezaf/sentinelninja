@@ -14,6 +14,7 @@ Reference for AZFWApplicationRule table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwapplicationrule) |
 
 ## Contents
@@ -55,11 +56,12 @@ Reference for AZFWApplicationRule table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | WebCategory | string | Web Category identified for the requested FQDN (Azure Firewall Standard) or URL (Azure Firewall Premium). If a web category is not available for this request, the field is empty. |
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [Azure Firewall](../solutions/azure-firewall.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 
 ## Connectors (1)
@@ -72,9 +74,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (12)
+## Content Items Using This Table (14)
 
-### Analytic Rules (6)
+### Analytic Rules (8)
 
 **In solution [Azure Firewall](../solutions/azure-firewall.md):**
 
@@ -91,6 +93,13 @@ This table is ingested by the following connectors:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI map IP entity to AzureFirewall](../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.md) |  |
+
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md) |  |
+| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
 
 ### Hunting Queries (5)
 

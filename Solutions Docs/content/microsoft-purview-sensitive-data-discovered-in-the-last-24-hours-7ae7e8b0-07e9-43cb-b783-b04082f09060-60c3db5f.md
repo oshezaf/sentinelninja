@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `Classification != "[]"` | ✓ | ✗ | ? |
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `Classification != "[]"` | ✓ | ✗ | ✓ |
 
 ---
 

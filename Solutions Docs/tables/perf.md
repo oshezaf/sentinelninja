@@ -35,19 +35,19 @@ Reference for Perf table in Azure Monitor Logs.
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | BucketEndTime | datetime |  |
 | BucketStartTime | datetime |  |
-| Computer | string | Computer that the event was collected from. |
+| Computer | string | Computer that the counter was collected from. |
 | CounterName | string | Name of the performance counter. |
-| CounterPath | string | Full path of the counter in the form \<Computer>\object(instance)\counter. |
-| CounterValue | real |  |
-| InstanceName | string | Name of the event instance. Empty if no instance. |
+| CounterPath | string | Full path of the counter in the form \<Computer>\ObjectName(InstanceName)\CounterName. |
+| CounterValue | real | Value of the performance counter sample. |
+| InstanceName | string | Counter instance name. Empty when no instance applies. |
 | Max | real |  |
 | Min | real |  |
-| ObjectName | string | Name of the performance object. |
+| ObjectName | string | Performance object for the counter. |
 | SampleCount | int |  |
 | SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | StandardDeviation | real |  |
-| TimeGenerated | datetime | Date and time the data was sampled. |
-| Type | string | The name of the table |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Date and time the counter was recorded. |
 
 ## Solutions (3)
 
@@ -59,9 +59,9 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (7)
 
-### Workbooks (3)
+### Workbooks (7)
 
 **In solution [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md):** `InstanceName == "BNGF"`<br>`ObjectName == "Connections_New"`
 
@@ -81,10 +81,20 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Barracuda](../content/github-only-barracuda-84e65401.md) | `InstanceName == "BNGF"`<br>`ObjectName == "Connections_New"` |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) | `CounterName in "Available MBytes,Available MBytes Memory,Free Megabytes"` |
+| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) | `CounterName contains "Processor Time"` |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
+
 ## Resource Types
 
 This table collects data from the following Azure resource types:
 
+- `microsoft.operationalinsights/workspaces`
 - `microsoft.containerservice/managedclusters`
 - `microsoft.kubernetes/connectedclusters`
 - `microsoft.compute/virtualmachines`

@@ -1,6 +1,4 @@
-# Box Solution
-
-*Solution: Box*
+# Box
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Box/Workbooks/Images/Logo/box.svg" alt="Box Logo" width="75" height="75">
 
@@ -20,7 +18,6 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-20 |
 | **Solution Folder** | [Box](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Box) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-box) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (59%) |
 
 The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterprise/) solution connector provides the capability to ingest [Box enterprise's events](https://developer.box.com/guides/events/#admin-events) into Microsoft Sentinel using the Box REST API 
  
@@ -43,7 +40,7 @@ The [Box](https://developer.box.com/guides/events/enterprise-events/for-enterpri
 This solution provides **2 data connector(s)**:
 
 - [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) 🔶
-- [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md) 🔶
+- [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
@@ -55,7 +52,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`BoxEventsV2_CL`](../tables/boxeventsv2-cl.md) | [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md), [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) | Analytics, Hunting, Workbooks |
-| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md), [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) | Analytics, Hunting, Workbooks |
+| [`BoxEvents_CL`](../tables/boxevents-cl.md) 🔶 | [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.

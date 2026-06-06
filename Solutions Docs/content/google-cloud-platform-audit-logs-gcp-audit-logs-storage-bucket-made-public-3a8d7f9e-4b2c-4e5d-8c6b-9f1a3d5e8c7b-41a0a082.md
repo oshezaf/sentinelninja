@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "gcs_bucket"`<br>`MethodName == "storage.setIamPermissions"`<br>`ServiceName == "storage.googleapis.com"` | ✓ | ✓ | ? |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "gcs_bucket"`<br>`MethodName == "storage.setIamPermissions"`<br>`ServiceName == "storage.googleapis.com"` | ✓ | ✓ | ✓ |
 
 ---
 

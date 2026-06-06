@@ -20,7 +20,7 @@
 | **Author** | WireX Systems - info@wirexsystems.com |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [WireX Network Forensics Platform](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wirexsystems1584682625009.wirex_network_forensics_platform_mss) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wirexsystems1584682625009.wirex_network_forensics_platform_mss) · Popularity: 🟡 Low (47%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [WireX Systems](https://wirexsystems.com/) solution allows custom dashboards and workflows during forensic investigation integrated with Microsoft Sentinel.
@@ -45,17 +45,15 @@ This solution depends on **1 other solution(s)**:
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
+This solution provides **2 data connector(s)**:
 
-- [[Deprecated] WireX Network Forensics Platform via Legacy Agent](../connectors/wirex-systems-nfp.md) ⚠️
+- [[Deprecated] WireX Network Forensics Platform via Legacy Agent](../connectors/wirex-systems-nfp.md)
 - [[Deprecated] WireX Network Forensics Platform via AMA](../connectors/wirex-systems-nfpama.md)
 
 Connectors from dependency solutions:
 
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

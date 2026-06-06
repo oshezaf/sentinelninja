@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ValimailEnforceEvents_CL`](../tables/valimailenforceevents-cl.md) | ? | ✓ | ? |
+| [`ValimailEnforceEvents_CL`](../tables/valimailenforceevents-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

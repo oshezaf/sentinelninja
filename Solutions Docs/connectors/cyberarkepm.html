@@ -47,15 +47,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/DataConnectors/CyberArkEPM_API_FunctionApp.json">CyberArkEPM_API_FunctionApp.json</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Data%20Connectors/CyberArkEPM_API_FunctionApp.json">CyberArkEPM_API_FunctionApp.json</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API</strong></td>
-  <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
-</tr>
-<tr>
-  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
-  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
 </tr>
 </tbody>
 </table>
@@ -66,7 +62,6 @@
 <thead>
 <tr>
   <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
   <th style="text-align:center">Transformations</th>
   <th style="text-align:center">Ingestion API</th>
   <th style="text-align:center">Lake-Only</th>
@@ -74,8 +69,7 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/cyberarkepm-cl.html"><code>CyberArkEPM_CL</code></a> 🔶</td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><a href="../tables/cyberarkepm-events-cl.html"><code>CyberArkEPM_Events_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>

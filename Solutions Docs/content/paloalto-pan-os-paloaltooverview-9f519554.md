@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity in "THREAT,TRAFFIC,Traffic"`<br>`DeviceAction in "alert,block-continue,block-url,continue"`<br>`DeviceAction !contains "block"`<br>`DeviceAction !contains "deny"`<br>`DeviceAction contains "block"`<br>`DeviceAction contains "deny"`<br>`DeviceEventClassID in "end,file,url,wildfire"`<br>`DeviceProduct has "LF"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity in "THREAT,TRAFFIC,Traffic"`<br>`DeviceAction in "alert,block-continue,block-url,continue"`<br>`DeviceAction !contains "block"`<br>`DeviceAction !contains "deny"`<br>`DeviceAction contains "block"`<br>`DeviceAction contains "deny"`<br>`DeviceEventClassID in "end,file,url,wildfire"`<br>`DeviceProduct has "LF"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | ✓ | ✓ | ✓ |
 
 ---
 

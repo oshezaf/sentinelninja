@@ -29,7 +29,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `Classification has "Social Security Number"` | ✓ | ✗ | ? |
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `Classification has "Social Security Number"` | ✓ | ✗ | ✓ |
 
 ## Permissions
 

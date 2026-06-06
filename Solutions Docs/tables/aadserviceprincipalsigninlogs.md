@@ -14,6 +14,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✗ No |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs) |
 
 ## Contents
@@ -77,7 +78,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | UniqueTokenIdentifier | string | Unique token identifier for the request |
 | UserAgent | string | User Agent for the sign-in |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -86,6 +87,7 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
+- [Standalone Content](../solutions/standalone-content.md)
 
 ## Connectors (1)
 
@@ -97,9 +99,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (14)
 
-### Analytic Rules (2)
+### Analytic Rules (3)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -113,7 +115,27 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |  |
 
-### Workbooks (4)
+**Standalone Content:** `ResultType != "50126"`
+
+| Analytic Rule |
+|:-------------|
+| [Service Principal Authentication Attempt from New Country](../content/standalone-content-service-principal-authentication-attempt-from-new-country-1baaaf00-655f-4de9-8ff8-312e902cda71-4fb2ee74.md) |
+
+### Hunting Queries (2)
+
+**Standalone Content:** `ResultType == "0"`
+
+| Hunting Query |
+|:-------------|
+| [Workload identity sign-in from a country not in 14-day baseline](../content/standalone-content-workload-identity-sign-in-from-a-country-not-in-14-day-baseline-e366bd25-400c-433f-b984-c5b8aece15f2-42cfd1d8.md) |
+
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |  |
+
+### Workbooks (9)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -139,6 +161,16 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AADServicePrincipalSignInLogs](../content/github-only-aadserviceprincipalsigninlogs-7f958a93.md) | `ResultType == "0"`<br>`ResultType != "0"` |
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -146,6 +178,23 @@ This table is ingested by the following connectors:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
+
+## Selection Criteria Summary (2 criteria, 2 total references)
+
+References by type: 0 connectors, 2 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `ResultType != "50126"` | - | 1 | - | - | **1** |
+| `ResultType == "0"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **2** | **0** | **0** | **2** |
+
+### ResultType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 50126` | - | 1 | - | - | **1** |
+| `0` | - | 1 | - | - | **1** |
 
 ---
 

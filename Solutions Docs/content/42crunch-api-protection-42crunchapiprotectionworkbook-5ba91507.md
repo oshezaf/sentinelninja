@@ -16,9 +16,10 @@
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md) |  | ? | ✓ | ? |
+| [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---
 

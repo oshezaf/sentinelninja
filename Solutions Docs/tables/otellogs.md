@@ -17,7 +17,7 @@ Reference for OTelLogs table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otellogs) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
-## Schema (44 columns)
+## Schema (45 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otellogs)
 
@@ -37,6 +37,7 @@ Reference for OTelLogs table in Azure Monitor Logs.
 | ClientOS | string | Operating system of the client device. |
 | ClientStateOrProvince | string | State or province where the client device is located. |
 | ClientType | string | Type of the client device. |
+| DeploymentEnvironmentName | string | Name of the deployment environment. |
 | DroppedAttributesCount | int | The number of attributes that were discarded by the data source. |
 | EndUserId | string | Persistent string that uniquely represents an authenticated user of the service. |
 | ItemCount | int | The number of spans represented by this record. This value is greater than 1 when sampling is in effect. |

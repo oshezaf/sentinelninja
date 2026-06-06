@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.3.0</td>
+  <td style="text-align:left">3.4.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -59,7 +59,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-01-27</td>
+  <td style="text-align:left">2026-05-28</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -67,7 +67,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud">Azure Marketplace</a> · Popularity: 🟢 High (93%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-salesforceservicecloud">Azure Marketplace</a> · Popularity: 🟢 High (92%)</td>
 </tr>
 </tbody>
 </table>
@@ -82,11 +82,12 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong> (plus 2 discovered⚠️):</p>
+<p>This solution provides <strong>3 data connector(s)</strong> (plus 1 discovered⚠️):</p>
 <ul>
+<li><a href="../connectors/salesforcertemconnector.html">SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/salesforceauditlogsconnector.html">Salesforce Audit Logs (via Codeless Connector Framework)</a></li>
 <li><a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a> ⚠️ 🔶</li>
-<li><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a> ⚠️</li>
+<li><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
@@ -95,7 +96,7 @@
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>5 table(s)</strong>:</p>
+<p>This solution uses <strong>6 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -105,6 +106,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><a href="../tables/salesforcerealtimeeventmonitoring-cl.html"><code>SalesForceRealTimeEventMonitoring_CL</code></a></td>
+  <td><a href="../connectors/salesforcertemconnector.html">SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
 <tr>
   <td><a href="../tables/salesforceaudittrail.html"><code>SalesforceAuditTrail</code></a></td>
   <td><a href="../connectors/salesforceauditlogsconnector.html">Salesforce Audit Logs (via Codeless Connector Framework)</a></td>
@@ -117,7 +123,7 @@
 </tr>
 <tr>
   <td><a href="../tables/salesforceservicecloudv2-cl.html"><code>SalesforceServiceCloudV2_CL</code></a></td>
-  <td><a href="../connectors/salesforceservicecloudccpdefinition.html">Salesforce Service Cloud (via Codeless Connector Framework)</a>, <a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
+  <td><a href="../connectors/salesforceservicecloud.html">[DEPRECATED] Salesforce Service Cloud</a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 <tr>
@@ -250,6 +256,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.4.0</td>
+  <td>26-05-2026</td>
+  <td>Added new <strong>Real time event monitoring data connector</strong> with 19 event types</td>
+</tr>
 <tr>
   <td>3.3.0</td>
   <td>07-05-2026</td>

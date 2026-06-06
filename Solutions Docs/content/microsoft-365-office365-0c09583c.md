@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `ExternalAccess == "True"`<br>`OfficeWorkload in "Exchange,OneDrive,SharePoint"`<br>`Operation in "FileDownloaded,FileUploaded,MailboxLogin"`<br>`Operation contains "File"`<br>`Operation contains "Folder"`<br>`Operation contains "add"`<br>`Operation contains "create"`<br>`Operation contains "delete"`<br>`Operation contains "group"`<br>`Operation contains "update"`<br>`Operation contains "user"`<br>`UserType == "Admin"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `ExternalAccess == "True"`<br>`OfficeWorkload in "Exchange,OneDrive,SharePoint"`<br>`Operation in "FileDownloaded,FileUploaded,MailboxLogin"`<br>`Operation contains "File"`<br>`Operation contains "Folder"`<br>`Operation contains "add"`<br>`Operation contains "create"`<br>`Operation contains "delete"`<br>`Operation contains "group"`<br>`Operation contains "update"`<br>`Operation contains "user"`<br>`UserType == "Admin"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
 
 ---

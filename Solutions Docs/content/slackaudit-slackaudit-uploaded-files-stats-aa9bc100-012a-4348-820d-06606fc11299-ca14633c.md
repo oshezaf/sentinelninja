@@ -15,7 +15,7 @@ This query shows top users by uploads over time.
 | **ID** | `aa9bc100-012a-4348-820d-06606fc11299` |
 | **Severity** | Medium |
 | **Tactics** | Exfiltration |
-| **Techniques** | T1048 |
+| **Techniques** | T1048, T1020 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditUploadedFilesByUser.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

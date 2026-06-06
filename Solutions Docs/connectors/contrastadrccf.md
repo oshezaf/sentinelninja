@@ -19,6 +19,7 @@
 | **CCF Configuration** | [dataConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR/Data%20Connectors/ContrastADRCCF/dataConnector.json) |
 | **CCF Capabilities** | `Push` |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#contrast-adr-push-connector) |
 
 The [Contrast Security](https://www.contrastsecurity.com/) connector provides the capability to ingest attack events and incidents from Contrast Application Detection and Response (ADR) into Microsoft Sentinel. This connector receives data via webhook push mechanism using OAuth authentication.
 
@@ -28,8 +29,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADRAttackEvents_CL`](../tables/contrastadrattackevents-cl.md) | ? | ✓ | ? |
-| [`ContrastADRIncidents_CL`](../tables/contrastadrincidents-cl.md) | ? | ✓ | ? |
+| [`ContrastADRAttackEvents_CL`](../tables/contrastadrattackevents-cl.md) | ✗ | ✓ | ✗ |
+| [`ContrastADRIncidents_CL`](../tables/contrastadrincidents-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | `LatestDeliveryAction in "Hard delete,Moved to deleted items,Moved to junk folder,Soft delete"` | ✓ | ✗ | ? |
+| [`EmailEvents`](../tables/emailevents.md) | `LatestDeliveryAction in "Hard delete,Moved to deleted items,Moved to junk folder,Soft delete"` | ✓ | ✗ | ✓ |
 
 ---
 

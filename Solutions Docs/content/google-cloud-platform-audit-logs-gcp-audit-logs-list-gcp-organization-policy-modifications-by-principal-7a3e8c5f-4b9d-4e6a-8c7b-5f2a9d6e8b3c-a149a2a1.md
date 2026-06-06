@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `MethodName has "DeletePolicy"`<br>`MethodName has "UpdatePolicy"`<br>`MethodName has_any "OrgPolicy.DeletePolicy"`<br>`ServiceName == "orgpolicy.googleapis.com"` | ✓ | ✓ | ? |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `MethodName has "DeletePolicy"`<br>`MethodName has "UpdatePolicy"`<br>`MethodName has_any "OrgPolicy.DeletePolicy"`<br>`ServiceName == "orgpolicy.googleapis.com"` | ✓ | ✓ | ✓ |
 
 ---
 

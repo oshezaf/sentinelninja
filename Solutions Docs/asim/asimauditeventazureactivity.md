@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "Administrative"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "Administrative"` | ✗ | ✗ | ✗ |
 
 ## Parameters
 

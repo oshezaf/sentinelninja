@@ -65,7 +65,7 @@ This table is used by the following solutions:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [Corelight_Sensor_Overview](../content/corelight-corelight-sensor-overview-71e61142.md) |  |
+| [Corelight_Operations](../content/corelight-corelight-operations-90113242.md) |  |
 
 ## Parsers Using This Table (1)
 

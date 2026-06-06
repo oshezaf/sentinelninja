@@ -22,7 +22,7 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CensysRescanHost_CL`](../tables/censysrescanhost-cl.md) 🔶 | ? | ✓ | ? |
 | [`CensysRescanWebProperty_CL`](../tables/censysrescanwebproperty-cl.md) 🔶 | ? | ✓ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ? |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 ## Logic App Connectors
 

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `AlertName in "Abnormal usage of MAC Addresses,Field Device Discovered Unexpectedly,New Asset Detected,New LLDP Device Configuration"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName in "Abnormal usage of MAC Addresses,Field Device Discovered Unexpectedly,New Asset Detected,New LLDP Device Configuration"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ✓ |
 
 ---
 

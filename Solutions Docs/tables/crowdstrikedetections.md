@@ -23,7 +23,7 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 - [Solutions](#solutions)
 - [Connectors](#connectors)
 
-## Schema (108 columns)
+## Schema (110 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/crowdstrikedetections)
 
@@ -124,7 +124,9 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 | TechniqueIds | dynamic | IDs of the techniques associated with the detection. |
 | Techniques | dynamic | Techniques associated with the detection. |
 | TemplateInstanceId | int | Instance ID of the detection template used. |
+| TemplateInstanceIdText | string | Instance ID of the detection template used (string representation). |
 | TemplateInterfaceId | int | Interface ID of the detection template. |
+| TemplateInterfaceIdText | string | Interface ID of the detection template (string representation). |
 | TemplateInterfaceName | string | Name of the detection template interface. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when the detection was ingested. |

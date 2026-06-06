@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "DNAC"`<br>`SyslogMessage has "LOGIN_USER_EVENT"`<br>`SyslogMessage has "LOGOFF_USER_EVENT"` | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "DNAC"`<br>`SyslogMessage has "LOGIN_USER_EVENT"`<br>`SyslogMessage has "LOGOFF_USER_EVENT"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

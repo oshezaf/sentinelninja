@@ -76,15 +76,14 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (3)
+## Content Items Using This Table (2)
 
-### Workbooks (3)
+### Workbooks (2)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |
 | [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
 | [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
 

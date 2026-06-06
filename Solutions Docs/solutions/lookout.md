@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
 | **Categories** | domains |
-| **Version** | 3.0.7 |
+| **Version** | 3.0.5 |
 | **Author** | Lookout |
 | **First Published** | 2021-10-18 |
-| **Last Updated** | 2026-05-07 |
+| **Last Updated** | 2026-06-01 |
 | **Solution Folder** | [Lookout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel) · Rating: ★☆☆☆☆ 1.0/5 (2 ratings) · Popularity: 🔵 Medium (50%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/lookoutinc.lookout_mtd_sentinel) · Rating: ★☆☆☆☆ 1.0/5 (2 ratings) · Popularity: 🔵 Medium (69%) |
 
 The [Lookout](https://lookout.com) solution provides the capability to ingest [Lookout events](https://www.lookout.com/products/mobile-endpoint-security) into Microsoft Sentinel through the Mobile Risk API. It can get events which helps to examine potential security risks and more. Refer to [API documentation](https://www.lookout.com/products/mobile-endpoint-security) for more information.
 
@@ -189,7 +189,7 @@ Solutions/Lookout/
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
-| 3.0.5       | 07-05-2026                     | Fixed all 5 workbook metadata `description` fields that contained raw PowerShell serialization artifacts (`System.Object[]`) instead of actual description text — a template generation script bug that produced malformed strings like `@{workbookKey=...; dataTypesDependencies=System.Object[]...}.description`. |
+| 3.0.5       | 01-06-2026                     | **Streaming CCF data-loss fix**: Lookout Mobile Risk API v2 returns the unique event identifier in the top-level `oid` field, not `id`. The DCR `streamDeclarations` did not declare `oid`, so the identifier was silently dropped on ingest, leaving `LookoutMtdV2_CL.id` empty for every record and breaking `EventId`-based correlation in analytic rules, hunting queries, and workbooks. Added `oid` to the DCR `streamDeclarations` and to the `LookoutMtdV2_CL` custom table schema, updated the DCR `transformKql` to populate `id = coalesce(tostring(id), tostring(oid))`, and updated the `LookoutEvents` parser `EventId` projection to the same `coalesce` so existing detections continue to work unchanged. **Branding fix**: `Workbooks/WorkbooksMetadata.json` — `Azure Sentinel Solution` → `Microsoft Sentinel Solution` for `LookoutEventsV2`. **Analytic rules / workbooks**: updated to use `LookoutAPI` connector with `LookoutEvents` data type. Streaming connector upgraded to `RestApiPoller`. Threat detection rule (`LookoutThreatEventV2`) now filters to `ThreatStatus in ("OPEN", "ACTIVE")` and `ThreatAction == "DETECTED"` to suppress alerts on already-remediated incidents. **Packaging**: regenerated with the supported V3 tool; package version aligned across all components. |
 | 3.0.4       | 24-04-2026                     | Fixed `APIKey` bracket escaping in `mainTemplate.json`: changed `[[parameters('applicationKey')]]` to `[[parameters('applicationKey')]` to prevent ARM expression evaluation error (`expected token 'EndOfData' and actual 'RightSquareBracket'`) when Sentinel instantiates the ResourcesDataConnector template. |
 | 3.0.3       | 23-04-2026                     | Version bump for certification resubmission. Fixed `workspace-location` parameter `defaultValue` to use `[resourceGroup().location]` ARM expression. |
 | 3.0.2       | 11-03-2026                     | Updated `lastPublishDate` across solution metadata and package to 2026-03-11. Cleaned up stale v4.0.0 branches. Resubmission for certification after resolving link discrepancy flagged in Best Practice Test 300.4.1.1. Fixed product branding: updated "Azure Sentinel" to "Microsoft Sentinel" in workbook descriptions. Fixed DCR transform query error: undefined symbol `detections` corrected to `smishing_alert.detections`. Aligned data connector version from `1.0.0` to `3.0.2` for consistent version tracking across all solution components. Updated all template version references from `3.0.1` to `3.0.2` in package. Added **Parsers** and **Notebooks** steps to the install wizard (`createUiDefinition.json`) for improved discoverability during solution deployment. |

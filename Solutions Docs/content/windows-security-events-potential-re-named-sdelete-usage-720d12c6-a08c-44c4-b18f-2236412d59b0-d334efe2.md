@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine !has "sdelete"`<br>`CommandLine has_all "accepteula"`<br>`EventID == "4688"`<br>`Process != "sdelete.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine !has "sdelete"`<br>`CommandLine has_all "accepteula"`<br>`EventID == "4688"`<br>`Process != "sdelete.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

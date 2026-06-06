@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `ErrorMessage in "Access Denied,AccessDenied"`<br>`UserAgent !endswith ".amazonaws.com"`<br>`UserIdentityType == "IAMUser"` | ✓ | ✓ | ? |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `ErrorMessage in "Access Denied,AccessDenied"`<br>`UserAgent !endswith ".amazonaws.com"`<br>`UserIdentityType == "IAMUser"` | ✓ | ✓ | ✓ |
 
 ---
 

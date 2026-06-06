@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Okta_CL`](../tables/okta-cl.md) 🔶 | ? | ✓ | ? |
+| [`Okta_CL`](../tables/okta-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 ## Parameters
 
@@ -46,8 +46,6 @@ The following connectors provide data for this parser:
 | Connector | Solution |
 |:----------|:---------|
 | [OktaSSO](../connectors/oktasso.md) | [Okta Single Sign-On (legacy connector)](../solutions/okta-single-sign-on.md) |
-| [OktaSSOv2](../connectors/oktassov2.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
-| [OktaSingleSignOn(usingAzureFunctions)](../connectors/oktasinglesignon-usingazurefunctions.md) | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
 
 **Solutions:** [Okta Single Sign-On (legacy connector)](../solutions/okta-single-sign-on.md)
 

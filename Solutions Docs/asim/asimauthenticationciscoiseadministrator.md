@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `ProcessName has "CISE_Administrative_and_Operational_Audit"`<br>`SyslogMessage has "Administrator-Login"` | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `ProcessName has "CISE_Administrative_and_Operational_Audit"`<br>`SyslogMessage has "Administrator-Login"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

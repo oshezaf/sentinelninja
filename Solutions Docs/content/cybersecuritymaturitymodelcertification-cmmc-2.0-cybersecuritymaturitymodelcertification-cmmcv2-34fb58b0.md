@@ -18,27 +18,27 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ | ? |
-| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ? |
-| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ? |
-| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ? |
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
-| [`AzureActivity`](../tables/azureactivity.md) | `OperationNameValue contains "Insights"` | ? | ✗ | ? |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallApplicationRule"` | ? | ✗ | ? |
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`<br>`OperationNameValue contains "Insights"` | ✗ | ✗ | ✗ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AzureFirewallApplicationRule"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
 | [`ConfigurationChange`](../tables/configurationchange.md) |  | ✓ | ✗ | ? |
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "Add member to role,Add user,FileCreated,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user,UsbDriveMounted"` | ✓ | ✗ | ✓ |
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
-| [`Event`](../tables/event.md) | `RenderedDescription contains "Hello"` | ✓ | ✓ | ? |
+| [`Event`](../tables/event.md) | `RenderedDescription contains "Hello"` | ✓ | ✓ | ✗ |
 | [`IdentityInfo`](../tables/identityinfo.md) |  | ✓ | ✗ | ? |
 | [`InformationProtectionLogs_CL`](../tables/informationprotectionlogs-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`OfficeActivity`](../tables/officeactivity.md) | `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`<br>`RecordType == "MicrosoftTeams"` | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft 365 Insider Risk Management"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `RecordType == "MicrosoftTeams"` | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft 365 Insider Risk Management"` | ✓ | ✗ | ✓ |
 | [`SecurityBaseline`](../tables/securitybaseline.md) | `AnalyzeResult in "Failed,Passed"` | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 | [`SecurityRecommendation`](../tables/securityrecommendation.md) | `RecommendationState in "Healthy,Unhealthy"` | ✓ | ✗ | ? |
 | [`SecurityRegulatoryCompliance`](../tables/securityregulatorycompliance.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `AuthenticationRequirement == "multiFactorAuthentication"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `AuthenticationRequirement == "multiFactorAuthentication"` | ✓ | ✗ | ✓ |
 | [`Usage`](../tables/usage.md) |  | ? | ✗ | ? |
 
 ---

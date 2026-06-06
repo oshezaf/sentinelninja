@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NordStellar Push &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="nordstellar">NordStellar (Push)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/NordStellar.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>NordStellarPush</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Nord Security Inc.</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/nordstellar.html">NordStellar</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf-push.html">CCF Push</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar/Data%20Connectors/NordStellar_ccf/connectorDefinition.json">connectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar/Data%20Connectors/NordStellar_ccf/DCR.json">DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar/Data%20Connectors/NordStellar_ccf/dataConnector.json">dataConnector.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Push</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>CCF Push connectors use DCR-based Log Ingestion API</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://nordstellar.com">NordStellar</a> connector pushes real-time threat intelligence and exposure events from the NordStellar platform into Microsoft Sentinel using the Codeless Connector Framework (CCF) Push pattern. All event types are routed to a single unified <code>NordStellar_CL</code> table with common columns (<code>EventId</code>, <code>EventType</code>, <code>Module</code>, <code>RiskLevel</code>, <code>AssetType</code>, <code>AssetValue</code>, <code>Tags</code>) extracted by the DCR's KQL transform, while type-specific payload is preserved in a dynamic <code>Details</code> column.</p>
+<p><strong>Supported event types:</strong></p>
+<ul>
+<li><p><strong>Leaked Data</strong> (<code>module: LEAKED_DATA</code>): <code>DATA_BREACH</code>, <code>COMBO_LIST</code>, <code>MALWARE_INFECTION</code>, <code>CONSUMER_CREDENTIAL</code></p>
+</li>
+<li><p><strong>Dark Web Monitoring</strong> (<code>module: DARK_WEB_MONITORING</code>): <code>DARK_WEB_FORUM_POST</code>, <code>DARK_WEB_TELEGRAM_POST</code>, <code>DARK_WEB_RANSOMWARE_POST</code>, <code>DARK_WEB_MARKETPLACE_POST</code></p>
+</li>
+<li><p><strong>Domain Squatting</strong> (<code>module: DOMAIN_SQUATTING</code>): <code>DOMAIN_PERMUTATION</code></p>
+</li>
+<li><p><strong>Attack Surface</strong> (<code>module: ATTACK_SURFACE</code>): <code>ATTACK_SURFACE_WEB_APPLICATION_VULNERABILITY</code>, <code>ATTACK_SURFACE_NETWORK_SERVICE_VULNERABILITY</code>, <code>ATTACK_SURFACE_DNS_VULNERABILITY</code></p>
+</li>
+</ul>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/nordstellar-cl.html"><code>NordStellar_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft Entra</strong>: Permission to create an app registration in Microsoft Entra ID. Typically requires Entra ID Application Developer role or higher.</li>
+<li><strong>Microsoft Azure</strong>: Permission to assign Monitoring Metrics Publisher role on data collection rule (DCR). Typically requires Azure RBAC Owner or User Access Administrator role.</li>
+<li><strong>NordStellar</strong>: Active NordStellar tenant with permission to configure outbound webhooks for the integration.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Deploy connector resources</strong></p>
+<p>This connector enables NordStellar to push real-time threat intelligence and exposure events directly to Microsoft Sentinel via the Azure Monitor Ingestion API.</p>
+<h4 id="automated-configuration">Automated configuration</h4>
+<p>Clicking <strong>Deploy</strong> will create:</p>
+<ul>
+<li>A custom Log Analytics table <code>NordStellar_CL</code></li>
+<li>A Data Collection Rule (DCR) with a single stream <code>Custom-NordStellar</code> and a KQL transform that promotes common fields and preserves the type-specific payload in <code>Details</code></li>
+<li>The Data Collection Endpoint (DCE) used for ingestion</li>
+<li>A Microsoft Entra application with OAuth 2.0 client credentials</li>
+<li>The required <code>Monitoring Metrics Publisher</code> role assignment on the DCR</li>
+</ul>
+<p>The credentials returned below are then configured in the NordStellar portal so events can be pushed securely.
+Deploy NordStellar Push connector resources</p>
+<p><strong>2. Configure NordStellar</strong></p>
+<p>Use the following parameters to configure the Microsoft Sentinel integration in the NordStellar portal.</p>
+<ul>
+<li><strong>Tenant ID (Directory ID)</strong>: <code>TenantId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Application (Client) ID</strong>: <code>ApplicationId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Client Secret</strong>: <code>ApplicationSecret</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Endpoint URI</strong>: <code>DataCollectionEndpoint</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Data Collection Rule Immutable ID</strong>: <code>DataCollectionRuleId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Stream Name</strong>: <code>Custom-NordStellar</code></li>
+</ul>
+<h4 id="on-the-wire-envelope">On-the-wire envelope</h4>
+<p>NordStellar must POST a JSON array to <code>{DCE URI}/dataCollectionRules/{DCR Immutable ID}/streams/Custom-NordStellar?api-version=2023-01-01</code> with an OAuth bearer token for the scope <code>https://monitor.azure.com//.default</code>.</p>
+<p>Each element wraps the original webhook event in a thin envelope:</p>
+<pre><code class="language-json">[
+  {
+    &quot;time&quot;: &quot;2026-04-27T10:30:00Z&quot;,
+    &quot;event&quot;: {
+      &quot;id&quot;: &quot;...&quot;,
+      &quot;type&quot;: &quot;DATA_BREACH&quot;,
+      &quot;module&quot;: &quot;LEAKED_DATA&quot;,
+      &quot;risk_level&quot;: &quot;HIGH&quot;,
+      &quot;date_added&quot;: &quot;...&quot;,
+      &quot;tags&quot;: [&quot;NAME&quot;],
+      &quot;asset&quot;: { &quot;type&quot;: &quot;EMAIL&quot;, &quot;value&quot;: &quot;user@company.com&quot; }
+    }
+  }
+]
+</code></pre>
+<p>The DCR's KQL transform promotes <code>id</code>, <code>type</code>, <code>module</code>, <code>risk_level</code>, <code>asset.type</code>/<code>source_type</code>, <code>asset.value</code>/<code>asset_value</code>, <code>tags</code>, and the appropriate timestamp (<code>date_added</code> for leaked-data/dark-web/domain-permutation, <code>detected_at</code> for attack-surface) into typed columns. Everything else is preserved in the dynamic <code>Details</code> column.</p>
+<p><strong>3. Verify data ingestion</strong></p>
+<p>Confirm events are flowing from NordStellar to Sentinel.
+Wait 5-10 minutes after enabling the integration, then run this KQL query in your Microsoft Sentinel workspace:</p>
+<pre><code class="language-kql">NordStellar_CL
+| where TimeGenerated &gt; ago(1h)
+| summarize count() by EventType, Module
+| order by count_ desc
+</code></pre>
+<p>If no data appears after 15 minutes, verify the credentials in the NordStellar portal and check Azure Monitor for ingestion errors on the DCR.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

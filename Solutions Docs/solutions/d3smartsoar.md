@@ -21,7 +21,7 @@
 | **First Published** | 2026-02-18 |
 | **Last Updated** | 2026-04-17 |
 | **Solution Folder** | [D3SmartSOAR](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/D3SmartSOAR) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/d3securitymanagementsystemsinc1599258630765.azure-sentinel-solution-d3smartsoar) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/d3securitymanagementsystemsinc1599258630765.azure-sentinel-solution-d3smartsoar) · Popularity: ⚪ Very Low (2%) |
 
 The D3 Smart SOAR solution for Microsoft Sentinel enables ingestion of D3 Smart SOAR alerts and events into Microsoft Sentinel via a codeless connector.
 

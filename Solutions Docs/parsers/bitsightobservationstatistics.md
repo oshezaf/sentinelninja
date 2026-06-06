@@ -13,8 +13,8 @@
 | Title | Parser for BitSightObservationStatistics |
 | Location | Solution |
 | Solution | [BitSight](../solutions/bitsight.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 1.1.0 |
+| Last Updated | 2026-05-25 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Parsers/BitSightObservationStatistics.yaml) |
@@ -25,6 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`BitSightObservationStatistics_CL`](../tables/bitsightobservationstatistics-cl.md) | ? | ✓ | ? |
 | [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | ? | ✓ | ? |
 
 ---

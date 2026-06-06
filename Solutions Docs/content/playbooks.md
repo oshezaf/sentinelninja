@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**874 playbooks** across all Microsoft Sentinel solutions.
+**875 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -280,6 +280,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Cyjax Domain Monitor](cyjax-cyjax-domain-monitor-66e866eb.md) | 📦 [Cyjax](../solutions/cyjax.md) |
 | [Cyjax Incident Enrichment](cyjax-cyjax-incident-enrichment-ce175d04.md) | 📦 [Cyjax](../solutions/cyjax.md) |
 | [Cyren to CrowdStrike IOC Automation](cyren-crowdstrike-threatintelligence-cyren-to-crowdstrike-ioc-automation-635f4db9.md) | 📦 [Cyren-CrowdStrike-ThreatIntelligence](../solutions/cyren-crowdstrike-threatintelligence.md) |
+| [Cyren to Defender TI - Playbook](cyren-defender-threatintelligence-cyren-to-defender-ti-playbook-476f8f5d.md) | 📦 [Cyren-Defender-ThreatIntelligence](../solutions/cyren-defender-threatintelligence.md) |
 | [Cyren to SentinelOne IOC Automation](cyren-sentinelone-threatintelligence-cyren-to-sentinelone-ioc-automation-aeb65ff5.md) | 📦 [Cyren-SentinelOne-ThreatIntelligence](../solutions/cyren-sentinelone-threatintelligence.md) |
 
 ## D

@@ -25,11 +25,9 @@ The [StyxView Alerts](https://styxintel.com/) data connector provides the capabi
 
 ## Data Connectors
 
-This solution has **1 discovered data connector(s)⚠️** (not in Solution definition):
+This solution provides **1 data connector(s)**:
 
-- [StyxView Alerts (via Codeless Connector Platform)](../connectors/styxviewendpointconnectordefinition.md) ⚠️
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+- [StyxView Alerts (via Codeless Connector Platform)](../connectors/styxviewendpointconnectordefinition.md)
 
 ## Tables Used
 

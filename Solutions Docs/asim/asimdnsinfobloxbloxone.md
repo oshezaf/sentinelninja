@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID has "DNS"`<br>`DeviceVendor == "Infoblox"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID has "DNS"`<br>`DeviceVendor == "Infoblox"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

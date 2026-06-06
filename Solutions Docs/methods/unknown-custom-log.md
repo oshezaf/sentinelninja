@@ -18,9 +18,9 @@ These connectors use custom log tables to store ingested data. The specific coll
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **1** |
-| Active | 0 |
+| Active | 1 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 1 |
+| Unpublished ⚠️ | 0 |
 
 ## Connectors Using This Method
 
@@ -28,11 +28,9 @@ These connectors use custom log tables to store ingested data. The specific coll
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [GravityZone Data Connector](../connectors/gravityzonedataconnector.md) ⚠️ | Bitdefender | 1 | [GravityZone](../solutions/gravityzone.md) |
+| [GravityZone Data Connector](../connectors/gravityzonedataconnector.md) | Bitdefender | 1 | [GravityZone](../solutions/gravityzone.md) |
 
 ---
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 ---
 

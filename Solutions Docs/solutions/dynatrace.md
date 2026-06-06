@@ -19,9 +19,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Dynatrace - microsoftalliances@dynatrace.com |
 | **First Published** | 2022-10-18 |
-| **Last Updated** | 2026-04-23 |
+| **Last Updated** | 2026-05-08 |
 | **Solution Folder** | [Dynatrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) · Popularity: 🔵 Medium (69%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) · Popularity: ⚪ Very Low (5%) |
 
 Dynatrace is a leading observability platform that provides automatic and intelligent observability at scale for cloud-native and enterprise workloads; with Dynatrace Application Security, your DevSecOps teams can resolve security issues faster, accelerating software delivery.
 Integrating Dynatrace with Microsoft Sentinel enables DevSecOps teams to detect, prioritize, triage, and remediate attacks rapidly. DevSecOps teams benefit from the high-accuracy threat signals Dynatrace surfaces. It helps them avoid time-consuming investigation activities, freeing them up for more critical tasks.
@@ -69,13 +69,13 @@ This solution uses **8 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`DynatraceAttacksV2_CL`](../tables/dynatraceattacksv2-cl.md) | [Dynatrace Attacks V1](../connectors/dynatraceattacks.md), [Dynatrace Attacks V2](../connectors/dynatraceattacksccpdefinition.md) | Analytics, Workbooks |
-| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | [Dynatrace Attacks V1](../connectors/dynatraceattacks.md), [Dynatrace Attacks V2](../connectors/dynatraceattacksccpdefinition.md) | Analytics, Workbooks |
+| [`DynatraceAttacks_CL`](../tables/dynatraceattacks-cl.md) | [Dynatrace Attacks V1](../connectors/dynatraceattacks.md) | Analytics, Workbooks |
 | [`DynatraceAuditLogsV2_CL`](../tables/dynatraceauditlogsv2-cl.md) | [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md), [Dynatrace Audit Logs V2](../connectors/dynatraceauditlogsccpdefinition.md) | Workbooks |
-| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md), [Dynatrace Audit Logs V2](../connectors/dynatraceauditlogsccpdefinition.md) | Workbooks |
+| [`DynatraceAuditLogs_CL`](../tables/dynatraceauditlogs-cl.md) | [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) | Workbooks |
 | [`DynatraceProblemsV2_CL`](../tables/dynatraceproblemsv2-cl.md) | [Dynatrace Problems V1](../connectors/dynatraceproblems.md), [Dynatrace Problems V2](../connectors/dynatraceproblemsccpdefinition.md) | Analytics, Workbooks |
-| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | [Dynatrace Problems V1](../connectors/dynatraceproblems.md), [Dynatrace Problems V2](../connectors/dynatraceproblemsccpdefinition.md) | Analytics, Workbooks |
+| [`DynatraceProblems_CL`](../tables/dynatraceproblems-cl.md) | [Dynatrace Problems V1](../connectors/dynatraceproblems.md) | Analytics, Workbooks |
 | [`DynatraceSecurityProblemsV2_CL`](../tables/dynatracesecurityproblemsv2-cl.md) | [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md), [Dynatrace Runtime Vulnerabilities V2](../connectors/dtrunvulnccpdefinition.md) | Analytics, Workbooks |
-| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md), [Dynatrace Runtime Vulnerabilities V2](../connectors/dtrunvulnccpdefinition.md) | Analytics, Workbooks |
+| [`DynatraceSecurityProblems_CL`](../tables/dynatracesecurityproblems-cl.md) | [Dynatrace Runtime Vulnerabilities V1](../connectors/dynatraceruntimevulnerabilities.md) | Analytics, Workbooks |
 
 ### Internal Tables
 

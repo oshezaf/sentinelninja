@@ -1,6 +1,6 @@
-# ⚠️ Upwind
+# upwindpublisherid.azure-sentinel-solution-upwind-logs-loader
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: Upwind*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Upwind/Data%20Connectors/Logos/upwind.svg" alt="Upwind Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.2 |
 | **Author** | Upwind - hello@upwind.io |
 | **First Published** | 2026-03-10 |
+| **Last Updated** | 2026-05-19 |
 | **Solution Folder** | [Upwind](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Upwind) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/upwindsecurityinc1754856292483.azure-sentinel-solution-upwind-logs-loader) · Popularity: 🔵 Medium (54%) |
 
 The **Upwind Logs Loader** solution ingests compute platform assets from the [Upwind](https://upwind.io) cloud security platform into a Microsoft Sentinel custom table using an Azure Function and the [Azure Monitor Ingestion API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) (DCE/DCR).
 

@@ -23,18 +23,22 @@
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md)
+- [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md)
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`ABAPAuditLog_CL`](../tables/abapauditlog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
-| [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) | - |
+| [`ABAPAuditLog_CL`](../tables/abapauditlog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md), [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPAuthorizationDetails_CL`](../tables/abapauthorizationdetails-cl.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPChangeDocsLog_CL`](../tables/abapchangedocslog-cl.md) | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md), [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`ABAPUserDetails_CL`](../tables/abapuserdetails-cl.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
+| [`SentinelHealth`](../tables/sentinelhealth.md) | [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | - |
 
 ## Content Items
 

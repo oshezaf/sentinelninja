@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ContrastADRIncidents_CL`](../tables/contrastadrincidents-cl.md) | ? | ✓ | ? |
+| [`ContrastADRIncidents_CL`](../tables/contrastadrincidents-cl.md) | ✗ | ✓ | ✗ |
 
 ---
 

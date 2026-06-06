@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`GCPIAM`](../tables/gcpiam.md) |  | ✓ | ✓ | ? |
+| [`GCPIAM`](../tables/gcpiam.md) |  | ✓ | ✓ | ✓ |
 | [`GCP_IAM_CL`](../tables/gcp-iam-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---

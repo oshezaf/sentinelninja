@@ -19,19 +19,19 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **86** |
-| Active | 81 |
+| Total Connectors | **90** |
+| Active | 86 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 5 |
+| Unpublished ⚠️ | 4 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function](../methods/azure-function.md) | 42 |
-| [CCF Push](../methods/ccf-push.md) | 36 |
+| [Azure Function](../methods/azure-function.md) | 43 |
+| [CCF Push](../methods/ccf-push.md) | 39 |
 | [CCF](../methods/ccf.md) | 8 |
-| **Total** | **86** |
+| **Total** | **90** |
 
 ## Connectors Using This API
 
@@ -41,6 +41,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 |:----------|:------------------|:----------|:------:|:---------|
 | [1Password](../connectors/1password.md) 🔍 | [Azure Function](../methods/azure-function.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | [CCF](../methods/ccf.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
+| [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | [CCF Push](../methods/ccf-push.md) | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | [CCF Push](../methods/ccf-push.md) | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Atlassian Jira Audit (via Codeless Connector Framework)](../connectors/jiraauditccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | [Azure Function](../methods/azure-function.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
@@ -48,7 +49,9 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [CommvaultSecurityIQ](../connectors/commvaultsecurityiq-cl.md) | [Azure Function](../methods/azure-function.md) | Commvault | 1 | [Commvault Security IQ](../solutions/commvault-security-iq.md) |
 | [Contrast ADR Push Connector](../connectors/contrastadrccf.md) | [CCF Push](../methods/ccf-push.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
 | [CyberArk Audit](../connectors/cyberarkauditccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [CyberArk EPM](../connectors/cyberarkepmccpdefinition.md) | [CCF](../methods/ccf.md) | CyberArk | ? | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [CyberArkAudit](../connectors/cyberarkaudit.md) | [Azure Function](../methods/azure-function.md) | CyberArk | 1 | [CyberArkAudit](../solutions/cyberarkaudit.md) |
+| [CyberArkEPM](../connectors/cyberarkepm.md) | [Azure Function](../methods/azure-function.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [DataBahn](../connectors/databahnpush.md) | [CCF Push](../methods/ccf-push.md) | DataBahn | 3 | [Databahn](../solutions/databahn.md) |
 | [ESET Protect Platform](../connectors/esetprotectplatform.md) ⚠️ | [Azure Function](../methods/azure-function.md) | ESET | 2 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | [Azure Function](../methods/azure-function.md) | ExtraHop | 1 | [ExtraHop](../solutions/extrahop.md) |
@@ -56,7 +59,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Gigamon AMX Connector](../connectors/gigamondefinition.md) | [CCF Push](../methods/ccf-push.md) | GigamonDefinition | 1 | [Gigamon Connector](../solutions/gigamon-connector.md) |
 | [Halcyon Connector](../connectors/halcyonpush.md) | [CCF Push](../methods/ccf-push.md) | Halcyon | 1 | [Halcyon](../solutions/halcyon.md) |
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | [Azure Function](../methods/azure-function.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |
-| [Illumio Saas](../connectors/illumiosaasccfdefinition.md) 🔍 | [CCF](../methods/ccf.md) | Microsoft | 1 | [IllumioSaaS](../solutions/illumiosaas.md) |
+| [Illumio Saas](../connectors/illumiosaasccfdefinition.md) ⚠️ 🔍 | [CCF](../methods/ccf.md) | Microsoft | 1 | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo ASN Data Connector](../connectors/ipinfoasndataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo Carrier Data Connector](../connectors/ipinfocarrierdataconnector.md) | [Azure Function](../methods/azure-function.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
@@ -86,23 +89,24 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 3 | [Mimecast](../solutions/mimecast.md) |
 | [MongoDB Atlas Logs](../connectors/mongodbatlaslogsazurefunctions.md) | [Azure Function](../methods/azure-function.md) | MongoDB | 1 | [MongoDBAtlas](../solutions/mongodbatlas.md) |
 | [NordPass](../connectors/nordpass.md) | [Azure Function](../methods/azure-function.md) | NordPass | 1 | [NordPass](../solutions/nordpass.md) |
+| [NordStellar (Push)](../connectors/nordstellarpush.md) | [CCF Push](../methods/ccf-push.md) | Nord Security Inc. | 1 | [NordStellar](../solutions/nordstellar.md) |
 | [Obsidian Datasharing Connector](../connectors/obsidiandatasharing.md) | [CCF Push](../methods/ccf-push.md) | Obsidian Security | 2 | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |
 | [Onapsis Defend Integration](../connectors/onapsis.md) 🔍 | [CCF Push](../methods/ccf-push.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
 | [OneTrust](../connectors/onetrustpush.md) | [CCF Push](../methods/ccf-push.md) | OneTrust | 1 | [OneTrust](../solutions/onetrust.md) |
-| [Oracle Cloud Infrastructure (via CCP) – Preview](../connectors/oci-connector-ccp-definition.md) 🔍 🔶 | [CCF](../methods/ccf.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
 | [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) 🔶 | [CCF](../methods/ccf.md) | Microsoft | 1 | [Oracle Cloud Infrastructure](../solutions/oracle-cloud-infrastructure.md) |
-| [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | [CCF Push](../methods/ccf-push.md) | Pathlock Inc. | 2 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
-| [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) ⚠️ | [CCF Push](../methods/ccf-push.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
-| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) 🔍 | [CCF](../methods/ccf.md) | Microsoft | 2 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
+| [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) 🔍 | [CCF Push](../methods/ccf-push.md) | Pathlock Inc. | 1 | [Pathlock_TDnR](../solutions/pathlock-tdnr.md) |
+| [Red Sift Events (CCP Push)](../connectors/redsiftpush.md) | [CCF Push](../methods/ccf-push.md) | Red Sift | 2 | [Red Sift](../solutions/red-sift.md) |
+| [Salesforce Service Cloud (via Codeless Connector Framework)](../connectors/salesforceservicecloudccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 1 | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | [SAP LogServ (RISE), S/4HANA Cloud private edition](../connectors/saplogserv.md) 🔍 | [CCF Push](../methods/ccf-push.md) | SAP SE | 1 | [SAP LogServ](../solutions/sap-logserv.md) |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) | [CCF Push](../methods/ccf-push.md) | SecurityBridge Group GmbH | 2 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | [Azure Function](../methods/azure-function.md) | Semperis | 7 | [SemperisLightning](../solutions/semperislightning.md) |
+| [Sonrai Security Push Connector](../connectors/sonraisecuritypush.md) | [CCF Push](../methods/ccf-push.md) | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sophos Endpoint Protection (via Codeless Connector Platform)](../connectors/sophosendpointprotectionccpdefinition.md) | [CCF](../methods/ccf.md) | Microsoft | 2 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) | [CCF Push](../methods/ccf-push.md) | Synqly | 10 | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶 | [CCF Push](../methods/ccf-push.md) | Tanium Inc. | 10 | [Tanium](../solutions/tanium.md) |
 | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | [Azure Function](../methods/azure-function.md) | Team Cymru Scout | 14 | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | [Tenable Vulnerability Management](../connectors/tenablevm.md) | [Azure Function](../methods/azure-function.md) | Tenable | 5 | [Tenable App](../solutions/tenable-app.md) |
-| [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) ⚠️ | [Azure Function](../methods/azure-function.md) | Upwind | 1 | [Upwind](../solutions/upwind.md) |
+| [Upwind Logs Loader (Ingestion API)](../connectors/upwindlogsloader.md) | [Azure Function](../methods/azure-function.md) | Upwind | 1 | [Upwind](../solutions/upwind.md) |
 | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | [CCF Push](../methods/ccf-push.md) | Varonis | 1 | [Varonis Purview](../solutions/varonis-purview.md) |
 | [Vectra XDR](../connectors/vectraxdr.md) | [Azure Function](../methods/azure-function.md) | Vectra | 6 | [Vectra XDR](../solutions/vectra-xdr.md) |
 | [VMware SD-WAN and SASE Connector](../connectors/vmwaresdwan.md) ⚠️ | [Azure Function](../methods/azure-function.md) | VMware by Broadcom | 4 | [VMware SASE](../solutions/vmware-sase.md) |

@@ -6,16 +6,15 @@
 
 ---
 
-This query searches for application installation events.
+This hunt searches for Slack application installation events to identify potentially unauthorized or suspicious app installs by users.
 
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Hunting Query |
 | **Solution** | [SlackAudit](../solutions/slackaudit.md) |
 | **ID** | `cefd7f18-9359-4a99-bd18-965983bb724d` |
-| **Severity** | Medium |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1133 |
+| **Tactics** | InitialAccess, Persistence |
+| **Techniques** | T1133, T1098.003 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditApplicationsInstalled.yaml) |
 
@@ -26,7 +25,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

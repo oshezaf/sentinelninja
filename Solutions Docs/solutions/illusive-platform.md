@@ -46,17 +46,15 @@ This solution depends on **1 other solution(s)**:
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
+This solution provides **2 data connector(s)**:
 
-- [[Deprecated] Illusive Platform via Legacy Agent](../connectors/illusiveattackmanagementsystem.md) ⚠️
+- [[Deprecated] Illusive Platform via Legacy Agent](../connectors/illusiveattackmanagementsystem.md)
 - [[Deprecated] Illusive Platform via AMA](../connectors/illusiveattackmanagementsystemama.md)
 
 Connectors from dependency solutions:
 
 - [Common Event Format (CEF)](../connectors/cef.md) *(dependency on [Common Event Format](common-event-format.md))*
 - [Common Event Format (CEF) via AMA](../connectors/cefama.md) *(dependency on [Common Event Format](common-event-format.md))*
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

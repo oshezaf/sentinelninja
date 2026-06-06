@@ -52,7 +52,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (40 columns)</h2>
+<h2 id="schema">Schema (45 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomscriptevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -164,6 +164,21 @@
   <td style="text-align:left">Process ID (PID) of the parent process that spawned the process responsible for the event.</td>
 </tr>
 <tr>
+  <td style="text-align:left">InitiatingProcessRemoteSessionDeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Device name of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">InitiatingProcessRemoteSessionIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the remote device from which the initiating process's RDP session was initiated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">InitiatingProcessSessionId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Windows session ID of the initiating process.</td>
+</tr>
+<tr>
   <td style="text-align:left">InitiatingProcessSHA1</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">SHA-1 hash of the process (image file) that initiated the event.</td>
@@ -182,6 +197,11 @@
   <td style="text-align:left">InitiatingProcessSignerType</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Type of file signer of the process (image file) that initiated the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">InitiatingProcessUniqueId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
 </tr>
 <tr>
   <td style="text-align:left">InitiatingProcessVersionInfoCompanyName</td>
@@ -212,6 +232,11 @@
   <td style="text-align:left">InitiatingProcessVersionInfoProductVersion</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Product version from the version information of the process (image file) responsible for the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsInitiatingProcessRemoteSession</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false).</td>
 </tr>
 <tr>
   <td style="text-align:left">ReportId</td>

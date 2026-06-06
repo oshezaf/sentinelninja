@@ -78,18 +78,19 @@ Reference for WireData table in Azure Monitor Logs.
 | TotalBytes | long | Total number of bytes sent during session |
 | Type | string | The name of the table |
 
-## Solutions (2)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (6)
 
-### Hunting Queries (1)
+### Hunting Queries (2)
 
 **In solution [Threat Intelligence](../solutions/threat-intelligence.md):**
 
@@ -97,13 +98,27 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md) |  |
 
-### Workbooks (1)
+**Standalone Content:** `RemotePortNumber != "0"`
+
+| Hunting Query |
+|:-------------|
+| [Detect beacon like pattern based on repetitive time intervals in Wire Data Traffic](../content/standalone-content-detect-beacon-like-pattern-based-on-repetitive-time-intervals-in-wire-data-traffic-33aa0e01-87e2-43ea-87f9-2f7e3ff1d532-1e25a0ce.md) |
+
+### Workbooks (4)
 
 **In solution [SOC Handbook](../solutions/soc-handbook.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
+| [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
 
 ## Resource Types
 
@@ -114,6 +129,21 @@ This table collects data from the following Azure resource types:
 - `microsoft.azurestackhci/virtualmachines`
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `RemotePortNumber != "0"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### RemotePortNumber
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 0` | - | 1 | - | - | **1** |
 
 ---
 

@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | `Action in "Allow,Block"` | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
+| [`NetworkAccessTraffic`](../tables/networkaccesstraffic.md) | `Action in "Allow,Block"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

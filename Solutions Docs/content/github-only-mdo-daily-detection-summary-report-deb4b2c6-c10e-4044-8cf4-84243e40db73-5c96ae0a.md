@@ -24,9 +24,9 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ? |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` | ✓ | ✗ | ? |
-| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ? |
+| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "AdminSubmission,UserSubmission"`<br>`ActionType contains "ZAP"` | ✓ | ✗ | ✓ |
+| [`EmailEvents`](../tables/emailevents.md) |  | ✓ | ✗ | ✓ |
 | [`EmailPostDeliveryEvents`](../tables/emailpostdeliveryevents.md) |  | ✓ | ✗ | ? |
 
 ---

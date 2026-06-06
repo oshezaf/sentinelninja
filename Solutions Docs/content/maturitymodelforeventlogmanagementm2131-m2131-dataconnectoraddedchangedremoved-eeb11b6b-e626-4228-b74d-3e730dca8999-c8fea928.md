@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue contains "Microsoft.SecurityInsights/dataConnectors/"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Succeeded"`<br>`OperationNameValue contains "Microsoft.SecurityInsights/dataConnectors/"` | ✗ | ✗ | ✗ |
 
 ---
 

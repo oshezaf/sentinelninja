@@ -17,8 +17,9 @@
 | **Version** | 3.0.8 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-13 |
+| **Last Updated** | 2026-05-25 |
 | **Solution Folder** | [Fortinet FortiGate Next-Generation Firewall connector for Microsoft Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiGate%20Next-Generation%20Firewall%20connector%20for%20Microsoft%20Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortinetfortigate) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-fortinetfortigate) · Rating: ★★★☆☆ 3.0/5 (1 ratings) · Popularity: 🟢 High (88%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 Gain insight into your organization's network and improve your security operation capabilities with the [Fortinet FortiGate Next-generation Firewall](https://www.fortinet.com/products/next-generation-firewall) Solution for Microsoft Sentinel. It allows you to easily connect your FortiGate logs with Microsoft Sentinel. This enables you to view dashboards, create custom alerts, and improve investigation. 
@@ -95,7 +96,7 @@ This solution includes **4 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                                      |
 |-------------|--------------------------------|-----------------------------------------------------------------------------------------|
-| 3.0.9       | 02-09-2025                     |Update Fortinetfortigate **Playbook**  fix                                               |
+| 3.0.9       | 21-05-2026                     |Updated Fortinetfortigate **Playbook** Function app to fix authlevel                     |                         |
 | 3.0.8       | 26-02-2025                     |**Playbook** functionApp code change                                                     |
 | 3.0.7       | 11-11-2024                     |Removed Deprecated data connectors                                                       |
 | 3.0.6       | 22-08-2024                     |Deprecated data connectors                                                    			 |

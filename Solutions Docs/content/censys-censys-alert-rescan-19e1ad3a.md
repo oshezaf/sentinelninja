@@ -22,8 +22,8 @@ This content item queries data from the following tables:
 |:------|:---------------:|:-------------:|:---------:|
 | [`CensysRescanHostAlert_CL`](../tables/censysrescanhostalert-cl.md) 🔶 | ? | ✓ | ? |
 | [`CensysRescanWebPropertyAlert_CL`](../tables/censysrescanwebpropertyalert-cl.md) 🔶 | ? | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) | ✓ | ✗ | ✓ |
 
 ## Logic App Connectors
 

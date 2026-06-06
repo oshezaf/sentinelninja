@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "Administrative"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "Administrative"`<br>`ResourceProviderValue == "Microsoft.ADHybridHealthService"`<br>`_ResourceId has "AdFederationService"` | ✗ | ✗ | ✗ |
 
 ---
 

@@ -25,7 +25,7 @@
 <h2 id="schemas">Schemas</h2>
 <ul>
 <li><a href="#agentevent">AgentEvent</a> (1 union pair)</li>
-<li><a href="#alertevent">AlertEvent</a> (1 source pairs, 1 union pair)</li>
+<li><a href="#alertevent">AlertEvent</a> (2 source pairs, 1 union pair)</li>
 <li><a href="#assetentity">AssetEntity</a> (1 union pair)</li>
 <li><a href="#auditevent">AuditEvent</a> (10 source pairs, 1 union pair)</li>
 <li><a href="#authentication">Authentication</a> (18 source pairs, 1 union pair)</li>
@@ -77,17 +77,17 @@
 <tr>
   <td style="text-align:left"><a href="asimalertevent.html">ASimAlertEvent</a></td>
   <td style="text-align:left"><code>_ASim_AlertEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md">0.1.1</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md">0.1.2</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="imalertevent.html">imAlertEvent</a></td>
   <td style="text-align:left"><code>_Im_AlertEvent</code></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md">0.1.1</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md">0.1.2</a></td>
 </tr>
 </tbody>
 </table>
 <h3 id="supported-products">Supported Products</h3>
-<p><a href="asim-products-index.md#cisco-secure-endpoint">Cisco Secure Endpoint</a>, <a href="asim-products-index.md#microsoft-defender-xdr">Microsoft Defender XDR</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a></p>
+<p><a href="asim-products-index.md#bitdefender">Bitdefender</a>, <a href="asim-products-index.md#cisco-secure-endpoint">Cisco Secure Endpoint</a>, <a href="asim-products-index.md#microsoft-defender-xdr">Microsoft Defender XDR</a>, <a href="asim-products-index.md#sentinelone">SentinelOne</a></p>
 <h3 id="source-parsers">Source Parsers</h3>
 <table>
 <thead>
@@ -99,6 +99,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left"><a href="asimalerteventbitdefendergravityzone.html">BitdefenderGravityZone</a></td>
+  <td style="text-align:left">Bitdefender</td>
+  <td style="text-align:left"><a href="../solutions/gravityzone.html">GravityZone</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventBitdefenderGravityZone.md">0.1.0</a></td>
+</tr>
 <tr>
   <td style="text-align:left"><a href="asimalerteventciscosecureendpoint.html">CiscoSecureEndpoint</a></td>
   <td style="text-align:left">Cisco Secure Endpoint</td>
@@ -487,13 +493,13 @@
   <td style="text-align:left"><a href="asimauthenticationpaloaltoglobalprotect.html">PaloAltoGlobalProtect</a></td>
   <td style="text-align:left">Palo Alto PAN-OS GlobalProtect</td>
   <td style="text-align:left"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoGlobalProtect.md">0.1.0</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoGlobalProtect.md">0.1.1</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimauthenticationpaloaltopanos.html">PaloAltoPanOS</a></td>
   <td style="text-align:left">Palo Alto PAN-OS</td>
   <td style="text-align:left"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoPanOS.md">0.1.0</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationPaloAltoPanOS.md">0.1.1</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimauthenticationpostgresql.html">PostgreSQL</a></td>
@@ -961,7 +967,7 @@
   <td style="text-align:left"><a href="asimnetworksessioncheckpointfirewall.html">CheckPointFirewall</a></td>
   <td style="text-align:left">CheckPointFirewall</td>
   <td style="text-align:left"><a href="../solutions/common-event-format.html">Common Event Format</a><br><a href="../solutions/virtualmetric-datastream.html">VirtualMetric DataStream</a></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md">1.2.0</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md">1.2.1</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="asimnetworksessioncheckpointsmartdefense.html">CheckPointSmartDefense</a></td>

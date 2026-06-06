@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `Identity != "MS-PIM"`<br>`Identity != "MS-PIM-Fairfax"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `Identity != "MS-PIM"`<br>`Identity != "MS-PIM-Fairfax"` | ✓ | ✗ | ✓ |
 
 ---
 

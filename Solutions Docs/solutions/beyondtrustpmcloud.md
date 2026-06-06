@@ -21,7 +21,7 @@
 | **First Published** | 2025-10-31 |
 | **Last Updated** | 2026-02-27 |
 | **Solution Folder** | [BeyondTrustPMCloud](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/beyondtrust.azure-sentinel-solution-beyondtrustpmcloud) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/beyondtrust.azure-sentinel-solution-beyondtrustpmcloud) · Popularity: 🟢 High (85%) |
 
 The BeyondTrust PM Cloud solution provides a data connector to ingest activity audit logs and client event logs from BeyondTrust Privilege Management Cloud into Microsoft Sentinel.
 

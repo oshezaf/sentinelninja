@@ -1,4 +1,6 @@
-# 🚫 🔍 [DEPRECATED] Salesforce Service Cloud
+# 🚫 ⚠️ 🔍 [DEPRECATED] Salesforce Service Cloud
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
@@ -36,7 +38,7 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
-| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ? | ✓ | ? |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ✗ | ✓ | ✗ |
 | [`SalesforceServiceCloud_CL`](../tables/salesforceservicecloud-cl.md) 🔶 | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "ServiceHealth"`<br>`Level in "Error,Information,Warning"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `CategoryValue == "ServiceHealth"`<br>`Level in "Error,Information,Warning"` | ✗ | ✗ | ✗ |
 
 ---
 

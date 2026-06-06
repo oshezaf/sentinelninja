@@ -18,8 +18,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `DisplayName has "Incident"`<br>`DisplayName has "Investigation"`<br>`DisplayName has "Security operations efficiency"` | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `DisplayName has "Incident"`<br>`DisplayName has "Investigation"`<br>`DisplayName has "Security operations efficiency"` | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `CommunicationDirection contains "inbound"`<br>`CommunicationDirection contains "outbound"`<br>`DeviceEventClassID in "106100,111008,113012,113015,302010,315011,611102,733100"`<br>`DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"`<br>`Message contains "-> inside"`<br>`Message contains "-> management"`<br>`SimplifiedDeviceAction in "Allow,Built,Deny"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `CommunicationDirection contains "inbound"`<br>`CommunicationDirection contains "outbound"`<br>`DeviceEventClassID in "106100,111008,113012,113015,302010,315011,611102,733100"`<br>`DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"`<br>`Message contains "-> inside"`<br>`Message contains "-> management"`<br>`SimplifiedDeviceAction in "Allow,Built,Deny"` | ✓ | ✓ | ✓ |
 
 ---
 

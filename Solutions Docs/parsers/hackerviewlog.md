@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`HackerViewLog_AzureV2_CL`](../tables/hackerviewlog-azurev2-cl.md) | ? | ✓ | ? |
+| [`HackerViewLog_AzureV2_CL`](../tables/hackerviewlog-azurev2-cl.md) | ✗ | ✓ | ✗ |
 | [`HackerViewLog_Azure_1_CL`](../tables/hackerviewlog-azure-1-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

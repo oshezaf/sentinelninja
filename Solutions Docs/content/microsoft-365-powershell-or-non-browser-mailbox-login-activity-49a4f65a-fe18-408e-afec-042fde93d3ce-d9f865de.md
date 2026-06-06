@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`OfficeWorkload == "Exchange"`<br>`Operation == "MailboxLogin"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`OfficeWorkload == "Exchange"`<br>`Operation == "MailboxLogin"` | ✓ | ✗ | ✓ |
 
 ---
 

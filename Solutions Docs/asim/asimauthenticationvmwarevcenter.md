@@ -32,7 +32,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AVSVcSyslog`](../tables/avsvcsyslog.md) | ✓ | ✗ | ? |
-| [`vcenter_CL`](../tables/vcenter-cl.md) | ? | ✓ | ? |
+| [`vcenter_CL`](../tables/vcenter-cl.md) | ✓ | ✓ | ✓ |
 
 ## Parameters
 

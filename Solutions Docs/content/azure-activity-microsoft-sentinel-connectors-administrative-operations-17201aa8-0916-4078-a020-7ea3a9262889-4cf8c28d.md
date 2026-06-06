@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivitySubstatusValue in "Created,OK"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivitySubstatusValue in "Created,OK"` | ✗ | ✗ | ✗ |
 
 ---
 

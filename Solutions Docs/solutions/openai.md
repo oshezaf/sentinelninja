@@ -1,6 +1,4 @@
-# ⚠️ OpenAI
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# OpenAI
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OpenAI.svg" alt="OpenAI Logo" width="75" height="75">
 
@@ -19,7 +17,9 @@
 | **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-03-20 |
+| **Last Updated** | 2026-05-22 |
 | **Solution Folder** | [OpenAI](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-openai) · Popularity: 🟢 High (98%) |
 
 The [OpenAI](https://www.openai.com/) solution for Microsoft Sentinel enables you to ingest OpenAI events into Microsoft Sentinel.
   

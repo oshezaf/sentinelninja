@@ -21,7 +21,7 @@
 | **First Published** | 2022-01-31 |
 | **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [Tomcat](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tomcat) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-apachetomcat) · Popularity: 🔵 Medium (64%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-apachetomcat) · Popularity: 🟡 Low (28%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The Apache Tomcat solution provides the capability to ingest [Apache Tomcat](http://tomcat.apache.org/) events into Microsoft Sentinel. Refer to [Apache Tomcat documentation](http://tomcat.apache.org/tomcat-10.0-doc/logging.html) for more information.

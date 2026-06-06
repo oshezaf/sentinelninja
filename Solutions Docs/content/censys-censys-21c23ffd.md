@@ -28,8 +28,8 @@ This content item queries data from the following tables:
 | [`Censys_Web_Property_Threat_CL`](../tables/censys-web-property-threat-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`Censys_Web_Property_Vuln_CL`](../tables/censys-web-property-vuln-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`Incident_Enrich_Data_CL`](../tables/incident-enrich-data-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

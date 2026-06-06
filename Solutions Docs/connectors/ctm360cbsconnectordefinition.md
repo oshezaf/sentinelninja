@@ -44,7 +44,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CBSLog_AzureV2_CL`](../tables/cbslog-azurev2-cl.md) | ? | ✓ | ? |
+| [`CBSLog_AzureV2_CL`](../tables/cbslog-azurev2-cl.md) | ✗ | ✓ | ✗ |
 | [`CBS_BreachedCredentials_AzureV2_CL`](../tables/cbs-breachedcredentials-azurev2-cl.md) | ? | ✓ | ? |
 | [`CBS_CompromisedCards_AzureV2_CL`](../tables/cbs-compromisedcards-azurev2-cl.md) | ? | ✓ | ? |
 | [`CBS_DomainInfringement_AzureV2_CL`](../tables/cbs-domaininfringement-azurev2-cl.md) | ? | ✓ | ? |

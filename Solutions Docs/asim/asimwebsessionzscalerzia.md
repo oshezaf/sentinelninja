@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceCustomString4 == "None"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`RequestContext == "None"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceCustomString4 == "None"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`RequestContext == "None"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

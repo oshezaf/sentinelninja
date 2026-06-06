@@ -16,7 +16,7 @@ Reference for DeviceCustomNetworkEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomnetworkevents) |
 
-## Schema (52 columns)
+## Schema (53 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomnetworkevents)
 
@@ -51,6 +51,7 @@ Reference for DeviceCustomNetworkEvents table in Azure Monitor Logs.
 | InitiatingProcessSHA1 | string | SHA-1 hash of the initiating process (image file). |
 | InitiatingProcessSHA256 | string | SHA-256 hash of the initiating process (image file). In some cases this column may not be populated - please use the InitiatingProcessSHA1 column instead. |
 | InitiatingProcessTokenElevation | string | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the initiating process. |
+| InitiatingProcessUniqueId | string | Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices. |
 | InitiatingProcessVersionInfoCompanyName | string | The company name in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoFileDescription | string | The description in version information (image file) responsible for the event. |
 | InitiatingProcessVersionInfoInternalFileName | string | The internal file name in version information (image file) responsible for the event. |

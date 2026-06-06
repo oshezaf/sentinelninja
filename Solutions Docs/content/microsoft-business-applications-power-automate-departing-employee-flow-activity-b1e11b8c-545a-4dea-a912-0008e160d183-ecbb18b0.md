@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | `EventOriginalType in "CreateFlow,EditFlow"` | ✓ | ✗ | ? |
+| [`PowerAutomateActivity`](../tables/powerautomateactivity.md) | `EventOriginalType in "CreateFlow,EditFlow"` | ✓ | ✗ | ✓ |
 
 ---
 

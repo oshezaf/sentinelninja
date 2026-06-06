@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "IPC"` | ✓ | ✗ | ? |
+| [`DataverseActivity`](../tables/dataverseactivity.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "IPC"` | ✓ | ✗ | ✓ |
 
 ---
 

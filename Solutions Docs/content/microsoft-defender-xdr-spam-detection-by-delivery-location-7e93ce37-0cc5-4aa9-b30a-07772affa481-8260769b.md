@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` | ✓ | ✗ | ? |
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Spam"`<br>`EmailDirection == "Inbound"` | ✓ | ✗ | ✓ |
 
 ---
 

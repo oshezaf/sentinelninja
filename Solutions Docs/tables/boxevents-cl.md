@@ -9,7 +9,9 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -104,14 +106,13 @@ This table is used by the following solutions:
 
 - [Box](../solutions/box.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [[DEPRECATED] Box Events (using Azure Function)](../connectors/boxdataconnector.md) |  |
-| [Box Events (via Codeless Connector Framework)](../connectors/boxeventsccpdefinition.md) |  |
 
 ---
 

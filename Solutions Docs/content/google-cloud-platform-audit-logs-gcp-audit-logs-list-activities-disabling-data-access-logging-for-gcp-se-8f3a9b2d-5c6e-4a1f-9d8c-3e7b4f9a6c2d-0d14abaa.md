@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "project"`<br>`MethodName == "SetIamPolicy"`<br>`ServiceName == "cloudresourcemanager.googleapis.com"` | ✓ | ✓ | ? |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "project"`<br>`MethodName == "SetIamPolicy"`<br>`ServiceName == "cloudresourcemanager.googleapis.com"` | ✓ | ✓ | ✓ |
 
 ---
 

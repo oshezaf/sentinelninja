@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DnsEvents`](../tables/dnsevents.md) | `SubType == "LookupQuery"` | ✓ | ✗ | ? |
+| [`DnsEvents`](../tables/dnsevents.md) | `SubType == "LookupQuery"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -18,10 +18,10 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) | `ActionType in "LogonFailed,LogonSuccess"` | ✓ | ✗ | ? |
-| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | `LogonType in "Credentials validation,Resource access"` | ✓ | ✗ | ? |
+| [`IdentityDirectoryEvents`](../tables/identitydirectoryevents.md) |  | ✓ | ✗ | ? |
+| [`IdentityLogonEvents`](../tables/identitylogonevents.md) | `ActionType in "LogonFailed,LogonSuccess"`<br>`LogonType in "Credentials validation,Resource access"` | ✓ | ✗ | ✓ |
 | [`IdentityQueryEvents`](../tables/identityqueryevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`RedSiftAuth_CL`](../tables/redsiftauth-cl.md) |  | ? | ✓ | ? |
+| [`RedSiftAuth_CL`](../tables/redsiftauth-cl.md) |  | ✗ | ✓ | ✗ |
 
 ---
 

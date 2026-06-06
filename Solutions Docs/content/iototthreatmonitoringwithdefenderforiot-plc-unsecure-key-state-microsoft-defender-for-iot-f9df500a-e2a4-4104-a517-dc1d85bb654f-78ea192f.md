@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `AlertName has "PLC Operating Mode Changed"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName has "PLC Operating Mode Changed"`<br>`ProviderName == "IoTSecurity"` | ✓ | ✗ | ✓ |
 
 ---
 

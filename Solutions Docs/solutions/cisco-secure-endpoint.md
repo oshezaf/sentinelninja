@@ -1,6 +1,8 @@
-# Cisco Secure Endpoint Solution
+# ⚠️ Cisco Secure Endpoint Solution
 
 *Solution: Cisco Secure Endpoint*
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="Cisco Secure Endpoint Logo" width="75" height="75">
 

@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `Computer == "CiscoMeraki"` | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `Computer == "CiscoMeraki"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

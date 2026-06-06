@@ -33,7 +33,7 @@ This parser reads from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AVSEsxiSyslog`](../tables/avsesxisyslog.md) |  | ✓ | ✗ | ? |
 | [`AVSSyslog`](../tables/avssyslog.md) |  | ✓ | ✗ | ? |
-| [`Syslog`](../tables/syslog.md) | `ProcessName == "DCUI"`<br>`SyslogMessage has "failed"`<br>`SyslogMessage has "logged out"`<br>`SyslogMessage has "time out"`<br>`SyslogMessage has_all "Authentication of user"`<br>`SyslogMessage has_any "logged in,logged out,succeeded"` | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `ProcessName == "DCUI"`<br>`SyslogMessage has "failed"`<br>`SyslogMessage has "logged out"`<br>`SyslogMessage has "time out"`<br>`SyslogMessage has_all "Authentication of user"`<br>`SyslogMessage has_any "logged in,logged out,succeeded"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

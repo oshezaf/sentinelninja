@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **50** |
-| Active | 45 |
+| Active | 44 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 4 |
+| Unpublished ⚠️ | 5 |
 
 ## Connectors Using This Method
 
@@ -31,7 +31,7 @@ The collection method for these connectors could not be automatically determined
 | [API Protection](../connectors/42crunchapiprotection.md) 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
-| [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
+| [Authomize Data Connector](../connectors/authomize.md) 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
 | [Azure CloudNGFW By Palo Alto Networks](../connectors/azurecloudngfwbypaloaltonetworks.md) 🔶 | Palo Alto Networks | 1 | [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
@@ -60,7 +60,7 @@ The collection method for these connectors could not be automatically determined
 | [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
 | [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
-| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
+| [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
 | [Prancer Data Connector](../connectors/prancerlogdata.md) 🔶 | Prancer | 1 | [Prancer PenSuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
@@ -75,7 +75,7 @@ The collection method for these connectors could not be automatically determined
 | [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) 🔶 | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
 | [Talon Insights](../connectors/talonlogs.md) 🔶 | Talon Security | 1 | [Talon](../solutions/talon.md) |
 | [Theom](../connectors/theom.md) 🔶 | Theom | 1 | [Theom](../solutions/theom.md) |
-| [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) 🔶 | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
+| [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) ⚠️ 🔶 | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 
 ### Deprecated Connectors 🚫
 

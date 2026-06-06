@@ -6,22 +6,24 @@
 
 ---
 
-> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
-
 Cloud process events for various cloud platforms protected by the organization's Microsoft Defender for Containers
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | XDR |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudprocessevents-table) |
 
-## Schema (24 columns)
+## Schema (29 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudprocessevents)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountName | string | User name of the account |
 | ActionType | string | Type of activity that triggered the event. See the in-portal schema reference for details. |
 | AdditionalFields | string | Additional information about the event in JSON array format |
@@ -45,7 +47,10 @@ Cloud process events for various cloud platforms protected by the organization's
 | ProcessCurrentWorkingDirectory | string | Current working directory of the running process |
 | ProcessId | long | Process ID (PID) of the newly created process |
 | ProcessName | string | The name of the process |
-| Timestamp | datetime | Date and time when the event was recorded |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Date and time (UTC) when the record was generated |
+| Type | string | The name of the table |
 
 ---
 

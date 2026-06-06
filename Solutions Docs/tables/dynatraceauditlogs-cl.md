@@ -8,7 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -23,14 +25,13 @@ This table is used by the following solutions:
 
 - [Dynatrace](../solutions/dynatrace.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Dynatrace Audit Logs V1](../connectors/dynatraceauditlogs.md) |  |
-| [Dynatrace Audit Logs V2](../connectors/dynatraceauditlogsccpdefinition.md) |  |
 
 ---
 

@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity contains "IPS"`<br>`DestinationServiceName != "generalbrowsing"`<br>`DeviceCustomString3 contains "Behavior"`<br>`DeviceCustomString5 != "None"`<br>`DeviceCustomString5 != "suspiciousfile"`<br>`DeviceCustomString5Label == "threatname"`<br>`DeviceEventClassID == "Blocked"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Block"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`SourceUserPrivileges == "Road Warrior"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity contains "IPS"`<br>`DestinationServiceName != "generalbrowsing"`<br>`DeviceCustomString3 contains "Behavior"`<br>`DeviceCustomString5 != "None"`<br>`DeviceCustomString5 != "suspiciousfile"`<br>`DeviceCustomString5Label == "threatname"`<br>`DeviceEventClassID == "Blocked"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Block"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`SourceUserPrivileges == "Road Warrior"` | ✓ | ✓ | ✓ |
 
 ---
 

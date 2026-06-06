@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Defender Advanced Threat Protection"`<br>`Tactics != "Unknown"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Defender Advanced Threat Protection"`<br>`Tactics != "Unknown"` | ✓ | ✗ | ✓ |
 
 ## Logic App Connectors
 

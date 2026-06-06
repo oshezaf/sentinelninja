@@ -16,6 +16,7 @@
 | **Collection Method** | [REST Pull API](../methods/rest-pull-api.md) |
 | **Connector Definition Files** | [blacklens_io.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blacklens/Data%20Connectors/blacklens_io.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#blacklensio) |
 
 The [blacklens.io](https://blacklens.io) data connector allows you to ingest Attack Surface Management alerts from blacklens.io into Microsoft Sentinel using a webhook-based Logic App and the Azure Monitor Logs Ingestion API.
 
@@ -25,7 +26,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`blacklens_CL`](../tables/blacklens-cl.md) | ? | ✓ | ? |
+| [`blacklens_CL`](../tables/blacklens-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName has "Consent to application"`<br>`ActivityDisplayName has_any "Add delegated permission grant"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName has "Consent to application"`<br>`ActivityDisplayName has_any "Add delegated permission grant"` | ✓ | ✗ | ✓ |
 
 ---
 

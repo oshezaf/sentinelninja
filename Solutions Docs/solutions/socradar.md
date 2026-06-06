@@ -1,6 +1,6 @@
-# ⚠️ SOCRadar
+# SOCRadar Alerts Azure Sentinel Directional Solution
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: SOCRadar*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/socradar.svg" alt="SOCRadar Logo" width="75" height="75">
 
@@ -19,8 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | SOCRadar - integration@socradar.io |
 | **First Published** | 2026-02-08 |
-| **Last Updated** | 2026-04-19 |
+| **Last Updated** | 2026-05-18 |
 | **Solution Folder** | [SOCRadar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOCRadar) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/socradar.azure-sentinel-solution-socradar) · Popularity: 🔵 Medium (78%) |
 
 The [SOCRadar](https://socradar.io/) solution for Microsoft Sentinel provides bidirectional integration between SOCRadar XTI Platform and Microsoft Sentinel. Import alarms as incidents, sync closed incidents back to SOCRadar with classification mapping.
 

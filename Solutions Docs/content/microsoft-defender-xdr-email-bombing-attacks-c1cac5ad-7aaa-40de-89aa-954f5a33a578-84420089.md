@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Delivered"` | ✓ | ✗ | ? |
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Delivered"` | ✓ | ✗ | ✓ |
 
 ---
 

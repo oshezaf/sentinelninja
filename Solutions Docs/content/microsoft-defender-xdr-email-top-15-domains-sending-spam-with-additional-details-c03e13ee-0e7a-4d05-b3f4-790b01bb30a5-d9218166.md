@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Spam"` | ✓ | ✗ | ? |
+| [`EmailEvents`](../tables/emailevents.md) | `EmailDirection == "Inbound"`<br>`ThreatTypes has "Spam"` | ✓ | ✗ | ✓ |
 
 ---
 

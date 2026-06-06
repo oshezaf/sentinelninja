@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [meshStackEventLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/Data%20Connectors/meshStackEventLogs_ccp/meshStackEventLogs_DCR.json) |
 | **CCF Configuration** | [meshStackEventLogs_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack/Data%20Connectors/meshStackEventLogs_ccp/meshStackEventLogs_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#meshstack-event-logs) |
 
 The meshStack Event Logs connector provides the capability to ingest meshStack platform events into Microsoft Sentinel. By connecting meshStack event logs into Microsoft Sentinel, you can view this data in workbooks, use it to create custom alerts, and improve your investigation process for cloud platform governance, audit, and compliance monitoring.
 
@@ -27,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`meshStackEventLogs_CL`](../tables/meshstackeventlogs-cl.md) | ? | ✓ | ? |
+| [`meshStackEventLogs_CL`](../tables/meshstackeventlogs-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

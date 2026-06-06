@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"`<br>`NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"`<br>`NewProcessName has_any "Policies\\{6AC1786C-016F-11D2-945F-00C04fB984F9}"` | ✓ | ✓ | ✓ |
 
 ---
 

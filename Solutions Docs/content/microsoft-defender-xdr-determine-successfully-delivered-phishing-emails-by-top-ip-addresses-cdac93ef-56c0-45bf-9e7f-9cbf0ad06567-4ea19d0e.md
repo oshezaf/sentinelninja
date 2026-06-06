@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Delivered"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` | ✓ | ✗ | ? |
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryAction == "Delivered"`<br>`ThreatTypes has "Malware"`<br>`ThreatTypes has "Phish"` | ✓ | ✗ | ✓ |
 
 ---
 

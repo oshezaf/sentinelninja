@@ -1,4 +1,6 @@
-# Armis
+# ⚠️ Armis
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Armis.svg" alt="Armis Logo" width="75" height="75">
 
@@ -19,7 +21,7 @@
 | **First Published** | 2022-08-02 |
 | **Last Updated** | 2024-08-23 |
 | **Solution Folder** | [Armis](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Armis) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/armisinc1668090987837.armis-solution) · Popularity: 🟡 Low (33%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/armisinc1668090987837.armis-solution) · Popularity: 🔵 Medium (78%) |
 
 The [Armis](https://www.armis.com/) Solution gives the capability to ingest Armis Devices, Alerts and device Activities into Microsoft Sentinel through the Armis REST API.
 

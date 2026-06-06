@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "$client = New-Object System.Net.Sockets.TCPClient"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "$client = New-Object System.Net.Sockets.TCPClient"`<br>`EventID == "4688"`<br>`Process has_any "powershell.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

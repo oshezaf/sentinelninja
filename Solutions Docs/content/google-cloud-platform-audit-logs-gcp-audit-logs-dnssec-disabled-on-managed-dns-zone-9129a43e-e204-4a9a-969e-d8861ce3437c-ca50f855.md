@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "dns_managed_zone"`<br>`MethodName in "dns.managedZones.patch,dns.managedZones.update"`<br>`ServiceName == "dns.googleapis.com"`<br>`Severity == "NOTICE"` | ✓ | ✓ | ? |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `GCPResourceType == "dns_managed_zone"`<br>`MethodName in "dns.managedZones.patch,dns.managedZones.update"`<br>`ServiceName == "dns.googleapis.com"`<br>`Severity == "NOTICE"` | ✓ | ✓ | ✓ |
 
 ---
 

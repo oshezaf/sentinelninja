@@ -13,8 +13,8 @@
 | Title | Parser for BitSightCompanyRatings |
 | Location | Solution |
 | Solution | [BitSight](../solutions/bitsight.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 1.1.0 |
+| Last Updated | 2026-05-25 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Parsers/BitSightCompanyRatings.yaml) |
@@ -25,6 +25,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`BitSightCompanyRatingDetails_CL`](../tables/bitsightcompanyratingdetails-cl.md) | ? | ✓ | ? |
 | [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | ? | ✓ | ? |
 
 ---

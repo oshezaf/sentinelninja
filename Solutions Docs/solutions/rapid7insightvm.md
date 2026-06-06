@@ -19,8 +19,9 @@
 | **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-07 |
+| **Last Updated** | 2026-05-28 |
 | **Solution Folder** | [Rapid7InsightVM](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Rapid7InsightVM) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-rapid7insightvm) · Popularity: 🔵 Medium (71%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-rapid7insightvm) · Popularity: 🟡 Low (48%) |
 
 The [Rapid7 Insight platform](https://www.rapid7.com/products/insightvm/) brings together Rapid7’s library of vulnerability research, exploit knowledge, global attacker behavior, Internet-wide scanning data, exposure analytics, and real-time reporting to provide a fully available, scalable, and efficient way to collect your vulnerability data and turn it into answers. InsightVM leverages this platform for live vulnerability and endpoint analytics.
  
@@ -88,7 +89,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
-| 3.2.0       | 05-03-2026                     | Added new Rapid7InsightVM **CCP data connector**.                              |
+| 3.2.0       | 05-03-2026                     | Added new Rapid7InsightVM **CCP data connector**                              |
 | 3.1.1       | 05-02-2026                     | Update Az Func packages related to **InsightVMCloudData Connector**            |
 | 3.1.0       | 03-02-2026                     | Update **Data Connector** to use latest 4.x Azure Functions extension bundles  |
 | 3.0.1       | 03-05-2024                     | Fixed Metadata issue for ParserName and ParentId mismatch  |

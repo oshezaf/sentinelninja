@@ -8,13 +8,16 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
 - [Schema](#schema)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (22 columns)
@@ -61,6 +64,16 @@ This table is ingested by the following connectors:
 | [Auth0 Logs (via Codeless Connector Framework)](../connectors/auth0connectorccpdefinition.md) |  |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Auth0Workbook](../content/github-only-auth0workbook-07316f43.md) |  |
 
 ## Parsers Using This Table (1)
 

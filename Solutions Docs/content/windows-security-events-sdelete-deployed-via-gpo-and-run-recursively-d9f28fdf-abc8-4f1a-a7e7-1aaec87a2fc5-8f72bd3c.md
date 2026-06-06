@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "-k GPSvcGroup"`<br>`CommandLine has "-s gpsvc"`<br>`CommandLine has "sdelete"`<br>`CommandLine has_all "-s"`<br>`EventID == "4688"`<br>`ParentProcessName endswith "svchost.exe"`<br>`Process in "sdelete.exe,svchost.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "-k GPSvcGroup"`<br>`CommandLine has "-s gpsvc"`<br>`CommandLine has "sdelete"`<br>`CommandLine has_all "-s"`<br>`EventID == "4688"`<br>`ParentProcessName endswith "svchost.exe"`<br>`Process in "sdelete.exe,svchost.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

@@ -30,9 +30,9 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **166** |
-| Active | 38 |
+| Active | 36 |
 | Deprecated 🚫 | 122 |
-| Unpublished ⚠️ | 6 |
+| Unpublished ⚠️ | 8 |
 
 ## Connectors Using This Method
 
@@ -45,9 +45,9 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 | [[Recommended] Infoblox SOC Insight Data Connector via AMA](../connectors/infobloxsocinsightsdataconnector-ama.md) | Infoblox | 1 | [Infoblox](../solutions/infoblox.md) |
 | [[Recommended] Vectra AI Stream via AMA](../connectors/vectrastreamama.md) | Vectra AI | 17 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
 | [AI Vectra Stream via Legacy Agent](../connectors/aivectrastream.md) 🔶 | Vectra AI | 1 | [Vectra AI Stream](../solutions/vectra-ai-stream.md) |
-| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 3 | [Alsid For AD](../solutions/alsid-for-ad.md) |
+| [Alsid for Active Directory](../connectors/alsidforad.md) ⚠️ | Alsid | 1 | [Alsid For AD](../solutions/alsid-for-ad.md) |
 | [Automated Logic WebCTRL ](../connectors/automatedlogicwebctrl.md) | AutomatedLogic | 1 | [ALC-WebCTRL](../solutions/alc-webctrl.md) |
-| [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) ➕ | Cisco | 1 | [CiscoASA](../solutions/ciscoasa.md) |
+| [Cisco ASA via Legacy Agent](../connectors/ciscoasa.md) ⚠️ ➕ | Cisco | 1 | [CiscoASA](../solutions/ciscoasa.md) |
 | [Cisco ASA/FTD via AMA](../connectors/ciscoasaama.md) ➕ | Microsoft | 2 | [CiscoASA](../solutions/ciscoasa.md) |
 | [Cisco Software Defined WAN](../connectors/ciscosdwan.md) 🔶 | Cisco | 2 | [Cisco SD-WAN](../solutions/cisco-sd-wan.md) |
 | [Claroty xDome](../connectors/clarotyxdome.md) | Claroty | 1 | [Claroty xDome](../solutions/claroty-xdome.md) |
@@ -71,7 +71,7 @@ The Azure Monitor Agent (AMA) is the recommended agent for collecting logs from 
 | [Palo Alto Networks Cortex XDR](../connectors/paloaltonetworkscortex.md) ⚠️ | Palo Alto Networks | 1 | [Palo Alto - XDR (Cortex)](../solutions/palo-alto-xdr-cortex.md) |
 | [Radiflow iSID via AMA](../connectors/radiflowisid.md) | Radiflow | 1 | [Radiflow](../solutions/radiflow.md) |
 | [Security Events via Legacy Agent](../connectors/securityevents.md) ➕ | Microsoft | 1 | [Windows Security Events](../solutions/windows-security-events.md) |
-| [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ➕ | SecurityBridge | 1 | [SecurityBridge App](../solutions/securitybridge-app.md) |
+| [SecurityBridge Threat Detection for SAP](../connectors/securitybridgesap.md) ⚠️ ➕ | SecurityBridge | 1 | [SecurityBridge App](../solutions/securitybridge-app.md) |
 | [Semperis Directory Services Protector](../connectors/semperisdsp.md) | SEMPERIS | 1 | [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md) |
 | [Silverfort Admin Console](../connectors/silverfortama.md) | Silverfort | 1 | [Silverfort](../solutions/silverfort.md) |
 | [Syslog via AMA](../connectors/syslogama.md) | Microsoft | 1 | [Syslog](../solutions/syslog.md) |

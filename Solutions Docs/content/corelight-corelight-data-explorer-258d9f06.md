@@ -18,6 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`Corelight_v2_asset_classification_CL`](../tables/corelight-v2-asset-classification-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`Corelight_v2_bacnet_CL`](../tables/corelight-v2-bacnet-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`Corelight_v2_capture_loss_CL`](../tables/corelight-v2-capture-loss-cl.md) 🔶 |  | ? | ✓ | ? |
 | [`Corelight_v2_cip_CL`](../tables/corelight-v2-cip-cl.md) 🔶 |  | ? | ✓ | ? |

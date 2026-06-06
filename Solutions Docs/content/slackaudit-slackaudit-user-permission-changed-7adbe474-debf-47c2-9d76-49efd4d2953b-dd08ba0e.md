@@ -14,8 +14,8 @@ Query searches for user permissions changes events.
 | **Solution** | [SlackAudit](../solutions/slackaudit.md) |
 | **ID** | `7adbe474-debf-47c2-9d76-49efd4d2953b` |
 | **Severity** | Medium |
-| **Tactics** | PrivilegeEscalation |
-| **Techniques** | T1078 |
+| **Tactics** | PrivilegeEscalation, Persistence |
+| **Techniques** | T1078, T1098 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditUserPermissionsChanged.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

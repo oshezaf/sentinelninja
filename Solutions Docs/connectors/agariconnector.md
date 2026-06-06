@@ -1,6 +1,4 @@
-# ⚠️ Fortra Agari Data Connector (via Codeless Connector Framework)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Fortra Agari Data Connector (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/agari_logo.svg" alt="" width="75" height="75">
 
@@ -20,6 +18,7 @@
 | **DCR Definition Files** | [Agari_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/Agari_DCR.json) |
 | **CCF Configuration** | [Agari_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agari/Data%20Connectors/Agari_CCF/Agari_PollerConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging`, `Nested` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#fortra-agari-data-connector-via-codeless-connector-framework) |
 
 The [Fortra Agari Data Connector](https://www.agari.com/) allows ingesting logs from Fortra Agari APIs into Microsoft Sentinel. This connector integrates with Agari Brand Protection (BP), Phishing Defense (APD), and Phishing Response (APR) products. It supports DCR-based ingestion time transformations for efficient query execution. Refer to [Agari API documentation](https://developers.agari.com/agari-platform/reference/overview) for more information.
 
@@ -32,7 +31,7 @@ This connector ingests data into the following tables:
 | [`AgariAPDPolicyLog_CL`](../tables/agariapdpolicylog-cl.md) | ? | ✓ | ? |
 | [`AgariAPDTCLog_CL`](../tables/agariapdtclog-cl.md) | ? | ✓ | ? |
 | [`AgariAPRInvestigationsLog_CL`](../tables/agariaprinvestigationslog-cl.md) | ? | ✓ | ? |
-| [`AgariBPAlertsLog_CL`](../tables/agaribpalertslog-cl.md) | ? | ✓ | ? |
+| [`AgariBPAlertsLog_CL`](../tables/agaribpalertslog-cl.md) | ✗ | ✓ | ✗ |
 | [`AgariBPThreatFeedSubs_CL`](../tables/agaribpthreatfeedsubs-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

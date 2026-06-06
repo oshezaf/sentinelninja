@@ -9,7 +9,9 @@
 | Attribute | Value |
 |:----------|:------|
 | **Category** | AWS |
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 

@@ -17,6 +17,7 @@
 | **Connector Definition Files** | [IslandUserAPIConnector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island/Data%20Connectors/IslandUserAPIConnector.json) |
 | **CCF Configuration** | [IslandV2_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Island/Data%20Connectors/IslandV2_CCP/IslandV2_PollerConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#island-enterprise-browser-user-events-legacy) |
 
 This is a legacy connector and is no longer recommended. Please use the **Island Enterprise Browser V2 Data Connector** instead, which supports user, admin and system events within a single connector.
 
@@ -26,7 +27,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`Island_User_CL`](../tables/island-user-cl.md) | ? | ✓ | ? |
+| [`Island_User_CL`](../tables/island-user-cl.md) | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

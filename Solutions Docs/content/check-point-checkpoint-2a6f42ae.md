@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceCustomString3 in "DNS Reputation,IP Reputation,URL Reputation"`<br>`DeviceProduct in "Anti Malware,Anti-Bot,Anti-Virus,Application Control,DDoS Protector,IPS,Threat Emulation,URL Filtering"`<br>`DeviceVendor == "Check Point"`<br>`FlexNumber1 in "3,4,5"`<br>`LogSeverity in "Critical,High,Medium,Very-High"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceCustomString3 in "DNS Reputation,IP Reputation,URL Reputation"`<br>`DeviceProduct in "Anti Malware,Anti-Bot,Anti-Virus,Application Control,DDoS Protector,IPS,Threat Emulation,URL Filtering"`<br>`DeviceVendor == "Check Point"`<br>`FlexNumber1 in "3,4,5"`<br>`LogSeverity in "Critical,High,Medium,Very-High"` | ✓ | ✓ | ✓ |
 
 ---
 

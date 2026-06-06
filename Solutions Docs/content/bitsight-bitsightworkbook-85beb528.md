@@ -18,11 +18,16 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`BitSightCompanyDetails_CL`](../tables/bitsightcompanydetails-cl.md) | ? | ✓ | ? |
+| [`BitSightDiligenceHistoricalStatistics_CL`](../tables/bitsightdiligencehistoricalstatistics-cl.md) | ? | ✓ | ? |
+| [`BitSightFindingsSummary_CL`](../tables/bitsightfindingssummary-cl.md) | ? | ✓ | ? |
+| [`BitSightFindings_CL`](../tables/bitsightfindings-cl.md) | ? | ✓ | ? |
 | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | ? | ✓ | ? |
 | [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | ? | ✓ | ? |
 | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | ? | ✓ | ? |
 | [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | ? | ✓ | ? |
 | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | ? | ✓ | ? |
+| [`BitsightVulnerabilitiesFindingsSummary_CL`](../tables/bitsightvulnerabilitiesfindingssummary-cl.md) | ? | ✓ | ? |
 
 ---
 

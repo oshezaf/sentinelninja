@@ -9,7 +9,9 @@
 | Attribute | Value |
 |:----------|:------|
 | **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
+| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -106,15 +108,13 @@ This table is used by the following solutions:
 
 - [Okta Single Sign-On](../solutions/okta-single-sign-on.md)
 
-## Connectors (3)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) |  |
-| [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) |  |
-| [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) |  |
 
 ---
 

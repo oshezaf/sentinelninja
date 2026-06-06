@@ -39,8 +39,16 @@
   <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
@@ -295,8 +303,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (53)</h2>
-<h3 id="analytic-rules">Analytic Rules (21)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (77)</h2>
+<h3 id="analytic-rules">Analytic Rules (25)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -443,7 +451,34 @@
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (17)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-azure-diagnostic-settings-removed-from-a-resource-6e95aef3-a1e0-4063-8e74-cd59aa59f245-652cb0e3.html">Azure Diagnostic settings removed from a resource</a></td>
+  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Success&quot;</code><br><code>Caller has &quot;@&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue != &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue endswith &quot;/DELETE&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-azure-vm-run-command-operation-executed-during-suspicious-login-window-11bda520-a965-4654-9a45-d09f372f71aa-f213ee84.html">Azure VM Run Command operation executed during suspicious login window</a></td>
+  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-azure-vm-run-command-operations-executing-a-unique-powershell-script-5239248b-abfb-4c6a-8177-b104ade5db56-babdd66c.html">Azure VM Run Command operations executing a unique PowerShell script</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.html">Workspace deletion activity from an infected device</a></td>
+  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>OperationNameValue has_any &quot;/workspaces/computes/delete&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (22)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
 <thead>
@@ -541,7 +576,49 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (14)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-anomalous-resource-creation-and-related-network-activity-ac25d05d-362d-4a8d-b4e7-58c0edd2379c-4c2ca03a.html">Anomalous Resource Creation and related Network Activity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-azure-cloudshell-usage-42831fb3-f61d-41e9-95d9-f08797479a0e-b432effb.html">Azure CloudShell Usage</a></td>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>OperationNameValue != &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>ResourceGroup has &quot;cloud-shell-storage&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.html">User Granted Access and created resources</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azure-vm-run-command-linked-with-mde-55fbc363-6cc9-4201-bd68-d980b612082b-bf841a1b.html">Azure VM Run Command linked with MDE</a></td>
+  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.html">Storage Account Key Enumeration</a></td>
+  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (29)</h3>
 <p><strong>In solution <a href="../solutions/azure-activity.html">Azure Activity</a>:</strong></p>
 <table>
 <thead>
@@ -574,7 +651,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;lockbox&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName contains &quot;update&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -587,22 +664,20 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong> <code>OperationName contains &quot;PIM&quot;</code></p>
 <table>
 <thead>
 <tr>
   <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
-  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>OperationNameValue contains &quot;Insights&quot;</code></p>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>OperationName in &quot;Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;Add&quot;</code><br><code>OperationName contains &quot;Audit&quot;</code><br><code>OperationName contains &quot;Change&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Log&quot;</code><br><code>OperationName contains &quot;Monitor&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;Write&quot;</code><br><code>OperationName contains &quot;reset&quot;</code><br><code>OperationNameValue contains &quot;Insights&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -630,7 +705,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></p>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user&quot;</code><br><code>OperationName !contains &quot;external&quot;</code><br><code>OperationName !contains &quot;invite&quot;</code><br><code>OperationName !contains &quot;licnense&quot;</code><br><code>OperationName contains &quot;group&quot;</code><br><code>OperationName contains &quot;member&quot;</code><br><code>OperationName contains &quot;principal&quot;</code><br><code>OperationName contains &quot;role&quot;</code><br><code>OperationName contains &quot;user&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -643,7 +718,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>ActivityStatus in &quot;Accepted,Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>ActivityStatus in &quot;Accepted,Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user&quot;</code><br><code>OperationName in &quot;Set domain authentication,Set federation settings on domain,Sign-in activity&quot;</code><br><code>OperationName != &quot;Consent to application&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;delet&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName has &quot;Create&quot;</code><br><code>OperationName has_any &quot;Create,Update&quot;</code><br><code>OperationName has_any &quot;Ip,Security Rule&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -656,7 +731,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationNameValue contains &quot;cluster&quot;</code><br><code>OperationNameValue contains &quot;insights&quot;</code><br><code>OperationNameValue contains &quot;storage&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationNameValue contains &quot;cluster&quot;</code><br><code>OperationNameValue contains &quot;insights&quot;</code><br><code>OperationNameValue contains &quot;storage&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -669,7 +744,20 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>OperationName == &quot;Consent to application&quot;</code><br><code>OperationName == &quot;Disable Strong Authentication&quot;</code><br><code>OperationName contains &quot;password&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong></p>
 <table>
 <thead>
 <tr>
@@ -679,21 +767,8 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
-  <td style="text-align:left"></td>
-</tr>
-</tbody>
-</table>
-<p><strong>In solution <a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a>:</strong> <code>OperationName has_any &quot;Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user&quot;</code><br><code>OperationName has_any &quot;directory write,policy update,role assignment,role update&quot;</code></p>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Workbook</th>
-</tr>
-</thead>
-<tbody>
-<tr>
   <td style="text-align:left"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -712,7 +787,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
 <table>
 <thead>
 <tr>
@@ -722,6 +797,77 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azureactivity-31e8481e.html">AzureActivity</a></td>
+  <td style="text-align:left"><code>Level in &quot;Error,Informational,Warning&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azureservicehealthworkbook-c0a0870d.html">AzureServiceHealthWorkbook</a></td>
+  <td style="text-align:left"><code>CategoryValue == &quot;ServiceHealth&quot;</code><br><code>Level in &quot;Error,Information,Warning&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.html">AzureThreatResearchMatrixWorkbook</a></td>
+  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code><br><code>ActivityStatusValue in &quot;Accepted,Failed,Start,Succeeded,Success&quot;</code><br><code>ActivityStatusValue != &quot;Start&quot;</code><br><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>CategoryValue == &quot;Security&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE,Microsoft.Authorization/policies/deny/action,Microsoft.Authorization/policies/deployIfNotExists/action,Microsoft.Management&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.COMPUTE/SNAPSHOTS/WRITE,MICROSOFT.COMPUTE/VIRTUALMACHINES/EXTENSIONS/WRITE,MICROSOFT.MANAGEMENT/MANAGEMENTGROUPS/DELETE,MICROSOFT.MANAGEMENT/MANAGEMENTGROUPS/WRITE,MICROSOFT.RESOURCES/DEPLOYMENTS/VALIDATE/ACTION,MICROSOFT.RESOURCES/SUBSCRIPTIONS/RESOURCEGROUPS/MOVERESOURCES/ACTION,MICROSOFT.SERIALCONSOLE/SERIALPORTS/CONNECT/ACTION,Microsoft.Compute/disks/BeginGetAccess/action,Microsoft.ManagedServices/registrationAssignments/Write&quot;</code><br><code>OperationNameValue contains &quot;dnszones&quot;</code><br><code>OperationNameValue endswith &quot;write&quot;</code><br><code>OperationNameValue has_any &quot;ipfilterrules&quot;</code><br><code>Properties contains &quot;got moved from tenant&quot;</code><br><code>Properties contains &quot;publicipaddress&quot;</code><br><code>ResourceProviderValue == &quot;MICROSOFT.STORAGE&quot;</code><br><code>_ResourceId contains &quot;VMAccessWindowsPasswordReset&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-copilotforsecuritymonitoring-b67b6028.html">CopilotforSecurityMonitoring</a></td>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.SECURITYCOPILOT/CAPACITIES/WRITE,MICROSOFT.SECURITYCOPILOT/REGISTER/ACTION&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
+  <td style="text-align:left"><code>ResourceProvider == &quot;Microsoft.HybridCompute&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"><code>Caller contains &quot;@&quot;</code><br><code>OperationName in &quot;Add app role assignment grant to user,Add application,Add group,Add member to role,Add member to role completed (PIM activation),Add user,Create access package,Reset user password,Update conditional access policy,Update user,User requests access package assignment&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create access package&quot;</code><br><code>OperationName contains &quot;permanent&quot;</code><br><code>OperationName has &quot;User requests access package assignment&quot;</code><br><code>OperationName has &quot;application&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
+  <td style="text-align:left"><code>OperationName == &quot;Consent to application&quot;</code><br><code>OperationName == &quot;Disable Strong Authentication&quot;</code><br><code>OperationName contains &quot;password&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-playbookhealth-6ce06262.html">PlaybookHealth</a></td>
+  <td style="text-align:left"><code>OperationName == &quot;Microsoft.Logic/workflows/workflowRunCompleted&quot;</code><br><code>OperationName has &quot;Create&quot;</code><br><code>OperationName has &quot;Delete&quot;</code><br><code>OperationName has &quot;Disable&quot;</code><br><code>OperationName has &quot;Enable&quot;</code><br><code>OperationName has &quot;set&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowAction&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowRun&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowRunCompleted&quot;</code><br><code>OperationName startswith &quot;Microsoft.Logic/workflows/workflowTrigger&quot;</code><br><code>ResourceProviderValue in &quot;Microsoft.Logic,Microsoft.Web&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sensitiveoperationsinazureactivitylogreview-eb1864d3.html">SensitiveOperationsinAzureActivityLogReview</a></td>
+  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code><br><code>ActivityStatusValue in &quot;Accepted,Failed&quot;</code><br><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName == &quot;Create or Update Virtual Machine Extension&quot;</code><br><code>OperationNameValue in &quot;Microsoft.Authorization/policies/deny/action,Microsoft.Authorization/policies/deployIfNotExists/action&quot;</code><br><code>OperationNameValue in &quot;MICROSOFT.RESOURCES/DEPLOYMENTS/VALIDATE/ACTION,Microsoft.Compute/disks/BeginGetAccess/action,Microsoft.ManagedServices/registrationAssignments/Write&quot;</code><br><code>OperationNameValue contains &quot;dnszones&quot;</code><br><code>OperationNameValue endswith &quot;write&quot;</code><br><code>OperationNameValue has_any &quot;ipfilterrules&quot;</code><br><code>Properties contains &quot;publicipaddress&quot;</code><br><code>_ResourceId contains &quot;VMAccessWindowsPasswordReset&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-workspaceauditing-b4e840dd.html">WorkspaceAuditing</a></td>
+  <td style="text-align:left"><code>ActivityStatusValue contains &quot;Failed&quot;</code><br><code>ActivityStatusValue contains &quot;Succeeded&quot;</code><br><code>OperationNameValue contains &quot;SecurityInsights&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+  <td style="text-align:left"><code>Caller contains &quot;@&quot;</code><br><code>OperationName in &quot;Add app role assignment grant to user,Add application,Add group,Add member to role,Add member to role completed (PIM activation),Add user,Create access package,Reset user password,Update conditional access policy,Update user,User requests access package assignment&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create access package&quot;</code><br><code>OperationName contains &quot;permanent&quot;</code><br><code>OperationName has &quot;User requests access package assignment&quot;</code><br><code>OperationName has &quot;application&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -782,6 +928,8 @@
 <li><code>microsoft.networkcloud/storageappliances</code></li>
 <li><code>microsoft.network/loadbalancers</code></li>
 <li><code>microsoft.purview/accounts</code></li>
+<li><code>microsoft.quantum/provideraccounts</code></li>
+<li><code>microsoft.quantum/workspaces</code></li>
 <li><code>microsoft.recoveryservices/vaults</code></li>
 <li><code>microsoft.relay/namespaces</code></li>
 <li><code>microsoft.servicebus/namespaces</code></li>
@@ -801,6 +949,9 @@
 <li><code>microsoft.dbforpostgresql/flexibleservers</code></li>
 <li><code>microsoft.devcenter/devcenters</code></li>
 <li><code>microsoft.devopsinfrastructure/pools</code></li>
+<li><code>microsoft.discovery/bookshelves</code></li>
+<li><code>microsoft.discovery/supercomputers</code></li>
+<li><code>microsoft.discovery/workspaces</code></li>
 <li><code>microsoft.durabletask/schedulers</code></li>
 <li><code>microsoft.experimentation/experimentworkspaces</code></li>
 <li><code>microsoft.hdinsight/clusters</code></li>
@@ -812,6 +963,7 @@
 <li><code>microsoft.azureplaywrightservice/accounts</code></li>
 <li><code>microsoft.graph/tenants</code></li>
 <li><code>microsoft.networkanalytics/dataproducts</code></li>
+<li><code>microsoft.network/networkvirtualappliances</code></li>
 <li><code>microsoft.onlineexperimentation/workspaces</code></li>
 <li><code>microsoft.storage/storageaccounts</code></li>
 <li><code>microsoft.storagecache/amlfilesytems</code></li>
@@ -876,8 +1028,8 @@
 <li><code>microsoft.network/bastionhosts</code></li>
 <li><code>microsoft.healthcareapis/services</code></li>
 </ul>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (33 criteria, 39 total references)</h2>
-<p>References by type: 0 connectors, 38 content items, 1 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (39 criteria, 46 total references)</h2>
+<p>References by type: 0 connectors, 45 content items, 1 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -931,6 +1083,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -979,6 +1139,30 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Success&quot;</code><br><code>Caller has &quot;@&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue != &quot;MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE&quot;</code><br><code>OperationNameValue endswith &quot;/DELETE&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>OperationNameValue has_any &quot;/workspaces/computes/delete&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>CategoryValue == &quot;Administrative&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -996,14 +1180,6 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Accepted,Created,OK&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
-</tr>
-<tr>
-  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1075,6 +1251,22 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>OperationNameValue != &quot;Microsoft.Storage/storageAccounts/listKeys/action&quot;</code><br><code>ResourceGroup has &quot;cloud-shell-storage&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Level in &quot;Error,Informational,Warning&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
@@ -1099,7 +1291,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
+  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;lockbox&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName contains &quot;update&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1107,7 +1299,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationNameValue contains &quot;Insights&quot;</code></td>
+  <td style="text-align:left"><code>OperationName contains &quot;PIM&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1115,7 +1307,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></td>
+  <td style="text-align:left"><code>OperationName in &quot;Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;Add&quot;</code><br><code>OperationName contains &quot;Audit&quot;</code><br><code>OperationName contains &quot;Change&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Log&quot;</code><br><code>OperationName contains &quot;Monitor&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;Write&quot;</code><br><code>OperationName contains &quot;reset&quot;</code><br><code>OperationNameValue contains &quot;Insights&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1123,7 +1315,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatus in &quot;Accepted,Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code></td>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user&quot;</code><br><code>OperationName !contains &quot;external&quot;</code><br><code>OperationName !contains &quot;invite&quot;</code><br><code>OperationName !contains &quot;licnense&quot;</code><br><code>OperationName contains &quot;group&quot;</code><br><code>OperationName contains &quot;member&quot;</code><br><code>OperationName contains &quot;principal&quot;</code><br><code>OperationName contains &quot;role&quot;</code><br><code>OperationName contains &quot;user&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1131,7 +1323,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationNameValue contains &quot;cluster&quot;</code><br><code>OperationNameValue contains &quot;insights&quot;</code><br><code>OperationNameValue contains &quot;storage&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
+  <td style="text-align:left"><code>ActivityStatus in &quot;Accepted,Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user&quot;</code><br><code>OperationName in &quot;Set domain authentication,Set federation settings on domain,Sign-in activity&quot;</code><br><code>OperationName != &quot;Consent to application&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;delet&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName has &quot;Create&quot;</code><br><code>OperationName has_any &quot;Create,Update&quot;</code><br><code>OperationName has_any &quot;Ip,Security Rule&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1139,7 +1331,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName has_any &quot;Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user&quot;</code><br><code>OperationName has_any &quot;directory write,policy update,role assignment,role update&quot;</code></td>
+  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationNameValue contains &quot;cluster&quot;</code><br><code>OperationNameValue contains &quot;insights&quot;</code><br><code>OperationNameValue contains &quot;storage&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1147,7 +1339,15 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
+  <td style="text-align:left"><code>OperationName == &quot;Consent to application&quot;</code><br><code>OperationName == &quot;Disable Strong Authentication&quot;</code><br><code>OperationName contains &quot;password&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1157,10 +1357,10 @@
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>38</strong></td>
+  <td style="text-align:center"><strong>45</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>39</strong></td>
+  <td style="text-align:center"><strong>46</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1180,10 +1380,10 @@
 <tr>
   <td style="text-align:left"><code>Succeeded</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
+  <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Accepted</code></td>
@@ -1219,10 +1419,10 @@
 <tr>
   <td style="text-align:left"><code>Success</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
+  <td style="text-align:center">6</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:center"><strong>6</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>startswith Accept</code></td>
@@ -1233,7 +1433,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Accepted</code></td>
+  <td style="text-align:left"><code>has_any Succeeded</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Success</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1241,7 +1449,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Succeeded</code></td>
+  <td style="text-align:left"><code>Accepted</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1305,10 +1513,10 @@
 <tr>
   <td style="text-align:left"><code>has virtualMachines</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1328,10 +1536,10 @@
 <tr>
   <td style="text-align:left"><code>has @</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1435,12 +1643,132 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><code>Add member to role</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Reset user password</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains PIM</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains delete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains remove</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AzureFirewallIDSLog</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>NetworkSecurityGroupEvents</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Delete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>Create role assignment</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Create</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Remove</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains Update</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ApplicationGatewayFirewall</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Consent to application</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
   <td style="text-align:left"><code>Create or Update Virtual Machine Extension</code></td>
@@ -1451,7 +1779,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains delete</code></td>
+  <td style="text-align:left"><code>contains create</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1459,7 +1787,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains remove</code></td>
+  <td style="text-align:left"><code>contains lockbox</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1467,7 +1795,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Add directory role member</code></td>
+  <td style="text-align:left"><code>contains update</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1475,7 +1803,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Add member to role</code></td>
+  <td style="text-align:left"><code>contains Add</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1483,7 +1811,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Add user</code></td>
+  <td style="text-align:left"><code>contains Audit</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1491,7 +1819,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Create user</code></td>
+  <td style="text-align:left"><code>contains Change</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1499,7 +1827,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Role assignment</code></td>
+  <td style="text-align:left"><code>contains Log</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1507,7 +1835,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Update user</code></td>
+  <td style="text-align:left"><code>contains Monitor</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1515,7 +1843,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any directory write</code></td>
+  <td style="text-align:left"><code>contains Write</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1523,7 +1851,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any policy update</code></td>
+  <td style="text-align:left"><code>contains reset</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1531,7 +1859,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any role assignment</code></td>
+  <td style="text-align:left"><code>!contains external</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1539,7 +1867,183 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any role update</code></td>
+  <td style="text-align:left"><code>!contains invite</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!contains licnense</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains group</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains member</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains principal</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains role</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains user</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Create Deployment</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Create or Update Virtual Machine</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>List Storage Account Keys</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Set domain authentication</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Set federation settings on domain</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Sign-in activity</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= Consent to application</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains delet</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Create</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Create</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Update</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Ip</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any Security Rule</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Disable Strong Authentication</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>contains password</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>AzureFirewallThreatIntelLog</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1594,6 +2098,14 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
+  <td style="text-align:left"><code>Microsoft.Storage/storageAccounts/listKeys/action</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
   <td style="text-align:left"><code>endswith delete</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">2</td>
@@ -1602,15 +2114,15 @@
   <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.ADHybridHealthService/services/delete</code></td>
+  <td style="text-align:left"><code>Microsoft.Compute/virtualMachines/runCommand/action</code></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.Storage/storageAccounts/listKeys/action</code></td>
+  <td style="text-align:left"><code>Microsoft.ADHybridHealthService/services/delete</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1642,7 +2154,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>microsoft.storage/storageaccounts/listkeys/action</code></td>
+  <td style="text-align:left"><code>MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1650,7 +2162,39 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.Compute/virtualMachines/runCommand/action</code></td>
+  <td style="text-align:left"><code>!= MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>endswith /DELETE</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any /workspaces/computes/delete</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>microsoft.storage/storageaccounts/listkeys/action</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1683,6 +2227,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>has_any ipfilterrules</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>!= Microsoft.Storage/storageAccounts/listKeys/action</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
@@ -1801,6 +2353,14 @@
 <tbody>
 <tr>
   <td style="text-align:left"><code>has cloud-shell</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has cloud-shell-storage</code></td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>

@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "AmsiScriptContent"`<br>`AdditionalFields endswith "[mArS.deiMos]::inteRaCt()"`<br>`InitiatingProcessFileName == "powershell.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

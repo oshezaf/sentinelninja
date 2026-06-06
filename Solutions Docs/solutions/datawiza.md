@@ -19,7 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | Datawiza Technology Inc. - support@datawiza.com |
 | **First Published** | 2025-11-10 |
-| **Last Updated** | 2026-01-15 |
+| **Last Updated** | 2026-05-12 |
 | **Solution Folder** | [Datawiza](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Datawiza) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/datawiza.datawiza-sentinel-solution-dap) · Popularity: ⚪ Very Low (0%) |
 

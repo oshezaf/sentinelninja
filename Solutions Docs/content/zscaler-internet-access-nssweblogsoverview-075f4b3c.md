@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DestinationServiceName has_any "Microsoft"`<br>`DeviceEventClassID in "Allow,Allowed"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`RequestMethod != "None"`<br>`SourceUserPrivileges == "Road Warrior"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DestinationServiceName has_any "Microsoft"`<br>`DeviceEventClassID in "Allow,Allowed"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`RequestMethod != "None"`<br>`SourceUserPrivileges == "Road Warrior"` | ✓ | ✓ | ✓ |
 
 ---
 

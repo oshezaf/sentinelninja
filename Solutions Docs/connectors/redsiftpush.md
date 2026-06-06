@@ -1,6 +1,4 @@
-# ⚠️ Red Sift Events (CCP Push)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Red Sift Events (CCP Push)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/redsift_logo.svg" alt="" width="75" height="75">
 
@@ -19,6 +17,7 @@
 | **Connector Definition Files** | [RedSift_Definition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift/Data%20Connectors/RedSift_ccp/RedSift_Definition.json) |
 | **DCR Definition Files** | [RedSift_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift/Data%20Connectors/RedSift_ccp/RedSift_DCR.json) |
 | **Ingestion API** | [Log Ingestion API](../methods/log-ingestion-api.md) — *CCF Push connectors use DCR-based Log Ingestion API* |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#red-sift-events-ccp-push) |
 
 The [Red Sift](https://redsift.com/) connector provides the capability to ingest Red Sift authentication and email forensics events into Microsoft Sentinel using the CCP push model with DCE + DCR.
 
@@ -28,8 +27,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`RedSiftAuth_CL`](../tables/redsiftauth-cl.md) | ? | ✓ | ? |
-| [`RedSiftEmailForensics_CL`](../tables/redsiftemailforensics-cl.md) | ? | ✓ | ? |
+| [`RedSiftAuth_CL`](../tables/redsiftauth-cl.md) | ✗ | ✓ | ✗ |
+| [`RedSiftEmailForensics_CL`](../tables/redsiftemailforensics-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

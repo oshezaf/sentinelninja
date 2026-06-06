@@ -6,22 +6,24 @@
 
 ---
 
-> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
-
 DNS activity events from cloud infrastructure environments
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | XDR |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/clouddnsevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-clouddnsevents-table) |
 
-## Schema (22 columns)
+## Schema (27 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/clouddnsevents)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | ActionType | string | Type of activity that triggered the event |
 | AdditionalFields | dynamic | Additional information about the entity or event |
 | AwsResourceName | string | Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name |
@@ -42,8 +44,11 @@ DNS activity events from cloud infrastructure environments
 | ProcessId | long | Process ID that initiated the DNS query |
 | ProcessName | string | The name of the process that initiated the DNS query |
 | ReportId | string | Unique identifier for the event |
-| Timestamp | datetime | Date and time when the event was recorded |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | TransactionIdHex | string | The DNS unique hex transaction ID |
+| Type | string | The name of the table |
 
 ---
 

@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `NewValue contains "CreateObject"`<br>`NewValue contains "Execute("`<br>`NewValue contains "RegRead"`<br>`NewValue contains "RunHTMLApplication"`<br>`NewValue contains "jscript"`<br>`NewValue contains "mshtml"`<br>`NewValue contains "mshtml,"`<br>`NewValue contains "vbscript"`<br>`NewValue contains "window.close"`<br>`ObjectName !has "\\Run"`<br>`ObjectName has "\\CurrentVersion"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `NewValue contains "CreateObject"`<br>`NewValue contains "Execute("`<br>`NewValue contains "RegRead"`<br>`NewValue contains "RunHTMLApplication"`<br>`NewValue contains "jscript"`<br>`NewValue contains "mshtml"`<br>`NewValue contains "mshtml,"`<br>`NewValue contains "vbscript"`<br>`NewValue contains "window.close"`<br>`ObjectName !has "\\Run"`<br>`ObjectName has "\\CurrentVersion"` | ✓ | ✓ | ✓ |
 
 ---
 

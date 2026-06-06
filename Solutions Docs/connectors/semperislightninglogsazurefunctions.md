@@ -27,12 +27,12 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`LightningAttackPathLinks_CL`](../tables/lightningattackpathlinks-cl.md) | ? | ✓ | ? |
-| [`LightningAttackPaths_CL`](../tables/lightningattackpaths-cl.md) | ? | ✓ | ? |
-| [`LightningIOEResults_CL`](../tables/lightningioeresults-cl.md) | ? | ✓ | ? |
+| [`LightningAttackPaths_CL`](../tables/lightningattackpaths-cl.md) | ✗ | ✓ | ✗ |
+| [`LightningIOEResults_CL`](../tables/lightningioeresults-cl.md) | ✗ | ✓ | ✗ |
 | [`LightningIOEsMetadata_CL`](../tables/lightningioesmetadata-cl.md) | ? | ✓ | ? |
 | [`LightningIndicatorExecutions_CL`](../tables/lightningindicatorexecutions-cl.md) | ? | ✓ | ? |
 | [`LightningTier0Attackers_CL`](../tables/lightningtier0attackers-cl.md) | ? | ✓ | ? |
-| [`LightningTier0Nodes_CL`](../tables/lightningtier0nodes-cl.md) | ? | ✓ | ? |
+| [`LightningTier0Nodes_CL`](../tables/lightningtier0nodes-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

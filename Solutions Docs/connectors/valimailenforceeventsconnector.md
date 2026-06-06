@@ -1,6 +1,4 @@
-# ⚠️ Valimail Enforce Configuration Events
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# Valimail Enforce Configuration Events
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/valimail.svg" alt="" width="75" height="75">
 
@@ -20,6 +18,7 @@
 | **DCR Definition Files** | [ValimailEnforceEventLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce/Data%20Connectors/ValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_DCR.json) |
 | **CCF Configuration** | [ValimailEnforceEventLogs_PollerConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce/Data%20Connectors/ValimailEnforceEventLogs_ccp/ValimailEnforceEventLogs_PollerConfig.json) |
 | **CCF Capabilities** | `JwtToken`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#valimail-enforce-configuration-events) |
 
 The [Valimail Configuration Events](https://support.valimail.com/en/articles/13133390-microsoft-sentinel) data connector allows ingesting email domain's configuration events from the Valimail's Reporting API into Microsoft Sentinel. The data connector is built on Microsoft Sentinel Codeless Connector Platform.
 
@@ -29,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ValimailEnforceEvents_CL`](../tables/valimailenforceevents-cl.md) | ? | ✓ | ? |
+| [`ValimailEnforceEvents_CL`](../tables/valimailenforceevents-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

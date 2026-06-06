@@ -18,7 +18,6 @@
 | **DCR Definition Files** | [ImpervaCloudWAFLogs_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF/Data%20Connectors/ImpervaCloudWAFLogs_ccf/ImpervaCloudWAFLogs_DCR.json) |
 | **CCF Configuration** | [ImpervaCloudWAFLogs_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ImpervaCloudWAF/Data%20Connectors/ImpervaCloudWAFLogs_ccf/ImpervaCloudWAFLogs_PollingConfig.json) |
 | **CCF Capabilities** | `AmazonWebServicesS3` |
-| **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#imperva-cloud-waf-via-codeless-connector-framework) |
 
 The Imperva WAF Cloud data connector provides the capability to ingest logs into Microsoft Sentinel using the Imperva Log Integration via AWS S3 with SQS notifications. The connector parses CEF-formatted WAF events including access logs and security alerts for threat detection and investigation.Refer to [Imperva WAF Cloud Log Integration](https://docs.imperva.com/bundle/cloud-application-security/page/settings/log-integration.htm) for more information.
@@ -30,8 +29,6 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) |  | ? | ✓ | ? |
-| [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 |  | ? | ✓ | ? |
-| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | `AttackSeverity != "0"` | ✓ | ✗ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

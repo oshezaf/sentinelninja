@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine matchesregex "-[Ee^]{1,2}[NnCcOoDdEeMmAaPpHh^`]+\\s+\"`<br>`NewProcessName endswith "powershell.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine matchesregex "-[Ee^]{1,2}[NnCcOoDdEeMmAaPpHh^`]+\\s+\"`<br>`NewProcessName endswith "powershell.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

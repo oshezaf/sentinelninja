@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | `SrcIpAddr !startswith "10."`<br>`SrcIpAddr !startswith "172."`<br>`SrcIpAddr !startswith "192.168"` | ✓ | ✗ | ? |
+| [`CopilotActivity`](../tables/copilotactivity.md) | `SrcIpAddr !startswith "10."`<br>`SrcIpAddr !startswith "172."`<br>`SrcIpAddr !startswith "192.168"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -1,6 +1,8 @@
-# Atlassian Confluence Audit
+# ⚠️ Atlassian Confluence Audit
 
 *Solution: AtlassianConfluenceAudit*
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="AtlassianConfluenceAudit Logo" width="75" height="75">
 
@@ -19,8 +21,9 @@
 | **Version** | 3.0.7 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-24 |
+| **Last Updated** | 2026-05-13 |
 | **Solution Folder** | [AtlassianConfluenceAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianConfluenceAudit) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianconfluenceaudit) · Popularity: 🔵 Medium (76%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-atlassianconfluenceaudit) · Popularity: 🔵 Medium (72%) |
 
 The [Atlassian Confluence Audit](https://www.atlassian.com/software/confluence) solution provides the capability to ingest [Confluence Audit Records](https://support.atlassian.com/confluence-cloud/docs/view-the-audit-log/) into Microsoft Sentinel.
 

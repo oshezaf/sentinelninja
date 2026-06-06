@@ -1,0 +1,59 @@
+# AzureSQLErrors
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+
+---
+
+Reference for AzureSQLErrors table in Azure Monitor Logs.
+
+| Attribute | Value |
+|:----------|:------|
+| **Category** | Workloads |
+| **Basic Logs Eligible** | ✗ No |
+| **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlerrors) |
+
+## Schema (21 columns)
+
+**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlerrors)
+
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
+| Category | string | Log category. |
+| DatabaseName | string | Database name. |
+| ElasticPoolName | string | Elastic pool name. |
+| ErrorNumber | int | Error number. |
+| Location | string | Azure region location. |
+| Message | string | Error message. |
+| OperationName | string | Operation name. |
+| QueryHash | string | Query hash. |
+| QueryPlanHash | string | Query plan hash. |
+| ResourceGroup | string | Resource group. |
+| Severity | int | Error severity level. |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| State | int | Error state. |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Timestamp when the log was generated. |
+| Type | string | The name of the table |
+| UserDefined | int | User defined error flag. |
+
+---
+
+## Resource Types
+
+This table collects data from the following Azure resource types:
+
+- `microsoft.sql/servers`
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Tables Index](../tables-index.md)
+

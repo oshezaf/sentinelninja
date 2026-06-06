@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) 🔶 | ? | ✓ | ? |
+| [`ZimperiumThreatLog_CL`](../tables/zimperiumthreatlog-cl.md) 🔶 | ✗ | ✓ | ✗ |
 
 ---
 

@@ -16,7 +16,7 @@ Reference for DeviceCustomScriptEvents table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomscriptevents) |
 
-## Schema (40 columns)
+## Schema (45 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomscriptevents)
 
@@ -42,16 +42,21 @@ Reference for DeviceCustomScriptEvents table in Azure Monitor Logs.
 | InitiatingProcessParentCreationTime | datetime | Date and time when the parent of the process responsible for the event was started. |
 | InitiatingProcessParentFileName | string | Name of the parent process that spawned the process responsible for the event. |
 | InitiatingProcessParentId | long | Process ID (PID) of the parent process that spawned the process responsible for the event. |
+| InitiatingProcessRemoteSessionDeviceName | string | Device name of the remote device from which the initiating process's RDP session was initiated. |
+| InitiatingProcessRemoteSessionIP | string | IP address of the remote device from which the initiating process's RDP session was initiated. |
+| InitiatingProcessSessionId | long | Windows session ID of the initiating process. |
 | InitiatingProcessSHA1 | string | SHA-1 hash of the process (image file) that initiated the event. |
 | InitiatingProcessSHA256 | string | SHA-256 hash of the process (image file) that initiated the event. This field is usually not populated - use the SHA1 column when available. |
 | InitiatingProcessSignatureStatus | string | Information about the signature status of the process (image file) that initiated the event. |
 | InitiatingProcessSignerType | string | Type of file signer of the process (image file) that initiated the event. |
+| InitiatingProcessUniqueId | string | Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices. |
 | InitiatingProcessVersionInfoCompanyName | string | Company name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoFileDescription | string | Description from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoInternalFileName | string | Internal file name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoOriginalFileName | string | Original file name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductName | string | Product name from the version information of the process (image file) responsible for the event. |
 | InitiatingProcessVersionInfoProductVersion | string | Product version from the version information of the process (image file) responsible for the event. |
+| IsInitiatingProcessRemoteSession | bool | Indicates whether the initiating process was run under a remote desktop protocol (RDP) session (true) or locally (false). |
 | ReportId | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
 | RuleLastModificationTime | datetime | Date and time when the rule that collected the event was last modified. |
 | RuleName | string | Name of the rule that collected the event |

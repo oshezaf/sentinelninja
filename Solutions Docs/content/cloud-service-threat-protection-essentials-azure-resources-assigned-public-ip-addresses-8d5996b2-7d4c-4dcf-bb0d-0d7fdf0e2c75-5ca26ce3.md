@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue has_any "Succeeded"`<br>`Properties contains "publicipaddress"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue has_any "Succeeded"`<br>`Properties contains "publicipaddress"` | ✗ | ✗ | ✗ |
 | [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---

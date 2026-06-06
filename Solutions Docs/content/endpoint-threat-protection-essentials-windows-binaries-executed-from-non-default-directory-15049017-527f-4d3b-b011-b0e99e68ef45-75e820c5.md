@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"`<br>`NewProcessName has "C:\\Windows\\"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `EventID == "4688"`<br>`NewProcessName has "C:\\Windows\\"` | ✓ | ✓ | ✓ |
 
 ---
 

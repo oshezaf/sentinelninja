@@ -27,6 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`BitSightBreaches_CL`](../tables/bitsightbreaches-cl.md) |  | ? | ✓ | ? |
 | [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) |  | ? | ✓ | ? |
 
 ---

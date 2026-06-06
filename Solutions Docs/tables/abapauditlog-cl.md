@@ -26,13 +26,14 @@ This table is used by the following solutions:
 
 - [SAP](../solutions/sap.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) |  |
+| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) |  |
 
 ---
 

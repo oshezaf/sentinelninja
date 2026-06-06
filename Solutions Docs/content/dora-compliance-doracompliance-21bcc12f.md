@@ -20,11 +20,11 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
-| [`Event`](../tables/event.md) | `EventID in "1001,1069,1205"`<br>`EventLevelName == "Error"`<br>`RenderedDescription has_any "failover"` | ✓ | ✓ | ? |
+| [`Event`](../tables/event.md) | `EventID in "1001,1069,1205"`<br>`EventLevelName == "Error"`<br>`RenderedDescription has_any "failover"` | ✓ | ✓ | ✗ |
 | [`Heartbeat`](../tables/heartbeat.md) |  | ? | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `AlertName has_any "Backup Failure"`<br>`AlertName has_any "Blocked"`<br>`AlertName has_any "Compliance Violation"`<br>`AlertName has_any "Credential Access"`<br>`AlertName has_any "Data Exfiltration"`<br>`AlertName has_any "Incident Reported"`<br>`AlertName has_any "Malware"`<br>`AlertName has_any "Policy Change"`<br>`AlertName has_any "Service Outage"`<br>`AlertName has_any "Suspicious Login"`<br>`AlertName has_any "TLPT"`<br>`AlertName has_any "Third-Party"`<br>`AlertName has_any "Threat Intelligence"`<br>`AlertName has_any "Unauthorized Access"`<br>`AlertName has_any "Vulnerability Exploitation"` | ✓ | ✗ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | ✓ | ✓ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName has_any "Backup Failure"`<br>`AlertName has_any "Blocked"`<br>`AlertName has_any "Compliance Violation"`<br>`AlertName has_any "Credential Access"`<br>`AlertName has_any "Data Exfiltration"`<br>`AlertName has_any "Incident Reported"`<br>`AlertName has_any "Malware"`<br>`AlertName has_any "Policy Change"`<br>`AlertName has_any "Service Outage"`<br>`AlertName has_any "Suspicious Login"`<br>`AlertName has_any "TLPT"`<br>`AlertName has_any "Third-Party"`<br>`AlertName has_any "Threat Intelligence"`<br>`AlertName has_any "Unauthorized Access"`<br>`AlertName has_any "Vulnerability Exploitation"` | ✓ | ✗ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | ✓ | ✓ | ✗ |
 
 ---
 

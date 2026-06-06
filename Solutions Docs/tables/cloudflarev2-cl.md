@@ -8,7 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✓ Yes |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -609,7 +611,7 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [Cloudflare](../content/cloudflare-ccf-cloudflare-fc7a6590.md) |  |
+| [CloudflareCCF](../content/cloudflare-ccf-cloudflareccf-cd0e56db.md) |  |
 
 ## Parsers Using This Table (2)
 

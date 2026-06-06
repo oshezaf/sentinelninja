@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DestinationIP has ":"`<br>`DeviceVendor == "SonicWall"`<br>`Protocol !contains "/"`<br>`Protocol contains "-"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DestinationIP has ":"`<br>`DeviceVendor == "SonicWall"`<br>`Protocol !contains "/"`<br>`Protocol contains "-"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -6,7 +6,7 @@
 
 ---
 
-This query shows failed login attempts where username is unknown.
+This query identifies Slack failed login attempts where the username has not been observed in successful login activity during the baseline period.
 
 | Attribute | Value |
 |:----------|:------|
@@ -15,7 +15,7 @@ This query shows failed login attempts where username is unknown.
 | **ID** | `b62b5a97-41e5-47cb-9b90-aa079f65f0c0` |
 | **Severity** | Medium |
 | **Tactics** | CredentialAccess |
-| **Techniques** | T1110 |
+| **Techniques** | T1110, T1110.003 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditFailedLoginsUnknownUsername.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

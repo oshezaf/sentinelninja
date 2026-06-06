@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚠️ OpenAI via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<title>OpenAI via Codeless Connector Framework &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,10 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="openai">⚠️ OpenAI (via Codeless Connector Framework)</h1>
-<blockquote>
-<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
-</blockquote>
+<h1 id="openai">OpenAI (via Codeless Connector Framework)</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OpenAI.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -64,6 +61,10 @@
   <td style="text-align:left"><strong>CCF Capabilities</strong></td>
   <td style="text-align:left"><code>APIKey</code>, <code>Paging</code></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#openai-via-codeless-connector-framework">View on Learn</a></td>
+</tr>
 </tbody>
 </table>
 <p>The OpenAI data connector enables you to ingest audit logs, chat completion data, or both from your OpenAI organization into Microsoft Sentinel through the OpenAI API. Each data type uses a separate REST API poller and requires a different API key type: <strong>audit logs</strong> (user actions, API key management, organization changes, security events) require an <strong>organization-level admin API key</strong>, while <strong>chat completions</strong> (model usage, token consumption, performance metrics) require a <strong>project-level API key</strong>. You may configure one or both data types independently. Audit logs are collected into the custom OpenAIAuditLogs_CL table (aliased by the OpenAIAuditLogs parser). Chat completions are normalized into the ASimAgentEventLogs standard ASIM table (aliased by the OpenAIChatCompletions parser) for security monitoring, compliance analysis, and usage monitoring. Refer to <a href="https://platform.openai.com/docs/api-reference">OpenAI API documentation</a> for more information.</p>
@@ -84,7 +85,7 @@
   <td style="text-align:left"><a href="../tables/asimagenteventlogs.html"><code>ASimAgentEventLogs</code></a></td>
   <td style="text-align:left"><code>EventProduct == &quot;OpenAI API Platform&quot;</code><br><code>EventType == &quot;ChatCompletion&quot;</code><br><code>EventVendor == &quot;OpenAI&quot;</code></td>
   <td style="text-align:center">?</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>

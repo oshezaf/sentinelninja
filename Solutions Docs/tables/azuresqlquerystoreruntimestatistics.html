@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AzureSQLQueryStoreRuntimeStatistics &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="azuresqlquerystoreruntimestatistics">AzureSQLQueryStoreRuntimeStatistics</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for AzureSQLQueryStoreRuntimeStatistics table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Workloads</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlquerystoreruntimestatistics">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (47 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlquerystoreruntimestatistics">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Log category.</td>
+</tr>
+<tr>
+  <td style="text-align:left">count_executions</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Count of executions.</td>
+</tr>
+<tr>
+  <td style="text-align:left">cpu_time</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">CPU time in microseconds.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DatabaseName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Database name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">dop</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Degree of parallelism.</td>
+</tr>
+<tr>
+  <td style="text-align:left">duration</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Duration in microseconds.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElasticPoolName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Elastic pool name if applicable.</td>
+</tr>
+<tr>
+  <td style="text-align:left">execution_type</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Execution type.</td>
+</tr>
+<tr>
+  <td style="text-align:left">interval_end_time</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Interval end time.</td>
+</tr>
+<tr>
+  <td style="text-align:left">interval_start_time</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Interval start time.</td>
+</tr>
+<tr>
+  <td style="text-align:left">is_primary</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Is primary replica.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure region location.</td>
+</tr>
+<tr>
+  <td style="text-align:left">log_bytes_used</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Log bytes used.</td>
+</tr>
+<tr>
+  <td style="text-align:left">logical_io_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Logical IO reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">logical_io_writes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Logical IO writes.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_cpu_time</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum CPU time in microseconds.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_dop</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum degree of parallelism.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_duration</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum duration in microseconds.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_log_bytes_used</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum log bytes used.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_logical_io_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum logical IO reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_logical_io_writes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum logical IO writes.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_num_physical_io_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum number of physical IO reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_page_server_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum page server reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_physical_io_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum physical IO reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_query_max_used_memory</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum query maximum used memory.</td>
+</tr>
+<tr>
+  <td style="text-align:left">max_rowcount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Maximum row count.</td>
+</tr>
+<tr>
+  <td style="text-align:left">num_physical_io_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of physical IO reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Operation name.</td>
+</tr>
+<tr>
+  <td style="text-align:left">page_server_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Page server reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">physical_io_reads</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Physical IO reads.</td>
+</tr>
+<tr>
+  <td style="text-align:left">plan_id</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Plan identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">query_hash</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Query hash.</td>
+</tr>
+<tr>
+  <td style="text-align:left">query_id</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Query identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">query_max_used_memory</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Query maximum used memory.</td>
+</tr>
+<tr>
+  <td style="text-align:left">query_plan_hash</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Query plan hash.</td>
+</tr>
+<tr>
+  <td style="text-align:left">replica_group_id</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Replica group identifier.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource group.</td>
+</tr>
+<tr>
+  <td style="text-align:left">rowcount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Row count.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">statement_sql_handle</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Statement SQL handle.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the log was generated.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="resource-types">Resource Types</h2>
+<p>This table collects data from the following Azure resource types:</p>
+<ul>
+<li><code>microsoft.sql/servers</code></li>
+</ul>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

@@ -28,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | ✓ | ✓ | ? |
+| [`CrowdStrikeAlerts`](../tables/crowdstrikealerts.md) | ✓ | ✓ | ✓ |
 | [`CrowdStrikeCases`](../tables/crowdstrikecases.md) | ✓ | ✓ | ? |
 | [`CrowdStrikeDetections`](../tables/crowdstrikedetections.md) | ✓ | ✓ | ? |
 | [`CrowdStrikeHosts`](../tables/crowdstrikehosts.md) | ✓ | ✓ | ? |
@@ -51,16 +51,13 @@ This connector ingests data into the following tables:
 **1. Connect CrowdStrike to Microsoft Sentinel**
 
 ℹ️ **Important Notice:** The Incidents API is fully decommissioned. Use the new Cases data type instead.
-To gather data from CrowdStrike, you need to provide the following resources
-**1. Base API URL** - To gather data from CrowdStrike, you'll need the Base API URL.
-**2. Client ID** - To gather data from CrowdStrike, you'll need the Client ID.
-**3. Client Secret** - To gather data from CrowdStrike, you'll need the Client Secret.
-For detailed instructions on retrieving the Base API URL, Client ID, and Client Secret, please refer to the [Connector Tutorial](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/README.md).
 **Connector Management Interface**
 
 This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
 
 📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
+- **Connector Alias**
+- **CrowdStrike Base URL**
 - **Data Type**
 
 ➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
@@ -78,13 +75,22 @@ When you click the "Add Connection" button in the portal, a configuration form w
 #### Required API Scopes
 In your CrowdStrike Falcon console, go to **Support and resources > API clients and keys**, select your API client, and enable the following scopes with **Read** access: **Alerts**, **Cases**, **Detections**, **Hosts**, **Spotlight Vulnerabilities**.
 
-#### 1. Retrieve API URL
+#### 1. Retrieve API URL and Client Credentials
 Log in to your CrowdStrike Console and navigate to the API section to copy your Base API URL.
-
-#### 2. Retrieve Client Credentials
 Obtain your Client ID and Client Secret from the API credentials section in your CrowdStrike account.
 
+For detailed instructions on retrieving the Base API URL, Client ID, and Client Secret, please refer to the [Connector Tutorial](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdStrikeAPI_ccp/README.md).
+
+- **Connection Alias** (required): Production or Sandbox
 - **Base API URL** (required): https://api.us-2.crowdstrike.com
+- **Data Types** (required): Select from available options
+  - Alerts - Prevention alerts
+  - Cases - Incident response cases
+  - Detections - Endpoint detections
+  - Hosts - Managed device inventory
+  - Vulnerabilities - Spotlight vulnerability findings
+*OAuth2 Credentials*
+
 - **Client ID** (required): Your Client ID
 - **Client Secret** (required): Your Client Secret
 

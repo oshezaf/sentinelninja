@@ -1,6 +1,4 @@
-# ⚠️ GravityZone Data Connector
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# GravityZone Data Connector
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Bitdefender.svg" alt="" width="75" height="75">
 
@@ -17,6 +15,7 @@
 | **Used in Solutions** | [GravityZone](../solutions/gravityzone.md) |
 | **Collection Method** | [Unknown (Custom Log)](../methods/unknown-custom-log.md) |
 | **Connector Definition Files** | [GravityZone_API.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GravityZone/Data%20Connectors/GravityZone_API.json) |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#gravityzone-data-connector) |
 
 This connector enables integration between **Bitdefender GravityZone** and **Microsoft Sentinel** through the **Event Push Service API**. Once configured, it streams all GravityZone event types directly into your Microsoft Sentinel workspace, where they are stored as logs in the `GzSecurityEvents_CL` table.
 
@@ -30,7 +29,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`GzSecurityEvents_CL`](../tables/gzsecurityevents-cl.md) | ? | ✓ | ? |
+| [`GzSecurityEvents_CL`](../tables/gzsecurityevents-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

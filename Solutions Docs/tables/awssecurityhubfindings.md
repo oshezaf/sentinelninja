@@ -14,6 +14,7 @@ Reference for AWSSecurityHubFindings table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awssecurityhubfindings) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -81,7 +82,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (12)
 
 ### Analytic Rules (8)
 
@@ -108,9 +109,17 @@ This table is ingested by the following connectors:
 | [AWS Security Hub - EC2 instances with public IPv4 address](../content/aws-security-hub-aws-security-hub-ec2-instances-with-public-ipv4-address-2b7f9e4e-6c3a-4c8f-9b1d-1a2f3e4c5d6b-a62da3c4.md) | `AwsSecurityFindingGeneratorId == "security-control/EC2.9"`<br>`ComplianceSecurityControlId == "EC2.9"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` |
 | [AWS Security Hub - IAM users with console password and no MFA](../content/aws-security-hub-aws-security-hub-iam-users-with-console-password-and-no-mfa-d5818873-a2ab-4467-8e97-60fe56ca10cc-19aaeb10.md) | `AwsSecurityFindingGeneratorId == "security-control/IAM.5"`<br>`ComplianceSecurityControlId == "IAM.5"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` |
 
-## Selection Criteria Summary (4 criteria, 11 total references)
+### Workbooks (1)
 
-References by type: 0 connectors, 11 content items, 0 ASIM parsers, 0 other parsers.
+**In solution [AWS Security Hub](../solutions/aws-security-hub.md):** `ComplianceStatus in "FAILED,PASSED"`<br>`RecordState == "ACTIVE"`
+
+| Workbook |
+|:-------------|
+| [AWSSecurityHubComplianceWorkbook](../content/aws-security-hub-awssecurityhubcomplianceworkbook-1ae5d23d.md) |
+
+## Selection Criteria Summary (5 criteria, 12 total references)
+
+References by type: 0 connectors, 12 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -118,7 +127,8 @@ References by type: 0 connectors, 11 content items, 0 ASIM parsers, 0 other pars
 | `AwsSecurityFindingGeneratorId == "security-control/CloudTrail.4"`<br>`ComplianceSecurityControlId == "CloudTrail.4"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` | - | 1 | - | - | **1** |
 | `AwsSecurityFindingGeneratorId == "security-control/EC2.9"`<br>`ComplianceSecurityControlId == "EC2.9"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` | - | 1 | - | - | **1** |
 | `AwsSecurityFindingGeneratorId == "security-control/IAM.5"`<br>`ComplianceSecurityControlId == "IAM.5"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **11** | **0** | **0** | **11** |
+| `ComplianceStatus in "FAILED,PASSED"`<br>`RecordState == "ACTIVE"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **12** | **0** | **0** | **12** |
 
 ### AwsSecurityFindingGeneratorId
 
@@ -140,13 +150,14 @@ References by type: 0 connectors, 11 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `FAILED` | - | 11 | - | - | **11** |
+| `FAILED` | - | 12 | - | - | **12** |
+| `PASSED` | - | 1 | - | - | **1** |
 
 ### RecordState
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `ACTIVE` | - | 11 | - | - | **11** |
+| `ACTIVE` | - | 12 | - | - | **12** |
 
 ---
 

@@ -1,6 +1,6 @@
-# ⚠️ ValimailEnforce
+# valimail-sentinel-enforce
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: ValimailEnforce*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/valimail.svg" alt="ValimailEnforce Logo" width="75" height="75">
 
@@ -19,7 +19,9 @@
 | **Version** | 3.0.0 |
 | **Author** | Valimail - support@valimail.com |
 | **First Published** | 2026-03-31 |
+| **Last Updated** | 2026-05-04 |
 | **Solution Folder** | [ValimailEnforce](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ValimailEnforce) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/valimail.azure-sentinel-solution-valimail-enforce-events) · Popularity: 🟢 High (81%) |
 
 The [Valimail API](https://support.valimail.com/en/articles/10911206-api-overview) solution provides ability to bring the Valimail Configuration events to your Microsoft Sentinel Workspace to inform and to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more. 
 

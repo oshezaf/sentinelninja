@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
-| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | `EventOriginalType == "PowerAppPermissionEdited"`<br>`SourceSystem == "Azure AD"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
+| [`PowerPlatformAdminActivity`](../tables/powerplatformadminactivity.md) | `EventOriginalType == "PowerAppPermissionEdited"`<br>`SourceSystem == "Azure AD"` | ✓ | ✗ | ✓ |
 
 ---
 

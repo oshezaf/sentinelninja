@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`SquidProxy_CL`](../tables/squidproxy-cl.md) 🔶 |  | ✓ | ✓ | ✓ |
 
 ## Parameters
 

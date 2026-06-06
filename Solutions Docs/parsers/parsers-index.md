@@ -8,7 +8,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 ---
 
-**562 parsers** (35 legacy, 493 solution, 34 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**568 parsers** (35 legacy, 499 solution, 34 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 *Legacy parsers are located in the top-level `/Parsers` folder. Solution parsers are included within specific solution packages.*
 
@@ -117,17 +117,19 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
 | [Bitglass](bitglass.md) | 📦 [Bitglass](../solutions/bitglass.md) | BitglassLogs_CL |
-| [BitSightAlerts](bitsightalerts.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightAlerts_data_CL |
-| [BitSightBreaches](bitsightbreaches.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightBreaches_data_CL |
-| [BitSightCompanyDetails](bitsightcompanydetails.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightCompany_details_CL |
-| [BitSightCompanyRatings](bitsightcompanyratings.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightCompany_rating_details_CL |
-| [BitSightDiligenceHistoricalStatistics](bitsightdiligencehistoricalstatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightDiligence_historical_statistics_CL |
-| [BitSightDiligenceStatistics](bitsightdiligencestatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightDiligence_statistics_CL |
-| [BitSightFindingsData](bitsightfindingsdata.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightFindings_data_CL |
-| [BitSightFindingsSummary](bitsightfindingssummary.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightFindings_summary_CL |
-| [BitSightGraphData](bitsightgraphdata.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightGraph_data_CL |
-| [BitSightIndustrialStatistics](bitsightindustrialstatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightIndustrial_statistics_CL |
-| [BitSightObservationStatistics](bitsightobservationstatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightObservation_statistics_CL |
+| [BitSightAlerts](bitsightalerts.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightAlerts_CL, BitsightAlerts_data_CL |
+| [BitSightBreaches](bitsightbreaches.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightBreaches_CL, BitsightBreaches_data_CL |
+| [BitSightCompanyDetails](bitsightcompanydetails.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightCompanyDetails_CL, BitsightCompany_details_CL |
+| [BitSightCompanyRatingDetails](bitsightcompanyratingdetails.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightCompanyRatingDetails_CL |
+| [BitSightCompanyRatings](bitsightcompanyratings.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightCompanyRatingDetails_CL, BitsightCompany_rating_details_CL |
+| [BitSightDiligenceHistoricalStatistics](bitsightdiligencehistoricalstatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightDiligenceHistoricalStatistics_CL, BitsightDiligence_historical_statistics_CL |
+| [BitSightDiligenceStatistics](bitsightdiligencestatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightDiligenceStatistics_CL, BitsightDiligence_statistics_CL |
+| [BitSightFindingsData](bitsightfindingsdata.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightFindings_CL, BitsightFindings_data_CL |
+| [BitSightFindingsSummary](bitsightfindingssummary.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightFindingsSummary_CL, BitsightFindings_summary_CL, ... |
+| [BitSightGraphData](bitsightgraphdata.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightCompanyDetails_CL, BitsightGraph_data_CL |
+| [BitSightIndustrialStatistics](bitsightindustrialstatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightIndustrialStatistics_CL, BitsightIndustrial_statistics_CL |
+| [BitSightObservationStatistics](bitsightobservationstatistics.md) | 📦 [BitSight](../solutions/bitsight.md) | BitSightObservationStatistics_CL, BitsightObservation_statistics_CL |
+| [BitSightVulnerabilitiesFindingsSummary](bitsightvulnerabilitiesfindingssummary.md) | 📦 [BitSight](../solutions/bitsight.md) | BitsightVulnerabilitiesFindingsSummary_CL |
 | [BitwardenEventLogs](bitwardeneventlogs.md) | 📦 [Bitwarden](../solutions/bitwarden.md) | BitwardenEventLogs_CL, BitwardenGroups_CL, ... |
 | [BoxEvents](boxevents.md) | 📦 [Box](../solutions/box.md) | BoxEventsV2_CL, BoxEvents_CL |
 
@@ -143,7 +145,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [CBS_SubdomainInfringement](cbs-subdomaininfringement.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBS_SubdomainInfringement_AzureV2_CL, CBS_SubdomainInfringement_CL |
 | [CBSLog](cbslog.md) ⚠️ | 📦 [CTM360](../solutions/ctm360.md) | CBSLog_AzureV2_CL, CBSLog_Azure_1_CL |
 | [CGFWFirewallActivity](cgfwfirewallactivity.md) | 📦 [Barracuda CloudGen Firewall](../solutions/barracuda-cloudgen-firewall.md) | Syslog |
-| [Cisco_Umbrella](cisco-umbrella.md) | 📦 [CiscoUmbrella](../solutions/ciscoumbrella.md) | Cisco_Umbrella_audit_CL, Cisco_Umbrella_cloudfirewall_CL, ... |
+| [Cisco_Umbrella](cisco-umbrella.md) | 📦 [CiscoUmbrella](../solutions/ciscoumbrella.md) | CiscoUmbrellaAdminAudit_CL, CiscoUmbrellaCloudFirewall_CL, ... |
 | [CiscoACIEvent](ciscoacievent.md) | 📦 [Cisco ACI](../solutions/cisco-aci.md) | Syslog |
 | [CiscoDuo](ciscoduo.md) | 📦 [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) | CiscoDuo_CL |
 | [CiscoISEEvent](ciscoiseevent.md) | 📦 [Cisco ISE](../solutions/cisco-ise.md) | Syslog |
@@ -165,6 +167,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [ContrastADR_Incident](contrastadr-incident.md) | 📦 [ContrastADR](../solutions/contrastadr.md) | ContrastADRIncidents_CL |
 | [Corelight](corelight.md) | 📦 [Corelight](../solutions/corelight.md) | ? |
 | [corelight_anomaly](corelight-anomaly.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_anomaly_CL |
+| [corelight_asset_classification](corelight-asset-classification.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_asset_classification_CL |
 | [corelight_bacnet](corelight-bacnet.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_bacnet_CL |
 | [corelight_capture_loss](corelight-capture-loss.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_capture_loss_CL |
 | [corelight_cip](corelight-cip.md) | 📦 [Corelight](../solutions/corelight.md) | Corelight_v2_cip_CL |
@@ -292,10 +295,10 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [CriblInternal](criblinternal.md) | 📦 [Cribl](../solutions/cribl.md) | CriblInternal_CL |
 | [CriblUIAccess](cribluiaccess.md) | 📦 [Cribl](../solutions/cribl.md) | CriblUIAccess_CL |
 | [CrowdStrikeFalconEventStream](crowdstrikefalconeventstream.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CommonSecurityLog |
-| [CrowdStrikeReplicator](crowdstrikereplicator.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdstrikeReplicatorLogs_CL |
-| [CrowdStrikeReplicator](crowdstrikereplicator.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdstrikeReplicatorLogs_CL |
+| [CrowdStrikeReplicator](crowdstrikereplicator.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
+| [CrowdStrikeReplicator](crowdstrikereplicator.md) ⚠️ | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | CrowdStrikeReplicatorV2, CrowdstrikeReplicatorLogs_CL |
 | [CrowdStrikeReplicatorV2](crowdstrikereplicatorv2.md) | 📦 [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md) | ASimAuditEventLogs, ASimAuthenticationEventLogs, ... |
-| [CyberArkEPM](cyberarkepm.md) | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) | CyberArkEPM_CL |
+| [CyberArkEPM](cyberarkepm.md) | 📦 [CyberArkEPM](../solutions/cyberarkepm.md) | CyberArkEPM_Events_CL |
 | [CyjaxCorrelate](cyjaxcorrelate.md) | 📦 [Cyjax](../solutions/cyjax.md) | ThreatIntelIndicators |
 | [CyjaxThreatIndicator](cyjaxthreatindicator.md) | 📦 [Cyjax](../solutions/cyjax.md) | ThreatIntelIndicators |
 | [CylancePROTECT](cylanceprotect.md) | 📦 [Blackberry CylancePROTECT](../solutions/blackberry-cylanceprotect.md) | Syslog, syslog |
@@ -378,11 +381,14 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
+| [FilewallM365ExchangeEvent](filewallm365exchangeevent.md) | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) | FilewallExchange_CL |
+| [FilewallM365FileEvent](filewallm365fileevent.md) | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) | FilewallFile_CL |
 | [FireEyeNXEvent](fireeyenxevent.md) | 📦 [FireEye Network Security](../solutions/fireeye-network-security.md) | CommonSecurityLog |
 | [ForescoutEvent](forescoutevent.md) | 📦 [Forescout (Legacy)](../solutions/forescout-legacy.md) | Syslog |
 | [ForgeRockParser](forgerockparser.md) | 📦 [ForgeRock Common Audit for CEF](../solutions/forgerock-common-audit-for-cef.md) | CommonSecurityLog |
 | [Fortinet_FortiNDR_Cloud](fortinet-fortindr-cloud.md) | 📦 [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) | FncEventsDetections_CL, FncEventsObservation_CL, ... |
 | [Fortiweb](fortiweb.md) | 📦 [Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel](../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.md) | CommonSecurityLog |
+| [FortyTwoCrunchAPIProtection](fortytwocrunchapiprotection.md) | 📦 [42Crunch API Protection](../solutions/42crunch-api-protection.md) | FortyTwoCrunchAPIProtectionV2_CL, apifirewall_log_1_CL |
 
 ## G
 

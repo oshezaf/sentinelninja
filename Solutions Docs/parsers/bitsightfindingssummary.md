@@ -13,8 +13,8 @@
 | Title | Parser for BitSightFindingsSummary |
 | Location | Solution |
 | Solution | [BitSight](../solutions/bitsight.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 1.1.0 |
+| Last Updated | 2026-05-25 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight/Parsers/BitSightFindingsSummary.yaml) |
@@ -25,7 +25,9 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`BitSightFindingsSummary_CL`](../tables/bitsightfindingssummary-cl.md) | ? | ✓ | ? |
 | [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | ? | ✓ | ? |
+| [`BitsightVulnerabilitiesFindingsSummary_CL`](../tables/bitsightvulnerabilitiesfindingssummary-cl.md) | ? | ✓ | ? |
 
 ---
 

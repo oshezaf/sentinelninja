@@ -16,6 +16,12 @@ Reference for AppServiceAppLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceapplogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Content Items](#content-items-using-this-table)
+- [Resource Types](#resource-types)
+
 ## Schema (22 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceapplogs)
@@ -46,6 +52,16 @@ Reference for AppServiceAppLogs table in Azure Monitor Logs.
 | WebSiteInstanceId | string | Instance Id the application running |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

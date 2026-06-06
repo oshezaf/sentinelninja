@@ -1,6 +1,6 @@
 # Analytic Rules - F
 
-**49 analytic rules** starting with 'F'.
+**51 analytic rules** starting with 'F'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -38,6 +38,8 @@
 | [File Server Settings Updated](veeam-file-server-settings-updated-62008da4-627e-47fe-b78a-62e1e23b3eb9-ffb6279a.md) | Informational | 📦 [Veeam](../solutions/veeam.md) |
 | [File Share Deleted](veeam-file-share-deleted-7ddaf8ef-b726-408b-b1a7-a7a4f92cbf6d-eddf1816.md) | High | 📦 [Veeam](../solutions/veeam.md) |
 | [Files Copied to USB Drives](microsoft-defender-xdr-files-copied-to-usb-drives-3ab04acf-e0e7-4f7c-8995-748ab4c848c2-7d23d298.md) | High | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
+| [Filewall - Blocked emails](filewall-for-microsoft-365-filewall-blocked-emails-9b784b65-2d16-4c9f-9f59-2a5d4c659f42-395f5a5b.md) | High | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
+| [Filewall - Blocked files](filewall-for-microsoft-365-filewall-blocked-files-86e7f6fd-5c29-4a3a-bced-3eca3fb0c621-7c0054b4.md) | High | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
 | [Firewall errors stateful anomaly on database](azure-sql-database-solution-for-sentinel-firewall-errors-stateful-anomaly-on-database-20f87813-3de0-4a9f-a8c0-6aaa3187be08-b973d4ce.md) | Medium | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Firewall rule manipulation attempts stateful anomaly on database](azure-sql-database-solution-for-sentinel-firewall-rule-manipulation-attempts-stateful-anomaly-on-databas-05030ca6-ef66-42ca-b672-2e84d4aaf5d7-c6bd8fb4.md) | Medium | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Firmware Updates (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-firmware-updates-microsoft-defender-for-iot-7cad4b66-5e83-4756-8de4-f21315ab1e77-3b526082.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |

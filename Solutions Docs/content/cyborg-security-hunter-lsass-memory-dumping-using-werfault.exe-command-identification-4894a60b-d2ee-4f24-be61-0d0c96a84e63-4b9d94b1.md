@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `NewProcessName endswith "werfault.exe"`<br>`ObjectName endswith "lsass.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `NewProcessName endswith "werfault.exe"`<br>`ObjectName endswith "lsass.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

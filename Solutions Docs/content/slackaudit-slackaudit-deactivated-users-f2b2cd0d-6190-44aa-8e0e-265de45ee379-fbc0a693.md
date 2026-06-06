@@ -6,7 +6,7 @@
 
 ---
 
-This query searches for deactivated user accounts.
+This hunt searches for Slack user deactivation events to surface potential administrative abuse, insider activity, or account compromise response actions.
 
 | Attribute | Value |
 |:----------|:------|
@@ -15,7 +15,7 @@ This query searches for deactivated user accounts.
 | **ID** | `f2b2cd0d-6190-44aa-8e0e-265de45ee379` |
 | **Severity** | Medium |
 | **Tactics** | Impact |
-| **Techniques** | T1531 |
+| **Techniques** | T1531, T1098.003 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditDeactivatedUsers.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

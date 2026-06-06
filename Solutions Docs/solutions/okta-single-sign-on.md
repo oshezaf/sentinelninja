@@ -19,9 +19,9 @@
 | **Version** | 3.1.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-24 |
-| **Last Updated** | 2026-01-14 |
+| **Last Updated** | 2026-04-30 |
 | **Solution Folder** | [Okta Single Sign-On](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Okta%20Single%20Sign-On) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-okta) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (88%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-okta) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (90%) |
 
 The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) solution for Microsoft Sentinel provides the capability to ingest [audit and event logs](https://www.okta.com/integrate/documentation/isv-syslog-references/) into Microsoft Sentinel using the Okta API.
   
@@ -47,12 +47,11 @@ The [Okta Single Sign-On (SSO)](https://www.okta.com/products/single-sign-on) so
 
 ## Data Connectors
 
-This solution provides **2 data connector(s)** (plus 2 discovered⚠️):
+This solution provides **2 data connector(s)** (plus 1 discovered⚠️):
 
 - [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) 🔶
 - [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) ⚠️
-- [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) 🔶
-- [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) ⚠️ 🔶
+- [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md)
 
 > 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
@@ -66,8 +65,8 @@ This solution uses **3 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`OktaNativePoller_CL`](../tables/oktanativepoller-cl.md) | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) | - |
-| [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md), [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) | Analytics, Hunting, Workbooks |
-| [`Okta_CL`](../tables/okta-cl.md) 🔶 | [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md), [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md), [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) | Analytics, Hunting, Workbooks |
+| [`OktaV2_CL`](../tables/oktav2-cl.md) | [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) | Analytics, Hunting, Workbooks |
+| [`Okta_CL`](../tables/okta-cl.md) 🔶 | [[DEPRECATED] Okta Single Sign-On (using Azure Function)](../connectors/oktasso.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.

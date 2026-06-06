@@ -52,7 +52,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (52 columns)</h2>
+<h2 id="schema">Schema (53 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicecustomnetworkevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -207,6 +207,11 @@
   <td style="text-align:left">InitiatingProcessTokenElevation</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the initiating process.</td>
+</tr>
+<tr>
+  <td style="text-align:left">InitiatingProcessUniqueId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the initiating process; this is equal to the Process Start Key in Windows devices.</td>
 </tr>
 <tr>
   <td style="text-align:left">InitiatingProcessVersionInfoCompanyName</td>

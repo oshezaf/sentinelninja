@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `ApplicationProtocol startswith "TCP"`<br>`ApplicationProtocol startswith "UDP"`<br>`DestinationServiceName in "Application-Unknown,Generic-Web-HTTP,Unknown-Encrypted-Application"`<br>`DeviceEventClassID in "70734,76508,76509"`<br>`DeviceEventClassID != "0"`<br>`DeviceEventClassID !in "70383,70393,70734,71009,71040"`<br>`DeviceProduct == "Firewall"`<br>`DeviceVendor == "FORCEPOINT"`<br>`RequestMethod != "UNKNOWN"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `ApplicationProtocol startswith "TCP"`<br>`ApplicationProtocol startswith "UDP"`<br>`DestinationServiceName in "Application-Unknown,Generic-Web-HTTP,Unknown-Encrypted-Application"`<br>`DeviceEventClassID in "70734,76508,76509"`<br>`DeviceEventClassID != "0"`<br>`DeviceEventClassID !in "70383,70393,70734,71009,71040"`<br>`DeviceProduct == "Firewall"`<br>`DeviceVendor == "FORCEPOINT"`<br>`RequestMethod != "UNKNOWN"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -1,4 +1,6 @@
-# 🚫 🔍 [DEPRECATED] Cisco Secure Endpoint (AMP)
+# 🚫 ⚠️ 🔍 [DEPRECATED] Cisco Secure Endpoint (AMP)
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 

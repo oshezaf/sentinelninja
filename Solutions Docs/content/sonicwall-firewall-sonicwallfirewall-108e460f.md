@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity in "Anti-Spyware Detection Alert,Anti-Spyware Prevention Alert,Application Control Detection Alert,Application Control Prevention Alert,IPS Detection Alert,IPS Prevention Alert,Website Blocked"`<br>`Computer != "127.0.0.1"`<br>`DeviceVendor == "SonicWall"`<br>`Protocol !contains "/"`<br>`Protocol contains "-"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity in "Anti-Spyware Detection Alert,Anti-Spyware Prevention Alert,Application Control Detection Alert,Application Control Prevention Alert,IPS Detection Alert,IPS Prevention Alert,Website Blocked"`<br>`Computer != "127.0.0.1"`<br>`DeviceVendor == "SonicWall"`<br>`Protocol !contains "/"`<br>`Protocol contains "-"` | ✓ | ✓ | ✓ |
 
 ---
 

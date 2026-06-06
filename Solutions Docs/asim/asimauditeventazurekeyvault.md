@@ -32,7 +32,7 @@ This parser reads from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AZKVAuditLogs`](../tables/azkvauditlogs.md) |  | ✓ | ✗ | ? |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` | ? | ✗ | ? |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "AuditEvent"`<br>`ResourceType == "VAULTS"` | ✗ | ✗ | ✗ |
 
 ## Parameters
 

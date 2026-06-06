@@ -6,6 +6,13 @@
 
 ---
 
+| Attribute | Value |
+|:----------|:------|
+| **Custom Log V1** | Yes 🔶 — uses type-suffixed column names |
+| **Supports Transformations** | ✗ No |
+| **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
+
 ## Schema (23 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/Infoblox_Failed_Indicators_CL.json)

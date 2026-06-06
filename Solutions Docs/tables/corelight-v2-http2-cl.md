@@ -70,7 +70,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (15)
+## Content Items Using This Table (14)
 
 ### Analytic Rules (6)
 
@@ -97,14 +97,13 @@ This table is ingested by the following connectors:
 | [Corelight - Rare PUT or POST](../content/corelight-corelight-rare-put-or-post-9aab6aac-6dad-4749-b8cf-46840b6d978f-dfc675f6.md) |  |
 | [Corelight - Top sources of data transferred](../content/corelight-corelight-top-sources-of-data-transferred-c5f3974b-f411-4a06-a3f8-ee14fcadd0e1-363c440b.md) |  |
 
-### Workbooks (4)
+### Workbooks (3)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Corelight](../content/corelight-corelight-90dad195.md) |  |
-| [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |
 | [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
 | [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
 

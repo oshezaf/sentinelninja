@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `AdditionalExtensions contains "SUSPICIOUS"`<br>`DeviceVendor == "Contrast Security"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `AdditionalExtensions contains "SUSPICIOUS"`<br>`DeviceVendor == "Contrast Security"` | ✓ | ✓ | ✓ |
 
 ---
 

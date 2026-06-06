@@ -47,7 +47,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Azure Advanced Threat Protection"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Azure Advanced Threat Protection"` | ✓ | ✗ | ✓ |
 
 ## Permissions
 

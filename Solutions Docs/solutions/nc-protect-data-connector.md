@@ -19,6 +19,7 @@
 | **Version** | 3.0.0 |
 | **Author** | archTIS |
 | **First Published** | 2021-10-20 |
+| **Last Updated** | 2026-06-05 |
 | **Solution Folder** | [NC Protect Data Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NC%20Protect%20Data%20Connector) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nucleuscyber.nc-protect-azure-sentinel-data-connector) · Popularity: 🔵 Medium (68%) |
 
@@ -63,6 +64,19 @@ This solution includes **1 content item(s)**:
 | Name | Tables Used |
 |:-----|:------------|
 | [NucleusCyber_NCProtect_Workbook](../content/nc-protect-data-connector-nucleuscyber-ncprotect-workbook-14169a8f.md) | [`NCProtectUAL_CL`](../tables/ncprotectual-cl.md) |
+
+## Release Notes
+
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
+|-------------|--------------------------------|--------------------|
+| 3.0.0       | 15-01-2026                     | Added **NRT Analytic Rule** (DownloadRateHighRule) that creates Microsoft Sentinel security incidents when a user's document download rate exceeds a configurable threshold within a defined time window. Added four **Automation Rules** (High, Medium, Low, Informational) that dynamically set incident severity based on watchlist configuration. Added **Watchlist** (NCP File Download Monitoring / NCPFDM) for externally configurable detection thresholds (download count, time window, severity). Renamed solution from "archTIS" to "NC Protect Data Connector". |
+| 2.0.2       | 20-10-2021                     | Updated **Data Connector** version |
+| 2.0.1       | 20-10-2021                     | Updated **Data Connector** configuration |
+| 2.0.0       | 20-10-2021                     | Updated **Data Connector** and **Workbook** |
+| 1.1.0       | 20-10-2021                     | Added **Workbook** for NC Protect user activity logs |
+| 1.0.2       | 20-10-2021                     | Updated **Data Connector** |
+| 1.0.1       | 20-10-2021                     | Updated **Data Connector** |
+| 1.0.0       | 20-10-2021                     | Initial solution release |
 
 ---
 

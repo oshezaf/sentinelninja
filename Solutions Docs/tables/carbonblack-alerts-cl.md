@@ -8,7 +8,9 @@
 
 | Attribute | Value |
 |:----------|:------|
+| **Supports Transformations** | ✗ No |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✗ No ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 
 ## Contents
 
@@ -101,13 +103,12 @@ This table is used by the following solutions:
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
 | [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
 
 ---

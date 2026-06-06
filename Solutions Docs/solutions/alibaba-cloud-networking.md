@@ -19,7 +19,7 @@
 | **First Published** | 2026-02-12 |
 | **Last Updated** | 2026-04-07 |
 | **Solution Folder** | [Alibaba Cloud Networking](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Alibaba%20Cloud%20Networking) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud-networking) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-alibabacloud-networking) · Popularity: 🔵 Medium (75%) |
 
 The Microsoft Sentinel solution for Alibaba Cloud Networking enables seamless integration of Alibaba Cloud network data into Sentinel. It empowers security teams to monitor network activity, detect threats, and investigate incidents across Alibaba Cloud environments—enhancing visibility and security posture in multi-cloud deployments.
 
@@ -28,6 +28,14 @@ The Microsoft Sentinel solution for Alibaba Cloud Networking enables seamless in
 This solution provides **1 data connector(s)**:
 
 - [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md)
+
+## Tables Used
+
+This solution uses **1 table(s)**:
+
+| Table | Used By Connectors | Used By Content |
+|-------|-------------------|----------------|
+| [`AlibabaCloudVPCFlowLogs`](../tables/alibabacloudvpcflowlogs.md) | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md) | - |
 
 ## Release Notes
 

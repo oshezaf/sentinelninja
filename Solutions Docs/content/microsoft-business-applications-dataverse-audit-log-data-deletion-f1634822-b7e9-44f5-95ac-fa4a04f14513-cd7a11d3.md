@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message in "DeleteAuditData,DeleteRecordChangeHistory"` | ✓ | ✗ | ? |
+| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message in "DeleteAuditData,DeleteRecordChangeHistory"` | ✓ | ✗ | ✓ |
 
 ---
 

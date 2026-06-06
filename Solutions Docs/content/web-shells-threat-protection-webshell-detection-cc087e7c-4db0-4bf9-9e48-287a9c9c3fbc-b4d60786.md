@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`W3CIISLog`](../tables/w3ciislog.md) | `csMethod == "GET"`<br>`csReferer has "whoami"`<br>`csUriQuery has "whoami"`<br>`csUriStem has "whoami"` | ✓ | ✗ | ? |
+| [`W3CIISLog`](../tables/w3ciislog.md) | `csMethod == "GET"`<br>`csReferer has "whoami"`<br>`csUriQuery has "whoami"`<br>`csUriStem has "whoami"` | ✓ | ✗ | ✗ |
 
 ---
 

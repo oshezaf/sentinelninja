@@ -19,7 +19,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`Malware_Data_CL`](../tables/malware-data-cl.md) |  | ? | ✓ | ? |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | `SourceSystem == "Cofense Intelligence"` | ✓ | ✓ | ? |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | `SourceSystem == "Cofense Intelligence"` | ✓ | ✓ | ✗ |
 
 ---
 

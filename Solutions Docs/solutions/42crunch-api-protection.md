@@ -14,7 +14,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://42crunch.com/](https://42crunch.com/) |
 | **Categories** | domains |
-| **Version** | 2.0.3 |
+| **Version** | 3.0.1 |
 | **Author** | 42Crunch - plugins@42crunch.com |
 | **First Published** | 2022-09-21 |
 | **Solution Folder** | [42Crunch API Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection) |
@@ -29,19 +29,21 @@ The [42Crunch](https://42crunch.com/) API Protection solution protects APIs by i
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [API Protection](../connectors/42crunchapiprotection.md) 🔶
+- [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md) | [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | Analytics, Workbooks |
 | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) 🔶 | [API Protection](../connectors/42crunchapiprotection.md) | Analytics, Workbooks |
 
 
@@ -49,39 +51,47 @@ This solution uses **1 table(s)**:
 
 ## Content Items
 
-This solution includes **12 content item(s)**:
+This solution includes **13 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 11 |
 | Workbooks | 1 |
+| Parsers | 1 |
 
 ### Analytic Rules
 
 | Name | Severity | Tactics | Tables Used |
 |:-----|:---------|:--------|:------------|
-| [API - API Scraping](../content/42crunch-api-protection-api-api-scraping-d944d564-b6fa-470d-b5ab-41b341878c5e-a52c8975.md) | High | Reconnaissance, Collection | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Account Takeover](../content/42crunch-api-protection-api-account-takeover-25c86f99-0a91-4b7f-88f3-599a008e5ab8-6d2b117c.md) | High | CredentialAccess, Discovery | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Anomaly Detection](../content/42crunch-api-protection-api-anomaly-detection-2c59e609-e0a0-4e8e-adc5-ab4224be8a36-33e8704d.md) | Low | Reconnaissance | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - BOLA](../content/42crunch-api-protection-api-bola-1b047dc3-a879-4f99-949b-d1dc867efc83-209dd431.md) | Medium | Exfiltration | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Invalid host access](../content/42crunch-api-protection-api-invalid-host-access-28500be7-cfcf-40e1-bad4-bc524e9283e2-d314655b.md) | Low | Reconnaissance | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - JWT validation](../content/42crunch-api-protection-api-jwt-validation-bbd163f4-1f56-434f-9c23-b06713c119c2-c3a5eaee.md) | Low | InitialAccess, CredentialAccess | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Kiterunner detection](../content/42crunch-api-protection-api-kiterunner-detection-421b38ec-4295-4aed-8299-c92e268ad663-56f29884.md) | Medium | Reconnaissance, Discovery | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Password Cracking](../content/42crunch-api-protection-api-password-cracking-d951d64d-0ecd-4675-8c79-6c870d5f72ac-693d5746.md) | High | CredentialAccess | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Rate limiting](../content/42crunch-api-protection-api-rate-limiting-c6258d51-7b82-4942-8293-94c1dcf91595-4ec87f01.md) | Low | Discovery, InitialAccess | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Rate limiting](../content/42crunch-api-protection-api-rate-limiting-b808063b-07d5-432c-95d0-8900da61cce9-3103815b.md) | Medium | Impact | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
-| [API - Suspicious Login](../content/42crunch-api-protection-api-suspicious-login-7bdc10d6-aa24-4ca9-9a93-802cd8761354-d5428b70.md) | High | CredentialAccess, InitialAccess | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - API Scraping](../content/42crunch-api-protection-api-api-scraping-d944d564-b6fa-470d-b5ab-41b341878c5e-a52c8975.md) | High | Reconnaissance, Collection | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Account Takeover](../content/42crunch-api-protection-api-account-takeover-25c86f99-0a91-4b7f-88f3-599a008e5ab8-6d2b117c.md) | High | CredentialAccess, Discovery | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Anomaly Detection](../content/42crunch-api-protection-api-anomaly-detection-2c59e609-e0a0-4e8e-adc5-ab4224be8a36-33e8704d.md) | Low | Reconnaissance | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - BOLA](../content/42crunch-api-protection-api-bola-1b047dc3-a879-4f99-949b-d1dc867efc83-209dd431.md) | Medium | Exfiltration | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Invalid host access](../content/42crunch-api-protection-api-invalid-host-access-28500be7-cfcf-40e1-bad4-bc524e9283e2-d314655b.md) | Low | Reconnaissance | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - JWT validation](../content/42crunch-api-protection-api-jwt-validation-bbd163f4-1f56-434f-9c23-b06713c119c2-c3a5eaee.md) | Low | InitialAccess, CredentialAccess | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Kiterunner detection](../content/42crunch-api-protection-api-kiterunner-detection-421b38ec-4295-4aed-8299-c92e268ad663-56f29884.md) | Medium | Reconnaissance, Discovery | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Password Cracking](../content/42crunch-api-protection-api-password-cracking-d951d64d-0ecd-4675-8c79-6c870d5f72ac-693d5746.md) | High | CredentialAccess | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Rate limiting](../content/42crunch-api-protection-api-rate-limiting-c6258d51-7b82-4942-8293-94c1dcf91595-4ec87f01.md) | Low | Discovery, InitialAccess | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Rate limiting](../content/42crunch-api-protection-api-rate-limiting-b808063b-07d5-432c-95d0-8900da61cce9-3103815b.md) | Medium | Impact | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [API - Suspicious Login](../content/42crunch-api-protection-api-suspicious-login-7bdc10d6-aa24-4ca9-9a93-802cd8761354-d5428b70.md) | High | CredentialAccess, InitialAccess | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
 
 ### Workbooks
 
 | Name | Tables Used |
 |:-----|:------------|
-| [42CrunchAPIProtectionWorkbook](../content/42crunch-api-protection-42crunchapiprotectionworkbook-5ba91507.md) | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+| [42CrunchAPIProtectionWorkbook](../content/42crunch-api-protection-42crunchapiprotectionworkbook-5ba91507.md) | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md)<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) |
+
+### Parsers
+
+| Name | Description | Tables Used |
+|:-----|:------------|:------------|
+| [FortyTwoCrunchAPIProtection](../parsers/fortytwocrunchapiprotection.md) | - | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md) *(read)*<br>[`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) *(read)* |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.1       | 25-05-2026                     | Added CCF Push **Data Connector** (OAuth2/Entra ID via DCE/DCR) alongside legacy connector; added backward-compatible **Parser** (`FortyTwoCrunchAPIProtection`) supporting both `apifirewall_log_1_CL` and `FortyTwoCrunchAPIProtectionV2_CL` schemas. Updated all 11 **Analytic Rules** to use the parser alias and PascalCase column names, added Migration Guide with end-to-end validated `ccf-forwarder` sample deployment, and refreshed **Workbook** metadata. |
 | 3.0.0       | 15-07-2024                     |	Missing Tactics and Techniques added     						|
 
 ---

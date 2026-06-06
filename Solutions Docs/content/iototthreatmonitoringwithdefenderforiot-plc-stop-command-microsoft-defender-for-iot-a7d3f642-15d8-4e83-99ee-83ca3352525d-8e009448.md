@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "IoTSecurity"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "IoTSecurity"` | ✓ | ✗ | ✓ |
 
 ---
 

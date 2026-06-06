@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine contains ".onion"`<br>`CommandLine contains "http"`<br>`CommandLine contains "paste."`<br>`CommandLine has_any "pastebin"`<br>`Process has "powershell.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine contains ".onion"`<br>`CommandLine contains "http"`<br>`CommandLine contains "paste."`<br>`CommandLine has_any "pastebin"`<br>`Process has "powershell.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

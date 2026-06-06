@@ -25,7 +25,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `CommandLine has "/s"`<br>`EventID == "4688"`<br>`NewProcessName == "C:\\Windows\\System32\\schtasks.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

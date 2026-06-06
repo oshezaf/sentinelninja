@@ -17,7 +17,7 @@ Reference for UCDOStatus table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucdostatus) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
-## Schema (36 columns)
+## Schema (37 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ucdostatus)
 
@@ -34,6 +34,7 @@ Reference for UCDOStatus table in Azure Monitor Logs.
 | BytesFromGroupPeers | long | Total number of bytes downloaded from group peers. |
 | BytesFromIntPeers | long | Total number of bytes downloaded from internet peers. |
 | BytesFromPeers | long | Total number of bytes downloaded from peers. |
+| CacheNodeDetails | dynamic | An array of cache node details associated with this device, including cache node identifier, date, and bytes served. |
 | City | string | Approximate city device was in while downloading content, based on IP address. |
 | ContentDownloadMode | int | Device's delivery optimization download mode that was used for this content. |
 | ContentType | string | The type of content being downloaded. |

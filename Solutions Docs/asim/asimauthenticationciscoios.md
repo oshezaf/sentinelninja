@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "%SEC_LOGIN-4-LOGIN_FAILED"`<br>`SyslogMessage has "%SEC_LOGIN-5-LOGIN_SUCCESS"`<br>`SyslogMessage has "%SYS-6-LOGOUT"` | ✓ | ✓ | ? |
+| [`Syslog`](../tables/syslog.md) | `SyslogMessage has "%SEC_LOGIN-4-LOGIN_FAILED"`<br>`SyslogMessage has "%SEC_LOGIN-5-LOGIN_SUCCESS"`<br>`SyslogMessage has "%SYS-6-LOGOUT"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

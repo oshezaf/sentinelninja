@@ -16,7 +16,6 @@
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
 | **Connector Definition Files** | [CrowdstrikeReplicatorV2_ConnectorUI.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/Data%20Connectors/CrowdstrikeReplicatorCLv2/CrowdstrikeReplicatorV2_ConnectorUI.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Connector definition requires workspace key (SharedKey pattern)* |
-| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#crowdstrike-falcon-data-replicator-crowdstrike-managed-aws-s3-using-azure-functions) |
 
 This connector enables the ingestion of FDR data into Microsoft Sentinel using Azure Functions to support the assessment of potential security risks, analysis of collaboration activities, identification of configuration issues, and other operational insights.<p><span style='color:red; font-weight:bold;'>NOTE:</span></p><div style='margin-left:20px;'><p>1. CrowdStrike FDR license must be available & enabled.</p><p>2. The connector uses a Key & Secret based authentication and is suitable for CrowdStrike Managed buckets.</p><p>3. For environments that use a fully owned AWS S3 bucket, Microsoft recommends using the <strong>CrowdStrike Falcon Data Replicator (AWS S3)</strong> connector.</p></div>
 
@@ -26,20 +25,20 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) |  | ? | ✓ | ? |
-| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) |  | ✓ | ✓ | ? |
-| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ✓ | ✓ | ? |
-| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) |  | ? | ✓ | ? |
-| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) |  | ✓ | ✓ | ✓ |
+| [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) |  | ✓ | ✓ | ? |
+| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ? | ✓ | ? |
+| [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) |  | ✓ | ✓ | ? |
 | [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) |  | ? | ✓ | ? |
-| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | ? | ✓ | ? |
+| [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | ✓ | ✓ | ✓ |
 | [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) |  | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

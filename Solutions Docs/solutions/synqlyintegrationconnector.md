@@ -21,7 +21,7 @@
 | **First Published** | 2026-01-30 |
 | **Last Updated** | 2026-03-13 |
 | **Solution Folder** | [SynqlyIntegrationConnector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SynqlyIntegrationConnector) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/synqlyinc1759267074521.azure-sentinel-solution-synqly-integration) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/synqlyinc1759267074521.azure-sentinel-solution-synqly-integration) · Popularity: 🟡 Low (10%) |
 
 The Synqly Integration Connector for Microsoft Sentinel enables push-based ingestion of security events using ASIM normalization across 10 event types.
 

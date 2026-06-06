@@ -6,7 +6,7 @@
 
 ---
 
-This query searches for potentialy suspicious files downloads.
+This query searches for potentially suspicious file downloads in Slack audit data by flagging downloaded filenames that contain multiple dot-separated segments and an unusually short non-numeric middle token.
 
 | Attribute | Value |
 |:----------|:------|
@@ -15,7 +15,7 @@ This query searches for potentialy suspicious files downloads.
 | **ID** | `31e54776-f2db-4465-b951-410880e009ad` |
 | **Severity** | Medium |
 | **Tactics** | InitialAccess |
-| **Techniques** | T1189 |
+| **Techniques** | T1189, T1566, T1204 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditSuspiciousFilesDownloaded.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

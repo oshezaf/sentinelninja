@@ -18,22 +18,22 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ? |
-| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ? |
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
 | [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ | ? |
-| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ? |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | ? | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | ✓ | ✗ | ✓ |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityInsights has "True"` | ✓ | ✗ | ? |
 | [`LAQueryLogs`](../tables/laquerylogs.md) | `RequestClientApp != "Sentinel-General"` | ✓ | ✗ | ? |
-| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | `LabelName !in "General"` | ✓ | ✗ | ? |
-| [`OfficeActivity`](../tables/officeactivity.md) | `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`ExternalAccess == "True"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`Parameters contains "ForwardTo"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | ✓ | ✗ | ? |
+| [`MicrosoftPurviewInformationProtection`](../tables/microsoftpurviewinformationprotection.md) | `LabelName !in "General"` | ✓ | ✗ | ✓ |
+| [`OfficeActivity`](../tables/officeactivity.md) | `ClientInfoString == "Client=Microsoft.Exchange.Powershell; Microsoft WinRM Client"`<br>`ExternalAccess == "True"`<br>`Logon_Type != "Owner"`<br>`OfficeObjectId has ".exe."`<br>`OfficeWorkload == "Exchange"`<br>`OfficeWorkload in "AzureActiveDirectory,MicrosoftTeams"`<br>`OfficeWorkload has_any "Exchange,OneDrive"`<br>`OfficeWorkload has_any "OneDrive,SharePoint"`<br>`Parameters contains "ForwardTo"`<br>`Parameters has "Deleted Items"`<br>`Parameters has "Junk Email"`<br>`RecordType in "ExchangeAdmin,SharePointFileOperation"`<br>`SourceRelativeUrl has "Microsoft Teams Chat Files"` | ✓ | ✗ | ✓ |
 | [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
-| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"` | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ? |
-| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ? |
-| [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ? |
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) |  | ✓ | ✗ | ✓ |
+| [`SecurityAlert`](../tables/securityalert.md) | `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"` | ✓ | ✗ | ✓ |
+| [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
+| [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
+| [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
 
 ---
 

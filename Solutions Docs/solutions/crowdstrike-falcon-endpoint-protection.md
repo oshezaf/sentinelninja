@@ -14,12 +14,10 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.3.4 |
+| **Version** | 3.3.6 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
-| **Last Updated** | 2026-03-17 |
 | **Solution Folder** | [CrowdStrike Falcon Endpoint Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-crowdstrikefalconep) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (92%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [CrowdStrike Falcon Endpoint Protection](https://www.crowdstrike.com/products/) solution allows you to easily onboard CrowdStrike Falcon Endpoint Protection to Microsoft Sentinel. The data collected can be used to create custom dashboards, alerts, and improve investigation. This gives you more insight into your organization's endpoints and improves your security operation capabilities. 
@@ -141,7 +139,7 @@ This solution includes **10 content item(s)** (9 in solution, 1 discovered 🔍)
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
 | [CrowdStrikeFalconEventStream](../parsers/crowdstrikefalconeventstream.md) | - | [`CommonSecurityLog`](../tables/commonsecuritylog.md) *(read)* |
-| [CrowdStrikeReplicator](../parsers/crowdstrikereplicator.md) | - | [`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) *(read)* |
+| [CrowdStrikeReplicator](../parsers/crowdstrikereplicator.md) | - | [`CrowdStrikeReplicatorV2`](../tables/crowdstrikereplicatorv2.md) *(read)*<br>[`CrowdstrikeReplicatorLogs_CL`](../tables/crowdstrikereplicatorlogs-cl.md) *(read)* |
 | [CrowdStrikeReplicatorV2](../parsers/crowdstrikereplicatorv2.md) | - | [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) *(read)*<br>[`ASimAuthenticationEventLogs`](../tables/asimauthenticationeventlogs.md) *(read)*<br>[`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) *(read)*<br>[`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) *(read)*<br>[`ASimFileEventLogs`](../tables/asimfileeventlogs.md) *(read)*<br>[`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) *(read)*<br>[`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) *(read)*<br>[`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) *(read)*<br>[`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) *(read)*<br>[`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) *(read)*<br>[`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) *(read)*<br>[`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) *(read)*<br>[`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) *(read)*<br>[`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) *(read)*<br>[`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) *(read)* |
 | [CrowdStrikeReplicator_future](../parsers/crowdstrikereplicator-future.md) ⚠️ | - | - |
 
@@ -151,6 +149,8 @@ This solution includes **10 content item(s)** (9 in solution, 1 discovered 🔍)
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                             |
 |-------------|--------------------------------|--------------------------------------------------------------------------------|
+| 3.3.6       | 28-05-2026                     | Added support of multiple domains to **Crowdstrike API Data Connector** |
+| 3.3.5       | 20-05-2026                     | Updated **Analytic Rules** (v1.0.5): improved descriptions, added MITRE ATT&CK tactics, and optimized KQL queries. Updated **Workbook** to remove hardcoded resource IDs. Added non-analytics tier queries to *CrowdStrike Falcon Data Replicator (AWS S3)* **Data Connector** to support Basic/Auxiliary plan tables (Usage-based fallback, 14h window). |
 | 3.3.4       | 30-04-2026                     | remove deprecated tag. CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) is not deprecated |
 | 3.3.3       | 13-04-2026                     | Deprecate CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function) |
 | 3.3.2       | 16-03-2026                     | Update *CrowdStrike API Data Connector* to GA with adding rate limits to inner steps for Alerts and Detections data types |

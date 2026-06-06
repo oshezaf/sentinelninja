@@ -59,63 +59,63 @@
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/aadserviceprincipalsigninlogs.html"><code>AADServicePrincipalSignInLogs</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/awsguardduty.html"><code>AWSGuardDuty</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user&quot;</code><br><code>OperationName !contains &quot;external&quot;</code><br><code>OperationName !contains &quot;invite&quot;</code><br><code>OperationName !contains &quot;licnense&quot;</code><br><code>OperationName contains &quot;group&quot;</code><br><code>OperationName contains &quot;member&quot;</code><br><code>OperationName contains &quot;principal&quot;</code><br><code>OperationName contains &quot;role&quot;</code><br><code>OperationName contains &quot;user&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
   <td style="text-align:left"><code>Category in &quot;AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit&quot;</code><br><code>Category contains &quot;SQL&quot;</code><br><code>Resource == &quot;SOC-NS-AG-WAFV2&quot;</code><br><code>ResourceProvider in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT&quot;</code><br><code>ResourceType in &quot;APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES&quot;</code><br><code>msg_s !has &quot;. Url&quot;</code><br><code>msg_s !has &quot;No rule matched&quot;</code><br><code>msg_s !has &quot;Reason:&quot;</code><br><code>msg_s !has &quot;Rule Collection&quot;</code><br><code>msg_s !has &quot;TLS extension was missing&quot;</code><br><code>msg_s !has &quot;Web Category:&quot;</code><br><code>msg_s has &quot;. No rule matched&quot;</code><br><code>msg_s has &quot;. Url&quot;</code><br><code>msg_s has &quot;Reason:&quot;</code><br><code>msg_s has &quot;Rule Collection Group&quot;</code><br><code>msg_s has &quot;Web Category:&quot;</code></td>
-  <td style="text-align:center">?</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
@@ -127,23 +127,23 @@
 <tr>
   <td style="text-align:left"><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
   <td style="text-align:left"></td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
-  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/configurationchange.html"><code>ConfigurationChange</code></a></td>
@@ -185,14 +185,14 @@
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/dynamics365activity.html"><code>Dynamics365Activity</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/emailattachmentinfo.html"><code>EmailAttachmentInfo</code></a></td>
@@ -206,7 +206,7 @@
   <td style="text-align:left"><code>DeliveryAction == &quot;Junked&quot;</code><br><code>DetectionMethods contains &quot;spam&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
@@ -280,10 +280,10 @@
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
-  <td style="text-align:left"><code>OfficeWorkload == &quot;Exchange&quot;</code><br><code>Operation !contains &quot;access&quot;</code><br><code>Operation contains &quot;policy&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user&quot;</code><br><code>OperationName !contains &quot;external&quot;</code><br><code>OperationName !contains &quot;invite&quot;</code><br><code>OperationName !contains &quot;licnense&quot;</code><br><code>OperationName contains &quot;group&quot;</code><br><code>OperationName contains &quot;member&quot;</code><br><code>OperationName contains &quot;principal&quot;</code><br><code>OperationName contains &quot;role&quot;</code><br><code>OperationName contains &quot;user&quot;</code><br><code>RecordType == &quot;ExchangeAdmin&quot;</code></td>
+  <td style="text-align:left"><code>OfficeWorkload == &quot;Exchange&quot;</code><br><code>Operation !contains &quot;access&quot;</code><br><code>Operation contains &quot;policy&quot;</code><br><code>RecordType == &quot;ExchangeAdmin&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/operation.html"><code>Operation</code></a></td>
@@ -295,30 +295,30 @@
 <tr>
   <td style="text-align:left"><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a></td>
   <td style="text-align:left"></td>
-  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
   <td style="text-align:left"><code>GroupMembership contains &quot;admin&quot;</code><br><code>GroupMembership contains &quot;contributor&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/securityrecommendation.html"><code>SecurityRecommendation</code></a></td>
@@ -339,35 +339,35 @@
   <td style="text-align:left"><code>AppDisplayName in &quot;Azure Active Directory PowerShell,Microsoft Azure CLI&quot;</code><br><code>AppDisplayName contains &quot;ACOM&quot;</code><br><code>AppDisplayName contains &quot;CLI&quot;</code><br><code>AppDisplayName contains &quot;PowerShell&quot;</code><br><code>AppDisplayName contains &quot;command&quot;</code><br><code>AppDisplayName contains &quot;graph&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/storagefilelogs.html"><code>StorageFileLogs</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
   <td style="text-align:left"><code>SyslogMessage contains &quot;runas&quot;</code><br><code>SyslogMessage contains &quot;sudo&quot;</code><br><code>ProcessName has_any &quot;hostd-probe,vmkwarning,vpxd-main&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/update.html"><code>Update</code></a></td>

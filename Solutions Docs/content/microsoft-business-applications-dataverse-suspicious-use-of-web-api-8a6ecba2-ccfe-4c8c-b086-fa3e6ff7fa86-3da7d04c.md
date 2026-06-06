@@ -27,8 +27,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message == "UserSignIn"` | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"` | ✓ | ✗ | ? |
+| [`DataverseActivity`](../tables/dataverseactivity.md) | `Message == "UserSignIn"` | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResourceIdentity == "00000007-0000-0000-c000-000000000000"` | ✓ | ✗ | ✓ |
 
 ---
 

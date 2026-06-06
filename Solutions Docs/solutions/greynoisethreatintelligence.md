@@ -19,9 +19,9 @@
 | **Version** | 3.1.1 |
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-05 |
-| **Last Updated** | 2026-04-29 |
+| **Last Updated** | 2026-05-04 |
 | **Solution Folder** | [GreyNoiseThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GreyNoiseThreatIntelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/greynoiseintelligenceinc1681236078693.microsoft-sentinel-byol-greynoise) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/greynoiseintelligenceinc1681236078693.microsoft-sentinel-byol-greynoise) · Popularity: ⚪ Very Low (2%) |
 
 The [GreyNoise Threat Intelligence](https://www.greynoise.io/) solution for Microsoft Sentinel provides context to IP addresses seen in your environment by querying the GreyNoise API. GreyNoise collects, analyzes, and labels data on IPs that scan the internet and saturate security tools with noise. We provides near real time, actionable threat intelligence from our proprietary network of over 3,100 sensors running worldwide. This unique perspective helps analysts spend less time on irrelevant or harmless activity, and more time on targeted and emerging threats. 
  [Learn More about GreyNoise Threat Intelligence](https://www.greynoise.io/) | [GreyNoise Docs](https://docs.greynoise.io)

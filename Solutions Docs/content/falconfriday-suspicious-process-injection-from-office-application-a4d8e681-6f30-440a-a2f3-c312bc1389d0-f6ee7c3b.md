@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "CreateRemoteThreadApiCall,QueueUserApcRemoteApiCall,SetThreadContextRemoteApiCall"`<br>`InitiatingProcessCommandLine !contains "/dde"`<br>`InitiatingProcessCommandLine has_any ".doc"`<br>`InitiatingProcessCommandLine has_any ".docx"`<br>`InitiatingProcessFileName in "excel.exe,powerpnt.exe,winword.exe"` | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "CreateRemoteThreadApiCall,QueueUserApcRemoteApiCall,SetThreadContextRemoteApiCall"`<br>`InitiatingProcessCommandLine !contains "/dde"`<br>`InitiatingProcessCommandLine has_any ".doc"`<br>`InitiatingProcessCommandLine has_any ".docx"`<br>`InitiatingProcessFileName in "excel.exe,powerpnt.exe,winword.exe"` | ✓ | ✗ | ✓ |
 
 ---
 

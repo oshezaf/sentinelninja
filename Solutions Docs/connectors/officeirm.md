@@ -45,7 +45,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft 365 Insider Risk Management"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft 365 Insider Risk Management"` | ✓ | ✗ | ✓ |
 
 ## Permissions
 

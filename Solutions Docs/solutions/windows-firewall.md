@@ -18,7 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [Windows Firewall](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Windows%20Firewall) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-windowsfirewall) · Popularity: 🔵 Medium (71%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-windowsfirewall) · Popularity: 🔵 Medium (79%) |
 
 The Windows Firewall solution for Microsoft Sentinel allows you to ingest Windows Firewall Events into Microsoft Sentinel using the Log Analytics agent for Windows.
 
@@ -43,12 +43,10 @@ a. [Agent based logs collection from Windows and Linux machines](https://learn.m
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
+This solution provides **2 data connector(s)**:
 
-- [Windows Firewall](../connectors/windowsfirewall.md) ⚠️
+- [Windows Firewall](../connectors/windowsfirewall.md)
 - [Windows Firewall Events via AMA](../connectors/windowsfirewallama.md)
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
 
 ## Tables Used
 

@@ -24,7 +24,15 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [CiscoMeraki](../content/github-only-ciscomeraki-82d0689d.md) |  |
 
 ## Parsers Using This Table (1)
 

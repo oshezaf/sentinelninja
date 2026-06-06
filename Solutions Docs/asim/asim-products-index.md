@@ -6,7 +6,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**94 products** with 91 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**95 products** with 91 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 ## Products Overview
 
@@ -23,6 +23,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Azure NSG flows](#azure-nsg-flows) | 1 | 1 | 1 |
 | [Azure NTANetAnalytics](#azure-ntanetanalytics) | 1 | 1 | 1 |
 | [Barracuda WAF](#barracuda-waf) | 7 | 4 | 2 |
+| [Bitdefender](#bitdefender) | 1 | 1 | 1 |
 | [CheckPointFirewall](#checkpointfirewall) | 1 | 1 | 1 |
 | [CheckPointSmartDefense](#checkpointsmartdefense) | 1 | 1 | 1 |
 | [Cisco Adaptive Security Appliance (ASA)](#cisco-adaptive-security-appliance-asa) | 1 | 1 | 1 |
@@ -248,6 +249,18 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | ASim: [ASimWebSessionBarracudaCEF](asimwebsessionbarracudacef.md)<br>vim: [vimWebSessionBarracudaCEF](vimwebsessionbarracudacef.md) | WebSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.2.1 |
 | ASim: [ASimWebSessionBarracudaWAF](asimwebsessionbarracudawaf.md)<br>vim: [vimWebSessionBarracudaWAF](vimwebsessionbarracudawaf.md) | WebSession | [barracuda_CL](../tables/barracuda-cl.md) | 0.2.2 |
 
+## Bitdefender
+
+**Schemas:** AlertEvent
+
+**Tables:** [GzSecurityEvents_CL](../tables/gzsecurityevents-cl.md)
+
+### Parsers
+
+| Parser | Schema | Tables | Version |
+|:-------|:-------|:-------|:--------|
+| ASim: [ASimAlertEventBitdefenderGravityZone](asimalerteventbitdefendergravityzone.md)<br>vim: [vimAlertEventBitdefenderGravityZone](vimalerteventbitdefendergravityzone.md) | AlertEvent | [GzSecurityEvents_CL](../tables/gzsecurityevents-cl.md) | 0.1.0 |
+
 ## CheckPointFirewall
 
 **Schemas:** NetworkSession
@@ -258,7 +271,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimNetworkSessionCheckPointFirewall](asimnetworksessioncheckpointfirewall.md)<br>vim: [vimNetworkSessionCheckPointFirewall](vimnetworksessioncheckpointfirewall.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 1.2.0 |
+| ASim: [ASimNetworkSessionCheckPointFirewall](asimnetworksessioncheckpointfirewall.md)<br>vim: [vimNetworkSessionCheckPointFirewall](vimnetworksessioncheckpointfirewall.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 1.2.1 |
 
 ## CheckPointSmartDefense
 
@@ -966,7 +979,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationPaloAltoPanOS](asimauthenticationpaloaltopanos.md)<br>vim: [vimAuthenticationPaloAltoPanOS](vimauthenticationpaloaltopanos.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
+| ASim: [ASimAuthenticationPaloAltoPanOS](asimauthenticationpaloaltopanos.md)<br>vim: [vimAuthenticationPaloAltoPanOS](vimauthenticationpaloaltopanos.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.1 |
 
 ## Palo Alto PAN-OS GlobalProtect
 
@@ -978,7 +991,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
-| ASim: [ASimAuthenticationPaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md)<br>vim: [vimAuthenticationPaloAltoGlobalProtect](vimauthenticationpaloaltoglobalprotect.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.0 |
+| ASim: [ASimAuthenticationPaloAltoGlobalProtect](asimauthenticationpaloaltoglobalprotect.md)<br>vim: [vimAuthenticationPaloAltoGlobalProtect](vimauthenticationpaloaltoglobalprotect.md) | Authentication | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.1.1 |
 
 ## Palo Alto PanOS
 

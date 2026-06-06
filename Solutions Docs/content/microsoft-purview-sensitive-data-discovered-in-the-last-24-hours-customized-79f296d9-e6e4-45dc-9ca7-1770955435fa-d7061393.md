@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `Classification contains "Social Security Number"`<br>`SourceRegion == "westeurope"`<br>`SourceType contains "Amazon"` | ✓ | ✗ | ? |
+| [`PurviewDataSensitivityLogs`](../tables/purviewdatasensitivitylogs.md) | `Classification contains "Social Security Number"`<br>`SourceRegion == "westeurope"`<br>`SourceType contains "Amazon"` | ✓ | ✗ | ✓ |
 
 ---
 

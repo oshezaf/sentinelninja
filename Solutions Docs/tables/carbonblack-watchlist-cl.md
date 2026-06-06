@@ -62,13 +62,12 @@ This table is used by the following solutions:
 
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
 | [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
 
 ---

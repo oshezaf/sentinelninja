@@ -89,14 +89,13 @@ This table is used by the following solutions:
 
 - [Okta Single Sign-On](../solutions/okta-single-sign-on.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Okta Single Sign-On (via Codeless Connector Framework)](../connectors/oktassov2.md) |  |
-| [Okta Single Sign-On (using Azure Functions)](../connectors/oktasinglesignon-usingazurefunctions.md) |  |
 
 ---
 

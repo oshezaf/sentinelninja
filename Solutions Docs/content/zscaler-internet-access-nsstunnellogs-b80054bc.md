@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "Tunnel Event,Tunnel Samples"`<br>`DeviceProduct == "NSSTunnellog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID in "Tunnel Event,Tunnel Samples"`<br>`DeviceProduct == "NSSTunnellog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ | ✓ |
 
 ---
 

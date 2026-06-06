@@ -53,10 +53,6 @@
   <td style="text-align:left"><strong>Ingestion API</strong></td>
   <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
 </tr>
-<tr>
-  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#crowdstrike-falcon-data-replicator-crowdstrike-managed-aws-s3-using-azure-functions">View on Learn</a></td>
-</tr>
 </tbody>
 </table>
 <p>This connector enables the ingestion of FDR data into Microsoft Sentinel using Azure Functions to support the assessment of potential security risks, analysis of collaboration activities, identification of configuration issues, and other operational insights.<p><span style='color:red; font-weight:bold;'>NOTE:</span></p><div style='margin-left:20px;'><p>1. CrowdStrike FDR license must be available &amp; enabled.</p><p>2. The connector uses a Key &amp; Secret based authentication and is suitable for CrowdStrike Managed buckets.</p><p>3. For environments that use a fully owned AWS S3 bucket, Microsoft recommends using the <strong>CrowdStrike Falcon Data Replicator (AWS S3)</strong> connector.</p></div></p>
@@ -78,7 +74,7 @@
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a></td>
@@ -99,18 +95,18 @@
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimfileeventlogs.html"><code>ASimFileEventLogs</code></a></td>
-  <td style="text-align:left"><code>EventProduct == &quot;Falcon Data Replicator&quot;</code><br><code>EventVendor == &quot;CrowdStrike&quot;</code></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimfileeventlogs-cl.html"><code>ASimFileEventLogs_CL</code></a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>EventProduct == &quot;Falcon Data Replicator&quot;</code><br><code>EventVendor == &quot;CrowdStrike&quot;</code></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
@@ -120,7 +116,7 @@
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a></td>
@@ -167,9 +163,9 @@
 <tr>
   <td style="text-align:left"><a href="../tables/crowdstrike-additional-events-cl.html"><code>CrowdStrike_Additional_Events_CL</code></a></td>
   <td style="text-align:left"></td>
-  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/crowdstrike-secondary-data-cl.html"><code>CrowdStrike_Secondary_Data_CL</code></a></td>

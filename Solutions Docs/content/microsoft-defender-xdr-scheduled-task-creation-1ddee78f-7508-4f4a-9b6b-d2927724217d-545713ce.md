@@ -23,7 +23,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` | ✓ | ✗ | ? |
+| [`DeviceEvents`](../tables/deviceevents.md) | `ActionType == "ScheduledTaskCreated"`<br>`InitiatingProcessAccountSid != "S-1-5-18"` | ✓ | ✗ | ✓ |
 
 ---
 

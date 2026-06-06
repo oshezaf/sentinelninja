@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine has "SysAidServer"`<br>`EventID in "4663,4688"`<br>`ObjectName endswith ".jsp"`<br>`Process has_any "java.exe"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `AccessMask in "0x10,0x100,0x2,0x4"`<br>`CommandLine has "SysAidServer"`<br>`EventID in "4663,4688"`<br>`ObjectName endswith ".jsp"`<br>`Process has_any "java.exe"` | ✓ | ✓ | ✓ |
 
 ---
 

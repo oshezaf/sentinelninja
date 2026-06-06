@@ -13,11 +13,11 @@
 | **Parser Name** | `ASimNetworkSessionCheckPointFirewall` |
 | **Built-in Parser** | `_ASim_NetworkSession_CheckPointFirewall` |
 | **Schema** | NetworkSession |
-| **Schema Version** | 0.2.6 |
+| **Schema Version** | 0.2.7 |
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | CheckPointFirewall |
-| **Parser Version** | 1.2.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md)) |
-| **Last Updated** | Nov 26, 2025 |
+| **Parser Version** | 1.2.1 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimNetworkSession/CHANGELOG/ASimNetworkSessionCheckPointFirewall.md)) |
+| **Last Updated** | Apr 12, 2026 |
 | **Unifying Parser** | [ASimNetworkSession](asimnetworksession.md) |
 | **Source File** | [Parsers\ASimNetworkSession\Parsers\ASimNetworkSessionCheckPointFirewall.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimNetworkSession/Parsers/ASimNetworkSessionCheckPointFirewall.yaml) |
 
@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "VPN-1 & FireWall-1"`<br>`DeviceVendor == "CheckPoint"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "VPN-1 & FireWall-1"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

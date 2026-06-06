@@ -14,6 +14,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | **Basic Logs Eligible** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Supports Transformations** | ✓ Yes ([source](https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support)) |
 | **Ingestion API Supported** | ✓ Yes |
+| **Lake-Only Ingestion** | ✓ Yes ([source](https://learn.microsoft.com/azure/sentinel/data-connectors-reference)) |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/abapauditlog) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
@@ -73,23 +74,21 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | Variable3 | string | The Variable3 used by the SAP system for additional information regarding the event or activity that was performed. |
 | Variable4 | string | The Variable4 used by the SAP system for additional information regarding the event or activity that was performed. |
 
-## Solutions (4)
+## Solutions (3)
 
 This table is used by the following solutions:
 
 - [Onapsis Defend](../solutions/onapsis-defend.md)
-- [Pathlock_TDnR](../solutions/pathlock-tdnr.md)
 - [SAP S4 Cloud Public Edition](../solutions/sap-s4-cloud-public-edition.md)
 - [SecurityBridge App](../solutions/securitybridge-app.md)
 
-## Connectors (4)
+## Connectors (3)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md) |  |
-| [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) |  |
 | [SAP S/4HANA Cloud Public Edition](../connectors/saps4publicalerts.md) |  |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) |  |
 

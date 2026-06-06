@@ -18,7 +18,7 @@
 | **Kind** | Scheduled |
 | **Tactics** | InitialAccess, CredentialAccess |
 | **Techniques** | T1190, T1528 |
-| **Required Connectors** | [42CrunchAPIProtection](../connectors/42crunchapiprotection.md) |
+| **Required Connectors** | [42CrunchAPIProtection](../connectors/42crunchapiprotection.md), [FortyTwoCrunchAPIProtection](../connectors/fortytwocrunchapiprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/42Crunch%20API%20Protection/Analytic%20Rules/APIJWTValidation.yaml) |
 
 ## Tables Used
@@ -27,6 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md) | ? | ✓ | ? |
 | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

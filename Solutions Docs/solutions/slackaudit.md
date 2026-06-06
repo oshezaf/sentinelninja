@@ -1,6 +1,8 @@
-# Slack Audit Solution
+# ⚠️ Slack Audit Solution
 
 *Solution: SlackAudit*
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="SlackAudit Logo" width="75" height="75">
 
@@ -21,7 +23,7 @@
 | **First Published** | 2021-03-24 |
 | **Last Updated** | 2025-12-17 |
 | **Solution Folder** | [SlackAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-slackaudit) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-slackaudit) · Popularity: 🔵 Medium (69%) |
 
 The [Slack](https://slack.com/intl/en-in/) Audit solution provides the capability to ingest [Slack Audit Records](https://api.slack.com/admins/audit-logs) events into Microsoft Sentinel through the REST API. Refer to [API documentation](https://api.slack.com/admins/audit-logs-call) for more information.
  
@@ -92,15 +94,15 @@ This solution includes **21 content item(s)**:
 
 | Name | Tactics | Tables Used |
 |:-----|:--------|:------------|
-| [SlackAudit - Applications installed](../content/slackaudit-slackaudit-applications-installed-cefd7f18-9359-4a99-bd18-965983bb724d-453a5c0c.md) | InitialAccess | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
+| [SlackAudit - Applications installed](../content/slackaudit-slackaudit-applications-installed-cefd7f18-9359-4a99-bd18-965983bb724d-453a5c0c.md) | InitialAccess, Persistence | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
 | [SlackAudit - Deactivated users](../content/slackaudit-slackaudit-deactivated-users-f2b2cd0d-6190-44aa-8e0e-265de45ee379-fbc0a693.md) | Impact | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
-| [SlackAudit - Downloaded files stats](../content/slackaudit-slackaudit-downloaded-files-stats-7865b00c-26c8-46db-9422-bb9e4ee696ac-6f7c397c.md) | InitialAccess | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
+| [SlackAudit - Downloaded files stats](../content/slackaudit-slackaudit-downloaded-files-stats-7865b00c-26c8-46db-9422-bb9e4ee696ac-6f7c397c.md) | InitialAccess, Collection | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
 | [SlackAudit - Failed logins with unknown username](../content/slackaudit-slackaudit-failed-logins-with-unknown-username-b62b5a97-41e5-47cb-9b90-aa079f65f0c0-6f1116d0.md) | CredentialAccess | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
 | [SlackAudit - New User created](../content/slackaudit-slackaudit-new-user-created-d65400c2-50a3-46cc-b3e6-1cb72b953e72-63039815.md) | Persistence | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
 | [SlackAudit - Suspicious files downloaded](../content/slackaudit-slackaudit-suspicious-files-downloaded-31e54776-f2db-4465-b951-410880e009ad-6895491d.md) | InitialAccess | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
 | [SlackAudit - Uploaded files stats](../content/slackaudit-slackaudit-uploaded-files-stats-aa9bc100-012a-4348-820d-06606fc11299-ca14633c.md) | Exfiltration | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
-| [SlackAudit - User Permission Changed](../content/slackaudit-slackaudit-user-permission-changed-7adbe474-debf-47c2-9d76-49efd4d2953b-dd08ba0e.md) | PrivilegeEscalation | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
-| [SlackAudit - User logins by IP](../content/slackaudit-slackaudit-user-logins-by-ip-85850974-acbf-47bd-a635-4e3511b553c0-d29da94a.md) | InitialAccess, Persistence | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
+| [SlackAudit - User Permission Changed](../content/slackaudit-slackaudit-user-permission-changed-7adbe474-debf-47c2-9d76-49efd4d2953b-dd08ba0e.md) | PrivilegeEscalation, Persistence | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
+| [SlackAudit - User logins by IP](../content/slackaudit-slackaudit-user-logins-by-ip-85850974-acbf-47bd-a635-4e3511b553c0-d29da94a.md) | InitialAccess, Persistence, DefenseEvasion | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
 | [SlackAudit - Users joined channels without invites](../content/slackaudit-slackaudit-users-joined-channels-without-invites-ef815b70-e6f6-427b-ac9f-56d73472c4c3-40b271cd.md) | InitialAccess, Persistence | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md)<br>[`SlackAuditV2_CL`](../tables/slackauditv2-cl.md)<br>[`SlackAudit_CL`](../tables/slackaudit-cl.md) |
 
 ### Workbooks
@@ -119,6 +121,7 @@ This solution includes **21 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.6       | 29-05-2025                     | Updated the **Analytic Rules**, **Hunting Queries** and **Workbook** |
 | 3.0.5       | 12-12-2025                     | Updated the **Parser** yaml file. |
 | 3.0.4       | 28-07-2025                     | Removed Deprecated **Data Connector**. |
 | 3.0.3       | 30-06-2025                     | Moving **CCF Data Connector** to GA. |

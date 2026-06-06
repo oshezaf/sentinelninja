@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.1 |
-| **Author** | Microsoft |
+| **Version** | 3.0.3 |
+| **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-03-12 |
 | **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [AWS Security Hub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awssecurityhub) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awssecurityhub) · Popularity: 🔵 Medium (59%) |
 
 AWS Security Hub Solution for Microsoft Sentinel provides data connector to ingest AWS Security Hub findings into Microsoft Sentinel.
 
@@ -45,16 +45,17 @@ This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | [AWS Security Hub Findings (via Codeless Connector Framework)](../connectors/awssecurityhubfindingsccpdefinition.md) | Analytics, Hunting |
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | [AWS Security Hub Findings (via Codeless Connector Framework)](../connectors/awssecurityhubfindingsccpdefinition.md) | Analytics, Hunting, Workbooks |
 
 ## Content Items
 
-This solution includes **11 content item(s)**:
+This solution includes **12 content item(s)**:
 
 | Content Type | Count |
 |:-------------|:------|
 | Analytic Rules | 8 |
 | Hunting Queries | 3 |
+| Workbooks | 1 |
 
 ### Analytic Rules
 
@@ -77,10 +78,17 @@ This solution includes **11 content item(s)**:
 | [AWS Security Hub - EC2 instances with public IPv4 address](../content/aws-security-hub-aws-security-hub-ec2-instances-with-public-ipv4-address-2b7f9e4e-6c3a-4c8f-9b1d-1a2f3e4c5d6b-a62da3c4.md) | InitialAccess, Exfiltration | [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) |
 | [AWS Security Hub - IAM users with console password and no MFA](../content/aws-security-hub-aws-security-hub-iam-users-with-console-password-and-no-mfa-d5818873-a2ab-4467-8e97-60fe56ca10cc-19aaeb10.md) | PrivilegeEscalation, CredentialAccess, DefenseEvasion | [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) |
 
+### Workbooks
+
+| Name | Tables Used |
+|:-----|:------------|
+| [AWSSecurityHubComplianceWorkbook](../content/aws-security-hub-awssecurityhubcomplianceworkbook-1ae5d23d.md) | [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) |
+
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.3       | 27-05-2026                     | Adding new **Workbook** for AWS Security Hub Compliance |
 | 3.0.2       | 27-08-2025                     | AWS Security Hub added **Analytical Rule** and **Hunting Queries** |
 | 3.0.1       | 27-06-2025                     | AWS Security Hub **CCF Data Connector** moving to GA |
 | 3.0.0       | 14-05-2025                     | New **Data Connector**, Pre Release    |

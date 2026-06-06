@@ -23,9 +23,9 @@ Query shows rare process run by users.
 
 This content item queries data from the following tables:
 
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CyberArkEPM_CL`](../tables/cyberarkepm-cl.md) 🔶 |  | ? | ✓ | ? |
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | ? | ✓ | ? |
 
 ---
 

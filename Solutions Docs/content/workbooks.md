@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**565 workbooks** across all Microsoft Sentinel solutions.
+**567 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -75,6 +75,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [AutomationHealth](sentinelsoaressentials-automationhealth-09dce6f5.md) | 📦 [SentinelSOARessentials](../solutions/sentinelsoaressentials.md) |
 | [AutomationHealth](github-only-automationhealth-5e9d0998.md) | 🔗 GitHub Only |
 | [AWSS3](github-only-awss3-8722dc32.md) | 🔗 GitHub Only |
+| [AWSSecurityHubComplianceWorkbook](aws-security-hub-awssecurityhubcomplianceworkbook-1ae5d23d.md) | 📦 [AWS Security Hub](../solutions/aws-security-hub.md) |
 | [AzDDoSStandardWorkbook](azure-ddos-protection-azddosstandardworkbook-5256dfab.md) | 📦 [Azure DDoS Protection](../solutions/azure-ddos-protection.md) |
 | [AzDDoSStandardWorkbook](github-only-azddosstandardworkbook-d0f23e11.md) | 🔗 GitHub Only |
 | [AzureActiveDirectoryAuditLogs](microsoft-entra-id-azureactivedirectoryauditlogs-03b0be29.md) | 📦 [Microsoft Entra ID](../solutions/microsoft-entra-id.md) |
@@ -158,7 +159,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [CitrixWAF](github-only-citrixwaf-7cf41b7f.md) | 🔗 GitHub Only |
 | [ClarotyOverview](claroty-clarotyoverview-724141ff.md) | 📦 [Claroty](../solutions/claroty.md) |
 | [Cloudflare](cloudflare-cloudflare-8543aee9.md) | 📦 [Cloudflare](../solutions/cloudflare.md) |
-| [Cloudflare](cloudflare-ccf-cloudflare-fc7a6590.md) | 📦 [Cloudflare CCF](../solutions/cloudflare-ccf.md) |
+| [CloudflareCCF](cloudflare-ccf-cloudflareccf-cd0e56db.md) | 📦 [Cloudflare CCF](../solutions/cloudflare-ccf.md) |
 | [CloudNGFW-NetworkThreat](azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-networkthreat-c20fa626.md) | 📦 [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [CloudNGFW-Overview](azure-cloud-ngfw-by-palo-alto-networks-cloudngfw-overview-244e5c2e.md) | 📦 [Azure Cloud NGFW By Palo Alto Networks](../solutions/azure-cloud-ngfw-by-palo-alto-networks.md) |
 | [CodelessConnectorBuilder](github-only-codelessconnectorbuilder-42f04a4e.md) | 🔗 GitHub Only |
@@ -181,11 +182,10 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ContrastProtect](contrast-protect-contrastprotect-d1bc473e.md) | 📦 [Contrast Protect](../solutions/contrast-protect.md) |
 | [CopilotforSecurityMonitoring](github-only-copilotforsecuritymonitoring-b67b6028.md) | 🔗 GitHub Only |
 | [Corelight](corelight-corelight-90dad195.md) | 📦 [Corelight](../solutions/corelight.md) |
-| [Corelight_Alert_Aggregations](corelight-corelight-alert-aggregations-f385ae6f.md) | 📦 [Corelight](../solutions/corelight.md) |
-| [Corelight_AWS_VPC_Flow](corelight-corelight-aws-vpc-flow-f89e8db1.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Data_Explorer](corelight-corelight-data-explorer-258d9f06.md) | 📦 [Corelight](../solutions/corelight.md) |
+| [Corelight_Data_Insights](corelight-corelight-data-insights-e22362fc.md) | 📦 [Corelight](../solutions/corelight.md) |
+| [Corelight_Operations](corelight-corelight-operations-90113242.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [Corelight_Security_Workflow](corelight-corelight-security-workflow-7c756761.md) | 📦 [Corelight](../solutions/corelight.md) |
-| [Corelight_Sensor_Overview](corelight-corelight-sensor-overview-71e61142.md) | 📦 [Corelight](../solutions/corelight.md) |
 | [CPEMAlertOverview](check-point-cyberint-alerts-cpemalertoverview-1fe40da5.md) | 📦 [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [CriblWorkbook](cribl-criblworkbook-903a9c58.md) | 📦 [Cribl](../solutions/cribl.md) |
 | [CriblWorkbook](github-only-criblworkbook-923de34f.md) | 🔗 GitHub Only |
@@ -254,6 +254,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [F5BIGIPSystemMetrics](github-only-f5bigipsystemmetrics-f6e795e8.md) | 🔗 GitHub Only |
 | [F5Networks](f5-big-ip-f5networks-56be211d.md) | 📦 [F5 Big-IP](../solutions/f5-big-ip.md) |
 | [F5Networks](github-only-f5networks-1dca2cd9.md) | 🔗 GitHub Only |
+| [FilewallM365Overview](filewall-for-microsoft-365-filewallm365overview-90daf6a7.md) | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
+| [FilewallM365Overview](github-only-filewallm365overview-0b6e3b68.md) | 🔗 GitHub Only |
 | [FlareSystemsFireworkOverview](flare-flaresystemsfireworkoverview-4ffe81de.md) | 📦 [Flare](../solutions/flare.md) |
 | [ForcepointCASB](forcepoint-casb-forcepointcasb-d5d7df21.md) | 📦 [Forcepoint CASB](../solutions/forcepoint-casb.md) |
 | [ForcepointCASB](github-only-forcepointcasb-e6afece9.md) | 🔗 GitHub Only |

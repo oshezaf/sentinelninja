@@ -47,6 +47,10 @@
   <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
   <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic">View Documentation</a></td>
 </tr>
@@ -59,7 +63,7 @@
 <li><a href="#connectors">Connectors</a></li>
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 </ul>
-<h2 id="schema">Schema (89 columns)</h2>
+<h2 id="schema">Schema (95 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/networkaccesstraffic">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -104,6 +108,16 @@
   <td style="text-align:left">AIAgentName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The name of the AI agent associated with the traffic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AIDetectionConfidence</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Confidence level of the AI detection result.</td>
+</tr>
+<tr>
+  <td style="text-align:left">AIDetectionEvidence</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Evidence details for the AI detection result.</td>
 </tr>
 <tr>
   <td style="text-align:left">AppId</td>
@@ -276,6 +290,16 @@
   <td style="text-align:left">The process initiating the traffic transaction.</td>
 </tr>
 <tr>
+  <td style="text-align:left">IsAgentic</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the traffic was detected as agentic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsTokenAgentic</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the token used in the traffic was issued to an AI agent.</td>
+</tr>
+<tr>
   <td style="text-align:left">KerberosClientName</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Name associated with client during authentication.</td>
@@ -336,9 +360,19 @@
   <td style="text-align:left">The ID of the rule for which the request was denied by.</td>
 </tr>
 <tr>
+  <td style="text-align:left">ProcessArgs</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The process arguments associated with the network request.</td>
+</tr>
+<tr>
   <td style="text-align:left">ProcessingRegion</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">Region where the request was processed by the backend service.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProcessTree</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The process tree associated with the network request.</td>
 </tr>
 <tr>
   <td style="text-align:left">Realm</td>

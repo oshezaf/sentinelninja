@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ? |
-| [`W3CIISLog`](../tables/w3ciislog.md) | `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"` | ✓ | ✗ | ? |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) |  | ✓ | ✓ | ✗ |
+| [`W3CIISLog`](../tables/w3ciislog.md) | `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"` | ✓ | ✗ | ✗ |
 
 ---
 

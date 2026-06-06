@@ -6,7 +6,7 @@
 
 ---
 
-Detects public links for files which potentialy may contain sensitive data such as passwords, authentication tokens, secret keys.
+Detects public links created for files that may contain sensitive data such as passwords, authentication tokens, secret keys, or private configuration files. Tune exclusions using the SlackAuditSensitiveFile_Allowlist_File and SlackAuditSensitiveFile_Allowlist_Account watchlists when known benign files or accounts generate expected public-link activity.
 
 | Attribute | Value |
 |:----------|:------|
@@ -17,7 +17,7 @@ Detects public links for files which potentialy may contain sensitive data such 
 | **Status** | Available |
 | **Kind** | Scheduled |
 | **Tactics** | Exfiltration |
-| **Techniques** | T1048 |
+| **Techniques** | T1048, T1567.002 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Analytic%20Rules/SlackAuditSensitiveFile.yaml) |
 
@@ -25,11 +25,11 @@ Detects public links for files which potentialy may contain sensitive data such 
 
 This content item queries data from the following tables:
 
-| Table | Transformations | Ingestion API | Lake-Only |
-|:------|:---------------:|:-------------:|:---------:|
-| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
-| [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
+| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
+|:------|:-------------|:---------------:|:-------------:|:---------:|
+| [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 |  | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) |  | ✓ | ✓ | ✓ |
+| [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 |  | ? | ✓ | ? |
 
 ---
 

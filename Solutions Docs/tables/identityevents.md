@@ -6,22 +6,24 @@
 
 ---
 
-> **Defender XDR Only:** This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.
-
 Information about identity events obtained from other cloud identity service providers
 
 | Attribute | Value |
 |:----------|:------|
-| **Category** | XDR |
+| **Category** | Security, XDR |
+| **Basic Logs Eligible** | ✓ Yes |
 | **Ingestion API Supported** | ✗ No |
+| **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityevents) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityevents-table) |
 
-## Schema (18 columns)
+## Schema (23 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityevents)
 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
+| _BilledSize | real | The record size in bytes |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
 | AccountDisplayName | string | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
 | AccountId | string | Unique identifier for the account in the source application |
 | AccountType | string | Type of user account, indicating its general role like User, SystemPrincipal |
@@ -37,8 +39,11 @@ Information about identity events obtained from other cloud identity service pro
 | IPAddress | string | IP address assigned to the device and used during related network communications |
 | RawEventData | dynamic | Full raw event information from the source application in JSON format |
 | ReportId | string | Unique identifier for the event |
+| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
 | TargetObjects | dynamic | List of the target objects of this activity. Target object can be user, group, role, domain, application, and more. |
-| Timestamp | datetime | Date and time when the record was generated |
+| TenantId | string | The Log Analytics workspace ID |
+| TimeGenerated | datetime | Date and time (UTC) when the record was generated |
+| Type | string | The name of the table |
 | UserAgent | string | User agent information from the web browser or other client application |
 
 ---

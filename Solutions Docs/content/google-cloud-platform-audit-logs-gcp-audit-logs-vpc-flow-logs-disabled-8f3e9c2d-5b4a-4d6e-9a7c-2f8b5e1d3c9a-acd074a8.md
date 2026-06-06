@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `MethodName has "DeleteVpcFlowLogsConfig"`<br>`MethodName has_any "VpcFlowLogsService.UpdateVpcFlowLogsConfig"`<br>`ServiceName == "networkmanagement.googleapis.com"` | ✓ | ✓ | ? |
+| [`GCPAuditLogs`](../tables/gcpauditlogs.md) | `MethodName has "DeleteVpcFlowLogsConfig"`<br>`MethodName has_any "VpcFlowLogsService.UpdateVpcFlowLogsConfig"`<br>`ServiceName == "networkmanagement.googleapis.com"` | ✓ | ✓ | ✓ |
 
 ---
 

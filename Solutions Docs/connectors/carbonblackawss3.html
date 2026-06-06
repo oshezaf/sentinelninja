@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🔍 VMware Carbon Black Cloud via AWS S3 &mdash; Solutions Analyzer</title>
+<title>VMware Carbon Black Cloud via AWS S3 via Codeless Connector Framework &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,10 +15,7 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="vmware-carbon-black-cloud-via-aws-s3">🔍 VMware Carbon Black Cloud via AWS S3</h1>
-<blockquote>
-<p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
-</blockquote>
+<h1 id="vmware-carbon-black-cloud-via-aws-s3">VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)</h1>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -50,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/CarbonBlackViaAWSS3_ConnectorDefinition.json">CarbonBlackViaAWSS3_ConnectorDefinition.json</a></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20Carbon%20Black%20Cloud/Data%20Connectors/VMwareCarbonBlackCloud_ccp/CarbonBlack_DataConnectorDefinition.json">CarbonBlack_DataConnectorDefinition.json</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>DCR Definition Files</strong></td>
@@ -86,7 +83,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../tables/asimauthenticationeventlogs.html"><code>ASimAuthenticationEventLogs</code></a></td>
-  <td style="text-align:left"><code>EventProduct == &quot;Carbon Black Cloud&quot;</code><br><code>EventVendor == &quot;VMWare&quot;</code></td>
+  <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
@@ -103,11 +100,11 @@
   <td style="text-align:left"></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/asimprocesseventlogs.html"><code>ASimProcessEventLogs</code></a></td>
-  <td style="text-align:left"></td>
+  <td style="text-align:left"><code>EventProduct == &quot;Carbon Black Cloud&quot;</code><br><code>EventVendor == &quot;VMWare&quot;</code></td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">✓</td>
   <td style="text-align:center">?</td>
@@ -122,9 +119,9 @@
 <tr>
   <td style="text-align:left"><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
   <td style="text-align:left"></td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
   <td style="text-align:left"><a href="../tables/carbonblack-watchlist-cl.html"><code>CarbonBlack_Watchlist_CL</code></a></td>

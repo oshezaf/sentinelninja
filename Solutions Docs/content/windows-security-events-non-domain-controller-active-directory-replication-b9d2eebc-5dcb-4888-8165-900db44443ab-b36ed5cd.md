@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityEvent`](../tables/securityevent.md) | `AccountType != "Machine"`<br>`EventID in "4624,4662"`<br>`LogonType == "3"`<br>`ObjectServer == "DS"`<br>`Properties has "1131f6aa-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "1131f6ad-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "89e95b76-444d-4c62-991a-0facbeda640c"` | ✓ | ✓ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `AccountType != "Machine"`<br>`EventID in "4624,4662"`<br>`LogonType == "3"`<br>`ObjectServer == "DS"`<br>`Properties has "1131f6aa-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "1131f6ad-9c07-11d1-f79f-00c04fc2dcd2"`<br>`Properties has "89e95b76-444d-4c62-991a-0facbeda640c"` | ✓ | ✓ | ✓ |
 
 ---
 

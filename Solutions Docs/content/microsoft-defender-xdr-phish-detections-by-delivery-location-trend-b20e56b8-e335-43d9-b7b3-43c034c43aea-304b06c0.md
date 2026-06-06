@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`EmailEvents`](../tables/emailevents.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | ✓ | ✗ | ? |
+| [`EmailEvents`](../tables/emailevents.md) | `DeliveryLocation in "Dropped,Failed,Inbox/folder,Junk folder,Quarantine"`<br>`DetectionMethods has "Phish"`<br>`EmailDirection == "Inbound"`<br>`OrgLevelPolicy != "Phishing simulation"`<br>`OrgLevelPolicy != "SecOps Mailbox"` | ✓ | ✗ | ✓ |
 
 ---
 

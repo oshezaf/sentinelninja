@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID has "INTRUSION:400"`<br>`DeviceEventClassID has "PV:112"`<br>`DeviceEventClassID has "RNA:1003:1"`<br>`DeviceEventClassID has_any "INTRUSION:400,PV:112,RNA:1003:1"`<br>`DeviceProduct == "Firepower"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceEventClassID has "INTRUSION:400"`<br>`DeviceEventClassID has "PV:112"`<br>`DeviceEventClassID has "RNA:1003:1"`<br>`DeviceEventClassID has_any "INTRUSION:400,PV:112,RNA:1003:1"`<br>`DeviceProduct == "Firepower"`<br>`DeviceVendor == "Cisco"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GraphNotificationsActivityLogs &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="graphnotificationsactivitylogs">GraphNotificationsActivityLogs</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for GraphNotificationsActivityLogs table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">IT &amp; Management Tools, Network, Security</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/graphnotificationsactivitylogs">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (22 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/graphnotificationsactivitylogs">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AccountType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The account type</td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The application id</td>
+</tr>
+<tr>
+  <td style="text-align:left">ContextId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the message.</td>
+</tr>
+<tr>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier representing the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The duration of the request in milliseconds.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the region that served the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">LoggingLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The logging level for the request.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The details of the notification</td>
+</tr>
+<tr>
+  <td style="text-align:left">PublicationIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The publication ids of the messages</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceIdentity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the message.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The HTTP response for the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultStatusCode</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The HTTP method of the event.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">SubscriptionIdentity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The subscription id for which notification is delivered</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the notification was published.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">WebHeaders</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The webheaders for the request</td>
+</tr>
+<tr>
+  <td style="text-align:left">WorkloadNamespace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The workload for which notification gets delivered</td>
+</tr>
+<tr>
+  <td style="text-align:left">WorkloadResource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The details related to the resource</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

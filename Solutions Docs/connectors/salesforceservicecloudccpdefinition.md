@@ -1,6 +1,4 @@
-# 🔍 Salesforce Service Cloud (via Codeless Connector Framework)
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+# Salesforce Service Cloud (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/salesforce_logo.svg" alt="" width="75" height="75">
 
@@ -16,7 +14,7 @@
 | **Publisher** | Microsoft |
 | **Used in Solutions** | [Salesforce Service Cloud](../solutions/salesforce-service-cloud.md) |
 | **Collection Method** | [CCF](../methods/ccf.md) |
-| **Connector Definition Files** | [azuredeploy_SalesforceServiceCloud_poller_connector.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/azuredeploy_SalesforceServiceCloud_poller_connector.json) |
+| **Connector Definition Files** | [SalesforceServiceCloud_DataConnectorDefinition.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/SalesforceServiceCloud_DataConnectorDefinition.json) |
 | **DCR Definition Files** | [SalesforceServiceCloud_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/SalesforceServiceCloud_DCR.json) |
 | **CCF Configuration** | [SalesforceServiceCloud_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Salesforce%20Service%20Cloud/Data%20Connectors/SalesforceSentinelConnector_CCP/SalesforceServiceCloud_PollingConfig.json) |
 | **CCF Capabilities** | `OAuth2`, `Paging`, `Nested` |
@@ -31,8 +29,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SalesforceServiceCloudV2_CL`](../tables/salesforceservicecloudv2-cl.md) | ? | ✓ | ? |
-| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ? | ✓ | ? |
+| [`SalesforceServiceCloudV3_CL`](../tables/salesforceservicecloudv3-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -52,12 +49,16 @@ This connector ingests data into the following tables:
 
 Follow [Create a Connected App in Salesforce for OAuth](https://help.salesforce.com/s/articleView?id=platform.ev_relay_create_connected_app.htm&type=5) and [Configure a Connected App for the OAuth 2.0 Client Credentials Flow](https://help.salesforce.com/s/articleView?id=xcloud.connected_app_client_credentials_setup.htm&type=5) to create a Connected App with access to the Salesforce Service Cloud API. Through those instructions, you should get the Consumer Key and Consumer Secret.
  For Salesforce Domain name, Go to Setup, type My Domain in the Quick Find box, and select My Domain to view your domain details. Make sure to enter the domain name without a trailing slash (e.g., https://your-domain.my.salesforce.com). Fill the form below with that information.
+
+ℹ️ **Notice:** Solution version 3.2.0 and later uses the SalesforceServiceCloudV3_CL table. The parser has been updated accordingly.
 **Connector Management Interface**
 
 This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
 
 📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
-- **Salesforce Domain**
+- **Connector Alias**
+- **Salesforce Base URL**
+- **Data Type**
 - **Grant Type**
 
 ➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
@@ -68,14 +69,23 @@ This section is an interactive interface in the Microsoft Sentinel portal that a
 
 **Configure API Connection**
 
-*Connect to Salesforce to ingest event log file*
+*Connect to Salesforce to ingest data*
 
 When you click the "Add Connection" button in the portal, a configuration form will open. You'll need to provide:
 
-- **Salesforce Domain Name** (required): Example: https://your-domain.my.salesforce.com
+*Base Configuration*
+
+- **Connection Alias** (required): Production or Sandbox
+- **Salesforce Base URL** (required): Example: https://your-domain.my.salesforce.com
 - **Log Collection Interval** (required): Select from available options
   - Hourly
   - Daily
+- **Data Types** (required): Select from available options
+  - Event Log File - Salesforce operational events
+*OAuth2 Credentials*
+
+### OAuth2 Client Credentials
+
 
 > 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 

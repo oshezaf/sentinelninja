@@ -23,7 +23,7 @@ Reference for AGWFirewallLogs table in Azure Monitor Logs.
 - [Content Items](#content-items-using-this-table)
 - [Resource Types](#resource-types)
 
-## Schema (28 columns)
+## Schema (29 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agwfirewalllogs)
 
@@ -44,6 +44,7 @@ Reference for AGWFirewallLogs table in Azure Monitor Logs.
 | LineDetails | string | Line number in the configuration file that triggered the event. |
 | Message | string | User-friendly message for the triggering event. More details are provided in the details section. |
 | OperationName | string | Name of the operation. |
+| ParanoiaLevel | string | The OWASP CRS paranoia level (1-4) of the rule that triggered. Empty for non-CRS rules (e.g., anomaly scoring, bot protection). |
 | PolicyId | string | The ID of the firewall policy applied to the request. |
 | PolicyScope | string | The scope of the policy. Values can be Global, Listener, or Location (for path-based rules). |
 | PolicyScopeName | string | The name of the policy scope applied. |

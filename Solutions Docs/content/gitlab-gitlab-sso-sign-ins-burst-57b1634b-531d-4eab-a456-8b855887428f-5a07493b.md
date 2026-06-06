@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "0"` | ✓ | ✗ | ? |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "0"` | ✓ | ✗ | ✓ |
 
 ---
 

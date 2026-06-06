@@ -127,7 +127,7 @@ This table is used by the following solutions:
 - [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 
-## Connectors (4)
+## Connectors (3)
 
 This table is ingested by the following connectors:
 
@@ -135,7 +135,6 @@ This table is ingested by the following connectors:
 |:----------|:-------------------|
 | [CrowdStrike Falcon Data Replicator (CrowdStrike Managed AWS-S3) (using Azure Function)](../connectors/crowdstrikereplicatorv2.md) |  |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
-| [VMware Carbon Black Cloud via AWS S3](../connectors/carbonblackawss3.md) |  |
 | [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) |  |
 
 ---

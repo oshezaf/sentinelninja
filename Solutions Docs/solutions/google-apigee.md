@@ -1,6 +1,8 @@
-# Google ApigeeX
+# ⚠️ Google ApigeeX
 
 *Solution: Google Apigee*
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Google%20Apigee/logo/Google-Cloud-Branding.png" alt="Google Apigee Logo" width="75" height="75">
 
@@ -20,7 +22,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-28 |
 | **Solution Folder** | [Google Apigee](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Apigee) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-googleapigeex) · Popularity: 🔵 Medium (76%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-googleapigeex) · Popularity: 🔵 Medium (69%) |
 
 The [Google ApigeeX](https://cloud.google.com/apigee/docs) solution provides the capability to ingest ApigeeX audit logs into Microsoft Sentinel using the GCP Logging API or PubSub architecture. Refer to [GCP Logging API documentation](https://cloud.google.com/logging/docs/reference/v2/rest) for more information on the Azure Function connector and the [Microsoft Sentinel documentation](https://learn.microsoft.com/azure/sentinel/connect-google-cloud-platform?tabs=terraform%2Cauditlogs) for the basics on PubSub based ingestion.
 

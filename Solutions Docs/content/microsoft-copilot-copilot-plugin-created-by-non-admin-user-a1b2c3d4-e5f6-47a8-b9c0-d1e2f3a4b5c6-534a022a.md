@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CopilotActivity`](../tables/copilotactivity.md) | `ActorUserType != "Admin"` | ✓ | ✗ | ? |
+| [`CopilotActivity`](../tables/copilotactivity.md) | `ActorUserType != "Admin"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -27,7 +27,7 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`CBSLog_AzureV2_CL`](../tables/cbslog-azurev2-cl.md) | ? | ✓ | ? |
+| [`CBSLog_AzureV2_CL`](../tables/cbslog-azurev2-cl.md) | ✗ | ✓ | ✗ |
 | [`CBSLog_Azure_1_CL`](../tables/cbslog-azure-1-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

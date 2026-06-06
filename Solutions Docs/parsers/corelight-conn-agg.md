@@ -13,7 +13,7 @@
 | Title | Corelight Connection Aggregated Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.1.1 |
+| Version | 1.1.2 |
 | Last Updated | 2026-03-19 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |

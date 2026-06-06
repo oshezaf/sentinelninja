@@ -42,7 +42,7 @@ This connector ingests data into the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`McasShadowItReporting`](../tables/mcasshadowitreporting.md) |  | ✓ | ✗ | ? |
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Cloud App Security"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName == "Microsoft Cloud App Security"` | ✓ | ✗ | ✓ |
 
 ## Permissions
 

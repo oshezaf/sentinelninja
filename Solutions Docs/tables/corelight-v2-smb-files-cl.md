@@ -80,7 +80,7 @@ This table is ingested by the following connectors:
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
-| [Corelight_Alert_Aggregations](../content/corelight-corelight-alert-aggregations-f385ae6f.md) |  |
+| [Corelight](../content/corelight-corelight-90dad195.md) |  |
 | [Corelight_Data_Explorer](../content/corelight-corelight-data-explorer-258d9f06.md) |  |
 | [Corelight_Security_Workflow](../content/corelight-corelight-security-workflow-7c756761.md) |  |
 

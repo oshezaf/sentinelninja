@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName == "User has elevated their access to User Access Administrator for their Azure Resources"` | ✓ | ✗ | ? |
+| [`AuditLogs`](../tables/auditlogs.md) | `ActivityDisplayName == "User has elevated their access to User Access Administrator for their Azure Resources"` | ✓ | ✗ | ✓ |
 
 ---
 

@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `Entities has "@{items("` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `Entities has "@{items("` | ✓ | ✗ | ✓ |
 
 ## Logic App Connectors
 

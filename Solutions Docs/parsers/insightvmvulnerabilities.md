@@ -25,8 +25,8 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) 🔶 | ? | ✓ | ? |
-| [`Rapid7InsightVMCloudVulnerabilities`](../tables/rapid7insightvmcloudvulnerabilities.md) | ✓ | ✓ | ? |
+| [`NexposeInsightVMCloud_vulnerabilities_CL`](../tables/nexposeinsightvmcloud-vulnerabilities-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`Rapid7InsightVMCloudVulnerabilities`](../tables/rapid7insightvmcloudvulnerabilities.md) | ✓ | ✓ | ✓ |
 
 ---
 

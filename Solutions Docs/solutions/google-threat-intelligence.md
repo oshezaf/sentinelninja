@@ -16,14 +16,14 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.virustotal.com/gui/contact-us](https://www.virustotal.com/gui/contact-us) |
 | **Categories** | domains |
-| **Version** | 3.2.2 |
+| **Version** | 3.2.3 |
 | **Author** | Google |
 | **First Published** | 2024-10-26 |
 | **Last Updated** | 2024-10-26 |
 | **Solution Folder** | [Google Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google) · Popularity: 🔵 Medium (73%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google) · Popularity: 🔵 Medium (77%) |
 
-This Google Threat Intelligence Solution contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from Google Threat Intelligence. Enriched information can help drive focused investigations in Security Operations.
+This Google Threat Intelligence Solution contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from Google Threat Intelligence. Enriched information can help drive focused investigations in Security Operations.<br><br><b>Important — Custom Connector prerequisite:</b> The Playbooks in this solution depend on the <b>Google Threat Intelligence custom Logic Apps connector</b>, which is <b>not deployed automatically</b> when you install the solution from Content Hub. Before running any of the Playbooks, you must manually deploy the custom connector into the same resource group and region as the Playbooks, using the Deploy to Azure button in the connector's <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Google%20Threat%20Intelligence/Playbooks/CustomConnector/GTICustomConnector">readme</a>. Without it, the Playbooks will fail to authenticate to the Google Threat Intelligence API.
 
 ## Contents
 
@@ -97,6 +97,7 @@ This solution includes **16 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                             |
 |-------------|--------------------------------|------------------------------------------------|
+| 3.2.3       | 27-05-2026                     | Added Custom **Connector** manual prerequisite for Playbooks. |
 | 3.2.2       | 02-12-2025                     | - Included new Analytics Rules and Hunting Queries to improve detection capabilities and support proactive investigation. <br/>- Filtering threat lists<br/>- Migrating to Upload STIX Objects |
 | 3.2.1       | 25-08-2025                     | Fix IoC Stream ingestion bug for results with more than 40 items due to a cursor iteration error. |
 | 3.2.0       | 20-05-2025                     | New **Playbook** added *IoC Stream Threat Intelligence*.<br/> Added x-tool header in **Playbook** Customer Connector. |

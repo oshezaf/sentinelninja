@@ -13,7 +13,7 @@
 | Title | Corelight Connection Events |
 | Location | Solution |
 | Solution | [Corelight](../solutions/corelight.md) |
-| Version | 1.1.0 |
+| Version | 1.1.1 |
 | Last Updated | 2024-08-09 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |

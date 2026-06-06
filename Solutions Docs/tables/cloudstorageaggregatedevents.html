@@ -21,9 +21,6 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
-<blockquote>
-<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
-</blockquote>
 <p>Cloud storage activity and related events</p>
 <table>
 <thead>
@@ -35,11 +32,19 @@
 <tbody>
 <tr>
   <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">XDR</td>
+  <td style="text-align:left">Security, XDR</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents">View Documentation</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
@@ -47,7 +52,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (44 columns)</h2>
+<h2 id="schema">Schema (49 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudstorageaggregatedevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -58,6 +63,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
 <tr>
   <td style="text-align:left">AccountApplicationId</td>
   <td style="text-align:left">string</td>
@@ -70,7 +85,7 @@
 </tr>
 <tr>
   <td style="text-align:left">AccountTenantId</td>
-  <td style="text-align:left">long</td>
+  <td style="text-align:left">string</td>
   <td style="text-align:left">The unique identifier of the Azure tenant</td>
 </tr>
 <tr>
@@ -107,6 +122,11 @@
   <td style="text-align:left">AzureResourceId</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The Azure Resource ID of the storage account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AzureSubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier assigned to the Azure subscription</td>
 </tr>
 <tr>
   <td style="text-align:left">CityName</td>
@@ -165,7 +185,7 @@
 </tr>
 <tr>
   <td style="text-align:left">HashReputationMd5List</td>
-  <td style="text-align:left">object</td>
+  <td style="text-align:left">dynamic</td>
   <td style="text-align:left">A list of MD5 hash reputations for the accessed resources</td>
 </tr>
 <tr>
@@ -200,7 +220,7 @@
 </tr>
 <tr>
   <td style="text-align:left">OperationNamesList</td>
-  <td style="text-align:left">object</td>
+  <td style="text-align:left">dynamic</td>
   <td style="text-align:left">A list of storage operations performed (for example, CreateContainer, DeleteContainer)</td>
 </tr>
 <tr>
@@ -229,6 +249,11 @@
   <td style="text-align:left">Specifies the type of storage service (for example, Blob, ADLS Gen2, Files.REST, Files.SMB)</td>
 </tr>
 <tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
   <td style="text-align:left">StorageAccount</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The identifier for the storage account</td>
@@ -242,11 +267,6 @@
   <td style="text-align:left">StorageFileShare</td>
   <td style="text-align:left">string</td>
   <td style="text-align:left">The identifier for the storage file share</td>
-</tr>
-<tr>
-  <td style="text-align:left">SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier assigned to the Azure subscription</td>
 </tr>
 <tr>
   <td style="text-align:left">SuccessfulOperationsCount</td>
@@ -264,14 +284,24 @@
   <td style="text-align:left">The name of the suspicious user agent accessing the storage</td>
 </tr>
 <tr>
-  <td style="text-align:left">Timestamp</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Indicate the time when the record was generated</td>
+  <td style="text-align:left">Date and time (UTC) when the record was generated</td>
 </tr>
 <tr>
   <td style="text-align:left">TotalResponseLength</td>
   <td style="text-align:left">int</td>
   <td style="text-align:left">The total response length of all GET operations during the aggregation period</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
   <td style="text-align:left">UserAgentHeader</td>

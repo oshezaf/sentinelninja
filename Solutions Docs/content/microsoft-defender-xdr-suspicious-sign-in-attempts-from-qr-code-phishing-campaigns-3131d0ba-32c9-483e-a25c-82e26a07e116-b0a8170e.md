@@ -25,7 +25,8 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`AADSignInEventsBeta`](../tables/aadsignineventsbeta.md) |  | ? | ✗ | ? |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "MailItemsAccessed"` | ✓ | ✗ | ? |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType == "MailItemsAccessed"` | ✓ | ✗ | ✓ |
+| [`EntraIdSignInEvents`](../tables/entraidsigninevents.md) |  | ? | ✗ | ? |
 
 ---
 

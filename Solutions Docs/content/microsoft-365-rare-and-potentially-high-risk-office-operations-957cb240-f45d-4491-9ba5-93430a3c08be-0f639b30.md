@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"`<br>`UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `Operation in "Add-MailboxFolderPermission,Add-MailboxPermission,New-InboxRule,New-ManagementRoleAssignment,Set-InboxRule,Set-Mailbox,Set-TransportRule"`<br>`UserId has_any "NT AUTHORITY\\SYSTEM (Microsoft.Exchange.ServiceHost)"` | ✓ | ✗ | ✓ |
 
 ---
 

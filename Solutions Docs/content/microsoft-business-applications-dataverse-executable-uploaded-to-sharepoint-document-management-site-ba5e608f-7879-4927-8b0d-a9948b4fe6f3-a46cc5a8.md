@@ -27,7 +27,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileUploaded"` | ✓ | ✗ | ? |
+| [`OfficeActivity`](../tables/officeactivity.md) | `OfficeWorkload == "SharePoint"`<br>`Operation == "FileUploaded"` | ✓ | ✗ | ✓ |
 
 ---
 

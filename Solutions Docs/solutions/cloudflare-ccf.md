@@ -16,12 +16,12 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.cloudflare.com](https://support.cloudflare.com) |
 | **Categories** | domains |
-| **Version** | 3.0.2 |
+| **Version** | 3.0.3 |
 | **Author** | Cloudflare - support@cloudflare.com |
 | **First Published** | 2025-09-30 |
 | **Last Updated** | 2026-02-11 |
 | **Solution Folder** | [Cloudflare CCF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare%20CCF) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudflare.azure-sentinel-solution-cloudflare-ccf) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudflare.azure-sentinel-solution-cloudflare-ccf) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (81%) |
 
 The [Cloudflare](https://www.cloudflare.com/) solution provides the capability to ingest [Cloudflare logs](https://developers.cloudflare.com/logs/) into Microsoft Sentinel using the Codeless Connector Framework (CCF) and Azure Blob Storage. Refer to [Cloudflare documentation](https://developers.cloudflare.com/logs/about/) for more information.
 
@@ -100,7 +100,7 @@ This solution includes **22 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [Cloudflare](../content/cloudflare-ccf-cloudflare-fc7a6590.md) | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md)<br>[`Cloudflare_CL`](../tables/cloudflare-cl.md) |
+| [CloudflareCCF](../content/cloudflare-ccf-cloudflareccf-cd0e56db.md) | [`CloudflareV2_CL`](../tables/cloudflarev2-cl.md)<br>[`Cloudflare_CL`](../tables/cloudflare-cl.md) |
 
 ### Parsers
 
@@ -112,6 +112,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |------------|-------------------------------|--------------------|
+| 3.0.3      | 11-05-2026                    | Modified workbook file and fixed workbook metadata to reference Cloudflare parser and CCF connector; added deployment prerequisites note to connector description |
 | 3.0.2      | 22-04-2026                    | Fixed DCR transformKql for Type field and corrected invalid field data types |
 | 3.0.1      | 08-12-2025                    | Fixed invalid GUIDs, updated analytic rules, aligned URL entity mappings with legacy Cloudflare solution |
 | 3.0.0      | 02-10-2025                    | Includes all CCF connector definitions and configurations. |

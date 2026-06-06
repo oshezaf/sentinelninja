@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"`<br>`OperationNameValue contains "write"`<br>`ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"` | ? | ✗ | ? |
+| [`AzureActivity`](../tables/azureactivity.md) | `OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"`<br>`OperationNameValue contains "write"`<br>`ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"` | ✗ | ✗ | ✗ |
 
 ---
 

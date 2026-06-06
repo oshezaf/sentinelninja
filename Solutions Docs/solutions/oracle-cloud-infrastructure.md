@@ -14,12 +14,12 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | domains |
-| **Version** | 3.0.9 |
+| **Version** | 3.0.10 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Last Updated** | 2026-02-11 |
 | **Solution Folder** | [Oracle Cloud Infrastructure](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Oracle%20Cloud%20Infrastructure) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ocilogs) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ocilogs) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (87%) |
 
 The Oracle Cloud Infrastructure (OCI) solution provides the capability to ingest OCI Logs from [OCI Stream](https://docs.oracle.com/iaas/Content/Streaming/Concepts/streamingoverview.htm) into Microsoft Sentinel using the [OCI Streaming REST API](https://docs.oracle.com/iaas/api/#/streaming/streaming/20180418).
 
@@ -37,9 +37,8 @@ This Solution takes a dependency on the following technologies, and some of thes
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)** (plus 2 discovered⚠️):
+This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
-- [Oracle Cloud Infrastructure (via CCP) – Preview](../connectors/oci-connector-ccp-definition.md) ⚠️ 🔶
 - [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) 🔶
 - [[DEPRECATED] Oracle Cloud Infrastructure](../connectors/oraclecloudinfrastructurelogsconnector.md) ⚠️ 🔶
 
@@ -54,7 +53,7 @@ This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) 🔶 | [Oracle Cloud Infrastructure (via CCP) – Preview](../connectors/oci-connector-ccp-definition.md), [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) | Analytics, Hunting, Workbooks |
+| [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) 🔶 | [Oracle Cloud Infrastructure (via Codeless Connector Framework)](../connectors/oraclecloudinfraconnector.md) | Analytics, Hunting, Workbooks |
 | [`OCI_Logs_CL`](../tables/oci-logs-cl.md) 🔶 | [[DEPRECATED] Oracle Cloud Infrastructure](../connectors/oraclecloudinfrastructurelogsconnector.md) | Analytics, Hunting, Workbooks |
 
 
@@ -117,6 +116,7 @@ This solution includes **22 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                          |
 |-------------|--------------------------------|-----------------------------------------------------------------------------|
+| 3.0.10      | 26-05-2026                     | Updated OCI connector UI to include IAM permissions guidance and removed the "Important -" label. |
 | 3.0.9       | 10-02-2026                     | Add support for group Cursor                                                |
 | 3.0.8       | 05-02-2026                     | fix name in package 3.0.7                                                   |
 | 3.0.7       | 26-01-2026                     | Improve Instructions part of the connector with more InfoMessage.           |

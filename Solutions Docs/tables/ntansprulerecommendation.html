@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NTANspRuleRecommendation &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="ntansprulerecommendation">NTANspRuleRecommendation</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<p>Reference for NTANspRuleRecommendation table in Azure Monitor Logs.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Network</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntansprulerecommendation">View Documentation</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="schema">Schema (24 columns)</h2>
+<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntansprulerecommendation">Azure Monitor documentation</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalProperties</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Property bag for any additional properties.</td>
+</tr>
+<tr>
+  <td style="text-align:left">DestinationFqdns</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comma-separated destination fully qualified domain names for outbound traffic for a given NSP.</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The rule evaluation window end time.</td>
+</tr>
+<tr>
+  <td style="text-align:left">IpDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whois information of the IP in case of external traffic.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">For external public IPs and malicious IPs: two-letter country code (ISO 3166-1 alpha-2) where the IP is located.</td>
+</tr>
+<tr>
+  <td style="text-align:left">NspProfile</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">NSP Profile.</td>
+</tr>
+<tr>
+  <td style="text-align:left">NspResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">NSP resource ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">PaasResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource ID of the PaaS resource.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates if the flow is allowed or denied. Possible values are Allowed, Denied.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultDirection</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direction of the flow. Possible values are Inbound, Outbound.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates if the flow is acled by NSP or Resource.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the rule. Possible values are IP, ServiceTag, Subscription, FQDN.</td>
+</tr>
+<tr>
+  <td style="text-align:left">RuleValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Value for the rule.</td>
+</tr>
+<tr>
+  <td style="text-align:left">ServiceEndpoints</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comma-separated service endpoints. Service Endpoint traffic found.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceIPs</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comma-separated public source IPs in CIDR format for inbound flows.</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The rule evaluation windowstart time.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Event generation timestamp.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TrafficAnalyticsResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Traffic analytics resource ID.</td>
+</tr>
+<tr>
+  <td style="text-align:left">TrafficType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether the traffic is internal or external.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

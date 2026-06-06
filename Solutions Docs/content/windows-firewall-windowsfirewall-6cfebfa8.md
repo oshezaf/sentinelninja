@@ -19,8 +19,8 @@ This content item queries data from the following tables:
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`Heartbeat`](../tables/heartbeat.md) | `Solutions contains "windowsFirewall"` | ? | ✗ | ? |
-| [`SecurityEvent`](../tables/securityevent.md) | `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"` | ✓ | ✓ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "0"`<br>`ResultType != "0"` | ✓ | ✗ | ? |
+| [`SecurityEvent`](../tables/securityevent.md) | `AccountType == "User"`<br>`EventID in "4624,4625"`<br>`LogonType == "10"` | ✓ | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResultType == "0"`<br>`ResultType != "0"` | ✓ | ✗ | ✓ |
 | [`WindowsFirewall`](../tables/windowsfirewall.md) | `DestinationPort == "3389"`<br>`FirewallAction in "ALLOW,DROP"`<br>`SourceIP !in "::1,-"` | ✓ | ✗ | ? |
 
 ---

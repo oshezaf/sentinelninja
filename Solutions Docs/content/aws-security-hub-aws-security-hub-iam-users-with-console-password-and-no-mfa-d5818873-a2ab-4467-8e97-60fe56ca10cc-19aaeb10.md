@@ -24,7 +24,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | `AwsSecurityFindingGeneratorId == "security-control/IAM.5"`<br>`ComplianceSecurityControlId == "IAM.5"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` | ✓ | ✓ | ? |
+| [`AWSSecurityHubFindings`](../tables/awssecurityhubfindings.md) | `AwsSecurityFindingGeneratorId == "security-control/IAM.5"`<br>`ComplianceSecurityControlId == "IAM.5"`<br>`ComplianceStatus == "FAILED"`<br>`RecordState == "ACTIVE"` | ✓ | ✓ | ✓ |
 
 ---
 

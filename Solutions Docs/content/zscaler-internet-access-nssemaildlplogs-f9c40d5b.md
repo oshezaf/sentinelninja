@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceCustomString4Label == "rulelabels"`<br>`DeviceEventClassID == "DLP Incident"`<br>`DeviceProduct == "NSSEmaildlplog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceCustomString4Label == "rulelabels"`<br>`DeviceEventClassID == "DLP Incident"`<br>`DeviceProduct == "NSSEmaildlplog"`<br>`DeviceVendor == "Zscaler"` | ✓ | ✓ | ✓ |
 
 ---
 

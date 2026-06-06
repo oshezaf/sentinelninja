@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"`<br>`EventSource in "iam.amazonaws.com,identitystore.amazonaws.com,workdocs.amazonaws.com,workmail.amazonaws.com"` | ✓ | ✓ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName in "ADFS Trust,Azure Portal,Microsoft Azure PowerShell"`<br>`RiskLevelAggregated == "high"`<br>`RiskLevelDuringSignIn == "high"` | ✓ | ✗ | ? |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventName in "AddUserToGroup,ChangePassword,CreateAccessKey,CreateGroup,CreateMailUser,CreateOrganization,CreateRole,CreateServiceSpecificCredential,CreateUser,CreateVirtualMFADevice,DeleteAccessKey,DeleteGroup,DeleteGroupPolicy,DeleteLoginProfile,DeleteRole,DeleteServiceSpecificCredential,DeleteUser,DisableMailUsers,EnableMailUsers,RegisterToWorkMail,RemoveUserFromGroup,ResetPassword,SetDefaultMailDomain,SetMailUserDetails,UpdateAccountEmailAddress,UploadServerCertificate"`<br>`EventSource in "iam.amazonaws.com,identitystore.amazonaws.com,workdocs.amazonaws.com,workmail.amazonaws.com"` | ✓ | ✓ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `AppDisplayName in "ADFS Trust,Azure Portal,Microsoft Azure PowerShell"`<br>`RiskLevelAggregated == "high"`<br>`RiskLevelDuringSignIn == "high"` | ✓ | ✗ | ✓ |
 
 ---
 

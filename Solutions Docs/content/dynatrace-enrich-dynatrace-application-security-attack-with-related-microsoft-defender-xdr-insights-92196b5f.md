@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProductName in "Azure Active Directory Identity Protection,Azure Advanced Threat Protection,Azure Security Center,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"` | ✓ | ✗ | ? |
+| [`SecurityAlert`](../tables/securityalert.md) | `ProductName in "Azure Active Directory Identity Protection,Azure Advanced Threat Protection,Azure Security Center,Microsoft 365 Defender,Microsoft Cloud App Security,Microsoft Defender Advanced Threat Protection,Office 365 Advanced Threat Protection"` | ✓ | ✗ | ✓ |
 
 ## Logic App Connectors
 

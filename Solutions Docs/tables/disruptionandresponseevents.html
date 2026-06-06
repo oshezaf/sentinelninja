@@ -21,9 +21,6 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
 <hr />
-<blockquote>
-<p><strong>Defender XDR Only:</strong> This table is available in Microsoft Defender XDR advanced hunting but is not available in the Azure Monitor Log Analytics table reference.</p>
-</blockquote>
 <p><a href="automatic-attack-disruption.html">Automatic attack disruption</a> events in Microsoft Defender XDR</p>
 <table>
 <thead>
@@ -35,11 +32,19 @@
 <tbody>
 <tr>
   <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">XDR</td>
+  <td style="text-align:left">Security, XDR</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
   <td style="text-align:left">✗ No</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents">View Documentation</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
@@ -47,7 +52,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="schema">Schema (37 columns)</h2>
+<h2 id="schema">Schema (42 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/disruptionandresponseevents">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
@@ -59,39 +64,49 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
+</tr>
+<tr>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
   <td style="text-align:left">ActionType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of disruption action takenTip: For more information, seeActionType values.</td>
+  <td style="text-align:left">Type of disruption action taken</td>
 </tr>
 <tr>
   <td style="text-align:left">AuthenticationProtocol</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Authentication protocol that the compromised user used to sign in; possible values: Undefined, NTLM, Kerberos</td>
+  <td style="text-align:left">Authentication protocol that the compromised user used to sign in</td>
 </tr>
 <tr>
   <td style="text-align:left">CompromisedAccountCount</td>
-  <td style="text-align:left">integer</td>
+  <td style="text-align:left">int</td>
   <td style="text-align:left">Number of compromised accounts that are part of the policy</td>
 </tr>
 <tr>
   <td style="text-align:left">DataSources</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Products or services that provided information for the event; for example: Microsoft Defender for Endpoint</td>
+  <td style="text-align:left">Products or services that provided information for the event</td>
 </tr>
 <tr>
   <td style="text-align:left">DeviceId</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the device that reported the event; the reporting device can be the one that blocked the access, the compromised device itself, or even a different device that is aware of the attack</td>
+  <td style="text-align:left">Unique identifier for the device that reported the event</td>
 </tr>
 <tr>
   <td style="text-align:left">DeviceName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the device that reported the event; the reporting device can be the one that blocked the access, the compromised device itself, or even a different device that is aware of the attack</td>
+  <td style="text-align:left">Name of the device that reported the event</td>
 </tr>
 <tr>
   <td style="text-align:left">DomainName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Domain name that the device that reported the event is joined to; the reporting device can be the one that blocked the access, the compromised device itself, or even a different device that is aware of the attack</td>
+  <td style="text-align:left">Domain name that the device that reported the event is joined to</td>
 </tr>
 <tr>
   <td style="text-align:left">FileName</td>
@@ -101,12 +116,12 @@
 <tr>
   <td style="text-align:left">InitiatingProcessFileName</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the process that triggered the block action, based on the perspective of the reporting device</td>
+  <td style="text-align:left">Name of the process that triggered the block action</td>
 </tr>
 <tr>
   <td style="text-align:left">InitiatingProcessId</td>
-  <td style="text-align:left">integer</td>
-  <td style="text-align:left">Process ID (PID) of the process that triggered that block action, based on the perspective of the reporting device</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Process ID (PID) of the process that triggered that block action</td>
 </tr>
 <tr>
   <td style="text-align:left">InterfaceFriendlyName</td>
@@ -116,7 +131,7 @@
 <tr>
   <td style="text-align:left">InterfaceUuid</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier (UUID) for the Remote Procedure Call (RPC) interface that the attacker attempted to access</td>
+  <td style="text-align:left">Unique identifier (UUID) for the RPC interface that the attacker attempted to access</td>
 </tr>
 <tr>
   <td style="text-align:left">IpAddress</td>
@@ -125,18 +140,18 @@
 </tr>
 <tr>
   <td style="text-align:left">IsPolicyOn</td>
-  <td style="text-align:left">boolean</td>
-  <td style="text-align:left">Indicates the current state of the policy on the device at the time of the disruption event; possible values: true (the policy is on, therefore it was applied or enforced), false (the policy was turned off or revoked from the device)</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates the current state of the policy on the device at the time of the disruption event</td>
 </tr>
 <tr>
   <td style="text-align:left">LogonId</td>
   <td style="text-align:left">long</td>
-  <td style="text-align:left">Identifier for a logon session; this is unique on the same device only between restarts</td>
+  <td style="text-align:left">Identifier for a logon session</td>
 </tr>
 <tr>
   <td style="text-align:left">LogonType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of logon session the user attempted; possible values: interactive, remote interactive (RDP), network, batch job, service</td>
+  <td style="text-align:left">Type of logon session the user attempted</td>
 </tr>
 <tr>
   <td style="text-align:left">PolicyHash</td>
@@ -166,12 +181,12 @@
 <tr>
   <td style="text-align:left">ReportType</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">The nature and impact level of the reported event; possible values: Prevented (the action, such as a connection or authentication attempt, was fully blocked before execution), Blocked (an active connection or session was forcibly terminated, with partial impact on the device), PolicyUpdated (the client received and possibly applied a new policy)</td>
+  <td style="text-align:left">The nature and impact level of the reported event</td>
 </tr>
 <tr>
   <td style="text-align:left">Service</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the service the attacker attempted to use, if the attacker signed in using Kerberos or NTLM; for example: SMB, HTTP, cifs, SMB, host, ldap, SMB, krbtgt</td>
+  <td style="text-align:left">Name of the service the attacker attempted to use</td>
 </tr>
 <tr>
   <td style="text-align:left">SessionId</td>
@@ -201,12 +216,17 @@
 <tr>
   <td style="text-align:left">SourceIpAddress</td>
   <td style="text-align:left">string</td>
-  <td style="text-align:left">IP address where the attacker communication originated from and was blocked by automatic attack disruption</td>
+  <td style="text-align:left">IP address where the attacker communication originated from</td>
 </tr>
 <tr>
   <td style="text-align:left">SourcePort</td>
-  <td style="text-align:left">integer</td>
+  <td style="text-align:left">int</td>
   <td style="text-align:left">Port where the attacker communication originated from</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
   <td style="text-align:left">SourceUserDomainName</td>
@@ -239,9 +259,19 @@
   <td style="text-align:left">Domain name of the device that was targeted or attacked</td>
 </tr>
 <tr>
-  <td style="text-align:left">Timestamp</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the event was recorded</td>
+  <td style="text-align:left">Date and time the event was recorded by the MDE agent on the endpoint.</td>
+</tr>
+<tr>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>

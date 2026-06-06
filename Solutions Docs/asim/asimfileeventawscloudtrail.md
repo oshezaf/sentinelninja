@@ -31,7 +31,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventSource == "s3.amazonaws.com"` | ✓ | ✓ | ? |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | `EventSource == "s3.amazonaws.com"` | ✓ | ✓ | ✓ |
 
 ## Parameters
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⚠️ GravityZone &mdash; Solutions Analyzer</title>
+<title>GravityZone Solution for Sentinel &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,10 +15,8 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="gravityzone">⚠️ GravityZone</h1>
-<blockquote>
-<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
-</blockquote>
+<h1 id="gravityzone-solution-for-sentinel">GravityZone Solution for Sentinel</h1>
+<p><em>Solution: GravityZone</em></p>
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Bitdefender.svg" alt="GravityZone Logo" width="75" height="75">
 
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -50,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -61,19 +59,34 @@
   <td style="text-align:left">2026-04-21</td>
 </tr>
 <tr>
+  <td style="text-align:left"><strong>Last Updated</strong></td>
+  <td style="text-align:left">2026-05-29</td>
+</tr>
+<tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
   <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GravityZone">GravityZone</a></td>
 </tr>
+<tr>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitdefendersrl1662990682574.gravityzone_sentinel_solution">Azure Marketplace</a> · Popularity: 🟢 High (81%)</td>
+</tr>
 </tbody>
 </table>
-<p>The <strong>Bitdefender GravityZone Solution for Microsoft Sentinel</strong> connects your GravityZone environment to Microsoft Sentinel through the <strong>Event Push Service API</strong>. Once deployed, it streams all GravityZone event types into Microsoft Sentinel and stores them as logs for monitoring, investigation, and analysis.</p>
+<p>The <strong>Bitdefender GravityZone Solution for Microsoft Sentinel</strong> connects your GravityZone environment to Microsoft Sentinel through the <strong>Event Push Service API</strong>. Once deployed, it streams all GravityZone event types into Microsoft Sentinel, storing them as logs and automatically generating incidents for selected categories.</p>
 <p>To deploy, complete the fields below and select <strong>Review + create</strong>:</p>
 <ul>
 <li><strong>Subscription</strong>: The Azure subscription where you want to deploy the solution.</li>
 <li><strong>Resource group</strong>: Select an existing resource group or create a new one to organize your Microsoft Sentinel resources.</li>
 <li><strong>Workspace</strong>: The Microsoft Sentinel workspace that will receive GravityZone data. The workspace needs to be onboarded into Microsoft Sentinel beforehand.</li>
 </ul>
-<p>After deployment, follow the setup steps in this KB article to complete the configuration and start event ingestion.</p>
+<p>After deployment, follow this step-by-step article to complete the configuration and start event ingestion.</p>
+<p><a href="https://www.bitdefender.com/business/support/en/77209-1455218-integrate-gravityzone-with-azure-sentinel.html">Customers</a> | <a href="https://www.bitdefender.com/business/support/en/77211-1455218-integrate-gravityzone-with-azure-sentinel.html">Partners</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
 <h2 id="data-connectors">Data Connectors</h2>
 <p>This solution provides <strong>1 data connector(s)</strong>:</p>
 <ul>
@@ -97,6 +110,41 @@
 </tr>
 </tbody>
 </table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>1 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/gravityzone-nrt-gravityzone-incident-alerts-73c803aa-1188-45dd-8379-62a3319d3d9f-c35dc426.html">NRT GravityZone Incident Alerts</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">LateralMovement</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>
@@ -107,6 +155,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>28-04-2026</td>
+  <td>Added analytic rule template</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>21-04-2026</td>

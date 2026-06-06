@@ -15,7 +15,7 @@
 | **Publisher** | Sonrai |
 | **Support Tier** | Partner |
 | **Categories** | domains |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Sonrai - support@sonraisecurity.com |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [SonraiSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SonraiSecurity) |
@@ -37,19 +37,21 @@ The [Sonrai Security](https://sonraisecurity.com/) solution provides the capabil
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶
+- [Sonrai Security Push Connector](../connectors/sonraisecuritypush.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`SonraiSecurityTickets_CL`](../tables/sonraisecuritytickets-cl.md) | [Sonrai Security Push Connector](../connectors/sonraisecuritypush.md) | - |
 | [`Sonrai_Tickets_CL`](../tables/sonrai-tickets-cl.md) 🔶 | [Sonrai Data Connector](../connectors/sonraidataconnector.md) | Analytics, Workbooks |
 
 
@@ -88,6 +90,7 @@ This solution includes **10 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                       |
 |-------------|--------------------------------|--------------------------------------------------------------------------|
+| 3.0.1       | 27-05-2023                     | Sonrai CCF private preview                               |
 | 3.0.0       | 04-12-2023                     | Added entity mapping to **Analytic Rules**                               |
 
 ---

@@ -1,6 +1,4 @@
-# ⚠️ OpenAI (via Codeless Connector Framework)
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# OpenAI (via Codeless Connector Framework)
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/OpenAI.svg" alt="" width="75" height="75">
 
@@ -20,6 +18,7 @@
 | **DCR Definition Files** | [OpenAI_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI/Data%20Connectors/OpenAI_CCP/OpenAI_DCR.json) |
 | **CCF Configuration** | [OpenAI_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OpenAI/Data%20Connectors/OpenAI_CCP/OpenAI_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#openai-via-codeless-connector-framework) |
 
 The OpenAI data connector enables you to ingest audit logs, chat completion data, or both from your OpenAI organization into Microsoft Sentinel through the OpenAI API. Each data type uses a separate REST API poller and requires a different API key type: **audit logs** (user actions, API key management, organization changes, security events) require an **organization-level admin API key**, while **chat completions** (model usage, token consumption, performance metrics) require a **project-level API key**. You may configure one or both data types independently. Audit logs are collected into the custom OpenAIAuditLogs_CL table (aliased by the OpenAIAuditLogs parser). Chat completions are normalized into the ASimAgentEventLogs standard ASIM table (aliased by the OpenAIChatCompletions parser) for security monitoring, compliance analysis, and usage monitoring. Refer to [OpenAI API documentation](https://platform.openai.com/docs/api-reference) for more information.
 
@@ -29,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`ASimAgentEventLogs`](../tables/asimagenteventlogs.md) | `EventProduct == "OpenAI API Platform"`<br>`EventType == "ChatCompletion"`<br>`EventVendor == "OpenAI"` | ? | ? | ? |
+| [`ASimAgentEventLogs`](../tables/asimagenteventlogs.md) | `EventProduct == "OpenAI API Platform"`<br>`EventType == "ChatCompletion"`<br>`EventVendor == "OpenAI"` | ? | ✗ | ? |
 | [`OpenAIAuditLogs_CL`](../tables/openaiauditlogs-cl.md) |  | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

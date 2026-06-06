@@ -18,6 +18,7 @@
 | **DCR Definition Files** | [ElasticAgent_DCR.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_DCR.json) |
 | **CCF Configuration** | [ElasticAgent_PollingConfig.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent/Data%20Connectors/ElasticAgent_CCF/ElasticAgent_PollingConfig.json) |
 | **CCF Capabilities** | `APIKey`, `Paging`, `POST` |
+| **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#elastic-agent-via-codeless-connector-framework) |
 
 The Elastic Agent data connector enables you to ingest system metrics, logs, and telemetry data collected by Elastic Agent from Elasticsearch into Microsoft Sentinel. This connector uses the Elasticsearch Search API with API key authentication to query multiple data streams (CPU, memory, process, filesystem, network, load, uptime, agent metrics, and logs). It supports DCR-based ingestion time transformations for efficient query execution. For more information, see the API documentation: https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-search
 
@@ -27,7 +28,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`ElasticAgentLogsV2_CL`](../tables/elasticagentlogsv2-cl.md) | ? | ✓ | ? |
+| [`ElasticAgentLogsV2_CL`](../tables/elasticagentlogsv2-cl.md) | ✗ | ✓ | ✗ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

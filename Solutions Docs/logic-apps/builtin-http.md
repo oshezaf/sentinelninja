@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 375 |
-| **Solutions** | 59 |
+| **Playbooks using** | 376 |
+| **Solutions** | 60 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 
 ## Playbooks Using This Connector
@@ -120,6 +120,7 @@
 | [Cyjax Domain Monitor](../content/cyjax-cyjax-domain-monitor-66e866eb.md) | [Cyjax](../solutions/cyjax.md) | 0 | 1 |
 | [Cyjax Incident Enrichment](../content/cyjax-cyjax-incident-enrichment-ce175d04.md) | [Cyjax](../solutions/cyjax.md) | 0 | 1 |
 | [Cyren to CrowdStrike IOC Automation](../content/cyren-crowdstrike-threatintelligence-cyren-to-crowdstrike-ioc-automation-635f4db9.md) | [Cyren-CrowdStrike-ThreatIntelligence](../solutions/cyren-crowdstrike-threatintelligence.md) | 0 | 5 |
+| [Cyren to Defender TI - Playbook](../content/cyren-defender-threatintelligence-cyren-to-defender-ti-playbook-476f8f5d.md) | [Cyren-Defender-ThreatIntelligence](../solutions/cyren-defender-threatintelligence.md) | 0 | 2 |
 | [Cyren to SentinelOne IOC Automation](../content/cyren-sentinelone-threatintelligence-cyren-to-sentinelone-ioc-automation-aeb65ff5.md) | [Cyren-SentinelOne-ThreatIntelligence](../solutions/cyren-sentinelone-threatintelligence.md) | 0 | 6 |
 | [DataminrPulseAlertEnrichment](../content/dataminr-pulse-dataminrpulsealertenrichment-262cc5df.md) | [Dataminr Pulse](../solutions/dataminr-pulse.md) | 0 | 3 |
 | [Dataverse: Send notification to manager](../content/microsoft-business-applications-dataverse-send-notification-to-manager-f5cc710c.md) | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | 0 | 2 |

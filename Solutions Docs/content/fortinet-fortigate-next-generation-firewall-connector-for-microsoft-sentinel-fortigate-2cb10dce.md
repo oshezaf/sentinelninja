@@ -18,7 +18,7 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity contains "forward"`<br>`DestinationTranslatedAddress contains "."`<br>`DeviceInboundInterface in "port1,port2"`<br>`DeviceProduct contains "Fortigate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `Activity contains "forward"`<br>`DestinationTranslatedAddress contains "."`<br>`DeviceInboundInterface in "port1,port2"`<br>`DeviceProduct contains "Fortigate"`<br>`DeviceVendor == "Fortinet"` | ✓ | ✓ | ✓ |
 
 ---
 

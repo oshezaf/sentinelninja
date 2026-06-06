@@ -6,7 +6,7 @@
 
 ---
 
-This query shows new user created.
+This query hunts for newly created Slack users to help identify unauthorized or suspicious account provisioning activity.
 
 | Attribute | Value |
 |:----------|:------|
@@ -15,7 +15,7 @@ This query shows new user created.
 | **ID** | `d65400c2-50a3-46cc-b3e6-1cb72b953e72` |
 | **Severity** | Medium |
 | **Tactics** | Persistence |
-| **Techniques** | T1136 |
+| **Techniques** | T1136, T1136.003 |
 | **Required Connectors** | [SlackAuditAPI](../connectors/slackauditapi.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlackAudit/Hunting%20Queries/SlackAuditNewUsers.yaml) |
 
@@ -26,7 +26,7 @@ This content item queries data from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`SlackAuditNativePoller_CL`](../tables/slackauditnativepoller-cl.md) 🔶 | ? | ✓ | ? |
-| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ? | ✓ | ? |
+| [`SlackAuditV2_CL`](../tables/slackauditv2-cl.md) | ✓ | ✓ | ✓ |
 | [`SlackAudit_CL`](../tables/slackaudit-cl.md) 🔶 | ? | ✓ | ? |
 
 ---

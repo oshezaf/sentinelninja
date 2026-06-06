@@ -19,9 +19,9 @@
 | **Version** | 3.0.1 |
 | **Author** | XBOW - support@xbow.com |
 | **First Published** | 2026-03-04 |
-| **Last Updated** | 2026-03-23 |
+| **Last Updated** | 2026-05-26 |
 | **Solution Folder** | [XBOW](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/XBOW) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/xbowinc.xbow-sentinel-connector) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/xbowinc.xbow-sentinel-connector) · Popularity: 🔵 Medium (65%) |
 
 The **XBOW** solution ingests assets, assessment activity, and vulnerability findings from the [XBOW Security Platform](https://console.xbow.com) into Microsoft Sentinel. XBOW is an AI-powered autonomous penetration testing platform that continuously discovers and validates vulnerabilities in your web applications. This connector surfaces enriched findings — including proof-of-concept evidence, reproduction recipes, impact assessments, and mitigation guidance — directly in your Microsoft Sentinel workspace.
 

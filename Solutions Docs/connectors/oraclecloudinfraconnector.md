@@ -30,7 +30,7 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) 🔶 | ? | ✓ | ? |
+| [`OCI_LogsV2_CL`](../tables/oci-logsv2-cl.md) 🔶 | ✓ | ✓ | ✓ |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -41,6 +41,7 @@ This connector ingests data into the following tables:
 
 **Custom Permissions:**
 - **OCI Streaming API access**: Access to the OCI Streaming API through a API Signing Keys is required.
+- **OCI IAM Policy**: The OCI user associated with the API signing key must have sufficient IAM permissions to consume data from the OCI Stream. The API key provides authentication only; an IAM policy is required for authorization. At minimum, configure: Allow group <group-name> to use stream-pull in compartment <compartment-name>.
 
 ## Setup Instructions
 

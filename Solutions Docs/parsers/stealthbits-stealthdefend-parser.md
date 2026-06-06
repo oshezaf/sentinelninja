@@ -23,7 +23,7 @@ This parser reads from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "StealthDEFEND"`<br>`DeviceVendor == "STEALTHbits Technologies"` | ✓ | ✓ | ? |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | `DeviceProduct == "StealthDEFEND"`<br>`DeviceVendor == "STEALTHbits Technologies"` | ✓ | ✓ | ✓ |
 
 ---
 

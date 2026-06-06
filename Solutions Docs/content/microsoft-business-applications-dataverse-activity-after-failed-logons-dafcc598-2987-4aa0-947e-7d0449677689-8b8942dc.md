@@ -24,8 +24,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DataverseActivity`](../tables/dataverseactivity.md) |  | ✓ | ✗ | ? |
-| [`SigninLogs`](../tables/signinlogs.md) | `ResultType in "50125,50140,70043,70044"` | ✓ | ✗ | ? |
+| [`DataverseActivity`](../tables/dataverseactivity.md) |  | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `ResultType in "50125,50140,70043,70044"` | ✓ | ✗ | ✓ |
 
 ---
 
