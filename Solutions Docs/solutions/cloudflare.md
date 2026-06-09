@@ -1,6 +1,4 @@
-# Cloudflare for Microsoft Sentinel
-
-*Solution: Cloudflare*
+# Cloudflare
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Cloudflare Logo" width="75" height="75">
 
@@ -15,12 +13,11 @@
 | **Publisher** | Cloudflare |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.cloudflare.com](https://support.cloudflare.com) |
-| **Categories** | domains |
+| **Categories** | Networking,Security - Network |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |
 | **Solution Folder** | [Cloudflare](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cloudflare) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cloudflare.cloudflare_sentinel) · Rating: ★★☆☆☆ 1.7/5 (3 ratings) · Popularity: 🟢 High (85%) |
 
 The [Cloudflare](https://www.cloudflare.com/) solution provides the capability to ingest [Cloudflare logs](https://developers.cloudflare.com/logs/) into Microsoft Sentinel using the Cloudflare Logpush and Azure Blob Storage. Refer to [Cloudflare documentation](https://developers.cloudflare.com/logs/about/) for more information.
  

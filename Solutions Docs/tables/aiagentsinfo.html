@@ -28,22 +28,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">XDR</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-aiagentsinfo-table">View Documentation</a></td>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-aiagentsinfo-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -52,201 +52,201 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">AccessCapabilities</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Data access capabilities granted to the agent</td>
+<td style="text-align: left;">AccessCapabilities</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Data access capabilities granted to the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">AccessControlPolicy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Users that can interact with the agent; possible values: Any, Copilot readers, Group membership, Any (multitenant)</td>
+<td style="text-align: left;">AccessControlPolicy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Users that can interact with the agent; possible values: Any, Copilot readers, Group membership, Any (multitenant)</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentActionTriggers</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">List of triggers that makes an autonomous agent take action</td>
+<td style="text-align: left;">AgentActionTriggers</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of triggers that makes an autonomous agent take action</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentAppId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique app identifier registered for the agent in Microsoft Entra</td>
+<td style="text-align: left;">AgentAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique app identifier registered for the agent in Microsoft Entra</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentCreationTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the agent was created</td>
+<td style="text-align: left;">AgentCreationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the agent was created</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentDescription</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Description of the agent as displayed in the agent's source</td>
+<td style="text-align: left;">AgentDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the agent as displayed in the agent's source</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Status of the agent; possible values: Created, Published, Deleted</td>
+<td style="text-align: left;">AgentStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the agent; possible values: Created, Published, Deleted</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentToolsDetails</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Specifications of the tools that the agent can access and perform actions on</td>
+<td style="text-align: left;">AgentToolsDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Specifications of the tools that the agent can access and perform actions on</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentTopicsDetails</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Specifications of the topics that the agent can perform</td>
+<td style="text-align: left;">AgentTopicsDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Specifications of the topics that the agent can perform</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentUsers</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">List of user principal names (UPNs) or group IDs that can use the agent</td>
+<td style="text-align: left;">AgentUsers</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of user principal names (UPNs) or group IDs that can use the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">AIAgentId</td>
-  <td style="text-align:left">guid</td>
-  <td style="text-align:left">Unique identifier for the agent as assigned to it in Microsoft 365 Copilot or Copilot Studio</td>
+<td style="text-align: left;">AIAgentId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Unique identifier for the agent as assigned to it in Microsoft 365 Copilot or Copilot Studio</td>
 </tr>
 <tr>
-  <td style="text-align:left">AIAgentName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Display name of the agent</td>
+<td style="text-align: left;">AIAgentName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Display name of the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">AIModel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The AI model powering the agent</td>
+<td style="text-align: left;">AIModel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AI model powering the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">AuthenticationTrigger</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates when authentication is triggered for the agent; possible values: As Needed, Always</td>
+<td style="text-align: left;">AuthenticationTrigger</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates when authentication is triggered for the agent; possible values: As Needed, Always</td>
 </tr>
 <tr>
-  <td style="text-align:left">AuthorizedSecurityGroupIds</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">List of Azure Active Directory Group IDs that are allowed to interact with the agent</td>
+<td style="text-align: left;">AuthorizedSecurityGroupIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of Azure Active Directory Group IDs that are allowed to interact with the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">ChildAgentsSchemaNames</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Lists the schema names of the child agents that exist within the main agent</td>
+<td style="text-align: left;">ChildAgentsSchemaNames</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Lists the schema names of the child agents that exist within the main agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConnectedAgentsSchemaNames</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Lists the schema names of connected agents, which are independently managed agents that are linked to the main one for orchestration</td>
+<td style="text-align: left;">ConnectedAgentsSchemaNames</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Lists the schema names of connected agents, which are independently managed agents that are linked to the main one for orchestration</td>
 </tr>
 <tr>
-  <td style="text-align:left">CreatorAccountUpn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">User principal name (UPN) of the account that created the agent</td>
+<td style="text-align: left;">CreatorAccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account that created the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">ElementTypes</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Technical component types that make up the agent</td>
+<td style="text-align: left;">ElementTypes</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Technical component types that make up the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">EntraBlueprintId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The agent's identity blueprint principal identifier by Microsoft Entra Agent ID</td>
+<td style="text-align: left;">EntraBlueprintId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The agent's identity blueprint principal identifier by Microsoft Entra Agent ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">EntraObjectId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The agent's unique enterprise application object identifier by Microsoft Entra ID</td>
+<td style="text-align: left;">EntraObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The agent's unique enterprise application object identifier by Microsoft Entra ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">EnvironmentId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identifier of the Microsoft Power Platform environment the agent resides in</td>
+<td style="text-align: left;">EnvironmentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the Microsoft Power Platform environment the agent resides in</td>
 </tr>
 <tr>
-  <td style="text-align:left">Instructions</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The agent's system prompt that defines its default behavior, persona, and operating boundaries</td>
+<td style="text-align: left;">Instructions</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The agent's system prompt that defines its default behavior, persona, and operating boundaries</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsBlocked</td>
-  <td style="text-align:left">boolean</td>
-  <td style="text-align:left">Indicates whether the agent has been blocked by an administrator</td>
+<td style="text-align: left;">IsBlocked</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates whether the agent has been blocked by an administrator</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsGenerativeOrchestrationEnabled</td>
-  <td style="text-align:left">boolean</td>
-  <td style="text-align:left">Indicates whether the agent uses generative orchestration (that is, dynamically chooses tools, knowledge, and actions based on context) to operate</td>
+<td style="text-align: left;">IsGenerativeOrchestrationEnabled</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Indicates whether the agent uses generative orchestration (that is, dynamically chooses tools, knowledge, and actions based on context) to operate</td>
 </tr>
 <tr>
-  <td style="text-align:left">KnowledgeDetails</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Details about the knowledge sources added to the agent</td>
+<td style="text-align: left;">KnowledgeDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details about the knowledge sources added to the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastModifiedByUpn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">User principal name (UPN) of the account that last modified that agent</td>
+<td style="text-align: left;">LastModifiedByUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account that last modified that agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastModifiedTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the agent was last modified</td>
+<td style="text-align: left;">LastModifiedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the agent was last modified</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastPublishedByUpn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">User principal name (UPN) of the account that last published the agent</td>
+<td style="text-align: left;">LastPublishedByUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account that last published the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastPublishedTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the agent was last published</td>
+<td style="text-align: left;">LastPublishedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the agent was last published</td>
 </tr>
 <tr>
-  <td style="text-align:left">OwnerAccountUpns</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">User principal names (UPN) of all the owners of the agent</td>
+<td style="text-align: left;">OwnerAccountUpns</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal names (UPN) of all the owners of the agent</td>
 </tr>
 <tr>
-  <td style="text-align:left">Platform</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The platform that provided the information about the agents; possible values: Copilot Studio</td>
+<td style="text-align: left;">Platform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The platform that provided the information about the agents; possible values: Copilot Studio</td>
 </tr>
 <tr>
-  <td style="text-align:left">RawAgentInfo</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Contents of the raw JSON that describes the agent and contains configuration details, as received from the provider</td>
+<td style="text-align: left;">RawAgentInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contents of the raw JSON that describes the agent and contains configuration details, as received from the provider</td>
 </tr>
 <tr>
-  <td style="text-align:left">RegistrySource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Registry that provided the agent's metadata</td>
+<td style="text-align: left;">RegistrySource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Registry that provided the agent's metadata</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceAgentId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The platform-native identifier of the agent, such as the Azure Resource Manager (ARM) identifier for Microsoft Foundry agents or the environment-scoped agent identifier for Copilot Studio agents</td>
+<td style="text-align: left;">SourceAgentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The platform-native identifier of the agent, such as the Azure Resource Manager (ARM) identifier for Microsoft Foundry agents or the environment-scoped agent identifier for Copilot Studio agents</td>
 </tr>
 <tr>
-  <td style="text-align:left">Timestamp</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Last date and time recorded for the agent info</td>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Last date and time recorded for the agent info</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserAuthenticationType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The agentâs configured authentication type for users interacting with the agent; possible values: None, Microsoft, Custom</td>
+<td style="text-align: left;">UserAuthenticationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The agentâs configured authentication type for users interacting with the agent; possible values: None, Microsoft, Custom</td>
 </tr>
 <tr>
-  <td style="text-align:left">Version</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Version of the agent</td>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the agent</td>
 </tr>
 </tbody>
 </table>
@@ -254,7 +254,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

@@ -15,12 +15,12 @@
 | **Publisher** | Silverfort |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.silverfort.com/customer-success/#support](https://www.silverfort.com/customer-success/#support) |
-| **Categories** | domains |
+| **Categories** | Identity |
 | **Version** | 1.0.0 |
 | **Author** | Silverfort |
 | **First Published** | 2024-09-01 |
 | **Solution Folder** | [Silverfort](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Silverfort) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/silverfort.microsoft-sentinel-solution-silverfort) · Popularity: 🔵 Medium (58%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/silverfort.microsoft-sentinel-solution-silverfort) · Popularity: 🔵 Medium (60%) |
 
 The [Silverfort](https://silverfort.com) ITDR Admin Console connector solution allows ingestion of Silverfort events and logging into Microsoft Sentinel.
  Silverfort provides syslog based events and logging using Common Event Format (CEF). By forwarding your Silverfort ITDR Admin Console CEF data into Microsoft Sentinel, you can take advantage of Sentinels's search & correlation, alerting, and threat intelligence enrichment on Silverfort data. 

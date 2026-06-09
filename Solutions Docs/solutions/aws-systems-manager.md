@@ -13,7 +13,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR) |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **Last Updated** | 2026-01-15 |

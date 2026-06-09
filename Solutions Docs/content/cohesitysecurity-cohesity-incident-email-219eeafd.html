@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/cohesitysecurity.html">CohesitySecurity</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/cohesitysecurity.html">CohesitySecurity</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Send_Incident_Email/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CohesitySecurity/Playbooks/Cohesity_Send_Incident_Email/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,48 +47,35 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-outlook.html"><code>outlook</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-outlook.html"><code>outlook</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="outlook"><a href="../logic-apps/managed-outlook.html"><code>outlook</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Send_email_(V2)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/v2/Mail</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`outlook`](../logic-apps/managed-outlook.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Send_email_(V2) | post | `/v2/Mail` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -103,53 +90,45 @@
 </ol>
 <h2 id="deployment-instructions">Deployment instructions</h2>
 <ol>
-<li>Deploy the playbook by clicking on the &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCohesitySecurity%2FPlaybooks%2FCohesity_Send_Incident_Email%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></li>
-<li>Fill in the required parameters:</li>
+<li>Deploy the playbook by clicking on the "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCohesitySecurity%2FPlaybooks%2FCohesity_Send_Incident_Email%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></li>
+<li>Fill in the required parameters:
+* <strong>Playbook Name</strong>: Playbook display name.
+* <strong>Email ID</strong>: Email (preferably a distribution list) for sending out incident notifications</li>
 </ol>
-<ul>
-<li><strong>Playbook Name</strong>: Playbook display name.</li>
-<li><strong>Email ID</strong>: Email (preferably a distribution list) for sending out incident notifications</li>
-</ul>
 <h2 id="post-deployment-instructions">Post-Deployment instructions</h2>
 <ol>
-<li>Make sure the user that runs the playbook has the role <em>Microsoft Sentinel Playbook Operator</em> assigned. To assign the role,</li>
+<li>
+<p>Make sure the user that runs the playbook has the role <em>Microsoft Sentinel Playbook Operator</em> assigned. To assign the role,
+* Under the <em>Subscriptions</em> tab from the <em>Home</em> page, choose your subscription name.
+* Choose the <em>Access Control (IAM)</em> option from the left pane.
+* Click on <em>Add &gt; Add Role Assignment</em> and add <em>Microsoft Sentinel Playbook Operator</em> to the user.</p>
+</li>
+<li>
+<p>To enable this playbook, you need authorize Outlook connection (<a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/understanding-api-connections-for-your-microsoft-sentinel/ba-p/2593973">details</a>)
+* Go to <em>Logic Apps</em> and choose your playbook.
+* Choose <em>Development Tools\API Connections</em>.
+* Select a connection you'd like to authorize.
+* Click on <em>General\Edit API Connection</em>.
+* Press the <em>Authorize</em> button.</p>
+</li>
 </ol>
-<ul>
-<li>Under the <em>Subscriptions</em> tab from the <em>Home</em> page, choose your subscription name.</li>
-<li>Choose the <em>Access Control (IAM)</em> option from the left pane.</li>
-<li>Click on <em>Add &gt; Add Role Assignment</em> and add <em>Microsoft Sentinel Playbook Operator</em> to the user.</li>
-</ul>
-<ol start="2">
-<li>To enable this playbook, you need authorize Outlook connection (<a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/understanding-api-connections-for-your-microsoft-sentinel/ba-p/2593973">details</a>)</li>
-</ol>
-<ul>
-<li>Go to <em>Logic Apps</em> and choose your playbook.</li>
-<li>Choose <em>Development Tools\API Connections</em>.</li>
-<li>Select a connection you'd like to authorize.</li>
-<li>Click on <em>General\Edit API Connection</em>.</li>
-<li>Press the <em>Authorize</em> button.</li>
-</ul>
-<p>Alternatively, you can follow these steps to achieve the same goal. This would be especially useful if the previous steps didn’t work for you.</p>
-<ul>
-<li>Go to <em>Logic Apps</em>.</li>
-<li>Click on the playbook and press <em>Edit</em>.</li>
-<li>Choose <em>Send email (V2)</em> block.</li>
-<li>Click on <em>Change Connection</em>.</li>
-<li>Click on the &quot;!&quot; icon to authorize the connection or choose a different, previously authorized, connection.</li>
-<li>Press <em>Save</em> button to save changes in your playbook.</li>
-<li>If it doesn't work, repeat the steps but either choose a different connection or fix possible authorization errors for the chosen one.</li>
-</ul>
+<p>Alternatively, you can follow these steps to achieve the same goal. This would be especially useful if the previous steps didn’t work for you.
+* Go to <em>Logic Apps</em>.
+* Click on the playbook and press <em>Edit</em>.
+* Choose <em>Send email (V2)</em> block.
+* Click on <em>Change Connection</em>.
+* Click on the "!" icon to authorize the connection or choose a different, previously authorized, connection.
+* Press <em>Save</em> button to save changes in your playbook.
+* If it doesn't work, repeat the steps but either choose a different connection or fix possible authorization errors for the chosen one.</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
-<p>To change the email address in the playbook:</p>
-<ul>
-<li>In your Microsoft Sentinel workspace, go to the <em>Automation</em> under the <em>Configuration</em> pane.</li>
-<li>Under <em>Active Playbooks</em>, select the playbook and click on <em>Edit</em>.</li>
-<li>On the <em>Logic App Designer</em> page, select <em>Initialize variable 2</em>.</li>
-<li>Under the value section, enter the email address for the incident notifications.</li>
-<li>Click <em>Save</em>.
-If the playbook fails to execute, go to your playbook <em>Overview</em> pane that has status of all runs. By looking at the details, you can get more ideas on what went wrong.</li>
-</ul>
+<p>To change the email address in the playbook:
+* In your Microsoft Sentinel workspace, go to the <em>Automation</em> under the <em>Configuration</em> pane.
+* Under <em>Active Playbooks</em>, select the playbook and click on <em>Edit</em>.
+* On the <em>Logic App Designer</em> page, select <em>Initialize variable 2</em>.
+* Under the value section, enter the email address for the incident notifications.
+* Click <em>Save</em>.
+If the playbook fails to execute, go to your playbook <em>Overview</em> pane that has status of all runs. By looking at the details, you can get more ideas on what went wrong.</p>
 <h1 id="references">References</h1>
 <ul>
 <li><a href="https://docs.cohesity.com/ui/login?redirectPath=%2FHomePage%2FContent%2FTechGuides%2FTechnicalGuides.htm">Cohesity support documentation</a></li>
@@ -157,7 +136,6 @@ If the playbook fails to execute, go to your playbook <em>Overview</em> pane tha
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cohesitysecurity.html">Back to CohesitySecurity</a></p>
-
 </div>
 
 </body>

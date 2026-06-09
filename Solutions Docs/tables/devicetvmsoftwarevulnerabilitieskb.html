@@ -25,38 +25,38 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">MDE</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">MDE</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilitieskb">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwarevulnerabilitieskb">View Documentation</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table">View Documentation</a></td>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table">View Documentation</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,86 +71,86 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">AffectedSoftware</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">List of all software products affected by the vulnerability.</td>
+<td style="text-align: left;">AffectedSoftware</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of all software products affected by the vulnerability.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CveId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.</td>
+<td style="text-align: left;">CveId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CvssScore</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Severity score assigned to the security vulnerability under the Common Vulnerability Scoring System (CVSS).</td>
+<td style="text-align: left;">CvssScore</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Severity score assigned to the security vulnerability under the Common Vulnerability Scoring System (CVSS).</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsExploitAvailable</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether exploit code for the vulnerability is publicly available.</td>
+<td style="text-align: left;">IsExploitAvailable</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether exploit code for the vulnerability is publicly available.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastModifiedTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time the item or related metadata was last modified.</td>
+<td style="text-align: left;">LastModifiedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the item or related metadata was last modified.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PublishedDate</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date vulnerability was disclosed to the public.</td>
+<td style="text-align: left;">PublishedDate</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date vulnerability was disclosed to the public.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the record was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the record was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Timestamp</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the record was generated</td>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the record was generated</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">VulnerabilityDescription</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Description of the vulnerability and associated risks.</td>
+<td style="text-align: left;">VulnerabilityDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the vulnerability and associated risks.</td>
 </tr>
 <tr>
-  <td style="text-align:left">VulnerabilitySeverityLevel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.</td>
+<td style="text-align: left;">VulnerabilitySeverityLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.</td>
 </tr>
 </tbody>
 </table>
@@ -162,16 +162,16 @@
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
 <h3 id="hunting-queries">Hunting Queries (1)</h3>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>CveId == &quot;22117&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>CveId == "22117"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
+<th style="text-align: left;">Hunting Query</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-detect-cisa-alert-aa22-117a-2021-top-routinely-exploited-vulnerabilities-180bacfd-18de-450a-8e0c-7d2fa399ca49-875b2843.html">Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities</a></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-detect-cisa-alert-aa22-117a-2021-top-routinely-exploited-vulnerabilities-180bacfd-18de-450a-8e0c-7d2fa399ca49-875b2843.html">Detect CISA Alert (AA22-117A) 2021 Top Routinely Exploited Vulnerabilities</a></td>
 </tr>
 </tbody>
 </table>
@@ -180,30 +180,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>CveId == &quot;22117&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>CveId == "22117"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -211,29 +211,28 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>22117</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>22117</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

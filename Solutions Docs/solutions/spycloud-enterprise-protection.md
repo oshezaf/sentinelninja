@@ -15,12 +15,12 @@
 | **Publisher** | Spycloud |
 | **Support Tier** | Partner |
 | **Support Link** | [https://portal.spycloud.com](https://portal.spycloud.com) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
 | **Version** | 3.0.1 |
 | **Author** | SpyCloud |
 | **First Published** | 2023-09-09 |
 | **Solution Folder** | [SpyCloud Enterprise Protection](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/spycloudinc1680448518850.azure-sentinel-solution-spycloudenterprise) · Popularity: 🟡 Low (47%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/spycloudinc1680448518850.azure-sentinel-solution-spycloudenterprise) · Popularity: 🔵 Medium (50%) |
 
 Cybercriminals continue to utilize stolen corporate credentials as the number one technique for account takeover (ATO). In fact, the FBI estimated that this resulted in estimated losses totaling more than $2.7 billion in 2022. SpyCloud helps prevent account takeover and ransomware attacks by identifying exposed credentials related to a company’s domains, IP addresses and emails. Through this integration, breach and malware data from SpyCloud can be loaded into Sentinel.
 

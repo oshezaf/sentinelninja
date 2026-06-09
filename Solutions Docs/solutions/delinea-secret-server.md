@@ -15,12 +15,12 @@
 | **Publisher** | Delinea |
 | **Support Tier** | Partner |
 | **Support Link** | [https://delinea.com/support/](https://delinea.com/support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.1 |
 | **Author** | Delinea |
 | **First Published** | 2022-05-06 |
 | **Solution Folder** | [Delinea Secret Server](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Delinea%20Secret%20Server) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/delineainc1653506022260.delinea_secret_server_mss) · Rating: ★★★★★ 4.6/5 (42 ratings) · Popularity: 🟢 High (80%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/delineainc1653506022260.delinea_secret_server_mss) · Rating: ★★★★★ 4.6/5 (42 ratings) · Popularity: 🟢 High (82%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Delinea](https://delinea.com/) Secret Server Microsoft Sentinel Data Solution enables delivery of Delinea Secret Server log messages to your Microsoft Sentinel Workspace.

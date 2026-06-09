@@ -15,11 +15,11 @@
 | **Publisher** | Corelight |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.corelight.com/](https://support.corelight.com/) |
-| **Categories** | domains |
+| **Categories** | IT Operations,Security - Network |
 | **Version** | 3.2.5 |
 | **Author** | Corelight - info@corelight.com |
 | **First Published** | 2022-06-01 |
-| **Last Updated** | 2026-03-30 |
+| **Last Updated** | 2026-06-08 |
 | **Solution Folder** | [Corelight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Corelight) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/corelightinc1584998267292.corelight-for-azure-sentinel) · Rating: ★★★★★ 4.8/5 (20 ratings) · Popularity: ⚪ Very Low (0%) |
 

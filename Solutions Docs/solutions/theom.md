@@ -15,7 +15,7 @@
 | **Publisher** | Theom |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.theom.ai](https://www.theom.ai) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-11-04 |

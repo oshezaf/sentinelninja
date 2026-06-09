@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraStaticAssignMembersToGroup/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraStaticAssignMembersToGroup/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,104 +47,65 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault-3.html"><code>keyvault_3</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault-3.html"><code>keyvault_3</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="keyvault_3"><a href="../logic-apps/managed-keyvault-3.html"><code>keyvault_3</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_Access_Token</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">HTTP_Request_To_Add_Member_To_Group</td>
-  <td style="text-align:left">PATCH</td>
-  <td style="text-align:left"><code>@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('group_id')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">GenerateAccessTokenVectra</td>
-  <td style="text-align:left">—</td>
-  <td style="text-align:left">—</td>
-  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]</code><br>triggerName=<code>manual</code></td>
-</tr>
-</tbody>
-</table>
+#### [`keyvault_3`](../logic-apps/managed-keyvault-3.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Access_Token | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Request_To_Add_Member_To_Group | PATCH | `@{variables('base_url')}/api/@{variables('api_version')}/groups/@{variables('group_id')}` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -156,61 +117,50 @@
 <p>This playbook will take input of group id and members from user via MS teams and assign members to the provided group.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
-<li>Obtain the Key Vault name and Tenant ID where client credentials are stored using which the access token will be generated.<ul>
-<li>Create a Key Vault with a unique name.</li>
-<li>Go to Key Vaults → <em>your Key Vault</em> → Overview and copy Directory ID, which will be used as the tenant ID.</li>
-<li>NOTE: Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</li>
-</ul>
-</li>
-<li>Obtain Teams GroupId and ChannelId.<ul>
-<li>Create a Team with a public channel.</li>
-<li>Click on the three dots (...) next to your newly created Teams channel and select <strong>Get link to channel</strong>.</li>
-<li>Copy the text from the link between <code>/channel</code> and <code>/</code>, decode it using an online URL decoder, and copy it to use as the Channel ID.</li>
-<li>Copy the text of the GroupId parameter from the link to use as the GroupId.</li>
-</ul>
-</li>
+<li>Obtain the Key Vault name and Tenant ID where client credentials are stored using which the access token will be generated.
+   * Create a Key Vault with a unique name.
+   * Go to Key Vaults → <em>your Key Vault</em> → Overview and copy Directory ID, which will be used as the tenant ID.
+   * NOTE: Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</li>
+<li>Obtain Teams GroupId and ChannelId.
+   * Create a Team with a public channel.
+   * Click on the three dots (...) next to your newly created Teams channel and select <strong>Get link to channel</strong>.
+   * Copy the text from the link between <code>/channel</code> and <code>/</code>, decode it using an online URL decoder, and copy it to use as the Channel ID.
+   * Copy the text of the GroupId parameter from the link to use as the GroupId.</li>
 <li>Make sure that the VectraGenerateAccessToken playbook is deployed before deploying the VectraStaticAssignMembersToGroup playbook.</li>
 </ol>
 <h3 id="deployment-instructions">Deployment Instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
-<li>Fill in the required parameters:<ul>
-<li>PlaybookName: Enter the playbook name here.</li>
-<li>KeyVaultName: Name of the Key Vault where secrets are stored.</li>
-<li>TenantId: Tenant ID where the Key Vault is located.</li>
-<li>BaseURL: Enter the base URL of your Vectra account.</li>
-<li>TeamsGroupId: Enter Id of the Teams Group where the adaptive card will be posted.</li>
-<li>TeamsChannelId: Enter Id of the Teams Channel where the adaptive card will be posted.</li>
-<li>GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
-</ul>
-</li>
+<li>Fill in the required parameters:
+   * PlaybookName: Enter the playbook name here.
+   * KeyVaultName: Name of the Key Vault where secrets are stored.
+   * TenantId: Tenant ID where the Key Vault is located.
+   * BaseURL: Enter the base URL of your Vectra account.
+   * TeamsGroupId: Enter Id of the Teams Group where the adaptive card will be posted.
+   * TeamsChannelId: Enter Id of the Teams Channel where the adaptive card will be posted.
+   * GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraStaticAssignMembersToGroup%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraStaticAssignMembersToGroup%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraStaticAssignMembersToGroup%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraStaticAssignMembersToGroup%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize Connections</h4>
-<p>Once deployment is complete, authorize each connection.</p>
-<ol>
-<li>Go to your logic app → API connections → Select the Key Vault connection resource.</li>
-<li>Go to General → Edit API connection.</li>
-<li>Click Authorize.</li>
-<li>Sign in.</li>
-<li>Click Save.</li>
-<li>Repeat steps for other connections.</li>
-</ol>
+<p>Once deployment is complete, authorize each connection.
+1. Go to your logic app → API connections → Select the Key Vault connection resource.
+2. Go to General → Edit API connection.
+3. Click Authorize.
+4. Sign in.
+5. Click Save.
+6. Repeat steps for other connections.</p>
 <h4 id="b-add-access-policy-in-key-vault">b. Add Access Policy in Key Vault</h4>
-<p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of the Key Vault.</p>
-<ol>
-<li>Go to Logic App → <em>your Logic App</em> → Identity → System assigned Managed identity and copy Object (principal) ID.</li>
-<li>Go to Key Vaults → <em>your Key Vault</em> → Access policies → Create.</li>
-<li>Select all keys &amp; secrets permissions. Click Next.</li>
-<li>In the principal section, search by copied Object ID. Click Next.</li>
-<li>Click Review + Create.</li>
-<li>Repeat steps 2 to 5 to add access policy for the user account using which connection is authorized.</li>
-</ol>
+<p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of the Key Vault.
+1. Go to Logic App → <em>your Logic App</em> → Identity → System assigned Managed identity and copy Object (principal) ID.
+2. Go to Key Vaults → <em>your Key Vault</em> → Access policies → Create.
+3. Select all keys &amp; secrets permissions. Click Next.
+4. In the principal section, search by copied Object ID. Click Next.
+5. Click Review + Create.
+6. Repeat steps 2 to 5 to add access policy for the user account using which connection is authorized.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/vectra-xdr.html">Back to Vectra XDR</a></p>
-
 </div>
 
 </body>

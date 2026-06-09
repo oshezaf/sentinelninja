@@ -18,42 +18,39 @@
 <h1 id="deprecated-cisco-secure-email-gateway-via-ama">🚫 🔍 [Deprecated] Cisco Secure Email Gateway via AMA</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
-</blockquote>
-<blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cisco-logo-72px.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Connector ID</strong></td>
-  <td style="text-align:left"><code>CiscoSEGAma</code></td>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CiscoSEGAma</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Cisco</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Cisco</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Used in Solutions</strong></td>
-  <td style="text-align:left"><a href="../solutions/ciscoseg.html">CiscoSEG</a></td>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/ciscoseg.html">CiscoSEG</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoSEG/Data%20Connectors/template_CiscoSEGAMA.json">template_CiscoSEGAMA.json</a></td>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoSEG/Data%20Connectors/template_CiscoSEGAMA.json">template_CiscoSEGAMA.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -65,20 +62,20 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-  <td style="text-align:left"><code>DeviceEventClassID == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code><br><code>DeviceProduct == &quot;ESA_CONSOLIDATED_LOG_EVENT&quot;</code><br><code>DeviceVendor == &quot;Cisco&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td style="text-align: left;"><code>DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"</code><br><code>DeviceProduct == "ESA_CONSOLIDATED_LOG_EVENT"</code><br><code>DeviceVendor == "Cisco"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
@@ -86,31 +83,31 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
-<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <p><strong>Custom Permissions:</strong></p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
-</blockquote>
-<blockquote>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-CiscoSEG-parser"><strong>CiscoSEGEvent</strong></a> which is deployed with the Microsoft Sentinel Solution.
 <strong>1. Kindly follow the steps to configure the data connector</strong></p>
 </blockquote>
 <p><strong>Step A. Configure the Common Event Format (CEF) via AMA data connector</strong></p>
 <p><em>Note:- CEF logs are collected only from Linux Agents</em></p>
 <ol>
-<li><p>Navigate to Microsoft Sentinel workspace ---&gt; configuration ---&gt; Data connector blade .</p>
+<li>
+<p>Navigate to Microsoft Sentinel workspace ---&gt; configuration ---&gt; Data connector blade .</p>
 </li>
-<li><p>Search for 'Common Event Format (CEF) via AMA' data connector and open it.</p>
+<li>
+<p>Search for 'Common Event Format (CEF) via AMA' data connector and open it.</p>
 </li>
-<li><p>Check If there is no existing DCR configured to collect required facility of logs, Create a new DCR (Data Collection Rule)</p>
+<li>
+<p>Check If there is no existing DCR configured to collect required facility of logs, Create a new DCR (Data Collection Rule)</p>
 <p><em>Note:- It is recommended to install minimum 1.27 version of AMA agent <a href="https://learn.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-manage?tabs=azure-portal">Learn more</a> and ensure there is no duplicate DCR as it can cause log duplicacy</em></p>
 </li>
-<li><p>Run the command provided in the CEF via AMA data connector page to configure the CEF collector on the machine</p>
+<li>
+<p>Run the command provided in the CEF via AMA data connector page to configure the CEF collector on the machine</p>
 </li>
 </ol>
 <p><strong>Step B. Forward Common Event Format (CEF) logs to Syslog agent</strong></p>
@@ -125,21 +122,20 @@
 <p>It may take about 20 minutes until the connection streams data to your workspace.</p>
 <p>If the logs are not received, run the following connectivity validation script:</p>
 <ol>
-<li><p>Make sure that you have Python on your machine using the following command: python -version</p>
+<li>
+<p>Make sure that you have Python on your machine using the following command: python -version</p>
 </li>
-<li><p>You must have elevated permissions (sudo) on your machine</p>
+<li>
+<p>You must have elevated permissions (sudo) on your machine
+  - <strong>Run the following command to validate your connectivity:</strong>: <code>sudo wget -O Sentinel_AMA_troubleshoot.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/Syslog/Sentinel_AMA_troubleshoot.py&amp;&amp;sudo python Sentinel_AMA_troubleshoot.py --cef</code></p>
 </li>
 </ol>
-<ul>
-<li><strong>Run the following command to validate your connectivity:</strong>: <code>sudo wget -O Sentinel_AMA_troubleshoot.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/Syslog/Sentinel_AMA_troubleshoot.py&amp;&amp;sudo python Sentinel_AMA_troubleshoot.py --cef</code></li>
-</ul>
 <p><strong>2. Secure your machine</strong></p>
 <p>2Make sure to configure the machine's security according to your organization's security policy</p>
 <p><a href="https://aka.ms/SecureCEF">Learn more &gt;</a></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

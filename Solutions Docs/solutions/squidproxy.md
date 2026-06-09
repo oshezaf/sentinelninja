@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Networking |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |
 | **Solution Folder** | [SquidProxy](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SquidProxy) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-squidproxy) · Popularity: 🔵 Medium (61%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-squidproxy) · Popularity: 🔵 Medium (62%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Squid Proxy](http://www.squid-cache.org/) solution for Microsoft Sentinel enables you to ingest Squid Proxy logs into Microsoft Sentinel.

@@ -15,12 +15,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security,Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-23 |
 | **Solution Folder** | [Microsoft Purview](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Purview) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurepurview) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurepurview) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (80%) |
 
 The [Microsoft Purview](https://learn.microsoft.com/purview/purview) Solution enables data sensitivity enrichment of Microsoft Sentinel. Data classification and sensitivity label logs from Microsoft Purview scans are ingested and visualized through workbooks, analytical rules, and more.
 

@@ -15,7 +15,7 @@
 | **Publisher** | Perimeter 81 |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.perimeter81.com/docs](https://support.perimeter81.com/docs) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 2.0.1 |
 | **Author** | Perimeter 81 |
 | **First Published** | 2022-05-06 |

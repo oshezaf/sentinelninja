@@ -13,7 +13,7 @@
 | **Publisher** | Noname Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://nonamesecurity.com/](https://nonamesecurity.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 2.0.0 |
 | **Author** | Noname Security - support@nonamesecurity.com |
 | **First Published** | 2022-12-01 |

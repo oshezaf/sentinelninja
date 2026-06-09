@@ -15,7 +15,7 @@
 | **Publisher** | purestoragemarketplaceadmin |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.purestorage.com](https://support.purestorage.com) |
-| **Categories** | domains |
+| **Categories** | Storage |
 | **Version** | 3.0.1 |
 | **Author** | Pure Storage - support@purestorage.com |
 | **First Published** | 2024-02-05 |

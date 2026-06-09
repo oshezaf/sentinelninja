@@ -15,7 +15,7 @@
 | **Publisher** | HYAS |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.hyas.com/contact](https://www.hyas.com/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-10-20 |

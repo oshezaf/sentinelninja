@@ -15,13 +15,13 @@
 | **Publisher** | Dynatrace |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dynatrace.com/services-support/](https://www.dynatrace.com/services-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Others,IT Operations,DevOps,Migration,Security - Threat Protection,Security - Vulnerability Management |
 | **Version** | 3.0.3 |
 | **Author** | Dynatrace - microsoftalliances@dynatrace.com |
 | **First Published** | 2022-10-18 |
 | **Last Updated** | 2026-05-08 |
 | **Solution Folder** | [Dynatrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dynatrace) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) · Popularity: ⚪ Very Low (5%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dynatrace.dynatrace_azure_sentinel) · Popularity: 🟡 Low (13%) |
 
 Dynatrace is a leading observability platform that provides automatic and intelligent observability at scale for cloud-native and enterprise workloads; with Dynatrace Application Security, your DevSecOps teams can resolve security issues faster, accelerating software delivery.
 Integrating Dynatrace with Microsoft Sentinel enables DevSecOps teams to detect, prioritize, triage, and remediate attacks rapidly. DevSecOps teams benefit from the high-accuracy threat signals Dynatrace surfaces. It helps them avoid time-consuming investigation activities, freeing them up for more critical tasks.

@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.3 |
 | **Author** | Aruba Networks |
 | **First Published** | 2022-05-23 |
 | **Solution Folder** | [Aruba ClearPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Aruba%20ClearPass) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-arubaclearpass) · Popularity: 🟢 High (84%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-arubaclearpass) · Popularity: 🟢 High (85%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Aruba ClearPass](https://www.arubanetworks.com/products/security/network-access-control/secure-access/) solution allows you to easily connect your Aruba ClearPass with Microsoft Sentinel. 

@@ -13,7 +13,7 @@
 | **Publisher** | Senserva |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.senserva.com/contact/](https://www.senserva.com/contact/) |
-| **Categories** | domains |
+| **Categories** | Compliance |
 | **Version** | 2.0.2 |
 | **Author** | Senserva - support@senserva.com |
 | **First Published** | 2022-06-01 |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left">Standalone Content</td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;">Standalone Content</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Dismiss_Upstream_Events/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Dismiss_Upstream_Events/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,20 +47,20 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-  <td style="text-align:left"><code>SystemAlertId == &quot;@{items(&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td style="text-align: left;"><code>SystemAlertId == "@{items("</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
@@ -69,153 +69,75 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs-1.html"><code>azuremonitorlogs_1</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs-1.html"><code>azuremonitorlogs_1</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">5</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Run_query_and_list_results_2</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/queryData</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="azuremonitorlogs_1"><a href="../logic-apps/managed-azuremonitorlogs-1.html"><code>azuremonitorlogs_1</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Run_query_and_list_results</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/queryData</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Run_query_and_list_results_3</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/queryData</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="wdatp"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Alerts_-_Update_alert</td>
-  <td style="text-align:left">patch</td>
-  <td style="text-align:left"><code>/api/alerts/@{encodeURIComponent('body(''Run_query_and_list_results_2'')[''value''][0][''VendorOriginalId'']')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_incident_relation_data</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://management.azure.com/subscriptions/@{variables('Settings')['subscriptionId']}/resourcegroups/@{variables('Settings')['resourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{variables('Settings')['logWorkspace']}/providers/Microsoft.SecurityInsights/incidents/@{items('For_each')['name']}/relations</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">HTTP</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>https://management.azure.com/subscriptions/@{body('Run_query_and_list_results')['value'][0]['ascsubid']}/resourcegroups/@{body('Run_query_and_list_results')['value'][0]['ascrgname']}/providers/Microsoft.Security/locations/@{body('Run_query_and_list_results')['value'][0]['asclocation']}/alerts/@{body('Run_query_and_list_results')['value'][0]['ascalertname']}/dismiss</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Resolve_MCAS_Alert</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>[concat(parameters('McasBaseUrl'),'api/v1/alerts/resolve/')]</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Dismiss_MCAS_Alert</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>[concat(parameters('McasBaseUrl'),'api/v1/alerts/','@{body(''Run_query_and_list_results_3'')[''value''][0][''alertId'']}','/dismiss/')]</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_incidents</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@variables('requestUrl')</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results_2 | post | `/queryData` | — |
+
+#### [`azuremonitorlogs_1`](../logic-apps/managed-azuremonitorlogs-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_query_and_list_results | post | `/queryData` | — |
+| Run_query_and_list_results_3 | post | `/queryData` | — |
+
+#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Alerts_-_Update_alert | patch | `/api/alerts/@{encodeURIComponent('body(''Run_query_and_list_results_2'')[''value''][0][''VendorOriginalId'']')}` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_incident_relation_data | GET | `https://management.azure.com/subscriptions/@{variables('Settings')['subscriptionId']}/resourcegroups/@{variables('Settings')['resourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{variables('Settings')['logWorkspace']}/providers/Microsoft.SecurityInsights/incidents/@{items('For_each')['name']}/relations` | — |
+| HTTP | POST | `https://management.azure.com/subscriptions/@{body('Run_query_and_list_results')['value'][0]['ascsubid']}/resourcegroups/@{body('Run_query_and_list_results')['value'][0]['ascrgname']}/providers/Microsoft.Security/locations/@{body('Run_query_and_list_results')['value'][0]['asclocation']}/alerts/@{body('Run_query_and_list_results')['value'][0]['ascalertname']}/dismiss` | — |
+| Resolve_MCAS_Alert | POST | `[concat(parameters('McasBaseUrl'),'api/v1/alerts/resolve/')]` | — |
+| Dismiss_MCAS_Alert | POST | `[concat(parameters('McasBaseUrl'),'api/v1/alerts/','@{body(''Run_query_and_list_results_3'')[''value''][0][''alertId'']}','/dismiss/')]` | — |
+| Get_incidents | GET | `@variables('requestUrl')` | — |
+
 </details>
 
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
-
 </div>
 
 </body>

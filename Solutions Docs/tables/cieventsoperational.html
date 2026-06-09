@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CIEventsOperational &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 <nav class="navbar">
@@ -23,81 +25,266 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Azure Resources</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cieventsoperational">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cieventsoperational">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
 <h2 id="schema">Schema (44 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cieventsoperational">Azure Monitor documentation</a></p>
-<p>| Column Name | Type | Description |
-|:------------|:-----|:------------|
-| _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
-| _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| AdditionalInformation | string | Contains AffectedEntities, MessageCode and entityCount. |
-| Audience | string | The audience for which the accessToken was requested for. |
-| CallerIPAddress | string | Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address. |
-| CallerObjectId | string | Azure Active Directory ObjectId of the caller. |
-| Category | string | Log category of the event. Either Operational or Audit. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with Audit, everything else with Operational. |
-| Claims | string | Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration. |
-| CorrelationId | string | The ID for the correlated events. Can be used to identify correlated events between multiple tables. |
-| DurationMs | long | Duration of the operation in milliseconds. |
-| EndTime | datetime | Specifies the date and time that the workflow job ended (UTC) |
-| Error | string | Error Message with more details. |
-| EventType | string | The type of the event. Either ApiEvent or WorkflowEvent |
-| FriendlyName | string | User friendly Name of the Export or the Entity which is processed. |
-| Identifier | string | Depending on the OperationType in can be: the guid of the export configuration, the guid of the Enrichment, the Entity Name. |
-| InstanceId | string | Customer Insights instance ID. |
-| Level | string | Severity level of the event, is one of: Informational, Warning or Error. |
-| Method | string | HTTP method: GET/POST/PUT/PATCH/HEAD |
-| OperationName | string | Name of the operation represented by this event. {OperationType}.[WorkFlow|Task][Started|Completed]. |
-| OperationStatus | string | Success for HTTP Status code &lt; 400, ClientError for HTTP Status code &lt; 500, Error for HTTP Status &gt;= 500. |
-| OperationType | string | Identifier of the operation. |
-| Origin | string | URI indicating where a fetch originates from or unknown. |
-| Path | string | Relative path of the request. |
-| RequiredRoles | string | Required roles to do the operation. Admin role is allowed to do all operations. |
-| ResultSignature | string | Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code. |
-| ResultType | string | Status of the event. Running, Skipped, Successful, Failure. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
-| StartTime | datetime | Specifies the date and time that the workflow job was started (UTC) |
-| SubmittedBy | string | Workflow events only. The Azure Active Directory objectId of the user who triggered the workflow, see also properties.workflowSubmissionKinds. |
-| SubmittedTime | datetime | Specifies the date and time that the workflow job was submitted (UTC) |
-| TasksCount | int | Workflow only. Number of tasks the Workflow triggers. |
-| TenantId | string | The Log Analytics workspace ID |
-| TimeGenerated | datetime | Timestamp of the event (UTC). |
-| Type | string | The name of the table |
-| Uri | string | Absolute request URI. |
-| UserAgent | string | Browser agent sending the request or unknown. |
-| UserPrincipalName | string | The UserPrincipalName is the Azure AD username for the user accounts. |
-| UserRole | string | Assigned role for the user or app. |
-| WorkflowJobId | string | Identifier of the workflow run. All Workflow and Tasks events within the workflow execution have the same workflowJobId. |
-| WorkflowStatus | string | Running, Successful. |
-| WorkflowSubmissionKind | string | OnDemand or Scheduled. |
-| WorkflowType | string | Full or incremental refresh. |</p>
+<table id="schema-table">
+<thead>
+<tr>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
+</tr>
+<tr>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+</tr>
+<tr>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+</tr>
+<tr>
+<td style="text-align: left;">AdditionalInformation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contains AffectedEntities, MessageCode and entityCount.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Audience</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The audience for which the accessToken was requested for.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerIPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CallerObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure Active Directory ObjectId of the caller.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Log category of the event. Either Operational or Audit. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with Audit, everything else with Operational.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Claims</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration.</td>
+</tr>
+<tr>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID for the correlated events. Can be used to identify correlated events between multiple tables.</td>
+</tr>
+<tr>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Duration of the operation in milliseconds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Specifies the date and time that the workflow job ended (UTC)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Error</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Error Message with more details.</td>
+</tr>
+<tr>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the event. Either ApiEvent or WorkflowEvent</td>
+</tr>
+<tr>
+<td style="text-align: left;">FriendlyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User friendly Name of the Export or the Entity which is processed.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Identifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Depending on the OperationType in can be: the guid of the export configuration, the guid of the Enrichment, the Entity Name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">InstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Customer Insights instance ID.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity level of the event, is one of: Informational, Warning or Error.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Method</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP method: GET/POST/PUT/PATCH/HEAD</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the operation represented by this event. {OperationType}.[WorkFlow</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Success for HTTP Status code &lt; 400, ClientError for HTTP Status code &lt; 500, Error for HTTP Status &gt;= 500.</td>
+</tr>
+<tr>
+<td style="text-align: left;">OperationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the operation.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Origin</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI indicating where a fetch originates from or unknown.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Path</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relative path of the request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">RequiredRoles</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Required roles to do the operation. Admin role is allowed to do all operations.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.</td>
+</tr>
+<tr>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the event. Running, Skipped, Successful, Failure.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+</tr>
+<tr>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Specifies the date and time that the workflow job was started (UTC)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubmittedBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Workflow events only. The Azure Active Directory objectId of the user who triggered the workflow, see also properties.workflowSubmissionKinds.</td>
+</tr>
+<tr>
+<td style="text-align: left;">SubmittedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Specifies the date and time that the workflow job was submitted (UTC)</td>
+</tr>
+<tr>
+<td style="text-align: left;">TasksCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Workflow only. Number of tasks the Workflow triggers.</td>
+</tr>
+<tr>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
+</tr>
+<tr>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the event (UTC).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
+</tr>
+<tr>
+<td style="text-align: left;">Uri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Absolute request URI.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Browser agent sending the request or unknown.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserPrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The UserPrincipalName is the Azure AD username for the user accounts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">UserRole</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Assigned role for the user or app.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkflowJobId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the workflow run. All Workflow and Tasks events within the workflow execution have the same workflowJobId.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkflowStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Running, Successful.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkflowSubmissionKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">OnDemand or Scheduled.</td>
+</tr>
+<tr>
+<td style="text-align: left;">WorkflowType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Full or incremental refresh.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h2 id="resource-types">Resource Types</h2>
 <p>This table collects data from the following Azure resource types:</p>
@@ -107,8 +294,31 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
-
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
 </body>
 </html>

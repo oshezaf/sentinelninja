@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Security</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelhealth">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelhealth">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,96 +64,96 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">Description</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operation description.</td>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation description.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ExtendedProperties</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Additional information based on the resource type.</td>
+<td style="text-align: left;">ExtendedProperties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information based on the resource type.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the operation that triggered the event.</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the operation that triggered the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Reason</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operation reason.</td>
+<td style="text-align: left;">Reason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation reason.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RecordId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique record identifier.</td>
+<td style="text-align: left;">RecordId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique record identifier.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SentinelResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Sentinel resource ID.</td>
+<td style="text-align: left;">SentinelResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Sentinel resource ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SentinelResourceKind</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The resource kind, for example: connector kind (such as Office365, AmazonWebServicesCloudTrail), alert rule kind (scheduld).</td>
+<td style="text-align: left;">SentinelResourceKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource kind, for example: connector kind (such as Office365, AmazonWebServicesCloudTrail), alert rule kind (scheduld).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SentinelResourceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Sentinel resource name.</td>
+<td style="text-align: left;">SentinelResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Sentinel resource name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SentinelResourceType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The resource type, for example: DataConnector, AlertRule, etc.</td>
+<td style="text-align: left;">SentinelResourceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource type, for example: DataConnector, AlertRule, etc.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">Status</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Status of the operation, for example: Success, Failure, Warning, Informational, Partial Success.</td>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the operation, for example: Success, Failure, Warning, Informational, Partial Success.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) of when the event was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the event was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">WorkspaceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The workspace ID.</td>
+<td style="text-align: left;">WorkspaceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The workspace ID.</td>
 </tr>
 </tbody>
 </table>
@@ -168,30 +168,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/sapcc.html">Microsoft Sentinel for SAP applications - agentless</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/sapcc.html">Microsoft Sentinel for SAP applications - agentless</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
 <h3 id="workbooks">Workbooks (1)</h3>
-<p><strong>In solution <a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a>:</strong> <code>SentinelResourceType in &quot;Automation rule,Playbook&quot;</code></p>
+<p><strong>In solution <a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a>:</strong> <code>SentinelResourceType in "Automation rule,Playbook"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/sentinelsoaressentials-automationhealth-09dce6f5.html">AutomationHealth</a></td>
+<td style="text-align: left;"><a href="../content/sentinelsoaressentials-automationhealth-09dce6f5.html">AutomationHealth</a></td>
 </tr>
 </tbody>
 </table>
@@ -200,30 +200,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>SentinelResourceType in &quot;Automation rule,Playbook&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>SentinelResourceType in "Automation rule,Playbook"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -231,37 +231,36 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Automation rule</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Automation rule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Playbook</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Playbook</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

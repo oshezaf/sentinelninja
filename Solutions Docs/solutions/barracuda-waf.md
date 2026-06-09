@@ -13,7 +13,7 @@
 | **Publisher** | Barracuda |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.barracuda.com/support](https://www.barracuda.com/support) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.0 |
 | **Author** | Barracuda |
 | **First Published** | 2022-05-13 |

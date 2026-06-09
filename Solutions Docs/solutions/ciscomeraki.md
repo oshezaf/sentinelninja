@@ -1,6 +1,4 @@
-# Cisco Meraki Solution
-
-*Solution: CiscoMeraki*
+# CiscoMeraki
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/CiscoMeraki/Connector/MerakiConnector/logo.jpg" alt="CiscoMeraki Logo" width="75" height="75">
 
@@ -15,13 +13,11 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Automation (SOAR) |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-08 |
-| **Last Updated** | 2026-01-23 |
 | **Solution Folder** | [CiscoMeraki](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscomeraki) · Rating: ★☆☆☆☆ 1.0/5 (3 ratings) · Popularity: 🟢 High (84%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The Cisco Meraki solution allows you to easily connect your Cisco Meraki (MX/MR/MS) logs with Microsoft Sentinel. This gives you more insight into your organization's network and improves your security operation capabilities.

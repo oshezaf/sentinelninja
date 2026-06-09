@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/group-ib.html">Group-IB</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/group-ib.html">Group-IB</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/azuredeploy-GIBIndicatorProcessor.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Group-IB/Playbooks/azuredeploy-GIBIndicatorProcessor.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -50,42 +50,29 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-microsoftgraphsecurity.html"><code>microsoftgraphsecurity</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-microsoftgraphsecurity.html"><code>microsoftgraphsecurity</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="microsoftgraphsecurity"><a href="../logic-apps/managed-microsoftgraphsecurity.html"><code>microsoftgraphsecurity</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Submit_multiple_tiIndicators</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/beta/security/tiIndicators/submitTiIndicators</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Submit_multiple_tiIndicators | post | `/beta/security/tiIndicators/submitTiIndicators` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -98,18 +85,17 @@
 <p>There are a number of pre-configuration steps required before deploying the playbooks.</p>
 <h2 id="group-ib-sentinel-playbooks-collections-detailed-description">Group-IB Sentinel Playbooks Collections Detailed Description</h2>
 <ol start="0">
-<li>&quot;GIBIndicatorProcessor&quot; Playbook<br>
+<li>"GIBIndicatorProcessor" Playbook<br>
 This playbook is used to send indicators to Microsoft Security Graph API from all other GIB playbooks.</li>
 </ol>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBIndicatorProcessor.json" target="_blank">
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBIndicatorProcessor.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton""/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBIndicatorProcessor.json" target="_blank">
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
-</a>  
-
+</a>  </p>
 <ol>
-<li>&quot;GIBTIA_APT_Threats&quot; Playbook<br>
+<li>"GIBTIA_APT_Threats" Playbook<br>
 a. Collection: apt/threat<br>
 b. Has Indicators: Yes<br>
 c. Indicators Content: <br>
@@ -122,46 +108,43 @@ GIB APT Threat Indicator(sha1)<br>
 d. Description:<br>
 Group-IB continuously monitors activities undertaken by hacker groups, investigate, collect, and analyze information about all emerging and ongoing attacks. Based on this information, we provide IOC's related to APT Groups Attacks.</li>
 </ol>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_Threats.json" target="_blank">
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_Threats.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton""/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_Threats.json" target="_blank">
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
-</a>  
-
+</a>  </p>
 <ol start="2">
-<li>&quot;GIBTIA_APT_ThreatActor&quot; Playbook<br>
+<li>"GIBTIA_APT_ThreatActor" Playbook<br>
 a. Collection: apt/threat_actor<br>
 b. Has Indicators: No<br>
 c. Indicators Content: N/A<br>
 d. Description:<br>
 This collection contains APT groups’ info, with detailed descriptions.</li>
 </ol>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_ThreatActor.json" target="_blank">
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_ThreatActor.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton""/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_APT_ThreatActor.json" target="_blank">
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
-</a>    
-
+</a>    </p>
 <ol start="3">
-<li>&quot;GIBTIA_Attacks_ddos&quot; Playbook<br>
+<li>"GIBTIA_Attacks_ddos" Playbook<br>
 a. Collection: attacks/ddos<br>
 b. Has Indicators: Yes<br>
 c. Indicators Content:<br>
 GIB DDoS Attack(IPv4)<br>
 d. Description:<br>
-The &quot;DDoS attacks&quot; collection contains a DDoS Attacks targets and C2 indicators.</li>
+The "DDoS attacks" collection contains a DDoS Attacks targets and C2 indicators.</li>
 </ol>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_Attacks_ddos.json" target="_blank">
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_Attacks_ddos.json" target="_blank">
 <img src="https://aka.ms/deploytoazurebutton""/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FGroup-IB%2FPlaybooks%2Fazuredeploy-GIBTIA_Attacks_ddos.json" target="_blank">
 <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
-</a>
-
+</a></p>
 <ol start="4">
-<li>&quot;GIBTIA_Attacks_deface&quot; Playbook<br>
+<li>"GIBTIA_Attacks_deface" Playbook<br>
 a. Collection: attacks/deface<br>
 b. Has Indicators: Yes<br>
 c. Indicators Content:<br>
@@ -173,7 +156,6 @@ The “Deface” collection contains information about online resources that hav
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/group-ib.html">Back to Group-IB</a></p>
-
 </div>
 
 </body>

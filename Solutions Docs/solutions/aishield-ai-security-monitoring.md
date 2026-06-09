@@ -15,7 +15,7 @@
 | **Publisher** | AIShield |
 | **Support Tier** | Partner |
 | **Support Link** | [https://azuremarketplace.microsoft.com/marketplace/apps/rbei.bgsw_aishield_product/](https://azuremarketplace.microsoft.com/marketplace/apps/rbei.bgsw_aishield_product/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.1 |
 | **Author** | AIShield - AIShield.Contact@bosch.com |
 | **First Published** | 2022-01-11 |

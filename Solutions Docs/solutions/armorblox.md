@@ -13,7 +13,7 @@
 | **Publisher** | Armorblox |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.armorblox.com/contact/](https://www.armorblox.com/contact/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.1 |
 | **Author** | Armorblox - support@armorblox.com |
 | **First Published** | 2021-10-18 |

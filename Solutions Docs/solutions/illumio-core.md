@@ -13,7 +13,7 @@
 | **Publisher** | Microsoft |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft |
 | **First Published** | 2022-05-26 |

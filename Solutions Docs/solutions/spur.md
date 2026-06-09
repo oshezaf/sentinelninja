@@ -15,13 +15,13 @@
 | **Publisher** | Spur |
 | **Support Tier** | Partner |
 | **Support Link** | [https://spur.us/](https://spur.us/) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
 | **Version** | 3.0.0 |
 | **Author** | Spur - support@spur.us |
 | **First Published** | 2026-04-25 |
 | **Last Updated** | 2026-05-25 |
 | **Solution Folder** | [Spur](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/spur_intelligence_corporation.azure-sentinel-solution-spurcontext) · Popularity: 🟢 High (83%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/spur_intelligence_corporation.azure-sentinel-solution-spurcontext) · Popularity: 🟢 High (82%) |
 
 Spur Context API provides access to the highest-fidelity IP intelligence available on-demand, delivering the right IP enriched data in real-time to protect digital assets from the risk of obscured VPN, residential proxy, and bot automation traffic. This solution includes playbooks for IP enrichment on incidents and alerts, with context data added to incident comments and optionally saved in Log Analytics custom tables.
 

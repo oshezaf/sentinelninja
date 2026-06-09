@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/jamf-protect.html">Jamf Protect</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,73 +47,42 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">HTTP_POST_-_Change_Alert_Status_using_Jamf_Protect's_GraphQL_API_Endpoint</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('jamfProtectURL')}/graphql</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Generate_Access_Token</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('jamfProtectURL')}/token</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_POST_-_Change_Alert_Status_using_Jamf_Protect's_GraphQL_API_Endpoint | POST | `@{parameters('jamfProtectURL')}/graphql` | — |
+| Generate_Access_Token | POST | `@{parameters('jamfProtectURL')}/token` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -121,9 +90,9 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect/Playbooks/JamfProtect_Alert_Status_InProgress/readme.md">JamfProtect_Alert_Status_InProgress/readme.md</a></em></p>
 </blockquote>
 <h1 id="jamfprotect_alert_status_inprogress">JamfProtect_Alert_Status_InProgress</h1>
-<h2 id="summary">Summary</h2>
-<p>This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the Alert in Jamf Protect itself, in an automated way you can mirror the state from a Microsoft Sentinel incident back to Jamf Protect.</p>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/images/designerOverviewCollapsedLight.png" alt="JamfProtect_Alert_Status_InProgress" /></p>
+<p>## Summary
+This Jamf Protect Playbook can be used manually or in a Automation Rule to change the state of the Alert in Jamf Protect itself, in an automated way you can mirror the state from a Microsoft Sentinel incident back to Jamf Protect.</p>
+<p><img alt="JamfProtect_Alert_Status_InProgress" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/images/designerOverviewCollapsedLight.png" /></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>Generate API Client in Jamf Protect and take note of the CLientID and Password. <a href="https://learn.jamf.com/bundle/jamf-protect-documentation/page/Jamf_Protect_API.html#ariaid-title3">learn how</a>.</li>
@@ -131,9 +100,9 @@
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li><p>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</p>
-</li>
-<li><p>Fill in the required parameters:</p>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>
+<p>Fill in the required parameters:</p>
 <ul>
 <li>jamfProtectURL: Enter the Jamf Protect instance URL.</li>
 <li>client_ID: Enter the ClientID of Jamf Protect API Client.</li>
@@ -144,18 +113,10 @@
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-create-automation-rule">a. Create Automation Rule</h4>
-<p>Once deployment is complete, optionally we need to create an Incident-based Automation Rule to reflect changes from the Incident in Microsoft Sentinel back to Jamf Protect <a href="https://learn.microsoft.com/en-us/azure/sentinel/automate-incident-handling-with-automation-rules">learn how</a></p>
-<ul>
-<li><ol>
-<li>In Microsoft Sentinel Analytic Rules for Jamf Protect - Alerts should be configured to create an incident.</li>
-</ol>
-</li>
-<li><ol start="2">
-<li>Configure the Automation Rules to trigger this playbook once a incident is status is changed to Active.</li>
-</ol>
-</li>
-</ul>
-<p><a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
+<p>Once deployment is complete, optionally we need to create an Incident-based Automation Rule to reflect changes from the Incident in Microsoft Sentinel back to Jamf Protect <a href="https://learn.microsoft.com/en-us/azure/sentinel/automate-incident-handling-with-automation-rules">learn how</a>
+- 1. In Microsoft Sentinel Analytic Rules for Jamf Protect - Alerts should be configured to create an incident.
+- 2. Configure the Automation Rules to trigger this playbook once a incident is status is changed to Active.</p>
+<p><a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Jamf%20Protect%/Playbooks/JamfProtect_Alert_Status_InProgress/azuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <h2 id="playbook-steps-explained">Playbook steps explained</h2>
 <h3 id="microsoft-sentinel-incident">Microsoft Sentinel Incident</h3>
 <p>When an Incident is being created and we have an Automation Rule in place to rule this trigger we can use the Incident details.</p>
@@ -179,11 +140,11 @@ This action will get the unique vendor URL and remove the prefixes so we only ho
 This action will send an HTTP POST request to Jamf Protec's GraphQL endpoints to change the Alert status to InProgress
 
 ### Add comment to incident (V3)
-This action creates an Comment in the related Incident that the Alert has been set to InProgress.</code></pre>
+This action creates an Comment in the related Incident that the Alert has been set to InProgress.
+</code></pre>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/jamf-protect.html">Back to Jamf Protect</a></p>
-
 </div>
 
 </body>

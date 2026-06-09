@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Low value</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Low value</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/perf">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,106 +64,106 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">BucketEndTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">BucketEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">BucketStartTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">BucketStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Computer that the counter was collected from.</td>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Computer that the counter was collected from.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CounterName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the performance counter.</td>
+<td style="text-align: left;">CounterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the performance counter.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CounterPath</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Full path of the counter in the form &lt;Computer&gt;\ObjectName(InstanceName)\CounterName.</td>
+<td style="text-align: left;">CounterPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Full path of the counter in the form \<Computer>\ObjectName(InstanceName)\CounterName.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CounterValue</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Value of the performance counter sample.</td>
+<td style="text-align: left;">CounterValue</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Value of the performance counter sample.</td>
 </tr>
 <tr>
-  <td style="text-align:left">InstanceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Counter instance name. Empty when no instance applies.</td>
+<td style="text-align: left;">InstanceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Counter instance name. Empty when no instance applies.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Max</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Max</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Min</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Min</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ObjectName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Performance object for the counter.</td>
+<td style="text-align: left;">ObjectName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Performance object for the counter.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SampleCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">SampleCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">StandardDeviation</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">StandardDeviation</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time the counter was recorded.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the counter was recorded.</td>
 </tr>
 </tbody>
 </table>
@@ -177,29 +177,29 @@
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
 <h3 id="workbooks">Workbooks (3)</h3>
-<p><strong>In solution <a href="../solutions/barracuda-cloudgen-firewall.html">Barracuda CloudGen Firewall</a>:</strong> <code>InstanceName == &quot;BNGF&quot;</code><br><code>ObjectName == &quot;Connections_New&quot;</code></p>
+<p><strong>In solution <a href="../solutions/barracuda-cloudgen-firewall.html">Barracuda CloudGen Firewall</a>:</strong> <code>InstanceName == "BNGF"</code><br><code>ObjectName == "Connections_New"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.html">Barracuda</a></td>
+<td style="text-align: left;"><a href="../content/barracuda-cloudgen-firewall-barracuda-9d8c6fb5.html">Barracuda</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/forcepoint-ngfw.html">Forcepoint NGFW</a>:</strong> <code>CounterName contains &quot;Processor Time&quot;</code></p>
+<p><strong>In solution <a href="../solutions/forcepoint-ngfw.html">Forcepoint NGFW</a>:</strong> <code>CounterName contains "Processor Time"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.html">ForcepointNGFWAdvanced</a></td>
+<td style="text-align: left;"><a href="../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.html">ForcepointNGFWAdvanced</a></td>
 </tr>
 </tbody>
 </table>
@@ -207,14 +207,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -237,38 +237,38 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>InstanceName == &quot;BNGF&quot;</code><br><code>ObjectName == &quot;Connections_New&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>InstanceName == "BNGF"</code><br><code>ObjectName == "Connections_New"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>CounterName contains &quot;Processor Time&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>CounterName contains "Processor Time"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>2</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -276,22 +276,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>contains Processor Time</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Processor Time</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -299,22 +299,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>BNGF</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>BNGF</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -322,29 +322,28 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Connections_New</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Connections_New</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

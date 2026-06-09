@@ -13,7 +13,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 2.0.0 |
 | **Author** | Symantec |
 | **First Published** | 2022-06-02 |

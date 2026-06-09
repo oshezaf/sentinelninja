@@ -19,50 +19,50 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
-<p>&quot;This analytics rule identifies network-based indicators such as URLs, IP addresses, and domains related to phishing campaigns, as reported by CYFIRMA threat intelligence.  These indicators are flagged with a recommended action to block and are categorized under the 'Phishing' role. Such infrastructure is often used to deliver phishing emails, host fake login portals, or redirect victims to credential-harvesting pages.  Blocking these indicators proactively helps prevent user compromise and data</p>
+<p>"This analytics rule identifies network-based indicators such as URLs, IP addresses, and domains related to phishing campaigns, as reported by CYFIRMA threat intelligence.  These indicators are flagged with a recommended action to block and are categorized under the 'Phishing' role. Such infrastructure is often used to deliver phishing emails, host fake login portals, or redirect victims to credential-harvesting pages.  Blocking these indicators proactively helps prevent user compromise and data</p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Analytic Rule</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Analytic Rule</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/cyfirma-cyber-intelligence.html">Cyfirma Cyber Intelligence</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/cyfirma-cyber-intelligence.html">Cyfirma Cyber Intelligence</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>ID</strong></td>
-  <td style="text-align:left"><code>6f053867-dbd8-4755-924d-577e3db7f5a6</code></td>
+<td style="text-align: left;"><strong>ID</strong></td>
+<td style="text-align: left;"><code>6f053867-dbd8-4755-924d-577e3db7f5a6</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Severity</strong></td>
-  <td style="text-align:left">High</td>
+<td style="text-align: left;"><strong>Severity</strong></td>
+<td style="text-align: left;">High</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Kind</strong></td>
-  <td style="text-align:left">Scheduled</td>
+<td style="text-align: left;"><strong>Kind</strong></td>
+<td style="text-align: left;">Scheduled</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Tactics</strong></td>
-  <td style="text-align:left">InitialAccess, Execution, CredentialAccess, Exfiltration</td>
+<td style="text-align: left;"><strong>Tactics</strong></td>
+<td style="text-align: left;">InitialAccess, Execution, CredentialAccess, Exfiltration</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Techniques</strong></td>
-  <td style="text-align:left">T1566, T1204, T1556, T1110, T1041, T1566.001, T1566.002, T1204.001, T1556.002, T1110.003</td>
+<td style="text-align: left;"><strong>Techniques</strong></td>
+<td style="text-align: left;">T1566, T1204, T1556, T1110, T1041, T1566.001, T1566.002, T1204.001, T1556.002, T1110.003</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Required Connectors</strong></td>
-  <td style="text-align:left"><a href="../connectors/cyfirmacyberintelligencedc.html">CyfirmaCyberIntelligenceDC</a></td>
+<td style="text-align: left;"><strong>Required Connectors</strong></td>
+<td style="text-align: left;"><a href="../connectors/cyfirmacyberintelligencedc.html">CyfirmaCyberIntelligenceDC</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence/Analytic%20Rules/PhishingNetworkIndicatorsBlockHighSeverityRule.yaml">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyfirma%20Cyber%20Intelligence/Analytic%20Rules/PhishingNetworkIndicatorsBlockHighSeverityRule.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,25 +71,24 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/cyfirmaindicators-cl.html"><code>CyfirmaIndicators_CL</code></a></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/cyfirmaindicators-cl.html"><code>CyfirmaIndicators_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/cyfirma-cyber-intelligence.html">Back to Cyfirma Cyber Intelligence</a></p>
-
 </div>
 
 </body>

@@ -15,7 +15,7 @@
 | **Publisher** | ARGOS Cloud Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://argos-security.io/contact-us](https://argos-security.io/contact-us) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security |
 | **Version** | 2.0.0 |
 | **Author** | ARGOS Cloud Security - support@argos-security.io |
 | **First Published** | 2022-08-16 |

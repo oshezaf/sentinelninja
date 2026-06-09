@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/atlassianjiraaudit.html">AtlassianJiraAudit</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Sync-AssignedUser/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AtlassianJiraAudit/Playbooks/Sync-AssignedUser/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,92 +47,53 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Update_incident</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_secret</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName AAD SP'), ''')}/value')]</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">HTTP</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users?$filter=DisplayName eq '@{concat(triggerBody()?['fields']?['assignee']?['displayName'], ' (Operator)')}'</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident | put | `/Incidents` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `[concat('/secrets/@{encodeURIComponent(''', parameters('SecretName AAD SP'), ''')}/value')]` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | GET | `https://graph.microsoft.com/v1.0/users?$filter=DisplayName eq '@{concat(triggerBody()?['fields']?['assignee']?['displayName'], ' (Operator)')}'` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -142,43 +103,33 @@
 <h1 id="synchronization-tool-for-sentinel-and-jira">Synchronization Tool for Sentinel and JIRA</h1>
 <p>Author: Thijs Lecomte</p>
 <h2 id="overview">Overview</h2>
-<p>This tool will synchronize incidents between Microsoft Sentinel and JIRA Service Management using the following tools:</p>
-<ul>
-<li>Azure Logic Apps</li>
-<li>Azure Functions</li>
-<li>Automation for JIRA</li>
-<li>Microsoft Sentinel Automation Rules</li>
-<li>Azure Key Vault</li>
-</ul>
-<p>This tool will do the following:</p>
-<ul>
-<li>Create an incident in JIRA when an incident is created in Sentinel</li>
-<li>Sync the assigned user from JIRA to Sentinel</li>
-<li>Sync the status from JIRA to Sentinel</li>
-<li>Add the URL to the JIRA incident as a comment in Sentinel</li>
-<li>Sync public comments from JIRA to Sentinel</li>
-</ul>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AtlassianJiraAudit/Playbooks/Images/Solution%20overview.png" alt="Overview" /></p>
+<p>This tool will synchronize incidents between Microsoft Sentinel and JIRA Service Management using the following tools:
+* Azure Logic Apps
+* Azure Functions
+* Automation for JIRA
+* Microsoft Sentinel Automation Rules
+* Azure Key Vault</p>
+<p>This tool will do the following:
+* Create an incident in JIRA when an incident is created in Sentinel
+* Sync the assigned user from JIRA to Sentinel
+* Sync the status from JIRA to Sentinel
+* Add the URL to the JIRA incident as a comment in Sentinel
+* Sync public comments from JIRA to Sentinel</p>
+<p><img alt="Overview" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AtlassianJiraAudit/Playbooks/Images/Solution%20overview.png" /></p>
 <p><a href="https://www.thecollective.eu/en/insights/setting-up-a-bidirectional-sync-between-sentinel-and-jira">Blog post with more background information</a></p>
 <h2 id="implementation">Implementation</h2>
-<p>To implement this solution, a few different steps need to be done:</p>
-<ol>
-<li>Create necessary Service Principals</li>
-<li>JIRA Configuration<ol>
-<li>Custom fields</li>
-<li>Deploy Automation for JIRA rules (used for sync from JIRA to Microsoft Sentinel)</li>
-</ol>
-</li>
-<li>Deploy the Key Vault and add secrets</li>
-<li>Deploy Azure Logic Apps (4) through ARM deployment</li>
-<li>Deploy Azure Function for comment sychronization and add the Powershell code (check the Functions)</li>
-<li>Create Sentinel Automation Rule</li>
-</ol>
+<p>To implement this solution, a few different steps need to be done:
+1. Create necessary Service Principals
+2. JIRA Configuration
+   1. Custom fields
+   2. Deploy Automation for JIRA rules (used for sync from JIRA to Microsoft Sentinel)
+3. Deploy the Key Vault and add secrets
+4. Deploy Azure Logic Apps (4) through ARM deployment
+5. Deploy Azure Function for comment sychronization and add the Powershell code (check the Functions)
+6. Create Sentinel Automation Rule</p>
 <h2 id="1-create-service-principal">1. Create Service Principal</h2>
-<p>The tool requires a service principals for authentication to different services:</p>
-<ul>
-<li>Authentication to Microsoft Entra ID to retrieve user ID's (for assigning incidents in Sentinel)</li>
-</ul>
+<p>The tool requires a service principals for authentication to different services:
+* Authentication to Microsoft Entra ID to retrieve user ID's (for assigning incidents in Sentinel)</p>
 <h3 id="microsoft-entra-id-service-principal">Microsoft Entra ID Service Principal</h3>
 <p>This Service Principal needs to have User.Read.All application permissions.
 This Service Principal is used in the Logic app 'Sync-AssignedUser.</p>
@@ -192,86 +143,86 @@ All Logic Apps need to be updated with the correct ID's of the fields.</p>
 <table>
 <thead>
 <tr>
-  <th><strong>Field Name</strong></th>
-  <th><strong>Field ID</strong></th>
-  <th><strong>Field Type</strong></th>
+<th><strong>Field Name</strong></th>
+<th><strong>Field ID</strong></th>
+<th><strong>Field Type</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Organizations</td>
-  <td>customfield_10002</td>
-  <td>Built-in</td>
+<td>Organizations</td>
+<td>customfield_10002</td>
+<td>Built-in</td>
 </tr>
 <tr>
-  <td>Sentinel Incident URL</td>
-  <td>customfield_10144</td>
-  <td>Url Field</td>
+<td>Sentinel Incident URL</td>
+<td>customfield_10144</td>
+<td>Url Field</td>
 </tr>
 <tr>
-  <td>Incident ID</td>
-  <td>customfield_10145</td>
-  <td>Text Field (Single line)</td>
+<td>Incident ID</td>
+<td>customfield_10145</td>
+<td>Text Field (Single line)</td>
 </tr>
 <tr>
-  <td>Closure Comment</td>
-  <td>customfield_10146</td>
-  <td>Text Field (Multiline)</td>
+<td>Closure Comment</td>
+<td>customfield_10146</td>
+<td>Text Field (Multiline)</td>
 </tr>
 <tr>
-  <td>Closure Reason</td>
-  <td>customfield_10047</td>
-  <td>Select List (Single choice)</td>
+<td>Closure Reason</td>
+<td>customfield_10047</td>
+<td>Select List (Single choice)</td>
 </tr>
 <tr>
-  <td>Tenant Name</td>
-  <td>customfield_10149</td>
-  <td>Select List (Single Choice)</td>
+<td>Tenant Name</td>
+<td>customfield_10149</td>
+<td>Select List (Single Choice)</td>
 </tr>
 <tr>
-  <td>Created At</td>
-  <td>customfield_10154</td>
-  <td>Date Time Picker</td>
+<td>Created At</td>
+<td>customfield_10154</td>
+<td>Date Time Picker</td>
 </tr>
 <tr>
-  <td>Att&amp;ck Tactics</td>
-  <td>customfield_10155</td>
-  <td>Select List (Multiple choices)</td>
+<td>Att&amp;ck Tactics</td>
+<td>customfield_10155</td>
+<td>Select List (Multiple choices)</td>
 </tr>
 <tr>
-  <td>Affected User</td>
-  <td>customfield_10158</td>
-  <td>Text Field (Multiline)</td>
+<td>Affected User</td>
+<td>customfield_10158</td>
+<td>Text Field (Multiline)</td>
 </tr>
 <tr>
-  <td>Subscription ID</td>
-  <td>customfield_10162</td>
-  <td>Text Field (Singline)</td>
+<td>Subscription ID</td>
+<td>customfield_10162</td>
+<td>Text Field (Singline)</td>
 </tr>
 <tr>
-  <td>Sentinel Resource Group</td>
-  <td>customfield_10169</td>
-  <td>Text Field (Singline)</td>
+<td>Sentinel Resource Group</td>
+<td>customfield_10169</td>
+<td>Text Field (Singline)</td>
 </tr>
 <tr>
-  <td>Sentinel Workspace Name</td>
-  <td>customfield_10170</td>
-  <td>Text Field (Singline)</td>
+<td>Sentinel Workspace Name</td>
+<td>customfield_10170</td>
+<td>Text Field (Singline)</td>
 </tr>
 <tr>
-  <td>Sentinel Workspace ID</td>
-  <td>customfield_10172</td>
-  <td>Text Field (Singline)</td>
+<td>Sentinel Workspace ID</td>
+<td>customfield_10172</td>
+<td>Text Field (Singline)</td>
 </tr>
 <tr>
-  <td>Sentinel Incident ID</td>
-  <td>customfield_10173</td>
-  <td>Text Field (Singline)</td>
+<td>Sentinel Incident ID</td>
+<td>customfield_10173</td>
+<td>Text Field (Singline)</td>
 </tr>
 <tr>
-  <td>Sentinel Incident ARM ID</td>
-  <td>customfield_10175</td>
-  <td>Text Field (Singline)</td>
+<td>Sentinel Incident ARM ID</td>
+<td>customfield_10175</td>
+<td>Text Field (Singline)</td>
 </tr>
 </tbody>
 </table>
@@ -285,20 +236,19 @@ Automation for JIRA is an integrated plugin that is free to use for JIRA Service
 If you are not using this, you might encouter failures.</p>
 <p>Navigate to the project settings, then go to Automation to create rules.</p>
 <h4 id="sync-status">Sync Status</h4>
-<p>This automation rule has a trigger 'Issue Transitioned' and will trigger the Logic App 'Sync-Status'.
+<p>This automation rule has a trigger 'Issue Transitioned' and will trigger the Logic App 'Sync-Status'. 
 Provide the POST URL of the Logic App in the 'Send Web Request' Step. As webhook data, specify 'issue data'.</p>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Playbooks/Sync-IncidentsWithJIRA/Images/JIRA%20-%20Automation%20-%20Sync%20Status.png" alt="Automation Rule" /></p>
+<p><img alt="Automation Rule" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Playbooks/Sync-IncidentsWithJIRA/Images/JIRA%20-%20Automation%20-%20Sync%20Status.png" /></p>
 <h4 id="sync-assigned-user">Sync Assigned User</h4>
-<p>This automation rule has a trigger 'Issue Assigned' and will trigger the Logic App 'Sync-AssignedUser'.
+<p>This automation rule has a trigger 'Issue Assigned' and will trigger the Logic App 'Sync-AssignedUser'. 
 Provide the POST URL of the Logic App in the 'Send Web Request' Step. As webhook data, specify 'issue data'.</p>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Playbooks/Sync-IncidentsWithJIRA/Images/JIRA%20-%20Automation%20-%20Sync%20Assigned%20User.png" alt="Automation Rule" /></p>
+<p><img alt="Automation Rule" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Playbooks/Sync-IncidentsWithJIRA/Images/JIRA%20-%20Automation%20-%20Sync%20Assigned%20User.png" /></p>
 <h4 id="create-link">Create Link</h4>
-<p>This automation rule has a trigger 'Issue created' and will trigger the Logic App 'Add-JIRALinkComment'.</p>
+<p>This automation rule has a trigger 'Issue created' and will trigger the Logic App 'Add-JIRALinkComment'. </p>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/atlassianjiraaudit.html">Back to AtlassianJiraAudit</a></p>
-
 </div>
 
 </body>

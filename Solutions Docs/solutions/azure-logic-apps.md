@@ -15,12 +15,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Cloud Provider |
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |
 | **Solution Folder** | [Azure Logic Apps](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Logic%20Apps) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-logicapps) · Popularity: 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-logicapps) · Popularity: 🟢 High (89%) |
 
 The [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview) solution for Microsoft Sentinel enables you to ingest  Azure Logic App diagnostics logs using Diagnostic Settings into Microsoft Sentinel.
  

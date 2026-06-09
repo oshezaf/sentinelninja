@@ -17,58 +17,57 @@
 <div class="doc-content">
 <h1 id="f5-advanced-waf-integration-via-syslogcef-for-microsoft-sentinel">F5 Advanced WAF Integration via Syslog/CEF for Microsoft Sentinel</h1>
 <p><em>Solution: F5 Networks</em></p>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="F5 Networks Logo" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="F5 Networks Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">F5</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">F5</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Support Tier</strong></td>
-  <td style="text-align:left">Partner</td>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Partner</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Support Link</strong></td>
-  <td style="text-align:left"><a href="https://www.f5.com/services/support">https://www.f5.com/services/support</a></td>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://www.f5.com/services/support">https://www.f5.com/services/support</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Categories</strong></td>
-  <td style="text-align:left">domains</td>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">Security - Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.1</td>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Author</strong></td>
-  <td style="text-align:left">F5</td>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">F5</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>First Published</strong></td>
-  <td style="text-align:left">2022-05-12</td>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2022-05-12</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution Folder</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks">F5 Networks</a></td>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/F5%20Networks">F5 Networks</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/f5-networks.f5_networks_data_mss">Azure Marketplace</a> · Popularity: 🟡 Low (32%)</td>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/f5-networks.f5_networks_data_mss">Azure Marketplace</a> · Popularity: 🟡 Low (37%)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Pre-requisites</strong></td>
-  <td style="text-align:left"><a href="common-event-format.html">Common Event Format</a></td>
+<td style="text-align: left;"><strong>Pre-requisites</strong></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
 </tr>
 </tbody>
 </table>
@@ -86,12 +85,12 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Solution</th>
+<th style="text-align: left;">Solution</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="common-event-format.html">Common Event Format</a></td>
+<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
 </tr>
 </tbody>
 </table>
@@ -111,16 +110,16 @@
 <table>
 <thead>
 <tr>
-  <th>Table</th>
-  <th>Used By Connectors</th>
-  <th>Used By Content</th>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-  <td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/f5ama.html">[Deprecated] F5 Networks via AMA</a>, <a href="../connectors/f5.html">[Deprecated] F5 Networks via Legacy Agent</a></td>
-  <td>-</td>
+<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/f5ama.html">[Deprecated] F5 Networks via AMA</a>, <a href="../connectors/f5.html">[Deprecated] F5 Networks via Legacy Agent</a></td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
@@ -128,28 +127,27 @@
 <table>
 <thead>
 <tr>
-  <th><strong>Version</strong></th>
-  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-  <th><strong>Change History</strong></th>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>Change History</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>3.0.1</td>
-  <td>11-07-2024</td>
-  <td>Deprecating data connectors</td>
+<td>3.0.1</td>
+<td>11-07-2024</td>
+<td>Deprecating data connectors</td>
 </tr>
 <tr>
-  <td>3.0.0</td>
-  <td>29-09-2023</td>
-  <td>Addition of new F5 Networks AMA <strong>Data Connector</strong></td>
+<td>3.0.0</td>
+<td>29-09-2023</td>
+<td>Addition of new F5 Networks AMA <strong>Data Connector</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
-
 </div>
 
 </body>

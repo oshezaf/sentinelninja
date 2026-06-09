@@ -1,4 +1,6 @@
-# Censys
+# ⚠️ Censys
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Censys.svg" alt="Censys Logo" width="75" height="75">
 
@@ -13,7 +15,7 @@
 | **Publisher** | Censys Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://docs.censys.com](https://docs.censys.com) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Cloud Security |
 | **Version** | 3.0.0 |
 | **Author** | Censys - support@censys.com |
 | **First Published** | 2026-03-05 |

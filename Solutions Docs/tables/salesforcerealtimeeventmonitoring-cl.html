@@ -24,22 +24,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -54,966 +54,966 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">AcceptLanguage</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">List of HTTP Headers that specify the natural language the client understands.</td>
+<td style="text-align: left;">AcceptLanguage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of HTTP Headers that specify the natural language the client understands.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ActionName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the action.</td>
+<td style="text-align: left;">ActionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the action.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Activity</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The action the user attempted that requires identity verification.</td>
+<td style="text-align: left;">Activity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action the user attempted that requires identity verification.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AdditionalInfo</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">JSON serialization of additional information captured from the HTTP headers.</td>
+<td style="text-align: left;">AdditionalInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">JSON serialization of additional information captured from the HTTP headers.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AnomalySubType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The sub-type of the anomaly event, indicating the specific anomaly category detected.</td>
+<td style="text-align: left;">AnomalySubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The sub-type of the anomaly event, indicating the specific anomaly category detected.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ApiAnomalyEventNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique number automatically assigned to the API anomaly event.</td>
+<td style="text-align: left;">ApiAnomalyEventNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique number automatically assigned to the API anomaly event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ApiType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of API used (e.g., SOAP Enterprise, SOAP Partner, REST, Bulk).</td>
+<td style="text-align: left;">ApiType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of API used (e.g., SOAP Enterprise, SOAP Partner, REST, Bulk).</td>
 </tr>
 <tr>
-  <td style="text-align:left">ApiVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The API version string. If no version number is available, Unknown is returned.</td>
+<td style="text-align: left;">ApiVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API version string. If no version number is available, Unknown is returned.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ApiVersionNumber</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The numeric version of the API.</td>
+<td style="text-align: left;">ApiVersionNumber</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The numeric version of the API.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the app provider seeking authentication.</td>
+<td style="text-align: left;">AppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the app provider seeking authentication.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Application</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The application used to access the org.</td>
+<td style="text-align: left;">Application</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The application used to access the org.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the application that the user accessed.</td>
+<td style="text-align: left;">AppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the application that the user accessed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AuthMethodReference</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The authentication method used by a third-party identification provider for OpenID Connect SSO.</td>
+<td style="text-align: left;">AuthMethodReference</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The authentication method used by a third-party identification provider for OpenID Connect SSO.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AuthServiceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The 18-character ID for an authentication service for a login event.</td>
+<td style="text-align: left;">AuthServiceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The 18-character ID for an authentication service for a login event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AuthSessionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the authentication session.</td>
+<td style="text-align: left;">AuthSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the authentication session.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BotId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the bot.</td>
+<td style="text-align: left;">BotId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the bot.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BotSessionIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The bot session ID.</td>
+<td style="text-align: left;">BotSessionIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The bot session ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Browser</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The browser name and version if known (e.g., Chrome 77, Firefox, Safari).</td>
+<td style="text-align: left;">Browser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The browser name and version if known (e.g., Chrome 77, Firefox, Safari).</td>
 </tr>
 <tr>
-  <td style="text-align:left">CanDownloadPdf</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the downloaded PDF was converted from another file type.</td>
+<td style="text-align: left;">CanDownloadPdf</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the downloaded PDF was converted from another file type.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CipherSuite</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The TLS cipher suite used for the login.</td>
+<td style="text-align: left;">CipherSuite</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The TLS cipher suite used for the login.</td>
 </tr>
 <tr>
-  <td style="text-align:left">City</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The city where the user's IP address is physically located.</td>
+<td style="text-align: left;">City</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The city where the user's IP address is physically located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Client</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The service that executed the API event.</td>
+<td style="text-align: left;">Client</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The service that executed the API event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The version number of the login client.</td>
+<td style="text-align: left;">ClientVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version number of the login client.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ColumnHeaders</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Comma-separated values of column headers (API names, not UI labels).</td>
+<td style="text-align: left;">ColumnHeaders</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Comma-separated values of column headers (API names, not UI labels).</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConnectedAppId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The 15-character ID of the connected app associated with the API call.</td>
+<td style="text-align: left;">ConnectedAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The 15-character ID of the connected app associated with the API call.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConnectionType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of connection (e.g., CDMA, WIFI, LTE).</td>
+<td style="text-align: left;">ConnectionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of connection (e.g., CDMA, WIFI, LTE).</td>
 </tr>
 <tr>
-  <td style="text-align:left">ContentSize</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The size of the document in bytes.</td>
+<td style="text-align: left;">ContentSize</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The size of the document in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Country</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The country where the user's IP address is physically located.</td>
+<td style="text-align: left;">Country</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The country where the user's IP address is physically located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CountryIso</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ISO 3166 code for the country where the user's IP address is physically located.</td>
+<td style="text-align: left;">CountryIso</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ISO 3166 code for the country where the user's IP address is physically located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CreatedById</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the user who created the event record.</td>
+<td style="text-align: left;">CreatedById</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the user who created the event record.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CreatedDate</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The date and time when the event record was created in Salesforce.</td>
+<td style="text-align: left;">CreatedDate</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time when the event record was created in Salesforce.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CredentialStuffingEventNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique number automatically assigned to the credential stuffing event.</td>
+<td style="text-align: left;">CredentialStuffingEventNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique number automatically assigned to the credential stuffing event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CurrentIp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The IP address of the newly observed fingerprint that deviates from the previous one.</td>
+<td style="text-align: left;">CurrentIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the newly observed fingerprint that deviates from the previous one.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CurrentPlatform</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The platform of the newly observed fingerprint that deviates from the previous one.</td>
+<td style="text-align: left;">CurrentPlatform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The platform of the newly observed fingerprint that deviates from the previous one.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CurrentScreen</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The screen of the newly observed fingerprint that deviates from the previous one.</td>
+<td style="text-align: left;">CurrentScreen</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The screen of the newly observed fingerprint that deviates from the previous one.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CurrentUserAgent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The user agent of the newly observed fingerprint that deviates from the previous one.</td>
+<td style="text-align: left;">CurrentUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user agent of the newly observed fingerprint that deviates from the previous one.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CurrentWindow</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The browser window of the newly observed fingerprint that deviates from the previous one.</td>
+<td style="text-align: left;">CurrentWindow</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The browser window of the newly observed fingerprint that deviates from the previous one.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DashboardId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the dashboard that the report was part of.</td>
+<td style="text-align: left;">DashboardId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the dashboard that the report was part of.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DashboardName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The title of the dashboard that the report was part of.</td>
+<td style="text-align: left;">DashboardName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The title of the dashboard that the report was part of.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DelegatedOrganizationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Organization ID of the admin who logs in as another user.</td>
+<td style="text-align: left;">DelegatedOrganizationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Organization ID of the admin who logs in as another user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DelegatedUsername</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Username of the admin who logs in as another user.</td>
+<td style="text-align: left;">DelegatedUsername</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Username of the admin who logs in as another user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Description</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The description of the report.</td>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The description of the report.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeveloperName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique name of the object in the API.</td>
+<td style="text-align: left;">DeveloperName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique name of the object in the API.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier used to identify a device when tracking events.</td>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier used to identify a device when tracking events.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceModel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the device model.</td>
+<td style="text-align: left;">DeviceModel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the device model.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DevicePlatform</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of application experience in name:experience:form format.</td>
+<td style="text-align: left;">DevicePlatform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of application experience in name:experience:form format.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceSessionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier of the user's session based on page load time.</td>
+<td style="text-align: left;">DeviceSessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier of the user's session based on page load time.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DisplayedFieldEntities</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The API values of the fields displayed on the report, including grouped column entity names.</td>
+<td style="text-align: left;">DisplayedFieldEntities</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API values of the fields displayed on the report, including grouped column entity names.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DocumentId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The 18-character ID of the document being downloaded.</td>
+<td style="text-align: left;">DocumentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The 18-character ID of the document being downloaded.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Duration</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The duration in milliseconds since the page start time.</td>
+<td style="text-align: left;">Duration</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The duration in milliseconds since the page start time.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EffectivePageTime</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The time in milliseconds for the page to load before a user could interact with it.</td>
+<td style="text-align: left;">EffectivePageTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The time in milliseconds for the page to load before a user could interact with it.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EffectivePageTimeDeviationErrorType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates the origin of an error when the page has a loading deviation.</td>
+<td style="text-align: left;">EffectivePageTimeDeviationErrorType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the origin of an error when the page has a loading deviation.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EffectivePageTimeDeviationReason</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The reason for deviation in page loading time.</td>
+<td style="text-align: left;">EffectivePageTimeDeviationReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The reason for deviation in page loading time.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ElapsedTime</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The amount of time it took for the request to complete in milliseconds.</td>
+<td style="text-align: left;">ElapsedTime</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The amount of time it took for the request to complete in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ErrorCode</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The error code for the authentication issue.</td>
+<td style="text-align: left;">ErrorCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The error code for the authentication issue.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EvaluationTime</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The amount of time it took to evaluate the policy in milliseconds.</td>
+<td style="text-align: left;">EvaluationTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The amount of time it took to evaluate the policy in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventDate</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The time when the specified event was captured.</td>
+<td style="text-align: left;">EventDate</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the specified event was captured.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventGroup</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">ID of the verification attempt; multiple attempts in a session share the same ID.</td>
+<td style="text-align: left;">EventGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the verification attempt; multiple attempts in a session share the same ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique ID of the event.</td>
+<td style="text-align: left;">EventIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID of the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventSource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The source of the event (e.g., API, Classic, Lightning).</td>
+<td style="text-align: left;">EventSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source of the event (e.g., API, Classic, Lightning).</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventSourceDetail</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The source of the event providing additional detail beyond EventSource.</td>
+<td style="text-align: left;">EventSourceDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source of the event providing additional detail beyond EventSource.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of event, used to filter logs (e.g., LoginEvent, UriEvent).</td>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of event, used to filter logs (e.g., LoginEvent, UriEvent).</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventUuid</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The universally unique identifier (UUID) of the event.</td>
+<td style="text-align: left;">EventUuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The universally unique identifier (UUID) of the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ExecutionIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier to correlate multiple data chunks from a single execution.</td>
+<td style="text-align: left;">ExecutionIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier to correlate multiple data chunks from a single execution.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ExportFileFormat</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The format of the exported report (e.g., CSV, Excel).</td>
+<td style="text-align: left;">ExportFileFormat</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The format of the exported report (e.g., CSV, Excel).</td>
 </tr>
 <tr>
-  <td style="text-align:left">FeatureContribution</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">A percentage representing how much the feature contributed to the anomaly score.</td>
+<td style="text-align: left;">FeatureContribution</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">A percentage representing how much the feature contributed to the anomaly score.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FeatureName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the feature that contributed to the anomaly score.</td>
+<td style="text-align: left;">FeatureName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the feature that contributed to the anomaly score.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FeatureValue</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The value of the feature that contributed to the anomaly score.</td>
+<td style="text-align: left;">FeatureValue</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The value of the feature that contributed to the anomaly score.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FileAction</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The action taken on the file (e.g., API_DOWNLOAD, PREVIEW, UI_DOWNLOAD, UPLOAD).</td>
+<td style="text-align: left;">FileAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The action taken on the file (e.g., API_DOWNLOAD, PREVIEW, UI_DOWNLOAD, UPLOAD).</td>
 </tr>
 <tr>
-  <td style="text-align:left">FileName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the file including the file extension.</td>
+<td style="text-align: left;">FileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the file including the file extension.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FileSource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Origin of the document (S=Salesforce, E=External, L=Social Customer Service).</td>
+<td style="text-align: left;">FileSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Origin of the document (S=Salesforce, E=External, L=Social Customer Service).</td>
 </tr>
 <tr>
-  <td style="text-align:left">FileType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The content type of the file.</td>
+<td style="text-align: left;">FileType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The content type of the file.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FilterCriteria</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">A JSON string that represents the filter criteria at the time the event was captured.</td>
+<td style="text-align: left;">FilterCriteria</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A JSON string that represents the filter criteria at the time the event was captured.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Format</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The format of the report (e.g., Matrix, MultiBlock, Summary, Tabular).</td>
+<td style="text-align: left;">Format</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The format of the report (e.g., Matrix, MultiBlock, Summary, Tabular).</td>
 </tr>
 <tr>
-  <td style="text-align:left">ForwardedForIp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The value in the X-Forwarded-For header of HTTP requests sent by the client.</td>
+<td style="text-align: left;">ForwardedForIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The value in the X-Forwarded-For header of HTTP requests sent by the client.</td>
 </tr>
 <tr>
-  <td style="text-align:left">GroupedColumnHeaders</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Comma-separated values of grouped column fields in summary, matrix, and joined reports.</td>
+<td style="text-align: left;">GroupedColumnHeaders</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Comma-separated values of grouped column fields in summary, matrix, and joined reports.</td>
 </tr>
 <tr>
-  <td style="text-align:left">GuestUserAnomalyEventNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique number automatically assigned to the guest user anomaly event.</td>
+<td style="text-align: left;">GuestUserAnomalyEventNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique number automatically assigned to the guest user anomaly event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HasEffectivePageTimeDeviation</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates when a deviation is detected in effective page time.</td>
+<td style="text-align: left;">HasEffectivePageTimeDeviation</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates when a deviation is detected in effective page time.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HasExternalUsers</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether external users are impacted by the operation that triggered a permission change.</td>
+<td style="text-align: left;">HasExternalUsers</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether external users are impacted by the operation that triggered a permission change.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HasLogoutUrl</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether a logout URL has been assigned to the app.</td>
+<td style="text-align: left;">HasLogoutUrl</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether a logout URL has been assigned to the app.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HttpMethod</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The HTTP method of the login request (e.g., GET, POST).</td>
+<td style="text-align: left;">HttpMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The HTTP method of the login request (e.g., GET, POST).</td>
 </tr>
 <tr>
-  <td style="text-align:left">HttpReferer</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The referring URI of the page receiving the request.</td>
+<td style="text-align: left;">HttpReferer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The referring URI of the page receiving the request.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IdentityUsed</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identity (username) of the user being authenticated.</td>
+<td style="text-align: left;">IdentityUsed</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identity (username) of the user being authenticated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ImpactedUserIds</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">A list of IDs of the users affected by the event. Maximum of 1,000 user IDs.</td>
+<td style="text-align: left;">ImpactedUserIds</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A list of IDs of the users affected by the event. Maximum of 1,000 user IDs.</td>
 </tr>
 <tr>
-  <td style="text-align:left">InitiatedBy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The code describing how the authentication request was initiated (e.g., IdP, SP, OauthAuthorize).</td>
+<td style="text-align: left;">InitiatedBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The code describing how the authentication request was initiated (e.g., IdP, SP, OauthAuthorize).</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsLatestVersion</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the file is the most current version.</td>
+<td style="text-align: left;">IsLatestVersion</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the file is the most current version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsScheduled</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the report was scheduled.</td>
+<td style="text-align: left;">IsScheduled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the report was scheduled.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastReferencedDate</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp for when the current user last viewed a record related to this record.</td>
+<td style="text-align: left;">LastReferencedDate</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp for when the current user last viewed a record related to this record.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastViewedDate</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp for when the current user last viewed this record.</td>
+<td style="text-align: left;">LastViewedDate</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp for when the current user last viewed this record.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Latitude</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The latitude where the user's IP address is physically located.</td>
+<td style="text-align: left;">Latitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The latitude where the user's IP address is physically located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ListViewId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the list view associated with this event.</td>
+<td style="text-align: left;">ListViewId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the list view associated with this event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginAccessChangeExpDate</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The expiration date of the login access change granted to another user.</td>
+<td style="text-align: left;">LoginAccessChangeExpDate</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The expiration date of the login access change granted to another user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginAccessChangeGranteeName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the user or entity granted login access.</td>
+<td style="text-align: left;">LoginAccessChangeGranteeName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the user or entity granted login access.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginAccessChangeGranteeType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of the grantee for login access (e.g., Admin, Support).</td>
+<td style="text-align: left;">LoginAccessChangeGranteeType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of the grantee for login access (e.g., Admin, Support).</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginAnomalyEventNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique number automatically assigned to the login anomaly event.</td>
+<td style="text-align: left;">LoginAnomalyEventNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique number automatically assigned to the login anomaly event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginAsCategory</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Represents how the user logs in as another user (e.g., OrgAdmin, Community).</td>
+<td style="text-align: left;">LoginAsCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Represents how the user logs in as another user (e.g., OrgAdmin, Community).</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginGeoId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Salesforce ID of the LoginGeo object associated with the login user's IP address.</td>
+<td style="text-align: left;">LoginGeoId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Salesforce ID of the LoginGeo object associated with the login user's IP address.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginHistoryId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Tracks a user session so you can correlate user activity with a particular login instance.</td>
+<td style="text-align: left;">LoginHistoryId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Tracks a user session so you can correlate user activity with a particular login instance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginKey</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The string that ties together all events in a given user's login session.</td>
+<td style="text-align: left;">LoginKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The string that ties together all events in a given user's login session.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginLatitude</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The latitude where the user's IP address is physically located during login.</td>
+<td style="text-align: left;">LoginLatitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The latitude where the user's IP address is physically located during login.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginLongitude</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The longitude where the user's IP address is physically located during login.</td>
+<td style="text-align: left;">LoginLongitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude where the user's IP address is physically located during login.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginSubType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of login flow used.</td>
+<td style="text-align: left;">LoginSubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of login flow used.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of login used to access the session.</td>
+<td style="text-align: left;">LoginType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of login used to access the session.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoginUrl</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The URL of the login page.</td>
+<td style="text-align: left;">LoginUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URL of the login page.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Longitude</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The longitude where the user's IP address is physically located.</td>
+<td style="text-align: left;">Longitude</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The longitude where the user's IP address is physically located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Message</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The failure message if the operation failed.</td>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The failure message if the operation failed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Name</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The display name of the entity.</td>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the entity.</td>
 </tr>
 <tr>
-  <td style="text-align:left">NetworkId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the Experience Cloud site that the user is logging in to.</td>
+<td style="text-align: left;">NetworkId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the Experience Cloud site that the user is logging in to.</td>
 </tr>
 <tr>
-  <td style="text-align:left">NumberOfColumns</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of columns in the list view or report.</td>
+<td style="text-align: left;">NumberOfColumns</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of columns in the list view or report.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Operation</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operation being performed on the entity (e.g., Read, Create, Update, Delete).</td>
+<td style="text-align: left;">Operation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation being performed on the entity (e.g., Read, Create, Update, Delete).</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationDetail</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of operation that triggers a permission change.</td>
+<td style="text-align: left;">OperationDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of operation that triggers a permission change.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Whether the operation performed on the entity succeeded or failed.</td>
+<td style="text-align: left;">OperationStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Whether the operation performed on the entity succeeded or failed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OrderBy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The column that the list view is sorted by.</td>
+<td style="text-align: left;">OrderBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The column that the list view is sorted by.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OsName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operating system name.</td>
+<td style="text-align: left;">OsName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating system name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OsVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operating system version.</td>
+<td style="text-align: left;">OsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating system version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OwnerId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the org or user who owns the record.</td>
+<td style="text-align: left;">OwnerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the org or user who owns the record.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PageStartTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The time when the page was initially loaded.</td>
+<td style="text-align: left;">PageStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the page was initially loaded.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PageUrl</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Relative URL of the top-level Lightning Experience or Salesforce mobile app page.</td>
+<td style="text-align: left;">PageUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Relative URL of the top-level Lightning Experience or Salesforce mobile app page.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ParentIdList</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">The IDs of the affected permission sets or permission set groups.</td>
+<td style="text-align: left;">ParentIdList</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The IDs of the affected permission sets or permission set groups.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ParentNameList</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">The names of the affected permission sets or permission set groups.</td>
+<td style="text-align: left;">ParentNameList</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The names of the affected permission sets or permission set groups.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PermissionExpiration</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp when the permission change expires.</td>
+<td style="text-align: left;">PermissionExpiration</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the permission change expires.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PermissionExpirationList</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Timestamps specifying when added permissions will be revoked.</td>
+<td style="text-align: left;">PermissionExpirationList</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Timestamps specifying when added permissions will be revoked.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PermissionList</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">The list of permissions that are enabled or disabled in the event.</td>
+<td style="text-align: left;">PermissionList</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The list of permissions that are enabled or disabled in the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PermissionType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of permission updated in the event (e.g., ObjectPermission, UserPermission).</td>
+<td style="text-align: left;">PermissionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of permission updated in the event (e.g., ObjectPermission, UserPermission).</td>
 </tr>
 <tr>
-  <td style="text-align:left">PlannerId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the agent planner.</td>
+<td style="text-align: left;">PlannerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the agent planner.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Platform</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operating system name and version used during the event.</td>
+<td style="text-align: left;">Platform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating system name and version used during the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Policy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identity verification security policy or setting.</td>
+<td style="text-align: left;">Policy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identity verification security policy or setting.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PolicyId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the transaction policy associated with this event.</td>
+<td style="text-align: left;">PolicyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the transaction policy associated with this event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PolicyOutcome</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The result of the transaction policy.</td>
+<td style="text-align: left;">PolicyOutcome</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result of the transaction policy.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PostalCode</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The postal code where the user's IP address is physically located.</td>
+<td style="text-align: left;">PostalCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The postal code where the user's IP address is physically located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousIp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The IP address of the previous fingerprint before the deviation was detected.</td>
+<td style="text-align: left;">PreviousIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the previous fingerprint before the deviation was detected.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousPageAppName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The internal name of the previous application accessed from the App Launcher.</td>
+<td style="text-align: left;">PreviousPageAppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The internal name of the previous application accessed from the App Launcher.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousPageEntityId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique previous page entity identifier.</td>
+<td style="text-align: left;">PreviousPageEntityId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique previous page entity identifier.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousPageEntityType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The previous page entity type.</td>
+<td style="text-align: left;">PreviousPageEntityType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The previous page entity type.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousPageUrl</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The relative URL of the previous Lightning Experience or Salesforce mobile app page.</td>
+<td style="text-align: left;">PreviousPageUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The relative URL of the previous Lightning Experience or Salesforce mobile app page.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousPlatform</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The platform of the previous fingerprint before the deviation was detected.</td>
+<td style="text-align: left;">PreviousPlatform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The platform of the previous fingerprint before the deviation was detected.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousScreen</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The screen of the previous fingerprint before the deviation was detected.</td>
+<td style="text-align: left;">PreviousScreen</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The screen of the previous fingerprint before the deviation was detected.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousUserAgent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The user agent of the previous fingerprint before the deviation was detected.</td>
+<td style="text-align: left;">PreviousUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user agent of the previous fingerprint before the deviation was detected.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PreviousWindow</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The browser window of the previous fingerprint before the deviation was detected.</td>
+<td style="text-align: left;">PreviousWindow</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The browser window of the previous fingerprint before the deviation was detected.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ProcessDuration</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The amount of time to download the file in milliseconds.</td>
+<td style="text-align: left;">ProcessDuration</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The amount of time to download the file in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueriedEntities</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of entities associated with the event.</td>
+<td style="text-align: left;">QueriedEntities</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of entities associated with the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Query</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The SOQL query.</td>
+<td style="text-align: left;">Query</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SOQL query.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RecordId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the record being viewed or edited.</td>
+<td style="text-align: left;">RecordId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the record being viewed or edited.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Records</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">A JSON string that represents the queried data records.</td>
+<td style="text-align: left;">Records</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A JSON string that represents the queried data records.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RelatedEventIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The EventIdentifier of the related event for multi-factor authentication flows.</td>
+<td style="text-align: left;">RelatedEventIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The EventIdentifier of the related event for multi-factor authentication flows.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Remarks</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The text users see when prompted to verify their identity.</td>
+<td style="text-align: left;">Remarks</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The text users see when prompted to verify their identity.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RemoteIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Reserved for future use.</td>
+<td style="text-align: left;">RemoteIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reserved for future use.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ReplayId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The replay ID used to resume event streaming from a specific point in the event stream.</td>
+<td style="text-align: left;">ReplayId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The replay ID used to resume event streaming from a specific point in the event stream.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Report</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The report ID for which this anomaly event was detected.</td>
+<td style="text-align: left;">Report</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The report ID for which this anomaly event was detected.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ReportAnomalyEventNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique number automatically assigned to the report anomaly event.</td>
+<td style="text-align: left;">ReportAnomalyEventNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique number automatically assigned to the report anomaly event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ReportId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the report associated with this event.</td>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the report associated with this event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestedEntities</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Objects queried by the guest user.</td>
+<td style="text-align: left;">RequestedEntities</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Objects queried by the guest user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique ID of a single transaction.</td>
+<td style="text-align: left;">RequestIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique ID of a single transaction.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RowsProcessed</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Total row count for the current operation.</td>
+<td style="text-align: left;">RowsProcessed</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Total row count for the current operation.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RowsReturned</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The number of rows of data returned in the current batch.</td>
+<td style="text-align: left;">RowsReturned</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The number of rows of data returned in the current batch.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SalesforceObjectId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Salesforce record ID of the event store object.</td>
+<td style="text-align: left;">SalesforceObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Salesforce record ID of the event store object.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SalesforceResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID of the connected app resource.</td>
+<td style="text-align: left;">SalesforceResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID of the connected app resource.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SamlEntityUrl</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The authentication URL of the SAML provider.</td>
+<td style="text-align: left;">SamlEntityUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The authentication URL of the SAML provider.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Scope</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Defines the scope of the data (e.g., user, team, organization).</td>
+<td style="text-align: left;">Scope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Defines the scope of the data (e.g., user, team, organization).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Score</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">A number representing the anomaly score for the activity tracked by this event.</td>
+<td style="text-align: left;">Score</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">A number representing the anomaly score for the activity tracked by this event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SdkAppType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The mobile SDK application type (e.g., NATIVE, HYBRID, REACTNATIVE).</td>
+<td style="text-align: left;">SdkAppType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The mobile SDK application type (e.g., NATIVE, HYBRID, REACTNATIVE).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SdkAppVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The version of the mobile SDK the application uses.</td>
+<td style="text-align: left;">SdkAppVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the mobile SDK the application uses.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SdkVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The mobile SDK application version number.</td>
+<td style="text-align: left;">SdkVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The mobile SDK application version number.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SecurityEventData</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The set of browser fingerprint features about the anomaly that triggered this event, in JSON format.</td>
+<td style="text-align: left;">SecurityEventData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The set of browser fingerprint features about the anomaly that triggered this event, in JSON format.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Sequence</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Incremental sequence number that indicates the order of multiple correlated events.</td>
+<td style="text-align: left;">Sequence</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Incremental sequence number that indicates the order of multiple correlated events.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SessionHijackingEventNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique number automatically assigned to the session hijacking event.</td>
+<td style="text-align: left;">SessionHijackingEventNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique number automatically assigned to the session hijacking event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SessionKey</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The user's unique session ID. Use this value to identify all user events within a session.</td>
+<td style="text-align: left;">SessionKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user's unique session ID. Use this value to identify all user events within a session.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SessionLevel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Session-level security that controls user access to features such as connected apps and reporting.</td>
+<td style="text-align: left;">SessionLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Session-level security that controls user access to features such as connected apps and reporting.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SoqlCommands</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">SOQL commands run by the guest user.</td>
+<td style="text-align: left;">SoqlCommands</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">SOQL commands run by the guest user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceIp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The source IP address of the client.</td>
+<td style="text-align: left;">SourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address of the client.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SsoType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of SSO (e.g., Oidc, Saml).</td>
+<td style="text-align: left;">SsoType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of SSO (e.g., Oidc, Saml).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Status</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The status of the login attempt or operation.</td>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the login attempt or operation.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatusDetail</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Additional status detail for the event.</td>
+<td style="text-align: left;">StatusDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional status detail for the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Subdivision</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the subdivision where the user's IP address is physically located (e.g., state).</td>
+<td style="text-align: left;">Subdivision</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the subdivision where the user's IP address is physically located (e.g., state).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Summary</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A text summary of the threat that caused this event to be created.</td>
+<td style="text-align: left;">Summary</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A text summary of the threat that caused this event to be created.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TargetUrl</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The URL redirected to after logging in as another user.</td>
+<td style="text-align: left;">TargetUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URL redirected to after logging in as another user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (in UTC) when the log entry was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (in UTC) when the log entry was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TlsProtocol</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The TLS protocol version used for the login (e.g., TLS 1.2, TLS 1.3).</td>
+<td style="text-align: left;">TlsProtocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The TLS protocol version used for the login (e.g., TLS 1.2, TLS 1.3).</td>
 </tr>
 <tr>
-  <td style="text-align:left">TotalControllerEvents</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of times controllers were triggered.</td>
+<td style="text-align: left;">TotalControllerEvents</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of times controllers were triggered.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Uri</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The URI of the page receiving the request.</td>
+<td style="text-align: left;">Uri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The URI of the page receiving the request.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UseApiToken</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates login with API Token - T token, or P password.</td>
+<td style="text-align: left;">UseApiToken</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates login with API Token - T token, or P password.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserAgent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The user agent used in the HTTP request.</td>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The user agent used in the HTTP request.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserAgentDetail</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of client used to make the request as a string.</td>
+<td style="text-align: left;">UserAgentDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of client used to make the request as a string.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserCount</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The number of users affected by the event. Maximum value of 1,000.</td>
+<td style="text-align: left;">UserCount</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The number of users affected by the event. Maximum value of 1,000.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The origin user's unique ID.</td>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The origin user's unique ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserNameDetail</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The username in user@company.com format at the time the event was created.</td>
+<td style="text-align: left;">UserNameDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The username in user@company.com format at the time the event was created.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The category of user license (e.g., Standard, Guest, CspLitePortal).</td>
+<td style="text-align: left;">UserType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The category of user license (e.g., Standard, Guest, CspLitePortal).</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserTypeDetail</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The category of user license for the user involved in the event.</td>
+<td style="text-align: left;">UserTypeDetail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The category of user license for the user involved in the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">VerificationMethod</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The method by which the user attempted to verify identity (e.g., Email, Sms, U2F, Totp).</td>
+<td style="text-align: left;">VerificationMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The method by which the user attempted to verify identity (e.g., Email, Sms, U2F, Totp).</td>
 </tr>
 <tr>
-  <td style="text-align:left">VersionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The specific version of a document in Salesforce CRM Content or Files.</td>
+<td style="text-align: left;">VersionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The specific version of a document in Salesforce CRM Content or Files.</td>
 </tr>
 <tr>
-  <td style="text-align:left">VersionNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The version number of the file.</td>
+<td style="text-align: left;">VersionNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version number of the file.</td>
 </tr>
 </tbody>
 </table>
@@ -1027,14 +1027,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/salesforcertemconnector.html">SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/salesforcertemconnector.html">SalesForce Real-Time Event Monitoring Connector (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -1042,7 +1042,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

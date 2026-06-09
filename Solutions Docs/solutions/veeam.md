@@ -15,12 +15,12 @@
 | **Publisher** | Veeam Software |
 | **Support Tier** | Partner |
 | **Support Link** | [https://helpcenter.veeam.com/docs/security_plugins_microsoft_sentinel/guide/](https://helpcenter.veeam.com/docs/security_plugins_microsoft_sentinel/guide/) |
-| **Categories** | domains |
+| **Categories** | IT Operations,Security - Threat Protection |
 | **Version** | 3.0.1 |
 | **Author** | Veeam Software - microsoftappsupport@veeam.com |
 | **First Published** | 2025-08-26 |
 | **Solution Folder** | [Veeam](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Veeam) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/veeamsoftware.azure-sentinel-solution-veeamapp) · Popularity: 🔵 Medium (77%) |
 
 Veeam App for Microsoft Sentinel allows Veeam Data Platform Advanced and Premium customers to combine the powerful cyberthreat detection and response features of Microsoft Sentinel with a simple and powerful data platform that goes beyond backup, providing organizations with reliable data protection, seamless recovery, and vital security insights.
 

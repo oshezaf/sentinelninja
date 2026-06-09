@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | IT Operations |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-29 |
 | **Solution Folder** | [VMware vCenter](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMware%20vCenter) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vcenter) · Popularity: 🟢 High (82%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-vcenter) · Popularity: 🟢 High (81%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [VMware vCenter Server](https://www.vmware.com/products/vcenter-server.html) solution allows you ingest logs from your vCenter platform using Syslog into Microsoft Sentinel.

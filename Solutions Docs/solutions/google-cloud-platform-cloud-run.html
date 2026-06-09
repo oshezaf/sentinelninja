@@ -16,59 +16,58 @@
 </nav>
 <div class="doc-content">
 <h1 id="google-cloud-platform-cloud-run">Google Cloud Platform Cloud Run</h1>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="Google Cloud Platform Cloud Run Logo" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/google_logo.svg" alt="Google Cloud Platform Cloud Run Logo" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Microsoft Corporation</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft Corporation</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Support Tier</strong></td>
-  <td style="text-align:left">Microsoft</td>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;">Microsoft</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Support Link</strong></td>
-  <td style="text-align:left"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
+<td style="text-align: left;"><strong>Support Link</strong></td>
+<td style="text-align: left;"><a href="https://support.microsoft.com">https://support.microsoft.com</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Categories</strong></td>
-  <td style="text-align:left">domains</td>
+<td style="text-align: left;"><strong>Categories</strong></td>
+<td style="text-align: left;">Cloud Provider,Identity</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.2</td>
+<td style="text-align: left;"><strong>Version</strong></td>
+<td style="text-align: left;">3.0.2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Author</strong></td>
-  <td style="text-align:left">Microsoft - support@microsoft.com</td>
+<td style="text-align: left;"><strong>Author</strong></td>
+<td style="text-align: left;">Microsoft - support@microsoft.com</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>First Published</strong></td>
-  <td style="text-align:left">2021-07-30</td>
+<td style="text-align: left;"><strong>First Published</strong></td>
+<td style="text-align: left;">2021-07-30</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution Folder</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run">Google Cloud Platform Cloud Run</a></td>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Cloud%20Platform%20Cloud%20Run">Google Cloud Platform Cloud Run</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpcloudrun">Azure Marketplace</a> · Popularity: 🟡 Low (27%)</td>
+<td style="text-align: left;"><strong>Marketplace</strong></td>
+<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gcpcloudrun">Azure Marketplace</a> · Popularity: ⚪ Very Low (3%)</td>
 </tr>
 </tbody>
 </table>
 <p>The GCP Cloud Run solution provides the capability to ingest <a href="https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions">GCP Run logs</a> into Microsoft Sentinel using the GCP Logging API. Refer to <a href="https://cloud.google.com/run/docs/audit-logging#google.cloud.run.v2.Executions">GCP Cloud Run API documentation</a> for more information.</p>
-<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p><strong>Underlying Microsoft Technologies used:</strong> </p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
 <p>• <a href="https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector">Codeless Connector Framework(CCF)</a></p>
 <h2 id="data-connectors">Data Connectors</h2>
@@ -81,28 +80,44 @@
 <table>
 <thead>
 <tr>
-  <th>Table</th>
-  <th>Used By Connectors</th>
-  <th>Used By Content</th>
+<th>Table</th>
+<th>Used By Connectors</th>
+<th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/gcpcloudrun.html"><code>GCPCloudRun</code></a></td>
-  <td><a href="../connectors/gcpcloudrunlogs-connectordefinition.html">GCP Cloud Run (via Codeless Connector Framework)</a></td>
-  <td>-</td>
+<td><a href="../tables/gcpcloudrun.html"><code>GCPCloudRun</code></a></td>
+<td><a href="../connectors/gcpcloudrunlogs-connectordefinition.html">GCP Cloud Run (via Codeless Connector Framework)</a></td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
 <h2 id="release-notes">Release Notes</h2>
-<p><strong>Version</strong> | <strong>Date Modified (DD-MM-YYYY)</strong>| <strong>ChangeHistory</strong>                                                                         |
-|------------|-------------------------------|-------------------------------------------------------------------------------------------|
-| 3.0.1      | 02-09-2025                    | GCP Cloud Run <strong>CCF Conector</strong> moving to GA                                        |
-| 3.0.0      | 14-07-2025                    | Initial Solution Release and Added new <strong>CCF Data Connector</strong>.  |</p>
+<table>
+<thead>
+<tr>
+<th><strong>Version</strong></th>
+<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+<th><strong>ChangeHistory</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3.0.1</td>
+<td>02-09-2025</td>
+<td>GCP Cloud Run <strong>CCF Conector</strong> moving to GA</td>
+</tr>
+<tr>
+<td>3.0.0</td>
+<td>14-07-2025</td>
+<td>Initial Solution Release and Added new <strong>CCF Data Connector</strong>.</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
-
 </div>
 
 </body>

@@ -13,7 +13,7 @@
 | **Publisher** | Intel 471 |
 | **Support Tier** | Partner |
 | **Support Link** | [https://intel471.com/company/contact](https://intel471.com/company/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Intel 471 Inc. |
 | **First Published** | 2023-06-21 |

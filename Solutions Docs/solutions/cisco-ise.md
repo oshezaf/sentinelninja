@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Automation (SOAR) |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-07-03 |
 | **Solution Folder** | [Cisco ISE](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ISE) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoise) · Popularity: 🟢 High (89%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ciscoise) · Popularity: 🟢 High (87%) |
 | **Pre-requisites** | [Syslog](syslog.md) |
 
 The [Cisco ISE](https://www.cisco.com/c/en_in/products/security/identity-services-engine/index.html) solution for Microsoft Sentinel enables you to ingest Cisco ISE’s NAC logs into Microsoft Sentinel, providing insight into network threats and vulnerabilities.

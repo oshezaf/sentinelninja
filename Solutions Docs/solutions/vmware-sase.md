@@ -15,7 +15,7 @@
 | **Publisher** | VMware by Broadcom |
 | **Support Tier** | Partner |
 | **Support Link** | [https://developer.vmware.com/](https://developer.vmware.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 1.0.0 |
 | **Author** | VMware by Broadcom |
 | **First Published** | 2023-12-31 |

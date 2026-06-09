@@ -15,7 +15,7 @@
 | **Publisher** | Ermes Cyber Security S.p.A. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.ermes.company](https://www.ermes.company) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.1.0 |
 | **Author** | dev@ermes.company |
 | **First Published** | 2023-09-29 |

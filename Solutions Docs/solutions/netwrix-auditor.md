@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Compliance |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-17 |
 | **Solution Folder** | [Netwrix Auditor](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netwrix%20Auditor) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-netwrixauditor) · Popularity: 🟡 Low (36%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-netwrixauditor) · Popularity: 🔵 Medium (59%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The Netwrix Auditor solution provides the capability to ingest [ Netwrix Auditor](https://www.netwrix.com/auditor.html) (formerly Stealthbits Privileged Activity Manager) events into Microsoft Sentinel. Refer to Netwrix [documentation](https://helpcenter.netwrix.com/) for more information.

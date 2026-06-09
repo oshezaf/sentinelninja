@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Azure Resources</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ncsstoragealerts">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ncsstoragealerts">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,116 +57,116 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">Action</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Action for the storage appliance.</td>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Action for the storage appliance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ArrayController</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Array controller name of the storage appliance.</td>
+<td style="text-align: left;">ArrayController</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Array controller name of the storage appliance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ArrayName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Array name of the storage appliance.</td>
+<td style="text-align: left;">ArrayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Array name of the storage appliance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClusterManagerName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the ClusterManager managing the Nexus cluster.</td>
+<td style="text-align: left;">ClusterManagerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the ClusterManager managing the Nexus cluster.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClusterName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the on-prem Nexus cluster.</td>
+<td style="text-align: left;">ClusterName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the on-prem Nexus cluster.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ContainerName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the container generating the log for the Nexus cluster.</td>
+<td style="text-align: left;">ContainerName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the container generating the log for the Nexus cluster.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Domain</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Array domain of the storage appliance.</td>
+<td style="text-align: left;">Domain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Array domain of the storage appliance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Location of the Nexus cluster.</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Location of the Nexus cluster.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Message</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Message generated by the kubernetes containers running on Nexus cluster.</td>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Message generated by the kubernetes containers running on Nexus cluster.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Node</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Node name of the Nexus cluster which is generating the log.</td>
+<td style="text-align: left;">Node</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Node name of the Nexus cluster which is generating the log.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PodName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Pod name generating the log in the Nexus cluster.</td>
+<td style="text-align: left;">PodName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Pod name generating the log in the Nexus cluster.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Severity</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Array result of the storage appliance.</td>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Array result of the storage appliance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp (UTC) when the log was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp (UTC) when the log was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">User</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Array user of the storage appliance.</td>
+<td style="text-align: left;">User</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Array user of the storage appliance.</td>
 </tr>
 </tbody>
 </table>
@@ -179,7 +179,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

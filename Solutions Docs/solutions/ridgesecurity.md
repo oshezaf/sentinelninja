@@ -15,13 +15,13 @@
 | **Publisher** | RidgeSecurity |
 | **Support Tier** | Partner |
 | **Support Link** | [https://ridgesecurity.ai/about-us/](https://ridgesecurity.ai/about-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Vulnerability Management |
 | **Version** | 3.0.1 |
 | **Author** | RidgeSecurity - oliver@ridgesecurity.ai |
 | **First Published** | 2023-10-23 |
 | **Last Updated** | 2023-10-23 |
 | **Solution Folder** | [RidgeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RidgeSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ridgesecuritytechnologyinc1670890478389.microsoft-sentinel-solution-ridgesecurity) · Rating: ★★★★★ 4.7/5 (94 ratings) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ridgesecuritytechnologyinc1670890478389.microsoft-sentinel-solution-ridgesecurity) · Rating: ★★★★★ 4.7/5 (95 ratings) · Popularity: ⚪ Very Low (0%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 [The RidgeSecurity](https://ridgesecurity.ai/) Microsoft Sentinel Solution lets users have visibility in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. 

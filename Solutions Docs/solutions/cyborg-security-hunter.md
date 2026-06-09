@@ -15,13 +15,13 @@
 | **Publisher** | Cyborg Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://hunter.cyborgsecurity.io/customer-support](https://hunter.cyborgsecurity.io/customer-support) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Automation (SOAR),Security - Threat Protection,Security - Threat Intelligence |
 | **Version** | 3.0.0 |
 | **Author** | Mike Mitchell - mike@cyborgsecurity.com |
 | **First Published** | 2023-07-03 |
 | **Last Updated** | 2023-09-22 |
 | **Solution Folder** | [Cyborg Security HUNTER](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cyborg%20Security%20HUNTER) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyborgsecurityinc1689265652101.azure-sentinel-solution-cyborgsecurity-hunter) · Popularity: 🟡 Low (28%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyborgsecurityinc1689265652101.azure-sentinel-solution-cyborgsecurity-hunter) · Popularity: 🟡 Low (35%) |
 
 The [Cyborg Security HUNTER](https://www.cyborgsecurity.com/) solution for Microsoft Sentinel helps analysts to configure the 'Open in Tool' button within the HUNTER platform, allowing the Microsoft Sentinel hunt packages to be deployed in the Microsoft Sentinel Platform
 

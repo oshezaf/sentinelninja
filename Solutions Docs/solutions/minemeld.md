@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-10-11 |
 | **Solution Folder** | [Minemeld](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Minemeld) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-minemeld) · Popularity: 🟡 Low (34%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-minemeld) · Popularity: 🟡 Low (32%) |
 
 The [Minemeld](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)  solution for Microsoft Sentinel has SOAR Connector and Playbooks, which not only enriches the Microsoft Sentinel incident using Minemeld indicators data but also helps to add indicators to Minemeld platform if needed.
 

@@ -13,12 +13,12 @@
 | **Publisher** | Community |
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.2 |
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-25 |
 | **Solution Folder** | [Forcepoint NGFW](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Forcepoint%20NGFW) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-forcepoint-ngfw) · Popularity: 🔵 Medium (57%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-forcepoint-ngfw) · Popularity: 🔵 Medium (55%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Forcepoint NGFW (Next Generation Firewall)](https://www.forcepoint.com/product/ngfw-next-generation-firewall) Solution for Microsoft Sentinel allows you to automatically export user defined Forcepoint NGFW logs into Microsoft Sentinel in real-time. This enriches visibility into user activities recorded by NGFW, enables further correlation with data from Azure workloads and other feeds, and improves monitoring capability with Workbooks inside Microsoft Sentinel.

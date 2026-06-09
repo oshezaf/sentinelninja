@@ -15,7 +15,7 @@
 | **Publisher** | Filewall |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.odi-x.com/contact-filewall-support/](https://www.odi-x.com/contact-filewall-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Filewall - support@filewall.com |
 | **First Published** | 2026-01-06 |

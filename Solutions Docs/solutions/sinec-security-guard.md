@@ -13,7 +13,7 @@
 | **Publisher** | Siemens AG |
 | **Support Tier** | Partner |
 | **Support Link** | [https://siemens.com/sinec-security-guard](https://siemens.com/sinec-security-guard) |
-| **Categories** | domains,verticals |
+| **Categories** | Security - Network,Manufacturing |
 | **Version** | 3.0.3 |
 | **Author** | Siemens AG |
 | **First Published** | 2024-07-15 |

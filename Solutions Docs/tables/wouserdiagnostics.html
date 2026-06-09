@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Azure Resources</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouserdiagnostics">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wouserdiagnostics">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,111 +57,111 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">Category</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Category of the event.</td>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CorrelationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Correlation ID of the operation.</td>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Correlation ID of the operation.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EdgeLocation</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Azure Edge custom location resource Id on which the operation happens.</td>
+<td style="text-align: left;">EdgeLocation</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Azure Edge custom location resource Id on which the operation happens.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Azure region in which the workload orchestration diagnostic resource is located.</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure region in which the workload orchestration diagnostic resource is located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Message</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The diagnose message.</td>
+<td style="text-align: left;">Message</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The diagnose message.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperatingResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operating resource id refers to the specific operational resource that the workload orchestration is managing when this event is triggered.</td>
+<td style="text-align: left;">OperatingResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating resource id refers to the specific operational resource that the workload orchestration is managing when this event is triggered.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperatingResourceK8SId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operating resource K8s id refers to K8s resource id (namespace/name) of the specific operational resource that the workload orchestration is managing when this event is triggered.</td>
+<td style="text-align: left;">OperatingResourceK8SId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operating resource K8s id refers to K8s resource id (namespace/name) of the specific operational resource that the workload orchestration is managing when this event is triggered.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operation name of the event.</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operation name of the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Properties</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Properties of the event.</td>
+<td style="text-align: left;">Properties</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Properties of the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Event generation time.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Event generation time.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">User</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Microsoft Entra ID object Id of the requester.</td>
+<td style="text-align: left;">User</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Microsoft Entra ID object Id of the requester.</td>
 </tr>
 <tr>
-  <td style="text-align:left">WOServiceInstance</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">workload orchestration service pod name.</td>
+<td style="text-align: left;">WOServiceInstance</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">workload orchestration service pod name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">WOServiceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">workload orchestration service name.</td>
+<td style="text-align: left;">WOServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">workload orchestration service name.</td>
 </tr>
 </tbody>
 </table>
@@ -174,7 +174,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

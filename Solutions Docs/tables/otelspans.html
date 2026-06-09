@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Applications</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Applications</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otelspans">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/otelspans">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,291 +57,291 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">Attributes</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">A collection of key-value pairs representing properties of the span.</td>
+<td style="text-align: left;">Attributes</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">A collection of key-value pairs representing properties of the span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientBrowser</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name and version of the web browser used by the client that triggered this span.</td>
+<td style="text-align: left;">ClientBrowser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name and version of the web browser used by the client that triggered this span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientCity</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">City where the client device is located.</td>
+<td style="text-align: left;">ClientCity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">City where the client device is located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientCountryOrRegion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Country or region where the client device is located.</td>
+<td style="text-align: left;">ClientCountryOrRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Country or region where the client device is located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientIP</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">IP address of the client device.</td>
+<td style="text-align: left;">ClientIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the client device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientModel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Model of the client device.</td>
+<td style="text-align: left;">ClientModel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Model of the client device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientOS</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system of the client device.</td>
+<td style="text-align: left;">ClientOS</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system of the client device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientStateOrProvince</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">State or province where the client device is located.</td>
+<td style="text-align: left;">ClientStateOrProvince</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">State or province where the client device is located.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of the client device.</td>
+<td style="text-align: left;">ClientType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the client device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Data</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Normalized, high cardinality destination for this span (Ex. HTTP URL).</td>
+<td style="text-align: left;">Data</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Normalized, high cardinality destination for this span (Ex. HTTP URL).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DependencyType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Normalized type of destination for this span, if it is representing an outgoing call (Ex. HTTP, SQL).</td>
+<td style="text-align: left;">DependencyType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Normalized type of destination for this span, if it is representing an outgoing call (Ex. HTTP, SQL).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DroppedAttributesCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of attributes that were discarded by the data source.</td>
+<td style="text-align: left;">DroppedAttributesCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of attributes that were discarded by the data source.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DroppedEventsCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of events that were discarded by the data source.</td>
+<td style="text-align: left;">DroppedEventsCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of events that were discarded by the data source.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DroppedLinksCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of links that were discarded by the data source.</td>
+<td style="text-align: left;">DroppedLinksCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of links that were discarded by the data source.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DurationMs</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The time elapsed between the start and end of this span, in milliseconds.</td>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The time elapsed between the start and end of this span, in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EndTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the span ended.</td>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the span ended.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EndUserId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Persistent string that uniquely represents an authenticated user of the service.</td>
+<td style="text-align: left;">EndUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Persistent string that uniquely represents an authenticated user of the service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EnrichedName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">An alternate name for this span that may be enriched with additional diagnostic information to make it more useful for aggregation and reporting purposes.</td>
+<td style="text-align: left;">EnrichedName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An alternate name for this span that may be enriched with additional diagnostic information to make it more useful for aggregation and reporting purposes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ItemCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of spans represented by this record. This value is greater than 1 when sampling is in effect.</td>
+<td style="text-align: left;">ItemCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of spans represented by this record. This value is greater than 1 when sampling is in effect.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Kind</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The kind of span that this record represents. Can be Unspecified, Internal, Server, Client, Producer, or Consumer.</td>
+<td style="text-align: left;">Kind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The kind of span that this record represents. Can be Unspecified, Internal, Server, Client, Producer, or Consumer.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Links</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">References from this span to other spans.</td>
+<td style="text-align: left;">Links</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">References from this span to other spans.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Measurements</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Application-defined measurements associated with this span.</td>
+<td style="text-align: left;">Measurements</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Application-defined measurements associated with this span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service-defined name of the overall operation.</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service-defined name of the overall operation.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ParentSpanId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identifier of the parent of this span.</td>
+<td style="text-align: left;">ParentSpanId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the parent of this span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PerformanceBucket</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A low cardinality binning of the duration of this span.</td>
+<td style="text-align: left;">PerformanceBucket</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A low cardinality binning of the duration of this span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceAttributes</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Resource attributes emitted by an OpenTelemetry source.</td>
+<td style="text-align: left;">ResourceAttributes</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Resource attributes emitted by an OpenTelemetry source.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceAttributesId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Id of the matching record in the OTelResources table that contains this span's resource attributes.</td>
+<td style="text-align: left;">ResourceAttributesId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of the matching record in the OTelResources table that contains this span's resource attributes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResultCode</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Normalized result code for the process this span represents (ex. HTTP status code).</td>
+<td style="text-align: left;">ResultCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Normalized result code for the process this span represents (ex. HTTP status code).</td>
 </tr>
 <tr>
-  <td style="text-align:left">RoleName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A human-readable name of the service emitting this span. This is a simplified service identifier combining ServiceNamespace and ServiceName.</td>
+<td style="text-align: left;">RoleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A human-readable name of the service emitting this span. This is a simplified service identifier combining ServiceNamespace and ServiceName.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ScopeName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the instrumentation scope.</td>
+<td style="text-align: left;">ScopeName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the instrumentation scope.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ScopeVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The version of the instrumentation scope.</td>
+<td style="text-align: left;">ScopeVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the instrumentation scope.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SDKVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name and version of the SDK, agent, or other source that emitted this record.</td>
+<td style="text-align: left;">SDKVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name and version of the SDK, agent, or other source that emitted this record.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceInstanceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the instance of the service.</td>
+<td style="text-align: left;">ServiceInstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the instance of the service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Logical name of the service.</td>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Logical name of the service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceNamespace</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A namespace for ServiceName.</td>
+<td style="text-align: left;">ServiceNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A namespace for ServiceName.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Version information associated with the service.</td>
+<td style="text-align: left;">ServiceVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version information associated with the service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SessionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service-defined session id.</td>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service-defined session id.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Source</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Friendly name of the direct source of this span, when known.</td>
+<td style="text-align: left;">Source</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Friendly name of the direct source of this span, when known.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">SpanId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the span.</td>
+<td style="text-align: left;">SpanId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatusCode</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The status of the span. Example values include OK and Error.</td>
+<td style="text-align: left;">StatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The status of the span. Example values include OK and Error.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatusMessage</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Human-readable error message for the span.</td>
+<td style="text-align: left;">StatusMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Human-readable error message for the span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Success</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the call completed successfully based on domain-specific criteria.</td>
+<td style="text-align: left;">Success</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the call completed successfully based on domain-specific criteria.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SyntheticSource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Upstream source of this span if it is well-known to be synthetic (ex. web crawlers).</td>
+<td style="text-align: left;">SyntheticSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Upstream source of this span if it is well-known to be synthetic (ex. web crawlers).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Target</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Normalized, low-cardinality destination for this span, if it is representing an outgoing call (Ex. HTTP host).</td>
+<td style="text-align: left;">Target</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Normalized, low-cardinality destination for this span, if it is representing an outgoing call (Ex. HTTP host).</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the span began.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the span began.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TraceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identifier of the trace this span belongs to.</td>
+<td style="text-align: left;">TraceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the trace this span belongs to.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TraceState</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">An opaque string representing vendor-specific trace information that was propagated with this span.</td>
+<td style="text-align: left;">TraceState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">An opaque string representing vendor-specific trace information that was propagated with this span.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserAccountId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service-defined account associated with the user.</td>
+<td style="text-align: left;">UserAccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service-defined account associated with the user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Anonymous ID of a user accessing the service.</td>
+<td style="text-align: left;">UserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Anonymous ID of a user accessing the service.</td>
 </tr>
 </tbody>
 </table>
@@ -354,7 +354,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

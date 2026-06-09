@@ -15,7 +15,7 @@
 | **Publisher** | blacklens.io Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://blacklens.io/contact](https://blacklens.io/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.0.2 |
 | **Author** | snapSEC GmbH - support@blacklens.io |
 | **First Published** | 2025-12-31 |

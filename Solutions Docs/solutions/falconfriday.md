@@ -15,7 +15,7 @@
 | **Publisher** | FalconForce |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.falconforce.nl/en/](https://www.falconforce.nl/en/) |
-| **Categories** | domains |
+| **Categories** | User Behavior (UEBA),Security - Insider Threat |
 | **Version** | 3.0.1 |
 | **Author** | FalconForce - info@falconforce.nl |
 | **First Published** | 2021-10-18 |

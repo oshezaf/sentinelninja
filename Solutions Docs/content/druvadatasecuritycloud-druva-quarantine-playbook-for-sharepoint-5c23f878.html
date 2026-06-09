@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/druvadatasecuritycloud.html">DruvaDataSecurityCloud</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineSharePoint/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DruvaDataSecurityCloud/Playbooks/DruvaQuarantineSharePoint/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,85 +47,44 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_secret_ClientId</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Druva-ClientID')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_secret_ClientSecret</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Generate_Bearer_Token</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('api_host')}/token</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Find_Share_Point_Sites</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{parameters('api_host')}/realize/ransomwarerecovery/v1/search/sharepoint-sites</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Quarantine_Site_Collection_API</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{item()?['resourceID']}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret_ClientId | get | `/secrets/@{encodeURIComponent('Druva-ClientID')}/value` | — |
+| Get_secret_ClientSecret | get | `/secrets/@{encodeURIComponent('Druva-ClientSecret')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Generate_Bearer_Token | POST | `@{parameters('api_host')}/token` | — |
+| Find_Share_Point_Sites | GET | `@{parameters('api_host')}/realize/ransomwarerecovery/v1/search/sharepoint-sites` | — |
+| Quarantine_Site_Collection_API | POST | `@{parameters('api_host')}/realize/ransomwarerecovery/v1/quarantineranges/resource/@{item()?['resourceID']}` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -169,7 +128,7 @@
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDruvaDataSecurityCloud%2FPlaybooks%2FDruvaQuarantineSharePoint%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDruvaDataSecurityCloud%2FPlaybooks%2FDruvaQuarantineSharePoint%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDruvaDataSecurityCloud%2FPlaybooks%2FDruvaQuarantineSharePoint%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDruvaDataSecurityCloud%2FPlaybooks%2FDruvaQuarantineSharePoint%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection keyvault.</p>
@@ -185,20 +144,19 @@
 <ol>
 <li>Trigger the playbook manually by using the dropdown option as 'run_with_payload'.</li>
 <li>On triggering a side screen will appear in which there will be a section named as 'Body'.</li>
-<li>Inside body paste the json obtained from the below with respective edited values according to your resources.<pre><code class="language-json">{
-    &quot;site_url&quot; : &quot;&lt;site_url_to_quarantine_devices&gt;&quot;,
-    &quot;fromDate&quot; : &quot;&lt;2024-12-01&gt;&quot;,
-    &quot;toDate&quot; : &quot;&lt;2024-12-18&gt;&quot;
-}
-</code></pre>
-</li>
+<li>Inside body paste the json obtained from the below with respective edited values according to your resources.
+    ```json
+    {
+        "site_url" : "<site_url_to_quarantine_devices>",
+        "fromDate" : "&lt;2024-12-01&gt;",
+        "toDate" : "&lt;2024-12-18&gt;"
+    }</li>
 <li>Hit the 'run' button at the bottom.</li>
 <li>Navigate to the playbook home page and check the run history if the run was successful or not.</li>
 </ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/druvadatasecuritycloud.html">Back to DruvaDataSecurityCloud</a></p>
-
 </div>
 
 </body>

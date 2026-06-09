@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/rubriksecuritycloud.html">RubrikSecurityCloud</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikPollAsyncResult/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/RubrikSecurityCloud/Playbooks/RubrikPollAsyncResult/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,110 +47,61 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault_1</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault_1</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a></td>
-  <td style="text-align:left">Custom</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="keyvault_1"><a href="../logic-apps/managed-keyvault-1.html"><code>keyvault_1</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_ClientId</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_ClientSecret</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="rubrikcustomconnector"><a href="../logic-apps/custom-rubrikcustomconnector.html"><code>RubrikCustomConnector</code></a> (Custom)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Authentication</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/client_token</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">GPS_Async_Result</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Async_Results</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{triggerBody()?['BaseUrl']}/api/graphql</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`keyvault_1`](../logic-apps/managed-keyvault-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_ClientId | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientId')}/value` | — |
+| Get_ClientSecret | get | `/secrets/@{encodeURIComponent('Rubrik-AS-Int-ClientSecret')}/value` | — |
+
+#### [`RubrikCustomConnector`](../logic-apps/custom-rubrikcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Authentication | post | `/api/client_token` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| GPS_Async_Result | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+| Get_Async_Results | POST | `@{triggerBody()?['BaseUrl']}/api/graphql` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -164,8 +115,8 @@
 <li>The Rubrik Security Cloud data connector should be configured to send appropriate events to Microsoft Sentinel.</li>
 <li>The Rubrik Security Cloud solution should be configured to <a href="https://docs.rubrik.com/en-us/saas/saas/polaris_api_access_with_service_accounts.html">connect to Rubrik Security Cloud API end points using a Service Account</a>, the service account should be assigned a role that includes the relevant privileges necessary to perform the desired operations (see <a href="https://docs.rubrik.com/en-us/saas/saas/common/roles_and_permissions.html">Roles and Permissions</a> in the Rubrik Security Cloud user guide).</li>
 <li>Store Service account credentials in Key Vault and obtain keyvault name and tenantId
-a. Create a Key Vault with unique name
-b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Rubrik-AS-Int-ClientId' &amp; 'Rubrik-AS-Int-ClientSecret' for storing client_id and client_secret respectively</li>
+    a. Create a Key Vault with unique name
+    b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Rubrik-AS-Int-ClientId' &amp; 'Rubrik-AS-Int-ClientSecret' for storing client_id and client_secret respectively</li>
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
@@ -178,7 +129,7 @@ b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Rubrik-AS-Int-
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikPollAsyncResult%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikPollAsyncResult%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikPollAsyncResult%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FRubrikSecurityCloud%2FPlaybooks%2FRubrikPollAsyncResult%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
 <p>Once deployment is complete, authorize each connection.</p>
@@ -193,7 +144,6 @@ b. Go to KeyVault -&gt; secrets -&gt; Generate/import and create 'Rubrik-AS-Int-
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/rubriksecuritycloud.html">Back to RubrikSecurityCloud</a></p>
-
 </div>
 
 </body>

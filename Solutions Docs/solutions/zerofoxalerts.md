@@ -15,7 +15,7 @@
 | **Publisher** | ZeroFox |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2026-04-01 |

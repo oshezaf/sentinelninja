@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Audit</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/viaudit">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/viaudit">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,131 +57,131 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">AccountId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Video Indexer account ID.</td>
+<td style="text-align: left;">AccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Video Indexer account ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AccountName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Video Indexer account name.</td>
+<td style="text-align: left;">AccountName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Video Indexer account name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CallerIpAddress</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The caller IP address.</td>
+<td style="text-align: left;">CallerIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The caller IP address.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Claims</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Caller claims details.</td>
+<td style="text-align: left;">Claims</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Caller claims details.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CorrelationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique record identifier.</td>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique record identifier.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Description</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The operation description.</td>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The operation description.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DurationMs</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The operation duration in milliseconds.</td>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The operation duration in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ExternalUserId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Caller external user Id.</td>
+<td style="text-align: left;">ExternalUserId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Caller external user Id.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Video Indexer resource location.</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Video Indexer resource location.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the operation that triggered the event.</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the operation that triggered the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Video Indexer operations API version.</td>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Video Indexer operations API version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Signature</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Http response signature of the operation, for example: 200, 401.</td>
+<td style="text-align: left;">Signature</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Http response signature of the operation, for example: 200, 401.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">Status</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Status of the operation, for example: Success, Failure, Warning, Informational, Partial Success.</td>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the operation, for example: Success, Failure, Warning, Informational, Partial Success.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) of when the event was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the event was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">Upn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Caller email.</td>
+<td style="text-align: left;">Upn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Caller email.</td>
 </tr>
 <tr>
-  <td style="text-align:left">VideoId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Video Indexer video ID.</td>
+<td style="text-align: left;">VideoId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Video Indexer video ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">VideoIndexerResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Video Indexer resource ID.</td>
+<td style="text-align: left;">VideoIndexerResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Video Indexer resource ID.</td>
 </tr>
 </tbody>
 </table>
@@ -194,7 +194,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

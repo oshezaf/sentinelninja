@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/spycloud-enterprise-protection.html">SpyCloud Enterprise Protection</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/spycloud-enterprise-protection.html">SpyCloud Enterprise Protection</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,85 +47,49 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-spycloud-enterprise-connector.html"><code>spycloud-enterprise-connector</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-spycloud-enterprise-connector.html"><code>spycloud-enterprise-connector</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/custom-spycloud-enterprise-protection.html"><code>SpyCloud-Enterprise-Protection</code></a></td>
-  <td style="text-align:left">Custom</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/custom-spycloud-enterprise-protection.html"><code>SpyCloud-Enterprise-Protection</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_DNS</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/dnsresolution</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="spycloud-enterprise-connector"><a href="../logic-apps/managed-spycloud-enterprise-connector.html"><code>spycloud-enterprise-connector</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_Breach_Data_by_Domain_Search</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/breach/data/domains/@{encodeURIComponent(items('For_Each_Incident_DNS_Domain')?['DomainName'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+
+#### [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Breach_Data_by_Domain_Search | get | `/breach/data/domains/@{encodeURIComponent(items('For_Each_Incident_DNS_Domain')?['DomainName'])}` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -133,7 +97,7 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/readme.md">SpyCloud-Get-Domain-Breach-Data-Playbook/readme.md</a></em></p>
 </blockquote>
 <h1 id="spycloud-enterprise-domain-breach-data-playbook">SpyCloud Enterprise Domain Breach Data Playbook</h1>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/logo.png" alt="SpyCloud Enterprise" /></p>
+<p><img alt="SpyCloud Enterprise" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/logo.png" /></p>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
@@ -141,8 +105,7 @@
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
-<a name="overview">
-
+<p><a name="overview"></p>
 <h2 id="overview">Overview</h2>
 <p>The SpyCloud Enterprise API provides breach data for a domain or set of domains associated with an incident. When a new Microsoft Sentinel Incident is created, this playbook gets triggered and performs the following actions:</p>
 <ul>
@@ -150,35 +113,31 @@
 <li>Iterates through the domain objects and fetches the breach data from SpyCloud Enterprise for each domain.</li>
 <li>All the breach data from SpyCloud Enterprise will be added as incident comments in a tabular format.</li>
 </ul>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/comments.png" alt="Incident Comments" /></p>
-<a name="prerequisites">
-
+<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/comments.png" /></p>
+<p><a name="prerequisites"></p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>A SpyCloud Enterprise API Key.</li>
 <li>SpyCloud Enterprise custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found on the connector doc page.</li>
 </ul>
-<a name="deployment">
-
+<p><a name="deployment"></p>
 <h2 id="deployment-instructions">Deployment Instructions</h2>
 <ul>
-<li>Deploy the playbooks by clicking on the &quot;Deploy to Azure&quot; button. This will take you to the Deploy an ARM Template wizard.</li>
+<li>Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the Deploy an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/deployment.png" alt="deployment" /></li>
-<li>Click &quot;Review + create&quot;. Once the validation is successful, click on &quot;Create&quot;.</li>
+  <img alt="deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/deployment.png" /></li>
+<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
 </ul>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Domain-Breach-Data-Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Domain-Breach-Data-Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Domain-Breach-Data-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Get-Domain-Breach-Data-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a>
 <a name="postdeployment"></p>
 <h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
 <h3 id="authorize-connections">Authorize connections</h3>
-<p>Once deployment is complete, you will need to authorize each connection:</p>
-<ul>
-<li>As a best practice, we have used the Sentinel connection in Logic Apps that use &quot;ManagedSecurityIdentity&quot; permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
-<li>Provide connection details for the SpyCloud Enterprise Custom Connector.
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/for_each.png" alt="for_each" /></li>
-<li>Save the Logic App. If the Logic App prompts any missing connections, please update the connections similarly.</li>
-</ul>
+<p>Once deployment is complete, you will need to authorize each connection:
+- As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.
+- Provide connection details for the SpyCloud Enterprise Custom Connector.
+<img alt="for_each" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Get-Domain-Breach-Data-Playbook/images/for_each.png" />
+- Save the Logic App. If the Logic App prompts any missing connections, please update the connections similarly.</p>
 <h3 id="configurations-in-sentinel">Configurations in Sentinel:</h3>
 <ul>
 <li>In Microsoft Sentinel, analytical rules should be configured to trigger an incident with a DNS entity.</li>
@@ -187,7 +146,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spycloud-enterprise-protection.html">Back to SpyCloud Enterprise Protection</a></p>
-
 </div>
 
 </body>

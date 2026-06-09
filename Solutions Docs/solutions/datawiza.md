@@ -15,7 +15,7 @@
 | **Publisher** | Datawiza Technology Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.datawiza.com/contact-us/](https://www.datawiza.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.0 |
 | **Author** | Datawiza Technology Inc. - support@datawiza.com |
 | **First Published** | 2025-11-10 |

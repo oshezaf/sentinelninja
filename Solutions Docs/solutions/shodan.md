@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-02-20 |
 | **Solution Folder** | [Shodan](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Shodan) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-shodan) · Popularity: 🔵 Medium (75%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-shodan) · Popularity: 🔵 Medium (74%) |
 
 [Shodan](https://www.shodan.io/) is the search engine for Internet-connected devices. Discover how Internet intelligence can help you make better decisions. Its Beyond The Web platform helps to discover everything from power plants, mobile phones, refrigerators and Minecraft servers. Integrating this solution with Sentinel will help enriching the IOT incidents using Shodan's search engine.
 

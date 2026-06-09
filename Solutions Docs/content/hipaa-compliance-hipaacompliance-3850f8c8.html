@@ -22,22 +22,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Workbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Workbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/hipaa-compliance.html">HIPAA Compliance</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HIPAA%20Compliance/Workbooks/HIPAACompliance.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HIPAA%20Compliance/Workbooks/HIPAACompliance.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -46,111 +46,110 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
-  <td style="text-align:left"><code>Category == &quot;AzureFirewallNetworkRule&quot;</code><br><code>Category == &quot;SQLSecurityAuditEvents&quot;</code></td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✗</td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+<td style="text-align: left;"><code>Category == "AzureFirewallNetworkRule"</code><br><code>Category == "SQLSecurityAuditEvents"</code></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/deviceinfo.html"><code>DeviceInfo</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a></td>
-  <td style="text-align:left"><code>ActionType == &quot;ConnectionSuccess&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/devicenetworkevents.html"><code>DeviceNetworkEvents</code></a></td>
+<td style="text-align: left;"><code>ActionType == "ConnectionSuccess"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
-  <td style="text-align:left"><code>ProcessCommandLine has &quot;Set-MpPreference&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+<td style="text-align: left;"><code>ProcessCommandLine has "Set-MpPreference"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/heartbeat.html"><code>Heartbeat</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/heartbeat.html"><code>Heartbeat</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-  <td style="text-align:left"><code>EventID in &quot;4624,4625&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td style="text-align: left;"><code>EventID in "4624,4625"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
-  <td style="text-align:left"><code>AuthenticationRequirement == &quot;multiFactorAuthentication&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+<td style="text-align: left;"><code>AuthenticationRequirement == "multiFactorAuthentication"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+<td style="text-align: left;"><a href="../tables/threatintelindicators.html"><code>ThreatIntelIndicators</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/watchlist.html"><code>Watchlist</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/hipaa-compliance.html">Back to HIPAA Compliance</a></p>
-
 </div>
 
 </body>

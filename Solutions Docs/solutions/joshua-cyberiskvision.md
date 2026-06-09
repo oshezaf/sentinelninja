@@ -15,7 +15,7 @@
 | **Publisher** | Joshua Cyberiskvision |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cyberiskvision.com/](https://www.cyberiskvision.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-01-10 |

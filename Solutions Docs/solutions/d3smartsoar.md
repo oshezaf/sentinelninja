@@ -15,7 +15,7 @@
 | **Publisher** | D3 Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://d3security.com/company/contact/](https://d3security.com/company/contact/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.3.0 |
 | **Author** | D3 Security - support@d3security.com |
 | **First Published** | 2026-02-18 |

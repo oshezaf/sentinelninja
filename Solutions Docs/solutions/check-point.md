@@ -15,12 +15,12 @@
 | **Publisher** | Check Point |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.checkpoint.com/support-services/contact-support/](https://www.checkpoint.com/support-services/contact-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR) |
 | **Version** | 2.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-08-13 |
 | **Solution Folder** | [Check Point](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.checkpoint-sentinel-solutions) · Popularity: 🟡 Low (38%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/checkpoint.checkpoint-sentinel-solutions) · Popularity: 🟡 Low (37%) |
 
 The [Checkpoint solution](https://www.checkpoint.com/quantum/next-generation-firewall/) for Microsoft Sentinel enables you to ingest [Check Point firewall logs](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk122323) into Microsoft Sentinel.  
 

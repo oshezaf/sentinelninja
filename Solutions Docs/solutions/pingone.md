@@ -15,13 +15,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Identity |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-20 |
 | **Last Updated** | 2025-04-20 |
 | **Solution Folder** | [PingOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PingOne) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-pingone) · Popularity: 🟡 Low (47%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-pingone) · Popularity: 🟡 Low (43%) |
 
 The [PingOne](https://www.pingidentity.com/en/platform/solutions.html) solution provides the capability to ingest [PingOne audit activity logs](https://docs.pingidentity.com/pingone/p1_cloud__platform_main_landing_page.html) into Microsoft Sentinel using the PingOne Platform API.
 

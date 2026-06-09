@@ -15,7 +15,7 @@
 | **Publisher** | Seraphic Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://seraphicsecurity.com](https://seraphicsecurity.com) |
-| **Categories** | domains |
+| **Categories** | Security - 0-day Vulnerability,Security - Threat Protection,Security - Information Protection |
 | **Version** | 3.0.0 |
 | **Author** | Seraphic Security - support@seraphicsecurity.com |
 | **First Published** | 2023-07-31 |

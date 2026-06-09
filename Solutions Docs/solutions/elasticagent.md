@@ -15,13 +15,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-11-12 |
 | **Last Updated** | 2026-05-25 |
 | **Solution Folder** | [ElasticAgent](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ElasticAgent) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-elasticagent) · Popularity: 🟡 Low (37%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-elasticagent) · Popularity: 🟡 Low (36%) |
 
 The [Elastic Agent](https://www.elastic.co/security) solution provides the capability to ingest Elastic Agent logs, metrics, and security data into Microsoft Sentinel.
   

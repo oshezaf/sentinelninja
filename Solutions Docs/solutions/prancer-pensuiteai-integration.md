@@ -15,7 +15,7 @@
 | **Publisher** | Prancer PenSuiteAI Integration |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.prancer.io](https://www.prancer.io) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,DevOps |
 | **Version** | 3.0.0 |
 | **Author** | Prancer |
 | **First Published** | 2023-08-02 |

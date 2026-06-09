@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_FetchAttachments/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_FetchAttachments/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,85 +47,44 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Add_attachments_comment</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Update_incident_tags</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_Alert_Details</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Attachment</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Analysis_Report</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_attachments_comment | post | `/Incidents/Comment` | — |
+| Update_incident_tags | put | `/Incidents` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Alert_Details | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}` | — |
+| Get_Attachment | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/attachments/@{encodeURIComponent(items('For_each_attachment')?['id'])}` | — |
+| Get_Analysis_Report | GET | `@{parameters('API_Base_URL')}/api/v1/alerts/@{encodeURIComponent(variables('AlertRefId'))}/analysis_report` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -134,42 +93,40 @@
 </blockquote>
 <h2 id="summary">Summary</h2>
 <p>On-demand playbook that fetches alert attachments and analysis report for a Sentinel incident. Analysts trigger this manually from the incident Actions menu to retrieve supporting evidence and analysis from Argos.</p>
-<p><strong>Flow:</strong></p>
-<ol>
-<li>Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.</li>
-<li>Extracts alert reference IDs from the incident.</li>
-<li>For each alert, fetches the full alert details including attachments list.</li>
-<li>Downloads each attachment and records metadata (name, type, fetch status).</li>
-<li>Fetches the analysis report for the alert.</li>
-<li>Adds a comment with attachment metadata and analysis report content.</li>
-<li>Tags the incident <code>argos-attachments-fetched</code>.</li>
-</ol>
+<p><strong>Flow:</strong>
+1. Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.
+2. Extracts alert reference IDs from the incident.
+3. For each alert, fetches the full alert details including attachments list.
+4. Downloads each attachment and records metadata (name, type, fetch status).
+5. Fetches the analysis report for the alert.
+6. Adds a comment with attachment metadata and analysis report content.
+7. Tags the incident <code>argos-attachments-fetched</code>.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
 <li><strong>Check_Point_EM_Base</strong> playbook must be deployed in the same resource group.</li>
 <li>A valid Check Point Exposure Management API token configured in the Check_Point_EM_Base Key Vault.</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_FetchAttachments%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_FetchAttachments%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
 <tr>
-  <th>Parameter</th>
-  <th>Required</th>
-  <th>Description</th>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><strong>PlaybookName</strong></td>
-  <td>No</td>
-  <td>Name of the Logic App (default: <code>Check_Point_EM_FetchAttachments</code>)</td>
+<td><strong>PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the Logic App (default: <code>Check_Point_EM_FetchAttachments</code>)</td>
 </tr>
 <tr>
-  <td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
-  <td>No</td>
-  <td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
+<td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
 </tr>
 </tbody>
 </table>
@@ -188,29 +145,28 @@
 <table>
 <thead>
 <tr>
-  <th>Action</th>
-  <th>Endpoint</th>
+<th>Action</th>
+<th>Endpoint</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Get alert details</td>
-  <td><code>GET /api/v1/alerts/{alert_ref_id}</code></td>
+<td>Get alert details</td>
+<td><code>GET /api/v1/alerts/{alert_ref_id}</code></td>
 </tr>
 <tr>
-  <td>Get attachment</td>
-  <td><code>GET /api/v1/alerts/{alert_ref_id}/attachments/{attachment_id}</code></td>
+<td>Get attachment</td>
+<td><code>GET /api/v1/alerts/{alert_ref_id}/attachments/{attachment_id}</code></td>
 </tr>
 <tr>
-  <td>Get analysis report</td>
-  <td><code>GET /api/v1/alerts/{alert_ref_id}/analysis_report</code></td>
+<td>Get analysis report</td>
+<td><code>GET /api/v1/alerts/{alert_ref_id}/analysis_report</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/check-point-cyberint-alerts.html">Back to Check Point Cyberint Alerts</a></p>
-
 </div>
 
 </body>

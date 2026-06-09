@@ -15,7 +15,7 @@
 | **Publisher** | RSA Support Team |
 | **Support Tier** | Partner |
 | **Support Link** | [https://community.rsa.com/](https://community.rsa.com/) |
-| **Categories** | domains,verticals |
+| **Categories** | Identity,Security - Cloud Security,Aeronautics,Education,Finance,Healthcare,Manufacturing,Retail |
 | **Version** | 3.0.1 |
 | **Author** | RSA Security |
 | **First Published** | 2025-10-14 |

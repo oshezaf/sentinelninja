@@ -15,7 +15,7 @@
 | **Publisher** | DEFEND Ltd. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.defend.co.nz/](https://www.defend.co.nz/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | DEFEND Ltd. |
 | **First Published** | 2023-09-22 |

@@ -15,12 +15,12 @@
 | **Publisher** | Arista - Awake Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://awakesecurity.com/](https://awakesecurity.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.1 |
 | **Author** | Arista Networks - support-security@arista.com |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [AristaAwakeSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/arista-networks.awake-security) · Popularity: ⚪ Very Low (8%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/arista-networks.awake-security) · Popularity: 🟡 Low (22%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Awake Security Arista Networks solution](https://awakesecurity.com/) for Microsoft Sentinel enable users to send detection model matches from the Awake Security Platform to Microsoft Sentinel.

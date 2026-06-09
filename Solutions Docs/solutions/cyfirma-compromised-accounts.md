@@ -15,7 +15,7 @@
 | **Publisher** | CYFIRMA |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cyfirma.com/contact-us/](https://www.cyfirma.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Application,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-05-15 |

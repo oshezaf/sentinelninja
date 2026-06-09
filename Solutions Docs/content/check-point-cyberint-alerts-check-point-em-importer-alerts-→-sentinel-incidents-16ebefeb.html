@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_InboundSync/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Sync/CPEM_InboundSync/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,20 +47,20 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/argsentdc-cl.html"><code>argsentdc_CL</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
@@ -69,73 +69,42 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Run_KQL_Query</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/queryData</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Create_incident</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/', parameters('Workspace_Name'))]</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Run_KQL_Query | post | `/queryData` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Create_incident | put | `[concat('/Incidents/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/workspaces/', parameters('Workspace_Name'))]` | — |
+| Add_comment_to_incident | post | `/Incidents/Comment` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -145,15 +114,13 @@
 <h1 id="check-point-exposure-management---importer">Check Point Exposure Management - Importer (Argos Status Changes → Sentinel)</h1>
 <h2 id="summary">Summary</h2>
 <p>This playbook polls Argos for recently modified alerts and writes updated records to the <code>argsentdc_CL</code> custom Log Analytics table. It complements the CCP data connector which only ingests <strong>new</strong> alerts (using <code>created_date</code>). The Importer catches <strong>status changes</strong>, closures, and other alert updates using the <code>modification_date</code> filter.</p>
-<p><strong>Flow:</strong></p>
-<ol>
-<li>Runs on a configurable recurrence interval (default: 10 minutes).</li>
-<li>Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.</li>
-<li>Calculates the polling time window (last N minutes) as Unix timestamps.</li>
-<li>Polls alerts API with <code>modification_date</code> filter.</li>
-<li>For each modified alert, writes the updated record to the custom table via the Data Collection API.</li>
-<li>Tracks success/error counts per run.</li>
-</ol>
+<p><strong>Flow:</strong>
+1. Runs on a configurable recurrence interval (default: 10 minutes).
+2. Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.
+3. Calculates the polling time window (last N minutes) as Unix timestamps.
+4. Polls alerts API with <code>modification_date</code> filter.
+5. For each modified alert, writes the updated record to the custom table via the Data Collection API.
+6. Tracks success/error counts per run.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
 <li><strong>Check_Point_EM_Base</strong> playbook must be deployed in the same resource group.</li>
@@ -161,41 +128,41 @@
 <li>The CCP data connector must be deployed (provides the Data Collection Endpoint and Data Collection Rule).</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_Importer%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_Importer%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
 <tr>
-  <th>Parameter</th>
-  <th>Required</th>
-  <th>Description</th>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><strong>PlaybookName</strong></td>
-  <td>No</td>
-  <td>Name of the Logic App (default: <code>Check_Point_EM_Importer</code>)</td>
+<td><strong>PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the Logic App (default: <code>Check_Point_EM_Importer</code>)</td>
 </tr>
 <tr>
-  <td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
-  <td>No</td>
-  <td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
+<td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
+<td>No</td>
+<td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
 </tr>
 <tr>
-  <td><strong>PollingIntervalMinutes</strong></td>
-  <td>No</td>
-  <td>Poll interval in minutes (default: <code>10</code>)</td>
+<td><strong>PollingIntervalMinutes</strong></td>
+<td>No</td>
+<td>Poll interval in minutes (default: <code>10</code>)</td>
 </tr>
 <tr>
-  <td><strong>DataCollectionEndpoint</strong></td>
-  <td>Yes</td>
-  <td>DCE URL from the CCP connector deployment</td>
+<td><strong>DataCollectionEndpoint</strong></td>
+<td>Yes</td>
+<td>DCE URL from the CCP connector deployment</td>
 </tr>
 <tr>
-  <td><strong>DataCollectionRuleImmutableId</strong></td>
-  <td>Yes</td>
-  <td>DCR immutable ID from the CCP connector deployment</td>
+<td><strong>DataCollectionRuleImmutableId</strong></td>
+<td>Yes</td>
+<td>DCR immutable ID from the CCP connector deployment</td>
 </tr>
 </tbody>
 </table>
@@ -216,25 +183,24 @@
 <table>
 <thead>
 <tr>
-  <th>Action</th>
-  <th>Endpoint</th>
+<th>Action</th>
+<th>Endpoint</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>Poll modified alerts</td>
-  <td><code>POST {ArgosBaseUrl}</code> with <code>modification_date</code> filter</td>
+<td>Poll modified alerts</td>
+<td><code>POST {ArgosBaseUrl}</code> with <code>modification_date</code> filter</td>
 </tr>
 <tr>
-  <td>Write to custom table</td>
-  <td><code>POST {DCE}/dataCollectionRules/{dcr_id}/streams/Custom-argsentdc_CL</code></td>
+<td>Write to custom table</td>
+<td><code>POST {DCE}/dataCollectionRules/{dcr_id}/streams/Custom-argsentdc_CL</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/check-point-cyberint-alerts.html">Back to Check Point Cyberint Alerts</a></p>
-
 </div>
 
 </body>

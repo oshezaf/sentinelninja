@@ -15,7 +15,7 @@
 | **Publisher** | Styx Intelligence |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.styxintel.com/contact-us/](https://www.styxintel.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Styx Intelligence - support.team@styxintel.com |
 | **First Published** | 2025-02-07 |

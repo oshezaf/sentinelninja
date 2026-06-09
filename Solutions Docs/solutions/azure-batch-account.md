@@ -15,7 +15,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Cloud Provider |
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-30 |

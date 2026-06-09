@@ -15,7 +15,7 @@
 | **Publisher** | NetApp |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.netapp.com](https://support.netapp.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Storage |
 | **Version** | 3.0.0 |
 | **Author** | NetApp - support@netapp.com |
 | **First Published** | 2026-02-16 |

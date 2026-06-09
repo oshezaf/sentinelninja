@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/abuseipdb.html">AbuseIPDB</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/abuseipdb.html">AbuseIPDB</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-BlacklistIpToThreatIntelligence/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-BlacklistIpToThreatIntelligence/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,67 +47,41 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-microsoftgraphsecurity.html"><code>microsoftgraphsecurity</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-microsoftgraphsecurity.html"><code>microsoftgraphsecurity</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/custom-abuseipdbapi.html"><code>AbuseIPDBAPI</code></a></td>
-  <td style="text-align:left">Custom</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/custom-abuseipdbapi.html"><code>AbuseIPDBAPI</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="microsoftgraphsecurity"><a href="../logic-apps/managed-microsoftgraphsecurity.html"><code>microsoftgraphsecurity</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Submit_multiple_tiIndicators</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/beta/security/tiIndicators/submitTiIndicators</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="abuseipdbapi"><a href="../logic-apps/custom-abuseipdbapi.html"><code>AbuseIPDBAPI</code></a> (Custom)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">BLACKLIST_Endpoint</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/blacklist</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`microsoftgraphsecurity`](../logic-apps/managed-microsoftgraphsecurity.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Submit_multiple_tiIndicators | post | `/beta/security/tiIndicators/submitTiIndicators` | — |
+
+#### [`AbuseIPDBAPI`](../logic-apps/custom-abuseipdbapi.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| BLACKLIST_Endpoint | get | `/blacklist` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -115,22 +89,18 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-BlacklistIpToThreatIntelligence/readme.md">AbuseIPDB-BlacklistIpToThreatIntelligence/readme.md</a></em></p>
 </blockquote>
 <h1 id="abuseipdb-blacklistiptothreatintelligence">AbuseIPDB-BlacklistIpToThreatIntelligence</h1>
-<h2 id="summary">Summary</h2>
-<p>By every day reccurence, this playbook gets triggered and performs the following actions:</p>
-<ol>
-<li>Gets <a href="https://docs.abuseipdb.com/#blacklist-endpoint">list</a> of the most reported IP addresses form the Blacklist Endpoint.</li>
-</ol>
+<p>## Summary
+By every day reccurence, this playbook gets triggered and performs the following actions:
+ 1. Gets <a href="https://docs.abuseipdb.com/#blacklist-endpoint">list</a> of the most reported IP addresses form the Blacklist Endpoint.</p>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbuseIPDB/Playbooks/AbuseIPDB-BlacklistIpToThreatIntelligence/playbook_screenshot.png" width="80%"/><br></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>AbuseIPDB Custom Connector has to be deployed prior to the deployment of this playbook under the same subscription.</li>
-<li>To use the Microsoft Graph Security connector actions, Microsoft Entra ID tenant administrator consent needs to be provided. The Microsoft Graph Security connector application ID and name for Microsoft Entra ID in is as follows for Microsoft Entra ID administrator consent:</li>
+<li>To use the Microsoft Graph Security connector actions, Microsoft Entra ID tenant administrator consent needs to be provided. The Microsoft Graph Security connector application ID and name for Microsoft Entra ID in is as follows for Microsoft Entra ID administrator consent: 
+ - Application Name - MicrosoftGraphSecurityConnector
+ - Application ID - c4829704-0edc-4c3d-a347-7c4a67586f3c
+3.To view the Threat Indicators submitted by Microsoft Graph Security connector, "Threat Intelligence Platforms" connector from "Threat Intelligence" Solution need be installed. </li>
 </ol>
-<ul>
-<li>Application Name - MicrosoftGraphSecurityConnector</li>
-<li>Application ID - c4829704-0edc-4c3d-a347-7c4a67586f3c
-3.To view the Threat Indicators submitted by Microsoft Graph Security connector, &quot;Threat Intelligence Platforms&quot; connector from &quot;Threat Intelligence&quot; Solution need be installed.</li>
-</ul>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
@@ -139,24 +109,21 @@
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAbuseIPDB%2FPlaybooks%2FAbuseIPDB-BlacklistIpToThreatIntelligence%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAbuseIPDB%2FPlaybooks%2FAbuseIPDB-BlacklistIpToThreatIntelligence%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAbuseIPDB%2FPlaybooks%2FAbuseIPDB-BlacklistIpToThreatIntelligence%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAbuseIPDB%2FPlaybooks%2FAbuseIPDB-BlacklistIpToThreatIntelligence%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, authorize each connection.</p>
-<ol>
-<li>Open playbook which has been deployed</li>
-<li>Click API connection on left side blade</li>
-<li>Click the AbuseIPDB connection resource</li>
-<li>Click edit API connection</li>
-<li>Click Authorize</li>
-<li>Sign in</li>
-<li>Click Save</li>
-<li>Repeat steps for tiIndicators connector API Connection</li>
-</ol>
+<p>Once deployment is complete, authorize each connection.
+1. Open playbook which has been deployed
+2. Click API connection on left side blade
+3. Click the AbuseIPDB connection resource
+4. Click edit API connection
+5. Click Authorize
+6. Sign in
+7. Click Save
+8. Repeat steps for tiIndicators connector API Connection</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/abuseipdb.html">Back to AbuseIPDB</a></p>
-
 </div>
 
 </body>

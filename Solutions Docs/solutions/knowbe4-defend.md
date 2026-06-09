@@ -15,7 +15,7 @@
 | **Publisher** | knowbe41678478380097 |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.knowbe4.com](https://support.knowbe4.com) |
-| **Categories** | domains |
+| **Categories** | Application |
 | **Version** | 3.0.0 |
 | **Author** | KnowBe4 - support@knowbe4.com |
 | **First Published** | 2025-02-05 |

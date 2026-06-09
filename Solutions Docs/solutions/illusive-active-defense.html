@@ -25,22 +25,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Support Tier</strong></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><strong>Support Tier</strong></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution Folder</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense">Illusive Active Defense</a></td>
+<td style="text-align: left;"><strong>Solution Folder</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense">Illusive Active Defense</a></td>
 </tr>
 </tbody>
 </table>
@@ -58,18 +58,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Content Type</th>
-  <th style="text-align:right">Total</th>
-  <th style="text-align:right">In Solution</th>
-  <th style="text-align:right">Discovered</th>
+<th style="text-align: left;">Content Type</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">In Solution</th>
+<th style="text-align: right;">Discovered</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">Playbooks</td>
-  <td style="text-align:right">2</td>
-  <td style="text-align:right">0</td>
-  <td style="text-align:right">2</td>
+<td style="text-align: left;">Playbooks</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
 </tr>
 </tbody>
 </table>
@@ -77,21 +77,21 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Name</th>
-  <th style="text-align:left">Description</th>
-  <th style="text-align:left">Tables Used</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Tables Used</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/illusive-active-defense-illusive-sentinelincident-enrichment-dde1bbd9.html">Illusive-SentinelIncident-Enrichment</a> ⚠️</td>
-  <td style="text-align:left"><p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p></td>
-  <td style="text-align:left">-</td>
+<td style="text-align: left;"><a href="../content/illusive-active-defense-illusive-sentinelincident-enrichment-dde1bbd9.html">Illusive-SentinelIncident-Enrichment</a> ⚠️</td>
+<td style="text-align: left;"><p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p></td>
+<td style="text-align: left;">-</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/illusive-active-defense-illusive-sentinelincident-response-793f8fd5.html">Illusive-SentinelIncident-Response</a> ⚠️</td>
-  <td style="text-align:left"><p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p></td>
-  <td style="text-align:left">-</td>
+<td style="text-align: left;"><a href="../content/illusive-active-defense-illusive-sentinelincident-response-793f8fd5.html">Illusive-SentinelIncident-Response</a> ⚠️</td>
+<td style="text-align: left;"><p align="left"> <img width="300" height="100" src="./Images/logo.jpg"> </a> </p></td>
+<td style="text-align: left;">-</td>
 </tr>
 </tbody>
 </table>
@@ -128,30 +128,28 @@
 <li><a href="#Illusive_analytic_rule">Configure the Illusive analytic rule</a></li>
 <li><a href="#Access_playbook">Access and view the playbook</a></li>
 </ol>
-<a name="executive_summary">
-
+<p><a name="executive_summary"></p>
 <h1 id="executive-summary">Executive summary</h1>
 <p>Configure Sentinel and load custom playbooks to have Illusive open Sentinel incidents, populate them with Illusive-based information, and automate incident response.</p>
 <p>This solution contains the following components:</p>
 <ul>
-<li><p><strong>Incident Enrichment playbook</strong> – leverages Sentinel analytic rules to discover Illusive-based alerts and report the associated data and forensics as Sentinel incident sets.<br />
-Use this playbook to enrich Sentinel security incidents originating from Illusive with Illusive incident and forensics information. Illusive continues to enrich relevant Sentinel incidents as new events are detected. This is done using the Illusive API resource.</p>
+<li><strong>Incident Enrichment playbook</strong> – leverages Sentinel analytic rules to discover Illusive-based alerts and report the associated data and forensics as Sentinel incident sets.<br />
+  Use this playbook to enrich Sentinel security incidents originating from Illusive with Illusive incident and forensics information. Illusive continues to enrich relevant Sentinel incidents as new events are detected. This is done using the Illusive API resource.</li>
+<li>
+<p><strong>Incident Response playbook</strong> – leverages CrowdStrike or Microsoft Defender for Endpoint integration to automate incident response when specified Illusive incidents are discovered.<br />
+ Use this playbook to quickly stop or slow down ransomware attacks and critical incidents detected by Illusive in your organization. Upon detection, Sentinel is instructed to use the triggering process information reported by Illusive remove or kill the process. If the triggering process cannot be killed, Sentinel is instructed to isolate the host. These capabilities are available for organizations with CrowdStrike Falcon or Microsoft Defender for Endpoint.</p>
 </li>
-<li><p><strong>Incident Response playbook</strong> – leverages CrowdStrike or Microsoft Defender for Endpoint integration to automate incident response when specified Illusive incidents are discovered.<br />
-Use this playbook to quickly stop or slow down ransomware attacks and critical incidents detected by Illusive in your organization. Upon detection, Sentinel is instructed to use the triggering process information reported by Illusive remove or kill the process. If the triggering process cannot be killed, Sentinel is instructed to isolate the host. These capabilities are available for organizations with CrowdStrike Falcon or Microsoft Defender for Endpoint.</p>
-</li>
-<li><p><strong>Analytic Rule</strong> - Trigger a Sentinel alert upon detecting an Illusive event and create a Sentinel incident. The Sentinel incident will correspond to the Illusive incident and will include all subsequent associated Illusive events. The Illusive solution playbooks require the analytic rule to operate.</p>
+<li>
+<p><strong>Analytic Rule</strong> - Trigger a Sentinel alert upon detecting an Illusive event and create a Sentinel incident. The Sentinel incident will correspond to the Illusive incident and will include all subsequent associated Illusive events. The Illusive solution playbooks require the analytic rule to operate.</p>
 </li>
 </ul>
-<a name="BasicRequirements">
-
+<p><a name="BasicRequirements"></p>
 <h2 id="basic-requirements">Basic requirements (set up in advance)</h2>
 <p>To use the Illusive Active Defense solution, you must have the following:</p>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
-
 </div>
 
 </body>

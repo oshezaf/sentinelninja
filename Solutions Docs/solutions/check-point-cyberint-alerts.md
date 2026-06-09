@@ -15,7 +15,7 @@
 | **Publisher** | Check Point |
 | **Support Tier** | Partner |
 | **Support Link** | [https://cyberint.com/customer-support/](https://cyberint.com/customer-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.1.0 |
 | **Author** | Check Point - support@checkpoint.com |
 | **First Published** | 2025-03-18 |

@@ -13,13 +13,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Last Updated** | 2026-01-12 |
 | **Solution Folder** | [Ubiquiti UniFi](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Ubiquiti%20UniFi) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ubiquitiunifi) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (88%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-ubiquitiunifi) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🟢 High (90%) |
 | **Pre-requisites** | [CustomLogsAma](customlogsama.md) |
 
 The [Ubiquiti UniFi](https://www.ui.com/) solution provides the capability to ingest [Ubiquiti UniFi firewall, dns, ssh, AP events](https://help.ui.com/hc/articles/204959834-UniFi-How-to-View-Log-Files) into Microsoft Sentinel.

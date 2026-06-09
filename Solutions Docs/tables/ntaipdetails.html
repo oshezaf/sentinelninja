@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Network</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntaipdetails">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntaipdetails">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,106 +57,106 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">DnsDomain</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For Malicious IPs only: Domain name associated with this IP.</td>
+<td style="text-align: left;">DnsDomain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For Malicious IPs only: Domain name associated with this IP.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FaSchemaVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Schema version.</td>
+<td style="text-align: left;">FaSchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Schema version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FlowIntervalEndTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">End time of the flow log processing interval.</td>
+<td style="text-align: left;">FlowIntervalEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">End time of the flow log processing interval.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FlowIntervalStartTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Start time of the flow log processing interval. This is time from which flow interval is measured.</td>
+<td style="text-align: left;">FlowIntervalStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Start time of the flow log processing interval. This is time from which flow interval is measured.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FlowType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Can be AzurePublic/ExternalPublic/MaliciousFlow.</td>
+<td style="text-align: left;">FlowType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Can be AzurePublic/ExternalPublic/MaliciousFlow.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Ip</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Public IP whose information is provided in the record.</td>
+<td style="text-align: left;">Ip</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Public IP whose information is provided in the record.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For Azure Public IP: Azure region of virtual network/network interface/virtual machine to which the IP belongs OR Global for IP 168.63.129.16. For External Public IP and Malicious IP: 2-letter country code where IP is located (ISO 3166-1 alpha-2).</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For Azure Public IP: Azure region of virtual network/network interface/virtual machine to which the IP belongs OR Global for IP 168.63.129.16. For External Public IP and Malicious IP: 2-letter country code where IP is located (ISO 3166-1 alpha-2).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Port</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">For Malicious IPs only: Port associated with this IP.</td>
+<td style="text-align: left;">Port</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">For Malicious IPs only: Port associated with this IP.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PublicIpDetails</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For AzurePublic IP: Azure Service owning the IP OR &quot;Microsoft Virtual Public IP&quot; for IP 168.63.129.16 . ExternalPublic/Malicious IP: WhoIS information of the IP.</td>
+<td style="text-align: left;">PublicIpDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For AzurePublic IP: Azure Service owning the IP OR "Microsoft Virtual Public IP" for IP 168.63.129.16 . ExternalPublic/Malicious IP: WhoIS information of the IP.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">SubType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Subtype for the flow logs. Use only FlowLog, other values of SubType_s are for internal workings of the product.</td>
+<td style="text-align: left;">SubType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subtype for the flow logs. Use only FlowLog, other values of SubType_s are for internal workings of the product.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">ThreatDescription</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For Malicious IPs only: Description of the threat posed by the malicious IP.</td>
+<td style="text-align: left;">ThreatDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For Malicious IPs only: Description of the threat posed by the malicious IP.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ThreatType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For Malicious IPs only: One of the threats from the list of currently allowed values.</td>
+<td style="text-align: left;">ThreatType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For Malicious IPs only: One of the threats from the list of currently allowed values.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The time when the data gets ingested into the Log Analytics Workspace.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the data gets ingested into the Log Analytics Workspace.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">Url</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For Malicious IPs only: Url associated with this IP.</td>
+<td style="text-align: left;">Url</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For Malicious IPs only: Url associated with this IP.</td>
 </tr>
 </tbody>
 </table>
@@ -164,7 +164,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

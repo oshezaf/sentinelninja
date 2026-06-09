@@ -15,7 +15,7 @@
 | **Publisher** | 1Password |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.1password.com/](https://support.1password.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Others,Identity |
 | **Version** | 3.0.2 |
 | **Author** | Rogier Dijkman (SecureHats) |
 | **First Published** | 2023-12-01 |

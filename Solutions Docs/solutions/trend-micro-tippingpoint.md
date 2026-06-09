@@ -15,7 +15,7 @@
 | **Publisher** | Trend Micro |
 | **Support Tier** | Partner |
 | **Support Link** | [https://success.trendmicro.com/dcx/s/contactus?language=en_US](https://success.trendmicro.com/dcx/s/contactus?language=en_US) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.1 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-02 |

@@ -13,7 +13,7 @@
 | **Publisher** | MailGuard 365 |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.mailguard365.com/support/](https://www.mailguard365.com/support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **First Published** | 2023-05-09 |
 | **Last Updated** | 2026-05-12 |
 | **Solution Folder** | [MailGuard 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MailGuard%20365) |

@@ -15,7 +15,7 @@
 | **Publisher** | IONIX |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.ionix.io/contact-us/](https://www.ionix.io/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.1.0 |
 | **Author** | IONIX - support@ionix.io |
 | **First Published** | 2022-05-02 |

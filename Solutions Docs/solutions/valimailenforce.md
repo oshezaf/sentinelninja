@@ -15,7 +15,7 @@
 | **Publisher** | Valimail |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.valimail.com](https://support.valimail.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Valimail - support@valimail.com |
 | **First Published** | 2026-03-31 |

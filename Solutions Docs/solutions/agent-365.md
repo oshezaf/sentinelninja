@@ -15,13 +15,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Cloud Provider |
 | **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-25 |
 | **Last Updated** | 2026-06-03 |
 | **Solution Folder** | [Agent 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agent%20365) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-a365observability) · Popularity: 🟢 High (90%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-a365observability) · Popularity: 🟢 High (91%) |
 
 The Agent 365 solution unifies Agent 365 telemetry and Microsoft Agent Identities asset data for investigating AI agent activity in Microsoft Sentinel. The Agent 365 data connector brings AI agent telemetry from Agent 365, AI Foundry, and Copilot into the Microsoft Sentinel data lake for behavior, tool-usage, and execution analysis. The Microsoft Agent Identities (Preview) data connector ingests agent and agent blueprint identities so you can understand ownership, analyze relationships, and correlate identity assets with activity and risk signals.
 

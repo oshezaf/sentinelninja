@@ -19,54 +19,54 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
-<p>Checks for event id 1102 which indicates the security event log was cleared. It uses Event Source Name &quot;Microsoft-Windows-Eventlog&quot; to avoid generating false positives from other sources, like AD FS servers for instance.</p>
+<p>Checks for event id 1102 which indicates the security event log was cleared. It uses Event Source Name "Microsoft-Windows-Eventlog" to avoid generating false positives from other sources, like AD FS servers for instance.</p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Analytic Rule</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Analytic Rule</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>ID</strong></td>
-  <td style="text-align:left"><code>80da0a8f-cfe1-4cd0-a895-8bc1771a720e</code></td>
+<td style="text-align: left;"><strong>ID</strong></td>
+<td style="text-align: left;"><code>80da0a8f-cfe1-4cd0-a895-8bc1771a720e</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Severity</strong></td>
-  <td style="text-align:left">Medium</td>
+<td style="text-align: left;"><strong>Severity</strong></td>
+<td style="text-align: left;">Medium</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Status</strong></td>
-  <td style="text-align:left">Available</td>
+<td style="text-align: left;"><strong>Status</strong></td>
+<td style="text-align: left;">Available</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Kind</strong></td>
-  <td style="text-align:left">Scheduled</td>
+<td style="text-align: left;"><strong>Kind</strong></td>
+<td style="text-align: left;">Scheduled</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Tactics</strong></td>
-  <td style="text-align:left">DefenseEvasion</td>
+<td style="text-align: left;"><strong>Tactics</strong></td>
+<td style="text-align: left;">DefenseEvasion</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Techniques</strong></td>
-  <td style="text-align:left">T1070</td>
+<td style="text-align: left;"><strong>Techniques</strong></td>
+<td style="text-align: left;">T1070</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Required Connectors</strong></td>
-  <td style="text-align:left"><a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a>, <a href="../connectors/windowsforwardedevents.html">WindowsForwardedEvents</a></td>
+<td style="text-align: left;"><strong>Required Connectors</strong></td>
+<td style="text-align: left;"><a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a>, <a href="../connectors/windowsforwardedevents.html">WindowsForwardedEvents</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Analytic%20Rules/SecurityEventLogCleared.yaml">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Analytic%20Rules/SecurityEventLogCleared.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -75,34 +75,33 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-  <td style="text-align:left"><code>EventSourceName == &quot;Microsoft-Windows-Eventlog&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td style="text-align: left;"><code>EventSourceName == "Microsoft-Windows-Eventlog"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
-  <td style="text-align:left"><code>EventID == &quot;1102&quot;</code><br><code>Provider == &quot;Microsoft-Windows-Eventlog&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+<td style="text-align: left;"><code>EventID == "1102"</code><br><code>Provider == "Microsoft-Windows-Eventlog"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/endpoint-threat-protection-essentials.html">Back to Endpoint Threat Protection Essentials</a></p>
-
 </div>
 
 </body>

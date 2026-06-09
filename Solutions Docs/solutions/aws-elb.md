@@ -13,13 +13,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security,Networking |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-03-20 |
 | **Last Updated** | 2026-03-31 |
 | **Solution Folder** | [AWS ELB](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20ELB) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awselb) · Popularity: 🟢 High (85%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awselb) · Popularity: 🟢 High (87%) |
 
 The AWS Elastic Load Balancing solution for Microsoft Sentinel allows you to ingest access logs and flow logs from AWS Application Load Balancers, Network Load Balancers, and Gateway Load Balancers into Microsoft Sentinel for security monitoring, threat detection, and traffic analysis.
 

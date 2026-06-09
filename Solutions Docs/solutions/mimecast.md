@@ -13,13 +13,13 @@
 | **Publisher** | Mimecast |
 | **Support Tier** | Partner |
 | **Support Link** | [https://mimecastsupport.zendesk.com/](https://mimecastsupport.zendesk.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.1.0 |
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2024-09-10 |
 | **Last Updated** | 2024-09-10 |
 | **Solution Folder** | [Mimecast](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mimecast) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecast) · Popularity: 🔵 Medium (72%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecast) · Popularity: 🔵 Medium (59%) |
 
 An Azure app to enable Mimecast data to be viewed using analytical tables and charts which are brought into Azure.
 

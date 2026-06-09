@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Security</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/sentinelbehaviorinfo">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -60,126 +60,126 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">AccountObjectId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the account in Microsoft Entra ID.</td>
+<td style="text-align: left;">AccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the account in Microsoft Entra ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AccountUpn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">User principal name (UPN) of the account.</td>
+<td style="text-align: left;">AccountUpn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User principal name (UPN) of the account.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ActionType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of behavior.</td>
+<td style="text-align: left;">ActionType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AdditionalFields</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Additional information about the entity or event.</td>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional information about the entity or event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AttackTechniques</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">MITRE ATT&amp;CK techniques associated with the activity that triggered the behavior.</td>
+<td style="text-align: left;">AttackTechniques</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MITRE ATT&amp;CK techniques associated with the activity that triggered the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BehaviorId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the behavior.</td>
+<td style="text-align: left;">BehaviorId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Categories</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Types of threat indicator or breach activity identified by the behavior.</td>
+<td style="text-align: left;">Categories</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Types of threat indicator or breach activity identified by the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DataSources</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Products or services that provided information for the behavior.</td>
+<td style="text-align: left;">DataSources</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Products or services that provided information for the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Description</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Description of the behavior.</td>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DetectionSource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Detection technology or sensor that identified the notable component or activity.</td>
+<td style="text-align: left;">DetectionSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detection technology or sensor that identified the notable component or activity.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the device in the service.</td>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in the service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EndTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time of the last activity related to the behavior.</td>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time of the last activity related to the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceSource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Product or service that provided the behavior.</td>
+<td style="text-align: left;">ServiceSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product or service that provided the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">StartTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time of the first activity related to the behavior.</td>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time of the first activity related to the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the record was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the record was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Title</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Title of the behavior.</td>
+<td style="text-align: left;">Title</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Title of the behavior.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -195,14 +195,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.html">UEBABehaviorsAnalysisWorkbook</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.html">UEBABehaviorsAnalysisWorkbook</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -214,7 +214,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

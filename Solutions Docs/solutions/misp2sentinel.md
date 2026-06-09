@@ -13,13 +13,13 @@
 | **Publisher** | Community |
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/cudeso/misp2sentinel](https://github.com/cudeso/misp2sentinel) |
-| **Categories** | domains,verticals |
+| **Categories** | Security - Threat Intelligence,Security - Threat Protection,Aeronautics,Education,Finance,Healthcare,Manufacturing,Retail |
 | **Version** | 3.1.0 |
 | **Author** | MISP project & cudeso.be - info@cudeso.be |
 | **First Published** | 2023-07-29 |
 | **Last Updated** | 2026-04-18 |
 | **Solution Folder** | [MISP2Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MISP2Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-misp2sentinel) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🟢 High (80%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoftsentinelcommunity.azure-sentinel-solution-misp2sentinel) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🟢 High (81%) |
 
 The MISP2Sentinel solution allows you to automatically push threat indicators from [MISP](https://www.misp-project.org/) to Microsoft Sentinel via the Upload Indicators REST API.
 

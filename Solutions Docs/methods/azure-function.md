@@ -19,9 +19,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **125** |
-| Active | 89 |
+| Active | 90 |
 | Deprecated 🚫 | 26 |
-| Unpublished ⚠️ | 10 |
+| Unpublished ⚠️ | 9 |
 
 ## Connectors Using This Method
 
@@ -56,7 +56,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
 | [ESET Inspect](../connectors/esetinspect.md) 🔶 | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
-| [ESET Protect Platform](../connectors/esetprotectplatform.md) ⚠️ | ESET | 2 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
+| [ESET Protect Platform](../connectors/esetprotectplatform.md) | ESET | 2 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
 | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | ExtraHop | 1 | [ExtraHop](../solutions/extrahop.md) |
 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶 | Fortinet | 3 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |

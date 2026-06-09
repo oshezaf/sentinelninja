@@ -19,26 +19,26 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
-<p>This playbook leverages the Recorded Future API to enrich IP, Domain, Url &amp; Hash indicators, found in Microsoft Sentinel incidents, with the following context: Risk Score, Risk Rules and Link to Intelligence Card. The enrichment content will be posted as a comment in the Microsoft Sentinel incident &lt;img alt=&quot;Microsoft Sentinel incident comment&quot; src=&quot;https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Recorded%20Future/Playbooks/Enrichment/RecordedFuture-IOC_Enrichment/images/</p>
+<p>This playbook leverages the Recorded Future API to enrich IP, Domain, Url &amp; Hash indicators, found in Microsoft Sentinel incidents, with the following context: Risk Score, Risk Rules and Link to Intelligence Card. The enrichment content will be posted as a comment in the Microsoft Sentinel incident &lt;img alt="Microsoft Sentinel incident comment" src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/Recorded%20Future/Playbooks/Enrichment/RecordedFuture-IOC_Enrichment/images/</p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/recorded-future.html">Recorded Future</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/recorded-future.html">Recorded Future</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Enrichment/RecordedFuture-IOC_Enrichment/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Recorded%20Future/Playbooks/Enrichment/RecordedFuture-IOC_Enrichment/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,115 +47,58 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-recordedfuture.html"><code>recordedfuture</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-recordedfuture.html"><code>recordedfuture</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-recordedfuturev2.html"><code>recordedfuturev2</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-recordedfuturev2.html"><code>recordedfuturev2</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_-_Domain</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_-_Hash</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_-_Link</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_-_IP</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="recordedfuture"><a href="../logic-apps/managed-recordedfuture.html"><code>recordedfuture</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Domain_Enrichment</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/domain/@{encodeURIComponent(body('Parse_JSON_-_DNS_Resolution')?['domainName'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Hash_Enrichment</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/hash/@{encodeURIComponent(body('Parse_JSON_-_File_Hash')?['hashValue'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">URL_Enrichment</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/url/@{encodeURIComponent(if(or(startsWith(body('Parse_JSON_-_Url')?['url'], 'http://'), startsWith(body('Parse_JSON_-_Url')?['url'], 'https://')), body('Parse_JSON_-_Url')?['url'], concat('https://', body('Parse_JSON_-_Url')?['url'])))}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">IP_Enrichment</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/ip/@{encodeURIComponent(body('Parse_JSON_-_Ip')?['address'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_-_Domain | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_-_Hash | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_-_Link | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_-_IP | post | `/Incidents/Comment` | — |
+
+#### [`recordedfuture`](../logic-apps/managed-recordedfuture.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Domain_Enrichment | get | `/lookup/domain/@{encodeURIComponent(body('Parse_JSON_-_DNS_Resolution')?['domainName'])}` | — |
+| Hash_Enrichment | get | `/lookup/hash/@{encodeURIComponent(body('Parse_JSON_-_File_Hash')?['hashValue'])}` | — |
+| URL_Enrichment | get | `/lookup/url/@{encodeURIComponent(if(or(startsWith(body('Parse_JSON_-_Url')?['url'], 'http://'), startsWith(body('Parse_JSON_-_Url')?['url'], 'https://')), body('Parse_JSON_-_Url')?['url'], concat('https://', body('Parse_JSON_-_Url')?['url'])))}` | — |
+| IP_Enrichment | get | `/lookup/ip/@{encodeURIComponent(body('Parse_JSON_-_Ip')?['address'])}` | — |
+
 </details>
 
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/recorded-future.html">Back to Recorded Future</a></p>
-
 </div>
 
 </body>

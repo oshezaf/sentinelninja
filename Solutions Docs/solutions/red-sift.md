@@ -15,13 +15,13 @@
 | **Publisher** | Red Sift |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.redsift.com/contact](https://www.redsift.com/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Identity |
 | **Version** | 3.0.0 |
 | **Author** | Red Sift - support@redsift.com |
 | **First Published** | 2026-04-10 |
 | **Last Updated** | 2026-06-04 |
 | **Solution Folder** | [Red Sift](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Sift) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/redsift.redsift-sentinel-events) · Popularity: 🟡 Low (20%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/redsift.redsift-sentinel-events) · Popularity: ⚪ Very Low (3%) |
 
 The [Red Sift](https://redsift.com/) solution for Microsoft Sentinel provides the capability to ingest authentication events from Red Sift Pulse and email forensics events from OnDMARC into your Microsoft Sentinel workspace using the Codeless Connector Framework (CCF) Push pattern.
 

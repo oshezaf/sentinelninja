@@ -24,14 +24,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 </tbody>
 </table>
@@ -48,101 +48,101 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">ApiId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier of the API definition in the 42Crunch platform</td>
+<td style="text-align: left;">ApiId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the API definition in the 42Crunch platform</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestinationPort</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Destination port number on the API server</td>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Destination port number on the API server</td>
 </tr>
 <tr>
-  <td style="text-align:left">ErrorMessage</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Error message returned by the API firewall when the request is blocked or fails validation</td>
+<td style="text-align: left;">ErrorMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Error message returned by the API firewall when the request is blocked or fails validation</td>
 </tr>
 <tr>
-  <td style="text-align:left">Errors</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Detailed error information in JSON format from the API firewall</td>
+<td style="text-align: left;">Errors</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detailed error information in JSON format from the API firewall</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of the log event recorded by the API firewall (e.g., request, block, error)</td>
+<td style="text-align: left;">EventType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the log event recorded by the API firewall (e.g., request, block, error)</td>
 </tr>
 <tr>
-  <td style="text-align:left">Hostname</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Hostname of the API server receiving the request</td>
+<td style="text-align: left;">Hostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hostname of the API server receiving the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">InstanceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the 42Crunch API Firewall instance that processed the request</td>
+<td style="text-align: left;">InstanceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the 42Crunch API Firewall instance that processed the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">NonBlockingMode</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the 42Crunch firewall is running in non-blocking (observation) mode. True means requests are logged but not blocked.</td>
+<td style="text-align: left;">NonBlockingMode</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the 42Crunch firewall is running in non-blocking (observation) mode. True means requests are logged but not blocked.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Query</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Query string parameters of the API request</td>
+<td style="text-align: left;">Query</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Query string parameters of the API request</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestHeader</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">HTTP request headers in JSON format</td>
+<td style="text-align: left;">RequestHeader</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP request headers in JSON format</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseHeader</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">HTTP response headers in JSON format</td>
+<td style="text-align: left;">ResponseHeader</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP response headers in JSON format</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceIp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Source IP address of the API client</td>
+<td style="text-align: left;">SourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source IP address of the API client</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourcePort</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Source port number of the API client connection</td>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Source port number of the API client connection</td>
 </tr>
 <tr>
-  <td style="text-align:left">Status</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">HTTP response status code returned by the API firewall (e.g., 200, 401, 429, 500)</td>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">HTTP response status code returned by the API firewall (e.g., 200, 401, 429, 500)</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Timestamp</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp of the API request recorded by the 42Crunch firewall</td>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp of the API request recorded by the 42Crunch firewall</td>
 </tr>
 <tr>
-  <td style="text-align:left">UriPath</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">URI path of the API request</td>
+<td style="text-align: left;">UriPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">URI path of the API request</td>
 </tr>
 <tr>
-  <td style="text-align:left">Uuid</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier (UUID) for the log event</td>
+<td style="text-align: left;">Uuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier (UUID) for the log event</td>
 </tr>
 </tbody>
 </table>
@@ -156,14 +156,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/fortytwocrunchapiprotection.html">42Crunch API Protection (Push Connector via Codeless Connector Framework)</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/fortytwocrunchapiprotection.html">42Crunch API Protection (Push Connector via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -174,54 +174,54 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-api-scraping-d944d564-b6fa-470d-b5ab-41b341878c5e-a52c8975.html">API - API Scraping</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-api-scraping-d944d564-b6fa-470d-b5ab-41b341878c5e-a52c8975.html">API - API Scraping</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-account-takeover-25c86f99-0a91-4b7f-88f3-599a008e5ab8-6d2b117c.html">API - Account Takeover</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-account-takeover-25c86f99-0a91-4b7f-88f3-599a008e5ab8-6d2b117c.html">API - Account Takeover</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-anomaly-detection-2c59e609-e0a0-4e8e-adc5-ab4224be8a36-33e8704d.html">API - Anomaly Detection</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-anomaly-detection-2c59e609-e0a0-4e8e-adc5-ab4224be8a36-33e8704d.html">API - Anomaly Detection</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-bola-1b047dc3-a879-4f99-949b-d1dc867efc83-209dd431.html">API - BOLA</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-bola-1b047dc3-a879-4f99-949b-d1dc867efc83-209dd431.html">API - BOLA</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-invalid-host-access-28500be7-cfcf-40e1-bad4-bc524e9283e2-d314655b.html">API - Invalid host access</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-invalid-host-access-28500be7-cfcf-40e1-bad4-bc524e9283e2-d314655b.html">API - Invalid host access</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-jwt-validation-bbd163f4-1f56-434f-9c23-b06713c119c2-c3a5eaee.html">API - JWT validation</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-jwt-validation-bbd163f4-1f56-434f-9c23-b06713c119c2-c3a5eaee.html">API - JWT validation</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-kiterunner-detection-421b38ec-4295-4aed-8299-c92e268ad663-56f29884.html">API - Kiterunner detection</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-kiterunner-detection-421b38ec-4295-4aed-8299-c92e268ad663-56f29884.html">API - Kiterunner detection</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-password-cracking-d951d64d-0ecd-4675-8c79-6c870d5f72ac-693d5746.html">API - Password Cracking</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-password-cracking-d951d64d-0ecd-4675-8c79-6c870d5f72ac-693d5746.html">API - Password Cracking</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-rate-limiting-c6258d51-7b82-4942-8293-94c1dcf91595-4ec87f01.html">API - Rate limiting</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-rate-limiting-c6258d51-7b82-4942-8293-94c1dcf91595-4ec87f01.html">API - Rate limiting</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-rate-limiting-b808063b-07d5-432c-95d0-8900da61cce9-3103815b.html">API - Rate limiting</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-rate-limiting-b808063b-07d5-432c-95d0-8900da61cce9-3103815b.html">API - Rate limiting</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-api-suspicious-login-7bdc10d6-aa24-4ca9-9a93-802cd8761354-d5428b70.html">API - Suspicious Login</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-api-suspicious-login-7bdc10d6-aa24-4ca9-9a93-802cd8761354-d5428b70.html">API - Suspicious Login</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -230,14 +230,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/42crunch-api-protection-42crunchapiprotectionworkbook-5ba91507.html">42CrunchAPIProtectionWorkbook</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/42crunch-api-protection-42crunchapiprotectionworkbook-5ba91507.html">42CrunchAPIProtectionWorkbook</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -246,23 +246,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Parser</th>
-  <th style="text-align:left">Solution</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../parsers/fortytwocrunchapiprotection.html">FortyTwoCrunchAPIProtection</a></td>
-  <td style="text-align:left"><a href="../solutions/42crunch-api-protection.html">42Crunch API Protection</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../parsers/fortytwocrunchapiprotection.html">FortyTwoCrunchAPIProtection</a></td>
+<td style="text-align: left;"><a href="../solutions/42crunch-api-protection.html">42Crunch API Protection</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

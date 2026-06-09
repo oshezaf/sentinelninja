@@ -16,55 +16,56 @@
 </nav>
 <div class="doc-content">
 <h1 id="network-security-groups">Network Security Groups</h1>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureNetworkSecurityGroups.svg" alt="" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AzureNetworkSecurityGroups.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Connector ID</strong></td>
-  <td style="text-align:left"><code>AzureNSG</code></td>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>AzureNSG</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Microsoft</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Microsoft</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Used in Solutions</strong></td>
-  <td style="text-align:left"><a href="../solutions/azure-network-security-groups.html">Azure Network Security Groups</a></td>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/azure-network-security-groups.html">Azure Network Security Groups</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/azure-diagnostics.html">Azure Diagnostics</a></td>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-diagnostics.html">Azure Diagnostics</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Network%20Security%20Groups/Data%20Connectors/AzureNSG.JSON">AzureNSG.JSON</a></td>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Network%20Security%20Groups/Data%20Connectors/AzureNSG.JSON">AzureNSG.JSON</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
-  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#network-security-groups">View on Learn</a></td>
+<td style="text-align: left;"><strong>Microsoft Learn</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#network-security-groups">View on Learn</a></td>
 </tr>
 </tbody>
 </table>
 <p>Azure network security groups (NSG) allow you to filter network traffic to and from Azure resources in an Azure virtual network. A network security group includes rules that allow or deny traffic to a virtual network subnet, network interface, or both.</p>
 <p>When you enable logging for an NSG, you can gather the following types of resource log information:</p>
 <ul>
-<li><p><strong>Event:</strong> Entries are logged for which NSG rules are applied to VMs, based on MAC address.</p>
+<li>
+<p><strong>Event:</strong> Entries are logged for which NSG rules are applied to VMs, based on MAC address.</p>
 </li>
-<li><p><strong>Rule counter:</strong> Contains entries for how many times each NSG rule is applied to deny or allow traffic. The status for these rules is collected every 300 seconds.</p>
+<li>
+<p><strong>Rule counter:</strong> Contains entries for how many times each NSG rule is applied to deny or allow traffic. The status for these rules is collected every 300 seconds.</p>
 </li>
 </ul>
 <p>This connector lets you stream your NSG diagnostics logs into Microsoft Sentinel, allowing you to continuously monitor activity in all your instances. For more information, see the <a href="https://go.microsoft.com/fwlink/p/?linkid=2223718&amp;wt.mc_id=sentinel_dataconnectordocs_content_cnl_csasci">Microsoft Sentinel documentation</a>.</p>
@@ -73,54 +74,47 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
-  <td style="text-align:left"><code>Category in &quot;NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter&quot;</code></td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✗</td>
+<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+<td style="text-align: left;"><code>Category in "NetworkSecurityGroupEvent,NetworkSecurityGroupRuleCounter"</code></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
 </tr>
 </tbody>
 </table>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): read and write permissions.</li>
-</ul>
-<p><strong>Custom Permissions:</strong></p>
-<ul>
-<li><strong>Policy​</strong>: owner role assigned for each policy assignment scope.​</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Policy​</strong>: owner role assigned for each policy assignment scope.​</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Stream diagnostics logs from your Connect your Network Security Groups diagnostics logs into Sentinel. at scale</strong></p>
-<p>This connector uses Azure Policy to apply a single Azure Network Security Groups log-streaming configuration to a collection of instances, defined as a scope.<br />
+<p>This connector uses Azure Policy to apply a single Azure Network Security Groups log-streaming configuration to a collection of instances, defined as a scope. <br />
 Follow the instructions below to create and apply a policy to all current and future instances. <strong>Note</strong>, you may already have an active policy for this resource type.
 <strong>Launch the Azure Policy Assignment wizard and follow the steps.​</strong></p>
-<ul>
-<li><strong>Configure policy assignment</strong></li>
-</ul>
 <blockquote>
 <ol>
 <li>In the <strong>Basics</strong> tab, click the button with the three dots under <strong>Scope</strong> to select your resources assignment scope.
-&gt;2. In the <strong>Parameters</strong> tab, choose your Microsoft Sentinel workspace from the <strong>Log Analytics workspace</strong> drop-down list, and leave marked as &quot;True&quot; all the log and metric types you want to ingest.
-&gt;3. To apply the policy on your existing resources, select the <strong>Remediation tab</strong> and mark the <strong>Create a remediation task</strong> checkbox.</li>
+        &gt;2. In the <strong>Parameters</strong> tab, choose your Microsoft Sentinel workspace from the <strong>Log Analytics workspace</strong> drop-down list, and leave marked as "True" all the log and metric types you want to ingest.
+        &gt;3. To apply the policy on your existing resources, select the <strong>Remediation tab</strong> and mark the <strong>Create a remediation task</strong> checkbox.
+  - <strong>Configure policy assignment</strong></li>
 </ol>
 </blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

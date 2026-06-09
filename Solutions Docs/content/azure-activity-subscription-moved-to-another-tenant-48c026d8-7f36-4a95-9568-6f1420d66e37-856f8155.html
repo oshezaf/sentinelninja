@@ -19,50 +19,50 @@
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
 <hr />
-<p>'This detection uses AzureActivity logs (Security category) to identify when a subscription is moved to another tenant. A threat actor may move a subscription into their own tenant to circumvent local resource deployment and logging policies. Once moved, threat actors may deploy resources and perform malicious activities such as crypto mining. This is a technique known as &quot;subscription hijacking&quot;. More information can be found here: https://techcommunity.microsoft.com/t5/microsoft-365-defender-b</p>
+<p>'This detection uses AzureActivity logs (Security category) to identify when a subscription is moved to another tenant. A threat actor may move a subscription into their own tenant to circumvent local resource deployment and logging policies. Once moved, threat actors may deploy resources and perform malicious activities such as crypto mining. This is a technique known as "subscription hijacking". More information can be found here: https://techcommunity.microsoft.com/t5/microsoft-365-defender-b</p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Analytic Rule</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Analytic Rule</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/azure-activity.html">Azure Activity</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/azure-activity.html">Azure Activity</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>ID</strong></td>
-  <td style="text-align:left"><code>48c026d8-7f36-4a95-9568-6f1420d66e37</code></td>
+<td style="text-align: left;"><strong>ID</strong></td>
+<td style="text-align: left;"><code>48c026d8-7f36-4a95-9568-6f1420d66e37</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Severity</strong></td>
-  <td style="text-align:left">Low</td>
+<td style="text-align: left;"><strong>Severity</strong></td>
+<td style="text-align: left;">Low</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Kind</strong></td>
-  <td style="text-align:left">Scheduled</td>
+<td style="text-align: left;"><strong>Kind</strong></td>
+<td style="text-align: left;">Scheduled</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Tactics</strong></td>
-  <td style="text-align:left">Impact</td>
+<td style="text-align: left;"><strong>Tactics</strong></td>
+<td style="text-align: left;">Impact</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Techniques</strong></td>
-  <td style="text-align:left">T1496</td>
+<td style="text-align: left;"><strong>Techniques</strong></td>
+<td style="text-align: left;">T1496</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Required Connectors</strong></td>
-  <td style="text-align:left"><a href="../connectors/azureactivity.html">AzureActivity</a></td>
+<td style="text-align: left;"><strong>Required Connectors</strong></td>
+<td style="text-align: left;"><a href="../connectors/azureactivity.html">AzureActivity</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity/Analytic%20Rules/SubscriptionMigration.yaml">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity/Analytic%20Rules/SubscriptionMigration.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,27 +71,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;Security&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Subscription/updateTenant/action&quot;</code></td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✗</td>
+<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+<td style="text-align: left;"><code>CategoryValue == "Security"</code><br><code>OperationNameValue == "Microsoft.Subscription/updateTenant/action"</code></td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/azure-activity.html">Back to Azure Activity</a></p>
-
 </div>
 
 </body>

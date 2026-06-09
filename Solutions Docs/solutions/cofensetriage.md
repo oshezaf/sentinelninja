@@ -15,7 +15,7 @@
 | **Publisher** | Cofense Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://cofense.com/contact-support/](https://cofense.com/contact-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Security - Threat Protection,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Cofense - support@cofense.com |
 | **First Published** | 2023-03-24 |

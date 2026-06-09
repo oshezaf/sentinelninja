@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">MDE</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">MDE</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/deviceinfo">View Documentation</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table">View Documentation</a></td>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-deviceinfo-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -68,276 +68,276 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">AadDeviceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the device in Azure Active Directory.</td>
+<td style="text-align: left;">AadDeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in Azure Active Directory.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AdditionalFields</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Additional information about the entity or event.</td>
+<td style="text-align: left;">AdditionalFields</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Additional information about the entity or event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AssetValue</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates the value of a device as assigned by the user.</td>
+<td style="text-align: left;">AssetValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the value of a device as assigned by the user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AwsResourceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier of the AWS resource associated with the device.</td>
+<td style="text-align: left;">AwsResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the AWS resource associated with the device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AzureResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier of the Azure resource associated with the device.</td>
+<td style="text-align: left;">AzureResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the Azure resource associated with the device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AzureVmId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier assigned to the device in Azure.</td>
+<td style="text-align: left;">AzureVmId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier assigned to the device in Azure.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AzureVmSubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier of the Azure subscription associated with the device.</td>
+<td style="text-align: left;">AzureVmSubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the Azure subscription associated with the device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Version of the endpoint agent or sensor running on the machine.</td>
+<td style="text-align: left;">ClientVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the endpoint agent or sensor running on the machine.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CloudPlatforms</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Thse cloud platforms that the device belongs to-can be Azure, Amazon Web Services, Google Cloud Platform and Azure Arc.</td>
+<td style="text-align: left;">CloudPlatforms</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Thse cloud platforms that the device belongs to-can be Azure, Amazon Web Services, Google Cloud Platform and Azure Arc.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceCategory</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown.</td>
+<td style="text-align: left;">DeviceCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceDynamicTags</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Device tags added and removed dynamically based on dynamic rules.</td>
+<td style="text-align: left;">DeviceDynamicTags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device tags added and removed dynamically based on dynamic rules.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the device in the service.</td>
+<td style="text-align: left;">DeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in the service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceManualTags</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Device tags created manually using the portal UI or public API.</td>
+<td style="text-align: left;">DeviceManualTags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device tags created manually using the portal UI or public API.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Fully qualified domain name (FQDN) of the device.</td>
+<td style="text-align: left;">DeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Fully qualified domain name (FQDN) of the device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceObjectId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the device in Azure AD.</td>
+<td style="text-align: left;">DeviceObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the device in Azure AD.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceSubtype</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute.</td>
+<td style="text-align: left;">DeviceSubtype</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DeviceType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer.</td>
+<td style="text-align: left;">DeviceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ExclusionReason</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates the reason for device exclusion.</td>
+<td style="text-align: left;">ExclusionReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the reason for device exclusion.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ExposureLevel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates the exposure level of a device.</td>
+<td style="text-align: left;">ExposureLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the exposure level of a device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">GcpFullResourceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier of the AWS resource associated with the device.</td>
+<td style="text-align: left;">GcpFullResourceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the AWS resource associated with the device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HardwareUuid</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Universally Unique Identifier (UUID) of the device's hardware.</td>
+<td style="text-align: left;">HardwareUuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Universally Unique Identifier (UUID) of the device's hardware.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostDeviceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Device ID of the device running Windows Subsystem for Linux.</td>
+<td style="text-align: left;">HostDeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device ID of the device running Windows Subsystem for Linux.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsAzureADJoined</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Boolean indicator of whether machine is joined to the Azure Active Directory.</td>
+<td style="text-align: left;">IsAzureADJoined</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Boolean indicator of whether machine is joined to the Azure Active Directory.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsExcluded</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences.</td>
+<td style="text-align: left;">IsExcluded</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsInternetFacing</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the device is internet-facing.</td>
+<td style="text-align: left;">IsInternetFacing</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the device is internet-facing.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsTransient</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether this device is classified as short-lived or transient based on the frequency of appearance of the device on the network.</td>
+<td style="text-align: left;">IsTransient</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether this device is classified as short-lived or transient based on the frequency of appearance of the device on the network.</td>
 </tr>
 <tr>
-  <td style="text-align:left">JoinType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The device's Azure Active Directory join type.</td>
+<td style="text-align: left;">JoinType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The device's Azure Active Directory join type.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LoggedOnUsers</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">List of all users that are logged on the machine at the time of the event in JSON array format.</td>
+<td style="text-align: left;">LoggedOnUsers</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">List of all users that are logged on the machine at the time of the event in JSON array format.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MachineGroup</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Machine group used to determine access to the machine and apply group-specific settings.</td>
+<td style="text-align: left;">MachineGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Machine group used to determine access to the machine and apply group-specific settings.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MergedDeviceIds</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Previous device IDs that have been assigned to the same device.</td>
+<td style="text-align: left;">MergedDeviceIds</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Previous device IDs that have been assigned to the same device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MergedToDeviceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The most recent device ID assigned to a device.</td>
+<td style="text-align: left;">MergedToDeviceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The most recent device ID assigned to a device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MitigationStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates the mitigation action applied to a device.</td>
+<td style="text-align: left;">MitigationStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the mitigation action applied to a device.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Model</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Model name or number of the product from the vendor or manufacturer, only available if device discovery finds enough information about this attribute.</td>
+<td style="text-align: left;">Model</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Model name or number of the product from the vendor or manufacturer, only available if device discovery finds enough information about this attribute.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OnboardingStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates whether the device is currently onboarded or not to Microsoft Defender for Endpoint or if the device is not supported.</td>
+<td style="text-align: left;">OnboardingStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the device is currently onboarded or not to Microsoft Defender for Endpoint or if the device is not supported.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OSArchitecture</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Architecture of the operating system running on the machine.</td>
+<td style="text-align: left;">OSArchitecture</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Architecture of the operating system running on the machine.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OSBuild</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Build version of the operating system running on the machine.</td>
+<td style="text-align: left;">OSBuild</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Build version of the operating system running on the machine.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OsBuildRevision</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Build revision number of the operating system running on the machine.</td>
+<td style="text-align: left;">OsBuildRevision</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Build revision number of the operating system running on the machine.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OSDistribution</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Distribution of the OS platform, such as Ubuntu or RedHat for Linux platforms.</td>
+<td style="text-align: left;">OSDistribution</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Distribution of the OS platform, such as Ubuntu or RedHat for Linux platforms.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OSPlatform</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</td>
+<td style="text-align: left;">OSPlatform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OSVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Version of the operating system running on the machine.</td>
+<td style="text-align: left;">OSVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the operating system running on the machine.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OSVersionInfo</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Additional information about the OS version, such as the popular name, code name, or version number.</td>
+<td style="text-align: left;">OSVersionInfo</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Additional information about the OS version, such as the popular name, code name, or version number.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PublicIP</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy.</td>
+<td style="text-align: left;">PublicIP</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Public IP address used by the onboarded machine to connect to the Windows Defender ATP service. This could be the IP address of the machine itself, a NAT device, or a proxy.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RegistryDeviceTag</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Device tag added through the registry.</td>
+<td style="text-align: left;">RegistryDeviceTag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device tag added through the registry.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ReportId</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns..</td>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the ComputerName and EventTime columns..</td>
 </tr>
 <tr>
-  <td style="text-align:left">RestrictedDeviceSecurityOperations</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The response categories that have been turned off on a device if its security operations settings is set to restricted. If the device's security operations settings is set to full operations, the value is null.</td>
+<td style="text-align: left;">RestrictedDeviceSecurityOperations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The response categories that have been turned off on a device if its security operations settings is set to restricted. If the device's security operations settings is set to full operations, the value is null.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SensorHealthState</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates health of the device's EDR sensor, if onboarded to Microsoft Defender For Endpoint.</td>
+<td style="text-align: left;">SensorHealthState</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates health of the device's EDR sensor, if onboarded to Microsoft Defender For Endpoint.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time the event was recorded by the MDE agent on the endpoint.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the event was recorded by the MDE agent on the endpoint.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">Vendor</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the product vendor or manufacturer, only available if device discovery finds enough information about this attribute.</td>
+<td style="text-align: left;">Vendor</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the product vendor or manufacturer, only available if device discovery finds enough information about this attribute.</td>
 </tr>
 </tbody>
 </table>
@@ -355,14 +355,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -373,14 +373,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.html">Dataverse - Terminated employee exfiltration to USB drive</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-terminated-employee-exfiltration-to-usb-drive-c5e75cb6-cea0-49c2-a998-da414035aac1-627b05d7.html">Dataverse - Terminated employee exfiltration to USB drive</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -388,18 +388,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-av-detections-related-to-springshell-vulnerability-3bd33158-3f0b-47e3-a50f-7c20a1b88038-091061ce.html">AV detections related to SpringShell Vulnerability</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-av-detections-related-to-springshell-vulnerability-3bd33158-3f0b-47e3-a50f-7c20a1b88038-091061ce.html">AV detections related to SpringShell Vulnerability</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-av-detections-related-to-tarrask-malware-1785d372-b9fe-4283-96a6-3a1d83cabfd1-8b612d87.html">AV detections related to Tarrask malware</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-av-detections-related-to-tarrask-malware-1785d372-b9fe-4283-96a6-3a1d83cabfd1-8b612d87.html">AV detections related to Tarrask malware</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -407,14 +407,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-entra-id-%5Bdeprecated%5D-explicit-mfa-deny-a22740ec-fc1e-4c91-8de6-c29c6450ad00-04320464.html">[Deprecated] Explicit MFA Deny</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-[deprecated]-explicit-mfa-deny-a22740ec-fc1e-4c91-8de6-c29c6450ad00-04320464.html">[Deprecated] Explicit MFA Deny</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -422,14 +422,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.html">AV detections related to Zinc actors</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/zinc-open-source-av-detections-related-to-zinc-actors-3705158d-e008-49c9-92dd-e538e1549090-62580aab.html">AV detections related to Zinc actors</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -438,14 +438,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.html">Dataverse - Dataverse export copied to USB devices</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-business-applications-dataverse-dataverse-export-copied-to-usb-devices-f9658e11-e277-4a65-8f91-2cb94cf7497c-664d805c.html">Dataverse - Dataverse export copied to USB devices</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -454,14 +454,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -469,21 +469,20 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforendpoint-1735d964.html">MicrosoftDefenderForEndPoint</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

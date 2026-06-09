@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Applications</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Applications</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aewexperimentscorecardmetricpairs">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aewexperimentscorecardmetricpairs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,171 +57,171 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">ControlCount</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">The sample count of the control variant.</td>
+<td style="text-align: left;">ControlCount</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The sample count of the control variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ControlMetricValue</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The metric value for the control variant.</td>
+<td style="text-align: left;">ControlMetricValue</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The metric value for the control variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ControlMetricValueNormalized</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The normalized metric value for the control variant. Used by metric comparisons, which accounts for unequal traffic allocation.</td>
+<td style="text-align: left;">ControlMetricValueNormalized</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The normalized metric value for the control variant. Used by metric comparisons, which accounts for unequal traffic allocation.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ControlStandardErrorNormalized</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The standard error (StandardDeviation / sqrt(Count)) of the metric for the control variant.</td>
+<td style="text-align: left;">ControlStandardErrorNormalized</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The standard error (StandardDeviation / sqrt(Count)) of the metric for the control variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ControlVariant</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Id of the control variant.</td>
+<td style="text-align: left;">ControlVariant</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Id of the control variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DesiredDirection</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Desirable direction for the metric. Possible values: Increase, Decrease, Neutral</td>
+<td style="text-align: left;">DesiredDirection</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Desirable direction for the metric. Possible values: Increase, Decrease, Neutral</td>
 </tr>
 <tr>
-  <td style="text-align:left">Insights</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Metric-level Insights derived from the analysis results in JSON format.</td>
+<td style="text-align: left;">Insights</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metric-level Insights derived from the analysis results in JSON format.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricDescription</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The description of the metric.</td>
+<td style="text-align: left;">MetricDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The description of the metric.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricDisplayName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The display name of the metric.</td>
+<td style="text-align: left;">MetricDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The display name of the metric.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricETag</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ETag of the metric.</td>
+<td style="text-align: left;">MetricETag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ETag of the metric.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Id of the metric.</td>
+<td style="text-align: left;">MetricId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Id of the metric.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricKind</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The metric kind. Possible values include EventCount, UserCount, EventRate, UserRate, Sum, Average, Percentile.</td>
+<td style="text-align: left;">MetricKind</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The metric kind. Possible values include EventCount, UserCount, EventRate, UserRate, Sum, Average, Percentile.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricLifecycle</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The lifecycle stage of the metric. Possible values include Active, Inactive</td>
+<td style="text-align: left;">MetricLifecycle</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The lifecycle stage of the metric. Possible values include Active, Inactive</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricTags</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Metric tags in the form of string array.</td>
+<td style="text-align: left;">MetricTags</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metric tags in the form of string array.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The version of the metric.</td>
+<td style="text-align: left;">MetricVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The version of the metric.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PValue</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The P-Value of the comparison. Used to indicate if the difference between the variants is significant.</td>
+<td style="text-align: left;">PValue</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The P-Value of the comparison. Used to indicate if the difference between the variants is significant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RelativeDifference</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The relative difference of the comparison based on TreatmentMetricValueNormalized and ControlMetricValueNormalized.</td>
+<td style="text-align: left;">RelativeDifference</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The relative difference of the comparison based on TreatmentMetricValueNormalized and ControlMetricValueNormalized.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ScorecardId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Id of the experiment scorecard.</td>
+<td style="text-align: left;">ScorecardId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Id of the experiment scorecard.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp when the scorecard results were ingested.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp when the scorecard results were ingested.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TreatmentCount</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">The sample count of the treatment variant.</td>
+<td style="text-align: left;">TreatmentCount</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The sample count of the treatment variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TreatmentEffect</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The effect of the treatment variant on the metric. Possible values: Zero samples, Too few samples, Inconclusive, Changed, Improved, Degraded.</td>
+<td style="text-align: left;">TreatmentEffect</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The effect of the treatment variant on the metric. Possible values: Zero samples, Too few samples, Inconclusive, Changed, Improved, Degraded.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TreatmentMetricValue</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The metric value for the treatment variant.</td>
+<td style="text-align: left;">TreatmentMetricValue</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The metric value for the treatment variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TreatmentMetricValueNormalized</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The normalized metric value for the treatment variant. Used by metric comparisons, which accounts for unequal traffic allocation.</td>
+<td style="text-align: left;">TreatmentMetricValueNormalized</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The normalized metric value for the treatment variant. Used by metric comparisons, which accounts for unequal traffic allocation.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TreatmentStandardErrorNormalized</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The standard error (StandardDeviation / sqrt(Count)) of the metric for the control variant.</td>
+<td style="text-align: left;">TreatmentStandardErrorNormalized</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The standard error (StandardDeviation / sqrt(Count)) of the metric for the control variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TreatmentVariant</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Id of the treatment variant.</td>
+<td style="text-align: left;">TreatmentVariant</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Id of the treatment variant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -234,7 +234,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

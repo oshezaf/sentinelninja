@@ -15,7 +15,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | IT Operations,Security - Network |
 | **Version** | 3.0.0 |
 | **Author** | Sevco Security - support@sevco.io |
 | **First Published** | 2023-05-01 |

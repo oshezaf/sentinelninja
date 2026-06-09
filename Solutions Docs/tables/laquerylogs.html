@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Audit</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/laquerylogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,181 +64,181 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">AADClientId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">AAD ClientId used by the caller.</td>
+<td style="text-align: left;">AADClientId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD ClientId used by the caller.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AADEmail</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">AAD Email of the caller.</td>
+<td style="text-align: left;">AADEmail</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD Email of the caller.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AADObjectId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">AAD ObjectId of the caller, or the 'aai' claim for GDAP scenarios.</td>
+<td style="text-align: left;">AADObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD ObjectId of the caller, or the 'aai' claim for GDAP scenarios.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AADTenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">AAD TenantId of the caller.</td>
+<td style="text-align: left;">AADTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AAD TenantId of the caller.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConditionalDataAccess</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates whether the query was executed with an applicable attribute-based access control data access condition (ABAC), and if the condition had an error.</td>
+<td style="text-align: left;">ConditionalDataAccess</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates whether the query was executed with an applicable attribute-based access control data access condition (ABAC), and if the condition had an error.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CorrelationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The ID for correlated events.</td>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The ID for correlated events.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsBillableQuery</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether query execution is billed.</td>
+<td style="text-align: left;">IsBillableQuery</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether query execution is billed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsWorkspaceInFailover</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether the queried workspace was in failover mode.</td>
+<td style="text-align: left;">IsWorkspaceInFailover</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether the queried workspace was in failover mode.</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryText</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The full body of the query as submitted by the user.</td>
+<td style="text-align: left;">QueryText</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The full body of the query as submitted by the user.</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryThumbprint</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A hash representing the query structure, useful for identifying similar queries.</td>
+<td style="text-align: left;">QueryThumbprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A hash representing the query structure, useful for identifying similar queries.</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryTimeRangeEnd</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The end time (UTC) of the time range across which the query was was requested by the caller to be executed.</td>
+<td style="text-align: left;">QueryTimeRangeEnd</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The end time (UTC) of the time range across which the query was was requested by the caller to be executed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryTimeRangeStart</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The starting time (UTC) of the time range across which the query was was requested by the caller to be executed.</td>
+<td style="text-align: left;">QueryTimeRangeStart</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The starting time (UTC) of the time range across which the query was was requested by the caller to be executed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestClientApp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">ClientApp string in the request header (x-ms-app).</td>
+<td style="text-align: left;">RequestClientApp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ClientApp string in the request header (x-ms-app).</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestContext</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">ResourceId of all referenced workspaces, applications, and resources across which the query was requested by the caller to be executed.</td>
+<td style="text-align: left;">RequestContext</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">ResourceId of all referenced workspaces, applications, and resources across which the query was requested by the caller to be executed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestContextFilters</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Filters applied to the request context.</td>
+<td style="text-align: left;">RequestContextFilters</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Filters applied to the request context.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestTarget</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">ResourceId of the request URL.</td>
+<td style="text-align: left;">RequestTarget</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ResourceId of the request URL.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseCode</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The HTTP response code for the request.</td>
+<td style="text-align: left;">ResponseCode</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The HTTP response code for the request.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseDurationMs</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The duration (in ms) that the query took to execute.</td>
+<td style="text-align: left;">ResponseDurationMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The duration (in ms) that the query took to execute.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseRowCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of rows that were returned.</td>
+<td style="text-align: left;">ResponseRowCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of rows that were returned.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ScannedGB</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">For billable queries, like Basic logs queries, indicates the total GB of data scanned in the query.</td>
+<td style="text-align: left;">ScannedGB</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">For billable queries, like Basic logs queries, indicates the total GB of data scanned in the query.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatsCPUTimeMs</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The CPU (in ms) used in the execution of this query.</td>
+<td style="text-align: left;">StatsCPUTimeMs</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The CPU (in ms) used in the execution of this query.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatsDataProcessedEnd</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The end time (UTC) of the time range across which the data processed.</td>
+<td style="text-align: left;">StatsDataProcessedEnd</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The end time (UTC) of the time range across which the data processed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatsDataProcessedStart</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The starting time (UTC) of the time range across which the data processed.</td>
+<td style="text-align: left;">StatsDataProcessedStart</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The starting time (UTC) of the time range across which the data processed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatsRegionCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of regions that the workspaces accessed are spread across.</td>
+<td style="text-align: left;">StatsRegionCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of regions that the workspaces accessed are spread across.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StatsWorkspaceCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The number of workspaces that the query accessed, either explicitly or otherwise.</td>
+<td style="text-align: left;">StatsWorkspaceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The number of workspaces that the query accessed, either explicitly or otherwise.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) at which the query was submitted.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) at which the query was submitted.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">WorkspaceRegion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The region of the queried workspace.</td>
+<td style="text-align: left;">WorkspaceRegion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region of the queried workspace.</td>
 </tr>
 </tbody>
 </table>
@@ -252,42 +252,42 @@
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
 <h3 id="workbooks">Workbooks (3)</h3>
-<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>RequestClientApp != &quot;Sentinel-General&quot;</code></p>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>RequestClientApp != "Sentinel-General"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>RequestClientApp != &quot;Sentinel-General&quot;</code></p>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>RequestClientApp != "Sentinel-General"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>RequestClientApp != &quot;Sentinel-General&quot;</code><br><code>ResponseCode != &quot;200&quot;</code><br><code>ResponseRowCount == &quot;5000&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>RequestClientApp != "Sentinel-General"</code><br><code>ResponseCode != "200"</code><br><code>ResponseRowCount == "5000"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
 </tr>
 </tbody>
 </table>
@@ -301,38 +301,38 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>RequestClientApp != &quot;Sentinel-General&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>RequestClientApp != "Sentinel-General"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>RequestClientApp != &quot;Sentinel-General&quot;</code><br><code>ResponseCode != &quot;200&quot;</code><br><code>ResponseRowCount == &quot;5000&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>RequestClientApp != "Sentinel-General"</code><br><code>ResponseCode != "200"</code><br><code>ResponseRowCount == "5000"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>3</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
@@ -340,22 +340,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>!= Sentinel-General</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><code>!= Sentinel-General</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
@@ -363,22 +363,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>!= 200</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>!= 200</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -386,29 +386,28 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>5000</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>5000</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

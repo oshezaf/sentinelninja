@@ -15,7 +15,7 @@
 | **Publisher** | Alsid |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.alsid.com/contact-us/](https://www.alsid.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Identity |
 | **Version** | 2.0.0 |
 | **Author** | Alsid |
 | **First Published** | 2022-05-06 |

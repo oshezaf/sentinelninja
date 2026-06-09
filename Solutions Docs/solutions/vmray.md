@@ -15,12 +15,12 @@
 | **Publisher** | VMRay |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.vmray.com/contact/customer-support/](https://www.vmray.com/contact/customer-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
 | **Version** | 3.0.0 |
 | **Author** | VMRay |
 | **First Published** | 2025-07-23 |
 | **Solution Folder** | [VMRay](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VMRay) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vmraygmbh1623334327435.microsoft-sentinel-solution-vmray) · Popularity: 🟡 Low (48%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/vmraygmbh1623334327435.microsoft-sentinel-solution-vmray) · Popularity: 🔵 Medium (53%) |
 
  The VMRay Connector for Microsoft Sentinel enhances security operations by providing enriched threat intelligence, enabling faster and more informed responses to security incidents. The integration has two main parts: first, URL detonation and enrichment, which provides detailed insights into suspicious URLs. Second, it automatically generates and feeds threat intelligence for all submissions to VMRay, improving threat detection and incident response in Sentinel. This seamless integration empowers teams to proactively address emerging threats.
 

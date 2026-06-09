@@ -13,7 +13,7 @@
 | **Publisher** | HYAS |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.hyas.com/contact](https://www.hyas.com/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR),Security - Threat Intelligence |
 | **Version** | 3.0.3 |
 | **Author** | Hyas |
 | **First Published** | 2023-09-26 |

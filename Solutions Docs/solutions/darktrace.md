@@ -15,7 +15,7 @@
 | **Publisher** | Darktrace |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.darktrace.com/en/contact/](https://www.darktrace.com/en/contact/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 2.0.1 |
 | **Author** | Darktrace |
 | **First Published** | 2022-05-02 |

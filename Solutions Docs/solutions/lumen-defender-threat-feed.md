@@ -13,7 +13,7 @@
 | **Publisher** | Lumen Technologies, Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.lumen.com/en-us/contact-us/support.html](https://www.lumen.com/en-us/contact-us/support.html) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.2.0 |
 | **Author** | Matthew Collier - matthew.collier@lumen.com |
 | **First Published** | 2025-09-12 |

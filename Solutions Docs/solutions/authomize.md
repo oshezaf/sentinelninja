@@ -15,7 +15,7 @@
 | **Publisher** | Authomize |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.authomize.com](https://support.authomize.com) |
-| **Categories** | domains,verticals |
+| **Categories** | Identity,Application,Security - Insider Threat,Compliance,Education,Finance,Healthcare,Manufacturing,Retail |
 | **Version** | 3.0.0 |
 | **Author** | Authomize - support@authomize.com |
 | **First Published** | 2023-06-15 |

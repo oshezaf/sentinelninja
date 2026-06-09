@@ -16,77 +16,67 @@
 </nav>
 <div class="doc-content">
 <h1 id="cyberark-epm">CyberArk EPM</h1>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/CyberArk_Logo.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Connector ID</strong></td>
-  <td style="text-align:left"><code>CyberArkEPMCCPDefinition</code></td>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CyberArkEPMCCPDefinition</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">CyberArk</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">CyberArk</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Used in Solutions</strong></td>
-  <td style="text-align:left"><a href="../solutions/cyberarkepm.html">CyberArkEPM</a></td>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/cyberarkepm.html">CyberArkEPM</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ccf.html">CCF</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Package/mainTemplate.json">mainTemplate.json</a></td>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkEPM/Package/mainTemplate.json">mainTemplate.json</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API</strong></td>
-  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources</em></td>
 </tr>
 </tbody>
 </table>
 <p>The <a href="https://www.cyberark.com/products/endpoint-privilege-manager/">CyberArk Endpoint Privilege Manager</a> data connector enables Microsoft Sentinel to ingest security event logs and other events from CyberArk EPM via REST API.</p>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
-</ul>
-<p><strong>Custom Permissions:</strong></p>
-<ul>
-<li><strong>CyberArk EPM Platform</strong>: Access to perform required configurations in CyberArk EPM platform</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): Read and Write permissions are required.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>CyberArk EPM Platform</strong>: Access to perform required configurations in CyberArk EPM platform</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
 </blockquote>
 <p><strong>1. Connect to CyberArk EPM API to start collecting event logs in Microsoft Sentinel</strong></p>
-<p>Follow the configuration steps <a href="https://docs.cyberark.com/epm/latest/en/content/webservices/authenticate-with-identity-administration.htm">here</a> to integrate Microsoft Sentinel with CyberArk EPM and enable centralized monitoring of endpoint events within Microsoft Sentinel.</p>
-<ul>
-<li><strong>Web App ID</strong>: The OAuth2 server web app ApplicationID</li>
-<li><strong>Region based Tenant URL</strong>: e.g. api-na.epm.cyberark.cloud</li>
-<li><strong>Set ID</strong>: List of comma seperated EPM Set IDs to poll events from</li>
-<li><strong>Identity Endpoint</strong>: e.g. kln9281.id.cyberark.cloud</li>
-<li><strong>OAuth Configuration</strong>:<ul>
-<li>Oauth Username</li>
-<li>Oauth Password</li>
-<li>Click 'Connect' to authenticate</li>
-</ul>
-</li>
-</ul>
+<p>Follow the configuration steps <a href="https://docs.cyberark.com/epm/latest/en/content/webservices/authenticate-with-identity-administration.htm">here</a> to integrate Microsoft Sentinel with CyberArk EPM and enable centralized monitoring of endpoint events within Microsoft Sentinel.
+- <strong>Web App ID</strong>: The OAuth2 server web app ApplicationID
+- <strong>Region based Tenant URL</strong>: e.g. api-na.epm.cyberark.cloud
+- <strong>Set ID</strong>: List of comma seperated EPM Set IDs to poll events from
+- <strong>Identity Endpoint</strong>: e.g. kln9281.id.cyberark.cloud
+- <strong>OAuth Configuration</strong>:
+  - Oauth Username
+  - Oauth Password
+  - Click 'Connect' to authenticate</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

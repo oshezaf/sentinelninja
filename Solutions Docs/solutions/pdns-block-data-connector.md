@@ -13,7 +13,7 @@
 | **Publisher** | Nominet PDNS Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.protectivedns.service.ncsc.gov.uk/pdns](https://www.protectivedns.service.ncsc.gov.uk/pdns) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Security - Network |
 | **First Published** | 2023-03-31 |
 | **Solution Folder** | [PDNS Block Data Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PDNS%20Block%20Data%20Connector) |
 

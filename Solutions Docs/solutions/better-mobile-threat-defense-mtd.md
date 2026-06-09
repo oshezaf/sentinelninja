@@ -13,12 +13,12 @@
 | **Publisher** | Better Mobile Security Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.better.mobi/about#contact-us](https://www.better.mobi/about#contact-us) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 2.0.1 |
 | **Author** | Better Mobile Security Inc |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [BETTER Mobile Threat Defense (MTD)](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BETTER%20Mobile%20Threat%20Defense%20%28MTD%29) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bettermobilesecurityinc.better_mtd_mss) · Popularity: 🔵 Medium (53%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bettermobilesecurityinc.better_mtd_mss) · Popularity: 🟡 Low (46%) |
 
 The [BETTER Mobile Threat Defense](https://mtd-docs.bmobi.net/) Solution for Microsoft Sentinel allows Enterprises to connect their Better MTD instances with Microsoft Sentinel, to view the [incidents](https://mtd-docs.bmobi.net/incidents/incidents) in Dashboards, create custom alerts, use it to trigger playbooks and expands threat hunting capabilities. This gives users more insight into their organization's mobile devices and ability to quickly analyse current mobile security posture which improves their overall SecOps capabilities.
 

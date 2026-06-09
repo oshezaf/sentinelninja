@@ -13,13 +13,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | DevOps,Security - Network |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-04 |
 | **Last Updated** | 2026-03-06 |
 | **Solution Folder** | [Google Kubernetes Engine](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Kubernetes%20Engine) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gkelogs-api) · Popularity: 🔵 Medium (66%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gkelogs-api) · Popularity: 🟡 Low (42%) |
 
 The Google Cloud Platform (GCP) Kubernetes Engine data connector allows you to monitor containerized applications, track performance metrics, and detect potential threats across your GKE environment.
 

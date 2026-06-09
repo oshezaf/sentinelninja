@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/teams.html">Teams</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/teams.html">Teams</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,60 +47,42 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="microsoftsentinel"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Update_incident_-_update_severity</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Update_incident_-_close_incident</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Update_incident_-_update_severity | put | `/Incidents` | — |
+| Update_incident_-_close_incident | put | `/Incidents` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -118,7 +100,7 @@
 <p><strong>Deploy with incident trigger</strong></p>
 <p>After deployment, attach this playbook to an <strong>automation rule</strong> so it runs when the incident is created.</p>
 <p><a href="https://docs.microsoft.com/azure/sentinel/automate-incident-handling-with-automation-rules#creating-and-managing-automation-rules">Learn more about automation rules</a></p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeams%2FPlaybooks%2FSend-Teams-adaptive-card-on-incident-creation%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeams%2FPlaybooks%2FSend-Teams-adaptive-card-on-incident-creation%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeams%2FPlaybooks%2FSend-Teams-adaptive-card-on-incident-creation%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTeams%2FPlaybooks%2FSend-Teams-adaptive-card-on-incident-creation%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <h1 id="post-deployment">Post-deployment</h1>
 <ol>
 <li>Assign Microsoft Sentinel Responder role to the Playbook's Managed Identity</li>
@@ -126,27 +108,24 @@
 </ol>
 <h1 id="if-the-playbook-is-grayed-out-follow-these-steps">If the Playbook is Grayed Out, Follow These Steps</h1>
 <ol>
-<li>Navigate to <code>Microsoft Sentinel → Settings → Settings </code></li>
+<li>Navigate to <code>Microsoft Sentinel → Settings → Settings</code></li>
 <li>Scroll down to the <strong>Playbook permissions</strong> section</li>
 <li>Click the <strong>Configure permissions</strong> button</li>
-<li>In the <strong>Manage permissions</strong> side panel:<ul>
-<li>Under the <strong>Browse</strong> tab, search and select the <strong>Resource Group</strong> that contains your Logic App Playbook</li>
-</ul>
-</li>
+<li>In the <strong>Manage permissions</strong> side panel:
+   - Under the <strong>Browse</strong> tab, search and select the <strong>Resource Group</strong> that contains your Logic App Playbook</li>
 <li>Click <strong>Apply</strong></li>
 <li>Return to your <strong>Automation Rule</strong> and try adding the playbook again – it should now be selectable (no longer grayed out)</li>
 </ol>
 <h2 id="screenshots">Screenshots</h2>
 <p><strong>Incident Trigger</strong>
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-light.png" alt="Incident Trigger" /></p>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-dark.png" alt="Incident Trigger" /></p>
+<img alt="Incident Trigger" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-light.png" /></p>
+<p><img alt="Incident Trigger" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/incidentTrigger-dark.png" /></p>
 <p><strong>Teams Notification</strong>
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/Teams_Notification_dark.jpg" alt="Teams Notification" /></p>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/Teams_Notification_light.jpg" alt="Teams Notification" /></p>
+<img alt="Teams Notification" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/Teams_Notification_dark.jpg" /></p>
+<p><img alt="Teams Notification" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Playbooks/Send-Teams-adaptive-card-on-incident-creation/images/Teams_Notification_light.jpg" /></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/teams.html">Back to Teams</a></p>
-
 </div>
 
 </body>

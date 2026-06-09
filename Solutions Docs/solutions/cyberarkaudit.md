@@ -15,13 +15,13 @@
 | **Publisher** | CyberArk Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cyberark.com/services-support/technical-support-contact/](https://www.cyberark.com/services-support/technical-support-contact/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Identity |
 | **Version** | 3.1.0 |
 | **Author** | CyberArk Business Development - BizDevTech@cyberark.com |
 | **First Published** | 2024-03-01 |
 | **Last Updated** | 2026-03-05 |
 | **Solution Folder** | [CyberArkAudit](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArkAudit) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberark.cyberark_audit_sentinel) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cyberark.cyberark_audit_sentinel) · Popularity: 🟢 High (88%) |
 
 The integration between CyberArk Audit and Microsoft Sentinel aims to seamlessly connect the robust audit capabilities of CyberArk with the advanced security analytics and threat detection features of Microsoft Sentinel
 

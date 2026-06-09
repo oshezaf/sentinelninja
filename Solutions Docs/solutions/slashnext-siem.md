@@ -13,7 +13,7 @@
 | **Publisher** | SlashNext |
 | **Support Tier** | Partner |
 | **Support Link** | [https://slashnext.com/support](https://slashnext.com/support) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.1.0 |
 | **Author** | SlashNext - support@slashnext.net |
 | **First Published** | 2023-05-26 |

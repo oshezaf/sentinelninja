@@ -15,13 +15,13 @@
 | **Publisher** | OneTrust, LLC |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.onetrust.com/support/](https://www.onetrust.com/support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Support - support@onetrust.com |
 | **First Published** | 2025-10-24 |
 | **Last Updated** | 2025-10-24 |
 | **Solution Folder** | [OneTrust](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OneTrust) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/onetrustllc1594047340198.azure-sentinel-solution-onetrust) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/onetrustllc1594047340198.azure-sentinel-solution-onetrust) · Popularity: 🟡 Low (26%) |
 
 The [OneTrust](https://www.onetrust.com/) solution for Microsoft Sentinel allows Purview to have near real time visibility into where sensitive data has been located or remediated across Google Cloud and other OneTrust supported data sources.
 

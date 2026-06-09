@@ -13,7 +13,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | DevOps,Security - Network |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2024-03-04 |

@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Entra</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Entra</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadserviceprincipalsigninlogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -69,241 +69,241 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">AADTenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">ID of the AAD tenant.</td>
+<td style="text-align: left;">AADTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the AAD tenant.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Agent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Details of agentic sign-in.</td>
+<td style="text-align: left;">Agent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of agentic sign-in.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique GUID representing the app ID in the Azure Active Directory</td>
+<td style="text-align: left;">AppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique GUID representing the app ID in the Azure Active Directory</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppOwnerTenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The tenant identifier of the owenr of the application in Azure Active Directory</td>
+<td style="text-align: left;">AppOwnerTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tenant identifier of the owenr of the application in Azure Active Directory</td>
 </tr>
 <tr>
-  <td style="text-align:left">AuthenticationContextClassReferences</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The authentication contexts of the sign-in</td>
+<td style="text-align: left;">AuthenticationContextClassReferences</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The authentication contexts of the sign-in</td>
 </tr>
 <tr>
-  <td style="text-align:left">AuthenticationProcessingDetails</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Provides the details associated with authentication processor</td>
+<td style="text-align: left;">AuthenticationProcessingDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides the details associated with authentication processor</td>
 </tr>
 <tr>
-  <td style="text-align:left">AutonomousSystemNumber</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Autonomous System Number for the network.</td>
+<td style="text-align: left;">AutonomousSystemNumber</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Autonomous System Number for the network.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Category</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Category of the sign-in event</td>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the sign-in event</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientCredentialType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of client credential used. Examples include client assertion, client secret, etc.</td>
+<td style="text-align: left;">ClientCredentialType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of client credential used. Examples include client assertion, client secret, etc.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConditionalAccessAudiences</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Details of the conditional access audiences being applied for the sign-in.</td>
+<td style="text-align: left;">ConditionalAccessAudiences</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the conditional access audiences being applied for the sign-in.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConditionalAccessPolicies</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Details of the conditional access policies being applied for the sign-in</td>
+<td style="text-align: left;">ConditionalAccessPolicies</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the conditional access policies being applied for the sign-in</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConditionalAccessStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Status of all the conditionalAccess policies related to the sign-in</td>
+<td style="text-align: left;">ConditionalAccessStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of all the conditionalAccess policies related to the sign-in</td>
 </tr>
 <tr>
-  <td style="text-align:left">CorrelationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">ID to provide sign-in trail</td>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID to provide sign-in trail</td>
 </tr>
 <tr>
-  <td style="text-align:left">CreatedDateTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Datetime of the sign-in activity.</td>
+<td style="text-align: left;">CreatedDateTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Datetime of the sign-in activity.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DurationMs</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">The duration of the operation in milliseconds</td>
+<td style="text-align: left;">DurationMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">The duration of the operation in milliseconds</td>
 </tr>
 <tr>
-  <td style="text-align:left">FederatedCredentialId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Th identifier of an application's federated identity credential if a federated identity credential was used to sign in.</td>
+<td style="text-align: left;">FederatedCredentialId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Th identifier of an application's federated identity credential if a federated identity credential was used to sign in.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Id</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique ID representing the sign-in activity</td>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique ID representing the sign-in activity</td>
 </tr>
 <tr>
-  <td style="text-align:left">Identity</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal</td>
+<td style="text-align: left;">Identity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal</td>
 </tr>
 <tr>
-  <td style="text-align:left">IPAddress</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">IP address of the client used to sign in</td>
+<td style="text-align: left;">IPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the client used to sign in</td>
 </tr>
 <tr>
-  <td style="text-align:left">Level</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The severity level of the event</td>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The severity level of the event</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The region of the resource emitting the event</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The region of the resource emitting the event</td>
 </tr>
 <tr>
-  <td style="text-align:left">LocationDetails</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Details of the sign-in location</td>
+<td style="text-align: left;">LocationDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Details of the sign-in location</td>
 </tr>
 <tr>
-  <td style="text-align:left">NetworkLocationDetails</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Provides the details associated with Authentication processor.</td>
+<td style="text-align: left;">NetworkLocationDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides the details associated with Authentication processor.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For sign-ins, this value is always Sign-in activity</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For sign-ins, this value is always Sign-in activity</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The REST API version that's requested by the client</td>
+<td style="text-align: left;">OperationVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The REST API version that's requested by the client</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceDisplayName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the resource that the service principal signed into</td>
+<td style="text-align: left;">ResourceDisplayName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the resource that the service principal signed into</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceGroup</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Resource group for the logs</td>
+<td style="text-align: left;">ResourceGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource group for the logs</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceIdentity</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">ID of the resource that the service principal signed into</td>
+<td style="text-align: left;">ResourceIdentity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the resource that the service principal signed into</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceOwnerTenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The tenant identifier of the owner of the resource referenced in the sign in</td>
+<td style="text-align: left;">ResourceOwnerTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The tenant identifier of the owner of the resource referenced in the sign in</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceServicePrincipalId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service Principal Id of the resource</td>
+<td style="text-align: left;">ResourceServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service Principal Id of the resource</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResultDescription</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Provides the error description for the sign-in operation</td>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Provides the error description for the sign-in operation</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResultSignature</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Contains the error code, if any, for the sign-in operation</td>
+<td style="text-align: left;">ResultSignature</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Contains the error code, if any, for the sign-in operation</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResultType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The result of the sign-in operation can be Success or Failure</td>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The result of the sign-in operation can be Success or Failure</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServicePrincipalCredentialKeyId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Key id of the service principal that initiated the sign-in</td>
+<td style="text-align: left;">ServicePrincipalCredentialKeyId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Key id of the service principal that initiated the sign-in</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServicePrincipalCredentialThumbprint</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Thumbprint of the service principal that initiated the sign-in</td>
+<td style="text-align: left;">ServicePrincipalCredentialThumbprint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Thumbprint of the service principal that initiated the sign-in</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServicePrincipalId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">ID of the service principal who initiated the sign-in</td>
+<td style="text-align: left;">ServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">ID of the service principal who initiated the sign-in</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServicePrincipalName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service Principal Name of the service principal who initiated the sign-in</td>
+<td style="text-align: left;">ServicePrincipalName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service Principal Name of the service principal who initiated the sign-in</td>
 </tr>
 <tr>
-  <td style="text-align:left">SessionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Id of the session that was generated during the signIn.</td>
+<td style="text-align: left;">SessionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of the session that was generated during the signIn.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The date and time of the event in UTC</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The date and time of the event in UTC</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">UniqueTokenIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique token identifier for the request</td>
+<td style="text-align: left;">UniqueTokenIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique token identifier for the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserAgent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">User Agent for the sign-in</td>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User Agent for the sign-in</td>
 </tr>
 </tbody>
 </table>
@@ -321,14 +321,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/azureactivedirectory.html">Microsoft Entra ID</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -339,14 +339,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.html">Lumen TI IPAddress in IdentityLogonEvents</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.html">Lumen TI IPAddress in IdentityLogonEvents</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -354,14 +354,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.html">Suspicious Service Principal creation activity</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.html">Suspicious Service Principal creation activity</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -370,14 +370,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -385,14 +385,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -400,14 +400,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -415,14 +415,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-entra-id-conditionalaccesssism-90abe712.html">ConditionalAccessSISM</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-entra-id-conditionalaccesssism-90abe712.html">ConditionalAccessSISM</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -431,25 +431,24 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Parser</th>
-  <th style="text-align:left">Schema</th>
-  <th style="text-align:left">Product</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../asim/asimauthenticationaadserviceprincipalsigninlogs.html">ASimAuthenticationAADServicePrincipalSignInLogs</a></td>
-  <td style="text-align:left">Authentication</td>
-  <td style="text-align:left">Microsoft Entra ID</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../asim/asimauthenticationaadserviceprincipalsigninlogs.html">ASimAuthenticationAADServicePrincipalSignInLogs</a></td>
+<td style="text-align: left;">Authentication</td>
+<td style="text-align: left;">Microsoft Entra ID</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

@@ -15,7 +15,7 @@
 | **Publisher** | ServiceNow |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.servicenow.com/now](https://support.servicenow.com/now) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.0.0 |
 | **Author** | ServiceNow |
 | **First Published** | 2025-01-15 |

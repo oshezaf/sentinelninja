@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Workloads</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Workloads</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adreplicationresult">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adreplicationresult">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,141 +57,141 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">AssessmentId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique Guid corresponding to each run</td>
+<td style="text-align: left;">AssessmentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique Guid corresponding to each run</td>
 </tr>
 <tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Computer Name where the solution ran</td>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Computer Name where the solution ran</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConsecutiveFailures</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Number of consecutive replication failures between two Domain Controllers</td>
+<td style="text-align: left;">ConsecutiveFailures</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of consecutive replication failures between two Domain Controllers</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestinationServer</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">AD Replication Destination Server</td>
+<td style="text-align: left;">DestinationServer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AD Replication Destination Server</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestinationSiteName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">AD Replication Destination Site Name</td>
+<td style="text-align: left;">DestinationSiteName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">AD Replication Destination Site Name</td>
 </tr>
 <tr>
-  <td style="text-align:left">HelpLink</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Help Link for more information</td>
+<td style="text-align: left;">HelpLink</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Help Link for more information</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsDestinationGC</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Is Destinationation Global Catalog</td>
+<td style="text-align: left;">IsDestinationGC</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Is Destinationation Global Catalog</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsSourceGC</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Is Source Global Catalog</td>
+<td style="text-align: left;">IsSourceGC</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Is Source Global Catalog</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastAttemptedSync</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Last Attempted Replication DateTime</td>
+<td style="text-align: left;">LastAttemptedSync</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Last Attempted Replication DateTime</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastSuccessfulSync</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Last Successful DateTime</td>
+<td style="text-align: left;">LastSuccessfulSync</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Last Successful DateTime</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastSyncMessage</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Last Replication Sync Message</td>
+<td style="text-align: left;">LastSyncMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Last Replication Sync Message</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastSyncResult</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Last Replication Sync Success / Failure Code</td>
+<td style="text-align: left;">LastSyncResult</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Last Replication Sync Success / Failure Code</td>
 </tr>
 <tr>
-  <td style="text-align:left">PartitionName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Partition Name</td>
+<td style="text-align: left;">PartitionName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Partition Name</td>
 </tr>
 <tr>
-  <td style="text-align:left">PercentOfTSL</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Percentage of Tombstone Lifecycle</td>
+<td style="text-align: left;">PercentOfTSL</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Percentage of Tombstone Lifecycle</td>
 </tr>
 <tr>
-  <td style="text-align:left">ReplicationNeighborOption</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ReplicationNeighborOption</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceInvocationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique Id assigned to a Domain Controller</td>
+<td style="text-align: left;">SourceInvocationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique Id assigned to a Domain Controller</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceServer</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Source Server Name</td>
+<td style="text-align: left;">SourceServer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source Server Name</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSiteName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Source Site Name</td>
+<td style="text-align: left;">SourceSiteName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source Site Name</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time the record was created.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the record was created.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TombstoneLifetime</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Length of time a deleted object persisted in the database</td>
+<td style="text-align: left;">TombstoneLifetime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Length of time a deleted object persisted in the database</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -207,7 +207,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

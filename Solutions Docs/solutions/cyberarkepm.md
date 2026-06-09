@@ -13,7 +13,7 @@
 | **Publisher** | CyberArk Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.cyberark.com/services-support/technical-support-contact/](https://www.cyberark.com/services-support/technical-support-contact/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Identity |
 | **Version** | 3.1.0 |
 | **Author** | CyberArk Business Development - business_development@cyberark.com |
 | **First Published** | 2022-04-10 |

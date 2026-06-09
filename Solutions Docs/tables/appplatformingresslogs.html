@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Azure Resources</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appplatformingresslogs">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appplatformingresslogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,151 +57,151 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">BodyBytesSent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Number of bytes sent to a client, not counting the response header</td>
+<td style="text-align: left;">BodyBytesSent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of bytes sent to a client, not counting the response header</td>
 </tr>
 <tr>
-  <td style="text-align:left">Host</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The host name of the log</td>
+<td style="text-align: left;">Host</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The host name of the log</td>
 </tr>
 <tr>
-  <td style="text-align:left">HttpReferer</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Value of the referer header</td>
+<td style="text-align: left;">HttpReferer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Value of the referer header</td>
 </tr>
 <tr>
-  <td style="text-align:left">HttpUserAgent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Value of user-agent header</td>
+<td style="text-align: left;">HttpUserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Value of user-agent header</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the operation represented by this event</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the operation represented by this event</td>
 </tr>
 <tr>
-  <td style="text-align:left">ProxyAlternativeUpstreamName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the alternative upstream server. The format is upstream-<namespace>-<service name>-<service port></td>
+<td style="text-align: left;">ProxyAlternativeUpstreamName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the alternative upstream server. The format is upstream-<namespace>-<service name>-<service port></td>
 </tr>
 <tr>
-  <td style="text-align:left">ProxyUpstreamName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the upstream server. The format is upstream-<namespace>-<service name>-<service port></td>
+<td style="text-align: left;">ProxyUpstreamName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the upstream server. The format is upstream-<namespace>-<service name>-<service port></td>
 </tr>
 <tr>
-  <td style="text-align:left">RemoteAddr</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The source IP address of the client</td>
+<td style="text-align: left;">RemoteAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The source IP address of the client</td>
 </tr>
 <tr>
-  <td style="text-align:left">RemoteUser</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">User name supplied with the basic authentication</td>
+<td style="text-align: left;">RemoteUser</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">User name supplied with the basic authentication</td>
 </tr>
 <tr>
-  <td style="text-align:left">ReqId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The randomly generated ID of the request</td>
+<td style="text-align: left;">ReqId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The randomly generated ID of the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">Request</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Full original request line</td>
+<td style="text-align: left;">Request</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Full original request line</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestHeaders</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Request headers end with 'id' or 'ID'</td>
+<td style="text-align: left;">RequestHeaders</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request headers end with 'id' or 'ID'</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestLength</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Request length in bytes (including request line, header, and request body)</td>
+<td style="text-align: left;">RequestLength</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request length in bytes (including request line, header, and request body)</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestTime</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Time in seconds with millisecond resolution elapsed since the first bytes were read from the client</td>
+<td style="text-align: left;">RequestTime</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Time in seconds with millisecond resolution elapsed since the first bytes were read from the client</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">Status</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Response status</td>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Response status</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) when the log is collected by Azure Spring Cloud</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) when the log is collected by Azure Spring Cloud</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeLocal</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Local time in the common log format</td>
+<td style="text-align: left;">TimeLocal</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Local time in the common log format</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">UpstreamAddr</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The IP address and port (or the path to the domain socket) of the upstream server. If several servers were contacted during request processing, their addresses are separated by commas</td>
+<td style="text-align: left;">UpstreamAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address and port (or the path to the domain socket) of the upstream server. If several servers were contacted during request processing, their addresses are separated by commas</td>
 </tr>
 <tr>
-  <td style="text-align:left">UpstreamResponseLength</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The length in bytes of the response obtained from the upstream server</td>
+<td style="text-align: left;">UpstreamResponseLength</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The length in bytes of the response obtained from the upstream server</td>
 </tr>
 <tr>
-  <td style="text-align:left">UpstreamResponseTime</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Time spent on receiving the response from the upstream server, the time is kept in seconds with millisecond resolution</td>
+<td style="text-align: left;">UpstreamResponseTime</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Time spent on receiving the response from the upstream server, the time is kept in seconds with millisecond resolution</td>
 </tr>
 <tr>
-  <td style="text-align:left">UpstreamStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Status code of the response obtained from the upstream server</td>
+<td style="text-align: left;">UpstreamStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status code of the response obtained from the upstream server</td>
 </tr>
 </tbody>
 </table>
@@ -214,7 +214,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

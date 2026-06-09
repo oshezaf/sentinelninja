@@ -15,7 +15,7 @@
 | **Publisher** | Varonis |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varonis.com/resources/support](https://www.varonis.com/resources/support) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.3 |
 | **Author** | Varonis |
 | **First Published** | 2023-11-10 |

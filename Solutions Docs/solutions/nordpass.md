@@ -15,13 +15,13 @@
 | **Publisher** | NordPass |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.nordpass.com/](https://support.nordpass.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Others,Identity |
 | **Version** | 3.0.1 |
 | **Author** | Nord Security Inc. |
 | **First Published** | 2025-04-22 |
 | **Last Updated** | 2026-02-23 |
 | **Solution Folder** | [NordPass](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordPass) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordpass) · Popularity: 🔵 Medium (55%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordpass) · Popularity: 🔵 Medium (60%) |
 
 NordPass for Microsoft Sentinel enables you to automatically transfer Activity Log data from NordPass to Microsoft Sentinel and get real-time insights such as item activity, all login attempts, and security notifications. This allows you to stay informed by setting any needed alerts by your organization to monitor these security events.
 

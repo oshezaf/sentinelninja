@@ -15,7 +15,7 @@
 | **Publisher** | Open Systems |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.open-systems.com/support](https://www.open-systems.com/support) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Security - Network |
 | **Version** | 3.0.0 |
 | **Author** | Open Systems - support@open-systems.com |
 | **First Published** | 2025-05-12 |

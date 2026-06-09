@@ -15,13 +15,13 @@
 | **Publisher** | Trend Micro |
 | **Support Tier** | Partner |
 | **Support Link** | [https://success.trendmicro.com/dcx/s/?language=en_US](https://success.trendmicro.com/dcx/s/?language=en_US) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-11 |
 | **Last Updated** | 2026-05-26 |
 | **Solution Folder** | [Trend Micro Vision One](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Vision%20One) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_vision_one_xdr_mss) · Popularity: 🟡 Low (19%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_vision_one_xdr_mss) · Popularity: ⚪ Very Low (0%) |
 
 The [Trend Vision One](https://www.trendmicro.com/en_us/business/products/detection-response/xdr.html) solution for Microsoft Sentinel enables you to ingest security alerts and detection data reported in the Trend Vision One platform into Microsoft Sentinel.
   

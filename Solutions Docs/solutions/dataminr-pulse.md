@@ -15,13 +15,13 @@
 | **Publisher** | Dataminr Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.dataminr.com/dataminr-support#support](https://www.dataminr.com/dataminr-support#support) |
-| **Categories** | domains |
+| **Categories** | Security - Others,Security - Threat Intelligence,Security - Automation (SOAR) |
 | **Version** | 3.0.5 |
 | **Author** | Dataminr - info@dataminr.com |
 | **First Published** | 2023-04-12 |
 | **Last Updated** | 2023-04-12 |
 | **Solution Folder** | [Dataminr Pulse](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Dataminr%20Pulse) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dataminrinc1648845584891.dataminr_sentinel) · Popularity: 🟡 Low (49%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/dataminrinc1648845584891.dataminr_sentinel) · Popularity: 🟡 Low (48%) |
 
 Dataminr Pulse brings the most advanced AI-powered real-time intelligence into Microsoft Sentinel, easily fitting into your workflows and enabling rapid identification and mitigation of emerging threats so you can deliver faster time to detection and response.
 

@@ -15,7 +15,7 @@
 | **Publisher** | Salem Cyber |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.salemcyber.com/contact](https://www.salemcyber.com/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR),Security - Insider Threat |
 | **Version** | 3.0.0 |
 | **Author** | Salem Cyber - support@salemcyber.com |
 | **First Published** | 2023-07-21 |

@@ -15,7 +15,7 @@
 | **Publisher** | Phosphorus Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://phosphorus.io](https://phosphorus.io) |
-| **Categories** | domains |
+| **Categories** | Application |
 | **Version** | 1.0.0 |
 | **Author** | Phosphorus |
 | **First Published** | 2024-08-13 |

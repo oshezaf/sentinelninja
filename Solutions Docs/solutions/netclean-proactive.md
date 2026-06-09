@@ -13,7 +13,7 @@
 | **Publisher** | NetClean |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netclean.com/contact](https://www.netclean.com/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.2 |
 | **Author** | NetClean Technologies AB |
 | **First Published** | 2022-06-30 |

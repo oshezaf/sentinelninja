@@ -15,7 +15,7 @@
 | **Publisher** | Recorded Future Support Team |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.recordedfuture.com/](https://support.recordedfuture.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Identity |
 | **Version** | 3.1.3 |
 | **Author** | Recorded Future Premier Integrations - support@recordedfuture.com |
 | **First Published** | 2022-09-06 |

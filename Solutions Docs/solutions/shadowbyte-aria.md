@@ -15,7 +15,7 @@
 | **Publisher** | Shadowbyte |
 | **Support Tier** | Partner |
 | **Support Link** | [https://shadowbyte.com/products/aria/](https://shadowbyte.com/products/aria/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 2.0.0 |
 | **Author** | Shadowbyte |
 | **First Published** | 2021-12-24 |

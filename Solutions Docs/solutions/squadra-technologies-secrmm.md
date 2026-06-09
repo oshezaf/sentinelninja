@@ -1,4 +1,6 @@
-# Squadra Technologies SecRmm
+# Squadra Technologies secRMM
+
+*Solution: Squadra Technologies SecRmm*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SquadraTechnologiesLogo.svg" alt="Squadra Technologies SecRmm Logo" width="75" height="75">
 
@@ -13,11 +15,13 @@
 | **Publisher** | Squadra Technologies |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.squadratechnologies.com/Contact.aspx](https://www.squadratechnologies.com/Contact.aspx) |
-| **Categories** | domains |
+| **Categories** | Security - Information Protection,Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Squadra Technologies |
 | **First Published** | 2022-05-09 |
+| **Last Updated** | 2026-01-19 |
 | **Solution Folder** | [Squadra Technologies SecRmm](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Squadra%20Technologies%20SecRmm) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/squadratechnologies.secrmmsentinel) · Popularity: ⚪ Very Low (7%) |
 
 The [Squadra Technologies SecRMM](https://www.squadratechnologies.com/Products/secRMM/secRMMOverview.aspx) solution for Microsoft Sentinel enables you to ingest USB security event data into Microsoft Sentinel.
 

@@ -15,13 +15,13 @@
 | **Publisher** | Illumio |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.illumio.com/support/support](https://www.illumio.com/support/support) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Threat Protection |
 | **Version** | 3.4.0 |
 | **Author** | app-integrations@illumio.com |
 | **First Published** | 2024-05-13 |
 | **Last Updated** | 2026-06-05 |
 | **Solution Folder** | [IllumioSaaS](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illumioinc1629822633689.illumio_sentinel) · Popularity: 🔵 Medium (73%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/illumioinc1629822633689.illumio_sentinel) · Popularity: 🔵 Medium (78%) |
 
 **1. Azure Function App: **
 

@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Azure Resources</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Resources</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfpipelinerun">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adfpipelinerun">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,166 +57,166 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">Annotations</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Annotations</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Category</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">CorrelationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">End</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">End</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ErrorCode</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ErrorCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ErrorMessage</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ErrorMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">EventMessage</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">EventMessage</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">FailureType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">FailureType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Input</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Input</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Level</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Output</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Output</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Parameters</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Parameters</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">PipelineName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">PipelineName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Predecessors</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Predecessors</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">RunId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">RunId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">Start</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Start</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Status</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Status</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemParameters</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">SystemParameters</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Tags</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserProperties</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">UserProperties</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -229,7 +229,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

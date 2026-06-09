@@ -15,7 +15,7 @@
 | **Publisher** | Onapsis |
 | **Support Tier** | Partner |
 | **Support Link** | [https://onapsis.com/company/contact-us](https://onapsis.com/company/contact-us) |
-| **Categories** | domains |
+| **Categories** | Security - Vulnerability Management |
 | **Version** | 3.0.0 |
 | **Author** | Onapsis |
 | **First Published** | 2022-05-11 |

@@ -15,12 +15,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Cloud Provider |
 | **Version** | 2.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-24 |
 | **Solution Folder** | [Azure Data Lake Storage Gen1](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Data%20Lake%20Storage%20Gen1) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-datalakestoragegen1) · Popularity: 🟢 High (94%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-datalakestoragegen1) · Popularity: 🟢 High (95%) |
 
 The [Azure Data Lake Storage Gen1](https://docs.microsoft.com/azure/data-lake-store/data-lake-store-overview) solution for Microsoft Sentinel enables you to ingest Azure Data Lake Storage Gen1 diagnostics logs using Diagnostic Settings into Microsoft Sentinel.
 

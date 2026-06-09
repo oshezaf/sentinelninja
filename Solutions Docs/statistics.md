@@ -40,8 +40,8 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Published | Unpublished ⚠️ |
 |:-------|------:|----------:|------------:|
-| Solutions | **531** | 470 | 61 |
-| With Connectors | **346** | 302 | 44 |
+| Solutions | **531** | 471 | 60 |
+| With Connectors | **346** | 304 | 42 |
 | With Content | **418** | 374 | 44 |
 
 ### Support Ownership
@@ -49,10 +49,10 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | Support Tier | Total | Published | Unpublished ⚠️ |
 |:-------------|------:|----------:|------------:|
 | Microsoft | **243** | 227 | 16 |
-| Partner | **259** | 225 | 34 |
+| Partner | **259** | 226 | 33 |
 | Community | **11** | 11 | 0 |
 | Unknown | **18** | 7 | 11 |
-| **Total** | **531** | **470** | **61** |
+| **Total** | **531** | **471** | **60** |
 
 ### Other Metrics
 
@@ -69,27 +69,27 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 
 | Metric | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------|------:|-------:|-----------:|------------:|
-| In Solutions | **496** | 415 | 42 | 39 |
+| In Solutions | **496** | 433 | 42 | 21 |
 | Discovered 🔍 | **130** | 0 | 109 | 21 |
-| **Total** | **626** | **415** | **151** | **60** |
+| **Total** | **626** | **433** | **151** | **42** |
 
 ### Support Ownership
 
 | Support Tier | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
 | Microsoft | **264** | 158 | 95 | 11 |
-| Partner | **340** | 247 | 48 | 45 |
+| Partner | **340** | 265 | 48 | 27 |
 | Community | **18** | 10 | 8 | 0 |
 | Unknown | **4** | 0 | 0 | 4 |
-| **Total** | **626** | **415** | **151** | **60** |
+| **Total** | **626** | **433** | **151** | **42** |
 
 ### Collection Methods
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-----------------|------:|-------:|-----------:|------------:|
-| [CCF](methods/ccf.md) | **177** | 147 | 1 | 29 |
+| [CCF](methods/ccf.md) | **177** | 164 | 1 | 12 |
 | [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
-| [Azure Function](methods/azure-function.md) | **125** | 89 | 26 | 10 |
+| [Azure Function](methods/azure-function.md) | **125** | 90 | 26 | 9 |
 | [REST Pull API](methods/rest-pull-api.md) | **50** | 42 | 1 | 7 |
 | [CCF Push](methods/ccf-push.md) | **39** | 38 | 0 | 1 |
 | [Native](methods/native.md) | **18** | 18 | 0 | 0 |
@@ -98,7 +98,7 @@ This page provides comprehensive statistics across all Microsoft Sentinel soluti
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **626** | **415** | **151** | **60** |
+| **Total** | **626** | **433** | **151** | **42** |
 
 ### Collection Methods by Support Tier
 
@@ -106,9 +106,9 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 
 | Collection Method | Microsoft | Partner | Community | Unknown |
 |:-----------------|:---------:|:---------:|:---------:|:---------:|
-| [CCF](methods/ccf.md) | 74 / 1 / 5 / **80** | 73 / 0 / 24 / **97** | - | - |
+| [CCF](methods/ccf.md) | 74 / 1 / 5 / **80** | 90 / 0 / 7 / **97** | - | - |
 | [AMA](methods/ama.md) | 16 / 73 / 2 / **91** | 16 / 41 / 4 / **61** | 4 / 8 / 0 / **12** | 0 / 0 / 2 / **2** |
-| [Azure Function](methods/azure-function.md) | 15 / 21 / 2 / **38** | 73 / 5 / 8 / **86** | 1 / 0 / 0 / **1** | - |
+| [Azure Function](methods/azure-function.md) | 15 / 21 / 2 / **38** | 74 / 5 / 7 / **86** | 1 / 0 / 0 / **1** | - |
 | [REST Pull API](methods/rest-pull-api.md) | 1 / 0 / 2 / **3** | 37 / 1 / 5 / **43** | 4 / 0 / 0 / **4** | - |
 | [CCF Push](methods/ccf-push.md) | - | 38 / 0 / 1 / **39** | - | - |
 | [Native](methods/native.md) | 18 / 0 / 0 / **18** | - | - | - |
@@ -117,7 +117,7 @@ Each cell shows: Active / Deprecated / Unpublished / **Total**
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | 1 / 0 / 0 / **1** | 9 / 1 / 3 / **13** | 1 / 0 / 0 / **1** | - |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | - | 1 / 0 / 0 / **1** | - | - |
 | [MMA](methods/mma.md) | 1 / 0 / 0 / **1** | - | - | - |
-| **Total** | 158 / 95 / 11 / **264** | 247 / 48 / 45 / **340** | 10 / 8 / 0 / **18** | 0 / 0 / 4 / **4** |
+| **Total** | 158 / 95 / 11 / **264** | 265 / 48 / 27 / **340** | 10 / 8 / 0 / **18** | 0 / 0 / 4 / **4** |
 
 ### CCF Capabilities
 
@@ -171,10 +171,10 @@ API-based connectors use one of two APIs to send data to the workspace:
 
 | Ingestion API | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:-------------|------:|-------:|-----------:|------------:|
-| [Log Ingestion API](methods/log-ingestion-api.md) | **90** | 86 | 0 | 4 |
+| [Log Ingestion API](methods/log-ingestion-api.md) | **90** | 87 | 0 | 3 |
 | [HTTP Data Collector API](methods/http-data-collector-api.md) | **124** | 84 | 27 | 13 |
 | [Undetermined](methods/undetermined.md) | **3** | 1 | 0 | 2 |
-| **Total** | **237** | **187** | **28** | **22** |
+| **Total** | **237** | **188** | **28** | **21** |
 
 **By Collection Method:**
 
@@ -276,7 +276,7 @@ Tables with schema information, by schema source. A single table may have schema
 
 | Metric | Total | 📦 In Solution | 📦 Discovered | 📦 Unpublished | 📄 Standalone | 🔗 GitHub Only |
 |:-------|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
-| **Content Items** | **6,680** | 4,804 | 100 | 174 | 486 | 1,290 |
+| **Content Items** | **6,680** | 4,804 | 100 | 185 | 486 | 1,290 |
 
 ### Content Items by Type
 
@@ -284,9 +284,9 @@ Tables with schema information, by schema source. A single table may have schema
 |:-----|------:|---------------:|--------------:|---------------:|--------------:|---------------:|
 | Analytic Rules | 2,268 | 2,079 | 19 | 75 | 158 | 12 |
 | Hunting Queries | 2,366 | 1,175 | 14 | 9 | 131 | 1,046 |
-| Playbooks | 875 | 610 | 38 | 50 | 190 | 37 |
-| Workbooks | 567 | 369 | 9 | 23 | 0 | 189 |
-| Parsers* | 530 | 510 | 20 | 17 | 0 | 0 |
+| Playbooks | 875 | 610 | 38 | 61 | 190 | 37 |
+| Workbooks | 567 | 369 | 9 | 24 | 0 | 189 |
+| Parsers* | 530 | 510 | 20 | 16 | 0 | 0 |
 | Watchlists | 49 | 43 | 0 | 0 | 0 | 6 |
 | Summary Rules | 25 | 18 | 0 | 0 | 7 | 0 |
 

@@ -15,7 +15,7 @@
 | **Publisher** | SOCRadar |
 | **Support Tier** | Partner |
 | **Support Link** | [https://github.com/Radargoger/azure-one-click-documentations/blob/main/azureincidents.md](https://github.com/Radargoger/azure-one-click-documentations/blob/main/azureincidents.md) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | SOCRadar - integration@socradar.io |
 | **First Published** | 2026-02-08 |

@@ -13,7 +13,7 @@
 | **Publisher** | Community |
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security |
 | **Version** | 3.0.3 |
 | **Author** | Forcepoint |
 | **First Published** | 2022-05-10 |

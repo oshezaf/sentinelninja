@@ -1,6 +1,4 @@
-# ⚠️ ZeroFox Threat Intelligence
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+# ZeroFox Threat Intelligence
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/foxy-mark.svg" alt="ZeroFox Threat Intelligence Logo" width="75" height="75">
 
@@ -15,7 +13,7 @@
 | **Publisher** | ZeroFox |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zerofox.com/contact-us/](https://www.zerofox.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | ZeroFox - integration-support@zerofox.com |
 | **First Published** | 2026-02-18 |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/microsoft-entra-id-protection.html">Microsoft Entra ID Protection</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-entra-id-protection.html">Microsoft Entra ID Protection</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,146 +47,67 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuread.html"><code>azuread</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuread.html"><code>azuread</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azureadip.html"><code>azureadip</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">5</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureadip.html"><code>azureadip</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">5</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">5</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuread"><a href="../logic-apps/managed-azuread.html"><code>azuread</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_user</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/v1.0/users/@{encodeURIComponent(concat(string(item()?['Name']), '@', string(item()?['UPNSuffix'])))}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="azureadip"><a href="../logic-apps/managed-azureadip.html"><code>azureadip</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_risky_user</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/beta/riskyUsers/@{encodeURIComponent(body('Get_user')?['id'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Confirm_a_risky_user_as_compromised</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/beta/riskyUsers/confirmCompromised</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_risky_user_2</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/beta/riskyUsers/@{encodeURIComponent(body('Get_risky_user')?['id'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Dismiss_a_risky_user</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/beta/riskyUsers/dismiss</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_risky_user_3</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/beta/riskyUsers/@{encodeURIComponent(body('Get_risky_user')?['id'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_Accounts</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/account</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Update_incident_2</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Update_incident</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuread`](../logic-apps/managed-azuread.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_user | get | `/v1.0/users/@{encodeURIComponent(concat(string(item()?['Name']), '@', string(item()?['UPNSuffix'])))}` | — |
+
+#### [`azureadip`](../logic-apps/managed-azureadip.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_risky_user | get | `/beta/riskyUsers/@{encodeURIComponent(body('Get_user')?['id'])}` | — |
+| Confirm_a_risky_user_as_compromised | post | `/beta/riskyUsers/confirmCompromised` | — |
+| Get_risky_user_2 | get | `/beta/riskyUsers/@{encodeURIComponent(body('Get_risky_user')?['id'])}` | — |
+| Dismiss_a_risky_user | post | `/beta/riskyUsers/dismiss` | — |
+| Get_risky_user_3 | get | `/beta/riskyUsers/@{encodeURIComponent(body('Get_risky_user')?['id'])}` | — |
+
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Accounts | post | `/entities/account` | — |
+| Update_incident_2 | put | `/Incidents` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -208,80 +129,72 @@
 </ol>
 <h2 id="deployment">Deployment</h2>
 <h3 id="quick-deployment">Quick Deployment</h3>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%20Entra%20ID%20Protection%2FPlaybooks%2FIdentityProtection-TeamsBotResponse%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%20Entra%20ID%20Protection%2FPlaybooks%2FIdentityProtection-TeamsBotResponse%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%20Entra%20ID%20Protection%2FPlaybooks%2FIdentityProtection-TeamsBotResponse%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%20Entra%20ID%20Protection%2FPlaybooks%2FIdentityProtection-TeamsBotResponse%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <h2 id="post-deployment-instructions">Post Deployment Instructions</h2>
 <ol>
-<li><p><strong>Authorize Connections</strong>:</p>
-<ul>
-<li>Navigate to the Microsoft Sentinel connection resource in the Azure portal.</li>
-<li>Click &quot;Edit API connection&quot;.</li>
-<li>Click &quot;Authorize&quot; and sign in.</li>
-<li>Click &quot;Save&quot;.</li>
-<li>Repeat these steps for all connections.</li>
-</ul>
+<li>
+<p><strong>Authorize Connections</strong>:
+   - Navigate to the Microsoft Sentinel connection resource in the Azure portal.
+   - Click "Edit API connection".
+   - Click "Authorize" and sign in.
+   - Click "Save".
+   - Repeat these steps for all connections.</p>
 </li>
-<li><p><strong>Assign Microsoft Sentinel Responder Role</strong>:</p>
+<li>
+<p><strong>Assign Microsoft Sentinel Responder Role</strong>:
+   - Assign the Microsoft Sentinel Responder role to the playbook's managed identity:</p>
 <ul>
-<li>Assign the Microsoft Sentinel Responder role to the playbook's managed identity:<ul>
 <li>Select the playbook resource in the Azure portal.</li>
-<li>In the left menu, click &quot;Identity&quot;.</li>
-<li>Under &quot;Permissions&quot;, click &quot;Azure role assignments&quot;.</li>
-<li>Click &quot;Add role assignment&quot;.</li>
+<li>In the left menu, click "Identity".</li>
+<li>Under "Permissions", click "Azure role assignments".</li>
+<li>Click "Add role assignment".</li>
 <li>Use the drop-down lists to select the resource group containing your Sentinel Workspace.</li>
-<li>In the &quot;Role&quot; drop-down list, select &quot;Microsoft Sentinel Responder&quot;.</li>
-<li>Click &quot;Save&quot; to assign the role.</li>
+<li>In the "Role" drop-down list, select "Microsoft Sentinel Responder".</li>
+<li>Click "Save" to assign the role.</li>
 </ul>
 </li>
-</ul>
-</li>
-<li><p><strong>Attach Playbook to Automation Rule</strong>:</p>
+<li>
+<p><strong>Attach Playbook to Automation Rule</strong>:
+   - Create an automation rule in Microsoft Sentinel to run the playbook automatically:</p>
 <ul>
-<li>Create an automation rule in Microsoft Sentinel to run the playbook automatically:<ul>
-<li>In Microsoft Sentinel, go to &quot;Automation &gt; Automation rules&quot;.</li>
-<li>Click &quot;+ Add new&quot; to create a new automation rule.</li>
+<li>In Microsoft Sentinel, go to "Automation &gt; Automation rules".</li>
+<li>Click "+ Add new" to create a new automation rule.</li>
 <li>Set the rule conditions (e.g., when an alert/incident is created, or based on alert/incident details).</li>
-<li>In the &quot;Actions&quot; section, select &quot;Run playbook&quot; and choose your playbook.</li>
+<li>In the "Actions" section, select "Run playbook" and choose your playbook.</li>
 <li>Save the automation rule.</li>
-</ul>
-</li>
 </ul>
 </li>
 </ol>
 <h2 id="steps-to-obtain-microsoft-teams-group-id-and-channel-id">Steps to Obtain Microsoft Teams Group ID and Channel ID</h2>
 <ol>
-<li><p><strong>Obtain the Group ID</strong>:</p>
-<ul>
-<li>Open Microsoft Teams and navigate to the desired team.</li>
-<li>Click on the three dots (ellipsis) next to the team name and select &quot;Manage team&quot;.</li>
-<li>In the browser, open the Microsoft Graph Explorer tool: <a href="https://developer.microsoft.com/en-us/graph/graph-explorer">Graph Explorer</a>.</li>
-<li>Run the following query to list all teams:<pre><code>GET https://graph.microsoft.com/v1.0/me/joinedTeams
-</code></pre>
+<li>
+<p><strong>Obtain the Group ID</strong>:
+   - Open Microsoft Teams and navigate to the desired team.
+   - Click on the three dots (ellipsis) next to the team name and select "Manage team".
+   - In the browser, open the Microsoft Graph Explorer tool: <a href="https://developer.microsoft.com/en-us/graph/graph-explorer">Graph Explorer</a>.
+   - Run the following query to list all teams:
+     <code>GET https://graph.microsoft.com/v1.0/me/joinedTeams</code>
+   - Locate the desired team in the response and copy its <code>id</code> field. This is the Group ID.</p>
 </li>
-<li>Locate the desired team in the response and copy its <code>id</code> field. This is the Group ID.</li>
-</ul>
-</li>
-<li><p><strong>Obtain the Channel ID</strong>:</p>
-<ul>
-<li>Navigate to the desired channel within the team.</li>
-<li>Click on the three dots (ellipsis) next to the channel name and select &quot;Get link to channel&quot;.</li>
-<li>Copy the URL provided. It will look like:<pre><code>https://teams.microsoft.com/l/channel/&lt;ChannelID&gt;/&lt;ChannelName&gt;?groupId=&lt;GroupID&gt;&amp;tenantId=&lt;TenantID&gt;
-</code></pre>
-</li>
-<li>Extract the <code>&lt;ChannelID&gt;</code> from the URL. This is the Channel ID.</li>
-</ul>
+<li>
+<p><strong>Obtain the Channel ID</strong>:
+   - Navigate to the desired channel within the team.
+   - Click on the three dots (ellipsis) next to the channel name and select "Get link to channel".
+   - Copy the URL provided. It will look like:
+     <code>https://teams.microsoft.com/l/channel/&lt;ChannelID&gt;/&lt;ChannelName&gt;?groupId=&lt;GroupID&gt;&amp;tenantId=&lt;TenantID&gt;</code>
+   - Extract the <code>&lt;ChannelID&gt;</code> from the URL. This is the Channel ID.</p>
 </li>
 </ol>
 <p>Ensure you have the necessary permissions to access Microsoft Graph API and Teams resources.</p>
 <h2 id="screenshots">Screenshots</h2>
 <h3 id="overall">Overall</h3>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/images/ImageLight1.png" alt="Overall" /></p>
+<p><img alt="Overall" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Entra%20ID%20Protection/Playbooks/IdentityProtection-TeamsBotResponse/images/ImageLight1.png" /></p>
 <h3 id="card-sent-by-microsoft-teams-bot">Card Sent by Microsoft Teams Bot</h3>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/microsoft-entra-id-protection.html">Back to Microsoft Entra ID Protection</a></p>
-
 </div>
 
 </body>

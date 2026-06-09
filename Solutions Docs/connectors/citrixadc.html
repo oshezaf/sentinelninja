@@ -18,42 +18,39 @@
 <h1 id="deprecated-citrix-adc">🚫 🔍 [Deprecated] Citrix ADC (former NetScaler)</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
-</blockquote>
-<blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/citrix-logo-circle-black.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Connector ID</strong></td>
-  <td style="text-align:left"><code>CitrixADC</code></td>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>CitrixADC</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Citrix</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Citrix</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Used in Solutions</strong></td>
-  <td style="text-align:left"><a href="../solutions/citrix-adc.html">Citrix ADC</a></td>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/citrix-adc.html">Citrix ADC</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC/Data%20Connectors/Connector_CitrixADC_syslog.json">Connector_CitrixADC_syslog.json</a></td>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC/Data%20Connectors/Connector_CitrixADC_syslog.json">Connector_CitrixADC_syslog.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -63,18 +60,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
@@ -82,30 +79,16 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): write permission is required.</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): write permission is required.</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
-</blockquote>
-<blockquote>
-<p><strong>NOTE:</strong> 1. This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias CitrixADCEvent and load the function code or click <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC/Parsers/CitrixADCEvent.yaml">here</a>, this function maps Citrix ADC (former NetScaler) events to Advanced Security Information Model <a href="https://docs.microsoft.com/azure/sentinel/normalization">ASIM</a>. The function usually takes 10-15 minutes to activate after solution installation/update.</p>
-</blockquote>
-<blockquote>
-<p><strong>NOTE:</strong> 2. This parser requires a watchlist named <strong><code>Sources_by_SourceType</code></strong></p>
-</blockquote>
-<blockquote>
-<p>i. If you don't have watchlist already created, please click <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FASIM%2Fdeploy%2FWatchlists%2FASimSourceType.json">here</a> to create.</p>
-</blockquote>
-<blockquote>
+<p><strong>NOTE:</strong> 1. This data connector depends on a parser based on a Kusto Function to work as expected which is deployed as part of the solution. To view the function code in Log Analytics, open Log Analytics/Microsoft Sentinel Logs blade, click Functions and search for the alias CitrixADCEvent and load the function code or click <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Citrix%20ADC/Parsers/CitrixADCEvent.yaml">here</a>, this function maps Citrix ADC (former NetScaler) events to Advanced Security Information Model <a href="https://docs.microsoft.com/azure/sentinel/normalization">ASIM</a>. The function usually takes 10-15 minutes to activate after solution installation/update. </p>
+<p><strong>NOTE:</strong> 2. This parser requires a watchlist named <strong><code>Sources_by_SourceType</code></strong> </p>
+<p>i. If you don't have watchlist already created, please click <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FASIM%2Fdeploy%2FWatchlists%2FASimSourceType.json">here</a> to create. </p>
 <p>ii. Open watchlist <strong><code>Sources_by_SourceType</code></strong> and add entries for this data source.</p>
-</blockquote>
-<blockquote>
-<p>iii. The SourceType value for CitrixADC is <strong><code>CitrixADC</code></strong>.</p>
-</blockquote>
-<blockquote>
+<p>iii. The SourceType value for CitrixADC is <strong><code>CitrixADC</code></strong>. </p>
 <p>You can refer <a href="https://learn.microsoft.com/en-us/azure/sentinel/normalization-manage-parsers?WT.mc_id=Portal-fx#configure-the-sources-relevant-to-a-source-specific-parser">this</a> documentation for more details</p>
 </blockquote>
 <p><strong>1. Install and onboard the agent for Linux</strong></p>
@@ -115,25 +98,17 @@
 <strong>Choose where to install the agent:</strong></p>
 </blockquote>
 <p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
-<p>Select the machine to install the agent on and then click <strong>Connect</strong>.</p>
-<ul>
-<li><strong>Install agent on Linux Virtual Machine</strong></li>
-</ul>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
 <p><strong>Install agent on a non-Azure Linux Machine</strong></p>
-<p>Download the agent on the relevant machine and follow the instructions.</p>
-<ul>
-<li><strong>Install agent on Linux (Non-Azure)</strong></li>
-</ul>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
 <p><strong>2. Configure the logs to be collected</strong></p>
-<p>Configure the facilities you want to collect and their severities.</p>
-<ol>
-<li>Under workspace advanced settings <strong>Configuration</strong>, select <strong>Data</strong> and then <strong>Syslog</strong>.</li>
-<li>Select <strong>Apply below configuration to my machines</strong> and select the facilities and severities.</li>
-<li>Click <strong>Save</strong>.</li>
-</ol>
-<ul>
-<li><strong>Open Syslog settings</strong></li>
-</ul>
+<p>Configure the facilities you want to collect and their severities.
+ 1. Under workspace advanced settings <strong>Configuration</strong>, select <strong>Data</strong> and then <strong>Syslog</strong>.
+ 2. Select <strong>Apply below configuration to my machines</strong> and select the facilities and severities.
+ 3.  Click <strong>Save</strong>.
+- <strong>Open Syslog settings</strong></p>
 <p><strong>3. Configure Citrix ADC to forward logs via Syslog</strong></p>
 <p>3.1 Navigate to <strong>Configuration tab &gt; System &gt; Auditing &gt; Syslog &gt; Servers tab</strong></p>
 <p>3.2 Specify <strong>Syslog action name</strong>.</p>
@@ -148,7 +123,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

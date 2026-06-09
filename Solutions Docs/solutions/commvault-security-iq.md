@@ -15,7 +15,7 @@
 | **Publisher** | Commvault |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.commvault.com/support](https://www.commvault.com/support) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR) |
 | **Version** | 3.0.4 |
 | **Author** | svc.cv-securityiq@commvault.com |
 | **First Published** | 2023-08-17 |

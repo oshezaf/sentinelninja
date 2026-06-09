@@ -15,13 +15,13 @@
 | **Publisher** | Cisco Systems |
 | **Support Tier** | Partner |
 | **Support Link** | [https://globalcontacts.cloudapps.cisco.com/contacts/contactDetails/en_US/c1o1-c2o2-c3o8](https://globalcontacts.cloudapps.cisco.com/contacts/contactDetails/en_US/c1o1-c2o2-c3o8) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Automation (SOAR) |
 | **Version** | 2.0.0 |
 | **Author** | Cisco Systems - support@cisco.com |
 | **First Published** | 2023-06-01 |
 | **Last Updated** | 2024-06-01 |
 | **Solution Folder** | [Cisco SD-WAN](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20SD-WAN) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-catalyst-sdwan-sentinel) · Popularity: 🔵 Medium (56%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/cisco.cisco-catalyst-sdwan-sentinel) · Popularity: 🔵 Medium (58%) |
 
 The [Cisco SD-WAN](https://www.cisco.com/c/en_in/solutions/enterprise-networks/sd-wan/index.html) solution for Microsoft Sentinel enables you to ingest Syslog and Netflow logs into Microsoft Sentinel, providing insight into network threats and vulnerabilities.
  

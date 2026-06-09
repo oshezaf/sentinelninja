@@ -15,12 +15,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | DevOps |
 | **Version** | 2.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-06-01 |
 | **Solution Folder** | [Azure kubernetes Service](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20kubernetes%20Service) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekubernetes) · Popularity: 🟢 High (81%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-azurekubernetes) · Popularity: 🔵 Medium (75%) |
 
 The [Azure Kubernetes Services (AKS)](https://docs.microsoft.com/azure/aks/?WT.mc_id=Portal-fx) solution allows you to ingest AKS activity logs using Diagnostic Setting into Microsoft Sentinel.
 

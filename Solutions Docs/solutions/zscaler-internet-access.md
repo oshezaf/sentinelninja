@@ -1,4 +1,6 @@
-# Zscaler Internet Access
+# Zscaler Internet Access CCF
+
+*Solution: Zscaler Internet Access*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ZscalerLogo.svg" alt="Zscaler Internet Access Logo" width="75" height="75">
 
@@ -13,12 +15,13 @@
 | **Publisher** | Zscaler |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zscaler.com/support/](https://www.zscaler.com/support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Security - Automation (SOAR) |
 | **Version** | 3.0.4 |
 | **Author** | Zscaler |
 | **First Published** | 2022-10-10 |
-| **Last Updated** | 2025-09-02 |
+| **Last Updated** | 2026-06-02 |
 | **Solution Folder** | [Zscaler Internet Access](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zscaler1579058425289.zscaler_zia) · Popularity: ⚪ Very Low (0%) |
 
 The [Zscaler Internet Access](https://www.zscaler.com/products-and-solutions/zscaler-internet-access) solution for Microsoft Sentinel enables you to ingest [Zscaler Internet Access Logs](https://help.zscaler.com/zia/nanolog-streaming-service) into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
 

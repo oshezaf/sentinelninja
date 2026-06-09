@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.html">Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.html">Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-enrichment/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-enrichment/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,79 +47,48 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-fortiweb.html"><code>fortiweb</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-fortiweb.html"><code>fortiweb</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/custom-fortiwebcloud.html"><code>FortiWebCloud</code></a></td>
-  <td style="text-align:left">Custom</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/custom-fortiwebcloud.html"><code>FortiWebCloud</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="fortiweb"><a href="../logic-apps/managed-fortiweb.html"><code>fortiweb</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_Attack_Log_Detail</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs/@{encodeURIComponent(items('For_each_2')?['msg_id'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Attack_Logs_List</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`fortiweb`](../logic-apps/managed-fortiweb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Attack_Log_Detail | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs/@{encodeURIComponent(items('For_each_2')?['msg_id'])}` | — |
+| Get_Attack_Logs_List | get | `/v1/application/@{encodeURIComponent(parameters('ep_id'))}/attack_logs` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -127,14 +96,12 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Fortinet%20FortiWeb%20Cloud%20WAF-as-a-Service%20connector%20for%20Microsoft%20Sentinel/Playbooks/FortiWebPlaybooks/FortiWeb-enrichment/readme.md">FortiWebPlaybooks/FortiWeb-enrichment/readme.md</a></em></p>
 </blockquote>
 <h1 id="fortiweb-enrichment-info-playbook">FortiWeb-enrichment Info Playbook</h1>
-<h2 id="summary">Summary</h2>
-<p>When a new Microosft Sentinel incident is created, this playbook gets triggered and performs below actions</p>
-<ol>
-<li>Fetches the list of Ip's from incident entites .</li>
-<li>Make the APi call to get the latest threat information/details from cloud console and update the same incidents comments with result.
-<img src="https://user-images.githubusercontent.com/97503740/184323073-d3d7e6eb-f40e-42e1-8d2b-ef7f9550e646.png" alt="image" />
-<img src="https://user-images.githubusercontent.com/97503740/184323351-310a1d97-a541-4204-aa65-06069e5decbe.png" alt="image" /></li>
-</ol>
+<p>## Summary
+ When a new Microosft Sentinel incident is created, this playbook gets triggered and performs below actions
+ 1. Fetches the list of Ip's from incident entites .
+ 2. Make the APi call to get the latest threat information/details from cloud console and update the same incidents comments with result.
+ <img alt="image" src="https://user-images.githubusercontent.com/97503740/184323073-d3d7e6eb-f40e-42e1-8d2b-ef7f9550e646.png" />
+<img alt="image" src="https://user-images.githubusercontent.com/97503740/184323351-310a1d97-a541-4204-aa65-06069e5decbe.png" /></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>FortiWeb Cloud Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
@@ -142,11 +109,13 @@
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li><p>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deplyoing an ARM Template wizard.
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFortiWebCloud%2FPlaybooks%2FFortiWebPlaybooks%2FFortiWeb-encrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFortiWebCloud%2FPlaybooks%2F%2FFortiWebPlaybooks%2FFortiWeb-encrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<li>
+<p>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deplyoing an ARM Template wizard.
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFortiWebCloud%2FPlaybooks%2FFortiWebPlaybooks%2FFortiWeb-encrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFortiWebCloud%2FPlaybooks%2F%2FFortiWebPlaybooks%2FFortiWeb-encrichment%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 </li>
-<li><p>Fill in the required paramteres:</p>
+<li>
+<p>Fill in the required paramteres:</p>
 <ul>
 <li>Playbook Name: Enter the playbook name here (Ex: FortiWeb-BlockIP-URL)</li>
 <li>Custom Connector Name: Enter the FortiWeb custom connector name here (Ex: FortiWebCloud)</li>
@@ -155,24 +124,21 @@
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection.</p>
-<ol>
-<li>Click the Microosft Sentinel connection resource</li>
-<li>Click edit API connection</li>
-<li>Click Authorize</li>
-<li>Sign in</li>
-<li>Click Save</li>
-<li>Repeat steps for Fortiweb Api  Connection (For authorizing the Fortiweb API connection, API Key needs to be provided)</li>
-</ol>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microosft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat steps for Fortiweb Api  Connection (For authorizing the Fortiweb API connection, API Key needs to be provided)</p>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
-<li>In Microosft Sentinel analytical rules should be configured to trigger an incident with risky URL or IP Address.</li>
+<li>In Microosft Sentinel analytical rules should be configured to trigger an incident with risky URL or IP Address. </li>
 <li>Configure the automation rules to trigger this playbook , mapping of IP and URL entities is necessary</li>
 </ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/fortinet-fortiweb-cloud-waf-as-a-service-connector-for-microsoft-sentinel.html">Back to Fortinet FortiWeb Cloud WAF-as-a-Service connector for Microsoft Sentinel</a></p>
-
 </div>
 
 </body>

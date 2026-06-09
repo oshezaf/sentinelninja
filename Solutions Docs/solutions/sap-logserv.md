@@ -15,13 +15,13 @@
 | **Publisher** | SAP |
 | **Support Tier** | Partner |
 | **Support Link** | [https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/announcing-limited-preview-of-sap-logserv-integration-with-microsoft/ba-p/13942180](https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/announcing-limited-preview-of-sap-logserv-integration-with-microsoft/ba-p/13942180) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Identity,Application,Cloud Provider |
 | **Version** | 3.0.3 |
 | **Author** | SAP |
 | **First Published** | 2025-02-17 |
 | **Last Updated** | 2025-07-18 |
 | **Solution Folder** | [SAP LogServ](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP%20LogServ) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sap_jasondau.azure-sentinel-solution-saplogserv) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sap_jasondau.azure-sentinel-solution-saplogserv) · Popularity: 🟢 High (88%) |
 
 SAP LogServ provides the SAP RISE logs to Microsoft Sentinel, allowing SOC teams to ingest, monitor, and hunt across SAP data. This integration enhances security by enabling faster detection, investigation, and mitigation of risks within SAP RISE environments.
 

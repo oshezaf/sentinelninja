@@ -15,7 +15,7 @@
 | **Publisher** | Orange Cyberdefense |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.orangecyberdefense.com/global/contact](https://www.orangecyberdefense.com/global/contact) |
-| **Categories** | domains,verticals |
+| **Categories** | Security - Threat Intelligence,Security - Threat Protection,Aeronautics,Education,Finance,Healthcare,Manufacturing,Retail |
 | **Version** | 3.0.0 |
 | **Author** | OrangeCyberdefense |
 | **First Published** | 2024-01-15 |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.html">NCSC-NL NDN Cyber Threat Intelligence Sharing</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.html">NCSC-NL NDN Cyber Threat Intelligence Sharing</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing/Playbooks/NCSCNLShareSTIXBundle/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NCSC-NL%20NDN%20Cyber%20Threat%20Intelligence%20Sharing/Playbooks/NCSCNLShareSTIXBundle/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,60 +47,32 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">HTTP_POST_stix_bundle_to_TAXII_using_api_key</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('TAXIIServer RootURL')}/collections/@{parameters('Collection ID')}/objects/</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">HTTP_POST_stix_bundle_to_TAXII_using_username-password</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('TAXIIServer RootURL')}/collections/@{parameters('Collection ID')}/objects/</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">HTTP_appendTags_request</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>[uriComponentToString(uri(variables('azure'), 'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/indicators/@{items(''For_each_filtered_indicator'')?[''name'']}/appendTags?api-version=2021-10-01'))]</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">HTTP_queryIndicators_request</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>[uriComponentToString(uri(variables('azure'),'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/queryIndicators?api-version=2022-06-01-preview'))]</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_POST_stix_bundle_to_TAXII_using_api_key | POST | `@{parameters('TAXIIServer RootURL')}/collections/@{parameters('Collection ID')}/objects/` | — |
+| HTTP_POST_stix_bundle_to_TAXII_using_username-password | POST | `@{parameters('TAXIIServer RootURL')}/collections/@{parameters('Collection ID')}/objects/` | — |
+| HTTP_appendTags_request | POST | `[uriComponentToString(uri(variables('azure'), 'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/indicators/@{items(''For_each_filtered_indicator'')?[''name'']}/appendTags?api-version=2021-10-01'))]` | — |
+| HTTP_queryIndicators_request | POST | `[uriComponentToString(uri(variables('azure'),'subscriptions/@{parameters(''SubscriptionID'')}/resourceGroups/@{parameters(''ResourceGroup'')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters(''Workspace'')}/providers/Microsoft.SecurityInsights/threatIntelligence/main/queryIndicators?api-version=2022-06-01-preview'))]` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -146,7 +118,7 @@
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNCSC-NL%2520NDN%2520Cyber%2520Threat%2520Intelligence%2520Sharing%2FPlaybooks%2FNCSCNLShareSTIXBundle%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FNCSC-NL%2520NDN%2520Cyber%2520Threat%2520Intelligence%2520Sharing%2FPlaybooks%2FNCSCNLShareSTIXBundle%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-playbook-to-access-log-analytics-workspace">a. Authorize Playbook to access Log Analytics Workspace</h4>
 <p>Once deployment is complete, assign playbook Log Analytics contributor role.</p>
@@ -155,12 +127,12 @@
 <li>Select Access control (IAM) tab</li>
 <li>Add role assignments</li>
 <li>Select Contributor role</li>
-<li>In the Members tab choose &quot;Assign access to&quot; Managed Identity</li>
-<li>Click on &quot;Select members&quot;</li>
-<li>Provide correct Subscription and Managed Identity</li>
-<li>Provide the playbook name in &quot;Search by name&quot; textbox</li>
+<li>In the Members tab choose "Assign access to" Managed Identity</li>
+<li>Click on "Select members"</li>
+<li>Provide correct Subscription and Managed Identity </li>
+<li>Provide the playbook name in "Search by name" textbox</li>
 <li>Select the correct identity and click on Select</li>
-<li>Click on &quot;Review + assign&quot;</li>
+<li>Click on "Review + assign" </li>
 </ol>
 <h1 id="references">References</h1>
 <ul>
@@ -170,7 +142,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ncsc-nl-ndn-cyber-threat-intelligence-sharing.html">Back to NCSC-NL NDN Cyber Threat Intelligence Sharing</a></p>
-
 </div>
 
 </body>

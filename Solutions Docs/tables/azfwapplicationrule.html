@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Security</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwapplicationrule">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwapplicationrule">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -70,126 +70,126 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">Action</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Action taken by the firewall following the Application rule hit.</td>
+<td style="text-align: left;">Action</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Action taken by the firewall following the Application rule hit.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ActionReason</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">When no rule is triggered for a request, this field contains the reason for the action performed by the firewall. For example: a packet dropped because no rule matched will showDefault Action.</td>
+<td style="text-align: left;">ActionReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">When no rule is triggered for a request, this field contains the reason for the action performed by the firewall. For example: a packet dropped because no rule matched will showDefault Action.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestinationPort</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Request's destination port.</td>
+<td style="text-align: left;">DestinationPort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Request's destination port.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Fqdn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Request's target address in FQDN (Fully qualified Domain Name). For example:www.microsoft.com.</td>
+<td style="text-align: left;">Fqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request's target address in FQDN (Fully qualified Domain Name). For example:www.microsoft.com.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsExplicitProxyRequest</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">True if the request is received on an explicit proxy port. False otherwise.</td>
+<td style="text-align: left;">IsExplicitProxyRequest</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">True if the request is received on an explicit proxy port. False otherwise.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsTlsInspected</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">True if the connection is TLS inspected. False otherwise.</td>
+<td style="text-align: left;">IsTlsInspected</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">True if the connection is TLS inspected. False otherwise.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Policy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the policy in which the triggered rule resides.</td>
+<td style="text-align: left;">Policy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the policy in which the triggered rule resides.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Protocol</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Request's network protocol. For example: HTTP, HTTPS.</td>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request's network protocol. For example: HTTP, HTTPS.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Rule</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the triggered rule.</td>
+<td style="text-align: left;">Rule</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the triggered rule.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RuleCollection</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the rule collection in which the triggered rule resides.</td>
+<td style="text-align: left;">RuleCollection</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the rule collection in which the triggered rule resides.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RuleCollectionGroup</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the rule collection group in which the triggered rule resides.</td>
+<td style="text-align: left;">RuleCollectionGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the rule collection group in which the triggered rule resides.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceIp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Request's source IP address.</td>
+<td style="text-align: left;">SourceIp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request's source IP address.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourcePort</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Request's source port.</td>
+<td style="text-align: left;">SourcePort</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Request's source port.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TargetUrl</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Request's target address URL. Available only for HTTP or TLS-inspected HTTPS requests. For example:https://www.microsoft.com/en-us/about.</td>
+<td style="text-align: left;">TargetUrl</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Request's target address URL. Available only for HTTP or TLS-inspected HTTPS requests. For example:https://www.microsoft.com/en-us/about.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp (UTC) when the data plane log was created.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp (UTC) when the data plane log was created.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">WebCategory</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Web Category identified for the requested FQDN (Azure Firewall Standard) or URL (Azure Firewall Premium). If a web category is not available for this request, the field is empty.</td>
+<td style="text-align: left;">WebCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Web Category identified for the requested FQDN (Azure Firewall Standard) or URL (Azure Firewall Premium). If a web category is not available for this request, the field is empty.</td>
 </tr>
 </tbody>
 </table>
@@ -204,14 +204,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/azurefirewall.html">Azure Firewall</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/azurefirewall.html">Azure Firewall</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -222,30 +222,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.html">Abnormal Deny Rate for Source IP</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-abnormal-deny-rate-for-source-ip-d36bb1e3-5abc-4037-ad9a-24ba3469819e-bcaa208f.html">Abnormal Deny Rate for Source IP</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.html">Abnormal Port to Protocol</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-abnormal-port-to-protocol-826f930c-2f25-4508-8e75-a95b809a4e15-f673b591.html">Abnormal Port to Protocol</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.html">Port Scan</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-port-scan-b2c5907b-1040-4692-9802-9946031017e8-a6887f4e.html">Port Scan</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.html">Port Sweep</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-port-sweep-720335f4-ee8c-4270-9424-d0859222168c-d77c9cf0.html">Port Sweep</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.html">Several deny actions registered</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-several-deny-actions-registered-f8dad4e9-3f19-4d70-ab7f-8f19ccd43a3e-e192f460.html">Several deny actions registered</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -253,14 +253,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.html">TI map IP entity to AzureFirewall</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azurefirewall-4992d2f3-d6c0-4271-adac-b23532ba4492-965a60e9.html">TI map IP entity to AzureFirewall</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -269,30 +269,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a-b6cf8086.html">First Time Source IP to Destination</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-first-time-source-ip-to-destination-f055e82b-5ef6-4395-bc9e-99f7e451343a-b6cf8086.html">First Time Source IP to Destination</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562-850b4356.html">First Time Source IP to Destination Using Port</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-first-time-source-ip-to-destination-using-port-932fe71a-7a8c-4f35-bf88-321ab68ff562-850b4356.html">First Time Source IP to Destination Using Port</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.html">Source IP Abnormally Connects to Multiple Destinations</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-source-ip-abnormally-connects-to-multiple-destinations-d006f4f8-86bb-4c9d-9826-837762ddad6b-ec41bab6.html">Source IP Abnormally Connects to Multiple Destinations</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.html">Uncommon Port for Organization</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-uncommon-port-for-organization-8812a547-13e6-4d0c-b38d-476fb7351c52-f68ddc3e.html">Uncommon Port for Organization</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.html">Uncommon Port to IP</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-uncommon-port-to-ip-3d93fa57-53e5-4d5e-96d4-ad734a8df3a4-582e485f.html">Uncommon Port to IP</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -301,14 +301,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.html">AzureFirewallWorkbook-StructuredLogs</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.html">AzureFirewallWorkbook-StructuredLogs</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -317,18 +317,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Parser</th>
-  <th style="text-align:left">Schema</th>
-  <th style="text-align:left">Product</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../asim/asimwebsessionazurefirewall.html">ASimWebSessionAzureFirewall</a></td>
-  <td style="text-align:left">WebSession</td>
-  <td style="text-align:left">Azure Firewall</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../asim/asimwebsessionazurefirewall.html">ASimWebSessionAzureFirewall</a></td>
+<td style="text-align: left;">WebSession</td>
+<td style="text-align: left;">Azure Firewall</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -340,7 +340,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

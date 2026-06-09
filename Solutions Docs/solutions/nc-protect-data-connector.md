@@ -15,7 +15,7 @@
 | **Publisher** | archTIS |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.archtis.com/nc-protect-support/](https://www.archtis.com/nc-protect-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Information Protection |
 | **Version** | 3.0.0 |
 | **Author** | archTIS |
 | **First Published** | 2021-10-20 |

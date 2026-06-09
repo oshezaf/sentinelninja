@@ -15,7 +15,7 @@
 | **Publisher** | Anvilogic |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.anvilogic.com/](https://www.anvilogic.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | Anvilogic |
 | **First Published** | 2025-06-20 |

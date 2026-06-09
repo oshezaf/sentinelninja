@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/zscaler-internet-access.html">Zscaler Internet Access</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2UnblacklistURL/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zscaler%20Internet%20Access/Playbooks/Oauth2UnblacklistURL/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,98 +47,59 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel-1.html"><code>azuresentinel_1</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel-1.html"><code>azuresentinel_1</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel_1"><a href="../logic-apps/managed-azuresentinel-1.html"><code>azuresentinel_1</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_URLs</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/url</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">HTTP</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>https://api.zsapi.net/zia/api/v1/security/advanced/blacklistUrls?action=REMOVE_FROM_LIST</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Zscaler-Oauth2-Authentication</td>
-  <td style="text-align:left">—</td>
-  <td style="text-align:left">—</td>
-  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/Zscaler-Oauth2-Authentication')]</code><br>triggerName=<code>manual</code></td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel_1`](../logic-apps/managed-azuresentinel-1.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_URLs | post | `/entities/url` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP | POST | `https://api.zsapi.net/zia/api/v1/security/advanced/blacklistUrls?action=REMOVE_FROM_LIST` | — |
+
+#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Zscaler-Oauth2-Authentication | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Logic/workflows/Zscaler-Oauth2-Authentication')]`<br>triggerName=`manual` |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -166,50 +127,46 @@
 </ol>
 <h2 id="deployment">Deployment</h2>
 <p>Click the button below to deploy the Zscaler-Oauth2-UnblacklistURL playbook to your Azure environment:</p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FZscaler%2520Internet%2520Access%2FPlaybooks%2FOauth2UnblacklistURL%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FZscaler%2520Internet%2520Access%2FPlaybooks%2FOauth2UnblacklistURL%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
 <h2 id="post-deployment-configuration">Post-Deployment Configuration</h2>
 <p>After deployment, complete the following steps:</p>
 <ol>
-<li><p><strong>Authorize API Connections</strong></p>
-<ul>
-<li>Navigate to the Logic App in the Azure portal</li>
-<li>Go to API connections and authorize the Microsoft Sentinel connection</li>
-<li>Ensure the managed identity has appropriate permissions</li>
-</ul>
+<li>
+<p><strong>Authorize API Connections</strong>
+   - Navigate to the Logic App in the Azure portal
+   - Go to API connections and authorize the Microsoft Sentinel connection
+   - Ensure the managed identity has appropriate permissions</p>
 </li>
-<li><p><strong>Grant Required Permissions</strong></p>
-<ul>
-<li>Assign the Logic App managed identity the &quot;Microsoft Sentinel Responder&quot; role on your workspace</li>
-<li>Verify the Zscaler-Oauth2-Authentication playbook is deployed and accessible</li>
-</ul>
+<li>
+<p><strong>Grant Required Permissions</strong>
+   - Assign the Logic App managed identity the "Microsoft Sentinel Responder" role on your workspace
+   - Verify the Zscaler-Oauth2-Authentication playbook is deployed and accessible</p>
 </li>
-<li><p><strong>Configure Zscaler API URL</strong> (Optional)</p>
-<ul>
-<li>The default Base URL is &quot;zsapi.zscaler.net/api/v1&quot;</li>
-<li>To change, edit the playbook and update the &quot;Define_Base_URL&quot; action</li>
-</ul>
+<li>
+<p><strong>Configure Zscaler API URL</strong> (Optional)
+   - The default Base URL is "zsapi.zscaler.net/api/v1"
+   - To change, edit the playbook and update the "Define_Base_URL" action</p>
 </li>
-<li><p><strong>Configure Automation Rules</strong></p>
-<ul>
-<li>Create automation rules in Microsoft Sentinel to trigger this playbook</li>
-<li>Configure rules to run on incidents containing URL entities that need to be unblocked</li>
-</ul>
+<li>
+<p><strong>Configure Automation Rules</strong>
+   - Create automation rules in Microsoft Sentinel to trigger this playbook
+   - Configure rules to run on incidents containing URL entities that need to be unblocked</p>
 </li>
 </ol>
 <h2 id="parameters">Parameters</h2>
 <table>
 <thead>
 <tr>
-  <th>Parameter</th>
-  <th>Description</th>
-  <th>Default Value</th>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>PlaybookName</td>
-  <td>Name of the Logic App</td>
-  <td>Zscaler-Oauth2-UnblacklistURL</td>
+<td>PlaybookName</td>
+<td>Name of the Logic App</td>
+<td>Zscaler-Oauth2-UnblacklistURL</td>
 </tr>
 </tbody>
 </table>
@@ -236,7 +193,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/zscaler-internet-access.html">Back to Zscaler Internet Access</a></p>
-
 </div>
 
 </body>

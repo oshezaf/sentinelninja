@@ -25,38 +25,38 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">AWS</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">AWS</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsguardduty">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/awsguardduty">View Documentation</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -72,106 +72,106 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">AccountId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The AWS account ID of the owner of the source network interface for which traffic is recorded. If the network interface is created by an AWS service, for example when creating a VPC endpoint or Network Load Balancer, the record may display unknown for this field.</td>
+<td style="text-align: left;">AccountId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AWS account ID of the owner of the source network interface for which traffic is recorded. If the network interface is created by an AWS service, for example when creating a VPC endpoint or Network Load Balancer, the record may display unknown for this field.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ActivityType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A formatted string representing the type of activity that triggered the finding.</td>
+<td style="text-align: left;">ActivityType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A formatted string representing the type of activity that triggered the finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Arn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Amazon resource name of the finding.</td>
+<td style="text-align: left;">Arn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Amazon resource name of the finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Description</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Description of the primary purpose of the threat or attack related to the finding.</td>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Description of the primary purpose of the threat or attack related to the finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Id</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique Finding ID for this finding type and set of parameters. New occurrences of activity matching this pattern will be aggregated to the same ID.</td>
+<td style="text-align: left;">Id</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique Finding ID for this finding type and set of parameters. New occurrences of activity matching this pattern will be aggregated to the same ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Partition</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The AWS partition in which the finding was generated.</td>
+<td style="text-align: left;">Partition</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AWS partition in which the finding was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Region</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The AWS region in which the finding was generated.</td>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The AWS region in which the finding was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceDetails</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Gives details on the AWS resource that was targeted by the trigger activity. The information available varies based on resource type and action typ.</td>
+<td style="text-align: left;">ResourceDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Gives details on the AWS resource that was targeted by the trigger activity. The information available varies based on resource type and action typ.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SchemaVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Guard Duty finding version.</td>
+<td style="text-align: left;">SchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Guard Duty finding version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceDetails</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Gives details on the AWS service that was related to the finding, including Action, Actor/Target, Evidence, Anomalous behavior and Additional information.</td>
+<td style="text-align: left;">ServiceDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Gives details on the AWS service that was related to the finding, including Action, Actor/Target, Evidence, Anomalous behavior and Additional information.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Severity</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">A finding's assigned severity level of either High, Medium, or Low.</td>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">A finding's assigned severity level of either High, Medium, or Low.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeCreated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The time and date when this finding was first created. If this value differs from Updated at (TimeGenerated), it indicates that the activity has occurred multiple times and is an ongoing issue.</td>
+<td style="text-align: left;">TimeCreated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time and date when this finding was first created. If this value differs from Updated at (TimeGenerated), it indicates that the activity has occurred multiple times and is an ongoing issue.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) of when the event was generated, The last time this finding was updated with new activity matching the pattern that prompted GuardDuty to generate this finding.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of when the event was generated, The last time this finding was updated with new activity matching the pattern that prompted GuardDuty to generate this finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Title</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Summary of the primary purpose of the threat or attack related to the finding.</td>
+<td style="text-align: left;">Title</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Summary of the primary purpose of the threat or attack related to the finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -187,14 +187,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/awss3.html">Amazon Web Services S3</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/awss3.html">Amazon Web Services S3</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -205,14 +205,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/amazon-web-services-awsguardduty-guardduty-alert-bf0cde21-0c41-48f6-a40c-6b5bd71fa106-e00c6b5a.html">AWSGuardDuty - GuardDuty Alert</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/amazon-web-services-awsguardduty-guardduty-alert-bf0cde21-0c41-48f6-a40c-6b5bd71fa106-e00c6b5a.html">AWSGuardDuty - GuardDuty Alert</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -220,22 +220,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-compute-resource-creation-i-5c847e47-0a07-4c01-ab99-5817ad6cb11e-be6ace2e.html">Cross-Cloud Suspicious Compute resource creation in GCP</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-compute-resource-creation-i-5c847e47-0a07-4c01-ab99-5817ad6cb11e-be6ace2e.html">Cross-Cloud Suspicious Compute resource creation in GCP</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-unauthorized-credential-access-detecti-122fbc6a-57ab-4aa7-b9a9-51ac4970cac1-bb7f7aa6.html">Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-unauthorized-credential-access-detecti-122fbc6a-57ab-4aa7-b9a9-51ac4970cac1-bb7f7aa6.html">Cross-Cloud Unauthorized Credential Access Detection From AWS RDS Login</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b-6d3ff85e.html">Unauthorized user access across AWS and Azure</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/multi-cloud-attack-coverage-essentials-resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b-6d3ff85e.html">Unauthorized user access across AWS and Azure</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -244,21 +244,20 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

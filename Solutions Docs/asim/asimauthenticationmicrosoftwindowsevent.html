@@ -23,50 +23,50 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Property</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Property</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Parser Name</strong></td>
-  <td style="text-align:left"><code>ASimAuthenticationMicrosoftWindowsEvent</code></td>
+<td style="text-align: left;"><strong>Parser Name</strong></td>
+<td style="text-align: left;"><code>ASimAuthenticationMicrosoftWindowsEvent</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Built-in Parser</strong></td>
-  <td style="text-align:left"><code>_ASim_Authentication_MicrosoftWindowsEvent</code></td>
+<td style="text-align: left;"><strong>Built-in Parser</strong></td>
+<td style="text-align: left;"><code>_ASim_Authentication_MicrosoftWindowsEvent</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Schema</strong></td>
-  <td style="text-align:left">Authentication</td>
+<td style="text-align: left;"><strong>Schema</strong></td>
+<td style="text-align: left;">Authentication</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Schema Version</strong></td>
-  <td style="text-align:left">0.1.3</td>
+<td style="text-align: left;"><strong>Schema Version</strong></td>
+<td style="text-align: left;">0.1.3</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Parser Type</strong></td>
-  <td style="text-align:left">🔌 Source (product-specific)</td>
+<td style="text-align: left;"><strong>Parser Type</strong></td>
+<td style="text-align: left;">🔌 Source (product-specific)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Product</strong></td>
-  <td style="text-align:left">Windows Security Events</td>
+<td style="text-align: left;"><strong>Product</strong></td>
+<td style="text-align: left;">Windows Security Events</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Parser Version</strong></td>
-  <td style="text-align:left">0.2.1 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationMicrosoftWindowsEvent.md">version history</a>)</td>
+<td style="text-align: left;"><strong>Parser Version</strong></td>
+<td style="text-align: left;">0.2.1 (<a href="https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAuthentication/CHANGELOG/ASimAuthenticationMicrosoftWindowsEvent.md">version history</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">Oct 15, 2024</td>
+<td style="text-align: left;"><strong>Last Updated</strong></td>
+<td style="text-align: left;">Oct 15, 2024</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Unifying Parser</strong></td>
-  <td style="text-align:left"><a href="asimauthentication.html">ASimAuthentication</a></td>
+<td style="text-align: left;"><strong>Unifying Parser</strong></td>
+<td style="text-align: left;"><a href="asimauthentication.html">ASimAuthentication</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source File</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationMicrosoftWindowsEvent.yaml">Parsers\ASimAuthentication\Parsers\ASimAuthenticationMicrosoftWindowsEvent.yaml</a></td>
+<td style="text-align: left;"><strong>Source File</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAuthentication/Parsers/ASimAuthenticationMicrosoftWindowsEvent.yaml">Parsers\ASimAuthentication\Parsers\ASimAuthenticationMicrosoftWindowsEvent.yaml</a></td>
 </tr>
 </tbody>
 </table>
@@ -77,27 +77,27 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-  <td style="text-align:left"></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+<td style="text-align: left;"></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
-  <td style="text-align:left"><code>EventID in &quot;4624,4625,4634&quot;</code><br><code>Provider == &quot;Microsoft-Windows-Security-Auditing&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/windowsevent.html"><code>WindowsEvent</code></a></td>
+<td style="text-align: left;"><code>EventID in "4624,4625,4634"</code><br><code>Provider == "Microsoft-Windows-Security-Auditing"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
@@ -105,16 +105,16 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Default</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Default</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>disabled</code></td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">False</td>
+<td style="text-align: left;"><code>disabled</code></td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">False</td>
 </tr>
 </tbody>
 </table>
@@ -123,26 +123,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Solution</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Solution</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html">ESI-Opt34DomainControllersSecurityEventLogs</a></td>
-  <td style="text-align:left"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
+<td style="text-align: left;"><a href="../connectors/esi-opt34domaincontrollerssecurityeventlogs.html">ESI-Opt34DomainControllersSecurityEventLogs</a></td>
+<td style="text-align: left;"><a href="../solutions/microsoft-exchange-security-exchange-on-premises.html">Microsoft Exchange Security - Exchange On-Premises</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../connectors/securityevents.html">SecurityEvents</a></td>
-  <td style="text-align:left"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="../connectors/securityevents.html">SecurityEvents</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../connectors/windowsforwardedevents.html">WindowsForwardedEvents</a></td>
-  <td style="text-align:left"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
+<td style="text-align: left;"><a href="../connectors/windowsforwardedevents.html">WindowsForwardedEvents</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-forwarded-events.html">Windows Forwarded Events</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a></td>
-  <td style="text-align:left"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
+<td style="text-align: left;"><a href="../connectors/windowssecurityevents.html">WindowsSecurityEvents</a></td>
+<td style="text-align: left;"><a href="../solutions/windows-security-events.html">Windows Security Events</a></td>
 </tr>
 </tbody>
 </table>
@@ -155,7 +155,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <strong>ASIM Parsers</strong> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#asim">Back to ASIM Index</a></p>
-
 </div>
 
 </body>

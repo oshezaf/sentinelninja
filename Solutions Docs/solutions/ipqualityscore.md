@@ -15,7 +15,7 @@
 | **Publisher** | IPQS Plugins Team |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.ipqualityscore.com/contact-us](https://www.ipqualityscore.com/contact-us) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 2.0.0 |
 | **Author** | IPQualityScore (IPQS) - integrations@ipqualityscore.com |
 | **First Published** | 2021-10-20 |

@@ -15,13 +15,13 @@
 | **Publisher** | Bitwarden Inc |
 | **Support Tier** | Partner |
 | **Support Link** | [https://bitwarden.com](https://bitwarden.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Security - Information Protection |
 | **Version** | 3.0.0 |
 | **Author** | Bitwarden - hello@bitwarden.com |
 | **First Published** | 2024-05-12 |
 | **Last Updated** | 2024-10-02 |
 | **Solution Folder** | [Bitwarden](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Bitwarden) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/8bit-solutions-llc.bitwarden-sentinel-integration) · Popularity: 🟢 High (86%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/8bit-solutions-llc.bitwarden-sentinel-integration) · Popularity: 🟢 High (87%) |
 
 This application provides insight into activity of your Bitwarden organization such as user's activity (logged in, changed password, 2fa, etc.), cipher activity (created, updated, deleted, shared, etc.), collection activity, organization activity, and more.
 

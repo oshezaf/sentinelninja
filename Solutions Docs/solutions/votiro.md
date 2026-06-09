@@ -15,7 +15,7 @@
 | **Publisher** | Votiro |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.votiro.com/](https://support.votiro.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.0.1 |
 | **Author** | Votiro - support@votiro.com |
 | **Solution Folder** | [Votiro](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Votiro) |

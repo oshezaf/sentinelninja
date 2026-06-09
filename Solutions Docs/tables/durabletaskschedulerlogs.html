@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Audit, Azure Resources</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/durabletaskschedulerlogs">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/durabletaskschedulerlogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,121 +53,121 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">env_dt_spanId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The span ID for distributed tracing within the Durable Task Scheduler environment</td>
+<td style="text-align: left;">env_dt_spanId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The span ID for distributed tracing within the Durable Task Scheduler environment</td>
 </tr>
 <tr>
-  <td style="text-align:left">env_dt_traceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique trace identifier used for distributed tracing across the Durable Task Scheduler environment to correlate related log entries and operations.</td>
+<td style="text-align: left;">env_dt_traceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique trace identifier used for distributed tracing across the Durable Task Scheduler environment to correlate related log entries and operations.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Fqdn</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The fqdn of the Durable Task Scheduler generating this log.</td>
+<td style="text-align: left;">Fqdn</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The fqdn of the Durable Task Scheduler generating this log.</td>
 </tr>
 <tr>
-  <td style="text-align:left">InstanceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier of the orchestration instance generating this log entry</td>
+<td style="text-align: left;">InstanceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier of the orchestration instance generating this log entry</td>
 </tr>
 <tr>
-  <td style="text-align:left">Level</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The severity level of the log entry (Information, Warning, Error, Critical, Debug, Trace)</td>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The severity level of the log entry (Information, Warning, Error, Critical, Debug, Trace)</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The location of the Durable Task Scheduler generating this log.</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The location of the Durable Task Scheduler generating this log.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Log</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The log generated by the user's Durable Task Scheduler.</td>
+<td style="text-align: left;">Log</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The log generated by the user's Durable Task Scheduler.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the operation generating this log.</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the operation generating this log.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RuntimeStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The current execution state of the orchestration instance (Pending, Running, Completed, Failed, etc.)</td>
+<td style="text-align: left;">RuntimeStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The current execution state of the orchestration instance (Pending, Running, Completed, Failed, etc.)</td>
 </tr>
 <tr>
-  <td style="text-align:left">Scheduler</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the Durable Task Scheduler generating this log.</td>
+<td style="text-align: left;">Scheduler</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the Durable Task Scheduler generating this log.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Sku</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The SKU of the Durable Task Scheduler generating this log.</td>
+<td style="text-align: left;">Sku</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The SKU of the Durable Task Scheduler generating this log.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TaskHub</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the TaskHub generating this log.</td>
+<td style="text-align: left;">TaskHub</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the TaskHub generating this log.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Time (UTC) when the log was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Time (UTC) when the log was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">UserAgent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The client application or SDK version information that initiated the orchestration request</td>
+<td style="text-align: left;">UserAgent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The client application or SDK version information that initiated the orchestration request</td>
 </tr>
 <tr>
-  <td style="text-align:left">WorkerId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identifier of the worker node or process handling the orchestration execution</td>
+<td style="text-align: left;">WorkerId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier of the worker node or process handling the orchestration execution</td>
 </tr>
 </tbody>
 </table>
@@ -180,7 +180,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

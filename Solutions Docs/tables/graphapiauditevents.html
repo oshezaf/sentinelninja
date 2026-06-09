@@ -28,22 +28,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">XDR</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">XDR</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-graphapiauditevents-table">View Documentation</a></td>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-graphapiauditevents-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -52,111 +52,111 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">AccountObjectId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the account making the request</td>
+<td style="text-align: left;">AccountObjectId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the account making the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">ApiVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The API version of the event</td>
+<td style="text-align: left;">ApiVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The API version of the event</td>
 </tr>
 <tr>
-  <td style="text-align:left">ApplicationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the application</td>
+<td style="text-align: left;">ApplicationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the application</td>
 </tr>
 <tr>
-  <td style="text-align:left">ClientRequestId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Identifier for the client request sent; if none is available, the operation identifier is used instead</td>
+<td style="text-align: left;">ClientRequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for the client request sent; if none is available, the operation identifier is used instead</td>
 </tr>
 <tr>
-  <td style="text-align:left">EntityType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of object, such as a file, a process, a device, or a user, that made the request</td>
+<td style="text-align: left;">EntityType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of object, such as a file, a process, a device, or a user, that made the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">IdentityProvider</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Identity provider that authenticated the subject of the token</td>
+<td style="text-align: left;">IdentityProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identity provider that authenticated the subject of the token</td>
 </tr>
 <tr>
-  <td style="text-align:left">IPAddress</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The IP address of the client from where the request was made</td>
+<td style="text-align: left;">IPAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The IP address of the client from where the request was made</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the region that served the request</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the region that served the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Identifier for a batch of requests; the same identifier is used for all requests in a batch but if requests are non-batched, the identifier is unique per request</td>
+<td style="text-align: left;">OperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier for a batch of requests; the same identifier is used for all requests in a batch but if requests are non-batched, the identifier is unique per request</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestDuration</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Duration of the request in milliseconds</td>
+<td style="text-align: left;">RequestDuration</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Duration of the request in milliseconds</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier of the request</td>
+<td style="text-align: left;">RequestId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestMethod</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">HTTP method of the request</td>
+<td style="text-align: left;">RequestMethod</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP method of the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">RequestUri</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Uniform resource identifier (URI) of the request</td>
+<td style="text-align: left;">RequestUri</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Uniform resource identifier (URI) of the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseSize</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">The size of the response in bytes</td>
+<td style="text-align: left;">ResponseSize</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">The size of the response in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseStatusCode</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">HTTP response status code for the request</td>
+<td style="text-align: left;">ResponseStatusCode</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">HTTP response status code for the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">Scopes</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Scopes in token claims</td>
+<td style="text-align: left;">Scopes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Scopes in token claims</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServicePrincipalId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The identifier for the Service Principal making the request</td>
+<td style="text-align: left;">ServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The identifier for the Service Principal making the request</td>
 </tr>
 <tr>
-  <td style="text-align:left">TargetWorkload</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The target workload (for example, Microsoft.Exchange, Microsoft.SharePoint) the API call was made to</td>
+<td style="text-align: left;">TargetWorkload</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The target workload (for example, Microsoft.Exchange, Microsoft.SharePoint) the API call was made to</td>
 </tr>
 <tr>
-  <td style="text-align:left">Timestamp</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Date and time when the request was recorded</td>
+<td style="text-align: left;">Timestamp</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date and time when the request was recorded</td>
 </tr>
 <tr>
-  <td style="text-align:left">UniqueTokenIdentifier</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier embedded in every access token and ID token that were issued</td>
+<td style="text-align: left;">UniqueTokenIdentifier</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier embedded in every access token and ID token that were issued</td>
 </tr>
 </tbody>
 </table>
@@ -164,7 +164,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

@@ -23,46 +23,46 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Analytic Rule</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Analytic Rule</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/web-shells-threat-protection.html">Web Shells Threat Protection</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>ID</strong></td>
-  <td style="text-align:left"><code>2acc91c3-17c2-4388-938e-4eac2d5894e8</code></td>
+<td style="text-align: left;"><strong>ID</strong></td>
+<td style="text-align: left;"><code>2acc91c3-17c2-4388-938e-4eac2d5894e8</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Severity</strong></td>
-  <td style="text-align:left">High</td>
+<td style="text-align: left;"><strong>Severity</strong></td>
+<td style="text-align: left;">High</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Kind</strong></td>
-  <td style="text-align:left">Scheduled</td>
+<td style="text-align: left;"><strong>Kind</strong></td>
+<td style="text-align: left;">Scheduled</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Tactics</strong></td>
-  <td style="text-align:left">Persistence, CommandAndControl</td>
+<td style="text-align: left;"><strong>Tactics</strong></td>
+<td style="text-align: left;">Persistence, CommandAndControl</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Techniques</strong></td>
-  <td style="text-align:left">T1505, T1071</td>
+<td style="text-align: left;"><strong>Techniques</strong></td>
+<td style="text-align: left;">T1505, T1071</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Required Connectors</strong></td>
-  <td style="text-align:left"><a href="../connectors/azuremonitor-iis.html">AzureMonitor(IIS)</a></td>
+<td style="text-align: left;"><strong>Required Connectors</strong></td>
+<td style="text-align: left;"><a href="../connectors/azuremonitor-iis.html">AzureMonitor(IIS)</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection/Analytic%20Rules/Supernovawebshell.yaml">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Web%20Shells%20Threat%20Protection/Analytic%20Rules/Supernovawebshell.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,27 +71,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
-  <td style="text-align:left"><code>csMethod == &quot;GET&quot;</code><br><code>csUriQuery contains &quot;args&quot;</code><br><code>csUriQuery contains &quot;clazz&quot;</code><br><code>csUriQuery contains &quot;codes&quot;</code><br><code>csUriQuery contains &quot;method&quot;</code><br><code>csUriStem contains &quot;logoimagehandler.ashx&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✗</td>
+<td style="text-align: left;"><a href="../tables/w3ciislog.html"><code>W3CIISLog</code></a></td>
+<td style="text-align: left;"><code>csMethod == "GET"</code><br><code>csUriQuery contains "args"</code><br><code>csUriQuery contains "clazz"</code><br><code>csUriQuery contains "codes"</code><br><code>csUriQuery contains "method"</code><br><code>csUriStem contains "logoimagehandler.ashx"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✗</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/web-shells-threat-protection.html">Back to Web Shells Threat Protection</a></p>
-
 </div>
 
 </body>

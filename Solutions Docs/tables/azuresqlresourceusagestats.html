@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Workloads</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Workloads</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlresourceusagestats">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azuresqlresourceusagestats">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,111 +53,111 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">avg_cpu_percent</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Average CPU percentage.</td>
+<td style="text-align: left;">avg_cpu_percent</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Average CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Category</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Log category.</td>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Log category.</td>
 </tr>
 <tr>
-  <td style="text-align:left">io_bytes_read</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">IO bytes read.</td>
+<td style="text-align: left;">io_bytes_read</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IO bytes read.</td>
 </tr>
 <tr>
-  <td style="text-align:left">io_bytes_written</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">IO bytes written.</td>
+<td style="text-align: left;">io_bytes_written</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IO bytes written.</td>
 </tr>
 <tr>
-  <td style="text-align:left">io_requests</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Number of IO requests.</td>
+<td style="text-align: left;">io_requests</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Number of IO requests.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Location</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Azure region location.</td>
+<td style="text-align: left;">Location</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Azure region location.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operation name.</td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operation name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">reserved_storage_mb</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Reserved storage in MB.</td>
+<td style="text-align: left;">reserved_storage_mb</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Reserved storage in MB.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceGroup</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Resource group.</td>
+<td style="text-align: left;">ResourceGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource group.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SKU</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service tier SKU.</td>
+<td style="text-align: left;">SKU</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service tier SKU.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">storage_space_used_mb</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Storage space used in MB.</td>
+<td style="text-align: left;">storage_space_used_mb</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Storage space used in MB.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp when the log was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the log was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">virtual_core_count</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Virtual core count.</td>
+<td style="text-align: left;">virtual_core_count</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Virtual core count.</td>
 </tr>
 </tbody>
 </table>
@@ -170,7 +170,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

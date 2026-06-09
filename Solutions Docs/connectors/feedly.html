@@ -16,46 +16,45 @@
 </nav>
 <div class="doc-content">
 <h1 id="feedly">Feedly</h1>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Feedly.svg" alt="" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Feedly.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Connector ID</strong></td>
-  <td style="text-align:left"><code>Feedly</code></td>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>Feedly</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Feedly</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Feedly</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Used in Solutions</strong></td>
-  <td style="text-align:left"><a href="../solutions/feedly.html">Feedly</a></td>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/feedly.html">Feedly</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/azure-function.html">Azure Function</a></td>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly/Data%20Connectors/Feedly_API_AzureFunctionApp.json">Feedly_API_AzureFunctionApp.json</a></td>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Feedly/Data%20Connectors/Feedly_API_AzureFunctionApp.json">Feedly_API_AzureFunctionApp.json</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API</strong></td>
-  <td style="text-align:left"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;"><a href="../methods/log-ingestion-api.html">Log Ingestion API</a> — <em>Azure Function code uses LogsIngestionClient/Log Ingestion API</em></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
-  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
+<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
 </tr>
 </tbody>
 </table>
@@ -65,18 +64,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/feedly-indicators-cl.html"><code>feedly_indicators_CL</code></a> 🔶</td>
-  <td style="text-align:center">✗</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✗</td>
+<td style="text-align: left;"><a href="../tables/feedly-indicators-cl.html"><code>feedly_indicators_CL</code></a> 🔶</td>
+<td style="text-align: center;">✗</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✗</td>
 </tr>
 </tbody>
 </table>
@@ -84,22 +83,16 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</li>
-<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
-</ul>
-<p><strong>Custom Permissions:</strong></p>
-<ul>
-<li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
-<li><strong>Azure AD Application Registration</strong>: An Azure AD App Registration with client credentials and permissions to write to the Data Collection Rule. The application must be granted 'Monitoring Metrics Publisher' role on the DCR.</li>
-<li><strong>Data Collection Endpoint and Rule</strong>: A Data Collection Endpoint (DCE) and Data Collection Rule (DCR) must be created before deploying this connector. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/custom-logs-migrate">See the documentation to learn more</a>.</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>Azure AD Application Registration</strong>: An Azure AD App Registration with client credentials and permissions to write to the Data Collection Rule. The application must be granted 'Monitoring Metrics Publisher' role on the DCR.
+- <strong>Data Collection Endpoint and Rule</strong>: A Data Collection Endpoint (DCE) and Data Collection Rule (DCR) must be created before deploying this connector. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/custom-logs-migrate">See the documentation to learn more</a>.</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
-</blockquote>
-<blockquote>
 <p><strong>NOTE:</strong> This connector uses Azure Functions and the Logs Ingestion API to pull IoCs from Feedly into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
 </blockquote>
 <p><strong>1. Step 1 - Prepare Your Environment</strong></p>
@@ -126,52 +119,43 @@
 <p><strong>5. Step 4 - Deploy the connector</strong></p>
 <p>Choose ONE from the following two deployment options to deploy the connector and the associated Azure Function</p>
 <blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying, gather the following information:</p>
+<p><strong>IMPORTANT:</strong> Before deploying, gather the following information:
+- Feedly API Token and Stream IDs</p>
 </blockquote>
-<ul>
-<li>Feedly API Token and Stream IDs</li>
-</ul>
 <p>All Azure Monitor resources (DCE, DCR, custom table, and role assignments) will be created automatically during deployment.
 <strong>Option 1 - Azure Resource Manager (ARM) Template</strong></p>
 <p>Use this method for automated deployment of the Feedly connector.</p>
 <ol>
-<li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
-<p><a href="https://aka.ms/sentinel-Feedly-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
-</li>
-<li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>.</p>
-</li>
-<li><p>Enter the required parameters:</p>
-<ul>
-<li><strong>TableName</strong>: Name for the custom table (default: <code>feedly_indicators_CL</code>)</li>
-<li><strong>FeedlyApiKey</strong>: Your Feedly API token from Step 3</li>
-<li><strong>FeedlyStreamIds</strong>: Comma-separated list of Feedly stream IDs</li>
-<li><strong>DaysToBackfill</strong>: Number of days to backfill (default: 7)</li>
-</ul>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-Feedly-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
+3. Enter the required parameters:
+   - <strong>TableName</strong>: Name for the custom table (default: <code>feedly_indicators_CL</code>)
+   - <strong>FeedlyApiKey</strong>: Your Feedly API token from Step 3
+   - <strong>FeedlyStreamIds</strong>: Comma-separated list of Feedly stream IDs
+   - <strong>DaysToBackfill</strong>: Number of days to backfill (default: 7)</p>
 </li>
 </ol>
 <blockquote>
-<p><strong>Note</strong>: If using Azure Key Vault secrets, use the <code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code> schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details.</p>
+<p><strong>Note</strong>: If using Azure Key Vault secrets, use the <code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code> schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details. 
+4. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>. 
+5. Click <strong>Purchase</strong> to deploy.</p>
 </blockquote>
-<ol start="4">
-<li>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</li>
-<li>Click <strong>Purchase</strong> to deploy.</li>
-</ol>
 <p><strong>Option 2 - Manual Deployment of Azure Functions</strong></p>
 <p>Use the following step-by-step instructions to deploy the Feedly connector manually with Azure Functions (Deployment via Visual Studio Code).
 <strong>1. Deploy a Function App</strong></p>
-<pre><code>**NOTE:** You will need to [prepare VS code](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites) for Azure function development.</code></pre>
+<pre><code>**NOTE:** You will need to [prepare VS code](https://docs.microsoft.com/azure/azure-functions/functions-create-first-function-python#prerequisites) for Azure function development.
+</code></pre>
 <ol>
-<li><p>Download the <a href="https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/Solutions/Feedly/Data%20Connectors/FeedlyAzureFunction.zip">Azure Function App</a> file. Extract archive to your local development computer.</p>
-</li>
-<li><p>Start VS Code. Choose File in the main menu and select Open Folder.</p>
-</li>
-<li><p>Select the top level folder from extracted files.</p>
-</li>
-<li><p>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
+<li>Download the <a href="https://github.com/Azure/Azure-Sentinel/raw/refs/heads/master/Solutions/Feedly/Data%20Connectors/FeedlyAzureFunction.zip">Azure Function App</a> file. Extract archive to your local development computer.</li>
+<li>Start VS Code. Choose File in the main menu and select Open Folder.</li>
+<li>Select the top level folder from extracted files.</li>
+<li>Choose the Azure icon in the Activity bar, then in the <strong>Azure: Functions</strong> area, choose the <strong>Deploy to function app</strong> button.
 If you aren't already signed in, choose the Azure icon in the Activity Bar, then in the <strong>Azure: Functions</strong> area, choose <strong>Sign in to Azure</strong>
-If you're already signed in, go to the next step.</p>
-</li>
-<li><p>Provide the following information at the prompts:</p>
+If you're already signed in, go to the next step.</li>
+<li>
+<p>Provide the following information at the prompts:</p>
 <p>a. <strong>Select folder:</strong> Choose a folder from your workspace or browse to one that contains your function app.</p>
 <p>b. <strong>Select Subscription:</strong> Choose the subscription to use.</p>
 <p>c. Select <strong>Create new Function App in Azure</strong> (Don't choose the Advanced option)</p>
@@ -179,23 +163,25 @@ If you're already signed in, go to the next step.</p>
 <p>e. <strong>Select a runtime:</strong> Choose Python 3.10.</p>
 <p>f. Select a location for new resources. For better performance and lower costs choose the same <a href="https://azure.microsoft.com/regions/">region</a> where Microsoft Sentinel is located.</p>
 </li>
-<li><p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
+<li>
+<p>Deployment will begin. A notification is displayed after your function app is created and the deployment package is applied.</p>
 </li>
-<li><p>Go to Azure Portal for the Function App configuration.</p>
+<li>
+<p>Go to Azure Portal for the Function App configuration.</p>
 <p><strong>2. Configure the Function App</strong></p>
 <ol>
 <li>In the Function App, select the Function App Name and select <strong>Configuration</strong>.</li>
+<li>In the <strong>Application settings</strong> tab, select <strong>New application setting</strong>.</li>
+<li>Add each of the following application settings individually, with their respective values (case-sensitive):<ul>
+<li><code>DataCollectionEndpoint</code>: Will be populated automatically after DCE creation</li>
+<li><code>DcrImmutableId</code>: Will be populated automatically after DCR creation</li>
+<li><code>DcrStreamName</code>: <code>feedly_indicators_CL</code></li>
+<li><code>FeedlyApiKey</code>: Your Feedly API token</li>
+<li><code>FeedlyStreamIds</code>: Comma-separated Feedly stream IDs</li>
+<li><code>DaysToBackfill</code>: Number of days to backfill (e.g., 7)</li>
+</ul>
+</li>
 </ol>
-</li>
-<li><p>In the <strong>Application settings</strong> tab, select <strong>New application setting</strong>.</p>
-</li>
-<li><p>Add each of the following application settings individually, with their respective values (case-sensitive):
-- <code>DataCollectionEndpoint</code>: Will be populated automatically after DCE creation
-- <code>DcrImmutableId</code>: Will be populated automatically after DCR creation
-- <code>DcrStreamName</code>: <code>feedly_indicators_CL</code>
-- <code>FeedlyApiKey</code>: Your Feedly API token
-- <code>FeedlyStreamIds</code>: Comma-separated Feedly stream IDs
-- <code>DaysToBackfill</code>: Number of days to backfill (e.g., 7)</p>
 </li>
 </ol>
 <p><strong>Note</strong>: The Function App uses managed identity for authentication to Azure Monitor, so no Azure AD credentials are needed.</p>
@@ -208,7 +194,6 @@ If you're already signed in, go to the next step.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

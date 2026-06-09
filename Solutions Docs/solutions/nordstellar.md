@@ -15,13 +15,13 @@
 | **Publisher** | NordStellar |
 | **Support Tier** | Partner |
 | **Support Link** | [https://nordstellar.com](https://nordstellar.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Nord Security Inc. - support@nordstellar.com |
 | **First Published** | 2026-05-27 |
 | **Last Updated** | 2026-06-05 |
 | **Solution Folder** | [NordStellar](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NordStellar) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordstellar) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/nordsecurityinc.azure-sentinel-solution-nordstellar) · Popularity: 🔵 Medium (56%) |
 
 The [NordStellar](https://nordstellar.com) solution for Microsoft Sentinel pushes real-time threat intelligence and exposure events from NordStellar's Leaked Data, Dark Web Monitoring, Domain Squatting, and Attack Surface modules into a unified `NordStellar_CL` table using the Codeless Connector Framework (CCF) Push pattern.
 

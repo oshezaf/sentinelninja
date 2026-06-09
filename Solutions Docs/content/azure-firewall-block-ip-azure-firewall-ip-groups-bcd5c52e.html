@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/azure-firewall.html">Azure Firewall</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/azure-firewall.html">Azure Firewall</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,128 +47,64 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-virustotal.html"><code>virustotal</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-virustotal.html"><code>virustotal</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/custom-azurefirewallconnector.html"><code>AzureFirewallConnector</code></a></td>
-  <td style="text-align:left">Custom</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/custom-azurefirewallconnector.html"><code>AzureFirewallConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_IPs</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/ip</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_with_the_Virus_Total_report_and_the_action_taken_</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Update_incident</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="virustotal"><a href="../logic-apps/managed-virustotal.html"><code>virustotal</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Ip_scan_report_V3</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/api/v3/ip_addresses/@{encodeURIComponent(items('For_each_Malicious_IP_Address_Entity_present_in_the_Incident')?['Address'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="azurefirewallconnector"><a href="../logic-apps/custom-azurefirewallconnector.html"><code>AzureFirewallConnector</code></a> (Custom)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Creates_or_updates_an_ipGroups_in_a_specified_resource_group</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Gets_the_specified_ipGroups</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Gets_all_IpGroups_in_a_resource_group</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_with_the_Virus_Total_report_and_the_action_taken_ | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`virustotal`](../logic-apps/managed-virustotal.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Ip_scan_report_V3 | get | `/api/v3/ip_addresses/@{encodeURIComponent(items('For_each_Malicious_IP_Address_Entity_present_in_the_Incident')?['Address'])}` | — |
+
+#### [`AzureFirewallConnector`](../logic-apps/custom-azurefirewallconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Creates_or_updates_an_ipGroups_in_a_specified_resource_group | put | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}` | — |
+| Gets_the_specified_ipGroups | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups/@{encodeURIComponent(body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']?['IPGroupSelectedVal'])}` | — |
+| Gets_all_IpGroups_in_a_resource_group | get | `/subscriptions/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['SubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['workspaceInfo']?['ResourceGroupName'])}/providers/Microsoft.Network/ipGroups` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -176,44 +112,41 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/readme.md">AzureFirewall-BlockIP-addToIPGroup/readme.md</a></em></p>
 </blockquote>
 <h1 id="block-ip-by-adding-ip-address-to-ip-groups">Block IP by adding IP Address to IP Groups</h1>
-<h2 id="summary">Summary</h2>
+<p>## Summary</p>
 <p>This playbook allows blocking/allowing IPs in Azure Firewall, using <strong>IP Groups</strong>. This allows to make changes on IP groups, which are attached to rules, instead of make direct changes on Azure Firewall. It also allows using the same IP group for multiple firewalls.
 <a href="https://docs.microsoft.com/azure/firewall/ip-groups">Learn more about IP Groups in Azure Firewall</a></p>
-<p>When a new Sentinel incident is created,this playbook gets triggered and performs below actions</p>
-<ol>
-<li>An adaptive card is sent to the SOC channel providing IP address, Virus Total report , showing list of existing firewalls in the Resource group and providing an option to add IP Address to IPGroups or Ignore.</li>
-<li>If SOC user confirms yes, the IP Address gets added to IPGroups under IPAddress section and incident will get updates with endpoint information, summary of the action taken and virus total scan report.</li>
-<li>Else, incident will get updates with endpoint information and summary of the action taken.</li>
-<li>Update the firewall tags &quot;configuration&quot; as key and &quot;sentinel&quot; as value.</li>
-</ol>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/designerScreenshotLight.PNG" alt="Add IP Address to IP Groups" /><br></p>
+<p>When a new Sentinel incident is created,this playbook gets triggered and performs below actions
+1.  An adaptive card is sent to the SOC channel providing IP address, Virus Total report , showing list of existing firewalls in the Resource group and providing an option to add IP Address to IPGroups or Ignore.
+2. If SOC user confirms yes, the IP Address gets added to IPGroups under IPAddress section and incident will get updates with endpoint information, summary of the action taken and virus total scan report.
+3. Else, incident will get updates with endpoint information and summary of the action taken. 
+4. Update the firewall tags "configuration" as key and "sentinel" as value.</p>
+<p><img alt="Add IP Address to IP Groups" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/designerScreenshotLight.PNG" /><br></p>
 <p><strong>This is the adaptive card SOC will recieve when playbook is triggered:</strong><br><br>
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/IPGroupsAdaptiveCardDark.png" alt="Adaptive Card example" /></p>
+<img alt="Adaptive Card example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/IPGroupsAdaptiveCardDark.png" /></p>
 <p><strong>Comment example:</strong><br><br>
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/Incident_Comment.png" alt="Comment example" /></p>
+<img alt="Comment example" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Firewall/Playbooks/AzureFirewall-BlockIP-addToIPGroup/images/Incident_Comment.png" /></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
-<li><p>Azure Firewall connector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.</p>
-</li>
-<li><p>Azure Firewall connector need to be authenticated with a Service Principal that has permissions over Azure Firewall. Relevant instructions can be found in the connector doc page.</p>
-</li>
-<li><p>This playbook will query IP Groups that exist in the resource group of Microsoft Sentinel workspace. Make sure to create IP Groups and attach them to Azure Firewall rules prior to running the playbook. You can change the source of the IP groups in the playbook itself after deployment.</p>
-</li>
-<li><p><strong>Permissions required for this playbook</strong>
+<li>Azure Firewall connector needs to be deployed prior to the deployment of this playbook under the same subscription. Relevant instructions can be found in the connector doc page.</li>
+<li>Azure Firewall connector need to be authenticated with a Service Principal that has permissions over Azure Firewall. Relevant instructions can be found in the connector doc page.</li>
+<li>This playbook will query IP Groups that exist in the resource group of Microsoft Sentinel workspace. Make sure to create IP Groups and attach them to Azure Firewall rules prior to running the playbook. You can change the source of the IP groups in the playbook itself after deployment.</li>
+<li>
+<p><strong>Permissions required for this playbook</strong> 
 This playbook <strong>Gets</strong> and <strong>Updates</strong> IP groups. The registered application/Service Principal that is authenticated to the connector needs to have the following RBAC Roles:</p>
 <ul>
 <li><strong>Contributor</strong> on the IP Groups in the Microsoft Sentinel resource group.</li>
 </ul>
 </li>
-<li><p>To use VirusTotal connector, get your Virus Totan API key. <a href="https://developers.virustotal.com/v3.0/reference#getting-started"> how to generate the API Key</a></p>
+<li>
+<p>To use VirusTotal connector, get your Virus Totan API key. <a href="https://developers.virustotal.com/v3.0/reference#getting-started"> how to generate the API Key</a></p>
 </li>
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAzure%2520Firewall%2FPlaybooks%2FAzureFirewall-BlockIP-addToIPGroup%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAzure%2520Firewall%2FPlaybooks%2FAzureFirewall-BlockIP-addToIPGroup%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAzure%2520Firewall%2FPlaybooks%2FAzureFirewall-BlockIP-addToIPGroup%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAzure%2520Firewall%2FPlaybooks%2FAzureFirewall-BlockIP-addToIPGroup%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <ol start="2">
 <li>Fill in the required parameters:<ul>
 <li>Playbook Name: Enter the playbook name here (ex:AzureFirewall-BlockIP-addToIPGroup)</li>
@@ -227,31 +160,24 @@ This playbook <strong>Gets</strong> and <strong>Updates</strong> IP groups. The 
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection.</p>
-<ol>
-<li><p>Click the Microsoft Sentinel connection resource</p>
-</li>
-<li><p>Click edit API connection</p>
-</li>
-<li><p>Click Authorize</p>
-</li>
-<li><p>Sign in</p>
-</li>
-<li><p>Click Save</p>
-</li>
-<li><p>Repeat steps for other connection such as Teams connection and Virus Total (For authorizing the Virus Total API connection, the API Key needs to be provided)</p>
-</li>
-<li><p>Authorize the Azure Firewall custom connector by following the below mentioned steps.</p>
-<p>a. Navigate to playbook</p>
-<p>b. Click Edit</p>
-<p>c. Find the action with the name &quot;Gets all IpGroups in a resource group&quot;, &quot;Gets the specified ipGroups&quot;,&quot;Creates or updates an ipGroups in a specified resource group&quot; in the workflow.</p>
-</li>
-</ol>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat steps for other connection such as Teams connection and Virus Total (For authorizing the Virus Total API connection, the API Key needs to be provided)
+7.  Authorize the Azure Firewall custom connector by following the below mentioned steps.</p>
+<pre><code> a. Navigate to playbook
+
+ b. Click Edit
+
+ c. Find the action with the name "Gets all IpGroups in a resource group", "Gets the specified ipGroups","Creates or updates an ipGroups in a specified resource group" in the workflow.
+</code></pre>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/azure-firewall.html">Back to Azure Firewall</a></p>
-
 </div>
 
 </body>

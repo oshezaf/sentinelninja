@@ -13,7 +13,7 @@
 | **Publisher** | ESET Netherlands |
 | **Support Tier** | Partner |
 | **Support Link** | [https://techcenter.eset.nl/en/](https://techcenter.eset.nl/en/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | ESET NL - support@eset.nl |
 | **First Published** | 2021-10-20 |

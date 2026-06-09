@@ -13,12 +13,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Compliance |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-10-08 |
 | **Solution Folder** | [HIPAA Compliance](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/HIPAA%20Compliance) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-hipaacompliance) · Popularity: 🟢 High (93%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-hipaacompliance) · Popularity: 🟢 High (92%) |
 
 This Solution enables Microsoft Sentinel users to harness the power of their SIEM to assist in meeting HIPAA requirements. This Solution comes with pre-defined dashboards, visualizations, and reports, providing users with immediate insights in their HIPAA environment.
 

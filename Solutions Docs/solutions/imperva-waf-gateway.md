@@ -15,7 +15,7 @@
 | **Publisher** | Imperva |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.imperva.com/support/technical-support/](https://www.imperva.com/support/technical-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 2.0.0 |
 | **Author** | Imperva |
 | **First Published** | 2022-05-02 |

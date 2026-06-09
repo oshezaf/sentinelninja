@@ -15,12 +15,12 @@
 | **Publisher** | SecurityBridge |
 | **Support Tier** | Partner |
 | **Support Link** | [https://securitybridge.com/contact/](https://securitybridge.com/contact/) |
-| **Categories** | domains,verticals |
+| **Categories** | Security - Network,Finance |
 | **Version** | 3.2.1 |
 | **Author** | SecurityBridge - support@securitybridge.com |
 | **First Published** | 2022-02-17 |
 | **Solution Folder** | [SecurityBridge App](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SecurityBridge%20App) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securitybridge1647511278080.securitybridge-sentinel-app-1) · Popularity: 🟡 Low (41%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/securitybridge1647511278080.securitybridge-sentinel-app-1) · Popularity: 🟡 Low (43%) |
 
 The [SecurityBridge App](https://securitybridge.com/) solution provides the capability to ingest SecurityBridge Threat Detection events from all on-premise and cloud based SAP instances into Microsoft Sentinel.
 

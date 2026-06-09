@@ -24,14 +24,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 </tbody>
 </table>
@@ -48,166 +48,166 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">AffectsRating</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether this finding contributes to the company's overall rating.</td>
+<td style="text-align: left;">AffectsRating</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether this finding contributes to the company's overall rating.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AssetCategory</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Category of the affected asset.</td>
+<td style="text-align: left;">AssetCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the affected asset.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Assets</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Array of assets associated with this finding.</td>
+<td style="text-align: left;">Assets</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of assets associated with this finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AttributedCompanies</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Array of companies to which this finding has been attributed.</td>
+<td style="text-align: left;">AttributedCompanies</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of companies to which this finding has been attributed.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Comments</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Array of analyst comments attached to this finding.</td>
+<td style="text-align: left;">Comments</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of analyst comments attached to this finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CompanyGuid</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">GUID of the company associated with the finding.</td>
+<td style="text-align: left;">CompanyGuid</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">GUID of the company associated with the finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CompanyName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the company associated with the finding.</td>
+<td style="text-align: left;">CompanyName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the company associated with the finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConnectorName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Connection name assigned during connector setup.</td>
+<td style="text-align: left;">ConnectorName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Connection name assigned during connector setup.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CurrentlyActive</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates if the finding is currently active.</td>
+<td style="text-align: left;">CurrentlyActive</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates if the finding is currently active.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Details</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Detailed finding data object (CVE info, diligence annotations, remediations, etc.).</td>
+<td style="text-align: left;">Details</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Detailed finding data object (CVE info, diligence annotations, remediations, etc.).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Duration</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Number of days the finding has been active.</td>
+<td style="text-align: left;">Duration</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of days the finding has been active.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EvidenceKey</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Key identifying the source of evidence for the finding.</td>
+<td style="text-align: left;">EvidenceKey</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Key identifying the source of evidence for the finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">FirstSeen</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Date the finding was first observed (YYYY-MM-DD).</td>
+<td style="text-align: left;">FirstSeen</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date the finding was first observed (YYYY-MM-DD).</td>
 </tr>
 <tr>
-  <td style="text-align:left">GracePeriodEndDate</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Date until which the finding is in a grace period and does not affect the rating (YYYY-MM-DD).</td>
+<td style="text-align: left;">GracePeriodEndDate</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date until which the finding is in a grace period and does not affect the rating (YYYY-MM-DD).</td>
 </tr>
 <tr>
-  <td style="text-align:left">GuestNetworkEndDate</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Date until which the finding is suppressed as a guest network (YYYY-MM-DD).</td>
+<td style="text-align: left;">GuestNetworkEndDate</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date until which the finding is suppressed as a guest network (YYYY-MM-DD).</td>
 </tr>
 <tr>
-  <td style="text-align:left">ImpactsRiskVectorDetails</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Object describing which risk vectors are impacted by this finding.</td>
+<td style="text-align: left;">ImpactsRiskVectorDetails</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Object describing which risk vectors are impacted by this finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastSeen</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Date the finding was most recently observed (YYYY-MM-DD).</td>
+<td style="text-align: left;">LastSeen</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date the finding was most recently observed (YYYY-MM-DD).</td>
 </tr>
 <tr>
-  <td style="text-align:left">NoRvGradeImpactEndDate</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Date until which the finding has no risk vector grade impact (YYYY-MM-DD).</td>
+<td style="text-align: left;">NoRvGradeImpactEndDate</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Date until which the finding has no risk vector grade impact (YYYY-MM-DD).</td>
 </tr>
 <tr>
-  <td style="text-align:left">RelatedFindings</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Array of finding identifiers related to this finding.</td>
+<td style="text-align: left;">RelatedFindings</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of finding identifiers related to this finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RemainingDecay</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Number of days remaining in the finding's decay window.</td>
+<td style="text-align: left;">RemainingDecay</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of days remaining in the finding's decay window.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Remediated</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Indicates whether this finding has been remediated.</td>
+<td style="text-align: left;">Remediated</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Indicates whether this finding has been remediated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RemediationHistory</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Remediation history object (last_requested_refresh_date, last_refresh_status, etc.).</td>
+<td style="text-align: left;">RemediationHistory</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Remediation history object (last_requested_refresh_date, last_refresh_status, etc.).</td>
 </tr>
 <tr>
-  <td style="text-align:left">RiskCategory</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The risk category (e.g., Diligence, Compromised Systems, User Behavior).</td>
+<td style="text-align: left;">RiskCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk category (e.g., Diligence, Compromised Systems, User Behavior).</td>
 </tr>
 <tr>
-  <td style="text-align:left">RiskVector</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The risk vector slug for this finding.</td>
+<td style="text-align: left;">RiskVector</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The risk vector slug for this finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RiskVectorLabel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Human-readable label for the risk vector.</td>
+<td style="text-align: left;">RiskVectorLabel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Human-readable label for the risk vector.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RolledupObservationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Identifier of the rolled-up observation this finding belongs to.</td>
+<td style="text-align: left;">RolledupObservationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the rolled-up observation this finding belongs to.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Severity</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Numeric severity score.</td>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Numeric severity score.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SeverityCategory</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Severity category (MINOR, MODERATE, MATERIAL, SEVERE).</td>
+<td style="text-align: left;">SeverityCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Severity category (MINOR, MODERATE, MATERIAL, SEVERE).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Tags</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Array of tags applied to this finding.</td>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Array of tags applied to this finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TemporaryId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The temporary identifier for a finding.</td>
+<td style="text-align: left;">TemporaryId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The temporary identifier for a finding.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -221,14 +221,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/bitsighteventsconnector.html">BitSight Security Events (via Codeless Connector Framework)</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/bitsighteventsconnector.html">BitSight Security Events (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -239,18 +239,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/bitsight-bitsight-compromised-systems-detected-d68b758a-b117-4cb8-8e1d-dcab5a4a2f21-a4f59745.html">BitSight - compromised systems detected</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/bitsight-bitsight-compromised-systems-detected-d68b758a-b117-4cb8-8e1d-dcab5a4a2f21-a4f59745.html">BitSight - compromised systems detected</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/bitsight-bitsight-diligence-risk-category-detected-161ed3ac-b242-4b13-8c6b-58716e5e9972-ffcba42e.html">BitSight - diligence risk category detected</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/bitsight-bitsight-diligence-risk-category-detected-161ed3ac-b242-4b13-8c6b-58716e5e9972-ffcba42e.html">BitSight - diligence risk category detected</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -259,14 +259,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/bitsight-bitsightworkbook-85beb528.html">BitSightWorkbook</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/bitsight-bitsightworkbook-85beb528.html">BitSightWorkbook</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -275,23 +275,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Parser</th>
-  <th style="text-align:left">Solution</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Solution</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../parsers/bitsightfindingsdata.html">BitSightFindingsData</a></td>
-  <td style="text-align:left"><a href="../solutions/bitsight.html">BitSight</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../parsers/bitsightfindingsdata.html">BitSightFindingsData</a></td>
+<td style="text-align: left;"><a href="../solutions/bitsight.html">BitSight</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

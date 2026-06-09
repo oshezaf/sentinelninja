@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for ESET Protect Platform |
 | Location | Solution |
-| Solution | [ESET Protect Platform](../solutions/eset-protect-platform.md) ⚠️ |
+| Solution | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
 | Version | 1.0.0 |
 | Last Updated | 2024-11-08 |
 | Category | Microsoft Sentinel Parser |

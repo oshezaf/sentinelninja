@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/farsight-dnsdb.html">Farsight DNSDB</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/farsight-dnsdb.html">Farsight DNSDB</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_Hosts/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_Hosts/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -50,91 +50,45 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">2</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_Hosts</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/host</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="farsightdnsdb"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">RData_Lookup_with_RRType</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each_Unique_IPS'))}/ANY</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">RRSet_Lookup_with_RRType_AAAA_Records</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('AAAA')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">RRSet_Lookup_with_RRType_A_Records</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('A')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">RRSet_Lookup_with_RRType_CNAME</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('CNAME')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`farsightdnsdb`](../logic-apps/managed-farsightdnsdb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RData_Lookup_with_RRType | get | `/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each_Unique_IPS'))}/ANY` | — |
+| RRSet_Lookup_with_RRType_AAAA_Records | get | `/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('AAAA')}` | — |
+| RRSet_Lookup_with_RRType_A_Records | get | `/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('A')}` | — |
+| RRSet_Lookup_with_RRType_CNAME | get | `/lookup/rrset/name/@{encodeURIComponent(variables('domain_name'))}/@{encodeURIComponent('CNAME')}` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -142,17 +96,16 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_Hosts/readme.md">DNSDB_Co_Located_Hosts/readme.md</a></em></p>
 </blockquote>
 <p>author: Henry Stern, Farsight Security, Inc.</p>
-<p>This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Sentinel incidents. This use case describes the desire to easily identify Hosts that are co-located (based on Address) based on the input of a Host and a given point in time. The response would be a set of domains that also shared the same IP address as the originating domain name at the given point in time.
+<p>This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Sentinel incidents. This use case describes the desire to easily identify Hosts that are co-located (based on Address) based on the input of a Host and a given point in time. The response would be a set of domains that also shared the same IP address as the originating domain name at the given point in time. 
 Learn more about the integration via the https://docs.microsoft.com/connectors/farsightdnsdb/ or visit https://www.farsightsecurity.com/about-farsight-security/contacts/ to request a trial key.</p>
 <h2 id="screenshots">Screenshots</h2>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_Hosts/Graphics/co_located_hosts.png" alt="Incident Comments" /></p>
+<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Farsight%20DNSDB/Playbooks/DNSDB_Co_Located_Hosts/Graphics/co_located_hosts.png" /></p>
 <h2 id="links-to-deploy-the-dnsdb_co_located_hosts-playbook-template">Links to deploy the DNSDB_Co_Located_Hosts playbook template:</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFarsight%20DNSDB%2FPlaybooks%2FDNSDB_Co_Located_Hosts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
-<p><a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFarsight%20DNSDB%2FPlaybooks%2FDNSDB_Co_Located_Hosts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFarsight%20DNSDB%2FPlaybooks%2FDNSDB_Co_Located_Hosts%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p><a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FFarsight%20DNSDB%2FPlaybooks%2FDNSDB_Co_Located_Hosts%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/farsight-dnsdb.html">Back to Farsight DNSDB</a></p>
-
 </div>
 
 </body>

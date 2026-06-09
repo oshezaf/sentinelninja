@@ -15,7 +15,7 @@
 | **Publisher** | Vectra Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.vectra.ai/support](https://www.vectra.ai/support) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Cloud Security |
 | **Version** | 3.3.0 |
 | **Author** | TME - tme@vetcra.ai |
 | **First Published** | 2023-07-04 |

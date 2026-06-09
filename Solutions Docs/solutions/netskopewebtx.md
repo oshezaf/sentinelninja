@@ -15,7 +15,7 @@
 | **Publisher** | Netskope |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 1.0.1 |
 | **Author** | Netskope |
 | **First Published** | 2026-02-10 |

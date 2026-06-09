@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">VMinsights</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">VMinsights</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmboundport">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmboundport">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,141 +53,141 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique agent GUID for the agent reporting data on the server.</td>
+<td style="text-align: left;">AgentId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique agent GUID for the agent reporting data on the server.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BytesReceived</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Bytes received on the port</td>
+<td style="text-align: left;">BytesReceived</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Bytes received on the port</td>
 </tr>
 <tr>
-  <td style="text-align:left">BytesSent</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Bytes sent on the port</td>
+<td style="text-align: left;">BytesSent</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Bytes sent on the port</td>
 </tr>
 <tr>
-  <td style="text-align:left">Computer</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the server</td>
+<td style="text-align: left;">Computer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the server</td>
 </tr>
 <tr>
-  <td style="text-align:left">Ip</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Port IP address. Can be wildcard IP 0.0.0.0.</td>
+<td style="text-align: left;">Ip</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Port IP address. Can be wildcard IP 0.0.0.0.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsWildcardBind</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Specifies whether connection made as a wildcard bind request.</td>
+<td style="text-align: left;">IsWildcardBind</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Specifies whether connection made as a wildcard bind request.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LinksEstablished</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Count of links established on the port.</td>
+<td style="text-align: left;">LinksEstablished</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of links established on the port.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LinksLive</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Count of live links at the end of the time period recorded.</td>
+<td style="text-align: left;">LinksLive</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of live links at the end of the time period recorded.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LinksTerminated</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Count of terminated links over the time periof recorded.</td>
+<td style="text-align: left;">LinksTerminated</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of terminated links over the time periof recorded.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Machine</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier to the machine in the ServiceMapComputer_CL table.</td>
+<td style="text-align: left;">Machine</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier to the machine in the ServiceMapComputer_CL table.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Port</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Port number.</td>
+<td style="text-align: left;">Port</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Port number.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PortId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Port ID.</td>
+<td style="text-align: left;">PortId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Port ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Process</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Identity of the process or group of processes that the port is associated with.</td>
+<td style="text-align: left;">Process</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identity of the process or group of processes that the port is associated with.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ProcessName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the process in the ServiceMapProcess_CL table.</td>
+<td style="text-align: left;">ProcessName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the process in the ServiceMapProcess_CL table.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Protocol</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The protocol. Example tcp or udp (only tcp is currently supported).</td>
+<td style="text-align: left;">Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The protocol. Example tcp or udp (only tcp is currently supported).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Responses</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Count of responses in the time period recorded.</td>
+<td style="text-align: left;">Responses</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Count of responses in the time period recorded.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseTimeMax</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Measurement of the maximum time between first and last byte received.</td>
+<td style="text-align: left;">ResponseTimeMax</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Measurement of the maximum time between first and last byte received.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseTimeMin</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Measurement of the minimum time between first and last byte received.</td>
+<td style="text-align: left;">ResponseTimeMin</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Measurement of the minimum time between first and last byte received.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResponseTimeSum</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Measurement of the total time between first and last byte received</td>
+<td style="text-align: left;">ResponseTimeSum</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Measurement of the total time between first and last byte received</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time the record was created.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time the record was created.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -204,7 +204,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

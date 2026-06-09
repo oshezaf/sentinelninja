@@ -15,12 +15,12 @@
 | **Publisher** | xDome Customer Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://claroty.com/support-policy](https://claroty.com/support-policy) |
-| **Categories** | domains,verticals |
+| **Categories** | Security - Threat Intelligence,Security - Vulnerability Management,Healthcare,Manufacturing |
 | **Version** | 3.0.0 |
 | **Author** | Claroty |
 | **First Published** | 2024-02-01 |
 | **Solution Folder** | [Claroty xDome](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty%20xDome) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/claroty1709722359369.microsoft-sentinel-solution-xdome) · Popularity: 🔵 Medium (69%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/claroty1709722359369.microsoft-sentinel-solution-xdome) · Popularity: 🔵 Medium (59%) |
 
 [Claroty](https://claroty.com/) xDome delivers comprehensive security and alert management capabilities for healthcare and industrial network environments. It is designed to map multiple source types, identify the collected data, and integrate it into Microsoft Sentinel data models. This results in the ability to monitor all potential threats in your healthcare and industrial environments in one location, leading to more effective security monitoring and a stronger security posture.
 

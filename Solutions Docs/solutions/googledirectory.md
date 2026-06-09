@@ -13,13 +13,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Identity,IT Operations,Cloud Provider |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-05-15 |
 | **Last Updated** | 2026-05-19 |
 | **Solution Folder** | [GoogleDirectory](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/GoogleDirectory) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gd) · Popularity: 🟡 Low (36%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-gd) · Popularity: 🟡 Low (37%) |
 
 The Google Directory API Connector and associated Playbooks enable automated Google Workspace identity and access response actions from Microsoft Sentinel. These integrations support user context enrichment, active session termination, and account suspension workflows to streamline security operations and incident response.
 

@@ -13,7 +13,7 @@
 | **Publisher** | ESET Enterprise |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.eset.com/int/business/solutions/endpoint-detection-and-response/](https://www.eset.com/int/business/solutions/endpoint-detection-and-response/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 2.0.0 |
 | **Author** | ESET Netherlands |
 | **First Published** | 2022-06-01 |

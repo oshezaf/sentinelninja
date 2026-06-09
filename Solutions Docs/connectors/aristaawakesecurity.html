@@ -18,65 +18,62 @@
 <h1 id="deprecated-awake-security-via-legacy-agent">🚫 🔍 [Deprecated] Awake Security via Legacy Agent</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
-</blockquote>
-<blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AristaAwakeSecurity.svg" alt="" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/AristaAwakeSecurity.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Connector ID</strong></td>
-  <td style="text-align:left"><code>AristaAwakeSecurity</code></td>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>AristaAwakeSecurity</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Arista Networks</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Arista Networks</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Used in Solutions</strong></td>
-  <td style="text-align:left"><a href="../solutions/aristaawakesecurity.html">AristaAwakeSecurity</a></td>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/aristaawakesecurity.html">AristaAwakeSecurity</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity/Data%20Connectors/Connector_AristaAwakeSecurity_CEF.json">Connector_AristaAwakeSecurity_CEF.json</a></td>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AristaAwakeSecurity/Data%20Connectors/Connector_AristaAwakeSecurity_CEF.json">Connector_AristaAwakeSecurity_CEF.json</a></td>
 </tr>
 </tbody>
 </table>
-<p>The Awake Security CEF connector allows users to send detection model matches from the Awake Security Platform to Microsoft Sentinel. Remediate threats quickly with the power of network detection and response and speed up investigations with deep visibility especially into unmanaged entities including users, devices and applications on your network. The connector also enables the creation of network security-focused custom alerts, incidents, workbooks and notebooks that align with your existing security operations workflows.</p>
+<p>The Awake Security CEF connector allows users to send detection model matches from the Awake Security Platform to Microsoft Sentinel. Remediate threats quickly with the power of network detection and response and speed up investigations with deep visibility especially into unmanaged entities including users, devices and applications on your network. The connector also enables the creation of network security-focused custom alerts, incidents, workbooks and notebooks that align with your existing security operations workflows. </p>
 <h2 id="tables-ingested">Tables Ingested</h2>
 <p>This connector ingests data into the following tables:</p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-  <td style="text-align:left"><code>DeviceProduct == &quot;Awake Security&quot;</code><br><code>DeviceVendor == &quot;Arista Networks&quot;</code></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+<td style="text-align: left;"><code>DeviceProduct == "Awake Security"</code><br><code>DeviceVendor == "Arista Networks"</code></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 </tbody>
 </table>
@@ -84,11 +81,9 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
-<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -104,42 +99,28 @@
 <p>Install the Microsoft Monitoring Agent on your Linux machine and configure the machine to listen on the necessary port and forward messages to your Microsoft Sentinel workspace. The CEF collector collects CEF messages on port 514 TCP.</p>
 <blockquote>
 <ol>
-<li>Make sure that you have Python on your machine using the following command: python -version.</li>
+<li>
+<p>Make sure that you have Python on your machine using the following command: python -version.</p>
+</li>
+<li>
+<p>You must have elevated permissions (sudo) on your machine.
+  - <strong>Run the following command to install and apply the CEF collector:</strong>: <code>sudo wget -O cef_installer.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_installer.py&amp;&amp;sudo python cef_installer.py {0} {1}</code>
+<strong>2. Forward Awake Adversarial Model match results to a CEF collector.</strong></p>
+</li>
 </ol>
 </blockquote>
+<p>Perform the following steps to forward Awake Adversarial Model match results to a CEF collector listening on TCP port <strong>514</strong> at IP <strong>192.168.0.1</strong>:
+- Navigate to the Detection Management Skills page in the Awake UI.
+- Click + Add New Skill.
+- Set the Expression field to,</p>
 <blockquote>
-<ol start="2">
-<li>You must have elevated permissions (sudo) on your machine.</li>
-</ol>
+<p>integrations.cef.tcp { destination: "192.168.0.1", port: 514, secure: false, severity: Warning }
+- Set the Title field to a descriptive name like,
+Forward Awake Adversarial Model match result to Microsoft Sentinel.
+- Set the Reference Identifier to something easily discoverable like,
+integrations.cef.sentinel-forwarder
+- Click Save.</p>
 </blockquote>
-<ul>
-<li><strong>Run the following command to install and apply the CEF collector:</strong>: <code>sudo wget -O cef_installer.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_installer.py&amp;&amp;sudo python cef_installer.py {0} {1}</code>
-<strong>2. Forward Awake Adversarial Model match results to a CEF collector.</strong></li>
-</ul>
-<p>Perform the following steps to forward Awake Adversarial Model match results to a CEF collector listening on TCP port <strong>514</strong> at IP <strong>192.168.0.1</strong>:</p>
-<ul>
-<li>Navigate to the Detection Management Skills page in the Awake UI.</li>
-<li>Click + Add New Skill.</li>
-<li>Set the Expression field to,</li>
-</ul>
-<ul>
-<li>Set the Title field to a descriptive name like,</li>
-</ul>
-<ul>
-<li>Set the Reference Identifier to something easily discoverable like,</li>
-</ul>
-<blockquote>
-<p>integrations.cef.sentinel-forwarder</p>
-</blockquote>
-<blockquote>
-<p>Forward Awake Adversarial Model match result to Microsoft Sentinel.</p>
-</blockquote>
-<blockquote>
-<p>integrations.cef.tcp { destination: &quot;192.168.0.1&quot;, port: 514, secure: false, severity: Warning }</p>
-</blockquote>
-<ul>
-<li>Click Save.</li>
-</ul>
 <p>Note: Within a few minutes of saving the definition and other fields the system will begin sending new model match results to the CEF events collector as they are detected.</p>
 <p>For more information, refer to the <strong>Adding a Security Information and Event Management Push Integration</strong> page from the Help Documentation in the Awake UI.</p>
 <p><strong>3. Validate connection</strong></p>
@@ -151,24 +132,21 @@
 <p>If the logs are not received, run the following connectivity validation script:</p>
 <blockquote>
 <ol>
-<li>Make sure that you have Python on your machine using the following command: python -version</li>
+<li>
+<p>Make sure that you have Python on your machine using the following command: python -version</p>
+</li>
+<li>
+<p>You must have elevated permissions (sudo) on your machine
+- <strong>Run the following command to validate your connectivity:</strong>: <code>sudo wget  -O cef_troubleshoot.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_troubleshoot.py&amp;&amp;sudo python cef_troubleshoot.py  {0}</code></p>
+</li>
 </ol>
 </blockquote>
-<blockquote>
-<ol start="2">
-<li>You must have elevated permissions (sudo) on your machine</li>
-</ol>
-</blockquote>
-<ul>
-<li><strong>Run the following command to validate your connectivity:</strong>: <code>sudo wget  -O cef_troubleshoot.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_troubleshoot.py&amp;&amp;sudo python cef_troubleshoot.py  {0}</code></li>
-</ul>
 <p><strong>4. Secure your machine</strong></p>
 <p>Make sure to configure the machine's security according to your organization's security policy</p>
 <p><a href="https://aka.ms/SecureCEF">Learn more &gt;</a></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

@@ -15,7 +15,7 @@
 | **Publisher** | Varonis |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varonis.com/resources/support](https://www.varonis.com/resources/support) |
-| **Categories** | domains |
+| **Categories** | Security - Information Protection |
 | **Version** | 3.0.0 |
 | **Author** | Varonis |
 | **First Published** | 2025-10-27 |

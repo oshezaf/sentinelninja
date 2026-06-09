@@ -15,12 +15,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Others |
 | **Version** | 3.0.0 |
 | **Author** | Rin Ure - rin.ure@microsoft.com |
 | **First Published** | 2022-04-08 |
 | **Solution Folder** | [SOC-Process-Framework](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOC-Process-Framework) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-socprocessframework) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🔵 Medium (55%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-socprocessframework) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟡 Low (31%) |
 
 The Get-SOCActions Playbook with SocRA Watchlist gives SOCs the ability to onboard SOC Actions for their Analysts to follow that snap to the SOC Process Framework Workbook.
 

@@ -13,7 +13,7 @@
 | **Publisher** | Red Canary |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.redcanary.com](https://www.redcanary.com) |
-| **Categories** | domains |
+| **Categories** | Application |
 | **First Published** | 2022-03-04 |
 | **Last Updated** | 2022-03-04 |
 | **Solution Folder** | [Red Canary](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Red%20Canary) |

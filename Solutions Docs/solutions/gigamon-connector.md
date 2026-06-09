@@ -15,12 +15,12 @@
 | **Publisher** | Gigamon |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.gigamon.com/](https://www.gigamon.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.0 |
 | **Author** | Gigamon |
 | **Last Updated** | 2026-03-06 |
 | **Solution Folder** | [Gigamon Connector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Gigamon%20Connector) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/gigamon-inc.microsoft-sentinel-solution-gigamon) · Popularity: 🟡 Low (40%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/gigamon-inc.microsoft-sentinel-solution-gigamon) · Popularity: 🟡 Low (42%) |
 
 Gigamon Application Metadata Intelligence empowers your Observability, Security Information and Event Management (SIEM), and Network Performance Monitoring tools with critical metadata attributes across thousands of business, consumer, and IT applications and services. Get deep application visibility to rapidly pinpoint performance bottlenecks, quality issues, and potential network security risks. Application Metadata Intelligence (AMI) helps you monitor and manage complex digital applications for your digital transformation initiatives. This can be achieved through the Gigamon Connector Solution by sending the AMI metadata to Microsoft Sentinel.  Some benefits to highlight are Rich Actionable Insights, Boost Security Posture etc..
 

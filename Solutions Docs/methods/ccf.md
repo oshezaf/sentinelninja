@@ -19,9 +19,9 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **177** |
-| Active | 147 |
+| Active | 164 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 29 |
+| Unpublished ⚠️ | 12 |
 
 ## Connectors Using This Method
 
@@ -186,24 +186,24 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Workday User Activity](../connectors/workdayccpdefinition.md) | Microsoft | 1 | [Workday](../solutions/workday.md) |
 | [Zero Networks Segment Audit](../connectors/znsegmentauditccpdefinition.md) | Zero Networks | 1 | [ZeroNetworks](../solutions/zeronetworks.md) |
 | [Zero Networks Segment Audit](../connectors/zeronetworkssegmentauditnativepoller.md) ⚠️ | Zero Networks | 1 | [ZeroNetworks](../solutions/zeronetworks.md) |
-| [ZeroFox Enterprise - Advanced Dark Web](../connectors/zerofoxadvanceddarkwebdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Advanced Dark Web](../connectors/zerofoxadvanceddarkwebdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | [ZeroFox Enterprise - Alerts (Polling CCF)](../connectors/zerofoxalertsdefinition.md) 🔶 | ZeroFox Enterprise | 1 | [ZeroFox](../solutions/zerofox.md) |
-| [ZeroFox Enterprise - Botnet](../connectors/zerofoxbotnetdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Botnet Compromised Credentials](../connectors/zerofoxbotnetccdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Breaches](../connectors/zerofoxbreachesdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Compromised Credentials](../connectors/zerofoxcompromisedcredentialsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Credit Cards](../connectors/zerofoxcreditcardsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Dark Web](../connectors/zerofoxdarkwebdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Discord](../connectors/zerofoxdiscorddefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Disruption](../connectors/zerofoxdisruptiondefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Email Addresses](../connectors/zerofoxemailaddressesdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Exploits](../connectors/zerofoxexploitsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Indicators](../connectors/zerofoxindicatorsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Key Incidents](../connectors/zerofoxkeyincidentsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - National IDs](../connectors/zerofoxnationalidsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Physical Threats](../connectors/zerofoxphysicalthreatsdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Telegram](../connectors/zerofoxtelegramdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
-| [ZeroFox Enterprise - Vulnerabilities](../connectors/zerofoxvulnerabilitiesdefinition.md) ⚠️ | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Botnet](../connectors/zerofoxbotnetdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Botnet Compromised Credentials](../connectors/zerofoxbotnetccdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Breaches](../connectors/zerofoxbreachesdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Compromised Credentials](../connectors/zerofoxcompromisedcredentialsdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Credit Cards](../connectors/zerofoxcreditcardsdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Dark Web](../connectors/zerofoxdarkwebdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Discord](../connectors/zerofoxdiscorddefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Disruption](../connectors/zerofoxdisruptiondefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Email Addresses](../connectors/zerofoxemailaddressesdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Exploits](../connectors/zerofoxexploitsdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Indicators](../connectors/zerofoxindicatorsdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Key Incidents](../connectors/zerofoxkeyincidentsdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - National IDs](../connectors/zerofoxnationalidsdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Physical Threats](../connectors/zerofoxphysicalthreatsdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Telegram](../connectors/zerofoxtelegramdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
+| [ZeroFox Enterprise - Vulnerabilities](../connectors/zerofoxvulnerabilitiesdefinition.md) | ZeroFox Enterprise | 1 | [ZeroFox Threat Intelligence](../solutions/zerofox-threat-intelligence.md) |
 | [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md) | Microsoft | 1 | [ZoomReports](../solutions/zoomreports.md) |
 
 ### Deprecated Connectors 🚫

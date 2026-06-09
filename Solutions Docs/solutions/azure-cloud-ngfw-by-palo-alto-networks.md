@@ -15,7 +15,7 @@
 | **Publisher** | Palo Alto Networks |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.paloaltonetworks.com](https://support.paloaltonetworks.com) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Automation (SOAR) |
 | **Version** | 3.0.1 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-11-03 |

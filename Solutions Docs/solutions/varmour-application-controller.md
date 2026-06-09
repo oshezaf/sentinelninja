@@ -15,7 +15,7 @@
 | **Publisher** | vArmour Networks |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.varmour.com/contact-us/](https://www.varmour.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | IT Operations |
 | **Version** | 3.0.1 |
 | **Author** | vArmour |
 | **First Published** | 2022-06-01 |

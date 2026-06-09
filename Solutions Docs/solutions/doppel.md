@@ -13,7 +13,7 @@
 | **Publisher** | Doppel |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.doppel.com/request-a-demo](https://www.doppel.com/request-a-demo) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Doppel |
 | **First Published** | 2024-11-20 |

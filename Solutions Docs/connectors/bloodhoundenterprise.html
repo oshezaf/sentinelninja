@@ -16,19 +16,44 @@
 </nav>
 <div class="doc-content">
 <h1 id="bloodhound-enterprise-data-connector">BloodHound Enterprise Data Connector (using Azure Functions)</h1>
-<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="" width="75" height="75">
-
+<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BHE_Logo.svg" alt="" width="75" height="75"></p>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
-<p>| Attribute | Value |
-|:----------|:------|
-| <strong>Connector ID</strong> | <code>BloodHoundEnterprise</code> |
-| <strong>Publisher</strong> | SpecterOps |
-| <strong>Used in Solutions</strong> | <a href="../solutions/bloodhound-enterprise.html">BloodHound Enterprise</a> |
-| <strong>Collection Method</strong> | <a href="../methods/azure-function.html">Azure Function</a> |
-| <strong>Connector Definition Files</strong> | <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise/Data%20Connectors/BloodHoundFunction.json">BloodHoundFunction.json</a> |
-| <strong>Ingestion API</strong> | <a href="../methods/log-ingestion-api-http-data-collector-api.html">Log Ingestion API|HTTP Data Collector API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources|Connector definition requires workspace key (SharedKey pattern)</em> |</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>BloodHoundEnterprise</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">SpecterOps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/bloodhound-enterprise.html">BloodHound Enterprise</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BloodHound%20Enterprise/Data%20Connectors/BloodHoundFunction.json">BloodHoundFunction.json</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ingestion API</strong></td>
+<td style="text-align: left;">[Log Ingestion API</td>
+</tr>
+</tbody>
+</table>
 <p><strong><a href="https://bloodhoundenterprise.io/">BloodHound Enterprise</a></strong> from <strong><a href="https://specterops.io/">SpecterOps</a></strong> is an <strong>Identity Attack Path Management</strong> platform: it maps how attackers can move through identity relationships to reach critical assets so teams can <strong>prioritize and remediate</strong> those paths not only detect them. It brings clarity to identity sprawl in <strong>Active Directory</strong>, <strong>Azure</strong>, and beyond, including <strong>Privilege Zone</strong> style protection around what matters most in your environment.</p>
 <p>This <strong>Microsoft Sentinel</strong> connector adds <strong>BloodHound Enterprise attack path context</strong> into your workspace alongside logs and alerts so you can <strong>enrich investigations</strong>, focus on high-value findings, and track exposure, audit activity, and <strong>Tier Zero</strong> assets in one place.</p>
 <p><strong>What this connector does</strong></p>
@@ -40,48 +65,48 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/bheattackpathsdata-cl.html"><code>BHEAttackPathsData_CL</code></a></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/bheattackpathsdata-cl.html"><code>BHEAttackPathsData_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/bheattackpathstimelinedata-cl.html"><code>BHEAttackPathsTimelineData_CL</code></a></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/bheattackpathstimelinedata-cl.html"><code>BHEAttackPathsTimelineData_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/bheauditlogsdata-cl.html"><code>BHEAuditLogsData_CL</code></a></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/bheauditlogsdata-cl.html"><code>BHEAuditLogsData_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/bhefindingtrendsdata-cl.html"><code>BHEFindingTrendsData_CL</code></a></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/bhefindingtrendsdata-cl.html"><code>BHEFindingTrendsData_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/bheposturehistorydata-cl.html"><code>BHEPostureHistoryData_CL</code></a></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/bheposturehistorydata-cl.html"><code>BHEPostureHistoryData_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/bhetierzeroassetsdata-cl.html"><code>BHETierZeroAssetsData_CL</code></a></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/bhetierzeroassetsdata-cl.html"><code>BHETierZeroAssetsData_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
@@ -89,16 +114,12 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</li>
-<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
-</ul>
-<p><strong>Custom Permissions:</strong></p>
-<ul>
-<li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
-<li><strong>BloodHound Enterprise API access</strong>: <strong>Token ID</strong>, <strong>Token key</strong>, and your tenant <strong>base URL</strong> are required to authenticate to the BloodHound Enterprise REST API (requests are signed per the SpecterOps API model see <a href="https://bloodhound.specterops.io/integrations/bloodhound-api/working-with-api">Working with the API</a>).</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
+- <strong>BloodHound Enterprise API access</strong>: <strong>Token ID</strong>, <strong>Token key</strong>, and your tenant <strong>base URL</strong> are required to authenticate to the BloodHound Enterprise REST API (requests are signed per the SpecterOps API model see <a href="https://bloodhound.specterops.io/integrations/bloodhound-api/working-with-api">Working with the API</a>).</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -110,34 +131,24 @@
 <p><strong>3. Step 3. Deploy Function App</strong></p>
 <blockquote>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to pull data from BloodHound Enterprise into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+<p><strong>IMPORTANT:</strong> Before deploying the BloodHound Enterprise connector, have the <strong>Workspace name</strong> (see below), <strong>BloodHound Enterprise tenant URL</strong>, <strong>Token ID</strong> and <strong>Token key</strong>, <strong>Microsoft Entra Application (client) ID</strong> and <strong>client secret</strong>, and your desired <strong>environment</strong> and <strong>finding type</strong> filters (or use template defaults such as <strong>All</strong>) ready.
+- <strong>Workspace Name</strong>: <code>WorkspaceName</code>
+<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
 </blockquote>
-<blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the BloodHound Enterprise connector, have the <strong>Workspace name</strong> (see below), <strong>BloodHound Enterprise tenant URL</strong>, <strong>Token ID</strong> and <strong>Token key</strong>, <strong>Microsoft Entra Application (client) ID</strong> and <strong>client secret</strong>, and your desired <strong>environment</strong> and <strong>finding type</strong> filters (or use template defaults such as <strong>All</strong>) ready.</p>
-</blockquote>
-<ul>
-<li><strong>Workspace Name</strong>: <code>WorkspaceName</code><blockquote>
-<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
-</blockquote>
-</li>
-</ul>
 <p><strong>4. Deploy all the resources related to the data connector</strong></p>
 <ol>
-<li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
-<p><a href="https://aka.ms/sentinel-BloodhoundEnterprise-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
-</li>
-<li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Location</strong>.</p>
-</li>
-<li><p>Enter <strong>Function App name</strong>, <strong>Log Analytics workspace name</strong> (Microsoft Sentinel workspace), <strong>BloodHound Enterprise tenant domain</strong> (URL), <strong>BloodHound Token ID</strong> and <strong>Token key</strong> (secure parameters), <strong>Microsoft Entra Application (client) ID</strong>, and <strong>Microsoft Entra application client secret</strong>.</p>
-</li>
-<li><p>Optional: set <strong>Lookup days</strong> (historical lookback), <strong>Selected BloodHound environments</strong> (comma-separated or <strong>All</strong>), and <strong>Selected finding types</strong> (or <strong>All</strong>) as described in the template.</p>
-</li>
-<li><p>Click <strong>Review + create</strong>, then <strong>Create</strong> to deploy.</p>
+<li>
+<p>Click the <strong>Deploy to Azure</strong> button below. </p>
+<p><a href="https://aka.ms/sentinel-BloodhoundEnterprise-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong>, and <strong>Location</strong>.
+3. Enter <strong>Function App name</strong>, <strong>Log Analytics workspace name</strong> (Microsoft Sentinel workspace), <strong>BloodHound Enterprise tenant domain</strong> (URL), <strong>BloodHound Token ID</strong> and <strong>Token key</strong> (secure parameters), <strong>Microsoft Entra Application (client) ID</strong>, and <strong>Microsoft Entra application client secret</strong>.
+4. Optional: set <strong>Lookup days</strong> (historical lookback), <strong>Selected BloodHound environments</strong> (comma-separated or <strong>All</strong>), and <strong>Selected finding types</strong> (or <strong>All</strong>) as described in the template.
+5. Click <strong>Review + create</strong>, then <strong>Create</strong> to deploy.</p>
 </li>
 </ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

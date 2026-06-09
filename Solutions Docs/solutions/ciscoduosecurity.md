@@ -15,7 +15,7 @@
 | **Publisher** | Cisco Systems |
 | **Support Tier** | Partner |
 | **Support Link** | [https://duo.com/support](https://duo.com/support) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.1.1 |
 | **Author** | CiscoDuoSecurity - support@duosecurity.com |
 | **First Published** | 2022-01-07 |

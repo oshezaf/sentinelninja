@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/netapp-ransomware-resilience.html">NetApp Ransomware Resilience</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/netapp-ransomware-resilience.html">NetApp Ransomware Resilience</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience-Auth-Playbook/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/NetApp%20Ransomware%20Resilience/Playbooks/NetApp-RansomwareResilience-Auth-Playbook/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,79 +47,43 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_Client_ID</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('client-id')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Client_Secret</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('client-secret')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Account_ID</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('account-id')}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">HTTP_Token_Request</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>https://netapp-cloud-account.auth0.com/oauth/token</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_Client_ID | get | `/secrets/@{encodeURIComponent('client-id')}/value` | — |
+| Get_Client_Secret | get | `/secrets/@{encodeURIComponent('client-secret')}/value` | — |
+| Get_Account_ID | get | `/secrets/@{encodeURIComponent('account-id')}/value` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| HTTP_Token_Request | POST | `https://netapp-cloud-account.auth0.com/oauth/token` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -141,24 +105,18 @@
 <li>Uses OAuth2 client credentials flow for secure API authentication</li>
 </ul>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before deploying this playbook, you need:</p>
-<ol>
-<li>Valid NetApp Ransomware Resilience API credentials:<ul>
-<li>Client ID</li>
-<li>Client Secret</li>
-<li>Account ID</li>
-</ul>
-</li>
-<li>Appropriate permissions to create resources in your Azure subscription</li>
-</ol>
+<p>Before deploying this playbook, you need:
+1. Valid NetApp Ransomware Resilience API credentials:
+   - Client ID
+   - Client Secret
+   - Account ID
+2. Appropriate permissions to create resources in your Azure subscription</p>
 <h2 id="post-deployment-configuration">Post-Deployment Configuration</h2>
-<p>After deploying this playbook:</p>
-<ol>
-<li>Verify that the Key Vault was created successfully</li>
-<li>Confirm that your credentials are stored correctly in the Key Vault</li>
-<li>Test the Logic App to ensure it can retrieve authentication tokens</li>
-<li>Grant access permissions to the Key Vault for other playbooks as needed</li>
-</ol>
+<p>After deploying this playbook:
+1. Verify that the Key Vault was created successfully
+2. Confirm that your credentials are stored correctly in the Key Vault
+3. Test the Logic App to ensure it can retrieve authentication tokens
+4. Grant access permissions to the Key Vault for other playbooks as needed</p>
 <h2 id="security-notes">Security Notes</h2>
 <ul>
 <li>All credentials are stored securely in Azure Key Vault</li>
@@ -166,16 +124,13 @@
 <li>Credentials are never exposed in plain text outside the Key Vault</li>
 </ul>
 <h2 id="need-help">Need Help?</h2>
-<p>If you encounter authentication issues, verify:</p>
-<ul>
-<li>Your NetApp API credentials are valid and active</li>
-<li>The Key Vault is accessible and contains all required secrets</li>
-<li>The Logic App has appropriate permissions to access the Key Vault</li>
-</ul>
+<p>If you encounter authentication issues, verify:
+- Your NetApp API credentials are valid and active
+- The Key Vault is accessible and contains all required secrets
+- The Logic App has appropriate permissions to access the Key Vault</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/netapp-ransomware-resilience.html">Back to NetApp Ransomware Resilience</a></p>
-
 </div>
 
 </body>

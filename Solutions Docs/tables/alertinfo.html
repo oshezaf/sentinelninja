@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Internal</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Internal</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/alertinfo">View Documentation</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertinfo-table">View Documentation</a></td>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-alertinfo-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -67,76 +67,76 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">AlertId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the alert.</td>
+<td style="text-align: left;">AlertId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the alert.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AttackTechniques</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">MITRE ATT&amp;CK techniques associated with the activity that triggered the alert.</td>
+<td style="text-align: left;">AttackTechniques</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">MITRE ATT&amp;CK techniques associated with the activity that triggered the alert.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Category</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of threat indicator or breach activity identified by the alert.</td>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of threat indicator or breach activity identified by the alert.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DetectionSource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Detection technology or sensor that identified the notable component or activity.</td>
+<td style="text-align: left;">DetectionSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Detection technology or sensor that identified the notable component or activity.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceSource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Product or service that provided the alert information.</td>
+<td style="text-align: left;">ServiceSource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Product or service that provided the alert information.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Severity</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert.</td>
+<td style="text-align: left;">Severity</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time (UTC) when the record was generated.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time (UTC) when the record was generated.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Title</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Title of the alert.</td>
+<td style="text-align: left;">Title</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Title of the alert.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -148,16 +148,16 @@
 <hr />
 <h2 id="content-items-using-this-table">Content Items Using This Table (7)</h2>
 <h3 id="analytic-rules">Analytic Rules (1)</h3>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>Title in &quot;An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>Title in "An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
+<th style="text-align: left;">Analytic Rule</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-4bd9ce9d-8586-4beb-8fdb-bd018cacbe7d-af20888f.html">Potential Ransomware activity related to Cobalt Strike</a></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-4bd9ce9d-8586-4beb-8fdb-bd018cacbe7d-af20888f.html">Potential Ransomware activity related to Cobalt Strike</a></td>
 </tr>
 </tbody>
 </table>
@@ -166,26 +166,26 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-alerts-related-to-log4j-vulnerability-e7791695-c103-4d20-a75a-53e90788616b-ae157950.html">Alerts Related to Log4j Vulnerability</a></td>
-  <td style="text-align:left"><code>Title == &quot;Suspicious script launched&quot;</code></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-alerts-related-to-log4j-vulnerability-e7791695-c103-4d20-a75a-53e90788616b-ae157950.html">Alerts Related to Log4j Vulnerability</a></td>
+<td style="text-align: left;"><code>Title == "Suspicious script launched"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-contex-8fe88892-3a55-4220-9141-939a8e7a15c5-0d5237c7.html">Devices with Log4j vulnerability alerts and additional other alert related context</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-devices-with-log4j-vulnerability-alerts-and-additional-other-alert-related-contex-8fe88892-3a55-4220-9141-939a8e7a15c5-0d5237c7.html">Devices with Log4j vulnerability alerts and additional other alert related context</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoft-teams-chat-initiated-by-a-suspicious-external-user-b8eb3e2e-0f95-458e-b6d1-fe36a0ee8310-2a289095.html">Microsoft Teams chat initiated by a suspicious external user</a></td>
-  <td style="text-align:left"><code>Title == &quot;Microsoft Teams chat initiated by a suspicious external user&quot;</code></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoft-teams-chat-initiated-by-a-suspicious-external-user-b8eb3e2e-0f95-458e-b6d1-fe36a0ee8310-2a289095.html">Microsoft Teams chat initiated by a suspicious external user</a></td>
+<td style="text-align: left;"><code>Title == "Microsoft Teams chat initiated by a suspicious external user"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-74cc0176-3900-440e-b179-45d6a957145a-62723a0f.html">Potential Ransomware activity related to Cobalt Strike</a></td>
-  <td style="text-align:left"><code>Title in &quot;An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected&quot;</code></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-potential-ransomware-activity-related-to-cobalt-strike-74cc0176-3900-440e-b179-45d6a957145a-62723a0f.html">Potential Ransomware activity related to Cobalt Strike</a></td>
+<td style="text-align: left;"><code>Title in "An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected"</code></td>
 </tr>
 </tbody>
 </table>
@@ -193,18 +193,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.html">URL click on ZAP email</a></td>
-  <td style="text-align:left"><code>Title contains &quot;Email messages containing malicious URL removed after delivery&quot;</code></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-url-click-on-zap-email-efe27064-6d35-4720-b7f5-e0326695613d-1ef7f440.html">URL click on ZAP email</a></td>
+<td style="text-align: left;"><code>Title contains "Email messages containing malicious URL removed after delivery"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.html">URLClick details based on malicious URL click alert</a></td>
-  <td style="text-align:left"><code>Title contains &quot;Potentially malicious&quot;</code></td>
+<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-urlclick-details-based-on-malicious-url-click-alert-03e61096-20d0-46eb-b8e0-a507dd00a19f-7d8998d0.html">URLClick details based on malicious URL click alert</a></td>
+<td style="text-align: left;"><code>Title contains "Potentially malicious"</code></td>
 </tr>
 </tbody>
 </table>
@@ -213,62 +213,62 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Title in &quot;An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Title in "An active \,Echo command over pipe on localhost,Event log was cleared,File backups were deleted,Known attack framework activity was observed,Suspicious \,Suspicious decoded content,Suspicious process launch by Rundll32.exe,\,behavior was prevented,malware was detected"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Title == &quot;Microsoft Teams chat initiated by a suspicious external user&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Title == "Microsoft Teams chat initiated by a suspicious external user"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Title contains &quot;Email messages containing malicious URL removed after delivery&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Title contains "Email messages containing malicious URL removed after delivery"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Title contains &quot;Potentially malicious&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Title contains "Potentially malicious"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Title == &quot;Suspicious script launched&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Title == "Suspicious script launched"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>6</strong></td>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>6</strong></td>
 </tr>
 </tbody>
 </table>
@@ -276,141 +276,140 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>An active \</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>An active \</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Echo command over pipe on localhost</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Echo command over pipe on localhost</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Event log was cleared</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Event log was cleared</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>File backups were deleted</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>File backups were deleted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Known attack framework activity was observed</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Known attack framework activity was observed</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Suspicious \</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Suspicious \</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Suspicious decoded content</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Suspicious decoded content</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Suspicious process launch by Rundll32.exe</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Suspicious process launch by Rundll32.exe</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>\</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>\</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>behavior was prevented</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>behavior was prevented</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>malware was detected</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>malware was detected</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft Teams chat initiated by a suspicious external user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Microsoft Teams chat initiated by a suspicious external user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Email messages containing malicious URL removed after delivery</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Email messages containing malicious URL removed after delivery</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Potentially malicious</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Potentially malicious</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Suspicious script launched</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Suspicious script launched</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

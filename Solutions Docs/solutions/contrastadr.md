@@ -17,7 +17,7 @@
 | **Publisher** | Contrast Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.contrastsecurity.com/hc/en-us](https://support.contrastsecurity.com/hc/en-us) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.1.0 |
 | **Author** | Contrast Security |
 | **First Published** | 2025-01-18 |

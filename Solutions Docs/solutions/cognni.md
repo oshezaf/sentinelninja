@@ -15,7 +15,7 @@
 | **Publisher** | Cognni |
 | **Support Tier** | Partner |
 | **Support Link** | [https://cognni.ai/contact-support/](https://cognni.ai/contact-support/) |
-| **Categories** | domains |
+| **Categories** | Security - Information Protection |
 | **Version** | 2.0.0 |
 | **Author** | Cognni |
 | **First Published** | 2022-05-06 |

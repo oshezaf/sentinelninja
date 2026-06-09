@@ -15,7 +15,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Identity,Security - Automation (SOAR) |
 | **Version** | 3.3.11 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-16 |

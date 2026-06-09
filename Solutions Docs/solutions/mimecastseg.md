@@ -17,7 +17,7 @@
 | **Publisher** | Mimecast |
 | **Support Tier** | Partner |
 | **Support Link** | [https://mimecastsupport.zendesk.com/](https://mimecastsupport.zendesk.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.2 |
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2022-02-24 |

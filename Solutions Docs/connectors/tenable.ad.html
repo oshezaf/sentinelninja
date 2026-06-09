@@ -18,8 +18,6 @@
 <h1 id="tenablead">⚠️ 🔍 Tenable.ad</h1>
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
-</blockquote>
-<blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
@@ -28,30 +26,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Connector ID</strong></td>
-  <td style="text-align:left"><code>Tenable.ad</code></td>
+<td style="text-align: left;"><strong>Connector ID</strong></td>
+<td style="text-align: left;"><code>Tenable.ad</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Publisher</strong></td>
-  <td style="text-align:left">Tenable</td>
+<td style="text-align: left;"><strong>Publisher</strong></td>
+<td style="text-align: left;">Tenable</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Used in Solutions</strong></td>
-  <td style="text-align:left"><a href="../solutions/tenablead.html">TenableAD</a></td>
+<td style="text-align: left;"><strong>Used in Solutions</strong></td>
+<td style="text-align: left;"><a href="../solutions/tenablead.html">TenableAD</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Collection Method</strong></td>
-  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
+<td style="text-align: left;"><strong>Collection Method</strong></td>
+<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD/Data%20Connectors/Tenable.ad.json">Tenable.ad.json</a></td>
+<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/TenableAD/Data%20Connectors/Tenable.ad.json">Tenable.ad.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -62,24 +60,24 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Table</th>
-  <th style="text-align:center">Transformations</th>
-  <th style="text-align:center">Ingestion API</th>
-  <th style="text-align:center">Lake-Only</th>
+<th style="text-align: left;">Table</th>
+<th style="text-align: center;">Transformations</th>
+<th style="text-align: center;">Ingestion API</th>
+<th style="text-align: center;">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/tenable-ie-cl.html"><code>Tenable_IE_CL</code></a></td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+<td style="text-align: left;"><a href="../tables/tenable-ie-cl.html"><code>Tenable_IE_CL</code></a></td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">✓</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/tenable-ad-cl.html"><code>Tenable_ad_CL</code></a></td>
-  <td style="text-align:center">?</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">?</td>
+<td style="text-align: left;"><a href="../tables/tenable-ad-cl.html"><code>Tenable_ad_CL</code></a></td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">✓</td>
+<td style="text-align: center;">?</td>
 </tr>
 </tbody>
 </table>
@@ -87,25 +85,19 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong></p>
-<ul>
-<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
-<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
-</ul>
-<p><strong>Custom Permissions:</strong></p>
-<ul>
-<li><strong>Access to Tenable.ad Configuration</strong>: Permissions to configure syslog alerting engine</li>
-</ul>
+<p><strong>Resource Provider Permissions:</strong>
+- <strong>Workspace</strong> (Workspace): read and write permissions are required.
+- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Custom Permissions:</strong>
+- <strong>Access to Tenable.ad Configuration</strong>: Permissions to configure syslog alerting engine</p>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
-</blockquote>
-<blockquote>
 <p>This data connector depends on a parser based on a Kusto Function to work as expected. <a href="https://raw.githubusercontent.com/tenable/Azure-Sentinel/Tenable.ad-connector/Solutions/TenableAD/Parsers/afad_parser.kql">Follow these steps</a> to create the Kusto Functions alias, <strong>afad_parser</strong></p>
 </blockquote>
 <p><strong>1. Configure the Syslog server</strong></p>
 <p>You will first need a <strong>linux Syslog</strong> server that Tenable.ad will send logs to. Typically you can run <strong>rsyslog</strong> on <strong>Ubuntu</strong>.
-You can then configure this server as you wish, but it is recommended to be able to output Tenable.ad logs in a separate file.</p>
+ You can then configure this server as you wish, but it is recommended to be able to output Tenable.ad logs in a separate file.</p>
 <p>Configure rsyslog to accept logs from your Tenable.ad IP address.:</p>
 <pre><code class="language-shell">sudo -i
 
@@ -132,15 +124,11 @@ systemctl restart rsyslog
 <p>The OMS agent will receive the Tenable.ad syslog events and publish it in Sentinel :
 <strong>Choose where to install the agent:</strong></p>
 <p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
-<p>Select the machine to install the agent on and then click <strong>Connect</strong>.</p>
-<ul>
-<li><strong>Install agent on Linux Virtual Machine</strong></li>
-</ul>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
+  - <strong>Install agent on Linux Virtual Machine</strong></p>
 <p><strong>Install agent on a non-Azure Linux Machine</strong></p>
-<p>Download the agent on the relevant machine and follow the instructions.</p>
-<ul>
-<li><strong>Install agent on Linux (Non-Azure)</strong></li>
-</ul>
+<p>Download the agent on the relevant machine and follow the instructions.
+  - <strong>Install agent on Linux (Non-Azure)</strong></p>
 <p><strong>3. Check agent logs on the Syslog server</strong></p>
 <pre><code class="language-shell">tail -f /var/opt/microsoft/omsagent/log/omsagent.log
 </code></pre>
@@ -167,7 +155,6 @@ If you used the Quickstart template, the Syslog server will by default listen on
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
-
 </div>
 
 </body>

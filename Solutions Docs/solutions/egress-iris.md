@@ -13,7 +13,7 @@
 | **Publisher** | Egress Software Technologies Ltd |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.egress.com](https://support.egress.com) |
-| **Categories** | domains |
+| **Categories** | Application |
 | **Version** | 3.0.0 |
 | **Author** | Egress - support@egress.com |
 | **First Published** | 2024-03-11 |

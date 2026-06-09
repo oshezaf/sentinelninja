@@ -13,7 +13,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security |
 | **Version** | 3.0.0 |
 | **Author** | Microsoft |
 | **First Published** | 2025-03-20 |

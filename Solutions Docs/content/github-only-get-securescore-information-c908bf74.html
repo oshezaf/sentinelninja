@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left">GitHub Only</td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;">GitHub Only</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/M365-Security-Posture/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/M365-Security-Posture/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,127 +47,55 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">6</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">6</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">5</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">M365_Secure_Score_Send_Data</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">M365_Secure_Score_Controls_Send_Data</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Exposure_Score_Send_Data</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Recommendations_Send_Data</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Secure_Score_Send_Data</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Vulnerabilities_Send_Data</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/logs</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">M365_Secure_Score_HTTP</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/security/secureScores?$top=1</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Exposure_Score_HTTP</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/exposureScore</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Recommendations_HTTP</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/recommendations</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Secure_Score_HTTP</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/configurationScore</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">MDE_Vulnerabilities_HTTP</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/Vulnerabilities</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| M365_Secure_Score_Send_Data | post | `/api/logs` | — |
+| M365_Secure_Score_Controls_Send_Data | post | `/api/logs` | — |
+| MDE_Exposure_Score_Send_Data | post | `/api/logs` | — |
+| MDE_Recommendations_Send_Data | post | `/api/logs` | — |
+| MDE_Secure_Score_Send_Data | post | `/api/logs` | — |
+| MDE_Vulnerabilities_Send_Data | post | `/api/logs` | — |
+
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| M365_Secure_Score_HTTP | GET | `https://graph.microsoft.com/v1.0/security/secureScores?$top=1` | — |
+| MDE_Exposure_Score_HTTP | GET | `https://api.securitycenter.windows.com/api/exposureScore` | — |
+| MDE_Recommendations_HTTP | GET | `https://api.securitycenter.windows.com/api/recommendations` | — |
+| MDE_Secure_Score_HTTP | GET | `https://api.securitycenter.windows.com/api/configurationScore` | — |
+| MDE_Vulnerabilities_HTTP | GET | `https://api.securitycenter.windows.com/api/Vulnerabilities` | — |
+
 </details>
 
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
-
 </div>
 
 </body>

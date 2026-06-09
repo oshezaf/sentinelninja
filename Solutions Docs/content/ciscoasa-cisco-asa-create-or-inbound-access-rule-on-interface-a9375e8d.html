@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/ciscoasa.html">CiscoASA</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/ciscoasa.html">CiscoASA</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,103 +47,57 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-cisco-asav-connector.html"><code>cisco-asav-connector</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-cisco-asav-connector.html"><code>cisco-asav-connector</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/custom-ciscoasaconnector.html"><code>CiscoASAConnector</code></a></td>
-  <td style="text-align:left">Custom</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/custom-ciscoasaconnector.html"><code>CiscoASAConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_IPs</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/ip</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Update_incident</td>
-  <td style="text-align:left">put</td>
-  <td style="text-align:left"><code>/Incidents</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="cisco-asav-connector"><a href="../logic-apps/managed-cisco-asav-connector.html"><code>cisco-asav-connector</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Fetch_inbound_access_rules_on_an_interface</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Create_an_inbound_access_rule_on_an_interface</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Remove_an_inbound_access_rule_on_an_interface</td>
-  <td style="text-align:left">delete</td>
-  <td style="text-align:left"><code>/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules/@{encodeURIComponent(items('For_each_over_ipAddresses')['extendedAceItemObjectId'])}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Update_incident | put | `/Incidents` | — |
+
+#### [`cisco-asav-connector`](../logic-apps/managed-cisco-asav-connector.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Fetch_inbound_access_rules_on_an_interface | get | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules` | — |
+| Create_an_inbound_access_rule_on_an_interface | post | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules` | — |
+| Remove_an_inbound_access_rule_on_an_interface | delete | `/api/access/in/@{encodeURIComponent(variables('Interface ID'))}/rules/@{encodeURIComponent(items('For_each_over_ipAddresses')['extendedAceItemObjectId'])}` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -153,18 +107,16 @@
 <h1 id="cisco-asa---create-or-remove-access-rules-on-an-interface-for-ip-addresses">Cisco ASA - Create or remove access rules on an interface for IP Addresses</h1>
 <h2 id="summary">Summary</h2>
 <p>This playbook allows blocking/unblocking of IPs in Cisco ASA, using <strong>Access Rules</strong> which will be created on an interface.</p>
-<p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions</p>
-<ol>
-<li>For the IPs we check if they are already directly blocked by an access rule on the interface</li>
-<li>An adaptive card is sent to a Teams channel with information about the incident and giving the option to ignore an IP, or depdening on it's current status block it by adding an access rule or unblock it by removing an access rule
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-AdaptiveCard.png" alt="Adaptive card" /></li>
-<li>Comment is added to Microsoft Sentinel incident.
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-AzureSentinel-Comments.png" alt="playbook overview" /></li>
-</ol>
+<p>When a new Sentinel incident is created, this playbook gets triggered and performs below actions
+1. For the IPs we check if they are already directly blocked by an access rule on the interface
+2. An adaptive card is sent to a Teams channel with information about the incident and giving the option to ignore an IP, or depdening on it's current status block it by adding an access rule or unblock it by removing an access rule
+    <img alt="Adaptive card" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-AdaptiveCard.png" />
+3. Comment is added to Microsoft Sentinel incident.
+<img alt="playbook overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-AzureSentinel-Comments.png" /></p>
 <p><strong>Inbound access rule is added in Cisco ASA:</strong>
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-CiscoASA.png" alt="playbook overview" /></p>
+<img alt="playbook overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-CiscoASA.png" /></p>
 <p><strong>Playbook overview:</strong></p>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-LogicApp.png" alt="playbook overview" /></p>
+<p><img alt="playbook overview" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoASA/Playbooks/CiscoASA-CreateInboundAccessRuleOnInterface/images/CreateInboundAccessRuleOnInterface-LogicApp.png" /></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li><strong>This playbook template is based on Microsoft Sentinel Incident Trigger which is currently in Private Preview (Automation Rules).</strong> You can change the trigger to the Sentinel Alert trigger in cases you are not part of the Private Preview.</li>
@@ -173,16 +125,14 @@
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li>Deploy the playbook by clicking on &quot;Depoly to Azure&quot; button. This will take you to deplyoing an ARM Template wizard.</li>
+<li>Deploy the playbook by clicking on "Depoly to Azure" button. This will take you to deplyoing an ARM Template wizard.</li>
 </ol>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flaurens1984%2FAzure-Sentinel%2Ffeature%2FCiscoASAConnector%2FPlaybooks%2FCiscoASAConnector%2FCiscoASA-CreateInboundAccessRuleOnInterface%2Fazuredeploy.json" target="_blank">
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flaurens1984%2FAzure-Sentinel%2Ffeature%2FCiscoASAConnector%2FPlaybooks%2FCiscoASAConnector%2FCiscoASA-CreateInboundAccessRuleOnInterface%2Fazuredeploy.json" target="_blank">
     <img src="https://aka.ms/deploytoazurebutton"/>
-</a>
-
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flaurens1984%2FAzure-Sentinel%2Ffeature%2FCiscoASAConnector%2FPlaybooks%2FCiscoASAConnector%2FCiscoASA-CreateInboundAccessRuleOnInterface%2Fazuredeploy.json" target="_blank">
-   <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>    
-</a>
-
+</a></p>
+<p><a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Flaurens1984%2FAzure-Sentinel%2Ffeature%2FCiscoASAConnector%2FPlaybooks%2FCiscoASAConnector%2FCiscoASA-CreateInboundAccessRuleOnInterface%2Fazuredeploy.json" target="_blank">
+   <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>  <br />
+</a></p>
 <ol start="2">
 <li>Fill in the required paramteres:<ul>
 <li>Playbook Name: Enter the playbook name here (ex:CiscoASA-CreateInboundAccessRuleOnInterface)</li>
@@ -193,24 +143,20 @@
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection.</p>
-<ol>
-<li>Click the Microsoft Sentinel connection resource</li>
-<li>Click edit API connection</li>
-<li>Click Authorize</li>
-<li>Sign in</li>
-<li>Click Save</li>
-<li>Repeat steps for other connections such as Teams and Cisco ASA (For authorizing the Cisco ASA API connection, the username and password needs to be provided)</li>
-</ol>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat steps for other connections such as Teams and Cisco ASA (For authorizing the Cisco ASA API connection, the username and password needs to be provided)</p>
 <h4 id="b-select-teams-channel">b. Select Teams channel</h4>
-<p>The Teams channel to which the adaptive card will be posted will need to be configured.</p>
-<ol>
-<li>Click the Azure Logic app resource</li>
-<li>Edit the Logic App</li>
-<li>Find the 'PostToTeams' action</li>
-<li>Select a Team and Channel</li>
-<li>Save the Logic App</li>
-</ol>
+<p>The Teams channel to which the adaptive card will be posted will need to be configured.
+1. Click the Azure Logic app resource
+2. Edit the Logic App
+3. Find the 'PostToTeams' action
+4. Select a Team and Channel
+5. Save the Logic App</p>
 <h4 id="c-configurations-in-sentinel">c. Configurations in Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel analytical rules should be configured to trigger an incident with IP Entity.</li>
@@ -219,7 +165,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ciscoasa.html">Back to CiscoASA</a></p>
-
 </div>
 
 </body>

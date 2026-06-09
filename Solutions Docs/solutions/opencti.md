@@ -13,7 +13,7 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Security - Automation (SOAR) |
 | **Version** | 2.0.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-09-22 |

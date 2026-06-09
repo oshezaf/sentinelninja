@@ -15,13 +15,13 @@
 | **Publisher** | Netskope |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.netskope.com/services#support](https://www.netskope.com/services#support) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.1.4 |
 | **Author** | Netskope |
 | **First Published** | 2024-03-18 |
 | **Last Updated** | 2024-03-18 |
 | **Solution Folder** | [Netskopev2](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Netskopev2) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netskope.netskope_mss) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (66%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netskope.netskope_mss) · Rating: ★☆☆☆☆ 1.0/5 (1 ratings) · Popularity: 🔵 Medium (52%) |
 
 Netskope solution for Microsoft Sentinel enables you to ingest Netskope alerts and events into Microsoft Sentinel. The connector provides visibility into Netskope Platform Events and Alerts in Microsoft Sentinel to improve monitoring and investigation capabilities.
 

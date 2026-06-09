@@ -1,6 +1,4 @@
-# Abnormal Security Events
-
-*Solution: AbnormalSecurity*
+# AbnormalSecurity
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/AbnormalSecurity/Data%20Connectors/Logo/abnormalsecurity.svg" alt="AbnormalSecurity Logo" width="75" height="75">
 
@@ -15,13 +13,12 @@
 | **Publisher** | Abnormal Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://abnormalsecurity.com/contact](https://abnormalsecurity.com/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | AbnormalSecurity - support@abnormalsecurity.com |
 | **First Published** | 2021-10-20 |
-| **Last Updated** | 2026-05-26 |
+| **Last Updated** | 2026-02-17 |
 | **Solution Folder** | [AbnormalSecurity](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AbnormalSecurity) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/abnormalsecuritycorporation1593011233180.fe1b4806-215b-4610-bf95-965a7a65579c) · Popularity: 🟢 High (83%) |
 
 The Abnormal Security solution provides real-time security event ingestion from Abnormal's cloud email security platform into Microsoft Sentinel. Supports both push-based (CCF Push) and pull-based (Azure Functions) connectors. The push connector routes events to per-event-type tables (threats, cases, audit logs, abuse mailbox, posture changes, ATO cases, remediations, vendor cases) using the Codeless Connector Framework.
 

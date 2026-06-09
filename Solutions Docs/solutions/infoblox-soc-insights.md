@@ -15,7 +15,7 @@
 | **Publisher** | Infoblox |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.infoblox.com/](https://support.infoblox.com/) |
-| **Categories** | domains |
+| **Categories** | Networking,Security - Threat Protection,Security - Network,Security - Threat Intelligence |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-03-06 |

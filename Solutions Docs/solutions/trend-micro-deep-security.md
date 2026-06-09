@@ -15,13 +15,13 @@
 | **Publisher** | Trend Micro |
 | **Support Tier** | Partner |
 | **Support Link** | [https://success.trendmicro.com/dcx/s/?language=en_US](https://success.trendmicro.com/dcx/s/?language=en_US) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.1 |
 | **Author** | Trend Micro |
 | **First Published** | 2022-05-10 |
 | **Last Updated** | 2026-05-26 |
 | **Solution Folder** | [Trend Micro Deep Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Deep%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_deep_security_mss) · Popularity: 🟡 Low (10%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/trendmicro.trend_micro_deep_security_mss) · Popularity: ⚪ Very Low (9%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [Trend Micro Deep Security](https://www.trendmicro.com/en_us/business/products/hybrid-cloud/deep-security.html) solution for Microsoft Sentinel enables you to ingest Deep Security logs into Microsoft Sentinel, using the Common Event Format (CEF) for Security Monitoring.

@@ -1,6 +1,4 @@
-# Cyren Threat Intelligence for Microsoft Sentinel
-
-*Solution: CyrenThreatIntelligence*
+# CyrenThreatIntelligence
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/cyren_logo.svg" alt="CyrenThreatIntelligence Logo" width="75" height="75">
 
@@ -15,13 +13,11 @@
 | **Publisher** | Data443 Risk Mitigation, Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.0.3 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-11-16 |
-| **Last Updated** | 2026-03-16 |
 | **Solution Folder** | [CyrenThreatIntelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyrenThreatIntelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-cyren-threat-intel) · Popularity: 🟡 Low (11%) |
 
 The [Cyren Threat Intelligence](https://data443.com/cyren-threat-intelligence/) solution provides the capability to ingest Cyren IP reputation and malware URL threat intelligence into Microsoft Sentinel using the Codeless Connector Framework (CCF). This solution deploys REST API poller connectors, a custom log table, data collection rules, analytics rules, and visualization workbook to help security teams detect and investigate network-based threats.
 

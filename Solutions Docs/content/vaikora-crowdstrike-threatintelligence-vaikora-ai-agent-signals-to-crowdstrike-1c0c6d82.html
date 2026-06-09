@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/vaikora-crowdstrike-threatintelligence.html">Vaikora-CrowdStrike-ThreatIntelligence</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/vaikora-crowdstrike-threatintelligence.html">Vaikora-CrowdStrike-ThreatIntelligence</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-CrowdStrike-ThreatIntelligence/Playbooks/VaikoraToCrowdStrike_Playbook.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-CrowdStrike-ThreatIntelligence/Playbooks/VaikoraToCrowdStrike_Playbook.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,54 +47,31 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_CrowdStrike_Token</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('CrowdStrike_BaseUrl')}/oauth2/token</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Vaikora_Actions</td>
-  <td style="text-align:left">GET</td>
-  <td style="text-align:left"><code>@{parameters('Vaikora_BaseUrl')}/actions?agent_id=@{parameters('VaikoraAgentId')}&amp;per_page=100</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Post_IOC_to_CrowdStrike</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@{parameters('CrowdStrike_BaseUrl')}/iocs/entities/indicators/v1?ignore_warnings=true</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_CrowdStrike_Token | POST | `@{parameters('CrowdStrike_BaseUrl')}/oauth2/token` | — |
+| Get_Vaikora_Actions | GET | `@{parameters('Vaikora_BaseUrl')}/actions?agent_id=@{parameters('VaikoraAgentId')}&per_page=100` | — |
+| Post_IOC_to_CrowdStrike | POST | `@{parameters('CrowdStrike_BaseUrl')}/iocs/entities/indicators/v1?ignore_warnings=true` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -111,35 +88,33 @@
 <table>
 <thead>
 <tr>
-  <th>Vaikora <code>risk_level</code></th>
-  <th>CrowdStrike <code>severity</code></th>
-  <th>CrowdStrike <code>action</code></th>
+<th>Vaikora <code>risk_level</code></th>
+<th>CrowdStrike <code>severity</code></th>
+<th>CrowdStrike <code>action</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td>critical</td>
-  <td>critical</td>
-  <td>prevent</td>
+<td>critical</td>
+<td>critical</td>
+<td>prevent</td>
 </tr>
 <tr>
-  <td>high</td>
-  <td>high</td>
-  <td>detect</td>
+<td>high</td>
+<td>high</td>
+<td>detect</td>
 </tr>
 <tr>
-  <td>medium / low</td>
-  <td>medium</td>
-  <td>detect</td>
+<td>medium / low</td>
+<td>medium</td>
+<td>detect</td>
 </tr>
 </tbody>
 </table>
-<p>Tags applied automatically:</p>
-<ul>
-<li><code>vaikora</code>, <code>ai-agent-security</code>, <code>data443</code> (always)</li>
-<li><code>ai-agent-anomaly</code> when <code>is_anomaly</code> is <code>true</code></li>
-<li><code>ai-threat-detected</code> when <code>threat_detected</code> is <code>true</code></li>
-</ul>
+<p>Tags applied automatically:
+- <code>vaikora</code>, <code>ai-agent-security</code>, <code>data443</code> (always)
+- <code>ai-agent-anomaly</code> when <code>is_anomaly</code> is <code>true</code>
+- <code>ai-threat-detected</code> when <code>threat_detected</code> is <code>true</code></p>
 <p>IOC type is resolved from the action fields: <code>ip_address</code> or <code>target_ip</code> → <code>ipv4</code>, <code>url</code> or <code>target_url</code> → <code>url</code>, fallback → <code>domain</code>.</p>
 <p>Each IOC sets <code>external_id</code> to <code>vaikora-{action_id}</code> for deduplication.</p>
 <h2 id="prerequisites">Prerequisites</h2>
@@ -159,7 +134,7 @@ ReleaseNotes.md                                Change history
 </code></pre>
 <h2 id="deployment">Deployment</h2>
 <h3 id="via-content-hub">Via Content Hub</h3>
-<p>Install from Microsoft Sentinel Content Hub. Search for &quot;Vaikora CrowdStrike&quot;.</p>
+<p>Install from Microsoft Sentinel Content Hub. Search for "Vaikora CrowdStrike".</p>
 <h3 id="via-arm-template">Via ARM template (standalone)</h3>
 <pre><code class="language-bash">az deployment group create \
   --resource-group &lt;your-rg&gt; \
@@ -189,7 +164,6 @@ ReleaseNotes.md                                Change history
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/vaikora-crowdstrike-threatintelligence.html">Back to Vaikora-CrowdStrike-ThreatIntelligence</a></p>
-
 </div>
 
 </body>

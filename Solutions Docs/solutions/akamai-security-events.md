@@ -15,12 +15,12 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security |
 | **Version** | 3.0.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-03-23 |
 | **Solution Folder** | [Akamai Security Events](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Security%20Events) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-akamai) · Popularity: 🔵 Medium (69%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-akamai) · Popularity: 🔵 Medium (64%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The Akamai Security Solution for Microsoft Sentinel enables ingestion of [Akamai Security Solutions](https://www.akamai.com/solutions/security) events using the Common Event Format (CEF) into Microsoft Sentinel for Security Monitoring. 

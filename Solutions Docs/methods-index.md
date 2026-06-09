@@ -12,9 +12,9 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
-| [CCF](methods/ccf.md) | **177** | 147 | 1 | 29 |
+| [CCF](methods/ccf.md) | **177** | 164 | 1 | 12 |
 | [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
-| [Azure Function](methods/azure-function.md) | **125** | 89 | 26 | 10 |
+| [Azure Function](methods/azure-function.md) | **125** | 90 | 26 | 9 |
 | [REST Pull API](methods/rest-pull-api.md) | **50** | 42 | 1 | 7 |
 | [CCF Push](methods/ccf-push.md) | **39** | 38 | 0 | 1 |
 | [Native](methods/native.md) | **18** | 18 | 0 | 0 |
@@ -23,7 +23,7 @@ Data connectors use different collection methods to ingest data into Microsoft S
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **626** | **415** | **151** | **60** |
+| **Total** | **626** | **433** | **151** | **42** |
 
 ---
 

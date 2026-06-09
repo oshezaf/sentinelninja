@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/domaintools.html">DomainTools</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/domaintools.html">DomainTools</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,116 +47,55 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">8</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">8</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_IPs</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/ip</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_Parsed_WhoIs_data_to_Incident_Comments</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_basic_Parsed_WhoIs_data_to_Incident_Comments</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_parsed_whois_contacts_to_incident_Comments</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_parsed_whois_networks_to_incident_Comments</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_parsed_whois_routes_data_to_incident_comments</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_refferral_servers_comments_to_incident_comments</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">ParsedWhois</td>
-  <td style="text-align:left">—</td>
-  <td style="text-align:left">—</td>
-  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/ParsedWhois')]</code></td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_IPs | post | `/entities/ip` | — |
+| Add_Parsed_WhoIs_data_to_Incident_Comments | post | `/Incidents/Comment` | — |
+| Add_basic_Parsed_WhoIs_data_to_Incident_Comments | post | `/Incidents/Comment` | — |
+| Add_parsed_whois_contacts_to_incident_Comments | post | `/Incidents/Comment` | — |
+| Add_parsed_whois_networks_to_incident_Comments | post | `/Incidents/Comment` | — |
+| Add_parsed_whois_routes_data_to_incident_comments | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+| Add_refferral_servers_comments_to_incident_comments | post | `/Incidents/Comment` | — |
+
+#### [`function`](../logic-apps/builtin-function.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| ParsedWhois | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/ParsedWhois')]` |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/readme.md">DomainTools-IP-Address-Playbook/readme.md</a></em></p>
 </blockquote>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/logo.png" alt="DomainTools" /><br></p>
+<p><img alt="DomainTools" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/logo.png" /><br></p>
 <h2 id="domaintools-ip-address-enrichment-playbook">DomainTools IP Address Enrichment Playbook</h2>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
@@ -167,10 +106,9 @@
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
-<a name="overview">
-
+<p><a name="overview"></p>
 <h2 id="overview">Overview</h2>
-<p>This playbook uses the DomainTools Parsed Whois API. It is able to provide whois information for a IP or set of IPs associated with an incident.</p>
+<p>This playbook uses the DomainTools Parsed Whois API. It is able to provide whois information for a IP or set of IPs associated with an incident. </p>
 <p>Visit https://www.domaintools.com/integrations to request a Api key.</p>
 <p>When a new Azure Sentinel Incident is created, and this playbook is triggered, it performs these actions:</p>
 <ul>
@@ -178,39 +116,32 @@
 <li>Iterates through the IP entities and fetches the results from Parsed Whois for each entity.</li>
 <li>All the details from DomainTools Parsed Whois will be added as comments in a tabular format.</li>
 </ul>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/ip_comments.png" alt="Incident Comments" /></p>
-<a name="deployplaybook">
-
+<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/ip_comments.png" /></p>
+<p><a name="deployplaybook"></p>
 <h2 id="links-to-deploy-the-domaintools-ip-address-playbook">Links to deploy the DomainTools IP Address Playbook</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-IP-Address-Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-IP-Address-Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
-<a name="authentication">
-
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-IP-Address-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-IP-Address-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a name="authentication"></p>
 <h2 id="authentication">Authentication</h2>
-<p>Authentication methods this connector supports:</p>
-<ul>
-<li><a href="https://www.domaintools.com/integrations">API Key authentication</a></li>
-</ul>
-<a name="prerequisites">
-
+<p>Authentication methods this connector supports:
+ - <a href="https://www.domaintools.com/integrations">API Key authentication</a></p>
+<p><a name="prerequisites"></p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>A DomainTools API Key</li>
 <li>DomainTools Function App should be deployed</li>
 </ul>
-<a name="deployment">
-
+<p><a name="deployment"></p>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ul>
-<li>Deploy the playbooks by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/deployment.png" alt="deployment" /></li>
-<li>Click &quot;Review + create&quot;. Once the validation is successful, click on &quot;Create&quot;.</li>
+  <img alt="deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-IP-Address-Playbook/images/deployment.png" />  </li>
+<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
 </ul>
-<a name="postdeployment">
-
+<p><a name="postdeployment"></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions:</h3>
 <ul>
-<li>As a best practice, we have used the Sentinel connection in Logic Apps that use &quot;ManagedSecurityIdentity&quot; permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
+<li>As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
 </ul>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel:</h4>
 <ul>
@@ -220,7 +151,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/domaintools.html">Back to DomainTools</a></p>
-
 </div>
 
 </body>

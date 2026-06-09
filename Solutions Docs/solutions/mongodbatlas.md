@@ -15,12 +15,12 @@
 | **Publisher** | MongoDB |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.mongodb.com/company/contact](https://www.mongodb.com/company/contact) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.8 |
 | **Author** | steve.lord@improving.com |
 | **First Published** | 2025-08-22 |
 | **Solution Folder** | [MongoDBAtlas](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MongoDBAtlas) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mongodb.azure-sentinel-solution-mongodbatlas) · Popularity: 🔵 Medium (68%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mongodb.azure-sentinel-solution-mongodbatlas) · Popularity: 🔵 Medium (66%) |
 
 This custom data connector uses a Function App to pull MongoDB Atlas log files (MDBA) data from the MongoDB Atlas Administation API and uploads into the selected Log Analytics workspace via the Azure Log Ingestion API.
 

@@ -15,7 +15,7 @@
 | **Publisher** | Data443 Risk Mitigation, Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.data443.com](https://www.data443.com) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence,Identity |
 | **Version** | 3.0.0 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2025-01-01 |

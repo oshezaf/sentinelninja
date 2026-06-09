@@ -13,13 +13,13 @@
 | **Publisher** | TROPICO Security |
 | **Support Tier** | Partner |
 | **Support Link** | [https://tropicosecurity.com/](https://tropicosecurity.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Tropico Security - dev@tropicosecurity.com |
 | **First Published** | 2025-12-02 |
 | **Last Updated** | 2025-12-22 |
 | **Solution Folder** | [Tropico](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tropico) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tropico.azure-sentinel-solution-tropico) · Popularity: 🟡 Low (12%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tropico.azure-sentinel-solution-tropico) · Popularity: 🟡 Low (23%) |
 
 The [Tropico](https://www.tropicosecurity.com/) solution for Microsoft Sentinel enables you to ingest Tropico Security Events, Alerts and Incidents to the Microsoft Sentinel platform.
 

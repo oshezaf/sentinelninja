@@ -13,7 +13,7 @@
 | **Publisher** | Semperis |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.semperis.com/contact-us/](https://www.semperis.com/contact-us/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection,Identity |
 | **Version** | 3.0.2 |
 | **Author** | Semperis |
 | **First Published** | 2021-10-18 |

@@ -15,7 +15,7 @@
 | **Publisher** | Zimperium |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zimperium.com/support/](https://www.zimperium.com/support/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.0 |
 | **Author** | Zimperium |
 | **First Published** | 2022-05-02 |

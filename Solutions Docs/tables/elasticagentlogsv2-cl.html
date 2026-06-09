@@ -24,22 +24,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -54,786 +54,786 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">AgentEphemeralId</td>
-  <td style="text-align:left">guid</td>
-  <td style="text-align:left">Ephemeral identifier of the agent instance.</td>
+<td style="text-align: left;">AgentEphemeralId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Ephemeral identifier of the agent instance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentHostname</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Hostname where agent is running.</td>
+<td style="text-align: left;">AgentHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hostname where agent is running.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentId</td>
-  <td style="text-align:left">guid</td>
-  <td style="text-align:left">Unique identifier of the agent.</td>
+<td style="text-align: left;">AgentId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Unique identifier of the agent.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the Elastic Agent.</td>
+<td style="text-align: left;">AgentName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the Elastic Agent.</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of the agent (e.g., metricbeat).</td>
+<td style="text-align: left;">AgentType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of the agent (e.g., metricbeat).</td>
 </tr>
 <tr>
-  <td style="text-align:left">AgentVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Version of the Elastic Agent.</td>
+<td style="text-align: left;">AgentVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the Elastic Agent.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatId</td>
-  <td style="text-align:left">guid</td>
-  <td style="text-align:left">Unique identifier of the beat instance.</td>
+<td style="text-align: left;">BeatId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Unique identifier of the beat instance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStateManagementEnabled</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Whether beat management is enabled.</td>
+<td style="text-align: left;">BeatStateManagementEnabled</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether beat management is enabled.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStateModuleCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Number of modules configured.</td>
+<td style="text-align: left;">BeatStateModuleCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of modules configured.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStateOutputName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Beat output name.</td>
+<td style="text-align: left;">BeatStateOutputName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Beat output name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStateQueueName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Beat queue name.</td>
+<td style="text-align: left;">BeatStateQueueName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Beat queue name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStatsLibbeatOutputEvents</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat output events stats.</td>
+<td style="text-align: left;">BeatStatsLibbeatOutputEvents</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat output events stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStatsLibbeatOutputRead</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat output read stats.</td>
+<td style="text-align: left;">BeatStatsLibbeatOutputRead</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat output read stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStatsLibbeatOutputType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Libbeat output type.</td>
+<td style="text-align: left;">BeatStatsLibbeatOutputType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Libbeat output type.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStatsLibbeatOutputWrite</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat output write stats.</td>
+<td style="text-align: left;">BeatStatsLibbeatOutputWrite</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat output write stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStatsRuntimeGoroutines</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Number of Go runtime goroutines.</td>
+<td style="text-align: left;">BeatStatsRuntimeGoroutines</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of Go runtime goroutines.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatStatsUptimeMs</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Beat uptime in milliseconds.</td>
+<td style="text-align: left;">BeatStatsUptimeMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Beat uptime in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">BeatType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of beat (e.g., metricbeat).</td>
+<td style="text-align: left;">BeatType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of beat (e.g., metricbeat).</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConnectorName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Friendly name identifying the connector instance.</td>
+<td style="text-align: left;">ConnectorName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Friendly name identifying the connector instance.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DataStreamDataset</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Data stream dataset (e.g., system.cpu).</td>
+<td style="text-align: left;">DataStreamDataset</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data stream dataset (e.g., system.cpu).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DataStreamNamespace</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Data stream namespace (e.g., default).</td>
+<td style="text-align: left;">DataStreamNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data stream namespace (e.g., default).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DataStreamType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Data stream type (e.g., metrics, logs).</td>
+<td style="text-align: left;">DataStreamType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Data stream type (e.g., metrics, logs).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DstBytes</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Destination bytes received (ASIM compatibility).</td>
+<td style="text-align: left;">DstBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination bytes received (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DstPackets</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Destination packets received (ASIM compatibility).</td>
+<td style="text-align: left;">DstPackets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Destination packets received (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DvcHostname</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Device hostname (ASIM compatibility).</td>
+<td style="text-align: left;">DvcHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device hostname (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DvcId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Device unique identifier (ASIM compatibility).</td>
+<td style="text-align: left;">DvcId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device unique identifier (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DvcIpAddr</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Device IP address (ASIM compatibility).</td>
+<td style="text-align: left;">DvcIpAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Device IP address (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">DvcOs</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system name.</td>
+<td style="text-align: left;">DvcOs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DvcOsVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system version.</td>
+<td style="text-align: left;">DvcOsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EcsVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Elastic Common Schema version.</td>
+<td style="text-align: left;">EcsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Elastic Common Schema version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ElasticAgentId</td>
-  <td style="text-align:left">guid</td>
-  <td style="text-align:left">Elastic Agent unique identifier.</td>
+<td style="text-align: left;">ElasticAgentId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Elastic Agent unique identifier.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ElasticAgentProcess</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Elastic Agent process name.</td>
+<td style="text-align: left;">ElasticAgentProcess</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Elastic Agent process name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ElasticAgentSnapshot</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Whether this is a snapshot build.</td>
+<td style="text-align: left;">ElasticAgentSnapshot</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether this is a snapshot build.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ElasticAgentVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Elastic Agent version.</td>
+<td style="text-align: left;">ElasticAgentVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Elastic Agent version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventDataset</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Event dataset identifier.</td>
+<td style="text-align: left;">EventDataset</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event dataset identifier.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventDuration</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Event duration in nanoseconds.</td>
+<td style="text-align: left;">EventDuration</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Event duration in nanoseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventModule</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Event module name.</td>
+<td style="text-align: left;">EventModule</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event module name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventProductVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Event product version (agent version).</td>
+<td style="text-align: left;">EventProductVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Event product version (agent version).</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostArchitecture</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">CPU architecture (e.g., x86_64).</td>
+<td style="text-align: left;">HostArchitecture</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">CPU architecture (e.g., x86_64).</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostContainerized</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Whether host is containerized.</td>
+<td style="text-align: left;">HostContainerized</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Whether host is containerized.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostCpuUsage</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Host CPU usage percentage.</td>
+<td style="text-align: left;">HostCpuUsage</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Host CPU usage percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostHostname</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Hostname of the machine.</td>
+<td style="text-align: left;">HostHostname</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Hostname of the machine.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostOsCodename</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system codename.</td>
+<td style="text-align: left;">HostOsCodename</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system codename.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostOsFamily</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system family (e.g., windows).</td>
+<td style="text-align: left;">HostOsFamily</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system family (e.g., windows).</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostOsKernel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system kernel version.</td>
+<td style="text-align: left;">HostOsKernel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system kernel version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostOsPlatform</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system platform.</td>
+<td style="text-align: left;">HostOsPlatform</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system platform.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HostOsType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Operating system type.</td>
+<td style="text-align: left;">HostOsType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Operating system type.</td>
 </tr>
 <tr>
-  <td style="text-align:left">InputType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Input type (e.g., filestream).</td>
+<td style="text-align: left;">InputType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Input type (e.g., filestream).</td>
 </tr>
 <tr>
-  <td style="text-align:left">LogLevel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Log level (info, warn, error).</td>
+<td style="text-align: left;">LogLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Log level (info, warn, error).</td>
 </tr>
 <tr>
-  <td style="text-align:left">LogLogger</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Logger name.</td>
+<td style="text-align: left;">LogLogger</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Logger name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LogOffset</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Log file offset.</td>
+<td style="text-align: left;">LogOffset</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Log file offset.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LogOriginFileLine</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Origin file line number.</td>
+<td style="text-align: left;">LogOriginFileLine</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Origin file line number.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LogOriginFileName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Origin file name.</td>
+<td style="text-align: left;">LogOriginFileName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Origin file name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">LogPath</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Log file path.</td>
+<td style="text-align: left;">LogPath</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Log file path.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricsetName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the metricset (cpu, memory, process, etc.).</td>
+<td style="text-align: left;">MetricsetName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the metricset (cpu, memory, process, etc.).</td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricsetPeriod</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Metricset collection period in milliseconds.</td>
+<td style="text-align: left;">MetricsetPeriod</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Metricset collection period in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringEcsVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Monitoring ECS version.</td>
+<td style="text-align: left;">MonitoringEcsVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Monitoring ECS version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatCpuSystem</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Beat CPU system stats.</td>
+<td style="text-align: left;">MonitoringMetricsBeatCpuSystem</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Beat CPU system stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatCpuTotal</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Beat CPU total stats.</td>
+<td style="text-align: left;">MonitoringMetricsBeatCpuTotal</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Beat CPU total stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatCpuUser</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Beat CPU user stats.</td>
+<td style="text-align: left;">MonitoringMetricsBeatCpuUser</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Beat CPU user stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatHandlesLimit</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Beat handles limit.</td>
+<td style="text-align: left;">MonitoringMetricsBeatHandlesLimit</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Beat handles limit.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatHandlesOpen</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Beat open handles.</td>
+<td style="text-align: left;">MonitoringMetricsBeatHandlesOpen</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Beat open handles.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatInfoEphemeralId</td>
-  <td style="text-align:left">guid</td>
-  <td style="text-align:left">Beat info ephemeral ID.</td>
+<td style="text-align: left;">MonitoringMetricsBeatInfoEphemeralId</td>
+<td style="text-align: left;">guid</td>
+<td style="text-align: left;">Beat info ephemeral ID.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatInfoUptime</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Beat info uptime.</td>
+<td style="text-align: left;">MonitoringMetricsBeatInfoUptime</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Beat info uptime.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatInfoVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Beat info version.</td>
+<td style="text-align: left;">MonitoringMetricsBeatInfoVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Beat info version.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatMemstatsGcNext</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Beat next GC target.</td>
+<td style="text-align: left;">MonitoringMetricsBeatMemstatsGcNext</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Beat next GC target.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatMemstatsMemoryAlloc</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Beat allocated memory.</td>
+<td style="text-align: left;">MonitoringMetricsBeatMemstatsMemoryAlloc</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Beat allocated memory.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatMemstatsMemorySys</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Beat memory sys stats.</td>
+<td style="text-align: left;">MonitoringMetricsBeatMemstatsMemorySys</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Beat memory sys stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatMemstatsMemoryTotal</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Beat total memory.</td>
+<td style="text-align: left;">MonitoringMetricsBeatMemstatsMemoryTotal</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Beat total memory.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatMemstatsRss</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Beat RSS memory.</td>
+<td style="text-align: left;">MonitoringMetricsBeatMemstatsRss</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Beat RSS memory.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsBeatRuntimeGoroutines</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Beat runtime goroutines.</td>
+<td style="text-align: left;">MonitoringMetricsBeatRuntimeGoroutines</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Beat runtime goroutines.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsLibbeatConfigModule</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat config module.</td>
+<td style="text-align: left;">MonitoringMetricsLibbeatConfigModule</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat config module.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsLibbeatOutputEvents</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat output events.</td>
+<td style="text-align: left;">MonitoringMetricsLibbeatOutputEvents</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat output events.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsLibbeatOutputRead</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat output read stats.</td>
+<td style="text-align: left;">MonitoringMetricsLibbeatOutputRead</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat output read stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsLibbeatOutputWrite</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat output write stats.</td>
+<td style="text-align: left;">MonitoringMetricsLibbeatOutputWrite</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat output write stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsLibbeatPipelineClients</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Libbeat pipeline clients.</td>
+<td style="text-align: left;">MonitoringMetricsLibbeatPipelineClients</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Libbeat pipeline clients.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsLibbeatPipelineEvents</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat pipeline events.</td>
+<td style="text-align: left;">MonitoringMetricsLibbeatPipelineEvents</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat pipeline events.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsLibbeatPipelineQueue</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Libbeat pipeline queue.</td>
+<td style="text-align: left;">MonitoringMetricsLibbeatPipelineQueue</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Libbeat pipeline queue.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsMetricbeatSystemCpu</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Metricbeat CPU stats.</td>
+<td style="text-align: left;">MonitoringMetricsMetricbeatSystemCpu</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metricbeat CPU stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsMetricbeatSystemFilesystem</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Metricbeat filesystem stats.</td>
+<td style="text-align: left;">MonitoringMetricsMetricbeatSystemFilesystem</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metricbeat filesystem stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsMetricbeatSystemMemory</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Metricbeat memory stats.</td>
+<td style="text-align: left;">MonitoringMetricsMetricbeatSystemMemory</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metricbeat memory stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsMetricbeatSystemNetwork</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Metricbeat network stats.</td>
+<td style="text-align: left;">MonitoringMetricsMetricbeatSystemNetwork</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Metricbeat network stats.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsSystemLoad1</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">System load 1 minute.</td>
+<td style="text-align: left;">MonitoringMetricsSystemLoad1</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">System load 1 minute.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsSystemLoad15</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">System load 15 minutes.</td>
+<td style="text-align: left;">MonitoringMetricsSystemLoad15</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">System load 15 minutes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsSystemLoad5</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">System load 5 minutes.</td>
+<td style="text-align: left;">MonitoringMetricsSystemLoad5</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">System load 5 minutes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">MonitoringMetricsSystemLoadNorm</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">System load normalized.</td>
+<td style="text-align: left;">MonitoringMetricsSystemLoadNorm</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">System load normalized.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceAddress</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service address endpoint.</td>
+<td style="text-align: left;">ServiceAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service address endpoint.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service unique identifier.</td>
+<td style="text-align: left;">ServiceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service unique identifier.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Name of the service.</td>
+<td style="text-align: left;">ServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Name of the service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServiceType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Type of service.</td>
+<td style="text-align: left;">ServiceType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Type of service.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SrcBytes</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Source bytes sent (ASIM compatibility).</td>
+<td style="text-align: left;">SrcBytes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source bytes sent (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SrcMacAddr</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Source MAC address (ASIM compatibility).</td>
+<td style="text-align: left;">SrcMacAddr</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source MAC address (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SrcPackets</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Source packets sent (ASIM compatibility).</td>
+<td style="text-align: left;">SrcPackets</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Source packets sent (ASIM compatibility).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuCores</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Number of CPU cores.</td>
+<td style="text-align: left;">SystemCpuCores</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Number of CPU cores.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuIdleNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized idle CPU percentage.</td>
+<td style="text-align: left;">SystemCpuIdleNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized idle CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuIdlePct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Idle CPU percentage.</td>
+<td style="text-align: left;">SystemCpuIdlePct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Idle CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuIowaitNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized IO wait CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuIowaitNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized IO wait CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuIowaitPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">IO wait CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuIowaitPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">IO wait CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuIrqNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized IRQ CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuIrqNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized IRQ CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuIrqPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">IRQ CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuIrqPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">IRQ CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuNiceNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized nice CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuNiceNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized nice CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuNicePct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Nice CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuNicePct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Nice CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuSoftirqNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized soft IRQ CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuSoftirqNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized soft IRQ CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuSoftirqPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Soft IRQ CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuSoftirqPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Soft IRQ CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuStealNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized steal CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuStealNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized steal CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuStealPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Steal CPU percentage (Linux).</td>
+<td style="text-align: left;">SystemCpuStealPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Steal CPU percentage (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuSystemNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized system CPU percentage.</td>
+<td style="text-align: left;">SystemCpuSystemNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized system CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuSystemPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">System CPU percentage.</td>
+<td style="text-align: left;">SystemCpuSystemPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">System CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuTotalNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized total CPU percentage.</td>
+<td style="text-align: left;">SystemCpuTotalNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized total CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuTotalPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Total CPU percentage.</td>
+<td style="text-align: left;">SystemCpuTotalPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Total CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuUserNormPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Normalized user CPU percentage.</td>
+<td style="text-align: left;">SystemCpuUserNormPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Normalized user CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemCpuUserPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">User CPU percentage.</td>
+<td style="text-align: left;">SystemCpuUserPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">User CPU percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemAvailable</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Available filesystem space in bytes.</td>
+<td style="text-align: left;">SystemFilesystemAvailable</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Available filesystem space in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemDeviceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Filesystem device name.</td>
+<td style="text-align: left;">SystemFilesystemDeviceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Filesystem device name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemFiles</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Total filesystem inodes.</td>
+<td style="text-align: left;">SystemFilesystemFiles</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total filesystem inodes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemFree</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Free filesystem space in bytes.</td>
+<td style="text-align: left;">SystemFilesystemFree</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Free filesystem space in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemFreeFiles</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Free filesystem inodes.</td>
+<td style="text-align: left;">SystemFilesystemFreeFiles</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Free filesystem inodes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemMountPoint</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Filesystem mount point.</td>
+<td style="text-align: left;">SystemFilesystemMountPoint</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Filesystem mount point.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemTotal</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Total filesystem space in bytes.</td>
+<td style="text-align: left;">SystemFilesystemTotal</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total filesystem space in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Filesystem type.</td>
+<td style="text-align: left;">SystemFilesystemType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Filesystem type.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemUsedBytes</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Used filesystem space in bytes.</td>
+<td style="text-align: left;">SystemFilesystemUsedBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Used filesystem space in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemFilesystemUsedPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Used filesystem percentage.</td>
+<td style="text-align: left;">SystemFilesystemUsedPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Used filesystem percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryActualFree</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Actual free memory in bytes.</td>
+<td style="text-align: left;">SystemMemoryActualFree</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Actual free memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryActualUsedBytes</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Actual used memory in bytes.</td>
+<td style="text-align: left;">SystemMemoryActualUsedBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Actual used memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryActualUsedPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Actual used memory percentage.</td>
+<td style="text-align: left;">SystemMemoryActualUsedPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Actual used memory percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryCached</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Cached memory in bytes (Linux).</td>
+<td style="text-align: left;">SystemMemoryCached</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Cached memory in bytes (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryFree</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Free memory in bytes.</td>
+<td style="text-align: left;">SystemMemoryFree</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Free memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemorySwapFree</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Free swap memory in bytes.</td>
+<td style="text-align: left;">SystemMemorySwapFree</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Free swap memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemorySwapTotal</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Total swap memory in bytes.</td>
+<td style="text-align: left;">SystemMemorySwapTotal</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total swap memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemorySwapUsedBytes</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Used swap memory in bytes.</td>
+<td style="text-align: left;">SystemMemorySwapUsedBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Used swap memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryTotal</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Total memory in bytes.</td>
+<td style="text-align: left;">SystemMemoryTotal</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryUsedBytes</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Used memory in bytes.</td>
+<td style="text-align: left;">SystemMemoryUsedBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Used memory in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemMemoryUsedPct</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">Used memory percentage.</td>
+<td style="text-align: left;">SystemMemoryUsedPct</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">Used memory percentage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkInBytes</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network incoming bytes.</td>
+<td style="text-align: left;">SystemNetworkInBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network incoming bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkInDropped</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network incoming dropped packets.</td>
+<td style="text-align: left;">SystemNetworkInDropped</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network incoming dropped packets.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkInErrors</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network incoming errors.</td>
+<td style="text-align: left;">SystemNetworkInErrors</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network incoming errors.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkInPackets</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network incoming packets.</td>
+<td style="text-align: left;">SystemNetworkInPackets</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network incoming packets.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Network interface name.</td>
+<td style="text-align: left;">SystemNetworkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Network interface name.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkOutBytes</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network outgoing bytes.</td>
+<td style="text-align: left;">SystemNetworkOutBytes</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network outgoing bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkOutDropped</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network outgoing dropped packets.</td>
+<td style="text-align: left;">SystemNetworkOutDropped</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network outgoing dropped packets.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkOutErrors</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network outgoing errors.</td>
+<td style="text-align: left;">SystemNetworkOutErrors</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network outgoing errors.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemNetworkOutPackets</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Network outgoing packets.</td>
+<td style="text-align: left;">SystemNetworkOutPackets</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Network outgoing packets.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessCpuSystemTicks</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">System CPU ticks for process.</td>
+<td style="text-align: left;">SystemProcessCpuSystemTicks</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">System CPU ticks for process.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessCpuSystemTimeMs</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">System CPU time in milliseconds.</td>
+<td style="text-align: left;">SystemProcessCpuSystemTimeMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">System CPU time in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessCpuTotalTicks</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Total CPU ticks for process.</td>
+<td style="text-align: left;">SystemProcessCpuTotalTicks</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total CPU ticks for process.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessCpuTotalTimeMs</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Total CPU time in milliseconds.</td>
+<td style="text-align: left;">SystemProcessCpuTotalTimeMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total CPU time in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessCpuTotalValue</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Total CPU value for process.</td>
+<td style="text-align: left;">SystemProcessCpuTotalValue</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Total CPU value for process.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessCpuUserTicks</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">User CPU ticks for process.</td>
+<td style="text-align: left;">SystemProcessCpuUserTicks</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">User CPU ticks for process.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessCpuUserTimeMs</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">User CPU time in milliseconds.</td>
+<td style="text-align: left;">SystemProcessCpuUserTimeMs</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">User CPU time in milliseconds.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessFdLimitHard</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Hard file descriptor limit (Linux).</td>
+<td style="text-align: left;">SystemProcessFdLimitHard</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Hard file descriptor limit (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessFdLimitSoft</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Soft file descriptor limit (Linux).</td>
+<td style="text-align: left;">SystemProcessFdLimitSoft</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Soft file descriptor limit (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessFdOpen</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Open file descriptors (Linux).</td>
+<td style="text-align: left;">SystemProcessFdOpen</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Open file descriptors (Linux).</td>
 </tr>
 <tr>
-  <td style="text-align:left">SystemProcessMemorySize</td>
-  <td style="text-align:left">long</td>
-  <td style="text-align:left">Process memory size in bytes.</td>
+<td style="text-align: left;">SystemProcessMemorySize</td>
+<td style="text-align: left;">long</td>
+<td style="text-align: left;">Process memory size in bytes.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Tags</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Event tags.</td>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Event tags.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (in UTC) when the event was collected.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (in UTC) when the event was collected.</td>
 </tr>
 </tbody>
 </table>
@@ -847,14 +847,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/elasticagentconnector.html">Elastic Agent (via Codeless Connector Framework)</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/elasticagentconnector.html">Elastic Agent (via Codeless Connector Framework)</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -862,7 +862,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

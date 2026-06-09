@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Azure Monitor, Azure Resources, Virtual Machines</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Azure Monitor, Azure Resources, Virtual Machines</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/autoscaleevaluationslog">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/autoscaleevaluationslog">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,276 +57,276 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">AutoscaleMetricName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">AutoscaleMetricName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">AvailabilitySet</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">AvailabilitySet</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Category</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">CloudServiceName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">CloudServiceName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">CloudServiceRole</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">CloudServiceRole</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">CoolDown</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">CoolDown</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">CorrelationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">CurrentInstanceCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">CurrentInstanceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">DefaultInstanceCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">DefaultInstanceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">DeploymentSlot</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">DeploymentSlot</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">EstimateScaleResult</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">EstimateScaleResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">EvaluationResult</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">EvaluationResult</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">EvaluationTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">EvaluationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">InstanceUpdateReason</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">InstanceUpdateReason</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">LastScaleActionOperationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">LastScaleActionOperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">LastScaleActionOperationStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">LastScaleActionOperationStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">LastScaleActionTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">LastScaleActionTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">MaximumInstanceCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">MaximumInstanceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricData</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">MetricData</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricEndTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">MetricEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricNamespace</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">MetricNamespace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricStartTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">MetricStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">MetricTimeGrain</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">MetricTimeGrain</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">MinimumInstanceCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">MinimumInstanceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">NewInstanceCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">NewInstanceCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ObservedValue</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ObservedValue</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Operator</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Operator</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Profile</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Profile</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ProfileEvaluationTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ProfileEvaluationTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ProfileSelected</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ProfileSelected</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Projection</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Projection</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ResultDescription</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ResultDescription</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ResultType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ResultType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SelectedAutoscaleProfile</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">SelectedAutoscaleProfile</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ServerFarm</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ServerFarm</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ShouldUpdateInstance</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ShouldUpdateInstance</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SkipCurrentAutoscaleEvaluation</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">SkipCurrentAutoscaleEvaluation</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SkipRuleEvaluationForCooldown</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">SkipRuleEvaluationForCooldown</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TargetResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TargetResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Threshold</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Threshold</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeAggregationType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TimeAggregationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGrainStatistic</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TimeGrainStatistic</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeWindow</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">TimeWindow</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">Webspace</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Webspace</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -339,7 +339,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

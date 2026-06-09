@@ -15,7 +15,7 @@
 | **Publisher** | ThreatConnect, Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://threatconnect.com/contact/](https://threatconnect.com/contact/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.0.1 |
 | **Author** | JP Bourget jp@bluecycle.net |
 | **First Published** | 2023-09-11 |

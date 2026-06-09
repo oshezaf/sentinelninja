@@ -15,7 +15,7 @@
 | **Publisher** | Eset |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.eset.com/en](https://support.eset.com/en) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 2.0.0 |
 | **Author** | Eset |
 | **First Published** | 2022-05-11 |

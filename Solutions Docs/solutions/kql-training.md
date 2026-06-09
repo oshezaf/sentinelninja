@@ -13,7 +13,7 @@
 | **Publisher** | Community |
 | **Support Tier** | Community |
 | **Support Link** | [https://github.com/Azure/Azure-Sentinel/issues](https://github.com/Azure/Azure-Sentinel/issues) |
-| **Categories** | domains |
+| **Categories** | Training and Tutorials |
 | **Version** | 3.0.1 |
 | **Author** | Community |
 | **First Published** | 2022-11-30 |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/blinkops.html">BlinkOps</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/blinkops.html">BlinkOps</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,48 +47,35 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">0</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-  <td style="text-align:left">Built-in</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+<td style="text-align: left;">Built-in</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Trigger_Blink_Workflow</td>
-  <td style="text-align:left">POST</td>
-  <td style="text-align:left"><code>@parameters('Blink-Webhook-Full-URL')</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`http`](../logic-apps/builtin-http.md) (Built-in)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Trigger_Blink_Workflow | POST | `@parameters('Blink-Webhook-Full-URL')` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -108,10 +95,8 @@
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/sentinel_webhook.png" width="50%"/></p>
 <ol start="2">
-<li>Note down the following required value from Blink:<ul>
-<li><strong>Blink Webhook Full URL</strong> – the full HTTPS endpoint URL to trigger your Blink workflow.</li>
-</ul>
-</li>
+<li>Note down the following required value from Blink:
+   - <strong>Blink Webhook Full URL</strong> – the full HTTPS endpoint URL to trigger your Blink workflow.</li>
 </ol>
 <p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BlinkOps/Playbooks/Sentinel-Incident-Handler/Configure_Sentinel_Webhook.png" width="50%"/></p>
 <hr />
@@ -119,14 +104,12 @@
 <p>To deploy the playbook into your Azure environment:</p>
 <ol>
 <li>Click the <strong>Deploy to Azure</strong> button below to launch the ARM Template deployment wizard.</li>
-<li>Provide the following required parameters:<ul>
-<li><code>Playbook-Name</code>: Choose a clear and descriptive name for the Logic App (e.g., <code>Blink_Sentinel_Incident_Trigger</code>).</li>
-<li><code>Blink-Webhook-Full-URL</code>: Paste the full webhook URL from your Blink workflow.</li>
-</ul>
-</li>
+<li>Provide the following required parameters:
+   - <code>Playbook-Name</code>: Choose a clear and descriptive name for the Logic App (e.g., <code>Blink_Sentinel_Incident_Trigger</code>).
+   - <code>Blink-Webhook-Full-URL</code>: Paste the full webhook URL from your Blink workflow.</li>
 </ol>
-<p><a href=""><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a><br />
-<a href=""><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p><a href=""><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a><br />
+<a href=""><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <hr />
 <h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
 <p>Once the playbook is deployed successfully, follow these steps to connect it with Microsoft Sentinel's automation rules:</p>
@@ -134,14 +117,12 @@
 <ul>
 <li>Go to: <strong>Microsoft Sentinel &gt; Configuration &gt; Automation</strong>.</li>
 <li>Click <strong>+ Create &gt; Automation rule</strong>.</li>
-<li>Fill in the following:<ul>
+<li>Fill in the following:</li>
 <li><strong>Name</strong>: e.g., <code>Notify Blink when new incident is created</code>.</li>
 <li><strong>Trigger</strong>: Select <code>When incident is created</code>.</li>
 <li><strong>Conditions</strong>: Leave default unless you want specific filters.</li>
 <li><strong>Actions</strong>: Choose <code>Run playbook</code>.</li>
 <li><strong>Playbook</strong>: Select your deployed playbook (e.g., <code>Blink_Sentinel_Incident_Trigger</code>).</li>
-</ul>
-</li>
 <li>Click <strong>Apply</strong>.</li>
 </ul>
 <h3 id="2-create-automation-rule-for-incident-updated">2. Create Automation Rule for <strong>Incident Updated</strong></h3>
@@ -157,7 +138,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/blinkops.html">Back to BlinkOps</a></p>
-
 </div>
 
 </body>

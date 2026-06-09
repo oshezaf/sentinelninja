@@ -15,7 +15,7 @@
 | **Publisher** | Forescout Technologies |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.forescout.com/support](https://www.forescout.com/support) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.0 |
 | **Author** | Julian Wang - julian.wang@forescout.com |
 | **First Published** | 2022-06-28 |

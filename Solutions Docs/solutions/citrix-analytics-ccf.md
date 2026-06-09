@@ -15,7 +15,7 @@
 | **Publisher** | Citrix Systems, Inc. |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.citrix.com/support/](https://www.citrix.com/support/) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Cloud Security |
 | **Version** | 3.0.0 |
 | **Author** | Citrix Systems, Inc. |
 | **First Published** | 2026-01-21 |

@@ -15,7 +15,7 @@
 | **Publisher** | Versasec Support |
 | **Support Tier** | Partner |
 | **Support Link** | [https://versasec.com/support/](https://versasec.com/support/) |
-| **Categories** | domains |
+| **Categories** | Security - Others |
 | **Version** | 3.0.1 |
 | **Author** | Versasec AB - info@versasec.com |
 | **Last Updated** | 2026-03-10 |

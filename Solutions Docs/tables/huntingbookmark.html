@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Security</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/huntingbookmark">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/huntingbookmark">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -63,131 +63,131 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">BookmarkId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Guid - the bookmark ARM resource name</td>
+<td style="text-align: left;">BookmarkId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Guid - the bookmark ARM resource name</td>
 </tr>
 <tr>
-  <td style="text-align:left">BookmarkName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Bookmark name given by the user</td>
+<td style="text-align: left;">BookmarkName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Bookmark name given by the user</td>
 </tr>
 <tr>
-  <td style="text-align:left">BookmarkType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Can be used to mark bookmark origin - currently not used</td>
+<td style="text-align: left;">BookmarkType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Can be used to mark bookmark origin - currently not used</td>
 </tr>
 <tr>
-  <td style="text-align:left">CreatedBy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">JSON object with the user who created the bookmark, including: ObjectID, email and name</td>
+<td style="text-align: left;">CreatedBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">JSON object with the user who created the bookmark, including: ObjectID, email and name</td>
 </tr>
 <tr>
-  <td style="text-align:left">CreatedTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp of bookmark first creation time</td>
+<td style="text-align: left;">CreatedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp of bookmark first creation time</td>
 </tr>
 <tr>
-  <td style="text-align:left">Entities</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A serialized JSON of entities mapped by this bookmark</td>
+<td style="text-align: left;">Entities</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A serialized JSON of entities mapped by this bookmark</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp of the original event that is bookmarked</td>
+<td style="text-align: left;">EventTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp of the original event that is bookmarked</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastUpdatedTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp of bookmark last update time</td>
+<td style="text-align: left;">LastUpdatedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp of bookmark last update time</td>
 </tr>
 <tr>
-  <td style="text-align:left">Notes</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Notes provided by user</td>
+<td style="text-align: left;">Notes</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Notes provided by user</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryEndTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Query time range end time</td>
+<td style="text-align: left;">QueryEndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Query time range end time</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryResultRow</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">JSON object with a single result row of the query</td>
+<td style="text-align: left;">QueryResultRow</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">JSON object with a single result row of the query</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryStartTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Query time range start time</td>
+<td style="text-align: left;">QueryStartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Query time range start time</td>
 </tr>
 <tr>
-  <td style="text-align:left">QueryText</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Original log analytics query text</td>
+<td style="text-align: left;">QueryText</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Original log analytics query text</td>
 </tr>
 <tr>
-  <td style="text-align:left">SoftDeleted</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Was the bookmark deleted by user</td>
+<td style="text-align: left;">SoftDeleted</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Was the bookmark deleted by user</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">Tags</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Comma seperated list of tags provided by user</td>
+<td style="text-align: left;">Tags</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Comma seperated list of tags provided by user</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The timestamp (UTC) of the log</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The timestamp (UTC) of the log</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">UpdatedBy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">JSON object with the user who last updated the bookmark, including: ObjectID, email and name</td>
+<td style="text-align: left;">UpdatedBy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">JSON object with the user who last updated the bookmark, including: ObjectID, email and name</td>
 </tr>
 </tbody>
 </table>
@@ -203,25 +203,24 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/soc-handbook-anomalydata-44d72d0f.html">AnomalyData</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/soc-handbook-anomalydata-44d72d0f.html">AnomalyData</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

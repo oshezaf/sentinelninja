@@ -15,7 +15,7 @@
 | **Publisher** | Morphisec |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support.morphisec.com/support/home](https://support.morphisec.com/support/home) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.1.0 |
 | **Author** | Morphisec |
 | **First Published** | 2022-05-05 |

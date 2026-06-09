@@ -15,7 +15,7 @@
 | **Publisher** | Radiflow |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.radiflow.com](https://www.radiflow.com) |
-| **Categories** | domains |
+| **Categories** | Internet of Things (IoT),Security - Others |
 | **Version** | 3.0.0 |
 | **Author** | Radiflow - support@radiflow.com |
 | **First Published** | 2024-06-26 |

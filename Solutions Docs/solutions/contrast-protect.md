@@ -13,7 +13,7 @@
 | **Publisher** | Contrast Protect |
 | **Support Tier** | Partner |
 | **Support Link** | [https://docs.contrastsecurity.com/](https://docs.contrastsecurity.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Protection |
 | **Version** | 3.0.1 |
 | **Author** | Contrast Security - support@contrastsecurity.com |
 | **First Published** | 2021-10-20 |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/domaintools.html">DomainTools</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/domaintools.html">DomainTools</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,110 +47,54 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Entities_-_Get_DNS</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/dnsresolution</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Entities_-_Get_Hosts</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/entities/host</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_co_located_domains_to_the_incident_comment</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="farsightdnsdb"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">RData_Lookup_with_RRType</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each_Unique_IPS'))}/ANY</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">RRSet_Lookup_with_RRType_AAAA_Records</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('AAAA')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">RRSet_Lookup_with_RRType_A_Records</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('A')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">RRSet_Lookup_with_RRType_CNAME</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('CNAME')}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
+| Entities_-_Get_Hosts | post | `/entities/host` | — |
+| Add_co_located_domains_to_the_incident_comment | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`farsightdnsdb`](../logic-apps/managed-farsightdnsdb.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| RData_Lookup_with_RRType | get | `/lookup/rdata/@{encodeURIComponent('ip')}/@{encodeURIComponent(items('For_each_Unique_IPS'))}/ANY` | — |
+| RRSet_Lookup_with_RRType_AAAA_Records | get | `/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('AAAA')}` | — |
+| RRSet_Lookup_with_RRType_A_Records | get | `/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('A')}` | — |
+| RRSet_Lookup_with_RRType_CNAME | get | `/lookup/rrset/name/@{encodeURIComponent(items('For_each'))}/@{encodeURIComponent('CNAME')}` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/readme.md">DomainTools-DNSDB-Co-Located-Hosts/readme.md</a></em></p>
 </blockquote>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/logo.png" alt="DomainTools DNSDB" /></p>
+<p><img alt="DomainTools DNSDB" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/logo.png" /></p>
 <h1 id="domaintools-dnsdb-co-located-hosts">DomainTools DNSDB Co-Located Hosts</h1>
 <p>This playbook uses the Farsight DNSDB connector to automatically enrich Domain's found in the Microsoft Sentinel incidents. This use case describes the desire to easily identify Hosts that are co-located (based on Address) based on the input of a domain and a given point in time. The response would be a set of domains that also shared the same IP address as the originating domain name at the given point in time.</p>
 <h2 id="table-of-contents">Table of Contents</h2>
@@ -160,56 +104,49 @@
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
-<a name="overview">
-
+<p><a name="overview"></p>
 <h2 id="overview">Overview</h2>
 <ul>
 <li>This playbook fetches all the Host and DNS resolution etities from the incident.</li>
 <li>Iterates through each entity, perform logic.</li>
 <li>Adds the co-located hosts for each entity as sentinel comments.</li>
 </ul>
-<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/comments.png" alt="Incident Comments" /></p>
-<a name="prerequisites">
-
+<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/comments.png" /></p>
+<p><a name="prerequisites"></p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>A DomainTool DNSDB API Key.</li>
 </ul>
-<a name="deployment">
-
+<p><a name="deployment"></p>
 <h2 id="deployment-instructions">Deployment Instructions</h2>
 <ul>
-<li>Deploy the playbooks by clicking on the &quot;Deploy to Azure&quot; button. This will take you to the Deploy an ARM Template wizard.</li>
+<li>Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the Deploy an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.</li>
-<li>Click &quot;Review + create&quot;. Once the validation is successful, click on &quot;Create&quot;.</li>
+<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
 </ul>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-DNSDB-Co-Located-Hosts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-DNSDB-Co-Located-Hosts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
-<a name="postdeployment">
-
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-DNSDB-Co-Located-Hosts%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-DNSDB-Co-Located-Hosts%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a name="postdeployment"></p>
 <h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
 <h3 id="authorize-connections">Authorize connections</h3>
-<p>Once deployment is complete please open the logic app and follow below steps</p>
-<ul>
-<li>As a best practice, we have used the Sentinel connection in Logic Apps that use &quot;ManagedSecurityIdentity&quot; permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
-<li>Provide connection details for the Farsight DNSDB Custom Connector.
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/for_each_01.png" alt="connections one" />
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/for_each_02.png" alt="connections two" /></li>
-<li>You could provide time fencing options, please only provide values from the list (1h,6h,12h,24h, 30d, 60d,90d,365d(Default 1h)).
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/results_after.png" alt="incident after" />
-<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/results_before.png" alt="incident before" /></li>
-<li>Save the Logic App. If the Logic App prompts any missing connections, please update the connections accordingly.</li>
-</ul>
+<p>Once deployment is complete please open the logic app and follow below steps
+- As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.
+- Provide connection details for the Farsight DNSDB Custom Connector.
+<img alt="connections one" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/for_each_01.png" />
+<img alt="connections two" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/for_each_02.png" />
+- You could provide time fencing options, please only provide values from the list (1h,6h,12h,24h, 30d, 60d,90d,365d(Default 1h)).
+<img alt="incident after" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/results_after.png" />
+<img alt="incident before" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-DNSDB-Co-Located-Hosts/images/results_before.png" />
+- Save the Logic App. If the Logic App prompts any missing connections, please update the connections accordingly.</p>
 <h3 id="configurations-in-sentinel">Configurations in Sentinel:</h3>
 <ul>
 <li>Configure the analytic rules-&gt;Automated response&gt;Automation rules to trigger this playbook.</li>
 <li>Configure Incident Settings , Enable create incidents.</li>
-<li>Configure &quot;Microsoft Sentinel Responder&quot; permission to this playbook, from settings&gt;workspace settings&gt;Access control (IAM)&gt;Add role assignment.</li>
+<li>Configure "Microsoft Sentinel Responder" permission to this playbook, from settings&gt;workspace settings&gt;Access control (IAM)&gt;Add role assignment.</li>
 </ul>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/domaintools.html">Back to DomainTools</a></p>
-
 </div>
 
 </body>

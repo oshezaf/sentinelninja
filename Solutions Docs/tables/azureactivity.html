@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Audit, Azure Resources, Security</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Audit, Azure Resources, Security</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azureactivity">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -70,196 +70,196 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">_ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
+<td style="text-align: left;">_ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">_SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
+<td style="text-align: left;">_SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-  <td style="text-align:left">ActivityStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ActivityStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ActivityStatusValue</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Status of the operation in display-friendly format. Common values include Started, In Progress, Succeeded, Failed, Active, Resolved.</td>
+<td style="text-align: left;">ActivityStatusValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the operation in display-friendly format. Common values include Started, In Progress, Succeeded, Failed, Active, Resolved.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ActivitySubstatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ActivitySubstatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ActivitySubstatusValue</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Substatus of the operation in display-friendly format. E.g. OK (HTTP Status Code: 200).</td>
+<td style="text-align: left;">ActivitySubstatusValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Substatus of the operation in display-friendly format. E.g. OK (HTTP Status Code: 200).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Authorization</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Blob of RBAC properties of the event. Usually includes the &quot;action&quot;, &quot;role&quot; and &quot;scope&quot; properties. Stored as string. The use of Authorization_d should be preferred going forward.</td>
+<td style="text-align: left;">Authorization</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Blob of RBAC properties of the event. Usually includes the "action", "role" and "scope" properties. Stored as string. The use of Authorization_d should be preferred going forward.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Authorization_d</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Blob of RBAC properties of the event. Usually includes the &quot;action&quot;, &quot;role&quot; and &quot;scope&quot; properties. Stored as dynamic column.</td>
+<td style="text-align: left;">Authorization_d</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Blob of RBAC properties of the event. Usually includes the "action", "role" and "scope" properties. Stored as dynamic column.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Caller</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">GUID of the caller.</td>
+<td style="text-align: left;">Caller</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">GUID of the caller.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CallerIpAddress</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">IP address of the user who has performed the operation UPN claim or SPN claim based on availability.</td>
+<td style="text-align: left;">CallerIpAddress</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">IP address of the user who has performed the operation UPN claim or SPN claim based on availability.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Category</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Category</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">CategoryValue</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Category of the activity log e.g. Administrative, Policy, Security.</td>
+<td style="text-align: left;">CategoryValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Category of the activity log e.g. Administrative, Policy, Security.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Claims</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The JWT token used by Active Directory to authenticate the user or application to perform this operation in Resource Manager. The use of claims_d should be preferred going forward.</td>
+<td style="text-align: left;">Claims</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The JWT token used by Active Directory to authenticate the user or application to perform this operation in Resource Manager. The use of claims_d should be preferred going forward.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Claims_d</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">The JWT token used by Active Directory to authenticate the user or application to perform this operation in Resource Manager.</td>
+<td style="text-align: left;">Claims_d</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">The JWT token used by Active Directory to authenticate the user or application to perform this operation in Resource Manager.</td>
 </tr>
 <tr>
-  <td style="text-align:left">CorrelationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Usually a GUID in the string format. Events that share a correlationId belong to the same uber action.</td>
+<td style="text-align: left;">CorrelationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Usually a GUID in the string format. Events that share a correlationId belong to the same uber action.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventDataId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier of an event.</td>
+<td style="text-align: left;">EventDataId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier of an event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EventSubmissionTimestamp</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp when the event became available for querying.</td>
+<td style="text-align: left;">EventSubmissionTimestamp</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the event became available for querying.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Hierarchy</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Management group hierarchy of the management group or subscription that event belongs to.</td>
+<td style="text-align: left;">Hierarchy</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Management group hierarchy of the management group or subscription that event belongs to.</td>
 </tr>
 <tr>
-  <td style="text-align:left">HTTPRequest</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Blob describing the Http Request. Usually includes the &quot;clientRequestId&quot;, &quot;clientIpAddress&quot; and &quot;method&quot; (HTTP method. For example, PUT).</td>
+<td style="text-align: left;">HTTPRequest</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Blob describing the Http Request. Usually includes the "clientRequestId", "clientIpAddress" and "method" (HTTP method. For example, PUT).</td>
 </tr>
 <tr>
-  <td style="text-align:left">Level</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose.</td>
+<td style="text-align: left;">Level</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose.</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">GUID of the operation</td>
+<td style="text-align: left;">OperationId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">GUID of the operation</td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">OperationName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">OperationNameValue</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Identifier of the operation e.g. Microsoft.Storage/storageAccounts/listAccountSas/action.</td>
+<td style="text-align: left;">OperationNameValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Identifier of the operation e.g. Microsoft.Storage/storageAccounts/listAccountSas/action.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Properties</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead.</td>
+<td style="text-align: left;">Properties</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as string. Usage of Properties_d is recommended instead.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Properties_d</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column.</td>
+<td style="text-align: left;">Properties_d</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Set of <Key Value> pairs (i.e. Dictionary) describing the details of the event. Stored as dynamic column.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Resource</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">Resource</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceGroup</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Resource group name of the impacted resource.</td>
+<td style="text-align: left;">ResourceGroup</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Resource group name of the impacted resource.</td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceProvider</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;">ResourceProvider</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left">ResourceProviderValue</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Id of the resource provider for the impacted resource - e.g. Microsoft.Storage.</td>
+<td style="text-align: left;">ResourceProviderValue</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Id of the resource provider for the impacted resource - e.g. Microsoft.Storage.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">SubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Subscription ID of the impacted resource.</td>
+<td style="text-align: left;">SubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription ID of the impacted resource.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp when the event was generated by the Azure service processing the request corresponding the event.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the event was generated by the Azure service processing the request corresponding the event.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -291,14 +291,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Connector</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../connectors/azureactivity.html">Azure Activity</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../connectors/azureactivity.html">Azure Activity</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -309,14 +309,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/apache-log4j-vulnerability-detection-log4j-vulnerability-exploit-aka-log4shell-ip-ioc-6e575295-a7e6-464c-8192-3e1d8fd6a990-c6cdb809.html">Log4j vulnerability exploit aka Log4Shell IP IOC</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -324,92 +324,92 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azure-machine-learning-write-operations-68c89998-8052-4c80-a1f6-9d81060b6d57-78e6b271.html">Azure Machine Learning Write Operations</a></td>
-  <td style="text-align:left"><code>OperationNameValue !contains &quot;MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE&quot;</code><br><code>OperationNameValue contains &quot;write&quot;</code><br><code>ResourceProviderValue == &quot;MICROSOFT.MACHINELEARNINGSERVICES&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-machine-learning-write-operations-68c89998-8052-4c80-a1f6-9d81060b6d57-78e6b271.html">Azure Machine Learning Write Operations</a></td>
+<td style="text-align: left;"><code>OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"</code><br><code>OperationNameValue contains "write"</code><br><code>ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-creation-of-expensive-computes-in-azure-9736e5f1-7b6e-4bfb-a708-e53ff1d182c3-ceac9b06.html">Creation of expensive computes in Azure</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue startswith &quot;Accept&quot;</code><br><code>Properties has &quot;vmSize&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-creation-of-expensive-computes-in-azure-9736e5f1-7b6e-4bfb-a708-e53ff1d182c3-ceac9b06.html">Creation of expensive computes in Azure</a></td>
+<td style="text-align: left;"><code>ActivityStatusValue startswith "Accept"</code><br><code>Properties has "vmSize"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-mass-cloud-resource-deletions-time-series-anomaly-ed43bdb7-eaab-4ea4-be52-6951fcfa7e3b-bbd8cfc2.html">Mass Cloud resource deletions Time Series Anomaly</a></td>
-  <td style="text-align:left"><code>OperationNameValue endswith &quot;delete&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-mass-cloud-resource-deletions-time-series-anomaly-ed43bdb7-eaab-4ea4-be52-6951fcfa7e3b-bbd8cfc2.html">Mass Cloud resource deletions Time Series Anomaly</a></td>
+<td style="text-align: left;"><code>OperationNameValue endswith "delete"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-new-server-88f453ff-7b9e-45bb-8c12-4058ca5e44ee-ede40a47.html">Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code><br><code>OperationNameValue == &quot;Microsoft.ADHybridHealthService/services/servicemembers/action&quot;</code><br><code>ResourceProviderValue == &quot;Microsoft.ADHybridHealthService&quot;</code><br><code>_ResourceId has &quot;AdFederationService&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-new-server-88f453ff-7b9e-45bb-8c12-4058ca5e44ee-ede40a47.html">Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code><br><code>OperationNameValue == "Microsoft.ADHybridHealthService/services/servicemembers/action"</code><br><code>ResourceProviderValue == "Microsoft.ADHybridHealthService"</code><br><code>_ResourceId has "AdFederationService"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-service-delete-86a036b2-3686-42eb-b417-909fc0867771-676dbeac.html">Microsoft Entra ID Hybrid Health AD FS Service Delete</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code><br><code>OperationNameValue == &quot;Microsoft.ADHybridHealthService/services/delete&quot;</code><br><code>ResourceProviderValue == &quot;Microsoft.ADHybridHealthService&quot;</code><br><code>_ResourceId has &quot;AdFederationService&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-service-delete-86a036b2-3686-42eb-b417-909fc0867771-676dbeac.html">Microsoft Entra ID Hybrid Health AD FS Service Delete</a></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code><br><code>OperationNameValue == "Microsoft.ADHybridHealthService/services/delete"</code><br><code>ResourceProviderValue == "Microsoft.ADHybridHealthService"</code><br><code>_ResourceId has "AdFederationService"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-suspicious-application-d9938c3b-16f9-444d-bc22-ea9a9110e0fd-8920c2ac.html">Microsoft Entra ID Hybrid Health AD FS Suspicious Application</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code><br><code>ResourceProviderValue == &quot;Microsoft.ADHybridHealthService&quot;</code><br><code>_ResourceId has &quot;AdFederationService&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-entra-id-hybrid-health-ad-fs-suspicious-application-d9938c3b-16f9-444d-bc22-ea9a9110e0fd-8920c2ac.html">Microsoft Entra ID Hybrid Health AD FS Suspicious Application</a></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code><br><code>ResourceProviderValue == "Microsoft.ADHybridHealthService"</code><br><code>_ResourceId has "AdFederationService"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-nrt-creation-of-expensive-computes-in-azure-56fe0db0-6779-46fa-b3c5-006082a53064-7552960d.html">NRT Creation of expensive computes in Azure</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue startswith &quot;Accept&quot;</code><br><code>Properties has &quot;vmSize&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-nrt-creation-of-expensive-computes-in-azure-56fe0db0-6779-46fa-b3c5-006082a53064-7552960d.html">NRT Creation of expensive computes in Azure</a></td>
+<td style="text-align: left;"><code>ActivityStatusValue startswith "Accept"</code><br><code>Properties has "vmSize"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.html">NRT Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code><br><code>OperationNameValue == &quot;Microsoft.ADHybridHealthService/services/servicemembers/action&quot;</code><br><code>ResourceProviderValue == &quot;Microsoft.ADHybridHealthService&quot;</code><br><code>_ResourceId has &quot;AdFederationService&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-nrt-microsoft-entra-id-hybrid-health-ad-fs-new-server-ec491363-5fe7-4eff-b68e-f42dcb76fcf6-5534b382.html">NRT Microsoft Entra ID Hybrid Health AD FS New Server</a></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code><br><code>OperationNameValue == "Microsoft.ADHybridHealthService/services/servicemembers/action"</code><br><code>ResourceProviderValue == "Microsoft.ADHybridHealthService"</code><br><code>_ResourceId has "AdFederationService"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-new-cloudshell-user-6d7214d9-4a28-44df-aafb-0910b9e6ae3e-a064ab7a.html">New CloudShell User</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue in &quot;Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write&quot;</code><br><code>ResourceGroup has &quot;cloud-shell&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-new-cloudshell-user-6d7214d9-4a28-44df-aafb-0910b9e6ae3e-a064ab7a.html">New CloudShell User</a></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Success"</code><br><code>OperationNameValue in "Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write"</code><br><code>ResourceGroup has "cloud-shell"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.html">Rare subscription-level operations in Azure</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-activity-rare-subscription-level-operations-in-azure-23de46ea-c425-4a77-b456-511ae4855d69-121f6490.html">Rare subscription-level operations in Azure</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.html">Subscription moved to another tenant</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;Security&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Subscription/updateTenant/action&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-subscription-moved-to-another-tenant-48c026d8-7f36-4a95-9568-6f1420d66e37-856f8155.html">Subscription moved to another tenant</a></td>
+<td style="text-align: left;"><code>CategoryValue == "Security"</code><br><code>OperationNameValue == "Microsoft.Subscription/updateTenant/action"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-suspicious-resource-deployment-9fb57e58-3ed8-4b89-afcf-c8e786508b1c-a84aefba.html">Suspicious Resource deployment</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-resource-deployment-9fb57e58-3ed8-4b89-afcf-c8e786508b1c-a84aefba.html">Suspicious Resource deployment</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.html">Suspicious granting of permissions to an account</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-granting-of-permissions-to-an-account-b2c15736-b9eb-4dae-8b02-3016b6a45a32-6643d8bb.html">Suspicious granting of permissions to an account</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.html">Suspicious number of resource creation or deployment activities</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-activity-suspicious-number-of-resource-creation-or-deployment-activities-361dd1e3-1c11-491e-82a3-bb2e44ac36ba-812975d5.html">Suspicious number of resource creation or deployment activities</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.SecurityInsights/dataConnectors/&quot;</code></p>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ActivityStatusValue == "Succeeded"</code><br><code>OperationNameValue contains "Microsoft.SecurityInsights/dataConnectors/"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
+<th style="text-align: left;">Analytic Rule</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-m2131-dataconnectoraddedchangedremoved-eeb11b6b-e626-4228-b74d-3e730dca8999-c8fea928.html">M2131_DataConnectorAddedChangedRemoved</a></td>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-m2131-dataconnectoraddedchangedremoved-eeb11b6b-e626-4228-b74d-3e730dca8999-c8fea928.html">M2131_DataConnectorAddedChangedRemoved</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a>:</strong> <code>OperationNameValue endswith &quot;delete&quot;</code></p>
+<p><strong>In solution <a href="../solutions/securitythreatessentialsolution.html">SecurityThreatEssentialSolution</a>:</strong> <code>OperationNameValue endswith "delete"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
+<th style="text-align: left;">Analytic Rule</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.html">Threat Essentials - Mass Cloud resource deletions Time Series Anomaly</a></td>
+<td style="text-align: left;"><a href="../content/securitythreatessentialsolution-threat-essentials-mass-cloud-resource-deletions-time-series-anomaly-fa2658fe-3714-4c55-bb12-2b7275c628e8-119af452.html">Threat Essentials - Mass Cloud resource deletions Time Series Anomaly</a></td>
 </tr>
 </tbody>
 </table>
@@ -417,18 +417,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-ti-map-ip-entity-to-azureactivity-2441bce9-02e4-407b-8cc7-7d597f38b8b0-eefa9066.html">TI Map IP Entity to AzureActivity</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-ip-entity-to-azureactivity-2441bce9-02e4-407b-8cc7-7d597f38b8b0-eefa9066.html">TI Map IP Entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-ti-map-email-entity-to-azureactivity-cca3b4d9-ac39-4109-8b93-65bb284003e6-d3038f92.html">TI map Email entity to AzureActivity</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-email-entity-to-azureactivity-cca3b4d9-ac39-4109-8b93-65bb284003e6-d3038f92.html">TI map Email entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -436,18 +436,18 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Analytic Rule</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Analytic Rule</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.html">TI Map IP Entity to AzureActivity</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-azureactivity-7a0c9989-1618-4126-9290-fb77b976d181-f4b651f6.html">TI Map IP Entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.html">TI map Email entity to AzureActivity</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-azureactivity-a9a4d1ee-0f52-4a1f-8def-a2fb4462104c-65a34698.html">TI map Email entity to AzureActivity</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -456,96 +456,96 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Hunting Query</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-anomalous-azure-operation-hunting-model-43cb0347-bdcc-4e83-af5a-cebbd03971d8-cab991db.html">Anomalous Azure Operation Hunting Model</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/azure-activity-anomalous-azure-operation-hunting-model-43cb0347-bdcc-4e83-af5a-cebbd03971d8-cab991db.html">Anomalous Azure Operation Hunting Model</a></td>
+<td style="text-align: left;"></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azure-machine-learning-write-operations-26d116bd-324b-4bb8-b102-d4a282607ad7-c243c1ab.html">Azure Machine Learning Write Operations</a></td>
-  <td style="text-align:left"><code>OperationNameValue !contains &quot;MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE&quot;</code><br><code>OperationNameValue contains &quot;write&quot;</code><br><code>ResourceProviderValue == &quot;MICROSOFT.MACHINELEARNINGSERVICES&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-machine-learning-write-operations-26d116bd-324b-4bb8-b102-d4a282607ad7-c243c1ab.html">Azure Machine Learning Write Operations</a></td>
+<td style="text-align: left;"><code>OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"</code><br><code>OperationNameValue contains "write"</code><br><code>ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azure-network-security-group-nsg-administrative-operations-e94d6756-981c-4f02-9a81-d006d80c8b41-633c60f3.html">Azure Network Security Group NSG Administrative Operations</a></td>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Accepted,Created,OK&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-network-security-group-nsg-administrative-operations-e94d6756-981c-4f02-9a81-d006d80c8b41-633c60f3.html">Azure Network Security Group NSG Administrative Operations</a></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Accepted,Created,OK"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.html">Azure VM Run Command executed from Azure IP address</a></td>
-  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-vm-run-command-executed-from-azure-ip-address-efe843ca-3ce7-4896-9f8b-f2c374ae6527-1a85a75b.html">Azure VM Run Command executed from Azure IP address</a></td>
+<td style="text-align: left;"><code>Authorization has "virtualMachines"</code><br><code>OperationNameValue == "Microsoft.Compute/virtualMachines/runCommand/action"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azure-virtual-network-subnets-administrative-operations-57784ba5-7791-422e-916f-65ef94fe1dbb-9d2f39f9.html">Azure Virtual Network Subnets Administrative Operations</a></td>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Accepted,Created&quot;</code><br><code>CategoryValue == &quot;Administrative&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-virtual-network-subnets-administrative-operations-57784ba5-7791-422e-916f-65ef94fe1dbb-9d2f39f9.html">Azure Virtual Network Subnets Administrative Operations</a></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Accepted,Created"</code><br><code>CategoryValue == "Administrative"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azure-storage-key-enumeration-5d2399f9-ea5c-4e67-9435-1fba745f3a39-dc9ad5ce.html">Azure storage key enumeration</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>OperationNameValue == &quot;microsoft.storage/storageaccounts/listkeys/action&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azure-storage-key-enumeration-5d2399f9-ea5c-4e67-9435-1fba745f3a39-dc9ad5ce.html">Azure storage key enumeration</a></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code><br><code>OperationNameValue == "microsoft.storage/storageaccounts/listkeys/action"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.html">AzureActivity Administration From VPS Providers</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azureactivity-administration-from-vps-providers-1b8779c9-abf2-444f-a21f-437b8f90ac4a-2a957dc6.html">AzureActivity Administration From VPS Providers</a></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-common-deployed-resources-0278e3b8-9899-45c5-8928-700cd80d2d80-cd2dd606.html">Common deployed resources</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-common-deployed-resources-0278e3b8-9899-45c5-8928-700cd80d2d80-cd2dd606.html">Common deployed resources</a></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.html">Creation of an anomalous number of resources</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>OperationNameValue in &quot;microsoft.compute/virtualMachines/write,microsoft.resources/deployments/write&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-creation-of-an-anomalous-number-of-resources-a09e6368-065b-4f1e-a4ce-b1b3a64b493b-70888297.html">Creation of an anomalous number of resources</a></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code><br><code>OperationNameValue in "microsoft.compute/virtualMachines/write,microsoft.resources/deployments/write"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.html">Granting permissions to account</a></td>
-  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code><br><code>OperationName == &quot;Create role assignment&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-granting-permissions-to-account-860cda84-765b-4273-af44-958b7cca85f7-74a48e32.html">Granting permissions to account</a></td>
+<td style="text-align: left;"><code>ActivityStatus == "Succeeded"</code><br><code>OperationName == "Create role assignment"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-microsoft-sentinel-analytics-rules-administrative-operations-ef7ef44e-6129-4d8e-94fe-b5530415d8e5-4b1b530d.html">Microsoft Sentinel Analytics Rules Administrative Operations</a></td>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>CategoryValue == &quot;Administrative&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-analytics-rules-administrative-operations-ef7ef44e-6129-4d8e-94fe-b5530415d8e5-4b1b530d.html">Microsoft Sentinel Analytics Rules Administrative Operations</a></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Created,OK"</code><br><code>CategoryValue == "Administrative"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.html">Microsoft Sentinel Connectors Administrative Operations</a></td>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-connectors-administrative-operations-17201aa8-0916-4078-a020-7ea3a9262889-4cf8c28d.html">Microsoft Sentinel Connectors Administrative Operations</a></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Created,OK"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.html">Microsoft Sentinel Workbooks Administrative Operations</a></td>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-microsoft-sentinel-workbooks-administrative-operations-5a1f9655-c893-4091-8dc0-7f11d7676506-d2f3274a.html">Microsoft Sentinel Workbooks Administrative Operations</a></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Created,OK"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.html">Port opened for an Azure Resource</a></td>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Accepted&quot;</code><br><code>OperationNameValue endswith &quot;write&quot;</code><br><code>OperationNameValue has_any &quot;ipfilterrules&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-port-opened-for-an-azure-resource-9e146876-e303-49af-b847-b029d1a66852-03c8ef50.html">Port opened for an Azure Resource</a></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Accepted"</code><br><code>OperationNameValue endswith "write"</code><br><code>OperationNameValue has_any "ipfilterrules"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.html">Rare Custom Script Extension</a></td>
-  <td style="text-align:left"><code>OperationName == &quot;Create or Update Virtual Machine Extension&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-rare-custom-script-extension-81fd68a2-9ad6-4a1c-7bd7-18efe5c99081-a79becd9.html">Rare Custom Script Extension</a></td>
+<td style="text-align: left;"><code>OperationName == "Create or Update Virtual Machine Extension"</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cloud-service-threat-protection-essentials.html">Cloud Service Threat Protection Essentials</a>:</strong> <code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>Properties contains &quot;publicipaddress&quot;</code></p>
+<p><strong>In solution <a href="../solutions/cloud-service-threat-protection-essentials.html">Cloud Service Threat Protection Essentials</a>:</strong> <code>ActivityStatusValue has_any "Succeeded"</code><br><code>Properties contains "publicipaddress"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
+<th style="text-align: left;">Hunting Query</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.html">Azure Resources Assigned Public IP Addresses</a></td>
+<td style="text-align: left;"><a href="../content/cloud-service-threat-protection-essentials-azure-resources-assigned-public-ip-addresses-8d5996b2-7d4c-4dcf-bb0d-0d7fdf0e2c75-5ca26ce3.html">Azure Resources Assigned Public IP Addresses</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Hunting Query</th>
+<th style="text-align: left;">Hunting Query</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.html">Insider Risk_Possible Sabotage</a></td>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insider-risk-possible-sabotage-3201b17a-06e1-4a8d-8157-c69345baa808-cead04e6.html">Insider Risk_Possible Sabotage</a></td>
 </tr>
 </tbody>
 </table>
@@ -554,70 +554,70 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azureactivity-dc7bc453.html">AzureActivity</a></td>
-  <td style="text-align:left"><code>Level in &quot;Error,Informational,Warning&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azureactivity-dc7bc453.html">AzureActivity</a></td>
+<td style="text-align: left;"><code>Level in "Error,Informational,Warning"</code></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-activity-azureservicehealthworkbook-d3085bda.html">AzureServiceHealthWorkbook</a></td>
-  <td style="text-align:left"><code>CategoryValue == &quot;ServiceHealth&quot;</code><br><code>Level in &quot;Error,Information,Warning&quot;</code></td>
+<td style="text-align: left;"><a href="../content/azure-activity-azureservicehealthworkbook-d3085bda.html">AzureServiceHealthWorkbook</a></td>
+<td style="text-align: left;"><code>CategoryValue == "ServiceHealth"</code><br><code>Level in "Error,Information,Warning"</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong> <code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>Caller has &quot;@&quot;</code></p>
+<p><strong>In solution <a href="../solutions/azure-sql-database-solution-for-sentinel.html">Azure SQL Database solution for sentinel</a>:</strong> <code>ActivityStatusValue == "Succeeded"</code><br><code>Caller has "@"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.html">Workbook-AzureSQLSecurity</a></td>
+<td style="text-align: left;"><a href="../content/azure-sql-database-solution-for-sentinel-workbook-azuresqlsecurity-2448278c.html">Workbook-AzureSQLSecurity</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;lockbox&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName contains &quot;update&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
+<p><strong>In solution <a href="../solutions/azuresecuritybenchmark.html">AzureSecurityBenchmark</a>:</strong> <code>ActivityStatusValue in "Succeeded,Success"</code><br><code>OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "create"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "lockbox"</code><br><code>OperationName contains "remove"</code><br><code>OperationName contains "update"</code><br><code>OperationNameValue contains "recovery"</code><br><code>OperationNameValue startswith "Microsoft.KeyVault"</code><br><code>OperationNameValue startswith "Microsoft.Logic"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
+<td style="text-align: left;"><a href="../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.html">AzureSecurityBenchmark</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong> <code>OperationName contains &quot;PIM&quot;</code></p>
+<p><strong>In solution <a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a>:</strong> <code>OperationName contains "PIM"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>OperationName in &quot;Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;Add&quot;</code><br><code>OperationName contains &quot;Audit&quot;</code><br><code>OperationName contains &quot;Change&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Log&quot;</code><br><code>OperationName contains &quot;Monitor&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;Write&quot;</code><br><code>OperationName contains &quot;reset&quot;</code><br><code>OperationNameValue contains &quot;Insights&quot;</code></p>
+<p><strong>In solution <a href="../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.html">CybersecurityMaturityModelCertification(CMMC)2.0</a>:</strong> <code>OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "Add"</code><br><code>OperationName contains "Audit"</code><br><code>OperationName contains "Change"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Log"</code><br><code>OperationName contains "Monitor"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "Write"</code><br><code>OperationName contains "reset"</code><br><code>OperationNameValue contains "Insights"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
+<td style="text-align: left;"><a href="../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.html">CybersecurityMaturityModelCertification_CMMCV2</a></td>
 </tr>
 </tbody>
 </table>
@@ -625,66 +625,66 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.html">Lumen-Threat-Feed-Overview</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user&quot;</code><br><code>OperationName !contains &quot;external&quot;</code><br><code>OperationName !contains &quot;invite&quot;</code><br><code>OperationName !contains &quot;licnense&quot;</code><br><code>OperationName contains &quot;group&quot;</code><br><code>OperationName contains &quot;member&quot;</code><br><code>OperationName contains &quot;principal&quot;</code><br><code>OperationName contains &quot;role&quot;</code><br><code>OperationName contains &quot;user&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></p>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ActivityStatusValue == "Success"</code><br><code>ActivitySubstatusValue in "Created,OK"</code><br><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code><br><code>OperationNameValue contains "Microsoft.Network/loadBalancers/"</code><br><code>OperationNameValue contains "Network"</code><br><code>ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>ActivityStatus in &quot;Accepted,Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user&quot;</code><br><code>OperationName in &quot;Set domain authentication,Set federation settings on domain,Sign-in activity&quot;</code><br><code>OperationName != &quot;Consent to application&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;delet&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName has &quot;Create&quot;</code><br><code>OperationName has_any &quot;Create,Update&quot;</code><br><code>OperationName has_any &quot;Ip,Security Rule&quot;</code></p>
+<p><strong>In solution <a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a>:</strong> <code>ActivityStatus in "Accepted,Succeeded"</code><br><code>ActivitySubstatusValue in "Created,OK"</code><br><code>OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"</code><br><code>OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"</code><br><code>OperationName != "Consent to application"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "delet"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code><br><code>OperationName has "Create"</code><br><code>OperationName has_any "Create,Update"</code><br><code>OperationName has_any "Ip,Security Rule"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationNameValue contains &quot;cluster&quot;</code><br><code>OperationNameValue contains &quot;insights&quot;</code><br><code>OperationNameValue contains &quot;storage&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
+<p><strong>In solution <a href="../solutions/nistsp80053.html">NISTSP80053</a>:</strong> <code>ActivityStatusValue in "Succeeded,Success"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code><br><code>OperationNameValue contains "cluster"</code><br><code>OperationNameValue contains "insights"</code><br><code>OperationNameValue contains "storage"</code><br><code>OperationNameValue startswith "Microsoft.Logic"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>OperationName == &quot;Consent to application&quot;</code><br><code>OperationName == &quot;Disable Strong Authentication&quot;</code><br><code>OperationName contains &quot;password&quot;</code></p>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>OperationName == "Consent to application"</code><br><code>OperationName == "Disable Strong Authentication"</code><br><code>OperationName contains "password"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+<td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
 </tr>
 </tbody>
 </table>
@@ -692,14 +692,14 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -707,45 +707,45 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
-  <th style="text-align:left">Selection Criteria</th>
+<th style="text-align: left;">Workbook</th>
+<th style="text-align: left;">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/threatanalysis&amp;response-dynamicthreatmodeling&amp;response-54123c47.html">DynamicThreatModeling&amp;Response</a></td>
-  <td style="text-align:left"></td>
+<td style="text-align: left;"><a href="../content/threatanalysis&amp;response-dynamicthreatmodeling&amp;response-54123c47.html">DynamicThreatModeling&amp;Response</a></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></p>
+<p><strong>In solution <a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a>:</strong> <code>ActivityStatusValue in "Succeeded,Success"</code><br><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>OperationNameValue startswith "Microsoft.Logic"</code></p>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Workbook</th>
+<th style="text-align: left;">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
+<td style="text-align: left;"><a href="../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.html">ZeroTrustTIC3</a></td>
 </tr>
 </tbody>
 </table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
-<h3 id="asim-parsers-1-selection-criteria-categoryvalue-quotadministrativequot">ASIM Parsers (1) — Selection Criteria: <code>CategoryValue == &quot;Administrative&quot;</code></h3>
+<h3 id="asim-parsers-1-selection-criteria-categoryvalue-administrative">ASIM Parsers (1) — Selection Criteria: <code>CategoryValue == "Administrative"</code></h3>
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Parser</th>
-  <th style="text-align:left">Schema</th>
-  <th style="text-align:left">Product</th>
+<th style="text-align: left;">Parser</th>
+<th style="text-align: left;">Schema</th>
+<th style="text-align: left;">Product</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../asim/asimauditeventazureactivity.html">ASimAuditEventAzureActivity</a></td>
-  <td style="text-align:left">AuditEvent</td>
-  <td style="text-align:left">Microsoft Azure</td>
+<td style="text-align: left;"><a href="../asim/asimauditeventazureactivity.html">ASimAuditEventAzureActivity</a></td>
+<td style="text-align: left;">AuditEvent</td>
+<td style="text-align: left;">Microsoft Azure</td>
 </tr>
 </tbody>
 </table>
@@ -893,294 +893,294 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Selection Criteria</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Selection Criteria</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code><br><code>OperationNameValue == &quot;Microsoft.ADHybridHealthService/services/servicemembers/action&quot;</code><br><code>ResourceProviderValue == &quot;Microsoft.ADHybridHealthService&quot;</code><br><code>_ResourceId has &quot;AdFederationService&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code><br><code>OperationNameValue == "Microsoft.ADHybridHealthService/services/servicemembers/action"</code><br><code>ResourceProviderValue == "Microsoft.ADHybridHealthService"</code><br><code>_ResourceId has "AdFederationService"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue startswith &quot;Accept&quot;</code><br><code>Properties has &quot;vmSize&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue startswith "Accept"</code><br><code>Properties has "vmSize"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationNameValue !contains &quot;MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE&quot;</code><br><code>OperationNameValue contains &quot;write&quot;</code><br><code>ResourceProviderValue == &quot;MICROSOFT.MACHINELEARNINGSERVICES&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>OperationNameValue !contains "MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE"</code><br><code>OperationNameValue contains "write"</code><br><code>ResourceProviderValue == "MICROSOFT.MACHINELEARNINGSERVICES"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationNameValue endswith &quot;delete&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>OperationNameValue endswith "delete"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Created,OK"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code><br><code>OperationNameValue == &quot;Microsoft.ADHybridHealthService/services/delete&quot;</code><br><code>ResourceProviderValue == &quot;Microsoft.ADHybridHealthService&quot;</code><br><code>_ResourceId has &quot;AdFederationService&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code><br><code>OperationNameValue == "Microsoft.ADHybridHealthService/services/delete"</code><br><code>ResourceProviderValue == "Microsoft.ADHybridHealthService"</code><br><code>_ResourceId has "AdFederationService"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>CategoryValue == &quot;Administrative&quot;</code><br><code>ResourceProviderValue == &quot;Microsoft.ADHybridHealthService&quot;</code><br><code>_ResourceId has &quot;AdFederationService&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>CategoryValue == "Administrative"</code><br><code>ResourceProviderValue == "Microsoft.ADHybridHealthService"</code><br><code>_ResourceId has "AdFederationService"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>OperationNameValue in &quot;Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write&quot;</code><br><code>ResourceGroup has &quot;cloud-shell&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Success"</code><br><code>OperationNameValue in "Microsoft.Storage/storageAccounts/listKeys/action,Microsoft.Storage/storageAccounts/write"</code><br><code>ResourceGroup has "cloud-shell"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>CategoryValue == &quot;Security&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Subscription/updateTenant/action&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>CategoryValue == "Security"</code><br><code>OperationNameValue == "Microsoft.Subscription/updateTenant/action"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.SecurityInsights/dataConnectors/&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code><br><code>OperationNameValue contains "Microsoft.SecurityInsights/dataConnectors/"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>CategoryValue == &quot;Administrative&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Created,OK"</code><br><code>CategoryValue == "Administrative"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>OperationNameValue == &quot;microsoft.storage/storageaccounts/listkeys/action&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code><br><code>OperationNameValue == "microsoft.storage/storageaccounts/listkeys/action"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Accepted,Created,OK&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Accepted,Created,OK"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Authorization has &quot;virtualMachines&quot;</code><br><code>OperationNameValue == &quot;Microsoft.Compute/virtualMachines/runCommand/action&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Authorization has "virtualMachines"</code><br><code>OperationNameValue == "Microsoft.Compute/virtualMachines/runCommand/action"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivitySubstatusValue in &quot;Accepted,Created&quot;</code><br><code>CategoryValue == &quot;Administrative&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivitySubstatusValue in "Accepted,Created"</code><br><code>CategoryValue == "Administrative"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>OperationNameValue in &quot;microsoft.compute/virtualMachines/write,microsoft.resources/deployments/write&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code><br><code>OperationNameValue in "microsoft.compute/virtualMachines/write,microsoft.resources/deployments/write"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatus == &quot;Succeeded&quot;</code><br><code>OperationName == &quot;Create role assignment&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatus == "Succeeded"</code><br><code>OperationName == "Create role assignment"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Accepted&quot;</code><br><code>OperationNameValue endswith &quot;write&quot;</code><br><code>OperationNameValue has_any &quot;ipfilterrules&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Accepted"</code><br><code>OperationNameValue endswith "write"</code><br><code>OperationNameValue has_any "ipfilterrules"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName == &quot;Create or Update Virtual Machine Extension&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>OperationName == "Create or Update Virtual Machine Extension"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue has_any &quot;Succeeded&quot;</code><br><code>Properties contains &quot;publicipaddress&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue has_any "Succeeded"</code><br><code>Properties contains "publicipaddress"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Level in &quot;Error,Informational,Warning&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Level in "Error,Informational,Warning"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>CategoryValue == &quot;ServiceHealth&quot;</code><br><code>Level in &quot;Error,Information,Warning&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>CategoryValue == "ServiceHealth"</code><br><code>Level in "Error,Information,Warning"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Succeeded&quot;</code><br><code>Caller has &quot;@&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Succeeded"</code><br><code>Caller has "@"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;create&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;lockbox&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName contains &quot;update&quot;</code><br><code>OperationNameValue contains &quot;recovery&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.KeyVault&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue in "Succeeded,Success"</code><br><code>OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "create"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "lockbox"</code><br><code>OperationName contains "remove"</code><br><code>OperationName contains "update"</code><br><code>OperationNameValue contains "recovery"</code><br><code>OperationNameValue startswith "Microsoft.KeyVault"</code><br><code>OperationNameValue startswith "Microsoft.Logic"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName contains &quot;PIM&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>OperationName contains "PIM"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName in &quot;Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;Add&quot;</code><br><code>OperationName contains &quot;Audit&quot;</code><br><code>OperationName contains &quot;Change&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Log&quot;</code><br><code>OperationName contains &quot;Monitor&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;Write&quot;</code><br><code>OperationName contains &quot;reset&quot;</code><br><code>OperationNameValue contains &quot;Insights&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "Add"</code><br><code>OperationName contains "Audit"</code><br><code>OperationName contains "Change"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Log"</code><br><code>OperationName contains "Monitor"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "Write"</code><br><code>OperationName contains "reset"</code><br><code>OperationNameValue contains "Insights"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue == &quot;Success&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user&quot;</code><br><code>OperationName !contains &quot;external&quot;</code><br><code>OperationName !contains &quot;invite&quot;</code><br><code>OperationName !contains &quot;licnense&quot;</code><br><code>OperationName contains &quot;group&quot;</code><br><code>OperationName contains &quot;member&quot;</code><br><code>OperationName contains &quot;principal&quot;</code><br><code>OperationName contains &quot;role&quot;</code><br><code>OperationName contains &quot;user&quot;</code><br><code>OperationNameValue contains &quot;Microsoft.Network/loadBalancers/&quot;</code><br><code>OperationNameValue contains &quot;Network&quot;</code><br><code>ResourceProviderValue in &quot;MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue == "Success"</code><br><code>ActivitySubstatusValue in "Created,OK"</code><br><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"</code><br><code>OperationName !contains "external"</code><br><code>OperationName !contains "invite"</code><br><code>OperationName !contains "licnense"</code><br><code>OperationName contains "group"</code><br><code>OperationName contains "member"</code><br><code>OperationName contains "principal"</code><br><code>OperationName contains "role"</code><br><code>OperationName contains "user"</code><br><code>OperationNameValue contains "Microsoft.Network/loadBalancers/"</code><br><code>OperationNameValue contains "Network"</code><br><code>ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatus in &quot;Accepted,Succeeded&quot;</code><br><code>ActivitySubstatusValue in &quot;Created,OK&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user&quot;</code><br><code>OperationName in &quot;Set domain authentication,Set federation settings on domain,Sign-in activity&quot;</code><br><code>OperationName != &quot;Consent to application&quot;</code><br><code>OperationName contains &quot;Create&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;Update&quot;</code><br><code>OperationName contains &quot;delet&quot;</code><br><code>OperationName contains &quot;delete&quot;</code><br><code>OperationName contains &quot;remove&quot;</code><br><code>OperationName has &quot;Create&quot;</code><br><code>OperationName has_any &quot;Create,Update&quot;</code><br><code>OperationName has_any &quot;Ip,Security Rule&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatus in "Accepted,Succeeded"</code><br><code>ActivitySubstatusValue in "Created,OK"</code><br><code>OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"</code><br><code>OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"</code><br><code>OperationName != "Consent to application"</code><br><code>OperationName contains "Create"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "Update"</code><br><code>OperationName contains "delet"</code><br><code>OperationName contains "delete"</code><br><code>OperationName contains "remove"</code><br><code>OperationName has "Create"</code><br><code>OperationName has_any "Create,Update"</code><br><code>OperationName has_any "Ip,Security Rule"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName contains &quot;Delete&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationName contains &quot;Remove&quot;</code><br><code>OperationNameValue contains &quot;cluster&quot;</code><br><code>OperationNameValue contains &quot;insights&quot;</code><br><code>OperationNameValue contains &quot;storage&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue in "Succeeded,Success"</code><br><code>OperationName contains "Delete"</code><br><code>OperationName contains "PIM"</code><br><code>OperationName contains "Remove"</code><br><code>OperationNameValue contains "cluster"</code><br><code>OperationNameValue contains "insights"</code><br><code>OperationNameValue contains "storage"</code><br><code>OperationNameValue startswith "Microsoft.Logic"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OperationName == &quot;Consent to application&quot;</code><br><code>OperationName == &quot;Disable Strong Authentication&quot;</code><br><code>OperationName contains &quot;password&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>OperationName == "Consent to application"</code><br><code>OperationName == "Disable Strong Authentication"</code><br><code>OperationName contains "password"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ActivityStatusValue in &quot;Succeeded,Success&quot;</code><br><code>OperationName in &quot;Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user&quot;</code><br><code>OperationName contains &quot;PIM&quot;</code><br><code>OperationNameValue startswith &quot;Microsoft.Logic&quot;</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ActivityStatusValue in "Succeeded,Success"</code><br><code>OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"</code><br><code>OperationName contains "PIM"</code><br><code>OperationNameValue startswith "Microsoft.Logic"</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>39</strong></td>
-  <td style="text-align:center"><strong>1</strong></td>
-  <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>40</strong></td>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>39</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"><strong>40</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1188,30 +1188,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Succeeded</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Succeeded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Accepted</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Accepted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1219,54 +1219,54 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Succeeded</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">8</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>8</strong></td>
+<td style="text-align: left;"><code>Succeeded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Success</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+<td style="text-align: left;"><code>Success</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>startswith Accept</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>startswith Accept</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Accepted</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Accepted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Succeeded</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has_any Succeeded</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1274,38 +1274,38 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Created</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">7</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>7</strong></td>
+<td style="text-align: left;"><code>Created</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>7</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>OK</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">6</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>6</strong></td>
+<td style="text-align: left;"><code>OK</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>6</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Accepted</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Accepted</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1313,22 +1313,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>has virtualMachines</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has virtualMachines</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1336,22 +1336,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>has @</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has @</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1359,38 +1359,38 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Administrative</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">7</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>8</strong></td>
+<td style="text-align: left;"><code>Administrative</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>8</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Security</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Security</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ServiceHealth</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>ServiceHealth</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1398,46 +1398,46 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Error</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Error</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Warning</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Warning</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Informational</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Informational</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Information</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Information</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1445,422 +1445,422 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Add member to role</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+<td style="text-align: left;"><code>Add member to role</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Add user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+<td style="text-align: left;"><code>Add user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Reset user password</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+<td style="text-align: left;"><code>Reset user password</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Update user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+<td style="text-align: left;"><code>Update user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains PIM</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">5</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>5</strong></td>
+<td style="text-align: left;"><code>contains PIM</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>5</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains delete</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><code>contains delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains remove</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><code>contains remove</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>AzureFirewallIDSLog</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><code>AzureFirewallIDSLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>NetworkSecurityGroupEvents</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><code>NetworkSecurityGroupEvents</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Delete</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><code>contains Delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Create role assignment</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Create role assignment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Create</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>contains Create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Remove</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>contains Remove</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Update</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>contains Update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>ApplicationGatewayFirewall</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>ApplicationGatewayFirewall</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Consent to application</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Consent to application</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Create or Update Virtual Machine Extension</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Create or Update Virtual Machine Extension</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains create</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains lockbox</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains lockbox</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains update</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Add</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Add</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Audit</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Audit</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Change</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Change</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Log</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Log</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Monitor</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Monitor</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Write</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Write</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains reset</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains reset</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!contains external</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>!contains external</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!contains invite</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>!contains invite</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!contains licnense</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>!contains licnense</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains group</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains group</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains member</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains member</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains principal</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains principal</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains role</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains role</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains user</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains user</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Create Deployment</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Create Deployment</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Create or Update Virtual Machine</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Create or Update Virtual Machine</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>List Storage Account Keys</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>List Storage Account Keys</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Set domain authentication</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Set domain authentication</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Set federation settings on domain</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Set federation settings on domain</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Sign-in activity</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Sign-in activity</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!= Consent to application</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>!= Consent to application</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains delet</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains delet</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has Create</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has Create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Create</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has_any Create</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Update</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has_any Update</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Ip</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has_any Ip</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any Security Rule</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has_any Security Rule</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Disable Strong Authentication</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Disable Strong Authentication</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains password</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains password</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>AzureFirewallThreatIntelLog</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>AzureFirewallThreatIntelLog</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1868,206 +1868,206 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>startswith Microsoft.Logic</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">3</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>3</strong></td>
+<td style="text-align: left;"><code>startswith Microsoft.Logic</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>3</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.ADHybridHealthService/services/servicemembers/action</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>Microsoft.ADHybridHealthService/services/servicemembers/action</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>!contains MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>!contains MICROSOFT.AUTHORIZATION/ROLEASSIGNMENTS/WRITE</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains write</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>contains write</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>endswith delete</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>endswith delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.ADHybridHealthService/services/delete</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Microsoft.ADHybridHealthService/services/delete</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.Storage/storageAccounts/listKeys/action</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Microsoft.Storage/storageAccounts/listKeys/action</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.Storage/storageAccounts/write</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Microsoft.Storage/storageAccounts/write</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.Subscription/updateTenant/action</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Microsoft.Subscription/updateTenant/action</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Microsoft.SecurityInsights/dataConnectors/</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Microsoft.SecurityInsights/dataConnectors/</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>microsoft.storage/storageaccounts/listkeys/action</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>microsoft.storage/storageaccounts/listkeys/action</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>Microsoft.Compute/virtualMachines/runCommand/action</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>Microsoft.Compute/virtualMachines/runCommand/action</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>microsoft.compute/virtualMachines/write</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>microsoft.compute/virtualMachines/write</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>microsoft.resources/deployments/write</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>microsoft.resources/deployments/write</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>endswith write</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>endswith write</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>has_any ipfilterrules</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has_any ipfilterrules</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains recovery</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains recovery</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>startswith Microsoft.KeyVault</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>startswith Microsoft.KeyVault</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Insights</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Insights</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Microsoft.Network/loadBalancers/</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Microsoft.Network/loadBalancers/</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains Network</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains Network</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains cluster</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains cluster</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains insights</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains insights</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains storage</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains storage</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2075,30 +2075,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>has vmSize</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>has vmSize</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>contains publicipaddress</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>contains publicipaddress</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2106,22 +2106,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>has cloud-shell</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>has cloud-shell</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2129,46 +2129,46 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>Microsoft.ADHybridHealthService</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
+<td style="text-align: left;"><code>Microsoft.ADHybridHealthService</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.MACHINELEARNINGSERVICES</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">2</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>2</strong></td>
+<td style="text-align: left;"><code>MICROSOFT.MACHINELEARNINGSERVICES</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>2</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.CONTAINERSERVICE</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>MICROSOFT.CONTAINERSERVICE</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>MICROSOFT.LOGIC</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>1</strong></td>
+<td style="text-align: left;"><code>MICROSOFT.LOGIC</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -2176,29 +2176,28 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Value</th>
-  <th style="text-align:center">Connectors</th>
-  <th style="text-align:center">Content Items</th>
-  <th style="text-align:center">ASIM Parsers</th>
-  <th style="text-align:center">Other Parsers</th>
-  <th style="text-align:center">Total</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: center;">Connectors</th>
+<th style="text-align: center;">Content Items</th>
+<th style="text-align: center;">ASIM Parsers</th>
+<th style="text-align: center;">Other Parsers</th>
+<th style="text-align: center;">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><code>has AdFederationService</code></td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">4</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center"><strong>4</strong></td>
+<td style="text-align: left;"><code>has AdFederationService</code></td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;"><strong>4</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

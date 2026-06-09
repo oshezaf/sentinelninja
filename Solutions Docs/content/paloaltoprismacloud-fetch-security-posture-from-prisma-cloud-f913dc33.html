@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Type</strong></td>
-  <td style="text-align:left">Playbook</td>
+<td style="text-align: left;"><strong>Type</strong></td>
+<td style="text-align: left;">Playbook</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Solution</strong></td>
-  <td style="text-align:left"><a href="../solutions/paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
+<td style="text-align: left;"><strong>Solution</strong></td>
+<td style="text-align: left;"><a href="../solutions/paloaltoprismacloud.html">PaloAltoPrismaCloud</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Source</strong></td>
-  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Playbooks/PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Enrichment/azuredeploy.json">View on GitHub</a></td>
+<td style="text-align: left;"><strong>Source</strong></td>
+<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Playbooks/PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Enrichment/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,122 +47,58 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Connector / Action</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:center">Connections</th>
-  <th style="text-align:center">Actions</th>
+<th style="text-align: left;">Connector / Action</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: center;">Connections</th>
+<th style="text-align: center;">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">3</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-  <td style="text-align:left">Managed</td>
-  <td style="text-align:center">0</td>
-  <td style="text-align:center">1</td>
+<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+<td style="text-align: left;">Managed</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../logic-apps/custom-prismacloudcspmcustomconnector.html"><code>PrismaCloudCSPMCustomConnector</code></a></td>
-  <td style="text-align:left">Custom</td>
-  <td style="text-align:center">1</td>
-  <td style="text-align:center">4</td>
+<td style="text-align: left;"><a href="../logic-apps/custom-prismacloudcspmcustomconnector.html"><code>PrismaCloudCSPMCustomConnector</code></a></td>
+<td style="text-align: left;">Custom</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_3</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/Incidents/Comment</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Get_secret</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
-<h4 id="prismacloudcspmcustomconnector"><a href="../logic-apps/custom-prismacloudcspmcustomconnector.html"><code>PrismaCloudCSPMCustomConnector</code></a> (Custom)</h4>
-<table>
-<thead>
-<tr>
-  <th style="text-align:left">Action</th>
-  <th style="text-align:left">Method</th>
-  <th style="text-align:left">Endpoint</th>
-  <th style="text-align:left">Other</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td style="text-align:left">Assets_Resource_Scan</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/resource/scan_info</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Assets_Enrichment</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/uai/v1/asset</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Get_Alert_Info</td>
-  <td style="text-align:left">get</td>
-  <td style="text-align:left"><code>/alert/@{encodeURIComponent(items('For_each_-_storing_alert_info_in_variable'))}</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-<tr>
-  <td style="text-align:left">Login_Generate_Token</td>
-  <td style="text-align:left">post</td>
-  <td style="text-align:left"><code>/login</code></td>
-  <td style="text-align:left">—</td>
-</tr>
-</tbody>
-</table>
+#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Add_comment_to_incident_(V3)_3 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
+| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
+
+#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Get_secret | get | `/secrets/@{encodeURIComponent(parameters('PrismaSecretName'))}/value` | — |
+
+#### [`PrismaCloudCSPMCustomConnector`](../logic-apps/custom-prismacloudcspmcustomconnector.md) (Custom)
+
+| Action | Method | Endpoint | Other |
+|:-------|:-------|:---------|:------|
+| Assets_Resource_Scan | get | `/resource/scan_info` | — |
+| Assets_Enrichment | post | `/uai/v1/asset` | — |
+| Get_Alert_Info | get | `/alert/@{encodeURIComponent(items('For_each_-_storing_alert_info_in_variable'))}` | — |
+| Login_Generate_Token | post | `/login` | — |
+
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -170,13 +106,11 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/PaloAltoPrismaCloud/Playbooks/PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Enrichment/readme.md">PrismaCloudCSPMPlaybooks/PrismaCloudCSPM-Enrichment/readme.md</a></em></p>
 </blockquote>
 <h1 id="prismacloudcspm-enrichment-info-playbook">PrismaCloudCSPM-Enrichment Info Playbook</h1>
-<h2 id="summary">Summary</h2>
-<p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions</p>
-<ol>
-<li>Fetches the list of assets from incident entities.</li>
-<li>Make the API call to get the latest Compliance security posture/details from cloud console and update the same incidents comments with result.</li>
-<li>Note : Asset column for which the security posture to be enriched should be mapped with hostname entity while creating analytics rule.</li>
-</ol>
+<p>## Summary
+ When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs below actions
+ 1. Fetches the list of assets from incident entities.
+ 2. Make the API call to get the latest Compliance security posture/details from cloud console and update the same incidents comments with result.
+ 3. Note : Asset column for which the security posture to be enriched should be mapped with hostname entity while creating analytics rule. </p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>PrismaCloudCSPM Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
@@ -185,10 +119,10 @@
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
-<li>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAltoPrismaCloud%2FPlaybooks%2FPrismaCloudCSPMPlaybooks%2FPrismaCloudCSPM-Enrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAltoPrismaCloud%2FPlaybooks%2F%2FPrismaCloudCSPMPlaybooks%2FPrismaCloudCSPM-Enrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAltoPrismaCloud%2FPlaybooks%2FPrismaCloudCSPMPlaybooks%2FPrismaCloudCSPM-Enrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FPaloAltoPrismaCloud%2FPlaybooks%2F%2FPrismaCloudCSPMPlaybooks%2FPrismaCloudCSPM-Enrichment%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
 <ol start="2">
 <li>Fill in the required parameters:<ul>
 <li>Playbook Name: Enter the playbook name here (Ex: PrismaCloudCSPM-Enrichment).</li>
@@ -201,18 +135,16 @@
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections (Perform this action if needed)</h4>
-<p>Once deployment is complete, you will need to authorize each connection.</p>
-<ol>
-<li>Click the Microsoft Sentinel connection resource</li>
-<li>Click edit API connection</li>
-<li>Click Authorize</li>
-<li>Sign in</li>
-<li>Click Save</li>
-<li>Repeat steps for playbooks other API Connection.</li>
-</ol>
+<p>Once deployment is complete, you will need to authorize each connection.
+1.  Click the Microsoft Sentinel connection resource
+2.  Click edit API connection
+3.  Click Authorize
+4.  Sign in
+5.  Click Save
+6.  Repeat steps for playbooks other API Connection.</p>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
-<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky asset.</li>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with risky asset. </li>
 <li>Configure the automation rules to trigger this playbook , mapping of hostname entity is necessary</li>
 </ol>
 <h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
@@ -233,7 +165,7 @@
 <li>Select the Keyvault resource where you have stored the secret</li>
 <li>Click on Access policies Blade</li>
 <li>Click on Create</li>
-<li>Under Secret permissions column , Select Get , List from &quot;Secret Management Operations&quot;</li>
+<li>Under Secret permissions column , Select Get , List from "Secret Management Operations"</li>
 <li>Click next to go to Principal tab and choose your deployed playbook name</li>
 <li>Click Next leave application tab as it is .</li>
 <li>Click Review and create</li>
@@ -246,7 +178,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/paloaltoprismacloud.html">Back to PaloAltoPrismaCloud</a></p>
-
 </div>
 
 </body>

@@ -13,7 +13,7 @@
 | **Publisher** | Lookout |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.lookout.com/support](https://www.lookout.com/support) |
-| **Categories** | domains |
+| **Categories** | Security - Cloud Security |
 | **Version** | 3.0.0 |
 | **Author** | Lookout |
 | **First Published** | 2023-02-17 |

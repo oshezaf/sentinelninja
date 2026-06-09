@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Network</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Network</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Supports Transformations</strong></td>
-  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+<td style="text-align: left;"><strong>Supports Transformations</strong></td>
+<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntarulerecommendation">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntarulerecommendation">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,161 +57,161 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">AdditionalProperties</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Placeholder for additional properties related to the recommended rule.</td>
+<td style="text-align: left;">AdditionalProperties</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Placeholder for additional properties related to the recommended rule.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestPortsRanges</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Comma-separated list of destination port ranges on target resource id.</td>
+<td style="text-align: left;">DestPortsRanges</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Comma-separated list of destination port ranges on target resource id.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestPublicIpCidrs</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Public destination IPs in CIDR format for outbound flows.</td>
+<td style="text-align: left;">DestPublicIpCidrs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Public destination IPs in CIDR format for outbound flows.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestServiceTagsList</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service tags associated with destination traffic for outbound flows.</td>
+<td style="text-align: left;">DestServiceTagsList</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service tags associated with destination traffic for outbound flows.</td>
 </tr>
 <tr>
-  <td style="text-align:left">DestSubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Subscription ID of the target resource id receiving the traffic.</td>
+<td style="text-align: left;">DestSubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription ID of the target resource id receiving the traffic.</td>
 </tr>
 <tr>
-  <td style="text-align:left">EndTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">End time of the flow observation window.</td>
+<td style="text-align: left;">EndTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">End time of the flow observation window.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IpRegionDetails</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Region information for the involved IP addresses.</td>
+<td style="text-align: left;">IpRegionDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Region information for the involved IP addresses.</td>
 </tr>
 <tr>
-  <td style="text-align:left">IpUrls</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">List of Urls for the malicious Ips.</td>
+<td style="text-align: left;">IpUrls</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of Urls for the malicious Ips.</td>
 </tr>
 <tr>
-  <td style="text-align:left">L4Protocol</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Layer 4 protocol used in the traffic. Possible values are TCP, UDP.</td>
+<td style="text-align: left;">L4Protocol</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Layer 4 protocol used in the traffic. Possible values are TCP, UDP.</td>
 </tr>
 <tr>
-  <td style="text-align:left">PortCategory</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates the classification of the destination port based on well-known or commonly used port ranges.</td>
+<td style="text-align: left;">PortCategory</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates the classification of the destination port based on well-known or commonly used port ranges.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RecommendedAction</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Recommended action on the recommended rule. Possible values are Allow, Block, Advisory.</td>
+<td style="text-align: left;">RecommendedAction</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Recommended action on the recommended rule. Possible values are Allow, Block, Advisory.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RecommendedRuleName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the rule being recommended.</td>
+<td style="text-align: left;">RecommendedRuleName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the rule being recommended.</td>
 </tr>
 <tr>
-  <td style="text-align:left">RuleScope</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Scope within which the rule applies. Possible values are SubscriptionId, VirtualNetwork.</td>
+<td style="text-align: left;">RuleScope</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Scope within which the rule applies. Possible values are SubscriptionId, VirtualNetwork.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SchemaVersion</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Version of the schema used for this record.</td>
+<td style="text-align: left;">SchemaVersion</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Version of the schema used for this record.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">SrcPublicIpCidrs</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Public source IPs in CIDR format for inbound flows.</td>
+<td style="text-align: left;">SrcPublicIpCidrs</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Public source IPs in CIDR format for inbound flows.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SrcServiceTagsList</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Service tags associated with source traffic for inbound flows.</td>
+<td style="text-align: left;">SrcServiceTagsList</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Service tags associated with source traffic for inbound flows.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SrcSubscriptionId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Subscription ID of the target resource id sending the traffic.</td>
+<td style="text-align: left;">SrcSubscriptionId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Subscription ID of the target resource id sending the traffic.</td>
 </tr>
 <tr>
-  <td style="text-align:left">StartTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Start time of the flow observation window.</td>
+<td style="text-align: left;">StartTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Start time of the flow observation window.</td>
 </tr>
 <tr>
-  <td style="text-align:left">SummarizationType</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Indicates how the flows were summarized by time. Possible values are Hourly, Daily.</td>
+<td style="text-align: left;">SummarizationType</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indicates how the flows were summarized by time. Possible values are Hourly, Daily.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TargetResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The resource targeted by the rule.</td>
+<td style="text-align: left;">TargetResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The resource targeted by the rule.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TargetResourceIdsList</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">List of all targeted resource IDs covered by the rule.</td>
+<td style="text-align: left;">TargetResourceIdsList</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">List of all targeted resource IDs covered by the rule.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">The time when the data gets ingested into the Log Analytics Workspace.</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">The time when the data gets ingested into the Log Analytics Workspace.</td>
 </tr>
 <tr>
-  <td style="text-align:left">TotalFlowCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Total number of flows observed for this rule.</td>
+<td style="text-align: left;">TotalFlowCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Total number of flows observed for this rule.</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">UnecryptedFlowDetails</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">For unencrypted flow, it specifies the encryption level. Possible values are Unencrypted, Unsupported hardware, Software not ready, Drop due to no encryption, Discovery not supported, Destination on same host, Fall back to no encryption.</td>
+<td style="text-align: left;">UnecryptedFlowDetails</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">For unencrypted flow, it specifies the encryption level. Possible values are Unencrypted, Unsupported hardware, Software not ready, Drop due to no encryption, Discovery not supported, Destination on same host, Fall back to no encryption.</td>
 </tr>
 <tr>
-  <td style="text-align:left">VirtualNetworkResourceId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Virtual network name targeted by rule.</td>
+<td style="text-align: left;">VirtualNetworkResourceId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Virtual network name targeted by rule.</td>
 </tr>
 </tbody>
 </table>
@@ -219,7 +219,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

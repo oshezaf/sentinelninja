@@ -15,7 +15,7 @@
 | **Publisher** | Forgerock |
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.forgerock.com/support](https://www.forgerock.com/support) |
-| **Categories** | domains |
+| **Categories** | Identity |
 | **Version** | 3.0.0 |
 | **Author** | ForgeRock - isv@email.com |
 | **First Published** | 2022-05-04 |

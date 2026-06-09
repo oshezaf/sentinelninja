@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-  <th style="text-align:left">Attribute</th>
-  <th style="text-align:left">Value</th>
+<th style="text-align: left;">Attribute</th>
+<th style="text-align: left;">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><strong>Category</strong></td>
-  <td style="text-align:left">Security, XDR</td>
+<td style="text-align: left;"><strong>Category</strong></td>
+<td style="text-align: left;">Security, XDR</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
-  <td style="text-align:left">✓ Yes</td>
+<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
+<td style="text-align: left;">✓ Yes</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
-  <td style="text-align:left">✗ No</td>
+<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
+<td style="text-align: left;">✗ No</td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oauthappinfo">View Documentation</a></td>
+<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oauthappinfo">View Documentation</a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-oauthappinfo-table">View Documentation</a></td>
+<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-oauthappinfo-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,116 +57,116 @@
 <table id="schema-table">
 <thead>
 <tr>
-  <th style="text-align:left">Column Name</th>
-  <th style="text-align:left">Type</th>
-  <th style="text-align:left">Description</th>
+<th style="text-align: left;">Column Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left">_BilledSize</td>
-  <td style="text-align:left">real</td>
-  <td style="text-align:left">The record size in bytes</td>
+<td style="text-align: left;">_BilledSize</td>
+<td style="text-align: left;">real</td>
+<td style="text-align: left;">The record size in bytes</td>
 </tr>
 <tr>
-  <td style="text-align:left">_IsBillable</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+<td style="text-align: left;">_IsBillable</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-  <td style="text-align:left">AddedOnTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the application was registered</td>
+<td style="text-align: left;">AddedOnTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the application was registered</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppName</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The application's display name as exposed by the associated service principal</td>
+<td style="text-align: left;">AppName</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The application's display name as exposed by the associated service principal</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppOrigin</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies whether the app is internal to the organization or registered in an external tenant</td>
+<td style="text-align: left;">AppOrigin</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies whether the app is internal to the organization or registered in an external tenant</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppOwnerTenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Specifies the ID of the tenant where the app was registered</td>
+<td style="text-align: left;">AppOwnerTenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Specifies the ID of the tenant where the app was registered</td>
 </tr>
 <tr>
-  <td style="text-align:left">AppStatus</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Status of the app; can be: Enabled, DisabledByMicrosoft, DisabledByAppGovernancePolicy, DisabledByUser, Deleted</td>
+<td style="text-align: left;">AppStatus</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Status of the app; can be: Enabled, DisabledByMicrosoft, DisabledByAppGovernancePolicy, DisabledByUser, Deleted</td>
 </tr>
 <tr>
-  <td style="text-align:left">ConsentedUsersCount</td>
-  <td style="text-align:left">int</td>
-  <td style="text-align:left">Count of users who have consented to the app</td>
+<td style="text-align: left;">ConsentedUsersCount</td>
+<td style="text-align: left;">int</td>
+<td style="text-align: left;">Count of users who have consented to the app</td>
 </tr>
 <tr>
-  <td style="text-align:left">IsAdminConsented</td>
-  <td style="text-align:left">bool</td>
-  <td style="text-align:left">Value is True if a user has provided admin consent to the app on behalf of all the users in the org, otherwise False</td>
+<td style="text-align: left;">IsAdminConsented</td>
+<td style="text-align: left;">bool</td>
+<td style="text-align: left;">Value is True if a user has provided admin consent to the app on behalf of all the users in the org, otherwise False</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastModifiedTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Timestamp when the app was last modified</td>
+<td style="text-align: left;">LastModifiedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Timestamp when the app was last modified</td>
 </tr>
 <tr>
-  <td style="text-align:left">LastUsedTime</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time when the app last signed in</td>
+<td style="text-align: left;">LastUsedTime</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time when the app last signed in</td>
 </tr>
 <tr>
-  <td style="text-align:left">OAuthAppId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the app as assigned by Microsoft Entra ID</td>
+<td style="text-align: left;">OAuthAppId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the app as assigned by Microsoft Entra ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">Permissions</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Contains an array of permission objects</td>
+<td style="text-align: left;">Permissions</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Contains an array of permission objects</td>
 </tr>
 <tr>
-  <td style="text-align:left">PrivilegeLevel</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The privilege level of the app based on the highest classified permission granted to the app</td>
+<td style="text-align: left;">PrivilegeLevel</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The privilege level of the app based on the highest classified permission granted to the app</td>
 </tr>
 <tr>
-  <td style="text-align:left">ReportId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">Unique identifier for the record</td>
+<td style="text-align: left;">ReportId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Unique identifier for the record</td>
 </tr>
 <tr>
-  <td style="text-align:left">ServicePrincipalId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The unique identifier for the service principal instance of the application in the tenant</td>
+<td style="text-align: left;">ServicePrincipalId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The unique identifier for the service principal instance of the application in the tenant</td>
 </tr>
 <tr>
-  <td style="text-align:left">SourceSystem</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+<td style="text-align: left;">SourceSystem</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
 </tr>
 <tr>
-  <td style="text-align:left">TenantId</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The Log Analytics workspace ID</td>
+<td style="text-align: left;">TenantId</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-  <td style="text-align:left">TimeGenerated</td>
-  <td style="text-align:left">datetime</td>
-  <td style="text-align:left">Date and time (UTC) when the record was generated</td>
+<td style="text-align: left;">TimeGenerated</td>
+<td style="text-align: left;">datetime</td>
+<td style="text-align: left;">Date and time (UTC) when the record was generated</td>
 </tr>
 <tr>
-  <td style="text-align:left">Type</td>
-  <td style="text-align:left">string</td>
-  <td style="text-align:left">The name of the table</td>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">The name of the table</td>
 </tr>
 <tr>
-  <td style="text-align:left">VerifiedPublisher</td>
-  <td style="text-align:left">dynamic</td>
-  <td style="text-align:left">Specifies details about the verified publisher of the application which this service principal represents</td>
+<td style="text-align: left;">VerifiedPublisher</td>
+<td style="text-align: left;">dynamic</td>
+<td style="text-align: left;">Specifies details about the verified publisher of the application which this service principal represents</td>
 </tr>
 </tbody>
 </table>
@@ -174,7 +174,6 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
-
 </div>
 <script>
 $(function() {

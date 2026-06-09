@@ -15,13 +15,13 @@
 | **Publisher** | meshcloud GmbH |
 | **Support Tier** | Partner |
 | **Support Link** | [https://feedback.meshcloud.io](https://feedback.meshcloud.io) |
-| **Categories** | domains |
+| **Categories** | Application,IT Operations |
 | **Version** | 3.0.1 |
 | **Author** | meshcloud - support@meshcloud.io |
 | **First Published** | 2025-12-15 |
 | **Last Updated** | 2026-04-16 |
 | **Solution Folder** | [meshStack](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/meshStack) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/meshcloudgmbh1628603483473.azure-sentinel-solution-meshstack) · Popularity: 🟡 Low (24%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/meshcloudgmbh1628603483473.azure-sentinel-solution-meshstack) · Popularity: ⚪ Very Low (1%) |
 
 The meshStack solution for Microsoft Sentinel enables you to ingest meshStack Event Logs into Microsoft Sentinel.
 
