@@ -24,7 +24,7 @@ Files that were processed by Microsoft Defender for Office 365 in SharePoint Onl
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | DetectionMethods | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats. |
 | DocumentID | string | Unique identifier of the file. |
 | FileCreationTime | datetime | Timestamp of the file creation. |
@@ -37,7 +37,7 @@ Files that were processed by Microsoft Defender for Office 365 in SharePoint Onl
 | LastModifyingAccountUpn | string | Account that last modified this file. |
 | ReportId | string | Unique identifier for the event. |
 | SHA256 | string | SHA-256 of the file that the recorded action was applied to. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatNames | string | Detection name for malware or other threats found. |
 | ThreatTypes | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats. |

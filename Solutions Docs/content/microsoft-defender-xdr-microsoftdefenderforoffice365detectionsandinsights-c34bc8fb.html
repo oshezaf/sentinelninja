@@ -22,22 +22,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Workbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Workbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Workbooks/MicrosoftDefenderForOffice365detectionsandinsights.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20XDR/Workbooks/MicrosoftDefenderForOffice365detectionsandinsights.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -46,75 +46,76 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,Malware ZAP,Phish ZAP,Spam ZAP,UserSubmission"</code><br><code>ActionType == "Automated Remediation"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "ZAP"</code><br><code>ActionType has "Malware ZAP"</code><br><code>ActionType has "Phish ZAP"</code><br><code>ActionType has "Spam ZAP"</code><br><code>ActionType has "ZAP"</code><br><code>ActionType has_any "ClickAllowed"</code><br><code>ActionType has_any "ClickBlocked"</code><br><code>ActionType has_any "UrlErrorPage"</code><br><code>ActionType has_any "UrlScanInProgress"</code><br><code>Title startswith "CC_"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>Title startswith &quot;CC_&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code><br><code>UserAgent == "MS Scanner ATP"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/cloudappevents.html"><code>CloudAppEvents</code></a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,FileMalwareDetected,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Redelivery,Spam ZAP"</code><br><code>DeliveryAction == "Delivered"</code><br><code>DeliveryAction != "Delivered"</code><br><code>OrgLevelAction in "Allow,Block"</code><br><code>OrgLevelPolicy != "Phishing simulation"</code><br><code>OrgLevelPolicy != "SecOps Mailbox"</code><br><code>UserLevelAction in "Allow,Block"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/emailevents.html"><code>EmailEvents</code></a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery,Spam ZAP,UserSubmission&quot;</code><br><code>DeliveryAction == &quot;Delivered&quot;</code><br><code>DeliveryAction != &quot;Delivered&quot;</code><br><code>OrgLevelAction in &quot;Allow,Block&quot;</code><br><code>OrgLevelPolicy != &quot;Phishing simulation&quot;</code><br><code>OrgLevelPolicy != &quot;SecOps Mailbox&quot;</code><br><code>UserLevelAction in &quot;Allow,Block&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
-<td style="text-align: left;"><code>Action == "Quarantine release"</code><br><code>ActionResult == "Success"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/emailpostdeliveryevents.html"><code>EmailPostDeliveryEvents</code></a></td>
+  <td style="text-align:left"><code>Action == &quot;Quarantine release&quot;</code><br><code>ActionResult == &quot;Success&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/emailurlinfo.html"><code>EmailUrlInfo</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/urlclickevents.html"><code>UrlClickEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/microsoft-defender-xdr.html">Back to Microsoft Defender XDR</a></p>
+
 </div>
 
 </body>

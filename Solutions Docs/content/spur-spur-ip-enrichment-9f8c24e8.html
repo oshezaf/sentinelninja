@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/spur.html">Spur</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/spur.html">Spur</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,62 +47,116 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-spurconnector.html"><code>spurconnector</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-spurconnector.html"><code>spurconnector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-spur-context-connector.html"><code>Spur-Context-Connector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-spur-context-connector.html"><code>Spur-Context-Connector</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_IPs | post | `/entities/ip` | — |
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Update_incident | put | `/Incidents` | — |
-
-#### [`spurconnector`](../logic-apps/managed-spurconnector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_IP_Context | get | `/v2/context/@{encodeURIComponent(body('Parse_IP_Entity_')?['address'])}` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| GetAccessTokenSpur | POST | `@variables('access_token_url')` | — |
-| HTTP_-_Save_to_Custom_Table | POST | `@concat(parameters('DCE_Endpoint_URL'),'/dataCollectionRules/',parameters('DCR_Immutable_ID'),'/streams/Custom-','Spur_IP_Context_Details_CL','?api-version=2023-01-01')` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_IPs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/ip</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="spurconnector"><a href="../logic-apps/managed-spurconnector.html"><code>spurconnector</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_IP_Context</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/v2/context/@{encodeURIComponent(body('Parse_IP_Entity_')?['address'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">GetAccessTokenSpur</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@variables('access_token_url')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Save_to_Custom_Table</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@concat(parameters('DCE_Endpoint_URL'),'/dataCollectionRules/',parameters('DCR_Immutable_ID'),'/streams/Custom-','Spur_IP_Context_Details_CL','?api-version=2023-01-01')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -117,7 +171,8 @@
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
-<p><a name="overview"></p>
+<a name="overview">
+
 <h1 id="overview">Overview</h1>
 <p>This playbook uses the Spur Context API. It is able to provide hosted high-performance IP enrichment lookups of the highest-fidelity IP intelligence available. With pre-built integrations into the most common threat analysis platforms and services, Spur ensures that security teams can instantly leverage data to protect their environments from the latest evasion and obfuscation methods, such as VPNs, residential proxies, and bot automation.</p>
 <p>When a new Azure Sentinel Incident is created, this playbook gets triggered and performs the following actions:</p>
@@ -127,42 +182,50 @@
 <li>All the details from Spur Context API will be added as comments in a tabular format.</li>
 <li>Optionally, is saved the Context API data into Log Analytics custom table.</li>
 </ul>
-<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/comments.png" />
-<img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/custom_table.png" /></p>
-<p><a name="deployplaybook"></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/comments.png" alt="Incident Comments" />
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/custom_table.png" alt="Incident Comments" /></p>
+<a name="deployplaybook">
+
 <h2 id="links-to-deploy-the-domaintools-iris-enrich-domain-playbook">Links to deploy the DomainTools Iris Enrich Domain Playbook:</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpur%2FPlaybooks%2FSpur-Get-IP-Context-Data-Incident-Trigger%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpur%2FPlaybooks%2FSpur-Get-IP-Context-Data-Incident-Trigger%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<p><a name="prerequisites"></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpur%2FPlaybooks%2FSpur-Get-IP-Context-Data-Incident-Trigger%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpur%2FPlaybooks%2FSpur-Get-IP-Context-Data-Incident-Trigger%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<a name="prerequisites">
+
 <h2 id="prerequisites-for-using-and-deploying-playbook">Prerequisites for using and deploying playbook</h2>
 <ul>
 <li>A Spur API Key.</li>
 <li>Spur Custom Connector.</li>
 </ul>
-<p><a name="deployment"></p>
+<a name="deployment">
+
 <h4 id="deployment-instructions">Deployment instructions</h4>
 <ul>
-<li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbooks by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
-  <img alt="deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/deployment.png" /></li>
-<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/deployment.png" alt="deployment" /></li>
+<li>Click &quot;Review + create&quot;. Once the validation is successful, click on &quot;Create&quot;.</li>
 </ul>
-<p><a name="postdeployment"></p>
+<a name="postdeployment">
+
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection:
-- Open the Logic App in the edit mode.
-- Logic App prompts any missing connections, please update the connections.
-  <img alt="postdeployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/post_deployment_connections.png" />
-- As a best practice, we have used the Sentinel connection in Logic Apps that use "ManagedSecurityIdentity" permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.
-- Click on 'Parameter' and Enter All Parameters to save data in Custom logs table.
-- Set the following parameters:
-  - <code>Save_To_Custom_Table</code>: Set to <code>true</code> to enable saving Spur data to a custom Log Analytics table
-  - <code>DCE_Endpoint_URL</code>: Data Collection Endpoint URL for your Log Analytics workspace
-  - <code>DCR_Immutable_ID</code>: Immutable ID of the Data Collection Rule
-  - <code>TenantID</code>: Azure AD tenant ID for authentication (From Azure App Registration)
-  - <code>ClientID</code>: Application (client) ID of the service principal (From Azure App Registration)
-  - <code>ClientSecret</code>: Client secret for the service principal (secure string)(From Azure App Registration)
-  - <code>Auth_LoginEndpoint</code>: Login endpoint for authentication. Copy and paste this value in the parameter-'https://login.microsoftonline.com'</p>
+<p>Once deployment is complete, you will need to authorize each connection:</p>
+<ul>
+<li>Open the Logic App in the edit mode.</li>
+<li>Logic App prompts any missing connections, please update the connections.
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Spur/Playbooks/Spur-Get-IP-Context-Data-Incident-Trigger/images/post_deployment_connections.png" alt="postdeployment" /></li>
+<li>As a best practice, we have used the Sentinel connection in Logic Apps that use &quot;ManagedSecurityIdentity&quot; permissions. Please refer to <a href="https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-managed-identity-for-azure-sentinel-logic-apps/ba-p/2068204">this document</a> and provide permissions to the Logic App accordingly.</li>
+<li>Click on 'Parameter' and Enter All Parameters to save data in Custom logs table.</li>
+<li>Set the following parameters:<ul>
+<li><code>Save_To_Custom_Table</code>: Set to <code>true</code> to enable saving Spur data to a custom Log Analytics table</li>
+<li><code>DCE_Endpoint_URL</code>: Data Collection Endpoint URL for your Log Analytics workspace</li>
+<li><code>DCR_Immutable_ID</code>: Immutable ID of the Data Collection Rule</li>
+<li><code>TenantID</code>: Azure AD tenant ID for authentication (From Azure App Registration)</li>
+<li><code>ClientID</code>: Application (client) ID of the service principal (From Azure App Registration)</li>
+<li><code>ClientSecret</code>: Client secret for the service principal (secure string)(From Azure App Registration)</li>
+<li><code>Auth_LoginEndpoint</code>: Login endpoint for authentication. Copy and paste this value in the parameter-'https://login.microsoftonline.com'</li>
+</ul>
+</li>
+</ul>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel:</h4>
 <ul>
 <li>In Azure Sentinel, analytical rules should be configured to trigger an incident with IP indicators.</li>
@@ -171,6 +234,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spur.html">Back to Spur</a></p>
+
 </div>
 
 </body>

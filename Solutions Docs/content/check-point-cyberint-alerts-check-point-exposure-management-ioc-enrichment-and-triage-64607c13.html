@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/check-point-cyberint-alerts.html">Check Point Cyberint Alerts</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_IOCEnrichment/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Check%20Point%20Cyberint%20Alerts/Playbooks/Enrichment/CPEM_IOCEnrichment/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,48 +47,109 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">5</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">5</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_IPs | post | `/entities/ip` | — |
-| Entities_-_Get_FileHashes | post | `/entities/filehash` | — |
-| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
-| Entities_-_Get_URLs | post | `/entities/url` | — |
-| Add_comment_to_incident | post | `/Incidents/Comment` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Enrich_IP | GET | `@{parameters('API_Base_URL')}/api/v1/file/ipv4/@{encodeURIComponent(items('For_each_IP')?['Address'])}` | — |
-| Enrich_FileHash | GET | `@{parameters('API_Base_URL')}/api/v1/file/sha256/@{encodeURIComponent(items('For_each_FileHash')?['Value'])}` | — |
-| Enrich_Domain | GET | `@{parameters('API_Base_URL')}/api/v1/file/domain/@{encodeURIComponent(items('For_each_Domain')?['DomainName'])}` | — |
-| Enrich_URL | GET | `@{parameters('API_Base_URL')}/api/v1/file/url` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_IPs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/ip</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_FileHashes</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/filehash</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_DNS</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/dnsresolution</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Enrich_IP</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/file/ipv4/@{encodeURIComponent(items('For_each_IP')?['Address'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Enrich_FileHash</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/file/sha256/@{encodeURIComponent(items('For_each_FileHash')?['Value'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Enrich_Domain</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/file/domain/@{encodeURIComponent(items('For_each_Domain')?['DomainName'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Enrich_URL</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('API_Base_URL')}/api/v1/file/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -97,37 +158,39 @@
 </blockquote>
 <h2 id="summary">Summary</h2>
 <p>When a new Microsoft Sentinel incident is created, this playbook automatically enriches IOC entities (IPs, domains, file hashes, URLs) using the Check Point Exposure Management threat intelligence API and adds the enrichment results as an incident comment.</p>
-<p><strong>Flow:</strong>
-1. Extracts IP, FileHash, DNS, and URL entities from the Sentinel incident.
-2. Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.
-3. For each entity, queries the appropriate Check Point Exposure Management IOC enrichment endpoint.
-4. Appends enrichment details (verdict, confidence, malware family, actor attribution) as an incident comment.</p>
+<p><strong>Flow:</strong></p>
+<ol>
+<li>Extracts IP, FileHash, DNS, and URL entities from the Sentinel incident.</li>
+<li>Calls <strong>Check_Point_EM_Base</strong> to retrieve API credentials.</li>
+<li>For each entity, queries the appropriate Check Point Exposure Management IOC enrichment endpoint.</li>
+<li>Appends enrichment details (verdict, confidence, malware family, actor attribution) as an incident comment.</li>
+</ol>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
 <li><strong>Check_Point_EM_Base</strong> playbook must be deployed in the same resource group.</li>
 <li>A valid Check Point Exposure Management API token configured in the Check_Point_EM_Base Key Vault.</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_IOCEnrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheck%2520Point%2520Cyberint%2520Alerts%2FPlaybooks%2FCheck_Point_EM_IOCEnrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Description</th>
+  <th>Parameter</th>
+  <th>Required</th>
+  <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>PlaybookName</strong></td>
-<td>No</td>
-<td>Name of the Logic App (default: <code>Check_Point_EM_IOCEnrichment</code>)</td>
+  <td><strong>PlaybookName</strong></td>
+  <td>No</td>
+  <td>Name of the Logic App (default: <code>Check_Point_EM_IOCEnrichment</code>)</td>
 </tr>
 <tr>
-<td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
-<td>No</td>
-<td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
+  <td><strong>Check_Point_EM_Base_PlaybookName</strong></td>
+  <td>No</td>
+  <td>Name of the base playbook (default: <code>Check_Point_EM_Base</code>)</td>
 </tr>
 </tbody>
 </table>
@@ -140,32 +203,33 @@
 <table>
 <thead>
 <tr>
-<th>Entity Type</th>
-<th>Endpoint</th>
+  <th>Entity Type</th>
+  <th>Endpoint</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>IPv4</td>
-<td><code>GET /api/v1/file/ipv4/{ip}</code></td>
+  <td>IPv4</td>
+  <td><code>GET /api/v1/file/ipv4/{ip}</code></td>
 </tr>
 <tr>
-<td>SHA256 Hash</td>
-<td><code>GET /api/v1/file/sha256/{hash}</code></td>
+  <td>SHA256 Hash</td>
+  <td><code>GET /api/v1/file/sha256/{hash}</code></td>
 </tr>
 <tr>
-<td>Domain</td>
-<td><code>GET /api/v1/file/domain/{domain}</code></td>
+  <td>Domain</td>
+  <td><code>GET /api/v1/file/domain/{domain}</code></td>
 </tr>
 <tr>
-<td>URL</td>
-<td><code>GET /api/v1/file/url?value={url}</code></td>
+  <td>URL</td>
+  <td><code>GET /api/v1/file/url?value={url}</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/check-point-cyberint-alerts.html">Back to Check Point Cyberint Alerts</a></p>
+
 </div>
 
 </body>

@@ -19,9 +19,9 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **125** |
-| Active | 90 |
+| Active | 85 |
 | Deprecated 🚫 | 26 |
-| Unpublished ⚠️ | 9 |
+| Unpublished ⚠️ | 14 |
 
 ## Connectors Using This Method
 
@@ -37,11 +37,11 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Armis Alerts](../connectors/armisalerts.md) ⚠️ | Armis | 1 | [Armis](../solutions/armis.md) |
 | [Armis Alerts Activities](../connectors/armisalertsactivities.md) | Armis | 2 | [Armis](../solutions/armis.md) |
 | [Armis Devices](../connectors/armisdevices.md) | Armis | 1 | [Armis](../solutions/armis.md) |
-| [Armorblox](../connectors/armorblox.md) 🔶 | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
+| [Armorblox](../connectors/armorblox.md) ⚠️ 🔶 | Armorblox | 1 | [Armorblox](../solutions/armorblox.md) |
 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
 | [Bitglass](../connectors/bitglass.md) 🔶 | Bitglass | 1 | [Bitglass](../solutions/bitglass.md) |
 | [Bitsight data connector](../connectors/bitsight.md) | BitSight Technologies, Inc. | 11 | [BitSight](../solutions/bitsight.md) |
-| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) ⚠️ | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 | [Cisco Cloud Security](../connectors/ciscoumbrelladataconnector.md) 🔶 | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Cloud Security (using elastic premium plan)](../connectors/ciscoumbrelladataconnectorelasticpremium.md) 🔶 | Cisco | 22 | [CiscoUmbrella](../solutions/ciscoumbrella.md) |
 | [Cisco Duo Security](../connectors/ciscoduosecurity.md) 🔶 | Cisco | 1 | [CiscoDuoSecurity](../solutions/ciscoduosecurity.md) |
@@ -55,7 +55,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [CyberArkEPM](../connectors/cyberarkepm.md) | CyberArk | 1 | [CyberArkEPM](../solutions/cyberarkepm.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
-| [ESET Inspect](../connectors/esetinspect.md) 🔶 | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
+| [ESET Inspect](../connectors/esetinspect.md) ⚠️ 🔶 | ESET Netherlands | 1 | [ESET Inspect](../solutions/eset-inspect.md) |
 | [ESET Protect Platform](../connectors/esetprotectplatform.md) | ESET | 2 | [ESET Protect Platform](../solutions/eset-protect-platform.md) |
 | [Exchange Security Insights Online Collector](../connectors/esi-exchangeonlinecollector.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange Online](../solutions/microsoft-exchange-security-exchange-online.md) |
 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | ExtraHop | 1 | [ExtraHop](../solutions/extrahop.md) |
@@ -64,7 +64,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) 🔶 | Microsoft | 2 | [GitHub](../solutions/github.md) |
 | [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) ⚠️ 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶 | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
-| [HYAS Protect](../connectors/hyasprotect.md) 🔶 | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
+| [HYAS Protect](../connectors/hyasprotect.md) ⚠️ 🔶 | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) 🔶 | Imperva | 3 | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |
 | [IPinfo Abuse Data Connector](../connectors/ipinfoabusedataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
@@ -87,7 +87,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [IPinfo WHOIS NET Data Connector](../connectors/ipinfowhoisnetdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS ORG Data Connector](../connectors/ipinfowhoisorgdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
 | [IPinfo WHOIS POC Data Connector](../connectors/ipinfowhoispocdataconnector.md) | IPinfo | 1 | [IPinfo](../solutions/ipinfo.md) |
-| [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) 🔶 | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
+| [Lookout Cloud Security for Microsoft Sentinel](../connectors/lookoutcloudsecuritydataconnector.md) ⚠️ 🔶 | Lookout | 1 | [Lookout Cloud Security Platform for Microsoft Sentinel](../solutions/lookout-cloud-security-platform-for-microsoft-sentinel.md) |
 | [Mimecast Audit](../connectors/mimecastauditapi.md) | Mimecast | 1 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Awareness Training](../connectors/mimecastatapi.md) | Mimecast | 4 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Cloud Integrated](../connectors/mimecastciapi.md) | Mimecast | 1 | [Mimecast](../solutions/mimecast.md) |

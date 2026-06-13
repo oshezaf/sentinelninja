@@ -1,4 +1,6 @@
-# Sophos Cloud Optix
+# ⚠️ Sophos Cloud Optix
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="Sophos Cloud Optix Logo" width="75" height="75">
 

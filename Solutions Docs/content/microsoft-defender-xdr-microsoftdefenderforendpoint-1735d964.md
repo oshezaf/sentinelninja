@@ -20,7 +20,7 @@ This content item queries data from the following tables:
 |:------|:-------------|:---------------:|:-------------:|:---------:|
 | [`DeviceEvents`](../tables/deviceevents.md) | `ActionType in "AntivirusDetection,FileCreated,PnpDeviceConnected,UsbDriveMounted"`<br>`ActionType endswith "Audited"`<br>`ActionType endswith "Blocked"`<br>`ActionType startswith "Asr"` | ✓ | ✗ | ✓ |
 | [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) |  | ✓ | ✗ | ? |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | `ActionType == "AntivirusDetection"` | ✓ | ✗ | ? |
 | [`DeviceImageLoadEvents`](../tables/deviceimageloadevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceInfo`](../tables/deviceinfo.md) |  | ✓ | ✗ | ? |
 | [`DeviceLogonEvents`](../tables/devicelogonevents.md) |  | ✓ | ✗ | ? |

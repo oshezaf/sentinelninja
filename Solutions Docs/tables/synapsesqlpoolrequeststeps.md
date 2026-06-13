@@ -23,7 +23,7 @@ Reference for SynapseSqlPoolRequestSteps table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Category | string | The category of the log. |
@@ -39,7 +39,7 @@ Reference for SynapseSqlPoolRequestSteps table in Azure Monitor Logs.
 | RequestId | string | The requestId of the execution requests. |
 | ResourceGroup | string | The azure resourceGroup of the SQL DW. |
 | RowCount | int | The row count of the execution requests. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StartTime | datetime | The startTime (UTC) of the execution requests. |
 | Status | string | The status of the execution requests. |
 | StepIndex | int | The step index of the execution requests. |

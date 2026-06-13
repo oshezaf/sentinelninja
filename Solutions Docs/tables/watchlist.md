@@ -33,7 +33,7 @@ Reference for Watchlist table in Azure Monitor Logs.
 | _DTItemStatus | string | Was the Watchlist or Watchlist item created, updated or deleted by user. As an example, a Watchlist 'RiskyUsers' can contain Watchlist item 'Name:John Doe; email:johndoe@contoso.com'. If a Watchlist is added, the the status would be 'Created'. If the name of the Watchlist is updated from 'RiskyUsers' to 'RiskyEmployees' the status would be 'Updated'. |
 | _DTItemType | string | Distinguish between a Watchlist and a Watchlist item. As an example, a Watchlist 'RiskyUsers' can contain Watchlist item 'Name:John Doe; email:johndoe@contoso.com'. A Watchlist item type will belong to a Watchlist type and the containing Watchlist can identified using the 'WatchlistId'. |
 | _DTTimestamp | datetime | The time (UTC) when the event was generated. |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AzureTenantId | string | The AAD tenant ID to which this Watchlist table belongs. |
 | CorrelationId | string | The ID for correlated events. |
 | CreatedBy | dynamic | The JSON object with the user who created the Watchlist or Watchlist item, including: Object ID, email and name. |
@@ -45,7 +45,7 @@ Reference for Watchlist table in Azure Monitor Logs.
 | Provider | string | The input provider of the Watchlist. |
 | SearchKey | string | The SearchKey is used to optimize query performance when using watchlists for joins with other data. For example, enable a column with IP addresses to be the designated SearchKey field, then use this field to join in other event tables by IP address. |
 | Source | string | The input source of the Watchlist. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Tags | string | The JSON array of tags provided by user. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. |
@@ -71,7 +71,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (10)
+## Content Items Using This Table (12)
 
 ### Analytic Rules (6)
 
@@ -91,7 +91,7 @@ This table is used by the following solutions:
 | [Detect web requests to potentially harmful files (ASIM Web Session)](../content/web-session-essentials-detect-web-requests-to-potentially-harmful-files-asim-web-session-c6608467-3678-45fe-b038-b590ce6d00fb-170f0dec.md) |  |
 | [The download of potentially risky files from the Discord Content Delivery Network (CDN) (ASIM Web Session)](../content/web-session-essentials-the-download-of-potentially-risky-files-from-the-discord-content-delivery-network-b7fe8f27-7010-404b-aec5-6e5245cea580-7bb8623e.md) |  |
 
-### Workbooks (4)
+### Workbooks (6)
 
 **In solution [Dataminr Pulse](../solutions/dataminr-pulse.md):**
 
@@ -116,6 +116,13 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [PCIDSSCompliance](../content/pci-dss-compliance-pcidsscompliance-b201eb3d.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
 
 ---
 

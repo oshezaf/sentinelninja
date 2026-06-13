@@ -31,7 +31,7 @@ Reference for GoogleWorkspaceReports table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AccountState | string | Deprecated. Use EventParameters column to find the value of this column instead. Parameter to indicate the account state on the device. |
 | ActorApplicationInfoApplicationName | string | Name of the application used to perform the action. |
 | ActorApplicationInfoImpersonation | bool | Whether the application was impersonating a user. |
@@ -142,7 +142,7 @@ Reference for GoogleWorkspaceReports table in Azure Monitor Logs.
 | SharedDriveId | string | Deprecated. Use EventParameters column to find the value of this column instead. |
 | SourceFolderId | string | Deprecated. Use EventParameters column to find the value of this column instead. The ID of the source folder if the document is located in a shared drive. |
 | SourceFolderTitle | string | Deprecated. Use EventParameters column to find the value of this column instead. The title of the source folder if the document is located in a shared drive. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcIpAddr | string | IP address of the user doing the action. |
 | TargetCalendarId | string | Deprecated. Use EventParameters column to find the value of this column instead. The ID of the calendar targeted by the event. |
 | TargetDomain | string | Deprecated. Use EventParameters column to find the value of this column instead. |

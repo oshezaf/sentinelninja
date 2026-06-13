@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Security, XDR</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Security, XDR</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/clouddnsevents">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/clouddnsevents">View Documentation</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-clouddnsevents-table">View Documentation</a></td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-clouddnsevents-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,146 +57,146 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of activity that triggered the event</td>
+  <td style="text-align:left">ActionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of activity that triggered the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalFields</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional information about the entity or event</td>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional information about the entity or event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AwsResourceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name</td>
+  <td style="text-align:left">AwsResourceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier specific to Amazon Web Services devices, containing the Amazon resource name</td>
 </tr>
 <tr>
-<td style="text-align: left;">AzureResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of the Azure resource associated with the process</td>
+  <td style="text-align:left">AzureResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the Azure resource associated with the process</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContainerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The container identifier in Kubernetes or another runtime environment</td>
+  <td style="text-align:left">ContainerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The container identifier in Kubernetes or another runtime environment</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContainerName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the container in Kubernetes or another runtime environment</td>
+  <td style="text-align:left">ContainerName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the container in Kubernetes or another runtime environment</td>
 </tr>
 <tr>
-<td style="text-align: left;">DnsEventSubType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Either request or response</td>
+  <td style="text-align:left">DnsEventSubType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Either request or response</td>
 </tr>
 <tr>
-<td style="text-align: left;">DnsEventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of event associated with DNS operation (for example, query)</td>
+  <td style="text-align:left">DnsEventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of event associated with DNS operation (for example, query)</td>
 </tr>
 <tr>
-<td style="text-align: left;">DnsNetworkDuration</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The DNS request duration in milliseconds</td>
+  <td style="text-align:left">DnsNetworkDuration</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The DNS request duration in milliseconds</td>
 </tr>
 <tr>
-<td style="text-align: left;">DnsQuery</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The domain that needs to be resolved</td>
+  <td style="text-align:left">DnsQuery</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain that needs to be resolved</td>
 </tr>
 <tr>
-<td style="text-align: left;">DnsQueryTypeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The DNS resource record type name as defined by the Internet Assigned Numbers Authority (IANA)</td>
+  <td style="text-align:left">DnsQueryTypeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The DNS resource record type name as defined by the Internet Assigned Numbers Authority (IANA)</td>
 </tr>
 <tr>
-<td style="text-align: left;">DnsResponseCodeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The DNS response code name as defined by the Internet Assigned Numbers Authority (IANA).</td>
+  <td style="text-align:left">DnsResponseCodeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The DNS response code name as defined by the Internet Assigned Numbers Authority (IANA).</td>
 </tr>
 <tr>
-<td style="text-align: left;">GcpFullResourceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID for GCP</td>
+  <td style="text-align:left">GcpFullResourceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier specific to Google Cloud Platform devices, containing a combination of zone and ID for GCP</td>
 </tr>
 <tr>
-<td style="text-align: left;">ImageName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Container image name or ID</td>
+  <td style="text-align:left">ImageName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Container image name or ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">KubernetesNamespace</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Kubernetes namespace name</td>
+  <td style="text-align:left">KubernetesNamespace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Kubernetes namespace name</td>
 </tr>
 <tr>
-<td style="text-align: left;">KubernetesPodName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Kubernetes pod name</td>
+  <td style="text-align:left">KubernetesPodName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Kubernetes pod name</td>
 </tr>
 <tr>
-<td style="text-align: left;">KubernetesResource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the Kubernetes resource that includes the namespace, resource type and name</td>
+  <td style="text-align:left">KubernetesResource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the Kubernetes resource that includes the namespace, resource type and name</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProcessId</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Process ID that initiated the DNS query</td>
+  <td style="text-align:left">ProcessId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Process ID that initiated the DNS query</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProcessName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the process that initiated the DNS query</td>
+  <td style="text-align:left">ProcessName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the process that initiated the DNS query</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReportId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the event</td>
+  <td style="text-align:left">ReportId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time (UTC) when the record was generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time (UTC) when the record was generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">TransactionIdHex</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The DNS unique hex transaction ID</td>
+  <td style="text-align:left">TransactionIdHex</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The DNS unique hex transaction ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -204,6 +204,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

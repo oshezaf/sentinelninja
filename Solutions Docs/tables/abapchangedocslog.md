@@ -24,7 +24,7 @@ Reference for ABAPChangeDocsLog table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ActualChangeNumber | string | Actual change number. |
 | AgentId | string | Unique agent or integration suite identifier. |
 | ChangedTableKey | string | Changed table key. |
@@ -36,13 +36,13 @@ Reference for ABAPChangeDocsLog table in Azure Monitor Logs.
 | FieldName | string | Field name. |
 | FlagText | string | Flag text. |
 | HeaderTypeOfChange | string | Header type of change, including: U = Change; I = Insert; E = Delete Single Docu; D = Delete; J = Insert Single Docu. |
-| Instance | string | The Instance refers to a specific installation of an SAP system on a server. An SAP system can have multiple instances running on the same server, each with its own set of processes and resources. The Instance is identified by a unique name that is set during the installation of the SAP system, following syntax: <HOST><SYSID><SYSNR>. |
+| Instance | string | The Instance refers to a specific installation of an SAP system on a server. An SAP system can have multiple instances running on the same server, each with its own set of processes and resources. The Instance is identified by a unique name that is set during the installation of the SAP system, following syntax: &lt;HOST&gt;<em>&lt;SYSID&gt;</em>&lt;SYSNR&gt;. |
 | ItemTypeOfChange | string | Item type of change, including: U = Change; I = Insert; E = Delete Single Docu; D = Delete; J = Insert Single Docu. |
 | Language | string | Document language. |
 | ObjectClass | string | Object class, such as BELEG, BPAR, PFCG, IDENTITY. |
 | ObjectId | string | Object ID. |
 | PlannedChangeNumber | string | Planned change number. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SystemId | string | The SystemId is a unique identifier for a specific SAP system. It is a three-character alphanumeric code that is used to distinguish between different SAP systems. |
 | SystemNumber | string | The SystemNumber is a two-digit number that identifies a specific SAP system. It is set during the installation of an SAP system and cannot be changed afterwards. The SystemNumber is used in various SAP transactions and configuration settings to identify the system and ensure that the correct system is being accessed or configured. |
 | SystemRole | string | The SAP system's role. |

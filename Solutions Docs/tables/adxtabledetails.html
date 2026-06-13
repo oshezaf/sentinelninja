@@ -25,182 +25,203 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxtabledetails">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxtabledetails">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#resource-types">Resource Types</a></li>
+</ul>
 <h2 id="schema">Schema (27 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/adxtabledetails">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">CachingPolicy</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The table's effective entity caching policy, serialized as JSON</td>
+  <td style="text-align:left">CachingPolicy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The table's effective entity caching policy, serialized as JSON</td>
 </tr>
 <tr>
-<td style="text-align: left;">CachingPolicyOrigin</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Caching policy origin entity (Table/Database/Cluster)</td>
+  <td style="text-align:left">CachingPolicyOrigin</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Caching policy origin entity (Table/Database/Cluster)</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The client request ID</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The client request ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">DatabaseName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the database</td>
+  <td style="text-align:left">DatabaseName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the database</td>
 </tr>
 <tr>
-<td style="text-align: left;">EntityType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the table. Can be Table or MaterializedView</td>
+  <td style="text-align:left">EntityType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the table. Can be Table or MaterializedView</td>
 </tr>
 <tr>
-<td style="text-align: left;">HotExtentCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The total number of extents in the table, stored in the hot cache</td>
+  <td style="text-align:left">HotExtentCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The total number of extents in the table, stored in the hot cache</td>
 </tr>
 <tr>
-<td style="text-align: left;">HotExtentSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The total size of extents (compressed size + index size) in the table, stored in the hot cache (in bytes)</td>
+  <td style="text-align:left">HotExtentSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The total size of extents (compressed size + index size) in the table, stored in the hot cache (in bytes)</td>
 </tr>
 <tr>
-<td style="text-align: left;">HotOriginalSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The total original size of data in the table, stored in the hot cache (in bytes)</td>
+  <td style="text-align:left">HotOriginalSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The total original size of data in the table, stored in the hot cache (in bytes)</td>
 </tr>
 <tr>
-<td style="text-align: left;">HotRowCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The total number of rows in the table, stored in the hot cache</td>
+  <td style="text-align:left">HotRowCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The total number of rows in the table, stored in the hot cache</td>
 </tr>
 <tr>
-<td style="text-align: left;">MaxExtentsCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The maximum creation time of an extent in the table (or null, if there are no extents)</td>
+  <td style="text-align:left">MaxExtentsCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The maximum creation time of an extent in the table (or null, if there are no extents)</td>
 </tr>
 <tr>
-<td style="text-align: left;">MinExtentsCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The minimum creation time of an extent in the table (or null, if there are no extents)</td>
+  <td style="text-align:left">MinExtentsCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The minimum creation time of an extent in the table (or null, if there are no extents)</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of this operation</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of this operation</td>
 </tr>
 <tr>
-<td style="text-align: left;">RetentionPolicy</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The table's effective entity retention policy, serialized as JSON</td>
+  <td style="text-align:left">RetentionPolicy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The table's effective entity retention policy, serialized as JSON</td>
 </tr>
 <tr>
-<td style="text-align: left;">RetentionPolicyOrigin</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Retention policy origin entity (Table/Database/Cluster)</td>
+  <td style="text-align:left">RetentionPolicyOrigin</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Retention policy origin entity (Table/Database/Cluster)</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TableName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">TableName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time (UTC) at which this event was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) at which this event was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalExtentCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The total number of extents in the table</td>
+  <td style="text-align:left">TotalExtentCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The total number of extents in the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalExtentSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The total size of extents (compressed size + index size) in the table (in bytes)</td>
+  <td style="text-align:left">TotalExtentSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The total size of extents (compressed size + index size) in the table (in bytes)</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalOriginalSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The total original size of data in the table (in bytes)</td>
+  <td style="text-align:left">TotalOriginalSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The total original size of data in the table (in bytes)</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalRowCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The total number of rows in the table</td>
+  <td style="text-align:left">TotalRowCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The total number of rows in the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
 <hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>GitHub Only:</strong> <code>TableName !contains &quot;raw&quot;</code><br><code>TableName contains &quot;raw&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-adxvsla-0ddedeb5.html">ADXvsLA</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="resource-types">Resource Types</h2>
 <p>This table collects data from the following Azure resource types:</p>
 <ul>
@@ -209,6 +230,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

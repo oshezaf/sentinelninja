@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/checkphish-by-bolster.html">CheckPhish by Bolster</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/checkphish-by-bolster.html">CheckPhish by Bolster</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,43 +47,79 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-checkphishbybolstercustomconnector.html"><code>CheckPhishbyBolsterCustomConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-checkphishbybolstercustomconnector.html"><code>CheckPhishbyBolsterCustomConnector</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Entities_-_Get_URLs | post | `/entities/url` | — |
-
-#### [`CheckPhishbyBolsterCustomConnector`](../logic-apps/custom-checkphishbybolstercustomconnector.md) (Custom)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Submit_URL | post | `/api/neo/scan` | — |
-| Get_Scan_Result | post | `/api/neo/scan/status` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="checkphishbybolstercustomconnector"><a href="../logic-apps/custom-checkphishbybolstercustomconnector.html"><code>CheckPhishbyBolsterCustomConnector</code></a> (Custom)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Submit_URL</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/neo/scan</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Scan_Result</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/neo/scan/status</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -91,13 +127,12 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/readme.md">CheckPhishPlaybooks/CheckPhsh-Get-URLScanResult/readme.md</a></em></p>
 </blockquote>
 <h1 id="checkphish--get-reputation-of-url">CheckPhish- Get Reputation of URL</h1>
-<p>## Summary</p>
+<h2 id="summary">Summary</h2>
 <p>Once a new sentinal incident is created, this playbook gets triggered and performs the following actions:</p>
 <pre><code>1. Gets Information from CheckPhish by URL, provided in the alert custom entities.
-2. Enriches the incident with the obtained info.
-</code></pre>
-<p><img alt="Incident Comment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishEnrichmentComment.png" /><br></p>
-<p><img alt="Playbook Designer view" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishFlow.png" /><br></p>
+2. Enriches the incident with the obtained info.</code></pre>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishEnrichmentComment.png" alt="Incident Comment" /><br></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CheckPhish%20by%20Bolster/Playbooks/CheckPhishPlaybooks%5CCheckPhsh-Get-URLScanResult/images/CheckPhishFlow.png" alt="Playbook Designer view" /><br></p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>CheckPhishbyBolsterCustomConnector Custom Connector needs to be deployed prior to the deployment of this playbook under the same subscription.</li>
@@ -107,8 +142,8 @@
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheckPhish%20by%20Bolster%2FPlaybooks%2FCheckPhishPlaybooks%2FCheckPhsh%2DGet%2DURLScanResult%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheckPhish%20by%20Bolster%2FPlaybooks%2FCheckPhishPlaybooks%2FCheckPhsh%2DGet%2DURLScanResult%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheckPhish%20by%20Bolster%2FPlaybooks%2FCheckPhishPlaybooks%2FCheckPhsh%2DGet%2DURLScanResult%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCheckPhish%20by%20Bolster%2FPlaybooks%2FCheckPhishPlaybooks%2FCheckPhsh%2DGet%2DURLScanResult%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <ol start="2">
 <li>Fill in the required paramteres:<ul>
 <li>Playbook Name: Enter the playbook name here (Ex: CheckPhish-Get-URLScanResult)</li>
@@ -118,13 +153,15 @@
 </ol>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, you will need to authorize each connection.
-1.  Click the Azure Sentinel connection resource
-2.  Click edit API connection
-3.  Click Authorize
-4.  Sign in
-5.  Click Save
-6.  Repeat steps for CheckPhishbyBolsterCustomConnector Connection (For authorizing the CheckPhish API connection, API Key needs to be provided)</p>
+<p>Once deployment is complete, you will need to authorize each connection.</p>
+<ol>
+<li>Click the Azure Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+<li>Repeat steps for CheckPhishbyBolsterCustomConnector Connection (For authorizing the CheckPhish API connection, API Key needs to be provided)</li>
+</ol>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
 <li>None</li>
@@ -132,6 +169,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/checkphish-by-bolster.html">Back to CheckPhish by Bolster</a></p>
+
 </div>
 
 </body>

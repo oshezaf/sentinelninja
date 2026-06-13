@@ -115,15 +115,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Perimeter 81](../solutions/perimeter-81.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Perimeter81OverviewWorkbook](../content/perimeter-81-perimeter81overviewworkbook-167f2993.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Perimeter81OverviewWorkbook](../content/github-only-perimeter81overviewworkbook-c7882438.md) |  |
 
 ---
 

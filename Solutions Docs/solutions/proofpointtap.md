@@ -23,7 +23,7 @@
 | **First Published** | 2022-05-23 |
 | **Last Updated** | 2026-05-26 |
 | **Solution Folder** | [ProofPointTap](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ProofPointTap) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/proofpointinc1600438591120.azure-sentinel-proofpoint) · Popularity: 🔵 Medium (70%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/proofpointinc1600438591120.azure-sentinel-proofpoint) · Popularity: 🟡 Low (47%) |
 
 The [Proofpoint TAP](https://www.proofpoint.com/us/products/advanced-threat-protection/targeted-attack-protection) solution for Microsoft Sentinel enables you to ingest Proofpoint TAP logs into Microsoft Sentinel.
 

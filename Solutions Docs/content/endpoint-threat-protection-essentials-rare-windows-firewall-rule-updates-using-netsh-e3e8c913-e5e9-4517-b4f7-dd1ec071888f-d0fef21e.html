@@ -23,42 +23,42 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Hunting Query</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Hunting Query</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/endpoint-threat-protection-essentials.html">Endpoint Threat Protection Essentials</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>e3e8c913-e5e9-4517-b4f7-dd1ec071888f</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>e3e8c913-e5e9-4517-b4f7-dd1ec071888f</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Severity</strong></td>
-<td style="text-align: left;">Low</td>
+  <td style="text-align:left"><strong>Severity</strong></td>
+  <td style="text-align:left">Low</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">Execution</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">Execution</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Techniques</strong></td>
-<td style="text-align: left;">T1204</td>
+  <td style="text-align:left"><strong>Techniques</strong></td>
+  <td style="text-align:left">T1204</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/microsoftthreatprotection.html">MicrosoftThreatProtection</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/securityevents.html">SecurityEvents</a>, <a href="../connectors/microsoftthreatprotection.html">MicrosoftThreatProtection</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Hunting%20Queries/WindowsFirewallUpdateUsingNetsh.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Endpoint%20Threat%20Protection%20Essentials/Hunting%20Queries/WindowsFirewallUpdateUsingNetsh.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -67,40 +67,41 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
-<td style="text-align: left;"><code>InitiatingProcessCommandLine has_all "advfirewall"</code><br><code>InitiatingProcessFileName == "netsh.exe"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/deviceprocessevents.html"><code>DeviceProcessEvents</code></a></td>
+  <td style="text-align:left"><code>InitiatingProcessCommandLine has_all &quot;advfirewall&quot;</code><br><code>InitiatingProcessFileName == &quot;netsh.exe&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/event.html"><code>Event</code></a></td>
-<td style="text-align: left;"><code>Source == "Microsoft-Windows-Sysmon"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/event.html"><code>Event</code></a></td>
+  <td style="text-align:left"><code>Source == &quot;Microsoft-Windows-Sysmon&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-<td style="text-align: left;"><code>AccountType != "Machine"</code><br><code>CommandLine has_all "advfirewall"</code><br><code>EventID == "1"</code><br><code>Process == "netsh.exe"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td style="text-align:left"><code>AccountType != &quot;Machine&quot;</code><br><code>CommandLine has_all &quot;advfirewall&quot;</code><br><code>EventID == &quot;1&quot;</code><br><code>Process == &quot;netsh.exe&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="hunting-queries.html">Back to Hunting Queries</a> · <a href="../solutions/endpoint-threat-protection-essentials.html">Back to Endpoint Threat Protection Essentials</a></p>
+
 </div>
 
 </body>

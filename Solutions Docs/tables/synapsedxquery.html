@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxquery">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxquery">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,216 +53,216 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApplicationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the application that invoked the query</td>
+  <td style="text-align:left">ApplicationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the application that invoked the query</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheDiskHits</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Disk cache hits</td>
+  <td style="text-align:left">CacheDiskHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Disk cache hits</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheDiskMisses</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Disk cache misses</td>
+  <td style="text-align:left">CacheDiskMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Disk cache misses</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheMemoryHits</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Memory cache hits</td>
+  <td style="text-align:left">CacheMemoryHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Memory cache hits</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheMemoryMisses</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Memory cache misses</td>
+  <td style="text-align:left">CacheMemoryMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Memory cache misses</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheShardsBypassBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Shards cache bypass bytes</td>
+  <td style="text-align:left">CacheShardsBypassBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards cache bypass bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheShardsColdHits</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Shards cold cache hits</td>
+  <td style="text-align:left">CacheShardsColdHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards cold cache hits</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheShardsColdMisses</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Shards cold cache misses</td>
+  <td style="text-align:left">CacheShardsColdMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards cold cache misses</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheShardsHotHits</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Shards hot cache hits</td>
+  <td style="text-align:left">CacheShardsHotHits</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards hot cache hits</td>
 </tr>
 <tr>
-<td style="text-align: left;">CacheShardsHotMisses</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Shards hot cache misses</td>
+  <td style="text-align:left">CacheShardsHotMisses</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Shards hot cache misses</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The log category for these events will be 'Query'</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The log category for these events will be 'Query'</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The client request ID</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The client request ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">DatabaseName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the database the command ran on</td>
+  <td style="text-align:left">DatabaseName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the database the command ran on</td>
 </tr>
 <tr>
-<td style="text-align: left;">Duration</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Query duration as a string like '00:00:00.0156250'</td>
+  <td style="text-align:left">Duration</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Query duration as a string like '00:00:00.0156250'</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExtentsMaxDataScannedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Maximum data scan time</td>
+  <td style="text-align:left">ExtentsMaxDataScannedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Maximum data scan time</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExtentsMinDataScannedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Minimum data scan time</td>
+  <td style="text-align:left">ExtentsMinDataScannedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Minimum data scan time</td>
 </tr>
 <tr>
-<td style="text-align: left;">FailureReason</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The reason for the failure</td>
+  <td style="text-align:left">FailureReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The reason for the failure</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastUpdatedOn</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time (UTC) this command ended</td>
+  <td style="text-align:left">LastUpdatedOn</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) this command ended</td>
 </tr>
 <tr>
-<td style="text-align: left;">MemoryPeak</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Memory peak</td>
+  <td style="text-align:left">MemoryPeak</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Memory peak</td>
 </tr>
 <tr>
-<td style="text-align: left;">Principal</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The principal that invoked the query like 'aaduser=USER_ID;TENANT'</td>
+  <td style="text-align:left">Principal</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The principal that invoked the query like 'aaduser=USER_ID;TENANT'</td>
 </tr>
 <tr>
-<td style="text-align: left;">RootActivityId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The root activity ID</td>
+  <td style="text-align:left">RootActivityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The root activity ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">ScannedExtentsCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Scanned extents count</td>
+  <td style="text-align:left">ScannedExtentsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Scanned extents count</td>
 </tr>
 <tr>
-<td style="text-align: left;">ScannedRowsCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Scanned rows count</td>
+  <td style="text-align:left">ScannedRowsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Scanned rows count</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">StartedOn</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time (UTC) this command started</td>
+  <td style="text-align:left">StartedOn</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) this command started</td>
 </tr>
 <tr>
-<td style="text-align: left;">State</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The state the command ended with like 'Completed'</td>
+  <td style="text-align:left">State</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The state the command ended with like 'Completed'</td>
 </tr>
 <tr>
-<td style="text-align: left;">TableCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Table count</td>
+  <td style="text-align:left">TableCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Table count</td>
 </tr>
 <tr>
-<td style="text-align: left;">TablesStatistics</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Tables statistics</td>
+  <td style="text-align:left">TablesStatistics</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tables statistics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">Text</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Text of the invoked query</td>
+  <td style="text-align:left">Text</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Text of the invoked query</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time (UTC) this event was generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) this event was generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalCPU</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Total CPU runtime across cluster nodes</td>
+  <td style="text-align:left">TotalCPU</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Total CPU runtime across cluster nodes</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalExtentsCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Total extents count</td>
+  <td style="text-align:left">TotalExtentsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total extents count</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalRowsCount</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Total rows count</td>
+  <td style="text-align:left">TotalRowsCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total rows count</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">User</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User that invoked the query</td>
+  <td style="text-align:left">User</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User that invoked the query</td>
 </tr>
 <tr>
-<td style="text-align: left;">WorkloadGroup</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Workload are a means of resource governance for incoming requests to the cluster</td>
+  <td style="text-align:left">WorkloadGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Workload are a means of resource governance for incoming requests to the cluster</td>
 </tr>
 </tbody>
 </table>
@@ -275,6 +275,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Audit, Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Audit, Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cieventsaudit">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cieventsaudit">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,161 +57,161 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">Audience</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The audience for which the accessToken was requested for.</td>
+  <td style="text-align:left">Audience</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The audience for which the accessToken was requested for.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallerIPAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address.</td>
+  <td style="text-align:left">CallerIPAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Caller IP address, if the operation corresponds to an API call that would come from an entity with a publicly available IP address.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallerObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure Active Directory ObjectId of the caller.</td>
+  <td style="text-align:left">CallerObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure Active Directory ObjectId of the caller.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Log category of the event. Either Operational or Audit. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with Audit, everything else with Operational.</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Log category of the event. Either Operational or Audit. All POST/PUT/PATCH/DELETE HTTP Requests are tagged with Audit, everything else with Operational.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Claims</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration.</td>
+  <td style="text-align:left">Claims</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Claims of the user or app JSON web token (JWT). Claim properties vary per organization and the Azure Active Directory configuration.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ID for the correlated events. Can be used to identify correlated events between multiple tables.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID for the correlated events. Can be used to identify correlated events between multiple tables.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Duration of the operation in milliseconds.</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Duration of the operation in milliseconds.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Always ApiEvent, marking the log event as API event.</td>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Always ApiEvent, marking the log event as API event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InstanceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Customer Insights instanceId.</td>
+  <td style="text-align:left">InstanceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Customer Insights instanceId.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Level</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Severity level of the event, is one of: Informational, Warning, Error, or Critical.</td>
+  <td style="text-align:left">Level</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Severity level of the event, is one of: Informational, Warning, Error, or Critical.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Method</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">HTTP method: GET/POST/PUT/PATCH/HEAD</td>
+  <td style="text-align:left">Method</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP method: GET/POST/PUT/PATCH/HEAD</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the operation represented by this event.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the operation represented by this event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Success for HTTP status code &lt; 400, ClientError for HTTP status code &lt; 500, Error for HTTP Status &gt;= 500.</td>
+  <td style="text-align:left">OperationStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Success for HTTP status code &lt; 400, ClientError for HTTP status code &lt; 500, Error for HTTP Status &gt;= 500.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Origin</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URI indicating where a fetch originates from or unknown.</td>
+  <td style="text-align:left">Origin</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URI indicating where a fetch originates from or unknown.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Path</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Relative path of the request.</td>
+  <td style="text-align:left">Path</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Relative path of the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequiredRoles</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Required roles to do the operation. Admin role is allowed to do all operations.</td>
+  <td style="text-align:left">RequiredRoles</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Required roles to do the operation. Admin role is allowed to do all operations.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultSignature</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.</td>
+  <td style="text-align:left">ResultSignature</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Status of the event. Running, Skipped, Successful, Failure.</td>
+  <td style="text-align:left">ResultType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of the event. Running, Skipped, Successful, Failure.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the log was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">Uri</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Absolute request URI.</td>
+  <td style="text-align:left">Uri</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Absolute request URI.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Browser agent sending the request or unknown.</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Browser agent sending the request or unknown.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserPrincipalName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The UserPrincipalName is the Azure AD username for the user accounts.</td>
+  <td style="text-align:left">UserPrincipalName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The UserPrincipalName is the Azure AD username for the user accounts.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserRole</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Assigned role for the user or app.</td>
+  <td style="text-align:left">UserRole</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Assigned role for the user or app.</td>
 </tr>
 </tbody>
 </table>
@@ -224,6 +224,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

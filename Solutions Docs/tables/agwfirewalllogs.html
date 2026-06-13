@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Audit, Azure Resources, Network</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Audit, Azure Resources, Network</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agwfirewalllogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agwfirewalllogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,156 +64,156 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">Action</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Action taken on the request. Available values are Blocked and Allowed (for custom rules), Matched (when a rule matches a part of the request), and Detected and Blocked (these are both for mandatory rules, depending on if the WAF is in detection or prevention mode).</td>
+  <td style="text-align:left">Action</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Action taken on the request. Available values are Blocked and Allowed (for custom rules), Matched (when a rule matches a part of the request), and Detected and Blocked (these are both for mandatory rules, depending on if the WAF is in detection or prevention mode).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Originating IP for the request.</td>
+  <td style="text-align:left">ClientIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Originating IP for the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientPort</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Originating port for the request.</td>
+  <td style="text-align:left">ClientPort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Originating port for the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DetailedData</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specific data found in request that matched the rule for the triggered event.</td>
+  <td style="text-align:left">DetailedData</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specific data found in request that matched the rule for the triggered event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DetailedMessage</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the rule for the triggered event.</td>
+  <td style="text-align:left">DetailedMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the rule for the triggered event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Configuration file that contained the rule for the triggered event.</td>
+  <td style="text-align:left">FileDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Configuration file that contained the rule for the triggered event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Hostname</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Hostname or IP address of the Application Gateway.</td>
+  <td style="text-align:left">Hostname</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Hostname or IP address of the Application Gateway.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InstanceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application Gateway instance for which firewall data is being generated. For a multiple-instance application gateway, there is one row per instance.</td>
+  <td style="text-align:left">InstanceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application Gateway instance for which firewall data is being generated. For a multiple-instance application gateway, there is one row per instance.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LineDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Line number in the configuration file that triggered the event.</td>
+  <td style="text-align:left">LineDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Line number in the configuration file that triggered the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Message</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User-friendly message for the triggering event. More details are provided in the details section.</td>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User-friendly message for the triggering event. More details are provided in the details section.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the operation.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ParanoiaLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OWASP CRS paranoia level (1-4) of the rule that triggered. Empty for non-CRS rules (e.g., anomaly scoring, bot protection).</td>
+  <td style="text-align:left">ParanoiaLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OWASP CRS paranoia level (1-4) of the rule that triggered. Empty for non-CRS rules (e.g., anomaly scoring, bot protection).</td>
 </tr>
 <tr>
-<td style="text-align: left;">PolicyId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ID of the firewall policy applied to the request.</td>
+  <td style="text-align:left">PolicyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the firewall policy applied to the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PolicyScope</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The scope of the policy. Values can be Global, Listener, or Location (for path-based rules).</td>
+  <td style="text-align:left">PolicyScope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The scope of the policy. Values can be Global, Listener, or Location (for path-based rules).</td>
 </tr>
 <tr>
-<td style="text-align: left;">PolicyScopeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the policy scope applied.</td>
+  <td style="text-align:left">PolicyScopeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the policy scope applied.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestUri</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URL of the received request.</td>
+  <td style="text-align:left">RequestUri</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URL of the received request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Rule ID of the triggering event.</td>
+  <td style="text-align:left">RuleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Rule ID of the triggering event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleSetType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Rule set type. The available value is OWASP.</td>
+  <td style="text-align:left">RuleSetType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Rule set type. The available value is OWASP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleSetVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Rule set version used. Available values are 2.2.9 and 3.0.</td>
+  <td style="text-align:left">RuleSetVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Rule set version used. Available values are 2.2.9 and 3.0.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Site</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Site for which the log was generated. Currently, only Global is listed because rules are global.</td>
+  <td style="text-align:left">Site</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Site for which the log was generated. Currently, only Global is listed because rules are global.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time (UTC) when the log was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time (UTC) when the log was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TransactionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique ID for a given transaction which helps group multiple rule violations that occurred within the same request.</td>
+  <td style="text-align:left">TransactionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique ID for a given transaction which helps group multiple rule violations that occurred within the same request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -229,34 +229,34 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178-ef0d4240.html">A potentially malicious web request was executed against a web server</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/azure-web-application-firewall-waf-a-potentially-malicious-web-request-was-executed-against-a-web-server-46ac55ae-47b8-414a-8f94-89ccd1962178-ef0d4240.html">A potentially malicious web request was executed against a web server</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gw-waf-code-injection-912a18fc-6165-446b-8740-81ae6c3f75ee-5ee99e9c.html">App GW WAF - Code Injection</a></td>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "File Inclusion"</code><br><code>Message has "Injection"</code></td>
+  <td style="text-align:left"><a href="../content/azure-web-application-firewall-waf-app-gw-waf-code-injection-912a18fc-6165-446b-8740-81ae6c3f75ee-5ee99e9c.html">App GW WAF - Code Injection</a></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;File Inclusion&quot;</code><br><code>Message has &quot;Injection&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gw-waf-path-traversal-attack-b6c3a8a6-d22c-4882-9c57-abc01690938b-ce8dc4ad.html">App GW WAF - Path Traversal Attack</a></td>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "Path Traversal Attack"</code></td>
+  <td style="text-align:left"><a href="../content/azure-web-application-firewall-waf-app-gw-waf-path-traversal-attack-b6c3a8a6-d22c-4882-9c57-abc01690938b-ce8dc4ad.html">App GW WAF - Path Traversal Attack</a></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;Path Traversal Attack&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-sqli-detection-bdb2cd63-99f2-472e-b1b9-acba473b6744-280638ed.html">App Gateway WAF - SQLi Detection</a></td>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "SQL Injection"</code></td>
+  <td style="text-align:left"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-sqli-detection-bdb2cd63-99f2-472e-b1b9-acba473b6744-280638ed.html">App Gateway WAF - SQLi Detection</a></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;SQL Injection&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-scanner-detection-9b8dd8fd-f192-42eb-84f6-541920400a7a-40d3fac2.html">App Gateway WAF - Scanner Detection</a></td>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message contains "Found User-Agent associated with security scanner"</code></td>
+  <td style="text-align:left"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-scanner-detection-9b8dd8fd-f192-42eb-84f6-541920400a7a-40d3fac2.html">App Gateway WAF - Scanner Detection</a></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message contains &quot;Found User-Agent associated with security scanner&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-xss-detection-1c7ff502-2ad4-4970-9d29-9210c6753138-cf69ab37.html">App Gateway WAF - XSS Detection</a></td>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "XSS"</code></td>
+  <td style="text-align:left"><a href="../content/azure-web-application-firewall-waf-app-gateway-waf-xss-detection-1c7ff502-2ad4-4970-9d29-9210c6753138-cf69ab37.html">App Gateway WAF - XSS Detection</a></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;XSS&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -270,62 +270,62 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "File Inclusion"</code><br><code>Message has "Injection"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;File Inclusion&quot;</code><br><code>Message has &quot;Injection&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "Path Traversal Attack"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;Path Traversal Attack&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message contains "Found User-Agent associated with security scanner"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message contains &quot;Found User-Agent associated with security scanner&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "SQL Injection"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;SQL Injection&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Action in "Blocked,Matched"</code><br><code>Message has "XSS"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Action in &quot;Blocked,Matched&quot;</code><br><code>Message has &quot;XSS&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>5</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>5</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 </tbody>
 </table>
@@ -333,30 +333,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Blocked</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
+  <td style="text-align:left"><code>Blocked</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Matched</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
+  <td style="text-align:left"><code>Matched</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 </tbody>
 </table>
@@ -364,68 +364,69 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>has File Inclusion</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has File Inclusion</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has Injection</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has Injection</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has Path Traversal Attack</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has Path Traversal Attack</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains Found User-Agent associated with security scanner</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains Found User-Agent associated with security scanner</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has SQL Injection</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has SQL Injection</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>has XSS</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>has XSS</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

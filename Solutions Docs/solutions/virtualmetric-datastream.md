@@ -20,7 +20,7 @@
 | **Author** | VirtualMetric |
 | **First Published** | 2025-09-15 |
 | **Solution Folder** | [VirtualMetric DataStream](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/VirtualMetric%20DataStream) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virtualmetric.azure-sentinel-solution-virtualmetric-datastream) · Popularity: 🔵 Medium (54%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virtualmetric.azure-sentinel-solution-virtualmetric-datastream) · Popularity: 🟡 Low (49%) |
 
 VirtualMetric DataStream solution provides comprehensive data collection capabilities for Microsoft Sentinel and Microsoft Sentinel data lake, supporting ASIM normalized tables and standard security tables with both native and custom table options.
 

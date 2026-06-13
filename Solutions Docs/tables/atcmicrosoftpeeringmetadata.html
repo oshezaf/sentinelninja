@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/atcmicrosoftpeeringmetadata">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/atcmicrosoftpeeringmetadata">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,101 +57,101 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">ATCRegion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure Traffic Collector (ATC) deployment region.</td>
+  <td style="text-align:left">ATCRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure Traffic Collector (ATC) deployment region.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ATCResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure resource ID of Azure Traffic Collector (ATC).</td>
+  <td style="text-align:left">ATCResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure resource ID of Azure Traffic Collector (ATC).</td>
 </tr>
 <tr>
-<td style="text-align: left;">IpMask</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Mask of Microsoft Peering IP prefix.</td>
+  <td style="text-align:left">IpMask</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Mask of Microsoft Peering IP prefix.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IpSubnet</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Subnet of Microsoft Peering IP prefix.</td>
+  <td style="text-align:left">IpSubnet</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Subnet of Microsoft Peering IP prefix.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The specific Azure Traffic Collector (ATC) operation that emitted this record.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The specific Azure Traffic Collector (ATC) operation that emitted this record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PrefixRegion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure region of the IP prefix.</td>
+  <td style="text-align:left">PrefixRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure region of the IP prefix.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RegionalBgpCommunity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Region-based Border Gateway Protocol (BGP) Community tag.</td>
+  <td style="text-align:left">RegionalBgpCommunity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Region-based Border Gateway Protocol (BGP) Community tag.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SchemaVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Flow record schema version.</td>
+  <td style="text-align:left">SchemaVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Flow record schema version.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceBgpCommunity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Service-based Border Gateway Protocol (BGP) Community tag.</td>
+  <td style="text-align:left">ServiceBgpCommunity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Service-based Border Gateway Protocol (BGP) Community tag.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of service the IP prefix is.</td>
+  <td style="text-align:left">ServiceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of service the IP prefix is.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp (UTC) when the Azure Traffic Collector (ATC) emitted this record.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) when the Azure Traffic Collector (ATC) emitted this record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -164,6 +164,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

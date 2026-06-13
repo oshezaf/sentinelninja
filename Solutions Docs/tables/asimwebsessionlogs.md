@@ -33,7 +33,7 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
@@ -128,7 +128,7 @@ Reference for ASimWebSessionLogs table in Azure Monitor Logs.
 | Rule | string | Either NetworkRuleName or NetworkRuleNumber. |
 | RuleName | string | The name or ID of the rule by which DvcAction was decided upon. Example: AnyAnyDrop. |
 | RuleNumber | int | The number of the rule by which DvcAction was decided upon. Example: 23. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcAppId | string | The ID of the source application, as reported by the reporting device. |
 | SrcAppName | string | The name of the source application. |
 | SrcAppType | string | The type of the source application. |
@@ -197,7 +197,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) |  |
+| [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` |
 | [Synqly Integration Connector](../connectors/synqlyintegrationconnector.md) |  |
 
 ---
@@ -226,14 +226,21 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/websessionlogs`
 
-## Selection Criteria Summary (1 criteria, 1 total references)
+## Selection Criteria Summary (2 criteria, 2 total references)
 
-References by type: 0 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventType in "EndpointNetworkSession,HTTPSession"` | - | - | 1 | - | **1** |
-| **Total** | **0** | **0** | **1** | **0** | **1** |
+| **Total** | **1** | **0** | **1** | **0** | **2** |
+
+### EventProduct / EventVendor
+
+| EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 
 ### EventType
 

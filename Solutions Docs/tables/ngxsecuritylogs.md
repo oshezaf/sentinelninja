@@ -23,7 +23,7 @@ Reference for NGXSecurityLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Facility | string | The facility of log records from syslog as defined in RFC 3164.Facility can be one of kern, user, mail, daemon, auth, intern, lpr, news, uucp, clock, authpriv, ftp, ntp, audit, alert, cron, local0..local7. Default is local7. |
@@ -31,7 +31,7 @@ Reference for NGXSecurityLogs table in Azure Monitor Logs.
 | Location | string | The location (region) the NGINX instance was accessed in. |
 | Message | string | The message of the log record. |
 | Severity | string | The severity of log records from syslog as defined in RFC 3164. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Tag | string | The tag of log records from syslog. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the log record was generated. |

@@ -23,7 +23,7 @@ Reference for AggregatedSecurityAlert table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AggregatedSecurityAlertRuleIds | string | IDs assigned to the aggregated security data sharing rules by Sentinel. |
@@ -48,13 +48,13 @@ Reference for AggregatedSecurityAlert table in Azure Monitor Logs.
 | ProductName | string | The name of the product that generated the alert. |
 | ProviderName | string | The name of the provider that generated the alert. |
 | RemediationSteps | string | Action items to take to remediate the alert. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StartTime | datetime | The start time of the impact of the alert. |
 | Status | string | The lifecycle status of the alert (new, in progress, closed). |
-| SubTechniques | string | A list of adversary MITRE ATT&CK sub techniques involved in this security issue. |
+| SubTechniques | string | A list of adversary MITRE ATT&amp;CK sub techniques involved in this security issue. |
 | SystemAlertId | string | An ID assigned to the alert by Sentinel. |
-| Tactics | string | A list of adversary MITRE ATT&CK tactics involved in this security issue. |
-| Techniques | string | A list of adversary MITRE ATT&CK techniques involved in this security issue. |
+| Tactics | string | A list of adversary MITRE ATT&amp;CK tactics involved in this security issue. |
+| Techniques | string | A list of adversary MITRE ATT&amp;CK techniques involved in this security issue. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the alert was generated. |
 | Type | string | The name of the table |

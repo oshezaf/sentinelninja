@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Audit, Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Audit, Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azkvauditlogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,266 +57,266 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AddressAuthorizationType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Address type (Public IP, subnet, private connection)</td>
+  <td style="text-align:left">AddressAuthorizationType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Address type (Public IP, subnet, private connection)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Algorithm</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Algorithm used to generate the key</td>
+  <td style="text-align:left">Algorithm</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Algorithm used to generate the key</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppliedAssignmentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">AssignmentId that eiher granted or denied access as part of access check</td>
+  <td style="text-align:left">AppliedAssignmentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">AssignmentId that eiher granted or denied access as part of access check</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallerIpAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the client that made the request</td>
+  <td style="text-align:left">CallerIpAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the client that made the request</td>
 </tr>
 <tr>
-<td style="text-align: left;">CertificateIssuerProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about certificate issuer properties including provider, id</td>
+  <td style="text-align:left">CertificateIssuerProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about certificate issuer properties including provider, id</td>
 </tr>
 <tr>
-<td style="text-align: left;">CertificatePolicyProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about certificate policy properties including keyproperties, secretproperties, issuerproperties</td>
+  <td style="text-align:left">CertificatePolicyProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about certificate policy properties including keyproperties, secretproperties, issuerproperties</td>
 </tr>
 <tr>
-<td style="text-align: left;">CertificateProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about certificate audit properties including atttributes, subject, hashing algorithm</td>
+  <td style="text-align:left">CertificateProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about certificate audit properties including atttributes, subject, hashing algorithm</td>
 </tr>
 <tr>
-<td style="text-align: left;">CertificateRequestProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Boolean value indicating if certificate request operation was cancelled</td>
+  <td style="text-align:left">CertificateRequestProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Boolean value indicating if certificate request operation was cancelled</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientInfo</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User agent information</td>
+  <td style="text-align:left">ClientInfo</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User agent information</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">An optional GUID that the client can pass to correlate client-side logs with service-side (Key Vault) logs.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An optional GUID that the client can pass to correlate client-side logs with service-side (Key Vault) logs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Time it took to service the REST API request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Time it took to service the REST API request, in milliseconds. This does not include the network latency, so the time you measure on the client side might not match this time</td>
 </tr>
 <tr>
-<td style="text-align: left;">EnabledForDeployment</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specifies if the vault is enabled for deployment</td>
+  <td style="text-align:left">EnabledForDeployment</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifies if the vault is enabled for deployment</td>
 </tr>
 <tr>
-<td style="text-align: left;">EnabledForDiskEncryption</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specifes if disk encryption is enabled</td>
+  <td style="text-align:left">EnabledForDiskEncryption</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifes if disk encryption is enabled</td>
 </tr>
 <tr>
-<td style="text-align: left;">EnabledForTemplateDeployment</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specifies whether template deployment is enabled</td>
+  <td style="text-align:left">EnabledForTemplateDeployment</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifies whether template deployment is enabled</td>
 </tr>
 <tr>
-<td style="text-align: left;">EnablePurgeProtection</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specifies if purge protection is enabled</td>
+  <td style="text-align:left">EnablePurgeProtection</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifies if purge protection is enabled</td>
 </tr>
 <tr>
-<td style="text-align: left;">EnableRbacAuthorization</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specifies if RBAC authorization is enabled</td>
+  <td style="text-align:left">EnableRbacAuthorization</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifies if RBAC authorization is enabled</td>
 </tr>
 <tr>
-<td style="text-align: left;">EnableSoftDelete</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specified is the vault is enabled for soft delete</td>
+  <td style="text-align:left">EnableSoftDelete</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specified is the vault is enabled for soft delete</td>
 </tr>
 <tr>
-<td style="text-align: left;">HsmPoolResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource ID of the HSM pool</td>
+  <td style="text-align:left">HsmPoolResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource ID of the HSM pool</td>
 </tr>
 <tr>
-<td style="text-align: left;">HttpStatusCode</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">HTTP status code of the request</td>
+  <td style="text-align:left">HttpStatusCode</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">HTTP status code of the request</td>
 </tr>
 <tr>
-<td style="text-align: left;">Id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resourceidentifier (Key ID or secret ID)</td>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resourceidentifier (Key ID or secret ID)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Identity</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Identity from the token that was presented in the REST API request. This is usually a user, a service principal, or the combination user+appId, as in the case of a request that results from an Azure PowerShell cmdlet.</td>
+  <td style="text-align:left">Identity</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Identity from the token that was presented in the REST API request. This is usually a user, a service principal, or the combination user+appId, as in the case of a request that results from an Azure PowerShell cmdlet.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsAccessPolicyMatch</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">True if the tenant matches vault tenant, and if the policy explicitly gives permission to the principal attempting the access.</td>
+  <td style="text-align:left">IsAccessPolicyMatch</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">True if the tenant matches vault tenant, and if the policy explicitly gives permission to the principal attempting the access.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsAddressAuthorized</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specifies whether request came from an authorized entity</td>
+  <td style="text-align:left">IsAddressAuthorized</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifies whether request came from an authorized entity</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsRbacAuthorized</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Specifies whether an access was granted or not as part of an access check</td>
+  <td style="text-align:left">IsRbacAuthorized</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Specifies whether an access was granted or not as part of an access check</td>
 </tr>
 <tr>
-<td style="text-align: left;">KeyProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about key properties including type, size, curve</td>
+  <td style="text-align:left">KeyProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about key properties including type, size, curve</td>
 </tr>
 <tr>
-<td style="text-align: left;">NetworkAcls</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about network acls that govern access to the vault</td>
+  <td style="text-align:left">NetworkAcls</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about network acls that govern access to the vault</td>
 </tr>
 <tr>
-<td style="text-align: left;">Nsp</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Network security perimeter properties including access control list, nsp id's associated with profiles.</td>
+  <td style="text-align:left">Nsp</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Network security perimeter properties including access control list, nsp id's associated with profiles.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the operation</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the operation</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">REST api version requested by the client.</td>
+  <td style="text-align:left">OperationVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">REST api version requested by the client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Properties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information that varies based on the operation (Operationname). In most cases, this field contains client information (the user agent string passed by the client), the exact REST API request URI, and the HTTP status code. In addition, when an object is returned as a result of a request (for example, KeyCreate or VaultGet), it also contains the key URI (as id), vault URI, or secret URI.</td>
+  <td style="text-align:left">Properties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information that varies based on the operation (Operationname). In most cases, this field contains client information (the user agent string passed by the client), the exact REST API request URI, and the HTTP status code. In addition, when an object is returned as a result of a request (for example, KeyCreate or VaultGet), it also contains the key URI (as id), vault URI, or secret URI.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestUri</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URI of the request</td>
+  <td style="text-align:left">RequestUri</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URI of the request</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Additional description about the result, when available.</td>
+  <td style="text-align:left">ResultDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Additional description about the result, when available.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultSignature</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">HTTP status of the request/response</td>
+  <td style="text-align:left">ResultSignature</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP status of the request/response</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Result of the REST API request.</td>
+  <td style="text-align:left">ResultType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Result of the REST API request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SecretProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about secret properties including type, atttributes</td>
+  <td style="text-align:left">SecretProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about secret properties including type, atttributes</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sku</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about vault including family, name and capacity</td>
+  <td style="text-align:left">Sku</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about vault including family, name and capacity</td>
 </tr>
 <tr>
-<td style="text-align: left;">SoftDeleteRetentionInDays</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Specifies soft delete retention in days</td>
+  <td style="text-align:left">SoftDeleteRetentionInDays</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Specifies soft delete retention in days</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">StorageAccountProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about storage account properties including activekeyname, resourceid</td>
+  <td style="text-align:left">StorageAccountProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about storage account properties including activekeyname, resourceid</td>
 </tr>
 <tr>
-<td style="text-align: left;">StorageSasDefinitionProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about storage sas definition properties including sastype, validityperiod</td>
+  <td style="text-align:left">StorageSasDefinitionProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about storage sas definition properties including sastype, validityperiod</td>
 </tr>
 <tr>
-<td style="text-align: left;">SubnetId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Id of subnet if request comes from a known subnet</td>
+  <td style="text-align:left">SubnetId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Id of subnet if request comes from a known subnet</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp (in UTC) when operation occured.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (in UTC) when operation occured.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Tlsversion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Network crypto protocol</td>
+  <td style="text-align:left">Tlsversion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Network crypto protocol</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrustedService</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether the principal access the service is a trusted Service. If this field is null, principal is not a trusted service</td>
+  <td style="text-align:left">TrustedService</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether the principal access the service is a trusted Service. If this field is null, principal is not a trusted service</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">VaultProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Detailed vault properties containing accesspolicy, iprule, virtualnetwork etc</td>
+  <td style="text-align:left">VaultProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Detailed vault properties containing accesspolicy, iprule, virtualnetwork etc</td>
 </tr>
 </tbody>
 </table>
@@ -329,6 +329,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

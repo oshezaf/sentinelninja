@@ -24,7 +24,7 @@ Reference for SentinelAlibabaCloudAPIGatewayLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ApiGroupName | string | The name of the group to which the API belongs. |
 | ApiGroupUid | string | The ID of the group to which the API belongs. |
 | ApiName | string | The API name. |
@@ -64,7 +64,7 @@ Reference for SentinelAlibabaCloudAPIGatewayLogs table in Azure Monitor Logs.
 | ResponseHeaders | string | The header content of the API response. This field is for dedicated instances only. |
 | ResponseSize | string | The response size. Unit: bytes. |
 | ServiceLatency | real | The total time consumed to access the backend resources. The total time includes the time consumed to request a connection to the resources, the time consumed to establish the connection, and the time consumed to call the backend service. Unit: milliseconds. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StatusCode | string | HttpStatusCode |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time when the log entry was generated |

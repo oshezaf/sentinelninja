@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oktasystemlogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/oktasystemlogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,321 +57,321 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActingAppName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the application initiating the action.</td>
+  <td style="text-align:left">ActingAppName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the application initiating the action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActingAppType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the application initiating the action (e.g., Browser, API client).</td>
+  <td style="text-align:left">ActingAppType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the application initiating the action (e.g., Browser, API client).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorDetailEntry</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Detailed information about the actor performing the action, if available.</td>
+  <td style="text-align:left">ActorDetailEntry</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Detailed information about the actor performing the action, if available.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorDisplayName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The display name of the actor performing the action.</td>
+  <td style="text-align:left">ActorDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The display name of the actor performing the action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorSessionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The session ID associated with the actor performing the action.</td>
+  <td style="text-align:left">ActorSessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The session ID associated with the actor performing the action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user ID of the actor performing the action, if applicable.</td>
+  <td style="text-align:left">ActorUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user ID of the actor performing the action, if applicable.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUserIdType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of user ID for the actor (e.g., OktaId).</td>
+  <td style="text-align:left">ActorUserIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of user ID for the actor (e.g., OktaId).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUsername</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The username of the actor performing the action.</td>
+  <td style="text-align:left">ActorUsername</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The username of the actor performing the action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUsernameType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of username for the actor (e.g., UPN).</td>
+  <td style="text-align:left">ActorUsernameType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of username for the actor (e.g., UPN).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUserType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the actor (e.g., Regular, System Principal).</td>
+  <td style="text-align:left">ActorUserType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the actor (e.g., Regular, System Principal).</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationContextAuthenticationProvider</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The authentication provider used in the context of the action.</td>
+  <td style="text-align:left">AuthenticationContextAuthenticationProvider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The authentication provider used in the context of the action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationContextAuthenticationStep</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The step in the authentication process when the action occurred.</td>
+  <td style="text-align:left">AuthenticationContextAuthenticationStep</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The step in the authentication process when the action occurred.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationContextCredentialProvider</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The credential provider used during the authentication process.</td>
+  <td style="text-align:left">AuthenticationContextCredentialProvider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The credential provider used during the authentication process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationContextInterface</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The interface used during the authentication process (e.g., web, mobile).</td>
+  <td style="text-align:left">AuthenticationContextInterface</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The interface used during the authentication process (e.g., web, mobile).</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationContextIssuerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ID of the issuer involved in the authentication process.</td>
+  <td style="text-align:left">AuthenticationContextIssuerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the issuer involved in the authentication process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationContextIssuerType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the issuer involved in the authentication process.</td>
+  <td style="text-align:left">AuthenticationContextIssuerType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the issuer involved in the authentication process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DebugData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional debugging data related to the event.</td>
+  <td style="text-align:left">DebugData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional debugging data related to the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DvcAction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The result of the device action (e.g., Allow, Deny, Partial).</td>
+  <td style="text-align:left">DvcAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The result of the device action (e.g., Allow, Deny, Partial).</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventMessage</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A descriptive message associated with the event.</td>
+  <td style="text-align:left">EventMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A descriptive message associated with the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalResultDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Details of the original result of the event outcome.</td>
+  <td style="text-align:left">EventOriginalResultDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details of the original result of the event outcome.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original type of the event before transformation.</td>
+  <td style="text-align:left">EventOriginalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original type of the event before transformation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalUid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier for the original event.</td>
+  <td style="text-align:left">EventOriginalUid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier for the original event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventResult</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The high-level result of the event (e.g., Success, Failure).</td>
+  <td style="text-align:left">EventResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The high-level result of the event (e.g., Success, Failure).</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventSeverity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The severity level of the event (e.g., Informational, High).</td>
+  <td style="text-align:left">EventSeverity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The severity level of the event (e.g., Informational, High).</td>
 </tr>
 <tr>
-<td style="text-align: left;">HttpUserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The raw user-agent string of the client initiating the event.</td>
+  <td style="text-align:left">HttpUserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The raw user-agent string of the client initiating the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LegacyEventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The legacy type identifier for the event, if applicable.</td>
+  <td style="text-align:left">LegacyEventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The legacy type identifier for the event, if applicable.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LogonMethod</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The method used for logging in (e.g., password, token).</td>
+  <td style="text-align:left">LogonMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The method used for logging in (e.g., password, token).</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalActorAlternateId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The alternate ID of the actor in the original event data.</td>
+  <td style="text-align:left">OriginalActorAlternateId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The alternate ID of the actor in the original event data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalClientDevice</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of client device initiating the event (e.g., Computer).</td>
+  <td style="text-align:left">OriginalClientDevice</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of client device initiating the event (e.g., Computer).</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalOutcomeResult</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The raw outcome result of the original event.</td>
+  <td style="text-align:left">OriginalOutcomeResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The raw outcome result of the original event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalSeverity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The raw severity level of the original event.</td>
+  <td style="text-align:left">OriginalSeverity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The raw severity level of the original event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalTarget</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The original target(s) involved in the event.</td>
+  <td style="text-align:left">OriginalTarget</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The original target(s) involved in the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalUserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original user ID in the event data.</td>
+  <td style="text-align:left">OriginalUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original user ID in the event data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginalUserType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of user in the original event data.</td>
+  <td style="text-align:left">OriginalUserType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of user in the original event data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Request</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Details of the request associated with the event.</td>
+  <td style="text-align:left">Request</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Details of the request associated with the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SecurityContextAsNumber</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The autonomous system (AS) number in the security context.</td>
+  <td style="text-align:left">SecurityContextAsNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The autonomous system (AS) number in the security context.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SecurityContextAsOrg</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The organization associated with the AS number in the security context.</td>
+  <td style="text-align:left">SecurityContextAsOrg</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The organization associated with the AS number in the security context.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SecurityContextDomain</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The domain involved in the security context.</td>
+  <td style="text-align:left">SecurityContextDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain involved in the security context.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SecurityContextIsProxy</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether a proxy is used in the security context.</td>
+  <td style="text-align:left">SecurityContextIsProxy</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether a proxy is used in the security context.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcDeviceType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the source device (e.g., Computer).</td>
+  <td style="text-align:left">SrcDeviceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the source device (e.g., Computer).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcDvcId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier for the source device.</td>
+  <td style="text-align:left">SrcDvcId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier for the source device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcDvcIdType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of source device ID (e.g., OktaId).</td>
+  <td style="text-align:left">SrcDvcIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of source device ID (e.g., OktaId).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcDvcOs</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The operating system of the source device.</td>
+  <td style="text-align:left">SrcDvcOs</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The operating system of the source device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcGeoCity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The city of the source device's geographic location.</td>
+  <td style="text-align:left">SrcGeoCity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The city of the source device's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcGeoCountry</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The country of the source device's geographic location.</td>
+  <td style="text-align:left">SrcGeoCountry</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The country of the source device's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcGeoLatitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The latitude of the source device's geographic location.</td>
+  <td style="text-align:left">SrcGeoLatitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The latitude of the source device's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcGeoLongtitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The longitude of the source device's geographic location.</td>
+  <td style="text-align:left">SrcGeoLongtitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The longitude of the source device's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcGeoPostalCode</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The postal code of the source device's geographic location.</td>
+  <td style="text-align:left">SrcGeoPostalCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The postal code of the source device's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcGeoRegion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The region/state of the source device's geographic location.</td>
+  <td style="text-align:left">SrcGeoRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The region/state of the source device's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcIpAddr</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The IP address of the source device.</td>
+  <td style="text-align:left">SrcIpAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the source device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcIsp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Internet Service Provider (ISP) of the source device.</td>
+  <td style="text-align:left">SrcIsp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Internet Service Provider (ISP) of the source device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcZone</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The network zone of the source device.</td>
+  <td style="text-align:left">SrcZone</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The network zone of the source device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time the event was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time the event was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TransactionDetail</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Details about the transaction associated with the event.</td>
+  <td style="text-align:left">TransactionDetail</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Details about the transaction associated with the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TransactionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the transaction.</td>
+  <td style="text-align:left">TransactionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the transaction.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TransactionType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of transaction associated with the event.</td>
+  <td style="text-align:left">TransactionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of transaction associated with the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">Version</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the event format or schema.</td>
+  <td style="text-align:left">Version</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the event format or schema.</td>
 </tr>
 </tbody>
 </table>
@@ -381,24 +381,25 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Schema</th>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimauthenticationoktasystemlogs.html">ASimAuthenticationOktaSystemLogs</a></td>
-<td style="text-align: left;">Authentication</td>
-<td style="text-align: left;">Okta</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../asim/asimauthenticationoktasystemlogs.html">ASimAuthenticationOktaSystemLogs</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left">Okta</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

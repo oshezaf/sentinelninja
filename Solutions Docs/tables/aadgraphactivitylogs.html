@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Entra</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Entra</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadgraphactivitylogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadgraphactivitylogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,196 +57,196 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AADTenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the tenant where the request was made.</td>
+  <td style="text-align:left">AADTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the tenant where the request was made.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of actor making the request (e.g., User, Application).</td>
+  <td style="text-align:left">ActorType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of actor making the request (e.g., User, Application).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApiVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The API version of the operation.</td>
+  <td style="text-align:left">ApiVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The API version of the operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the application making the request.</td>
+  <td style="text-align:left">AppId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the application making the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallerIpAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The IP address of the caller making the request.</td>
+  <td style="text-align:left">CallerIpAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the caller making the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The log category, e.g., AzureADGraphActivityLogs.</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The log category, e.g., AzureADGraphActivityLogs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientAuthMethod</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The authentication method used by the client.</td>
+  <td style="text-align:left">ClientAuthMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The authentication method used by the client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the device used in the request.</td>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the device used in the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The duration of the request in milliseconds.</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The duration of the request in milliseconds.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IdentityProvider</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identity provider used during authentication.</td>
+  <td style="text-align:left">IdentityProvider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identity provider used during authentication.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Level</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The severity level of the event (e.g., Informational).</td>
+  <td style="text-align:left">Level</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The severity level of the event (e.g., Informational).</td>
 </tr>
 <tr>
-<td style="text-align: left;">Location</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the region that served the request.</td>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the region that served the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the operation performed on the resource.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the operation performed on the resource.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier representing the request.</td>
+  <td style="text-align:left">RequestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier representing the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestMethod</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The HTTP method used (e.g., GET, POST).</td>
+  <td style="text-align:left">RequestMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The HTTP method used (e.g., GET, POST).</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestUri</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The URI of the request sent to the AAD Graph API.</td>
+  <td style="text-align:left">RequestUri</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The URI of the request sent to the AAD Graph API.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseSizeBytes</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The size of the response returned to the caller, in bytes.</td>
+  <td style="text-align:left">ResponseSizeBytes</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The size of the response returned to the caller, in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseStatusCode</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The HTTP status code returned in the response.</td>
+  <td style="text-align:left">ResponseStatusCode</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The HTTP status code returned in the response.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultSignature</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The HTTP response status or outcome of the operation.</td>
+  <td style="text-align:left">ResultSignature</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The HTTP response status or outcome of the operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Roles</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The roles assigned in the token claims.</td>
+  <td style="text-align:left">Roles</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The roles assigned in the token claims.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Scopes</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The scopes included in the token claims.</td>
+  <td style="text-align:left">Scopes</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The scopes included in the token claims.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServicePrincipalId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the service principal making the request.</td>
+  <td style="text-align:left">ServicePrincipalId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the service principal making the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The session identifier from the request context.</td>
+  <td style="text-align:left">SessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The session identifier from the request context.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SignInActivityId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier representing the sign-in activity.</td>
+  <td style="text-align:left">SignInActivityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier representing the sign-in activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the request was received.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the request was received.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeRequested</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp when the request was made.</td>
+  <td style="text-align:left">TimeRequested</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp when the request was made.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TokenIssuedAt</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp when the token was issued.</td>
+  <td style="text-align:left">TokenIssuedAt</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp when the token was issued.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user agent string provided by the client.</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user agent string provided by the client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the user making the request.</td>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the user making the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Wids</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The WIDs from the token claims.</td>
+  <td style="text-align:left">Wids</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The WIDs from the token claims.</td>
 </tr>
 </tbody>
 </table>
@@ -259,6 +259,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

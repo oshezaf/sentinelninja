@@ -32,7 +32,7 @@ Reference for Rapid7InsightVMCloudAssets table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AssessedForPolicies | bool | Whether an asset was assessed for policies |
 | AssessedForVulnerabilities | bool | Whether an asset was assessed for vulnerabilities |
 | AssetType | string | The type of asset |
@@ -61,7 +61,7 @@ Reference for Rapid7InsightVMCloudAssets table in Azure Monitor Logs.
 | RiskScore | real | The risk score (with criticality adjustments) of the asset |
 | Same | string | Vulnerabilities that are the same between current and comparison time (when comparison time is supplied and includeSame is true) |
 | SevereVulnerabilities | real | The count of severe vulnerability findings |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Tags | string | The tags applied to the asset |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time the event was generated |

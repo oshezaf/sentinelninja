@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Normalized</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Normalized</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimagenteventlogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/asimagenteventlogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -60,376 +60,376 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActingAppId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the application that initiated the event.</td>
+  <td style="text-align:left">ActingAppId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the application that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActingAppName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the application that initiated the event.</td>
+  <td style="text-align:left">ActingAppName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the application that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActingAppType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the application that initiated the event.</td>
+  <td style="text-align:left">ActingAppType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the application that initiated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the actor user.</td>
+  <td style="text-align:left">ActorUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the actor user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUserIdType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the actor user identifier.</td>
+  <td style="text-align:left">ActorUserIdType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the actor user identifier.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUsername</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The username of the actor.</td>
+  <td style="text-align:left">ActorUsername</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The username of the actor.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUsernameType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the actor username.</td>
+  <td style="text-align:left">ActorUsernameType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the actor username.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUserScope</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The scope of the actor user.</td>
+  <td style="text-align:left">ActorUserScope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The scope of the actor user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActorUserScopeId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The scope identifier of the actor user.</td>
+  <td style="text-align:left">ActorUserScopeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The scope identifier of the actor user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalFields</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional information not covered by other fields, stored as key-value pairs.</td>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional information not covered by other fields, stored as key-value pairs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The number of events aggregated in this record.</td>
+  <td style="text-align:left">EventCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of events aggregated in this record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventEndTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time at which the event ended.</td>
+  <td style="text-align:left">EventEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time at which the event ended.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventErrorDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Details about any error that occurred during the event.</td>
+  <td style="text-align:left">EventErrorDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details about any error that occurred during the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventFinishReasons</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The reasons for the event completion.</td>
+  <td style="text-align:left">EventFinishReasons</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The reasons for the event completion.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalErrorType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original error type as provided by the source.</td>
+  <td style="text-align:left">EventOriginalErrorType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original error type as provided by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalRequestDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original request details as provided by the source.</td>
+  <td style="text-align:left">EventOriginalRequestDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original request details as provided by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalResultDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original result details as provided by the source.</td>
+  <td style="text-align:left">EventOriginalResultDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original result details as provided by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original event type as provided by the source.</td>
+  <td style="text-align:left">EventOriginalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original event type as provided by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOriginalUid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original unique identifier of the event as provided by the source.</td>
+  <td style="text-align:left">EventOriginalUid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original unique identifier of the event as provided by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventOutputType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the event output.</td>
+  <td style="text-align:left">EventOutputType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the event output.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventProduct</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The product that generated the event.</td>
+  <td style="text-align:left">EventProduct</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The product that generated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventRequestFrequencyPenalty</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The frequency penalty parameter used in the event request.</td>
+  <td style="text-align:left">EventRequestFrequencyPenalty</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The frequency penalty parameter used in the event request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventRequestId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the request associated with the event.</td>
+  <td style="text-align:left">EventRequestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the request associated with the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventRequestPresencePenalty</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The presence penalty parameter used in the event request.</td>
+  <td style="text-align:left">EventRequestPresencePenalty</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The presence penalty parameter used in the event request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventRequestSeed</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The seed parameter used in the event request for reproducibility.</td>
+  <td style="text-align:left">EventRequestSeed</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The seed parameter used in the event request for reproducibility.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventRequestTemperature</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The temperature parameter used in the event request.</td>
+  <td style="text-align:left">EventRequestTemperature</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The temperature parameter used in the event request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventRequestTopP</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The top-p (nucleus sampling) parameter used in the event request.</td>
+  <td style="text-align:left">EventRequestTopP</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The top-p (nucleus sampling) parameter used in the event request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventResponseId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the response associated with the event.</td>
+  <td style="text-align:left">EventResponseId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the response associated with the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventSchema</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the ASIM schema for the event.</td>
+  <td style="text-align:left">EventSchema</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the ASIM schema for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventSchemaVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the ASIM schema used.</td>
+  <td style="text-align:left">EventSchemaVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the ASIM schema used.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventSessionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the event session.</td>
+  <td style="text-align:left">EventSessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the event session.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventSessionName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the event session.</td>
+  <td style="text-align:left">EventSessionName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the event session.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventStartTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time at which the event started.</td>
+  <td style="text-align:left">EventStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time at which the event started.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventThoughtProcessDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Details about the thought process or reasoning during the event.</td>
+  <td style="text-align:left">EventThoughtProcessDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details about the thought process or reasoning during the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventThoughtProcessId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the thought process associated with the event.</td>
+  <td style="text-align:left">EventThoughtProcessId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the thought process associated with the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the event.</td>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventUid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the event.</td>
+  <td style="text-align:left">EventUid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventVendor</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The vendor of the product that generated the event.</td>
+  <td style="text-align:left">EventVendor</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The vendor of the product that generated the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InputTokensUsed</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The number of input tokens consumed during the event.</td>
+  <td style="text-align:left">InputTokensUsed</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The number of input tokens consumed during the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ModelName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the model used in the event.</td>
+  <td style="text-align:left">ModelName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the model used in the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ModelProviderName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the model provider.</td>
+  <td style="text-align:left">ModelProviderName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the model provider.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OutputTokensUsed</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The number of output tokens generated during the event.</td>
+  <td style="text-align:left">OutputTokensUsed</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The number of output tokens generated during the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PlatformTargetAgentDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A description of the platform target agent.</td>
+  <td style="text-align:left">PlatformTargetAgentDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A description of the platform target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PlatformTargetAgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the platform target agent.</td>
+  <td style="text-align:left">PlatformTargetAgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the platform target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PlatformTargetAgentName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the platform target agent.</td>
+  <td style="text-align:left">PlatformTargetAgentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the platform target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PlatformTargetOriginalAgentType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original type of the platform target agent as reported by the source.</td>
+  <td style="text-align:left">PlatformTargetOriginalAgentType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original type of the platform target agent as reported by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcAgentBlueprintId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The blueprint identifier of the source agent.</td>
+  <td style="text-align:left">SrcAgentBlueprintId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The blueprint identifier of the source agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcAgentDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A description of the source agent.</td>
+  <td style="text-align:left">SrcAgentDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A description of the source agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcAgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the source agent.</td>
+  <td style="text-align:left">SrcAgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the source agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcAgentName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the source agent.</td>
+  <td style="text-align:left">SrcAgentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the source agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcAgentOriginalType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original type of the source agent as reported by the source.</td>
+  <td style="text-align:left">SrcAgentOriginalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original type of the source agent as reported by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcFQDN</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The fully qualified domain name of the source.</td>
+  <td style="text-align:left">SrcFQDN</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The fully qualified domain name of the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcIpAddr</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The IP address of the source.</td>
+  <td style="text-align:left">SrcIpAddr</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcPortNumber</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The port number of the source.</td>
+  <td style="text-align:left">SrcPortNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The port number of the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAgentBlueprintId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The blueprint identifier of the target agent.</td>
+  <td style="text-align:left">TargetAgentBlueprintId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The blueprint identifier of the target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAgentDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A description of the target agent.</td>
+  <td style="text-align:left">TargetAgentDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A description of the target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the target agent.</td>
+  <td style="text-align:left">TargetAgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAgentName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the target agent.</td>
+  <td style="text-align:left">TargetAgentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAgentOriginalType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original type of the target agent as reported by the source.</td>
+  <td style="text-align:left">TargetAgentOriginalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original type of the target agent as reported by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAgentUserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user identifier associated with the target agent.</td>
+  <td style="text-align:left">TargetAgentUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user identifier associated with the target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetAgentUsername</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The username associated with the target agent.</td>
+  <td style="text-align:left">TargetAgentUsername</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The username associated with the target agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the log was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A description of the tool used in the event.</td>
+  <td style="text-align:left">ToolDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A description of the tool used in the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the tool used in the event.</td>
+  <td style="text-align:left">ToolId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the tool used in the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the tool used in the event.</td>
+  <td style="text-align:left">ToolName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the tool used in the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolOriginalType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The original type of the tool as reported by the source.</td>
+  <td style="text-align:left">ToolOriginalType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original type of the tool as reported by the source.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -440,16 +440,16 @@
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
-<p><strong>Selection Criteria:</strong> <code>EventProduct == "OpenAI API Platform"</code><br><code>EventType == "ChatCompletion"</code><br><code>EventVendor == "OpenAI"</code></p>
+<p><strong>Selection Criteria:</strong> <code>EventProduct == &quot;OpenAI API Platform&quot;</code><br><code>EventType == &quot;ChatCompletion&quot;</code><br><code>EventVendor == &quot;OpenAI&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
+  <th style="text-align:left">Connector</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/openaiconnector.html">OpenAI (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"><a href="../connectors/openaiconnector.html">OpenAI (via Codeless Connector Framework)</a></td>
 </tr>
 </tbody>
 </table>
@@ -464,30 +464,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>EventProduct == "OpenAI API Platform"</code><br><code>EventType == "ChatCompletion"</code><br><code>EventVendor == "OpenAI"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>EventProduct == &quot;OpenAI API Platform&quot;</code><br><code>EventType == &quot;ChatCompletion&quot;</code><br><code>EventVendor == &quot;OpenAI&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -495,24 +495,24 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">EventProduct</th>
-<th style="text-align: left;">EventVendor</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">EventProduct</th>
+  <th style="text-align:left">EventVendor</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>OpenAI API Platform</code></td>
-<td style="text-align: left;"><code>OpenAI</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>OpenAI API Platform</code></td>
+  <td style="text-align:left"><code>OpenAI</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -520,28 +520,29 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>ChatCompletion</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ChatCompletion</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

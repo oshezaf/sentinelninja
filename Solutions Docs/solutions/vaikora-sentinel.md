@@ -21,7 +21,7 @@
 | **First Published** | 2026-04-03 |
 | **Last Updated** | 2026-06-09 |
 | **Solution Folder** | [Vaikora-Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vaikora-Sentinel) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-vaikora-sentinel) · Popularity: 🔵 Medium (58%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/data443riskmitigationinc1761580347231.azure-sentinel-solution-vaikora-sentinel) · Popularity: 🔵 Medium (56%) |
 
 The [Vaikora AI Agent Behavioral Signals](https://vaikora.com) solution integrates Vaikora AI agent behavioral data into Microsoft Sentinel using the Codeless Connector Framework (CCF). The solution deploys a REST API poller connector, a custom log table (Vaikora_AgentSignals_CL), analytics rules, and visualization workbook to help security teams monitor AI agent activity, detect behavioral anomalies, and investigate policy violations.
 

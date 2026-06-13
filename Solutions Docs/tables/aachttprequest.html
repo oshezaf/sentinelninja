@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aachttprequest">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aachttprequest">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,131 +57,131 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccessKeyId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Access Key ID provided by client when authenticated via HMAC.</td>
+  <td style="text-align:left">AccessKeyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Access Key ID provided by client when authenticated via HMAC.</td>
 </tr>
 <tr>
-<td style="text-align: left;">BytesReceived</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The total number of bytes received by the server across all requests included in this aggregated entry.</td>
+  <td style="text-align:left">BytesReceived</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The total number of bytes received by the server across all requests included in this aggregated entry.</td>
 </tr>
 <tr>
-<td style="text-align: left;">BytesSent</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The total number of bytes sent by the server across all requests included in this aggregated entry.</td>
+  <td style="text-align:left">BytesSent</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The total number of bytes sent by the server across all requests included in this aggregated entry.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The log category of the event.</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The log category of the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientIPAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP Address of the client that sent the requests.</td>
+  <td style="text-align:left">ClientIPAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP Address of the client that sent the requests.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Object ID provided by client when authenticated via AAD.</td>
+  <td style="text-align:left">ClientObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Object ID provided by client when authenticated via AAD.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientRequestId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Request ID provided by client.</td>
+  <td style="text-align:left">ClientRequestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Request ID provided by client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientTenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Tenant ID provided by client when authenticated via AAD.</td>
+  <td style="text-align:left">ClientTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Tenant ID provided by client when authenticated via AAD.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">GUID for correlated logs.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">GUID for correlated logs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The average duration of the operation, in milliseconds, of all the requests included in this aggregated entry.</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The average duration of the operation, in milliseconds, of all the requests included in this aggregated entry.</td>
 </tr>
 <tr>
-<td style="text-align: left;">HitCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Count of requests that are included in this aggregated HTTP request log entry.</td>
+  <td style="text-align:left">HitCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Count of requests that are included in this aggregated HTTP request log entry.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Method</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">HTTP Method.</td>
+  <td style="text-align:left">Method</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">HTTP Method.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique request ID generated by server.</td>
+  <td style="text-align:left">RequestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique request ID generated by server.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestURI</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">URI of the requests.</td>
+  <td style="text-align:left">RequestURI</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">URI of the requests.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">StatusCode</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">HTTP Status Code of the requests.</td>
+  <td style="text-align:left">StatusCode</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">HTTP Status Code of the requests.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp (UTC) marking the start of the aggregation period.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) marking the start of the aggregation period.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User Agent provided by the client.</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User Agent provided by the client.</td>
 </tr>
 </tbody>
 </table>
@@ -194,6 +194,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

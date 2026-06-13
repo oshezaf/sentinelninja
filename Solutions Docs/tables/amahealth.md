@@ -22,7 +22,7 @@ Reference for AMAHealth table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AgentHealth | int | Indicates whether the agent is healthy (0), warning (1), or unhealthy (2). |
@@ -33,7 +33,7 @@ Reference for AMAHealth table in Azure Monitor Logs.
 | EndTime | datetime | The end time in UTC of the interval for which the agent health data was aggregated. |
 | MaxDiskExceededPercent | real | The percent of the reporting interval for which the disk usage exceeded the established quota. |
 | MaxEventsExceededPercent | real | The percent of the reporting interval for which the log volume exceeded the established quota. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StartTime | datetime | The start time in UTC of the interval for which the agent health data was aggregated. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time the record was created. |

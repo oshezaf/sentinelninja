@@ -22,22 +22,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Workbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Workbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/teams.html">Teams</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/teams.html">Teams</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Workbooks/MicrosoftTeams.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Teams/Workbooks/MicrosoftTeams.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -46,33 +46,34 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
-<td style="text-align: left;"><code>CommunicationType == "Team"</code><br><code>OfficeWorkload == "MicrosoftTeams"</code><br><code>Operation in "AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction"</code><br><code>Operation contains "Added"</code><br><code>Operation contains "Created"</code><br><code>Operation contains "Deleted"</code><br><code>Operation contains "Removed"</code><br><code>RecordType == "SharePointFileOperation"</code><br><code>SourceRelativeUrl has "Microsoft Teams Chat Files"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+  <td style="text-align:left"><code>CommunicationType == &quot;Team&quot;</code><br><code>OfficeWorkload == &quot;MicrosoftTeams&quot;</code><br><code>Operation in &quot;AppInstalled,BotAddedToTeam,FileUploaded,MemberAdded,MemberRemoved,MemberRoleChanged,TeamDeleted,TeamsAdminAction&quot;</code><br><code>Operation contains &quot;Added&quot;</code><br><code>Operation contains &quot;Created&quot;</code><br><code>Operation contains &quot;Deleted&quot;</code><br><code>Operation contains &quot;Removed&quot;</code><br><code>RecordType == &quot;SharePointFileOperation&quot;</code><br><code>SourceRelativeUrl has &quot;Microsoft Teams Chat Files&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
-<td style="text-align: left;"><code>AppDisplayName startswith "Microsoft Teams"</code><br><code>ResultDescription != "Other"</code><br><code>ResultType == "0"</code><br><code>ResultType !in "0,50140"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+  <td style="text-align:left"><code>AppDisplayName startswith &quot;Microsoft Teams&quot;</code><br><code>ResultDescription != &quot;Other&quot;</code><br><code>ResultType == &quot;0&quot;</code><br><code>ResultType !in &quot;0,50140&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/teams.html">Back to Teams</a></p>
+
 </div>
 
 </body>

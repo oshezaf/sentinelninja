@@ -30,7 +30,7 @@ Reference for SalesforceAuditTrail table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | Action | string | The action performed. |
 | CreatedByContext | string | The context in which the user made the change. |
 | CreatedByEmail | string | The email of the user who made the change. |
@@ -43,7 +43,7 @@ Reference for SalesforceAuditTrail table in Azure Monitor Logs.
 | Display | string | A user-friendly display name for the change. |
 | Id | string | The unique identifier for the audit trail entry. |
 | Section | string | The section of the Salesforce setup that was changed. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (in UTC) when the log entry was generated. |
 | Type | string | The name of the table |

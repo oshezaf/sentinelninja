@@ -22,7 +22,7 @@ Reference for MicrosoftGraphPolicyLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AadTenantId | string | The Microsoft Entra tenant ID of the organization owning the resource. |
 | ApiVersion | string | The Microsoft Graph API version used for the request: v1.0 or beta. |
 | AppId | string | The application (client) ID of the Microsoft Entra app registration making the request. |
@@ -40,7 +40,7 @@ Reference for MicrosoftGraphPolicyLogs table in Azure Monitor Logs.
 | RequestMethod | string | The HTTP method of the request: GET, POST, PATCH, or DELETE. |
 | RequestUri | string | The full Microsoft Graph request URI including path and query parameters. |
 | ServicePrincipalId | string | The object ID of the service principal for app-only calls. Empty for delegated calls. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TargetResourceId | string | The identifier of the target resource extracted from the request URI key segment. A single value for primary keys (e.g., a GUID), or comma-separated key=value pairs for alternate or compound keys. |
 | TargetResourceName | string | Resource type short name for CRUD (e.g., user, application); bound action as bindingType/action (e.g., application/addKey). Presence of '/' distinguishes actions from resources. |
 | TenantId | string | The Log Analytics workspace ID |

@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Virtual Desktop</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Virtual Desktop</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdconnections">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wvdconnections">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,176 +57,176 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AadTenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The AAD tenant Id of the user.</td>
+  <td style="text-align:left">AadTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The AAD tenant Id of the user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientOS</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OS of the client that is connecting (if available).</td>
+  <td style="text-align:left">ClientOS</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OS of the client that is connecting (if available).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientSideIPAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The remote IP address from the client side.</td>
+  <td style="text-align:left">ClientSideIPAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The remote IP address from the client side.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the client that is connecting (if available).</td>
+  <td style="text-align:left">ClientType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the client that is connecting (if available).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the client that is connecting (if available).</td>
+  <td style="text-align:left">ClientVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the client that is connecting (if available).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ConnectionType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of connection - either RAIL (RemoteApp Integrated Locally) or Desktop.</td>
+  <td style="text-align:left">ConnectionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of connection - either RAIL (RemoteApp Integrated Locally) or Desktop.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The activity Id.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The activity Id.</td>
 </tr>
 <tr>
-<td style="text-align: left;">GatewayRegion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The region of the WVD Gateway for the server side user connection.</td>
+  <td style="text-align:left">GatewayRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The region of the WVD Gateway for the server side user connection.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsClientPrivateLink</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">True if the client side of this connection used a private link endpoint during orchestration.</td>
+  <td style="text-align:left">IsClientPrivateLink</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">True if the client side of this connection used a private link endpoint during orchestration.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsSessionHostPrivateLink</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">True if the session host side of this connection used a private link endpoint during orchestration.</td>
+  <td style="text-align:left">IsSessionHostPrivateLink</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">True if the session host side of this connection used a private link endpoint during orchestration.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PredecessorConnectionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The predecessor Correlation Id of the connection, if the current connection is an auto-reconnect.</td>
+  <td style="text-align:left">PredecessorConnectionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The predecessor Correlation Id of the connection, if the current connection is an auto-reconnect.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceAlias</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The alias of the app that the user attempted to connect to.</td>
+  <td style="text-align:left">ResourceAlias</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The alias of the app that the user attempted to connect to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostAgentVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the WVD Agent running on the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostAgentVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the WVD Agent running on the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostAzureVmId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Azure VM Id of the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostAzureVmId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Azure VM Id of the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostIPAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The IP address of the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostIPAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostJoinType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the domain join for the Session Host - either DomainJoined, HybridAzureADJoined or AzureADJoined.</td>
+  <td style="text-align:left">SessionHostJoinType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the domain join for the Session Host - either DomainJoined, HybridAzureADJoined or AzureADJoined.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The FQDN of the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The FQDN of the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostOSDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OS SKU description of the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostOSDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OS SKU description of the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostOSVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OS version of the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostOSVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OS version of the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostPoolType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of session host pool - either SharedDesktop or PersonalDesktop.</td>
+  <td style="text-align:left">SessionHostPoolType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of session host pool - either SharedDesktop or PersonalDesktop.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostSessionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Session Id of WVD RDP Stack running on the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostSessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Session Id of WVD RDP Stack running on the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionHostSxSStackVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the WVD RDP Stack running on the machine where the user connection was orchestrated.</td>
+  <td style="text-align:left">SessionHostSxSStackVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the WVD RDP Stack running on the machine where the user connection was orchestrated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">State</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The state of the connection.</td>
+  <td style="text-align:left">State</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The state of the connection.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of the event.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TransportType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of transport used by the RDP connection: Shortpath, TURN, Websocket.</td>
+  <td style="text-align:left">TransportType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of transport used by the RDP connection: Shortpath, TURN, Websocket.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user who initiated the connection.</td>
+  <td style="text-align:left">UserName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user who initiated the connection.</td>
 </tr>
 </tbody>
 </table>
@@ -239,6 +239,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

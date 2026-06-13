@@ -23,7 +23,7 @@ Reference for NetworkAccessAlerts table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AlertType | string | The type name of the alert. Alerts of the same type should have the same name. This field is a keyed string representing the type of alert and not of an alert instance. All alert instances from the same detection logic/analytic should have the same value for alert type. |
 | ComponentName | string | The name of a component inside the product which generated the alert. This is an optional field, which might be populated only for product in which external end user are aware of specific components within a product. For products that offer different types of SKU/Bundles, this field can hold the SKU or bundle name. |
 | CreationDateTime | datetime | The date and time (UTC) that the event was generated. |
@@ -39,7 +39,7 @@ Reference for NetworkAccessAlerts table in Azure Monitor Logs.
 | ProductName | string | The name of the product which published this alert, i.e. Azure Security Center, Azure ATP, Microsoft Defender ATP, O365 ATP, MCAS, etc. |
 | RelatedResources | dynamic | A list of entities related to the alert. This list can hold a mixture of entities of diverse types. The entities type can be any of the types defined in the Entities section. Entities which are not in the list below can also be sent, however it is not guaranteed that they will be processed (the alert will not fail Production with new types of entities). |
 | Severity | string | The severity of the alert as it is reported by the provider. Possible Values: Informational, Low, Medium, High. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SubTechniques | string | Optional field that specify the kill chain related sub-techniques behind the alert. Each sub-technique should be added in this list using its ID and it should have at least one matching intent in the Intent field. |
 | Techniques | string | Optional field that specify the kill chain related techniques behind the alert. Each technique should be added in this list using its ID and it should have at least one matching intent in the Intent field. The Production of this field (the expected format of the technique ID and the matching against the Intent values) follow MITRE att@ck enterprise matrix model (Opens in new window or tab), and further guidance on the different techniques that make up each intent can be found in MITRE's documentation. |
 | TenantId | string | The Log Analytics workspace ID |

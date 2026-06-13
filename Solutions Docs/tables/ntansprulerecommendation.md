@@ -22,7 +22,7 @@ Reference for NTANspRuleRecommendation table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AdditionalProperties | string | Property bag for any additional properties. |
 | DestinationFqdns | string | Comma-separated destination fully qualified domain names for outbound traffic for a given NSP. |
 | EndTime | datetime | The rule evaluation window end time. |
@@ -38,7 +38,7 @@ Reference for NTANspRuleRecommendation table in Azure Monitor Logs.
 | RuleValue | string | Value for the rule. |
 | ServiceEndpoints | string | Comma-separated service endpoints. Service Endpoint traffic found. |
 | SourceIPs | string | Comma-separated public source IPs in CIDR format for inbound flows. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StartTime | datetime | The rule evaluation windowstart time. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Event generation timestamp. |

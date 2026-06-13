@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/spycloud-enterprise-protection.html">SpyCloud Enterprise Protection</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/spycloud-enterprise-protection.html">SpyCloud Enterprise Protection</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,49 +47,85 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-spycloud-enterprise-connector.html"><code>spycloud-enterprise-connector</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-spycloud-enterprise-connector.html"><code>spycloud-enterprise-connector</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-spycloud-enterprise-protection.html"><code>SpyCloud-Enterprise-Protection</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-spycloud-enterprise-protection.html"><code>SpyCloud-Enterprise-Protection</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azureloganalyticsdatacollector`](../logic-apps/managed-azureloganalyticsdatacollector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Save_Modified_Records_to_Custom_Logs_Table | post | `/api/logs` | — |
-| Save_New_Records_to_Custom_Logs_Table | post | `/api/logs` | — |
-
-#### [`spycloud-enterprise-connector`](../logic-apps/managed-spycloud-enterprise-connector.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Breach_Data_for_Entire_Watchlist_2 | get | `/breach/data/watchlist` | — |
-| Get_Breach_Data_for_Entire_Watchlist | get | `/breach/data/watchlist` | — |
-
+<h4 id="azureloganalyticsdatacollector"><a href="../logic-apps/managed-azureloganalyticsdatacollector.html"><code>azureloganalyticsdatacollector</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Save_Modified_Records_to_Custom_Logs_Table</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/logs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Save_New_Records_to_Custom_Logs_Table</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/api/logs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="spycloud-enterprise-connector"><a href="../logic-apps/managed-spycloud-enterprise-connector.html"><code>spycloud-enterprise-connector</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Breach_Data_for_Entire_Watchlist_2</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/breach/data/watchlist</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Breach_Data_for_Entire_Watchlist</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/breach/data/watchlist</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -97,7 +133,7 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/readme.md">SpyCloud-Monitor-Watchlist-Data/readme.md</a></em></p>
 </blockquote>
 <h1 id="spycloud-enterprise-monitor-watchlist-data-playbook">SpyCloud Enterprise Monitor Watchlist Data Playbook</h1>
-<p><img alt="SpyCloud Enterprise" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/logo.png" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/logo.png" alt="SpyCloud Enterprise" /></p>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#overview">Overview</a></li>
@@ -105,50 +141,57 @@
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
-<p><a name="overview"></p>
+<a name="overview">
+
 <h1 id="overview">Overview</h1>
 <p>This playbook gets triggered on a daily basis and performs the following actions:</p>
 <ul>
 <li>Gets the new watchlist records from the SpyCloud database and saves them into the custom logs table.</li>
 <li>Gets the modified watchlist records from the SpyCloud database and saves them into the custom logs table.</li>
 </ul>
-<p><a name="prerequisites"></p>
+<a name="prerequisites">
+
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>A SpyCloud Enterprise API Key</li>
 <li>SpyCloud Enterprise custom connector needs to be deployed prior to the deployment of this playbook, in the same resource group and region. Relevant instructions can be found on the connector documentation page.</li>
 </ul>
-<p><a name="deployment"></p>
+<a name="deployment">
+
 <h2 id="deployment-instructions">Deployment Instructions</h2>
 <ul>
-<li>Deploy the playbooks by clicking on the "Deploy to Azure" button. This will take you to the Deploy an ARM Template wizard.</li>
+<li>Deploy the playbooks by clicking on the &quot;Deploy to Azure&quot; button. This will take you to the Deploy an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
-  <img alt="deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/deployment.png" /></li>
-<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/deployment.png" alt="deployment" /></li>
+<li>Click &quot;Review + create&quot;. Once the validation is successful, click on &quot;Create&quot;.</li>
 </ul>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Monitor-Watchlist-Data%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Monitor-Watchlist-Data%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<p><a name="postdeployment"></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Monitor-Watchlist-Data%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSpyCloud%20Enterprise%20Protection%2FPlaybooks%2FSpyCloud-Monitor-Watchlist-Data%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<a name="postdeployment">
+
 <h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
 <h3 id="provide-custom-log-table-name">Provide Custom Log Table Name</h3>
 <ul>
-<li>Open the Logic App in the edit mode, click on "Parameters" and provide the name of the custom log table, for ex:SpycloudWatchlistData and click on close.
-  <img alt="parameters" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/parameters.png" /></li>
+<li>Open the Logic App in the edit mode, click on &quot;Parameters&quot; and provide the name of the custom log table, for ex:SpycloudWatchlistData and click on close.
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/parameters.png" alt="parameters" /></li>
 </ul>
 <h3 id="recurrence-trigger-instructions">Recurrence Trigger Instructions</h3>
 <ul>
 <li>The Logic App will run on an interval set to daily. Please do not change the interval, as it may result in duplication of data.</li>
 <li>If you do not wish to run the playbook immediately, set the start time.
-  <img alt="recurrence" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/recurrence.png" /></li>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SpyCloud%20Enterprise%20Protection/Playbooks/SpyCloud-Monitor-Watchlist-Data/images/recurrence.png" alt="recurrence" /></li>
 </ul>
 <h3 id="authorize-connections">Authorize connections</h3>
-<p>Once deployment is complete, you will need to authorize each connection:
-- Provide connection details for the SpyCloud Enterprise Custom Connector.
-- Provide connection details for the Azure Log Analytics Data Collector. You need to provide a "Workspace ID" and "Workspace Key", You can obtain the "Workspace ID" in the overview of your "Log Analytics Workspace" and "Workspace key" from the "Agents&gt; Log Analytics agent instructions" section. You can use either a "Primary key" or a "Secondary key".
-- Save the Logic App. If the Logic App prompts for any missing connections, please update the connections similarly.</p>
+<p>Once deployment is complete, you will need to authorize each connection:</p>
+<ul>
+<li>Provide connection details for the SpyCloud Enterprise Custom Connector.</li>
+<li>Provide connection details for the Azure Log Analytics Data Collector. You need to provide a &quot;Workspace ID&quot; and &quot;Workspace Key&quot;, You can obtain the &quot;Workspace ID&quot; in the overview of your &quot;Log Analytics Workspace&quot; and &quot;Workspace key&quot; from the &quot;Agents&gt; Log Analytics agent instructions&quot; section. You can use either a &quot;Primary key&quot; or a &quot;Secondary key&quot;.</li>
+<li>Save the Logic App. If the Logic App prompts for any missing connections, please update the connections similarly.</li>
+</ul>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/spycloud-enterprise-protection.html">Back to SpyCloud Enterprise Protection</a></p>
+
 </div>
 
 </body>

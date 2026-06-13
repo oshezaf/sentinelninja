@@ -1,4 +1,6 @@
-# Barracuda WAF
+# Barracuda WAF Sentinel Solution
+
+*Solution: Barracuda WAF*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/barracuda_logo.svg" alt="Barracuda WAF Logo" width="75" height="75">
 
@@ -18,6 +20,7 @@
 | **Author** | Barracuda |
 | **First Published** | 2022-05-13 |
 | **Solution Folder** | [Barracuda WAF](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Barracuda%20WAF) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/barracudanetworks.barracuda_waf_sentinel_solution) · Popularity: 🟡 Low (43%) |
 | **Pre-requisites** | [Common Event Format](common-event-format.md) |
 
 The [ Barracuda WAF](https://www.barracuda.com/products/webapplicationfirewall) solution for Microsoft Sentinel enables you to ingest Barracuda firewall logs into Microsoft Sentinel.

@@ -23,7 +23,7 @@ Reference for AppPlatformIngressLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | BodyBytesSent | string | Number of bytes sent to a client, not counting the response header |
@@ -31,8 +31,8 @@ Reference for AppPlatformIngressLogs table in Azure Monitor Logs.
 | HttpReferer | string | Value of the referer header |
 | HttpUserAgent | string | Value of user-agent header |
 | OperationName | string | The name of the operation represented by this event |
-| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-<namespace>-<service name>-<service port> |
-| ProxyUpstreamName | string | Name of the upstream server. The format is upstream-<namespace>-<service name>-<service port> |
+| ProxyAlternativeUpstreamName | string | Name of the alternative upstream server. The format is upstream-&lt;namespace&gt;-&lt;service name&gt;-&lt;service port&gt; |
+| ProxyUpstreamName | string | Name of the upstream server. The format is upstream-&lt;namespace&gt;-&lt;service name&gt;-&lt;service port&gt; |
 | RemoteAddr | string | The source IP address of the client |
 | RemoteUser | string | User name supplied with the basic authentication |
 | ReqId | string | The randomly generated ID of the request |
@@ -40,7 +40,7 @@ Reference for AppPlatformIngressLogs table in Azure Monitor Logs.
 | RequestHeaders | string | Request headers end with 'id' or 'ID' |
 | RequestLength | string | Request length in bytes (including request line, header, and request body) |
 | RequestTime | real | Time in seconds with millisecond resolution elapsed since the first bytes were read from the client |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Status | string | Response status |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when the log is collected by Azure Spring Cloud |

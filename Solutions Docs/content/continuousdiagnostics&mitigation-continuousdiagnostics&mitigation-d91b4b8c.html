@@ -22,22 +22,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Workbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Workbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/continuousdiagnostics&amp;mitigation.html">ContinuousDiagnostics&amp;Mitigation</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContinuousDiagnostics%26Mitigation/Workbooks/ContinuousDiagnostics%26Mitigation.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContinuousDiagnostics%26Mitigation/Workbooks/ContinuousDiagnostics%26Mitigation.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -46,243 +46,244 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/awscloudtrail.html"><code>AWSCloudTrail</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/awsvpcflow.html"><code>AWSVPCFlow</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/alertevidence.html"><code>AlertEvidence</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+  <td style="text-align:left"><code>OperationName contains &quot;PIM&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-<td style="text-align: left;"><code>OperationName contains "PIM"</code></td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/azuredevopsauditing.html"><code>AzureDevOpsAuditing</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/azuredevopsauditing.html"><code>AzureDevOpsAuditing</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
-<td style="text-align: left;"><code>Category in "NetworkSecurityGroupEvent,kube-audit"</code><br><code>Category contains "SQL"</code><br><code>ResourceProvider == "MICROSOFT.KEYVAULT"</code><br><code>ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES"</code></td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/azurediagnostics.html"><code>AzureDiagnostics</code></a> 🔶</td>
+  <td style="text-align:left"><code>Category in &quot;NetworkSecurityGroupEvent,kube-audit&quot;</code><br><code>Category contains &quot;SQL&quot;</code><br><code>ResourceProvider == &quot;MICROSOFT.KEYVAULT&quot;</code><br><code>ResourceType in &quot;APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES&quot;</code></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/carbonblack-alerts-cl.html"><code>CarbonBlack_Alerts_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/configurationdata.html"><code>ConfigurationData</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/configurationdata.html"><code>ConfigurationData</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/deviceevents.html"><code>DeviceEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/devicefileevents.html"><code>DeviceFileEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/devicelogonevents.html"><code>DeviceLogonEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/dnsevents.html"><code>DnsEvents</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/dnsevents.html"><code>DnsEvents</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/dynamics365activity.html"><code>Dynamics365Activity</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/dynamics365activity.html"><code>Dynamics365Activity</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a> 🔶</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/gcp-iam-cl.html"><code>GCP_IAM_CL</code></a> 🔶</td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/githubauditlogpolling-cl.html"><code>GitHubAuditLogPolling_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/informationprotectionlogs-cl.html"><code>InformationProtectionLogs_CL</code></a> 🔶</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/informationprotectionlogs-cl.html"><code>InformationProtectionLogs_CL</code></a> 🔶</td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/qualyshostdetectionv3-cl.html"><code>QualysHostDetectionV3_CL</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
-<td style="text-align: left;"><code>ProductName in "Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management,Microsoft Defender Advanced Threat Protection"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/securityalert.html"><code>SecurityAlert</code></a></td>
+  <td style="text-align:left"><code>ProductName in &quot;Azure Active Directory Identity Protection,Azure Security Center for IoT,Microsoft 365 Insider Risk Management,Microsoft Defender Advanced Threat Protection&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securitybaseline.html"><code>SecurityBaseline</code></a></td>
-<td style="text-align: left;"><code>AnalyzeResult in "Failed,Passed"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securitybaseline.html"><code>SecurityBaseline</code></a></td>
+  <td style="text-align:left"><code>AnalyzeResult in &quot;Failed,Passed&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/securityincident.html"><code>SecurityIncident</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securitynestedrecommendation.html"><code>SecurityNestedRecommendation</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securitynestedrecommendation.html"><code>SecurityNestedRecommendation</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityrecommendation.html"><code>SecurityRecommendation</code></a></td>
-<td style="text-align: left;"><code>RecommendationDisplayName contains "access"</code><br><code>RecommendationDisplayName contains "account"</code><br><code>RecommendationDisplayName contains "admin"</code><br><code>RecommendationDisplayName contains "agent"</code><br><code>RecommendationDisplayName contains "aks"</code><br><code>RecommendationDisplayName contains "audit"</code><br><code>RecommendationDisplayName contains "auth"</code><br><code>RecommendationDisplayName contains "back"</code><br><code>RecommendationDisplayName contains "bound"</code><br><code>RecommendationDisplayName contains "cert"</code><br><code>RecommendationDisplayName contains "cmk"</code><br><code>RecommendationDisplayName contains "collect"</code><br><code>RecommendationDisplayName contains "contain"</code><br><code>RecommendationDisplayName contains "data"</code><br><code>RecommendationDisplayName contains "detect"</code><br><code>RecommendationDisplayName contains "edr"</code><br><code>RecommendationDisplayName contains "endpoint"</code><br><code>RecommendationDisplayName contains "endpoint protection"</code><br><code>RecommendationDisplayName contains "event"</code><br><code>RecommendationDisplayName contains "firewall"</code><br><code>RecommendationDisplayName contains "gateway"</code><br><code>RecommendationDisplayName contains "http"</code><br><code>RecommendationDisplayName contains "identity"</code><br><code>RecommendationDisplayName contains "incident"</code><br><code>RecommendationDisplayName contains "internet"</code><br><code>RecommendationDisplayName contains "intrusion"</code><br><code>RecommendationDisplayName contains "just"</code><br><code>RecommendationDisplayName contains "key"</code><br><code>RecommendationDisplayName contains "kube"</code><br><code>RecommendationDisplayName contains "malware"</code><br><code>RecommendationDisplayName contains "network"</code><br><code>RecommendationDisplayName contains "port"</code><br><code>RecommendationDisplayName contains "priv"</code><br><code>RecommendationDisplayName contains "privacy"</code><br><code>RecommendationDisplayName contains "protection"</code><br><code>RecommendationDisplayName contains "proxy"</code><br><code>RecommendationDisplayName contains "root"</code><br><code>RecommendationDisplayName contains "sql"</code><br><code>RecommendationDisplayName contains "storage"</code><br><code>RecommendationDisplayName contains "subnet"</code><br><code>RecommendationDisplayName contains "supply"</code><br><code>RecommendationDisplayName contains "tls"</code><br><code>RecommendationDisplayName contains "token"</code><br><code>RecommendationDisplayName contains "traffic"</code><br><code>RecommendationDisplayName contains "trust"</code><br><code>RecommendationDisplayName contains "url"</code><br><code>RecommendationDisplayName contains "user"</code><br><code>RecommendationDisplayName contains "web"</code><br><code>RecommendationState in "Healthy,NotApplicable,Removed,Unhealthy"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/securityrecommendation.html"><code>SecurityRecommendation</code></a></td>
+  <td style="text-align:left"><code>RecommendationDisplayName contains &quot;access&quot;</code><br><code>RecommendationDisplayName contains &quot;account&quot;</code><br><code>RecommendationDisplayName contains &quot;admin&quot;</code><br><code>RecommendationDisplayName contains &quot;agent&quot;</code><br><code>RecommendationDisplayName contains &quot;aks&quot;</code><br><code>RecommendationDisplayName contains &quot;audit&quot;</code><br><code>RecommendationDisplayName contains &quot;auth&quot;</code><br><code>RecommendationDisplayName contains &quot;back&quot;</code><br><code>RecommendationDisplayName contains &quot;bound&quot;</code><br><code>RecommendationDisplayName contains &quot;cert&quot;</code><br><code>RecommendationDisplayName contains &quot;cmk&quot;</code><br><code>RecommendationDisplayName contains &quot;collect&quot;</code><br><code>RecommendationDisplayName contains &quot;contain&quot;</code><br><code>RecommendationDisplayName contains &quot;data&quot;</code><br><code>RecommendationDisplayName contains &quot;detect&quot;</code><br><code>RecommendationDisplayName contains &quot;edr&quot;</code><br><code>RecommendationDisplayName contains &quot;endpoint&quot;</code><br><code>RecommendationDisplayName contains &quot;endpoint protection&quot;</code><br><code>RecommendationDisplayName contains &quot;event&quot;</code><br><code>RecommendationDisplayName contains &quot;firewall&quot;</code><br><code>RecommendationDisplayName contains &quot;gateway&quot;</code><br><code>RecommendationDisplayName contains &quot;http&quot;</code><br><code>RecommendationDisplayName contains &quot;identity&quot;</code><br><code>RecommendationDisplayName contains &quot;incident&quot;</code><br><code>RecommendationDisplayName contains &quot;internet&quot;</code><br><code>RecommendationDisplayName contains &quot;intrusion&quot;</code><br><code>RecommendationDisplayName contains &quot;just&quot;</code><br><code>RecommendationDisplayName contains &quot;key&quot;</code><br><code>RecommendationDisplayName contains &quot;kube&quot;</code><br><code>RecommendationDisplayName contains &quot;malware&quot;</code><br><code>RecommendationDisplayName contains &quot;network&quot;</code><br><code>RecommendationDisplayName contains &quot;port&quot;</code><br><code>RecommendationDisplayName contains &quot;priv&quot;</code><br><code>RecommendationDisplayName contains &quot;privacy&quot;</code><br><code>RecommendationDisplayName contains &quot;protection&quot;</code><br><code>RecommendationDisplayName contains &quot;proxy&quot;</code><br><code>RecommendationDisplayName contains &quot;root&quot;</code><br><code>RecommendationDisplayName contains &quot;sql&quot;</code><br><code>RecommendationDisplayName contains &quot;storage&quot;</code><br><code>RecommendationDisplayName contains &quot;subnet&quot;</code><br><code>RecommendationDisplayName contains &quot;supply&quot;</code><br><code>RecommendationDisplayName contains &quot;tls&quot;</code><br><code>RecommendationDisplayName contains &quot;token&quot;</code><br><code>RecommendationDisplayName contains &quot;traffic&quot;</code><br><code>RecommendationDisplayName contains &quot;trust&quot;</code><br><code>RecommendationDisplayName contains &quot;url&quot;</code><br><code>RecommendationDisplayName contains &quot;user&quot;</code><br><code>RecommendationDisplayName contains &quot;web&quot;</code><br><code>RecommendationState in &quot;Healthy,NotApplicable,Removed,Unhealthy&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/storagebloblogs.html"><code>StorageBlobLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/threatintelligenceindicator.html"><code>ThreatIntelligenceIndicator</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/windowsfirewall.html"><code>WindowsFirewall</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/windowsfirewall.html"><code>WindowsFirewall</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/continuousdiagnostics&amp;mitigation.html">Back to ContinuousDiagnostics&amp;Mitigation</a></p>
+
 </div>
 
 </body>

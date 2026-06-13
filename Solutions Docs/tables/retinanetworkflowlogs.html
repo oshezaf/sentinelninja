@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Containers</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Containers</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/retinanetworkflowlogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,186 +57,186 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalFlowData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional flow data.</td>
+  <td style="text-align:left">AdditionalFlowData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional flow data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationClusterName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the destination cluster (flow.destination.cluster_name).</td>
+  <td style="text-align:left">DestinationClusterName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the destination cluster (flow.destination.cluster_name).</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationIdentity</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Security identity number for the destination (flow.destination.identity).</td>
+  <td style="text-align:left">DestinationIdentity</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Security identity number for the destination (flow.destination.identity).</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationNamespace</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The namespace of the destination (flow.destination.namespace).</td>
+  <td style="text-align:left">DestinationNamespace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The namespace of the destination (flow.destination.namespace).</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationPodName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the destination pod (flow.destination.pod_name).</td>
+  <td style="text-align:left">DestinationPodName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the destination pod (flow.destination.pod_name).</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationWorkloads</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Array of workloads associated with the destination, including name and kind (flow.destination.workloads).</td>
+  <td style="text-align:left">DestinationWorkloads</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Array of workloads associated with the destination, including name and kind (flow.destination.workloads).</td>
 </tr>
 <tr>
-<td style="text-align: left;">DropReason</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The description of the drop reason if the verdict is DROPPED. (flow.drop_reason_desc).</td>
+  <td style="text-align:left">DropReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The description of the drop reason if the verdict is DROPPED. (flow.drop_reason_desc).</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventType</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Event type details (flow.event_type).</td>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Event type details (flow.event_type).</td>
 </tr>
 <tr>
-<td style="text-align: left;">FlowType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of the flow (e.g., L3_L4, L7 SOCK) (flow.Type).</td>
+  <td style="text-align:left">FlowType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the flow (e.g., L3_L4, L7 SOCK) (flow.Type).</td>
 </tr>
 <tr>
-<td style="text-align: left;">IP</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The IP values of the flow. Including ip source, ip destination, ip is encrypted and ip version.</td>
+  <td style="text-align:left">IP</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The IP values of the flow. Including ip source, ip destination, ip is encrypted and ip version.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Layer4</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The layer 4 information of the flow such as the protocol, source port, destination port, and TCP flags.</td>
+  <td style="text-align:left">Layer4</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The layer 4 information of the flow such as the protocol, source port, destination port, and TCP flags.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Layer7</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">L7 flow type if Flow_Type is L7 (e.g., DNS, HTTP, Kafka) (flow.l7.type).</td>
+  <td style="text-align:left">Layer7</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">L7 flow type if Flow_Type is L7 (e.g., DNS, HTTP, Kafka) (flow.l7.type).</td>
 </tr>
 <tr>
-<td style="text-align: left;">NodeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the node where the flow was captured (flow.node_name).</td>
+  <td style="text-align:left">NodeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the node where the flow was captured (flow.node_name).</td>
 </tr>
 <tr>
-<td style="text-align: left;">PacketsReceived</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Number of packets sent from the destination to the source since the last update.</td>
+  <td style="text-align:left">PacketsReceived</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Number of packets sent from the destination to the source since the last update.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PacketsSent</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Number of packets sent from the source to the destination since the last update.</td>
+  <td style="text-align:left">PacketsSent</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Number of packets sent from the source to the destination since the last update.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Policies</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Combined entry for all policies that allowed or denied ingress/egress (flow.egress_allowed_by, flow.ingress_allowed_by, flow.egress_denied_by, flow.ingress_denied_by).</td>
+  <td style="text-align:left">Policies</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Combined entry for all policies that allowed or denied ingress/egress (flow.egress_allowed_by, flow.ingress_allowed_by, flow.egress_denied_by, flow.ingress_denied_by).</td>
 </tr>
 <tr>
-<td style="text-align: left;">Reply</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates if the flow is a reply (flow.is_reply.value).</td>
+  <td style="text-align:left">Reply</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates if the flow is a reply (flow.is_reply.value).</td>
 </tr>
 <tr>
-<td style="text-align: left;">Service</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Service details of the flow.</td>
+  <td style="text-align:left">Service</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Service details of the flow.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceClusterName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the source cluster (flow.source.cluster_name).</td>
+  <td style="text-align:left">SourceClusterName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the source cluster (flow.source.cluster_name).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceIdentity</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The security identity number for the source (flow.source.identity).</td>
+  <td style="text-align:left">SourceIdentity</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The security identity number for the source (flow.source.identity).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceNamespace</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The namespace of the source (flow.source.namespace).</td>
+  <td style="text-align:left">SourceNamespace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The namespace of the source (flow.source.namespace).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourcePodName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the source pod (flow.source.pod_name).</td>
+  <td style="text-align:left">SourcePodName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the source pod (flow.source.pod_name).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceWorkloads</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Array of workloads associated with the source, including name and kind (flow.source.workloads).</td>
+  <td style="text-align:left">SourceWorkloads</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Array of workloads associated with the source, including name and kind (flow.source.workloads).</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the flow was recorded (flow.time).</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the flow was recorded (flow.time).</td>
 </tr>
 <tr>
-<td style="text-align: left;">TraceObservationPoint</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Point of observation in the trace (e.g., TO_ENDPOINT) (flow.trace_observation_point).</td>
+  <td style="text-align:left">TraceObservationPoint</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Point of observation in the trace (e.g., TO_ENDPOINT) (flow.trace_observation_point).</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficDirection</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Direction of the traffic (e.g., INGRESS, EGRESS) (flow.traffic_direction).</td>
+  <td style="text-align:left">TrafficDirection</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direction of the traffic (e.g., INGRESS, EGRESS) (flow.traffic_direction).</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UUID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The UUID of the flow (flow.uuid).</td>
+  <td style="text-align:left">UUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The UUID of the flow (flow.uuid).</td>
 </tr>
 <tr>
-<td style="text-align: left;">Verdict</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The verdict of the flow (e.g., FORWARDED, DROPPED) (flow.verdict).</td>
+  <td style="text-align:left">Verdict</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The verdict of the flow (e.g., FORWARDED, DROPPED) (flow.verdict).</td>
 </tr>
 </tbody>
 </table>
@@ -249,6 +249,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

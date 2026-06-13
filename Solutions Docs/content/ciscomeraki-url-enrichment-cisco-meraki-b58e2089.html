@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/ciscomeraki.html">CiscoMeraki</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,44 +47,85 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/custom-merakiconnector.html"><code>MerakiConnector</code></a></td>
-<td style="text-align: left;">Custom</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/custom-merakiconnector.html"><code>MerakiConnector</code></a></td>
+  <td style="text-align:left">Custom</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident | post | `/Incidents/Comment` | — |
-| Entities_-_Get_URLs | post | `/entities/url` | — |
-
-#### [`MerakiConnector`](../logic-apps/custom-merakiconnector.md) (Custom)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Network_Appliance_Content_Filtering | get | `/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/contentFiltering` | — |
-| Get_Networks | get | `/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks` | — |
-| Get_Organizations | get | `/organizations` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="merakiconnector"><a href="../logic-apps/custom-merakiconnector.html"><code>MerakiConnector</code></a> (Custom)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Network_Appliance_Content_Filtering</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/networks/@{encodeURIComponent(items('For_each_Network')?['id'])}/appliance/contentFiltering</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Networks</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/organizations/@{encodeURIComponent(body('Filter_Organization')?[0]?['id'])}/networks</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Organizations</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/organizations</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -92,61 +133,71 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/readme.md">URL-Enrichment/readme.md</a></em></p>
 </blockquote>
 <h1 id="cisco-meraki-url-enrichment-playbook">Cisco Meraki URL Enrichment Playbook</h1>
-<p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/../../Connector/MerakiConnector/logo.jpg" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/../../Connector/MerakiConnector/logo.jpg" alt="meraki" /></p>
 <h2 id="summary">Summary</h2>
-<p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:
- 1. Fetches a list of potentially malicious URLs.
- 2. For each URL in the list, checks if the URL is blocked by any of the networks of the organization.
-  - If URL is allowed by the network, then incident comment is created saying URL is allowed.
-  - If URL is blocked by the network, then incident comment is created saying URL is blocked.
-  - If URL is not blocked by the network and not part of the network, then incident comment is created saying URL not found in network.</p>
-<p><img alt="Meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/PlaybookDesignerLight.jpg" /></p>
-<p><img alt="Meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/PlaybookDesignerDark.jpg" /></p>
-<p>## Pre-requisites for deployment
-1. Deploy the Cisco Meraki Custom Connector before the deployment of this playbook under the same subscription and same resource group. Capture the name of the connector during deployment.
-2. Cisco Meraki API Key should be known to establish a connection with Cisco Meraki Custom Connector. <a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/authorization">Refer here</a>
-3. Organization name should be known. <a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/find-your-organization-id">Refer here</a> </p>
-<p>## Deployment Instructions
- 1. Deploy the playbook by clicking on the "Deploy to Azure" button. This will take you to deploy an ARM Template wizard.</p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FPlaybooks%2FURL-Enrichment%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FPlaybooks%2FURL-Enrichment%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p>When a new Microsoft Sentinel incident is created, this playbook gets triggered and performs the below actions:</p>
+<ol>
+<li>Fetches a list of potentially malicious URLs.</li>
+<li>For each URL in the list, checks if the URL is blocked by any of the networks of the organization.</li>
+</ol>
+<ul>
+<li>If URL is allowed by the network, then incident comment is created saying URL is allowed.</li>
+<li>If URL is blocked by the network, then incident comment is created saying URL is blocked.</li>
+<li>If URL is not blocked by the network and not part of the network, then incident comment is created saying URL not found in network.</li>
+</ul>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/PlaybookDesignerLight.jpg" alt="Meraki" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/PlaybookDesignerDark.jpg" alt="Meraki" /></p>
+<h2 id="pre-requisites-for-deployment">Pre-requisites for deployment</h2>
+<ol>
+<li>Deploy the Cisco Meraki Custom Connector before the deployment of this playbook under the same subscription and same resource group. Capture the name of the connector during deployment.</li>
+<li>Cisco Meraki API Key should be known to establish a connection with Cisco Meraki Custom Connector. <a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/authorization">Refer here</a></li>
+<li>Organization name should be known. <a href="https://developer.cisco.com/meraki/api-v1/#!getting-started/find-your-organization-id">Refer here</a></li>
+</ol>
+<h2 id="deployment-instructions">Deployment Instructions</h2>
+<ol>
+<li>Deploy the playbook by clicking on the &quot;Deploy to Azure&quot; button. This will take you to deploy an ARM Template wizard.</li>
+</ol>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FPlaybooks%2FURL-Enrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCiscoMeraki%2FPlaybooks%2FURL-Enrichment%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <ol start="2">
 <li>Fill in the required parameters for deploying the playbook.</li>
 </ol>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
+  <th>Parameter</th>
+  <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Playbook Name</strong></td>
-<td>Enter the playbook name without spaces</td>
+  <td><strong>Playbook Name</strong></td>
+  <td>Enter the playbook name without spaces</td>
 </tr>
 <tr>
-<td><strong>Cisco Meraki Connector name</strong></td>
-<td>Enter the name of Cisco Meraki custom connector without spaces</td>
+  <td><strong>Cisco Meraki Connector name</strong></td>
+  <td>Enter the name of Cisco Meraki custom connector without spaces</td>
 </tr>
 <tr>
-<td><strong>Organization Name</strong></td>
-<td>Enter organization name</td>
+  <td><strong>Organization Name</strong></td>
+  <td>Enter organization name</td>
 </tr>
 </tbody>
 </table>
 <h1 id="post-deployment-instructions">Post-Deployment Instructions</h1>
 <h2 id="a-authorize-api-connection">a. Authorize API connection</h2>
 <ul>
-<li>Once deployment is complete, go under deployment details and authorize Cisco Meraki connection. 
-1.  Click the Cisco Meraki connection
-2.  Click <strong>Edit API connection</strong>
-3.  Enter API Key
-4.  Click Save</li>
+<li>Once deployment is complete, go under deployment details and authorize Cisco Meraki connection.</li>
 </ul>
+<ol>
+<li>Click the Cisco Meraki connection</li>
+<li>Click <strong>Edit API connection</strong></li>
+<li>Enter API Key</li>
+<li>Click Save</li>
+</ol>
 <h2 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h2>
 <ul>
-<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with URLs. </li>
+<li>In Microsoft sentinel analytical rules should be configured to trigger an incident with URLs.</li>
 <li>Configure the automation rules to trigger the playbook.</li>
 </ul>
 <h1 id="playbook-steps-explained">Playbook steps explained</h1>
@@ -156,25 +207,26 @@
 <p>Get the list of URLs as entities from the Incident.</p>
 <h2 id="check-if-organization-exists">Check if Organization exists</h2>
 <ul>
-<li>If organization name exists in list of organizations associated with the account, then get list of networks associated with the organization. </li>
+<li>If organization name exists in list of organizations associated with the account, then get list of networks associated with the organization.</li>
 <li>If organization name does not exist, then terminate with the error that organization not found.</li>
 </ul>
 <h2 id="for-each-malicious-url-received-from-the-incident">For each malicious URL received from the incident</h2>
 <ul>
 <li>Checks if the URL is blocked by any of the networks of the organization.<ul>
 <li>If URL is allowed by the network, then incident comment is created saying URL is allowed.</li>
-<li>If URL is blocked by the network, then incident comment is created saying URL is blocked.   </li>
+<li>If URL is blocked by the network, then incident comment is created saying URL is blocked.</li>
 <li>If URL is not blocked by network and not part of the network, then incident comment is created saying URL not found.</li>
 </ul>
 </li>
 <li>Add incident Comment from all the cases.</li>
 </ul>
 <h2 id="incident-comment">Incident Comment</h2>
-<p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentLight.jpg" /></p>
-<p><img alt="meraki" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentDark.jpg" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentLight.jpg" alt="meraki" /></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CiscoMeraki/Playbooks/URL-Enrichment/Images/IncidentCommentDark.jpg" alt="meraki" /></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ciscomeraki.html">Back to CiscoMeraki</a></p>
+
 </div>
 
 </body>

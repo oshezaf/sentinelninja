@@ -34,7 +34,7 @@ Reference for ASimNetworkSessionLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalFields | dynamic | Additional information, represented using key/value pairs provided by the source which do not map to ASim. |
@@ -123,7 +123,7 @@ Reference for ASimNetworkSessionLogs table in Azure Monitor Logs.
 | NetworkRuleName | string | The name or ID of the rule by which DvcAction was decided upon. |
 | NetworkRuleNumber | int | The number of the rule by which DvcAction was decided upon. |
 | NetworkSessionId | string | The session identifier as reported by the reporting device. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcAppId | string | The ID of the source application, as reported by the reporting device. |
 | SrcAppName | string | The name of the source application. |
 | SrcAppType | string | The type of the source application. |
@@ -180,13 +180,14 @@ Reference for ASimNetworkSessionLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
@@ -205,15 +206,29 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (3)
 
-### Workbooks (1)
+### Hunting Queries (1)
+
+**Standalone Content:** `DstIpAddr !in "8.8.8.8,1.1.1.1"`
+
+| Hunting Query |
+|:-------------|
+| [Potential rootkit network activity missing from MDE](../content/standalone-content-potential-rootkit-network-activity-missing-from-mde-564bf64a-bada-4c6b-8821-53138d660f78-09fce37b.md) |
+
+### Workbooks (2)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
+
+**GitHub Only:** `DstPortNumber == "3389"`<br>`DvcAction in "Allow,Drop"`<br>`EventProduct == "Windows Firewall"`<br>`SrcIpAddr !in "::1,-"`
+
+| Workbook |
+|:-------------|
+| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |
 
 ## Parsers Using This Table (2)
 
@@ -235,21 +250,29 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/networksessionnormalized`
 
-## Selection Criteria Summary (2 criteria, 2 total references)
+## Selection Criteria Summary (3 criteria, 3 total references)
 
-References by type: 1 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 1 connectors, 1 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
+| `DstIpAddr !in "8.8.8.8,1.1.1.1"` | - | 1 | - | - | **1** |
 | `EventType in "EndpointNetworkSession,L2NetworkSession"` | - | - | 1 | - | **1** |
-| **Total** | **1** | **0** | **1** | **0** | **2** |
+| **Total** | **1** | **1** | **1** | **0** | **3** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Windows Firewall` |  | 1 | - | - | - | **1** |
+
+### DstIpAddr
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 8.8.8.8` | - | 1 | - | - | **1** |
+| `!= 1.1.1.1` | - | 1 | - | - | **1** |
 
 ### EventType
 

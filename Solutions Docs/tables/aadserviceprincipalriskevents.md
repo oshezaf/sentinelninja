@@ -31,7 +31,7 @@ Reference for AADServicePrincipalRiskEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | Activity | string | Indicates the activity type the detected risk is linked to. |
 | ActivityDateTime | datetime | Date and time when the risky activity occurred in UTC. |
 | AdditionalInfo | dynamic | Additional information associated with the risk detection in JSON format. |
@@ -53,7 +53,7 @@ Reference for AADServicePrincipalRiskEvents table in Azure Monitor Logs.
 | ServicePrincipalDisplayName | string | The display name for the service principal. |
 | ServicePrincipalId | string | The unique identifier for the service principal. |
 | Source | string | Source of the risk detection. For example, identityProtection. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time of the event in UTC. |
 | TokenIssuerType | string | Indicates the type of token issuer for the detected sign-in risk. |
@@ -75,15 +75,24 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (5)
 
-### Workbooks (1)
+### Workbooks (5)
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

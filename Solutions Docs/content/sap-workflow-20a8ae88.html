@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/sap.html">SAP</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/sap.html">SAP</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/SAPCollectorRemediate-STD/workflow.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/SAPCollectorRemediate-STD/workflow.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -50,83 +50,178 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azurevm.html"><code>azurevm</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azurevm.html"><code>azurevm</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">6</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Run_SAPConnectorHealth_check | post | `/queryData` | — |
-
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_SAP_SOC_comment_to_incident | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident | post | `/Incidents/Comment` | — |
-
-#### [`azurevm`](../logic-apps/managed-azurevm.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Restart_Sentinel_Collector_virtual_machine | post | `/subscriptions/@{encodeURIComponent(parameters('SentinelCollectorSubscriptionId'))}/resourcegroups/@{encodeURIComponent(parameters('SentinelCollectorResourceGroup'))}/providers/Microsoft.Compute/virtualMachines/@{encodeURIComponent(parameters('SentinelCollectorVMName'))}/restart` | — |
-
-#### [`teams`](../logic-apps/managed-teams.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Reply_with_processed_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Reply_with_restart_error_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Reply_with_restart_success_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Post_adaptive_card_for_unlikely_attack_in_a_chat_or_channel | post | `/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Post_REST_API_error_message_in_a_chat_or_channel | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Post_card_in_a_chat_or_channel_despite_ACSS_connection_error | post | `/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_SAP_virtual_instance_state_by_SID_from_ACSS_via_Azure_Resource_Graph | POST | `https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01` | — |
-
+<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Run_SAPConnectorHealth_check</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_SAP_SOC_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azurevm"><a href="../logic-apps/managed-azurevm.html"><code>azurevm</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Restart_Sentinel_Collector_virtual_machine</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/subscriptions/@{encodeURIComponent(parameters('SentinelCollectorSubscriptionId'))}/resourcegroups/@{encodeURIComponent(parameters('SentinelCollectorResourceGroup'))}/providers/Microsoft.Compute/virtualMachines/@{encodeURIComponent(parameters('SentinelCollectorVMName'))}/restart</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="teams"><a href="../logic-apps/managed-teams.html"><code>teams</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Reply_with_processed_message_in_a_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reply_with_restart_error_message_in_a_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reply_with_restart_success_message_in_a_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Post_adaptive_card_for_unlikely_attack_in_a_chat_or_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Post_REST_API_error_message_in_a_chat_or_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Post_card_in_a_chat_or_channel_despite_ACSS_connection_error</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/adaptivecard/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_SAP_virtual_instance_state_by_SID_from_ACSS_via_Azure_Resource_Graph</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -142,30 +237,30 @@
 <table>
 <thead>
 <tr>
-<th>Step</th>
-<th>🪂</th>
+  <th>Step</th>
+  <th>🪂</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Logic Apps Infrastructure</td>
-<td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FSAPCollectorRemediate-STD%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></td>
+  <td>Logic Apps Infrastructure</td>
+  <td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FSAPCollectorRemediate-STD%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></td>
 </tr>
 <tr>
-<td>Logic Apps Connections</td>
-<td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FSAPCollectorRemediate-STD%2Fazureconnectordeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></td>
+  <td>Logic Apps Connections</td>
+  <td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FSAPCollectorRemediate-STD%2Fazureconnectordeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></td>
 </tr>
 <tr>
-<td>Logic Apps Standard Connections configuration</td>
-<td>🔗<a href="connections.json">link</a></td>
+  <td>Logic Apps Standard Connections configuration</td>
+  <td>🔗<a href="connections.json">link</a></td>
 </tr>
 <tr>
-<td>Logic Apps Standard workflow</td>
-<td>🔗<a href="workflow.json">link</a></td>
+  <td>Logic Apps Standard workflow</td>
+  <td>🔗<a href="workflow.json">link</a></td>
 </tr>
 <tr>
-<td>Logic Apps Standard workflow parameters</td>
-<td>🔗<a href="workflowparameters.json">link</a></td>
+  <td>Logic Apps Standard workflow parameters</td>
+  <td>🔗<a href="workflowparameters.json">link</a></td>
 </tr>
 </tbody>
 </table>
@@ -173,26 +268,26 @@
 <table>
 <thead>
 <tr>
-<th>Role Name</th>
-<th>Resource Type Scope</th>
-<th>Purpose</th>
+  <th>Role Name</th>
+  <th>Resource Type Scope</th>
+  <th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#microsoft-sentinel-responder">Microsoft Sentinel Responder</a></td>
-<td>At least resource group where Sentinel lives</td>
-<td>Required for Incident state update</td>
+  <td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#microsoft-sentinel-responder">Microsoft Sentinel Responder</a></td>
+  <td>At least resource group where Sentinel lives</td>
+  <td>Required for Incident state update</td>
 </tr>
 <tr>
-<td><a href="https://learn.microsoft.com/azure/sap/center-sap-solutions/manage-with-azure-rbac">Azure Center for SAP solutions reader</a></td>
-<td>Subscription level</td>
-<td>Required for Azure resource graph SAP Virtual Instance discovery by Sentinel known SAP SID</td>
+  <td><a href="https://learn.microsoft.com/azure/sap/center-sap-solutions/manage-with-azure-rbac">Azure Center for SAP solutions reader</a></td>
+  <td>Subscription level</td>
+  <td>Required for Azure resource graph SAP Virtual Instance discovery by Sentinel known SAP SID</td>
 </tr>
 <tr>
-<td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor">Virtual Machine Contributor</a></td>
-<td>At least resource group/virtual machine where Sentinel Collector runs</td>
-<td>Required for remediation option to restart the collector VM</td>
+  <td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#virtual-machine-contributor">Virtual Machine Contributor</a></td>
+  <td>At least resource group/virtual machine where Sentinel Collector runs</td>
+  <td>Required for remediation option to restart the collector VM</td>
 </tr>
 </tbody>
 </table>
@@ -200,7 +295,7 @@
 <h2 id="additional-integration-options-with-azure-resource-graph-query-for-acss">Additional integration options with Azure Resource Graph query for ACSS</h2>
 <p><a href="https://portal.azure.com/?#view/HubsExtension/ArgQueryBlade">Azure Resource Graph Explorer🔗</a></p>
 <p>This playbook uses below query (dynmic SID param coming from Sentinel). Get inspired from it to expand to your own scenarios.</p>
-<p>Find the REST API docs for the resource graph <a href="https://learn.microsoft.com/rest/api/azureresourcegraph/resourcegraph(2021-03-01)/resources/resources?tabs=HTTP">here</a>.</p>
+<p>Find the REST API docs for the resource graph <a href="https://learn.microsoft.com/rest/api/azureresourcegraph/resourcegraph(2021-03-01">here</a>/resources/resources?tabs=HTTP).</p>
 <p><code>POST https://management.azure.com/providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01</code></p>
 <p>BODY</p>
 <pre><code class="language-sql">// Global SAP ACSS details by SID
@@ -214,6 +309,7 @@ resources
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sap.html">Back to SAP</a></p>
+
 </div>
 
 </body>

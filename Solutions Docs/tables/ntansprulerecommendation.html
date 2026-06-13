@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Network</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Network</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntansprulerecommendation">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntansprulerecommendation">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,131 +53,131 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalProperties</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Property bag for any additional properties.</td>
+  <td style="text-align:left">AdditionalProperties</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Property bag for any additional properties.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationFqdns</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Comma-separated destination fully qualified domain names for outbound traffic for a given NSP.</td>
+  <td style="text-align:left">DestinationFqdns</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comma-separated destination fully qualified domain names for outbound traffic for a given NSP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EndTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The rule evaluation window end time.</td>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The rule evaluation window end time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IpDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Whois information of the IP in case of external traffic.</td>
+  <td style="text-align:left">IpDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whois information of the IP in case of external traffic.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Location</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">For external public IPs and malicious IPs: two-letter country code (ISO 3166-1 alpha-2) where the IP is located.</td>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">For external public IPs and malicious IPs: two-letter country code (ISO 3166-1 alpha-2) where the IP is located.</td>
 </tr>
 <tr>
-<td style="text-align: left;">NspProfile</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">NSP Profile.</td>
+  <td style="text-align:left">NspProfile</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">NSP Profile.</td>
 </tr>
 <tr>
-<td style="text-align: left;">NspResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">NSP resource ID.</td>
+  <td style="text-align:left">NspResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">NSP resource ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PaasResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource ID of the PaaS resource.</td>
+  <td style="text-align:left">PaasResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource ID of the PaaS resource.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultAction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates if the flow is allowed or denied. Possible values are Allowed, Denied.</td>
+  <td style="text-align:left">ResultAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates if the flow is allowed or denied. Possible values are Allowed, Denied.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultDirection</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Direction of the flow. Possible values are Inbound, Outbound.</td>
+  <td style="text-align:left">ResultDirection</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Direction of the flow. Possible values are Inbound, Outbound.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates if the flow is acled by NSP or Resource.</td>
+  <td style="text-align:left">ResultType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates if the flow is acled by NSP or Resource.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of the rule. Possible values are IP, ServiceTag, Subscription, FQDN.</td>
+  <td style="text-align:left">RuleType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the rule. Possible values are IP, ServiceTag, Subscription, FQDN.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleValue</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Value for the rule.</td>
+  <td style="text-align:left">RuleValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Value for the rule.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceEndpoints</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Comma-separated service endpoints. Service Endpoint traffic found.</td>
+  <td style="text-align:left">ServiceEndpoints</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comma-separated service endpoints. Service Endpoint traffic found.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceIPs</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Comma-separated public source IPs in CIDR format for inbound flows.</td>
+  <td style="text-align:left">SourceIPs</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comma-separated public source IPs in CIDR format for inbound flows.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">StartTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The rule evaluation windowstart time.</td>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The rule evaluation windowstart time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Event generation timestamp.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Event generation timestamp.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficAnalyticsResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Traffic analytics resource ID.</td>
+  <td style="text-align:left">TrafficAnalyticsResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Traffic analytics resource ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates whether the traffic is internal or external.</td>
+  <td style="text-align:left">TrafficType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether the traffic is internal or external.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -185,6 +185,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

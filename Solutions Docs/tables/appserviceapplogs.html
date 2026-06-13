@@ -25,157 +25,180 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Low value</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Low value</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceapplogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceapplogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#content-items-using-this-table">Content Items</a></li>
+<li><a href="#resource-types">Resource Types</a></li>
+</ul>
 <h2 id="schema">Schema (22 columns)</h2>
 <p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceapplogs">Azure Monitor documentation</a></p>
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Log category name</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Log category name</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContainerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application container id</td>
+  <td style="text-align:left">ContainerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application container id</td>
 </tr>
 <tr>
-<td style="text-align: left;">CustomLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Verbosity level of log</td>
+  <td style="text-align:left">CustomLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Verbosity level of log</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExceptionClass</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application class from where log message is emitted</td>
+  <td style="text-align:left">ExceptionClass</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application class from where log message is emitted</td>
 </tr>
 <tr>
-<td style="text-align: left;">Host</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Host where the application is running</td>
+  <td style="text-align:left">Host</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Host where the application is running</td>
 </tr>
 <tr>
-<td style="text-align: left;">Level</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Verbosity level of log mapped to standard levels (Informational, Warning, Error, or Critical)</td>
+  <td style="text-align:left">Level</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Verbosity level of log mapped to standard levels (Informational, Warning, Error, or Critical)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Logger</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application logger used to emit log message</td>
+  <td style="text-align:left">Logger</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application logger used to emit log message</td>
 </tr>
 <tr>
-<td style="text-align: left;">Message</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Log message</td>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Log message</td>
 </tr>
 <tr>
-<td style="text-align: left;">Method</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application Method from where log message is emitted</td>
+  <td style="text-align:left">Method</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application Method from where log message is emitted</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the operation represented by this event.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the operation represented by this event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Log message description</td>
+  <td style="text-align:left">ResultDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Log message description</td>
 </tr>
 <tr>
-<td style="text-align: left;">Source</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application source from where log message is emitted</td>
+  <td style="text-align:left">Source</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application source from where log message is emitted</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">Stacktrace</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Complete stack trace of the log message in case of exception</td>
+  <td style="text-align:left">Stacktrace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Complete stack trace of the log message in case of exception</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time when event is generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time when event is generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">WebSiteInstanceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Instance Id the application running</td>
+  <td style="text-align:left">WebSiteInstanceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Instance Id the application running</td>
 </tr>
 </tbody>
 </table>
 <hr />
+<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <h2 id="resource-types">Resource Types</h2>
 <p>This table collects data from the following Azure resource types:</p>
 <ul>
@@ -184,6 +207,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -25,38 +25,38 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Security, XDR</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Security, XDR</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/cloudappevents">View Documentation</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table">View Documentation</a></td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-cloudappevents-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -72,224 +72,225 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountDisplayName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.</td>
+  <td style="text-align:left">AccountDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers</td>
+  <td style="text-align:left">AccountId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the account in Azure AD</td>
+  <td style="text-align:left">AccountObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the account in Azure AD</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of user account, indicating its general role and access levels, such as Regular, System, Admin, Application</td>
+  <td style="text-align:left">AccountType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of user account, indicating its general role and access levels, such as Regular, System, Admin, Application</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of activity that triggered the event</td>
+  <td style="text-align:left">ActionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of activity that triggered the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActivityObjects</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">List of objects, such as files or folders, that were involved in the recorded activity</td>
+  <td style="text-align:left">ActivityObjects</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of objects, such as files or folders, that were involved in the recorded activity</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActivityType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of activity that triggered the event</td>
+  <td style="text-align:left">ActivityType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of activity that triggered the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalFields</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional information about the entity or event</td>
+  <td style="text-align:left">AdditionalFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional information about the entity or event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppInstanceId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Unique identifier for the instance of an application</td>
+  <td style="text-align:left">AppInstanceId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Unique identifier for the instance of an application</td>
 </tr>
 <tr>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application that performed the recorded action</td>
+  <td style="text-align:left">Application</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application that performed the recorded action</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApplicationId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Unique identifier for the application</td>
+  <td style="text-align:left">ApplicationId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Unique identifier for the application</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditSource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Cloud enviorment source of the cloud audit event. Cloud be Azure, AWS, GCP, AliCloud or other</td>
+  <td style="text-align:left">AuditSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Cloud enviorment source of the cloud audit event. Cloud be Azure, AWS, GCP, AliCloud or other</td>
 </tr>
 <tr>
-<td style="text-align: left;">City</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">City where the client IP address is geolocated</td>
+  <td style="text-align:left">City</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">City where the client IP address is geolocated</td>
 </tr>
 <tr>
-<td style="text-align: left;">CountryCode</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Two-letter code indicating the country where the client IP address is geolocated</td>
+  <td style="text-align:left">CountryCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Two-letter code indicating the country where the client IP address is geolocated</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer</td>
+  <td style="text-align:left">DeviceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer</td>
 </tr>
 <tr>
-<td style="text-align: left;">IPAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address assigned to the device during communication</td>
+  <td style="text-align:left">IPAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address assigned to the device during communication</td>
 </tr>
 <tr>
-<td style="text-align: left;">IPCategory</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Additional information about the IP address</td>
+  <td style="text-align:left">IPCategory</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Additional information about the IP address</td>
 </tr>
 <tr>
-<td style="text-align: left;">IPTags</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Customer-defined information applied to specific IP addresses and IP address ranges</td>
+  <td style="text-align:left">IPTags</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Customer-defined information applied to specific IP addresses and IP address ranges</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsAdminOperation</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the activity was performed by an administrator</td>
+  <td style="text-align:left">IsAdminOperation</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the activity was performed by an administrator</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsAnonymousProxy</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the IP address belongs to a known anonymous proxy</td>
+  <td style="text-align:left">IsAnonymousProxy</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the IP address belongs to a known anonymous proxy</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsExternalUser</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether a user inside the network doesn't belong to the organization's domain</td>
+  <td style="text-align:left">IsExternalUser</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether a user inside the network doesn't belong to the organization's domain</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsImpersonated</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Indicates whether the activity was performed by one user for another (impersonated) user</td>
+  <td style="text-align:left">IsImpersonated</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the activity was performed by one user for another (impersonated) user</td>
 </tr>
 <tr>
-<td style="text-align: left;">ISP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Internet service provider associated with the IP address</td>
+  <td style="text-align:left">ISP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Internet service provider associated with the IP address</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastSeenForUser</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Number of days since each statistical feature for the user was last seen</td>
+  <td style="text-align:left">LastSeenForUser</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Number of days since each statistical feature for the user was last seen</td>
 </tr>
 <tr>
-<td style="text-align: left;">OAuthAppId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier that's assigned to an application when it's registered to Entra with OAuth 2.0.</td>
+  <td style="text-align:left">OAuthAppId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier that's assigned to an application when it's registered to Entra with OAuth 2.0.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of the object that the recorded action was applied to</td>
+  <td style="text-align:left">ObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the object that the recorded action was applied to</td>
 </tr>
 <tr>
-<td style="text-align: left;">ObjectName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the object that the recorded action was applied to</td>
+  <td style="text-align:left">ObjectName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the object that the recorded action was applied to</td>
 </tr>
 <tr>
-<td style="text-align: left;">ObjectType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of object, such as a file or a folder, that the recorded action was applied to</td>
+  <td style="text-align:left">ObjectType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of object, such as a file or a folder, that the recorded action was applied to</td>
 </tr>
 <tr>
-<td style="text-align: left;">OSPlatform</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7</td>
+  <td style="text-align:left">OSPlatform</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7</td>
 </tr>
 <tr>
-<td style="text-align: left;">RawEventData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Raw event information from the source application or service in JSON format</td>
+  <td style="text-align:left">RawEventData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Raw event information from the source application or service in JSON format</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReportId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the event</td>
+  <td style="text-align:left">ReportId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the event</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Session identifiers (if provided by the audit source)</td>
+  <td style="text-align:left">SessionData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Session identifiers (if provided by the audit source)</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time (UTC) when the record was generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time (UTC) when the record was generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UncommonForUser</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">List of features observed to be statistically uncommon for the user that performed the activity</td>
+  <td style="text-align:left">UncommonForUser</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of features observed to be statistically uncommon for the user that performed the activity</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User agent information from the web browser or other client application</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User agent information from the web browser or other client application</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgentTags</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">More information provided by Microsoft Defender for Cloud Apps in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot</td>
+  <td style="text-align:left">UserAgentTags</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">More information provided by Microsoft Defender for Cloud Apps in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot</td>
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (4)</h2>
+<h2 id="solutions">Solutions (5)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a></li>
 <li><a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
 </ul>
@@ -298,32 +299,32 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/microsoftthreatprotection.html">Microsoft Defender XDR</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (81)</h2>
-<h3 id="analytic-rules">Analytic Rules (9)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (182)</h2>
+<h3 id="analytic-rules">Analytic Rules (10)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-e5f8e196-3544-4a8b-96a9-17c1b6a49710-7af46276.html">Unusual Volume of file deletion by users</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-e5f8e196-3544-4a8b-96a9-17c1b6a49710-7af46276.html">Unusual Volume of file deletion by users</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -331,26 +332,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-preview-ti-map-domain-entity-to-cloud-app-events-b97e118c-b7fa-42a6-84de-2e13443fbb8f-9a4d26f1.html">Preview - TI map Domain entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-preview-ti-map-domain-entity-to-cloud-app-events-b97e118c-b7fa-42a6-84de-2e13443fbb8f-9a4d26f1.html">Preview - TI map Domain entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-preview-ti-map-email-entity-to-cloud-app-events-47b9bb10-d216-4359-8cef-08ca2c67e5be-e757d151.html">Preview - TI map Email entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-preview-ti-map-email-entity-to-cloud-app-events-47b9bb10-d216-4359-8cef-08ca2c67e5be-e757d151.html">Preview - TI map Email entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-preview-ti-map-ip-entity-to-cloud-app-events-4e0a6fc8-697e-4455-be47-831b41ea91ac-e0fcbf3b.html">Preview - TI map IP entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-preview-ti-map-ip-entity-to-cloud-app-events-4e0a6fc8-697e-4455-be47-831b41ea91ac-e0fcbf3b.html">Preview - TI map IP entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-preview-ti-map-url-entity-to-cloud-app-events-e8ae92dd-1d41-4530-8be8-85c5014c7b47-7067e6da.html">Preview - TI map URL entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-preview-ti-map-url-entity-to-cloud-app-events-e8ae92dd-1d41-4530-8be8-85c5014c7b47-7067e6da.html">Preview - TI map URL entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -358,210 +359,225 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-domain-entity-to-cloud-app-events-a7d2b1e4-dd9c-40fd-9651-1a136eb8f0df-ec106ba0.html">TI map Domain entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-domain-entity-to-cloud-app-events-a7d2b1e4-dd9c-40fd-9651-1a136eb8f0df-ec106ba0.html">TI map Domain entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-cloud-app-events-0385e99c-ae45-45f4-aecf-00104485cd6b-19029041.html">TI map Email entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-email-entity-to-cloud-app-events-0385e99c-ae45-45f4-aecf-00104485cd6b-19029041.html">TI map Email entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-f78512ba.html">TI map IP entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-ip-entity-to-cloud-app-events-16a45aee-5e39-4d1b-b508-40f847c99353-f78512ba.html">TI map IP entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.html">TI map URL entity to Cloud App Events</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.html">TI map URL entity to Cloud App Events</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="hunting-queries">Hunting Queries (70)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-mass-download-&amp;-copy-to-usb-device-by-single-user-6267ce44-1e9d-471b-9f1e-ae76a6b7aa84-8c8cd6f4.html">Mass Download &amp; copy to USB device by single user</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (166)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-air-investigation-actions-insight-77104824-b41e-412d-8e50-26971fe97ab0-128f9b33.html">AIR investigation actions insight</a></td>
-<td style="text-align: left;"><code>ActionType == "AirInvestigationData"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-air-investigation-actions-insight-77104824-b41e-412d-8e50-26971fe97ab0-128f9b33.html">AIR investigation actions insight</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AirInvestigationData&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submission-trend-fn-c51b0367-573a-42c3-a4a2-2d8b1ef6bea9-9d96e671.html">Admin Submission Trend (FN)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code><br><code>ActionType contains "Submission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submission-trend-fn-c51b0367-573a-42c3-a4a2-2d8b1ef6bea9-9d96e671.html">Admin Submission Trend (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submission-trend-fp-e3a11181-3ff9-4ba0-908d-3e229b476ce3-73bd2293.html">Admin Submission Trend (FP)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code><br><code>ActionType contains "Submission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submission-trend-fp-e3a11181-3ff9-4ba0-908d-3e229b476ce3-73bd2293.html">Admin Submission Trend (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-detection-type-8f82894a-1b18-4d1e-a580-1dcaff739a32-822ef034.html">Admin Submissions by Detection Type</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-detection-type-8f82894a-1b18-4d1e-a580-1dcaff739a32-822ef034.html">Admin Submissions by Detection Type</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-detectionmethod-phish-fp-515a98db-49a5-4592-80b7-8227998da9ed-c6d9e1ae.html">Admin Submissions by DetectionMethod (Phish FP)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-detectionmethod-phish-fp-515a98db-49a5-4592-80b7-8227998da9ed-c6d9e1ae.html">Admin Submissions by DetectionMethod (Phish FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-detectionmethod-spam-fp-5cb9399f-e4d7-46c1-bdfa-d66eec278bf2-63e16950.html">Admin Submissions by DetectionMethod (Spam FP)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-detectionmethod-spam-fp-5cb9399f-e4d7-46c1-bdfa-d66eec278bf2-63e16950.html">Admin Submissions by DetectionMethod (Spam FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-grading-verdict-fn-fp-8425234b-f09d-490e-be3d-a7ecf081c5d0-817c2b20.html">Admin Submissions by Grading verdict (FN-FP)</a></td>
-<td style="text-align: left;"><code>ActionType contains "AdminSubmissionTriage"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-grading-verdict-fn-fp-8425234b-f09d-490e-be3d-a7ecf081c5d0-817c2b20.html">Admin Submissions by Grading verdict (FN-FP)</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-state-fn-60cddbbb-2244-4a61-ad73-b20b1c6f5027-c4812a5b.html">Admin Submissions by Submission State (FN)</a></td>
-<td style="text-align: left;"><code>ActionType contains "AdminSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-state-fn-60cddbbb-2244-4a61-ad73-b20b1c6f5027-c4812a5b.html">Admin Submissions by Submission State (FN)</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-state-fp-354d78b3-91b7-4219-9079-57e63e281077-741b14a3.html">Admin Submissions by Submission State (FP)</a></td>
-<td style="text-align: left;"><code>ActionType contains "AdminSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-state-fp-354d78b3-91b7-4219-9079-57e63e281077-741b14a3.html">Admin Submissions by Submission State (FP)</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-type-fn-a7f2dae2-2e33-4744-b013-37dc5628d939-377d80db.html">Admin Submissions by Submission Type (FN)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code><br><code>ActionType contains "Submission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-type-fn-a7f2dae2-2e33-4744-b013-37dc5628d939-377d80db.html">Admin Submissions by Submission Type (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-type-fp-de074419-2ec5-4c7f-a7f6-0a49178b314c-c5fac397.html">Admin Submissions by Submission Type (FP)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code><br><code>ActionType contains "Submission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-admin-submissions-by-submission-type-fp-de074419-2ec5-4c7f-a7f6-0a49178b314c-c5fac397.html">Admin Submissions by Submission Type (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-bec-file-sharing-tactics-dropbox-85dea577-1c76-44ff-8cad-b47182874ddb-d6e15c9c.html">BEC - File sharing tactics - Dropbox</a></td>
-<td style="text-align: left;"><code>ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox</code><br><code>added them to shared file/folder"</code><br><code>Application == "Dropbox"</code><br><code>ObjectType == "File"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-bec-file-sharing-tactics-dropbox-85dea577-1c76-44ff-8cad-b47182874ddb-d6e15c9c.html">BEC - File sharing tactics - Dropbox</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Added users and/or groups to shared file/folder,Invited user to Dropbox</code><br><code>added them to shared file/folder&quot;</code><br><code>Application == &quot;Dropbox&quot;</code><br><code>ObjectType == &quot;File&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-bec-file-sharing-tactics-onedrive-or-sharepoint-da745698-da8a-40c5-b527-2e9328c2cefe-dcd744e3.html">BEC - File sharing tactics - OneDrive or SharePoint</a></td>
-<td style="text-align: left;"><code>ActionType in "AddedToSecureLink,SecureLinkCreated"</code><br><code>Application in "Microsoft OneDrive for Business,Microsoft SharePoint Online"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-bec-file-sharing-tactics-onedrive-or-sharepoint-da745698-da8a-40c5-b527-2e9328c2cefe-dcd744e3.html">BEC - File sharing tactics - OneDrive or SharePoint</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AddedToSecureLink,SecureLinkCreated&quot;</code><br><code>Application in &quot;Microsoft OneDrive for Business,Microsoft SharePoint Online&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.html">Calculate overall MDO efficacy</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-calculate-overall-mdo-efficacy-ff56a21d-fc95-4c11-8f9d-cc59c48cd4e6-2e8ef8fb.html">Calculate overall MDO efficacy</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.html">File Malware Detection Trend</a></td>
-<td style="text-align: left;"><code>ActionType == "FileMalwareDetected"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-detection-trend-817043be-4b30-4e66-a742-8f601a78b08f-46ed5e59.html">File Malware Detection Trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.html">File Malware by Top Malware Families (Anti Virus)</a></td>
-<td style="text-align: left;"><code>ActionType == "FileMalwareDetected"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-by-top-malware-families-anti-virus-a924de5a-89ce-43c7-8adc-b130e5f1924c-678bcc36.html">File Malware by Top Malware Families (Anti Virus)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-file-malware-by-top-malware-families-safe-attachments-2de2de5d-87a3-4e13-9b97-5f42e44d0954-11fa443b.html">File Malware by Top Malware Families (Safe Attachments)</a></td>
-<td style="text-align: left;"><code>ActionType == "FileMalwareDetected"</code><br><code>UserAgent == "MS Scanner ATP"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-file-malware-by-top-malware-families-safe-attachments-2de2de5d-87a3-4e13-9b97-5f42e44d0954-11fa443b.html">File Malware by Top Malware Families (Safe Attachments)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.html">MDO Threat Protection Detections trend over time</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-mdo-threat-protection-detections-trend-over-time-eb0e4edb-f423-49f8-a02a-4ededdd30dd5-227c1309.html">MDO Threat Protection Detections trend over time</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-malware-detections-by-workload-locations-ef29d6b6-9192-46aa-b16a-082c2da2f78f-1fe5ecb9.html">Malware detections by Workload Locations</a></td>
-<td style="text-align: left;"><code>ActionType == "FileMalwareDetected"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-workload-locations-ef29d6b6-9192-46aa-b16a-082c2da2f78f-1fe5ecb9.html">Malware detections by Workload Locations</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-malware-detections-by-workload-type-af541ae2-9bb4-4737-a8ea-4fa261bc3866-14585ca9.html">Malware detections by Workload Type</a></td>
-<td style="text-align: left;"><code>ActionType == "FileMalwareDetected"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-malware-detections-by-workload-type-af541ae2-9bb4-4737-a8ea-4fa261bc3866-14585ca9.html">Malware detections by Workload Type</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-admin-submission-of-malware-and-phish-daily-trend-fc47e222-c348-43ca-ba11-b4628fe243cd-821a40de.html">Teams Admin submission of Malware and Phish daily trend</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-admin-submission-of-malware-and-phish-daily-trend-fc47e222-c348-43ca-ba11-b4628fe243cd-821a40de.html">Teams Admin submission of Malware and Phish daily trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-admin-submission-of-no-threats-daily-trend-b2a6440b-6ebd-4d86-aa33-cfe11f9defcf-321ed5ca.html">Teams Admin submission of No Threats daily trend</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-admin-submission-of-no-threats-daily-trend-b2a6440b-6ebd-4d86-aa33-cfe11f9defcf-321ed5ca.html">Teams Admin submission of No Threats daily trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-admin-user-submissions-grading-verdicts-20c9d89a-ad65-48f4-ba14-605715af640a-11968695.html">Teams Admin-User Submissions Grading Verdicts</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionTriage,UserSubmissionTriage"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-admin-user-submissions-grading-verdicts-20c9d89a-ad65-48f4-ba14-605715af640a-11968695.html">Teams Admin-User Submissions Grading Verdicts</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionTriage,UserSubmissionTriage&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-detection-overrides-admin-email-submissions-fn-72f939fe-c77b-4c25-91b4-3f784c9c58c3-3cb89584.html">Top 10 Detection Overrides - Admin Email Submissions (FN)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-detection-overrides-admin-email-submissions-fn-72f939fe-c77b-4c25-91b4-3f784c9c58c3-3cb89584.html">Top 10 Detection Overrides - Admin Email Submissions (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fn-da7eecca-ecb8-4b8e-a111-62d2b48e2e69-9ba81930.html">Top 10 sender domains - Admin email submissions (FN)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fn-da7eecca-ecb8-4b8e-a111-62d2b48e2e69-9ba81930.html">Top 10 sender domains - Admin email submissions (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fp-4c786e9a-b570-47bc-877f-7f3da87a4673-70144cae.html">Top 10 sender domains - Admin email submissions (FP)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-email-submissions-fp-4c786e9a-b570-47bc-877f-7f3da87a4673-70144cae.html">Top 10 sender domains - Admin email submissions (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-accounts-performing-admin-submissions-fn-d236f728-8b0f-4b4f-acf7-e4707993b841-6d85f0eb.html">Top accounts performing admin submissions (FN)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-admin-submissions-fn-d236f728-8b0f-4b4f-acf7-e4707993b841-6d85f0eb.html">Top accounts performing admin submissions (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-accounts-performing-admin-submissions-fp-8b0bae20-687f-47ca-bc2e-8dabbed9cbae-ce0b898d.html">Top accounts performing admin submissions (FP)</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-admin-submissions-fp-8b0bae20-687f-47ca-bc2e-8dabbed9cbae-ce0b898d.html">Top accounts performing admin submissions (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-47506508-dee4-4d4d-93a8-1c78d63cd2eb-ed374abf.html">Top accounts performing user submissions</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-user-submissions-47506508-dee4-4d4d-93a8-1c78d63cd2eb-ed374abf.html">Top accounts performing user submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-total-submissions-by-submission-type-53c58a33-668d-46e1-9714-5892c87650d9-17869076.html">Total Submissions by Submission Type</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-total-submissions-by-submission-type-53c58a33-668d-46e1-9714-5892c87650d9-17869076.html">Total Submissions by Submission Type</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-total-submissions-by-submission-type-8cde246b-7ed1-429c-933a-f7d0363dbbc0-38a58290.html">Total Submissions by Submission Type</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-total-submissions-by-submission-type-8cde246b-7ed1-429c-933a-f7d0363dbbc0-38a58290.html">Total Submissions by Submission Type</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.html">Total number of detections by MDO</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-total-number-of-detections-by-mdo-0717b136-a1ef-4af0-a911-e189d0064099-8ced6caf.html">Total number of detections by MDO</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.html">Unusual Volume of file deletion by users</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.html">Unusual Volume of file deletion by users</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.html">User Email Submission Trend (FN)</a></td>
-<td style="text-align: left;"><code>ActionType in "AttackSimUserSubmission,UserSubmission"</code><br><code>ActionType contains "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submission-trend-fn-9c4359a1-0bf9-45b3-9a1a-f333c437a061-6ae2a9dd.html">User Email Submission Trend (FN)</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AttackSimUserSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-admins-58acf93f-27de-4af4-8a5f-d87ee59326f9-fef2e72b.html">User Email Submissions (FN) - Top Detection Overrides by Admins</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-admins-58acf93f-27de-4af4-8a5f-d87ee59326f9-fef2e72b.html">User Email Submissions (FN) - Top Detection Overrides by Admins</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-users-0a9385bc-2ef9-4b0e-8834-12f796b08ca8-531a183e.html">User Email Submissions (FN) - Top Detection Overrides by Users</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-detection-overrides-by-users-0a9385bc-2ef9-4b0e-8834-12f796b08ca8-531a183e.html">User Email Submissions (FN) - Top Detection Overrides by Users</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-intra-org-p2-senders-b78eddd9-ebe5-42ab-95b4-928a782b52b5-886ff278.html">User Email Submissions (FN) - Top Intra-Org P2 Senders</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-intra-org-p2-senders-b78eddd9-ebe5-42ab-95b4-928a782b52b5-886ff278.html">User Email Submissions (FN) - Top Intra-Org P2 Senders</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-intra-org-subjects-cbf3abc0-2b2d-4852-ab7a-9f7a1231997e-735b38b9.html">User Email Submissions (FN) - Top Intra-Org Subjects</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-top-intra-org-subjects-cbf3abc0-2b2d-4852-ab7a-9f7a1231997e-735b38b9.html">User Email Submissions (FN) - Top Intra-Org Subjects</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-by-submission-type-289283e9-9f63-488c-8d62-fe9c598f3cd5-fe9e0c5a.html">User Email Submissions (FN) by Submission Type</a></td>
-<td style="text-align: left;"><code>ActionType in "AttackSimUserSubmission,UserSubmission"</code><br><code>ActionType contains "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-by-submission-type-289283e9-9f63-488c-8d62-fe9c598f3cd5-fe9e0c5a.html">User Email Submissions (FN) by Submission Type</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AttackSimUserSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-fp-by-grading-verdict-abdca3e6-c198-404a-b95c-f09ddfed2027-d1a3df7e.html">User Email Submissions (FN-FP) by Grading verdict</a></td>
-<td style="text-align: left;"><code>ActionType contains "UserSubmissionTriage"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-fp-by-grading-verdict-abdca3e6-c198-404a-b95c-f09ddfed2027-d1a3df7e.html">User Email Submissions (FN-FP) by Grading verdict</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;UserSubmissionTriage&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-accuracy-vs-admin-review-verdict-d78bad8c-3d94-4a73-bdbe-1c567e3d6d62-56fcb8ae.html">User Email Submissions accuracy vs Admin review verdict</a></td>
-<td style="text-align: left;"><code>ActionType in "SubmissionNotification,UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-accuracy-vs-admin-review-verdict-d78bad8c-3d94-4a73-bdbe-1c567e3d6d62-56fcb8ae.html">User Email Submissions accuracy vs Admin review verdict</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-by-admin-review-status-mark-and-notify-201cb524-b4b4-479a-9637-da35cfa1e30a-695a9a27.html">User Email Submissions by Admin review status (Mark and Notify)</a></td>
-<td style="text-align: left;"><code>ActionType in "SubmissionNotification,UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-by-admin-review-status-mark-and-notify-201cb524-b4b4-479a-9637-da35cfa1e30a-695a9a27.html">User Email Submissions by Admin review status (Mark and Notify)</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-from-junk-folder-300b0d05-e99e-4349-ab2b-ec12ff5c2da1-b559b01f.html">User email submissions (FN) from Junk Folder</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-email-submissions-fn-from-junk-folder-300b0d05-e99e-4349-ab2b-ec12ff5c2da1-b559b01f.html">User email submissions (FN) from Junk Folder</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -569,387 +585,902 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-atp-policy-status-check-518e6938-10ef-4165-af19-82f1287141bc-99dce879.html">ATP policy status check</a></td>
-<td style="text-align: left;"><code>ActionType == "Set-AtpPolicyForO365"</code><br><code>Application == "Microsoft Exchange Online"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-adfsdomaintrustmods%5Bnobelium%5D-8b55db72-9ece-4e93-b551-cd7eb7355104-b7fc6a3c.html">ADFSDomainTrustMods[Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Set domain authentication.,Set federation settings on domain.&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-334fb71d.html">Audit Email Preview-Download action</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-air-investigation-actions-insight-28a1ce89-ee88-47b3-872b-fb5c3c8b350c-95763a95.html">AIR investigation actions insight</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AirInvestigationData&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.html">Email containing malware accessed on a unmanaged device</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-atp-policy-status-check-518e6938-10ef-4165-af19-82f1287141bc-99dce879.html">ATP policy status check</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Set-AtpPolicyForO365&quot;</code><br><code>Application == &quot;Microsoft Exchange Online&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.html">Group quarantine release</a></td>
-<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-atp-policy-status-check-518e6938-10ef-4165-af19-82f1287141bc-7b521f21.html">ATP policy status check</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Set-AtpPolicyForO365&quot;</code><br><code>Application == &quot;Microsoft Exchange Online&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.html">High Confidence Phish Released</a></td>
-<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-add-uncommon-credential-type-to-application-%5Bnobelium%5D-63a191f4-a0ad-4ed7-b994-24ffc89b3596-aff5bb4b.html">Add uncommon credential type to application [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Update application - Certificates</code><br><code>secrets management&quot;</code><br><code>Application == &quot;Office 365&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.html">Hunt for Admin email access</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminMailAccess"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-addedcredentialfromcontryxandsigninfromcountryy-9644e2ae-07a2-4086-a85a-6ee2bca45f4e-5872c09f.html">AddedCredentialFromContryXAndSigninFromCountryY</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Update application - Certificates</code><br><code>secrets management&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.html">Hunt for TABL changes</a></td>
-<td style="text-align: left;"><code>ActionType contains "TenantAllowBlockListItems"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submission-trend-fn-4ec96a3b-94b0-4662-8ee6-b95102e20430-2f8535a0.html">Admin Submission Trend (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.html">Hunt for alerts correlated with Teams messages</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submission-trend-fp-8220d7f5-47e8-4040-b701-16bade7fa218-045118f0.html">Admin Submission Trend (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.html">Identify acting user for reported phish</a></td>
-<td style="text-align: left;"><code>ActionType in "MoveToDeletedItems,MovedToDeletedItems"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-detection-type-4d525db4-ce23-49f7-844e-d06db21cdfa9-e882d947.html">Admin Submissions by Detection Type</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-inbox-rule-changes-which-forward-redirect-email-54569b06-47fc-41ae-9b00-f7d9b61337b6-8075b72d.html">Inbox rule changes which forward-redirect email</a></td>
-<td style="text-align: left;"><code>ActionType contains "Set-InboxRule"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-detectionmethod-phish-fp-665e50c0-f808-4cc3-a309-45bbbcc59bd0-99dadc9b.html">Admin Submissions by DetectionMethod (Phish FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.html">MDO daily detection summary report</a></td>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,UserSubmission"</code><br><code>ActionType contains "ZAP"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-detectionmethod-spam-fp-8f031737-b561-47ef-960b-66d307ac01b1-8c4b246c.html">Admin Submissions by DetectionMethod (Spam FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-mail-item-accessed-81ede5df-2ec3-40a5-9dff-1fe6a841079d-2af7c70a.html">Mail item accessed</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-grading-verdict-fn-fp-f7a36ec9-f708-420c-b248-7dfe6cc39d0a-02e0bd4b.html">Admin Submissions by Grading verdict (FN-FP)</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-new-tabl-items-92b76a34-502e-4a53-93ec-9fc37c3b358c-979994c7.html">New TABL Items</a></td>
-<td style="text-align: left;"><code>ActionType == "New-TenantAllowBlockListItems"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-submission-state-fn-eb1a6d00-aa08-4e27-9eb4-47f4ac37ccb4-f99242a5.html">Admin Submissions by Submission State (FN)</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-number-of-unique-accounts-performing-teams-message-admin-submissions-dc230eec-acc2-482f-8601-25125c8ff122-d6ba0e2a.html">Number of unique accounts performing Teams message Admin submissions</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-submission-state-fp-598e2ee8-8d1d-4ded-998e-52cc43cf1160-33fd0159.html">Admin Submissions by Submission State (FP)</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-number-of-unique-accounts-performing-teams-message-user-submissions-489ad959-48eb-4c34-bed6-764cfd39214d-5f3551da.html">Number of unique accounts performing Teams message User  submissions</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-submission-type-fn-71aeb41d-c85c-4569-bb08-6f1cd38bca49-1239acca.html">Admin Submissions by Submission Type (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.html">Quarantine Release Email Details</a></td>
-<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-admin-submissions-by-submission-type-fp-6f45e3cc-e810-43ce-a8df-289aaa2e0ca2-ed0be480.html">Admin Submissions by Submission Type (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1547d717.html">Quarantine release trend</a></td>
-<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-anomaly-of-mailitemaccess-by-graphapi-%5Bnobelium%5D-5cb88a85-f9d9-48eb-a23a-55960f0f8ad4-855d8001.html">Anomaly of MailItemAccess by GraphAPI [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-b0a8170e.html">Suspicious sign-in attempts from QR code phishing campaigns</a></td>
-<td style="text-align: left;"><code>ActionType == "MailItemsAccessed"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-anomaly-of-mailitemaccess-by-other-users-mailbox-%5Bnobelium%5D-6a927d9a-66c3-4491-815d-a31d4bbb2948-9d9a8a7a.html">Anomaly of MailItemAccess by Other Users Mailbox [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-teams-user-submissions-daily-trend-ace8e98a-660b-4fa9-a877-60644eb83344-25981de9.html">Teams User submissions daily trend</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-334fb71d.html">Audit Email Preview-Download action</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-teams-message-submissions-fn-132dffdf-3ee0-4748-8509-fbd3a92e5c9f-45ad68b4.html">Top 10 sender domains - Admin Teams message submissions FN</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-audit-email-preview-download-action-ba1a91ad-1f99-4386-b191-06a76ef213f8-137ebb20.html">Audit Email Preview-Download action</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-teams-user-submissions-fn-or-fp-bebb6652-3c52-4358-a946-ecd63cddf082-b18626f1.html">Top 10 sender domains - Teams user submissions FN or FP</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-bec-file-sharing-tactics-dropbox-6e056084-8951-460d-93f9-525880062de9-871269e7.html">BEC - File sharing tactics - Dropbox</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Added users and/or groups to shared file/folder,Invited user to Dropbox</code><br><code>added them to shared file/folder&quot;</code><br><code>Application == &quot;Dropbox&quot;</code><br><code>ObjectType == &quot;File&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-senders-teams-users-submissions-fn-or-fp-2d8448f5-c0a2-46d7-a004-e062970ccb7b-7b2596a2.html">Top 10 senders - Teams users submissions FN or FP</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-bec-file-sharing-tactics-onedrive-or-sharepoint-cf8d2c27-8310-4b13-b135-1ba59ae0a3a2-fbbd5245.html">BEC - File sharing tactics - OneDrive or SharePoint</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AddedToSecureLink,SecureLinkCreated&quot;</code><br><code>Application in &quot;Microsoft OneDrive for Business,Microsoft SharePoint Online&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-senders-of-admin-teams-message-submissions-fn-49071a21-fbb6-472f-932f-5b6ca1a25883-bcf9b4fd.html">Top 10 senders of  Admin Teams message submissions FN</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-calculate-overall-mdo-efficacy-f2206cb7-62ca-4596-9d3a-544b61963799-36a197b0.html">Calculate overall MDO efficacy</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-10-senders-of-admin-teams-message-submissions-fp-f82f3d63-b7f2-494d-8254-612405702dd4-4652dba3.html">Top 10 senders of  Admin Teams message submissions FP</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-changes-to-blocked-teams-domains-3fb50170-4048-473e-acc0-af9ae186f4a3-38df3c33.html">Changes to Blocked Teams Domains</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;TeamsAdminAction&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-accounts-performing-teams-admin-submissions-fn-or-fp-0a29c9f0-e8d4-4339-a196-52bb3a090a79-83e0c9bf.html">Top accounts performing Teams admin submissions FN or FP</a></td>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-changes-to-blocked-teams-domains-nrt-f3ceca1b-8190-4511-beac-06b3368b8360-f9fcf37d.html">Changes to Blocked Teams Domains (NRT)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;TeamsAdminAction&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-top-accounts-performing-teams-user-submissions-fn-or-fp-9ffbd78f-c87c-4fd2-96ec-fd46e27bbd21-dfe1925c.html">Top accounts performing Teams user submissions FN or FP</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-copilot-studio-ai-agents-dormant-author-authentication-connection-2a5b8c1d-4e7f-0a1b-2c3d-4e5f6a7b8c9d-3500cbed.html">Copilot Studio AI Agents - Dormant Author Authentication Connection</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;CopilotInteraction&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-18ee082b.html">User reported submissions</a></td>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
+  <td style="text-align:left"><a href="../content/github-only-copilot-studio-ai-agents-published-dormant-30d-5e8f1a2b-3c4d-5e6f-7a8b-9c0d1e2f3a4b-bdb68b50.html">Copilot Studio AI Agents - Published Dormant (30d)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;CopilotInteraction&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-credentialsaddafteradminconsentedtoapp%5Bnobelium%5D-0d49b34e-ac5a-441f-a79f-672ad045870e-006b3161.html">CredentialsAddAfterAdminConsentedToApp[Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Consent to application.,Update application - Certificates</code><br><code>secrets management&quot;</code><br><code>Application == &quot;Office 365&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-3e8d09b8.html">Email containing malware accessed on a unmanaged device</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-email-containing-malware-accessed-on-a-unmanaged-device-439f817c-845c-4dda-a8d9-5c1f6831cee9-2e5f8871.html">Email containing malware accessed on a unmanaged device</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-file-malware-detection-trend-71cdf9cb-39b7-40fe-a81f-2c125efc7d07-0d9e4ad5.html">File Malware Detection Trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-file-malware-by-top-malware-families-anti-virus-db287ba5-344a-4e43-a94f-26e686203598-a949b17b.html">File Malware by Top Malware Families (Anti Virus)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-file-malware-by-top-malware-families-safe-attachments-afd90d9e-f8f5-41c7-823a-616907392503-682bc828.html">File Malware by Top Malware Families (Safe Attachments)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-e8d4ae12.html">Group quarantine release</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;QuarantineReleaseMessage&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-group-quarantine-release-a12cac64-ea6d-46d4-91a6-262b165fb9ad-9e1fce5c.html">Group quarantine release</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;QuarantineReleaseMessage&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1957e796.html">High Confidence Phish Released</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-high-confidence-phish-released-9e8faa62-7222-48a5-a78f-ef2d22f866dc-1ada080f.html">High Confidence Phish Released</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-f6af219e.html">Hunt for Admin email access</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminMailAccess&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-hunt-for-admin-email-access-e55e178e-48ba-4313-918a-2d3e16a95441-d5705ebe.html">Hunt for Admin email access</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminMailAccess&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-61da6233.html">Hunt for TABL changes</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;TenantAllowBlockListItems&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-hunt-for-tabl-changes-bc2d8214-afb6-4876-b210-25b69325b9b2-e8de7769.html">Hunt for TABL changes</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;TenantAllowBlockListItems&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-10902042.html">Hunt for alerts correlated with Teams messages</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-hunt-for-alerts-correlated-with-teams-messages-d0232a68-41e1-4fdf-aa17-bf67001fe7b2-5cff556f.html">Hunt for alerts correlated with Teams messages</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-c0081e9e.html">Identify acting user for reported phish</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-identify-acting-user-for-reported-phish-a5888069-ad78-4ac5-9241-5ee83eb19d5d-a6696a99.html">Identify acting user for reported phish</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-inbox-rule-changes-which-forward-redirect-email-54569b06-47fc-41ae-9b00-f7d9b61337b6-8075b72d.html">Inbox rule changes which forward-redirect email</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;Set-InboxRule&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-inbox-rule-changes-which-forward-redirect-email-54569b06-47fc-41ae-9b00-f7d9b61337b6-0da7ab8f.html">Inbox rule changes which forward-redirect email</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;Set-InboxRule&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-integrate-purview-with-cloud-app-events-a1adce9c-5945-4a20-984e-d95b6071a791-32b130d4.html">Integrate Purview with Cloud App Events</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-mdo-threat-protection-detections-trend-over-time-02698387-5bf0-4111-a6ca-0f592a238a8f-f1170f50.html">MDO Threat Protection Detections trend over time</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-ce48d397.html">MDO daily detection summary report</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-mdo-daily-detection-summary-report-deb4b2c6-c10e-4044-8cf4-84243e40db73-5c96ae0a.html">MDO daily detection summary report</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-mail-item-accessed-81ede5df-2ec3-40a5-9dff-1fe6a841079d-2af7c70a.html">Mail item accessed</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-mail-item-accessed-81ede5df-2ec3-40a5-9dff-1fe6a841079d-d3832633.html">Mail item accessed</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-mailitemsaccessed-throttling-%5Bnobelium%5D-67c763f7-c4fd-4b0f-9d4b-19246d1ec6d7-6db39084.html">MailItemsAccessed Throttling [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-mailitemsaccessedtimeseries%5Bsolarigate%5D-148de00b-e647-4767-9201-c3cbf51befb1-67d44b1f.html">MailItemsAccessedTimeSeries[Solarigate]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code><br><code>Application has &quot;Exchange&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-mailpermissionsaddedtoapplication%5Bnobelium%5D-2c80af05-53c1-4a77-82e7-a649e8e32506-d90582ab.html">MailPermissionsAddedToApplication[Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add delegated permission grant.,Consent to application.&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-malware-detections-by-workload-locations-bb6afb85-8e80-4c98-b73b-c2c821528a1c-7bfc3456.html">Malware detections by Workload Locations</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-malware-detections-by-workload-type-094a9823-e053-4b36-8678-cd70f048db91-571968ce.html">Malware detections by Workload Type</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-multiple-entra-id-admin-removals-7ffb31ee-f164-4613-a9a7-4d04d0dba5d7-8058f067.html">Multiple Entra ID Admin Removals</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Remove eligible member from role.,Remove member from role.&quot;</code><br><code>ApplicationId == &quot;11161&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-new-tabl-items-92b76a34-502e-4a53-93ec-9fc37c3b358c-979994c7.html">New TABL Items</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;New-TenantAllowBlockListItems&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-new-tabl-items-92b76a34-502e-4a53-93ec-9fc37c3b358c-0701ce38.html">New TABL Items</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;New-TenantAllowBlockListItems&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-newapporserviceprincipalcredential%5Bnobelium%5D-bf246545-504c-4bea-a6a2-3b6e7f65b202-c9ff79bc.html">NewAppOrServicePrincipalCredential[Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Add service principal.,Update application  Certificates</code><br><code>secrets management&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-number-of-unique-accounts-performing-teams-message-admin-submissions-dc230eec-acc2-482f-8601-25125c8ff122-d6ba0e2a.html">Number of unique accounts performing Teams message Admin submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-number-of-unique-accounts-performing-teams-message-admin-submissions-dc230eec-acc2-482f-8601-25125c8ff122-8e35aeb2.html">Number of unique accounts performing Teams message Admin submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-number-of-unique-accounts-performing-teams-message-user-submissions-489ad959-48eb-4c34-bed6-764cfd39214d-5f3551da.html">Number of unique accounts performing Teams message User  submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-number-of-unique-accounts-performing-teams-message-user-submissions-489ad959-48eb-4c34-bed6-764cfd39214d-0f066014.html">Number of unique accounts performing Teams message User  submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-oauth-apps-accessing-user-mail-via-graphapi-%5Bnobelium%5D-19cbed50-3554-44ed-b8de-90f275b69c8a-0abcf539.html">OAuth Apps accessing user mail via GraphAPI [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code><br><code>RawEventData has &quot;00000003-0000-0000-c000-000000000000&quot;</code><br><code>RawEventData has &quot;ClientAppId&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-oauth-apps-reading-mail-both-via-graphapi-and-directly-%5Bnobelium%5D-8ea80cde-a211-45e3-a7c3-62fae160026c-a816b2f6.html">OAuth Apps reading mail both via GraphAPI and directly [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-oauth-apps-reading-mail-via-graphapi-anomaly-%5Bnobelium%5D-010d76aa-f2e9-4b88-8134-1ae59655aafe-f5708c74.html">OAuth Apps reading mail via GraphAPI anomaly [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-policy-configuration-changes-for-cloudapp-events-fcd4d774-a0c2-4d12-9e9f-f51dfc310873-988943c1.html">Policy configuration changes for CloudApp Events</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add owner to policy.,Add policy to service principal.,Add policy.,Delete policy.,Remove-CrossTenantAccessPolicy,Remove-LabelPolicy,Update authorization policy.,Update policy.,Write PolicyAssignments,Write PolicyExemptions&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-190bb1b5.html">Quarantine Release Email Details</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-quarantine-release-email-details-6f96f6d7-d972-421e-a59f-6b9a8de81324-4e2cbc7d.html">Quarantine Release Email Details</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1547d717.html">Quarantine release trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;QuarantineReleaseMessage&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-quarantine-release-trend-9f135aef-ad25-4df2-bdab-8399978a36a2-1a59411f.html">Quarantine release trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;QuarantineReleaseMessage&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-risky-sign-in-with-device-registration-ce2b03f8-92a4-4ec7-b55b-e9fa562fafa4-dede1503.html">Risky Sign-in with Device Registration</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Add registered owner to device.&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-risky-sign-in-with-elevateaccess-158b565b-411b-4dec-81de-2d2bcaf0c34c-455b10c6.html">Risky Sign-in with ElevateAccess</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-risky-sign-in-with-new-mfa-method-0f57238b-e764-4246-b101-f78bf8c942a7-1eead4d6.html">Risky Sign-in with new MFA method</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Update user.&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-serviceprincipaladdedtorole-%5Bnobelium%5D-ca7c93e0-49d3-44ff-b07e-ae117ba13c9a-529dc696.html">ServicePrincipalAddedToRole [Nobelium]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Add member to role.&quot;</code><br><code>Application == &quot;Office 365&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-status-of-submissions-1c390fd7-2668-4445-9b7d-055f3851be5f-c0279593.html">Status of submissions</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-b0a8170e.html">Suspicious sign-in attempts from QR code phishing campaigns</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-suspicious-sign-in-attempts-from-qr-code-phishing-campaigns-3131d0ba-32c9-483e-a25c-82e26a07e116-57676ddf.html">Suspicious sign-in attempts from QR code phishing campaigns</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-teams-admin-submission-of-malware-and-phish-daily-trend-13db68a8-bce1-4929-b8db-2589ee552e75-1ded940b.html">Teams Admin submission of Malware and Phish daily trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-teams-admin-submission-of-no-threats-daily-trend-1a942d90-1e14-4fe9-8ad2-8af56ed16279-66b8202b.html">Teams Admin submission of No Threats daily trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-teams-admin-user-submissions-grading-verdicts-459c6943-0162-4bf5-8d0b-c5904f03f5a7-9a085443.html">Teams Admin-User Submissions Grading Verdicts</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionTriage,UserSubmissionTriage&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-teams-user-submissions-daily-trend-ace8e98a-660b-4fa9-a877-60644eb83344-25981de9.html">Teams User submissions daily trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-teams-user-submissions-daily-trend-ace8e98a-660b-4fa9-a877-60644eb83344-4cd44e87.html">Teams User submissions daily trend</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-detection-overrides-admin-email-submissions-fn-286d115b-7ddb-4422-81d6-711fedae3a92-0f0d7b84.html">Top 10 Detection Overrides - Admin Email Submissions (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-admin-teams-message-submissions-fn-132dffdf-3ee0-4748-8509-fbd3a92e5c9f-45ad68b4.html">Top 10 sender domains - Admin Teams message submissions FN</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-sender-domains-admin-teams-message-submissions-fn-132dffdf-3ee0-4748-8509-fbd3a92e5c9f-0940b001.html">Top 10 sender domains - Admin Teams message submissions FN</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-sender-domains-admin-email-submissions-fn-138681b2-442b-46cb-b086-fbe9e407aa2c-3382c095.html">Top 10 sender domains - Admin email submissions (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-sender-domains-admin-email-submissions-fp-c438f85f-4527-4358-a3b6-fe6a6ff7a202-74967041.html">Top 10 sender domains - Admin email submissions (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-sender-domains-teams-user-submissions-fn-or-fp-bebb6652-3c52-4358-a946-ecd63cddf082-b18626f1.html">Top 10 sender domains - Teams user submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-sender-domains-teams-user-submissions-fn-or-fp-bebb6652-3c52-4358-a946-ecd63cddf082-b935995d.html">Top 10 sender domains - Teams user submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-senders-teams-users-submissions-fn-or-fp-2d8448f5-c0a2-46d7-a004-e062970ccb7b-7b2596a2.html">Top 10 senders - Teams users submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-senders-teams-users-submissions-fn-or-fp-2d8448f5-c0a2-46d7-a004-e062970ccb7b-e70f5a13.html">Top 10 senders - Teams users submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-senders-of-admin-teams-message-submissions-fn-49071a21-fbb6-472f-932f-5b6ca1a25883-bcf9b4fd.html">Top 10 senders of  Admin Teams message submissions FN</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-senders-of-admin-teams-message-submissions-fn-49071a21-fbb6-472f-932f-5b6ca1a25883-10055242.html">Top 10 senders of  Admin Teams message submissions FN</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-10-senders-of-admin-teams-message-submissions-fp-f82f3d63-b7f2-494d-8254-612405702dd4-4652dba3.html">Top 10 senders of  Admin Teams message submissions FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-10-senders-of-admin-teams-message-submissions-fp-f82f3d63-b7f2-494d-8254-612405702dd4-5337068d.html">Top 10 senders of  Admin Teams message submissions FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-teams-admin-submissions-fn-or-fp-0a29c9f0-e8d4-4339-a196-52bb3a090a79-83e0c9bf.html">Top accounts performing Teams admin submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-accounts-performing-teams-admin-submissions-fn-or-fp-0a29c9f0-e8d4-4339-a196-52bb3a090a79-25958bf1.html">Top accounts performing Teams admin submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-top-accounts-performing-teams-user-submissions-fn-or-fp-9ffbd78f-c87c-4fd2-96ec-fd46e27bbd21-dfe1925c.html">Top accounts performing Teams user submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-accounts-performing-teams-user-submissions-fn-or-fp-9ffbd78f-c87c-4fd2-96ec-fd46e27bbd21-2eada9ca.html">Top accounts performing Teams user submissions FN or FP</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-accounts-performing-admin-submissions-fn-220448c8-f9cd-4a91-bde0-1f30d8c81936-dde98ae9.html">Top accounts performing admin submissions (FN)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-accounts-performing-admin-submissions-fp-f458535d-f977-4392-90ce-663fcf4ac703-340e4946.html">Top accounts performing admin submissions (FP)</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-top-accounts-performing-user-submissions-dda13716-d906-45c5-877d-4df46ceb39e6-7a8cfc3e.html">Top accounts performing user submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-total-submissions-by-submission-state-47e8ea7f-a7eb-4fe3-a96b-efe01155d9d3-5774f28b.html">Total Submissions by Submission State</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-total-submissions-by-submission-type-9fd55150-611d-400c-a27f-b18f33c18a41-31b1705c.html">Total Submissions by Submission Type</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-total-number-of-detections-by-mdo-e1903106-9b25-472e-b4b7-4bcc05328a48-65f69a82.html">Total number of detections by MDO</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-unusual-volume-of-file-deletion-by-user.-611ebbc2-c789-42ad-93e3-6dc02bfa5e3d-b849c152.html">Unusual volume of file deletion by user.</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-updatestsrefreshtoken%5Bsolorigate%5D-634dfbd6-0a42-40da-854e-2161cf137f14-89e3d513.html">UpdateStsRefreshToken[Solorigate]</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;Update StsRefreshTokenValidFrom Timestamp.&quot;</code><br><code>RawEventData !has &quot;Directorysync&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submission-trend-fn-395047c1-254e-43fb-ad6e-ae74c8e0a873-b9601c69.html">User Email Submission Trend (FN)</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AttackSimUserSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-top-detection-overrides-by-admins-a52e4273-cf3c-4125-b03d-41b99f64197f-ab3590ca.html">User Email Submissions (FN) - Top Detection Overrides by Admins</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-top-detection-overrides-by-users-764c0e82-33af-4694-a552-b2de24d1d477-9f86bf12.html">User Email Submissions (FN) - Top Detection Overrides by Users</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-top-intra-org-p2-senders-2adae71b-42b9-47b8-9cb7-ccea9fece3e2-2614f9df.html">User Email Submissions (FN) - Top Intra-Org P2 Senders</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-top-intra-org-subjects-02949291-cc6c-48ff-bc99-bb3736a3c967-4bd51866.html">User Email Submissions (FN) - Top Intra-Org Subjects</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-by-submission-type-0b2cbdf4-12e4-46e9-a8f6-99e559583cd7-7f30a082.html">User Email Submissions (FN) by Submission Type</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;AttackSimUserSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-fp-by-grading-verdict-3b9e6da0-3504-463f-80d3-31fe3f0261ff-1d5052d0.html">User Email Submissions (FN-FP) by Grading verdict</a></td>
+  <td style="text-align:left"><code>ActionType contains &quot;UserSubmissionTriage&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-accuracy-vs-admin-review-verdict-0d03314a-ecbe-47f0-b411-2a9471f26b46-7034a4a0.html">User Email Submissions accuracy vs Admin review verdict</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-by-admin-review-status-mark-and-notify-6923a80a-e3df-4d81-a90d-63fc5b7f0bb5-8e95120c.html">User Email Submissions by Admin review status (Mark and Notify)</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-email-submissions-fn-from-junk-folder-a1eb19d6-9d86-425c-bd1d-86495c2ca714-e5bed1d6.html">User email submissions (FN) from Junk Folder</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-18ee082b.html">User reported submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-reported-submissions-0bd33643-c517-48b1-8211-25a7fbd15a50-b5232da7.html">User reported submissions</a></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (2)</h3>
+<h3 id="workbooks">Workbooks (6)</h3>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code><br><code>UserAgent == "MS Scanner ATP"</code></p>
+<p><strong>In solution <a href="../solutions/microsoft-defender-xdr.html">Microsoft Defender XDR</a>:</strong> <code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,FileMalwareDetected,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.html">MicrosoftDefenderForOffice365detectionsandinsights</a></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-xdr-microsoftdefenderforoffice365detectionsandinsights-c34bc8fb.html">MicrosoftDefenderForOffice365detectionsandinsights</a></td>
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (27 criteria, 66 total references)</h2>
-<p>References by type: 0 connectors, 66 content items, 0 ASIM parsers, 0 other parsers.</p>
+<p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>15</strong></td>
+  <td style="text-align:left"><a href="../content/github-only-copilotforsecuritymonitoring-b67b6028.html">CopilotforSecurityMonitoring</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Register Microsoft.SecurityCopilot,Write Capacities&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "UserSubmission"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>12</strong></td>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add service principal.,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "FileMalwareDetected"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "QuarantineReleaseMessage"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+  <td style="text-align:left"><code>ActionType in &quot;Add member to role,Add service principal.,Add user,InteractiveLogon,LogonSuccess,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (40 criteria, 143 total references)</h2>
+<p>References by type: 0 connectors, 143 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">30</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>30</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "AdminSubmissionSubmitted"</code><br><code>ActionType contains "Submission"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;UserSubmission&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">24</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>24</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,Malware ZAP,Phish ZAP,UserSubmission"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType contains "AdminSubmission"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminSubmissionSubmitted&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">8</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>8</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,UserSubmission"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "SubmissionNotification,UserSubmission"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AttackSimUserSubmission,UserSubmission"</code><br><code>ActionType contains "UserSubmission"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;QuarantineReleaseMessage&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "Set-AtpPolicyForO365"</code><br><code>Application == "Microsoft Exchange Online"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmission&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,Malware ZAP,Phish ZAP,Redelivery"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType in &quot;SubmissionNotification,UserSubmission&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "AdminMailAccess"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType in &quot;AttackSimUserSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType contains "TenantAllowBlockListItems"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;Set-AtpPolicyForO365&quot;</code><br><code>Application == &quot;Microsoft Exchange Online&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmission,UserSubmission"</code><br><code>ActionType contains "ZAP"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;AdminMailAccess&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "New-TenantAllowBlockListItems"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType contains &quot;TenantAllowBlockListItems&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "Added users and/or groups to shared file/folder,Invited user to Dropbox</code><br><code>added them to shared file/folder"</code><br><code>Application == "Dropbox"</code><br><code>ObjectType == "File"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmission,UserSubmission&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AddedToSecureLink,SecureLinkCreated"</code><br><code>Application in "Microsoft OneDrive for Business,Microsoft SharePoint Online"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;New-TenantAllowBlockListItems&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType contains "Set-InboxRule"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType in &quot;Added users and/or groups to shared file/folder,Invited user to Dropbox</code><br><code>added them to shared file/folder&quot;</code><br><code>Application == &quot;Dropbox&quot;</code><br><code>ObjectType == &quot;File&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "FileMalwareDetected"</code><br><code>UserAgent == "MS Scanner ATP"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType in &quot;AddedToSecureLink,SecureLinkCreated&quot;</code><br><code>Application in &quot;Microsoft OneDrive for Business,Microsoft SharePoint Online&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionTriage,UserSubmissionTriage"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType contains &quot;Set-InboxRule&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "MailItemsAccessed"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;FileMalwareDetected&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType == "AirInvestigationData"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionTriage,UserSubmissionTriage&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType contains "AdminSubmissionTriage"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;AirInvestigationData&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "MoveToDeletedItems,MovedToDeletedItems"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType contains "UserSubmissionTriage"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType contains &quot;UserSubmissionTriage&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>ActionType in "AdminSubmissionSubmitted,AttackSimUserSubmission,FileMalwareDetected,Malware ZAP,Phish ZAP,Redelivery,SubmissionNotification,UserSubmission"</code><br><code>ActionType contains "AdminSubmission"</code><br><code>ActionType contains "AdminSubmissionTriage"</code><br><code>ActionType contains "Submission"</code><br><code>ActionType contains "UserSubmission"</code><br><code>ActionType contains "UserSubmissionTriage"</code><br><code>UserAgent == "MS Scanner ATP"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;TeamsAdminAction&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>66</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>66</strong></td>
+  <td style="text-align:left"><code>ActionType == &quot;CopilotInteraction&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Add owner to policy.,Add policy to service principal.,Add policy.,Delete policy.,Remove-CrossTenantAccessPolicy,Remove-LabelPolicy,Update authorization policy.,Update policy.,Write PolicyAssignments,Write PolicyExemptions&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code><br><code>Application has &quot;Exchange&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Set domain authentication.,Set federation settings on domain.&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Add delegated permission grant.,Consent to application.&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;Update StsRefreshTokenValidFrom Timestamp.&quot;</code><br><code>RawEventData !has &quot;Directorysync&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;MailItemsAccessed&quot;</code><br><code>RawEventData has &quot;00000003-0000-0000-c000-000000000000&quot;</code><br><code>RawEventData has &quot;ClientAppId&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Update application - Certificates</code><br><code>secrets management&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Consent to application.,Update application - Certificates</code><br><code>secrets management&quot;</code><br><code>Application == &quot;Office 365&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Remove eligible member from role.,Remove member from role.&quot;</code><br><code>ApplicationId == &quot;11161&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Add service principal.,Update application  Certificates</code><br><code>secrets management&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;Add registered owner to device.&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;Update user.&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;Add service principal credentials.,Update application - Certificates</code><br><code>secrets management&quot;</code><br><code>Application == &quot;Office 365&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType == &quot;Add member to role.&quot;</code><br><code>Application == &quot;Office 365&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ActionType in &quot;AdminSubmissionSubmitted,AttackSimUserSubmission,ClickBlocked,FileMalwareDetected,Malware ZAP,Phish ZAP,Spam ZAP,SubmissionNotification,UserSubmission&quot;</code><br><code>ActionType == &quot;Automated Remediation&quot;</code><br><code>ActionType contains &quot;AdminSubmission&quot;</code><br><code>ActionType contains &quot;AdminSubmissionTriage&quot;</code><br><code>ActionType contains &quot;Submission&quot;</code><br><code>ActionType contains &quot;UserSubmission&quot;</code><br><code>ActionType contains &quot;UserSubmissionTriage&quot;</code><br><code>ActionType contains &quot;ZAP&quot;</code><br><code>ActionType has &quot;Malware ZAP&quot;</code><br><code>ActionType has &quot;Phish ZAP&quot;</code><br><code>ActionType has &quot;Spam ZAP&quot;</code><br><code>ActionType has &quot;ZAP&quot;</code><br><code>ActionType has_any &quot;ClickAllowed&quot;</code><br><code>ActionType has_any &quot;ClickBlocked&quot;</code><br><code>ActionType has_any &quot;UrlErrorPage&quot;</code><br><code>ActionType has_any &quot;UrlScanInProgress&quot;</code><br><code>UserAgent == &quot;MS Scanner ATP&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>143</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>143</strong></td>
 </tr>
 </tbody>
 </table>
@@ -957,262 +1488,534 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>UserSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">22</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>22</strong></td>
+  <td style="text-align:left"><code>UserSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">40</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>40</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AdminSubmissionSubmitted</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">21</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>21</strong></td>
+  <td style="text-align:left"><code>AdminSubmissionSubmitted</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">39</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>39</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>FileMalwareDetected</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>6</strong></td>
+  <td style="text-align:left"><code>FileMalwareDetected</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">11</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>11</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AdminSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
+  <td style="text-align:left"><code>MailItemsAccessed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">9</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>9</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains Submission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>5</strong></td>
+  <td style="text-align:left"><code>contains Submission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">9</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>9</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Malware ZAP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+  <td style="text-align:left"><code>AdminSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">7</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>7</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Phish ZAP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+  <td style="text-align:left"><code>contains AdminSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>QuarantineReleaseMessage</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>4</strong></td>
+  <td style="text-align:left"><code>SubmissionNotification</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains AdminSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>AttackSimUserSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SubmissionNotification</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>contains UserSubmission</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">5</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AttackSimUserSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>QuarantineReleaseMessage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains UserSubmission</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>3</strong></td>
+  <td style="text-align:left"><code>Add service principal credentials.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">4</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>4</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Redelivery</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>contains ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains AdminSubmissionTriage</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>contains AdminSubmissionTriage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains UserSubmissionTriage</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>contains UserSubmissionTriage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Set-AtpPolicyForO365</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Update application - Certificates</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AdminMailAccess</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Set-AtpPolicyForO365</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains TenantAllowBlockListItems</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>AdminMailAccess</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains ZAP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains TenantAllowBlockListItems</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>New-TenantAllowBlockListItems</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>New-TenantAllowBlockListItems</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Added users and/or groups to shared file/folder</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Added users and/or groups to shared file/folder</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Invited user to Dropbox</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Invited user to Dropbox</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AddedToSecureLink</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>AddedToSecureLink</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>SecureLinkCreated</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>SecureLinkCreated</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>contains Set-InboxRule</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains Set-InboxRule</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AdminSubmissionTriage</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>AdminSubmissionTriage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>UserSubmissionTriage</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>UserSubmissionTriage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MailItemsAccessed</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>AirInvestigationData</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>AirInvestigationData</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Consent to application.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MoveToDeletedItems</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>TeamsAdminAction</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>MovedToDeletedItems</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>CopilotInteraction</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add owner to policy.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add policy to service principal.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add policy.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Delete policy.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Remove-CrossTenantAccessPolicy</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Remove-LabelPolicy</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update authorization policy.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update policy.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Write PolicyAssignments</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Write PolicyExemptions</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Set domain authentication.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Set federation settings on domain.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add delegated permission grant.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update StsRefreshTokenValidFrom Timestamp.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Remove eligible member from role.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Remove member from role.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add service principal.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update application  Certificates</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add registered owner to device.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Update user.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Add member to role.</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>ClickBlocked</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Malware ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Phish ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Spam ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Automated Remediation</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Malware ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Phish ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Spam ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ZAP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any ClickAllowed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any ClickBlocked</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any UrlErrorPage</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has_any UrlScanInProgress</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1220,46 +2023,85 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Microsoft Exchange Online</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Office 365</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Dropbox</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Microsoft Exchange Online</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Microsoft OneDrive for Business</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Dropbox</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>Microsoft SharePoint Online</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Microsoft OneDrive for Business</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>Microsoft SharePoint Online</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has Exchange</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="applicationid">ApplicationId</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>11161</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1267,22 +2109,61 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>File</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>File</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="raweventdata">RawEventData</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>!has Directorysync</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has 00000003-0000-0000-c000-000000000000</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>has ClientAppId</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1290,28 +2171,29 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>MS Scanner ATP</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>MS Scanner ATP</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">3</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>3</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

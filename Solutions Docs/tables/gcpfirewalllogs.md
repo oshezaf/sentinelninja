@@ -30,7 +30,7 @@ Reference for GCPFirewallLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | Action | string | The Action that of the firewall rule. |
 | DestIp | string | the IP address of the target device or service that incoming or outgoing network traffic is trying to reach. |
 | DestPort | string | the Port of the target device or service that incoming or outgoing network traffic is trying to reach. |
@@ -55,7 +55,7 @@ Reference for GCPFirewallLogs table in Azure Monitor Logs.
 | ResourceLocation | string | The resource location information. |
 | ResourceSubnetworkName | string | The resource subnetwork name. |
 | SourceRange | dynamic | The range of the ip addresses that the rule applied to. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcIp | string | the IP address of the source device or service that incoming or outgoing network traffic is trying to reach. |
 | SrcPort | string | the Port of the source device or service that incoming or outgoing network traffic is trying to reach. |
 | SubnetworkId | string | The resource subnetwork id. |

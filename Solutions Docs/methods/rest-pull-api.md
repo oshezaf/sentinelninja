@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **50** |
-| Active | 42 |
+| Active | 35 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 7 |
+| Unpublished ⚠️ | 14 |
 
 ## Connectors Using This Method
 
@@ -28,7 +28,7 @@ The collection method for these connectors could not be automatically determined
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
 | [AIShield](../connectors/boschaishield.md) | Bosch | 1 | [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
-| [API Protection](../connectors/42crunchapiprotection.md) 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
+| [API Protection](../connectors/42crunchapiprotection.md) ⚠️ 🔶 | 42Crunch | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [ARGOS Cloud Security](../connectors/argoscloudsecurity.md) 🔶 | ARGOS Cloud Security | 1 | [ARGOSCloudSecurity](../solutions/argoscloudsecurity.md) |
 | [Atlassian Beacon Alerts](../connectors/atlassianbeaconalerts.md) 🔶 | DEFEND Ltd. | 1 | [Integration for Atlassian Beacon](../solutions/integration-for-atlassian-beacon.md) |
 | [Authomize Data Connector](../connectors/authomize.md) ⚠️ 🔶 | Authomize | 1 | [Authomize](../solutions/authomize.md) |
@@ -36,7 +36,7 @@ The collection method for these connectors could not be automatically determined
 | [BETTER Mobile Threat Defense (MTD)](../connectors/bettermtd.md) 🔶 | BETTER Mobile | 4 | [BETTER Mobile Threat Defense (MTD)](../solutions/better-mobile-threat-defense-mtd.md) |
 | [Beyond Security beSECURE](../connectors/beyondsecuritybesecure.md) ⚠️ 🔶 | Beyond Security | 3 | [Beyond Security beSECURE](../solutions/beyond-security-besecure.md) |
 | [blacklens.io](../connectors/blacklens-io.md) | snapSEC GmbH | 1 | [Blacklens](../solutions/blacklens.md) |
-| [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) 🔶 | CITRIX | 4 | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
+| [CITRIX SECURITY ANALYTICS](../connectors/citrix.md) ⚠️ 🔶 | CITRIX | 4 | [Citrix Analytics for Security](../solutions/citrix-analytics-for-security.md) |
 | [Cognni](../connectors/cognnisentineldataconnector.md) 🔶 | Cognni | 1 | [Cognni](../solutions/cognni.md) |
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | Corelight | 108 | [Corelight](../solutions/corelight.md) |
 | [Cribl](../connectors/cribl.md) 🔶 | Cribl | 4 | [Cribl](../solutions/cribl.md) |
@@ -57,8 +57,8 @@ The collection method for these connectors could not be automatically determined
 | [Microsoft Exchange HTTP Proxy Logs](../connectors/esi-opt7exchangehttpproxylogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [Microsoft Exchange Message Tracking Logs](../connectors/esi-opt6exchangemessagetrackinglogs.md) 🔶 | Microsoft | 1 | [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md) |
 | [NC Protect](../connectors/nucleuscyberncprotect.md) 🔶 | archTIS | 1 | [NC Protect Data Connector](../solutions/nc-protect-data-connector.md) |
-| [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
-| [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
+| [Netclean ProActive Incidents](../connectors/netclean-proactive-incidents.md) ⚠️ 🔶 | NetClean Technologies | 1 | [NetClean ProActive](../solutions/netclean-proactive.md) |
+| [Noname Security for Microsoft Sentinel](../connectors/nonamesecuritymicrosoftsentinel.md) ⚠️ 🔶 | Noname Security | 1 | [Noname API Security Solution for Microsoft Sentinel](../solutions/noname-api-security-solution-for-microsoft-sentinel.md) |
 | [Orca Security Alerts](../connectors/orcasecurityalerts.md) 🔶 | Orca Security | 1 | [Orca Security Alerts](../solutions/orca-security-alerts.md) |
 | [Palo Alto Prisma Cloud CWPP (using REST API)](../connectors/prismacloudcomputenativepoller.md) ⚠️ 🔶 | Microsoft | 1 | [Palo Alto Prisma Cloud CWPP](../solutions/palo-alto-prisma-cloud-cwpp.md) |
 | [Perimeter 81 Activity Logs](../connectors/perimeter81activitylogs.md) 🔶 | Perimeter 81 | 1 | [Perimeter 81](../solutions/perimeter-81.md) |
@@ -66,11 +66,11 @@ The collection method for these connectors could not be automatically determined
 | [Red Canary Threat Detection](../connectors/redcanarydataconnector.md) ⚠️ 🔶 | Red Canary | 1 | [Red Canary](../solutions/red-canary.md) |
 | [SaaS Security](../connectors/valencesecurity.md) 🔶 | Valence Security | 1 | [Valence Security](../solutions/valence-security.md) |
 | [Samsung Knox Asset Intelligence](../connectors/samsungdcdefinition.md) | Samsung | 6 | [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
-| [SenservaPro (Preview)](../connectors/senservapro.md) 🔶 | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |
+| [SenservaPro (Preview)](../connectors/senservapro.md) ⚠️ 🔶 | Senserva | 1 | [SenservaPro](../solutions/senservapro.md) |
 | [Sevco Platform - Devices](../connectors/sevcodevices.md) ⚠️ 🔶 | Sevco Security | 1 | [SevcoSecurity](../solutions/sevcosecurity.md) |
-| [SINEC Security Guard](../connectors/ssg.md) | Siemens AG | 1 | [SINEC Security Guard](../solutions/sinec-security-guard.md) |
+| [SINEC Security Guard](../connectors/ssg.md) ⚠️ | Siemens AG | 1 | [SINEC Security Guard](../solutions/sinec-security-guard.md) |
 | [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶 | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
-| [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) 🔶 | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
+| [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) ⚠️ 🔶 | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
 | [Squadra Technologies secRMM](../connectors/squadratechnologiessecrmm.md) 🔶 | Squadra Technologies | 1 | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
 | [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) 🔶 | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
 | [Talon Insights](../connectors/talonlogs.md) 🔶 | Talon Security | 1 | [Talon](../solutions/talon.md) |

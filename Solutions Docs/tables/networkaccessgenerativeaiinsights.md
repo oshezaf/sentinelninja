@@ -28,7 +28,7 @@ Reference for NetworkAccessGenerativeAIInsights table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | Activity | string | The type of generative AI activity being performed. |
 | Content | string | The content or query associated with the generative AI interaction. |
 | DestinationUrl | string | The URL of the generative AI endpoint accessed. |
@@ -37,7 +37,7 @@ Reference for NetworkAccessGenerativeAIInsights table in Azure Monitor Logs.
 | McpClientName | string | The name of the MCP client initiating the MCP communication. |
 | McpServerName | string | The name of the MCP server handling the MCP requests. |
 | SessionId | string | Unique identifier for the session. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SubActivity | string | The specific type of operation within the activity. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |

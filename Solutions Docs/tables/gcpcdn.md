@@ -31,7 +31,7 @@ Reference for GCPCDN table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AuthenticationInfoPrincipalEmail | string | The email of the authenticated identity making the request |
 | AuthorizationInfo | string | Authorization details such as permission name, granted status, and resource type |
 | AuthzPolicyInfoPolicies | string | The list of Authorization policies that match the request |
@@ -134,7 +134,7 @@ Reference for GCPCDN table in Azure Monitor Logs.
 | ResponseUser | string | User who initiated the operation. |
 | ServiceName | string | The Google service processing the request |
 | Severity | string | Indicates the importance or severity level of the log entry |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SpanID | string | Identifier of the span within a trace |
 | StatusDetails | string | Holds a string that explains why the load balancer returned the HTTP status that it did |
 | TenantId | string | The Log Analytics workspace ID |

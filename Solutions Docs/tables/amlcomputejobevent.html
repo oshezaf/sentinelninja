@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputejobevent">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amlcomputejobevent">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,171 +57,171 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClusterId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the cluster</td>
+  <td style="text-align:left">ClusterId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the cluster</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClusterName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the Cluster</td>
+  <td style="text-align:left">ClusterName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the Cluster</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClusterResourceGroupName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource group name of the cluster</td>
+  <td style="text-align:left">ClusterResourceGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource group name of the cluster</td>
 </tr>
 <tr>
-<td style="text-align: left;">CreationApiVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Api version used to create the job</td>
+  <td style="text-align:left">CreationApiVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Api version used to create the job</td>
 </tr>
 <tr>
-<td style="text-align: left;">CustomerSubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">SubscriptionId where Experiment and Job as submitted</td>
+  <td style="text-align:left">CustomerSubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">SubscriptionId where Experiment and Job as submitted</td>
 </tr>
 <tr>
-<td style="text-align: left;">ErrorDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Details of job error</td>
+  <td style="text-align:left">ErrorDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details of job error</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of the Job event. For example, JobSubmitted, JobRunning, JobFailed, JobSucceeded.</td>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the Job event. For example, JobSubmitted, JobRunning, JobFailed, JobSucceeded.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutionState</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">State of the job (the Run). For example, Queued, Running, Succeeded, Failed</td>
+  <td style="text-align:left">ExecutionState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">State of the job (the Run). For example, Queued, Running, Succeeded, Failed</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExperimentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the Experiment</td>
+  <td style="text-align:left">ExperimentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the Experiment</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExperimentName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the Experiment</td>
+  <td style="text-align:left">ExperimentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the Experiment</td>
 </tr>
 <tr>
-<td style="text-align: left;">InternalOperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">InternalOperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">JobErrorMessage</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">detailed message of Job error</td>
+  <td style="text-align:left">JobErrorMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">detailed message of Job error</td>
 </tr>
 <tr>
-<td style="text-align: left;">JobId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the Job submitted</td>
+  <td style="text-align:left">JobId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the Job submitted</td>
 </tr>
 <tr>
-<td style="text-align: left;">JobName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the Job</td>
+  <td style="text-align:left">JobName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the Job</td>
 </tr>
 <tr>
-<td style="text-align: left;">NodeId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the node created where job is running</td>
+  <td style="text-align:left">NodeId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the node created where job is running</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the operation associated with the log event</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the operation associated with the log event</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProvisioningState</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">State of the Job submission</td>
+  <td style="text-align:left">ProvisioningState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">State of the Job submission</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceGroupName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the resource group</td>
+  <td style="text-align:left">ResourceGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the resource group</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultSignature</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ResultSignature</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">RunInContainer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Flag describing if job should be run inside a container</td>
+  <td style="text-align:left">RunInContainer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Flag describing if job should be run inside a container</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TFParameterServerCount</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Count of TF parameter server</td>
+  <td style="text-align:left">TFParameterServerCount</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Count of TF parameter server</td>
 </tr>
 <tr>
-<td style="text-align: left;">TFWorkerCount</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Count of TF workers</td>
+  <td style="text-align:left">TFWorkerCount</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Count of TF workers</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time when the log entry was generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time when the log entry was generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of tool used</td>
+  <td style="text-align:left">ToolType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of tool used</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">WorkspaceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the machine learning workspace</td>
+  <td style="text-align:left">WorkspaceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the machine learning workspace</td>
 </tr>
 </tbody>
 </table>
@@ -234,6 +234,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

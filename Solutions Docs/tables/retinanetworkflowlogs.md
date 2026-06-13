@@ -23,7 +23,7 @@ Reference for RetinaNetworkFlowLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalFlowData | dynamic | Additional flow data. |
@@ -48,7 +48,7 @@ Reference for RetinaNetworkFlowLogs table in Azure Monitor Logs.
 | SourceIdentity | int | The security identity number for the source (flow.source.identity). |
 | SourceNamespace | string | The namespace of the source (flow.source.namespace). |
 | SourcePodName | string | The name of the source pod (flow.source.pod_name). |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SourceWorkloads | dynamic | Array of workloads associated with the source, including name and kind (flow.source.workloads). |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time the flow was recorded (flow.time). |

@@ -21,9 +21,9 @@ Native connectors provide built-in integration with Microsoft services and are t
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **18** |
-| Active | 18 |
+| Active | 17 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 0 |
+| Unpublished ⚠️ | 1 |
 
 ## Connectors Using This Method
 
@@ -35,7 +35,7 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Amazon Web Services S3](../connectors/awss3.md) ➕ | Amazon | 4 | [Amazon Web Services](../solutions/amazon-web-services.md) |
 | [Dynamics 365](../connectors/dynamics365.md) | Microsoft | 1 | [Dynamics 365](../solutions/dynamics-365.md) |
 | [Microsoft 365 (formerly, Office 365)](../connectors/office365.md) ➕ | Microsoft | 1 | [Microsoft 365](../solutions/microsoft-365.md) |
-| [Microsoft 365 Assets (formerly, Office 365)](../connectors/m365assets.md) | Microsoft | ? | [Microsoft 365 Assets](../solutions/microsoft-365-assets.md) |
+| [Microsoft 365 Assets (formerly, Office 365)](../connectors/m365assets.md) ⚠️ | Microsoft | ? | [Microsoft 365 Assets](../solutions/microsoft-365-assets.md) |
 | [Microsoft 365 Insider Risk Management](../connectors/officeirm.md) | Microsoft | 1 | [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md) |
 | [Microsoft Defender for IoT](../connectors/iot.md) | Microsoft | 1 | [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Microsoft Defender for Office 365 (Preview)](../connectors/officeatp.md) | Microsoft | 1 | [Microsoft Defender for Office 365](../solutions/microsoft-defender-for-office-365.md) |
@@ -51,6 +51,8 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Microsoft | 3 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 
 ---
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 ---
 

@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">IT &amp; Management Tools, Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">IT &amp; Management Tools, Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/update">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,241 +64,241 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApprovalSource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ApprovalSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Approved</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Approved</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">BulletinID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">BulletinID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">BulletinUrl</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">BulletinUrl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Classification</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Classification</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ComputerEnvironment</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ComputerEnvironment</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">CVENumbers</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">CVENumbers</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">InstallTimeAvailable</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">InstallTimeAvailable</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">InstallTimeDeviationRangeSeconds</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">InstallTimeDeviationRangeSeconds</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">InstallTimePredictionSeconds</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">InstallTimePredictionSeconds</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">KBID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">KBID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ManagementGroupName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">MSRCBulletinID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">MSRCBulletinID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">MSRCSeverity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">MSRCSeverity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Optional</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Optional</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSFullName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSFullName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">PackageRepository</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">PackageRepository</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">PackageSeverity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">PackageSeverity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Product</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Product</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ProductArch</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ProductArch</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ProductVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ProductVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">PublishedDate</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">PublishedDate</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">RebootBehavior</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">RebootBehavior</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Resource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Resource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceGroup</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ResourceGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceProvider</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ResourceProvider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ResourceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">RevisionNumber</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">RevisionNumber</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceComputerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">SourceComputerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Title</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Title</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UpdateID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">UpdateID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">UpdateState</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">UpdateState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">VMUUID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">VMUUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -311,20 +311,20 @@
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (4)</h2>
-<h3 id="workbooks">Workbooks (4)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (7)</h2>
+<h3 id="workbooks">Workbooks (7)</h3>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -332,14 +332,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -347,27 +347,50 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/sap-btp-sapbtpactivity-8f5b3a2b.html">SAPBTPActivity</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/sap-btp-sapbtpactivity-8f5b3a2b.html">SAPBTPActivity</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>Classification != "Feature Packs"</code><br><code>UpdateState != "Installed"</code></p>
+<p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong> <code>Classification != &quot;Feature Packs&quot;</code><br><code>UpdateState != &quot;Installed&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+  <td style="text-align:left"><a href="../content/soc-handbook-investigationinsights-6227a80b.html">InvestigationInsights</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-asc-complianceandprotection-70588a9c.html">ASC-ComplianceandProtection</a></td>
+  <td style="text-align:left"><code>UpdateState != &quot;Installed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-investigationinsights-8694eaf8.html">InvestigationInsights</a></td>
+  <td style="text-align:left"><code>Classification != &quot;Feature Packs&quot;</code><br><code>UpdateState != &quot;Installed&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -386,30 +409,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Classification != "Feature Packs"</code><br><code>UpdateState != "Installed"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Classification != &quot;Feature Packs&quot;</code><br><code>UpdateState != &quot;Installed&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -417,22 +440,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!= Feature Packs</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!= Feature Packs</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -440,28 +463,29 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!= Installed</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>!= Installed</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

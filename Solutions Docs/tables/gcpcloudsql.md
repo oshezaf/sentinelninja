@@ -31,7 +31,7 @@ Reference for GCPCloudSQL table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AuthInfoPrincipalEmail | string | The principal email address initiating the request. |
 | AuthInfoPrincipalSubject | string | The subject associated with the principal. |
 | AuthInfoServiceAccountKeyName | string | Name of the service account key used for the request. |
@@ -139,7 +139,7 @@ Reference for GCPCloudSQL table in Azure Monitor Logs.
 | ResponseUser | string | User information from the response. |
 | ServiceName | string | Name of the GCP service handling the request. |
 | Severity | string | Severity level of the log entry. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StatusCode | string | Status code returned by the operation. |
 | StatusMessage | string | Message describing the status of the operation. |
 | TenantId | string | The Log Analytics workspace ID |

@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Applications</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Applications</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appgenaicontent">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appgenaicontent">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,146 +53,146 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier of the GenAI agent.</td>
+  <td style="text-align:left">AgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the GenAI agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the GenAI agent.</td>
+  <td style="text-align:left">AgentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the GenAI agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Attributes</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">A property bag of additional key-value pairs associated with this record.</td>
+  <td style="text-align:left">Attributes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A property bag of additional key-value pairs associated with this record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EvaluationExplanation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The explanation or reasoning provided by an evaluation of the GenAI interaction.</td>
+  <td style="text-align:left">EvaluationExplanation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The explanation or reasoning provided by an evaluation of the GenAI interaction.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the record.</td>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InputMessages</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The chat history provided to the model as an input.</td>
+  <td style="text-align:left">InputMessages</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The chat history provided to the model as an input.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ModelName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the GenAI model the request is being made to.</td>
+  <td style="text-align:left">ModelName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the GenAI model the request is being made to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OutputMessages</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Messages returned by the model where each message represents a specific model response (choice, candidate).</td>
+  <td style="text-align:left">OutputMessages</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Messages returned by the model where each message represents a specific model response (choice, candidate).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ParentSpanId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the parent of the associated span.</td>
+  <td style="text-align:left">ParentSpanId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the parent of the associated span.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RoleName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A simplified service identifier combining ServiceNamespace and ServiceName.</td>
+  <td style="text-align:left">RoleName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A simplified service identifier combining ServiceNamespace and ServiceName.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceInstanceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the instance of the service. This is the value of the 'service.instance.id' resource attribute.</td>
+  <td style="text-align:left">ServiceInstanceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the instance of the service. This is the value of the 'service.instance.id' resource attribute.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Logical name of the service. This is the value of the 'service.name' resource attribute.</td>
+  <td style="text-align:left">ServiceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Logical name of the service. This is the value of the 'service.name' resource attribute.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceNamespace</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A namespace for ServiceName. This is the value of the 'service.namespace' resource attribute.</td>
+  <td style="text-align:left">ServiceNamespace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A namespace for ServiceName. This is the value of the 'service.namespace' resource attribute.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SpanId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the span this content is associated with.</td>
+  <td style="text-align:left">SpanId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the span this content is associated with.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SystemInstructions</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The system message or instructions provided to the GenAI model separately from the chat history.</td>
+  <td style="text-align:left">SystemInstructions</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The system message or instructions provided to the GenAI model separately from the chat history.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the GenAI content was captured.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the GenAI content was captured.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolCallArguments</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Parameters passed to the tool call.</td>
+  <td style="text-align:left">ToolCallArguments</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Parameters passed to the tool call.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolCallResult</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The result returned by the tool call (if any and if execution was successful).</td>
+  <td style="text-align:left">ToolCallResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The result returned by the tool call (if any and if execution was successful).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ToolDefinitions</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The list of source system tool definitions available to the GenAI agent or model.</td>
+  <td style="text-align:left">ToolDefinitions</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The list of source system tool definitions available to the GenAI agent or model.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TraceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the trace this record belongs to.</td>
+  <td style="text-align:left">TraceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the trace this record belongs to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -205,6 +205,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscallclientoperations">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/acscallclientoperations">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,121 +57,121 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallClientTimeStamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the call client log was generated.</td>
+  <td style="text-align:left">CallClientTimeStamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the call client log was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the call used to correlate. Can be used to identify correlated events between multiple tables.</td>
+  <td style="text-align:left">CallId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the call used to correlate. Can be used to identify correlated events between multiple tables.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientInstanceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Client instance ID.</td>
+  <td style="text-align:left">ClientInstanceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Client instance ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Client operation duration in millisecond.</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Client operation duration in millisecond.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EndpointId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure Communication Service calling endpoint ID.</td>
+  <td style="text-align:left">EndpointId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure Communication Service calling endpoint ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Client operation ID.</td>
+  <td style="text-align:left">OperationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Client operation ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The operation associated with log record.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The operation associated with log record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationPayload</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Azure Communication Service calling specific operation payload adhering to a defined schema.</td>
+  <td style="text-align:left">OperationPayload</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Azure Communication Service calling specific operation payload adhering to a defined schema.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Client operation type.</td>
+  <td style="text-align:left">OperationType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Client operation type.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ParticipantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the participant.</td>
+  <td style="text-align:left">ParticipantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the participant.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultSignature</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Client operation event result network code.</td>
+  <td style="text-align:left">ResultSignature</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Client operation event result network code.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Client operation event result type.</td>
+  <td style="text-align:left">ResultType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Client operation event result type.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SdkVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure Communication Service calling client SDK version associated with the log.</td>
+  <td style="text-align:left">SdkVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure Communication Service calling client SDK version associated with the log.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The timestamp (UTC) of when the log was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp (UTC) of when the log was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user agent string of the client application.</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user agent string of the client application.</td>
 </tr>
 </tbody>
 </table>
@@ -184,6 +184,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/ironnet-irondefense.html">IronNet IronDefense</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/ironnet-irondefense.html">IronNet IronDefense</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Playbooks/IronNet_UpdateIronDefenseAlerts/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Playbooks/IronNet_UpdateIronDefenseAlerts/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -50,39 +50,102 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">11</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">11</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_All_Updated_Incident | GET | `@variables('Next Link')` | — |
-| IronNet_Login_to_fetch_the_Token | POST | `@{parameters('IronNetUrl')}/IronApi/Login` | — |
-| Get_Incident_and_System_Alert_relations | GET | `https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Loop_through_each_Incident')?['name']}/relations?api-version=2019-01-01-preview` | — |
-| Update_Incident_Rating | POST | `@{parameters('IronNetUrl')}/IronApi/RateAlert` | — |
-| Update_Incident_Rating_without_comment | POST | `@{parameters('IronNetUrl')}/IronApi/RateAlert` | — |
-| Update_Incident_Rating_with_classification_comment | POST | `@{parameters('IronNetUrl')}/IronApi/RateAlert` | — |
-| Update_Incident_Status | POST | `@{parameters('IronNetUrl')}/IronApi/SetAlertStatus` | — |
-| Update_Incident_Status_without_comment | POST | `@{parameters('IronNetUrl')}/IronApi/SetAlertStatus` | — |
-| Get_Entities | GET | `https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/Entities/@{items('Loop_through_Alerts')?['properties']?['relatedResourceName']}?api-version=2019-01-01-preview` | — |
-| Get_Incident_latest_Comments | GET | `https://management.azure.com@{items('Loop_through_each_Incident')?['id']}/comments?api-version=2020-01-01` | — |
-| Generate_the_token_for_Azure_Sentinel_Incident | POST | `https://login.microsoftonline.com/@{parameters('TenantId')}/oauth2/token` | — |
-
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_All_Updated_Incident</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@variables('Next Link')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">IronNet_Login_to_fetch_the_Token</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('IronNetUrl')}/IronApi/Login</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Incident_and_System_Alert_relations</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/incidents/@{items('Loop_through_each_Incident')?['name']}/relations?api-version=2019-01-01-preview</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Incident_Rating</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('IronNetUrl')}/IronApi/RateAlert</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Incident_Rating_without_comment</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('IronNetUrl')}/IronApi/RateAlert</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Incident_Rating_with_classification_comment</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('IronNetUrl')}/IronApi/RateAlert</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Incident_Status</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('IronNetUrl')}/IronApi/SetAlertStatus</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Incident_Status_without_comment</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('IronNetUrl')}/IronApi/SetAlertStatus</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Entities</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://management.azure.com@{parameters('ResourceGroupId')}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('workspace_name')}/providers/Microsoft.SecurityInsights/Entities/@{items('Loop_through_Alerts')?['properties']?['relatedResourceName']}?api-version=2019-01-01-preview</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Incident_latest_Comments</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://management.azure.com@{items('Loop_through_each_Incident')?['id']}/comments?api-version=2020-01-01</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Generate_the_token_for_Azure_Sentinel_Incident</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://login.microsoftonline.com/@{parameters('TenantId')}/oauth2/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -90,46 +153,51 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IronNet%20IronDefense/Playbooks/IronNet_UpdateIronDefenseAlerts/readme.md">IronNet_UpdateIronDefenseAlerts/readme.md</a></em></p>
 </blockquote>
 <p>author: IronNet</p>
-<p>This playbook is used to keep IronDefense and Azure Sentinel in sync by 
-receiving Sentinel incident updates to update the corresponding IronDefense 
-alert workflow status and analyst rating through IronAPI. The playbook 
-should be set to run when a new alert is generated by the "Create Incidents from
-IronDefense" analytic rule.</p>
+<p>This playbook is used to keep IronDefense and Azure Sentinel in sync by
+receiving Sentinel incident updates to update the corresponding IronDefense
+alert workflow status and analyst rating through IronAPI. The playbook
+should be set to run when a new alert is generated by the &quot;Create Incidents from
+IronDefense&quot; analytic rule.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
-<li>Create an IronVue user with the following permissions:
-* Access IronAPI
-* View Alert
-* Edit Alert
-* Manage Threat Intelligence Rules</li>
+<li>Create an IronVue user with the following permissions:</li>
+</ol>
+<ul>
+<li>Access IronAPI</li>
+<li>View Alert</li>
+<li>Edit Alert</li>
+<li>Manage Threat Intelligence Rules</li>
+</ul>
+<ol start="2">
 <li>Configure the IronNet IronDefense data connector.</li>
-<li>Create an analytic rule using the "Create Incidents from IronDefense" rule
-   template.</li>
+<li>Create an analytic rule using the &quot;Create Incidents from IronDefense&quot; rule
+template.</li>
 </ol>
 <h2 id="deployment-instructions">Deployment Instructions</h2>
 <ol>
-<li>Click the "Deploy to Azure" button to open the ARM template wizard to deploy
+<li>Click the &quot;Deploy to Azure&quot; button to open the ARM template wizard to deploy
 this playbook.<br>
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIronNet%20IronDefense%2FPlaybooks%2FIronNet_UpdateIronDefenseAlerts%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIronNet%20IronDefense%2FPlaybooks%2FIronNet_UpdateIronDefenseAlerts%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></li>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIronNet%20IronDefense%2FPlaybooks%2FIronNet_UpdateIronDefenseAlerts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FIronNet%20IronDefense%2FPlaybooks%2FIronNet_UpdateIronDefenseAlerts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></li>
 <li>Enter template parameters. Use the IronVue user credentials for IronAPI.</li>
 </ol>
 <h2 id="post-deployment-instructions">Post-deployment Instructions</h2>
 <ol>
-<li>Edit the "Create Incidents from IronDefense" analytic rule in your Azure
-   Sentinel workspace.</li>
-<li>Click the "Automated Response" tab and select this playbook to run when new
-   alerts are generated.</li>
+<li>Edit the &quot;Create Incidents from IronDefense&quot; analytic rule in your Azure
+Sentinel workspace.</li>
+<li>Click the &quot;Automated Response&quot; tab and select this playbook to run when new
+alerts are generated.</li>
 </ol>
 <h2 id="playbook-execution">Playbook Execution</h2>
 <ol>
-<li>The Playbook execution begins at configured intervals to check if the Sentinel 
-   Incidents has been updated</li>
-<li>Using the IronAPI for an updated Sentinel Incident, the status along with its 
-   classification will be updated to the corresponding IronDefense Alert</li>
+<li>The Playbook execution begins at configured intervals to check if the Sentinel
+Incidents has been updated</li>
+<li>Using the IronAPI for an updated Sentinel Incident, the status along with its
+classification will be updated to the corresponding IronDefense Alert</li>
 </ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/ironnet-irondefense.html">Back to IronNet IronDefense</a></p>
+
 </div>
 
 </body>

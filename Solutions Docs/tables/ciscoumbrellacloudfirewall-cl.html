@@ -24,14 +24,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 </tbody>
 </table>
@@ -48,201 +48,201 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Action</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The final verdict whether to allow or block the traffic based on the rule.</td>
+  <td style="text-align:left">Action</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The final verdict whether to allow or block the traffic based on the rule.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique application ID identified for the current session.</td>
+  <td style="text-align:left">AppId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique application ID identified for the current session.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AwsRegion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The AWS region that stores your VPN logs.</td>
+  <td style="text-align:left">AwsRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The AWS region that stores your VPN logs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">BytesReceived</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The number of bytes received during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
+  <td style="text-align:left">BytesReceived</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The number of bytes received during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">BytesSent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The number of bytes sent during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
+  <td style="text-align:left">BytesSent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The number of bytes sent during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CasiCategoryIds</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Name of the Application category to which the App ID belongs.</td>
+  <td style="text-align:left">CasiCategoryIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Name of the Application category to which the App ID belongs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContentCategoryIds</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of one or more content categories matched by the rule.</td>
+  <td style="text-align:left">ContentCategoryIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of one or more content categories matched by the rule.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContentCategoryListIds</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of one or more content category lists that include categories matched by the rule.</td>
+  <td style="text-align:left">ContentCategoryListIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of one or more content category lists that include categories matched by the rule.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DataCenter</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the data center that processed the user-generated traffic.</td>
+  <td style="text-align:left">DataCenter</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the data center that processed the user-generated traffic.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationCountry</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ISO-3166 alpha-2 two-character identifier of the country associated with the destination IP.</td>
+  <td style="text-align:left">DestinationCountry</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ISO-3166 alpha-2 two-character identifier of the country associated with the destination IP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The destination IP address of the user-generated traffic towards the CDFW.</td>
+  <td style="text-align:left">DestinationIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The destination IP address of the user-generated traffic towards the CDFW.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationListIds</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The destination list IDs that Secure Access applied in the rule.</td>
+  <td style="text-align:left">DestinationListIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The destination list IDs that Secure Access applied in the rule.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationPort</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The destination port number of the user-generated traffic towards the CDFW.</td>
+  <td style="text-align:left">DestinationPort</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The destination port number of the user-generated traffic towards the CDFW.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Direction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The direction of the packet. It is destined either towards the internet or to the customer's network.</td>
+  <td style="text-align:left">Direction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The direction of the packet. It is destined either towards the internet or to the customer's network.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Egress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">TRUE indicates that the egress IP was a reserved IP.</td>
+  <td style="text-align:left">Egress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">TRUE indicates that the egress IP was a reserved IP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EgressIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The public IP address assigned to a session as it exits the Secure Access ZTA infrastructure en route to the destination application.</td>
+  <td style="text-align:left">EgressIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The public IP address assigned to a session as it exits the Secure Access ZTA infrastructure en route to the destination application.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventCorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier generated for each network request, the Event Correlation ID stitches together all related events across various security services (Firewall, SWG, ZTNA) to provide a unified, end-to-end view of a single traffic flow.</td>
+  <td style="text-align:left">EventCorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier generated for each network request, the Event Correlation ID stitches together all related events across various security services (Firewall, SWG, ZTNA) to provide a unified, end-to-end view of a single traffic flow.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FirstPacketTimestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The timestamp when the first packet of the session was received in UTC in seconds. Populated only for traffic handled by Cisco Secure Firewall.</td>
+  <td style="text-align:left">FirstPacketTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The timestamp when the first packet of the session was received in UTC in seconds. Populated only for traffic handled by Cisco Secure Firewall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Fqdns</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The fully qualified domain names (FQDNs) that match the request.</td>
+  <td style="text-align:left">Fqdns</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The fully qualified domain names (FQDNs) that match the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FwEventId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ID of the firewall event. Populated only for traffic handled by Cisco Secure Firewall.</td>
+  <td style="text-align:left">FwEventId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the firewall event. Populated only for traffic handled by Cisco Secure Firewall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Identities</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The names of the network tunnel.</td>
+  <td style="text-align:left">Identities</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The names of the network tunnel.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IdentityType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of identity that made the request. Should always be CDFW Tunnel Device.</td>
+  <td style="text-align:left">IdentityType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of identity that made the request. Should always be CDFW Tunnel Device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastPacketTimestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The timestamp when the last packet of the session was received in UTC in seconds. Populated only for traffic handled by Cisco Secure Firewall.</td>
+  <td style="text-align:left">LastPacketTimestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The timestamp when the last packet of the session was received in UTC in seconds. Populated only for traffic handled by Cisco Secure Firewall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OrganizationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Secure Access organization ID.</td>
+  <td style="text-align:left">OrganizationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Secure Access organization ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OriginIds</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The unique identity of the network tunnel.</td>
+  <td style="text-align:left">OriginIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The unique identity of the network tunnel.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PacketSize</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The size in bytes of the packet sent to the CDFW.</td>
+  <td style="text-align:left">PacketSize</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The size in bytes of the packet sent to the CDFW.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PacketsReceived</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The number of packets received during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
+  <td style="text-align:left">PacketsReceived</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The number of packets received during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PacketsSent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The number of packets sent during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
+  <td style="text-align:left">PacketsSent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The number of packets sent during the session. Populated only for traffic handled by Cisco Secure Firewall.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PostureId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique ID of the endpoint posture profile.</td>
+  <td style="text-align:left">PostureId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique ID of the endpoint posture profile.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PrivateAppGroupId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique ID of the private resource group ID that the private resource belongs to.</td>
+  <td style="text-align:left">PrivateAppGroupId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique ID of the private resource group ID that the private resource belongs to.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PrivateFlow</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">TRUE if Secure Access applied a private access rule to the user-generated traffic, and FALSE if Secure Access applied an internet access rule.</td>
+  <td style="text-align:left">PrivateFlow</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">TRUE if Secure Access applied a private access rule to the user-generated traffic, and FALSE if Secure Access applied an internet access rule.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Protocol</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The actual protocol of the traffic. Valid values are: TCP, UDP, or ICMP.</td>
+  <td style="text-align:left">Protocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The actual protocol of the traffic. Valid values are: TCP, UDP, or ICMP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ID of the rule that processed the user traffic.</td>
+  <td style="text-align:left">RuleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the rule that processed the user traffic.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The internal IP address of the user-generated traffic towards the CDFW. If the traffic goes through NAT before it comes to CDFW, it will be the NAT IP address.</td>
+  <td style="text-align:left">SourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The internal IP address of the user-generated traffic towards the CDFW. If the traffic goes through NAT before it comes to CDFW, it will be the NAT IP address.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourcePort</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The internal port number of the user-generated traffic towards the CDFW.</td>
+  <td style="text-align:left">SourcePort</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The internal port number of the user-generated traffic towards the CDFW.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The date and time of the cloud-delivered firewall traffic event, expressed as a UTC-formatted string.</td>
+  <td style="text-align:left">Timestamp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The date and time of the cloud-delivered firewall traffic event, expressed as a UTC-formatted string.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficSource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The source of the user-generated traffic. Valid values are 0 - Unknown, 1 - VPN,2 – ZTNA, 3 - Network Tunnel.</td>
+  <td style="text-align:left">TrafficSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source of the user-generated traffic. Valid values are 0 - Unknown, 1 - VPN,2 – ZTNA, 3 - Network Tunnel.</td>
 </tr>
 </tbody>
 </table>
@@ -256,76 +256,116 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/ciscoumbrellaconnector.html">Cisco Umbrella (via Codeless Connector Framework)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/ciscoumbrellaconnector.html">Cisco Umbrella (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/ciscoumbrelladataconnector.html">Cisco Cloud Security</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/ciscoumbrelladataconnectorelasticpremium.html">Cisco Cloud Security (using elastic premium plan)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (21)</h2>
-<h3 id="analytic-rules">Analytic Rules (10)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (31)</h2>
+<h3 id="analytic-rules">Analytic Rules (20)</h3>
 <p><strong>GitHub Only:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-c775740f.html">Cisco Cloud Security - Connection to Unpopular Website Detected</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-c775740f.html">Cisco Cloud Security - Connection to Unpopular Website Detected</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-dc2431a8.html">Cisco Cloud Security - Connection to non-corporate private network</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-dc2431a8.html">Cisco Cloud Security - Connection to non-corporate private network</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-483ca4a0.html">Cisco Cloud Security - Crypto Miner User-Agent Detected</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-483ca4a0.html">Cisco Cloud Security - Crypto Miner User-Agent Detected</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-2a2d02f5.html">Cisco Cloud Security - Empty User Agent Detected</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-2a2d02f5.html">Cisco Cloud Security - Empty User Agent Detected</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-d0f46ed9.html">Cisco Cloud Security - Hack Tool User-Agent Detected</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-d0f46ed9.html">Cisco Cloud Security - Hack Tool User-Agent Detected</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-05b10328.html">Cisco Cloud Security - Rare User Agent Detected</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-05b10328.html">Cisco Cloud Security - Rare User Agent Detected</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-e2a8343a.html">Cisco Cloud Security - Request Allowed to harmful/malicious URI category</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-e2a8343a.html">Cisco Cloud Security - Request Allowed to harmful/malicious URI category</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-4fbd74eb.html">Cisco Cloud Security - Request to blocklisted file type</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-4fbd74eb.html">Cisco Cloud Security - Request to blocklisted file type</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-8213dfcd.html">Cisco Cloud Security - URI contains IP address</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-8213dfcd.html">Cisco Cloud Security - URI contains IP address</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-9add09cc.html">Cisco Cloud Security - Windows PowerShell User-Agent Detected</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-9add09cc.html">Cisco Cloud Security - Windows PowerShell User-Agent Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-connection-to-unpopular-website-detected-75297f62-10a8-4fc1-9b2a-12f25c6f05a7-f1ef1f4f.html">Cisco Umbrella - Connection to Unpopular Website Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-connection-to-non-corporate-private-network-c9b6d281-b96b-4763-b728-9a04b9fe1246-d0eaf302.html">Cisco Umbrella - Connection to non-corporate private network</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-crypto-miner-user-agent-detected-b619d1f1-7f39-4c7e-bf9e-afbb46457997-0f9ddd1e.html">Cisco Umbrella - Crypto Miner User-Agent Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-empty-user-agent-detected-2b328487-162d-4034-b472-59f1d53684a1-905ba02a.html">Cisco Umbrella - Empty User Agent Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-hack-tool-user-agent-detected-8d537f3c-094f-430c-a588-8a87da36ee3a-e3f1aadd.html">Cisco Umbrella - Hack Tool User-Agent Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-rare-user-agent-detected-8c8de3fa-6425-4623-9cd9-45de1dd0569a-0e96a6a6.html">Cisco Umbrella - Rare User Agent Detected</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-request-allowed-to-harmful-malicious-uri-category-d6bf1931-b1eb-448d-90b2-de118559c7ce-7f7031e1.html">Cisco Umbrella - Request Allowed to harmful/malicious URI category</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-request-to-blocklisted-file-type-de58ee9e-b229-4252-8537-41a4c2f4045e-098588eb.html">Cisco Umbrella - Request to blocklisted file type</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-uri-contains-ip-address-ee1818ec-5f65-4991-b711-bcf2ab7e36c3-33d6f7f0.html">Cisco Umbrella - URI contains IP address</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-cisco-umbrella-windows-powershell-user-agent-detected-b12b3dab-d973-45af-b07e-e29bb34d8db9-f6bce1e2.html">Cisco Umbrella - Windows PowerShell User-Agent Detected</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -334,50 +374,50 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-'blocked'-user-agents.-22e5e573-409b-433f-91de-50d6f0ad5a9e-d7476629.html">Cisco Cloud Security - 'Blocked' User-Agents.</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-%27blocked%27-user-agents.-22e5e573-409b-433f-91de-50d6f0ad5a9e-d7476629.html">Cisco Cloud Security - 'Blocked' User-Agents.</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-anomalous-fqdns-for-domain-c92741e6-8454-40bb-8830-069cb86946c6-b4d4c808.html">Cisco Cloud Security - Anomalous FQDNs for domain</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-anomalous-fqdns-for-domain-c92741e6-8454-40bb-8830-069cb86946c6-b4d4c808.html">Cisco Cloud Security - Anomalous FQDNs for domain</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-dns-errors.-26aebe0d-9a4f-456d-bbb9-9f4c9c5d28ca-a2f4149b.html">Cisco Cloud Security - DNS Errors.</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-dns-errors.-26aebe0d-9a4f-456d-bbb9-9f4c9c5d28ca-a2f4149b.html">Cisco Cloud Security - DNS Errors.</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-dns-requests-to-unreliable-categories.-bd1457df-3e81-4218-a079-0963200c8d67-c9326256.html">Cisco Cloud Security - DNS requests to unreliable categories.</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-dns-requests-to-unreliable-categories.-bd1457df-3e81-4218-a079-0963200c8d67-c9326256.html">Cisco Cloud Security - DNS requests to unreliable categories.</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-high-values-of-uploaded-data-975419eb-7041-419c-b8f0-c4bf513cf2b2-3ace2cb5.html">Cisco Cloud Security - High values of Uploaded Data</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-high-values-of-uploaded-data-975419eb-7041-419c-b8f0-c4bf513cf2b2-3ace2cb5.html">Cisco Cloud Security - High values of Uploaded Data</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-higher-values-of-count-of-the-same-bytesin-size-55393e5b-3f7e-4d40-85e5-38ef9ecd8484-b9761e9f.html">Cisco Cloud Security - Higher values of count of the Same BytesIn size</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-higher-values-of-count-of-the-same-bytesin-size-55393e5b-3f7e-4d40-85e5-38ef9ecd8484-b9761e9f.html">Cisco Cloud Security - Higher values of count of the Same BytesIn size</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-possible-connection-to-c2.-85421f18-2de4-42ff-9ef4-058924dcb1bf-efd3c537.html">Cisco Cloud Security - Possible connection to C2.</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-possible-connection-to-c2.-85421f18-2de4-42ff-9ef4-058924dcb1bf-efd3c537.html">Cisco Cloud Security - Possible connection to C2.</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-possible-data-exfiltration-497d7250-87e1-49b1-a096-94f61c7ade9c-1d6ee98c.html">Cisco Cloud Security - Possible data exfiltration</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-possible-data-exfiltration-497d7250-87e1-49b1-a096-94f61c7ade9c-1d6ee98c.html">Cisco Cloud Security - Possible data exfiltration</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-proxy-'allowed'-to-unreliable-categories.-daf2f3cf-0f0d-45c1-b428-3c23d643859b-b99f1692.html">Cisco Cloud Security - Proxy 'Allowed' to unreliable categories.</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-proxy-%27allowed%27-to-unreliable-categories.-daf2f3cf-0f0d-45c1-b428-3c23d643859b-b99f1692.html">Cisco Cloud Security - Proxy 'Allowed' to unreliable categories.</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-cisco-cloud-security-requests-to-uncategorized-resources-de2ec986-ee24-465f-adf2-b718997074c1-635d0044.html">Cisco Cloud Security - Requests to uncategorized resources</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-cisco-cloud-security-requests-to-uncategorized-resources-de2ec986-ee24-465f-adf2-b718997074c1-635d0044.html">Cisco Cloud Security - Requests to uncategorized resources</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -386,14 +426,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/ciscoumbrella-ciscoumbrella-dcc07ffb.html">CiscoUmbrella</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/ciscoumbrella-ciscoumbrella-dcc07ffb.html">CiscoUmbrella</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -402,22 +442,23 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Solution</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../parsers/cisco-umbrella.html">Cisco_Umbrella</a></td>
-<td style="text-align: left;"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../parsers/cisco-umbrella.html">Cisco_Umbrella</a></td>
+  <td style="text-align:left"><a href="../solutions/ciscoumbrella.html">CiscoUmbrella</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

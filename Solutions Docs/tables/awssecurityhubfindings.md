@@ -32,7 +32,7 @@ Reference for AWSSecurityHubFindings table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AwsAccountId | string | The AWS account ID associated with the event. |
 | AwsRegion | string | The AWS region where the event occurred. |
 | AwsSecurityFindingCreatedAt | datetime | The timestamp when the security finding was created. |
@@ -60,7 +60,7 @@ Reference for AWSSecurityHubFindings table in Azure Monitor Logs.
 | Remediation | dynamic | Details about how to remediate the security finding. |
 | Resources | dynamic | The resources associated with the security finding. |
 | SchemaVersion | string | The version of the schema used for the finding. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp when the event was generated. |
 | Type | string | The name of the table |

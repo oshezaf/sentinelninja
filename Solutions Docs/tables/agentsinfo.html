@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AgentsInfo &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar">
@@ -28,210 +26,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">XDR</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">XDR</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-agentsinfo-table">View Documentation</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="schema">Schema (35 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/agentsinfo">Azure Monitor documentation</a></p>
-<table id="schema-table">
-<thead>
-<tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">AgentDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the agent as displayed in the agent's source</td>
-</tr>
-<tr>
-<td style="text-align: left;">AgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the agent</td>
-</tr>
-<tr>
-<td style="text-align: left;">AgentName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Display name of the agent</td>
-</tr>
-<tr>
-<td style="text-align: left;">Availability</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The deployment scope of the agent (that is, whether deployed to all users, specific groups, or individual users)</td>
-</tr>
-<tr>
-<td style="text-align: left;">Capabilities</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The intents, actions, skills, and orchestrations of the agent</td>
-</tr>
-<tr>
-<td style="text-align: left;">Channels</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The channels or surfaces where the agent can operate, such as Microsoft 365 applications or APIs</td>
-</tr>
-<tr>
-<td style="text-align: left;">ConnectedAgents</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">List of other agents connected to the agent for multi-agent orchestration</td>
-</tr>
-<tr>
-<td style="text-align: left;">CreatedDateTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the agent was created</td>
-</tr>
-<tr>
-<td style="text-align: left;">DeclaredDataSources</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The data repositories and knowledge sources the agent can access</td>
-</tr>
-<tr>
-<td style="text-align: left;">DeclaredTools</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Functional tools the agent can invoke at runtime</td>
-</tr>
-<tr>
-<td style="text-align: left;">Endpoints</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">List of agent runtime endpoints, including URL, transport type, and external connectivity flag</td>
-</tr>
-<tr>
-<td style="text-align: left;">EntraAgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The agent's unique enterprise application object identifier by Microsoft Entra ID</td>
-</tr>
-<tr>
-<td style="text-align: left;">EntraBlueprintId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique identifier by Microsoft Entra ID for the agent identity blueprint, which serves as the template from which the agent's identity was created</td>
-</tr>
-<tr>
-<td style="text-align: left;">Guardrails</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Guardrails attached to the agent and their coverage</td>
-</tr>
-<tr>
-<td style="text-align: left;">InstanceCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Number of agent instances created from the same Microsoft Entra ID agent identity blueprint</td>
-</tr>
-<tr>
-<td style="text-align: left;">Instructions</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The agent's system prompt that defines its default behavior, persona, and operating boundaries</td>
-</tr>
-<tr>
-<td style="text-align: left;">LastPublishedDateTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the agent was last published or deployed</td>
-</tr>
-<tr>
-<td style="text-align: left;">LastUpdatedDateTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the agent's metadata was last modified</td>
-</tr>
-<tr>
-<td style="text-align: left;">LifecycleStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The agent's current operational state in the tenant; possible values:Active,Blocked,Uninstalled,Deleted</td>
-</tr>
-<tr>
-<td style="text-align: left;">McpServers</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The Model Context Protocol (MCP) servers connected to the agent, including server URLs and credential configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">Memory</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The agent's declarative memory store configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">Model</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The AI model powering the agent</td>
-</tr>
-<tr>
-<td style="text-align: left;">ObservabilityId</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Unique identifier used to correlate the agent with its usage and activity data in Microsoft Agent 365</td>
-</tr>
-<tr>
-<td style="text-align: left;">Owners</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Primary owners of the agent</td>
-</tr>
-<tr>
-<td style="text-align: left;">Permissions</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Permissions record of the agent, including those that have been requested and granted, their approval state, and consent enumeration</td>
-</tr>
-<tr>
-<td style="text-align: left;">Platform</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The platform that provided the information about the agent</td>
-</tr>
-<tr>
-<td style="text-align: left;">PublishedStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The agent's publication status; possible values:Draft,Published</td>
-</tr>
-<tr>
-<td style="text-align: left;">RawAgentInfo</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Additional information about the agent, in JSON format</td>
-</tr>
-<tr>
-<td style="text-align: left;">SharedWith</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The users and security groups the agent has been shared with</td>
-</tr>
-<tr>
-<td style="text-align: left;">Skills</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Skills attached to the agent</td>
-</tr>
-<tr>
-<td style="text-align: left;">SourceAgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Native identifier assigned by the platform where the agent originated</td>
-</tr>
-<tr>
-<td style="text-align: left;">Timestamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the agent information was recorded</td>
-</tr>
-<tr>
-<td style="text-align: left;">ToolsAuthenticationType</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Structured summary of agent identity, authentication, and authorization model</td>
-</tr>
-<tr>
-<td style="text-align: left;">Triggers</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">List of the agent's triggers</td>
-</tr>
-<tr>
-<td style="text-align: left;">Version</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Version of the agent</td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-agentsinfo-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -239,31 +49,8 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
-<script>
-$(function() {
-    var t = $('#schema-table');
-    if (!t.length) return;
-    // Add filter row to thead
-    var hdr = t.find('thead');
-    var cols = hdr.find('tr:first th').length;
-    var fr = $('<tr class="filters"></tr>');
-    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
-    hdr.append(fr);
-    // Init DataTable
-    var dt = t.DataTable({
-        paging: false,
-        info: true,
-        orderCellsTop: true,
-        dom: 'frti',
-    });
-    // Per-column filter
-    hdr.find('tr.filters input').each(function(i) {
-        $(this).on('keyup change', function() {
-            dt.column(i).search(this.value).draw();
-        });
-    });
-});
-</script>
+
 </body>
 </html>

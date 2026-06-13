@@ -30,7 +30,7 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AddedPrivileges | dynamic | Privileges added during the detection process. |
 | AdversaryIds | dynamic | List of adversary IDs associated with the detection. |
 | AgentScanId | string | Identifier for the agent scan that detected this threat. |
@@ -78,7 +78,7 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 | MaxSeverity | int | Maximum severity level across all behaviors in the detection. |
 | MaxSeverityDisplayName | string | Text representation of the maximum severity level. |
 | Md5 | string | MD5 hash of the detected file. |
-| MitreAttack | dynamic | MITRE ATT&CK tactics and techniques associated with the detection. |
+| MitreAttack | dynamic | MITRE ATT&amp;CK tactics and techniques associated with the detection. |
 | NetworkAccesses | dynamic | List of network connections made by the detected process. |
 | Objective | string | Objective associated with the detection. |
 | OsName | string | Operating system name where the detection occurred. |
@@ -113,7 +113,7 @@ Reference for CrowdStrikeDetections table in Azure Monitor Logs.
 | SourceAccountSamAccountName | string | Source account SAM account name associated with the detection. |
 | SourceAccountUpn | string | Source account UPN associated with the detection. |
 | SourceEventModel | string | Source event model associated with the detection. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Status | string | Current status of the detection (e.g., new, in_progress, resolved). |
 | Tactic | string | Tactic associated with the detection. |
 | TacticId | string | ID of the tactic associated with the detection. |

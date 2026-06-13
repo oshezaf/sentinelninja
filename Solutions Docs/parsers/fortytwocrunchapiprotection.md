@@ -12,7 +12,7 @@
 |:----------|:------|
 | Title | Parser for 42Crunch API Protection |
 | Location | Solution |
-| Solution | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
+| Solution | [42Crunch API Protection](../solutions/42crunch-api-protection.md) ⚠️ |
 | Version | 1.0.0 |
 | Last Updated | 2026-05-11 |
 | Category | Microsoft Sentinel Parser |

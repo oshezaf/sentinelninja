@@ -23,7 +23,7 @@ Reference for AVNMRuleCollectionChange table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AppliedRuleCollectionIds | dynamic | List of current applied rule collections to the network resources like virtual networks or subnets listed in TargetResourceIds by your network manager. |
@@ -35,7 +35,7 @@ Reference for AVNMRuleCollectionChange table in Azure Monitor Logs.
 | OperationName | string | Name of the operation that applies rule collections or removes applied rule collections on network resources like virtual network, subnets. |
 | ResultType | string | Indicates the operation status and can include: Success, Failure. |
 | SelfDiagnosis | string | A descriptive self diagnosis message that can include explanations and resolution steps in the case of failures or warnings. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time the event was generated. |
 | Type | string | The name of the table |

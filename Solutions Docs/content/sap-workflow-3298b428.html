@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/sap.html">SAP</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/sap.html">SAP</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/Basic-SAPLockUser-STD/workflow.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP/Playbooks/Basic-SAPLockUser-STD/workflow.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -50,65 +50,164 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">10</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">10</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_comment_to_incident_(true_positive) | post | `/Incidents/Comment` | — |
-| Close_Sentinel_incident | put | `/Incidents` | — |
-| Add_false-positive_comment_to_incident | post | `/Incidents/Comment` | — |
-| Flag_false_positive | put | `/Incidents` | — |
-
-#### [`teams`](../logic-apps/managed-teams.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Reply_with_a_message_in_a_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Reply_with_a_message_in_a_channel_2 | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Notify_impacted_colleague_working_with_SAP | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
-| Reply_with_SAP_lock_message_in_channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Reply_with_true_positive_success | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Reply_to_Admins_with_lock_error_in_Channel | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Reply_with_false_positive_success | post | `/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Post_timeout_message_in_Channel | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}` | — |
-| Post_parsing_error_message_to_Logic_App_admin | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
-| Post_processing_error_message_to_Logic_App_admin | post | `/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Block_User_via_SOAP_exposed_BAPI | POST | `@{parameters('SOAPApiBasePath')}/sap-com:document:sap:rfc:functions:ZWS_BAPI_USER_LOCK:BAPI_USER_LOCKRequest?sap-client=@{variables('sap-client-id')}` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(true_positive)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Close_Sentinel_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_false-positive_comment_to_incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Flag_false_positive</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="teams"><a href="../logic-apps/managed-teams.html"><code>teams</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Reply_with_a_message_in_a_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reply_with_a_message_in_a_channel_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Notify_impacted_colleague_working_with_SAP</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reply_with_SAP_lock_message_in_channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reply_with_true_positive_success</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reply_to_Admins_with_lock_error_in_Channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reply_with_false_positive_success</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v1.0/teams/conversation/replyWithMessage/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Post_timeout_message_in_Channel</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Channel')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Post_parsing_error_message_to_Logic_App_admin</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Post_processing_error_message_to_Logic_App_admin</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/beta/teams/conversation/message/poster/Flow bot/location/@{encodeURIComponent('Chat with Flow bot')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Block_User_via_SOAP_exposed_BAPI</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('SOAPApiBasePath')}/sap-com:document:sap:rfc:functions:ZWS_BAPI_USER_LOCK:BAPI_USER_LOCKRequest?sap-client=@{variables('sap-client-id')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -122,30 +221,30 @@
 <table>
 <thead>
 <tr>
-<th>Step</th>
-<th>🪂</th>
+  <th>Step</th>
+  <th>🪂</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Logic Apps Infrastructure</td>
-<td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FBasic-SAPLockUser-STD%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></td>
+  <td>Logic Apps Infrastructure</td>
+  <td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FBasic-SAPLockUser-STD%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></td>
 </tr>
 <tr>
-<td>Logic Apps Connections</td>
-<td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FBasic-SAPLockUser-STD%2Fazureconnectordeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></td>
+  <td>Logic Apps Connections</td>
+  <td><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSAP%2FPlaybooks%2FBasic-SAPLockUser-STD%2Fazureconnectordeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></td>
 </tr>
 <tr>
-<td>Logic Apps Standard Connections configuration</td>
-<td>🔗<a href="connections.json">link</a></td>
+  <td>Logic Apps Standard Connections configuration</td>
+  <td>🔗<a href="connections.json">link</a></td>
 </tr>
 <tr>
-<td>Logic Apps Standard workflow</td>
-<td>🔗<a href="workflow.json">link</a></td>
+  <td>Logic Apps Standard workflow</td>
+  <td>🔗<a href="workflow.json">link</a></td>
 </tr>
 <tr>
-<td>Logic Apps Standard workflow parameters</td>
-<td>🔗<a href="workflowparameters.json">link</a></td>
+  <td>Logic Apps Standard workflow parameters</td>
+  <td>🔗<a href="workflowparameters.json">link</a></td>
 </tr>
 </tbody>
 </table>
@@ -153,16 +252,16 @@
 <table>
 <thead>
 <tr>
-<th>Role Name</th>
-<th>Resource Type Scope</th>
-<th>Purpose</th>
+  <th>Role Name</th>
+  <th>Resource Type Scope</th>
+  <th>Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#microsoft-sentinel-responder">Microsoft Sentinel Responder</a></td>
-<td>At least resource group where Sentinel lives</td>
-<td>Required for Incident state update</td>
+  <td><a href="https://learn.microsoft.com/azure/role-based-access-control/built-in-roles#microsoft-sentinel-responder">Microsoft Sentinel Responder</a></td>
+  <td>At least resource group where Sentinel lives</td>
+  <td>Required for Incident state update</td>
 </tr>
 </tbody>
 </table>
@@ -171,6 +270,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sap.html">Back to SAP</a></p>
+
 </div>
 
 </body>

@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">VMinsights</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">VMinsights</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmprocess">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/vmprocess">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -60,156 +60,156 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique ID for the dependency agent installed on the server.</td>
+  <td style="text-align:left">AgentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique ID for the dependency agent installed on the server.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CommandLine</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The command line</td>
+  <td style="text-align:left">CommandLine</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The command line</td>
 </tr>
 <tr>
-<td style="text-align: left;">CompanyName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the company</td>
+  <td style="text-align:left">CompanyName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the company</td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the computer.</td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the computer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Description</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The process description</td>
+  <td style="text-align:left">Description</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The process description</td>
 </tr>
 <tr>
-<td style="text-align: left;">DisplayName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The friendly display name of the process</td>
+  <td style="text-align:left">DisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The friendly display name of the process</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutableName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the process executable</td>
+  <td style="text-align:left">ExecutableName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the process executable</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutablePath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The path to the executable file</td>
+  <td style="text-align:left">ExecutablePath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The path to the executable file</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The file version</td>
+  <td style="text-align:left">FileVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The file version</td>
 </tr>
 <tr>
-<td style="text-align: left;">FirstPid</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The first PID in the process pool</td>
+  <td style="text-align:left">FirstPid</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The first PID in the process pool</td>
 </tr>
 <tr>
-<td style="text-align: left;">Group</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The process group name for the process</td>
+  <td style="text-align:left">Group</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The process group name for the process</td>
 </tr>
 <tr>
-<td style="text-align: left;">InternalName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The internal name</td>
+  <td style="text-align:left">InternalName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The internal name</td>
 </tr>
 <tr>
-<td style="text-align: left;">Machine</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The machine name of the server.</td>
+  <td style="text-align:left">Machine</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The machine name of the server.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Process</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the process.</td>
+  <td style="text-align:left">Process</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProductName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the product</td>
+  <td style="text-align:left">ProductName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the product</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProductVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The product version</td>
+  <td style="text-align:left">ProductVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The product version</td>
 </tr>
 <tr>
-<td style="text-align: left;">Role</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The role of the process.</td>
+  <td style="text-align:left">Role</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The role of the process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Services</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">A list of services associated with the process.</td>
+  <td style="text-align:left">Services</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A list of services associated with the process.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">StartTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The process pool start time</td>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The process pool start time</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the record was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the record was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserDomain</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The domain under which the process is executing</td>
+  <td style="text-align:left">UserDomain</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain under which the process is executing</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The account under which the process is executing</td>
+  <td style="text-align:left">UserName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The account under which the process is executing</td>
 </tr>
 <tr>
-<td style="text-align: left;">WorkingDirectory</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The working directory</td>
+  <td style="text-align:left">WorkingDirectory</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The working directory</td>
 </tr>
 </tbody>
 </table>
@@ -225,14 +225,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -248,6 +248,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

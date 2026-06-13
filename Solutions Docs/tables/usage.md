@@ -28,7 +28,7 @@ Reference for Usage table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AvgLatencyInSeconds | real | Deprecated |
 | BatchesCapped | long | Deprecated |
 | BatchesOutsideSla | long | Deprecated |
@@ -45,7 +45,7 @@ Reference for Usage table in Azure Monitor Logs.
 | QuantityUnit | string | Value is alwais Mbytes. |
 | ResourceUri | string | The URI of the workspace. This will be same for all records in this table in workspace. |
 | Solution | string | Solution about which usage is being reported. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StartTime | datetime | Start time of the 1 hour aggregation window (same as TimeGenerated). |
 | TimeGenerated | datetime | Date and time the record was created. |
 | TotalBatches | long | Deprecated |
@@ -67,7 +67,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (17)
+## Content Items Using This Table (35)
 
 ### Analytic Rules (1)
 
@@ -88,7 +88,7 @@ This table is used by the following solutions:
 | [M2131_RecommendedDatatableNotLogged_EL2](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el2-76326a24-1223-4066-88a3-3826e3768932-869d983c.md) |  |
 | [M2131_RecommendedDatatableNotLogged_EL3](../content/maturitymodelforeventlogmanagementm2131-m2131-recommendeddatatablenotlogged-el3-8b415f2d-44c1-4edb-8ca6-ddf7d2d28b20-0cceb968.md) |  |
 
-### Workbooks (10)
+### Workbooks (28)
 
 **In solution [Corelight](../solutions/corelight.md):**
 
@@ -139,6 +139,29 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AWSS3](../content/github-only-awss3-8722dc32.md) |  |
+| [ArchivingBasicLogsRetention](../content/github-only-archivingbasiclogsretention-2a012287.md) |  |
+| [AzureSentinelCost](../content/github-only-azuresentinelcost-2ae05990.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,McasShadowItReporting,SigninLogs"` |
+| [DCR-Toolkit](../content/github-only-dcr-toolkit-37d84106.md) | `DataType !has "_CL"`<br>`DataType !in "SecurityEvent,WindowsEvent,Syslog,CommonSecurityLog,AzureDiagnostics,Anomalies,BehaviorAnalytics"` |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [LogSourcesAndAnalyticRulesCoverage](../content/github-only-logsourcesandanalyticrulescoverage-d4c48df0.md) |  |
+| [MITREAttack](../content/github-only-mitreattack-27c36827.md) |  |
+| [MicrosoftSentinelCostEUR](../content/github-only-microsoftsentinelcosteur-f339a745.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,McasShadowItReporting,SigninLogs"` |
+| [MicrosoftSentinelCostGBP](../content/github-only-microsoftsentinelcostgbp-451ae793.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,McasShadowItReporting,SigninLogs"` |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,McasShadowItReporting,SigninLogs"`<br>`IsBillable == "true"` |
+| [SentinelCosts](../content/github-only-sentinelcosts-07de117e.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,McasShadowItReporting,SigninLogs"` |
+| [Sentinel_Central](../content/github-only-sentinel-central-2a36f7ae.md) |  |
+| [VisualizationDemo](../content/github-only-visualizationdemo-12456b23.md) |  |
+| [WorkspaceUsage](../content/github-only-workspaceusage-97e7cfa7.md) | `DataType in "AADManagedIdentitySignInLogs,AADNonInteractiveUserSignInLogs,AADProvisioningLogs,AADServicePrincipalSignInLogs,ADFSSignInLogs,AlertEvidence,AuditLogs,CloudAppEvents,DeviceEvents,DeviceFileCertificateInfo,DeviceFileEvents,DeviceImageLoadEvents,DeviceInfo,DeviceLogonEvents,DeviceNetworkEvents,DeviceNetworkInfo,DeviceProcessEvents,DeviceRegistryEvents,EmailAttachmentInfo,EmailEvents,EmailPostDeliveryEvents,EmailUrlInfo,IdentityDirectoryEvents,IdentityLogonEvents,IdentityQueryEvents,InformationProtectionLogs_CL,McasShadowItReporting,SigninLogs"`<br>`DataType !endswith "_RST"`<br>`DataType !endswith "_SRCH"`<br>`IsBillable == "true"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ## Selection Criteria Summary (1 criteria, 1 total references)
 

@@ -24,7 +24,7 @@ Reference for CrowdStrikeIncidents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AssignedTo | string | ID of the user assigned to the incident. |
 | AssignedToName | string | Name of the user assigned to handle the incident. |
 | Cid | string | Customer ID in the CrowdStrike platform. |
@@ -46,13 +46,13 @@ Reference for CrowdStrikeIncidents table in Azure Monitor Logs.
 | LmTypes | int | Types of Lightweight Mode configurations. |
 | ModifiedTimestamp | datetime | Timestamp when the incident was last modified. |
 | Objectives | dynamic | List of attacker objectives identified in the incident. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Start | datetime | Timestamp when the incident started. |
 | State | string | Current state of the incident. |
 | Status | int | Numerical status code of the incident. |
-| Tactics | dynamic | List of MITRE ATT&CK tactics identified in the incident. |
+| Tactics | dynamic | List of MITRE ATT&amp;CK tactics identified in the incident. |
 | Tags | dynamic | Custom tags associated with the incident. |
-| Techniques | dynamic | List of MITRE ATT&CK techniques identified in the incident. |
+| Techniques | dynamic | List of MITRE ATT&amp;CK techniques identified in the incident. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when the incident data was ingested. |
 | Type | string | The name of the table |

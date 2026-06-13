@@ -29,7 +29,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AclGroup | string | Access control list group refers to the network security group associated with the network security group rule name (or) the network group associated with the security admin configuration which allowed or denied the connection. |
 | AclRule | string | Access control list rule refers to the network security group rule name or the security admin rule name which allowed or denied the connection. |
 | Action | string | Action taken for the record. For network flow records this would indicate whether the flow was allowed or denied. For example: Allow/Deny for Firewall logs. |
@@ -60,7 +60,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | DestRegion | string | Azure region of virtual network/ network interface/ virtual machine to which the destination IP in the flow belongs to. |
 | DestServiceId | string | Service ID associated with the destination IP in the flow. |
 | DestServiceName | string | Service Name associated with the destination IP in the flow. |
-| DestServiceTags | string | Service tag of DestPublicIps in format <Space separated list of destination public ips grouped by service tag>|<ServiceTag> |
+| DestServiceTags | string | Service tag of DestPublicIps in format &lt;Space separated list of destination public ips grouped by service tag&gt;|&lt;ServiceTag&gt; |
 | DestSubnet | string | Subnet associated with the destination IP in the flow. |
 | DestSubscription | string | Subscription Id of virtual network/ network interface/ virtual machine to which the destination IP in the flow belongs to. |
 | DestTenantId | string | Tenant ID associated with the destination IP in the flow. |
@@ -91,7 +91,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | PrivateLinkResourceId | string | Resource ID of the private link service. |
 | PrivateLinkResourceName | string | Resource name of the private link service. |
 | RecordCount | long | Count of individual records that were aggregated into this record. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcApplicationGateway | string | Application gateway associated with the source IP in the flow. |
 | SrcCloud | string | Cloud associated with the source IP in the flow. Possible values can be Public, Mooncake and Fairfax. |
 | SrcEnvironment | string | Environment associated with the source IP in the flow. Possible values can be Prod and NonProd. |
@@ -106,7 +106,7 @@ Reference for NTANetAnalytics table in Azure Monitor Logs.
 | SrcRegion | string | Azure region of virtual network/ network interface/ virtual machine to which the source IP in the flow belongs to. |
 | SrcServiceId | string | Service ID associated with the source IP in the flow. |
 | SrcServiceName | string | Service Name associated with the source IP in the flow. |
-| SrcServiceTags | string | Service tag of SrcPublicIps in format <Space separated list of source public ips grouped by service tag>|<ServiceTag> |
+| SrcServiceTags | string | Service tag of SrcPublicIps in format &lt;Space separated list of source public ips grouped by service tag&gt;|&lt;ServiceTag&gt; |
 | SrcSubnet | string | Subnet associated with the source IP in the flow. |
 | SrcSubscription | string | Subscription of the Azure virtual network/ network interface/ virtual machine to which the source IP in the flow belongs to. |
 | SrcTenantId | string | Tenant ID associated with the source IP in the flow. |

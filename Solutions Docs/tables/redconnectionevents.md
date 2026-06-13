@@ -23,7 +23,7 @@ Reference for REDConnectionEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ClientIp | string | The Redis client IP address. |
@@ -34,7 +34,7 @@ Reference for REDConnectionEvents table in Azure Monitor Logs.
 | Location | string | The location (i.e. region) of the Azure Cache for Redis Enterprise instance that was accessed. |
 | OperationName | string | The Redis operation associated with the log record. |
 | PrivateLinkIPv6 | string | The Redis client private link IPv6 address (if applicable). |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when event audit log was captured. |
 | Type | string | The name of the table |

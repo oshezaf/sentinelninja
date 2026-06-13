@@ -16,6 +16,7 @@
 - [Schema](#schema)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
+- [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
 ## Schema (37 columns)
@@ -77,6 +78,17 @@ This table is ingested by the following connectors:
 | [[Deprecated] Proofpoint TAP](../connectors/proofpointtap.md) |  |
 
 ---
+
+## Content Items Using This Table (2)
+
+### Workbooks (2)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ProofPointThreatDashboard](../content/github-only-proofpointthreatdashboard-cb711596.md) |  |
+| [ProofpointTAP](../content/github-only-proofpointtap-f64c9a5d.md) |  |
 
 ## Parsers Using This Table (1)
 

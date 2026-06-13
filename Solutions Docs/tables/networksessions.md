@@ -23,7 +23,7 @@ Reference for NetworkSessions table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AdditionalFields | dynamic | When no respective column in the schema matches, additional fields can be stored in a JSON bag. |
 | CloudAppId | string | The ID of the destination application for an HTTP application as identified by a proxy. This value is usually specific to the proxy used. |
 | CloudAppName | string | The name of the destination application for an HTTP application as identified by a proxy. |
@@ -109,7 +109,7 @@ Reference for NetworkSessions table in Azure Monitor Logs.
 | NetworkRuleName | string | The name or ID of the rule by which DeviceAction was decided upon. |
 | NetworkRuleNumber | int | Matched rule number. |
 | NetworkSessionId | string | The session identifier as reported by the reporting device. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcBytes | long | The number of bytes sent from the source to the destination for the connection or session. |
 | SrcDvcDomain | string | Domain of the device from which session was initiated. |
 | SrcDvcFqdn | string | The fully qualified domain name of the host where the log was created. |

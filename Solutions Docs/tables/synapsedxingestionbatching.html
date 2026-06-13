@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxingestionbatching">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/synapsedxingestionbatching">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,91 +53,91 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">BatchingType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Batching type: Whether the batch reached the limit of batching time, data size, or number of files set by the the batching policy</td>
+  <td style="text-align:left">BatchingType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Batching type: Whether the batch reached the limit of batching time, data size, or number of files set by the the batching policy</td>
 </tr>
 <tr>
-<td style="text-align: left;">BatchSizeBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Total uncompressed size of data in this batch (bytes)</td>
+  <td style="text-align:left">BatchSizeBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total uncompressed size of data in this batch (bytes)</td>
 </tr>
 <tr>
-<td style="text-align: left;">BatchTimeSeconds</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Total batching time of this batch (seconds)</td>
+  <td style="text-align:left">BatchTimeSeconds</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Total batching time of this batch (seconds)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Database</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the database holding the target table</td>
+  <td style="text-align:left">Database</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the database holding the target table</td>
 </tr>
 <tr>
-<td style="text-align: left;">DataSourcesInBatch</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Number of data sources in this batch</td>
+  <td style="text-align:left">DataSourcesInBatch</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Number of data sources in this batch</td>
 </tr>
 <tr>
-<td style="text-align: left;">RootActivityId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The operation's activity ID</td>
+  <td style="text-align:left">RootActivityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The operation's activity ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">When the first blobs in this batch were created (UTC time)</td>
+  <td style="text-align:left">SourceCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">When the first blobs in this batch were created (UTC time)</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">Table</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the target table the data is ingested into</td>
+  <td style="text-align:left">Table</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the target table the data is ingested into</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time (UTC) this event was generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time (UTC) this event was generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -150,6 +150,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

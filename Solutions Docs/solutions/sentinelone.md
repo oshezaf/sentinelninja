@@ -19,7 +19,7 @@
 | **First Published** | 2024-11-26 |
 | **Last Updated** | 2026-04-17 |
 | **Solution Folder** | [SentinelOne](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelOne) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sentinelone) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sentinelone) · Rating: ★★★★★ 5.0/5 (1 ratings) · Popularity: 🟢 High (85%) |
 
 The [SentinelOne](https://www.sentinelone.com/) solution provides ability to bring SentinelOne events to your Microsoft Sentinel Workspace to inform and to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more. 
  

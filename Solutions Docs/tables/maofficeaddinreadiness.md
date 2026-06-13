@@ -22,7 +22,7 @@ Reference for MAOfficeAddinReadiness table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AddinInstanceId | string |  |
 | AddinName | string |  |
 | AddinProducts | string |  |
@@ -38,7 +38,7 @@ Reference for MAOfficeAddinReadiness table in Azure Monitor Logs.
 | Issue | string |  |
 | Remediation | string |  |
 | RiskAssessment | string |  |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TargetOfficeBitness | string |  |
 | TestOwner | string |  |
 | TestPlan | string |  |

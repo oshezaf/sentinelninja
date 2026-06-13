@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ExposureGraphEdges &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar">
@@ -28,90 +26,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">XDR</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">XDR</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-exposuregraphedges-table">View Documentation</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="schema">Schema (11 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/exposuregraphedges">Azure Monitor documentation</a></p>
-<table id="schema-table">
-<thead>
-<tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">EdgeId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for the relationship/edge</td>
-</tr>
-<tr>
-<td style="text-align: left;">EdgeLabel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The edge label like "routes traffic to"</td>
-</tr>
-<tr>
-<td style="text-align: left;">EdgeProperties</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Optional data relevant for the relationship between the nodes in JSON format</td>
-</tr>
-<tr>
-<td style="text-align: left;">SourceNodeCategories</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Categories list of the source node in JSON format</td>
-</tr>
-<tr>
-<td style="text-align: left;">SourceNodeId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Node ID of the edge's source</td>
-</tr>
-<tr>
-<td style="text-align: left;">SourceNodeLabel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Source node label</td>
-</tr>
-<tr>
-<td style="text-align: left;">SourceNodeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Source node display name</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetNodeCategories</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The categories list of the target node in JSON format</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetNodeId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Node ID of the edge's target</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetNodeLabel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Target node label</td>
-</tr>
-<tr>
-<td style="text-align: left;">TargetNodeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Display name of the target node</td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-exposuregraphedges-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -119,31 +49,8 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
-<script>
-$(function() {
-    var t = $('#schema-table');
-    if (!t.length) return;
-    // Add filter row to thead
-    var hdr = t.find('thead');
-    var cols = hdr.find('tr:first th').length;
-    var fr = $('<tr class="filters"></tr>');
-    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
-    hdr.append(fr);
-    // Init DataTable
-    var dt = t.DataTable({
-        paging: false,
-        info: true,
-        orderCellsTop: true,
-        dom: 'frti',
-    });
-    // Per-column filter
-    hdr.find('tr.filters input').each(function(i) {
-        $(this).on('keyup change', function() {
-            dt.column(i).search(this.value).draw();
-        });
-    });
-});
-</script>
+
 </body>
 </html>

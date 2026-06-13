@@ -17,6 +17,12 @@ Inventory of software installed on devices, including their version information 
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory) |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicetvmsoftwareinventory-table) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Content Items](#content-items-using-this-table)
+
 ## Schema (17 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicetvmsoftwareinventory)
@@ -24,7 +30,7 @@ Inventory of software installed on devices, including their version information 
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | DeviceId | string | Unique identifier for the device in the service |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device |
 | EndOfSupportDate | datetime | End-of-support (EOS) or end-of-life (EOL) date of the software product |
@@ -36,12 +42,50 @@ Inventory of software installed on devices, including their version information 
 | SoftwareName | string | Name of the software product |
 | SoftwareVendor | string | Name of the software vendor |
 | SoftwareVersion | string | Version number of the software product |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time when the record was generated |
 | Type | string | The name of the table |
 
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Standalone Content](../solutions/standalone-content.md)
+
 ---
+
+## Content Items Using This Table (3)
+
+### Hunting Queries (3)
+
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [MDE_SoftwareInventorybyOS](../content/standalone-content-mde-softwareinventorybyos-36aa42d5-c2f5-4ede-9400-d55366bf0255-0f191efc.md) | `OSPlatform contains "iOS"` |
+| [Short-lived ephemeral code signing certificates](../content/standalone-content-short-lived-ephemeral-code-signing-certificates-e920899f-edf0-446c-bb13-effbaf61b27b-b620f657.md) |  |
+
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Find Software By Name and Version](../content/github-only-find-software-by-name-and-version-929d1046-11a9-40c1-977e-bd1984b30c31-dd87e6fe.md) |  |
+
+## Selection Criteria Summary (1 criteria, 1 total references)
+
+References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `OSPlatform contains "iOS"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **1** | **0** | **0** | **1** |
+
+### OSPlatform
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `contains iOS` | - | 1 | - | - | **1** |
 
 ---
 

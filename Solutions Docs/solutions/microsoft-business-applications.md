@@ -21,7 +21,7 @@
 | **First Published** | 2023-04-19 |
 | **Last Updated** | 2026-02-25 |
 | **Solution Folder** | [Microsoft Business Applications](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Business%20Applications) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4dynamics365.powerplatform) · Popularity: 🔵 Medium (68%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4dynamics365.powerplatform) · Popularity: 🔵 Medium (70%) |
 
 Microsoft Power Platform provides a wide range of tools for citizen developers to build, run and manage low-code and no-code applications quickly, simply and at scale. With that, it also introduces a concern around the risk of security vulnerabilities introduced by citizen developers, some of whom may lack the security awareness of traditional pro-dev community. To counter this, early threat detection is crucial and can complement preventative guardrails to enable frictionless productivity while minimizing cyber risk.
 

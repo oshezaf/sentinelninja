@@ -23,7 +23,7 @@ Reference for AppServiceServerlessSecurityPluginData table in Azure Monitor Logs
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Index | int | Available when multiple payloads exist for the same message. In that case, payloads share the same SlSecRequestId and Index defines the chronological order of payloads. |
@@ -34,7 +34,7 @@ Reference for AppServiceServerlessSecurityPluginData table in Azure Monitor Logs
 | SlSecMetadata | dynamic | Contains details about the resource like the deployment ID, runtime info, website info, OS, etc. |
 | SlSecProps | dynamic | Contains other details that might be needed for debugging end-to-end requests, e.g., slsec nuget version. |
 | SlSecRequestId | string | The ingestion request ID used for identifying the message and the request for diagnostics and debugging. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) this message was created on the node. |
 | Type | string | The name of the table |

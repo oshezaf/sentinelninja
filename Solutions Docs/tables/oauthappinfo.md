@@ -23,7 +23,7 @@ Microsoft 365-connected OAuth applications registered with Microsoft Entra ID an
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AddedOnTime | datetime | Date and time when the application was registered |
 | AppName | string | The application's display name as exposed by the associated service principal |
 | AppOrigin | string | Specifies whether the app is internal to the organization or registered in an external tenant |
@@ -38,7 +38,7 @@ Microsoft 365-connected OAuth applications registered with Microsoft Entra ID an
 | PrivilegeLevel | string | The privilege level of the app based on the highest classified permission granted to the app |
 | ReportId | string | Unique identifier for the record |
 | ServicePrincipalId | string | The unique identifier for the service principal instance of the application in the tenant |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |

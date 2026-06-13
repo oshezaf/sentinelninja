@@ -21,7 +21,7 @@
 | **First Published** | 2024-07-16 |
 | **Last Updated** | 2025-12-14 |
 | **Solution Folder** | [Team Cymru Scout](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Team%20Cymru%20Scout) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/team-cymru.teamcymruscout_sentinel) · Popularity: 🟡 Low (18%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/team-cymru.teamcymruscout_sentinel) · Popularity: ⚪ Very Low (2%) |
 
 Team Cymru Scout brings the most advanced AI-powered real-time intelligence into Microsoft Sentinel. The Microsoft Sentinel Integration allows you to perform LiveInvestigation on Indicators like IP, Domain and perform Correlation of Team Cymru Scout Data with Other Sources. It also leverage the capability to generate incident and notify when malicious ip found. 
 

@@ -23,7 +23,7 @@ Reference for ACICollaborationAudit table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | CorrelationId | string | The ID for correlated pipeline run events. Can be used to identify audits that belong to the same pipeline run. |
@@ -36,10 +36,10 @@ Reference for ACICollaborationAudit table in Azure Monitor Logs.
 | Location | string | The Location (Region) the resource was accessed in. |
 | OperationName | string | The operation associated with audit record. |
 | ParticipantName | string | The participant friendly name as used in the contract negotiation. |
-| ParticipantTenantId | string | The participant tenant id. Enable query by the granted tenant invariant id. Example of retrieving this is for contoso:https://login.microsoftonline.com/contoso.com/.well-known/openid-configuration |
+| ParticipantTenantId | string | The participant tenant id. Enable query by the granted tenant invariant id. Example of retrieving this is for contoso: <code>https://login.microsoftonline.com/contoso.com/.well-known/openid-configuration</code> |
 | ReferencedResourceId | string | The storage resource that the accessed CI resource points to, if applicable |
 | ReferencedResourceType | string | The storage resource type that the accessed CI resource points to, if applicable. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TargetResourceId | string | The azure resource ID of the accessed resource. |
 | TargetResourceType | string | The resource type of the accessed resource. |
 | TenantId | string | The Log Analytics workspace ID |

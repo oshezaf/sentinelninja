@@ -26,8 +26,8 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType in "MoveToDeletedItems,MovedToDeletedItems"` | ✓ | ✗ | ✓ |
+| [`CloudAppEvents`](../tables/cloudappevents.md) |  | ✓ | ✗ | ✓ |
 
 ---
 

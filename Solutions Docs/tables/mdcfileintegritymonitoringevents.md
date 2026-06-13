@@ -23,7 +23,7 @@ Reference for MDCFileIntegrityMonitoringEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AADTenantID | string | The AAD tenant ID of the subscription in which the monitored entity was created, renamed, modified or deleted. |
 | AzureResourceId | string | The Azure resource ID of the resource whose monitored entity was created, renamed, modified or deleted. |
 | ChangeType | string | The type of change that occurred on the entity. For 'File' entity must be either 'Created', 'Modified', 'Renamed' or 'Deleted'. For 'Registry' entity must be either 'RegistryKeyCreated', 'RegistryKeyDeleted', 'RegistryValueSet', 'RegistryValueDeleted', 'RegistryKeyRenamed'. |
@@ -83,7 +83,7 @@ Reference for MDCFileIntegrityMonitoringEvents table in Azure Monitor Logs.
 | RequestSource | string | Relevant for 'File' monitored entity type. Holds the source of the account of the user that caused the file event. For example Local/SMB/NFS. |
 | RequestSourceIP | string | Relevant for 'File' monitored entity type. Holds the source IP of the account of the user that caused the file event. For remote file, the IP from which the request came. |
 | RequestSourcePort | string | Relevant for 'File' monitored entity type. Holds the source port of the account of the user that caused the file event. For remote file, the port from which the request came. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time (UTC) when the monitored entity was created, renamed, modified or deleted. |
 | Type | string | The name of the table |

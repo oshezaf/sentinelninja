@@ -24,22 +24,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/illusive-active-defense.html">Illusive Active Defense</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/illusive-active-defense.html">Illusive Active Defense</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -51,75 +51,271 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">33</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">33</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Update_Sentinel_Incident_for_MDE_Host_Isolation | put | `/Incidents` | — |
-| Update_Sentinel_Incident_for_Process_Isolation | put | `/Incidents` | — |
-| Update_Sentinel_Incident_for_Host_Isolation | put | `/Incidents` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Generate_the_token_for_Azure_Sentinel_Incident | POST | `https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/token` | — |
-| Get_Illusive_Incident_Details | GET | `@{parameters('Illusive Base URL')}/api/v2/incidents/incident?incident_id=@{variables('Illusive Incident Id')}` | — |
-| Get_incident_with_the_name | GET | `https://management.azure.com/subscriptions/@{triggerBody()?['WorkspaceSubscriptionId']}/resourceGroups/@{triggerBody()?['WorkspaceResourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('Workspace_Name')}/providers/Microsoft.SecurityInsights/incidents?api-version=2020-01-01&$filter=properties/title eq 'Illusive Incident: @{variables('Illusive Incident Id')}'` | — |
-| Authorize_MDE_for_Process_Isolation | POST | `https://login.microsoftonline.com/@{parameters('MDE Tenant Id')}/oauth2/v2.0/token` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_for_multiple_resource | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_hostname_for_process | GET | `https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_IP_for_process | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_with_no_SourceHostName | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
-| Get_Files_in_MDE_using_SHA256_of_the_process | GET | `https://api.securitycenter.microsoft.com/api/files/@{items('For_each_of_the_Processes')?['sha256']}` | — |
-| Isolate_the_host_with_MDE | POST | `https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/isolate` | — |
-| Isolate_process_with_MDE | POST | `https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/StopAndQuarantineFile` | — |
-| Authorize_Crowdstrike_for_process | POST | `@{parameters('Crowdstrike Base URL')}/oauth2/token` | — |
-| Crowdstrike_call_to_fetch_all_Processes | POST | `@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-command/v1` | — |
-| Crowdstrike_call_to_fetch_the_batch_Session_id | POST | `@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-init-session/v1` | — |
-| Isolating_the_Process_of_Crowdstrike | POST | `@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-active-responder-command/v1` | — |
-| Get_machine_id_using_localip | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
-| Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname_for_Process | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&host:'@{variables('Machine Host')}'` | — |
-| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
-| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process_with_no_sourceip | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
-| Authorize_Crowdstrike | POST | `@{parameters('Crowdstrike Base URL')}/oauth2/token` | — |
-| Get_machine_id_using_localip_for_Host | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
-| Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&host:'@{variables('Machine Host')}'` | — |
-| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
-| Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_with_no_sourceip | GET | `@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'` | — |
-| Isolate_the_host_using_Crowdstrike | POST | `@{parameters('Crowdstrike Base URL')}/devices/entities/devices-actions/v2?action_name=contain` | — |
-| Authorize_MDE | POST | `https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/v2.0/token` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_IP_for_more_resources_in_Host | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_host | GET | `https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_IP | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
-| MDE_call_to_fetch_The_Machine_Id_with_IP_with_sourceIP | GET | `https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})` | — |
-| Isolate_Host_using_MDE | POST | `https://api.securitycenter.microsoft.com/api/machines/@{items('For_each_resources_for_MDE')?['id']}/isolate` | — |
-| Get_Events_of_the_Incident | GET | `@{parameters('Illusive Base URL')}/api/v1/incidents/events?incident_id=@{variables('Illusive Incident Id')}` | — |
-| Get_Triggering_Process_of_the_Events | GET | `@{parameters('Illusive Base URL')}/api/v1/forensics/triggering_process_info?event_id=@{max(variables('EventId'))}` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Update_Sentinel_Incident_for_MDE_Host_Isolation</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Sentinel_Incident_for_Process_Isolation</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_Sentinel_Incident_for_Host_Isolation</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Generate_the_token_for_Azure_Sentinel_Incident</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Illusive_Incident_Details</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Illusive Base URL')}/api/v2/incidents/incident?incident_id=@{variables('Illusive Incident Id')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_incident_with_the_name</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://management.azure.com/subscriptions/@{triggerBody()?['WorkspaceSubscriptionId']}/resourceGroups/@{triggerBody()?['WorkspaceResourceGroup']}/providers/Microsoft.OperationalInsights/workspaces/@{parameters('Workspace_Name')}/providers/Microsoft.SecurityInsights/incidents?api-version=2020-01-01&amp;$filter=properties/title eq 'Illusive Incident: @{variables('Illusive Incident Id')}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Authorize_MDE_for_Process_Isolation</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://login.microsoftonline.com/@{parameters('MDE Tenant Id')}/oauth2/v2.0/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_for_multiple_resource</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_hostname_for_process</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_IP_for_process</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_IP_for_process_with_no_SourceHostName</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Files_in_MDE_using_SHA256_of_the_process</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/files/@{items('For_each_of_the_Processes')?['sha256']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Isolate_the_host_with_MDE</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/isolate</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Isolate_process_with_MDE</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/@{items('For_each')?['id']}/StopAndQuarantineFile</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Authorize_Crowdstrike_for_process</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/oauth2/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_all_Processes</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-command/v1</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_the_batch_Session_id</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-init-session/v1</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Isolating_the_Process_of_Crowdstrike</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/real-time-response/combined/batch-active-responder-command/v1</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_machine_id_using_localip</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname_for_Process</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&amp;host:'@{variables('Machine Host')}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_for_Process_with_no_sourceip</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Authorize_Crowdstrike</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/oauth2/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_machine_id_using_localip_for_Host</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_the_Machine_Id_with_hostname</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=machine_domain:'@{variables('Machine Domain')}'&amp;host:'@{variables('Machine Host')}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_the_Machine_Id_with_IP</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Crowdstrike_call_to_fetch_the_Machine_Id_with_IP_with_no_sourceip</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/queries/devices/v1?filter=local_ip:'@{body('Parse_Illusive_Incident_Details')?['sourceIp']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Isolate_the_host_using_Crowdstrike</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('Crowdstrike Base URL')}/devices/entities/devices-actions/v2?action_name=contain</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Authorize_MDE</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://login.microsoftonline.com/@{parameters('Azure Tenant Id')}/oauth2/v2.0/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_IP_for_more_resources_in_Host</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_host</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/?$filter=computerDnsName eq '@{body('Parse_Illusive_Incident_Details')?['sourceHostname']}'</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_IP</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">MDE_call_to_fetch_The_Machine_Id_with_IP_with_sourceIP</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/findbyip(ip='@{body('Parse_Illusive_Incident_Details')?['sourceIp']}',timestamp=@{body('Parse_Illusive_Incident_Details')?['incidentTimeUTC']})</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Isolate_Host_using_MDE</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.securitycenter.microsoft.com/api/machines/@{items('For_each_resources_for_MDE')?['id']}/isolate</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Events_of_the_Incident</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Illusive Base URL')}/api/v1/incidents/events?incident_id=@{variables('Illusive Incident Id')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Triggering_Process_of_the_Events</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('Illusive Base URL')}/api/v1/forensics/triggering_process_info?event_id=@{max(variables('EventId'))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -137,27 +333,30 @@
 <li><a href="#playbook-workflow">Playbook workflow</a></li>
 <li><a href="#playbook-execution">Playbook execution</a></li>
 <li><a href="#Access_playbook">Access Playbook</a></li>
-<li><a href="#playbook-retry-mechanism">Playbook retry mechanism</a> </li>
+<li><a href="#playbook-retry-mechanism">Playbook retry mechanism</a></li>
 </ol>
 <h2 id="playbook-workflow">Playbook Workflow</h2>
 <ol>
 <li>Perform the general solution setup. <a href="https://github.com/IllusiveNetworks-Labs/Azure-Sentinel/tree/Illusive/Solutions/Illusive%20Active%20Defense">(see instructions here)</a></li>
 <li><a href="#add-api-permissions">Add API permissions to the Azure app</a></li>
-<li><a href="#enable-mde">Enable Microsoft Defender for Endpoint</a> (Only when using MDE for incident response) </li>
+<li><a href="#enable-mde">Enable Microsoft Defender for Endpoint</a> (Only when using MDE for incident response)</li>
 <li><a href="#create-illusive-playbook">Create the Illusive playbook</a></li>
 <li><a href="#API_connection">Connect the playbook to Azure Sentinel</a></li>
 </ol>
-<p><a name="add-api-permissions"></p>
+<a name="add-api-permissions">
+
 <h2 id="add-api-permissions-to-the-azure-app">Add API permissions to the Azure app</h2>
 <ol>
-<li>From the Azure console, find the Azure app you created to run the Illusive Sentinel Solution. </li>
+<li>From the Azure console, find the Azure app you created to run the Illusive Sentinel Solution.</li>
 <li>Go to <strong>API Permissions</strong>.</li>
 <li>Click <strong>Add a permission</strong>.</li>
-<li>Under <strong>Request API permissions&gt;API’s my organization uses</strong>, search for and select <strong>WindowsDefenderATP</strong>, select select <strong>Delegated permissions</strong> and check the following permissions:
-   - Machine.Isolate – to isolate device
-   - Machine.Read – to find agent ID - to collect data from a single machine. 
-   - File.Read.All – for process handling, find and erase/stop suspicious executables
-   - Machine.StopAndQuarantine – for process handling, find and erase/stop suspicious executables</li>
+<li>Under <strong>Request API permissions&gt;API’s my organization uses</strong>, search for and select <strong>WindowsDefenderATP</strong>, select select <strong>Delegated permissions</strong> and check the following permissions:<ul>
+<li>Machine.Isolate – to isolate device</li>
+<li>Machine.Read – to find agent ID - to collect data from a single machine.</li>
+<li>File.Read.All – for process handling, find and erase/stop suspicious executables</li>
+<li>Machine.StopAndQuarantine – for process handling, find and erase/stop suspicious executables</li>
+</ul>
+</li>
 <li>Select Application permissions and check the following permissions:<ul>
 <li>Machine.Isolate – to isolate device</li>
 <li>Machine.Read.All – to find agent ID – to query all machines and collect device information even if we don’t have a device ID.</li>
@@ -167,42 +366,49 @@
 </li>
 <li>Click <strong>Add permissions</strong>.</li>
 <li>Once all the API permissions are added, click <strong>Grant admin consent for Default Directory</strong> and click <strong>Yes</strong>.</li>
-<li>Verify admin consent has been granted. This step is important, even if the admin consent status is green. Only a Global Admin can approve admin consent requests.</li>
+<li>Verify admin consent has been granted. This step is important, even if the admin consent status is green. Only a Global Admin can approve admin consent requests.<ol>
 <li>Go to <strong>Enterprise&gt;Admin Consent requests</strong>.</li>
 <li>Go to <strong>My pending</strong> and verify that this permission is not pending.<br />
- The result should look like this:
- <br />
+The result should look like this:</li>
+</ol>
 <p align="center">  
-      <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/azure-app-api-incident-response-permissions-admin-consent-granted.png"> </a>
-   </p>
+   <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/azure-app-api-incident-response-permissions-admin-consent-granted.png"> </a>
+</p>
+
 </li>
 </ol>
-<p><a name="enable-mde"></p>
+<a name="enable-mde">
+
 <h2 id="enable-microsoft-defender-for-endpoint">Enable Microsoft Defender for Endpoint</h2>
 <p>Allow the Illusive Incident Response playbook to stop an attack by triggering an incident response from MDE.</p>
 <p><strong>Attention:</strong> If you use CrowdStrike as your incident response tool, you can skip this procedure.</p>
 <ol>
-<li>From the Azure Search bar, search for the <strong>Subscription</strong> in which MDE is installed.
-     <p align="center"><br />
-        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_1%28Subscriptions_MDE_1%29.png"> </a>
-     </p></li>
+<li>From the Azure Search bar, search for the <strong>Subscription</strong> in which MDE is installed. <p align="center">  
+    <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_1%28Subscriptions_MDE_1%29.png"> </a>
+ </p>
+
+</li>
 <li>Click on the existing <strong>Subscription.</strong></li>
 <li>Click <strong>Security</strong> in the Subscription menu.</li>
-<li>Ensure Microsoft Defender for Endpoint is <strong>On.</strong>
-     <p align="center"><br />
-        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_2%28Subscriptions_MDE_2%29.png"> </a>
-     </p></li>
-<li>If MDE is off, click <strong>Security Center.</strong>
-     <p align="center"><br />
-        <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_OFF_%28Subscriptions_MDE_2%29.png"> </a>
-     </p></li>
-<li>Find the Azure Defender card and click <strong>Enable Azure Defender.</strong>
-     <p align="center">  </li>
+<li>Ensure Microsoft Defender for Endpoint is <strong>On.</strong> <p align="center">  
+    <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_2%28Subscriptions_MDE_2%29.png"> </a>
+ </p>
+
+</li>
+<li>If MDE is off, click <strong>Security Center.</strong> <p align="center">  
+    <img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Illusive%20Active%20Defense/Playbooks/Illusive-SentinelIncident-Response/Images/Configure_MDE_OFF_%28Subscriptions_MDE_2%29.png"> </a>
+ </p>
+
+</li>
+<li>Find the Azure Defender card and click <strong>Enable Azure Defender.</strong> <p align="center">  
+
+</li>
 </ol>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/illusive-active-defense.html">Back to Illusive Active Defense</a></p>
+
 </div>
 
 </body>

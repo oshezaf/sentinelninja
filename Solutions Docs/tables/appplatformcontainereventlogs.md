@@ -22,7 +22,7 @@ Reference for AppPlatformContainerEventLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | App | string | The name of the application that emitted the container event. |
@@ -33,7 +33,7 @@ Reference for AppPlatformContainerEventLogs table in Azure Monitor Logs.
 | Instance | string | The name of the instance that emitted the container event. |
 | LastTimestamp | datetime | The timestamp when this container event was last seen. |
 | Message | string | The detailed message of the container event. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) when the log is collected by Azure Spring Cloud. |
 | Type | string | The type of container event, including: 'Error', 'Warning' and 'Normal'. |

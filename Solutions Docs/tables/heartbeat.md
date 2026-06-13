@@ -30,7 +30,7 @@ Reference for Heartbeat table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Category | string | Value is Direct Agent SCOM Agent or SCOM Management Server. |
@@ -54,14 +54,14 @@ Reference for Heartbeat table in Azure Monitor Logs.
 | ResourceType | string | Type of the Azure resource running the agent. Examples include virtualmachines or managedclusters. |
 | SCAgentChannel | string | Specfies how agent is connected to workspace. Possible values are Direct or SCManagementServer. |
 | Solutions | string | List of solutions deployed on the agent at the moment when Heartbeat was issued. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SubscriptionId | string | Subscription ID of the Azure resource running the agent |
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
 | Version | string | Version of the agent. |
 | VMUUID | string | Unique identifier of the virtual machine. |
 
-## Solutions (10)
+## Solutions (11)
 
 This table is used by the following solutions:
 
@@ -73,6 +73,7 @@ This table is used by the following solutions:
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [PCI DSS Compliance](../solutions/pci-dss-compliance.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [VMware SASE](../solutions/vmware-sase.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
 
@@ -86,9 +87,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (11)
+## Content Items Using This Table (20)
 
-### Analytic Rules (1)
+### Analytic Rules (3)
 
 **In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
@@ -96,7 +97,14 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [M2131_AssetStoppedLogging](../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223-416aad3a.md) |  |
 
-### Workbooks (10)
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Missing Domain Controller Heartbeat](../content/standalone-content-missing-domain-controller-heartbeat-b8b8ba09-1e89-45a1-8bd7-691cd23bfa32-3caae499.md) |  |
+| [OMI Vulnerability Exploitation](../content/standalone-content-omi-vulnerability-exploitation-3cc5ccd8-b416-4141-bb2d-4eba370e37a5-f90e5eee.md) |  |
+
+### Workbooks (17)
 
 **In solution [DORA Compliance](../solutions/dora-compliance.md):**
 
@@ -152,6 +160,18 @@ This table is ingested by the following connectors:
 | Workbook |
 |:-------------|
 | [WindowsFirewall](../content/windows-firewall-windowsfirewall-6cfebfa8.md) |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AMAmigrationTracker](../content/github-only-amamigrationtracker-7a7462f4.md) |  |
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) |  |
+| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [WindowsFirewall](../content/github-only-windowsfirewall-e0440cb8.md) | `Solutions contains "windowsFirewall"` |
 
 ## Resource Types
 

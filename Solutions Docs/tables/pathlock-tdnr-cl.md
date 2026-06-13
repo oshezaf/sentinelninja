@@ -19,7 +19,7 @@
 
 ## Schema (55 columns)
 
-**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR%5CData%20Connectors%5CPathlock_TDnR_PUSH_CCP/Pathlock_TDnR_CL.json)
+**Source:** [Data Collection Rule definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Pathlock_TDnR/Data%20Connectors/Pathlock_TDnR_PUSH_CCP/Pathlock_TDnR_DCR.json)
 
 | Column Name | Type |
 |:------------|:-----|
@@ -85,12 +85,13 @@ This table is used by the following solutions:
 
 - [Pathlock_TDnR](../solutions/pathlock-tdnr.md)
 
-## Connectors (1)
+## Connectors (2)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
+| [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) |  |
 | [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) |  |
 
 ---

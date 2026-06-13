@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ESET Inspect &mdash; Solutions Analyzer</title>
+<title>⚠️ ESET Inspect &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
 
 </head>
@@ -15,46 +15,50 @@
     </div>
 </nav>
 <div class="doc-content">
-<h1 id="eset-inspect">ESET Inspect</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/ESETPROTECT/Workbooks/Images/Logo/eset.svg" alt="" width="75" height="75"></p>
+<h1 id="eset-inspect">⚠️ ESET Inspect</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/ESETPROTECT/Workbooks/Images/Logo/eset.svg" alt="" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>ESETInspect</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>ESETInspect</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">ESET Netherlands</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">ESET Netherlands</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/eset-inspect.html">ESET Inspect</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/eset-inspect.html">ESET Inspect</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-function.html">Azure Function</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Inspect/Data%20Connectors/ESETInspect_API_FunctionApp.json">ESETInspect_API_FunctionApp.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ESET%20Inspect/Data%20Connectors/ESETInspect_API_FunctionApp.json">ESETInspect_API_FunctionApp.json</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API</strong></td>
-<td style="text-align: left;"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Azure Function code uses SharedKey/HTTP Data Collector API</em></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Custom Log V1 Tables</strong></td>
-<td style="text-align: left;">Yes 🔶 — ingests into tables with type-suffixed columns</td>
+  <td style="text-align:left"><strong>Custom Log V1 Tables</strong></td>
+  <td style="text-align:left">Yes 🔶 — ingests into tables with type-suffixed columns</td>
 </tr>
 </tbody>
 </table>
@@ -64,20 +68,20 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/esetinspect-cl.html"><code>ESETInspect_CL</code></a> 🔶</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/esetinspect-cl.html"><code>ESETInspect_CL</code></a> 🔶</td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -85,52 +89,77 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
-- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<p><strong>Custom Permissions:</strong>
-- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
-- <strong>Access to the ESET PROTECT console</strong>: Permissions to add users</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
+<li><strong>Access to the ESET PROTECT console</strong>: Permissions to add users</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<blockquote>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to ESET Inspect to pull its logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+</blockquote>
+<blockquote>
 <p><strong>(Optional Step)</strong> Securely store workspace and API authorization key(s) or token(s) in Azure Key Vault. Azure Key Vault provides a secure mechanism to store and retrieve key values. <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Follow these instructions</a> to use Azure Key Vault with an Azure Function App.</p>
 </blockquote>
 <p><strong>1. Step 1 -  Create an API user</strong></p>
 <ol>
-<li>Log into the ESET PROTECT console with an administrator account, select the <strong>More</strong> tab and the <strong>Users</strong> subtab. </li>
-<li>Click on the <strong>ADD NEW</strong> button and add a <strong>native user</strong>.</li>
-<li>Create a new user for the API account. <strong>Optional:</strong> Select a <strong>Home group</strong> other than <strong>All</strong> to limit what detections are ingested. </li>
-<li>Under the <strong>Permission Sets</strong> tab, assign the <strong>Inspect reviewer permission set</strong>.</li>
-<li>Log out of the administrator account and log into the console with the new API credentials for validation, then log out of the API account. 
-5.</li>
+<li><p>Log into the ESET PROTECT console with an administrator account, select the <strong>More</strong> tab and the <strong>Users</strong> subtab.</p>
+</li>
+<li><p>Click on the <strong>ADD NEW</strong> button and add a <strong>native user</strong>.</p>
+</li>
+<li><p>Create a new user for the API account. <strong>Optional:</strong> Select a <strong>Home group</strong> other than <strong>All</strong> to limit what detections are ingested.</p>
+</li>
+<li><p>Under the <strong>Permission Sets</strong> tab, assign the <strong>Inspect reviewer permission set</strong>.</p>
+</li>
+<li><p>Log out of the administrator account and log into the console with the new API credentials for validation, then log out of the API account.</p>
+</li>
+<li></li>
 </ol>
 <p><strong>2. Step 2 - Copy Workspace ID and Key</strong></p>
 <blockquote>
-<p><strong>IMPORTANT:</strong> Before deploying the ESET Inspect connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.
-- <strong>Workspace ID</strong>: <code>WorkspaceId</code>
-<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em>
-- <strong>Primary Key</strong>: <code>PrimaryKey</code>
-<em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+<p><strong>IMPORTANT:</strong> Before deploying the ESET Inspect connector, have the Workspace ID and Workspace Primary Key (can be copied from the following) readily available.</p>
 </blockquote>
+<ul>
+<li><strong>Workspace ID</strong>: <code>WorkspaceId</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+<li><strong>Primary Key</strong>: <code>PrimaryKey</code><blockquote>
+<p><em>Note: The value above is dynamically provided when these instructions are presented within Microsoft Sentinel.</em></p>
+</blockquote>
+</li>
+</ul>
 <p><strong>3. Step 3 - Deploy the Azure Resource Manager (ARM) Template</strong></p>
 <p>Use this method for automated deployment of the ESET Inspect connector using an ARM Tempate.</p>
 <ol>
-<li>
-<p>Click the <strong>Deploy to Azure</strong> button below. </p>
-<p><a href="https://aka.ms/sentinel-ESETInspect-azuredeploy"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>. 
-3. Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>API Username</strong>, <strong>API Password</strong> , enter the <strong>Inspect base URL</strong> and the <strong>first ID</strong> to start ingesting detections from.
- - The defailt starting ID is <strong>0</strong>. This means that all detections will be ingested. 
- - Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details. 
-4. Mark the checkbox labelled <strong>I agree to the terms and conditions stated above</strong>. 
-5. Click <strong>Purchase</strong> to deploy.</p>
+<li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://aka.ms/sentinel-ESETInspect-azuredeploy"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
 </li>
+<li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> and <strong>Location</strong>.</p>
+</li>
+<li><p>Enter the <strong>Workspace ID</strong>, <strong>Workspace Key</strong>, <strong>API Username</strong>, <strong>API Password</strong> , enter the <strong>Inspect base URL</strong> and the <strong>first ID</strong> to start ingesting detections from.</p>
+</li>
+</ol>
+<ul>
+<li>The defailt starting ID is <strong>0</strong>. This means that all detections will be ingested.</li>
+<li>Note: If using Azure Key Vault secrets for any of the values above, use the<code>@Microsoft.KeyVault(SecretUri={Security Identifier})</code>schema in place of the string values. Refer to <a href="https://docs.microsoft.com/azure/app-service/app-service-key-vault-references">Key Vault references documentation</a> for further details.</li>
+</ul>
+<ol start="4">
+<li>Mark the checkbox labelled <strong>I agree to the terms and conditions stated above</strong>.</li>
+<li>Click <strong>Purchase</strong> to deploy.</li>
 </ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

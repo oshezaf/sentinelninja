@@ -17,9 +17,9 @@ The collection method for these connectors could not be automatically determined
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **17** |
-| Active | 15 |
+| Active | 17 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 2 |
+| Unpublished ⚠️ | 0 |
 
 ## Connectors Using This Method
 
@@ -40,14 +40,12 @@ The collection method for these connectors could not be automatically determined
 | [Microsoft Entra ID Protection](../connectors/azureactivedirectoryidentityprotection.md) | Microsoft | 1 | [Microsoft Entra ID Protection](../solutions/microsoft-entra-id-protection.md) |
 | [Microsoft Power Automate](../connectors/microsoftpowerautomate.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Microsoft Power Platform Admin Activity](../connectors/microsoftpowerplatformadminactivity.md) ➕ | Microsoft | 1 | [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
-| [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) ⚠️ ➕ | Microsoft | 2 | [SAP](../solutions/sap.md) |
-| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) ⚠️ | Microsoft | 5 | [SAP](../solutions/sap.md) |
+| [Microsoft Sentinel for SAP](../connectors/microsoftsentinelsap.md) ➕ | Microsoft | 2 | [SAP](../solutions/sap.md) |
+| [Microsoft Sentinel for SAP applications - agentless](../connectors/sapcc.md) | Microsoft | 5 | [SAP](../solutions/sap.md) |
 | [Tenant-based Microsoft Defender for Cloud](../connectors/microsoftdefenderforcloudtenantbased.md) ➕ | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 
 ---
-
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 ---
 

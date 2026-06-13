@@ -32,7 +32,7 @@ Reference for DnsInventory table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Computer | string |  |
@@ -44,7 +44,7 @@ Reference for DnsInventory table in Azure Monitor Logs.
 | ResourceRecordName | string |  |
 | ResourceRecordType | string |  |
 | ServerIPs | string |  |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SubType | string |  |
 | TimeGenerated | datetime |  |
 | Type | string | The name of the table |
@@ -66,15 +66,21 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Windows Server DNS](../solutions/windows-server-dns.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Dns](../content/windows-server-dns-dns-ed7f9abb.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [Dns](../content/github-only-dns-ff664046.md) |  |
 
 ## Resource Types
 

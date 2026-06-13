@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/microsoft-defender-threat-intelligence.html">Microsoft Defender Threat Intelligence</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/microsoft-defender-threat-intelligence.html">Microsoft Defender Threat Intelligence</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence/Playbooks/MDTI-Automated-Triage/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence/Playbooks/MDTI-Automated-Triage/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,47 +47,103 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">6</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">6</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_Hosts | post | `/entities/host` | — |
-| Entities_-_Get_IPs | post | `/entities/ip` | — |
-| Add_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_(V3)_2 | post | `/Incidents/Comment` | — |
-| Update_incident | put | `/Incidents` | — |
-| Update_incident_2 | put | `/Incidents` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Reputation_for_host | GET | `@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_Host')?['HostName']}.@{items('For_each_Host')?['DnsDomain']}')/reputation` | — |
-| Get_reputation | GET | `@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_IP_Address')?['Address']}')/reputation` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_IPs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/ip</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_(V3)_2</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_2</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Reputation_for_host</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_Host')?['HostName']}.@{items('For_each_Host')?['DnsDomain']}')/reputation</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_reputation</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('MDTI-BaseUrl')}/@{parameters('Api-Version')}/security/threatIntelligence/hosts('@{items('For_each_IP_Address')?['Address']}')/reputation</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -95,7 +151,7 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20Defender%20Threat%20Intelligence/Playbooks/MDTI-Automated-Triage/readme.md">MDTI-Automated-Triage/readme.md</a></em></p>
 </blockquote>
 <h2 id="overview">Overview</h2>
-<p>This playbook uses the <a href="https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti">Microsoft Defender Threat Intelligence</a> Reputation data to automatically enrich incidents generated by Microsoft Sentinel. Indicators from an incident will be evaluated with MDTI <a href="https://learn.microsoft.com/en-us/defender/threat-intelligence/reputation-scoring">Reputation</a> data. If any indicators are labeled as "suspicious", the incident will be tagged as such and its severity will be marked as "medium". If any indicators are labeled as "malicious", the incident will be tagged as such and its severity will be marked as "high". Regardless of the reputation state, comments will be added to the incident outlining the reputation details with links to further information if applicable.</p>
+<p>This playbook uses the <a href="https://learn.microsoft.com/en-us/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti">Microsoft Defender Threat Intelligence</a> Reputation data to automatically enrich incidents generated by Microsoft Sentinel. Indicators from an incident will be evaluated with MDTI <a href="https://learn.microsoft.com/en-us/defender/threat-intelligence/reputation-scoring">Reputation</a> data. If any indicators are labeled as &quot;suspicious&quot;, the incident will be tagged as such and its severity will be marked as &quot;medium&quot;. If any indicators are labeled as &quot;malicious&quot;, the incident will be tagged as such and its severity will be marked as &quot;high&quot;. Regardless of the reputation state, comments will be added to the incident outlining the reputation details with links to further information if applicable.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ol>
 <li>Microsoft Defender Threat Intelligence (MDTI) Premium license enabled on your tenant.</li>
@@ -106,35 +162,36 @@
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
-<th>Default Value</th>
+  <th>Name</th>
+  <th>Description</th>
+  <th>Default Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PlaybookName</td>
-<td>Name of the playbook</td>
-<td>MDTI-Automated-Triage</td>
+  <td>PlaybookName</td>
+  <td>Name of the playbook</td>
+  <td>MDTI-Automated-Triage</td>
 </tr>
 <tr>
-<td>MDTI-BaseUrl</td>
-<td>Base URL for MDTI API</td>
-<td>https://graph.microsoft.com</td>
+  <td>MDTI-BaseUrl</td>
+  <td>Base URL for MDTI API</td>
+  <td>https://graph.microsoft.com</td>
 </tr>
 <tr>
-<td>Api-Version</td>
-<td>API version for MDTI API</td>
-<td>v1.0</td>
+  <td>Api-Version</td>
+  <td>API version for MDTI API</td>
+  <td>v1.0</td>
 </tr>
 </tbody>
 </table>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%2520Defender%2520Threat%2520Intelligence%2FPlaybooks%2FMDTI-Automated-Triage%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%2520Defender%2520Threat%2520Intelligence%2FPlaybooks%2FMDTI-Automated-Triage%2Fazuredeploy.json" target="_blank">
     <img src="https://aka.ms/deploytoazurebutton"/>
 </a>
 <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FMicrosoft%2520Defender%2520Threat%2520Intelligence%2FPlaybooks%2FMDTI-Automated-Triage%2Fazuredeploy.json" target="_blank">
     <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png"/>
-</a></p>
+</a>
+
 <h2 id="post-deployment-instructions">Post-Deployment Instructions</h2>
 <p><strong>1. Assign ThreatIntelligence.Read.All Permission to Playbook's Managed Identity</strong></p>
 <p>To allow the playbook to query Microsoft Defender Threat Intelligence data, you must grant the managed identity of the playbook the <code>ThreatIntelligence.Read.All</code> application permission in Microsoft Graph. Follow these steps:</p>
@@ -191,6 +248,7 @@ Repeat steps for all connections.</li>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/microsoft-defender-threat-intelligence.html">Back to Microsoft Defender Threat Intelligence</a></p>
+
 </div>
 
 </body>

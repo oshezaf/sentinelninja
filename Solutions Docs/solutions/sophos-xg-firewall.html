@@ -17,62 +17,63 @@
 <div class="doc-content">
 <h1 id="sophos-xg-firewall-solution">Sophos XG Firewall Solution</h1>
 <p><em>Solution: Sophos XG Firewall</em></p>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="Sophos XG Firewall Logo" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/sophos_logo.svg" alt="Sophos XG Firewall Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Microsoft Corporation</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft Corporation</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Support Tier</strong></td>
-<td style="text-align: left;">Microsoft</td>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Support Link</strong></td>
-<td style="text-align: left;"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://support.microsoft.com/">https://support.microsoft.com/</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Categories</strong></td>
-<td style="text-align: left;">Security - Network</td>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Network</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Author</strong></td>
-<td style="text-align: left;">SophosXGFirewall</td>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">SophosXGFirewall</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>First Published</strong></td>
-<td style="text-align: left;">2021-10-20</td>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2021-10-20</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution Folder</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall">Sophos XG Firewall</a></td>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Sophos%20XG%20Firewall">Sophos XG Firewall</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosxgfirewall">Azure Marketplace</a> · Popularity: 🟢 High (91%)</td>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-sophosxgfirewall">Azure Marketplace</a> · Popularity: 🟢 High (92%)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Pre-requisites</strong></td>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+  <td style="text-align:left"><strong>Pre-requisites</strong></td>
+  <td style="text-align:left"><a href="syslog.html">Syslog</a></td>
 </tr>
 </tbody>
 </table>
 <p>The <a href="https://www.sophos.com/products/next-gen-firewall">Sophos XG Firewall</a> solution for Microsoft Sentinel enables you to ingest Sophos XG Firewall logs into Microsoft Sentinel.</p>
-<p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation. </p>
+<p>This solution is dependent on the Syslog solution containing the Syslog via AMA connector to collect the logs. The Syslog  solution will be installed as part of this solution installation.</p>
 <p><strong>NOTE</strong>: Microsoft recommends installation of Syslog via AMA Connector. Legacy connector uses the Log Analytics agent which were deprecated on <strong>Aug 31, 2024.</strong>. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
 <h2 id="contents">Contents</h2>
 <ul>
@@ -86,12 +87,12 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Solution</th>
+  <th style="text-align:left">Solution</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="syslog.html">Syslog</a></td>
+  <td style="text-align:left"><a href="syslog.html">Syslog</a></td>
 </tr>
 </tbody>
 </table>
@@ -113,16 +114,16 @@
 <table>
 <thead>
 <tr>
-<th>Table</th>
-<th>Used By Connectors</th>
-<th>Used By Content</th>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td><a href="../connectors/syslogama.html">Syslog via AMA</a> (dependency), <a href="../connectors/syslog.html">Syslog via Legacy Agent</a> (dependency), <a href="../connectors/sophosxgfirewall.html">[Deprecated] Sophos XG Firewall</a></td>
-<td>Analytics, Workbooks</td>
+  <td><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td><a href="../connectors/syslogama.html">Syslog via AMA</a> (dependency), <a href="../connectors/syslog.html">Syslog via Legacy Agent</a> (dependency), <a href="../connectors/sophosxgfirewall.html">[Deprecated] Sophos XG Firewall</a></td>
+  <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
@@ -131,22 +132,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Type</th>
-<th style="text-align: left;">Count</th>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Analytic Rules</td>
-<td style="text-align: left;">2</td>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">2</td>
 </tr>
 <tr>
-<td style="text-align: left;">Workbooks</td>
-<td style="text-align: left;">1</td>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
 </tr>
 <tr>
-<td style="text-align: left;">Parsers</td>
-<td style="text-align: left;">1</td>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
 </tr>
 </tbody>
 </table>
@@ -154,24 +155,24 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Severity</th>
-<th style="text-align: left;">Tactics</th>
-<th style="text-align: left;">Tables Used</th>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/sophos-xg-firewall-excessive-amount-of-denied-connections-from-a-single-source-3d645a88-2724-41a7-adea-db74c439cf79-2b4e4307.html">Excessive Amount of Denied Connections from a Single Source</a></td>
-<td style="text-align: left;">Medium</td>
-<td style="text-align: left;">Impact</td>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><a href="../content/sophos-xg-firewall-excessive-amount-of-denied-connections-from-a-single-source-3d645a88-2724-41a7-adea-db74c439cf79-2b4e4307.html">Excessive Amount of Denied Connections from a Single Source</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Impact</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/sophos-xg-firewall-port-scan-detected-427e4c9e-8cf4-4094-a684-a2d060dbca38-b0e76aa0.html">Port Scan Detected</a></td>
-<td style="text-align: left;">Medium</td>
-<td style="text-align: left;">Discovery</td>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><a href="../content/sophos-xg-firewall-port-scan-detected-427e4c9e-8cf4-4094-a684-a2d060dbca38-b0e76aa0.html">Port Scan Detected</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Discovery</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -179,14 +180,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Tables Used</th>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/sophos-xg-firewall-sophosxgfirewall-c77fae3a.html">SophosXGFirewall</a></td>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><a href="../content/sophos-xg-firewall-sophosxgfirewall-c77fae3a.html">SophosXGFirewall</a></td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -194,16 +195,16 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Tables Used</th>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../parsers/sophosxgfirewall.html">SophosXGFirewall</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a> <em>(read)</em></td>
+  <td style="text-align:left"><a href="../parsers/sophosxgfirewall.html">SophosXGFirewall</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -211,32 +212,33 @@
 <table>
 <thead>
 <tr>
-<th><strong>Version</strong></th>
-<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-<th><strong>Change History</strong></th>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>3.0.1</td>
-<td>09-12-2024</td>
-<td>Rmoved Deprecated <strong>Data Connector</strong></td>
+  <td>3.0.1</td>
+  <td>09-12-2024</td>
+  <td>Rmoved Deprecated <strong>Data Connector</strong></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
-<td>Updated SophosXGFirewall.json <strong>Workbook</strong> to fix missing fields</td>
+  <td></td>
+  <td></td>
+  <td>Updated SophosXGFirewall.json <strong>Workbook</strong> to fix missing fields</td>
 </tr>
 <tr>
-<td>3.0.0</td>
-<td>01-08-2024</td>
-<td>Update <strong>Parser</strong> as part of Syslog migration </br> Deprecating <strong>Data Connectors</strong></td>
+  <td>3.0.0</td>
+  <td>01-08-2024</td>
+  <td>Update <strong>Parser</strong> as part of Syslog migration </br> Deprecating <strong>Data Connectors</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
 </div>
 
 </body>

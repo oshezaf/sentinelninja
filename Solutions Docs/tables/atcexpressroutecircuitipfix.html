@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/atcexpressroutecircuitipfix">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/atcexpressroutecircuitipfix">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,221 +57,221 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">ATCRegion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure Traffic Collector (ATC) deployment region.</td>
+  <td style="text-align:left">ATCRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure Traffic Collector (ATC) deployment region.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ATCResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure resource ID of Azure Traffic Collector (ATC).</td>
+  <td style="text-align:left">ATCResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure resource ID of Azure Traffic Collector (ATC).</td>
 </tr>
 <tr>
-<td style="text-align: left;">BgpNextHop</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Border Gateway Protocol (BGP) next hop as defined in the routing table.</td>
+  <td style="text-align:left">BgpNextHop</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Border Gateway Protocol (BGP) next hop as defined in the routing table.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Destination IP address.</td>
+  <td style="text-align:left">DestinationIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Destination IP address.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DestinationPort</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">TCP destination port.</td>
+  <td style="text-align:left">DestinationPort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">TCP destination port.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Dot1qCustomerVlanId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Dot1q Customer VlanId.</td>
+  <td style="text-align:left">Dot1qCustomerVlanId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Dot1q Customer VlanId.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Dot1qVlanId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Dot1q VlanId.</td>
+  <td style="text-align:left">Dot1qVlanId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Dot1q VlanId.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DstAsn</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Destination Autonomous System Number (ASN).</td>
+  <td style="text-align:left">DstAsn</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Destination Autonomous System Number (ASN).</td>
 </tr>
 <tr>
-<td style="text-align: left;">DstMask</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Mask of destination subnet.</td>
+  <td style="text-align:left">DstMask</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Mask of destination subnet.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DstSubnet</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Destination subnet of destination IP.</td>
+  <td style="text-align:left">DstSubnet</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Destination subnet of destination IP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExRCircuitDirectPortId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure resource ID of Express Route Circuit's direct port.</td>
+  <td style="text-align:left">ExRCircuitDirectPortId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure resource ID of Express Route Circuit's direct port.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExRCircuitId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure resource ID of Express Route Circuit.</td>
+  <td style="text-align:left">ExRCircuitId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure resource ID of Express Route Circuit.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExRCircuitServiceKey</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Service key of Express Route Circuit.</td>
+  <td style="text-align:left">ExRCircuitServiceKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Service key of Express Route Circuit.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FlowRecordTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp (UTC) when Express Route Circuit emitted this flow record.</td>
+  <td style="text-align:left">FlowRecordTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) when Express Route Circuit emitted this flow record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Flowsequence</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Flow sequence of this flow.</td>
+  <td style="text-align:left">Flowsequence</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Flow sequence of this flow.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IcmpType</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Protocol type as specified in IP header.</td>
+  <td style="text-align:left">IcmpType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Protocol type as specified in IP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IpClassOfService</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">IP Class of service as specified in IP header.</td>
+  <td style="text-align:left">IpClassOfService</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">IP Class of service as specified in IP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IpProtocolIdentifier</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Protocol type as specified in IP header.</td>
+  <td style="text-align:left">IpProtocolIdentifier</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Protocol type as specified in IP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IpVerCode</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">IP version as defined in the IP header.</td>
+  <td style="text-align:left">IpVerCode</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">IP version as defined in the IP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MaxTtl</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Maximum time to live (TTL) as defined in the IP header.</td>
+  <td style="text-align:left">MaxTtl</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Maximum time to live (TTL) as defined in the IP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MinTtl</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Minimum time to live (TTL) as defined in the IP header.</td>
+  <td style="text-align:left">MinTtl</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Minimum time to live (TTL) as defined in the IP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">NextHop</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Next hop as per forwarding table.</td>
+  <td style="text-align:left">NextHop</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Next hop as per forwarding table.</td>
 </tr>
 <tr>
-<td style="text-align: left;">NumberOfBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Total number of bytes of packets captured in this flow.</td>
+  <td style="text-align:left">NumberOfBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of bytes of packets captured in this flow.</td>
 </tr>
 <tr>
-<td style="text-align: left;">NumberOfPackets</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Total number of packets captured in this flow.</td>
+  <td style="text-align:left">NumberOfPackets</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of packets captured in this flow.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The specific Azure Traffic Collector (ATC) operation that emitted this flow record.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The specific Azure Traffic Collector (ATC) operation that emitted this flow record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PeeringType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Express Route Circuit peering type.</td>
+  <td style="text-align:left">PeeringType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Express Route Circuit peering type.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Protocol</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Protocol type as specified in IP header.</td>
+  <td style="text-align:left">Protocol</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Protocol type as specified in IP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SchemaVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Flow record schema version.</td>
+  <td style="text-align:left">SchemaVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Flow record schema version.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Source IP address.</td>
+  <td style="text-align:left">SourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source IP address.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourcePort</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">TCP source port.</td>
+  <td style="text-align:left">SourcePort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">TCP source port.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcAsn</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Source Autonomous System Number (ASN).</td>
+  <td style="text-align:left">SrcAsn</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Source Autonomous System Number (ASN).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcMask</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Mask of source subnet.</td>
+  <td style="text-align:left">SrcMask</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Mask of source subnet.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SrcSubnet</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Source subnet of source IP.</td>
+  <td style="text-align:left">SrcSubnet</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source subnet of source IP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TcpFlag</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">TCP flag as defined in the TCP header.</td>
+  <td style="text-align:left">TcpFlag</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">TCP flag as defined in the TCP header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp (UTC) when the Azure Traffic Collector (ATC) emitted this flow record.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) when the Azure Traffic Collector (ATC) emitted this flow record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -284,6 +284,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

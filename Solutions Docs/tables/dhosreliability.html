@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Desktop Analytics</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Desktop Analytics</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhosreliability">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/dhosreliability">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,111 +53,111 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AbnormalShutdownCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">AbnormalShutdownCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ComputerID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ComputerID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ConfigMgrClientID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ConfigMgrClientID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Country</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Country</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceLastSeenTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">DeviceLastSeenTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">KernelModeCrashCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">KernelModeCrashCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">KernelModeCrashFreePercentForIndustry</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">KernelModeCrashFreePercentForIndustry</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Manufacturer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Manufacturer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Model</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Model</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ModelFamily</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ModelFamily</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSArchitecture</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSArchitecture</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSBuildNumber</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSBuildNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSEdition</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSEdition</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSRevisionNumber</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSRevisionNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">OSVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">OSVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -165,6 +165,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

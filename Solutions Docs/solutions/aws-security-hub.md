@@ -17,9 +17,9 @@
 | **Version** | 3.0.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-03-12 |
-| **Last Updated** | 2026-06-08 |
+| **Last Updated** | 2026-06-12 |
 | **Solution Folder** | [AWS Security Hub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AWS%20Security%20Hub) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awssecurityhub) · Popularity: 🔵 Medium (64%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-awssecurityhub) · Popularity: 🔵 Medium (65%) |
 
 AWS Security Hub Solution for Microsoft Sentinel provides data connector to ingest AWS Security Hub findings into Microsoft Sentinel.
 

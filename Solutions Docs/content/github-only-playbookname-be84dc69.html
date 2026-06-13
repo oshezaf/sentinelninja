@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">GitHub Only</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">GitHub Only</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Get-MachineData-EDR-SOAR-ActionsOnMachine/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Get-MachineData-EDR-SOAR-ActionsOnMachine/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,106 +47,245 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-sharepointonline.html"><code>sharepointonline</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">7</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-sharepointonline.html"><code>sharepointonline</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">7</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">7</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">7</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Alert_-_Get_hosts | post | `/entities/host` | — |
-
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_client_app_secret | get | `/secrets/@{encodeURIComponent('ClientAppSecret')}/value` | — |
-
-#### [`sharepointonline`](../logic-apps/managed-sharepointonline.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Create_new_subfolder_under_Documents_to_store_all_csv_files | post | `/datasets/@{encodeURIComponent(encodeURIComponent(''))}/tables/@{encodeURIComponent(encodeURIComponent('6a2a8bfc-17b5-42e8-8c34-47865fc48b1d'))}/createnewfolder` | — |
-| Create_sharing_link_for_the_subfolder_which_contains_all_csv_files | post | `/datasets/@{encodeURIComponent(encodeURIComponent(''))}/codeless/_api/v2.0/sites/root/lists/@{encodeURIComponent(encodeURIComponent('6a2a8bfc-17b5-42e8-8c34-47865fc48b1d'))}/items/@{encodeURIComponent(encodeURIComponent(body('Create_new_subfolder_under_Documents_to_store_all_csv_files')?['ID']))}/driveItem/createLink` | — |
-| Create_missing_KBs_csv_file | post | `/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files` | — |
-| Create_installed_software_csv_file | post | `/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files` | — |
-| Create_alerts_csv_file | post | `/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files` | — |
-| Create_recommendation_csv_file | post | `/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files` | — |
-| Create_vulnerabilities_csv_file | post | `/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files` | — |
-
-#### [`teams`](../logic-apps/managed-teams.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Post_a_message_on_Teams | post | `/v3/beta/teams/@{encodeURIComponent('f6c7b5f5-8377-4dff-ae43-83b441df6372')}/channels/@{encodeURIComponent('19:cc0d142530d74b97b4019b85a882cb22@thread.tacv2')}/messages` | — |
-
-#### [`wdatp`](../logic-apps/managed-wdatp.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Machines_-_Get_list_of_machines | get | `/api/machines` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP_-_to_get_missing_KBs | GET | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_get_missing_KBs')?['id']}/getmissingkbs` | — |
-| HTTP_-_get_software_inventory | GET | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_get_software_inventory')?['id']}/software` | — |
-| HTTP_-_to_restrict_restrict_app_exection | POST | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_restrict_app_execution')?['id']}/restrictCodeExecution` | — |
-| HTTP_-_to_start_machine_antivirus_scan | POST | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_start_antivirus_scan')?['id']}/runAntiVirusScan` | — |
-| HTTP_-_To_get_alerts | GET | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_alerts')?['id']}/alerts` | — |
-| HTTP_-_To_get_recommendations | GET | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_recommendation')?['id']}/recommendations` | — |
-| HTTP_-_to_get_vulnerabilities | GET | `https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_vulnerabilities')?['id']}/vulnerabilities` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Alert_-_Get_hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_client_app_secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('ClientAppSecret')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="sharepointonline"><a href="../logic-apps/managed-sharepointonline.html"><code>sharepointonline</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Create_new_subfolder_under_Documents_to_store_all_csv_files</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/@{encodeURIComponent(encodeURIComponent(''))}/tables/@{encodeURIComponent(encodeURIComponent('6a2a8bfc-17b5-42e8-8c34-47865fc48b1d'))}/createnewfolder</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_sharing_link_for_the_subfolder_which_contains_all_csv_files</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/@{encodeURIComponent(encodeURIComponent(''))}/codeless/_api/v2.0/sites/root/lists/@{encodeURIComponent(encodeURIComponent('6a2a8bfc-17b5-42e8-8c34-47865fc48b1d'))}/items/@{encodeURIComponent(encodeURIComponent(body('Create_new_subfolder_under_Documents_to_store_all_csv_files')?['ID']))}/driveItem/createLink</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_missing_KBs_csv_file</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_installed_software_csv_file</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_alerts_csv_file</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_recommendation_csv_file</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_vulnerabilities_csv_file</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/@{encodeURIComponent(encodeURIComponent(''))}/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="teams"><a href="../logic-apps/managed-teams.html"><code>teams</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Post_a_message_on_Teams</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v3/beta/teams/@{encodeURIComponent('f6c7b5f5-8377-4dff-ae43-83b441df6372')}/channels/@{encodeURIComponent('19:cc0d142530d74b97b4019b85a882cb22@thread.tacv2')}/messages</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="wdatp"><a href="../logic-apps/managed-wdatp.html"><code>wdatp</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Machines_-_Get_list_of_machines</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/api/machines</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_to_get_missing_KBs</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_get_missing_KBs')?['id']}/getmissingkbs</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_get_software_inventory</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_get_software_inventory')?['id']}/software</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_to_restrict_restrict_app_exection</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_restrict_app_execution')?['id']}/restrictCodeExecution</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_to_start_machine_antivirus_scan</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_-_start_antivirus_scan')?['id']}/runAntiVirusScan</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_To_get_alerts</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_alerts')?['id']}/alerts</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_To_get_recommendations</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_recommendation')?['id']}/recommendations</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_to_get_vulnerabilities</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://api.securitycenter.windows.com/api/machines/@{items('For_each_MDATP_host_-_get_vulnerabilities')?['id']}/vulnerabilities</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

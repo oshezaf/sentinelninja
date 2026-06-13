@@ -20,7 +20,7 @@
 | **Author** | Open Systems - support@open-systems.com |
 | **First Published** | 2025-05-12 |
 | **Solution Folder** | [Open Systems](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Open%20Systems) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/opensystemsag1582030008223.azure-sentinel-solution-osag) · Popularity: 🔵 Medium (73%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/opensystemsag1582030008223.azure-sentinel-solution-osag) · Popularity: 🔵 Medium (74%) |
 
 Designed for security teams, the Open Systems Data Connector for Microsoft Sentinel delivers log data to customers. It extracts network security data and pushes it seamlessly to Microsoft Sentinel to provide SOC teams and incident responders with vital insights into their cybersecurity landscape.
   

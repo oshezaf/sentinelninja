@@ -32,7 +32,7 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ClientIp | string | The IP address of the device that was used when the activity was logged. |
 | CorrelationId | string | A unique value used to associate related rows. |
 | CrmOrganizationUniqueName | string | Unique name of the organization. |
@@ -53,7 +53,7 @@ Reference for DataverseActivity table in Azure Monitor Logs.
 | ServiceContextIdType | string | Application defined token to define context use. |
 | ServiceName | string | Name of the Service generating the log. |
 | SourceRecordId | string | Unique identifier of an audit record. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SystemUserId | string | Unique identifier of the user GUID in the organization. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time in (UTC) when the user performed the activity. |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/lookout.html">Lookout</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/lookout.html">Lookout</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Playbooks/Lookout-MobileThreat-NotifyAndEnrich/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Lookout/Playbooks/Lookout-MobileThreat-NotifyAndEnrich/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,31 +47,54 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_Accounts | post | `/entities/account` | — |
-| Entities_-_Get_Hosts | post | `/entities/host` | — |
-| Add_incident_enrichment_comment | post | `/Incidents/Comment` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Accounts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/account</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_incident_enrichment_comment</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -89,18 +112,18 @@
 <table>
 <thead>
 <tr>
-<th>Rule</th>
-<th>Severity</th>
+  <th>Rule</th>
+  <th>Severity</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Lookout - High Severity Mobile Threats Detected (v2)</td>
-<td>High</td>
+  <td>Lookout - High Severity Mobile Threats Detected (v2)</td>
+  <td>High</td>
 </tr>
 <tr>
-<td>Lookout - New Threat events found</td>
-<td>High</td>
+  <td>Lookout - New Threat events found</td>
+  <td>High</td>
 </tr>
 </tbody>
 </table>
@@ -111,31 +134,31 @@
 <li>The playbook managed identity must be granted the <strong>Microsoft Sentinel Responder</strong> role on the Log Analytics workspace.</li>
 </ol>
 <h2 id="deployment">Deployment</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FLookout%2FPlaybooks%2FLookout-MobileThreat-NotifyAndEnrich%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FLookout%2FPlaybooks%2FLookout-MobileThreat-NotifyAndEnrich%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <h3 id="deployment-parameters">Deployment Parameters</h3>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Required</th>
-<th>Description</th>
+  <th>Parameter</th>
+  <th>Required</th>
+  <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>PlaybookName</td>
-<td>No</td>
-<td>Name of the Logic App (default: <code>Lookout-MobileThreat-NotifyAndEnrich</code>)</td>
+  <td>PlaybookName</td>
+  <td>No</td>
+  <td>Name of the Logic App (default: <code>Lookout-MobileThreat-NotifyAndEnrich</code>)</td>
 </tr>
 <tr>
-<td>TeamsGroupId</td>
-<td>Yes</td>
-<td>Microsoft Teams Group (Team) ID for SOC notifications</td>
+  <td>TeamsGroupId</td>
+  <td>Yes</td>
+  <td>Microsoft Teams Group (Team) ID for SOC notifications</td>
 </tr>
 <tr>
-<td>TeamsChannelId</td>
-<td>Yes</td>
-<td>Microsoft Teams Channel ID for SOC notifications</td>
+  <td>TeamsChannelId</td>
+  <td>Yes</td>
+  <td>Microsoft Teams Channel ID for SOC notifications</td>
 </tr>
 </tbody>
 </table>
@@ -157,42 +180,45 @@
 <h3 id="step-3-create-automation-rule">Step 3 — Create Automation Rule</h3>
 <ol>
 <li>In <strong>Microsoft Sentinel</strong>, go to <strong>Automation</strong> → <strong>+ Create</strong> → <strong>Automation rule</strong>.</li>
-<li>Configure:
-   - <strong>Trigger</strong>: When incident is created
-   - <strong>Conditions</strong>: Analytics rule name — Contains — <code>Lookout - High Severity Mobile Threats</code>
-   - <strong>Actions</strong>: Run playbook → <code>Lookout-MobileThreat-NotifyAndEnrich</code></li>
+<li>Configure:<ul>
+<li><strong>Trigger</strong>: When incident is created</li>
+<li><strong>Conditions</strong>: Analytics rule name — Contains — <code>Lookout - High Severity Mobile Threats</code></li>
+<li><strong>Actions</strong>: Run playbook → <code>Lookout-MobileThreat-NotifyAndEnrich</code></li>
+</ul>
+</li>
 <li>Save the automation rule.</li>
 </ol>
 <h2 id="permissions-summary">Permissions Summary</h2>
 <table>
 <thead>
 <tr>
-<th>Connection</th>
-<th>Auth Method</th>
-<th>Permission Required</th>
+  <th>Connection</th>
+  <th>Auth Method</th>
+  <th>Permission Required</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Microsoft Sentinel</td>
-<td>Managed Identity</td>
-<td>Microsoft Sentinel Responder</td>
+  <td>Microsoft Sentinel</td>
+  <td>Managed Identity</td>
+  <td>Microsoft Sentinel Responder</td>
 </tr>
 <tr>
-<td>Microsoft Teams</td>
-<td>User Account</td>
-<td>Channel Post Messages</td>
+  <td>Microsoft Teams</td>
+  <td>User Account</td>
+  <td>Channel Post Messages</td>
 </tr>
 <tr>
-<td>Office 365</td>
-<td>User Account</td>
-<td>Send Email</td>
+  <td>Office 365</td>
+  <td>User Account</td>
+  <td>Send Email</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/lookout.html">Back to Lookout</a></p>
+
 </div>
 
 </body>

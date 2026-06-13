@@ -22,22 +22,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Workbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Workbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance/Workbooks/SOXITCompliance.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SOX%20IT%20Compliance/Workbooks/SOXITCompliance.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -46,96 +46,97 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
-<td style="text-align: left;"><code>OperationName has_any "Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user"</code><br><code>OperationName has_any "directory write,policy update,role assignment,role update"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td style="text-align: left;"><code>DeviceVendor has_any "CrowdStrike,Microsoft,Qualys,Tripwire"</code><br><code>Message has_any "change"</code><br><code>Message has_any "record modified"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td style="text-align:left"><code>DeviceVendor has_any &quot;CrowdStrike,Microsoft,Qualys,Tripwire&quot;</code><br><code>Message has_any &quot;change&quot;</code><br><code>Message has_any &quot;record modified&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/configurationchange.html"><code>ConfigurationChange</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/configurationchange.html"><code>ConfigurationChange</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/heartbeat.html"><code>Heartbeat</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/heartbeat.html"><code>Heartbeat</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/identitydirectoryevents.html"><code>IdentityDirectoryEvents</code></a></td>
-<td style="text-align: left;"><code>ActionType in "DirectoryRoleMembershipChanged,GroupMembershipChanged,PrivilegeEscalation,SensitiveAccountChanged,UserAccountControlChanged"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/identitydirectoryevents.html"><code>IdentityDirectoryEvents</code></a></td>
+  <td style="text-align:left"><code>ActionType in &quot;DirectoryRoleMembershipChanged,GroupMembershipChanged,PrivilegeEscalation,SensitiveAccountChanged,UserAccountControlChanged&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
-<td style="text-align: left;"><code>Operation in "AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/officeactivity.html"><code>OfficeActivity</code></a></td>
+  <td style="text-align:left"><code>Operation in &quot;AddFolderPermissions,AddedToGroup,GroupAdded,MemberAdded,MemberRemoved,MemberRoleChanged,ModifyFolderPermissions,PermissionLevelAdded,Remove-ConditionalAccessPolicy,Set-ConditionalAccessPolicy,SharingSet&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/operation.html"><code>Operation</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">?</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">?</td>
+  <td style="text-align:left"><a href="../tables/operation.html"><code>Operation</code></a></td>
+  <td style="text-align:left"></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
-<td style="text-align: left;"><code>EventID in "1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907"</code><br><code>ObjectName has_any "xlsx"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/securityevent.html"><code>SecurityEvent</code></a></td>
+  <td style="text-align:left"><code>EventID in &quot;1100,1102,1104,1240,1241,1242,4656,4657,4660,4663,4670,4688,4719,4720,4726,4732,4739,4754,4907&quot;</code><br><code>ObjectName has_any &quot;xlsx&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+  <td style="text-align:left"><code>OperationName has_any &quot;Add directory role member,Add member to role,Add user,Create user,Role assignment,Update user&quot;</code><br><code>OperationName has_any &quot;directory write,policy update,role assignment,role update&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td style="text-align: left;"><code>SyslogMessage has_any "ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change"</code><br><code>SyslogMessage has_any "auditd stopped,logging stopped,rsyslog stopped,syslog stopped"</code><br><code>SyslogMessage has_any "change,config,edit,modified,updated"</code><br><code>SyslogMessage has_any "change,config,modified,registry,updated"</code><br><code>SyslogMessage has_any "checksum mismatch,file deleted,file modified,file tamper"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><code>SyslogMessage has_any &quot;ALTER TABLE,CREATE TABLE,DROP TABLE,database modified,schema change&quot;</code><br><code>SyslogMessage has_any &quot;auditd stopped,logging stopped,rsyslog stopped,syslog stopped&quot;</code><br><code>SyslogMessage has_any &quot;change,config,edit,modified,updated&quot;</code><br><code>SyslogMessage has_any &quot;change,config,modified,registry,updated&quot;</code><br><code>SyslogMessage has_any &quot;checksum mismatch,file deleted,file modified,file tamper&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/sox-it-compliance.html">Back to SOX IT Compliance</a></p>
+
 </div>
 
 </body>

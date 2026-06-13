@@ -16,48 +16,20 @@
 </nav>
 <div class="doc-content">
 <h1 id="beyondtrust-pm-cloud">BeyondTrust PM Cloud</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BeyondTrustLogo.svg" alt="" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BeyondTrustLogo.svg" alt="" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>BeyondTrustPMCloud</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">BeyondTrust</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/beyondtrustpmcloud.html">BeyondTrustPMCloud</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/azure-function.html">Azure Function</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud/Data%20Connectors/BeyondTrustPMCloud_API_FunctionApp.json">BeyondTrustPMCloud_API_FunctionApp.json</a></td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Ingestion API</strong></td>
-<td style="text-align: left;">[Log Ingestion API</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>Microsoft Learn</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#beyondtrust-pm-cloud">View on Learn</a></td>
-</tr>
-</tbody>
-</table>
+<p>| Attribute | Value |
+|:----------|:------|
+| <strong>Connector ID</strong> | <code>BeyondTrustPMCloud</code> |
+| <strong>Publisher</strong> | BeyondTrust |
+| <strong>Used in Solutions</strong> | <a href="../solutions/beyondtrustpmcloud.html">BeyondTrustPMCloud</a> |
+| <strong>Collection Method</strong> | <a href="../methods/azure-function.html">Azure Function</a> |
+| <strong>Connector Definition Files</strong> | <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud/Data%20Connectors/BeyondTrustPMCloud_API_FunctionApp.json">BeyondTrustPMCloud_API_FunctionApp.json</a> |
+| <strong>Ingestion API</strong> | <a href="../methods/log-ingestion-api-http-data-collector-api.html">Log Ingestion API|HTTP Data Collector API</a> — <em>Sibling ARM template declares DCR / Log Ingestion API resources|Connector definition requires workspace key (SharedKey pattern)</em> |
+| <strong>Microsoft Learn</strong> | <a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#beyondtrust-pm-cloud">View on Learn</a> |</p>
 <p>The BeyondTrust Privilege Management Cloud data connector provides the capability to ingest activity audit logs and client event logs from BeyondTrust PM Cloud into Microsoft Sentinel.</p>
 <p>This connector uses Azure Functions to pull data from the BeyondTrust PM Cloud API and ingest it into custom Log Analytics tables.</p>
 <h2 id="tables-ingested">Tables Ingested</h2>
@@ -65,24 +37,24 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/beyondtrustpm-activityaudits-cl.html"><code>BeyondTrustPM_ActivityAudits_CL</code></a></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/beyondtrustpm-activityaudits-cl.html"><code>BeyondTrustPM_ActivityAudits_CL</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../tables/beyondtrustpm-clientevents-cl.html"><code>BeyondTrustPM_ClientEvents_CL</code></a></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/beyondtrustpm-clientevents-cl.html"><code>BeyondTrustPM_ClientEvents_CL</code></a></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
@@ -90,16 +62,24 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.
-- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
-<p><strong>Custom Permissions:</strong>
-- <strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.
-- <strong>BeyondTrust PM Cloud API credentials</strong>: BeyondTrust PM Cloud OAuth Client ID and Client Secret are required. The API account requires the following permissions: Audit - Read Only and Reporting - Read Only</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions on the workspace are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Microsoft.Web/sites permissions</strong>: Read and write permissions to Azure Functions to create a Function App is required. <a href="https://docs.microsoft.com/azure/azure-functions/">See the documentation to learn more about Azure Functions</a>.</li>
+<li><strong>BeyondTrust PM Cloud API credentials</strong>: BeyondTrust PM Cloud OAuth Client ID and Client Secret are required. The API account requires the following permissions: Audit - Read Only and Reporting - Read Only</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<blockquote>
 <p><strong>NOTE:</strong> This connector uses Azure Functions to connect to the BeyondTrust PM Cloud API to pull logs into Microsoft Sentinel. This might result in additional data ingestion costs. Check the <a href="https://azure.microsoft.com/pricing/details/functions/">Azure Functions pricing page</a> for details.</p>
+</blockquote>
+<blockquote>
 <p><strong>NOTE:</strong> This connector uses the OAuth 2.0 client credentials flow to authenticate with the BeyondTrust PM Cloud API.</p>
 </blockquote>
 <p><strong>1. STEP 1 - Obtain BeyondTrust PM Cloud API credentials</strong></p>
@@ -111,37 +91,47 @@
 <p><strong>2. STEP 2 - Deploy the connector and the associated Azure Function</strong></p>
 <p>Use this method for automated deployment of the BeyondTrust PM Cloud data connector using an ARM Template.</p>
 <ol>
-<li>
-<p>Click the <strong>Deploy to Azure</strong> button below. </p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FBeyondTrustPMCloud%2FData%2520Connectors%2Fazuredeploy_BeyondTrustPMCloud_API_FunctionApp.json"><img alt="Deploy To Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-2. Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> (must contain your Log Analytics workspace), and <strong>Location</strong>. 
-3. Enter the required parameters:
-   - <strong>Workspace Name</strong>: Name of your Log Analytics workspace (e.g., <code>beyondtrust-pmcloud</code>)
-   - <strong>BeyondTrust PM Cloud Base URL</strong>: Your tenant URL (e.g., <code>https://yourcompany.beyondtrustcloud.com</code>)
-   - <strong>BeyondTrust Client ID</strong>: OAuth Client ID from Step 1
-   - <strong>BeyondTrust Client Secret</strong>: OAuth Client Secret from Step 1
-   - <strong>Activity Audits Polling Interval</strong>: How often to collect Activity Audits (default: 15 minutes)
-   - <strong>Client Events Polling Interval</strong>: How often to collect Client Events (default: 5 minutes)
-   - <strong>Log Level</strong>: Logging level for troubleshooting (default: Information)
-   - <strong>Historical Data Timeframe</strong>: How far back to collect data on first run (default: 1 day)
-4. Review advanced settings (Hosting Plan SKU, Storage Account Type) and adjust if needed.
-5. Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.
-6. Click <strong>Purchase</strong> to deploy.
-7. The deployment creates all required resources: Function App, Storage Account, Data Collection Endpoint, Data Collection Rules, and custom Log Analytics tables.
-8. Data should begin flowing within 15-30 minutes of deployment.</p>
+<li><p>Click the <strong>Deploy to Azure</strong> button below.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FBeyondTrustPMCloud%2FData%2520Connectors%2Fazuredeploy_BeyondTrustPMCloud_API_FunctionApp.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy To Azure" /></a></p>
+</li>
+<li><p>Select the preferred <strong>Subscription</strong>, <strong>Resource Group</strong> (must contain your Log Analytics workspace), and <strong>Location</strong>.</p>
+</li>
+<li><p>Enter the required parameters:</p>
+<ul>
+<li><strong>Workspace Name</strong>: Name of your Log Analytics workspace (e.g., <code>beyondtrust-pmcloud</code>)</li>
+<li><strong>BeyondTrust PM Cloud Base URL</strong>: Your tenant URL (e.g., <code>https://yourcompany.beyondtrustcloud.com</code>)</li>
+<li><strong>BeyondTrust Client ID</strong>: OAuth Client ID from Step 1</li>
+<li><strong>BeyondTrust Client Secret</strong>: OAuth Client Secret from Step 1</li>
+<li><strong>Activity Audits Polling Interval</strong>: How often to collect Activity Audits (default: 15 minutes)</li>
+<li><strong>Client Events Polling Interval</strong>: How often to collect Client Events (default: 5 minutes)</li>
+<li><strong>Log Level</strong>: Logging level for troubleshooting (default: Information)</li>
+<li><strong>Historical Data Timeframe</strong>: How far back to collect data on first run (default: 1 day)</li>
+</ul>
+</li>
+<li><p>Review advanced settings (Hosting Plan SKU, Storage Account Type) and adjust if needed.</p>
+</li>
+<li><p>Mark the checkbox labeled <strong>I agree to the terms and conditions stated above</strong>.</p>
+</li>
+<li><p>Click <strong>Purchase</strong> to deploy.</p>
+</li>
+<li><p>The deployment creates all required resources: Function App, Storage Account, Data Collection Endpoint, Data Collection Rules, and custom Log Analytics tables.</p>
+</li>
+<li><p>Data should begin flowing within 15-30 minutes of deployment.</p>
 </li>
 </ol>
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
-<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud\Data Connectors\README.md">BeyondTrustPMCloud\Data Connectors\README.md</a></em></p>
+<p>📄 <em>Source: [BeyondTrustPMCloud\Data Connectors\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BeyondTrustPMCloud\Data Connectors\README.md)</em></p>
 </blockquote>
 <h1 id="beyondtrust-privilege-management-cloud-data-connector-for-microsoft-sentinel">BeyondTrust Privilege Management Cloud Data Connector for Microsoft Sentinel</h1>
 <p>This data connector ingests security events and administrative activity from BeyondTrust Privilege Management Cloud into Microsoft Sentinel using REST API polling with Azure Functions.</p>
 <blockquote>
-<p><strong>📝 Note About Placeholders</strong>: Throughout this documentation, you'll see placeholders that you need to replace with your actual values:
-- <code>&lt;YOUR-FUNCTION-APP-NAME&gt;</code> - Your deployed function app name (e.g., <code>beyondtrust-pmcloud-abc123xyz</code>)
-- <code>&lt;YOUR-RESOURCE-GROUP&gt;</code> - Your Azure resource group name (e.g., <code>rg-sentinel-prod</code>)
-- <code>&lt;YOUR-WORKSPACE-NAME&gt;</code> - Your Log Analytics workspace name</p>
+<p><strong>📝 Note About Placeholders</strong>: Throughout this documentation, you'll see placeholders that you need to replace with your actual values:</p>
+<ul>
+<li><code>&lt;YOUR-FUNCTION-APP-NAME&gt;</code> - Your deployed function app name (e.g., <code>beyondtrust-pmcloud-abc123xyz</code>)</li>
+<li><code>&lt;YOUR-RESOURCE-GROUP&gt;</code> - Your Azure resource group name (e.g., <code>rg-sentinel-prod</code>)</li>
+<li><code>&lt;YOUR-WORKSPACE-NAME&gt;</code> - Your Log Analytics workspace name</li>
+</ul>
 </blockquote>
 <h2 id="overview">Overview</h2>
 <p>The BeyondTrust PM Cloud Data Connector retrieves data from two primary API endpoints:</p>
@@ -168,9 +158,11 @@
 <h4 id="from-azure"><strong>From Azure:</strong></h4>
 <ol>
 <li><strong>Resource Group Name</strong>: The resource group containing your Log Analytics workspace (deployment will create resources here)</li>
-<li><strong>Workspace Name</strong>: Your Log Analytics workspace name (not the GUID - just the name)
-   - Navigate to: Azure Portal → Log Analytics workspaces → [Your workspace] → Overview
-   - Copy the workspace name (e.g., <code>beyondtrust-pmcloud</code>)</li>
+<li><strong>Workspace Name</strong>: Your Log Analytics workspace name (not the GUID - just the name)<ul>
+<li>Navigate to: Azure Portal → Log Analytics workspaces → [Your workspace] → Overview</li>
+<li>Copy the workspace name (e.g., <code>beyondtrust-pmcloud</code>)</li>
+</ul>
+</li>
 </ol>
 <h4 id="from-beyondtrust-pm-cloud"><strong>From BeyondTrust PM Cloud:</strong></h4>
 <ol>
@@ -181,27 +173,26 @@
 <h2 id="deployment">Deployment</h2>
 <h3 id="option-1-azure-portal">Option 1: Azure Portal (Recommended)</h3>
 <ol>
-<li>Click the "Deploy to Azure" button below:</li>
-</ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FDataConnectors%2FBeyondTrustPMCloud%2Fazuredeploy_BeyondTrustPMCloud.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
-<ol start="2">
-<li>
-<p>Fill in the required parameters:
-   - <strong>WorkspaceName</strong>: Your Azure Log Analytics workspace name (e.g., <code>beyondtrust-pmcloud</code>)
-   - <strong>BeyondTrustTenantName</strong>: Your BeyondTrust PM Cloud tenant name (e.g., <code>yourcompany</code>)
-   - <strong>BeyondTrustClientId</strong>: OAuth Client ID from BeyondTrust PM Cloud
-   - <strong>BeyondTrustClientSecret</strong>: OAuth Client Secret from BeyondTrust PM Cloud
-   - <strong>ActivityAuditsPollingIntervalMinutes</strong>: Polling interval for Activity Audits (default: 15)
-   - <strong>ClientEventsPollingIntervalMinutes</strong>: Polling interval for Client Events (default: 5)
-   - <strong>HistoricalDataTimeframe</strong>: How far back to retrieve events on first run (default: 1d)</p>
+<li><p>Click the &quot;Deploy to Azure&quot; button below:</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FDataConnectors%2FBeyondTrustPMCloud%2Fazuredeploy_BeyondTrustPMCloud.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+</li>
+<li><p>Fill in the required parameters:</p>
 <ul>
+<li><strong>WorkspaceName</strong>: Your Azure Log Analytics workspace name (e.g., <code>beyondtrust-pmcloud</code>)</li>
+<li><strong>BeyondTrustTenantName</strong>: Your BeyondTrust PM Cloud tenant name (e.g., <code>yourcompany</code>)</li>
+<li><strong>BeyondTrustClientId</strong>: OAuth Client ID from BeyondTrust PM Cloud</li>
+<li><strong>BeyondTrustClientSecret</strong>: OAuth Client Secret from BeyondTrust PM Cloud</li>
+<li><strong>ActivityAuditsPollingIntervalMinutes</strong>: Polling interval for Activity Audits (default: 15)</li>
+<li><strong>ClientEventsPollingIntervalMinutes</strong>: Polling interval for Client Events (default: 5)</li>
+<li><strong>HistoricalDataTimeframe</strong>: How far back to retrieve events on first run (default: 1d)<ul>
 <li>Format: number followed by 'd' (days), 'h' (hours), or 'm' (minutes)</li>
 <li>Examples: '7d' (7 days), '12h' (12 hours), '30m' (30 minutes)</li>
 <li>Use '0' to start from current time (no historical data)</li>
 </ul>
 </li>
-<li>
-<p>Click "Review + create" and then "Create"</p>
+</ul>
+</li>
+<li><p>Click &quot;Review + create&quot; and then &quot;Create&quot;</p>
 </li>
 </ol>
 <blockquote>
@@ -225,149 +216,447 @@ az deployment group create `
 <h2 id="configuration">Configuration</h2>
 <h3 id="beyondtrust-pm-cloud-setup">BeyondTrust PM Cloud Setup</h3>
 <ol>
-<li>
-<p><strong>Create API Client</strong>:
-   - Log into your BeyondTrust PM Cloud management console
-   - Navigate to Configuration &gt; API Clients
-   - Create a new API client with the required permissions for Activity Audits and Events
-   - Note the Client ID and Client Secret</p>
+<li><p><strong>Create API Client</strong>:</p>
+<ul>
+<li>Log into your BeyondTrust PM Cloud management console</li>
+<li>Navigate to Configuration &gt; API Clients</li>
+<li>Create a new API client with the required permissions for Activity Audits and Events</li>
+<li>Note the Client ID and Client Secret</li>
+</ul>
 </li>
-<li>
-<p><strong>Required API Permissions</strong>:
-   - <code>urn:management:api</code> scope
-   - Access to <code>/v3/ActivityAudits/Details</code> endpoint
-   - Access to <code>/v3/Events/FromStartDate</code> endpoint</p>
+<li><p><strong>Required API Permissions</strong>:</p>
+<ul>
+<li><code>urn:management:api</code> scope</li>
+<li>Access to <code>/v3/ActivityAudits/Details</code> endpoint</li>
+<li>Access to <code>/v3/Events/FromStartDate</code> endpoint</li>
+</ul>
 </li>
 </ol>
 <h3 id="polling-intervals">Polling Intervals</h3>
-<p><strong>Important</strong>: Consider the API rate limits when setting polling intervals:
-- BeyondTrust PM Cloud APIs are limited to <strong>1000 requests per 100 seconds</strong>
-- Default intervals are conservative but can be adjusted based on your data volume
-- <strong>Activity Audits</strong>: Default 15 minutes (administrative events, lower frequency)
-- <strong>Client Events</strong>: Default 5 minutes (security events, higher frequency)</p>
+<p><strong>Important</strong>: Consider the API rate limits when setting polling intervals:</p>
+<ul>
+<li>BeyondTrust PM Cloud APIs are limited to <strong>1000 requests per 100 seconds</strong></li>
+<li>Default intervals are conservative but can be adjusted based on your data volume</li>
+<li><strong>Activity Audits</strong>: Default 15 minutes (administrative events, lower frequency)</li>
+<li><strong>Client Events</strong>: Default 5 minutes (security events, higher frequency)</li>
+</ul>
 <h3 id="customizing-polling-intervals">Customizing Polling Intervals</h3>
-<p>You can adjust polling intervals in the Azure Function App settings:
-- <code>BeyondTrust:ActivityAuditsPollingIntervalMinutes</code>
-- <code>BeyondTrust:ClientEventsPollingIntervalMinutes</code></p>
+<p>You can adjust polling intervals in the Azure Function App settings:</p>
+<ul>
+<li><code>BeyondTrust:ActivityAuditsPollingIntervalMinutes</code></li>
+<li><code>BeyondTrust:ClientEventsPollingIntervalMinutes</code></li>
+</ul>
 <h3 id="historical-data-timeframe">Historical Data Timeframe</h3>
 <p>When the connector runs for the first time (or when state is reset), it retrieves historical events based on the <code>HistoricalDataTimeframe</code> parameter:</p>
 <ul>
 <li><strong>Default</strong>: <code>1d</code> (1 day of historical data)</li>
 <li><strong>Format</strong>: Number followed by 'd' (days), 'h' (hours), or 'm' (minutes)</li>
-<li><strong>Examples</strong>:</li>
+<li><strong>Examples</strong>:<ul>
 <li><code>7d</code> - Retrieve last 7 days of events</li>
 <li><code>12h</code> - Retrieve last 12 hours of events</li>
 <li><code>30m</code> - Retrieve last 30 minutes of events</li>
 <li><code>0</code> - No historical data (start from current time)</li>
 </ul>
+</li>
+</ul>
 <p><strong>Note</strong>: After the initial run, the connector tracks state and only retrieves new events since the last successful run.</p>
-<p>You can adjust this setting in the Azure Function App settings:
-- <code>BeyondTrust:HistoricalDataTimeframe</code> (Consumption/Premium plans)
-- <code>BeyondTrust__HistoricalDataTimeframe</code> (Flex Consumption plan)</p>
+<p>You can adjust this setting in the Azure Function App settings:</p>
+<ul>
+<li><code>BeyondTrust:HistoricalDataTimeframe</code> (Consumption/Premium plans)</li>
+<li><code>BeyondTrust__HistoricalDataTimeframe</code> (Flex Consumption plan)</li>
+</ul>
 <h3 id="beyondtrust-pm-cloud-base-url">BeyondTrust PM Cloud Base URL</h3>
-<p>The connector requires your specific BeyondTrust PM Cloud base URL. For example:
-- If your PM Cloud portal is accessed at <code>https://yourcompany.beyondtrustcloud.com</code>
-- Enter: <code>https://yourcompany.beyondtrustcloud.com</code></p>
-<p>The connector will automatically:
-1. Add <code>-services</code> to the subdomain (e.g., <code>yourcompany-services.beyondtrustcloud.com</code>)
-2. Append the appropriate API paths (<code>/management-api</code> and <code>/oauth/connect/token</code>)
-3. Handle trailing slashes appropriately</p>
+<p>The connector requires your specific BeyondTrust PM Cloud base URL. For example:</p>
+<ul>
+<li>If your PM Cloud portal is accessed at <code>https://yourcompany.beyondtrustcloud.com</code></li>
+<li>Enter: <code>https://yourcompany.beyondtrustcloud.com</code></li>
+</ul>
+<p>The connector will automatically:</p>
+<ol>
+<li>Add <code>-services</code> to the subdomain (e.g., <code>yourcompany-services.beyondtrustcloud.com</code>)</li>
+<li>Append the appropriate API paths (<code>/management-api</code> and <code>/oauth/connect/token</code>)</li>
+<li>Handle trailing slashes appropriately</li>
+</ol>
 <p><strong>Note</strong>: If your URL already contains <code>-services</code>, the connector will not add it again.</p>
 <h2 id="data-schema">Data Schema</h2>
 <h3 id="beyondtrustpm_activityaudits_cl">BeyondTrustPM_ActivityAudits_CL</h3>
 <p>The Activity Audits table captures administrative and configuration changes in BeyondTrust PM Cloud with comprehensive audit details.</p>
-<p><strong>Core Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| TimeGenerated | datetime | Log Analytics ingestion timestamp |
-| id | int | Unique audit record ID |
-| details | string | Description of the activity |
-| userId | int | Numeric user ID |
-| user | string | User who performed the action |
-| entity | string | Type of entity modified |
-| entityName | string | Name of the entity |
-| auditType | string | Type of audit action |
-| created | datetime | When the activity occurred |
-| changedBy | string | Source of the change |
-| timeTransmitted | datetime | When transmitted to Azure |</p>
-<p><strong>Audit Detail Fields (dynamic type for complex nested data):</strong>
-- <code>apiClientDataAuditing</code>, <code>computerDataAuditing</code>, <code>groupDataAuditing</code>, <code>installationKeyDataAuditing</code>
-- <code>policyDataAuditing</code>, <code>policyRevisionDataAuditing</code>, <code>settingsDataAuditing</code>, <code>userDataAuditing</code>
-- <code>mapToIdentityProviderGroupAuditing</code>, <code>openIdConfigDataAuditing</code>, <code>mmcRemoteClientDataAuditing</code>
-- <code>computerPolicyDataAuditing</code>, <code>azureADIntegrationDataAuditing</code>, <code>authorizationRequestDataAuditing</code>
-- <code>reputationSettingsDataAuditing</code>, <code>securitySettingsDataAuditing</code>, <code>siemIntegration*</code> (multiple)
-- <code>agentDataAuditing</code>, <code>managementRuleDataAuditing</code>, <code>autoUpdate*</code> (multiple)
-- <code>permissionGroupDataAuditing</code>, <code>identityProviderGroupDataAuditing</code></p>
+<p><strong>Core Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>TimeGenerated</td>
+  <td>datetime</td>
+  <td>Log Analytics ingestion timestamp</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>int</td>
+  <td>Unique audit record ID</td>
+</tr>
+<tr>
+  <td>details</td>
+  <td>string</td>
+  <td>Description of the activity</td>
+</tr>
+<tr>
+  <td>userId</td>
+  <td>int</td>
+  <td>Numeric user ID</td>
+</tr>
+<tr>
+  <td>user</td>
+  <td>string</td>
+  <td>User who performed the action</td>
+</tr>
+<tr>
+  <td>entity</td>
+  <td>string</td>
+  <td>Type of entity modified</td>
+</tr>
+<tr>
+  <td>entityName</td>
+  <td>string</td>
+  <td>Name of the entity</td>
+</tr>
+<tr>
+  <td>auditType</td>
+  <td>string</td>
+  <td>Type of audit action</td>
+</tr>
+<tr>
+  <td>created</td>
+  <td>datetime</td>
+  <td>When the activity occurred</td>
+</tr>
+<tr>
+  <td>changedBy</td>
+  <td>string</td>
+  <td>Source of the change</td>
+</tr>
+<tr>
+  <td>timeTransmitted</td>
+  <td>datetime</td>
+  <td>When transmitted to Azure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Audit Detail Fields (dynamic type for complex nested data):</strong></p>
+<ul>
+<li><code>apiClientDataAuditing</code>, <code>computerDataAuditing</code>, <code>groupDataAuditing</code>, <code>installationKeyDataAuditing</code></li>
+<li><code>policyDataAuditing</code>, <code>policyRevisionDataAuditing</code>, <code>settingsDataAuditing</code>, <code>userDataAuditing</code></li>
+<li><code>mapToIdentityProviderGroupAuditing</code>, <code>openIdConfigDataAuditing</code>, <code>mmcRemoteClientDataAuditing</code></li>
+<li><code>computerPolicyDataAuditing</code>, <code>azureADIntegrationDataAuditing</code>, <code>authorizationRequestDataAuditing</code></li>
+<li><code>reputationSettingsDataAuditing</code>, <code>securitySettingsDataAuditing</code>, <code>siemIntegration*</code> (multiple)</li>
+<li><code>agentDataAuditing</code>, <code>managementRuleDataAuditing</code>, <code>autoUpdate*</code> (multiple)</li>
+<li><code>permissionGroupDataAuditing</code>, <code>identityProviderGroupDataAuditing</code></li>
+</ul>
 <blockquote>
 <p><strong>Note:</strong> Total ~40 columns. Dynamic fields contain detailed JSON objects with before/after state for configuration changes.</p>
 </blockquote>
 <h3 id="beyondtrustpm_clientevents_cl">BeyondTrustPM_ClientEvents_CL</h3>
 <p>The Client Events table captures endpoint security events in Elastic Common Schema (ECS) format with comprehensive context.</p>
-<p><strong>Event Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| TimeGenerated | datetime | Log Analytics ingestion timestamp |
-| eventId | string | Unique event identifier |
-| eventCode | string | Event type code |
-| eventKind | string | Event kind (event, alert, etc.) |
-| eventCategory | string | Event category |
-| eventAction | string | Action performed |
-| eventOutcome | string | Success/failure outcome |
-| eventType | string | Event type classification |
-| eventProvider | string | Event source provider |
-| eventIngested | datetime | When event was ingested |
-| eventReason | string | Reason for the event |</p>
-<p><strong>Host Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| hostHostname | string | Source hostname |
-| hostName | string | Host name |
-| hostId | string | Unique host identifier |
-| hostIp | string | Host IP address |
-| hostArchitecture | string | System architecture |
-| hostDomain | string | Domain name |
-| hostOsType | string | OS type (Windows, Linux, etc.) |
-| hostOsPlatform | string | OS platform |
-| hostOsName | string | OS name |
-| hostOsVersion | string | OS version |</p>
-<p><strong>User &amp; Identity Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| userId | string | User identifier |
-| userName | string | Username |
-| userDomain | string | User domain |</p>
-<p><strong>File Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| fileName | string | File name |
-| filePath | string | Full file path |
-| fileHashMd5 | string | MD5 hash |
-| fileHashSha1 | string | SHA1 hash |
-| fileHashSha256 | string | SHA256 hash |</p>
-<p><strong>Process Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| processPid | int | Process ID |
-| processExecutable | string | Process executable path |
-| processCommandLine | string | Command line arguments |</p>
-<p><strong>EPM-Specific Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| epmSchemaVersion | string | EPM schema version |
-| epmGroupId | int | EPM group ID |
-| epmTenantId | int | EPM tenant ID |
-| epmEventAction | string | EPM-specific action |
-| epmEventType | string | EPM-specific event type |</p>
-<p><strong>Additional Fields:</strong>
-| Field | Type | Description |
-|-------|------|-------------|
-| ecsVersion | string | ECS version |
-| tags | string | Event tags |
-| timestamp | datetime | Original event timestamp |
-| timeTransmitted | datetime | When transmitted to Azure |</p>
-<p><strong>Complex Data Fields (dynamic type for nested JSON):</strong>
-- <code>hostData</code>, <code>userData</code>, <code>fileData</code>, <code>processData</code>, <code>epmConfigurationData</code>
-- <code>networkData</code>, <code>destinationData</code>, <code>sourceData</code>, <code>relatedData</code></p>
+<p><strong>Event Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>TimeGenerated</td>
+  <td>datetime</td>
+  <td>Log Analytics ingestion timestamp</td>
+</tr>
+<tr>
+  <td>eventId</td>
+  <td>string</td>
+  <td>Unique event identifier</td>
+</tr>
+<tr>
+  <td>eventCode</td>
+  <td>string</td>
+  <td>Event type code</td>
+</tr>
+<tr>
+  <td>eventKind</td>
+  <td>string</td>
+  <td>Event kind (event, alert, etc.)</td>
+</tr>
+<tr>
+  <td>eventCategory</td>
+  <td>string</td>
+  <td>Event category</td>
+</tr>
+<tr>
+  <td>eventAction</td>
+  <td>string</td>
+  <td>Action performed</td>
+</tr>
+<tr>
+  <td>eventOutcome</td>
+  <td>string</td>
+  <td>Success/failure outcome</td>
+</tr>
+<tr>
+  <td>eventType</td>
+  <td>string</td>
+  <td>Event type classification</td>
+</tr>
+<tr>
+  <td>eventProvider</td>
+  <td>string</td>
+  <td>Event source provider</td>
+</tr>
+<tr>
+  <td>eventIngested</td>
+  <td>datetime</td>
+  <td>When event was ingested</td>
+</tr>
+<tr>
+  <td>eventReason</td>
+  <td>string</td>
+  <td>Reason for the event</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Host Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>hostHostname</td>
+  <td>string</td>
+  <td>Source hostname</td>
+</tr>
+<tr>
+  <td>hostName</td>
+  <td>string</td>
+  <td>Host name</td>
+</tr>
+<tr>
+  <td>hostId</td>
+  <td>string</td>
+  <td>Unique host identifier</td>
+</tr>
+<tr>
+  <td>hostIp</td>
+  <td>string</td>
+  <td>Host IP address</td>
+</tr>
+<tr>
+  <td>hostArchitecture</td>
+  <td>string</td>
+  <td>System architecture</td>
+</tr>
+<tr>
+  <td>hostDomain</td>
+  <td>string</td>
+  <td>Domain name</td>
+</tr>
+<tr>
+  <td>hostOsType</td>
+  <td>string</td>
+  <td>OS type (Windows, Linux, etc.)</td>
+</tr>
+<tr>
+  <td>hostOsPlatform</td>
+  <td>string</td>
+  <td>OS platform</td>
+</tr>
+<tr>
+  <td>hostOsName</td>
+  <td>string</td>
+  <td>OS name</td>
+</tr>
+<tr>
+  <td>hostOsVersion</td>
+  <td>string</td>
+  <td>OS version</td>
+</tr>
+</tbody>
+</table>
+<p><strong>User &amp; Identity Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>userId</td>
+  <td>string</td>
+  <td>User identifier</td>
+</tr>
+<tr>
+  <td>userName</td>
+  <td>string</td>
+  <td>Username</td>
+</tr>
+<tr>
+  <td>userDomain</td>
+  <td>string</td>
+  <td>User domain</td>
+</tr>
+</tbody>
+</table>
+<p><strong>File Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>fileName</td>
+  <td>string</td>
+  <td>File name</td>
+</tr>
+<tr>
+  <td>filePath</td>
+  <td>string</td>
+  <td>Full file path</td>
+</tr>
+<tr>
+  <td>fileHashMd5</td>
+  <td>string</td>
+  <td>MD5 hash</td>
+</tr>
+<tr>
+  <td>fileHashSha1</td>
+  <td>string</td>
+  <td>SHA1 hash</td>
+</tr>
+<tr>
+  <td>fileHashSha256</td>
+  <td>string</td>
+  <td>SHA256 hash</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Process Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>processPid</td>
+  <td>int</td>
+  <td>Process ID</td>
+</tr>
+<tr>
+  <td>processExecutable</td>
+  <td>string</td>
+  <td>Process executable path</td>
+</tr>
+<tr>
+  <td>processCommandLine</td>
+  <td>string</td>
+  <td>Command line arguments</td>
+</tr>
+</tbody>
+</table>
+<p><strong>EPM-Specific Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>epmSchemaVersion</td>
+  <td>string</td>
+  <td>EPM schema version</td>
+</tr>
+<tr>
+  <td>epmGroupId</td>
+  <td>int</td>
+  <td>EPM group ID</td>
+</tr>
+<tr>
+  <td>epmTenantId</td>
+  <td>int</td>
+  <td>EPM tenant ID</td>
+</tr>
+<tr>
+  <td>epmEventAction</td>
+  <td>string</td>
+  <td>EPM-specific action</td>
+</tr>
+<tr>
+  <td>epmEventType</td>
+  <td>string</td>
+  <td>EPM-specific event type</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Fields:</strong></p>
+<table>
+<thead>
+<tr>
+  <th>Field</th>
+  <th>Type</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>ecsVersion</td>
+  <td>string</td>
+  <td>ECS version</td>
+</tr>
+<tr>
+  <td>tags</td>
+  <td>string</td>
+  <td>Event tags</td>
+</tr>
+<tr>
+  <td>timestamp</td>
+  <td>datetime</td>
+  <td>Original event timestamp</td>
+</tr>
+<tr>
+  <td>timeTransmitted</td>
+  <td>datetime</td>
+  <td>When transmitted to Azure</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Complex Data Fields (dynamic type for nested JSON):</strong></p>
+<ul>
+<li><code>hostData</code>, <code>userData</code>, <code>fileData</code>, <code>processData</code>, <code>epmConfigurationData</code></li>
+<li><code>networkData</code>, <code>destinationData</code>, <code>sourceData</code>, <code>relatedData</code></li>
+</ul>
 <blockquote>
 <p><strong>Note:</strong> Total ~50+ columns. Dynamic fields contain detailed nested objects with full context for security analysis.</p>
 </blockquote>
@@ -427,27 +716,32 @@ BeyondTrustPM_ClientEvents_CL
 <p>For detailed information on viewing and querying logs, see <strong><a href="docs/WHERE-DO-LOGS-GO.html">Where Do Logs Go</a></strong>.</p>
 <h3 id="common-issues">Common Issues</h3>
 <ol>
-<li>
-<p><strong>Authentication Failures</strong>:
-   - Verify Client ID and Client Secret are correct
-   - Ensure OAuth client has proper permissions in BeyondTrust PM Cloud</p>
+<li><p><strong>Authentication Failures</strong>:</p>
+<ul>
+<li>Verify Client ID and Client Secret are correct</li>
+<li>Ensure OAuth client has proper permissions in BeyondTrust PM Cloud</li>
+</ul>
 </li>
-<li>
-<p><strong>Rate Limiting</strong>:
-   - If you see rate limit warnings, increase polling intervals
-   - Monitor Application Insights for rate limit exceptions</p>
+<li><p><strong>Rate Limiting</strong>:</p>
+<ul>
+<li>If you see rate limit warnings, increase polling intervals</li>
+<li>Monitor Application Insights for rate limit exceptions</li>
+</ul>
 </li>
-<li>
-<p><strong>No Data Ingestion</strong>:
-   - Check Function App logs for errors
-   - Verify Log Analytics Workspace ID and Key
-   - Ensure BeyondTrust PM Cloud has data in the specified time range</p>
+<li><p><strong>No Data Ingestion</strong>:</p>
+<ul>
+<li>Check Function App logs for errors</li>
+<li>Verify Log Analytics Workspace ID and Key</li>
+<li>Ensure BeyondTrust PM Cloud has data in the specified time range</li>
+</ul>
 </li>
 </ol>
 <h3 id="log-levels">Log Levels</h3>
-<p>Set the log level in Function App settings:
-- <code>Logging:LogLevel:Default</code> = Information (default)
-- Options: Critical, Error, Warning, Information, Debug, Trace</p>
+<p>Set the log level in Function App settings:</p>
+<ul>
+<li><code>Logging:LogLevel:Default</code> = Information (default)</li>
+<li>Options: Critical, Error, Warning, Information, Debug, Trace</li>
+</ul>
 <h2 id="security-considerations">Security Considerations</h2>
 <ol>
 <li><strong>Credentials</strong>: All sensitive configuration is stored in Azure Function App settings</li>
@@ -456,10 +750,12 @@ BeyondTrustPM_ClientEvents_CL
 <li><strong>Network Security</strong>: Consider implementing network restrictions if required</li>
 </ol>
 <h2 id="support">Support</h2>
-<p>For issues related to:
-- <strong>BeyondTrust PM Cloud API</strong>: Contact BeyondTrust support
-- <strong>Microsoft Sentinel/Log Analytics</strong>: Contact Microsoft support
-- <strong>Data Connector Issues</strong>: Review logs and documentation</p>
+<p>For issues related to:</p>
+<ul>
+<li><strong>BeyondTrust PM Cloud API</strong>: Contact BeyondTrust support</li>
+<li><strong>Microsoft Sentinel/Log Analytics</strong>: Contact Microsoft support</li>
+<li><strong>Data Connector Issues</strong>: Review logs and documentation</li>
+</ul>
 <h2 id="cost-considerations">Cost Considerations</h2>
 <ul>
 <li><strong>Azure Functions</strong>: Consumption plan charges per execution</li>
@@ -478,6 +774,7 @@ BeyondTrustPM_ClientEvents_CL
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

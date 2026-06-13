@@ -23,7 +23,7 @@ Reference for MDCDetectionProcessV2Events table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AdditionalData | dynamic | Additional metadata about the container event. |
 | AgentId | string | The ID of the monitoring agent tracking the container. |
 | Auid | string | The audit user ID associated with the container process. |
@@ -47,7 +47,7 @@ Reference for MDCDetectionProcessV2Events table in Azure Monitor Logs.
 | Ppid | string | The parent process ID of the containerized application. |
 | Repository | string | The container image repository. |
 | Ses | string | The session ID of the container process. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Success | string | Indicates whether the command execution was successful. |
 | Tag | string | The tag of the container image. |
 | TenantId | string | The Log Analytics workspace ID |

@@ -32,19 +32,19 @@ Reference for AZFWThreatIntel table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Action | string | Action taken by the firewall following the Threat Intelligence hit. |
 | DestinationIp | string | Packet's destination IP address. |
 | DestinationPort | int | Packet's destination port. |
-| Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example:www.microsoft.com. |
+| Fqdn | string | Request's target address in FQDN (Fully qualified Domain Name). For example: <a href="https://www.microsoft.com" data-linktype="external">www.microsoft.com</a>. |
 | IsTlsInspected | bool | True if connection is TLS inspected. False otherwise. |
 | Protocol | string | Packet's network protocol. For example: UDP, TCP. |
 | SourceIp | string | Packet's source IP address. |
 | SourcePort | int | Packet's source port. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
-| TargetUrl | string | Request's target address URL. Available only for HTTP or TLS-inspected HTTPS requests. For example:https://www.microsoft.com/en-us/about. |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
+| TargetUrl | string | Request's target address URL. Available only for HTTP or TLS-inspected HTTPS requests. For example: <a href="https://www.microsoft.com/en-us/about" data-linktype="external">https://www.microsoft.com/en-us/about</a>. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatDescription | string | Description of the Threat that was identified by the firewall. |
 | TimeGenerated | datetime | Timestamp (UTC) when the data plane log was created. |

@@ -23,13 +23,13 @@ Reference for DataSetRuns table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | CorrelationParams | dynamic | A set of parameters, in JSON, that provide identifiers or other strings used to correlate triggers or workflows that initiated the data set run. For example, if the collection was triggered by an Alert, this column will contain the Alert Resource ID. This column may be empty if the data set run has no known correlations. This column enables selecting all data associated with a common trigger. |
 | DataSetRunId | string | Randomly generated unique indentifier (brace-less UUID) for each collecction instance. This column enables selecting all data associated with the same collection. |
 | DCRId | string | The ARM resource Id of the Data Collection Rule (DCR) that produced the data. This column enables selecting all data associated with the same DCR. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Status | string | The operation status of the data set collection. This status could apply to the data set or data source. Example: DataSetRunInProgress or DataSourceCollectionSucceeded. |
 | StatusDetail | dynamic | Additional information about the status of the data set collection, in JSON. |
 | TenantId | string | The Log Analytics workspace ID |

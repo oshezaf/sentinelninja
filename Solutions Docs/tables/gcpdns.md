@@ -33,7 +33,7 @@ Reference for GCPDNS table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AuthAnswer | bool | Indicates if the DNS response is authoritative. |
 | AuthenticationInfoPrincipalEmail | string | Email address of the user or service account performing the action. |
 | AuthenticationInfoPrincipalSubject | string | The subject identifier for the principal (user or service account). |
@@ -102,7 +102,7 @@ Reference for GCPDNS table in Azure Monitor Logs.
 | Severity | string | Log severity level (e.g., INFO, WARNING, ERROR). |
 | SourceIP | string | IP address from which the query originated. |
 | SourceNetwork | string | The originating network of the DNS request. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StatusCode | string | HTTP status code returned for the request. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp when the log entry was created. |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/digital-shadows.html">Digital Shadows</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/digital-shadows.html">Digital Shadows</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Playbooks/DigitalShadowsPlaybooktoUpdateIncidentStatus/DigitalShadowsPlaybook-UpdateIncidentStatus.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Playbooks/DigitalShadowsPlaybooktoUpdateIncidentStatus/DigitalShadowsPlaybook-UpdateIncidentStatus.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,32 +47,60 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Alert_-_Get_incident | get | `/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}` | — |
-| Update_incident | put | `/Incidents` | — |
-| Update_incident_2 | put | `/Incidents` | — |
-| Update_incident_3 | put | `/Incidents` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Alert_-_Get_incident</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/Incidents/subscriptions/@{encodeURIComponent(triggerBody()?['WorkspaceSubscriptionId'])}/resourceGroups/@{encodeURIComponent(triggerBody()?['WorkspaceResourceGroup'])}/workspaces/@{encodeURIComponent(triggerBody()?['WorkspaceId'])}/alerts/@{encodeURIComponent(triggerBody()?['SystemAlertId'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_2</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident_3</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -87,7 +115,7 @@
 <li>The Analytic Rule identifies an update in the Triage Item as an alert</li>
 <li>Each alert with new triage item (identified by the unique triage item id) generates a Microsoft Sentinel Incident</li>
 <li>All the updates detected by Analytic Rule are identified as alerts and correlated with an incident if the Incident (with same triage item id) already exists</li>
-<li>Creation of an alert triggers the "DigitalShadowsPlaybook-UpdateIncidentStatus" playbook as an Alert automation, so that the "Status" of the incident, associated with alert's triage item id, is updated</li>
+<li>Creation of an alert triggers the &quot;DigitalShadowsPlaybook-UpdateIncidentStatus&quot; playbook as an Alert automation, so that the &quot;Status&quot; of the incident, associated with alert's triage item id, is updated</li>
 </ol>
 <h2 id="playbook-workflow">Playbook Workflow</h2>
 <p>Following is the workflow of the playbook:</p>
@@ -105,38 +133,40 @@
 <h2 id="deploying-the-playbook-manually">Deploying the Playbook manually</h2>
 <p>As described above, this playbook is intended to be used as part of the Digital Shadows Solution and not standalone. The following instructions enable users to manually install the playbook if required.</p>
 <ol>
-<li>To deploy the Playbook, click the "Deploy to Azure" button. This will launch the ARM Template deployment wizard.</li>
+<li>To deploy the Playbook, click the &quot;Deploy to Azure&quot; button. This will launch the ARM Template deployment wizard.</li>
 <li>Fill in the required parameters:<ul>
 <li>Playbook Name: Enter the playbook name here, a default is provided</li>
 </ul>
 </li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDigital%20Shadows%2FPlaybooks%2FDigitalShadowsPlaybook-UpdateIncidentStatus.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDigital%20Shadows%2FPlaybooks%2FDigitalShadowsPlaybook-UpdateIncidentStatus.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDigital%20Shadows%2FPlaybooks%2FDigitalShadowsPlaybook-UpdateIncidentStatus.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDigital%20Shadows%2FPlaybooks%2FDigitalShadowsPlaybook-UpdateIncidentStatus.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <h2 id="post-deployment-instructions">Post-deployment instructions</h2>
 <h3 id="configuring-role-assignment">Configuring role assignment</h3>
 <p>Once deployment is complete, the playbook requires the 'Microsoft Sentinel Responder' role in order to be able to update the status of Incidents.</p>
 <ul>
 <li>Go to Microsoft Sentinel &gt; Settings</li>
-<li>Click "Workspace settings" to navigate to the Log Analytics workspace</li>
-<li>Click "Access control (IAM)"</li>
-<li>Click "Add" &gt; Add role assignment</li>
-<li>Select "Microsoft Sentinel Responder" from the list of Roles and click "Next"</li>
-<li>On the "Members" tab</li>
+<li>Click &quot;Workspace settings&quot; to navigate to the Log Analytics workspace</li>
+<li>Click &quot;Access control (IAM)&quot;</li>
+<li>Click &quot;Add&quot; &gt; Add role assignment</li>
+<li>Select &quot;Microsoft Sentinel Responder&quot; from the list of Roles and click &quot;Next&quot;</li>
+<li>On the &quot;Members&quot; tab<ul>
 <li>Assign access to: Managed identity</li>
-<li>Click "Select members"</li>
-<li>In the pop-out menu, click the "Managed identity" drop down and select "Logic app"</li>
-<li>Select the Logic app named "DigitalShadowsPlaybook-UpdateIncidentStatus" and click the Select button</li>
-<li>Optionally provide a description such as "Provide access to the Digital Shadows UpdateIncidentStatus playbook to update the status of Microsoft Sentinel Incidents from changes in Digital Shadows SearchLight Portal".</li>
-<li>Click "Review + assign" twice to create the new role assignment</li>
+<li>Click &quot;Select members&quot;</li>
+<li>In the pop-out menu, click the &quot;Managed identity&quot; drop down and select &quot;Logic app&quot;</li>
+<li>Select the Logic app named &quot;DigitalShadowsPlaybook-UpdateIncidentStatus&quot; and click the Select button</li>
+</ul>
+</li>
+<li>Optionally provide a description such as &quot;Provide access to the Digital Shadows UpdateIncidentStatus playbook to update the status of Microsoft Sentinel Incidents from changes in Digital Shadows SearchLight Portal&quot;.</li>
+<li>Click &quot;Review + assign&quot; twice to create the new role assignment</li>
 </ul>
 <h3 id="configuring-the-analytic-rule">Configuring the Analytic Rule</h3>
 <p>Once deployment is complete, the Digital Shadows Analytics Rules need to be configured with the playbook as an Alert automation.</p>
 <ul>
 <li>Go to Microsoft Sentinel &gt; Analytics</li>
 <li>The Digital Shadows Solution usually creates two Analytics Rules. Both need to be updated in the same way</li>
-<li>Select a rule and click on the "Edit" button</li>
+<li>Select a rule and click on the &quot;Edit&quot; button</li>
 <li>Skip to the Automated response section</li>
-<li>Under "Alert automation" select the "DigitalShadowsPlaybook-UpdateIncidentStatus" playbook in the drop down</li>
+<li>Under &quot;Alert automation&quot; select the &quot;DigitalShadowsPlaybook-UpdateIncidentStatus&quot; playbook in the drop down</li>
 <li>Leave the remaining settings on the page unchanged</li>
 <li>Save the Analytic Rule</li>
 </ul>
@@ -144,6 +174,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/digital-shadows.html">Back to Digital Shadows</a></p>
+
 </div>
 
 </body>

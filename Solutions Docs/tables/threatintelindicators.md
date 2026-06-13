@@ -34,14 +34,14 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalFields | dynamic | The type specifc fields that Sentinel adds. Contains the TLPLevel: white, green, amber, or red. |
 | AzureTenantId | string | The tenant that submitted the indicator. |
 | Confidence | int | The confidence that the creator has in the correctness of their data. The value must be a number in the range of 0-100. |
 | Created | datetime | The date when the indicator was created. |
-| Data | dynamic | All object properties, formatted according to the STIX specification (https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf). |
+| Data | dynamic | All object properties, formatted according to the STIX specification (<a href="https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf" data-linktype="external">https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf</a>). |
 | Id | string | A value that uniquely identifies the indicator STIX object. This value is usable with Sentinel APIs. |
 | IsActive | bool | A value that specifies if an indicator is active and valid for detections. |
 | IsDeleted | bool | A value that indicates whether the data was deleted from Sentinel or not. |
@@ -51,7 +51,7 @@ Reference for ThreatIntelIndicators table in Azure Monitor Logs.
 | ObservableValue | string | The entire right-hand side of an equality comparison from the pattern. |
 | Pattern | string | The detection pattern for this indicator MAY be expressed as a STIX pattern. |
 | Revoked | bool | A value that specifies whether the indicator was revoked. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Tags | string | Sentinel defined tags for the indicator. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time of indicator ingestion. |
@@ -110,7 +110,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (101)
+## Content Items Using This Table (106)
 
 ### Analytic Rules (71)
 
@@ -210,7 +210,7 @@ This table is ingested by the following connectors:
 | [TI map URL entity to Cloud App Events](../content/threat-intelligence-new-ti-map-url-entity-to-cloud-app-events-526df43b-f514-477c-af7a-c8d3586457fb-9db18791.md) |  |
 | [TI map URL entity to Web Session Events (ASIM Web Session schema)](../content/threat-intelligence-new-ti-map-url-entity-to-web-session-events-asim-web-session-schema-3b4a8c72-5a2e-4f1e-b61a-9d8b2a6d7a21-f004a2bb.md) |  |
 
-### Hunting Queries (14)
+### Hunting Queries (15)
 
 **In solution [Google Threat Intelligence](../solutions/google-threat-intelligence.md):**
 
@@ -246,7 +246,13 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-new-ti-map-file-entity-to-vmconnection-event-f231cbcd-66d9-45be-a6a3-4a915e53d46c-00450027.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-new-ti-map-file-entity-to-wiredata-event-d2fd7661-de21-47ab-a9f9-e6ded983fabe-9e547c28.md) |  |
 
-### Workbooks (16)
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Teams Threat Intelligence Indicator Hit for Domain or URL](../content/github-only-teams-threat-intelligence-indicator-hit-for-domain-or-url-2e7cda70-c3cd-4173-945e-6b5c14b05817-afe28fba.md) |  |
+
+### Workbooks (20)
 
 **In solution [CiscoMeraki](../solutions/ciscomeraki.md):**
 
@@ -329,6 +335,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ThreatConnectOverview](../content/threatconnect-threatconnectoverview-c70716b8.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [IntsightsIOCWorkbook](../content/github-only-intsightsiocworkbook-88f7baed.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [ThreatIntelligence](../content/github-only-threatintelligence-250cda74.md) |  |
+
 ## Parsers Using This Table (3)
 
 ### Other Parsers (3)
@@ -360,8 +375,8 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | `ObservableKey contains "file:hashes"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "ipv4-addr:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
 | `ObservableKey == "url:value"`<br>`SourceSystem == "Google Threat Intelligence"` | - | 2 | - | - | **2** |
-| `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cyjax-IOCs"` | 1 | - | - | - | **1** |
+| `SourceSystem == "CrowdStrike Falcon Adversary Intelligence"` | 1 | - | - | - | **1** |
 | `SourceSystem == "MISP"` | 1 | - | - | - | **1** |
 | `ObservableKey contains "file:hashes"` | - | 1 | - | - | **1** |
 | `ObservableKey contains "file:hashes."`<br>`ObservableKey contains "network-traffic"` | - | 1 | - | - | **1** |
@@ -385,8 +400,8 @@ References by type: 6 connectors, 20 content items, 0 ASIM parsers, 0 other pars
 | `Google Threat Intelligence` | - | 8 | - | - | **8** |
 | `Lumen` | 2 | - | - | - | **2** |
 | `GreyNoise` | 1 | 1 | - | - | **2** |
-| `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
 | `Cyjax-IOCs` | 1 | - | - | - | **1** |
+| `CrowdStrike Falcon Adversary Intelligence` | 1 | - | - | - | **1** |
 | `MISP` | 1 | - | - | - | **1** |
 
 ---

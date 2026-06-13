@@ -23,7 +23,7 @@ Reference for CDBCassandraRequests table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AccountName | string | The name of the Cosmos DB account against which this request was issued. |
@@ -43,7 +43,7 @@ Reference for CDBCassandraRequests table in Azure Monitor Logs.
 | ResponseLength | real | The payload size (in bytes) of the server response. |
 | RetriedDueToRateLimiting | bool | Boolean flag indicating if this request was retried server side due to throttles. |
 | RetryCount | int | The number of server side retries issued for this request. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (in UTC) of the Cassandra API data plane request. |
 | Type | string | The name of the table |

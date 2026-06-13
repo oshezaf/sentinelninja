@@ -21,7 +21,7 @@
 | **First Published** | 2024-10-26 |
 | **Last Updated** | 2024-10-26 |
 | **Solution Folder** | [Google Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Google%20Threat%20Intelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google) · Popularity: 🟢 High (84%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/virustotalsl1681486227461.azure-sentinel-solution-google) · Popularity: 🟢 High (82%) |
 
 This Google Threat Intelligence Solution contains Playbooks that can help enrich incident information with threat information and intelligence for IPs, file hashes and URLs from Google Threat Intelligence. Enriched information can help drive focused investigations in Security Operations.<br><br><b>Important — Custom Connector prerequisite:</b> The Playbooks in this solution depend on the <b>Google Threat Intelligence custom Logic Apps connector</b>, which is <b>not deployed automatically</b> when you install the solution from Content Hub. Before running any of the Playbooks, you must manually deploy the custom connector into the same resource group and region as the Playbooks, using the Deploy to Azure button in the connector's <a href="https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Google%20Threat%20Intelligence/Playbooks/CustomConnector/GTICustomConnector">readme</a>. Without it, the Playbooks will fail to authenticate to the Google Threat Intelligence API.
 

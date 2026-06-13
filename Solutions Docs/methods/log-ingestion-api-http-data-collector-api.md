@@ -11,9 +11,9 @@
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **2** |
-| Active | 2 |
+| Active | 1 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 0 |
+| Unpublished ⚠️ | 1 |
 
 ### By Collection Method
 
@@ -29,9 +29,11 @@
 | Connector | Collection Method | Publisher | Tables | Solution |
 |:----------|:------------------|:----------|:------:|:---------|
 | [BeyondTrust PM Cloud](../connectors/beyondtrustpmcloud.md) | [Azure Function](../methods/azure-function.md) | BeyondTrust | 2 | [BeyondTrustPMCloud](../solutions/beyondtrustpmcloud.md) |
-| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) | [Azure Function](../methods/azure-function.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
+| [BloodHound Enterprise Data Connector (using Azure Functions)](../connectors/bloodhoundenterprise.md) ⚠️ | [Azure Function](../methods/azure-function.md) | SpecterOps | 6 | [BloodHound Enterprise](../solutions/bloodhound-enterprise.md) |
 
 ---
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 ---
 

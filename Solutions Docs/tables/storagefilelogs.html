@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Azure Resources</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Azure Resources</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagefilelogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/storagefilelogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -70,326 +70,326 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the storage account.</td>
+  <td style="text-align:left">AccountName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the storage account.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationHash</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The hash of authentication token.</td>
+  <td style="text-align:left">AuthenticationHash</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The hash of authentication token.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthenticationType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of authentication that was used to make the request.</td>
+  <td style="text-align:left">AuthenticationType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of authentication that was used to make the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuthorizationDetails</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Detailed policy information used to authorize the request.</td>
+  <td style="text-align:left">AuthorizationDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Detailed policy information used to authorize the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallerIpAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The IP address of the requester, including the port number.</td>
+  <td style="text-align:left">CallerIpAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the requester, including the port number.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The category of requested operation.</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The category of requested operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientRequestId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The x-ms-client-request-id header value of the request.</td>
+  <td style="text-align:left">ClientRequestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The x-ms-client-request-id header value of the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ConditionsUsed</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A semicolon-separated list of key-value pairs that represent a condition.</td>
+  <td style="text-align:left">ConditionsUsed</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A semicolon-separated list of key-value pairs that represent a condition.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContentLengthHeader</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The value of the Content-Length header for the request sent to the storage service.</td>
+  <td style="text-align:left">ContentLengthHeader</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The value of the Content-Length header for the request sent to the storage service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ID that is used to correlate logs across resources.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID that is used to correlate logs across resources.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The total time, expressed in milliseconds, to perform the requested operation. This includes the time to read the incoming request, and to send the response to the requester.</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The total time, expressed in milliseconds, to perform the requested operation. This includes the time to read the incoming request, and to send the response to the requester.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Etag</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ETag identifier for the returned object, in quotes.</td>
+  <td style="text-align:left">Etag</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ETag identifier for the returned object, in quotes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastModifiedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The Last Modified Time (LMT) for the returned object. This field is empty for operations that can return multiple objects.</td>
+  <td style="text-align:left">LastModifiedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The Last Modified Time (LMT) for the returned object. This field is empty for operations that can return multiple objects.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Location</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The location of storage account.</td>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The location of storage account.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MetricResponseType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Records the metric response for correlation between metrics and logs.</td>
+  <td style="text-align:left">MetricResponseType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Records the metric response for correlation between metrics and logs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ObjectKey</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The key of the requested object, in quotes.</td>
+  <td style="text-align:left">ObjectKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The key of the requested object, in quotes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationCount</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The number of each logged operation that is involved in the request. This count starts with an index of 0. Some requests require more than one operation, such as a request to copy a blob. Most requests perform only one operation.</td>
+  <td style="text-align:left">OperationCount</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The number of each logged operation that is involved in the request. This count starts with an index of 0. Some requests require more than one operation, such as a request to copy a blob. Most requests perform only one operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of REST operation that was performed.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of REST operation that was performed.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The storage service version that was specified when the request was made. This is equivalent to the value of the x-ms-version header.</td>
+  <td style="text-align:left">OperationVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The storage service version that was specified when the request was made. This is equivalent to the value of the x-ms-version header.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Protocol</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The protocol that is used in the operation.</td>
+  <td style="text-align:left">Protocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The protocol that is used in the operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReferrerHeader</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Referer header value.</td>
+  <td style="text-align:left">ReferrerHeader</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Referer header value.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestBodySize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The size of the request packets, expressed in bytes, that are read by the storage service. If a request is unsuccessful, this value might be empty.</td>
+  <td style="text-align:left">RequestBodySize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The size of the request packets, expressed in bytes, that are read by the storage service. If a request is unsuccessful, this value might be empty.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequesterAppId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Open Authorization (OAuth) application ID that is used as the requester.</td>
+  <td style="text-align:left">RequesterAppId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Open Authorization (OAuth) application ID that is used as the requester.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequesterAudience</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OAuth audience of the request.</td>
+  <td style="text-align:left">RequesterAudience</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OAuth audience of the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequesterObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OAuth object ID of the requester.</td>
+  <td style="text-align:left">RequesterObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OAuth object ID of the requester.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequesterTenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OAuth tenant ID of identity.</td>
+  <td style="text-align:left">RequesterTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OAuth tenant ID of identity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequesterTokenIssuer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The OAuth token issuer.</td>
+  <td style="text-align:left">RequesterTokenIssuer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The OAuth token issuer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequesterUpn</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The User Principal Names of requester.</td>
+  <td style="text-align:left">RequesterUpn</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The User Principal Names of requester.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequesterUserName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user name of requester for SMB.</td>
+  <td style="text-align:left">RequesterUserName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user name of requester for SMB.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestHeaderSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The size of the request header expressed in bytes. If a request is unsuccessful, this value might be empty.</td>
+  <td style="text-align:left">RequestHeaderSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The size of the request header expressed in bytes. If a request is unsuccessful, this value might be empty.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestMd5</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The value of either the Content-MD5 header or the x-ms-content-md5 header in the request. The MD5 hash value specified in this field represents the content in the request.</td>
+  <td style="text-align:left">RequestMd5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The value of either the Content-MD5 header or the x-ms-content-md5 header in the request. The MD5 hash value specified in this field represents the content in the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseBodySize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The size of the response packets written by the storage service, in bytes. If a request is unsuccessful, this value may be empty.</td>
+  <td style="text-align:left">ResponseBodySize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The size of the response packets written by the storage service, in bytes. If a request is unsuccessful, this value may be empty.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseHeaderSize</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The size of the response header expressed in bytes. If a request is unsuccessful, this value might be empty.</td>
+  <td style="text-align:left">ResponseHeaderSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The size of the response header expressed in bytes. If a request is unsuccessful, this value might be empty.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseMd5</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The value of the MD5 hash calculated by the storage service.</td>
+  <td style="text-align:left">ResponseMd5</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The value of the MD5 hash calculated by the storage service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SasExpiryStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Records any violations in the request SAS token as per the SAS policy set in the storage account. Ex: longer SAS token duration specified than allowed per SAS policy</td>
+  <td style="text-align:left">SasExpiryStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Records any violations in the request SAS token as per the SAS policy set in the storage account. Ex: longer SAS token duration specified than allowed per SAS policy</td>
 </tr>
 <tr>
-<td style="text-align: left;">SchemaVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The schema version of the log.</td>
+  <td style="text-align:left">SchemaVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The schema version of the log.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServerLatencyMs</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The total time expressed in milliseconds to perform the requested operation. This value doesn't include network latency (the time to read the incoming request and send the response to the requester).</td>
+  <td style="text-align:left">ServerLatencyMs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The total time expressed in milliseconds to perform the requested operation. This value doesn't include network latency (the time to read the incoming request and send the response to the requester).</td>
 </tr>
 <tr>
-<td style="text-align: left;">ServiceType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The service associated with this request.</td>
+  <td style="text-align:left">ServiceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The service associated with this request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbCommandDetail</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">More information about this specific request rather than the general type of request.</td>
+  <td style="text-align:left">SmbCommandDetail</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">More information about this specific request rather than the general type of request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbCommandMajor</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Value in SMB2_HEADER.Command, and is currently a number between 0 and 18 inclusive.</td>
+  <td style="text-align:left">SmbCommandMajor</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Value in SMB2_HEADER.Command, and is currently a number between 0 and 18 inclusive.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbCommandMinor</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The subclass of SmbCommandMajor, where appropriate.</td>
+  <td style="text-align:left">SmbCommandMinor</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The subclass of SmbCommandMajor, where appropriate.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbCreditsConsumed</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The ingress or egress consumed by the request, in units of 64k.</td>
+  <td style="text-align:left">SmbCreditsConsumed</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The ingress or egress consumed by the request, in units of 64k.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbFileId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The FileId associated with file or directory. Roughly analogous to an NTFS FileId.</td>
+  <td style="text-align:left">SmbFileId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The FileId associated with file or directory. Roughly analogous to an NTFS FileId.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbMessageID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The connection relative MessageId.</td>
+  <td style="text-align:left">SmbMessageID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The connection relative MessageId.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbPersistentHandleID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Persistent HandleID from an SMB2 Create request that survives network reconnects. Referenced in [MS-SMB2] 2.2.14.1 as SMB2_FILEID.Persistent.</td>
+  <td style="text-align:left">SmbPersistentHandleID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Persistent HandleID from an SMB2 Create request that survives network reconnects. Referenced in [MS-SMB2] 2.2.14.1 as SMB2_FILEID.Persistent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbPrimarySID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Security Identifier of Kerberos Authenticated request</td>
+  <td style="text-align:left">SmbPrimarySID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Security Identifier of Kerberos Authenticated request</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbSessionID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The SMB2 SessionId established at SessionSetup time.</td>
+  <td style="text-align:left">SmbSessionID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The SMB2 SessionId established at SessionSetup time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbStatusCode</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Status code for SMB in a hex format.</td>
+  <td style="text-align:left">SmbStatusCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status code for SMB in a hex format.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbTreeConnectID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The SMB TreeConnectID established at TreeConnect time.</td>
+  <td style="text-align:left">SmbTreeConnectID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The SMB TreeConnectID established at TreeConnect time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SmbVolatileHandleID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Volatile HandleID from an SMB2 Create request that is recycled on network reconnects. Referenced in [MS-SMB2] 2.2.14.1 as SMB2_FILEID.Volatile.</td>
+  <td style="text-align:left">SmbVolatileHandleID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Volatile HandleID from an SMB2 Create request that is recycled on network reconnects. Referenced in [MS-SMB2] 2.2.14.1 as SMB2_FILEID.Volatile.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">StatusCode</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The HTTP status code for the request. If the request is interrupted, this value might be set to Unknown.</td>
+  <td style="text-align:left">StatusCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The HTTP status code for the request. If the request is interrupted, this value might be set to Unknown.</td>
 </tr>
 <tr>
-<td style="text-align: left;">StatusText</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The status of the requested operation.</td>
+  <td style="text-align:left">StatusText</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The status of the requested operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The Universal Time Coordinated (UTC) time when the request was received by storage.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The Universal Time Coordinated (UTC) time when the request was received by storage.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TlsVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The TLS version used in the connection of request.</td>
+  <td style="text-align:left">TlsVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The TLS version used in the connection of request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">Uri</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Uniform resource identifier that is requested.</td>
+  <td style="text-align:left">Uri</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Uniform resource identifier that is requested.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgentHeader</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The User-Agent header value, in quotes.</td>
+  <td style="text-align:left">UserAgentHeader</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The User-Agent header value, in quotes.</td>
 </tr>
 </tbody>
 </table>
@@ -405,32 +405,72 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/azurestorageaccount.html">Azure Storage Account</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (9)</h2>
 <h3 id="analytic-rules">Analytic Rules (1)</h3>
 <p><strong>In solution <a href="../solutions/microsoft-defender-for-cloud-apps.html">Microsoft Defender for Cloud Apps</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.html">Linked Malicious Storage Artifacts</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoft-defender-for-cloud-apps-linked-malicious-storage-artifacts-b9e3b9f8-a406-4151-9891-e5ff1ddd8c1d-6de5b72c.html">Linked Malicious Storage Artifacts</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (7)</h3>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azure-storage-file-create-and-delete-276731f6-ae09-4469-9fa0-c0791a5a0d8d-9afbf5e4.html">Azure Storage File Create and Delete</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azure-storage-file-create,-access,-delete-25568c62-414b-4577-acee-5cba9494c232-3fab8ab2.html">Azure Storage File Create, Access, Delete</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azure-storage-mass-file-deletion-85e16874-72aa-4ebe-b36e-e45f8ba50f79-194e0a08.html">Azure Storage Mass File Deletion</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azure-storage-file-upload-from-vps-providers-85e16874-72aa-4ebe-b36e-e45f8ba50f79-c966139b.html">Azure Storage file upload from VPS Providers</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-storage-alert-correlation-with-commonsecuritylogs-and-storagelogs-7098cae1-c632-4b40-b715-86d6b07720d7-78ea9953.html">Storage Alert Correlation with CommonSecurityLogs and StorageLogs</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-storage-file-seen-on-endpoint-c7f03700-8bbe-4838-9e78-4852ef21609b-4254e436.html">Storage File Seen on Endpoint</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-user-account-linked-to-storage-account-file-upload-bee57113-7b9d-4158-958c-a7f3d534c6c4-d30a8c48.html">User Account Linked to Storage Account File Upload</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -439,14 +479,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -455,18 +495,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Schema</th>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimfileeventazurefilestorage.html">ASimFileEventAzureFileStorage</a></td>
-<td style="text-align: left;">FileEvent</td>
-<td style="text-align: left;">Microsoft Azure File Storage</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../asim/asimfileeventazurefilestorage.html">ASimFileEventAzureFileStorage</a></td>
+  <td style="text-align:left">FileEvent</td>
+  <td style="text-align:left">Microsoft Azure File Storage</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -478,6 +518,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

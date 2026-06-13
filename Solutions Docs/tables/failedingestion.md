@@ -23,14 +23,14 @@ Reference for FailedIngestion table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | Database | string | The name of the database holding the target table |
 | Details | string | Detailed description of the failure and error message |
 | ErrorCode | string | The failure's error code |
 | FailedOn | datetime | Time at which this ingest operation failed |
-| FailureStatus | string | The failure's status.Permanent, orRetryAttemptsExceededindicates that the operation exceeded the max retries or max time limit following a recurring transient error |
+| FailureStatus | string | The failure's status. <code>Permanent</code>, or <code>RetryAttemptsExceeded</code> indicates that the operation exceeded the max retries or max time limit following a recurring transient error |
 | IngestionSourceId | string | A unique identifier representing the ingested source |
 | IngestionSourcePath | string | The path of the ingestion data sources or the Azure blob storage URI |
 | OperationId | string | The ingestion's operation ID |
@@ -38,7 +38,7 @@ Reference for FailedIngestion table in Azure Monitor Logs.
 | ResultType | string | The final state of this data ingestion operation |
 | RootActivityId | string | The ingestion's activity ID |
 | ShouldRetry | bool | Indicates whether or not the failure is transient and should be retried |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Table | string | The name of the target table into which the data is ingested |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime |  |

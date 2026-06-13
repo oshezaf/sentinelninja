@@ -1,4 +1,6 @@
-# BitSight
+# Bitsight
+
+*Solution: BitSight*
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/BitSight.svg" alt="BitSight Logo" width="75" height="75">
 
@@ -17,8 +19,9 @@
 | **Version** | 3.2.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2023-02-20 |
-| **Last Updated** | 2024-02-20 |
+| **Last Updated** | 2026-04-24 |
 | **Solution Folder** | [BitSight](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/BitSight) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/bitsighttechnologiesinc1695119434818.bitsight_v1) · Popularity: 🟡 Low (39%) |
 
 The [BitSight](https://www.bitsight.com/) solution enables security operations teams to integrate insights from BitSight's Security Ratings platform into Microsoft Sentinel via the Codeless Connector Framework (CCF). The connector ingests Security Ratings, Company Profiles, Risk Vector breakdowns, Diligence Historical Statistics, Findings Summaries, Industry peer comparisons, and Vulnerability reference data for companies in your BitSight portfolio.
 

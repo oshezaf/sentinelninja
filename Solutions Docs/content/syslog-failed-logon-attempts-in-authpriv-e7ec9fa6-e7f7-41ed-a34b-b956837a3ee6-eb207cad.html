@@ -23,46 +23,46 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Analytic Rule</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Analytic Rule</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/syslog.html">Syslog</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/syslog.html">Syslog</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>e7ec9fa6-e7f7-41ed-a34b-b956837a3ee6</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>e7ec9fa6-e7f7-41ed-a34b-b956837a3ee6</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Severity</strong></td>
-<td style="text-align: left;">Medium</td>
+  <td style="text-align:left"><strong>Severity</strong></td>
+  <td style="text-align:left">Medium</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Kind</strong></td>
-<td style="text-align: left;">Scheduled</td>
+  <td style="text-align:left"><strong>Kind</strong></td>
+  <td style="text-align:left">Scheduled</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">CredentialAccess</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">CredentialAccess</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Techniques</strong></td>
-<td style="text-align: left;">T1110</td>
+  <td style="text-align:left"><strong>Techniques</strong></td>
+  <td style="text-align:left">T1110</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/syslog.html">Syslog</a>, <a href="../connectors/syslogama.html">SyslogAma</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/syslog.html">Syslog</a>, <a href="../connectors/syslogama.html">SyslogAma</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Syslog/Analytic%20Rules/FailedLogonAttempts_UnknownUser.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Syslog/Analytic%20Rules/FailedLogonAttempts_UnknownUser.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,26 +71,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td style="text-align: left;"><code>Facility == "authpriv"</code><br><code>SyslogMessage has "authentication failure"</code><br><code>SyslogMessage has "uid=0"</code><br><code>SyslogMessage has "user unknown"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><code>Facility == &quot;authpriv&quot;</code><br><code>SyslogMessage has &quot;authentication failure&quot;</code><br><code>SyslogMessage has &quot;uid=0&quot;</code><br><code>SyslogMessage has &quot;user unknown&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/syslog.html">Back to Syslog</a></p>
+
 </div>
 
 </body>

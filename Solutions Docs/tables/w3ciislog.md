@@ -33,7 +33,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent when data is pulled from Azure storage. |
@@ -56,7 +56,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | IsActive | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | LastReportedDateTime | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
 | MaliciousIP | string | Only populated for IIS logs collected from Azure Cloud Services (through Azure Diagnostics Extension). |
-| ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-<workspace ID>. |
+| ManagementGroupName | string | Name of the management group for Operations Manager agents. For other agents this is AOI-&lt;workspace ID&gt;. |
 | RemoteIPCountry | string | Country/region of the IP address of the client. |
 | RemoteIPLatitude | real | Latitude of the client IP address. |
 | RemoteIPLongitude | real | Longitude of the client IP address. |
@@ -68,7 +68,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | scWin32Status | string | Windows status code. |
 | Severity | int | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
 | sIP | string | IP address of the server on which the log file entry was generated. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | sPort | int | Server port number that is configured for the service. |
 | sSiteName | string | Name of the IIS site. |
 | StorageAccount | string | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
@@ -77,7 +77,7 @@ Reference for W3CIISLog table in Azure Monitor Logs.
 | TLPLevel | string | Only populated for IIS logs collected from Azure Cloud Services through Azure Diagnostics Extension. |
 | Type | string | The name of the table |
 
-## Solutions (7)
+## Solutions (8)
 
 This table is used by the following solutions:
 
@@ -85,6 +85,7 @@ This table is used by the following solutions:
 - [Microsoft Exchange Security - Exchange On-Premises](../solutions/microsoft-exchange-security-exchange-on-premises.md)
 - [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Web Shells Threat Protection](../solutions/web-shells-threat-protection.md)
@@ -100,9 +101,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (13)
+## Content Items Using This Table (38)
 
-### Analytic Rules (7)
+### Analytic Rules (15)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -136,7 +137,20 @@ This table is ingested by the following connectors:
 | [Malicious web application requests linked with Microsoft Defender for Endpoint (formerly Microsoft Defender ATP) alerts](../content/web-shells-threat-protection-malicious-web-application-requests-linked-with-microsoft-defender-for-endpo-fbfbf530-506b-49a4-81ad-4030885a195c-8a9494a2.md) |  |
 | [SUPERNOVA webshell](../content/web-shells-threat-protection-supernova-webshell-2acc91c3-17c2-4388-938e-4eac2d5894e8-79d870d5.md) | `csMethod == "GET"`<br>`csUriQuery contains "args"`<br>`csUriQuery contains "clazz"`<br>`csUriQuery contains "codes"`<br>`csUriQuery contains "method"`<br>`csUriStem contains "logoimagehandler.ashx"` |
 
-### Hunting Queries (3)
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Anomalous User Agent connection attempt](../content/standalone-content-anomalous-user-agent-connection-attempt-f845881e-2500-44dc-8ed7-b372af3e1e25-29a3ec02.md) | `cIP != "::1"`<br>`cIP !startswith "192.168."`<br>`csUserAgent !in "-,MSRPC"` |
+| [Exchange SSRF Autodiscover ProxyShell - Detection](../content/standalone-content-exchange-ssrf-autodiscover-proxyshell-detection-968358d6-6af8-49bb-aaa4-187b3067fb95-9f834a08.md) | `csUriQuery !has "Protocol"`<br>`csUriQuery contains ":"`<br>`csUriQuery contains "@"` |
+| [Exchange Worker Process Making Remote Call](../content/standalone-content-exchange-worker-process-making-remote-call-2c701f94-783c-4cd4-bc9b-3b3334976090-ea016158.md) |  |
+| [High count of connections by client IP on many ports](../content/standalone-content-high-count-of-connections-by-client-ip-on-many-ports-44a555d8-ecee-4a25-95ce-055879b4b14b-ec2b57ee.md) |  |
+| [High count of failed attempts from same client IP](../content/standalone-content-high-count-of-failed-attempts-from-same-client-ip-19e01883-15d8-4eb6-a7a5-3276cd668388-e4e52bb9.md) | `csUserName != "-"`<br>`scStatus in "401,403"` |
+| [High count of failed logons by a user](../content/standalone-content-high-count-of-failed-logons-by-a-user-884c4957-70ea-4f57-80b9-1bca3890315b-2a0ac893.md) | `csUserName != "-"`<br>`scStatus in "401,403"` |
+| [Malformed user agent](../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.md) |  |
+| [Silk Typhoon Suspicious Exchange Request](../content/standalone-content-silk-typhoon-suspicious-exchange-request-23005e87-2d3a-482b-b03d-edbebd1ae151-e396d92c.md) | `csUriQuery startswith "t="` |
+
+### Hunting Queries (16)
 
 **In solution [Network Threat Protection Essentials](../solutions/network-threat-protection-essentials.md):**
 
@@ -151,7 +165,30 @@ This table is ingested by the following connectors:
 | [Web Shell Activity](../content/web-shells-threat-protection-web-shell-activity-e0c947c3-fe83-46ff-bbda-a43224a785fd-524bd9eb.md) |  |
 | [Webshell Detection](../content/web-shells-threat-protection-webshell-detection-cc087e7c-4db0-4bf9-9e48-287a9c9c3fbc-b4d60786.md) | `csMethod == "GET"`<br>`csReferer has "whoami"`<br>`csUriQuery has "whoami"`<br>`csUriStem has "whoami"` |
 
-### Workbooks (3)
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Potential IIS brute force](../content/standalone-content-potential-iis-brute-force-934011da-1fe6-4507-aadb-d3914c877bcd-a771ce72.md) | `cIP != "::1"`<br>`cIP !startswith "192.168."`<br>`csUserName != "-"`<br>`scStatus in "401,403"`<br>`scStatus startswith "20"` |
+| [Potential IIS code injection attempt](../content/standalone-content-potential-iis-code-injection-attempt-96977c95-74b4-4cc2-b1a7-6a3ab17bd3f9-83c60a16.md) |  |
+| [Rare User Agent strings](../content/standalone-content-rare-user-agent-strings-3de523b5-9608-43d5-801e-732c741dd82e-fcfe2bac.md) | `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csUserAgent !in "-,MSRPC"` |
+| [Same IP address with multiple csUserAgent](../content/standalone-content-same-ip-address-with-multiple-csuseragent-4edbb420-2df7-4089-9906-c335f065803e-844fb539.md) | `cIP != "::1"`<br>`cIP !startswith "127."`<br>`cIP !startswith "192.168."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`scStatus !startswith "20"`<br>`scStatus !startswith "30"` |
+| [Suspect Mailbox Export on IIS/OWA](../content/standalone-content-suspect-mailbox-export-on-iis-owa-a523786c-8382-4029-80e9-f1a7ecd067c1-c99d7e83.md) | `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csUriStem contains "/owa/"` |
+| [Tracking Privileged Account Rare Activity](../content/standalone-content-tracking-privileged-account-rare-activity-431cccd3-2dff-46ee-b34b-61933e45f556-2c02c0bd.md) |  |
+| [URI requests from single client](../content/standalone-content-uri-requests-from-single-client-a787a819-40df-4c9f-a5ae-850d5a2a0cf6-02dc8d65.md) | `csUserAgent startswith "Mozilla"` |
+| [Web shell command alert enrichment](../content/standalone-content-web-shell-command-alert-enrichment-d2e6f31b-add1-4f44-b54d-1975a5605c1d-5ffaf047.md) |  |
+| [Web shell file alert enrichment](../content/standalone-content-web-shell-file-alert-enrichment-d0a3cb7b-375e-402d-9827-adafe0ce386d-3eb9e2e3.md) |  |
+
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Exchange Server ProxyLogon URIs](../content/github-only-exchange-server-proxylogon-uris-bcbebbae-d59a-4692-b138-93434bccf3db-59863ca0.md) | `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"` |
+| [Exchange Server Suspicious URIs Visited](../content/github-only-exchange-server-suspicious-uris-visited-3122423d-6c33-43c8-bc10-6d27b4350176-f62a3505.md) | `csUriStem == "/ews/exchange.asmx"` |
+| [Exchange Servers and Associated Security Alerts](../content/github-only-exchange-servers-and-associated-security-alerts-84026aa0-7020-45d0-9f85-d526e43de2ab-6ad26286.md) |  |
+| [Suspected ProxyToken Exploitation](../content/github-only-suspected-proxytoken-exploitation-141a3be6-be08-4519-9698-2fc908f6761c-6b9da17e.md) | `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csCookie has "SecurityToken"`<br>`csMethod == "POST"`<br>`csUriQuery has "msExchEcpCanary"`<br>`csUriStem has "/ecp"` |
+
+### Workbooks (7)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -171,6 +208,15 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [SecurityStatus](../content/soc-handbook-securitystatus-93651545.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) | `cIP !startswith "10."`<br>`cIP !startswith "127."`<br>`cIP !startswith "172."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csUriQuery startswith "t="`<br>`csUriStem == "/ews/exchange.asmx"` |
+| [Log4jPostCompromiseHunting](../content/github-only-log4jpostcompromisehunting-7193cd47.md) |  |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
+| [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
+
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -189,30 +235,50 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (3 criteria, 4 total references)
+## Selection Criteria Summary (14 criteria, 17 total references)
 
-References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 17 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"` | - | 2 | - | - | **2** |
+| `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"` | - | 3 | - | - | **3** |
+| `csUserName != "-"`<br>`scStatus in "401,403"` | - | 2 | - | - | **2** |
 | `csMethod == "GET"`<br>`csUriQuery contains "args"`<br>`csUriQuery contains "clazz"`<br>`csUriQuery contains "codes"`<br>`csUriQuery contains "method"`<br>`csUriStem contains "logoimagehandler.ashx"` | - | 1 | - | - | **1** |
+| `cIP != "::1"`<br>`cIP !startswith "192.168."`<br>`csUserAgent !in "-,MSRPC"` | - | 1 | - | - | **1** |
+| `csUriQuery !has "Protocol"`<br>`csUriQuery contains ":"`<br>`csUriQuery contains "@"` | - | 1 | - | - | **1** |
+| `csUriQuery startswith "t="` | - | 1 | - | - | **1** |
 | `csMethod == "GET"`<br>`csReferer has "whoami"`<br>`csUriQuery has "whoami"`<br>`csUriStem has "whoami"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **4** | **0** | **0** | **4** |
+| `cIP != "::1"`<br>`cIP !startswith "127."`<br>`cIP !startswith "192.168."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`scStatus !startswith "20"`<br>`scStatus !startswith "30"` | - | 1 | - | - | **1** |
+| `csUriStem == "/ews/exchange.asmx"` | - | 1 | - | - | **1** |
+| `cIP != "::1"`<br>`cIP !startswith "192.168."`<br>`csUserName != "-"`<br>`scStatus in "401,403"`<br>`scStatus startswith "20"` | - | 1 | - | - | **1** |
+| `csUserAgent startswith "Mozilla"` | - | 1 | - | - | **1** |
+| `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csUserAgent !in "-,MSRPC"` | - | 1 | - | - | **1** |
+| `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csUriStem contains "/owa/"` | - | 1 | - | - | **1** |
+| `cIP !startswith "127."`<br>`cIP !startswith "::"`<br>`cIP !startswith "fe80"`<br>`csCookie has "SecurityToken"`<br>`csMethod == "POST"`<br>`csUriQuery has "msExchEcpCanary"`<br>`csUriStem has "/ecp"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **17** | **0** | **0** | **17** |
 
 ### cIP
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!startswith 127.` | - | 2 | - | - | **2** |
-| `!startswith ::` | - | 2 | - | - | **2** |
-| `!startswith fe80` | - | 2 | - | - | **2** |
+| `!startswith 127.` | - | 7 | - | - | **7** |
+| `!startswith ::` | - | 7 | - | - | **7** |
+| `!startswith fe80` | - | 7 | - | - | **7** |
+| `!= ::1` | - | 3 | - | - | **3** |
+| `!startswith 192.168.` | - | 3 | - | - | **3** |
+
+### csCookie
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `has SecurityToken` | - | 1 | - | - | **1** |
 
 ### csMethod
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `GET` | - | 2 | - | - | **2** |
+| `POST` | - | 1 | - | - | **1** |
 
 ### csReferer
 
@@ -228,7 +294,12 @@ References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parse
 | `contains clazz` | - | 1 | - | - | **1** |
 | `contains codes` | - | 1 | - | - | **1** |
 | `contains method` | - | 1 | - | - | **1** |
+| `!has Protocol` | - | 1 | - | - | **1** |
+| `contains :` | - | 1 | - | - | **1** |
+| `contains @` | - | 1 | - | - | **1** |
+| `startswith t=` | - | 1 | - | - | **1** |
 | `has whoami` | - | 1 | - | - | **1** |
+| `has msExchEcpCanary` | - | 1 | - | - | **1** |
 
 ### csUriStem
 
@@ -236,6 +307,33 @@ References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parse
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `contains logoimagehandler.ashx` | - | 1 | - | - | **1** |
 | `has whoami` | - | 1 | - | - | **1** |
+| `/ews/exchange.asmx` | - | 1 | - | - | **1** |
+| `contains /owa/` | - | 1 | - | - | **1** |
+| `has /ecp` | - | 1 | - | - | **1** |
+
+### csUserAgent
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= -` | - | 2 | - | - | **2** |
+| `!= MSRPC` | - | 2 | - | - | **2** |
+| `startswith Mozilla` | - | 1 | - | - | **1** |
+
+### csUserName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= -` | - | 3 | - | - | **3** |
+
+### scStatus
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `401` | - | 3 | - | - | **3** |
+| `403` | - | 3 | - | - | **3** |
+| `!startswith 20` | - | 1 | - | - | **1** |
+| `!startswith 30` | - | 1 | - | - | **1** |
+| `startswith 20` | - | 1 | - | - | **1** |
 
 ---
 

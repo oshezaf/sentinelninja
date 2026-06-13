@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Update-VIPUsers-Watchlist-from-AzureAD-Group/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Update-VIPUsers-Watchlist-from-AzureAD-Group/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,76 +47,146 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">4</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">4</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuremonitorlogs`](../logic-apps/managed-azuremonitorlogs.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Run_query_and_list_results_-_if_user_is_in_VIP_watchlist | post | `/queryData` | — |
-| Run_query_and_list_results_-_Get_VIP_Watchlist_members | post | `/queryData` | — |
-
-#### [`microsoftsentinel`](../logic-apps/managed-microsoftsentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Watchlists_-_Delete_a_watchlist_item | delete | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('MicrosoftSentinelWorkspaceID'))}/watchlists/@{encodeURIComponent('VIPUsers')}/watchlistItem/@{encodeURIComponent(items('For_each_VIP_Watchlist_member')?['_DTItemId'])}` | — |
-| Watchlists_-_Add_a_new_watchlist_item_-_with_SID | put | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('MicrosoftSentinelWorkspaceID'))}/watchlists/@{encodeURIComponent('VIPUsers')}/watchlistItem` | — |
-| Watchlists_-_Add_a_new_watchlist_item_-_VIP_Watchlist_-_without_SID | put | `/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('MicrosoftSentinelWorkspaceID'))}/watchlists/@{encodeURIComponent('VIPUsers')}/watchlistItem` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP_-_check_is_the_Watchlist_user_still_member_of_Azure_AD_group | POST | `https://graph.microsoft.com/beta/users/@{items('For_each_VIP_Watchlist_member')?['User Principal Name']}/checkMemberGroups` | — |
-| HTTP_-_does_user_have_SID | GET | `https://graph.microsoft.com/v1.0/users/@{items('For_each_member_of_VIP_Azure_AD_group')?['userPrincipalName']}?$select=onPremisesSecurityIdentifier` | — |
-| HTTP_-_Get_Group_details | GET | `https://graph.microsoft.com/v1.0/groups/@{variables('VIP Group ID')}` | — |
-| HTTP_-_Get_VIP_Azure_AD_Group_Members | GET | `https://graph.microsoft.com/v1.0/groups/@{variables('VIP Group ID')}/members` | — |
-
+<h4 id="azuremonitorlogs"><a href="../logic-apps/managed-azuremonitorlogs.html"><code>azuremonitorlogs</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Run_query_and_list_results_-_if_user_is_in_VIP_watchlist</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Run_query_and_list_results_-_Get_VIP_Watchlist_members</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/queryData</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="microsoftsentinel"><a href="../logic-apps/managed-microsoftsentinel.html"><code>microsoftsentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Watchlists_-_Delete_a_watchlist_item</td>
+  <td style="text-align:left">delete</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('MicrosoftSentinelWorkspaceID'))}/watchlists/@{encodeURIComponent('VIPUsers')}/watchlistItem/@{encodeURIComponent(items('For_each_VIP_Watchlist_member')?['_DTItemId'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Watchlists_-<em>Add_a_new_watchlist_item</em>-_with_SID</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('MicrosoftSentinelWorkspaceID'))}/watchlists/@{encodeURIComponent('VIPUsers')}/watchlistItem</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Watchlists_-<em>Add_a_new_watchlist_item</em>-<em>VIP_Watchlist</em>-_without_SID</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Watchlists/subscriptions/@{encodeURIComponent(parameters('SubscriptionID'))}/resourceGroups/@{encodeURIComponent(parameters('ResourceGroupName'))}/workspaces/@{encodeURIComponent(parameters('MicrosoftSentinelWorkspaceID'))}/watchlists/@{encodeURIComponent('VIPUsers')}/watchlistItem</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_check_is_the_Watchlist_user_still_member_of_Azure_AD_group</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/beta/users/@{items('For_each_VIP_Watchlist_member')?['User Principal Name']}/checkMemberGroups</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_does_user_have_SID</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/users/@{items('For_each_member_of_VIP_Azure_AD_group')?['userPrincipalName']}?$select=onPremisesSecurityIdentifier</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_Group_details</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/groups/@{variables('VIP Group ID')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_VIP_Azure_AD_Group_Members</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>https://graph.microsoft.com/v1.0/groups/@{variables('VIP Group ID')}/members</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

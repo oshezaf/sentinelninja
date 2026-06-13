@@ -24,14 +24,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 </tbody>
 </table>
@@ -46,56 +46,56 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">AssetType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Asset type for leaked-data events (asset.type, e.g. EMAIL/DOMAIN/IP/PHONE), domain-permutation events (hardcoded to DOMAIN), or asset source kind for attack-surface events (source_type, e.g. WEB_APPLICATION/NETWORK_SERVICE/DNS). Empty for dark-web events whose target lives in type-specific fields inside Details.</td>
+  <td style="text-align:left">AssetType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Asset type for leaked-data events (asset.type, e.g. EMAIL/DOMAIN/IP/PHONE), domain-permutation events (hardcoded to DOMAIN), or asset source kind for attack-surface events (source_type, e.g. WEB_APPLICATION/NETWORK_SERVICE/DNS). Empty for dark-web events whose target lives in type-specific fields inside Details.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssetValue</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Asset value: nested asset.value (leaked-data), original_domain (domain-permutation), or root-level asset_value (attack-surface). Empty for dark-web events.</td>
+  <td style="text-align:left">AssetValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Asset value: nested asset.value (leaked-data), original_domain (domain-permutation), or root-level asset_value (attack-surface). Empty for dark-web events.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Details</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Full NordStellar event payload as received in the webhook envelope's <code>event</code> field. Contains every type-specific field (queryable as <code>Details.&lt;field&gt;</code> or <code>Details['&lt;field&gt;']</code>) and, for convenience and forward compatibility, also includes the source values for the promoted columns above.</td>
+  <td style="text-align:left">Details</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Full NordStellar event payload as received in the webhook envelope's <code>event</code> field. Contains every type-specific field (queryable as <code>Details.&lt;field&gt;</code> or <code>Details['&lt;field&gt;']</code>) and, for convenience and forward compatibility, also includes the source values for the promoted columns above.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique NordStellar event identifier (GUID).</td>
+  <td style="text-align:left">EventId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique NordStellar event identifier (GUID).</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">NordStellar event type, e.g. DATA_BREACH, COMBO_LIST, MALWARE_INFECTION, CONSUMER_CREDENTIAL, DARK_WEB_FORUM_POST, DARK_WEB_TELEGRAM_POST, DARK_WEB_RANSOMWARE_POST, DARK_WEB_MARKETPLACE_POST, DOMAIN_PERMUTATION, ATTACK_SURFACE_WEB_APPLICATION_VULNERABILITY, ATTACK_SURFACE_NETWORK_SERVICE_VULNERABILITY, ATTACK_SURFACE_DNS_VULNERABILITY.</td>
+  <td style="text-align:left">EventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">NordStellar event type, e.g. DATA_BREACH, COMBO_LIST, MALWARE_INFECTION, CONSUMER_CREDENTIAL, DARK_WEB_FORUM_POST, DARK_WEB_TELEGRAM_POST, DARK_WEB_RANSOMWARE_POST, DARK_WEB_MARKETPLACE_POST, DOMAIN_PERMUTATION, ATTACK_SURFACE_WEB_APPLICATION_VULNERABILITY, ATTACK_SURFACE_NETWORK_SERVICE_VULNERABILITY, ATTACK_SURFACE_DNS_VULNERABILITY.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Module</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">NordStellar source module: LEAKED_DATA, DARK_WEB_MONITORING, DOMAIN_SQUATTING, or ATTACK_SURFACE.</td>
+  <td style="text-align:left">Module</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">NordStellar source module: LEAKED_DATA, DARK_WEB_MONITORING, DOMAIN_SQUATTING, or ATTACK_SURFACE.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RiskLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">NordStellar risk level: CRITICAL, HIGH, MEDIUM, LOW, or INFORMATIONAL.</td>
+  <td style="text-align:left">RiskLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">NordStellar risk level: CRITICAL, HIGH, MEDIUM, LOW, or INFORMATIONAL.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Tags</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Tags attached to the event.</td>
+  <td style="text-align:left">Tags</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Tags attached to the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp when the event was ingested into Microsoft Sentinel. Derived from event.date_added (leaked-data, dark-web, domain-permutation), event.detected_at (attack-surface), or the envelope time field as fallback.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the event was ingested into Microsoft Sentinel. Derived from event.date_added (leaked-data, dark-web, domain-permutation), event.detected_at (attack-surface), or the envelope time field as fallback.</td>
 </tr>
 </tbody>
 </table>
@@ -109,14 +109,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/nordstellarpush.html">NordStellar (Push)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/nordstellarpush.html">NordStellar (Push)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -124,6 +124,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

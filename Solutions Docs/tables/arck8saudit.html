@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Audit, Azure Resources, Containers</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Audit, Azure Resources, Containers</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8saudit">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/arck8saudit">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,131 +57,131 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">Annotations</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">An unstructed key-value map associated with this audit event. These annotations are set by plugins as part of the request serving chain and are included at the Metadata event level.</td>
+  <td style="text-align:left">Annotations</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">An unstructed key-value map associated with this audit event. These annotations are set by plugins as part of the request serving chain and are included at the Metadata event level.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique audit ID that is generated for each request.</td>
+  <td style="text-align:left">AuditId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique audit ID that is generated for each request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Level</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Level (Metadata, Request, RequestResponse) of the audit event.</td>
+  <td style="text-align:left">Level</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Level (Metadata, Request, RequestResponse) of the audit event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ObjectRef</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The Kubernetes object reference this event was targeted for. This field does not apply for list requests nor non-resource requests.</td>
+  <td style="text-align:left">ObjectRef</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The Kubernetes object reference this event was targeted for. This field does not apply for list requests nor non-resource requests.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PodName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the pod emitting this audit event.</td>
+  <td style="text-align:left">PodName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the pod emitting this audit event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestObject</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Kubernetes API object from the request in object format or the string "skipped-too-big-size-object". This is omitted for non-resource requests.</td>
+  <td style="text-align:left">RequestObject</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Kubernetes API object from the request in object format or the string &quot;skipped-too-big-size-object&quot;. This is omitted for non-resource requests.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestReceivedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time when the API Server first received the request.</td>
+  <td style="text-align:left">RequestReceivedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time when the API Server first received the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestUri</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The URI of the request made by the client to the server.</td>
+  <td style="text-align:left">RequestUri</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The URI of the request made by the client to the server.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseObject</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Kubernetes API object from the response, in object format or the string "skipped-too-big-size-object". This is omitted for non-resource requests.</td>
+  <td style="text-align:left">ResponseObject</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Kubernetes API object from the response, in object format or the string &quot;skipped-too-big-size-object&quot;. This is omitted for non-resource requests.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseStatus</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Response status for the request, which includes the response code. In error cases, this object will include the error message property.</td>
+  <td style="text-align:left">ResponseStatus</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Response status for the request, which includes the response code. In error cases, this object will include the error message property.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceIps</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The list of source IP addresses for the originating client and intermediate proxies.</td>
+  <td style="text-align:left">SourceIps</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The list of source IP addresses for the originating client and intermediate proxies.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">Stage</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The request handling stage (RequestReceived, ResponseStarted, ResponseComplete, Panic) at which this audit event was generated.</td>
+  <td style="text-align:left">Stage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The request handling stage (RequestReceived, ResponseStarted, ResponseComplete, Panic) at which this audit event was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">StageReceivedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time when the request reached the current audit stage.</td>
+  <td style="text-align:left">StageReceivedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time when the request reached the current audit stage.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Event generation time.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Event generation time.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">User</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Authenticated user metadata of the requesting client, including optional fields such as UID and groups.</td>
+  <td style="text-align:left">User</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Authenticated user metadata of the requesting client, including optional fields such as UID and groups.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The user agent string presented by the originating client.</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user agent string presented by the originating client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Verb</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Kubernetes verb associated with the request. For non-resource requests, this is the lower-cased HTTP method.</td>
+  <td style="text-align:left">Verb</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Kubernetes verb associated with the request. For non-resource requests, this is the lower-cased HTTP method.</td>
 </tr>
 </tbody>
 </table>
@@ -194,6 +194,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

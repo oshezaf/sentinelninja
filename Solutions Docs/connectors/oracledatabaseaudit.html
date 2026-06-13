@@ -18,39 +18,42 @@
 <h1 id="deprecated-oracle-database-audit">🚫 🔍 [Deprecated] Oracle Database Audit</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+</blockquote>
+<blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/oracle_logo.svg" alt="" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/oracle_logo.svg" alt="" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>OracleDatabaseAudit</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>OracleDatabaseAudit</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Oracle</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Oracle</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/oracledatabaseaudit.html">OracleDatabaseAudit</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/oracledatabaseaudit.html">OracleDatabaseAudit</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit/Data%20Connectors/Connector_OracleDatabaseAudit.json">Connector_OracleDatabaseAudit.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/OracleDatabaseAudit/Data%20Connectors/Connector_OracleDatabaseAudit.json">Connector_OracleDatabaseAudit.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -60,20 +63,20 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td style="text-align: left;"><code>SyslogMessage contains "Oracle Unified Audit"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><code>SyslogMessage contains &quot;Oracle Unified Audit&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
@@ -81,8 +84,10 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): write permission is required.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): write permission is required.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -95,41 +100,43 @@
 <strong>Choose where to install the agent:</strong></p>
 </blockquote>
 <p><strong>Install agent on Azure Linux Virtual Machine</strong></p>
-<p>Select the machine to install the agent on and then click <strong>Connect</strong>.
-  - <strong>Install agent on Linux Virtual Machine</strong></p>
+<p>Select the machine to install the agent on and then click <strong>Connect</strong>.</p>
+<ul>
+<li><strong>Install agent on Linux Virtual Machine</strong></li>
+</ul>
 <p><strong>Install agent on a non-Azure Linux Machine</strong></p>
-<p>Download the agent on the relevant machine and follow the instructions.
-  - <strong>Install agent on Linux (Non-Azure)</strong></p>
+<p>Download the agent on the relevant machine and follow the instructions.</p>
+<ul>
+<li><strong>Install agent on Linux (Non-Azure)</strong></li>
+</ul>
 <p><strong>2. Configure the logs to be collected</strong></p>
 <p>Configure the facilities you want to collect and their severities.</p>
 <ol>
 <li>Under workspace advanced settings <strong>Configuration</strong>, select <strong>Data</strong> and then <strong>Syslog</strong>.</li>
 <li>Select <strong>Apply below configuration to my machines</strong> and select the facilities and severities.</li>
-<li>Click <strong>Save</strong>.
-- <strong>Open Syslog settings</strong></li>
+<li>Click <strong>Save</strong>.</li>
 </ol>
+<ul>
+<li><strong>Open Syslog settings</strong></li>
+</ul>
 <p><strong>3. Configure Oracle Database Audit events to be sent to Syslog</strong></p>
-<p>Follow the below instructions </p>
+<p>Follow the below instructions</p>
 <ol>
-<li>
-<p>Create the Oracle database <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-database-quick-create">Follow these steps.</a> </p>
+<li><p>Create the Oracle database <a href="https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/oracle/oracle-database-quick-create">Follow these steps.</a></p>
 </li>
-<li>
-<p>Login to Oracle database created from the above step <a href="https://docs.oracle.com/cd/F49540_01/DOC/server.815/a67772/create.htm">Follow these steps.</a> </p>
+<li><p>Login to Oracle database created from the above step <a href="https://docs.oracle.com/cd/F49540_01/DOC/server.815/a67772/create.htm">Follow these steps.</a></p>
 </li>
-<li>
-<p>Enable unified logging over syslog by <strong>Alter the system to enable unified logging</strong> <a href="https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/UNIFIED_AUDIT_COMMON_SYSTEMLOG.html#GUID-9F26BC8E-1397-4B0E-8A08-3B12E4F9ED3A">Following these steps.</a> </p>
+<li><p>Enable unified logging over syslog by <strong>Alter the system to enable unified logging</strong> <a href="https://docs.oracle.com/en/database/oracle/oracle-database/21/refrn/UNIFIED_AUDIT_COMMON_SYSTEMLOG.html#GUID-9F26BC8E-1397-4B0E-8A08-3B12E4F9ED3A">Following these steps.</a></p>
 </li>
-<li>
-<p>Create and  <strong>enable an Audit policy for unified auditing</strong> <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-AUDIT-POLICY-Unified-Auditing.html#GUID-8D6961FB-2E50-46F5-81F7-9AEA314FC693">Follow these steps.</a> </p>
+<li><p>Create and  <strong>enable an Audit policy for unified auditing</strong> <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/CREATE-AUDIT-POLICY-Unified-Auditing.html#GUID-8D6961FB-2E50-46F5-81F7-9AEA314FC693">Follow these steps.</a></p>
 </li>
-<li>
-<p><strong>Enabling syslog and Event Viewer</strong> Captures for the Unified Audit Trail <a href="https://docs.oracle.com/en/database/oracle/oracle-database/18/dbseg/administering-the-audit-trail.html#GUID-3EFB75DB-AE1C-44E6-B46E-30E5702B0FC4">Follow these steps.</a></p>
+<li><p><strong>Enabling syslog and Event Viewer</strong> Captures for the Unified Audit Trail <a href="https://docs.oracle.com/en/database/oracle/oracle-database/18/dbseg/administering-the-audit-trail.html#GUID-3EFB75DB-AE1C-44E6-B46E-30E5702B0FC4">Follow these steps.</a></p>
 </li>
 </ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

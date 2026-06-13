@@ -23,7 +23,7 @@ Information about identity events obtained from other cloud identity service pro
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AccountDisplayName | string | Name displayed in the address book entry for the account user. This is usually a combination of the given name, middle initial, and surname of the user. |
 | AccountId | string | Unique identifier for the account in the source application |
 | AccountType | string | Type of user account, indicating its general role like User, SystemPrincipal |
@@ -39,7 +39,7 @@ Information about identity events obtained from other cloud identity service pro
 | IPAddress | string | IP address assigned to the device and used during related network communications |
 | RawEventData | dynamic | Full raw event information from the source application in JSON format |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TargetObjects | dynamic | List of the target objects of this activity. Target object can be user, group, role, domain, application, and more. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |

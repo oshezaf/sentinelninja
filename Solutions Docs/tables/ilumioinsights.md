@@ -25,7 +25,7 @@ Reference for IlumioInsights table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AzureResourceId | string | The Azure resource ID associated with the event. |
 | CvssSeverity | string | CVSS (Common Vulnerability Scoring System) severity rating. |
 | DestCity | string | City where the destination IP is geolocated. |
@@ -46,7 +46,7 @@ Reference for IlumioInsights table in Azure Monitor Logs.
 | ResourceTenantId | string | Azure tenant ID to which the resource belongs. |
 | ResourceVnetId | string | Identifier for the Virtual Network (VNet) associated with the resource. |
 | Service | string | The name of the detected or used service (e.g., HTTP, SSH). |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcCity | string | City where the source IP is geolocated. |
 | SrcCountry | string | Country where the source IP is located. |
 | SrcIP | string | IP address of the source. |

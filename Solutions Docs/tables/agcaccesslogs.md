@@ -23,10 +23,10 @@ Reference for AGCAccessLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
-| BackendHost | string | Address of backend target with appended port. For example <ip>:<port> |
+| BackendHost | string | Address of backend target with appended port. For example &lt;ip&gt;:&lt;port&gt; |
 | BackendIp | string | IP address of backend target Application Gateway for Containers proxies the request to. |
 | BackendPort | int | Port number of the backend target. |
 | BackendResponseLatency | real | Time in milliseconds to receive first byte from Application Gateway for Containers to the backend target. |
@@ -43,10 +43,10 @@ Reference for AGCAccessLogs table in Azure Monitor Logs.
 | Region | string | The region where Application Gateway for Containers association is deployed |
 | RequestBodyBytes | long | Size in bytes of the body payload of the request received from the client by Application Gateway for Containers. |
 | RequestHeaderBytes | long | Size in bytes of the headers of the request received from the client by Application Gateway for Containers. |
-| RequestUri | string | URI of the request received from the client by Application Gateway for Containers (everything after <protocol>://<host> of the URL). |
+| RequestUri | string | URI of the request received from the client by Application Gateway for Containers (everything after &lt;protocol&gt;://&lt;host&gt; of the URL). |
 | ResponseBodyBytes | long | Size in bytes of the body payload of the response returned to the client by Application Gateway for Containers. |
 | ResponseHeaderBytes | long | Size in bytes of the headers of the response returned to the client by Application Gateway for Containers. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time (UTC) when the log was created. |
 | TimeTaken | real | Time in milliseconds of the client request received by Application Gateway for Containers and the last byte returned to the client from Application Gateway for Containers. |

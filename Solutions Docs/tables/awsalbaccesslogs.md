@@ -31,7 +31,7 @@ Reference for AWSALBAccessLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ActionsExecuted | string | The actions taken when processing the request (e.g., forward, fixed-response, redirect). |
 | Alb | string | The ARN of the Application Load Balancer. |
 | ALBType | string | The type of request (e.g., http or https). |
@@ -52,7 +52,7 @@ Reference for AWSALBAccessLogs table in Azure Monitor Logs.
 | RequestRaw | string | The complete request line from the client. |
 | ResponseProcessingTime | string | The total time taken by the load balancer to send the response to the client. |
 | SentBytes | long | The size of the response, in bytes, sent to the client. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SslCipher | string | The SSL cipher used for the SSL connection (if any). |
 | SslProtocol | string | The SSL protocol used for the SSL connection (if any). |
 | TargetGroupArn | string | The ARN of the target group that handled the request. |

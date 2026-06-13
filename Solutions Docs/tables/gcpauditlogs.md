@@ -32,7 +32,7 @@ Reference for GCPAuditLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AuthenticationInfo | dynamic | Authentication information. |
 | AuthorizationInfo | dynamic | Authorization information. If there are multiple resources or permissions involved, then there is one AuthorizationInfo element for each {resource, permission} tuple. |
 | GCPResourceName | string | The resource or collection that is the target of the operation. The name is a scheme-less URI, not including the API service name. |
@@ -44,15 +44,15 @@ Reference for GCPAuditLogs table in Azure Monitor Logs.
 | NumResponseItems | string | The number of items returned from a list or query API method, if applicable. |
 | PrincipalEmail | string | The email address of the authenticated user (or service account on behalf of third party principal) making the request. For third party identity callers, the principalSubject field is populated instead of this field. For privacy reasons, the principal email address is sometimes redacted. |
 | ProjectId | string | The identifier of the Google Cloud Platform (GCP) project associated with this resource, such as "my-project". |
-| Request | dynamic | The operation request. This may not include all request parameters, such as those that are too large, privacy-sensitive, or duplicated elsewhere in the log record. It should never include user-generated data, such as file contents. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the@typeproperty. |
+| Request | dynamic | The operation request. This may not include all request parameters, such as those that are too large, privacy-sensitive, or duplicated elsewhere in the log record. It should never include user-generated data, such as file contents. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the <span class="no-loc" dir="ltr" lang="en-us">@type</span> property. |
 | RequestMetadata | dynamic | Metadata about the operation. |
 | ResourceLocation | dynamic | The resource location information. |
-| ResourceOriginalState | dynamic | The resource original state before mutation. Present only for operations which have successfully modified the targeted resource(s). In general, this field should contain all changed fields, except those that are already been included in request, response, metadata or serviceData fields. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the@typeproperty. |
-| Response | dynamic | The operation response. This may not include all response elements, such as those that are too large, privacy-sensitive, or duplicated elsewhere in the log record. It should never include user-generated data, such as file contents. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the@typeproperty. |
+| ResourceOriginalState | dynamic | The resource original state before mutation. Present only for operations which have successfully modified the targeted resource(s). In general, this field should contain all changed fields, except those that are already been included in request, response, metadata or serviceData fields. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the <span class="no-loc" dir="ltr" lang="en-us">@type</span> property. |
+| Response | dynamic | The operation response. This may not include all response elements, such as those that are too large, privacy-sensitive, or duplicated elsewhere in the log record. It should never include user-generated data, such as file contents. When the JSON object represented here has a proto equivalent, the proto name will be indicated in the <span class="no-loc" dir="ltr" lang="en-us">@type</span> property. |
 | ServiceData | dynamic | An object containing fields of an arbitrary type. An additional field "@type" contains a URI identifying the type. Example: { "id": 1234, "@type": "types.example.com/standard/id" }. |
 | ServiceName | string | The name of the API service performing the operation. For example, 'compute.googleapis.com'. |
 | Severity | string | Optional. The severity of the log entry. For example, the following filter expression will match log entries with severities INFO, NOTICE, and WARNING. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Status | dynamic | The status of the overall operation. |
 | StatusMessage | string | The message status of the overall operation. |
 | Subscription | string | A named resource representing the stream of messages from a single, specific topic, to be delivered to the subscribing application. |
@@ -79,9 +79,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (14)
+## Content Items Using This Table (15)
 
-### Analytic Rules (9)
+### Analytic Rules (10)
 
 **In solution [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md):**
 
@@ -102,6 +102,12 @@ This table is ingested by the following connectors:
 | [Cross-Cloud Suspicious Compute resource creation in GCP](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-compute-resource-creation-i-5c847e47-0a07-4c01-ab99-5817ad6cb11e-be6ace2e.md) |  |
 | [Cross-Cloud Suspicious user activity observed in GCP Envourment](../content/multi-cloud-attack-coverage-essentials-resource-abuse-cross-cloud-suspicious-user-activity-observed-in-g-58e306fe-1c49-4b8f-9b0e-15f25e8f0cd7-36b1a06d.md) | `AuthenticationInfo !has "system:"`<br>`PrincipalEmail !endswith "gserviceaccount.com"` |
 
+**GitHub Only:** `MethodName endswith "instances.insert"`<br>`ServiceName == "compute.googleapis.com"`
+
+| Analytic Rule |
+|:-------------|
+| [Suspicious VM Instance Creation Activity Detected](../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) |
+
 ### Hunting Queries (5)
 
 **In solution [Google Cloud Platform Audit Logs](../solutions/google-cloud-platform-audit-logs.md):**
@@ -114,9 +120,9 @@ This table is ingested by the following connectors:
 | [GCP Audit Logs - List All GCP VPN Tunnels Deleted](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-all-gcp-vpn-tunnels-deleted-8f3e4a2b-6c7d-4e8f-9a0b-1c2d3e4f5a6b-45f3f0b9.md) | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.delete"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` |
 | [GCP Audit Logs - List GCP Organization Policy Modifications by Principal](../content/google-cloud-platform-audit-logs-gcp-audit-logs-list-gcp-organization-policy-modifications-by-principal-7a3e8c5f-4b9d-4e6a-8c7b-5f2a9d6e8b3c-a149a2a1.md) | `MethodName has "DeletePolicy"`<br>`MethodName has "UpdatePolicy"`<br>`MethodName has_any "OrgPolicy.DeletePolicy"`<br>`ServiceName == "orgpolicy.googleapis.com"` |
 
-## Selection Criteria Summary (12 criteria, 13 total references)
+## Selection Criteria Summary (13 criteria, 14 total references)
 
-References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 14 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
@@ -128,11 +134,12 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 | `GCPResourceType == "gcs_bucket"`<br>`MethodName == "storage.setIamPermissions"`<br>`ServiceName == "storage.googleapis.com"` | - | 1 | - | - | **1** |
 | `MethodName has "DeleteVpcFlowLogsConfig"`<br>`MethodName has_any "VpcFlowLogsService.UpdateVpcFlowLogsConfig"`<br>`ServiceName == "networkmanagement.googleapis.com"` | - | 1 | - | - | **1** |
 | `AuthenticationInfo !has "system:"`<br>`PrincipalEmail !endswith "gserviceaccount.com"` | - | 1 | - | - | **1** |
+| `MethodName endswith "instances.insert"`<br>`ServiceName == "compute.googleapis.com"` | - | 1 | - | - | **1** |
 | `GCPResourceType == "gce_firewall_rule"`<br>`MethodName has "delete"`<br>`MethodName has "insert"`<br>`MethodName has "patch"`<br>`MethodName has "update"`<br>`MethodName has_any "compute.firewalls.insert"`<br>`ServiceName == "compute.googleapis.com"` | - | 1 | - | - | **1** |
 | `MethodName has "DeletePolicy"`<br>`MethodName has "UpdatePolicy"`<br>`MethodName has_any "OrgPolicy.DeletePolicy"`<br>`ServiceName == "orgpolicy.googleapis.com"` | - | 1 | - | - | **1** |
 | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.insert"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` | - | 1 | - | - | **1** |
 | `GCPResourceType == "vpn_tunnel"`<br>`MethodName has "compute.vpnTunnels.delete"`<br>`ServiceName == "compute.googleapis.com"`<br>`Severity == "NOTICE"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **13** | **0** | **0** | **13** |
+| **Total** | **0** | **14** | **0** | **0** | **14** |
 
 ### AuthenticationInfo
 
@@ -166,6 +173,7 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 | `storage.setIamPermissions` | - | 1 | - | - | **1** |
 | `has DeleteVpcFlowLogsConfig` | - | 1 | - | - | **1** |
 | `has_any VpcFlowLogsService.UpdateVpcFlowLogsConfig` | - | 1 | - | - | **1** |
+| `endswith instances.insert` | - | 1 | - | - | **1** |
 | `has delete` | - | 1 | - | - | **1** |
 | `has update` | - | 1 | - | - | **1** |
 | `has_any compute.firewalls.insert` | - | 1 | - | - | **1** |
@@ -184,7 +192,7 @@ References by type: 0 connectors, 13 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `compute.googleapis.com` | - | 5 | - | - | **5** |
+| `compute.googleapis.com` | - | 6 | - | - | **6** |
 | `cloudresourcemanager.googleapis.com` | - | 2 | - | - | **2** |
 | `orgpolicy.googleapis.com` | - | 2 | - | - | **2** |
 | `dns.googleapis.com` | - | 1 | - | - | **1** |

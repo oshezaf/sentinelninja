@@ -19,58 +19,59 @@
 <blockquote>
 <p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ForgeRock_Vert_Color_Logo_RGB_R_med.svg" alt="ForgeRock Common Audit for CEF Logo" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/ForgeRock_Vert_Color_Logo_RGB_R_med.svg" alt="ForgeRock Common Audit for CEF Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Forgerock</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Forgerock</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Support Tier</strong></td>
-<td style="text-align: left;">Partner</td>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Support Link</strong></td>
-<td style="text-align: left;"><a href="https://www.forgerock.com/support">https://www.forgerock.com/support</a></td>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.forgerock.com/support">https://www.forgerock.com/support</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Categories</strong></td>
-<td style="text-align: left;">Identity</td>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Identity</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.0</td>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Author</strong></td>
-<td style="text-align: left;">ForgeRock - isv@email.com</td>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">ForgeRock - isv@email.com</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>First Published</strong></td>
-<td style="text-align: left;">2022-05-04</td>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2022-05-04</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution Folder</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForgeRock%20Common%20Audit%20for%20CEF">ForgeRock Common Audit for CEF</a></td>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ForgeRock%20Common%20Audit%20for%20CEF">ForgeRock Common Audit for CEF</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Pre-requisites</strong></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+  <td style="text-align:left"><strong>Pre-requisites</strong></td>
+  <td style="text-align:left"><a href="common-event-format.html">Common Event Format</a></td>
 </tr>
 </tbody>
 </table>
 <p>The <a href="https://www.forgerock.com/platform/common-services/common-audit">ForgeRock Common Audit</a> for CEF solution for Microsoft Sentinel enables you to ingest data from the <a href="https://www.forgerock.com/identity-and-access-management-platform">ForgeRock Identity Platform</a> via its common auditing framework. This enables you to extract and aggregate log data across the entire platform with common audit (CAUD) event handlers and unique IDs so that it can be tracked holistically, leveraging audit logging and reporting capabilities for integration with Microsoft Sentinel.</p>
-<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. </p>
+<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.</p>
 <p><strong>NOTE:</strong> Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by <strong>Aug 31, 2024,</strong> and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
 <h2 id="contents">Contents</h2>
 <ul>
@@ -84,12 +85,12 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Solution</th>
+  <th style="text-align:left">Solution</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+  <td style="text-align:left"><a href="common-event-format.html">Common Event Format</a></td>
 </tr>
 </tbody>
 </table>
@@ -108,16 +109,16 @@
 <table>
 <thead>
 <tr>
-<th>Table</th>
-<th>Used By Connectors</th>
-<th>Used By Content</th>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/forgerock.html">[Deprecated] ForgeRock Identity Platform</a></td>
-<td>-</td>
+  <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/forgerock.html">[Deprecated] ForgeRock Identity Platform</a></td>
+  <td>-</td>
 </tr>
 </tbody>
 </table>
@@ -126,14 +127,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Content Type</th>
-<th style="text-align: left;">Count</th>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Parsers</td>
-<td style="text-align: left;">1</td>
+  <td style="text-align:left">Parsers</td>
+  <td style="text-align:left">1</td>
 </tr>
 </tbody>
 </table>
@@ -141,16 +142,16 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Description</th>
-<th style="text-align: left;">Tables Used</th>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../parsers/forgerockparser.html">ForgeRockParser</a></td>
-<td style="text-align: left;">-</td>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
+  <td style="text-align:left"><a href="../parsers/forgerockparser.html">ForgeRockParser</a></td>
+  <td style="text-align:left">-</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -158,27 +159,28 @@
 <table>
 <thead>
 <tr>
-<th><strong>Version</strong></th>
-<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-<th><strong>Change History</strong></th>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>3.0.0</td>
-<td>01-07-2024</td>
-<td>Deprecating data connectors</td>
+  <td>3.0.0</td>
+  <td>01-07-2024</td>
+  <td>Deprecating data connectors</td>
 </tr>
 <tr>
-<td>2.0.0</td>
-<td>06-05-2023</td>
-<td>Initial Solution Release</td>
+  <td>2.0.0</td>
+  <td>06-05-2023</td>
+  <td>Initial Solution Release</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
 </div>
 
 </body>

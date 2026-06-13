@@ -30,7 +30,7 @@ Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | CIp | string | IP address of the client |
@@ -48,7 +48,7 @@ Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 | ScStatus | int | HTTP status code |
 | ScSubStatus | string | Substatus error code on HTTP request |
 | ScWin32Status | string | Windows status code on HTTP request |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SPort | string | Server port number |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time when event is generated |
@@ -65,7 +65,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (3)
 
 ### Analytic Rules (2)
 
@@ -80,6 +80,14 @@ This table is used by the following solutions:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI map IP entity to AppServiceHTTPLogs](../content/threat-intelligence-new-ti-map-ip-entity-to-appservicehttplogs-206277b1-9a2c-4c62-9ee8-a4c888810d3c-7ce08041.md) |  |
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

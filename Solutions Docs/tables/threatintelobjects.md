@@ -31,16 +31,16 @@ Reference for ThreatIntelObjects table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalFields | dynamic | The type specifc fields that Sentinel adds. Contains the TLPLevel: white, green, amber, or red. |
 | AzureTenantId | string | The tenant that submitted the STIX object. |
-| Data | dynamic | All object properties, formatted according to STIX specification (https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf). |
+| Data | dynamic | All object properties, formatted according to STIX specification (<a href="https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf" data-linktype="external">https://docs.oasis-open.org/cti/stix/v2.1/os/stix-v2.1-os.pdf</a>). |
 | Id | string | A value that uniquely identifies the STIX object. This value is usable with Sentinel APIs. |
 | IsDeleted | bool | A value that indicates whether the data was deleted from Sentinel or not. |
 | LastUpdateMethod | string | The component that last updated the record. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StixType | string | The name of this STIX Object. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time of STIX object ingestion. |

@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">IT &amp; Management Tools</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">IT &amp; Management Tools</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/configurationdata">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/configurationdata">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,211 +64,211 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">Acls</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Access-Control List specifies which users or system processes are granted access to objects</td>
+  <td style="text-align:left">Acls</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Access-Control List specifies which users or system processes are granted access to objects</td>
 </tr>
 <tr>
-<td style="text-align: left;">Architecture</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Instruction set architecture for the software being tracked</td>
+  <td style="text-align:left">Architecture</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Instruction set architecture for the software being tracked</td>
 </tr>
 <tr>
-<td style="text-align: left;">Attributes</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Attributes</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ConfigDataType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of configuration item: Files Software WindowsServices Registry Daemons</td>
+  <td style="text-align:left">ConfigDataType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of configuration item: Files Software WindowsServices Registry Daemons</td>
 </tr>
 <tr>
-<td style="text-align: left;">CurrentVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Current software version</td>
+  <td style="text-align:left">CurrentVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current software version</td>
 </tr>
 <tr>
-<td style="text-align: left;">DateCreated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Created date of the file</td>
+  <td style="text-align:left">DateCreated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Created date of the file</td>
 </tr>
 <tr>
-<td style="text-align: left;">DateModified</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Last modified date of the file</td>
+  <td style="text-align:left">DateModified</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Last modified date of the file</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileContentChecksum</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Checksum of the reporting file</td>
+  <td style="text-align:left">FileContentChecksum</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Checksum of the reporting file</td>
 </tr>
 <tr>
-<td style="text-align: left;">FileSystemPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">File system path for the reporting file</td>
+  <td style="text-align:left">FileSystemPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">File system path for the reporting file</td>
 </tr>
 <tr>
-<td style="text-align: left;">Hive</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Registry hive for the reporting registry key</td>
+  <td style="text-align:left">Hive</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Registry hive for the reporting registry key</td>
 </tr>
 <tr>
-<td style="text-align: left;">Location</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ManagementGroupName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Publisher</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Software publisher name</td>
+  <td style="text-align:left">Publisher</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Software publisher name</td>
 </tr>
 <tr>
-<td style="text-align: left;">RegistryKey</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Registy key name</td>
+  <td style="text-align:left">RegistryKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Registy key name</td>
 </tr>
 <tr>
-<td style="text-align: left;">Size</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Size of the file</td>
+  <td style="text-align:left">Size</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Size of the file</td>
 </tr>
 <tr>
-<td style="text-align: left;">SoftwareDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the software</td>
+  <td style="text-align:left">SoftwareDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the software</td>
 </tr>
 <tr>
-<td style="text-align: left;">SoftwareName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the software</td>
+  <td style="text-align:left">SoftwareName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the software</td>
 </tr>
 <tr>
-<td style="text-align: left;">SoftwareType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of the software: Application Package Update</td>
+  <td style="text-align:left">SoftwareType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the software: Application Package Update</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceComputerId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">SourceComputerId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcAccount</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User account that is associated with the service executable explicitly to provide a security context for the service</td>
+  <td style="text-align:left">SvcAccount</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User account that is associated with the service executable explicitly to provide a security context for the service</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcController</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Service property that was changed</td>
+  <td style="text-align:left">SvcController</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Service property that was changed</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Parent process for the daemon</td>
+  <td style="text-align:left">SvcDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Parent process for the daemon</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcDisplayName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Human-frinedly name for the service</td>
+  <td style="text-align:left">SvcDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Human-frinedly name for the service</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the service</td>
+  <td style="text-align:left">SvcName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the service</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcPath</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The file path to the executable for the service</td>
+  <td style="text-align:left">SvcPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The file path to the executable for the service</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcRunlevels</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Modes used by the daemon for system operation</td>
+  <td style="text-align:left">SvcRunlevels</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Modes used by the daemon for system operation</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcStartupType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Startup behavior of the service</td>
+  <td style="text-align:left">SvcStartupType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Startup behavior of the service</td>
 </tr>
 <tr>
-<td style="text-align: left;">SvcState</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Current state of the service</td>
+  <td style="text-align:left">SvcState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Current state of the service</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the record was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the record was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">ValueData</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Data contained in the value and registry key being tracked</td>
+  <td style="text-align:left">ValueData</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Data contained in the value and registry key being tracked</td>
 </tr>
 <tr>
-<td style="text-align: left;">ValueName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the value for the registry key being tracked</td>
+  <td style="text-align:left">ValueName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the value for the registry key being tracked</td>
 </tr>
 <tr>
-<td style="text-align: left;">ValueType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of the value for the registry key being tracked</td>
+  <td style="text-align:left">ValueType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the value for the registry key being tracked</td>
 </tr>
 <tr>
-<td style="text-align: left;">VMUUID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">VMUUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -285,27 +285,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/continuousdiagnostics&amp;mitigation-continuousdiagnostics&amp;mitigation-d91b4b8c.html">ContinuousDiagnostics&amp;Mitigation</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ConfigDataType == "Registry"</code></p>
+<p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong> <code>ConfigDataType == &quot;Registry&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
 </tr>
 </tbody>
 </table>
@@ -323,30 +323,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>ConfigDataType == "Registry"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>ConfigDataType == &quot;Registry&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -354,28 +354,29 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Registry</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Registry</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

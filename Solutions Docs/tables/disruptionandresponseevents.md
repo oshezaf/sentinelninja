@@ -23,7 +23,7 @@
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ActionType | string | Type of disruption action taken |
 | AuthenticationProtocol | string | Authentication protocol that the compromised user used to sign in |
 | CompromisedAccountCount | int | Number of compromised accounts that are part of the policy |
@@ -54,7 +54,7 @@
 | SourceDomainName | string | Domain name of the device where the attack originated from |
 | SourceIpAddress | string | IP address where the attacker communication originated from |
 | SourcePort | int | Port where the attacker communication originated from |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SourceUserDomainName | string | The domain name of the account conducting the malicious activity |
 | SourceUserName | string | The user name of the account conducting the malicious activity |
 | SourceUserSid | string | The security identifier of the account conducting the malicious activity |

@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/tanium.html">Tanium</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/tanium.html">Tanium</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-UnquarantineHosts/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-UnquarantineHosts/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,70 +47,194 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">8</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">8</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">11</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">11</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_Issued_Actions_to_Incident | post | `/Incidents/Comment` | — |
-| Get_Hosts_From_Incident | post | `/entities/host` | — |
-| Add_comment__-_no_hosts_found | post | `/Incidents/Comment` | — |
-| Add_comment__-_no_data_in_Tanium | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_-_hosts_that_will_be_targeted | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_-_known_and_unknown_action_results | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_-_known_action_results | post | `/Incidents/Comment` | — |
-| Add_comment_to_incident_-_unknown_action_results | post | `/Incidents/Comment` | — |
-
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_secret | get | `/secrets/@{encodeURIComponent('TaniumApiToken')}/value` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_the_"All_Computers"_group | GET | `@parameters('TaniumAllComputersUrl')` | — |
-| Get_Linux_unquarantine_package | GET | `@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('linuxPackageName')))}` | — |
-| Issue_Linux_unquarantine_action | POST | `@parameters('TaniumActionsApi')` | — |
-| Get_Windows_unquarantine_package | GET | `@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('windowsPackageName')))}` | — |
-| Issue_Windows_unquarantine_action | POST | `@parameters('TaniumActionsApi')` | — |
-| Get_macOS_unquarantine_package | GET | `@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('macOsPackageName')))}` | — |
-| Issue_macOS_unquarantine_action | POST | `@parameters('TaniumActionsApi')` | — |
-| Get_General_Host_Info | POST | `@parameters('TaniumApiGatewayApi')` | — |
-| Requery_the_API_Gateway | POST | `@parameters('TaniumApiGatewayApi')` | — |
-| Get_next_page | POST | `@parameters('TaniumApiGatewayApi')` | — |
-| Get_action_result | GET | `@{concat(parameters('TaniumActionResultDataUrlFragment'), items('Collect_action_results_for_each_issued_action')?['id'])}` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_Issued_Actions_to_Incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Hosts_From_Incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment__-_no_hosts_found</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment__-_no_data_in_Tanium</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_hosts_that_will_be_targeted</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_known_and_unknown_action_results</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_known_action_results</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_comment_to_incident_-_unknown_action_results</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('TaniumApiToken')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_the_&quot;All_Computers&quot;_group</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@parameters('TaniumAllComputersUrl')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Linux_unquarantine_package</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('linuxPackageName')))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Issue_Linux_unquarantine_action</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('TaniumActionsApi')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Windows_unquarantine_package</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('windowsPackageName')))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Issue_Windows_unquarantine_action</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('TaniumActionsApi')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_macOS_unquarantine_package</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat(parameters('TaniumPackagesByNameUrlFragment'), uriComponent(variables('macOsPackageName')))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Issue_macOS_unquarantine_action</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('TaniumActionsApi')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_General_Host_Info</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('TaniumApiGatewayApi')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Requery_the_API_Gateway</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('TaniumApiGatewayApi')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_next_page</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@parameters('TaniumApiGatewayApi')</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_action_result</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat(parameters('TaniumActionResultDataUrlFragment'), items('Collect_action_results_for_each_issued_action')?['id'])}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -119,45 +243,45 @@
 </blockquote>
 <h2 id="overview">Overview</h2>
 <p>This playbook will use Tanium to remove a previously applied Tanium quarantine from hosts associated with a Microsoft Sentinel incident. After the request to remove the quarantine has been made, it will wait for the unquarantine action to expire and then check its results.</p>
-<p>The results of the playbook will be added as comments to the incident:
-1. The hosts that will be targeted
-2. The quarantine action(s)' deployment status
-3. The results of the quarantine action(s)</p>
-<p><img alt="Tanium-UnquarantineHosts screenshot" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-UnquarantineHosts/images/Tanium-UnquarantineHosts.png" /></p>
+<p>The results of the playbook will be added as comments to the incident:</p>
+<ol>
+<li>The hosts that will be targeted</li>
+<li>The quarantine action(s)' deployment status</li>
+<li>The results of the quarantine action(s)</li>
+</ol>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Tanium/Playbooks/Tanium-UnquarantineHosts/images/Tanium-UnquarantineHosts.png" alt="Tanium-UnquarantineHosts screenshot" /></p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>Sentinel incidents with associated hosts running the Tanium client <br />
+<li>Sentinel incidents with associated hosts running the Tanium client<br />
 If this playbook is run against an incident with 1 or more hosts that are not running the Tanium client, then Tanium will not be able to provide information for those host(s). If the incident only contains hosts that are not running the Tanium client then a comment will be placed on the incident indicating that, and the playbook will exit early.</li>
 </ul>
 <blockquote>
 <p>[!TIP]
-Leverage the "Tanium Threat Response Alerts" analytics rule to generate Sentinel incidents for an Threat Response Alert from Tanium.</p>
+Leverage the &quot;Tanium Threat Response Alerts&quot; analytics rule to generate Sentinel incidents for an Threat Response Alert from Tanium.</p>
 </blockquote>
 <ul>
-<li>
-<p>A <a href="https://help.tanium.com/bundle/ug_console_cloud/page/platform_user/console_api_tokens.html">Tanium API Token</a> <br />
-A Tanium API token, granting access to your Tanium environment is required to make the necessary queries against the Tanium API.  </p>
+<li><p>A <a href="https://help.tanium.com/bundle/ug_console_cloud/page/platform_user/console_api_tokens.html">Tanium API Token</a><br />
+A Tanium API token, granting access to your Tanium environment is required to make the necessary queries against the Tanium API.</p>
 </li>
-<li>
-<p>An Azure Integration Account <br />
+<li><p>An Azure Integration Account<br />
 Required to execute javascript needed to prepare query filters for Tanium API Gateway HTTP requests</p>
 </li>
-<li>
-<p>Tanium Threat Response 4.7+ Module<br />
+<li><p>Tanium Threat Response 4.7+ Module<br />
 Tanium Threat Response must be installed and running your Tanium environment and must be version 4.7 or higher. If you are running a lower version see See <a href="https://help.tanium.com/bundle/ConnectAzureSentinel/page/Integrations/MSFT/ConnectAzureSentinel/Get_to_know_our_Content.htm#_Tanium_Playbooks">Tanium Playbooks</a> for more information.</p>
 </li>
-<li>
-<p>Permission to Assign Roles to the Resource Group <br />
+<li><p>Permission to Assign Roles to the Resource Group<br />
 For this playbook to successfully run it must have the Microsoft Sentinel Contributor role at the Resource Group scope. This is added as part of this ARM template, and therefore requires the user who is creating the playbook to have <code>Microsoft.Authorization/roleAssignments/write</code> on the resource group. Some examples of roles that meet this criteria for the user include:</p>
-</li>
+<ul>
 <li>Owner</li>
 <li>User Access Administrator</li>
 <li>Role Based Access Control Administrator</li>
-<li>Global Administrator </li>
+<li>Global Administrator</li>
+</ul>
+</li>
 </ul>
 <h2 id="get-the-template">Get the Template</h2>
 <p>Use the links below to create the playbook from our template.</p>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTanium%2FPlaybooks%2FTanium-UnquarantineHosts%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTanium%2FPlaybooks%2FTanium-UnquarantineHosts%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTanium%2FPlaybooks%2FTanium-UnquarantineHosts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FTanium%2FPlaybooks%2FTanium-UnquarantineHosts%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <h2 id="note">Note</h2>
 <p>With the default deployment and configuration settings of the playbooks, your Tanium API Key is stored in a secure string workflow parameter. To update your Tanium API Key you must redeploy this playbook.</p>
 <p>To allow Tanium API Key updates it is advised to use Azure Key Vault to securely store the Tanium API Key and update this playbook to use the Tanium API Key from the Key Vault instead of the secure string parameter.</p>
@@ -170,6 +294,7 @@ For this playbook to successfully run it must have the Microsoft Sentinel Contri
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/tanium.html">Back to Tanium</a></p>
+
 </div>
 
 </body>

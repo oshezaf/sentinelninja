@@ -31,7 +31,7 @@ Reference for GCPCloudRun table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | GCPResourceType | string | The type of GCP resource (e.g., 'CloudRunService', 'CloudRunJob'). |
 | InsertId | string | Unique identifier for the log entry. |
 | JsonPayloadMessage | string | The message field extracted from the jsonPayload. |
@@ -117,7 +117,7 @@ Reference for GCPCloudRun table in Azure Monitor Logs.
 | ResourceLabelsRevisionName | string | The name of the associated Cloud Run revision. |
 | ResourceLabelsServiceName | string | The name of the associated Cloud Run service. |
 | Severity | string | The severity level of the log entry (e.g., INFO, WARNING, ERROR). |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp when the log entry was originally generated in GCP. |
 | Type | string | The name of the table |

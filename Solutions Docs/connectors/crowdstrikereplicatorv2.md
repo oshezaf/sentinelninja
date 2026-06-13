@@ -30,14 +30,14 @@ This connector ingests data into the following tables:
 | [`ASimAuthenticationEventLogs_CL`](../tables/asimauthenticationeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimDnsActivityLogs`](../tables/asimdnsactivitylogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimFileEventLogs`](../tables/asimfileeventlogs.md) |  | ✓ | ✓ | ? |
-| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ? | ✓ | ? |
+| [`ASimFileEventLogs_CL`](../tables/asimfileeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimNetworkSessionLogs`](../tables/asimnetworksessionlogs.md) |  | ✓ | ✓ | ✓ |
 | [`ASimProcessEventLogs`](../tables/asimprocesseventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimProcessEventLogs_CL`](../tables/asimprocesseventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimRegistryEventLogs`](../tables/asimregistryeventlogs.md) |  | ✓ | ✓ | ? |
 | [`ASimRegistryEventLogs_CL`](../tables/asimregistryeventlogs-cl.md) |  | ? | ✓ | ? |
 | [`ASimUserManagementActivityLogs`](../tables/asimusermanagementactivitylogs.md) |  | ✓ | ✓ | ? |
-| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) |  | ? | ✓ | ? |
+| [`ASimUserManagementLogs_CL`](../tables/asimusermanagementlogs-cl.md) | `EventProduct == "Falcon Data Replicator"`<br>`EventVendor == "CrowdStrike"` | ? | ✓ | ? |
 | [`CrowdStrike_Additional_Events_CL`](../tables/crowdstrike-additional-events-cl.md) |  | ✓ | ✓ | ✓ |
 | [`CrowdStrike_Secondary_Data_CL`](../tables/crowdstrike-secondary-data-cl.md) |  | ? | ✓ | ? |
 

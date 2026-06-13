@@ -17,66 +17,7 @@ Account information from various sources, including Microsoft Entra ID
 | **Ingestion API Supported** | ✗ No |
 | **Defender XDR Advanced Hunting Schema** | [View Documentation](https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-identityinfo-table) |
 
-## Contents
-
-- [Schema](#schema)
-- [Solutions](#solutions)
-- [Content Items](#content-items-using-this-table)
-
-## Schema (46 columns)
-
-**Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/identityinfo)
-
-| Column Name | Type | Description |
-|:------------|:-----|:------------|
-| AccountDisplayName | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initial, and a last name or surname. |
-| AccountDomain* | string | Domain of the account |
-| AccountName | string | User name of the account |
-| AccountObjectId | string | Unique identifier for the account in Microsoft Entra ID |
-| AccountUpn | string | User principal name (UPN) of the account |
-| Address | string | Address of the account user |
-| AssignedRoles* | dynamic | For identities from Microsoft Entra-only, the roles assigned to the account user |
-| BlastRadius** | string | A calculation based on the position of the user in the org tree and the user's Microsoft Entra roles and permissions; possible values: Low, Medium, High |
-| ChangeSource* | string | Identifies which identity provider or process triggered the addition of the new row. For example, theSystem-UserPersistencevalue is used for any rows added by an automated process. |
-| City | string | City where the account user is located |
-| CloudSid | string | Cloud security identifier of the account |
-| CompanyName** | string | Name of the company for which the user works |
-| Country | string | Country/Region where the account user is located |
-| CreatedDateTime* | datetime | Date and time when the account user was created |
-| CriticalityLevel | int | The criticality score of the account |
-| DeletedDateTime** | datetime | Date and time when the user account was deleted |
-| Department | string | Name of the department that the account user belongs to |
-| DistinguishedName* | string | The user'sdistinguished name |
-| EmailAddress | string | SMTP address of the account |
-| EmployeeId** | string | Employee identifier assigned to the user by the organization |
-| GivenName | string | Given name or first name of the account user |
-| GroupMembership** | dynamic | Microsoft Entra ID groups where the user account is a member |
-| IdentityEnvironment | string | Environment where the identity is used; possible values: CloudOnly, Hybrid, On-premises |
-| IsAccountEnabled | boolean | Indicates whether the account is enabled or not |
-| JobTitle | string | Job title of the account user |
-| Manager* | string | The listed manager of the account user |
-| OnPremObjectId | string | Active Directory object ID of the user |
-| OnPremSid | string | On-premises security identifier (SID) of the account |
-| OtherMailAddresses** | dynamic | Additional email addresses of the user account |
-| Phone* | string | The listed phone number of the account user |
-| PrivilegedEntraPimRoles(Preview)*** | dynamic | A snapshot of privileged role assignment schedules and eligibility schedules for the account as maintained by Microsoft Entra Privileged Identity Management (excluding activated assignments) |
-| ReportId* | string | Unique identifier for the event |
-| RiskLevel | string | Microsoft Entra ID risk level of the user account; possible values: Low, Medium, High |
-| RiskLevelDetails | string | Details regarding the Microsoft Entra ID risk level |
-| RiskStatus | string | Status of the user's risk; possible values: None, ConfirmedSafe, Remediated, Dismissed, AtRisk, ConfirmedCompromised, UnknownFutureValue |
-| SipProxyAddress | string | Voice over IP (VOIP) session initiation protocol (SIP) address of the account |
-| SourceProviders | dynamic | Source providers of the accounts for the identity; possible values: ActiveDirectory, EntraID, Okta |
-| SourceSystem* | string | The source system for the record |
-| State** | string | State where the sign-in occurred, if available |
-| Surname | string | Surname, family name, or last name of the account user |
-| Tags* | dynamic | Tags assigned to the account user by Defender for Identity |
-| TenantId | string | Unique identifier representing your organization's instance of Microsoft Entra ID |
-| TenantMembershipType | string | User type in Microsoft Entra ID; possible values: Guest, Member |
-| Timestamp* | datetime | The date and time that the line was written to the database.This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added. |
-| Type* | string | Type of identity; possible values: User, ServiceAccount |
-| UserAccountControl | string | Security attributes of the user account in the Active Directory domain |
-
-## Solutions (17)
+## Solutions (18)
 
 This table is used by the following solutions:
 
@@ -95,14 +36,15 @@ This table is used by the following solutions:
 - [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md)
 - [NISTSP80053](../solutions/nistsp80053.md)
 - [SOC Handbook](../solutions/soc-handbook.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
 ---
 
-## Content Items Using This Table (34)
+## Content Items Using This Table (67)
 
-### Analytic Rules (12)
+### Analytic Rules (18)
 
 **In solution [Azure Activity](../solutions/azure-activity.md):**
 
@@ -146,7 +88,23 @@ This table is used by the following solutions:
 | [Successful AWS Console Login from IP Address Observed Conducting Password Spray](../content/multi-cloud-attack-coverage-essentials-resource-abuse-successful-aws-console-login-from-ip-address-obser-188db479-d50a-4a9c-a041-644bae347d1f-57aa98e4.md) |  |
 | [Suspicious AWS console logins by credential access alerts](../content/multi-cloud-attack-coverage-essentials-resource-abuse-suspicious-aws-console-logins-by-credential-access-b51fe620-62ad-4ed2-9d40-5c97c0a8231f-dbe5a529.md) |  |
 
-### Hunting Queries (14)
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Addition of a Temporary Access Pass to a Privileged Account](../content/standalone-content-addition-of-a-temporary-access-pass-to-a-privileged-account-d7feb859-f03e-4e8d-8b21-617be0213b13-1bb54eef.md) |  |
+| [Authentications of Privileged Accounts Outside of Expected Controls](../content/standalone-content-authentications-of-privileged-accounts-outside-of-expected-controls-af435ca1-fb70-4de1-92c1-7435c48482a9-4ae23dd0.md) |  |
+| [Privileged User Logon from new ASN](../content/standalone-content-privileged-user-logon-from-new-asn-55073036-bb86-47d3-a85a-b113ac3d9396-417005b2.md) |  |
+| [Suspicious modification of Global Administrator user properties](../content/standalone-content-suspicious-modification-of-global-administrator-user-properties-48602a24-67cf-4362-b258-3f4249e55def-fe1c2532.md) |  |
+| [Workspace deletion activity from an infected device](../content/standalone-content-workspace-deletion-activity-from-an-infected-device-a5b3429d-f1da-42b9-883c-327ecb7b91ff-0617925d.md) |  |
+
+**GitHub Only:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Suspicious VM Instance Creation Activity Detected](../content/github-only-suspicious-vm-instance-creation-activity-detected-1cc0ba27-c5ca-411a-a779-fbc89e26be83-597f094d.md) |  |
+
+### Hunting Queries (36)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -186,13 +144,40 @@ This table is used by the following solutions:
 |:-------------|:-------------------|
 | [Anomalous connection from highly privileged user](../content/ueba-essentials-anomalous-connection-from-highly-privileged-user-741fdf32-e002-4577-ac9b-839fb49f128e-22b5a707.md) |  |
 
+**Standalone Content:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Login attempt by Blocked MFA user](../content/standalone-content-login-attempt-by-blocked-mfa-user-75fd68a2-9ed4-4a1c-8bd7-18efe4c99081-5904d25a.md) |  |
+
 **GitHub Only:**
 
 | Hunting Query | Selection Criteria |
 |:-------------|:-------------------|
+| [A365 AI Agents - HTTP Requests to Non-HTTPS Endpoints](../content/github-only-a365-ai-agents-http-requests-to-non-https-endpoints-4f5a6b7c-8d9e-0f1a-2b3c-4d5e6f7a8b9c-9d4340c8.md) |  |
+| [A365 AI Agents - HTTP Requests to Non-standard Ports](../content/github-only-a365-ai-agents-http-requests-to-non-standard-ports-9d0e1f2a-3b4c-5d6e-7f8a-9b0c1d2e3f4a-ac521aee.md) |  |
+| [A365 AI Agents - Hard-coded credentials in Tools or Actions](../content/github-only-a365-ai-agents-hard-coded-credentials-in-tools-or-actions-1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d-0acbbd53.md) |  |
+| [A365 AI Agents - MCP Tool Configured](../content/github-only-a365-ai-agents-mcp-tool-configured-2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f-bac34b9a.md) |  |
+| [A365 AI Agents - Missing Tools in Instructions](../content/github-only-a365-ai-agents-missing-tools-in-instructions-7d8e9f0a-1b2c-3d4e-5f6a-7b8c9d0e1f2a-14b1b82a.md) |  |
+| [A365 AI Agents - Orphaned Agents with Disabled Owners](../content/github-only-a365-ai-agents-orphaned-agents-with-disabled-owners-6e7f8a9b-0c1d-2e3f-4a5b-6c7d8e9f0a1b-069ee2a6.md) |  |
+| [A365 AI Agents - Publicly Shared](../content/github-only-a365-ai-agents-publicly-shared-8c9d0e1f-2a3b-4c5d-6e7f-8a9b0c1d2e3f-f1f42fc4.md) |  |
+| [A365 AI Agents - Published Agents with Short Instructions](../content/github-only-a365-ai-agents-published-agents-with-short-instructions-5f6a7b8c-9d0e-1f2a-3b4c-5d6e7f8a9b0c-3833b204.md) |  |
+| [A365 AI Agents - Published Agents without Instructions](../content/github-only-a365-ai-agents-published-agents-without-instructions-3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d-3cdf25a6.md) |  |
+| [AI Agents - Orphaned Agents with Disabled Owners](../content/github-only-ai-agents-orphaned-agents-with-disabled-owners-5e0f4a6b-7c8d-9e0f-1a2b-3c4d5e6f7a8b-4b3d8cb1.md) |  |
+| [Administrators Authenticating to Another Microsoft Entra ID Tenant](../content/github-only-administrators-authenticating-to-another-microsoft-entra-id-tenant-3a0447c1-7f43-43d0-aeac-d5e1247964a8-2f7868c7.md) |  |
+| [Anomolous Sign Ins Based on Time](../content/github-only-anomolous-sign-ins-based-on-time-8ed5b8f1-a43a-49dc-847c-e44d7a590c17-7db3ce6c.md) |  |
+| [Copilot Studio AI Agents - Sending email to external mailboxes](../content/github-only-copilot-studio-ai-agents-sending-email-to-external-mailboxes-0d5e9f1a-2b3c-4d5e-6f7a-8b9c0d1e2f3a-c7f37367.md) |  |
+| [Critical user management operations followed by disabling of System Restore from admin account](../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.md) |  |
+| [LocalAdminGroupChanges](../content/github-only-localadmingroupchanges-dd2c4f48-b732-4a75-b2c4-b44bacc66d00-632cb4a0.md) |  |
+| [Non_intended_user_logon](../content/github-only-non-intended-user-logon-ef645ae9-da22-4ebe-b2ad-c3ad024b807c-7d6ee057.md) |  |
+| [Privileged Account Password Changes](../content/github-only-privileged-account-password-changes-d9cccaf9-d15e-4731-a62a-06d76e9c5e67-592fbe65.md) |  |
+| [Privileged Accounts - Failed MFA](../content/github-only-privileged-accounts-failed-mfa-d9524fcf-de06-4f95-84b0-1637a30ad595-277f290a.md) |  |
+| [Privileged Accounts Locked Out](../content/github-only-privileged-accounts-locked-out-fc12c925-84ce-4371-bcff-e745cd937da6-285eba43.md) |  |
 | [User not covered under display name impersonation](../content/microsoft-defender-xdr-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-78c1a989.md) |  |
+| [User not covered under display name impersonation](../content/github-only-user-not-covered-under-display-name-impersonation-e90345b3-439c-44e1-a85d-8ae84ad9c65b-492381f4.md) |  |
+| [devices_with_vuln_and_users_received_payload](../content/github-only-devices-with-vuln-and-users-received-payload-fbcb7ff3-0d5a-4565-9caa-fc454138081f-1adec9cd.md) |  |
 
-### Workbooks (8)
+### Workbooks (13)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -241,6 +226,16 @@ This table is used by the following solutions:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
 
 ---
 

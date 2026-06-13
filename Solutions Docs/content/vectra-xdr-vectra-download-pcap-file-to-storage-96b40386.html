@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectaDownloadPcapFileToStorage/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectaDownloadPcapFileToStorage/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,90 +47,190 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azurefile.html"><code>azurefile</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azurefile.html"><code>azurefile</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-teams.html"><code>teams</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azurefile`](../logic-apps/managed-azurefile.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Create_Pcap_File_In_Azure_Storage | post | `/datasets/default/files` | — |
-| Create_Pcap_File_In_Azure_Storage_For_Failed_Detections | post | `/datasets/default/files` | — |
-
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_Comment_List_Of_Detection_IDs_For_Which_Pcap_File_Downloaded | post | `/Incidents/Comment` | — |
-| Comment_For_No_Pcap_File_Found_For_Any_Detection_of_Entity | post | `/Incidents/Comment` | — |
-
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Access_Token_For_Detections_Data | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
-| Get_Access_Token_For_Fetch_Pcap_File | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
-| Get_Access_Token_For_Fetch_Pcap_File_Again | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections` | — |
-| HTTP_Request_To_Fetch_Pcap_File_for_Detection | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap` | — |
-| HTTP_Request_To_Fetch_Pcap_File_Again_for_Detection_Failed_Detections | GET | `@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap` | — |
-
-#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| GenerateAccessTokenVectra_2 | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
-| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
-
+<h4 id="azurefile"><a href="../logic-apps/managed-azurefile.html"><code>azurefile</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Create_Pcap_File_In_Azure_Storage</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/default/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Create_Pcap_File_In_Azure_Storage_For_Failed_Detections</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/datasets/default/files</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_Comment_List_Of_Detection_IDs_For_Which_Pcap_File_Downloaded</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Comment_For_No_Pcap_File_Found_For_Any_Detection_of_Entity</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Access_Token_For_Detections_Data</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Access_Token_For_Fetch_Pcap_File</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Access_Token_For_Fetch_Pcap_File_Again</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_Request_To_Fetch_Detections_Data_Associated_With_Entity</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{variables('base_url')}/api/@{variables('api_version')}/detections</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_Request_To_Fetch_Pcap_File_for_Detection</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_Request_To_Fetch_Pcap_File_Again_for_Detection_Failed_Detections</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{variables('base_url')}/api/@{variables('api_version')}/detections/@{variables('temp_detection_id')}/pcap</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">GenerateAccessTokenVectra_2</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]</code><br>triggerName=<code>manual</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">GenerateAccessTokenVectra</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]</code><br>triggerName=<code>manual</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -141,79 +241,96 @@
 <p>This playbook enables users to download pcap files of detections associated with a Vectra Entity to the default file share of a storage account. Users can provide detection IDs via Microsoft Teams Adaptive Card.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
-<li>Obtain Key Vault name and Tenant ID where client credentials are stored for access token generation.
-   - Create a Key Vault with a unique name.
-   - Go to Key Vaults → <em>your Key Vault</em> → Overview and copy Directory ID (Tenant ID).
-   - <strong>NOTE:</strong> Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</li>
-<li>Obtain Teams GroupId and ChannelId.
-   - Create a Team with a public channel.
-   - Click on the three dots (...) next to your newly created Teams channel and select <strong>Get link to channel</strong>.
-   - Copy the text from the link between <code>/channel</code> and <code>/</code>, decode it using an online URL decoder, and copy it to use as Channel ID.
-   - Copy the text of the GroupId parameter from the link to use as GroupId.</li>
+<li>Obtain Key Vault name and Tenant ID where client credentials are stored for access token generation.<ul>
+<li>Create a Key Vault with a unique name.</li>
+<li>Go to Key Vaults → <em>your Key Vault</em> → Overview and copy Directory ID (Tenant ID).</li>
+<li><strong>NOTE:</strong> Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</li>
+</ul>
+</li>
+<li>Obtain Teams GroupId and ChannelId.<ul>
+<li>Create a Team with a public channel.</li>
+<li>Click on the three dots (...) next to your newly created Teams channel and select <strong>Get link to channel</strong>.</li>
+<li>Copy the text from the link between <code>/channel</code> and <code>/</code>, decode it using an online URL decoder, and copy it to use as Channel ID.</li>
+<li>Copy the text of the GroupId parameter from the link to use as GroupId.</li>
+</ul>
+</li>
 <li>Obtain Storage Account Name where pcap files will be downloaded.</li>
 <li>Ensure the VectraGenerateAccessToken playbook is deployed before deploying VectaDownloadPcapFileToStorage playbook.</li>
 </ol>
 <h3 id="deployment-instructions">Deployment Instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
-<li>Fill in the required parameters:
-   - PlaybookName: Enter the playbook name here.
-   - KeyVaultName: Name of the Key Vault where secrets are stored.
-   - TenantId: Tenant ID where the Key Vault is located.
-   - BaseURL: Enter the base URL of your Vectra account.
-   - TeamsGroupId: Enter Id of the Teams Group where the adaptive card will be posted.
-   - TeamsChannelId: Enter Id of the Teams Channel where the adaptive card will be posted.
-   - StorageAccountName: Name of the storage account where pcap files will be downloaded.
-   - GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
+<li>Fill in the required parameters:<ul>
+<li>PlaybookName: Enter the playbook name here.</li>
+<li>KeyVaultName: Name of the Key Vault where secrets are stored.</li>
+<li>TenantId: Tenant ID where the Key Vault is located.</li>
+<li>BaseURL: Enter the base URL of your Vectra account.</li>
+<li>TeamsGroupId: Enter Id of the Teams Group where the adaptive card will be posted.</li>
+<li>TeamsChannelId: Enter Id of the Teams Channel where the adaptive card will be posted.</li>
+<li>StorageAccountName: Name of the storage account where pcap files will be downloaded.</li>
+<li>GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
+</ul>
+</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectaDownloadPcapFileToStorage%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectaDownloadPcapFileToStorage%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectaDownloadPcapFileToStorage%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectaDownloadPcapFileToStorage%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment Instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, authorize each connection.
-1. Go to your logic app → API connections → Select keyvault connection resource.
-2. Go to General → Edit API connection.
-3. Click Authorize.
-4. Sign in.
-5. Click Save.
-6. Repeat steps for other connections.</p>
-<p><strong>To authorize the Storage Account API connection, you will need the access key:</strong>
-1. Go to Azure Portal → Storage Accounts → <em>your storage account</em>.
-2. In the left pane, select <strong>Access keys</strong> under <strong>Security + networking</strong>.
-3. Copy the value of <strong>key1</strong> or <strong>key2</strong>.
-4. Go to your logic app → API connections → Select the storage account connection resource.
-5. Go to General → Edit API connection.
-6. Paste the copied access key in the required field.
-7. Click Save.</p>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Go to your logic app → API connections → Select keyvault connection resource.</li>
+<li>Go to General → Edit API connection.</li>
+<li>Click Authorize.</li>
+<li>Sign in.</li>
+<li>Click Save.</li>
+<li>Repeat steps for other connections.</li>
+</ol>
+<p><strong>To authorize the Storage Account API connection, you will need the access key:</strong></p>
+<ol>
+<li>Go to Azure Portal → Storage Accounts → <em>your storage account</em>.</li>
+<li>In the left pane, select <strong>Access keys</strong> under <strong>Security + networking</strong>.</li>
+<li>Copy the value of <strong>key1</strong> or <strong>key2</strong>.</li>
+<li>Go to your logic app → API connections → Select the storage account connection resource.</li>
+<li>Go to General → Edit API connection.</li>
+<li>Paste the copied access key in the required field.</li>
+<li>Click Save.</li>
+</ol>
 <h4 id="b-add-access-policy-in-key-vault">b. Add Access Policy in Key Vault</h4>
-<p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of the Key Vault.
-1. Go to Logic App → <em>your Logic App</em> → Identity → System assigned Managed identity and copy Object (principal) ID.
-2. Go to Key Vaults → <em>your Key Vault</em> → Access policies → Create.
-3. Select all keys &amp; secrets permissions. Click Next.
-4. In the principal section, search by copied Object ID. Click Next.
-5. Click Review + Create.
-6. Repeat steps 2 to 5 to add access policy for the user account used to authorize the connection.</p>
+<p>Add access policy for the playbook's managed identity and authorized user to read and write secrets of the Key Vault.</p>
+<ol>
+<li>Go to Logic App → <em>your Logic App</em> → Identity → System assigned Managed identity and copy Object (principal) ID.</li>
+<li>Go to Key Vaults → <em>your Key Vault</em> → Access policies → Create.</li>
+<li>Select all keys &amp; secrets permissions. Click Next.</li>
+<li>In the principal section, search by copied Object ID. Click Next.</li>
+<li>Click Review + Create.</li>
+<li>Repeat steps 2 to 5 to add access policy for the user account used to authorize the connection.</li>
+</ol>
 <h4 id="c-assign-role-to-update-incident">c. Assign Role to update incident</h4>
-<p>After authorizing each connection, assign role to this playbook.
-1. Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add.
-2. Add role assignment.
-3. Assignment type: Job function roles.
-4. Role: Microsoft Sentinel Contributor.
-5. Members: select managed identity for assigned access to and add your logic app as member.
-6. Click on review+assign.</p>
+<p>After authorizing each connection, assign role to this playbook.</p>
+<ol>
+<li>Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add.</li>
+<li>Add role assignment.</li>
+<li>Assignment type: Job function roles.</li>
+<li>Role: Microsoft Sentinel Contributor.</li>
+<li>Members: select managed identity for assigned access to and add your logic app as member.</li>
+<li>Click on review+assign.</li>
+</ol>
 <h4 id="d-configurations-in-microsoft-sentinel">d. Configurations in Microsoft Sentinel</h4>
 <ol>
 <li>In Microsoft Sentinel, the analytical rule should be configured to trigger an incident based on data ingested from Vectra. Incident should have Entity mapping.</li>
-<li>To manually run the playbook on a particular incident, follow the steps below:
-   - Go to Microsoft Sentinel → <em>your workspace</em> → Incidents.
-   - Select an incident.
-   - In the right pane, click on <strong>Actions</strong>, and from the dropdown select the <strong>Run Playbook</strong> option.
-   - Click on the <strong>Run</strong> button beside this playbook.</li>
+<li>To manually run the playbook on a particular incident, follow the steps below:<ul>
+<li>Go to Microsoft Sentinel → <em>your workspace</em> → Incidents.</li>
+<li>Select an incident.</li>
+<li>In the right pane, click on <strong>Actions</strong>, and from the dropdown select the <strong>Run Playbook</strong> option.</li>
+<li>Click on the <strong>Run</strong> button beside this playbook.</li>
+</ul>
+</li>
 </ol>
 <h4 id="e-note">e. Note</h4>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/vectra-xdr.html">Back to Vectra XDR</a></p>
+
 </div>
 
 </body>

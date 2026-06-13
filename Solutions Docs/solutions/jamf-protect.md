@@ -21,7 +21,7 @@
 | **First Published** | 2022-10-10 |
 | **Last Updated** | 2026-05-12 |
 | **Solution Folder** | [Jamf Protect](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Jamf%20Protect) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jamfsoftwareaustraliaptyltd1620360395539.jamf_protect) · Rating: ★★★★★ 4.9/5 (2,117 ratings) · Popularity: 🟢 High (87%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/jamfsoftwareaustraliaptyltd1620360395539.jamf_protect) · Rating: ★★★★★ 4.9/5 (2,121 ratings) · Popularity: 🟢 High (85%) |
 
 The [Jamf Protect](https://www.jamf.com/solutions/threat-prevention-remediation/) solution for Microsoft Sentinel enables you to ingest [Jamf Protect events](https://docs.jamf.com/jamf-protect/documentation/Data_Forwarding_to_a_Third_Party_Storage_Solution.html#task-4227) forwarded into Microsoft Sentinel using the Microsoft Sentinel Analytics Workspace.
 

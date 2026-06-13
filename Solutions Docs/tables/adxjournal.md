@@ -23,7 +23,7 @@ Reference for ADXJournal table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | ChangeCommand | string | The executed control command that triggered the metadata change |
@@ -38,7 +38,7 @@ Reference for ADXJournal table in Azure Monitor Logs.
 | OriginalEntityVersion | string | The version of the entity (entity properties) before the change |
 | Principal | string | The principal (user/app) that executed the control command |
 | RootActivityId | string | The root activity ID of the operation that caused the metadata change (for example: 1234ab0c-567d-8c9e-0123-456789fg012h) |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The time (UTC) at which this log was sent to Log Analytics |
 | Type | string | The name of the table |

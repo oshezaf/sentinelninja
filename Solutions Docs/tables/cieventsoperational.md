@@ -23,7 +23,7 @@ Reference for CIEventsOperational table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AdditionalInformation | string | Contains AffectedEntities, MessageCode and entityCount. |
@@ -43,14 +43,14 @@ Reference for CIEventsOperational table in Azure Monitor Logs.
 | Level | string | Severity level of the event, is one of: Informational, Warning or Error. |
 | Method | string | HTTP method: GET/POST/PUT/PATCH/HEAD |
 | OperationName | string | Name of the operation represented by this event. {OperationType}.[WorkFlow|Task][Started|Completed]. |
-| OperationStatus | string | Success for HTTP Status code < 400, ClientError for HTTP Status code < 500, Error for HTTP Status >= 500. |
+| OperationStatus | string | Success for HTTP Status code &lt; 400, ClientError for HTTP Status code &lt; 500, Error for HTTP Status &gt;= 500. |
 | OperationType | string | Identifier of the operation. |
 | Origin | string | URI indicating where a fetch originates from or unknown. |
 | Path | string | Relative path of the request. |
 | RequiredRoles | string | Required roles to do the operation. Admin role is allowed to do all operations. |
 | ResultSignature | string | Sub status of the event. If the operation corresponds to a REST API call, it's the HTTP status code. |
 | ResultType | string | Status of the event. Running, Skipped, Successful, Failure. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StartTime | datetime | Specifies the date and time that the workflow job was started (UTC) |
 | SubmittedBy | string | Workflow events only. The Azure Active Directory objectId of the user who triggered the workflow, see also properties.workflowSubmissionKinds. |
 | SubmittedTime | datetime | Specifies the date and time that the workflow job was submitted (UTC) |

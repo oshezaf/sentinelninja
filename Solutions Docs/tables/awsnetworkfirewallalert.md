@@ -30,7 +30,7 @@ Reference for AWSNetworkFirewallAlert table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AlertAction | string | The action taken when an alert was triggered (e.g., allowed, dropped, rejected). |
 | AppProto | string | The application layer protocol detected. |
 | AvailabilityZone | string | The AWS Availability Zone where the firewall instance is located. |
@@ -49,7 +49,7 @@ Reference for AWSNetworkFirewallAlert table in Azure Monitor Logs.
 | Signature | string | The name or description of the Suricata rule that triggered the alert. |
 | SignatureId | string | The unique identifier of the Suricata rule that matched the event. |
 | Sni | string | The Server Name Indication (SNI) from TLS traffic. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcIp | string | The source port from which the packet originated. |
 | SrcPort | string | The source port from which the packet originated. |
 | TenantId | string | The Log Analytics workspace ID |

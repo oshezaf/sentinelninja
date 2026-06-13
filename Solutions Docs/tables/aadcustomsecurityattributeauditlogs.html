@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Entra</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Entra</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadcustomsecurityattributeauditlogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/aadcustomsecurityattributeauditlogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,156 +57,156 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AADOperationType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of the operation. Possible values are Add Update Delete and Other.</td>
+  <td style="text-align:left">AADOperationType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the operation. Possible values are Add Update Delete and Other.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AADTenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the AAD tenant.</td>
+  <td style="text-align:left">AADTenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the AAD tenant.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActivityDateTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the activity was performed in UTC.</td>
+  <td style="text-align:left">ActivityDateTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the activity was performed in UTC.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActivityDisplayName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Activity name or the operation name.</td>
+  <td style="text-align:left">ActivityDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Activity name or the operation name.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdditionalDetails</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Indicates additional details on the activity. Can have any string as a key or value.</td>
+  <td style="text-align:left">AdditionalDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Indicates additional details on the activity. Can have any string as a key or value.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CallerIpAddress</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of caller.</td>
+  <td style="text-align:left">CallerIpAddress</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of caller.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID to provide audit trail.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID to provide audit trail.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">The duration of the operation in milliseconds.</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The duration of the operation in milliseconds.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique ID representing the audit activity.</td>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique ID representing the audit activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Identity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal.</td>
+  <td style="text-align:left">Identity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identity from the token that was presented when you made the request. It can be a user account, system account, or service principal.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InitiatedBy</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">User or app initiated the activity.</td>
+  <td style="text-align:left">InitiatedBy</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">User or app initiated the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Level</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The severity level of the event.</td>
+  <td style="text-align:left">Level</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The severity level of the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Location</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The region of the resource emitting the event.</td>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The region of the resource emitting the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LoggedByService</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Service that initiated the activity.</td>
+  <td style="text-align:left">LoggedByService</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Service that initiated the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the operation.</td>
+  <td style="text-align:left">OperationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OperationVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The REST API version that's requested by the client.</td>
+  <td style="text-align:left">OperationVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The REST API version that's requested by the client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Result</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Result of the activity. Possible values are: success failure timeout unknownFutureValue.</td>
+  <td style="text-align:left">Result</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Result of the activity. Possible values are: success failure timeout unknownFutureValue.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Provides the error description for the audit operation.</td>
+  <td style="text-align:left">ResultDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Provides the error description for the audit operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultReason</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Describes cause of failure or timeout results.</td>
+  <td style="text-align:left">ResultReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Describes cause of failure or timeout results.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultSignature</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Contains the error code, if any, for the audit operation.</td>
+  <td style="text-align:left">ResultSignature</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Contains the error code, if any, for the audit operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The result of the audit operation can be Success or Failure.</td>
+  <td style="text-align:left">ResultType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The result of the audit operation can be Success or Failure.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetResources</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Indicates information on which resource was changed due to the activity.</td>
+  <td style="text-align:left">TargetResources</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Indicates information on which resource was changed due to the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time of the event in UTC.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time of the event in UTC.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">User agent of initiator.</td>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User agent of initiator.</td>
 </tr>
 </tbody>
 </table>
@@ -214,6 +214,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

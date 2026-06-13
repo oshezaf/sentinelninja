@@ -23,7 +23,7 @@ Reference for OktaSystemLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ActingAppName | string | The name of the application initiating the action. |
 | ActingAppType | string | The type of the application initiating the action (e.g., Browser, API client). |
 | ActorDetailEntry | dynamic | Detailed information about the actor performing the action, if available. |
@@ -63,7 +63,7 @@ Reference for OktaSystemLogs table in Azure Monitor Logs.
 | SecurityContextAsOrg | string | The organization associated with the AS number in the security context. |
 | SecurityContextDomain | string | The domain involved in the security context. |
 | SecurityContextIsProxy | bool | Indicates whether a proxy is used in the security context. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcDeviceType | string | The type of the source device (e.g., Computer). |
 | SrcDvcId | string | The unique identifier for the source device. |
 | SrcDvcIdType | string | The type of source device ID (e.g., OktaId). |

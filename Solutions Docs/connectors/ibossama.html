@@ -16,37 +16,38 @@
 </nav>
 <div class="doc-content">
 <h1 id="iboss-via-ama">iboss via AMA</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/iboss/Workbooks/Images/Logo/iboss_full-logo_2020_vector_black.svg" alt="" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/iboss/Workbooks/Images/Logo/iboss_full-logo_2020_vector_black.svg" alt="" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>ibossAma</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>ibossAma</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">iboss</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">iboss</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/iboss.html">iboss</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/iboss.html">iboss</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss/Data%20Connectors/template_ibossAMA.json">template_ibossAMA.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/iboss/Data%20Connectors/template_ibossAMA.json">template_ibossAMA.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -58,20 +59,20 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td style="text-align: left;"><code>AdditionalExtensions contains "amaExternalLogService=true"</code><br><code>DeviceVendor == "iboss"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td style="text-align:left"><code>AdditionalExtensions contains &quot;amaExternalLogService=true&quot;</code><br><code>DeviceVendor == &quot;iboss&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
@@ -79,9 +80,11 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions are required.
-- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -91,52 +94,44 @@
 <strong>Kindly follow the steps to configure the data connector</strong></p>
 <p><strong>Step A. Gather Required Configuration Details in Azure Arc</strong></p>
 <ol>
-<li>
-<p>Navigate to Azure Arc ---&gt; Azure Arc Resources ---&gt; Machines.</p>
+<li><p>Navigate to Azure Arc ---&gt; Azure Arc Resources ---&gt; Machines.</p>
 </li>
-<li>
-<p>Add a machine ---&gt; Add a single server ---&gt; Generate script.</p>
+<li><p>Add a machine ---&gt; Add a single server ---&gt; Generate script.</p>
 </li>
-<li>
-<p>Select the resource group, this should be the same group as the Log Analytics Workspace for your Microsoft Sentinel instance you will be using</p>
+<li><p>Select the resource group, this should be the same group as the Log Analytics Workspace for your Microsoft Sentinel instance you will be using</p>
 </li>
-<li>
-<p>Select a region and ensure it is in the same region as your Log Analytics Workspace</p>
+<li><p>Select a region and ensure it is in the same region as your Log Analytics Workspace</p>
 </li>
-<li>
-<p>Select Linux as Operating System</p>
+<li><p>Select Linux as Operating System</p>
 </li>
-<li>
-<p>Click Next</p>
+<li><p>Click Next</p>
 </li>
-<li>
-<p>Download the script and use this information for the next step when configuring your Microsoft Sentinel AMA integration iboss side.</p>
+<li><p>Download the script and use this information for the next step when configuring your Microsoft Sentinel AMA integration iboss side.</p>
 </li>
-<li>
-<p>Navigate to the Log Analytics Workspace of your Microsoft Sentinel instance and find it's resource group, workspace name, and workspace id</p>
+<li><p>Navigate to the Log Analytics Workspace of your Microsoft Sentinel instance and find it's resource group, workspace name, and workspace id</p>
 </li>
 </ol>
 <p><strong>Step B. Forward Common Event Format (CEF) logs</strong></p>
 <p>Set your Threat Console to send Syslog messages in CEF format to your Azure workspace. (Ensure you have the information gathered from the previous section)</p>
 <blockquote>
 <ol>
-<li>
-<p>Navigate to the Integrations Marketplace inside your iboss Console</p>
-</li>
-<li>
-<p>Select Microsoft Sentinel AMA Log Forwarding</p>
-</li>
-<li>
-<p>Select Add Integration</p>
-</li>
+<li>Navigate to the Integrations Marketplace inside your iboss Console</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="2">
+<li>Select Microsoft Sentinel AMA Log Forwarding</li>
+</ol>
+</blockquote>
+<blockquote>
+<ol start="3">
+<li>Select Add Integration</li>
 </ol>
 </blockquote>
 <ol start="4">
-<li>
-<p>Use the information from the script and your log analytics workspace to configure the integration.</p>
+<li><p>Use the information from the script and your log analytics workspace to configure the integration.</p>
 </li>
-<li>
-<p>Add the integration</p>
+<li><p>Add the integration</p>
 </li>
 </ol>
 <blockquote>
@@ -149,19 +144,17 @@
 </ol>
 <p><strong>Step C. Validate connection</strong></p>
 <ol>
-<li>
-<p>Follow the instructions to validate your connectivity:</p>
+<li><p>Follow the instructions to validate your connectivity:</p>
 </li>
-<li>
-<p>Open Log Analytics to check if the logs are received using the CommonSecurityLog schema.</p>
+<li><p>Open Log Analytics to check if the logs are received using the CommonSecurityLog schema.</p>
 </li>
-<li>
-<p>It may take about 20 minutes until the connection streams data to your workspace.</p>
+<li><p>It may take about 20 minutes until the connection streams data to your workspace.</p>
 </li>
 </ol>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

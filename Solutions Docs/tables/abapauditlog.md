@@ -31,7 +31,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AbapProgramName | string | The AbapProgramName is a four-character alphanumeric code that is used identify a specific program within the SAP system. |
 | AgentId | string | Unique agent or integration suite identifier. |
 | AlertSeverity | real | The AlertSeverity is a number between 0 and 255; the larger the number, the greater the severity. |
@@ -42,7 +42,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | Computer | string | The Computer refers to the name or IP address of the user's machine. It is used to identify the machine from which a specific activity or event was performed. |
 | Email | string | The Email refers to the email address associated with a specific user. It is used to identify the user via email within the SAP system. |
 | Host | string | The Host refers to the name of the computer or server on which the SAP system is running. It is used to identify and locate the SAP system within a network. |
-| Instance | string | The Instance refers to a specific installation of an SAP system on a server. An SAP system can have multiple instances running on the same server, each with its own set of processes and resources. The Instance is identified by a unique name that is set during the installation of the SAP system, following syntax: <HOST><SYSID><SYSNR>. |
+| Instance | string | The Instance refers to a specific installation of an SAP system on a server. An SAP system can have multiple instances running on the same server, each with its own set of processes and resources. The Instance is identified by a unique name that is set during the installation of the SAP system, following syntax: &lt;HOST&gt;<em>&lt;SYSID&gt;</em>&lt;SYSNR&gt;. |
 | MessageClass | string | The MessageClass is a grouping or category for specific messages or log entries used to organize and classify messages and log entries within an SAP system. |
 | MessageContainerId | string | The MessageContainerId is a unique identifier for a specific message container, which is a logical grouping of related messages or log entries within an SAP system. |
 | MessageId | string | The MessageId is a unique identifier for a specific message or log entry used to identify and track messages and log entries within an SAP system. |
@@ -57,7 +57,7 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | SalTimeChar6 | string | The SalTimeChar6 is the time the event occured in char6 format (hhMMss) eg: 110804. |
 | SapProcessType | string | The SapProcessType refers to the type of process that is being executed within the SAP system. This can include various types of processes such as background jobs, dialog processes, or update processes. |
 | SapWorkProcessName | string | The SapWorkProcessName refers to the name of a specific work process within the SAP system used to identify and monitor specific work processes. It is typically a unique alphanumeric code. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SystemId | string | The SystemId is a unique identifier for a specific SAP system. It is a three-character alphanumeric code that is used to distinguish between different SAP systems. |
 | SystemNumber | string | The SystemNumber is a two-digit number that identifies a specific SAP system. It is set during the installation of an SAP system and cannot be changed afterwards. The SystemNumber is used in various SAP transactions and configuration settings to identify the system and ensure that the correct system is being accessed or configured. |
 | SystemRole | string | The SAP system's role. |
@@ -74,21 +74,23 @@ Reference for ABAPAuditLog table in Azure Monitor Logs.
 | Variable3 | string | The Variable3 used by the SAP system for additional information regarding the event or activity that was performed. |
 | Variable4 | string | The Variable4 used by the SAP system for additional information regarding the event or activity that was performed. |
 
-## Solutions (3)
+## Solutions (4)
 
 This table is used by the following solutions:
 
 - [Onapsis Defend](../solutions/onapsis-defend.md)
+- [Pathlock_TDnR](../solutions/pathlock-tdnr.md)
 - [SAP S4 Cloud Public Edition](../solutions/sap-s4-cloud-public-edition.md)
 - [SecurityBridge App](../solutions/securitybridge-app.md)
 
-## Connectors (3)
+## Connectors (4)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Onapsis Defend: Integrate Unmatched SAP Threat Detection & Intel with Microsoft Sentinel](../connectors/onapsis.md) |  |
+| [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) |  |
 | [SAP S/4HANA Cloud Public Edition](../connectors/saps4publicalerts.md) |  |
 | [SecurityBridge Solution for SAP](../connectors/securitybridge.md) |  |
 

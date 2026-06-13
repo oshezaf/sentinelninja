@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">IT &amp; Management Tools, Virtual Machines</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">IT &amp; Management Tools, Virtual Machines</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amahealth">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/amahealth">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,101 +53,101 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentHealth</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Indicates whether the agent is healthy (0), warning (1), or unhealthy (2).</td>
+  <td style="text-align:left">AgentHealth</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Indicates whether the agent is healthy (0), warning (1), or unhealthy (2).</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentRegion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Azure region in which the VM is located.</td>
+  <td style="text-align:left">AgentRegion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Azure region in which the VM is located.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent reporting the health data.</td>
+  <td style="text-align:left">AgentType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent reporting the health data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the agent reporting the health data.</td>
+  <td style="text-align:left">AgentVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the agent reporting the health data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DroppedEventsStatus</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Indicates whether the agent is not dropping events (0), dropping a few events (1), or dropping an unacceptable number of events (2). The dropping of events can occur due to various reasons such as resource constraints, excessive event volume, external environmental issues like connectivity loss, and configuration errors.</td>
+  <td style="text-align:left">DroppedEventsStatus</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Indicates whether the agent is not dropping events (0), dropping a few events (1), or dropping an unacceptable number of events (2). The dropping of events can occur due to various reasons such as resource constraints, excessive event volume, external environmental issues like connectivity loss, and configuration errors.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EndTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The end time in UTC of the interval for which the agent health data was aggregated.</td>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The end time in UTC of the interval for which the agent health data was aggregated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MaxDiskExceededPercent</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The percent of the reporting interval for which the disk usage exceeded the established quota.</td>
+  <td style="text-align:left">MaxDiskExceededPercent</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The percent of the reporting interval for which the disk usage exceeded the established quota.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MaxEventsExceededPercent</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The percent of the reporting interval for which the log volume exceeded the established quota.</td>
+  <td style="text-align:left">MaxEventsExceededPercent</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The percent of the reporting interval for which the log volume exceeded the established quota.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">StartTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The start time in UTC of the interval for which the agent health data was aggregated.</td>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The start time in UTC of the interval for which the agent health data was aggregated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the record was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the record was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">VMUUID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The VM UUID of the virtual machine on which the agent is running.</td>
+  <td style="text-align:left">VMUUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The VM UUID of the virtual machine on which the agent is running.</td>
 </tr>
 </tbody>
 </table>
@@ -160,6 +160,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

@@ -23,7 +23,7 @@ Reference for AEWExperimentScorecards table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AllocationId | string | The Id of the allocation used for the feature evaluation. |
@@ -33,7 +33,7 @@ Reference for AEWExperimentScorecards table in Azure Monitor Logs.
 | FeatureName | string | The name of the feature. |
 | Insights | dynamic | Scorecard-level Insights derived from the analysis results in JSON format. |
 | ScorecardId | string | The Id of the experiment scorecard. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp when the scorecard results were ingested. |
 | Type | string | The name of the table |

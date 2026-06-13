@@ -23,7 +23,7 @@ Account information from various sources, including Microsoft Entra ID. This tab
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AccountId | string | Internal identifier for the account. |
 | AccountStatus | string | The status of the account. |
 | AccountUpn | string | User principal name (UPN) of the account. |
@@ -65,7 +65,7 @@ Account information from various sources, including Microsoft Entra ID. This tab
 | SourceProviderInstanceDisplayName | string | Display name of the source application or service of the account. |
 | SourceProviderInstanceId | string | Identifier of the source application or service of the account. |
 | SourceProviderRiskLevel | dynamic | Risk level of the account as it appears in the source provider. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Surname | string | Surname, family name, or last name of the account user. |
 | Tags | dynamic | Tags assigned to the account by Defender for Identity. |
 | TenantId | string | The Log Analytics workspace ID |

@@ -45,15 +45,16 @@ This out-of-the-box connector simplifies secure event forwarding from SAP to Mic
 
 This solution provides **1 data connector(s)**:
 
-- [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md)
+- [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md)
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) | Analytics |
+| [`ABAPAuditLog`](../tables/abapauditlog.md) | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md) | - |
+| [`Pathlock_TDnR_CL`](../tables/pathlock-tdnr-cl.md) | [Pathlock Inc.: Threat Detection and Response for SAP](../connectors/pathlock-tdnr.md), [Pathlock Threat Detection and Response Integration](../connectors/pathlock-tdnr.md) | Analytics |
 
 ## Content Items
 

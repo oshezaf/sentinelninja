@@ -19,7 +19,7 @@
 | **First Published** | 2026-02-26 |
 | **Last Updated** | 2026-04-07 |
 | **Solution Folder** | [Trellix](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trellix) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-trellix) · Popularity: 🔵 Medium (65%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-trellix) · Popularity: 🔵 Medium (73%) |
 
 The [Trellix](https://www.trellix.com/products/epo/) solution for Microsoft Sentinel enables you to ingest Trellix ePO events into Microsoft Sentinel.
   

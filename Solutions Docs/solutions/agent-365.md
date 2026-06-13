@@ -19,7 +19,7 @@
 | **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2026-02-25 |
-| **Last Updated** | 2026-06-03 |
+| **Last Updated** | 2026-06-09 |
 | **Solution Folder** | [Agent 365](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Agent%20365) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-a365observability) · Popularity: 🟢 High (91%) |
 

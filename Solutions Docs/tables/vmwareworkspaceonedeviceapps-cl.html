@@ -24,14 +24,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 </tbody>
 </table>
@@ -46,61 +46,61 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">ApplicationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Display name of the installed application.</td>
+  <td style="text-align:left">ApplicationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Display name of the installed application.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Installed application version string.</td>
+  <td style="text-align:left">AppVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Installed application version string.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssignmentStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">UEM assignment status for the application (e.g., Assigned, Not Assigned).</td>
+  <td style="text-align:left">AssignmentStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">UEM assignment status for the application (e.g., Assigned, Not Assigned).</td>
 </tr>
 <tr>
-<td style="text-align: left;">BundleId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Application bundle/package identifier (e.g., com.microsoft.Office.Outlook).</td>
+  <td style="text-align:left">BundleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Application bundle/package identifier (e.g., com.microsoft.Office.Outlook).</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Workspace ONE device UUID (links to VMwareWorkspaceOneDevices.DeviceUuid). Injected via item enrichment from the parent step placeholder.</td>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Workspace ONE device UUID (links to VMwareWorkspaceOneDevices.DeviceUuid). Injected via item enrichment from the parent step placeholder.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InstallStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Installation status returned by Workspace ONE (e.g., Installed, Managed).</td>
+  <td style="text-align:left">InstallStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Installation status returned by Workspace ONE (e.g., Installed, Managed).</td>
 </tr>
 <tr>
-<td style="text-align: left;">LatestUemAction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Most recent UEM action applied to this application (e.g., Install, Remove).</td>
+  <td style="text-align:left">LatestUemAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Most recent UEM action applied to this application (e.g., Install, Remove).</td>
 </tr>
 <tr>
-<td style="text-align: left;">LatestUemActionTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp of the most recent UEM action for this application.</td>
+  <td style="text-align:left">LatestUemActionTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp of the most recent UEM action for this application.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SizeInBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Application binary size in bytes.</td>
+  <td style="text-align:left">SizeInBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Application binary size in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">UTC timestamp when the record was ingested into Microsoft Sentinel.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">UTC timestamp when the record was ingested into Microsoft Sentinel.</td>
 </tr>
 </tbody>
 </table>
@@ -114,14 +114,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/vmwareworkspaceoneconnector.html">VMware Workspace ONE (via Codeless Connector Framework)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/vmwareworkspaceoneconnector.html">VMware Workspace ONE (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -129,6 +129,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

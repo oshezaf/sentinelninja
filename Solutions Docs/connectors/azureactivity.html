@@ -16,41 +16,42 @@
 </nav>
 <div class="doc-content">
 <h1 id="azure-activity">Azure Activity</h1>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/azureactivity_logo.svg" alt="" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/azureactivity_logo.svg" alt="" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>AzureActivity</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>AzureActivity</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Microsoft</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/azure-activity.html">Azure Activity</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/azure-activity.html">Azure Activity</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/azure-diagnostics.html">Azure Diagnostics</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/azure-diagnostics.html">Azure Diagnostics</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity/Data%20Connectors/AzureActivity.json">AzureActivity.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20Activity/Data%20Connectors/AzureActivity.json">AzureActivity.json</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Microsoft Learn</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#azure-activity">View on Learn</a></td>
+  <td style="text-align:left"><strong>Microsoft Learn</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference#azure-activity">View on Learn</a></td>
 </tr>
 </tbody>
 </table>
@@ -60,27 +61,31 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
-<td style="text-align: center;">✗</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
+  <td style="text-align:center">✗</td>
 </tr>
 </tbody>
 </table>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions.</p>
-<p><strong>Custom Permissions:</strong>
-- <strong>Policy​</strong>: owner role assigned for each policy assignment scope.​
-- <strong>Subscription</strong>: owner role permission on the relevant subscription</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Policy​</strong>: owner role assigned for each policy assignment scope.​</li>
+<li><strong>Subscription</strong>: owner role permission on the relevant subscription</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -90,23 +95,28 @@ Connectors using this pipeline can also be governed at scale by Azure Policy. Le
 Follow the instructions below to upgrade your connector to the diagnostics settings pipeline.</p>
 <p><strong>1. Disconnect your subscriptions from the legacy method</strong></p>
 <p>The subscriptions listed below are still using the older, legacy method. You are strongly encouraged to upgrade to the new pipeline.<br>
-To do this, click on the 'Disconnect All' button below, before proceeding to launch the Azure Policy Assignment wizard.
-- Configure data source: AzureActivityLog</p>
+To do this, click on the 'Disconnect All' button below, before proceeding to launch the Azure Policy Assignment wizard.</p>
+<ul>
+<li>Configure data source: AzureActivityLog</li>
+</ul>
 <p><strong>2.  Connect your subscriptions through diagnostic settings new pipeline</strong></p>
 <p>This connector uses Azure Policy to apply a single Azure Subscription log-streaming configuration to a collection of subscriptions, defined as a scope.
 Follow the instructions below to create and apply a policy to all current and future subscriptions. <strong>Note</strong>, you may already have an active policy for this resource type.
 <strong>Launch the Azure Policy Assignment wizard and follow the steps.​</strong></p>
+<ul>
+<li><strong>Configure policy assignment</strong></li>
+</ul>
 <blockquote>
 <ol>
 <li>In the <strong>Basics</strong> tab, click the button with the three dots under <strong>Scope</strong> to select your resources assignment scope.
-        &gt;2. In the <strong>Parameters</strong> tab, choose your Microsoft Sentinel workspace from the <strong>Log Analytics workspace</strong> drop-down list, and leave marked as "True" all the log and metric types you want to ingest.
-        &gt;3. To apply the policy on your existing resources, select the <strong>Remediation tab</strong> and mark the <strong>Create a remediation task</strong> checkbox.
-  - <strong>Configure policy assignment</strong></li>
+&gt;2. In the <strong>Parameters</strong> tab, choose your Microsoft Sentinel workspace from the <strong>Log Analytics workspace</strong> drop-down list, and leave marked as &quot;True&quot; all the log and metric types you want to ingest.
+&gt;3. To apply the policy on your existing resources, select the <strong>Remediation tab</strong> and mark the <strong>Create a remediation task</strong> checkbox.</li>
 </ol>
 </blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

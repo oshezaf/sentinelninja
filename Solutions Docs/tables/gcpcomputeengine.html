@@ -25,38 +25,38 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">GCP</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">GCP</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcomputeengine">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/gcpcomputeengine">View Documentation</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -71,81 +71,81 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">GCPResource</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about the monitored resource associated with the log entry, such as VM instance, database, etc.</td>
+  <td style="text-align:left">GCPResource</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about the monitored resource associated with the log entry, such as VM instance, database, etc.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InsertId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the log entry used to prevent duplication.</td>
+  <td style="text-align:left">InsertId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the log entry used to prevent duplication.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Labels</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">A set of key-value pairs that provide additional metadata about the log entry.</td>
+  <td style="text-align:left">Labels</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A set of key-value pairs that provide additional metadata about the log entry.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LogName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The full resource name of the log to which this log entry belongs.</td>
+  <td style="text-align:left">LogName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The full resource name of the log to which this log entry belongs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Operation</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Information about an operation associated with the log entry, such as an audit trail or trace context.</td>
+  <td style="text-align:left">Operation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about an operation associated with the log entry, such as an audit trail or trace context.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProtoPayload</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The structured payload of the log entry, typically in protocol buffer format; contains detailed event data.</td>
+  <td style="text-align:left">ProtoPayload</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The structured payload of the log entry, typically in protocol buffer format; contains detailed event data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReceiveTimestamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time the log entry was received by the logging system.</td>
+  <td style="text-align:left">ReceiveTimestamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time the log entry was received by the logging system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Severity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The severity level of the log entry (e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL).</td>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The severity level of the log entry (e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL).</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The actual time the event described by the log entry occurred.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The actual time the event described by the log entry occurred.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -159,14 +159,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/gcpcomputeenginelogsccpdefinition.html">Google Cloud Platform Compute Engine (via Codeless Connector Framework)</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/gcpcomputeenginelogsccpdefinition.html">Google Cloud Platform Compute Engine (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -174,6 +174,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

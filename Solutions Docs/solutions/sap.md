@@ -1,6 +1,6 @@
-# ⚠️ SAP
+# Microsoft Sentinel solution for SAP® applications
 
-> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
+*Solution: SAP*
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -12,7 +12,11 @@
 |:------------------------|:------|
 | **Publisher** |  |
 | **Support Tier** |  |
+| **Last Updated** | 2026-06-03 |
 | **Solution Folder** | [SAP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SAP) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/sentinel4sap.sentinel4sap) · Rating: ★★★★★ 5.0/5 (2 ratings) · Popularity: 🟢 High (86%) |
+
+Microsoft Sentinel solution for SAP® applications
 
 ## Contents
 

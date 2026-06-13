@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/domaintools.html">DomainTools</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/domaintools.html">DomainTools</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,68 +47,147 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">9</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">9</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_RData_comment_to_incident_(V3) | post | `/Incidents/Comment` | — |
-| Add_Iris_Investigate_Table_to_Incident_Comments | post | `/Incidents/Comment` | — |
-| Add_Pivoting_Data_to_Incident_Comments | post | `/Incidents/Comment` | — |
-| Add_Malicious_tags_to_Incident | post | `/Incidents/Comment` | — |
-| Update_incident | put | `/Incidents` | — |
-| Add_Error_to_Incident_Comments | post | `/Incidents/Comment` | — |
-| Entities_-_Get_DNS | post | `/entities/dnsresolution` | — |
-| Entities_-_Get_Hosts | post | `/entities/host` | — |
-| Entities_-_Get_URLs | post | `/entities/url` | — |
-
-#### [`farsightdnsdb`](../logic-apps/managed-farsightdnsdb.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| RData_Lookup_with_RRType | get | `/lookup/rdata/name/@{encodeURIComponent(items('For_each_domain_list'))}/ANY` | — |
-
-#### [`function`](../logic-apps/builtin-function.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| InvestigateDomain | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/InvestigateDomain')]` |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_RData_comment_to_incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Iris_Investigate_Table_to_Incident_Comments</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Pivoting_Data_to_Incident_Comments</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Malicious_tags_to_Incident</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Add_Error_to_Incident_Comments</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_DNS</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/dnsresolution</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities_-_Get_URLs</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/url</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="farsightdnsdb"><a href="../logic-apps/managed-farsightdnsdb.html"><code>farsightdnsdb</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">RData_Lookup_with_RRType</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/lookup/rdata/name/@{encodeURIComponent(items('For_each_domain_list'))}/ANY</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">InvestigateDomain</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/', variables('Functionappname'), '/functions/InvestigateDomain')]</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
 <blockquote>
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/readme.md">DomainTools-Iris-Investigate-Playbook/readme.md</a></em></p>
 </blockquote>
-<p><img alt="DomainTools" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/logo.png" /><br></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/logo.png" alt="DomainTools" /><br></p>
 <h2 id="domaintools-iris-investigate-domain-playbook">DomainTools Iris Investigate Domain Playbook</h2>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
@@ -119,7 +198,8 @@
 <li><a href="#deployment">Deployment</a></li>
 <li><a href="#postdeployment">Post Deployment Steps</a></li>
 </ol>
-<p><a name="overview"></p>
+<a name="overview">
+
 <h2 id="overview">Overview</h2>
 <p>This playbook uses the DomainTools Iris Investigate API. Given a domain or set of domains associated with an incident, return Whois, mailserver, DNS, SSL and related indicators from Iris Investigate, highlighting fields where fewer than 200 domains share an attribute. This is useful in order to clue investigators where there could be additional indicators of interest available via the Iris Investigate UI or API.</p>
 <p>Visit https://www.domaintools.com/integrations to request a Api key.</p>
@@ -128,58 +208,70 @@
 <li>It fetches all the Host/DNS/URL entities in the Incident.</li>
 <li>Iterates through the Host/DNS/URL entities and fetches the results from Iris Investigate for each entity.</li>
 <li>All the details from DomainTools Iris Investigate will be added as comments in a tabular format.</li>
-<li>All the response attributes that have count value(Count of connected domains sharing this attribute) greater than 1 and less than "Pivot_Threshold" parameter value in the playbook(default to 200), link the DomainTools Iris Investigate UI for further investigation.</li>
+<li>All the response attributes that have count value(Count of connected domains sharing this attribute) greater than 1 and less than &quot;Pivot_Threshold&quot; parameter value in the playbook(default to 200), link the DomainTools Iris Investigate UI for further investigation.</li>
 </ul>
-<p><img alt="Incident Comments" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/investigate_comments.png" /></p>
-<p><a name="deployplaybook"></p>
+<p><img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/investigate_comments.png" alt="Incident Comments" /></p>
+<a name="deployplaybook">
+
 <h2 id="links-to-deploy-the-domaintools-iris-investigate-domain-playbook">Links to deploy the DomainTools Iris Investigate Domain Playbook</h2>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-Iris-Investigate-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-Iris-Investigate-Playbook%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
-<p><a name="authentication"></p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-Iris-Investigate-Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FDomainTools%2FPlaybooks%2FDomainTools-Iris-Investigate-Playbook%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
+<a name="authentication">
+
 <h2 id="authentication">Authentication</h2>
-<p>Authentication methods this connector supports:
- - <a href="https://www.domaintools.com/integrations">API Key authentication</a></p>
-<p><a name="prerequisites"></p>
+<p>Authentication methods this connector supports:</p>
+<ul>
+<li><a href="https://www.domaintools.com/integrations">API Key authentication</a></li>
+</ul>
+<a name="prerequisites">
+
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>A DomainTools API Key provisioned for Iris Investigate</li>
 <li>DomainTools Function App should be deployed</li>
 </ul>
-<p><a name="deployment"></p>
+<a name="deployment">
+
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ul>
-<li>Deploy the playbooks by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbooks by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
 <li>Fill in the required parameters for deploying the playbook.
-  <img alt="deployment" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/deployment.png" />  </li>
-<li>Click "Review + create". Once the validation is successful, click on "Create".</li>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/deployment.png" alt="deployment" /></li>
+<li>Click &quot;Review + create&quot;. Once the validation is successful, click on &quot;Create&quot;.</li>
 </ul>
-<p><a name="postdeployment"></p>
+<a name="postdeployment">
+
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-playbook-parameters">a. Playbook parameters:</h4>
-<p>Once deployment is complete, you can change the playbook parameters to get the desired results as explained below.
-- Open the Logic App in the edit mode. click on parameters
-  <img alt="pivots" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/parameters.png" />
-- If "Fetch_Guided_Pivots_Results" is set to True, It will get the following details for each entity:
-  - Reverse Email Domain
-  - Reverese IP
-  - Pivot MX Host
-  - Pivot by MX IP
-  - Pivot by Nameserver IP Address
-  - Pivot Nameserver Host
-  - Pivot by Registrant Name
-  - Pivot by Registrant Org
-  - Reverse Email
-  - Pivot SSL Email
-  - Pivot by SSL Hash
-    <img alt="pivots" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/guided_pivot_comments.png" />
-- If you provide tags in the "Find_Domains_With_Malicious_tags" paramter, if a specified set of tags is observed, the playbook will mark the incident as “severe” in Sentinel and add a comment.
-    <img alt="tags" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/malicious_tags_comments.png" />
-- If "Fetch_Domain Tools_DNSDB_Results" is set to True, It will get the DNSDB Rdata details for each entity:
-    <img alt="rdata" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/dnsdb_rdata_comments.png" />
-- Save the Logic App.</p>
+<p>Once deployment is complete, you can change the playbook parameters to get the desired results as explained below.</p>
+<ul>
+<li>Open the Logic App in the edit mode. click on parameters
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/parameters.png" alt="pivots" /></li>
+<li>If &quot;Fetch_Guided_Pivots_Results&quot; is set to True, It will get the following details for each entity:<ul>
+<li>Reverse Email Domain</li>
+<li>Reverese IP</li>
+<li>Pivot MX Host</li>
+<li>Pivot by MX IP</li>
+<li>Pivot by Nameserver IP Address</li>
+<li>Pivot Nameserver Host</li>
+<li>Pivot by Registrant Name</li>
+<li>Pivot by Registrant Org</li>
+<li>Reverse Email</li>
+<li>Pivot SSL Email</li>
+<li>Pivot by SSL Hash
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/guided_pivot_comments.png" alt="pivots" /></li>
+</ul>
+</li>
+<li>If you provide tags in the &quot;Find_Domains_With_Malicious_tags&quot; paramter, if a specified set of tags is observed, the playbook will mark the incident as “severe” in Sentinel and add a comment.
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/malicious_tags_comments.png" alt="tags" /></li>
+<li>If &quot;Fetch_Domain Tools_DNSDB_Results&quot; is set to True, It will get the DNSDB Rdata details for each entity:
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/DomainTools/Playbooks/DomainTools-Iris-Investigate-Playbook/images/dnsdb_rdata_comments.png" alt="rdata" /></li>
+<li>Save the Logic App.</li>
+</ul>
 <p><em>[Content truncated...]</em></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/domaintools.html">Back to DomainTools</a></p>
+
 </div>
 
 </body>

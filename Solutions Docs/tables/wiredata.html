@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Security, Virtual Machines</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Security, Virtual Machines</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wiredata">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/wiredata">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -64,291 +64,328 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApplicationProtocol</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of network protocol used</td>
+  <td style="text-align:left">ApplicationProtocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of network protocol used</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApplicationServiceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">ApplicationServiceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Computer name where data was collected</td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Computer name where data was collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">Confidence</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Confidence level for Malicious IP identification. Values are 0 - 100.</td>
+  <td style="text-align:left">Confidence</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Confidence level for Malicious IP identification. Values are 0 - 100.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Description</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the observed threat.</td>
+  <td style="text-align:left">Description</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the observed threat.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Direction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Inbound or outbound</td>
+  <td style="text-align:left">Direction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Inbound or outbound</td>
 </tr>
 <tr>
-<td style="text-align: left;">FirstReportedDateTime</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The first time the provider reported the threat.</td>
+  <td style="text-align:left">FirstReportedDateTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The first time the provider reported the threat.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IndicatorThreatType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist.</td>
+  <td style="text-align:left">IndicatorThreatType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IPVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP version</td>
+  <td style="text-align:left">IPVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP version</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsActive</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates indicators are deactivated with True or False value.</td>
+  <td style="text-align:left">IsActive</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates indicators are deactivated with True or False value.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastReportedDateTime</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The last time the indicator was seen by Interflow.</td>
+  <td style="text-align:left">LastReportedDateTime</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The last time the indicator was seen by Interflow.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LatencyMilliseconds</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">LatencyMilliseconds</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">LatencySamplingFailureRate</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">LatencySamplingFailureRate</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">LatencySamplingTimeStamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">LatencySamplingTimeStamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">LocalIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the local computer</td>
+  <td style="text-align:left">LocalIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the local computer</td>
 </tr>
 <tr>
-<td style="text-align: left;">LocalMAC</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">LocalMAC</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">LocalPortNumber</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Local port number</td>
+  <td style="text-align:left">LocalPortNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Local port number</td>
 </tr>
 <tr>
-<td style="text-align: left;">LocalSubnet</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Subnet where data was collected</td>
+  <td style="text-align:left">LocalSubnet</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Subnet where data was collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">MaliciousIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of a known malicious source</td>
+  <td style="text-align:left">MaliciousIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of a known malicious source</td>
 </tr>
 <tr>
-<td style="text-align: left;">ManagementGroupName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the Operations Manager management group</td>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the Operations Manager management group</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProcessID</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Windows process ID</td>
+  <td style="text-align:left">ProcessID</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Windows process ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProcessName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Path and file name of the process</td>
+  <td style="text-align:left">ProcessName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Path and file name of the process</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProtocolName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the network protocol used</td>
+  <td style="text-align:left">ProtocolName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the network protocol used</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReceivedBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Amount of bytes received</td>
+  <td style="text-align:left">ReceivedBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Amount of bytes received</td>
 </tr>
 <tr>
-<td style="text-align: left;">ReceivedPackets</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">ReceivedPackets</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Remote IP address used by the remote computer</td>
+  <td style="text-align:left">RemoteIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Remote IP address used by the remote computer</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPCountry</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Country/region of the remote IP address</td>
+  <td style="text-align:left">RemoteIPCountry</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Country/region of the remote IP address</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPLatitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">IP latitude value</td>
+  <td style="text-align:left">RemoteIPLatitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">IP latitude value</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPLongitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">IP longitude value</td>
+  <td style="text-align:left">RemoteIPLongitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">IP longitude value</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteMAC</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">RemoteMAC</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemotePortNumber</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Port number used by the remote IP address</td>
+  <td style="text-align:left">RemotePortNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Port number used by the remote IP address</td>
 </tr>
 <tr>
-<td style="text-align: left;">SentBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Number of bytes sent</td>
+  <td style="text-align:left">SentBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Number of bytes sent</td>
 </tr>
 <tr>
-<td style="text-align: left;">SentPackets</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">SentPackets</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">SequenceNumber</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Hold over field from old schema - attribute not collected</td>
+  <td style="text-align:left">SequenceNumber</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Hold over field from old schema - attribute not collected</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionEndTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">End time of session</td>
+  <td style="text-align:left">SessionEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time of session</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique value that identifies communication session between two IP addresses</td>
+  <td style="text-align:left">SessionID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique value that identifies communication session between two IP addresses</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionStartTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Start time of session</td>
+  <td style="text-align:left">SessionStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time of session</td>
 </tr>
 <tr>
-<td style="text-align: left;">SessionState</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Connected or disconnected</td>
+  <td style="text-align:left">SessionState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Connected or disconnected</td>
 </tr>
 <tr>
-<td style="text-align: left;">Severity</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Suspected malware severity</td>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Suspected malware severity</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time of the record</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time of the record</td>
 </tr>
 <tr>
-<td style="text-align: left;">TLPLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Traffic Light Protocol (TLP) Level is one of the defined values White Green Amber Red.</td>
+  <td style="text-align:left">TLPLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Traffic Light Protocol (TLP) Level is one of the defined values White Green Amber Red.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TotalBytes</td>
-<td style="text-align: left;">long</td>
-<td style="text-align: left;">Total number of bytes sent during session</td>
+  <td style="text-align:left">TotalBytes</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total number of bytes sent during session</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (2)</h2>
+<h2 id="solutions">Solutions (3)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/soc-handbook.html">SOC Handbook</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 </ul>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (2)</h2>
-<h3 id="hunting-queries">Hunting Queries (1)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (6)</h2>
+<h3 id="hunting-queries">Hunting Queries (2)</h3>
 <p><strong>In solution <a href="../solutions/threat-intelligence.html">Threat Intelligence</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Hunting Query</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.html">TI Map File Entity to WireData Event</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.html">TI Map File Entity to WireData Event</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (1)</h3>
+<p><strong>Standalone Content:</strong> <code>RemotePortNumber != &quot;0&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-detect-beacon-like-pattern-based-on-repetitive-time-intervals-in-wire-data-traffic-33aa0e01-87e2-43ea-87f9-2f7e3ff1d532-1e25a0ce.html">Detect beacon like pattern based on repetitive time intervals in Wire Data Traffic</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (4)</h3>
 <p><strong>In solution <a href="../solutions/soc-handbook.html">SOC Handbook</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/soc-handbook-securitystatus-93651545.html">SecurityStatus</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-exchangecompromisehunting-4fe3c3f0.html">ExchangeCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-securitystatus-c79b09ad.html">SecurityStatus</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-usermap-db59dcfa.html">UserMap</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -361,9 +398,65 @@
 <li><code>microsoft.scvmm/virtualmachines</code></li>
 <li><code>microsoft.compute/virtualmachinescalesets</code></li>
 </ul>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (1 criteria, 1 total references)</h2>
+<p>References by type: 0 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>RemotePortNumber != &quot;0&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="remoteportnumber">RemotePortNumber</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><code>!= 0</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

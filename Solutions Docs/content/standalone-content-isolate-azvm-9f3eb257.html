@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;">Standalone Content</td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left">Standalone Content</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Isolate-AzVM/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Playbooks/Isolate-AzVM/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,61 +47,163 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">14</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">14</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Entities_-_Get_Hosts | post | `/entities/host` | — |
-| Update_IR_-_success | post | `/Incidents/Comment` | — |
-| Update_IR_-_fail | post | `/Incidents/Comment` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP_-_Get_Subs | GET | `@{parameters('ResourceMgrURL')}/subscriptions` | — |
-| HTTP_-_Query_ARG | POST | `@{parameters('ResourceMgrURL')}/providers/Microsoft.ResourceGraph/resources` | — |
-| HTTP_-_Get_VM | GET | `@{parameters('ResourceMgrURL')}@{variables('vmid')}` | — |
-| HTTP_-_Get_NIC | GET | `@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}` | — |
-| HTTP_-_Create_NSG | PUT | `@{parameters('ResourceMgrURL')}/subscriptions/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -7)]}/resourceGroups/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -5)]}/providers/Microsoft.Network/networkSecurityGroups/@{variables('NSG')}` | — |
-| HTTP_-_Get_NSG | GET | `@{parameters('ResourceMgrURL')}/subscriptions/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -7)]}/resourceGroups/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -5)]}/providers/Microsoft.Network/networkSecurityGroups/@{variables('NSG')}` | — |
-| HTTP_-_Assign_NSG | PUT | `@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}` | — |
-| HTTP_-_Test_NIC_NSG | GET | `@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}` | — |
-| HTTP_-_Test_NIC_State | GET | `@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}` | — |
-| HTTP_-_Shutdown_VM | POST | `@{parameters('ResourceMgrURL')}@{variables('vmid')}/deallocate` | — |
-| HTTP_-_Snap_DataDisk | PUT | `@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_LUN@{variables('LUN')}_@{variables('DTG')}` | — |
-| HTTP_-_Test_Data_Snap | GET | `@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_LUN@{variables('LUN')}_@{variables('DTG')}` | — |
-| HTTP_-_Test_OS_Snap | GET | `@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_DiskOS_@{variables('DTG')}` | — |
-| HTTP_-_Snapshot_OS | PUT | `@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_DiskOS_@{variables('DTG')}` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Entities_-_Get_Hosts</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/entities/host</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_IR_-_success</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Update_IR_-_fail</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_Subs</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/subscriptions</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Query_ARG</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/providers/Microsoft.ResourceGraph/resources</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_VM</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}@{variables('vmid')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_NIC</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Create_NSG</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/subscriptions/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -7)]}/resourceGroups/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -5)]}/providers/Microsoft.Network/networkSecurityGroups/@{variables('NSG')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Get_NSG</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/subscriptions/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -7)]}/resourceGroups/@{split(body('Parse_JSON_-_NIC')?['id'], '/')[add(length(split(body('Parse_JSON_-_NIC')?['id'], '/')), -5)]}/providers/Microsoft.Network/networkSecurityGroups/@{variables('NSG')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Assign_NSG</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Test_NIC_NSG</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Test_NIC_State</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}@{body('HTTP_-_Get_VM')?['properties']?['networkProfile']?['networkInterfaces'][0]?['id']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Shutdown_VM</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}@{variables('vmid')}/deallocate</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Snap_DataDisk</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_LUN@{variables('LUN')}_@{variables('DTG')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Test_Data_Snap</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_LUN@{variables('LUN')}_@{variables('DTG')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Test_OS_Snap</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_DiskOS_@{variables('DTG')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">HTTP_-_Snapshot_OS</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{parameters('ResourceMgrURL')}/subscriptions/@{parameters('SnapshotSubscriptionId')}/resourceGroups/@{parameters('SnapshotRG')}/providers/Microsoft.Compute/snapshots/@{variables('VMName')}_DiskOS_@{variables('DTG')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a></p>
+
 </div>
 
 </body>

@@ -30,7 +30,7 @@ Reference for SentinelHealth table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | Description | string | The operation description. |
 | ExtendedProperties | dynamic | Additional information based on the resource type. |
 | OperationName | string | The name of the operation that triggered the event. |
@@ -40,7 +40,7 @@ Reference for SentinelHealth table in Azure Monitor Logs.
 | SentinelResourceKind | string | The resource kind, for example: connector kind (such as Office365, AmazonWebServicesCloudTrail), alert rule kind (scheduld). |
 | SentinelResourceName | string | The Sentinel resource name. |
 | SentinelResourceType | string | The resource type, for example: DataConnector, AlertRule, etc. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Status | string | Status of the operation, for example: Success, Failure, Warning, Informational, Partial Success. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. |
@@ -64,15 +64,24 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (5)
 
-### Workbooks (1)
+### Workbooks (5)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):** `SentinelResourceType in "Automation rule,Playbook"`
 
 | Workbook |
 |:-------------|
 | [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md) |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AutomationHealth](../content/github-only-automationhealth-5e9d0998.md) | `SentinelResourceType in "Automation rule,Playbook"` |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | `SentinelResourceType has "Data connector"`<br>`SentinelResourceType has "analytics rule"` |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) | `SentinelResourceType in "Analytics Rule,Automation rule,Playbook"` |
+| [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) |  |
 
 ## Selection Criteria Summary (1 criteria, 1 total references)
 

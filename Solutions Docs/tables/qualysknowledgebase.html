@@ -25,38 +25,38 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/qualysknowledgebase">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/qualysknowledgebase">View Documentation</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -72,151 +72,151 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Vulnerability Category.</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Vulnerability Category.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Consequence</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Vulnerability Consequence.</td>
+  <td style="text-align:left">Consequence</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Vulnerability Consequence.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CveId</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Common Vulnerabilities and Exposures identifier.</td>
+  <td style="text-align:left">CveId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Common Vulnerabilities and Exposures identifier.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CveUrl</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">URL for the CVE entry.</td>
+  <td style="text-align:left">CveUrl</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">URL for the CVE entry.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Diagnosis</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Diagnosis information for the vulnerability.</td>
+  <td style="text-align:left">Diagnosis</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Diagnosis information for the vulnerability.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DiscoveryAdditionalInfo</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Additional information about vulnerability discovery.</td>
+  <td style="text-align:left">DiscoveryAdditionalInfo</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Additional information about vulnerability discovery.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DiscoveryAuthType</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Authentication type used for discovery.</td>
+  <td style="text-align:left">DiscoveryAuthType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Authentication type used for discovery.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DiscoveryRemote</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Remote discovery information.</td>
+  <td style="text-align:left">DiscoveryRemote</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Remote discovery information.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LastServiceModificationDateTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the vulnerability was last modified in the service.</td>
+  <td style="text-align:left">LastServiceModificationDateTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the vulnerability was last modified in the service.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Patchable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates whether the vulnerability is patchable.</td>
+  <td style="text-align:left">Patchable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether the vulnerability is patchable.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PciFlag</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">PCI compliance flag indicator.</td>
+  <td style="text-align:left">PciFlag</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">PCI compliance flag indicator.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PublishedDatetime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the vulnerability was published.</td>
+  <td style="text-align:left">PublishedDatetime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the vulnerability was published.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Qid</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The QID of the vulnerability.</td>
+  <td style="text-align:left">Qid</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The QID of the vulnerability.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SeverityLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Severity level of the vulnerability.</td>
+  <td style="text-align:left">SeverityLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Severity level of the vulnerability.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SoftwareProduct</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Software product affected by the vulnerability.</td>
+  <td style="text-align:left">SoftwareProduct</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Software product affected by the vulnerability.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SoftwareVendor</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Vendor of the affected software.</td>
+  <td style="text-align:left">SoftwareVendor</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Vendor of the affected software.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Solution</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Solution or remediation steps for the vulnerability.</td>
+  <td style="text-align:left">Solution</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Solution or remediation steps for the vulnerability.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">ThreatIntelligence</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Threat intelligence data associated with the vulnerability.</td>
+  <td style="text-align:left">ThreatIntelligence</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Threat intelligence data associated with the vulnerability.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time when the record was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time when the record was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">VendorReferenceId</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Vendor-specific reference identifier.</td>
+  <td style="text-align:left">VendorReferenceId</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Vendor-specific reference identifier.</td>
 </tr>
 <tr>
-<td style="text-align: left;">VendorReferenceUrl</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">URL for vendor-specific reference.</td>
+  <td style="text-align:left">VendorReferenceUrl</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">URL for vendor-specific reference.</td>
 </tr>
 <tr>
-<td style="text-align: left;">VulnTitle</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Title of the ingested vulnerability.</td>
+  <td style="text-align:left">VulnTitle</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Title of the ingested vulnerability.</td>
 </tr>
 <tr>
-<td style="text-align: left;">VulnType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type or classification of the vulnerability.</td>
+  <td style="text-align:left">VulnType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type or classification of the vulnerability.</td>
 </tr>
 </tbody>
 </table>
@@ -230,18 +230,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/qualyskb.html">Qualys VM KnowledgeBase</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/qualyskb.html">Qualys VM KnowledgeBase</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../connectors/qualyskbconnector.html">Qualys Knowledge Base (via Codeless Connector Framework)</a></td>
-<td style="text-align: left;"><code>Patchable in "0,1"</code></td>
+  <td style="text-align:left"><a href="../connectors/qualyskbconnector.html">Qualys Knowledge Base (via Codeless Connector Framework)</a></td>
+  <td style="text-align:left"><code>Patchable in &quot;0,1&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -251,16 +251,16 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Solution</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Solution</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../parsers/qualyskb.html">QualysKB</a></td>
-<td style="text-align: left;"><a href="../solutions/qualys-vm-knowledgebase.html">Qualys VM Knowledgebase</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../parsers/qualyskb.html">QualysKB</a></td>
+  <td style="text-align:left"><a href="../solutions/qualys-vm-knowledgebase.html">Qualys VM Knowledgebase</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -269,30 +269,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Patchable in "0,1"</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Patchable in &quot;0,1&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -300,36 +300,37 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>0</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>0</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><code>1</code></td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>1</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

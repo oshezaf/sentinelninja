@@ -24,22 +24,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -54,106 +54,106 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">AuditAssetJSON</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">JSON object containing the audit asset details</td>
+  <td style="text-align:left">AuditAssetJSON</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">JSON object containing the audit asset details</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditAssetNames</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Names of the assets involved in the audit</td>
+  <td style="text-align:left">AuditAssetNames</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Names of the assets involved in the audit</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditCaseId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Case ID related to the audit event</td>
+  <td style="text-align:left">AuditCaseId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Case ID related to the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the audit event</td>
+  <td style="text-align:left">AuditDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditEntity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Entity type associated with the audit event</td>
+  <td style="text-align:left">AuditEntity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Entity type associated with the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditEntitySubtype</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Subtype of the audit entity (e.g., Login)</td>
+  <td style="text-align:left">AuditEntitySubtype</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Subtype of the audit entity (e.g., Login)</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditHostName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Host name associated with the audit event</td>
+  <td style="text-align:left">AuditHostName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Host name associated with the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Unique identifier for the audit event</td>
+  <td style="text-align:left">AuditId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Unique identifier for the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditInsertTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time when the audit record was inserted into the system.</td>
+  <td style="text-align:left">AuditInsertTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time when the audit record was inserted into the system.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditOwnerEmail</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Email address of the audit owner</td>
+  <td style="text-align:left">AuditOwnerEmail</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Email address of the audit owner</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditOwnerName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the owner who initiated the audit event</td>
+  <td style="text-align:left">AuditOwnerName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the owner who initiated the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditReason</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Reason for the audit event</td>
+  <td style="text-align:left">AuditReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Reason for the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditResult</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Result of the audit event (e.g., SUCCESS)</td>
+  <td style="text-align:left">AuditResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Result of the audit event (e.g., SUCCESS)</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditSessionId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Session ID related to the audit event</td>
+  <td style="text-align:left">AuditSessionId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Session ID related to the audit event</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditSeverity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Severity of the Audit log.</td>
+  <td style="text-align:left">AuditSeverity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Severity of the Audit log.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditSourceIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The source Ip of the audit log.</td>
+  <td style="text-align:left">AuditSourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source Ip of the audit log.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditUserAgent</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The User Agent of the audit user.</td>
+  <td style="text-align:left">AuditUserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The User Agent of the audit user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AuditUserRoles</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The roles of the audit user.</td>
+  <td style="text-align:left">AuditUserRoles</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The roles of the audit user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time when the record was generated</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time when the record was generated</td>
 </tr>
 </tbody>
 </table>
@@ -168,14 +168,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/cortexxdrdataconnector.html">Palo Alto Cortex XDR</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/cortexxdrdataconnector.html">Palo Alto Cortex XDR</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -183,6 +183,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

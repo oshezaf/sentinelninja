@@ -23,7 +23,7 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AgentVersion | string | The version of the agent connecting. |
 | AppId | string | Destination Application ID accessed in Azure AD during the transaction. |
 | ClientDeviceName | string | The name of the client device making the connection. |
@@ -63,7 +63,7 @@ Reference for NetworkAccessConnectionEvents table in Azure Monitor Logs.
 | SourceIpStateCode | string | The source IP state or region code. |
 | SourcePort | int | The IP port from which the connection originated. |
 | SourcePrivateIp | string | The private IP address from which the connection or session originated. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |
 | Token3PExpiry | datetime | The expiry date of the access token used to access the private access application. |

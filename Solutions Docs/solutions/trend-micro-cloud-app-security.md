@@ -18,7 +18,7 @@
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
 | **Solution Folder** | [Trend Micro Cloud App Security](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Trend%20Micro%20Cloud%20App%20Security) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.trendmicrocas) · Rating: ★★★★★ 4.5/5 (44 ratings) · Popularity: 🟡 Low (36%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.trendmicrocas) · Rating: ★★★★★ 4.5/5 (44 ratings) · Popularity: 🟡 Low (32%) |
 
 The [Trend Micro Cloud App Security](https://www.trendmicro.com/en_be/business/products/user-protection/sps/email-and-collaboration/cloud-app-security.html) data connector provides the capability to retrieve security event logs of the services that Cloud App Security protects and more events into Microsoft Sentinel through the Log Retrieval API. Refer to API [documentation](https://docs.trendmicro.com/enterprise/cloud-app-security-integration-api-online-help/supported-cloud-app-/log-retrieval-api/get-security-logs.aspx) for more information. The connector provides the ability to get events which helps to examine potential security risks, analyze your team's use of collaboration, diagnose configuration problems and more.  
  

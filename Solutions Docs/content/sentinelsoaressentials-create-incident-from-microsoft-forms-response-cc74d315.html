@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/sentinelsoaressentials.html">SentinelSOARessentials</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,54 +47,98 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-microsoftforms.html"><code>microsoftforms</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-microsoftforms.html"><code>microsoftforms</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Create_incident | put | `/Incidents/subscriptions/@{encodeURIComponent(parameters('Subscription'))}/resourceGroups/@{encodeURIComponent(parameters('Resource Group'))}/workspaces/@{encodeURIComponent(parameters('Workspace Name'))}` | — |
-
-#### [`microsoftforms`](../logic-apps/managed-microsoftforms.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_response_details | get | `/formapi/api/forms('@{encodeURIComponent(parameters('Microsoft Forms ID'))}')/responses` | — |
-
-#### [`office365`](../logic-apps/managed-office365.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Send_an_email_(V2)_-_success | post | `/v2/Mail` | — |
-| Send_an_email_(V2)_-_fail | post | `/v2/Mail` | — |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Create_incident</td>
+  <td style="text-align:left">put</td>
+  <td style="text-align:left"><code>/Incidents/subscriptions/@{encodeURIComponent(parameters('Subscription'))}/resourceGroups/@{encodeURIComponent(parameters('Resource Group'))}/workspaces/@{encodeURIComponent(parameters('Workspace Name'))}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="microsoftforms"><a href="../logic-apps/managed-microsoftforms.html"><code>microsoftforms</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_response_details</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/formapi/api/forms('@{encodeURIComponent(parameters('Microsoft Forms ID'))}')/responses</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="office365"><a href="../logic-apps/managed-office365.html"><code>office365</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Send_an_email_(V2)_-_success</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/Mail</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Send_an_email_(V2)_-_fail</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/v2/Mail</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -103,48 +147,51 @@
 </blockquote>
 <h1 id="createincident-microsoftforms">CreateIncident-MicrosoftForms</h1>
 <p>author: Benjamin Kovacevic</p>
-<p>This playbook will create a new Microsoft Incident when Microsoft Forms response is submitted. </p>
+<p>This playbook will create a new Microsoft Incident when Microsoft Forms response is submitted.</p>
 <h1 id="prerequisites">Prerequisites</h1>
 <ol>
 <li>Create Microsoft Forms from template - https://forms.office.com/Pages/ShareFormPage.aspx?id=b6PlTP9aoEiHWDhi2Ji_bQ9ohJdYaDxFpei_Nyf2P35UQVBRWk83OUhCUjUyU0pUWkdIV1FMNjFCVC4u&amp;sharetoken=7MfhwUMCnEB9pBTvSX7w</li>
 <li>After the template deployment, save Microsoft Forms ID as it will be needed to deploy the playbook. It is possible to choose Form ID after the playbook is deployed as well using Logic App Designer.<br>
-<img alt="Forms ID" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/MicrosoftFormsID.jpg" /></li>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/MicrosoftFormsID.jpg" alt="Forms ID" /></li>
 <li>Configure who can fill the template - the suggestion is either specific people from the organization or the whole organization - https://support.microsoft.com/en-us/topic/choose-who-can-fill-out-a-form-or-quiz-c90c641e-6f88-45c5-9cb9-aca2b4083949</li>
 <li>Prepare Subscription ID, Resource Group name, and Log Analytics Workspace name as it is needed for template deployment.</li>
 </ol>
 <h1 id="quick-deployment">Quick Deployment</h1>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-MicrosoftForms%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-MicrosoftForms%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-MicrosoftForms%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FSentinelSOARessentials%2FPlaybooks%2FCreateIncident-MicrosoftForms%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" alt="Deploy to Azure Gov" /></a>
 <br><br></p>
 <h1 id="post-deployment">Post-deployment</h1>
 <ol>
 <li>Assign Microsoft Sentinel Responder role to the managed identity. To do so, choose Identity blade under Settings of the Logic App.</li>
 <li>If Microsoft Forms ID wasn't entered while deploying, open Logic App Designer and choose Microsoft Forms from the drop-down menu</li>
-<li>If notification about successful or unsuccessful incident creation is not needed, please delete the "Condition" step<br>
-<img alt="FormsTemplate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/DeleteConditionDark.jpg" /><br></li>
+<li>If notification about successful or unsuccessful incident creation is not needed, please delete the &quot;Condition&quot; step<br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/DeleteConditionDark.jpg" alt="FormsTemplate" /><br></li>
 <li>Authorize Microsoft Forms, Office 365 Outlook connector, and Conversion Service connector (HTML to text). Note: If in step 3, email notification is deleted, there will be no Office 365 Outlook connector.</li>
 </ol>
 <h1 id="note-for-microsoft-forms-changes">Note for Microsoft Forms changes</h1>
 <p>If there are made any changes to the Microsoft Forms template (questions changed or translated to the local language), there is a need to adjust the playbooks template by mapping correct values in Logic App Designer:<br>
-<img alt="FormsTemplate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/mapDynamicContentDark.jpg" /><br><br></p>
-<p>When editing, important information is that certain fields accept only certain values:<br>
-1. Severity - Informational/Low/Medium/High
-2. Status - New/Active/Closed
-3. Owner Object Id / UPN - only Azure AD object ID or user's UPN
-4. Assign/Unassign Owner - Assign/Unassign</p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/mapDynamicContentDark.jpg" alt="FormsTemplate" /><br><br></p>
+<p>When editing, important information is that certain fields accept only certain values:<br></p>
+<ol>
+<li>Severity - Informational/Low/Medium/High</li>
+<li>Status - New/Active/Closed</li>
+<li>Owner Object Id / UPN - only Azure AD object ID or user's UPN</li>
+<li>Assign/Unassign Owner - Assign/Unassign</li>
+</ol>
 <h1 id="screenshots">Screenshots</h1>
 <p><strong>Playbook</strong> <br>
-<img alt="playbook screenshot" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/MSFormsPlaybookDark.jpg" /><br></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/MSFormsPlaybookDark.jpg" alt="playbook screenshot" /><br></p>
 <p><strong>Microsoft Forms template</strong><br>
-<img alt="FormsTemplate" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/MSForm.jpg" /><br></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/MSForm.jpg" alt="FormsTemplate" /><br></p>
 <p><strong>Microsoft Sentinel Incident</strong><br>
-<img alt="SentinelIncident" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/SentinelIncidentDark.jpg" /><br></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/SentinelIncidentDark.jpg" alt="SentinelIncident" /><br></p>
 <p><strong>Email notification</strong><br>
-<img alt="Success" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/successDark.jpg" /><br><br>
-<img alt="Failure" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/UnsuccessDark.jpg" /><br></p>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/successDark.jpg" alt="Success" /><br><br>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SentinelSOARessentials/Playbooks/CreateIncident-MicrosoftForms/images/UnsuccessDark.jpg" alt="Failure" /><br></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/sentinelsoaressentials.html">Back to SentinelSOARessentials</a></p>
+
 </div>
 
 </body>

@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Network</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Network</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntainsights">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ntainsights">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,136 +57,136 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdFlag</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">A ternary series containing (+1, -1, 0) marking up/down/no anomaly respectively.</td>
+  <td style="text-align:left">AdFlag</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">A ternary series containing (+1, -1, 0) marking up/down/no anomaly respectively.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AdScore</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Anomaly score.</td>
+  <td style="text-align:left">AdScore</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Anomaly score.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AggregationType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of data aggregation - 1 for short aggregation and 2 for long aggregation.</td>
+  <td style="text-align:left">AggregationType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of data aggregation - 1 for short aggregation and 2 for long aggregation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DataPoints</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Data points for aggregated data.</td>
+  <td style="text-align:left">DataPoints</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Data points for aggregated data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">FlowStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The considered traffic is Allowed/Denied/All.</td>
+  <td style="text-align:left">FlowStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The considered traffic is Allowed/Denied/All.</td>
 </tr>
 <tr>
-<td style="text-align: left;">InsightsResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource ID for the resource for which data is aggregated</td>
+  <td style="text-align:left">InsightsResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource ID for the resource for which data is aggregated</td>
 </tr>
 <tr>
-<td style="text-align: left;">IntervalEnd</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">End time of the data insights processing interval.</td>
+  <td style="text-align:left">IntervalEnd</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time of the data insights processing interval.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IntervalStart</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Start time of the data insights processing interval.</td>
+  <td style="text-align:left">IntervalStart</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time of the data insights processing interval.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Periodicity</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The number of hours after whichthe data repeats itself.</td>
+  <td style="text-align:left">Periodicity</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The number of hours after whichthe data repeats itself.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PivotType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Pivot type for insights aggregation.</td>
+  <td style="text-align:left">PivotType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Pivot type for insights aggregation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProcessingTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time when periodicty is calculated.</td>
+  <td style="text-align:left">ProcessingTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time when periodicty is calculated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Region</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Region of Vnet flow logs.</td>
+  <td style="text-align:left">Region</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Region of Vnet flow logs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SchemaVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Schema version.</td>
+  <td style="text-align:left">SchemaVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Schema version.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SeriesNumber</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">An incremental value to represent the last aggregated series.</td>
+  <td style="text-align:left">SeriesNumber</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">An incremental value to represent the last aggregated series.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SubType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Subtype for the insights logs.</td>
+  <td style="text-align:left">SubType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Subtype for the insights logs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The time when the data gets ingested into the Log Analytics Workspace.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time when the data gets ingested into the Log Analytics Workspace.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Time when the anomaly has occured in data pattern.</td>
+  <td style="text-align:left">TrafficTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time when the anomaly has occured in data pattern.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficVolumeActual</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The actual traffic volume in the time period.</td>
+  <td style="text-align:left">TrafficVolumeActual</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The actual traffic volume in the time period.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficVolumeBaseline</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The predicted value of the series, according to the decomposition per the anomaly calculation algorithm.</td>
+  <td style="text-align:left">TrafficVolumeBaseline</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The predicted value of the series, according to the decomposition per the anomaly calculation algorithm.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TrafficVolumeUnit</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The aggregated values represent Flows/Bytes/Packets.</td>
+  <td style="text-align:left">TrafficVolumeUnit</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The aggregated values represent Flows/Bytes/Packets.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -194,6 +194,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

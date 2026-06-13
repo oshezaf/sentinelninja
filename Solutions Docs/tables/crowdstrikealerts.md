@@ -31,7 +31,7 @@ Reference for CrowdStrikeAlerts table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | AgentId | string | Unique identifier for the CrowdStrike agent that generated the alert. |
 | AggregateId | string | Identifier for aggregated alerts from the same source. |
 | AlertType | string | The type or category of the CrowdStrike alert. |
@@ -83,7 +83,7 @@ Reference for CrowdStrikeAlerts table in Azure Monitor Logs.
 | LocalProcessId | string | Local process ID on the system where the alert occurred. |
 | LogonDomain | string | Domain used for user logon associated with the alert. |
 | Md5 | string | MD5 hash of the file associated with the alert. |
-| MitreAttack | dynamic | MITRE ATT&CK tactics and techniques associated with the alert. |
+| MitreAttack | dynamic | MITRE ATT&amp;CK tactics and techniques associated with the alert. |
 | Objective | string | The attacker's presumed objective. |
 | OriginalCorrelationRulesEntitiesCount | int | Original count of correlation rule entities. |
 | OriginalIndicatorEntitiesCount | int | Original count of indicator entities. |
@@ -117,15 +117,15 @@ Reference for CrowdStrikeAlerts table in Azure Monitor Logs.
 | SourceEndpointAddressIp6 | string | IPv6 address of the source endpoint. |
 | SourceIps | dynamic | List of source IP addresses associated with the alert. |
 | SourceProducts | dynamic | List of products that contributed to this alert. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SourceVendors | dynamic | List of vendors associated with the alert sources. |
 | StartTime | string | Timestamp when the alert activity started. |
 | Status | string | Current status of the alert. |
-| Tactic | string | MITRE ATT&CK tactic associated with the alert. |
-| TacticId | string | Identifier of the MITRE ATT&CK tactic. |
+| Tactic | string | MITRE ATT&amp;CK tactic associated with the alert. |
+| TacticId | string | Identifier of the MITRE ATT&amp;CK tactic. |
 | Tags | dynamic | Custom tags associated with the alert. |
-| Technique | string | MITRE ATT&CK technique associated with the alert. |
-| TechniqueId | string | Identifier of the MITRE ATT&CK technique. |
+| Technique | string | MITRE ATT&amp;CK technique associated with the alert. |
+| TechniqueId | string | Identifier of the MITRE ATT&amp;CK technique. |
 | TemplateInstanceId | int | Instance ID of the detection template used. |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatgraphIndicators | dynamic | Threat graph indicators associated with the alert. |

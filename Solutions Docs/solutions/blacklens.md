@@ -21,7 +21,7 @@
 | **First Published** | 2025-12-31 |
 | **Last Updated** | 2026-04-17 |
 | **Solution Folder** | [Blacklens](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Blacklens) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/snapsecgmbh1733575353555.blacklens-sentinel-solution) · Popularity: ⚪ Very Low (0%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/snapsecgmbh1733575353555.blacklens-sentinel-solution) · Popularity: 🟡 Low (11%) |
 
 The [blacklens.io](https://blacklens.io) solution for Microsoft Sentinel ingests Insights/Alerts from blacklens.io via a webhook-triggered Logic App and the Azure Monitor Logs Ingestion API. It includes a data connector with deployment instructions and a Near Real-Time (NRT) analytics rule that automatically creates Microsoft Sentinel incidents from ingested alerts.
 

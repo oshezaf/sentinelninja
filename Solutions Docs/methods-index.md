@@ -12,18 +12,18 @@ Data connectors use different collection methods to ingest data into Microsoft S
 
 | Collection Method | Total | Active | Deprecated 🚫 | Unpublished ⚠️ |
 |:------------------|------:|-------:|-------------:|---------------:|
-| [CCF](methods/ccf.md) | **177** | 164 | 1 | 12 |
+| [CCF](methods/ccf.md) | **177** | 147 | 1 | 29 |
 | [AMA](methods/ama.md) | **166** | 36 | 122 | 8 |
-| [Azure Function](methods/azure-function.md) | **125** | 90 | 26 | 9 |
-| [REST Pull API](methods/rest-pull-api.md) | **50** | 42 | 1 | 7 |
-| [CCF Push](methods/ccf-push.md) | **39** | 38 | 0 | 1 |
-| [Native](methods/native.md) | **18** | 18 | 0 | 0 |
-| [Unknown](methods/unknown.md) | **17** | 15 | 0 | 2 |
+| [Azure Function](methods/azure-function.md) | **125** | 85 | 26 | 14 |
+| [REST Pull API](methods/rest-pull-api.md) | **50** | 35 | 1 | 14 |
+| [CCF Push](methods/ccf-push.md) | **39** | 37 | 0 | 2 |
+| [Native](methods/native.md) | **18** | 17 | 0 | 1 |
+| [Unknown](methods/unknown.md) | **17** | 17 | 0 | 0 |
 | [Azure Diagnostics](methods/azure-diagnostics.md) | **17** | 17 | 0 | 0 |
 | [Azure Function (TI Upload API)](methods/azure-function-ti-upload-api.md) | **15** | 11 | 1 | 3 |
 | [Unknown (Custom Log)](methods/unknown-custom-log.md) | **1** | 1 | 0 | 0 |
 | [MMA](methods/mma.md) | **1** | 1 | 0 | 0 |
-| **Total** | **626** | **433** | **151** | **42** |
+| **Total** | **626** | **404** | **151** | **71** |
 
 ---
 

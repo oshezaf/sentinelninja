@@ -23,7 +23,7 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AddressAuthorizationType | string | Address type (Public IP, subnet, private connection) |
@@ -63,7 +63,7 @@ Reference for AZKVAuditLogs table in Azure Monitor Logs.
 | SecretProperties | dynamic | Information about secret properties including type, atttributes |
 | Sku | dynamic | Information about vault including family, name and capacity |
 | SoftDeleteRetentionInDays | int | Specifies soft delete retention in days |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | StorageAccountProperties | dynamic | Information about storage account properties including activekeyname, resourceid |
 | StorageSasDefinitionProperties | dynamic | Information about storage sas definition properties including sastype, validityperiod |
 | SubnetId | string | Id of subnet if request comes from a known subnet |

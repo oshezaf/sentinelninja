@@ -1,4 +1,6 @@
-# 🚫 [Deprecated] ESET PROTECT
+# 🚫 ⚠️ [Deprecated] ESET PROTECT
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 > 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 

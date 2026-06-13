@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/vectra-xdr.html">Vectra XDR</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraDecorateIncidentBasedOnTag/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Vectra%20XDR/Playbooks/VectraDecorateIncidentBasedOnTag/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,71 +47,123 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault-3.html"><code>keyvault_3</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault-3.html"><code>keyvault_3</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">1</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`azuresentinel`](../logic-apps/managed-azuresentinel.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Add_Comment_To_Incident_(V3) | post | `/Incidents/Comment` | — |
-
-#### [`keyvault_3`](../logic-apps/managed-keyvault-3.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Access_Token | get | `/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| HTTP_Request_To_Add_Note_To_Vectra_Entity | POST | `@{variables('base_url')}/api/@{variables('api_version')}/entities/@{int(variables('entity_id'))}/notes` | — |
-
-#### [`workflow`](../logic-apps/builtin-workflow.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| GenerateAccessTokenVectra | — | — | workflowId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]`<br>triggerName=`manual` |
-
+<h4 id="azuresentinel"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Add_Comment_To_Incident_(V3)</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Incidents/Comment</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="keyvault_3"><a href="../logic-apps/managed-keyvault-3.html"><code>keyvault_3</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Access_Token</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent('Vectra-Access-Token')}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">HTTP_Request_To_Add_Note_To_Vectra_Entity</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{variables('base_url')}/api/@{variables('api_version')}/entities/@{int(variables('entity_id'))}/notes</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="workflow"><a href="../logic-apps/builtin-workflow.html"><code>workflow</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">GenerateAccessTokenVectra</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">workflowId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/',resourceGroup().name,'/providers/Microsoft.Logic/workflows/',trim(parameters('GenerateAccessCredPlaybookName')))]</code><br>triggerName=<code>manual</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -123,77 +175,94 @@
 <h3 id="prerequisites">Prerequisites</h3>
 <ol>
 <li>The Vectra XDR data connector should be configured to create alerts and generate an incident based on entity data in Microsoft Sentinel.</li>
-<li>
-<p>Obtain keyvault name and tenantId where client credentials are stored using which access token will be generated.
-  * Create a Key Vault with unique name
-  * Go to Keyvaults → <em>your keyvault</em> → Overview and copy DirectoryID which will be used as tenantId
-  * NOTE: Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</p>
-</li>
-<li>
-<p>Make sure that VectraGenerateAccessToken playbook is deployed before deploying VectraDecorateIncidentBasedOnTag playbook.</p>
-</li>
+<li>Obtain keyvault name and tenantId where client credentials are stored using which access token will be generated.</li>
+</ol>
+<ul>
+<li>Create a Key Vault with unique name</li>
+<li>Go to Keyvaults → <em>your keyvault</em> → Overview and copy DirectoryID which will be used as tenantId</li>
+<li>NOTE: Ensure the Permission model in the Access Configuration of Key Vault is set to <strong>'Vault access policy'</strong>.</li>
+</ul>
+<ol start="3">
+<li>Make sure that VectraGenerateAccessToken playbook is deployed before deploying VectraDecorateIncidentBasedOnTag playbook.</li>
 </ol>
 <h3 id="deployment-instructions">Deployment instructions</h3>
 <ol>
 <li>To deploy the Playbook, click the Deploy to Azure button. This will launch the ARM Template deployment wizard.</li>
-<li>Fill in the required parameters:
-  * PlaybookName: Enter the playbook name here.
-  * KeyVaultName: Name of keyvault where secrets are stored.
-  * TenantId: TenantId where keyvault is located.
-  * BaseURL: Enter baseurl of your Vectra account.
-  * IncidentComment: Enter comment you want to add in incident create based on tag.
-  * EntityNote: Enter a note you want to add in Vectra Entity.
-  * GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
+<li>Fill in the required parameters:</li>
 </ol>
-<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraDecorateIncidentBasedOnTag%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraDecorateIncidentBasedOnTag%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazuregovbutton" /></a></p>
+<ul>
+<li>PlaybookName: Enter the playbook name here.</li>
+<li>KeyVaultName: Name of keyvault where secrets are stored.</li>
+<li>TenantId: TenantId where keyvault is located.</li>
+<li>BaseURL: Enter baseurl of your Vectra account.</li>
+<li>IncidentComment: Enter comment you want to add in incident create based on tag.</li>
+<li>EntityNote: Enter a note you want to add in Vectra Entity.</li>
+<li>GenerateAccessCredPlaybookName: Playbook name which is deployed as part of prerequisites.</li>
+</ul>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraDecorateIncidentBasedOnTag%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a> <a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FVectraXDR%2FPlaybooks%2FVectraDecorateIncidentBasedOnTag%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure" /></a></p>
 <h3 id="post-deployment-instructions">Post-Deployment instructions</h3>
 <h4 id="a-authorize-connections">a. Authorize connections</h4>
-<p>Once deployment is complete, authorize each connection.
-1. Go to your logic app → API connections → Select keyvault connection resource.
-2. Go to General → Edit API connection.
-3. Click Authorize.
-4. Sign in.
-5. Click Save.
-6. Repeat steps for other connections.</p>
+<p>Once deployment is complete, authorize each connection.</p>
+<ol>
+<li>Go to your logic app → API connections → Select keyvault connection resource.</li>
+<li>Go to General → Edit API connection.</li>
+<li>Click Authorize.</li>
+<li>Sign in.</li>
+<li>Click Save.</li>
+<li>Repeat steps for other connections.</li>
+</ol>
 <h4 id="b-assign-role-to-add-a-comment-in-the-incident">b. Assign Role to add a comment in the incident</h4>
-<p>After authorizing each connection, assign a role to this playbook.
-1. Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add
-2. Add role assignment
-3. Assignment type: Job function roles
-4. Role: Microsoft Sentinel Contributor
-5. Members: select managed identity for "assigned access to" and add your logic app as a member.
-6. Click on review+assign</p>
+<p>After authorizing each connection, assign a role to this playbook.</p>
+<ol>
+<li>Go to Log Analytics Workspace → <em>your workspace</em> → Access Control → Add</li>
+<li>Add role assignment</li>
+<li>Assignment type: Job function roles</li>
+<li>Role: Microsoft Sentinel Contributor</li>
+<li>Members: select managed identity for &quot;assigned access to&quot; and add your logic app as a member.</li>
+<li>Click on review+assign</li>
+</ol>
 <h4 id="c-add-access-policy-in-keyvault">c. Add Access policy in Keyvault</h4>
-<p>Add access policy for the playbook's managed identity and authorized user to read, and write secrets of key vault.
-1. Go to logic app → <em>your Logic App</em> → identity → System assigned Managed identity and copy Object (principal) ID.
-2. Go to keyvaults → <em>your keyvault</em> → Access policies → create.
-3. Select all keys &amp; secrets permissions. Click next.
-4. In the principal section, search by copied object ID. Click next.
-5. Click review + create.
-6. Repeat the above step 2 to 5 to add access policy for the user account using which connection is authorized.</p>
+<p>Add access policy for the playbook's managed identity and authorized user to read, and write secrets of key vault.</p>
+<ol>
+<li>Go to logic app → <em>your Logic App</em> → identity → System assigned Managed identity and copy Object (principal) ID.</li>
+<li>Go to keyvaults → <em>your keyvault</em> → Access policies → create.</li>
+<li>Select all keys &amp; secrets permissions. Click next.</li>
+<li>In the principal section, search by copied object ID. Click next.</li>
+<li>Click review + create.</li>
+<li>Repeat the above step 2 to 5 to add access policy for the user account using which connection is authorized.</li>
+</ol>
 <h4 id="d-configurations-in-microsoft-sentinel">d. Configurations in Microsoft Sentinel</h4>
 <ol>
-<li>In Microsoft sentinel, below analytical rules should be configured to trigger an incident.
-  * Vectra Create Incident Based On Tag For Entity Type Account
-  * Vectra Create Incident Based On Tag For Entity Type Host</li>
-<li>In Microsoft Sentinel, Configure the automation rules to trigger the playbook. 
-  * Go to Microsoft Sentinel → <em>your workspace</em> → Automation 
-  * Click on <strong>Create</strong> → <strong>Automation rule</strong>
-  * Provide a name for your rule
-  * In the Analytic rule name condition, select the analytic rule that you have created.
-  * In Actions dropdown select <strong>Run playbook</strong>
-  * In the second dropdown select your deployed playbook
-  * Click on <strong>Apply</strong>
-  * Save the Automation rule.</li>
+<li>In Microsoft sentinel, below analytical rules should be configured to trigger an incident.</li>
 </ol>
-<p><strong>NOTE:</strong> If you want to manually run the playbook on a particular incident follow the below steps:
-- Go to Microsoft Sentinel → <em>your workspace</em> → Incidents
-- Select an incident.
-- In the right pane, click on Actions, and from the dropdown select the 'Run Playbook' option.
-- click on the Run button beside this playbook.</p>
+<ul>
+<li>Vectra Create Incident Based On Tag For Entity Type Account</li>
+<li>Vectra Create Incident Based On Tag For Entity Type Host</li>
+</ul>
+<ol start="2">
+<li>In Microsoft Sentinel, Configure the automation rules to trigger the playbook.</li>
+</ol>
+<ul>
+<li>Go to Microsoft Sentinel → <em>your workspace</em> → Automation</li>
+<li>Click on <strong>Create</strong> → <strong>Automation rule</strong></li>
+<li>Provide a name for your rule</li>
+<li>In the Analytic rule name condition, select the analytic rule that you have created.</li>
+<li>In Actions dropdown select <strong>Run playbook</strong></li>
+<li>In the second dropdown select your deployed playbook</li>
+<li>Click on <strong>Apply</strong></li>
+<li>Save the Automation rule.</li>
+</ul>
+<p><strong>NOTE:</strong> If you want to manually run the playbook on a particular incident follow the below steps:</p>
+<ul>
+<li>Go to Microsoft Sentinel → <em>your workspace</em> → Incidents</li>
+<li>Select an incident.</li>
+<li>In the right pane, click on Actions, and from the dropdown select the 'Run Playbook' option.</li>
+<li>click on the Run button beside this playbook.</li>
+</ul>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/vectra-xdr.html">Back to Vectra XDR</a></p>
+
 </div>
 
 </body>

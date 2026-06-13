@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwdnsquery">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/azfwdnsquery">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -69,170 +69,191 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">DnssecOkBit</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">A flag indicating that the resolver supports DNSSEC records.</td>
+  <td style="text-align:left">DnssecOkBit</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">A flag indicating that the resolver supports DNSSEC records.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EDNS0BufferSize</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Client's EDNS0 buffer size. Specifies the maximum packet size allowed in responses in bytes.</td>
+  <td style="text-align:left">EDNS0BufferSize</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Client's EDNS0 buffer size. Specifies the maximum packet size allowed in responses in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ErrorMessage</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the error returned to the client. Empty if request is successful.</td>
+  <td style="text-align:left">ErrorMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the error returned to the client. Empty if request is successful.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ErrorNumber</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">Error number matching the returned response code.</td>
+  <td style="text-align:left">ErrorNumber</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Error number matching the returned response code.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Protocol</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Protocol used to send the DNS query. For example: TCP, UDP.</td>
+  <td style="text-align:left">Protocol</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Protocol used to send the DNS query. For example: TCP, UDP.</td>
 </tr>
 <tr>
-<td style="text-align: left;">QueryClass</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">DNS query's query class.</td>
+  <td style="text-align:left">QueryClass</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DNS query's query class.</td>
 </tr>
 <tr>
-<td style="text-align: left;">QueryId</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">DNS query's query ID.</td>
+  <td style="text-align:left">QueryId</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">DNS query's query ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">QueryName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">DNS query's name to resolve.</td>
+  <td style="text-align:left">QueryName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DNS query's name to resolve.</td>
 </tr>
 <tr>
-<td style="text-align: left;">QueryType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">DNS query's query type.</td>
+  <td style="text-align:left">QueryType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DNS query's query type.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestDurationSecs</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Duration of the DNS request from the time it arrived to the firewall and until a response was sent to the client.</td>
+  <td style="text-align:left">RequestDurationSecs</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Duration of the DNS request from the time it arrived to the firewall and until a response was sent to the client.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RequestSize</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The size of the DNS request in bytes.</td>
+  <td style="text-align:left">RequestSize</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The size of the DNS request in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseCode</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">DNS reponse code.</td>
+  <td style="text-align:left">ResponseCode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DNS reponse code.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseFlags</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">DNS reponse flags, comma separated.</td>
+  <td style="text-align:left">ResponseFlags</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DNS reponse flags, comma separated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResponseSize</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">DNS reponse syze in bytes.</td>
+  <td style="text-align:left">ResponseSize</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">DNS reponse syze in bytes.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceIp</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">DNS query's source IP address.</td>
+  <td style="text-align:left">SourceIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DNS query's source IP address.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourcePort</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">DNS query's source Port.</td>
+  <td style="text-align:left">SourcePort</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">DNS query's source Port.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Timestamp (UTC) when the data plane log was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp (UTC) when the data plane log was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (1)</h2>
+<h2 id="solutions">Solutions (2)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/azure-firewall.html">Azure Firewall</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/azurefirewall.html">Azure Firewall</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/azurefirewall.html">Azure Firewall</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (1)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
+<h3 id="analytic-rules">Analytic Rules (2)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.html">Known Forest Blizzard group domains - July 2019</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.html">Mercury - Domain, Hash and IP IOCs - August 2022</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <h3 id="workbooks">Workbooks (1)</h3>
 <p><strong>In solution <a href="../solutions/azure-firewall.html">Azure Firewall</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.html">AzureFirewallWorkbook-StructuredLogs</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/azure-firewall-azurefirewallworkbook-structuredlogs-e125f99e.html">AzureFirewallWorkbook-StructuredLogs</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -244,6 +265,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

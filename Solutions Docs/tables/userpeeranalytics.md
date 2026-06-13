@@ -22,7 +22,7 @@ Reference for UserPeerAnalytics table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | AADTenantId | string | Unique identifier of the Azure Tenant |
@@ -30,7 +30,7 @@ Reference for UserPeerAnalytics table in Azure Monitor Logs.
 | PeerUserName | string | User name of the peer of the primary user |
 | PeerUserPrincipalName | string | User principal name of the peer of the primary user |
 | Rank | int | Rank of the peer with respect to the primary user |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp when the peer analytics is calculated |
 | Type | string | The name of the table |
@@ -39,6 +39,16 @@ Reference for UserPeerAnalytics table in Azure Monitor Logs.
 | UserPrincipalName | string | User principal name of the primary user |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
 
 ---
 

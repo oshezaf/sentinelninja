@@ -31,7 +31,7 @@ Reference for CopilotActivity table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ActorName | string | User principal name or email address. |
 | ActorUserId | string | Internal user key or GUID. |
 | ActorUserType | string | Type of user (e.g., Regular, Admin, System). |
@@ -47,7 +47,7 @@ Reference for CopilotActivity table in Azure Monitor Logs.
 | OrganizationId | string | Organization GUID. |
 | RecordId | string | Unique identifier for the audit record. |
 | RecordType | string | Normalized record type name (e.g., CopilotInteraction, UpdateCopilotSettings). |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | SrcIpAddr | string | IP address of the client. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp of the audit event. |
@@ -71,7 +71,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (7)
+## Content Items Using This Table (8)
 
 ### Analytic Rules (4)
 
@@ -93,13 +93,19 @@ This table is ingested by the following connectors:
 | [Copilot - Access From External IP Address](../content/microsoft-copilot-copilot-access-from-external-ip-address-f6a7b8c9-d0e1-42f3-a4b5-c6d7e8f9a0b1-76209661.md) | `SrcIpAddr !startswith "10."`<br>`SrcIpAddr !startswith "172."`<br>`SrcIpAddr !startswith "192.168"` |
 | [Copilot - Plugin Enabled After Being Disabled](../content/microsoft-copilot-copilot-plugin-enabled-after-being-disabled-b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7-7fec45a8.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [Microsoft Copilot](../solutions/microsoft-copilot.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [MicrosoftCopilotActivityMonitoring](../content/microsoft-copilot-microsoftcopilotactivitymonitoring-4219cdf5.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MicrosoftCopilotActivityMonitoring](../content/github-only-microsoftcopilotactivitymonitoring-5169439d.md) |  |
 
 ## Selection Criteria Summary (3 criteria, 3 total references)
 

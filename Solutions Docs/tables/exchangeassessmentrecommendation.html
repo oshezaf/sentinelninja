@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Workloads</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Workloads</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✓ Yes</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/exchangeassessmentrecommendation">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/exchangeassessmentrecommendation">View Documentation</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Logs Ingestion API</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Logs Ingestion API</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -61,146 +61,146 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionArea</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The segment in which action is to be performed</td>
+  <td style="text-align:left">ActionArea</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The segment in which action is to be performed</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionAreaId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID generated for Action Area</td>
+  <td style="text-align:left">ActionAreaId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID generated for Action Area</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActiveDirectorySite</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ActiveDirectorySite</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">AffectedObjectName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of the affected object</td>
+  <td style="text-align:left">AffectedObjectName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the affected object</td>
 </tr>
 <tr>
-<td style="text-align: left;">AffectedObjectType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of object which is affected</td>
+  <td style="text-align:left">AffectedObjectType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of object which is affected</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssessmentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the assessment</td>
+  <td style="text-align:left">AssessmentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the assessment</td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The machine from which data is uploaded</td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The machine from which data is uploaded</td>
 </tr>
 <tr>
-<td style="text-align: left;">CustomData</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">CustomData</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">Description</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the recommendation</td>
+  <td style="text-align:left">Description</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Description of the recommendation</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExchangeAdminGroup</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ExchangeAdminGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ExchangeDAG</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ExchangeDAG</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ExchangeMailboxDatabase</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ExchangeMailboxDatabase</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ExchangeOrganization</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ExchangeOrganization</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ExchangePublicFolderDatabase</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ExchangePublicFolderDatabase</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">ExchangeServer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">ExchangeServer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">FocusArea</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Area to be focussed on</td>
+  <td style="text-align:left">FocusArea</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Area to be focussed on</td>
 </tr>
 <tr>
-<td style="text-align: left;">FocusAreaId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the Focus Area</td>
+  <td style="text-align:left">FocusAreaId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the Focus Area</td>
 </tr>
 <tr>
-<td style="text-align: left;">Recommendation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Generated recommendation</td>
+  <td style="text-align:left">Recommendation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Generated recommendation</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecommendationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">ID of the recommendation generated</td>
+  <td style="text-align:left">RecommendationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the recommendation generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecommendationResult</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Result of the recommendation generated</td>
+  <td style="text-align:left">RecommendationResult</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Result of the recommendation generated</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecommendationWeight</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Weight of recommendation</td>
+  <td style="text-align:left">RecommendationWeight</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Weight of recommendation</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">Technology</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left">Technology</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the record was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the record was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -208,6 +208,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

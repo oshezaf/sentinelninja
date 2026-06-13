@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/illumiosaas.html">IllumioSaaS</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,47 +47,90 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-office365.html"><code>office365</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">7</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-function.html"><code>function</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">7</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`function`](../logic-apps/builtin-function.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| PortBlockingFunction-runTrafficQuery | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/runTrafficQuery')]` |
-| PortBlockingFunction-fetchVisibilityOnlyWorkloadsFromTrafficResults | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/fetchVisibilityOnlyWorkloadsFromTrafficResults')]` |
-| PortBlockingFunction-createVirtualService | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createVirtualService')]` |
-| PortBlockingFunction-bindWorkloadsToVirtualService | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/bindWorkloadsToVirtualService')]` |
-| PortBlockingFunction-createAllowRuleForVirtualService | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createAllowRuleForVirtualService')]` |
-| PortBlockingFunction-changeWorkloadEnforcementState | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/changeWorkloadEnforcementState')]` |
-| PortBlockingFunction-createDenyRule | — | — | functionId=`[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createDenyRule')]` |
-
+<h4 id="function"><a href="../logic-apps/builtin-function.html"><code>function</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">PortBlockingFunction-runTrafficQuery</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/runTrafficQuery')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">PortBlockingFunction-fetchVisibilityOnlyWorkloadsFromTrafficResults</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/fetchVisibilityOnlyWorkloadsFromTrafficResults')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">PortBlockingFunction-createVirtualService</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createVirtualService')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">PortBlockingFunction-bindWorkloadsToVirtualService</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/bindWorkloadsToVirtualService')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">PortBlockingFunction-createAllowRuleForVirtualService</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createAllowRuleForVirtualService')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">PortBlockingFunction-changeWorkloadEnforcementState</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/changeWorkloadEnforcementState')]</code></td>
+</tr>
+<tr>
+  <td style="text-align:left">PortBlockingFunction-createDenyRule</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">—</td>
+  <td style="text-align:left">functionId=<code>[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.Web/sites/',parameters('Functionappname'), '/functions/createDenyRule')]</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -95,25 +138,25 @@
 <p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/IllumioSaaS/Playbooks/Illumio-Port-Blocking-Switch/readme.md">Illumio-Port-Blocking-Switch/readme.md</a></em></p>
 </blockquote>
 <h1 id="microsoft-sentinel-playbooks-for-illumio-integration">Microsoft Sentinel Playbooks for Illumio Integration</h1>
-<p>Playbooks are collections of procedures that can be run from Microsoft Sentinel.  </p>
+<p>Playbooks are collections of procedures that can be run from Microsoft Sentinel.</p>
 <hr />
 <h2 id="containment-switch-playbook">Containment Switch Playbook</h2>
 <p>The <strong>Containment Switch</strong> playbook is designed to help isolate workloads. It includes the following procedures:</p>
 <ol>
 <li><strong>Run an Explorer Query</strong><br />
-   Queries Illumio PCE for potentially blocked or unknown traffic for a given port-protocol combination over the last week.</li>
+Queries Illumio PCE for potentially blocked or unknown traffic for a given port-protocol combination over the last week.</li>
 <li><strong>Get a List of Visibility-Only Workloads</strong><br />
-   Parses the query response to identify workloads marked as visibility-only.</li>
+Parses the query response to identify workloads marked as visibility-only.</li>
 <li><strong>Create a Deny Rule</strong><br />
-   Creates and provisions a deny rule from all IPs to all workloads for the specified port-protocol combination.</li>
+Creates and provisions a deny rule from all IPs to all workloads for the specified port-protocol combination.</li>
 <li><strong>Create a Virtual Service</strong><br />
-   Creates and provisions a virtual service for the given port-protocol combination.</li>
+Creates and provisions a virtual service for the given port-protocol combination.</li>
 <li><strong>Create Workload Bindings</strong><br />
-   Binds workloads to the virtual service created in Step 4.</li>
+Binds workloads to the virtual service created in Step 4.</li>
 <li><strong>Create an Allow Rule</strong><br />
-   Creates and provisions an allow rule from workloads to the virtual service.</li>
+Creates and provisions an allow rule from workloads to the virtual service.</li>
 <li><strong>Change Enforcement State</strong><br />
-   Changes the enforcement state of visibility-only workloads to selective state.</li>
+Changes the enforcement state of visibility-only workloads to selective state.</li>
 </ol>
 <p>Each procedure is implemented as a function within an Azure Function App.</p>
 <hr />
@@ -131,20 +174,21 @@
   &quot;applyChanges&quot;: true
 }
 </code></pre>
-<p>Regarding "applyChanges":
+<p>Regarding &quot;applyChanges&quot;:
 If true, the playbook will create and provision changes (including workload enforcement changes).
 If false, it skips object creation/modification steps and only provides a summary of actions, but traffic query results and parsed workloads will still be available.</p>
 <h1 id="to-deploy-follow-the-below-link">To deploy, follow the below link</h1>
 <p>Deploy the function app first:
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FCustomConnector%2FIllumioSaaS_FunctionAppConnector%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FCustomConnector%2FIllumioSaaS_FunctionAppConnector%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <p>Deploy logic app next:
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FIllumio-Port-Blocking-Switch%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a></p>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Frefs%2Fheads%2Fmaster%2FSolutions%2FIllumioSaaS%2FPlaybooks%2FIllumio-Port-Blocking-Switch%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
 <p>User can modify the playbook name, function app name as per requirements.</p>
 <p>PCE fqdn, port, org id, api key and secret are needed for communicating with the pce.
 Once these are entered, click on next and follow steps to deploy.</p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/illumiosaas.html">Back to IllumioSaaS</a></p>
+
 </div>
 
 </body>

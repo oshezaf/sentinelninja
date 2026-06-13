@@ -23,7 +23,7 @@ Cloud audit events for various cloud platforms protected by the organization's M
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | ActionType | string | Type of activity that triggered the event, can be: Unknown, Create, Read, Update, Delete, Other |
 | AdditionalFields | dynamic | Additional information about the audit event |
 | City | string | City where the client IP address is geolocated |
@@ -36,7 +36,7 @@ Cloud audit events for various cloud platforms protected by the organization's M
 | OperationName | string | Audit event operation name as it appears in the record, usually includes both resource type and operation |
 | RawEventData | dynamic | Full raw event information from the data source in JSON format |
 | ReportId | string | Unique identifier for the event |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Date and time (UTC) when the record was generated |
 | Type | string | The name of the table |

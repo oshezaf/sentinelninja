@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">IT &amp; Management Tools, Network, Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">IT &amp; Management Tools, Network, Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/graphnotificationsactivitylogs">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/graphnotificationsactivitylogs">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -53,121 +53,121 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AccountType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The account type</td>
+  <td style="text-align:left">AccountType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The account type</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApplicationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The application id</td>
+  <td style="text-align:left">ApplicationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The application id</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContextId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier for the message.</td>
+  <td style="text-align:left">ContextId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the message.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier representing the request.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier representing the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DurationMs</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The duration of the request in milliseconds.</td>
+  <td style="text-align:left">DurationMs</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The duration of the request in milliseconds.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Location</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the region that served the request.</td>
+  <td style="text-align:left">Location</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the region that served the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LoggingLevel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The logging level for the request.</td>
+  <td style="text-align:left">LoggingLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The logging level for the request.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Message</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The details of the notification</td>
+  <td style="text-align:left">Message</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The details of the notification</td>
 </tr>
 <tr>
-<td style="text-align: left;">PublicationIds</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The publication ids of the messages</td>
+  <td style="text-align:left">PublicationIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The publication ids of the messages</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceIdentity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier for the message.</td>
+  <td style="text-align:left">ResourceIdentity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the message.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The HTTP response for the event.</td>
+  <td style="text-align:left">ResultDescription</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The HTTP response for the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultStatusCode</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The HTTP method of the event.</td>
+  <td style="text-align:left">ResultStatusCode</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The HTTP method of the event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SubscriptionIdentity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The subscription id for which notification is delivered</td>
+  <td style="text-align:left">SubscriptionIdentity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The subscription id for which notification is delivered</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the notification was published.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the notification was published.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">WebHeaders</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The webheaders for the request</td>
+  <td style="text-align:left">WebHeaders</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The webheaders for the request</td>
 </tr>
 <tr>
-<td style="text-align: left;">WorkloadNamespace</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The workload for which notification gets delivered</td>
+  <td style="text-align:left">WorkloadNamespace</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The workload for which notification gets delivered</td>
 </tr>
 <tr>
-<td style="text-align: left;">WorkloadResource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The details related to the resource</td>
+  <td style="text-align:left">WorkloadResource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The details related to the resource</td>
 </tr>
 </tbody>
 </table>
@@ -175,6 +175,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

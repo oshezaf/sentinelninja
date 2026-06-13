@@ -22,22 +22,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Workbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Workbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/cyberark-privilege-access-manager-pam-events.html">CyberArk Privilege Access Manager (PAM) Events</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/cyberark-privilege-access-manager-pam-events.html">CyberArk Privilege Access Manager (PAM) Events</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events/Workbooks/CyberArkEPV.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CyberArk%20Enterprise%20Password%20Vault%20%28EPV%29%20Events/Workbooks/CyberArkEPV.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -46,26 +46,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td style="text-align: left;"><code>DestinationUserPrivileges !contains "ConjurSync"</code><br><code>DestinationUserPrivileges !contains "PSM"</code><br><code>DestinationUserPrivileges !contains "PSMSessions"</code><br><code>DestinationUserPrivileges !contains "PVWAConfig"</code><br><code>DestinationUserPrivileges !contains "PVWAPrivateUserPrefs"</code><br><code>DestinationUserPrivileges !contains "PasswordManager"</code><br><code>DestinationUserPrivileges !contains "PasswordManagerShared"</code><br><code>DestinationUserPrivileges !contains "SharedAuth_Internal"</code><br><code>DestinationUserPrivileges !contains "VaultInternal"</code><br><code>DestinationUserPrivileges contains "ConjurSync"</code><br><code>DeviceAction contains "disable"</code><br><code>DeviceProduct == "Vault"</code><br><code>DeviceVendor == "Cyber-Ark"</code><br><code>OldFileID contains "Error"</code><br><code>OldFileID contains "Failure"</code><br><code>OldFileID contains "error"</code><br><code>SourceUserName !contains "PasswordManager"</code><br><code>SourceUserName contains "Sync_components"</code><br><code>SourceUserName contains "administrator"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td style="text-align:left"><code>DestinationUserPrivileges !contains &quot;ConjurSync&quot;</code><br><code>DestinationUserPrivileges !contains &quot;PSM&quot;</code><br><code>DestinationUserPrivileges !contains &quot;PSMSessions&quot;</code><br><code>DestinationUserPrivileges !contains &quot;PVWAConfig&quot;</code><br><code>DestinationUserPrivileges !contains &quot;PVWAPrivateUserPrefs&quot;</code><br><code>DestinationUserPrivileges !contains &quot;PasswordManager&quot;</code><br><code>DestinationUserPrivileges !contains &quot;PasswordManagerShared&quot;</code><br><code>DestinationUserPrivileges !contains &quot;SharedAuth_Internal&quot;</code><br><code>DestinationUserPrivileges !contains &quot;VaultInternal&quot;</code><br><code>DestinationUserPrivileges contains &quot;ConjurSync&quot;</code><br><code>DeviceAction contains &quot;disable&quot;</code><br><code>DeviceProduct == &quot;Vault&quot;</code><br><code>DeviceVendor == &quot;Cyber-Ark&quot;</code><br><code>OldFileID contains &quot;Error&quot;</code><br><code>OldFileID contains &quot;Failure&quot;</code><br><code>OldFileID contains &quot;error&quot;</code><br><code>SourceUserName !contains &quot;PasswordManager&quot;</code><br><code>SourceUserName contains &quot;Sync_components&quot;</code><br><code>SourceUserName contains &quot;administrator&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="workbooks.html">Back to Workbooks</a> · <a href="../solutions/cyberark-privilege-access-manager-pam-events.html">Back to CyberArk Privilege Access Manager (PAM) Events</a></p>
+
 </div>
 
 </body>

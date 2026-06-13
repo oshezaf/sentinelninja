@@ -23,22 +23,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Playbook</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/cybersixgill-actionable-alerts.html">Cybersixgill-Actionable-Alerts</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/cybersixgill-actionable-alerts.html">Cybersixgill-Actionable-Alerts</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/azuredeploy.json">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/azuredeploy.json">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -47,50 +47,91 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector / Action</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: center;">Connections</th>
-<th style="text-align: center;">Actions</th>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
-<td style="text-align: left;">Managed</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">3</td>
+  <td style="text-align:left"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">3</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
-<td style="text-align: left;">Built-in</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">2</td>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
 <details><summary>Action parameters (URLs, paths, function IDs)</summary>
 
-#### [`keyvault`](../logic-apps/managed-keyvault.md) (Managed)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Get_Cybersixgill_Client_ID | get | `/secrets/@{encodeURIComponent(parameters('Client ID key name'))}/value` | — |
-| Get_Cybersixgill_Client_Secret | get | `/secrets/@{encodeURIComponent(parameters('Client Secret key name'))}/value` | — |
-| Get_Cybersixgill_Organization_ID | get | `/secrets/@{encodeURIComponent(parameters('Organization ID key name'))}/value` | — |
-
-#### [`http`](../logic-apps/builtin-http.md) (Built-in)
-
-| Action | Method | Endpoint | Other |
-|:-------|:-------|:---------|:------|
-| Authenticate_Sixgill_API | POST | `https://api.cybersixgill.com/auth/token` | — |
-| Delete_Incident_from_Cybersixgill | DELETE | `https://api.cybersixgill.com/alerts/actionable_alert/@{body('Parse_JSON')?['id']}` | — |
-
+<h4 id="keyvault"><a href="../logic-apps/managed-keyvault.html"><code>keyvault</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Get_Cybersixgill_Client_ID</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent(parameters('Client ID key name'))}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Cybersixgill_Client_Secret</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent(parameters('Client Secret key name'))}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Get_Cybersixgill_Organization_ID</td>
+  <td style="text-align:left">get</td>
+  <td style="text-align:left"><code>/secrets/@{encodeURIComponent(parameters('Organization ID key name'))}/value</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Authenticate_Sixgill_API</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>https://api.cybersixgill.com/auth/token</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Delete_Incident_from_Cybersixgill</td>
+  <td style="text-align:left">DELETE</td>
+  <td style="text-align:left"><code>https://api.cybersixgill.com/alerts/actionable_alert/@{body('Parse_JSON')?['id']}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
 </details>
 
 <h2 id="additional-documentation">Additional Documentation</h2>
@@ -99,27 +140,29 @@
 </blockquote>
 <h1 id="deletecybersixgillalert">DeleteCybersixgillAlert</h1>
 <p>author: Loginsoft</p>
-<p>This playbook will delete Actionable alerts in Cybersixgill Portal. When incident is deleted in Microsoft Sentinel, playbook will run and delete Actionable alerts from Portal </p>
+<p>This playbook will delete Actionable alerts in Cybersixgill Portal. When incident is deleted in Microsoft Sentinel, playbook will run and delete Actionable alerts from Portal</p>
 <h1 id="prerequisites">Prerequisites</h1>
 <p>We will need the following data to do one time setup</p>
 <ol>
 <li>Cybersixgill Client ID (client_id)</li>
 <li>Cybersixgill Client Secret (client_secret)</li>
 </ol>
-<p>Client ID and Client Secret can be obtained from <a href="https://developer.cybersixgill.com/dashboard">Cybersixgill Developer Portal</a>
-* You can skip below step if you already have Client ID and Client Secret.
-* Visit <a href="https://developer.cybersixgill.com/dashboard">Cybersixgill Developer Portal</a>
-* Click on Create an application.
-* Enter Application name and brief description and optional Application image
-* All other fields can be left to default.
-* Once done click on Create the app.
-* Copy Client ID, Client Secret and Organization ID.</p>
+<p>Client ID and Client Secret can be obtained from <a href="https://developer.cybersixgill.com/dashboard">Cybersixgill Developer Portal</a></p>
+<ul>
+<li>You can skip below step if you already have Client ID and Client Secret.</li>
+<li>Visit <a href="https://developer.cybersixgill.com/dashboard">Cybersixgill Developer Portal</a></li>
+<li>Click on Create an application.</li>
+<li>Enter Application name and brief description and optional Application image</li>
+<li>All other fields can be left to default.</li>
+<li>Once done click on Create the app.</li>
+<li>Copy Client ID, Client Secret and Organization ID.</li>
+</ul>
 <h1 id="deployment-instructions">Deployment instructions</h1>
 <ol>
-<li>Deploy the playbook by clicking on "Deploy to Azure" button. This will take you to deploying an ARM Template wizard.</li>
+<li>Deploy the playbook by clicking on &quot;Deploy to Azure&quot; button. This will take you to deploying an ARM Template wizard.</li>
 </ol>
-<p><a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybersixgill-Actionable-Alerts%2FPlaybooks%2FDeleteCybersixgillAlert%2Fazuredeploy.json"><img alt="Deploy to Azure" src="https://aka.ms/deploytoazurebutton" /></a>
-<a href="https%3A%2F%2Fportal.azure.us%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybersixgill-Actionable-Alerts%2FPlaybooks%2FDeleteCybersixgillAlert%2Fazuredeploy.json"><img alt="Deploy to Azure Gov" src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" /></a></p>
+<p><a href="https%3A%2F%2Fportal.azure.com%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybersixgill-Actionable-Alerts%2FPlaybooks%2FDeleteCybersixgillAlert%2Fazuredeploy.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a>
+<a href="https%3A%2F%2Fportal.azure.us%2F%23create%2FMicrosoft.Template%2Furi%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FCybersixgill-Actionable-Alerts%2FPlaybooks%2FDeleteCybersixgillAlert%2Fazuredeploy.json"><img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.png" alt="Deploy to Azure Gov" /></a></p>
 <ol start="2">
 <li>Fill in the required parameters:<ul>
 <li>Playbook Name: Enter the playbook name here (Ex: DeleteCybersixgillAlert)</li>
@@ -132,20 +175,24 @@
 </ol>
 <h1 id="post-deployment">Post-deployment</h1>
 <h4 id="a-authorize-connections">a. Authorize connections (Perform this action if needed)</h4>
-<p>Once deployment is complete, you will need to authorize each connection.
-1.  Click the Microsoft Sentinel connection resource
-2.  Click edit API connection
-3.  Click Authorize
-4.  Sign in
-5.  Click Save</p>
+<p>Once deployment is complete, you will need to authorize each connection.</p>
+<ol>
+<li>Click the Microsoft Sentinel connection resource</li>
+<li>Click edit API connection</li>
+<li>Click Authorize</li>
+<li>Sign in</li>
+<li>Click Save</li>
+</ol>
 <h4 id="b-configurations-in-sentinel">b. Configurations in Sentinel</h4>
 <ol>
-<li>Create new automation rule, ex: CybersixgillAlertDeleteAutomationRule
-   * Trigger = Incident is Updated
-   * Condition = -
+<li>Create new automation rule, ex: CybersixgillAlertDeleteAutomationRule<ul>
+<li>Trigger = Incident is Updated</li>
+<li>Condition = -
 <em>Automation rule example</em>
-<img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleDark.PNG" />
-<img alt="" src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleLight.PNG" /></li>
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleDark.PNG" alt="" />
+<img src="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cybersixgill-Actionable-Alerts/Playbooks/DeleteCybersixgillAlert/images/AutomationRuleExampleLight.PNG" alt="" /></li>
+</ul>
+</li>
 </ol>
 <h4 id="c-assign-playbook-microsoft-sentinel-responder-role">c. Assign Playbook Microsoft Sentinel Responder Role</h4>
 <ol>
@@ -165,7 +212,7 @@
 <li>Select the Keyvault resource where you have stored the secret</li>
 <li>Click on Access policies Blade</li>
 <li>Click on Create</li>
-<li>Under Secret permissions column , Select Get , List from "Secret Management Operations"</li>
+<li>Under Secret permissions column , Select Get , List from &quot;Secret Management Operations&quot;</li>
 <li>Click next to go to Principal tab and choose your deployed playbook name</li>
 <li>Click Next leave application tab as it is .</li>
 <li>Click Review and create</li>
@@ -174,6 +221,7 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/cybersixgill-actionable-alerts.html">Back to Cybersixgill-Actionable-Alerts</a></p>
+
 </div>
 
 </body>

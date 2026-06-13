@@ -18,39 +18,42 @@
 <h1 id="deprecated-claroty-via-legacy-agent">🚫 🔍 [Deprecated] Claroty via Legacy Agent</h1>
 <blockquote>
 <p>🚫 <strong>Deprecated:</strong> This connector has been deprecated and may be removed in future versions.</p>
+</blockquote>
+<blockquote>
 <p>🔍 <strong>Discovered:</strong> This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Connector ID</strong></td>
-<td style="text-align: left;"><code>Claroty</code></td>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>Claroty</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">Claroty</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Claroty</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Used in Solutions</strong></td>
-<td style="text-align: left;"><a href="../solutions/claroty.html">Claroty</a></td>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/claroty.html">Claroty</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Collection Method</strong></td>
-<td style="text-align: left;"><a href="../methods/ama.html">AMA</a></td>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ama.html">AMA</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Connector Definition Files</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Data%20Connectors/Connector_Claroty_CEF.json">Connector_Claroty_CEF.json</a></td>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Claroty/Data%20Connectors/Connector_Claroty_CEF.json">Connector_Claroty_CEF.json</a></td>
 </tr>
 </tbody>
 </table>
@@ -62,20 +65,20 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td style="text-align: left;"><code>DeviceVendor == "Claroty"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td style="text-align:left"><code>DeviceVendor == &quot;Claroty&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
@@ -83,12 +86,16 @@
 <p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
 </blockquote>
 <h2 id="permissions">Permissions</h2>
-<p><strong>Resource Provider Permissions:</strong>
-- <strong>Workspace</strong> (Workspace): read and write permissions are required.
-- <strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</p>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<blockquote>
 <p><strong>NOTE:</strong> This data connector depends on a parser based on a Kusto Function to work as expected <a href="https://aka.ms/sentinel-claroty-parser"><strong>ClarotyEvent</strong></a> which is deployed with the Microsoft Sentinel Solution.</p>
 </blockquote>
 <p><strong>1. Linux Syslog agent configuration</strong></p>
@@ -102,29 +109,27 @@
 <p>Install the Microsoft Monitoring Agent on your Linux machine and configure the machine to listen on the necessary port and forward messages to your Microsoft Sentinel workspace. The CEF collector collects CEF messages on port 514 TCP.</p>
 <blockquote>
 <ol>
-<li>
-<p>Make sure that you have Python on your machine using the following command: python -version.</p>
-</li>
-<li>
-<p>You must have elevated permissions (sudo) on your machine.
-  - <strong>Run the following command to install and apply the CEF collector:</strong>: <code>sudo wget -O cef_installer.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_installer.py&amp;&amp;sudo python cef_installer.py {0} {1}</code>
-<strong>2.  Configure Claroty to send logs using CEF</strong></p>
-</li>
+<li>Make sure that you have Python on your machine using the following command: python -version.</li>
 </ol>
 </blockquote>
+<blockquote>
+<ol start="2">
+<li>You must have elevated permissions (sudo) on your machine.</li>
+</ol>
+</blockquote>
+<ul>
+<li><strong>Run the following command to install and apply the CEF collector:</strong>: <code>sudo wget -O cef_installer.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_installer.py&amp;&amp;sudo python cef_installer.py {0} {1}</code>
+<strong>2.  Configure Claroty to send logs using CEF</strong></li>
+</ul>
 <p>Configure log forwarding using CEF:</p>
 <ol>
-<li>
-<p>Navigate to the <strong>Syslog</strong> section of the Configuration menu.</p>
+<li><p>Navigate to the <strong>Syslog</strong> section of the Configuration menu.</p>
 </li>
-<li>
-<p>Select <strong>+Add</strong>.</p>
+<li><p>Select <strong>+Add</strong>.</p>
 </li>
-<li>
-<p>In the <strong>Add New Syslog Dialog</strong> specify Remote Server <strong>IP</strong>, <strong>Port</strong>, <strong>Protocol</strong> and select <strong>Message Format</strong> - <strong>CEF</strong>.</p>
+<li><p>In the <strong>Add New Syslog Dialog</strong> specify Remote Server <strong>IP</strong>, <strong>Port</strong>, <strong>Protocol</strong> and select <strong>Message Format</strong> - <strong>CEF</strong>.</p>
 </li>
-<li>
-<p>Choose <strong>Save</strong> to exit the <strong>Add Syslog dialog</strong>.</p>
+<li><p>Choose <strong>Save</strong> to exit the <strong>Add Syslog dialog</strong>.</p>
 </li>
 </ol>
 <p><strong>3. Validate connection</strong></p>
@@ -136,21 +141,24 @@
 <p>If the logs are not received, run the following connectivity validation script:</p>
 <blockquote>
 <ol>
-<li>
-<p>Make sure that you have Python on your machine using the following command: python -version</p>
-</li>
-<li>
-<p>You must have elevated permissions (sudo) on your machine
-- <strong>Run the following command to validate your connectivity:</strong>: <code>sudo wget -O cef_troubleshoot.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_troubleshoot.py&amp;&amp;sudo python cef_troubleshoot.py  {0}</code></p>
-</li>
+<li>Make sure that you have Python on your machine using the following command: python -version</li>
 </ol>
 </blockquote>
+<blockquote>
+<ol start="2">
+<li>You must have elevated permissions (sudo) on your machine</li>
+</ol>
+</blockquote>
+<ul>
+<li><strong>Run the following command to validate your connectivity:</strong>: <code>sudo wget -O cef_troubleshoot.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_troubleshoot.py&amp;&amp;sudo python cef_troubleshoot.py  {0}</code></li>
+</ul>
 <p><strong>4. Secure your machine</strong></p>
 <p>Make sure to configure the machine's security according to your organization's security policy</p>
 <p><a href="https://aka.ms/SecureCEF">Learn more &gt;</a></p>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
 </div>
 
 </body>

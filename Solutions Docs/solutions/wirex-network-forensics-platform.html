@@ -17,62 +17,63 @@
 <div class="doc-content">
 <h1 id="wirex-network-forensics-platform-for-microsoft-sentinel">WireX Network Forensics Platform for Microsoft Sentinel</h1>
 <p><em>Solution: WireX Network Forensics Platform</em></p>
-<p><img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/wirex-systems_logo.svg" alt="WireX Network Forensics Platform Logo" width="75" height="75"></p>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/wirex-systems_logo.svg" alt="WireX Network Forensics Platform Logo" width="75" height="75">
+
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
 <hr />
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Publisher</strong></td>
-<td style="text-align: left;">WireX Systems</td>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">WireX Systems</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Support Tier</strong></td>
-<td style="text-align: left;">Partner</td>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Support Link</strong></td>
-<td style="text-align: left;"><a href="https://wirexsystems.com/contact-us/">https://wirexsystems.com/contact-us/</a></td>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://wirexsystems.com/contact-us/">https://wirexsystems.com/contact-us/</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Categories</strong></td>
-<td style="text-align: left;">Security - Network,Security - Automation (SOAR)</td>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Network,Security - Automation (SOAR)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Version</strong></td>
-<td style="text-align: left;">3.0.1</td>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.1</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Author</strong></td>
-<td style="text-align: left;">WireX Systems - info@wirexsystems.com</td>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">WireX Systems - info@wirexsystems.com</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>First Published</strong></td>
-<td style="text-align: left;">2022-05-06</td>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2022-05-06</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution Folder</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform">WireX Network Forensics Platform</a></td>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/WireX%20Network%20Forensics%20Platform">WireX Network Forensics Platform</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Marketplace</strong></td>
-<td style="text-align: left;"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wirexsystems1584682625009.wirex_network_forensics_platform_mss">Azure Marketplace</a> · Popularity: 🟡 Low (48%)</td>
+  <td style="text-align:left"><strong>Marketplace</strong></td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/wirexsystems1584682625009.wirex_network_forensics_platform_mss">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Pre-requisites</strong></td>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+  <td style="text-align:left"><strong>Pre-requisites</strong></td>
+  <td style="text-align:left"><a href="common-event-format.html">Common Event Format</a></td>
 </tr>
 </tbody>
 </table>
 <p>The <a href="https://wirexsystems.com/">WireX Systems</a> solution allows custom dashboards and workflows during forensic investigation integrated with Microsoft Sentinel.</p>
-<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation. </p>
+<p>This solution is dependent on the Common Event Format solution containing the CEF via AMA connector to collect the logs. The CEF solution will be installed as part of this solution installation.</p>
 <p><strong>NOTE:</strong> Microsoft recommends installation of CEF via AMA Connector. Legacy connector uses the Log Analytics agent which is about to be deprecated by <strong>Aug 31, 2024,</strong> and thus should only be installed where AMA is not supported. Using MMA and AMA on same machine can cause log duplication and extra ingestion cost <a href="https://learn.microsoft.com/en-us/azure/sentinel/ama-migrate">more details</a>.</p>
 <h2 id="contents">Contents</h2>
 <ul>
@@ -85,12 +86,12 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Solution</th>
+  <th style="text-align:left">Solution</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="common-event-format.html">Common Event Format</a></td>
+  <td style="text-align:left"><a href="common-event-format.html">Common Event Format</a></td>
 </tr>
 </tbody>
 </table>
@@ -110,16 +111,16 @@
 <table>
 <thead>
 <tr>
-<th>Table</th>
-<th>Used By Connectors</th>
-<th>Used By Content</th>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
-<td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/wirex-systems-nfpama.html">[Deprecated] WireX Network Forensics Platform via AMA</a>, <a href="../connectors/wirex-systems-nfp.html">[Deprecated] WireX Network Forensics Platform via Legacy Agent</a></td>
-<td>-</td>
+  <td><a href="../tables/commonsecuritylog.html"><code>CommonSecurityLog</code></a></td>
+  <td><a href="../connectors/cef.html">Common Event Format (CEF)</a> (dependency), <a href="../connectors/cefama.html">Common Event Format (CEF) via AMA</a> (dependency), <a href="../connectors/wirex-systems-nfpama.html">[Deprecated] WireX Network Forensics Platform via AMA</a>, <a href="../connectors/wirex-systems-nfp.html">[Deprecated] WireX Network Forensics Platform via Legacy Agent</a></td>
+  <td>-</td>
 </tr>
 </tbody>
 </table>
@@ -127,27 +128,28 @@
 <table>
 <thead>
 <tr>
-<th><strong>Version</strong></th>
-<th><strong>Date Modified (DD-MM-YYYY)</strong></th>
-<th><strong>Change History</strong></th>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>3.0.1</td>
-<td>27-06-2024</td>
-<td>Deprecating data connectors</td>
+  <td>3.0.1</td>
+  <td>27-06-2024</td>
+  <td>Deprecating data connectors</td>
 </tr>
 <tr>
-<td>3.0.0</td>
-<td>05-09-2023</td>
-<td>Addition of new WireX Network Forensics Platform <strong>Data Connector</strong></td>
+  <td>3.0.0</td>
+  <td>05-09-2023</td>
+  <td>Addition of new WireX Network Forensics Platform <strong>Data Connector</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
 </div>
 
 </body>

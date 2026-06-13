@@ -25,30 +25,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/securityiotrawevent">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -57,86 +57,86 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">AgentVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the agent.</td>
+  <td style="text-align:left">AgentVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AssociatedResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The associated Azure resource ID.</td>
+  <td style="text-align:left">AssociatedResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The associated Azure resource ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AzureSubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Azure subscription ID.</td>
+  <td style="text-align:left">AzureSubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Azure subscription ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The device ID.</td>
+  <td style="text-align:left">DeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The device ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EventDetails</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Additional raw event details.</td>
+  <td style="text-align:left">EventDetails</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Additional raw event details.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IoTRawEventId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The internal raw event ID.</td>
+  <td style="text-align:left">IoTRawEventId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The internal raw event ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsEmpty</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Property identifying if the raw event contains data.</td>
+  <td style="text-align:left">IsEmpty</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Property identifying if the raw event contains data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RawEventCategory</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The category of the raw event - periodic or triggered.</td>
+  <td style="text-align:left">RawEventCategory</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The category of the raw event - periodic or triggered.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RawEventName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the raw event.</td>
+  <td style="text-align:left">RawEventName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the raw event.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RawEventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of the raw event - security, operational or diagnostic.</td>
+  <td style="text-align:left">RawEventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the raw event - security, operational or diagnostic.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the raw event was generated.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the raw event was generated.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeStamp</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the raw event was first detected.</td>
+  <td style="text-align:left">TimeStamp</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the raw event was first detected.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 </tbody>
 </table>
@@ -146,36 +146,37 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Parser</th>
-<th style="text-align: left;">Schema</th>
-<th style="text-align: left;">Product</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Parser</th>
+  <th style="text-align:left">Schema</th>
+  <th style="text-align:left">Product</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimauthenticationmd4iot.html">ASimAuthenticationMD4IoT</a></td>
-<td style="text-align: left;">Authentication</td>
-<td style="text-align: left;">Microsoft Defender for IoT</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../asim/asimauthenticationmd4iot.html">ASimAuthenticationMD4IoT</a></td>
+  <td style="text-align:left">Authentication</td>
+  <td style="text-align:left">Microsoft Defender for IoT</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimnetworksessionmd4iotagent.html">ASimNetworkSessionMD4IoTAgent</a></td>
-<td style="text-align: left;">NetworkSession</td>
-<td style="text-align: left;">Microsoft Defender for IoT</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../asim/asimnetworksessionmd4iotagent.html">ASimNetworkSessionMD4IoTAgent</a></td>
+  <td style="text-align:left">NetworkSession</td>
+  <td style="text-align:left">Microsoft Defender for IoT</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../asim/asimprocesseventmd4iot.html">ASimProcessEventMD4IoT</a></td>
-<td style="text-align: left;">ProcessEvent</td>
-<td style="text-align: left;">Microsoft Defender for IoT</td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../asim/asimprocesseventmd4iot.html">ASimProcessEventMD4IoT</a></td>
+  <td style="text-align:left">ProcessEvent</td>
+  <td style="text-align:left">Microsoft Defender for IoT</td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

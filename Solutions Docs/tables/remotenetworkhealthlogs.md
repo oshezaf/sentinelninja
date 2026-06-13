@@ -23,7 +23,7 @@ Reference for RemoteNetworkHealthLogs table in Azure Monitor Logs.
 | Column Name | Type | Description |
 |:------------|:-----|:------------|
 | _BilledSize | real | The record size in bytes |
-| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account |
+| _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account |
 | BgpRoutesAdvertisedCount | int | Count of BGP routes advertised through tunnel. |
 | CreatedDateTime | datetime | The date and time (UTC) that the event was generated. |
 | Description | string | Description and summary of the event. |
@@ -33,7 +33,7 @@ Reference for RemoteNetworkHealthLogs table in Azure Monitor Logs.
 | RemoteNetworkId | string | A unique identifier for each remoteNetwork site. |
 | SentBytes | long | The number of bytes sent from the source to the destination for the connection or session. |
 | SourceIp | string | The public IP address. |
-| SourceSystem | string | The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics |
+| SourceSystem | string | The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics |
 | Status | string | Remote network status. Possible values are: tunnelDisconnected, tunnelConnected, bgpDisconnected, bgpConnected, remoteNetworkAlive, unknownFutureValue, packetDropped. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |

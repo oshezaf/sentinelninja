@@ -18,6 +18,7 @@
 | **Author** | Semperis |
 | **First Published** | 2021-10-18 |
 | **Solution Folder** | [Semperis Directory Services Protector](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Semperis%20Directory%20Services%20Protector) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/semperis.semperisdsp) · Rating: ★★★★★ 4.9/5 (25 ratings) · Popularity: 🟢 High (81%) |
 
 The [Semperis Directory Services Protector](https://www.semperis.com/ds-protector/) solution provides the capability to ingest Windows event logs (i.e., Indicators of Exposure and Indicators of Compromise) into Microsoft Sentinel.
 

@@ -25,34 +25,34 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Audit, Security</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Audit, Security</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Supports Transformations</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
+  <td style="text-align:left"><strong>Supports Transformations</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/azure-monitor/logs/tables-feature-support">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Lake-Only Ingestion</strong></td>
-<td style="text-align: left;">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
+  <td style="text-align:left"><strong>Lake-Only Ingestion</strong></td>
+  <td style="text-align:left">✓ Yes (<a href="https://learn.microsoft.com/azure/sentinel/data-connectors-reference">source</a>)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftpurviewinformationprotection">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/microsoftpurviewinformationprotection">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -68,411 +68,411 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionSource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The source of the label action.</td>
+  <td style="text-align:left">ActionSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The source of the label action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ActionSourceDetail</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">More details about the source of the label action.</td>
+  <td style="text-align:left">ActionSourceDetail</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">More details about the source of the label action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AppAccessContext</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The application context for the user or service principal that performed the action.</td>
+  <td style="text-align:left">AppAccessContext</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The application context for the user or service principal that performed the action.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Application</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The application that where the activity happened.</td>
+  <td style="text-align:left">Application</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The application that where the activity happened.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ApplicationMode</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The label application mode, how the label was applied.</td>
+  <td style="text-align:left">ApplicationMode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The label application mode, how the label was applied.</td>
 </tr>
 <tr>
-<td style="text-align: left;">AutoSensitivityLabelPolicyInfo</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Auto Sensitivity Label Policy Info</td>
+  <td style="text-align:left">AutoSensitivityLabelPolicyInfo</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Auto Sensitivity Label Policy Info</td>
 </tr>
 <tr>
-<td style="text-align: left;">ClientIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.</td>
+  <td style="text-align:left">ClientIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Common</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Azure Information Protection - common event data.</td>
+  <td style="text-align:left">Common</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Azure Information Protection - common event data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ConditionMatch</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The condition match that triggered the auto labeling.</td>
+  <td style="text-align:left">ConditionMatch</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The condition match that triggered the auto labeling.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ContentType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Content type.</td>
+  <td style="text-align:left">ContentType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Content type.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CorrelationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Correlation ID.</td>
+  <td style="text-align:left">CorrelationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Correlation ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CurrentProtectionType</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Current protection event information.</td>
+  <td style="text-align:left">CurrentProtectionType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Current protection event information.</td>
 </tr>
 <tr>
-<td style="text-align: left;">CurrentProtectionTypeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of protection applied.</td>
+  <td style="text-align:left">CurrentProtectionTypeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of protection applied.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DataState</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Azure Information Protection - data state.</td>
+  <td style="text-align:left">DataState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure Information Protection - data state.</td>
 </tr>
 <tr>
-<td style="text-align: left;">DeviceName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The device on which the activity happened.</td>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The device on which the activity happened.</td>
 </tr>
 <tr>
-<td style="text-align: left;">EmailInfo</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The information required when the internalTarget is an email.</td>
+  <td style="text-align:left">EmailInfo</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The information required when the internalTarget is an email.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExchangeMetaData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Exchange auto labeling metadata.</td>
+  <td style="text-align:left">ExchangeMetaData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Exchange auto labeling metadata.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutionRuleId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The ID of the rule that was executed.</td>
+  <td style="text-align:left">ExecutionRuleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the rule that was executed.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutionRuleName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the rule that was executed.</td>
+  <td style="text-align:left">ExecutionRuleName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the rule that was executed.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ExecutionRuleVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The version of the rule that was executed.</td>
+  <td style="text-align:left">ExecutionRuleVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The version of the rule that was executed.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Id</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of an audit record.</td>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of an audit record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IrmContentId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The unique ID used for identifying the encrypted document after the operation is complete.</td>
+  <td style="text-align:left">IrmContentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique ID used for identifying the encrypted document after the operation is complete.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsViewableByExternalUsers</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Is viewable by external users.</td>
+  <td style="text-align:left">IsViewableByExternalUsers</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Is viewable by external users.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ItemCreationTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the item was created.</td>
+  <td style="text-align:left">ItemCreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the item was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ItemLastModifiedTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the item was last modified.</td>
+  <td style="text-align:left">ItemLastModifiedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the item was last modified.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ItemName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The item name.</td>
+  <td style="text-align:left">ItemName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The item name.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ItemSize</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The item size.</td>
+  <td style="text-align:left">ItemSize</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The item size.</td>
 </tr>
 <tr>
-<td style="text-align: left;">JustificationText</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The justification to be provided, when configured by the admin in the sensitivity label policy, only when the sensitivity label is downgraded or removed by the user.</td>
+  <td style="text-align:left">JustificationText</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The justification to be provided, when configured by the admin in the sensitivity label policy, only when the sensitivity label is downgraded or removed by the user.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LabelAction</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The action applied by the label.</td>
+  <td style="text-align:left">LabelAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The action applied by the label.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LabelAppliedDateTime</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time the label was applied.</td>
+  <td style="text-align:left">LabelAppliedDateTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time the label was applied.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LabelEventType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The label operation.</td>
+  <td style="text-align:left">LabelEventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The label operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LabelName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The label name applied to the item.</td>
+  <td style="text-align:left">LabelName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The label name applied to the item.</td>
 </tr>
 <tr>
-<td style="text-align: left;">LabelVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The label version applied by the auto labeling policy.</td>
+  <td style="text-align:left">LabelVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The label version applied by the auto labeling policy.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MachineName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The machine name.</td>
+  <td style="text-align:left">MachineName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The machine name.</td>
 </tr>
 <tr>
-<td style="text-align: left;">MgtRuleId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Management rule ID.</td>
+  <td style="text-align:left">MgtRuleId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Management rule ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ObjectId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.</td>
+  <td style="text-align:left">ObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OldSensitivityLabelId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier of the sensitivity label previously applied to the document before the operation to change/remove the label was triggered.</td>
+  <td style="text-align:left">OldSensitivityLabelId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier of the sensitivity label previously applied to the document before the operation to change/remove the label was triggered.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OldSensitivityLabelOwnerEmail</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The email address of the owner of the old sensitivity label.</td>
+  <td style="text-align:left">OldSensitivityLabelOwnerEmail</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The email address of the owner of the old sensitivity label.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Operation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the user or admin activity.</td>
+  <td style="text-align:left">Operation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the user or admin activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OrganizationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The GUID for your organization's Office 365 tenant. This value will always be the same for your organization, regardless of the Office 365 service in which it occurs.</td>
+  <td style="text-align:left">OrganizationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GUID for your organization's Office 365 tenant. This value will always be the same for your organization, regardless of the Office 365 service in which it occurs.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OverriddenActions</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Actions that were overridden by the rule actions.</td>
+  <td style="text-align:left">OverriddenActions</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Actions that were overridden by the rule actions.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OverRideReason</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The reason the sensitivity label was overridden.</td>
+  <td style="text-align:left">OverRideReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The reason the sensitivity label was overridden.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OverRideType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Override type.</td>
+  <td style="text-align:left">OverRideType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Override type.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Platform</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The platform on which the activity happened.</td>
+  <td style="text-align:left">Platform</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The platform on which the activity happened.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PolicyId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Policy ID.</td>
+  <td style="text-align:left">PolicyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Policy ID.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PolicyName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Policy name.</td>
+  <td style="text-align:left">PolicyName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Policy name.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PolicyVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Policy version.</td>
+  <td style="text-align:left">PolicyVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Policy version.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PreviousProtectionType</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Previous protection event information.</td>
+  <td style="text-align:left">PreviousProtectionType</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Previous protection event information.</td>
 </tr>
 <tr>
-<td style="text-align: left;">PreviousProtectionTypeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Previous protection type.</td>
+  <td style="text-align:left">PreviousProtectionTypeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Previous protection type.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProtectionEventData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Azure Information Protection - protection event data.</td>
+  <td style="text-align:left">ProtectionEventData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Azure Information Protection - protection event data.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ProtectionEventTypeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Protection event type name.</td>
+  <td style="text-align:left">ProtectionEventTypeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Protection event type name.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Receivers</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The email addresses of the receivers.</td>
+  <td style="text-align:left">Receivers</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The email addresses of the receivers.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecordType</td>
-<td style="text-align: left;">int</td>
-<td style="text-align: left;">The type of operation indicated by the record.</td>
+  <td style="text-align:left">RecordType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The type of operation indicated by the record.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RecordTypeName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The record type name.</td>
+  <td style="text-align:left">RecordTypeName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The record type name.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResultStatus</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceeded, or Failed. For Exchange admin activity, the value is either True or False.</td>
+  <td style="text-align:left">ResultStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether the action (specified in the Operation property) was successful or not. Possible values are Succeeded, PartiallySucceeded, or Failed. For Exchange admin activity, the value is either True or False.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleActions</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Actions defined by the rules.</td>
+  <td style="text-align:left">RuleActions</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Actions defined by the rules.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RuleMode</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The current mode of the rule.</td>
+  <td style="text-align:left">RuleMode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The current mode of the rule.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Scope</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Was this event created by a hosted O365 service or an on-premises server.</td>
+  <td style="text-align:left">Scope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Was this event created by a hosted O365 service or an on-premises server.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ScopedLocationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The address that triggered the policy match.</td>
+  <td style="text-align:left">ScopedLocationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The address that triggered the policy match.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sender</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The email address of the sender.</td>
+  <td style="text-align:left">Sender</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The email address of the sender.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitiveInfoDetectionIsIncluded</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">Determines if sensitive info detection is included.</td>
+  <td style="text-align:left">SensitiveInfoDetectionIsIncluded</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Determines if sensitive info detection is included.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitiveInfoTypeData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Azure Information Protection - sensitive information types.</td>
+  <td style="text-align:left">SensitiveInfoTypeData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Azure Information Protection - sensitive information types.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitivityLabelEventFailureData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Sensitivity Label Event Failure Data</td>
+  <td style="text-align:left">SensitivityLabelEventFailureData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Sensitivity Label Event Failure Data</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitivityLabelId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier for the sensitivity label recommended, as per the policy that was matched based on the contents of the document.</td>
+  <td style="text-align:left">SensitivityLabelId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the sensitivity label recommended, as per the policy that was matched based on the contents of the document.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitivityLabelOwnerEmail</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The email address of the owner of the sensitivity label.</td>
+  <td style="text-align:left">SensitivityLabelOwnerEmail</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The email address of the owner of the sensitivity label.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SensitivityLabelPolicyId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The identifier for the sensitivity labeling policy that was matched based on the content of the document.</td>
+  <td style="text-align:left">SensitivityLabelPolicyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the sensitivity labeling policy that was matched based on the content of the document.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Severity</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The severity of the auto label policy match.</td>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The severity of the auto label policy match.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SharePointMetaData</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">SharePoint auto labeling metadata.</td>
+  <td style="text-align:left">SharePointMetaData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">SharePoint auto labeling metadata.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">TargetLocation</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The location of the document with respect to the user' device.</td>
+  <td style="text-align:left">TargetLocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The location of the document with respect to the user' device.</td>
 </tr>
 <tr>
-<td style="text-align: left;">TenantId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Log Analytics workspace ID</td>
+  <td style="text-align:left">TenantId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Log Analytics workspace ID</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">The date and time when the user performed the activity.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time when the user performed the activity.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged.</td>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserKey</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">An alternative ID for the user identified in the UserId property. This property is populated with the passport unique ID (PUID) for events performed by users in SharePoint, OneDrive for Business, and Exchange.</td>
+  <td style="text-align:left">UserKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An alternative ID for the user identified in the UserId property. This property is populated with the passport unique ID (PUID) for events performed by users in SharePoint, OneDrive for Business, and Exchange.</td>
 </tr>
 <tr>
-<td style="text-align: left;">UserType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of user that performed the operation.</td>
+  <td style="text-align:left">UserType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of user that performed the operation.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Workload</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The Office 365 service where the activity occurred.</td>
+  <td style="text-align:left">Workload</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Office 365 service where the activity occurred.</td>
 </tr>
 <tr>
-<td style="text-align: left;">WorkLoadItemId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The workload item id.</td>
+  <td style="text-align:left">WorkLoadItemId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The workload item id.</td>
 </tr>
 </tbody>
 </table>
@@ -489,43 +489,43 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/microsoftpurviewinformationprotection.html">Microsoft Purview Information Protection</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/microsoftpurviewinformationprotection.html">Microsoft Purview Information Protection</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (3)</h2>
-<h3 id="workbooks">Workbooks (3)</h3>
-<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>LabelName !in "General"</code></p>
+<h2 id="content-items-using-this-table">Content Items Using This Table (4)</h2>
+<h3 id="workbooks">Workbooks (4)</h3>
+<p><strong>In solution <a href="../solutions/dpdp-compliance.html">DPDP Compliance</a>:</strong> <code>LabelName !in &quot;General&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
+  <td style="text-align:left"><a href="../content/dpdp-compliance-dpdpcompliance-18571e87.html">DPDPCompliance</a></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>LabelName !in "General"</code></p>
+<p><strong>In solution <a href="../solutions/gdpr-compliance-&amp;-data-security.html">GDPR Compliance &amp; Data Security</a>:</strong> <code>LabelName !in &quot;General&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
+  <td style="text-align:left"><a href="../content/gdpr-compliance-&amp;-data-security-gdprcomplianceanddatasecurity-a0958a9a.html">GDPRComplianceAndDataSecurity</a></td>
 </tr>
 </tbody>
 </table>
@@ -533,14 +533,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong> <code>Operation == &quot;SensitivityLabelApplied&quot;</code></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftpurviewinformationprotection-87c9682e.html">MicrosoftPurviewInformationProtection</a></td>
 </tr>
 </tbody>
 </table>
@@ -549,30 +562,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>LabelName !in "General"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>LabelName !in &quot;General&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>2</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
@@ -580,28 +593,29 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>!= General</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>2</strong></td>
+  <td style="text-align:left"><code>!= General</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">2</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>2</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {

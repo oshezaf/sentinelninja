@@ -23,50 +23,50 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Type</strong></td>
-<td style="text-align: left;">Analytic Rule</td>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Analytic Rule</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Solution</strong></td>
-<td style="text-align: left;"><a href="../solutions/digital-guardian-data-loss-prevention.html">Digital Guardian Data Loss Prevention</a></td>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/digital-guardian-data-loss-prevention.html">Digital Guardian Data Loss Prevention</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>ID</strong></td>
-<td style="text-align: left;"><code>f7b6ddef-c1e9-46f0-8539-dbba7fb8a5b8</code></td>
+  <td style="text-align:left"><strong>ID</strong></td>
+  <td style="text-align:left"><code>f7b6ddef-c1e9-46f0-8539-dbba7fb8a5b8</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Severity</strong></td>
-<td style="text-align: left;">High</td>
+  <td style="text-align:left"><strong>Severity</strong></td>
+  <td style="text-align:left">High</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Status</strong></td>
-<td style="text-align: left;">Available</td>
+  <td style="text-align:left"><strong>Status</strong></td>
+  <td style="text-align:left">Available</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Kind</strong></td>
-<td style="text-align: left;">Scheduled</td>
+  <td style="text-align:left"><strong>Kind</strong></td>
+  <td style="text-align:left">Scheduled</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Tactics</strong></td>
-<td style="text-align: left;">Exfiltration</td>
+  <td style="text-align:left"><strong>Tactics</strong></td>
+  <td style="text-align:left">Exfiltration</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Techniques</strong></td>
-<td style="text-align: left;">T1048</td>
+  <td style="text-align:left"><strong>Techniques</strong></td>
+  <td style="text-align:left">T1048</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Required Connectors</strong></td>
-<td style="text-align: left;"><a href="../connectors/syslogama.html">SyslogAma</a></td>
+  <td style="text-align:left"><strong>Required Connectors</strong></td>
+  <td style="text-align:left"><a href="../connectors/syslogama.html">SyslogAma</a></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Source</strong></td>
-<td style="text-align: left;"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention/Analytic%20Rules/DigitalGuardianExfiltrationToFileShareServices.yaml">View on GitHub</a></td>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Guardian%20Data%20Loss%20Prevention/Analytic%20Rules/DigitalGuardianExfiltrationToFileShareServices.yaml">View on GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -75,26 +75,27 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Table</th>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Transformations</th>
-<th style="text-align: center;">Ingestion API</th>
-<th style="text-align: center;">Lake-Only</th>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
-<td style="text-align: left;"><code>SyslogMessage contains "managed_device_id"</code><br><code>SyslogMessage contains "number_of_incidents"</code></td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+  <td style="text-align:left"><a href="../tables/syslog.html"><code>Syslog</code></a></td>
+  <td style="text-align:left"><code>SyslogMessage contains &quot;managed_device_id&quot;</code><br><code>SyslogMessage contains &quot;number_of_incidents&quot;</code></td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">✓</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="analytic-rules.html">Back to Analytic Rules</a> · <a href="../solutions/digital-guardian-data-loss-prevention.html">Back to Digital Guardian Data Loss Prevention</a></p>
+
 </div>
 
 </body>

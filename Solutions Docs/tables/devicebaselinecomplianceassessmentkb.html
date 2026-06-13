@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DeviceBaselineComplianceAssessmentKB &mdash; Solutions Analyzer</title>
 <link rel="stylesheet" href="../../css/page.css">
-<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+
 </head>
 <body>
 <nav class="navbar">
@@ -28,90 +26,22 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">MDE</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">MDE</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Defender XDR Advanced Hunting Schema</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicebaselinecomplianceassessmentkb-table">View Documentation</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="schema">Schema (11 columns)</h2>
-<p><strong>Source:</strong> <a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/devicebaselinecomplianceassessmentkb">Azure Monitor documentation</a></p>
-<table id="schema-table">
-<thead>
-<tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">BenchmarkProfileLevels</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">List of benchmark compliance levels for which the configuration is applicable</td>
-</tr>
-<tr>
-<td style="text-align: left;">CCEReference</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique Common Configuration Enumeration (CCE) identifier for the configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">ConfigurationBenchmark</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Industry benchmark recommending the configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">ConfigurationCategory</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Category or grouping to which the configuration belongs</td>
-</tr>
-<tr>
-<td style="text-align: left;">ConfigurationDescription</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of the configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">ConfigurationId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier for a specific configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">ConfigurationName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Display name of the configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">ConfigurationRationale</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Description of any associated risks and rationale behind the configuration</td>
-</tr>
-<tr>
-<td style="text-align: left;">RecommendedValue</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">Set of expected values for the current device setting to be compliant</td>
-</tr>
-<tr>
-<td style="text-align: left;">RemediationOptions</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Recommended actions to reduce or address any associated risks</td>
-</tr>
-<tr>
-<td style="text-align: left;">Source</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The registry path or other location used to determine the current device setting</td>
+  <td style="text-align:left"><strong>Defender XDR Advanced Hunting Schema</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-devicebaselinecomplianceassessmentkb-table">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -119,31 +49,8 @@
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
-<script>
-$(function() {
-    var t = $('#schema-table');
-    if (!t.length) return;
-    // Add filter row to thead
-    var hdr = t.find('thead');
-    var cols = hdr.find('tr:first th').length;
-    var fr = $('<tr class="filters"></tr>');
-    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
-    hdr.append(fr);
-    // Init DataTable
-    var dt = t.DataTable({
-        paging: false,
-        info: true,
-        orderCellsTop: true,
-        dom: 'frti',
-    });
-    // Per-column filter
-    hdr.find('tr.filters input').each(function(i) {
-        $(this).on('keyup change', function() {
-            dt.column(i).search(this.value).draw();
-        });
-    });
-});
-</script>
+
 </body>
 </html>

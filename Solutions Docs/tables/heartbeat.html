@@ -25,26 +25,26 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Attribute</th>
-<th style="text-align: left;">Value</th>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><strong>Category</strong></td>
-<td style="text-align: left;">Endpoint</td>
+  <td style="text-align:left"><strong>Category</strong></td>
+  <td style="text-align:left">Endpoint</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Basic Logs Eligible</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Basic Logs Eligible</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Ingestion API Supported</strong></td>
-<td style="text-align: left;">✗ No</td>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✗ No</td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Azure Monitor Tables Reference</strong></td>
-<td style="text-align: left;"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat">View Documentation</a></td>
+  <td style="text-align:left"><strong>Azure Monitor Tables Reference</strong></td>
+  <td style="text-align:left"><a href="https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/heartbeat">View Documentation</a></td>
 </tr>
 </tbody>
 </table>
@@ -61,170 +61,170 @@
 <table id="schema-table">
 <thead>
 <tr>
-<th style="text-align: left;">Column Name</th>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">_BilledSize</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">The record size in bytes</td>
+  <td style="text-align:left">_BilledSize</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">The record size in bytes</td>
 </tr>
 <tr>
-<td style="text-align: left;">_IsBillable</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specifies whether ingesting the data is billable. When _IsBillable isfalseingestion isn't billed to your Azure account</td>
+  <td style="text-align:left">_IsBillable</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies whether ingesting the data is billable. When _IsBillable is <code>false</code> ingestion isn't billed to your Azure account</td>
 </tr>
 <tr>
-<td style="text-align: left;">_ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the resource that the record is associated with</td>
+  <td style="text-align:left">_ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the resource that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">_SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">A unique identifier for the subscription that the record is associated with</td>
+  <td style="text-align:left">_SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the subscription that the record is associated with</td>
 </tr>
 <tr>
-<td style="text-align: left;">Category</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Value is Direct Agent SCOM Agent or SCOM Management Server.</td>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Value is Direct Agent SCOM Agent or SCOM Management Server.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Computer</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Computer name</td>
+  <td style="text-align:left">Computer</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Computer name</td>
 </tr>
 <tr>
-<td style="text-align: left;">ComputerEnvironment</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Environment that hosts the computer: Azure or Non-Azure</td>
+  <td style="text-align:left">ComputerEnvironment</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Environment that hosts the computer: Azure or Non-Azure</td>
 </tr>
 <tr>
-<td style="text-align: left;">ComputerIP</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">IP address of the computer. Note that public IP is used</td>
+  <td style="text-align:left">ComputerIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">IP address of the computer. Note that public IP is used</td>
 </tr>
 <tr>
-<td style="text-align: left;">ComputerPrivateIPs</td>
-<td style="text-align: left;">dynamic</td>
-<td style="text-align: left;">The list of private IP addresses of the computer.</td>
+  <td style="text-align:left">ComputerPrivateIPs</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The list of private IP addresses of the computer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">IsGatewayInstalled</td>
-<td style="text-align: left;">bool</td>
-<td style="text-align: left;">If Log Analytics gateway is installed value is true otherwise value is false.</td>
+  <td style="text-align:left">IsGatewayInstalled</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">If Log Analytics gateway is installed value is true otherwise value is false.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ManagementGroupName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of Operations Manager management group.</td>
+  <td style="text-align:left">ManagementGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of Operations Manager management group.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OSMajorVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Operating system major version.</td>
+  <td style="text-align:left">OSMajorVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Operating system major version.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OSMinorVersion</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Operating system minor version.</td>
+  <td style="text-align:left">OSMinorVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Operating system minor version.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OSName</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Name of OS.</td>
+  <td style="text-align:left">OSName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of OS.</td>
 </tr>
 <tr>
-<td style="text-align: left;">OSType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of OS. Possible values are Windows or Linux.</td>
+  <td style="text-align:left">OSType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of OS. Possible values are Windows or Linux.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPCountry</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Geographic location where computer is deployed.</td>
+  <td style="text-align:left">RemoteIPCountry</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Geographic location where computer is deployed.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPLatitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Latitude of computer's geographic location.</td>
+  <td style="text-align:left">RemoteIPLatitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Latitude of computer's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">RemoteIPLongitude</td>
-<td style="text-align: left;">real</td>
-<td style="text-align: left;">Longitude of computer's geographic location.</td>
+  <td style="text-align:left">RemoteIPLongitude</td>
+  <td style="text-align:left">real</td>
+  <td style="text-align:left">Longitude of computer's geographic location.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Resource</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource group name of the Azure resource running the agent.</td>
+  <td style="text-align:left">Resource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource group name of the Azure resource running the agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceGroup</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource name of the Azure resource running the agent.</td>
+  <td style="text-align:left">ResourceGroup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource name of the Azure resource running the agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource ID of the Azure resource running the agent. Retained for for backward compatibility. _ResourceId should be used.</td>
+  <td style="text-align:left">ResourceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource ID of the Azure resource running the agent. Retained for for backward compatibility. _ResourceId should be used.</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceProvider</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Resource provider of the Azure resource running the agent</td>
+  <td style="text-align:left">ResourceProvider</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Resource provider of the Azure resource running the agent</td>
 </tr>
 <tr>
-<td style="text-align: left;">ResourceType</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Type of the Azure resource running the agent. Examples include virtualmachines or managedclusters.</td>
+  <td style="text-align:left">ResourceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the Azure resource running the agent. Examples include virtualmachines or managedclusters.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SCAgentChannel</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Specfies how agent is connected to workspace. Possible values are Direct or SCManagementServer.</td>
+  <td style="text-align:left">SCAgentChannel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specfies how agent is connected to workspace. Possible values are Direct or SCManagementServer.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Solutions</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">List of solutions deployed on the agent at the moment when Heartbeat was issued.</td>
+  <td style="text-align:left">Solutions</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">List of solutions deployed on the agent at the moment when Heartbeat was issued.</td>
 </tr>
 <tr>
-<td style="text-align: left;">SourceSystem</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The type of agent the event was collected by. For example,OpsManagerfor Windows agent, either direct connect or Operations Manager,Linuxfor all Linux agents, orAzurefor Azure Diagnostics</td>
+  <td style="text-align:left">SourceSystem</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of agent the event was collected by. For example, <code>OpsManager</code> for Windows agent, either direct connect or Operations Manager, <code>Linux</code> for all Linux agents, or <code>Azure</code> for Azure Diagnostics</td>
 </tr>
 <tr>
-<td style="text-align: left;">SubscriptionId</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Subscription ID of the Azure resource running the agent</td>
+  <td style="text-align:left">SubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Subscription ID of the Azure resource running the agent</td>
 </tr>
 <tr>
-<td style="text-align: left;">TimeGenerated</td>
-<td style="text-align: left;">datetime</td>
-<td style="text-align: left;">Date and time the record was created.</td>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time the record was created.</td>
 </tr>
 <tr>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">The name of the table</td>
+  <td style="text-align:left">Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the table</td>
 </tr>
 <tr>
-<td style="text-align: left;">Version</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Version of the agent.</td>
+  <td style="text-align:left">Version</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Version of the agent.</td>
 </tr>
 <tr>
-<td style="text-align: left;">VMUUID</td>
-<td style="text-align: left;">string</td>
-<td style="text-align: left;">Unique identifier of the virtual machine.</td>
+  <td style="text-align:left">VMUUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the virtual machine.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (10)</h2>
+<h2 id="solutions">Solutions (11)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/ciscoasa.html">CiscoASA</a></li>
@@ -235,6 +235,7 @@
 <li><a href="../solutions/nistsp80053.html">NISTSP80053</a></li>
 <li><a href="../solutions/pci-dss-compliance.html">PCI DSS Compliance</a></li>
 <li><a href="../solutions/sox-it-compliance.html">SOX IT Compliance</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/vmware-sase.html">VMware SASE</a></li>
 <li><a href="../solutions/windows-firewall.html">Windows Firewall</a></li>
 </ul>
@@ -243,48 +244,67 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Connector</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../connectors/ciscoasaama.html">Cisco ASA/FTD via AMA</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../connectors/ciscoasaama.html">Cisco ASA/FTD via AMA</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (11)</h2>
-<h3 id="analytic-rules">Analytic Rules (1)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (20)</h2>
+<h3 id="analytic-rules">Analytic Rules (3)</h3>
 <p><strong>In solution <a href="../solutions/maturitymodelforeventlogmanagementm2131.html">MaturityModelForEventLogManagementM2131</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Analytic Rule</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223-416aad3a.html">M2131_AssetStoppedLogging</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-m2131-assetstoppedlogging-4be5b645-1d08-49e4-b58d-07294ff19223-416aad3a.html">M2131_AssetStoppedLogging</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (10)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-missing-domain-controller-heartbeat-b8b8ba09-1e89-45a1-8bd7-691cd23bfa32-3caae499.html">Missing Domain Controller Heartbeat</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-omi-vulnerability-exploitation-3cc5ccd8-b416-4141-bb2d-4eba370e37a5-f90e5eee.html">OMI Vulnerability Exploitation</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (17)</h3>
 <p><strong>In solution <a href="../solutions/dora-compliance.html">DORA Compliance</a>:</strong></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/dora-compliance-doracompliance-21bcc12f.html">DORACompliance</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/dora-compliance-doracompliance-21bcc12f.html">DORACompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -292,14 +312,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.html">ForcepointNGFWAdvanced</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/forcepoint-ngfw-forcepointngfwadvanced-b6a3422e.html">ForcepointNGFWAdvanced</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -307,14 +327,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/hipaa-compliance-hipaacompliance-3850f8c8.html">HIPAACompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -322,14 +342,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.html">MaturityModelForEventLogManagement_M2131</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -337,14 +357,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/nistsp80053-nistsp80053-1f654213.html">NISTSP80053</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -352,14 +372,14 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/pci-dss-compliance-pcidsscompliance-b201eb3d.html">PCIDSSCompliance</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/pci-dss-compliance-pcidsscompliance-b201eb3d.html">PCIDSSCompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -367,18 +387,18 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/sox-it-compliance-soxitcompliance-6426e0a3.html">SOXITCompliance</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -386,27 +406,66 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
-<th style="text-align: left;">Selection Criteria</th>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/vmware-sase-vmwaresasesocdashboard-36b12705.html">VMwareSASESOCDashboard</a></td>
-<td style="text-align: left;"></td>
+  <td style="text-align:left"><a href="../content/vmware-sase-vmwaresasesocdashboard-36b12705.html">VMwareSASESOCDashboard</a></td>
+  <td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>In solution <a href="../solutions/windows-firewall.html">Windows Firewall</a>:</strong> <code>Solutions contains "windowsFirewall"</code></p>
+<p><strong>In solution <a href="../solutions/windows-firewall.html">Windows Firewall</a>:</strong> <code>Solutions contains &quot;windowsFirewall&quot;</code></p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Workbook</th>
+  <th style="text-align:left">Workbook</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="../content/windows-firewall-windowsfirewall-6cfebfa8.html">WindowsFirewall</a></td>
+  <td style="text-align:left"><a href="../content/windows-firewall-windowsfirewall-6cfebfa8.html">WindowsFirewall</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-amamigrationtracker-7a7462f4.html">AMAmigrationTracker</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-datacollectionhealthmonitoring-360bf8be.html">DataCollectionHealthMonitoring</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-data-latency-workbook-6c04e6e6.html">Data_Latency_Workbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-forcepointngfwadvanced-901d419d.html">ForcepointNGFWAdvanced</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-windowsfirewall-e0440cb8.html">WindowsFirewall</a></td>
+  <td style="text-align:left"><code>Solutions contains &quot;windowsFirewall&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -428,30 +487,30 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Selection Criteria</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Selection Criteria</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>Solutions contains "windowsFirewall"</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>Solutions contains &quot;windowsFirewall&quot;</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;"><strong>Total</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>0</strong></td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><strong>Total</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>0</strong></td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
@@ -459,28 +518,29 @@
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Value</th>
-<th style="text-align: center;">Connectors</th>
-<th style="text-align: center;">Content Items</th>
-<th style="text-align: center;">ASIM Parsers</th>
-<th style="text-align: center;">Other Parsers</th>
-<th style="text-align: center;">Total</th>
+  <th style="text-align:left">Value</th>
+  <th style="text-align:center">Connectors</th>
+  <th style="text-align:center">Content Items</th>
+  <th style="text-align:center">ASIM Parsers</th>
+  <th style="text-align:center">Other Parsers</th>
+  <th style="text-align:center">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><code>contains windowsFirewall</code></td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;">-</td>
-<td style="text-align: center;"><strong>1</strong></td>
+  <td style="text-align:left"><code>contains windowsFirewall</code></td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
 </div>
 <script>
 $(function() {
