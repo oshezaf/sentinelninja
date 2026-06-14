@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.3</td>
+  <td style="text-align:left">3.0.5</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -268,6 +268,7 @@ az deployment group create \
 <h2 id="release-notes">Release Notes</h2>
 <p><strong>Version</strong> | <strong>Date Modified (DD-MM-YYYY)</strong>| <strong>ChangeHistory</strong>
 |------------|-------------------------------|-------------------------------------------------------------------------------------------|
+| 3.0.5      | 29-05-2026                    | DCR transform fix: <code>ip_s</code> is now populated only for IP-type indicators (<code>type == &quot;ip&quot;</code>). Malware URL indicators previously stored their UUID identifier in <code>ip_s</code>; that column is now empty for URL rows, which keeps the malicious URL in <code>url_s</code> and prevents non-IP values from appearing in IP queries. |
 | 3.0.4      | 12-03-2026                    | <strong>Optional tokens:</strong> Made both JWT tokens (IP Reputation and Malware URL) optional with conditional deployment. Customers can now install either feed or both based on their subscription — connectors are only deployed for tokens that are provided. Added helper text to UI indicating tokens are optional. Updated labels to &quot;(Optional)&quot; and placeholder to &quot;Leave empty if not purchased&quot;. |
 | 3.0.3      | 13-02-2026                    | Duplicate ingestion fix: Increased <code>count</code> from 100→1000 to fetch all indicators in a single page (Cyren IP Reputation feed contains ~800 indicators, Malware URLs ~200). Increased <code>queryWindowInMin</code> from 15→360 minutes (6 hours) since threat intelligence feeds are relatively static. These two changes eliminate the primary cause of duplicate data ingestion — repeated multi-page fetches of the same indicator set on short polling intervals. See PR #13603 for prior paging-type fix context. |
 | 3.0.2      | 11-02-2026                    | Fixed CCF paging duplication bug: Changed from Offset paging to PersistentToken paging to prevent duplicate data ingestion when Cyren API startOffset exceeds initial offset. Added DCR transform filter for time-based deduplication. |

@@ -37,6 +37,9 @@ This connector ingests data into the following tables:
 **Resource Provider Permissions:**
 - **Workspace** (Workspace): Read and Write permissions are required.
 
+**Custom Permissions:**
+- **AWS IAM Role**: An AWS IAM Role with cross-account trust policy is required.
+
 ## Setup Instructions
 
 > ⚠️ **Note**: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.
@@ -72,7 +75,7 @@ This section is an interactive interface in the Microsoft Sentinel portal that a
 When you click the "Add Account" button in the portal, a configuration form will open. You'll need to provide:
 
 - **Role ARN** (optional): Enter Role ARN
-- **Queue URL** (optional): Enter SQL Queue URL
+- **Queue URL** (optional): Enter SQS Queue URL
 
 > 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 

@@ -18,18 +18,18 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **124** |
+| Total Connectors | **125** |
 | Active | 73 |
 | Deprecated 🚫 | 27 |
-| Unpublished ⚠️ | 40 |
+| Unpublished ⚠️ | 41 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
 | [Azure Function](../methods/azure-function.md) | 74 |
-| [REST Pull API](../methods/rest-pull-api.md) | 50 |
-| **Total** | **124** |
+| [REST Pull API](../methods/rest-pull-api.md) | 51 |
+| **Total** | **125** |
 
 ## Connectors Using This API
 
@@ -118,6 +118,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) ⚠️ 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
 | [Squadra Technologies secRMM](../connectors/squadratechnologiessecrmm.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Squadra Technologies | 1 | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
+| [StealthTalk Anomalous Authentication](../connectors/stealthtalkanomalousauth.md) ⚠️ | [REST Pull API](../methods/rest-pull-api.md) | StealthTalk | 1 | [StealthTalk](../solutions/stealthtalk.md) |
 | [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
 | [Talon Insights](../connectors/talonlogs.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Talon Security | 1 | [Talon](../solutions/talon.md) |
 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶 | [Azure Function](../methods/azure-function.md) | Tenable | 2 | [TenableIO](../solutions/tenableio.md) |

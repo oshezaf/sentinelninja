@@ -51,7 +51,7 @@
 <li><a href="#content-items-using-this-table">Content Items</a></li>
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
-<h2 id="schema">Schema (79 columns)</h2>
+<h2 id="schema">Schema (82 columns)</h2>
 <p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR%5CData%20Connectors%5CContrastADRCCF/table_attackevents.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
@@ -148,6 +148,10 @@
 <tr>
   <td style="text-align:left">attackPayload_value</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">codeLocation</td>
+  <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
   <td style="text-align:left">codeLocation_file</td>
@@ -314,6 +318,10 @@
   <td style="text-align:left">string</td>
 </tr>
 <tr>
+  <td style="text-align:left">request_parameters</td>
+  <td style="text-align:left">dynamic</td>
+</tr>
+<tr>
   <td style="text-align:left">request_protocol</td>
   <td style="text-align:left">string</td>
 </tr>
@@ -368,6 +376,10 @@
 <tr>
   <td style="text-align:left">url</td>
   <td style="text-align:left">string</td>
+</tr>
+<tr>
+  <td style="text-align:left">vectorAnalysis</td>
+  <td style="text-align:left">dynamic</td>
 </tr>
 <tr>
   <td style="text-align:left">vectorAnalysis_callLocation</td>

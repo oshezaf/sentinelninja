@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**567 workbooks** across all Microsoft Sentinel solutions.
+**572 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -236,6 +236,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [ESETPROTECT](esetprotect-esetprotect-083ee366.md) | 📦 [ESETPROTECT](../solutions/esetprotect.md) |
 | [esetSMCWorkbook](eset-security-management-center-esetsmcworkbook-7ed61bc1.md) | 📦 [Eset Security Management Center](../solutions/eset-security-management-center.md) |
 | [esetSMCWorkbook](github-only-esetsmcworkbook-b5480ebc.md) | 🔗 GitHub Only |
+| [ESKMworkbook](utimaco-enterprise-secure-key-manager-eskmworkbook-845900db.md) | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
 | [EventAnalyzer](windows-security-events-eventanalyzer-30e8f73e.md) | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
 | [EventAnalyzer](github-only-eventanalyzer-fed80a16.md) | 🔗 GitHub Only |
 | [ExchangeCompromiseHunting](github-only-exchangecompromisehunting-4fe3c3f0.md) | 🔗 GitHub Only |
@@ -290,6 +291,8 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [GSAMCPInsights](global-secure-access-gsamcpinsights-87ae8ba3.md) | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GSANetworkTraffic](global-secure-access-gsanetworktraffic-b1c45294.md) | 📦 [Global Secure Access](../solutions/global-secure-access.md) |
 | [GuardianDashboard](aishield-ai-security-monitoring-guardiandashboard-2e13e015.md) | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) |
+| [GuardicoreIncident](akamai-guardicore-guardicoreincident-eaef0237.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
+| [GuardicoreInfo](akamai-guardicore-guardicoreinfo-922f455f.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 
 ## H
 
@@ -585,6 +588,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [SophosXGFirewall](github-only-sophosxgfirewall-ecabbd5c.md) | 🔗 GitHub Only |
 | [SOXITCompliance](sox-it-compliance-soxitcompliance-6426e0a3.md) | 📦 [SOX IT Compliance](../solutions/sox-it-compliance.md) |
 | [SquadraTechnologiesSecRMM](github-only-squadratechnologiessecrmm-3e33bcf1.md) | 🔗 GitHub Only |
+| [StealthTalkAnomalousAuthMonitor](stealthtalk-stealthtalkanomalousauthmonitor-66e563fa.md) | 📦 [StealthTalk](../solutions/stealthtalk.md) |
 | [SummaryRulesWorkbook](github-only-summaryrulesworkbook-d89cc3ca.md) | 🔗 GitHub Only |
 | [SymantecEndpointProtection](symantec-endpoint-protection-symantecendpointprotection-1ac479ae.md) | 📦 [Symantec Endpoint Protection](../solutions/symantec-endpoint-protection.md) |
 | [SymantecProxySG](symantecproxysg-symantecproxysg-dd9ed98f.md) | 📦 [SymantecProxySG](../solutions/symantecproxysg.md) |
@@ -633,6 +637,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 | [UEBABehaviorsAnalysisWorkbook](ueba-essentials-uebabehaviorsanalysisworkbook-c444e4d9.md) | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [UnifiSG](github-only-unifisg-96910283.md) | 🔗 GitHub Only |
 | [UnifiSGNetflow](github-only-unifisgnetflow-8a035168.md) | 🔗 GitHub Only |
+| [UnifiSiteManager](unifi-site-manager-ccf-unifisitemanager-eafe5588.md) | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
 | [UpdateSOCMaturityScore](soc-process-framework-updatesocmaturityscore-d96c410d.md) | 📦 [SOC-Process-Framework](../solutions/soc-process-framework.md) |
 | [usecasemapper](github-only-usecasemapper-b5a50530.md) | 🔗 GitHub Only |
 | [User_Analytics_Workbook](github-only-user-analytics-workbook-b95f3e5a.md) | 🔗 GitHub Only |

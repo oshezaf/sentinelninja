@@ -14,7 +14,7 @@
 | **Publisher** | Digital Shadows |
 | **Used in Solutions** | [Digital Shadows](../solutions/digital-shadows.md) |
 | **Collection Method** | [Azure Function](../methods/azure-function.md) |
-| **Connector Definition Files** | [DigitalShadowsSearchlight_API_functionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Data%20Connectors/Digital%20Shadows/DigitalShadowsSearchlight_API_functionApp.json) |
+| **Connector Definition Files** | [DigitalShadowsSearchlight_API_functionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Data%20Connectors/DigitalShadowsSearchlight_API_functionApp.json) |
 | **Ingestion API** | [HTTP Data Collector API](../methods/http-data-collector-api.md) — *Azure Function code uses SharedKey/HTTP Data Collector API* |
 | **Custom Log V1 Tables** | Yes 🔶 — ingests into tables with type-suffixed columns |
 | **Microsoft Learn** | [View on Learn](https://learn.microsoft.com/azure/sentinel/data-connectors-reference#digital-shadows-searchlight-using-azure-functions) |
@@ -91,7 +91,7 @@ Use this method for automated deployment of the 'Digital Shadows Searchlight' co
 **2. Import Function App Code(Zip deployment)**
 
 1. Install Azure CLI
-2. From terminal type **az functionapp deployment source config-zip -g <ResourceGroup> -n <FunctionApp> --src <Zip File>** and hit enter. Set the `ResourceGroup` value to: your resource group name. Set the `FunctionApp` value to: your newly created function app name. Set the `Zip File` value to: `digitalshadowsConnector.zip`(path to your zip file). Note:- Download the zip file from the link - [Function App Code](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital%20Shadows/Data%20Connectors/Digital%20Shadows/digitalshadowsConnector.zip)
+2. From terminal type **az functionapp deployment source config-zip -g <ResourceGroup> -n <FunctionApp> --src <Zip File>** and hit enter. Set the `ResourceGroup` value to: your resource group name. Set the `FunctionApp` value to: your newly created function app name. Set the `Zip File` value to: `digitalshadowsConnector.zip`(path to your zip file). Note:- Download the zip file from the link - [Function App Code](https://aka.ms/sentinel-DigitalShadows-functionapp)
 
 **3. Configure the Function App**
 
@@ -116,6 +116,67 @@ Set the `ClassificationFilterOperation` value to: `exclude` for exclude function
 >Note: If using Azure Key Vault secrets for any of the values above, use the`@Microsoft.KeyVault(SecretUri={Security Identifier})`schema in place of the string values. Refer to [Azure Key Vault references documentation](https://docs.microsoft.com/azure/app-service/app-service-key-vault-references) for further details.
  - Use logAnalyticsUri to override the log analytics API endpoint for dedicated cloud. For example, for public cloud, leave the value empty; for Azure GovUS cloud environment, specify the value in the following format: https://<CustomerId>.ods.opinsights.azure.us. 
 4. Once all application settings have been entered, click **Save**.
+
+## Additional Documentation
+
+> 📄 *Source: [Digital Shadows\Data Connectors\readme.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Digital Shadows\Data Connectors\readme.md)*
+
+# Digital Shadows Integration for Microsoft Sentinel
+
+## Introduction
+
+This folder contains the Azure function time trigger code for Digital Shadows-Microsoft Sentinel connector. The connector will run periodically and ingest the Digital Shadows incidents and alerts data into the Microsoft Sentinel logs custom table `DigitalShadows_CL`. After the data has been ingested, Analytic rule will promote the data and create the Microsoft Sentinel incidents out of them. Analytic rule will also trigger playbooks, `status-and-severity-update` and `add-comments`. The playbooks will change the status and severity and add comments to Microsoft Sentinel incidents according to the latest Digital Shadows data logged. The data can be visualized in the Workbook labelled `Digital Shadows workbook`.
+
+## Folders
+
+1. `Digital shadows/` - This contains the package, requirements, ARM JSON file, connector page template JSON, and other dependencies. 
+2. `DigitalShadowsConnectorAzureFunction/` - This contains the Azure function source code along with sample data.
+
+
+## Installing for the users
+
+After the solution is published, we can find the connector in the connector gallery of Microsoft Sentinel among other connectors in Data connectors section of Sentinel. 
+
+i. Go to Microsoft Sentinel -> Data Connectors
+
+ii. Click on the Digital Shadows connector, connector page will open. 
+
+iii. Click on the blue `Deploy to Azure` button.   
+
+![Deploy to Azure](https://user-images.githubusercontent.com/88835344/143393168-018f97fb-95c1-4884-ba93-09306dd168b0.png)
+
+
+
+It will lead to a custom deployment page where after entering accurate credentials and other information, the resources will get created. 
+
+
+![Create resources](https://user-images.githubusercontent.com/88835344/142581668-5d5dd767-55a2-49fc-a9c9-eb458f75a2a7.png)
+
+
+The connector should start ingesting the data into the logs in next 5-10 minutes.
+
+
+## Installing for testing
+
+
+i. Log in to Azure portal using the URL - [https://portal.azure.com/?feature.BringYourOwnConnector=true](https://portal.azure.com/?feature.BringYourOwnConnector=true).
+
+ii. Go to Microsoft Sentinel -> Data Connectors
+
+iii. Click the “import” button at the top and select the json file `DigitalShadowsSearchlight_API_functionApp.JSON` downloaded on your local machine from GitHub.
+
+iv. This will load the connector page and rest of the process will be same as the Installing for users guideline above.
+
+
+Each invocation and its logs of the function can be seen in Function App service of Azure, available in the Azure Portal outside the Microsoft Sentinel.
+
+i. Go to Function App and click on the function which you have deployed, identified with the given name at the deployment stage.
+
+ii. Go to Functions -> DigitalShadowsConnectorAzureFunction -> Monitor
+
+iii. By clicking on invocation time, you can see all the logs for that run. 
+
+**Note: Furthermore we can check logs in Application Insights of the given function in detail if needed. We can search the logs by operation ID in Transaction search section.**
 
 ---
 

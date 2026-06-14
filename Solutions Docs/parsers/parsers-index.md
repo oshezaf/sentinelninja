@@ -8,7 +8,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 ---
 
-**568 parsers** (35 legacy, 511 solution, 22 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**570 parsers** (35 legacy, 513 solution, 22 discovered). See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 *Legacy parsers are located in the top-level `/Parsers` folder. Solution parsers are included within specific solution packages.*
 
@@ -381,6 +381,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 
 | Parser | Source | Tables |
 |:-------|:-------|:-------|
+| [FieldEffect](fieldeffect.md) | 📦 [FieldEffectMDR](../solutions/fieldeffectmdr.md) | FieldEffectAROAlerts_CL |
 | [FilewallM365ExchangeEvent](filewallm365exchangeevent.md) | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) | FilewallExchange_CL |
 | [FilewallM365FileEvent](filewallm365fileevent.md) | 📦 [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) | FilewallFile_CL |
 | [FireEyeNXEvent](fireeyenxevent.md) | 📦 [FireEye Network Security](../solutions/fireeye-network-security.md) | CommonSecurityLog |
@@ -409,6 +410,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [GitLabAccess](gitlabaccess.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
 | [GitLabApp](gitlabapp.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
 | [GitLabAudit](gitlabaudit.md) | 📦 [GitLab](../solutions/gitlab.md) | Syslog |
+| [GoogleSecOpsDetectionAlerts](googlesecopsdetectionalerts.md) | 📦 [GoogleSecOps](../solutions/googlesecops.md) | DetectionAlerts_CL |
 | [Guardian](guardian.md) | 📦 [AIShield AI Security Monitoring](../solutions/aishield-ai-security-monitoring.md) | Guardian_CL |
 | [GWorkspaceActivityReports](gworkspaceactivityreports.md) | 📦 [GoogleWorkspaceReports](../solutions/googleworkspacereports.md) | GWorkspace_ReportsAPI_access_transparency_CL, GWorkspace_ReportsAPI_admin_CL, ... |
 
@@ -522,7 +524,7 @@ Parsers are KQL functions that transform and normalize log data for easier query
 | [MSBizAppsOrgSettings](msbizappsorgsettings.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
 | [MSBizAppsTerminatedEmployees](msbizappsterminatedemployees.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
 | [MSBizAppsVIPUsers](msbizappsvipusers.md) | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) | ? |
-| [MuleSoftCloudhub](mulesoftcloudhub.md) | 📦 [Mulesoft](../solutions/mulesoft.md) | MuleSoft_Cloudhub_CL |
+| [MuleSoftCloudhub](mulesoftcloudhub.md) | 📦 [Mulesoft](../solutions/mulesoft.md) | MuleSoftCloudhubLogs_CL, MuleSoft_Cloudhub_CL, ... |
 
 ## N
 

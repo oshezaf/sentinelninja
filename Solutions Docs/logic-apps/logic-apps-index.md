@@ -9,12 +9,12 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | Managed connectors | 96 | `Microsoft.Web/connections` resources backed by Microsoft-published APIs (`/providers/Microsoft.Web/locations/.../managedApis/...`). |
 | Custom connectors | 56 | Solution-specific APIs (`/customApis/...`). |
 | Built-in action types | 3 | Workflow actions of type `Http`, `Function`, `Workflow`, or `ApiManagement` that don't use a connection resource. |
-| Playbooks using Logic App connectors / built-ins | 875 | |
+| Playbooks using Logic App connectors / built-ins | 879 | |
 
 | Connector / Action | Type | Playbooks | Solutions | Microsoft Learn |
 |:-------------------|:-----|----------:|----------:|:----------------|
-| [`azuresentinel`](managed-azuresentinel.md) | Managed | 686 | 119 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
-| [`http`](builtin-http.md) | Built-in | 376 | 60 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
+| [`azuresentinel`](managed-azuresentinel.md) | Managed | 689 | 121 | [Learn](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
+| [`http`](builtin-http.md) | Built-in | 380 | 62 | [Learn](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 | [`keyvault`](managed-keyvault.md) | Managed | 151 | 25 | [Learn](https://learn.microsoft.com/en-us/connectors/keyvault/) |
 | [`azuremonitorlogs`](managed-azuremonitorlogs.md) | Managed | 107 | 27 | [Learn](https://learn.microsoft.com/en-us/connectors/azuremonitorlogs/) |
 | [`teams`](managed-teams.md) | Managed | 104 | 33 | [Learn](https://learn.microsoft.com/en-us/connectors/teams/) |
@@ -59,6 +59,7 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | [`HaveIBeenPwnedConnector`](custom-haveibeenpwnedconnector.md) | Custom | 5 | 1 | — |
 | [`ipqsfraudandriskscor`](managed-ipqsfraudandriskscor.md) | Managed | 5 | 1 | [Learn](https://learn.microsoft.com/en-us/connectors/ipqsfraudandriskscor/) |
 | [`MerakiConnector`](custom-merakiconnector.md) | Custom | 5 | 1 | — |
+| [`azuretables`](managed-azuretables.md) | Managed | 4 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/azuretables/) |
 | [`eventhubs`](managed-eventhubs.md) | Managed | 4 | 2 | [Learn](https://learn.microsoft.com/en-us/connectors/eventhubs/) |
 | [`office365_1`](managed-office365-1.md) | Managed | 4 | 4 | — |
 | [`PaloAltoWildFire`](custom-paloaltowildfire.md) | Custom | 4 | 1 | — |
@@ -127,7 +128,6 @@ Logic Apps connectors and built-in actions referenced by Microsoft Sentinel play
 | [`azureloganalyticsdatacollector_3`](managed-azureloganalyticsdatacollector-3.md) | Managed | 1 | 1 | — |
 | [`azuremonitor`](managed-azuremonitor.md) | Managed | 1 | 1 | — |
 | [`azuresentinel-1`](managed-azuresentinel-1.md) | Managed | 1 | 1 | — |
-| [`azuretables`](managed-azuretables.md) | Managed | 1 | 1 | [Learn](https://learn.microsoft.com/en-us/connectors/azuretables/) |
 | [`azurevm`](managed-azurevm.md) | Managed | 1 | 1 | [Learn](https://learn.microsoft.com/en-us/connectors/azurevm/) |
 | [`CheckPhishbyBolsterCustomConnector`](custom-checkphishbybolstercustomconnector.md) | Custom | 1 | 1 | — |
 | [`CheckPointMgmtConnector`](custom-checkpointmgmtconnector.md) | Custom | 1 | 1 | — |

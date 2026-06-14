@@ -8,7 +8,7 @@
 
 Hunting queries enable proactive threat hunting by security analysts. Unlike analytic rules that run automatically, hunting queries are designed for manual investigation to uncover hidden threats, explore suspicious patterns, and identify indicators of compromise that automated detection may have missed. [Learn more](https://learn.microsoft.com/azure/sentinel/hunting)
 
-**2366 hunting queries** across all Microsoft Sentinel solutions.
+**2381 hunting queries** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -135,7 +135,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Anomalous Okta First-Time or Uncommon Actions](ueba-essentials-anomalous-okta-first-time-or-uncommon-actions-d4e5f6g7-h8i9-0123-defg-hi4567890123-0ea8a6e8.md) | InitialAccess, CredentialAccess, Persistence | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Password Reset](ueba-essentials-anomalous-password-reset-22b0262c-b6b5-4f15-82a4-93663e9965d7-b04b510f.md) | Impact | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Payload Delivered from ISO files](microsoft-defender-xdr-anomalous-payload-delivered-from-iso-files-14694b88-a6e9-4cd1-9c4a-e382bdd82d8d-9bc45897.md) | Execution | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
-| [Anomalous Query Execution Time](azure-sql-database-solution-for-sentinel-anomalous-query-execution-time-724c7010-0afe-4d46-95ab-32f6737e658b-6f211c62.md) | InitialAccess | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
+| [Anomalous Query Execution Time](azure-sql-database-solution-for-sentinel-anomalous-query-execution-time-724c7010-0afe-4d46-95ab-32f6737e658b-6f211c62.md) | Impact | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Anomalous Query Execution Time](azure-sql-database-solution-for-sentinel-anomalous-query-execution-time-af55d5b0-6b4a-4874-8299-9d845bf7c1fd-21c7b493.md) | InitialAccess | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Anomalous RDP Activity](ueba-essentials-anomalous-rdp-activity-c01d95d3-ee85-4e7f-9aed-e62356f1de76-f9c1ea17.md) | LateralMovement | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
 | [Anomalous Resource Access](ueba-essentials-anomalous-resource-access-782f3bad-31f7-468f-8f58-3b74fc931914-129885e1.md) | LateralMovement | 📦 [UEBA Essentials](../solutions/ueba-essentials.md) |
@@ -1867,7 +1867,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [remote-file-creation-with-psexec](github-only-remote-file-creation-with-psexec-8b1d8f83-08f3-44fb-8328-1229521f109c-c59300e9.md) | Lateral movement | 🔗 GitHub Only |
 | [Renamed Rclone Exfil](github-only-renamed-rclone-exfil-2b2e8b89-ba54-48f9-a24f-b9ae16a7ef6d-1598b722.md) | Exfiltration | 🔗 GitHub Only |
 | [Request from bots and crawlers (ASIM Web Session)](web-session-essentials-request-from-bots-and-crawlers-asim-web-session-b653c2e0-ae0f-490b-9b2e-836858d28976-9673d4d5.md) | InitialAccess | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |
-| [Response rows stateful anomaly on database - hunting query](azure-sql-database-solution-for-sentinel-response-rows-stateful-anomaly-on-database-hunting-query-137tyi7c-7225-434b-8bfc-fea28v95ebd8-78e08eb9.md) | Exfiltration | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
+| [Response rows stateful anomaly on database - hunting query](azure-sql-database-solution-for-sentinel-response-rows-stateful-anomaly-on-database-hunting-query-137tyi7c-7225-434b-8bfc-fea28v95ebd8-78e08eb9.md) | Collection | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Retrospective hunt for Forest Blizzard IP IOCs](legacy-ioc-based-threat-protection-retrospective-hunt-for-forest-blizzard-ip-iocs-b8b7574f-1cd6-4308-822a-ab07256106f8-95c2528a.md) | CommandAndControl | 📦 [Legacy IOC based Threat Protection](../solutions/legacy-ioc-based-threat-protection.md) |
 | [reverse-shell-nishang](github-only-reverse-shell-nishang-7490e437-edc2-40b3-87fe-45b736593deb-6e627042.md) | Execution, Persistence, Exfiltration | 🔗 GitHub Only |
 | [reverse-shell-nishang-base64](github-only-reverse-shell-nishang-base64-5d091733-0e7e-4331-b2f1-127cb36e516e-6eda3485.md) | Execution, Persistence, Exfiltration | 🔗 GitHub Only |
@@ -2036,6 +2036,9 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Stale last password change](senservapro-stale-last-password-change-29aebd0f-25ae-4d81-b0c2-2fb7f45f0340-2d9be67a.md) | InitialAccess | 📦 [SenservaPro](../solutions/senservapro.md) |
 | [Star Blizzard-Domain IOCs](github-only-star-blizzard-domain-iocs-4b14590a-a1f0-4756-9f3d-baafa696e051-d7385a05.md) | InitialAccess | 🔗 GitHub Only |
 | [Status of submissions](github-only-status-of-submissions-1c390fd7-2668-4445-9b7d-055f3851be5f-c0279593.md) | InitialAccess | 🔗 GitHub Only |
+| [StealthTalk - Account takeover sequence](stealthtalk-stealthtalk-account-takeover-sequence-d2e5f8a3-9c4b-4d7e-8f6a-3b2c4d5e6f7a-412a3fc8.md) | InitialAccess, Persistence, CredentialAccess, DefenseEvasion | 📦 [StealthTalk](../solutions/stealthtalk.md) |
+| [StealthTalk - Brute force followed by suspicious access](stealthtalk-stealthtalk-brute-force-followed-by-suspicious-access-e3f6a9b4-ad5c-4e8f-9a7b-4c3d5e6f7a8b-13cf45fe.md) | CredentialAccess, InitialAccess | 📦 [StealthTalk](../solutions/stealthtalk.md) |
+| [StealthTalk - Impossible travel](stealthtalk-stealthtalk-impossible-travel-c1d4e7f2-8b3a-4c6d-9e5f-2a1b3c4d5e6f-22aa12ef.md) | InitialAccess, CredentialAccess | 📦 [StealthTalk](../solutions/stealthtalk.md) |
 | [Sticky Keys](github-only-sticky-keys-3c82774a-df78-44eb-9ab3-13ef37c63ae4-282aa16f.md) | Ransomware | 🔗 GitHub Only |
 | [Stolen Images Execution](github-only-stolen-images-execution-0e959fe8-f086-4497-b538-60fb0b5d8e37-ee68131b.md) | Execution | 🔗 GitHub Only |
 | [Stopping multiple processes using taskkill](microsoft-defender-xdr-stopping-multiple-processes-using-taskkill-4dd31bd5-11a3-4b9c-a7c5-4927ab4f2a77-452d3cd2.md) | DefenseEvasion | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -2088,7 +2091,7 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Suspicious Sign-ins to Privileged Account](cloud-identity-threat-protection-essentials-suspicious-sign-ins-to-privileged-account-a73c52f2-b3a5-4fe4-be7d-4d59b8558590-502c7b31.md) | InitialAccess | 📦 [Cloud Identity Threat Protection Essentials](../solutions/cloud-identity-threat-protection-essentials.md) |
 | [Suspicious Spoolsv Child Process](microsoft-defender-xdr-suspicious-spoolsv-child-process-084a6349-b3d6-4528-91e4-4de5d52424e5-f5f0ac34.md) | PrivilegeEscalation, Execution | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Suspicious Spoolsv Child Process](github-only-suspicious-spoolsv-child-process-ece67992-9699-44f5-a5c5-f7e5c2d1d5d4-6e87ead2.md) | Privilege escalation, Exploit | 🔗 GitHub Only |
-| [Suspicious SQL Stored Procedures](azure-sql-database-solution-for-sentinel-suspicious-sql-stored-procedures-db5b0a77-1b1d-4a31-8ebb-c508ebc3bb38-4ec8f8ae.md) | InitialAccess | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
+| [Suspicious SQL Stored Procedures](azure-sql-database-solution-for-sentinel-suspicious-sql-stored-procedures-db5b0a77-1b1d-4a31-8ebb-c508ebc3bb38-4ec8f8ae.md) | Execution | 📦 [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | [Suspicious Teams Display Name](microsoft-defender-xdr-suspicious-teams-display-name-02bdbd93-02b7-40e4-9468-d501463e57af-e0e082e9.md) | InitialAccess | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Suspicious Teams Display Name](github-only-suspicious-teams-display-name-97e1c837-2cef-4f43-a87f-11f16e33ee8d-3da96512.md) | InitialAccess | 🔗 GitHub Only |
 | [Suspicious Tomcat Confluence Process Launch](microsoft-defender-xdr-suspicious-tomcat-confluence-process-launch-c5b3e559-7c44-442c-9e73-c753abb02c13-64887431.md) | Execution, PrivilegeEscalation | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
@@ -2336,6 +2339,14 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [Unexpected top level domains (ASIM DNS Solution)](dns-essentials-unexpected-top-level-domains-asim-dns-solution-4c8d6412-5a48-42c3-8b5e-1f29fb15c749-c748185b.md) | CommandAndControl | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
 | [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | InitialAccess, Impact | 🔗 GitHub Only |
 | [Unicode Obfuscation in Command Line](endpoint-threat-protection-essentials-unicode-obfuscation-in-command-line-a953f304-12e4-48ae-bedc-d58fb1b0c6a6-25c755ef.md) | DefenseEvasion | 📦 [Endpoint Threat Protection Essentials](../solutions/endpoint-threat-protection-essentials.md) |
+| [UniFi Site Manager: Console group membership churn](unifi-site-manager-ccf-unifi-site-manager-console-group-membership-churn-8e22eb19-51df-37f7-468f-9d112fff9098-98a99608.md) | Persistence | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Devices adopted outside business hours](unifi-site-manager-ccf-unifi-site-manager-devices-adopted-outside-business-hours-77bba2d0-92e1-408d-9e43-2d6e5e81538e-a47bd3d1.md) | Persistence | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Devices flapping online/offline](unifi-site-manager-ccf-unifi-site-manager-devices-flapping-online-offline-0f489145-b472-a821-a166-a6c68e346ad2-e0d5ccfa.md) | Impact | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Firmware drift hotspots](unifi-site-manager-ccf-unifi-site-manager-firmware-drift-hotspots-1d767977-460a-29c3-06f7-799a91a80daf-98dd6640.md) | Reconnaissance | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Firmware version diversity within a model](unifi-site-manager-ccf-unifi-site-manager-firmware-version-diversity-within-a-model-2b0ca272-72fd-c2c2-6728-7f287c22e275-fb38da72.md) | Reconnaissance | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Long-tail ISP latency hotspots (P95)](unifi-site-manager-ccf-unifi-site-manager-long-tail-isp-latency-hotspots-p95-3f49ba8c-8995-9d38-579d-24afa09f5a2a-7d6d26cc.md) | Impact | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Sites with persistent WAN issues](unifi-site-manager-ccf-unifi-site-manager-sites-with-persistent-wan-issues-2dbe3bb8-1522-e491-2eac-72bb0923c5eb-a78b6f92.md) | Impact | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: WAN external IP geographic deviation](unifi-site-manager-ccf-unifi-site-manager-wan-external-ip-geographic-deviation-9c0a7304-287e-f1b2-8b4f-c7444b8511ea-7ff20a11.md) | Reconnaissance | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
 | [Unusual volume of file deletion by user.](github-only-unusual-volume-of-file-deletion-by-user.-611ebbc2-c789-42ad-93e3-6dc02bfa5e3d-b849c152.md) | Impact | 🔗 GitHub Only |
 | [Unusual Volume of file deletion by users](microsoft-defender-xdr-unusual-volume-of-file-deletion-by-users-2bdd260c-c687-4cb2-9992-87e5ce677678-3b144d45.md) | Impact | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Unusual volume of file sharing with external user.](github-only-unusual-volume-of-file-sharing-with-external-user.-bafc1446-1cc4-4f6d-ad76-1250b8c3b60c-2e8e1831.md) | Exfiltration | 🔗 GitHub Only |
@@ -2421,6 +2432,10 @@ Hunting queries enable proactive threat hunting by security analysts. Unlike ana
 | [UserAccountDisabled](senservapro-useraccountdisabled-4ca722e6-b165-42cd-8eb2-88304a0fc3da-d628ecc7.md) | InitialAccess | 📦 [SenservaPro](../solutions/senservapro.md) |
 | [Users Authenticating to Other Microsoft Entra ID Tenants](github-only-users-authenticating-to-other-microsoft-entra-id-tenants-9b4a1f38-2fae-44dd-9e85-685a2e4b9bb5-c7672be4.md) | InitialAccess | 🔗 GitHub Only |
 | [Users Opening and Reading the Local Device Identity Key](github-only-users-opening-and-reading-the-local-device-identity-key-9feddda0-6f46-43b4-a54f-5921e2b136b8-8ee3fb2f.md) | Credential Access | 🔗 GitHub Only |
+| [Utimaco ESKM - After-hours KMIP activity](utimaco-enterprise-secure-key-manager-utimaco-eskm-after-hours-kmip-activity-9b1a3b3e-7e16-4a3b-8a8f-7f1f2b1c0b04-a52dd019.md) | DefenseEvasion | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
+| [Utimaco ESKM - High-volume private key retrievals by user](utimaco-enterprise-secure-key-manager-utimaco-eskm-high-volume-private-key-retrievals-by-user-9b1a3b3e-7e16-4a3b-8a8f-7f1f2b1c0b03-edf3b4f9.md) | Collection, Exfiltration | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
+| [Utimaco ESKM - New source IPs connecting to KMIP](utimaco-enterprise-secure-key-manager-utimaco-eskm-new-source-ips-connecting-to-kmip-9b1a3b3e-7e16-4a3b-8a8f-7f1f2b1c0b02-fce38bca.md) | InitialAccess | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
+| [Utimaco ESKM - Rare KMIP users in the last 24 hours](utimaco-enterprise-secure-key-manager-utimaco-eskm-rare-kmip-users-in-the-last-24-hours-9b1a3b3e-7e16-4a3b-8a8f-7f1f2b1c0b01-e7cc8841.md) | InitialAccess, Persistence | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
 
 ## V
 

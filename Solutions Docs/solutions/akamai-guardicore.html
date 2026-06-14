@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Akamai Guardicore &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="akamai-guardicore">⚠️ Akamai Guardicore</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/akamai-guardicore.svg" alt="Akamai Guardicore Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Akamai Guardicore Support</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.akamai.com/global-services/support/guardicore-support">https://www.akamai.com/global-services/support/guardicore-support</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Cloud Security,Security - Network</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">Akamai Guardicore - specialist@akamai.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2025-04-23</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore">Akamai Guardicore</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <a href="https://www.akamai.com/products/akamai-guardicore-segmentation">Akamai Guardicore</a> solution for Microsoft Sentinel imports Agents, Assets, Applications, Policy Rules, and incident-related connection enrichment data from a Guardicore Centra instance. The data is ingested via the Codeless Connector Framework (CCF) and Data Collection Rules, with no Azure Function App dependency.</p>
+<p><strong>Underlying Microsoft Technologies used:</strong></p>
+<p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
+<p>a. <a href="https://learn.microsoft.com/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF)</a></p>
+<p>b. <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Logs Ingestion API</a></p>
+<p>c. <a href="https://learn.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview">Data Collection Rules</a></p>
+<p>d. <a href="https://azure.microsoft.com/services/logic-apps/">Azure Logic Apps (Consumption)</a></p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/akamaiguardicore.html">Akamai Guardicore</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>6 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/guardicoreagents-cl.html"><code>GuardicoreAgents_CL</code></a></td>
+  <td><a href="../connectors/akamaiguardicore.html">Akamai Guardicore</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/guardicoreapplications-cl.html"><code>GuardicoreApplications_CL</code></a></td>
+  <td><a href="../connectors/akamaiguardicore.html">Akamai Guardicore</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/guardicoreassets-cl.html"><code>GuardicoreAssets_CL</code></a></td>
+  <td><a href="../connectors/akamaiguardicore.html">Akamai Guardicore</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/guardicoreenrichingconnections-cl.html"><code>GuardicoreEnrichingConnections_CL</code></a></td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/guardicorepolicyrules-cl.html"><code>GuardicorePolicyRules_CL</code></a></td>
+  <td><a href="../connectors/akamaiguardicore.html">Akamai Guardicore</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/guardicoreprocessedincidents-cl.html"><code>GuardicoreProcessedIncidents_CL</code></a></td>
+  <td>-</td>
+  <td>Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>5 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/akamai-guardicore-guardicoreincident-eaef0237.html">GuardicoreIncident</a></td>
+  <td style="text-align:left"><a href="../tables/guardicoreenrichingconnections-cl.html"><code>GuardicoreEnrichingConnections_CL</code></a><br><a href="../tables/guardicoreprocessedincidents-cl.html"><code>GuardicoreProcessedIncidents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/akamai-guardicore-guardicoreinfo-922f455f.html">GuardicoreInfo</a></td>
+  <td style="text-align:left"><a href="../tables/guardicoreagents-cl.html"><code>GuardicoreAgents_CL</code></a><br><a href="../tables/guardicoreapplications-cl.html"><code>GuardicoreApplications_CL</code></a><br><a href="../tables/guardicorepolicyrules-cl.html"><code>GuardicorePolicyRules_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/akamai-guardicore-akamai-guardicore-incident-enrichment-%E2%80%94-one-click-bootstrap-397b7ee6.html">Akamai Guardicore Incident-Enrichment — one-click bootstrap</a></td>
+  <td style="text-align:left">Deploys the entire Akamai Guardicore incident-enrichment stack in one shot: Storage Account + Guardi...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/akamai-guardicore-guardicore-enrichmentrunner-8c6a3647.html">Guardicore-EnrichmentRunner</a></td>
+  <td style="text-align:left">Recurrence-triggered Logic App that drains the GuardicoreConnectionSlots Azure Table work queue, fet...</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/akamai-guardicore-guardicore-processincidentenrichment-185057ea.html">Guardicore-ProcessIncidentEnrichment</a></td>
+  <td style="text-align:left">This playbook reacts to a Microsoft Sentinel incident, computes the 3-slot fan-out over the incident...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>27-04-2026</td>
+  <td>Initial release of the Akamai Guardicore solution as a Codeless Connector Framework (CCF/CCP) solution. Polls Agents, Assets, Applications, and Policy Rules from Guardicore Centra via DCR-based ingestion (no Azure Function App). Includes the <code>Guardicore-ProcessIncidentEnrichment</code> Microsoft Sentinel incident-creation playbook and the <code>Guardicore-EnrichmentRunner</code> recurrence-triggered companion playbook, both implemented natively in Logic Apps. They write to <code>GuardicoreProcessedIncidents_CL</code> and <code>GuardicoreEnrichingConnections_CL</code> via the Logs Ingestion API to a Data Collection Rule using system-assigned managed identity (no workspace shared key required). Two workbooks: Workload Protection Dashboard and Incident Analysis Dashboard.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

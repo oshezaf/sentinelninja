@@ -98,6 +98,10 @@
 <ul>
 <li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
 </ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>AWS IAM Role</strong>: An AWS IAM Role with cross-account trust policy is required.</li>
+</ul>
 <h2 id="setup-instructions">Setup Instructions</h2>
 <blockquote>
 <p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
@@ -129,7 +133,7 @@ To gather data from Imperva, you need to configure the following resources</p>
 <p>When you click the &quot;Add Account&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
 <ul>
 <li><strong>Role ARN</strong> (optional): Enter Role ARN</li>
-<li><strong>Queue URL</strong> (optional): Enter SQL Queue URL</li>
+<li><strong>Queue URL</strong> (optional): Enter SQS Queue URL</li>
 </ul>
 <blockquote>
 <p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>

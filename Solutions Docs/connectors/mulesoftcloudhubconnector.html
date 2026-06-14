@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mulesoft CloudHub Alerts Connector via Codeless Connector Framework &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="mulesoft-cloudhub-alerts-connector">Mulesoft CloudHub Alerts Connector (via Codeless Connector Framework)</h1>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>MulesoftCloudhubConnector</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/mulesoft.html">Mulesoft</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/MuleSoftCloudHubAlerts_ConnectorDefinition.json">MuleSoftCloudHubAlerts_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/MulesoftCloudHubAlerts_DCR.json">MulesoftCloudHubAlerts_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Data%20Connectors/MulesoftCloudHubAlerts_CCF/MulesoftCloudHubAlerts_PollingConfig.json">MulesoftCloudHubAlerts_PollingConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>Basic</code>, <code>Paging</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Mulesoft CloudHub data connector enables you to ingest alerts from Mulesoft CloudHub into Microsoft Sentinel through the CloudHub REST API v2. This connector supports configurable endpoints to accommodate different Mulesoft regions and deployment environments including US Commercial Cloud, EU Cloud, Government Cloud, and on-premises deployments. It uses multi-stream support so you can connect to multiple Mulesoft environments simultaneously. Configure the connector with your Anypoint Platform credentials, environment ID, and optional application name filter to begin collecting data. Use the <code>MuleSoftCloudhub</code> parser to query ingested alerts. Refer to <a href="https://anypoint.mulesoft.com/exchange/portals/anypoint-platform/">Mulesoft CloudHub API documentation</a> for more information about the CloudHub APIs.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/mulesoftcloudhubalerts-cl.html"><code>MulesoftCloudhubAlerts_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and Write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Mulesoft CloudHub API access</strong>: <strong>Mulesoft CloudHub API</strong> access with read permissions is required.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Mulesoft CloudHub Connections</strong></p>
+<p>Manage connections to your Mulesoft CloudHub environments</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before configuring this connector, ensure you have:</p>
+<ol>
+<li><p><strong>Mulesoft Anypoint Platform Account</strong> with appropriate permissions</p>
+</li>
+<li><p><strong>Environment Access</strong> to the CloudHub environment you want to monitor</p>
+</li>
+<li><p><strong>API Access Credentials</strong> (username and password)</p>
+</li>
+<li><p><strong>Environment ID</strong> from your Mulesoft CloudHub console</p>
+</li>
+</ol>
+<h3 id="finding-your-environment-id">Finding Your Environment ID</h3>
+<ol>
+<li><p>Log in to <a href="https://anypoint.mulesoft.com/">Anypoint Platform</a></p>
+</li>
+<li><p>Navigate to <strong>Access Management</strong> &gt; <strong>Environments</strong></p>
+</li>
+<li><p>Select your target environment</p>
+</li>
+<li><p>Copy the Environment ID from the URL or environment details</p>
+</li>
+</ol>
+<p>ℹ️ This connector requires read access to the CloudHub API. Contact your Mulesoft administrator if you don't have the necessary permissions.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
+<ul>
+<li><strong>Connection Alias</strong></li>
+<li><strong>Stream Type</strong></li>
+<li><strong>Base URL</strong></li>
+</ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add Mulesoft CloudHub Connection</strong></p>
+<p><em>Configure a connection to a Mulesoft CloudHub environment</em></p>
+<p>When you click the &quot;Add Connection&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<p><em>Base Configuration</em></p>
+<h3 id="connection-settings">Connection Settings</h3>
+<ul>
+<li><strong>Connection Alias</strong> (required): e.g., US-Production</li>
+<li><strong>Mulesoft API Base URL</strong> (required): https://anypoint.mulesoft.com
+<em>Credentials</em></li>
+</ul>
+<h3 id="authentication">Authentication</h3>
+<ul>
+<li><strong>Username</strong> (required): Your Mulesoft Anypoint Platform username</li>
+<li><strong>Password</strong> (required): Your Mulesoft Anypoint Platform password
+<em>Environment Configuration</em></li>
+</ul>
+<h3 id="environment-settings">Environment Settings</h3>
+<ul>
+<li><strong>Environment ID</strong> (required): CloudHub Environment ID (found in Anypoint Platform)</li>
+<li><strong>Application Name Filter</strong> (optional): Optional: Filter alerts for a specific application</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>2. Monitor and Validate</strong></p>
+<p>Monitor data ingestion and validate connectivity</p>
+<h3 id="post-connection-steps">Post-Connection Steps</h3>
+<ol>
+<li><p><strong>Monitor Connection Status</strong>: Check the connector status in the Data connectors page</p>
+</li>
+<li><p><strong>Validate Data Flow</strong>: Use the sample queries provided to verify data is being collected</p>
+</li>
+<li><p><strong>Review Logs</strong>: Check Azure Monitor logs for any connection or authentication issues</p>
+</li>
+</ol>
+<h3 id="data-collection-schedule">Data Collection Schedule</h3>
+<ul>
+<li><strong>Alerts</strong>: Polled every 5 minutes from <code>/v2/alerts</code> endpoint</li>
+</ul>
+<h3 id="expected-timeline">Expected Timeline</h3>
+<ul>
+<li><p><strong>Initial Data</strong>: Allow 10-15 minutes for initial data to appear</p>
+</li>
+<li><p><strong>Alerts Data</strong>: Available in the <code>MuleSoftCloudhub</code> table</p>
+</li>
+</ul>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<ul>
+<li><p><strong>Authentication errors</strong>: Verify credentials and environment access</p>
+</li>
+<li><p><strong>No data</strong>: Ensure alerts exist in the specified environment</p>
+</li>
+<li><p><strong>Partial data</strong>: Check environment ID and application filter settings</p>
+</li>
+</ul>
+<p>ℹ️ <strong>Sample Query</strong>: <code>MuleSoftCloudhub | where TimeGenerated &gt; ago(24h) | summarize count() by EventSeverity</code></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

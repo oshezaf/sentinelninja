@@ -18,7 +18,6 @@
 - [Schema](#schema)
 - [Solutions](#solutions)
 - [Connectors](#connectors)
-- [Content Items](#content-items-using-this-table)
 
 ## Schema (41 columns)
 
@@ -83,16 +82,6 @@ This table is ingested by the following connectors:
 | [Cisco ETD](../connectors/ciscoetd.md) |  |
 
 ---
-
-## Content Items Using This Table (1)
-
-### Workbooks (1)
-
-**In solution [Cisco ETD](../solutions/cisco-etd.md):**
-
-| Workbook | Selection Criteria |
-|:-------------|:-------------------|
-| [CiscoETD](../content/cisco-etd-ciscoetd-5508b27c.md) |  |
 
 ---
 

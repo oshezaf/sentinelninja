@@ -72,15 +72,16 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/ciscoetd.html">Cisco ETD</a> 🔶</li>
+<li><a href="../connectors/ciscoetdconnectordefinition.html">Cisco Email Threat Defense (ETD)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>2 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -93,6 +94,11 @@
 <tr>
   <td><a href="../tables/ciscoetd-cl.html"><code>CiscoETD_CL</code></a> 🔶</td>
   <td><a href="../connectors/ciscoetd.html">Cisco ETD</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/ciscoetdv2-cl.html"><code>CiscoETDv2_CL</code></a></td>
+  <td><a href="../connectors/ciscoetdconnectordefinition.html">Cisco Email Threat Defense (ETD)</a></td>
   <td>Workbooks</td>
 </tr>
 </tbody>
@@ -127,7 +133,7 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/cisco-etd-ciscoetd-5508b27c.html">CiscoETD</a></td>
-  <td style="text-align:left"><a href="../tables/ciscoetd-cl.html"><code>CiscoETD_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/ciscoetdv2-cl.html"><code>CiscoETDv2_CL</code></a></td>
 </tr>
 </tbody>
 </table>
@@ -141,6 +147,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.0.1</td>
+  <td>19-05-2026</td>
+  <td>Add Cisco ETD CCP <strong>Data Connector</strong></td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>11-02-2024</td>

@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Built-in |
-| **Playbooks using** | 376 |
-| **Solutions** | 60 |
+| **Playbooks using** | 380 |
+| **Solutions** | 62 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/azure/connectors/connectors-native-http) |
 
 ## Playbooks Using This Connector
@@ -26,6 +26,7 @@
 | [Add URL - Netskope](../content/standalone-content-add-url-netskope-185417c7.md) | 📄 Standalone | 0 | 3 |
 | [Advanced ServiceNow Teams Integration Playbook](../content/teams-advanced-servicenow-teams-integration-playbook-50b3e162.md) | [Teams](../solutions/teams.md) | 0 | 1 |
 | [Affected-Key-Credentials-Scanner](../content/standalone-content-affected-key-credentials-scanner-485d372e.md) | 📄 Standalone | 0 | 1 |
+| [Akamai Guardicore Incident-Enrichment — one-click bootstrap](../content/akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 9 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 0 | 2 |
 | [AS-Add-Domains-to-Zscaler-URL-Category](../content/standalone-content-as-add-domains-to-zscaler-url-category-e60580ab.md) | 📄 Standalone | 0 | 5 |
 | [AS-Add-Machine-Logon-Users-to-Incident](../content/standalone-content-as-add-machine-logon-users-to-incident-cd021551.md) | 📄 Standalone | 0 | 2 |
@@ -189,8 +190,10 @@
 | [GIBTIA_Suspicious_ip_tor_node](../content/group-ib-gibtia-suspicious-ip-tor-node-48dd5935.md) | [Group-IB](../solutions/group-ib.md) | 0 | 2 |
 | [GreyNoise-IP-CommunityEnrichment](../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone | 0 | 1 |
 | [GreyNoise-IP-Enrichment](../content/standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone | 0 | 2 |
+| [Guardicore-EnrichmentRunner](../content/akamai-guardicore-guardicore-enrichmentrunner-8c6a3647.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 8 |
 | [Guardicore-Import-Assets](../content/standalone-content-guardicore-import-assets-1db1ba64.md) | 📄 Standalone | 0 | 2 |
 | [Guardicore-Import-Incidents](../content/standalone-content-guardicore-import-incidents-46460c2e.md) | 📄 Standalone | 0 | 3 |
+| [Guardicore-ProcessIncidentEnrichment](../content/akamai-guardicore-guardicore-processincidentenrichment-185057ea.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 0 | 1 |
 | [Guardicore-ThreatIntel](../content/standalone-content-guardicore-threatintel-3c2ad2d1.md) | 📄 Standalone | 0 | 1 |
 | [HaveIBeenPwnedEmail](../content/standalone-content-haveibeenpwnedemail-c80f9114.md) | 📄 Standalone | 0 | 1 |
 | [Illusive-SentinelIncident-Enrichment](../content/illusive-active-defense-illusive-sentinelincident-enrichment-dde1bbd9.md) | [Illusive Active Defense](../solutions/illusive-active-defense.md) | 0 | 5 |
@@ -331,6 +334,7 @@
 | [Spur IP Enrichment](../content/spur-spur-ip-enrichment-9f8c24e8.md) | [Spur](../solutions/spur.md) | 0 | 2 |
 | [spur_alert](../content/standalone-content-spur-alert-3028854a.md) | 📄 Standalone | 0 | 1 |
 | [spur_alert](../content/standalone-content-spur-alert-4d9df5af.md) | 📄 Standalone | 0 | 1 |
+| [StealthTalk - Alert to Microsoft Teams](../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | [StealthTalk](../solutions/stealthtalk.md) | 0 | 1 |
 | [Sync - Incident Comment To M365D On Update](../content/standalone-content-sync-incident-comment-to-m365d-on-update-c5a6b476.md) | 📄 Standalone | 0 | 1 |
 | [Sync Jira from Sentinel - Create incident](../content/atlassianjiraaudit-sync-jira-from-sentinel-create-incident-f5933875.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | 0 | 1 |
 | [Sync Jira to Sentinel - Assigned User](../content/atlassianjiraaudit-sync-jira-to-sentinel-assigned-user-dcc95a9e.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | 0 | 1 |

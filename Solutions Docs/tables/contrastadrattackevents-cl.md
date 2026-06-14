@@ -20,7 +20,7 @@
 - [Content Items](#content-items-using-this-table)
 - [Parsers](#parsers-using-this-table)
 
-## Schema (79 columns)
+## Schema (82 columns)
 
 **Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/ContrastADR%5CData%20Connectors%5CContrastADRCCF/table_attackevents.json)
 
@@ -48,6 +48,7 @@
 | attackPayload_attackerInput_type | string |
 | attackPayload_url | string |
 | attackPayload_value | string |
+| codeLocation | dynamic |
 | codeLocation_file | string |
 | codeLocation_method | string |
 | codeLocation_stack | dynamic |
@@ -89,6 +90,7 @@
 | request_headers_x_request_id | dynamic |
 | request_headers_x_scheme | dynamic |
 | request_method | string |
+| request_parameters | dynamic |
 | request_protocol | string |
 | request_protocolVersion | string |
 | request_queryString | string |
@@ -103,6 +105,7 @@
 | TimeGenerated | datetime |
 | timestamp | datetime |
 | url | string |
+| vectorAnalysis | dynamic |
 | vectorAnalysis_callLocation | string |
 | vectorAnalysis_vectorFields | dynamic |
 

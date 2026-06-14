@@ -16,10 +16,10 @@ The collection method for these connectors could not be automatically determined
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **50** |
+| Total Connectors | **51** |
 | Active | 35 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 14 |
+| Unpublished ⚠️ | 15 |
 
 ## Connectors Using This Method
 
@@ -72,6 +72,7 @@ The collection method for these connectors could not be automatically determined
 | [Sonrai Data Connector](../connectors/sonraidataconnector.md) 🔶 | Sonrai | 1 | [SonraiSecurity](../solutions/sonraisecurity.md) |
 | [Sophos Cloud Optix](../connectors/sophoscloudoptix.md) ⚠️ 🔶 | Sophos | 1 | [Sophos Cloud Optix](../solutions/sophos-cloud-optix.md) |
 | [Squadra Technologies secRMM](../connectors/squadratechnologiessecrmm.md) 🔶 | Squadra Technologies | 1 | [Squadra Technologies SecRmm](../solutions/squadra-technologies-secrmm.md) |
+| [StealthTalk Anomalous Authentication](../connectors/stealthtalkanomalousauth.md) ⚠️ | StealthTalk | 1 | [StealthTalk](../solutions/stealthtalk.md) |
 | [Symantec Integrated Cyber Defense Exchange](../connectors/symantec.md) 🔶 | Symantec | 1 | [Symantec Integrated Cyber Defense](../solutions/symantec-integrated-cyber-defense.md) |
 | [Talon Insights](../connectors/talonlogs.md) 🔶 | Talon Security | 1 | [Talon](../solutions/talon.md) |
 | [Theom](../connectors/theom.md) 🔶 | Theom | 1 | [Theom](../solutions/theom.md) |

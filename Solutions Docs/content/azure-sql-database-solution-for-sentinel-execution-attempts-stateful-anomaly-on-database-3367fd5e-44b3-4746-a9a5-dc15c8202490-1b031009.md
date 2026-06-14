@@ -16,8 +16,8 @@ This query detects batches of distinct SQL queries that execute (or attempt to) 
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | Execution |
+| **Techniques** | T1059, T1059.001, T1059.003 |
 | **Required Connectors** | [AzureSql](../connectors/azuresql.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20SQL%20Database%20solution%20for%20sentinel/Analytic%20Rules/Detection-HotwordsExecutionStatefulAnomalyOnDatabase.yaml) |
 

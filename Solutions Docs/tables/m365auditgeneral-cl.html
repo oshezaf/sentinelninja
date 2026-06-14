@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M365AuditGeneralCL &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+<link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#tables" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="m365auditgeneral_cl">M365AuditGeneral_CL</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API Supported</strong></td>
+  <td style="text-align:left">✓ Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#schema">Schema</a></li>
+<li><a href="#solutions">Solutions</a></li>
+<li><a href="#connectors">Connectors</a></li>
+</ul>
+<h2 id="schema">Schema (321 columns)</h2>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP%5CData%20Connectors%5CM365AuditDLP_CCF/M365Audit_Table.json">Connector definition</a></p>
+<table id="schema-table">
+<thead>
+<tr>
+  <th style="text-align:left">Column Name</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Action</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ProjectAction that was taken</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for action</td>
+</tr>
+<tr>
+  <td style="text-align:left">Actions</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Collection of actions recommended by an investigation</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActionStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Values include: Pending, Running, Waiting on resource, Completed, Failed</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the action, such as email remediation</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActivityParameters</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">JSON string containing activity parameters. For more information, see Microsoft Forms activities</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Email of user that performed the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">ActorYammerUserId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">ID of user that performed the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">AddedIdentities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Collection of GUID of Users or Groups that were added</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdditionalActionsAndResults</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The additional actions that were taken on the email, such as ZAP or Manual Remediation. Also includes the corresponding results</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdminSubmissionDeliveryCheck</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Admin submission system checked the email's policy</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdminSubmissionRegistered</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Admin submission is registered and is pending for processing</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdminSubmissionSubmitted</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Admin submission system submitted the email</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdminSubmissionSubmitting</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Admin submission system is submitting the email</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdminSubmissionTablAllow</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An allow entry in the Tenant Allow/Block List was created at time of submission to immediately take action on similar messages while it is being rescanned</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdminSubmissionTimeout</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Admin submission timed out with no result</td>
+</tr>
+<tr>
+  <td style="text-align:left">AdminSubmissionTriage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Admin submission triaged by grader</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the Agent</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the Agent</td>
+</tr>
+<tr>
+  <td style="text-align:left">AgentType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The type of the Agent - Microsoft (1P), External (3P), Shared by users (Shared), Built by your org (External)</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertEntityId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identifier for the alert entity. This parameter is only applicable to AlertEntityGenerated events</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Guid of the alert</td>
+</tr>
+<tr>
+  <td style="text-align:left">AlertType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the alert. Alert types include: System, Custom</td>
+</tr>
+<tr>
+  <td style="text-align:left">APIsCalled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">APIs called by the AI Tool</td>
+</tr>
+<tr>
+  <td style="text-align:left">Application</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ApplicationMode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Specifies how the sensitivity label was applied to the email message. The Privileged value indicates the label was manually applied by a user. The Standard value indicates the label was auto-applied by a client-side or service-side labeling process</td>
+</tr>
+<tr>
+  <td style="text-align:left">AppName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the app where the event occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">ApprovedBy</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Null if auto approved; otherwise, the username/id</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttachmentData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Data about attachments in the email message that triggered the event</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttachmentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the attachment</td>
+</tr>
+<tr>
+  <td style="text-align:left">Attachments</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A list of attachments received from the third-party data source</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttackSimAdminEvent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of attack sim admin event</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttackSimEvent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of event (user activity or message delivery state)</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttackSimUserSubmission</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user-reported message was actually a phish simulation training message</td>
+</tr>
+<tr>
+  <td style="text-align:left">AttackTechnique</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The attack technique used in the simulation</td>
+</tr>
+<tr>
+  <td style="text-align:left">Audit</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">System information related to the hygiene event</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The authentication checks that are done for the email. Also includes the values for SPF, DKIM, DMARC, and CompAuth</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthenticationMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Authentication method when accessing the message, i.e. OTP, Yahoo, Gmail, Microsoft</td>
+</tr>
+<tr>
+  <td style="text-align:left">AuthenticationStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">0: Success, 1: Failure</td>
+</tr>
+<tr>
+  <td style="text-align:left">AutomationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier that correlates all activities related to each run of the Copilot prompt</td>
+</tr>
+<tr>
+  <td style="text-align:left">BackupItemID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of the Backup Item being restored</td>
+</tr>
+<tr>
+  <td style="text-align:left">BackupItemType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether the Backup Item is a Site / Account / Mailbox</td>
+</tr>
+<tr>
+  <td style="text-align:left">BatchID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for a group of records that are processed together</td>
+</tr>
+<tr>
+  <td style="text-align:left">BillingAzureResourceGroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure resource group chosen for Microsoft Sentinel data lake billing</td>
+</tr>
+<tr>
+  <td style="text-align:left">BillingAzureSubscriptionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Azure subscription chosen for Microsoft Sentinel data lake billing</td>
+</tr>
+<tr>
+  <td style="text-align:left">CampaignID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the attack simulation training campaign</td>
+</tr>
+<tr>
+  <td style="text-align:left">CampaignType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of attack simulation campaign. The different types are simulation campaign, training campaign, simulation automation</td>
+</tr>
+<tr>
+  <td style="text-align:left">CaseId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The identity (GUID) of the eDiscovery case</td>
+</tr>
+<tr>
+  <td style="text-align:left">CaseName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the eDiscovery case</td>
+</tr>
+<tr>
+  <td style="text-align:left">Category</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Category of the alert. Categories include: AccessGovernance, DataGovernance, DataLossPrevention, InsiderRiskManagement, MailFlow, ThreatManagement, Other</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientApplication</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">If the cmdlet was run by an application, as opposed to remote PowerShell, this field contains the application name</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientIP</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IP address of the device that was used when the activity was logged</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientRequestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A GUID that can be used to correlate this cmdlet with portal operations. This information is used only by Microsoft support</td>
+</tr>
+<tr>
+  <td style="text-align:left">ClientUUID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Client UUID of the Viva Glint instance</td>
+</tr>
+<tr>
+  <td style="text-align:left">CmdletVersion</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The build version of the cmdlet when it was run</td>
+</tr>
+<tr>
+  <td style="text-align:left">Comments</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Comments left by the users who have viewed the alert. By default, it's 'New alert'</td>
+</tr>
+<tr>
+  <td style="text-align:left">ComponentFault</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The entity that caused the query to fail. For example, if the query result is too large, the ComponentFault is 'Client'. If an internal error occurred, the ComponentFault is 'Server'</td>
+</tr>
+<tr>
+  <td style="text-align:left">Compute</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Compute selected</td>
+</tr>
+<tr>
+  <td style="text-align:left">Connectors</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The names and GUIDs of the connectors associated with the email</td>
+</tr>
+<tr>
+  <td style="text-align:left">CopilotEventData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Copilot-specific event data including AI system plugins, accessed resources, messages, and model transparency details</td>
+</tr>
+<tr>
+  <td style="text-align:left">CountOfArtifactsBeingAdded</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Number of artifacts being added</td>
+</tr>
+<tr>
+  <td style="text-align:left">CountOfArtifactsBeingRemoved</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">Number of artifacts being removed</td>
+</tr>
+<tr>
+  <td style="text-align:left">CourseID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for a training course</td>
+</tr>
+<tr>
+  <td style="text-align:left">CreationMethodology</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">How the Restore Task was created / edited</td>
+</tr>
+<tr>
+  <td style="text-align:left">CreationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time in UTC when the user performed the activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">CustomSubmission</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Message reported by a user was sent to the organization's custom mailbox as set in the user reported messages settings</td>
+</tr>
+<tr>
+  <td style="text-align:left">DashboardName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the dashboard where the event occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">Data</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The detailed data blob of the alert or alert entity</td>
+</tr>
+<tr>
+  <td style="text-align:left">DatabaseName</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The workspace the command ran on</td>
+</tr>
+<tr>
+  <td style="text-align:left">DatabasesRead</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The list of workspaces read by the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">DatabasesWrite</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The list of workspaces written to by the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataCenterSecurityEventType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of cmdlet event in lock box</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataClassification</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The data classification, if any, for the dashboard where the event occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataDSRControl</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">This in-platform control determines whether survey data is deleted when a user is removed from the Viva Glint platform</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataExportType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Returns 'data' if data export includes messages, notes, files, topics, users and groups; returns 'user' if data export includes users only</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataOnboardingAtSetup</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Data sets ingested during Microsoft Sentinel data lake onboarding</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataOnboardingStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataScanned</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total GBs Scanned</td>
+</tr>
+<tr>
+  <td style="text-align:left">DatasetName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the dataset where the event occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataSources</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A list of source IDs, source names and locations associated to the activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">DataStoreType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates which data store the data was downloaded from. Refer DataStoreType for all possible values</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeeplinkURL</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Deep link URL to an investigation in the Microsoft Defender portal</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeliveryAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original delivery action on the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">DestinationLocationType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Detail</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A description of the event or the activity that occurred in Viva Goals</td>
+</tr>
+<tr>
+  <td style="text-align:left">DetectionMethod</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The detection method or technology used by Defender for Office 365</td>
+</tr>
+<tr>
+  <td style="text-align:left">DetectionType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of detection. For example: Inline, Detected at delivery, Delayed: Detected after delivery, ZAP: Removed after delivery by zero-hour auto purge (ZAP). Events with ZAP detection type are typically preceded by a message with a Delayed detection type</td>
+</tr>
+<tr>
+  <td style="text-align:left">DeviceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Directionality</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifies whether an email message was inbound, outbound, or an intra-org message</td>
+</tr>
+<tr>
+  <td style="text-align:left">DiscardEmployeeIds</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">This in-platform control specifies whether the Employee IDs of previously deleted employees are disregarded or retained in the Viva Glint platform</td>
+</tr>
+<tr>
+  <td style="text-align:left">DomainURL</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The domain URL that was browsed</td>
+</tr>
+<tr>
+  <td style="text-align:left">EditMethodology</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">How the policy was created / edited</td>
+</tr>
+<tr>
+  <td style="text-align:left">EffectiveOrganization</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GUID for the organization impacted by the cmdlet. (Deprecated: This parameter will eventually stop appearing.)</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElevationApprovedTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp for when the elevation was approved</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElevationApprover</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of a Microsoft manager</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElevationDuration</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The duration for which the elevation was active</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElevationRequestId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A unique identifier for the elevation request</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElevationRole</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The role the elevation was requested for</td>
+</tr>
+<tr>
+  <td style="text-align:left">ElevationTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The start time of the elevation</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndpointMetaData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Describes metadata about the document in endpoint that contained the sensitive information</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time in Coordinated Universal Time (UTC) when the eDiscovery activity was ended</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTimeData</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Campaign end time</td>
+</tr>
+<tr>
+  <td style="text-align:left">EndTimeUtc</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Action final status update timestamp</td>
+</tr>
+<tr>
+  <td style="text-align:left">EnforcementMode</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Entities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of one or more affected entities by action</td>
+</tr>
+<tr>
+  <td style="text-align:left">Entity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ProjectEntity the audit was for</td>
+</tr>
+<tr>
+  <td style="text-align:left">EntityType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the alert or alert entity. Entity types include: User, Recipients, Sender, MalwareFamily</td>
+</tr>
+<tr>
+  <td style="text-align:left">EvaluationSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DLP evaluation source (e.g., DlpPolicyEventBasedAssistantOneDriveForBusiness)</td>
+</tr>
+<tr>
+  <td style="text-align:left">Event</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of hygiene event. The values for this parameter are Listed or Delisted</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventDeepLink</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Deep-link to the email event in Threat Explorer or Real-time detections</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional properties about the event</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The ID of the hygiene event type</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">A description of the event or the activity that occurred in Viva Pulse</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventOccurenceTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp of the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Timestamp when the Spark Notebook execution was submitted/started</td>
+</tr>
+<tr>
+  <td style="text-align:left">EventValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user who was impacted</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExceptionInfo</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifies reasons why a policy no longer applies and/or any information about false positive and/or override noted by the end user</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExchangeMetaData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Describes metadata about the email message that contained the sensitive information</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExecutionDuration</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Time taken for query execution, in milliseconds</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExportName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the eDiscovery export</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExportTriggeredAt</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Indicates when the data export was triggered</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExtendedCompletionDate</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The new date to which a closed survey cycle has been extended</td>
+</tr>
+<tr>
+  <td style="text-align:left">ExtendedProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional properties related to the eDiscovery activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">FailureReason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">If KQL query failed, the reason for failure</td>
+</tr>
+<tr>
+  <td style="text-align:left">FailureType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates the type of data import failure. For example, the value incorrectusermapping indicates the item wasn't imported because no user mapping between the third-party data source and Microsoft 365 could be found</td>
+</tr>
+<tr>
+  <td style="text-align:left">FeedBackComponentName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of a specific component within the 360 feedback program</td>
+</tr>
+<tr>
+  <td style="text-align:left">FileId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">ID of the file in the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">FileName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the file in the operation. Appears blank if not relevant to the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">FileSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">FileType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ForAllUsers</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether the activity associated with the agent was captured for the entire organization or not</td>
+</tr>
+<tr>
+  <td style="text-align:left">FormId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Id of the target form</td>
+</tr>
+<tr>
+  <td style="text-align:left">FormName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the current form</td>
+</tr>
+<tr>
+  <td style="text-align:left">FormsUserTypes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The role of the user who performed the action. The values for this parameter are Admin, Owner, Responder, or Coauthor</td>
+</tr>
+<tr>
+  <td style="text-align:left">FormTypes</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Indicates whether this is a Form, Quiz, or Survey</td>
+</tr>
+<tr>
+  <td style="text-align:left">GenericInfo</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Used for comments and other generic information</td>
+</tr>
+<tr>
+  <td style="text-align:left">GraphName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the graph instance</td>
+</tr>
+<tr>
+  <td style="text-align:left">GraphQueryStats</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Collection of response metadata</td>
+</tr>
+<tr>
+  <td style="text-align:left">GraphQueryStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Response of the query or action on graph</td>
+</tr>
+<tr>
+  <td style="text-align:left">GroupName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the group in the operation. Appears blank if not relevant to the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier for the audit record</td>
+</tr>
+<tr>
+  <td style="text-align:left">ImportType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The data import source type</td>
+</tr>
+<tr>
+  <td style="text-align:left">IncidentId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">DLP incident identifier (GUID)</td>
+</tr>
+<tr>
+  <td style="text-align:left">InputParameters</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Parameters given to the tool</td>
+</tr>
+<tr>
+  <td style="text-align:left">Interface</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Interface from where the notebook was run</td>
+</tr>
+<tr>
+  <td style="text-align:left">InternetMessageId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Internet Message Id</td>
+</tr>
+<tr>
+  <td style="text-align:left">InvestigationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Investigation ID/GUID</td>
+</tr>
+<tr>
+  <td style="text-align:left">InvestigationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the investigation</td>
+</tr>
+<tr>
+  <td style="text-align:left">InvestigationType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of the investigation. Can take one of the following values: User-Reported Messages, Zapped Malware, Zapped Phish, Url Verdict Change</td>
+</tr>
+<tr>
+  <td style="text-align:left">Invitation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details of the invite sent to the recipient of the Data Share</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsRetry</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the data connector retried to import the item</td>
+</tr>
+<tr>
+  <td style="text-align:left">IsSoftDelete</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Returns 'true' if the network's data retention policy is set to Soft Delete; returns 'false' if the network's data retention policy is set to Hard Delete</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Additional properties about the object that was modified</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the item (for example, an email message) being imported</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Item IDs associated with the activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The string in the Subject field of the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemNames</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Item names associated with the activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">ItemSize</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">The size of the item being imported</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time of the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobExecutionDurationInSecs</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Time taken for job execution</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GUID of the eDiscovery process</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobRunStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of the job execution</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time of the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobTotalDurationInSecs</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total Duration of the job operation including session</td>
+</tr>
+<tr>
+  <td style="text-align:left">JobType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Type of Job like Notebook, KQL</td>
+</tr>
+<tr>
+  <td style="text-align:left">KernalId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Jupyter KernelId, uniquely identifies the Notebook session</td>
+</tr>
+<tr>
+  <td style="text-align:left">LabelAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The actions specified by the sensitivity label that were applied to the email message before the message entered the mail transport pipeline</td>
+</tr>
+<tr>
+  <td style="text-align:left">LabelAppliedDateTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date the sensitivity label was applied to the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">LabelId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GUID of the sensitivity label applied to the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">LabelName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the sensitivity label applied to the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">LastUpdateTimeUtc</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">UTC time of the last update for an investigation</td>
+</tr>
+<tr>
+  <td style="text-align:left">LatestDeliverylocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The latest delivery location of the email message at the time of the event</td>
+</tr>
+<tr>
+  <td style="text-align:left">Logs</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Logs from the notebook run</td>
+</tr>
+<tr>
+  <td style="text-align:left">MatchedPolicies</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">MDATPDeviceId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">MeetingId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the event/teams meeting in the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">MembershipInformation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Membership information about the group</td>
+</tr>
+<tr>
+  <td style="text-align:left">MemoryPeak</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Memory Peak of the KQL query execution</td>
+</tr>
+<tr>
+  <td style="text-align:left">MessageId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">ID of the message in the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">MessageTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Date and time in Coordinated Universal Time (UTC) the email message was received or sent</td>
+</tr>
+<tr>
+  <td style="text-align:left">ModifiedFields</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A list of attributes that were modified along with its new and old values output as a JSON</td>
+</tr>
+<tr>
+  <td style="text-align:left">ModifiedProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Includes the name of the property that was modified, the new value of the modified object and the previous value of the modified object</td>
+</tr>
+<tr>
+  <td style="text-align:left">Name</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the alert</td>
+</tr>
+<tr>
+  <td style="text-align:left">NameOfDownloadedZipFile</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the compressed file the admin had downloaded from the Data Lake</td>
+</tr>
+<tr>
+  <td style="text-align:left">NetworkMessageId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Exchange Online Network Message Id</td>
+</tr>
+<tr>
+  <td style="text-align:left">NewValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The new value of the setting</td>
+</tr>
+<tr>
+  <td style="text-align:left">NonPiiParameters</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name and value for parameters that were used with the cmdlet that include personal data. (Deprecated: This field will eventually stop appearing and its content will be merged with the Parameters field.)</td>
+</tr>
+<tr>
+  <td style="text-align:left">Object1Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the object (for example, a search, hold, or review set) that was created, accessed, or changed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Object1Name</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the object (for example, a search, hold or review set) that was created, accessed, or changed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Object1Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the eDiscovery object that the user created, deleted, or modified</td>
+</tr>
+<tr>
+  <td style="text-align:left">Object2Id</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the object (for example, a search, hold, or review set) that was created, accessed, or changed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Object2Name</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the object (for example, a search, hold or review set) that was created, accessed, or changed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Object2Type</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of the eDiscovery object that the user created, deleted, or modified</td>
+</tr>
+<tr>
+  <td style="text-align:left">ObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the object that was modified by the activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">OldValue</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The old value or the new setting</td>
+</tr>
+<tr>
+  <td style="text-align:left">OnBehalfOfResId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The resource Id the action was taken on behalf of</td>
+</tr>
+<tr>
+  <td style="text-align:left">Operation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the user or admin activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">A list of extended properties for the setting that was changed. Each property has a Name and Value</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationInput</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Parameters of graph action</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationProperties</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Extra properties, i.e. number of OTP passcode sent, email subject, etc.</td>
+</tr>
+<tr>
+  <td style="text-align:left">OperationStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">0: Success, 1: Failure</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrganizationAdmins</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The admin(s) of the organization in Viva Goals where the event occurred. There can be one or more admins in the organization</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrganizationId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The GUID for your organization's Microsoft 365 tenant</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrganizationName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the organization in Viva Goals where the event was triggered</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrganizationOwner</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The owner of the organization in Viva Goals where the event occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">OrgAppPermission</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Permissions list for an organizational app (entire organization, specific users, or specific groups)</td>
+</tr>
+<tr>
+  <td style="text-align:left">OriginalDeliverylocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The original delivery location of the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">P1Sender</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The MAIL FROM address used in SMTP transmission of the email message between email servers (also known as the 5321.MailFrom address, P1 sender, or envelope sender)</td>
+</tr>
+<tr>
+  <td style="text-align:left">P2Sender</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The From address (also known as the 5322.From address or P2 sender) that's shown in email clients</td>
+</tr>
+<tr>
+  <td style="text-align:left">Parameters</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name and value for parameters that were used with the cmdlet that do not include personal data</td>
+</tr>
+<tr>
+  <td style="text-align:left">PhishConfidenceLevel</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates the confidence level associated with Phish verdict. It can be Normal or High</td>
+</tr>
+<tr>
+  <td style="text-align:left">PlaceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type for the place item that is created/updated/deleted by the request. For example, 'Building', 'Room', 'Desk', and so on</td>
+</tr>
+<tr>
+  <td style="text-align:left">Policy</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of threat policy (for example, Anti-spam or Anti-phish) and related action type (for example, High Confidence Spam, Spam, or Phish) relevant to the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyDetails</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about 1 or more policies that triggered the DLP event</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Guid of the policy that triggered the alert</td>
+</tr>
+<tr>
+  <td style="text-align:left">PolicyMatchInfo</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">PromptText</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Copilot prompt that's run by the LLM</td>
+</tr>
+<tr>
+  <td style="text-align:left">Property</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The tenant wide setting name that was updated by the admin</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProtectionUnitID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Protection Unit ID of the item being restored</td>
+</tr>
+<tr>
+  <td style="text-align:left">ProvisioningStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of provisioning the lake</td>
+</tr>
+<tr>
+  <td style="text-align:left">PulseId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Id of the pulse survey</td>
+</tr>
+<tr>
+  <td style="text-align:left">Query</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">KQL query or notebook executed in the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">QueryFiles</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Input file names used to generate the query. This is specific to the search by file gesture</td>
+</tr>
+<tr>
+  <td style="text-align:left">QueryId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The ID of the query associated with the activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">QueryResponse</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Response from executing the KQL query</td>
+</tr>
+<tr>
+  <td style="text-align:left">QueryText</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The query text associated with the activity, such as a search statistic process or add to review process</td>
+</tr>
+<tr>
+  <td style="text-align:left">Reason</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Details about the hygiene event</td>
+</tr>
+<tr>
+  <td style="text-align:left">Receivers</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">All email addresses in the To, CC, and Bcc fields of the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">Recipient</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Recipient email address</td>
+</tr>
+<tr>
+  <td style="text-align:left">Recipients</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">An array of recipients of the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">RecordNumber</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Used when an audit record is divided into multiple parts due to size. It indicates the sequence of each part within the total splits</td>
+</tr>
+<tr>
+  <td style="text-align:left">RecordType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The type of operation indicated by the record</td>
+</tr>
+<tr>
+  <td style="text-align:left">RelatedAlertIds</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Alerts related to an investigation</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReleaseTo</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The recipient of the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">RemovedIdentities</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Collection of GUID of Users or Groups that were removed</td>
+</tr>
+<tr>
+  <td style="text-align:left">ReportName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the report where the event occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestSource</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Quarantine request come from the Microsoft Defender portal, a cmdlet, or a URLlink</td>
+</tr>
+<tr>
+  <td style="text-align:left">RequestType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of quarantine request performed by a user</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResourceIdentifiers</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Consists of the Azure Active Directory tenant ID</td>
+</tr>
+<tr>
+  <td style="text-align:left">RestoreLocation</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Location that the item is being restored to</td>
+</tr>
+<tr>
+  <td style="text-align:left">RestoreLocationType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Location type that the item is being restored to</td>
+</tr>
+<tr>
+  <td style="text-align:left">RestoreTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Time which the item is being restored to</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultMessage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates the type of failure, such as Duplicate message</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates whether the action was successful or not</td>
+</tr>
+<tr>
+  <td style="text-align:left">ResultTableCount</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Output Table Count</td>
+</tr>
+<tr>
+  <td style="text-align:left">RMSEncrypted</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">RunID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">ID of a specific job run instance</td>
+</tr>
+<tr>
+  <td style="text-align:left">ScenarioType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of automation</td>
+</tr>
+<tr>
+  <td style="text-align:left">Schedule</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Schedule details, if configured for the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">Scope</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Was this event created by a hosted Microsoft 365 service or an on-premises server</td>
+</tr>
+<tr>
+  <td style="text-align:left">Sender</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The email address in the From field of the email message</td>
+</tr>
+<tr>
+  <td style="text-align:left">SenderIp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The IPv4 or IPv6 address that submitted the message</td>
+</tr>
+<tr>
+  <td style="text-align:left">SensitiveInfoDetectionIsIncluded</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Indicates whether the event contains the value of the sensitive data type and surrounding context from the source content</td>
+</tr>
+<tr>
+  <td style="text-align:left">SensitiveInfoTypeData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">ServiceType</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether it is a SharePoint, Exchange, or OneDriveForBusiness policy</td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionDurationInSecs</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Total duration of the session</td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionEndTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">End time for the session</td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Correlation ID for the various code blocks executed with a Spark session</td>
+</tr>
+<tr>
+  <td style="text-align:left">SessionStartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time for the session</td>
+</tr>
+<tr>
+  <td style="text-align:left">Settings</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Settings applied to the eDiscovery activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">Severity</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Severity of the alert. Severity levels include: Low, Medium, High</td>
+</tr>
+<tr>
+  <td style="text-align:left">Sha1</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">Sha256</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">SharePointMetaData</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Describes metadata about the document in SharePoint or OneDrive that contained the sensitive information</td>
+</tr>
+<tr>
+  <td style="text-align:left">SharingInformation</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Information about the person to whom a sharing invitation is sent</td>
+</tr>
+<tr>
+  <td style="text-align:left">Source</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Source of the alert. Sources include: Office 365 Security &amp; Compliance, Cloud App Security</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceApp</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates if the action is from Forms website or from another App</td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceLocationType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">SourceUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The unique identifier of the user from the third-party data source. For example, for a Slack data connector, this property specifies the user Id in Slack workspace</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartTime</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The date and time in Coordinated Universal Time (UTC) when the eDiscovery activity was started</td>
+</tr>
+<tr>
+  <td style="text-align:left">StartTimeUtc</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Start time for an investigation</td>
+</tr>
+<tr>
+  <td style="text-align:left">Status</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Status of the alert. Statuses include: Active, Investigating, Resolved, Dismissed</td>
+</tr>
+<tr>
+  <td style="text-align:left">Subject</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The subject line of the message</td>
+</tr>
+<tr>
+  <td style="text-align:left">SubmissionNotification</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Admin feedback is sent to end user</td>
+</tr>
+<tr>
+  <td style="text-align:left">SubscriptionsEnabled</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of subscriptions enabled for ARG ingestion</td>
+</tr>
+<tr>
+  <td style="text-align:left">SuccessStatus</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Whether the restore operation was successful</td>
+</tr>
+<tr>
+  <td style="text-align:left">SwitchState</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Information about the state of various tenant level switches</td>
+</tr>
+<tr>
+  <td style="text-align:left">SystemOverrides</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Overrides that are applicable to the email. These can be system or user overrides</td>
+</tr>
+<tr>
+  <td style="text-align:left">TableName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the table</td>
+</tr>
+<tr>
+  <td style="text-align:left">Tables</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">List of table names ingested during Microsoft Sentinel data lake onboarding</td>
+</tr>
+<tr>
+  <td style="text-align:left">TablesRead</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The list of tables read by the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">TablesWrite</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">The list of tables written to by the job</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetFilePath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetObjectId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Entra Id of the target user in the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetUserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Email of target user in the operation. Appears blank if not relevant to the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">TargetYammerUserId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">ID of target user in the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">TaskId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique identifier of the periodic data connector instance. Data connectors import data in periodic intervals</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreadId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">ID of the Message thread in the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">ThreatsAndDetectionTech</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The threats and the corresponding detection technologies. This field exposes all the threats on an email message, including the latest addition on spam verdict</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeData</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Campaign launch time</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimeGenerated</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The time when the event was generated</td>
+</tr>
+<tr>
+  <td style="text-align:left">TimestampUtc</td>
+  <td style="text-align:left">datetime</td>
+  <td style="text-align:left">The timestamp of the action status change</td>
+</tr>
+<tr>
+  <td style="text-align:left">ToolID</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Identifier of the AI Tool</td>
+</tr>
+<tr>
+  <td style="text-align:left">ToolName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Name of the AI Tool</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalCPU</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total CPU Duration of the run</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalCpuHours</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total CPU Duration of the run</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalRows</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Total Rows returned from query execution. List of values if multiple queries executed at once</td>
+</tr>
+<tr>
+  <td style="text-align:left">TotalSCUHours</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Total SCUs used in the run</td>
+</tr>
+<tr>
+  <td style="text-align:left">TriggerMode</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The schedule for when the Copilot prompt runs, shown in cron format</td>
+</tr>
+<tr>
+  <td style="text-align:left">URLPath</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The URL that was browsed</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAction</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Indicates what action user had performed on the data store. Refer DataLakeUserAction for all possible values</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAgent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The user agent (browser details) of the user who triggered the event. UserAgent might not be present in case of a system generated event</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserAssignments</td>
+  <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Collection of GUID of Users and Groups associated with the agent activity</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserCancelled</td>
+  <td style="text-align:left">bool</td>
+  <td style="text-align:left">Whether the specific activity was cancelled by the user</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserDisplayName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The display name of the user involved in the attack simulation training campaign</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserId</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The UPN of the user who performed the action</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserKey</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">An alternative ID for the user identified in the UserId property</td>
+</tr>
+<tr>
+  <td style="text-align:left">Username</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the user who triggered the event</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserRole</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The role of the user who triggered this event in Viva Goals. This value mentions if the user is an organization admin or an owner</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserServicePlan</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The service plan assigned to the user who ran the cmdlet</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserSubmission</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">Submission was first reported by an end user</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserSubmissionTriage</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">User submission is triaged by grader</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserTrainingEvent</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The type of user training event</td>
+</tr>
+<tr>
+  <td style="text-align:left">UserType</td>
+  <td style="text-align:left">int</td>
+  <td style="text-align:left">The type of user that performed the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">Verdict</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The message verdict</td>
+</tr>
+<tr>
+  <td style="text-align:left">VersionId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Version ID of the file in the operation</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workload</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Microsoft 365 service where the activity occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">WorkSpaceName</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The name of the workspace where the event occurred</td>
+</tr>
+<tr>
+  <td style="text-align:left">WpaUserRole</td>
+  <td style="text-align:left">string</td>
+  <td style="text-align:left">The Viva Insights role of the user who performed the action</td>
+</tr>
+<tr>
+  <td style="text-align:left">YammerNetworkId</td>
+  <td style="text-align:left">long</td>
+  <td style="text-align:left">Network ID of the user that performed the operation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="solutions">Solutions (1)</h2>
+<p>This table is used by the following solutions:</p>
+<ul>
+<li><a href="../solutions/microsoft-365-audit-general-and-dlp.html">Microsoft 365 Audit General and DLP</a></li>
+</ul>
+<h2 id="connectors">Connectors (2)</h2>
+<p>This table is ingested by the following connectors:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../connectors/m365auditdlpccpdefinition.html">Microsoft 365 Audit.DLP</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/m365auditgeneralccpdefinition.html">Microsoft 365 Audit.General</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#tables">Back to Tables Index</a></p>
+
+</div>
+<script>
+$(function() {
+    var t = $('#schema-table');
+    if (!t.length) return;
+    // Add filter row to thead
+    var hdr = t.find('thead');
+    var cols = hdr.find('tr:first th').length;
+    var fr = $('<tr class="filters"></tr>');
+    for (var i = 0; i < cols; i++) fr.append('<th><input type="text" placeholder="Filter…"></th>');
+    hdr.append(fr);
+    // Init DataTable
+    var dt = t.DataTable({
+        paging: false,
+        info: true,
+        orderCellsTop: true,
+        dom: 'frti',
+    });
+    // Per-column filter
+    hdr.find('tr.filters input').each(function(i) {
+        $(this).on('keyup change', function() {
+            dt.column(i).search(this.value).draw();
+        });
+    });
+});
+</script>
+</body>
+</html>

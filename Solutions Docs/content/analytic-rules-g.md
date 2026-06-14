@@ -1,6 +1,6 @@
 # Analytic Rules - G
 
-**122 analytic rules** starting with 'G'.
+**126 analytic rules** starting with 'G'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -78,6 +78,10 @@
 | [Google DNS - Possible data exfiltration](googlecloudplatformdns-google-dns-possible-data-exfiltration-705bed63-668f-4508-9d2d-26faf4010700-4755c5a5.md) | High | 📦 [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | [Google DNS - Request to dynamic DNS service](googlecloudplatformdns-google-dns-request-to-dynamic-dns-service-09fc03e0-daec-4b22-8afa-4bba30d7e909-53e7965a.md) | Medium | 📦 [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
 | [Google DNS - UNC2452 (Nobelium) APT Group activity](googlecloudplatformdns-google-dns-unc2452-nobelium-apt-group-activity-22a613ea-c338-4f91-bbd3-3be97b00ebf9-74349df9.md) | High | 📦 [GoogleCloudPlatformDNS](../solutions/googlecloudplatformdns.md) |
+| [Google SecOps - Detection Alerts](googlesecops-google-secops-detection-alerts-f6b0c254-8f7d-4a1b-d5c2-0e4a6b9f2d8a-5c1e3e3b.md) | Medium | 📦 [GoogleSecOps](../solutions/googlesecops.md) |
+| [Google SecOps - GCTI Threat Intelligence Finding](googlesecops-google-secops-gcti-threat-intelligence-finding-b3e7f921-5c4a-4d8e-a2f9-7b1d3e6c9a5f-d7741376.md) | High | 📦 [GoogleSecOps](../solutions/googlesecops.md) |
+| [Google SecOps - Multi-Event Correlated Alert](googlesecops-google-secops-multi-event-correlated-alert-d4f8a032-6d5b-4e9f-b3a0-8c2e4f7d0b6e-b1a07461.md) | High | 📦 [GoogleSecOps](../solutions/googlesecops.md) |
+| [Google SecOps - Single-Event Alert](googlesecops-google-secops-single-event-alert-e5a9b143-7e6c-4f0a-c4b1-9d3f5a8e1c7f-4b55b757.md) | High | 📦 [GoogleSecOps](../solutions/googlesecops.md) |
 | [Google Threat Intelligence - Threat Hunting Domain](google-threat-intelligence-google-threat-intelligence-threat-hunting-domain-d9e1646c-dc17-4150-ac85-581f5c9cb41f-473cd3b4.md) | Medium | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - Threat Hunting Hash](google-threat-intelligence-google-threat-intelligence-threat-hunting-hash-8f9cd0e5-b4ab-4821-95e2-1082fcd784c7-681b75ff.md) | Medium | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [Google Threat Intelligence - Threat Hunting IP](google-threat-intelligence-google-threat-intelligence-threat-hunting-ip-7edb2abb-7ef7-4685-92eb-a628703ccf9f-694732dc.md) | Medium | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |

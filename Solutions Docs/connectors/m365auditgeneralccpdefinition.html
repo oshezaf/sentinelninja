@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Microsoft 365 Audit.General &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="microsoft-365-auditgeneral">⚠️ Microsoft 365 Audit.General</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/office365_logo.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>M365AuditGeneralCCPDefinition</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Marko Lauren</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/microsoft-365-audit-general-and-dlp.html">Microsoft 365 Audit General and DLP</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP/Data%20Connectors/M365AuditGeneral_CCF/M365AuditGeneral_ConnectorDefinition.json">M365AuditGeneral_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP/Data%20Connectors/M365AuditGeneral_CCF/M365Audit_DCR.json">M365Audit_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Microsoft%20365%20Audit%20General%20and%20DLP/Data%20Connectors/M365AuditGeneral_CCF/M365AuditGeneral_PollerConfig.json">M365AuditGeneral_PollerConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>OAuth2</code>, <code>Paging</code>, <code>Nested</code></td>
+</tr>
+</tbody>
+</table>
+<p>Microsoft 365 Audit.General connector ingests <strong>all SharePoint, Exchange, Teams, and Azure Active Directory events</strong> from the Office 365 Management Activity API.</p>
+<p>Data is ingested to a custom <strong>M365AuditGeneral_CL</strong> table with <strong>321 columns</strong> supporting all Office 365 record types and workloads.</p>
+<p><strong>Prerequisites:</strong> Entra ID app with Office 365 Management API permissions and Audit.General subscription.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/m365auditgeneral-cl.html"><code>M365AuditGeneral_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>Office 365 Management API credentials</strong>: An Entra ID application registration with <strong>Client ID</strong> and <strong>Client Secret</strong>. The application must have <strong>Office 365 Management APIs - ActivityFeed.Read</strong> permission and an active subscription to the <strong>Audit.General</strong> content type.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Register an Entra ID Application</strong></p>
+<ol>
+<li>Go to <strong>Microsoft Entra ID</strong> &gt; <strong>App registrations</strong> &gt; <strong>New registration</strong></li>
+<li>Name: <code>Sentinel-M365Audit</code> (or your preferred name)</li>
+<li><strong>Supported account types</strong>: Accounts in this organizational directory only</li>
+<li>Click <strong>Register</strong></li>
+<li>Note the <strong>Application (client) ID</strong> - you'll need this later</li>
+<li>Go to <strong>Certificates &amp; secrets</strong> &gt; <strong>New client secret</strong></li>
+<li>Add a description, set expiration, click <strong>Add</strong></li>
+<li><strong>Copy the secret Value immediately</strong> - it won't be shown again</li>
+</ol>
+<p><strong>2. Configure API Permissions</strong></p>
+<ol>
+<li>In your app registration, go to <strong>API permissions</strong> &gt; <strong>Add a permission</strong></li>
+<li>Select <strong>Office 365 Management APIs</strong></li>
+<li>Choose <strong>Application permissions</strong></li>
+<li>Select <strong>ActivityFeed.Read</strong></li>
+<li>Click <strong>Add permissions</strong></li>
+<li>Click <strong>Grant admin consent</strong> for your tenant</li>
+<li>Verify the permission shows as <strong>Granted</strong></li>
+</ol>
+<p><strong>3. Subscribe to Audit.General Content</strong></p>
+<p>[concat('Run this PowerShell script to subscribe to the Audit.General content type (required before data flows):</p>
+<pre><code class="language-powershell"># Replace with your values
+$tenantId = ''YOUR_TENANT_ID''
+$clientId = ''YOUR_CLIENT_ID''
+$clientSecret = ''YOUR_CLIENT_SECRET''
+$publisherId = $tenantId  # Publisher identifier is your tenant ID
+
+# Get OAuth token
+$body = @{
+    grant_type    = ''client_credentials''
+    client_id     = $clientId
+    client_secret = $clientSecret
+    resource      = ''https://manage.office.com''
+}
+$tokenResponse = Invoke-RestMethod -Method Post -Uri &quot;', environment().authentication.loginEndpoint, '$tenantId/oauth2/token&quot; -Body $body
+$token = $tokenResponse.access_token
+
+# Start subscription
+$headers = @{Authorization = &quot;Bearer $token&quot;}
+$subscribeUri = &quot;https://manage.office.com/api/v1.0/$tenantId/activity/feed/subscriptions/start?contentType=Audit.General&amp;PublisherIdentifier=$publisherId&quot;
+Invoke-RestMethod -Method Post -Uri $subscribeUri -Headers $headers
+```')]
+
+**4. Connect the Data Connector**
+
+Provide your Entra ID application credentials below. The connector will automatically use your subscription's tenant ID for authentication and API calls.
+- **OAuth Configuration**:
+  - Application (Client) ID
+  - Client Secret Value
+  - Click 'Connect' to authenticate
+
+---
+
+**Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
+
+↑ [Back to Connectors Index](../connectors-index.md)
+
+</code></pre>
+
+</div>
+
+</body>
+</html>

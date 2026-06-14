@@ -16,8 +16,8 @@ This query batches of distinct SQL queries that failed with error codes that mig
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | InitialAccess, CredentialAccess |
+| **Techniques** | T1190, T1110.001, T1110.002 |
 | **Required Connectors** | [AzureSql](../connectors/azuresql.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20SQL%20Database%20solution%20for%20sentinel/Analytic%20Rules/Detection-ErrorsCredentialStatefulAnomalyOnDatabase.yaml) |
 

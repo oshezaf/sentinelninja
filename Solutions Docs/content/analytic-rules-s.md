@@ -1,6 +1,6 @@
 # Analytic Rules - S
 
-**169 analytic rules** starting with 'S'.
+**175 analytic rules** starting with 'S'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -29,6 +29,8 @@
 | [Samsung Knox - Suspicious URL Accessed Events](samsung-knox-asset-intelligence-samsung-knox-suspicious-url-accessed-events-18d4d4f3-6605-4fd2-968c-82c171409c1c-1eff2715.md) | High | 📦 [Samsung Knox Asset Intelligence](../solutions/samsung-knox-asset-intelligence.md) |
 | [SAP ETD - Execution of Sensitive Function Module](sap-etd-cloud-sap-etd-execution-of-sensitive-function-module-c6111e06-11e2-45eb-86ef-28313a06db35-96b35578.md) | Medium | 📦 [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | [SAP ETD - Login from unexpected network](sap-etd-cloud-sap-etd-login-from-unexpected-network-5dd72ebe-03ac-43ac-851b-68cfe5106e4f-bc0de3f5.md) | Medium | 📦 [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
+| [SAP ETD - No new data received](sap-etd-cloud-sap-etd-no-new-data-received-a9206c5a-3e72-4c10-807f-313a56075b20-e0dd0f13.md) | High | 📦 [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
+| [SAP ETD - SAP system stopped reporting data](sap-etd-cloud-sap-etd-sap-system-stopped-reporting-data-b1413b43-9410-46f4-94d9-da507105d834-06d70879.md) | High | 📦 [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | [SAP ETD - Synch alerts](sap-etd-cloud-sap-etd-synch-alerts-7a830484-e349-4527-85f6-7850c468c238-8305da5b.md) | Medium | 📦 [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | [SAP ETD - Synch investigations](sap-etd-cloud-sap-etd-synch-investigations-5096db53-fad3-4844-a264-246f7b7e6e06-9c9e9b19.md) | High | 📦 [SAP ETD Cloud](../solutions/sap-etd-cloud.md) |
 | [SAP LogServ - HANA DB - Assign Admin Authorizations](sap-logserv-sap-logserv-hana-db-assign-admin-authorizations-4981469b-8618-43a7-b44c-5744594fa494-5de53ca7.md) | High | 📦 [SAP LogServ](../solutions/sap-logserv.md) |
@@ -140,6 +142,10 @@
 | [Stale last password change](senservapro-stale-last-password-change-645a8724-5c7e-4a1f-81cb-c33aff1439eb-b265e3ab.md) | Low | 📦 [SenservaPro](../solutions/senservapro.md) |
 | [Star Blizzard C2 Domains August 2022](standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) | High | 📄 Standalone Content |
 | [Starting or Stopping HealthService to Avoid Detection](windows-security-events-starting-or-stopping-healthservice-to-avoid-detection-2bc7b4ae-eeaa-4538-ba15-ef298ec1ffae-cde90857.md) | Medium | 📦 [Windows Security Events](../solutions/windows-security-events.md) |
+| [StealthTalk - After hours work](stealthtalk-stealthtalk-after-hours-work-e3a8b2f1-5c7d-4d89-9b6e-0f1a2c3d4e5f-f70b1be5.md) | Low | 📦 [StealthTalk](../solutions/stealthtalk.md) |
+| [StealthTalk - Login outside work zone](stealthtalk-stealthtalk-login-outside-work-zone-a7c3e9b1-4f5d-4e2a-9b8c-1d2e3f4a5b6c-f2762d8d.md) | High | 📦 [StealthTalk](../solutions/stealthtalk.md) |
+| [StealthTalk - Multi new devices registration](stealthtalk-stealthtalk-multi-new-devices-registration-f9d4c2a8-1b6e-4a3f-9c7d-8e2b1a3c5d7e-8e98d5a7.md) | Medium | 📦 [StealthTalk](../solutions/stealthtalk.md) |
+| [StealthTalk - Password brute force](stealthtalk-stealthtalk-password-brute-force-b8e5f3a2-9c4d-4d1f-8a7b-3c2d1e0f9a8b-057ae82f.md) | High | 📦 [StealthTalk](../solutions/stealthtalk.md) |
 | [Stopping multiple processes using taskkill](microsoft-defender-xdr-stopping-multiple-processes-using-taskkill-4dd31bd5-11a3-4b9c-a7c5-4927ab4f2a77-6e396de6.md) | Medium | 📦 [Microsoft Defender XDR](../solutions/microsoft-defender-xdr.md) |
 | [Storage Accounts Alerts From Prancer](prancer-pensuiteai-integration-storage-accounts-alerts-from-prancer-4adf2b5d-6b88-4b96-8cc2-a3c7fbbee10b-3428feb9.md) | High | 📦 [Prancer PensuiteAI Integration](../solutions/prancer-pensuiteai-integration.md) |
 | [Storage Deleted](veeam-storage-deleted-7cf8c19b-6cd2-4d0c-814b-45d34e68568b-1589fb76.md) | High | 📦 [Veeam](../solutions/veeam.md) |

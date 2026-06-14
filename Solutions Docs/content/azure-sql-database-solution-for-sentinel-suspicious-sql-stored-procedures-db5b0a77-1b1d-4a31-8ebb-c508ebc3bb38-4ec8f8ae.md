@@ -13,8 +13,8 @@ This hunting query will detect SQL queries where suspicious stored procedures ar
 | **Type** | Hunting Query |
 | **Solution** | [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | **ID** | `db5b0a77-1b1d-4a31-8ebb-c508ebc3bb38` |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | Execution |
+| **Techniques** | T1505.001, T1059.003 |
 | **Required Connectors** | [AzureSql](../connectors/azuresql.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20SQL%20Database%20solution%20for%20sentinel/Hunting%20Queries/HuntingQuery-SuspiciousStoredProcedures.yaml) |
 

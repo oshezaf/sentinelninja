@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://data443.com/support](https://data443.com/support) |
 | **Categories** | Security - Threat Intelligence,Security - Others |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Data443 Risk Mitigation, Inc. - support@data443.com |
 | **First Published** | 2026-04-03 |
 | **Last Updated** | 2026-06-09 |
@@ -151,6 +151,7 @@ All three rules are deployed in disabled state. Enable them from **Analytics > R
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History** |
 |-------------|--------------------------------|-------------------|
+| 3.0.1       | 28-05-2026                     | Fixed data connector DCR stream and KQL transform mapping. Vaikora API response fields now populate the Vaikora_AgentSignals_CL table. |
 | 3.0.0       | 18-04-2026                     | Initial Vaikora AI Agent Behavioral Signals **CCF solution** package with data connector, analytics rules and workbook. |
 
 ---

@@ -18,8 +18,8 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **39** |
-| Active | 37 |
+| Total Connectors | **40** |
+| Active | 38 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 2 |
 
@@ -39,6 +39,7 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 | [Halcyon Connector](../connectors/halcyonpush.md) | Halcyon | 1 | [Halcyon](../solutions/halcyon.md) |
 | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Jamf | 3 | [Jamf Protect](../solutions/jamf-protect.md) |
 | [Keeper Security Push Connector](../connectors/keepersecuritypush2.md) | Keeper Security | 1 | [Keeper Security](../solutions/keeper-security.md) |
+| [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | Microsoft | 1 | [Mulesoft](../solutions/mulesoft.md) |
 | [NordStellar (Push)](../connectors/nordstellarpush.md) | Nord Security Inc. | 1 | [NordStellar](../solutions/nordstellar.md) |
 | [Obsidian Datasharing Connector](../connectors/obsidiandatasharing.md) | Obsidian Security | 2 | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |
 | [Onapsis Defend Integration](../connectors/onapsis.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |

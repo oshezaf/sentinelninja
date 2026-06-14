@@ -6,7 +6,7 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ---
 
-**95 products** with 91 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**96 products** with 92 source parser pairs covering 11 schemas. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 ## Products Overview
 
@@ -82,8 +82,9 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 | [Palo Alto PAN-OS](#palo-alto-pan-os) | 1 | 1 | 1 |
 | [Palo Alto PAN-OS GlobalProtect](#palo-alto-pan-os-globalprotect) | 1 | 1 | 1 |
 | [Palo Alto PanOS](#palo-alto-panos) | 1 | 1 | 1 |
+| [Palo Alto XDR](#palo-alto-xdr) | 1 | 1 | 1 |
 | [PostgreSQL](#postgresql) | 1 | 1 | 1 |
-| [Salesforce Service Cloud](#salesforce-service-cloud) | 1 | 1 | 1 |
+| [Salesforce Service Cloud](#salesforce-service-cloud) | 2 | 2 | 2 |
 | [Security Events](#security-events) | 6 | 2 | 2 |
 | [SentinelOne](#sentinelone) | 9 | 9 | 1 |
 | [SonicWall](#sonicwall) | 2 | 2 | 1 |
@@ -1005,6 +1006,18 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimNetworkSessionPaloAltoCEF](asimnetworksessionpaloaltocef.md)<br>vim: [vimNetworkSessionPaloAltoCEF](vimnetworksessionpaloaltocef.md) | NetworkSession | [CommonSecurityLog](../tables/commonsecuritylog.md) | 0.7.1 |
 
+## Palo Alto XDR
+
+**Schemas:** AlertEvent
+
+**Tables:** [PaloAltoCortexXDR_Alerts_CL](../tables/paloaltocortexxdr-alerts-cl.md)
+
+### Parsers
+
+| Parser | Schema | Tables | Version |
+|:-------|:-------|:-------|:--------|
+| ASim: [ASimAlertEventPaloAltoXDR](asimalerteventpaloaltoxdr.md)<br>vim: [vimAlertEventPaloAltoXDR](vimalerteventpaloaltoxdr.md) | AlertEvent | [PaloAltoCortexXDR_Alerts_CL](../tables/paloaltocortexxdr-alerts-cl.md) | 0.1.0 |
+
 ## PostgreSQL
 
 **Schemas:** Authentication
@@ -1019,15 +1032,16 @@ This index organizes ASIM parsers by the product or data source they normalize. 
 
 ## Salesforce Service Cloud
 
-**Schemas:** Authentication
+**Schemas:** Authentication, WebSession
 
-**Tables:** [SalesforceServiceCloud_CL](../tables/salesforceservicecloud-cl.md)
+**Tables:** [SalesforceServiceCloudV2_CL](../tables/salesforceservicecloudv2-cl.md), [SalesforceServiceCloud_CL](../tables/salesforceservicecloud-cl.md)
 
 ### Parsers
 
 | Parser | Schema | Tables | Version |
 |:-------|:-------|:-------|:--------|
 | ASim: [ASimAuthenticationSalesforceSC](asimauthenticationsalesforcesc.md)<br>vim: [vimAuthenticationSalesforceSC](vimauthenticationsalesforcesc.md) | Authentication | [SalesforceServiceCloud_CL](../tables/salesforceservicecloud-cl.md) | 0.1.0 |
+| ASim: [ASimWebSessionSalesforceServiceCloudV2](asimwebsessionsalesforceservicecloudv2.md)<br>vim: [vimWebSessionSalesforceServiceCloudV2](vimwebsessionsalesforceservicecloudv2.md) | WebSession | [SalesforceServiceCloudV2_CL](../tables/salesforceservicecloudv2-cl.md) | 0.1.0 |
 
 ## Security Events
 

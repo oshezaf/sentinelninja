@@ -19,19 +19,19 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **90** |
-| Active | 86 |
+| Total Connectors | **92** |
+| Active | 87 |
 | Deprecated 🚫 | 0 |
-| Unpublished ⚠️ | 4 |
+| Unpublished ⚠️ | 5 |
 
 ### By Collection Method
 
 | Collection Method | Count |
 |:-----------------|------:|
-| [Azure Function](../methods/azure-function.md) | 43 |
-| [CCF Push](../methods/ccf-push.md) | 39 |
+| [Azure Function](../methods/azure-function.md) | 44 |
+| [CCF Push](../methods/ccf-push.md) | 40 |
 | [CCF](../methods/ccf.md) | 8 |
-| **Total** | **90** |
+| **Total** | **92** |
 
 ## Connectors Using This API
 
@@ -57,6 +57,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [ExtraHop Detections Data Connector](../connectors/extrahop.md) | [Azure Function](../methods/azure-function.md) | ExtraHop | 1 | [ExtraHop](../solutions/extrahop.md) |
 | [Flare Push Connector](../connectors/fireworkpush.md) | [CCF Push](../methods/ccf-push.md) | Flare Systems | 1 | [Flare](../solutions/flare.md) |
 | [Gigamon AMX Connector](../connectors/gigamondefinition.md) | [CCF Push](../methods/ccf-push.md) | GigamonDefinition | 1 | [Gigamon Connector](../solutions/gigamon-connector.md) |
+| [Google SecOps Detection Alerts](../connectors/gsdetectionalerts.md) ⚠️ | [Azure Function](../methods/azure-function.md) | Google | 1 | [GoogleSecOps](../solutions/googlesecops.md) |
 | [Halcyon Connector](../connectors/halcyonpush.md) | [CCF Push](../methods/ccf-push.md) | Halcyon | 1 | [Halcyon](../solutions/halcyon.md) |
 | [Illumio SaaS](../connectors/illumiosaasdataconnector.md) | [Azure Function](../methods/azure-function.md) | Illumio | 2 | [IllumioSaaS](../solutions/illumiosaas.md) |
 | [Illumio Saas](../connectors/illumiosaasccfdefinition.md) ⚠️ 🔍 | [CCF](../methods/ccf.md) | Microsoft | 1 | [IllumioSaaS](../solutions/illumiosaas.md) |
@@ -88,6 +89,7 @@ The Log Ingestion API is the modern, recommended method for sending custom data 
 | [Mimecast Secure Email Gateway](../connectors/mimecastsegapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 2 | [Mimecast](../solutions/mimecast.md) |
 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 3 | [Mimecast](../solutions/mimecast.md) |
 | [MongoDB Atlas Logs](../connectors/mongodbatlaslogsazurefunctions.md) | [Azure Function](../methods/azure-function.md) | MongoDB | 1 | [MongoDBAtlas](../solutions/mongodbatlas.md) |
+| [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | [CCF Push](../methods/ccf-push.md) | Microsoft | 1 | [Mulesoft](../solutions/mulesoft.md) |
 | [NordPass](../connectors/nordpass.md) | [Azure Function](../methods/azure-function.md) | NordPass | 1 | [NordPass](../solutions/nordpass.md) |
 | [NordStellar (Push)](../connectors/nordstellarpush.md) | [CCF Push](../methods/ccf-push.md) | Nord Security Inc. | 1 | [NordStellar](../solutions/nordstellar.md) |
 | [Obsidian Datasharing Connector](../connectors/obsidiandatasharing.md) | [CCF Push](../methods/ccf-push.md) | Obsidian Security | 2 | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |

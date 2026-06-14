@@ -8,7 +8,7 @@
 
 Playbooks are automated workflows built on Azure Logic Apps that respond to alerts and incidents. They can perform actions such as enriching alerts with threat intelligence, isolating compromised devices, blocking malicious IPs, notifying stakeholders, or creating tickets in external systems. [Learn more](https://learn.microsoft.com/azure/sentinel/automate-responses-with-playbooks)
 
-**875 playbooks** across all Microsoft Sentinel solutions.
+**879 playbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -67,6 +67,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Affected-Key-Credentials-Scanner](standalone-content-affected-key-credentials-scanner-485d372e.md) | 📄 Standalone Content |
 | [aggregate-ServiceNow-tickets](standalone-content-aggregate-servicenow-tickets-d4e8dc05.md) | 📄 Standalone Content |
 | [AI-Commandline-Analysis](github-only-ai-commandline-analysis-5d127fc0.md) | 🔗 GitHub Only |
+| [Akamai Guardicore Incident-Enrichment — one-click bootstrap](akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | [Alert trigger empty playbook](standalone-content-alert-trigger-empty-playbook-3217f7cb.md) | 📄 Standalone Content |
 | [Armis Update Alert Status](armis-armis-update-alert-status-f60ff46e.md) | 📦 [Armis](../solutions/armis.md) |
 | [AS-Add-Azure-AD-User-Job-Title-to-Incident](standalone-content-as-add-azure-ad-user-job-title-to-incident-17fd9655.md) | 📄 Standalone Content |
@@ -459,8 +460,10 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [Google Threat Intelligence - URL Enrichment](google-threat-intelligence-google-threat-intelligence-url-enrichment-70256210.md) | 📦 [Google Threat Intelligence](../solutions/google-threat-intelligence.md) |
 | [GreyNoise-IP-CommunityEnrichment](standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone Content |
 | [GreyNoise-IP-Enrichment](standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone Content |
+| [Guardicore-EnrichmentRunner](akamai-guardicore-guardicore-enrichmentrunner-8c6a3647.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | [Guardicore-Import-Assets](standalone-content-guardicore-import-assets-1db1ba64.md) | 📄 Standalone Content |
 | [Guardicore-Import-Incidents](standalone-content-guardicore-import-incidents-46460c2e.md) | 📄 Standalone Content |
+| [Guardicore-ProcessIncidentEnrichment](akamai-guardicore-guardicore-processincidentenrichment-185057ea.md) | 📦 [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | [Guardicore-ThreatIntel](standalone-content-guardicore-threatintel-3c2ad2d1.md) | 📄 Standalone Content |
 
 ## H
@@ -872,6 +875,7 @@ Playbooks are automated workflows built on Azure Logic Apps that respond to aler
 | [SpyCloud Watachlist data - SpyCloud Enterprise](spycloud-enterprise-protection-spycloud-watachlist-data-spycloud-enterprise-6050708e.md) | 📦 [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) |
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone Content |
 | [Start-MDEAutomatedInvestigation](standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone Content |
+| [StealthTalk - Alert to Microsoft Teams](stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | 📦 [StealthTalk](../solutions/stealthtalk.md) |
 | [Summarize Data for DNS Essentials Solution](dns-essentials-summarize-data-for-dns-essentials-solution-bd44274c.md) | 📦 [DNS Essentials](../solutions/dns-essentials.md) |
 | [Summarize Data for Network Session Essentials](network-session-essentials-summarize-data-for-network-session-essentials-a6438aa2.md) | 📦 [Network Session Essentials](../solutions/network-session-essentials.md) |
 | [Summarize Web Session Data](web-session-essentials-summarize-web-session-data-ea664ad8.md) | 📦 [Web Session Essentials](../solutions/web-session-essentials.md) |

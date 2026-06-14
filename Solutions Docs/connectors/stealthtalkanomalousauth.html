@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ StealthTalk Anomalous Authentication &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="stealthtalk-anomalous-authentication">⚠️ StealthTalk Anomalous Authentication</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/StealthTalk/Workbooks/Images/Logo/st-ms-def-hub.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>StealthTalkAnomalousAuth</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">StealthTalk</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/stealthtalk.html">StealthTalk</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/rest-pull-api.html">REST Pull API</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StealthTalk/Data%20Connectors/StealthTalkConnector.json">StealthTalkConnector.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Ingestion API</strong></td>
+  <td style="text-align:left"><a href="../methods/http-data-collector-api.html">HTTP Data Collector API</a> — <em>Connector definition requires workspace key (SharedKey pattern)</em></td>
+</tr>
+</tbody>
+</table>
+<p>The StealthTalk Anomalous Authentication connector ingests four classes of anomalous user-authentication events from the StealthTalk Enterprise messenger into a custom Log Analytics table via the Logs Ingestion API.</p>
+<p>Events:</p>
+<ul>
+<li><p><strong>OffHoursLogin</strong> - login outside the user's configured working hours.</p>
+</li>
+<li><p><strong>NewDeviceLogin</strong> - login from a previously-unseen device.</p>
+</li>
+<li><p><strong>GeoAnomalyLogin</strong> - login from a country/city that does not match the user's assigned geo zone.</p>
+</li>
+<li><p><strong>MultiFailLogin</strong> - multiple consecutive failed authentication attempts.</p>
+</li>
+</ul>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): read and write permissions are required.</li>
+<li><strong>Keys</strong> (Workspace): read permissions to shared keys for the workspace are required. <a href="https://docs.microsoft.com/azure/azure-monitor/platform/agent-windows#obtain-workspace-id-and-key">See the documentation to learn more about workspace keys</a>.</li>
+</ul>
+<p><strong>Custom Permissions:</strong></p>
+<ul>
+<li><strong>StealthTalk Enterprise instance</strong>: A deployed StealthTalk Enterprise tenant with admin access to configure the outgoing webhook to the Log Analytics workspace.</li>
+<li><strong>Microsoft Entra App Registration</strong>: A service principal that StealthTalk uses to authenticate to the Logs Ingestion API. Must have the <strong>Monitoring Metrics Publisher</strong> role on the deployed Data Collection Rule.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. STEP 1 - Auto-deployed ingestion infrastructure (review only)</strong></p>
+<p>When the Solution is installed via the Microsoft Sentinel Content Hub, the following resources are deployed automatically into the workspace's resource group:</p>
+<ol>
+<li><strong>Custom log table</strong> <code>StealthTalkAnomalousAuth_CL</code> (21-field stream).</li>
+<li><strong>Data Collection Endpoint</strong> <code>StealthTalk-Sentinel-DCE</code>.</li>
+<li><strong>Data Collection Rule</strong> <code>StealthTalk-Sentinel-DCR</code> with <code>Custom-StealthTalkAnomalousAuth_CL</code> stream declaration and a one-to-one transform.</li>
+<li><strong>ASIM Authentication 0.1.3 parsers</strong> as workspace saved-search functions: <code>vimAuthenticationStealthTalk</code> (filtering) and <code>ASimAuthenticationStealthTalk</code> (non-filtering).</li>
+<li><strong><code>imAuthentication</code> extension parser</strong> that registers the StealthTalk source in the workspace ASIM Authentication union (overrides Microsoft's <code>imAuthentication</code> saved-search to include the StealthTalk vim parser).</li>
+<li><strong><code>ASimDisabledParsers</code> watchlist</strong> + Microsoft Sentinel onboarding state (idempotent).</li>
+</ol>
+<p>No user action is required at this step beyond installing the Solution. The remaining steps configure StealthTalk to push events into the deployed DCR. Pre-requisite: Microsoft's <code>FullDeploymentAuthentication.json</code> ASIM Authentication parser pack must be deployed in the workspace before this Solution is installed.</p>
+<p><strong>2. STEP 2 - Capture the DCE endpoint and DCR Immutable ID</strong></p>
+<p>In the Azure portal, open the Data Collection Endpoint and Data Collection Rule resources deployed in Step 1:</p>
+<ul>
+<li>From the <strong>Data Collection Endpoint</strong> properties, copy the <strong>Logs Ingestion endpoint URI</strong> (looks like <code>https://stealthtalk-sentinel-dce-&lt;suffix&gt;.&lt;region&gt;.ingest.monitor.azure.com</code>).</li>
+<li>From the <strong>Data Collection Rule</strong> Overview, copy the <strong>Immutable ID</strong> (looks like <code>dcr-&lt;guid&gt;</code>).</li>
+</ul>
+<p>You will paste both values into the StealthTalk admin console in Step 5.</p>
+<p><strong>3. STEP 3 - Create a Microsoft Entra App Registration for StealthTalk</strong></p>
+<p>Create a new App Registration in your Microsoft Entra tenant. Generate a client secret (or use a certificate). Note the <strong>Tenant ID</strong>, <strong>App (client) ID</strong> and <strong>Client secret</strong>. StealthTalk uses this service principal to authenticate to the Logs Ingestion API via OAuth.</p>
+<p><strong>4. STEP 4 - Grant the App Registration the Monitoring Metrics Publisher role on the DCR</strong></p>
+<p>Open the Data Collection Rule deployed in Step 1 -&gt; <strong>Access control (IAM)</strong> -&gt; <strong>+ Add role assignment</strong>.</p>
+<ul>
+<li>Role: <strong>Monitoring Metrics Publisher</strong></li>
+<li>Assign access to: <strong>User, group, or service principal</strong></li>
+<li>Select the App Registration from Step 3</li>
+</ul>
+<p>RBAC role assignments cannot be performed by the Solution install template, so this step is manual.</p>
+<p><strong>5. STEP 5 - Configure StealthTalk to send events</strong></p>
+<p>In the StealthTalk admin console, configure the Microsoft Sentinel/Log Analytics integration with the values captured in Steps 2 and 3:</p>
+<ul>
+<li><strong>DCE endpoint</strong> - the Logs Ingestion endpoint URI from Step 2</li>
+<li><strong>DCR Immutable ID</strong> - from Step 2</li>
+<li><strong>Stream name</strong> - <code>Custom-StealthTalkAnomalousAuth_CL</code></li>
+<li><strong>Tenant ID, App (client) ID, Client secret</strong> - from Step 3</li>
+</ul>
+<p>Save and trigger a test event. The StealthTalk console reports success/failure of the OAuth handshake and the first event delivery.</p>
+<p><strong>6. STEP 6 - Verify ingestion and ASIM normalisation</strong></p>
+<p>Run the <strong>Sample queries</strong> above in <strong>Logs</strong>. All must return rows within a few minutes of test events:</p>
+<ul>
+<li>Raw <code>StealthTalkAnomalousAuth_CL</code> table populated.</li>
+<li>ASIM union view via <code>imAuthentication() | where EventVendor == 'StealthTalk'</code> returns the same events normalised to the ASIM Authentication schema.</li>
+</ul>
+<p>If the raw table is empty: verify the StealthTalk console reports successful OAuth and event delivery, and confirm the App Registration has the <strong>Monitoring Metrics Publisher</strong> role on the DCR (Step 4). If the raw table has rows but ASIM union is empty: re-check that Microsoft's <code>FullDeploymentAuthentication.json</code> parser pack is deployed.</p>
+<p><strong>7. STEP 7 - Enable analytic rules, hunting queries, workbook, and playbook</strong></p>
+<p>In the Microsoft Sentinel <strong>Content hub</strong>, open the <strong>StealthTalk Anomalous Authentication</strong> Solution and click <strong>Manage</strong>. Enable the four Analytic Rule templates, the three Hunting Query templates, the Workbook, and the Microsoft Teams Playbook. For the Playbook, after deployment, grant its system-assigned managed identity the <strong>Microsoft Sentinel Responder</strong> role on the workspace, and grant the <strong>Azure Security Insights</strong> service principal the <strong>Microsoft Sentinel Automation Contributor</strong> role on the playbook's resource group. Then create an <strong>Automation Rule</strong> in Microsoft Sentinel that runs the playbook on incidents from the four StealthTalk analytic rules.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>

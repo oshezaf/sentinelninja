@@ -42,20 +42,24 @@ b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **3 data connector(s)**:
 
 - [MuleSoft Cloudhub](../connectors/mulesoft.md) 🔶
+- [Mulesoft CloudHub Alerts Connector (via Codeless Connector Framework)](../connectors/mulesoftcloudhubconnector.md)
+- [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`MuleSoftCloudhubLogs_CL`](../tables/mulesoftcloudhublogs-cl.md) | [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | - |
 | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) 🔶 | [MuleSoft Cloudhub](../connectors/mulesoft.md) | - |
+| [`MulesoftCloudhubAlerts_CL`](../tables/mulesoftcloudhubalerts-cl.md) | [Mulesoft CloudHub Alerts Connector (via Codeless Connector Framework)](../connectors/mulesoftcloudhubconnector.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -72,13 +76,14 @@ This solution includes **1 content item(s)**:
 
 | Name | Description | Tables Used |
 |:-----|:------------|:------------|
-| [MuleSoftCloudhub](../parsers/mulesoftcloudhub.md) | - | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) *(read)* |
+| [MuleSoftCloudhub](../parsers/mulesoftcloudhub.md) | - | [`MuleSoftCloudhubLogs_CL`](../tables/mulesoftcloudhublogs-cl.md) *(read)*<br>[`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) *(read)*<br>[`MulesoftCloudhubAlerts_CL`](../tables/mulesoftcloudhubalerts-cl.md) *(read)* |
 
 ## Release Notes
 
-| **Version** | **Date Modified (DD-MM-YYY)** | **Change History**                              |
-|-------------|-------------------------------|-------------------------------------------------| 
-| 3.0.2       |	09-09-2024	                  | Updated the python runtime version to 3.11         |
+| **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                              |
+|-------------|-------------------------------|-------------------------------------------------|
+| 3.1.0       | 04-06-2026                    | Added MuleSoft CloudHub `Alerts` CCF Connector & `Logs` CCF Push Connector for real-time log streaming via Log4j HTTP appender. |
+| 3.0.2       | 09-09-2024                    | Updated the python runtime version to 3.11         |
 | 3.0.1       | 13-06-2024                    | Updated **Data Connector** instructions to notify Cloudhub Application support.     |
 
 ---

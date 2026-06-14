@@ -20,7 +20,7 @@
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Schema (22 columns)
+## Schema (23 columns)
 
 **Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/DigitalShadows_CL.json)
 
@@ -32,6 +32,7 @@
 | comments_s | string |
 | Computer | string |
 | description_s | string |
+| gm_link_s | string |
 | id_d | real |
 | id_g | string |
 | impact_description_s | string |

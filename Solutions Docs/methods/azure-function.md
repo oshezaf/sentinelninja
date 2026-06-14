@@ -18,10 +18,10 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **125** |
+| Total Connectors | **126** |
 | Active | 85 |
 | Deprecated 🚫 | 26 |
-| Unpublished ⚠️ | 14 |
+| Unpublished ⚠️ | 15 |
 
 ## Connectors Using This Method
 
@@ -62,6 +62,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Fortinet FortiNDR Cloud](../connectors/fortinetfortindrclouddataconnector.md) 🔶 | Fortinet | 3 | [Fortinet FortiNDR Cloud](../solutions/fortinet-fortindr-cloud.md) |
 | [GitHub (using Webhooks)](../connectors/githubwebhook.md) | Microsoft | 1 | [GitHub](../solutions/github.md) |
 | [GitHub (using Webhooks) V2](../connectors/githubwebhookv2.md) 🔶 | Microsoft | 2 | [GitHub](../solutions/github.md) |
+| [Google SecOps Detection Alerts](../connectors/gsdetectionalerts.md) ⚠️ | Google | 1 | [GoogleSecOps](../solutions/googlesecops.md) |
 | [HackerView Intergration](../connectors/hvpollingidazurefunctions.md) ⚠️ 🔶 | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Holm Security Asset Data](../connectors/holmsecurityassets.md) 🔶 | Holm Security | 2 | [HolmSecurity](../solutions/holmsecurity.md) |
 | [HYAS Protect](../connectors/hyasprotect.md) ⚠️ 🔶 | HYAS | 1 | [HYAS Protect](../solutions/hyas-protect.md) |

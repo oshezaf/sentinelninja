@@ -277,7 +277,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [SalesforceServiceCloud](../content/salesforce-service-cloud-salesforceservicecloud-a9451acb.md) |  |
 
-## Parsers Using This Table (1)
+## Parsers Using This Table (2)
+
+### ASIM Parsers (1)
+
+| Parser | Schema | Product | Selection Criteria |
+|:-------|:-------|:--------|:-------------------|
+| [ASimWebSessionSalesforceServiceCloudV2](../asim/asimwebsessionsalesforceservicecloudv2.md) | WebSession | Salesforce Service Cloud |  |
 
 ### Other Parsers (1)
 

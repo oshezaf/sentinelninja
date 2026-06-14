@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akamai Guardicore Incident-Enrichment — one-click bootstrap &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#content" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="akamai-guardicore-incident-enrichment-one-click-bootstrap">Akamai Guardicore Incident-Enrichment — one-click bootstrap</h1>
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#content">Back to Content Index</a></p>
+<hr />
+<p>Deploys the entire Akamai Guardicore incident-enrichment stack in one shot: Storage Account + GuardicoreConnectionSlots Azure Table, Data Collection Endpoint (or reuses an existing one), Data Collection Rule, two custom log tables, two Logic Apps (trigger playbook + recurrence runner), and the role assignments the Logic Apps' managed identities need to write to the DCR and the storage account. After deployment, the only manual step is wiring the trigger playbook to a Microsoft Sentinel automatio</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Type</strong></td>
+  <td style="text-align:left">Playbook</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution</strong></td>
+  <td style="text-align:left"><a href="../solutions/akamai-guardicore.html">Akamai Guardicore</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Source</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Playbooks/azuredeploy.json">View on GitHub</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="logic-app-connectors">Logic App Connectors</h2>
+<p>This playbook uses <strong>3</strong> Logic App connectors / built-in actions:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Connector / Action</th>
+  <th style="text-align:left">Type</th>
+  <th style="text-align:center">Connections</th>
+  <th style="text-align:center">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuresentinel.html"><code>azuresentinel</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/managed-azuretables.html"><code>azuretables</code></a></td>
+  <td style="text-align:left">Managed</td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">1</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../logic-apps/builtin-http.html"><code>http</code></a></td>
+  <td style="text-align:left">Built-in</td>
+  <td style="text-align:center">0</td>
+  <td style="text-align:center">9</td>
+</tr>
+</tbody>
+</table>
+<details><summary>Action parameters (URLs, paths, function IDs)</summary>
+
+<h4 id="azuretables"><a href="../logic-apps/managed-azuretables.html"><code>azuretables</code></a> (Managed)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Try_insert_slot</td>
+  <td style="text-align:left">post</td>
+  <td style="text-align:left"><code>/Tables/@{encodeURIComponent('GuardicoreConnectionSlots')}/entities</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+<h4 id="http"><a href="../logic-apps/builtin-http.html"><code>http</code></a> (Built-in)</h4>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Action</th>
+  <th style="text-align:left">Method</th>
+  <th style="text-align:left">Endpoint</th>
+  <th style="text-align:left">Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Post_manifest</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('DataCollectionEndpoint'), '/dataCollectionRules/', parameters('DataCollectionRuleImmutableId'), '/streams/Custom-GuardicoreProcessedIncidents_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Authenticate_to_Guardicore</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('GuardicoreUrl'), '/api/v3.0/authenticate')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Claim_pending_slot</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat(parameters('TablesEndpoint'), '/GuardicoreConnectionSlots()')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Atomic_claim</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{concat(parameters('TablesEndpoint'), '/GuardicoreConnectionSlots(PartitionKey=''', outputs('Capture_claimed_row')['PartitionKey'], ''',RowKey=''', outputs('Capture_claimed_row')['RowKey'], ''')')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Fetch_page</td>
+  <td style="text-align:left">GET</td>
+  <td style="text-align:left"><code>@{concat(parameters('GuardicoreUrl'), '/api/v3.0/connections')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Post_chunk</td>
+  <td style="text-align:left">POST</td>
+  <td style="text-align:left"><code>@{concat(parameters('DataCollectionEndpoint'), '/dataCollectionRules/', parameters('DataCollectionRuleImmutableId'), '/streams/Custom-GuardicoreEnrichingConnections_CL?api-version=2023-01-01')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Mark_completed</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{concat(parameters('TablesEndpoint'), '/GuardicoreConnectionSlots(PartitionKey=''', outputs('Capture_claimed_row')['PartitionKey'], ''',RowKey=''', outputs('Capture_claimed_row')['RowKey'], ''')')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Mark_failed_or_retry_on_pagination_error</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{concat(parameters('TablesEndpoint'), '/GuardicoreConnectionSlots(PartitionKey=''', outputs('Capture_claimed_row')['PartitionKey'], ''',RowKey=''', outputs('Capture_claimed_row')['RowKey'], ''')')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+<tr>
+  <td style="text-align:left">Mark_failed_or_retry_on_post_error</td>
+  <td style="text-align:left">PUT</td>
+  <td style="text-align:left"><code>@{concat(parameters('TablesEndpoint'), '/GuardicoreConnectionSlots(PartitionKey=''', outputs('Capture_claimed_row')['PartitionKey'], ''',RowKey=''', outputs('Capture_claimed_row')['RowKey'], ''')')}</code></td>
+  <td style="text-align:left">—</td>
+</tr>
+</tbody>
+</table>
+</details>
+
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Playbooks/readme.md">readme.md</a></em></p>
+</blockquote>
+<h1 id="guardicore-incident-enrichment">Guardicore Incident Enrichment</h1>
+<p>Author: Akamai Guardicore</p>
+<p>This solution ships two Logic Apps that enrich Microsoft Sentinel incidents
+with Guardicore connection data. When an incident is created, the trigger
+playbook extracts IP entities, computes three 5-minute time slots around the
+incident time, and writes slot manifest rows to Microsoft Sentinel. A companion
+recurrence-triggered runner Logic App polls a small Azure Storage Table for
+due slots, fetches Guardicore <code>/api/v3.0/connections</code> for each slot's window</p>
+<ul>
+<li>IP filter, and ingests the results to a second Microsoft Sentinel custom log table.</li>
+</ul>
+<p>There is <strong>no Azure Function App</strong> - both Logic Apps run natively. Ingestion
+goes through a Data Collection Rule using the Logic Apps' system-assigned
+managed identity; no workspace shared key is required.</p>
+<h2 id="quick-deploy">Quick deploy (recommended)</h2>
+<p>The single template <code>azuredeploy.json</code> at this folder bootstraps everything:
+the Storage Account + work queue table, a Data Collection Endpoint (or
+reuses an existing one), the Data Collection Rule, the two custom log
+tables, both Logic Apps, and the role assignments. Click below, fill in the
+form (workspace name + Guardicore credentials), and click <strong>Create</strong>.</p>
+<p><a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAkamai%2520Guardicore%2FPlaybooks%2Fazuredeploy.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAkamai%2520Guardicore%2FPlaybooks%2FcreateUiDefinition.json"><img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" /></a></p>
+<p><a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAkamai%2520Guardicore%2FPlaybooks%2Fazuredeploy.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FSolutions%2FAkamai%2520Guardicore%2FPlaybooks%2FcreateUiDefinition.json"><img src="https://aka.ms/deploytoazuregovbutton" alt="Deploy to Azure Gov" /></a></p>
+<p>The Deploy form has three steps:</p>
+<ol>
+<li><strong>Microsoft Sentinel workspace</strong> - pick the workspace name (and its resource group
+if it's not the same as the deployment RG); optionally paste a resource
+ID for an existing Data Collection Endpoint to reuse.</li>
+<li><strong>Guardicore credentials</strong> - management URL (https only, regex-checked),
+service-account username, password (<code>securestring</code>).</li>
+<li><strong>Advanced (optional)</strong> - override default playbook / runner / storage
+account names. Leave blank for sensible defaults.</li>
+</ol>
+<h2 id="two-manual-steps-after-deploy">Two manual steps after deploy</h2>
+<p>The portal can't fully automate two final touches. Both take ~30 seconds.</p>
+<h3 id="1-authorize-the-microsoft-sentinel-managed-api-connection">1. Authorize the Microsoft Sentinel managed-API connection</h3>
+<p>The trigger playbook deploys a <code>Microsoft.Web/connections</code> resource for
+<code>azuresentinel</code>, configured to authenticate as the playbook's
+system-assigned managed identity. Azure requires a one-time interactive
+&quot;Authorize&quot; click before the connection is usable.</p>
+<ol>
+<li>Resource group -&gt; find connection <code>azuresentinel-Guardicore-ProcessIncidentEnrichment</code>.</li>
+<li>Edit API connection -&gt; confirm <strong>Authentication Type</strong> is <strong>Managed
+Identity</strong> -&gt; click <strong>Authorize</strong> -&gt; <strong>Save</strong>.</li>
+</ol>
+<p>If you skip this, every trigger run fails at the Microsoft Sentinel webhook step
+with <code>Unauthorized</code>.</p>
+<h3 id="2-wire-the-playbook-to-a-microsoft-sentinel-automation-rule">2. Wire the playbook to a Microsoft Sentinel automation rule</h3>
+<p>The trigger playbook only fires when a Microsoft Sentinel automation rule routes an
+incident to it.</p>
+<ol>
+<li>Microsoft Sentinel -&gt; workspace -&gt; Configuration -&gt; Automation.</li>
+<li><strong>Create</strong> -&gt; <strong>Automation rule</strong>.</li>
+<li>Name: <code>Guardicore: enrich on incident creation</code>. Trigger: <strong>When
+incident is created</strong>. Conditions: leave blank for &quot;all incidents&quot; or
+scope to severity / analytic rule.</li>
+<li>Actions: <strong>Run playbook</strong> -&gt; select <code>Guardicore-ProcessIncidentEnrichment</code>
+-&gt; grant permissions when prompted.</li>
+<li>Save.</li>
+</ol>
+<p>If your Microsoft Sentinel workspace lives in a different resource group than the
+deployment, you may also need to grant the trigger playbook's managed
+identity the <strong>Microsoft Sentinel Responder</strong> role on the workspace
+(the consolidated template grants <code>Monitoring Metrics Publisher</code> on the
+DCR and <code>Storage Account Contributor</code> on the storage account
+automatically; the Microsoft Sentinel role is workspace-scoped and the consolidated
+template can't grant it cross-RG safely).</p>
+<h2 id="verify">Verify</h2>
+<p>Trigger a test incident with at least one IP entity and wait ~7 minutes
+(5-minute slot wait + up to one 2-minute runner tick):</p>
+<pre><code class="language-kql">GuardicoreProcessedIncidents_CL
+| where TimeGenerated &gt; ago(15m)
+| take 10
+</code></pre>
+<pre><code class="language-kql">GuardicoreEnrichingConnections_CL
+| where TimeGenerated &gt; ago(15m)
+| take 10
+</code></pre>
+<p>If either is empty after 15 minutes:</p>
+<ul>
+<li>Check Logic App run history for <code>Guardicore-ProcessIncidentEnrichment</code>
+and <code>Guardicore-EnrichmentRunner</code> for failed actions.</li>
+<li>Confirm the <code>Monitoring Metrics Publisher</code> role assignment is in place</li>
+</ul>
+<p><em>[Content truncated...]</em></p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="playbooks.html">Back to Playbooks</a> · <a href="../solutions/akamai-guardicore.html">Back to Akamai Guardicore</a></p>
+
+</div>
+
+</body>
+</html>

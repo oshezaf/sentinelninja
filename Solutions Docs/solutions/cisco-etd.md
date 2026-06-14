@@ -31,20 +31,22 @@ Cisco ETD Solution for Microsoft Microsoft Sentinel makes it easy to connect cis
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+This solution provides **2 data connector(s)**:
 
 - [Cisco ETD](../connectors/ciscoetd.md) 🔶
+- [Cisco Email Threat Defense (ETD)](../connectors/ciscoetdconnectordefinition.md)
 
 > 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
 
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`CiscoETD_CL`](../tables/ciscoetd-cl.md) 🔶 | [Cisco ETD](../connectors/ciscoetd.md) | Workbooks |
+| [`CiscoETD_CL`](../tables/ciscoetd-cl.md) 🔶 | [Cisco ETD](../connectors/ciscoetd.md) | - |
+| [`CiscoETDv2_CL`](../tables/ciscoetdv2-cl.md) | [Cisco Email Threat Defense (ETD)](../connectors/ciscoetdconnectordefinition.md) | Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -61,13 +63,14 @@ This solution includes **1 content item(s)**:
 
 | Name | Tables Used |
 |:-----|:------------|
-| [CiscoETD](../content/cisco-etd-ciscoetd-5508b27c.md) | [`CiscoETD_CL`](../tables/ciscoetd-cl.md) |
+| [CiscoETD](../content/cisco-etd-ciscoetd-5508b27c.md) | [`CiscoETDv2_CL`](../tables/ciscoetdv2-cl.md) |
 
 ## Release Notes
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.0       | 11-02-2024                 | Initial Solution Release                    |
+| 3.0.1       | 19-05-2026                     | Add Cisco ETD CCP **Data Connector**        |
+| 3.0.0       | 11-02-2024                     | Initial Solution Release                    |
 
 ---
 

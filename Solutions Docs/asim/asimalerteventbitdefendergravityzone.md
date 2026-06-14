@@ -17,7 +17,7 @@
 | **Parser Type** | 🔌 Source (product-specific) |
 | **Product** | Bitdefender |
 | **Parser Version** | 0.1.0 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventBitdefenderGravityZone.md)) |
-| **Last Updated** | May 26, 2026 |
+| **Last Updated** | Jun 08, 2026 |
 | **Unifying Parser** | [ASimAlertEvent](asimalertevent.md) |
 | **Source File** | [Parsers\ASimAlertEvent\Parsers\ASimAlertEventBitdefenderGravityZone.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimAlertEvent/Parsers/ASimAlertEventBitdefenderGravityZone.yaml) |
 

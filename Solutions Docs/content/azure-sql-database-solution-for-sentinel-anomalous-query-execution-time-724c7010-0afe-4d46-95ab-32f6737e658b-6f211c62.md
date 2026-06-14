@@ -13,8 +13,8 @@ This hunting query will detect SQL queries that have affected an unusual number 
 | **Type** | Hunting Query |
 | **Solution** | [Azure SQL Database solution for sentinel](../solutions/azure-sql-database-solution-for-sentinel.md) |
 | **ID** | `724c7010-0afe-4d46-95ab-32f6737e658b` |
-| **Tactics** | InitialAccess |
-| **Techniques** | T1190 |
+| **Tactics** | Impact |
+| **Techniques** | T1565.001, T1485 |
 | **Required Connectors** | [AzureSql](../connectors/azuresql.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20SQL%20Database%20solution%20for%20sentinel/Hunting%20Queries/HuntingQuery-AffectedRowAnomaly.yaml) |
 

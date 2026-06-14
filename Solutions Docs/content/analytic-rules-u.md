@@ -1,6 +1,6 @@
 # Analytic Rules - U
 
-**45 analytic rules** starting with 'U'.
+**70 analytic rules** starting with 'U'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -29,6 +29,28 @@
 | [Unauthorized PLC changes (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-plc-changes-microsoft-defender-for-iot-c2fb27c7-5f67-49c4-aaf3-d82934234a69-06e12e1b.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Unauthorized remote access to the network (Microsoft Defender for IoT)](iototthreatmonitoringwithdefenderforiot-unauthorized-remote-access-to-the-network-microsoft-defender-for-1ff4fa3d-150b-4c87-b733-26c289af0d49-1d4743ff.md) | Medium | 📦 [IoTOTThreatMonitoringwithDefenderforIoT](../solutions/iototthreatmonitoringwithdefenderforiot.md) |
 | [Unauthorized user access across AWS and Azure](multi-cloud-attack-coverage-essentials-resource-abuse-unauthorized-user-access-across-aws-and-azure-60f31001-018a-42bf-8045-a92e1f361b7b-6d3ff85e.md) | Medium | 📦 [Multi Cloud Attack Coverage Essentials - Resource Abuse](../solutions/multi-cloud-attack-coverage-essentials-resource-abuse.md) |
+| [UniFi Site Manager: Console firmware likely security-relevant](unifi-site-manager-ccf-unifi-site-manager-console-firmware-likely-security-relevant-4f7b9e6c-5d1a-4392-8c2b-3e4f5a6b7c8d-efd1cdee.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Controller Connection State Change](unifi-site-manager-ccf-unifi-site-manager-controller-connection-state-change-ac1efe0f-654e-264e-07be-c1b60e698343-3c91e6f0.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Data Connector Health](unifi-site-manager-ccf-unifi-site-manager-data-connector-health-1fb5c195-9bff-e18b-3e8f-5123f46bff9d-d7ce8ffe.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Device Offline](unifi-site-manager-ccf-unifi-site-manager-device-offline-f3fa4f3f-c8db-ae35-ee06-04de2dfac511-4e587b03.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: External WAN IP changed](unifi-site-manager-ccf-unifi-site-manager-external-wan-ip-changed-ef1a293a-9e2b-b087-7816-2610814ed2d4-3737ecc9.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Firmware Update Available](unifi-site-manager-ccf-unifi-site-manager-firmware-update-available-83b88ab5-21ca-5dd2-df91-6db4354f9360-7a3c48d6.md) | Low | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: IPS signature count dropped >50%](unifi-site-manager-ccf-unifi-site-manager-ips-signature-count-dropped-50-aa188a24-783a-76a1-cd11-3bcac0e97de9-b2cafcd5.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: IPS/IDS disabled or misconfigured](unifi-site-manager-ccf-unifi-site-manager-ips-ids-disabled-or-misconfigured-36a64027-729e-51d7-16bf-8e926c03712a-79e9233f.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: ISP Downtime](unifi-site-manager-ccf-unifi-site-manager-isp-downtime-b54123ef-cfa7-769e-a959-f437404a1192-56e7d806.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: ISP High Latency](unifi-site-manager-ccf-unifi-site-manager-isp-high-latency-77d8f6d0-b45c-ea6e-7c58-daac194a095f-abf07f90.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: ISP Packet Loss](unifi-site-manager-ccf-unifi-site-manager-isp-packet-loss-6f2d71d6-e6c4-0da4-91da-e8192dc5b12c-01172d66.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: ISP SLA Breach](unifi-site-manager-ccf-unifi-site-manager-isp-sla-breach-fecd4ab1-b24e-8413-9164-e3621c8d7caa-c71a536e.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Multiple Devices Offline](unifi-site-manager-ccf-unifi-site-manager-multiple-devices-offline-9283b576-5350-fca1-3979-dacb6acd1d16-e4324d9f.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: New critical notifications appeared](unifi-site-manager-ccf-unifi-site-manager-new-critical-notifications-appeared-e4b75722-7239-f247-558f-d2e851ea0b38-c5146a32.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: New Device Adopted](unifi-site-manager-ccf-unifi-site-manager-new-device-adopted-e69be544-9476-35bb-2533-fa8c650dcd46-d519edad.md) | Informational | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: New WAN issue index recorded](unifi-site-manager-ccf-unifi-site-manager-new-wan-issue-index-recorded-17d09e1b-8a3f-776b-6981-dbe2cc74d097-079ccb3a.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: New WAN2 (secondary) issue recorded](unifi-site-manager-ccf-unifi-site-manager-new-wan2-secondary-issue-recorded-b16f13ae-343b-9513-e684-469cdf9471b2-fa617154.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Pending firmware updates outstanding for 7d+](unifi-site-manager-ccf-unifi-site-manager-pending-firmware-updates-outstanding-for-7d+-d943d401-861e-7186-d42c-c505fbf7c619-b37c1db1.md) | Low | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: Site Health Critical](unifi-site-manager-ccf-unifi-site-manager-site-health-critical-c8875ebb-cc6e-14e4-4216-d8b06fd92c90-96e99041.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: System log shipping disabled](unifi-site-manager-ccf-unifi-site-manager-system-log-shipping-disabled-f32950bc-6553-4c03-2686-a9c29ef318e8-3d860f6a.md) | High | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: WAN uptime below 99%](unifi-site-manager-ccf-unifi-site-manager-wan-uptime-below-99-2bb29f25-833a-5544-4a8e-9bf6c4d8da56-c45d8533.md) | Medium | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [UniFi Site Manager: WiFi quality degraded (high TX retry)](unifi-site-manager-ccf-unifi-site-manager-wifi-quality-degraded-high-tx-retry-f5130582-9e0e-cb47-af0b-dcd8b261fa04-e554dfe0.md) | Low | 📦 [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
 | [Unused IaaS Policy](authomize-unused-iaas-policy-e0ae5f9e-865b-41f5-98bb-c04113888e85-86fba83d.md) | High | 📦 [Authomize](../solutions/authomize.md) |
 | [Unusual Anomaly](github-only-unusual-anomaly-d0255b5f-2a3c-4112-8744-e6757af3283a-77d2d4f7.md) | Medium | 🔗 GitHub Only |
 | [Unusual identity creation using exchange powershell](standalone-content-unusual-identity-creation-using-exchange-powershell-0a3f4f4f-46ad-4562-acd6-f17730a5aef4-15284931.md) | High | 📄 Standalone Content |
@@ -59,6 +81,9 @@
 | [User without MFA](authomize-user-without-mfa-71a7b0de-f13d-44b9-9caa-668f1bad0ce6-e32b8130.md) | Medium | 📦 [Authomize](../solutions/authomize.md) |
 | [UserAccountDisabled](senservapro-useraccountdisabled-24e0132f-61d1-41bd-9393-06136d1039c7-b567bfdb.md) | Medium | 📦 [SenservaPro](../solutions/senservapro.md) |
 | [Users searching for VIP user activity](standalone-content-users-searching-for-vip-user-activity-f7f4a77e-f68f-4b56-9aaf-a0c9d87d7a8e-aebfac5d.md) | Low | 📄 Standalone Content |
+| [Utimaco ESKM - Burst of KMIP DESTROY operations by a single user](utimaco-enterprise-secure-key-manager-utimaco-eskm-burst-of-kmip-destroy-operations-by-a-single-user-9b1a3b3e-7e16-4a3b-8a8f-7f1f2b1c0a03-5fa2afcb.md) | High | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
+| [Utimaco ESKM - Multiple KMIP authentication failures from same IP](utimaco-enterprise-secure-key-manager-utimaco-eskm-multiple-kmip-authentication-failures-from-same-ip-9b1a3b3e-7e16-4a3b-8a8f-7f1f2b1c0a01-e75b8c05.md) | Medium | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
+| [Utimaco ESKM - PERMISSION_DENIED burst for a KMIP user](utimaco-enterprise-secure-key-manager-utimaco-eskm-permission-denied-burst-for-a-kmip-user-9b1a3b3e-7e16-4a3b-8a8f-7f1f2b1c0a02-43bc2ce7.md) | Medium | 📦 [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
 
 ---
 

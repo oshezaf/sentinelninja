@@ -81,15 +81,17 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>3 data connector(s)</strong>:</p>
 <ul>
 <li><a href="../connectors/mulesoft.html">MuleSoft Cloudhub</a> 🔶</li>
+<li><a href="../connectors/mulesoftcloudhubconnector.html">Mulesoft CloudHub Alerts Connector (via Codeless Connector Framework)</a></li>
+<li><a href="../connectors/mulesoftcloudhubpushconnector.html">MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)</a></li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>3 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -100,8 +102,18 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/mulesoftcloudhublogs-cl.html"><code>MuleSoftCloudhubLogs_CL</code></a></td>
+  <td><a href="../connectors/mulesoftcloudhubpushconnector.html">MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)</a></td>
+  <td>-</td>
+</tr>
+<tr>
   <td><a href="../tables/mulesoft-cloudhub-cl.html"><code>MuleSoft_Cloudhub_CL</code></a> 🔶</td>
   <td><a href="../connectors/mulesoft.html">MuleSoft Cloudhub</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/mulesoftcloudhubalerts-cl.html"><code>MulesoftCloudhubAlerts_CL</code></a></td>
+  <td><a href="../connectors/mulesoftcloudhubconnector.html">Mulesoft CloudHub Alerts Connector (via Codeless Connector Framework)</a></td>
   <td>-</td>
 </tr>
 </tbody>
@@ -138,7 +150,7 @@
 <tr>
   <td style="text-align:left"><a href="../parsers/mulesoftcloudhub.html">MuleSoftCloudhub</a></td>
   <td style="text-align:left">-</td>
-  <td style="text-align:left"><a href="../tables/mulesoft-cloudhub-cl.html"><code>MuleSoft_Cloudhub_CL</code></a> <em>(read)</em></td>
+  <td style="text-align:left"><a href="../tables/mulesoftcloudhublogs-cl.html"><code>MuleSoftCloudhubLogs_CL</code></a> <em>(read)</em><br><a href="../tables/mulesoft-cloudhub-cl.html"><code>MuleSoft_Cloudhub_CL</code></a> <em>(read)</em><br><a href="../tables/mulesoftcloudhubalerts-cl.html"><code>MulesoftCloudhubAlerts_CL</code></a> <em>(read)</em></td>
 </tr>
 </tbody>
 </table>
@@ -147,11 +159,16 @@
 <thead>
 <tr>
   <th><strong>Version</strong></th>
-  <th><strong>Date Modified (DD-MM-YYY)</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
   <th><strong>Change History</strong></th>
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>04-06-2026</td>
+  <td>Added MuleSoft CloudHub <code>Alerts</code> CCF Connector &amp; <code>Logs</code> CCF Push Connector for real-time log streaming via Log4j HTTP appender.</td>
+</tr>
 <tr>
   <td>3.0.2</td>
   <td>09-09-2024</td>

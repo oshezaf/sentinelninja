@@ -19,7 +19,7 @@
 - [Connectors](#connectors)
 - [Content Items](#content-items-using-this-table)
 
-## Solutions (34)
+## Solutions (35)
 
 This table is used by the following solutions:
 
@@ -55,6 +55,7 @@ This table is used by the following solutions:
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [ThreatAnalysis&Response](../solutions/threatanalysis&response.md)
 - [ThreatConnect](../solutions/threatconnect.md)
+- [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md)
 - [Vectra XDR](../solutions/vectra-xdr.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
@@ -69,7 +70,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (69)
+## Content Items Using This Table (70)
 
 ### Analytic Rules (3)
 
@@ -94,7 +95,7 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [SOCRadar Incident Correlation](../content/socradar-socradar-incident-correlation-3a665ce4-b824-4a79-861b-c9f80ab4daba-143cdc23.md) |  |
 
-### Workbooks (57)
+### Workbooks (58)
 
 **In solution [Apache Log4j Vulnerability Detection](../solutions/apache-log4j-vulnerability-detection.md):**
 
@@ -277,6 +278,12 @@ This table is ingested by the following connectors:
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [ThreatConnectOverview](../content/threatconnect-threatconnectoverview-c70716b8.md) |  |
+
+**In solution [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [UnifiSiteManager](../content/unifi-site-manager-ccf-unifisitemanager-eafe5588.md) |  |
 
 **In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 

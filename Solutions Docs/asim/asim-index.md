@@ -8,7 +8,7 @@ The Advanced Security Information Model (ASIM) provides a layer of abstraction b
 
 ---
 
-**13 schemas** with 91 source parser pairs and 15 union parser pairs. See [📊 Statistics](../statistics.md) for detailed breakdowns.
+**13 schemas** with 92 source parser pairs and 15 union parser pairs. See [📊 Statistics](../statistics.md) for detailed breakdowns.
 
 \* *Each parser pair consists of an ASim filtering parser and a vim parameter-based parser.*
 
@@ -47,12 +47,12 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
-| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
+| [ASimAlertEvent](asimalertevent.md) | `_ASim_AlertEvent` | [0.1.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEvent.md) |
+| [imAlertEvent](imalertevent.md) | `_Im_AlertEvent` | [0.1.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/imAlertEvent.md) |
 
 ### Supported Products
 
-[Bitdefender](asim-products-index.md#bitdefender), [Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [SentinelOne](asim-products-index.md#sentinelone)
+[Bitdefender](asim-products-index.md#bitdefender), [Cisco Secure Endpoint](asim-products-index.md#cisco-secure-endpoint), [Microsoft Defender XDR](asim-products-index.md#microsoft-defender-xdr), [Palo Alto XDR](asim-products-index.md#palo-alto-xdr), [SentinelOne](asim-products-index.md#sentinelone)
 
 ### Source Parsers
 
@@ -61,6 +61,7 @@ These are the main entry points that combine all source parsers:
 | [BitdefenderGravityZone](asimalerteventbitdefendergravityzone.md) | Bitdefender | [GravityZone](../solutions/gravityzone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventBitdefenderGravityZone.md) |
 | [CiscoSecureEndpoint](asimalerteventciscosecureendpoint.md) | Cisco Secure Endpoint | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventCiscoSecureEndpoint.md) |
 | [MicrosoftDefenderXDR](asimalerteventmicrosoftdefenderxdr.md) | Microsoft Defender XDR |  | [0.2.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventMicrosoftDefenderXDR.md) |
+| [PaloAltoXDR](asimalerteventpaloaltoxdr.md) | Palo Alto XDR | [Cortex XDR](../solutions/cortex-xdr.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventPaloAltoXDR.md) |
 | [SentinelOneSingularity](asimalerteventsentinelonesingularity.md) | SentinelOne | [SentinelOne (legacy connector)](../solutions/sentinelone.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimAlertEvent/CHANGELOG/ASimAlertEventSentinelOneSingularity.md) |
 
 ## AssetEntity
@@ -427,12 +428,12 @@ These are the main entry points that combine all source parsers:
 
 | Parser | Built-in Name | Version |
 |:-------|:--------------|:--------|
-| [ASimWebSession](asimwebsession.md) | `_ASim_WebSession` | [0.5.5](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md) |
-| [imWebSession](imwebsession.md) | `_Im_WebSession` | [0.6.3](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md) |
+| [ASimWebSession](asimwebsession.md) | `_ASim_WebSession` | [0.5.6](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSession.md) |
+| [imWebSession](imwebsession.md) | `_Im_WebSession` | [0.6.4](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md) |
 
 ### Supported Products
 
-[Apache HTTP Server](asim-products-index.md#apache-http-server), [Azure Firewall](asim-products-index.md#azure-firewall), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco Meraki](asim-products-index.md#cisco-meraki), [Cisco Umbrella](asim-products-index.md#cisco-umbrella), [Citrix NetScaler](asim-products-index.md#citrix-netscaler), [F5 BIG-IP Application Security Manager (ASM)](asim-products-index.md#f5-big-ip-application-security-manager-asm), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Internet Information Services (IIS)](asim-products-index.md#internet-information-services-iis), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto Networks](asim-products-index.md#palo-alto-networks), [SonicWall](asim-products-index.md#sonicwall), [Squid Proxy](asim-products-index.md#squid-proxy), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA](asim-products-index.md#zscaler-zia)
+[Apache HTTP Server](asim-products-index.md#apache-http-server), [Azure Firewall](asim-products-index.md#azure-firewall), [Barracuda WAF](asim-products-index.md#barracuda-waf), [Cisco Firepower](asim-products-index.md#cisco-firepower), [Cisco Meraki](asim-products-index.md#cisco-meraki), [Cisco Umbrella](asim-products-index.md#cisco-umbrella), [Citrix NetScaler](asim-products-index.md#citrix-netscaler), [F5 BIG-IP Application Security Manager (ASM)](asim-products-index.md#f5-big-ip-application-security-manager-asm), [Fortinet FortiGate](asim-products-index.md#fortinet-fortigate), [Internet Information Services (IIS)](asim-products-index.md#internet-information-services-iis), [Native](asim-products-index.md#native), [Palo Alto Cortex Data Lake](asim-products-index.md#palo-alto-cortex-data-lake), [Palo Alto Networks](asim-products-index.md#palo-alto-networks), [Salesforce Service Cloud](asim-products-index.md#salesforce-service-cloud), [SonicWall](asim-products-index.md#sonicwall), [Squid Proxy](asim-products-index.md#squid-proxy), [Vectra AI Streams](asim-products-index.md#vectra-ai-streams), [Zscaler ZIA](asim-products-index.md#zscaler-zia)
 
 ### Source Parsers
 
@@ -452,6 +453,7 @@ These are the main entry points that combine all source parsers:
 | [Native](asimwebsessionnative.md) | Native | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) | [0.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionNative.md) |
 | [PaloAltoCEF](asimwebsessionpaloaltocef.md) | Palo Alto Networks | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAlto-PAN-OS (legacy connector)](../solutions/paloalto-pan-os.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionPaloAltoCEF.md) |
 | [PaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md) | Palo Alto Cortex Data Lake | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAltoCDL (legacy connector)](../solutions/paloaltocdl.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionPaloAltoCortexDataLake.md) |
+| [SalesforceServiceCloudV2](asimwebsessionsalesforceservicecloudv2.md) | Salesforce Service Cloud | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) | [0.1.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionSalesforceServiceCloudV2.md) |
 | [SonicWallFirewall](asimwebsessionsonicwallfirewall.md) | SonicWall | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) | [0.1.1](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionSonicWallFirewall.md) |
 | [SquidProxy](asimwebsessionsquidproxy.md) | Squid Proxy | [CustomLogsAma](../solutions/customlogsama.md) | [0.4.0](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionSquidProxy.md) |
 | [VectraAI](asimwebsessionvectraai.md) | Vectra AI Streams | [CustomLogsAma](../solutions/customlogsama.md)<br>[Vectra AI Stream](../solutions/vectra-ai-stream.md) | [0.2](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/ASimWebSessionVectraAI.md) |

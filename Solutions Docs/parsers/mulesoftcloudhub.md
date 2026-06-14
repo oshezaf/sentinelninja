@@ -13,8 +13,8 @@
 | Title | Parser for MuleSoftCloudhub |
 | Location | Solution |
 | Solution | [Mulesoft](../solutions/mulesoft.md) |
-| Version | 1.0.0 |
-| Last Updated | 2023-08-23 |
+| Version | 1.0.1 |
+| Last Updated | 2026-06-09 |
 | Category | Microsoft Sentinel Parser |
 | File Type | .yaml |
 | Source | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft/Parsers/MuleSoftCloudhub.yaml) |
@@ -25,7 +25,9 @@ This parser reads from the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`MuleSoftCloudhubLogs_CL`](../tables/mulesoftcloudhublogs-cl.md) | ? | ✓ | ? |
 | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) 🔶 | ✗ | ✓ | ✗ |
+| [`MulesoftCloudhubAlerts_CL`](../tables/mulesoftcloudhubalerts-cl.md) | ? | ✓ | ? |
 
 ---
 

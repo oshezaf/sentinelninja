@@ -18,10 +18,10 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **177** |
-| Active | 147 |
+| Total Connectors | **185** |
+| Active | 149 |
 | Deprecated 🚫 | 1 |
-| Unpublished ⚠️ | 29 |
+| Unpublished ⚠️ | 35 |
 
 ## Connectors Using This Method
 
@@ -32,6 +32,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [ Dragos Notifications via Cloud Sitestore](../connectors/dragossitestoreccp.md) | Dragos | 1 | [Dragos](../solutions/dragos.md) |
 | [1Password (Serverless)](../connectors/1passwordccpdefinition.md) | 1Password | 1 | [1Password](../solutions/1password.md) |
 | [Airlock Digital connector (via Codeless Connector Framework)](../connectors/airlockdigitalconnector.md) | Microsoft | 3 | [AirlockDigital](../solutions/airlockdigital.md) |
+| [Akamai Guardicore](../connectors/akamaiguardicore.md) ⚠️ | Akamai | 4 | [Akamai Guardicore](../solutions/akamai-guardicore.md) |
 | [Alibaba Cloud ActionTrail (via Codeless Connector Framework)](../connectors/alicloudactiontrailccpdefinition.md) | Microsoft | 1 | [Alibaba Cloud ActionTrail](../solutions/alibaba-cloud-actiontrail.md) |
 | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](../connectors/alibabacloudnetworkingconnector.md) | Microsoft | 1 | [Alibaba Cloud Networking](../solutions/alibaba-cloud-networking.md) |
 | [Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)](../connectors/awscloudfrontccpdefinition.md) ➕ | Microsoft | 1 | [AWS CloudFront](../solutions/aws-cloudfront.md) |
@@ -57,6 +58,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Check Point CloudGuard CNAPP Connector for Microsoft Sentinel](../connectors/cloudguardccpdefinition.md) | CheckPoint | 1 | [Check Point CloudGuard CNAPP](../solutions/check-point-cloudguard-cnapp.md) |
 | [Check Point Cyberint Alerts Connector (via Codeless Connector Platform)](../connectors/checkpointcyberintalerts.md) | Checkpoint Cyberint | 1 | [Check Point Cyberint Alerts](../solutions/check-point-cyberint-alerts.md) |
 | [Check Point Cyberint IOC Connector](../connectors/checkpointcyberintioc.md) | Checkpoint Cyberint | 1 | [Check Point Cyberint IOC](../solutions/check-point-cyberint-ioc.md) |
+| [Cisco Email Threat Defense (ETD)](../connectors/ciscoetdconnectordefinition.md) | Cisco | 1 | [Cisco ETD](../solutions/cisco-etd.md) |
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakimultirule.md) ➕ | Microsoft | 3 | [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md) |
 | [Cisco Meraki (using REST API)](../connectors/ciscomerakinativepoller.md) ➕ | Microsoft | 3 | [CiscoMeraki](../solutions/ciscomeraki.md) |
 | [Cisco Secure Endpoint (via Codeless Connector Framework)](../connectors/ciscosecureendpointlogsccpdefinition.md) | Microsoft | 2 | [Cisco Secure Endpoint](../solutions/cisco-secure-endpoint.md) |
@@ -94,6 +96,7 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Elastic Agent (via Codeless Connector Framework)](../connectors/elasticagentconnector.md) | Microsoft | 1 | [ElasticAgent](../solutions/elasticagent.md) |
 | [Ermes Browser Security Events](../connectors/ermesbrowsersecurityevents.md) | Ermes Cyber Security S.p.A. | 1 | [Ermes Browser Security](../solutions/ermes-browser-security.md) |
 | [Feedly IoC](../connectors/feedlyccpdefinition.md) 🔶 | Feedly | 1 | [Feedly](../solutions/feedly.md) |
+| [Field Effect MDR Data Connector (via Codeless Connector Framework)](../connectors/fieldeffectccf.md) ⚠️ | Field Effect | 1 | [FieldEffectMDR](../solutions/fieldeffectmdr.md) |
 | [Filewall for Microsoft 365](../connectors/filewallm365.md) ⚠️ | Filewall | 2 | [Filewall for Microsoft 365](../solutions/filewall-for-microsoft-365.md) |
 | [Fortra Agari Data Connector (via Codeless Connector Framework)](../connectors/agariconnector.md) | Microsoft | 5 | [Agari](../solutions/agari.md) |
 | [GCP Cloud Run (via Codeless Connector Framework)](../connectors/gcpcloudrunlogs-connectordefinition.md) | Microsoft | 1 | [Google Cloud Platform Cloud Run](../solutions/google-cloud-platform-cloud-run.md) |
@@ -130,10 +133,13 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Lookout Mobile Threat Detection Connector (via Codeless Connector Framework) (Preview)](../connectors/lookoutstreaming-definition.md) | Microsoft | 1 | [Lookout](../solutions/lookout.md) |
 | [MailRisk by Secure Practice](../connectors/securepracticemailriskconnector.md) | Secure Practice | 1 | [MailRisk](../solutions/mailrisk.md) |
 | [meshStack Event Logs](../connectors/meshstackeventlogsdefinition.md) | meshcloud | 1 | [meshStack](../solutions/meshstack.md) |
+| [Microsoft 365 Audit.DLP](../connectors/m365auditdlpccpdefinition.md) ⚠️ | Marko Lauren | 1 | [Microsoft 365 Audit General and DLP](../solutions/microsoft-365-audit-general-and-dlp.md) |
+| [Microsoft 365 Audit.General](../connectors/m365auditgeneralccpdefinition.md) ⚠️ | Marko Lauren | 1 | [Microsoft 365 Audit General and DLP](../solutions/microsoft-365-audit-general-and-dlp.md) |
 | [Microsoft Copilot](../connectors/microsoftcopilot.md) | Microsoft | 1 | [Microsoft Copilot](../solutions/microsoft-copilot.md) |
 | [Miro Audit Logs (Enterprise Plan)](../connectors/miroauditlogsdataconnector.md) | Miro | 1 | [Miro](../solutions/miro.md) |
 | [Miro Content Logs (Enterprise Plan + Enterprise Guard)](../connectors/mirocontentlogsdataconnector.md) | Miro | 1 | [Miro](../solutions/miro.md) |
 | [Morphisec API Data Connector (via Codeless Connector Framework)](../connectors/morphisecccf.md) | Morphisec | 1 | [Morphisec](../solutions/morphisec.md) |
+| [Mulesoft CloudHub Alerts Connector (via Codeless Connector Framework)](../connectors/mulesoftcloudhubconnector.md) | Microsoft | 1 | [Mulesoft](../solutions/mulesoft.md) |
 | [Netskope Alerts and Events (via Codeless Connector Framework)](../connectors/netskopealertsevents.md) | Netskope | 9 | [Netskopev2](../solutions/netskopev2.md) |
 | [Netskope Web Transaction Connector (via Blob Storage)](../connectors/netskopewebtxconnector.md) | Netskope | 1 | [NetskopeWebTx](../solutions/netskopewebtx.md) |
 | [Okta Single Sign-On (Polling CCP)](../connectors/oktasso-polling.md) ⚠️ | Okta | 1 | [Okta Single Sign-On](../solutions/okta-single-sign-on.md) |
@@ -177,8 +183,10 @@ The Codeless Connector Framework (CCF) enables creating data connectors using a 
 | [Tropico Security - Alerts](../connectors/tropicoalertsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Events](../connectors/tropicoeventsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
 | [Tropico Security - Incidents](../connectors/tropicoincidentsdefinition.md) | Tropico Security | 1 | [Tropico](../solutions/tropico.md) |
+| [UniFi Site Manager (CCF)](../connectors/unifisitemanagerconnector.md) ⚠️ | Community | 4 | [UniFi Site Manager (CCF)](../solutions/unifi-site-manager-ccf.md) |
+| [Utimaco Enterprise Secure Key Manager (ESKM)](../connectors/utimacoeskmconnector.md) ⚠️ | Utimaco | 1 | [Utimaco Enterprise Secure Key Manager](../solutions/utimaco-enterprise-secure-key-manager.md) |
 | [Vaikora AI Agent Behavioral Signals](../connectors/vaikorasentinel.md) 🔶 | Data443 Risk Mitigation, Inc. | 1 | [Vaikora-Sentinel](../solutions/vaikora-sentinel.md) |
-| [Valimail Enforce Configuration Events](../connectors/valimailenforceeventsconnector.md) | Valimmail | 1 | [ValimailEnforce](../solutions/valimailenforce.md) |
+| [Valimail Enforce Configuration Events](../connectors/valimailenforceeventsconnector.md) | Valimail | 1 | [ValimailEnforce](../solutions/valimailenforce.md) |
 | [VersasecCms](../connectors/versaseccmsccpdefinition.md) | Versasec AB | 2 | [VersasecCMS](../solutions/versaseccms.md) |
 | [Visa Threat Intelligence](../connectors/visathreatintelligenceccp.md) ⚠️ | Microsoft | 1 | [Visa Threat Intelligence (VTI)](../solutions/visa-threat-intelligence-vti.md) |
 | [VMware Carbon Black Cloud via AWS S3 (via Codeless Connector Framework)](../connectors/carbonblackawss3.md) | Microsoft | 7 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |

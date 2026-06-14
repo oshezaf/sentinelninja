@@ -16,8 +16,8 @@
 | **Severity** | Medium |
 | **Status** | Available |
 | **Kind** | Scheduled |
-| **Tactics** | Exfiltration |
-| **Techniques** | T1537, T1567 |
+| **Tactics** | Collection |
+| **Techniques** | T1213.006 |
 | **Required Connectors** | [AzureSql](../connectors/azuresql.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Azure%20SQL%20Database%20solution%20for%20sentinel/Analytic%20Rules/Detection-VolumeResponseRowsStatefulAnomalyOnDatabase.yaml) |
 

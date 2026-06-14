@@ -7,8 +7,8 @@
 | Attribute | Value |
 |:----------|:------|
 | **Type** | Managed |
-| **Playbooks using** | 686 |
-| **Solutions** | 119 |
+| **Playbooks using** | 689 |
+| **Solutions** | 121 |
 | **Microsoft Learn** | [View Documentation](https://learn.microsoft.com/en-us/connectors/azuresentinel/) |
 
 ## Playbooks Using This Connector
@@ -47,6 +47,7 @@
 | [Affected-Key-Credentials-Scanner](../content/standalone-content-affected-key-credentials-scanner-485d372e.md) | 📄 Standalone | 1 | 1 |
 | [aggregate-ServiceNow-tickets](../content/standalone-content-aggregate-servicenow-tickets-d4e8dc05.md) | 📄 Standalone | 1 | 2 |
 | [AI-Commandline-Analysis](../content/github-only-ai-commandline-analysis-5d127fc0.md) | 🔗 GitHub Only | 1 | 1 |
+| [Akamai Guardicore Incident-Enrichment — one-click bootstrap](../content/akamai-guardicore-akamai-guardicore-incident-enrichment-—-one-click-bootstrap-397b7ee6.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 1 | 0 |
 | [Alert trigger empty playbook](../content/standalone-content-alert-trigger-empty-playbook-3217f7cb.md) | 📄 Standalone | 1 | 0 |
 | [Armis Update Alert Status](../content/armis-armis-update-alert-status-f60ff46e.md) | [Armis](../solutions/armis.md) | 1 | 0 |
 | [AS-Add-Azure-AD-User-Job-Title-to-Incident](../content/standalone-content-as-add-azure-ad-user-job-title-to-incident-17fd9655.md) | 📄 Standalone | 1 | 2 |
@@ -349,6 +350,7 @@
 | [Google Threat Intelligence - URL Enrichment](../content/google-threat-intelligence-google-threat-intelligence-url-enrichment-70256210.md) | [Google Threat Intelligence](../solutions/google-threat-intelligence.md) | 1 | 1 |
 | [GreyNoise-IP-CommunityEnrichment](../content/standalone-content-greynoise-ip-communityenrichment-7050bb7b.md) | 📄 Standalone | 1 | 5 |
 | [GreyNoise-IP-Enrichment](../content/standalone-content-greynoise-ip-enrichment-b0af9633.md) | 📄 Standalone | 1 | 5 |
+| [Guardicore-ProcessIncidentEnrichment](../content/akamai-guardicore-guardicore-processincidentenrichment-185057ea.md) | [Akamai Guardicore](../solutions/akamai-guardicore.md) | 1 | 0 |
 | [HaveIBeenPwnedEmail](../content/standalone-content-haveibeenpwnedemail-c80f9114.md) | 📄 Standalone | 1 | 4 |
 | [HYASInsight Enrich Incident By C2 Attribution](../content/hyas-hyasinsight-enrich-incident-by-c2-attribution-fb15e86f.md) | [HYAS](../solutions/hyas.md) | 1 | 3 |
 | [HYASInsight Enrich Incident By C2 Attribution](../content/hyas-hyasinsight-enrich-incident-by-c2-attribution-df8726f9.md) | [HYAS](../solutions/hyas.md) | 1 | 3 |
@@ -608,6 +610,7 @@
 | [SpyCloud Malware Information - SpyCloud Enterprise](../content/spycloud-enterprise-protection-spycloud-malware-information-spycloud-enterprise-d542701e.md) | [SpyCloud Enterprise Protection](../solutions/spycloud-enterprise-protection.md) | 1 | 3 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-c47c37f3.md) | 📄 Standalone | 1 | 3 |
 | [Start-MDEAutomatedInvestigation](../content/standalone-content-start-mdeautomatedinvestigation-6145b828.md) | 📄 Standalone | 1 | 2 |
+| [StealthTalk - Alert to Microsoft Teams](../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.md) | [StealthTalk](../solutions/stealthtalk.md) | 1 | 0 |
 | [Sync - Incident Comment To M365D On Update](../content/standalone-content-sync-incident-comment-to-m365d-on-update-c5a6b476.md) | 📄 Standalone | 1 | 0 |
 | [Sync Jira from Sentinel - Create incident](../content/atlassianjiraaudit-sync-jira-from-sentinel-create-incident-f5933875.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | 1 | 1 |
 | [Sync Jira to Sentinel - Assigned User](../content/atlassianjiraaudit-sync-jira-to-sentinel-assigned-user-dcc95a9e.md) | [AtlassianJiraAudit](../solutions/atlassianjiraaudit.md) | 1 | 1 |

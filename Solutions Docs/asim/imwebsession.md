@@ -15,8 +15,8 @@
 | **Schema** | WebSession |
 | **Schema Version** | 0.2.7 |
 | **Parser Type** | 📦 Union (schema-level) |
-| **Parser Version** | 0.6.3 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md)) |
-| **Last Updated** | Mar 24, 2026 |
+| **Parser Version** | 0.6.4 ([version history](https://github.com/Azure/Azure-Sentinel/tree/master/Parsers/ASimWebSession/CHANGELOG/imWebSession.md)) |
+| **Last Updated** | Jun 05, 2026 |
 | **Source File** | [Parsers\ASimWebSession\Parsers\imWebSession.yaml](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/ASimWebSession/Parsers/imWebSession.yaml) |
 
 ## Description
@@ -43,6 +43,7 @@ This union parser includes parsers for the following products:
 | Native | [_Im_WebSession_Native](asimwebsessionnative.md) | [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md) |
 | Palo Alto Networks | [_Im_WebSession_PaloAltoCEF](asimwebsessionpaloaltocef.md) | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAlto-PAN-OS (legacy connector)](../solutions/paloalto-pan-os.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Palo Alto Cortex Data Lake | [_Im_WebSession_PaloAltoCortexDataLake](asimwebsessionpaloaltocortexdatalake.md) | [Common Event Format](../solutions/common-event-format.md)<br>[PaloAltoCDL (legacy connector)](../solutions/paloaltocdl.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
+| Salesforce Service Cloud | [_Im_WebSession_SalesforceServiceCloudV2](asimwebsessionsalesforceservicecloudv2.md) | [Salesforce Service Cloud (legacy connector)](../solutions/salesforce-service-cloud.md) |
 | SonicWall | [_Im_WebSession_SonicWallFirewall](asimwebsessionsonicwallfirewall.md) | [Common Event Format](../solutions/common-event-format.md)<br>[VirtualMetric DataStream](../solutions/virtualmetric-datastream.md) |
 | Squid Proxy | [_Im_WebSession_SquidProxy](asimwebsessionsquidproxy.md) | [CustomLogsAma](../solutions/customlogsama.md) |
 | Vectra AI Streams | [_Im_WebSession_VectraAI](asimwebsessionvectraai.md) | [CustomLogsAma](../solutions/customlogsama.md)<br>[Vectra AI Stream](../solutions/vectra-ai-stream.md) |

@@ -8,7 +8,7 @@
 
 Analytic rules are the core detection mechanism in Microsoft Sentinel. They run scheduled queries against your data to identify security threats, anomalies, and suspicious activities. When a rule's conditions are met, it generates alerts that can trigger incidents for investigation. [Learn more](https://learn.microsoft.com/azure/sentinel/detect-threats-built-in)
 
-**2268 analytic rules** across all Microsoft Sentinel solutions.
+**2304 analytic rules** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](analytic-rules-other.md) | [A](analytic-rules-a.md) | [B](analytic-rules-b.md) | [C](analytic-rules-c.md) | [D](analytic-rules-d.md) | [E](analytic-rules-e.md) | [F](analytic-rules-f.md) | [G](analytic-rules-g.md) | [H](analytic-rules-h.md) | [I](analytic-rules-i.md) | [J](analytic-rules-j.md) | [K](analytic-rules-k.md) | [L](analytic-rules-l.md) | [M](analytic-rules-m.md) | [N](analytic-rules-n.md) | [O](analytic-rules-o.md) | [P](analytic-rules-p.md) | [Q](analytic-rules-q.md) | [R](analytic-rules-r.md) | [S](analytic-rules-s.md) | [T](analytic-rules-t.md) | [U](analytic-rules-u.md) | [V](analytic-rules-v.md) | [W](analytic-rules-w.md) | [X](analytic-rules-x.md) | [Z](analytic-rules-z.md)
 
@@ -20,8 +20,8 @@ Analytic rules are the core detection mechanism in Microsoft Sentinel. They run 
 | [C](analytic-rules-c.md) | 367 |
 | [D](analytic-rules-d.md) | 128 |
 | [E](analytic-rules-e.md) | 39 |
-| [F](analytic-rules-f.md) | 51 |
-| [G](analytic-rules-g.md) | 122 |
+| [F](analytic-rules-f.md) | 52 |
+| [G](analytic-rules-g.md) | 126 |
 | [H](analytic-rules-h.md) | 17 |
 | [I](analytic-rules-i.md) | 47 |
 | [J](analytic-rules-j.md) | 16 |
@@ -33,9 +33,9 @@ Analytic rules are the core detection mechanism in Microsoft Sentinel. They run 
 | [P](analytic-rules-p.md) | 201 |
 | [Q](analytic-rules-q.md) | 3 |
 | [R](analytic-rules-r.md) | 53 |
-| [S](analytic-rules-s.md) | 169 |
+| [S](analytic-rules-s.md) | 175 |
 | [T](analytic-rules-t.md) | 200 |
-| [U](analytic-rules-u.md) | 45 |
+| [U](analytic-rules-u.md) | 70 |
 | [V](analytic-rules-v.md) | 87 |
 | [W](analytic-rules-w.md) | 11 |
 | [X](analytic-rules-x.md) | 4 |

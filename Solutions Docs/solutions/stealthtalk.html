@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ StealthTalk &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="stealthtalk">⚠️ StealthTalk</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/StealthTalk/Workbooks/Images/Logo/st-ms-def-hub.svg" alt="StealthTalk Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">StealthTalk Support</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://stealthtalk.com/support">https://stealthtalk.com/support</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection,Identity,Security - Insider Threat</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">StealthTalk - support@stealthtalk.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-05-01</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StealthTalk">StealthTalk</a></td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>StealthTalk Anomalous Authentication</strong> solution ingests StealthTalk Enterprise sign-in anomaly data into Microsoft Sentinel so SOC teams can investigate anomalous authentication activity alongside Microsoft security telemetry. The solution includes a Logs Ingestion API data connector, scheduled analytic rules, hunting queries, ASIM authentication parsers, a workbook, and a Microsoft Teams playbook. It depends on <a href="https://learn.microsoft.com/azure/sentinel/overview">Microsoft Sentinel</a>, <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Logs Ingestion</a>, <a href="https://learn.microsoft.com/azure/azure-monitor/logs/create-custom-table">custom tables</a>, <a href="https://learn.microsoft.com/azure/logic-apps/logic-apps-overview">Logic Apps</a>, and <a href="https://learn.microsoft.com/azure/sentinel/normalization">ASIM</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<ul>
+<li><a href="../connectors/stealthtalkanomalousauth.html">StealthTalk Anomalous Authentication</a></li>
+</ul>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution uses <strong>1 table(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Connectors</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+  <td><a href="../connectors/stealthtalkanomalousauth.html">StealthTalk Anomalous Authentication</a></td>
+  <td>Analytics, Hunting, Workbooks</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>9 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">4</td>
+</tr>
+<tr>
+  <td style="text-align:left">Hunting Queries</td>
+  <td style="text-align:left">3</td>
+</tr>
+<tr>
+  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+<tr>
+  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-after-hours-work-e3a8b2f1-5c7d-4d89-9b6e-0f1a2c3d4e5f-f70b1be5.html">StealthTalk - After hours work</a></td>
+  <td style="text-align:left">Low</td>
+  <td style="text-align:left">InitialAccess, DefenseEvasion, Persistence</td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-login-outside-work-zone-a7c3e9b1-4f5d-4e2a-9b8c-1d2e3f4a5b6c-f2762d8d.html">StealthTalk - Login outside work zone</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, DefenseEvasion, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-multi-new-devices-registration-f9d4c2a8-1b6e-4a3f-9c7d-8e2b1a3c5d7e-8e98d5a7.html">StealthTalk - Multi new devices registration</a></td>
+  <td style="text-align:left">Medium</td>
+  <td style="text-align:left">Persistence, InitialAccess, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-password-brute-force-b8e5f3a2-9c4d-4d1f-8a7b-3c2d1e0f9a8b-057ae82f.html">StealthTalk - Password brute force</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-account-takeover-sequence-d2e5f8a3-9c4b-4d7e-8f6a-3b2c4d5e6f7a-412a3fc8.html">StealthTalk - Account takeover sequence</a></td>
+  <td style="text-align:left">InitialAccess, Persistence, CredentialAccess, DefenseEvasion</td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-brute-force-followed-by-suspicious-access-e3f6a9b4-ad5c-4e8f-9a7b-4c3d5e6f7a8b-13cf45fe.html">StealthTalk - Brute force followed by suspicious access</a></td>
+  <td style="text-align:left">CredentialAccess, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-impossible-travel-c1d4e7f2-8b3a-4c6d-9e5f-2a1b3c4d5e6f-22aa12ef.html">StealthTalk - Impossible travel</a></td>
+  <td style="text-align:left">InitialAccess, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalkanomalousauthmonitor-66e563fa.html">StealthTalkAnomalousAuthMonitor</a></td>
+  <td style="text-align:left"><a href="../tables/stealthtalkanomalousauth-cl.html"><code>StealthTalkAnomalousAuth_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="playbooks">Playbooks</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Description</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/stealthtalk-stealthtalk-alert-to-microsoft-teams-a29da8d6.html">StealthTalk - Alert to Microsoft Teams</a></td>
+  <td style="text-align:left">When a Microsoft Sentinel incident is created, post a formatted Adaptive Card with the incident summ...</td>
+  <td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/StealthTalk/README.md">StealthTalk/README.md</a></em></p>
+</blockquote>
+<p>The StealthTalk Anomalous Authentication solution surfaces suspicious user-authentication events from the StealthTalk private business messenger inside Microsoft Sentinel, providing a normalised ASIM-compliant view, four scheduled detections, three hunting queries, an interactive workbook, and a Teams-notification playbook. It is intended for organisations running StealthTalk Enterprise on Microsoft Azure and wanting their SOC to operate StealthTalk anomalies through standard Microsoft Sentinel workflows.</p>
+<h2 id="whats-inside">What's inside</h2>
+<table>
+<thead>
+<tr>
+  <th>Artefact</th>
+  <th>Count</th>
+  <th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Data Connector (Logs Ingestion API)</td>
+  <td>1</td>
+  <td>Custom log table + DCE + DCR. Stream <code>Custom-StealthTalkAnomalousAuth_CL</code>. 21 fields covering 4 anomaly classes.</td>
+</tr>
+<tr>
+  <td>Scheduled Analytic Rules</td>
+  <td>4</td>
+  <td>After-Hours Work (Low), Multi New Devices Registration (Medium), Login Outside Work Zone (High), Password Brute Force (High). MITRE-mapped.</td>
+</tr>
+<tr>
+  <td>Hunting Queries</td>
+  <td>3</td>
+  <td>Impossible Travel, Account Takeover Sequence, Brute Force followed by Suspicious Access.</td>
+</tr>
+<tr>
+  <td>ASIM Parsers (Authentication 0.1.3)</td>
+  <td>3</td>
+  <td><code>vimAuthenticationStealthTalk</code> (filtering), <code>ASimAuthenticationStealthTalk</code> (non-filtering), and an <code>imAuthentication</code> union extension that registers the StealthTalk source.</td>
+</tr>
+<tr>
+  <td>Workbook</td>
+  <td>1</td>
+  <td>17 panels across Overview, Off-Hours, New Devices, Geo Anomaly, Brute Force. Includes a User Risk Leaderboard, Multi-Vector Correlation, and a World Map.</td>
+</tr>
+<tr>
+  <td>Playbook</td>
+  <td>1</td>
+  <td>Logic App that posts incident details into a Microsoft Teams channel via webhook.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>A Microsoft Sentinel-enabled Log Analytics workspace.</li>
+<li>A deployed StealthTalk Enterprise instance configured to send anomalous-auth events to the Log Analytics workspace via the Logs Ingestion API. StealthTalk authenticates to Azure with a service principal granted the <strong>Monitoring Metrics Publisher</strong> role on the deployed Data Collection Rule.</li>
+<li>Workspace ASIM Authentication parsers (Microsoft's <code>FullDeploymentAuthentication.json</code>) deployed in the workspace before this Solution is installed. The Solution's <code>imAuthentication</code> extension parser overrides the union so that StealthTalk events are returned by <code>imAuthentication()</code> alongside Microsoft-built-in sources.</li>
+<li>For the Teams playbook: a Microsoft Teams channel with an incoming-webhook workflow already created. The webhook URL is configured as a deployment parameter.</li>
+</ol>
+<h2 id="installation">Installation</h2>
+<p>This solution is published as a partner Microsoft Sentinel Solution to the <strong>Microsoft Sentinel Content Hub</strong>. To install:</p>
+<ol>
+<li>Open Microsoft Defender -&gt; Microsoft Sentinel -&gt; your workspace -&gt; <strong>Content management</strong> -&gt; <strong>Content hub</strong>.</li>
+<li>Search for <strong>StealthTalk Anomalous Authentication</strong> and click <strong>Install</strong>.</li>
+<li>After install, configure each artefact under <strong>Content management -&gt; Content hub -&gt; StealthTalk -&gt; Manage</strong>:</li>
+</ol>
+<p><em>[Content truncated...]</em></p>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>13-05-2026</td>
+  <td>Initial public release with the StealthTalk data connector, 4 analytic rules, 3 hunting queries, ASIM Authentication parsers, workbook, and Teams playbook.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

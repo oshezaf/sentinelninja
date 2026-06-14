@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ Akamai Guardicore &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#connectors" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="akamai-guardicore">⚠️ Akamai Guardicore</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/akamai-guardicore.svg" alt="" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Connector ID</strong></td>
+  <td style="text-align:left"><code>AkamaiGuardicore</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">Akamai</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Used in Solutions</strong></td>
+  <td style="text-align:left"><a href="../solutions/akamai-guardicore.html">Akamai Guardicore</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Collection Method</strong></td>
+  <td style="text-align:left"><a href="../methods/ccf.html">CCF</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Connector Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Data%20Connectors/AkamaiGuardicoreLogs_ccp/AkamaiGuardicore_ConnectorDefinition.json">AkamaiGuardicore_ConnectorDefinition.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>DCR Definition Files</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Data%20Connectors/AkamaiGuardicoreLogs_ccp/AkamaiGuardicore_DCR.json">AkamaiGuardicore_DCR.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Configuration</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai%20Guardicore/Data%20Connectors/AkamaiGuardicoreLogs_ccp/AkamaiGuardicore_PollingConfig.json">AkamaiGuardicore_PollingConfig.json</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>CCF Capabilities</strong></td>
+  <td style="text-align:left"><code>JwtToken</code>, <code>Paging</code></td>
+</tr>
+</tbody>
+</table>
+<p>The Akamai Guardicore connector uses the Codeless Connector Framework (CCF) to import Agents, Assets, Applications, and Policy Rules from a Guardicore Centra instance into Microsoft Sentinel via Data Collection Rule (DCR) ingestion. The connector polls every 10 minutes via Microsoft Sentinel's CCF runtime; no Azure Function App is deployed.</p>
+<h2 id="tables-ingested">Tables Ingested</h2>
+<p>This connector ingests data into the following tables:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Table</th>
+  <th style="text-align:center">Transformations</th>
+  <th style="text-align:center">Ingestion API</th>
+  <th style="text-align:center">Lake-Only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../tables/guardicoreagents-cl.html"><code>GuardicoreAgents_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/guardicoreapplications-cl.html"><code>GuardicoreApplications_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/guardicoreassets-cl.html"><code>GuardicoreAssets_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/guardicorepolicyrules-cl.html"><code>GuardicorePolicyRules_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Tables with Ingestion API support allow data ingestion via the <a href="https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview">Azure Monitor Data Collector API</a>, which also enables custom transformations during ingestion.</p>
+</blockquote>
+<h2 id="permissions">Permissions</h2>
+<p><strong>Resource Provider Permissions:</strong></p>
+<ul>
+<li><strong>Workspace</strong> (Workspace): Read and write permissions on the workspace are required.</li>
+</ul>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<blockquote>
+<p>⚠️ <strong>Note</strong>: These instructions were automatically generated from the connector's user interface definition file using AI and may not be fully accurate. Please verify all configuration steps in the Microsoft Sentinel portal.</p>
+</blockquote>
+<p><strong>1. Connect Akamai Guardicore to Microsoft Sentinel</strong></p>
+<p><strong>Prerequisites</strong></p>
+<ol>
+<li>You must have a reachable Akamai Guardicore Centra management instance with API access enabled.</li>
+<li>Create (or obtain) an API user in Guardicore Centra with the <strong>Read-only</strong> role. This account must be authorized to call <code>/api/v3.0/authenticate</code>, <code>/api/v3.0/agents</code>, <code>/api/v3.0/assets</code>, <code>/api/v3.0/workflow/projects</code>, and <code>/api/v3.0/visibility/policy/rules</code>.</li>
+<li>Have the Guardicore management URL (for example <code>https://&lt;tenant&gt;.cloud.guardicore.com</code>) and the service-account username and password ready.</li>
+<li>The connector polls every 10 minutes via Microsoft Sentinel's CCF runtime. No Azure Function App is deployed.</li>
+</ol>
+<p>Provide your Guardicore Centra service-account details and click <strong>Connect</strong> to start polling.</p>
+<ul>
+<li><strong>Guardicore Management URL</strong>: https://<tenant>.cloud.guardicore.com</li>
+<li><strong>Guardicore Username</strong>: service-account username</li>
+<li><strong>Guardicore Password</strong>: (password field)</li>
+<li>Click 'Connect' to establish connection</li>
+</ul>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: [Akamai Guardicore\Data Connectors\AkamaiGuardicoreLogs_ccp\README.md](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Akamai Guardicore\Data Connectors\AkamaiGuardicoreLogs_ccp\README.md)</em></p>
+</blockquote>
+<h1 id="akamai-guardicore-connector---v300-migration-guide">Akamai Guardicore Connector - v3.0.0 Migration Guide</h1>
+<h2 id="overview">Overview</h2>
+<p>Version 3.0.0 of the Akamai Guardicore solution migrates the data connector from an
+Azure Functions-based implementation to the Microsoft Sentinel
+<a href="https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector">Codeless Connector Framework (CCF/CCP)</a>.</p>
+<p><strong>What changed</strong></p>
+<ul>
+<li>The connector is no longer backed by an Azure Function App. Polling, pagination,
+authentication, and ingestion are all performed by the platform-native CCF runtime.</li>
+<li>No Function App to deploy, scale, monitor, or patch.</li>
+<li>Workspace shared-key (<code>sharedKeys</code>) permission is no longer required by the connector.</li>
+<li>Credentials are configured directly on the connector tile in Microsoft Sentinel.</li>
+</ul>
+<p><strong>What is preserved</strong></p>
+<ul>
+<li>Table names are unchanged: <code>GuardicoreAgents_CL</code>, <code>GuardicoreAssets_CL</code>,
+<code>GuardicoreApplications_CL</code>, <code>GuardicorePolicyRules_CL</code>.</li>
+<li>Bundled workbooks, analytics rules, and playbooks continue to operate against
+these tables and require no changes.</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>A Microsoft Sentinel-enabled Log Analytics workspace.</li>
+<li>The Guardicore Centra management URL (e.g. <code>https://&lt;your-tenant&gt;.cloud.guardicore.com</code>).</li>
+<li>A Guardicore service-account username and password with the <strong>Read-only</strong> role,
+authorized for the following endpoints:<ul>
+<li><code>POST /api/v3.0/authenticate</code></li>
+<li><code>GET  /api/v3.0/agents</code></li>
+<li><code>GET  /api/v3.0/assets</code></li>
+<li><code>GET  /api/v3.0/workflow/projects</code></li>
+<li><code>GET  /api/v3.0/visibility/policy/rules</code></li>
+</ul>
+</li>
+<li>Azure CLI 2.61.0 or newer with the <code>log-analytics</code> extension installed (for the
+table migration step below).</li>
+</ul>
+<h2 id="upgrade-path-for-existing-customers">Upgrade Path for Existing Customers (One-Way)</h2>
+<blockquote>
+<p><strong>Important:</strong> This is a one-way migration. Once a <code>_CL</code> table is migrated from
+the legacy Custom Logs (DCR-less) type to DCR-based, it cannot be reverted.
+Read the <a href="#reversibility--rollback">Reversibility / rollback</a> section before
+beginning.</p>
+</blockquote>
+<ol>
+<li><p><strong>Stop the existing v1 Function App connector.</strong> In the Azure portal, navigate
+to the Guardicore Function App and stop it. This halts ingestion from the
+legacy path.</p>
+</li>
+<li><p><strong>Wait approximately 5 minutes</strong> for any in-flight queue items / HTTP Data
+Collector batches to drain into the workspace.</p>
+</li>
+<li><p><strong>Migrate each of the four Guardicore tables</strong> from Custom Logs (DCR-less) to
+DCR-based using <code>az monitor log-analytics workspace table migrate</code>. See the
+Microsoft Learn guidance:
+<a href="https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate">https://learn.microsoft.com/en-us/azure/azure-monitor/logs/custom-logs-migrate</a>.</p>
+<p>Run this command once per table, substituting the table name:</p>
+<pre><code class="language-bash">az monitor log-analytics workspace table migrate \
+  --resource-group &lt;rg&gt; \
+  --workspace-name &lt;workspace&gt; \
+  --name GuardicoreAgents_CL
+</code></pre>
+<p>Tables to migrate:</p>
+<ul>
+<li><code>GuardicoreAgents_CL</code></li>
+<li><code>GuardicoreAssets_CL</code></li>
+<li><code>GuardicoreApplications_CL</code></li>
+<li><code>GuardicorePolicyRules_CL</code></li>
+</ul>
+</li>
+<li><p><strong>Verify each table's type</strong> is now DCR-based:</p>
+<pre><code class="language-bash">az monitor log-analytics workspace table show \
+  --resource-group &lt;rg&gt; \
+  --workspace-name &lt;workspace&gt; \
+  --name GuardicoreAgents_CL \
+  --query &quot;tableType&quot;
+</code></pre>
+<p>Expected output: <code>DataCollectionRuleBased</code>.</p>
+</li>
+<li><p><strong>Deploy the v3.0.0 solution</strong> from the Microsoft Sentinel Content Hub
+(&quot;Akamai Guardicore&quot;). Accept the deployment into the same workspace.</p>
+</li>
+<li><p><strong>Configure CCF credentials on the connector tile.</strong> Open the
+<em>Akamai Guardicore (CCP)</em> data connector and provide:</p>
+<ul>
+<li><strong>Guardicore Management URL</strong> (e.g. <code>https://&lt;tenant&gt;.cloud.guardicore.com</code>)</li>
+<li><strong>Username</strong></li>
+<li><strong>Password</strong></li>
+</ul>
+<p>Click <em>Connect</em>. The CCF runtime will begin polling the five endpoints listed
+in <a href="#prerequisites">Prerequisites</a>.</p>
+</li>
+<li><p><strong>Verify ingestion</strong> approximately 15 minutes after connecting. For each table:</p>
+<pre><code class="language-kusto">GuardicoreAgents_CL | where TimeGenerated &gt; ago(15m) | take 10
+</code></pre>
+<p>Repeat for <code>GuardicoreAssets_CL</code>, <code>GuardicoreApplications_CL</code>, and
+<code>GuardicorePolicyRules_CL</code>.</p>
+</li>
+<li><p><strong>After 24 hours of clean ingestion</strong>, delete the old Function App and any
+leftover deployment artifacts (storage account used for Function state, App
+Service plan, Application Insights resource if dedicated, and any Key Vault
+secrets that held the workspace shared key or Guardicore credentials for the
+old connector).</p>
+</li>
+</ol>
+<h2 id="reversibility-rollback">Reversibility / Rollback</h2>
+<p>The <code>az monitor log-analytics workspace table migrate</code> operation is <strong>not
+reversible</strong>. Once a table is converted to DCR-based, there is no supported path
+back to the legacy Custom Logs (DCR-less) type.</p>
+<p>If you encounter ingestion problems after cutover:</p>
+<ul>
+<li><strong>Do not</strong> attempt to roll back the table migration.</li>
+<li><strong>Do not</strong> redeploy the v1 Function App against the migrated tables.</li>
+<li>Open a Microsoft support ticket referencing the migrated table(s) and the v3.0.0
+CCF connector, and an Akamai Guardicore support ticket if Guardicore-side
+authentication or API behavior is suspect.</li>
+</ul>
+<p>To minimize risk, exercise the upgrade in a non-production workspace first if
+one is available.</p>
+<h2 id="ccf-overview">CCF Overview</h2>
+<p>The Codeless Connector Framework (also referred to as CCP, the Codeless
+Connector Platform) lets connector authors describe polling-based ingestion
+declaratively in JSON, removing the need for connector-specific compute. See
+the Microsoft Learn reference:
+<a href="https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector">https://learn.microsoft.com/en-us/azure/sentinel/create-codeless-connector</a>.</p>
+<h2 id="permission-changes">Permission Changes</h2>
+<p>The v3.0.0 solution drops the following permissions previously required by v1:</p>
+<ul>
+<li><code>Microsoft.OperationalInsights/workspaces/sharedKeys/action</code> - the workspace
+shared key was used by the Function App to write via the legacy HTTP Data
+Collector API. CCF uses the Logs Ingestion API via a managed Data Collection
+Rule and Data Collection Endpoint, so the shared key is no longer required.</li>
+<li><code>Microsoft.Web/sites/*</code> (Function App deployment) - no Function App is
+deployed by v3.0.0.</li>
+</ul>
+<p>The connector retains only standard Read / Write / Delete permissions on
+<code>Microsoft.OperationalInsights/workspaces</code> for table and DCR management.</p>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>
+
+</div>
+
+</body>
+</html>
