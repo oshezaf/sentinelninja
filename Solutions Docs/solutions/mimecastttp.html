@@ -47,7 +47,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
-  <td style="text-align:left">domains</td>
+  <td style="text-align:left">Security - Network</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
@@ -71,7 +71,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Marketplace</strong></td>
-  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecastttp">Azure Marketplace</a> · Popularity: ⚪ Very Low (9%)</td>
+  <td style="text-align:left"><a href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecastttp">Azure Marketplace</a> · Popularity: ⚪ Very Low (0%)</td>
 </tr>
 </tbody>
 </table>
@@ -91,44 +91,32 @@ The Mimecast products included within the connector are:</p>
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
-<ul>
-<li><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a> 🔶</li>
-</ul>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>3 table(s)</strong>:</p>
+<p>This solution queries <strong>3 table(s)</strong> from its content items:</p>
 <table>
 <thead>
 <tr>
   <th>Table</th>
-  <th>Used By Connectors</th>
   <th>Used By Content</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-  <td><a href="../tables/mimecastttpattachment-cl.html"><code>MimecastTTPAttachment_CL</code></a> 🔶</td>
-  <td><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a></td>
+  <td><a href="../tables/mimecastttpattachment-cl.html"><code>MimecastTTPAttachment_CL</code></a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-  <td><a href="../tables/mimecastttpimpersonation-cl.html"><code>MimecastTTPImpersonation_CL</code></a> 🔶</td>
-  <td><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a></td>
+  <td><a href="../tables/mimecastttpimpersonation-cl.html"><code>MimecastTTPImpersonation_CL</code></a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 <tr>
-  <td><a href="../tables/mimecastttpurl-cl.html"><code>MimecastTTPUrl_CL</code></a> 🔶</td>
-  <td><a href="../connectors/mimecastttpapi.html">Mimecast Targeted Threat Protection</a></td>
+  <td><a href="../tables/mimecastttpurl-cl.html"><code>MimecastTTPUrl_CL</code></a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
-</blockquote>
 <h2 id="content-items">Content Items</h2>
 <p>This solution includes <strong>4 content item(s)</strong>:</p>
 <table>
