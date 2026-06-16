@@ -1,6 +1,8 @@
-# Threat Intelligence (Preview)
+# 🚫 Threat Intelligence (Preview)
 
 *Solution: Threat Intelligence*
+
+> 🚫 **Deprecated:** This solution has been deprecated and replaced by a newer integration.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="Threat Intelligence Logo" width="75" height="75">
 
@@ -15,13 +17,13 @@
 | **Publisher** | Microsoft Corporation |
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Threat Intelligence |
 | **Version** | 3.1.3 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-18 |
 | **Last Updated** | 2026-01-27 |
 | **Solution Folder** | [Threat Intelligence](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Threat%20Intelligence) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatintelligence-taxii) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟢 High (91%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-threatintelligence-taxii) · Rating: ★★☆☆☆ 2.2/5 (4 ratings) · Popularity: 🟡 Low (42%) |
 
 The Threat Intelligence solution contains data connectors for import of supported STIX objects into Microsoft Sentinel, analytic rules for matching TI data with event data, workbook, and hunting queries. Threat indicators can be malicious IP's, URL's, filehashes, domains, email addresses etc.
 
@@ -33,61 +35,52 @@ The Threat Intelligence solution contains data connectors for import of supporte
 
 ## Data Connectors
 
-This solution provides **4 data connector(s)** (plus 1 discovered⚠️):
+**This solution does not include data connectors.**
 
-- [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md)
-- [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md)
-- [Threat Intelligence Platforms](../connectors/threatintelligence.md)
-- [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md)
-- [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) ⚠️
-
-> 🔍 **Discovered:** This item was discovered by scanning the solution folder but is not listed in the Solution JSON file.
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ## Tables Used
 
-This solution uses **27 table(s)**:
+This solution queries **27 table(s)** from its content items:
 
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | - | Analytics |
-| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | - | Analytics |
-| [`AWSCloudTrail`](../tables/awscloudtrail.md) | - | Analytics |
-| [`AppServiceHTTPLogs`](../tables/appservicehttplogs.md) | - | Analytics |
-| [`AuditLogs`](../tables/auditlogs.md) | - | Analytics |
-| [`AzureActivity`](../tables/azureactivity.md) | - | Analytics |
-| [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | - | Analytics |
-| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) 🔶 | - | Analytics |
-| [`CloudAppEvents`](../tables/cloudappevents.md) | - | Analytics |
-| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Analytics |
-| [`DeviceFileEvents`](../tables/devicefileevents.md) | - | Analytics |
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | - | Analytics |
-| [`DnsEvents`](../tables/dnsevents.md) | - | Analytics |
-| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) 🔶 | - | Analytics |
-| [`EmailEvents`](../tables/emailevents.md) | - | Analytics |
-| [`EmailUrlInfo`](../tables/emailurlinfo.md) | - | Analytics |
-| [`GitHub_CL`](../tables/github-cl.md) | - | Analytics |
-| [`OfficeActivity`](../tables/officeactivity.md) | - | Analytics, Hunting |
-| [`SecurityEvent`](../tables/securityevent.md) | - | Analytics, Hunting |
-| [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
-| [`Syslog`](../tables/syslog.md) | - | Analytics, Hunting |
-| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md), [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md), [Threat Intelligence Platforms](../connectors/threatintelligence.md), [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md), [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Analytics, Hunting, Workbooks |
-| [`UrlClickEvents`](../tables/urlclickevents.md) | - | Analytics |
-| [`VMConnection`](../tables/vmconnection.md) | - | Analytics, Hunting |
-| [`W3CIISLog`](../tables/w3ciislog.md) | - | Analytics |
-| [`WindowsEvent`](../tables/windowsevent.md) | - | Analytics |
-| [`WireData`](../tables/wiredata.md) | - | Hunting |
+| Table | Used By Content |
+|-------|----------------|
+| [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) | Analytics |
+| [`ASimAuditEventLogs`](../tables/asimauditeventlogs.md) | Analytics |
+| [`AWSCloudTrail`](../tables/awscloudtrail.md) | Analytics |
+| [`AppServiceHTTPLogs`](../tables/appservicehttplogs.md) | Analytics |
+| [`AuditLogs`](../tables/auditlogs.md) | Analytics |
+| [`AzureActivity`](../tables/azureactivity.md) | Analytics |
+| [`AzureDiagnostics`](../tables/azurediagnostics.md) | Analytics |
+| [`AzureNetworkAnalytics_CL`](../tables/azurenetworkanalytics-cl.md) | Analytics |
+| [`CloudAppEvents`](../tables/cloudappevents.md) | Analytics |
+| [`CommonSecurityLog`](../tables/commonsecuritylog.md) | Analytics |
+| [`DeviceFileEvents`](../tables/devicefileevents.md) | Analytics |
+| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | Analytics |
+| [`DnsEvents`](../tables/dnsevents.md) | Analytics |
+| [`DuoSecurityAuthentication_CL`](../tables/duosecurityauthentication-cl.md) | Analytics |
+| [`EmailEvents`](../tables/emailevents.md) | Analytics |
+| [`EmailUrlInfo`](../tables/emailurlinfo.md) | Analytics |
+| [`GitHub_CL`](../tables/github-cl.md) | Analytics |
+| [`OfficeActivity`](../tables/officeactivity.md) | Analytics, Hunting |
+| [`SecurityEvent`](../tables/securityevent.md) | Analytics, Hunting |
+| [`SigninLogs`](../tables/signinlogs.md) | Analytics |
+| [`Syslog`](../tables/syslog.md) | Analytics, Hunting |
+| [`ThreatIntelligenceIndicator`](../tables/threatintelligenceindicator.md) | Analytics, Hunting, Workbooks |
+| [`UrlClickEvents`](../tables/urlclickevents.md) | Analytics |
+| [`VMConnection`](../tables/vmconnection.md) | Analytics, Hunting |
+| [`W3CIISLog`](../tables/w3ciislog.md) | Analytics |
+| [`WindowsEvent`](../tables/windowsevent.md) | Analytics |
+| [`WireData`](../tables/wiredata.md) | Hunting |
 
 ### Internal Tables
 
 The following **2 table(s)** are used internally by this solution's content items:
 
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`SecurityAlert`](../tables/securityalert.md) | - | Analytics, Workbooks |
-| [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| Table | Used By Content |
+|-------|----------------|
+| [`SecurityAlert`](../tables/securityalert.md) | Analytics, Workbooks |
+| [`SecurityIncident`](../tables/securityincident.md) | Workbooks |
 
 ## Content Items
 

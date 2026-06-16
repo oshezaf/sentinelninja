@@ -18,10 +18,10 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **126** |
+| Total Connectors | **127** |
 | Active | 85 |
 | Deprecated 🚫 | 26 |
-| Unpublished ⚠️ | 15 |
+| Unpublished ⚠️ | 16 |
 
 ## Connectors Using This Method
 
@@ -110,6 +110,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [SecurityScorecard Factor](../connectors/securityscorecardfactorazurefunctions.md) 🔶 | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | [SecurityScorecard Issue](../connectors/securityscorecardissueazurefunctions.md) 🔶 | SecurityScorecard | 1 | [SecurityScorecard Cybersecurity Ratings](../solutions/securityscorecard-cybersecurity-ratings.md) |
 | [Semperis Lightning Logs](../connectors/semperislightninglogsazurefunctions.md) | Semperis | 7 | [SemperisLightning](../solutions/semperislightning.md) |
+| [SlashNext Function App](../connectors/slashnextfunctionapp.md) ⚠️ | SlashNext | ? | [SlashNext](../solutions/slashnext.md) |
 | [Team Cymru Scout Data Connector](../connectors/teamcymruscout.md) | Team Cymru Scout | 14 | [Team Cymru Scout](../solutions/team-cymru-scout.md) |
 | [Tenable Vulnerability Management](../connectors/tenablevm.md) | Tenable | 5 | [Tenable App](../solutions/tenable-app.md) |
 | [Tenable.io Vulnerability Management](../connectors/tenableioapi.md) 🔶 | Tenable | 2 | [TenableIO](../solutions/tenableio.md) |

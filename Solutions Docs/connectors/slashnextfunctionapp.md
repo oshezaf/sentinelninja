@@ -1,4 +1,6 @@
-# SlashNext Function App
+# ⚠️ SlashNext Function App
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/slashnext-logo.svg" alt="" width="75" height="75">
 
@@ -17,14 +19,6 @@
 | **Connector Definition Files** | [SlashNext_FunctionApp.json](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/SlashNext/DataConnectors/SlashNext_FunctionApp.json) |
 
 The SlashNext function app utilizes python to perform the analysis of the raw logs and returns URLs present in the logs.
-
-## Tables Ingested
-
-This connector ingests data into the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureMetrics`](../tables/azuremetrics.md) | `MetricName == "FunctionExecutionCount"` | ? | ✗ | ? |
 
 ## Permissions
 

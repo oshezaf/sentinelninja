@@ -17,13 +17,13 @@
 | **Publisher** | Mimecast |
 | **Support Tier** | Partner |
 | **Support Link** | [https://mimecastsupport.zendesk.com/](https://mimecastsupport.zendesk.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.2 |
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2022-02-24 |
 | **Last Updated** | 2022-02-24 |
 | **Solution Folder** | [MimecastTTP](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/MimecastTTP) |
-| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecastttp) · Popularity: ⚪ Very Low (9%) |
+| **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/mimecastnorthamerica1584469118674.azure-sentinel-solution-mimecastttp) · Popularity: ⚪ Very Low (0%) |
 
 The data connector for [Mimecast Targeted Threat Protection](https://integrations.mimecast.com/tech-partners/microsoft-sentinel/) provides customers with the visibility into security events related to the Targeted Threat Protection inspection technologies within Microsoft Sentinel. The data connector provides pre-created dashboards to allow analysts to view insight into email based threats, aid in incident correlation and reduce investigation response times coupled with custom alert capabilities.  
 The Mimecast products included within the connector are: 
@@ -44,25 +44,19 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+**This solution does not include data connectors.**
 
-- [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution queries **3 table(s)** from its content items:
 
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) 🔶 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
-| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) 🔶 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
-| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) 🔶 | [Mimecast Targeted Threat Protection](../connectors/mimecastttpapi.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| Table | Used By Content |
+|-------|----------------|
+| [`MimecastTTPAttachment_CL`](../tables/mimecastttpattachment-cl.md) | Analytics, Workbooks |
+| [`MimecastTTPImpersonation_CL`](../tables/mimecastttpimpersonation-cl.md) | Analytics, Workbooks |
+| [`MimecastTTPUrl_CL`](../tables/mimecastttpurl-cl.md) | Analytics, Workbooks |
 
 ## Content Items
 

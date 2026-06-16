@@ -1,4 +1,6 @@
-# SlashNext
+# ⚠️ SlashNext
+
+> ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/slashnext-logo.svg" alt="SlashNext Logo" width="75" height="75">
 
@@ -13,7 +15,7 @@
 | **Publisher** | SlashNext |
 | **Support Tier** | Partner |
 | **Support Link** | [https://support@slashnext.com](https://support@slashnext.com) |
-| **Categories** | domains |
+| **Categories** | Security - Network,Security - Automation (SOAR) |
 | **Version** | 3.0.0 |
 | **Author** | SlashNext - support@slashnext.com |
 | **First Published** | 2022-08-12 |
@@ -22,25 +24,11 @@
 
 SlashNext URL Investigation Connector is based upon its Real-time Phishing Defense (RPD) APIs which are connected to SlashNext real-time threat intelligence database, continuously updated with the latest phishing threats. SlashNext RPD APIs are designed to be very fast and give accurate binary verdict on each enrichment request to ease its integration in any phishing Incident Response (IR) or SOAR environment.
 
-## Contents
-
-- [Data Connectors](#data-connectors)
-- [Tables Used](#tables-used)
-- [Content Items](#content-items)
-
 ## Data Connectors
 
 This solution provides **1 data connector(s)**:
 
 - [SlashNext Function App](../connectors/slashnextfunctionapp.md)
-
-## Tables Used
-
-This solution uses **1 table(s)**:
-
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`AzureMetrics`](../tables/azuremetrics.md) | [SlashNext Function App](../connectors/slashnextfunctionapp.md) | - |
 
 ## Content Items
 

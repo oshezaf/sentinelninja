@@ -19,14 +19,6 @@ Identifies IPs with failed attempts to sign in to one or more disabled accounts 
 | **Required Connectors** | [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/SigninLogs/SuccessfulAccount-SigninAttemptsByIPviaDisabledAccounts.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SigninLogs`](../tables/signinlogs.md) | `ResultDescription == "User account is disabled. The account has been disabled by an administrator."`<br>`ResultType in "0,50057"` | ✓ | ✗ | ✓ |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

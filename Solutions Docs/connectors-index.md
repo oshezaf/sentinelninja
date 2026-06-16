@@ -6,7 +6,7 @@ Data connectors are the ingestion mechanism for Microsoft Sentinel, enabling you
 
 ---
 
-**637 unique connectors** (486 active, 151 deprecated). See [📊 Statistics](statistics.md) for detailed breakdowns.
+**638 unique connectors** (487 active, 151 deprecated). See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -52,7 +52,7 @@ Browse connectors alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Alibaba Cloud ActionTrail (via Codeless Connector Framework)](connectors/alicloudactiontrailccpdefinition.md) | Microsoft | [CCF](methods/ccf.md) | 1 | [Alibaba Cloud ActionTrail](solutions/alibaba-cloud-actiontrail.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Workbooks/Images/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Alibaba Cloud Networking Data Connector (via Codeless Connector Framework)](connectors/alibabacloudnetworkingconnector.md) | Microsoft | [CCF](methods/ccf.md) | 1 | [Alibaba Cloud Networking](solutions/alibaba-cloud-networking.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [AliCloud](connectors/alicloud.md) | AliCloud | [Azure Function](methods/azure-function.md) | 1 | [Alibaba Cloud](solutions/alibaba-cloud.md) |
-| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Alsid.svg" alt="" width="40" height="40"> | [Alsid for Active Directory](connectors/alsidforad.md) ⚠️ | Alsid | [AMA](methods/ama.md) | 3 | [Alsid For AD](solutions/alsid-for-ad.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Alsid.svg" alt="" width="40" height="40"> | [Alsid for Active Directory](connectors/alsidforad.md) ⚠️ | Alsid | [AMA](methods/ama.md) | 1 | [Alsid For AD](solutions/alsid-for-ad.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="40" height="40"> | [Amazon Web Services](connectors/aws.md) ➕ | Amazon | [Native](methods/native.md) | 1 | [Amazon Web Services](solutions/amazon-web-services.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="40" height="40"> | [Amazon Web Services CloudFront (via Codeless Connector Framework) (Preview)](connectors/awscloudfrontccpdefinition.md) ➕ | Microsoft | [CCF](methods/ccf.md) | 1 | [AWS CloudFront](solutions/aws-cloudfront.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Aws.svg" alt="" width="40" height="40"> | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](connectors/awselbconnector.md) | Amazon Web Services | [CCF](methods/ccf.md) | 6 | [AWS ELB](solutions/aws-elb.md) |
@@ -502,6 +502,7 @@ Browse connectors alphabetically:
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SSG.svg" alt="" width="40" height="40"> | [SINEC Security Guard](connectors/ssg.md) ⚠️ | Siemens AG | [REST Pull API](methods/rest-pull-api.md) | 1 | [SINEC Security Guard](solutions/sinec-security-guard.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="" width="40" height="40"> | [Slack](connectors/slackaudit.md) ⚠️ 🔍 🔶 | Slack | [CCF](methods/ccf.md) | 1 | [SlackAudit](solutions/slackaudit.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SlackAudit/Data%20Connectors/Logo/slacklogo.svg" alt="" width="40" height="40"> | [SlackAudit (via Codeless Connector Framework)](connectors/slackauditlogsccpdefinition.md) | Microsoft | [CCF](methods/ccf.md) | 1 | [SlackAudit](solutions/slackaudit.md) |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/slashnext-logo.svg" alt="" width="40" height="40"> | [SlashNext Function App](connectors/slashnextfunctionapp.md) ⚠️ | SlashNext | [Azure Function](methods/azure-function.md) | ? | [SlashNext](solutions/slashnext.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Snowflake (via Codeless Connector Framework)](connectors/snowflakelogsccpdefinition.md) | Microsoft | [CCF](methods/ccf.md) | 10 | [Snowflake](solutions/snowflake.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/SOCPrime_Logo.svg" alt="" width="40" height="40"> | [SOC Prime Platform Audit Logs Data Connector](connectors/socprimeauditlogsdataconnector.md) | Microsoft | [CCF](methods/ccf.md) | 1 | [SOC Prime CCF](solutions/soc-prime-ccf.md) |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Solutions/SonraiSecurity/Workbooks/Images/Logo/Sonrai.svg" alt="" width="40" height="40"> | [Sonrai Data Connector](connectors/sonraidataconnector.md) 🔶 | Sonrai | [REST Pull API](methods/rest-pull-api.md) | 1 | [SonraiSecurity](solutions/sonraisecurity.md) |

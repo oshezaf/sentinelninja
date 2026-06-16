@@ -20,15 +20,6 @@
 | **Required Connectors** | [Office365](../connectors/office365.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md), [AzureActiveDirectory](../connectors/azureactivedirectory.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/MultipleDataSources/AnomalousIPUsageFollowedByTeamsAction.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`OfficeActivity`](../tables/officeactivity.md) | `CommunicationType in "GroupChat,OneonOne"`<br>`Operation in "AppInstalled,BotAddedToTeam,MemberAdded,MemberRemoved,MemberRoleChanged,TeamsAdminAction"` | ✓ | ✗ | ✓ |
-| [`Operation`](../tables/operation.md) |  | ? | ✗ | ? |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

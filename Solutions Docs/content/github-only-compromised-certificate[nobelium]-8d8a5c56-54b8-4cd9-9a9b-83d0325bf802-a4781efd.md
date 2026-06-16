@@ -17,14 +17,6 @@ Search for the files that are using a compromised certificate associated with th
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Campaigns/compromised-certificate%5BNobelium%5D.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceFileCertificateInfo`](../tables/devicefilecertificateinfo.md) | `Signer == "Solarwinds Worldwide, LLC"`<br>`SignerHash == "47d92d49e6f7f296260da1af355f941eb25360c4"` | ✓ | ✗ | ? |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

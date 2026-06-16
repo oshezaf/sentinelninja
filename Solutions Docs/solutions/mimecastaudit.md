@@ -17,7 +17,7 @@
 | **Publisher** | Mimecast |
 | **Support Tier** | Partner |
 | **Support Link** | [https://mimecastsupport.zendesk.com/](https://mimecastsupport.zendesk.com/) |
-| **Categories** | domains |
+| **Categories** | Security - Network |
 | **Version** | 3.0.2 |
 | **Author** | Mimecast - dlapi@mimecast.com |
 | **First Published** | 2022-02-24 |
@@ -42,23 +42,17 @@ Microsoft Sentinel Solutions provide a consolidated way to acquire Microsoft Sen
 
 ## Data Connectors
 
-This solution provides **1 data connector(s)**:
+**This solution does not include data connectors.**
 
-- [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) 🔶
-
-> 🔶 **CLv1:** This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
-
+This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution queries **1 table(s)** from its content items:
 
-| Table | Used By Connectors | Used By Content |
-|-------|-------------------|----------------|
-| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) 🔶 | [Mimecast Audit & Authentication](../connectors/mimecastauditapi.md) | Analytics, Workbooks |
-
-
-> 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
+| Table | Used By Content |
+|-------|----------------|
+| [`MimecastAudit_CL`](../tables/mimecastaudit-cl.md) | Analytics, Workbooks |
 
 ## Content Items
 

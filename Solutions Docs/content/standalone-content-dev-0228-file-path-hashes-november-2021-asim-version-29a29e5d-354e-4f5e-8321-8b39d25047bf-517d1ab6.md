@@ -19,24 +19,6 @@ This hunting query looks for file paths/hashes related to observed activity by D
 | **Techniques** | T1569, T1003 |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/ASimProcess/imFileEvent_Dev-0228FilePathHashesNovember2021%28ASIMVersion%29.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`SecurityAlert`](../tables/securityalert.md) | `ProviderName == "MDATP"` | ✓ | ✗ | ✓ |
-
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [MicrosoftDefenderAdvancedThreatProtection](../connectors/microsoftdefenderadvancedthreatprotection.md) | [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md) |
-
-**Solutions:** [MicrosoftDefenderForEndpoint](../solutions/microsoftdefenderforendpoint.md)
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

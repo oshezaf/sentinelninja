@@ -17,14 +17,6 @@ This query was originally published in a threat analytics report about the group
 | **Required Connectors** | [MicrosoftThreatProtection](../connectors/microsoftthreatprotection.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting Queries/Microsoft%20365%20Defender/Campaigns/oceanlotus-apt32-network.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) | `RemoteUrl in "C2 Indicators for OceanLotus Activities 2019,Malicious URL Indicators for OceanLotus Activities 2019,cortanasyn.com,cortanazone.com,load.newappssystems.com,open.betaoffice.net,outlook.updateoffices.net,ristineho.com,syn.servebbs.com"` | ✓ | ✗ | ? |
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)

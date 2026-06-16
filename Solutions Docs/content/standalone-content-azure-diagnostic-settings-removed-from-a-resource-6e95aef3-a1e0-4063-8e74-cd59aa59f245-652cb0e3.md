@@ -20,24 +20,6 @@ This query looks for diagnostic settings that are removed from a resource. This 
 | **Required Connectors** | [AzureActivity](../connectors/azureactivity.md) |
 | **Source** | [View on GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/AzureActivity/AzDiagSettingsDeleted.yaml) |
 
-## Tables Used
-
-This content item queries data from the following tables:
-
-| Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
-|:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue has_any "Success"`<br>`Caller has "@"`<br>`OperationNameValue == "MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE"`<br>`OperationNameValue != "MICROSOFT.INSIGHTS/DIAGNOSTICSETTINGS/DELETE"`<br>`OperationNameValue endswith "/DELETE"` | ✗ | ✗ | ✗ |
-
-## Associated Connectors
-
-The following connectors provide data for this content item:
-
-| Connector | Solution |
-|:----------|:---------|
-| [AzureActivity](../connectors/azureactivity.md) | [Azure Activity](../solutions/azure-activity.md) |
-
-**Solutions:** [Azure Activity](../solutions/azure-activity.md)
-
 ---
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
