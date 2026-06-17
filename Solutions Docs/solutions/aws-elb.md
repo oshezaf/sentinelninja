@@ -37,16 +37,14 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **4 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`AWSALBAccessLogs`](../tables/awsalbaccesslogs.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
-| [`AWSALBAccessLogs_CL`](../tables/awsalbaccesslogs-cl.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
-| [`AWSELBFlowLogs`](../tables/awselbflowlogs.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
-| [`AWSELBFlowLogs_CL`](../tables/awselbflowlogs-cl.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
+| [`AWSGLBFlowLogsStream`](../tables/awsglbflowlogsstream.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
 | [`AWSNLBAccessLogs`](../tables/awsnlbaccesslogs.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
-| [`AWSNLBAccessLogs_CL`](../tables/awsnlbaccesslogs-cl.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
+| [`AWSNLBFlowLogsStream`](../tables/awsnlbflowlogsstream.md) | [Amazon Web Services Elastic Load Balancing (via Codeless Connector Framework)](../connectors/awselbconnector.md) | - |
 
 ## Content Items
 

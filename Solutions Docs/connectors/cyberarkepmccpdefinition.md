@@ -19,6 +19,16 @@
 
 The [CyberArk Endpoint Privilege Manager](https://www.cyberark.com/products/endpoint-privilege-manager/) data connector enables Microsoft Sentinel to ingest security event logs and other events from CyberArk EPM via REST API.
 
+## Tables Ingested
+
+This connector ingests data into the following tables:
+
+| Table | Transformations | Ingestion API | Lake-Only |
+|:------|:---------------:|:-------------:|:---------:|
+| [`CyberArk_EPMEvents_CL`](../tables/cyberark-epmevents-cl.md) | ? | ✓ | ? |
+
+> 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
+
 ## Permissions
 
 **Resource Provider Permissions:**

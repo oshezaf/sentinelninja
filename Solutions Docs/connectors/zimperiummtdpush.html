@@ -85,6 +85,18 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../tables/zimperiumincidentlog-cl.html"><code>ZimperiumIncidentLog_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../tables/zimperiumincidentmitigationlog-cl.html"><code>ZimperiumIncidentMitigationLog_CL</code></a></td>
+  <td style="text-align:center">?</td>
+  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../tables/zimperiummitigationlogv2-cl.html"><code>ZimperiumMitigationLogV2_CL</code></a></td>
   <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
@@ -129,9 +141,10 @@ Deploy Zimperium MTD Push connector resources</p>
 <li>Create the Configuration:<ul>
 <li><strong>Name:</strong> Name to describe this configuration.</li>
 <li><strong>Description:</strong> Description to describe this configuration.</li>
-<li><strong>Data Type:</strong> Select datatype as Threat.</li>
+<li><strong>Data Type:</strong> Select datatype as <em>Threats</em> or <em>Incidents</em> depending on the data you want to export.</li>
 <li><strong>Destination Type:</strong> From the available destination types, select Microsoft Sentinel.</li>
-<li><strong>Severity Criteria:</strong> Select a Filter Level for the threat data you wish to push to Microsoft Sentinel.</li>
+<li><strong>Severity Criteria:</strong> Select a Filter Level for the threat data you wish to push to Microsoft Sentinel.(<strong>Note:</strong> This field is applicable only for <em>threats</em> datatype)</li>
+<li><strong>Team Criteria:</strong> This is an optional criterion to filter data based on teams.</li>
 <li><strong>External Tracking Id 1:</strong> This is an optional criterion to match for exported data.</li>
 <li><strong>External Tracking Id 2:</strong> This is an optional criterion to match for exported data.</li>
 <li><strong>Tenant Id:</strong> Enter from the fields below.</li>

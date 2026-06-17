@@ -180,13 +180,14 @@ Reference for ASimNetworkSessionLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | The timestamp (UTC) reflecting the time in which the event was generated. |
 | Type | string | The name of the table |
 
-## Solutions (6)
+## Solutions (7)
 
 This table is used by the following solutions:
 
 - [Cisco Meraki Events via REST API](../solutions/cisco-meraki-events-via-rest-api.md)
 - [CrowdStrike Falcon Endpoint Protection](../solutions/crowdstrike-falcon-endpoint-protection.md)
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [SynqlyIntegrationConnector](../solutions/synqlyintegrationconnector.md)
 - [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md)
 - [Windows Firewall](../solutions/windows-firewall.md)
@@ -205,15 +206,29 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (3)
 
-### Workbooks (1)
+### Hunting Queries (1)
+
+**Standalone Content:** `DstIpAddr !in "8.8.8.8,1.1.1.1"`
+
+| Hunting Query |
+|:-------------|
+| [Potential rootkit network activity missing from MDE](../content/standalone-content-potential-rootkit-network-activity-missing-from-mde-564bf64a-bada-4c6b-8821-53138d660f78-09fce37b.md) |
+
+### Workbooks (2)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
+
+**GitHub Only:** `DstPortNumber == "3389"`<br>`DvcAction in "Allow,Drop"`<br>`EventProduct == "Windows Firewall"`<br>`SrcIpAddr !in "::1,-"`
+
+| Workbook |
+|:-------------|
+| [WindowsFirewallViaAMA](../content/github-only-windowsfirewallviaama-c6e9060b.md) |
 
 ## Parsers Using This Table (2)
 
@@ -235,25 +250,33 @@ This table collects data from the following Azure resource types:
 
 - `microsoft.securityinsights/networksessionnormalized`
 
-## Selection Criteria Summary (4 criteria, 4 total references)
+## Selection Criteria Summary (5 criteria, 5 total references)
 
-References by type: 3 connectors, 0 content items, 1 ASIM parsers, 0 other parsers.
+References by type: 3 connectors, 1 content items, 1 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
 | `EventProduct == "Meraki"`<br>`EventVendor == "Cisco"` | 1 | - | - | - | **1** |
 | `EventProduct == "Carbon Black Cloud"`<br>`EventVendor == "VMWare"` | 1 | - | - | - | **1** |
-| `EventProduct == "Windows Firewall"` | 1 | - | - | - | **1** |
+| `DstIpAddr !in "8.8.8.8,1.1.1.1"` | - | 1 | - | - | **1** |
 | `EventType in "EndpointNetworkSession,L2NetworkSession"` | - | - | 1 | - | **1** |
-| **Total** | **3** | **0** | **1** | **0** | **4** |
+| **Total** | **3** | **1** | **1** | **0** | **5** |
 
 ### EventProduct / EventVendor
 
 | EventProduct | EventVendor | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:---------|:---------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Windows Firewall` |  | 1 | - | - | - | **1** |
 | `Meraki` | `Cisco` | 1 | - | - | - | **1** |
 | `Carbon Black Cloud` | `VMWare` | 1 | - | - | - | **1** |
-| `Windows Firewall` |  | 1 | - | - | - | **1** |
+
+### DstIpAddr
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 8.8.8.8` | - | 1 | - | - | **1** |
+| `!= 1.1.1.1` | - | 1 | - | - | **1** |
 
 ### EventType
 

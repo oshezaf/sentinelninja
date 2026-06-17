@@ -81,34 +81,34 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../tables/sentineloneactivities-cl.html"><code>SentinelOneActivities_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/oneactivities-cl.html"><code>OneActivities_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/sentineloneagents-cl.html"><code>SentinelOneAgents_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/oneagents-cl.html"><code>OneAgents_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/sentinelonealerts-cl.html"><code>SentinelOneAlerts_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/onealerts-cl.html"><code>OneAlerts_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/sentinelonegroups-cl.html"><code>SentinelOneGroups_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/onegroups-cl.html"><code>OneGroups_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../tables/sentinelonethreats-cl.html"><code>SentinelOneThreats_CL</code></a></td>
+  <td style="text-align:left"><a href="../tables/onethreats-cl.html"><code>OneThreats_CL</code></a></td>
+  <td style="text-align:center">?</td>
   <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
-  <td style="text-align:center">✓</td>
+  <td style="text-align:center">?</td>
 </tr>
 </tbody>
 </table>
@@ -136,11 +136,30 @@
 2.4. In the [<strong>USERS</strong>] Page click on [<strong>Service Users</strong>] -&gt; [<strong>Actions</strong>] -&gt; [<strong>Create new service user</strong>].
 2.5. Choose [<strong>Expiration date</strong>] and [<strong>scope</strong>] (by site) and click on [<strong>Create User</strong>].
 2.6. Once the [<strong>Service User</strong>] is created copy the [<strong>API Token</strong>] from page and press [<strong>Save</strong>]</p>
+<h4 id="3-connect-new-instances">3. Connect new instances</h4>
+<p>To enable the SentinelOne connector for Microsoft Sentinel, click the <strong>Add new instance</strong> button, fill in the required information in the context pane and click on <strong>Connect</strong>.
+<strong>Connector Management Interface</strong></p>
+<p>This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.</p>
+<p>📊 <strong>View Existing Collectors</strong>: A management table displays all currently configured data collectors with the following information:</p>
 <ul>
-<li><strong>SentinelOne Management URL</strong>: https://example.sentinelone.net/</li>
-<li><strong>API Token</strong>: API Token</li>
-<li>Click 'Connect' to establish connection</li>
+<li><strong>Management URL</strong></li>
 </ul>
+<p>➕ <strong>Add New Collector</strong>: Click the &quot;Add new collector&quot; button to configure a new data collector (see configuration form below).</p>
+<p>🔧 <strong>Manage Collectors</strong>: Use the actions menu to delete or modify existing collectors.</p>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.</p>
+</blockquote>
+<p><strong>Add new instance</strong></p>
+<p><em>SentinelOne connector</em></p>
+<p>When you click the &quot;Add new instance&quot; button in the portal, a configuration form will open. You'll need to provide:</p>
+<p><em>Instance details</em></p>
+<ul>
+<li><strong>SentinelOne Management URL</strong> (required): https://example.sentinelone.net/</li>
+<li><strong>API Token</strong> (required): API Token</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Portal-Only Feature</strong>: This configuration form is only available in the Microsoft Sentinel portal.</p>
+</blockquote>
 <hr />
 <p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
 <p>↑ <a href="../../index.html#connectors">Back to Connectors Index</a></p>

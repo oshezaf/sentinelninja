@@ -51,11 +51,10 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`TheHiveData`](../tables/thehivedata.md) | [TheHive (via Codeless Connector Framework)](../connectors/thehiveconnector.md) | - |
 | [`TheHiveData_CL`](../tables/thehivedata-cl.md) | [TheHive (via Codeless Connector Framework)](../connectors/thehiveconnector.md) | - |
 | [`TheHive_CL`](../tables/thehive-cl.md) 🔶 | [TheHive Project - TheHive](../connectors/thehiveprojectthehive.md) | - |
 

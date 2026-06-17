@@ -54,9 +54,9 @@ Install and configure the Linux agent to collect your Common Event Format (CEF) 
 
   **1.2 Install the CEF collector on the Linux machine**
 
-  Install the Microsoft Monitoring Agent on your Linux machine and configure the machine to listen on the necessary port and forward messages to your Microsoft Sentinel workspace. The CEF collector collects CEF messages on port 514 TCP.
+  Install the Azure Monitoring Agent (AMA) on your Linux machine and configure the machine to listen on the necessary port and forward messages to your Microsoft Sentinel workspace. The CEF collector collects CEF messages on port 514 TCP.
 
-> 1. Make sure that you have Python on your machine using the following command: python -version.
+> 1. Make sure that you have Python on your machine using the following command: python --version.
 
 > 2. You must have elevated permissions (sudo) on your machine.
   - **Run the following command to install and apply the CEF collector:**: `sudo wget -O cef_installer.py https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/DataConnectors/CEF/cef_installer.py&&sudo python cef_installer.py {0} {1}`

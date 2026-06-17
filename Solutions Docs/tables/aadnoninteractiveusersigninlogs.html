@@ -507,7 +507,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="solutions">Solutions (11)</h2>
+<h2 id="solutions">Solutions (13)</h2>
 <p>This table is used by the following solutions:</p>
 <ul>
 <li><a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a></li>
@@ -519,8 +519,10 @@
 <li><a href="../solutions/lumen-defender-threat-feed.html">Lumen Defender Threat Feed</a></li>
 <li><a href="../solutions/microsoft-entra-id.html">Microsoft Entra ID</a></li>
 <li><a href="../solutions/microsoftpurviewinsiderriskmanagement.html">MicrosoftPurviewInsiderRiskManagement</a></li>
+<li><a href="../solutions/standalone-content.html">Standalone Content</a></li>
 <li><a href="../solutions/threat-intelligence.html">Threat Intelligence</a></li>
 <li><a href="../solutions/threat-intelligence-new.html">Threat Intelligence (NEW)</a></li>
+<li><a href="../solutions/edcrule.html">eDCRule</a></li>
 </ul>
 <h2 id="connectors">Connectors (1)</h2>
 <p>This table is ingested by the following connectors:</p>
@@ -539,8 +541,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (19)</h2>
-<h3 id="analytic-rules">Analytic Rules (12)</h3>
+<h2 id="content-items-using-this-table">Content Items Using This Table (35)</h2>
+<h3 id="analytic-rules">Analytic Rules (15)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -655,7 +657,61 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (7)</h3>
+<p><strong>In solution <a href="../solutions/edcrule.html">eDCRule</a>:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-suspicious-continuous-oauth-token-usage-67802748-435b-4f80-9f61-b9a9ac6ea15c-abe74de3.html">[Entra ID] Suspicious Continuous OAuth Token Usage</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Analytic Rule</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-authentication-attempt-from-new-country-ef895ada-e8e8-4cf0-9313-b1ab67fab69f-340ffa85.html">Authentication Attempt from New Country</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-malformed-user-agent-a357535e-f722-4afe-b375-cff362b2b376-cf52b023.html">Malformed user agent</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hunting-queries">Hunting Queries (2)</h3>
+<p><strong>Standalone Content:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Hunting Query</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-short-window-ip-failure-burst-followed-by-successful-sign-in-5c3a480b-d7a8-4a9c-a6b5-5bb2e3ebac89-8986ee67.html">Short-window IP failure burst followed by successful sign-in</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/standalone-content-short-window-sign-in-mismatch-between-interactive-and-non-interactive-activity-868599d4-84f7-4c31-ba00-d2a2c87efaab-1195d0e0.html">Short-window sign-in mismatch between interactive and non-interactive activity</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="workbooks">Workbooks (18)</h3>
 <p><strong>In solution <a href="../solutions/apache-log4j-vulnerability-detection.html">Apache Log4j Vulnerability Detection</a>:</strong></p>
 <table>
 <thead>
@@ -757,6 +813,61 @@
 <tbody>
 <tr>
   <td style="text-align:left"><a href="../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.html">InsiderRiskManagement</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-aadnoninteractiveusersigninlogs-dbe045a9.html">AADNonInteractiveUserSignInLogs</a></td>
+  <td style="text-align:left"><code>ResultType != &quot;0&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azureactivedirectorysignins-f7e08e18.html">AzureActiveDirectorySignins</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azurelogcoverage-05245bb5.html">AzureLogCoverage</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-azureopenaimonitoring-99c696c7.html">AzureOpenAIMonitoring</a></td>
+  <td style="text-align:left"><code>AppDisplayName == &quot;Azure OpenAI Studio&quot;</code></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-conditionalaccesstrendsandchanges-114c89ab.html">ConditionalAccessTrendsandChanges</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-copilotforsecuritymonitoring-b67b6028.html">CopilotforSecurityMonitoring</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-log4jpostcompromisehunting-7193cd47.html">Log4jPostCompromiseHunting</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-sentinelworkspacerecontools-74b07e4a.html">SentinelWorkspaceReconTools</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
   <td style="text-align:left"></td>
 </tr>
 </tbody>

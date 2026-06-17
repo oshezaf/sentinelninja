@@ -18,13 +18,13 @@ This content item queries data from the following tables:
 
 | Table | Selection Criteria | Transformations | Ingestion API | Lake-Only |
 |:------|:-------------|:---------------:|:-------------:|:---------:|
-| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) |  | ✓ | ✗ | ✓ |
+| [`AADManagedIdentitySignInLogs`](../tables/aadmanagedidentitysigninlogs.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | ✓ | ✗ | ✓ |
 | [`AADServicePrincipalSignInLogs`](../tables/aadserviceprincipalsigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AWSCloudTrail`](../tables/awscloudtrail.md) |  | ✓ | ✓ | ✓ |
 | [`AWSGuardDuty`](../tables/awsguardduty.md) |  | ✓ | ✓ | ✓ |
 | [`AWSVPCFlow`](../tables/awsvpcflow.md) |  | ✓ | ✓ | ✓ |
-| [`AlertEvidence`](../tables/alertevidence.md) |  | ✓ | ✗ | ✓ |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | ✓ | ✗ | ✓ |
+| [`AlertEvidence`](../tables/alertevidence.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AzureActivity`](../tables/azureactivity.md) | `ActivityStatusValue == "Success"`<br>`ActivitySubstatusValue in "Created,OK"`<br>`OperationNameValue contains "Microsoft.Network/loadBalancers/"`<br>`OperationNameValue contains "Network"`<br>`ResourceProviderValue in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.LOGIC"` | ✗ | ✗ | ✗ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category in "AzureFirewallApplicationRule,AzureFirewallNetworkRule,EntitlementManagement,FrontdoorWebApplicationFirewallLog,GatewayDiagnosticLog,GroupManagement,IKEDiagnosticLog,NetworkSecurityGroupEvent,RouteDiagnosticLog,TunnelDiagnosticLog,UserManagement,WebApplicationFirewallLogs,kube-audit"`<br>`Category contains "SQL"`<br>`Resource == "SOC-NS-AG-WAFV2"`<br>`ResourceProvider in "MICROSOFT.CONTAINERSERVICE,MICROSOFT.KEYVAULT"`<br>`ResourceType in "APPLICATIONGATEWAYS,AZUREFIREWALLS,CDNWEBAPPLICATIONFIREWALLPOLICIES,FRONTDOORS,PROFILES,PUBLICIPADDRESSES,SERVERS/DATABASES"`<br>`msg_s !has ". Url"`<br>`msg_s !has "No rule matched"`<br>`msg_s !has "Reason:"`<br>`msg_s !has "Rule Collection"`<br>`msg_s !has "TLS extension was missing"`<br>`msg_s !has "Web Category:"`<br>`msg_s has ". No rule matched"`<br>`msg_s has ". Url"`<br>`msg_s has "Reason:"`<br>`msg_s has "Rule Collection Group"`<br>`msg_s has "Web Category:"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) |  | ✓ | ✗ | ? |
@@ -35,7 +35,7 @@ This content item queries data from the following tables:
 | [`ConfigurationData`](../tables/configurationdata.md) | `ConfigDataType == "Registry"` | ✓ | ✗ | ? |
 | [`DeviceNetworkEvents`](../tables/devicenetworkevents.md) |  | ✓ | ✗ | ? |
 | [`DeviceNetworkInfo`](../tables/devicenetworkinfo.md) |  | ✓ | ✗ | ? |
-| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) | `ActionType in "Add member to role,Add user,InteractiveLogon,RemoteInteractiveLogon,Reset user password,ResourceAccess,Sign-in,Update user"` | ✓ | ✗ | ? |
+| [`DeviceProcessEvents`](../tables/deviceprocessevents.md) |  | ✓ | ✗ | ? |
 | [`DnsEvents`](../tables/dnsevents.md) |  | ✓ | ✗ | ✓ |
 | [`Dynamics365Activity`](../tables/dynamics365activity.md) |  | ✓ | ✗ | ✗ |
 | [`EmailAttachmentInfo`](../tables/emailattachmentinfo.md) |  | ✓ | ✗ | ? |

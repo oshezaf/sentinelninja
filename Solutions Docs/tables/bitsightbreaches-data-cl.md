@@ -44,14 +44,13 @@ This table is used by the following solutions:
 
 - [BitSight](../solutions/bitsight.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [Bitsight data connector](../connectors/bitsight.md) |  |
-| [BitSight Security Events (via Codeless Connector Framework)](../connectors/bitsighteventsconnector.md) |  |
 
 ---
 

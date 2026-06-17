@@ -125,7 +125,7 @@ This table is used by the following solutions:
 - [Web Session Essentials](../solutions/web-session-essentials.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
 
-## Connectors (4)
+## Connectors (5)
 
 This table is ingested by the following connectors:
 
@@ -135,10 +135,11 @@ This table is ingested by the following connectors:
 | [Cofense Triage Threat Indicators Ingestion](../connectors/cofensetriage.md) | `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` |
 | [Luminar IOCs and Leaked Credentials](../connectors/cognyteluminar.md) | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` |
 | [Mimecast Intelligence for Microsoft - Microsoft Sentinel](../connectors/mimecasttiregionalconnectorazurefunctions.md) |  |
+| [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) | `SourceSystem == "Premium Microsoft Defender Threat Intelligence"` |
 
 ---
 
-## Content Items Using This Table (92)
+## Content Items Using This Table (98)
 
 ### Analytic Rules (72)
 
@@ -271,7 +272,7 @@ This table is ingested by the following connectors:
 | [TI Map File Entity to VMConnection Event](../content/threat-intelligence-ti-map-file-entity-to-vmconnection-event-172a321b-c46b-4508-87c6-e2691c778107-debef4d0.md) |  |
 | [TI Map File Entity to WireData Event](../content/threat-intelligence-ti-map-file-entity-to-wiredata-event-689a9475-440b-4e69-8ab1-a5e241685f39-12f328f6.md) |  |
 
-### Workbooks (15)
+### Workbooks (21)
 
 **In solution [CofenseIntelligence](../solutions/cofenseintelligence.md):** `SourceSystem == "Cofense Intelligence"`
 
@@ -353,6 +354,17 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DSTIMWorkbook](../content/github-only-dstimworkbook-062fa645.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [PhishingAnalysis](../content/github-only-phishinganalysis-8b6323cf.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+
 ## Parsers Using This Table (1)
 
 ### Other Parsers (1)
@@ -361,17 +373,18 @@ This table is ingested by the following connectors:
 |:-------|:---------|:-------------------|
 | [CymruScoutCorrelate](../parsers/cymruscoutcorrelate.md) | [Team Cymru Scout](../solutions/team-cymru-scout.md) |  |
 
-## Selection Criteria Summary (4 criteria, 4 total references)
+## Selection Criteria Summary (5 criteria, 5 total references)
 
-References by type: 3 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `SourceSystem !startswith "Cofense :"`<br>`SourceSystem startswith "Cofense :"` | 1 | - | - | - | **1** |
-| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
+| `SourceSystem == "Premium Microsoft Defender Threat Intelligence"` | 1 | - | - | - | **1** |
 | `SourceSystem !contains "Luminar"`<br>`SourceSystem contains "Luminar"` | 1 | - | - | - | **1** |
+| `SourceSystem startswith "Cofense Intelligence :"` | 1 | - | - | - | **1** |
 | `SourceSystem == "Cofense Intelligence"` | - | 1 | - | - | **1** |
-| **Total** | **3** | **1** | **0** | **0** | **4** |
+| **Total** | **4** | **1** | **0** | **0** | **5** |
 
 ### SourceSystem
 
@@ -379,9 +392,10 @@ References by type: 3 connectors, 1 content items, 0 ASIM parsers, 0 other parse
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `!startswith Cofense :` | 1 | - | - | - | **1** |
 | `startswith Cofense :` | 1 | - | - | - | **1** |
-| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
+| `Premium Microsoft Defender Threat Intelligence` | 1 | - | - | - | **1** |
 | `!contains Luminar` | 1 | - | - | - | **1** |
 | `contains Luminar` | 1 | - | - | - | **1** |
+| `startswith Cofense Intelligence :` | 1 | - | - | - | **1** |
 | `Cofense Intelligence` | - | 1 | - | - | **1** |
 
 ---

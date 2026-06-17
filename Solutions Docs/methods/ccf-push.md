@@ -18,8 +18,8 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Metric | Count |
 |:-------|------:|
-| Total Connectors | **40** |
-| Active | 38 |
+| Total Connectors | **41** |
+| Active | 39 |
 | Deprecated 🚫 | 0 |
 | Unpublished ⚠️ | 2 |
 
@@ -29,17 +29,18 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 
 | Connector | Publisher | Tables | Solution |
 |:----------|:----------|:------:|:---------|
-| [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) ⚠️ | Microsoft Corporation | 2 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
+| [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) ⚠️ | Microsoft Corporation | 1 | [42Crunch API Protection](../solutions/42crunch-api-protection.md) |
 | [Abnormal Security (Push)](../connectors/abnormalsecuritypush.md) 🔶 | Abnormal Security | 9 | [AbnormalSecurity](../solutions/abnormalsecurity.md) |
 | [Citrix Analytics (via Codeless Connector Framework)](../connectors/citrixanalyticsdefinition.md) ⚠️ | Citrix | 6 | [Citrix Analytics CCF](../solutions/citrix-analytics-ccf.md) |
 | [Contrast ADR Push Connector](../connectors/contrastadrccf.md) | Contrast Security | 2 | [ContrastADR](../solutions/contrastadr.md) |
+| [Darktrace ActiveAI Security Platform Connector](../connectors/darktraceactiveaisecurityplatform.md) | Darktrace | 6 | [Darktrace](../solutions/darktrace.md) |
 | [DataBahn](../connectors/databahnpush.md) | DataBahn | 3 | [Databahn](../solutions/databahn.md) |
 | [Flare Push Connector](../connectors/fireworkpush.md) | Flare Systems | 1 | [Flare](../solutions/flare.md) |
 | [Gigamon AMX Connector](../connectors/gigamondefinition.md) | GigamonDefinition | 1 | [Gigamon Connector](../solutions/gigamon-connector.md) |
-| [Halcyon Connector](../connectors/halcyonpush.md) | Halcyon | 2 | [Halcyon](../solutions/halcyon.md) |
+| [Halcyon Connector](../connectors/halcyonpush.md) | Halcyon | 1 | [Halcyon](../solutions/halcyon.md) |
 | [Jamf Protect Push Connector](../connectors/jamfprotectpush.md) | Jamf | 3 | [Jamf Protect](../solutions/jamf-protect.md) |
 | [Keeper Security Push Connector](../connectors/keepersecuritypush2.md) | Keeper Security | 1 | [Keeper Security](../solutions/keeper-security.md) |
-| [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | Microsoft | 2 | [Mulesoft](../solutions/mulesoft.md) |
+| [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | Microsoft | 1 | [Mulesoft](../solutions/mulesoft.md) |
 | [NordStellar (Push)](../connectors/nordstellarpush.md) | Nord Security Inc. | 1 | [NordStellar](../solutions/nordstellar.md) |
 | [Obsidian Datasharing Connector](../connectors/obsidiandatasharing.md) | Obsidian Security | 2 | [Obsidian Datasharing](../solutions/obsidian-datasharing.md) |
 | [Onapsis Defend Integration](../connectors/onapsis.md) | Onapsis Platform | 2 | [Onapsis Defend](../solutions/onapsis-defend.md) |
@@ -53,7 +54,7 @@ CCF Push connectors use the Codeless Connector Framework in push mode, where the
 | [Tanium's CCF Push Connector](../connectors/taniumconnector.md) 🔶 | Tanium Inc. | 10 | [Tanium](../solutions/tanium.md) |
 | [Varonis Purview Push Connector](../connectors/varonispurviewpush.md) | Varonis | 1 | [Varonis Purview](../solutions/varonis-purview.md) |
 | [Zero Networks Segment (Push)](../connectors/znsegmentpushccpdefinition.md) | Zero Networks | 4 | [ZeroNetworks](../solutions/zeronetworks.md) |
-| [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
+| [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | Zimperium | 4 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
 | [Zscaler Internet Access Cloud NSS Audit Log Push Connector](../connectors/cloudnssauditlogs-ccp.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Zscaler Internet Access Cloud NSS CASB Activity Log Push Connector](../connectors/cloudnsscasbactivitylogs-ccp.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |
 | [Zscaler Internet Access Cloud NSS CASB Cloud Storage Log Push Connector](../connectors/cloudnsscasbcloudstoragelogs-ccp.md) | Zscaler | 1 | [Zscaler Internet Access](../solutions/zscaler-internet-access.md) |

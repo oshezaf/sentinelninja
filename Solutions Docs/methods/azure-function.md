@@ -19,8 +19,8 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **127** |
-| Active | 85 |
-| Deprecated 🚫 | 26 |
+| Active | 84 |
+| Deprecated 🚫 | 27 |
 | Unpublished ⚠️ | 16 |
 
 ## Connectors Using This Method
@@ -129,7 +129,6 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | [Workplace from Facebook](../connectors/workplacefacebook.md) | Facebook | 1 | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |
 | [XBOW Security Platform (via Azure Function)](../connectors/xbowsecurityconnector.md) | XBOW | 3 | [XBOW](../solutions/xbow.md) |
 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶 | ZeroFox | 20 | [ZeroFox](../solutions/zerofox.md) |
-| [Zoom Reports](../connectors/zoom.md) | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
 
 ### Deprecated Connectors 🚫
 
@@ -160,6 +159,7 @@ Azure Functions-based connectors use serverless functions to pull data from exte
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |
 | 🚫 [[DEPRECATED] Sophos Endpoint Protection (using Azure Function)](../connectors/sophosep.md) | Sophos | 1 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | 🚫 [[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)](../connectors/vmwarecarbonblack.md) | VMware | 3 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| 🚫 [[DEPRECATED] Zoom Reports](../connectors/zoom.md) | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
 | 🚫 [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | Mimecast | 2 | [MimecastSEG](../solutions/mimecastseg.md) |
 
 ---

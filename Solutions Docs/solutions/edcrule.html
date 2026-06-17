@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⚠️ eDCRule &mdash; Solutions Analyzer</title>
+<link rel="stylesheet" href="../../css/page.css">
+
+</head>
+<body>
+<nav class="navbar">
+    <a href="../../index.html#solutions" class="navbar-brand" style="text-decoration:none;color:inherit">Microsoft Sentinel &mdash; Solutions Analyzer</a>
+    <div class="navbar-nav-links">
+        <a href="../../asim-browser.html" class="nav-doc-link" title="ASIM Schema Browser">🔎 ASIM Browser</a>
+    </div>
+</nav>
+<div class="doc-content">
+<h1 id="edcrule">⚠️ eDCRule</h1>
+<blockquote>
+<p>⚠️ <strong>Unpublished:</strong> This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.</p>
+</blockquote>
+<img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Microsoft_Sentinel.svg" alt="eDCRule Logo" width="75" height="75">
+
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+<hr />
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Attribute</th>
+  <th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><strong>Publisher</strong></td>
+  <td style="text-align:left">eDC ICE223</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Tier</strong></td>
+  <td style="text-align:left">Partner</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Support Link</strong></td>
+  <td style="text-align:left"><a href="https://www.aceredc.com/zh/contact/">https://www.aceredc.com/zh/contact/</a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Categories</strong></td>
+  <td style="text-align:left">Security - Threat Protection</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Version</strong></td>
+  <td style="text-align:left">3.0.0</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Author</strong></td>
+  <td style="text-align:left">eDC ICE223 - ice223@acercsi.com</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>First Published</strong></td>
+  <td style="text-align:left">2026-05-18</td>
+</tr>
+<tr>
+  <td style="text-align:left"><strong>Solution Folder</strong></td>
+  <td style="text-align:left"><a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/eDCRule">eDCRule</a></td>
+</tr>
+</tbody>
+</table>
+<p>The eDCRule solution for Microsoft Sentinel installs custom analytic rule templates.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#data-connectors">Data Connectors</a></li>
+<li><a href="#tables-used">Tables Used</a></li>
+<li><a href="#content-items">Content Items</a></li>
+</ul>
+<h2 id="data-connectors">Data Connectors</h2>
+<p><strong>This solution does not include data connectors.</strong></p>
+<p>This solution may contain other components such as analytics rules, workbooks, hunting queries, or playbooks.</p>
+<h2 id="tables-used">Tables Used</h2>
+<p>This solution queries <strong>4 table(s)</strong> from its content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/azureactivity.html"><code>AzureActivity</code></a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h3 id="internal-tables">Internal Tables</h3>
+<p>The following <strong>2 table(s)</strong> are used internally by this solution's content items:</p>
+<table>
+<thead>
+<tr>
+  <th>Table</th>
+  <th>Used By Content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+  <td>Analytics</td>
+</tr>
+<tr>
+  <td><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+  <td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<h2 id="content-items">Content Items</h2>
+<p>This solution includes <strong>10 content item(s)</strong>:</p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Content Type</th>
+  <th style="text-align:left">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left">Analytic Rules</td>
+  <td style="text-align:left">10</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytic-rules">Analytic Rules</h3>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Name</th>
+  <th style="text-align:left">Severity</th>
+  <th style="text-align:left">Tactics</th>
+  <th style="text-align:left">Tables Used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bazuresubscription%5D-suspicious-azure-vm-run-command-execution-detected-6fa564ac-dfb7-4753-a49b-5fc919866c28-eec2ea83.html">[AzureSubscription] Suspicious Azure VM Run Command Execution Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">LateralMovement, CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/azureactivity.html"><code>AzureActivity</code></a><br><em>Internal use:</em><br><a href="../tables/behavioranalytics.html"><code>BehaviorAnalytics</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-application-assigned-administrator-permissions-immediately-after-obtaining-role-manag-90bacdf4-e35b-47cb-92d1-29d8397eb4a0-48ff141a.html">[Entra ID] Application Assigned Administrator Permissions Immediately After Obtaining Role Management Permissions</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation, DefenseEvasion, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-application-granted-administrative-permission-to-assign-microsoft-entra-id-roles-ef34b272-930c-41c8-a682-8c2093cd2024-0e05b599.html">[Entra ID] Application Granted Administrative Permission to Assign Microsoft Entra ID Roles</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence, Impact, PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-authentication-method-changed-for-privileged-account-9f7197b6-eeb2-46f3-83b1-a2c4dfca46a0-e18c8380.html">[Entra ID] Authentication Method Changed for Privileged Account</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a><br><em>Internal use:</em><br><a href="../tables/identityinfo.html"><code>IdentityInfo</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-domain-federation-trust-settings-modified-944d0ab5-b654-47f9-a398-2e77a0b7906e-34bc2dd8.html">[Entra ID] Domain Federation Trust Settings Modified</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess, Persistence</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-mass-privileged-role-change-activity-detected-d6cd3c6f-1d2a-4c42-a048-dbe91cf35b18-7a3ebdd5.html">[Entra ID] Mass Privileged Role Change Activity Detected</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">PrivilegeEscalation</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-privilege-elevation-request-denied-aceee46e-8fb3-42d9-967a-aac637bcefd4-d1a14d12.html">[Entra ID] Privilege Elevation Request Denied</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation, DefenseEvasion, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-privileged-role-assigned-to-user-fad0f8b9-a0a5-430a-9a94-049a1144bf54-83a30e48.html">[Entra ID] Privileged Role Assigned to User</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence, DefenseEvasion, PrivilegeEscalation, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-privileged-role-assigned-to-a-new-user-b64ac0e2-a241-4b9a-ad3e-ae572630b295-a5a10709.html">[Entra ID] Privileged Role Assigned to a New User</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">Persistence, PrivilegeEscalation, DefenseEvasion, InitialAccess</td>
+  <td style="text-align:left"><a href="../tables/auditlogs.html"><code>AuditLogs</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/edcrule-%5Bentra-id%5D-suspicious-continuous-oauth-token-usage-67802748-435b-4f80-9f61-b9a9ac6ea15c-abe74de3.html">[Entra ID] Suspicious Continuous OAuth Token Usage</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">CredentialAccess</td>
+  <td style="text-align:left"><a href="../tables/aadnoninteractiveusersigninlogs.html"><code>AADNonInteractiveUserSignInLogs</code></a><br><a href="../tables/signinlogs.html"><code>SigninLogs</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>17-06-2026</td>
+  <td>Initial Solution Release.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Browse:</strong> <a href="../../index.html">🏠</a> · <a href="../../index.html#solutions">Solutions</a> · <a href="../../index.html#connectors">Connectors</a> · <a href="../../index.html#connectors">Methods</a> · <a href="../../index.html#tables">Tables</a> · <a href="../../index.html#content">Content</a> · <a href="../../index.html#parsers">Parsers</a> · <a href="../../index.html#asim">ASIM Parsers</a> · <a href="../../index.html#asim">ASIM Products</a> · <a href="../logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="../statistics.html">📊</a></p>
+<p>↑ <a href="../../index.html#solutions">Back to Solutions Index</a></p>
+
+</div>
+
+</body>
+</html>

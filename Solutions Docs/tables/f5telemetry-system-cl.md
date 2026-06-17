@@ -57,9 +57,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (2)
+## Content Items Using This Table (4)
 
-### Workbooks (2)
+### Workbooks (4)
 
 **In solution [F5 Big-IP](../solutions/f5-big-ip.md):**
 
@@ -67,6 +67,13 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [F5BIGIPSystemMetrics](../content/f5-big-ip-f5bigipsystemmetrics-70978c22.md) |  |
 | [F5Networks](../content/f5-big-ip-f5networks-56be211d.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [F5BIGIPSystemMetrics](../content/github-only-f5bigipsystemmetrics-f6e795e8.md) |  |
+| [F5Networks](../content/github-only-f5networks-1dca2cd9.md) |  |
 
 ---
 

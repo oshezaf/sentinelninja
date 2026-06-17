@@ -15,7 +15,7 @@
 | **Publisher** | Cisco Systems |
 | **Support Tier** | Partner |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Cisco |
 | **First Published** | 2024-03-04 |
 | **Solution Folder** | [Cisco ETD](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Cisco%20ETD) |

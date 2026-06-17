@@ -56,14 +56,13 @@ This table is used by the following solutions:
 
 - [SentinelOne](../solutions/sentinelone.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
 | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) |  |
-| [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) |  |
 
 ---
 

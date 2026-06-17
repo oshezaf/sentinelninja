@@ -8,7 +8,7 @@ Microsoft Sentinel Solutions are packaged content bundles that provide out-of-th
 
 ---
 
-**542 solutions** with 508 unique connectors and 428 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
+**543 solutions** with 509 unique connectors and 429 providing content items. See [📊 Statistics](statistics.md) for detailed breakdowns.
 
 ---
 
@@ -223,6 +223,7 @@ Browse solutions alphabetically:
 |:--:|----------|----------------|:----------:|----------|
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [EatonForeseer](solutions/eatonforeseer.md) | 2022-06-28 | 🟡 Low (14%) | Microsoft Corporation |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [EclecticIQ](solutions/eclecticiq.md) | 2022-09-30 | ⚪ Very Low (0%) | Microsoft Corporation |
+| <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Microsoft_Sentinel.svg" alt="" width="40" height="40"> | [eDCRule](solutions/edcrule.md) ⚠️ | 2026-05-18 |  | eDC ICE223 |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="" width="40" height="40"> | [Egress Defend](solutions/egress-defend.md) ⚠️ | 2023-07-27 |  | egress1589289169584 |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Egress-logo.svg" alt="" width="40" height="40"> | [Egress Iris](solutions/egress-iris.md) | 2024-03-11 | 🟡 Low (25%) | Egress Software Technologies Ltd |
 | <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="40" height="40"> | [Elastic Search](solutions/elastic-search.md) ⚠️ | 2022-09-30 |  | Microsoft Corporation |

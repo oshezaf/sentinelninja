@@ -18,6 +18,12 @@ Reference for IlumioInsights table in Azure Monitor Logs.
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ilumioinsights) |
 | **Azure Monitor Logs Ingestion API** | [View Documentation](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview) |
 
+## Contents
+
+- [Schema](#schema)
+- [Solutions](#solutions)
+- [Connectors](#connectors)
+
 ## Schema (38 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/ilumioinsights)
@@ -62,6 +68,20 @@ Reference for IlumioInsights table in Azure Monitor Logs.
 | Type | string | The name of the table |
 | UniqueId | string | A unique identifier for the specific insight or event. |
 | VEScore | real | Vulnerability exposure score indicating the risk level. |
+
+## Solutions (1)
+
+This table is used by the following solutions:
+
+- [Illumio Insight](../solutions/illumio-insight.md)
+
+## Connectors (1)
+
+This table is ingested by the following connectors:
+
+| Connector | Selection Criteria |
+|:----------|:-------------------|
+| [Illumio Insights](../connectors/illumioinsightsdefinition.md) |  |
 
 ---
 

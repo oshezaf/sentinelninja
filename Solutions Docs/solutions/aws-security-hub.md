@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Cloud Security,Cloud Provider |
-| **Version** | 3.0.3 |
+| **Version** | 3.0.4 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-03-12 |
 | **Last Updated** | 2026-06-12 |

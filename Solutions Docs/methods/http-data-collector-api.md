@@ -19,8 +19,8 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **125** |
-| Active | 73 |
-| Deprecated 🚫 | 27 |
+| Active | 72 |
+| Deprecated 🚫 | 28 |
 | Unpublished ⚠️ | 41 |
 
 ### By Collection Method
@@ -65,7 +65,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Cyber Blind Spot Integration](../connectors/cbspollingidazurefunctions.md) ⚠️ 🔍 🔶 | [Azure Function](../methods/azure-function.md) | CTM360 | 1 | [CTM360](../solutions/ctm360.md) |
 | [Cybersixgill Actionable Alerts](../connectors/cybersixgillactionablealerts.md) | [Azure Function](../methods/azure-function.md) | Cybersixgill | 1 | [Cybersixgill-Actionable-Alerts](../solutions/cybersixgill-actionable-alerts.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
-| [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
+| [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
 | [Digital Shadows Searchlight](../connectors/digitalshadowssearchlightazurefunctions.md) 🔶 | [Azure Function](../methods/azure-function.md) | Digital Shadows | 1 | [Digital Shadows](../solutions/digital-shadows.md) |
@@ -134,7 +134,6 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | [Workplace from Facebook](../connectors/workplacefacebook.md) | [Azure Function](../methods/azure-function.md) | Facebook | 1 | [Workplace from Facebook](../solutions/workplace-from-facebook.md) |
 | [ZeroFox CTI](../connectors/zerofoxctidataconnector.md) 🔶 | [Azure Function](../methods/azure-function.md) | ZeroFox | 20 | [ZeroFox](../solutions/zerofox.md) |
 | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) ⚠️ 🔍 🔶 | [REST Pull API](../methods/rest-pull-api.md) | Zimperium | 2 | [Zimperium Mobile Threat Defense](../solutions/zimperium-mobile-threat-defense.md) |
-| [Zoom Reports](../connectors/zoom.md) | [Azure Function](../methods/azure-function.md) | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
 
 ### Deprecated Connectors 🚫
 
@@ -166,6 +165,7 @@ The HTTP Data Collector API (also known as the Log Analytics Data Collector API)
 | 🚫 [[DEPRECATED] Snowflake](../connectors/snowflakedataconnector.md) | [Azure Function](../methods/azure-function.md) | Snowflake | 1 | [Snowflake](../solutions/snowflake.md) |
 | 🚫 [[DEPRECATED] Sophos Endpoint Protection (using Azure Function)](../connectors/sophosep.md) | [Azure Function](../methods/azure-function.md) | Sophos | 1 | [Sophos Endpoint Protection](../solutions/sophos-endpoint-protection.md) |
 | 🚫 [[DEPRECATED] VMware Carbon Black Cloud (using Azure Function)](../connectors/vmwarecarbonblack.md) | [Azure Function](../methods/azure-function.md) | VMware | 3 | [VMware Carbon Black Cloud](../solutions/vmware-carbon-black-cloud.md) |
+| 🚫 [[DEPRECATED] Zoom Reports](../connectors/zoom.md) | [Azure Function](../methods/azure-function.md) | Zoom | 1 | [ZoomReports](../solutions/zoomreports.md) |
 | 🚫 [Mimecast Secure Email Gateway](../connectors/mimecastsiemapi.md) | [Azure Function](../methods/azure-function.md) | Mimecast | 2 | [MimecastSEG](../solutions/mimecastseg.md) |
 
 ---

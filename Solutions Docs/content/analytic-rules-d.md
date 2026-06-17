@@ -1,6 +1,6 @@
 # Analytic Rules - D
 
-**128 analytic rules** starting with 'D'.
+**130 analytic rules** starting with 'D'.
 
 **Browse:** [🏠](../README.md) · [Solutions](../solutions-index.md) · [Connectors](../connectors-index.md) · [Methods](../methods-index.md) · [Tables](../tables-index.md) · [Content](../content/content-index.md) · [Parsers](../parsers/parsers-index.md) · [ASIM Parsers](../asim/asim-index.md) · [ASIM Products](../asim/asim-products-index.md) · [Logic Apps](../logic-apps/logic-apps-index.md) · [📊](../statistics.md)
 
@@ -15,9 +15,11 @@
 | Name | Severity | Source |
 |:-----|:---------|:-------|
 | [D3 Smart SOAR - High or critical severity incident detected](d3smartsoar-d3-smart-soar-high-or-critical-severity-incident-detected-48ef0be4-8240-4a03-bbb9-320b562d6ce4-a012d8d0.md) | High | 📦 [D3SmartSOAR](../solutions/d3smartsoar.md) |
-| [Darktrace AI Analyst](darktrace-darktrace-ai-analyst-ffa2977f-3077-4bba-b1bf-f3417699cbb0-c8c73532.md) | High | 📦 [Darktrace](../solutions/darktrace.md) |
-| [Darktrace Model Breach](darktrace-darktrace-model-breach-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-0057eb81.md) | Medium | 📦 [Darktrace](../solutions/darktrace.md) |
-| [Darktrace System Status](darktrace-darktrace-system-status-2e629769-60eb-4a14-8bfc-bde9be66ebeb-cc05125a.md) | Informational | 📦 [Darktrace](../solutions/darktrace.md) |
+| [Darktrace AI Analyst (Legacy)](darktrace-darktrace-ai-analyst-legacy-ffa2977f-3077-4bba-b1bf-f3417699cbb0-9433455e.md) | High | 📦 [Darktrace](../solutions/darktrace.md) |
+| [Darktrace Incident Event](darktrace-darktrace-incident-event-05de0eaf-01bc-4615-99fc-2ec769864b34-b25377f2.md) | High | 📦 [Darktrace](../solutions/darktrace.md) |
+| [Darktrace Model Alert](darktrace-darktrace-model-alert-9392a06f-63a4-4a5d-8ca3-647064b13c28-1430c4d3.md) | High | 📦 [Darktrace](../solutions/darktrace.md) |
+| [Darktrace Model Breach (Legacy)](darktrace-darktrace-model-breach-legacy-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-2d80a016.md) | Medium | 📦 [Darktrace](../solutions/darktrace.md) |
+| [Darktrace System Status (Legacy)](darktrace-darktrace-system-status-legacy-2e629769-60eb-4a14-8bfc-bde9be66ebeb-b842cc6c.md) | Informational | 📦 [Darktrace](../solutions/darktrace.md) |
 | [Dataminr - urgent alerts detected](dataminr-pulse-dataminr-urgent-alerts-detected-64a46029-3236-4d03-b5df-207366a623f1-d65138c6.md) | Medium | 📦 [Dataminr Pulse](../solutions/dataminr-pulse.md) |
 | [Dataverse - Anomalous application user activity](microsoft-business-applications-dataverse-anomalous-application-user-activity-0820da12-e895-417f-9175-7c256fcfb33e-25e83157.md) | Medium | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |
 | [Dataverse - Audit log data deletion](microsoft-business-applications-dataverse-audit-log-data-deletion-f1634822-b7e9-44f5-95ac-fa4a04f14513-cd7a11d3.md) | Low | 📦 [Microsoft Business Applications](../solutions/microsoft-business-applications.md) |

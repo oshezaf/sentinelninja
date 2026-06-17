@@ -14,9 +14,9 @@
 |:------------------------|:------|
 | **Publisher** | Darktrace |
 | **Support Tier** | Partner |
-| **Support Link** | [https://www.darktrace.com/en/contact/](https://www.darktrace.com/en/contact/) |
+| **Support Link** | [https://www.darktrace.com/contact/](https://www.darktrace.com/contact/) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.1 |
+| **Version** | 3.0.2 |
 | **Author** | Darktrace |
 | **First Published** | 2022-05-02 |
 | **Solution Folder** | [AI Analyst Darktrace](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/AI%20Analyst%20Darktrace) |
@@ -81,6 +81,7 @@ This solution includes **1 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                                                 |
 |-------------|--------------------------------|--------------------------------------------------------------------|
+| 3.0.2       | 08-06-2026                     |    Fixed contact link and added contact email                      |
 | 3.0.1       | 11-07-2024                     |    Deprecating data connectors                                     |
 | 3.0.0       | 18-09-2023                     |	Addition of new AI Analyst Darktrace AMA **Data Connector**     |
 

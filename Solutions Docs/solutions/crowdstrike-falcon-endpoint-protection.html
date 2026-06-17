@@ -83,6 +83,7 @@
 <li><a href="#data-connectors">Data Connectors</a></li>
 <li><a href="#tables-used">Tables Used</a></li>
 <li><a href="#content-items">Content Items</a></li>
+<li><a href="#additional-documentation">Additional Documentation</a></li>
 </ul>
 <h2 id="pre-requisites">Pre-requisites</h2>
 <p>This solution depends on <strong>1 other solution(s)</strong>:</p>
@@ -437,6 +438,85 @@
 <blockquote>
 <p>⚠️ Items marked with ⚠️ are not listed in the Solution JSON file. They were discovered by scanning the solution folder and may be legacy items, under development, or excluded from the official solution package.</p>
 </blockquote>
+<h2 id="additional-documentation">Additional Documentation</h2>
+<blockquote>
+<p>📄 <em>Source: <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/CrowdStrike%20Falcon%20Endpoint%20Protection/README.md">CrowdStrike Falcon Endpoint Protection/README.md</a></em></p>
+</blockquote>
+<h1 id="crowdstrike-data-connectors">CrowdStrike Data Connectors</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#overview">Overview</a></p>
+</li>
+<li><p><a href="#available-data-connectors">Available Data Connectors</a></p>
+<ul>
+<li><a href="#1-crowdstrike-api-data-connector-via-codeless-connector-framework">CrowdStrike API Data Connector (via Codeless Connector Framework)</a></li>
+<li><a href="#2-crowdstrike-falcon-data-replicator-aws-s3-via-codeless-connector-framework">CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</a></li>
+<li><a href="#3-crowdstrike-falcon-adversary-intelligence">CrowdStrike Falcon Adversary Intelligence</a></li>
+</ul>
+</li>
+<li><p><a href="#best-practices">Best Practices</a></p>
+</li>
+<li><p><a href="#references">References</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>Microsoft Sentinel provides multiple CrowdStrike data connectors for ingesting security, telemetry, and threat intelligence data from CrowdStrike Falcon.</p>
+<p>This document provides an overview of the available CrowdStrike data connectors and helps you easily determine which connector best fits your data ingestion requirements.</p>
+<p>The following CrowdStrike data connectors are currently available:</p>
+<ol>
+<li><strong>CrowdStrike API Data Connector (via Codeless Connector Framework)</strong></li>
+<li><strong>CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</strong></li>
+<li><strong>CrowdStrike Falcon Adversary Intelligence</strong></li>
+</ol>
+<hr />
+<h2 id="available-data-connectors">Available Data Connectors</h2>
+<h3 id="1-crowdstrike-api-data-connector">1. CrowdStrike API Data Connector (via Codeless Connector Framework)</h3>
+<p>The <strong>CrowdStrike API Data Connector (via Codeless Connector Framework)</strong> collects data directly from CrowdStrike Falcon native APIs.</p>
+<p>Use this connector when you need security-related information that is available through CrowdStrike APIs, including:</p>
+<ul>
+<li>Alerts</li>
+<li>Detections</li>
+<li>Incidents</li>
+<li>Security Findings</li>
+<li>Host Information</li>
+<li>Vulnerability Information</li>
+<li>Other Falcon API-supported datasets</li>
+</ul>
+<p>To learn more about the available CrowdStrike APIs and supported datasets, refer to the CrowdStrike API Reference documentation:</p>
+<p><strong>CrowdStrike API Reference</strong>
+https://developer.crowdstrike.com/api-reference/overview/</p>
+<h3 id="configuration-requirements">Configuration Requirements</h3>
+<p>Before configuring the Microsoft Sentinel connector:</p>
+<ol>
+<li><p>Create an API client in CrowdStrike Falcon.</p>
+</li>
+<li><p>Collect the following information:</p>
+<ul>
+<li>Client ID</li>
+<li>Client Secret</li>
+<li>API Endpoint</li>
+</ul>
+</li>
+<li><p>Provide these values during connector configuration in Microsoft Sentinel.</p>
+</li>
+</ol>
+<hr />
+<h3 id="2-crowdstrike-falcon-data-replicator-aws-s3">2. CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</h3>
+<p>The <strong>CrowdStrike Falcon Data Replicator (AWS S3) (via Codeless Connector Framework)</strong> connector collects telemetry data exported by CrowdStrike to Amazon S3 and ingests it into Microsoft Sentinel.</p>
+<p>Use this connector when detailed endpoint telemetry is required, including:</p>
+<ul>
+<li>Process Events</li>
+<li>DNS Events</li>
+<li>Network Events</li>
+<li>Authentication Events</li>
+<li>Endpoint Activity Logs</li>
+<li>Other Falcon Data Replicator (FDR) datasets</li>
+</ul>
+<p>These telemetry datasets are generally not available through CrowdStrike native APIs and are delivered through the Falcon Data Replicator (FDR) service.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>Before configuring the Microsoft Sentinel connector:</p>
+<p><em>[Content truncated...]</em></p>
 <h2 id="release-notes">Release Notes</h2>
 <table>
 <thead>

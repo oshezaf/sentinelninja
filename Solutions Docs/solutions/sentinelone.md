@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.9 |
+| **Version** | 3.0.10 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2024-11-26 |
 | **Last Updated** | 2026-04-17 |
@@ -57,15 +57,20 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **11 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md), [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`OneActivities_CL`](../tables/oneactivities-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) | - |
+| [`OneAgents_CL`](../tables/oneagents-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) | - |
+| [`OneAlerts_CL`](../tables/onealerts-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) | - |
+| [`OneGroups_CL`](../tables/onegroups-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) | - |
+| [`OneThreats_CL`](../tables/onethreats-cl.md) | [SentinelOne (via Codeless Connector Framework)](../connectors/sentineloneccp.md) | - |
+| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
+| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
 | [`SentinelOne_CL`](../tables/sentinelone-cl.md) 🔶 | [[DEPRECATED] SentinelOne (using Azure Function)](../connectors/sentinelone.md) | Analytics, Hunting, Workbooks |
 
 
@@ -129,6 +134,7 @@ This solution includes **23 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.10      | 03-06-2026                     | Updated CCP **Data Connector** to support multiple instances (multi-connection) for MSSP scenarios |
 | 3.0.9       | 14-04-2026                     | Deprecate SentinelOne (using Azure Function) |
 | 3.0.8       | 24-03-2026                     | Rename CCF solution to SentinelOne (via Codeless Connector Framework) |
 | 3.0.7       | 09-01-2026                     | Updated broken URL and bumped the SentinelOne solution version |

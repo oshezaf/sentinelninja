@@ -8,7 +8,7 @@
 
 Workbooks are interactive dashboards that visualize security data from Microsoft Sentinel. They combine charts, tables, and text to provide insights into your security posture, help monitor key metrics, and support investigation with drill-down capabilities. [Learn more](https://learn.microsoft.com/azure/sentinel/monitor-your-data)
 
-**572 workbooks** across all Microsoft Sentinel solutions.
+**573 workbooks** across all Microsoft Sentinel solutions.
 
 **Jump to:** [#](##) | [A](#a) | [B](#b) | [C](#c) | [D](#d) | [E](#e) | [F](#f) | [G](#g) | [H](#h) | [I](#i) | [J](#j) | [K](#k) | [L](#l) | [M](#m) | [N](#n) | [O](#o) | [P](#p) | [Q](#q) | [R](#r) | [S](#s) | [T](#t) | [U](#u) | [V](#v) | [W](#w) | [Z](#z)
 
@@ -205,6 +205,7 @@ Workbooks are interactive dashboards that visualize security data from Microsoft
 
 | Name | Source |
 |:-----|:-------|
+| [DarktraceActiveAISecurityPlatformWorkbook](darktrace-darktraceactiveaisecurityplatformworkbook-d9b62600.md) | 📦 [Darktrace](../solutions/darktrace.md) |
 | [DarktraceWorkbook](darktrace-darktraceworkbook-b6b8de88.md) | 📦 [Darktrace](../solutions/darktrace.md) |
 | [Data_Latency_Workbook](github-only-data-latency-workbook-6c04e6e6.md) | 🔗 GitHub Only |
 | [DataCollectionHealthMonitoring](github-only-datacollectionhealthmonitoring-360bf8be.md) | 🔗 GitHub Only |

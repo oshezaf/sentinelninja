@@ -60,7 +60,7 @@ This table is used by the following solutions:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (2)
 
 ### Analytic Rules (1)
 
@@ -69,6 +69,14 @@ This table is used by the following solutions:
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
 | [TI Map IP Entity to Duo Security](../content/threat-intelligence-ti-map-ip-entity-to-duo-security-d23ed927-5be3-4902-a9c1-85f841eb4fa1-cf610585.md) |  |
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DuoSecurity](../content/github-only-duosecurity-51a3ff3a.md) |  |
 
 ## Parsers Using This Table (1)
 

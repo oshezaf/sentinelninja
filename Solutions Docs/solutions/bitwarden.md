@@ -39,16 +39,13 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **6 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | - | Workbooks |
-| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | - | Workbooks |
-| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | - | Workbooks |
-| [`EventLogs`](../tables/eventlogs.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
-| [`Groups`](../tables/groups.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
-| [`Members`](../tables/members.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | - |
+| [`BitwardenEventLogs_CL`](../tables/bitwardeneventlogs-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Workbooks |
+| [`BitwardenGroups_CL`](../tables/bitwardengroups-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Workbooks |
+| [`BitwardenMembers_CL`](../tables/bitwardenmembers-cl.md) | [Bitwarden Event Logs](../connectors/bitwardeneventlogs.md) | Workbooks |
 
 ## Content Items
 

@@ -41,7 +41,7 @@ The collection method for these connectors could not be automatically determined
 | [Corelight Connector Exporter](../connectors/corelightconnectorexporter.md) 🔶 | Corelight | 108 | [Corelight](../solutions/corelight.md) |
 | [Cribl](../connectors/cribl.md) 🔶 | Cribl | 4 | [Cribl](../solutions/cribl.md) |
 | [Cynerio Security Events](../connectors/cyneriosecurityevents.md) 🔶 | Cynerio | 1 | [Cynerio](../solutions/cynerio.md) |
-| [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) 🔶 | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
+| [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) 🔶 | Darktrace | 1 | [Darktrace](../solutions/darktrace.md) |
 | [Datawiza DAP](../connectors/datawizadapsolution.md) 🔶 | Datawiza | 1 | [Datawiza](../solutions/datawiza.md) |
 | [Derdack SIGNL4](../connectors/derdacksignl4.md) 🔶 | Derdack | 2 | [SIGNL4](../solutions/signl4.md) |
 | [Doppel Data Connector](../connectors/doppel-dataconnector.md) | Doppel | 1 | [Doppel](../solutions/doppel.md) |

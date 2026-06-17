@@ -45,11 +45,10 @@ This solution provides **1 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **2 table(s)**:
+This solution uses **1 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`Halcyon Events`](../tables/halcyon-events.md) | [Halcyon Connector](../connectors/halcyonpush.md) | - |
 | [`HalcyonEvents_CL`](../tables/halcyonevents-cl.md) | [Halcyon Connector](../connectors/halcyonpush.md) | - |
 
 ## Release Notes

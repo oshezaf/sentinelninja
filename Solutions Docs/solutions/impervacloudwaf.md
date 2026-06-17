@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | Security - Network |
-| **Version** | 3.1.1 |
+| **Version** | 3.1.2 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2021-09-28 |
 | **Last Updated** | 2026-04-16 |
@@ -53,14 +53,15 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **4 table(s)**:
+This solution uses **5 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ImpervaWAFCloud`](../tables/impervawafcloud.md) | - | Analytics, Hunting, Workbooks |
+| [`ImpervaWAFCloudV2Logs`](../tables/impervawafcloudv2logs.md) | [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) | - |
 | [`ImpervaWAFCloudV2_CL`](../tables/impervawafcloudv2-cl.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) | - |
 | [`ImpervaWAFCloud_CL`](../tables/impervawafcloud-cl.md) 🔶 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
-| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md), [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) | - |
+| [`SentinelImpervaWAFCloudV2Logs`](../tables/sentinelimpervawafcloudv2logs.md) | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) | - |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.

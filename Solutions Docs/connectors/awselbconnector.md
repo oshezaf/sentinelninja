@@ -29,11 +29,9 @@ This connector ingests data into the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AWSALBAccessLogs`](../tables/awsalbaccesslogs.md) | ✓ | ✓ | ? |
-| [`AWSALBAccessLogs_CL`](../tables/awsalbaccesslogs-cl.md) | ? | ✓ | ? |
-| [`AWSELBFlowLogs`](../tables/awselbflowlogs.md) | ✓ | ✓ | ? |
-| [`AWSELBFlowLogs_CL`](../tables/awselbflowlogs-cl.md) | ? | ✓ | ? |
+| [`AWSGLBFlowLogsStream`](../tables/awsglbflowlogsstream.md) | ? | ? | ? |
 | [`AWSNLBAccessLogs`](../tables/awsnlbaccesslogs.md) | ✓ | ✓ | ? |
-| [`AWSNLBAccessLogs_CL`](../tables/awsnlbaccesslogs-cl.md) | ? | ✓ | ? |
+| [`AWSNLBFlowLogsStream`](../tables/awsnlbflowlogsstream.md) | ? | ? | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 

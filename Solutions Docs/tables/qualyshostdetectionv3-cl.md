@@ -22,22 +22,22 @@
 
 ## Schema (12 columns)
 
-**Source:** [KQL validation test schema](https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/QualysHostDetectionV3_CL.json)
+**Source:** [Connector definition](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM%5CData%20Connectors%5CQualysVMHostLogs_ccp/QualysVMHostLogs_Table.json)
 
-| Column Name | Type |
-|:------------|:-----|
-| DetectionList | dynamic |
-| DnsName | string |
-| HostId | string |
-| IPAddress | string |
-| LastScanDateTime | datetime |
-| LastVMAuthScannedDateTime | datetime |
-| LastVMScannedDateTime | datetime |
-| NetBios | string |
-| OperatingSystem | string |
-| QGHostId | string |
-| TimeGenerated | datetime |
-| TrackingMethod | string |
+| Column Name | Type | Description |
+|:------------|:-----|:------------|
+| DetectionList | dynamic | Collection of vulnerability detections reported for the host. |
+| DnsName | string | DNS name associated with the host. |
+| HostId | string | Unique host identifier from Qualys VM. |
+| IPAddress | string | Primary IP address reported for the host. |
+| LastScanDateTime | datetime | Most recent scan timestamp for the host. |
+| LastVMAuthScannedDateTime | datetime | Most recent authenticated VM scan timestamp. |
+| LastVMScannedDateTime | datetime | Most recent VM scan timestamp reported by Qualys. |
+| NetBios | string | NetBIOS name associated with the host. |
+| OperatingSystem | string | Operating system details resolved from the Qualys host record. |
+| QGHostId | string | QualysGuard host identifier. |
+| TimeGenerated | datetime |  |
+| TrackingMethod | string | Method Qualys uses to track and identify the host. |
 
 ## Solutions (5)
 

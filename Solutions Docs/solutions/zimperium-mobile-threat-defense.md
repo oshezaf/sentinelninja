@@ -16,10 +16,10 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.zimperium.com/support/](https://www.zimperium.com/support/) |
 | **Categories** | Security - Threat Protection |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Zimperium |
 | **First Published** | 2022-05-02 |
-| **Last Updated** | 2026-04-28 |
+| **Last Updated** | 2026-06-11 |
 | **Solution Folder** | [Zimperium Mobile Threat Defense](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Zimperium%20Mobile%20Threat%20Defense) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/zimperiuminc.zimperium_mobile_threat_defense_mss) · Popularity: 🔵 Medium (63%) |
 
@@ -51,10 +51,12 @@ This solution provides **1 data connector(s)** (plus 1 discovered⚠️):
 
 ## Tables Used
 
-This solution uses **4 table(s)**:
+This solution uses **6 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
+| [`ZimperiumIncidentLog_CL`](../tables/zimperiumincidentlog-cl.md) | [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | - |
+| [`ZimperiumIncidentMitigationLog_CL`](../tables/zimperiumincidentmitigationlog-cl.md) | [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | - |
 | [`ZimperiumMitigationLogV2_CL`](../tables/zimperiummitigationlogv2-cl.md) | [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | - |
 | [`ZimperiumMitigationLog_CL`](../tables/zimperiummitigationlog-cl.md) 🔶 | [Zimperium Mobile Threat Defense](../connectors/zimperiummtdalerts.md) | - |
 | [`ZimperiumThreatLogV2_CL`](../tables/zimperiumthreatlogv2-cl.md) | [Zimperium Mobile Threat Defense CCF](../connectors/zimperiummtdpush.md) | Workbooks |
@@ -84,6 +86,7 @@ This solution includes **2 content item(s)** (1 in solution, 1 discovered 🔍):
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.1.0       | 11-06-2026                     | Added new tables `ZimperiumIncidentLog_CL` and `ZimperiumIncidentMitigationLog_CL` and corresponding data collection rules to ingest incident logs. |
 | 3.0.0       | 28-04-2026                     | Added data ingestion support using CCF (Codeless Connector Framework) **Push connector**.|
 
 ---

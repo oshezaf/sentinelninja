@@ -71,7 +71,7 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (19)
+## Content Items Using This Table (20)
 
 ### Analytic Rules (18)
 
@@ -98,13 +98,19 @@ This table is ingested by the following connectors:
 | [1Password - Vault export post account creation](../content/1password-1password-vault-export-post-account-creation-969e2e5c-9cc6-423c-a3de-514f7ad75fe7-d1a1cf0f.md) |  |
 | [1Password - Vault export prior to account suspension or deletion](../content/1password-1password-vault-export-prior-to-account-suspension-or-deletion-51617533-cf51-4415-9020-b15bd47d69d2-cff5f5fb.md) |  |
 
-### Workbooks (1)
+### Workbooks (2)
 
 **In solution [1Password](../solutions/1password.md):**
 
 | Workbook | Selection Criteria |
 |:-------------|:-------------------|
 | [1Password](../content/1password-1password-c64d377e.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [1Password](../content/github-only-1password-e0428620.md) |  |
 
 ---
 

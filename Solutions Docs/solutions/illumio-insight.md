@@ -41,7 +41,7 @@ This solution uses **3 table(s)**:
 |-------|-------------------|----------------|
 | [`IllumioInsightsGraph_CL`](../tables/illumioinsightsgraph-cl.md) | [Illumio Insights Graph](../connectors/sentinelillumioinsightsgraphccp.md) | - |
 | [`IllumioInsightsSummary_CL`](../tables/illumioinsightssummary-cl.md) | [Illumio Insights Summary](../connectors/illumioinsightssummaryccp.md) | - |
-| [`IllumioInsights_CL`](../tables/illumioinsights-cl.md) | [Illumio Insights](../connectors/illumioinsightsdefinition.md) | - |
+| [`IlumioInsights`](../tables/ilumioinsights.md) | [Illumio Insights](../connectors/illumioinsightsdefinition.md) | - |
 
 ## Release Notes
 

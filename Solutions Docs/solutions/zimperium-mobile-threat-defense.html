@@ -48,7 +48,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">3.0.0</td>
+  <td style="text-align:left">3.1.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
@@ -60,7 +60,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Last Updated</strong></td>
-  <td style="text-align:left">2026-04-28</td>
+  <td style="text-align:left">2026-06-11</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Solution Folder</strong></td>
@@ -95,7 +95,7 @@
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>4 table(s)</strong>:</p>
+<p>This solution uses <strong>6 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -105,6 +105,16 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td><a href="../tables/zimperiumincidentlog-cl.html"><code>ZimperiumIncidentLog_CL</code></a></td>
+  <td><a href="../connectors/zimperiummtdpush.html">Zimperium Mobile Threat Defense CCF</a></td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><a href="../tables/zimperiumincidentmitigationlog-cl.html"><code>ZimperiumIncidentMitigationLog_CL</code></a></td>
+  <td><a href="../connectors/zimperiummtdpush.html">Zimperium Mobile Threat Defense CCF</a></td>
+  <td>-</td>
+</tr>
 <tr>
   <td><a href="../tables/zimperiummitigationlogv2-cl.html"><code>ZimperiumMitigationLogV2_CL</code></a></td>
   <td><a href="../connectors/zimperiummtdpush.html">Zimperium Mobile Threat Defense CCF</a></td>
@@ -182,6 +192,11 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+  <td>3.1.0</td>
+  <td>11-06-2026</td>
+  <td>Added new tables <code>ZimperiumIncidentLog_CL</code> and <code>ZimperiumIncidentMitigationLog_CL</code> and corresponding data collection rules to ingest incident logs.</td>
+</tr>
 <tr>
   <td>3.0.0</td>
   <td>28-04-2026</td>

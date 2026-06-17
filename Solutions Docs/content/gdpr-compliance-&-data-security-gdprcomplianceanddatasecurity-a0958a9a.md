@@ -21,7 +21,7 @@ This content item queries data from the following tables:
 | [`AADNonInteractiveUserSignInLogs`](../tables/aadnoninteractiveusersigninlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AADUserRiskEvents`](../tables/aaduserriskevents.md) |  | ✓ | ✗ | ✓ |
 | [`Anomalies`](../tables/anomalies.md) |  | ✓ | ✓ | ? |
-| [`AuditLogs`](../tables/auditlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | ✓ | ✗ | ✓ |
+| [`AuditLogs`](../tables/auditlogs.md) |  | ✓ | ✗ | ✓ |
 | [`AzureDiagnostics`](../tables/azurediagnostics.md) 🔶 | `Category == "SQLSecurityAuditEvents"`<br>`ResourceType == "SERVERS/DATABASES"` | ✗ | ✗ | ✗ |
 | [`BehaviorAnalytics`](../tables/behavioranalytics.md) | `ActivityInsights has "True"` | ✓ | ✗ | ? |
 | [`LAQueryLogs`](../tables/laquerylogs.md) | `RequestClientApp != "Sentinel-General"` | ✓ | ✗ | ? |
@@ -32,7 +32,7 @@ This content item queries data from the following tables:
 | [`SecurityAlert`](../tables/securityalert.md) | `AlertName contains "PII"`<br>`AlertName contains "confidential"`<br>`AlertName contains "intellectual"`<br>`AlertName contains "leak"`<br>`AlertName contains "sensitive"`<br>`AlertName contains "spill"`<br>`AlertName contains "steal"`<br>`AlertName contains "theft"`<br>`Tactics contains "exfil"` | ✓ | ✗ | ✓ |
 | [`SecurityEvent`](../tables/securityevent.md) |  | ✓ | ✓ | ✓ |
 | [`SecurityIncident`](../tables/securityincident.md) |  | ✓ | ✗ | ✓ |
-| [`SigninLogs`](../tables/signinlogs.md) |  | ✓ | ✗ | ✓ |
+| [`SigninLogs`](../tables/signinlogs.md) | `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | ✓ | ✗ | ✓ |
 | [`Syslog`](../tables/syslog.md) |  | ✓ | ✓ | ✓ |
 
 ---

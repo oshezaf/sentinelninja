@@ -14,7 +14,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Security - Threat Intelligence |
-| **Version** | 3.0.18 |
+| **Version** | 3.0.19 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2025-04-02 |
 | **Last Updated** | 2026-05-05 |
@@ -34,10 +34,9 @@ Microsoft Sentinel has recently improved its threat intelligence hunting experie
 
 ## Data Connectors
 
-This solution provides **6 data connector(s)**:
+This solution provides **5 data connector(s)**:
 
 - [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md)
-- [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md)
 - [Threat Intelligence Platforms](../connectors/threatintelligence.md)
 - [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md)
 - [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md)
@@ -73,7 +72,7 @@ This solution uses **29 table(s)**:
 | [`SigninLogs`](../tables/signinlogs.md) | - | Analytics |
 | [`Syslog`](../tables/syslog.md) | - | Analytics, Hunting |
 | [`ThreatIntelExportOperation`](../tables/threatintelexportoperation.md) | [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md) | - |
-| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md), [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md), [Threat Intelligence Platforms](../connectors/threatintelligence.md), [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md), [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | - |
+| [`ThreatIntelObjects`](../tables/threatintelobjects.md) | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md), [Threat Intelligence Platforms](../connectors/threatintelligence.md), [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md), [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | - |
 | [`UrlClickEvents`](../tables/urlclickevents.md) | - | Analytics |
 | [`VMConnection`](../tables/vmconnection.md) | - | Analytics, Hunting |
 | [`W3CIISLog`](../tables/w3ciislog.md) | - | Analytics |
@@ -87,7 +86,7 @@ The following **3 table(s)** are used internally by this solution's content item
 |-------|-------------------|----------------|
 | [`SecurityAlert`](../tables/securityalert.md) | - | Analytics, Workbooks |
 | [`SecurityIncident`](../tables/securityincident.md) | - | Workbooks |
-| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md), [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md), [Threat Intelligence Platforms](../connectors/threatintelligence.md), [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md), [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Analytics, Hunting, Workbooks |
+| [`ThreatIntelIndicators`](../tables/threatintelindicators.md) | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md), [Threat Intelligence Platforms](../connectors/threatintelligence.md), [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md), [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Analytics, Hunting, Workbooks |
 
 
 > 🔶 **CLv1:** This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. `_s`, `_d`, `_b`, `_t`, `_g`). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.
@@ -186,25 +185,26 @@ This solution includes **59 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
-| 3.0.18      | 04-05-2026                     | Export to TAXII **connector** proceeds to GA. |
-| 3.0.17      | 02-04-2026                     | Updated **TI map Domain entity to SecurityAlert** analytic rule with deduplication and filters   |
-| 3.0.16      | 25-03-2026                     | Optimized **TI map Domain entity to EmailUrlInfo** analytic rule with deduplication and filters |
-| 3.0.15      | 09-03-2026                     | Update **IPEntity_DuoSecurity Analytic Rule**                |
-| 3.0.14      | 16-02-2026                     | Added **Analytic Rule** for URL IOC                  |
-| 3.0.13      | 27-01-2026                     | Updated package to include latest query changes.                  |
-| 3.0.12      | 23-12-2025                     | Replaces the 'AlertPriority' field with 'Severity' in the IPEntity_AppServiceHTTPLogs analytic rule and updates all related references.            |
-| 3.0.11      | 02-12-2025                     | Update Threat Intelligence package and release notes 	 |
-| 3.0.10      | 20-11-2025                     | Update Syntax for IPEntity_CloudAppEvents_Updated.yaml Rule		 |
-| 3.0.9       | 07-11-2025                     | Updated EmailEntity_CloudAppEvents_Updated.yaml to adjust lookback periods to match the query period and frequency. |
-| 3.0.8       | 18-10-2025                     | Update IPEntity_AzureFirewall.yaml to use Resource specific tables rather than AzureDiagnostics |
-| 3.0.7       | 16-10-2025                     | Added new connector for **Threat Intelligence TAXII** export and now available in public preview.				|
-| 3.0.6       | 08-09-2025                     | Fixed the problem related to the **Workbook** query					 |
-| 3.0.5       | 03-09-2025                     | Support for a new data type, `ThreatIntelObjects`, across multiple Threat Intelligence **Data Connector** templates					 |
-| 3.0.4       | 08-08-2025                     | Updated **Data Connectors** and **Analytic Rules** to ensures consistency and likely aligns with updated connector schemas or naming conventions|
-| 3.0.3       | 25-07-2025                     | Added several new **Data Connectors** for Microsoft Sentinel, aimed at enhancing threat intelligence integration capabilities|
-| 3.0.2       | 10-07-2025                     | Improve kql query efficiency and accuracy|
-| 3.0.1       | 17-04-2025                     | Updated entity mappings of **Analytic Rules**|
-| 3.0.0       | 02-04-2025                     | Initial solution release					 |
+| 3.0.19      | 25-05-2026                     | Removed Premium Microsoft Defender Threat Intelligence **Data Connector** from solution package due to deprecation as part of MDTI convergence.  |
+| 3.0.18      | 04-05-2026                     | Export to TAXII **connector** proceeds to GA.                                                                                                    |
+| 3.0.17      | 02-04-2026                     | Updated **TI map Domain entity to SecurityAlert** analytic rule with deduplication and filters                                                   |
+| 3.0.16      | 25-03-2026                     | Optimized **TI map Domain entity to EmailUrlInfo** analytic rule with deduplication and filters                                                  |
+| 3.0.15      | 09-03-2026                     | Update **IPEntity_DuoSecurity Analytic Rule**                                                                                                    |
+| 3.0.14      | 16-02-2026                     | Added **Analytic Rule** for URL IOC                                                                                                              |
+| 3.0.13      | 27-01-2026                     | Updated package to include latest query changes.                                                                                                 |
+| 3.0.12      | 23-12-2025                     | Replaces the 'AlertPriority' field with 'Severity' in the IPEntity_AppServiceHTTPLogs analytic rule and updates all related references.          |
+| 3.0.11      | 02-12-2025                     | Update Threat Intelligence package and release notes                                                                                             |
+| 3.0.10      | 20-11-2025                     | Update Syntax for IPEntity_CloudAppEvents_Updated.yaml Rule                                                                                      |
+| 3.0.9       | 07-11-2025                     | Updated EmailEntity_CloudAppEvents_Updated.yaml to adjust lookback periods to match the query period and frequency.                              |
+| 3.0.8       | 18-10-2025                     | Update IPEntity_AzureFirewall.yaml to use Resource specific tables rather than AzureDiagnostics                                                  |
+| 3.0.7       | 16-10-2025                     | Added new connector for **Threat Intelligence TAXII** export and now available in public preview.                                                |
+| 3.0.6       | 08-09-2025                     | Fixed the problem related to the **Workbook** query                                                                                              |
+| 3.0.5       | 03-09-2025                     | Support for a new data type, `ThreatIntelObjects`, across multiple Threat Intelligence **Data Connector** templates                              |
+| 3.0.4       | 08-08-2025                     | Updated **Data Connectors** and **Analytic Rules** to ensures consistency and likely aligns with updated connector schemas or naming conventions |
+| 3.0.3       | 25-07-2025                     | Added several new **Data Connectors** for Microsoft Sentinel, aimed at enhancing threat intelligence integration capabilities                    |
+| 3.0.2       | 10-07-2025                     | Improve kql query efficiency and accuracy                                                                                                        |
+| 3.0.1       | 17-04-2025                     | Updated entity mappings of **Analytic Rules**                                                                                                    |
+| 3.0.0       | 02-04-2025                     | Initial solution release                                                                                                                         |
 
 ---
 

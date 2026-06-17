@@ -52,62 +52,75 @@
 <li><a href="#parsers-using-this-table">Parsers</a></li>
 </ul>
 <h2 id="schema">Schema (12 columns)</h2>
-<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/.script/tests/KqlvalidationsTests/CustomTables/QualysHostDetectionV3_CL.json">KQL validation test schema</a></p>
+<p><strong>Source:</strong> <a href="https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/QualysVM%5CData%20Connectors%5CQualysVMHostLogs_ccp/QualysVMHostLogs_Table.json">Connector definition</a></p>
 <table id="schema-table">
 <thead>
 <tr>
   <th style="text-align:left">Column Name</th>
   <th style="text-align:left">Type</th>
+  <th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
   <td style="text-align:left">DetectionList</td>
   <td style="text-align:left">dynamic</td>
+  <td style="text-align:left">Collection of vulnerability detections reported for the host.</td>
 </tr>
 <tr>
   <td style="text-align:left">DnsName</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">DNS name associated with the host.</td>
 </tr>
 <tr>
   <td style="text-align:left">HostId</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Unique host identifier from Qualys VM.</td>
 </tr>
 <tr>
   <td style="text-align:left">IPAddress</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Primary IP address reported for the host.</td>
 </tr>
 <tr>
   <td style="text-align:left">LastScanDateTime</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Most recent scan timestamp for the host.</td>
 </tr>
 <tr>
   <td style="text-align:left">LastVMAuthScannedDateTime</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Most recent authenticated VM scan timestamp.</td>
 </tr>
 <tr>
   <td style="text-align:left">LastVMScannedDateTime</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left">Most recent VM scan timestamp reported by Qualys.</td>
 </tr>
 <tr>
   <td style="text-align:left">NetBios</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">NetBIOS name associated with the host.</td>
 </tr>
 <tr>
   <td style="text-align:left">OperatingSystem</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Operating system details resolved from the Qualys host record.</td>
 </tr>
 <tr>
   <td style="text-align:left">QGHostId</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">QualysGuard host identifier.</td>
 </tr>
 <tr>
   <td style="text-align:left">TimeGenerated</td>
   <td style="text-align:left">datetime</td>
+  <td style="text-align:left"></td>
 </tr>
 <tr>
   <td style="text-align:left">TrackingMethod</td>
   <td style="text-align:left">string</td>
+  <td style="text-align:left">Method Qualys uses to track and identify the host.</td>
 </tr>
 </tbody>
 </table>

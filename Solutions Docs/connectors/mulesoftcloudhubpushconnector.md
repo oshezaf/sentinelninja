@@ -28,7 +28,6 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`MuleSoftCloudhubLogs`](../tables/mulesoftcloudhublogs.md) | ? | ? | ? |
 | [`MuleSoftCloudhubLogs_CL`](../tables/mulesoftcloudhublogs-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

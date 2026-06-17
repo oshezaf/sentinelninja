@@ -16,7 +16,7 @@
 | **Support Tier** | Partner |
 | **Support Link** | [https://www.silverfort.com/customer-success/#support](https://www.silverfort.com/customer-success/#support) |
 | **Categories** | Identity |
-| **Version** | 1.0.0 |
+| **Version** | 3.0.1 |
 | **Author** | Silverfort |
 | **First Published** | 2024-09-01 |
 | **Solution Folder** | [Silverfort](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Silverfort) |
@@ -74,6 +74,7 @@ This solution includes **5 content item(s)**:
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                |
 |-------------|--------------------------------|-----------------------------------|
+| 3.0.1       | 02-06-2026                     | Minor Doc Update                  |
 | 3.0.0       | 13-09-2024                     | Initial Solution Release          |
 
 ---

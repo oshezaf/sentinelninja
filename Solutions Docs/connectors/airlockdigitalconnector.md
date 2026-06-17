@@ -27,11 +27,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`AirlockDigitalExecutionHistories`](../tables/airlockdigitalexecutionhistories.md) | ? | ? | ? |
 | [`AirlockDigitalExecutionHistories_CL`](../tables/airlockdigitalexecutionhistories-cl.md) | ? | ✓ | ? |
-| [`AirlockDigitalFileActivitySummary`](../tables/airlockdigitalfileactivitysummary.md) | ? | ? | ? |
 | [`AirlockDigitalFileActivitySummary_CL`](../tables/airlockdigitalfileactivitysummary-cl.md) | ? | ✓ | ? |
-| [`AirlockDigitalServerActivities`](../tables/airlockdigitalserveractivities.md) | ? | ? | ? |
 | [`AirlockDigitalServerActivities_CL`](../tables/airlockdigitalserveractivities-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.

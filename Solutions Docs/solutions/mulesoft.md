@@ -14,23 +14,29 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com](https://support.microsoft.com) |
 | **Categories** | DevOps,IT Operations |
-| **Version** | 3.0.0 |
+| **Version** | 3.1.0 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-07-12 |
 | **Solution Folder** | [Mulesoft](https://github.com/Azure/Azure-Sentinel/blob/master/Solutions/Mulesoft) |
 | **Marketplace** | [Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azuresentinel.azure-sentinel-solution-mulesoft) · Popularity: 🔵 Medium (78%) |
 
-The [MuleSoft Cloudhub](https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration) solution provides the capability to retrieve logs from Cloudhub applications using the Cloudhub API and more events into Microsoft Sentinel through the REST API.
+The [MuleSoft Cloudhub](https://www.mulesoft.com/platform/saas/cloudhub-ipaas-cloud-based-integration) solution provides the capability to ingest logs from Cloudhub applications into Microsoft Sentinel. This solution includes two data connector options: an Azure Function-based connector using the Cloudhub API, and a push-based CCF connector that receives logs directly via Log4j HTTP appender as recommended by MuleSoft.
 
 **Underlying Microsoft Technologies used:**
 
 This solution takes a dependency on the following technologies, and some of these dependencies either may be in [Preview](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) state or might result in additional ingestion or operational costs:
 
-a. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+a. [Codeless Connector Framework (CCF)](https://learn.microsoft.com/azure/sentinel/create-codeless-connector)
 
-b. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+b. [Log Ingestion API](https://docs.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview)
 
-**Data Connectors:** 1, **Parsers:** 1
+c. [Data Collection Rules (DCR)](https://docs.microsoft.com/azure/azure-monitor/essentials/data-collection-rule-overview)
+
+d. [Azure Monitor HTTP Data Collector API](https://docs.microsoft.com/azure/azure-monitor/logs/data-collector-api)
+
+e. [Azure Functions](https://azure.microsoft.com/services/functions/#overview)
+
+**Data Connectors:** 2, **Parsers:** 1
 
 [Learn more about Microsoft Sentinel](https://aka.ms/azuresentinel) | [Learn more about Solutions](https://aka.ms/azuresentinelsolutionsdoc)
 
@@ -53,11 +59,10 @@ This solution provides **3 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **4 table(s)**:
+This solution uses **3 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`MuleSoftCloudhubLogs`](../tables/mulesoftcloudhublogs.md) | [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | - |
 | [`MuleSoftCloudhubLogs_CL`](../tables/mulesoftcloudhublogs-cl.md) | [MuleSoft CloudHub Logs (Push Connector via Codeless Connector Framework)](../connectors/mulesoftcloudhubpushconnector.md) | - |
 | [`MuleSoft_Cloudhub_CL`](../tables/mulesoft-cloudhub-cl.md) 🔶 | [MuleSoft Cloudhub](../connectors/mulesoft.md) | - |
 | [`MulesoftCloudhubAlerts_CL`](../tables/mulesoftcloudhubalerts-cl.md) | [Mulesoft CloudHub Alerts Connector (via Codeless Connector Framework)](../connectors/mulesoftcloudhubconnector.md) | - |

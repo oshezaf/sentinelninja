@@ -19,7 +19,7 @@
 <p>Tables in Microsoft Sentinel store the security data ingested by data connectors and referenced by content items such as analytics rules and hunting queries. Each table represents a specific data type (such as sign-in logs, network traffic, or security events) and follows a defined schema with columns for relevant attributes.</p>
 <p><strong>Browse:</strong> <a href="../index.html">🏠</a> · <a href="../index.html#solutions">Solutions</a> · <a href="../index.html#connectors">Connectors</a> · <a href="../index.html#connectors">Methods</a> · <strong>Tables</strong> · <a href="../index.html#content">Content</a> · <a href="../index.html#parsers">Parsers</a> · <a href="../index.html#asim">ASIM Parsers</a> · <a href="../index.html#asim">ASIM Products</a> · <a href="logic-apps/logic-apps-index.html">Logic Apps</a> · <a href="statistics.html">📊</a></p>
 <hr />
-<p><strong>2085 tables</strong> documented (994 ingested by connectors, 234 referenced by content only). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
+<p><strong>2093 tables</strong> documented (996 ingested by connectors, 262 referenced by content only). See <a href="statistics.html">📊 Statistics</a> for detailed breakdowns.</p>
 <p>The <strong>Discovered Via</strong> column shows how each table was identified. When a table appears in multiple sources, the highest-priority source is shown:</p>
 <ol>
 <li><strong>Connector</strong> — the table is ingested by a data connector</li>
@@ -173,16 +173,16 @@
 <tr>
   <td><a href="tables/aadnoninteractiveusersigninlogs.html">AADNonInteractiveUserSignInLogs</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/aadnoninteractiveusersigninlogs.html">11</a></td>
+  <td style="text-align:center"><a href="tables/aadnoninteractiveusersigninlogs.html">13</a></td>
   <td style="text-align:center"><a href="tables/aadnoninteractiveusersigninlogs.html">1</a></td>
-  <td style="text-align:left">Analytics, Workbooks</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/aadprovisioninglogs.html">AADProvisioningLogs</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/aadprovisioninglogs.html">1</a></td>
   <td style="text-align:center"><a href="tables/aadprovisioninglogs.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/aadriskyagents.html">AADRiskyAgents</a> 📖</td>
@@ -203,7 +203,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/aadriskyusers.html">1</a></td>
   <td style="text-align:center"><a href="tables/aadriskyusers.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/aadserviceprincipalriskevents.html">AADServicePrincipalRiskEvents</a> 📖</td>
@@ -215,9 +215,9 @@
 <tr>
   <td><a href="tables/aadserviceprincipalsigninlogs.html">AADServicePrincipalSignInLogs</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/aadserviceprincipalsigninlogs.html">5</a></td>
+  <td style="text-align:center"><a href="tables/aadserviceprincipalsigninlogs.html">6</a></td>
   <td style="text-align:center"><a href="tables/aadserviceprincipalsigninlogs.html">1</a></td>
-  <td style="text-align:left">Analytics, Workbooks</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/aadsignineventsbeta.html">AADSignInEventsBeta</a></td>
@@ -714,7 +714,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/adfssigninlogs.html">2</a></td>
   <td style="text-align:center"><a href="tables/adfssigninlogs.html">1</a></td>
-  <td style="text-align:left">Analytics</td>
+  <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/adfssisintegrationruntimelogs.html">ADFSSISIntegrationRuntimeLogs</a></td>
@@ -872,10 +872,10 @@
 </tr>
 <tr>
   <td><a href="tables/adxtabledetails.html">ADXTableDetails</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/adxtableusagestatistics.html">ADXTableUsageStatistics</a></td>
@@ -1215,23 +1215,16 @@
 </tr>
 <tr>
   <td><a href="tables/aiagentsinfo.html">AIAgentsInfo</a></td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/airflowdagprocessinglogs.html">AirflowDagProcessingLogs</a></td>
   <td style="text-align:left">Docs</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
-  <td><a href="tables/airlockdigitalexecutionhistories.html">AirlockDigitalExecutionHistories</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/airlockdigitalexecutionhistories.html">1</a></td>
-  <td style="text-align:center"><a href="tables/airlockdigitalexecutionhistories.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -1242,24 +1235,10 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td><a href="tables/airlockdigitalfileactivitysummary.html">AirlockDigitalFileActivitySummary</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/airlockdigitalfileactivitysummary.html">1</a></td>
-  <td style="text-align:center"><a href="tables/airlockdigitalfileactivitysummary.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
   <td><a href="tables/airlockdigitalfileactivitysummary-cl.html">AirlockDigitalFileActivitySummary_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/airlockdigitalfileactivitysummary-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/airlockdigitalfileactivitysummary-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
-  <td><a href="tables/airlockdigitalserveractivities.html">AirlockDigitalServerActivities</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/airlockdigitalserveractivities.html">1</a></td>
-  <td style="text-align:center"><a href="tables/airlockdigitalserveractivities.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -1314,7 +1293,7 @@
 <tr>
   <td><a href="tables/alertevidence.html">AlertEvidence</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/alertevidence.html">6</a></td>
+  <td style="text-align:center"><a href="tables/alertevidence.html">7</a></td>
   <td style="text-align:center"><a href="tables/alertevidence.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -1330,7 +1309,7 @@
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/alertinfo.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Analytics, Hunting</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/alerts-data-cl.html">Alerts_data_CL</a> 📖</td>
@@ -1435,7 +1414,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/alicloud-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/alicloud-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/alicloudactiontraillogs-cl.html">AliCloudActionTrailLogs_CL</a> 📖</td>
@@ -1447,9 +1426,9 @@
 <tr>
   <td><a href="tables/alsidforadlog-cl.html">AlsidForADLog_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/alsidforadlog-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/alsidforadlog-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:center"><a href="tables/alsidforadlog-cl.html">3</a></td>
+  <td style="text-align:center"><a href="tables/alsidforadlog-cl.html">3</a></td>
+  <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/amahealth.html">AMAHealth</a> 📖</td>
@@ -1678,7 +1657,7 @@
 <tr>
   <td><a href="tables/anomalies.html">Anomalies</a> 📖</td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/anomalies.html">11</a></td>
+  <td style="text-align:center"><a href="tables/anomalies.html">12</a></td>
   <td style="text-align:center">-</td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -1901,24 +1880,24 @@
 </tr>
 <tr>
   <td><a href="tables/appserviceantivirusscanauditlogs.html">AppServiceAntivirusScanAuditLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center"><a href="tables/appserviceantivirusscanauditlogs.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Analytics</td>
 </tr>
 <tr>
   <td><a href="tables/appserviceapplogs.html">AppServiceAppLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/appserviceauditlogs.html">AppServiceAuditLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/appserviceauthenticationlogs.html">AppServiceAuthenticationLogs</a> 📖</td>
@@ -1929,10 +1908,10 @@
 </tr>
 <tr>
   <td><a href="tables/appserviceconsolelogs.html">AppServiceConsoleLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/appserviceenvironmentplatformlogs.html">AppServiceEnvironmentPlatformLogs</a></td>
@@ -1953,21 +1932,21 @@
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/appservicehttplogs.html">2</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Analytics</td>
+  <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/appserviceipsecauditlogs.html">AppServiceIPSecAuditLogs</a></td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/appserviceplatformlogs.html">AppServicePlatformLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/appserviceserverlesssecurityplugindata.html">AppServiceServerlessSecurityPluginData</a> 📖</td>
@@ -2140,9 +2119,9 @@
 <tr>
   <td><a href="tables/asimnetworksessionlogs.html">ASimNetworkSessionLogs</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/asimnetworksessionlogs.html">6</a></td>
+  <td style="text-align:center"><a href="tables/asimnetworksessionlogs.html">7</a></td>
   <td style="text-align:center"><a href="tables/asimnetworksessionlogs.html">5</a></td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/asimprocesseventlogs.html">ASimProcessEventLogs</a> 📖</td>
@@ -2294,7 +2273,7 @@
 <tr>
   <td><a href="tables/auditlogs.html">AuditLogs</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/auditlogs.html">20</a></td>
+  <td style="text-align:center"><a href="tables/auditlogs.html">22</a></td>
   <td style="text-align:center"><a href="tables/auditlogs.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -2317,7 +2296,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/auth0logs-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/auth0logs-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/authomize-v2-cl.html">Authomize_v2_CL</a> 📖 🔶</td>
@@ -2461,9 +2440,9 @@
 </tr>
 <tr>
   <td><a href="tables/awsalbaccesslogs-cl.html">AWSALBAccessLogs_CL</a> 📖</td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/awsalbaccesslogs-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/awsalbaccesslogs-cl.html">1</a></td>
+  <td style="text-align:left">Schema</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -2490,7 +2469,7 @@
 <tr>
   <td><a href="tables/awscloudtrail.html">AWSCloudTrail</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/awscloudtrail.html">13</a></td>
+  <td style="text-align:center"><a href="tables/awscloudtrail.html">14</a></td>
   <td style="text-align:center"><a href="tables/awscloudtrail.html">2</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -2499,6 +2478,13 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/awscloudwatch.html">1</a></td>
   <td style="text-align:center"><a href="tables/awscloudwatch.html">1</a></td>
+  <td style="text-align:left">Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/awsconfig-cl.html">AWSConfig_CL</a> 📖</td>
+  <td style="text-align:left">Schema</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -2524,16 +2510,23 @@
 </tr>
 <tr>
   <td><a href="tables/awselbflowlogs.html">AWSELBFlowLogs</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/awselbflowlogs.html">1</a></td>
-  <td style="text-align:center"><a href="tables/awselbflowlogs.html">1</a></td>
+  <td style="text-align:left">Docs</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td><a href="tables/awselbflowlogs-cl.html">AWSELBFlowLogs_CL</a> 📖</td>
+  <td style="text-align:left">Schema</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/awsglbflowlogsstream.html">AWSGLBFlowLogsStream</a></td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/awselbflowlogs-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/awselbflowlogs-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/awsglbflowlogsstream.html">1</a></td>
+  <td style="text-align:center"><a href="tables/awsglbflowlogsstream.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -2594,9 +2587,16 @@
 </tr>
 <tr>
   <td><a href="tables/awsnlbaccesslogs-cl.html">AWSNLBAccessLogs_CL</a> 📖</td>
+  <td style="text-align:left">Schema</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/awsnlbflowlogsstream.html">AWSNLBFlowLogsStream</a></td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/awsnlbaccesslogs-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/awsnlbaccesslogs-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/awsnlbflowlogsstream.html">1</a></td>
+  <td style="text-align:center"><a href="tables/awsnlbflowlogsstream.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -2637,7 +2637,7 @@
 <tr>
   <td><a href="tables/azfwapplicationrule.html">AZFWApplicationRule</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/azfwapplicationrule.html">2</a></td>
+  <td style="text-align:center"><a href="tables/azfwapplicationrule.html">3</a></td>
   <td style="text-align:center"><a href="tables/azfwapplicationrule.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -2658,9 +2658,9 @@
 <tr>
   <td><a href="tables/azfwdnsquery.html">AZFWDnsQuery</a> 📖</td>
   <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/azfwdnsquery.html">2</a></td>
   <td style="text-align:center"><a href="tables/azfwdnsquery.html">1</a></td>
-  <td style="text-align:center"><a href="tables/azfwdnsquery.html">1</a></td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/azfwfatflow.html">AZFWFatFlow</a> 📖</td>
@@ -2707,7 +2707,7 @@
 <tr>
   <td><a href="tables/azfwnetworkrule.html">AZFWNetworkRule</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/azfwnetworkrule.html">2</a></td>
+  <td style="text-align:center"><a href="tables/azfwnetworkrule.html">3</a></td>
   <td style="text-align:center"><a href="tables/azfwnetworkrule.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -2819,7 +2819,7 @@
 <tr>
   <td><a href="tables/azureactivity.html">AzureActivity</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/azureactivity.html">19</a></td>
+  <td style="text-align:center"><a href="tables/azureactivity.html">20</a></td>
   <td style="text-align:center"><a href="tables/azureactivity.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Playbooks, Workbooks</td>
 </tr>
@@ -2854,7 +2854,7 @@
 <tr>
   <td><a href="tables/azurediagnostics.html">AzureDiagnostics</a> 📖 🔶</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/azurediagnostics.html">34</a></td>
+  <td style="text-align:center"><a href="tables/azurediagnostics.html">35</a></td>
   <td style="text-align:center"><a href="tables/azurediagnostics.html">14</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -2896,9 +2896,9 @@
 <tr>
   <td><a href="tables/azurenetworkanalytics-cl.html">AzureNetworkAnalytics_CL</a> 📖 ➕ 🔶</td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/azurenetworkanalytics-cl.html">4</a></td>
+  <td style="text-align:center"><a href="tables/azurenetworkanalytics-cl.html">5</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Analytics, Hunting</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/azuresqlautomatictuning.html">AzureSQLAutomaticTuning</a> 📖</td>
@@ -2994,7 +2994,7 @@
 <tr>
   <td><a href="tables/behavioranalytics.html">BehaviorAnalytics</a> 📖</td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/behavioranalytics.html">12</a></td>
+  <td style="text-align:center"><a href="tables/behavioranalytics.html">14</a></td>
   <td style="text-align:center">-</td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -3170,7 +3170,7 @@
   <td><a href="tables/bitsightbreaches-data-cl.html">BitsightBreaches_data_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitsightbreaches-data-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/bitsightbreaches-data-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/bitsightbreaches-data-cl.html">1</a></td>
   <td style="text-align:left">Analytics</td>
 </tr>
 <tr>
@@ -3205,14 +3205,14 @@
   <td><a href="tables/bitsightdiligence-historical-statistics-cl.html">BitsightDiligence_historical_statistics_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitsightdiligence-historical-statistics-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/bitsightdiligence-historical-statistics-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/bitsightdiligence-historical-statistics-cl.html">1</a></td>
   <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/bitsightdiligence-statistics-cl.html">BitsightDiligence_statistics_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitsightdiligence-statistics-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/bitsightdiligence-statistics-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/bitsightdiligence-statistics-cl.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -3227,13 +3227,6 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitsightdiligencestatistics-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/bitsightdiligencestatistics-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
-  <td><a href="tables/bitsightfindings.html">BitSightFindings</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/bitsightfindings.html">1</a></td>
-  <td style="text-align:center"><a href="tables/bitsightfindings.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -3254,7 +3247,7 @@
   <td><a href="tables/bitsightfindings-summary-cl.html">BitsightFindings_summary_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitsightfindings-summary-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/bitsightfindings-summary-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/bitsightfindings-summary-cl.html">1</a></td>
   <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
@@ -3275,7 +3268,7 @@
   <td><a href="tables/bitsightindustrial-statistics-cl.html">BitsightIndustrial_statistics_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitsightindustrial-statistics-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/bitsightindustrial-statistics-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/bitsightindustrial-statistics-cl.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -3289,7 +3282,7 @@
   <td><a href="tables/bitsightobservation-statistics-cl.html">BitsightObservation_statistics_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitsightobservation-statistics-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/bitsightobservation-statistics-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/bitsightobservation-statistics-cl.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -3322,23 +3315,23 @@
 </tr>
 <tr>
   <td><a href="tables/bitwardeneventlogs-cl.html">BitwardenEventLogs_CL</a> 📖</td>
-  <td style="text-align:left">Content</td>
+  <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitwardeneventlogs-cl.html">1</a></td>
-  <td style="text-align:center">-</td>
+  <td style="text-align:center"><a href="tables/bitwardeneventlogs-cl.html">1</a></td>
   <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/bitwardengroups-cl.html">BitwardenGroups_CL</a> 📖</td>
-  <td style="text-align:left">Content</td>
+  <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitwardengroups-cl.html">1</a></td>
-  <td style="text-align:center">-</td>
+  <td style="text-align:center"><a href="tables/bitwardengroups-cl.html">1</a></td>
   <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/bitwardenmembers-cl.html">BitwardenMembers_CL</a> 📖</td>
-  <td style="text-align:left">Content</td>
+  <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/bitwardenmembers-cl.html">1</a></td>
-  <td style="text-align:center">-</td>
+  <td style="text-align:center"><a href="tables/bitwardenmembers-cl.html">1</a></td>
   <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
@@ -4100,7 +4093,7 @@
 <tr>
   <td><a href="tables/cloudappevents.html">CloudAppEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/cloudappevents.html">4</a></td>
+  <td style="text-align:center"><a href="tables/cloudappevents.html">5</a></td>
   <td style="text-align:center"><a href="tables/cloudappevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -4191,9 +4184,9 @@
 <tr>
   <td><a href="tables/commonsecuritylog.html">CommonSecurityLog</a> 📖 ➕</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/commonsecuritylog.html">80</a></td>
+  <td style="text-align:center"><a href="tables/commonsecuritylog.html">81</a></td>
   <td style="text-align:center"><a href="tables/commonsecuritylog.html">113</a></td>
-  <td style="text-align:left">Analytics, Hunting, Playbooks, Workbooks</td>
+  <td style="text-align:left">Analytics (2), Hunting, Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/communication-data-cl.html">Communication_Data_CL</a> 📖 🔶</td>
@@ -4337,17 +4330,17 @@
 </tr>
 <tr>
   <td><a href="tables/containerregistryloginevents.html">ContainerRegistryLoginEvents</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/containerregistryrepositoryevents.html">ContainerRegistryRepositoryEvents</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/containerservicelog.html">ContainerServiceLog</a> 📖</td>
@@ -5526,6 +5519,13 @@
   <td style="text-align:left">Analytics</td>
 </tr>
 <tr>
+  <td><a href="tables/cyberark-epmevents-cl.html">CyberArk_EPMEvents_CL</a></td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/cyberark-epmevents-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/cyberark-epmevents-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
   <td><a href="tables/cyberarkepm-cl.html">CyberArkEPM_CL</a> 📖</td>
   <td style="text-align:left">Schema</td>
   <td style="text-align:center">-</td>
@@ -5923,6 +5923,48 @@
   <td style="text-align:center"><a href="tables/darktrace-model-alerts-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/darktrace-model-alerts-cl.html">1</a></td>
   <td style="text-align:left">Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/darktraceasm-cl.html">DarktraceASM_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/darktraceasm-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/darktraceasm-cl.html">1</a></td>
+  <td style="text-align:left">Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/darktraceemail-cl.html">DarktraceEMAIL_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/darktraceemail-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/darktraceemail-cl.html">1</a></td>
+  <td style="text-align:left">Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/darktraceincidents-cl.html">DarktraceIncidents_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/darktraceincidents-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/darktraceincidents-cl.html">1</a></td>
+  <td style="text-align:left">Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/darktracemodelalerts-cl.html">DarktraceModelAlerts_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/darktracemodelalerts-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/darktracemodelalerts-cl.html">1</a></td>
+  <td style="text-align:left">Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/darktraceresponseactions-cl.html">DarktraceResponseActions_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/darktraceresponseactions-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/darktraceresponseactions-cl.html">1</a></td>
+  <td style="text-align:left">Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/darktracesystemstatusalerts-cl.html">DarktraceSystemStatusAlerts_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/darktracesystemstatusalerts-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/darktracesystemstatusalerts-cl.html">1</a></td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/databahn-alerts-cl.html">databahn_alerts_CL</a> 📖</td>
@@ -6493,10 +6535,10 @@
 </tr>
 <tr>
   <td><a href="tables/devicebaselinecomplianceassessment.html">DeviceBaselineComplianceAssessment</a></td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center"><a href="tables/devicebaselinecomplianceassessment.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/devicebaselinecomplianceassessmentkb.html">DeviceBaselineComplianceAssessmentKB</a></td>
@@ -6599,21 +6641,21 @@
 <tr>
   <td><a href="tables/deviceevents.html">DeviceEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/deviceevents.html">9</a></td>
+  <td style="text-align:center"><a href="tables/deviceevents.html">10</a></td>
   <td style="text-align:center"><a href="tables/deviceevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/devicefilecertificateinfo.html">DeviceFileCertificateInfo</a> 📖</td>
   <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/devicefilecertificateinfo.html">2</a></td>
   <td style="text-align:center"><a href="tables/devicefilecertificateinfo.html">1</a></td>
-  <td style="text-align:center"><a href="tables/devicefilecertificateinfo.html">1</a></td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/devicefileevents.html">DeviceFileEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/devicefileevents.html">15</a></td>
+  <td style="text-align:center"><a href="tables/devicefileevents.html">16</a></td>
   <td style="text-align:center"><a href="tables/devicefileevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -6641,49 +6683,49 @@
 <tr>
   <td><a href="tables/deviceimageloadevents.html">DeviceImageLoadEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/deviceimageloadevents.html">2</a></td>
+  <td style="text-align:center"><a href="tables/deviceimageloadevents.html">3</a></td>
   <td style="text-align:center"><a href="tables/deviceimageloadevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/deviceinfo.html">DeviceInfo</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/deviceinfo.html">5</a></td>
+  <td style="text-align:center"><a href="tables/deviceinfo.html">6</a></td>
   <td style="text-align:center"><a href="tables/deviceinfo.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/devicelogonevents.html">DeviceLogonEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/devicelogonevents.html">4</a></td>
+  <td style="text-align:center"><a href="tables/devicelogonevents.html">5</a></td>
   <td style="text-align:center"><a href="tables/devicelogonevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/devicenetworkevents.html">DeviceNetworkEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/devicenetworkevents.html">12</a></td>
+  <td style="text-align:center"><a href="tables/devicenetworkevents.html">13</a></td>
   <td style="text-align:center"><a href="tables/devicenetworkevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/devicenetworkinfo.html">DeviceNetworkInfo</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/devicenetworkinfo.html">2</a></td>
+  <td style="text-align:center"><a href="tables/devicenetworkinfo.html">3</a></td>
   <td style="text-align:center"><a href="tables/devicenetworkinfo.html">1</a></td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/deviceprocessevents.html">DeviceProcessEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/deviceprocessevents.html">12</a></td>
+  <td style="text-align:center"><a href="tables/deviceprocessevents.html">13</a></td>
   <td style="text-align:center"><a href="tables/deviceprocessevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/deviceregistryevents.html">DeviceRegistryEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/deviceregistryevents.html">3</a></td>
+  <td style="text-align:center"><a href="tables/deviceregistryevents.html">4</a></td>
   <td style="text-align:center"><a href="tables/deviceregistryevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -6731,10 +6773,10 @@
 </tr>
 <tr>
   <td><a href="tables/devicetvminfogathering.html">DeviceTvmInfoGathering</a></td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/devicetvminfogatheringkb.html">DeviceTvmInfoGatheringKB</a></td>
@@ -6745,10 +6787,10 @@
 </tr>
 <tr>
   <td><a href="tables/devicetvmsecureconfigurationassessment.html">DeviceTvmSecureConfigurationAssessment</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center"><a href="tables/devicetvmsecureconfigurationassessment.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/devicetvmsecureconfigurationassessmentkb.html">DeviceTvmSecureConfigurationAssessmentKB</a> 📖</td>
@@ -6766,17 +6808,17 @@
 </tr>
 <tr>
   <td><a href="tables/devicetvmsoftwareinventory.html">DeviceTvmSoftwareInventory</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center"><a href="tables/devicetvmsoftwareinventory.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/devicetvmsoftwarevulnerabilities.html">DeviceTvmSoftwareVulnerabilities</a> 📖</td>
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/devicetvmsoftwarevulnerabilities.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Analytics</td>
+  <td style="text-align:left">Analytics, Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/devicetvmsoftwarevulnerabilitieskb.html">DeviceTvmSoftwareVulnerabilitiesKB</a> 📖</td>
@@ -6900,7 +6942,7 @@
 <tr>
   <td><a href="tables/dnsevents.html">DnsEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/dnsevents.html">14</a></td>
+  <td style="text-align:center"><a href="tables/dnsevents.html">15</a></td>
   <td style="text-align:center"><a href="tables/dnsevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -7081,17 +7123,17 @@
 </tr>
 <tr>
   <td><a href="tables/dsmdataclassificationlogs.html">DSMDataClassificationLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/dsmdatalabelinglogs.html">DSMDataLabelingLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/dummyhydrationfact.html">DummyHydrationFact</a></td>
@@ -7108,11 +7150,18 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
+  <td><a href="tables/duosecurityadministrator-cl.html">DuoSecurityAdministrator_CL</a></td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:left">Workbooks</td>
+</tr>
+<tr>
   <td><a href="tables/duosecurityauthentication-cl.html">DuoSecurityAuthentication_CL</a> 📖 🔶</td>
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/duosecurityauthentication-cl.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Analytics</td>
+  <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/duosecurityofflineenrollment-cl.html">DuoSecurityOfflineEnrollment_CL</a> 📖</td>
@@ -7122,18 +7171,18 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td><a href="tables/duosecuritytelephony-cl.html">DuoSecurityTelephony_CL</a> 📖</td>
-  <td style="text-align:left">Schema</td>
+  <td><a href="tables/duosecuritytelephony-cl.html">DuoSecurityTelephony_CL</a> 📖 🔶</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
-  <td><a href="tables/duosecuritytrustmonitor-cl.html">DuoSecurityTrustMonitor_CL</a> 📖</td>
-  <td style="text-align:left">Schema</td>
+  <td><a href="tables/duosecuritytrustmonitor-cl.html">DuoSecurityTrustMonitor_CL</a> 📖 🔶</td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center"><a href="tables/duosecuritytrustmonitor-cl.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Analytics</td>
 </tr>
 <tr>
   <td><a href="tables/durabletaskschedulerlogs.html">DurableTaskSchedulerLogs</a> 📖</td>
@@ -7334,7 +7383,7 @@
 <tr>
   <td><a href="tables/emailevents.html">EmailEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/emailevents.html">10</a></td>
+  <td style="text-align:center"><a href="tables/emailevents.html">11</a></td>
   <td style="text-align:center"><a href="tables/emailevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -7348,7 +7397,7 @@
 <tr>
   <td><a href="tables/emailurlinfo.html">EmailUrlInfo</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/emailurlinfo.html">7</a></td>
+  <td style="text-align:center"><a href="tables/emailurlinfo.html">8</a></td>
   <td style="text-align:center"><a href="tables/emailurlinfo.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -7375,17 +7424,17 @@
 </tr>
 <tr>
   <td><a href="tables/entraidsigninevents.html">EntraIdSignInEvents</a></td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/entraidspnsigninevents.html">EntraIdSpnSignInEvents</a></td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/ermesbrowsersecurityevents-cl.html">ErmesBrowserSecurityEvents_CL</a></td>
@@ -7432,16 +7481,9 @@
 <tr>
   <td><a href="tables/event.html">Event</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/event.html">17</a></td>
+  <td style="text-align:center"><a href="tables/event.html">18</a></td>
   <td style="text-align:center"><a href="tables/event.html">4</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
-</tr>
-<tr>
-  <td><a href="tables/eventlogs.html">EventLogs</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/eventlogs.html">1</a></td>
-  <td style="text-align:center"><a href="tables/eventlogs.html">1</a></td>
-  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td><a href="tables/eventsapplicationdata-cl.html">eventsapplicationdata_CL</a> 📖 🔶</td>
@@ -7729,13 +7771,6 @@
   <td style="text-align:center"><a href="tables/forescoutpolicystatus-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/forescoutpolicystatus-cl.html">1</a></td>
   <td style="text-align:left">Workbooks</td>
-</tr>
-<tr>
-  <td><a href="tables/fortytwocrunchapiprotectionv2.html">FortyTwoCrunchAPIProtectionV2</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/fortytwocrunchapiprotectionv2.html">1</a></td>
-  <td style="text-align:center"><a href="tables/fortytwocrunchapiprotectionv2.html">1</a></td>
-  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td><a href="tables/fortytwocrunchapiprotectionv2-cl.html">FortyTwoCrunchAPIProtectionV2_CL</a> 📖</td>
@@ -8120,7 +8155,7 @@
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/github-cl.html">2</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Analytics</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/githubadvancedsecurityalerts-cl.html">GitHubAdvancedSecurityAlerts_CL</a> 📖 🔶</td>
@@ -8146,9 +8181,9 @@
 <tr>
   <td><a href="tables/githubrepologs-cl.html">GitHubRepoLogs_CL</a></td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/githubrepologs-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/githubrepologs-cl.html">2</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Analytics</td>
+  <td style="text-align:left">Analytics, Hunting</td>
 </tr>
 <tr>
   <td><a href="tables/githubscanaudit-cl.html">githubscanaudit_CL</a> 📖</td>
@@ -8254,13 +8289,6 @@
   <td style="text-align:center"><a href="tables/greynoiseipriot-cl.html">1</a></td>
   <td style="text-align:center">-</td>
   <td style="text-align:left">Playbooks</td>
-</tr>
-<tr>
-  <td><a href="tables/groups.html">Groups</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/groups.html">1</a></td>
-  <td style="text-align:center"><a href="tables/groups.html">1</a></td>
-  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td><a href="tables/guardian-cl.html">Guardian_CL</a> 📖 🔶</td>
@@ -8492,13 +8520,6 @@
   <td style="text-align:center"><a href="tables/hackerviewlog-azurev2-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/hackerviewlog-azurev2-cl.html">1</a></td>
   <td style="text-align:left">Analytics</td>
-</tr>
-<tr>
-  <td><a href="tables/halcyon-events.html">Halcyon Events</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/halcyon-events.html">1</a></td>
-  <td style="text-align:center"><a href="tables/halcyon-events.html">1</a></td>
-  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td><a href="tables/halcyonevents-cl.html">HalcyonEvents_CL</a> 📖</td>
@@ -8741,7 +8762,7 @@
 <tr>
   <td><a href="tables/heartbeat.html">Heartbeat</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/heartbeat.html">10</a></td>
+  <td style="text-align:center"><a href="tables/heartbeat.html">11</a></td>
   <td style="text-align:center"><a href="tables/heartbeat.html">1</a></td>
   <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
@@ -8753,11 +8774,11 @@
   <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
-  <td><a href="tables/http-proxy-oab-cl.html">http_proxy_oab_CL</a> 📖</td>
-  <td style="text-align:left">Schema</td>
+  <td><a href="tables/http-proxy-oab-cl.html">http_proxy_oab_CL</a> 📖 🔶</td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center"><a href="tables/http-proxy-oab-cl.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Analytics</td>
 </tr>
 <tr>
   <td><a href="tables/huntingbookmark.html">HuntingBookmark</a> 📖</td>
@@ -8804,7 +8825,7 @@
 <tr>
   <td><a href="tables/identitydirectoryevents.html">IdentityDirectoryEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/identitydirectoryevents.html">2</a></td>
+  <td style="text-align:center"><a href="tables/identitydirectoryevents.html">3</a></td>
   <td style="text-align:center"><a href="tables/identitydirectoryevents.html">1</a></td>
   <td style="text-align:left">Hunting, Workbooks</td>
 </tr>
@@ -8818,14 +8839,14 @@
 <tr>
   <td><a href="tables/identityinfo.html">IdentityInfo</a></td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/identityinfo.html">17</a></td>
+  <td style="text-align:center"><a href="tables/identityinfo.html">19</a></td>
   <td style="text-align:center">-</td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/identitylogonevents.html">IdentityLogonEvents</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/identitylogonevents.html">1</a></td>
+  <td style="text-align:center"><a href="tables/identitylogonevents.html">2</a></td>
   <td style="text-align:center"><a href="tables/identitylogonevents.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -8834,7 +8855,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/identityqueryevents.html">1</a></td>
   <td style="text-align:center"><a href="tables/identityqueryevents.html">1</a></td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/illumio-auditable-events-cl.html">Illumio_Auditable_Events_CL</a> 📖</td>
@@ -8865,13 +8886,6 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td><a href="tables/illumioinsights-cl.html">IllumioInsights_CL</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/illumioinsights-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/illumioinsights-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
   <td><a href="tables/illumioinsightsgraph-cl.html">IllumioInsightsGraph_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/illumioinsightsgraph-cl.html">1</a></td>
@@ -8887,9 +8901,9 @@
 </tr>
 <tr>
   <td><a href="tables/ilumioinsights.html">IlumioInsights</a> 📖</td>
-  <td style="text-align:left">Docs</td>
-  <td style="text-align:center">-</td>
-  <td style="text-align:center">-</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/ilumioinsights.html">1</a></td>
+  <td style="text-align:center"><a href="tables/ilumioinsights.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -8911,6 +8925,13 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/impervawafcloudv2-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/impervawafcloudv2-cl.html">2</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/impervawafcloudv2logs.html">ImpervaWAFCloudV2Logs</a></td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/impervawafcloudv2logs.html">1</a></td>
+  <td style="text-align:center"><a href="tables/impervawafcloudv2logs.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -9034,10 +9055,10 @@
 </tr>
 <tr>
   <td><a href="tables/intunedevicecomplianceorg.html">IntuneDeviceComplianceOrg</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/intunedevices.html">IntuneDevices</a> 📖</td>
@@ -9434,9 +9455,9 @@
 <tr>
   <td><a href="tables/laquerylogs.html">LAQueryLogs</a> 📖</td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/laquerylogs.html">3</a></td>
+  <td style="text-align:center"><a href="tables/laquerylogs.html">4</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/lastpassnativepoller-cl.html">LastPassNativePoller_CL</a> 📖 🔶</td>
@@ -9447,10 +9468,10 @@
 </tr>
 <tr>
   <td><a href="tables/lasummarylogs.html">LASummaryLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/ledgertransactionlogs.html">LedgerTransactionLogs</a> 📖</td>
@@ -9978,13 +9999,6 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td><a href="tables/members.html">Members</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/members.html">1</a></td>
-  <td style="text-align:center"><a href="tables/members.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
   <td><a href="tables/meraki-cl.html">meraki_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/meraki-cl.html">2</a></td>
@@ -9996,14 +10010,14 @@
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/merakiconfigurationchanges-cl.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/merakisecurityevents-cl.html">MerakiSecurityEvents_CL</a></td>
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/merakisecurityevents-cl.html">1</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Playbooks</td>
+  <td style="text-align:left">Playbooks, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/meshcontrolplane.html">MeshControlPlane</a> 📖</td>
@@ -10056,10 +10070,10 @@
 </tr>
 <tr>
   <td><a href="tables/microsoftazurebastionauditlogs.html">MicrosoftAzureBastionAuditLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/microsoftdatasharereceivedsnapshotlog.html">MicrosoftDataShareReceivedSnapshotLog</a> 📖</td>
@@ -10077,10 +10091,10 @@
 </tr>
 <tr>
   <td><a href="tables/microsoftgraphactivitylogs.html">MicrosoftGraphActivityLogs</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/microsoftgraphpolicylogs.html">MicrosoftGraphPolicyLogs</a> 📖</td>
@@ -10234,13 +10248,6 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/mulesoftcloudhubalerts-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/mulesoftcloudhubalerts-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
-  <td><a href="tables/mulesoftcloudhublogs.html">MuleSoftCloudhubLogs</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/mulesoftcloudhublogs.html">1</a></td>
-  <td style="text-align:center"><a href="tables/mulesoftcloudhublogs.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -10412,6 +10419,13 @@
   <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
+  <td><a href="tables/netflow-cl.html">netflow_CL</a></td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:left">Workbooks</td>
+</tr>
+<tr>
   <td><a href="tables/netskope-alerts-cl.html">Netskope_Alerts_CL</a> 📖 🔶</td>
   <td style="text-align:left">Content</td>
   <td style="text-align:center"><a href="tables/netskope-alerts-cl.html">2</a></td>
@@ -10423,7 +10437,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/netskope-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/netskope-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/netskope-events-cl.html">Netskope_Events_CL</a> 📖 🔶</td>
@@ -10967,7 +10981,7 @@
 <tr>
   <td><a href="tables/officeactivity.html">OfficeActivity</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/officeactivity.html">25</a></td>
+  <td style="text-align:center"><a href="tables/officeactivity.html">26</a></td>
   <td style="text-align:center"><a href="tables/officeactivity.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -11042,6 +11056,34 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
+  <td><a href="tables/oneactivities-cl.html">OneActivities_CL</a></td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/oneactivities-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/oneactivities-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/oneagents-cl.html">OneAgents_CL</a></td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/oneagents-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/oneagents-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/onealerts-cl.html">OneAlerts_CL</a></td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/onealerts-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/onealerts-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/onegroups-cl.html">OneGroups_CL</a></td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/onegroups-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/onegroups-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
   <td><a href="tables/onelogin-cl.html">OneLogin_CL</a> 📖 🔶</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/onelogin-cl.html">1</a></td>
@@ -11070,6 +11112,13 @@
   <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
+  <td><a href="tables/onethreats-cl.html">OneThreats_CL</a></td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/onethreats-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/onethreats-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
   <td><a href="tables/onetrustmetadatav3-cl.html">OneTrustMetadataV3_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/onetrustmetadatav3-cl.html">1</a></td>
@@ -11085,9 +11134,9 @@
 </tr>
 <tr>
   <td><a href="tables/openaiauditlogs.html">OpenAIAuditLogs</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/openaiauditlogs.html">1</a></td>
-  <td style="text-align:center"><a href="tables/openaiauditlogs.html">1</a></td>
+  <td style="text-align:left">Docs</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -11128,9 +11177,9 @@
 <tr>
   <td><a href="tables/operation.html">Operation</a> 📖</td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/operation.html">11</a></td>
+  <td style="text-align:center"><a href="tables/operation.html">12</a></td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/oracleclouddatabase.html">OracleCloudDatabase</a> 📖</td>
@@ -11550,7 +11599,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/proofpointtapclicksblocked-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/proofpointtapclicksblocked-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/proofpointtapclicksblockedv2-cl.html">ProofPointTAPClicksBlockedV2_CL</a> 📖</td>
@@ -11564,7 +11613,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/proofpointtapclickspermitted-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/proofpointtapclickspermitted-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/proofpointtapclickspermittedv2-cl.html">ProofPointTAPClicksPermittedV2_CL</a> 📖</td>
@@ -11578,7 +11627,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/proofpointtapmessagesblocked-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/proofpointtapmessagesblocked-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/proofpointtapmessagesblockedv2-cl.html">ProofPointTAPMessagesBlockedV2_CL</a> 📖</td>
@@ -11592,7 +11641,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/proofpointtapmessagesdelivered-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/proofpointtapmessagesdelivered-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/proofpointtapmessagesdeliveredv2-cl.html">ProofPointTAPMessagesDeliveredV2_CL</a> 📖</td>
@@ -12171,7 +12220,7 @@
 <tr>
   <td><a href="tables/securityevent.html">SecurityEvent</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/securityevent.html">29</a></td>
+  <td style="text-align:center"><a href="tables/securityevent.html">30</a></td>
   <td style="text-align:center"><a href="tables/securityevent.html">6</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -12192,7 +12241,7 @@
 <tr>
   <td><a href="tables/securitynestedrecommendation.html">SecurityNestedRecommendation</a></td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/securitynestedrecommendation.html">3</a></td>
+  <td style="text-align:center"><a href="tables/securitynestedrecommendation.html">4</a></td>
   <td style="text-align:center">-</td>
   <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
@@ -12305,7 +12354,7 @@
   <td><a href="tables/sentinelimpervawafcloudv2logs.html">SentinelImpervaWAFCloudV2Logs</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/sentinelimpervawafcloudv2logs.html">1</a></td>
-  <td style="text-align:center"><a href="tables/sentinelimpervawafcloudv2logs.html">2</a></td>
+  <td style="text-align:center"><a href="tables/sentinelimpervawafcloudv2logs.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -12319,35 +12368,35 @@
   <td><a href="tables/sentineloneactivities-cl.html">SentinelOneActivities_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/sentineloneactivities-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/sentineloneactivities-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/sentineloneactivities-cl.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/sentineloneagents-cl.html">SentinelOneAgents_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/sentineloneagents-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/sentineloneagents-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/sentineloneagents-cl.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/sentinelonealerts-cl.html">SentinelOneAlerts_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/sentinelonealerts-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/sentinelonealerts-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/sentinelonealerts-cl.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/sentinelonegroups-cl.html">SentinelOneGroups_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/sentinelonegroups-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/sentinelonegroups-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/sentinelonegroups-cl.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/sentinelonethreats-cl.html">SentinelOneThreats_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/sentinelonethreats-cl.html">1</a></td>
-  <td style="text-align:center"><a href="tables/sentinelonethreats-cl.html">2</a></td>
+  <td style="text-align:center"><a href="tables/sentinelonethreats-cl.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
@@ -12444,7 +12493,7 @@
 <tr>
   <td><a href="tables/signinlogs.html">SigninLogs</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/signinlogs.html">34</a></td>
+  <td style="text-align:center"><a href="tables/signinlogs.html">36</a></td>
   <td style="text-align:center"><a href="tables/signinlogs.html">1</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -12705,7 +12754,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/storagebloblogs.html">5</a></td>
   <td style="text-align:center"><a href="tables/storagebloblogs.html">1</a></td>
-  <td style="text-align:left">Analytics, Workbooks</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/storagecacheoperationevents.html">StorageCacheOperationEvents</a> 📖</td>
@@ -12733,7 +12782,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/storagefilelogs.html">3</a></td>
   <td style="text-align:center"><a href="tables/storagefilelogs.html">1</a></td>
-  <td style="text-align:left">Analytics, Workbooks</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/storageinsightsaccountpropertiesdaily.html">StorageInsightsAccountPropertiesDaily</a></td>
@@ -13081,7 +13130,7 @@
 <tr>
   <td><a href="tables/syslog.html">Syslog</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/syslog.html">54</a></td>
+  <td style="text-align:center"><a href="tables/syslog.html">55</a></td>
   <td style="text-align:center"><a href="tables/syslog.html">37</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -13193,16 +13242,16 @@
 <tr>
   <td><a href="tables/tenable-ad-cl.html">Tenable_ad_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/tenable-ad-cl.html">3</a></td>
-  <td style="text-align:center"><a href="tables/tenable-ad-cl.html">3</a></td>
-  <td style="text-align:left">Analytics, Workbooks</td>
+  <td style="text-align:center"><a href="tables/tenable-ad-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/tenable-ad-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td><a href="tables/tenable-ie-cl.html">Tenable_IE_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/tenable-ie-cl.html">3</a></td>
-  <td style="text-align:center"><a href="tables/tenable-ie-cl.html">3</a></td>
-  <td style="text-align:left">Analytics, Workbooks</td>
+  <td style="text-align:center"><a href="tables/tenable-ie-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/tenable-ie-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
 </tr>
 <tr>
   <td><a href="tables/tenable-io-assets-cl.html">Tenable_IO_Assets_CL</a> 📖 🔶</td>
@@ -13262,9 +13311,9 @@
 </tr>
 <tr>
   <td><a href="tables/thehivedata.html">TheHiveData</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/thehivedata.html">1</a></td>
-  <td style="text-align:center"><a href="tables/thehivedata.html">1</a></td>
+  <td style="text-align:left">Docs</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -13299,21 +13348,21 @@
   <td><a href="tables/threatintelindicators.html">ThreatIntelIndicators</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/threatintelindicators.html">21</a></td>
-  <td style="text-align:center"><a href="tables/threatintelindicators.html">15</a></td>
+  <td style="text-align:center"><a href="tables/threatintelindicators.html">14</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/threatintelligenceindicator.html">ThreatIntelligenceIndicator</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/threatintelligenceindicator.html">23</a></td>
-  <td style="text-align:center"><a href="tables/threatintelligenceindicator.html">4</a></td>
+  <td style="text-align:center"><a href="tables/threatintelligenceindicator.html">5</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/threatintelobjects.html">ThreatIntelObjects</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/threatintelobjects.html">10</a></td>
-  <td style="text-align:center"><a href="tables/threatintelobjects.html">15</a></td>
+  <td style="text-align:center"><a href="tables/threatintelobjects.html">14</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -13409,17 +13458,24 @@
 </tr>
 <tr>
   <td><a href="tables/trendmicro-xdr-health-check-cl.html">TrendMicro_XDR_Health_Check_CL</a> 📖</td>
-  <td style="text-align:left">Schema</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/trendmicro-xdr-oat-cl.html">TrendMicro_XDR_OAT_CL</a> 📖 🔶</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/trendmicro-xdr-oat-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/trendmicro-xdr-oat-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
+</tr>
+<tr>
+  <td><a href="tables/trendmicro-xdr-oat-health-check-cl.html">TrendMicro_XDR_OAT_Health_Check_CL</a></td>
+  <td style="text-align:left">Content</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/trendmicro-xdr-rca-result-cl.html">TrendMicro_XDR_RCA_Result_CL</a> 📖 🔶</td>
@@ -13724,17 +13780,17 @@
 </tr>
 <tr>
   <td><a href="tables/useraccessanalytics.html">UserAccessAnalytics</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/userpeeranalytics.html">UserPeerAnalytics</a> 📖</td>
-  <td style="text-align:left">Docs</td>
+  <td style="text-align:left">Content</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/users-cl.html">Users_CL</a></td>
@@ -13965,7 +14021,7 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/veeamcovewarefindings-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/veeamcovewarefindings-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/veeammalwareevents-cl.html">VeeamMalwareEvents_CL</a> 📖</td>
@@ -14047,7 +14103,7 @@
 <tr>
   <td><a href="tables/vmconnection.html">VMConnection</a> 📖</td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/vmconnection.html">9</a></td>
+  <td style="text-align:center"><a href="tables/vmconnection.html">10</a></td>
   <td style="text-align:center">-</td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -14115,24 +14171,10 @@
   <td style="text-align:left">-</td>
 </tr>
 <tr>
-  <td><a href="tables/vmwareworkspaceonedeviceapps.html">VMwareWorkspaceOneDeviceApps</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/vmwareworkspaceonedeviceapps.html">1</a></td>
-  <td style="text-align:center"><a href="tables/vmwareworkspaceonedeviceapps.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
   <td><a href="tables/vmwareworkspaceonedeviceapps-cl.html">VMwareWorkspaceOneDeviceApps_CL</a> 📖</td>
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/vmwareworkspaceonedeviceapps-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/vmwareworkspaceonedeviceapps-cl.html">1</a></td>
-  <td style="text-align:left">-</td>
-</tr>
-<tr>
-  <td><a href="tables/vmwareworkspaceonedevices.html">VMwareWorkspaceOneDevices</a></td>
-  <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/vmwareworkspaceonedevices.html">1</a></td>
-  <td style="text-align:center"><a href="tables/vmwareworkspaceonedevices.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>
@@ -14194,7 +14236,7 @@
 <tr>
   <td><a href="tables/w3ciislog.html">W3CIISLog</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/w3ciislog.html">7</a></td>
+  <td style="text-align:center"><a href="tables/w3ciislog.html">8</a></td>
   <td style="text-align:center"><a href="tables/w3ciislog.html">2</a></td>
   <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
@@ -14320,16 +14362,16 @@
 <tr>
   <td><a href="tables/windowsevent.html">WindowsEvent</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/windowsevent.html">9</a></td>
+  <td style="text-align:center"><a href="tables/windowsevent.html">10</a></td>
   <td style="text-align:center"><a href="tables/windowsevent.html">1</a></td>
-  <td style="text-align:left">Analytics, Hunting</td>
+  <td style="text-align:left">Analytics, Hunting, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/windowsfirewall.html">WindowsFirewall</a> 📖</td>
   <td style="text-align:left">Connector</td>
-  <td style="text-align:center"><a href="tables/windowsfirewall.html">6</a></td>
+  <td style="text-align:center"><a href="tables/windowsfirewall.html">7</a></td>
   <td style="text-align:center"><a href="tables/windowsfirewall.html">1</a></td>
-  <td style="text-align:left">Workbooks</td>
+  <td style="text-align:left">Analytics, Workbooks</td>
 </tr>
 <tr>
   <td><a href="tables/windowsserverassessmentrecommendation.html">WindowsServerAssessmentRecommendation</a> 📖</td>
@@ -14341,7 +14383,7 @@
 <tr>
   <td><a href="tables/wiredata.html">WireData</a> 📖</td>
   <td style="text-align:left">Content</td>
-  <td style="text-align:center"><a href="tables/wiredata.html">2</a></td>
+  <td style="text-align:center"><a href="tables/wiredata.html">3</a></td>
   <td style="text-align:center">-</td>
   <td style="text-align:left">Hunting, Workbooks</td>
 </tr>
@@ -14847,6 +14889,20 @@
   <td style="text-align:left">Connector</td>
   <td style="text-align:center"><a href="tables/zerofoxvulnerabilities-cl.html">1</a></td>
   <td style="text-align:center"><a href="tables/zerofoxvulnerabilities-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/zimperiumincidentlog-cl.html">ZimperiumIncidentLog_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/zimperiumincidentlog-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/zimperiumincidentlog-cl.html">1</a></td>
+  <td style="text-align:left">-</td>
+</tr>
+<tr>
+  <td><a href="tables/zimperiumincidentmitigationlog-cl.html">ZimperiumIncidentMitigationLog_CL</a> 📖</td>
+  <td style="text-align:left">Connector</td>
+  <td style="text-align:center"><a href="tables/zimperiumincidentmitigationlog-cl.html">1</a></td>
+  <td style="text-align:center"><a href="tables/zimperiumincidentmitigationlog-cl.html">1</a></td>
   <td style="text-align:left">-</td>
 </tr>
 <tr>

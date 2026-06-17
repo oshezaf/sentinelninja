@@ -62,7 +62,7 @@ This table is used by the following solutions:
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [VMRay](../solutions/vmray.md)
 
-## Connectors (15)
+## Connectors (14)
 
 This table is ingested by the following connectors:
 
@@ -78,7 +78,6 @@ This table is ingested by the following connectors:
 | [Lumen Defender Threat Feed Data Connector V2 (using Azure Functions Flex Consumption Plan with Private Networking)](../connectors/lumenthreatfeedconnectorv2privatenetworking.md) |  |
 | [MISP2Sentinel](../connectors/misp2sentinelconnector.md) |  |
 | [Microsoft Defender Threat Intelligence](../connectors/microsoftdefenderthreatintelligence.md) |  |
-| [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) |  |
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) |  |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) |  |
 | [Threat Intelligence Upload API (Preview)](../connectors/threatintelligenceuploadindicatorsapi.md) |  |

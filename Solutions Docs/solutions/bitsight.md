@@ -47,7 +47,7 @@ This solution provides **3 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **23 table(s)**:
+This solution uses **22 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
@@ -57,22 +57,21 @@ This solution uses **23 table(s)**:
 | [`BitSightCompanyRatingDetails_CL`](../tables/bitsightcompanyratingdetails-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) | - |
 | [`BitSightDiligenceHistoricalStatistics_CL`](../tables/bitsightdiligencehistoricalstatistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) | Workbooks |
 | [`BitSightDiligenceStatistics_CL`](../tables/bitsightdiligencestatistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) | - |
-| [`BitSightFindings`](../tables/bitsightfindings.md) | [BitSight Security Events (via Codeless Connector Framework)](../connectors/bitsighteventsconnector.md) | - |
 | [`BitSightFindingsSummary_CL`](../tables/bitsightfindingssummary-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) | Workbooks |
 | [`BitSightFindings_CL`](../tables/bitsightfindings-cl.md) | [BitSight Security Events (via Codeless Connector Framework)](../connectors/bitsighteventsconnector.md) | Analytics, Workbooks |
 | [`BitSightObservationStatistics_CL`](../tables/bitsightobservationstatistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) | - |
 | [`BitsightAlerts_data_CL`](../tables/bitsightalerts-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics |
-| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | [BitSight Security Events (via Codeless Connector Framework)](../connectors/bitsighteventsconnector.md), [Bitsight data connector](../connectors/bitsight.md) | Analytics |
+| [`BitsightBreaches_data_CL`](../tables/bitsightbreaches-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics |
 | [`BitsightCompany_details_CL`](../tables/bitsightcompany-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
 | [`BitsightCompany_rating_details_CL`](../tables/bitsightcompany-rating-details-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md), [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
-| [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md), [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightDiligence_historical_statistics_CL`](../tables/bitsightdiligence-historical-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
+| [`BitsightDiligence_statistics_CL`](../tables/bitsightdiligence-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 | [`BitsightFindings_data_CL`](../tables/bitsightfindings-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics, Workbooks |
-| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md), [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
+| [`BitsightFindings_summary_CL`](../tables/bitsightfindings-summary-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Workbooks |
 | [`BitsightGraph_data_CL`](../tables/bitsightgraph-data-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | Analytics, Workbooks |
 | [`BitsightIndustrialStatistics_CL`](../tables/bitsightindustrialstatistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) | - |
-| [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md), [Bitsight data connector](../connectors/bitsight.md) | - |
-| [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md), [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightIndustrial_statistics_CL`](../tables/bitsightindustrial-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
+| [`BitsightObservation_statistics_CL`](../tables/bitsightobservation-statistics-cl.md) | [Bitsight data connector](../connectors/bitsight.md) | - |
 | [`BitsightVulnerabilitiesFindingsSummary_CL`](../tables/bitsightvulnerabilitiesfindingssummary-cl.md) | [BitSight Security Statistics (via Codeless Connector Framework)](../connectors/bitsightstatisticsconnector.md) | Workbooks |
 
 ## Content Items

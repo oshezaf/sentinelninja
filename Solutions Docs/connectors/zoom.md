@@ -1,4 +1,6 @@
-# Zoom Reports
+# 🚫 [DEPRECATED] Zoom Reports
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 <img src="https://raw.githubusercontent.com/Azure/Azure-Sentinel/master/Logos/Azure_Sentinel.svg" alt="" width="75" height="75">
 

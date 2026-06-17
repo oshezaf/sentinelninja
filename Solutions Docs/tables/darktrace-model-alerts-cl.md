@@ -118,7 +118,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Darktrace Connector for Microsoft Sentinel REST API](../connectors/darktracerestconnector.md) |  |
+| [Darktrace Connector for Microsoft Sentinel REST API (Legacy)](../connectors/darktracerestconnector.md) |  |
 
 ---
 
@@ -130,9 +130,9 @@ This table is ingested by the following connectors:
 
 | Analytic Rule | Selection Criteria |
 |:-------------|:-------------------|
-| [Darktrace AI Analyst](../content/darktrace-darktrace-ai-analyst-ffa2977f-3077-4bba-b1bf-f3417699cbb0-c8c73532.md) |  |
-| [Darktrace Model Breach](../content/darktrace-darktrace-model-breach-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-0057eb81.md) |  |
-| [Darktrace System Status](../content/darktrace-darktrace-system-status-2e629769-60eb-4a14-8bfc-bde9be66ebeb-cc05125a.md) |  |
+| [Darktrace AI Analyst (Legacy)](../content/darktrace-darktrace-ai-analyst-legacy-ffa2977f-3077-4bba-b1bf-f3417699cbb0-9433455e.md) |  |
+| [Darktrace Model Breach (Legacy)](../content/darktrace-darktrace-model-breach-legacy-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-2d80a016.md) |  |
+| [Darktrace System Status (Legacy)](../content/darktrace-darktrace-system-status-legacy-2e629769-60eb-4a14-8bfc-bde9be66ebeb-b842cc6c.md) |  |
 
 ### Workbooks (1)
 

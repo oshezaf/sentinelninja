@@ -16,6 +16,12 @@ Reference for AppServiceAuditLogs table in Azure Monitor Logs.
 | **Ingestion API Supported** | ✗ No |
 | **Azure Monitor Tables Reference** | [View Documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceauditlogs) |
 
+## Contents
+
+- [Schema](#schema)
+- [Content Items](#content-items-using-this-table)
+- [Resource Types](#resource-types)
+
 ## Schema (14 columns)
 
 **Source:** [Azure Monitor documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/reference/tables/appserviceauditlogs)
@@ -38,6 +44,16 @@ Reference for AppServiceAuditLogs table in Azure Monitor Logs.
 | UserDisplayName | string | Email address of a user in case publishing was authorized via AAD authentication |
 
 ---
+
+## Content Items Using This Table (1)
+
+### Workbooks (1)
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
 
 ## Resource Types
 

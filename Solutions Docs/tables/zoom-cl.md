@@ -81,7 +81,7 @@ This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Zoom Reports](../connectors/zoom.md) |  |
+| [[DEPRECATED] Zoom Reports](../connectors/zoom.md) |  |
 
 ---
 

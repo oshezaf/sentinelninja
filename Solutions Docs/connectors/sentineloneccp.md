@@ -28,11 +28,11 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
-| [`SentinelOneActivities_CL`](../tables/sentineloneactivities-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneAgents_CL`](../tables/sentineloneagents-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneAlerts_CL`](../tables/sentinelonealerts-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneGroups_CL`](../tables/sentinelonegroups-cl.md) | ✓ | ✓ | ✓ |
-| [`SentinelOneThreats_CL`](../tables/sentinelonethreats-cl.md) | ✓ | ✓ | ✓ |
+| [`OneActivities_CL`](../tables/oneactivities-cl.md) | ? | ✓ | ? |
+| [`OneAgents_CL`](../tables/oneagents-cl.md) | ? | ✓ | ? |
+| [`OneAlerts_CL`](../tables/onealerts-cl.md) | ? | ✓ | ? |
+| [`OneGroups_CL`](../tables/onegroups-cl.md) | ? | ✓ | ? |
+| [`OneThreats_CL`](../tables/onethreats-cl.md) | ? | ✓ | ? |
 
 > 💡 **Tip:** Tables with Ingestion API support allow data ingestion via the [Azure Monitor Data Collector API](https://learn.microsoft.com/azure/azure-monitor/logs/logs-ingestion-api-overview), which also enables custom transformations during ingestion.
 
@@ -57,9 +57,33 @@ This connector ingests data into the following tables:
    2.4. In the [**USERS**] Page click on [**Service Users**] -> [**Actions**] -> [**Create new service user**].
    2.5. Choose [**Expiration date**] and [**scope**] (by site) and click on [**Create User**].
    2.6. Once the [**Service User**] is created copy the [**API Token**] from page and press [**Save**]
-- **SentinelOne Management URL**: https://example.sentinelone.net/
-- **API Token**: API Token
-- Click 'Connect' to establish connection
+#### 3. Connect new instances 
+ To enable the SentinelOne connector for Microsoft Sentinel, click the **Add new instance** button, fill in the required information in the context pane and click on **Connect**.
+**Connector Management Interface**
+
+This section is an interactive interface in the Microsoft Sentinel portal that allows you to manage your data collectors.
+
+📊 **View Existing Collectors**: A management table displays all currently configured data collectors with the following information:
+- **Management URL**
+
+➕ **Add New Collector**: Click the "Add new collector" button to configure a new data collector (see configuration form below).
+
+🔧 **Manage Collectors**: Use the actions menu to delete or modify existing collectors.
+
+> 💡 **Portal-Only Feature**: This configuration interface is only available when viewing the connector in the Microsoft Sentinel portal. You cannot configure data collectors through this static documentation.
+
+**Add new instance**
+
+*SentinelOne connector*
+
+When you click the "Add new instance" button in the portal, a configuration form will open. You'll need to provide:
+
+*Instance details*
+
+- **SentinelOne Management URL** (required): https://example.sentinelone.net/
+- **API Token** (required): API Token
+
+> 💡 **Portal-Only Feature**: This configuration form is only available in the Microsoft Sentinel portal.
 
 ---
 

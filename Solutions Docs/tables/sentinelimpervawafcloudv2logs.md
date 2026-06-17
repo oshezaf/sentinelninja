@@ -95,13 +95,12 @@ This table is used by the following solutions:
 
 - [ImpervaCloudWAF](../solutions/impervacloudwaf.md)
 
-## Connectors (2)
+## Connectors (1)
 
 This table is ingested by the following connectors:
 
 | Connector | Selection Criteria |
 |:----------|:-------------------|
-| [Imperva Cloud WAF (via Codeless Connector Framework)](../connectors/impervacloudwaflogsccfdefinition.md) | `AttackSeverity != "0"` |
 | [Imperva Cloud WAF](../connectors/impervawafcloudapi.md) |  |
 
 ---
@@ -113,21 +112,6 @@ This table is ingested by the following connectors:
 | Parser | Solution | Selection Criteria |
 |:-------|:---------|:-------------------|
 | [ImpervaWAFCloud](../parsers/impervawafcloud.md) | [ImpervaCloudWAF](../solutions/impervacloudwaf.md) |  |
-
-## Selection Criteria Summary (1 criteria, 1 total references)
-
-References by type: 1 connectors, 0 content items, 0 ASIM parsers, 0 other parsers.
-
-| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `AttackSeverity != "0"` | 1 | - | - | - | **1** |
-| **Total** | **1** | **0** | **0** | **0** | **1** |
-
-### AttackSeverity
-
-| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
-|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= 0` | 1 | - | - | - | **1** |
 
 ---
 

@@ -78,7 +78,7 @@ Reference for AADServicePrincipalSignInLogs table in Azure Monitor Logs.
 | UniqueTokenIdentifier | string | Unique token identifier for the request |
 | UserAgent | string | User Agent for the sign-in |
 
-## Solutions (5)
+## Solutions (6)
 
 This table is used by the following solutions:
 
@@ -87,6 +87,7 @@ This table is used by the following solutions:
 - [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md)
 - [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md)
 - [Microsoft Entra ID](../solutions/microsoft-entra-id.md)
+- [Standalone Content](../solutions/standalone-content.md)
 
 ## Connectors (1)
 
@@ -98,9 +99,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (6)
+## Content Items Using This Table (14)
 
-### Analytic Rules (2)
+### Analytic Rules (3)
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -108,13 +109,33 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen TI IPAddress in IdentityLogonEvents](../content/lumen-defender-threat-feed-lumen-ti-ipaddress-in-identitylogonevents-a7cd18cd-1503-47ec-8dca-65d750540637-db253b1e.md) |  |
 
-**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
+**In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):** `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"`
 
-| Analytic Rule | Selection Criteria |
-|:-------------|:-------------------|
-| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |  |
+| Analytic Rule |
+|:-------------|
+| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |
 
-### Workbooks (4)
+**Standalone Content:** `ResultType != "50126"`
+
+| Analytic Rule |
+|:-------------|
+| [Service Principal Authentication Attempt from New Country](../content/standalone-content-service-principal-authentication-attempt-from-new-country-1baaaf00-655f-4de9-8ff8-312e902cda71-4fb2ee74.md) |
+
+### Hunting Queries (2)
+
+**Standalone Content:** `ResultType == "0"`
+
+| Hunting Query |
+|:-------------|
+| [Workload identity sign-in from a country not in 14-day baseline](../content/standalone-content-workload-identity-sign-in-from-a-country-not-in-14-day-baseline-e366bd25-400c-433f-b984-c5b8aece15f2-42cfd1d8.md) |
+
+**GitHub Only:** `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"`
+
+| Hunting Query |
+|:-------------|
+| [Dormant Service Principal Update Creds and Logs In](../content/github-only-dormant-service-principal-update-creds-and-logs-in-e7cdfacc-d112-45c7-9e8f-2b52948d075c-2b79fa66.md) |
+
+### Workbooks (9)
 
 **In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
@@ -140,6 +161,16 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AADServicePrincipalSignInLogs](../content/github-only-aadserviceprincipalsigninlogs-7f958a93.md) | `ResultType == "0"`<br>`ResultType != "0"` |
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+
 ## Parsers Using This Table (1)
 
 ### ASIM Parsers (1)
@@ -147,6 +178,34 @@ This table is ingested by the following connectors:
 | Parser | Schema | Product | Selection Criteria |
 |:-------|:-------|:--------|:-------------------|
 | [ASimAuthenticationAADServicePrincipalSignInLogs](../asim/asimauthenticationaadserviceprincipalsigninlogs.md) | Authentication | Microsoft Entra ID |  |
+
+## Selection Criteria Summary (4 criteria, 4 total references)
+
+References by type: 0 connectors, 4 content items, 0 ASIM parsers, 0 other parsers.
+
+| Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | - | 1 | - | - | **1** |
+| `ResultType != "50126"` | - | 1 | - | - | **1** |
+| `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
+| `ResultType == "0"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **4** | **0** | **0** | **4** |
+
+### OperationName
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `Remove service principal` | - | 1 | - | - | **1** |
+| `has_all Update application` | - | 1 | - | - | **1** |
+| `Add service principal credentials` | - | 1 | - | - | **1** |
+| `Update application - Certificates` | - | 1 | - | - | **1** |
+
+### ResultType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 50126` | - | 1 | - | - | **1** |
+| `0` | - | 1 | - | - | **1** |
 
 ---
 

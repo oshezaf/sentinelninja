@@ -64,15 +64,24 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (1)
+## Content Items Using This Table (5)
 
-### Workbooks (1)
+### Workbooks (5)
 
 **In solution [SentinelSOARessentials](../solutions/sentinelsoaressentials.md):** `SentinelResourceType in "Automation rule,Playbook"`
 
 | Workbook |
 |:-------------|
 | [AutomationHealth](../content/sentinelsoaressentials-automationhealth-09dce6f5.md) |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AutomationHealth](../content/github-only-automationhealth-5e9d0998.md) | `SentinelResourceType in "Automation rule,Playbook"` |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | `SentinelResourceType has "Data connector"`<br>`SentinelResourceType has "analytics rule"` |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) | `SentinelResourceType in "Analytics Rule,Automation rule,Playbook"` |
+| [SentinelHealth](../content/github-only-sentinelhealth-408e260c.md) |  |
 
 ## Selection Criteria Summary (1 criteria, 1 total references)
 

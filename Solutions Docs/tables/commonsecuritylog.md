@@ -210,7 +210,7 @@ Reference for CommonSecurityLog table in Azure Monitor Logs.
 - 📚 **Vendor CEF Guide:** [Citrix/NetScaler WAF](https://docs.netscaler.com/en-us/citrix-adc/current-release/application-firewall/logs.html) - Application Firewall logs
 - 📚 **Vendor CEF Guide:** [Symantec Endpoint Protection](https://techdocs.broadcom.com/us/en/symantec-security-software/endpoint-security-and-management/endpoint-protection/all/Monitoring-Reporting-and-Enforcing-Compliance/viewing-logs-v7522439-d37e464/about-the-types-of-logs-v8156418-d37e6.html) - Log types reference
 
-## Solutions (80)
+## Solutions (81)
 
 This table is used by the following solutions:
 
@@ -279,6 +279,7 @@ This table is used by the following solutions:
 - [Semperis Directory Services Protector](../solutions/semperis-directory-services-protector.md)
 - [Silverfort](../solutions/silverfort.md)
 - [SonicWall Firewall](../solutions/sonicwall-firewall.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [Trend Micro Apex One](../solutions/trend-micro-apex-one.md)
@@ -417,9 +418,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (278)
+## Content Items Using This Table (354)
 
-### Analytic Rules (130)
+### Analytic Rules (150)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 
@@ -726,7 +727,32 @@ This table is ingested by the following connectors:
 |:-------------|
 | [vArmour AppController - SMB Realm Traversal](../content/varmour-application-controller-varmour-appcontroller-smb-realm-traversal-a36de6c3-3198-4d37-92ae-e19e36712c2e-f56ac1bb.md) |
 
-### Hunting Queries (74)
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Cisco - firewall block but success logon to Microsoft Entra ID](../content/standalone-content-cisco-firewall-block-but-success-logon-to-microsoft-entra-id-157c0cfc-d76d-463b-8755-c781608cdc1a-60e5d082.md) | `DeviceVendor == "Cisco"` |
+| [CreepyDrive URLs](../content/standalone-content-creepydrive-urls-b6d03b88-4d27-49a2-9c1c-29f1ad2842dc-e6d3f7ae.md) |  |
+| [CreepyDrive request URL sequence](../content/standalone-content-creepydrive-request-url-sequence-eda260eb-f4a1-4379-ad98-452604da9b3e-76fc0da4.md) |  |
+| [Europium - Hash and IP IOCs - September 2022](../content/standalone-content-europium-hash-and-ip-iocs-september-2022-9d8b5a18-b7db-4c23-84a6-95febaf7e1e4-24b34350.md) |  |
+| [Fortinet - Beacon pattern detected](../content/standalone-content-fortinet-beacon-pattern-detected-3255ec41-6bd6-4f35-84b1-c032b18bbfcb-3dd31f10.md) | `DestinationPort != "161"`<br>`DeviceAction !in "close,client-rst,server-rst,deny"`<br>`DeviceVendor == "Fortinet"`<br>`SourceIP != "0.0.0.0"` |
+| [IP address of Windows host encoded in web request](../content/standalone-content-ip-address-of-windows-host-encoded-in-web-request-a4ce20ae-a2e4-4d50-b40d-d49f1353b6cc-f6bf2fcd.md) |  |
+| [IP with multiple failed Microsoft Entra ID logins successfully logs in to Palo Alto VPN](../content/standalone-content-ip-with-multiple-failed-microsoft-entra-id-logins-successfully-logs-in-to-palo-alto-v-ba144bf8-75b8-406f-9420-ed74397f9479-e519f696.md) | `DeviceEventClassID == "globalprotect"`<br>`DeviceVendor == "Palo Alto Networks"`<br>`Message has "GlobalProtect gateway user authentication succeeded"` |
+| [Known Forest Blizzard group domains - July 2019](../content/standalone-content-known-forest-blizzard-group-domains-july-2019-074ce265-f684-41cd-af07-613c5f3e6d0d-a6ae8c57.md) |  |
+| [M365D Alerts Correlation to non-Microsoft Network device network activity involved in successful sign-in Activity](../content/standalone-content-m365d-alerts-correlation-to-non-microsoft-network-device-network-activity-involved-in-779731f7-8ba0-4198-8524-5701b7defddc-15ad9d20.md) | `DeviceProduct startswith "FireWall"`<br>`DeviceProduct startswith "FortiGate"`<br>`DeviceProduct startswith "NSSWeblog"`<br>`DeviceProduct startswith "PAN"`<br>`DeviceProduct startswith "URL"`<br>`DeviceProduct startswith "VPN"`<br>`DeviceVendor has_any "Check Point,Fortinet,Palo Alto Networks,Zscaler"` |
+| [Mercury - Domain, Hash and IP IOCs - August 2022](../content/standalone-content-mercury-domain,-hash-and-ip-iocs-august-2022-ae10c588-7ff7-486c-9920-ab8b0bdb6ede-8b4a9fab.md) |  |
+| [Phishing link click observed in Network Traffic](../content/standalone-content-phishing-link-click-observed-in-network-traffic-2fed0668-6d43-4c78-87e6-510f96f12145-72384c6d.md) | `DeviceProduct startswith "FireWall"`<br>`DeviceProduct startswith "FortiGate"`<br>`DeviceProduct startswith "NSSWeblog"`<br>`DeviceProduct startswith "PAN"`<br>`DeviceProduct startswith "URL"`<br>`DeviceProduct startswith "VPN"`<br>`DeviceVendor has_any "Check Point,Fortinet,Palo Alto Networks,Zscaler"` |
+| [Possible contact with a domain generated by a DGA](../content/standalone-content-possible-contact-with-a-domain-generated-by-a-dga-4acd3a04-2fad-4efc-8a4b-51476594cec4-6f48fa99.md) |  |
+| [Prestige ransomware IOCs Oct 2022](../content/standalone-content-prestige-ransomware-iocs-oct-2022-bca9c877-2afc-4246-a26d-087ab1cdcd5f-ab904866.md) |  |
+| [Risky user signin observed in non-Microsoft network device](../content/standalone-content-risky-user-signin-observed-in-non-microsoft-network-device-042f2801-a375-4cfd-bd29-041fc7ed88a0-a75f8abe.md) | `DeviceAction != "Block"`<br>`DeviceProduct startswith "FireWall"`<br>`DeviceProduct startswith "FortiGate"`<br>`DeviceProduct startswith "NSSWeblog"`<br>`DeviceProduct startswith "PAN"`<br>`DeviceProduct startswith "URL"`<br>`DeviceProduct startswith "VPN"`<br>`DeviceVendor has_any "Check Point,Fortinet,Palo Alto Networks,Zscaler"` |
+| [RunningRAT request parameters](../content/standalone-content-runningrat-request-parameters-baedfdf4-7cc8-45a1-81a9-065821628b83-02219510.md) | `RequestMethod == "GET"` |
+| [Star Blizzard C2 Domains August 2022](../content/standalone-content-star-blizzard-c2-domains-august-2022-2149d9bb-8298-444c-8f99-f7bf0274dd05-bf017854.md) |  |
+| [Time series anomaly detection for total volume of traffic](../content/standalone-content-time-series-anomaly-detection-for-total-volume-of-traffic-06a9b845-6a95-4432-a78b-83919b28c375-d7007f43.md) |  |
+| [Time series anomaly for data size transferred to public internet](../content/standalone-content-time-series-anomaly-for-data-size-transferred-to-public-internet-f2dd4a3a-ebac-4994-9499-1a859938c947-b66aa17e.md) |  |
+| [Wazuh - Large Number of Web errors from an IP](../content/standalone-content-wazuh-large-number-of-web-errors-from-an-ip-2790795b-7dba-483e-853f-44aa0bc9c985-6cb822a7.md) | `Activity has "Web server 400 error code."`<br>`DeviceProduct == "Wazuh"`<br>`Message has "403"` |
+| [Windows host username encoded in base64 web request](../content/standalone-content-windows-host-username-encoded-in-base64-web-request-6e715730-82c0-496c-983b-7a20c4590bd9-92229d72.md) |  |
+
+### Hunting Queries (80)
 
 **In solution [Acronis Cyber Protect Cloud](../solutions/acronis-cyber-protect-cloud.md):**
 
@@ -872,7 +898,23 @@ This table is ingested by the following connectors:
 | [ApexOne - Suspicious files events](../content/trend-micro-apex-one-apexone-suspicious-files-events-7bf0f260-61a0-11ec-90d6-0242ac120003-58b95e02.md) |
 | [ApexOne - Top sources with alerts](../content/trend-micro-apex-one-apexone-top-sources-with-alerts-8bb86556-67b4-11ec-90d6-0242ac120003-9e3076ba.md) |
 
-### Workbooks (72)
+**Standalone Content:** `DeviceVendor == "Palo Alto Networks"`
+
+| Hunting Query |
+|:-------------|
+| [RareDNSLookupWithDataTransfer](../content/standalone-content-rarednslookupwithdatatransfer-06c52a66-fffe-4d3b-a05a-646ff65b7ec2-5a6c4b85.md) |
+
+**GitHub Only:**
+
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Abnormally Large JPEG Filed Downloaded from New Source](../content/github-only-abnormally-large-jpeg-filed-downloaded-from-new-source-a2ff777e-46c8-4649-b19a-25a0ac059a18-4f19a836.md) |  |
+| [FireEye stolen red teaming tools communications](../content/github-only-fireeye-stolen-red-teaming-tools-communications-e3b8ca4a-2bab-4246-860c-fc3bb8e7ac50-1a53e55d.md) |  |
+| [SQL Alert Correlation with CommonSecurityLogs and AuditLogs](../content/github-only-sql-alert-correlation-with-commonsecuritylogs-and-auditlogs-dc5adcc9-70ab-4fba-8690-f57767e8ca02-cdd2aa29.md) | `Activity == "TRAFFIC"`<br>`DeviceAction != "deny"`<br>`DeviceVendor == "Palo Alto Networks"` |
+| [Storage Alert Correlation with CommonSecurityLogs and StorageLogs](../content/github-only-storage-alert-correlation-with-commonsecuritylogs-and-storagelogs-7098cae1-c632-4b40-b715-86d6b07720d7-78ea9953.md) | `ApplicationProtocol has_any "SSL"`<br>`DestinationPort != "161"`<br>`DeviceAction !in "close,client-rst,server-rst,deny"`<br>`DeviceVendor == "Fortinet"`<br>`LogSeverity has_any "2"`<br>`SourceIP != "0.0.0.0"` |
+| [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.md) | `ApplicationProtocol has_any "SSL"`<br>`DestinationPort != "161"`<br>`DeviceAction !in "close,client-rst,server-rst,deny"`<br>`DeviceVendor == "Fortinet"`<br>`LogSeverity has_any "2"`<br>`SourceIP != "0.0.0.0"` |
+
+### Workbooks (115)
 
 **In solution [AI Analyst Darktrace](../solutions/ai-analyst-darktrace.md):** `Activity !contains "saas"`<br>`Activity contains "Antigena"`<br>`Activity contains "Compliance"`<br>`Activity contains "iaas"`<br>`Activity contains "saas"`<br>`DestinationIP !startswith "10"`<br>`DestinationIP !startswith "172"`<br>`DestinationIP !startswith "192"`<br>`DeviceName contains "#"`<br>`DeviceProduct in "AI Analyst,Enterprise Immune System"`<br>`DeviceVendor == "Darktrace"`
 
@@ -1176,6 +1218,54 @@ This table is ingested by the following connectors:
 |:-------------|
 | [vArmour_AppContoller_Workbook](../content/varmour-application-controller-varmour-appcontoller-workbook-89c75f45.md) |
 
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AIA-Darktrace](../content/github-only-aia-darktrace-8b7a67eb.md) | `Activity !contains "saas"`<br>`Activity contains "Antigena"`<br>`Activity contains "Compliance"`<br>`Activity contains "iaas"`<br>`Activity contains "saas"`<br>`DestinationIP !startswith "10"`<br>`DestinationIP !startswith "172"`<br>`DestinationIP !startswith "192"`<br>`DeviceName contains "#"`<br>`DeviceProduct in "AI Analyst,Enterprise Immune System"`<br>`DeviceVendor == "Darktrace"` |
+| [AIVectraDetectWorkbook](../content/github-only-aivectradetectworkbook-9ff09f08.md) | `DeviceCustomString1 == "True"`<br>`DeviceCustomString2 == "True"`<br>`DeviceEventClassID in "asc,audit,campaigns,health,hsc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceVendor == "Vectra Networks"`<br>`SourceUserName != "All"` |
+| [Barracuda](../content/github-only-barracuda-84e65401.md) | `DeviceVendor == "Barracuda"` |
+| [CheckPoint](../content/github-only-checkpoint-b1258523.md) | `DeviceCustomString3 in "DNS Reputation,IP Reputation,URL Reputation"`<br>`DeviceProduct in "Anti Malware,Anti-Bot,Anti-Virus,Application Control,DDoS Protector,IPS,Threat Emulation,URL Filtering"`<br>`DeviceVendor == "Check Point"`<br>`FlexNumber1 in "3,4,5"`<br>`LogSeverity in "Critical,High,Medium,Very-High"` |
+| [Cisco](../content/github-only-cisco-670c2224.md) | `CommunicationDirection contains "inbound"`<br>`CommunicationDirection contains "outbound"`<br>`DeviceEventClassID in "106100,111008,113012,113015,302010,315011,611102,733100"`<br>`DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"`<br>`Message contains "-> inside"`<br>`Message contains "-> management"`<br>`SimplifiedDeviceAction in "Allow,Built,Deny"` |
+| [CiscoFirepower](../content/github-only-ciscofirepower-3639215e.md) | `Activity == "File Malware Event"`<br>`AdditionalExtensions !contains "Not"`<br>`DestinationPort == "80"`<br>`DeviceAction contains "Block"`<br>`DeviceAction has "Block"`<br>`DeviceProduct == "FTD"`<br>`DeviceVendor == "Cisco"` |
+| [CitrixWAF](../content/github-only-citrixwaf-7cf41b7f.md) | `DeviceProduct == "NetScaler"`<br>`DeviceVendor == "Citrix"` |
+| [CyberArkEPV](../content/github-only-cyberarkepv-5bdbbd59.md) | `DestinationUserPrivileges !contains "ConjurSync"`<br>`DestinationUserPrivileges !contains "PSM"`<br>`DestinationUserPrivileges !contains "PSMSessions"`<br>`DestinationUserPrivileges !contains "PVWAConfig"`<br>`DestinationUserPrivileges !contains "PVWAPrivateUserPrefs"`<br>`DestinationUserPrivileges !contains "PasswordManager"`<br>`DestinationUserPrivileges !contains "PasswordManagerShared"`<br>`DestinationUserPrivileges !contains "SharedAuth_Internal"`<br>`DestinationUserPrivileges !contains "VaultInternal"`<br>`DestinationUserPrivileges contains "ConjurSync"`<br>`DeviceAction contains "disable"`<br>`DeviceProduct == "Vault"`<br>`DeviceVendor == "Cyber-Ark"`<br>`OldFileID contains "Error"`<br>`OldFileID contains "Failure"`<br>`OldFileID contains "error"`<br>`SourceUserName !contains "PasswordManager"`<br>`SourceUserName contains "Sync_components"`<br>`SourceUserName contains "administrator"` |
+| [DataCollectionHealthMonitoring](../content/github-only-datacollectionhealthmonitoring-360bf8be.md) |  |
+| [Data_Latency_Workbook](../content/github-only-data-latency-workbook-6c04e6e6.md) | `DeviceVendor contains "Cyber-Ark"`<br>`DeviceVendor contains "F5"`<br>`DeviceVendor contains "Forcepoint"`<br>`DeviceVendor contains "Fortinet"`<br>`DeviceVendor contains "Imperva Inc."`<br>`DeviceVendor contains "JSonar"`<br>`DeviceVendor contains "Sonicwall"`<br>`DeviceVendor contains "Trend Micro"` |
+| [DelineaWorkbook](../content/github-only-delineaworkbook-d30c0bcb.md) | `Activity == "SECRET - EXPIREDTODAY"`<br>`DeviceProduct == "Secret Server"`<br>`DeviceVendor == "Delinea Software"`<br>`LogSeverity == "2"` |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) |  |
+| [ExchangeCompromiseHunting](../content/github-only-exchangecompromisehunting-4fe3c3f0.md) |  |
+| [ExtraHopDetectionSummary](../content/github-only-extrahopdetectionsummary-2cad14c8.md) | `DeviceVendor == "ExtraHop"` |
+| [ForcepointCASB](../content/github-only-forcepointcasb-e6afece9.md) | `DeviceProduct in "CASB Admin audit log,Cloud Service Monitoring,SaaS Security Gateway"`<br>`DeviceVendor == "Forcepoint CASB"` |
+| [ForcepointCloudSecuirtyGatewayworkbook](../content/github-only-forcepointcloudsecuirtygatewayworkbook-5725310a.md) | `Activity != "Blocked"`<br>`DeviceProduct in "Email,Web"`<br>`DeviceVendor == "Forcepoint CSG"`<br>`LogSeverity in "6,9"`<br>`SourceUserID != "Not available"` |
+| [ForcepointNGFW](../content/github-only-forcepointngfw-a4102a4c.md) | `DeviceAction == "Terminate"`<br>`DeviceProduct == "NGFW"`<br>`DeviceVendor == "Forcepoint"`<br>`LogSeverity == "10"` |
+| [ForcepointNGFWAdvanced](../content/github-only-forcepointngfwadvanced-901d419d.md) | `Activity in "File_Malware-Blocked,URL_Category-Accounting"`<br>`DeviceAction == "Discard"`<br>`DeviceAction != "Discard"`<br>`DeviceAction != "Terminate"`<br>`DeviceFacility == "Inspection"`<br>`DeviceProduct in "Alert,Audit"`<br>`DeviceVendor in "FORCEPOINT,Forcepoint"`<br>`Message contains "Login succeeded"`<br>`Message contains "Logout"`<br>`Message contains "created"`<br>`Message contains "modified"` |
+| [Fortigate](../content/github-only-fortigate-8e4d14cb.md) | `Activity contains "forward"`<br>`DestinationTranslatedAddress contains "."`<br>`DeviceInboundInterface in "port1,port2"`<br>`DeviceProduct contains "Fortigate"`<br>`DeviceVendor == "Fortinet"` |
+| [IllusiveADS](../content/github-only-illusiveads-2a993e89.md) | `DeviceEventClassID in "illusive:access,illusive:login,illusive:suspicious"`<br>`Message !contains "hasForensics"`<br>`SourceHostName != "Failed to obtain"` |
+| [IllusiveASM](../content/github-only-illusiveasm-313fc84a.md) | `DeviceCustomString1 in "CROWN_JEWEL_CREDENTIALS,LOCAL_USER_ADMINISTRATORS,SUSPICIOUS_FILES,USER_CREDENTIALS"`<br>`DeviceEventClassID == "illusive:violation"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) |  |
+| [IoTAssetDiscovery](../content/github-only-iotassetdiscovery-80c1b2c3.md) | `DeviceVendor == "Fortinet"` |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) | `DeviceVendor has "Barracuda"`<br>`DeviceVendor has "Check Point"`<br>`DeviceVendor has "Cisco"`<br>`DeviceVendor has "Citrix"`<br>`DeviceVendor has "CyberArk"`<br>`DeviceVendor has "ExtraHop"`<br>`DeviceVendor has "F5"`<br>`DeviceVendor has "ForgeRock"`<br>`DeviceVendor has "Fortinet"`<br>`DeviceVendor has "Illusive"`<br>`DeviceVendor has "OneIdentity"`<br>`DeviceVendor has "Palo Alto"`<br>`DeviceVendor has "Vectra Networks"`<br>`DeviceVendor has "Zscaler"` |
+| [OnapsisAlarmsOverview](../content/github-only-onapsisalarmsoverview-0a51c5ea.md) | `DeviceVendor == "Onapsis"` |
+| [OneIdentity](../content/github-only-oneidentity-20e95779.md) | `Activity in "ServerConnect,SessionClosed"`<br>`DeviceCustomString1Label == "Session ID"`<br>`DeviceProduct == "SPS"`<br>`DeviceVendor == "OneIdentity"` |
+| [OptimizationWorkbook](../content/github-only-optimizationworkbook-7387c8bb.md) |  |
+| [PaloAltoNetworkThreat](../content/github-only-paloaltonetworkthreat-44480865.md) | `Activity == "THREAT"`<br>`DeviceEventClassID in "correlation,vulnerability,wildfire"`<br>`DeviceEventClassID != "file"`<br>`DeviceEventClassID != "url"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` |
+| [PaloAltoOverview](../content/github-only-paloaltooverview-fef248da.md) | `Activity in "THREAT,TRAFFIC,Traffic"`<br>`DeviceAction in "alert,block-continue,block-url,continue"`<br>`DeviceAction !contains "block"`<br>`DeviceAction !contains "deny"`<br>`DeviceAction contains "block"`<br>`DeviceAction contains "deny"`<br>`DeviceEventClassID in "end,file,url,wildfire"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` |
+| [SecurityStatus](../content/github-only-securitystatus-c79b09ad.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) |  |
+| [SonicWallFirewall](../content/github-only-sonicwallfirewall-7b4c1651.md) | `Activity in "Anti-Spyware Detection Alert,Anti-Spyware Prevention Alert,Application Control Detection Alert,Application Control Prevention Alert,IPS Detection Alert,IPS Prevention Alert,Website Blocked"`<br>`Computer != "127.0.0.1"`<br>`DeviceVendor == "SonicWall"` |
+| [TrendMicroDeepSecurityAttackActivity](../content/github-only-trendmicrodeepsecurityattackactivity-ce6cf1d8.md) |  |
+| [TrendMicroDeepSecurityOverview](../content/github-only-trendmicrodeepsecurityoverview-90ea8a9d.md) |  |
+| [UnifiSG](../content/github-only-unifisg-96910283.md) | `DeviceEventClassID in "DHCP,DNS,Firewall,IPS"`<br>`DeviceVendor == "Unifi"` |
+| [UserMap](../content/github-only-usermap-db59dcfa.md) |  |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) |  |
+| [ZscalerFirewall](../content/github-only-zscalerfirewall-93b3d68c.md) | `Activity !contains "Default"`<br>`Activity !contains "Recommended"`<br>`DestinationPort != "0"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceProduct == "NSSFWlog"`<br>`SourcePort != "0"` |
+| [ZscalerOffice365Apps](../content/github-only-zscaleroffice365apps-06fce14f.md) | `DestinationServiceName contains "Microsoft"`<br>`DestinationServiceName contains "Onedrive"`<br>`DestinationServiceName contains "Outlook"`<br>`DestinationServiceName contains "Sharepoint"`<br>`DestinationServiceName contains "Skype"`<br>`DestinationServiceName contains "office.com"`<br>`DeviceCustomString2 == "Phishing"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceVendor == "Zscaler"` |
+| [ZscalerThreats](../content/github-only-zscalerthreats-fa1de313.md) | `Activity contains "IPS"`<br>`DestinationServiceName != "generalbrowsing"`<br>`DeviceCustomString3 contains "Behavior"`<br>`DeviceCustomString5 != "None"`<br>`DeviceCustomString5 != "suspiciousfile"`<br>`DeviceCustomString5Label == "threatname"`<br>`DeviceEventClassID == "Blocked"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Block"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`SourceUserPrivileges == "Road Warrior"` |
+| [ZscalerWebOverview](../content/github-only-zscalerweboverview-096f23f2.md) | `DestinationServiceName has_any "Microsoft"`<br>`DeviceEventClassID in "Allow,Allowed"`<br>`DeviceEventClassID !contains "Allow"`<br>`DeviceEventClassID contains "Allow"`<br>`DeviceProduct == "NSSWeblog"`<br>`DeviceVendor == "Zscaler"`<br>`RequestMethod != "None"`<br>`SourceUserPrivileges == "Road Warrior"` |
+| [pfsense](../content/github-only-pfsense-33db19df.md) | `DeviceAction in "block,pass"`<br>`DeviceEventClassID == "filterlog"`<br>`DeviceProduct == "pfsense"` |
+
 ## Parsers Using This Table (67)
 
 ### ASIM Parsers (34)
@@ -1268,58 +1358,58 @@ This table collects data from the following Azure resource types:
 - `microsoft.scvmm/virtualmachines`
 - `microsoft.compute/virtualmachinescalesets`
 
-## Selection Criteria Summary (214 criteria, 425 total references)
+## Selection Criteria Summary (223 criteria, 437 total references)
 
-References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other parsers.
+References by type: 108 connectors, 262 content items, 34 ASIM parsers, 33 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `DeviceVendor == "Claroty"` | 2 | 21 | - | 1 | **24** |
-| `DeviceProduct has "PingFederate"` | 2 | 21 | - | 1 | **24** |
-| `DeviceProduct == "Apex Central"`<br>`DeviceVendor == "Trend Micro"` | 2 | 21 | - | 1 | **24** |
 | `DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"` | 1 | 22 | - | 1 | **24** |
+| `DeviceProduct == "Apex Central"`<br>`DeviceVendor == "Trend Micro"` | 2 | 21 | - | 1 | **24** |
+| `DeviceProduct has "PingFederate"` | 2 | 21 | - | 1 | **24** |
 | `DeviceProduct == "LF"`<br>`DeviceVendor == "Palo Alto Networks"` | 2 | 21 | - | 1 | **24** |
 | `DeviceProduct == "iSID"`<br>`DeviceVendor == "radiflow"` | 1 | 8 | - | - | **9** |
 | `DeviceEventClassID == "BloxOne-InsightsNotification-Log"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | 3 | 2 | - | 2 | **7** |
+| `DeviceProduct == "Votiro cloud"`<br>`DeviceVendor == "Votiro"` | 1 | 3 | - | 1 | **5** |
 | `DeviceProduct == "FalconHost"`<br>`DeviceVendor == "CrowdStrike"` | 2 | 2 | - | 1 | **5** |
 | `DeviceProduct == "Awake Security"`<br>`DeviceVendor == "Arista Networks"` | 1 | 4 | - | - | **5** |
-| `DeviceProduct == "Votiro cloud"`<br>`DeviceVendor == "Votiro"` | 1 | 3 | - | 1 | **5** |
 | `DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"` | - | 4 | - | 1 | **5** |
 | `Activity == "POLICY_VIOLATION"`<br>`DeviceProduct == "AC"`<br>`DeviceVendor == "vArmour"` | 2 | 2 | - | - | **4** |
 | `DeviceProduct startswith "Deep Security"`<br>`DeviceVendor has_any "Trend Micro,TrendMicro"` | 1 | 2 | - | 1 | **4** |
 | `DeviceEventClassID has "RPZ"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | - | 4 | - | - | **4** |
 | `DeviceAction != "block-url"`<br>`DeviceEventClassID == "url"`<br>`DeviceVendor == "Palo Alto Networks"` | - | 4 | - | - | **4** |
-| `DeviceProduct == "DLP"`<br>`DeviceVendor == "Symantec"` | 2 | - | - | 1 | **3** |
+| `DeviceVendor == "FireEye"` | 2 | - | - | 1 | **3** |
 | `DeviceProduct == "ClearPass"`<br>`DeviceVendor == "Aruba Networks"` | 2 | - | - | 1 | **3** |
+| `DeviceVendor == "Netwrix"` | 2 | - | - | 1 | **3** |
+| `DeviceCustomString1Label in "dst_vulns,event_href"`<br>`DeviceCustomString2Label in "resource_changes,state"`<br>`DeviceCustomString4Label in "dst_labels,notifications"`<br>`DeviceCustomString6Label == "dst_href"`<br>`DeviceVendor == "Illumio"` | 2 | - | - | 1 | **3** |
+| `DeviceVendor has "Nozomi"` | 2 | - | - | 1 | **3** |
+| `DeviceProduct == "DLP"`<br>`DeviceVendor == "Symantec"` | 2 | - | - | 1 | **3** |
 | `DeviceVendor == "Contrast Security"` | 2 | 1 | - | - | **3** |
 | `DeviceProduct == "akamai_siem"`<br>`DeviceVendor == "Akamai"` | 2 | - | - | 1 | **3** |
-| `DeviceCustomString1Label in "dst_vulns,event_href"`<br>`DeviceCustomString2Label in "resource_changes,state"`<br>`DeviceCustomString4Label in "dst_labels,notifications"`<br>`DeviceCustomString6Label == "dst_href"`<br>`DeviceVendor == "Illumio"` | 2 | - | - | 1 | **3** |
-| `DeviceVendor == "Netwrix"` | 2 | - | - | 1 | **3** |
-| `DeviceVendor == "FireEye"` | 2 | - | - | 1 | **3** |
-| `DeviceVendor has "Nozomi"` | 2 | - | - | 1 | **3** |
 | `DeviceVendor == "Acronis audit"` | - | 3 | - | - | **3** |
 | `DeviceVendor == "iboss"` | - | 2 | - | 1 | **3** |
 | `DeviceProduct in "WAAS,WAF"`<br>`DeviceVendor startswith "Barracuda"` | - | - | 3 | - | **3** |
-| `DeviceVendor == "Darktrace"` | 2 | - | - | - | **2** |
-| `Activity has "SECRET - CREATE"`<br>`Activity has "SECRET - VIEW"`<br>`DeviceProduct == "Secret Server"`<br>`DeviceVendor in "Delinea Software,Thycotic Software"` | 2 | - | - | - | **2** |
-| `ApplicationProtocol in "DNS,HTTP,TDS"`<br>`DeviceProduct == "WireX NFP"`<br>`DeviceVendor == "WireX"` | 2 | - | - | - | **2** |
-| `DeviceEventClassID in "illusive:access,illusive:login,illusive:suspicious"`<br>`DeviceProduct == "illusive"`<br>`DeviceVendor == "illusive"`<br>`Message !contains "hasForensics"`<br>`SourceHostName != "Failed to obtain"` | 2 | - | - | - | **2** |
-| `DeviceProduct == "Vault"`<br>`DeviceVendor == "Cyber-Ark"`<br>`LogSeverity in "10,7"` | 2 | - | - | - | **2** |
 | `Activity in "APPFW_SQL,APPFW_STARTURL,APPFW_XSS"`<br>`DeviceProduct == "NetScaler"`<br>`DeviceVendor == "Citrix"` | 2 | - | - | - | **2** |
-| `AdditionalExtensions contains "fw_action="`<br>`DeviceVendor == "SonicWall"` | 2 | - | - | - | **2** |
-| `DeviceProduct == "UnityOne"` | 1 | - | - | 1 | **2** |
-| `Activity == "Blocked"`<br>`DeviceProduct in "Email,Web"`<br>`DeviceVendor == "Forcepoint CSG"`<br>`LogSeverity == "6"`<br>`SourceUserID != "Not available"` | 2 | - | - | - | **2** |
-| `DeviceEventClassID == "ExtraHop Detection"`<br>`DeviceVendor == "ExtraHop"` | 2 | - | - | - | **2** |
-| `DeviceVendor == "Forcepoint CASB"` | 2 | - | - | - | **2** |
-| `AdditionalExtensions has "InfobloxRPZ=APP_"`<br>`AdditionalExtensions has "InfobloxRPZ=CAT_"`<br>`DeviceEventClassID == "DHCP-LEASE-CREATE"`<br>`DeviceEventClassID has "Audit"`<br>`DeviceEventClassID has "DHCP"`<br>`DeviceEventClassID has "DNS"`<br>`DeviceEventClassID has "RPZ"`<br>`DeviceEventClassID has "Service"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | 2 | - | - | - | **2** |
-| `Activity contains "compromise"`<br>`DeviceAction == "Terminate"`<br>`DeviceProduct == "NGFW"`<br>`DeviceVendor == "Forcepoint"` | 2 | - | - | - | **2** |
-| `DeviceEventClassID == "hsc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceProduct == "X Series"`<br>`DeviceVendor == "Vectra Networks"` | 2 | - | - | - | **2** |
-| `DeviceVendor has "OSSEC"` | 1 | - | - | 1 | **2** |
 | `DeviceEventClassID == "4001"`<br>`DeviceVendor == "RidgeSecurity"` | 1 | 1 | - | - | **2** |
-| `DeviceVendor == "F5"` | 2 | - | - | - | **2** |
-| `Activity == "File Malware Event"`<br>`DestinationPort == "80"`<br>`DeviceAction != "Allow"`<br>`DeviceProduct == "Firepower"`<br>`DeviceVendor == "Cisco"` | 2 | - | - | - | **2** |
 | `DeviceProduct startswith "Fortigate"`<br>`DeviceVendor == "Fortinet"` | 1 | - | 1 | - | **2** |
+| `DeviceVendor == "Darktrace"` | 2 | - | - | - | **2** |
+| `Activity == "Blocked"`<br>`DeviceProduct in "Email,Web"`<br>`DeviceVendor == "Forcepoint CSG"`<br>`LogSeverity == "6"`<br>`SourceUserID != "Not available"` | 2 | - | - | - | **2** |
+| `DeviceVendor == "F5"` | 2 | - | - | - | **2** |
+| `AdditionalExtensions contains "fw_action="`<br>`DeviceVendor == "SonicWall"` | 2 | - | - | - | **2** |
+| `Activity == "File Malware Event"`<br>`DestinationPort == "80"`<br>`DeviceAction != "Allow"`<br>`DeviceProduct == "Firepower"`<br>`DeviceVendor == "Cisco"` | 2 | - | - | - | **2** |
+| `AdditionalExtensions has "InfobloxRPZ=APP_"`<br>`AdditionalExtensions has "InfobloxRPZ=CAT_"`<br>`DeviceEventClassID == "DHCP-LEASE-CREATE"`<br>`DeviceEventClassID has "Audit"`<br>`DeviceEventClassID has "DHCP"`<br>`DeviceEventClassID has "DNS"`<br>`DeviceEventClassID has "RPZ"`<br>`DeviceEventClassID has "Service"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | 2 | - | - | - | **2** |
+| `DeviceEventClassID == "hsc"`<br>`DeviceEventClassID !in "health,audit,campaigns,hsc,asc"`<br>`DeviceProduct == "X Series"`<br>`DeviceVendor == "Vectra Networks"` | 2 | - | - | - | **2** |
+| `Activity contains "compromise"`<br>`DeviceAction == "Terminate"`<br>`DeviceProduct == "NGFW"`<br>`DeviceVendor == "Forcepoint"` | 2 | - | - | - | **2** |
+| `ApplicationProtocol in "DNS,HTTP,TDS"`<br>`DeviceProduct == "WireX NFP"`<br>`DeviceVendor == "WireX"` | 2 | - | - | - | **2** |
 | `DeviceVendor == "Barracuda"` | 1 | 1 | - | - | **2** |
+| `DeviceEventClassID == "ExtraHop Detection"`<br>`DeviceVendor == "ExtraHop"` | 2 | - | - | - | **2** |
+| `DeviceProduct == "UnityOne"` | 1 | - | - | 1 | **2** |
+| `DeviceVendor has "OSSEC"` | 1 | - | - | 1 | **2** |
+| `DeviceEventClassID in "illusive:access,illusive:login,illusive:suspicious"`<br>`DeviceProduct == "illusive"`<br>`DeviceVendor == "illusive"`<br>`Message !contains "hasForensics"`<br>`SourceHostName != "Failed to obtain"` | 2 | - | - | - | **2** |
+| `Activity has "SECRET - CREATE"`<br>`Activity has "SECRET - VIEW"`<br>`DeviceProduct == "Secret Server"`<br>`DeviceVendor in "Delinea Software,Thycotic Software"` | 2 | - | - | - | **2** |
+| `DeviceProduct == "Vault"`<br>`DeviceVendor == "Cyber-Ark"`<br>`LogSeverity in "10,7"` | 2 | - | - | - | **2** |
+| `DeviceVendor == "Forcepoint CASB"` | 2 | - | - | - | **2** |
 | `DeviceEventClassID == "MaliciousUrlDetected"`<br>`DeviceVendor == "Acronis"` | - | 2 | - | - | **2** |
 | `DeviceEventClassID == "ActiveProtectionBlocksSuspiciousActivity"`<br>`DeviceVendor == "Acronis"` | - | 2 | - | - | **2** |
 | `DeviceEventClassID in "MaliciousEmailDetectedPerceptionPointWarning,MaliciousURLDetectedInM365MailboxBackup,MalwareDetectedInM365MailboxBackup"`<br>`DeviceVendor == "Acronis"` | - | 2 | - | - | **2** |
@@ -1328,47 +1418,50 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `DeviceEventClassID == "url"` | - | 2 | - | - | **2** |
 | `ApplicationProtocol in "pop3,smtp"`<br>`DeviceEventClassID == "wildfire"`<br>`DeviceVendor == "Palo Alto Networks"` | - | 2 | - | - | **2** |
 | `DeviceEventClassID != "asc"`<br>`DeviceEventClassID != "audit"`<br>`DeviceEventClassID != "campaigns"`<br>`DeviceEventClassID != "health"`<br>`DeviceEventClassID != "hsc"`<br>`DeviceProduct == "X Series"`<br>`DeviceVendor == "Vectra Networks"` | - | 2 | - | - | **2** |
+| `DeviceProduct startswith "FireWall"`<br>`DeviceProduct startswith "FortiGate"`<br>`DeviceProduct startswith "NSSWeblog"`<br>`DeviceProduct startswith "PAN"`<br>`DeviceProduct startswith "URL"`<br>`DeviceProduct startswith "VPN"`<br>`DeviceVendor has_any "Check Point,Fortinet,Palo Alto Networks,Zscaler"` | - | 2 | - | - | **2** |
+| `Activity == "TRAFFIC"`<br>`DeviceAction != "deny"`<br>`DeviceVendor == "Palo Alto Networks"` | - | 2 | - | - | **2** |
+| `ApplicationProtocol has_any "SSL"`<br>`DestinationPort != "161"`<br>`DeviceAction !in "close,client-rst,server-rst,deny"`<br>`DeviceVendor == "Fortinet"`<br>`LogSeverity has_any "2"`<br>`SourceIP != "0.0.0.0"` | - | 2 | - | - | **2** |
 | `DeviceProduct == "NetScaler"`<br>`DeviceVendor == "Citrix"` | - | 1 | - | 1 | **2** |
 | `DeviceProduct == "Core Directory"` | - | 2 | - | - | **2** |
 | `DeviceVendor == "ForgeRock Inc"` | - | - | - | 2 | **2** |
 | `DeviceVendor == "OneIdentity"` | - | - | - | 2 | **2** |
-| `DeviceEventClassID == "Blocked"`<br>`DeviceProduct == "NSSWeblog"` | 1 | - | - | - | **1** |
-| `DeviceEventClassID == "NewIncident"`<br>`DeviceProduct == "Admin Console"`<br>`DeviceProduct has "Admin Console"`<br>`DeviceVendor == "Silverfort"`<br>`DeviceVendor has "Silverfort"`<br>`Message has "UserBruteForce"` | 1 | - | - | - | **1** |
-| `DeviceEventClassID in "IPSec Phase1,IPSec Phase2,Tunnel Event"`<br>`DeviceProduct == "NSSTunnellog"` | 1 | - | - | - | **1** |
-| `Activity == "THREAT"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | 1 | - | - | - | **1** |
-| `Activity == "THREAT"`<br>`DeviceProduct == "PAN-OS"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | 1 | - | - | - | **1** |
-| `DeviceProduct == "OSP"`<br>`DeviceVendor == "Onapsis"` | 1 | - | - | - | **1** |
-| `AdditionalExtensions contains "amaExternalLogService=true"`<br>`DeviceVendor == "iboss"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSEmaildlplog"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbfilesharinglog"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbcloudstoragelog"` | 1 | - | - | - | **1** |
+| `DeviceVendor == "OSSEC"`<br>`DeviceVendor has "OSSEC"` | 1 | - | - | - | **1** |
 | `DeviceProduct == "NSSAuditlog"`<br>`EventOutcome == "Failure"` | 1 | - | - | - | **1** |
-| `DeviceProduct == "Fortigate"`<br>`DeviceProduct startswith "Fortigate"`<br>`DeviceVendor == "Fortinet"` | 1 | - | - | - | **1** |
-| `DeviceVendor !in "Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour"`<br>`DeviceVendor !in "Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour,Votiro"` | 1 | - | - | - | **1** |
-| `AdditionalExtensions has "InfobloxRPZ=APP_"`<br>`AdditionalExtensions has "InfobloxRPZ=CAT_"`<br>`DeviceEventClassID == "DHCP-LEASE-CREATE"`<br>`DeviceEventClassID has "DNS"`<br>`DeviceEventClassID has "RPZ"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | 1 | - | - | - | **1** |
+| `AdditionalExtensions contains "amaExternalLogService=true"`<br>`DeviceVendor == "iboss"` | 1 | - | - | - | **1** |
 | `DeviceAction == "FAILED"`<br>`DeviceProduct == "IDM"`<br>`DeviceVendor == "ForgeRock Inc"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbcrmlog"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbcollablog"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbemaillog"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSEndpointdlplog"` | 1 | - | - | - | **1** |
-| `AdditionalExtensions !contains "amaExternalLogService=true"`<br>`DeviceVendor == "iboss"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbrepolog"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbactivitylog"` | 1 | - | - | - | **1** |
-| `DeviceVendor in "Claroty,Medigate"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbitsmlog"` | 1 | - | - | - | **1** |
-| `Computer contains "Fortiweb"`<br>`DeviceProduct contains "Fortiweb"`<br>`DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"`<br>`DeviceVendor contains "Fortinet"` | 1 | - | - | - | **1** |
-| `DeviceAction == "Prevented (Blocked)"`<br>`DeviceProduct == "Cortex XDR"`<br>`DeviceVendor == "Palo Alto Networks"`<br>`LogSeverity == "6"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSEmaildlplog"` | 1 | - | - | - | **1** |
+| `Activity == "THREAT"`<br>`DeviceProduct == "PAN-OS"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | 1 | - | - | - | **1** |
 | `DeviceProduct == "NSSFWlog"` | 1 | - | - | - | **1** |
-| `DeviceProduct in "IronDefense,IronDome"`<br>`DeviceVendor == "IronNet"` | 1 | - | - | - | **1** |
-| `DeviceEventClassID == "Blocked"`<br>`DeviceProduct == "NSSDNSlog"` | 1 | - | - | - | **1** |
+| `Activity == "THREAT"`<br>`DeviceProduct has "PAN-OS"`<br>`DeviceVendor == "Palo Alto Networks"` | 1 | - | - | - | **1** |
+| `DeviceEventClassID in "IPSec Phase1,IPSec Phase2,Tunnel Event"`<br>`DeviceProduct == "NSSTunnellog"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbcrmlog"` | 1 | - | - | - | **1** |
+| `Activity == "sql-injection"`<br>`DeviceAction == "block"`<br>`DeviceProduct == "WAF Gateway"`<br>`DeviceVendor in "Imperva,Imperva Inc."`<br>`LogSeverity == "High"` | 1 | - | - | - | **1** |
+| `DeviceProduct == "OSP"`<br>`DeviceVendor == "Onapsis"` | 1 | - | - | - | **1** |
 | `Activity == "SessionClosed"`<br>`DeviceCustomString1Label == "Session ID"`<br>`DeviceProduct == "SPS"`<br>`DeviceVendor == "OneIdentity"` | 1 | - | - | - | **1** |
 | `DeviceEventClassID == "ESA_CONSOLIDATED_LOG_EVENT"`<br>`DeviceProduct == "ESA_CONSOLIDATED_LOG_EVENT"`<br>`DeviceVendor == "Cisco"` | 1 | - | - | - | **1** |
-| `Activity == "sql-injection"`<br>`DeviceAction == "block"`<br>`DeviceProduct == "WAF Gateway"`<br>`DeviceVendor in "Imperva,Imperva Inc."`<br>`LogSeverity == "High"` | 1 | - | - | - | **1** |
-| `DeviceVendor == "OSSEC"`<br>`DeviceVendor has "OSSEC"` | 1 | - | - | - | **1** |
-| `DeviceProduct in "ASA,FTD"`<br>`DeviceVendor == "Cisco"` | 1 | - | - | - | **1** |
-| `DeviceVendor == "WithSecure™"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbcloudstoragelog"` | 1 | - | - | - | **1** |
+| `DeviceEventClassID == "NewIncident"`<br>`DeviceProduct == "Admin Console"`<br>`DeviceProduct has "Admin Console"`<br>`DeviceVendor == "Silverfort"`<br>`DeviceVendor has "Silverfort"`<br>`Message has "UserBruteForce"` | 1 | - | - | - | **1** |
 | `DeviceProduct == "Fortiweb"`<br>`DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"` | 1 | - | - | - | **1** |
+| `DeviceVendor in "Claroty,Medigate"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbemaillog"` | 1 | - | - | - | **1** |
+| `DeviceEventClassID == "Blocked"`<br>`DeviceProduct == "NSSWeblog"` | 1 | - | - | - | **1** |
+| `AdditionalExtensions !contains "amaExternalLogService=true"`<br>`DeviceVendor == "iboss"` | 1 | - | - | - | **1** |
+| `DeviceVendor == "WithSecure™"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSEndpointdlplog"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbrepolog"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbactivitylog"` | 1 | - | - | - | **1** |
+| `AdditionalExtensions has "InfobloxRPZ=APP_"`<br>`AdditionalExtensions has "InfobloxRPZ=CAT_"`<br>`DeviceEventClassID == "DHCP-LEASE-CREATE"`<br>`DeviceEventClassID has "DNS"`<br>`DeviceEventClassID has "RPZ"`<br>`DeviceProduct == "Data Connector"`<br>`DeviceVendor == "Infoblox"` | 1 | - | - | - | **1** |
+| `DeviceEventClassID == "Blocked"`<br>`DeviceProduct == "NSSDNSlog"` | 1 | - | - | - | **1** |
 | `DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"`<br>`SimplifiedDeviceAction == "Deny"` | 1 | - | - | - | **1** |
+| `Computer contains "Fortiweb"`<br>`DeviceProduct contains "Fortiweb"`<br>`DeviceProduct has "Fortiweb"`<br>`DeviceVendor == "Fortinet"`<br>`DeviceVendor contains "Fortinet"` | 1 | - | - | - | **1** |
+| `DeviceProduct in "ASA,FTD"`<br>`DeviceVendor == "Cisco"` | 1 | - | - | - | **1** |
+| `DeviceProduct in "IronDefense,IronDome"`<br>`DeviceVendor == "IronNet"` | 1 | - | - | - | **1** |
+| `DeviceVendor !in "Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour"`<br>`DeviceVendor !in "Cisco,Check Point,Palo Alto Networks,Fortinet,F5,Barracuda,ExtraHop,OneIdentity,Zscaler,ForgeRock Inc,Cyber-Ark,illusive,Vectra Networks,Citrix,Darktrace,Akamai,Aruba Networks,CrowdStrike,Symantec,Claroty,Contrast Security,Delinea Software,Thycotic Software,FireEye,Forcepoint CSG,Forcepoint,Forcepoint CASB,iboss,Illumio,Imperva Inc.,Infoblox,Morphisec,Netwrix,Nozomi,Onapsis,OSSEC,PingFederate,RidgeSecurity,SonicWall,Trend Micro,vArmour,Votiro"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbitsmlog"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbfilesharinglog"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Blocked"`<br>`DeviceProduct == "NSSCasbcollablog"` | 1 | - | - | - | **1** |
+| `DeviceProduct == "Fortigate"`<br>`DeviceProduct startswith "Fortigate"`<br>`DeviceVendor == "Fortinet"` | 1 | - | - | - | **1** |
+| `DeviceAction == "Prevented (Blocked)"`<br>`DeviceProduct == "Cortex XDR"`<br>`DeviceVendor == "Palo Alto Networks"`<br>`LogSeverity == "6"` | 1 | - | - | - | **1** |
 | `DeviceEventClassID == "733100"` | - | 1 | - | - | **1** |
 | `DeviceEventClassID in "733101,733102,733103,733104,733105"` | - | 1 | - | - | **1** |
 | `AdditionalExtensions contains "BLOCKED"`<br>`DeviceVendor == "Contrast Security"` | - | 1 | - | - | **1** |
@@ -1396,6 +1489,12 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `DeviceAction == "START"`<br>`DeviceEventClassID contains "campaign"`<br>`DeviceProduct == "X Series"`<br>`DeviceVendor == "Vectra Networks"` | - | 1 | - | - | **1** |
 | `DeviceAction != "blocked"`<br>`DeviceVendor == "ZScaler"` | - | 1 | - | - | **1** |
 | `DeviceAction == "Allowed"`<br>`DeviceVendor == "Zscaler"` | - | 1 | - | - | **1** |
+| `RequestMethod == "GET"` | - | 1 | - | - | **1** |
+| `DestinationPort != "161"`<br>`DeviceAction !in "close,client-rst,server-rst,deny"`<br>`DeviceVendor == "Fortinet"`<br>`SourceIP != "0.0.0.0"` | - | 1 | - | - | **1** |
+| `Activity has "Web server 400 error code."`<br>`DeviceProduct == "Wazuh"`<br>`Message has "403"` | - | 1 | - | - | **1** |
+| `DeviceEventClassID == "globalprotect"`<br>`DeviceVendor == "Palo Alto Networks"`<br>`Message has "GlobalProtect gateway user authentication succeeded"` | - | 1 | - | - | **1** |
+| `DeviceAction != "Block"`<br>`DeviceProduct startswith "FireWall"`<br>`DeviceProduct startswith "FortiGate"`<br>`DeviceProduct startswith "NSSWeblog"`<br>`DeviceProduct startswith "PAN"`<br>`DeviceProduct startswith "URL"`<br>`DeviceProduct startswith "VPN"`<br>`DeviceVendor has_any "Check Point,Fortinet,Palo Alto Networks,Zscaler"` | - | 1 | - | - | **1** |
+| `DeviceVendor == "Cisco"` | - | 1 | - | - | **1** |
 | `DeviceEventClassID == "AgentAutoUpdateStalled"`<br>`DeviceVendor == "Acronis"` | - | 1 | - | - | **1** |
 | `DeviceEventClassID == "MiniPlanAgentOffline"`<br>`DeviceVendor == "Acronis"` | - | 1 | - | - | **1** |
 | `DeviceEventClassID in "CloudConnectionAzureApplianceConfigurationFailed,CloudConnectionAzureApplianceDeallocationFailed,CloudConnectionAzureApplianceDeletionFailed,CloudConnectionAzureApplianceEOL,CloudConnectionAzureApplianceFailed,CloudConnectionAzureApplianceUpdateFailed,CloudConnectionAzureCloudAccessExpired,CloudConnectionS3CloudAccessExpired"`<br>`DeviceVendor == "Acronis"` | - | 1 | - | - | **1** |
@@ -1406,7 +1505,7 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `DeviceEventClassID == "ActiveProtectionDetectedAszPartitionAccessed"`<br>`DeviceVendor == "Acronis"` | - | 1 | - | - | **1** |
 | `ApplicationProtocol == "ldap"`<br>`DeviceAction has_any "allow"` | - | 1 | - | - | **1** |
 | `Activity == "THREAT"` | - | 1 | - | - | **1** |
-| `Activity == "TRAFFIC"`<br>`DeviceAction != "deny"`<br>`DeviceVendor == "Palo Alto Networks"` | - | 1 | - | - | **1** |
+| `DeviceVendor == "Palo Alto Networks"` | - | 1 | - | - | **1** |
 | `Activity !contains "saas"`<br>`Activity contains "Antigena"`<br>`Activity contains "Compliance"`<br>`Activity contains "iaas"`<br>`Activity contains "saas"`<br>`DestinationIP !startswith "10"`<br>`DestinationIP !startswith "172"`<br>`DestinationIP !startswith "192"`<br>`DeviceName contains "#"`<br>`DeviceProduct in "AI Analyst,Enterprise Immune System"`<br>`DeviceVendor == "Darktrace"` | - | 1 | - | - | **1** |
 | `DeviceCustomString3 in "DNS Reputation,IP Reputation,URL Reputation"`<br>`DeviceProduct in "Anti Malware,Anti-Bot,Anti-Virus,Application Control,DDoS Protector,IPS,Threat Emulation,URL Filtering"`<br>`DeviceVendor == "Check Point"`<br>`FlexNumber1 in "3,4,5"`<br>`LogSeverity in "Critical,High,Medium,Very-High"` | - | 1 | - | - | **1** |
 | `CommunicationDirection contains "inbound"`<br>`CommunicationDirection contains "outbound"`<br>`DeviceEventClassID in "106100,111008,113012,113015,302010,315011,611102,733100"`<br>`DeviceProduct == "ASA"`<br>`DeviceVendor == "Cisco"`<br>`Message contains "-> inside"`<br>`Message contains "-> management"`<br>`SimplifiedDeviceAction in "Allow,Built,Deny"` | - | 1 | - | - | **1** |
@@ -1488,7 +1587,7 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `DeviceEventClassID == "nginx"`<br>`DeviceProduct == "pfsense"` | - | - | - | 1 | **1** |
 | `DeviceCustomString1 has "None"`<br>`DeviceProduct == "Platform"`<br>`DeviceVendor == "Dragos"`<br>`DeviceVersion == "2"` | - | - | - | 1 | **1** |
 | `DeviceVendor == "radiflow"` | - | - | - | 1 | **1** |
-| **Total** | **108** | **250** | **34** | **33** | **425** |
+| **Total** | **108** | **262** | **34** | **33** | **437** |
 
 ### DeviceProduct / DeviceVendor
 
@@ -1500,51 +1599,81 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `Apex Central` | `Trend Micro` | 2 | 21 | - | 1 | **24** |
 | `Data Connector` | `Infoblox` | 6 | 10 | - | 3 | **19** |
 |  | `Acronis` | - | 14 | - | - | **14** |
-|  | `Palo Alto Networks` | - | 10 | - | - | **10** |
+|  | `Palo Alto Networks` | - | 13 | - | - | **13** |
 | `X Series` | `Vectra Networks` | 2 | 7 | - | - | **9** |
 | `iSID` | `radiflow` | 1 | 8 | - | - | **9** |
 | `FalconHost` | `CrowdStrike` | 2 | 2 | 3 | 1 | **8** |
-|  | `Contrast Security` | 2 | 5 | - | - | **7** |
 | `has Fortiweb` | `Fortinet` | 2 | 4 | - | 1 | **7** |
+|  | `Contrast Security` | 2 | 5 | - | - | **7** |
 | `has Admin Console` | `has Silverfort` | 1 | 5 | - | - | **6** |
 | `NetScaler` | `Citrix` | 2 | 1 | 1 | 1 | **5** |
-|  | `SonicWall` | 2 | 1 | 2 | - | **5** |
-| `PAN-OS` | `Palo Alto Networks` | 1 | - | 4 | - | **5** |
 |  | `iboss` | 2 | 2 | - | 1 | **5** |
-| `Awake Security` | `Arista Networks` | 1 | 4 | - | - | **5** |
+| `PAN-OS` | `Palo Alto Networks` | 1 | - | 4 | - | **5** |
 | `Votiro cloud` | `Votiro` | 1 | 3 | - | 1 | **5** |
+|  | `SonicWall` | 2 | 1 | 2 | - | **5** |
 | `ASA` | `Cisco` | 2 | 1 | 2 | - | **5** |
+| `Awake Security` | `Arista Networks` | 1 | 4 | - | - | **5** |
 | `has PAN-OS` | `Palo Alto Networks` | 2 | 2 | - | - | **4** |
-| `startswith Fortigate` | `Fortinet` | 2 | - | 2 | - | **4** |
 | `AC` | `vArmour` | 2 | 2 | - | - | **4** |
+| `startswith Fortigate` | `Fortinet` | 2 | - | 2 | - | **4** |
+| `Firepower` | `Cisco` | 2 | - | 2 | - | **4** |
 | `startswith Deep Security` | `has_any Trend Micro` | 1 | 2 | - | 1 | **4** |
 | `startswith Deep Security` | `has_any TrendMicro` | 1 | 2 | - | 1 | **4** |
-| `Firepower` | `Cisco` | 2 | - | 2 | - | **4** |
 | `NSSWeblog` | `Zscaler` | - | 3 | 1 | - | **4** |
+|  | `FireEye` | 2 | - | - | 1 | **3** |
+|  | `has OSSEC` | 2 | - | - | 1 | **3** |
+|  | `RidgeSecurity` | 1 | 2 | - | - | **3** |
+| `Email` | `Forcepoint CSG` | 2 | 1 | - | - | **3** |
+| `Web` | `Forcepoint CSG` | 2 | 1 | - | - | **3** |
+| `ClearPass` | `Aruba Networks` | 2 | - | - | 1 | **3** |
+|  | `Netwrix` | 2 | - | - | 1 | **3** |
+|  | `Illumio` | 2 | - | - | 1 | **3** |
+|  | `has Nozomi` | 2 | - | - | 1 | **3** |
+| `DLP` | `Symantec` | 2 | - | - | 1 | **3** |
+| `NGFW` | `Forcepoint` | 2 | 1 | - | - | **3** |
+|  | `ExtraHop` | 2 | 1 | - | - | **3** |
+| `akamai_siem` | `Akamai` | 2 | - | - | 1 | **3** |
 | `Secret Server` | `Delinea Software` | 2 | 1 | - | - | **3** |
 | `Secret Server` | `Thycotic Software` | 2 | 1 | - | - | **3** |
 | `Vault` | `Cyber-Ark` | 2 | 1 | - | - | **3** |
-| `DLP` | `Symantec` | 2 | - | - | 1 | **3** |
-| `ClearPass` | `Aruba Networks` | 2 | - | - | 1 | **3** |
-| `Email` | `Forcepoint CSG` | 2 | 1 | - | - | **3** |
-| `Web` | `Forcepoint CSG` | 2 | 1 | - | - | **3** |
-|  | `ExtraHop` | 2 | 1 | - | - | **3** |
-| `akamai_siem` | `Akamai` | 2 | - | - | 1 | **3** |
-|  | `Illumio` | 2 | - | - | 1 | **3** |
-|  | `Netwrix` | 2 | - | - | 1 | **3** |
-| `NGFW` | `Forcepoint` | 2 | 1 | - | - | **3** |
-|  | `has OSSEC` | 2 | - | - | 1 | **3** |
-|  | `RidgeSecurity` | 1 | 2 | - | - | **3** |
-|  | `FireEye` | 2 | - | - | 1 | **3** |
-|  | `has Nozomi` | 2 | - | - | 1 | **3** |
 |  | `Acronis audit` | - | 3 | - | - | **3** |
+|  | `Fortinet` | - | 3 | - | - | **3** |
+| `startswith FireWall` | `has_any Check Point` | - | 3 | - | - | **3** |
+| `startswith FireWall` | `has_any Fortinet` | - | 3 | - | - | **3** |
+| `startswith FireWall` | `has_any Palo Alto Networks` | - | 3 | - | - | **3** |
+| `startswith FireWall` | `has_any Zscaler` | - | 3 | - | - | **3** |
+| `startswith FortiGate` | `has_any Check Point` | - | 3 | - | - | **3** |
+| `startswith FortiGate` | `has_any Fortinet` | - | 3 | - | - | **3** |
+| `startswith FortiGate` | `has_any Palo Alto Networks` | - | 3 | - | - | **3** |
+| `startswith FortiGate` | `has_any Zscaler` | - | 3 | - | - | **3** |
+| `startswith NSSWeblog` | `has_any Check Point` | - | 3 | - | - | **3** |
+| `startswith NSSWeblog` | `has_any Fortinet` | - | 3 | - | - | **3** |
+| `startswith NSSWeblog` | `has_any Palo Alto Networks` | - | 3 | - | - | **3** |
+| `startswith NSSWeblog` | `has_any Zscaler` | - | 3 | - | - | **3** |
+| `startswith PAN` | `has_any Check Point` | - | 3 | - | - | **3** |
+| `startswith PAN` | `has_any Fortinet` | - | 3 | - | - | **3** |
+| `startswith PAN` | `has_any Palo Alto Networks` | - | 3 | - | - | **3** |
+| `startswith PAN` | `has_any Zscaler` | - | 3 | - | - | **3** |
+| `startswith URL` | `has_any Check Point` | - | 3 | - | - | **3** |
+| `startswith URL` | `has_any Fortinet` | - | 3 | - | - | **3** |
+| `startswith URL` | `has_any Palo Alto Networks` | - | 3 | - | - | **3** |
+| `startswith URL` | `has_any Zscaler` | - | 3 | - | - | **3** |
+| `startswith VPN` | `has_any Check Point` | - | 3 | - | - | **3** |
+| `startswith VPN` | `has_any Fortinet` | - | 3 | - | - | **3** |
+| `startswith VPN` | `has_any Palo Alto Networks` | - | 3 | - | - | **3** |
+| `startswith VPN` | `has_any Zscaler` | - | 3 | - | - | **3** |
 | `WAAS` | `startswith Barracuda` | - | - | 3 | - | **3** |
 | `WAF` | `startswith Barracuda` | - | - | 3 | - | **3** |
 |  | `Infoblox` | - | - | 3 | - | **3** |
+| `NSSFWlog` |  | 1 | 1 | - | - | **2** |
 |  | `Darktrace` | 2 | - | - | - | **2** |
+|  | `F5` | 2 | - | - | - | **2** |
+| `SPS` | `OneIdentity` | 1 | 1 | - | - | **2** |
 | `WireX NFP` | `WireX` | 2 | - | - | - | **2** |
-| `illusive` | `illusive` | 2 | - | - | - | **2** |
+|  | `Barracuda` | 1 | 1 | - | - | **2** |
 | `UnityOne` |  | 1 | - | - | 1 | **2** |
+| `illusive` | `illusive` | 2 | - | - | - | **2** |
+| `NSSDNSlog` |  | 1 | - | 1 | - | **2** |
 |  | `Forcepoint CASB` | 2 | - | - | - | **2** |
 |  | `!= Cisco` | 2 | - | - | - | **2** |
 |  | `!= Check Point` | 2 | - | - | - | **2** |
@@ -1587,54 +1716,51 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 |  | `!= SonicWall` | 2 | - | - | - | **2** |
 |  | `!= Trend Micro` | 2 | - | - | - | **2** |
 |  | `!= vArmour` | 2 | - | - | - | **2** |
-|  | `F5` | 2 | - | - | - | **2** |
 | `Cortex XDR` | `Palo Alto Networks` | 1 | 1 | - | - | **2** |
-| `NSSFWlog` |  | 1 | 1 | - | - | **2** |
-| `NSSDNSlog` |  | 1 | - | 1 | - | **2** |
-| `SPS` | `OneIdentity` | 1 | 1 | - | - | **2** |
-|  | `Barracuda` | 1 | 1 | - | - | **2** |
 | `IronDefense` |  | - | 2 | - | - | **2** |
 |  | `Zscaler` | - | 2 | - | - | **2** |
 | `Core Directory` |  | - | 2 | - | - | **2** |
 | `pfsense` |  | - | - | - | 2 | **2** |
 |  | `ForgeRock Inc` | - | - | - | 2 | **2** |
 |  | `OneIdentity` | - | - | - | 2 | **2** |
-| `NSSWeblog` |  | 1 | - | - | - | **1** |
+|  | `OSSEC` | 1 | - | - | - | **1** |
+| `NSSAuditlog` |  | 1 | - | - | - | **1** |
+| `IDM` | `ForgeRock Inc` | 1 | - | - | - | **1** |
+| `NSSEmaildlplog` |  | 1 | - | - | - | **1** |
+| `NSSTunnellog` |  | 1 | - | - | - | **1** |
+| `NSSCasbcrmlog` |  | 1 | - | - | - | **1** |
+| `WAF Gateway` | `Imperva` | 1 | - | - | - | **1** |
+| `WAF Gateway` | `Imperva Inc.` | 1 | - | - | - | **1** |
+| `OSP` | `Onapsis` | 1 | - | - | - | **1** |
+| `ESA_CONSOLIDATED_LOG_EVENT` | `Cisco` | 1 | - | - | - | **1** |
+| `NSSCasbcloudstoragelog` |  | 1 | - | - | - | **1** |
 | `Admin Console` | `Silverfort` | 1 | - | - | - | **1** |
 | `Admin Console` | `has Silverfort` | 1 | - | - | - | **1** |
 | `has Admin Console` | `Silverfort` | 1 | - | - | - | **1** |
-| `NSSTunnellog` |  | 1 | - | - | - | **1** |
-| `OSP` | `Onapsis` | 1 | - | - | - | **1** |
-| `NSSEmaildlplog` |  | 1 | - | - | - | **1** |
-| `NSSCasbfilesharinglog` |  | 1 | - | - | - | **1** |
-| `NSSCasbcloudstoragelog` |  | 1 | - | - | - | **1** |
-| `NSSAuditlog` |  | 1 | - | - | - | **1** |
-| `Fortigate` | `Fortinet` | 1 | - | - | - | **1** |
-|  | `!= Votiro` | 1 | - | - | - | **1** |
-| `IDM` | `ForgeRock Inc` | 1 | - | - | - | **1** |
-| `NSSCasbcrmlog` |  | 1 | - | - | - | **1** |
-| `NSSCasbcollablog` |  | 1 | - | - | - | **1** |
+| `Fortiweb` | `Fortinet` | 1 | - | - | - | **1** |
+|  | `Medigate` | 1 | - | - | - | **1** |
 | `NSSCasbemaillog` |  | 1 | - | - | - | **1** |
+| `NSSWeblog` |  | 1 | - | - | - | **1** |
+|  | `WithSecure™` | 1 | - | - | - | **1** |
 | `NSSEndpointdlplog` |  | 1 | - | - | - | **1** |
 | `NSSCasbrepolog` |  | 1 | - | - | - | **1** |
 | `NSSCasbactivitylog` |  | 1 | - | - | - | **1** |
-|  | `Medigate` | 1 | - | - | - | **1** |
-| `NSSCasbitsmlog` |  | 1 | - | - | - | **1** |
 | `contains Fortiweb` | `Fortinet` | 1 | - | - | - | **1** |
 | `contains Fortiweb` | `contains Fortinet` | 1 | - | - | - | **1** |
 | `has Fortiweb` | `contains Fortinet` | 1 | - | - | - | **1** |
+| `FTD` | `Cisco` | 1 | - | - | - | **1** |
 | `IronDefense` | `IronNet` | 1 | - | - | - | **1** |
 | `IronDome` | `IronNet` | 1 | - | - | - | **1** |
-| `ESA_CONSOLIDATED_LOG_EVENT` | `Cisco` | 1 | - | - | - | **1** |
-| `WAF Gateway` | `Imperva` | 1 | - | - | - | **1** |
-| `WAF Gateway` | `Imperva Inc.` | 1 | - | - | - | **1** |
-|  | `OSSEC` | 1 | - | - | - | **1** |
-| `FTD` | `Cisco` | 1 | - | - | - | **1** |
-|  | `WithSecure™` | 1 | - | - | - | **1** |
-| `Fortiweb` | `Fortinet` | 1 | - | - | - | **1** |
+|  | `!= Votiro` | 1 | - | - | - | **1** |
+| `NSSCasbitsmlog` |  | 1 | - | - | - | **1** |
+| `NSSCasbfilesharinglog` |  | 1 | - | - | - | **1** |
+| `NSSCasbcollablog` |  | 1 | - | - | - | **1** |
+| `Fortigate` | `Fortinet` | 1 | - | - | - | **1** |
 | `illusive` |  | - | 1 | - | - | **1** |
 |  | `Trend Micro` | - | 1 | - | - | **1** |
 |  | `ZScaler` | - | 1 | - | - | **1** |
+| `Wazuh` |  | - | 1 | - | - | **1** |
+|  | `Cisco` | - | 1 | - | - | **1** |
 | `AI Analyst` | `Darktrace` | - | 1 | - | - | **1** |
 | `Enterprise Immune System` | `Darktrace` | - | 1 | - | - | **1** |
 | `Anti Malware` | `Check Point` | - | 1 | - | - | **1** |
@@ -1692,19 +1818,20 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `THREAT` | 2 | 3 | 1 | - | **6** |
+| `TRAFFIC` | - | 5 | - | - | **5** |
 | `POLICY_VIOLATION` | 2 | 2 | - | - | **4** |
-| `TRAFFIC` | - | 4 | - | - | **4** |
-| `has SECRET - CREATE` | 2 | - | - | - | **2** |
-| `has SECRET - VIEW` | 2 | - | - | - | **2** |
 | `APPFW_SQL` | 2 | - | - | - | **2** |
 | `APPFW_STARTURL` | 2 | - | - | - | **2** |
 | `APPFW_XSS` | 2 | - | - | - | **2** |
 | `Blocked` | 2 | - | - | - | **2** |
-| `contains compromise` | 2 | - | - | - | **2** |
-| `SessionClosed` | 1 | 1 | - | - | **2** |
 | `File Malware Event` | 2 | - | - | - | **2** |
+| `SessionClosed` | 1 | 1 | - | - | **2** |
+| `contains compromise` | 2 | - | - | - | **2** |
+| `has SECRET - CREATE` | 2 | - | - | - | **2** |
+| `has SECRET - VIEW` | 2 | - | - | - | **2** |
 | `sql-injection` | 1 | - | - | - | **1** |
 | `Deny List updated` | - | 1 | - | - | **1** |
+| `has Web server 400 error code.` | - | 1 | - | - | **1** |
 | `!contains saas` | - | 1 | - | - | **1** |
 | `contains Antigena` | - | 1 | - | - | **1** |
 | `contains Compliance` | - | 1 | - | - | **1** |
@@ -1757,6 +1884,7 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `TDS` | 2 | - | - | - | **2** |
 | `pop3` | - | 2 | - | - | **2** |
 | `smtp` | - | 2 | - | - | **2** |
+| `has_any SSL` | - | 2 | - | - | **2** |
 | `incomplete` | - | 1 | - | - | **1** |
 | `ldap` | - | 1 | - | - | **1** |
 | `startswith TCP` | - | - | 1 | - | **1** |
@@ -1789,6 +1917,7 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 161` | - | 3 | - | - | **3** |
 | `80` | 2 | - | - | - | **2** |
 | `!= 0` | - | 2 | - | - | **2** |
 | `!= 443` | - | 1 | - | - | **1** |
@@ -1937,17 +2066,21 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `Blocked` | 10 | - | - | - | **10** |
+| `!= deny` | - | 6 | - | - | **6** |
 | `!= block-url` | - | 4 | - | - | **4** |
 | `Terminate` | 2 | 1 | - | - | **3** |
+| `!= close` | - | 3 | - | - | **3** |
+| `!= client-rst` | - | 3 | - | - | **3** |
+| `!= server-rst` | - | 3 | - | - | **3** |
 | `!= Allow` | 2 | - | - | - | **2** |
-| `!= deny` | - | 2 | - | - | **2** |
 | `FAILED` | 1 | - | - | - | **1** |
-| `Prevented (Blocked)` | 1 | - | - | - | **1** |
 | `block` | 1 | - | - | - | **1** |
+| `Prevented (Blocked)` | 1 | - | - | - | **1** |
 | `!= reset-both` | - | 1 | - | - | **1** |
 | `START` | - | 1 | - | - | **1** |
 | `!= blocked` | - | 1 | - | - | **1** |
 | `Allowed` | - | 1 | - | - | **1** |
+| `!= Block` | - | 1 | - | - | **1** |
 | `has_any allow` | - | 1 | - | - | **1** |
 | `contains disable` | - | 1 | - | - | **1** |
 | `Discard` | - | 1 | - | - | **1** |
@@ -2051,22 +2184,22 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `url` | - | 7 | 1 | - | **8** |
 | `BloxOne-InsightsNotification-Log` | 3 | 2 | - | 2 | **7** |
 | `has DNS` | 3 | 2 | 1 | - | **6** |
-| `NewIncident` | 1 | 4 | - | - | **5** |
 | `DHCP-LEASE-CREATE` | 3 | 2 | - | - | **5** |
 | `has DHCP` | 2 | 2 | 1 | - | **5** |
+| `NewIncident` | 1 | 4 | - | - | **5** |
 | `wildfire` | - | 5 | - | - | **5** |
 | `hsc` | 2 | 2 | - | - | **4** |
 | `!contains Allow` | - | 4 | - | - | **4** |
+| `has Audit` | 2 | 1 | - | - | **3** |
+| `has Service` | 2 | 1 | - | - | **3** |
+| `Blocked` | 2 | 1 | - | - | **3** |
 | `illusive:access` | 2 | 1 | - | - | **3** |
 | `illusive:login` | 2 | 1 | - | - | **3** |
 | `illusive:suspicious` | 2 | 1 | - | - | **3** |
-| `Blocked` | 2 | 1 | - | - | **3** |
-| `has Audit` | 2 | 1 | - | - | **3** |
-| `has Service` | 2 | 1 | - | - | **3** |
 | `contains Allow` | - | 3 | - | - | **3** |
+| `4001` | 1 | 1 | - | - | **2** |
 | `Tunnel Event` | 1 | 1 | - | - | **2** |
 | `ExtraHop Detection` | 2 | - | - | - | **2** |
-| `4001` | 1 | 1 | - | - | **2** |
 | `MaliciousUrlDetected` | - | 2 | - | - | **2** |
 | `ActiveProtectionBlocksSuspiciousActivity` | - | 2 | - | - | **2** |
 | `MaliciousEmailDetectedPerceptionPointWarning` | - | 2 | - | - | **2** |
@@ -2095,6 +2228,7 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `wildfire-virus` | - | 1 | - | - | **1** |
 | `startswith 40` | - | 1 | - | - | **1** |
 | `contains campaign` | - | 1 | - | - | **1** |
+| `globalprotect` | - | 1 | - | - | **1** |
 | `AgentAutoUpdateStalled` | - | 1 | - | - | **1** |
 | `MiniPlanAgentOffline` | - | 1 | - | - | **1** |
 | `CloudConnectionAzureApplianceConfigurationFailed` | - | 1 | - | - | **1** |
@@ -2261,9 +2395,10 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `6` | 3 | 1 | - | - | **4** |
-| `10` | 2 | 1 | - | - | **3** |
 | `High` | 1 | 2 | - | - | **3** |
+| `10` | 2 | 1 | - | - | **3** |
 | `7` | 2 | - | - | - | **2** |
+| `has_any 2` | - | 2 | - | - | **2** |
 | `Medium` | - | 2 | - | - | **2** |
 | `Very-High` | - | 2 | - | - | **2** |
 | `Critical` | - | 1 | - | - | **1** |
@@ -2280,6 +2415,8 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | `has Certifried` | - | 1 | - | - | **1** |
 | `has Log4Shell` | - | 1 | - | - | **1** |
 | `has NoPacBreach` | - | 1 | - | - | **1** |
+| `has 403` | - | 1 | - | - | **1** |
+| `has GlobalProtect gateway user authentication succeeded` | - | 1 | - | - | **1** |
 | `contains -> inside` | - | 1 | - | - | **1** |
 | `contains -> management` | - | 1 | - | - | **1** |
 | `contains Login succeeded` | - | 1 | - | - | **1** |
@@ -2315,6 +2452,7 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `GET` | - | 1 | - | - | **1** |
 | `!= None` | - | 1 | - | - | **1** |
 | `!= UNKNOWN` | - | - | 1 | - | **1** |
 
@@ -2331,6 +2469,12 @@ References by type: 108 connectors, 250 content items, 34 ASIM parsers, 33 other
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `!= Failed to obtain` | 2 | 1 | - | - | **3** |
+
+### SourceIP
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `!= 0.0.0.0` | - | 3 | - | - | **3** |
 
 ### SourcePort
 

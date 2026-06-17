@@ -26,7 +26,7 @@ This parser reads from the following tables:
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
 | [`AWSELBFlowLogs`](../tables/awselbflowlogs.md) | ✓ | ✓ | ? |
-| [`AWSELBFlowLogs_CL`](../tables/awselbflowlogs-cl.md) | ? | ✓ | ? |
+| [`AWSELBFlowLogs_CL`](../tables/awselbflowlogs-cl.md) | ? | ? | ? |
 
 ---
 

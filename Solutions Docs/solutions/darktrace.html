@@ -40,7 +40,7 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Support Link</strong></td>
-  <td style="text-align:left"><a href="https://www.darktrace.com/en/contact/">https://www.darktrace.com/en/contact/</a></td>
+  <td style="text-align:left"><a href="https://www.darktrace.com/contact/">https://www.darktrace.com/contact/</a></td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Categories</strong></td>
@@ -48,11 +48,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Version</strong></td>
-  <td style="text-align:left">2.0.1</td>
+  <td style="text-align:left">3.0.0</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>Author</strong></td>
-  <td style="text-align:left">Darktrace</td>
+  <td style="text-align:left">Darktrace - customers@darktrace.com</td>
 </tr>
 <tr>
   <td style="text-align:left"><strong>First Published</strong></td>
@@ -68,7 +68,7 @@
 </tr>
 </tbody>
 </table>
-<p>The <a href="https://darktrace.com/">Darktrace</a> Sentinel Solution lets users connect Darktrace AI-based alerting in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. Microsoft Sentinel's enhanced visibility into Darktrace logs enables monitoring and mitigation of security threats.</p>
+<p>The <a href="https://darktrace.com/">Darktrace</a> Microsoft Sentinel Solution lets users connect Darktrace AI-based alerting in real-time with Microsoft Sentinel, allowing creation of custom Dashboards, Workbooks, Notebooks and Custom Alerts to improve investigation. Microsoft Sentinel's enhanced visibility into Darktrace logs enables monitoring and mitigation of security threats.</p>
 <p><strong>Underlying Microsoft Technologies used:</strong></p>
 <p>This solution takes a dependency on the following technologies, and some of these dependencies either may be in <a href="https://azure.microsoft.com/support/legal/preview-supplemental-terms/">Preview</a> state or might result in additional ingestion or operational costs:</p>
 <p>a. <a href="https://docs.microsoft.com/azure/sentinel/connect-rest-api-template">Microsoft Sentinel Data Collector API</a></p>
@@ -80,15 +80,16 @@
 <li><a href="#content-items">Content Items</a></li>
 </ul>
 <h2 id="data-connectors">Data Connectors</h2>
-<p>This solution provides <strong>1 data connector(s)</strong>:</p>
+<p>This solution provides <strong>2 data connector(s)</strong>:</p>
 <ul>
-<li><a href="../connectors/darktracerestconnector.html">Darktrace Connector for Microsoft Sentinel REST API</a> 🔶</li>
+<li><a href="../connectors/darktraceactiveaisecurityplatform.html">Darktrace ActiveAI Security Platform Connector</a></li>
+<li><a href="../connectors/darktracerestconnector.html">Darktrace Connector for Microsoft Sentinel REST API (Legacy)</a> 🔶</li>
 </ul>
 <blockquote>
 <p>🔶 <strong>CLv1:</strong> This connector ingests into a table that uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="tables-used">Tables Used</h2>
-<p>This solution uses <strong>1 table(s)</strong>:</p>
+<p>This solution uses <strong>7 table(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -99,8 +100,38 @@
 </thead>
 <tbody>
 <tr>
+  <td><a href="../tables/darktraceasm-cl.html"><code>DarktraceASM_CL</code></a></td>
+  <td><a href="../connectors/darktraceactiveaisecurityplatform.html">Darktrace ActiveAI Security Platform Connector</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/darktraceemail-cl.html"><code>DarktraceEMAIL_CL</code></a></td>
+  <td><a href="../connectors/darktraceactiveaisecurityplatform.html">Darktrace ActiveAI Security Platform Connector</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/darktraceincidents-cl.html"><code>DarktraceIncidents_CL</code></a></td>
+  <td><a href="../connectors/darktraceactiveaisecurityplatform.html">Darktrace ActiveAI Security Platform Connector</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/darktracemodelalerts-cl.html"><code>DarktraceModelAlerts_CL</code></a></td>
+  <td><a href="../connectors/darktraceactiveaisecurityplatform.html">Darktrace ActiveAI Security Platform Connector</a></td>
+  <td>Analytics, Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/darktraceresponseactions-cl.html"><code>DarktraceResponseActions_CL</code></a></td>
+  <td><a href="../connectors/darktraceactiveaisecurityplatform.html">Darktrace ActiveAI Security Platform Connector</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
+  <td><a href="../tables/darktracesystemstatusalerts-cl.html"><code>DarktraceSystemStatusAlerts_CL</code></a></td>
+  <td><a href="../connectors/darktraceactiveaisecurityplatform.html">Darktrace ActiveAI Security Platform Connector</a></td>
+  <td>Workbooks</td>
+</tr>
+<tr>
   <td><a href="../tables/darktrace-model-alerts-cl.html"><code>darktrace_model_alerts_CL</code></a> 🔶</td>
-  <td><a href="../connectors/darktracerestconnector.html">Darktrace Connector for Microsoft Sentinel REST API</a></td>
+  <td><a href="../connectors/darktracerestconnector.html">Darktrace Connector for Microsoft Sentinel REST API (Legacy)</a></td>
   <td>Analytics, Workbooks</td>
 </tr>
 </tbody>
@@ -109,7 +140,7 @@
 <p>🔶 <strong>CLv1:</strong> This table uses the legacy Custom Log V1 schema format with type-suffixed column names (e.g. <code>_s</code>, <code>_d</code>, <code>_b</code>, <code>_t</code>, <code>_g</code>). Note: identification is based on column name suffixes which are also permitted in CLv2, so this classification may not always be accurate.</p>
 </blockquote>
 <h2 id="content-items">Content Items</h2>
-<p>This solution includes <strong>4 content item(s)</strong>:</p>
+<p>This solution includes <strong>7 content item(s)</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -120,11 +151,11 @@
 <tbody>
 <tr>
   <td style="text-align:left">Analytic Rules</td>
-  <td style="text-align:left">3</td>
+  <td style="text-align:left">5</td>
 </tr>
 <tr>
   <td style="text-align:left">Workbooks</td>
-  <td style="text-align:left">1</td>
+  <td style="text-align:left">2</td>
 </tr>
 </tbody>
 </table>
@@ -140,21 +171,33 @@
 </thead>
 <tbody>
 <tr>
-  <td style="text-align:left"><a href="../content/darktrace-darktrace-ai-analyst-ffa2977f-3077-4bba-b1bf-f3417699cbb0-c8c73532.html">Darktrace AI Analyst</a></td>
+  <td style="text-align:left"><a href="../content/darktrace-darktrace-ai-analyst-legacy-ffa2977f-3077-4bba-b1bf-f3417699cbb0-9433455e.html">Darktrace AI Analyst (Legacy)</a></td>
   <td style="text-align:left">High</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">InitialAccess, Execution, LateralMovement, CommandAndControl</td>
   <td style="text-align:left"><a href="../tables/darktrace-model-alerts-cl.html"><code>darktrace_model_alerts_CL</code></a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/darktrace-darktrace-model-breach-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-0057eb81.html">Darktrace Model Breach</a></td>
+  <td style="text-align:left"><a href="../content/darktrace-darktrace-incident-event-05de0eaf-01bc-4615-99fc-2ec769864b34-b25377f2.html">Darktrace Incident Event</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Execution, LateralMovement, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/darktraceincidents-cl.html"><code>DarktraceIncidents_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/darktrace-darktrace-model-alert-9392a06f-63a4-4a5d-8ca3-647064b13c28-1430c4d3.html">Darktrace Model Alert</a></td>
+  <td style="text-align:left">High</td>
+  <td style="text-align:left">InitialAccess, Execution, LateralMovement, CommandAndControl</td>
+  <td style="text-align:left"><a href="../tables/darktracemodelalerts-cl.html"><code>DarktraceModelAlerts_CL</code></a></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/darktrace-darktrace-model-breach-legacy-a3c7b8ed-56a9-47b7-98e5-2555c16e17c9-2d80a016.html">Darktrace Model Breach (Legacy)</a></td>
   <td style="text-align:left">Medium</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">InitialAccess, Execution, LateralMovement, CommandAndControl</td>
   <td style="text-align:left"><a href="../tables/darktrace-model-alerts-cl.html"><code>darktrace_model_alerts_CL</code></a></td>
 </tr>
 <tr>
-  <td style="text-align:left"><a href="../content/darktrace-darktrace-system-status-2e629769-60eb-4a14-8bfc-bde9be66ebeb-cc05125a.html">Darktrace System Status</a></td>
+  <td style="text-align:left"><a href="../content/darktrace-darktrace-system-status-legacy-2e629769-60eb-4a14-8bfc-bde9be66ebeb-b842cc6c.html">Darktrace System Status (Legacy)</a></td>
   <td style="text-align:left">Informational</td>
-  <td style="text-align:left">-</td>
+  <td style="text-align:left">Discovery, Impact</td>
   <td style="text-align:left"><a href="../tables/darktrace-model-alerts-cl.html"><code>darktrace_model_alerts_CL</code></a></td>
 </tr>
 </tbody>
@@ -169,8 +212,29 @@
 </thead>
 <tbody>
 <tr>
+  <td style="text-align:left"><a href="../content/darktrace-darktraceactiveaisecurityplatformworkbook-d9b62600.html">DarktraceActiveAISecurityPlatformWorkbook</a></td>
+  <td style="text-align:left"><a href="../tables/darktraceasm-cl.html"><code>DarktraceASM_CL</code></a><br><a href="../tables/darktraceemail-cl.html"><code>DarktraceEMAIL_CL</code></a><br><a href="../tables/darktraceincidents-cl.html"><code>DarktraceIncidents_CL</code></a><br><a href="../tables/darktracemodelalerts-cl.html"><code>DarktraceModelAlerts_CL</code></a><br><a href="../tables/darktraceresponseactions-cl.html"><code>DarktraceResponseActions_CL</code></a><br><a href="../tables/darktracesystemstatusalerts-cl.html"><code>DarktraceSystemStatusAlerts_CL</code></a></td>
+</tr>
+<tr>
   <td style="text-align:left"><a href="../content/darktrace-darktraceworkbook-b6b8de88.html">DarktraceWorkbook</a></td>
   <td style="text-align:left"><a href="../tables/darktrace-model-alerts-cl.html"><code>darktrace_model_alerts_CL</code></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="release-notes">Release Notes</h2>
+<table>
+<thead>
+<tr>
+  <th><strong>Version</strong></th>
+  <th><strong>Date Modified (DD-MM-YYYY)</strong></th>
+  <th><strong>Change History</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>3.0.0</td>
+  <td>06-03-2026</td>
+  <td>Added new Darktrace ActiveAI Security Platform CCF data connector, DCR, custom tables, workbook, and two new analytic rules; relabeled legacy REST API connector, workbook, and analytic rules as (Legacy)</td>
 </tr>
 </tbody>
 </table>

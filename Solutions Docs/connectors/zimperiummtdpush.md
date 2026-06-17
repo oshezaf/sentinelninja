@@ -29,6 +29,8 @@ This connector ingests data into the following tables:
 
 | Table | Transformations | Ingestion API | Lake-Only |
 |:------|:---------------:|:-------------:|:---------:|
+| [`ZimperiumIncidentLog_CL`](../tables/zimperiumincidentlog-cl.md) | ? | ✓ | ? |
+| [`ZimperiumIncidentMitigationLog_CL`](../tables/zimperiumincidentmitigationlog-cl.md) | ? | ✓ | ? |
 | [`ZimperiumMitigationLogV2_CL`](../tables/zimperiummitigationlogv2-cl.md) | ? | ✓ | ? |
 | [`ZimperiumThreatLogV2_CL`](../tables/zimperiumthreatlogv2-cl.md) | ? | ✓ | ? |
 
@@ -63,10 +65,11 @@ Deploy Zimperium MTD Push connector resources
 4. Create the Configuration:
     - **Name:** Name to describe this configuration.
     - **Description:** Description to describe this configuration.
-    - **Data Type:** Select datatype as Threat.
+    - **Data Type:** Select datatype as _Threats_ or _Incidents_ depending on the data you want to export.
     - **Destination Type:** From the available destination types, select Microsoft Sentinel.
-    - **Severity Criteria:** Select a Filter Level for the threat data you wish to push to Microsoft Sentinel.
-    - **External Tracking Id 1:** This is an optional criterion to match for exported data.
+    - **Severity Criteria:** Select a Filter Level for the threat data you wish to push to Microsoft Sentinel.(**Note:** This field is applicable only for _threats_ datatype)
+    - **Team Criteria:** This is an optional criterion to filter data based on teams.
+   - **External Tracking Id 1:** This is an optional criterion to match for exported data.
     - **External Tracking Id 2:** This is an optional criterion to match for exported data.
     - **Tenant Id:** Enter from the fields below.
     - **Entra App Registration Application ID:** Enter from the fields below.

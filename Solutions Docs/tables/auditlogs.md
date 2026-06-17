@@ -63,7 +63,7 @@ Reference for AuditLogs table in Azure Monitor Logs.
 | TimeGenerated | datetime | Date and time the record was created. |
 | Type | string | The name of the table |
 
-## Solutions (20)
+## Solutions (22)
 
 This table is used by the following solutions:
 
@@ -83,10 +83,12 @@ This table is used by the following solutions:
 - [SOC Handbook](../solutions/soc-handbook.md)
 - [SOX IT Compliance](../solutions/sox-it-compliance.md)
 - [SecurityThreatEssentialSolution](../solutions/securitythreatessentialsolution.md)
+- [Standalone Content](../solutions/standalone-content.md)
 - [Threat Intelligence](../solutions/threat-intelligence.md)
 - [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md)
 - [UEBA Essentials](../solutions/ueba-essentials.md)
 - [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md)
+- [eDCRule](../solutions/edcrule.md)
 
 ## Connectors (1)
 
@@ -98,9 +100,9 @@ This table is ingested by the following connectors:
 
 ---
 
-## Content Items Using This Table (89)
+## Content Items Using This Table (183)
 
-### Analytic Rules (67)
+### Analytic Rules (97)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -175,7 +177,7 @@ This table is ingested by the following connectors:
 | [Privileged Role Assigned Outside PIM](../content/microsoft-entra-id-privileged-role-assigned-outside-pim-269435e3-1db8-4423-9dfc-9bf59997da1c-d87cbe19.md) | `Identity != "MS-PIM"`<br>`Identity != "MS-PIM-Fairfax"`<br>`LoggedByService == "Core Directory"`<br>`OperationName == "Add member to role"`<br>`OperationName has "Add member to role outside of PIM"` |
 | [Rare application consent](../content/microsoft-entra-id-rare-application-consent-83ba3057-9ea3-4759-bf6a-933f2e5bc7ee-a30dee09.md) | `OperationName has "Consent to application"` |
 | [Suspicious Entra ID Joined Device Update](../content/microsoft-entra-id-suspicious-entra-id-joined-device-update-3a3c6835-0086-40ca-b033-a93bf26d878f-b40b663f.md) | `OperationName == "Update device"` |
-| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) | `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` |
+| [Suspicious Service Principal creation activity](../content/microsoft-entra-id-suspicious-service-principal-creation-activity-6852d9da-8015-4b95-8ecf-d9572ee0395d-57b7f81f.md) |  |
 | [Suspicious Sign In Followed by MFA Modification](../content/microsoft-entra-id-suspicious-sign-in-followed-by-mfa-modification-aec77100-25c5-4254-a20a-8027ed92c46c-8c458768.md) |  |
 | [Suspicious application consent for offline access](../content/microsoft-entra-id-suspicious-application-consent-for-offline-access-3533f74c-9207-4047-96e2-0eb9383be587-fa7e45f8.md) | `LoggedByService == "Core Directory"`<br>`OperationName in "Add OAuth2PermissionGrant,Add delegated permission grant,Add service principal,Consent to application"`<br>`TargetResources has "offline"` |
 | [Suspicious application consent similar to O365 Attack Toolkit](../content/microsoft-entra-id-suspicious-application-consent-similar-to-o365-attack-toolkit-f948a32f-226c-4116-bddd-d95e91d97eb9-f8a2446b.md) | `LoggedByService == "Core Directory"`<br>`OperationName in "Add OAuth2PermissionGrant,Add delegated permission grant,Add service principal,Consent to application"` |
@@ -204,7 +206,47 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [TI Map URL Entity to AuditLogs](../content/threat-intelligence-new-ti-map-url-entity-to-auditlogs-9991c277-e0a1-4079-8c40-fbfca2705615-eddd0de5.md) |  |
 
-### Hunting Queries (8)
+**In solution [eDCRule](../solutions/edcrule.md):**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [[Entra ID] Application Assigned Administrator Permissions Immediately After Obtaining Role Management Permissions](../content/edcrule-[entra-id]-application-assigned-administrator-permissions-immediately-after-obtaining-role-manag-90bacdf4-e35b-47cb-92d1-29d8397eb4a0-48ff141a.md) | `AADOperationType == "Assign"`<br>`LoggedByService == "Core Directory"`<br>`OperationName == "Add app role assignment to service principal"` |
+| [[Entra ID] Application Granted Administrative Permission to Assign Microsoft Entra ID Roles](../content/edcrule-[entra-id]-application-granted-administrative-permission-to-assign-microsoft-entra-id-roles-ef34b272-930c-41c8-a682-8c2093cd2024-0e05b599.md) | `LoggedByService == "Core Directory"`<br>`OperationName in "Add app role assignment to service principal,Add delegated permission grant"` |
+| [[Entra ID] Authentication Method Changed for Privileged Account](../content/edcrule-[entra-id]-authentication-method-changed-for-privileged-account-9f7197b6-eeb2-46f3-83b1-a2c4dfca46a0-e18c8380.md) |  |
+| [[Entra ID] Domain Federation Trust Settings Modified](../content/edcrule-[entra-id]-domain-federation-trust-settings-modified-944d0ab5-b654-47f9-a398-2e77a0b7906e-34bc2dd8.md) | `OperationName in "Set domain authentication,Set federation settings on domain"` |
+| [[Entra ID] Mass Privileged Role Change Activity Detected](../content/edcrule-[entra-id]-mass-privileged-role-change-activity-detected-d6cd3c6f-1d2a-4c42-a048-dbe91cf35b18-7a3ebdd5.md) | `ActivityDisplayName has_any "Add eligible member to role"` |
+| [[Entra ID] Privilege Elevation Request Denied](../content/edcrule-[entra-id]-privilege-elevation-request-denied-aceee46e-8fb3-42d9-967a-aac637bcefd4-d1a14d12.md) | `ActivityDisplayName == "Add member to role request denied (PIM activation)"`<br>`ResultReason != "RoleAssignmentExists"` |
+| [[Entra ID] Privileged Role Assigned to User](../content/edcrule-[entra-id]-privileged-role-assigned-to-user-fad0f8b9-a0a5-430a-9a94-049a1144bf54-83a30e48.md) | `AADOperationType in "Assign,AssignEligibleRole,CreateRequestGrantedRole,CreateRequestPermanentEligibleRole,CreateRequestPermanentGrantedRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` |
+| [[Entra ID] Privileged Role Assigned to a New User](../content/edcrule-[entra-id]-privileged-role-assigned-to-a-new-user-b64ac0e2-a241-4b9a-ad3e-ae572630b295-a5a10709.md) |  |
+
+**Standalone Content:**
+
+| Analytic Rule | Selection Criteria |
+|:-------------|:-------------------|
+| [Account created from non-approved sources](../content/standalone-content-account-created-from-non-approved-sources-99d589fa-7337-40d7-91a0-c96d0c4fa437-abead192.md) | `OperationName == "Add User"` |
+| [Addition of a Temporary Access Pass to a Privileged Account](../content/standalone-content-addition-of-a-temporary-access-pass-to-a-privileged-account-d7feb859-f03e-4e8d-8b21-617be0213b13-1bb54eef.md) | `OperationName == "Admin registered security info"`<br>`ResultReason == "Admin registered temporary access pass method for user"` |
+| [Application ID URI Changed](../content/standalone-content-application-id-uri-changed-9fb2ee72-959f-4c2b-bc38-483affc539e4-532fedef.md) | `OperationName has_any "Update Application,Update Service principal"`<br>`TargetResources has "AppIdentifierUri"` |
+| [Application Redirect URL Update](../content/standalone-content-application-redirect-url-update-a1080fc1-13d1-479b-8340-255f0290d96c-91f770b3.md) | `OperationName == "Update Application"`<br>`TargetResources has "AppAddress"` |
+| [Changes to Application Logout URL](../content/standalone-content-changes-to-application-logout-url-492fbe35-cbac-4a8c-9059-826782e6915a-0134247b.md) | `OperationName has_any "Update Application,Update Service principal"` |
+| [Changes to Application Ownership](../content/standalone-content-changes-to-application-ownership-cc5780ce-3245-4bba-8bc1-e9048c2257ce-9e47b574.md) | `OperationName == "Add owner to application"` |
+| [Changes to PIM Settings](../content/standalone-content-changes-to-pim-settings-0ed0fe7c-af29-4990-af7f-bb5ccb231198-dc0157b2.md) | `OperationName == "Update role setting in PIM"` |
+| [Conditional Access Policy Modified by New User](../content/standalone-content-conditional-access-policy-modified-by-new-user-25a7f951-54b7-4cf5-9862-ebc04306c590-61566173.md) | `OperationName has "conditional access policy"` |
+| [Detect PIM Alert Disabling activity](../content/standalone-content-detect-pim-alert-disabling-activity-1f3b4dfd-21ff-4ed3-8e27-afc219e05c50-6df47b64.md) | `ActivityDisplayName has "Disable PIM Alert"`<br>`LoggedByService == "PIM"` |
+| [Detecting Impossible travel with mailbox permission tampering & Privilege Escalation attempt](../content/standalone-content-detecting-impossible-travel-with-mailbox-permission-tampering-&-privilege-escalation--1399664f-9434-497c-9cde-42e4d74ae20e-03f12b2c.md) | `AADOperationType == "CreateRequestEligibleRole"`<br>`ActivityDisplayName == "Add eligible member to role in PIM requested (timebound)"`<br>`TargetResources has_any "-PRIV"` |
+| [End-user consent stopped due to risk-based consent](../content/standalone-content-end-user-consent-stopped-due-to-risk-based-consent-009b9bae-23dd-43c4-bcb9-11c4ba7c784a-219ca2d5.md) | `OperationName has "Consent to application"` |
+| [Guest Users Invited to Tenant by New Inviters](../content/standalone-content-guest-users-invited-to-tenant-by-new-inviters-572e75ef-5147-49d9-9d65-13f2ed1e3a86-bb24a4dc.md) | `OperationName == "Invite external user"` |
+| [Multiple Password Reset by user](../content/standalone-content-multiple-password-reset-by-user-0b9ae89d-8cad-461c-808f-0494f70ad5c4-910658bf.md) |  |
+| [Service Principal Assigned App Role With Sensitive Access](../content/standalone-content-service-principal-assigned-app-role-with-sensitive-access-dd78a122-d377-415a-afe9-f22e08d2112c-6c8806ba.md) | `OperationName == "Add app role assignment to service principal"` |
+| [Service Principal Assigned Privileged Role](../content/standalone-content-service-principal-assigned-privileged-role-84cccc86-5c11-4b3a-aca6-7c8f738ed0f7-d528609b.md) | `OperationName has_all "member to role"` |
+| [Suspicious Login from deleted guest account](../content/standalone-content-suspicious-login-from-deleted-guest-account-defe4855-0d33-4362-9557-009237623976-9a77037a.md) |  |
+| [Suspicious linking of existing user to external User](../content/standalone-content-suspicious-linking-of-existing-user-to-external-user-22a320c2-e1e5-4c74-a35b-39fc9cdcf859-f26ac9ac.md) | `OperationName == "Update user"` |
+| [Suspicious modification of Global Administrator user properties](../content/standalone-content-suspicious-modification-of-global-administrator-user-properties-48602a24-67cf-4362-b258-3f4249e55def-fe1c2532.md) | `OperationName == "Update user"` |
+| [URL Added to Application from Unknown Domain](../content/standalone-content-url-added-to-application-from-unknown-domain-017e095a-94d8-430c-a047-e51a11fb737b-9b989540.md) |  |
+| [User Account Created Using Incorrect Naming Format](../content/standalone-content-user-account-created-using-incorrect-naming-format-ee55dc85-d2da-48c1-a6c0-3eaee62a8d56-8145293f.md) | `OperationName == "Add user"` |
+| [User State changed from Guest to Member](../content/standalone-content-user-state-changed-from-guest-to-member-a09a0b8e-30fe-4ebf-94a0-cffe50f579cd-0a88dc5c.md) | `OperationName == "Update user"` |
+| [User account created without expected attributes defined](../content/standalone-content-user-account-created-without-expected-attributes-defined-dc99e38c-f4e9-4837-94d7-353ac0b01a77-87fc0fdf.md) | `OperationName == "Add user"` |
+
+### Hunting Queries (61)
 
 **In solution [Business Email Compromise - Financial Fraud](../solutions/business-email-compromise-financial-fraud.md):**
 
@@ -234,37 +276,100 @@ This table is ingested by the following connectors:
 | [Anomalous Entra High-Privilege Role Modification](../content/ueba-essentials-anomalous-entra-high-privilege-role-modification-8741deeb-332e-4061-8873-5086040920e3-adf63a52.md) | `OperationName == "Update user"` |
 | [Anomalous High-Privileged Role Assignment](../content/ueba-essentials-anomalous-high-privileged-role-assignment-5aa5083c-1de6-42bb-a128-2ec2aba1de39-89a0f496.md) | `OperationName == "Add member to role"` |
 
-### Workbooks (14)
+**Standalone Content:**
 
-**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):** `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"`
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Admin consent granted to application](../content/standalone-content-admin-consent-granted-to-application-0364b6b6-65cf-4ba2-ad0d-9ce80e0ae71e-4b1d0e36.md) | `OperationName == "Consent to application"` |
+| [Application registration or update with external redirect URI](../content/standalone-content-application-registration-or-update-with-external-redirect-uri-c4e0baf0-283b-49d7-8b40-a1c72e92a4b2-4881368c.md) | `OperationName in "Add application,Update application"` |
+| [Bulk admin-initiated password reset across multiple accounts](../content/standalone-content-bulk-admin-initiated-password-reset-across-multiple-accounts-0490ce45-3f01-48e2-a042-3ba0c3e559bc-f6472eda.md) |  |
+| [Bulk role assignments performed by the same actor in a short window](../content/standalone-content-bulk-role-assignments-performed-by-the-same-actor-in-a-short-window-8d2cc40f-f0e0-49bf-8983-164f7be3975d-39bbfebc.md) |  |
+| [Conditional Access policy disabled or deleted](../content/standalone-content-conditional-access-policy-disabled-or-deleted-0456a783-2fd9-4e07-aa05-4aa0afdab0a6-8da2e27a.md) | `OperationName in "Delete conditional access policy,Update conditional access policy"` |
+| [Consent to Application discovery](../content/standalone-content-consent-to-application-discovery-b09d6e57-c48b-491d-9c2b-ab73018e6534-7bcf5671.md) | `OperationName == "Consent to application"`<br>`OperationName != "Consent to application"` |
+| [Entra ID account performs privileged operation shortly after admin password reset](../content/standalone-content-entra-id-account-performs-privileged-operation-shortly-after-admin-password-reset-a7589e25-ff97-48ab-aa2f-8de1df7ed9c0-c834fdeb.md) | `OperationName in "Reset user password,Reset user password."` |
+| [Entra ID named location deleted or modified](../content/standalone-content-entra-id-named-location-deleted-or-modified-ef54a29b-136c-42a3-9d37-49fd67e2598b-2cd74715.md) | `OperationName in "Add named location,Delete named location,Update named location"` |
+| [Failed service logon attempt by user account with available AuditData](../content/standalone-content-failed-service-logon-attempt-by-user-account-with-available-auditdata-22f33a4c-e60f-4817-bbfe-9e2ed33cb596-0585369b.md) |  |
+| [Federated domain added to Entra ID tenant](../content/standalone-content-federated-domain-added-to-entra-id-tenant-902e4b5a-4e6a-46e1-a897-4cdbda0693b3-51cfb58c.md) | `OperationName == "Set domain authentication"` |
+| [Federated identity credential added to Entra ID service principal](../content/standalone-content-federated-identity-credential-added-to-entra-id-service-principal-2a7c50a9-5172-4ea3-8a59-b89e8117fc2c-f76bdc10.md) | `OperationName == "Update service principal"` |
+| [Guest or external account added to a privileged Entra ID role](../content/standalone-content-guest-or-external-account-added-to-a-privileged-entra-id-role-abed6064-9406-4171-a961-5fd38de5f79a-29f73c4f.md) | `OperationName == "Add member to role."` |
+| [Guest user account type changed to member](../content/standalone-content-guest-user-account-type-changed-to-member-d7684f21-18c0-4597-b79f-1ae5f2c7ab86-f8c66a44.md) | `OperationName == "Update user"` |
+| [High-privilege application role assigned to service principal](../content/standalone-content-high-privilege-application-role-assigned-to-service-principal-840c673e-a712-49eb-a6a9-6759d5259c4b-461cb93b.md) | `OperationName == "Add app role assignment to service principal"` |
+| [Inactive or new account signins](../content/standalone-content-inactive-or-new-account-signins-847c2652-547d-4d5f-9b71-d2f8d81eac62-a5fd3c40.md) |  |
+| [New owner added to Entra ID service principal](../content/standalone-content-new-owner-added-to-entra-id-service-principal-a15c8f25-9e6c-4d1f-b685-b5113fe58307-183be4c7.md) | `OperationName == "Add owner to service principal"` |
+| [New service principal granted admin consent within one hour of creation](../content/standalone-content-new-service-principal-granted-admin-consent-within-one-hour-of-creation-dc9c0f2a-68f4-4415-aa7e-81d87149c222-d0696078.md) | `OperationName in "Add app role assignment to service principal,Add service principal,Consent to application"` |
+| [OAuth application consent to high-risk permission scope](../content/standalone-content-oauth-application-consent-to-high-risk-permission-scope-2a166359-a104-4d72-93ae-643ae69bf801-772e9f50.md) | `OperationName == "Consent to application"` |
+| [OAuth application redirect URI modified](../content/standalone-content-oauth-application-redirect-uri-modified-32cf350a-01f8-4c84-9e47-4302e275eda3-a873a2a6.md) | `OperationName == "Update application"` |
+| [OAuth consent to high-risk permission by a new or rarely seen application](../content/standalone-content-oauth-consent-to-high-risk-permission-by-a-new-or-rarely-seen-application-c449826b-d6d0-4ac8-8dad-19acc3fc75a7-6627d942.md) | `OperationName == "Consent to application"` |
+| [Privileged Entra ID account sign-in via legacy authentication protocol](../content/standalone-content-privileged-entra-id-account-sign-in-via-legacy-authentication-protocol-57579898-8421-42a9-a7a1-bf7c777bd355-4f0eb826.md) |  |
+| [Privileged directory role assigned outside PIM workflow](../content/standalone-content-privileged-directory-role-assigned-outside-pim-workflow-2df6ff4f-f90f-4158-ac4a-98c1b23d9e18-e097cfc4.md) | `OperationName == "Add member to role."` |
+| [Privileged role assigned to newly created account](../content/standalone-content-privileged-role-assigned-to-newly-created-account-1bb5e930-18be-454d-b0d9-351eef15871a-133953c6.md) | `OperationName in "Add member to role,Add member to role.,Add user"` |
+| [Rare Audit activity initiated by App](../content/standalone-content-rare-audit-activity-initiated-by-app-5c799718-b361-4a91-9cb2-0c291e602707-841dc178.md) |  |
+| [Rare Audit activity initiated by User](../content/standalone-content-rare-audit-activity-initiated-by-user-ea107ccc-2b80-410e-96e1-be6607ce293b-bec1e298.md) |  |
+| [Rare domains seen in Cloud Logs](../content/standalone-content-rare-domains-seen-in-cloud-logs-66fb97d1-55c3-4268-ac22-b9742d0fdccc-81d64f4e.md) |  |
+| [Service principal credential added by user granted privileged role in last 24 hours](../content/standalone-content-service-principal-credential-added-by-user-granted-privileged-role-in-last-24-hours-661d71d1-98a4-464f-bb6b-fc3c39499b3f-d2c65578.md) | `OperationName in "Add member to role,Add member to role.,Add service principal credentials,Update application - Certificates`<br>`secrets management"` |
+| [Service principal credential addition by non-historical actor](../content/standalone-content-service-principal-credential-addition-by-non-historical-actor-4519bc3b-1849-4f37-b98b-6e8d67b34c71-1c253dcd.md) | `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` |
+| [Service principal credential addition followed by immediate sign-in](../content/standalone-content-service-principal-credential-addition-followed-by-immediate-sign-in-02a6931e-0a49-4f78-b535-1947273c5384-957de483.md) |  |
+| [Service principal or application credential addition by a rarely observed actor](../content/standalone-content-service-principal-or-application-credential-addition-by-a-rarely-observed-actor-138381e3-95d5-4d21-ab0b-13f941b82acc-e4e5a87e.md) |  |
+| [Sign-in from unseen IP within 60 minutes of MFA disabled for account](../content/standalone-content-sign-in-from-unseen-ip-within-60-minutes-of-mfa-disabled-for-account-3140d3e9-f87c-48aa-8d81-1b78b6c5d7bf-214ee023.md) |  |
+| [Temporary Access Pass created for user account](../content/standalone-content-temporary-access-pass-created-for-user-account-a9d39b89-25ed-4233-a825-9640ec77d83d-aeebb76a.md) | `OperationName in "Admin registered security info,Create Temporary Access Pass method for user,Update user"` |
+| [Tracking Password Changes](../content/standalone-content-tracking-password-changes-bac44fe4-c0bc-4e90-aa48-2e346fda803f-28bae834.md) |  |
+| [User Granted Access and associated audit activity](../content/standalone-content-user-granted-access-and-associated-audit-activity-0da142a4-b3ad-4bb6-b01d-03b572743fe9-47bd5e14.md) |  |
+| [User Granted Access and created resources](../content/standalone-content-user-granted-access-and-created-resources-b6baa3bb-a231-4e50-8ad1-4e28a958a0d3-539e3d9e.md) |  |
 
-| Workbook |
-|:-------------|
-| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |
+**GitHub Only:**
 
-**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):** `OperationName contains "PIM"`
+| Hunting Query | Selection Criteria |
+|:-------------|:-------------------|
+| [Account Added to Privileged PIM Group](../content/github-only-account-added-to-privileged-pim-group-67ca982d-9d61-48cb-a409-acf029ed7311-86300711.md) | `AADOperationType == "CreateRequestEligibleRole"`<br>`ActivityDisplayName == "Add eligible member to role in PIM requested (timebound)"`<br>`TargetResources has_any "-PRIV"` |
+| [Account MFA Modifications](../content/github-only-account-mfa-modifications-a3a09840-1022-4267-b9e1-d6c9799ed38a-47587ea8.md) | `OperationName in "Admin deleted security info,Admin registered security info,Admin updated security info,User changed default security info,User deleted security info,User registered all required security info,User registered security info,User started security info registration"` |
+| [Approved Access Packages Details](../content/github-only-approved-access-packages-details-aff7eb5f-3359-48ab-b73b-6c466d3806dc-eab499eb.md) | `OperationName in "Approve access package assignment request,Request approved,User requests access package assignment"` |
+| [BitLocker Key Retrieval](../content/github-only-bitlocker-key-retrieval-8ea8b2af-f1ce-4464-964c-6763641cc4f6-15a3a6bb.md) | `OperationName == "Read BitLocker key"` |
+| [Critical user management operations followed by disabling of System Restore from admin account](../content/github-only-critical-user-management-operations-followed-by-disabling-of-system-restore-from-admin-accou-dcc15282-2bcb-496e-84db-3c90d0dc0a0c-dedc200e.md) |  |
+| [Dormant User Update MFA and Logs In](../content/github-only-dormant-user-update-mfa-and-logs-in-a67834b0-3359-40be-bf11-71faac93b509-e1f0ddc9.md) |  |
+| [Dormant User Update MFA and Logs In - UEBA](../content/github-only-dormant-user-update-mfa-and-logs-in-ueba-6adc74fb-37f9-4187-ba7c-84269b09a485-ad8c1897.md) | `OperationName == "User registered security info"`<br>`ResultType == "0"` |
+| [High Risk Sign In Around Authentication Method Added or Device Registration](../content/github-only-high-risk-sign-in-around-authentication-method-added-or-device-registration-d61c3213-77ba-4998-8818-1da2f85dacdf-af95e228.md) |  |
+| [Invited Guest User but not redeemed Invite for longer period.](../content/github-only-invited-guest-user-but-not-redeemed-invite-for-longer-period.-1ad620f0-fee4-4bb7-a2b3-62af7f18332b-ed65f3d1.md) | `OperationName in "Invite external user,Redeem external user invite"` |
+| [Multiple Entra ID Admins Removed](../content/github-only-multiple-entra-id-admins-removed-18793540-3b93-4a7f-8e30-871291a1c6cf-49eec3ae.md) | `Identity !has "MS-PIM"`<br>`OperationName in "Remove eligible member from role,Remove member from role"` |
+| [OAuth Application Required Resource Access Update](../content/github-only-oauth-application-required-resource-access-update-665e6075-3a3f-42c0-a6c7-7e83dc44f281-a8e15d97.md) | `ActivityDisplayName has_any "Update application"` |
+| [Privileged Account Password Changes](../content/github-only-privileged-account-password-changes-d9cccaf9-d15e-4731-a62a-06d76e9c5e67-592fbe65.md) | `OperationName has_any "password,security info"` |
+| [Risky Sign-in with Device Registration](../content/github-only-risky-sign-in-with-device-registration-f9f8b17c-52ed-4fd1-8edd-6278b6e2669f-6359d664.md) |  |
+| [SQL Alert Correlation with CommonSecurityLogs and AuditLogs](../content/github-only-sql-alert-correlation-with-commonsecuritylogs-and-auditlogs-dc5adcc9-70ab-4fba-8690-f57767e8ca02-cdd2aa29.md) | `LoggedByService == "Core Directory"` |
+| [Storage Account Key Enumeration](../content/github-only-storage-account-key-enumeration-f19f913f-292a-41ed-9ac0-f3ea5e703d36-1724f133.md) | `LoggedByService == "Core Directory"` |
+| [Storage Alerts Correlation with CommonSecurityLogs & AuditLogs](../content/github-only-storage-alerts-correlation-with-commonsecuritylogs-&-auditlogs-860a8df2-8d19-4c60-bf61-de1c02422797-30bd1fb3.md) | `LoggedByService == "Core Directory"` |
+| [Successful Sign-In From Non-Compliant Device with bulk download activity](../content/github-only-successful-sign-in-from-non-compliant-device-with-bulk-download-activity-a5bb38e3-5ee2-47fe-a65d-c3c9341112ef-2c20eff5.md) |  |
+| [Unfamiliar Signin Correlation with AzurePortal Signin Attempts and AuditLogs](../content/github-only-unfamiliar-signin-correlation-with-azureportal-signin-attempts-and-auditlogs-6962473c-bcb8-421d-a0db-826078cad280-15192c3c.md) | `OperationName has_any "Add member to role"` |
 
-| Workbook |
-|:-------------|
-| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |
+### Workbooks (25)
 
-**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):** `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"`
+**In solution [AzureSecurityBenchmark](../solutions/azuresecuritybenchmark.md):**
 
-| Workbook |
-|:-------------|
-| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureSecurityBenchmark](../content/azuresecuritybenchmark-azuresecuritybenchmark-d011d364.md) |  |
 
-**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):** `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`
+**In solution [ContinuousDiagnostics&Mitigation](../solutions/continuousdiagnostics&mitigation.md):**
 
-| Workbook |
-|:-------------|
-| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ContinuousDiagnostics&Mitigation](../content/continuousdiagnostics&mitigation-continuousdiagnostics&mitigation-d91b4b8c.md) |  |
 
-**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):** `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"`
+**In solution [CybersecurityMaturityModelCertification(CMMC)2.0](../solutions/cybersecuritymaturitymodelcertification-cmmc-2.0.md):**
 
-| Workbook |
-|:-------------|
-| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [CybersecurityMaturityModelCertification_CMMCV2](../content/cybersecuritymaturitymodelcertification-cmmc-2.0-cybersecuritymaturitymodelcertification-cmmcv2-34fb58b0.md) |  |
+
+**In solution [DPDP Compliance](../solutions/dpdp-compliance.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [DPDPCompliance](../content/dpdp-compliance-dpdpcompliance-18571e87.md) |  |
+
+**In solution [GDPR Compliance & Data Security](../solutions/gdpr-compliance-&-data-security.md):**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [GDPRComplianceAndDataSecurity](../content/gdpr-compliance-&-data-security-gdprcomplianceanddatasecurity-a0958a9a.md) |  |
 
 **In solution [Lumen Defender Threat Feed](../solutions/lumen-defender-threat-feed.md):**
 
@@ -272,11 +377,11 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [Lumen-Threat-Feed-Overview](../content/lumen-defender-threat-feed-lumen-threat-feed-overview-139c887c.md) |  |
 
-**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):** `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"`
+**In solution [MaturityModelForEventLogManagementM2131](../solutions/maturitymodelforeventlogmanagementm2131.md):**
 
-| Workbook |
-|:-------------|
-| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [MaturityModelForEventLogManagement_M2131](../content/maturitymodelforeventlogmanagementm2131-maturitymodelforeventlogmanagement-m2131-12ca6fed.md) |  |
 
 **In solution [Microsoft Entra ID](../solutions/microsoft-entra-id.md):**
 
@@ -285,19 +390,19 @@ This table is ingested by the following connectors:
 | [AzureActiveDirectoryAuditLogs](../content/microsoft-entra-id-azureactivedirectoryauditlogs-03b0be29.md) | `SourceSystem == "Azure AD"` |
 | [ConditionalAccessSISM](../content/microsoft-entra-id-conditionalaccesssism-90abe712.md) |  |
 
-**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):** `OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"`
+**In solution [MicrosoftPurviewInsiderRiskManagement](../solutions/microsoftpurviewinsiderriskmanagement.md):**
 
-| Workbook |
-|:-------------|
-| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [InsiderRiskManagement](../content/microsoftpurviewinsiderriskmanagement-insiderriskmanagement-37830b82.md) |  |
 
-**In solution [NISTSP80053](../solutions/nistsp80053.md):** `OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`
+**In solution [NISTSP80053](../solutions/nistsp80053.md):**
 
-| Workbook |
-|:-------------|
-| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [NISTSP80053](../content/nistsp80053-nistsp80053-1f654213.md) |  |
 
-**In solution [SOC Handbook](../solutions/soc-handbook.md):** `AdditionalDetails contains "fraud"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"`
+**In solution [SOC Handbook](../solutions/soc-handbook.md):** `AdditionalDetails contains "fraud"`
 
 | Workbook |
 |:-------------|
@@ -309,11 +414,27 @@ This table is ingested by the following connectors:
 |:-------------|:-------------------|
 | [SOXITCompliance](../content/sox-it-compliance-soxitcompliance-6426e0a3.md) |  |
 
-**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):** `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`
+**In solution [ZeroTrust(TIC3.0)](../solutions/zerotrust-tic3.0.md):**
 
-| Workbook |
-|:-------------|
-| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [ZeroTrustTIC3](../content/zerotrust-tic3.0-zerotrusttic3-75b06a8b.md) |  |
+
+**GitHub Only:**
+
+| Workbook | Selection Criteria |
+|:-------------|:-------------------|
+| [AzureActiveDirectoryAuditLogs](../content/github-only-azureactivedirectoryauditlogs-52bbf97c.md) | `SourceSystem == "Azure AD"` |
+| [AzureLogCoverage](../content/github-only-azurelogcoverage-05245bb5.md) |  |
+| [AzureThreatResearchMatrixWorkbook](../content/github-only-azurethreatresearchmatrixworkbook-50f10e78.md) | `ActivityDisplayName == "User has elevated their access to User Access Administrator for their Azure Resources"`<br>`TargetResources has_any "Guest"` |
+| [ConditionalAccessTrendsandChanges](../content/github-only-conditionalaccesstrendsandchanges-114c89ab.md) |  |
+| [DoDZeroTrustWorkbook](../content/github-only-dodzerotrustworkbook-844294c8.md) | `AdditionalDetails != "MFA requirement satisfied by claim in the token"`<br>`AdditionalDetails != "MFA requirement skipped due to remembered device"` |
+| [InvestigationInsights](../content/github-only-investigationinsights-8694eaf8.md) | `AdditionalDetails contains "fraud"` |
+| [MicrosoftSentinelDeploymentandMigrationTracker](../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.md) |  |
+| [SentinelWorkspaceReconTools](../content/github-only-sentinelworkspacerecontools-74b07e4a.md) |  |
+| [SolarWindsPostCompromiseHunting](../content/github-only-solarwindspostcompromisehunting-09062974.md) | `ActivityDisplayName in "Add delegated permission grant,Consent to application"` |
+| [User_Analytics_Workbook](../content/github-only-user-analytics-workbook-b95f3e5a.md) | `ActivityDisplayName == "Add member to role"` |
+| [ZeroTrustStrategyWorkbook](../content/github-only-zerotruststrategyworkbook-cd80dc2b.md) | `AdditionalDetails != "MFA requirement satisfied by claim in the token"`<br>`AdditionalDetails != "MFA requirement skipped due to remembered device"` |
 
 ## Resource Types
 
@@ -322,30 +443,39 @@ This table collects data from the following Azure resource types:
 - `microsoft.azureadgraph/tenants`
 - `microsoft.graph/tenants`
 
-## Selection Criteria Summary (51 criteria, 68 total references)
+## Selection Criteria Summary (80 criteria, 117 total references)
 
-References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other parsers.
+References by type: 0 connectors, 117 content items, 0 ASIM parsers, 0 other parsers.
 
 | Selection Criteria | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:-------------------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `OperationName == "Update user"` | - | 6 | - | - | **6** |
 | `OperationName == "Update conditional access policy"` | - | 6 | - | - | **6** |
 | `OperationName has "Update a partner cross-tenant access setting"` | - | 4 | - | - | **4** |
+| `LoggedByService == "Core Directory"` | - | 4 | - | - | **4** |
+| `OperationName in "Set domain authentication,Set federation settings on domain"` | - | 3 | - | - | **3** |
+| `OperationName == "Invite external user"` | - | 3 | - | - | **3** |
 | `OperationName has_any "Add service principal,Certificates`<br>`secrets management"` | - | 3 | - | - | **3** |
-| `OperationName == "Update user"` | - | 2 | - | - | **2** |
-| `OperationName == "Invite external user"` | - | 2 | - | - | **2** |
+| `OperationName == "Consent to application"` | - | 3 | - | - | **3** |
+| `AADOperationType == "Assign"`<br>`LoggedByService == "Core Directory"`<br>`OperationName == "Add app role assignment to service principal"` | - | 2 | - | - | **2** |
+| `LoggedByService == "Core Directory"`<br>`OperationName in "Add app role assignment to service principal,Add delegated permission grant"` | - | 2 | - | - | **2** |
+| `ActivityDisplayName == "Add member to role request denied (PIM activation)"`<br>`ResultReason != "RoleAssignmentExists"` | - | 2 | - | - | **2** |
+| `AADOperationType in "Assign,AssignEligibleRole,CreateRequestGrantedRole,CreateRequestPermanentEligibleRole,CreateRequestPermanentGrantedRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` | - | 2 | - | - | **2** |
+| `OperationName == "Update application"` | - | 2 | - | - | **2** |
 | `OperationName in "Add user,Delete user"` | - | 2 | - | - | **2** |
-| `OperationName in "Set domain authentication,Set federation settings on domain"` | - | 2 | - | - | **2** |
 | `LoggedByService == "Core Directory"`<br>`OperationName in "Add OAuth2PermissionGrant,Add delegated permission grant,Add service principal,Consent to application"`<br>`TargetResources has "offline"` | - | 2 | - | - | **2** |
 | `Identity != "MS-PIM"`<br>`Identity != "MS-PIM-Fairfax"`<br>`LoggedByService == "Core Directory"`<br>`OperationName == "Add member to role"`<br>`OperationName has "Add member to role outside of PIM"` | - | 2 | - | - | **2** |
-| `OperationName in "Add member to role,Add user,Consent to application,Reset user password,Update user"`<br>`OperationName == "Sign-in activity"`<br>`OperationName != "Consent to application"` | - | 2 | - | - | **2** |
+| `OperationName has "Consent to application"` | - | 2 | - | - | **2** |
+| `OperationName == "Add app role assignment to service principal"` | - | 2 | - | - | **2** |
+| `OperationName == "Add user"` | - | 2 | - | - | **2** |
+| `AADOperationType == "CreateRequestEligibleRole"`<br>`ActivityDisplayName == "Add eligible member to role in PIM requested (timebound)"`<br>`TargetResources has_any "-PRIV"` | - | 2 | - | - | **2** |
+| `OperationName == "Add member to role."` | - | 2 | - | - | **2** |
 | `OperationName == "Add member to role completed (PIM activation)"` | - | 1 | - | - | **1** |
 | `ActivityDisplayName == "User registered security info"`<br>`LoggedByService == "Authentication Methods"` | - | 1 | - | - | **1** |
 | `OperationName has "Add eligible member"` | - | 1 | - | - | **1** |
 | `AADOperationType in "Assign,AssignEligibleRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"`<br>`OperationName in "Invite external user,Redeem external user invite"`<br>`OperationName has "Invite external user"`<br>`OperationName has "Redeem external user invite"` | - | 1 | - | - | **1** |
-| `OperationName == "Update application"` | - | 1 | - | - | **1** |
+| `ActivityDisplayName has_any "Add eligible member to role"` | - | 1 | - | - | **1** |
 | `Identity != "MS-PIM"`<br>`Identity != "MS-PIM-Fairfax"` | - | 1 | - | - | **1** |
-| `AADOperationType == "Assign"`<br>`LoggedByService == "Core Directory"`<br>`OperationName == "Add app role assignment to service principal"` | - | 1 | - | - | **1** |
-| `LoggedByService == "Core Directory"`<br>`OperationName in "Add app role assignment to service principal,Add delegated permission grant"` | - | 1 | - | - | **1** |
 | `ActivityDisplayName == "User has elevated their access to User Access Administrator for their Azure Resources"` | - | 1 | - | - | **1** |
 | `OperationName == "Delete conditional access policy"` | - | 1 | - | - | **1** |
 | `OperationName == "Add conditional access policy"` | - | 1 | - | - | **1** |
@@ -359,49 +489,73 @@ References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other pars
 | `ActivityDisplayName has "Consent to application"`<br>`ActivityDisplayName has_any "Add delegated permission grant"` | - | 1 | - | - | **1** |
 | `LoggedByService == "Core Directory"`<br>`OperationName in "Add OAuth2PermissionGrant,Add delegated permission grant,Add service principal,Consent to application"` | - | 1 | - | - | **1** |
 | `AADOperationType == "Add"`<br>`OperationName in "Add unverified domain,Add verified domain"` | - | 1 | - | - | **1** |
-| `ActivityDisplayName == "Add member to role request denied (PIM activation)"`<br>`ResultReason != "RoleAssignmentExists"` | - | 1 | - | - | **1** |
-| `OperationName has "Consent to application"` | - | 1 | - | - | **1** |
 | `OperationName == "Update device"` | - | 1 | - | - | **1** |
-| `OperationName == "Remove service principal"`<br>`OperationName has_all "Update application"` | - | 1 | - | - | **1** |
-| `AADOperationType in "Assign,AssignEligibleRole,CreateRequestGrantedRole,CreateRequestPermanentEligibleRole,CreateRequestPermanentGrantedRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` | - | 1 | - | - | **1** |
-| `LoggedByService == "Core Directory"` | - | 1 | - | - | **1** |
 | `AADOperationType in "Assign,AssignEligibleRole"`<br>`ActivityDisplayName has_any "Add eligible member to role"` | - | 1 | - | - | **1** |
+| `OperationName == "Admin registered security info"`<br>`ResultReason == "Admin registered temporary access pass method for user"` | - | 1 | - | - | **1** |
+| `OperationName has_any "Update Application,Update Service principal"`<br>`TargetResources has "AppIdentifierUri"` | - | 1 | - | - | **1** |
+| `OperationName == "Update Application"`<br>`TargetResources has "AppAddress"` | - | 1 | - | - | **1** |
+| `OperationName has_any "Update Application,Update Service principal"` | - | 1 | - | - | **1** |
+| `OperationName == "Add owner to application"` | - | 1 | - | - | **1** |
+| `OperationName == "Update role setting in PIM"` | - | 1 | - | - | **1** |
+| `OperationName has "conditional access policy"` | - | 1 | - | - | **1** |
+| `OperationName has_all "member to role"` | - | 1 | - | - | **1** |
+| `OperationName == "Add User"` | - | 1 | - | - | **1** |
+| `ActivityDisplayName has "Disable PIM Alert"`<br>`LoggedByService == "PIM"` | - | 1 | - | - | **1** |
 | `ActivityDisplayName has_any "Add eligible member to role"`<br>`LoggedByService in "Core Directory,PIM"` | - | 1 | - | - | **1** |
 | `OperationName has "Add app role assignment to service principal"` | - | 1 | - | - | **1** |
 | `OperationName has "StsRefreshTokenValidFrom"` | - | 1 | - | - | **1** |
 | `OperationName == "Add member to role"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,AzureFirewallIDSLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"`<br>`OperationName contains "create"`<br>`OperationName contains "delete"`<br>`OperationName contains "lockbox"`<br>`OperationName contains "remove"`<br>`OperationName contains "update"` | - | 1 | - | - | **1** |
-| `OperationName contains "PIM"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "Add"`<br>`OperationName contains "Audit"`<br>`OperationName contains "Change"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Log"`<br>`OperationName contains "Monitor"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"`<br>`OperationName contains "Update"`<br>`OperationName contains "Write"`<br>`OperationName contains "reset"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,Reset user password,Update user"`<br>`OperationName !contains "external"`<br>`OperationName !contains "invite"`<br>`OperationName !contains "licnense"`<br>`OperationName contains "group"`<br>`OperationName contains "member"`<br>`OperationName contains "principal"`<br>`OperationName contains "role"`<br>`OperationName contains "user"` | - | 1 | - | - | **1** |
+| `OperationName in "Admin deleted security info,Admin registered security info,Admin updated security info,User changed default security info,User deleted security info,User registered all required security info,User registered security info,User started security info registration"` | - | 1 | - | - | **1** |
+| `OperationName in "Add application,Update application"` | - | 1 | - | - | **1** |
+| `ActivityDisplayName has_any "Update application"` | - | 1 | - | - | **1** |
+| `OperationName in "Approve access package assignment request,Request approved,User requests access package assignment"` | - | 1 | - | - | **1** |
+| `OperationName == "Read BitLocker key"` | - | 1 | - | - | **1** |
+| `OperationName in "Delete conditional access policy,Update conditional access policy"` | - | 1 | - | - | **1** |
+| `OperationName == "Consent to application"`<br>`OperationName != "Consent to application"` | - | 1 | - | - | **1** |
+| `OperationName == "Set domain authentication"` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add member to role.,Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
+| `OperationName in "Add named location,Delete named location,Update named location"` | - | 1 | - | - | **1** |
+| `OperationName in "Add app role assignment to service principal,Add service principal,Consent to application"` | - | 1 | - | - | **1** |
+| `OperationName in "Invite external user,Redeem external user invite"` | - | 1 | - | - | **1** |
+| `OperationName in "Reset user password,Reset user password."` | - | 1 | - | - | **1** |
+| `OperationName in "Add member to role,Add member to role.,Add user"` | - | 1 | - | - | **1** |
+| `OperationName in "Add service principal credentials,Update application - Certificates`<br>`secrets management"` | - | 1 | - | - | **1** |
+| `OperationName == "Update service principal"` | - | 1 | - | - | **1** |
+| `OperationName == "Add owner to service principal"` | - | 1 | - | - | **1** |
+| `OperationName in "Admin registered security info,Create Temporary Access Pass method for user,Update user"` | - | 1 | - | - | **1** |
+| `OperationName == "User registered security info"`<br>`ResultType == "0"` | - | 1 | - | - | **1** |
+| `OperationName has_any "password,security info"` | - | 1 | - | - | **1** |
+| `OperationName has_any "Add member to role"` | - | 1 | - | - | **1** |
+| `Identity !has "MS-PIM"`<br>`OperationName in "Remove eligible member from role,Remove member from role"` | - | 1 | - | - | **1** |
 | `SourceSystem == "Azure AD"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,Consent to application,Create Deployment,Create or Update Virtual Machine,Create role assignment,List Storage Account Keys,Reset user password,Update user"`<br>`OperationName in "Set domain authentication,Set federation settings on domain,Sign-in activity"`<br>`OperationName != "Consent to application"`<br>`OperationName contains "Create"`<br>`OperationName contains "Delete"`<br>`OperationName contains "Update"`<br>`OperationName contains "delet"`<br>`OperationName contains "delete"`<br>`OperationName contains "remove"`<br>`OperationName has "Create"`<br>`OperationName has_any "Create,Update"`<br>`OperationName has_any "Ip,Security Rule"` | - | 1 | - | - | **1** |
-| `OperationName contains "Delete"`<br>`OperationName contains "PIM"`<br>`OperationName contains "Remove"` | - | 1 | - | - | **1** |
-| `AdditionalDetails contains "fraud"`<br>`OperationName == "Consent to application"`<br>`OperationName == "Disable Strong Authentication"`<br>`OperationName contains "password"` | - | 1 | - | - | **1** |
-| `OperationName in "Add member to role,Add user,ApplicationGatewayFirewall,AzureFirewallIDSLog,AzureFirewallThreatIntelLog,NetworkSecurityGroupEvents,Reset user password,Update user"`<br>`OperationName contains "PIM"` | - | 1 | - | - | **1** |
-| **Total** | **0** | **68** | **0** | **0** | **68** |
+| `AdditionalDetails contains "fraud"` | - | 1 | - | - | **1** |
+| **Total** | **0** | **117** | **0** | **0** | **117** |
 
 ### AADOperationType
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Assign` | - | 4 | - | - | **4** |
-| `AssignEligibleRole` | - | 3 | - | - | **3** |
+| `Assign` | - | 6 | - | - | **6** |
+| `AssignEligibleRole` | - | 4 | - | - | **4** |
+| `CreateRequestGrantedRole` | - | 2 | - | - | **2** |
+| `CreateRequestPermanentEligibleRole` | - | 2 | - | - | **2** |
+| `CreateRequestPermanentGrantedRole` | - | 2 | - | - | **2** |
+| `CreateRequestEligibleRole` | - | 2 | - | - | **2** |
 | `Add` | - | 1 | - | - | **1** |
-| `CreateRequestGrantedRole` | - | 1 | - | - | **1** |
-| `CreateRequestPermanentEligibleRole` | - | 1 | - | - | **1** |
-| `CreateRequestPermanentGrantedRole` | - | 1 | - | - | **1** |
 
 ### ActivityDisplayName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `has_any Add eligible member to role` | - | 4 | - | - | **4** |
+| `has_any Add eligible member to role` | - | 6 | - | - | **6** |
+| `Add member to role request denied (PIM activation)` | - | 2 | - | - | **2** |
+| `Add eligible member to role in PIM requested (timebound)` | - | 2 | - | - | **2** |
 | `User registered security info` | - | 1 | - | - | **1** |
 | `User has elevated their access to User Access Administrator for their Azure Resources` | - | 1 | - | - | **1** |
 | `has Consent to application` | - | 1 | - | - | **1** |
 | `has_any Add delegated permission grant` | - | 1 | - | - | **1** |
-| `Add member to role request denied (PIM activation)` | - | 1 | - | - | **1** |
+| `has Disable PIM Alert` | - | 1 | - | - | **1** |
+| `has_any Update application` | - | 1 | - | - | **1** |
 
 ### AdditionalDetails
 
@@ -415,6 +569,7 @@ References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other pars
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `!= MS-PIM` | - | 3 | - | - | **3** |
 | `!= MS-PIM-Fairfax` | - | 3 | - | - | **3** |
+| `!has MS-PIM` | - | 1 | - | - | **1** |
 
 ### InitiatedBy
 
@@ -426,54 +581,48 @@ References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other pars
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Core Directory` | - | 10 | - | - | **10** |
+| `Core Directory` | - | 15 | - | - | **15** |
+| `PIM` | - | 2 | - | - | **2** |
 | `Authentication Methods` | - | 1 | - | - | **1** |
-| `PIM` | - | 1 | - | - | **1** |
 
 ### OperationName
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `Add member to role` | - | 10 | - | - | **10** |
-| `Update user` | - | 9 | - | - | **9** |
-| `Add user` | - | 9 | - | - | **9** |
-| `Consent to application` | - | 9 | - | - | **9** |
-| `Reset user password` | - | 7 | - | - | **7** |
-| `Update conditional access policy` | - | 6 | - | - | **6** |
-| `contains PIM` | - | 5 | - | - | **5** |
-| `Add delegated permission grant` | - | 4 | - | - | **4** |
+| `Consent to application` | - | 10 | - | - | **10** |
+| `Add app role assignment to service principal` | - | 7 | - | - | **7** |
+| `Update user` | - | 7 | - | - | **7** |
+| `Update conditional access policy` | - | 7 | - | - | **7** |
+| `Invite external user` | - | 5 | - | - | **5** |
+| `Add delegated permission grant` | - | 5 | - | - | **5** |
+| `Add user` | - | 5 | - | - | **5** |
+| `Add member to role` | - | 5 | - | - | **5** |
+| `Set domain authentication` | - | 4 | - | - | **4** |
 | `has Update a partner cross-tenant access setting` | - | 4 | - | - | **4** |
-| `Invite external user` | - | 3 | - | - | **3** |
-| `Set domain authentication` | - | 3 | - | - | **3** |
+| `Add service principal` | - | 4 | - | - | **4** |
+| `Add member to role.` | - | 4 | - | - | **4** |
 | `Set federation settings on domain` | - | 3 | - | - | **3** |
+| `Update application` | - | 3 | - | - | **3** |
+| `Add service principal credentials` | - | 3 | - | - | **3** |
 | `Add OAuth2PermissionGrant` | - | 3 | - | - | **3** |
-| `Add service principal` | - | 3 | - | - | **3** |
 | `has_any Add service principal` | - | 3 | - | - | **3** |
 | `has_any Certificates` | - | 3 | - | - | **3** |
-| `AzureFirewallIDSLog` | - | 3 | - | - | **3** |
-| `NetworkSecurityGroupEvents` | - | 3 | - | - | **3** |
-| `contains Delete` | - | 3 | - | - | **3** |
-| `Sign-in activity` | - | 3 | - | - | **3** |
-| `!= Consent to application` | - | 3 | - | - | **3** |
+| `Admin registered security info` | - | 3 | - | - | **3** |
+| `Redeem external user invite` | - | 2 | - | - | **2** |
 | `Delete user` | - | 2 | - | - | **2** |
-| `Add app role assignment to service principal` | - | 2 | - | - | **2** |
+| `Delete conditional access policy` | - | 2 | - | - | **2** |
 | `has Add member to role outside of PIM` | - | 2 | - | - | **2** |
-| `contains delete` | - | 2 | - | - | **2** |
-| `contains remove` | - | 2 | - | - | **2** |
-| `contains Create` | - | 2 | - | - | **2** |
-| `contains Remove` | - | 2 | - | - | **2** |
-| `contains Update` | - | 2 | - | - | **2** |
-| `ApplicationGatewayFirewall` | - | 2 | - | - | **2** |
+| `has Consent to application` | - | 2 | - | - | **2** |
+| `has_any Update Application` | - | 2 | - | - | **2** |
+| `has_any Update Service principal` | - | 2 | - | - | **2** |
+| `User registered security info` | - | 2 | - | - | **2** |
+| `Update application - Certificates` | - | 2 | - | - | **2** |
 | `Add member to role completed (PIM activation)` | - | 1 | - | - | **1** |
 | `has Add eligible member` | - | 1 | - | - | **1** |
-| `Redeem external user invite` | - | 1 | - | - | **1** |
 | `has Invite external user` | - | 1 | - | - | **1** |
 | `has Redeem external user invite` | - | 1 | - | - | **1** |
-| `Update application` | - | 1 | - | - | **1** |
-| `Delete conditional access policy` | - | 1 | - | - | **1** |
 | `Add conditional access policy` | - | 1 | - | - | **1** |
 | `Update group` | - | 1 | - | - | **1** |
-| `Add service principal credentials` | - | 1 | - | - | **1** |
 | `has Add a partner to cross-tenant access setting` | - | 1 | - | - | **1** |
 | `has Delete partner specific cross-tenant access setting` | - | 1 | - | - | **1** |
 | `has Certificates` | - | 1 | - | - | **1** |
@@ -481,49 +630,53 @@ References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other pars
 | `Add owner to group` | - | 1 | - | - | **1** |
 | `Add unverified domain` | - | 1 | - | - | **1** |
 | `Add verified domain` | - | 1 | - | - | **1** |
-| `has Consent to application` | - | 1 | - | - | **1** |
 | `Update device` | - | 1 | - | - | **1** |
-| `Remove service principal` | - | 1 | - | - | **1** |
-| `has_all Update application` | - | 1 | - | - | **1** |
+| `Update Application` | - | 1 | - | - | **1** |
+| `Add owner to application` | - | 1 | - | - | **1** |
+| `Update role setting in PIM` | - | 1 | - | - | **1** |
+| `has conditional access policy` | - | 1 | - | - | **1** |
+| `has_all member to role` | - | 1 | - | - | **1** |
+| `Add User` | - | 1 | - | - | **1** |
 | `has Add app role assignment to service principal` | - | 1 | - | - | **1** |
 | `has StsRefreshTokenValidFrom` | - | 1 | - | - | **1** |
-| `contains create` | - | 1 | - | - | **1** |
-| `contains lockbox` | - | 1 | - | - | **1** |
-| `contains update` | - | 1 | - | - | **1** |
-| `contains Add` | - | 1 | - | - | **1** |
-| `contains Audit` | - | 1 | - | - | **1** |
-| `contains Change` | - | 1 | - | - | **1** |
-| `contains Log` | - | 1 | - | - | **1** |
-| `contains Monitor` | - | 1 | - | - | **1** |
-| `contains Write` | - | 1 | - | - | **1** |
-| `contains reset` | - | 1 | - | - | **1** |
-| `!contains external` | - | 1 | - | - | **1** |
-| `!contains invite` | - | 1 | - | - | **1** |
-| `!contains licnense` | - | 1 | - | - | **1** |
-| `contains group` | - | 1 | - | - | **1** |
-| `contains member` | - | 1 | - | - | **1** |
-| `contains principal` | - | 1 | - | - | **1** |
-| `contains role` | - | 1 | - | - | **1** |
-| `contains user` | - | 1 | - | - | **1** |
-| `Create Deployment` | - | 1 | - | - | **1** |
-| `Create or Update Virtual Machine` | - | 1 | - | - | **1** |
-| `Create role assignment` | - | 1 | - | - | **1** |
-| `List Storage Account Keys` | - | 1 | - | - | **1** |
-| `contains delet` | - | 1 | - | - | **1** |
-| `has Create` | - | 1 | - | - | **1** |
-| `has_any Create` | - | 1 | - | - | **1** |
-| `has_any Update` | - | 1 | - | - | **1** |
-| `has_any Ip` | - | 1 | - | - | **1** |
-| `has_any Security Rule` | - | 1 | - | - | **1** |
-| `Disable Strong Authentication` | - | 1 | - | - | **1** |
-| `contains password` | - | 1 | - | - | **1** |
-| `AzureFirewallThreatIntelLog` | - | 1 | - | - | **1** |
+| `Admin deleted security info` | - | 1 | - | - | **1** |
+| `Admin updated security info` | - | 1 | - | - | **1** |
+| `User changed default security info` | - | 1 | - | - | **1** |
+| `User deleted security info` | - | 1 | - | - | **1** |
+| `User registered all required security info` | - | 1 | - | - | **1** |
+| `User started security info registration` | - | 1 | - | - | **1** |
+| `Add application` | - | 1 | - | - | **1** |
+| `Approve access package assignment request` | - | 1 | - | - | **1** |
+| `Request approved` | - | 1 | - | - | **1** |
+| `User requests access package assignment` | - | 1 | - | - | **1** |
+| `Read BitLocker key` | - | 1 | - | - | **1** |
+| `!= Consent to application` | - | 1 | - | - | **1** |
+| `Add named location` | - | 1 | - | - | **1** |
+| `Delete named location` | - | 1 | - | - | **1** |
+| `Update named location` | - | 1 | - | - | **1** |
+| `Reset user password` | - | 1 | - | - | **1** |
+| `Reset user password.` | - | 1 | - | - | **1** |
+| `Update service principal` | - | 1 | - | - | **1** |
+| `Add owner to service principal` | - | 1 | - | - | **1** |
+| `Create Temporary Access Pass method for user` | - | 1 | - | - | **1** |
+| `has_any password` | - | 1 | - | - | **1** |
+| `has_any security info` | - | 1 | - | - | **1** |
+| `has_any Add member to role` | - | 1 | - | - | **1** |
+| `Remove eligible member from role` | - | 1 | - | - | **1** |
+| `Remove member from role` | - | 1 | - | - | **1** |
 
 ### ResultReason
 
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
-| `!= RoleAssignmentExists` | - | 1 | - | - | **1** |
+| `!= RoleAssignmentExists` | - | 2 | - | - | **2** |
+| `Admin registered temporary access pass method for user` | - | 1 | - | - | **1** |
+
+### ResultType
+
+| Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
+|:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
+| `0` | - | 1 | - | - | **1** |
 
 ### SourceSystem
 
@@ -536,7 +689,10 @@ References by type: 0 connectors, 68 content items, 0 ASIM parsers, 0 other pars
 | Value | Connectors | Content Items | ASIM Parsers | Other Parsers | Total |
 |:------|:----------:|:-------------:|:------------:|:-------------:|:-----:|
 | `has offline` | - | 2 | - | - | **2** |
+| `has_any -PRIV` | - | 2 | - | - | **2** |
 | `has full_access_as_app` | - | 1 | - | - | **1** |
+| `has AppIdentifierUri` | - | 1 | - | - | **1** |
+| `has AppAddress` | - | 1 | - | - | **1** |
 
 ---
 

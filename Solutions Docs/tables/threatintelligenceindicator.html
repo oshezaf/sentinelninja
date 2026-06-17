@@ -428,7 +428,7 @@
 <li><a href="../solutions/web-session-essentials.html">Web Session Essentials</a></li>
 <li><a href="../solutions/zerotrust-tic3.0.html">ZeroTrust(TIC3.0)</a></li>
 </ul>
-<h2 id="connectors">Connectors (4)</h2>
+<h2 id="connectors">Connectors (5)</h2>
 <p>This table is ingested by the following connectors:</p>
 <table>
 <thead>
@@ -454,10 +454,14 @@
   <td style="text-align:left"><a href="../connectors/mimecasttiregionalconnectorazurefunctions.html">Mimecast Intelligence for Microsoft - Microsoft Sentinel</a></td>
   <td style="text-align:left"></td>
 </tr>
+<tr>
+  <td style="text-align:left"><a href="../connectors/premiummicrosoftdefenderforthreatintelligence.html">Premium Microsoft Defender Threat Intelligence</a></td>
+  <td style="text-align:left"><code>SourceSystem == &quot;Premium Microsoft Defender Threat Intelligence&quot;</code></td>
+</tr>
 </tbody>
 </table>
 <hr />
-<h2 id="content-items-using-this-table">Content Items Using This Table (92)</h2>
+<h2 id="content-items-using-this-table">Content Items Using This Table (98)</h2>
 <h3 id="analytic-rules">Analytic Rules (72)</h3>
 <p><strong>In solution <a href="../solutions/gitlab.html">GitLab</a>:</strong></p>
 <table>
@@ -878,7 +882,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="workbooks">Workbooks (15)</h3>
+<h3 id="workbooks">Workbooks (21)</h3>
 <p><strong>In solution <a href="../solutions/cofenseintelligence.html">CofenseIntelligence</a>:</strong> <code>SourceSystem == &quot;Cofense Intelligence&quot;</code></p>
 <table>
 <thead>
@@ -1080,6 +1084,41 @@
 </tr>
 </tbody>
 </table>
+<p><strong>GitHub Only:</strong></p>
+<table>
+<thead>
+<tr>
+  <th style="text-align:left">Workbook</th>
+  <th style="text-align:left">Selection Criteria</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-dstimworkbook-062fa645.html">DSTIMWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-dodzerotrustworkbook-844294c8.html">DoDZeroTrustWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-forcepointngfwadvanced-901d419d.html">ForcepointNGFWAdvanced</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-microsoftsentineldeploymentandmigrationtracker-1aa72202.html">MicrosoftSentinelDeploymentandMigrationTracker</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-phishinganalysis-8b6323cf.html">PhishingAnalysis</a></td>
+  <td style="text-align:left"></td>
+</tr>
+<tr>
+  <td style="text-align:left"><a href="../content/github-only-zerotruststrategyworkbook-cd80dc2b.html">ZeroTrustStrategyWorkbook</a></td>
+  <td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
 <h2 id="parsers-using-this-table">Parsers Using This Table (1)</h2>
 <h3 id="other-parsers">Other Parsers (1)</h3>
 <table>
@@ -1098,8 +1137,8 @@
 </tr>
 </tbody>
 </table>
-<h2 id="selection-criteria-summary">Selection Criteria Summary (4 criteria, 4 total references)</h2>
-<p>References by type: 3 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
+<h2 id="selection-criteria-summary">Selection Criteria Summary (5 criteria, 5 total references)</h2>
+<p>References by type: 4 connectors, 1 content items, 0 ASIM parsers, 0 other parsers.</p>
 <table>
 <thead>
 <tr>
@@ -1121,7 +1160,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
+  <td style="text-align:left"><code>SourceSystem == &quot;Premium Microsoft Defender Threat Intelligence&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1130,6 +1169,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>SourceSystem !contains &quot;Luminar&quot;</code><br><code>SourceSystem contains &quot;Luminar&quot;</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>SourceSystem startswith &quot;Cofense Intelligence :&quot;</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1146,11 +1193,11 @@
 </tr>
 <tr>
   <td style="text-align:left"><strong>Total</strong></td>
-  <td style="text-align:center"><strong>3</strong></td>
+  <td style="text-align:center"><strong>4</strong></td>
   <td style="text-align:center"><strong>1</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
   <td style="text-align:center"><strong>0</strong></td>
-  <td style="text-align:center"><strong>4</strong></td>
+  <td style="text-align:center"><strong>5</strong></td>
 </tr>
 </tbody>
 </table>
@@ -1184,7 +1231,7 @@
   <td style="text-align:center"><strong>1</strong></td>
 </tr>
 <tr>
-  <td style="text-align:left"><code>startswith Cofense Intelligence :</code></td>
+  <td style="text-align:left"><code>Premium Microsoft Defender Threat Intelligence</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>
@@ -1201,6 +1248,14 @@
 </tr>
 <tr>
   <td style="text-align:left"><code>contains Luminar</code></td>
+  <td style="text-align:center">1</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center">-</td>
+  <td style="text-align:center"><strong>1</strong></td>
+</tr>
+<tr>
+  <td style="text-align:left"><code>startswith Cofense Intelligence :</code></td>
   <td style="text-align:center">1</td>
   <td style="text-align:center">-</td>
   <td style="text-align:center">-</td>

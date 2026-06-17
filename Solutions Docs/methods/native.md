@@ -21,8 +21,8 @@ Native connectors provide built-in integration with Microsoft services and are t
 | Metric | Count |
 |:-------|------:|
 | Total Connectors | **18** |
-| Active | 17 |
-| Deprecated 🚫 | 0 |
+| Active | 16 |
+| Deprecated 🚫 | 1 |
 | Unpublished ⚠️ | 1 |
 
 ## Connectors Using This Method
@@ -44,13 +44,20 @@ Native connectors provide built-in integration with Microsoft services and are t
 | [Microsoft PowerBI](../connectors/officepowerbi.md) | Microsoft | 1 | [Microsoft PowerBI](../solutions/microsoft-powerbi.md) |
 | [Microsoft Project](../connectors/office365project.md) | Microsoft | 1 | [Microsoft Project](../solutions/microsoft-project.md) |
 | [Microsoft Purview Information Protection](../connectors/microsoftpurviewinformationprotection.md) ➕ | Microsoft | 1 | [Microsoft Purview Information Protection](../solutions/microsoft-purview-information-protection.md) |
-| [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Subscription-based Microsoft Defender for Cloud (Legacy)](../connectors/azuresecuritycenter.md) | Microsoft | 1 | [Microsoft Defender for Cloud](../solutions/microsoft-defender-for-cloud.md) |
 | [Threat intelligence - TAXII](../connectors/threatintelligencetaxii.md) | Microsoft | 2 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Threat intelligence - TAXII Export](../connectors/threatintelligencetaxiiexport.md) | Microsoft | 1 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 | [Threat Intelligence Platforms](../connectors/threatintelligence.md) | Microsoft | 3 | [Threat Intelligence (NEW)](../solutions/threat-intelligence-new.md) |
 
+### Deprecated Connectors 🚫
+
+| Connector | Publisher | Tables | Solution |
+|:----------|:----------|:------:|:---------|
+| 🚫 [Premium Microsoft Defender Threat Intelligence](../connectors/premiummicrosoftdefenderforthreatintelligence.md) | Microsoft | 1 | [Threat Intelligence](../solutions/threat-intelligence.md) |
+
 ---
+
+> 🚫 **Deprecated:** This connector has been deprecated and may be removed in future versions.
 
 > ⚠️ **Unpublished:** This item is from a solution that is not yet published on Azure Marketplace or not installed in Content Hub.
 

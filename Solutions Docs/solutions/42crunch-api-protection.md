@@ -41,11 +41,10 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **3 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
-| [`FortyTwoCrunchAPIProtectionV2`](../tables/fortytwocrunchapiprotectionv2.md) | [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | - |
 | [`FortyTwoCrunchAPIProtectionV2_CL`](../tables/fortytwocrunchapiprotectionv2-cl.md) | [42Crunch API Protection (Push Connector via Codeless Connector Framework)](../connectors/fortytwocrunchapiprotection.md) | Analytics, Workbooks |
 | [`apifirewall_log_1_CL`](../tables/apifirewall-log-1-cl.md) 🔶 | [API Protection](../connectors/42crunchapiprotection.md) | Analytics, Workbooks |
 

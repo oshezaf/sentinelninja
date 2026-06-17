@@ -16,7 +16,7 @@
 | **Support Tier** | Microsoft |
 | **Support Link** | [https://support.microsoft.com/](https://support.microsoft.com/) |
 | **Categories** | Application |
-| **Version** | 3.0.10 |
+| **Version** | 3.0.11 |
 | **Author** | Microsoft - support@microsoft.com |
 | **First Published** | 2022-05-23 |
 | **Last Updated** | 2026-05-04 |
@@ -44,7 +44,7 @@ The [Zoom](https://zoom.us/) Reports solution enables you to ingest Zoom Reports
 
 This solution provides **2 data connector(s)**:
 
-- [Zoom Reports](../connectors/zoom.md)
+- [[DEPRECATED] Zoom Reports](../connectors/zoom.md)
 - [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md)
 
 ## Tables Used
@@ -54,7 +54,7 @@ This solution uses **2 table(s)**:
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`ZoomV2_CL`](../tables/zoomv2-cl.md) | [Zoom Reports Connector (via Codeless Connector Framework)](../connectors/zoomreportsconnector.md) | Workbooks |
-| [`Zoom_CL`](../tables/zoom-cl.md) | [Zoom Reports](../connectors/zoom.md) | Workbooks |
+| [`Zoom_CL`](../tables/zoom-cl.md) | [[DEPRECATED] Zoom Reports](../connectors/zoom.md) | Workbooks |
 
 ## Content Items
 
@@ -104,6 +104,7 @@ If you run into issues while creating for [Server to Server Oauth App](https://d
 
 | **Version** | **Date Modified (DD-MM-YYYY)** | **Change History**                          |
 |-------------|--------------------------------|---------------------------------------------|
+| 3.0.11      | 15-06-2026                     | Deprecate Zoom Reports (using Azure Function) |
 | 3.0.10      | 29-04-2026                     | Bump version to 3.0.10 for a new publishing, same connector content as the previous one |
 | 3.0.9       | 29-04-2026                     | Update Cloud recording api polling interval to one day with one day delay to reduce duplication |
 | 3.0.8       | 27-04-2026                     | ZoomReports CCF Connector GA with updated parser |

@@ -40,11 +40,12 @@ This solution provides **2 data connector(s)**:
 
 ## Tables Used
 
-This solution uses **1 table(s)**:
+This solution uses **2 table(s)**:
 
 | Table | Used By Connectors | Used By Content |
 |-------|-------------------|----------------|
 | [`CyberArkEPM_Events_CL`](../tables/cyberarkepm-events-cl.md) | [CyberArkEPM](../connectors/cyberarkepm.md) | Analytics, Hunting, Workbooks |
+| [`CyberArk_EPMEvents_CL`](../tables/cyberark-epmevents-cl.md) | [CyberArk EPM](../connectors/cyberarkepmccpdefinition.md) | - |
 
 ## Content Items
 
